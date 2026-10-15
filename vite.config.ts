@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 
-// GitHub Pages serves the site under /paraje/ (the repo name, lower case); dev and tests use /.
-export default defineConfig(({ command }) => ({
-  base: command === 'build' && process.env.PAGES_BASE !== '/' ? '/paraje/' : '/',
+// GitHub Pages serves the site under /Paraje/ (the repo name). A relative base works at any subpath and in any case,
+// so dev, tests and the published site all use the same build.
+export default defineConfig({
+  base: './',
   test: { include: ['tests/unit/**/*.test.ts'] },
-}));
+});
