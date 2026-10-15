@@ -1,0 +1,20 @@
+# Secrets (none today; the rule stays)
+.env*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+playwright-report/
+test-results/
+.DS_Store
+
+# Raw downloads stay out; only processed files in data/ are committed
+data/raw/
+
+# Claude: share agents, settings, skills and hooks; keep personal state out
+.claude/*
+!.claude/agents/
+!.claude/settings.json
+!.claude/skills/
+!.claude/hooks/

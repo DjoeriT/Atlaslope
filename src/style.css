@@ -1,0 +1,5 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; display: grid; grid-template-rows: auto 1fr; height: 100vh; }
+#top { padding: 8px 16px; display: flex; gap: 16px; align-items: baseline; }
+#top h1 { font-size: 1.1rem; margin: 0; }
+#map { min-height: 0; }
