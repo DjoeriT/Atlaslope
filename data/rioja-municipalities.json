@@ -1,0 +1,771 @@
+{
+ "source": "Pliego de condiciones DOCa Rioja (MAPA, PDF dated 2025-10-31), section 4; same lists as Orden APA/3465/2004 art. 4.2 (BOE 259, 27 Oct 2004), where Rioja Oriental is called Rioja Baja",
+ "excluded": [
+  {
+   "listed": "Lodosa (right bank of the Ebro)",
+   "zone": "none",
+   "reason": "pliego keeps vineyards registered before 29 Apr 1991 only; not a zone municipality"
+  }
+ ],
+ "zones": {
+  "Rioja Alta": {
+   "listed_names": 77,
+   "municipalities": 76,
+   "rows": [
+    {
+     "listed": "Ábalos",
+     "ine": "26001",
+     "ign_name": "Ábalos"
+    },
+    {
+     "listed": "Alesanco",
+     "ine": "26009",
+     "ign_name": "Alesanco"
+    },
+    {
+     "listed": "Alesón",
+     "ine": "26010",
+     "ign_name": "Alesón"
+    },
+    {
+     "listed": "Anguciana",
+     "ine": "26013",
+     "ign_name": "Anguciana"
+    },
+    {
+     "listed": "Arenzana de Abajo",
+     "ine": "26015",
+     "ign_name": "Arenzana de Abajo"
+    },
+    {
+     "listed": "Arenzana de Arriba",
+     "ine": "26016",
+     "ign_name": "Arenzana de Arriba"
+    },
+    {
+     "listed": "Azofra",
+     "ine": "26022",
+     "ign_name": "Azofra"
+    },
+    {
+     "listed": "Badarán",
+     "ine": "26023",
+     "ign_name": "Badarán"
+    },
+    {
+     "listed": "Bañares",
+     "ine": "26024",
+     "ign_name": "Bañares"
+    },
+    {
+     "listed": "Baños de Río Tobía",
+     "ine": "26026",
+     "ign_name": "Baños de Río Tobía"
+    },
+    {
+     "listed": "Baños de Rioja",
+     "ine": "26025",
+     "ign_name": "Baños de Rioja"
+    },
+    {
+     "listed": "Berceo",
+     "ine": "26027",
+     "ign_name": "Berceo"
+    },
+    {
+     "listed": "Bezares",
+     "ine": "26030",
+     "ign_name": "Bezares"
+    },
+    {
+     "listed": "Bobadilla",
+     "ine": "26031",
+     "ign_name": "Bobadilla"
+    },
+    {
+     "listed": "Briñas",
+     "ine": "26033",
+     "ign_name": "Briñas"
+    },
+    {
+     "listed": "Briones",
+     "ine": "26034",
+     "ign_name": "Briones"
+    },
+    {
+     "listed": "Camprovín",
+     "ine": "26037",
+     "ign_name": "Camprovín"
+    },
+    {
+     "listed": "Canillas",
+     "ine": "26039",
+     "ign_name": "Canillas de Río Tuerto",
+     "note": "IGN name Canillas de Río Tuerto"
+    },
+    {
+     "listed": "Cañas",
+     "ine": "26040",
+     "ign_name": "Cañas"
+    },
+    {
+     "listed": "Cárdenas",
+     "ine": "26041",
+     "ign_name": "Cárdenas"
+    },
+    {
+     "listed": "Casalarreina",
+     "ine": "26042",
+     "ign_name": "Casalarreina"
+    },
+    {
+     "listed": "Castañares de Rioja",
+     "ine": "26043",
+     "ign_name": "Castañares de Rioja"
+    },
+    {
+     "listed": "Cellórigo",
+     "ine": "26045",
+     "ign_name": "Cellorigo",
+     "note": "IGN spells Cellorigo"
+    },
+    {
+     "listed": "Cenicero",
+     "ine": "26046",
+     "ign_name": "Cenicero"
+    },
+    {
+     "listed": "Cidamón",
+     "ine": "26048",
+     "ign_name": "Cidamón"
+    },
+    {
+     "listed": "Cihuri",
+     "ine": "26049",
+     "ign_name": "Cihuri"
+    },
+    {
+     "listed": "Cirueña",
+     "ine": "26050",
+     "ign_name": "Cirueña"
+    },
+    {
+     "listed": "Cordovín",
+     "ine": "26052",
+     "ign_name": "Cordovín"
+    },
+    {
+     "listed": "Cuzcurrita de Río Tirón",
+     "ine": "26056",
+     "ign_name": "Cuzcurrita de Río Tirón"
+    },
+    {
+     "listed": "Daroca de Rioja",
+     "ine": "26057",
+     "ign_name": "Daroca de Rioja"
+    },
+    {
+     "listed": "Entrena",
+     "ine": "26059",
+     "ign_name": "Entrena"
+    },
+    {
+     "listed": "Estollo",
+     "ine": "26060",
+     "ign_name": "Estollo"
+    },
+    {
+     "listed": "Foncea",
+     "ine": "26062",
+     "ign_name": "Foncea"
+    },
+    {
+     "listed": "Fonzaleche",
+     "ine": "26063",
+     "ign_name": "Fonzaleche"
+    },
+    {
+     "listed": "Fuenmayor",
+     "ine": "26064",
+     "ign_name": "Fuenmayor"
+    },
+    {
+     "listed": "Galbárruli",
+     "ine": "26065",
+     "ign_name": "Galbárruli"
+    },
+    {
+     "listed": "Gimileo",
+     "ine": "26068",
+     "ign_name": "Gimileo"
+    },
+    {
+     "listed": "Haro",
+     "ine": "26071",
+     "ign_name": "Haro"
+    },
+    {
+     "listed": "Hervías",
+     "ine": "26074",
+     "ign_name": "Hervías"
+    },
+    {
+     "listed": "Herramélluri",
+     "ine": "26073",
+     "ign_name": "Herramélluri"
+    },
+    {
+     "listed": "Hormilla",
+     "ine": "26075",
+     "ign_name": "Hormilla"
+    },
+    {
+     "listed": "Hormilleja",
+     "ine": "26076",
+     "ign_name": "Hormilleja"
+    },
+    {
+     "listed": "Hornos de Moncalvillo",
+     "ine": "26078",
+     "ign_name": "Hornos de Moncalvillo"
+    },
+    {
+     "listed": "Huércanos",
+     "ine": "26079",
+     "ign_name": "Huércanos"
+    },
+    {
+     "listed": "Lardero",
+     "ine": "26084",
+     "ign_name": "Lardero"
+    },
+    {
+     "listed": "Leiva",
+     "ine": "26087",
+     "ign_name": "Leiva"
+    },
+    {
+     "listed": "Logroño",
+     "ine": "26089",
+     "ign_name": "Logroño"
+    },
+    {
+     "listed": "Manjarrés",
+     "ine": "26092",
+     "ign_name": "Manjarrés"
+    },
+    {
+     "listed": "Matute",
+     "ine": "26095",
+     "ign_name": "Matute"
+    },
+    {
+     "listed": "Medrano",
+     "ine": "26096",
+     "ign_name": "Medrano"
+    },
+    {
+     "listed": "Nájera",
+     "ine": "26102",
+     "ign_name": "Nájera"
+    },
+    {
+     "listed": "Navarrete",
+     "ine": "26105",
+     "ign_name": "Navarrete"
+    },
+    {
+     "listed": "Ochánduri",
+     "ine": "26109",
+     "ign_name": "Ochánduri"
+    },
+    {
+     "listed": "Ollauri",
+     "ine": "26111",
+     "ign_name": "Ollauri"
+    },
+    {
+     "listed": "Rodezno",
+     "ine": "26127",
+     "ign_name": "Rodezno"
+    },
+    {
+     "listed": "Sajazarra",
+     "ine": "26128",
+     "ign_name": "Sajazarra"
+    },
+    {
+     "listed": "San Asensio",
+     "ine": "26129",
+     "ign_name": "San Asensio"
+    },
+    {
+     "listed": "San Millán de Yécora",
+     "ine": "26131",
+     "ign_name": "San Millán de Yécora"
+    },
+    {
+     "listed": "San Torcuato",
+     "ine": "26139",
+     "ign_name": "San Torcuato"
+    },
+    {
+     "listed": "San Vicente de la Sonsierra",
+     "ine": "26142",
+     "ign_name": "San Vicente de la Sonsierra"
+    },
+    {
+     "listed": "Santa Coloma",
+     "ine": "26134",
+     "ign_name": "Santa Coloma"
+    },
+    {
+     "listed": "Sojuela",
+     "ine": "26143",
+     "ign_name": "Sojuela"
+    },
+    {
+     "listed": "Sorzano",
+     "ine": "26144",
+     "ign_name": "Sorzano"
+    },
+    {
+     "listed": "Sotés",
+     "ine": "26145",
+     "ign_name": "Sotés"
+    },
+    {
+     "listed": "Tirgo",
+     "ine": "26148",
+     "ign_name": "Tirgo"
+    },
+    {
+     "listed": "Tormantos",
+     "ine": "26150",
+     "ign_name": "Tormantos"
+    },
+    {
+     "listed": "Torrecilla sobre Alesanco",
+     "ine": "26152",
+     "ign_name": "Torrecilla sobre Alesanco"
+    },
+    {
+     "listed": "Torremontalbo",
+     "ine": "26154",
+     "ign_name": "Torremontalbo"
+    },
+    {
+     "listed": "Treviana",
+     "ine": "26155",
+     "ign_name": "Treviana"
+    },
+    {
+     "listed": "Tricio",
+     "ine": "26157",
+     "ign_name": "Tricio"
+    },
+    {
+     "listed": "Uruñuela",
+     "ine": "26160",
+     "ign_name": "Uruñuela"
+    },
+    {
+     "listed": "Ventosa",
+     "ine": "26163",
+     "ign_name": "Ventosa"
+    },
+    {
+     "listed": "Villalba de Rioja",
+     "ine": "26166",
+     "ign_name": "Villalba de Rioja"
+    },
+    {
+     "listed": "Villar de Torre",
+     "ine": "26171",
+     "ign_name": "Villar de Torre"
+    },
+    {
+     "listed": "Villarejo",
+     "ine": "26172",
+     "ign_name": "Villarejo"
+    },
+    {
+     "listed": "Zarratón",
+     "ine": "26180",
+     "ign_name": "Zarratón"
+    },
+    {
+     "listed": "El Ternero (enclave)",
+     "ine": "09219",
+     "ign_name": "Miranda de Ebro",
+     "note": "only the 2.3 km2 exclave containing the settlement of Ternero, not the whole municipality"
+    }
+   ]
+  },
+  "Rioja Oriental": {
+   "listed_names": 50,
+   "municipalities": 49,
+   "rows": [
+    {
+     "listed": "Agoncillo",
+     "ine": "26002",
+     "ign_name": "Agoncillo"
+    },
+    {
+     "listed": "Aguilar del Río Alhama",
+     "ine": "26003",
+     "ign_name": "Aguilar del Río Alhama"
+    },
+    {
+     "listed": "Albelda",
+     "ine": "26005",
+     "ign_name": "Albelda de Iregua",
+     "note": "IGN name Albelda de Iregua"
+    },
+    {
+     "listed": "Alberite",
+     "ine": "26006",
+     "ign_name": "Alberite"
+    },
+    {
+     "listed": "Alcanadre",
+     "ine": "26007",
+     "ign_name": "Alcanadre"
+    },
+    {
+     "listed": "Aldeanueva de Ebro",
+     "ine": "26008",
+     "ign_name": "Aldeanueva de Ebro"
+    },
+    {
+     "listed": "Alfaro",
+     "ine": "26011",
+     "ign_name": "Alfaro"
+    },
+    {
+     "listed": "Arnedillo",
+     "ine": "26017",
+     "ign_name": "Arnedillo"
+    },
+    {
+     "listed": "Arnedo",
+     "ine": "26018",
+     "ign_name": "Arnedo"
+    },
+    {
+     "listed": "Arrúbal",
+     "ine": "26019",
+     "ign_name": "Arrúbal"
+    },
+    {
+     "listed": "Ausejo",
+     "ine": "26020",
+     "ign_name": "Ausejo"
+    },
+    {
+     "listed": "Autol",
+     "ine": "26021",
+     "ign_name": "Autol"
+    },
+    {
+     "listed": "Bergasa",
+     "ine": "26028",
+     "ign_name": "Bergasa"
+    },
+    {
+     "listed": "Bergasilla",
+     "ine": "26029",
+     "ign_name": "Bergasillas Bajera",
+     "note": "IGN name Bergasillas Bajera"
+    },
+    {
+     "listed": "Calahorra",
+     "ine": "26036",
+     "ign_name": "Calahorra"
+    },
+    {
+     "listed": "Cervera del Río Alhama",
+     "ine": "26047",
+     "ign_name": "Cervera del Río Alhama"
+    },
+    {
+     "listed": "Clavijo",
+     "ine": "26051",
+     "ign_name": "Clavijo"
+    },
+    {
+     "listed": "Corera",
+     "ine": "26053",
+     "ign_name": "Corera"
+    },
+    {
+     "listed": "Cornago",
+     "ine": "26054",
+     "ign_name": "Cornago"
+    },
+    {
+     "listed": "El Redal",
+     "ine": "26123",
+     "ign_name": "El Redal"
+    },
+    {
+     "listed": "El Villar de Arnedo",
+     "ine": "26170",
+     "ign_name": "El Villar de Arnedo"
+    },
+    {
+     "listed": "Galilea",
+     "ine": "26066",
+     "ign_name": "Galilea"
+    },
+    {
+     "listed": "Grávalos",
+     "ine": "26070",
+     "ign_name": "Grávalos"
+    },
+    {
+     "listed": "Herce",
+     "ine": "26072",
+     "ign_name": "Herce"
+    },
+    {
+     "listed": "Igea",
+     "ine": "26080",
+     "ign_name": "Igea"
+    },
+    {
+     "listed": "Lagunilla de Jubera",
+     "ine": "26083",
+     "ign_name": "Lagunilla del Jubera",
+     "note": "IGN name Lagunilla del Jubera"
+    },
+    {
+     "listed": "Leza del Río Leza",
+     "ine": "26088",
+     "ign_name": "Leza de Río Leza",
+     "note": "IGN name Leza de Río Leza"
+    },
+    {
+     "listed": "Molinos de Ocón",
+     "ine": "26108",
+     "ign_name": "Ocón",
+     "note": "village inside Ocón municipality"
+    },
+    {
+     "listed": "Murillo de Río Leza",
+     "ine": "26099",
+     "ign_name": "Murillo de Río Leza"
+    },
+    {
+     "listed": "Muro de Aguas",
+     "ine": "26100",
+     "ign_name": "Muro de Aguas"
+    },
+    {
+     "listed": "Nalda",
+     "ine": "26103",
+     "ign_name": "Nalda"
+    },
+    {
+     "listed": "Ocón (La Villa)",
+     "ine": "26108",
+     "ign_name": "Ocón",
+     "note": "village inside Ocón municipality"
+    },
+    {
+     "listed": "Pradejón",
+     "ine": "26117",
+     "ign_name": "Pradejón"
+    },
+    {
+     "listed": "Préjano",
+     "ine": "26119",
+     "ign_name": "Préjano"
+    },
+    {
+     "listed": "Quel",
+     "ine": "26120",
+     "ign_name": "Quel"
+    },
+    {
+     "listed": "Ribafrecha",
+     "ine": "26124",
+     "ign_name": "Ribafrecha"
+    },
+    {
+     "listed": "Rincón de Soto",
+     "ine": "26125",
+     "ign_name": "Rincón de Soto"
+    },
+    {
+     "listed": "Santa Engracia de Jubera (zona Norte)",
+     "ine": "26135",
+     "ign_name": "Santa Engracia del Jubera",
+     "note": "only the north of the municipality is in the DOCa; whole municipality polygon used"
+    },
+    {
+     "listed": "Santa Eulalia Bajera",
+     "ine": "26136",
+     "ign_name": "Santa Eulalia Bajera"
+    },
+    {
+     "listed": "Tudelilla",
+     "ine": "26158",
+     "ign_name": "Tudelilla"
+    },
+    {
+     "listed": "Villamediana de Iregua",
+     "ine": "26168",
+     "ign_name": "Villamediana de Iregua"
+    },
+    {
+     "listed": "Villarroya",
+     "ine": "26173",
+     "ign_name": "Villarroya"
+    },
+    {
+     "listed": "Andosilla",
+     "ine": "31015",
+     "ign_name": "Andosilla"
+    },
+    {
+     "listed": "Aras",
+     "ine": "31026",
+     "ign_name": "Aras"
+    },
+    {
+     "listed": "Azagra",
+     "ine": "31042",
+     "ign_name": "Azagra"
+    },
+    {
+     "listed": "Bargota",
+     "ine": "31047",
+     "ign_name": "Bargota"
+    },
+    {
+     "listed": "Mendavia",
+     "ine": "31165",
+     "ign_name": "Mendavia"
+    },
+    {
+     "listed": "San Adrián",
+     "ine": "31215",
+     "ign_name": "San Adrián"
+    },
+    {
+     "listed": "Sartaguda",
+     "ine": "31223",
+     "ign_name": "Sartaguda"
+    },
+    {
+     "listed": "Viana",
+     "ine": "31251",
+     "ign_name": "Viana"
+    }
+   ]
+  },
+  "Rioja Alavesa": {
+   "listed_names": 18,
+   "municipalities": 15,
+   "rows": [
+    {
+     "listed": "Baños de Ebro",
+     "ine": "01011",
+     "ign_name": "Baños de Ebro/Mañueta"
+    },
+    {
+     "listed": "Barriobusto",
+     "ine": "01043",
+     "ign_name": "Oyón-Oion",
+     "note": "village inside Oyón-Oion municipality"
+    },
+    {
+     "listed": "Cripán",
+     "ine": "01019",
+     "ign_name": "Kripan",
+     "note": "IGN name Kripan"
+    },
+    {
+     "listed": "Elciego",
+     "ine": "01022",
+     "ign_name": "Elciego"
+    },
+    {
+     "listed": "Elvillar de Álava",
+     "ine": "01023",
+     "ign_name": "Elvillar/Bilar",
+     "note": "IGN name Elvillar/Bilar"
+    },
+    {
+     "listed": "Labastida",
+     "ine": "01028",
+     "ign_name": "Labastida/Bastida"
+    },
+    {
+     "listed": "Labraza",
+     "ine": "01043",
+     "ign_name": "Oyón-Oion",
+     "note": "village inside Oyón-Oion municipality"
+    },
+    {
+     "listed": "Laguardia",
+     "ine": "01031",
+     "ign_name": "Laguardia"
+    },
+    {
+     "listed": "Lanciego",
+     "ine": "01032",
+     "ign_name": "Lanciego/Lantziego"
+    },
+    {
+     "listed": "Lapuebla de Labarca",
+     "ine": "01033",
+     "ign_name": "Lapuebla de Labarca"
+    },
+    {
+     "listed": "Leza",
+     "ine": "01034",
+     "ign_name": "Leza"
+    },
+    {
+     "listed": "Moreda de Álava",
+     "ine": "01039",
+     "ign_name": "Moreda de Álava/Moreda Araba"
+    },
+    {
+     "listed": "Navaridas",
+     "ine": "01041",
+     "ign_name": "Navaridas"
+    },
+    {
+     "listed": "Oyón",
+     "ine": "01043",
+     "ign_name": "Oyón-Oion",
+     "note": "IGN name Oyón-Oion"
+    },
+    {
+     "listed": "Salinillas de Buradón",
+     "ine": "01028",
+     "ign_name": "Labastida/Bastida",
+     "note": "village inside Labastida/Bastida municipality"
+    },
+    {
+     "listed": "Samaniego",
+     "ine": "01052",
+     "ign_name": "Samaniego"
+    },
+    {
+     "listed": "Villabuena de Álava",
+     "ine": "01057",
+     "ign_name": "Villabuena de Álava/Eskuernaga"
+    },
+    {
+     "listed": "Yécora",
+     "ine": "01060",
+     "ign_name": "Yécora/Iekora"
+    }
+   ]
+  }
+ }
+}
