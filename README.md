@@ -35,6 +35,9 @@ Normally the owner runs `/release`. By hand:
 3. `git tag release-N <commit>` and `git push origin release-N`. The deploy workflow builds and publishes to GitHub Pages.
 4. Check the live site once. Update `docs/PROJECT_CONTEXT.md` section 5 and commit it on its own.
 
+## Licence
+Code: MIT (`LICENSE`). Data files under `data/` keep their own licences, listed per file in `data/SOURCES.md`, and the app shows their credit lines.
+
 ## Notes
 - The site is free for the owner and friends, not a business. Licences in `data/SOURCES.md` are checked for non-commercial use with attribution.
 - Nothing from the Wine Scholar Guild's own maps or study guides is used.
