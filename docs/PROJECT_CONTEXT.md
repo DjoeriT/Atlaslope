@@ -54,6 +54,7 @@ Parked: Priorat deep dive (after Rioja); SIGPAC vineyard parcels (version two); 
 - 2026-10-15 [O]: standing exceptions kept: push `main` after a commit; tag and push `release-N` after the owner says "publish release N".
 - 2026-10-15 [O]: small CI on pushes to `main`; HTML mocks; labels `ui`, `logic`, `data`, `release`, `security`, `docs`.
 - 2026-10-15 [O]: the data download pass runs on the owner's Mac, not in a cloud environment.
+- 2026-10-15 [O]: the repo is public. Reason: GitHub Pages on a private repo needs a paid plan; the code is harmless and the data is open. Consequence: every data credit line must be visible, and the code needs a licence file (open).
 
 ## 10. Next priorities (a proposal; the owner decides)
 1. Mock the atlas screen and the quiz screen; design check; owner review.
