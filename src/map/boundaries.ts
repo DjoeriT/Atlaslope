@@ -51,17 +51,18 @@ export function labelMinZoom(span: number): number {
 
 export type Box = [west: number, south: number, east: number, north: number];
 
-/** Clip boxes of data/natural-earth-spain.geojson (data/SOURCES.md): mainland and Balearics, Canaries. */
-export const LAND_BOXES: Box[] = [[-10, 35, 5, 44.5], [-18.4, 27.5, -13.2, 29.5]];
+/** The whole world: data/natural-earth-world.geojson has land everywhere, so the sea has no edges on the map. */
+export const WORLD_BOX: Box = [-180, -90, 180, 90];
 
 /**
- * The sea as one polygon per clip box with the land cut out, so it can be tinted over imagery. The land is clipped to
- * the same boxes, so the sea stops at the same edges.
+ * The sea as one polygon per box with the land cut out, so it can be tinted over imagery. Each land outline whose first
+ * point is inside a box becomes a hole in it, so the land must have no islands inside lakes (the build drops them).
  */
-export function oceanFromLand(land: Collection, boxes: Box[] = LAND_BOXES): Collection {
+export function oceanFromLand(land: Collection, boxes: Box[] = [WORLD_BOX]): Collection {
   const features = boxes.map(([w, s, e, n]) => {
     const holes: number[][][] = [];
     for (const f of land.features) {
+      if (f.geometry.type !== 'Polygon' && f.geometry.type !== 'MultiPolygon') continue; // borders share the file
       const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates as number[][][]] : (f.geometry.coordinates as number[][][][]);
       for (const poly of polys) {
         const ring = poly[0];

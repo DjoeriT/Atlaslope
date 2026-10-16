@@ -3,7 +3,7 @@ import maplibregl, { type Map as MapLibreMap } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import dopsUrl from '../../data/dops.geojson?url';
 import addedUrl from '../../data/added-boundaries.geojson?url';
-import landUrl from '../../data/natural-earth-spain.geojson?url';
+import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import overrides from '../../data/dop-overrides.json';
 import places from '../../data/places.json';
