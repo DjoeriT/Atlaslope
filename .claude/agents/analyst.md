@@ -1,6 +1,6 @@
 ---
 name: analyst
-description: AnalystBot for Paraje. Read-only weekly review on the owner's request; turns the tester evidence LeadBot provides into one page in Review/weekly/.
+description: AnalystBot for Atlaslope. Read-only weekly review on the owner's request; turns the tester evidence LeadBot provides into one page in Review/weekly/.
 model: sonnet
 effort: medium
 maxTurns: 25

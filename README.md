@@ -1,43 +1,45 @@
-# Paraje
+# Atlaslope
 
-The wine atlas that quizzes you. A study tool for Wine Scholar Guild students, starting with Spain and Rioja.
-Static web app: Vite, TypeScript, MapLibre GL, OpenFreeMap tiles. Free, no accounts, progress stored in the browser.
+The wine atlas that quizzes you. For passionate wine lovers first and exam students (WSET, Spanish Wine Scholar) second, starting with Spain.
+Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (atlaslope.com from release 3). Free, no accounts, progress stored in the browser.
+Renamed from Paraje on 16 Oct 2026; the repository keeps the old name for now.
+
+**Restart, 16 Oct 2026.** The old app code was removed; the new app is built release by release from `docs/scope.md` and
+`Review/builder-brief.md`. Until release 3 the site build is a placeholder page.
 
 ## Layout
-    src/                 the app (map, atlas panel, quiz, progress)
-    src/debug.ts         debug-only query flags (?fixture=, ?fresh=1); stripped from production builds
-    data/                processed map layers and facts (GeoJSON, JSON); SOURCES.md lists origin and licence of every file
-    tests/unit/          Vitest unit tests
-    tests/ui/            Playwright UI tests (run against dist/ with fixtures, no network)
-    docs/                PROJECT_CONTEXT.md (state, decisions), AGENT_ROLES.md (agents)
-    Review/              plans, task cards, reviews, mocks (Review/mock-<topic>/), tester notes; Review/archive/ for finished ones
-    public/mocks/        HTML mocks served by the Pages site (Review/mock-<topic> links to them)
+    src/                 the app; today only src/dops.ts (applies data/dop-overrides.json to the DO layer)
+    data/                processed map layers and facts; SOURCES.md lists origin, date, licence and processing of every file
+    tests/unit/          Vitest unit tests (today: the data tests)
+    tests/ui/            Playwright UI tests (run against the built site with fixtures, no network)
+    docs/                scope.md, architecture-decisions.md, PROJECT_CONTEXT.md (state), AGENT_ROLES.md (agents), handoffs/
+    Review/              builder brief, release digests, task cards, reviews, approved mocks (Review/mock-<topic>/); Review/archive/ for finished ones
     Tools/check.sh       every check, one command
-    .github/workflows/   ci.yml (checks on pushes to main), deploy.yml (GitHub Pages, on release-N tags)
+    .github/workflows/   ci.yml (checks on pull requests and main), publish.yml (tags release-N and deploys), deploy.yml (fallback: deploy on a hand-pushed tag)
     .claude/             agents, release skill, hooks, settings
 
 ## Commands
 - Install: `npm ci` (Node 22). Playwright browsers once: `npx playwright install chromium`.
 - Dev server: `npm run dev` (http://localhost:5173).
-- Unit tests: `npm test` (`npm test -- tests/unit/quiz.test.ts` for one file).
+- Unit tests: `npm test` (`npm test -- tests/unit/dops.test.ts` for one file).
 - Build: `npm run build` → `dist/`.
-- UI tests: `npm run test:ui` (builds first, serves `dist/`, runs Playwright with fixtures).
-- Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the UI tests, always before a release).
-- Debug query flags, dev builds only: `?fixture=<name>` loads `tests/fixtures/<name>.geojson` instead of `data/`; `?fresh=1` clears stored progress.
+- UI tests: `npm run test:ui` (builds first, serves `dist/`, runs Playwright).
+- Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the UI tests, always before a merge or release).
 
 ## Data
 Every file in `data/` has an entry in `data/SOURCES.md`: source, URL, date fetched, licence, and the processing steps. Raw downloads stay
 out of the repo (`data/raw/` is git-ignored); only processed, simplified files are committed. Attribution for each layer is shown in the app.
 
 ## Releasing (GitHub Pages)
-Normally the owner runs `/release`. By hand:
-1. `Tools/check.sh ui` green on `main`, clean working copy.
-2. N = previous `release-(N-1)` + 1. Commit anything pending; push `main`.
-3. `git tag release-N <commit>` and `git push origin release-N`. The deploy workflow builds and publishes to GitHub Pages.
-4. Check the live site once. Update `docs/PROJECT_CONTEXT.md` section 5 and commit it on its own.
+Releases start only with the owner's words "publish release N" (`.claude/skills/release/SKILL.md`).
+1. The slice's pull requests are merged and CI is green on `main`.
+2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
+   It checks the inputs (the commit is on `main`, `release-N` is new and next in line), runs `Tools/check.sh ui`, creates the tag and deploys.
+3. Check the live site once. Update `docs/PROJECT_CONTEXT.md` section 5 through a pull request.
 
 ## Licence
-Code: MIT (`LICENSE`). Data files under `data/` keep their own licences, listed per file in `data/SOURCES.md`, and the app shows their credit lines.
+Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
+Data files under `data/` keep their own licences, listed per file in `data/SOURCES.md`, and the app shows their credit lines.
 
 ## Notes
 - The site is free for the owner and friends, not a business. Licences in `data/SOURCES.md` are checked for non-commercial use with attribution.

@@ -1,0 +1,28 @@
+<!doctype html><html lang="en" data-theme="paper"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlaslope · Quiz</title><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="assets/app.css"></head><body>
+<div id="map" role="application" aria-label="Map of Spain. Click a DO to select it."></div>
+<section class="card glass" aria-label="Atlaslope · Quiz"><div class="body"><div class="q-num"><span>Question 6 of 10 · Spain</span><a class="btn quiet" href="04-quiz-results.html" style="margin-right:-1rem">End quiz</a></div>
+<div class="dots" role="img" aria-label="Question 6 of 10, 4 right, 1 wrong so far"><i class="ok"></i><i class="ok"></i><i class="bad"></i><i class="ok"></i><i class="ok"></i><i class="cur"></i><i></i><i></i><i></i><i></i></div><p class="q">The <em>highlighted</em> DO: which soil dominates?</p>
+<div class="choices" role="group" aria-label="Answers"><button class="choice"><b>A</b>Granite, sandy and acidic</button><button class="choice"><b>B</b>Llicorella slate</button><button class="choice"><b>C</b>Clay-calcareous terraces</button><button class="choice"><b>D</b>Alluvial gravel</button></div>
+<div id="fb" class="feedback" hidden><b>✓</b><span id="fbt"></span></div>
+<dl class="facts reveal" id="reveal" hidden><dt>DO</dt><dd>Rías Baixas · Green Spain</dd><dt>Climate</dt><dd>Atlantic: mild and wet, vines on pergolas against the damp</dd><dt>Grapes</dt><dd>Albariño above all</dd></dl></div>
+<div class="foot"><button class="btn primary" id="next" hidden>Next question</button><a class="btn" id="look" href="01-explore-spain.html#from=quiz" hidden>Open Rías Baixas</a><button class="btn quiet" id="skip">Skip</button></div></section>
+<div class="topleft"><a class="brand glass" href="index.html"><b>Atlaslope</b><small>Quiz · Spain</small></a>
+<div class="search glass"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" placeholder="Search" aria-label="Search DOs, towns and grapes"></div></div>
+<div class="topright"><span class="mock glass">mock · DO boundaries © MAPA 2014</span><nav class="seg glass" aria-label="Mode"><a href="01-explore-spain.html" >Explore</a><a href="00-quiz-setup.html" aria-current="page">Quiz</a></nav>
+<button id="layers-btn" class="iconbtn glass" aria-label="Layers and base map" aria-expanded="false" aria-controls="layers-menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></button>
+<button id="theme" class="iconbtn glass" aria-label="Dark interface" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button></div>
+<div id="layers-menu" class="glass menu" hidden><h4>Base map</h4>
+<label><input type="radio" name="basemap" value="satellite">Satellite</label><label><input type="radio" name="basemap" value="atlas">Atlas</label>
+<h4>Layers</h4><label><input type="checkbox" data-layer="relief" checked>3D relief</label></div>
+
+
+<div class="bottomright"><div class="glass"><button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button></div>
+<div class="glass"><button id="tilt" class="iconbtn text" aria-label="3D view" aria-pressed="false">3D</button><button id="north" class="iconbtn" aria-label="Reset to north" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 7-3 7-3-7z" fill="currentColor"/></svg></button></div></div>
+<script>window.PAGE={"page": "quiz", "hideNames": true, "selected": "R\u00edas Baixas", "dim": ["R\u00edas Baixas"], "flyTo": {"center": [-8.72, 42.5], "zoom": 8.6, "pitch": 50, "bearing": 15, "padding": {"left": 440, "top": 80, "bottom": 20, "right": 40}}};</script>
+<script src="assets/maplibre-gl.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
+</body></html><script>let done=false;document.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{if(done)return;done=true;const ok=b.textContent.includes('Granite');b.classList.add(ok?'ok':'bad');if(!ok)document.querySelectorAll('.choice')[0].classList.add('ok');
+const fb=document.getElementById('fb');fb.hidden=false;fb.classList.toggle('bad',!ok);fb.querySelector('b').textContent=ok?'✓':'✗';document.getElementById('fbt').textContent=(ok?'Right. ':'Not quite, it is granite. ')+'The soil drains, the sky does not: Atlantic rain on sandy granite.';if(!ok){const d=document.querySelectorAll('.dots i')[5];d.className='bad';}
+document.getElementById('reveal').hidden=false;document.getElementById('next').hidden=false;document.getElementById('look').hidden=false;document.getElementById('skip').hidden=true;document.querySelectorAll('.choice').forEach(x=>x.disabled=true);}));
+document.getElementById('next').addEventListener('click',()=>location.href='04-quiz-results.html');
+document.getElementById('skip').addEventListener('click',()=>location.href='04-quiz-results.html');</script>

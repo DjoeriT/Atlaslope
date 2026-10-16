@@ -18,3 +18,7 @@ data/raw/
 !.claude/settings.json
 !.claude/skills/
 !.claude/hooks/
+
+# Mock runtime too large for the repo: copy from the project files to run a mock (Review/mock-*/README.md)
+Review/mock-*/assets/data.js
+Review/mock-*/assets/maplibre-gl.*

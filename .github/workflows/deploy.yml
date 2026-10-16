@@ -1,5 +1,5 @@
 name: deploy
-# Publishes to GitHub Pages only when LeadBot pushes a release-N tag, which happens only after the owner says "publish release N".
+# Fallback: publishes to GitHub Pages when a release-N tag is pushed by hand. The normal route is publish.yml (tags and deploys in one run).
 on:
   push:
     tags: ['release-*']

@@ -6,8 +6,9 @@ Status: in force; changes only on the owner's word. Names: LeadBot, BuilderBot, 
 | Role | Model | May edit | Never |
 |---|---|---|---|
 | **Owner** (Djoeri) | – | decides; no code | – |
-| **LeadBot** (main thread) | Opus | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; merges after asking the owner; pushes `main`; tags `build-N` after an upload | multi-step code work (goes to a builder); outward actions without the owner's say-so; other tags or branches; force-pushes |
-| **BuilderBot** | Sonnet for mechanical work, Opus for tricky logic (the card says which) | only the files named on its task card, in its own worktree | `CLAUDE.md`, `docs/`, plan files; paid or networked calls |
+| **Coordinator** (project chat) | owner's pick | project memory, routines | the repo; outward actions |
+| **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI and ReviewBot's report, inside work the owner said go to; starts the `publish` workflow after "publish release N" | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
+| **BuilderBot** | Sonnet 5.5 for mechanical work, Opus 5.5 for tricky logic (the card says which) | only the files named on its task card, in its own worktree | `CLAUDE.md`, `docs/`, plan files; paid or networked calls |
 | **ReviewBot** | Sonnet by default; Opus at high effort for core logic. Read-only, fresh context | one report file named on its card | everything else |
 | **AnalystBot** | Sonnet. Read-only, on the owner's request | its one page in `Review/weekly/` | network calls of its own; personal data; naming testers; deciding priorities |
 
@@ -21,21 +22,23 @@ Each role works toward an outcome, not toward approval; the owner's decisions co
 | **LeadBot** | The right work gets done well: the plan is sound, each piece goes to the right role, quality is proven rather than assumed, and the project record is always true, without wasted effort or tokens | – |
 | **BuilderBot** | Working, tested code that does exactly what the card describes: simple, readable, consistent with the surrounding code, and leaving the codebase no worse than it found it | Done / partly done (what's left) / blocked (why) |
 | **ReviewBot, code review** | Code that is correct, simple and safe to build on: bugs, regressions, needless complexity and broken rules are caught before they reach `main` | Merge / merge after fixes / don't merge |
-| **ReviewBot, QA** | Testers get an app that works and feels solid: every main flow works at desktop and iPad width, with large text and in light and dark, with no crashes, dead ends or broken layouts | Ready to upload / not ready |
+| **ReviewBot, QA** | Testers get a site that works and feels solid: every main flow works at desktop and iPad width, with large text and in light and dark, with no crashes, dead ends or broken layouts | Ready to publish / not ready |
 | **ReviewBot, security and privacy** | People can trust the app: no secret leaks, nothing is collected or kept beyond what we say, and what ships matches every promise we make | Matches / gaps (listed) |
-| **ReviewBot, design** | The best UX for the job: simple, effective, consistent with the app and in line with Apple's guidelines and good practice; the common case is effortless and nothing is confusing or a dead end | Ready / fix first (the fixes go into the mock) |
+| **ReviewBot, design** | The best UX for the job: simple, effective, consistent with the app and in line with good web and iPad practice (WCAG 2.2 AA); the common case is effortless and nothing is confusing or a dead end | Ready / fix first (the fixes go into the mock) |
 | **AnalystBot** | A clear, honest picture of how the app is really used: what works for people, what doesn't, and where the evidence points next, including saying plainly when there's too little evidence to tell | Evidence points to … / not enough data |
 
-**Severity** (every finding gets one): **blocker** = must be fixed before the merge, upload or showing; **should fix** = fix now unless
+**Severity** (every finding gets one): **blocker** = must be fixed before the merge, release or showing; **should fix** = fix now unless
 there's a reason, and the report gives it; **note** = for the record. Every report opens with its verdict and the count per severity.
 A card's **Goal** line is written as an outcome too ("a tester can switch colour in one tap without losing the pick", not "the owner agrees to X").
 
 ## LeadBot
+- Is whichever thread is doing the task; the coordinator is never LeadBot. Closes with a handoff in `docs/handoffs/` (see `CLAUDE.md`).
 - Keeps `docs/PROJECT_CONTEXT.md`, `CLAUDE.md` and the plan current after every merge.
 - Writes a task card for each piece of work and picks the model.
 - Briefs ReviewBot with the facts, the plan and the thresholds, **not its own conclusions**.
-- Merges a builder branch only when `Tools/check.sh` is green and ReviewBot has reported, **and only after asking the owner**.
-  Documentation-only changes skip ReviewBot but still need the owner's OK.
+- Merges a slice's pull request only when CI and `Tools/check.sh ui` are green and ReviewBot has reported. The owner's go on the plan is
+  the OK; anything off-plan is asked. Builders work in local worktrees and never push; the thread pushes its own `claude/...` branch.
+  Documentation-only changes skip ReviewBot but still go through a pull request.
 - Treats every agent report as a lead: re-runs a number before relying on it.
 - A worktree may lack secrets and dependencies: builders run what they can; after the merge LeadBot runs the checks on `main` and says which ran.
 - After a merge: `git worktree remove` the worktree and `git branch -d` the branch.
@@ -47,7 +50,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
   decision) is reported, not worked around.
 
 ## ReviewBot
-- Read-only: works in a `git archive` copy under `/private/tmp`; writes only the one report file the card names.
+- Read-only: works in a `git archive` copy in the session scratchpad or `/tmp`; writes only the one report file the card names.
 - Reproduces numbers before confirming them; says for each claim "confirmed", "refuted" or "not reproduced"; marks ran, read or inferred.
 - Does not grade with the thing under test.
 - Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (`Tools/check.sh ui` first, then
@@ -57,9 +60,9 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 
 ## AnalystBot
 - Runs when the owner asks for a weekly review. Read-only; no network calls of its own.
-- LeadBot gathers the inputs first: tester feedback (a `Review/tester-feedback.md` log), TestFlight feedback and crashes the owner passes on,
-  and any usage counts the app has.
-- Writes one page, `Review/weekly/<date>.md`: what testers did, new feedback, crashes, progress against the learning milestone (if one is
+- LeadBot gathers the inputs first: tester feedback (a `Review/tester-feedback.md` log), feedback from friends the owner passes on,
+  error reports, and any usage counts the site has.
+- Writes one page, `Review/weekly/<date>.md`: what testers did, new feedback, errors, progress against the learning milestone (if one is
   set), and at most three next steps marked as suggestions. Testers appear as codes only. A week with no new data is reported as such.
 - LeadBot re-checks a figure before quoting it; the owner reads the page and decides.
 
@@ -68,8 +71,8 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
     Task:        <one sentence>
     Role/model:  BuilderBot (Sonnet|Opus)  or  ReviewBot (mode: code review | QA | security | design)  or  AnalystBot
     Budget:      <tokens>; stop and report at ~70% or after two failed tries
-    Branch:      agent/builder/<task>   (worktree)
-    Context:     docs/PROJECT_CONTEXT.md §<n>, <files and line ranges to read first>
+    Branch:      agent/builder/<task>   (worktree; LeadBot merges it into the thread's claude/... branch)
+    Context:     Review/release-N-digest.md, <files and line ranges to read first>
                  (CLAUDE.md is loaded automatically: never list it; name sections, never whole documents)
     May edit:    <exact files or folders>
     Must not:    <files, behaviour, decisions>

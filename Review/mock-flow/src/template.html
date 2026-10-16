@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlaslope flow sketch</title>
+<meta name="description" content="Every screen of Atlaslope v1 as a card: what is on it, the ways on, where it is reached from, plus what comes later and the open decisions.">
+<style>
+/*FONTS*/
+:root{
+  --serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
+  --paper:#FAF7F0;--fill:#F3EEE4;--ink:#241F1A;--ink2:#4E463E;--ink3:#6A6259;--line:rgba(60,50,40,.14);
+  --accent:#7A2E3B;--accent-ink:#fff;--ok:#2F6B3E;--bad:#A3371F;--focus:#2F5F9E;
+  --shadow:0 .5rem 1.5rem rgba(20,15,10,.12);--rad:.9rem;
+  --map:#E9E3D6;--coast:#D9D1C0;--river:#8FB3C9;--panel:#FFFDF9;--panel-edge:rgba(60,50,40,.28);--bar:#241F1A;
+  --s0:#E3DCCF;--s1:#D9B98A;--s2:#9CB07A;--s3:#2F6B3E;
+  --t-mocked:#2F6B3E;--t-changed:#9A6A1E;--t-new:#7A2E3B;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#181A1E;--fill:#2A2D33;--ink:#F2EFE9;--ink2:#C9C3BA;--ink3:#9A9389;--line:rgba(255,255,255,.12);
+  --accent:#C9A54E;--accent-ink:#1B1611;--ok:#7CC48A;--bad:#E8846A;--focus:#8AB4F8;
+  --shadow:0 .5rem 1.5rem rgba(0,0,0,.5);
+  --map:#23262C;--coast:#2E323A;--river:#4F7D99;--panel:#30343B;--panel-edge:rgba(255,255,255,.3);--bar:#F2EFE9;
+  --s0:#3A3E45;--s1:#8A6F3F;--s2:#5E7A49;--s3:#7CC48A;
+  --t-mocked:#7CC48A;--t-changed:#E0B35A;--t-new:#E8846A;
+}}
+:root[data-theme="dark"]{
+  --paper:#181A1E;--fill:#2A2D33;--ink:#F2EFE9;--ink2:#C9C3BA;--ink3:#9A9389;--line:rgba(255,255,255,.12);
+  --accent:#C9A54E;--accent-ink:#1B1611;--ok:#7CC48A;--bad:#E8846A;--focus:#8AB4F8;
+  --shadow:0 .5rem 1.5rem rgba(0,0,0,.5);
+  --map:#23262C;--coast:#2E323A;--river:#4F7D99;--panel:#30343B;--panel-edge:rgba(255,255,255,.3);--bar:#F2EFE9;
+  --s0:#3A3E45;--s1:#8A6F3F;--s2:#5E7A49;--s3:#7CC48A;
+  --t-mocked:#7CC48A;--t-changed:#E0B35A;--t-new:#E8846A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:1rem;line-height:1.45;color:var(--ink);background:var(--paper)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:.3rem}
+a{color:var(--accent)}
+.wrap{max-width:1400px;margin:0 auto;padding:1.5rem 1rem 4rem}
+header{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:1.2rem;margin-bottom:1.5rem}
+.kicker{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin:0 0 .3rem}
+h1{font-family:var(--serif);font-weight:500;font-size:2.4rem;line-height:1.05;margin:0 0 .4rem;letter-spacing:-.01em}
+.lede{font-family:var(--serif);font-size:1.15rem;line-height:1.4;color:var(--ink2);margin:0;max-width:60ch}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;font-size:.85rem;color:var(--ink2)}
+.legend .tag{margin:0}
+.btn{appearance:none;font:inherit;font-size:.9rem;font-weight:500;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:.7rem;padding:.6rem 1rem;min-height:2.75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem}
+.btn:hover{background:var(--fill)}
+nav.modes{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.5rem}
+nav.modes a{font-size:.95rem;padding:.45rem 1.1rem;border:1px solid var(--line);border-radius:.7rem;color:var(--ink);text-decoration:none;min-height:2.75rem;display:inline-flex;align-items:center}
+nav.modes a:hover{background:var(--fill)}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.2rem;align-items:start}
+@media (max-width:1180px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.cols{grid-template-columns:1fr}}
+.col{scroll-margin-top:1rem}
+.col h2{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin:0 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--ink)}
+.scr{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);box-shadow:var(--shadow);padding:1rem 1.1rem 1.1rem;margin:0 0 1.2rem;scroll-margin-top:1rem}
+.scr:target{outline:3px solid var(--accent);outline-offset:3px}
+.thumb{display:block;width:100%;height:auto;border-radius:.5rem;margin-bottom:.8rem}
+.t-map{fill:var(--map)}.t-coast{fill:var(--coast);stroke:var(--panel-edge);stroke-width:.6}.t-river{fill:none;stroke:var(--river);stroke-width:1.4;stroke-linecap:round}
+.t-card,.t-sheet,.t-chip{fill:var(--panel);stroke:var(--panel-edge);stroke-width:1}
+.t-bar{fill:var(--bar);opacity:.85}
+.s0{fill:var(--s0)}.s1{fill:var(--s1)}.s2{fill:var(--s2)}.s3{fill:var(--s3)}
+.scr-head{display:flex;flex-wrap:wrap;gap:.4rem .8rem;align-items:baseline;justify-content:space-between}
+.scr h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:0;line-height:1.15}
+.tag{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;border-radius:999px;padding:.2rem .6rem;white-space:nowrap;border:1px solid currentColor}
+.tag-mocked{color:var(--t-mocked)}.tag-changed{color:var(--t-changed)}.tag-new{color:var(--t-new)}
+.scr h4{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin:.9rem 0 .25rem}
+.what{margin:.6rem 0 0;padding-left:1.1rem;color:var(--ink2);font-size:.95rem}
+.what li{margin:.2rem 0}
+.outs{list-style:none;margin:0;padding:0}
+.outs li{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .5rem;border-top:1px solid var(--line);padding:.1rem 0}
+.outs li:first-child{border-top:0}
+.outs a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--ink);text-decoration:none;font-weight:500}
+.outs a:hover{color:var(--accent);text-decoration:underline}
+.outs .to{color:var(--ink3);font-size:.85rem}
+.from{font-size:.85rem;color:var(--ink2);margin:.8rem 0 0}.from span{color:var(--ink3)}
+.note{font-size:.85rem;color:var(--ink3);margin:.5rem 0 0;font-family:var(--serif);font-style:italic;font-size:.95rem}
+.after{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin-top:2rem}
+@media (max-width:900px){.after{grid-template-columns:1fr}}
+.after section{background:var(--fill);border-radius:var(--rad);padding:1rem 1.2rem 1.2rem}
+.after h2{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin:0 0 .5rem}
+.after p.sub{margin:0 0 .6rem;color:var(--ink2);font-size:.95rem}
+.later{list-style:none;margin:0;padding:0}
+.later li{display:flex;justify-content:space-between;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.later li span{color:var(--ink3);text-align:right}
+.gaps{margin:0;padding-left:1.3rem}
+.gaps li{margin:.6rem 0}.gaps b{font-family:var(--serif);font-weight:600;font-size:1.1rem}.gaps p{margin:.15rem 0 0;color:var(--ink2);font-size:.95rem}
+footer{margin-top:2rem;font-size:.85rem;color:var(--ink3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <p class="kicker">Atlaslope · sketch, 16 Oct 2026</p>
+    <h1>Every screen, on one page</h1>
+    <p class="lede"><!--COUNT--> screens in four modes. Each card shows what is on the screen, the ways on from it, and where it is reached from. Every link points at a card on this page: follow them to walk the app.</p>
+  </div>
+  <div class="legend" aria-label="Legend">
+    <span class="tag tag-mocked">Mocked in 2.2</span><span>look settled</span>
+    <span class="tag tag-changed">2.2, changes</span><span>mocked, look changes</span>
+    <span class="tag tag-new">New, not mocked</span><span>to mock next</span>
+    <button class="btn" type="button" id="theme" aria-pressed="false">Dark</button>
+  </div>
+</header>
+<nav class="modes" aria-label="Modes">
+  <a href="#h-home">Home</a><a href="#h-explore">Explore</a><a href="#h-quiz">Quiz</a><a href="#h-progress">Progress</a><a href="#later">Later</a><a href="#gaps">Open decisions</a>
+</nav>
+<div class="cols">
+<!--COLS-->
+</div>
+<div class="after">
+  <section id="later" aria-labelledby="h-later"><h2 id="h-later">Later, not in v1</h2><p class="sub">Logged in the backlog. Nothing on this page depends on them.</p><ul class="later"><!--LATER--></ul></section>
+  <section id="gaps" aria-labelledby="h-gaps"><h2 id="h-gaps">Open decisions</h2><p class="sub">Four rules the screens assume. Each goes to you as a card in the thread, with my default marked.</p><ol class="gaps"><!--GAPS--></ol></section>
+</div>
+<footer>Static sketch. The 2.2 mocks are the visual reference for look; this page only settles which screens exist and how they connect.</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('theme'),r=document.documentElement;
+  function dark(){var t=r.getAttribute('data-theme');if(t)return t==='dark';return matchMedia('(prefers-color-scheme: dark)').matches}
+  function paint(){var d=dark();b.textContent=d?'Light':'Dark';b.setAttribute('aria-pressed',String(d));b.setAttribute('aria-label',d?'Switch to light':'Switch to dark')}
+  b.addEventListener('click',function(){r.setAttribute('data-theme',dark()?'light':'dark');paint()});
+  paint();
+})();
+</script>
+</body>
+</html>

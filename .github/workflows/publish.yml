@@ -1,0 +1,105 @@
+name: publish
+# Started by hand (Actions › publish › Run workflow) or by the thread after the owner's words "publish release N".
+# Re-runs every check on the commit, creates the release-N tag on it, then deploys that commit to GitHub Pages.
+# A tag pushed with the workflow token does not start deploy.yml, so the site is deployed once.
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Release number N (creates tag release-N)'
+        required: true
+        type: string
+      commit:
+        description: 'Full commit hash on main to publish'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Validate inputs
+        env:
+          RELEASE: ${{ inputs.release }}
+          COMMIT: ${{ inputs.commit }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          echo "publish started by $ACTOR for release-$RELEASE on $COMMIT"
+          [[ "$RELEASE" =~ ^[1-9][0-9]*$ ]] || { echo "release must be a positive number"; exit 1; }
+          [[ "$COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "commit must be a full 40-character hash"; exit 1; }
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit }}
+          fetch-depth: 0
+      - name: Commit is on main, tag is new and next in line
+        env:
+          RELEASE: ${{ inputs.release }}
+          COMMIT: ${{ inputs.commit }}
+        run: |
+          git merge-base --is-ancestor "$COMMIT" origin/main || { echo "$COMMIT is not on main"; exit 1; }
+          if git rev-parse -q --verify "refs/tags/release-$RELEASE" >/dev/null; then echo "release-$RELEASE already exists"; exit 1; fi
+          last=$(git tag -l 'release-*' | sed 's/release-//' | sort -n | tail -1)
+          [ "$RELEASE" -eq $(( ${last:-0} + 1 )) ] || { echo "next release is $(( ${last:-0} + 1 )), not $RELEASE"; exit 1; }
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: Tools/check.sh ui
+  tag:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit }}
+      - name: Create release-N
+        env:
+          RELEASE: ${{ inputs.release }}
+          COMMIT: ${{ inputs.commit }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "release-$RELEASE" "$COMMIT" -m "Release $RELEASE (publish workflow, started by $ACTOR)"
+          git push origin "refs/tags/release-$RELEASE"
+  build:
+    needs: tag
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          # Esri imagery key (owner's free ArcGIS account, repo secret). Empty until release 3.
+          VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
