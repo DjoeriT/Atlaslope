@@ -256,12 +256,15 @@ map.on('mouseleave', 'dos-fill', () => {
   map.getCanvas().style.cursor = '';
 });
 
-map.on('load', async () => {
+// Start on the style, not on 'load': 'load' waits for the first complete render, which can hang while tiles, terrain or
+// glyphs are unreachable (seen in the built-site UI test). The DO layer only needs the style.
+const layerData = loadLayer();
+const start = async () => {
   if (!flags.fixture) {
     map.setTerrain(TERRAIN);
   }
   try {
-    const layer = await loadLayer();
+    const layer = await layerData;
     features = layer.features;
     byCode = new Map(features.map((f) => [String(f.properties.code), f.properties as unknown as DopProps]));
     neighboursOf = neighbourFinder(features);
@@ -278,5 +281,18 @@ map.on('load', async () => {
     console.error(err);
   }
   syncTilt();
-  map.once('idle', () => { document.body.dataset.ready = 'true'; });
-});
+  // Ready = the DO layer's data is in the map. Not 'idle': with terrain tiles unreachable (offline, or the UI test of the
+  // built site) MapLibre keeps retrying and never goes idle.
+  const markReady = () => { document.body.dataset.ready = 'true'; };
+  if (!map.getSource('dos')) return markReady(); // load failed; the status line says so
+  const onData = (e: maplibregl.MapSourceDataEvent) => {
+    if (e.sourceId !== 'dos' || !map.isSourceLoaded('dos')) return;
+    map.off('sourcedata', onData);
+    markReady();
+  };
+  map.on('sourcedata', onData);
+  if (map.isSourceLoaded('dos')) { map.off('sourcedata', onData); markReady(); }
+};
+if (map.isStyleLoaded()) void start();
+else map.once('style.load', () => void start());
+
