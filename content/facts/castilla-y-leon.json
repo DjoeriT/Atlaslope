@@ -1,0 +1,61 @@
+{
+ "region": "castilla-y-leon",
+ "sheets": [
+  {
+   "id": "cebreros",
+   "why": {
+    "text": "Old bush vines on granite slopes above 1,000 m keep Garnacha fresh despite hot, dry summers.",
+    "cite": [
+     "cebreros-doc:p11",
+     "cebreros-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Albillo Real"
+     }
+    ],
+    "cite": [
+     "cebreros-doc:p11"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red"
+    ],
+    "text": "Whites, rosados and reds, young and barrel-aged; reds age well.",
+    "cite": [
+     "cebreros-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean with a continental touch: hot, dry summers, short mild winters, 400 to 800 mm of rain, mean 12 to 15 °C.",
+    "cite": [
+     "cebreros-doc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Sandy loam over granite, slightly acid and poor in organic matter; some schist.",
+    "cite": [
+     "cebreros-doc:p9",
+     "cebreros-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Some plots above 1,000 m; vines mostly on south-facing slopes.",
+    "cite": [
+     "cebreros-doc:p9",
+     "cebreros-doc:p11"
+    ]
+   }
+  }
+ ]
+}

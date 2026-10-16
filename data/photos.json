@@ -1,0 +1,4 @@
+{
+ "$comment": "Shipped photos: one entry per file in public/photos/. Filled from Review/sources/photo-picks.json by the photo workflow; credits and licences per file. See data/SOURCES.md.",
+ "photos": {}
+}
