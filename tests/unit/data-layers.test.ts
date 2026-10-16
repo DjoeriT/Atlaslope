@@ -30,9 +30,18 @@ describe('climate (Köppen-Geiger)', () => {
 describe('added boundaries', () => {
   const added = read('added-boundaries.geojson');
   const lists = read('added-municipalities.json').places;
-  it('has one polygon per listed place, built from every listed municipality', () => {
-    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual(Object.keys(lists).sort());
-    for (const f of added.features) expect(f.properties.municipalities).toBe(lists[f.properties.id].municipalities.length);
+  const parcels = read('added-parcels.json').places;
+  it('has one polygon per listed place, built from every listed municipality or parcel', () => {
+    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels)].sort());
+    for (const f of added.features) {
+      const id = f.properties.id;
+      if (lists[id]) expect(f.properties.municipalities, id).toBe(lists[id].municipalities.length);
+      else expect(f.properties.parcels, id).toBe(parcels[id].parcels.length);
+    }
+  });
+  it('matches the area the Urbezo pliego states (232.02 ha) within 2%', () => {
+    const u = added.features.find((f: any) => f.properties.id === 'urbezo');
+    expect(Math.abs(u.properties.km2 * 100 - 232.0214) / 232.0214).toBeLessThan(0.02);
   });
   it('matches the area the Cebreros pliego states (1,663.16 km²) within 2%', () => {
     const c = added.features.find((f: any) => f.properties.id === 'cebreros');

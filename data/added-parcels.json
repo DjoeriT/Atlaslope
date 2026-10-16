@@ -1,0 +1,11 @@
+{
+ "$comment": "Cadastral parcel lists for places whose pliego delimits them parcel by parcel, copied from the pliego's delimited-area section. Polygons come from the Catastro's INSPIRE parcel service; built by Tools/data/build_parcels.py in GitHub Actions.",
+ "places": {
+  "urbezo": {
+   "source": "Pliego de condiciones DOP Urbezo (PDO-ES-02585), text of Implementing Regulation (EU) 2024/2742, hosted by the Gobierno de Aragón (aragon.es), section 4, p. 4: polígono 35 of Cariñena, 51 parcels, 232.0214 ha",
+   "province_name": "ZARAGOZA", "municipality": "CARIÑENA", "polygon": 35,
+   "parcels": [1, 6, 8, 9, 12, 13, 14, 17, 18, 20, 21, 24, 26, 27, 28, 31, 33, 34, 35, 36, 48, 51, 53, 54, 55, 63, 67, 68, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94],
+   "expected_ha": 232.0214
+  }
+ }
+}

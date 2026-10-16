@@ -97,6 +97,13 @@ for f in $RAW/munis-*.geojson; do
   ogr2ogr -f GeoJSON $T/b-$id.json $f -dialect sqlite -makevalid \
     -sql "SELECT '$id' AS id, COUNT(*) AS municipalities, ST_Area(ST_Transform(ST_Union(geometry), 25830)) / 1e6 AS km2, ST_Union(geometry) AS geometry FROM \"munis-$id\""
 done
+# Single estates delimited parcel by parcel (data/added-parcels.json): dissolve the Catastro parcels, measure in UTM 30N, then reproject.
+python3 -I Tools/data/build_parcels.py
+for f in $RAW/parcels-*.geojson; do
+  id=$(basename $f .geojson); id=${id#parcels-}
+  ogr2ogr -f GeoJSON $T/b-$id.json $f -dialect sqlite -makevalid -s_srs EPSG:25830 -t_srs EPSG:4326 \
+    -sql "SELECT '$id' AS id, COUNT(*) AS parcels, ST_Area(ST_Union(geometry)) / 1e6 AS km2, ST_Union(geometry) AS geometry FROM \"parcels-$id\""
+done
 ogrmerge.py -q -f GeoJSON -single -overwrite_ds -o $T/added.json $T/b-*.json
-ogr2ogr -f GeoJSON data/added-boundaries.geojson $T/added.json -simplify 0.0005 -lco COORDINATE_PRECISION=5 -lco RFC7946=YES -select id,municipalities,km2
+ogr2ogr -f GeoJSON data/added-boundaries.geojson $T/added.json -simplify 0.0005 -lco COORDINATE_PRECISION=5 -lco RFC7946=YES -select id,municipalities,parcels,km2
 python3 -c "import json; [print(f['properties']) for f in json.load(open('data/added-boundaries.geojson'))['features']]"
