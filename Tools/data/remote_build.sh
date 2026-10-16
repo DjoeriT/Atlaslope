@@ -52,7 +52,7 @@ gdalwarp -q -overwrite -te -18.4 27.5 5.0 44.5 -cutline $T/spain.json -dstnodata
 gdal_polygonize.py -q $T/kg-spain.tif -f GPKG $T/kg.gpkg kg class
 ogr2ogr -f GPKG $T/kg-dissolved.gpkg $T/kg.gpkg -dialect sqlite -nln kg -sql \
   "SELECT class, CASE WHEN MbrMinY(geom) < 30 THEN 'canarias' ELSE 'main' END AS box, ST_Union(geom) AS geom FROM kg WHERE class > 0 AND ST_Area(geom) > 0.00008 GROUP BY class, box"
-ogr2ogr -f GeoJSON $T/kg.json $T/kg-dissolved.gpkg -simplify 0.004 -makevalid -lco COORDINATE_PRECISION=4 -lco RFC7946=YES
+ogr2ogr -f GeoJSON $T/kg.json $T/kg-dissolved.gpkg -simplify 0.006 -makevalid -lco COORDINATE_PRECISION=3 -lco RFC7946=YES
 python3 - $T/kg.json data/koppen-spain.geojson <<'PY'
 import json, sys
 # Legend of Beck et al. (2023), classes 1-30.
