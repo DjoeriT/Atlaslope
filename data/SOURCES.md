@@ -41,6 +41,7 @@ The round 2.1 atlas mock bundles its own geography so it runs without a build. N
 | Countries, provinces, rivers, lakes, towns (clipped to lon -10.5 to 5, lat 34.5 to 45) | Natural Earth 10 m, `https://github.com/nvkelso/natural-earth-vector` (GeoJSON) | 2026-10-15 | Public domain |
 | DO polygons and Rioja zones | This repo's `dops.geojson` and `rioja-zones.geojson` (entries above), renamed for display (e.g. "Vino de Rioja" to "Rioja"); Cava, Cataluña, Islas Canarias and Vinos de Pago left out | 2026-10-15 | As above |
 | Rioja soil areas | Hand-drawn schematic, labelled as such in the mock | 2026-10-15 | Ours |
+| Elevation profile sample (240 points, Sierra de Cantabria to Sierra de la Demanda) | Same Mapzen Terrarium tiles, zoom 12, sampled 2026-10-16 by the mocks thread | 2026-10-16 | As terrain below |
 | 3D terrain (streamed at view time) | Mapzen Terrarium tiles on AWS Open Data, `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png` | at view time | Mapzen terms; SRTM, NED, EU-DEM and others, attribution in the map |
 | Satellite (streamed at view time) | Esri World Imagery, `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer` | at view time | Esri terms of use, attribution in the map; mock use only, to be replaced before release [O] |
 | Typefaces | Newsreader and IBM Plex Sans via `@fontsource` | 2026-10-15 | SIL Open Font Licence 1.1 |

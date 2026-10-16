@@ -1,7 +1,7 @@
 <!doctype html><html lang="en" data-theme="paper"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Paraje · Spain</title><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="assets/app.css"></head><body>
 <div id="map" role="application" aria-label="Map of Spain. Click a DO to select it."></div>
-<section class="card glass" aria-label="Paraje · Spain"><div class="body"><div class="kicker">DOCa · Ebro Valley</div><h1 id="do-title">Rioja</h1>
+<section class="card glass" aria-label="Paraje · Spain"><div class="body"><div class="kicker">DOCa · Rioja</div><h1 id="do-title">Rioja</h1>
 <p class="lede">Spain's first DOCa (1991). Three zones along the Ebro between the Sierra de Cantabria and the Sierra de la Demanda.</p>
 <dl class="facts"><dt>Level</dt><dd>DOCa</dd><dt>Climate</dt><dd>Atlantic in the west, Mediterranean in the east, continental between</dd>
 <dt>Main grapes</dt><dd>Tempranillo, Garnacha, Graciano, Mazuelo · Viura, Malvasía</dd><dt>Soils</dt><dd>Clay-calcareous, ferrous clay, alluvial</dd>
@@ -18,9 +18,10 @@
 <label><input type="radio" name="basemap" value="satellite">Satellite</label><label><input type="radio" name="basemap" value="atlas">Atlas</label>
 <h4>Layers</h4><label><input type="checkbox" data-layer="dos" checked>DO boundaries</label><label><input type="checkbox" data-layer="relief" checked>3D relief</label></div>
 
-<div class="legend glass" aria-label="Macro-regions"><span><i style="background:#7E9F7A"></i>Green Spain</span><span><i style="background:#C59A5A"></i>Ebro Valley</span><span><i style="background:#A97582"></i>Duero Valley</span><span><i style="background:#CF8E77"></i>Mediterranean</span><span><i style="background:#CDB673"></i>Central Plateau</span><span><i style="background:#B87E5E"></i>Andalusia</span><span><i style="background:#7F9FB0"></i>Islands</span></div>
+<div class="legend glass" aria-label="Study regions"><span><i style="background:#6B9A6E"></i>Green Spain</span><span><i style="background:#A26A88"></i>Castilla y León</span><span><i style="background:#AE4656"></i>Rioja</span><span><i style="background:#C79A48"></i>Navarra and Aragón</span><span><i style="background:#D4845F"></i>Cataluña</span><span><i style="background:#D8B36E"></i>Valencia and Murcia</span><span><i style="background:#B3A48C"></i>Meseta</span><span><i style="background:#A86E4E"></i>Andalucía</span><span><i style="background:#6E98B5"></i>Balearic Islands</span><span><i style="background:#4F7FA3"></i>Canary Islands</span></div>
 <div class="bottomright"><div class="glass"><button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button></div>
 <div class="glass"><button id="tilt" class="iconbtn text" aria-label="3D view" aria-pressed="false">3D</button><button id="north" class="iconbtn" aria-label="Reset to north" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 7-3 7-3-7z" fill="currentColor"/></svg></button></div></div>
 <script>window.PAGE={"page": "spain", "selected": "Rioja"};</script>
 <script src="assets/maplibre-gl.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
-</body></html><script>document.addEventListener('do-pick',e=>{document.getElementById('do-title').textContent=e.detail.name;document.querySelector('.card .kicker').textContent=e.detail.level+' · '+GEO.macro[e.detail.macro].name;});</script>
+</body></html><script>document.addEventListener('do-pick',e=>{document.getElementById('do-title').textContent=e.detail.name;document.querySelector('.card .kicker').textContent=e.detail.level+' · '+GEO.macro[e.detail.macro].name;});
+if(/from=quiz/.test(location.hash)){const b=document.querySelector('.card .foot .btn:not(.primary)');b.textContent='Back to the quiz';b.href='03c-quiz-fact.html';}</script>

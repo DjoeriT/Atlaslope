@@ -1,23 +1,24 @@
-# Paraje mock-ups, round 2.1 (15 Oct 2026)
+# Paraje mock-ups, round 2.2 (16 Oct 2026)
 
-Lives in `public/` so the Pages site serves it at `/Paraje/mocks/atlas-v2/`; `Review/mock-atlas` links here. Sources and licences for everything in `assets/data.js`: `data/SOURCES.md`, section "Mock-only layers".
+Open `index.html` and click through. Same stack as 2.1 (MapLibre, bundled type and geography; satellite and 3D terrain stream from the internet).
 
-Open `index.html` and click through. Self-contained: MapLibre, the typefaces and all geography ship in `assets/`. Satellite imagery (Esri) and 3D terrain (Mapzen on AWS) stream from the internet when the page is open.
+## New in 2.2, per the boundary decision: three screens only
+- `03c-quiz-fact.html` Region, climate or soil. The map shows the place (others dimmed), the student answers the fact. After the answer: a short feedback line, three fact rows, "Open Rías Baixas" (comes back to the quiz) and "Next question". Reached from "What is this?" in the quiz chain.
+- `05-lesson-rioja.html` Rioja lesson. Seven stops flown through in 3D, one structured card each (zone, altitude, soil, climate, grapes, why it matters), numbered markers that jump to a stop, arrow keys work. Ends in "Now find them": a recap list and a hand-off to the find-it quiz on Rioja.
+- `06-explore-profile.html` Elevation profile. A line from the Sierra de Cantabria over the Ebro to the Sierra de la Demanda with the real ground under it (Mapzen terrain tiles sampled at 30 m, 53 km, 408 to 1,636 m). Zone bands, hover crosshair with a dot on the map, "Draw a new line" from the live terrain (3D relief on), "Back to the example line".
+- Both are linked from the Rioja Explore card.
 
-## What is real
-- DO boundaries: the official MAPA layer, 2014 edition, from the paraje repo (`data/dops.geojson`). Cava, Cataluña and the Vinos de Pago are left out of the mock.
-- Rioja zones: built from the official municipality lists (repo `data/rioja-zones.geojson`).
-- Coastlines, borders, rivers, towns: Natural Earth. Terrain: real elevation.
-- Type: Newsreader (names) and IBM Plex Sans (interface), both SIL Open Font Licence, bundled.
+## Changed everywhere
+- Study regions follow the course: ten regions from the repo's `data/dop-overrides.json` (Green Spain, Castilla y León, Rioja, Navarra and Aragón, Cataluña, Valencia and Murcia, Meseta, Andalucía, Balearic Islands, Canary Islands). Bierzo is now under Castilla y León. Legend, quiz areas and kickers updated. Check: `/mnt/project-files/paraje/reviews/2026-10-16-taxonomy-check.md`.
+- Quiz pool: 68 core DOs and DOCas, five Vinos de Calidad only in an All of Spain quiz, Vinos de Pago not asked.
+- Zone and DO fills fade when zoomed in, so the terrain shows at lesson zoom. Reduced-motion setting stops the fly-throughs.
 
-## What is still schematic
-Rioja soil areas, the photos (placeholder gradients), quiz scores and progress, search. Macro-region assignment of each DO is mine and needs a check against the SWS syllabus.
+## After the fresh-eyes review (fixed before you saw it)
+Ways in from the Rioja card; quiz chain 03b to 03c to results; wrong answer marks the progress dot red; "Open Rías Baixas" always offered and returns to the quiz; the highlighted DO is the only one not dimmed; lesson recap list replaces the promise about quiz memory; stop markers sit above their labels; "why" row has a label for screen readers; profile panel taller on iPad, 44 px draw button, lowest and highest points labelled on a drawn line, hint about 3D relief shown before you click, hover readout announced, tap works on touch.
 
-## Controls
-Layers button (top right): Satellite or Atlas base map, 3D relief, DO boundaries, soil, photos. Half-circle button: light paper chrome or dark chrome. Bottom right: zoom, tilt to 3D, reset north. Drag with right mouse or two fingers to rotate.
-
-## Changed in 2.1 after the fresh-eyes review
-Map frames itself around the card at every width, so nothing you are asked to find hides under it. Labels no longer overlap (lower-priority ones give way). Quiz instructions and the tap status live in the card, with a type-the-name field for keyboard and iPad. Rioja zone outlines only on the Rioja screen. Chrome follows the system light or dark setting, with the half-circle button as override. "3D" button with a pressed state, compass only when rotated. One wording: Start quiz, Retry missed (3), New quiz; "Quiz me on Rioja" preselects Rioja. Area chips on the set-up screen dim the rest of the map. Dark-mode map buttons fixed. Tap targets at 44px, photo pins announce their caption and scroll to the photo.
-
-## Known limits
-Satellite and terrain need internet; offline you get the Atlas base map without relief. Tested at 1440 and 1024 wide in light and dark; phone width is a stacked layout, lightly tested.
+## Still schematic or open
+- Lesson numbers (altitudes, dates) are the author's and need a source check against `data/SOURCES.md` material before build [A].
+- Hand-off from the lesson: the find-it quiz is mocked for DOs; asking "tap where Haro is" is the same tap mechanic on places and needs a yes from the owner.
+- Drawing a line is by map tap only; a keyboard route comes with the build.
+- The ten-region palette is muted on purpose; regions are told apart by boundaries and labels, not colour alone.
+- Rioja soil areas, photos, scores: placeholders as in 2.1.
