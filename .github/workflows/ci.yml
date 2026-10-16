@@ -3,6 +3,10 @@ on:
   push:
     branches: [main]
   pull_request:
+# A newer commit on the same branch or PR cancels the older run (release 4: four pushes, four full runs before one merge).
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 jobs:
   check:
     runs-on: ubuntu-latest
