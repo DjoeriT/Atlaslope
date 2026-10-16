@@ -37,17 +37,20 @@ Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 q
 photos for 77 places (`public/photos/`, `data/photos.json`), grapes in search. The "Report a mistake" link is built but hidden (owner, no address).
 
 ## 5. Release and deployment state
-Live: release 4 (tag `release-4` on b5c773b, 16 Oct 19:54Z, publish run 38958091012) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there.
-Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710]. Next release is 4.1.
+Live: release 5, the world background map (PR #26; tag `release-5` on 25a951e, 16 Oct 20:10Z, publish run 38959982676, live map check
+run 38960276425 passed) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there. Release 4: tag on b5c773b.
+Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
+Numbering: the publish workflow takes only the next whole number, so the slice called "release 4.1" ships as release 6 and the quiz
+(planned as release 5) as release 7 [V, publish.yml; owner said "publish release 5" for the map, 16 Oct 20:05Z].
 Route from now on: one pull request per slice on a `claude/...` branch, merged after green CI and ReviewBot; releases through the `publish`
 workflow after the owner's "publish release N" [O, cards 16 Oct 10:18 to 10:19Z]. A cloud thread can start that workflow [V, release 3]. The Remote Control
 session on his Mac also sees his thread messages and started a second publish run 7 s apart; the workflow's tag guard stopped it harmlessly.
 
 ## 6. In flight
-- Restart, data step, releases 3 and 4 are done. Release 4 agents used 0.84 M tokens against a 0.5 to 0.7 M estimate (four writer
+- Restart, data step, releases 3, 4 and 5 (world background map) are done. Release 4 agents used 0.84 M tokens against a 0.5 to 0.7 M estimate (four writer
   batches over budget, plus follow-ups) [V, spend log]. Next: release 4.1 (owner cards 16 Oct 19:37Z): a tasting row and famous styles from
   the official documents, up to three famous producers or wines from Spanish Wikipedia, and planted-area main grapes for the 30 sheets without
-  one (the ministry's host refuses GitHub Actions; try from the Mac). Then release 5 (quiz). The owner's go (16 Oct 12:51Z) covers the
+  one (the ministry's host refuses GitHub Actions; try from the Mac). Then the quiz (planned as release 5, now numbered 7). The owner's go (16 Oct 12:51Z) covers the
   restart, the data step and releases 3 to 5 [O]. Releases 6 to 8 need a new go.
 
 ## 7. Known problems
