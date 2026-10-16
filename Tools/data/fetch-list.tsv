@@ -1,0 +1,11 @@
+# name	url	kind
+eambrosia-api-root.html	https://webgate.ec.europa.eu/eambrosia-api/	text
+eambrosia-api-docs.json	https://webgate.ec.europa.eu/eambrosia-api/v3/api-docs	text
+eambrosia-api-swagger.html	https://webgate.ec.europa.eu/eambrosia-api/swagger-ui/index.html	text
+eambrosia-api-gi-search.json	https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?fileNumber=PDO-ES-A0615	text
+ign-collections.json	https://api-features.ign.es/collections?f=json	text
+ign-au-sample.json	https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=2	text
+mapa-ogc-collections.json	https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json	text
+clm-apliagri-index.html	https://apliagri.castillalamancha.es/calidad-diferenciada	text
+incavi-plecs.html	https://incavi.gencat.cat/ca/normativa/plecs-condicions-do-catalanes/	text
+itacyl-calidad.html	https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad	text
