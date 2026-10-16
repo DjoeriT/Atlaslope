@@ -15,10 +15,11 @@ COURSE = ["green-spain", "castilla-y-leon", "rioja", "ebro", "cataluna", "medite
 
 # Study region for places that have no polygon in the 2014 layer (from dop-overrides.json "missing"), by EU file number.
 # Kept out of the quiz pool (taxonomy check, finding 6 of the plan review): Cava and the generic Catalunya DO (they overlap
-# other DOs), the all-islands Islas Canarias VC, every Vino de Pago, and Urbezo (a single estate the ministry lists as DO).
+# other DOs), the all-islands Islas Canarias VC and every Vino de Pago. Urbezo, a single estate the ministry lists as DO, is quizzed (owner, 16 Oct 2026).
 NOT_QUIZZED = {"PDO-ES-A0735": "Overlaps other DOs across six regions.", "PDO-ES-A1549": "Covers most of the other Catalan DOs.",
-               "PDO-ES-A1511": "Covers all the islands, over their own DOs.",
-               "PDO-ES-02585": "A single estate; the ministry lists it as DO, the 2024 registration calls it a pago. Kept with the Pagos until the owner decides."}
+               "PDO-ES-A1511": "Covers all the islands, over their own DOs."}
+# Quizzed places that need a word of explanation in the tree.
+QUIZ_NOTES = {"PDO-ES-02585": "A single estate (one cadastral polygon of Cariñena, surrounded by DO Cariñena) that the ministry lists as DO; quizzed as a core place on the owner's word (16 Oct 2026)."}
 
 # Short stable ids where the slug of the name would be long or would clash (decision #41: short, never changes, no parent in it).
 IDS = {"Jerez-Xérès-Sherry": "jerez", "Manzanilla-Sanlúcar de Barrameda": "manzanilla", "Cataluña / Catalunya": "catalunya",
@@ -102,6 +103,7 @@ def main():
         if not hit and pid in added: place["boundary"], place["centroid"] = "added", added[pid]
         if pid in ALSO_WITHIN: place["alsoWithin"] = ALSO_WITHIN[pid]
         if r["euFile"] in NOT_QUIZZED: place["quizNote"] = NOT_QUIZZED[r["euFile"]]
+        if r["euFile"] in QUIZ_NOTES: place["quizNote"] = QUIZ_NOTES[r["euFile"]]
         places.append(place)
 
     zones_geo = json.loads((ROOT / "data/rioja-zones.geojson").read_text())
