@@ -29,6 +29,7 @@ export const strings = {
     quiz: 'Quiz',
     progress: 'Progress',
     comingSoon: 'Coming soon',
+    mainGrape: (name: string) => `main grape: ${name}`,
   },
   cards: {
     whereThisSits: 'Where this sits',
