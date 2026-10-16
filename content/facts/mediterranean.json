@@ -81,6 +81,43 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to golden, fresh and fruity. Rosés: raspberry, strawberry, redcurrant or salmon pink. Reds: purple, garnet, cherry or ruby, good fruit. Aged wines: tile-red tones, fruit and wood in balance.",
+    "cite": [
+     "valencia-doc:p1",
+     "valencia-doc:p2",
+     "valencia-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "White, rosé or red; sweet and rich, most intense from Moscatel."
+     },
+     {
+      "name": "Espumoso aromático de calidad",
+      "text": "White, rosé or red; clean, intense aromas, fresh, well-integrated carbonic gas."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Fresh, fruity and intense, with well-integrated carbonic gas."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "More intense colour than the base wine; fruit and wood in balance."
+     }
+    ],
+    "cite": [
+     "valencia-doc:p3",
+     "valencia-doc:p4",
+     "valencia-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -152,6 +189,44 @@
     "cite": [
      "utiel-requena-doc:p9"
     ]
+   },
+   "tastes": {
+    "text": "Reds: intense red with violet tints; black and red fruit, riper with time; full-bodied, balanced acidity. Whites: yellow, floral and white-fruit aromas, fresh. Rosés: lively pink; red fruit, strawberry in Bobal.",
+    "cite": [
+     "utiel-requena-doc:p1",
+     "utiel-requena-doc:p2",
+     "utiel-requena-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de baja graduación",
+      "text": "Fruity wines, fresh and harmonious; white, rosé or red."
+     },
+     {
+      "name": "Espumoso aromático de calidad",
+      "text": "Yellow; fruit aromas of the grapes used; slightly sweet."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Varietal aromas; light and fresh on the palate."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "White or red; look and aroma as in the still wines."
+     }
+    ],
+    "cite": [
+     "utiel-requena-doc:p4",
+     "utiel-requena-doc:p5",
+     "utiel-requena-doc:p6",
+     "utiel-requena-doc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -222,6 +297,33 @@
     "cite": [
      "yecla-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale straw with green glints to golden. Rosés: raspberry and cherry pink with purple tints. Reds: violet cherry with garnet tones; fruity, fleshy, warm, tannic yet soft, balanced, high extract.",
+    "cite": [
+     "yecla-doc:p1",
+     "yecla-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "Sweet, full-bodied and unctuous, well balanced, with a very long finish."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Whites golden-yellow, rosés raspberry pink, reds violet cherry; persistent, long finish."
+     }
+    ],
+    "cite": [
+     "yecla-doc:p3",
+     "yecla-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -284,6 +386,39 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: violet to ruby, tile-red when aged; fresh or ripe fruit; aged ones more complex, ripe tannins. Rosés: violet pink to salmon, fruity. Whites: pale straw to golden, fruity. Sweet reds: ripe fruit, balsamic notes.",
+    "cite": [
+     "jumilla-doc:p7",
+     "jumilla-doc:p8",
+     "jumilla-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Jumilla Monastrell",
+      "text": "Made with at least 85% Monastrell."
+     },
+     {
+      "name": "Jumilla dulce",
+      "text": "Sweet red, white or rosé; red cherry to brown if aged long."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Monastrell red; aged ones show candied and dried fruit, balsamic and spice."
+     }
+    ],
+    "cite": [
+     "jumilla-doc:p7",
+     "jumilla-doc:p8",
+     "jumilla-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -355,6 +490,39 @@
     "cite": [
      "alicante-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Reds: ruby to violet, fresh red fruit when young; cherry, ripe fruit and balsamic notes when aged; structured. Whites: pale yellow to amber, white flowers, citrus. Rosés: salmon to pink, fruity.",
+    "cite": [
+     "alicante-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Fondillón",
+      "text": "Red; mahogany to coppery; ripe and dried fruit, well-integrated wood, slightly sweet."
+     },
+     {
+      "name": "Vino añejo",
+      "text": "Mahogany tones; intense, oaky; long, structured finish."
+     },
+     {
+      "name": "Vino noble",
+      "text": "Cherry tones with orange rims; intense, oaky; long aftertaste."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Rosé or red; intense, flowers, ripe fruit, raisins."
+     }
+    ],
+    "cite": [
+     "alicante-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -407,6 +575,32 @@
     "cite": [
      "bullas-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: dry and clean. Rosés: violet pink to salmon. Reds: violet red to ruby when young, tile-red when aged; varietal aroma, structured, balanced tannin and acidity; aged ones show maturity.",
+    "cite": [
+     "bullas-doc:p4",
+     "bullas-doc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "Violet to tile red; ripe, candied fruit, balsamic, spice; unctuous, long sweet finish."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Intense, fresh, fruity aromas."
+     }
+    ],
+    "cite": [
+     "bullas-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
