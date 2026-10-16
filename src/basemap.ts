@@ -35,12 +35,14 @@ export function baseStyle({ fixture, esriKey }: BaseOptions): StyleSpecification
     sources: {
       eox: { type: 'raster', tiles: [EOX_TILES], tileSize: 256, maxzoom: 14, attribution: EOX_ATTRIBUTION },
       terrain: { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13, attribution: TERRAIN_ATTRIBUTION },
+      // Same tiles again: MapLibre renders better when hillshade and 3D terrain do not share a source.
+      relief: { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13 },
     },
     layers: [
       { id: 'bg', type: 'background', paint: { 'background-color': '#0b1016' } },
       { id: 'eox', type: 'raster', source: 'eox', ...(esriKey ? { maxzoom: HANDOVER[1] } : {}) },
       {
-        id: 'hillshade', type: 'hillshade', source: 'terrain',
+        id: 'hillshade', type: 'hillshade', source: 'relief',
         paint: { 'hillshade-exaggeration': 0.25, 'hillshade-shadow-color': '#5A4A3A', 'hillshade-highlight-color': '#FFFFFF', 'hillshade-accent-color': '#8A7A66' },
       },
     ],

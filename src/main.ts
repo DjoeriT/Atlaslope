@@ -52,7 +52,10 @@ function addDoLayers(layer: Layer): void {
     'line-width': sel(3, hov(2.4, 1.2)) as never,
   } });
   if (map.getStyle().glyphs) {
-    map.addLayer({ id: 'dos-label', type: 'symbol', source: 'dos', layout: {
+    // Labels get their own source: if the glyph server fails, MapLibre drops every tile of the source that needs glyphs,
+    // and the DO fills must not go with them.
+    map.addSource('dos-labels', { type: 'geojson', data: layer as never });
+    map.addLayer({ id: 'dos-label', type: 'symbol', source: 'dos-labels', layout: {
       'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': ['interpolate', ['linear'], ['zoom'], 5, 11, 9, 15],
       'text-allow-overlap': false, 'text-max-width': 8, 'symbol-sort-key': ['match', ['get', 'kind'], 'DOCa', 0, 'DO', 1, 2],
     }, paint: { 'text-color': '#fff', 'text-halo-color': 'rgba(0,0,0,.75)', 'text-halo-width': 1.4 } });

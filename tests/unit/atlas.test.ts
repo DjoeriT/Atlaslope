@@ -71,7 +71,7 @@ describe('base style', () => {
   it('omits Esri without a key', () => {
     for (const esriKey of [undefined, '']) {
       const s = baseStyle({ fixture: false, esriKey });
-      expect(Object.keys(s.sources).sort()).toEqual(['eox', 'terrain']);
+      expect(Object.keys(s.sources).sort()).toEqual(['eox', 'relief', 'terrain']);
       expect(s.layers.map((l) => l.id)).not.toContain('esri');
     }
   });

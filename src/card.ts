@@ -44,7 +44,7 @@ export function renderCard(body: HTMLElement, m: CardModel, onNeighbour: (code: 
   const facts = el('dl', { className: 'facts' },
     el('dt', {}, 'Level'), el('dd', {}, m.level),
     el('dt', {}, 'Study region'), el('dd', {}, m.region));
-  const parts: Node[] = [el('div', { className: 'kicker' }, m.region), el('h1', { id: 'card-title' }, m.name), facts];
+  const parts: Node[] = [el('h1', { id: 'card-title' }, m.name), facts];
   if (m.note) parts.push(el('p', { className: 'lede' }, m.note));
   if (m.neighbours.length) {
     const list = el('ul', { className: 'chips neighbours', ariaLabel: 'Neighbours' });

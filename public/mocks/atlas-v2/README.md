@@ -2,6 +2,8 @@
 
 Lives in `public/` so the Pages site serves it at `/Paraje/mocks/atlas-v2/`; `Review/mock-atlas` links here. Sources and licences for everything in `assets/data.js`: `data/SOURCES.md`, section "Mock-only layers".
 
+01 and 02 retired in release 2; the app has them.
+
 Open `index.html` and click through. Self-contained: MapLibre, the typefaces and all geography ship in `assets/`. Satellite imagery (Esri) and 3D terrain (Mapzen on AWS) stream from the internet when the page is open.
 
 ## What is real

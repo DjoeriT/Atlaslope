@@ -42,6 +42,14 @@ test('a neighbour opens its own card, and Escape closes it', async ({ page }) =>
   await expect(page.locator('#card')).toBeHidden();
 });
 
+test('the close button closes the card', async ({ page }) => {
+  await open(page);
+  await page.fill('#search', 'albar');
+  await page.keyboard.press('Enter');
+  await page.click('#card-close'); // a real click: fails if anything sits on top of the button
+  await expect(page.locator('#card')).toBeHidden();
+});
+
 test('search picks a DO, accents and case ignored', async ({ page }) => {
   await open(page);
   await page.fill('#search', 'CERRO');

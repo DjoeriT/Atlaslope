@@ -33,6 +33,17 @@ The two MAPA texts disagree. Paraje is a free study tool, which fits both. We fo
 
 Leads not yet fetched: wine IGPs (not in MAPA's layer); AEMET station normals; Wikimedia Commons photos (per-file licence).
 
+## App layers and assets (not under `data/`)
+Streamed at view time or served from `public/`. The app's DO layer is `dops.geojson` plus `dop-overrides.json` above.
+
+| Layer | Source and URL | Fetched | Licence |
+|---|---|---|---|
+| Satellite, all zooms (or up to zoom 10 when the Esri key is set) | EOX Sentinel-2 cloudless 2020, WMTS as XYZ, `https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg` (template in `src/basemap.ts`; not probed from the build container [A]) | at view time | Free for non-commercial use with credit; read 16 Oct 2026 at cloudless.eox.at/products/viewing [R]. Credit in the map: "Sentinel-2 cloudless by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2020)" |
+| Satellite, close-in (zoom 9 and up, cross-fading from EOX) | Esri World Imagery, keyed endpoint `https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}`; only built in when `VITE_ESRI_API_KEY` is set (`.env.example`) | at view time | Free developer account, under one million tiles a month, credit in the map: "Esri, Maxar, Earthstar Geographics, and the GIS User Community" [O, per LeadBot 16 Oct 2026] |
+| 3D terrain and hillshade (streamed at view time) | Mapzen Terrarium tiles on AWS Open Data, `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png` | at view time | Mapzen terms; SRTM, NED, EU-DEM and others, attribution in the map |
+| DO labels (glyphs) | OpenFreeMap font endpoint, `https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf`, font "Noto Sans Regular" | at view time | OpenFreeMap: free, no key; Noto Sans, SIL Open Font Licence 1.1 |
+| Typefaces | Newsreader and IBM Plex Sans via `@fontsource`; woff2 files in `public/fonts/` (app) and `public/mocks/atlas-v2/assets/fonts/` (mocks) | 2026-10-15 | SIL Open Font Licence 1.1 |
+
 ## Mock-only layers (`public/mocks/atlas-v2/assets/data.js`, not under `data/`)
 The round 2.1 atlas mock bundles its own geography so it runs without a build. None of it is used by the app.
 
@@ -41,7 +52,5 @@ The round 2.1 atlas mock bundles its own geography so it runs without a build. N
 | Countries, provinces, rivers, lakes, towns (clipped to lon -10.5 to 5, lat 34.5 to 45) | Natural Earth 10 m, `https://github.com/nvkelso/natural-earth-vector` (GeoJSON) | 2026-10-15 | Public domain |
 | DO polygons and Rioja zones | This repo's `dops.geojson` and `rioja-zones.geojson` (entries above), renamed for display (e.g. "Vino de Rioja" to "Rioja"); Cava, Cataluña, Islas Canarias and Vinos de Pago left out | 2026-10-15 | As above |
 | Rioja soil areas | Hand-drawn schematic, labelled as such in the mock | 2026-10-15 | Ours |
-| 3D terrain (streamed at view time) | Mapzen Terrarium tiles on AWS Open Data, `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png` | at view time | Mapzen terms; SRTM, NED, EU-DEM and others, attribution in the map |
-| Satellite (streamed at view time) | Esri World Imagery, `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer` | at view time | Esri terms of use, attribution in the map; mock use only, to be replaced before release [O] |
-| Typefaces | Newsreader and IBM Plex Sans via `@fontsource` | 2026-10-15 | SIL Open Font Licence 1.1 |
+| Satellite (streamed at view time) | Esri World Imagery, `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer` | at view time | Esri terms of use, attribution in the map; mocks 03 to 04 only (the app uses the keyed endpoint below) |
 | MapLibre GL JS 4.7.1 | `https://www.npmjs.com/package/maplibre-gl` | 2026-10-15 | BSD-3-Clause |
