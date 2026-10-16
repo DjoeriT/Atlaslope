@@ -42,10 +42,11 @@ describe('place tree', () => {
     }
   });
 
-  it('gives every place a boundary source; only the 16 places missing from the 2014 layer are still to fetch', () => {
+  it('gives every quizzed place a boundary; only 14 Vinos de Pago are still to fetch', () => {
     const toFetch = places.filter((p) => p.boundary === 'to-fetch');
-    expect(toFetch).toHaveLength(16);
-    expect(toFetch.filter((p) => p.quiz !== 'none').map((p) => p.id).sort()).toEqual(['campo-de-calatrava', 'cebreros']);
+    expect(toFetch).toHaveLength(14);
+    expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
+    expect(places.filter((p) => p.boundary === 'added').map((p) => p.id).sort()).toEqual(['campo-de-calatrava', 'cebreros']);
     expect(places.filter((p) => p.boundary === 'mapa-2014').every((p) => p.layerCode)).toBe(true);
   });
 

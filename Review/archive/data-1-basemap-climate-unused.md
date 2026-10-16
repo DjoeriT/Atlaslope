@@ -1,5 +1,7 @@
 # Card data-1: atlas base and climate layer (data step, issue #10)
 
+**Not used (16 Oct 2026):** the lead built this in GitHub Actions instead (`Tools/data/remote_build.sh`), because the cloud container has no GDAL and no package registry. Kept for the record.
+
     Goal:        The atlas has its own base (land, sea edge, borders) and the climate layer has its data, both committed with their paper trail.
     Task:        Fetch Natural Earth and the Köppen-Geiger map, clip them to Spain (mainland, Balearics, Canaries), simplify, commit two GeoJSON files.
     Role/model:  BuilderBot (Sonnet)

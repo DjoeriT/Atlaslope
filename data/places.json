@@ -112,7 +112,7 @@
     38.5257
    ],
    "quiz": "core",
-   "northSouth": 69,
+   "northSouth": 71,
    "courseOrder": 55
   },
   {
@@ -152,7 +152,7 @@
     37.2594
    ],
    "quiz": "core",
-   "northSouth": 74,
+   "northSouth": 76,
    "courseOrder": 88
   },
   {
@@ -172,7 +172,7 @@
     37.3125
    ],
    "quiz": "core",
-   "northSouth": 73,
+   "northSouth": 75,
    "courseOrder": 87
   },
   {
@@ -192,7 +192,7 @@
     36.6981
    ],
    "quiz": "core",
-   "northSouth": 78,
+   "northSouth": 80,
    "courseOrder": 92
   },
   {
@@ -212,7 +212,7 @@
     36.9337
    ],
    "quiz": "vc",
-   "northSouth": 77,
+   "northSouth": 79,
    "courseOrder": 91
   },
   {
@@ -232,7 +232,7 @@
     36.9397
    ],
    "quiz": "core",
-   "northSouth": 75,
+   "northSouth": 77,
    "courseOrder": 89
   },
   {
@@ -255,7 +255,7 @@
    "alsoWithin": [
     "jerez"
    ],
-   "northSouth": 79,
+   "northSouth": 81,
    "courseOrder": 93
   },
   {
@@ -275,7 +275,7 @@
     37.5454
    ],
    "quiz": "core",
-   "northSouth": 72,
+   "northSouth": 74,
    "courseOrder": 86
   },
   {
@@ -295,7 +295,7 @@
     36.9397
    ],
    "quiz": "core",
-   "northSouth": 76,
+   "northSouth": 78,
    "courseOrder": 90
   },
   {
@@ -452,7 +452,7 @@
     39.6541
    ],
    "quiz": "core",
-   "northSouth": 51,
+   "northSouth": 52,
    "courseOrder": 94
   },
   {
@@ -472,7 +472,7 @@
     39.556
    ],
    "quiz": "core",
-   "northSouth": 54,
+   "northSouth": 55,
    "courseOrder": 95
   },
   {
@@ -492,7 +492,7 @@
     28.1412
    ],
    "quiz": "core",
-   "northSouth": 87,
+   "northSouth": 89,
    "courseOrder": 103
   },
   {
@@ -512,7 +512,7 @@
     27.7463
    ],
    "quiz": "core",
-   "northSouth": 90,
+   "northSouth": 92,
    "courseOrder": 106
   },
   {
@@ -532,7 +532,7 @@
     27.9547
    ],
    "quiz": "core",
-   "northSouth": 89,
+   "northSouth": 91,
    "courseOrder": 105
   },
   {
@@ -553,7 +553,7 @@
    ],
    "quiz": "none",
    "quizNote": "Covers all the islands, over their own DOs.",
-   "northSouth": 86,
+   "northSouth": 88,
    "courseOrder": 102
   },
   {
@@ -573,7 +573,7 @@
     28.1174
    ],
    "quiz": "core",
-   "northSouth": 88,
+   "northSouth": 90,
    "courseOrder": 104
   },
   {
@@ -593,7 +593,7 @@
     28.6896
    ],
    "quiz": "core",
-   "northSouth": 81,
+   "northSouth": 83,
    "courseOrder": 97
   },
   {
@@ -613,7 +613,7 @@
     29.0242
    ],
    "quiz": "core",
-   "northSouth": 80,
+   "northSouth": 82,
    "courseOrder": 96
   },
   {
@@ -633,7 +633,7 @@
     28.4899
    ],
    "quiz": "core",
-   "northSouth": 82,
+   "northSouth": 84,
    "courseOrder": 98
   },
   {
@@ -653,7 +653,7 @@
     28.3282
    ],
    "quiz": "core",
-   "northSouth": 83,
+   "northSouth": 85,
    "courseOrder": 99
   },
   {
@@ -673,7 +673,7 @@
     28.3141
    ],
    "quiz": "core",
-   "northSouth": 84,
+   "northSouth": 86,
    "courseOrder": 100
   },
   {
@@ -693,7 +693,7 @@
     28.2961
    ],
    "quiz": "core",
-   "northSouth": 85,
+   "northSouth": 87,
    "courseOrder": 101
   },
   {
@@ -710,7 +710,7 @@
    "boundary": "to-fetch",
    "centroid": null,
    "quiz": "none",
-   "courseOrder": 22
+   "courseOrder": 23
   },
   {
    "id": "arlanza",
@@ -783,10 +783,14 @@
    "community": "Castilla Y León",
    "euFile": "PDO-ES-02348",
    "layerCode": null,
-   "boundary": "to-fetch",
-   "centroid": null,
+   "boundary": "added",
+   "centroid": [
+    -4.6868,
+    40.3817
+   ],
    "quiz": "vc",
-   "courseOrder": 23
+   "northSouth": 44,
+   "courseOrder": 22
   },
   {
    "id": "cigales",
@@ -1017,7 +1021,7 @@
     38.8856
    ],
    "quiz": "core",
-   "northSouth": 63,
+   "northSouth": 64,
    "courseOrder": 74
   },
   {
@@ -1037,7 +1041,7 @@
     40.1418
    ],
    "quiz": "none",
-   "northSouth": 46,
+   "northSouth": 47,
    "courseOrder": 63
   },
   {
@@ -1051,10 +1055,14 @@
    "community": "Castilla-La Mancha",
    "euFile": "PDO-ES-02870",
    "layerCode": null,
-   "boundary": "to-fetch",
-   "centroid": null,
+   "boundary": "added",
+   "centroid": [
+    -3.7924,
+    38.798
+   ],
    "quiz": "core",
-   "courseOrder": 79
+   "northSouth": 68,
+   "courseOrder": 78
   },
   {
    "id": "campo-de-la-guardia",
@@ -1073,7 +1081,7 @@
     39.777
    ],
    "quiz": "none",
-   "northSouth": 50,
+   "northSouth": 51,
    "courseOrder": 67
   },
   {
@@ -1093,7 +1101,7 @@
     38.9585
    ],
    "quiz": "none",
-   "northSouth": 62,
+   "northSouth": 63,
    "courseOrder": 73
   },
   {
@@ -1113,7 +1121,7 @@
     39.4547
    ],
    "quiz": "none",
-   "northSouth": 58,
+   "northSouth": 59,
    "courseOrder": 69
   },
   {
@@ -1133,7 +1141,7 @@
     39.8582
    ],
    "quiz": "none",
-   "northSouth": 49,
+   "northSouth": 50,
    "courseOrder": 66
   },
   {
@@ -1169,7 +1177,7 @@
     38.8675
    ],
    "quiz": "none",
-   "northSouth": 65,
+   "northSouth": 66,
    "courseOrder": 76
   },
   {
@@ -1189,7 +1197,7 @@
     38.8726
    ],
    "quiz": "none",
-   "northSouth": 64,
+   "northSouth": 65,
    "courseOrder": 75
   },
   {
@@ -1225,7 +1233,7 @@
     39.2632
    ],
    "quiz": "core",
-   "northSouth": 60,
+   "northSouth": 61,
    "courseOrder": 71
   },
   {
@@ -1261,7 +1269,7 @@
     39.4706
    ],
    "quiz": "core",
-   "northSouth": 57,
+   "northSouth": 58,
    "courseOrder": 68
   },
   {
@@ -1281,7 +1289,7 @@
     40.0541
    ],
    "quiz": "core",
-   "northSouth": 47,
+   "northSouth": 48,
    "courseOrder": 64
   },
   {
@@ -1301,7 +1309,7 @@
     40.3508
    ],
    "quiz": "core",
-   "northSouth": 44,
+   "northSouth": 45,
    "courseOrder": 61
   },
   {
@@ -1321,7 +1329,7 @@
     39.1888
    ],
    "quiz": "none",
-   "northSouth": 61,
+   "northSouth": 62,
    "courseOrder": 72
   },
   {
@@ -1341,7 +1349,7 @@
     39.3503
    ],
    "quiz": "core",
-   "northSouth": 59,
+   "northSouth": 60,
    "courseOrder": 70
   },
   {
@@ -1393,7 +1401,7 @@
     39.9473
    ],
    "quiz": "core",
-   "northSouth": 48,
+   "northSouth": 49,
    "courseOrder": 65
   },
   {
@@ -1413,8 +1421,8 @@
     38.7574
    ],
    "quiz": "core",
-   "northSouth": 67,
-   "courseOrder": 78
+   "northSouth": 69,
+   "courseOrder": 79
   },
   {
    "id": "vallegarcia",
@@ -1700,7 +1708,7 @@
     38.8547
    ],
    "quiz": "core",
-   "northSouth": 66,
+   "northSouth": 67,
    "courseOrder": 77
   },
   {
@@ -1820,7 +1828,7 @@
     40.2085
    ],
    "quiz": "core",
-   "northSouth": 45,
+   "northSouth": 46,
    "courseOrder": 62
   },
   {
@@ -1840,7 +1848,7 @@
     37.9546
    ],
    "quiz": "core",
-   "northSouth": 71,
+   "northSouth": 73,
    "courseOrder": 57
   },
   {
@@ -1860,7 +1868,7 @@
     38.6065
    ],
    "quiz": "core",
-   "northSouth": 68,
+   "northSouth": 70,
    "courseOrder": 54
   },
   {
@@ -2036,7 +2044,7 @@
     38.5121
    ],
    "quiz": "core",
-   "northSouth": 70,
+   "northSouth": 72,
    "courseOrder": 56
   },
   {
@@ -2072,7 +2080,7 @@
     39.6199
    ],
    "quiz": "none",
-   "northSouth": 52,
+   "northSouth": 53,
    "courseOrder": 50
   },
   {
@@ -2092,7 +2100,7 @@
     39.4974
    ],
    "quiz": "none",
-   "northSouth": 56,
+   "northSouth": 57,
    "courseOrder": 53
   },
   {
@@ -2128,7 +2136,7 @@
     39.5043
    ],
    "quiz": "core",
-   "northSouth": 55,
+   "northSouth": 56,
    "courseOrder": 52
   },
   {
@@ -2148,7 +2156,7 @@
     39.5893
    ],
    "quiz": "core",
-   "northSouth": 53,
+   "northSouth": 54,
    "courseOrder": 51
   },
   {

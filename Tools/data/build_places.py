@@ -83,6 +83,7 @@ def main():
         name = fix.get("name", p["name"])
         by_name[norm(name)] = {"code": p["code"], "name": name, "region": fix.get("region", p.get("region")), "centroid": centroid(f["geometry"])}
     missing = {norm(m["name"]): m for m in over["missing"]}
+    added = {f["properties"]["id"]: centroid(f["geometry"]) for f in json.loads((ROOT / "data/added-boundaries.geojson").read_text())["features"]}
 
     places = []
     for r in ministry_rows():
@@ -98,6 +99,7 @@ def main():
                  "parent": "spain", "region": (hit or miss)["region"], "community": r["community"].title(), "euFile": r["euFile"],
                  "layerCode": hit["code"] if hit else None,
                  "boundary": "mapa-2014" if hit else "to-fetch", "centroid": hit["centroid"] if hit else None, "quiz": quiz}
+        if not hit and pid in added: place["boundary"], place["centroid"] = "added", added[pid]
         if pid in ALSO_WITHIN: place["alsoWithin"] = ALSO_WITHIN[pid]
         if r["euFile"] in NOT_QUIZZED: place["quizNote"] = NOT_QUIZZED[r["euFile"]]
         places.append(place)
