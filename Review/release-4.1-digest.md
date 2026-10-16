@@ -15,7 +15,7 @@ One page for every card in this release. Agents read this, the lines named here 
 - Card order (LeadBot default [A]): why line; Main grapes, Other grapes, Styles, **Famous styles**, **How it tastes**, Climate,
   Köppen, Altitude, Soil, **Famous producers**; then photos. New rows reuse the existing row and source-line pattern, so they are a
   small tweak (LeadBot's own UX check; the owner sees a screenshot before merge) rather than a new mock.
-- Release without planted area if no source turns up (owner card pending, recommended option; building on it). [A]
+- Release without planted area if no source turns up; the 30 empty main grapes then move to the next release (owner card, 20:06Z). [O]
 
 ## Shape (`src/facts/types.ts`, checked by `checkSheets`)
 ```json
