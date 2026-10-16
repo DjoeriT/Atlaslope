@@ -54,7 +54,7 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
   move, drop) of this file and `docs/AGENT_ROLES.md`; the owner decides.
 
 ## Backlog
-- GitHub Issues in `DjoeriT/Paraje` (public since 15 Oct 2026, so GitHub Pages works on the free plan) and a Projects board. One issue per
+- GitHub Issues in `DjoeriT/Atlaslope` (public since 15 Oct 2026, so GitHub Pages works on the free plan) and a Projects board. One issue per
   piece of work; long task cards stay in `Review/` and the issue links them. Labels: kind (`ui`, `logic`, `data`, `release`, `security`, `docs`),
   who acts next (`owner`, `agent`) and priority (`now` = this week, `next`, `later`); `parked` = only on the owner's word and carries no priority.
   New issues get a proposed priority; the owner sets it.
