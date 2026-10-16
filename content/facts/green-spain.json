@@ -19,7 +19,7 @@
      }
     ],
     "cite": [
-     "txakoli-bizkaia-doc:p4"
+     "txakoli-bizkaia-wiki"
     ],
     "others": [
      "Chardonnay",
@@ -73,28 +73,14 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Albarín Tinto"
-     },
-     {
-      "local": "Albarín Blanco"
-     },
-     {
-      "local": "Verdejo Negro"
-     },
-     {
-      "local": "Mencía"
-     },
-     {
-      "local": "Carrasquín"
-     }
-    ],
-    "cite": [
-     "cangas-doc:p5",
-     "cangas-doc:p6"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Albarín Tinto",
+     "Albarín Blanco",
+     "Verdejo Negro",
+     "Mencía",
+     "Carrasquín",
      "Albillo Mayor",
      "Garnacha Tintorera",
      "Gewürztraminer",
@@ -106,6 +92,8 @@
      "Syrah"
     ],
     "othersCite": [
+     "cangas-doc:p5",
+     "cangas-doc:p6",
      "cangas-doc:p10"
     ]
    },
@@ -143,24 +131,18 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Hondarrabi Zuri"
-     },
-     {
-      "local": "Hondarrabi Beltza"
-     }
-    ],
-    "cite": [
-     "txakoli-getaria-doc:p3"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Hondarrabi Zuri",
+     "Hondarrabi Beltza",
      "Chardonnay",
      "Gros Manseng",
      "Petit Courbu",
      "Riesling"
     ],
     "othersCite": [
+     "txakoli-getaria-doc:p3",
      "txakoli-getaria-doc:p7"
     ]
    },
@@ -198,22 +180,16 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Ondarrabi Zuri"
-     },
-     {
-      "local": "Ondarrabi Beltza"
-     },
-     {
-      "local": "Petit Courbu"
-     }
+    "main": [],
+    "cite": [],
+    "others": [
+     "Ondarrabi Zuri",
+     "Ondarrabi Beltza",
+     "Petit Courbu"
     ],
-    "cite": [
+    "othersCite": [
      "txakoli-alava-doc:p4"
-    ],
-    "others": [],
-    "othersCite": []
+    ]
    },
    "styles": {
     "kinds": [
@@ -258,10 +234,22 @@
     ],
     "others": [
      "Treixadura",
-     "Loureiro Blanco"
+     "Loureiro Blanco",
+     "Caíño Blanco",
+     "Brancellao",
+     "Castañal",
+     "Torrontés",
+     "Sousón",
+     "Pedral",
+     "Mencía",
+     "Loureiro Tinto",
+     "Godello",
+     "Espadeiro",
+     "Caíño Tinto"
     ],
     "othersCite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-doc:p5",
+     "rias-baixas-doc:p9"
     ]
    },
    "styles": {
@@ -428,48 +416,21 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Brancellao"
-     },
-     {
-      "local": "Albariño"
-     },
-     {
-      "local": "Treixadura"
-     },
-     {
-      "local": "Torrontés"
-     },
-     {
-      "local": "Sousón"
-     },
-     {
-      "local": "Mencía"
-     },
-     {
-      "local": "Loureiro Blanco"
-     },
-     {
-      "local": "Godello"
-     },
-     {
-      "local": "Ferrón"
-     },
-     {
-      "local": "Caíño Tinto"
-     },
-     {
-      "local": "Caíño Longo"
-     },
-     {
-      "local": "Caíño Bravo"
-     }
-    ],
-    "cite": [
-     "ribeiro-doc:p4"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Brancellao",
+     "Albariño",
+     "Treixadura",
+     "Torrontés",
+     "Sousón",
+     "Mencía",
+     "Loureiro Blanco",
+     "Godello",
+     "Ferrón",
+     "Caíño Tinto",
+     "Caíño Longo",
+     "Caíño Bravo",
      "Albillo",
      "Tempranillo",
      "Palomino",
@@ -477,6 +438,7 @@
      "Garnacha Tintorera"
     ],
     "othersCite": [
+     "ribeiro-doc:p4",
      "ribeiro-doc:p8"
     ]
    },
@@ -516,23 +478,23 @@
    "grapes": {
     "main": [
      {
-      "local": "Treixadura"
+      "local": "Godello"
      },
      {
-      "local": "Merenzao"
+      "local": "Doña Blanca"
+     },
+     {
+      "local": "Treixadura"
      },
      {
       "local": "Mencía"
      },
      {
-      "local": "Godello"
-     },
-     {
-      "local": "Doña Blanca"
+      "local": "Merenzao"
      }
     ],
     "cite": [
-     "monterrei-doc:p5"
+     "monterrei-wiki"
     ],
     "others": [
      "Albariño",
