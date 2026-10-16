@@ -1,0 +1,31 @@
+# Producer and planted-area notes from Spanish Wikipedia (Tools/data/wiki_notes.py), committed to the same branch (release 4.1, #27).
+# Runs when a claude/ branch changes the script; es.wikipedia is blocked in the cloud container.
+name: data-wiki-notes
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['Tools/data/wiki_notes.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: data-wiki-notes-${{ github.ref }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -I Tools/data/wiki_notes.py
+      - name: Commit the results to this branch
+        if: always()
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Review/sources/wikipedia-notes
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Wikipedia producer and planted-area notes: results of run ${{ github.run_id }}"
+          git pull -q --no-rebase origin "$BRANCH"
+          git push origin HEAD:"$BRANCH"
