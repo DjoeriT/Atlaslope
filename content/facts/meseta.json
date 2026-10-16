@@ -72,24 +72,13 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Albillo Real"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
-      "local": "Malvar"
-     },
-     {
-      "local": "Garnacha Tinta"
-     }
-    ],
-    "cite": [
-     "vinos-de-madrid-doc:p5"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Albillo Real",
+     "Tempranillo",
+     "Malvar",
+     "Garnacha Tinta",
      "Airén",
      "Cabernet Sauvignon",
      "Garnacha Tintorera",
@@ -104,6 +93,7 @@
      "Torrontés"
     ],
     "othersCite": [
+     "vinos-de-madrid-doc:p5",
      "vinos-de-madrid-doc:p9"
     ]
    },
@@ -148,7 +138,7 @@
      }
     ],
     "cite": [
-     "mentrida-doc:p6"
+     "mentrida-wiki"
     ],
     "others": [
      "Albillo Real",
@@ -206,29 +196,18 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Cencibel",
-      "grape": "Tempranillo"
-     },
-     {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Macabeo"
-     }
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cencibel",
+     "Verdejo",
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Macabeo"
     ],
-    "cite": [
+    "othersCite": [
      "ucles-doc:p6"
-    ],
-    "others": [],
-    "othersCite": []
+    ]
    },
    "styles": {
     "kinds": [
@@ -345,33 +324,16 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Bobal"
-     },
-     {
-      "local": "Airén"
-     },
-     {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Macabeo"
-     }
-    ],
-    "cite": [
-     "ribera-del-jucar-doc:p5"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
      "Cabernet Franc",
      "Merlot",
      "Moscatel Grano Menudo",
@@ -379,6 +341,7 @@
      "Sauvignon Blanco"
     ],
     "othersCite": [
+     "ribera-del-jucar-doc:p5",
      "ribera-del-jucar-doc:p9"
     ]
    },
@@ -417,36 +380,17 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Bobal"
-     },
-     {
-      "local": "Airén"
-     },
-     {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Macabeo"
-     },
-     {
-      "local": "Garnacha Tinta"
-     }
-    ],
-    "cite": [
-     "la-mancha-doc:p6"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
+     "Garnacha Tinta",
      "Cabernet Franc",
      "Chardonnay",
      "Gewürztraminer",
@@ -467,6 +411,7 @@
      "Viognier"
     ],
     "othersCite": [
+     "la-mancha-doc:p6",
      "la-mancha-doc:p11",
      "la-mancha-doc:p12"
     ]
@@ -508,21 +453,12 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Monastrell"
-     },
-     {
-      "local": "Garnacha Tintorera"
-     }
-    ],
-    "cite": [
-     "almansa-doc:p6"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Verdejo",
+     "Monastrell",
+     "Garnacha Tintorera",
      "Cabernet Sauvignon",
      "Chardonnay",
      "Garnacha Tinta",
@@ -535,6 +471,7 @@
      "Tempranillo"
     ],
     "othersCite": [
+     "almansa-doc:p6",
      "almansa-doc:p11"
     ]
    },
@@ -580,36 +517,17 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Pardina"
-     },
-     {
-      "local": "Macabeo"
-     },
-     {
-      "local": "Garnacha Tintorera"
-     },
-     {
-      "local": "Garnacha Tinta"
-     },
-     {
-      "local": "Cayetana Blanca"
-     }
-    ],
-    "cite": [
-     "ribera-del-guadiana-doc:p6"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo",
+     "Syrah",
+     "Pardina",
+     "Macabeo",
+     "Garnacha Tintorera",
+     "Garnacha Tinta",
+     "Cayetana Blanca",
      "Beba",
      "Bobal",
      "Graciano",
@@ -630,6 +548,7 @@
      "Verdejo"
     ],
     "othersCite": [
+     "ribera-del-guadiana-doc:p6",
      "ribera-del-guadiana-doc:p11",
      "ribera-del-guadiana-doc:p12"
     ]
@@ -740,30 +659,15 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Airén"
-     },
-     {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Macabeo"
-     }
-    ],
-    "cite": [
-     "valdepenas-doc:p6"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Cabernet Sauvignon",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
      "Chardonnay",
      "Garnacha Tinta",
      "Merlot",
@@ -772,6 +676,7 @@
      "Sauvignon Blanco"
     ],
     "othersCite": [
+     "valdepenas-doc:p6",
      "valdepenas-doc:p11"
     ]
    },

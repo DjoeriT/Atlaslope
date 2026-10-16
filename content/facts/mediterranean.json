@@ -10,30 +10,15 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Verdil"
-     },
-     {
-      "local": "Moscatel de Alejandría"
-     },
-     {
-      "local": "Monastrell"
-     },
-     {
-      "local": "Merseguera"
-     },
-     {
-      "local": "Macabeo"
-     },
-     {
-      "local": "Garnacha Tintorera"
-     }
-    ],
-    "cite": [
-     "valencia-doc:p7"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Verdil",
+     "Moscatel de Alejandría",
+     "Monastrell",
+     "Merseguera",
+     "Macabeo",
+     "Garnacha Tintorera",
      "Alarije",
      "Bobal",
      "Bonicaire",
@@ -64,6 +49,7 @@
      "Viognier"
     ],
     "othersCite": [
+     "valencia-doc:p7",
      "valencia-doc:p12",
      "valencia-doc:p13"
     ]
@@ -178,15 +164,10 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Monastrell"
-     }
-    ],
-    "cite": [
-     "yecla-doc:p5"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Monastrell",
      "Airén",
      "Cabernet Sauvignon",
      "Chardonnay",
@@ -204,6 +185,7 @@
      "Verdejo"
     ],
     "othersCite": [
+     "yecla-doc:p5",
      "yecla-doc:p9"
     ]
    },
@@ -323,7 +305,7 @@
      }
     ],
     "cite": [
-     "alicante-doc:p7"
+     "alicante-wiki"
     ],
     "others": [
      "Cabernet Sauvignon",
