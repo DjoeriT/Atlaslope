@@ -1681,7 +1681,7 @@
  },
  "clm-apliagri-index.html": {
   "bytes": 59915,
-  "fetched": "2026-10-16T19:41:19+00:00",
+  "fetched": "2026-10-16T19:56:01+00:00",
   "final_url": "https://apliagri.castillalamancha.es/calidad-diferenciada",
   "sha256": "010eb02a19000a3101f6878a8add71152deed0879d32e14a9a4dbb6a0aae6082",
   "status": 404,
@@ -2961,7 +2961,7 @@
  },
  "itacyl-calidad.html": {
   "bytes": 663,
-  "fetched": "2026-10-16T19:41:20+00:00",
+  "fetched": "2026-10-16T19:56:02+00:00",
   "final_url": "https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad",
   "sha256": "28f4f6fa158776d7927da73c94467b262bcc88d4762269321eb599352cc823c4",
   "status": 404,
@@ -2971,7 +2971,7 @@
  },
  "mapa-dop-informe-2022-2023": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:43:03+00:00",
+  "fetched": "2026-10-16T19:59:05+00:00",
   "final_url": "https://mapa.gob.es/ca/alimentacion/temas/calidad-diferenciada/informedops2022-2023_tcm34-690956.pdf",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 0,
@@ -2980,11 +2980,11 @@
  },
  "mapa-dop-informe-2023-2024": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:35+00:00",
+  "fetched": "2026-10-16T19:57:22+00:00",
   "final_url": "https://www.mapa.gob.es/es/dam/jcr:2a49b727-24c9-4d11-aec6-3a6f44dc3b9e/Informe%20DOPs%202023_2024.pdf",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 0,
-  "type": "error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>",
+  "type": "error: URLError: <urlopen error [Errno 111] Connection refused>",
   "url": "https://www.mapa.gob.es/es/dam/jcr:2a49b727-24c9-4d11-aec6-3a6f44dc3b9e/Informe%20DOPs%202023_2024.pdf"
  },
  "mapa-ogc-collections.json": {
@@ -2998,12 +2998,12 @@
   "url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json"
  },
  "mapa-potencial-vinedo-2024": {
-  "bytes": 1397,
-  "fetched": "2026-10-16T19:43:05+00:00",
+  "bytes": 355,
+  "fetched": "2026-10-16T19:59:06+00:00",
   "final_url": "https://servicio.mapa.gob.es/ca/prensa/240503informepotencialvino_tcm34-682088.pdf",
-  "sha256": "1d6906233a82f5c5534325cc8e878175283c9311cb004b5d7255024d684046d5",
+  "sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264",
   "status": 404,
-  "type": "text/html",
+  "type": "text/html; charset=iso-8859-1",
   "url": "https://servicio.mapa.gob.es/ca/prensa/240503informepotencialvino_tcm34-682088.pdf"
  },
  "oj-PDO-ES-01895-C_57_13_2_2019.html": {
@@ -3397,170 +3397,188 @@
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603580"
  },
  "oj-PDO-ES-A0606-C_C_2024_3268_27_5_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 43096,
+  "fetched": "2026-10-16T19:56:04+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403268",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "fb94173aa07a5a091f65abc4abc39f7319c927a107941a35f38c9345c211ac3e",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403268"
  },
  "oj-PDO-ES-A0613-C_C_2025_601_27_1_2025.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 43640,
+  "fetched": "2026-10-16T19:56:08+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500601",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "3d31d1f324977acf8cc9cab24fe625dd944d038d705ae64b206b191c7329bbb4",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500601"
  },
  "oj-PDO-ES-A0613-C_C_2026_4630_31_8_2026.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 71309,
+  "fetched": "2026-10-16T19:56:06+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604630",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "aa3001332b3ba4eb6c94a86c63bcda62d16d570267b583562f5ca20b321f68cb",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604630"
  },
  "oj-PDO-ES-A0614-C_C_2026_743_5_2_2026.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 69774,
+  "fetched": "2026-10-16T19:56:09+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600743",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "43ac1fdbeebee9a78be542ec1b26bf58dded630f78c4d638b7267fdfdbf43869",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600743"
  },
  "oj-PDO-ES-A0615-C_148_05_05_2020.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 60737,
+  "fetched": "2026-10-16T19:56:09+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.148.01.0006.01.SPA&toc=OJ:C:2020:148:TOC",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "4dd9de66451e5ad91aa288f35cda3661253b2095b8b694204717efcad8d8b5a0",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.148.01.0006.01.SPA&toc=OJ:C:2020:148:TOC"
  },
  "oj-PDO-ES-A0622-C70_04_03_2020.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 55393,
+  "fetched": "2026-10-16T19:56:09+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.070.01.0003.01.SPA&toc=OJ:C:2020:070:TOC",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "aa04a2cdbe766333f454eecea7d54e69fb9637e8e1e759e8c8f1cd404295e0de",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.070.01.0003.01.SPA&toc=OJ:C:2020:070:TOC"
  },
  "oj-PDO-ES-A0626-C_73_6_3_2020_.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:07+00:00",
+  "bytes": 74011,
+  "fetched": "2026-10-16T19:56:11+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.073.01.0016.01.SPA&toc=OJ:C:2020:073:TOC",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "692ce696e550dbe96d19430765acc23885c050c73e56e1cf1ddd54e5c313693c",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.073.01.0016.01.SPA&toc=OJ:C:2020:073:TOC"
  },
  "oj-PDO-ES-A0631-C_C_2026_4984_29_9_2026.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 48671,
+  "fetched": "2026-10-16T19:56:13+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604984",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "a294ae6f7753682248a266b2c221598eefc4f9984185c8753cdcd08c19a191b4",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604984"
  },
  "oj-PDO-ES-A0634-C_C_2026_4917_23_9_2026.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 69285,
+  "fetched": "2026-10-16T19:56:15+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604917",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "7a3f1851614a8241ede6ccb29613347c0d8afd7b553b443c73591fbfeab70d42",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604917"
  },
  "oj-PDO-ES-A0732-C_C_2025_6777_23_12_2025.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 59805,
+  "fetched": "2026-10-16T19:56:17+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506777",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "7749fb7c4a47cb7500026b8acfe5d1f0cd99371a45e344257f51d974e2e7bee9",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506777"
  },
  "oj-PDO-ES-A0735-C_2024_3122_17_5_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 37449,
+  "fetched": "2026-10-16T19:56:19+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403122",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "8c7275556011cf25329ea0f5ebbbf18c8a09564e42450631f9bd594be6957910",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403122"
  },
  "oj-PDO-ES-A0735-C_307_11_9_2019.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 197021,
+  "fetched": "2026-10-16T19:56:21+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.307.01.0012.01.FRA&toc=OJ:C:2019:307:TOC",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "2c2b0eda6d0d7a9942a0ffce1d0105ec6b025505f365c8bad532fb971e03cb64",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.307.01.0012.01.FRA&toc=OJ:C:2019:307:TOC"
  },
  "oj-PDO-ES-A0735-C_C_2024_6465_30_10_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 39870,
+  "fetched": "2026-10-16T19:56:18+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406465",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "da46e1ff63acd606e7684af5b7b842f48924bf390393454abd48b1a5cd399191",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406465"
  },
  "oj-PDO-ES-A0735-C_C_2026_241_13_1_2026.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 47093,
+  "fetched": "2026-10-16T19:56:18+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600241",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "0e0756d91881dfcaf031e388dcb6e681fd721369fbd62fc21e6eec71f4a69ccd",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600241"
  },
  "oj-PDO-ES-A0746-C_C_2025_6563_8_12_2025.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 71845,
+  "fetched": "2026-10-16T19:56:22+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506563",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "d9c58a6764c40357807e4ce025ef88c3e7ce29c3f8d9966d309b11d711ede6ed",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506563"
  },
  "oj-PDO-ES-A0872-C_C_2024_7448_18_12_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 59252,
+  "fetched": "2026-10-16T19:56:23+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407448",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "adec02ab72ba36a78a3c68266dc57013db7047961562e3399c451f01e9f6b248",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407448"
  },
  "oj-PDO-ES-A0882-C_439_6_12_2018.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 36764,
+  "fetched": "2026-10-16T19:56:27+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.439.01.0004.01.SPA&toc=OJ:C:2018:439:FULL",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "6ae6e15b8d605fb93d09d77185f6d7aa3767d97df0368106ea3f1007d30d1bc6",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.439.01.0004.01.SPA&toc=OJ:C:2018:439:FULL"
  },
  "oj-PDO-ES-A0882-C_C_2024_1620_16_2_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 62327,
+  "fetched": "2026-10-16T19:56:25+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401620",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "361b33b37be2c494c501c745cc2fde435f8a617b98a286644b8a47338459aa5d",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401620"
  },
  "oj-PDO-ES-A0886-C_89_18_03_2020.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.089.01.0026.01.SPA&toc=OJ:C:2020:089:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3568,17 +3586,18 @@
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.089.01.0026.01.SPA&toc=OJ:C:2020:089:TOC"
  },
  "oj-PDO-ES-A0886-C_C_2024_4493_12_7_2024.html": {
-  "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "bytes": 59328,
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404493",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 202,
+  "sha256": "380b49c869f698c397053c18b962eedfac666ecdb9b475c747ea1def87de88f4",
+  "status": 200,
+  "truncated": false,
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404493"
  },
  "oj-PDO-ES-A0886-C_C_2025_125_3_1_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500125",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3587,7 +3606,7 @@
  },
  "oj-PDO-ES-A0889-C69_03_03_2020.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.069.01.0017.01.SPA&toc=OJ:C:2020:069:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3596,7 +3615,7 @@
  },
  "oj-PDO-ES-A0889-C_2024_1949_05_03_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401949",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3605,7 +3624,7 @@
  },
  "oj-PDO-ES-A0889-C_C_2025_3217_12_6_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503217",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3614,7 +3633,7 @@
  },
  "oj-PDO-ES-A0941-C_C_2025_510_28_1_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500510",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3623,7 +3642,7 @@
  },
  "oj-PDO-ES-A1038-C284_29_08_2017.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.284.01.0005.01.SPA&toc=OJ:C:2017:284:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3632,7 +3651,7 @@
  },
  "oj-PDO-ES-A1038-C_C_2026_1686_17_3_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:29+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601686",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3641,7 +3660,7 @@
  },
  "oj-PDO-ES-A1056-C_C_2025_3321_16_6_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503321",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3650,7 +3669,7 @@
  },
  "oj-PDO-ES-A1114-C379_08_11_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0008.01.SPA&toc=OJ:C:2019:379:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3659,7 +3678,7 @@
  },
  "oj-PDO-ES-A1114-C_C_2025_6565_8_12_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506565",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3668,7 +3687,7 @@
  },
  "oj-PDO-ES-A1119-C_C_2024_7432_13_12_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407432",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3677,7 +3696,7 @@
  },
  "oj-PDO-ES-A1123-C_196_11_06_2020.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.196.01.0033.01.SPA&toc=OJ:C:2020:196:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3686,7 +3705,7 @@
  },
  "oj-PDO-ES-A1123-C_C_2025_6457_4_12_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506457",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3695,7 +3714,7 @@
  },
  "oj-PDO-ES-A1128-C_C_2024_5456_11_9_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202405456",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3704,7 +3723,7 @@
  },
  "oj-PDO-ES-A1128-C_C_2025_2949_28_5_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502949",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3713,7 +3732,7 @@
  },
  "oj-PDO-ES-A1132-C_C_2025_1383_28_2_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501383",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3722,7 +3741,7 @@
  },
  "oj-PDO-ES-A1422-C_C_2025_458_22_1_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500458",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3731,7 +3750,7 @@
  },
  "oj-PDO-ES-A1423-C_217_1_7_2020.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.217.01.0021.01.SPA&toc=OJ:C:2020:217:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3740,7 +3759,7 @@
  },
  "oj-PDO-ES-A1475-C_2023_287_16_10_2023.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300287",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3749,7 +3768,7 @@
  },
  "oj-PDO-ES-A1475-C_C_2025_954_7_2_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500954",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3758,7 +3777,7 @@
  },
  "oj-PDO-ES-A1480-C_C_2025_509_28_1_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500509",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3767,7 +3786,7 @@
  },
  "oj-PDO-ES-A1482-C_C_2025_2130_8_4_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502130",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3776,7 +3795,7 @@
  },
  "oj-PDO-ES-A1482-C_C_2026_4513_24_8_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604513",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3785,7 +3804,7 @@
  },
  "oj-PDO-ES-A1483-C_C_2025_2129_8_4_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502129",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3794,7 +3813,7 @@
  },
  "oj-PDO-ES-A1483-C_C_2026_4549_26_8_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:30+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604549",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3803,7 +3822,7 @@
  },
  "oj-PDO-ES-A1485-C379_08_11_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0013.01.SPA&toc=OJ:C:2019:379:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3812,7 +3831,7 @@
  },
  "oj-PDO-ES-A1485-C_C_2026_4233_31_7_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604233",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3821,7 +3840,7 @@
  },
  "oj-PDO-ES-A1522-C_C_2026_1818_19_3_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601818",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3830,7 +3849,7 @@
  },
  "oj-PDO-ES-A1523-C_38_31_1_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.038.01.0006.01.SPA&toc=OJ:C:2019:038:FULL",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3839,7 +3858,7 @@
  },
  "oj-PDO-ES-A1523-C_C_2025_2465_25_4_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502465",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3848,7 +3867,7 @@
  },
  "oj-PDO-ES-A1525-C_398_5_11_2018.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.398.01.0008.01.SPA&toc=OJ:C:2018:398:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3857,7 +3876,7 @@
  },
  "oj-PDO-ES-A1525-C_C_2025_2458_25_4_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502458",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3866,7 +3885,7 @@
  },
  "oj-PDO-ES-A1526-C_C_2024_4680_25_7_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404680",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3875,7 +3894,7 @@
  },
  "oj-PDO-ES-A1548-C_C_2025_4117_24_7_2025.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202504117",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3884,7 +3903,7 @@
  },
  "oj-PDO-ES-A1549-C_437_4_12_2018.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.437.01.0005.01.SPA&toc=OJ:C:2018:437:FULL",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3893,7 +3912,7 @@
  },
  "oj-PDO-ES-A1549-C_C_2024_3814_14_6_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403814",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3902,7 +3921,7 @@
  },
  "oj-PDO-ES-A1551-C232_10_7_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.232.01.0013.01.FRA&toc=OJ:C:2019:232:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3911,7 +3930,7 @@
  },
  "oj-PDO-ES-A1551-C_C_2026_2777_19_5_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202602777",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3920,7 +3939,7 @@
  },
  "oj-PDO-ES-A1555-C_2023_892_10_11_2023.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300892",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3929,7 +3948,7 @@
  },
  "oj-PDO-ES-A1557-C_C_2024_7385_6_12_2024.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407385",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3938,7 +3957,7 @@
  },
  "oj-PDO-ES-A1560-C316_20_09_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.316.01.0010.01.SPA&toc=OJ:C:2019:316:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3947,7 +3966,7 @@
  },
  "oj-PDO-ES-N1637-C_35_03_02_2020.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.035.01.0011.01.SPA&toc=OJ:C:2020:035:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3956,7 +3975,7 @@
  },
  "oj-PDO-ES-N1665-C235_12_7_2019.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.235.01.0024.01.FRA&toc=OJ:C:2019:235:TOC",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -3965,7 +3984,7 @@
  },
  "oj-PDO-ES-N1876-C_C_2026_713_30_01_2026.html": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:08+00:00",
+  "fetched": "2026-10-16T19:56:31+00:00",
   "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600713",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 202,
@@ -4002,7 +4021,7 @@
  },
  "pliego-PDO-ES-A0117-rioja": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:42:22+00:00",
+  "fetched": "2026-10-16T19:56:45+00:00",
   "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/pliegodecondicionesdocarioja_tcm30-552276.pdf",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 0,
@@ -4045,20 +4064,20 @@
  },
  "rioja-documento-unico": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:45:00+00:00",
+  "fetched": "2026-10-16T20:00:35+00:00",
   "final_url": "https://mapa.gob.es/gl/alimentacion/temas/calidad-diferenciada/documento_unico_doca_rioja_tcm37-655340.pdf",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 0,
-  "type": "error: URLError: <urlopen error [Errno 111] Connection refused>",
+  "type": "error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>",
   "url": "https://mapa.gob.es/gl/alimentacion/temas/calidad-diferenciada/documento_unico_doca_rioja_tcm37-655340.pdf"
  },
  "rioja-pliego-mapa-modificado": {
   "bytes": 0,
-  "fetched": "2026-10-16T19:44:23+00:00",
+  "fetched": "2026-10-16T20:00:22+00:00",
   "final_url": "https://mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/pliegodecondicionesdocariojamodificado_tcm30-680343.pdf",
   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "status": 0,
-  "type": "error: URLError: <urlopen error [Errno 111] Connection refused>",
+  "type": "error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>",
   "url": "https://mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/pliegodecondicionesdocariojamodificado_tcm30-680343.pdf"
  },
  "rioja-pliego-riojawine": {
