@@ -1,7 +1,7 @@
 # Handoff: release 6, tastes and producers (planned as 4.1, issue #27), 16 Oct 2026
 
 ## Done
-- Three new fact-sheet rows, cited and checked by `checkSheets`: How it tastes (76 of 79), Famous styles (75), Famous producers (7).
+- Three new fact-sheet rows, cited and checked by `checkSheets`: How it tastes (76 of 79), Famous styles (75), Famous producers (6; Bierzo dropped after review: the article names people, not producers).
   Types in `src/facts/types.ts`, rows in `src/cards/PlaceFacts.tsx`, taste lines split per colour (`tasteLines` in `src/facts/format.ts`).
 - Sources: official extracts for tastes and styles; producers from English Wikipedia (`Review/sources/wikipedia-en/`, built by
   `Tools/data/wiki_en_notes.py` in the `data-wiki-en` workflow) and Spanish Wikipedia notes (`Review/sources/wikipedia-notes/`,
@@ -13,7 +13,7 @@
 
 ## Open
 - Planted-area main grapes for 30 sheets: issue #29 (the MAPA reports have no varieties).
-- Producers are thin (7 places; Rioja has one). Owner (20:23Z): supplement later, issue #30. He may swap or add; each needs a citation.
+- Producers are thin (6 places; Rioja has one). Owner (20:23Z): supplement later, issue #30. He may swap or add; each needs a citation.
 - Jerez has no tasting row; Priorat, Sierras de Málaga and three others have no famous style (documents define none).
 - `en.wikipedia` rate-limits the cloud container (429); fetch through Actions.
 

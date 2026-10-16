@@ -70,17 +70,8 @@
     "cite": []
    },
    "producers": {
-    "items": [
-     {
-      "name": "Álvaro Palacios"
-     },
-     {
-      "name": "Raúl Pérez"
-     }
-    ],
-    "cite": [
-     "bierzo-enwiki"
-    ]
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -310,15 +301,7 @@
    "famous": {
     "styles": [
      {
-      "name": "Crianza",
-      "text": "Aged red; more complex, wood appears, fruit stays."
-     },
-     {
-      "name": "Reserva",
-      "text": "Aged red; more complex, wood appears, fruit stays."
-     },
-     {
-      "name": "Gran Reserva",
+      "name": "Crianza, Reserva, Gran Reserva",
       "text": "Aged red; more complex, wood appears, fruit stays."
      }
     ],
@@ -484,14 +467,14 @@
    "producers": {
     "items": [
      {
-      "name": "Vega Sicilia"
-     },
-     {
       "name": "Alejandro Fernández",
       "wine": "Tinto Pesquera"
      },
      {
       "name": "Viña Sastre"
+     },
+     {
+      "name": "Vega Sicilia"
      }
     ],
     "cite": [
@@ -555,15 +538,7 @@
    "famous": {
     "styles": [
      {
-      "name": "Crianza",
-      "text": "Intense red with ageing tones; well-integrated wood."
-     },
-     {
-      "name": "Reserva",
-      "text": "Intense red with ageing tones; well-integrated wood."
-     },
-     {
-      "name": "Gran Reserva",
+      "name": "Crianza, Reserva, Gran Reserva",
       "text": "Intense red with ageing tones; well-integrated wood."
      }
     ],
@@ -730,15 +705,7 @@
       "text": "Very aromatic, tasty and balanced."
      },
      {
-      "name": "Crianza",
-      "text": "Red of great colour intensity, tannic and structured; very long-lived."
-     },
-     {
-      "name": "Reserva",
-      "text": "Red of great colour intensity, tannic and structured; very long-lived."
-     },
-     {
-      "name": "Gran Reserva",
+      "name": "Crianza, Reserva, Gran Reserva",
       "text": "Red of great colour intensity, tannic and structured; very long-lived."
      }
     ],

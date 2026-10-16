@@ -35,7 +35,7 @@ They need `assets/data.js` and `assets/maplibre-gl.*` from the project files to 
 Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 quizzed places (`content/facts/<region>.json`, sources in
 `content/sources.json`, checked by `checkSheets` in Vitest), measured altitude and Köppen rows (`data/place-measures.json`), 149 credited
 photos for 77 places (`public/photos/`, `data/photos.json`), grapes in search. The "Report a mistake" link is built but hidden (owner, no address).
-Release 6, tastes and producers (planned as 4.1, issue #27): How it tastes (76 sheets), Famous styles (75) and Famous producers (7, from
+Release 6, tastes and producers (planned as 4.1, issue #27): How it tastes (76 sheets), Famous styles (75) and Famous producers (6, from
 English Wikipedia by the owner's card, Lebrija from Spanish) rows on the fact sheet.
 
 ## 5. Release and deployment state
@@ -57,7 +57,7 @@ session on his Mac also sees his thread messages and started a second publish ru
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
 - 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Jerez and Manzanilla have no photos.
-- Famous producers on only 7 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
+- Famous producers on only 6 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 

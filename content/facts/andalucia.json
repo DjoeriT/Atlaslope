@@ -632,19 +632,7 @@
    "famous": {
     "styles": [
      {
-      "name": "Fino",
-      "text": "Vino Generoso type, dry: no more than 5 g/l reducing sugars."
-     },
-     {
-      "name": "Amontillado",
-      "text": "Vino Generoso type, dry: no more than 5 g/l reducing sugars."
-     },
-     {
-      "name": "Oloroso",
-      "text": "Vino Generoso type, dry: no more than 5 g/l reducing sugars."
-     },
-     {
-      "name": "Palo Cortado",
+      "name": "Fino, Amontillado, Oloroso, Palo Cortado",
       "text": "Vino Generoso type, dry: no more than 5 g/l reducing sugars."
      }
     ],

@@ -4,6 +4,7 @@ import { STYLE_KINDS, type Cite, type SheetFile, type Sources } from './types';
 const MAX_WHY_WORDS = 25;
 const MAX_TASTES_WORDS = 40;
 const MAX_FAMOUS = 4;
+const MAX_FAMOUS_WORDS = 15;
 const MAX_PRODUCERS = 3;
 const CITE = /^([a-z0-9-]+)(?::(p\d+))?$/;
 const words = (text: string) => text.trim().split(/\s+/).filter(Boolean).length;
@@ -56,6 +57,9 @@ export function checkSheets(files: SheetFile[], places: Place[], sources: Source
       if (sheet.famous) {
         if (sheet.famous.styles.length > MAX_FAMOUS) errors.push(at('famous styles') + ` has ${sheet.famous.styles.length}; the limit is ${MAX_FAMOUS}.`);
         if (sheet.famous.styles.some((f) => !f.name.trim())) errors.push(at('famous styles') + ' has a style with no name.');
+        for (const f of sheet.famous.styles) {
+          if (words(f.text) > MAX_FAMOUS_WORDS) errors.push(at('famous styles') + `: ${f.name} is ${words(f.text)} words; the limit is ${MAX_FAMOUS_WORDS}.`);
+        }
         checkCites(at('famous styles'), sheet.famous.cite, sheet.famous.styles.length > 0);
       }
       if (sheet.producers) {
@@ -63,7 +67,7 @@ export function checkSheets(files: SheetFile[], places: Place[], sources: Source
         if (items.length > MAX_PRODUCERS) errors.push(at('producers') + ` has ${items.length}; the limit is ${MAX_PRODUCERS}.`);
         if (items.some((p) => !p.name.trim())) errors.push(at('producers') + ' has a producer with no name.');
         checkCites(at('producers'), cite, items.length > 0);
-        // Producers come only from the place's Spanish Wikipedia article (scope, owner 16 Oct 2026 19:37Z).
+        // Producers come only from a Wikipedia article about the place (scope, owner 16 Oct 2026 19:37Z; English allowed by his card at 20:11Z).
         for (const c of cite) {
           const id = CITE.exec(c)?.[1];
           if (id && id in sources && sources[id].kind !== 'wikipedia') errors.push(at('producers') + `: source "${id}" is not a Wikipedia article.`);

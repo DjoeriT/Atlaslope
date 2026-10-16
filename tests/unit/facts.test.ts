@@ -79,6 +79,7 @@ describe('checkSheets', () => {
     expect(toro((s) => { rows(s); s.tastes!.text = Array(41).fill('word').join(' '); })).toEqual(['toro, how it tastes is 41 words; the limit is 40.']);
     expect(toro((s) => { rows(s); s.famous!.styles = Array(5).fill({ name: 'Joven', text: '' }); })).toEqual(['toro, famous styles has 5; the limit is 4.']);
     expect(toro((s) => { rows(s); s.famous!.cite = []; })).toEqual(['toro, famous styles has no source.']);
+    expect(toro((s) => { rows(s); s.famous!.styles[0].text = Array(16).fill('word').join(' '); })).toEqual(['toro, famous styles: Crianza is 16 words; the limit is 15.']);
     expect(toro((s) => { rows(s); s.producers!.items = Array(4).fill({ name: 'Bodega' }); })).toEqual(['toro, producers has 4; the limit is 3.']);
     expect(toro((s) => { rows(s); s.producers!.cite = ['toro-doc:p3']; })).toEqual(['toro, producers: source "toro-doc" is not a Wikipedia article.']);
     expect(toro((s) => { rows(s); s.producers!.items = [{ name: ' ' }]; })).toEqual(['toro, producers has a producer with no name.']);

@@ -60,12 +60,16 @@ export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
 /** "Reds: ruby. Whites: straw." becomes one line per colour, so a long tasting row scans like the famous styles list. Text that
  * does not start with a short label stays one unlabelled line before the labelled ones. */
 export function tasteLines(text: string): Array<{ label?: string; text: string }> {
-  return text
-    .trim()
-    .split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚ][^:.]{0,30}:\s)/)
-    .filter(Boolean)
-    .map((part) => {
-      const m = /^([A-ZÁÉÍÓÚ][^:.]{0,30}):\s+(.*)$/s.exec(part);
-      return m ? { label: m[1], text: m[2] } : { text: part };
-    });
+  // No lookbehind in the pattern: Safari before 16.4 cannot parse it.
+  const label = /^([A-ZÁÉÍÓÚ][^:.]{0,30}):\s+/;
+  const lines: Array<{ label?: string; text: string }> = [];
+  for (const sentence of text.trim().match(/[^.]+(?:\.|$)/g) ?? []) {
+    const part = sentence.trim();
+    if (!part) continue;
+    const m = label.exec(part);
+    if (m) lines.push({ label: m[1], text: part.slice(m[0].length) });
+    else if (lines.length > 0) lines[lines.length - 1].text += ' ' + part;
+    else lines.push({ text: part });
+  }
+  return lines;
 }

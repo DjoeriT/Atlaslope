@@ -8,7 +8,7 @@ The tasting and producers release (planned as "release 4.1"). Fact sheets gain t
 
 1. **How it tastes.** Open Rioja. Below Styles, "How it tastes" shows one line per colour (Reds, Whites, Rosés), with a source line you can open. Jerez has no such row: its official document names the types but does not describe them.
 2. **Famous styles.** On Rioja: Crianza, Reserva and Gran Reserva, each with how long it ages. Try Jerez (Fino, Amontillado...) and Ribeiro (Tostado).
-3. **Famous producers.** At the end of the rows, on seven places only: Ribera del Duero, Penedès, Bierzo, Rioja, Rueda, Alella and Lebrija. The source line opens the Wikipedia article. Every other place shows no producer row, because no article singles one out.
+3. **Famous producers.** At the end of the rows, on six places only: Ribera del Duero, Penedès, Rioja, Rueda, Alella and Lebrija. The source line opens the Wikipedia article. Every other place shows no producer row, because no article singles one out.
 4. **iPad, large text, dark mode.** The longer sheet should still scroll inside the card without overlapping the map controls.
 
 ## For you

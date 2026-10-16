@@ -341,7 +341,8 @@
      }
     ],
     "cite": [
-     "alella-doc:p1"
+     "alella-doc:p2",
+     "alella-doc:p3"
     ]
    },
    "producers": {
@@ -700,15 +701,7 @@
       "text": "Amber with copper glints; toasted nuts, spice; dry, intense."
      },
      {
-      "name": "Mistela",
-      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
-     },
-     {
-      "name": "Vimblanc",
-      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
-     },
-     {
-      "name": "Moscatel",
+      "name": "Mistela, Vimblanc, Moscatel",
       "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
      }
     ],

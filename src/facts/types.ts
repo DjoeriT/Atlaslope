@@ -35,7 +35,7 @@ export interface Sheet {
   tastes?: TextRow;
   /** Release 4.1: the named styles the official document defines (Crianza, Fino, Brut Nature...), at most four. */
   famous?: { styles: FamousStyle[]; cite: Cite[] };
-  /** Release 4.1: up to three producers or wines that the place's Spanish Wikipedia article singles out. */
+  /** Release 4.1: up to three producers or wines that a Wikipedia article about the place singles out. */
   producers?: { items: Producer[]; cite: Cite[] };
 }
 

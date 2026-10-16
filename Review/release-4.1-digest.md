@@ -48,7 +48,7 @@ One PR for the release (code and sheets). ReviewBot (Sonnet) checks a random sam
 
 ## Outcome (LeadBot, 16 Oct 2026)
 - Ships as **release 6** (the publish workflow takes whole numbers; release 5 was the world map).
-- Tastes 76 of 79 sheets, famous styles 75, producers 7 [V, count script]. Jerez has no tasting row (its document only names types).
-- Producers: the Spanish articles singled out one (Lebrija); the owner picked English Wikipedia (card 20:11Z), which singled out six more.
+- Tastes 76 of 79 sheets, famous styles 75, producers 6 [V, count script; Bierzo dropped after review]. Jerez has no tasting row (its document only names types).
+- Producers: the Spanish articles singled out one (Lebrija); the owner picked English Wikipedia (card 20:11Z), which singled out six more (five after review).
 - Planted area: the MAPA DOP reports (Wayback copies) have no grape varieties [V]; moved to issue #29 per the owner's card (20:06Z).
 - Card rows built by LeadBot instead of a builder (small: about 60 lines); taste rows split into one line per colour after the UX check.

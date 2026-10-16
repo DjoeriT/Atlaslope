@@ -741,19 +741,7 @@
    "famous": {
     "styles": [
      {
-      "name": "Barrica",
-      "text": "Oak-aged white or red; spice and toast from the wood."
-     },
-     {
-      "name": "Crianza",
-      "text": "Oak-aged white or red; spice and toast from the wood."
-     },
-     {
-      "name": "Reserva",
-      "text": "Oak-aged white or red; spice and toast from the wood."
-     },
-     {
-      "name": "Gran Reserva",
+      "name": "Barrica, Crianza, Reserva, Gran Reserva",
       "text": "Oak-aged white or red; spice and toast from the wood."
      }
     ],
