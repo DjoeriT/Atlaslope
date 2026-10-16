@@ -15,14 +15,14 @@
       "local": "Mencía"
      },
      {
-      "local": "Godello"
+      "local": "Doña Blanca"
      },
      {
-      "local": "Doña Blanca"
+      "local": "Godello"
      }
     ],
     "cite": [
-     "bierzo-doc:p3"
+     "bierzo-wiki"
     ],
     "others": [
      "Alarije",
@@ -69,31 +69,27 @@
    "grapes": {
     "main": [
      {
-      "local": "Albarín Blanco"
-     },
-     {
-      "local": "Verdejo"
-     },
-     {
       "local": "Prieto Picudo"
      },
      {
       "local": "Mencía"
-     },
-     {
-      "local": "Godello"
      }
     ],
     "cite": [
+     "leon-wiki",
      "leon-doc:p5"
     ],
     "others": [
+     "Albarín Blanco",
+     "Verdejo",
+     "Godello",
      "Doña Blanca",
      "Garnacha Tinta",
      "Palomino",
      "Tempranillo"
     ],
     "othersCite": [
+     "leon-doc:p5",
      "leon-doc:p9"
     ]
    },
@@ -185,29 +181,22 @@
    "grapes": {
     "main": [
      {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Tempranillo"
-     },
-     {
       "local": "Prieto Picudo"
-     },
-     {
-      "local": "Mencía"
-     },
-     {
-      "local": "Doña Blanca"
      }
     ],
     "cite": [
      "valles-de-benavente-doc:p4"
     ],
     "others": [
+     "Verdejo",
+     "Tempranillo",
+     "Mencía",
+     "Doña Blanca",
      "Cabernet Sauvignon",
      "Garnacha Tinta"
     ],
     "othersCite": [
+     "valles-de-benavente-doc:p4",
      "valles-de-benavente-doc:p8"
     ]
    },
@@ -247,22 +236,16 @@
    "grapes": {
     "main": [
      {
-      "local": "Verdejo"
-     },
-     {
       "local": "Tempranillo"
-     },
-     {
-      "local": "Garnacha Tinta"
-     },
-     {
-      "local": "Garnacha Roja"
      }
     ],
     "cite": [
-     "cigales-doc:p5"
+     "cigales-wiki"
     ],
     "others": [
+     "Verdejo",
+     "Garnacha Tinta",
+     "Garnacha Roja",
      "Albillo Mayor",
      "Cabernet Sauvignon",
      "Macabeo",
@@ -271,6 +254,7 @@
      "Syrah"
     ],
     "othersCite": [
+     "cigales-doc:p5",
      "cigales-doc:p9"
     ]
    },
@@ -363,7 +347,7 @@
      }
     ],
     "cite": [
-     "valtiendas-doc:p4"
+     "valtiendas-wiki"
     ],
     "others": [],
     "othersCite": []
@@ -408,19 +392,19 @@
       "grape": "Tempranillo"
      },
      {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Doña Blanca"
+      "local": "Malvasía Castellana",
+      "grape": "Doña Blanca"
      }
     ],
     "cite": [
-     "toro-doc:p3"
+     "toro-wiki"
     ],
     "others": [
+     "Verdejo",
      "Garnacha Tinta"
     ],
     "othersCite": [
+     "toro-doc:p3",
      "toro-doc:p7"
     ]
    },
@@ -460,31 +444,30 @@
    "grapes": {
     "main": [
      {
-      "local": "Verdejo"
-     },
-     {
-      "local": "Tempranillo"
+      "local": "Doña Blanca"
      },
      {
       "local": "Moscatel de Grano Menudo"
      },
      {
-      "local": "Godello"
+      "local": "Verdejo"
      },
      {
-      "local": "Doña Blanca"
+      "local": "Tempranillo"
      }
     ],
     "cite": [
-     "tierra-del-vino-de-zamora-doc:p4"
+     "tierra-del-vino-de-zamora-wiki"
     ],
     "others": [
+     "Godello",
      "Albillo Mayor",
      "Cabernet Sauvignon",
      "Garnacha Tinta",
      "Palomino"
     ],
     "othersCite": [
+     "tierra-del-vino-de-zamora-doc:p4",
      "tierra-del-vino-de-zamora-doc:p8"
     ]
    },
@@ -672,15 +655,10 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Rufete"
-     }
-    ],
-    "cite": [
-     "sierra-de-salamanca-doc:p4"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Rufete",
      "Garnacha Tinta",
      "Macabeo",
      "Moscatel de Grano Menudo",
@@ -688,6 +666,7 @@
      "Tempranillo"
     ],
     "othersCite": [
+     "sierra-de-salamanca-doc:p4",
      "sierra-de-salamanca-doc:p7"
     ]
    },
