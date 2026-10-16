@@ -13,10 +13,31 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Docs-only changes (docs/, Review/, top-level .md files) skip the build and tests; the job still reports, so the PR can merge.
+      # Anything else, and every publish (publish.yml re-runs the checks itself), runs everything. Owner's yes, 16 Oct 20:17Z.
+      - name: Docs only?
+        id: scope
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          files=$(git diff --no-renames --name-only "$BASE...$HEAD" 2>/dev/null) || { echo "docs=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          echo "$files"
+          if [ -n "$files" ] && ! printf '%s\n' "$files" | grep -qvE '^(docs/|Review/)|^[^/]+\.md$'; then
+            echo "docs=true" >> "$GITHUB_OUTPUT"; echo "Docs only: skipping the build and tests."
+          else
+            echo "docs=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.scope.outputs.docs != 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+        if: steps.scope.outputs.docs != 'true'
       - run: npx playwright install --with-deps chromium
+        if: steps.scope.outputs.docs != 'true'
       - run: Tools/check.sh ui
+        if: steps.scope.outputs.docs != 'true'
