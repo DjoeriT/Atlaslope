@@ -39,8 +39,8 @@ const el = <K extends keyof HTMLElementTagNameMap>(tag: K, props: Partial<HTMLEl
   return e;
 };
 
-/** Fills the card body. `onNeighbour` moves to a neighbour. */
-export function renderCard(body: HTMLElement, m: CardModel, onNeighbour: (code: string) => void): void {
+/** Fills the card body. `onNeighbour` moves to a neighbour; `pending` shows that the neighbours are still being worked out. */
+export function renderCard(body: HTMLElement, m: CardModel, onNeighbour: (code: string) => void, pending = false): void {
   const facts = el('dl', { className: 'facts' },
     el('dt', {}, 'Level'), el('dd', {}, m.level),
     el('dt', {}, 'Study region'), el('dd', {}, m.region));
@@ -54,6 +54,8 @@ export function renderCard(body: HTMLElement, m: CardModel, onNeighbour: (code: 
       list.append(el('li', {}, b));
     }
     parts.push(el('h3', {}, 'Neighbours'), list);
+  } else if (pending) {
+    parts.push(el('h3', {}, 'Neighbours'), el('p', { className: 'note' }, 'Finding neighbours…'));
   }
   body.replaceChildren(...parts);
 }

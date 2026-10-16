@@ -28,6 +28,7 @@ test('tapping a polygon opens its card with its two neighbours', async ({ page }
   await expect(page.locator('#card-title')).toHaveText('Bierzo Bajo');
   await expect(page.locator('#card')).toContainText('DOCa · Denominación de Origen Calificada');
   await expect(page.locator('#card')).toContainText('Navarra and Aragón');
+  // Neighbours are filled in just after the card paints; toHaveText waits for them.
   await expect(page.locator('#card .neighbours button')).toHaveText(['Albar', 'Cerro Alto']);
 });
 

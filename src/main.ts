@@ -92,11 +92,20 @@ function setSelected(code: string | null): void {
 
 function openCard(entry: Entry): void {
   const p = entry.code ? byCode.get(entry.code)! : overrides.missing.find((m) => m.name === entry.name)!;
-  const neighbours = entry.code ? neighboursOf(entry.code).map((c) => ({ code: c, name: byCode.get(c)!.name })) : [];
-  renderCard(cardBody, cardModel({ ...p, code: entry.code }, overrides.regions, neighbours), (c) => goTo({ code: c, name: byCode.get(c)!.name }, true));
+  const draw = (neighbours: Array<{ code: string; name: string }>, pending: boolean) =>
+    renderCard(cardBody, cardModel({ ...p, code: entry.code }, overrides.regions, neighbours), (c) => goTo({ code: c, name: byCode.get(c)!.name }, true), pending);
+  draw([], !!entry.code);
   card.hidden = false;
   document.body.classList.add('card-open');
   setSelected(entry.code ?? null);
+  // Neighbours take up to a few hundred ms on a big DO: paint the card first, then fill them in.
+  if (entry.code) {
+    const code = entry.code;
+    setTimeout(() => {
+      if (selected !== code || card.hidden) return; // another DO was picked meanwhile
+      draw(neighboursOf(code).map((c) => ({ code: c, name: byCode.get(c)!.name })), false);
+    }, 0);
+  }
 }
 
 function closeCard(): void {
