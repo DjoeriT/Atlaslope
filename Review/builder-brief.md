@@ -1,6 +1,6 @@
 # Atlaslope v1: builder brief (draft, 16 Oct 2026)
 
-**In the repo since the restart commit (16 Oct 2026).** This file is now the source; the project-files copy is superseded. Paths below that point at `/mnt/project-files/paraje/` for scope, decisions and handoffs now live at `docs/scope.md`, `docs/architecture-decisions.md` and `docs/handoffs/`; the mocks are in `Review/mock-atlas-v3/`, `Review/mock-atlas-v2.2/` and `Review/mock-flow/`.
+**In the repo since the restart commit (16 Oct 2026).** This file is now the source; the project-files copy is superseded. Paths below that point at `/mnt/project-files/atlaslope/` for scope, decisions and handoffs now live at `docs/scope.md`, `docs/architecture-decisions.md` and `docs/handoffs/`; the mocks are in `Review/mock-atlas-v3/`, `Review/mock-atlas-v2.2/` and `Review/mock-flow/`.
 
 **Status:** approved. The owner said go on 16 Oct 2026 12:51Z ("I think we're good to go") after walking through the plan; the go covers the restart, the data step and releases 3 to 5, with the re-estimate after release 3. Once building starts this file moves to `Review/builder-brief.md` in the repo, and each slice below becomes one issue and one or more task cards (format in `docs/AGENT_ROLES.md`). The cloud environment with the source hosts allowed was not yet added at 12:52Z [V, environment list]: the restart (step 0) does not need it; the data step (step 1) does, or falls back to the GitHub run.
 
@@ -8,9 +8,9 @@
 Atlaslope is the wine atlas that quizzes you. It is for passionate wine lovers first and exam students (WSET, Spanish Wine Scholar) second, starting with Spain. The quiz with memory is the spine. The atlas and the guides give the why.
 
 ## Sources of truth, in this order
-1. **Scope:** `/mnt/project-files/paraje/scope.md`, the owner's decisions.
-2. **Architecture:** `/mnt/project-files/paraje/architecture-decisions.md`, 47 decisions with their tags.
-3. **Look and flow:** the round 3 mocks in `/mnt/project-files/paraje/mocks/atlas-v3/` (nine pages) and the quiz screens of round 2.2 in `../atlas-v2.2/` (setup, find it, choices, fact, results), placed inside the round 3 top bar and menus. The flow sketch `/mnt/project-files/paraje/mocks/flow/index.html` lists every screen and how they connect.
+1. **Scope:** `/mnt/project-files/atlaslope/scope.md`, the owner's decisions.
+2. **Architecture:** `/mnt/project-files/atlaslope/architecture-decisions.md`, 47 decisions with their tags.
+3. **Look and flow:** the round 3 mocks in `/mnt/project-files/atlaslope/mocks/atlas-v3/` (nine pages) and the quiz screens of round 2.2 in `../atlas-v2.2/` (setup, find it, choices, fact, results), placed inside the round 3 top bar and menus. The flow sketch `/mnt/project-files/atlaslope/mocks/flow/index.html` lists every screen and how they connect.
 4. **Repo rules:** `CLAUDE.md` and `docs/AGENT_ROLES.md`.
 
 Where these disagree, the higher one wins. Any gap goes to LeadBot. The builder does not invent behaviour.
@@ -23,9 +23,9 @@ All key decisions were cleared by angle before building: hosting and accounts, p
 - Add a content notice: MIT covers code only; the owner's writing is all rights reserved (owner, 16 Oct 10:59Z).
 - Remove `src/`, the old UI tests and `public/mocks/atlas-v2/`. The mocks move to `Review/mock-atlas-v3/` as the visual reference.
 - Keep `data/`, `data/SOURCES.md`, the data tests, `Tools/check.sh`, the CI and deploy workflows, `.claude/` and the docs.
-- Rewrite `CLAUDE.md`, `docs/AGENT_ROLES.md` and the release skill from `/mnt/project-files/paraje/way-of-working.md`, and add the `publish` workflow (workflow_dispatch: tags `release-N` and deploys) [O, cards 10:18 to 10:19Z; review 16 Oct].
+- Rewrite `CLAUDE.md`, `docs/AGENT_ROLES.md` and the release skill from `/mnt/project-files/atlaslope/way-of-working.md`, and add the `publish` workflow (workflow_dispatch: tags `release-N` and deploys) [O, cards 10:18 to 10:19Z; review 16 Oct].
 - Move scope, decisions, this brief and the handoffs into the repo (`docs/`, `docs/handoffs/`). Open one issue per slice below.
-- Don't commit the mocks' `data.js` (4.3 MB) or their MapLibre copy; `Review/mock-atlas-v3/` keeps the HTML, CSS and fonts only and points at `/mnt/project-files/paraje/mocks/atlas-v3/` for the rest.
+- Don't commit the mocks' `data.js` (4.3 MB) or their MapLibre copy; `Review/mock-atlas-v3/` keeps the HTML, CSS and fonts only and points at `/mnt/project-files/atlaslope/mocks/atlas-v3/` for the rest.
 
 ## Step 1: data before code (a GitHub Actions workflow; the owner's Mac only if GitHub can't reach the hosts)
 Cloud threads cannot reach any content source [V, review 16 Oct]: mapa.gob.es, boe.es, eAmbrosia, ign.es, Wikimedia and Wikipedia, naciscdn.org and both Esri hosts. So this one run fetches everything the build and the writing need, and commits it or its extracts.

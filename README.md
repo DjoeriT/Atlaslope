@@ -2,7 +2,7 @@
 
 The wine atlas that quizzes you. For passionate wine lovers first and exam students (WSET, Spanish Wine Scholar) second, starting with Spain.
 Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (atlaslope.com from release 3). Free, no accounts, progress stored in the browser.
-Renamed from Paraje on 16 Oct 2026; the repository keeps the old name for now.
+Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
 **Restart, 16 Oct 2026.** The old app code was removed; the new app is built release by release from `docs/scope.md` and
 `Review/builder-brief.md`. Until release 3 the site build is a placeholder page.

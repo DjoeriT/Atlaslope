@@ -10,7 +10,7 @@ Tags: **[V]** verified in this working copy when this snapshot was written; **[O
 ## 1. What Atlaslope is
 The wine atlas that quizzes you [O]. For passionate wine lovers first, exam students (WSET, Spanish Wine Scholar) second, then "show the
 why". Spain first, on a world place tree (country, region, DO, zone). Free for the owner and friends; read-and-test only in v1 [O].
-Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The GitHub repo is still `DjoeriT/Paraje` (rename is the owner's call).
+Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The owner renamed the GitHub repo to `DjoeriT/Atlaslope` on 16 Oct 2026 (14:07Z); the Pages project URL is now https://djoerit.github.io/Atlaslope/ until atlaslope.com is pointed at it.
 Full scope: `docs/scope.md`. Architecture: `docs/architecture-decisions.md`. Build plan and estimate: `Review/builder-brief.md`.
 
 ## 2. Architecture (decided, not built)

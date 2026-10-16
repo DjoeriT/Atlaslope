@@ -3,7 +3,7 @@
 Run: python3 gen.py  (from this folder). Fonts are read from the round 2.2 mock assets."""
 import base64, html, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONTS = "/mnt/project-files/paraje/mocks/atlas-v2.2/assets/fonts"
+FONTS = "/mnt/project-files/atlaslope/mocks/atlas-v2.2/assets/fonts"
 
 # ---- screens -------------------------------------------------------------
 # panels: (x, y, w, h, kind)  on a 160x100 frame; kind: card | sheet | bar | chip | dim
