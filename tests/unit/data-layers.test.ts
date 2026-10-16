@@ -13,6 +13,33 @@ describe('atlas base (Natural Earth)', () => {
   it('stays under 400 KB', () => expect(statSync('data/natural-earth-spain.geojson').size).toBeLessThan(400_000));
 });
 
+describe('world background (Natural Earth, Tools/data/build_world.py)', () => {
+  const world = read('natural-earth-world.geojson');
+  const land = world.features.find((f: any) => f.properties.layer === 'land');
+  // Point in polygon on the outer rings: true when some land outline holds the point.
+  const onLand = ([x, y]: [number, number]) => land.geometry.coordinates.some((poly: number[][][]) => {
+    let inside = false;
+    const r = poly[0];
+    for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+      if ((r[i][1] > y) !== (r[j][1] > y) && x < ((r[j][0] - r[i][0]) * (y - r[i][1])) / (r[j][1] - r[i][1]) + r[i][0]) inside = !inside;
+    }
+    return inside;
+  });
+  it('is one land feature and one border feature, so no box edges show', () => {
+    expect(world.features.map((f: any) => f.properties.layer).sort()).toEqual(['border', 'land']);
+    expect(land.geometry.type).toBe('MultiPolygon');
+  });
+  it('has land outside Spain\'s old boxes and keeps Spain and the Canaries', () => {
+    const cases: Array<[string, [number, number], boolean]> = [
+      ['Madrid', [-3.7, 40.4], true], ['Tenerife', [-16.6, 28.3], true], ['Paris', [2.35, 48.85], true], ['Marrakesh', [-8.0, 31.6], true],
+      ['Bordeaux', [-0.58, 44.84], true], ['Denver', [-105.0, 39.7], true], ['Atlantic between the Canaries and Cádiz', [-12, 33], false],
+      ['Bay of Biscay', [-5, 45], false],
+    ];
+    for (const [name, at, want] of cases) expect(onLand(at), name).toBe(want);
+  });
+  it('stays under 1 MB', () => expect(statSync('data/natural-earth-world.geojson').size).toBeLessThan(1_000_000));
+});
+
 describe('climate (Köppen-Geiger)', () => {
   const kg = read('koppen-spain.geojson');
   it('names every class and box, and holds Spain\'s main classes', () => {
