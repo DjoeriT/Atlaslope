@@ -36,6 +36,16 @@ def main():
         if not m: continue
         title, url, rev, date = m.groups()
         out[f"{f.stem}-wikinotes"] = {"kind": "wikipedia", "title": f"Wikipedia (es), «{title}», revision {rev}", "url": f"https://es.wikipedia.org/w/index.php?oldid={rev}", "date": date}
+    # Release 4.1: producers from English Wikipedia, after the Spanish articles singled out almost none (owner card, 16 Oct 20:11Z).
+    en = ROOT / "Review/sources/wikipedia-en"
+    for f in sorted(en.glob("*.md")) if en.exists() else []:
+        m = WIKI.search(f.read_text())
+        if not m: continue
+        title, url, rev, date = m.groups()
+        out[f"{f.stem}-enwiki"] = {"kind": "wikipedia", "title": f"Wikipedia (en), «{title}», revision {rev}", "url": f"https://en.wikipedia.org/w/index.php?oldid={rev}", "date": date}
+    # The release 4.1 Wikipedia ids ship only when a sheet cites them (they are bundled with the app).
+    cited = set(re.findall(r'"([a-z0-9-]+?)(?::p\d+)?"', "".join(f.read_text() for f in (ROOT / "content/facts").glob("*.json"))))
+    out = {k: v for k, v in out.items() if not k.endswith(("-wikinotes", "-enwiki")) or k in cited}
     (ROOT / "content").mkdir(exist_ok=True)
     (ROOT / "content/sources.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     print(len(out), "sources")

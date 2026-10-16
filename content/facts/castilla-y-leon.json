@@ -70,8 +70,17 @@
     "cite": []
    },
    "producers": {
-    "items": [],
-    "cite": []
+    "items": [
+     {
+      "name": "Álvaro Palacios"
+     },
+     {
+      "name": "Raúl Pérez"
+     }
+    ],
+    "cite": [
+     "bierzo-enwiki"
+    ]
    }
   },
   {
@@ -473,8 +482,21 @@
     ]
    },
    "producers": {
-    "items": [],
-    "cite": []
+    "items": [
+     {
+      "name": "Vega Sicilia"
+     },
+     {
+      "name": "Alejandro Fernández",
+      "wine": "Tinto Pesquera"
+     },
+     {
+      "name": "Viña Sastre"
+     }
+    ],
+    "cite": [
+     "ribera-del-duero-enwiki"
+    ]
    }
   },
   {
@@ -835,8 +857,14 @@
     ]
    },
    "producers": {
-    "items": [],
-    "cite": []
+    "items": [
+     {
+      "name": "Bodega Martinsancho"
+     }
+    ],
+    "cite": [
+     "rueda-enwiki"
+    ]
    }
   },
   {

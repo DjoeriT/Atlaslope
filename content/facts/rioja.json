@@ -99,8 +99,14 @@
     ]
    },
    "producers": {
-    "items": [],
-    "cite": []
+    "items": [
+     {
+      "name": "Marqués de Murrieta"
+     }
+    ],
+    "cite": [
+     "rioja-enwiki"
+    ]
    }
   },
   {
