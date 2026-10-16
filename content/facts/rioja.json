@@ -61,16 +61,24 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Clay-limestone (a quarter), ferrous clay (a quarter) and alluvial soils near the rivers (half).",
+    "cite": [
+     "rioja-pliego:p15"
+    ]
+   },
+   "altitude": {
+    "text": "Terraced vineyards reach about 700 m.",
+    "cite": [
+     "rioja-pliego:p15"
+    ]
    }
   },
   {
    "id": "rioja-alta",
    "why": {
-    "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alta.",
+    "text": "Atlantic influence and more rain give reds of medium strength with body and high acidity, made for barrel ageing.",
     "cite": [
-     "rioja-doc:p5"
+     "rioja-pliego:p20"
     ]
    },
    "grapes": {
@@ -107,25 +115,37 @@
     ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Reds with body and high acidity, suited to barrel ageing; whites and rosados can also carry the zone name.",
+    "cite": [
+     "rioja-pliego:p2",
+     "rioja-pliego:p20"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mainly Atlantic: more rain and fewer sunshine hours than the south, sheltered by the Sierra de Cantabria.",
+    "cite": [
+     "rioja-pliego:p15",
+     "rioja-pliego:p20"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "A mix of clay-limestone, ferrous clay and alluvial soils.",
+    "cite": [
+     "rioja-pliego:p15"
+    ]
    }
   },
   {
    "id": "rioja-alavesa",
    "why": {
-    "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alavesa.",
+    "text": "Atlantic and Mediterranean climates meet behind the Sierra de Cantabria, giving slightly riper, softer wines to drink young or age.",
     "cite": [
-     "rioja-doc:p5"
+     "rioja-pliego:p20"
     ]
    },
    "grapes": {
@@ -162,25 +182,37 @@
     ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Versatile reds to drink young or age, good for blending; whites and rosados can also carry the zone name.",
+    "cite": [
+     "rioja-pliego:p2",
+     "rioja-pliego:p20"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Atlantic meets Mediterranean; sunshine like Rioja Alta, a little less rain; the Sierra de Cantabria shelters it from the north.",
+    "cite": [
+     "rioja-pliego:p15",
+     "rioja-pliego:p20"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Clay-limestone soils on terraces and in small plots.",
+    "cite": [
+     "rioja-pliego:p15"
+    ]
    }
   },
   {
    "id": "rioja-oriental",
    "why": {
-    "text": "The document treats Rioja as one area with three subzones (it calls this one Rioja Baja) and gives no separate description of it.",
+    "text": "A drier, warmer Mediterranean climate with more sun gives riper, fuller reds that suit blending and barrel ageing.",
     "cite": [
-     "rioja-doc:p5"
+     "rioja-pliego:p20"
     ]
    },
    "grapes": {
@@ -217,17 +249,29 @@
     ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Riper, fuller reds for blending and barrel ageing, some to drink young; zone wines need higher minimum alcohol.",
+    "cite": [
+     "rioja-pliego:p2",
+     "rioja-pliego:p20"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Clearly Mediterranean: drier and warmer, with less rain and more sunshine than the rest of Rioja.",
+    "cite": [
+     "rioja-pliego:p15",
+     "rioja-pliego:p20"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mainly alluvial and ferrous clay soils.",
+    "cite": [
+     "rioja-pliego:p15"
+    ]
    }
   }
  ]
