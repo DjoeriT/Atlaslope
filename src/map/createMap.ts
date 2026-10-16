@@ -51,9 +51,11 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let current = menu;
   let imagery = hasImagery;
 
+  let ready = false; // the style must be loaded before paint or layout can change; until then apply() only remembers
   const apply = (m: MenuState, img: boolean) => {
     current = m;
     imagery = img;
+    if (!ready) return;
     const vis = layerVisibility(m, img);
     const sat = m.satellite && img;
     const p = basemapPaint(sat);
@@ -72,6 +74,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   };
 
   map.once('load', () => {
+    ready = true;
     apply(current, imagery);
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
     Promise.all([asCollection(dopsUrl), asCollection(addedUrl), asCollection(landUrl)]).then(([dops, added, land]) => {
