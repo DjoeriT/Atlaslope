@@ -1,6 +1,6 @@
 # Paraje: project context
 
-Snapshot: **16 Oct 2026**. `CLAUDE.md` holds the rules; `README.md` the layout and commands; `docs/AGENT_ROLES.md` the agents.
+Snapshot: **16 Oct 2026**, after release 1. `CLAUDE.md` holds the rules; `README.md` the layout and commands; `docs/AGENT_ROLES.md` the agents.
 This file holds what is true now, what was decided and why, what is parked, what is broken, and what comes next.
 
 Tags: **[V]** verified in this working copy when this snapshot was written; **[O]** stated by the owner;
@@ -14,7 +14,7 @@ then test yourself on the same map. Free for the owner and friends, not a busine
 ## 2. Architecture
 Static site, no server [O, 15 Oct 2026]. Vite + TypeScript, MapLibre GL for the map, OpenFreeMap for base tiles (free, no key), layers as
 GeoJSON files in `data/`, facts as JSON in `data/`, quiz progress in `localStorage`. Hosted on GitHub Pages, deployed by a workflow on
-`release-N` tags. Unit tests with Vitest, UI tests with Playwright against fixtures. [A] until the first build runs.
+`release-N` tags. Unit tests with Vitest, UI tests with Playwright against fixtures. [V] first build and deploy ran for release 1. HTML mocks that should be reachable on the site live in `public/mocks/<topic>/`, with `Review/mock-<topic>` a symlink to them.
 
 ## 3. Data layers
 `data/SOURCES.md` is the ledger; `Review/data-scouting.md` has the leads. Committed in d1acea5 (15 Oct 2026, data pass on the owner's Mac):
@@ -30,13 +30,13 @@ Nothing built yet. Planned: a quiz engine over the DO list (find X; what is this
 misses shown on the map, per-DO right/wrong counts in the browser.
 
 ## 5. Release and deployment state
-No release yet. No `release-N` tag. Site not published.
+Release 1 (16 Oct 2026): tag `release-1` on 216256c, live at https://djoerit.github.io/Paraje/ [V deploy workflow green]. Contents: the app shell (base map of Spain, nothing else) and the round 2.1 atlas mock-ups at `/mocks/atlas-v2/` (PR #2). The tag was pushed from the owner's Mac: the cloud proxy refuses tag pushes and tag creation through the API, so every release needs a session on his Mac for that one step [V, 16 Oct 2026].
 
 ## 6. Implemented features
-None.
+App: a base map of Spain with a status word; no layers, panel or quiz yet. Mocks (not app features): seven atlas and quiz screens, round 2.1, on a real MapLibre map with the official DO boundaries, Rioja zones, satellite and 3D terrain; see `public/mocks/atlas-v2/README.md`.
 
 ## 7. In flight and parked
-In flight: mocks of the atlas and quiz screens (next). Done: repo setup (f18ce6e), first data pass (d1acea5).
+In flight: owner review of the round 2.1 mocks on the live site; then building the atlas screen. Done: repo setup (f18ce6e), first data pass (d1acea5), DOP overrides (issue #1 step one), mocks round 2.1 (PR #2), release 1.
 Parked: Priorat deep dive (after Rioja); SIGPAC vineyard parcels (version two); personal notes (owner, 15 Oct 2026: read-and-test only in version one).
 
 ## 8. Known problems
@@ -54,10 +54,11 @@ Parked: Priorat deep dive (after Rioja); SIGPAC vineyard parcels (version two); 
 - 2026-10-15 [O]: standing exceptions kept: push `main` after a commit; tag and push `release-N` after the owner says "publish release N".
 - 2026-10-15 [O]: small CI on pushes to `main`; HTML mocks; labels `ui`, `logic`, `data`, `release`, `security`, `docs`.
 - 2026-10-15 [O]: the data download pass runs on the owner's Mac, not in a cloud environment.
+- 2026-10-16 [O]: release 1 published with the mock-ups and the bare app shell, chosen on a card ("Merge and publish") in the mocks thread. Reason: the only way to see satellite imagery and 3D terrain on a link.
 - 2026-10-15 [O]: the repo is public. Reason: GitHub Pages on a private repo needs a paid plan; the code is harmless and the data is open. Consequence: every data credit line must be visible, and the code needs a licence file (open).
 
 ## 10. Next priorities (a proposal; the owner decides)
-1. Mock the atlas screen and the quiz screen; design check; owner review.
+1. Owner reviews the round 2.1 mocks on the live site; feedback becomes the first build cards.
 2. Build the first slice: map with DO layer, atlas panel, quiz, progress.
 3. Patch DO names and levels to today's law (Priorat DOCa, new DOs); then missing polygons.
 
