@@ -25,7 +25,10 @@ describe('fact formatting', () => {
       { id: 'fresh', title: 'Fresh document', url: 'https://example.org/fresh', pages: '', year: '' },
     ]);
   });
-  it('has no photos yet', () => {
-    expect(photosOf('cebreros')).toEqual([]);
+  it('gives a place at most three photos, in order, each with a credit', () => {
+    const photos = photosOf('cebreros');
+    expect(photos.map((p) => p.src)).toEqual(['photos/cebreros-1.webp', 'photos/cebreros-2.webp', 'photos/cebreros-3.webp']);
+    for (const p of photos) expect(p.artist && p.licence && p.page).toBeTruthy();
+    expect(photosOf('jerez')).toEqual([]);
   });
 });

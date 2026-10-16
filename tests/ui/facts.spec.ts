@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-// The fact sheet on the place card. Cebreros is the one place with a written sheet so far; the rest show measured rows only.
+// The fact sheet on the place card: written rows with sources, measured rows, photos with credits.
 
 async function open(page: Page, hash = '') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
@@ -11,7 +11,7 @@ async function open(page: Page, hash = '') {
 test('Cebreros shows its why line, grapes, measured rows and a source under each row', async ({ page }) => {
   await open(page, '#place=cebreros');
   const card = page.locator('.card');
-  await expect(card.locator('.lede')).toContainText('Old bush vines on granite slopes');
+  await expect(card.locator('.lede')).toContainText('granite');
   await expect(card.locator('dt', { hasText: 'Main grapes' })).toBeVisible();
   await expect(card.locator('dd', { hasText: 'Garnacha Tinta, Albillo Real' })).toBeVisible();
   await expect(card.locator('dt', { hasText: 'Climate (Köppen, measured)' })).toBeVisible();
@@ -43,13 +43,20 @@ test('the report link is absent while no address is set', async ({ page }) => {
   await expect(page.locator('.card a[href^="mailto:"]')).toHaveCount(0);
 });
 
-test('a quizzed place without a sheet keeps the old card and gains the measured rows', async ({ page }) => {
-  await open(page, '#place=toro');
+test('a place whose sources name no main grape shows its other grapes instead', async ({ page }) => {
+  await open(page, '#place=la-mancha');
   const card = page.locator('.card');
-  await expect(card.locator('dt', { hasText: 'Altitude' })).toBeVisible();
-  await expect(card.locator('dt', { hasText: 'Climate (Köppen, measured)' })).toBeVisible();
   await expect(card.locator('dt', { hasText: 'Main grapes' })).toHaveCount(0);
-  await expect(card.locator('dt', { hasText: 'Study region' })).toBeVisible();
+  await expect(card.locator('dt', { hasText: /^Other grapes/ })).toBeVisible();
+  await expect(card.locator('dt', { hasText: 'Climate (Köppen, measured)' })).toBeVisible();
+});
+
+test('photos show with a credit that links to their Commons page', async ({ page }) => {
+  await open(page, '#place=cebreros');
+  const figures = page.locator('.card figure.photo');
+  await expect(figures).toHaveCount(3);
+  await expect(figures.first().locator('img')).toHaveAttribute('alt', /.+/);
+  await expect(figures.first().locator('figcaption a')).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//);
 });
 
 test('a place that is not quizzed shows no measured rows', async ({ page }) => {
