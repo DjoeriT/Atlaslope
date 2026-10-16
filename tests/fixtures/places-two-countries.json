@@ -1,0 +1,17 @@
+{
+  "$comment": "Test fixture for src/tree: a cut-down Spain plus a made-up second country with two places and its own level names. Not real data.",
+  "version": 1,
+  "countries": [
+    { "id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"] },
+    { "id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "appellation", "subregion"] }
+  ],
+  "courses": [
+    { "id": "sws", "name": "Spanish Wine Scholar", "country": "spain", "groups": [{ "id": "castilla-y-leon", "name": "Castilla y León", "order": 1 }] },
+    { "id": "pws", "name": "Portuguese course", "country": "portugal", "groups": [{ "id": "douro", "name": "Douro Valley", "order": 1 }] }
+  ],
+  "places": [
+    { "id": "toro", "name": "Toro", "kind": "DO", "level": "place", "parent": "spain", "region": "castilla-y-leon", "quiz": "core", "courseOrder": 1, "northSouth": 1 },
+    { "id": "douro", "name": "Douro", "kind": "DOC", "level": "appellation", "parent": "portugal", "region": "douro", "quiz": "core", "courseOrder": 1, "northSouth": 1 },
+    { "id": "cima-corgo", "name": "Cima Corgo", "kind": "subregion", "level": "subregion", "parent": "douro", "region": "douro", "quiz": "zone" }
+  ]
+}

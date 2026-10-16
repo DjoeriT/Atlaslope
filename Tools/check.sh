@@ -28,8 +28,13 @@ if [ "${1:-}" != "quick" ]; then
   run "Build" "built in|error" npx vite build
   run "Production build has no debug flags" "." bash -c '
     [ -d dist ] || { echo "no dist/"; exit 1; }
-    if grep -rEl "fixture=|fresh=1" dist/assets 2>/dev/null; then echo "debug flags found in dist/"; exit 1; fi
+    if grep -rEl "\?fixture|fixture=|fresh=1" dist --exclude-dir=uitest 2>/dev/null; then echo "debug flags found in dist/"; exit 1; fi
     echo "clean"'
+  run "Download size under 2 MB (gzipped, imagery excluded)" "." bash -c '
+    total=0
+    while IFS= read -r f; do total=$(( total + $(gzip -9 -c "$f" | wc -c) )); done < <(find dist -path dist/uitest -prune -o -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif" -print)
+    echo "gzipped download: $total bytes (limit 2000000)"
+    [ "$total" -le 2000000 ]'
   if [ "${1:-}" = "ui" ]; then
     run "UI tests" "passed|failed|flaky" npx playwright test
   fi

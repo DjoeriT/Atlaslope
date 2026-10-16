@@ -1,0 +1,79 @@
+name: live-map-check
+# Opens the live site in a real browser on the real network and fails if the satellite or the terrain tiles do not load (#31).
+# Runs after every successful publish run, and on demand (Actions › live-map-check › Run workflow).
+# A screenshot of the page is kept as an artifact either way.
+on:
+  workflow_run:
+    workflows: [publish]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Live URL to check'
+        required: false
+        default: 'https://djoerit.github.io/Atlaslope/'
+        type: string
+permissions:
+  contents: read
+jobs:
+  live-map:
+    # After a publish run, only when it succeeded; a hand start always runs.
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      LIVE_URL: ${{ inputs.url || 'https://djoerit.github.io/Atlaslope/' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Open the live site, wait for the map, look for tiles
+        run: |
+          mkdir -p live-map-check
+          cat > live-map-check/check.mjs <<'EOF'
+          import { chromium } from '@playwright/test';
+
+          const url = process.env.LIVE_URL;
+          // Satellite: Esri World Imagery tiles. Terrain: Mapzen Terrarium tiles on AWS Open Data.
+          const isSatellite = (u) => /arcgis/i.test(u) && /World_Imagery/i.test(u) && /\/tile\//i.test(u);
+          const isTerrain = (u) => /elevation-tiles-prod\/terrarium\//i.test(u);
+          const seen = { satellite: 0, terrain: 0 };
+          const failures = [];
+
+          // Software GL so a runner without a GPU can still draw the map.
+          const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+          const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+          page.on('response', (r) => {
+            const u = r.url();
+            const kind = isSatellite(u) ? 'satellite' : isTerrain(u) ? 'terrain' : null;
+            if (!kind) return;
+            if (r.ok()) seen[kind]++; else failures.push(`${kind} ${r.status()} ${u.split('?')[0]}`);
+          });
+
+          console.log(`Opening ${url}`);
+          await page.goto(url, { waitUntil: 'load' });
+          // The map is done drawing when the network is quiet; give slow tile hosts up to 45 s to answer.
+          await page.waitForLoadState('networkidle', { timeout: 45_000 }).catch(() => console.log('network not idle after 45 s, checking what arrived'));
+          await page.waitForTimeout(2000);
+          await page.screenshot({ path: 'live-map-check/live.png' });
+          await browser.close();
+
+          console.log(`satellite tiles loaded: ${seen.satellite}; terrain tiles loaded: ${seen.terrain}`);
+          failures.slice(0, 10).forEach((f) => console.log(`failed: ${f}`));
+          let bad = false;
+          if (seen.satellite === 0) { console.error('FAIL: no satellite tile loaded'); bad = true; }
+          if (seen.terrain === 0) { console.error('FAIL: no terrain tile loaded'); bad = true; }
+          process.exit(bad ? 1 : 0);
+          EOF
+          cp live-map-check/check.mjs ./live-map-check.mjs
+          node live-map-check.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-map-screenshot
+          path: live-map-check/live.png
+          if-no-files-found: warn

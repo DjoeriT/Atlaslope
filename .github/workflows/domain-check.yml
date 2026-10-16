@@ -1,0 +1,46 @@
+# Read-only check of atlaslope.com: DNS records, what GitHub Pages reports for the custom domain and HTTPS,
+# and what the site answers over http and https. Cloud threads cannot query DNS, so they read this run's log.
+# Changes nothing. Runs when a claude/ branch changes this file, or by hand.
+name: domain-check
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['.github/workflows/domain-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: DNS records
+        run: |
+          for name in atlaslope.com www.atlaslope.com; do
+            for type in A AAAA CNAME; do
+              echo "$name $type: $(dig +short "$name" "$type" @1.1.1.1 | tr '\n' ' ')"
+            done
+          done
+          echo "Registry delegation (.com servers): $(dig +short NS atlaslope.com @a.gtld-servers.net | tr '\n' ' ')"
+          echo "SOA serial: $(dig +short SOA atlaslope.com @1.1.1.1)"
+          for ns in $(dig +short NS atlaslope.com @1.1.1.1); do
+            echo "Authoritative server: $ns (answers without any cache), SOA $(dig +short SOA atlaslope.com "@$ns")"
+            for name in atlaslope.com www.atlaslope.com; do
+              for type in A AAAA CNAME; do
+                echo "  $name $type: $(dig +noall +answer "$name" "$type" "@$ns" | awk '{print $2, $5}' | tr '\n' ' ')"
+              done
+            done
+          done
+          echo "GitHub Pages expects A 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153 and www CNAME djoerit.github.io"
+      - name: GitHub Pages settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pages" --jq '{cname, status, https_enforced, https_certificate, html_url, build_type}' || true
+          gh api "repos/${{ github.repository }}/pages/health" || true
+      - name: What the site answers
+        run: |
+          for url in http://atlaslope.com https://atlaslope.com https://www.atlaslope.com https://djoerit.github.io/Atlaslope/ https://djoerit.github.io/Paraje/; do
+            echo "$url -> $(curl -s -o /dev/null -m 15 -w '%{http_code} %{redirect_url}' "$url" || echo failed)"
+          done

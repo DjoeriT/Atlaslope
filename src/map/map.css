@@ -1,0 +1,11 @@
+/* Map labels and the imagery note; ported from the approved mock (Review/mock-atlas-v3/assets/app.css). */
+.lbl{font-family:var(--serif);font-size:.85rem;font-weight:500;color:var(--label);white-space:nowrap;pointer-events:none;
+ text-shadow:0 0 3px var(--label-halo),0 0 3px var(--label-halo),0 0 6px var(--label-halo),0 0 1px var(--label-halo);letter-spacing:.01em}
+.lbl.docalvl{font-weight:600}
+.menu.br{top:auto;bottom:1.6rem;right:4.4rem;min-width:14rem}
+.menu label[aria-disabled="true"]{color:var(--ink3);cursor:default}
+.imagery-note{position:absolute;left:27rem;right:5rem;margin-inline:auto;width:fit-content;bottom:1.6rem;z-index:5;display:flex;align-items:center;gap:.4rem;padding:.4rem .4rem .4rem 1rem;max-width:36rem;font-size:.9rem}
+.maplibregl-ctrl-attrib{font-family:var(--sans)}
+@media (max-width:820px){.menu.br{bottom:54%}}
+
+@media (max-width:820px){.imagery-note{left:1rem;right:4.5rem;bottom:calc(52% + 1rem);margin-inline:0}}
