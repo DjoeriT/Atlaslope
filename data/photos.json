@@ -1,4 +1,1197 @@
 {
  "$comment": "Shipped photos: one entry per file in public/photos/. Filled from Review/sources/photo-picks.json by the photo workflow; credits and licences per file. See data/SOURCES.md.",
- "photos": {}
+ "photos": {
+  "jumilla-1": {
+   "alt": "Viñedos de Finca CQ (Casa Quemada) en Jumilla, Murcia, España",
+   "artist": "Malegaetan",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_de_Finca_CQ_(Casa_Quemada)_en_Jumilla,_Murcia,_Espa%C3%B1a.jpg",
+   "title": "File:Viñedos de Finca CQ (Casa Quemada) en Jumilla, Murcia, España.jpg"
+  },
+  "jumilla-2": {
+   "alt": "Castillo de Jumilla Torre",
+   "artist": "Pedro J Pacheco",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Castillo_de_Jumilla_Torre.jpg",
+   "title": "File:Castillo de Jumilla Torre.jpg"
+  },
+  "alicante-1": {
+   "alt": "Sierra de Salinas. Viñas y sierra 1",
+   "artist": "Enrique Íñiguez Rodríguez (Qoan)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sierra_de_Salinas._Vi%C3%B1as_y_sierra_1.jpg",
+   "title": "File:Sierra de Salinas. Viñas y sierra 1.jpg"
+  },
+  "alicante-2": {
+   "alt": "Sierra de Salinas. Colonia. Viñas",
+   "artist": "Enrique Íñiguez Rodríguez (Qoan)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sierra_de_Salinas._Colonia._Vi%C3%B1as.jpg",
+   "title": "File:Sierra de Salinas. Colonia. Viñas.jpg"
+  },
+  "alicante-3": {
+   "alt": "Viñedo de Terlinques hacia el Corredor",
+   "artist": "Enrique Íñiguez Rodríguez (Qoan) Credit information This work was created by Enr",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_de_Terlinques_hacia_el_Corredor.jpg",
+   "title": "File:Viñedo de Terlinques hacia el Corredor.jpg"
+  },
+  "valencia-1": {
+   "alt": "Viñedo en Alpuente 3607",
+   "artist": "B25es",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_en_Alpuente_3607.jpg",
+   "title": "File:Viñedo en Alpuente 3607.jpg"
+  },
+  "valencia-2": {
+   "alt": "Vinyes per la Coma, Senija",
+   "artist": "Joanbanjo",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyes_per_la_Coma,_Senija.jpg",
+   "title": "File:Vinyes per la Coma, Senija.jpg"
+  },
+  "valencia-3": {
+   "alt": "Viña Vino Vinalopo",
+   "artist": "FoxR",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_Vino_Vinalopo.jpg",
+   "title": "File:Viña Vino Vinalopo.jpg"
+  },
+  "rioja-1": {
+   "alt": "Viñedos en Cuzcurritilla",
+   "artist": "Nicondarreta",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_Cuzcurritilla.jpg",
+   "title": "File:Viñedos en Cuzcurritilla.jpg"
+  },
+  "rioja-2": {
+   "alt": "Laguardia - Viñedo 01",
+   "artist": "Basotxerri",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Laguardia_-_Vi%C3%B1edo_01.jpg",
+   "title": "File:Laguardia - Viñedo 01.jpg"
+  },
+  "rioja-3": {
+   "alt": "CEPAS CERCA DE NAJERA",
+   "artist": "Manuel Velazquez",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:CEPAS_CERCA_DE_NAJERA_-_panoramio.jpg",
+   "title": "File:CEPAS CERCA DE NAJERA - panoramio.jpg"
+  },
+  "rioja-alta-1": {
+   "alt": "Guardaviñas en el término de la Deesilla (Rodezno)",
+   "artist": "Nicolás Pérez Gimilio",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Guardavi%C3%B1as_en_el_t%C3%A9rmino_de_la_Deesilla_(Rodezno).jpg",
+   "title": "File:Guardaviñas en el término de la Deesilla (Rodezno).jpg"
+  },
+  "rioja-alavesa-1": {
+   "alt": "To La Bastida by a scenic loop through vineyards",
+   "artist": "Art Anderson",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:To_La_Bastida_by_a_scenic_loop_through_vineyards_-_panoramio.jpg",
+   "title": "File:To La Bastida by a scenic loop through vineyards - panoramio.jpg"
+  },
+  "rioja-alavesa-2": {
+   "alt": "Viñedos en otoño, Elvillar",
+   "artist": "Mentxuwiki",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_oto%C3%B1o,_Elvillar.jpg",
+   "title": "File:Viñedos en otoño, Elvillar.jpg"
+  },
+  "rioja-oriental-1": {
+   "alt": "Viñedos AR",
+   "artist": "Julio Aquino",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_AR_-_panoramio.jpg",
+   "title": "File:Viñedos AR - panoramio.jpg"
+  },
+  "rioja-oriental-2": {
+   "alt": "Camino entre viñas",
+   "artist": "Julio Aquino",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Camino_entre_vi%C3%B1as_-_panoramio.jpg",
+   "title": "File:Camino entre viñas - panoramio.jpg"
+  },
+  "granada-1": {
+   "alt": "Viñedos, Quéntar",
+   "artist": "Jose Ruiz Gutiérrez",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos,_Qu%C3%A9ntar.jpg",
+   "title": "File:Viñedos, Quéntar.jpg"
+  },
+  "granada-2": {
+   "alt": "Desde la Contraviesa",
+   "artist": "medinamd",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Desde_la_Contraviesa_-_panoramio.jpg",
+   "title": "File:Desde la Contraviesa - panoramio.jpg"
+  },
+  "malaga-1": {
+   "alt": "Circular por Almáchar",
+   "artist": "Juan Pablo Olmo from málaga, spain",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Circular_por_Alm%C3%A1char_(8459149046).jpg",
+   "title": "File:Circular por Almáchar (8459149046).jpg"
+  },
+  "malaga-2": {
+   "alt": "Viñas",
+   "artist": "Antonio from Mijas, España",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_(3543402622).jpg",
+   "title": "File:Viñas (3543402622).jpg"
+  },
+  "montilla-moriles-1": {
+   "alt": "Olivares y viñas",
+   "artist": "Javi Carretero from Sevilla, Spain",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Olivares_y_vi%C3%B1as_(4021471167).jpg",
+   "title": "File:Olivares y viñas (4021471167).jpg"
+  },
+  "montilla-moriles-2": {
+   "alt": "Viñedo en Montilla",
+   "artist": "Víctor Fernández Salinas from Sevilla, España",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_en_Montilla_(8203573968).jpg",
+   "title": "File:Viñedo en Montilla (8203573968).jpg"
+  },
+  "montilla-moriles-3": {
+   "alt": "Montilla",
+   "artist": "zenm",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Montilla_-_20240430_114127.jpg",
+   "title": "File:Montilla - 20240430 114127.jpg"
+  },
+  "sierras-de-malaga-1": {
+   "alt": "Paseando por el Torcal de Antequera",
+   "artist": "Abel Maestro Garcia from Asunción, España",
+   "licence": "Public domain",
+   "licenceUrl": null,
+   "page": "https://commons.wikimedia.org/wiki/File:Paseando_por_el_Torcal_de_Antequera_(31545451041).jpg",
+   "title": "File:Paseando por el Torcal de Antequera (31545451041).jpg"
+  },
+  "carinena-1": {
+   "alt": "Viña",
+   "artist": "Juanedc from Zaragoza, España",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_(8249936932).jpg",
+   "title": "File:Viña (8249936932).jpg"
+  },
+  "carinena-2": {
+   "alt": "Vid",
+   "artist": "Juanedc from Zaragoza, España",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vid_(9281267053).jpg",
+   "title": "File:Vid (9281267053).jpg"
+  },
+  "somontano-1": {
+   "alt": "Salas Bajas y bodega",
+   "artist": "Gerardo Almeida",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Salas_Bajas_y_bodega_-_panoramio.jpg",
+   "title": "File:Salas Bajas y bodega - panoramio.jpg"
+  },
+  "somontano-2": {
+   "alt": "Vinyals en Salas Baixas",
+   "artist": "Willtron",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyals_en_Salas_Baixas.jpg",
+   "title": "File:Vinyals en Salas Baixas.jpg"
+  },
+  "urbezo-1": {
+   "alt": "Viñedo en Cariñena",
+   "artist": "Juanedc",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_en_Cari%C3%B1ena.jpg",
+   "title": "File:Viñedo en Cariñena.jpg"
+  },
+  "monterrei-1": {
+   "alt": "Viñas tintas en Oímbra",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_tintas_en_O%C3%ADmbra.jpg",
+   "title": "File:Viñas tintas en Oímbra.jpg"
+  },
+  "monterrei-2": {
+   "alt": "Tamagos, Verín - vides",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tamagos,_Ver%C3%ADn_-_vides.jpg",
+   "title": "File:Tamagos, Verín - vides.jpg"
+  },
+  "monterrei-3": {
+   "alt": "Casa emparrada San Cibrao, Oímbra",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Casa_emparrada_San_Cibrao,_O%C3%ADmbra.jpg",
+   "title": "File:Casa emparrada San Cibrao, Oímbra.jpg"
+  },
+  "rias-baixas-1": {
+   "alt": "RUTA DEL VINO EN AS RIAS BAIXAS",
+   "artist": "jacilluch",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:RUTA_DEL_VINO_EN_AS_RIAS_BAIXAS_(6314679972).jpg",
+   "title": "File:RUTA DEL VINO EN AS RIAS BAIXAS (6314679972).jpg"
+  },
+  "rias-baixas-2": {
+   "alt": "Rectoral de Breixa",
+   "artist": "José Antonio Gil Martínez from Vigo, Spain",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rectoral_de_Breixa_(2395726907).jpg",
+   "title": "File:Rectoral de Breixa (2395726907).jpg"
+  },
+  "rias-baixas-3": {
+   "alt": "Pazo de Oca= Parras",
+   "artist": "Emboscado",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Pazo_de_Oca%3D_Parras.JPG",
+   "title": "File:Pazo de Oca= Parras.JPG"
+  },
+  "ribeira-sacra-1": {
+   "alt": "Chantada",
+   "artist": "JCNazza",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chantada_-_panoramio.jpg",
+   "title": "File:Chantada - panoramio.jpg"
+  },
+  "ribeira-sacra-2": {
+   "alt": "Pipote e vide no Freixeiro, Quintá de Lor, Quiroga",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pipote_e_vide_no_Freixeiro,_Quint%C3%A1_de_Lor,_Quiroga.jpg",
+   "title": "File:Pipote e vide no Freixeiro, Quintá de Lor, Quiroga.jpg"
+  },
+  "ribeiro-1": {
+   "alt": "O río Miño desde Louredo, Cortegada",
+   "artist": "Noel Feans",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:O_r%C3%ADo_Mi%C3%B1o_desde_Louredo,_Cortegada.jpg",
+   "title": "File:O río Miño desde Louredo, Cortegada.jpg"
+  },
+  "ribeiro-2": {
+   "alt": "A Arnoia - Viñedos de ribeiro á beira do Miño - Galiza",
+   "artist": "Lmbuga (Luis Miguel Bugallo Sánchez)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_Arnoia_-_Vi%C3%B1edos_de_ribeiro_%C3%A1_beira_do_Mi%C3%B1o_-_Galiza.jpg",
+   "title": "File:A Arnoia - Viñedos de ribeiro á beira do Miño - Galiza.jpg"
+  },
+  "ribeiro-3": {
+   "alt": "Bancais con vides de ribeiro á beira do río Avia. Ribadavia. Galiza",
+   "artist": "Lmbuga (Luis Miguel Bugallo Sánchez)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bancais_con_vides_de_ribeiro_%C3%A1_beira_do_r%C3%ADo_Avia._Ribadavia._Galiza.jpg",
+   "title": "File:Bancais con vides de ribeiro á beira do río Avia. Ribadavia. Galiza.jpg"
+  },
+  "valdeorras-1": {
+   "alt": "Santa Cruz, O Bolo - vides",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Santa_Cruz,_O_Bolo_-_vides.jpg",
+   "title": "File:Santa Cruz, O Bolo - vides.jpg"
+  },
+  "txakoli-alava-1": {
+   "alt": "A-3630 - Ayala, Spain - July 26, 2024 03",
+   "artist": "Giorgio Galeotti",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A-3630_-_Ayala,_Spain_-_July_26,_2024_03.jpg",
+   "title": "File:A-3630 - Ayala, Spain - July 26, 2024 03.jpg"
+  },
+  "txakoli-bizkaia-1": {
+   "alt": "Txakoli vinyards",
+   "artist": "Tim Tregenza",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Txakoli_vinyards_-_panoramio.jpg",
+   "title": "File:Txakoli vinyards - panoramio.jpg"
+  },
+  "txakoli-bizkaia-2": {
+   "alt": "Port - Elantxobe, Spain - July 19, 2024 01",
+   "artist": "Giorgio Galeotti",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Port_-_Elantxobe,_Spain_-_July_19,_2024_01.jpg",
+   "title": "File:Port - Elantxobe, Spain - July 19, 2024 01.jpg"
+  },
+  "abona-1": {
+   "alt": "Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024",
+   "artist": "Tuxyso",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
+   "title": "File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg"
+  },
+  "abona-2": {
+   "alt": "Eastern Caldera of El Teide with the Observatorio del Teide in the background, Tenerife, Spain",
+   "artist": "Christoph Strässler",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Eastern_Caldera_of_El_Teide_with_the_Observatorio_del_Teide_in_the_background,_Tenerife,_Spain.jpg",
+   "title": "File:Eastern Caldera of El Teide with the Observatorio del Teide in the background, Tenerife, Spain.jpg"
+  },
+  "el-hierro-1": {
+   "alt": "La fuerza del Risco",
+   "artist": "Elpringado",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:La_fuerza_del_Risco.JPG",
+   "title": "File:La fuerza del Risco.JPG"
+  },
+  "el-hierro-2": {
+   "alt": "POZO DE LAS CALCOSAS",
+   "artist": "Fernando Marín Armas",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:POZO_DE_LAS_CALCOSAS.jpg",
+   "title": "File:POZO DE LAS CALCOSAS.jpg"
+  },
+  "gran-canaria-1": {
+   "alt": "Vineyards in Valsequillo, Gran Canaria",
+   "artist": "Florival fr",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vineyards_in_Valsequillo,_Gran_Canaria.jpg",
+   "title": "File:Vineyards in Valsequillo, Gran Canaria.jpg"
+  },
+  "gran-canaria-2": {
+   "alt": "El Confital D81 4892",
+   "artist": "Bengt Nyman from Vaxholm, Sweden",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:El_Confital_D81_4892_(27756760809).jpg",
+   "title": "File:El Confital D81 4892 (27756760809).jpg"
+  },
+  "la-gomera-1": {
+   "alt": "Barranco de las Rosas - La Gomera 01",
+   "artist": "Llez",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Barranco_de_las_Rosas_-_La_Gomera_01.jpg",
+   "title": "File:Barranco de las Rosas - La Gomera 01.jpg"
+  },
+  "la-palma-1": {
+   "alt": "Puente de Los Tilos 01",
+   "artist": "H. Zell",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puente_de_Los_Tilos_01.jpg",
+   "title": "File:Puente de Los Tilos 01.jpg"
+  },
+  "lanzarote-1": {
+   "alt": "La Geria - vineyard region of Lanzarote, Canary Islands",
+   "artist": "Tamara Kulikova",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:La_Geria_-_vineyard_region_of_Lanzarote,_Canary_Islands.jpg",
+   "title": "File:La Geria - vineyard region of Lanzarote, Canary Islands.jpg"
+  },
+  "lanzarote-2": {
+   "alt": "Vineyards - Tinajo - Lanzarote - Panorama",
+   "artist": "H. Zell",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vineyards_-_Tinajo_-_Lanzarote_-_Panorama.JPG",
+   "title": "File:Vineyards - Tinajo - Lanzarote - Panorama.JPG"
+  },
+  "valle-de-guimar-1": {
+   "alt": "At Tenerife 2020 604",
+   "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2020_604.jpg",
+   "title": "File:At Tenerife 2020 604.jpg"
+  },
+  "valle-de-la-orotava-1": {
+   "alt": "Valle de La Orotava qtl1",
+   "artist": "Quartl",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Valle_de_La_Orotava_qtl1.jpg",
+   "title": "File:Valle de La Orotava qtl1.jpg"
+  },
+  "valle-de-la-orotava-2": {
+   "alt": "Teneriffa (4)",
+   "artist": "giggel",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Teneriffa_-_panoramio_(4).jpg",
+   "title": "File:Teneriffa - panoramio (4).jpg"
+  },
+  "arlanza-1": {
+   "alt": "Bodegas,Baltanas Palencia",
+   "artist": "Lourdesbarcenilla",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodegas,Baltanas_Palencia.JPG",
+   "title": "File:Bodegas,Baltanas Palencia.JPG"
+  },
+  "arlanza-2": {
+   "alt": "Baltanas 01 by-dpc",
+   "artist": "David Perez",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Baltanas_01_by-dpc.jpg",
+   "title": "File:Baltanas 01 by-dpc.jpg"
+  },
+  "arribes-1": {
+   "alt": "Vilvestre",
+   "artist": "FLAVIVSAETIVS",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:20210216_125919_Vilvestre.jpg",
+   "title": "File:20210216 125919 Vilvestre.jpg"
+  },
+  "arribes-2": {
+   "alt": "El corazón de las arribes - El muelle de la playa del Rostro",
+   "artist": "jacilluch",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:El_coraz%C3%B3n_de_las_arribes_-_El_muelle_de_la_playa_del_Rostro_(9223965612).jpg",
+   "title": "File:El corazón de las arribes - El muelle de la playa del Rostro (9223965612).jpg"
+  },
+  "bierzo-1": {
+   "alt": "Panoramica viñedos palacio de canedo",
+   "artist": "Luiggi73",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Panoramica_vi%C3%B1edos_palacio_de_canedo.jpg",
+   "title": "File:Panoramica viñedos palacio de canedo.jpg"
+  },
+  "bierzo-2": {
+   "alt": "Palacio de Canedo",
+   "artist": "José Antonio Gil Martínez from Vigo, Spain",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palacio_de_Canedo_(440125665).jpg",
+   "title": "File:Palacio de Canedo (440125665).jpg"
+  },
+  "bierzo-3": {
+   "alt": "Vinedo Muro de piedra",
+   "artist": "Robbychucky",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinedo_Muro_de_piedra.jpg",
+   "title": "File:Vinedo Muro de piedra.jpg"
+  },
+  "cebreros-1": {
+   "alt": "Viñedo en bancales en el Valle del Tiétar",
+   "artist": "Dopcebreros",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_en_bancales_en_el_Valle_del_Ti%C3%A9tar.jpg",
+   "title": "File:Viñedo en bancales en el Valle del Tiétar.jpg"
+  },
+  "cebreros-2": {
+   "alt": "Viñedo de garnacha tinta en la D.O.P. Cebreros",
+   "artist": "Dopcebreros",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_de_garnacha_tinta_en_la_D.O.P._Cebreros.jpg",
+   "title": "File:Viñedo de garnacha tinta en la D.O.P. Cebreros.jpg"
+  },
+  "cebreros-3": {
+   "alt": "LaPizarra",
+   "artist": "Vinoysequedo",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:LaPizarra.jpg",
+   "title": "File:LaPizarra.jpg"
+  },
+  "cigales-1": {
+   "alt": "Bodegas - Dueñas (Palencia)",
+   "artist": "jacilluch",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodegas_-_Due%C3%B1as_(Palencia)_(10368049563).jpg",
+   "title": "File:Bodegas - Dueñas (Palencia) (10368049563).jpg"
+  },
+  "leon-1": {
+   "alt": "Wineyard Spain in Spring - San Roman de Horinja",
+   "artist": "VIEX - Ernest Niedermann",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wineyard_Spain_in_Spring_-_San_Roman_de_Horinja.jpg",
+   "title": "File:Wineyard Spain in Spring - San Roman de Horinja.jpg"
+  },
+  "leon-2": {
+   "alt": "Bodega Losada Vinos de Finca",
+   "artist": "Losada Vinos",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodega_Losada_Vinos_de_Finca.jpg",
+   "title": "File:Bodega Losada Vinos de Finca.jpg"
+  },
+  "leon-3": {
+   "alt": "Viñedos Bodega Viña Sastre - Hermanos Sastre Ribera del Duero4",
+   "artist": "Pravdaverita",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_Bodega_Vi%C3%B1a_Sastre_-_Hermanos_Sastre_Ribera_del_Duero4.JPG",
+   "title": "File:Viñedos Bodega Viña Sastre - Hermanos Sastre Ribera del Duero4.JPG"
+  },
+  "ribera-del-duero-1": {
+   "alt": "Lloro de la vid",
+   "artist": "Pasanar",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lloro_de_la_vid.jpg",
+   "title": "File:Lloro de la vid.jpg"
+  },
+  "ribera-del-duero-2": {
+   "alt": "Hinchado de la yema.",
+   "artist": "Pasanar",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hinchado_de_la_yema..jpg",
+   "title": "File:Hinchado de la yema..jpg"
+  },
+  "rueda-1": {
+   "alt": "Martinsancho Vineyard",
+   "artist": "Carlosmartinmm34",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Martinsancho_Vineyard.jpg",
+   "title": "File:Martinsancho Vineyard.jpg"
+  },
+  "rueda-2": {
+   "alt": "San Cristobal de la Vega 04 bodegas by-dpc",
+   "artist": "David Perez",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:San_Cristobal_de_la_Vega_04_bodegas_by-dpc.jpg",
+   "title": "File:San Cristobal de la Vega 04 bodegas by-dpc.jpg"
+  },
+  "rueda-3": {
+   "alt": "San Roman de Hornija Cellar 1",
+   "artist": "VIEX - Ernest Niedermann",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:San_Roman_de_Hornija_Cellar_1.jpg",
+   "title": "File:San Roman de Hornija Cellar 1.jpg"
+  },
+  "sierra-de-salamanca-1": {
+   "alt": "Campo de viñas",
+   "artist": "Frayle from Salamanca, España",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Campo_de_vi%C3%B1as_(34216460053).jpg",
+   "title": "File:Campo de viñas (34216460053).jpg"
+  },
+  "sierra-de-salamanca-2": {
+   "alt": "Valdefuentes de Sangusín - casa con parra",
+   "artist": "Estevoaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Valdefuentes_de_Sangus%C3%ADn_-_casa_con_parra.jpg",
+   "title": "File:Valdefuentes de Sangusín - casa con parra.jpg"
+  },
+  "tierra-del-vino-de-zamora-1": {
+   "alt": "Calle de las bodegas en Parada de Rubiales",
+   "artist": "Hovallef",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Calle_de_las_bodegas_en_Parada_de_Rubiales.jpg",
+   "title": "File:Calle de las bodegas en Parada de Rubiales.jpg"
+  },
+  "tierra-del-vino-de-zamora-2": {
+   "alt": "Bodega en Parada de Rubiales",
+   "artist": "Hovallef",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodega_en_Parada_de_Rubiales.jpg",
+   "title": "File:Bodega en Parada de Rubiales.jpg"
+  },
+  "valles-de-benavente-1": {
+   "alt": "Bodegas en Sitrama de Tera",
+   "artist": "Jcrifur",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodegas_en_Sitrama_de_Tera.jpg",
+   "title": "File:Bodegas en Sitrama de Tera.jpg"
+  },
+  "valles-de-benavente-2": {
+   "alt": "Puente de la ruta de Don Quijote sobre el río Cea en el Molino de Alaiz (Fuentes de Ropel)",
+   "artist": "Hovallef",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puente_de_la_ruta_de_Don_Quijote_sobre_el_r%C3%ADo_Cea_en_el_Molino_de_Alaiz_(Fuentes_de_Ropel).jpg",
+   "title": "File:Puente de la ruta de Don Quijote sobre el río Cea en el Molino de Alaiz (Fuentes de Ropel).jpg"
+  },
+  "valtiendas-1": {
+   "alt": "BodegasEnFuentidueña-rectangular",
+   "artist": "Rowanwindwhistler",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:BodegasEnFuentidue%C3%B1a-rectangular.jpg",
+   "title": "File:BodegasEnFuentidueña-rectangular.jpg"
+  },
+  "valtiendas-2": {
+   "alt": "MURALLAS (1)",
+   "artist": "Wamba Wambez",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:MURALLAS_-_panoramio_(1).jpg",
+   "title": "File:MURALLAS - panoramio (1).jpg"
+  },
+  "almansa-1": {
+   "alt": "Castillo de Chinchilla, panorámica frontal",
+   "artist": "Sergiojoseg",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Castillo_de_Chinchilla,_panor%C3%A1mica_frontal.jpg",
+   "title": "File:Castillo de Chinchilla, panorámica frontal.jpg"
+  },
+  "almansa-2": {
+   "alt": "Chinchilla amanecer",
+   "artist": "Pitamakan7",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chinchilla_amanecer.jpg",
+   "title": "File:Chinchilla amanecer.jpg"
+  },
+  "campo-de-calatrava-1": {
+   "alt": "Almagro - Panorama desde Silo",
+   "artist": "Rafa Esteve",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Almagro_-_Panorama_desde_Silo.jpg",
+   "title": "File:Almagro - Panorama desde Silo.jpg"
+  },
+  "campo-de-calatrava-2": {
+   "alt": "Calatrava la vieja",
+   "artist": "Alejandro MezcuA",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Calatrava_la_vieja.jpg",
+   "title": "File:Calatrava la vieja.jpg"
+  },
+  "la-mancha-1": {
+   "alt": "San Gregorio.",
+   "artist": "Victoriano Espada (V…",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:San_Gregorio._-_panoramio.jpg",
+   "title": "File:San Gregorio. - panoramio.jpg"
+  },
+  "la-mancha-2": {
+   "alt": "Madrigueras",
+   "artist": "antcaesar",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Madrigueras_(20765848025).jpg",
+   "title": "File:Madrigueras (20765848025).jpg"
+  },
+  "mentrida-1": {
+   "alt": "Cepa de garnacha o aragonés",
+   "artist": "Xemenendura",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cepa_de_garnacha_o_aragon%C3%A9s.jpg",
+   "title": "File:Cepa de garnacha o aragonés.jpg"
+  },
+  "mentrida-2": {
+   "alt": "Cepa de garnacha..",
+   "artist": "Xemenendura",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cepa_de_garnacha...jpg",
+   "title": "File:Cepa de garnacha...jpg"
+  },
+  "mondejar-1": {
+   "alt": "ES Sierra de Altomira Embalse de Bolarque",
+   "artist": "Aparicio Victor",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ES4240018_Sierra_de_Altomira_Embalse_de_Bolarque.jpg",
+   "title": "File:ES4240018 Sierra de Altomira Embalse de Bolarque.jpg"
+  },
+  "ribera-del-jucar-1": {
+   "alt": "Torcas de Sisante",
+   "artist": "Scorullon",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Torcas_de_Sisante.jpg",
+   "title": "File:Torcas de Sisante.jpg"
+  },
+  "ucles-1": {
+   "alt": "Fuente de Pedro Naharro 21",
+   "artist": "B25es",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fuente_de_Pedro_Naharro_21.jpg",
+   "title": "File:Fuente de Pedro Naharro 21.jpg"
+  },
+  "valdepenas-1": {
+   "alt": "Nuestra Señora de la Asuncion",
+   "artist": "Pedro J Pacheco",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Nuestra_Se%C3%B1ora_de_la_Asuncion.jpg",
+   "title": "File:Nuestra Señora de la Asuncion.jpg"
+  },
+  "ribera-del-guadiana-1": {
+   "alt": "Mérida 2024-08-20 - Teatro Romano 03",
+   "artist": "Rafa Esteve",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rida_2024-08-20_-_Teatro_Romano_03.jpg",
+   "title": "File:Mérida 2024-08-20 - Teatro Romano 03.jpg"
+  },
+  "vinos-de-madrid-1": {
+   "alt": "P -24x15",
+   "artist": "Miguel Angel Masegosa Martínez",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:P1080592-24x15_(28473730058).jpg",
+   "title": "File:P1080592-24x15 (28473730058).jpg"
+  },
+  "alella-1": {
+   "alt": "066 Vinya testimonial de Can Magarola (Alella), al fons Can Jonc i Can Tito Serra",
+   "artist": "Enric",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:066_Vinya_testimonial_de_Can_Magarola_(Alella),_al_fons_Can_Jonc_i_Can_Tito_Serra.jpg",
+   "title": "File:066 Vinya testimonial de Can Magarola (Alella), al fons Can Jonc i Can Tito Serra.jpg"
+  },
+  "conca-de-barbera-1": {
+   "alt": "Vista general del Monestir i camp de vinyes",
+   "artist": "DagafeSQV",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_general_del_Monestir_i_camp_de_vinyes.JPG",
+   "title": "File:Vista general del Monestir i camp de vinyes.JPG"
+  },
+  "conca-de-barbera-2": {
+   "alt": "Monestir de Poblet - Juliol 2015 - 01",
+   "artist": "Jordiferrer",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Monestir_de_Poblet_-_Juliol_2015_-_01.JPG",
+   "title": "File:Monestir de Poblet - Juliol 2015 - 01.JPG"
+  },
+  "conca-de-barbera-3": {
+   "alt": "Sarral, celler de la Cooperativa Vinícola, de Pere Domènech i Roura (1914, ampliat el 1931)",
+   "artist": "Catalan Art &amp; Architecture Gallery (Josep Bracons) from Barcelona, Catalonia",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sarral,_celler_de_la_Cooperativa_Vin%C3%ADcola,_de_Pere_Dom%C3%A8nech_i_Roura_(1914,_ampliat_el_1931)_(12716714774).jpg",
+   "title": "File:Sarral, celler de la Cooperativa Vinícola, de Pere Domènech i Roura (1914, ampliat el 1931) (12716714774).jpg"
+  },
+  "costers-del-segre-1": {
+   "alt": "Cellers de Raïmat (Lleida)",
+   "artist": "Amicsdelafotodelleida",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cellers_de_Ra%C3%AFmat_(Lleida).jpg",
+   "title": "File:Cellers de Raïmat (Lleida).jpg"
+  },
+  "costers-del-segre-2": {
+   "alt": "CAPELLA DE LA DIVINA PASTORA - BALAGUER - IB-700",
+   "artist": "Isidre blanc",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:CAPELLA_DE_LA_DIVINA_PASTORA_-_BALAGUER_-_IB-700.jpg",
+   "title": "File:CAPELLA DE LA DIVINA PASTORA - BALAGUER - IB-700.jpg"
+  },
+  "emporda-1": {
+   "alt": "Espolla 2011 03",
+   "artist": "Bertrand GRONDIN → (Talk)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Espolla_2011_03.jpg",
+   "title": "File:Espolla 2011 03.jpg"
+  },
+  "emporda-2": {
+   "alt": "Vinyes de la Finca Bell-Lloc Palamós Baix Empordà Girona",
+   "artist": "Paputx",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyes_de_la_Finca_Bell-Lloc_Palam%C3%B3s_Baix_Empord%C3%A0_Girona.jpg",
+   "title": "File:Vinyes de la Finca Bell-Lloc Palamós Baix Empordà Girona.jpg"
+  },
+  "emporda-3": {
+   "alt": "Calonge - Riera del Tinar - Vall i vinyes",
+   "artist": "flamenc",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Calonge_-_Riera_del_Tinar_-_Vall_i_vinyes.jpg",
+   "title": "File:Calonge - Riera del Tinar - Vall i vinyes.jpg"
+  },
+  "montsant-1": {
+   "alt": "Mas de les Vinyes",
+   "artist": "Cpratsferre",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mas_de_les_Vinyes.jpg",
+   "title": "File:Mas de les Vinyes.jpg"
+  },
+  "montsant-2": {
+   "alt": "Casa amb parra al Molar",
+   "artist": "Jordi Gili",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Casa_amb_parra_al_Molar.jpg",
+   "title": "File:Casa amb parra al Molar.jpg"
+  },
+  "penedes-1": {
+   "alt": "Vinyes de la Berna, Torrelles de Foix",
+   "artist": "Angela Llop",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyes_de_la_Berna,_Torrelles_de_Foix.jpg",
+   "title": "File:Vinyes de la Berna, Torrelles de Foix.jpg"
+  },
+  "penedes-2": {
+   "alt": "Vinyes de Torrelles de Foix, Alt Penedès",
+   "artist": "Angela Llop",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyes_de_Torrelles_de_Foix,_Alt_Pened%C3%A8s.jpg",
+   "title": "File:Vinyes de Torrelles de Foix, Alt Penedès.jpg"
+  },
+  "penedes-3": {
+   "alt": "Bodegas Torres-2010 (1)",
+   "artist": "Alberto-g-rovi",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodegas_Torres-2010_(1).jpg",
+   "title": "File:Bodegas Torres-2010 (1).jpg"
+  },
+  "pla-de-bages-1": {
+   "alt": "Barraca de Sant Margarida",
+   "artist": "Unai",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Barraca_de_Sant_Margarida.jpg",
+   "title": "File:Barraca de Sant Margarida.jpg"
+  },
+  "pla-de-bages-2": {
+   "alt": "Barraca propera a Cal Manso",
+   "artist": "Castellgalie",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Barraca_propera_a_Cal_Manso.jpg",
+   "title": "File:Barraca propera a Cal Manso.jpg"
+  },
+  "priorat-1": {
+   "alt": "Vinyes del Priorat, l'Ermita, Gratallops",
+   "artist": "Angela Llop",
+   "licence": "CC BY-SA 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vinyes_del_Priorat,_l%27Ermita,_Gratallops.jpg",
+   "title": "File:Vinyes del Priorat, l'Ermita, Gratallops.jpg"
+  },
+  "priorat-2": {
+   "alt": "Gratallops - Celler Álvaro Palacios",
+   "artist": "Lohen11 - Josep Renalias",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gratallops_-_Celler_%C3%81lvaro_Palacios.JPG",
+   "title": "File:Gratallops - Celler Álvaro Palacios.JPG"
+  },
+  "tarragona-1": {
+   "alt": "11 Coma del Sordet (Salomó), vinyes i cisterna",
+   "artist": "Enric",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:11_Coma_del_Sordet_(Salom%C3%B3),_vinyes_i_cisterna.jpg",
+   "title": "File:11 Coma del Sordet (Salomó), vinyes i cisterna.jpg"
+  },
+  "tarragona-2": {
+   "alt": "10 Coma del Sordet (Salomó), vinyes i cisterna",
+   "artist": "Enric",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:10_Coma_del_Sordet_(Salom%C3%B3),_vinyes_i_cisterna.jpg",
+   "title": "File:10 Coma del Sordet (Salomó), vinyes i cisterna.jpg"
+  },
+  "tarragona-3": {
+   "alt": "Celler cooperatiu d'Alió, Alt Camp. Temps de verema",
+   "artist": "Angela Llop",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Celler_cooperatiu_d%27Ali%C3%B3,_Alt_Camp._Temps_de_verema.jpg",
+   "title": "File:Celler cooperatiu d'Alió, Alt Camp. Temps de verema.jpg"
+  },
+  "terra-alta-1": {
+   "alt": "Celler Cooperatiu de Gandesa 2",
+   "artist": "Josepgesti",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Celler_Cooperatiu_de_Gandesa_2.jpg",
+   "title": "File:Celler Cooperatiu de Gandesa 2.jpg"
+  },
+  "terra-alta-2": {
+   "alt": "Ceràmiques, Celler modernista de Pinell de Brai, Terra Alta, Tarragona",
+   "artist": "Angela Llop",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cer%C3%A0miques,_Celler_modernista_de_Pinell_de_Brai,_Terra_Alta,_Tarragona.jpg",
+   "title": "File:Ceràmiques, Celler modernista de Pinell de Brai, Terra Alta, Tarragona.jpg"
+  },
+  "bullas-1": {
+   "alt": "Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca.",
+   "artist": "Lorenzo Soriano",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cala_Blanca_se_encuentra_en_el_entorno_natural_de_Puntas_d_Calnegre,_Lorca..jpg",
+   "title": "File:Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca..jpg"
+  },
+  "bullas-2": {
+   "alt": "River canyon of Rambla de Perea in Los Baños de Mula, Río Mula, Murcia, Spain, 2025 February - 2",
+   "artist": "Ximonic (Simo Räsänen)",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:River_canyon_of_Rambla_de_Perea_in_Los_Ba%C3%B1os_de_Mula,_R%C3%ADo_Mula,_Murcia,_Spain,_2025_February_-_2.jpg",
+   "title": "File:River canyon of Rambla de Perea in Los Baños de Mula, Río Mula, Murcia, Spain, 2025 February - 2.jpg"
+  },
+  "yecla-1": {
+   "alt": "Viñedos Ecológicos en la Sierra de Salinas, Yecla (Murcia)",
+   "artist": "Casasdeselva",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_Ecol%C3%B3gicos_en_la_Sierra_de_Salinas,_Yecla_(Murcia).jpg",
+   "title": "File:Viñedos Ecológicos en la Sierra de Salinas, Yecla (Murcia).jpg"
+  },
+  "utiel-requena-1": {
+   "alt": "2020-07-04 Port de Requena",
+   "artist": "Pacopac",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-07-04_Port_de_Requena.jpg",
+   "title": "File:2020-07-04 Port de Requena.jpg"
+  },
+  "utiel-requena-2": {
+   "alt": "Bodega Sierra Norte, Requena 06",
+   "artist": "Simon Burchell",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bodega_Sierra_Norte,_Requena_06.jpg",
+   "title": "File:Bodega Sierra Norte, Requena 06.jpg"
+  },
+  "condado-de-huelva-1": {
+   "alt": "Tríada-triología mediterránea bollullos par del condado",
+   "artist": "Jándalo",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tr%C3%ADada-triolog%C3%ADa_mediterr%C3%A1nea_bollullos_par_del_condado.jpg",
+   "title": "File:Tríada-triología mediterránea bollullos par del condado.jpg"
+  },
+  "condado-de-huelva-2": {
+   "alt": "Pinus pinea kz04",
+   "artist": "Krzysztof Ziarnek, Kenraiz",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pinus_pinea_kz04.jpg",
+   "title": "File:Pinus pinea kz04.jpg"
+  },
+  "lebrija-1": {
+   "alt": "Iglesia Mayor de Santa María de la Oliva 001",
+   "artist": "Emilio J. Rodríguez Posada",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Iglesia_Mayor_de_Santa_Mar%C3%ADa_de_la_Oliva_001.jpg",
+   "title": "File:Iglesia Mayor de Santa María de la Oliva 001.jpg"
+  },
+  "calatayud-1": {
+   "alt": "RENFE Class 470 Embid de Jalón",
+   "artist": "Kabelleger / David Gubler (http://www.bahnbilder.ch)",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:RENFE_Class_470_Embid_de_Jal%C3%B3n.jpg",
+   "title": "File:RENFE Class 470 Embid de Jalón.jpg"
+  },
+  "calatayud-2": {
+   "alt": "Castillos de Armantes",
+   "artist": "Miguel Ángel García.",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Castillos_de_Armantes_-_53656042420.jpg",
+   "title": "File:Castillos de Armantes - 53656042420.jpg"
+  },
+  "campo-de-borja-1": {
+   "alt": "View of Mallén municipality (3)",
+   "artist": "Vasyatka1",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_Mall%C3%A9n_municipality_(3).jpg",
+   "title": "File:View of Mallén municipality (3).jpg"
+  },
+  "campo-de-borja-2": {
+   "alt": "Palacio de los Condes de Bureta . Bureta. Zaragoza.",
+   "artist": "Miguel Ángel García. from Ólvega., España",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palacio_de_los_Condes_de_Bureta_._Bureta._Zaragoza._(26886652616).jpg",
+   "title": "File:Palacio de los Condes de Bureta . Bureta. Zaragoza. (26886652616).jpg"
+  },
+  "navarra-1": {
+   "alt": "Viñedos de Navarra",
+   "artist": "Feranza",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_de_Navarra.JPG",
+   "title": "File:Viñedos de Navarra.JPG"
+  },
+  "navarra-2": {
+   "alt": "Bargota.C2.Navarra.Spanien",
+   "artist": "Unknown",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Bargota.C2.Navarra.Spanien.jpg",
+   "title": "File:Bargota.C2.Navarra.Spanien.jpg"
+  },
+  "navarra-3": {
+   "alt": "Arínzano (1)",
+   "artist": "Pompilos",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ar%C3%ADnzano_(1).jpg",
+   "title": "File:Arínzano (1).jpg"
+  },
+  "cangas-1": {
+   "alt": "Brétema dende o Facho",
+   "artist": "Miguel Lima Medín",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Br%C3%A9tema_dende_o_Facho.jpg",
+   "title": "File:Brétema dende o Facho.jpg"
+  },
+  "cangas-2": {
+   "alt": "Vista de Cangas",
+   "artist": "Juangverano1998",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Cangas.jpg",
+   "title": "File:Vista de Cangas.jpg"
+  },
+  "txakoli-getaria-1": {
+   "alt": "Mahastia Getariatik Debara",
+   "artist": "Iñaki LL",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mahastia_Getariatik_Debara.jpg",
+   "title": "File:Mahastia Getariatik Debara.jpg"
+  },
+  "txakoli-getaria-2": {
+   "alt": "GR121-3b",
+   "artist": "Galder",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:GR121-3b.jpg",
+   "title": "File:GR121-3b.jpg"
+  },
+  "txakoli-getaria-3": {
+   "alt": "Zarautz Vigne Txakoli 01",
+   "artist": "Jean Michel Etchecolonea",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zarautz_Vigne_Txakoli_01.jpg",
+   "title": "File:Zarautz Vigne Txakoli 01.jpg"
+  },
+  "binissalem-1": {
+   "alt": "Santa Maria de Robines",
+   "artist": "Pla",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Santa_Maria_de_Robines.jpg",
+   "title": "File:Santa Maria de Robines.jpg"
+  },
+  "pla-i-llevant-1": {
+   "alt": "Capdepera from PuigdeSonJordi",
+   "artist": "Chr.peter",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Capdepera_from_PuigdeSonJordi.jpg",
+   "title": "File:Capdepera from PuigdeSonJordi.jpg"
+  },
+  "tacoronte-acentejo-1": {
+   "alt": "Viñas en Taganana (Tenerife)",
+   "artist": "Beneharo Hdez.",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_en_Taganana_(Tenerife).JPG",
+   "title": "File:Viñas en Taganana (Tenerife).JPG"
+  },
+  "tacoronte-acentejo-2": {
+   "alt": "Pijaral 16 ES",
+   "artist": "Alejandro Mezcua",
+   "licence": "CC BY-SA 3.0 es",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Pijaral_16_ES7020045.jpg",
+   "title": "File:Pijaral 16 ES7020045.jpg"
+  },
+  "ycoden-daute-isora-1": {
+   "alt": "At Tenerife 2022 216",
+   "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2022_216.jpg",
+   "title": "File:At Tenerife 2022 216.jpg"
+  },
+  "toro-1": {
+   "alt": "Iglesia de San Juan Bautista en Taragabuena",
+   "artist": "Hovallef",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Taragabuena.jpg",
+   "title": "File:Iglesia de San Juan Bautista en Taragabuena.jpg"
+  },
+  "manchuela-1": {
+   "alt": "Casasdesantacruz",
+   "artist": "María Sevilla del peral",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Casasdesantacruz.jpg",
+   "title": "File:Casasdesantacruz.jpg"
+  },
+  "manchuela-2": {
+   "alt": "Paisaje de la Manchuela Albaceteña 03",
+   "artist": "19Tarrestnom65",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Paisaje_de_la_Manchuela_Albacete%C3%B1a_03.jpg",
+   "title": "File:Paisaje de la Manchuela Albaceteña 03.jpg"
+  }
+ }
 }
