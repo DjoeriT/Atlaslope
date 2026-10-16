@@ -22,6 +22,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Esri close-in imagery key (owner's free ArcGIS developer account, repo secret). Empty means Sentinel-2 only.
+          VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
