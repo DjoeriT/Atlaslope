@@ -13,7 +13,8 @@ The atlas is real now. Nobody could see the imagery from the build machine (its 
 5. **Views.** The views menu: Spain, the ten study regions, Rioja in 3D.
 6. **Light and dark.** Follows your system; the half-circle button overrides and remembers.
 7. **iPad and phone.** At iPad width the card sits beside the map; on a phone it stacks at the bottom. Large text in Settings: nothing should overlap.
-8. **Mocks.** https://djoerit.github.io/Paraje/mocks/atlas-v2/ now has only the quiz pages (00, 03, 03b, 04); Explore there opens the app.
+8. **Mocks.** https://djoerit.github.io/Paraje/mocks/atlas-v2/ now has the quiz pages plus the three new round 2.2 screens (fact question, Rioja lesson, elevation profile), all on the ten study regions. Explore Spain and Rioja are gone from the mocks: the app is them now, and the Explore tab there opens it.
 
 ## For you
+Commits: release 2 merge f225b0d, round 2.2 mocks merge 2e0bbb5. Checks: `Tools/check.sh ui` exit 0 on 2e0bbb5 (22 unit tests, 10 UI tests, build clean). Not verified: satellite, terrain and label rendering (hosts unreachable from the build machine), Safari, iPad, phone, large text.
 Things 1 and 7 are the ones nobody could check before you. The rest have tests behind them.
