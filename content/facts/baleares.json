@@ -1,0 +1,138 @@
+{
+ "region": "baleares",
+ "sheets": [
+  {
+   "id": "binissalem",
+   "why": {
+    "text": "Local varieties and conditions that allow full ripening give warm wines with good alcohol: fruity, structured reds and fresh whites.",
+    "cite": [
+     "binissalem-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Moll"
+     },
+     {
+      "local": "Manto Negro"
+     }
+    ],
+    "cite": [
+     "binissalem-wiki"
+    ],
+    "others": [
+     "Moscatel Grano Menudo",
+     "Moscatel de Alejandría",
+     "Cabernet Sauvignon",
+     "Callet",
+     "Chardonnay",
+     "Giro Ros",
+     "Gorgollasa",
+     "Macabeo",
+     "Merlot",
+     "Monastrell",
+     "Parellada",
+     "Syrah",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "binissalem-doc:p6",
+     "binissalem-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose",
+     "white",
+     "sparkling"
+    ],
+    "text": "Warm, structured reds, aromatic rosados, fresh whites, and white and rosé sparkling wines.",
+    "cite": [
+     "binissalem-doc:p1",
+     "binissalem-doc:p3",
+     "binissalem-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Conditions favour full ripening and high sugar concentration.",
+    "cite": [
+     "binissalem-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "pla-i-llevant",
+   "why": {
+    "text": "Island vineyards at sea level, cooled by the salty Embat wind, with high sun and chalky soils give aromatic, high-alcohol wines with integrated acidity.",
+    "cite": [
+     "pla-i-llevant-doc:p5",
+     "pla-i-llevant-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Moll",
+     "Manto Negro",
+     "Gorgollasa",
+     "Giro Ros",
+     "Fogoneu",
+     "Callet",
+     "Riesling",
+     "Syrah",
+     "Tempranillo",
+     "Viognier",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Macabeo",
+     "Merlot",
+     "Monastrell",
+     "Moscatel de Alejandría",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Pinot Noir"
+    ],
+    "othersCite": [
+     "pla-i-llevant-doc:p5",
+     "pla-i-llevant-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling"
+    ],
+    "text": "Whites, rosados and reds, liqueur wines, and sparkling and semi-sparkling wines.",
+    "cite": [
+     "pla-i-llevant-doc:p1",
+     "pla-i-llevant-doc:p2",
+     "pla-i-llevant-doc:p3",
+     "pla-i-llevant-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Island, almost at sea level; the Embat wind brings freshness, humidity and salt; strong sunshine. No figures given.",
+    "cite": [
+     "pla-i-llevant-doc:p5",
+     "pla-i-llevant-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Chalky (calcareous) soils, which boost aromatic compounds.",
+    "cite": [
+     "pla-i-llevant-doc:p5"
+    ]
+   }
+  }
+ ]
+}

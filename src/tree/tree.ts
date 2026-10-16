@@ -18,7 +18,7 @@ export interface Tree {
   alsoWithin(id: string): Place[];
   /** The country's name for the place's level ("place", "zone", ...). */
   levelName(place: Place): string;
-  /** Regions and places by name or official name, accents and case folded; regions first on an equal match. */
+  /** Regions and places by name or official name, accents and case folded; regions first on an equal match. Main-grape matches come after all name matches. */
   search(query: string, limit?: number): Crumb[];
 }
 
@@ -28,8 +28,8 @@ const LAST = Number.MAX_SAFE_INTEGER;
 const isObject = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null && !Array.isArray(x);
 const isText = (x: unknown): x is string => typeof x === 'string' && x.trim() !== '';
 
-/** Validates the parsed places.json and builds the tree. Throws with a message naming the place (or country, course) at fault. */
-export function loadTree(raw: unknown): Tree {
+/** Validates the parsed places.json and builds the tree. `mainGrapes` (place id to grape names) lets search find a place by its grapes. Throws with a message naming the place (or country, course) at fault. */
+export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}): Tree {
   if (!isObject(raw) || !Array.isArray(raw.countries) || !Array.isArray(raw.courses) || !Array.isArray(raw.places)) {
     throw new Error('places.json: expected countries, courses and places');
   }
@@ -147,6 +147,7 @@ export function loadTree(raw: unknown): Tree {
     ...places.map((p) => ({
       hit: { level: p.level, id: p.id, name: p.name },
       names: [p.name, ...(p.official ?? '').split(' / ')].filter(Boolean).map(fold),
+      grapes: mainGrapes[p.id],
       rank: 1,
       order: p.courseOrder ?? LAST,
     })),

@@ -27,12 +27,13 @@ order (`jq '.places[] | select(.region=="<id>" and .quiz!="none") | [.id,.name,.
 | every row's `cite` | yes | A list of `"<sourceId>"` or `"<sourceId>:p<N>"`; `N` is the page the extract gives (heading or the «Página N» marker). Source ids are in `content/sources.json`. |
 
 ## Main grapes (in this order; stop at the first that answers)
-1. The official extract ranks them: «variedad principal», «preferente», or the document singles out grapes in its own text (wine description or link with the area: «la base de los vinos», «elaborados principalmente con»). Cite the official source.
+1. The official source singles them out in prose: «variedad principal», «preferente», «mayoritaria», «la base de los vinos», or a wine description built on the grape. The EU form's heading «PRINCIPALES UVAS DE VINIFICACIÓN» is a form heading, not a ranking: that list (with any secondary list) goes in `others` and never makes a grape main by itself (LeadBot, after batches B and D read it differently). Cite the official source.
 2. Otherwise the Wikipedia extract `Review/sources/wikipedia/<id>.md`, **only** if its title is about this wine place and it plainly names the main grapes. Cite `<id>-wiki`.
 3. Otherwise `main: []` and every grape goes in `others`. Do not guess.
 A main grape must also be allowed by the official document. If Wikipedia names a grape the document does not allow, leave it out and say so in your report.
 
 ## Rules
+- Wikipedia is for main grapes only; never for the why line, styles, climate, soil or altitude.
 - If an extract section is empty or cut short (Cebreros's grape list is), search the full document for that section only: `rg -n -A 40 "variedades" Review/sources/fetched/<file named in the extract header>`. Never read a full document whole.
 - Write only what the sources say. If a row has nothing in the extract, write `"text": ""` with `"cite": []`; the app hides an empty row and the check accepts it. Never fill from memory.
 - English, plain words, our own sentences. No marketing words («excepcional», «único»). Grape local names keep their accents.

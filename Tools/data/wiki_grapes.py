@@ -29,11 +29,21 @@ def get(params):
             time.sleep(4 + 4 * attempt)
 
 
+OVERRIDES = {"ycoden-daute-isora": "Ycoden-Daute-Isora", "sierras-de-malaga": "Sierras de Málaga", "ribera-del-jucar": "Ribera del Júcar"}
+
+
+def fold(s):
+    import unicodedata
+    return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode().lower()
+
+
 def article(place):
+    if place["id"] in OVERRIDES: return OVERRIDES[place["id"]]
     name = place["name"].split(" / ")[0]
+    key = fold(re.split(r"[ -]", name.replace("Txakoli de ", ""))[0])
     for q in (f'intitle:"{name}" denominación de origen vino', f'"{name}" denominación de origen vino'):
         hits = get({"action": "query", "list": "search", "srsearch": q, "srlimit": 5})["query"]["search"]
-        hits = [h for h in hits if not h["title"].startswith(("Anexo:", "Vinos de España"))]
+        hits = [h for h in hits if not h["title"].startswith(("Anexo:", "Vinos de España")) and (key in fold(h["title"]) or "chacol" in fold(h["title"]))]
         if hits: return hits[0]["title"]
     return None
 
@@ -50,7 +60,11 @@ def main():
             r = get({"action": "query", "prop": "extracts|revisions|info", "explaintext": 1, "rvprop": "ids|timestamp", "inprop": "url", "titles": title, "redirects": 1})
             page = r["query"]["pages"][0]
             text = page.get("extract", "")
-            paras = [s.strip() for s in re.split(r"\n+", text) if GRAPE.search(s) and len(s.strip()) > 40]
+            paras, in_sec = [], False
+            for s in (x.strip() for x in re.split(r"\n+", text)):
+                if s.startswith("=="):
+                    in_sec = bool(re.search(r"variedad|uva|cepa", s, re.I)); continue
+                if in_sec or (GRAPE.search(s) and len(s) > 40): paras.append(s)
             keep, n = [], 0
             for s in paras:
                 if n > 2500: break
