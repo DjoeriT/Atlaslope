@@ -49,6 +49,41 @@
     "cite": [
      "montilla-moriles-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to golden, dry to sweet, light, with Pedro Ximénez character. Fino: straw to gold, dry, flor-aged. Oloroso: mahogany, full and velvety. Pedro Ximénez: amber to deep mahogany, dense, raisined, sweet.",
+    "cite": [
+     "montilla-moriles-doc:p2",
+     "montilla-moriles-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Fino",
+      "text": "Straw to gold, dry, biological ageing, slightly bitter, light and fragrant."
+     },
+     {
+      "name": "Amontillado",
+      "text": "Amber to old gold, pungent, nutty, dry or nearly off-dry."
+     },
+     {
+      "name": "Oloroso",
+      "text": "Mahogany, aromatic, dry or slightly off-dry, full and velvety."
+     },
+     {
+      "name": "Pedro Ximénez",
+      "text": "Sweet liqueur wine, amber to deep mahogany, dense, raisined notes."
+     }
+    ],
+    "cite": [
+     "montilla-moriles-doc:p2",
+     "montilla-moriles-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -115,6 +150,33 @@
     "cite": [
      "granada-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Reds: bright cherry to deep red; red berries; full body, high astringency. Whites: greenish yellow to straw; fruity, intense aromas. Rosés: pale pink to light red; medium to intense fruit.",
+    "cite": [
+     "granada-doc:p1",
+     "granada-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de uvas sobremaduradas",
+      "text": "White, rosé or red wine made from overripe grapes."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "White, rosé or red sparkling wine with persistent foam."
+     }
+    ],
+    "cite": [
+     "granada-doc:p2",
+     "granada-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -179,6 +241,42 @@
     "cite": [
      "condado-de-huelva-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: bright pale straw with green tints to deeper yellow; fresh fruit and wild herbs; light yet intense. Reds: cherry with garnet rims; powerful, elegant aromas; tasty, concentrated.",
+    "cite": [
+     "condado-de-huelva-doc:p1",
+     "condado-de-huelva-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Condado Viejo",
+      "text": "Liqueur wine from white varieties, amber to mahogany, toasted almond aroma."
+     },
+     {
+      "name": "Generoso",
+      "text": "Dry, aged biologically or oxidatively; pale yellow to dark mahogany, nutty."
+     },
+     {
+      "name": "Mistela",
+      "text": "Dark liqueur wine with macerated fruit aromas, creamy on the palate."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Red with dark cherry colour, mineral and complex aroma; fleshy and powerful."
+     }
+    ],
+    "cite": [
+     "condado-de-huelva-doc:p2",
+     "condado-de-huelva-doc:p3",
+     "condado-de-huelva-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -238,6 +336,39 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Dry white: yellow to amber, penetrating, powerful aroma. Liqueur wines: intense nose, integrated alcohol; sweet ones unctuous and persistent. Raisined-grape wines: pale yellow to old gold; concentrated, acid-sweet balance.",
+    "cite": [
+     "malaga-doc:p1",
+     "malaga-doc:p2",
+     "malaga-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dulce Natural",
+      "text": "Sweet liqueur wine showing varietal, fermentation and fortification aromas."
+     },
+     {
+      "name": "Vino de uvas pasificadas",
+      "text": "Sweet wine from raisined grapes, pale yellow to old gold, very unctuous."
+     },
+     {
+      "name": "Vino Naturalmente Dulce",
+      "text": "Sweet overripe-grape wine, fresh, lively, unctuous and persistent."
+     }
+    ],
+    "cite": [
+     "malaga-doc:p2",
+     "malaga-doc:p3",
+     "malaga-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -332,6 +463,21 @@
     "cite": [
      "sierras-de-malaga-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Reds: violet-red to ruby, tile tones with ageing; fruity, earthy; structured, ripe tannins. Whites: straw with green glints to gold; fruity, fresh when young, unctuous in oak. Rosés: pink to reddish, fruity, floral.",
+    "cite": [
+     "sierras-de-malaga-doc:p1",
+     "sierras-de-malaga-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -384,6 +530,47 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Reds: bright ruby to deep cherry; ripe fruit, vanilla and coffee when oaked; fleshy, full-bodied, velvety. Whites: very pale, fruity, dry or off-dry. Flor de Lebrija: straw yellow, almond, dry.",
+    "cite": [
+     "lebrija-doc:p1",
+     "lebrija-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Flor de Lebrija",
+      "text": "Dry generoso aged under flor; straw yellow, almond aroma, light on the palate."
+     },
+     {
+      "name": "Lebrija Old Vino Seco",
+      "text": "Generoso in amber to mahogany, with a walnut aroma."
+     },
+     {
+      "name": "Lebrija Old Dulce",
+      "text": "Generoso de licor, amber to dark mahogany, full-bodied, pungent, muted aroma."
+     },
+     {
+      "name": "Dulce natural",
+      "text": "Gold to mahogany; honey, caramel and raisin aromas; velvety, glyceric."
+     }
+    ],
+    "cite": [
+     "lebrija-doc:p2",
+     "lebrija-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [
+     {
+      "name": "Bodegas González Palacios"
+     }
+    ],
+    "cite": [
+     "lebrija-wikinotes"
+    ]
    }
   },
   {
@@ -437,6 +624,25 @@
     "cite": [
      "jerez-doc:p3"
     ]
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Fino, Amontillado, Oloroso, Palo Cortado",
+      "text": "Vino Generoso type, dry: no more than 5 g/l reducing sugars."
+     }
+    ],
+    "cite": [
+     "jerez-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -479,6 +685,27 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Pale gold to straw yellow; aroma and flavour of biological ageing under flor.",
+    "cite": [
+     "manzanilla-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Manzanilla",
+      "text": "Generoso aged wholly under flor, only in Sanlúcar de Barrameda cellars."
+     }
+    ],
+    "cite": [
+     "manzanilla-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   }

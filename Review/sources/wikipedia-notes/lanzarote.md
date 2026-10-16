@@ -1,0 +1,23 @@
+# lanzarote: Wikipedia (es) notes
+
+Article: «Lanzarote (vino)», https://es.wikipedia.org/wiki/Lanzarote_(vino), revision 171888370 of 2026-02-04. Spanish, quoted as published. Cite as «Wikipedia (es), Lanzarote (vino), revision 171888370».
+
+## Paragraphs naming producers or wines
+
+Además, el suelo de Lanzarote es volcánico, con multitud de conos de escasa altura que se reparten por todo su territorio. La capa volcánica, que en el Norte tiene un grosor de entre veinte y treinta centímetros, suele llegar a los dos metros en la zona central de la isla.​ Hay extensas zonas de Lanzarote cubiertas por coladas de árida lava negra o roja solidificada, no apta para el cultivo; pero en los bordes de las coladas de lava hay terrenos con lapilli o ceniza volcánica, conocida como picón o rofe. Esta particularidad ha permitido a los agricultores superar las limitaciones derivadas de la escasez de lluvias mediante un procedimiento de cultivo absolutamente singular, que aprovecha las excelentes condiciones para la viticultura del terreno de la isla.​
+
+Es en esta vega donde se desarrolló por primera vez el método de cultivo propio de los viñedos de Lanzarote, que se considera único en el mundo.​ Esta circunstancia ha hecho que estas plantaciones sean conocidas, por extensión, como «gerias».​ Así son denominados los pagos de la zona por Pascual Madoz en 1849.​
+
+## Paragraphs about planted area
+
+Lanzarote es una zona vinícola con denominación de origen (DO), situada en la isla de Lanzarote de las Islas Canarias (España). Obtuvo la calificación de denominación de origen en el año 1993.​ Cubre una superficie total de cultivo de 1900 ha, y su producción ronda el millón novecientas mil botellas anuales (2010).​
+
+Además, el suelo de Lanzarote es volcánico, con multitud de conos de escasa altura que se reparten por todo su territorio. La capa volcánica, que en el Norte tiene un grosor de entre veinte y treinta centímetros, suele llegar a los dos metros en la zona central de la isla.​ Hay extensas zonas de Lanzarote cubiertas por coladas de árida lava negra o roja solidificada, no apta para el cultivo; pero en los bordes de las coladas de lava hay terrenos con lapilli o ceniza volcánica, conocida como picón o rofe. Esta particularidad ha permitido a los agricultores superar las limitaciones derivadas de la escasez de lluvias mediante un procedimiento de cultivo absolutamente singular, que aprovecha las excelentes condiciones para la viticultura del terreno de la isla.​
+
+Para plantar las vides, se cavan grandes hoyos en la capa volcánica, en forma de cono invertido, de modo que puedan acceder a la tierra vegetal. Una vez plantadas, el hoyo se recubre de nuevo con picón. El poroso lapilli, de gran higroscopicidad, tiene la cualidad de retener la humedad del ambiente durante la noche y filtrarla hacia el terreno que se encuentra debajo, al tiempo que evita la evaporación durante el día, ya que rompe la capilaridad.​ Un estrato calizo inferior impide que el agua continúe hacia el subsuelo.​ De esta forma, los vientos alisios condensan la humedad del océano sobre la ceniza volcánica, que actúa a modo de esponja que retiene el rocío y lo transmite a las parras en un proceso de ósmosis.
+
+Los viñedos se extienden por los siete municipios de la isla de Lanzarote: Arrecife, San Bartolomé, Tías, Tinajo, Haría, Yaiza y Teguise, si bien destacan como principales parajes vitivinícolas los de La Geria, Tías-Masdache, San Bartolomé, Tinajo y Ye-Lajares.​ Salvo el último, que se encuentra al norte de la isla, todos ellos se concentran en la zona central y meridional alrededor del parque natural de La Geria. De las más de 3.300 ha dedicadas en la isla al cultivo de la vid, 1.979 corresponden a vinos de la Denominación de origen (2009).​
+
+El grosor del enarenado de lapilli en cada zona determina la profundidad de los hoyos o, en su caso, la ausencia de estos o la excavación de zanjas como forma alternativa de cultivo. A mayor profundidad, la distancia entre cepas será mayor. La separación entre éstas en las zonas protegidas por la Denominación de Origen está regulada, y el número de cepas nunca supera las 2000 por ha, llegando en ocasiones solamente a unas 200.​ El resultado es un rendimiento excepcionalmente bajo, con una producción de entre 1.000 y 1.500 kg de uva por hectárea.
+
+Es en esta vega donde se desarrolló por primera vez el método de cultivo propio de los viñedos de Lanzarote, que se considera único en el mundo.​ Esta circunstancia ha hecho que estas plantaciones sean conocidas, por extensión, como «gerias».​ Así son denominados los pagos de la zona por Pascual Madoz en 1849.​

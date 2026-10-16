@@ -35,6 +35,8 @@ They need `assets/data.js` and `assets/maplibre-gl.*` from the project files to 
 Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 quizzed places (`content/facts/<region>.json`, sources in
 `content/sources.json`, checked by `checkSheets` in Vitest), measured altitude and Köppen rows (`data/place-measures.json`), 149 credited
 photos for 77 places (`public/photos/`, `data/photos.json`), grapes in search. The "Report a mistake" link is built but hidden (owner, no address).
+Release 6, tastes and producers (planned as 4.1, issue #27): How it tastes (76 sheets), Famous styles (75) and Famous producers (6, from
+English Wikipedia by the owner's card, Lebrija from Spanish) rows on the fact sheet.
 
 ## 5. Release and deployment state
 Live: release 5, the world background map (PR #26; tag `release-5` on 25a951e, 16 Oct 20:10Z, publish run 38959982676, live map check
@@ -48,17 +50,17 @@ session on his Mac also sees his thread messages and started a second publish ru
 
 ## 6. In flight
 - Restart, data step, releases 3, 4 and 5 (world background map) are done. Release 4 agents used 0.84 M tokens against a 0.5 to 0.7 M estimate (four writer
-  batches over budget, plus follow-ups) [V, spend log]. Next: release 4.1 (owner cards 16 Oct 19:37Z): a tasting row and famous styles from
-  the official documents, up to three famous producers or wines from Spanish Wikipedia, and planted-area main grapes for the 30 sheets without
-  one (the ministry's host refuses GitHub Actions; try from the Mac). Then the quiz (planned as release 5, now numbered 7). The owner's go (16 Oct 12:51Z) covers the
-  restart, the data step, releases 3 and 4 and the quiz (now release 7) [O]; 4.1 (now release 6) came from his cards at 19:37Z.
-  The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
+  batches over budget, plus follow-ups) [V, spend log]. Release 6 (planned as 4.1, owner cards 16 Oct 19:37Z): tastes, famous styles
+  and producers, built (PR #31); planted-area main grapes moved to issue #29, more producers to #30. Then the quiz (planned as release 5,
+  now numbered 7). The owner's go (16 Oct 12:51Z) covers the restart, the data step, releases 3 and 4 and the quiz (now release 7) [O];
+  4.1 (now release 6) came from his cards at 19:37Z. The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
-- 30 of 79 fact sheets have no main grape (no source names one); Jerez and Manzanilla have no photos.
+- 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Jerez and Manzanilla have no photos.
+- Famous producers on only 6 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 

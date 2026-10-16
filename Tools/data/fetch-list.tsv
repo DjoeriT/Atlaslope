@@ -423,3 +423,8 @@ rioja-pliego-riojawine	https://riojawine.com/wp-content/uploads/2023/07/pliego-d
 rioja-pliego-mapa-modificado	https://mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/pliegodecondicionesdocariojamodificado_tcm30-680343.pdf	pdf
 rioja-documento-unico	https://mapa.gob.es/gl/alimentacion/temas/calidad-diferenciada/documento_unico_doca_rioja_tcm37-655340.pdf	pdf
 # retry after TLS diagnostic
+# release 4.1 (#27): MAPA refuses GitHub Actions, so try the Wayback Machine's copies of its DOP reports, and list what it holds
+wayback-mapa-informe-dop-2023-2024	https://web.archive.org/web/2025id_/https://www.mapa.gob.es/es/dam/jcr:2a49b727-24c9-4d11-aec6-3a6f44dc3b9e/Informe%20DOPs%202023_2024.pdf	pdf
+wayback-mapa-informe-dop-2022-2023	https://web.archive.org/web/2024id_/https://www.mapa.gob.es/ca/alimentacion/temas/calidad-diferenciada/informedops2022-2023_tcm34-690956.pdf	pdf
+wayback-cdx-mapa-informe-dop.json	https://web.archive.org/cdx/search/cdx?url=mapa.gob.es&matchType=domain&filter=original:.*%5BIi%5Dnforme.%3F%5BDd%5D%5BOo%5D%5BPp%5D.*&output=json&limit=300&collapse=urlkey	text
+wayback-cdx-mapa-datos-dop.json	https://web.archive.org/cdx/search/cdx?url=mapa.gob.es&matchType=domain&filter=original:.*%5BDd%5Datos.*%5BDd%5D%5BOo%5D%5BPp%5D.*&output=json&limit=300&collapse=urlkey	text

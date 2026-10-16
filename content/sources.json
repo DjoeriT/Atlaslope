@@ -17,6 +17,12 @@
   "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
   "date": "2026-07-02"
  },
+ "rioja-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)",
+  "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf",
+  "date": "2023-06-07"
+ },
  "abona-doc": {
   "kind": "official",
   "title": "Documento único PDO-ES-A0975 (EU single document, Abona)",
@@ -917,10 +923,46 @@
   "url": "https://es.wikipedia.org/w/index.php?oldid=169684344",
   "date": "2025-09-26"
  },
- "rioja-pliego": {
-  "kind": "official",
-  "title": "Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)",
-  "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf",
-  "date": "2023-06-07"
+ "lebrija-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Lebrija (vino)», revision 173879176",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173879176",
+  "date": "2026-06-10"
+ },
+ "alella-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Alella (DO)», revision 1320706056",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1320706056",
+  "date": "2025-11-06"
+ },
+ "bierzo-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Bierzo (DO)», revision 1369103876",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1369103876",
+  "date": "2026-08-12"
+ },
+ "penedes-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Penedès DOP», revision 1353610745",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1353610745",
+  "date": "2026-05-11"
+ },
+ "ribera-del-duero-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Ribera del Duero», revision 1304720811",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1304720811",
+  "date": "2025-08-07"
+ },
+ "rioja-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Rioja DOCa», revision 1368867539",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1368867539",
+  "date": "2026-08-11"
+ },
+ "rueda-enwiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (en), «Rueda DO», revision 1231090800",
+  "url": "https://en.wikipedia.org/w/index.php?oldid=1231090800",
+  "date": "2024-06-26"
  }
 }

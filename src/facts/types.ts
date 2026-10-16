@@ -31,6 +31,26 @@ export interface Sheet {
   climate: TextRow;
   soil: TextRow;
   altitude?: TextRow;
+  /** Release 4.1: colour, nose and palate from the official document's wine descriptions. */
+  tastes?: TextRow;
+  /** Release 4.1: the named styles the official document defines (Crianza, Fino, Brut Nature...), at most four. */
+  famous?: { styles: FamousStyle[]; cite: Cite[] };
+  /** Release 4.1: up to three producers or wines that a Wikipedia article about the place singles out. */
+  producers?: { items: Producer[]; cite: Cite[] };
+}
+
+export interface FamousStyle {
+  /** The document's own name for the style, e.g. «Gran Reserva». */
+  name: string;
+  /** At most 15 words on what makes it that style. */
+  text: string;
+}
+
+export interface Producer {
+  /** The producer (bodega) as the article names it. */
+  name: string;
+  /** A wine the article names for it, when it does. */
+  wine?: string;
 }
 
 export interface SheetFile {

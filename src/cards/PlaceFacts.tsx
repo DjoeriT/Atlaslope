@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { altitudeText, grapeLabel, koppenText, sourceRefs, sources, type Cite, type Measures, type Photo, type Sheet } from '../facts';
+import { altitudeText, grapeLabel, tasteLines, koppenText, sourceRefs, sources, type Cite, type Measures, type Photo, type Sheet } from '../facts';
 import { strings } from '../strings';
 
 const t = strings.facts;
@@ -53,7 +53,8 @@ interface FactRowsProps {
   measures?: Measures;
 }
 
-/** The rows after Level: main and other grapes, styles, written climate, measured climate, altitude, soil. Empty rows are left out. */
+/** The rows after Level: main and other grapes, styles, famous styles, how it tastes, written climate, measured climate, altitude, soil,
+ * famous producers. Empty rows are left out. */
 export function FactRows({ sheet, measures }: FactRowsProps) {
   const main = sheet?.grapes.main ?? [];
   const others = sheet?.grapes.others ?? [];
@@ -62,11 +63,24 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
   const climate = sheet?.climate.text.trim();
   const soil = sheet?.soil.text.trim();
   const writtenAltitude = sheet?.altitude?.text.trim();
+  const tastes = sheet?.tastes?.text.trim();
+  const famous = sheet?.famous?.styles ?? [];
+  const producers = sheet?.producers?.items ?? [];
   return (
     <>
       {main.length > 0 && <Row label={t.mainGrapes} cites={sheet!.grapes.cite}>{main.map(grapeLabel).join(', ')}</Row>}
       {others.length > 0 && <Row label={sheet!.grapes.othersPartial ? t.otherGrapesPartial : t.otherGrapes} cites={sheet!.grapes.othersCite}><OtherGrapes names={others} /></Row>}
       {styles && <Row label={t.styles} cites={sheet!.styles.cite}>{styles}</Row>}
+      {famous.length > 0 && (
+        <Row label={t.famousStyles} cites={sheet!.famous!.cite}>
+          <ul className="named">{famous.map((f) => <li key={f.name}><strong>{f.name}</strong>{f.text.trim() && <>: {f.text.trim()}</>}</li>)}</ul>
+        </Row>
+      )}
+      {tastes && (
+        <Row label={t.tastes} cites={sheet!.tastes!.cite}>
+          <ul className="named">{tasteLines(tastes).map((l, i) => <li key={i}>{l.label && <><strong>{l.label}</strong>: </>}{l.text}</li>)}</ul>
+        </Row>
+      )}
       {climate && <Row label={t.climate} cites={sheet!.climate.cite}>{climate}</Row>}
       {measures && measures.koppen.length > 0 && <Row label={t.koppen} cites={['koppen']}>{koppenText(measures.koppen)}</Row>}
       {(writtenAltitude || measures) && (
@@ -76,6 +90,11 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
         </Row>
       )}
       {soil && <Row label={t.soil} cites={sheet!.soil.cite}>{soil}</Row>}
+      {producers.length > 0 && (
+        <Row label={t.producers} cites={sheet!.producers!.cite}>
+          {producers.map((p) => (p.wine ? `${p.name} (${p.wine})` : p.name)).join(', ')}
+        </Row>
+      )}
     </>
   );
 }

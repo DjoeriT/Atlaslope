@@ -8,7 +8,10 @@ const real: Place[] = JSON.parse(readFileSync('data/places.json', 'utf8')).place
 const place = (id: string, region: string, quiz: Place['quiz'] = 'core'): Place =>
   ({ id, name: id, kind: 'DO', level: 'place', parent: 'spain', region, quiz });
 const places = [place('toro', 'castilla-y-leon'), place('rueda', 'castilla-y-leon'), place('rioja-x', 'rioja'), place('cava', 'rioja', 'none')];
-const src: Sources = { 'toro-doc': { title: 'Toro document', url: 'https://example.org/toro', date: '2014-01-01', kind: 'official' } };
+const src: Sources = {
+  'toro-doc': { title: 'Toro document', url: 'https://example.org/toro', date: '2014-01-01', kind: 'official' },
+  'toro-wiki': { title: 'Wikipedia (es), «Toro (vino)», revision 1', url: 'https://example.org/wiki', date: '2026-10-16', kind: 'wikipedia' },
+};
 
 const sheet = (id: string, edit: (s: Sheet) => void = () => {}): Sheet => {
   const s: Sheet = {
@@ -64,6 +67,23 @@ describe('checkSheets', () => {
     expect(toro((s) => { s.why.text = '  '; })).toEqual(['toro, the why line is empty.']);
     expect(toro((s) => { s.why.text = Array(26).fill('word').join(' '); })).toEqual(['toro, the why line is 26 words; the limit is 25.']);
     expect(toro((s) => { s.why.text = Array(25).fill('word').join(' '); })).toEqual([]);
+  });
+  it('checks the release 4.1 rows: how it tastes, famous styles, producers', () => {
+    const rows = (s: Sheet) => {
+      s.tastes = { text: 'Deep cherry red; ripe black fruit; warm and tannic.', cite: ['toro-doc:p3'] };
+      s.famous = { styles: [{ name: 'Crianza', text: 'At least two years old, six months in oak.' }], cite: ['toro-doc:p3'] };
+      s.producers = { items: [{ name: 'Bodega A', wine: 'Wine A' }, { name: 'Bodega B' }], cite: ['toro-wiki'] };
+    };
+    expect(toro(rows)).toEqual([]);
+    expect(toro((s) => { rows(s); s.tastes!.cite = []; })).toEqual(['toro, how it tastes has no source.']);
+    expect(toro((s) => { rows(s); s.tastes!.text = Array(41).fill('word').join(' '); })).toEqual(['toro, how it tastes is 41 words; the limit is 40.']);
+    expect(toro((s) => { rows(s); s.famous!.styles = Array(5).fill({ name: 'Joven', text: '' }); })).toEqual(['toro, famous styles has 5; the limit is 4.']);
+    expect(toro((s) => { rows(s); s.famous!.cite = []; })).toEqual(['toro, famous styles has no source.']);
+    expect(toro((s) => { rows(s); s.famous!.styles[0].text = Array(16).fill('word').join(' '); })).toEqual(['toro, famous styles: Crianza is 16 words; the limit is 15.']);
+    expect(toro((s) => { rows(s); s.producers!.items = Array(4).fill({ name: 'Bodega' }); })).toEqual(['toro, producers has 4; the limit is 3.']);
+    expect(toro((s) => { rows(s); s.producers!.cite = ['toro-doc:p3']; })).toEqual(['toro, producers: source "toro-doc" is not a Wikipedia article.']);
+    expect(toro((s) => { rows(s); s.producers!.items = [{ name: ' ' }]; })).toEqual(['toro, producers has a producer with no name.']);
+    expect(toro((s) => { rows(s); s.tastes = { text: '', cite: [] }; s.famous = { styles: [], cite: [] }; s.producers = { items: [], cite: [] }; })).toEqual([]);
   });
   it('rejects a region file with sheets for some of its quizzed places but not all', () => {
     expect(checkSheets([file('castilla-y-leon', sheet('toro'))], places, src)).toEqual(['castilla-y-leon has sheets for some places but not for rueda.']);

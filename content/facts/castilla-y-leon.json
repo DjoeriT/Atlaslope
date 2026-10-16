@@ -57,6 +57,21 @@
     "cite": [
      "bierzo-doc:p3"
     ]
+   },
+   "tastes": {
+    "text": "Whites: greenish yellow; fruity or floral, very fresh. Rosés: red-pink; red fruit, fresh. Reds: red-violet to ruby; fruity, floral, mineral, with oak when aged; silky, very fresh.",
+    "cite": [
+     "bierzo-doc:p1",
+     "bierzo-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -116,6 +131,29 @@
     "cite": [
      "leon-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Whites: balanced, fresh, complex. Rosés (Prieto Picudo): very aromatic, fresh. Reds: strong colour; red and black fruit; fleshy, full, lightly astringent, persistent. Aged reds: more complex, less astringent.",
+    "cite": [
+     "leon-doc:p1",
+     "leon-doc:p2",
+     "leon-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto envejecido",
+      "text": "Prieto Picudo with more complexity, less astringency, tannic, great mouthfeel."
+     }
+    ],
+    "cite": [
+     "leon-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -168,6 +206,34 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: straw yellow; fruity, tasty, balanced. Rosés: strawberry red; wild berries. Reds: intense red; wild fruit, very good structure. Aged wines: wood and fruit aromas; reds are dry.",
+    "cite": [
+     "arlanza-doc:p1",
+     "arlanza-doc:p2",
+     "arlanza-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto envejecido",
+      "text": "Cherry red softened by ageing; fruit-and-wood aromas; bears long oak ageing well."
+     },
+     {
+      "name": "Rosado envejecido",
+      "text": "Red with ageing tones; clean, balanced wood and fruit aromas."
+     }
+    ],
+    "cite": [
+     "arlanza-doc:p2",
+     "arlanza-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -224,6 +290,28 @@
     "cite": [
      "valles-de-benavente-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow; very fruity with aniseed notes; medium-high body. Rosés: picota and cherry; red fruit, lively, slight sparkle. Reds: bluish tones; red ripe fruit; high structure. Aged: wood, fruit remains.",
+    "cite": [
+     "valles-de-benavente-doc:p1",
+     "valles-de-benavente-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza, Reserva, Gran Reserva",
+      "text": "Aged red; more complex, wood appears, fruit stays."
+     }
+    ],
+    "cite": [
+     "valles-de-benavente-doc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -281,6 +369,33 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Whites: clear yellow; fruity, fresh, light. Rosés: strawberry to cherry; fresh or ripe fruit. Reds: picota to vermilion; wild berries, wood when aged; medium body. Sweet wines: same profile, with more aroma and volume.",
+    "cite": [
+     "cigales-doc:p1",
+     "cigales-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino dulce",
+      "text": "White, rosé or red; aromas and volume boosted by sugar."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "White or rosé sparkling; fruity, clean, broad flavours."
+     }
+    ],
+    "cite": [
+     "cigales-doc:p2",
+     "cigales-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -331,6 +446,40 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Reds: vivid colour, deep; fruity and intense when young, well structured. Aged reds: blue tones that last; very complex, fruit and wood; powerful yet elegant. Rosés: vivid colours, fruity nose; refreshing, light.",
+    "cite": [
+     "ribera-del-duero-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto envejecido",
+      "text": "Vivid colour, lasting blue tones; complex fruit and wood; powerful yet elegant."
+     }
+    ],
+    "cite": [
+     "ribera-del-duero-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [
+     {
+      "name": "Alejandro Fernández",
+      "wine": "Tinto Pesquera"
+     },
+     {
+      "name": "Viña Sastre"
+     },
+     {
+      "name": "Vega Sicilia"
+     }
+    ],
+    "cite": [
+     "ribera-del-duero-enwiki"
+    ]
    }
   },
   {
@@ -378,6 +527,28 @@
      "valtiendas-doc:p4",
      "valtiendas-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Rosés: cherry pink; fruity with floral touches; medium structure. Young reds: intense red; frank, intense aromas; tasty, good structure. Aged reds: wood well integrated; mineral tones in all reds.",
+    "cite": [
+     "valtiendas-doc:p2",
+     "valtiendas-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza, Reserva, Gran Reserva",
+      "text": "Intense red with ageing tones; well-integrated wood."
+     }
+    ],
+    "cite": [
+     "valtiendas-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -434,6 +605,28 @@
     "cite": [
      "toro-doc:p3"
     ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow; fruity, tasty, balanced. Rosés: strawberry to raspberry red; wild berries. Reds: cherry-picota; red and wild fruit; structured, tannic, ripe fruit, lower acidity; barrel tones when aged.",
+    "cite": [
+     "toro-doc:p1",
+     "toro-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Fermentado en barrica",
+      "text": "White fermented in barrel; fruit mixed with smoky, toasty wood tones."
+     }
+    ],
+    "cite": [
+     "toro-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -497,6 +690,32 @@
     "cite": [
      "tierra-del-vino-de-zamora-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Whites: ripe-fruit primary aromas; barrel-fermented ones add smoke and toast. Claretes and rosés: very aromatic, tasty, balanced. Reds: intense colour, high tannin, much structure, long-lived.",
+    "cite": [
+     "tierra-del-vino-de-zamora-doc:p1",
+     "tierra-del-vino-de-zamora-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Clarete",
+      "text": "Very aromatic, tasty and balanced."
+     },
+     {
+      "name": "Crianza, Reserva, Gran Reserva",
+      "text": "Red of great colour intensity, tannic and structured; very long-lived."
+     }
+    ],
+    "cite": [
+     "tierra-del-vino-de-zamora-doc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -577,6 +796,42 @@
     "cite": [
      "rueda-doc:p15"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to amber, gold or green tones; fruit, floral, herbal; fresh, medium to full body. Rosés: strawberry to onion-skin; red fruit. Reds: ruby to picota; black and red fruit; oak-aged add yeast and bakery notes.",
+    "cite": [
+     "rueda-doc:p5",
+     "rueda-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dorado",
+      "text": "Golden fortified wine; yeast, toast, smoke, spice and dried nuts."
+     },
+     {
+      "name": "Pálido",
+      "text": "Straw to pale gold fortified wine from biological ageing; almonds, yeast."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "White or rosé sparkling; fine bubble, floral and fruity, bakery notes."
+     }
+    ],
+    "cite": [
+     "rueda-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [
+     {
+      "name": "Bodega Martinsancho"
+     }
+    ],
+    "cite": [
+     "rueda-enwiki"
+    ]
    }
   },
   {
@@ -647,6 +902,32 @@
     "cite": [
      "arribes-doc:p12"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow with grey to gold tints; fruity or floral, sometimes mineral. Rosés: pale pink to light red; fruity. Reds: violet to purple red; fruity or mineral; aged reds show wood.",
+    "cite": [
+     "arribes-doc:p5",
+     "arribes-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino naranja",
+      "text": "Amber orange wine; fruity or floral, stone fruit and citrus, fuller body."
+     },
+     {
+      "name": "Fermentado en Barrica",
+      "text": "White fermented in barrel; smoky, toasty notes with fruit; well-integrated oak."
+     }
+    ],
+    "cite": [
+     "arribes-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -695,6 +976,28 @@
     "cite": [
      "sierra-de-salamanca-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow, greenish; green apple; medium-high body, tasty, lively. Rosés: strawberry to raspberry; blackberry, redcurrant. Reds: picota, violet tints; wild fruit, undergrowth herbs, mineral; long-lived.",
+    "cite": [
+     "sierra-de-salamanca-doc:p1",
+     "sierra-de-salamanca-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto envejecido en barrica",
+      "text": "Red aged in barrel; long-lived, very suited to keeping."
+     }
+    ],
+    "cite": [
+     "sierra-de-salamanca-doc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -758,6 +1061,29 @@
      "cebreros-doc:p9",
      "cebreros-doc:p11"
     ]
+   },
+   "tastes": {
+    "text": "Whites: straw to golden yellow; fruity, tasty, balanced. Rosés: pale pink to raspberry; red and black fruit. Reds: picota red, violet rims; red and black fruit, dry. Barrel-aged: wood, toast, spice.",
+    "cite": [
+     "cebreros-doc:p3",
+     "cebreros-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Envejecido en barrica",
+      "text": "Barrel-aged; riper fruit with wood, toast and spice; softer, more persistent."
+     }
+    ],
+    "cite": [
+     "cebreros-doc:p3",
+     "cebreros-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]

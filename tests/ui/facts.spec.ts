@@ -103,3 +103,14 @@ test('a long grape list opens and closes without losing focus', async ({ page })
   await expect(more).toBeFocused();
   await expect(more).toHaveText('Show fewer');
 });
+
+test('Rioja shows its famous styles and how it tastes, each with a source', async ({ page }) => {
+  await open(page, '#place=rioja');
+  const card = page.locator('.card');
+  const famous = card.locator('dt', { hasText: 'Famous styles' });
+  await expect(famous).toBeVisible();
+  await expect(card.locator('dt:has-text("Famous styles") + dd li strong', { hasText: 'Gran Reserva' })).toBeVisible();
+  const tastes = card.locator('dt:has-text("How it tastes") + dd');
+  await expect(tastes.locator('li strong', { hasText: 'Reds' })).toBeVisible();
+  await expect(tastes.locator('.src a').first()).toHaveAttribute('target', '_blank');
+});
