@@ -12,37 +12,26 @@
       "grapes": {
         "main": [
           {
-            "local": "Cabernet Sauvignon"
+            "local": "Garnacha Tinta"
           },
           {
             "local": "Tempranillo"
           },
           {
             "local": "Moscatel Grano Menudo"
-          },
-          {
-            "local": "Merlot"
-          },
-          {
-            "local": "Macabeo"
-          },
-          {
-            "local": "Graciano"
-          },
-          {
-            "local": "Garnacha Tinta"
-          },
-          {
-            "local": "Garnacha Blanca"
-          },
-          {
-            "local": "Chardonnay"
           }
         ],
         "cite": [
+          "navarra-wiki",
           "navarra-doc:p8"
         ],
         "others": [
+          "Cabernet Sauvignon",
+          "Merlot",
+          "Macabeo",
+          "Graciano",
+          "Garnacha Blanca",
+          "Chardonnay",
           "Alarije",
           "Mazuela",
           "Pinot Noir",
@@ -89,54 +78,23 @@
         ]
       },
       "grapes": {
-        "main": [
-          {
-            "local": "Cabernet Sauvignon"
-          },
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Syrah"
-          },
-          {
-            "local": "Sauvignon Blanco"
-          },
-          {
-            "local": "Riesling"
-          },
-          {
-            "local": "Pinot Noir"
-          },
-          {
-            "local": "Parraleta"
-          },
-          {
-            "local": "Moristel"
-          },
-          {
-            "local": "Merlot"
-          },
-          {
-            "local": "Macabeo"
-          },
-          {
-            "local": "Gewürztraminer"
-          },
-          {
-            "local": "Garnacha Tinta"
-          },
-          {
-            "local": "Garnacha Blanca"
-          },
-          {
-            "local": "Chardonnay"
-          }
-        ],
-        "cite": [
-          "somontano-doc:p6"
-        ],
+        "main": [],
+        "cite": [],
         "others": [
+          "Cabernet Sauvignon",
+          "Tempranillo",
+          "Syrah",
+          "Sauvignon Blanco",
+          "Riesling",
+          "Pinot Noir",
+          "Parraleta",
+          "Moristel",
+          "Merlot",
+          "Macabeo",
+          "Gewürztraminer",
+          "Garnacha Tinta",
+          "Garnacha Blanca",
+          "Chardonnay",
           "Alcañón"
         ],
         "othersCite": [
@@ -179,45 +137,20 @@
         ]
       },
       "grapes": {
-        "main": [
-          {
-            "local": "Verdejo"
-          },
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Syrah"
-          },
-          {
-            "local": "Moscatel Grano Menudo"
-          },
-          {
-            "local": "Moscatel de Alejandría"
-          },
-          {
-            "local": "Mazuela"
-          },
-          {
-            "local": "Macabeo"
-          },
-          {
-            "local": "Garnacha Tintorera"
-          },
-          {
-            "local": "Garnacha Tinta"
-          },
-          {
-            "local": "Garnacha Blanca"
-          },
-          {
-            "local": "Chardonnay"
-          }
-        ],
-        "cite": [
-          "campo-de-borja-doc:p6"
-        ],
+        "main": [],
+        "cite": [],
         "others": [
+          "Verdejo",
+          "Tempranillo",
+          "Syrah",
+          "Moscatel Grano Menudo",
+          "Moscatel de Alejandría",
+          "Mazuela",
+          "Macabeo",
+          "Garnacha Tintorera",
+          "Garnacha Tinta",
+          "Garnacha Blanca",
+          "Chardonnay",
           "Cabernet Sauvignon",
           "Merlot",
           "Sauvignon Blanco"
@@ -318,34 +251,23 @@
       "grapes": {
         "main": [
           {
-            "local": "Cabernet Sauvignon"
-          },
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Syrah"
-          },
-          {
-            "local": "Merlot"
-          },
-          {
-            "local": "Mazuela"
-          },
-          {
-            "local": "Macabeo"
-          },
-          {
             "local": "Garnacha Tinta"
           },
           {
-            "local": "Chardonnay"
+            "local": "Viura",
+            "grape": "Macabeo"
           }
         ],
         "cite": [
-          "carinena-doc:p7"
+          "carinena-wiki"
         ],
         "others": [
+          "Cabernet Sauvignon",
+          "Tempranillo",
+          "Syrah",
+          "Merlot",
+          "Mazuela",
+          "Chardonnay",
           "Garnacha Blanca",
           "Monastrell",
           "Moristel",
@@ -395,28 +317,20 @@
       "grapes": {
         "main": [
           {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Syrah"
-          },
-          {
-            "local": "Macabeo"
-          },
-          {
             "local": "Garnacha Tinta"
           },
           {
-            "local": "Garnacha Blanca"
-          },
-          {
-            "local": "Chardonnay"
+            "local": "Macabeo"
           }
         ],
         "cite": [
-          "calatayud-doc:p8"
+          "calatayud-wiki"
         ],
         "others": [
+          "Tempranillo",
+          "Syrah",
+          "Garnacha Blanca",
+          "Chardonnay",
           "Alarije",
           "Bobal",
           "Cabernet Sauvignon",
@@ -446,9 +360,8 @@
         ]
       },
       "climate": {
-        "text": "Continental Mediterranean (Ebro valley type); 300 to 550 mm of rain a year, peaking in spring and autumn; big day-night swings.",
+        "text": "Large temperature differences between day and night while the grapes ripen; vines at altitude get strong sun.",
         "cite": [
-          "calatayud-wiki",
           "calatayud-doc:p9"
         ]
       },
