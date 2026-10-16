@@ -71,6 +71,36 @@
     "cite": [
      "rioja-pliego:p15"
     ]
+   },
+   "tastes": {
+    "text": "Reds: purple when young, cherry-garnet as crianza, ruby-brick as gran reserva; intense fruit, toasted oak, then spice with age. Whites: pale straw with lemon-green rims; green fruit, flowers. Rosés: strawberry; red fruit, floral notes.",
+    "cite": [
+     "rioja-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Reds aged at least two years, a year of it in oak barrel."
+     },
+     {
+      "name": "Reserva",
+      "text": "Reds aged 36 months in oak and bottle, at least 12 in barrel."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Reds aged 60 months in oak and bottle, at least 24 in barrel."
+     }
+    ],
+    "cite": [
+     "rioja-pliego:p10",
+     "rioja-pliego:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -138,6 +168,36 @@
     "cite": [
      "rioja-pliego:p15"
     ]
+   },
+   "tastes": {
+    "text": "Reds of medium strength with full body and high acidity, suited to barrel ageing.",
+    "cite": [
+     "rioja-pliego:p20"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Reds aged at least two years, a year of it in oak barrel."
+     },
+     {
+      "name": "Reserva",
+      "text": "Reds aged 36 months in oak and bottle, at least 12 in barrel."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Reds aged 60 months in oak and bottle, at least 24 in barrel."
+     }
+    ],
+    "cite": [
+     "rioja-pliego:p10",
+     "rioja-pliego:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -205,6 +265,36 @@
     "cite": [
      "rioja-pliego:p15"
     ]
+   },
+   "tastes": {
+    "text": "Reds a little stronger and less acidic than in Rioja Alta; versatile, for early drinking or for ageing.",
+    "cite": [
+     "rioja-pliego:p20"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Reds aged at least two years, a year of it in oak barrel."
+     },
+     {
+      "name": "Reserva",
+      "text": "Reds aged 36 months in oak and bottle, at least 12 in barrel."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Reds aged 60 months in oak and bottle, at least 24 in barrel."
+     }
+    ],
+    "cite": [
+     "rioja-pliego:p10",
+     "rioja-pliego:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -272,6 +362,36 @@
     "cite": [
      "rioja-pliego:p15"
     ]
+   },
+   "tastes": {
+    "text": "Warmer, drier site: reds with higher strength and extract, for blending into barrel-aged wines or drinking young.",
+    "cite": [
+     "rioja-pliego:p20"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Reds aged at least two years, a year of it in oak barrel."
+     },
+     {
+      "name": "Reserva",
+      "text": "Reds aged 36 months in oak and bottle, at least 12 in barrel."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Reds aged 60 months in oak and bottle, at least 24 in barrel."
+     }
+    ],
+    "cite": [
+     "rioja-pliego:p10",
+     "rioja-pliego:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
