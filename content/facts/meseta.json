@@ -60,6 +60,39 @@
     "cite": [
      "mondejar-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow, light, perfumed and pleasantly acidic; Torrontés intensely aromatic. Rosés: pink, red fruit and flowers, fresh. Reds: cherry, garnet or ruby, fruity, moderately tannic; aged ones tile-coloured, toasty, spiced.",
+    "cite": [
+     "mondejar-doc:p1",
+     "mondejar-doc:p2",
+     "mondejar-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Maceración carbónica",
+      "text": "Silky, very tannic, with a persistent fruity finish."
+     },
+     {
+      "name": "Fermentado en barrica",
+      "text": "White or rosé; fruit and floral aromas balanced with barrel."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Tile tones; oak and stewed fruit, toast, spice; fleshy, persistent."
+     }
+    ],
+    "cite": [
+     "mondejar-doc:p1",
+     "mondejar-doc:p2",
+     "mondejar-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -121,6 +154,34 @@
     "cite": [
      "vinos-de-madrid-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale straw, fruity; gold when aged. Rosés: strawberry, raspberry or salmon pink; red fruit, fresh. Reds: violet to cherry, ruby to tile when aged; fruity, tannic, warm, persistent; oak, spice and dried fruit with age.",
+    "cite": [
+     "vinos-de-madrid-doc:p1",
+     "vinos-de-madrid-doc:p2",
+     "vinos-de-madrid-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Fine, abundant, lasting bubbles; fruity aromas; fresh and sharp."
+     },
+     {
+      "name": "Crianza y Reserva",
+      "text": "White wines age to deep golden or old gold."
+     }
+    ],
+    "cite": [
+     "vinos-de-madrid-doc:p1",
+     "vinos-de-madrid-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -185,6 +246,39 @@
     "cite": [
      "mentrida-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale straw, fruity with floral touches; oak versions pastry and toast. Rosés: strawberry pink, fresh. Reds: cherry to dark garnet; blackberry, redcurrant, flowers; fleshy, warm, well-integrated tannins; long, intense finish.",
+    "cite": [
+     "mentrida-doc:p1",
+     "mentrida-doc:p2",
+     "mentrida-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Roble",
+      "text": "White with pastry notes such as cream and a toasty base."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Cherry to ruby-tile; structured, oak notes, long and intense."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Fine, lasting bubbles; fruity aromas; reservas more intense."
+     }
+    ],
+    "cite": [
+     "mentrida-doc:p1",
+     "mentrida-doc:p3",
+     "mentrida-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -236,6 +330,34 @@
     "cite": [
      "ucles-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Reds: deep colour, intense fruity and floral aromas; powerful, full-bodied, harmonious. Whites: pale yellow, fruity and fresh; barrel-fermented straw to golden, toasty. Rosés: strawberry or raspberry pink, fruity.",
+    "cite": [
+     "ucles-doc:p1",
+     "ucles-doc:p2",
+     "ucles-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Blanco fermentado en barrica",
+      "text": "Straw to golden; toasty barrel notes, soft texture, fruity finish."
+     },
+     {
+      "name": "Espumoso de calidad",
+      "text": "Pale, small persistent bubbles; fruity aroma; fresh and balanced."
+     }
+    ],
+    "cite": [
+     "ucles-doc:p2",
+     "ucles-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -313,6 +435,39 @@
     "cite": [
      "manchuela-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: very pale yellow with green glints, fruity. Rosés: strawberry, raspberry, bright, fresh, harmonious. Reds: cherry to ruby with violet; wild red fruit, long. Aged reds: garnet to tile; vanilla, toast, spice, jam.",
+    "cite": [
+     "manchuela-doc:p1",
+     "manchuela-doc:p2",
+     "manchuela-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Fermentado en barrica",
+      "text": "Primary fruit and floral aromas in balance with the barrel."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Garnet or ruby with tile tones; vanilla, toast; medium-high to high tannin."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "White or rosé; small persistent bubbles; fruity, fresh and balanced."
+     }
+    ],
+    "cite": [
+     "manchuela-doc:p1",
+     "manchuela-doc:p2",
+     "manchuela-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -369,6 +524,33 @@
     "cite": [
      "ribera-del-jucar-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow, fruity, soft. Rosés: pink, moderate body. Young reds: cherry-red, red fruit, powerful, round. Aged reds: ruby to tile; floral, spice, balsamic, toast; velvety, long; vanilla, pepper and cocoa after wood.",
+    "cite": [
+     "ribera-del-jucar-doc:p1",
+     "ribera-del-jucar-doc:p2",
+     "ribera-del-jucar-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tradición",
+      "text": "Red and purple tones; intense, frank aromas; long, intense finish."
+     },
+     {
+      "name": "Crianza y Reserva",
+      "text": "Ruby to cherry with tile tones; ripe red fruit; potent after wood."
+     }
+    ],
+    "cite": [
+     "ribera-del-jucar-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -442,6 +624,43 @@
     "cite": [
      "la-mancha-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow short of gold, fruity, slightly acidic; oaked ones toasty with vanilla. Rosés: pale pink to red, fruity. Reds: violet to garnet, fruity, tannic; oaked ones vanilla; aged ones tile-edged, soft.",
+    "cite": [
+     "la-mancha-doc:p1",
+     "la-mancha-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tradicional Naturalmente Dulce",
+      "text": "White; glyceric, raisins and stone fruit, velvety, long finish."
+     },
+     {
+      "name": "Roble",
+      "text": "Red garnet to ruby; vanilla; persistent and balanced."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "White or red; vanilla and toast; reds from cherry to tile."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "White, rosé or red; fruity, broad and balanced, carbonic gas noticeable."
+     }
+    ],
+    "cite": [
+     "la-mancha-doc:p2",
+     "la-mancha-doc:p3",
+     "la-mancha-doc:p4",
+     "la-mancha-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -505,6 +724,39 @@
     "cite": [
      "almansa-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: light, sustained yellow, mildly aromatic. Rosés: strawberry to raspberry pink, fruity. Reds: violet, deep colour, fleshy, lightly tannic; oaked ones toasty. Aged reds: cherry or garnet, tile tones, fruit and spice.",
+    "cite": [
+     "almansa-doc:p1",
+     "almansa-doc:p3",
+     "almansa-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Roble",
+      "text": "Red; medium persistence with toasty touches."
+     },
+     {
+      "name": "Fermentado en barrica",
+      "text": "White; straw to gold; primary and toasty aromas; soft, with fruity finish."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Red; fruit and oak well joined, or spice; medium tannin."
+     }
+    ],
+    "cite": [
+     "almansa-doc:p2",
+     "almansa-doc:p3",
+     "almansa-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -575,6 +827,31 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: greenish to straw, white, yellow, citrus or exotic fruit. Rosés: pink to red; red or black fruit. Reds: violet tones, medium colour; red, black or raisined fruit. Aged wines: wood and toast.",
+    "cite": [
+     "ribera-del-guadiana-doc:p1",
+     "ribera-del-guadiana-doc:p2",
+     "ribera-del-guadiana-doc:p3",
+     "ribera-del-guadiana-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Wood and toast aromas and flavours; whites soft to golden yellow."
+     }
+    ],
+    "cite": [
+     "ribera-del-guadiana-doc:p2",
+     "ribera-del-guadiana-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -648,6 +925,35 @@
     "cite": [
      "campo-de-calatrava-doc:p8"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow range; white and tropical fruit, white flowers, citrus. Rosés: violet-pink to salmon; red and black fruit. Reds: red range without orange; red and black fruit, spice, toasty oak; medium acidity and tannin.",
+    "cite": [
+     "campo-de-calatrava-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Clásico",
+      "text": "Bright; medium or high colour; floral, fruity, spiced aromas."
+     },
+     {
+      "name": "Roble",
+      "text": "Red fruit, spice and at least one of nut, toast, balsamic, mineral."
+     },
+     {
+      "name": "Crianza, Reserva y Gran Reserva",
+      "text": "Reds reach ochre or brown; stewed fruit, nuts, toast, balsamic."
+     }
+    ],
+    "cite": [
+     "campo-de-calatrava-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -706,6 +1012,33 @@
     "cite": [
      "valdepenas-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow, golden after barrel; fine, clean, discreetly fruity. Rosés: pink with red and violet; fresh, fruity. Reds: picota to violet cherry or ruby; subtle aroma growing with time; soft, warm, long finish.",
+    "cite": [
+     "valdepenas-doc:p1",
+     "valdepenas-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto Tradicional",
+      "text": "Violet to garnet red; frank, fruity, medium aromatic intensity."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Pale or golden; fine, persistent bubbles; clean, fruity aromas."
+     }
+    ],
+    "cite": [
+     "valdepenas-doc:p3",
+     "valdepenas-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
