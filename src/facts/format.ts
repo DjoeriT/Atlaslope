@@ -56,3 +56,16 @@ export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
     };
   });
 }
+
+/** "Reds: ruby. Whites: straw." becomes one line per colour, so a long tasting row scans like the famous styles list. Text that
+ * does not start with a short label stays one unlabelled line before the labelled ones. */
+export function tasteLines(text: string): Array<{ label?: string; text: string }> {
+  return text
+    .trim()
+    .split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚ][^:.]{0,30}:\s)/)
+    .filter(Boolean)
+    .map((part) => {
+      const m = /^([A-ZÁÉÍÓÚ][^:.]{0,30}):\s+(.*)$/s.exec(part);
+      return m ? { label: m[1], text: m[2] } : { text: part };
+    });
+}

@@ -32,3 +32,12 @@ describe('fact formatting', () => {
     expect(photosOf('jerez')).toEqual([]);
   });
 });
+
+describe('tasteLines', () => {
+  it('splits a row into one line per labelled colour', async () => {
+    const { tasteLines } = await import('../../src/facts');
+    expect(tasteLines('Reds: ruby; red fruit. Whites: pale straw.')).toEqual([{ label: 'Reds', text: 'ruby; red fruit.' }, { label: 'Whites', text: 'pale straw.' }]);
+    expect(tasteLines('Clear, light wines. Sparkling: fresh, creamy.')).toEqual([{ text: 'Clear, light wines.' }, { label: 'Sparkling', text: 'fresh, creamy.' }]);
+    expect(tasteLines('Pale gold; flor aromas.')).toEqual([{ text: 'Pale gold; flor aromas.' }]);
+  });
+});

@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { altitudeText, grapeLabel, koppenText, sourceRefs, sources, type Cite, type Measures, type Photo, type Sheet } from '../facts';
+import { altitudeText, grapeLabel, tasteLines, koppenText, sourceRefs, sources, type Cite, type Measures, type Photo, type Sheet } from '../facts';
 import { strings } from '../strings';
 
 const t = strings.facts;
@@ -76,7 +76,11 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
           <ul className="named">{famous.map((f) => <li key={f.name}><strong>{f.name}</strong>{f.text.trim() && <>: {f.text.trim()}</>}</li>)}</ul>
         </Row>
       )}
-      {tastes && <Row label={t.tastes} cites={sheet!.tastes!.cite}>{tastes}</Row>}
+      {tastes && (
+        <Row label={t.tastes} cites={sheet!.tastes!.cite}>
+          <ul className="named">{tasteLines(tastes).map((l, i) => <li key={i}>{l.label && <><strong>{l.label}</strong>: </>}{l.text}</li>)}</ul>
+        </Row>
+      )}
       {climate && <Row label={t.climate} cites={sheet!.climate.cite}>{climate}</Row>}
       {measures && measures.koppen.length > 0 && <Row label={t.koppen} cites={['koppen']}>{koppenText(measures.koppen)}</Row>}
       {(writtenAltitude || measures) && (
