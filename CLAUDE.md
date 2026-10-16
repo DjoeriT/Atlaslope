@@ -47,7 +47,8 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
 - **Data has a paper trail.** Every file under `data/` is listed in `data/SOURCES.md` with its origin, date, licence and the steps that
   produced it. Never add a map layer, photo or fact source without that entry. Nothing from the Wine Scholar Guild's own materials.
 - **Licence:** code is MIT; the owner's writing (fact sheets, guides, interface copy) is all rights reserved (`NOTICE.md`); data keeps its own terms.
-- Releases are cheap: ship small changes as separate releases.
+- Releases are cheap: ship small changes as separate releases. Finish a slice's fixes, notes and records locally and push once; write the
+  tester note and sign-off record while waiting on the owner, not after "publish" (release 4: four pushes restarted CI before publishing).
 - **Plans** end with Context, Upside, Risks, Effort; the upside is measured (named cases, a re-run figure), not described.
 - Never tune data or thresholds to make a test or metric pass. Contracts and tests before behaviour changes.
 - **Rules:** a new rule names the incident behind it. Every two weeks the coordinator proposes a short retro (a table: keep, merge,

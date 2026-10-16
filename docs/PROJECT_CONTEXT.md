@@ -32,23 +32,30 @@ MapLibre map with Esri satellite, atlas base, Terrarium terrain, map menu and th
 and place cards with breadcrumbs and hash URLs (`src/cards/`, `src/url.ts`). Quiz and Progress are shown but disabled. The approved mocks are the visual reference:
 `Review/mock-atlas-v3/` (round 3), `Review/mock-atlas-v2.2/` (quiz screens), `Review/mock-flow/` (every screen and how they connect).
 They need `assets/data.js` and `assets/maplibre-gl.*` from the project files to run (see their README).
+Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 quizzed places (`content/facts/<region>.json`, sources in
+`content/sources.json`, checked by `checkSheets` in Vitest), measured altitude and Köppen rows (`data/place-measures.json`), 149 credited
+photos for 77 places (`public/photos/`, `data/photos.json`), grapes in search. The "Report a mistake" link is built but hidden (owner, no address).
 
 ## 5. Release and deployment state
-Live: release 3 (tag `release-3` on 6a78915, 16 Oct 15:33Z) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there [V].
-The post-deploy live map check loaded 85 satellite and 85 terrain tiles [V, run 38924845710]. Next release is 4, reference.
+Live: release 4 (tag `release-4` on b5c773b, 16 Oct 19:54Z, publish run 38958091012) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there.
+Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710]. Next release is 4.1.
 Route from now on: one pull request per slice on a `claude/...` branch, merged after green CI and ReviewBot; releases through the `publish`
 workflow after the owner's "publish release N" [O, cards 16 Oct 10:18 to 10:19Z]. A cloud thread can start that workflow [V, release 3]. The Remote Control
 session on his Mac also sees his thread messages and started a second publish run 7 s apart; the workflow's tag guard stopped it harmlessly.
 
 ## 6. In flight
-- Restart, data step and release 3 are done. Next: releases 4 (reference) and 5 (quiz). Re-estimate after release 3: agents used
-  0.39 M tokens against 0.45 to 0.7 M for release 3 (lead thread not measured) [V, spend log]. The owner's go (16 Oct 12:51Z) covers the
+- Restart, data step, releases 3 and 4 are done. Release 4 agents used 0.84 M tokens against a 0.5 to 0.7 M estimate (four writer
+  batches over budget, plus follow-ups) [V, spend log]. Next: release 4.1 (owner cards 16 Oct 19:37Z): a tasting row and famous styles from
+  the official documents, up to three famous producers or wines from Spanish Wikipedia, and planted-area main grapes for the 30 sheets without
+  one (the ministry's host refuses GitHub Actions; try from the Mac). Then release 5 (quiz). The owner's go (16 Oct 12:51Z) covers the
   restart, the data step and releases 3 to 5 [O]. Releases 6 to 8 need a new go.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
+- 30 of 79 fact sheets have no main grape (no source names one); Jerez and Manzanilla have no photos.
+- www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 
 ## 8. Decisions log
