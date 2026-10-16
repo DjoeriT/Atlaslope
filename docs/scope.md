@@ -15,7 +15,7 @@ One model for every country, with Spain as its first instance.
 - **Levels**: country, then study region (the course grouping, such as Spain's ten SWS regions), then appellation (DO, DOCa, VC; in France it would be AOC), then zone (Rioja's three zones, Priorat's villages). The smallest unit taught is DOs plus zones. [O]
 - **Each place has** an id, parent, level, names, boundary, its source, a short fact sheet, a guide, and a quiz weight (core, secondary, not asked).
 - **Level names belong to each country** (DOCa in Spain, Grand Cru in France), so nothing in the code is Spain-shaped [A, design rule].
-- **Producers later**: a producer attaches to a place id. The slot exists and stays empty in v1. [O]
+- **Producers in v1 (reopened by the owner, 16 Oct 2026 19:37Z)**: a producer attaches to a place id. Fact sheets name up to three famous producers or wines per place, only those a Spanish Wikipedia article about the place singles out, cited; the owner can swap any; gaps allowed. Ships in release 4.1. Was: slot empty in v1. [O]
 
 ## Boundaries before v1 (owner, 16 Oct 2026 10:10Z)
 - Every place is on the map at launch. The 2014 ministry layer lacks 16 current places: 2 that the quiz asks (Campo de Calatrava DO, Cebreros VC) and 14 Vinos de Pago (never asked in v1, fetched for completeness). Cava and the Canary Islands are in the layer already; the Canaries get an inset map. [V, data/dop-overrides.json] This is a data step that runs first, through one GitHub Actions run, the owner's Mac only as fallback (cloud threads cannot reach Spanish government hosts; builder brief step 1, 16 Oct). Each new boundary gets its source, date, licence and steps in `data/SOURCES.md`. [O]
@@ -163,3 +163,7 @@ Building does **not** start yet. The owner wants all key decisions cleared first
 
 ## Network for build threads (owner, 16 Oct 2026 12:46Z)
 - **Allow the sites**: the owner adds a cloud environment for the project with the Spanish government, Wikimedia, Natural Earth, Köppen and Esri hosts allowed, so build threads fetch, read and test directly. Whatever is fetched is still committed to the repo. Host list: reviews/2026-10-16-first-principles-review-builder-plan.md, finding 1. [O]
+
+## Release 4 follow-ups (owner cards, 16 Oct 2026 19:31-19:38Z)
+- Empty main grapes are filled from planted-area figures (most planted = main), cited, before release 4 ships; places without figures stay empty. [O]
+- Release 4.1, right after release 4: a "How it tastes" row (colour, nose, palate) from the official documents' wine descriptions, the famous styles each document defines, and the famous producers above. [O]
