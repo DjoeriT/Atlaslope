@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EAmbrosia API</title>
+
+    <style>
+        footer {
+            color: gray;
+            margin: auto;
+            max-width: 30vw;
+            margin-top: 25px;
+            font-size: 0.8em;
+        }
+        a {
+            color: #0069d6;
+            text-decoration: none;
+            line-height: inherit;
+            font-weight: inherit;
+        }
+        section {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .welcome-header {
+            margin-top: 30px;
+            border-bottom: 1px solid;
+            color: #404040;
+            border-bottom-color: gray;
+        }
+        .page-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .page-nav{
+            background-color: ghostwhite;
+            margin-right: 15px;
+            min-width: 0.2vw;
+        }
+        .main-content {
+            min-height: 80vh;
+            max-width: 900px;
+            background-color: white;
+            color: #404040;
+            font-size: 1.15rem;
+            box-shadow: 5px 10px whitesmoke;
+        }
+        .ident {
+            margin-left: 30px;
+        }
+        .optional{
+            color:gray;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .main-content {
+                font-size: 0.8rem;
+                min-height: 20vh;
+                box-shadow: 2px 5px whitesmoke;
+            }
+            .page-content {
+                min-height: 20vh;
+            }
+
+            .welcome-header {
+                margin-top: 0;
+            }
+            section {
+                margin-top: 5px;
+            }
+            footer {
+                font-size: 0.8rem;
+                margin-top: 10px;
+                max-width: 80vw;
+            }
+        }
+    </style>
+</head>
+
+<body style=" background-image: linear-gradient(to right, white, aliceblue);">
+
+<div class="page-content">
+    <div class="page-nav"></div>
+    <div class="main-content">
+
+        <h1 class="welcome-header">Welcome to eAmbrosia API</h1>
+
+        <section>
+            <h3>In order to get the data through the Web Service, please use this URL: </h3>
+            <span class="ident">
+            <a target="_blank" href='https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?modifiedOnFrom=2020-01-01T00:00:00.000Z&modifiedOnTo=2022-03-30T23:59:59.000Z'>
+                https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications
+            </a>
+        </span>
+
+            <div>
+                <p>Accepted date parameters <span class="optional"> - format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z' </span> </p>
+                <ul>
+                    <li>modifiedOnFrom - lower bound <span class="optional">(optional)</span> </li>
+                    <li>modifiedOnTo - upper bound <span class="optional">(optional)</span></li>
+                </ul>
+            </div>
+
+
+            <p class="optional">Example:</p>
+            <div class="ident">
+             <a  target="_blank" href='https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?modifiedOnFrom=2020-01-01T00:00:00.000Z&modifiedOnTo=2022-03-30T23:59:59.000Z'>
+                https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?
+                modifiedOnFrom=2020-01-01T00:00:00.000Z&
+                modifiedOnTo=2022-03-30T23:59:59.000Z
+            </a>
+          </div>
+        </section>
+
+        <section>
+            <h3>In order to get the information for one specific GI, please use this URL:</h3>
+            <span class="ident">https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/{giIdentifier}</span>
+
+            <p class="optional">Example:</p>
+            <div class="ident">
+                <a  target="_blank" href='https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000001005'>
+                    https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000001005 </a>
+            </div>
+        </section>
+
+        <section>
+            <h3>In order to download an attachment, please use this URL:</h3>
+            <span class="ident">https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/{attachmentId}</span>
+            <p class="optional">Example:</p>
+            <div class="ident">
+                <a  target="_blank" href='https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10717'>
+                    https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10717</a>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<footer>
+    <span>Version: 2.5.3</span>
+    <span>2026-05-22T12:51:01.273Z</span>
+</footer>
+
+
+</body>
+</html>

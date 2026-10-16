@@ -1,0 +1,102 @@
+{
+ "clm-apliagri-index.html": {
+  "bytes": 59915,
+  "fetched": "2026-10-16T13:18:17+00:00",
+  "final_url": "https://apliagri.castillalamancha.es/calidad-diferenciada",
+  "sha256": "010eb02a19000a3101f6878a8add71152deed0879d32e14a9a4dbb6a0aae6082",
+  "status": 404,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://apliagri.castillalamancha.es/calidad-diferenciada"
+ },
+ "eambrosia-api-docs.json": {
+  "bytes": 14723,
+  "fetched": "2026-10-16T13:17:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/v3/api-docs",
+  "sha256": "f7e6eeb7277df730596f5a917c7a56771466166f396094027bbcf09d2d780c8f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/v3/api-docs"
+ },
+ "eambrosia-api-gi-search.json": {
+  "bytes": 6648222,
+  "fetched": "2026-10-16T13:18:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?fileNumber=PDO-ES-A0615",
+  "sha256": "6226af20d569698196a383e008c087a54480fdd699284cc66a9600c913dc7c20",
+  "status": 200,
+  "truncated": true,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?fileNumber=PDO-ES-A0615"
+ },
+ "eambrosia-api-root.html": {
+  "bytes": 5109,
+  "fetched": "2026-10-16T13:17:54+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/",
+  "sha256": "af95ed3ca333c03534175a5de0a2d16ba3d7a861bf16d2f7036ab7ae904f047e",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/"
+ },
+ "eambrosia-api-swagger.html": {
+  "bytes": 1699,
+  "fetched": "2026-10-16T13:17:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/swagger-ui/index.html",
+  "sha256": "a1e42e2a3faad52f818e1f528c1ec9701fd03f0a580a314562d9b15d6698a5dd",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/swagger-ui/index.html"
+ },
+ "ign-au-sample.json": {
+  "bytes": 286923,
+  "fetched": "2026-10-16T13:18:15+00:00",
+  "final_url": "https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=2",
+  "sha256": "ca62a493303052e7eff15116caa3d98aecdda26a52bcac2ab542d522b8cec346",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=2"
+ },
+ "ign-collections.json": {
+  "bytes": 75871,
+  "fetched": "2026-10-16T13:18:13+00:00",
+  "final_url": "https://api-features.ign.es/collections?f=json",
+  "sha256": "3344f50484382e3ce90c9704f2e8a6f06c10ea32e3c91cba2a3ca09674abaaa3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://api-features.ign.es/collections?f=json"
+ },
+ "incavi-plecs.html": {
+  "bytes": 75661,
+  "fetched": "2026-10-16T13:18:19+00:00",
+  "final_url": "https://incavi.gencat.cat/ca/normativa/plecs-condicions-do-catalanes",
+  "sha256": "036602447e174de6d4fbf7a9e5ddf5f1fdd2b486b0eb77b49b21b3987605c997",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html;charset=utf-8",
+  "url": "https://incavi.gencat.cat/ca/normativa/plecs-condicions-do-catalanes/"
+ },
+ "itacyl-calidad.html": {
+  "bytes": 663,
+  "fetched": "2026-10-16T13:18:20+00:00",
+  "final_url": "https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad",
+  "sha256": "28f4f6fa158776d7927da73c94467b262bcc88d4762269321eb599352cc823c4",
+  "status": 404,
+  "truncated": false,
+  "type": "text/html;charset=UTF-8",
+  "url": "https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad"
+ },
+ "mapa-ogc-collections.json": {
+  "bytes": 121863,
+  "fetched": "2026-10-16T13:18:16+00:00",
+  "final_url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json",
+  "sha256": "0726bf8235a2e1a606f6dc548bcde91228a234f41bf34162aa23b1be0ea33a94",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json"
+ }
+}
