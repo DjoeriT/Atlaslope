@@ -21,4 +21,4 @@
 
 ## Where things are
 Digest `Review/release-4-digest.md`; cards `Review/release-4-card-*.md`; reviews `Review/release-4-review-*.md`; tester note
-`Review/release-4-what-to-test.md`; spend `Review/agent-spend-log.md`; source scout `Review/sources/`; fetched texts `Review/sources/fetched/`.
+`Review/release-4-what-to-test.md (now in Review/archive/)`; spend `Review/agent-spend-log.md`; source scout `Review/sources/`; fetched texts `Review/sources/fetched/`.
