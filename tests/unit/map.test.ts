@@ -106,4 +106,12 @@ describe('labels and sea', () => {
     expect((sea.features[0].geometry.coordinates as unknown[]).length).toBe(2);
     expect((sea.features[1].geometry.coordinates as unknown[]).length).toBe(1);
   });
+  it('covers the whole world by default, so the tint has no box edges', () => {
+    const land: Collection = { type: 'FeatureCollection', features: [{ type: 'Feature', properties: {}, geometry: { type: 'MultiPolygon', coordinates: [[[[-16, 28], [-15, 28], [-15, 29], [-16, 28]]], [[[100, 10], [101, 10], [101, 11], [100, 10]]]] } },
+      { type: 'Feature', properties: { layer: 'border' }, geometry: { type: 'MultiLineString', coordinates: [[[0, 42], [1, 43]]] } }] };
+    const sea = oceanFromLand(land);
+    expect(sea.features).toHaveLength(1);
+    expect((sea.features[0].geometry.coordinates as unknown[][])[0]).toEqual([[-180, -90], [180, -90], [180, 90], [-180, 90], [-180, -90]]);
+    expect((sea.features[0].geometry.coordinates as unknown[]).length).toBe(3);
+  });
 });
