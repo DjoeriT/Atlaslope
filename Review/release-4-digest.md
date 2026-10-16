@@ -42,3 +42,5 @@ PRs: one for the code (card 1 with the data scripts), one for the sheets, one fo
 
 ## Sign-off (owner, 16 Oct 2026 19:48Z)
 Rioja (with the rewritten zones) and the Canary Islands: "Signed off for now". Empty main grapes and tasting notes follow in release 4.1.
+- Main-grape source confirmed: pliego, then Wikipedia (owner card, 19:49Z); planted area added in release 4.1 for the gaps. [O]
+- Report a mistake: link left out for now (owner card, 19:49Z); `strings.facts.reportAddress` stays "". [O]
