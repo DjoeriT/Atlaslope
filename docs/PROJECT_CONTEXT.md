@@ -13,7 +13,7 @@ why". Spain first, on a world place tree (country, region, DO, zone). Free for t
 Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The owner renamed the GitHub repo to `DjoeriT/Atlaslope` on 16 Oct 2026 (14:07Z); the Pages project URL is now https://djoerit.github.io/Atlaslope/ until atlaslope.com is pointed at it.
 Full scope: `docs/scope.md`. Architecture: `docs/architecture-decisions.md`. Build plan and estimate: `Review/builder-brief.md`.
 
-## 2. Architecture (decided, not built)
+## 2. Architecture (decided; built in release 3)
 Static site, no server. Vite, TypeScript, React, MapLibre GL; satellite through a keyed Esri endpoint with the atlas drawn over it; 3D
 terrain; place tree as data (`data/places.json`, from the data step); progress in the browser with save and load to a file; GitHub Pages
 under atlaslope.com; CI on GitHub Actions. Details and tags: `docs/architecture-decisions.md`.
@@ -22,32 +22,34 @@ under atlaslope.com; CI on GitHub Actions. Details and tags: `docs/architecture-
 `data/SOURCES.md` is the ledger. Kept through the restart [V]: `dops.geojson` (ministry 2014 layer, 90 DOPs), `dop-overrides.json`
 (today's names, levels, study regions, 16 DOPs without a polygon), `rioja-zones.geojson`, `rioja-municipalities.json`,
 `rioja-hillshade.tif`. `src/dops.ts` applies the overrides and is the only code kept; `tests/unit/dops.test.ts` pins it.
-Still missing: polygons for Campo de Calatrava, Cebreros and 14 Pagos; Natural Earth base; Köppen-Geiger climate; the place tree; photo
-candidates; the pliego source pack. All of that is the data step (brief, step 1).
+The data step (PR #17) and Urbezo (PR #20) added the place tree (`places.json`: 70 core, 6 Vinos de Calidad, 30 not quizzed, 3 zones),
+the Natural Earth base, Köppen-Geiger climate, Campo de Calatrava, Cebreros and Urbezo outlines, photo candidates and the source pack.
+Still missing: the outlines of 13 Vinos de Pago (#18).
 
 ## 4. What is built
-Nothing of the new app yet. The site shows a placeholder page (`index.html`). The approved mocks are the visual reference:
+Release 3, the atlas (PR #21): place tree and search (`src/tree/`), React shell with theme, first run and strings (`src/app/`), the
+MapLibre map with Esri satellite, atlas base, Terrarium terrain, map menu and the imagery-failure note (`src/map/`), the Spain, region
+and place cards with breadcrumbs and hash URLs (`src/cards/`, `src/url.ts`). Quiz and Progress are shown but disabled. The approved mocks are the visual reference:
 `Review/mock-atlas-v3/` (round 3), `Review/mock-atlas-v2.2/` (quiz screens), `Review/mock-flow/` (every screen and how they connect).
 They need `assets/data.js` and `assets/maplibre-gl.*` from the project files to run (see their README).
 
 ## 5. Release and deployment state
-Live: release 2 (tag `release-2` on 3c270e0) at https://djoerit.github.io/Paraje/ [R]. The restart is not released; the next release is 3, the atlas.
+Live: release 3 (tag `release-3` on 6a78915, 16 Oct 15:33Z) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there [V].
+The post-deploy live map check loaded 85 satellite and 85 terrain tiles [V, run 38924845710]. Next release is 4, reference.
 Route from now on: one pull request per slice on a `claude/...` branch, merged after green CI and ReviewBot; releases through the `publish`
-workflow after the owner's "publish release N" [O, cards 16 Oct 10:18 to 10:19Z]. Whether a cloud thread may start that workflow is untested [A];
-the fallback is the owner's one tap in the GitHub app.
+workflow after the owner's "publish release N" [O, cards 16 Oct 10:18 to 10:19Z]. A cloud thread can start that workflow [V, release 3]. The Remote Control
+session on his Mac also sees his thread messages and started a second publish run 7 s apart; the workflow's tag guard stopped it harmlessly.
 
 ## 6. In flight
-- Step 0, the restart: this commit.
-- Step 1, the data step: needs the cloud environment with the source hosts allowed (added by the owner 16 Oct ~12:55Z [R]); runs in a
-  fresh thread in that environment.
-- Then releases 3 (atlas), 4 (reference), 5 (quiz), with a re-estimate after release 3. The owner's go (16 Oct 12:51Z) covers the
+- Restart, data step and release 3 are done. Next: releases 4 (reference) and 5 (quiz). Re-estimate after release 3: agents used
+  0.39 M tokens against 0.45 to 0.7 M for release 3 (lead thread not measured) [V, spend log]. The owner's go (16 Oct 12:51Z) covers the
   restart, the data step and releases 3 to 5 [O]. Releases 6 to 8 need a new go.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
-- The cause of release 2's black map on the owner's screen is unknown [A]; release 3 adds a post-deploy check of imagery and terrain.
+- Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 
 ## 8. Decisions log
 The decisions now live in `docs/scope.md` and `docs/architecture-decisions.md`, each tagged and dated. Earlier log entries are in the
