@@ -50,6 +50,7 @@ export const strings = {
     otherGrapes: 'Other grapes',
     otherGrapesPartial: 'Other grapes (some)',
     moreGrapes: (n: number) => `and ${n} more`,
+    fewerGrapes: 'Show fewer',
     styles: 'Styles',
     climate: 'Climate',
     koppen: 'Climate (Köppen, measured)',

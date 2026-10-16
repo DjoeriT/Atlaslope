@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q shapely pillow
+      - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q shapely==2.0.6 pillow==11.0.0
       - run: sudo apt-get install -y -q fonts-dejavu-core
       - run: /tmp/venv/bin/python -I Tools/data/photo_candidates.py
       - name: Commit the results to this branch

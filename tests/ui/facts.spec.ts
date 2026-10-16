@@ -90,3 +90,16 @@ for (const scheme of ['light', 'dark'] as const) {
     expect(overflow).toBe(false);
   });
 }
+
+test('a long grape list opens and closes without losing focus', async ({ page }) => {
+  await open(page, '#place=granada');
+  const more = page.locator('.card button.more');
+  await expect(more).toHaveAttribute('aria-expanded', 'false');
+  const box = await more.boundingBox();
+  expect(box!.height).toBeGreaterThanOrEqual(44);
+  await more.focus();
+  await page.keyboard.press('Enter');
+  await expect(more).toHaveAttribute('aria-expanded', 'true');
+  await expect(more).toBeFocused();
+  await expect(more).toHaveText('Show fewer');
+});

@@ -34,11 +34,16 @@ const SHORT_LIST = 8;
 /** Long allowed lists (the Canary Islands allow 30 grapes) show the first few and a button for the rest. */
 function OtherGrapes({ names }: { names: string[] }) {
   const [open, setOpen] = useState(false);
-  if (names.length <= SHORT_LIST || open) return <>{names.join(', ')}</>;
+  if (names.length <= SHORT_LIST) return <>{names.join(', ')}</>;
+  const shown = SHORT_LIST - 2;
+  // The button stays mounted when open, so keyboard focus is not lost.
   return (
     <>
-      {names.slice(0, SHORT_LIST - 2).join(', ')}{' '}
-      <button type="button" className="more" aria-expanded="false" onClick={() => setOpen(true)}>{t.moreGrapes(names.length - (SHORT_LIST - 2))}</button>
+      {names.slice(0, shown).join(', ')}
+      {open && <>, {names.slice(shown).join(', ')}</>}{' '}
+      <button type="button" className="more" aria-expanded={open} onClick={() => setOpen(!open)}>
+        {open ? t.fewerGrapes : t.moreGrapes(names.length - shown)}
+      </button>
     </>
   );
 }

@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q pillow
+      - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q pillow==11.0.0
       - run: /tmp/venv/bin/python -I Tools/data/photo_ship.py
       - name: Commit the results to this branch
         if: always()
