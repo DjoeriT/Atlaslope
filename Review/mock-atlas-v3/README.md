@@ -31,7 +31,7 @@ Open `index.html` in Chrome and click through. Same stack as rounds 2.1 and 2.2 
 - Canary Islands are outside the bundled geography (as in 2.2).
 
 ## Files
-Generator: `/mnt/project-files/paraje/mocks/atlas-v3/src/gen3.py` (reads `dos.json`, dumped from `assets/data.js`). Runtime: `assets/app.js` and `assets/app.css`, round 2.2's with a round-3 section (satellite button, climate layer, mastery shading, fly-there, close card). When building restarts these move into the repo under `Tools/mocks/`.
+Generator: `/mnt/project-files/atlaslope/mocks/atlas-v3/src/gen3.py` (reads `dos.json`, dumped from `assets/data.js`). Runtime: `assets/app.js` and `assets/app.css`, round 2.2's with a round-3 section (satellite button, climate layer, mastery shading, fly-there, close card). When building restarts these move into the repo under `Tools/mocks/`.
 
 ## In the repo
-Committed 16 Oct 2026 at the restart as the visual reference (approved mock; wordmark renamed to Atlaslope). `assets/data.js` (3.5 MB) and `assets/maplibre-gl.*` are not committed: to run a page, copy them from `/mnt/project-files/paraje/mocks/atlas-v3/assets/` (or `~/Developer/Paraje/mocks/atlas-v3/assets/` on the Mac) into `assets/`, then open the HTML in Chrome.
+Committed 16 Oct 2026 at the restart as the visual reference (approved mock; wordmark renamed to Atlaslope). `assets/data.js` (3.5 MB) and `assets/maplibre-gl.*` are not committed: to run a page, copy them from `/mnt/project-files/atlaslope/mocks/atlas-v3/assets/` (or `~/Developer/Atlaslope/mocks/atlas-v3/assets/` on the Mac) into `assets/`, then open the HTML in Chrome.

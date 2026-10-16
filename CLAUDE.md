@@ -27,7 +27,7 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
   on the recommended option while a card waits; anything outward or hard to undo waits for his answer. A decision he made stays until he reopens it.
 - **New UI is mocked before it is built**, and a mock of an existing screen keeps every section it has today. Mocks are HTML pages
   drafted in project files and committed to `Review/mock-<topic>/` once the owner approves. Map mocks also go to his Mac
-  (`~/Developer/Paraje/mocks/`) to open in Chrome, since previews block satellite tiles. Wording decisions in the decisions log stay unless the owner reopens them.
+  (`~/Developer/Atlaslope/mocks/`) to open in Chrome, since previews block satellite tiles. Wording decisions in the decisions log stay unless the owner reopens them.
   **Every mock gets a UX and UI check before the owner sees it, and what the check finds is fixed in the mock straight away**:
   he sees the improved mock, with a short note of what was changed, never a list of problems to decide on. Only a fix that would
   change a decision he made goes to him as a question. The check: one obvious main action per item, the common case in one click and
