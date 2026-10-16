@@ -18,6 +18,7 @@
     "vitest": "^2.1.0"
   },
   "dependencies": {
+    "@turf/boolean-intersects": "^7.4.0",
     "maplibre-gl": "^4.7.0"
   }
 }

@@ -1,15 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="paper">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Paraje</title>
-    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header id="top"><h1>Paraje</h1><p id="status">Loading map…</p></header>
-    <main id="map" aria-label="Map of Spanish wine regions"></main>
+    <div id="map" role="application" aria-label="Map of Spanish wine regions. To open a DO's card from the keyboard, use the search box."></div>
+
+    <div class="topleft">
+      <a class="brand glass" href="./"><b>Paraje</b><small id="status">Loading map…</small></a>
+      <div class="searchwrap">
+        <div class="search glass">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="search" type="search" placeholder="Search DOs" aria-label="Search DOs" aria-controls="search-results" autocomplete="off" />
+        </div>
+        <ul id="search-results" class="glass menu results" aria-label="Search results" hidden></ul>
+      </div>
+    </div>
+
+    <div class="topright">
+      <button id="views-btn" class="iconbtn glass" aria-label="Preset views" aria-expanded="false" aria-controls="views-menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></button>
+      <button id="theme" class="iconbtn glass" aria-label="Dark interface" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button>
+    </div>
+    <div id="views-menu" class="glass menu" hidden><h4>Go to</h4></div>
+
+    <section id="card" class="card glass" aria-labelledby="card-title" tabindex="-1" hidden>
+      <div class="head"><button id="card-close" class="iconbtn" aria-label="Close card"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+      <div id="card-body" class="body"></div>
+    </section>
+
+    <ul class="legend glass" aria-label="Study regions"></ul>
+
+    <div class="bottomright">
+      <div class="glass">
+        <button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
+      </div>
+      <div class="glass">
+        <button id="tilt" class="iconbtn text" aria-label="3D view" aria-pressed="false">3D</button>
+        <button id="north" class="iconbtn" aria-label="Reset to north" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 7-3 7-3-7z" fill="currentColor"/></svg></button>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
