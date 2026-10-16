@@ -67,6 +67,39 @@
     "cite": [
      "emporda-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Reds: violet-red to brick with age; ripe fruit, balsam, spice; smooth, structured, tannic. Whites: pale yellow; fresh, fruity. Rosés: soft pink to cherry; floral, fruity.",
+    "cite": [
+     "emporda-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Mistela",
+      "text": "White: pale to gold, floral, fruity. Black: red-violet, red fruit. Sweet, balanced."
+     },
+     {
+      "name": "Garnacha",
+      "text": "Ripe or raisined fruit; Ámbar from white or red grapes, Rubí from Garnacha Tinta."
+     },
+     {
+      "name": "Moscatel",
+      "text": "At least 90% overripe Muscat of Alexandria or Muscat Blanc; sweet, fleshy."
+     },
+     {
+      "name": "Uvas sobremaduradas",
+      "text": "Overripe grapes, 18% natural alcohol; yellow to amber; dried fruit, long."
+     }
+    ],
+    "cite": [
+     "emporda-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -128,6 +161,33 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumoso",
+      "text": "Traditional method, second fermentation in bottle, nine months from tirage to disgorging."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Sweet whites in old-gold colour."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Visible carbon dioxide bubbles without foam; perceptible on the palate."
+     }
+    ],
+    "cite": [
+     "costers-del-segre-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -178,6 +238,35 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale; fresh, floral, herbal, sharp fruit. Rosés: powerful, structured, unctuous. Reds: deep colour, very structured and powerful.",
+    "cite": [
+     "pla-de-bages-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumoso",
+      "text": "Fresh citrus and floral fruit; dried fruit and bread from lees; fine bubbles."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Higher acidity with carbon dioxide; fresh, broad."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Overripe or noble-rot grapes; dried fruit, raisin, orange peel, honey."
+     }
+    ],
+    "cite": [
+     "pla-de-bages-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -231,6 +320,33 @@
     "cite": [
      "alella-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rancio",
+      "text": "Oxidative liqueur wine from white Garnacha and Macabeo; a year in oak."
+     },
+     {
+      "name": "Mistela",
+      "text": "White-grape free-run must, filtered, wine spirit added."
+     },
+     {
+      "name": "Espumoso",
+      "text": "Traditional method, second fermentation in bottle, nine months before disgorging."
+     }
+    ],
+    "cite": [
+     "alella-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -281,6 +397,35 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale green-yellow to deep gold; primary aromas; light, fresh when young. Rosés: bright red-violet to onion-skin; floral, fruity. Reds: intense cherry to ruby; fruity when young, vanilla and toast with barrel ageing.",
+    "cite": [
+     "conca-de-barbera-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "Amber to opaque; nutty aldehyde notes when aged; warm, unctuous."
+     },
+     {
+      "name": "Espumoso",
+      "text": "Fresh fruit aromas; fresh, creamy, balanced."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "White or rosé with carbon dioxide; fruity, floral, fresh, slight tickle."
+     }
+    ],
+    "cite": [
+     "conca-de-barbera-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -345,6 +490,39 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale to dark yellow; white and tropical fruit, ripe fruit if oaked. Rosés: pale pink to cherry; red fruit, slightly acid, soft, fresh. Reds: garnet when young, tawny when aged.",
+    "cite": [
+     "penedes-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumoso",
+      "text": "Traditional method; at least twelve months from tirage to disgorging."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Second fermentation; carbon dioxide pressure between 1 and 2.5 bar."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Spirit added to must of at least 240 g/l sugar; candied fruit."
+     },
+     {
+      "name": "Dulce de uvas sobremaduradas",
+      "text": "Made from overripe grapes, no artificial boost to strength."
+     }
+    ],
+    "cite": [
+     "penedes-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -415,6 +593,20 @@
     "cite": [
      "priorat-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Reds: fruity, floral or mineral aromas; balanced, structured, fresh; oak-aged ones show primary, secondary and tertiary aromas. Whites: fruity, floral or milky; fresh, soft. Rosés: fruity, floral.",
+    "cite": [
+     "priorat-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -473,6 +665,39 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Clear, light, balanced wines. Sparkling: fresh, fruity, creamy. Liqueur wines: golden or glossy black, silky, warm, unctuous. Rancio: amber, toasted nuts, spice, dry.",
+    "cite": [
+     "tarragona-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rancio",
+      "text": "Amber with copper glints; toasted nuts, spice; dry, intense."
+     },
+     {
+      "name": "Mistela",
+      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
+     },
+     {
+      "name": "Vimblanc",
+      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
+     },
+     {
+      "name": "Moscatel",
+      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
+     }
+    ],
+    "cite": [
+     "tarragona-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -542,6 +767,39 @@
     "cite": [
      "montsant-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Reds: cherry to tile and amber with age; very ripe fruit, balsamic; broad, round, ripe, velvety tannin. Whites: lemon to straw; ripe fruit, honey; silky. Rosés: bright; cherry, strawberry.",
+    "cite": [
+     "montsant-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rancio",
+      "text": "Oxidative ageing in wood or sun-and-night; spice, nuts, toast; dry, full."
+     },
+     {
+      "name": "Mistela",
+      "text": "White: honey colour, citrus touch. Black: orange, nuts, lemon. Sweet."
+     },
+     {
+      "name": "Garnacha",
+      "text": "Overripe grapes, fortified, aged in oak; orange; marmalade, quince; sweet, fresh."
+     },
+     {
+      "name": "Vimblanc",
+      "text": "From overripe Pansal grape; clean, intense; complex, good finish."
+     }
+    ],
+    "cite": [
+     "montsant-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -618,6 +876,35 @@
     "cite": [
      "terra-alta-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow with grey to gold hints; complex, rich aromas; salty on the palate.",
+    "cite": [
+     "terra-alta-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rancio",
+      "text": "Oxidative ageing in sun and night; at least a year in oak."
+     },
+     {
+      "name": "Mistela",
+      "text": "Spirit added to must, mostly Garnacha or Moscatel."
+     },
+     {
+      "name": "Garnacha",
+      "text": "Liqueur wine from overripe grapes."
+     }
+    ],
+    "cite": [
+     "terra-alta-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
