@@ -74,12 +74,13 @@ describe('checkSheets', () => {
 });
 
 describe('the real content', () => {
-  it('passes, apart from the Castilla y León file that still holds only its seed sheet (Cebreros)', () => {
-    // Release 4 card 2 writes the other 12 sheets; this expectation then fails on purpose: delete it and expect [].
-    const errors = checkSheets(sheetFiles, real, sources);
-    expect(errors).toHaveLength(1);
-    expect(errors[0]).toMatch(/^castilla-y-leon has sheets for some places but not for /);
-    expect(sheetFiles.flatMap((f) => f.sheets.map((s) => s.id))).toContain('cebreros');
+  it('passes the check', () => {
+    expect(checkSheets(sheetFiles, real, sources)).toEqual([]);
+  });
+  it('has a sheet for every quizzed place, in every study region', () => {
+    const have = new Set(sheetFiles.flatMap((f) => f.sheets.map((s) => s.id)));
+    const missing = real.filter((p) => p.quiz !== 'none' && !have.has(p.id)).map((p) => p.id);
+    expect(missing).toEqual([]);
   });
   it('gives search the main grapes of Cebreros', () => {
     expect(grapeNames().cebreros).toEqual(['Garnacha Tinta', 'Albillo Real']);

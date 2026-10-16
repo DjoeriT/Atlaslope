@@ -29,6 +29,20 @@ function Row({ label, cites, children }: { label: string; cites: Cite[]; childre
   );
 }
 
+const SHORT_LIST = 8;
+
+/** Long allowed lists (the Canary Islands allow 30 grapes) show the first few and a button for the rest. */
+function OtherGrapes({ names }: { names: string[] }) {
+  const [open, setOpen] = useState(false);
+  if (names.length <= SHORT_LIST || open) return <>{names.join(', ')}</>;
+  return (
+    <>
+      {names.slice(0, SHORT_LIST - 2).join(', ')}{' '}
+      <button type="button" className="more" aria-expanded="false" onClick={() => setOpen(true)}>{t.moreGrapes(names.length - (SHORT_LIST - 2))}</button>
+    </>
+  );
+}
+
 interface FactRowsProps {
   sheet?: Sheet;
   measures?: Measures;
@@ -46,7 +60,7 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
   return (
     <>
       {main.length > 0 && <Row label={t.mainGrapes} cites={sheet!.grapes.cite}>{main.map(grapeLabel).join(', ')}</Row>}
-      {others.length > 0 && <Row label={t.otherGrapes} cites={sheet!.grapes.othersCite}>{others.join(', ')}</Row>}
+      {others.length > 0 && <Row label={t.otherGrapes} cites={sheet!.grapes.othersCite}><OtherGrapes names={others} /></Row>}
       {styles && <Row label={t.styles} cites={sheet!.styles.cite}>{styles}</Row>}
       {climate && <Row label={t.climate} cites={sheet!.climate.cite}>{climate}</Row>}
       {measures && measures.koppen.length > 0 && <Row label={t.koppen} cites={['koppen']}>{koppenText(measures.koppen)}</Row>}
