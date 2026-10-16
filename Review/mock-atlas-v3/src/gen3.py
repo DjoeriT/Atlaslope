@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Atlaslope mock-ups, round 3 (the system round). Writes the five new screens and an index into
-/mnt/project-files/paraje/mocks/atlas-v3/. Shared assets (fonts, MapLibre, data bundle, app.js, app.css) live there already.
+/mnt/project-files/atlaslope/mocks/atlas-v3/. Shared assets (fonts, MapLibre, data bundle, app.js, app.css) live there already.
 Run: python3 gen3.py  (dos.json beside it is dumped from assets/data.js)."""
 import json, os, html
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = "/mnt/project-files/paraje/mocks/atlas-v3"
+OUT = "/mnt/project-files/atlaslope/mocks/atlas-v3"
 D = json.load(open(os.path.join(HERE, "dos.json")))
 DOS, MACRO = D["dos"], D["macro"]
 Q22 = "../atlas-v2.2/"          # round 2.2 screens that still stand (quiz chain)

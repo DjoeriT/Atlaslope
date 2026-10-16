@@ -9,7 +9,7 @@ Open `index.html` and click through. Same stack as 2.1 (MapLibre, bundled type a
 - Both are linked from the Rioja Explore card.
 
 ## Changed everywhere
-- Study regions follow the course: ten regions from the repo's `data/dop-overrides.json` (Green Spain, Castilla y León, Rioja, Navarra and Aragón, Cataluña, Valencia and Murcia, Meseta, Andalucía, Balearic Islands, Canary Islands). Bierzo is now under Castilla y León. Legend, quiz areas and kickers updated. Check: `/mnt/project-files/paraje/reviews/2026-10-16-taxonomy-check.md`.
+- Study regions follow the course: ten regions from the repo's `data/dop-overrides.json` (Green Spain, Castilla y León, Rioja, Navarra and Aragón, Cataluña, Valencia and Murcia, Meseta, Andalucía, Balearic Islands, Canary Islands). Bierzo is now under Castilla y León. Legend, quiz areas and kickers updated. Check: `/mnt/project-files/atlaslope/reviews/2026-10-16-taxonomy-check.md`.
 - Quiz pool: 68 core DOs and DOCas, five Vinos de Calidad only in an All of Spain quiz, Vinos de Pago not asked.
 - Zone and DO fills fade when zoomed in, so the terrain shows at lesson zoom. Reduced-motion setting stops the fly-throughs.
 
@@ -24,4 +24,4 @@ Ways in from the Rioja card; quiz chain 03b to 03c to results; wrong answer mark
 - Rioja soil areas, photos, scores: placeholders as in 2.1.
 
 ## In the repo
-Committed 16 Oct 2026 at the restart as the visual reference (approved mock; wordmark renamed to Atlaslope). `assets/data.js` (3.5 MB) and `assets/maplibre-gl.*` are not committed: to run a page, copy them from `/mnt/project-files/paraje/mocks/atlas-v2.2/assets/` (or `~/Developer/Paraje/mocks/atlas-v2.2/assets/` on the Mac) into `assets/`, then open the HTML in Chrome.
+Committed 16 Oct 2026 at the restart as the visual reference (approved mock; wordmark renamed to Atlaslope). `assets/data.js` (3.5 MB) and `assets/maplibre-gl.*` are not committed: to run a page, copy them from `/mnt/project-files/atlaslope/mocks/atlas-v2.2/assets/` (or `~/Developer/Atlaslope/mocks/atlas-v2.2/assets/` on the Mac) into `assets/`, then open the HTML in Chrome.
