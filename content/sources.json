@@ -539,12 +539,6 @@
   "url": "https://es.wikipedia.org/w/index.php?oldid=161682975",
   "date": "2024-08-04"
  },
- "campo-de-calatrava-wiki": {
-  "kind": "wikipedia",
-  "title": "Wikipedia (es), «Berenjena de Almagro», revision 167165829",
-  "url": "https://es.wikipedia.org/w/index.php?oldid=167165829",
-  "date": "2025-05-02"
- },
  "cangas-wiki": {
   "kind": "wikipedia",
   "title": "Wikipedia (es), «Cangas (vino)», revision 168522462",
@@ -571,9 +565,9 @@
  },
  "conca-de-barbera-wiki": {
   "kind": "wikipedia",
-  "title": "Wikipedia (es), «Cuenca de Barberá», revision 175591492",
-  "url": "https://es.wikipedia.org/w/index.php?oldid=175591492",
-  "date": "2026-09-30"
+  "title": "Wikipedia (es), «Conca de Barberá (vino)», revision 157809256",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157809256",
+  "date": "2024-01-28"
  },
  "condado-de-huelva-wiki": {
   "kind": "wikipedia",
@@ -769,9 +763,9 @@
  },
  "ribera-del-jucar-wiki": {
   "kind": "wikipedia",
-  "title": "Wikipedia (es), «La Manchuela», revision 171395540",
-  "url": "https://es.wikipedia.org/w/index.php?oldid=171395540",
-  "date": "2026-01-08"
+  "title": "Wikipedia (es), «Ribera del Júcar», revision 165065477",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165065477",
+  "date": "2025-01-29"
  },
  "rioja-wiki": {
   "kind": "wikipedia",
@@ -793,9 +787,9 @@
  },
  "sierras-de-malaga-wiki": {
   "kind": "wikipedia",
-  "title": "Wikipedia (es), «Málaga (vino)», revision 173780915",
-  "url": "https://es.wikipedia.org/w/index.php?oldid=173780915",
-  "date": "2026-06-03"
+  "title": "Wikipedia (es), «Sierras de Málaga», revision 165068483",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165068483",
+  "date": "2025-01-29"
  },
  "somontano-wiki": {
   "kind": "wikipedia",
@@ -913,9 +907,9 @@
  },
  "ycoden-daute-isora-wiki": {
   "kind": "wikipedia",
-  "title": "Wikipedia (es), «Malvasía rosada», revision 175161748",
-  "url": "https://es.wikipedia.org/w/index.php?oldid=175161748",
-  "date": "2026-09-02"
+  "title": "Wikipedia (es), «Ycoden-Daute-Isora», revision 170943219",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170943219",
+  "date": "2025-12-12"
  },
  "yecla-wiki": {
   "kind": "wikipedia",
