@@ -1,0 +1,3961 @@
+{
+ "att-PDO-ES-02592-77797": {
+  "bytes": 199404,
+  "fetched": "2026-10-16T13:36:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/77797",
+  "pages": 1,
+  "sha256": "9b8e07a94b99837aacad14fd3f375d5481baa27bb550350da982366c83c1a6b2",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/77797"
+ },
+ "att-PDO-ES-A0043-29279": {
+  "bytes": 95021,
+  "fetched": "2026-10-16T13:36:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29279",
+  "pages": 12,
+  "sha256": "c3c369a50eca30d45369939a11950cd7b1b936f792c332aceee5a5ba5ebdd39f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29279"
+ },
+ "att-PDO-ES-A0044-28973": {
+  "bytes": 94117,
+  "fetched": "2026-10-16T13:36:27+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28973",
+  "pages": 12,
+  "sha256": "fdbaa783987a242443196e720275d07bd4fbd760627c70050060d1cb791d5859",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28973"
+ },
+ "att-PDO-ES-A0045-29848": {
+  "bytes": 97954,
+  "fetched": "2026-10-16T13:36:34+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29848",
+  "pages": 13,
+  "sha256": "d6030616b22214571838aed4f72f326983493708681fd69a1d91206187214f03",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29848"
+ },
+ "att-PDO-ES-A0046-19049": {
+  "bytes": 91425,
+  "fetched": "2026-10-16T13:36:35+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19049",
+  "pages": 12,
+  "sha256": "31a4f97a9e4eb4f1cd51a3062822ae484ac1f75d0547808c21099ea5b84b81c7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19049"
+ },
+ "att-PDO-ES-A0046-29137": {
+  "bytes": 95393,
+  "fetched": "2026-10-16T13:36:35+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29137",
+  "pages": 12,
+  "sha256": "fa1cc98cdb9372bff17a990adf355d65cbbac373796ee55e205c09dfc4ed255c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29137"
+ },
+ "att-PDO-ES-A0047-29190": {
+  "bytes": 98051,
+  "fetched": "2026-10-16T13:36:36+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29190",
+  "pages": 13,
+  "sha256": "b9bf28a7dc552609e656971982889792d1cfe44da7d19eb53166ef2a6ecc0e13",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29190"
+ },
+ "att-PDO-ES-A0048-29272": {
+  "bytes": 87887,
+  "fetched": "2026-10-16T13:36:37+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29272",
+  "pages": 9,
+  "sha256": "e413cd09670b72e3d92019e7fadeff79fa03fface298a45e6bbc6e28705ad3b9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29272"
+ },
+ "att-PDO-ES-A0048-78119": {
+  "bytes": 214119,
+  "fetched": "2026-10-16T13:36:38+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/78119",
+  "pages": 2,
+  "sha256": "52254159b36e269b83e0a0188c1c6af87b14ce7d58d2e78be0205a58d984d179",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/78119"
+ },
+ "att-PDO-ES-A0049-19043": {
+  "bytes": 88337,
+  "fetched": "2026-10-16T13:36:39+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19043",
+  "pages": 11,
+  "sha256": "dad19e6c15f5865e2d3ddc171cfd9fe4af88c679076b3507d328c585fec8ac5f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19043"
+ },
+ "att-PDO-ES-A0049-29292": {
+  "bytes": 91734,
+  "fetched": "2026-10-16T13:36:40+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29292",
+  "pages": 10,
+  "sha256": "61546e33b5a15775d6afdbcb91485e8dcbbcbce06effdad4bd9e1e71b2e4395c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29292"
+ },
+ "att-PDO-ES-A0050-29320": {
+  "bytes": 95991,
+  "fetched": "2026-10-16T13:36:41+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29320",
+  "pages": 13,
+  "sha256": "0d2900caec7a7fa79180164bec7518852f5d09919a04f0c687959069b5af3438",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29320"
+ },
+ "att-PDO-ES-A0050-34183": {
+  "bytes": 80193,
+  "fetched": "2026-10-16T13:36:41+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34183",
+  "pages": 7,
+  "sha256": "88f7c06c1d2fecabb1b69768a70fb41b758deb22de609d8b0a3e1eb558d02659",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34183"
+ },
+ "att-PDO-ES-A0051-29375": {
+  "bytes": 93676,
+  "fetched": "2026-10-16T13:36:42+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29375",
+  "pages": 12,
+  "sha256": "497069579e42eb92834f69a4eae4d6bfe86ea57fed28a98181de7b997efb9107",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29375"
+ },
+ "att-PDO-ES-A0052-11109": {
+  "bytes": 82639,
+  "fetched": "2026-10-16T13:36:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11109",
+  "pages": 8,
+  "sha256": "b668a67a9570bba7ca6f4972b8654fbe4c5a4c0241fa282e89df27ff250ebd80",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11109"
+ },
+ "att-PDO-ES-A0052-38929": {
+  "bytes": 75057,
+  "fetched": "2026-10-16T13:36:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38929",
+  "pages": 4,
+  "sha256": "b89b16f71775b1aee348d6f4b59fbf68c7ed6bdc8d2afe5760811fcfd7df1d67",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38929"
+ },
+ "att-PDO-ES-A0053-17964": {
+  "bytes": 87996,
+  "fetched": "2026-10-16T13:36:32+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17964",
+  "pages": 11,
+  "sha256": "783048fc7a02d76e954b575f0ce431a819eddafefb8b4cc3e6f9fe503a5675b7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17964"
+ },
+ "att-PDO-ES-A0053-29498": {
+  "bytes": 90537,
+  "fetched": "2026-10-16T13:36:33+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29498",
+  "pages": 10,
+  "sha256": "fd17e09c051dbc9e6f451631d60025e9e873616343641f17d727198bba428fb7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29498"
+ },
+ "att-PDO-ES-A0054-17425": {
+  "bytes": 85375,
+  "fetched": "2026-10-16T13:36:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17425",
+  "pages": 9,
+  "sha256": "b4d4955cf9bac9e0270aa72f0d6b42c045957ec39284e58bd04eb1ad74aec168",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17425"
+ },
+ "att-PDO-ES-A0055-29565": {
+  "bytes": 86018,
+  "fetched": "2026-10-16T13:36:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29565",
+  "pages": 9,
+  "sha256": "97db1770416149b875724c0f8a414c1eec3c9912d249cec09d3fcaaf5c1626fc",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29565"
+ },
+ "att-PDO-ES-A0056-29578": {
+  "bytes": 84978,
+  "fetched": "2026-10-16T13:36:28+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29578",
+  "pages": 8,
+  "sha256": "ed53b64b27df1251ab540794b3c6c7d077e132f0211e979c7b823ff7601da8e9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29578"
+ },
+ "att-PDO-ES-A0057-29728": {
+  "bytes": 84143,
+  "fetched": "2026-10-16T13:36:38+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29728",
+  "pages": 7,
+  "sha256": "6cb2e48ac9ac5a1d1826c816380f63812d797533d61944b79dea2985f10877da",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29728"
+ },
+ "att-PDO-ES-A0058-29738": {
+  "bytes": 85648,
+  "fetched": "2026-10-16T13:36:34+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29738",
+  "pages": 8,
+  "sha256": "76808fb8ad1f002f17b8d7bbd6008a7bc8ce981056200161af673096dfddb080",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29738"
+ },
+ "att-PDO-ES-A0060-29754": {
+  "bytes": 86687,
+  "fetched": "2026-10-16T13:36:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29754",
+  "pages": 9,
+  "sha256": "af3c80cedcd1098e8bf9b2daa2d09e2e65d974a07fbf461a611ec0af231460b4",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29754"
+ },
+ "att-PDO-ES-A0109-26908": {
+  "bytes": 97228,
+  "fetched": "2026-10-16T13:35:43+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26908",
+  "pages": 13,
+  "sha256": "7e3c4e48f91fc716313a653bd7c848002777ef3a837d778136afc4446d1f831d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26908"
+ },
+ "att-PDO-ES-A0109-36898": {
+  "bytes": 95177,
+  "fetched": "2026-10-16T13:35:44+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/36898",
+  "pages": 13,
+  "sha256": "55f199171ccc78103d22c6adc4e521a2e695d8a6131d6944192ddd42326a5d68",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/36898"
+ },
+ "att-PDO-ES-A0111-27006": {
+  "bytes": 96295,
+  "fetched": "2026-10-16T13:36:08+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27006",
+  "pages": 13,
+  "sha256": "48813336f8559ecb899b488832833c2236a7c88ae51e518934327c30dacd16dd",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27006"
+ },
+ "att-PDO-ES-A0112-26958": {
+  "bytes": 93094,
+  "fetched": "2026-10-16T13:36:06+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26958",
+  "pages": 11,
+  "sha256": "466f9838569e0a5accf30accb57c4651afcf3608877aa13f108f01f4300413c8",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26958"
+ },
+ "att-PDO-ES-A0113-27060": {
+  "bytes": 93396,
+  "fetched": "2026-10-16T13:36:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27060",
+  "pages": 12,
+  "sha256": "8084be2ed93c4196946a0c2b43d5f03a57e482e761ab91409ca679ef7cc93420",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27060"
+ },
+ "att-PDO-ES-A0114-27335": {
+  "bytes": 92351,
+  "fetched": "2026-10-16T13:36:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27335",
+  "pages": 10,
+  "sha256": "b19c0fb838168a2f5bb46dcd654b39e32d87a184e036821138bb75eb97f14284",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27335"
+ },
+ "att-PDO-ES-A0115-31318": {
+  "bytes": 92767,
+  "fetched": "2026-10-16T13:36:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31318",
+  "pages": 11,
+  "sha256": "b1405e839caea578a9c393e3da6511b6d780472b66d8878106ccc74da6873b97",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31318"
+ },
+ "att-PDO-ES-A0117-30985": {
+  "bytes": 90665,
+  "fetched": "2026-10-16T13:39:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985",
+  "pages": 10,
+  "sha256": "f23c9ed7d179ad5c56f9c966468e5ff27bebc374ffbfbc4a19ceb5a954a3208e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985"
+ },
+ "att-PDO-ES-A0117-54940": {
+  "bytes": 200845,
+  "fetched": "2026-10-16T13:35:45+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/54940",
+  "pages": 2,
+  "sha256": "7b8ccb8388edaf55e5ba82c419a2d7e3448d7c0d93f8215a38f03cd9502b063e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/54940"
+ },
+ "att-PDO-ES-A0117-86888": {
+  "bytes": 114235,
+  "fetched": "2026-10-16T13:35:46+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/86888",
+  "pages": 2,
+  "sha256": "eea916b0fff122f9f5cfeda6836effb182e1dbd4c6661a9da6996450abc960fe",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/86888"
+ },
+ "att-PDO-ES-A0119-22383": {
+  "bytes": 93782,
+  "fetched": "2026-10-16T13:36:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22383",
+  "pages": 11,
+  "sha256": "503242d36611068fbc990c7f3482b618c8c68a5c9460b44364c3b1ffa0c0f30d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22383"
+ },
+ "att-PDO-ES-A0119-51262": {
+  "bytes": 272833,
+  "fetched": "2026-10-16T13:36:02+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/51262",
+  "pages": 10,
+  "sha256": "cfbf0b6a4a6d598421e350c71ed6e6c96e65ed16ee3f28eb46db94ed13ce082f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/51262"
+ },
+ "att-PDO-ES-A0127-27552": {
+  "bytes": 96598,
+  "fetched": "2026-10-16T13:37:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27552",
+  "pages": 13,
+  "sha256": "0fc001925295e330a479e771045f14be779f977b69563f9dcca80f89f088cc3f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27552"
+ },
+ "att-PDO-ES-A0127-58565": {
+  "bytes": 100825,
+  "fetched": "2026-10-16T13:37:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58565",
+  "pages": 2,
+  "sha256": "afe26eba6fa907b5d3f758ea4ea7afc7407846c30d74be1b8570853acc149c9b",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58565"
+ },
+ "att-PDO-ES-A0180-29570": {
+  "bytes": 92603,
+  "fetched": "2026-10-16T13:36:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29570",
+  "pages": 11,
+  "sha256": "f6819935a6c532d79bfbe2c5d1a1eae8c4cb4fdc05492fde520c820a8b09eaeb",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29570"
+ },
+ "att-PDO-ES-A0182-27380": {
+  "bytes": 83392,
+  "fetched": "2026-10-16T13:37:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27380",
+  "pages": 7,
+  "sha256": "8d4b1dec26056aa0aed5c73160797c04cbcfa256e5ae6287f446847268141008",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27380"
+ },
+ "att-PDO-ES-A0183-27164": {
+  "bytes": 85260,
+  "fetched": "2026-10-16T13:37:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27164",
+  "pages": 8,
+  "sha256": "5c6236874a78f8ac5627cadbb1d63647dd805f9642f7a03a0750bd5d09bf4d97",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27164"
+ },
+ "att-PDO-ES-A0184-27356": {
+  "bytes": 82797,
+  "fetched": "2026-10-16T13:37:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27356",
+  "pages": 7,
+  "sha256": "5669db25a47dfe30f31cf582692837018e8ff0450e2547612c5fb214b2f2df2f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27356"
+ },
+ "att-PDO-ES-A0247-29796": {
+  "bytes": 98497,
+  "fetched": "2026-10-16T13:39:03+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29796",
+  "pages": 13,
+  "sha256": "da7a9570a3bc0eb57875f84043b3cfad47f4925715a57353e60108693cf09663",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29796"
+ },
+ "att-PDO-ES-A0247-68573": {
+  "bytes": 331369,
+  "fetched": "2026-10-16T13:35:58+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68573",
+  "pages": 11,
+  "sha256": "a75a29064d57597fbd7d843cb98e6de7caf1980f7c1a3f35d59b252a7aa4e16a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68573"
+ },
+ "att-PDO-ES-A0247-88916": {
+  "bytes": 339345,
+  "fetched": "2026-10-16T13:35:59+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/88916",
+  "pages": 3,
+  "sha256": "e075cf1378d22700f8e72724aa8fc1ec3da5059aa16b95632023e29d5166537d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/88916"
+ },
+ "att-PDO-ES-A0510-27119": {
+  "bytes": 94384,
+  "fetched": "2026-10-16T13:36:08+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27119",
+  "pages": 11,
+  "sha256": "b3aef752876483758c4123afa4c9a24aacc95eb2823211fd3be30502c3f89f8c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27119"
+ },
+ "att-PDO-ES-A0534-29230": {
+  "bytes": 94739,
+  "fetched": "2026-10-16T13:36:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29230",
+  "pages": 12,
+  "sha256": "2d9cc94e702b1c301171ca64b3a8bc01263da83dbfd279e07e3b03e3b60cb83c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29230"
+ },
+ "att-PDO-ES-A0536-29948": {
+  "bytes": 92980,
+  "fetched": "2026-10-16T13:37:08+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29948",
+  "pages": 11,
+  "sha256": "04f88a2da12d6c295b99c02db67ef9bc714ea369143486e802a766b1b9e649e5",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29948"
+ },
+ "att-PDO-ES-A0536-40017": {
+  "bytes": 88499,
+  "fetched": "2026-10-16T13:37:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40017",
+  "pages": 9,
+  "sha256": "9df3f0eaae2a0ed898898efaccb72b9d598745f46bf7667003bc05682a7b2165",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40017"
+ },
+ "att-PDO-ES-A0606-29956": {
+  "bytes": 93397,
+  "fetched": "2026-10-16T13:37:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29956",
+  "pages": 11,
+  "sha256": "8d22ed680c3519c906839d691ccc43bcbd971eccd8e6e89161a45d7be4ecc6aa",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29956"
+ },
+ "att-PDO-ES-A0606-68579": {
+  "bytes": 232470,
+  "fetched": "2026-10-16T13:37:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68579",
+  "pages": 9,
+  "sha256": "055a4981fe68efbd7ce020eaf37fb32c4c9afabbf4056a9d374ad449087700bc",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68579"
+ },
+ "att-PDO-ES-A0613-29334": {
+  "bytes": 89775,
+  "fetched": "2026-10-16T13:36:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29334",
+  "pages": 10,
+  "sha256": "50d8f674f4300cd10c34138c824a04d32153837605edee3a7669dd99885df9c0",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29334"
+ },
+ "att-PDO-ES-A0614-108281": {
+  "bytes": 330816,
+  "fetched": "2026-10-16T13:36:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/108281",
+  "pages": 2,
+  "sha256": "0c6414e6bec8c96ebb971a8904506da991f041a84d103fd0ada9d0f35254978f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/108281"
+ },
+ "att-PDO-ES-A0614-50543": {
+  "bytes": 282892,
+  "fetched": "2026-10-16T13:36:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/50543",
+  "pages": 12,
+  "sha256": "de363cab4b7c2b2107f66f0f9e05db920899070bc0ab0b2d79ce66d7a7cee31f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/50543"
+ },
+ "att-PDO-ES-A0615-29404": {
+  "bytes": 86212,
+  "fetched": "2026-10-16T13:36:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29404",
+  "pages": 8,
+  "sha256": "bf1fa70f2a3eb63fa40e431c7d96ece81c2c7cd3ecd03fa54b519463c4e11047",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29404"
+ },
+ "att-PDO-ES-A0615-67871": {
+  "bytes": 204868,
+  "fetched": "2026-10-16T13:36:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67871",
+  "pages": 1,
+  "sha256": "66a0bbb3583e7ad6bf32826ec2fba758bbe0654c668a9f2c50d4be27d1ea3622",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67871"
+ },
+ "att-PDO-ES-A0622-29480": {
+  "bytes": 90014,
+  "fetched": "2026-10-16T13:36:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29480",
+  "pages": 10,
+  "sha256": "d42de9948e1bbe79e1aba448de574e9cc434a7cce7479f27c934acfc9817c391",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29480"
+ },
+ "att-PDO-ES-A0626-34149": {
+  "bytes": 74929,
+  "fetched": "2026-10-16T13:36:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34149",
+  "pages": 4,
+  "sha256": "333f67c050efba874f248fe6c0b09683d2dc425e397f2f3dce9fe377fc2de1fe",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34149"
+ },
+ "att-PDO-ES-A0626-67880": {
+  "bytes": 199628,
+  "fetched": "2026-10-16T13:36:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67880",
+  "pages": 1,
+  "sha256": "9d3ac6fff73b8795c2318497be0fde5a725ac43e653e182457c450d3fcfdc507",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67880"
+ },
+ "att-PDO-ES-A0631-64686": {
+  "bytes": 102737,
+  "fetched": "2026-10-16T13:36:22+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64686",
+  "pages": 2,
+  "sha256": "3151a5d72941f7d96531506bfc751b099aadcc2720bdfb1c2ea029e551ecd0a2",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64686"
+ },
+ "att-PDO-ES-A0631-65827": {
+  "bytes": 86548,
+  "fetched": "2026-10-16T13:36:23+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65827",
+  "pages": 8,
+  "sha256": "5cdea6c408076d82a295df9551e3fe336fac7ce0d7cc42f36759e538b4428add",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65827"
+ },
+ "att-PDO-ES-A0634-29733": {
+  "bytes": 88272,
+  "fetched": "2026-10-16T13:36:23+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29733",
+  "pages": 9,
+  "sha256": "53186d1085e7baad10d61afd0ac62718c3464e6747ae565ead17a2395af4cae9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29733"
+ },
+ "att-PDO-ES-A0646-29810": {
+  "bytes": 88067,
+  "fetched": "2026-10-16T13:36:26+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29810",
+  "pages": 9,
+  "sha256": "6171f1f6bce365039213536726d88346c87a5c4e5aa779c6ac55cf8ad5e24296",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29810"
+ },
+ "att-PDO-ES-A0732-26920": {
+  "bytes": 88732,
+  "fetched": "2026-10-16T13:37:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26920",
+  "pages": 9,
+  "sha256": "70bdc98c294a62d19b486826c1f11e558cc3ed544b8fa21ec9f286d799311fc1",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26920"
+ },
+ "att-PDO-ES-A0732-35586": {
+  "bytes": 77231,
+  "fetched": "2026-10-16T13:37:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35586",
+  "pages": 5,
+  "sha256": "2914df4f7e51bf09b363b452552f19d3d366f7946dcc71689cd3042f30867acb",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35586"
+ },
+ "att-PDO-ES-A0735-107074": {
+  "bytes": 338908,
+  "fetched": "2026-10-16T13:35:43+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/107074",
+  "pages": 3,
+  "sha256": "94821a7e7cdb696ee36b3aacea38659ef34e7c5c6e5729a1e2b0577a91587f57",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/107074"
+ },
+ "att-PDO-ES-A0735-31005": {
+  "bytes": 84149,
+  "fetched": "2026-10-16T13:39:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31005",
+  "pages": 7,
+  "sha256": "9b02c39896280a82366cbc8a403144421176a1112ee57777850551cf604dda46",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31005"
+ },
+ "att-PDO-ES-A0735-40576": {
+  "bytes": 87892,
+  "fetched": "2026-10-16T13:39:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40576",
+  "pages": 8,
+  "sha256": "4c242ac8a7f6db57ddc6551575a9046f10ae4f764ada793b47bba556b90f8503",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40576"
+ },
+ "att-PDO-ES-A0735-56199": {
+  "bytes": 204113,
+  "fetched": "2026-10-16T13:39:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/56199",
+  "pages": 3,
+  "sha256": "19f7db7aa6a3bd320e03bbd70f2a7a9ea553757da58da27a31af5447e648d308",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/56199"
+ },
+ "att-PDO-ES-A0735-58536": {
+  "bytes": 98094,
+  "fetched": "2026-10-16T13:39:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58536",
+  "pages": 1,
+  "sha256": "0587bc3fb57d3075aad8c5daba63bea7e1de88c31c95477a3bc27446745e0ddb",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58536"
+ },
+ "att-PDO-ES-A0735-67853": {
+  "bytes": 210246,
+  "fetched": "2026-10-16T13:39:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67853",
+  "pages": 2,
+  "sha256": "8e1874663b0f3ce9b7d5d0804394b888ae1d4ecf7c6c843b7bffefcedfd59ef0",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/67853"
+ },
+ "att-PDO-ES-A0735-70611": {
+  "bytes": 218579,
+  "fetched": "2026-10-16T13:39:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/70611",
+  "pages": 2,
+  "sha256": "69924f0dcab9c2da97685e07ebc26ef7311c84ec89069971bc4149a951477414",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/70611"
+ },
+ "att-PDO-ES-A0735-92760": {
+  "bytes": 337798,
+  "fetched": "2026-10-16T13:39:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/92760",
+  "pages": 2,
+  "sha256": "4dfc36318589f39231d36f403809c0a6eabe7f3b5a0b445f217084f3968c43b0",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/92760"
+ },
+ "att-PDO-ES-A0735-95676": {
+  "bytes": 338461,
+  "fetched": "2026-10-16T13:39:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/95676",
+  "pages": 2,
+  "sha256": "d9e3a26c693abe3f1df16bd0bdf2c746e7d6ac60c9794d6d153fe27468855bc2",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/95676"
+ },
+ "att-PDO-ES-A0735-98345": {
+  "bytes": 207220,
+  "fetched": "2026-10-16T13:35:41+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/98345",
+  "pages": 2,
+  "sha256": "fb2846bea75b89450a16b7dc54eb2109d14b6ee47ffdaa78d5bb45099b967e70",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/98345"
+ },
+ "att-PDO-ES-A0741-26992": {
+  "bytes": 86429,
+  "fetched": "2026-10-16T13:37:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26992",
+  "pages": 8,
+  "sha256": "b294d7d02fcc4362e60f305304e87d178f42ed4784dba8504d16ea53967812d3",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26992"
+ },
+ "att-PDO-ES-A0746-27068": {
+  "bytes": 89603,
+  "fetched": "2026-10-16T13:37:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27068",
+  "pages": 9,
+  "sha256": "29d7ae3abfdc7c766ac909214aa63a1afbdba50dfe43a7f0d983580fa0fb3326",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27068"
+ },
+ "att-PDO-ES-A0747-29821": {
+  "bytes": 87686,
+  "fetched": "2026-10-16T13:36:26+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29821",
+  "pages": 9,
+  "sha256": "3b3d27a2fb1b4ca19742082e7a8b993be3b2a29a475beb7bab6a909bc5783b4f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29821"
+ },
+ "att-PDO-ES-A0747-40814": {
+  "bytes": 78206,
+  "fetched": "2026-10-16T13:36:27+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40814",
+  "pages": 5,
+  "sha256": "a1229e2fd2672554b80f4731e4c3575c955cd18d56bbae441d73af41a26decdc",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40814"
+ },
+ "att-PDO-ES-A0872-64673": {
+  "bytes": 114611,
+  "fetched": "2026-10-16T13:37:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64673",
+  "pages": 5,
+  "sha256": "0443b3c2aad9c7960c9571b9db8a7b8a74ae3b7633a3ba80ffd74feedbe0fe48",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64673"
+ },
+ "att-PDO-ES-A0872-65829": {
+  "bytes": 99173,
+  "fetched": "2026-10-16T13:37:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65829",
+  "pages": 14,
+  "sha256": "6144e2992554eb4196c072c1426e6c852164e850da4781c9277d7975fd7dce23",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65829"
+ },
+ "att-PDO-ES-A0874-28867": {
+  "bytes": 99853,
+  "fetched": "2026-10-16T13:37:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28867",
+  "pages": 15,
+  "sha256": "165be8723a237f54fcad534bca04afe9d6227d08a7c5f1619435379e809a513a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28867"
+ },
+ "att-PDO-ES-A0882-29723": {
+  "bytes": 89123,
+  "fetched": "2026-10-16T13:36:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29723",
+  "pages": 10,
+  "sha256": "2f8ca495a5ce51fe615361bb49ac60c2b84ca10de482693e99619eeb1abb3493",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29723"
+ },
+ "att-PDO-ES-A0886-29786": {
+  "bytes": 87948,
+  "fetched": "2026-10-16T13:36:24+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29786",
+  "pages": 9,
+  "sha256": "481e0fe95a4c5cdb7ede74a4ae8c2ebb55b6d370de16ab8e595dc2f354dc9e12",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29786"
+ },
+ "att-PDO-ES-A0886-50925": {
+  "bytes": 251920,
+  "fetched": "2026-10-16T13:36:25+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/50925",
+  "pages": 7,
+  "sha256": "6e89ec1b8ff5e1b82d348eaae8223800757bf2a44035c09b34cef4fce3520745",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/50925"
+ },
+ "att-PDO-ES-A0889-48222": {
+  "bytes": 203022,
+  "fetched": "2026-10-16T13:36:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/48222",
+  "pages": 9,
+  "sha256": "07c3c996f71d721008870ee722a5debfda2198626ec6c54f74055a557cde35cc",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/48222"
+ },
+ "att-PDO-ES-A0889-58539": {
+  "bytes": 99064,
+  "fetched": "2026-10-16T13:36:22+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58539",
+  "pages": 2,
+  "sha256": "85f7608b7fe7974506bac0928a0db198a58297609886dfd37dd3a6d856513da7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58539"
+ },
+ "att-PDO-ES-A0940-28727": {
+  "bytes": 83684,
+  "fetched": "2026-10-16T13:37:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28727",
+  "pages": 7,
+  "sha256": "4fa10459f66a5c336d26966fc7a1cd080014df6841f9cb3e871d85b5d2cba511",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28727"
+ },
+ "att-PDO-ES-A0941-28806": {
+  "bytes": 84767,
+  "fetched": "2026-10-16T13:37:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28806",
+  "pages": 8,
+  "sha256": "71f51868e0b384b61e3816a0280d2fd5e94e37a58e9fbd164bd0902da5dd041e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28806"
+ },
+ "att-PDO-ES-A0975-27970": {
+  "bytes": 95873,
+  "fetched": "2026-10-16T13:36:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27970",
+  "pages": 12,
+  "sha256": "3591515bfe1cf2315640dd3a422ed74935687cdfcbc01e6b1e0438d90a339724",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27970"
+ },
+ "att-PDO-ES-A0980-27156": {
+  "bytes": 99050,
+  "fetched": "2026-10-16T13:36:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27156",
+  "pages": 14,
+  "sha256": "45818361583fe5d1cf8d673f5a189d1c861f9b972d76a935347414bbe586e861",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27156"
+ },
+ "att-PDO-ES-A1038-27884": {
+  "bytes": 91867,
+  "fetched": "2026-10-16T13:36:04+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27884",
+  "pages": 10,
+  "sha256": "f1040634fe7730792a4bb901156d8778ddd81a081434a3cfad034149903fd442",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27884"
+ },
+ "att-PDO-ES-A1038-49900": {
+  "bytes": 158311,
+  "fetched": "2026-10-16T13:36:04+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/49900",
+  "pages": 8,
+  "sha256": "42631f70b7d20fe692b24b363e2b660004297368272025feb9a7c65ff4d806b6",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/49900"
+ },
+ "att-PDO-ES-A1040-27296": {
+  "bytes": 94715,
+  "fetched": "2026-10-16T13:36:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27296",
+  "pages": 12,
+  "sha256": "cfe3ef1ba6bfcec95b8efd16c7a0a826e3f0790b078097990718c9c45254f99c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27296"
+ },
+ "att-PDO-ES-A1056-27611": {
+  "bytes": 93668,
+  "fetched": "2026-10-16T13:36:03+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27611",
+  "pages": 11,
+  "sha256": "3bd152189468fd7e242eeb8bde8ed2e1c1e71c6a0ba0934290499f7ad9827011",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27611"
+ },
+ "att-PDO-ES-A1114-28929": {
+  "bytes": 90008,
+  "fetched": "2026-10-16T13:37:03+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28929",
+  "pages": 10,
+  "sha256": "99075be4af61bc88f4cd26e019b75d1416e09d7d00fc81e51a5af915d2779713",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28929"
+ },
+ "att-PDO-ES-A1119-31280": {
+  "bytes": 89357,
+  "fetched": "2026-10-16T13:37:03+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31280",
+  "pages": 10,
+  "sha256": "4c05f833100e59d32b5283feafca67e4a6d3981df59010b66b2e1a073d54e89e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31280"
+ },
+ "att-PDO-ES-A1123-31230": {
+  "bytes": 86619,
+  "fetched": "2026-10-16T13:37:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31230",
+  "pages": 9,
+  "sha256": "0eae2e1b78aadff525c4b768db2cacd3963b515d87b634392e9d5025529d3bde",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31230"
+ },
+ "att-PDO-ES-A1128-51487": {
+  "bytes": 312742,
+  "fetched": "2026-10-16T13:37:04+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/51487",
+  "pages": 17,
+  "sha256": "18d5371b6fc1c188ad5ed13fe8da4697f386a79e504c03ad2cb713f46fe6e2a0",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/51487"
+ },
+ "att-PDO-ES-A1128-68964": {
+  "bytes": 218033,
+  "fetched": "2026-10-16T13:37:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68964",
+  "pages": 3,
+  "sha256": "05673f402e22801a258a21f73e556c56b3f0d8459f5e0c9a4787e0a190bbf6ee",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/68964"
+ },
+ "att-PDO-ES-A1132-31244": {
+  "bytes": 90604,
+  "fetched": "2026-10-16T13:37:06+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31244",
+  "pages": 10,
+  "sha256": "7b4de404c2f7c8955bf6b6e0ce6fef0091cd601e11eae14dece777edf22bdda9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31244"
+ },
+ "att-PDO-ES-A1132-39186": {
+  "bytes": 81041,
+  "fetched": "2026-10-16T13:37:07+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/39186",
+  "pages": 7,
+  "sha256": "f95dbae9f158049ccf62d118f1c6e641e4c0bc3c538679e615f8152e552a45c9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/39186"
+ },
+ "att-PDO-ES-A1250-26949": {
+  "bytes": 92306,
+  "fetched": "2026-10-16T13:36:06+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26949",
+  "pages": 11,
+  "sha256": "0ee1130dfb767209edff69506c5afa5d5d77a4a429800af309527dc652c42c7a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26949"
+ },
+ "att-PDO-ES-A1295-28201": {
+  "bytes": 93396,
+  "fetched": "2026-10-16T13:37:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28201",
+  "pages": 12,
+  "sha256": "17e56f38e675ecc7d72e7c55637071de9699c812b9c4341fe2c0199f8f716d4e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28201"
+ },
+ "att-PDO-ES-A1295-53521": {
+  "bytes": 215366,
+  "fetched": "2026-10-16T13:37:02+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/53521",
+  "pages": 4,
+  "sha256": "2d5f7b506e7c7b3c36342d9617101a661401546c63df5c8a7c469d6072fa678d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/53521"
+ },
+ "att-PDO-ES-A1422-109927": {
+  "bytes": 355849,
+  "fetched": "2026-10-16T13:36:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/109927",
+  "pages": 2,
+  "sha256": "519cc0babf950b9a30543f535b75d08bd35bef6e9aa6ca07cc23bd2ec313bd91",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/109927"
+ },
+ "att-PDO-ES-A1422-29867": {
+  "bytes": 93253,
+  "fetched": "2026-10-16T13:39:26+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29867",
+  "pages": 11,
+  "sha256": "59cb1a8fb4821f3c853f2a6defe940d2e36e9dcd4cc3c390b94eea2ce4b09713",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29867"
+ },
+ "att-PDO-ES-A1422-41521": {
+  "bytes": 85672,
+  "fetched": "2026-10-16T13:39:25+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/41521",
+  "pages": 9,
+  "sha256": "6fcebb9397c97674dec77da0b924022bc37f206769ba80b0a283cb31bfef3416",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/41521"
+ },
+ "att-PDO-ES-A1422-58814": {
+  "bytes": 96581,
+  "fetched": "2026-10-16T13:39:25+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58814",
+  "pages": 1,
+  "sha256": "4bf8e70904ea2375d7b19d858b813d8f0a75a81d7b832477d34767293dca73ea",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58814"
+ },
+ "att-PDO-ES-A1422-85136": {
+  "bytes": 112946,
+  "fetched": "2026-10-16T13:36:46+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85136",
+  "pages": 2,
+  "sha256": "a86d796322303515c72b7e1e57f4eec77545f30a0c961331278094505691ddb9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85136"
+ },
+ "att-PDO-ES-A1423-105899": {
+  "bytes": 352802,
+  "fetched": "2026-10-16T13:36:44+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105899",
+  "pages": 2,
+  "sha256": "0bb81b00a61a0a07f13928df911fd1ca46bab305e231570faf834aa2b1f82713",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105899"
+ },
+ "att-PDO-ES-A1423-25543": {
+  "bytes": 94847,
+  "fetched": "2026-10-16T13:39:24+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25543",
+  "pages": 12,
+  "sha256": "4334660d4c8698fc5ad00f323910169b5e9da4572b4b04c2ebb8f7d5384ce0ba",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25543"
+ },
+ "att-PDO-ES-A1423-38844": {
+  "bytes": 82195,
+  "fetched": "2026-10-16T13:39:23+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38844",
+  "pages": 7,
+  "sha256": "bfa9a4c4a7b77fa481ab020705361248509cff863a2d18cb60e8d663e67fad7f",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38844"
+ },
+ "att-PDO-ES-A1423-58808": {
+  "bytes": 97079,
+  "fetched": "2026-10-16T13:36:43+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58808",
+  "pages": 1,
+  "sha256": "5b9e9f173727514e831008e5e09a387ecc44e182b803a1b724cc1c39a2e7d101",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58808"
+ },
+ "att-PDO-ES-A1475-26766": {
+  "bytes": 95655,
+  "fetched": "2026-10-16T13:35:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26766",
+  "pages": 12,
+  "sha256": "f106b143e86a06095d12f2f4091a39b2e15bba8379971855f3421842545bdf96",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26766"
+ },
+ "att-PDO-ES-A1475-40602": {
+  "bytes": 84164,
+  "fetched": "2026-10-16T13:35:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40602",
+  "pages": 7,
+  "sha256": "668f0b00302470a7a313b24a71667f0b34d85698b548be1ea288342d72d0ddbf",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40602"
+ },
+ "att-PDO-ES-A1478-26913": {
+  "bytes": 90131,
+  "fetched": "2026-10-16T13:35:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26913",
+  "pages": 10,
+  "sha256": "de9b8cace5923e7a5b53ece43627e513affd491f0b2320f90e4c30a3d7f81497",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26913"
+ },
+ "att-PDO-ES-A1478-69598": {
+  "bytes": 203813,
+  "fetched": "2026-10-16T13:35:52+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/69598",
+  "pages": 1,
+  "sha256": "24661b7733eb3e6fffb704c5114fe03e541bb74377cfa86797098a13d90b189e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/69598"
+ },
+ "att-PDO-ES-A1479-27386": {
+  "bytes": 90630,
+  "fetched": "2026-10-16T13:35:54+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27386",
+  "pages": 10,
+  "sha256": "d190f6231b6d4e773cdd1ccbcc0880ff3c71e46fd441ab49273eefab1e225b66",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27386"
+ },
+ "att-PDO-ES-A1479-37493": {
+  "bytes": 79469,
+  "fetched": "2026-10-16T13:35:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/37493",
+  "pages": 5,
+  "sha256": "fd9e946d44e783ea92f7cc7770b566b21c875d1051175f2fd5e414566fda009b",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/37493"
+ },
+ "att-PDO-ES-A1480-27547": {
+  "bytes": 90179,
+  "fetched": "2026-10-16T13:35:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27547",
+  "pages": 10,
+  "sha256": "6391c7e203a7d5ace095a145bcf79ce589b2fe218cf95c3483a49012c75f3db3",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27547"
+ },
+ "att-PDO-ES-A1481-27145": {
+  "bytes": 91311,
+  "fetched": "2026-10-16T13:35:53+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27145",
+  "pages": 10,
+  "sha256": "c52ae94b4b2b9d6d1584d75b5381d6de1a6602a13101575a70e477ffbed1318c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27145"
+ },
+ "att-PDO-ES-A1482-27318": {
+  "bytes": 86811,
+  "fetched": "2026-10-16T13:35:54+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27318",
+  "pages": 8,
+  "sha256": "99defc4e965ec15b330ac2037134df63ae5add133d621ab4c0d09ec6dd68f9d9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27318"
+ },
+ "att-PDO-ES-A1483-25822": {
+  "bytes": 87359,
+  "fetched": "2026-10-16T13:35:50+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25822",
+  "pages": 8,
+  "sha256": "e111f07693071ec0be1573d09a451d8aaa6324d2182d2f65cd06f2ab86bd569a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25822"
+ },
+ "att-PDO-ES-A1483-89234": {
+  "bytes": 339303,
+  "fetched": "2026-10-16T13:35:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/89234",
+  "pages": 2,
+  "sha256": "7cef28398f378a8445f3781c66e42502cce50679e87e2f9f3f76726e5adc49ca",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/89234"
+ },
+ "att-PDO-ES-A1485-26603": {
+  "bytes": 92789,
+  "fetched": "2026-10-16T13:35:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26603",
+  "pages": 11,
+  "sha256": "2e3a175be7f9c65045f568d4617e3d66cca8c6f476f0e9bb1c0008b44097aa9a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26603"
+ },
+ "att-PDO-ES-A1485-89270": {
+  "bytes": 346574,
+  "fetched": "2026-10-16T13:35:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/89270",
+  "pages": 3,
+  "sha256": "751a53502546513a62cc3564e8505cbbe2897f337b0fcc2524391a9c561c988d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/89270"
+ },
+ "att-PDO-ES-A1511-27631": {
+  "bytes": 94994,
+  "fetched": "2026-10-16T13:36:07+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27631",
+  "pages": 12,
+  "sha256": "d753cc841f97dc2e2a6ecc48766438f02fdbd36aebcf66f4defe2d78769db925",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27631"
+ },
+ "att-PDO-ES-A1522-30708": {
+  "bytes": 89911,
+  "fetched": "2026-10-16T13:35:56+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30708",
+  "pages": 9,
+  "sha256": "7efcee85a9eb6fd20e8eaa4d624aa0e57e3df1d6b4970f15ab5abb07e41d5c75",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30708"
+ },
+ "att-PDO-ES-A1522-34164": {
+  "bytes": 79520,
+  "fetched": "2026-10-16T13:35:57+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34164",
+  "pages": 5,
+  "sha256": "b6b222bbc07194d3a4fb4edf4524932683b06d410f3323750fa58faf0d49fcce",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34164"
+ },
+ "att-PDO-ES-A1523-30004": {
+  "bytes": 92093,
+  "fetched": "2026-10-16T13:36:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30004",
+  "pages": 11,
+  "sha256": "fc5091a0e57f72b929412ee3f20261b6f036ba5f8a6a96557a782d8acedd549d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30004"
+ },
+ "att-PDO-ES-A1523-58817": {
+  "bytes": 196493,
+  "fetched": "2026-10-16T13:36:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58817",
+  "pages": 1,
+  "sha256": "465005e15522f5d878d506a021fc0fa1b470164db48212a2d44d5f3d228f4192",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58817"
+ },
+ "att-PDO-ES-A1525-27926": {
+  "bytes": 93229,
+  "fetched": "2026-10-16T13:37:07+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27926",
+  "pages": 11,
+  "sha256": "1eca6d6a52f922aede8c3d254c89a945d912baa32b713be0e2ca9478969f3e69",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27926"
+ },
+ "att-PDO-ES-A1526-31224": {
+  "bytes": 93291,
+  "fetched": "2026-10-16T13:37:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31224",
+  "pages": 12,
+  "sha256": "0396c76f810d9bded6c7eb273837e90571a900fc9961863d6ead3b2da4166811",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31224"
+ },
+ "att-PDO-ES-A1548-29893": {
+  "bytes": 97667,
+  "fetched": "2026-10-16T13:39:04+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29893",
+  "pages": 13,
+  "sha256": "45ca58631664dfc7f79e8d631f62e2864663ff77df0a42f929705f586e0fb43b",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29893"
+ },
+ "att-PDO-ES-A1548-57393": {
+  "bytes": 204334,
+  "fetched": "2026-10-16T13:36:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/57393",
+  "pages": 2,
+  "sha256": "e6b27ebb75a7943ffe3dde475c325b80a9589d625535e6982ad6fe1042cb78c3",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/57393"
+ },
+ "att-PDO-ES-A1548-58820": {
+  "bytes": 197687,
+  "fetched": "2026-10-16T13:36:50+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58820",
+  "pages": 1,
+  "sha256": "5002c50269aced0f9588074588aa5245326d08b8b68c3b082ebc73f7f8d2fff7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58820"
+ },
+ "att-PDO-ES-A1549-29855": {
+  "bytes": 94346,
+  "fetched": "2026-10-16T13:39:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29855",
+  "pages": 12,
+  "sha256": "cf18366bfb23447b8d3a9b8fec87b8cc82dc89d57ddef93d15e5f73af45d467c",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29855"
+ },
+ "att-PDO-ES-A1549-52252": {
+  "bytes": 237828,
+  "fetched": "2026-10-16T13:39:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/52252",
+  "pages": 25,
+  "sha256": "f1049d8f50ad39c1dc12a4c15c619718193cb5026b94aa0b1d77287afde3226e",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/52252"
+ },
+ "att-PDO-ES-A1549-58811": {
+  "bytes": 96639,
+  "fetched": "2026-10-16T13:36:45+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58811",
+  "pages": 1,
+  "sha256": "0a77a1d3b104960752d3f6ebfaaecc3baaf212c1da9afad48409347e35954175",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58811"
+ },
+ "att-PDO-ES-A1549-65533": {
+  "bytes": 195288,
+  "fetched": "2026-10-16T13:36:45+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65533",
+  "pages": 1,
+  "sha256": "2b5d1a59b4ad33e1a4a95cdf4491b03e3c1d85ec8589a5988ceacceb89ab9bb6",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65533"
+ },
+ "att-PDO-ES-A1550-105926": {
+  "bytes": 352809,
+  "fetched": "2026-10-16T13:36:52+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105926",
+  "pages": 2,
+  "sha256": "d6ce383a98a30c9334ad11b9382a4825b5fbcff2f1923668777f98f0e72b76e3",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105926"
+ },
+ "att-PDO-ES-A1550-94610": {
+  "bytes": 352390,
+  "fetched": "2026-10-16T13:36:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/94610",
+  "pages": 10,
+  "sha256": "732c0ce1dde9601b58ebb95a722454b83a189d9271b853c8aa1beeb050bc812d",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/94610"
+ },
+ "att-PDO-ES-A1551-29997": {
+  "bytes": 94766,
+  "fetched": "2026-10-16T13:39:22+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29997",
+  "pages": 13,
+  "sha256": "982cf19a6446ee4738a00e989535693db5c4eb99620e85bd30c5be74d358faa0",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29997"
+ },
+ "att-PDO-ES-A1551-48226": {
+  "bytes": 329449,
+  "fetched": "2026-10-16T13:39:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/48226",
+  "pages": 21,
+  "sha256": "c554da880f32ef6beffbc5417727adf6a6034d22c56a67422ec09c440d1c14b5",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/48226"
+ },
+ "att-PDO-ES-A1551-58826": {
+  "bytes": 197742,
+  "fetched": "2026-10-16T13:39:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58826",
+  "pages": 1,
+  "sha256": "6940e2a0a58683c9a192b27164716277bb27b9b07fec322af87694e3e0adc4af",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58826"
+ },
+ "att-PDO-ES-A1551-85146": {
+  "bytes": 107607,
+  "fetched": "2026-10-16T13:36:53+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85146",
+  "pages": 2,
+  "sha256": "3ac171c0730d33b75f07792fa320b2681063a69887c458313ea2349cacccafac",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85146"
+ },
+ "att-PDO-ES-A1551-93467": {
+  "bytes": 338061,
+  "fetched": "2026-10-16T13:36:54+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93467",
+  "pages": 2,
+  "sha256": "241a366f033f8486ed3f867b93b18d8a1ebdd19a550d4dde86a970a257c73843",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93467"
+ },
+ "att-PDO-ES-A1555-29977": {
+  "bytes": 92218,
+  "fetched": "2026-10-16T13:39:28+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29977",
+  "pages": 11,
+  "sha256": "ddcfe0a83a15b0ed8f30bd4fd3d42666d420416389a4c172f5095d821a6823a1",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29977"
+ },
+ "att-PDO-ES-A1555-54297": {
+  "bytes": 204877,
+  "fetched": "2026-10-16T13:39:27+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/54297",
+  "pages": 2,
+  "sha256": "1bbf0ae9f146fc8ec9fda99a578bc1806576764eabfafdba3b358486edee82eb",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/54297"
+ },
+ "att-PDO-ES-A1555-58835": {
+  "bytes": 195048,
+  "fetched": "2026-10-16T13:36:58+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58835",
+  "pages": 1,
+  "sha256": "89981af43b255bdcc0eee100c430f58959e072167bee6ee9d9599148a1c19877",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58835"
+ },
+ "att-PDO-ES-A1555-65328": {
+  "bytes": 201180,
+  "fetched": "2026-10-16T13:36:59+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65328",
+  "pages": 2,
+  "sha256": "501afaf7e9ef08530ddec16347651c7a3df3d10b91ccd708d08e0079d8cc6f66",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65328"
+ },
+ "att-PDO-ES-A1556-105938": {
+  "bytes": 352383,
+  "fetched": "2026-10-16T13:37:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105938",
+  "pages": 2,
+  "sha256": "d0d270a8c085c1b75ee3b81286b0b8c68f18772694eeae0d7756529600486442",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105938"
+ },
+ "att-PDO-ES-A1556-29860": {
+  "bytes": 92800,
+  "fetched": "2026-10-16T13:39:02+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29860",
+  "pages": 11,
+  "sha256": "0587059944c14bf4a4c951c923056342330f5647c3f03dbb18ab81a1ea13ba53",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29860"
+ },
+ "att-PDO-ES-A1556-57733": {
+  "bytes": 101363,
+  "fetched": "2026-10-16T13:39:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/57733",
+  "pages": 2,
+  "sha256": "d37f12c239acb95f338b9e6f994128b69aabcac60f2de14e4fa130fbf0f397d8",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/57733"
+ },
+ "att-PDO-ES-A1556-58838": {
+  "bytes": 201624,
+  "fetched": "2026-10-16T13:38:59+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58838",
+  "pages": 2,
+  "sha256": "4f47a09fe178c7a6728b133b6c133497dd88992741effa4c54050ebafec44cff",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58838"
+ },
+ "att-PDO-ES-A1556-93738": {
+  "bytes": 341257,
+  "fetched": "2026-10-16T13:37:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93738",
+  "pages": 3,
+  "sha256": "9c0f7999891d230f83d39fccbb62b4c0b85b4720c2c82dafe6e7be6920c0110a",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93738"
+ },
+ "att-PDO-ES-A1557-105930": {
+  "bytes": 353219,
+  "fetched": "2026-10-16T13:36:56+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105930",
+  "pages": 2,
+  "sha256": "126529e2c1b231d4a7852503356f4371126034082dc2ccac44b89f821312dfb9",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105930"
+ },
+ "att-PDO-ES-A1557-25777": {
+  "bytes": 94635,
+  "fetched": "2026-10-16T13:39:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25777",
+  "pages": 12,
+  "sha256": "189cabdcdd03ae8c2fbb99d07bd6ddb814fbeb6dd0edf1d2e0811ccd5d090387",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25777"
+ },
+ "att-PDO-ES-A1557-35932": {
+  "bytes": 80988,
+  "fetched": "2026-10-16T13:39:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35932",
+  "pages": 7,
+  "sha256": "601c87f0f5f43d88427181469a01b24aa7c245ee59ff84a7bf4971353ddf66fc",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35932"
+ },
+ "att-PDO-ES-A1557-58832": {
+  "bytes": 96383,
+  "fetched": "2026-10-16T13:39:08+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58832",
+  "pages": 1,
+  "sha256": "bb8a6d96db9ff23c792b1d8780a02e46a1fce06c349560979fd87d7970cd4095",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58832"
+ },
+ "att-PDO-ES-A1557-85150": {
+  "bytes": 103004,
+  "fetched": "2026-10-16T13:39:07+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85150",
+  "pages": 1,
+  "sha256": "5164e9a4fb2e9e3ec2b276d09f5c082efec88b74841892b9689cc59bb363a771",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/85150"
+ },
+ "att-PDO-ES-A1557-93748": {
+  "bytes": 335496,
+  "fetched": "2026-10-16T13:36:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93748",
+  "pages": 2,
+  "sha256": "729415b65aabd19dcc50f1b5697ff50c223dcce6fd5b7927b1a35c52ae0d9593",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/93748"
+ },
+ "att-PDO-ES-A1560-105934": {
+  "bytes": 352394,
+  "fetched": "2026-10-16T13:36:57+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105934",
+  "pages": 2,
+  "sha256": "cff1297b17d381b1f8d56b1ba621d3f8034bc80f6ca1265bc538c45f0c6f8763",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/105934"
+ },
+ "att-PDO-ES-A1560-109914": {
+  "bytes": 355338,
+  "fetched": "2026-10-16T13:36:58+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/109914",
+  "pages": 2,
+  "sha256": "659381f84c637c7899602c6ab116f5e3f2141e8c99380bf1494d6eb9dad509af",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/109914"
+ },
+ "att-PDO-ES-A1560-30019": {
+  "bytes": 91388,
+  "fetched": "2026-10-16T13:39:06+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30019",
+  "pages": 10,
+  "sha256": "665ac792ed38a2003ad33d4eec6564a3fc291bcbb899c93fb8e8a3b4df8506c7",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30019"
+ },
+ "att-PDO-ES-A1560-58829": {
+  "bytes": 96353,
+  "fetched": "2026-10-16T13:39:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58829",
+  "pages": 1,
+  "sha256": "e3b4a1aac09f472d5873a3e3fe806534b403dc90a1aed4e085b2d9bf1de8ae18",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/58829"
+ },
+ "att-PDO-ES-N1634-64314": {
+  "bytes": 206785,
+  "fetched": "2026-10-16T13:36:32+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64314",
+  "pages": 3,
+  "sha256": "f52de7bcacf08eb9c0c6c25193fd0b0a85ea3418df25a29045b0eb9026a5dd26",
+  "status": 202,
+  "type": "application/pdf",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/64314"
+ },
+ "clm-apliagri-index.html": {
+  "bytes": 59915,
+  "fetched": "2026-10-16T13:49:26+00:00",
+  "final_url": "https://apliagri.castillalamancha.es/calidad-diferenciada",
+  "sha256": "010eb02a19000a3101f6878a8add71152deed0879d32e14a9a4dbb6a0aae6082",
+  "status": 404,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://apliagri.castillalamancha.es/calidad-diferenciada"
+ },
+ "ea-PDO-ES-01895.json": {
+  "bytes": 2433,
+  "fetched": "2026-10-16T13:34:45+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000012845",
+  "sha256": "19e4c94b86c745feda9225dd5c94623b82cedc73cfe0814853cddd80829824f6",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000012845"
+ },
+ "ea-PDO-ES-02085.json": {
+  "bytes": 2434,
+  "fetched": "2026-10-16T13:34:46+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000014380",
+  "sha256": "4618a4c3745925caee938aa8e7d035112f25010fdac27b3fd04d8f064eeddc0d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000014380"
+ },
+ "ea-PDO-ES-02086.json": {
+  "bytes": 1023,
+  "fetched": "2026-10-16T13:34:46+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000014258",
+  "sha256": "3d36381e2a9f0be33659ac8408c74c6a763146f7e2c05c338e51cceb1770d745",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000014258"
+ },
+ "ea-PDO-ES-02228.json": {
+  "bytes": 2435,
+  "fetched": "2026-10-16T13:34:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000015085",
+  "sha256": "636a0547ee810cfb635d7a464a8a9c5d8b735230140f9681fd81f9e31a66497e",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000015085"
+ },
+ "ea-PDO-ES-02348.json": {
+  "bytes": 4771,
+  "fetched": "2026-10-16T13:34:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000015257",
+  "sha256": "094f186b2ed1bc5542029ef57eddbb78d3a8a72d69392a9c5fe338872998fa99",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000015257"
+ },
+ "ea-PDO-ES-02481.json": {
+  "bytes": 2989,
+  "fetched": "2026-10-16T13:34:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016271",
+  "sha256": "607b37b7ffaef600b60346bdc94d3e5a741d9511649251ff110a440245ff1c41",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016271"
+ },
+ "ea-PDO-ES-02485.json": {
+  "bytes": 2583,
+  "fetched": "2026-10-16T13:34:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016336",
+  "sha256": "2561d56ab452e1ecc7ce7de9610fa4ea489d92f119a67ef6b2501d361cf3bf39",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016336"
+ },
+ "ea-PDO-ES-02585.json": {
+  "bytes": 1340,
+  "fetched": "2026-10-16T13:34:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016755",
+  "sha256": "9242aa15a672184e65c98c9a9dbacbc8e1d1aac5a7afcf8d410535183ecd6a1e",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000016755"
+ },
+ "ea-PDO-ES-02870.json": {
+  "bytes": 2703,
+  "fetched": "2026-10-16T13:34:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000018857",
+  "sha256": "a5f21a18b3e6e43aa9372da4c6657fd26e348291648142652977aef26fac4637",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000018857"
+ },
+ "ea-PDO-ES-02880.json": {
+  "bytes": 2229,
+  "fetched": "2026-10-16T13:34:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000019059",
+  "sha256": "ed9b8a9ad012725cf23a93c26ed5bdd1fc808791545c62a33b05f7b5a21d6dc0",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000019059"
+ },
+ "ea-PDO-ES-03003.json": {
+  "bytes": 1338,
+  "fetched": "2026-10-16T13:34:50+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000019772",
+  "sha256": "ac3c74b03d2c305dc82fd7d881ab423179e7b72696fb08290a1c12188e117f25",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000019772"
+ },
+ "ea-PDO-ES-A0043.json": {
+  "bytes": 1901,
+  "fetched": "2026-10-16T13:20:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007642",
+  "sha256": "5f9420c9f4075e2e6f879adadd9bdff6766ddfe28333eab5643c3cb48f95add1",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007642"
+ },
+ "ea-PDO-ES-A0044.json": {
+  "bytes": 3875,
+  "fetched": "2026-10-16T13:21:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007643",
+  "sha256": "f877831a0983949d0b6dadea92f6e0080c917b535da24e5567c2d0c8d5055b4a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007643"
+ },
+ "ea-PDO-ES-A0045.json": {
+  "bytes": 4107,
+  "fetched": "2026-10-16T13:21:39+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007644",
+  "sha256": "f154c3e1cff89c235c8e45d82c01fbff2433d4fd13bd2fecab832beacfe2b812",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007644"
+ },
+ "ea-PDO-ES-A0046.json": {
+  "bytes": 2900,
+  "fetched": "2026-10-16T13:21:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007645",
+  "sha256": "d223a9f705df6a87edbb4ff2a2708adbb6a5cb3f37fd4b605dfa59f7d84a3376",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007645"
+ },
+ "ea-PDO-ES-A0047.json": {
+  "bytes": 2977,
+  "fetched": "2026-10-16T13:21:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007646",
+  "sha256": "04881d748368699489bc660ec64f1ab7e5d15e4c62d690ed8d2475d937eef939",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007646"
+ },
+ "ea-PDO-ES-A0048.json": {
+  "bytes": 2430,
+  "fetched": "2026-10-16T13:21:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007647",
+  "sha256": "2f675a71c43298c41e5481a7b7a253b31f54992a78eae74e6dfab614b978a3e4",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007647"
+ },
+ "ea-PDO-ES-A0049.json": {
+  "bytes": 2605,
+  "fetched": "2026-10-16T13:21:49+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007648",
+  "sha256": "25be9bbbba7aa7499dc0d023dc354fea5e87ff51db94c84d7684bb2ecffd0f6d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007648"
+ },
+ "ea-PDO-ES-A0050.json": {
+  "bytes": 2496,
+  "fetched": "2026-10-16T13:22:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007649",
+  "sha256": "a57cf6aadf5e3a18c8771a5603f62fef5d187bdde8a1457c174cbf35f0cfb2b7",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007649"
+ },
+ "ea-PDO-ES-A0051.json": {
+  "bytes": 2396,
+  "fetched": "2026-10-16T13:22:06+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007650",
+  "sha256": "8ccfce8062f993e434f759f40c7904fbb6c7c029a3671d4a72a2d6c545e63125",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007650"
+ },
+ "ea-PDO-ES-A0052.json": {
+  "bytes": 2113,
+  "fetched": "2026-10-16T13:21:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007651",
+  "sha256": "bf4ff464f286095a79002ba43c1b516abd01316224c70a7b5e7f5c224d700caf",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007651"
+ },
+ "ea-PDO-ES-A0053.json": {
+  "bytes": 2454,
+  "fetched": "2026-10-16T13:21:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007652",
+  "sha256": "3e533228c981acbae3c5ace0fd850ef117b91932c7ebd2763d33a75e424c90e3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007652"
+ },
+ "ea-PDO-ES-A0054.json": {
+  "bytes": 2233,
+  "fetched": "2026-10-16T13:21:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007653",
+  "sha256": "867e1d0b1811f0dec4b2794853ddb011c1df2767e9ebf8445ae12dcaab423c66",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007653"
+ },
+ "ea-PDO-ES-A0055.json": {
+  "bytes": 2072,
+  "fetched": "2026-10-16T13:21:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007654",
+  "sha256": "ecfebddfd5f97bce948cc8cf100c3f75fe4f55c76c764d033b10c59485c82264",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007654"
+ },
+ "ea-PDO-ES-A0056.json": {
+  "bytes": 2063,
+  "fetched": "2026-10-16T13:21:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007655",
+  "sha256": "b88077052a7f8e971a647cc40d77b73ebf4582b93e67ebc9d59a45fd91f45246",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007655"
+ },
+ "ea-PDO-ES-A0057.json": {
+  "bytes": 2068,
+  "fetched": "2026-10-16T13:21:48+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007656",
+  "sha256": "857114d21e4b120218a4c48a48b279da0b45d43be06d6b3ce1eb729c1250972c",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007656"
+ },
+ "ea-PDO-ES-A0058.json": {
+  "bytes": 2060,
+  "fetched": "2026-10-16T13:21:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007657",
+  "sha256": "93398f640270e9db44f671a2ff48f3186ad4589d4dd8f426ecd537df400e32a3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007657"
+ },
+ "ea-PDO-ES-A0060.json": {
+  "bytes": 2240,
+  "fetched": "2026-10-16T13:21:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007658",
+  "sha256": "a8e2196bb8413ed6367dfa9c7f4a0b84c692f48ab707a39182bdc0b7528b5fb2",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007658"
+ },
+ "ea-PDO-ES-A0109.json": {
+  "bytes": 3772,
+  "fetched": "2026-10-16T13:20:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000002762",
+  "sha256": "89298a35a6c439dbc0ca083493acf19da032c53b7bacbd34b882a627151cf632",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000002762"
+ },
+ "ea-PDO-ES-A0111.json": {
+  "bytes": 3409,
+  "fetched": "2026-10-16T13:20:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003122",
+  "sha256": "47e37995334d754c55bd1d21d6a55f7335e7eed352ee9980dd467ce2d402c3e4",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003122"
+ },
+ "ea-PDO-ES-A0112.json": {
+  "bytes": 3478,
+  "fetched": "2026-10-16T13:20:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000002981",
+  "sha256": "d9cb1420faf1d0a2b3864d0c1f4b043bd8f864644ca64c1fd00f548a0b1ca73f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000002981"
+ },
+ "ea-PDO-ES-A0113.json": {
+  "bytes": 3467,
+  "fetched": "2026-10-16T13:20:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003225",
+  "sha256": "cd9c5178dc495d2050f7420fff76f9836d3016bc55e40892fb084654c7195f12",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003225"
+ },
+ "ea-PDO-ES-A0114.json": {
+  "bytes": 3400,
+  "fetched": "2026-10-16T13:20:33+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003481",
+  "sha256": "6e5dc8c377d313de7c889e59220bab114173d997a9d262de6f67bc5aac3a112d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003481"
+ },
+ "ea-PDO-ES-A0115.json": {
+  "bytes": 3845,
+  "fetched": "2026-10-16T13:20:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003384",
+  "sha256": "5f2a4fc2cc755fd4528e8bbe32b477496c1df3ddc0a2d6eb8e89797f1bb09d0d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003384"
+ },
+ "ea-PDO-ES-A0117.json": {
+  "bytes": 5344,
+  "fetched": "2026-10-16T13:20:11+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003061",
+  "sha256": "9a243c30c67d6e024b6fa6b7e736ac91ced8cd218467072a04055853515cef50",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003061"
+ },
+ "ea-PDO-ES-A0119.json": {
+  "bytes": 2459,
+  "fetched": "2026-10-16T13:20:27+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000004383",
+  "sha256": "1347ea0761285ccf2265c7698905cc12b4edeeda8ac032b27e841d862adb4aa5",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000004383"
+ },
+ "ea-PDO-ES-A0127.json": {
+  "bytes": 2541,
+  "fetched": "2026-10-16T13:22:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000004841",
+  "sha256": "d6247f4ee2ab0d333ebc4737d3e3988d0b2f55d957a4701231802985ade6dc79",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000004841"
+ },
+ "ea-PDO-ES-A0180.json": {
+  "bytes": 1974,
+  "fetched": "2026-10-16T13:20:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005005",
+  "sha256": "f6952096d425b8c5db167ba075ecff6caf27d426fa4b447eb10cd817ca9996fc",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005005"
+ },
+ "ea-PDO-ES-A0182.json": {
+  "bytes": 1301,
+  "fetched": "2026-10-16T13:22:32+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005012",
+  "sha256": "c74eb27f18364fd25df791700dc7319e1f275ba0e3230a709f447b94b6d8f256",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005012"
+ },
+ "ea-PDO-ES-A0183.json": {
+  "bytes": 3992,
+  "fetched": "2026-10-16T13:22:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005181",
+  "sha256": "e70991ef7df02df33df5a6eaf526759b4ef57fe5a71a1c49164d97f11436db22",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005181"
+ },
+ "ea-PDO-ES-A0184.json": {
+  "bytes": 3437,
+  "fetched": "2026-10-16T13:22:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005185",
+  "sha256": "c82d392fcea5599d7e984d5492be6cc52f0e1da5e60395b5120b5afda80e002d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005185"
+ },
+ "ea-PDO-ES-A0247.json": {
+  "bytes": 1730,
+  "fetched": "2026-10-16T13:20:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005102",
+  "sha256": "6ea00fd13d71651268d008fe70d4262aa860f6ddb0d75d9845532c95a6d3a96a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005102"
+ },
+ "ea-PDO-ES-A0510.json": {
+  "bytes": 3432,
+  "fetched": "2026-10-16T13:20:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003901",
+  "sha256": "b9a0d8390f8be76d6d7880b9b19db8f0ff9868aa44d5b26ad51e7edfb5eecd89",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000003901"
+ },
+ "ea-PDO-ES-A0534.json": {
+  "bytes": 1466,
+  "fetched": "2026-10-16T13:20:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005662",
+  "sha256": "8420369fdcdeaf5ec562c2e1bd058d244024adbf6105da444523488d5e3aafe9",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005662"
+ },
+ "ea-PDO-ES-A0536.json": {
+  "bytes": 2370,
+  "fetched": "2026-10-16T13:22:22+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006158",
+  "sha256": "d25584cc1a4d16e2dc624f59d5b2d3d25a782d0b6a5f2fabe5cefcbb0a864973",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006158"
+ },
+ "ea-PDO-ES-A0606.json": {
+  "bytes": 2665,
+  "fetched": "2026-10-16T13:22:22+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006159",
+  "sha256": "1353abc71960d2c57c6e1d830ec168c3f316e9818c9cac7bd0b2d0e9811a6fc3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006159"
+ },
+ "ea-PDO-ES-A0613.json": {
+  "bytes": 2778,
+  "fetched": "2026-10-16T13:20:42+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005353",
+  "sha256": "59d7ea964105ab2ad42843d427b1bad97ef6d89d9021d540c44e7a27da6e6e45",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005353"
+ },
+ "ea-PDO-ES-A0614.json": {
+  "bytes": 3164,
+  "fetched": "2026-10-16T13:20:42+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005681",
+  "sha256": "e812b289179d3bbc96466012e6adea8d0d276b2cf27577aa8510251bab0da693",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005681"
+ },
+ "ea-PDO-ES-A0615.json": {
+  "bytes": 2524,
+  "fetched": "2026-10-16T13:20:42+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005922",
+  "sha256": "6d20cb4ee6da029a2554703a4c112b07d12e9d036a7fae9e660ae30834dddac8",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005922"
+ },
+ "ea-PDO-ES-A0622.json": {
+  "bytes": 2668,
+  "fetched": "2026-10-16T13:20:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005929",
+  "sha256": "662e35d4b9986737a7ac4d96992f8b314194e8c43354f69b96052f38a81a9e99",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005929"
+ },
+ "ea-PDO-ES-A0626.json": {
+  "bytes": 2766,
+  "fetched": "2026-10-16T13:21:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005934",
+  "sha256": "11aa85ade24f2a194792ff257df9a04f1d1f5215ef95bff589f4734b13a918cd",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005934"
+ },
+ "ea-PDO-ES-A0631.json": {
+  "bytes": 3027,
+  "fetched": "2026-10-16T13:21:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005943",
+  "sha256": "cc0c8cbcbd6f20f56336e90fc852208f117cdf413a226ea6a7fad101e46e028c",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005943"
+ },
+ "ea-PDO-ES-A0634.json": {
+  "bytes": 2940,
+  "fetched": "2026-10-16T13:21:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005963",
+  "sha256": "8145790fb3081ef8120b14e739da7f95e89a9781b187f8f6bfbc8e5bc7323c37",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005963"
+ },
+ "ea-PDO-ES-A0646.json": {
+  "bytes": 2382,
+  "fetched": "2026-10-16T13:21:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006153",
+  "sha256": "ab2ff81c3db77103ab7fdf2cd3dfb5a2c0a5916f75ff5b863cb63a606352974c",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006153"
+ },
+ "ea-PDO-ES-A0732.json": {
+  "bytes": 3615,
+  "fetched": "2026-10-16T13:22:32+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006424",
+  "sha256": "1384f886b0d25ccc726046b1b46facaa60e0792ab35a977661138447e824b2f3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006424"
+ },
+ "ea-PDO-ES-A0735.json": {
+  "bytes": 3038,
+  "fetched": "2026-10-16T13:20:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006393",
+  "sha256": "1cd067a807728e757579126c6b828f8c184c11f95a01e93e5540870b09a645a3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006393"
+ },
+ "ea-PDO-ES-A0741.json": {
+  "bytes": 3472,
+  "fetched": "2026-10-16T13:22:33+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006487",
+  "sha256": "fbc39b70971d612c6d6578288591aa7c4f0e26d9e03a703bb2302d82bd51bb0f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006487"
+ },
+ "ea-PDO-ES-A0746.json": {
+  "bytes": 3553,
+  "fetched": "2026-10-16T13:22:33+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006542",
+  "sha256": "ca6e39896dac21df12921b696acaf4dc71e7fc38842bc2a3844d27a49e97966f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006542"
+ },
+ "ea-PDO-ES-A0747.json": {
+  "bytes": 2467,
+  "fetched": "2026-10-16T13:21:10+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006155",
+  "sha256": "df659713e886020bc5458ea23d94e4b47d87bcd2537c53cc72340adc288c40de",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006155"
+ },
+ "ea-PDO-ES-A0872.json": {
+  "bytes": 6211,
+  "fetched": "2026-10-16T13:22:52+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006603",
+  "sha256": "2f92d96803b295ffffd0a091f538a2f3d29d54719bba704d65bd6051655441cb",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006603"
+ },
+ "ea-PDO-ES-A0874.json": {
+  "bytes": 5899,
+  "fetched": "2026-10-16T13:22:52+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006601",
+  "sha256": "ace0699465cc0bef79368e5c9458c4c6604d2e1c540da9e1d60bd37a16c11622",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006601"
+ },
+ "ea-PDO-ES-A0882.json": {
+  "bytes": 3020,
+  "fetched": "2026-10-16T13:20:59+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005961",
+  "sha256": "29dc7d8fd67532f3ad48dd607942e953bb861e92f8a964f504dd9f037c8e4320",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005961"
+ },
+ "ea-PDO-ES-A0886.json": {
+  "bytes": 5010,
+  "fetched": "2026-10-16T13:21:01+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006149",
+  "sha256": "0992d3fb9363a69c32bdd58da23040fb1c1c9513a253ad3107bebb277741e18d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006149"
+ },
+ "ea-PDO-ES-A0889.json": {
+  "bytes": 2762,
+  "fetched": "2026-10-16T13:21:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006442",
+  "sha256": "3590cfdd4029e68ed226c19f4ff332b6920b8ddc0a5848003e4a885a8032eb8f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006442"
+ },
+ "ea-PDO-ES-A0940.json": {
+  "bytes": 1633,
+  "fetched": "2026-10-16T13:22:43+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006249",
+  "sha256": "cdcff4804375b062478111f3c77058b1a4747674e344b57a3e05522d35bbd803",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006249"
+ },
+ "ea-PDO-ES-A0941.json": {
+  "bytes": 2961,
+  "fetched": "2026-10-16T13:22:43+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006285",
+  "sha256": "a21ffb80c0615f638b3ceeb665c6710cb9062d545f1e51435ec9cb7d1521174f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006285"
+ },
+ "ea-PDO-ES-A0975.json": {
+  "bytes": 3369,
+  "fetched": "2026-10-16T13:20:28+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006829",
+  "sha256": "1225f9af350bd38d1e7ff84ee3b640c5b3e2071aeb20632b731b0aad8110192d",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006829"
+ },
+ "ea-PDO-ES-A0980.json": {
+  "bytes": 3381,
+  "fetched": "2026-10-16T13:20:31+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006868",
+  "sha256": "e2d57e024f94f500af0da7ef9f327b7cd68e775eec13b97d6c26157aa77f3bef",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006868"
+ },
+ "ea-PDO-ES-A1038.json": {
+  "bytes": 8198,
+  "fetched": "2026-10-16T13:20:28+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006910",
+  "sha256": "039ea185e2a51c3d6552a18351961010635793b759a48f918f43912922a7f876",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006910"
+ },
+ "ea-PDO-ES-A1040.json": {
+  "bytes": 3507,
+  "fetched": "2026-10-16T13:20:32+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006873",
+  "sha256": "26615489c1f5463318028fb0f1a5ea3c1b8b47bd2ced9577e60da6b61cbf6f77",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006873"
+ },
+ "ea-PDO-ES-A1056.json": {
+  "bytes": 6021,
+  "fetched": "2026-10-16T13:20:27+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006968",
+  "sha256": "7b8be615f20af9ce7e96d273dc8481af387282e1d67b9df31f4d6acc0afc0fe0",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006968"
+ },
+ "ea-PDO-ES-A1114.json": {
+  "bytes": 2593,
+  "fetched": "2026-10-16T13:22:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006622",
+  "sha256": "ead90debf7b323b494c8e83c584fbd252a7449632d3dedc1e63e47146e1e4b90",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006622"
+ },
+ "ea-PDO-ES-A1119.json": {
+  "bytes": 2422,
+  "fetched": "2026-10-16T13:22:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006702",
+  "sha256": "d870eb007ee2aa83775dc1ba6ca7b0e7e0d9c40047b49a33c8ccf60941426c5e",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006702"
+ },
+ "ea-PDO-ES-A1123.json": {
+  "bytes": 2766,
+  "fetched": "2026-10-16T13:22:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006843",
+  "sha256": "61678c6eddd29b8b0b27991c4d91be14c0904afa38b6f411b2503bca4be902fe",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006843"
+ },
+ "ea-PDO-ES-A1128.json": {
+  "bytes": 2807,
+  "fetched": "2026-10-16T13:22:20+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006870",
+  "sha256": "1177d14cb38edeb708938c356026448beddbb75066870cac5ddac76ef3c221b2",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006870"
+ },
+ "ea-PDO-ES-A1132.json": {
+  "bytes": 2502,
+  "fetched": "2026-10-16T13:22:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006903",
+  "sha256": "8cba4dd2d89a118aca5552c366aa6a5597ff0f9c560abc93fc9418061aee1dd7",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006903"
+ },
+ "ea-PDO-ES-A1250.json": {
+  "bytes": 2954,
+  "fetched": "2026-10-16T13:20:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006861",
+  "sha256": "af2d8c3cb3f61906f8f0048c2a8d020af471c239682435264f43ad458e8fe178",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006861"
+ },
+ "ea-PDO-ES-A1295.json": {
+  "bytes": 3109,
+  "fetched": "2026-10-16T13:22:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005462",
+  "sha256": "2f0db3497f8ef89d3d3bf86475c3140925cbc411b2db845c0ad0ae55a7c7ab4a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000005462"
+ },
+ "ea-PDO-ES-A1422.json": {
+  "bytes": 5559,
+  "fetched": "2026-10-16T13:22:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007120",
+  "sha256": "32f23fda30b535b6b41d33653b1e6016285ba59fb3c92d62436a4bbfecda968a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007120"
+ },
+ "ea-PDO-ES-A1423.json": {
+  "bytes": 5112,
+  "fetched": "2026-10-16T13:22:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007117",
+  "sha256": "be93343af5d3efff77da54936dfc887c3e8990c5e46f3509e97014c31374a6d3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007117"
+ },
+ "ea-PDO-ES-A1475.json": {
+  "bytes": 3107,
+  "fetched": "2026-10-16T13:20:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007206",
+  "sha256": "4f91100292a19e4f0ba3f1e75969aca7754de5302bb1e942f0b4ceee99241f66",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007206"
+ },
+ "ea-PDO-ES-A1478.json": {
+  "bytes": 2390,
+  "fetched": "2026-10-16T13:20:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007202",
+  "sha256": "cb1e7cfe4efcbc63f86a51e467b01b98abf9432f3762809f4303f629aa9ee64f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007202"
+ },
+ "ea-PDO-ES-A1479.json": {
+  "bytes": 4413,
+  "fetched": "2026-10-16T13:20:15+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007201",
+  "sha256": "6c8f1d3af94ca57a4e56902efd23a26e068ed6c9f87a8ac006fffa6e9d9bd907",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007201"
+ },
+ "ea-PDO-ES-A1480.json": {
+  "bytes": 2750,
+  "fetched": "2026-10-16T13:20:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007139",
+  "sha256": "38a1fdbee2350f1390128bfe9f16df76724d51c5b06be9151c2b6a5718202326",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007139"
+ },
+ "ea-PDO-ES-A1481.json": {
+  "bytes": 2034,
+  "fetched": "2026-10-16T13:20:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007135",
+  "sha256": "c716681c8f77c0e133ac62984c1e6d93b58c17a18a8867959ae0de240b026bea",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007135"
+ },
+ "ea-PDO-ES-A1482.json": {
+  "bytes": 3564,
+  "fetched": "2026-10-16T13:20:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007122",
+  "sha256": "ab54808db53e91b8b1bbc05c5bdff606ab73ad6cb991f516306102e8256538c3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007122"
+ },
+ "ea-PDO-ES-A1483.json": {
+  "bytes": 4841,
+  "fetched": "2026-10-16T13:20:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007002",
+  "sha256": "6dc66943a6bd0ca53b77914e9993ca27647328859b198d01660dd63ec0fce3d5",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007002"
+ },
+ "ea-PDO-ES-A1485.json": {
+  "bytes": 3069,
+  "fetched": "2026-10-16T13:20:12+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006984",
+  "sha256": "02a838d686d4024484d49102e8a45622646891f5ad83dfb2e592b2c59266a3ef",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006984"
+ },
+ "ea-PDO-ES-A1511.json": {
+  "bytes": 3515,
+  "fetched": "2026-10-16T13:20:29+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006964",
+  "sha256": "16ac5b37e43331ff346e8882fa550205c0248f9df1c734e6addd6897d0058914",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006964"
+ },
+ "ea-PDO-ES-A1522.json": {
+  "bytes": 1337,
+  "fetched": "2026-10-16T13:20:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007264",
+  "sha256": "b8f8d4d92684952c783bc3b64cdb76a220966407b65fdf3c963c8d175c02db21",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007264"
+ },
+ "ea-PDO-ES-A1523.json": {
+  "bytes": 4656,
+  "fetched": "2026-10-16T13:22:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007121",
+  "sha256": "591c67b56b70706d3bacca0c333888373795ca69961d14e0fc5c2a36fbdbbcaf",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007121"
+ },
+ "ea-PDO-ES-A1525.json": {
+  "bytes": 2498,
+  "fetched": "2026-10-16T13:22:21+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006981",
+  "sha256": "a38b6ba72f1da57494264647be0ac3be5bc3be8657811a0ab1484f8b6aa0885f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006981"
+ },
+ "ea-PDO-ES-A1526.json": {
+  "bytes": 3725,
+  "fetched": "2026-10-16T13:22:33+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006682",
+  "sha256": "1688c5a1c12a44c30dd55c8033da13081cfd53023a82b9ddb9cc51b2e50df526",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000006682"
+ },
+ "ea-PDO-ES-A1548.json": {
+  "bytes": 8346,
+  "fetched": "2026-10-16T13:22:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007268",
+  "sha256": "ba2b672529c349d9472c2e5d72719255833b3b94e987ceafcbed1798b3eace71",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007268"
+ },
+ "ea-PDO-ES-A1549.json": {
+  "bytes": 5169,
+  "fetched": "2026-10-16T13:22:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007115",
+  "sha256": "1fe17b19e06e85eef8367d0d93c2ce050da79953ea81d02afec3ccee2c3645ec",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007115"
+ },
+ "ea-PDO-ES-A1550.json": {
+  "bytes": 2856,
+  "fetched": "2026-10-16T13:22:16+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007301",
+  "sha256": "dc8d0a887ec55c7ff55dfca2cb12cb15edd66ff9bb9b5bac0ccce7982f9d15ff",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007301"
+ },
+ "ea-PDO-ES-A1551.json": {
+  "bytes": 2508,
+  "fetched": "2026-10-16T13:22:17+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007127",
+  "sha256": "30ee7130f8599d8498db7f2fc1168c905a987e8b4410fe5e8e987e4ad7d9b812",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007127"
+ },
+ "ea-PDO-ES-A1555.json": {
+  "bytes": 5453,
+  "fetched": "2026-10-16T13:22:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007302",
+  "sha256": "e51970c06ae29f21b33bfcf8f067b9220576f248543c6c0a3093118a22c3150e",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007302"
+ },
+ "ea-PDO-ES-A1556.json": {
+  "bytes": 5011,
+  "fetched": "2026-10-16T13:22:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007321",
+  "sha256": "38c3a9852899c97be5d1638fb5c66504145396852fce364e1d0ce8b211ca371b",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007321"
+ },
+ "ea-PDO-ES-A1557.json": {
+  "bytes": 4456,
+  "fetched": "2026-10-16T13:22:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007322",
+  "sha256": "1ce4955f6476ee8bef871e70b373b49456a3e978f90e884751f7310f69caaaca",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007322"
+ },
+ "ea-PDO-ES-A1560.json": {
+  "bytes": 5990,
+  "fetched": "2026-10-16T13:22:18+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007131",
+  "sha256": "a2449d507f53223de3c091e97ca93219847d01fbf01af6fc6819227c93b249db",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007131"
+ },
+ "ea-PDO-ES-N1637.json": {
+  "bytes": 2389,
+  "fetched": "2026-10-16T13:34:50+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007821",
+  "sha256": "a0efc8ecc154b39b4f64733e85477aabfb7e1a8705bdafaebf6611fcb85c8d6a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000007821"
+ },
+ "ea-PDO-ES-N1665.json": {
+  "bytes": 3182,
+  "fetched": "2026-10-16T13:34:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000008543",
+  "sha256": "bd696c786495f8463d2cae0978ab0867028f7bf0b144193c8827ff57a4debe8c",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000008543"
+ },
+ "ea-PDO-ES-N1876.json": {
+  "bytes": 1648,
+  "fetched": "2026-10-16T13:34:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000012282",
+  "sha256": "0ab03b22ccde2fc7caf077d1a9ac1a72d7604f8eeea5ec36785cc0947ae78e80",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications/EUGI00000012282"
+ },
+ "ea-search-PDO-ES-01895.json": {
+  "bytes": 2435,
+  "fetched": "2026-10-16T13:21:38+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=La%20Jaraba",
+  "sha256": "f89856c695ed0b15aedd65cd9d0d246c2200a3dc81088ab91a380d0b62e910bd",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=La%20Jaraba"
+ },
+ "ea-search-PDO-ES-02085.json": {
+  "bytes": 2436,
+  "fetched": "2026-10-16T13:22:14+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Vallegarc%C3%ADa",
+  "sha256": "e836f79abf51e1e9ad522accdd32b3abee366e19eaa9d89147b11af96cb0d4be",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Vallegarc%C3%ADa"
+ },
+ "ea-search-PDO-ES-02086.json": {
+  "bytes": 2363,
+  "fetched": "2026-10-16T13:22:51+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Tharsys",
+  "sha256": "359fa7f872550b3df4244d041474bb20f3fd668bc0370debac7d57a7b536c4a9",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Tharsys"
+ },
+ "ea-search-PDO-ES-02228.json": {
+  "bytes": 2437,
+  "fetched": "2026-10-16T13:21:47+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Los%20Cerrillos",
+  "sha256": "9b1c8cdda56bd7f7e96e7881a7147947f527c83fd088be6f8db56c5cba927876",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Los%20Cerrillos"
+ },
+ "ea-search-PDO-ES-02348.json": {
+  "bytes": 4773,
+  "fetched": "2026-10-16T13:20:50+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Cebreros",
+  "sha256": "f478beac289b8f21bc94385d182523be71f7198b25a7ca2cb084ae9fef42cf56",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Cebreros"
+ },
+ "ea-search-PDO-ES-02481.json": {
+  "bytes": 2991,
+  "fetched": "2026-10-16T13:20:41+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Abad%C3%ADa%20Retuerta",
+  "sha256": "a2c5b112a8fcd39dfefb998a9bdea67c0c2318212666e3d3e83c01dce4560fb0",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Abad%C3%ADa%20Retuerta"
+ },
+ "ea-search-PDO-ES-02485.json": {
+  "bytes": 2585,
+  "fetched": "2026-10-16T13:21:09+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Urue%C3%B1a",
+  "sha256": "f3d1780ef5a810c28d2a7fdccf852447b2bdd82f4889d2cd11f5f704a6b8d129",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Urue%C3%B1a"
+ },
+ "ea-search-PDO-ES-02585.json": {
+  "bytes": 1342,
+  "fetched": "2026-10-16T13:20:26+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Urbezo",
+  "sha256": "426e8566891459ffdd344c08095ac699ffdeaddf3ebdae42d0918b5c17168bac",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Urbezo"
+ },
+ "ea-search-PDO-ES-02592.json": {
+  "bytes": 3782,
+  "fetched": "2026-10-16T13:20:59+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Dehesa%20Pe%C3%B1alba",
+  "sha256": "857a7dd76d20be7a19fbbf4f5ab7df38f31d7bd2ced8e3196db78a4e9819ead3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Dehesa%20Pe%C3%B1alba"
+ },
+ "ea-search-PDO-ES-02870.json": {
+  "bytes": 5092,
+  "fetched": "2026-10-16T13:21:19+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Campo%20de%20Calatrava",
+  "sha256": "70e3966182a09ef37a5d2ec44c176968b607fe71fbc2a6f47fd5064320f0396a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Campo%20de%20Calatrava"
+ },
+ "ea-search-PDO-ES-02880.json": {
+  "bytes": 2231,
+  "fetched": "2026-10-16T13:22:05+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Rosalejo",
+  "sha256": "bc18bbf6fb4ec1b62d3b8473f1fc581b34e43b4980819d26ef304e64446b71e8",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Rosalejo"
+ },
+ "ea-search-PDO-ES-03003.json": {
+  "bytes": 1340,
+  "fetched": "2026-10-16T13:21:57+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=R%C3%ADo%20Negro",
+  "sha256": "a92979c063e32324604dc52174718da249722c699b0d8c21c1befe3fee0cf38e",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=R%C3%ADo%20Negro"
+ },
+ "ea-search-PDO-ES-N1634.json": {
+  "bytes": 2429,
+  "fetched": "2026-10-16T13:21:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=El%20Vicario",
+  "sha256": "50f369ef2398e33629a3d13fed229be4e130c35c1cb535947ecefa096c04bb29",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=El%20Vicario"
+ },
+ "ea-search-PDO-ES-N1637.json": {
+  "bytes": 2391,
+  "fetched": "2026-10-16T13:22:42+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Chozas%20Carrascal",
+  "sha256": "89e070c62831997f5cddd3ace233fc681e3eda4d40076c45162e955a6126ee20",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Chozas%20Carrascal"
+ },
+ "ea-search-PDO-ES-N1665.json": {
+  "bytes": 3184,
+  "fetched": "2026-10-16T13:23:00+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Vera%20de%20Estenas",
+  "sha256": "0a96319d8f2fb21a25c54539fb924e3b445125f6658da0de7be85827ff95b8a2",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Vera%20de%20Estenas"
+ },
+ "ea-search-PDO-ES-N1876.json": {
+  "bytes": 1650,
+  "fetched": "2026-10-16T13:22:30+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Bolandin",
+  "sha256": "986ac5d54da8935f179a07c3baab2beee69bea6487e6b22255b36745d5c668ce",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?namelike=Bolandin"
+ },
+ "eambrosia-api-docs.json": {
+  "bytes": 14723,
+  "fetched": "2026-10-16T13:17:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/v3/api-docs",
+  "sha256": "f7e6eeb7277df730596f5a917c7a56771466166f396094027bbcf09d2d780c8f",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/v3/api-docs"
+ },
+ "eambrosia-api-gi-search.json": {
+  "bytes": 6648222,
+  "fetched": "2026-10-16T13:18:13+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?fileNumber=PDO-ES-A0615",
+  "sha256": "6226af20d569698196a383e008c087a54480fdd699284cc66a9600c913dc7c20",
+  "status": 200,
+  "truncated": true,
+  "type": "application/json;charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications?fileNumber=PDO-ES-A0615"
+ },
+ "eambrosia-api-root.html": {
+  "bytes": 5109,
+  "fetched": "2026-10-16T13:17:54+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/",
+  "sha256": "af95ed3ca333c03534175a5de0a2d16ba3d7a861bf16d2f7036ab7ae904f047e",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/"
+ },
+ "eambrosia-api-swagger.html": {
+  "bytes": 1699,
+  "fetched": "2026-10-16T13:17:55+00:00",
+  "final_url": "https://webgate.ec.europa.eu/eambrosia-api/swagger-ui/index.html",
+  "sha256": "a1e42e2a3faad52f818e1f528c1ec9701fd03f0a580a314562d9b15d6698a5dd",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/swagger-ui/index.html"
+ },
+ "ign-au-sample.json": {
+  "bytes": 286923,
+  "fetched": "2026-10-16T13:18:15+00:00",
+  "final_url": "https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=2",
+  "sha256": "ca62a493303052e7eff15116caa3d98aecdda26a52bcac2ab542d522b8cec346",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=2"
+ },
+ "ign-collections.json": {
+  "bytes": 75871,
+  "fetched": "2026-10-16T13:18:13+00:00",
+  "final_url": "https://api-features.ign.es/collections?f=json",
+  "sha256": "3344f50484382e3ce90c9704f2e8a6f06c10ea32e3c91cba2a3ca09674abaaa3",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://api-features.ign.es/collections?f=json"
+ },
+ "incavi-plecs.html": {
+  "bytes": 75661,
+  "fetched": "2026-10-16T13:18:19+00:00",
+  "final_url": "https://incavi.gencat.cat/ca/normativa/plecs-condicions-do-catalanes",
+  "sha256": "036602447e174de6d4fbf7a9e5ddf5f1fdd2b486b0eb77b49b21b3987605c997",
+  "status": 200,
+  "truncated": false,
+  "type": "text/html;charset=utf-8",
+  "url": "https://incavi.gencat.cat/ca/normativa/plecs-condicions-do-catalanes/"
+ },
+ "itacyl-calidad.html": {
+  "bytes": 663,
+  "fetched": "2026-10-16T13:49:27+00:00",
+  "final_url": "https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad",
+  "sha256": "28f4f6fa158776d7927da73c94467b262bcc88d4762269321eb599352cc823c4",
+  "status": 404,
+  "truncated": false,
+  "type": "text/html;charset=UTF-8",
+  "url": "https://www.itacyl.es/calidad-diferenciada/figuras-de-calidad"
+ },
+ "mapa-ogc-collections.json": {
+  "bytes": 121863,
+  "fetched": "2026-10-16T13:18:16+00:00",
+  "final_url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json",
+  "sha256": "0726bf8235a2e1a606f6dc548bcde91228a234f41bf34162aa23b1be0ea33a94",
+  "status": 200,
+  "truncated": false,
+  "type": "application/json",
+  "url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections?f=json"
+ },
+ "oj-PDO-ES-01895-C_57_13_2_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:27+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0005.01.SPA&toc=OJ:C:2019:057:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0005.01.SPA&toc=OJ:C:2019:057:FULL"
+ },
+ "oj-PDO-ES-02085-C_57_13_2_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:27+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0010.01.SPA&toc=OJ:C:2019:057:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0010.01.SPA&toc=OJ:C:2019:057:FULL"
+ },
+ "oj-PDO-ES-02228-C_57_13_2_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:27+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0016.01.SPA&toc=OJ:C:2019:057:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0016.01.SPA&toc=OJ:C:2019:057:FULL"
+ },
+ "oj-PDO-ES-02348-C_438_5_12_2018.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.438.01.0002.01.SPA&toc=OJ:C:2018:438:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.438.01.0002.01.SPA&toc=OJ:C:2018:438:FULL"
+ },
+ "oj-PDO-ES-02348-C_C_2025_296_9_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500296",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500296"
+ },
+ "oj-PDO-ES-02585-C_C_2024_1738_26_02_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401738",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401738"
+ },
+ "oj-PDO-ES-02870-C_2023_597_30_10_2023.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300597",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300597"
+ },
+ "oj-PDO-ES-02870-C_C_2026_371_19_1_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600371",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600371"
+ },
+ "oj-PDO-ES-02880-C_2023_1053_21_11_23.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202301053",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202301053"
+ },
+ "oj-PDO-ES-03003-C_C_2024_7000_21_11_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407000",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407000"
+ },
+ "oj-PDO-ES-A0043-C_254_3_8_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.254.01.0006.01.SPA&toc=OJ:C:2020:254:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.254.01.0006.01.SPA&toc=OJ:C:2020:254:TOC"
+ },
+ "oj-PDO-ES-A0043-C_C_2025_6770_22_12_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506770",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506770"
+ },
+ "oj-PDO-ES-A0044-C194_17_06_2017.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.194.01.0033.01.SPA&toc=OJ:C:2017:194:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.194.01.0033.01.SPA&toc=OJ:C:2017:194:TOC"
+ },
+ "oj-PDO-ES-A0044-C_C_2025_1285_3_3_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501384",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501384"
+ },
+ "oj-PDO-ES-A0044-C_C_2026_3796_17_7_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603796",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603796"
+ },
+ "oj-PDO-ES-A0045-C_C_2025_2240_10_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502240",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502240"
+ },
+ "oj-PDO-ES-A0045-C_C_2026_1048_19_2_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601048",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601048"
+ },
+ "oj-PDO-ES-A0046-C_C_2025_2023_2_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502023",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502023"
+ },
+ "oj-PDO-ES-A0046-C_C_2026_3565_3_7_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603565",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603565"
+ },
+ "oj-PDO-ES-A0047-C194_17_06_2017.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.194.01.0041.01.SPA&toc=OJ:C:2017:194:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.194.01.0041.01.SPA&toc=OJ:C:2017:194:TOC"
+ },
+ "oj-PDO-ES-A0050-C_C_2026_897_09_02_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600897",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600897"
+ },
+ "oj-PDO-ES-A0051-C_325_30_09_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.325.01.0023.01.FRA&toc=OJ:C:2019:325:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.325.01.0023.01.FRA&toc=OJ:C:2019:325:TOC"
+ },
+ "oj-PDO-ES-A0051-C_5_9_01_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.005.01.0007.01.SPA&toc=OJ:C:2020:005:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.005.01.0007.01.SPA&toc=OJ:C:2020:005:TOC"
+ },
+ "oj-PDO-ES-A0054-C_74_27_2_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.074.01.0003.01.SPA&toc=OJ:C:2019:074:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.074.01.0003.01.SPA&toc=OJ:C:2019:074:FULL"
+ },
+ "oj-PDO-ES-A0109-C_C_2025_1605_10_3_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501605",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501605"
+ },
+ "oj-PDO-ES-A0109-C_C_2025_3208_11_6_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503208",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503208"
+ },
+ "oj-PDO-ES-A0112-C_C_2025_4097_21_7_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202504097",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202504097"
+ },
+ "oj-PDO-ES-A0113-C_C_2025_1678_11_3_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501678",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501678"
+ },
+ "oj-PDO-ES-A0115-C272_03_08_2018.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.272.01.0003.01.SPA&toc=OJ:C:2018:272:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.272.01.0003.01.SPA&toc=OJ:C:2018:272:TOC"
+ },
+ "oj-PDO-ES-A0117-C_152_07_05_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.152.01.0006.01.SPA&toc=OJ:C:2020:152:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.152.01.0006.01.SPA&toc=OJ:C:2020:152:TOC"
+ },
+ "oj-PDO-ES-A0117-C_C_2024_6466_30_10_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406466",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406466"
+ },
+ "oj-PDO-ES-A0117-C_C_2026_565_29_1_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:28+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600565",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600565"
+ },
+ "oj-PDO-ES-A0127-C_307_16_9_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.307.01.0004.01.SPA&toc=OJ:C:2020:307:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.307.01.0004.01.SPA&toc=OJ:C:2020:307:TOC"
+ },
+ "oj-PDO-ES-A0127-C_C_2025_297_10_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500297",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500297"
+ },
+ "oj-PDO-ES-A0180-C_227_10_7_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.227.01.0021.01.SPA&toc=OJ:C:2020:227:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.227.01.0021.01.SPA&toc=OJ:C:2020:227:TOC"
+ },
+ "oj-PDO-ES-A0182-C_C_2026_747_5_2_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600747",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600747"
+ },
+ "oj-PDO-ES-A0183-C_C_2026_4824_22_9_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604824",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604824"
+ },
+ "oj-PDO-ES-A0183-C_C_2026_771_5_2_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600771",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600771"
+ },
+ "oj-PDO-ES-A0184-C_C_2026_3580_13_7_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603580",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603580"
+ },
+ "oj-PDO-ES-A0606-C_C_2024_3268_27_5_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403268",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403268"
+ },
+ "oj-PDO-ES-A0613-C_C_2025_601_27_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500601",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500601"
+ },
+ "oj-PDO-ES-A0613-C_C_2026_4630_31_8_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604630",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604630"
+ },
+ "oj-PDO-ES-A0614-C_C_2026_743_5_2_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600743",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600743"
+ },
+ "oj-PDO-ES-A0615-C_148_05_05_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.148.01.0006.01.SPA&toc=OJ:C:2020:148:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.148.01.0006.01.SPA&toc=OJ:C:2020:148:TOC"
+ },
+ "oj-PDO-ES-A0622-C70_04_03_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.070.01.0003.01.SPA&toc=OJ:C:2020:070:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.070.01.0003.01.SPA&toc=OJ:C:2020:070:TOC"
+ },
+ "oj-PDO-ES-A0626-C_73_6_3_2020_.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.073.01.0016.01.SPA&toc=OJ:C:2020:073:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.073.01.0016.01.SPA&toc=OJ:C:2020:073:TOC"
+ },
+ "oj-PDO-ES-A0631-C_C_2026_4984_29_9_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604984",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604984"
+ },
+ "oj-PDO-ES-A0634-C_C_2026_4917_23_9_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604917",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604917"
+ },
+ "oj-PDO-ES-A0732-C_C_2025_6777_23_12_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506777",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506777"
+ },
+ "oj-PDO-ES-A0735-C_2024_3122_17_5_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403122",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403122"
+ },
+ "oj-PDO-ES-A0735-C_307_11_9_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.307.01.0012.01.FRA&toc=OJ:C:2019:307:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.307.01.0012.01.FRA&toc=OJ:C:2019:307:TOC"
+ },
+ "oj-PDO-ES-A0735-C_C_2024_6465_30_10_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406465",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202406465"
+ },
+ "oj-PDO-ES-A0735-C_C_2026_241_13_1_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600241",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600241"
+ },
+ "oj-PDO-ES-A0746-C_C_2025_6563_8_12_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506563",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506563"
+ },
+ "oj-PDO-ES-A0872-C_C_2024_7448_18_12_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407448",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407448"
+ },
+ "oj-PDO-ES-A0882-C_439_6_12_2018.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.439.01.0004.01.SPA&toc=OJ:C:2018:439:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.439.01.0004.01.SPA&toc=OJ:C:2018:439:FULL"
+ },
+ "oj-PDO-ES-A0882-C_C_2024_1620_16_2_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401620",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401620"
+ },
+ "oj-PDO-ES-A0886-C_89_18_03_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.089.01.0026.01.SPA&toc=OJ:C:2020:089:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.089.01.0026.01.SPA&toc=OJ:C:2020:089:TOC"
+ },
+ "oj-PDO-ES-A0886-C_C_2024_4493_12_7_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404493",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404493"
+ },
+ "oj-PDO-ES-A0886-C_C_2025_125_3_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500125",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500125"
+ },
+ "oj-PDO-ES-A0889-C69_03_03_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.069.01.0017.01.SPA&toc=OJ:C:2020:069:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.069.01.0017.01.SPA&toc=OJ:C:2020:069:TOC"
+ },
+ "oj-PDO-ES-A0889-C_2024_1949_05_03_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401949",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202401949"
+ },
+ "oj-PDO-ES-A0889-C_C_2025_3217_12_6_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503217",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503217"
+ },
+ "oj-PDO-ES-A0941-C_C_2025_510_28_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500510",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500510"
+ },
+ "oj-PDO-ES-A1038-C284_29_08_2017.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.284.01.0005.01.SPA&toc=OJ:C:2017:284:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2017.284.01.0005.01.SPA&toc=OJ:C:2017:284:TOC"
+ },
+ "oj-PDO-ES-A1038-C_C_2026_1686_17_3_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601686",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601686"
+ },
+ "oj-PDO-ES-A1056-C_C_2025_3321_16_6_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503321",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202503321"
+ },
+ "oj-PDO-ES-A1114-C379_08_11_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0008.01.SPA&toc=OJ:C:2019:379:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0008.01.SPA&toc=OJ:C:2019:379:TOC"
+ },
+ "oj-PDO-ES-A1114-C_C_2025_6565_8_12_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506565",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506565"
+ },
+ "oj-PDO-ES-A1119-C_C_2024_7432_13_12_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407432",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407432"
+ },
+ "oj-PDO-ES-A1123-C_196_11_06_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.196.01.0033.01.SPA&toc=OJ:C:2020:196:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.196.01.0033.01.SPA&toc=OJ:C:2020:196:TOC"
+ },
+ "oj-PDO-ES-A1123-C_C_2025_6457_4_12_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506457",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202506457"
+ },
+ "oj-PDO-ES-A1128-C_C_2024_5456_11_9_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202405456",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202405456"
+ },
+ "oj-PDO-ES-A1128-C_C_2025_2949_28_5_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502949",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502949"
+ },
+ "oj-PDO-ES-A1132-C_C_2025_1383_28_2_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:29+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501383",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202501383"
+ },
+ "oj-PDO-ES-A1422-C_C_2025_458_22_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500458",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500458"
+ },
+ "oj-PDO-ES-A1423-C_217_1_7_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.217.01.0021.01.SPA&toc=OJ:C:2020:217:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.217.01.0021.01.SPA&toc=OJ:C:2020:217:TOC"
+ },
+ "oj-PDO-ES-A1475-C_2023_287_16_10_2023.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300287",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300287"
+ },
+ "oj-PDO-ES-A1475-C_C_2025_954_7_2_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500954",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500954"
+ },
+ "oj-PDO-ES-A1480-C_C_2025_509_28_1_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500509",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202500509"
+ },
+ "oj-PDO-ES-A1482-C_C_2025_2130_8_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502130",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502130"
+ },
+ "oj-PDO-ES-A1482-C_C_2026_4513_24_8_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604513",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604513"
+ },
+ "oj-PDO-ES-A1483-C_C_2025_2129_8_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502129",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502129"
+ },
+ "oj-PDO-ES-A1483-C_C_2026_4549_26_8_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604549",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604549"
+ },
+ "oj-PDO-ES-A1485-C379_08_11_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0013.01.SPA&toc=OJ:C:2019:379:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.379.01.0013.01.SPA&toc=OJ:C:2019:379:TOC"
+ },
+ "oj-PDO-ES-A1485-C_C_2026_4233_31_7_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604233",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202604233"
+ },
+ "oj-PDO-ES-A1522-C_C_2026_1818_19_3_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601818",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202601818"
+ },
+ "oj-PDO-ES-A1523-C_38_31_1_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.038.01.0006.01.SPA&toc=OJ:C:2019:038:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.038.01.0006.01.SPA&toc=OJ:C:2019:038:FULL"
+ },
+ "oj-PDO-ES-A1523-C_C_2025_2465_25_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502465",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502465"
+ },
+ "oj-PDO-ES-A1525-C_398_5_11_2018.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.398.01.0008.01.SPA&toc=OJ:C:2018:398:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.398.01.0008.01.SPA&toc=OJ:C:2018:398:TOC"
+ },
+ "oj-PDO-ES-A1525-C_C_2025_2458_25_4_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502458",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202502458"
+ },
+ "oj-PDO-ES-A1526-C_C_2024_4680_25_7_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404680",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202404680"
+ },
+ "oj-PDO-ES-A1548-C_C_2025_4117_24_7_2025.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202504117",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202504117"
+ },
+ "oj-PDO-ES-A1549-C_437_4_12_2018.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.437.01.0005.01.SPA&toc=OJ:C:2018:437:FULL",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2018.437.01.0005.01.SPA&toc=OJ:C:2018:437:FULL"
+ },
+ "oj-PDO-ES-A1549-C_C_2024_3814_14_6_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403814",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202403814"
+ },
+ "oj-PDO-ES-A1551-C232_10_7_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.232.01.0013.01.FRA&toc=OJ:C:2019:232:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.232.01.0013.01.FRA&toc=OJ:C:2019:232:TOC"
+ },
+ "oj-PDO-ES-A1551-C_C_2026_2777_19_5_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202602777",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202602777"
+ },
+ "oj-PDO-ES-A1555-C_2023_892_10_11_2023.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300892",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202300892"
+ },
+ "oj-PDO-ES-A1557-C_C_2024_7385_6_12_2024.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407385",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407385"
+ },
+ "oj-PDO-ES-A1560-C316_20_09_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.316.01.0010.01.SPA&toc=OJ:C:2019:316:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.316.01.0010.01.SPA&toc=OJ:C:2019:316:TOC"
+ },
+ "oj-PDO-ES-N1637-C_35_03_02_2020.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.035.01.0011.01.SPA&toc=OJ:C:2020:035:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2020.035.01.0011.01.SPA&toc=OJ:C:2020:035:TOC"
+ },
+ "oj-PDO-ES-N1665-C235_12_7_2019.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.235.01.0024.01.FRA&toc=OJ:C:2019:235:TOC",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.235.01.0024.01.FRA&toc=OJ:C:2019:235:TOC"
+ },
+ "oj-PDO-ES-N1876-C_C_2026_713_30_01_2026.html": {
+  "bytes": 0,
+  "fetched": "2026-10-16T13:49:30+00:00",
+  "final_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600713",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": 202,
+  "type": "text/html; charset=UTF-8",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600713"
+ },
+ "pliego-PDO-ES-02348-cebreros": {
+  "fetched": "2026-10-16T13:50:00+00:00",
+  "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf"
+ },
+ "pliego-PDO-ES-02870-campo-de-calatrava": {
+  "bytes": 226595,
+  "fetched": "2026-10-16T13:42:14+00:00",
+  "final_url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf",
+  "pages": 15,
+  "sha256": "d015d22a1d08a7771249b2ae4fdc61e0001894bf0aa52c2c6b01aea08cfef847",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf"
+ },
+ "pliego-PDO-ES-A0614-arribes": {
+  "fetched": "2026-10-16T13:50:00+00:00",
+  "final_url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf"
+ },
+ "pliego-PDO-ES-A0889-rueda": {
+  "fetched": "2026-10-16T13:50:00+00:00",
+  "final_url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf"
+ },
+ "pliego-PDO-ES-A1128-ribeira-sacra": {
+  "bytes": 569128,
+  "fetched": "2026-10-16T13:44:16+00:00",
+  "final_url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf",
+  "pages": 23,
+  "sha256": "c797770a43188c478ab8ab18c1ba2bfac6532ea7d4c8026975f3896b8507bc22",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf"
+ },
+ "pliego-PDO-ES-A1550-montsant": {
+  "fetched": "2026-10-16T13:50:00+00:00",
+  "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf"
+ }
+}

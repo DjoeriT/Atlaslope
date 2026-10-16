@@ -1,0 +1,17 @@
+{
+ "$comment": "Municipality lists for places the 2014 ministry layer lacks, copied from each pliego's delimited-area section (Review/sources/places/<id>.md). Polygons come from IGN; built by Tools/data/build_boundaries.py in GitHub Actions. Province = INE province code.",
+ "places": {
+  "campo-de-calatrava": {
+   "source": "Pliego de condiciones DOP Campo de Calatrava (PDO-ES-02870), Junta de Castilla-La Mancha, 'definitivo' (apliagri.castillalamancha.es, file of Aug 2025), section on the delimited area, p. 6",
+   "province": "13", "bbox": [-4.6, 38.4, -3.3, 39.3],
+   "municipalities": ["Aldea del Rey", "Almagro", "Argamasilla de Calatrava", "Ballesteros de Calatrava", "Bolaños de Calatrava", "Calzada de Calatrava", "Cañada de Calatrava", "Carrión de Calatrava", "Granátula de Calatrava", "Miguelturra", "Moral de Calatrava", "Pozuelo de Calatrava", "Torralba de Calatrava", "Valenzuela de Calatrava", "Villanueva de San Carlos", "Villar del Pozo"],
+   "left_out": "Polígono 22 parcela 74 of Ciudad Real: one cadastral parcel, too small to draw"
+  },
+  "cebreros": {
+   "source": "Pliego de condiciones DOP Cebreros (PDO-ES-02348), proposal for amendment of 7 Sep 2020 hosted by MAPA (cebreros_2020_09_07_tcm30-512540.pdf), section 4, p. 6; 1,663.16 km²",
+   "province": "05", "bbox": [-5.4, 40.0, -4.1, 40.8],
+   "municipalities": ["La Adrada", "El Barraco", "Burgohondo", "Casavieja", "Casillas", "Cebreros", "Cuevas del Valle", "Fresnedilla", "Gavilanes", "Herradón de Pinares", "Higuera de las Dueñas", "El Hoyo de Pinares", "Lanzahíta", "Mijares", "Mombeltrán", "Navahondilla", "Navalmoral", "Navaluenga", "Navarredondilla", "Navarrevisca", "Navatalgordo", "Pedro Bernardo", "Piedralaves", "San Bartolomé de Pinares", "San Esteban del Valle", "San Juan de la Nava", "San Juan del Molinillo", "Santa Cruz de Pinares", "Santa Cruz del Valle", "Santa María del Tiétar", "Serranillos", "Sotillo de la Adrada", "El Tiemblo", "Villanueva de Ávila", "Villarejo del Valle"],
+   "expected_km2": 1663.16
+  }
+ }
+}
