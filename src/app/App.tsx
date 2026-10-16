@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import places from '../../data/places.json';
 import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
 import { focusFor, validSelection } from '../cards/nav';
+import { grapeNames } from '../facts';
 import { MapView } from '../map/MapView';
 import { loadTree } from '../tree';
 import { parseSelection, parseView, selectionToHash, type Selection, type View } from '../url';
@@ -13,7 +14,7 @@ const here = () => location.pathname + location.search;
 
 export function App() {
   const [theme, toggleTheme] = useTheme();
-  const tree = useMemo(() => loadTree(places), []);
+  const tree = useMemo(() => loadTree(places, grapeNames()), []);
   const [sel, setSel] = useState<Selection>(() => validSelection(tree, parseSelection(location.hash)));
   const selRef = useRef(sel);
   selRef.current = sel;
