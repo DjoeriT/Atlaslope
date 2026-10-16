@@ -1,6 +1,7 @@
 name: publish
 # Started by hand (Actions › publish › Run workflow) or by the thread after the owner's words "publish release N".
-# Re-runs every check on the commit, creates the release-N tag on it, then deploys that commit to GitHub Pages.
+# Re-runs every check on the commit, deploys that commit to GitHub Pages, then creates the release-N tag on it.
+# The tag is created last, only after the deploy succeeded, so a failed run leaves no tag behind and N can be retried.
 # A tag pushed with the workflow token does not start deploy.yml, so the site is deployed once.
 on:
   workflow_dispatch:
@@ -20,6 +21,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   check:
+    # Only the copy of this workflow on main may publish (a run started from another branch would run that branch's checks).
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -52,27 +55,8 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: Tools/check.sh ui
-  tag:
-    needs: check
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.commit }}
-      - name: Create release-N
-        env:
-          RELEASE: ${{ inputs.release }}
-          COMMIT: ${{ inputs.commit }}
-          ACTOR: ${{ github.actor }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git tag -a "release-$RELEASE" "$COMMIT" -m "Release $RELEASE (publish workflow, started by $ACTOR)"
-          git push origin "refs/tags/release-$RELEASE"
   build:
-    needs: tag
+    needs: check
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -103,3 +87,22 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  tag:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit }}
+      - name: Create release-N
+        env:
+          RELEASE: ${{ inputs.release }}
+          COMMIT: ${{ inputs.commit }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "release-$RELEASE" "$COMMIT" -m "Release $RELEASE (publish workflow, started by $ACTOR)"
+          git push origin "refs/tags/release-$RELEASE"

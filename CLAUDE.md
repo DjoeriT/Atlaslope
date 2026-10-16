@@ -82,7 +82,7 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
 
 ## Testing
 - UI tests run against the built site with Playwright, with fixtures instead of the network (a small test GeoJSON, no tile requests).
-  Debug-only query flags (`?fixture=`, `?fresh=1`) live in `src/debug.ts` and must be stripped from the production build (`check.sh` greps `dist/`).
+  Debug-only query flags (`?fixture=`, `?fresh=1`) will live in `src/debug.ts` (from release 3) and must be stripped from the production build (`check.sh` greps `dist/`).
 - Playwright stays pinned to the version that matches the cloud container's preinstalled Chromium.
 - Screenshots cost the most: read the DOM first, screenshot only layout, large text and dark mode.
 

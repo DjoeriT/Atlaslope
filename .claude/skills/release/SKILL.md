@@ -29,7 +29,7 @@ How to talk to the owner during a release:
 
 ## B. After "publish release N"
 1. Start the `publish` workflow (`.github/workflows/publish.yml`) through the GitHub tools with inputs `release` = N and
-   `commit` = the full hash from part A. It re-runs the checks, creates the `release-N` tag and deploys to GitHub Pages.
+   `commit` = the full hash from part A. It re-runs the checks, deploys to GitHub Pages and, only once the deploy succeeded, creates the `release-N` tag. A failed run leaves no tag, so the same N can be started again after the fix.
 2. If the platform refuses to start it, give the owner the one tap: GitHub app › Paraje › Actions › Publish › Run workflow, with N and the
    hash. Then wait for him.
 3. Watch the run through the GitHub tools. Failed: tell the owner with the failing step's output and stop.

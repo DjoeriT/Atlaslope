@@ -34,7 +34,7 @@ out of the repo (`data/raw/` is git-ignored); only processed, simplified files a
 Releases start only with the owner's words "publish release N" (`.claude/skills/release/SKILL.md`).
 1. The slice's pull requests are merged and CI is green on `main`.
 2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
-   It checks the inputs (the commit is on `main`, `release-N` is new and next in line), runs `Tools/check.sh ui`, creates the tag and deploys.
+   It checks the inputs (the commit is on `main`, `release-N` is new and next in line), runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
 3. Check the live site once. Update `docs/PROJECT_CONTEXT.md` section 5 through a pull request.
 
 ## Licence
