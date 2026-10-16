@@ -43,6 +43,21 @@ test('a neighbour opens its own card, and Escape closes it', async ({ page }) =>
   await expect(page.locator('#card')).toBeHidden();
 });
 
+test('focus goes back to the search box when the card closes, and to the views button when its menu closes', async ({ page }) => {
+  await open(page);
+  await page.fill('#search', 'albar');
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#card')).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#card')).toBeHidden();
+  await expect(page.locator('#search')).toBeFocused();
+  await page.click('#views-btn');
+  await expect(page.locator('#views-menu button').first()).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#views-menu')).toBeHidden();
+  await expect(page.locator('#views-btn')).toBeFocused();
+});
+
 test('the close button closes the card', async ({ page }) => {
   await open(page);
   await page.fill('#search', 'albar');

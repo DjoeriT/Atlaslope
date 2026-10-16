@@ -108,10 +108,16 @@ function openCard(entry: Entry): void {
   }
 }
 
+/** Where keyboard focus goes back to when the card closes (the search box, if that is how the card was opened). */
+let opener: HTMLElement | null = null;
+
 function closeCard(): void {
+  const hadFocus = card.contains(document.activeElement);
   card.hidden = true;
   document.body.classList.remove('card-open');
   setSelected(null);
+  if (hadFocus) (opener ?? map.getCanvas()).focus();
+  opener = null;
 }
 
 /** Open the card, then move the map so the DO sits clear of it. */
@@ -160,6 +166,7 @@ function showResults(found: Entry[] | null): void {
 function pick(e: Entry): void {
   input.value = e.name;
   showResults(null);
+  opener = input;
   goTo(e, true);
 }
 
@@ -185,9 +192,11 @@ results.addEventListener('keydown', (e) => {
 const viewsBtn = $<HTMLButtonElement>('views-btn');
 const viewsMenu = $('views-menu');
 function toggleViews(open = viewsMenu.hidden): void {
+  const hadFocus = viewsMenu.contains(document.activeElement);
   viewsMenu.hidden = !open;
   viewsBtn.setAttribute('aria-expanded', String(open));
   if (open) viewsMenu.querySelector('button')?.focus();
+  else if (hadFocus) viewsBtn.focus();
 }
 viewsBtn.addEventListener('click', () => toggleViews());
 function buildViews(views: View[]): void {
