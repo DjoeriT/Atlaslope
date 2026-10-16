@@ -1,0 +1,476 @@
+{
+ "measures": {
+  "kind": "measured",
+  "title": "Measured inside the boundary (Atlaslope, from Mapzen Terrarium elevation)",
+  "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
+  "date": "2026-10-16"
+ },
+ "koppen": {
+  "kind": "measured",
+  "title": "Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020",
+  "url": "https://figshare.com/articles/dataset/21789074",
+  "date": "2023"
+ },
+ "mapa-list": {
+  "kind": "official",
+  "title": "MAPA, list of protected wine names",
+  "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
+  "date": "2026-07-02"
+ },
+ "abona-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0975 (EU single document, Abona)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27970",
+  "date": "2014-06-30"
+ },
+ "alella-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1423 (EU single document, Alella)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38844",
+  "date": "2016-11-25"
+ },
+ "alicante-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1526 (EU single document, Alicante)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31224",
+  "date": "2015-01-23"
+ },
+ "almansa-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0044 (EU single document, Almansa)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28973",
+  "date": "2014-06-27"
+ },
+ "arlanza-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0613 (EU single document, Arlanza)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29334",
+  "date": "2014-06-27"
+ },
+ "arribes-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A0614 (pliego de condiciones, Arribes)",
+  "url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf",
+  "date": "2022-03-25"
+ },
+ "bierzo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0615 (EU single document, Bierzo)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29404",
+  "date": "2014-06-27"
+ },
+ "binissalem-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1056 (EU single document, Binissalem)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27611",
+  "date": "2014-06-25"
+ },
+ "bullas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0536 (EU single document, Bullas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40017",
+  "date": "2017-02-06"
+ },
+ "calatayud-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0247 (EU single document, Calatayud)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29796",
+  "date": "2014-06-30"
+ },
+ "campo-de-borja-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0180 (EU single document, Campo de Borja)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29570",
+  "date": "2014-06-30"
+ },
+ "campo-de-calatrava-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02870 (pliego de condiciones, Campo de Calatrava)",
+  "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf",
+  "date": "2025-08"
+ },
+ "cangas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0119 (EU single document, Cangas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22383",
+  "date": "2014-06-30"
+ },
+ "carinena-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0043 (EU single document, Cariñena)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29279",
+  "date": "2014-06-30"
+ },
+ "cebreros-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02348 (pliego de condiciones, Cebreros)",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf",
+  "date": "2020-09-07"
+ },
+ "cigales-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0622 (EU single document, Cigales)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29480",
+  "date": "2014-06-27"
+ },
+ "conca-de-barbera-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1422 (EU single document, Conca de Barberà)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/41521",
+  "date": "2017-04-06"
+ },
+ "condado-de-huelva-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1485 (EU single document, Condado de Huelva)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26603",
+  "date": "2014-06-27"
+ },
+ "costers-del-segre-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1523 (EU single document, Costers del Segre)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30004",
+  "date": "2014-06-30"
+ },
+ "el-hierro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1250 (EU single document, El Hierro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26949",
+  "date": "2014-06-30"
+ },
+ "emporda-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1548 (EU single document, Empordà)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29893",
+  "date": "2014-06-30"
+ },
+ "gran-canaria-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0112 (EU single document, Gran Canaria)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26958",
+  "date": "2014-06-30"
+ },
+ "granada-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1475 (EU single document, Granada)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40602",
+  "date": "2017-03-02"
+ },
+ "jerez-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1483 (EU single document, Jerez-Xérès-Sherry)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25822",
+  "date": "2014-06-27"
+ },
+ "jumilla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0109 (EU single document, Jumilla)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/36898",
+  "date": "2016-07-08"
+ },
+ "la-gomera-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0111 (EU single document, La Gomera)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27006",
+  "date": "2014-06-30"
+ },
+ "la-mancha-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0045 (EU single document, La Mancha)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29848",
+  "date": "2014-06-27"
+ },
+ "la-palma-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0510 (EU single document, La Palma)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27119",
+  "date": "2014-06-30"
+ },
+ "lanzarote-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0113 (EU single document, Lanzarote)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27060",
+  "date": "2014-06-30"
+ },
+ "lebrija-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1478 (EU single document, Lebrija)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26913",
+  "date": "2014-06-27"
+ },
+ "leon-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0882 (EU single document, León)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29723",
+  "date": "2014-06-30"
+ },
+ "malaga-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1481 (EU single document, Málaga)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27145",
+  "date": "2014-06-27"
+ },
+ "manchuela-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0046 (EU single document, Manchuela)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29137",
+  "date": "2014-06-27"
+ },
+ "manzanilla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1482 (EU single document, Manzanilla-Sanlúcar de Barrameda)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27318",
+  "date": "2014-06-27"
+ },
+ "mentrida-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0047 (EU single document, Méntrida)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29190",
+  "date": "2014-06-27"
+ },
+ "mondejar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0048 (EU single document, Mondéjar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29272",
+  "date": "2014-06-27"
+ },
+ "monterrei-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1114 (EU single document, Monterrei)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28929",
+  "date": "2014-06-26"
+ },
+ "montilla-moriles-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1479 (EU single document, Montilla-Moriles)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/37493",
+  "date": "2016-08-11"
+ },
+ "montsant-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A1550 (pliego de condiciones, Montsant)",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf",
+  "date": "2022-09-14"
+ },
+ "navarra-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0127 (EU single document, Navarra)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27552",
+  "date": "2014-06-26"
+ },
+ "penedes-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1551 (EU single document, Penedès)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29997",
+  "date": "2014-06-30"
+ },
+ "pla-de-bages-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1557 (EU single document, Pla de Bages)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35932",
+  "date": "2016-04-15"
+ },
+ "pla-i-llevant-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1038 (EU single document, Pla i Llevant)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27884",
+  "date": "2014-06-25"
+ },
+ "priorat-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1560 (EU single document, Priorat)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30019",
+  "date": "2014-06-30"
+ },
+ "rias-baixas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1119 (EU single document, Rías Baixas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31280",
+  "date": "2014-12-16"
+ },
+ "ribeira-sacra-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A1128 (pliego de condiciones, Ribeira Sacra)",
+  "url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf",
+  "date": "2025-02-18"
+ },
+ "ribeiro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1123 (EU single document, Ribeiro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31230",
+  "date": "2014-12-16"
+ },
+ "ribera-del-duero-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0626 (EU single document, Ribera del Duero)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34149",
+  "date": "2016-01-21"
+ },
+ "ribera-del-guadiana-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1295 (EU single document, Ribera del Guadiana)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28201",
+  "date": "2014-06-30"
+ },
+ "ribera-del-jucar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0049 (EU single document, Ribera del Júcar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29292",
+  "date": "2014-06-27"
+ },
+ "rioja-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0117 (EU single document, Rioja)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985",
+  "date": "2014-11-26"
+ },
+ "rueda-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A0889 (pliego de condiciones, Rueda)",
+  "url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf",
+  "date": "2019-10-29"
+ },
+ "sierra-de-salamanca-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0631 (EU single document, Sierra de Salamanca)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65827",
+  "date": "2014-06-30"
+ },
+ "sierras-de-malaga-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1480 (EU single document, Sierras de Málaga)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27547",
+  "date": "2014-06-27"
+ },
+ "somontano-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0534 (EU single document, Somontano)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29230",
+  "date": "2014-06-30"
+ },
+ "tacoronte-acentejo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0115 (EU single document, Tacoronte-Acentejo)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31318",
+  "date": "2015-01-13"
+ },
+ "tarragona-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1555 (EU single document, Tarragona)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29977",
+  "date": "2014-06-30"
+ },
+ "terra-alta-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1556 (EU single document, Terra Alta)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29860",
+  "date": "2014-06-30"
+ },
+ "tierra-del-vino-de-zamora-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0634 (EU single document, Tierra del Vino de Zamora)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29733",
+  "date": "2014-06-27"
+ },
+ "toro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0886 (EU single document, Toro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29786",
+  "date": "2014-06-27"
+ },
+ "txakoli-alava-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0732 (EU single document, Arabako Txakolina / Txakolí de Álava)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35586",
+  "date": "2016-02-19"
+ },
+ "txakoli-bizkaia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0746 (EU single document, Bizkaiko Txakolina / Txakolí de Bizkaia)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27068",
+  "date": "2014-06-26"
+ },
+ "txakoli-getaria-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0741 (EU single document, Getariako Txakolina / Txakolí de Getaria)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26992",
+  "date": "2014-06-26"
+ },
+ "ucles-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0050 (EU single document, Uclés)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34183",
+  "date": "2016-01-27"
+ },
+ "urbezo-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02585 (pliego de condiciones, Urbezo)",
+  "url": "https://aragon.es/documents/d/guest/pliego_condiciones_dop_urbezo_rgto_ejecucion_2024-2742",
+  "date": "2024-10-25"
+ },
+ "utiel-requena-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0874 (EU single document, Utiel-Requena)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28867",
+  "date": "2014-06-30"
+ },
+ "valdeorras-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1132 (EU single document, Valdeorras)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/39186",
+  "date": "2016-12-19"
+ },
+ "valdepenas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0051 (EU single document, Valdepeñas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29375",
+  "date": "2014-06-27"
+ },
+ "valencia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0872 (EU single document, Valencia)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65829",
+  "date": "2014-06-30"
+ },
+ "valle-de-guimar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0980 (EU single document, Valle de Güímar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27156",
+  "date": "2014-06-30"
+ },
+ "valle-de-la-orotava-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1040 (EU single document, Valle de la Orotava)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27296",
+  "date": "2014-06-30"
+ },
+ "valles-de-benavente-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0646 (EU single document, Valles de Benavente)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29810",
+  "date": "2014-06-27"
+ },
+ "valtiendas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0747 (EU single document, Valtiendas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40814",
+  "date": "2017-03-22"
+ },
+ "vinos-de-madrid-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1525 (EU single document, Vinos de Madrid)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27926",
+  "date": "2014-06-30"
+ },
+ "ycoden-daute-isora-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0114 (EU single document, Ycoden-Daute-Isora)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27335",
+  "date": "2014-06-30"
+ },
+ "yecla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0606 (EU single document, Yecla)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29956",
+  "date": "2014-06-27"
+ }
+}
