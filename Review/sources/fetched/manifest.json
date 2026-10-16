@@ -3907,12 +3907,11 @@
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600713"
  },
  "pliego-PDO-ES-02348-cebreros": {
-  "bytes": 0,
-  "fetched": "2026-10-16T13:42:13+00:00",
+  "fetched": "2026-10-16T13:50:00+00:00",
   "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 0,
-  "type": "error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
   "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf"
  },
  "pliego-PDO-ES-02870-campo-de-calatrava": {
@@ -3926,22 +3925,20 @@
   "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf"
  },
  "pliego-PDO-ES-A0614-arribes": {
-  "bytes": 0,
-  "fetched": "2026-10-16T13:41:57+00:00",
+  "fetched": "2026-10-16T13:50:00+00:00",
   "final_url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 0,
-  "type": "error: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)>",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
   "url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf"
  },
  "pliego-PDO-ES-A0889-rueda": {
-  "bytes": 144865,
-  "fetched": "2026-10-16T13:42:00+00:00",
-  "final_url": "https://www.dorueda.com/wp-content/uploads/2025/05/PCC-DOP-RUEDA_Rev-4.pdf",
-  "sha256": "8d0b2874322fb257c30b7a349f54f41fa9b388ccf6413d5ff98be4942cf3857e",
-  "status": 404,
-  "type": "text/html; charset=UTF-8",
-  "url": "https://www.dorueda.com/wp-content/uploads/2025/05/PCC-DOP-RUEDA_Rev-4.pdf"
+  "fetched": "2026-10-16T13:50:00+00:00",
+  "final_url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
+  "url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf"
  },
  "pliego-PDO-ES-A1128-ribeira-sacra": {
   "bytes": 569128,
@@ -3954,12 +3951,11 @@
   "url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf"
  },
  "pliego-PDO-ES-A1550-montsant": {
-  "bytes": 0,
-  "fetched": "2026-10-16T13:44:15+00:00",
+  "fetched": "2026-10-16T13:50:00+00:00",
   "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf",
-  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "status": 0,
-  "type": "error: URLError: <urlopen error [Errno 111] Connection refused>",
+  "note": "fetched from the cloud container (mapa.gob.es does not answer GitHub Actions); text only",
+  "status": 200,
+  "type": "application/pdf",
   "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf"
  }
 }

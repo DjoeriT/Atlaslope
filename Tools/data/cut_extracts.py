@@ -7,7 +7,7 @@ main grape varieties, the link with the area (soil, climate, altitude) and the l
 newest eAmbrosia attachment or Official Journal notice that holds a full single document, and keeps those sections with their page numbers.
 Writers read only the extract for their place. Extracts are working notes, not shipped data.
 """
-import glob, html, json, re
+import glob, html, json, re, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -16,21 +16,21 @@ OUT = ROOT / "Review/sources/places"
 
 SECTIONS = [  # (key, title, heading pattern); headings vary a little between documents and years
     ("categories", "Wine categories", r"CATEGOR[ÍI]AS DE PRODUCTOS VITIVIN[ÍI]COLAS"),
-    ("wines", "Wine descriptions", r"DESCRIPCI[ÓO]N DEL? \(?(?:DE )?(?:LOS\)? )?VINO|DESCRIPCI[ÓO]N DE LOS VINOS"),
+    ("wines", "Wine descriptions", r"DESCRIPCI[ÓO]N DEL? \(?(?:DE )?(?:LOS\)? )?VINO|DESCRIPCI[ÓO]N DE LOS VINOS|DESCRIPCI[ÓO]N DE LOS PRODUCTOS"),
     ("practices", None, r"PR[ÁA]CTICAS (?:VITIVIN[ÍI]COLAS|ENOL[ÓO]GICAS)"),
-    ("area", "Delimited area", r"ZONA (?:GEOGR[ÁA]FICA )?DELIMITADA|DEMARCACI[ÓO]N DE LA ZONA|DELIMITACI[ÓO]N DE LA ZONA|ZONA GEOGR[ÁA]FICA$"),
+    ("area", "Delimited area", r"ZONA (?:GEOGR[ÁA]FICA )?DELIMITADA|DEMARCACI[ÓO]N DE (?:LA )?ZONA|DELIMITACI[ÓO]N DE LA ZONA|DELIMITACI[ÓO]N DEL [ÁA]REA|ZONA GEOGR[ÁA]FICA$"),
     ("yields", None, r"RENDIMIENTOS? M[ÁA]XIMOS?"),
-    ("grapes", "Main grape varieties", r"(?:PRINCIPALES )?(?:UVAS|VARIEDADES?) DE (?:UVA DE )?VINIFICACI[ÓO]N|VARIEDADES? DE UVA|VARIEDADES? DE VID|VARIEDADES AUTORIZADAS"),
+    ("grapes", "Main grape varieties", r"(?:PRINCIPALES )?(?:UVAS|VARIEDADES?) DE (?:UVA DE )?VINIFICACI[ÓO]N|VARIEDADES? DE UVA|VARIEDADES? DE VID|VARIEDADES AUTORIZADAS|VARIEDAD O VARIEDADES|VARIEDADES VIN[ÍI]FERAS"),
     ("link", "Link with the area (soil, climate, altitude)", r"DESCRIPCI[ÓO]N DEL? \(?(?:DE )?(?:LOS\)? )?V[ÍI]NCULO|V[ÍI]NCULO CON LA ZONA|ELEMENTOS QUE APORTAN EL V[ÍI]NCULO|V[ÍI]NCULO$"),
-    ("extra", None, r"CONDICIONES COMPLEMENTARIAS|REQUISITOS APLICABLES|OTROS DATOS|OTRAS CONDICIONES"),
+    ("extra", None, r"CONDICIONES COMPLEMENTARIAS|REQUISITOS APLICABLES|OTROS DATOS|OTRAS CONDICIONES|DISPOSICIONES APLICABLES|VERIFICACI[ÓO]N DEL CUMPLIMIENTO|OTROS REQUISITOS"),
     ("pliego", "Link to the pliego", r"ENLACE AL PLIEGO|REFERENCIA A LA PUBLICACI[ÓO]N DEL PLIEGO"),
 ]
 ANALYTIC = re.compile(r"Caracter[íi]sticas anal[íi]ticas|[Gg]rado alcoh|volum[ée]trico|[Aa]cidez|anh[íi]drido|Contenido m[áa]ximo|miliequivalentes|por litro|en % vol|gramos|ácido tartárico|sulfuroso|^\s*\(en|^\s*m[íi]nimo|^\s*m[áa]ximo|^\s*litro\)", re.I)
-HEAD = re.compile(r"^\s{0,12}(?:[0-9]{1,2}\.|[IVX]{1,3}\.|[A-Ha-h]\))?\s*(" + "|".join(f"(?P<{k}>{p})" for k, _, p in SECTIONS) + ")", re.I)
+HEAD = re.compile(r"^\s*(?:[0-9]{1,2}\.\s*-?|[IVX]{1,3}\.|[A-Ha-h]\))?\s*(" + "|".join(f"(?P<{k}>{p})" for k, _, p in SECTIONS) + ")", re.I)
 
 
 def text_of(path):
-    t = path.read_text(encoding="utf-8", errors="replace")
+    t = unicodedata.normalize("NFC", path.read_text(encoding="utf-8", errors="replace"))
     if path.suffix == ".html":
         t = re.sub(r"(?s)<(script|style).*?</\1>", "", t)
         t = re.sub(r"<(?:br|/p|/tr|/div|/h\d)[^>]*>", "\n", t, flags=re.I)
@@ -40,12 +40,21 @@ def text_of(path):
 
 
 def cut(t):
-    """Section text with the page it starts on; the first match of each section after the single document heading wins."""
-    start = re.search(r"DOCUMENTO\s+[ÚU]NICO", t) or re.search(r"PLIEGO DE CONDICIONES", t, re.I)
-    if not start: return None
-    body = t[start.start():]
+    """Sections from the single document (or pliego) in t; tries every heading start and keeps the fullest cut."""
+    starts = [m.start() for m in re.finditer(r"DOCUMENTO\s+[ÚU]NICO|PLIEGO DE CONDICIONES", t, re.I)]
+    best = None
+    for s0 in starts:
+        secs = cut_from(t, s0)
+        if secs and (not best or sum(len(v["text"]) for v in secs.values()) > sum(len(v["text"]) for v in best.values())):
+            best = secs
+    return best
+
+
+def cut_from(t, s0):
+    """Section text with the page it starts on; the first match of each section after s0 wins."""
+    body = t[s0:]
     lines = body.split("\n"); found, cur = {}, None
-    page = t[:start.start()].count("\f") + 1
+    page = t[:s0].count("\f") + 1
     for line in lines:
         page += line.count("\f")
         m = HEAD.match(line.replace("\f", ""))
@@ -98,6 +107,7 @@ def main():
                 if key == "wines":  # drop the analytical tables; keep the wine names and the tasting text
                     text = "\n".join(l for l in text.split("\n") if not (ANALYTIC.search(l) and len(l) < 70 and "Fase" not in l) and not re.fullmatch(r"\s*[\d,.\s]*", l))
                     text = re.sub(r"\n{3,}", "\n\n", text)
+                if key == "area" and len(text) > 3000: text = text[:3000] + "\n[… cut; the full list is in the source document]"
                 if key == "wines" and len(text) > 6000: text = text[:6000] + "\n[… cut; see the source document]"
                 if key == "pliego": text = re.sub(r"\s*\n\s*", "", text) if "http" in text else text
                 md += [f"## {title} (p. {secs[key]['page']})", "", text, ""]

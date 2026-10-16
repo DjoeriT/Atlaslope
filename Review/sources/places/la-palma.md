@@ -54,10 +54,6 @@ tradicionales de la zona (retrasando la recolección mediante
 color amarillo dorado hasta el yodado en elaboraciones en blanco y
 color coincidente con los tintos en elaboraciones en tinto y de aspecto
 untuoso. En su fase olfativa, de aroma intenso y los propios de la
-variedad o variedades utilizadas en su elaboración. En su fase
-gustativa serán vinos aterciopelados, equilibrados, intensos y
-potentes, pudiendo presentar toques finales amargos.
-tartárico
 
 ## Delimited area (p. 6)
 
@@ -70,24 +66,26 @@ municipios de Santa Cruz de La Palma, Breña Alta, Breña Baja y Villa
 de Mazo. Subzona Fuencaliente: municipios de Fuencaliente, Los
 Llanos, El Paso y Tazacorte.
 
-## Main grape varieties (p. 6)
+## Main grape varieties (p. 4)
 
-BERMEJUELA, MARMAJUELO
-ALBILLO
-VIJARIEGO BLANCO
-VERDELLO
-TINTILLA
-SABRO
-NEGRAMOLL
-MOSCATEL DE ALEJANDRIA
-MALVASIA VOLCANICA
-MALVASIA ROSADA
-MALVASIA AROMATICA, MALVASIA DE SITGES
-LISTAN NEGRO
-GUAL
-FORASTERA BLANCA
-DORADILLA
-CASTELLANA NEGRA
+gustativa serán vinos aterciopelados, equilibrados, intensos y
+potentes, pudiendo presentar toques finales amargos.
+
+Características analíticas generales
+Grado alcohólico
+volumétrico total máximo
+(en % vol):
+Grado alcohólico              13
+volumétrico adquirido
+mínimo (en % vol):
+Acidez total mínima:      3,5 en gramos por litro expresado en ácido
+tartárico
+Acidez volátil máxima (en 2
+miliequivalentes por
+litro):
+Contenido máximo total
+de anhídrido sulfuroso (en
+miligramos por litro):
 
 ## Link with the area (soil, climate, altitude) (p. 6)
 
