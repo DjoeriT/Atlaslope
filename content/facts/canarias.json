@@ -1,0 +1,780 @@
+{
+ "region": "canarias",
+ "sheets": [
+  {
+   "id": "lanzarote",
+   "why": {
+    "text": "Native grapes cope with 150 mm of rain and wind on volcanic ash, behind stone walls, giving balanced, mineral wines.",
+    "cite": [
+     "lanzarote-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Malvasía Volcánica"
+     }
+    ],
+    "cite": [
+     "lanzarote-wiki",
+     "lanzarote-doc"
+    ],
+    "others": [
+     "Vijariego Blanco",
+     "Syrah",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Listán Negro",
+     "Listán Blanco de Canarias",
+     "Moscatel Negro",
+     "Pedro Ximénez",
+     "Pinot Noir",
+     "Ruby Cabernet",
+     "Tempranillo",
+     "Tintilla",
+     "Torrontés",
+     "Verdello",
+     "Vijariego Negro",
+     "Albillo",
+     "Bastardo (Baboso) Negro",
+     "Brebal",
+     "Burrablanca",
+     "Cabernet Sauvignon",
+     "Gual",
+     "Malvasía Rosada",
+     "Merlot"
+    ],
+    "othersCite": [
+     "lanzarote-doc:p6",
+     "lanzarote-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines, with or without oak; also liqueur, sparkling and sweet wines from overripe grapes.",
+    "cite": [
+     "lanzarote-doc:p1",
+     "lanzarote-doc:p2",
+     "lanzarote-doc:p3",
+     "lanzarote-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Very little rain (150 mm) and wind; vines are shielded by low stone walls.",
+    "cite": [
+     "lanzarote-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic ash of varying thickness.",
+    "cite": [
+     "lanzarote-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "la-palma",
+   "why": {
+    "text": "Native grapes on volcanic soil under an Atlantic climate, with trade winds, wide day-night swings and scarce but sufficient rain.",
+    "cite": [
+     "la-palma-doc:p6",
+     "la-palma-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Albillo",
+     "Vijariego Blanco",
+     "Verdello",
+     "Tintilla",
+     "Sabro",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Gual",
+     "Forastera Blanca",
+     "Doradilla",
+     "Castellana Negra",
+     "Bastardo (Baboso) Blanco",
+     "Bastardo (Baboso) Negro",
+     "Burrablanca",
+     "Listán Blanco de Canarias",
+     "Listán Prieto",
+     "Moscatel Negro",
+     "Pedro Ximénez",
+     "Torrontés",
+     "Vijariego Negro"
+    ],
+    "othersCite": [
+     "la-palma-doc:p6",
+     "la-palma-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado, claret and red wines, plus Tea wines, liqueur, sparkling, needle and sweet wines.",
+    "cite": [
+     "la-palma-doc:p1",
+     "la-palma-doc:p2",
+     "la-palma-doc:p3",
+     "la-palma-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Atlantic, with trade winds; wide swings in temperature over the year and between day and night; scarce but sufficient rain.",
+    "cite": [
+     "la-palma-doc:p6",
+     "la-palma-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic soil.",
+    "cite": [
+     "la-palma-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "tacoronte-acentejo",
+   "why": {
+    "text": "A long growing season and slow ripening on clay-loam and silt-loam soil give intense, aromatic wines.",
+    "cite": [
+     "tacoronte-acentejo-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Vijariego Negro",
+     "Verdello",
+     "Tintilla",
+     "Pedro Ximénez",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Listán Blanco de Canarias",
+     "Gual",
+     "Cabernet Sauvignon",
+     "Burrablanca",
+     "Brebal",
+     "Bermejuela (Marmajuelo)",
+     "Bastardo (Baboso) Negro",
+     "Bastardo (Baboso) Blanco",
+     "Albillo",
+     "Vijariego Blanco",
+     "Torrontés",
+     "Tempranillo",
+     "Syrah",
+     "Sabro",
+     "Ruby Cabernet",
+     "Pinot Noir",
+     "Moscatel Negro",
+     "Merlot",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Listán Prieto",
+     "Forastera Blanca",
+     "Doradilla",
+     "Castellana Negra"
+    ],
+    "othersCite": [
+     "tacoronte-acentejo-doc:p6",
+     "tacoronte-acentejo-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines; also liqueur, sparkling, sweet and naturally sweet wines.",
+    "cite": [
+     "tacoronte-acentejo-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Long vegetative period and slow ripening.",
+    "cite": [
+     "tacoronte-acentejo-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Clay-loam and silt-loam texture.",
+    "cite": [
+     "tacoronte-acentejo-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "valle-de-guimar",
+   "why": {
+    "text": "A sunny basin in south-east Tenerife, with vines from 300 to 1,700 m: porous volcanic soil low down, fertile clay high up.",
+    "cite": [
+     "valle-de-guimar-doc:p8",
+     "valle-de-guimar-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Listán Blanco de Canarias"
+     }
+    ],
+    "cite": [
+     "valle-de-guimar-wiki",
+     "valle-de-guimar-doc:p8"
+    ],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Albillo",
+     "Syrah",
+     "Moscatel de Alejandría",
+     "Merlot",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Bastardo (Baboso) Negro",
+     "Burrablanca",
+     "Cabernet Sauvignon",
+     "Castellana Negra",
+     "Doradilla",
+     "Forastera Blanca",
+     "Gual",
+     "Listán Prieto",
+     "Malvasía Rosada",
+     "Malvasía Volcánica",
+     "Moscatel Negro",
+     "Negramoll",
+     "Pedro Ximénez",
+     "Pinot Noir",
+     "Ruby Cabernet",
+     "Sabro",
+     "Tempranillo",
+     "Tintilla",
+     "Torrontés",
+     "Verdello",
+     "Vijariego Blanco",
+     "Vijariego Negro"
+    ],
+    "othersCite": [
+     "valle-de-guimar-doc:p8",
+     "valle-de-guimar-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry and off-dry whites, rosado and reds; liqueur wines, classic sweet wines and needle wines.",
+    "cite": [
+     "valle-de-guimar-doc:p1",
+     "valle-de-guimar-doc:p2",
+     "valle-de-guimar-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Rain from 161 mm to 504 mm at Izaña a year; very high sunshine, the most sun hours in Spain.",
+    "cite": [
+     "valle-de-guimar-doc:p8",
+     "valle-de-guimar-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Porous volcanic soils at 400 to 800 m; dark, fertile clay soils at 800 to 1,700 m.",
+    "cite": [
+     "valle-de-guimar-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards between 300 and 1,700 m.",
+    "cite": [
+     "valle-de-guimar-doc:p9"
+    ]
+   }
+  },
+  {
+   "id": "valle-de-la-orotava",
+   "why": {
+    "text": "Vines on gentle slopes at 400 to 800 m, with mild temperatures and mostly volcanic soil.",
+    "cite": [
+     "valle-de-la-orotava-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Albillo",
+     "Vijariego Blanco",
+     "Tintilla",
+     "Negramoll",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Listán Blanco de Canarias",
+     "Castellana Negra",
+     "Bastardo (Baboso) Blanco",
+     "Brebal",
+     "Burrablanca",
+     "Doradilla",
+     "Forastera Blanca",
+     "Moscatel de Alejandría",
+     "Pedro Ximénez",
+     "Sabro",
+     "Torrontés",
+     "Verdello"
+    ],
+    "othersCite": [
+     "valle-de-la-orotava-doc:p7",
+     "valle-de-la-orotava-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines; also liqueur, sparkling and classic sweet wines.",
+    "cite": [
+     "valle-de-la-orotava-doc:p1",
+     "valle-de-la-orotava-doc:p2",
+     "valle-de-la-orotava-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mild: summer high 37 °C, winter low 7 °C; about 2,000 sun hours and 465 mm of rain a year.",
+    "cite": [
+     "valle-de-la-orotava-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "About 70% volcanic soil, 20% clay and 10% volcanic rock.",
+    "cite": [
+     "valle-de-la-orotava-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards on gentle slopes at 400 to 800 m.",
+    "cite": [
+     "valle-de-la-orotava-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "ycoden-daute-isora",
+   "why": {
+    "text": "Slopes fall from Teide to the coast, from 1,400 to 50 m, on fertile volcanic soil with trade winds and strong sun.",
+    "cite": [
+     "ycoden-daute-isora-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Listán Blanco de Canarias"
+     }
+    ],
+    "cite": [
+     "ycoden-daute-isora-doc:p6"
+    ],
+    "others": [
+     "Pedro Ximénez",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Listán Negro",
+     "Albillo",
+     "Bastardo (Baboso) Blanco",
+     "Bermejuela (Marmajuelo)",
+     "Doradilla",
+     "Forastera Blanca",
+     "Gual",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Sabro",
+     "Torrontés",
+     "Verdello",
+     "Vijariego Blanco"
+    ],
+    "othersCite": [
+     "ycoden-daute-isora-doc:p6",
+     "ycoden-daute-isora-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines; also liqueur, sparkling and sweet Malvasía wines from overripe grapes.",
+    "cite": [
+     "ycoden-daute-isora-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Shaped by altitude, trade winds, the Atlantic current and strong sunshine.",
+    "cite": [
+     "ycoden-daute-isora-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic; sandy-loam or loam, acid, fertile, low in sodium and potassium.",
+    "cite": [
+     "ycoden-daute-isora-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards from 1,400 m down to 50 m.",
+    "cite": [
+     "ycoden-daute-isora-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "abona",
+   "why": {
+    "text": "Gentle slopes in arid south-east Tenerife, with vines from 300 to 1,700 m, high heat and strong sun.",
+    "cite": [
+     "abona-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Bastardo (Baboso) Negro",
+     "Albillo",
+     "Vijariego Negro",
+     "Verdello",
+     "Tempranillo",
+     "Syrah",
+     "Merlot",
+     "Malvasía Volcánica",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Listán Blanco de Canarias",
+     "Doradilla",
+     "Gual",
+     "Listán Prieto",
+     "Malvasía Rosada",
+     "Moscatel de Alejandría",
+     "Moscatel Negro",
+     "Negramoll",
+     "Pedro Ximénez",
+     "Pinot Noir",
+     "Ruby Cabernet",
+     "Sabro",
+     "Tintilla",
+     "Torrontés",
+     "Vijariego Blanco",
+     "Bastardo (Baboso) Blanco",
+     "Cabernet Sauvignon",
+     "Castellana Negra"
+    ],
+    "othersCite": [
+     "abona-doc:p6",
+     "abona-doc:p7",
+     "abona-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Whites, rosados and reds; also sparkling, needle, liqueur and classic sweet wines.",
+    "cite": [
+     "abona-doc:p1",
+     "abona-doc:p2",
+     "abona-doc:p3",
+     "abona-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Harsh: very arid, high temperatures and strong sunshine, with low rainfall.",
+    "cite": [
+     "abona-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "Vineyards from 300 to 1,700 m.",
+    "cite": [
+     "abona-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "la-gomera",
+   "why": {
+    "text": "Many microclimates and steep terraces; Forastera Blanca, the majority white grape, gives high, balanced acidity.",
+    "cite": [
+     "la-gomera-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Forastera Blanca"
+     }
+    ],
+    "cite": [
+     "la-gomera-doc:p8"
+    ],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Albillo",
+     "Vijariego Blanco",
+     "Verdello",
+     "Tintilla",
+     "Sabro",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Gual",
+     "Doradilla",
+     "Castellana Negra",
+     "Bastardo (Baboso) Blanco",
+     "Bastardo (Baboso) Negro",
+     "Brebal",
+     "Cabernet Sauvignon",
+     "Listán Blanco de Canarias",
+     "Listán Prieto",
+     "Merlot",
+     "Moscatel Negro",
+     "Pedro Ximénez",
+     "Pinot Noir",
+     "Ruby Cabernet",
+     "Syrah",
+     "Tempranillo",
+     "Torrontés",
+     "Vijariego Negro"
+    ],
+    "othersCite": [
+     "la-gomera-doc:p8",
+     "la-gomera-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Whites (including single-variety Forastera), rosados, reds (some carbonic maceration), liqueur, sparkling and sweet wines.",
+    "cite": [
+     "la-gomera-doc:p1",
+     "la-gomera-doc:p2",
+     "la-gomera-doc:p3",
+     "la-gomera-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Many microclimates across the island.",
+    "cite": [
+     "la-gomera-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "gran-canaria",
+   "why": {
+    "text": "Varied geography, soils and climate, with trade winds and warmth from the African coast, give structured, balanced wines.",
+    "cite": [
+     "gran-canaria-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Albillo",
+     "Vijariego Blanco",
+     "Verdello",
+     "Tintilla",
+     "Sabro",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Gual",
+     "Forastera Blanca",
+     "Doradilla",
+     "Castellana Negra",
+     "Bastardo (Baboso) Blanco",
+     "Bastardo (Baboso) Negro",
+     "Brebal",
+     "Burrablanca",
+     "Listán Blanco de Canarias",
+     "Listán Prieto",
+     "Moscatel Negro",
+     "Pedro Ximénez",
+     "Torrontés",
+     "Vijariego Negro"
+    ],
+    "othersCite": [
+     "gran-canaria-doc:p6",
+     "gran-canaria-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines; also liqueur, sparkling and classic sweet wines.",
+    "cite": [
+     "gran-canaria-doc:p1",
+     "gran-canaria-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Trade winds and warmth from the African coasts.",
+    "cite": [
+     "gran-canaria-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "el-hierro",
+   "why": {
+    "text": "Steep terraces from 50 to 1,000 m on loose, stony soil, with low rainfall, give wines high in alcohol and acidity.",
+    "cite": [
+     "el-hierro-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Burrablanca",
+     "Bermejuela (Marmajuelo)",
+     "Bastardo (Baboso) Negro",
+     "Bastardo (Baboso) Blanco",
+     "Vijariego Negro",
+     "Vijariego Blanco",
+     "Verdello",
+     "Tintilla",
+     "Pedro Ximénez",
+     "Negramoll",
+     "Moscatel Negro",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Listán Blanco de Canarias",
+     "Gual",
+     "Albillo",
+     "Brebal",
+     "Forastera Blanca",
+     "Malvasía Rosada",
+     "Torrontés"
+    ],
+    "othersCite": [
+     "el-hierro-doc:p6",
+     "el-hierro-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines; also liqueur, sparkling and classic sweet wines.",
+    "cite": [
+     "el-hierro-doc:p1",
+     "el-hierro-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Low rainfall; the document calls the island's climate and soils unique.",
+    "cite": [
+     "el-hierro-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Loose, stony soils.",
+    "cite": [
+     "el-hierro-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards between 50 and 1,000 m on terraces.",
+    "cite": [
+     "el-hierro-doc:p6"
+    ]
+   }
+  }
+ ]
+}
