@@ -1,0 +1,2207 @@
+{
+ "$comment": "The place tree. Ids are stable (decision #41); home parent plus alsoWithin overlaps (#42). Study regions are a course grouping over the tree. Built by Tools/data/build_places.py; sources in data/SOURCES.md.",
+ "version": 1,
+ "countries": [
+  {
+   "id": "spain",
+   "name": "Spain",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
+  }
+ ],
+ "courses": [
+  {
+   "id": "sws",
+   "name": "Spanish Wine Scholar",
+   "country": "spain",
+   "groups": [
+    {
+     "id": "green-spain",
+     "name": "Green Spain",
+     "order": 1
+    },
+    {
+     "id": "castilla-y-leon",
+     "name": "Castilla y León",
+     "order": 2
+    },
+    {
+     "id": "rioja",
+     "name": "Rioja",
+     "order": 3
+    },
+    {
+     "id": "ebro",
+     "name": "Navarra and Aragón",
+     "order": 4
+    },
+    {
+     "id": "cataluna",
+     "name": "Cataluña",
+     "order": 5
+    },
+    {
+     "id": "mediterranean",
+     "name": "Valencia and Murcia",
+     "order": 6
+    },
+    {
+     "id": "meseta",
+     "name": "Meseta: Castilla-La Mancha, Madrid, Extremadura",
+     "order": 7
+    },
+    {
+     "id": "andalucia",
+     "name": "Andalucía",
+     "order": 8
+    },
+    {
+     "id": "baleares",
+     "name": "Balearic Islands",
+     "order": 9
+    },
+    {
+     "id": "canarias",
+     "name": "Canary Islands",
+     "order": 10
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "id": "cava",
+   "name": "Cava",
+   "official": "Cava",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Supraautonómico",
+   "euFile": "PDO-ES-A0735",
+   "layerCode": "DO24",
+   "boundary": "mapa-2014",
+   "centroid": [
+    1.4886,
+    41.3763
+   ],
+   "quiz": "none",
+   "quizNote": "Overlaps other DOs across six regions.",
+   "northSouth": 32,
+   "courseOrder": 43
+  },
+  {
+   "id": "jumilla",
+   "name": "Jumilla",
+   "official": "Jumilla",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Supraautonómico",
+   "euFile": "PDO-ES-A0109",
+   "layerCode": "DO12",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.4856,
+    38.5257
+   ],
+   "quiz": "core",
+   "northSouth": 69,
+   "courseOrder": 55
+  },
+  {
+   "id": "rioja",
+   "name": "Rioja",
+   "official": "Rioja",
+   "kind": "DOCa",
+   "level": "place",
+   "parent": "spain",
+   "region": "rioja",
+   "community": "Supraautonómico",
+   "euFile": "PDO-ES-A0117",
+   "layerCode": "DO23",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.3859,
+    42.3612
+   ],
+   "quiz": "core",
+   "northSouth": 13,
+   "courseOrder": 26
+  },
+  {
+   "id": "condado-de-huelva",
+   "name": "Condado de Huelva",
+   "official": "Condado de Huelva",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1485",
+   "layerCode": "DO46",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.6532,
+    37.2594
+   ],
+   "quiz": "core",
+   "northSouth": 74,
+   "courseOrder": 88
+  },
+  {
+   "id": "granada",
+   "name": "Granada",
+   "official": "Granada",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1475",
+   "layerCode": "DO262",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.2679,
+    37.3125
+   ],
+   "quiz": "core",
+   "northSouth": 73,
+   "courseOrder": 87
+  },
+  {
+   "id": "jerez",
+   "name": "Jerez-Xérès-Sherry",
+   "official": "Jerez-Xérès-Sherry / Jerez / Xérès / Sherry",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1483",
+   "layerCode": "DO55",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.0712,
+    36.6981
+   ],
+   "quiz": "core",
+   "northSouth": 78,
+   "courseOrder": 92
+  },
+  {
+   "id": "lebrija",
+   "name": "Lebrija",
+   "official": "Lebrija",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1478",
+   "layerCode": "DO263",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.058,
+    36.9337
+   ],
+   "quiz": "vc",
+   "northSouth": 77,
+   "courseOrder": 91
+  },
+  {
+   "id": "malaga",
+   "name": "Málaga",
+   "official": "Málaga",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1481",
+   "layerCode": "DO59",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.4535,
+    36.9397
+   ],
+   "quiz": "core",
+   "northSouth": 75,
+   "courseOrder": 89
+  },
+  {
+   "id": "manzanilla",
+   "name": "Manzanilla-Sanlúcar de Barrameda",
+   "official": "Manzanilla-Sanlúcar de Barrameda / Manzanilla",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1482",
+   "layerCode": "DO61",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.0712,
+    36.6981
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "jerez"
+   ],
+   "northSouth": 79,
+   "courseOrder": 93
+  },
+  {
+   "id": "montilla-moriles",
+   "name": "Montilla-Moriles",
+   "official": "Montilla-Moriles",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1479",
+   "layerCode": "DO65",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.5787,
+    37.5454
+   ],
+   "quiz": "core",
+   "northSouth": 72,
+   "courseOrder": 86
+  },
+  {
+   "id": "sierras-de-malaga",
+   "name": "Sierras de Málaga",
+   "official": "Sierras de Málaga",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "andalucia",
+   "community": "Andalucía",
+   "euFile": "PDO-ES-A1480",
+   "layerCode": "DO78",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.4535,
+    36.9397
+   ],
+   "quiz": "core",
+   "northSouth": 76,
+   "courseOrder": 90
+  },
+  {
+   "id": "ayles",
+   "name": "Aylés",
+   "official": "Aylés",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-A1522",
+   "layerCode": "DO301",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.0689,
+    41.3977
+   ],
+   "quiz": "none",
+   "northSouth": 30,
+   "courseOrder": 33
+  },
+  {
+   "id": "calatayud",
+   "name": "Calatayud",
+   "official": "Calatayud",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-A0247",
+   "layerCode": "DO40",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.7251,
+    41.3135
+   ],
+   "quiz": "core",
+   "northSouth": 36,
+   "courseOrder": 35
+  },
+  {
+   "id": "campo-de-borja",
+   "name": "Campo de Borja",
+   "official": "Campo de Borja",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-A0180",
+   "layerCode": "DO41",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.5058,
+    41.7933
+   ],
+   "quiz": "core",
+   "northSouth": 23,
+   "courseOrder": 32
+  },
+  {
+   "id": "carinena",
+   "name": "Cariñena",
+   "official": "Cariñena",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-A0043",
+   "layerCode": "DO42",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.1863,
+    41.378
+   ],
+   "quiz": "core",
+   "northSouth": 31,
+   "courseOrder": 34
+  },
+  {
+   "id": "somontano",
+   "name": "Somontano",
+   "official": "Somontano",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-A0534",
+   "layerCode": "DO79",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.0734,
+    42.1171
+   ],
+   "quiz": "core",
+   "northSouth": 17,
+   "courseOrder": 31
+  },
+  {
+   "id": "urbezo",
+   "name": "Urbezo",
+   "official": "Urbezo",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Aragón",
+   "euFile": "PDO-ES-02585",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "quizNote": "A single estate; the ministry lists it as DO, the 2024 registration calls it a pago. Kept with the Pagos until the owner decides.",
+   "courseOrder": 37
+  },
+  {
+   "id": "cangas",
+   "name": "Cangas",
+   "official": "Cangas",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Principado De Asturias",
+   "euFile": "PDO-ES-A0119",
+   "layerCode": "DO264",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.6312,
+    43.1736
+   ],
+   "quiz": "vc",
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "binissalem",
+   "name": "Binissalem",
+   "official": "Binissalem",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "baleares",
+   "community": "Baleares",
+   "euFile": "PDO-ES-A1056",
+   "layerCode": "DO39",
+   "boundary": "mapa-2014",
+   "centroid": [
+    2.8439,
+    39.6541
+   ],
+   "quiz": "core",
+   "northSouth": 51,
+   "courseOrder": 94
+  },
+  {
+   "id": "pla-i-llevant",
+   "name": "Pla i Llevant",
+   "official": "Pla i Llevant",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "baleares",
+   "community": "Baleares",
+   "euFile": "PDO-ES-A1038",
+   "layerCode": "DO69",
+   "boundary": "mapa-2014",
+   "centroid": [
+    3.0956,
+    39.556
+   ],
+   "quiz": "core",
+   "northSouth": 54,
+   "courseOrder": 95
+  },
+  {
+   "id": "abona",
+   "name": "Abona",
+   "official": "Abona",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0975",
+   "layerCode": "DO30",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.591,
+    28.1412
+   ],
+   "quiz": "core",
+   "northSouth": 87,
+   "courseOrder": 103
+  },
+  {
+   "id": "el-hierro",
+   "name": "El Hierro",
+   "official": "El Hierro",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A1250",
+   "layerCode": "DO52",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -18.0065,
+    27.7463
+   ],
+   "quiz": "core",
+   "northSouth": 90,
+   "courseOrder": 106
+  },
+  {
+   "id": "gran-canaria",
+   "name": "Gran Canaria",
+   "official": "Gran Canaria",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0112",
+   "layerCode": "DO260",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -15.5936,
+    27.9547
+   ],
+   "quiz": "core",
+   "northSouth": 89,
+   "courseOrder": 105
+  },
+  {
+   "id": "islas-canarias",
+   "name": "Islas Canarias",
+   "official": "Islas Canarias",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A1511",
+   "layerCode": "DO303",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.5568,
+    28.2905
+   ],
+   "quiz": "none",
+   "quizNote": "Covers all the islands, over their own DOs.",
+   "northSouth": 86,
+   "courseOrder": 102
+  },
+  {
+   "id": "la-gomera",
+   "name": "La Gomera",
+   "official": "La Gomera",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0111",
+   "layerCode": "DO261",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -17.2326,
+    28.1174
+   ],
+   "quiz": "core",
+   "northSouth": 88,
+   "courseOrder": 104
+  },
+  {
+   "id": "la-palma",
+   "name": "La Palma",
+   "official": "La Palma",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0510",
+   "layerCode": "DO57",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -17.8577,
+    28.6896
+   ],
+   "quiz": "core",
+   "northSouth": 81,
+   "courseOrder": 97
+  },
+  {
+   "id": "lanzarote",
+   "name": "Lanzarote",
+   "official": "Lanzarote",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0113",
+   "layerCode": "DO58",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -13.6422,
+    29.0242
+   ],
+   "quiz": "core",
+   "northSouth": 80,
+   "courseOrder": 96
+  },
+  {
+   "id": "tacoronte-acentejo",
+   "name": "Tacoronte-Acentejo",
+   "official": "Tacoronte-Acentejo",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0115",
+   "layerCode": "DO80",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.3208,
+    28.4899
+   ],
+   "quiz": "core",
+   "northSouth": 82,
+   "courseOrder": 98
+  },
+  {
+   "id": "valle-de-guimar",
+   "name": "Valle de Güímar",
+   "official": "Valle de Güímar",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0980",
+   "layerCode": "DO92",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.422,
+    28.3282
+   ],
+   "quiz": "core",
+   "northSouth": 83,
+   "courseOrder": 99
+  },
+  {
+   "id": "valle-de-la-orotava",
+   "name": "Valle de la Orotava",
+   "official": "Valle de la Orotava",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A1040",
+   "layerCode": "DO93",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.5778,
+    28.3141
+   ],
+   "quiz": "core",
+   "northSouth": 84,
+   "courseOrder": 100
+  },
+  {
+   "id": "ycoden-daute-isora",
+   "name": "Ycoden-Daute-Isora",
+   "official": "Ycoden-Daute-Isora",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "canarias",
+   "community": "Canarias",
+   "euFile": "PDO-ES-A0114",
+   "layerCode": "DO96",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -16.7565,
+    28.2961
+   ],
+   "quiz": "core",
+   "northSouth": 85,
+   "courseOrder": 101
+  },
+  {
+   "id": "abadia-retuerta",
+   "name": "Abadía Retuerta",
+   "official": "Abadía Retuerta",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-02481",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 22
+  },
+  {
+   "id": "arlanza",
+   "name": "Arlanza",
+   "official": "Arlanza",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0613",
+   "layerCode": "DO36",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.8871,
+    42.0209
+   ],
+   "quiz": "core",
+   "northSouth": 19,
+   "courseOrder": 12
+  },
+  {
+   "id": "arribes",
+   "name": "Arribes",
+   "official": "Arribes",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0614",
+   "layerCode": "DO37",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.4282,
+    41.238
+   ],
+   "quiz": "core",
+   "northSouth": 38,
+   "courseOrder": 20
+  },
+  {
+   "id": "bierzo",
+   "name": "Bierzo",
+   "official": "Bierzo",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0615",
+   "layerCode": "DO38",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.6417,
+    42.5953
+   ],
+   "quiz": "core",
+   "northSouth": 9,
+   "courseOrder": 10
+  },
+  {
+   "id": "cebreros",
+   "name": "Cebreros",
+   "official": "Cebreros",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-02348",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "vc",
+   "courseOrder": 23
+  },
+  {
+   "id": "cigales",
+   "name": "Cigales",
+   "official": "Cigales",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0622",
+   "layerCode": "DO44",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.6711,
+    41.7643
+   ],
+   "quiz": "core",
+   "northSouth": 24,
+   "courseOrder": 14
+  },
+  {
+   "id": "dehesa-penalba",
+   "name": "Dehesa Peñalba",
+   "official": "Dehesa Peñalba",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-02592",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 24
+  },
+  {
+   "id": "leon",
+   "name": "León",
+   "official": "León",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0882",
+   "layerCode": "DO83",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -5.4715,
+    42.2871
+   ],
+   "quiz": "core",
+   "northSouth": 16,
+   "courseOrder": 11
+  },
+  {
+   "id": "ribera-del-duero",
+   "name": "Ribera del Duero",
+   "official": "Ribera del Duero",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0626",
+   "layerCode": "DO74",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.6506,
+    41.6395
+   ],
+   "quiz": "core",
+   "northSouth": 25,
+   "courseOrder": 15
+  },
+  {
+   "id": "rueda",
+   "name": "Rueda",
+   "official": "Rueda",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0889",
+   "layerCode": "DO77",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.8958,
+    41.2854
+   ],
+   "quiz": "core",
+   "northSouth": 37,
+   "courseOrder": 19
+  },
+  {
+   "id": "sierra-de-salamanca",
+   "name": "Sierra de Salamanca",
+   "official": "Sierra de Salamanca",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0631",
+   "layerCode": "DO268",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -5.9549,
+    40.4533
+   ],
+   "quiz": "vc",
+   "northSouth": 43,
+   "courseOrder": 21
+  },
+  {
+   "id": "tierra-del-vino-de-zamora",
+   "name": "Tierra del Vino de Zamora",
+   "official": "Tierra del Vino de Zamora",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0634",
+   "layerCode": "DO84",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -5.6653,
+    41.3366
+   ],
+   "quiz": "core",
+   "northSouth": 35,
+   "courseOrder": 18
+  },
+  {
+   "id": "toro",
+   "name": "Toro",
+   "official": "Toro",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0886",
+   "layerCode": "DO85",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -5.4209,
+    41.4421
+   ],
+   "quiz": "core",
+   "northSouth": 28,
+   "courseOrder": 17
+  },
+  {
+   "id": "uruena",
+   "name": "Urueña",
+   "official": "Urueña",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-02485",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 25
+  },
+  {
+   "id": "valles-de-benavente",
+   "name": "Valles de Benavente",
+   "official": "Valles de Benavente",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0646",
+   "layerCode": "DO94",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -5.8142,
+    41.9892
+   ],
+   "quiz": "vc",
+   "northSouth": 20,
+   "courseOrder": 13
+  },
+  {
+   "id": "valtiendas",
+   "name": "Valtiendas",
+   "official": "Valtiendas",
+   "kind": "VC",
+   "level": "place",
+   "parent": "spain",
+   "region": "castilla-y-leon",
+   "community": "Castilla Y León",
+   "euFile": "PDO-ES-A0747",
+   "layerCode": "DO91",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.9418,
+    41.4858
+   ],
+   "quiz": "vc",
+   "northSouth": 27,
+   "courseOrder": 16
+  },
+  {
+   "id": "almansa",
+   "name": "Almansa",
+   "official": "Almansa",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0044",
+   "layerCode": "DO33",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.4,
+    38.8856
+   ],
+   "quiz": "core",
+   "northSouth": 63,
+   "courseOrder": 74
+  },
+  {
+   "id": "calzadilla",
+   "name": "Calzadilla",
+   "official": "Calzadilla",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0056",
+   "layerCode": "DO304",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.6559,
+    40.1418
+   ],
+   "quiz": "none",
+   "northSouth": 46,
+   "courseOrder": 63
+  },
+  {
+   "id": "campo-de-calatrava",
+   "name": "Campo de Calatrava",
+   "official": "Campo de Calatrava",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-02870",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "core",
+   "courseOrder": 79
+  },
+  {
+   "id": "campo-de-la-guardia",
+   "name": "Campo de la Guardia",
+   "official": "Campo de La Guardia",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0055",
+   "layerCode": "DO265",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.4877,
+    39.777
+   ],
+   "quiz": "none",
+   "northSouth": 50,
+   "courseOrder": 67
+  },
+  {
+   "id": "casa-del-blanco",
+   "name": "Casa del Blanco",
+   "official": "Casa del Blanco",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0060",
+   "layerCode": "DO266",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.4033,
+    38.9585
+   ],
+   "quiz": "none",
+   "northSouth": 62,
+   "courseOrder": 73
+  },
+  {
+   "id": "dehesa-del-carrizal",
+   "name": "Dehesa del Carrizal",
+   "official": "Dehesa del Carrizal",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0054",
+   "layerCode": "DO50",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.474,
+    39.4547
+   ],
+   "quiz": "none",
+   "northSouth": 58,
+   "courseOrder": 69
+  },
+  {
+   "id": "dominio-de-valdepusa",
+   "name": "Dominio de Valdepusa",
+   "official": "Dominio de Valdepusa",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0052",
+   "layerCode": "DO51",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.6085,
+    39.8582
+   ],
+   "quiz": "none",
+   "northSouth": 49,
+   "courseOrder": 66
+  },
+  {
+   "id": "el-vicario",
+   "name": "El Vicario",
+   "official": "El Vicario",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-N1634",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 80
+  },
+  {
+   "id": "finca-elez",
+   "name": "Finca Élez",
+   "official": "Finca Élez",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0053",
+   "layerCode": "DO53",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.6554,
+    38.8675
+   ],
+   "quiz": "none",
+   "northSouth": 65,
+   "courseOrder": 76
+  },
+  {
+   "id": "guijoso",
+   "name": "Guijoso",
+   "official": "Guijoso",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0058",
+   "layerCode": "DO54",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.702,
+    38.8726
+   ],
+   "quiz": "none",
+   "northSouth": 64,
+   "courseOrder": 75
+  },
+  {
+   "id": "la-jaraba",
+   "name": "La Jaraba",
+   "official": "La Jaraba",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-01895",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 81
+  },
+  {
+   "id": "la-mancha",
+   "name": "La Mancha",
+   "official": "La Mancha",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0045",
+   "layerCode": "DO56",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.2378,
+    39.2632
+   ],
+   "quiz": "core",
+   "northSouth": 60,
+   "courseOrder": 71
+  },
+  {
+   "id": "los-cerrillos",
+   "name": "Los Cerrillos",
+   "official": "Los Cerrillos",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-02228",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 82
+  },
+  {
+   "id": "manchuela",
+   "name": "Manchuela",
+   "official": "Manchuela",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0046",
+   "layerCode": "DO60",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.6739,
+    39.4706
+   ],
+   "quiz": "core",
+   "northSouth": 57,
+   "courseOrder": 68
+  },
+  {
+   "id": "mentrida",
+   "name": "Méntrida",
+   "official": "Méntrida",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0047",
+   "layerCode": "DO62",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -4.2944,
+    40.0541
+   ],
+   "quiz": "core",
+   "northSouth": 47,
+   "courseOrder": 64
+  },
+  {
+   "id": "mondejar",
+   "name": "Mondéjar",
+   "official": "Mondéjar",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0048",
+   "layerCode": "DO63",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.9383,
+    40.3508
+   ],
+   "quiz": "core",
+   "northSouth": 44,
+   "courseOrder": 61
+  },
+  {
+   "id": "pago-florentino",
+   "name": "Pago Florentino",
+   "official": "Pago Florentino",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0057",
+   "layerCode": "DO267",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.9273,
+    39.1888
+   ],
+   "quiz": "none",
+   "northSouth": 61,
+   "courseOrder": 72
+  },
+  {
+   "id": "ribera-del-jucar",
+   "name": "Ribera del Júcar",
+   "official": "Ribera del Júcar",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0049",
+   "layerCode": "DO76",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.1982,
+    39.3503
+   ],
+   "quiz": "core",
+   "northSouth": 59,
+   "courseOrder": 70
+  },
+  {
+   "id": "rio-negro",
+   "name": "Río Negro",
+   "official": "Río Negro",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-03003",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 84
+  },
+  {
+   "id": "rosalejo",
+   "name": "Rosalejo",
+   "official": "Rosalejo",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-02880",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 83
+  },
+  {
+   "id": "ucles",
+   "name": "Uclés",
+   "official": "Uclés",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0050",
+   "layerCode": "DO86",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.9339,
+    39.9473
+   ],
+   "quiz": "core",
+   "northSouth": 48,
+   "courseOrder": 65
+  },
+  {
+   "id": "valdepenas",
+   "name": "Valdepeñas",
+   "official": "Valdepeñas",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-A0051",
+   "layerCode": "DO89",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.3188,
+    38.7574
+   ],
+   "quiz": "core",
+   "northSouth": 67,
+   "courseOrder": 78
+  },
+  {
+   "id": "vallegarcia",
+   "name": "Vallegarcía",
+   "official": "Vallegarcía",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Castilla-La Mancha",
+   "euFile": "PDO-ES-02085",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 85
+  },
+  {
+   "id": "alella",
+   "name": "Alella",
+   "official": "Alella",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1423",
+   "layerCode": "DO31",
+   "boundary": "mapa-2014",
+   "centroid": [
+    2.3192,
+    41.5416
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 26,
+   "courseOrder": 41
+  },
+  {
+   "id": "catalunya",
+   "name": "Cataluña / Catalunya",
+   "official": "Cataluña / Catalunya",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1549",
+   "layerCode": "DO43",
+   "boundary": "mapa-2014",
+   "centroid": [
+    1.2009,
+    41.3456
+   ],
+   "quiz": "none",
+   "quizNote": "Covers most of the other Catalan DOs.",
+   "northSouth": 34,
+   "courseOrder": 45
+  },
+  {
+   "id": "conca-de-barbera",
+   "name": "Conca de Barberà",
+   "official": "Conca de Barberà",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1422",
+   "layerCode": "DO45",
+   "boundary": "mapa-2014",
+   "centroid": [
+    1.1588,
+    41.4155
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 29,
+   "courseOrder": 42
+  },
+  {
+   "id": "costers-del-segre",
+   "name": "Costers del Segre",
+   "official": "Costers del Segre",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1523",
+   "layerCode": "DO47",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.9506,
+    42.0465
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 18,
+   "courseOrder": 39
+  },
+  {
+   "id": "emporda",
+   "name": "Empordà",
+   "official": "Empordà",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1548",
+   "layerCode": "DO34",
+   "boundary": "mapa-2014",
+   "centroid": [
+    3.0093,
+    42.3466
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 15,
+   "courseOrder": 38
+  },
+  {
+   "id": "montsant",
+   "name": "Montsant",
+   "official": "Montsant",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1550",
+   "layerCode": "DO66",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.7662,
+    41.1413
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 41,
+   "courseOrder": 48
+  },
+  {
+   "id": "penedes",
+   "name": "Penedès",
+   "official": "Penedès",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1551",
+   "layerCode": "DO67",
+   "boundary": "mapa-2014",
+   "centroid": [
+    1.6839,
+    41.3664
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 33,
+   "courseOrder": 44
+  },
+  {
+   "id": "pla-de-bages",
+   "name": "Pla de Bages",
+   "official": "Pla de Bages",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1557",
+   "layerCode": "DO68",
+   "boundary": "mapa-2014",
+   "centroid": [
+    1.8266,
+    41.7937
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 22,
+   "courseOrder": 40
+  },
+  {
+   "id": "priorat",
+   "name": "Priorat",
+   "official": "Priorat / Priorato",
+   "kind": "DOCa",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1560",
+   "layerCode": "DO70",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.8056,
+    41.2096
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 39,
+   "courseOrder": 46
+  },
+  {
+   "id": "tarragona",
+   "name": "Tarragona",
+   "official": "Tarragona",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1555",
+   "layerCode": "DO81",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.9327,
+    41.1726
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 40,
+   "courseOrder": 47
+  },
+  {
+   "id": "terra-alta",
+   "name": "Terra Alta",
+   "official": "Terra Alta",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "cataluna",
+   "community": "Cataluña",
+   "euFile": "PDO-ES-A1556",
+   "layerCode": "DO82",
+   "boundary": "mapa-2014",
+   "centroid": [
+    0.3725,
+    41.0546
+   ],
+   "quiz": "core",
+   "alsoWithin": [
+    "catalunya"
+   ],
+   "northSouth": 42,
+   "courseOrder": 49
+  },
+  {
+   "id": "ribera-del-guadiana",
+   "name": "Ribera del Guadiana",
+   "official": "Ribera del Guadiana",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Extremadura",
+   "euFile": "PDO-ES-A1295",
+   "layerCode": "DO75",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.1167,
+    38.8547
+   ],
+   "quiz": "core",
+   "northSouth": 66,
+   "courseOrder": 77
+  },
+  {
+   "id": "monterrei",
+   "name": "Monterrei",
+   "official": "Monterrei",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Galicia",
+   "euFile": "PDO-ES-A1114",
+   "layerCode": "DO64",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -7.3855,
+    41.9442
+   ],
+   "quiz": "core",
+   "northSouth": 21,
+   "courseOrder": 9
+  },
+  {
+   "id": "rias-baixas",
+   "name": "Rías Baixas",
+   "official": "Rías Baixas",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Galicia",
+   "euFile": "PDO-ES-A1119",
+   "layerCode": "DO71",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -8.3862,
+    42.7544
+   ],
+   "quiz": "core",
+   "northSouth": 6,
+   "courseOrder": 5
+  },
+  {
+   "id": "ribeira-sacra",
+   "name": "Ribeira Sacra",
+   "official": "Ribeira Sacra",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Galicia",
+   "euFile": "PDO-ES-A1128",
+   "layerCode": "DO72",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -7.5226,
+    42.5257
+   ],
+   "quiz": "core",
+   "northSouth": 10,
+   "courseOrder": 6
+  },
+  {
+   "id": "ribeiro",
+   "name": "Ribeiro",
+   "official": "Ribeiro",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Galicia",
+   "euFile": "PDO-ES-A1123",
+   "layerCode": "DO73",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -8.0728,
+    42.3528
+   ],
+   "quiz": "core",
+   "northSouth": 14,
+   "courseOrder": 8
+  },
+  {
+   "id": "valdeorras",
+   "name": "Valdeorras",
+   "official": "Valdeorras",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "Galicia",
+   "euFile": "PDO-ES-A1132",
+   "layerCode": "DO88",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -6.9697,
+    42.3841
+   ],
+   "quiz": "core",
+   "northSouth": 12,
+   "courseOrder": 7
+  },
+  {
+   "id": "vinos-de-madrid",
+   "name": "Vinos de Madrid",
+   "official": "Vinos de Madrid",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "meseta",
+   "community": "Madrid",
+   "euFile": "PDO-ES-A1525",
+   "layerCode": "DO95",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.3659,
+    40.2085
+   ],
+   "quiz": "core",
+   "northSouth": 45,
+   "courseOrder": 62
+  },
+  {
+   "id": "bullas",
+   "name": "Bullas",
+   "official": "Bullas",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Murcia",
+   "euFile": "PDO-ES-A0536",
+   "layerCode": "DO11",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.8091,
+    37.9546
+   ],
+   "quiz": "core",
+   "northSouth": 71,
+   "courseOrder": 57
+  },
+  {
+   "id": "yecla",
+   "name": "Yecla",
+   "official": "Yecla",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Murcia",
+   "euFile": "PDO-ES-A0606",
+   "layerCode": "DO29",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.151,
+    38.6065
+   ],
+   "quiz": "core",
+   "northSouth": 68,
+   "courseOrder": 54
+  },
+  {
+   "id": "bolandin",
+   "name": "Bolandin",
+   "official": "Bolandin",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Navarra",
+   "euFile": "PDO-ES-N1876",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 36
+  },
+  {
+   "id": "navarra",
+   "name": "Navarra",
+   "official": "Navarra",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Navarra",
+   "euFile": "PDO-ES-A0127",
+   "layerCode": "DO22",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.7171,
+    42.4735
+   ],
+   "quiz": "core",
+   "northSouth": 11,
+   "courseOrder": 30
+  },
+  {
+   "id": "arinzano",
+   "name": "Pago de Arínzano",
+   "official": "Pago de Arínzano",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Navarra",
+   "euFile": "PDO-ES-A0183",
+   "layerCode": "DO269",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.991,
+    42.6283
+   ],
+   "quiz": "none",
+   "northSouth": 8,
+   "courseOrder": 29
+  },
+  {
+   "id": "otazu",
+   "name": "Pago de Otazu",
+   "official": "Pago de Otazu",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Navarra",
+   "euFile": "PDO-ES-A0184",
+   "layerCode": "DO270",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.7834,
+    42.7855
+   ],
+   "quiz": "none",
+   "northSouth": 5,
+   "courseOrder": 27
+  },
+  {
+   "id": "prado-de-irache",
+   "name": "Prado de Irache",
+   "official": "Prado de Irache",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "ebro",
+   "community": "Navarra",
+   "euFile": "PDO-ES-A0182",
+   "layerCode": "DO271",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.0436,
+    42.6494
+   ],
+   "quiz": "none",
+   "northSouth": 7,
+   "courseOrder": 28
+  },
+  {
+   "id": "txakoli-alava",
+   "name": "Arabako Txakolina / Txakolí de Álava",
+   "official": "Arabako Txakolina / Txakolí de Álava / Chacolí de Álava",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "País Vasco",
+   "euFile": "PDO-ES-A0732",
+   "layerCode": "DO35",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -3.039,
+    43.0896
+   ],
+   "quiz": "core",
+   "northSouth": 4,
+   "courseOrder": 4
+  },
+  {
+   "id": "txakoli-bizkaia",
+   "name": "Bizkaiko Txakolina / Txakolí de Bizkaia",
+   "official": "Bizkaiko Txakolina / Chacolí de Bizkaia / Txakolí de Bizkaia",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "País Vasco",
+   "euFile": "PDO-ES-A0746",
+   "layerCode": "DO48",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.8527,
+    43.2414
+   ],
+   "quiz": "core",
+   "northSouth": 1,
+   "courseOrder": 1
+  },
+  {
+   "id": "txakoli-getaria",
+   "name": "Getariako Txakolina / Txakolí de Getaria",
+   "official": "Getariako Txakolina / Chacolí de Getaria / Txakolí de Getaria",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "green-spain",
+   "community": "País Vasco",
+   "euFile": "PDO-ES-A0741",
+   "layerCode": "DO49",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -2.1942,
+    43.1439
+   ],
+   "quiz": "core",
+   "northSouth": 3,
+   "courseOrder": 3
+  },
+  {
+   "id": "alicante",
+   "name": "Alicante",
+   "official": "Alicante",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-A1526",
+   "layerCode": "DO32",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -0.8038,
+    38.5121
+   ],
+   "quiz": "core",
+   "northSouth": 70,
+   "courseOrder": 56
+  },
+  {
+   "id": "chozas-carrascal",
+   "name": "Chozas Carrascal",
+   "official": "Chozas Carrascal",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-N1637",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 58
+  },
+  {
+   "id": "el-terrerazo",
+   "name": "El Terrerazo",
+   "official": "El Terrerazo",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-A0940",
+   "layerCode": "DO305",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.251,
+    39.6199
+   ],
+   "quiz": "none",
+   "northSouth": 52,
+   "courseOrder": 50
+  },
+  {
+   "id": "los-balagueses",
+   "name": "Los Balagueses",
+   "official": "Los Balagueses",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-A0941",
+   "layerCode": "DO306",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.1433,
+    39.4974
+   ],
+   "quiz": "none",
+   "northSouth": 56,
+   "courseOrder": 53
+  },
+  {
+   "id": "tharsys",
+   "name": "Tharsys",
+   "official": "Tharsys",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-02086",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 59
+  },
+  {
+   "id": "utiel-requena",
+   "name": "Utiel-Requena",
+   "official": "Utiel-Requena",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-A0874",
+   "layerCode": "DO87",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -1.2122,
+    39.5043
+   ],
+   "quiz": "core",
+   "northSouth": 55,
+   "courseOrder": 52
+  },
+  {
+   "id": "valencia",
+   "name": "Valencia",
+   "official": "Valencia",
+   "kind": "DO",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-A0872",
+   "layerCode": "DO90",
+   "boundary": "mapa-2014",
+   "centroid": [
+    -0.996,
+    39.5893
+   ],
+   "quiz": "core",
+   "northSouth": 53,
+   "courseOrder": 51
+  },
+  {
+   "id": "vera-de-estenas",
+   "name": "Vera de Estenas",
+   "official": "Vera de Estenas",
+   "kind": "VP",
+   "level": "place",
+   "parent": "spain",
+   "region": "mediterranean",
+   "community": "Valencia",
+   "euFile": "PDO-ES-N1665",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "courseOrder": 60
+  },
+  {
+   "id": "rioja-alta",
+   "name": "Rioja Alta",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "rioja",
+   "region": "rioja",
+   "community": "La Rioja",
+   "boundary": "rioja-zones",
+   "centroid": null,
+   "quiz": "zone"
+  },
+  {
+   "id": "rioja-alavesa",
+   "name": "Rioja Alavesa",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "rioja",
+   "region": "rioja",
+   "community": "La Rioja",
+   "boundary": "rioja-zones",
+   "centroid": null,
+   "quiz": "zone"
+  },
+  {
+   "id": "rioja-oriental",
+   "name": "Rioja Oriental",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "rioja",
+   "region": "rioja",
+   "community": "La Rioja",
+   "boundary": "rioja-zones",
+   "centroid": null,
+   "quiz": "zone"
+  }
+ ]
+}

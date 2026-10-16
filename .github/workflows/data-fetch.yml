@@ -26,4 +26,5 @@ jobs:
           git add Review/sources/fetched
           git diff --cached --quiet && exit 0
           git commit -q -m "Data fetch: results of run ${{ github.run_id }}"
+          git pull -q --no-rebase origin ${{ github.ref_name }}
           git push origin HEAD:${{ github.ref_name }}
