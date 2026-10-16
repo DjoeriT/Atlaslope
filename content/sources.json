@@ -17,6 +17,12 @@
   "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
   "date": "2026-07-02"
  },
+ "rioja-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)",
+  "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf",
+  "date": "2023-06-07"
+ },
  "abona-doc": {
   "kind": "official",
   "title": "Documento único PDO-ES-A0975 (EU single document, Abona)",
@@ -917,10 +923,448 @@
   "url": "https://es.wikipedia.org/w/index.php?oldid=169684344",
   "date": "2025-09-26"
  },
- "rioja-pliego": {
-  "kind": "official",
-  "title": "Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)",
-  "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf",
-  "date": "2023-06-07"
+ "abona-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Abona», revision 166100861",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=166100861",
+  "date": "2025-03-14"
+ },
+ "alella-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Alella (vino)», revision 174316056",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174316056",
+  "date": "2026-07-10"
+ },
+ "alicante-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Alicante (vino)», revision 168593665",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168593665",
+  "date": "2025-07-22"
+ },
+ "almansa-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Almansa (vino)», revision 175241267",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175241267",
+  "date": "2026-09-07"
+ },
+ "arlanza-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Arlanza (vino)», revision 174700319",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174700319",
+  "date": "2026-08-04"
+ },
+ "arribes-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Arribes (vino)», revision 175600245",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175600245",
+  "date": "2026-09-30"
+ },
+ "bierzo-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Bierzo (vino)», revision 168572548",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168572548",
+  "date": "2025-07-21"
+ },
+ "binissalem-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Binissalem (vino)», revision 174914978",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174914978",
+  "date": "2026-08-18"
+ },
+ "bullas-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Bullas (vino)», revision 174986436",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174986436",
+  "date": "2026-08-23"
+ },
+ "calatayud-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Calatayud (vino)», revision 164223417",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164223417",
+  "date": "2024-12-19"
+ },
+ "campo-de-borja-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Campo de Borja (vino)», revision 161682975",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=161682975",
+  "date": "2024-08-04"
+ },
+ "cangas-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cangas (vino)», revision 168522462",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168522462",
+  "date": "2025-07-18"
+ },
+ "carinena-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cariñena (vino)», revision 173844300",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173844300",
+  "date": "2026-06-08"
+ },
+ "cebreros-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cebreros (vino)», revision 170252329",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170252329",
+  "date": "2025-10-31"
+ },
+ "cigales-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cigales (vino)», revision 164278109",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164278109",
+  "date": "2024-12-23"
+ },
+ "conca-de-barbera-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Conca de Barberá (vino)», revision 157809256",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157809256",
+  "date": "2024-01-28"
+ },
+ "condado-de-huelva-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Condado de Huelva», revision 171622345",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171622345",
+  "date": "2026-01-20"
+ },
+ "costers-del-segre-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Costers del Segre», revision 173920437",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173920437",
+  "date": "2026-06-13"
+ },
+ "el-hierro-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «El Hierro (vino)», revision 163845398",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=163845398",
+  "date": "2024-11-29"
+ },
+ "emporda-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Empordà (vino)», revision 164504096",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164504096",
+  "date": "2025-01-04"
+ },
+ "gran-canaria-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Gran Canaria (vino)», revision 169687111",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169687111",
+  "date": "2025-09-26"
+ },
+ "granada-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Granada (vino)», revision 169073284",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169073284",
+  "date": "2025-08-20"
+ },
+ "jerez-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Denominación de Origen Jerez-Xérès-Sherry», revision 175278196",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175278196",
+  "date": "2026-09-10"
+ },
+ "jumilla-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Jumilla (vino)», revision 173911508",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173911508",
+  "date": "2026-06-12"
+ },
+ "la-gomera-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Gomera (vino)», revision 157700146",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157700146",
+  "date": "2024-01-25"
+ },
+ "la-mancha-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Mancha (vino)», revision 165439197",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165439197",
+  "date": "2025-02-15"
+ },
+ "la-palma-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Palma (vino)», revision 168949095",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168949095",
+  "date": "2025-08-12"
+ },
+ "lanzarote-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Lanzarote (vino)», revision 171888370",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171888370",
+  "date": "2026-02-04"
+ },
+ "lebrija-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Lebrija (vino)», revision 173879176",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173879176",
+  "date": "2026-06-10"
+ },
+ "leon-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «León (vino)», revision 171197475",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171197475",
+  "date": "2025-12-27"
+ },
+ "malaga-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Málaga (vino)», revision 173780915",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173780915",
+  "date": "2026-06-03"
+ },
+ "manchuela-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Manchuela (vino)», revision 164978626",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164978626",
+  "date": "2025-01-25"
+ },
+ "manzanilla-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Denominación de Origen Manzanilla-Sanlúcar de Barrameda», revision 172610393",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172610393",
+  "date": "2026-03-21"
+ },
+ "mentrida-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Méntrida (vino)», revision 170042209",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170042209",
+  "date": "2025-10-18"
+ },
+ "mondejar-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Mondéjar (vino)», revision 173779011",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173779011",
+  "date": "2026-06-03"
+ },
+ "monterrei-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Monterrei (vino)», revision 164994058",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164994058",
+  "date": "2025-01-26"
+ },
+ "montilla-moriles-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Montilla-Moriles», revision 173075837",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173075837",
+  "date": "2026-04-20"
+ },
+ "montsant-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Montsant», revision 170868176",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170868176",
+  "date": "2025-12-08"
+ },
+ "navarra-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Navarra (vino)», revision 167229039",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=167229039",
+  "date": "2025-05-05"
+ },
+ "penedes-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Penedés (vino)», revision 167526369",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=167526369",
+  "date": "2025-05-21"
+ },
+ "pla-de-bages-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Pla de Bages (vino)», revision 157298256",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157298256",
+  "date": "2024-01-17"
+ },
+ "pla-i-llevant-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Pla i Llevant», revision 174723656",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174723656",
+  "date": "2026-08-06"
+ },
+ "priorat-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Priorato (vino)», revision 172983013",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172983013",
+  "date": "2026-04-14"
+ },
+ "rias-baixas-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rías Baixas (vino)», revision 165659636",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165659636",
+  "date": "2025-02-24"
+ },
+ "ribeira-sacra-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribeira Sacra (vino)», revision 173063544",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173063544",
+  "date": "2026-04-19"
+ },
+ "ribeiro-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribeiro», revision 173788091",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173788091",
+  "date": "2026-06-04"
+ },
+ "ribera-del-duero-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Duero (vino)», revision 171032228",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171032228",
+  "date": "2025-12-17"
+ },
+ "ribera-del-guadiana-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Guadiana», revision 173212354",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173212354",
+  "date": "2026-04-29"
+ },
+ "ribera-del-jucar-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Júcar», revision 165065477",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165065477",
+  "date": "2025-01-29"
+ },
+ "rioja-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rioja (vino)», revision 174986857",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174986857",
+  "date": "2026-08-23"
+ },
+ "rueda-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rueda (vino)», revision 174708333",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174708333",
+  "date": "2026-08-05"
+ },
+ "sierra-de-salamanca-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Sierra de Salamanca», revision 157530651",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157530651",
+  "date": "2024-01-22"
+ },
+ "sierras-de-malaga-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Sierras de Málaga», revision 165068483",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165068483",
+  "date": "2025-01-29"
+ },
+ "somontano-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Somontano», revision 165086418",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165086418",
+  "date": "2025-01-30"
+ },
+ "tacoronte-acentejo-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tacoronte-Acentejo», revision 172063558",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172063558",
+  "date": "2026-02-14"
+ },
+ "tarragona-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tarragona (vino)», revision 157796102",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157796102",
+  "date": "2024-01-28"
+ },
+ "terra-alta-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Terra Alta (vino)», revision 165087987",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165087987",
+  "date": "2025-01-30"
+ },
+ "tierra-del-vino-de-zamora-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tierra del Vino de Zamora», revision 157510786",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157510786",
+  "date": "2024-01-22"
+ },
+ "toro-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Toro (vino)», revision 166076923",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=166076923",
+  "date": "2025-03-13"
+ },
+ "txakoli-alava-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Álava», revision 157836978",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157836978",
+  "date": "2024-01-29"
+ },
+ "txakoli-bizkaia-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Vizcaya», revision 175263118",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175263118",
+  "date": "2026-09-09"
+ },
+ "txakoli-getaria-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Guetaria», revision 164260603",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164260603",
+  "date": "2024-12-22"
+ },
+ "ucles-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Uclés (vino)», revision 171165641",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171165641",
+  "date": "2025-12-25"
+ },
+ "utiel-requena-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Utiel-Requena (vino)», revision 174175197",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174175197",
+  "date": "2026-06-30"
+ },
+ "valdeorras-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valdeorras (vino)», revision 173023561",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173023561",
+  "date": "2026-04-17"
+ },
+ "valdepenas-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valdepeñas (vino)», revision 168726632",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168726632",
+  "date": "2025-07-30"
+ },
+ "valencia-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valencia (vino)», revision 169458723",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169458723",
+  "date": "2025-09-12"
+ },
+ "valle-de-guimar-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valle de Güímar (vino)», revision 175209053",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175209053",
+  "date": "2026-09-05"
+ },
+ "valle-de-la-orotava-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valle de la Orotava (vino)», revision 157410401",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157410401",
+  "date": "2024-01-19"
+ },
+ "valles-de-benavente-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valles de Benavente», revision 171486584",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171486584",
+  "date": "2026-01-13"
+ },
+ "valtiendas-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valtiendas (vino)», revision 175223430",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175223430",
+  "date": "2026-09-06"
+ },
+ "vinos-de-madrid-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Vinos de Madrid», revision 175144719",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175144719",
+  "date": "2026-09-01"
+ },
+ "ycoden-daute-isora-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ycoden-Daute-Isora», revision 170943219",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170943219",
+  "date": "2025-12-12"
+ },
+ "yecla-wikinotes": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Yecla (vino)», revision 169684344",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169684344",
+  "date": "2025-09-26"
  }
 }
