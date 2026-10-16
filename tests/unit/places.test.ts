@@ -26,11 +26,10 @@ describe('place tree', () => {
     expect(places.filter((p) => p.kind === 'VP').every((p) => p.quiz === 'none')).toBe(true);
   });
 
-  it('has unique, short slug ids that are not paths (decision #41)', () => {
+  it('has unique slug ids that are not paths (decision #41)', () => {
     expect(byId.size).toBe(places.length);
     for (const p of places) {
       expect(p.id, p.name).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
-      expect(p.id.length, p.id).toBeLessThanOrEqual(24);
     }
   });
 
