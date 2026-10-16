@@ -1,0 +1,261 @@
+{
+ "campo-de-calatrava": [
+  {
+   "listed": "Aldea del Rey",
+   "ine": "13009",
+   "ign_name": "Aldea del Rey"
+  },
+  {
+   "listed": "Almagro",
+   "ine": "13013",
+   "ign_name": "Almagro"
+  },
+  {
+   "listed": "Argamasilla de Calatrava",
+   "ine": "13020",
+   "ign_name": "Argamasilla de Calatrava"
+  },
+  {
+   "listed": "Ballesteros de Calatrava",
+   "ine": "13022",
+   "ign_name": "Ballesteros de Calatrava"
+  },
+  {
+   "listed": "Bolaños de Calatrava",
+   "ine": "13023",
+   "ign_name": "Bolaños de Calatrava"
+  },
+  {
+   "listed": "Calzada de Calatrava",
+   "ine": "13027",
+   "ign_name": "Calzada de Calatrava"
+  },
+  {
+   "listed": "Cañada de Calatrava",
+   "ine": "13029",
+   "ign_name": "Cañada de Calatrava"
+  },
+  {
+   "listed": "Carrión de Calatrava",
+   "ine": "13031",
+   "ign_name": "Carrión de Calatrava"
+  },
+  {
+   "listed": "Granátula de Calatrava",
+   "ine": "13045",
+   "ign_name": "Granátula de Calatrava"
+  },
+  {
+   "listed": "Miguelturra",
+   "ine": "13056",
+   "ign_name": "Miguelturra"
+  },
+  {
+   "listed": "Moral de Calatrava",
+   "ine": "13058",
+   "ign_name": "Moral de Calatrava"
+  },
+  {
+   "listed": "Pozuelo de Calatrava",
+   "ine": "13066",
+   "ign_name": "Pozuelo de Calatrava"
+  },
+  {
+   "listed": "Torralba de Calatrava",
+   "ine": "13083",
+   "ign_name": "Torralba de Calatrava"
+  },
+  {
+   "listed": "Valenzuela de Calatrava",
+   "ine": "13088",
+   "ign_name": "Valenzuela de Calatrava"
+  },
+  {
+   "listed": "Villanueva de San Carlos",
+   "ine": "13094",
+   "ign_name": "Villanueva de San Carlos"
+  },
+  {
+   "listed": "Villar del Pozo",
+   "ine": "13095",
+   "ign_name": "Villar del Pozo"
+  }
+ ],
+ "cebreros": [
+  {
+   "listed": "La Adrada",
+   "ine": "05002",
+   "ign_name": "La Adrada"
+  },
+  {
+   "listed": "El Barraco",
+   "ine": "05022",
+   "ign_name": "El Barraco"
+  },
+  {
+   "listed": "Burgohondo",
+   "ine": "05041",
+   "ign_name": "Burgohondo"
+  },
+  {
+   "listed": "Casavieja",
+   "ine": "05054",
+   "ign_name": "Casavieja"
+  },
+  {
+   "listed": "Casillas",
+   "ine": "05055",
+   "ign_name": "Casillas"
+  },
+  {
+   "listed": "Cebreros",
+   "ine": "05057",
+   "ign_name": "Cebreros"
+  },
+  {
+   "listed": "Cuevas del Valle",
+   "ine": "05066",
+   "ign_name": "Cuevas del Valle"
+  },
+  {
+   "listed": "Fresnedilla",
+   "ine": "05075",
+   "ign_name": "Fresnedilla"
+  },
+  {
+   "listed": "Gavilanes",
+   "ine": "05082",
+   "ign_name": "Gavilanes"
+  },
+  {
+   "listed": "Herradón de Pinares",
+   "ine": "05093",
+   "ign_name": "Herradón de Pinares"
+  },
+  {
+   "listed": "Higuera de las Dueñas",
+   "ine": "05095",
+   "ign_name": "Higuera de las Dueñas"
+  },
+  {
+   "listed": "El Hoyo de Pinares",
+   "ine": "05102",
+   "ign_name": "El Hoyo de Pinares"
+  },
+  {
+   "listed": "Lanzahíta",
+   "ine": "05110",
+   "ign_name": "Lanzahíta"
+  },
+  {
+   "listed": "Mijares",
+   "ine": "05127",
+   "ign_name": "Mijares"
+  },
+  {
+   "listed": "Mombeltrán",
+   "ine": "05132",
+   "ign_name": "Mombeltrán"
+  },
+  {
+   "listed": "Navahondilla",
+   "ine": "05156",
+   "ign_name": "Navahondilla"
+  },
+  {
+   "listed": "Navalmoral",
+   "ine": "05158",
+   "ign_name": "Navalmoral"
+  },
+  {
+   "listed": "Navaluenga",
+   "ine": "05163",
+   "ign_name": "Navaluenga"
+  },
+  {
+   "listed": "Navarredondilla",
+   "ine": "05166",
+   "ign_name": "Navarredondilla"
+  },
+  {
+   "listed": "Navarrevisca",
+   "ine": "05167",
+   "ign_name": "Navarrevisca"
+  },
+  {
+   "listed": "Navatalgordo",
+   "ine": "05169",
+   "ign_name": "Navatalgordo"
+  },
+  {
+   "listed": "Pedro Bernardo",
+   "ine": "05182",
+   "ign_name": "Pedro Bernardo"
+  },
+  {
+   "listed": "Piedralaves",
+   "ine": "05187",
+   "ign_name": "Piedralaves"
+  },
+  {
+   "listed": "San Bartolomé de Pinares",
+   "ine": "05201",
+   "ign_name": "San Bartolomé de Pinares"
+  },
+  {
+   "listed": "San Esteban del Valle",
+   "ine": "05207",
+   "ign_name": "San Esteban del Valle"
+  },
+  {
+   "listed": "San Juan de la Nava",
+   "ine": "05211",
+   "ign_name": "San Juan de la Nava"
+  },
+  {
+   "listed": "San Juan del Molinillo",
+   "ine": "05212",
+   "ign_name": "San Juan del Molinillo"
+  },
+  {
+   "listed": "Santa Cruz de Pinares",
+   "ine": "05222",
+   "ign_name": "Santa Cruz de Pinares"
+  },
+  {
+   "listed": "Santa Cruz del Valle",
+   "ine": "05221",
+   "ign_name": "Santa Cruz del Valle"
+  },
+  {
+   "listed": "Santa María del Tiétar",
+   "ine": "05227",
+   "ign_name": "Santa María del Tiétar"
+  },
+  {
+   "listed": "Serranillos",
+   "ine": "05233",
+   "ign_name": "Serranillos"
+  },
+  {
+   "listed": "Sotillo de la Adrada",
+   "ine": "05240",
+   "ign_name": "Sotillo de la Adrada"
+  },
+  {
+   "listed": "El Tiemblo",
+   "ine": "05241",
+   "ign_name": "El Tiemblo"
+  },
+  {
+   "listed": "Villanueva de Ávila",
+   "ine": "05905",
+   "ign_name": "Villanueva de Ávila"
+  },
+  {
+   "listed": "Villarejo del Valle",
+   "ine": "05262",
+   "ign_name": "Villarejo del Valle"
+  }
+ ]
+}
