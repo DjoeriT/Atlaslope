@@ -1,0 +1,352 @@
+{
+ "region": "mediterranean",
+ "sheets": [
+  {
+   "id": "valencia",
+   "why": {
+    "text": "Mild average temperatures ripen grapes early, and water stress in hot spring and summer gives the wines intense aroma.",
+    "cite": [
+     "valencia-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Verdil"
+     },
+     {
+      "local": "Moscatel de Alejandría"
+     },
+     {
+      "local": "Monastrell"
+     },
+     {
+      "local": "Merseguera"
+     },
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Garnacha Tintorera"
+     }
+    ],
+    "cite": [
+     "valencia-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "fortified",
+     "sweet"
+    ],
+    "text": "White, rosado and red wines, plus sweet liqueur wines (Moscatel), aromatic sparkling and semi-sparkling wines.",
+    "cite": [
+     "valencia-doc:p1",
+     "valencia-doc:p3",
+     "valencia-doc:p4",
+     "valencia-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: mild temperatures all year, hot spring and summer with water stress, and a wide day-night range.",
+    "cite": [
+     "valencia-doc:p7",
+     "valencia-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "utiel-requena",
+   "why": {
+    "text": "Bobal's strong polyphenols and high acidity give deep red, full-bodied wines; chalky soils keep the whites floral and fresh.",
+    "cite": [
+     "utiel-requena-doc:p9",
+     "utiel-requena-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Bobal"
+     }
+    ],
+    "cite": [
+     "utiel-requena-doc:p9",
+     "utiel-requena-doc:p10"
+    ],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo",
+     "Syrah",
+     "Sauvignon Blanco",
+     "Planta Nova",
+     "Merseguera",
+     "Merlot",
+     "Macabeo",
+     "Garnacha Tinta",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "utiel-requena-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Reds led by Bobal, whites, deeply coloured rosados, sparkling and semi-sparkling wines, low-alcohol wines and late-harvest liqueur wines.",
+    "cite": [
+     "utiel-requena-doc:p1",
+     "utiel-requena-doc:p3",
+     "utiel-requena-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Very sunny, with little risk of fungal disease, so grapes ripen fully and can be harvested very late.",
+    "cite": [
+     "utiel-requena-doc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Chalky (calcareous) soils across the zone, noted for the whites.",
+    "cite": [
+     "utiel-requena-doc:p9"
+    ]
+   }
+  },
+  {
+   "id": "yecla",
+   "why": {
+    "text": "Monastrell on a high, dry, sunny plateau with deep, chalky, low-organic soils gives fleshy, warm, well-balanced reds.",
+    "cite": [
+     "yecla-doc:p3",
+     "yecla-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Monastrell"
+     }
+    ],
+    "cite": [
+     "yecla-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified",
+     "sweet"
+    ],
+    "text": "Fleshy, warm reds; also whites, rosados, sparkling wines and sweet liqueur wines.",
+    "cite": [
+     "yecla-doc:p1",
+     "yecla-doc:p3",
+     "yecla-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Dry continental: hot summers, very cold winters, about 300 mm of rain a year and over 3,000 hours of sun.",
+    "cite": [
+     "yecla-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Chalky, deep and well drained, very low in organic matter.",
+    "cite": [
+     "yecla-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The plateau lies between 535 and 700 m.",
+    "cite": [
+     "yecla-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "jumilla",
+   "why": {
+    "text": "Hardy Monastrell, suited to drought, strong summer heat and spring frost, makes broad, fleshy reds with ripe-fruit aroma.",
+    "cite": [
+     "jumilla-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Monastrell"
+     }
+    ],
+    "cite": [
+     "jumilla-doc:p12"
+    ],
+    "others": [
+     "Cencibel",
+     "Chardonnay",
+     "Verdejo",
+     "Merlot",
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Garnacha Tintorera",
+     "Macabeo",
+     "Garnacha Tinta",
+     "Airén",
+     "Moscatel de Grano Menudo",
+     "Malvasía Aromática",
+     "Sauvignon Blanc",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "jumilla-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose",
+     "white",
+     "sweet",
+     "fortified"
+    ],
+    "text": "Monastrell reds and rosados (at least 85% Monastrell for the varietal wines); whites; sweet versions; Monastrell liqueur wines.",
+    "cite": [
+     "jumilla-doc:p7",
+     "jumilla-doc:p8",
+     "jumilla-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Harsh: drought, strong summer heat and spring frosts. The document gives no figures.",
+    "cite": [
+     "jumilla-doc:p12"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "alicante",
+   "why": {
+    "text": "Humid sea air and dry, hard calcareous ground make the wines fresher and subtler than those of inland or continental neighbours.",
+    "cite": [
+     "alicante-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Moscatel de Alejandría"
+     },
+     {
+      "local": "Monastrell"
+     }
+    ],
+    "cite": [
+     "alicante-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "fortified",
+     "sweet"
+    ],
+    "text": "Whites, rosados and reds, aged \"añejo\" wines, Fondillón, liqueur wines and sparkling wines.",
+    "cite": [
+     "alicante-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Strong summer sun at ripening, tempered by humidity from the Mediterranean; drier and milder than continental areas.",
+    "cite": [
+     "alicante-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Dry, hard calcareous soils and rock; the document calls the soils rich.",
+    "cite": [
+     "alicante-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "bullas",
+   "why": {
+    "text": "Monastrell (80% of plantings), altitude, chalky soil and a dry climate give broad, fleshy, deeply coloured reds.",
+    "cite": [
+     "bullas-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Monastrell"
+     }
+    ],
+    "cite": [
+     "bullas-doc:p7"
+    ],
+    "others": [
+     "Macabeo"
+    ],
+    "othersCite": [
+     "bullas-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Mostly Monastrell reds, young or oak-aged; dry whites, rosados, sparkling and liqueur wines.",
+    "cite": [
+     "bullas-doc:p4",
+     "bullas-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Dry climate, with the document noting altitude as an influence. No figures given.",
+    "cite": [
+     "bullas-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Predominantly calcareous (chalky) soil.",
+    "cite": [
+     "bullas-doc:p7"
+    ]
+   }
+  }
+ ]
+}
