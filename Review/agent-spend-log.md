@@ -13,3 +13,4 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-16 | BuilderBot, Opus | Release 3 card 1, tree model (`release-3-card-1-tree.md`) | 250k | 46,098 tokens, 22 tool uses, 4 min | Done; 17 tree tests; optional `kind` for the shared id `rioja` |
 | 2026-10-16 | BuilderBot, Sonnet | Release 3 card 2, app shell (`release-3-card-2-shell.md`) | 150k | 67,155 tokens, 45 tool uses, 6 min | Done; check ui green; also edited playwright.config.ts (uitest build mode) |
 | 2026-10-16 | BuilderBot, Sonnet | Release 3 card 3, the map (`release-3-card-3-map.md`) | 150k | 95,701 tokens, 47 tool uses, 9 min | Done; check ui green, 1.01 MB gz; satellite and terrain not run (no key, no tile network here) |
+| 2026-10-16 | BuilderBot, Sonnet | Release 3 card 4, cards and URLs (`release-3-card-4-cards.md`) | 150k | 103,377 tokens, 42 tool uses, 9 min | Done; 13 UI tests; also edited src/map/ (framing, zones) as LeadBot allowed |
