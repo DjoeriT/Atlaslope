@@ -33,12 +33,14 @@ export function layerVisibility(menu: MenuState, imagery: boolean): Record<Layer
 /** Paint that differs between imagery and the plain atlas. DO colours are stronger over imagery so they read. */
 export function basemapPaint(sat: boolean) {
   const sel = ['boolean', ['feature-state', 'sel'], false];
+  const dim = ['boolean', ['feature-state', 'dim'], false];
   return {
     ocean: { color: sat ? '#1B3A52' : '#9DBCCB', opacity: sat ? 0.45 : 1 },
     coast: sat ? '#E6F0F4' : '#4F6873',
     borders: sat ? '#F4EFE6' : '#5B5048',
     hillshadeExaggeration: sat ? 0.25 : 0.5,
-    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, sat ? 0.62 : 0.45],
+    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, dim, 0.06, sat ? 0.62 : 0.45],
+    dosLineOpacity: ['case', dim, 0.25, 1],
     dosLineWidth: ['case', sel, 3.2, sat ? 2.2 : 1.2],
     dosLineDash: sat ? [10, 0] : [2, 1.5],
   };
