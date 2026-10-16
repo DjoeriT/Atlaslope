@@ -1,0 +1,26 @@
+<!doctype html><html lang="en" data-theme="paper"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlaslope · Today, nothing due</title><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="assets/app.css"></head><body>
+<div id="map" role="application" aria-label="Map of Spain. Click a place to select it."></div>
+<section class="card glass" aria-label="Today"><button id="close-card" class="iconbtn close" aria-label="Close, show the map"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div class="body"><div class="kicker">Today · Friday 17 October</div><h1>Nothing due</h1>
+<p class="lede">Everything you have learned is safe until tomorrow. Next due: 4 places on Saturday.</p>
+<ul class="today">
+<li><a href="16-region-castilla.html"><b>See today's five new places on the map</b><small>Arlanza, León, Tierra del Vino, Valtiendas, Valles de Benavente, all in Castilla y León</small></a></li>
+<li><a href="12-guide-rioja.html"><b>Read next: Rioja</b><small>The place guide, before Rioja's zones come into the quiz</small></a></li>
+</ul></div>
+<div class="foot"><a class="btn primary" href="../atlas-v2.2/03-quiz-find.html">Learn five new places</a><a class="btn quiet" href="15-explore-spain.html">Just explore</a></div></section>
+<div class="topleft"><button id="brand-btn" class="brand glass" aria-haspopup="menu" aria-expanded="false" aria-controls="brand-menu"><b>Atlaslope</b><small>Spain</small></button>
+<div class="search glass"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" placeholder="Search places, regions, towns, grapes" aria-label="Search places, regions, towns and grapes"></div></div>
+<div id="brand-menu" class="glass menu tl" role="menu" hidden><a role="menuitem" href="10-home-today.html">Home: today</a><a role="menuitem" href="15-explore-spain.html">Spain, the place tree</a><button role="menuitem" id="theme" aria-pressed="false"><span>Dark interface</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><a role="menuitem" href="index.html">About this round</a></div>
+<div class="topright"><span class="mock glass">mock · DO boundaries © MAPA 2014</span><nav class="seg glass" aria-label="Mode"><a href="15-explore-spain.html" aria-current="page">Explore</a><a href="../atlas-v2.2/00-quiz-setup.html">Quiz</a><a href="13-mastery.html">Progress</a></nav></div>
+<div id="layers-menu" class="glass menu br" hidden><h4>Map</h4>
+<label><input type="checkbox" data-layer="satellite" checked>Satellite imagery</label>
+<label><input type="checkbox" data-layer="climate">Climate<small>schematic</small></label>
+<label><input type="checkbox" data-layer="relief" checked>3D relief</label>
+<label><input type="checkbox" data-layer="dos" checked>Place boundaries</label>
+<p class="note" style="margin:.4rem .6rem .2rem;max-width:14rem">Soil is in each place guide. No open soil map is fine enough to draw.</p></div>
+<div class="bottomright"><div class="glass"><button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button></div>
+<div class="glass"><button id="layers-btn" class="iconbtn" aria-label="Map layers" aria-expanded="false" aria-controls="layers-menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></button><button id="tilt" class="iconbtn text" aria-label="3D view" aria-pressed="false">3D</button><button id="north" class="iconbtn" aria-label="Reset to north" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 7-3 7-3-7z" fill="currentColor"/></svg></button></div></div>
+<script>window.PAGE={"page": "spain", "basemap": "satellite"};</script>
+<script src="assets/maplibre-gl.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
+<script>(function(){const b=document.getElementById('brand-btn'),m=document.getElementById('brand-menu');if(!b||!m)return;b.addEventListener('click',()=>{const o=m.hidden;m.hidden=!o;b.setAttribute('aria-expanded',String(o));});document.addEventListener('click',e=>{if(!m.hidden&&!m.contains(e.target)&&!b.contains(e.target)){m.hidden=true;b.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden){m.hidden=true;b.setAttribute('aria-expanded','false');b.focus();}});})();</script>
+</body></html>

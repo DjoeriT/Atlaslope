@@ -19,7 +19,7 @@ The same page gives "Escala: 1:25.000" and "Actualización: marzo de 2014".
 
 **MAPA, ISO metadata record** (`https://www.mapama.gob.es/ide/metadatos/srv/api/records/17b70eca-5002-48c0-9552-c74dfc870360/formatters/xml`), constraints: "CC BY 4.0", "Nombrar a la fuente: Ministerio de Agricultura, Pesca y Alimentación", "Sin limitaciones al acceso público". Creation date 2014-03-01.
 
-The two MAPA texts disagree. Paraje is a free study tool, which fits both. We follow the stricter page conditions: no commercial food promotion, no health claims, and the © MAPA line shown with the map.
+The two MAPA texts disagree. Atlaslope is a free study tool, which fits both. We follow the stricter page conditions: no commercial food promotion, no health claims, and the © MAPA line shown with the map.
 
 **IGN / CNIG**, `https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf` (linked as `license` from the IGN OGC API): "el uso de los productos y servicios de información geográfica del IGN ... conlleva la aceptación por el usuario de una licencia CC-BY 4.0", with attribution in the form «<identificador del producto> <fecha> CC-BY 4.0 <atribución de productores>», shown "a pie de mapa". The municipality metadata record (`spaignLLM`) says "BDLJE CC-BY 4.0 ign.es".
 
@@ -38,14 +38,14 @@ Streamed at view time or served from `public/`. The app's DO layer is `dops.geoj
 
 | Layer | Source and URL | Fetched | Licence |
 |---|---|---|---|
-| Satellite, all zooms (under Esri from zoom 10 when the Esri key is set) | EOX Sentinel-2 cloudless 2020, WMTS as XYZ, `https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg` (template in `src/basemap.ts`; not probed from the build container [A]) | at view time | Free for non-commercial use with credit; read 16 Oct 2026 at cloudless.eox.at/products/viewing [R]. Credit in the map: "Sentinel-2 cloudless by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2020)" |
+| Satellite, all zooms (under Esri from zoom 10 when the Esri key is set) | EOX Sentinel-2 cloudless 2020, WMTS as XYZ, `https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg` (template was in the pre-restart `src/basemap.ts`; the release 3 map shell takes it over; not probed from the build container [A]) | at view time | Free for non-commercial use with credit; read 16 Oct 2026 at cloudless.eox.at/products/viewing [R]. Credit in the map: "Sentinel-2 cloudless by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2020)" |
 | Satellite, close-in (zoom 9 and up, cross-fading from EOX) | Esri World Imagery, keyed endpoint `https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}`; only built in when `VITE_ESRI_API_KEY` is set (`.env.example`) | at view time | Free developer account, under one million tiles a month, credit in the map: "Esri, Maxar, Earthstar Geographics, and the GIS User Community" [O, per LeadBot 16 Oct 2026] |
 | 3D terrain and hillshade (streamed at view time) | Mapzen Terrarium tiles on AWS Open Data, `https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png` | at view time | Mapzen terms; SRTM, NED, EU-DEM and others, attribution in the map |
 | DO labels (glyphs) | OpenFreeMap font endpoint, `https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf`, font "Noto Sans Regular" | at view time | OpenFreeMap: free, no key; Noto Sans, SIL Open Font Licence 1.1 |
-| Typefaces | Newsreader and IBM Plex Sans via `@fontsource`; woff2 files in `public/fonts/` (app) and `public/mocks/atlas-v2/assets/fonts/` (mocks) | 2026-10-15 | SIL Open Font Licence 1.1 |
+| Typefaces | Newsreader and IBM Plex Sans via `@fontsource`; woff2 files in `public/fonts/` (app) and `Review/mock-*/assets/fonts/` (mocks) | 2026-10-15 | SIL Open Font Licence 1.1 |
 
-## Mock-only layers (`public/mocks/atlas-v2/assets/data.js`, not under `data/`)
-The round 2.1 atlas mock bundles its own geography so it runs without a build. None of it is used by the app.
+## Mock-only layers (`assets/data.js` of the mocks, kept in the project files and not committed; not under `data/`)
+The atlas mocks (rounds 2.1 to 3) bundle their own geography so they run without a build. None of it is used by the app.
 
 | Layer | Source and URL | Fetched | Licence |
 |---|---|---|---|

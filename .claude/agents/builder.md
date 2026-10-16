@@ -1,6 +1,6 @@
 ---
 name: builder
-description: BuilderBot for Paraje. Works one task card at a time in its own worktree; edits only the files the card names. Spawn with isolation "worktree".
+description: BuilderBot for Atlaslope. Works one task card at a time in its own worktree; edits only the files the card names. Spawn with isolation "worktree".
 model: sonnet
 effort: medium
 maxTurns: 60

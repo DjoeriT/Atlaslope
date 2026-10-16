@@ -1,20 +1,47 @@
 {
-  "env": { "BASH_MAX_OUTPUT_LENGTH": "8000" },
+  "env": {
+    "BASH_MAX_OUTPUT_LENGTH": "8000"
+  },
   "hooks": {
     "PreToolUse": [
-      { "matcher": "Read", "hooks": [ { "type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/narrow-read.sh" } ] }
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/narrow-read.sh"
+          }
+        ]
+      }
     ],
     "PostToolUse": [
-      { "matcher": "Bash", "hooks": [ { "type": "command", "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/context-after-release.sh" } ] }
+      {
+        "matcher": "Bash|mcp__github__actions_run_trigger",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/context-after-release.sh"
+          }
+        ]
+      }
     ]
   },
   "permissions": {
     "allow": [
-      "Bash(Tools/check.sh)", "Bash(Tools/check.sh *)",
-      "Bash(npm test)", "Bash(npm test *)", "Bash(npm run build)", "Bash(npm run test:ui)",
-      "Bash(npx tsc --noEmit)", "Bash(npx vitest run *)", "Bash(npx playwright test *)",
-      "Bash(gh run list *)", "Bash(gh run watch *)", "Bash(gh issue list *)", "Bash(gh issue view *)",
-      "Bash(shasum *)", "Bash(jq *)"
+      "Bash(Tools/check.sh)",
+      "Bash(Tools/check.sh *)",
+      "Bash(npm test)",
+      "Bash(npm test *)",
+      "Bash(npm run build)",
+      "Bash(npm run test:ui)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx vitest run *)",
+      "Bash(npx playwright test *)",
+      "Bash(gh run list *)",
+      "Bash(gh issue list *)",
+      "Bash(gh issue view *)",
+      "Bash(shasum *)",
+      "Bash(jq *)"
     ]
   }
 }
