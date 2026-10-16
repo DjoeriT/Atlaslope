@@ -38,6 +38,6 @@ jobs:
           gh api "repos/${{ github.repository }}/pages/health" || true
       - name: What the site answers
         run: |
-          for url in http://atlaslope.com https://atlaslope.com https://www.atlaslope.com; do
+          for url in http://atlaslope.com https://atlaslope.com https://www.atlaslope.com https://djoerit.github.io/Atlaslope/ https://djoerit.github.io/Paraje/; do
             echo "$url -> $(curl -s -o /dev/null -m 15 -w '%{http_code} %{redirect_url}' "$url" || echo failed)"
           done
