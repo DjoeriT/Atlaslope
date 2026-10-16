@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      LIVE_URL: ${{ inputs.url || 'https://djoerit.github.io/Atlaslope/' }}
+      LIVE_URL: ${{ inputs.url || 'https://atlaslope.com/' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
