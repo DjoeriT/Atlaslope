@@ -72,6 +72,19 @@ def cut_from(t, s0):
     return found if {"grapes", "area"} <= found.keys() else None
 
 
+def _date_of(path):
+    t = path.read_text(encoding="utf-8", errors="replace")
+    d = re.search(r"Ares\((\d{4})\)\d+\s*-\s*(\d\d)/(\d\d)/(\d{4})", t)
+    if d: return f"{d.group(4)}-{d.group(3)}-{d.group(2)}"
+    m = re.search(r"_(\d{1,2})_(\d{1,2})_(\d{4})\.html$", path.name)
+    if m: return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}"
+    url = json.loads((F / "manifest.json").read_text()).get(path.name[:-4], {}).get("url", "")
+    d = re.search(r"(\d{4})_(\d{2})_(\d{2})", url) or re.search(r"/(\d{4})-(\d{2})/", url)
+    if d: return "-".join(d.groups())
+    d = re.search(r"/(\d{2})(?:%20| )(\d{2})(?:%20| )(\d{2})", url)
+    return f"20{d.group(1)}-{d.group(2)}-{d.group(3)}" if d else "undated"
+
+
 def candidates(fn):
     for p in glob.glob(str(F / f"att-{fn}-*.txt")) + glob.glob(str(F / f"oj-{fn}-*.html")) + glob.glob(str(F / f"pliego-{fn}-*.txt")):
         p = Path(p); t = text_of(p); secs = cut(t)
@@ -79,7 +92,7 @@ def candidates(fn):
         date = re.search(r"Ares\((\d{4})\)\d+\s*-\s*(\d\d)/(\d\d)/(\d{4})", t)
         when = f"{date.group(4)}-{date.group(3)}-{date.group(2)}" if date else None
         if not when:
-            if p.name.startswith("pliego-"): when = "pliego"; yield "0001", p, secs; continue
+            if p.name.startswith("pliego-"): yield "0001", p, secs; continue  # dated later by _date_of
             m = re.search(r"_(\d{1,2})_(\d{1,2})_(\d{4})\.html$", p.name)
             when = f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else "0000"
         yield when, p, secs
@@ -97,7 +110,8 @@ def main():
         best = max(candidates(p["euFile"]), key=lambda c: c[0], default=None)
         if not best:
             missing.append(p["id"]); index.append(f"| {p['name']} | none yet | | |"); continue
-        when, path, secs = best
+        _, path, secs = best
+        when = _date_of(path)
         src = manifest.get(path.name.removesuffix(".txt") if path.suffix == ".txt" else path.name, {}).get("url", "")
         md = [f"# {p['name']} ({p['kind']}, {p['euFile']})", "",
               f"Source: {'pliego de condiciones' if path.name.startswith('pliego-') else 'EU single document'}, {path.name} ({src}), dated {when}. Spanish, quoted as published. Cite as «{'Pliego' if path.name.startswith('pliego-') else 'Documento único'} {p['euFile']}, p. N».", ""]

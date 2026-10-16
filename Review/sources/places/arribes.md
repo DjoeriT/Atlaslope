@@ -1,6 +1,6 @@
 # Arribes (DO, PDO-ES-A0614)
 
-Source: pliego de condiciones, pliego-PDO-ES-A0614-arribes.txt (https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-A0614, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-A0614-arribes.txt (https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf), dated 2022-03-25. Spanish, quoted as published. Cite as «Pliego PDO-ES-A0614, p. N».
 
 ## Wine descriptions (p. 3)
 

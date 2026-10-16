@@ -32,20 +32,20 @@ Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/so
 | Valle de la Orotava | [valle-de-la-orotava.md](valle-de-la-orotava.md) | att-PDO-ES-A1040-27296.txt | 2014-06-30 |
 | Ycoden-Daute-Isora | [ycoden-daute-isora.md](ycoden-daute-isora.md) | att-PDO-ES-A0114-27335.txt | 2014-06-30 |
 | Arlanza | [arlanza.md](arlanza.md) | att-PDO-ES-A0613-29334.txt | 2014-06-27 |
-| Arribes | [arribes.md](arribes.md) | pliego-PDO-ES-A0614-arribes.txt | 0001 |
+| Arribes | [arribes.md](arribes.md) | pliego-PDO-ES-A0614-arribes.txt | 2022-03-25 |
 | Bierzo | [bierzo.md](bierzo.md) | att-PDO-ES-A0615-29404.txt | 2014-06-27 |
-| Cebreros | [cebreros.md](cebreros.md) | pliego-PDO-ES-02348-cebreros.txt | 0001 |
+| Cebreros | [cebreros.md](cebreros.md) | pliego-PDO-ES-02348-cebreros.txt | 2020-09-07 |
 | Cigales | [cigales.md](cigales.md) | att-PDO-ES-A0622-29480.txt | 2014-06-27 |
 | León | [leon.md](leon.md) | att-PDO-ES-A0882-29723.txt | 2014-06-30 |
 | Ribera del Duero | [ribera-del-duero.md](ribera-del-duero.md) | att-PDO-ES-A0626-34149.txt | 2016-01-21 |
-| Rueda | [rueda.md](rueda.md) | pliego-PDO-ES-A0889-rueda.txt | 0001 |
+| Rueda | [rueda.md](rueda.md) | pliego-PDO-ES-A0889-rueda.txt | 2019-10-29 |
 | Sierra de Salamanca | [sierra-de-salamanca.md](sierra-de-salamanca.md) | att-PDO-ES-A0631-65827.txt | 2014-06-30 |
 | Tierra del Vino de Zamora | [tierra-del-vino-de-zamora.md](tierra-del-vino-de-zamora.md) | att-PDO-ES-A0634-29733.txt | 2014-06-27 |
 | Toro | [toro.md](toro.md) | att-PDO-ES-A0886-29786.txt | 2014-06-27 |
 | Valles de Benavente | [valles-de-benavente.md](valles-de-benavente.md) | att-PDO-ES-A0646-29810.txt | 2014-06-27 |
 | Valtiendas | [valtiendas.md](valtiendas.md) | att-PDO-ES-A0747-40814.txt | 2017-03-22 |
 | Almansa | [almansa.md](almansa.md) | att-PDO-ES-A0044-28973.txt | 2014-06-27 |
-| Campo de Calatrava | [campo-de-calatrava.md](campo-de-calatrava.md) | pliego-PDO-ES-02870-campo-de-calatrava.txt | 0001 |
+| Campo de Calatrava | [campo-de-calatrava.md](campo-de-calatrava.md) | pliego-PDO-ES-02870-campo-de-calatrava.txt | 2025-08 |
 | La Mancha | [la-mancha.md](la-mancha.md) | att-PDO-ES-A0045-29848.txt | 2014-06-27 |
 | Manchuela | [manchuela.md](manchuela.md) | att-PDO-ES-A0046-29137.txt | 2014-06-27 |
 | Méntrida | [mentrida.md](mentrida.md) | att-PDO-ES-A0047-29190.txt | 2014-06-27 |
@@ -57,7 +57,7 @@ Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/so
 | Conca de Barberà | [conca-de-barbera.md](conca-de-barbera.md) | att-PDO-ES-A1422-41521.txt | 2017-04-06 |
 | Costers del Segre | [costers-del-segre.md](costers-del-segre.md) | att-PDO-ES-A1523-30004.txt | 2014-06-30 |
 | Empordà | [emporda.md](emporda.md) | att-PDO-ES-A1548-29893.txt | 2014-06-30 |
-| Montsant | [montsant.md](montsant.md) | pliego-PDO-ES-A1550-montsant.txt | 0001 |
+| Montsant | [montsant.md](montsant.md) | pliego-PDO-ES-A1550-montsant.txt | 2022-09-14 |
 | Penedès | [penedes.md](penedes.md) | att-PDO-ES-A1551-29997.txt | 2014-06-30 |
 | Pla de Bages | [pla-de-bages.md](pla-de-bages.md) | att-PDO-ES-A1557-35932.txt | 2016-04-15 |
 | Priorat | [priorat.md](priorat.md) | att-PDO-ES-A1560-30019.txt | 2014-06-30 |
@@ -66,7 +66,7 @@ Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/so
 | Ribera del Guadiana | [ribera-del-guadiana.md](ribera-del-guadiana.md) | att-PDO-ES-A1295-28201.txt | 2014-06-30 |
 | Monterrei | [monterrei.md](monterrei.md) | att-PDO-ES-A1114-28929.txt | 2014-06-26 |
 | Rías Baixas | [rias-baixas.md](rias-baixas.md) | att-PDO-ES-A1119-31280.txt | 2014-12-16 |
-| Ribeira Sacra | [ribeira-sacra.md](ribeira-sacra.md) | pliego-PDO-ES-A1128-ribeira-sacra.txt | 0001 |
+| Ribeira Sacra | [ribeira-sacra.md](ribeira-sacra.md) | pliego-PDO-ES-A1128-ribeira-sacra.txt | 2025-02-18 |
 | Ribeiro | [ribeiro.md](ribeiro.md) | att-PDO-ES-A1123-31230.txt | 2014-12-16 |
 | Valdeorras | [valdeorras.md](valdeorras.md) | att-PDO-ES-A1132-39186.txt | 2016-12-19 |
 | Vinos de Madrid | [vinos-de-madrid.md](vinos-de-madrid.md) | att-PDO-ES-A1525-27926.txt | 2014-06-30 |

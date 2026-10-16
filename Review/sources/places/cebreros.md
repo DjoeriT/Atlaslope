@@ -1,6 +1,6 @@
 # Cebreros (VC, PDO-ES-02348)
 
-Source: pliego de condiciones, pliego-PDO-ES-02348-cebreros.txt (https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-02348, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-02348-cebreros.txt (https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf), dated 2020-09-07. Spanish, quoted as published. Cite as «Pliego PDO-ES-02348, p. N».
 
 ## Wine descriptions (p. 2)
 

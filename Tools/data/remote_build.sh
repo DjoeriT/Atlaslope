@@ -1,5 +1,5 @@
 #!/bin/bash
-# Builds the data files that need GDAL and large downloads. Runs in GitHub Actions (.github/workflows/data-fetch.yml), not in the cloud
+# Builds the data files that need GDAL and large downloads. Runs in GitHub Actions (.github/workflows/data-build.yml), not in the cloud
 # container (no GDAL, no package registries). Rerunnable: downloads land in data/raw/ (git-ignored); outputs are committed.
 #   data/natural-earth-spain.geojson   Natural Earth 10 m land, minor islands and land borders, clipped to Spain's two boxes
 #   data/koppen-spain.geojson          Köppen-Geiger 1991-2020 at 1 km (Beck et al. 2023), Spain only, one feature per class and box
@@ -37,8 +37,18 @@ json.dump({"type": "FeatureCollection", "features": feats}, open(sys.argv[2], "w
 print("natural-earth-spain:", len(feats), "features")
 PY
 
-# Spain's outline (mainland, Balearics, Canaries, Ceuta and Melilla dropped by the boxes) to mask the climate map.
-ogr2ogr -f GeoJSON $T/spain.json $RAW/ne/ne_10m_admin_0_countries.shp -where "ADM0_A3 = 'ESP'" -makevalid
+# Spain's outline to mask the climate map: mainland, Balearics and Canaries. Ceuta, Melilla and the small islands off Morocco
+# lie inside the mainland box, so the parts south of 36.0° N and east of 6.0° W are dropped by hand.
+ogr2ogr -f GeoJSON $T/spain-all.json $RAW/ne/ne_10m_admin_0_countries.shp -where "ADM0_A3 = 'ESP'" -makevalid -explodecollections
+python3 - $T/spain-all.json $T/spain.json <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+def north_african(f):
+    xs = [c[0] for r in f["geometry"]["coordinates"] for c in r]; ys = [c[1] for r in f["geometry"]["coordinates"] for c in r]
+    return max(ys) < 36.0 and min(xs) > -6.0
+d["features"] = [f for f in d["features"] if not north_african(f)]
+json.dump(d, open(sys.argv[2], "w"))
+PY
 
 # Köppen-Geiger: Beck et al. 2023, figshare article 21789074 (CC BY 4.0). The archive holds every period; take 1991-2020 at 1 km.
 if [ ! -f "$RAW/kg/kg.zip" ]; then
@@ -67,7 +77,12 @@ L = ["Af Tropical, rainforest", "Am Tropical, monsoon", "Aw Tropical, savannah",
      "Dfd Cold, no dry season, very cold winter", "ET Polar, tundra", "EF Polar, frost"]
 d = json.load(open(sys.argv[1])); out = []
 for f in d["features"]:
-    if not f["geometry"]: continue
+    g = f["geometry"]
+    if not g: continue
+    if g["type"] == "GeometryCollection":  # makevalid can leave stray lines; keep the polygon parts
+        polys = [p["coordinates"] for p in g["geometries"] if p["type"] == "Polygon"] + [c for p in g["geometries"] if p["type"] == "MultiPolygon" for c in p["coordinates"]]
+        if not polys: continue
+        f["geometry"] = {"type": "MultiPolygon", "coordinates": polys}
     code, name = L[int(f["properties"]["class"]) - 1].split(" ", 1)
     out.append({"type": "Feature", "properties": {"code": code, "name": name, "box": f["properties"]["box"]}, "geometry": f["geometry"]})
 json.dump({"type": "FeatureCollection", "features": out}, open(sys.argv[2], "w"), separators=(",", ":"))

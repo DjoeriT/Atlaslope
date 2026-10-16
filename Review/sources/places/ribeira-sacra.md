@@ -1,6 +1,6 @@
 # Ribeira Sacra (DO, PDO-ES-A1128)
 
-Source: pliego de condiciones, pliego-PDO-ES-A1128-ribeira-sacra.txt (https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-A1128, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-A1128-ribeira-sacra.txt (https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf), dated 2025-02-18. Spanish, quoted as published. Cite as «Pliego PDO-ES-A1128, p. N».
 
 ## Wine descriptions (p. 4)
 

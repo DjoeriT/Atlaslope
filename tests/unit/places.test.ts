@@ -26,11 +26,11 @@ describe('place tree', () => {
     expect(places.filter((p) => p.kind === 'VP').every((p) => p.quiz === 'none')).toBe(true);
   });
 
-  it('has unique, short, stable-looking ids that never contain the parent', () => {
+  it('has unique, short slug ids that are not paths (decision #41)', () => {
     expect(byId.size).toBe(places.length);
     for (const p of places) {
       expect(p.id, p.name).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
-      if (p.parent !== 'spain') expect(p.id.startsWith(p.parent + '/'), p.id).toBe(false);
+      expect(p.id.length, p.id).toBeLessThanOrEqual(24);
     }
   });
 

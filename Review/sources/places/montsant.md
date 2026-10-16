@@ -1,6 +1,6 @@
 # Montsant (DO, PDO-ES-A1550)
 
-Source: pliego de condiciones, pliego-PDO-ES-A1550-montsant.txt (https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-A1550, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-A1550-montsant.txt (https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf), dated 2022-09-14. Spanish, quoted as published. Cite as «Pliego PDO-ES-A1550, p. N».
 
 ## Wine descriptions (p. 1)
 

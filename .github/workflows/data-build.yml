@@ -19,6 +19,9 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq gdal-bin python3-gdal unzip >/dev/null
       - run: Tools/data/remote_build.sh
       - name: Commit the results to this branch
+        if: always()
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -26,5 +29,5 @@ jobs:
           cp data/raw/build/munis-report.json Review/sources/added-municipalities-matched.json && git add Review/sources/added-municipalities-matched.json
           git diff --cached --quiet && exit 0
           git commit -q -m "Data build: results of run ${{ github.run_id }}"
-          git pull -q --no-rebase origin ${{ github.ref_name }}
-          git push origin HEAD:${{ github.ref_name }}
+          git pull -q --no-rebase origin "$BRANCH"
+          git push origin HEAD:"$BRANCH"

@@ -1,6 +1,6 @@
 # Rueda (DO, PDO-ES-A0889)
 
-Source: pliego de condiciones, pliego-PDO-ES-A0889-rueda.txt (https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-A0889, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-A0889-rueda.txt (https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf), dated 2019-10-29. Spanish, quoted as published. Cite as «Pliego PDO-ES-A0889, p. N».
 
 ## Wine descriptions (p. 3)
 

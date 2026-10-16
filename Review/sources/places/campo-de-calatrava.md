@@ -1,6 +1,6 @@
 # Campo de Calatrava (DO, PDO-ES-02870)
 
-Source: pliego de condiciones, pliego-PDO-ES-02870-campo-de-calatrava.txt (https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf), dated 0001. Spanish, quoted as published. Cite as «Pliego PDO-ES-02870, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-02870-campo-de-calatrava.txt (https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf), dated 2025-08. Spanish, quoted as published. Cite as «Pliego PDO-ES-02870, p. N».
 
 ## Wine descriptions (p. 1)
 

@@ -40,6 +40,8 @@ def main(list_path, out):
         if not line.strip() or line.startswith("#"):
             continue
         name, url, kind = (line.rstrip("\n").split("\t") + ["text"])[:3]
+        if "/" in name or ".." in name or name.startswith("."):
+            raise SystemExit(f"bad name in fetch list: {name}")
         if manifest.get(name, {}).get("url") == url and 200 <= manifest[name].get("status", 0) < 300 and (manifest[name]["status"] == 200 or os.path.exists(os.path.join(out, name + ".txt"))):
             continue
         status, final, ctype, body = fetch(url)

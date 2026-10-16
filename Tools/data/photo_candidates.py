@@ -70,7 +70,10 @@ def main():
     done = json.loads(out_path.read_text()) if out_path.exists() else {}
     for p in tree["places"]:
         if p["quiz"] == "none" or p["id"] in done: continue
-        cands = info(titles_for(p))
+        try:
+            cands = info(titles_for(p))
+        except Exception as e:  # keep what is done; a later run retries this place
+            print(p["id"], "error:", e, flush=True); continue
         cands.sort(key=lambda c: (-c["quality"], -c["wine"], -c["width"] * c["height"]))
         done[p["id"]] = {"name": p["name"], "candidates": cands[:9], "seen": len(cands)}
         print(p["id"], len(cands), flush=True)
