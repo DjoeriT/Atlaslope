@@ -39,3 +39,6 @@ A build check that fails on a row without a source. Grapes join search.
 | Photos: picks from contact sheets (LeadBot), resize and credits in GitHub Actions | – | `Review/sources/photo-picks.json`, `public/photos/`, `data/photos.json` | photo run |
 
 PRs: one for the code (card 1 with the data scripts), one for the sheets, one for the photos. ReviewBot (Sonnet) reviews each once; for the sheets it checks a random sample of rows against the extracts.
+
+## Sign-off (owner, 16 Oct 2026 19:48Z)
+Rioja (with the rewritten zones) and the Canary Islands: "Signed off for now". Empty main grapes and tasting notes follow in release 4.1.
