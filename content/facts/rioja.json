@@ -76,7 +76,7 @@
   {
    "id": "rioja-alta",
    "why": {
-    "text": "Atlantic influence and more rain give reds of medium strength with body and high acidity, made for barrel ageing.",
+    "text": "Atlantic influence and more rain give reds of medium strength with body and high acidity, suited to barrel ageing.",
     "cite": [
      "rioja-pliego:p20"
     ]
@@ -143,7 +143,7 @@
   {
    "id": "rioja-alavesa",
    "why": {
-    "text": "Atlantic and Mediterranean climates meet behind the Sierra de Cantabria, giving slightly riper, softer wines to drink young or age.",
+    "text": "Atlantic and Mediterranean climates meet behind the Sierra de Cantabria, giving slightly riper, a little less acid wines to drink young or age.",
     "cite": [
      "rioja-pliego:p20"
     ]
@@ -261,7 +261,7 @@
     ]
    },
    "climate": {
-    "text": "Clearly Mediterranean: drier and warmer, with less rain and more sunshine than the rest of Rioja.",
+    "text": "Clearly Mediterranean: drier and warmer, with less rain and generally more sunshine than the rest of Rioja.",
     "cite": [
      "rioja-pliego:p15",
      "rioja-pliego:p20"
