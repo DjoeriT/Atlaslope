@@ -31,7 +31,7 @@ The place tree model and loader. The map shell: satellite through the keyed Esri
 - **First-run screen:** as mock 17 but without the "where to start" quiz choice; it says what Atlaslope is and how to move, tilt and turn the map, shown once.
 
 ## Data (read with jq or a script, never open the geojson)
-- `data/places.json`: `countries`, `courses[].groups` (ten SWS regions with `order`), `places[]` with `id, name, official, kind, level, parent, region, alsoWithin?, community, boundary, layerCode, centroid, quiz (core 69, vc 6, none 31, zone 3), northSouth, courseOrder`. Zones have `level: "zone"`, `parent: "rioja"`, `centroid: null`.
+- `data/places.json`: `countries`, `courses[].groups` (ten SWS regions with `order`), `places[]` with `id, name, official, kind, level, parent, region, alsoWithin?, community, boundary, layerCode, centroid, quiz (core 70, vc 6, none 30, zone 3), northSouth, courseOrder`. Zones have `level: "zone"`, `parent: "rioja"`, `centroid: null`.
 - Boundaries: `data/dops.geojson` through `applyOverrides()` in `src/dops.ts` (keyed by `layerCode`), `data/added-boundaries.geojson`, `data/rioja-zones.geojson`. Atlas base: `data/natural-earth-spain.geojson`. Climate: `data/koppen-spain.geojson` (layer off in release 3).
 - Existing tests: `tests/unit/places.test.ts`, `dops.test.ts`, `data-layers.test.ts`. Keep them green.
 

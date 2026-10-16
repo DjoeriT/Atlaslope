@@ -18,6 +18,7 @@ Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/so
 | Campo de Borja | [campo-de-borja.md](campo-de-borja.md) | att-PDO-ES-A0180-29570.txt | 2014-06-30 |
 | Cariñena | [carinena.md](carinena.md) | att-PDO-ES-A0043-29279.txt | 2014-06-30 |
 | Somontano | [somontano.md](somontano.md) | att-PDO-ES-A0534-29230.txt | 2014-06-30 |
+| Urbezo | [urbezo.md](urbezo.md) | pliego-PDO-ES-02585-urbezo.txt | 2024-10-25 |
 | Cangas | [cangas.md](cangas.md) | att-PDO-ES-A0119-22383.txt | 2014-06-30 |
 | Binissalem | [binissalem.md](binissalem.md) | att-PDO-ES-A1056-27611.txt | 2014-06-25 |
 | Pla i Llevant | [pla-i-llevant.md](pla-i-llevant.md) | att-PDO-ES-A1038-27884.txt | 2014-06-25 |

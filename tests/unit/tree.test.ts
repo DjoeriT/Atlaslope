@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 69 core, 6 vc, 31 none and 3 zones', () => {
+  it('counts 70 core, 6 vc, 30 none and 3 zones', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([69, 6, 31, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 30, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3);
   });
 

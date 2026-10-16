@@ -92,7 +92,7 @@
    ],
    "quiz": "none",
    "quizNote": "Overlaps other DOs across six regions.",
-   "northSouth": 32,
+   "northSouth": 33,
    "courseOrder": 43
   },
   {
@@ -112,7 +112,7 @@
     38.5257
    ],
    "quiz": "core",
-   "northSouth": 71,
+   "northSouth": 72,
    "courseOrder": 55
   },
   {
@@ -152,7 +152,7 @@
     37.2594
    ],
    "quiz": "core",
-   "northSouth": 76,
+   "northSouth": 77,
    "courseOrder": 88
   },
   {
@@ -172,7 +172,7 @@
     37.3125
    ],
    "quiz": "core",
-   "northSouth": 75,
+   "northSouth": 76,
    "courseOrder": 87
   },
   {
@@ -192,7 +192,7 @@
     36.6981
    ],
    "quiz": "core",
-   "northSouth": 80,
+   "northSouth": 81,
    "courseOrder": 92
   },
   {
@@ -212,7 +212,7 @@
     36.9337
    ],
    "quiz": "vc",
-   "northSouth": 79,
+   "northSouth": 80,
    "courseOrder": 91
   },
   {
@@ -232,7 +232,7 @@
     36.9397
    ],
    "quiz": "core",
-   "northSouth": 77,
+   "northSouth": 78,
    "courseOrder": 89
   },
   {
@@ -255,7 +255,7 @@
    "alsoWithin": [
     "jerez"
    ],
-   "northSouth": 81,
+   "northSouth": 82,
    "courseOrder": 93
   },
   {
@@ -275,7 +275,7 @@
     37.5454
    ],
    "quiz": "core",
-   "northSouth": 74,
+   "northSouth": 75,
    "courseOrder": 86
   },
   {
@@ -295,7 +295,7 @@
     36.9397
    ],
    "quiz": "core",
-   "northSouth": 78,
+   "northSouth": 79,
    "courseOrder": 90
   },
   {
@@ -315,8 +315,8 @@
     41.3977
    ],
    "quiz": "none",
-   "northSouth": 30,
-   "courseOrder": 33
+   "northSouth": 31,
+   "courseOrder": 34
   },
   {
    "id": "calatayud",
@@ -335,8 +335,8 @@
     41.3135
    ],
    "quiz": "core",
-   "northSouth": 36,
-   "courseOrder": 35
+   "northSouth": 37,
+   "courseOrder": 36
   },
   {
    "id": "campo-de-borja",
@@ -375,8 +375,8 @@
     41.378
    ],
    "quiz": "core",
-   "northSouth": 31,
-   "courseOrder": 34
+   "northSouth": 32,
+   "courseOrder": 35
   },
   {
    "id": "somontano",
@@ -409,11 +409,15 @@
    "community": "Aragón",
    "euFile": "PDO-ES-02585",
    "layerCode": null,
-   "boundary": "to-fetch",
-   "centroid": null,
-   "quiz": "none",
-   "quizNote": "A single estate; the ministry lists it as DO, the 2024 registration calls it a pago. Kept with the Pagos until the owner decides.",
-   "courseOrder": 37
+   "boundary": "added",
+   "centroid": [
+    -1.2461,
+    41.4067
+   ],
+   "quiz": "core",
+   "quizNote": "A single estate (one cadastral polygon of Cariñena, surrounded by DO Cariñena) that the ministry lists as DO; quizzed as a core place on the owner's word (16 Oct 2026).",
+   "northSouth": 30,
+   "courseOrder": 33
   },
   {
    "id": "cangas",
@@ -452,7 +456,7 @@
     39.6541
    ],
    "quiz": "core",
-   "northSouth": 52,
+   "northSouth": 53,
    "courseOrder": 94
   },
   {
@@ -472,7 +476,7 @@
     39.556
    ],
    "quiz": "core",
-   "northSouth": 55,
+   "northSouth": 56,
    "courseOrder": 95
   },
   {
@@ -492,7 +496,7 @@
     28.1412
    ],
    "quiz": "core",
-   "northSouth": 89,
+   "northSouth": 90,
    "courseOrder": 103
   },
   {
@@ -512,7 +516,7 @@
     27.7463
    ],
    "quiz": "core",
-   "northSouth": 92,
+   "northSouth": 93,
    "courseOrder": 106
   },
   {
@@ -532,7 +536,7 @@
     27.9547
    ],
    "quiz": "core",
-   "northSouth": 91,
+   "northSouth": 92,
    "courseOrder": 105
   },
   {
@@ -553,7 +557,7 @@
    ],
    "quiz": "none",
    "quizNote": "Covers all the islands, over their own DOs.",
-   "northSouth": 88,
+   "northSouth": 89,
    "courseOrder": 102
   },
   {
@@ -573,7 +577,7 @@
     28.1174
    ],
    "quiz": "core",
-   "northSouth": 90,
+   "northSouth": 91,
    "courseOrder": 104
   },
   {
@@ -593,7 +597,7 @@
     28.6896
    ],
    "quiz": "core",
-   "northSouth": 83,
+   "northSouth": 84,
    "courseOrder": 97
   },
   {
@@ -613,7 +617,7 @@
     29.0242
    ],
    "quiz": "core",
-   "northSouth": 82,
+   "northSouth": 83,
    "courseOrder": 96
   },
   {
@@ -633,7 +637,7 @@
     28.4899
    ],
    "quiz": "core",
-   "northSouth": 84,
+   "northSouth": 85,
    "courseOrder": 98
   },
   {
@@ -653,7 +657,7 @@
     28.3282
    ],
    "quiz": "core",
-   "northSouth": 85,
+   "northSouth": 86,
    "courseOrder": 99
   },
   {
@@ -673,7 +677,7 @@
     28.3141
    ],
    "quiz": "core",
-   "northSouth": 86,
+   "northSouth": 87,
    "courseOrder": 100
   },
   {
@@ -693,7 +697,7 @@
     28.2961
    ],
    "quiz": "core",
-   "northSouth": 87,
+   "northSouth": 88,
    "courseOrder": 101
   },
   {
@@ -749,7 +753,7 @@
     41.238
    ],
    "quiz": "core",
-   "northSouth": 38,
+   "northSouth": 39,
    "courseOrder": 20
   },
   {
@@ -789,7 +793,7 @@
     40.3817
    ],
    "quiz": "vc",
-   "northSouth": 44,
+   "northSouth": 45,
    "courseOrder": 22
   },
   {
@@ -885,7 +889,7 @@
     41.2854
    ],
    "quiz": "core",
-   "northSouth": 37,
+   "northSouth": 38,
    "courseOrder": 19
   },
   {
@@ -905,7 +909,7 @@
     40.4533
    ],
    "quiz": "vc",
-   "northSouth": 43,
+   "northSouth": 44,
    "courseOrder": 21
   },
   {
@@ -925,7 +929,7 @@
     41.3366
    ],
    "quiz": "core",
-   "northSouth": 35,
+   "northSouth": 36,
    "courseOrder": 18
   },
   {
@@ -1021,7 +1025,7 @@
     38.8856
    ],
    "quiz": "core",
-   "northSouth": 64,
+   "northSouth": 65,
    "courseOrder": 74
   },
   {
@@ -1041,7 +1045,7 @@
     40.1418
    ],
    "quiz": "none",
-   "northSouth": 47,
+   "northSouth": 48,
    "courseOrder": 63
   },
   {
@@ -1061,7 +1065,7 @@
     38.798
    ],
    "quiz": "core",
-   "northSouth": 68,
+   "northSouth": 69,
    "courseOrder": 78
   },
   {
@@ -1081,7 +1085,7 @@
     39.777
    ],
    "quiz": "none",
-   "northSouth": 51,
+   "northSouth": 52,
    "courseOrder": 67
   },
   {
@@ -1101,7 +1105,7 @@
     38.9585
    ],
    "quiz": "none",
-   "northSouth": 63,
+   "northSouth": 64,
    "courseOrder": 73
   },
   {
@@ -1121,7 +1125,7 @@
     39.4547
    ],
    "quiz": "none",
-   "northSouth": 59,
+   "northSouth": 60,
    "courseOrder": 69
   },
   {
@@ -1141,7 +1145,7 @@
     39.8582
    ],
    "quiz": "none",
-   "northSouth": 50,
+   "northSouth": 51,
    "courseOrder": 66
   },
   {
@@ -1177,7 +1181,7 @@
     38.8675
    ],
    "quiz": "none",
-   "northSouth": 66,
+   "northSouth": 67,
    "courseOrder": 76
   },
   {
@@ -1197,7 +1201,7 @@
     38.8726
    ],
    "quiz": "none",
-   "northSouth": 65,
+   "northSouth": 66,
    "courseOrder": 75
   },
   {
@@ -1233,7 +1237,7 @@
     39.2632
    ],
    "quiz": "core",
-   "northSouth": 61,
+   "northSouth": 62,
    "courseOrder": 71
   },
   {
@@ -1269,7 +1273,7 @@
     39.4706
    ],
    "quiz": "core",
-   "northSouth": 58,
+   "northSouth": 59,
    "courseOrder": 68
   },
   {
@@ -1289,7 +1293,7 @@
     40.0541
    ],
    "quiz": "core",
-   "northSouth": 48,
+   "northSouth": 49,
    "courseOrder": 64
   },
   {
@@ -1309,7 +1313,7 @@
     40.3508
    ],
    "quiz": "core",
-   "northSouth": 45,
+   "northSouth": 46,
    "courseOrder": 61
   },
   {
@@ -1329,7 +1333,7 @@
     39.1888
    ],
    "quiz": "none",
-   "northSouth": 62,
+   "northSouth": 63,
    "courseOrder": 72
   },
   {
@@ -1349,7 +1353,7 @@
     39.3503
    ],
    "quiz": "core",
-   "northSouth": 60,
+   "northSouth": 61,
    "courseOrder": 70
   },
   {
@@ -1401,7 +1405,7 @@
     39.9473
    ],
    "quiz": "core",
-   "northSouth": 49,
+   "northSouth": 50,
    "courseOrder": 65
   },
   {
@@ -1421,7 +1425,7 @@
     38.7574
    ],
    "quiz": "core",
-   "northSouth": 69,
+   "northSouth": 70,
    "courseOrder": 79
   },
   {
@@ -1481,7 +1485,7 @@
    ],
    "quiz": "none",
    "quizNote": "Covers most of the other Catalan DOs.",
-   "northSouth": 34,
+   "northSouth": 35,
    "courseOrder": 45
   },
   {
@@ -1573,7 +1577,7 @@
    "alsoWithin": [
     "catalunya"
    ],
-   "northSouth": 41,
+   "northSouth": 42,
    "courseOrder": 48
   },
   {
@@ -1596,7 +1600,7 @@
    "alsoWithin": [
     "catalunya"
    ],
-   "northSouth": 33,
+   "northSouth": 34,
    "courseOrder": 44
   },
   {
@@ -1642,7 +1646,7 @@
    "alsoWithin": [
     "catalunya"
    ],
-   "northSouth": 39,
+   "northSouth": 40,
    "courseOrder": 46
   },
   {
@@ -1665,7 +1669,7 @@
    "alsoWithin": [
     "catalunya"
    ],
-   "northSouth": 40,
+   "northSouth": 41,
    "courseOrder": 47
   },
   {
@@ -1688,7 +1692,7 @@
    "alsoWithin": [
     "catalunya"
    ],
-   "northSouth": 42,
+   "northSouth": 43,
    "courseOrder": 49
   },
   {
@@ -1708,7 +1712,7 @@
     38.8547
    ],
    "quiz": "core",
-   "northSouth": 67,
+   "northSouth": 68,
    "courseOrder": 77
   },
   {
@@ -1828,7 +1832,7 @@
     40.2085
    ],
    "quiz": "core",
-   "northSouth": 46,
+   "northSouth": 47,
    "courseOrder": 62
   },
   {
@@ -1848,7 +1852,7 @@
     37.9546
    ],
    "quiz": "core",
-   "northSouth": 73,
+   "northSouth": 74,
    "courseOrder": 57
   },
   {
@@ -1868,7 +1872,7 @@
     38.6065
    ],
    "quiz": "core",
-   "northSouth": 70,
+   "northSouth": 71,
    "courseOrder": 54
   },
   {
@@ -1885,7 +1889,7 @@
    "boundary": "to-fetch",
    "centroid": null,
    "quiz": "none",
-   "courseOrder": 36
+   "courseOrder": 37
   },
   {
    "id": "navarra",
@@ -2044,7 +2048,7 @@
     38.5121
    ],
    "quiz": "core",
-   "northSouth": 72,
+   "northSouth": 73,
    "courseOrder": 56
   },
   {
@@ -2080,7 +2084,7 @@
     39.6199
    ],
    "quiz": "none",
-   "northSouth": 53,
+   "northSouth": 54,
    "courseOrder": 50
   },
   {
@@ -2100,7 +2104,7 @@
     39.4974
    ],
    "quiz": "none",
-   "northSouth": 57,
+   "northSouth": 58,
    "courseOrder": 53
   },
   {
@@ -2136,7 +2140,7 @@
     39.5043
    ],
    "quiz": "core",
-   "northSouth": 56,
+   "northSouth": 57,
    "courseOrder": 52
   },
   {
@@ -2156,7 +2160,7 @@
     39.5893
    ],
    "quiz": "core",
-   "northSouth": 54,
+   "northSouth": 55,
    "courseOrder": 51
   },
   {

@@ -18,11 +18,12 @@ describe('place tree', () => {
     expect(places.filter((p) => p.level === 'zone').map((p) => p.id)).toEqual(['rioja-alta', 'rioja-alavesa', 'rioja-oriental']);
   });
 
-  it('pools 69 core places and 6 Vinos de Calidad for the quiz', () => {
-    expect(places.filter((p) => p.quiz === 'core')).toHaveLength(69);
+  it('pools 70 core places and 6 Vinos de Calidad for the quiz', () => {
+    expect(places.filter((p) => p.quiz === 'core')).toHaveLength(70);
+    expect(byId.get('urbezo')?.quiz).toBe('core');
     expect(places.filter((p) => p.quiz === 'vc').map((p) => p.id).sort()).toEqual(
       ['cangas', 'cebreros', 'lebrija', 'sierra-de-salamanca', 'valles-de-benavente', 'valtiendas']);
-    for (const id of ['cava', 'catalunya', 'islas-canarias', 'urbezo']) expect(byId.get(id)?.quiz, id).toBe('none');
+    for (const id of ['cava', 'catalunya', 'islas-canarias']) expect(byId.get(id)?.quiz, id).toBe('none');
     expect(places.filter((p) => p.kind === 'VP').every((p) => p.quiz === 'none')).toBe(true);
   });
 
@@ -41,12 +42,12 @@ describe('place tree', () => {
     }
   });
 
-  it('gives every quizzed place a boundary; only 14 single estates (13 Pagos and Urbezo) are still to fetch', () => {
+  it('gives every quizzed place a boundary; only the 13 Vinos de Pago are still to fetch', () => {
     const toFetch = places.filter((p) => p.boundary === 'to-fetch');
-    expect(toFetch).toHaveLength(14);
+    expect(toFetch).toHaveLength(13);
     expect(toFetch.filter((p) => p.quiz !== 'none')).toEqual([]);
-    expect(toFetch.filter((p) => p.kind !== 'VP').map((p) => p.id)).toEqual(['urbezo']);
-    expect(places.filter((p) => p.boundary === 'added').map((p) => p.id).sort()).toEqual(['campo-de-calatrava', 'cebreros']);
+    expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
+    expect(places.filter((p) => p.boundary === 'added').map((p) => p.id).sort()).toEqual(['campo-de-calatrava', 'cebreros', 'urbezo']);
     expect(places.filter((p) => p.boundary === 'mapa-2014').every((p) => p.layerCode)).toBe(true);
   });
 

@@ -72,7 +72,12 @@ def cut_from(t, s0):
     return found if {"grapes", "area"} <= found.keys() else None
 
 
+# Pliegos whose file and URL carry no date: the date of the act that registered the text.
+PLIEGO_DATES = {"pliego-PDO-ES-02585-urbezo": "2024-10-25"}  # Implementing Regulation (EU) 2024/2742, OJ L of 25.10.2024
+
+
 def _date_of(path):
+    if path.stem in PLIEGO_DATES: return PLIEGO_DATES[path.stem]
     t = path.read_text(encoding="utf-8", errors="replace")
     d = re.search(r"Ares\((\d{4})\)\d+\s*-\s*(\d\d)/(\d\d)/(\d{4})", t)
     if d: return f"{d.group(4)}-{d.group(3)}-{d.group(2)}"
@@ -114,7 +119,7 @@ def main():
         when = _date_of(path)
         src = manifest.get(path.name.removesuffix(".txt") if path.suffix == ".txt" else path.name, {}).get("url", "")
         md = [f"# {p['name']} ({p['kind']}, {p['euFile']})", "",
-              f"Source: {'pliego de condiciones' if path.name.startswith('pliego-') else 'EU single document'}, {path.name} ({src}), dated {when}. Spanish, quoted as published. Cite as «{'Pliego' if path.name.startswith('pliego-') else 'Documento único'} {p['euFile']}, p. N».", ""]
+              f"Source: {'pliego de condiciones' if path.name.startswith('pliego-') else 'EU single document'}, {path.name} ({src}), {'dated ' + when if when != 'undated' else 'undated'}. Spanish, quoted as published. Cite as «{'Pliego' if path.name.startswith('pliego-') else 'Documento único'} {p['euFile']}, p. N».", ""]
         for key, title, _ in SECTIONS:
             if title and key in secs and secs[key]["text"]:
                 text = secs[key]["text"]
