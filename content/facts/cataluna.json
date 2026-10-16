@@ -1,0 +1,651 @@
+{
+  "region": "cataluna",
+  "sheets": [
+    {
+      "id": "emporda",
+      "why": {
+        "text": "Poor, light, well-drained soils on the Empordà plain give light, fresh, fruity wines with good acidity; old Garnacha is the classic liqueur wine.",
+        "cite": [
+          "emporda-doc:p7"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Garnacha Roja"
+          },
+          {
+            "local": "Moscatel de Alejandría"
+          }
+        ],
+        "cite": [
+          "emporda-doc:p7"
+        ],
+        "others": [
+          "Cariñena",
+          "Macabeo",
+          "Garnacha Blanca",
+          "Cabernet Franc",
+          "Cabernet Sauvignon",
+          "Chardonnay",
+          "Garnacha Peluda",
+          "Gewürztraminer",
+          "Malvasía Aromática",
+          "Merlot",
+          "Monastrell",
+          "Moscatel Grano Menudo",
+          "Picapoll Blanco",
+          "Sauvignon Blanco",
+          "Syrah",
+          "Tempranillo",
+          "Xarel·lo"
+        ],
+        "othersCite": [
+          "emporda-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified",
+          "sweet"
+        ],
+        "text": "Whites, rosados and reds; also needle and sparkling wines, liqueur wines from Garnacha and Moscatel, and wines from overripe grapes.",
+        "cite": [
+          "emporda-doc:p1",
+          "emporda-doc:p7"
+        ]
+      },
+      "climate": {
+        "text": "",
+        "cite": []
+      },
+      "soil": {
+        "text": "Poor, light, acid to neutral soils from conglomerates and sandstones, with good drainage.",
+        "cite": [
+          "emporda-doc:p7"
+        ]
+      }
+    },
+    {
+      "id": "costers-del-segre",
+      "why": {
+        "text": "Large temperature swings between day and night in this inland zone shape the alcohol, aromas and flavours of the wines.",
+        "cite": [
+          "costers-del-segre-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [],
+        "cite": [],
+        "others": [
+          "Cabernet Sauvignon",
+          "Albariño",
+          "Alarije",
+          "Trepat",
+          "Tempranillo",
+          "Syrah",
+          "Sauvignon Blanco",
+          "Riesling",
+          "Pinot Noir",
+          "Parellada",
+          "Moscatel Grano Menudo",
+          "Moscatel de Alejandría",
+          "Monastrell",
+          "Merlot",
+          "Cariñena",
+          "Macabeo",
+          "Gewürztraminer",
+          "Garnacha Tinta",
+          "Garnacha Blanca",
+          "Chardonnay"
+        ],
+        "othersCite": [
+          "costers-del-segre-doc:p5"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds; also needle wines, sparkling wines and liqueur wines.",
+        "cite": [
+          "costers-del-segre-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Inland climate with a wide temperature range between day and night.",
+        "cite": [
+          "costers-del-segre-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "pla-de-bages",
+      "why": {
+        "text": "Altitude and distance from the sea give the wines their acid core, and wild herbs and forest add aromas of rosemary, lavender and thyme.",
+        "cite": [
+          "pla-de-bages-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Picapoll Blanco"
+          },
+          {
+            "local": "Sumoll Tinto"
+          }
+        ],
+        "cite": [
+          "pla-de-bages-wiki"
+        ],
+        "others": [
+          "Ull de Llebre"
+        ],
+        "othersCite": [
+          "pla-de-bages-doc:p5"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds; also needle wines, sparkling wines (a long local tradition) and liqueur wines.",
+        "cite": [
+          "pla-de-bages-doc:p1",
+          "pla-de-bages-doc:p6"
+        ]
+      },
+      "climate": {
+        "text": "Temperature and rainfall differ from neighbouring areas; altitude, distance from the sea and the pre-coastal range give the wines acidity.",
+        "cite": [
+          "pla-de-bages-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "alella",
+      "why": {
+        "text": "Well-drained granite soil with marine remains makes vines root deep and live under mild stress, which helps regulate yield.",
+        "cite": [
+          "alella-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Pansa Blanca",
+            "grape": "Xarel·lo"
+          }
+        ],
+        "cite": [
+          "alella-wiki"
+        ],
+        "others": [
+          "Syrah",
+          "Garnacha Tinta"
+        ],
+        "othersCite": [
+          "alella-doc:p6"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "fortified",
+          "sweet",
+          "sparkling"
+        ],
+        "text": "Whites, rosados and reds; also liqueur wines (rancio, mistela), natural sweet wines and traditional-method sparkling.",
+        "cite": [
+          "alella-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "",
+        "cite": []
+      },
+      "soil": {
+        "text": "Granite subsoil with marine remains, breaking into small grains at the surface; permeable.",
+        "cite": [
+          "alella-doc:p6"
+        ]
+      }
+    },
+    {
+      "id": "conca-de-barbera",
+      "why": {
+        "text": "Trepat, a grape native to Conca de Barberà, gives rosados and reds with their own character.",
+        "cite": [
+          "conca-de-barbera-doc:p8"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Trepat"
+          },
+          {
+            "local": "Macabeo"
+          }
+        ],
+        "cite": [
+          "conca-de-barbera-doc:p8",
+          "conca-de-barbera-wiki"
+        ],
+        "others": [
+          "Ull de Llebre"
+        ],
+        "othersCite": [
+          "conca-de-barbera-doc:p8"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "fortified",
+          "sparkling"
+        ],
+        "text": "Whites, rosados and reds; also liqueur wines, sparkling wines and needle wines.",
+        "cite": [
+          "conca-de-barbera-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "",
+        "cite": []
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "penedes",
+      "why": {
+        "text": "Soil and climate bring white grapes to ripeness here, giving the whites freshness, acidity and fruit.",
+        "cite": [
+          "penedes-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [],
+        "cite": [],
+        "others": [
+          "Xarel·lo",
+          "Parellada",
+          "Merlot",
+          "Macabeo",
+          "Alarije",
+          "Cabernet Franc",
+          "Cabernet Sauvignon",
+          "Chardonnay",
+          "Chenin Blanc",
+          "Garnacha Blanca",
+          "Garnacha Tinta",
+          "Gewürztraminer",
+          "Malvasía Aromática",
+          "Cariñena",
+          "Monastrell",
+          "Moscatel de Alejandría",
+          "Moscatel Grano Menudo",
+          "Pinot Noir",
+          "Riesling",
+          "Sauvignon Blanco",
+          "Sumoll Tinto",
+          "Syrah"
+        ],
+        "othersCite": [
+          "penedes-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified",
+          "sweet"
+        ],
+        "text": "Whites, rosados and reds; also sparkling, needle and liqueur wines, and sweet wines from overripe grapes.",
+        "cite": [
+          "penedes-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "A wide temperature gap between day and night in July and August helps red grapes ripen.",
+        "cite": [
+          "penedes-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "priorat",
+      "why": {
+        "text": "Steep slopes with shallow slate soils and bedrock near the surface give wines high in dry extract and deep red colour.",
+        "cite": [
+          "priorat-doc:p5"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Cariñena"
+          },
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Garnacha Blanca"
+          },
+          {
+            "local": "Macabeo"
+          }
+        ],
+        "cite": [
+          "priorat-wiki"
+        ],
+        "others": [
+          "Cabernet Sauvignon",
+          "Cabernet Franc",
+          "Chenin Blanc",
+          "Garnacha Peluda",
+          "Merlot",
+          "Moscatel de Alejandría",
+          "Moscatel Grano Menudo",
+          "Pedro Ximénez",
+          "Picapoll Blanco",
+          "Picapoll Negro",
+          "Pinot Noir",
+          "Syrah",
+          "Tempranillo",
+          "Xarel·lo"
+        ],
+        "othersCite": [
+          "priorat-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "fortified",
+          "sweet"
+        ],
+        "text": "Whites, rosados and reds, including single-estate (pago) wines; liqueur wines such as rancio, mistela and natural sweet.",
+        "cite": [
+          "priorat-doc:p1",
+          "priorat-doc:p5"
+        ]
+      },
+      "climate": {
+        "text": "Mild and dry; the mountains cut off sea influence and shelter the zone from cold north winds; northwest winds blow.",
+        "cite": [
+          "priorat-doc:p5"
+        ]
+      },
+      "soil": {
+        "text": "Very steep, shallow soils from slate, low in organic matter, with bedrock close to the surface.",
+        "cite": [
+          "priorat-doc:p5"
+        ]
+      }
+    },
+    {
+      "id": "tarragona",
+      "why": {
+        "text": "Direct sea influence around Camp de Tarragona gives Mediterranean wines; continental Ribera d'Ebre gives fuller reds from Cariñena and Garnacha.",
+        "cite": [
+          "tarragona-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Cariñena"
+          },
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Macabeo"
+          },
+          {
+            "local": "Parellada"
+          },
+          {
+            "local": "Xarel·lo"
+          },
+          {
+            "local": "Garnacha Blanca"
+          }
+        ],
+        "cite": [
+          "tarragona-doc:p6",
+          "tarragona-wiki"
+        ],
+        "others": [
+          "Tempranillo",
+          "Sumoll Tinto",
+          "Syrah",
+          "Alarije",
+          "Cabernet Sauvignon",
+          "Chardonnay",
+          "Merlot",
+          "Monastrell",
+          "Moscatel de Alejandría",
+          "Moscatel Grano Menudo",
+          "Pinot Noir",
+          "Sauvignon Blanco"
+        ],
+        "othersCite": [
+          "tarragona-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified"
+        ],
+        "text": "Light whites, rosados and reds; also sparkling, needle and liqueur wines such as mistela, moscatel and rancio.",
+        "cite": [
+          "tarragona-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Direct sea influence in Camp de Tarragona; a continental influence in Ribera d'Ebre.",
+        "cite": [
+          "tarragona-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "montsant",
+      "why": {
+        "text": "Mountains shelter the vines from the sea, giving hot days and cool nights; old Garnacha and Cariñena vines give full-bodied wines.",
+        "cite": [
+          "montsant-doc:p7"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Cariñena"
+          },
+          {
+            "local": "Garnacha Blanca"
+          },
+          {
+            "local": "Macabeo"
+          }
+        ],
+        "cite": [
+          "montsant-doc:p7"
+        ],
+        "others": [
+          "Chardonnay",
+          "Garnacha Roja o Gris",
+          "Moscatel de Grano Menudo",
+          "Garnacha Peluda",
+          "Pansal",
+          "Parellada",
+          "Picapoll Blanc",
+          "Picapoll Tinto",
+          "Syrah",
+          "Ull de Llebre",
+          "Cabernet Sauvignon",
+          "Merlot",
+          "Monastrell"
+        ],
+        "othersCite": [
+          "montsant-doc:p7"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "red",
+          "white",
+          "rose",
+          "fortified",
+          "sweet"
+        ],
+        "text": "Mainly reds, with whites and rosados; traditional liqueur wines and natural sweet wines.",
+        "cite": [
+          "montsant-doc:p1",
+          "montsant-doc:p7"
+        ]
+      },
+      "climate": {
+        "text": "Mediterranean with some continentality: cold winters, hot dry summers, 500 to 600 mm of rain, mostly spring and autumn; strong day-night contrast.",
+        "cite": [
+          "montsant-doc:p7"
+        ]
+      },
+      "soil": {
+        "text": "Three kinds: calcareous sedimentary soils, granitic sands (Falset) and slate «llicorella» that adds minerality.",
+        "cite": [
+          "montsant-doc:p7"
+        ]
+      }
+    },
+    {
+      "id": "terra-alta",
+      "why": {
+        "text": "Calcareous soils give the wines a salty note and long finish; Garnacha Blanca has a long tradition here.",
+        "cite": [
+          "terra-alta-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Blanca"
+          },
+          {
+            "local": "Macabeo"
+          },
+          {
+            "local": "Cariñena"
+          },
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Garnacha Peluda"
+          }
+        ],
+        "cite": [
+          "terra-alta-doc:p6",
+          "terra-alta-wiki"
+        ],
+        "others": [
+          "Chardonnay",
+          "Chenin Blanc",
+          "Garnacha Tintorera",
+          "Merlot",
+          "Moscatel de Alejandría",
+          "Moscatel Grano Menudo",
+          "Parellada",
+          "Pedro Ximénez",
+          "Sauvignon Blanco",
+          "Syrah",
+          "Tempranillo",
+          "Cabernet Franc",
+          "Cabernet Sauvignon"
+        ],
+        "othersCite": [
+          "terra-alta-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "fortified"
+        ],
+        "text": "Whites (including single-variety Garnacha Blanca), rosados and reds; also sparkling, needle and liqueur wines.",
+        "cite": [
+          "terra-alta-doc:p1",
+          "terra-alta-doc:p6"
+        ]
+      },
+      "climate": {
+        "text": "Mediterranean and southern in character, with harvests rich in sugar.",
+        "cite": [
+          "terra-alta-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "Calcareous (chalky) soils.",
+        "cite": [
+          "terra-alta-doc:p6"
+        ]
+      }
+    }
+  ]
+}

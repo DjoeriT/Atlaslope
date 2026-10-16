@@ -1,0 +1,376 @@
+{
+  "region": "ebro",
+  "sheets": [
+    {
+      "id": "navarra",
+      "why": {
+        "text": "Limestone soils and a Mediterranean climate with a cold, drying wind give wines of medium-high acidity, freshness and a mineral touch.",
+        "cite": [
+          "navarra-doc:p8"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Tempranillo"
+          },
+          {
+            "local": "Moscatel Grano Menudo"
+          }
+        ],
+        "cite": [
+          "navarra-wiki",
+          "navarra-doc:p8"
+        ],
+        "others": [
+          "Cabernet Sauvignon",
+          "Merlot",
+          "Macabeo",
+          "Graciano",
+          "Garnacha Blanca",
+          "Chardonnay",
+          "Alarije",
+          "Mazuela",
+          "Pinot Noir",
+          "Sauvignon Blanco",
+          "Syrah"
+        ],
+        "othersCite": [
+          "navarra-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sweet",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds, some barrel-fermented or aged; sweet whites from botrytised grapes; liqueur wines from Moscatel de Grano Menudo.",
+        "cite": [
+          "navarra-doc:p1",
+          "navarra-doc:p9"
+        ]
+      },
+      "climate": {
+        "text": "Mediterranean with Atlantic influence in the northwest; a cold, drying wind prevails; 400 to 500 mm of rain on average.",
+        "cite": [
+          "navarra-doc:p8"
+        ]
+      },
+      "soil": {
+        "text": "High in limestone, moderately stony, with a clay-loam texture.",
+        "cite": [
+          "navarra-doc:p8"
+        ]
+      }
+    },
+    {
+      "id": "somontano",
+      "why": {
+        "text": "A strong swing between warm and cool temperatures in August and September, plus distinctive soils, gives fruity, aromatic wines with high acidity.",
+        "cite": [
+          "somontano-doc:p7"
+        ]
+      },
+      "grapes": {
+        "main": [],
+        "cite": [],
+        "others": [
+          "Cabernet Sauvignon",
+          "Tempranillo",
+          "Syrah",
+          "Sauvignon Blanco",
+          "Riesling",
+          "Pinot Noir",
+          "Parraleta",
+          "Moristel",
+          "Merlot",
+          "Macabeo",
+          "Gewürztraminer",
+          "Garnacha Tinta",
+          "Garnacha Blanca",
+          "Chardonnay",
+          "Alcañón"
+        ],
+        "othersCite": [
+          "somontano-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "sparkling",
+          "red",
+          "sweet",
+          "fortified"
+        ],
+        "text": "Whites, rosados, sparkling wines and reds; also naturally sweet, late-harvest and liqueur wines.",
+        "cite": [
+          "somontano-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Strong temperature contrast in August and September, which favours the wines' aroma.",
+        "cite": [
+          "somontano-doc:p7"
+        ]
+      },
+      "soil": {
+        "text": "No soil type is named; the document says the soils give fruity, alcoholic, high-acid wines.",
+        "cite": [
+          "somontano-doc:p7"
+        ]
+      }
+    },
+    {
+      "id": "campo-de-borja",
+      "why": {
+        "text": "Scant rain and the dry cierzo wind keep vines under constant water stress, so ripening is slow and wines gain aroma and deep colour.",
+        "cite": [
+          "campo-de-borja-doc:p6"
+        ]
+      },
+      "grapes": {
+        "main": [],
+        "cite": [],
+        "others": [
+          "Verdejo",
+          "Tempranillo",
+          "Syrah",
+          "Moscatel Grano Menudo",
+          "Moscatel de Alejandría",
+          "Mazuela",
+          "Macabeo",
+          "Garnacha Tintorera",
+          "Garnacha Tinta",
+          "Garnacha Blanca",
+          "Chardonnay",
+          "Cabernet Sauvignon",
+          "Merlot",
+          "Sauvignon Blanco"
+        ],
+        "othersCite": [
+          "campo-de-borja-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "sweet",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds; also sparkling, naturally sweet, late-harvest and liqueur wines.",
+        "cite": [
+          "campo-de-borja-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Little rain, the cierzo wind and abrupt temperature changes; the wind dries the soil and limits humidity.",
+        "cite": [
+          "campo-de-borja-doc:p6"
+        ]
+      },
+      "soil": {
+        "text": "",
+        "cite": []
+      }
+    },
+    {
+      "id": "urbezo",
+      "why": {
+        "text": "Deep, stony, well-drained soils and a dry climate with the cierzo wind suit vines on flat ground at about 460 to 495 m.",
+        "cite": [
+          "urbezo-doc:p5"
+        ]
+      },
+      "grapes": {
+        "main": [],
+        "cite": [],
+        "others": [
+          "Garnacha Tinta",
+          "Cabernet Sauvignon",
+          "Mazuela",
+          "Merlot",
+          "Syrah",
+          "Tempranillo",
+          "Chardonnay",
+          "Garnacha Blanca",
+          "Moscatel de Alejandría"
+        ],
+        "othersCite": [
+          "urbezo-doc:p5"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red"
+        ],
+        "text": "Whites, rosados and dry reds, including carbonic-maceration and barrel-aged reds.",
+        "cite": [
+          "urbezo-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Dry: about 423 mm of rain a year, dry summers, frost mid-October to April; the cierzo wind guards against fungal disease.",
+        "cite": [
+          "urbezo-doc:p5"
+        ]
+      },
+      "soil": {
+        "text": "Loam soils (sandy, sandy-clay and clay loams), deep, well drained and low in humus.",
+        "cite": [
+          "urbezo-doc:p5"
+        ]
+      },
+      "altitude": {
+        "text": "460 to 495 m above sea level; the relief is nearly flat.",
+        "cite": [
+          "urbezo-doc:p5"
+        ]
+      }
+    },
+    {
+      "id": "carinena",
+      "why": {
+        "text": "Varied soils, little rain, extreme temperatures and the cierzo wind make a harsh setting that has kept only hardy vineyards going.",
+        "cite": [
+          "carinena-doc:p8"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Viura",
+            "grape": "Macabeo"
+          }
+        ],
+        "cite": [
+          "carinena-wiki"
+        ],
+        "others": [
+          "Cabernet Sauvignon",
+          "Tempranillo",
+          "Syrah",
+          "Merlot",
+          "Mazuela",
+          "Chardonnay",
+          "Garnacha Blanca",
+          "Monastrell",
+          "Moristel",
+          "Moscatel de Alejandría",
+          "Parellada",
+          "Vidadillo"
+        ],
+        "othersCite": [
+          "carinena-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "sweet",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds; also sparkling, needle, sweet, late-harvest and liqueur wines.",
+        "cite": [
+          "carinena-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Low rainfall, extreme temperatures and the cierzo wind.",
+        "cite": [
+          "carinena-doc:p8"
+        ]
+      },
+      "soil": {
+        "text": "The document speaks of different soils across the zone but names no main type.",
+        "cite": [
+          "carinena-doc:p8"
+        ]
+      }
+    },
+    {
+      "id": "calatayud",
+      "why": {
+        "text": "Altitude, big day-night temperature swings and a wide range of soils slow ripening, giving structured wines with colour and a mineral edge.",
+        "cite": [
+          "calatayud-doc:p9"
+        ]
+      },
+      "grapes": {
+        "main": [
+          {
+            "local": "Garnacha Tinta"
+          },
+          {
+            "local": "Macabeo"
+          }
+        ],
+        "cite": [
+          "calatayud-wiki"
+        ],
+        "others": [
+          "Tempranillo",
+          "Syrah",
+          "Garnacha Blanca",
+          "Chardonnay",
+          "Alarije",
+          "Bobal",
+          "Cabernet Sauvignon",
+          "Gewürztraminer",
+          "Mazuela",
+          "Merlot",
+          "Monastrell",
+          "Moscatel de Alejandría",
+          "Sauvignon Blanco"
+        ],
+        "othersCite": [
+          "calatayud-doc"
+        ]
+      },
+      "styles": {
+        "kinds": [
+          "white",
+          "rose",
+          "red",
+          "sparkling",
+          "sweet",
+          "fortified"
+        ],
+        "text": "Whites, rosados and reds; also naturally sweet, late-harvest, needle, sparkling and liqueur wines.",
+        "cite": [
+          "calatayud-doc:p1"
+        ]
+      },
+      "climate": {
+        "text": "Large temperature differences between day and night while the grapes ripen; vines at altitude get strong sun.",
+        "cite": [
+          "calatayud-doc:p9"
+        ]
+      },
+      "soil": {
+        "text": "A wide range of soils; the document names no single main type.",
+        "cite": [
+          "calatayud-doc:p9"
+        ]
+      }
+    }
+  ]
+}
