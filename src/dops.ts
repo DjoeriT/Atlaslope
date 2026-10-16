@@ -37,7 +37,7 @@ export function applyOverrides(layer: Collection, o: Overrides): Collection {
       region,
       ...(fix.note ? { note: fix.note } : {}),
     };
-    return { ...f, properties: props };
+    return { ...f, properties: { ...props } as Record<string, unknown> };
   });
   return { type: 'FeatureCollection', features };
 }
