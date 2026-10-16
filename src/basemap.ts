@@ -13,7 +13,7 @@ export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
 // VITE_ESRI_API_KEY (see .env.example); without it EOX covers every zoom.
 export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
 export const ESRI_ATTRIBUTION = 'Esri, Maxar, Earthstar Geographics, and the GIS User Community';
-/** EOX shows up to this zoom; Esri fades in over the zoom before it. */
+/** Esri fades in over EOX between these zooms. */
 const HANDOVER: [number, number] = [9, 10];
 
 // Labels need glyphs. OpenFreeMap (already the project's tile provider, free, no key) serves them.
@@ -40,7 +40,8 @@ export function baseStyle({ fixture, esriKey }: BaseOptions): StyleSpecification
     },
     layers: [
       { id: 'bg', type: 'background', paint: { 'background-color': '#0b1016' } },
-      { id: 'eox', type: 'raster', source: 'eox', ...(esriKey ? { maxzoom: HANDOVER[1] } : {}) },
+      // EOX stays on at every zoom, also under Esri: if Esri fails (key, referrer, quota), the map is never blank.
+      { id: 'eox', type: 'raster', source: 'eox' },
       {
         id: 'hillshade', type: 'hillshade', source: 'relief',
         paint: { 'hillshade-exaggeration': 0.25, 'hillshade-shadow-color': '#5A4A3A', 'hillshade-highlight-color': '#FFFFFF', 'hillshade-accent-color': '#8A7A66' },

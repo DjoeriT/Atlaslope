@@ -75,12 +75,12 @@ describe('base style', () => {
       expect(s.layers.map((l) => l.id)).not.toContain('esri');
     }
   });
-  it('adds Esri from zoom 9 with a key, and stops EOX at 10', () => {
+  it('adds Esri over EOX from zoom 9 with a key, and keeps EOX underneath at every zoom', () => {
     const s = baseStyle({ fixture: false, esriKey: 'test-key' });
     expect(s.sources).toHaveProperty('esri');
     const ids = s.layers.map((l) => l.id);
     expect(ids.indexOf('esri')).toBe(ids.indexOf('eox') + 1);
     expect(s.layers.find((l) => l.id === 'esri')).toMatchObject({ minzoom: 9 });
-    expect(s.layers.find((l) => l.id === 'eox')).toMatchObject({ maxzoom: 10 });
+    expect(s.layers.find((l) => l.id === 'eox')).not.toHaveProperty('maxzoom');
   });
 });
