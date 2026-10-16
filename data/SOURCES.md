@@ -52,5 +52,5 @@ The round 2.1 atlas mock bundles its own geography so it runs without a build. N
 | Countries, provinces, rivers, lakes, towns (clipped to lon -10.5 to 5, lat 34.5 to 45) | Natural Earth 10 m, `https://github.com/nvkelso/natural-earth-vector` (GeoJSON) | 2026-10-15 | Public domain |
 | DO polygons and Rioja zones | This repo's `dops.geojson` and `rioja-zones.geojson` (entries above), renamed for display (e.g. "Vino de Rioja" to "Rioja"); Cava, Cataluña, Islas Canarias and Vinos de Pago left out | 2026-10-15 | As above |
 | Rioja soil areas | Hand-drawn schematic, labelled as such in the mock | 2026-10-15 | Ours |
-| Satellite (streamed at view time) | Esri World Imagery, `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer` | at view time | Esri terms of use, attribution in the map; mocks 03 to 04 only (the app uses the keyed endpoint below) |
+| Satellite (streamed at view time) | Esri World Imagery, `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer` | at view time | Esri terms of use, attribution in the map; mocks 03 to 04 only (the app uses the keyed endpoint above) |
 | MapLibre GL JS 4.7.1 | `https://www.npmjs.com/package/maplibre-gl` | 2026-10-15 | BSD-3-Clause |

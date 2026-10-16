@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="map" role="application" aria-label="Map of Spanish wine regions. Click a DO to open its card, or use the search."></div>
+    <div id="map" role="application" aria-label="Map of Spanish wine regions. To open a DO's card from the keyboard, use the search box."></div>
 
     <div class="topleft">
       <a class="brand glass" href="./"><b>Paraje</b><small id="status">Loading map…</small></a>
       <div class="searchwrap">
         <div class="search glass">
           <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <input id="search" type="search" placeholder="Search DOs" aria-label="Search DOs" aria-controls="search-results" aria-expanded="false" autocomplete="off" />
+          <input id="search" type="search" placeholder="Search DOs" aria-label="Search DOs" aria-controls="search-results" autocomplete="off" />
         </div>
         <ul id="search-results" class="glass menu results" aria-label="Search results" hidden></ul>
       </div>

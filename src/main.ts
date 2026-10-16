@@ -28,10 +28,10 @@ const map = new maplibregl.Map({
   maxPitch: 75,
   attributionControl: { compact: true },
 });
-exposeForTests(map);
+if (import.meta.env.DEV) exposeForTests(map);
 
 async function loadLayer(): Promise<Layer> {
-  if (flags.fixture) return (await loadFixture(flags.fixture)) as Layer;
+  if (import.meta.env.DEV && flags.fixture) return (await loadFixture(flags.fixture)) as Layer; // the guard lets the build drop it
   const raw = await (await fetch(dopsUrl)).json();
   return applyOverrides(raw, overrides);
 }
@@ -145,7 +145,6 @@ function showResults(found: Entry[] | null): void {
   results.replaceChildren();
   if (found === null || (found.length === 0 && !input.value.trim())) {
     results.hidden = true;
-    input.setAttribute('aria-expanded', 'false');
     return;
   }
   if (!found.length) results.append(Object.assign(document.createElement('li'), { className: 'empty', textContent: 'No DO by that name' }));
@@ -160,7 +159,6 @@ function showResults(found: Entry[] | null): void {
     results.append(li);
   }
   results.hidden = false;
-  input.setAttribute('aria-expanded', 'true');
 }
 
 function pick(e: Entry): void {
@@ -243,7 +241,9 @@ map.on('click', 'dos-fill', (e) => {
   goTo({ code, name: byCode.get(code)!.name });
 });
 map.on('mousemove', 'dos-fill', (e) => {
-  const code = String(e.features?.[0]?.properties.code);
+  const f = e.features?.[0];
+  if (!f) return;
+  const code = String(f.properties.code);
   if (code === hovered) return;
   if (hovered) map.setFeatureState({ source: 'dos', id: hovered }, { hover: false });
   hovered = code;
