@@ -1,6 +1,6 @@
-import { strings } from '../strings';
+import { MapView } from '../map/MapView';
 
-/** Empty mount point for the map. Card 3 creates the MapLibre map in this element (src/map/); the shell owns only the element. */
+/** The shell's map slot. The map, its menu and the imagery note live in src/map/. */
 export function MapMount() {
-  return <div id="map" role="application" aria-label={strings.mapMountLabel} />;
+  return <MapView />;
 }
