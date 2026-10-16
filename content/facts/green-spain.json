@@ -62,6 +62,29 @@
     "cite": [
      "txakoli-bizkaia-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale to straw yellow, greenish; white and citrus fruit, herbs; lightly acidic, slightly bitter finish. Rosés: strawberry to raspberry; wild berries. Reds: picota to violet; lightly tannic. Barrel whites add balsamic notes.",
+    "cite": [
+     "txakoli-bizkaia-doc:p1",
+     "txakoli-bizkaia-doc:p2",
+     "txakoli-bizkaia-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Txacolí blanco fermentado en barrica",
+      "text": "White fermented in barrel; white and citrus fruit, herbs, balsamic notes."
+     }
+    ],
+    "cite": [
+     "txakoli-bizkaia-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -120,6 +143,22 @@
     "cite": [
      "cangas-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Reds: ruby to cherry red; fruity and floral; aged reds add balsamic, spice and toast from oak. Whites: pale yellow to greenish; fruity with floral and mineral touches; aged whites are spiced and toasty.",
+    "cite": [
+     "cangas-doc:p1",
+     "cangas-doc:p2",
+     "cangas-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -169,6 +208,27 @@
     "cite": [
      "txakoli-getaria-doc:p3"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale green-yellow to gold; fresh, with fine fizz and a slightly bitter finish. Rosés: pink to fuchsia; citrus, green fruit. Reds: red-garnet; wild berries, light acidity. Barrel-fermented whites: new wood notes.",
+    "cite": [
+     "txakoli-getaria-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Txakoli blanco fermentado en barrica",
+      "text": "White fermented in barrel; golden, balanced, new wood notes."
+     }
+    ],
+    "cite": [
+     "txakoli-getaria-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -214,6 +274,27 @@
     "cite": [
      "txakoli-alava-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to straw; green apple, tropical fruit, citrus; lightly acidic. Rosés: pale to salmon; red fruit; slight fizz. Reds: black cherry, violet tints; slightly bitter finish. Barrel whites: toast and citrus.",
+    "cite": [
+     "txakoli-alava-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Txakolis blancos fermentados en barrica",
+      "text": "White fermented in barrel; toasted barrel notes with citrus fruit."
+     }
+    ],
+    "cite": [
+     "txakoli-alava-doc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -281,6 +362,35 @@
     "cite": [
      "rias-baixas-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Albariño: straw yellow with gold or green tones; citrus, floral and apple aromas; light acidity, good structure. Barrel whites: toast, smoke, vanilla. Reds: picota with violet tones; red fruit; lightly tannic.",
+    "cite": [
+     "rias-baixas-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rías Baixas Albariño",
+      "text": "White with great aromatic complexity: citrus, floral and apple."
+     },
+     {
+      "name": "Barrica",
+      "text": "Barrel white: golden; toast, smoke, vanilla and dried fruit."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Quality sparkling wine: fine, persistent bubble, fresh and fruity."
+     }
+    ],
+    "cite": [
+     "rias-baixas-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -355,6 +465,37 @@
     "cite": [
      "ribeira-sacra-doc:p12"
     ]
+   },
+   "tastes": {
+    "text": "Reds: cherry to purple red; red berry or stone-fruit aromas; balanced. Whites: pale to golden yellow; white tree fruit. Rosés: pale pink to cherry; wild berries. Barrica wines: spice, wood or oak.",
+    "cite": [
+     "ribeira-sacra-doc:p5",
+     "ribeira-sacra-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Súmmum",
+      "text": "Made with a higher share of the principal (preferred) grape varieties."
+     },
+     {
+      "name": "Barrica",
+      "text": "Aged in oak barrels; spice, wood or oak aromas."
+     },
+     {
+      "name": "Guarda",
+      "text": "Aged in wood barrels or other tanks."
+     }
+    ],
+    "cite": [
+     "ribeira-sacra-doc:p4",
+     "ribeira-sacra-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -406,6 +547,42 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale yellow, greenish to amber; fresh, fruity, soft, light. Reds: violet-ruby picota; ripe red fruit; fleshy, dry, medium-high acidity. Tostado: intense, floral and honeyed, sweet.",
+    "cite": [
+     "valdeorras-doc:p2",
+     "valdeorras-doc:p3",
+     "valdeorras-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tostado",
+      "text": "Wine from raisined grapes; floral, honeyed, intense and sweet."
+     },
+     {
+      "name": "Producción controlada",
+      "text": "Stricter limits on yield per plot."
+     },
+     {
+      "name": "Crianza",
+      "text": "Aged in wood; wood shapes its character."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Aged longer in wood; wood shapes its character."
+     }
+    ],
+    "cite": [
+     "valdeorras-doc:p2",
+     "valdeorras-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -467,6 +644,27 @@
     "cite": [
      "ribeiro-doc:p4"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale to golden yellow; ripe and fresh fruit, flowers, honey, herbs; fresh, light. Reds: violet to cherry red; fruit, flowers, spice; fresh, medium to high tannin. Tostado: amber to mahogany, sweet.",
+    "cite": [
+     "ribeiro-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Ribeiro Tostado",
+      "text": "Wine from raisined grapes; amber to mahogany, honeyed, sweet and long."
+     }
+    ],
+    "cite": [
+     "ribeiro-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -530,6 +728,42 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale yellow with green tints; fruity and floral; fresh, balanced, persistent. Reds: cherry red with purple tints; red fruit and flowers; soft tannins. Oak-aged wines add spice and toast.",
+    "cite": [
+     "monterrei-doc:p1",
+     "monterrei-doc:p2",
+     "monterrei-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Barrica",
+      "text": "Oak-aged white or red; spice and toast from the wood."
+     },
+     {
+      "name": "Crianza",
+      "text": "Oak-aged white or red; spice and toast from the wood."
+     },
+     {
+      "name": "Reserva",
+      "text": "Oak-aged white or red; spice and toast from the wood."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Oak-aged white or red; spice and toast from the wood."
+     }
+    ],
+    "cite": [
+     "monterrei-doc:p2",
+     "monterrei-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   }
