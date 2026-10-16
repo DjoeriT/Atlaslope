@@ -1,0 +1,17 @@
+# Bierzo: Wikipedia (en) notes
+
+Article: «Bierzo (DO)», https://en.wikipedia.org/wiki/Bierzo_(DO), revision 1369103876 of 2026-08-12. English, quoted as published. Cite as «Wikipedia (en), Bierzo (DO), revision 1369103876». Check the article is about this wine place before using it.
+
+## Paragraphs that single something out
+
+The wines of this designation of origin are made exclusively with authorized grape varieties. Among the reds, Mencía stands out, and among the whites, Doña Blanca and Godello are prominent. Additionally, three experimental varieties are included, although they are pending the corresponding authorization from the Junta of Castilla y León. Currently, this designation is among those with the greatest international projection in Spain.
+
+Following the periods of war and a difficult post-war era, rural exodus intensified, putting the continuity of family farms at clear risk. The fragmentation and lack of unity among vintners, along with the scarcity of large wineries and grape buyers, led to a drop in grape prices. For this reason, cooperativism, which emerged in the 1960s under Franco's regime, became a genuine necessity for small producers. The first cooperative was established in Camponaraya in 1963 on the initiative of José Pérez Martínez, who would become its first president. Subsequently, cooperatives were formed in Cacabelos, Villafranca (1964), Cabañas Raras (1965), Ponferrada (1966), and Arganza (1967). For thirty years, these cooperatives proved to be an effective model for maintaining historic vineyards and improving the quality of their wines, both bottled and bulk. These cooperatives and the efforts of their members preserved the old Bercian vineyards, which are now admired worldwide.
+
+In this new context, notable figures in Bercian wine emerged, such as Bernardo Álvarez, Bernardo Luna, José Luis Santín Vázquez, and Paco Pérez Caramés, who in various ways revolutionized the concept of the region's wines. Some introduced foreign grape varieties, others applied organic farming practices, and some implemented extensive aging periods for the wines. In all cases, they contributed to improving wine quality and modernized facilities and marketing strategies.
+
+As the 21st century progressed and with the arrival of the prestigious Rioja winemaker Álvaro Palacios to the area, new modernization projects and winery creations emerged, opening an international horizon for Bierzo wines. Names of young winemakers such as Raúl Pérez, Amancio Fernández, Alfredo Marqués, Luis Peique, and Ginés García became prominent.
+
+Although the 2008 crisis partially slowed down aspirations for the region's wines, after the crisis, small-scale projects inspired by garage wine-making emerged. This new wave places a strong emphasis on the recovery of old vineyards through organic farming techniques, focusing more on viticulture than enology. Among the leading figures of this movement are Verónica Ortega, José Mas Asturias, Nacho León, and the Bordeaux native Grégory Pérez.
+
+The Bierzo DOP has a special microclimate which is beneficial for viticulture. On the one hand it is similar to the climate of Galicia with regard to humidity and rainfall, and on the other it is also similar to the hot, dry climate of Castile. The low altitude also helps to prevent late frosts and means that the grape harvest is usually about one month earlier than in Castile.
