@@ -30,6 +30,8 @@ export interface MapController {
 export interface MapEvents {
   /** The atlas base is showing because imagery is missing or failed. */
   onImageryFailed(): void;
+  /** The boundary or base map files did not load, so there are no places on the map. */
+  onDataFailed?(): void;
   /** A boundary was clicked. */
   onPick?(placeId: string): void;
   /** The camera came to rest (also after the first frame), for the address bar. */
@@ -37,7 +39,7 @@ export interface MapEvents {
 }
 
 const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
-const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => r.json());
+const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
 
 export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null): MapController {
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
@@ -108,7 +110,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       })));
       labels.setVisible(current.boundaries);
       render();
-    }).catch(() => { /* data failed to load: the base map stays; nothing to show yet */ });
+    }).catch(() => events.onDataFailed?.());
   });
 
   const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;

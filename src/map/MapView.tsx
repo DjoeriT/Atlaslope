@@ -24,6 +24,7 @@ export function MapView({ focus, restored, onPick, onView }: Props) {
   const ctl = useRef<MapController | null>(null);
   const [menu, setMenu] = useState<MenuState>(DEFAULT_MENU);
   const [imageryFailed, setImageryFailed] = useState(false);
+  const [dataFailed, setDataFailed] = useState(false);
   const [noteShown, setNoteShown] = useState(true);
   const [turned, setTurned] = useState(false);
   const calls = useRef({ onPick, onView });
@@ -35,6 +36,7 @@ export function MapView({ focus, restored, onPick, onView }: Props) {
     try {
       c = createMap(el.current as HTMLElement, DEFAULT_MENU, {
         onImageryFailed: () => setImageryFailed(true),
+        onDataFailed: () => setDataFailed(true),
         onPick: (id) => calls.current.onPick(id),
         onView: (v) => calls.current.onView(v),
       }, restored);
@@ -72,7 +74,13 @@ export function MapView({ focus, restored, onPick, onView }: Props) {
           )}
         </div>
       </div>
-      {imageryFailed && noteShown && (
+      {dataFailed && (
+        <div className="glass imagery-note" role="alert">
+          <span>{t.dataNote}</span>
+          <button className="btn" onClick={() => location.reload()}>{t.reload}</button>
+        </div>
+      )}
+      {!dataFailed && imageryFailed && noteShown && (
         <div className="glass imagery-note" role="status">
           <span>{t.imageryNote}</span>
           <button className="iconbtn" aria-label={t.dismissNote} onClick={() => setNoteShown(false)}>{icon('M6 6l12 12M18 6L6 18')}</button>

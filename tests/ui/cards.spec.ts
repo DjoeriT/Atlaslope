@@ -128,3 +128,30 @@ for (const scheme of ['light', 'dark'] as const) {
     await expect(page.locator('html')).toHaveAttribute('data-theme', scheme === 'dark' ? 'dark' : 'paper');
   });
 }
+
+test('the keyboard follows the walk from Spain to a region to a place', async ({ page }) => {
+  await open(page);
+  const card = page.locator('.card');
+  await card.getByRole('link', { name: /^Rioja/ }).click();
+  await expect(card.locator('h1')).toHaveText('Rioja');
+  await expect(card.locator('h1')).toBeFocused(); // Spain card to region card
+  await card.locator('.tree a').first().click();
+  await expect(card.locator('h1')).toBeFocused(); // region card to place card
+});
+
+test('Escape in the search results keeps the keyboard in the search box', async ({ page }) => {
+  await open(page);
+  const input = page.locator('.search input');
+  await input.fill('toro');
+  await input.press('ArrowDown');
+  await page.keyboard.press('Escape');
+  await expect(input).toBeFocused();
+  await expect(input).toHaveValue('');
+});
+
+test('boundaries that fail to load say so and offer a reload', async ({ page }) => {
+  await page.route(/\.geojson/, (r) => r.fulfill({ status: 500, body: '' }));
+  await open(page);
+  await expect(page.getByRole('alert')).toContainText('did not load');
+  await expect(page.getByRole('button', { name: 'Reload' })).toBeVisible();
+});

@@ -20,14 +20,16 @@ interface ShellProps {
   foot?: ReactNode;
 }
 
+/** The trail key of the card shown last, kept across card types (Spain, region and place cards are different components). */
+let lastKey: string | null = null;
+
 /** The floating card: breadcrumb, title, body. After the first card, moving to another puts the keyboard on the new title. */
 export function CardShell({ tree, go, trail, suffix, title, close, children, foot }: ShellProps) {
   const heading = useRef<HTMLHeadingElement>(null);
-  const first = useRef(true);
   const key = trail.map((c) => c.id).join('/');
   useEffect(() => {
-    if (first.current) { first.current = false; return; }
-    heading.current?.focus();
+    if (lastKey !== null && lastKey !== key) heading.current?.focus();
+    lastKey = key;
   }, [key]);
   const last = trail.length - 1;
   return (

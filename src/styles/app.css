@@ -88,7 +88,8 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:1.3rem 0 .4
 .card .close{position:absolute;right:.6rem;top:.6rem;z-index:1}
 .card h1{padding-right:2.5rem}
 .crumb{display:flex;flex-wrap:wrap;gap:.3rem;letter-spacing:.06em}
-.crumb a{text-decoration:none;color:var(--ink3);min-height:1.6rem;display:inline-flex;align-items:center}
+.crumb a{text-decoration:none;color:var(--ink3);min-height:2.75rem;display:inline-flex;align-items:center}
+.facts dd a{display:inline-flex;align-items:center;min-height:2.75rem}
 .crumb a:hover{color:var(--accent);text-decoration:underline}
 .crumb span{color:var(--ink2)}
 .tree{list-style:none;margin:.6rem 0 0;padding:0}

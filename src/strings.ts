@@ -17,6 +17,8 @@ export const strings = {
     north: 'Reset to north',
     imageryNote: 'Satellite imagery is not available right now, so the plain atlas map is showing. Everything else works as usual.',
     dismissNote: 'Dismiss',
+    dataNote: 'The place boundaries did not load, so the map has no places on it. Reloading the page usually fixes this.',
+    reload: 'Reload',
   },
   topBar: {
     darkInterface: 'Dark interface',

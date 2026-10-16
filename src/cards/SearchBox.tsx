@@ -40,7 +40,7 @@ export function SearchBox({ tree, open }: Props) {
                   const li = e.currentTarget.parentElement;
                   if (e.key === 'ArrowDown') { e.preventDefault(); li?.nextElementSibling?.querySelector('a')?.focus(); }
                   if (e.key === 'ArrowUp') { e.preventDefault(); (li?.previousElementSibling?.querySelector('a') ?? li?.closest('.search')?.querySelector('input'))?.focus(); }
-                  if (e.key === 'Escape') { setText(''); }
+                  if (e.key === 'Escape') { li?.closest('.search')?.querySelector('input')?.focus(); setText(''); }
                 }}
               >
                 <span>{h.name}</span><small>{h.level}</small>
