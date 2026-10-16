@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""content/sources.json: the sources fact sheets cite, from the extract headers (official documents) and the Wikipedia index."""
+"""content/sources.json: the sources fact sheets cite, from the extract headers (official documents), the Wikipedia grape extracts
+and (release 4.1) the Wikipedia producer notes."""
 import json, re
 from pathlib import Path
 
@@ -14,6 +15,8 @@ def main():
         "measures": {"kind": "measured", "title": "Measured inside the boundary (Atlaslope, from Mapzen Terrarium elevation)", "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md", "date": "2026-10-16"},
         "koppen": {"kind": "measured", "title": "Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020", "url": "https://figshare.com/articles/dataset/21789074", "date": "2023"},
         "mapa-list": {"kind": "official", "title": "MAPA, list of protected wine names", "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md", "date": "2026-07-02"},
+        # Added by hand in release 4 for the Rioja zone sheets (Review/sources/fetched/rioja-pliego-riojawine.txt).
+        "rioja-pliego": {"kind": "official", "title": "Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)", "url": "https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf", "date": "2023-06-07"},
     }
     for f in sorted((ROOT / "Review/sources/places").glob("*.md")):
         m = HEAD.search(f.read_text())
@@ -26,6 +29,13 @@ def main():
         if not m: continue
         title, url, rev, date = m.groups()
         out[f"{f.stem}-wiki"] = {"kind": "wikipedia", "title": f"Wikipedia (es), «{title}», revision {rev}", "url": f"https://es.wikipedia.org/w/index.php?oldid={rev}", "date": date}
+    # Release 4.1: producer notes, from the article's revision of 16 Oct 2026 (Tools/data/wiki_notes.py).
+    notes = ROOT / "Review/sources/wikipedia-notes"
+    for f in sorted(notes.glob("*.md")) if notes.exists() else []:
+        m = WIKI.search(f.read_text())
+        if not m: continue
+        title, url, rev, date = m.groups()
+        out[f"{f.stem}-wikinotes"] = {"kind": "wikipedia", "title": f"Wikipedia (es), «{title}», revision {rev}", "url": f"https://es.wikipedia.org/w/index.php?oldid={rev}", "date": date}
     (ROOT / "content").mkdir(exist_ok=True)
     (ROOT / "content/sources.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
     print(len(out), "sources")
