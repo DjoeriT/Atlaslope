@@ -4,6 +4,7 @@ import sourcesFile from '../../content/sources.json';
 import type { Measures, Photo, Sheet, SheetFile, Sources } from './types';
 
 export { checkSheets } from './check';
+export * from './format';
 export * from './types';
 
 // Every region file under content/facts/ is bundled; a region without a file simply has no sheets yet.
