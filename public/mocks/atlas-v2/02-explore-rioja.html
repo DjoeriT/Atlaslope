@@ -1,0 +1,27 @@
+<!doctype html><html lang="en" data-theme="paper"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paraje · Rioja</title><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="assets/app.css"></head><body>
+<div id="map" role="application" aria-label="Map of Spain. Click a DO to select it."></div>
+<section class="card glass" aria-label="Paraje · Rioja"><div class="body"><div class="kicker">DOCa · Ebro Valley</div><h1>Rioja</h1>
+<p class="lede">Pick a zone, on the map or here.</p>
+<div class="chips" role="radiogroup" aria-label="Zone"><button class="chip" role="radio" aria-checked="true" data-zone="all">All zones</button><button class="chip" role="radio" aria-checked="false" data-zone="Rioja Alta">Rioja Alta</button><button class="chip" role="radio" aria-checked="false" data-zone="Rioja Alavesa">Rioja Alavesa</button><button class="chip" role="radio" aria-checked="false" data-zone="Rioja Oriental">Rioja Oriental</button></div>
+<dl class="facts" style="margin-top:1rem"><dt>Rioja Alta</dt><dd>West, highest, coolest. Atlantic influence. Clay-calcareous and ferrous clay. Haro is the hub.</dd>
+<dt>Rioja Alavesa</dt><dd>North bank, Basque Country, under the Sierra de Cantabria. Clay-calcareous terraces, small plots.</dd>
+<dt>Rioja Oriental</dt><dd>East, lowest, warmest and driest. Mediterranean influence, alluvial soils, more Garnacha.</dd></dl>
+<h2>Landscape</h2><div class="photos"><div class="photo"><span>1 · Sierra de Cantabria</span></div><div class="photo" style="background:linear-gradient(160deg,#B99A6A,#7E5B42 60%,#4F3C30)"><span>2 · Ferrous clay, Alta</span></div><div class="photo" style="background:linear-gradient(160deg,#C9C49A,#8A9472 60%,#5B6B55)"><span>3 · Ebro terraces, Oriental</span></div></div>
+<p class="note">Soil areas are schematic; zones are official. Sources and licences listed per layer in the build.</p></div>
+<div class="foot"><a class="btn primary" href="00-quiz-setup.html#area=Rioja (3 zones)">Quiz me on Rioja</a><a class="btn" href="01-explore-spain.html">Back to Spain</a></div></section>
+<div class="topleft"><a class="brand glass" href="index.html"><b>Paraje</b><small>Spain · Ebro Valley · Rioja</small></a>
+<div class="search glass"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" placeholder="Search" aria-label="Search DOs, towns and grapes"></div></div>
+<div class="topright"><span class="mock glass">mock · DO boundaries © MAPA 2014</span><nav class="seg glass" aria-label="Mode"><a href="01-explore-spain.html" aria-current="page">Explore</a><a href="00-quiz-setup.html" >Quiz</a></nav>
+<button id="layers-btn" class="iconbtn glass" aria-label="Layers and base map" aria-expanded="false" aria-controls="layers-menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></button>
+<button id="theme" class="iconbtn glass" aria-label="Dark interface" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button></div>
+<div id="layers-menu" class="glass menu" hidden><h4>Base map</h4>
+<label><input type="radio" name="basemap" value="satellite">Satellite</label><label><input type="radio" name="basemap" value="atlas">Atlas</label>
+<h4>Layers</h4><label><input type="checkbox" data-layer="zones" checked>Zones</label><label><input type="checkbox" data-layer="relief" checked>3D relief</label><label><input type="checkbox" data-layer="soil" checked>Soil</label><label><input type="checkbox" data-layer="photos" checked>Photos</label></div>
+
+<div class="legend glass" aria-label="Soils"><span><i style="background:#E8DFC8"></i>Clay-calcareous</span><span><i style="background:#D9A47F"></i>Ferrous clay</span><span><i style="background:#C7D0B0"></i>Alluvial</span></div>
+<div class="bottomright"><div class="glass"><button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button></div>
+<div class="glass"><button id="tilt" class="iconbtn text" aria-label="3D view" aria-pressed="false">3D</button><button id="north" class="iconbtn" aria-label="Reset to north" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5l3 7-3 7-3-7z" fill="currentColor"/></svg></button></div></div>
+<script>window.PAGE={"page": "rioja", "bounds": [[-3.15, 42.05], [-1.65, 42.75]], "pitch": 55, "bearing": -15, "photos": [{"ll": [-2.62, 42.57], "label": "Sierra de Cantabria over Alavesa"}, {"ll": [-2.9, 42.42], "label": "Ferrous clay, Rioja Alta"}, {"ll": [-2.0, 42.28], "label": "Ebro terraces, Rioja Oriental"}]};</script>
+<script src="assets/maplibre-gl.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
+</body></html>

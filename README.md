@@ -11,6 +11,7 @@ Static web app: Vite, TypeScript, MapLibre GL, OpenFreeMap tiles. Free, no accou
     tests/ui/            Playwright UI tests (run against dist/ with fixtures, no network)
     docs/                PROJECT_CONTEXT.md (state, decisions), AGENT_ROLES.md (agents)
     Review/              plans, task cards, reviews, mocks (Review/mock-<topic>/), tester notes; Review/archive/ for finished ones
+    public/mocks/        HTML mocks served by the Pages site (Review/mock-<topic> links to them)
     Tools/check.sh       every check, one command
     .github/workflows/   ci.yml (checks on pushes to main), deploy.yml (GitHub Pages, on release-N tags)
     .claude/             agents, release skill, hooks, settings
