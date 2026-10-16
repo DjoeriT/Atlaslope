@@ -77,6 +77,32 @@
     "cite": [
      "lanzarote-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: straw to greenish yellow. Rosés and reds: red in every shade. Frank fruity and floral aromas of medium intensity; fresh, balanced, persistent. Barrel-aged: vanilla, spice, balsamic, toast.",
+    "cite": [
+     "lanzarote-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "Ripe, raisined, candied fruit; dense, tasty, balanced and very complex."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Fine constant bubbles; fresh fruit, white flowers, bakery notes; fine and elegant."
+     }
+    ],
+    "cite": [
+     "lanzarote-doc:p2",
+     "lanzarote-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -152,6 +178,42 @@
     "cite": [
      "la-palma-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow in all shades. Rosés and reds: red in all shades. Clean aromas of the variety; fresh, tasty, balanced. Tea and aged wines show the aromas and flavours of their maturation.",
+    "cite": [
+     "la-palma-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de Tea",
+      "text": "Must show the aromas and flavours of its maturation."
+     },
+     {
+      "name": "Malvasía dulce",
+      "text": "Late-harvest overripe grapes; golden yellow, unctuous, intense aroma."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Traditional method, white varieties; yellow, unctuous, raisins and spice, velvety."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Traditional method; fine bubbles, medium to high intensity, tasty and balanced."
+     }
+    ],
+    "cite": [
+     "la-palma-doc:p1",
+     "la-palma-doc:p2",
+     "la-palma-doc:p3",
+     "la-palma-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -229,6 +291,39 @@
     "cite": [
      "tacoronte-acentejo-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Reds: cherry to deep garnet; fruity, herbal, mineral; good structure, quality tannin. Whites: steely to greenish yellow; fruity, floral, balsamic. Rosés: strawberry to onion-skin; fruity, fresh.",
+    "cite": [
+     "tacoronte-acentejo-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino naturalmente dulce",
+      "text": "Ripe, even raisined grape notes; balance and harmony on the palate."
+     },
+     {
+      "name": "Vino de uvas sobremaduradas",
+      "text": "Ripe, even raisined grape notes; sweetness and acidity in balance."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Ripe-grape and raisin notes; alcohol, sweetness and acidity in balance."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Small constant bubbles; clean, fruity, varietal; lively, broad fruity finish."
+     }
+    ],
+    "cite": [
+     "tacoronte-acentejo-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -320,6 +415,37 @@
     "cite": [
      "valle-de-guimar-doc:p9"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to straw; fruit and floral notes, hints of fresh herb or balsam; tasty, fresh, fruity finish. Reds: cherry to garnet; ripe fruit, earthy and spicy touches. Rosés: pink, red fruit.",
+    "cite": [
+     "valle-de-guimar-doc:p1",
+     "valle-de-guimar-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino dulce clásico",
+      "text": "Pale yellow to straw; fruit, honeyed and balsamic notes; tasty to powerful."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Golden to amber, or cherry to garnet; candied fruit, toasted, honeyed; sweet."
+     },
+     {
+      "name": "Espumoso de calidad",
+      "text": "Pale yellow to gold, fine bubbles, persistent crown, fruity with bakery hints."
+     }
+    ],
+    "cite": [
+     "valle-de-guimar-doc:p4",
+     "valle-de-guimar-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -394,6 +520,42 @@
     "cite": [
      "valle-de-la-orotava-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Reds: red with violet glints to tile; red fruit, pepper, balsamic; balanced. Whites: greenish yellow to amber; floral, anise and fennel; fresh. Rosés: cherry pink to onion-skin; fruity, fresh.",
+    "cite": [
+     "valle-de-la-orotava-doc:p1",
+     "valle-de-la-orotava-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto de maceración",
+      "text": "Picota red to purple, soft on the palate."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Candied fruit, toasted and honeyed notes; balanced, intense, fruity finish."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Fine bubbles, persistent crown; finer aromas than plain sparkling wine."
+     },
+     {
+      "name": "Vino espumoso aromático de calidad",
+      "text": "Fine bubbles, persistent crown; great aromatic intensity."
+     }
+    ],
+    "cite": [
+     "valle-de-la-orotava-doc:p2",
+     "valle-de-la-orotava-doc:p3",
+     "valle-de-la-orotava-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -466,6 +628,38 @@
     "cite": [
      "ycoden-daute-isora-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: yellow with green or amber tones; fresh, balanced, fruity finish. Reds: violet-tinged picota red; red fruit, medium tannin; aged ones show ripe fruit, vanilla, toast. Rosés: pink, moderate body.",
+    "cite": [
+     "ycoden-daute-isora-doc:p1",
+     "ycoden-daute-isora-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Malvasía Clásico",
+      "text": "Overripe-grape wine, yellow, unctuous; raisins, spice, dried apricot; velvety."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Yellow, pink or ruby, unctuous; raisins and spice; velvety, intense."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Pale yellow to gold, small persistent bubbles; clean, fruity, fresh."
+     }
+    ],
+    "cite": [
+     "ycoden-daute-isora-doc:p2",
+     "ycoden-daute-isora-doc:p3",
+     "ycoden-daute-isora-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -548,6 +742,39 @@
     "cite": [
      "abona-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to golden straw; tropical fruit, floral, balsamic; fresh, balanced, slightly acid. Reds: cherry with violet tones; red fruit, vegetal, mineral. Rosés: pale to deep pink; red fruit.",
+    "cite": [
+     "abona-doc:p1",
+     "abona-doc:p2",
+     "abona-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino dulce clásico",
+      "text": "Candied fruit, honeyed, nut notes; powerful, tasty, glyceric, persistent."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Golden to amber, or cherry to garnet; candied fruit, toasted, honeyed."
+     },
+     {
+      "name": "Aguja gasificado",
+      "text": "Fine bubbles; fruity and floral; broad, peppery, slightly acid."
+     }
+    ],
+    "cite": [
+     "abona-doc:p1",
+     "abona-doc:p4",
+     "abona-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -630,6 +857,44 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Reds: picota red with violet tones; red fruit or floral; balanced, moderately tannic. Whites: greenish yellow to amber; fresh, balanced, fruity finish. Rosés: raspberry to onion-skin.",
+    "cite": [
+     "la-gomera-doc:p1",
+     "la-gomera-doc:p3",
+     "la-gomera-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto de maceración carbónica",
+      "text": "Banana aroma predominates; short on the palate."
+     },
+     {
+      "name": "Blanco monovarietal Forastera",
+      "text": "Single-variety white, greenish yellow to amber; fresh, balanced, fruity finish."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Yellow, unctuous; raisins and spice; velvety, intense, fruity finish."
+     },
+     {
+      "name": "Vino naturalmente dulce",
+      "text": "Overripe-grape wine, yellow, unctuous; raisins and spice; velvety."
+     }
+    ],
+    "cite": [
+     "la-gomera-doc:p2",
+     "la-gomera-doc:p4",
+     "la-gomera-doc:p5",
+     "la-gomera-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -705,6 +970,37 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Reds: garnet, cherry or ruby; red fruit, pepper, tobacco, dark chocolate; clove and vanilla when aged. Whites: pale straw, green rims; tropical fruit, apple, citrus, fennel, anise. Structured, broad, persistent.",
+    "cite": [
+     "gran-canaria-doc:p1",
+     "gran-canaria-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dulce clásico",
+      "text": "Pale yellow to gold; ripe or raisined white fruit, honeyed; sweet, unctuous."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Raisined and overripe fruit, tropical, citrus, nuts, mineral; balanced, persistent."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Pale yellow, fine bubbles; fresh, fruity and floral aromas."
+     }
+    ],
+    "cite": [
+     "gran-canaria-doc:p3",
+     "gran-canaria-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -779,6 +1075,37 @@
     "cite": [
      "el-hierro-doc:p6"
     ]
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to golden straw; fruity; slightly acid, harmonious. Reds: violet to garnet; fruity. Rosés: pale to deep pink; fruity, slightly acid, harmonious.",
+    "cite": [
+     "el-hierro-doc:p1",
+     "el-hierro-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dulce clásico",
+      "text": "Whites amber and unctuous, reds reddish; raisined fruit, spice; velvety, intense."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Golden to amber; intense aromas of raisined fruit and spice; velvety, intense."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Pale yellow to gold, fine persistent bubbles; intense, clean, fruity."
+     }
+    ],
+    "cite": [
+     "el-hierro-doc:p3",
+     "el-hierro-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
