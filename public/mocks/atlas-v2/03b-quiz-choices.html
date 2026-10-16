@@ -23,4 +23,4 @@
 </body></html><script>let done=false;document.querySelectorAll('.choice').forEach(b=>b.addEventListener('click',()=>{if(done)return;done=true;const ok=b.textContent.includes('Priorat');b.classList.add(ok?'ok':'bad');if(!ok)document.querySelectorAll('.choice')[1].classList.add('ok');
 const fb=document.getElementById('fb');fb.hidden=false;fb.classList.toggle('bad',!ok);fb.querySelector('b').textContent=ok?'✓':'✗';document.getElementById('fbt').textContent=(ok?'Right. ':'Not quite, it is Priorat. ')+'Priorat is the small DOCa on llicorella slate, ringed by Montsant.';
 document.getElementById('next').hidden=false;document.getElementById('skip').hidden=true;document.querySelectorAll('.choice').forEach(x=>x.disabled=true);}));
-document.getElementById('next').addEventListener('click',()=>location.href='04-quiz-results.html');</script>
+document.getElementById('next').addEventListener('click',()=>location.href='03c-quiz-fact.html');</script>

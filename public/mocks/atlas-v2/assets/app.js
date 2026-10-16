@@ -10,6 +10,7 @@ if (sysDark && sysDark.addEventListener) sysDark.addEventListener('change', () =
 let basemap; try { basemap = localStorage.getItem('paraje-basemap') || P.basemap || 'satellite'; } catch(e){ basemap = P.basemap || 'satellite'; }
 
 const MACRO = GEO.macro;
+const RIOJA = ['rioja','lesson','profile'].includes(P.page);
 const ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
 const TERRAIN = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
 
@@ -39,7 +40,7 @@ const style = {
     { id:'soils', type:'fill', source:'soils', paint:{ 'fill-color':['get','color'], 'fill-opacity':0.55 } },
     { id:'dos-fill', type:'fill', source:'dos', paint:{ 'fill-color':['case',['boolean',['feature-state','sel'],false],'#7A2E3B',['get','color']], 'fill-opacity':['case',['boolean',['feature-state','dim'],false],0.12,['boolean',['feature-state','sel'],false],0.6,0.42] } },
     { id:'dos-line', type:'line', source:'dos', paint:{ 'line-color':['case',['boolean',['feature-state','sel'],false],'#7A2E3B',['get','color']], 'line-width':['case',['boolean',['feature-state','sel'],false],3,1.2], 'line-dasharray':[2,1.5] } },
-    { id:'zones-fill', type:'fill', source:'zones', paint:{ 'fill-color':['get','color'], 'fill-opacity':['case',['boolean',['feature-state','sel'],false],0.45,0.22] } },
+    { id:'zones-fill', type:'fill', source:'zones', paint:{ 'fill-color':['get','color'], 'fill-opacity':['interpolate',['linear'],['zoom'],9.5,['case',['boolean',['feature-state','sel'],false],0.45,0.22],11.5,['case',['boolean',['feature-state','sel'],false],0.14,0.05]] } },
     { id:'zones-line', type:'line', source:'zones', paint:{ 'line-color':'#3B2F28', 'line-width':['case',['boolean',['feature-state','sel'],false],3,1.6] } },
   ],
 };
@@ -56,7 +57,8 @@ function applyBasemap(){
   map.setLayoutProperty('other-countries','visibility', sat?'none':'visible');
   map.setLayoutProperty('provinces','visibility', sat?'none':'visible');
   map.setPaintProperty('hillshade','hillshade-exaggeration', sat?0.25:0.5);
-  map.setPaintProperty('dos-fill','fill-opacity', ['case',['boolean',['feature-state','dim'],false],0.12,['boolean',['feature-state','sel'],false],sat?0.55:0.65,sat?0.38:0.45]);
+  const dosOp = ['case',['boolean',['feature-state','dim'],false],0.12,['boolean',['feature-state','sel'],false],sat?0.55:0.65,sat?0.38:0.45];
+  map.setPaintProperty('dos-fill','fill-opacity', RIOJA ? ['interpolate',['linear'],['zoom'],9,dosOp,11,0.06] : dosOp);
   map.setPaintProperty('dos-line','line-width',['case',['boolean',['feature-state','sel'],false],3,sat?1.6:1.2]);
   map.setPaintProperty('borders','line-color', sat?'#F4EFE6':'#5B5048');
   map.setPaintProperty('rivers','line-color', sat?'#9FD2E8':'#6FA0B4');
@@ -68,11 +70,11 @@ function applyLayers(){
   const vis = (layer, v) => map.getLayer(layer) && map.setLayoutProperty(layer,'visibility', v?'visible':'none');
   vis('dos-fill', on('dos')); vis('dos-line', on('dos'));
   vis('hillshade', on('relief'));
-  vis('soils', on('soil') && P.page==='rioja');
-  vis('zones-fill', on('zones') && P.page==='rioja'); vis('zones-line', on('zones') && P.page==='rioja');
+  vis('soils', on('soil') && RIOJA);
+  vis('zones-fill', on('zones') && RIOJA); vis('zones-line', on('zones') && RIOJA);
   document.querySelectorAll('.lbl.do').forEach(e=>e.style.display = on('dos')?'':'none');
   document.querySelectorAll('.pin').forEach(e=>e.style.display = on('photos')?'':'none');
-  map.setTerrain(on('relief') ? { source:'terrain', exaggeration: P.page==='rioja'?1.6:1.3 } : null);
+  map.setTerrain(on('relief') ? { source:'terrain', exaggeration: RIOJA?1.6:1.3 } : null);
 }
 
 // ---------- labels as DOM markers (keep screen size, use the web fonts) ----------
@@ -99,7 +101,7 @@ function collide(){
 map.on('zoom', updateLabelZoom); map.on('moveend', collide); map.on('pitchend', collide); map.on('rotate', collide);
 
 const showNames = !P.hideNames;
-if (P.page !== 'rioja') {
+if (!RIOJA) {
   GEO.dos.features.forEach(f => {
     const p = f.properties;
     if (showNames) label(p.centroid, p.name, 'do'+(p.level==='DOCa'?' docalvl':''), { minzoom: p.r >= 0.3 ? 0 : p.r >= 0.15 ? 6 : 6.8 }).dataset.r = Math.min(1,p.r);
@@ -127,7 +129,7 @@ function selectZone(name){
   document.querySelectorAll('[data-zone]').forEach(c => c.setAttribute('aria-checked', String(c.dataset.zone===(name||'all'))));
 }
 function dimExcept(pred){ GEO.dos.features.forEach(f => map.setFeatureState({source:'dos', id:f.id}, {dim: !pred(f.properties)})); }
-window.paraje = { map, select, selectZone, applyLayers, dimExcept, init: ()=>init() };
+window.paraje = { map, select, selectZone, applyLayers, dimExcept, label, collide, markers, init: ()=>init() };
 
 function pad(){ const rem=parseFloat(getComputedStyle(document.documentElement).fontSize); const card=document.querySelector('.card'); const r=card?card.getBoundingClientRect():null;
   if (window.innerWidth > 820) return { left: Math.round((r?r.right:0)+rem), top: Math.round(rem*4.6), bottom: Math.round(rem*1.5), right: Math.round(rem*5) };
@@ -140,7 +142,7 @@ function init(){ try {
   if (P.dim) GEO.dos.features.forEach(f => { if (!P.dim.includes(f.properties.name)) map.setFeatureState({source:'dos', id:f.id}, {dim:true}); });
   if (P.selected) { const f = GEO.dos.features.find(f=>f.properties.name===P.selected); if (f) select(f.id); }
   if (P.marks) P.marks.forEach(m => { const f = GEO.dos.features.find(f=>f.properties.name===m.name); if(!f) return; const el=document.createElement('div'); el.className='mark '+m.kind; el.innerHTML = m.kind==='ok' ? '<svg viewBox="0 0 20 20" width="22" height="22"><circle cx="10" cy="10" r="9" fill="#2F6B3E" stroke="#fff" stroke-width="2"/><path d="M6 10l3 3 5-6" fill="none" stroke="#fff" stroke-width="2"/></svg>' : '<svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="16" fill="none" stroke="#E8533A" stroke-width="3.5"/></svg>'; new maplibregl.Marker({element:el}).setLngLat(f.properties.centroid).addTo(map); if (m.kind==='bad') label(f.properties.centroid, f.properties.name, 'do miss', {anchor:'bottom', offset:[0,-22]}); });
-  if (P.flyTo) setTimeout(()=>map.flyTo(Object.assign({duration:2600, essential:true}, P.flyTo)), 600);
+  if (P.flyTo) setTimeout(()=>map.flyTo(Object.assign({duration: matchMedia('(prefers-reduced-motion: reduce)').matches?0:2600, essential:true}, P.flyTo)), 600);
   updateLabelZoom();
   document.body.dataset.ready = '1';
   } catch(e){ console.warn('INIT FAILED', e && e.message, e && e.stack); } }
@@ -167,7 +169,7 @@ document.addEventListener('click', e => { if (menu && !menu.hidden && !menu.cont
 const zin=document.getElementById('zin'), zout=document.getElementById('zout'), tilt=document.getElementById('tilt'), north=document.getElementById('north');
 zin && zin.addEventListener('click',()=>map.zoomIn()); zout && zout.addEventListener('click',()=>map.zoomOut());
 const syncTilt=()=>{ if(tilt) tilt.setAttribute('aria-pressed', String(map.getPitch()>10)); if(north) north.hidden = Math.abs(map.getBearing())<1; };
-tilt && tilt.addEventListener('click',()=>map.easeTo({pitch: map.getPitch()>10?0:60, duration:900}));
+tilt && tilt.addEventListener('click',()=>map.easeTo({pitch: map.getPitch()>10?0:60, duration: matchMedia('(prefers-reduced-motion: reduce)').matches?0:900}));
 north && north.addEventListener('click',()=>map.easeTo({bearing:0, duration:900}));
 map.on('pitchend',syncTilt); map.on('rotateend',syncTilt); map.on('load',syncTilt);
 document.querySelectorAll('[data-zone]').forEach(c => c.addEventListener('click', ()=>selectZone(c.dataset.zone==='all'?null:c.dataset.zone)));
