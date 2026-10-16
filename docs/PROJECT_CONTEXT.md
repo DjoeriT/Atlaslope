@@ -51,7 +51,8 @@ session on his Mac also sees his thread messages and started a second publish ru
   batches over budget, plus follow-ups) [V, spend log]. Next: release 4.1 (owner cards 16 Oct 19:37Z): a tasting row and famous styles from
   the official documents, up to three famous producers or wines from Spanish Wikipedia, and planted-area main grapes for the 30 sheets without
   one (the ministry's host refuses GitHub Actions; try from the Mac). Then the quiz (planned as release 5, now numbered 7). The owner's go (16 Oct 12:51Z) covers the
-  restart, the data step and releases 3 to 5 [O]. Releases 6 to 8 need a new go.
+  restart, the data step, releases 3 and 4 and the quiz (now release 7) [O]; 4.1 (now release 6) came from his cards at 19:37Z.
+  The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
