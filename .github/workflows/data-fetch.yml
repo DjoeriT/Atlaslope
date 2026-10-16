@@ -18,6 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Show the certificate chain of hosts that failed TLS (diagnostic, no secrets)
+        run: |
+          for h in www.mapa.gob.es mapa.gob.es; do echo "== $h"; timeout 20 openssl s_client -showcerts -servername $h -connect $h:443 </dev/null 2>&1 | grep -E '^ *[0-9] s:|^ *i:|Verify return' || true; done
       - run: python3 Tools/data/remote_fetch.py Tools/data/fetch-list.tsv Review/sources/fetched
       - name: Commit the results to this branch
         if: always()
