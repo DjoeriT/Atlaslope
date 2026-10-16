@@ -33,8 +33,40 @@
     "cite": [
      "valencia-doc:p7"
     ],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Alarije",
+     "Bobal",
+     "Bonicaire",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Forcallat Tinta",
+     "Garnacha Tinta",
+     "Gewürztraminer",
+     "Graciano",
+     "Malbec",
+     "Mazuela",
+     "Mencía",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Pedro Ximénez",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Planta Nova",
+     "Plata Fina de Pedralba",
+     "Riesling",
+     "Sauvignon Blanco",
+     "Sémillon",
+     "Syrah",
+     "Tempranillo",
+     "Tortosi",
+     "Verdejo",
+     "Viognier"
+    ],
+    "othersCite": [
+     "valencia-doc:p12",
+     "valencia-doc:p13"
+    ]
    },
    "styles": {
     "kinds": [
@@ -94,10 +126,18 @@
      "Merlot",
      "Macabeo",
      "Garnacha Tinta",
-     "Chardonnay"
+     "Chardonnay",
+     "Cabernet Franc",
+     "Garnacha Tintorera",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Verdejo"
     ],
     "othersCite": [
-     "utiel-requena-doc:p9"
+     "utiel-requena-doc:p9",
+     "utiel-requena-doc:p14"
     ]
    },
    "styles": {
@@ -146,8 +186,26 @@
     "cite": [
      "yecla-doc:p5"
     ],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Airén",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Garnacha Tinta",
+     "Garnacha Tintorera",
+     "Macabeo",
+     "Malvasía Aromatica",
+     "Merlot",
+     "Merseguera",
+     "Moscatel Grano Menudo",
+     "Petit Verdot",
+     "Sauvignon Blanco",
+     "Syrah",
+     "Tempranillo",
+     "Verdejo"
+    ],
+    "othersCite": [
+     "yecla-doc:p9"
+    ]
    },
    "styles": {
     "kinds": [
@@ -267,8 +325,28 @@
     "cite": [
      "alicante-doc:p7"
     ],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Alarije",
+     "Airén",
+     "Verdil",
+     "Tempranillo",
+     "Syrah",
+     "Sauvignon Blanco",
+     "Plata Fina de Pedralba",
+     "Pinot Noir",
+     "Petit Verdot",
+     "Merseguera",
+     "Merlot",
+     "Macabeo",
+     "Garnacha Tintorera",
+     "Garnacha Tinta",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "alicante-doc:p11"
+    ]
    },
    "styles": {
     "kinds": [
