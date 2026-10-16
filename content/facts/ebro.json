@@ -64,6 +64,39 @@
     "cite": [
      "navarra-doc:p8"
     ]
+   },
+   "tastes": {
+    "text": "Reds: purple to cherry; fruity, medium body, ripe tannin; aged ones garnet to ruby with spice. Whites: pale to straw, green reflections; fruity, floral, fresh. Rosés: pale pink to raspberry; fruity, fresh.",
+    "cite": [
+     "navarra-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Uvas botritizadas",
+      "text": "White from botrytised grapes: pale yellow, fruity, floral, fresh."
+     },
+     {
+      "name": "Fermentado en barrica",
+      "text": "White, rosé or red fermented in oak; fruit with toasty barrel notes."
+     },
+     {
+      "name": "Crianza",
+      "text": "Red garnet to cherry; fruit with barrel notes; soft, intense tannins."
+     },
+     {
+      "name": "Reserva",
+      "text": "Red cherry to ruby; ripe fruit and spice; powerful, round, ripe tannin."
+     }
+    ],
+    "cite": [
+     "navarra-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -123,6 +156,35 @@
     "cite": [
      "somontano-doc:p7"
     ]
+   },
+   "tastes": {
+    "text": "Whites: straw to gold; fruity or floral. Rosés: violet-pink to strawberry; fruity. Reds: violet-red to cherry; fresh, fruity, some milky notes.",
+    "cite": [
+     "somontano-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vendimia tardía",
+      "text": "Whites golden with fruit, toast, vanilla; reds with candied fruit, raisins."
+     },
+     {
+      "name": "Naturalmente dulce",
+      "text": "Whites straw to gold with candied or dried fruit; reds fresh and sweet."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Whites straw to gold, reds cherry-red; candied fruit, full-bodied, sweet."
+     }
+    ],
+    "cite": [
+     "somontano-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -178,6 +240,35 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: clear cherry; ripe, floral fruit; long, smooth, structured, fleshy. Whites and rosés: floral, fruity; fresh, acidic.",
+    "cite": [
+     "campo-de-borja-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vendimia tardía",
+      "text": "Intense, clean aromas; candied or dried fruit; pleasantly sweet."
+     },
+     {
+      "name": "Naturalmente dulce",
+      "text": "Intense, clean aromas; candied or dried fruit; pleasantly sweet."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Intense, clean aromas; candied or dried fruit; pleasantly sweet."
+     }
+    ],
+    "cite": [
+     "campo-de-borja-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -235,6 +326,35 @@
     "cite": [
      "urbezo-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Reds: ripe cherry, violet to ruby; floral, red and black fruit; soft, complex. Whites: pale green-straw; floral, orchard, stone and tropical fruit; lively. Rosés: pink with violet; floral, red fruit.",
+    "cite": [
+     "urbezo-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Maceración carbónica",
+      "text": "Red, cherry with purple tones; floral, balsamic, red and black fruit; long."
+     },
+     {
+      "name": "Barrica",
+      "text": "Red; ripe red and black fruit, nuts, balsamic; fruit leads over oak."
+     },
+     {
+      "name": "Vendimia seleccionada",
+      "text": "Red, ripe cherry with garnet; ripe fruit, toast, dried fruit; ripe tannins."
+     }
+    ],
+    "cite": [
+     "urbezo-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -298,6 +418,39 @@
    },
    "soil": {
     "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: deep purple-cherry with violet to ruby glints; intense ripe red fruit; fleshy, dry. Whites: pale yellow; fresh, fruity, soft, light. Rosés: pink with violet to salmon; fresh, fruity.",
+    "cite": [
+     "carinena-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de aguja",
+      "text": "White, rosé or red; fresh and light, with a light prickle."
+     },
+     {
+      "name": "Vendimia tardía",
+      "text": "Ripe-fruit aromas; glycerine, not acidic; structured with sweet tannins."
+     },
+     {
+      "name": "Naturalmente dulce",
+      "text": "White or red; floral, honeyed; intense, sweet, long."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "White or red; floral, honeyed; intense, structured, sweet, fruity."
+     }
+    ],
+    "cite": [
+     "carinena-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
     "cite": []
    }
   },
@@ -365,6 +518,35 @@
     "cite": [
      "calatayud-doc:p9"
     ]
+   },
+   "tastes": {
+    "text": "Reds: cherry to dark garnet; intense fruit and flowers; tasty, fleshy, soft tannin. Whites: pale straw, fresh fruit; fresh, slightly acid. Rosés: strawberry to raspberry; floral, red fruit.",
+    "cite": [
+     "calatayud-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Calatayud Superior",
+      "text": "Red of deep cherry to ruby colour; fruit, balsamic, toast and spice."
+     },
+     {
+      "name": "Vendimia tardía",
+      "text": "Golden whites to dark purple reds; floral, fresh, silky, persistent."
+     },
+     {
+      "name": "Naturalmente dulce",
+      "text": "White or red; ripe and candied fruit, silky, rich, sweet."
+     }
+    ],
+    "cite": [
+     "calatayud-doc:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
