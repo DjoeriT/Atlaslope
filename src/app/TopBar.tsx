@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { strings } from '../strings';
+import { SearchBox } from '../cards/SearchBox';
+import type { Tree } from '../tree';
+import type { Selection } from '../url';
 import type { Theme } from './theme';
 
 const t = strings.topBar;
@@ -7,9 +10,11 @@ const t = strings.topBar;
 interface Props {
   theme: Theme;
   onToggleTheme: () => void;
+  tree: Tree;
+  onOpen: (to: Selection) => void;
 }
 
-export function TopBar({ theme, onToggleTheme }: Props) {
+export function TopBar({ theme, onToggleTheme, tree, onOpen }: Props) {
   const [open, setOpen] = useState(false);
   const brandRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -34,10 +39,7 @@ export function TopBar({ theme, onToggleTheme }: Props) {
         <button ref={brandRef} className="brand glass" aria-haspopup="menu" aria-expanded={open} aria-controls="brand-menu" onClick={() => setOpen(!open)}>
           <b>{strings.appName}</b><small>{strings.brandContext}</small>
         </button>
-        <div className="search glass">
-          <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M13 13l5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
-          <input type="search" placeholder={t.searchPlaceholder} aria-label={t.searchLabel} />
-        </div>
+        <SearchBox tree={tree} open={onOpen} />
       </div>
       <div id="brand-menu" ref={menuRef} className="glass menu tl" role="menu" hidden={!open}>
         <button role="menuitem" id="theme" aria-pressed={theme === 'dark'} onClick={onToggleTheme}>

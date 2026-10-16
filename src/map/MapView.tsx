@@ -1,25 +1,43 @@
 import { useEffect, useRef, useState } from 'react';
 import { strings } from '../strings';
+import type { View } from '../url';
 import { createMap, type MapController } from './createMap';
+import type { Focus } from './focus';
 import { DEFAULT_MENU, type MenuState } from './layers';
 import { MapMenu } from './MapMenu';
 import './map.css';
 
 const t = strings.map;
 
+interface Props {
+  /** What the open card wants the map to show. */
+  focus: Focus;
+  /** The camera from the address bar; the first card does not frame over it. */
+  restored: View | null;
+  onPick(placeId: string): void;
+  onView(view: View): void;
+}
+
 /** The map element, the map menu with zoom and compass buttons, and the imagery note. */
-export function MapView() {
+export function MapView({ focus, restored, onPick, onView }: Props) {
   const el = useRef<HTMLDivElement>(null);
   const ctl = useRef<MapController | null>(null);
   const [menu, setMenu] = useState<MenuState>(DEFAULT_MENU);
   const [imageryFailed, setImageryFailed] = useState(false);
   const [noteShown, setNoteShown] = useState(true);
   const [turned, setTurned] = useState(false);
+  const calls = useRef({ onPick, onView });
+  calls.current = { onPick, onView };
+  const shown = useRef(false);
 
   useEffect(() => {
     let c: MapController;
     try {
-      c = createMap(el.current as HTMLElement, DEFAULT_MENU, { onImageryFailed: () => setImageryFailed(true) });
+      c = createMap(el.current as HTMLElement, DEFAULT_MENU, {
+        onImageryFailed: () => setImageryFailed(true),
+        onPick: (id) => calls.current.onPick(id),
+        onView: (v) => calls.current.onView(v),
+      }, restored);
     } catch {
       return; // no WebGL: the shell still works
     }
@@ -29,6 +47,12 @@ export function MapView() {
   }, []);
 
   useEffect(() => { ctl.current?.apply(menu, !imageryFailed); }, [menu, imageryFailed]);
+
+  // The card is in the page by now, so the framing can leave room for it.
+  useEffect(() => {
+    ctl.current?.focus(focus, shown.current);
+    shown.current = true;
+  }, [focus]);
 
   const icon = (d: string) => (
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d={d} /></svg>

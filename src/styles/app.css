@@ -79,3 +79,38 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:1.3rem 0 .4
 /* Quiz and Progress are shown but not usable yet (aria-disabled buttons in the mode bar) */
 .seg button{font:inherit;font-size:.95rem;padding:.45rem .9rem;border-radius:.7rem;color:var(--ink);background:transparent;border:0;min-height:2.75rem;display:inline-flex;align-items:center}
 .seg button[aria-disabled="true"]{color:var(--ink3);cursor:not-allowed}
+
+/* Cards: Spain, region and place (approved mock 14 to 16) */
+.lede{font-family:var(--serif);font-size:1.1rem;line-height:1.4;color:var(--ink2);margin:0 0 .4rem}
+.note{font-size:.8rem;color:var(--ink3);margin-top:.9rem}
+.card h1:focus{outline:none}
+.card h1:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
+.card .close{position:absolute;right:.6rem;top:.6rem;z-index:1}
+.card h1{padding-right:2.5rem}
+.crumb{display:flex;flex-wrap:wrap;gap:.3rem;letter-spacing:.06em}
+.crumb a{text-decoration:none;color:var(--ink3);min-height:1.6rem;display:inline-flex;align-items:center}
+.crumb a:hover{color:var(--accent);text-decoration:underline}
+.crumb span{color:var(--ink2)}
+.tree{list-style:none;margin:.6rem 0 0;padding:0}
+.tree li{display:flex;align-items:center;gap:.7rem;border-top:1px solid var(--line)}
+.tree li i{width:.9rem;height:.9rem;border-radius:.25rem;border:1px solid rgba(0,0,0,.2);flex:none}
+.tree li a{flex:1;display:flex;flex-direction:column;text-decoration:none;min-height:2.9rem;justify-content:center;padding:.3rem 0}
+.tree li a b{font-family:var(--serif);font-weight:500;font-size:1.05rem}
+.tree li a small{color:var(--ink3);font-size:.82rem}
+.tree li .go{color:var(--ink3);font-size:1.2rem}
+.facts dd a{color:var(--ink)}
+.facts dd ul{list-style:none;margin:0;padding:0}
+.facts dd li{min-height:1.6rem}
+.results{position:absolute;left:0;right:0;top:calc(100% + .4rem);z-index:8;padding:.3rem;margin:0;list-style:none}
+.results a,.results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:.6rem;min-height:2.75rem;text-decoration:none;font-size:.95rem;color:var(--ink)}
+.results p{margin:0;color:var(--ink3)}
+.results a:hover{background:var(--line)}
+.results small{color:var(--ink3);font-size:.8rem}
+.search{position:relative}
+@media (max-width:1100px){.card{width:22rem}.search{width:12rem}}
+@media (max-width:820px){
+ .card{left:0;right:0;top:auto;bottom:0;width:auto;max-height:52%;border-radius:var(--rad) var(--rad) 0 0}
+ .brand small{display:none}.bottomright{bottom:54%}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
