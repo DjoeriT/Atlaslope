@@ -22,3 +22,4 @@ data/raw/
 # Mock runtime too large for the repo: copy from the project files to run a mock (Review/mock-*/README.md)
 Review/mock-*/assets/data.js
 Review/mock-*/assets/maplibre-gl.*
+__pycache__/

@@ -40,12 +40,12 @@ def main(list_path, out):
         if not line.strip() or line.startswith("#"):
             continue
         name, url, kind = (line.rstrip("\n").split("\t") + ["text"])[:3]
-        if manifest.get(name, {}).get("url") == url and manifest[name].get("status") == 200:
+        if manifest.get(name, {}).get("url") == url and 200 <= manifest[name].get("status", 0) < 300 and (manifest[name]["status"] == 200 or os.path.exists(os.path.join(out, name + ".txt"))):
             continue
         status, final, ctype, body = fetch(url)
         entry = {"url": url, "final_url": final, "status": status, "type": ctype, "bytes": len(body),
                  "sha256": hashlib.sha256(body).hexdigest(), "fetched": datetime.now(timezone.utc).isoformat(timespec="seconds")}
-        if kind == "pdf" and status == 200 and body[:4] == b"%PDF":
+        if kind == "pdf" and 200 <= status < 300 and body[:4] == b"%PDF":
             with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
                 f.write(body); f.flush()
                 txt = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True).stdout
