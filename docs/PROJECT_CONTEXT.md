@@ -1,6 +1,6 @@
 # Paraje: project context
 
-Snapshot: **15 Oct 2026**. `CLAUDE.md` holds the rules; `README.md` the layout and commands; `docs/AGENT_ROLES.md` the agents.
+Snapshot: **16 Oct 2026**. `CLAUDE.md` holds the rules; `README.md` the layout and commands; `docs/AGENT_ROLES.md` the agents.
 This file holds what is true now, what was decided and why, what is parked, what is broken, and what comes next.
 
 Tags: **[V]** verified in this working copy when this snapshot was written; **[O]** stated by the owner;
@@ -40,7 +40,7 @@ In flight: mocks of the atlas and quiz screens (next). Done: repo setup (f18ce6e
 Parked: Priorat deep dive (after Rioja); SIGPAC vineyard parcels (version two); personal notes (owner, 15 Oct 2026: read-and-test only in version one).
 
 ## 8. Known problems
-- The MAPA DOP layer is from 2014 [R]: Priorat's DOCa status, newer DOs (e.g. Campo de Calatrava, 2024), 12 Pagos, 1 VC and all 43 IGPs are missing. The quiz must not teach stale facts: names and levels get patched from the BOE in `data/`, missing polygons come from regional sources later (issue #1).
+- The MAPA DOP layer is from 2014 [R]. Names, levels and study regions are corrected by `data/dop-overrides.json` via `src/dops.ts` (16 Oct 2026, issue #1 step one): Priorat DOCa, Granada DO, León, official spellings, and 16 DOPs listed without a polygon (Campo de Calatrava, Cebreros, 14 Pagos). Still missing: polygons for those 16 and all 43 IGPs (issue #1 step two).
 - Rioja zone approximations: Santa Engracia del Jubera is listed as "zona Norte" only but the whole municipality is used; Lodosa is left out; the dissolved zones cover 2.7% less area than MAPA's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons exist for Rioja; the soil layer will be schematic and labelled as such [R, scouting].
 
