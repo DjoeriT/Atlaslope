@@ -9,4 +9,4 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-16 | BuilderBot, Opus (resumed) | Release 2 atlas, review fixes | same run | 117,492 tokens, 22 tool uses, 10 min | Done; built-site UI test added, check green |
 | 2026-10-16 | ReviewBot, Sonnet | Restart commit, code review (`restart-review.md`) | 60k | 29,821 tokens, 10 tool uses, 1 min | Merge after fixes: 3 should-fix (main-only publish, tag after deploy, stale refs), all fixed |
 | 2026-10-16 | ReviewBot, Sonnet | Data step, code review (`data-step-review.md`) | 60k | 52,389 tokens, 22 tool uses, 3 min | Merge after fixes: 0 blockers, 3 should-fix (photo run, Ceuta and Melilla, pliego dates), all fixed |
-| 2026-10-16 | ReviewBot, Sonnet | Urbezo outline and quiz, code review (`urbezo-review.md`) | 60k | not reported back to the lead | Merge: 0 blockers, 0 should-fix, 4 notes |
+| 2026-10-16 | ReviewBot, Sonnet | Urbezo outline and quiz, code review (`urbezo-review.md`) | 60k | 28,096 tokens, 12 tool uses, 2 min | Merge: 0 blockers, 0 should-fix, 4 notes |
