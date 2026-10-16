@@ -1,0 +1,920 @@
+{
+ "measures": {
+  "kind": "measured",
+  "title": "Measured inside the boundary (Atlaslope, from Mapzen Terrarium elevation)",
+  "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
+  "date": "2026-10-16"
+ },
+ "koppen": {
+  "kind": "measured",
+  "title": "Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020",
+  "url": "https://figshare.com/articles/dataset/21789074",
+  "date": "2023"
+ },
+ "mapa-list": {
+  "kind": "official",
+  "title": "MAPA, list of protected wine names",
+  "url": "https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md",
+  "date": "2026-07-02"
+ },
+ "abona-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0975 (EU single document, Abona)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27970",
+  "date": "2014-06-30"
+ },
+ "alella-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1423 (EU single document, Alella)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38844",
+  "date": "2016-11-25"
+ },
+ "alicante-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1526 (EU single document, Alicante)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31224",
+  "date": "2015-01-23"
+ },
+ "almansa-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0044 (EU single document, Almansa)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28973",
+  "date": "2014-06-27"
+ },
+ "arlanza-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0613 (EU single document, Arlanza)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29334",
+  "date": "2014-06-27"
+ },
+ "arribes-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A0614 (pliego de condiciones, Arribes)",
+  "url": "https://www.mapa.gob.es/images/es/arribes_2022_03_25_tcm30-211258.pdf",
+  "date": "2022-03-25"
+ },
+ "bierzo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0615 (EU single document, Bierzo)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29404",
+  "date": "2014-06-27"
+ },
+ "binissalem-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1056 (EU single document, Binissalem)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27611",
+  "date": "2014-06-25"
+ },
+ "bullas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0536 (EU single document, Bullas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40017",
+  "date": "2017-02-06"
+ },
+ "calatayud-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0247 (EU single document, Calatayud)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29796",
+  "date": "2014-06-30"
+ },
+ "campo-de-borja-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0180 (EU single document, Campo de Borja)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29570",
+  "date": "2014-06-30"
+ },
+ "campo-de-calatrava-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02870 (pliego de condiciones, Campo de Calatrava)",
+  "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf",
+  "date": "2025-08"
+ },
+ "cangas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0119 (EU single document, Cangas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22383",
+  "date": "2014-06-30"
+ },
+ "carinena-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0043 (EU single document, Cariñena)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29279",
+  "date": "2014-06-30"
+ },
+ "cebreros-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02348 (pliego de condiciones, Cebreros)",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf",
+  "date": "2020-09-07"
+ },
+ "cigales-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0622 (EU single document, Cigales)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29480",
+  "date": "2014-06-27"
+ },
+ "conca-de-barbera-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1422 (EU single document, Conca de Barberà)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/41521",
+  "date": "2017-04-06"
+ },
+ "condado-de-huelva-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1485 (EU single document, Condado de Huelva)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26603",
+  "date": "2014-06-27"
+ },
+ "costers-del-segre-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1523 (EU single document, Costers del Segre)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30004",
+  "date": "2014-06-30"
+ },
+ "el-hierro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1250 (EU single document, El Hierro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26949",
+  "date": "2014-06-30"
+ },
+ "emporda-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1548 (EU single document, Empordà)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29893",
+  "date": "2014-06-30"
+ },
+ "gran-canaria-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0112 (EU single document, Gran Canaria)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26958",
+  "date": "2014-06-30"
+ },
+ "granada-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1475 (EU single document, Granada)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40602",
+  "date": "2017-03-02"
+ },
+ "jerez-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1483 (EU single document, Jerez-Xérès-Sherry)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25822",
+  "date": "2014-06-27"
+ },
+ "jumilla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0109 (EU single document, Jumilla)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/36898",
+  "date": "2016-07-08"
+ },
+ "la-gomera-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0111 (EU single document, La Gomera)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27006",
+  "date": "2014-06-30"
+ },
+ "la-mancha-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0045 (EU single document, La Mancha)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29848",
+  "date": "2014-06-27"
+ },
+ "la-palma-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0510 (EU single document, La Palma)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27119",
+  "date": "2014-06-30"
+ },
+ "lanzarote-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0113 (EU single document, Lanzarote)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27060",
+  "date": "2014-06-30"
+ },
+ "lebrija-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1478 (EU single document, Lebrija)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26913",
+  "date": "2014-06-27"
+ },
+ "leon-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0882 (EU single document, León)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29723",
+  "date": "2014-06-30"
+ },
+ "malaga-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1481 (EU single document, Málaga)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27145",
+  "date": "2014-06-27"
+ },
+ "manchuela-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0046 (EU single document, Manchuela)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29137",
+  "date": "2014-06-27"
+ },
+ "manzanilla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1482 (EU single document, Manzanilla-Sanlúcar de Barrameda)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27318",
+  "date": "2014-06-27"
+ },
+ "mentrida-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0047 (EU single document, Méntrida)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29190",
+  "date": "2014-06-27"
+ },
+ "mondejar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0048 (EU single document, Mondéjar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29272",
+  "date": "2014-06-27"
+ },
+ "monterrei-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1114 (EU single document, Monterrei)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28929",
+  "date": "2014-06-26"
+ },
+ "montilla-moriles-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1479 (EU single document, Montilla-Moriles)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/37493",
+  "date": "2016-08-11"
+ },
+ "montsant-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A1550 (pliego de condiciones, Montsant)",
+  "url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/montsant_2022_09_14_tcm30-634107.pdf",
+  "date": "2022-09-14"
+ },
+ "navarra-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0127 (EU single document, Navarra)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27552",
+  "date": "2014-06-26"
+ },
+ "penedes-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1551 (EU single document, Penedès)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29997",
+  "date": "2014-06-30"
+ },
+ "pla-de-bages-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1557 (EU single document, Pla de Bages)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35932",
+  "date": "2016-04-15"
+ },
+ "pla-i-llevant-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1038 (EU single document, Pla i Llevant)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27884",
+  "date": "2014-06-25"
+ },
+ "priorat-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1560 (EU single document, Priorat)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30019",
+  "date": "2014-06-30"
+ },
+ "rias-baixas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1119 (EU single document, Rías Baixas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31280",
+  "date": "2014-12-16"
+ },
+ "ribeira-sacra-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A1128 (pliego de condiciones, Ribeira Sacra)",
+  "url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf",
+  "date": "2025-02-18"
+ },
+ "ribeiro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1123 (EU single document, Ribeiro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31230",
+  "date": "2014-12-16"
+ },
+ "ribera-del-duero-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0626 (EU single document, Ribera del Duero)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34149",
+  "date": "2016-01-21"
+ },
+ "ribera-del-guadiana-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1295 (EU single document, Ribera del Guadiana)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28201",
+  "date": "2014-06-30"
+ },
+ "ribera-del-jucar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0049 (EU single document, Ribera del Júcar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29292",
+  "date": "2014-06-27"
+ },
+ "rioja-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0117 (EU single document, Rioja)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985",
+  "date": "2014-11-26"
+ },
+ "rueda-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-A0889 (pliego de condiciones, Rueda)",
+  "url": "https://www.mapa.gob.es/images/es/rueda_2019_10_29_tcm30-211417.pdf",
+  "date": "2019-10-29"
+ },
+ "sierra-de-salamanca-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0631 (EU single document, Sierra de Salamanca)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65827",
+  "date": "2014-06-30"
+ },
+ "sierras-de-malaga-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1480 (EU single document, Sierras de Málaga)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27547",
+  "date": "2014-06-27"
+ },
+ "somontano-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0534 (EU single document, Somontano)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29230",
+  "date": "2014-06-30"
+ },
+ "tacoronte-acentejo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0115 (EU single document, Tacoronte-Acentejo)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31318",
+  "date": "2015-01-13"
+ },
+ "tarragona-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1555 (EU single document, Tarragona)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29977",
+  "date": "2014-06-30"
+ },
+ "terra-alta-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1556 (EU single document, Terra Alta)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29860",
+  "date": "2014-06-30"
+ },
+ "tierra-del-vino-de-zamora-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0634 (EU single document, Tierra del Vino de Zamora)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29733",
+  "date": "2014-06-27"
+ },
+ "toro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0886 (EU single document, Toro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29786",
+  "date": "2014-06-27"
+ },
+ "txakoli-alava-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0732 (EU single document, Arabako Txakolina / Txakolí de Álava)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35586",
+  "date": "2016-02-19"
+ },
+ "txakoli-bizkaia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0746 (EU single document, Bizkaiko Txakolina / Txakolí de Bizkaia)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27068",
+  "date": "2014-06-26"
+ },
+ "txakoli-getaria-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0741 (EU single document, Getariako Txakolina / Txakolí de Getaria)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26992",
+  "date": "2014-06-26"
+ },
+ "ucles-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0050 (EU single document, Uclés)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34183",
+  "date": "2016-01-27"
+ },
+ "urbezo-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-02585 (pliego de condiciones, Urbezo)",
+  "url": "https://aragon.es/documents/d/guest/pliego_condiciones_dop_urbezo_rgto_ejecucion_2024-2742",
+  "date": "2024-10-25"
+ },
+ "utiel-requena-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0874 (EU single document, Utiel-Requena)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28867",
+  "date": "2014-06-30"
+ },
+ "valdeorras-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1132 (EU single document, Valdeorras)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/39186",
+  "date": "2016-12-19"
+ },
+ "valdepenas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0051 (EU single document, Valdepeñas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29375",
+  "date": "2014-06-27"
+ },
+ "valencia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0872 (EU single document, Valencia)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/65829",
+  "date": "2014-06-30"
+ },
+ "valle-de-guimar-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0980 (EU single document, Valle de Güímar)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27156",
+  "date": "2014-06-30"
+ },
+ "valle-de-la-orotava-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1040 (EU single document, Valle de la Orotava)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27296",
+  "date": "2014-06-30"
+ },
+ "valles-de-benavente-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0646 (EU single document, Valles de Benavente)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29810",
+  "date": "2014-06-27"
+ },
+ "valtiendas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0747 (EU single document, Valtiendas)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40814",
+  "date": "2017-03-22"
+ },
+ "vinos-de-madrid-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1525 (EU single document, Vinos de Madrid)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27926",
+  "date": "2014-06-30"
+ },
+ "ycoden-daute-isora-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0114 (EU single document, Ycoden-Daute-Isora)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27335",
+  "date": "2014-06-30"
+ },
+ "yecla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0606 (EU single document, Yecla)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29956",
+  "date": "2014-06-27"
+ },
+ "abona-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Abona», revision 166100861",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=166100861",
+  "date": "2025-03-14"
+ },
+ "alella-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Alella (vino)», revision 174316056",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174316056",
+  "date": "2026-07-10"
+ },
+ "alicante-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Alicante (vino)», revision 168593665",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168593665",
+  "date": "2025-07-22"
+ },
+ "almansa-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Almansa (vino)», revision 175241267",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175241267",
+  "date": "2026-09-07"
+ },
+ "arlanza-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Arlanza (vino)», revision 174700319",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174700319",
+  "date": "2026-08-04"
+ },
+ "arribes-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Arribes (vino)», revision 175600245",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175600245",
+  "date": "2026-09-30"
+ },
+ "bierzo-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Bierzo (vino)», revision 168572548",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168572548",
+  "date": "2025-07-21"
+ },
+ "binissalem-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Binissalem (vino)», revision 174914978",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174914978",
+  "date": "2026-08-18"
+ },
+ "bullas-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Bullas (vino)», revision 174986436",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174986436",
+  "date": "2026-08-23"
+ },
+ "calatayud-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Calatayud (vino)», revision 164223417",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164223417",
+  "date": "2024-12-19"
+ },
+ "campo-de-borja-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Campo de Borja (vino)», revision 161682975",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=161682975",
+  "date": "2024-08-04"
+ },
+ "cangas-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cangas (vino)», revision 168522462",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168522462",
+  "date": "2025-07-18"
+ },
+ "carinena-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cariñena (vino)», revision 173844300",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173844300",
+  "date": "2026-06-08"
+ },
+ "cebreros-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cebreros (vino)», revision 170252329",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170252329",
+  "date": "2025-10-31"
+ },
+ "cigales-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Cigales (vino)», revision 164278109",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164278109",
+  "date": "2024-12-23"
+ },
+ "conca-de-barbera-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Conca de Barberá (vino)», revision 157809256",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157809256",
+  "date": "2024-01-28"
+ },
+ "condado-de-huelva-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Condado de Huelva», revision 171622345",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171622345",
+  "date": "2026-01-20"
+ },
+ "costers-del-segre-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Costers del Segre», revision 173920437",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173920437",
+  "date": "2026-06-13"
+ },
+ "el-hierro-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «El Hierro (vino)», revision 163845398",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=163845398",
+  "date": "2024-11-29"
+ },
+ "emporda-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Empordà (vino)», revision 164504096",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164504096",
+  "date": "2025-01-04"
+ },
+ "gran-canaria-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Gran Canaria (vino)», revision 169687111",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169687111",
+  "date": "2025-09-26"
+ },
+ "granada-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Granada (vino)», revision 169073284",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169073284",
+  "date": "2025-08-20"
+ },
+ "jerez-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Denominación de Origen Jerez-Xérès-Sherry», revision 175278196",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175278196",
+  "date": "2026-09-10"
+ },
+ "jumilla-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Jumilla (vino)», revision 173911508",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173911508",
+  "date": "2026-06-12"
+ },
+ "la-gomera-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Gomera (vino)», revision 157700146",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157700146",
+  "date": "2024-01-25"
+ },
+ "la-mancha-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Mancha (vino)», revision 165439197",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165439197",
+  "date": "2025-02-15"
+ },
+ "la-palma-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «La Palma (vino)», revision 168949095",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168949095",
+  "date": "2025-08-12"
+ },
+ "lanzarote-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Lanzarote (vino)», revision 171888370",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171888370",
+  "date": "2026-02-04"
+ },
+ "lebrija-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Lebrija (vino)», revision 173879176",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173879176",
+  "date": "2026-06-10"
+ },
+ "leon-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «León (vino)», revision 171197475",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171197475",
+  "date": "2025-12-27"
+ },
+ "malaga-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Málaga (vino)», revision 173780915",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173780915",
+  "date": "2026-06-03"
+ },
+ "manchuela-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Manchuela (vino)», revision 164978626",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164978626",
+  "date": "2025-01-25"
+ },
+ "manzanilla-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Denominación de Origen Manzanilla-Sanlúcar de Barrameda», revision 172610393",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172610393",
+  "date": "2026-03-21"
+ },
+ "mentrida-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Méntrida (vino)», revision 170042209",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170042209",
+  "date": "2025-10-18"
+ },
+ "mondejar-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Mondéjar (vino)», revision 173779011",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173779011",
+  "date": "2026-06-03"
+ },
+ "monterrei-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Monterrei (vino)», revision 164994058",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164994058",
+  "date": "2025-01-26"
+ },
+ "montilla-moriles-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Montilla-Moriles», revision 173075837",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173075837",
+  "date": "2026-04-20"
+ },
+ "montsant-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Montsant», revision 170868176",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170868176",
+  "date": "2025-12-08"
+ },
+ "navarra-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Navarra (vino)», revision 167229039",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=167229039",
+  "date": "2025-05-05"
+ },
+ "penedes-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Penedés (vino)», revision 167526369",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=167526369",
+  "date": "2025-05-21"
+ },
+ "pla-de-bages-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Pla de Bages (vino)», revision 157298256",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157298256",
+  "date": "2024-01-17"
+ },
+ "pla-i-llevant-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Pla i Llevant», revision 174723656",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174723656",
+  "date": "2026-08-06"
+ },
+ "priorat-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Priorato (vino)», revision 172983013",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172983013",
+  "date": "2026-04-14"
+ },
+ "rias-baixas-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rías Baixas (vino)», revision 165659636",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165659636",
+  "date": "2025-02-24"
+ },
+ "ribeira-sacra-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribeira Sacra (vino)», revision 173063544",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173063544",
+  "date": "2026-04-19"
+ },
+ "ribeiro-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribeiro», revision 173788091",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173788091",
+  "date": "2026-06-04"
+ },
+ "ribera-del-duero-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Duero (vino)», revision 171032228",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171032228",
+  "date": "2025-12-17"
+ },
+ "ribera-del-guadiana-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Guadiana», revision 173212354",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173212354",
+  "date": "2026-04-29"
+ },
+ "ribera-del-jucar-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ribera del Júcar», revision 165065477",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165065477",
+  "date": "2025-01-29"
+ },
+ "rioja-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rioja (vino)», revision 174986857",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174986857",
+  "date": "2026-08-23"
+ },
+ "rueda-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Rueda (vino)», revision 174708333",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174708333",
+  "date": "2026-08-05"
+ },
+ "sierra-de-salamanca-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Sierra de Salamanca», revision 157530651",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157530651",
+  "date": "2024-01-22"
+ },
+ "sierras-de-malaga-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Sierras de Málaga», revision 165068483",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165068483",
+  "date": "2025-01-29"
+ },
+ "somontano-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Somontano», revision 165086418",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165086418",
+  "date": "2025-01-30"
+ },
+ "tacoronte-acentejo-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tacoronte-Acentejo», revision 172063558",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=172063558",
+  "date": "2026-02-14"
+ },
+ "tarragona-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tarragona (vino)», revision 157796102",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157796102",
+  "date": "2024-01-28"
+ },
+ "terra-alta-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Terra Alta (vino)», revision 165087987",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=165087987",
+  "date": "2025-01-30"
+ },
+ "tierra-del-vino-de-zamora-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Tierra del Vino de Zamora», revision 157510786",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157510786",
+  "date": "2024-01-22"
+ },
+ "toro-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Toro (vino)», revision 166076923",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=166076923",
+  "date": "2025-03-13"
+ },
+ "txakoli-alava-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Álava», revision 157836978",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157836978",
+  "date": "2024-01-29"
+ },
+ "txakoli-bizkaia-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Vizcaya», revision 175263118",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175263118",
+  "date": "2026-09-09"
+ },
+ "txakoli-getaria-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Chacolí de Guetaria», revision 164260603",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=164260603",
+  "date": "2024-12-22"
+ },
+ "ucles-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Uclés (vino)», revision 171165641",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171165641",
+  "date": "2025-12-25"
+ },
+ "utiel-requena-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Utiel-Requena (vino)», revision 174175197",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=174175197",
+  "date": "2026-06-30"
+ },
+ "valdeorras-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valdeorras (vino)», revision 173023561",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=173023561",
+  "date": "2026-04-17"
+ },
+ "valdepenas-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valdepeñas (vino)», revision 168726632",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=168726632",
+  "date": "2025-07-30"
+ },
+ "valencia-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valencia (vino)», revision 169458723",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169458723",
+  "date": "2025-09-12"
+ },
+ "valle-de-guimar-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valle de Güímar (vino)», revision 175209053",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175209053",
+  "date": "2026-09-05"
+ },
+ "valle-de-la-orotava-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valle de la Orotava (vino)», revision 157410401",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=157410401",
+  "date": "2024-01-19"
+ },
+ "valles-de-benavente-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valles de Benavente», revision 171486584",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=171486584",
+  "date": "2026-01-13"
+ },
+ "valtiendas-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Valtiendas (vino)», revision 175223430",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175223430",
+  "date": "2026-09-06"
+ },
+ "vinos-de-madrid-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Vinos de Madrid», revision 175144719",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=175144719",
+  "date": "2026-09-01"
+ },
+ "ycoden-daute-isora-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Ycoden-Daute-Isora», revision 170943219",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=170943219",
+  "date": "2025-12-12"
+ },
+ "yecla-wiki": {
+  "kind": "wikipedia",
+  "title": "Wikipedia (es), «Yecla (vino)», revision 169684344",
+  "url": "https://es.wikipedia.org/w/index.php?oldid=169684344",
+  "date": "2025-09-26"
+ }
+}

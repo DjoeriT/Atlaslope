@@ -115,3 +115,18 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:1.3rem 0 .4
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important}}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Fact sheet on the place card (approved mock 12: .facts with .src per row) */
+.src{color:var(--ink3);font-size:.75rem;display:block;margin-top:.1rem}
+.facts dd .src a,.src a{display:inline;min-height:0;padding:.35rem 0;color:inherit;text-decoration:underline;text-underline-offset:2px}
+.src a:hover{color:var(--accent)}
+.lede + .src{margin:0 0 .4rem}
+.official{font-size:.8rem;color:var(--ink3);margin:0 0 .4rem}
+.measured,.written{display:block}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.9rem 0 0;padding:0;list-style:none}
+.photo{margin:0}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:.6rem;background:var(--line)}
+.photo figcaption{margin-top:.25rem}
+.report{margin:.6rem 0 0}
+.facts .more{font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:.6rem;padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
+.facts .more:hover{border-color:var(--accent)}

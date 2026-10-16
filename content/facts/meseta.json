@@ -1,0 +1,712 @@
+{
+ "region": "meseta",
+ "sheets": [
+  {
+   "id": "mondejar",
+   "why": {
+    "text": "Hot summers, cold winters and potassium-rich red soils give fresh, aromatic, acidic wines; Malvar and Torrontés whites stand out.",
+    "cite": [
+     "mondejar-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Torrontés"
+     },
+     {
+      "local": "Malvar"
+     }
+    ],
+    "cite": [
+     "mondejar-doc:p1",
+     "mondejar-doc:p5"
+    ],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Sauvignon Blanco",
+     "Verdejo"
+    ],
+    "othersCite": [
+     "mondejar-doc:p5",
+     "mondejar-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red"
+    ],
+    "text": "Light, fresh whites and rosados (Torrontés), plus moderately tannic reds: young, aged or carbonic-maceration.",
+    "cite": [
+     "mondejar-doc:p1",
+     "mondejar-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "From 40 °C in summer to -8 °C in winter, with about 500 mm of rain a year.",
+    "cite": [
+     "mondejar-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Deep red silty-clay soil with gravel; alkaline, low in organic matter and phosphorus, rich in potassium.",
+    "cite": [
+     "mondejar-doc:p5"
+    ]
+   }
+  },
+  {
+   "id": "vinos-de-madrid",
+   "why": {
+    "text": "Low yields (about 3,000 kg/ha) give high-alcohol, deeply coloured reds with ripe fruit; sierra zones add minerality, the chalky south-east ripeness.",
+    "cite": [
+     "vinos-de-madrid-doc:p5",
+     "vinos-de-madrid-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Albillo Real",
+     "Tempranillo",
+     "Malvar",
+     "Garnacha Tinta",
+     "Airén",
+     "Cabernet Sauvignon",
+     "Garnacha Tintorera",
+     "Graciano",
+     "Macabeo",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Petit Verdot",
+     "Sauvignon Blanco",
+     "Syrah",
+     "Torrontés"
+    ],
+    "othersCite": [
+     "vinos-de-madrid-doc:p5",
+     "vinos-de-madrid-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Fruity whites, rosados from dry to sweet, warm tannic reds, and quality sparkling wines.",
+    "cite": [
+     "vinos-de-madrid-doc:p1",
+     "vinos-de-madrid-doc:p2",
+     "vinos-de-madrid-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Chalky ground in the south-east; the sierra zones give mineral, scrubland notes.",
+    "cite": [
+     "vinos-de-madrid-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "mentrida",
+   "why": {
+    "text": "Extreme continental climate and sandy, acidic, lime-poor soil give high-alcohol, full-bodied, warm wines.",
+    "cite": [
+     "mentrida-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Garnacha Tinta"
+     }
+    ],
+    "cite": [
+     "mentrida-wiki"
+    ],
+    "others": [
+     "Albillo Real",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Graciano",
+     "Macabeo",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Petit Verdot",
+     "Sauvignon Blanco",
+     "Syrah",
+     "Tempranillo",
+     "Verdejo"
+    ],
+    "othersCite": [
+     "mentrida-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry to sweet whites and rosados, young and oak-aged reds, and sparkling wines.",
+    "cite": [
+     "mentrida-doc:p1",
+     "mentrida-doc:p3",
+     "mentrida-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Extreme continental: long cold winters, hot summers and very little rain.",
+    "cite": [
+     "mentrida-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Sandy, acidic soil with very little lime.",
+    "cite": [
+     "mentrida-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "ucles",
+   "why": {
+    "text": "Altitude and potassium-rich soils, with low-density bush vines, give balanced grapes and acidic wines made to last in bottle.",
+    "cite": [
+     "ucles-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cencibel",
+     "Verdejo",
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Macabeo"
+    ],
+    "othersCite": [
+     "ucles-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Reds, young whites and barrel-fermented or aged whites, rosados, and quality sparkling wines.",
+    "cite": [
+     "ucles-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Fine-textured, deep, tending to chalky; clay-loam to sandy-loam; rich in potassium.",
+    "cite": [
+     "ucles-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "500 to 800 m in the west half; 600 to 1,200 m in the east.",
+    "cite": [
+     "ucles-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "manchuela",
+   "why": {
+    "text": "Between two river valleys, hot sunny summers with almost no rain and calcareous clay soils suit Bobal: aromatic, acidic, deeply coloured wines.",
+    "cite": [
+     "manchuela-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Bobal"
+     }
+    ],
+    "cite": [
+     "manchuela-doc:p7"
+    ],
+    "others": [
+     "Cabernet Sauvignon",
+     "Verdejo",
+     "Tempranillo",
+     "Macabeo",
+     "Garnacha Tinta",
+     "Albillo Real",
+     "Cabernet Franc",
+     "Moravia Agria",
+     "Moravia Dulce",
+     "Moscatel Grano Menudo",
+     "Pardillo",
+     "Chardonnay",
+     "Garnacha Tintorera",
+     "Graciano",
+     "Malbec",
+     "Mazuela",
+     "Merlot",
+     "Monastrell",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Rojal Tinta",
+     "Sauvignon Blanco",
+     "Syrah",
+     "Tinto Velasco",
+     "Viognier"
+    ],
+    "othersCite": [
+     "manchuela-doc:p6",
+     "manchuela-doc:p7",
+     "manchuela-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry to sweet whites and rosados; young, oak-aged and carbonic-maceration reds; sparkling white and rosé.",
+    "cite": [
+     "manchuela-doc:p1",
+     "manchuela-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "High temperatures, almost no rain from May to September, and many hours of sun.",
+    "cite": [
+     "manchuela-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Clay soils with a limestone base, from the sediments of two rivers.",
+    "cite": [
+     "manchuela-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "ribera-del-jucar",
+   "why": {
+    "text": "The Júcar canyon brings more rain than the surrounding flatland; lake-deposit soils give soft, balanced reds and whites with good acidity.",
+    "cite": [
+     "ribera-del-jucar-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
+     "Cabernet Franc",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Petit Verdot",
+     "Sauvignon Blanco"
+    ],
+    "othersCite": [
+     "ribera-del-jucar-doc:p5",
+     "ribera-del-jucar-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sweet"
+    ],
+    "text": "Dry and sweet whites and rosados; young, traditional, crianza and reserva reds.",
+    "cite": [
+     "ribera-del-jucar-doc:p1",
+     "ribera-del-jucar-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "The Júcar canyon causes more rain than the surrounding area. The document gives no figures.",
+    "cite": [
+     "ribera-del-jucar-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Lake deposits: silty sands, salty clays, gravel and rounded dolomitic limestone cemented by clay.",
+    "cite": [
+     "ribera-del-jucar-doc:p5"
+    ]
+   }
+  },
+  {
+   "id": "la-mancha",
+   "why": {
+    "text": "Dry, very sunny plains (300 to 350 mm of rain, 3,000 sun hours) over chalky soils give colourful, aromatic wines; low yields add balance.",
+    "cite": [
+     "la-mancha-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
+     "Garnacha Tinta",
+     "Cabernet Franc",
+     "Chardonnay",
+     "Gewürztraminer",
+     "Graciano",
+     "Malbec",
+     "Mencía",
+     "Merlot",
+     "Monastrell",
+     "Moravia Dulce",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Pedro Ximénez",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Riesling",
+     "Sauvignon Blanco",
+     "Torrontés",
+     "Viognier"
+    ],
+    "othersCite": [
+     "la-mancha-doc:p6",
+     "la-mancha-doc:p11",
+     "la-mancha-doc:p12"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sweet",
+     "sparkling"
+    ],
+    "text": "Whites and rosados, young or traditional; oak and aged reds; naturally sweet wine; semi-sparkling and sparkling wines.",
+    "cite": [
+     "la-mancha-doc:p1",
+     "la-mancha-doc:p3",
+     "la-mancha-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Extreme continental: high temperatures, 300 to 350 mm of rain a year and about 3,000 hours of sun.",
+    "cite": [
+     "la-mancha-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Miocene limestone, marl and sand, brown to red-brown; chalky soils give full-bodied reds.",
+    "cite": [
+     "la-mancha-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "almansa",
+   "why": {
+    "text": "High, extreme-continental plateau with limestone-rich soil and yields of 4,500 kg/ha concentrate colour, tannin and aroma in the wines.",
+    "cite": [
+     "almansa-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Verdejo",
+     "Monastrell",
+     "Garnacha Tintorera",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Garnacha Tinta",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Sauvignon Blanco",
+     "Syrah",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "almansa-doc:p6",
+     "almansa-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sweet"
+    ],
+    "text": "Young and barrel-aged whites, rosados and reds, dry to sweet; reds also crianza, reserva and gran reserva.",
+    "cite": [
+     "almansa-doc:p1",
+     "almansa-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Extreme continental: very cold dry winters, very hot summers, under 250 mm of rain a year on average, mostly spring and late summer.",
+    "cite": [
+     "almansa-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Rich in limestone, from thin stony patches to deeper sandy ones.",
+    "cite": [
+     "almansa-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Plateau from 400 m at Fuente la Higuera to 700 m at Almansa.",
+    "cite": [
+     "almansa-doc:p7"
+    ]
+   }
+  },
+  {
+   "id": "ribera-del-guadiana",
+   "why": {
+    "text": "Mediterranean climate and low rain in key months cut disease; reds are rich in tannin and colour, whites fruity with medium-high acidity.",
+    "cite": [
+     "ribera-del-guadiana-doc:p6",
+     "ribera-del-guadiana-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo",
+     "Syrah",
+     "Pardina",
+     "Macabeo",
+     "Garnacha Tintorera",
+     "Garnacha Tinta",
+     "Cayetana Blanca",
+     "Beba",
+     "Bobal",
+     "Graciano",
+     "Jaén Tinto",
+     "Malvar",
+     "Mazuela",
+     "Merlot",
+     "Monastrell",
+     "Montúa",
+     "Moscatel de Alejandría",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Pedro Ximénez",
+     "Perruno",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Sauvignon Blanco",
+     "Verdejo"
+    ],
+    "othersCite": [
+     "ribera-del-guadiana-doc:p6",
+     "ribera-del-guadiana-doc:p11",
+     "ribera-del-guadiana-doc:p12"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red"
+    ],
+    "text": "Fruity whites, rosados and reds rich in tannin and colour; whites and reds also aged (crianza, reserva).",
+    "cite": [
+     "ribera-del-guadiana-doc:p1",
+     "ribera-del-guadiana-doc:p2",
+     "ribera-del-guadiana-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean, with low rainfall in the decisive months of the growing season, so little fungal disease.",
+    "cite": [
+     "ribera-del-guadiana-doc:p6",
+     "ribera-del-guadiana-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "campo-de-calatrava",
+   "why": {
+    "text": "Dark volcanic-zone soils warm early; little rain (about 400 mm), dry air and 2,800 sun hours let vines ripen with little disease.",
+    "cite": [
+     "campo-de-calatrava-doc:p8",
+     "campo-de-calatrava-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cencibel",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Syrah",
+     "Bobal",
+     "Petit Verdot",
+     "Cabernet Franc",
+     "Graciano",
+     "Garnacha Tintorera",
+     "Malbec",
+     "Airén",
+     "Macabeo",
+     "Verdejo",
+     "Chardonnay",
+     "Moscatel de Grano Menudo",
+     "Sauvignon Blanc",
+     "Riesling",
+     "Moscatel de Alejandría",
+     "Gewürztraminer",
+     "Viognier",
+     "Albariño"
+    ],
+    "othersCite": [
+     "campo-de-calatrava-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry to sweet whites, rosados and reds, from young to gran reserva; sparkling white and rosé; some over-ripe red.",
+    "cite": [
+     "campo-de-calatrava-doc:p1",
+     "campo-de-calatrava-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Mean 15.6 °C, no more than about 400 mm of rain, 52% humidity, over 2,800 sun hours; disease risk almost nil.",
+    "cite": [
+     "campo-de-calatrava-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Dark clay-loam soils, often stony; low in calcium, high in potassium; volcanic rock.",
+    "cite": [
+     "campo-de-calatrava-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Gentle hills at 700 to 900 m, small plains at 630 to 650 m.",
+    "cite": [
+     "campo-de-calatrava-doc:p8"
+    ]
+   }
+  },
+  {
+   "id": "valdepenas",
+   "why": {
+    "text": "Dry continental climate and chalky, humus-poor soil stress the vines, giving low yields and well-structured, complex reds.",
+    "cite": [
+     "valdepenas-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Airén",
+     "Verdejo",
+     "Tempranillo",
+     "Syrah",
+     "Macabeo",
+     "Chardonnay",
+     "Garnacha Tinta",
+     "Merlot",
+     "Moscatel Grano Menudo",
+     "Petit Verdot",
+     "Sauvignon Blanco"
+    ],
+    "othersCite": [
+     "valdepenas-doc:p6",
+     "valdepenas-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling"
+    ],
+    "text": "Whites, rosados, reds including a traditional style, and sparkling wine.",
+    "cite": [
+     "valdepenas-doc:p1",
+     "valdepenas-doc:p3",
+     "valdepenas-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Dry continental; high summer temperatures ease off late, slowing the end of ripening and keeping aromas.",
+    "cite": [
+     "valdepenas-doc:p6",
+     "valdepenas-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Chalky, poor in organic matter, pH 7.5 to 8.5, easy for roots to penetrate; reflects sunlight, stores heat.",
+    "cite": [
+     "valdepenas-doc:p6"
+    ]
+   }
+  }
+ ]
+}

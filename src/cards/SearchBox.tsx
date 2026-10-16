@@ -43,7 +43,7 @@ export function SearchBox({ tree, open }: Props) {
                   if (e.key === 'Escape') { li?.closest('.search')?.querySelector('input')?.focus(); setText(''); }
                 }}
               >
-                <span>{h.name}</span><small>{h.level}</small>
+                <span>{h.name}</span><small>{h.matchedGrape ? t.mainGrape(h.matchedGrape) : h.level}</small>
               </a>
             </li>
           ))}

@@ -44,6 +44,8 @@ export interface Crumb {
   level: string;
   id: string;
   name: string;
+  /** Set when the search matched a main grape of the place rather than its name. */
+  matchedGrape?: string;
 }
 
 export type TreeNode = Region | Place;

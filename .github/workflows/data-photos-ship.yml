@@ -1,0 +1,32 @@
+# Picked photos (Review/sources/photo-picks.json) resized to WebP in public/photos/ with credits in data/photos.json,
+# committed to the same branch. Runs when a claude/ branch changes the picks or the script; Commons throttles the cloud container.
+name: data-photos-ship
+on:
+  push:
+    branches: ['claude/**']
+    paths: ['Review/sources/photo-picks.json', 'Tools/data/photo_ship.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: data-photos-ship-${{ github.ref }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q pillow==11.0.0
+      - run: /tmp/venv/bin/python -I Tools/data/photo_ship.py
+      - name: Commit the results to this branch
+        if: always()
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/photos.json public/photos
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Photos: resized picks of run ${{ github.run_id }}"
+          git pull -q --no-rebase origin "$BRANCH"
+          git push origin HEAD:"$BRANCH"
