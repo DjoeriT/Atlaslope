@@ -64,6 +64,34 @@
    "soil": {
     "text": "",
     "cite": []
+   },
+   "tastes": {
+    "text": "Reds: medium to medium-high colour; ripe red fruit with vegetal notes; warm, fleshy, structured. Rosés: red fruit, balanced. Whites: pear, apple, citrus; Moscatel very aromatic; fresh, intense, balanced.",
+    "cite": [
+     "binissalem-doc:p1",
+     "binissalem-doc:p2",
+     "binissalem-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Barrel ageing adds wood and spice aromas."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Fruity, vegetal aromas; fresh, lively, very fine and persistent."
+     }
+    ],
+    "cite": [
+     "binissalem-doc:p1",
+     "binissalem-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   },
   {
@@ -132,6 +160,38 @@
     "cite": [
      "pla-i-llevant-doc:p5"
     ]
+   },
+   "tastes": {
+    "text": "Whites and rosés: bright, fresh and fruity; barrel-aged whites voluminous and unctuous. Reds: medium-high colour; fresh fruit when young, ripe fruit with oak when aged; elegant, fleshy, velvety.",
+    "cite": [
+     "pla-i-llevant-doc:p1",
+     "pla-i-llevant-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de licor",
+      "text": "Straw-green to golden whites with floral, syrupy fruit; reds red to purple."
+     },
+     {
+      "name": "Vino espumoso",
+      "text": "Tiny bubbles in long chains; aromas of ageing on the lees."
+     },
+     {
+      "name": "Vino de aguja",
+      "text": "Fine bubbles; fruity with second-fermentation aromas; fresh."
+     }
+    ],
+    "cite": [
+     "pla-i-llevant-doc:p2",
+     "pla-i-llevant-doc:p3",
+     "pla-i-llevant-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
    }
   }
  ]
