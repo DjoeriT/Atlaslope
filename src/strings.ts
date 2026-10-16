@@ -48,6 +48,7 @@ export const strings = {
   facts: {
     mainGrapes: 'Main grapes',
     otherGrapes: 'Other grapes',
+    otherGrapesPartial: 'Other grapes (some)',
     moreGrapes: (n: number) => `and ${n} more`,
     styles: 'Styles',
     climate: 'Climate',

@@ -60,7 +60,7 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
   return (
     <>
       {main.length > 0 && <Row label={t.mainGrapes} cites={sheet!.grapes.cite}>{main.map(grapeLabel).join(', ')}</Row>}
-      {others.length > 0 && <Row label={t.otherGrapes} cites={sheet!.grapes.othersCite}><OtherGrapes names={others} /></Row>}
+      {others.length > 0 && <Row label={sheet!.grapes.othersPartial ? t.otherGrapesPartial : t.otherGrapes} cites={sheet!.grapes.othersCite}><OtherGrapes names={others} /></Row>}
       {styles && <Row label={t.styles} cites={sheet!.styles.cite}>{styles}</Row>}
       {climate && <Row label={t.climate} cites={sheet!.climate.cite}>{climate}</Row>}
       {measures && measures.koppen.length > 0 && <Row label={t.koppen} cites={['koppen']}>{koppenText(measures.koppen)}</Row>}

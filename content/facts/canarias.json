@@ -641,8 +641,14 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Moscatel de Alejandría"
+     }
+    ],
+    "cite": [
+     "gran-canaria-wiki"
+    ],
     "others": [
      "Bermejuela (Marmajuelo)",
      "Albillo",
@@ -651,7 +657,6 @@
      "Tintilla",
      "Sabro",
      "Negramoll",
-     "Moscatel de Alejandría",
      "Malvasía Volcánica",
      "Malvasía Rosada",
      "Malvasía Aromática (Malvasía de Sitges)",

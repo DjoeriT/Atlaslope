@@ -22,7 +22,11 @@ export interface TextRow {
 export interface Sheet {
   id: string;
   why: TextRow;
-  grapes: { main: MainGrape[]; cite: Cite[]; others: string[]; othersCite: Cite[] };
+  grapes: {
+    main: MainGrape[]; cite: Cite[]; others: string[]; othersCite: Cite[];
+    /** The cited document is an amendment or a cut extract, so `others` is not every allowed grape. */
+    othersPartial?: boolean;
+  };
   styles: { kinds: StyleKind[]; text: string; cite: Cite[] };
   climate: TextRow;
   soil: TextRow;

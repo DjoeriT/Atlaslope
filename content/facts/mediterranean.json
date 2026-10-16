@@ -379,7 +379,8 @@
     ],
     "othersCite": [
      "bullas-doc:p7"
-    ]
+    ],
+    "othersPartial": true
    },
    "styles": {
     "kinds": [
@@ -396,7 +397,7 @@
     ]
    },
    "climate": {
-    "text": "Dry climate, with the document noting altitude as an influence. No figures given.",
+    "text": "A dry climate, with altitude as an influence.",
     "cite": [
      "bullas-doc:p7"
     ]

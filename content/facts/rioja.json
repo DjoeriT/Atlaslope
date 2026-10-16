@@ -1,234 +1,234 @@
 {
-  "region": "rioja",
-  "sheets": [
-    {
-      "id": "rioja",
-      "why": {
-        "text": "Atlantic and Mediterranean climates meet here, giving mild temperatures and about 400 mm of rain, which suits full-bodied reds made for ageing.",
-        "cite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "grapes": {
-        "main": [
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Viura",
-            "grape": "Macabeo"
-          }
-        ],
-        "cite": [
-          "rioja-wiki"
-        ],
-        "others": [
-          "Alarije",
-          "Subirat Parent",
-          "Malvasía Riojana",
-          "Turruntés",
-          "Verdejo",
-          "Tempranillo Blanco",
-          "Sauvignon Blanco",
-          "Mazuela",
-          "Maturana Tinta",
-          "Maturana Blanca",
-          "Graciano",
-          "Garnacha Tinta",
-          "Garnacha Blanca",
-          "Chardonnay"
-        ],
-        "othersCite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "styles": {
-        "kinds": [
-          "white",
-          "rose",
-          "red",
-          "sweet"
-        ],
-        "text": "Dry and semi-dry whites, rosados and reds, plus semi-sweet and sweet whites and rosados; reds sold young or aged.",
-        "cite": [
-          "rioja-doc:p1"
-        ]
-      },
-      "climate": {
-        "text": "Atlantic and Mediterranean influences meet; temperatures are mild and annual rainfall is about 400 mm.",
-        "cite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "soil": {
-        "text": "",
-        "cite": []
-      }
-    },
-    {
-      "id": "rioja-alta",
-      "why": {
-        "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alta.",
-        "cite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "grapes": {
-        "main": [
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Viura",
-            "grape": "Macabeo"
-          }
-        ],
-        "cite": [
-          "rioja-wiki"
-        ],
-        "others": [
-          "Alarije",
-          "Subirat Parent",
-          "Malvasía Riojana",
-          "Turruntés",
-          "Verdejo",
-          "Tempranillo Blanco",
-          "Sauvignon Blanco",
-          "Mazuela",
-          "Maturana Tinta",
-          "Maturana Blanca",
-          "Graciano",
-          "Garnacha Tinta",
-          "Garnacha Blanca",
-          "Chardonnay"
-        ],
-        "othersCite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "styles": {
-        "kinds": [],
-        "text": "",
-        "cite": []
-      },
-      "climate": {
-        "text": "",
-        "cite": []
-      },
-      "soil": {
-        "text": "",
-        "cite": []
-      }
-    },
-    {
-      "id": "rioja-alavesa",
-      "why": {
-        "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alavesa.",
-        "cite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "grapes": {
-        "main": [
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Viura",
-            "grape": "Macabeo"
-          }
-        ],
-        "cite": [
-          "rioja-wiki"
-        ],
-        "others": [
-          "Alarije",
-          "Subirat Parent",
-          "Malvasía Riojana",
-          "Turruntés",
-          "Verdejo",
-          "Tempranillo Blanco",
-          "Sauvignon Blanco",
-          "Mazuela",
-          "Maturana Tinta",
-          "Maturana Blanca",
-          "Graciano",
-          "Garnacha Tinta",
-          "Garnacha Blanca",
-          "Chardonnay"
-        ],
-        "othersCite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "styles": {
-        "kinds": [],
-        "text": "",
-        "cite": []
-      },
-      "climate": {
-        "text": "",
-        "cite": []
-      },
-      "soil": {
-        "text": "",
-        "cite": []
-      }
-    },
-    {
-      "id": "rioja-oriental",
-      "why": {
-        "text": "The document treats Rioja as one area with three subzones (it calls this one Rioja Baja) and gives no separate description of it.",
-        "cite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "grapes": {
-        "main": [
-          {
-            "local": "Tempranillo"
-          },
-          {
-            "local": "Viura",
-            "grape": "Macabeo"
-          }
-        ],
-        "cite": [
-          "rioja-wiki"
-        ],
-        "others": [
-          "Alarije",
-          "Subirat Parent",
-          "Malvasía Riojana",
-          "Turruntés",
-          "Verdejo",
-          "Tempranillo Blanco",
-          "Sauvignon Blanco",
-          "Mazuela",
-          "Maturana Tinta",
-          "Maturana Blanca",
-          "Graciano",
-          "Garnacha Tinta",
-          "Garnacha Blanca",
-          "Chardonnay"
-        ],
-        "othersCite": [
-          "rioja-doc:p5"
-        ]
-      },
-      "styles": {
-        "kinds": [],
-        "text": "",
-        "cite": []
-      },
-      "climate": {
-        "text": "",
-        "cite": []
-      },
-      "soil": {
-        "text": "",
-        "cite": []
-      }
-    }
-  ]
+ "region": "rioja",
+ "sheets": [
+  {
+   "id": "rioja",
+   "why": {
+    "text": "Atlantic and Mediterranean climates meet here, giving mild temperatures and about 400 mm of rain, which suits full-bodied reds made for ageing.",
+    "cite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Viura",
+      "grape": "Macabeo"
+     }
+    ],
+    "cite": [
+     "rioja-wiki"
+    ],
+    "others": [
+     "Alarije",
+     "Subirat Parent",
+     "Malvasía Riojana",
+     "Turruntés",
+     "Verdejo",
+     "Tempranillo Blanco",
+     "Sauvignon Blanco",
+     "Mazuela",
+     "Maturana Tinta",
+     "Maturana Blanca",
+     "Graciano",
+     "Garnacha Tinta",
+     "Garnacha Blanca",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sweet"
+    ],
+    "text": "Dry and semi-dry whites, rosados and reds, plus semi-sweet and sweet whites and rosados; reds sold young or aged.",
+    "cite": [
+     "rioja-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Atlantic and Mediterranean influences meet; temperatures are mild and annual rainfall is about 400 mm.",
+    "cite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "rioja-alta",
+   "why": {
+    "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alta.",
+    "cite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Viura",
+      "grape": "Macabeo"
+     }
+    ],
+    "cite": [
+     "rioja-wiki"
+    ],
+    "others": [
+     "Alarije",
+     "Subirat Parent",
+     "Malvasía Riojana",
+     "Turruntés",
+     "Verdejo",
+     "Tempranillo Blanco",
+     "Sauvignon Blanco",
+     "Mazuela",
+     "Maturana Tinta",
+     "Maturana Blanca",
+     "Graciano",
+     "Garnacha Tinta",
+     "Garnacha Blanca",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "rioja-alavesa",
+   "why": {
+    "text": "The document treats Rioja as one area with three subzones and says nothing separate about the Alavesa.",
+    "cite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Viura",
+      "grape": "Macabeo"
+     }
+    ],
+    "cite": [
+     "rioja-wiki"
+    ],
+    "others": [
+     "Alarije",
+     "Subirat Parent",
+     "Malvasía Riojana",
+     "Turruntés",
+     "Verdejo",
+     "Tempranillo Blanco",
+     "Sauvignon Blanco",
+     "Mazuela",
+     "Maturana Tinta",
+     "Maturana Blanca",
+     "Graciano",
+     "Garnacha Tinta",
+     "Garnacha Blanca",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  },
+  {
+   "id": "rioja-oriental",
+   "why": {
+    "text": "The document treats Rioja as one area with three subzones (it calls this one Rioja Baja) and gives no separate description of it.",
+    "cite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Viura",
+      "grape": "Macabeo"
+     }
+    ],
+    "cite": [
+     "rioja-wiki"
+    ],
+    "others": [
+     "Alarije",
+     "Subirat Parent",
+     "Malvasía Riojana",
+     "Turruntés",
+     "Verdejo",
+     "Tempranillo Blanco",
+     "Sauvignon Blanco",
+     "Mazuela",
+     "Maturana Tinta",
+     "Maturana Blanca",
+     "Graciano",
+     "Garnacha Tinta",
+     "Garnacha Blanca",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "rioja-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   }
+  }
+ ]
 }

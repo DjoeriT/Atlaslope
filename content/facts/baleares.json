@@ -10,13 +10,20 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Moll"
+     },
+     {
+      "local": "Manto Negro"
+     }
+    ],
+    "cite": [
+     "binissalem-wiki"
+    ],
     "others": [
      "Moscatel Grano Menudo",
      "Moscatel de Alejandría",
-     "Moll",
-     "Manto Negro",
      "Cabernet Sauvignon",
      "Callet",
      "Chardonnay",
@@ -49,7 +56,7 @@
     ]
    },
    "climate": {
-    "text": "Conditions favour full ripening and high sugar concentration. The document gives no figures.",
+    "text": "Conditions favour full ripening and high sugar concentration.",
     "cite": [
      "binissalem-doc:p6"
     ]
@@ -69,18 +76,11 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Moll"
-     },
-     {
-      "local": "Manto Negro"
-     }
-    ],
-    "cite": [
-     "pla-i-llevant-wiki"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
+     "Moll",
+     "Manto Negro",
      "Gorgollasa",
      "Giro Ros",
      "Fogoneu",
