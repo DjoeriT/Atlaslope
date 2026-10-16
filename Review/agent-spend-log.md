@@ -24,3 +24,5 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-16 | ReviewBot, Sonnet | Release 4 code review (`release-4-review-code.md`) | 90k | 44,763 tokens, 9 tool uses, 1 min | Merge after fixes: 0 blockers, 3 should-fix (2 fixed, 1 kept as inline-link exception), 6 nits |
 | 2026-10-16 | Scout, Sonnet | Release 4 follow-up: planted-area and Rioja pliego sources | 80k | 68,864 tokens, 12 tool uses, 1 min | No source confirmed from the container; six URLs queued for the Actions fetch |
 | 2026-10-16 | ReviewBot, Sonnet | Release 4 Rioja zone sheets (`release-4-review-rioja-zones.md`) | 30k | 25,116 tokens, 7 tool uses, 1 min | 0 blockers, 2 should-fix and 1 note, all applied |
+| 2026-10-16 | ReviewBot, Sonnet | Release 4 close-out PR #25 (`release-4-review-closeout.md`) | 15k | about 17k tokens | Merge, no fixes |
+| 2026-10-16 | ReviewBot, Sonnet | World background map code review (`world-map-review.md`, PR #26) | 60k | 29,124 tokens, 7 tool uses, 1 min | Merge: 0 blockers, 0 should-fix, 4 notes; lake-island test added |

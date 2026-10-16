@@ -37,6 +37,18 @@ describe('world background (Natural Earth, Tools/data/build_world.py)', () => {
     ];
     for (const [name, at, want] of cases) expect(onLand(at), name).toBe(want);
   });
+  it('has no island inside a lake, since the sea tint cuts out outer rings only (oceanFromLand)', () => {
+    const lakes = land.geometry.coordinates.flatMap((poly: number[][][]) => poly.slice(1));
+    const inRing = (r: number[][], [x, y]: number[]) => {
+      let inside = false;
+      for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+        if ((r[i][1] > y) !== (r[j][1] > y) && x < ((r[j][0] - r[i][0]) * (y - r[i][1])) / (r[j][1] - r[i][1]) + r[i][0]) inside = !inside;
+      }
+      return inside;
+    };
+    const islands = land.geometry.coordinates.filter((poly: number[][][]) => lakes.some((lake: number[][]) => inRing(lake, poly[0][0])));
+    expect(islands).toHaveLength(0);
+  });
   it('stays under 1 MB', () => expect(statSync('data/natural-earth-world.geojson').size).toBeLessThan(1_000_000));
 });
 
