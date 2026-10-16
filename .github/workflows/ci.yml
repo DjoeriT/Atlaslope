@@ -23,7 +23,7 @@ jobs:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
           HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
-          files=$(git diff --name-only "$BASE...$HEAD" 2>/dev/null) || { echo "docs=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          files=$(git diff --no-renames --name-only "$BASE...$HEAD" 2>/dev/null) || { echo "docs=false" >> "$GITHUB_OUTPUT"; exit 0; }
           echo "$files"
           if [ -n "$files" ] && ! printf '%s\n' "$files" | grep -qvE '^(docs/|Review/)|^[^/]+\.md$'; then
             echo "docs=true" >> "$GITHUB_OUTPUT"; echo "Docs only: skipping the build and tests."
