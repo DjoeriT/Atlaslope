@@ -309,8 +309,10 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         if (boundaries) {
           for (const f of boundaries.features) setState('dos', String(f.properties.id), { dim: false });
           if (selected) setState('dos', selected, { sel: false });
+          if (selectedZone) setState('zones', selectedZone, { sel: false });
         }
         selected = null;
+        selectedZone = null;
         dimmedRegion = undefined;
       }
       if (!q && was) { if (ready) leaveQuiz(); return; }

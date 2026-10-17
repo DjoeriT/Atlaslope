@@ -40,9 +40,10 @@ export function progressOf(round: Round, outcomes: Outcomes, index: number): { d
   return { dots, n, of: dots.length, right, wrong };
 }
 
-/** The round without the re-ask that a miss added (the miss was marked as a slip). */
-export function withoutReask(round: Round, place: string, memory: MemoryName): Round {
-  const at = round.items.map((i) => i.kind === 'question' && i.reask && i.place === place && i.memory === memory).lastIndexOf(true);
+/** The round without the re-ask that the miss at `index` added (the miss was marked as a slip). Only items after `index` count:
+ * a slip on a re-ask itself has no later re-ask, so nothing is removed. */
+export function withoutReask(round: Round, index: number, place: string, memory: MemoryName): Round {
+  const at = round.items.map((i, n) => n > index && i.kind === 'question' && !!i.reask && i.place === place && i.memory === memory).lastIndexOf(true);
   return at < 0 ? round : { ...round, items: round.items.filter((_, i) => i !== at) };
 }
 

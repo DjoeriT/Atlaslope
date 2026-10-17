@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makeClock, missesOf, progressOf, scoreOf, viewFor, withoutReask, type Outcome, type Outcomes } from '../../src/quiz-ui/helpers';
-import { withoutSlip } from '../../src/quiz-ui/useQuiz';
+import { localDay, withoutSlip } from '../../src/quiz-ui/useQuiz';
 import type { LogEntry, Round } from '../../src/quiz';
 
 const q = (place: string, extra: object = {}) => ({ kind: 'question' as const, place, memory: 'where' as const, type: 'find-it' as const, ...extra });
@@ -26,8 +26,13 @@ describe('the dots and numbers', () => {
 describe('the re-ask', () => {
   const grown: Round = { items: [q('a'), q('b'), q('a', { reask: true })], more: false };
   it('goes when the miss is marked as a slip, and only that one', () => {
-    expect(withoutReask(grown, 'a', 'where').items).toEqual([q('a'), q('b')]);
-    expect(withoutReask(grown, 'b', 'where')).toBe(grown);
+    expect(withoutReask(grown, 0, 'a', 'where').items).toEqual([q('a'), q('b')]);
+    expect(withoutReask(grown, 1, 'b', 'where')).toBe(grown);
+  });
+  it('a slip on a re-ask removes nothing: the question in play and later re-asks stay (review B2)', () => {
+    const twice: Round = { items: [q('a'), q('b'), q('a', { reask: true }), q('b', { reask: true })], more: false };
+    expect(withoutReask(twice, 2, 'a', 'where')).toBe(twice);
+    expect(withoutReask(twice, 1, 'b', 'where').items).toEqual([q('a'), q('b'), q('a', { reask: true })]);
   });
 });
 
@@ -93,5 +98,12 @@ describe('the quiz clock', () => {
     expect(clock().toISOString()).toBe('2026-10-17T10:00:00.000Z');
     t = 4000;
     expect(clock().toISOString()).toBe('2026-10-17T10:00:03.000Z');
+  });
+});
+
+describe('the learner\'s day', () => {
+  it('passes the local offset to the engine, so a day starts at local midnight (review S2)', () => {
+    const d = new Date('2026-10-17T10:00:00Z');
+    expect(localDay(d)).toEqual({ utcOffsetMinutes: -d.getTimezoneOffset() });
   });
 });

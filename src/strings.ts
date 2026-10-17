@@ -110,6 +110,7 @@ export const strings = {
     kicker: (day: string) => `Quiz · ${day}`,
     backToQuiz: 'Back to the quiz',
     backToQuizLabel: 'Back to the quiz, where you left off',
+    storageDamaged: "The progress stored in this browser could not be read, so the quiz started afresh. A copy was kept; if you saved a file, load it from the Atlaslope menu.",
     storageBlocked: "Progress can't be kept in this browser, so it will be lost when you close the page. Save a copy to a file to keep it.",
     doors: {
       study: 'Study',

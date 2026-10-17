@@ -58,3 +58,8 @@ progress won't be kept. [O; blocked-storage wording A]
 
 New UI (intro, reveal with fact, Study and Review doors, "Practise any mix" picker, focus) is mocked first in
 `Review/mock-quiz-v4/`, design-checked (`Review/release-7-mock-design-check.md`, all fixed), approved by the owner (card, 17 Oct 05:44Z).
+
+## Outcome (LeadBot, 17 Oct 2026)
+Built in five cards (one Opus, four Sonnet) plus a Sonnet design check and an Opus code review: 0.61 M agent tokens [V, spend log],
+under the 0.66 to 1.25 M estimate. Review found two blockers (two tabs overwrote each other; a slip on a re-ask broke the round), fixed
+with tests. Ships as release 7 after the owner's "publish release 7".

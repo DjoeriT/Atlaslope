@@ -51,7 +51,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   const outcome: Outcome | undefined = outcomes[index];
   const question = useMemo<Question | undefined>(
     () => (item?.kind === 'question' ? makeQuestion(item, { tree, facts: { sheetOf, measuresOf }, rng }) : undefined),
-    [index, tree],
+    [index, item, tree],
   );
 
   const latest = useRef({ next: () => {} });
@@ -151,7 +151,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
     if (!outcome || item?.kind !== 'question') return;
     quiz.slip();
     setOutcomes({ ...outcomes, [index]: { ...outcome, slip: true } });
-    setRound(withoutReask(round, item.place, item.memory));
+    setRound(withoutReask(round, index, item.place, item.memory));
   }
   function unslip() {
     if (!outcome || item?.kind !== 'question') return;

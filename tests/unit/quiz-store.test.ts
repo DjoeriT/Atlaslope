@@ -21,7 +21,7 @@ describe('progress store', () => {
   it('gives version 1 with an empty log from empty storage', () => {
     const store = createStore(asStorage(new MemStorage()), NOW);
     expect(store.load()).toMatchObject({ version: 1, log: [], focus: [] });
-    expect(store.status()).toEqual({ persistent: true, newerVersion: null });
+    expect(store.status()).toEqual({ persistent: true, newerVersion: null, damaged: false });
   });
 
   it('round-trips save then load, across store instances', () => {
@@ -96,4 +96,44 @@ describe('progress store', () => {
     expect(createStore(asStorage(s), NOW).load().log).toEqual(log('old'));
     expect(createStore(asStorage(new MemStorage()), NOW).restoreBackup()).toBe(false);
   });
+
+  it('two tabs saving in turn keep both tabs\' answers (review B1)', () => {
+    const s = new MemStorage();
+    const a = createStore(asStorage(s), NOW), b = createStore(asStorage(s), NOW);
+    b.load(); // tab B opened before tab A answered
+    a.save({ log: log('x', 'y'), focus: [] });
+    b.save({ log: log('z'), focus: [] });
+    expect(createStore(asStorage(s), NOW).load().log.map((e) => e.place).sort()).toEqual(['x', 'y', 'z']);
+  });
+
+  it('a slip mark saved later wins over the same entry without it', () => {
+    const s = new MemStorage();
+    const store = createStore(asStorage(s), NOW);
+    store.save({ log: log('a'), focus: [] });
+    const [e] = log('a');
+    store.save({ log: [{ ...e, right: false, slip: true } as LogEntry], focus: [] });
+    expect(store.load().log).toEqual([{ ...e, right: false, slip: true }]);
+  });
+
+  it('keeps an unreadable stored record as text and says so, instead of silently replacing it (review S1)', () => {
+    const s = new MemStorage();
+    const text = JSON.stringify({ version: 1, log: [...log('a'), { kind: 'answer', place: 'b', type: 'pair' }], focus: [] });
+    s.setItem('atlaslope.quiz', text);
+    const store = createStore(asStorage(s), NOW);
+    expect(store.load().log).toEqual([]);
+    expect(store.status().damaged).toBe(true);
+    store.save({ log: log('c'), focus: [] });
+    expect(s.getItem('atlaslope.quiz.damaged')).toBe(text);
+  });
+
+  it('loading a file replaces the log rather than merging it, and undo brings the old one back', () => {
+    const s = new MemStorage();
+    const store = createStore(asStorage(s), NOW);
+    store.save({ log: log('a', 'b'), focus: [] });
+    expect(store.importFile(JSON.stringify({ version: 1, log: log('z'), focus: [] }))).toEqual({ ok: true });
+    expect(store.load().log.map((e) => e.place)).toEqual(['z']);
+    expect(store.restoreBackup()).toBe(true);
+    expect(store.load().log.map((e) => e.place)).toEqual(['a', 'b']);
+  });
 });
+

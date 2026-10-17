@@ -1,5 +1,5 @@
 // The learner's progress as React state: the record in this browser, the memories replayed from its log, today's plan.
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { browserStorage, createStore, replay, studyPlan, withSlip, type LogEntry, type QuizState, type QuizStore, type StudyPlan } from '../quiz';
 import type { Tree } from '../tree';
 
@@ -26,6 +26,9 @@ export interface QuizApi {
   hasProgress: boolean;
 }
 
+/** The learner's own day: the engine counts today's new places from local midnight, not UTC midnight. */
+export const localDay = (d: Date): { utcOffsetMinutes: number } => ({ utcOffsetMinutes: -d.getTimezoneOffset() });
+
 /** The log without the slip mark on its last answer. */
 export function withoutSlip(log: readonly LogEntry[]): LogEntry[] {
   const last = log[log.length - 1];
@@ -43,7 +46,15 @@ export function useQuiz(tree: Tree, now: () => Date): QuizApi {
     return saved.log;
   }, [store, record.focus]);
   const state = useMemo(() => replay(record.log), [record.log]);
-  const plan = useMemo(() => studyPlan(tree, state, now(), { focus: record.focus }), [tree, state, record.focus, now]);
+  // A save in another tab of this browser: read the record again so this tab doesn't work from a stale copy.
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => { if (e.key === null || e.key.startsWith('atlaslope.quiz')) setRecord(store.load()); };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, [store]);
+  // The plan is for today: recomputed when the local date changes, not only when the log does.
+  const today = now().toDateString();
+  const plan = useMemo(() => studyPlan(tree, state, now(), { focus: record.focus, ...localDay(now()) }), [tree, state, record.focus, now, today]);
   return {
     store, log: record.log, state, plan, now, persistent: store.status().persistent,
     record: (entry) => commit([...record.log, entry]),

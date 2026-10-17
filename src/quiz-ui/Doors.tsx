@@ -39,6 +39,7 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
         <div className="kicker">{t.kicker(dayName(quiz.now()))}</div>
         <h1 id="qh" ref={heading} tabIndex={-1}>{t.heading}</h1>
         {!quiz.persistent && <p className="note" role="status">{t.storageBlocked}</p>}
+        {quiz.store.status().damaged && <p className="note" role="status">{t.storageDamaged}</p>}
         {empty && <p className="note" role="status">{t.nothingToAsk}</p>}
         <section className="door" aria-labelledby="d1">
           <h2 id="d1">{d.study}</h2>
