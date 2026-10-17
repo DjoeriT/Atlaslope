@@ -83,6 +83,9 @@ session on his Mac also sees his thread messages and started a second publish ru
 - Polish slice (owner 17 Oct 11:58Z, "first going to polish"): favicon and Home Screen icon on the slope logo in today's colours
   (owner card 12:05Z "Mix"), install icons in the manifest, photos for Jerez, Manzanilla and Ribera del Guadiana (#42). Live as
   release 12 (owner "publish release 12" 12:50Z); the mastery map and ready for friends move to 13 and 14 (#15, #16). Handoff `docs/handoffs/2026-10-17-polish-icons-photos.md`.
+- Sharper map close in (#55, owner 13:04Z, card "Full fix" 13:08Z, mock `Review/mock-zoom-detail/` approved 14:32Z): next zoom of
+  imagery on 2x screens, IGN PNOA orthophoto inside Spain, OpenStreetMap place names in our fonts. Takes the next free release number
+  when published. Handoff `docs/handoffs/2026-10-17-zoom-detail.md`, tester note `Review/zoom-detail-what-to-test.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
@@ -113,6 +116,8 @@ archived context file; the ones that changed:
 - 2026-10-17 [O]: place guides are a "Terroir" section of the place page, not a separate page; text only from sources (cards 09:13Z).
 - 2026-10-17 [O]: a visual design check runs next to the UX and UI check on every new or changed screen, and built screens are compared
   with their approved mock before a release (`CLAUDE.md`).
+- 2026-10-17 [O]: close in, Spain shows IGN's PNOA photo (cut to Spain in the browser) over Esri, 2x screens fetch the next zoom, and
+  OpenStreetMap town, river and peak names are drawn in our fonts, smaller than the wine places (card "Full fix", mock approved 14:32Z).
 - 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
 
 ## 9. Where things are written down
