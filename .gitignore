@@ -24,3 +24,4 @@ Review/mock-*/assets/data.js
 Review/mock-*/assets/maplibre-gl.*
 __pycache__/
 .cache/
+Tools/share/share.html

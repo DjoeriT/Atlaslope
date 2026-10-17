@@ -1,2 +1,17 @@
+# Link-only site: search engines stay out (the page also says noindex).
+# Link-preview fetchers may read the page and the share image so pasted links show a card; they don't index it.
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: facebookexternalhit
+User-agent: meta-externalagent
+User-agent: WhatsApp
+User-agent: Slackbot-LinkExpanding
+User-agent: Discordbot
+User-agent: TelegramBot
+Allow: /$
+Allow: /index.html
+Allow: /share.png
+Disallow: /
+
 User-agent: *
 Disallow: /
