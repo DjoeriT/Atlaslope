@@ -17,7 +17,7 @@ import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
-import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, type QuizRoute, type Selection, type View } from '../url';
+import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { TopBar } from './TopBar';
 import { useTheme } from './theme';
@@ -101,8 +101,7 @@ export function App() {
 
   // Where the map looks goes into the address bar without a new history entry.
   const onView = useCallback((view: View) => {
-    const route = quizRef.current;
-    history.replaceState(history.state, '', here() + (route ? quizToHash(route, view) : selectionToHash(selRef.current, view)));
+    history.replaceState(history.state, '', here() + withView(location.hash, view));
   }, []);
 
   // In quiz mode the question in play decides what the map shows, and a tap on the map is the pick for find it.

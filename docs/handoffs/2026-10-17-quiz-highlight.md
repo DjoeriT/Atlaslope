@@ -14,3 +14,10 @@ texture cache once per batch (microtask) and repaints. Unit test `tests/unit/ter
 **Open.** Uses MapLibre internals (`map.terrain.sourceCache.freeRtt`, `map._removed`); it no-ops if they move.
 Each highlight or hover change redraws every visible relief texture (hover only fires on a change of place); cost not measured [A]. Recheck on a MapLibre upgrade.
 Not checked against real relief and photo tiles (blocked hosts); the owner's look on the live site after publishing is the check.
+
+**Publish addendum (17 Oct 20:20Z).** Owner said "publish release 17"; two publish runs on d66d247 stopped in the UI tests, each on a
+different test (39065041152: Escape from the Toro page landed on Castilla y León; 39065673755: "Set a focus" left the address at `#quiz`).
+Cause [V, code read]: since release 16 a new card or quiz screen is pushed to the address at once, but its state lands a frame later
+inside the view transition; a map move ending in that gap rewrote the address from the old state, putting the old screen back. Fix:
+`withView()` in `src/url.ts` rewrites only the view part of the current address (`onView` in `src/app/App.tsx`); unit test
+`tests/unit/url-view.test.ts`. The two specs passed locally before and after (the race did not show here in 15 runs) [V]; CI is the check.
