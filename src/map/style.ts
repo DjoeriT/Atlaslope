@@ -53,7 +53,8 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
     { id: 'land', type: 'fill', source: 'land', filter: isLand, paint: { 'fill-color': '#EFE9DC' } },
   ];
   if (imagery) {
-    const photo = { 'raster-saturation': -0.15, 'raster-contrast': 0.05 };
+    // A slower fade (default 300 ms) makes finer tiles read as the photo sharpening rather than squares popping in.
+    const photo = { 'raster-saturation': -0.15, 'raster-contrast': 0.05, 'raster-fade-duration': 600 };
     layers.push(
       { id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: vis.satellite }, paint: photo },
       // Spain's own photo over Esri; its tiles are cut to Spain, so Esri shows around it.
