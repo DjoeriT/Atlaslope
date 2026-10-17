@@ -103,4 +103,11 @@ export const strings = {
     ],
     start: 'Start exploring',
   },
+  quiz: {
+    heading: 'Study or review',
+    cardLabel: 'Quiz',
+    mapLabel: 'Map of Spain with place names hidden. Tap a place to pick it.',
+    answerTag: 'Answer',
+    pickTag: 'Your pick',
+  },
 } as const;

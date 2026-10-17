@@ -5,6 +5,7 @@ import { createMap, type MapController } from './createMap';
 import type { Focus } from './focus';
 import { DEFAULT_MENU, type MenuState } from './layers';
 import { MapMenu } from './MapMenu';
+import type { QuizView } from './quiz';
 import './map.css';
 
 const t = strings.map;
@@ -14,12 +15,14 @@ interface Props {
   focus: Focus;
   /** The camera from the address bar; the first card does not frame over it. */
   restored: View | null;
+  /** Quiz mode when set: flat, north up, names as the quiz asks. Null is Explore. */
+  quiz: QuizView | null;
   onPick(placeId: string): void;
   onView(view: View): void;
 }
 
 /** The map element, the map menu with zoom and compass buttons, and the imagery note. */
-export function MapView({ focus, restored, onPick, onView }: Props) {
+export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
   const el = useRef<HTMLDivElement>(null);
   const ctl = useRef<MapController | null>(null);
   const [menu, setMenu] = useState<MenuState>(DEFAULT_MENU);
@@ -56,12 +59,14 @@ export function MapView({ focus, restored, onPick, onView }: Props) {
     shown.current = true;
   }, [focus]);
 
+  useEffect(() => { ctl.current?.quiz(quiz); }, [quiz]);
+
   const icon = (d: string) => (
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d={d} /></svg>
   );
   return (
     <>
-      <div id="map" ref={el} role="application" aria-label={strings.mapMountLabel} />
+      <div id="map" ref={el} role="application" aria-label={quiz ? strings.quiz.mapLabel : strings.mapMountLabel} />
       <div className="bottomright">
         <MapMenu menu={menu} imageryFailed={imageryFailed} onChange={setMenu} />
         <div className="glass">
