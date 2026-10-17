@@ -2,8 +2,10 @@
 import type { Box, Collection } from './boundaries';
 
 export interface Focus {
-  /** Where to look: a study region, a place or a Rioja zone by id. Null means all of Spain. */
-  frame: { region: string } | { place: string } | { zone: string } | null;
+  /** Where to look: a study region, a place or a Rioja zone by id, or a point at a zoom (a guide's named spot). Null means all of Spain. */
+  frame: { region: string } | { place: string } | { zone: string } | { point: [number, number]; zoom: number } | null;
+  /** A labelled pin at the framed point. */
+  pin?: string;
   /** Places outside this study region are dimmed (null: nothing dimmed). */
   dimRegion: string | null;
   /** The highlighted place (a place id) or zone (a zone id). */
@@ -31,7 +33,7 @@ export function boundsOf(features: Collection['features']): Box | null {
 }
 
 /** The features a focus frames; empty when there is nothing to frame (a place with no boundary yet). */
-export function framedFeatures(frame: NonNullable<Focus['frame']>, places: Collection, zones: Collection): Collection['features'] {
+export function framedFeatures(frame: Exclude<NonNullable<Focus['frame']>, { point: unknown }>, places: Collection, zones: Collection): Collection['features'] {
   if ('region' in frame) return places.features.filter((f) => f.properties.region === frame.region);
   if ('place' in frame) return places.features.filter((f) => f.properties.id === frame.place);
   return zones.features.filter((f) => f.properties.id === frame.zone);

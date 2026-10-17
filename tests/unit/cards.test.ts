@@ -58,3 +58,17 @@ describe('framing', () => {
     expect(boundsOf([])).toBeNull();
   });
 });
+
+describe('a guide fly-there', () => {
+  const fly = (chapter: string, index: number) => ({ kind: 'place' as const, id: 'rioja', fly: { chapter, index } });
+  it('frames the place a pill names, as "Show on the map" would', () => {
+    expect(focusFor(tree, fly('climate', 0))).toEqual(focusFor(tree, { kind: 'place', id: 'rioja-alta' }));
+  });
+  it('flies to a named point with a pin and keeps the guide place selected', () => {
+    expect(focusFor(tree, fly('valley', 1))).toMatchObject({ frame: { point: [-2.62, 42.61], zoom: 10.5 }, pin: 'Sierra de Cantabria', select: 'rioja' });
+  });
+  it('drops a fly the guide does not have', () => {
+    expect(validSelection(tree, fly('valley', 9))).toEqual({ kind: 'place', id: 'rioja' });
+    expect(validSelection(tree, fly('valley', 1))).toEqual(fly('valley', 1));
+  });
+});

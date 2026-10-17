@@ -24,3 +24,13 @@ describe('the quiz route', () => {
     expect(parseQuizRoute(quizToHash({ sub: 'focus' }, view))).toEqual({ sub: 'focus' });
   });
 });
+
+describe('the test-me route', () => {
+  it('writes and reads #quiz=test&set=a,b', () => {
+    expect(quizToHash({ sub: 'test', set: ['rioja', 'rioja-alta'] })).toBe('#quiz=test&set=rioja,rioja-alta');
+    expect(parseQuizRoute('#quiz=test&set=rioja,rioja-alta')).toEqual({ sub: 'test', set: ['rioja', 'rioja-alta'] });
+  });
+  it('falls back to plain #quiz when the set is missing', () => {
+    expect(parseQuizRoute('#quiz=test')).toEqual({ sub: null });
+  });
+});

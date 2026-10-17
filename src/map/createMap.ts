@@ -154,9 +154,30 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const setState = (source: string, id: string, state: Record<string, boolean>) => map.setFeatureState({ source, id }, state);
   const FRAME_ZOOM = { region: 9, place: 10.5, zone: 10.5 };
 
+  let pin: maplibregl.Marker | null = null;
+  let pinKey = '';
+  /** The guide's named point gets a labelled pin; any other focus takes it away. */
+  function syncPin() {
+    const frame = want?.frame;
+    const key = want?.pin && frame && 'point' in frame ? `${want.pin}|${frame.point.join(',')}` : '';
+    if (key === pinKey) return;
+    pinKey = key;
+    pin?.remove();
+    pin = null;
+    if (!key || !want?.pin || !frame || !('point' in frame)) return;
+    const el = document.createElement('div');
+    el.className = 'flypin';
+    el.setAttribute('aria-hidden', 'true');
+    const label = document.createElement('span');
+    label.textContent = want.pin;
+    el.append(label, document.createElement('i'), document.createElement('b'));
+    pin = new maplibregl.Marker({ element: el, anchor: 'bottom', offset: [0, 7] }).setLngLat(frame.point).addTo(map);
+  }
+
   /** Puts the wanted focus on the map. Safe to call early: what needs boundary data waits for it. */
   function render() {
     if (!want || quizView) return;
+    syncPin();
     if (boundaries && map.getSource('dos')) {
       if (dimmedRegion !== want.dimRegion) {
         for (const f of boundaries.features) setState('dos', String(f.properties.id), { dim: want.dimRegion !== null && f.properties.region !== want.dimRegion });
@@ -185,6 +206,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (!want.frame) {
       framePending = false;
       map.fitBounds(SPAIN_BOUNDS, { ...keep, padding: padding() });
+    } else if ('point' in want.frame) {
+      framePending = false;
+      map.flyTo({ center: want.frame.point, zoom: want.frame.zoom, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: duration ? 1200 : 0 });
     } else if (boundaries && zones) {
       framePending = false;
       const box = boundsOf(framedFeatures(want.frame, boundaries, zones));
@@ -321,6 +345,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       const was = quizView;
       quizView = q;
       if (q && !was) {
+        pin?.remove();
+        pin = null;
+        pinKey = '';
         beforeQuiz = { pitch: map.getPitch(), bearing: map.getBearing() };
         map.easeTo({ pitch: 0, bearing: 0, duration: reduceMotion() ? 0 : 400 });
         // Explore's dimming and selection give way to the quiz's.
@@ -336,7 +363,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       if (!q && was) { if (ready) leaveQuiz(); return; }
       if (q) { labels?.setVisible(namesShown()); applyQuiz(); }
     },
-    remove() { labels?.remove(); map.remove(); },
+    remove() { pin?.remove(); labels?.remove(); map.remove(); },
   };
 }
 

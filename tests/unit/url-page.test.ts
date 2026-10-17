@@ -23,3 +23,17 @@ describe('the place page route', () => {
     expect(parseSelection('#page').id).toBe('spain');
   });
 });
+
+describe('the guide routes', () => {
+  it('writes and reads #place=<id>&fly=<chapter>.<pill>', () => {
+    const sel = { kind: 'place' as const, id: 'rioja', fly: { chapter: 'valley', index: 1 } };
+    expect(selectionToHash(sel)).toBe('#place=rioja&fly=valley.1');
+    expect(parseSelection('#place=rioja&fly=valley.1')).toEqual(sel);
+    expect(parseSelection('#place=rioja&fly=valley')).toEqual({ kind: 'place', id: 'rioja' });
+  });
+  it('writes and reads the chapter a page opens at', () => {
+    const sel = { kind: 'place' as const, id: 'rioja', page: true, at: 'climate' };
+    expect(selectionToHash(sel)).toBe('#place=rioja&page&at=climate');
+    expect(parseSelection('#place=rioja&page&at=climate')).toEqual(sel);
+  });
+});

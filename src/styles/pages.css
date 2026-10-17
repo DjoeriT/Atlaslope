@@ -148,3 +148,34 @@
 /* Release 9 review: each "at a glance" value links to the section with its source */
 .srcbtn{appearance:none;border:0;background:none;padding:.35rem 0;margin-left:.25rem;font:inherit;font-size:.78rem;color:var(--ink3);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .srcbtn:hover{color:var(--accent)}
+
+/* Release 10: the terroir section (mock-guides-v1/1-place-guide.html), the fly-there pills and the Test me box */
+.pg-kicker{margin:0 0 .5rem;color:var(--accent)}
+.pg-sub a{color:var(--accent);text-underline-offset:2px}
+.pg-ch{margin-top:2.2rem;max-width:40rem}
+.pg-ch:has(.pg-zguide){max-width:none}
+.pg-ch h3{font:500 1.25rem/1.3 var(--serif);margin:0 0 .6rem}
+.pg-ch h3:focus{outline:none}
+.pg-ch h3:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
+.pg-ch p{margin:0 0 .8rem;color:var(--ink2);max-width:38rem}
+.pg-flies{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .4rem}
+.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:999px;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.92rem;line-height:1.2}
+.pg .fly .icon{width:1.2rem;height:1.2rem;color:var(--accent);flex:none}
+.pg .fly small{display:block;font-size:.7rem;color:var(--ink3);letter-spacing:.04em}
+.pg .fly:hover{border-color:var(--accent)}
+.pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
+.pg-zguide > div{border:1px solid var(--line);border-radius:1rem;padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
+.pg-zguide b{font:500 1.15rem var(--serif);margin-bottom:.4rem}
+.pg-zguide p{font-size:.92rem;margin:0 0 .6rem}
+.pg-zguide p.cl{color:var(--ink3)}
+.pg-zguide .fly{margin-top:auto;align-self:flex-start}
+.pg-testme{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:1.25rem;background:var(--paper2)}
+.pg-cols main > .pg-testme{margin:0 0 2rem}
+.pg-testme b{display:block;font:500 1.25rem var(--serif)}
+.pg-testme span{color:var(--ink2);font-size:.92rem}
+.pg-testme .btn.accent{flex:none}
+.pg .btn.accent{border-color:var(--accent);color:var(--accent)}
+.pg .btn.accent:hover{background:var(--accent);color:var(--accent-ink)}
+.pg .btn.accent svg{width:1.2rem;height:1.2rem}
+@media (max-width:1100px){.pg-zguide{grid-template-columns:1fr}}
+@media (max-width:760px){.pg-testme{flex-direction:column;align-items:flex-start}}

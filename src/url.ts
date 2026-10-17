@@ -7,6 +7,10 @@ export interface Selection {
   id: string;
   /** The full page of a place or region (#place=toro&page, #region=rioja&page) instead of its card. */
   page?: boolean;
+  /** A fly-there from a guide (#place=rioja&fly=valley.1): the chapter id and the pill's number in it. */
+  fly?: { chapter: string; index: number };
+  /** The guide chapter the page opens scrolled to (#place=rioja&page&at=valley), after "Back to the guide". */
+  at?: string;
 }
 
 export interface View {
@@ -23,7 +27,9 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   const p = new URLSearchParams();
   if (sel.kind === 'place') p.set('place', sel.id);
   else if (sel.kind === 'region') p.set('region', sel.id);
+  if (sel.fly && sel.kind === 'place') p.set('fly', `${sel.fly.chapter}.${sel.fly.index}`);
   if (sel.page && sel.kind !== 'country') p.set('page', '');
+  if (sel.at && sel.page && sel.kind === 'place') p.set('at', sel.at);
   if (view) p.set('view', viewToText(view));
   // `page` is a flag, written bare rather than as page=
   const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)page=(?=&|$)/, '$1page');
@@ -36,26 +42,38 @@ export function parseSelection(hash: string): Selection {
   const place = p.get('place');
   const region = p.get('region');
   const page = p.has('page') || undefined;
-  if (place) return page ? { kind: 'place', id: place, page } : { kind: 'place', id: place };
+  if (place) {
+    const sel: Selection = { kind: 'place', id: place };
+    const fly = /^(.+)\.(\d+)$/.exec(p.get('fly') ?? '');
+    if (fly && !page) sel.fly = { chapter: fly[1], index: Number(fly[2]) };
+    if (page) sel.page = page;
+    const at = p.get('at');
+    if (page && at) sel.at = at;
+    return sel;
+  }
   if (region) return page ? { kind: 'region', id: region, page } : { kind: 'region', id: region };
   return SPAIN;
 }
 
-/** The quiz route: #quiz, with #quiz=practise, #quiz=focus and #quiz=progress-file reserved for the screens that follow. */
-export type QuizSub = 'practise' | 'focus' | 'progress-file' | null;
-export interface QuizRoute { sub: QuizSub }
-const QUIZ_SUBS = ['practise', 'focus', 'progress-file'] as const;
+/** The quiz route: #quiz, with #quiz=practise, #quiz=focus and #quiz=progress-file for the screens, and #quiz=test&set=a,b which starts a review round of 10 on those places at once. */
+export type QuizSub = 'practise' | 'focus' | 'progress-file' | 'test' | null;
+export interface QuizRoute { sub: QuizSub; /** The places of a `test` round. */ set?: string[] }
+const QUIZ_SUBS = ['practise', 'focus', 'progress-file', 'test'] as const;
 
 /** The quiz route a hash names, or null when it names Explore. An unknown sub-route means plain #quiz. */
 export function parseQuizRoute(hash: string): QuizRoute | null {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
   if (!p.has('quiz')) return null;
   const sub = p.get('quiz');
-  return { sub: QUIZ_SUBS.find((s) => s === sub) ?? null };
+  const found = QUIZ_SUBS.find((s) => s === sub) ?? null;
+  if (found !== 'test') return { sub: found };
+  const set = (p.get('set') ?? '').split(',').filter(Boolean);
+  return set.length ? { sub: 'test', set } : { sub: null };
 }
 
 export function quizToHash(route: QuizRoute, view?: View | null): string {
   const parts = [route.sub ? `quiz=${route.sub}` : 'quiz'];
+  if (route.sub === 'test' && route.set?.length) parts.push(`set=${route.set.join(',')}`);
   if (view) parts.push(`view=${viewToText(view)}`);
   return `#${parts.join('&')}`;
 }

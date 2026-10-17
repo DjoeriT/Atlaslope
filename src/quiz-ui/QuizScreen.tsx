@@ -78,6 +78,12 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
     wasHidden.current = !!hidden;
   }, [hidden]);
 
+  // #quiz=test&set=a,b (a place page's "Test me") starts a review round of 10 on those places at once; the address then reads plain #quiz.
+  const testSet = route.sub === 'test' ? route.set?.join(',') ?? '' : '';
+  useEffect(() => {
+    if (testSet) startReview(testSet.split(','), 10);
+  }, [testSet]);
+
   const started = useRef(false);
   useEffect(() => {
     if (!autoStart || started.current || route.sub) return;

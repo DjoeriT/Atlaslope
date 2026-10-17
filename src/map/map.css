@@ -14,3 +14,9 @@
 /* Quiz reveal: the answer's name in the wine colour, a wrong pick in a plain ink beside it. */
 .lbl.quiz-answer{font-weight:700;font-size:1rem;color:var(--accent,#8C2340)}
 .lbl.quiz-miss{font-weight:600;font-style:italic}
+
+/* The labelled pin of a guide's fly-there to a named point (release 10) */
+.flypin{display:flex;flex-direction:column;align-items:center;pointer-events:none}
+.flypin span{background:var(--ink);color:var(--paper);font:600 .85rem var(--sans);padding:.35rem .75rem;border-radius:999px;box-shadow:var(--shadow);white-space:nowrap}
+.flypin i{width:2px;height:1.4rem;background:var(--ink)}
+.flypin b{width:.8rem;height:.8rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,255,255,.85)}
