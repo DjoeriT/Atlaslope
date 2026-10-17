@@ -329,14 +329,6 @@
    "page": "https://commons.wikimedia.org/wiki/File:Santa_Cruz,_O_Bolo_-_vides.jpg",
    "title": "File:Santa Cruz, O Bolo - vides.jpg"
   },
-  "txakoli-alava-1": {
-   "alt": "A-3630 - Ayala, Spain - July 26, 2024 03",
-   "artist": "Giorgio Galeotti",
-   "licence": "CC BY-SA 4.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:A-3630_-_Ayala,_Spain_-_July_26,_2024_03.jpg",
-   "title": "File:A-3630 - Ayala, Spain - July 26, 2024 03.jpg"
-  },
   "txakoli-bizkaia-1": {
    "alt": "Txakoli vinyards",
    "artist": "Tim Tregenza",
@@ -354,14 +346,6 @@
    "title": "File:Port - Elantxobe, Spain - July 19, 2024 01.jpg"
   },
   "abona-1": {
-   "alt": "Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024",
-   "artist": "Tuxyso",
-   "licence": "CC BY-SA 4.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
-   "title": "File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg"
-  },
-  "abona-2": {
    "alt": "Eastern Caldera of El Teide with the Observatorio del Teide in the background, Tenerife, Spain",
    "artist": "Christoph Strässler",
    "licence": "CC BY-SA 4.0",
@@ -769,14 +753,6 @@
    "page": "https://commons.wikimedia.org/wiki/File:Nuestra_Se%C3%B1ora_de_la_Asuncion.jpg",
    "title": "File:Nuestra Señora de la Asuncion.jpg"
   },
-  "ribera-del-guadiana-1": {
-   "alt": "Mérida 2024-08-20 - Teatro Romano 03",
-   "artist": "Rafa Esteve",
-   "licence": "CC BY-SA 4.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rida_2024-08-20_-_Teatro_Romano_03.jpg",
-   "title": "File:Mérida 2024-08-20 - Teatro Romano 03.jpg"
-  },
   "vinos-de-madrid-1": {
    "alt": "P -24x15",
    "artist": "Miguel Angel Masegosa Martínez",
@@ -970,14 +946,6 @@
    "title": "File:Viñedo-viña de Batea, Terra Alta (Tarragona).jpg"
   },
   "bullas-1": {
-   "alt": "Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca.",
-   "artist": "Lorenzo Soriano",
-   "licence": "CC BY-SA 4.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Cala_Blanca_se_encuentra_en_el_entorno_natural_de_Puntas_d_Calnegre,_Lorca..jpg",
-   "title": "File:Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca..jpg"
-  },
-  "bullas-2": {
    "alt": "River canyon of Rambla de Perea in Los Baños de Mula, Río Mula, Murcia, Spain, 2025 February - 2",
    "artist": "Ximonic (Simo Räsänen)",
    "licence": "CC BY-SA 4.0",
@@ -1034,14 +1002,6 @@
    "title": "File:Iglesia Mayor de Santa María de la Oliva 001.jpg"
   },
   "calatayud-1": {
-   "alt": "RENFE Class 470 Embid de Jalón",
-   "artist": "Kabelleger / David Gubler (http://www.bahnbilder.ch)",
-   "licence": "CC BY-SA 3.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:RENFE_Class_470_Embid_de_Jal%C3%B3n.jpg",
-   "title": "File:RENFE Class 470 Embid de Jalón.jpg"
-  },
-  "calatayud-2": {
    "alt": "Castillos de Armantes",
    "artist": "Miguel Ángel García.",
    "licence": "CC BY 2.0",
@@ -1296,6 +1256,86 @@
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Wineyard_Spain_in_Spring_-_San_Roman_de_Horinja.jpg",
    "title": "File:Wineyard Spain in Spring - San Roman de Horinja.jpg"
+  },
+  "valdeorras-2": {
+   "alt": "Río Sil dende Santa María",
+   "artist": "Mayte Ríos",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Sil_dende_Santa_Mar%C3%ADa.jpg",
+   "title": "File:Río Sil dende Santa María.jpg"
+  },
+  "cava-1": {
+   "alt": "Vista des del carrer Monturiol de la Granada",
+   "artist": "Pere López Brosa",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_des_del_carrer_Monturiol_de_la_Granada_-_20260823_175921.jpg",
+   "title": "File:Vista des del carrer Monturiol de la Granada - 20260823 175921.jpg"
+  },
+  "cava-2": {
+   "alt": "34 Vinyes de Cava Reverté, a la Polla-rossa (Salomó)",
+   "artist": "Enric",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:34_Vinyes_de_Cava_Revert%C3%A9,_a_la_Polla-rossa_(Salom%C3%B3).jpg",
+   "title": "File:34 Vinyes de Cava Reverté, a la Polla-rossa (Salomó).jpg"
+  },
+  "cava-3": {
+   "alt": "Vista general del Monestir i camp de vinyes",
+   "artist": "DagafeSQV",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_general_del_Monestir_i_camp_de_vinyes.JPG",
+   "title": "File:Vista general del Monestir i camp de vinyes.JPG"
+  },
+  "catalunya-1": {
+   "alt": "Viñedos en el Alt Penedès, Torrelles de Foix",
+   "artist": "Àngela Llop",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_el_Alt_Pened%C3%A8s,_Torrelles_de_Foix.jpg",
+   "title": "File:Viñedos en el Alt Penedès, Torrelles de Foix.jpg"
+  },
+  "catalunya-2": {
+   "alt": "L'escaladei-el priorat-2011",
+   "artist": "Alberto-g-rovi",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:L%27escaladei-el_priorat-2011.JPG",
+   "title": "File:L'escaladei-el priorat-2011.JPG"
+  },
+  "catalunya-3": {
+   "alt": "Panoramica de los viñedos de montferri-2012",
+   "artist": "Alberto-g-rovi",
+   "licence": "CC BY-SA 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Panoramica_de_los_vi%C3%B1edos_de_montferri-2012.JPG",
+   "title": "File:Panoramica de los viñedos de montferri-2012.JPG"
+  },
+  "arinzano-1": {
+   "alt": "Arínzano (1)",
+   "artist": "Pompilos",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ar%C3%ADnzano_(1).jpg",
+   "title": "File:Arínzano (1).jpg"
+  },
+  "otazu-1": {
+   "alt": "Exterior-Otazu-Vinedos",
+   "artist": "Unknown authorUnknown author",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Exterior-Otazu-Vinedos.jpg",
+   "title": "File:Exterior-Otazu-Vinedos.jpg"
+  },
+  "otazu-2": {
+   "alt": "El espectáculo de las viñas tras su poda a finales de otoño",
+   "artist": "AlloopWine&amp;Pepper",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:El_espect%C3%A1culo_de_las_vi%C3%B1as_tras_su_poda_a_finales_de_oto%C3%B1o.jpg",
+   "title": "File:El espectáculo de las viñas tras su poda a finales de otoño.jpg"
   }
  }
 }
