@@ -44,7 +44,7 @@ Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/han
 ## 5. Release and deployment state
 Live: release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
 publish run 39047992444; live map check run 39048373912 failed twice on 0 name tiles because it stopped waiting before the names were
-asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct). Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
+asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct) at https://atlaslope.com/. Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
 fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
 redirects there. Release 13, sharper map close in (PR #56): tag on 4827bea. Release 12, polish (PR #53): tag on 51c5240. Release 11, QA round (PRs #49 and #51): tag on db26b9b. Release 10, place guides (PR #45): tag on f0eada5. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
 on 1f110ed, publish run 39010719099, live map check run 39010972212 passed; it also carries the logo and tab title (PR #32).
