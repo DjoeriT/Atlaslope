@@ -22,36 +22,33 @@ test('the Spain card lists ten regions in course order', async ({ page }) => {
   expect(names.slice(0, 3)).toEqual(['Green Spain', 'Castilla y León', 'Rioja']);
 });
 
-test('walk Rioja, Rioja, Rioja Alta and back by breadcrumb', async ({ page }) => {
+test('walk Spain, Rioja, Rioja Alta and back by breadcrumb (the one-place Rioja region is skipped)', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await open(page);
   const card = page.locator('.card');
   await card.getByRole('link', { name: /^Rioja/ }).click();
   await expect(card.locator('h1')).toHaveText('Rioja');
-  await expect(page).toHaveURL(/#region=rioja/);
-  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveText(/Spain\s*›\s*Rioja/);
-
-  await card.getByRole('link', { name: /^Rioja\s*DOCa/ }).click();
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
-  await expect(card.locator('h1')).toHaveText('Rioja');
-  await expect(card.getByText('DOCa').first()).toBeVisible();
+  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveText(/^Spain\s*›\s*Rioja · DOCa$/);
 
   await card.getByRole('link', { name: /^Rioja Alta/ }).click();
   await expect(page).toHaveURL(/#place=rioja-alta/);
   await expect(card.locator('h1')).toHaveText('Rioja Alta');
   const crumbs = card.getByRole('navigation', { name: 'Where this sits' });
-  await expect(crumbs).toHaveText(/Spain\s*›\s*Rioja\s*›\s*Rioja\s*›\s*Rioja Alta/);
+  await expect(crumbs).toHaveText(/^Spain\s*›\s*Rioja\s*›\s*Rioja Alta$/);
 
-  await crumbs.getByRole('link', { name: 'Rioja' }).last().click(); // the place, not the region
+  await crumbs.getByRole('link', { name: 'Rioja' }).click();
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
-  await expect(card.locator('h1')).toHaveText('Rioja');
-  await card.getByRole('navigation', { name: 'Where this sits' }).getByRole('link', { name: 'Rioja' }).click(); // the region
-  await expect(page).toHaveURL(/#region=rioja/);
   await card.getByRole('navigation', { name: 'Where this sits' }).getByRole('link', { name: 'Spain' }).click();
   await expect(card.locator('h1')).toHaveText('Spain');
   await page.goBack();
-  await expect(page).toHaveURL(/#region=rioja/);  expect(errors).toEqual([]);
+  await expect(page).toHaveURL(/#place=rioja(&|$)/);
+  // an old link to the region still works and lands on the place
+  await page.goto('./#region=rioja');
+  await expect(page.locator('.card h1')).toHaveText('Rioja');
+  await expect(page.locator('.card .zrow li')).toHaveCount(3);
+  expect(errors).toEqual([]);
 });
 
 test('the close button steps up one level and the browser back button works', async ({ page }) => {
@@ -132,8 +129,8 @@ for (const scheme of ['light', 'dark'] as const) {
 test('the keyboard follows the walk from Spain to a region to a place', async ({ page }) => {
   await open(page);
   const card = page.locator('.card');
-  await card.getByRole('link', { name: /^Rioja/ }).click();
-  await expect(card.locator('h1')).toHaveText('Rioja');
+  await card.getByRole('link', { name: /^Castilla y León/ }).click();
+  await expect(card.locator('h1')).toHaveText('Castilla y León');
   await expect(card.locator('h1')).toBeFocused(); // Spain card to region card
   await card.locator('.tiles a').first().click();
   await expect(card.locator('h1')).toBeFocused(); // region card to place card

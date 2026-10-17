@@ -14,6 +14,8 @@ export interface Tree {
   placesInRegion(regionId: string): Place[];
   /** Country › study region › place › zone, ending at the node itself. Empty for an unknown id. */
   breadcrumb(id: string, kind?: NodeKind): Crumb[];
+  /** The one place of a study region that holds only a place of its own name (Rioja), or undefined. That region is skipped in trails and navigation (owner card, 17 Oct 2026). */
+  soleSameName(regionId: string): Place | undefined;
   /** The places named in a place's alsoWithin. */
   alsoWithin(id: string): Place[];
   /** The country's name for the place's level ("place", "zone", ...). */
@@ -114,6 +116,11 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
     const r = regions.get(regionId);
     return r ? places.filter((p) => p.region === regionId && p.parent === r.country).sort(tourOrder) : [];
   };
+  const soleSameName = (regionId: string) => {
+    const r = regions.get(regionId);
+    const inside = r ? placesInRegion(regionId) : [];
+    return r && inside.length === 1 && fold(inside[0].name) === fold(r.name) ? inside[0] : undefined;
+  };
   const kindOf = (id: string, kind?: NodeKind): NodeKind | undefined =>
     kind ?? (countries.has(id) ? 'country' : byId.has(id) ? 'place' : regions.has(id) ? 'region' : undefined);
 
@@ -132,7 +139,8 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
       case 'place': {
         const p = byId.get(id);
         if (!p) return [];
-        const up = countries.has(p.parent) ? breadcrumb(p.region, 'region') : breadcrumb(p.parent, 'place');
+        const top = countries.has(p.parent);
+        const up = top && soleSameName(p.region)?.id === p.id ? breadcrumb(p.parent, 'country') : top ? breadcrumb(p.region, 'region') : breadcrumb(p.parent, 'place');
         return [...up, { level: p.level, id: p.id, name: p.name }];
       }
       default:
@@ -141,7 +149,7 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
   };
 
   const entries: Entry[] = [
-    ...[...regions.values()].map((r) => ({
+    ...[...regions.values()].filter((r) => !soleSameName(r.id)).map((r) => ({
       hit: { level: countries.get(r.country)!.levels[1], id: r.id, name: r.name }, names: [fold(r.name)], rank: 0, order: r.order,
     })),
     ...places.map((p) => ({
@@ -169,6 +177,7 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
     regionsOf,
     placesInRegion,
     breadcrumb,
+    soleSameName,
     alsoWithin: (id) => (byId.get(id)?.alsoWithin ?? []).map((o) => byId.get(o)!),
     levelName: (place) => countryOf.get(place.id)?.levels[depthOf.get(place.id)!] ?? place.level,
     search: makeSearch(entries),

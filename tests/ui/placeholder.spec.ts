@@ -18,14 +18,11 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   expect(failed).toEqual([]);
 });
 
-test('Progress is visible, disabled, and says why; Quiz is enabled', async ({ page }) => {
+// UX sweep (17 Oct 2026): a tab that does nothing is hidden until the mastery map brings Progress.
+test('the mode bar offers Explore and Quiz, and no Progress tab yet', async ({ page }) => {
   await page.goto('./?fresh=1');
-  await expect(page.getByRole('button', { name: 'Quiz', exact: true })).not.toHaveAttribute('aria-disabled', 'true');
-  for (const name of ['Progress']) {
-    const item = page.getByRole('button', { name: new RegExp(`^${name}, coming soon$`) });
-    await expect(item).toHaveAttribute('aria-disabled', 'true');
-    await expect(item).toHaveAttribute('title', 'Coming soon');
-  }
+  await expect(page.getByRole('button', { name: 'Quiz', exact: true })).toBeEnabled();
+  await expect(page.getByRole('navigation', { name: /mode/i }).getByText('Progress')).toHaveCount(0);
 });
 
 test('the theme toggle switches and is remembered', async ({ page }) => {

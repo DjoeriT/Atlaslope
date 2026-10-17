@@ -26,10 +26,10 @@ interface Props {
 /** The Quiz screen: the Study door (today's round), the Review door (Practise any mix). Mocks 20-quiz and 20b. */
 export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
-  useEffect(() => { if (document.activeElement === document.body) heading.current?.focus(); }, []);
+  useEffect(() => { if (document.activeElement === document.body) heading.current?.focus({ preventScroll: true }); }, []);
   const due = quiz.plan.due.length;
   const fresh = quiz.plan.intake;
-  const freshNames = listOf(fresh.map((id) => tree.getPlace(id)?.name ?? id));
+  const freshNames = listOf(fresh.map((id) => (tree.getPlace(id)?.name ?? id).split(' / ')[0])); // the first form of a two-language name
   const focus = quiz.focus;
   const next = nextDue(tree, quiz.state, quiz.now());
   const questions = questionCount(round);
@@ -69,9 +69,7 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
           <p>{d.reviewLede}</p>
           <a className="btn wide" href={quizToHash({ sub: 'practise' })}>{d.practise}</a>
         </section>
-        {due === 0 && (
-          <p>{next ? d.nextDue(dayName(next.day, false), next.places) : d.nothingScheduled} {d.orExplore}</p>
-        )}
+        {due === 0 && next && <p className="note">{d.nextDue(dayName(next.day, false), next.places)}</p>}
       </div>
     </section>
   );

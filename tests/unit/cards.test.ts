@@ -27,17 +27,22 @@ describe('url state', () => {
   });
   it('sends an unknown id to Spain', () => {
     expect(validSelection(tree, { kind: 'place', id: 'atlantis' })).toEqual(SPAIN);
-    expect(validSelection(tree, { kind: 'region', id: 'rioja' })).toEqual({ kind: 'region', id: 'rioja' });
+    expect(validSelection(tree, { kind: 'region', id: 'toro-x' })).toEqual(SPAIN);
+    expect(validSelection(tree, { kind: 'region', id: 'ebro' })).toEqual({ kind: 'region', id: 'ebro' });
+    // the one-place Rioja region opens the Rioja place, card or page
+    expect(validSelection(tree, { kind: 'region', id: 'rioja' })).toEqual({ kind: 'place', id: 'rioja' });
+    expect(validSelection(tree, { kind: 'region', id: 'rioja', page: true })).toEqual({ kind: 'place', id: 'rioja', page: true });
   });
 });
 
 describe('card navigation', () => {
   it('walks Spain, region, place, zone and back up', () => {
     const trail = tree.breadcrumb('rioja-alta', 'place').map((c) => selectionOf(tree, c));
-    expect(trail).toEqual([SPAIN, { kind: 'region', id: 'rioja' }, { kind: 'place', id: 'rioja' }, { kind: 'place', id: 'rioja-alta' }]);
+    expect(trail).toEqual([SPAIN, { kind: 'place', id: 'rioja' }, { kind: 'place', id: 'rioja-alta' }]);
     expect(parentOf(tree, { kind: 'place', id: 'rioja-alta' })).toEqual({ kind: 'place', id: 'rioja' });
-    expect(parentOf(tree, { kind: 'place', id: 'rioja' })).toEqual({ kind: 'region', id: 'rioja' });
-    expect(parentOf(tree, { kind: 'region', id: 'rioja' })).toEqual(SPAIN);
+    expect(parentOf(tree, { kind: 'place', id: 'rioja' })).toEqual(SPAIN);
+    expect(parentOf(tree, { kind: 'place', id: 'toro' })).toEqual({ kind: 'region', id: 'castilla-y-leon' });
+    expect(parentOf(tree, { kind: 'region', id: 'castilla-y-leon' })).toEqual(SPAIN);
   });
   it('tells the map what to show', () => {
     expect(focusFor(tree, SPAIN)).toEqual({ frame: null, dimRegion: null, select: null, showZones: false });

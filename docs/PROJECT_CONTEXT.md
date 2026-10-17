@@ -128,6 +128,9 @@ archived context file; the ones that changed:
   with their approved mock before a release (`CLAUDE.md`).
 - 2026-10-17 [O]: close in, Spain shows IGN's PNOA photo (cut to Spain in the browser) over Esri, 2x screens fetch the next zoom, and
   OpenStreetMap town, river and peak names are drawn in our fonts, smaller than the wine places (card "Full fix", mock approved 14:32Z).
+- 2026-10-17 [O]: UX sweep (cards 15:58Z): motion between cards, pages and quiz steps; the phone card is a sheet with three stops; a
+  study region holding only its namesake (Rioja) is skipped in trails and navigation. Progress tab hidden until the mastery map. Handoff
+  `docs/handoffs/2026-10-17-ux-sweep.md`.
 - 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
 
 ## 9. Where things are written down

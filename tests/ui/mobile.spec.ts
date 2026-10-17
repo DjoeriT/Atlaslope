@@ -29,7 +29,7 @@ async function topEdgeClear(page: Page) {
 }
 
 test('search results show above the open card', async ({ page }) => {
-  await open(page, '#region=rioja');
+  await open(page, '#region=castilla-y-leon');
   await page.getByRole('searchbox', { name: /Search/ }).fill('rib');
   await expect(page.locator('.results a').first()).toBeVisible();
   expect(await onTop(page, '.results a')).toBe(true);
@@ -57,10 +57,10 @@ test('the Explore tab on the Spain card stays put without a reload', async ({ pa
 });
 
 test('Back to map steps back, so the back button does not reopen the page just closed', async ({ page }) => {
-  await open(page, '#region=rioja');
+  await open(page, '#place=rioja');
   await page.locator('.card a').filter({ hasText: 'Rioja Alta' }).first().click();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
-  await page.getByText('Read the full page').click();
+  await page.getByText('Open the Rioja Alta page').click();
   await expect(page.locator('.pg')).toBeVisible();
   await page.getByText('Back to map').click();
   await expect(page.locator('.pg')).toHaveCount(0);
@@ -86,7 +86,7 @@ test.describe('on a phone', () => {
   });
 
   test('the map menu is wholly on screen and above the top bar', async ({ page }) => {
-    await open(page, '#region=rioja');
+    await open(page, '#region=castilla-y-leon');
     await page.getByRole('button', { name: 'Map layers' }).click();
     const menu = page.locator('.menu.br');
     const box = (await menu.boundingBox())!;
@@ -125,7 +125,7 @@ test.describe('on a phone held sideways', () => {
   test.use(PHONE_LANDSCAPE);
 
   test('the legend is folded and the map menu fits', async ({ page }) => {
-    await open(page, '#region=rioja');
+    await open(page, '#region=castilla-y-leon');
     await expect(page.locator('.legend-toggle')).toBeVisible();
     await page.getByRole('button', { name: 'Map layers' }).click();
     const box = (await page.locator('.menu.br').boundingBox())!;

@@ -8,13 +8,13 @@ async function open(page: Page, hash = '') {
   await expect(page.locator('h1').first()).toBeVisible();
 }
 
-test('a place card shows the cover, three glance cells and "Read the full page"', async ({ page }) => {
+test('a place card shows the cover, three glance cells and "Open the X page"', async ({ page }) => {
   await open(page, '#place=alella');
   const card = page.locator('.card');
   await expect(card.locator('.cover img')).toBeVisible();
   await expect(card.locator('.cover .credit')).toHaveAttribute('href', /commons\.wikimedia\.org/);
   await expect(card.locator('.glance > div')).toHaveCount(3);
-  await expect(card.getByRole('link', { name: 'Read the full page' })).toBeVisible();
+  await expect(card.getByRole('link', { name: /^Open the .+ page$/ })).toBeVisible();
   await expect(card.locator('.cover .nav')).toHaveCount(0); // one photo: no arrows
 });
 
@@ -35,7 +35,7 @@ test('Rioja lists its zones with thumbnails on the card', async ({ page }) => {
 
 test('the button opens the page and "Back to map" returns to the card with the same view', async ({ page }) => {
   await open(page, '#place=rioja&view=-2.4000,42.3000,9.10,0,45');
-  await page.getByRole('link', { name: 'Read the full page' }).click();
+  await page.getByRole('link', { name: /^Open the .+ page$/ }).click();
   await expect(page).toHaveURL(/#place=rioja&page&view=-2\.4000,42\.3000,9\.10,0,45/);
   await expect(page.locator('.pg h1')).toHaveText('Rioja');
   await page.getByRole('link', { name: 'Back to map' }).click();
@@ -46,7 +46,7 @@ test('the button opens the page and "Back to map" returns to the card with the s
 
 test('back and forward move between the card and the page', async ({ page }) => {
   await open(page, '#place=toro');
-  await page.getByRole('link', { name: 'Read the full page' }).click();
+  await page.getByRole('link', { name: /^Open the .+ page$/ }).click();
   await expect(page.locator('.pg')).toBeVisible();
   await page.goBack();
   await expect(page.locator('.card h1')).toHaveText('Toro');

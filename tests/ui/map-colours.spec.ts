@@ -52,11 +52,16 @@ test('Spain and region cards show photo rows, main grapes and what is due, and R
   await expect(row.locator('.due')).toHaveText(`${today} due`);
   await expect(row.locator('small')).toContainText('Tempranillo');
 
+  // Rioja is a one-place region, so its row opens the Rioja DOCa itself (owner card, 17 Oct 2026)
   await row.locator('a').click();
   await expect(card.locator('h1')).toHaveText('Rioja');
+  await expect(page).toHaveURL(/#place=rioja(&|$)/);
+  await expect(card.locator('.zrow li')).toHaveCount(3); // the three Rioja zones
+  await card.getByRole('link', { name: 'Close, back to Spain' }).click();
+  await card.locator('.tiles li', { hasText: 'Castilla y León' }).locator('a').click();
+  await expect(card.locator('h1')).toHaveText('Castilla y León');
   await expect(card.getByRole('heading', { name: 'Main grapes here' })).toBeVisible();
-  await expect(card.locator('.tiles li.sub')).toHaveCount(3); // the three Rioja zones under the DOCa
-  await card.getByRole('link', { name: 'All of Spain' }).click();
+  await card.getByRole('link', { name: 'Close, back to Spain' }).click();
 
   await card.getByRole('button', { name: `Start today's round · ${today} due` }).click();
   await expect(page).toHaveURL(/#quiz/);

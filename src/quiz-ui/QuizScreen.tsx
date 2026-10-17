@@ -1,3 +1,4 @@
+import { Sheet } from '../app/Sheet';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { QuizView } from '../map/quiz';
 import { memoryKey, reviewRound, studyRound, type Round } from '../quiz';
@@ -122,5 +123,5 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
     return <Doors tree={tree} quiz={quiz} round={today} empty={empty} onStudy={startStudy} />;
   })();
   // Out of sight, not unmounted: the question in play stays as it was while a place card is open.
-  return <div ref={shell} hidden={hidden}>{screen}</div>;
+  return <div ref={shell} hidden={hidden}><Sheet resetKey={route.sub ?? "doors"} hidden={hidden}>{screen}</Sheet></div>;
 }
