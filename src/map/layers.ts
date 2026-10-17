@@ -46,17 +46,20 @@ export function basemapPaint(sat: boolean) {
     bordersCasing: { color: sat ? '#1A1512' : '#FFFFFF', opacity: sat ? 0.45 : 0.75 },
     hillshadeExaggeration: sat ? 0.25 : 0.5,
     // A hovered place shows even where it is dimmed, so a row in a card always finds its place on the map.
-    // Over the photo the fills thin out from zoom 10 to 13, so close in the land itself shows (towns, vineyards, rivers)
-    // with the outline still drawn; on the plain atlas they stay solid.
+    // Over the photo the fills keep the Spain-wide look up to zoom 6, then thin out by zoom 9 (a region) and nearly vanish by 12,
+    // so close in the land itself shows (towns, vineyards, rivers) with the outline still drawn; on the plain atlas they stay solid.
     dosFillOpacity: sat
-      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6], 13, ['case', sel, 0.3, hover, 0.4, dim, 0.03, 0.14]]
+      ? ['interpolate', ['linear'], ['zoom'],
+        6, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6],
+        9, ['case', sel, 0.4, hover, 0.5, dim, 0.03, 0.22],
+        12, ['case', sel, 0.15, hover, 0.25, dim, 0.02, 0.06]]
       : ['case', sel, 0.65, hover, 0.85, dim, 0.06, 0.5],
     // As the fills thin close in over the photo, the outline gets stronger so the place still reads.
     dosLineOpacity: sat
-      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', hover, 1, dim, 0.2, 0.7], 12, ['case', hover, 1, dim, 0.25, 0.95]]
+      ? ['interpolate', ['linear'], ['zoom'], 6, ['case', hover, 1, dim, 0.2, 0.7], 9, ['case', hover, 1, dim, 0.25, 0.95]]
       : ['case', hover, 1, dim, 0.2, 0.7],
     dosLineWidth: sat
-      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 3, hover, 2.8, 1.6], 12, ['case', sel, 3.2, hover, 3, 2.2]]
+      ? ['interpolate', ['linear'], ['zoom'], 6, ['case', sel, 3, hover, 2.8, 1.6], 9, ['case', sel, 3.2, hover, 3, 2.2]]
       : ['case', sel, 3, hover, 2.8, 0.9],
     dosLineDash: [10, 0],
   };
