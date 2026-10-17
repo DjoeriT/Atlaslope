@@ -29,7 +29,8 @@ export function namePaint(sat: boolean) {
   };
 }
 
-const FULL_NAME = ['coalesce', ['get', 'name'], ['get', 'name_en']];
+// The Latin-script name first: our lettering has only Latin glyphs, so an Arabic name near Morocco would draw nothing.
+const FULL_NAME = ['coalesce', ['get', 'name:latin'], ['get', 'name'], ['get', 'name_en']];
 /** Bilingual names ("Labastida / Bastida") keep their first form, which is the Spanish one in OSM's Spanish data. */
 const NAME = ['let', 'n', FULL_NAME, ['let', 'i', ['index-of', ' / ', ['var', 'n']],
   ['case', ['>=', ['var', 'i'], 0], ['slice', ['var', 'n'], 0, ['var', 'i']], ['var', 'n']]]] as const;

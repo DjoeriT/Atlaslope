@@ -1,11 +1,9 @@
 name: map-preview
 # Screenshots of the map close in, on the real network, for mocks and design checks (the cloud container cannot reach the
-# tile hosts). Runs on a push to a claude/ branch that changes the map, or by hand. Commits the pictures to
-# Review/mock-zoom-detail/shots/ on the same branch: "new" from this branch, "live" from atlaslope.com for comparison.
+# tile hosts). Run by hand on a claude/ branch (Actions › map-preview › Run workflow, or `gh workflow run map-preview.yml --ref <branch>`).
+# Commits the pictures to Review/mock-zoom-detail/shots/ on that branch ("new" from the branch, "live" from atlaslope.com), so pull
+# before the next push. By hand only: on every push its commit made the thread's next push fail as non-fast-forward.
 on:
-  push:
-    branches: ['claude/**']
-    paths: ['src/map/**', 'public/glyphs/**', 'Tools/preview/**', '.github/workflows/map-preview.yml']
   workflow_dispatch:
 permissions:
   contents: write

@@ -25,6 +25,7 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
   if (screen === 'ipad' && label !== 'new') continue;
   const ctx = await browser.newContext({ viewport, deviceScaleFactor: 2 });
   // The Esri key only answers for the site's own address; the preview runs on localhost.
+  // Preview only: the Esri key is limited to atlaslope.com, so the runner's localhost requests borrow its referer.
   await ctx.route(/arcgis\.com/, (r) => r.continue({ headers: { ...r.request().headers(), referer: 'https://atlaslope.com/' } }));
   // Skip the first-run welcome card so the map shows; the Spain card stays, as a learner sees it.
   await ctx.addInitScript(() => { try { localStorage.setItem('atlaslope-first-run', 'seen'); } catch { /* none */ } });

@@ -7,7 +7,7 @@ import maskData from '../../data/spain-mask.json';
 
 export const PNOA_TILES =
   'https://www.ign.es/wmts/pnoa-ma?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=OI.OrthoimageCoverage&STYLE=default&FORMAT=image/jpeg&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}';
-export const PNOA_ATTRIBUTION = 'Spain: PNOA CC BY 4.0 scne.es';
+export const PNOA_ATTRIBUTION = 'Spain: PNOA © IGN, CC BY 4.0 scne.es';
 /** PNOA starts at this tile zoom; above Spain-wide views it adds nothing Esri lacks. */
 export const PNOA_MIN_ZOOM = 10;
 /** PNOA's 25 cm photo is about tile zoom 19. */
@@ -59,24 +59,24 @@ export interface Coverage {
   some: boolean;
   /** All of it is: Esri can skip the tile. */
   whole: boolean;
-  /** Alpha mask to cut a PNOA tile with; null when the tile is all in or all out. */
-  mask: OffscreenCanvas | null;
 }
 
+/** Only the two answers are cached; a border tile's mask (256 KB of canvas) is drawn again when its photo is cut. */
 const coverageCache = new Map<string, Coverage>();
 
-/** How much of a 256 px tile shows PNOA, and the alpha mask to cut it with. */
+/** How much of a 256 px tile shows PNOA. */
 export function tileCoverage(z: number, x: number, y: number): Coverage {
   const key = `${z}/${x}/${y}`;
   const hit = coverageCache.get(key);
   if (hit) return hit;
-  const result = measure(z, x, y);
-  if (coverageCache.size > 2000) coverageCache.clear();
-  coverageCache.set(key, result);
-  return result;
+  const { some, whole } = measure(z, x, y);
+  if (coverageCache.size > 5000) coverageCache.clear();
+  coverageCache.set(key, { some, whole });
+  return { some, whole };
 }
 
-function measure(z: number, x: number, y: number): Coverage {
+/** The tile's coverage and, for a tile partly in Spain, the alpha mask to cut its photo with. */
+function measure(z: number, x: number, y: number): Coverage & { mask: OffscreenCanvas | null } {
   const size = 256;
   const strip = SEA_STRIP_M / M_PER_UNIT;
   const near = SPAIN.filter((p) => overlaps(p.box, tileBox(z, x, y, strip)));
@@ -131,7 +131,8 @@ const fill = (template: string, z: number, x: number, y: number) =>
 
 async function fetchTile(url: string, signal: AbortSignal): Promise<ArrayBuffer> {
   const r = await fetch(url, { signal });
-  if (!r.ok) throw new Error(`${r.status} ${url.split('?')[0]}`);
+  // An error page served with 200 would otherwise be drawn as a blank tile, with Esri already skipped there.
+  if (!r.ok || !r.headers.get('content-type')?.startsWith('image/')) throw new Error(`${r.status} ${url.split('?')[0]}`);
   return r.arrayBuffer();
 }
 
@@ -144,18 +145,27 @@ let pnoaErrors = 0;
 let pnoaLoaded = 0;
 let pnoaDown = false;
 
+/** A PNOA tile that failed counts as failed this long, so Esri fills it rather than refetching PNOA and skipping again. */
+const PNOA_FAILED_MS = 60_000;
+const pnoaFailed = new Map<string, number>();
+
 /** One PNOA download per tile, shared by both protocols: Esri asks for the same tile numbers to know whether to skip. */
 const pnoaTiles = new Map<string, Promise<ArrayBuffer>>();
 function pnoaTile(z: number, x: number, y: number, health: ImageryHealth): Promise<ArrayBuffer> {
   const key = `${z}/${x}/${y}`;
+  const failedAt = pnoaFailed.get(key);
+  if (failedAt !== undefined && Date.now() - failedAt < PNOA_FAILED_MS) return Promise.reject(new Error(`PNOA ${key} failed`));
   let tile = pnoaTiles.get(key);
   if (!tile) {
+    // Not cancelled when MapLibre drops the tile: the other protocol may be waiting on the same download.
     const once = () => fetchTile(fill(PNOA_TILES, z, x, y), new AbortController().signal);
     // One retry: IGN drops the odd request, and a missing tile would leave a hole in Spain.
     tile = once().catch(once).then(
       (bytes) => { pnoaLoaded++; return bytes; },
       (e) => {
         pnoaTiles.delete(key);
+        if (pnoaFailed.size > 2000) pnoaFailed.clear();
+        pnoaFailed.set(key, Date.now());
         if (++pnoaErrors >= 3 && pnoaLoaded === 0 && !pnoaDown) { pnoaDown = true; health.onPnoaDown(); }
         throw e;
       },
@@ -173,14 +183,17 @@ function pnoaTile(z: number, x: number, y: number, health: ImageryHealth): Promi
 export function registerImagery(esriTemplate: string | null, health: ImageryHealth): void {
   maplibregl.addProtocol('pnoa', async (params) => {
     const [z, x, y] = tileXYZ(params.url);
-    const { some, whole, mask } = tileCoverage(z, x, y);
+    const { some, whole } = tileCoverage(z, x, y);
     if (!some || pnoaDown) return { data: await blankTile() };
     const bytes = await pnoaTile(z, x, y, health);
-    if (whole || !mask) return { data: bytes };
+    if (whole) return { data: bytes };
+    const { mask } = measure(z, x, y);
+    if (!mask) return { data: bytes };
     const photo = await createImageBitmap(new Blob([bytes]));
     const out = new OffscreenCanvas(256, 256);
     const ctx = out.getContext('2d') as OffscreenCanvasRenderingContext2D;
     ctx.drawImage(photo, 0, 0, 256, 256);
+    photo.close();
     ctx.globalCompositeOperation = 'destination-in';
     ctx.drawImage(mask, 0, 0);
     return { data: await (await out.convertToBlob({ type: 'image/png' })).arrayBuffer() };
