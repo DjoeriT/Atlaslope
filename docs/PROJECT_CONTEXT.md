@@ -60,7 +60,11 @@ session on his Mac also sees his thread messages and started a second publish ru
   4.1 (now release 6) came from his cards at 19:37Z. The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
 - Release 7, the quiz (17 Oct, issue #13): live 17 Oct (PR #34); mocks `Review/mock-quiz-v4/` approved
   (owner card 05:44Z); engine, store and screens in `src/quiz/` and `src/quiz-ui/`; agents 0.61 M tokens [V, spend log]. Handoff
-  `docs/handoffs/2026-10-17-release-7-quiz.md`. Issues #14 to #16 renumbered as releases 8 to 10.
+  `docs/handoffs/2026-10-17-release-7-quiz.md`. Issues #14 to #16 renumbered as releases 8 to 10, then 10 to 12 (below).
+- New look (owner's go, card 17 Oct 06:48Z): release 8 = new colours and type on every screen (#36, PR from
+  `claude/release-8-new-look-4kufin`); release 9 = place page, map card teaser, region page and the photo pass (#37). Plan
+  `Review/release-8-9-plan.md`, handoff `docs/handoffs/2026-10-17-release-8-new-look.md`. Guides, mastery map and ready for friends are now
+  releases 10, 11 and 12 (#14 to #16).
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
@@ -82,7 +86,8 @@ archived context file; the ones that changed:
 - 2026-10-17 [O]: logo is the vineyard slope (vine rows up a hill in an accent tile); favicon follows the browser theme; tab title names the place first ("Rioja · Atlaslope", home "Atlaslope · The wine atlas that quizzes you").
 - 2026-10-17 [O]: information screens get a travel look (Airbnb listing style): map card with a cover photo and "Read the full page",
   a full place page with a photo mosaic, highlights, small charts and an "at a glance" box, and a region page with photo tiles. Light is
-  white and wine, dark is gold on black. Mocks `Review/mock-travel-v1/`, rules `Review/visual-style.md`. Not built yet.
+  white and wine, dark is gold on black. Mocks `Review/mock-travel-v1/`, rules `Review/visual-style.md`. Colours and type built in
+  release 8; the pages follow in release 9 (owner card 17 Oct 06:48Z: two releases; photos "fix and fill", three per place).
 - 2026-10-17 [O]: a visual design check runs next to the UX and UI check on every new or changed screen, and built screens are compared
   with their approved mock before a release (`CLAUDE.md`).
 

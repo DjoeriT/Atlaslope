@@ -66,7 +66,7 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
   );
   return (
     <>
-      <div id="map" ref={el} role="application" aria-label={quiz ? strings.quiz.mapLabel : strings.mapMountLabel} />
+      <div id="map" ref={el} data-base={menu.satellite && !imageryFailed ? 'satellite' : 'atlas'} role="application" aria-label={quiz ? strings.quiz.mapLabel : strings.mapMountLabel} />
       <div className="bottomright">
         <MapMenu menu={menu} imageryFailed={imageryFailed} onChange={setMenu} />
         <div className="glass">

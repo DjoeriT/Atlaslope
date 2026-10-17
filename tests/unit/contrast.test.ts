@@ -25,6 +25,8 @@ const pairs: [string, string][] = [
   ['ink', 'paper'], ['ink2', 'paper'], ['ink3', 'paper'],
   ['ink', 'paper2'], ['ink2', 'paper2'], ['ink3', 'paper2'],
   ['accent', 'paper'], ['accent-ink', 'accent'],
+  ['ink', 'fill'], ['ink2', 'fill'], ['ink3', 'fill'], ['accent', 'fill'],
+  ['ok', 'paper'], ['bad', 'paper'], ['focus', 'paper'],
 ];
 
 describe('theme contrast', () => {
