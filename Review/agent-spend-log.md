@@ -46,3 +46,4 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-17 | BuilderBot, Sonnet | Release 9 card 1, place page and teaser | 250k | 188,901 tokens, 98 tool uses, 47 min | Done after one restart at the 60-turn limit; 1 quiz test timing flake reported |
 | 2026-10-17 | BuilderBot, Sonnet | Release 9 card 2, region page | 150k | 110,454 tokens, 62 tool uses, 22 min | Done; page flag added on its own base (merged with card 1 by LeadBot) |
 | 2026-10-17 | BuilderBot, Sonnet | Release 9 photo picks from the Commons fill run | 100k | 51,537 tokens, 22 tool uses, 1 min | 5 of 47 places usable; 26 still without a photo (#42) |
+| 2026-10-17 | ReviewBot, Sonnet | Release 9 design and code review (`release-9-review.md`) | 90k | 63,566 tokens, 21 tool uses, 2 min | Merge after fixes: 0 blockers, 4 should-fix (all fixed), 6 notes |
