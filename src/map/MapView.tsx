@@ -112,10 +112,17 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
   );
 }
 
-/** What the place colours mean. Swatches are drawn the way the map draws a place: a light fill with a solid edge. */
+/** What the place colours mean. Swatches are drawn the way the map draws a place: a light fill with a solid edge.
+ *  On a phone it folds into a small button so it doesn't cover the map; the list opens on a tap. */
 function Legend({ title, rows }: { title: string; rows: readonly { id: string; label: string; color: string }[] }) {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="glass legend" role="group" aria-label={title}>
+    <div className="glass legend" role="group" aria-label={title} data-open={open || undefined}>
+      <button className="legend-toggle" aria-expanded={open} onClick={() => setOpen(!open)}>
+        <span className="sw" aria-hidden="true">{rows.slice(0, 6).map((r) => <i key={r.id} style={{ ['--sw' as string]: r.color }} />)}</span>
+        {title}
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 9l6 6 6-6" /></svg>
+      </button>
       <b>{title}</b>
       <ul>{rows.map((r) => <li key={r.id}><i style={{ ['--sw' as string]: r.color }} aria-hidden="true" />{r.label}</li>)}</ul>
     </div>

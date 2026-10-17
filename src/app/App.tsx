@@ -17,7 +17,7 @@ import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
-import { parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, type QuizRoute, type Selection, type View } from '../url';
+import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { TopBar } from './TopBar';
 import { useTheme } from './theme';
@@ -41,8 +41,11 @@ export function App() {
     const cur = selRef.current;
     if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page && flyKey(to) === flyKey(cur) && to.at === cur.at) return;
     // The card and the page of one place share the camera, so the link keeps it (a fly-there moves it, so it keeps nothing).
-    const view = to.kind === cur.kind && to.id === cur.id && !to.fly ? parseView(location.hash) : null;
-    history.pushState(null, '', here() + selectionToHash(to, view));
+    const same = to.kind === cur.kind && to.id === cur.id;
+    // "Back to map" from a page opened from its own card steps back, so the phone's back gesture doesn't reopen the page just closed.
+    if (same && cur.page && !to.page && !to.fly && (history.state as { fromCard?: boolean } | null)?.fromCard) { history.back(); return; }
+    const view = same && !to.fly ? parseView(location.hash) : null;
+    history.pushState(same && to.page && !cur.page ? { fromCard: true } : null, '', here() + selectionToHash(to, view));
     setQuiz(null);
     setStay(null);
     setSel(to);
@@ -125,7 +128,7 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={openExplore} onProgressFile={() => openQuiz('progress-file')} />}
+      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setKeepQuiz(false); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
       {(quiz || keepQuiz) && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}

@@ -17,7 +17,8 @@ test('the region card opens the page and Back to map returns to the card', async
   await expect(page).toHaveURL(/#region=ebro(&view=[^&]*)?$/);
   await expect(page.locator('.rpage')).toHaveCount(0);
   await expect(page.locator('.card h1')).toHaveText('Navarra and Aragón');
-  await page.goBack();
+  // Back to map stepped back (mobile check, 17 Oct 2026), so forward reopens the page and back from the card leaves the region.
+  await page.goForward();
   await expect(page.locator('.rpage h1')).toBeVisible();
 });
 

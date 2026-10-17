@@ -87,6 +87,9 @@ session on his Mac also sees his thread messages and started a second publish ru
   imagery on 2x screens, IGN PNOA orthophoto inside Spain, OpenStreetMap place names in our fonts. Live as release 13 (owner "publish
   release 13" 14:52Z); the mastery map and ready for friends move to 14 and 15 (#15, #16). Handoff `docs/handoffs/2026-10-17-zoom-detail.md`,
   tester note `Review/release-13-what-to-test.md`.
+- Mobile check (owner 17 Oct 12:50Z, issue #57): Explore without a reload, Back to map steps back, search results above the card,
+  folding legend and a fitting map menu on phones, 16 px search (iPhone zoom), quiz steps start at the top. Goes live with the next
+  publish (release 14 if published alone, which moves the mastery map and ready for friends to 15 and 16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
