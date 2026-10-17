@@ -39,9 +39,11 @@ describe('layer list per menu state', () => {
     expect(basemapPaint(false).bordersCasing.color).toBe('#FFFFFF');
     expect(basemapPaint(true).bordersCasing.color).not.toBe(basemapPaint(true).borders);
   });
-  it('thins the place fills close in over the photo, so the land shows, but not on the atlas', () => {
+  it('thins the place fills from a region view over the photo, so the land shows, but keeps the Spain-wide look and the atlas', () => {
     const sat = JSON.stringify(basemapPaint(true).dosFillOpacity);
-    expect(sat).toMatch(/^\["interpolate",\["linear"\],\["zoom"\],10,.*,13,/);
+    expect(sat).toMatch(/^\["interpolate",\["linear"\],\["zoom"\],6,.*,9,.*,12,/);
+    // Spain-wide (zoom 6 and out) keeps the colours the owner likes: 0.6 for a place, 0.82 selected.
+    expect(sat).toContain('6,["case",["boolean",["feature-state","sel"],false],0.82');
     expect(JSON.stringify(basemapPaint(false).dosFillOpacity)).not.toContain('zoom');
   });
   it('draws boundaries stronger over imagery than on the atlas', () => {

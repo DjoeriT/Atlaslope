@@ -15,6 +15,9 @@ export const VIEWS = {
   'logrono-z12': '-2.445,42.465,12,0,0',
   'jerez-z13': '-6.14,36.69,13,0,0',
   'priorat-z13-tilt': '0.78,41.2,13,-30,60',
+  'spain-z6': '-3.7,40.2,5.8,0,0',
+  'rioja-z8': '-2.6,42.5,8,0,0',
+  'rioja-z9': '-2.6,42.5,9,0,0',
   'rioja-z10': '-2.6,42.5,10,0,0',
   'border-tui-z14': '-8.646,42.047,14,0,0',
 };
@@ -24,7 +27,6 @@ const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=sw
 for (const [screen, viewport] of Object.entries(SCREENS)) {
   if (screen === 'ipad' && label !== 'new') continue;
   const ctx = await browser.newContext({ viewport, deviceScaleFactor: 2 });
-  // The Esri key only answers for the site's own address; the preview runs on localhost.
   // Preview only: the Esri key is limited to atlaslope.com, so the runner's localhost requests borrow its referer.
   await ctx.route(/arcgis\.com/, (r) => r.continue({ headers: { ...r.request().headers(), referer: 'https://atlaslope.com/' } }));
   // Skip the first-run welcome card so the map shows; the Spain card stays, as a learner sees it.
@@ -35,7 +37,7 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
   page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') logged.add(`console: ${m.text().slice(0, 300)}`); });
   page.on('pageerror', (e) => logged.add(`page error: ${e.message.slice(0, 300)}`));
   page.on('response', (r) => { if (!r.ok() && /ign\.es|openfreemap|arcgis|terrarium/.test(r.url())) failed.push(`${r.status()} ${r.url().split('?')[0]}`); });
-  for (const [name, view] of Object.entries(VIEWS).filter(([n]) => !process.env.ONLY || n === process.env.ONLY)) {
+  for (const [name, view] of Object.entries(VIEWS).filter(([n]) => !process.env.ONLY || process.env.ONLY.split(',').includes(n))) {
     if (screen === 'ipad' && !['haro-z16', 'priorat-z13-tilt'].includes(name)) continue;
     await page.goto('about:blank');
     await page.goto(`${base}#view=${view}`, { waitUntil: 'domcontentloaded', timeout: 60_000 });
