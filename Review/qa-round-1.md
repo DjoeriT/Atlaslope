@@ -24,6 +24,14 @@ Owner's ask (09:03Z): a QA and review round once release 10 was live. Issue #48.
 4. **Hover** (owner card 10:05Z, "highlight only"): hovering or tabbing to a row in the Spain, region or place card lights its places up
    on the map; the place under the mouse lights up too. The map never moves on hover; not in the quiz.
 
+Side effects to know when testing: a phone in landscape now gets the side card instead of the bottom sheet, and in the bottom-sheet
+layout the map frames places a little lower (top room 8 rem instead of 4.6, for the two-row top bar). Records: release 9's tester note
+moved to `Review/archive/`.
+
+ReviewBot (`Review/qa-round-1-review.md`): merge after fixes, 0 blockers, 2 should fix, both fixed: a hover made before the boundaries
+loaded was lost (now replayed when they arrive), and a reset still pending when another card opened carried the start tilt over to it
+(now cleared on a new card and on entering the quiz).
+
 ## Found, not fixed (low)
 - "Missed today" (Practise) and "next due" count days in UTC while the plan counts local days: in Spain between midnight and 02:00 they
   name the wrong day. The unit tests encode UTC days, so the fix needs a test change first; proposed for a later slice.

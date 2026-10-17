@@ -132,6 +132,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       zones = withZoneIds(zoneFile, (name) => zoneIds.get(name));
       dos.setData(boundaries as never);
       (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
+      hovered = []; // new data has no feature state
+      hover(hoverWanted);
       (map.getSource('land') as maplibregl.GeoJSONSource).setData(land as never);
       (map.getSource('ocean') as maplibregl.GeoJSONSource).setData(oceanFromLand(land) as never);
       const onLand = (e: maplibregl.MapSourceDataEvent) => {
@@ -270,7 +272,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   });
 
   let hovered: Array<{ source: string; id: string }> = [];
+  let hoverWanted: readonly string[] | null = null; // replayed once the boundaries arrive, so an early hover is not lost
   function hover(ids: readonly string[] | null) {
+    hoverWanted = ids;
     const next = (quizView ? [] : ids ?? []).flatMap((id) => {
       if (boundaries?.features.some((f) => String(f.properties.id) === id)) return [{ source: 'dos', id }];
       if (zones?.features.some((f) => String(f.properties.id) === id)) return [{ source: 'zones', id }];
@@ -362,6 +366,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   function focus(f: Focus, animate: boolean, reframe: boolean) {
     want = f;
     if (reframe) {
+      resetCamera = false; // a new card keeps the learner's tilt; a reset still pending does not carry over to it
       framePending = !skipFrame;
       skipFrame = false;
       animateFrame = animate;
@@ -393,6 +398,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         pin = null;
         pinKey = '';
         hover(null);
+        resetCamera = false;
         beforeQuiz = { pitch: map.getPitch(), bearing: map.getBearing() };
         map.easeTo({ pitch: 0, bearing: 0, duration: reduceMotion() ? 0 : 400 });
         // Explore's dimming and selection give way to the quiz's.
