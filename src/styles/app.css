@@ -143,3 +143,45 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .report{margin:.6rem 0 0}
 .facts .more{font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:.6rem;padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
 .facts .more:hover{border-color:var(--accent)}
+
+/* Place card as a teaser (release 9; approved mock Review/mock-travel-v1/1-map-card.html) */
+.card .scroll{overflow:auto;flex:1;min-height:0}
+.card .scroll .body{overflow:visible;flex:none;padding-top:1.1rem}
+.card.has-cover .close{background:rgba(255,255,255,.94);color:#1D1915;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.18);right:.75rem;top:.75rem}
+.card.has-cover .close svg{color:#1D1915}
+.card.has-cover h1{padding-right:0}
+.cover{position:relative;aspect-ratio:16/11;background:var(--paper2);overflow:hidden}
+.cover img{display:block;width:100%;height:100%;object-fit:cover}
+.round{width:2.75rem;height:2.75rem;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;background:rgba(255,255,255,.94);color:#1D1915;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.round .icon{width:1.15rem;height:1.15rem}
+.cover .nav{position:absolute;top:calc(50% - 1.375rem);opacity:.85}
+.cover .nav:hover,.cover .nav:focus-visible{opacity:1}
+.cover .prev{left:.6rem}.cover .next{right:.6rem}
+.dots{position:absolute;left:50%;bottom:.75rem;transform:translateX(-50%);display:flex;gap:.35rem}
+.dots i{width:.4rem;height:.4rem;border-radius:50%;background:rgba(255,255,255,.6)}
+.dots i.on{background:#fff}
+.cover .credit{position:absolute;right:.6rem;bottom:.6rem;max-width:calc(100% - 1.2rem);font-size:.78rem;color:#fff;background:rgba(0,0,0,.62);padding:.2rem .55rem;border-radius:.4rem;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cover .credit:hover{text-decoration:underline}
+.namecover{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--paper2);padding:1rem;text-align:center}
+.namecover span{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3rem);line-height:1.05;letter-spacing:-.015em;color:var(--ink)}
+.namecover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.3rem;background:var(--rule,var(--accent))}
+.card .sub{color:var(--ink2);font-size:.92rem;margin:0}
+.card .sub + .lede{margin-top:1rem}
+.glance{display:grid;margin:1.1rem 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.glance div{padding:.8rem .2rem .8rem 0;display:flex;flex-direction:column;gap:.15rem;min-width:0}
+.glance div + div{padding-left:.8rem;border-left:1px solid var(--line)}
+.glance .icon{width:1.3rem;height:1.3rem;color:var(--ink2);margin-bottom:.2rem}
+.glance b{font:500 1rem/1.2 var(--serif)}
+.glance small{color:var(--ink3);font-size:.78rem}
+.card .scroll h2{font-size:1.15rem;margin:1.3rem 0 .6rem;padding-top:0;border-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
+.chips li{border:1px solid var(--line2);border-radius:999px;padding:.3rem .8rem;font-size:.85rem}
+.zrow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.15rem}
+.zrow a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.35rem;margin:0 -.35rem;border-radius:.8rem;min-height:3.6rem}
+.zrow a:hover{background:var(--paper2)}
+.zrow img,.zrow i{width:3.4rem;height:3.4rem;border-radius:.6rem;object-fit:cover;flex:none}
+.zrow b{font:500 1.05rem var(--serif);display:block}
+.zrow small{color:var(--ink3);font-size:.8rem}
+.zrow .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
+.card.has-cover .foot .btn{width:100%;justify-content:center}
+@media (max-width:820px){.cover{aspect-ratio:16/8}}

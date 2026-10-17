@@ -5,6 +5,8 @@ import type { NodeKind } from './tree';
 export interface Selection {
   kind: NodeKind;
   id: string;
+  /** The full page of a place or region (#place=toro&page, #region=rioja&page) instead of its card. */
+  page?: boolean;
 }
 
 export interface View {
@@ -21,8 +23,10 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   const p = new URLSearchParams();
   if (sel.kind === 'place') p.set('place', sel.id);
   else if (sel.kind === 'region') p.set('region', sel.id);
+  if (sel.page && sel.kind !== 'country') p.set('page', '');
   if (view) p.set('view', viewToText(view));
-  const text = p.toString().replace(/%2C/g, ',');
+  // `page` is a flag, written bare rather than as page=
+  const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)page=(?=&|$)/, '$1page');
   return text ? `#${text}` : '';
 }
 
@@ -31,8 +35,9 @@ export function parseSelection(hash: string): Selection {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
   const place = p.get('place');
   const region = p.get('region');
-  if (place) return { kind: 'place', id: place };
-  if (region) return { kind: 'region', id: region };
+  const page = p.has('page') || undefined;
+  if (place) return page ? { kind: 'place', id: place, page } : { kind: 'place', id: place };
+  if (region) return page ? { kind: 'region', id: region, page } : { kind: 'region', id: region };
   return SPAIN;
 }
 

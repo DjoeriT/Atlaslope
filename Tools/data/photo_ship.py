@@ -44,7 +44,7 @@ def main():
     for pid, items in picks.items():
         for n, c in enumerate(items, 1):
             key = f"{pid}-{n}"
-            if key in doc["photos"] and (OUT / f"{key}.webp").exists(): continue
+            if doc["photos"].get(key, {}).get("title") == c["title"] and (OUT / f"{key}.webp").exists(): continue  # a reorder or swap re-fetches
             try:
                 img = Image.open(io.BytesIO(fetch(rendition(c["title"])))).convert("RGB")
             except Exception as e:
@@ -56,6 +56,11 @@ def main():
             print(key, (OUT / f"{key}.webp").stat().st_size // 1024, "KB", flush=True)
             photos_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
             time.sleep(1)
+    wanted = {f"{pid}-{n}" for pid, items in picks.items() for n in range(1, len(items) + 1)}
+    for key in [k for k in doc["photos"] if k not in wanted]:  # a place that now has fewer picks
+        (OUT / f"{key}.webp").unlink(missing_ok=True)
+        del doc["photos"][key]
+    photos_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
 
 
 if __name__ == "__main__":

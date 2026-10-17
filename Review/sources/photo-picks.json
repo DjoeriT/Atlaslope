@@ -219,6 +219,26 @@
   ],
   "granada": [
    {
+    "title": "File:Montserrat - 74.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Montserrat_-_74.jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "MARIA ROSA FERRE ✿",
+    "credit": "Flickr: Vinyes al peu de Montserrat, La Granada del Penedès, Alt Penedès,",
+    "description": "This is a a photo of a natural area in Catalonia, Spain, with id:",
+    "coords": null
+   },
+   {
+    "title": "File:Montserrat - 88.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Montserrat_-_88.jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "MARIA ROSA FERRE ✿",
+    "credit": "Flickr: Montserrat i Vinyes d'hivern a La Granada del Penedès",
+    "description": "This is a a photo of a natural area in Catalonia, Spain, with id:",
+    "coords": null
+   },
+   {
     "title": "File:Viñedos, Quéntar.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos,_Qu%C3%A9ntar.jpg",
     "licence": "CC BY-SA 2.0",
@@ -229,19 +249,6 @@
     "coords": [
      -3.446048,
      37.205418
-    ]
-   },
-   {
-    "title": "File:Desde la Contraviesa - panoramio.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Desde_la_Contraviesa_-_panoramio.jpg",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "medinamd",
-    "credit": "https://web.archive.org/web/20161014161044/http://www.panoramio.com/photo/30334812",
-    "description": "Desde la Contraviesa",
-    "coords": [
-     -3.208437,
-     36.834363
     ]
    }
   ],
@@ -315,6 +322,29 @@
    }
   ],
   "sierras-de-malaga": [
+   {
+    "title": "File:Finca la Sanguijuela - F. Schatz - Ronda 03.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Finca_la_Sanguijuela_-_F._Schatz_-_Ronda_03.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Tyk",
+    "credit": "Own work",
+    "description": "Finca la Sanguijuela, Bodega F.Schatz, Ronda, Spain.",
+    "coords": null
+   },
+   {
+    "title": "File:Viñas (3543402622).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_(3543402622).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Antonio from Mijas, España",
+    "credit": "Viñas",
+    "description": "Mollina",
+    "coords": [
+     -4.647645,
+     37.131581
+    ]
+   },
    {
     "title": "File:Paseando por el Torcal de Antequera (31545451041).jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Paseando_por_el_Torcal_de_Antequera_(31545451041).jpg",
@@ -561,20 +591,18 @@
      -7.132824,
      42.305
     ]
-   }
-  ],
-  "txakoli-alava": [
+   },
    {
-    "title": "File:A-3630 - Ayala, Spain - July 26, 2024 03.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:A-3630_-_Ayala,_Spain_-_July_26,_2024_03.jpg",
+    "title": "File:Río Sil dende Santa María.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Sil_dende_Santa_Mar%C3%ADa.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Giorgio Galeotti",
+    "artist": "Mayte Ríos",
     "credit": "Own work",
-    "description": "A-3630 with Eskutxi and Aro Peñas - Ayala, Spain",
+    "description": "Vistas do Río Sil dende Santa María",
     "coords": [
-     -3.138732,
-     43.059859
+     -7.108519,
+     42.378268
     ]
    }
   ],
@@ -607,19 +635,6 @@
    }
   ],
   "abona": [
-   {
-    "title": "File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Tuxyso",
-    "credit": "Own work",
-    "description": "Panorama of surf students at Playa de las Américas, photographed from paleontological zone El Guinco - El Búnker in direction to Playa del Duque and La Caleta",
-    "coords": [
-     -16.73585346014,
-     28.059538401448
-    ]
-   },
    {
     "title": "File:Eastern Caldera of El Teide with the Observatorio del Teide in the background, Tenerife, Spain.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Eastern_Caldera_of_El_Teide_with_the_Observatorio_del_Teide_in_the_background,_Tenerife,_Spain.jpg",
@@ -692,6 +707,16 @@
   ],
   "la-gomera": [
    {
+    "title": "File:Wein auf La Gomera.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Wein_auf_La_Gomera.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "Jugrü",
+    "credit": "Own work",
+    "description": "Weinanbau auf Terrassen mit typischen Trockenmauern auf La Gomera",
+    "coords": null
+   },
+   {
     "title": "File:Barranco de las Rosas - La Gomera 01.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Barranco_de_las_Rosas_-_La_Gomera_01.jpg",
     "licence": "CC BY-SA 3.0",
@@ -707,17 +732,34 @@
   ],
   "la-palma": [
    {
-    "title": "File:Puente de Los Tilos 01.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Puente_de_Los_Tilos_01.jpg",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "H. Zell",
+    "title": "File:Vineyard near Puntagorda, La Palma.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vineyard_near_Puntagorda,_La_Palma.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "Gerda Arendt",
     "credit": "Own work",
-    "description": "Puente de Los Tilos, Barranco del Agua, San Andrés y Sauces, La Palma, Canary Islands, Spain.",
-    "coords": [
-     -17.776238888889,
-     28.79755
-    ]
+    "description": "Vineyard near Puntagorda, La Palma, towards the coast",
+    "coords": null
+   },
+   {
+    "title": "File:Geografía de Fuentecaliente, isla de la Palma, viñedo, España, 2015.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Geograf%C3%ADa_de_Fuentecaliente,_isla_de_la_Palma,_vi%C3%B1edo,_Espa%C3%B1a,_2015.JPG",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Benjamín Núñez González",
+    "credit": "Own work",
+    "description": "Geografía de Fuentecaliente, viñedo, España, 2015",
+    "coords": null
+   },
+   {
+    "title": "File:Viñedos, Geografía de Fuentecaliente, La Palma, España, 2015.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos,_Geograf%C3%ADa_de_Fuentecaliente,_La_Palma,_Espa%C3%B1a,_2015.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Benjamín Núñez González",
+    "credit": "Own work",
+    "description": "Viñedos, Geografía de Fuentecaliente.",
+    "coords": null
    }
   ],
   "lanzarote": [
@@ -817,6 +859,16 @@
    }
   ],
   "arribes": [
+   {
+    "title": "File:Viñedos en la penillanura.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_la_penillanura.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Miguel Angel Ortiz Pérez",
+    "credit": "Own work",
+    "description": "\n\n\n\n\nThis is a photograph of a Special Area of Conservation in Spain with the ID: ES4150096.\nNatura2000 entry, EEA entry\n\n",
+    "coords": null
+   },
    {
     "title": "File:20210216 125919 Vilvestre.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:20210216_125919_Vilvestre.jpg",
@@ -927,6 +979,16 @@
    }
   ],
   "cigales": [
+   {
+    "title": "File:10 Cigales Ermita Viloria viñas lou.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:10_Cigales_Ermita_Viloria_vi%C3%B1as_lou.JPG",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Lourdes Cardenal",
+    "credit": "Own work",
+    "description": "Ermita de Nuestra Señora de Viloria, a un km y medio de Cigales (Valladolid, España). Viñedos",
+    "coords": null
+   },
    {
     "title": "File:Bodegas - Dueñas (Palencia) (10368049563).jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Bodegas_-_Due%C3%B1as_(Palencia)_(10368049563).jpg",
@@ -1072,8 +1134,8 @@
   ],
   "tierra-del-vino-de-zamora": [
    {
-    "title": "File:Calle de las bodegas en Parada de Rubiales.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Calle_de_las_bodegas_en_Parada_de_Rubiales.jpg",
+    "title": "File:Bodega en Parada de Rubiales.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bodega_en_Parada_de_Rubiales.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "artist": "Hovallef",
@@ -1085,8 +1147,8 @@
     ]
    },
    {
-    "title": "File:Bodega en Parada de Rubiales.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Bodega_en_Parada_de_Rubiales.jpg",
+    "title": "File:Calle de las bodegas en Parada de Rubiales.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Calle_de_las_bodegas_en_Parada_de_Rubiales.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "artist": "Hovallef",
@@ -1127,6 +1189,16 @@
    }
   ],
   "valtiendas": [
+   {
+    "title": "File:El almendro gonzalez fischer valtiendas.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:El_almendro_gonzalez_fischer_valtiendas.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "David González de la Cámara",
+    "credit": "Own work",
+    "description": "Old vineyard in Valtiendas, Spain",
+    "coords": null
+   },
    {
     "title": "File:BodegasEnFuentidueña-rectangular.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:BodegasEnFuentidue%C3%B1a-rectangular.jpg",
@@ -1320,21 +1392,6 @@
     "coords": [
      -3.3847583333333,
      38.759623333333
-    ]
-   }
-  ],
-  "ribera-del-guadiana": [
-   {
-    "title": "File:Mérida 2024-08-20 - Teatro Romano 03.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rida_2024-08-20_-_Teatro_Romano_03.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Rafa Esteve",
-    "credit": "Own work",
-    "description": "Teatro Romano",
-    "coords": [
-     -6.338629,
-     38.915022
     ]
    }
   ],
@@ -1543,6 +1600,19 @@
   ],
   "pla-de-bages": [
    {
+    "title": "File:Vinyes a la Plana.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vinyes_a_la_Plana.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pitxiquin",
+    "credit": "Own work",
+    "description": "la Plana (masia de Santa Maria d'Oló)",
+    "coords": [
+     2.0118671,
+     41.848392
+    ]
+   },
+   {
     "title": "File:Barraca de Sant Margarida.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Barraca_de_Sant_Margarida.jpg",
     "licence": "CC BY-SA 4.0",
@@ -1634,46 +1704,37 @@
   ],
   "terra-alta": [
    {
-    "title": "File:Celler Cooperatiu de Gandesa 2.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Celler_Cooperatiu_de_Gandesa_2.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Josepgesti",
-    "credit": "Own work",
-    "description": "Celler Cooperatiu de Gandesa (Celler de Gandesa)",
-    "coords": [
-     0.43982497222222,
-     41.055084222222
-    ]
+    "title": "File:Vinya i Paisatge de Bot, Terra Alta, Tarragona. (25931104190).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vinya_i_Paisatge_de_Bot,_Terra_Alta,_Tarragona._(25931104190).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Angela Llop from Spain",
+    "credit": "Vinya i Paisatge de Bot, Terra Alta, Tarragona.",
+    "description": "Vinya i Paisatge de Bot, Terra Alta, Tarragona.",
+    "coords": null
    },
    {
-    "title": "File:Ceràmiques, Celler modernista de Pinell de Brai, Terra Alta, Tarragona.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Cer%C3%A0miques,_Celler_modernista_de_Pinell_de_Brai,_Terra_Alta,_Tarragona.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Angela Llop",
-    "credit": "https://www.flickr.com/photos/angela_llop/55310275313/",
-    "description": "Celler Cooperatiu (el Pinell de Brai)",
-    "coords": [
-     0.512679,
-     41.016603
-    ]
+    "title": "File:Viñedo-viña de Batea, Terra Alta (Tarragona).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo-vi%C3%B1a_de_Batea,_Terra_Alta_(Tarragona).jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "artist": "Juan Emilio Prades Bel",
+    "credit": "Own work",
+    "description": "Viñedo-viña de Batea, Terra Alta (Tarragona)",
+    "coords": null
+   },
+   {
+    "title": "File:Viñedo del Valle Mayor, término municipal de Batea.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_del_Valle_Mayor,_t%C3%A9rmino_municipal_de_Batea.jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "artist": "Juan Emilio Prades Bel",
+    "credit": "Own work",
+    "description": "Viñedo del Valle Mayor, término municipal de Batea",
+    "coords": null
    }
   ],
   "bullas": [
-   {
-    "title": "File:Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca..jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Cala_Blanca_se_encuentra_en_el_entorno_natural_de_Puntas_d_Calnegre,_Lorca..jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Lorenzo Soriano",
-    "credit": "Own work",
-    "description": "Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca. ",
-    "coords": [
-     -1.4613936318542,
-     37.482364014601
-    ]
-   },
    {
     "title": "File:River canyon of Rambla de Perea in Los Baños de Mula, Río Mula, Murcia, Spain, 2025 February - 2.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:River_canyon_of_Rambla_de_Perea_in_Los_Ba%C3%B1os_de_Mula,_R%C3%ADo_Mula,_Murcia,_Spain,_2025_February_-_2.jpg",
@@ -1769,19 +1830,6 @@
    }
   ],
   "calatayud": [
-   {
-    "title": "File:RENFE Class 470 Embid de Jalón.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:RENFE_Class_470_Embid_de_Jal%C3%B3n.jpg",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "Kabelleger / David Gubler (http://www.bahnbilder.ch)",
-    "credit": "Own work: http://www.bahnbilder.ch/picture/11371",
-    "description": "A RENFE class 470 is taking the old line from Zaragoza to Calatayud. Picture taken at Embid de Jalón, Spain.",
-    "coords": [
-     -1.5953166666667,
-     41.419728333333
-    ]
-   },
    {
     "title": "File:Castillos de Armantes - 53656042420.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Castillos_de_Armantes_-_53656042420.jpg",
@@ -1988,17 +2036,34 @@
   ],
   "toro": [
    {
-    "title": "File:Iglesia de San Juan Bautista en Taragabuena.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Juan_Bautista_en_Taragabuena.jpg",
+    "title": "File:Viñedo Puente Alto.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_Puente_Alto.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Fsanchezs",
+    "credit": "Own work",
+    "description": "imagen viñedo Puente Alto, Chile",
+    "coords": null
+   },
+   {
+    "title": "File:Concha Y Toro.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Concha_Y_Toro.jpg",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "artist": "MattStabile01 at English Wikipedia",
+    "credit": "Transferred from en.wikipedia to Commons by Sreejithk2000 using CommonsHelper.",
+    "description": "A view of the Maipo Valley from the Concha y Toro vineyard outside of Santiago, Chile.",
+    "coords": null
+   },
+   {
+    "title": "File:Wineyard Spain in Spring - San Roman de Horinja.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Wineyard_Spain_in_Spring_-_San_Roman_de_Horinja.jpg",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Hovallef",
+    "artist": "VIEX - Ernest Niedermann",
     "credit": "Own work",
-    "description": "Tagarabuena es una localidad del municipio de Toro, comarca Alfoz de Toro, provincia de Zamora.",
-    "coords": [
-     -5.388861,
-     41.5415
-    ]
+    "description": "Bodegas Elias Mora - seen in April 2018",
+    "coords": null
    }
   ],
   "manchuela": [
@@ -2020,6 +2085,113 @@
     "artist": "19Tarrestnom65",
     "credit": "Own work",
     "description": "Paisaje de la Manchuela Albaceteña",
+    "coords": null
+   }
+  ],
+  "cava": [
+   {
+    "title": "File:Vista des del carrer Monturiol de la Granada - 20260823 175921.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vista_des_del_carrer_Monturiol_de_la_Granada_-_20260823_175921.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pere López Brosa",
+    "credit": "Own work",
+    "description": "Vista de la Granada",
+    "coords": [
+     1.718846,
+     41.379304
+    ]
+   },
+   {
+    "title": "File:34 Vinyes de Cava Reverté, a la Polla-rossa (Salomó).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:34_Vinyes_de_Cava_Revert%C3%A9,_a_la_Polla-rossa_(Salom%C3%B3).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Enric",
+    "credit": "Own work",
+    "description": "Vinyes de Cava Reverté, a la Polla-rossa (Salomó)",
+    "coords": null
+   },
+   {
+    "title": "File:Vista general del Monestir i camp de vinyes.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Vista_general_del_Monestir_i_camp_de_vinyes.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "DagafeSQV",
+    "credit": "Own work",
+    "description": "Monestir de Santa Maria de Poblet (Vimbodí i Poblet)",
+    "coords": [
+     1.083126,
+     41.380696
+    ]
+   }
+  ],
+  "catalunya": [
+   {
+    "title": "File:Viñedos en el Alt Penedès, Torrelles de Foix.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_el_Alt_Pened%C3%A8s,_Torrelles_de_Foix.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Àngela Llop",
+    "credit": "Own work",
+    "description": "\n\n\n\n\nThis is a photograph of a Special Area of Conservation in Spain with the ID: Capçaleres del Foix.\ndel Foix Natura2000 entry, del Foix EEA entry\n\n",
+    "coords": null
+   },
+   {
+    "title": "File:L'escaladei-el priorat-2011.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:L%27escaladei-el_priorat-2011.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Alberto-g-rovi",
+    "credit": "Own work",
+    "description": "Viñedos de L'escaladei en el priorat-cataluña-españa",
+    "coords": null
+   },
+   {
+    "title": "File:Panoramica de los viñedos de montferri-2012.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Panoramica_de_los_vi%C3%B1edos_de_montferri-2012.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Alberto-g-rovi",
+    "credit": "Own work",
+    "description": "alt camp-tarragona-cataluña",
+    "coords": null
+   }
+  ],
+  "arinzano": [
+   {
+    "title": "File:Arínzano (1).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ar%C3%ADnzano_(1).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pompilos",
+    "credit": "Own work",
+    "description": "Caserío de Arínzano, con capilla a la derecha, caserón a la izquierda y bodegas al fondo",
+    "coords": [
+     -1.993377,
+     42.631159
+    ]
+   }
+  ],
+  "otazu": [
+   {
+    "title": "File:Exterior-Otazu-Vinedos.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Exterior-Otazu-Vinedos.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Unknown authorUnknown author",
+    "credit": "Estos trabajos me los cedio BODEGA OTAZU S.A.U. para poder publicarlos en la wikipedia",
+    "description": "Exterior bodega Otazu, viñedos.",
+    "coords": null
+   },
+   {
+    "title": "File:El espectáculo de las viñas tras su poda a finales de otoño.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:El_espect%C3%A1culo_de_las_vi%C3%B1as_tras_su_poda_a_finales_de_oto%C3%B1o.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "AlloopWine&amp;Pepper",
+    "credit": "Own work",
+    "description": "El espectáculo de las viñas tras su poda a finales de otoño",
     "coords": null
    }
   ]

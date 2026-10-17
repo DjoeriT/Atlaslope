@@ -97,16 +97,16 @@ test('the map frames each step and a reloaded place URL restores place and view'
 test('keyboard reaches every card control', async ({ page }) => {
   await open(page, '#place=rioja');
   const card = page.locator('.card');
-  const controls = await card.locator('a[href]').count();
+  const controls = await card.locator('a[href], button').count();
   expect(controls).toBeGreaterThan(5);
   await page.locator('.card .close').focus();
   const seen: string[] = []; // the position of each focused link among the card's links
   for (let i = 0; i < controls; i++) {
-    seen.push(String(await page.evaluate(() => [...document.querySelectorAll('.card a[href]')].indexOf(document.activeElement as Element))));
+    seen.push(String(await page.evaluate(() => [...document.querySelectorAll('.card a[href], .card button')].indexOf(document.activeElement as Element))));
     await page.keyboard.press('Tab');
   }
   expect(new Set(seen).size).toBe(controls);
-  await page.locator('.card .tree a').first().focus();
+  await page.locator('.card .zrow a').first().focus();
   await page.keyboard.press('Enter');
   await expect(card.locator('h1')).toBeFocused(); // the new card's title takes the keyboard
 });

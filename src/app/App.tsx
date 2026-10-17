@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import places from '../../data/places.json';
 import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
+import { RegionPage } from '../pages/RegionPage';
+import { PlacePage } from '../pages/PlacePage';
 import { focusFor, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
@@ -33,8 +35,11 @@ export function App() {
 
   // A new card is a new history entry; back and forward come back as popstate.
   const go = useCallback((to: Selection) => {
-    if (to.kind === selRef.current.kind && to.id === selRef.current.id) return;
-    history.pushState(null, '', here() + selectionToHash(to));
+    const cur = selRef.current;
+    if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page) return;
+    // The card and the page of one place share the camera, so the link keeps it.
+    const view = to.kind === cur.kind && to.id === cur.id ? parseView(location.hash) : null;
+    history.pushState(null, '', here() + selectionToHash(to, view));
     setQuiz(null);
     setSel(to);
   }, []);
@@ -86,7 +91,12 @@ export function App() {
   useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
   const clock = useMemo(() => makeClock(debugNow()), []);
   const progress = useQuiz(tree, clock);
-  const focus = useMemo(() => focusFor(tree, sel), [tree, sel]);
+  // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
+  const focus = useMemo(() => focusFor(tree, sel), [tree, sel.kind, sel.id]);
+  const pageOpen = !quiz && sel.kind !== 'country' && !!sel.page;
+  useEffect(() => {
+    document.getElementById('map')?.toggleAttribute('inert', pageOpen); // the page covers the map; keep the keyboard off it
+  }, [pageOpen]);
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
   const region = sel.kind === 'region' ? tree.getRegion(sel.id) : undefined;
   const titleName = place?.name ?? region?.name;
@@ -96,21 +106,21 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} />
-      <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={openExplore} onProgressFile={() => openQuiz('progress-file')} />
+      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={openExplore} onProgressFile={() => openQuiz('progress-file')} />}
       {(quiz || keepQuiz) && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
           onAutoStarted={() => setAutoStart(false)} onView={setMapView} onOpenPlace={openPlaceFromQuiz}
         />
       )}
-      {!quiz && keepQuiz && (
+      {!quiz && keepQuiz && !pageOpen && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {quiz ? null : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
+      {quiz ? null : place && sel.page ? <PlacePage tree={tree} go={go} place={place} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
         : progress.hasProgress && !todayClosed ? (
           <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
         ) : <SpainCard tree={tree} go={go} />}
-      <FirstRun />
+      {!pageOpen && <FirstRun />}
     </>
   );
 }
