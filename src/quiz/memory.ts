@@ -4,10 +4,15 @@ import type { Answer, LogEntry, MemoryName, MemoryState, PlaceMemory, QuestionTy
 export const DAY_MS = 86_400_000;
 /** Days until a memory in box 1 to 5 is due again. [O] */
 export const BOX_GAPS_DAYS = [1, 3, 7, 14, 30] as const;
-export const MIN_BOX = 1;
+/** A miss can drop a memory out of the boxes, to box 0 (ruling 17 Oct 2026). */
+export const MIN_BOX = 0;
 export const MAX_BOX = BOX_GAPS_DAYS.length;
 /** The box a memory enters on its first right answer. [A] */
 export const FIRST_BOX = 1;
+/** Days until a memory in a box (0 to 5) is due again; box 0 (after a miss out of box 1, or before any right answer) waits a day. */
+export function gapDays(box: number): number {
+  return box === 0 ? 1 : BOX_GAPS_DAYS[box - 1];
+}
 /** Shades from lowest to highest. */
 export const SHADES: readonly Shade[] = ['new', 'learning', 'known', 'solid'];
 
@@ -35,22 +40,21 @@ function shadeFrom(answers: number, streak: number, streakDays: string[]): Shade
   return streak >= 2 ? 'known' : 'learning';
 }
 
-/** One answer applied to a memory: right when due moves up a box (max 5), right before due changes no box or due date, a miss drops a box (min 1) and is due now. */
+/** One answer applied to a memory: right when due moves up a box (max 5); right before due changes no box or due date (so a miss re-asked in the same round moves nothing); a miss drops a box (min 0) and is due after that box's gap. */
 export function applyAnswer(m: MemoryState, at: string, right: boolean): MemoryState {
   const answers = m.answers + 1;
   if (!right) {
-    const box = m.box === 0 ? 0 : Math.max(MIN_BOX, m.box - 1);
-    return { box, due: at, shade: shadeFrom(answers, 0, []), answers, streak: 0, streakDays: [] };
+    const box = Math.max(MIN_BOX, m.box - 1);
+    return { box, due: addDays(at, gapDays(box)), shade: shadeFrom(answers, 0, []), answers, streak: 0, streakDays: [] };
   }
   const streak = m.streak + 1;
   const last = m.streakDays[m.streakDays.length - 1];
   const streakDays =
     m.streakDays.length < 3 && (last === undefined || time(at) - time(last) >= DAY_MS) ? [...m.streakDays, at] : m.streakDays;
   const shade = shadeFrom(answers, streak, streakDays);
-  if (m.box === 0) return { box: FIRST_BOX, due: addDays(at, BOX_GAPS_DAYS[FIRST_BOX - 1]), shade, answers, streak, streakDays };
   if (time(at) < time(m.due)) return { ...m, shade, answers, streak, streakDays };
-  const box = Math.min(MAX_BOX, m.box + 1);
-  return { box, due: addDays(at, BOX_GAPS_DAYS[box - 1]), shade, answers, streak, streakDays };
+  const box = m.box === 0 ? FIRST_BOX : Math.min(MAX_BOX, m.box + 1);
+  return { box, due: addDays(at, gapDays(box)), shade, answers, streak, streakDays };
 }
 
 /** Replays the log, oldest first, into every seen place's memories. The log is the only record; the same log always gives the same state. */
@@ -70,10 +74,11 @@ export function replay(log: readonly LogEntry[]): QuizState {
 const rank = (s: Shade) => SHADES.indexOf(s);
 const isKnown = (s: Shade) => rank(s) >= rank('known');
 
-/** A place's shade: the lower of its two memories, so a place is known only when both are. New when never seen. [A: lower of the two] */
+/** A place's shade follows `where`, capped by `what`: new while `where` is new, known only when both are known, solid only when both are solid, otherwise learning (ruling 17 Oct 2026). */
 export function placeShade(p: PlaceMemory | undefined): Shade {
-  if (!p) return 'new';
-  return rank(p.where.shade) <= rank(p.what.shade) ? p.where.shade : p.what.shade;
+  if (!p || p.where.shade === 'new') return 'new';
+  if (p.where.shade === 'solid' && p.what.shade === 'solid') return 'solid';
+  return isKnown(p.where.shade) && isKnown(p.what.shade) ? 'known' : 'learning';
 }
 
 /** Whether both of a place's memories are known or solid. */

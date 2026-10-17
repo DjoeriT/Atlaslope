@@ -32,24 +32,34 @@ describe('boxes', () => {
     expect(m.due).toBe(at(1));
   });
 
-  it('drops a box on a miss and makes the memory due now', () => {
+  it('drops a box on a miss, due after that box\'s gap', () => {
     const m = mem([answer(0, true), answer(1, true), answer(2, false)]);
     expect(m.box).toBe(1);
-    expect(m.due).toBe(at(2));
+    expect(m.due).toBe(at(3));
+    const out = mem([answer(0, true), answer(1, false)]);
+    expect([out.box, out.due]).toEqual([0, at(2)]);
   });
 
-  it('never goes above box 5 or below box 1', () => {
+  it('moves nothing when a miss is re-asked and answered right in the same round', () => {
+    const missed = [answer(0, true), answer(1, true), answer(5, false)];
+    const reasked = mem([...missed, answer(5.01, true)]);
+    expect([reasked.box, reasked.due]).toEqual([mem(missed).box, mem(missed).due]);
+    expect(mem([...missed, answer(6, true)]).box).toBe(2);
+  });
+
+  it('never goes above box 5 or below box 0', () => {
     const log: Answer[] = [answer(0, true)];
     let day = 0;
     for (const gap of [1, 3, 7, 14, 30, 30]) log.push(answer((day += gap), true));
     expect(mem(log).box).toBe(5);
     expect(mem(log).due).toBe(at(day + 30));
-    expect(mem([answer(0, true), answer(1, false), answer(1.1, false)]).box).toBe(1);
+    expect(mem([answer(0, true), answer(1, false), answer(2, false)]).box).toBe(0);
   });
 
   it('keeps a memory out of the boxes until its first right answer', () => {
     expect(mem([answer(0, false)]).box).toBe(0);
-    expect(mem([answer(0, false), answer(0.1, true)]).box).toBe(1);
+    expect(mem([answer(0, false), answer(0.1, true)]).box).toBe(0);
+    expect(mem([answer(0, false), answer(1, true)]).box).toBe(1);
   });
 });
 
@@ -78,10 +88,15 @@ describe('shades', () => {
     expect(mem([answer(0, true), answer(1, true), answer(2, true), answer(5, false), answer(5.1, true), answer(5.2, true)]).shade).toBe('known');
   });
 
-  it('gives a place the lower shade of its two memories: known only when both are', () => {
+  it('gives a place the shade of where, capped by what: known only when both are, solid only when both are', () => {
     const where = [answer(0, true), answer(1, true), answer(2, true)];
+    const shade = (log: LogEntry[]) => placeShade(replay(log).places.toro);
     expect(placeShade(undefined)).toBe('new');
-    expect(placeShade(replay(where).places.toro)).toBe('new');
+    expect(shade([{ kind: 'intro', place: 'toro', at: at(0) }])).toBe('new');
+    expect(shade([answer(0, true, 'what')])).toBe('new');
+    expect(shade([answer(0, false)])).toBe('learning');
+    expect(shade(where)).toBe('learning');
+    expect(shade([...where, answer(2, true, 'what'), answer(3, true, 'what'), answer(4, true, 'what')])).toBe('solid');
     expect(placeShade(replay([...where, answer(2, true, 'what')]).places.toro)).toBe('learning');
     expect(placeShade(replay([...where, answer(2, true, 'what'), answer(3, true, 'what')]).places.toro)).toBe('known');
     expect(placeShade(replay([answer(0, true), answer(0.1, false), answer(0, true, 'what'), answer(1, true, 'what')]).places.toro)).toBe('learning');
