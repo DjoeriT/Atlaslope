@@ -42,9 +42,9 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 13, sharper map close in (PR #56: IGN PNOA photo in Spain, next zoom of imagery on 2x screens, OpenStreetMap place
-names in our fonts; tag `release-13` on 4827bea, publish run 39042630695, live map check run 39043016379 passed, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
-redirects there. Release 12, polish (PR #53): tag on 51c5240. Release 11, QA round (PRs #49 and #51): tag on db26b9b. Release 10, place guides (PR #45): tag on f0eada5. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
+Live: release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
+fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
+redirects there. Release 13, sharper map close in (PR #56): tag on 4827bea. Release 12, polish (PR #53): tag on 51c5240. Release 11, QA round (PRs #49 and #51): tag on db26b9b. Release 10, place guides (PR #45): tag on f0eada5. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
 on 1f110ed, publish run 39010719099, live map check run 39010972212 passed; it also carries the logo and tab title (PR #32).
 Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. Release 4: tag on b5c773b.
 Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
@@ -88,8 +88,8 @@ session on his Mac also sees his thread messages and started a second publish ru
   release 13" 14:52Z); the mastery map and ready for friends move to 14 and 15 (#15, #16). Handoff `docs/handoffs/2026-10-17-zoom-detail.md`,
   tester note `Review/release-13-what-to-test.md`.
 - Mobile check (owner 17 Oct 12:50Z, issue #57): Explore without a reload, Back to map steps back, search results above the card,
-  folding legend and a fitting map menu on phones, 16 px search (iPhone zoom), quiz steps start at the top. Goes live with the next
-  publish (release 14 if published alone, which moves the mastery map and ready for friends to 15 and 16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
+  folding legend and a fitting map menu on phones, 16 px search (iPhone zoom), quiz steps start at the top. Live as
+  release 14 (owner "publish release 14" 15:14Z); the mastery map and ready for friends move to 15 and 16 (#15, #16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
