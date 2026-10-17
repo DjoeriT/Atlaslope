@@ -39,6 +39,10 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Merges a slice's pull request only when CI and `Tools/check.sh ui` are green and ReviewBot has reported. The owner's go on the plan is
   the OK; anything off-plan is asked. Builders work in local worktrees and never push; the thread pushes its own `claude/...` branch.
   Documentation-only changes skip ReviewBot but still go through a pull request.
+- **Small slices run lean** (owner card "Lean for small", 17 Oct 2026, after "why do all these threads take so long"): a fix or UI tweak
+  with no new screen and no new data or content skips the separate ReviewBot design run (LeadBot does the check itself), shows the owner
+  a rough first look early, carries its records in the same PR, runs ReviewBot code review alongside CI rather than after it, and runs only
+  the targeted tests locally while CI runs the full suite. New screens, redesigns and big releases keep the full process.
 - Treats every agent report as a lead: re-runs a number before relying on it.
 - A worktree may lack secrets and dependencies: builders run what they can; after the merge LeadBot runs the checks on `main` and says which ran.
 - After a merge: `git worktree remove` the worktree and `git branch -d` the branch.
