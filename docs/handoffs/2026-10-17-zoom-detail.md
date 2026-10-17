@@ -34,4 +34,6 @@ colour hides the landscape. Over the photo the place fills now keep the Spain-wi
 (a region) and nearly vanish by 12; outlines firm up from 6 to 9 instead of 10 to 12 (`src/map/layers.ts`). Plain atlas unchanged.
 Before/after shots (Spain at 6, Rioja at 9): `Review/mock-zoom-detail/shots/` and project files `atlaslope/zoom-detail/fade-*.jpg`;
 owner card "Ship it" 15:57Z. `map-preview` now takes a list of views (`only` input). The quiz frames places at zoom 8.5 at most, where
-fills are about 0.3 with a firm outline [A: not checked on a real quiz round over the photo].
+fills are about 0.3 with a firm outline [A: not checked on a real quiz round over the photo]. Live as release 15 (tag on f451d41).
+The live map check stopped waiting before the names were asked for (they load after the map's `load`) and saw 0 name tiles: release 14
+passed on its retry, release 15 failed twice; it now waits for a name tile (run 39048612822: 9 loaded).
