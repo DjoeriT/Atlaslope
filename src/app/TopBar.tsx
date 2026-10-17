@@ -12,9 +12,12 @@ interface Props {
   onToggleTheme: () => void;
   tree: Tree;
   onOpen: (to: Selection) => void;
+  quizOpen: boolean;
+  onQuiz: () => void;
+  onExplore: () => void;
 }
 
-export function TopBar({ theme, onToggleTheme, tree, onOpen }: Props) {
+export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, onExplore }: Props) {
   const [open, setOpen] = useState(false);
   const brandRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -49,9 +52,9 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen }: Props) {
       </div>
       <div className="topright">
         <nav className="seg glass" aria-label={t.modeNav}>
-          <a href="./" aria-current="page">{t.explore}</a>
-          {/* Visible but not yet usable; they arrive in releases 5 and 6. */}
-          <button aria-disabled="true" title={t.comingSoon} aria-label={`${t.quiz}, ${t.comingSoon.toLowerCase()}`}>{t.quiz}</button>
+          <a href="./" aria-current={quizOpen ? undefined : 'page'} onClick={(e) => { if (quizOpen) { e.preventDefault(); onExplore(); } }}>{t.explore}</a>
+          <button aria-current={quizOpen ? 'page' : undefined} onClick={onQuiz}>{t.quiz}</button>
+          {/* Visible but not yet usable; it arrives in a later release. */}
           <button aria-disabled="true" title={t.comingSoon} aria-label={`${t.progress}, ${t.comingSoon.toLowerCase()}`}>{t.progress}</button>
         </nav>
       </div>
