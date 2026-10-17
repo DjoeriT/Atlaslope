@@ -14,6 +14,7 @@ The quiz (planned as release 5). Quiz in the top bar now works; Progress (the ma
 6. **Practise any mix.** Tick whole regions or single places, 10 or 20 questions. A miss here counts; a right answer on a place that isn't due doesn't move it up.
 7. **Home.** Once you have progress, the opening screen shows today's card: how many are due and today's new places.
 8. **Your progress file.** Atlaslope menu › "Save or load progress": save a copy, then load it back; Undo restores what you had. On iPad, add Atlaslope to the Home Screen before you start (Safari can clear a site's storage after a week away).
+9. **New logo and tab title.** The browser tab shows the vineyard-slope icon and the place first ("Rioja · Atlaslope"); home reads "Atlaslope · The wine atlas that quizzes you".
 
 ## For you
 Commits: one PR from `claude/release-7-quiz-zwvn6k`. Checks: the PR's CI run; the publish workflow re-runs them. Approved mocks:
