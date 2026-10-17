@@ -3,9 +3,11 @@ export interface MenuState {
   satellite: boolean;
   relief: boolean;
   boundaries: boolean;
+  /** What the places' colours mean: climate (the default) or study region. */
+  colourBy: 'climate' | 'region';
 }
 
-export const DEFAULT_MENU: MenuState = { satellite: true, relief: true, boundaries: true };
+export const DEFAULT_MENU: MenuState = { satellite: true, relief: true, boundaries: true, colourBy: 'climate' };
 
 type Visibility = 'visible' | 'none';
 
@@ -43,10 +45,10 @@ export function basemapPaint(sat: boolean) {
     bordersCasing: { color: sat ? '#1A1512' : '#FFFFFF', opacity: sat ? 0.45 : 0.75 },
     hillshadeExaggeration: sat ? 0.25 : 0.5,
     // A hovered place shows even where it is dimmed, so a row in a card always finds its place on the map.
-    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, hover, sat ? 0.9 : 0.85, dim, 0.06, sat ? 0.62 : 0.45],
-    dosLineOpacity: ['case', hover, 1, dim, 0.25, 1],
-    dosLineWidth: ['case', sel, 3.2, hover, 2.8, sat ? 2.2 : 1.2],
-    dosLineDash: sat ? [10, 0] : [2, 1.5],
+    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, hover, 0.85, dim, 0.06, sat ? 0.6 : 0.5],
+    dosLineOpacity: ['case', hover, 1, dim, 0.2, 0.7],
+    dosLineWidth: ['case', sel, 3, hover, 2.8, sat ? 1.6 : 0.9],
+    dosLineDash: [10, 0],
   };
 }
 

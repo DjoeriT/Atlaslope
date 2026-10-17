@@ -6,7 +6,7 @@ import { NO_REGION_COLOR, REGION_COLORS, regionColor } from '../../src/map/regio
 import { buildStyle } from '../../src/map/style';
 
 const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
-const on = { satellite: true, relief: true, boundaries: true };
+const on = { satellite: true, relief: true, boundaries: true, colourBy: 'climate' } as const;
 
 describe('layer list per menu state', () => {
   it('shows everything with imagery on', () => {

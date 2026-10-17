@@ -1,6 +1,7 @@
 // Joins the boundary files to the place list, so every polygon carries its place id, kind, study region and colour.
 import { applyOverrides, type Overrides } from '../dops';
 import { regionColor } from './regionColors';
+import { climateColor } from './climate';
 
 interface Geo { type: string; coordinates: unknown }
 interface Feature { type: 'Feature'; properties: Record<string, unknown>; geometry: Geo }
@@ -27,7 +28,7 @@ export function buildBoundaries(places: PlaceRow[], dops: Collection, overrides:
 function shape(p: PlaceRow, geometry: Geo): Feature {
   return {
     type: 'Feature',
-    properties: { id: p.id, name: p.name, kind: p.kind, region: p.region, color: regionColor(p.region), span: spanOf(geometry) },
+    properties: { id: p.id, name: p.name, kind: p.kind, region: p.region, color: regionColor(p.region), climate: climateColor(p.id), span: spanOf(geometry) },
     geometry,
   };
 }

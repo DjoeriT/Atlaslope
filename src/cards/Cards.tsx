@@ -1,4 +1,5 @@
 import { measuresOf, photosOf, sheetOf } from '../facts';
+import { Cover as CoverPhoto } from './Cover';
 import { glanceCells } from '../pages/helpers';
 import { hoverProps } from '../map/hover';
 import { regionColor } from '../map/regionColors';
@@ -18,47 +19,96 @@ const tp = strings.place;
 interface Props {
   tree: Tree;
   go: Go;
+  /** Memories due for review today, per place (the only progress the scope shows besides the mastery map); counted as Today counts them. */
+  due?: ReadonlyMap<string, number>;
+  /** Opens the quiz on today's review. */
+  onReview?: () => void;
 }
 
-interface RowProps {
+/** The main grapes most often named first by a region's fact sheets, most common first. */
+export function mainGrapes(placeIds: readonly string[], n = 3): string[] {
+  const count = new Map<string, number>();
+  for (const id of placeIds) {
+    const g = sheetOf(id)?.grapes.main?.[0];
+    if (g) count.set(g.local, (count.get(g.local) ?? 0) + 1);
+  }
+  return [...count].sort((a, b) => b[1] - a[1]).slice(0, n).map(([name]) => name);
+}
+
+const firstPhoto = (ids: readonly string[]) => ids.map((id) => photosOf(id)[0]).find(Boolean);
+
+/** Due reviews over some places: a place can have two memories due (where it is, a fact about it). */
+export const dueOf = (due: ReadonlyMap<string, number> | undefined, ids: readonly string[]) => ids.reduce((n, id) => n + (due?.get(id) ?? 0), 0);
+
+/** A region's places and their zones: what its due count covers. */
+const withZones = (tree: Tree, regionId: string) => tree.placesInRegion(regionId).flatMap((p) => [p.id, ...tree.children(p.id, 'place').map((z) => z.id)]);
+
+interface TileRowProps {
   to: Selection;
   go: Go;
   name: string;
   detail: string;
-  color: string;
-  /** The places this row lights up on the map while hovered or focused. */
+  photoIds: readonly string[];
   places: () => readonly string[];
+  due: number;
+  sub?: boolean;
 }
 
-function Row({ to, go, name, detail, color, places }: RowProps) {
+/** A row with a photo: the region or place, a short line, and how many reviews of its places are due today. */
+function TileRow({ to, go, name, detail, photoIds, places, due, sub }: TileRowProps) {
+  const photo = firstPhoto(photoIds);
   return (
-    <li {...hoverProps(places)}>
-      <i style={{ background: color }} aria-hidden="true" />
-      <Link to={to} go={go}><b>{name}</b><small>{detail}</small></Link>
-      <span className="go" aria-hidden="true">›</span>
+    <li className={sub ? 'sub' : undefined} {...hoverProps(places)}>
+      <Link to={to} go={go}>
+        {photo ? <img src={photo.src} alt="" loading="lazy" /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}
+        <span className="txt"><b>{name}</b><small>{detail}</small></span>
+        {due > 0 && <span className="due">{t.dueCount(due)}</span>}
+        <span className="go" aria-hidden="true">›</span>
+      </Link>
     </li>
   );
 }
 
-export function SpainCard({ tree, go }: Props) {
+export function SpainCard({ tree, go, due, onReview }: Props) {
   const country = tree.countries[0];
+  const regions = tree.regionsOf(country.id);
+  const all = regions.flatMap((r) => tree.placesInRegion(r.id));
+  const covers = ['rioja', 'rias-baixas', 'jerez'].map((id) => photosOf(id)[0]).filter(Boolean);
+  const dueAll = dueOf(due, regions.flatMap((r) => withZones(tree, r.id)));
   return (
-    <CardShell tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}>
-      <p className="lede">{t.spainLede}</p>
-      <ul className="tree">
-        {tree.regionsOf(country.id).map((r) => (
-          <Row key={r.id} to={{ kind: 'region', id: r.id }} go={go} name={r.name} detail={t.placeCount(tree.placesInRegion(r.id).length)} color={regionColor(r.id)} places={() => tree.placesInRegion(r.id).map((p) => p.id)} />
-        ))}
+    <CardShell
+      tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
+      cover={<div className="cover-short"><CoverPhoto name={country.name} color="#8C2340" photos={covers} /></div>}
+    >
+      <p className="lede">{t.spainLedeRich(all.length, regions.length)} <span className="hoverhint">{t.hoverRegion}</span></p>
+      {dueAll > 0 && onReview && <button type="button" className="btn duebar" onClick={onReview}>{t.reviewDue(dueAll)}</button>}
+      <h2>{t.regions}</h2>
+      <ul className="tiles">
+        {regions.map((r) => {
+          const ids = tree.placesInRegion(r.id).map((p) => p.id);
+          const grapes = mainGrapes(ids);
+          return (
+            <TileRow
+              key={r.id} to={{ kind: 'region', id: r.id }} go={go} name={r.name} photoIds={ids} places={() => ids}
+              detail={[t.placeCount(ids.length), grapes.join(', ')].filter(Boolean).join(' · ')}
+              due={dueOf(due, withZones(tree, r.id))}
+            />
+          );
+        })}
       </ul>
     </CardShell>
   );
 }
 
-export function RegionCard({ tree, go, region }: Props & { region: Region }) {
+export function RegionCard({ tree, go, region, due }: Props & { region: Region }) {
   const places = tree.placesInRegion(region.id);
+  const ids = places.map((p) => p.id);
+  const grapes = mainGrapes(ids, 4);
+  const cover = places.flatMap((p) => photosOf(p.id)).slice(0, 4);
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name}
+      cover={<div className="cover-short"><CoverPhoto name={region.name} color="#8C2340" photos={cover} /></div>}
       foot={(
         <>
           <Link className="btn primary" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.seeRegion}</Link>
@@ -66,9 +116,22 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
         </>
       )}
     >
-      <p className="lede">{t.regionLede(places.length)}</p>
-      <ul className="tree">
-        {places.map((p) => <Row key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} detail={p.kind} color={regionColor(region.id)} places={() => [p.id]} />)}
+      <p className="lede">{t.regionLedeRich(places.length)} <span className="hoverhint">{t.hoverPlace}</span></p>
+      {grapes.length > 0 && (
+        <>
+          <h2>{t.mainGrapesHere}</h2>
+          <ul className="chips plain">{grapes.map((g) => <li key={g}>{g}</li>)}</ul>
+        </>
+      )}
+      <h2>{t.placesHeading}</h2>
+      <ul className="tiles">
+        {places.flatMap((p) => {
+          const zones = tree.children(p.id, 'place') as Place[];
+          return [
+            <TileRow key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} detail={p.kind} photoIds={[p.id]} places={() => [p.id]} due={dueOf(due, [p.id])} />,
+            ...zones.map((z) => <TileRow key={z.id} sub to={{ kind: 'place', id: z.id }} go={go} name={z.name} detail={t.zoneLevel} photoIds={[z.id]} places={() => [z.id]} due={dueOf(due, [z.id])} />),
+          ];
+        })}
       </ul>
     </CardShell>
   );

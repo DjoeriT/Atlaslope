@@ -107,6 +107,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     map.setPaintProperty('dos-fill', 'fill-opacity', p.dosFillOpacity as never);
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
+    const colour = ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', m.colourBy === 'region' ? 'color' : 'climate']];
+    map.setPaintProperty('dos-fill', 'fill-color', colour as never);
+    map.setPaintProperty('dos-line', 'line-color', colour as never);
     if (tiles) map.setTerrain(m.relief ? TERRAIN : null);
     labels?.setVisible(namesShown());
     render();
