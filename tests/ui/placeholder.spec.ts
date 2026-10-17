@@ -9,6 +9,8 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   await page.goto('./?fresh=1');
   await expect(page).toHaveTitle('AtlaSlope · The wine atlas that quizzes you');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.png');
+  await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
   await expect(page.getByRole('button', { name: /^AtlaSlope/ })).toBeVisible();
   await expect(page.getByRole('searchbox', { name: /Search/ })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Explore' })).toHaveAttribute('aria-current', 'page');
