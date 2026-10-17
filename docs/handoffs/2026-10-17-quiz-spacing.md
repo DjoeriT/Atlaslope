@@ -24,7 +24,7 @@ Thread "Quiz round spacing", started from the owner's point that a Study round s
 - Not checked: whether the climate question's class names match what the exams use.
 
 ## Where things are
-PR from `claude/spaced-quiz-qybrxt`; tester note `Review/quiz-spacing-what-to-test.md`.
+PR from `claude/spaced-quiz-qybrxt`; tester note merged into `Review/release-17-what-to-test.md` (original in `Review/archive/quiz-spacing-what-to-test.md`).
 
 ## Review
 ReviewBot code review `Review/quiz-spacing-code-review.md`: the must-fix (a short last batch of new places in a Review round was asked

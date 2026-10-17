@@ -78,6 +78,14 @@ export function quizToHash(route: QuizRoute, view?: View | null): string {
   return `#${parts.join('&')}`;
 }
 
+/** The same address with a new camera view. Built from the address itself, not from app state: a new card or quiz screen is in
+ *  the address before its state lands (the motion runs the change a frame later), and rewriting from state put the old screen
+ *  back over it (release 17 publish runs: "#quiz=focus" became "#quiz", Escape from a page went back to the region). */
+export function withView(hash: string, view: View): string {
+  const route = parseQuizRoute(hash);
+  return route ? quizToHash(route, view) : selectionToHash(parseSelection(hash), view);
+}
+
 export function viewToText(v: View): string {
   return [v.lng.toFixed(4), v.lat.toFixed(4), v.zoom.toFixed(2), v.bearing.toFixed(0), v.pitch.toFixed(0)].join(',');
 }

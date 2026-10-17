@@ -101,7 +101,7 @@ session on his Mac also sees his thread messages and started a second publish ru
   Handoff `docs/handoffs/2026-10-17-ux-sweep.md`, tester note `Review/archive/release-16-what-to-test.md`, code review `Review/ux-sweep-1-code-review.md`.
 - Quiz highlight fix (owner report 17 Oct 18:02Z, #66): with 3D relief on, highlights were cut off at tile edges and old ones stayed;
   feature state changes now clear the relief's texture cache. Takes release 17; the mastery map and ready for friends move to 18 and 19 (#15, #16).
-  Handoff `docs/handoffs/2026-10-17-quiz-highlight.md`, tester note `Review/release-17-what-to-test.md`.
+  Handoff `docs/handoffs/2026-10-17-quiz-highlight.md`, tester note `Review/release-17-what-to-test.md` (also covers quiz spacing, PR #69).
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
