@@ -56,7 +56,9 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (`Tools/check.sh ui` first, then
   screenshots only for what tests cannot see: layout, large text, dark mode); **security** (secrets, what ships in the built site, third-party scripts);
   **design** (a mock of a new screen or a redesign, before the owner sees it: the UX/UI check with fresh eyes; each finding names the
-  checklist point, the screen state and a proposed fix; never edits the mock or decides wording; LeadBot fixes the findings).
+  checklist point, the screen state and a proposed fix; never edits the mock or decides wording; LeadBot fixes the findings.
+  It also runs the visual check against `Review/visual-style.md` from screenshots in light, dark and iPad width, and on a release
+  compares built screens with their approved mock).
 
 ## AnalystBot
 - Runs when the owner asks for a weekly review. Read-only; no network calls of its own.
