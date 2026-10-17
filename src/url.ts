@@ -5,7 +5,7 @@ import type { NodeKind } from './tree';
 export interface Selection {
   kind: NodeKind;
   id: string;
-  /** The full page of a place or region (#region=rioja&page) instead of its card. */
+  /** The full page of a place or region (#place=toro&page, #region=rioja&page) instead of its card. */
   page?: boolean;
 }
 
@@ -25,7 +25,8 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   else if (sel.kind === 'region') p.set('region', sel.id);
   if (sel.page && sel.kind !== 'country') p.set('page', '');
   if (view) p.set('view', viewToText(view));
-  const text = p.toString().replace(/%2C/g, ',').replace(/page=(&|$)/, 'page$1');
+  // `page` is a flag, written bare rather than as page=
+  const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)page=(?=&|$)/, '$1page');
   return text ? `#${text}` : '';
 }
 
