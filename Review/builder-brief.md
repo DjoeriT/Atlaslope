@@ -5,7 +5,7 @@
 **Status:** approved. The owner said go on 16 Oct 2026 12:51Z ("I think we're good to go") after walking through the plan; the go covers the restart, the data step and releases 3 to 5, with the re-estimate after release 3. Once building starts this file moves to `Review/builder-brief.md` in the repo, and each slice below becomes one issue and one or more task cards (format in `docs/AGENT_ROLES.md`). The cloud environment with the source hosts allowed was not yet added at 12:52Z [V, environment list]: the restart (step 0) does not need it; the data step (step 1) does, or falls back to the GitHub run.
 
 ## What we are building
-Atlaslope is the wine atlas that quizzes you. It is for passionate wine lovers first and exam students (WSET, Spanish Wine Scholar) second, starting with Spain. The quiz with memory is the spine. The atlas and the guides give the why.
+Atlaslope is the wine study atlas for WSET and Wine Scholar students (owner, 17 Oct 2026; was "the wine atlas that quizzes you", wine lovers first; see `docs/scope.md` "Job"), starting with Spain. The quiz with memory is the spine. The atlas and the guides give the why.
 
 ## Sources of truth, in this order
 1. **Scope:** `/mnt/project-files/atlaslope/scope.md`, the owner's decisions.

@@ -7,7 +7,7 @@ From the first-principles scope quiz in the thread "ideate the whole system". Th
 ## What Atlaslope is
 - **For** the owner and friends, free. [O]
 - **Job**: the wine study atlas for WSET and Wine Scholar students: help serious students and passionate wine lovers understand wine regions deeply, to exam depth, and the why comes with every answer. [O] **Change (owner card, 17 Oct 2026):** exam students now come first in how the app presents itself (tab title "AtlaSlope · The Wine Study Atlas", link previews, welcome text); it was wine lovers first, exams second.
-- **Spine**: the quiz with memory. It is the one thing SommGeo and the World Atlas of Wine don't do [R, SommGeo check], so it stays central even though exams come second.
+- **Spine**: the quiz with memory. It is the one thing SommGeo and the World Atlas of Wine don't do [R, SommGeo check], so it stays central.
 - **Coverage**: Spain first, then Europe, then the world. The architecture is built for the world from day one. [O]
 
 ## The place tree (world scaffolding)

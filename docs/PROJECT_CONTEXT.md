@@ -8,7 +8,7 @@ Tags: **[V]** verified in this working copy when this snapshot was written; **[O
 **[R]** from a report or earlier notes, not re-checked; **[A]** an assumption, treat it as a question.
 
 ## 1. What Atlaslope is
-The wine atlas that quizzes you [O]. For passionate wine lovers first, exam students (WSET, Spanish Wine Scholar) second, then "show the
+The wine study atlas for WSET and Wine Scholar students [O, 17 Oct 2026; was "The wine atlas that quizzes you"]. For exam students (WSET, Spanish Wine Scholar) and passionate wine lovers, then "show the
 why". Spain first, on a world place tree (country, region, DO, zone). Free for the owner and friends; read-and-test only in v1 [O].
 Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The owner renamed the GitHub repo to `DjoeriT/Atlaslope` on 16 Oct 2026 (14:07Z); the Pages project URL is now https://djoerit.github.io/Atlaslope/ until atlaslope.com is pointed at it.
 Full scope: `docs/scope.md`. Architecture: `docs/architecture-decisions.md`. Build plan and estimate: `Review/builder-brief.md`.
@@ -92,6 +92,7 @@ archived context file; the ones that changed:
 - 2026-10-16 [O]: threads close themselves with a handoff in `docs/handoffs/`; the owner's go on a plan covers the agents it names.
 - 2026-10-16 [O]: the data step runs where the source hosts are reachable (cloud environment with them allowed, else GitHub Actions, else the Mac). Replaces "data on the owner's Mac".
 - 2026-10-17 [O]: logo is the vineyard slope (vine rows up a hill in an accent tile); favicon follows the browser theme; tab title names the place first ("Rioja · Atlaslope", home "Atlaslope · The wine atlas that quizzes you").
+- 2026-10-17 [O]: link previews get a dark share card (PR #46); the line "The wine study atlas for WSET and Wine Scholar students" replaces "The wine atlas that quizzes you" in previews, welcome text and Home Screen description, home tab "AtlaSlope · The Wine Study Atlas" (PR #47). Exam students now come first.
 - 2026-10-17 [O]: information screens get a travel look (Airbnb listing style): map card with a cover photo and "Read the full page",
   a full place page with a photo mosaic, highlights, small charts and an "at a glance" box, and a region page with photo tiles. Light is
   white and wine, dark is gold on black. Mocks `Review/mock-travel-v1/`, rules `Review/visual-style.md`. Colours and type built in

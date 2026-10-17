@@ -18,3 +18,5 @@ The favicon and Home Screen icon still use the older three-row logo; the app and
 "AtlaSlope · The Wine Study Atlas" (title case there because it reads as a name), first-run welcome and Home Screen description
 open with "The wine study atlas for WSET and Wine Scholar students". `docs/scope.md` "Job" records the shift to exam students first.
 Place tabs ("Rioja · AtlaSlope") are unchanged.
+README, builder brief and `docs/PROJECT_CONTEXT.md` carry the new line too. Gap left on purpose: the approved first-run mock
+(`Review/mock-atlas-v3/17-first-run.html`) still shows the old welcome sentence; the built screen differs from it only in that line.
