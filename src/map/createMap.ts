@@ -91,15 +91,24 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     map.setPaintProperty('ocean', 'fill-opacity', p.ocean.opacity);
     map.setPaintProperty('coast', 'line-color', p.coast);
     map.setPaintProperty('borders', 'line-color', p.borders);
+    map.setPaintProperty('borders-casing', 'line-color', p.bordersCasing.color);
+    map.setPaintProperty('borders-casing', 'line-opacity', p.bordersCasing.opacity);
     if (map.getLayer('hillshade')) map.setPaintProperty('hillshade', 'hillshade-exaggeration', p.hillshadeExaggeration);
     map.setPaintProperty('dos-fill', 'fill-opacity', p.dosFillOpacity as never);
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
-    if (tiles) map.setTerrain(m.relief ? { source: 'terrain', exaggeration: TERRAIN_EXAGGERATION } : null);
+    redrape();
     labels?.setVisible(namesShown());
     render();
   };
   const namesShown = () => current.boundaries && !quizView?.hideNames;
+  // With 3D relief on, MapLibre 4.7 caches the flat layers as textures on the terrain and does not redraw them after a paint
+  // change or late-arriving GeoJSON, so borders stayed missing until a menu toggle (#40). Setting the terrain afresh redraws them.
+  const redrape = () => {
+    if (!tiles) return;
+    map.setTerrain(null);
+    if (current.relief) map.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
+  };
 
   map.once('load', () => {
     ready = true;
@@ -114,6 +123,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
       (map.getSource('land') as maplibregl.GeoJSONSource).setData(land as never);
       (map.getSource('ocean') as maplibregl.GeoJSONSource).setData(oceanFromLand(land) as never);
+      map.once('idle', redrape);
       labels = addLabels(map, boundaries.features.map((f) => ({
         id: String(f.properties.id), name: String(f.properties.name), kind: String(f.properties.kind),
         at: centerOf(places.places as Array<PlaceRow & { centroid?: [number, number] | null }>, String(f.properties.id)),
