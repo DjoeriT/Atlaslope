@@ -42,7 +42,7 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
+Live: release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
 publish run 39047992444; live map check run 39048373912 failed twice on 0 name tiles because it stopped waiting before the names were
 asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct) at https://atlaslope.com/. Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
 fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
@@ -94,8 +94,11 @@ session on his Mac also sees his thread messages and started a second publish ru
   release 14 (owner "publish release 14" 15:14Z); the mastery map and ready for friends move to 15 and 16 (#15, #16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
 - Landscape through the colours (owner 15:17Z: close in the climate colour hides the satellite; card "Ship it" 15:57Z): over the photo
   the place fills keep the Spain-wide look up to zoom 6, thin by zoom 9 and nearly vanish by 12, outlines firm up from 6 to 9.
-  Live as release 15 (owner "publish release 15" 16:03Z); the mastery map and ready for friends move to 16 and 17 (#15, #16). Tester note `Review/release-15-what-to-test.md`;
+  Live as release 15 (owner "publish release 15" 16:03Z); the mastery map and ready for friends move to 16 and 17 (#15, #16). Tester note `Review/archive/release-15-what-to-test.md`;
   addendum in `docs/handoffs/2026-10-17-zoom-detail.md`.
+- UX sweep (owner 17 Oct 15:26Z, cards 15:58Z "Full set", "Drag, 3 stops", "Skip it"; preview v2 "OK better" 16:44Z): see section 5.
+  Live as release 16 (owner "publish release 16" 17:15Z); the mastery map and ready for friends move to 17 and 18 (#15, #16).
+  Handoff `docs/handoffs/2026-10-17-ux-sweep.md`, tester note `Review/release-16-what-to-test.md`, code review `Review/ux-sweep-1-code-review.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
