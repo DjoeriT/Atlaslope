@@ -3,7 +3,8 @@ import { describe, expect, it } from 'vitest';
 import { buildBoundaries, labelMinZoom, oceanFromLand, spanOf, type Collection } from '../../src/map/boundaries';
 import { IMAGERY_ERROR_LIMIT, basemapPaint, imageryFailed, layerVisibility } from '../../src/map/layers';
 import { NO_REGION_COLOR, REGION_COLORS, regionColor } from '../../src/map/regionColors';
-import { buildStyle } from '../../src/map/style';
+import { buildStyle, esriTemplate } from '../../src/map/style';
+import { rasterTileSize, tileXYZ } from '../../src/map/imagery';
 
 const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
 const on = { satellite: true, relief: true, boundaries: true, colourBy: 'climate' } as const;
@@ -66,9 +67,23 @@ describe('style and tile requests', () => {
     expect(Object.keys(s.sources)).toContain('terrain');
     expect(Object.keys(s.sources)).not.toContain('satellite');
   });
-  it('adds the keyed Esri source with a key', () => {
+  it('adds Esri and, over it, IGN\'s PNOA photo with a key', () => {
     const s = buildStyle({ esriKey: 'abc', tiles: true, menu: on });
-    expect(urls(s)).toContain('ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?token=abc');
+    expect(esriTemplate('abc')).toBe('https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?token=abc');
+    expect(Object.keys(s.sources)).toEqual(expect.arrayContaining(['satellite', 'pnoa']));
+    const ids = s.layers.map((l) => l.id);
+    expect(ids.indexOf('pnoa')).toBe(ids.indexOf('satellite') + 1);
+  });
+  it('fetches the next zoom of imagery on 2x screens (sharp, not stretched)', () => {
+    expect(rasterTileSize(1)).toBe(256);
+    expect(rasterTileSize(2)).toBe(128);
+    const s = buildStyle({ esriKey: 'abc', tiles: true, menu: on, dpr: 2 });
+    expect((s.sources.satellite as { tileSize: number }).tileSize).toBe(128);
+    expect((s.sources.pnoa as { tileSize: number }).tileSize).toBe(128);
+  });
+  it('reads tile numbers from a protocol URL, with or without a reload marker', () => {
+    expect(tileXYZ('esri://12/2010/1490?r=5')).toEqual([12, 2010, 1490]);
+    expect(tileXYZ('pnoa://15/16150/12005')).toEqual([15, 16150, 12005]);
   });
 });
 
