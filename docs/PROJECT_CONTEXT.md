@@ -43,7 +43,7 @@ Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/han
 
 ## 5. Release and deployment state
 Live: release 12, polish (PR #53: favicon and Home Screen icon on the slope logo, install icons, photos for Jerez, Manzanilla
-and Ribera del Guadiana; tag `release-12` on 51c5240, publish run 39034134027, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
+and Ribera del Guadiana; tag `release-12` on 51c5240, publish run 39034134027, live map check run 39034531037 passed, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
 redirects there. Release 11, QA round (PRs #49 and #51): tag on db26b9b. Release 10, place guides (PR #45): tag on f0eada5. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
 on 1f110ed, publish run 39010719099, live map check run 39010972212 passed; it also carries the logo and tab title (PR #32).
 Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. Release 4: tag on b5c773b.

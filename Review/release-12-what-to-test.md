@@ -16,4 +16,4 @@ The polish slice (PR #53). The mastery map moves to 13 and ready for friends to 
 ## For you
 PR #53 from `claude/project-thread-agx533`, published from 51c5240. Checks: `Tools/check.sh ui` on 89aa7e5 (same tree as 51c5240), 253
 unit and 86 UI tests; CI green; ReviewBot `Review/polish-review.md`. Handoff `docs/handoffs/2026-10-17-polish-icons-photos.md`.
-Not verified: Safari, a real iPad or Android Home Screen, the icons on a real tab bar.
+Live map check passed after the deploy (run 39034531037). Not verified: Safari, a real iPad or Android Home Screen, the icons on a real tab bar.
