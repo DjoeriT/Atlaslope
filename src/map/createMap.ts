@@ -136,7 +136,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
 
   map.once('load', () => {
     ready = true;
-    if (tiles && !import.meta.env.VITE_DEBUG_NONAMES) addMapNames(map, current.satellite && imagery, !quizView?.hideNames);
+    if (tiles) addMapNames(map, current.satellite && imagery, !quizView?.hideNames);
     apply(current, imagery);
     render();
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;

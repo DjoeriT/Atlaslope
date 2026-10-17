@@ -3,7 +3,7 @@
 //   node Tools/preview/map_shots.mjs <base url> <out dir> [label]
 // Views are the app's own #view= links (lng,lat,zoom,bearing,pitch). Screens: a 2x laptop and a 2x iPad.
 import { chromium } from '@playwright/test';
-import { mkdirSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 
 const [base, out, label = 'new'] = process.argv.slice(2);
 mkdirSync(out, { recursive: true });
@@ -39,9 +39,15 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
     await page.goto('about:blank');
     await page.goto(`${base}#view=${view}`, { waitUntil: 'domcontentloaded', timeout: 60_000 });
     await page.waitForLoadState('networkidle', { timeout: Number(process.env.IDLE_MS ?? 45_000) }).catch(() => console.log(`${name}: network not idle after 45 s`));
-    await page.waitForTimeout(2500);
-    if (process.env.LATER) for (const t of [10, 30, 60]) { await page.waitForTimeout(t === 10 ? 7500 : t === 30 ? 20000 : 30000); await page.screenshot({ path: `${out}/${label}-${screen}-${name}-t${t}.jpg`, type: 'jpeg', quality: 60 }); }
-    await page.screenshot({ path: `${out}/${label}-${screen}-${name}.jpg`, type: 'jpeg', quality: 82 });
+    // Software GL (no GPU on the runner) redraws 3D relief slowly and shows empty frames meanwhile: take four frames
+    // ten seconds apart and keep the one with the most detail (the largest file).
+    let best = null;
+    for (let i = 0; i < 4; i++) {
+      await page.waitForTimeout(i ? 10_000 : 2500);
+      const shot = await page.screenshot({ type: 'jpeg', quality: 82 });
+      if (!best || shot.length > best.length) best = shot;
+    }
+    writeFileSync(`${out}/${label}-${screen}-${name}.jpg`, best);
     console.log(`${label} ${screen} ${name}`);
   }
   console.log(`failed tile requests: ${failed.length}`);
