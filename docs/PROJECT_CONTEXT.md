@@ -42,8 +42,9 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 7, the quiz (PR #34; tag `release-7` on 1f110ed, 17 Oct, publish run 39010719099, live map check run 39010972212
-passed) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there. It also carries the logo and tab title (PR #32).
+Live: release 10, place guides (PR #45; tag `release-10` on f0eada5, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
+redirects there. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
+on 1f110ed, publish run 39010719099, live map check run 39010972212 passed; it also carries the logo and tab title (PR #32).
 Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. Release 4: tag on b5c773b.
 Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
 Numbering: the publish workflow takes only the next whole number, so the slice called "release 4.1" ships as release 6 and the quiz
@@ -70,6 +71,10 @@ session on his Mac also sees his thread messages and started a second publish ru
   named Terroir) for Rioja and its three zones (`content/guides/`), fly-there buttons with a caption card on the map, "Test me" on every
   quizzed place page, the "1 place to learn" plural fix. Mock `Review/mock-guides-v1/`, plan `Review/release-10-plan.md`, handoff
   `docs/handoffs/2026-10-17-release-10-guides.md`.
+
+- QA round after release 10 (owner 17 Oct 09:03Z; findings `Review/qa-round-1.md`): Reset view button, hover lights places up
+  (owner card 10:05Z "highlight only"), large-text layout on iPad, compass after a reload. Next in the same thread: a mock of richer
+  Spain and region cards with the map in one wine tone (owner cards 10:06Z "one wine tone", "mock now").
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

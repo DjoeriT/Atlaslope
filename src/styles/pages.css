@@ -125,7 +125,7 @@
 .pg aside dd{margin:0;text-align:right}
 .pg aside .btn{width:100%;justify-content:center}
 
-@media (max-width:1100px){
+@media (max-width:68.75em){
   .pg-cols{grid-template-columns:1fr;gap:0}
   .pg aside{order:-1;margin-bottom:2rem}
   .pg aside .sticky{position:static}
@@ -133,7 +133,7 @@
   .pg-mosaic[data-n="4"] figure:nth-child(4),.pg-mosaic[data-n="5"] figure:nth-child(n+4){display:none}
   .pg-jump{top:3.9rem}
 }
-@media (max-width:760px){
+@media (max-width:47.5em){
   .pg-top .in{padding:.5rem 1rem}
   .pg-top .search{display:none}
   .pg-listing{padding:1rem 1rem 6rem}
@@ -177,5 +177,5 @@
 .pg .btn.accent{border-color:var(--accent);color:var(--accent)}
 .pg .btn.accent:hover{background:var(--accent);color:var(--accent-ink)}
 .pg .btn.accent svg{width:1.2rem;height:1.2rem}
-@media (max-width:1100px){.pg-zguide{grid-template-columns:1fr}}
-@media (max-width:760px){.pg-testme{flex-direction:column;align-items:flex-start}}
+@media (max-width:68.75em){.pg-zguide{grid-template-columns:1fr}}
+@media (max-width:47.5em){.pg-testme{flex-direction:column;align-items:flex-start}}

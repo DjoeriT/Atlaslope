@@ -1,5 +1,6 @@
 import { measuresOf, photosOf, sheetOf } from '../facts';
 import { glanceCells } from '../pages/helpers';
+import { hoverProps } from '../map/hover';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Region, Tree } from '../tree';
@@ -25,11 +26,13 @@ interface RowProps {
   name: string;
   detail: string;
   color: string;
+  /** The places this row lights up on the map while hovered or focused. */
+  places: () => readonly string[];
 }
 
-function Row({ to, go, name, detail, color }: RowProps) {
+function Row({ to, go, name, detail, color, places }: RowProps) {
   return (
-    <li>
+    <li {...hoverProps(places)}>
       <i style={{ background: color }} aria-hidden="true" />
       <Link to={to} go={go}><b>{name}</b><small>{detail}</small></Link>
       <span className="go" aria-hidden="true">›</span>
@@ -44,7 +47,7 @@ export function SpainCard({ tree, go }: Props) {
       <p className="lede">{t.spainLede}</p>
       <ul className="tree">
         {tree.regionsOf(country.id).map((r) => (
-          <Row key={r.id} to={{ kind: 'region', id: r.id }} go={go} name={r.name} detail={t.placeCount(tree.placesInRegion(r.id).length)} color={regionColor(r.id)} />
+          <Row key={r.id} to={{ kind: 'region', id: r.id }} go={go} name={r.name} detail={t.placeCount(tree.placesInRegion(r.id).length)} color={regionColor(r.id)} places={() => tree.placesInRegion(r.id).map((p) => p.id)} />
         ))}
       </ul>
     </CardShell>
@@ -65,7 +68,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
     >
       <p className="lede">{t.regionLede(places.length)}</p>
       <ul className="tree">
-        {places.map((p) => <Row key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} detail={p.kind} color={regionColor(region.id)} />)}
+        {places.map((p) => <Row key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} detail={p.kind} color={regionColor(region.id)} places={() => [p.id]} />)}
       </ul>
     </CardShell>
   );
@@ -74,7 +77,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
 function ZoneRow({ zone, go, color }: { zone: Place; go: Go; color: string }) {
   const photo = photosOf(zone.id)[0];
   return (
-    <li>
+    <li {...hoverProps(() => [zone.id])}>
       <Link to={{ kind: 'place', id: zone.id }} go={go}>
         {photo ? <img src={photo.src} alt="" loading="lazy" /> : <i style={{ background: color }} aria-hidden="true" />}
         <span><b>{zone.name}</b><small>{t.zoneLevel}</small></span>

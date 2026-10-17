@@ -26,6 +26,10 @@ export interface MapController {
   select(id: string | null): void;
   /** Shows a card's place: frames it, dims the rest, highlights the selection. The first call keeps a restored view. */
   focus(focus: Focus, animate: boolean): void;
+  /** "Reset view": frames the open card again from the start camera (tilted as at launch, north up), whatever the learner did to the map. */
+  reset(): void;
+  /** Lights up places or zones by id while a card's row or the place under the mouse is hovered; null clears it. Never moves the map. */
+  hover(ids: readonly string[] | null): void;
   /** Quiz mode: flat, north up, names hidden as asked, taps find the nearest place. Null goes back to Explore. */
   quiz(q: QuizView | null): void;
   remove(): void;
@@ -45,6 +49,9 @@ export interface MapEvents {
 const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
 const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
 
+/** The tilt the map opens with, and goes back to on "Reset view". */
+const START_PITCH = 45;
+
 const TERRAIN = { source: 'terrain', exaggeration: TERRAIN_EXAGGERATION };
 
 export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null): MapController {
@@ -55,7 +62,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     container,
     style: buildStyle({ esriKey, tiles, menu }),
     ...(restored ? { center: [restored.lng, restored.lat] as [number, number], zoom: restored.zoom, bearing: restored.bearing } : { bounds: SPAIN_BOUNDS, fitBoundsOptions: { padding: 40 } }),
-    pitch: restored?.pitch ?? 45,
+    pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
     attributionControl: { compact: true },
     antialias: true,
@@ -68,6 +75,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let framePending = false;
   let skipFrame = !!restored; // a restored view is not framed over
   let animateFrame = false;
+  let resetCamera = false; // the next frame uses the start camera instead of keeping the learner's tilt and turn
   let dimmedRegion: string | null | undefined;
   let selectedZone: string | null = null;
   let current = menu;
@@ -148,8 +156,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const padding = () => {
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
     const card = document.querySelector('.card')?.getBoundingClientRect();
-    if (window.innerWidth > 820) return { left: Math.round((card?.right ?? 0) + rem), top: Math.round(rem * 4.6), bottom: Math.round(rem * 1.5), right: Math.round(rem * 5) };
-    return { left: Math.round(rem), top: Math.round(rem * 4.6), bottom: Math.round(window.innerHeight * 0.52 + rem), right: Math.round(rem * 4) };
+    // The same breakpoint as the CSS, in em so a larger text setting gets the bottom-sheet layout sooner.
+    if (!matchMedia('(max-width: 51.25em) and (orientation: portrait)').matches) return { left: Math.round((card?.right ?? 0) + rem), top: Math.round(rem * 4.6), bottom: Math.round(rem * 1.5), right: Math.round(rem * 5) };
+    return { left: Math.round(rem), top: Math.round(rem * 8), bottom: Math.round(window.innerHeight * 0.52 + rem), right: Math.round(rem * 4) };
   };
   const setState = (source: string, id: string, state: Record<string, boolean>) => map.setFeatureState({ source, id }, state);
   const FRAME_ZOOM = { region: 9, place: 10.5, zone: 10.5 };
@@ -202,7 +211,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     for (const id of ['zones-fill', 'zones-line']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', zoneVis);
     if (!framePending) return;
     const duration = animateFrame && !reduceMotion() ? 700 : 0;
-    const keep = { pitch: map.getPitch(), bearing: map.getBearing(), duration };
+    const keep = resetCamera ? { pitch: START_PITCH, bearing: 0, duration } : { pitch: map.getPitch(), bearing: map.getBearing(), duration };
     if (!want.frame) {
       framePending = false;
       map.fitBounds(SPAIN_BOUNDS, { ...keep, padding: padding() });
@@ -212,10 +221,15 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     } else if (boundaries && zones) {
       framePending = false;
       const box = boundsOf(framedFeatures(want.frame, boundaries, zones));
-      if (!box) return; // a place with no boundary yet: the view stays where it is
+      if (!box) { // a place with no boundary yet: the view stays where it is, only levelled on a reset
+        if (resetCamera) map.easeTo({ pitch: keep.pitch, bearing: keep.bearing, duration });
+        resetCamera = false;
+        return;
+      }
       const kind = 'region' in want.frame ? 'region' : 'place' in want.frame ? 'place' : 'zone';
       map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...keep, padding: padding(), maxZoom: FRAME_ZOOM[kind] });
     }
+    if (!framePending) resetCamera = false;
   }
 
   map.on('moveend', () => {
@@ -246,7 +260,28 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (id) events.onPick?.(String(id));
   });
   map.on('mouseenter', 'dos-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
-  map.on('mouseleave', 'dos-fill', () => { map.getCanvas().style.cursor = ''; });
+  map.on('mouseleave', 'dos-fill', () => { map.getCanvas().style.cursor = ''; hover(null); });
+  // The place under the mouse lights up as a card's row does (not in the quiz, where the map's look is the question's).
+  map.on('mousemove', 'dos-fill', (e) => {
+    if (quizView) return;
+    const zoneHit = map.getLayoutProperty('zones-fill', 'visibility') === 'visible' ? map.queryRenderedFeatures(e.point, { layers: ['zones-fill'] }) : [];
+    const id = (zoneHit[0] ?? e.features?.[0])?.properties?.id;
+    hover(id ? [String(id)] : null);
+  });
+
+  let hovered: Array<{ source: string; id: string }> = [];
+  function hover(ids: readonly string[] | null) {
+    const next = (quizView ? [] : ids ?? []).flatMap((id) => {
+      if (boundaries?.features.some((f) => String(f.properties.id) === id)) return [{ source: 'dos', id }];
+      if (zones?.features.some((f) => String(f.properties.id) === id)) return [{ source: 'zones', id }];
+      return [];
+    });
+    const key = (h: { source: string; id: string }) => `${h.source}/${h.id}`;
+    if (next.map(key).join() === hovered.map(key).join()) return;
+    hovered.forEach((h) => setState(h.source, h.id, { hover: false }));
+    hovered = next;
+    hovered.forEach((h) => setState(h.source, h.id, { hover: true }));
+  }
 
   /** The places' outlines in screen pixels, for the nearest-place tap. */
   function shapesOnScreen(): Shape[] {
@@ -341,6 +376,15 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       focus({ ...(want ?? { frame: null, dimRegion: null, showZones: false }), select: id }, false, false);
     },
     focus(f, animate) { focus(f, animate, true); },
+    hover,
+    reset() {
+      if (!want || quizView) return;
+      resetCamera = true;
+      framePending = true;
+      skipFrame = false;
+      animateFrame = true;
+      if (ready) render();
+    },
     quiz(q) {
       const was = quizView;
       quizView = q;
@@ -348,6 +392,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         pin?.remove();
         pin = null;
         pinKey = '';
+        hover(null);
         beforeQuiz = { pitch: map.getPitch(), bearing: map.getBearing() };
         map.easeTo({ pitch: 0, bearing: 0, duration: reduceMotion() ? 0 : 400 });
         // Explore's dimming and selection give way to the quiz's.
