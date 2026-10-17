@@ -12,7 +12,7 @@ THEMES = {
     'light': dict(bg='#FFFFFF', accent='#8C2340', ink_on='#FFFFFF', name='#1F1F1F', tag='#484848', muted='#6E6E6E',
                   land='#F3F1F1', border='#DDDDDD', do='#D9677E', do_line='#FFFFFF', hair='#DDDDDD'),
     'dark': dict(bg='#121212', accent='#C9A54E', ink_on='#141210', name='#F3F1EC', tag='#CFCBC3', muted='#9A968F',
-                 land='#1E1E1E', border='#3A3A3A', do='#8F7536', do_line='#121212', hair='#3A3A3A'),
+                 land='#262626', border='#444444', do='#8F7536', do_line='#121212', hair='#3A3A3A'),
 }
 THEME = sys.argv[1] if len(sys.argv) > 1 else 'dark'  # the owner picked dark for the card (17 Oct 2026)
 C = THEMES[THEME]
