@@ -15,7 +15,7 @@ Thread "Quiz round spacing", started from the owner's point that a Study round s
   (`tests/ui/round-plan.ts`) because the order is shuffled.
 
 ## Decided (owner cards, 17 Oct 2026)
-"Space it out" (18:09Z), "All of them" (18:15Z), the known rule and the level question (cards posted 18:16Z, built on the recommended options while they wait). See `docs/scope.md`.
+"Space it out" (18:09Z), "All of them" (18:15Z), "Two days" for known and "Drop it" for the level question (19:37Z). See `docs/scope.md`.
 
 ## Open
 - Day one (five new places and nothing else to ask) has no room to shuffle: the questions come almost in the order the places were shown,

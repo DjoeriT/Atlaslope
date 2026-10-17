@@ -154,8 +154,8 @@ Building does **not** start yet. The owner wants all key decisions cleared first
 
 ## Learning engine (owner, cards, 16 Oct 2026 12:41 to 12:42Z)
 - **Boxes for v1**: fixed gaps (1, 3, 7, 14, 30 days), matching the four shades. Every answer is logged (#43), so an adaptive model (FSRS) can replace boxes later by replaying the log. [O]
-- **Known needs two days** (owner card, 17 Oct 2026; replaces "right on the last two tries" of 16 Oct): a memory is known after two right answers in a row, the second at least a day after the first; solid stays three such days. Two rights in one sitting (Review) no longer count. [A: card open 17 Oct 18:16Z, built on the recommended option]
-- **No level question** (owner card, 17 Oct 2026): the fact question asks grape, style or climate, not the level, because 68 of the 73 Study places are a DO and "DO" was nearly always right. [A: card open 17 Oct 18:16Z, built on the recommended option]
+- **Known needs two days** (owner card, 17 Oct 2026; replaces "right on the last two tries" of 16 Oct): a memory is known after two right answers in a row, the second at least a day after the first; solid stays three such days. Two rights in one sitting (Review) no longer count. [O, card "Two days" 19:37Z]
+- **No level question** (owner card, 17 Oct 2026): the fact question asks grape, style or climate, not the level, because 68 of the 73 Study places are a DO and "DO" was nearly always right. [O, card "Drop it" 19:37Z]
 - **Two memories per place**: "where it is" (map questions) and "what it makes" (fact questions) each have their own box and schedule. A place shows as known on the mastery map only when both are known; the fact memory starts at the intro. [O; shade rule A]
 - **Right or wrong only**, no confidence rating; "That was a slip" stays. [O]
 - **A miss drops one step** and the question comes back at the end of the same round, then on its new schedule. [O]
