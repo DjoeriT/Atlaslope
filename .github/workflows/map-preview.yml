@@ -1,0 +1,42 @@
+name: map-preview
+# Screenshots of the map close in, on the real network, for mocks and design checks (the cloud container cannot reach the
+# tile hosts). Run by hand on a claude/ branch (Actions › map-preview › Run workflow, or `gh workflow run map-preview.yml --ref <branch>`).
+# Commits the pictures to Review/mock-zoom-detail/shots/ on that branch ("new" from the branch, "live" from atlaslope.com), so pull
+# before the next push. By hand only: on every push its commit made the thread's next push fail as non-fast-forward.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: map-preview-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Build
+        env:
+          VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
+        run: npm run build
+      - name: Screenshots
+        run: |
+          npx vite preview --port 4173 --strictPort &
+          for i in $(seq 30); do curl -sf http://localhost:4173/ >/dev/null && break; sleep 1; done
+          node Tools/preview/map_shots.mjs http://localhost:4173/ Review/mock-zoom-detail/shots new
+          node Tools/preview/map_shots.mjs https://atlaslope.com/ Review/mock-zoom-detail/shots live
+      - name: Commit the pictures to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Review/mock-zoom-detail/shots
+          git diff --cached --quiet && exit 0
+          git commit -m "Map preview shots for ${GITHUB_SHA::7} [skip ci]"
+          git push origin HEAD:${GITHUB_REF_NAME}

@@ -1,6 +1,8 @@
 // The MapLibre style: tile sources (imagery, terrain), the atlas base and the place boundaries. Sources and terms: data/SOURCES.md.
 import type { StyleSpecification } from 'maplibre-gl';
+import { ESRI_PROTOCOL_TILES, PNOA_ATTRIBUTION, PNOA_MAX_ZOOM, PNOA_MIN_ZOOM, PNOA_PROTOCOL_TILES, rasterTileSize } from './imagery';
 import { basemapPaint, layerVisibility, type MenuState } from './layers';
+import { GLYPHS_URL } from './mapNames';
 
 // The patterns .github/workflows/live-map-check.yml matches on.
 export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
@@ -9,18 +11,23 @@ export const ESRI_ATTRIBUTION = 'Imagery: Esri, Maxar, Earthstar Geographics, an
 export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
 export const TERRAIN_EXAGGERATION = 1.3;
 
+/** The keyed Esri tile URL; src/map/imagery.ts fetches it behind the `esri://` protocol. */
+export const esriTemplate = (key: string) => `${ESRI_TILES}?token=${encodeURIComponent(key)}`;
+
 export interface StyleOptions {
   /** Build-time Esri key; empty means no imagery source at all (the atlas base and a note). */
   esriKey?: string;
   /** Tests: no tile source of any kind, so no tile request. */
   tiles: boolean;
   menu: MenuState;
+  /** Screen pixel ratio; 2x screens get the next zoom of imagery. */
+  dpr?: number;
 }
 
 const empty = { type: 'FeatureCollection', features: [] } as const;
 
 /** Sources start empty; the app fills the geojson ones once the data files arrive. */
-export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecification {
+export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSpecification {
   const imagery = tiles && !!esriKey;
   const sat = menu.satellite && imagery;
   const paint = basemapPaint(sat);
@@ -32,9 +39,9 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     zones: { type: 'geojson', data: empty as never, promoteId: 'id' },
   };
   if (imagery) {
-    sources.satellite = {
-      type: 'raster', tiles: [`${ESRI_TILES}?token=${encodeURIComponent(esriKey as string)}`], tileSize: 256, maxzoom: 18, attribution: ESRI_ATTRIBUTION,
-    };
+    const tileSize = rasterTileSize(dpr);
+    sources.satellite = { type: 'raster', tiles: [ESRI_PROTOCOL_TILES()], tileSize, maxzoom: 18, attribution: ESRI_ATTRIBUTION };
+    sources.pnoa = { type: 'raster', tiles: [PNOA_PROTOCOL_TILES], tileSize, minzoom: PNOA_MIN_ZOOM, maxzoom: PNOA_MAX_ZOOM, attribution: PNOA_ATTRIBUTION };
   }
   if (tiles) {
     sources.terrain = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13, attribution: TERRAIN_ATTRIBUTION };
@@ -46,7 +53,13 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     { id: 'land', type: 'fill', source: 'land', filter: isLand, paint: { 'fill-color': '#EFE9DC' } },
   ];
   if (imagery) {
-    layers.push({ id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: vis.satellite }, paint: { 'raster-saturation': -0.15, 'raster-contrast': 0.05 } });
+    // A slower fade (default 300 ms) makes finer tiles read as the photo sharpening rather than squares popping in.
+    const photo = { 'raster-saturation': -0.15, 'raster-contrast': 0.05, 'raster-fade-duration': 600 };
+    layers.push(
+      { id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: vis.satellite }, paint: photo },
+      // Spain's own photo over Esri; its tiles are cut to Spain, so Esri shows around it.
+      { id: 'pnoa', type: 'raster', source: 'pnoa', layout: { visibility: vis.pnoa }, paint: photo },
+    );
   }
   if (tiles) {
     layers.push({
@@ -78,5 +91,6 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     },
     { id: 'zones-line', type: 'line', source: 'zones', layout: { visibility: 'none' }, paint: { 'line-color': '#FFFFFF', 'line-width': 2, 'line-opacity': 0.9 } },
   );
-  return { version: 8, sources, layers };
+  // The place names (src/map/mapNames.ts) are added once the map has loaded, so a slow or blocked name server never holds it up.
+  return { version: 8, sources, layers, ...(tiles ? { glyphs: GLYPHS_URL } : {}) };
 }

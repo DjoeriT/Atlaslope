@@ -39,9 +39,12 @@ jobs:
 
           const url = process.env.LIVE_URL;
           // Satellite: Esri World Imagery tiles. Terrain: Mapzen Terrarium tiles on AWS Open Data.
+          // Close in over Spain (second view): IGN's PNOA photo and the OpenFreeMap place names.
           const isSatellite = (u) => /arcgis/i.test(u) && /World_Imagery/i.test(u) && /\/tile\//i.test(u);
           const isTerrain = (u) => /elevation-tiles-prod\/terrarium\//i.test(u);
-          const seen = { satellite: 0, terrain: 0 };
+          const isPnoa = (u) => /ign\.es\/wmts\/pnoa-ma/i.test(u);
+          const isNames = (u) => /tiles\.openfreemap\.org\//i.test(u) && /\.pbf/i.test(u);
+          const seen = { satellite: 0, terrain: 0, pnoa: 0, names: 0 };
           const failures = [];
 
           // Software GL so a runner without a GPU can still draw the map.
@@ -49,7 +52,7 @@ jobs:
           const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
           page.on('response', (r) => {
             const u = r.url();
-            const kind = isSatellite(u) ? 'satellite' : isTerrain(u) ? 'terrain' : null;
+            const kind = isSatellite(u) ? 'satellite' : isTerrain(u) ? 'terrain' : isPnoa(u) ? 'pnoa' : isNames(u) ? 'names' : null;
             if (!kind) return;
             if (r.ok()) seen[kind]++; else failures.push(`${kind} ${r.status()} ${u.split('?')[0]}`);
           });
@@ -60,13 +63,21 @@ jobs:
           await page.waitForLoadState('networkidle', { timeout: 45_000 }).catch(() => console.log('network not idle after 45 s, checking what arrived'));
           await page.waitForTimeout(2000);
           await page.screenshot({ path: 'live-map-check/live.png' });
+          // Close in over Haro (Rioja): the zoom where Spain's own photo and the names take over.
+          await page.goto('about:blank');
+          await page.goto(`${url}#view=-2.848,42.574,14,0,0`, { waitUntil: 'load' });
+          await page.waitForLoadState('networkidle', { timeout: 45_000 }).catch(() => console.log('close-in view: network not idle after 45 s'));
+          await page.waitForTimeout(2000);
+          await page.screenshot({ path: 'live-map-check/live-close.png' });
           await browser.close();
 
-          console.log(`satellite tiles loaded: ${seen.satellite}; terrain tiles loaded: ${seen.terrain}`);
+          console.log(`satellite tiles loaded: ${seen.satellite}; terrain tiles loaded: ${seen.terrain}; PNOA tiles: ${seen.pnoa}; name tiles: ${seen.names}`);
           failures.slice(0, 10).forEach((f) => console.log(`failed: ${f}`));
           let bad = false;
           if (seen.satellite === 0) { console.error('FAIL: no satellite tile loaded'); bad = true; }
           if (seen.terrain === 0) { console.error('FAIL: no terrain tile loaded'); bad = true; }
+          if (seen.pnoa === 0) { console.error('FAIL: no PNOA tile loaded close in over Spain'); bad = true; }
+          if (seen.names === 0) { console.error('FAIL: no place-name tile loaded'); bad = true; }
           process.exit(bad ? 1 : 0);
           EOF
           cp live-map-check/check.mjs ./live-map-check.mjs
@@ -75,5 +86,5 @@ jobs:
         if: always()
         with:
           name: live-map-screenshot
-          path: live-map-check/live.png
+          path: live-map-check/live*.png
           if-no-files-found: warn

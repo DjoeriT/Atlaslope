@@ -15,7 +15,9 @@ import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
 import { addLabels, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
-import { TERRAIN_EXAGGERATION, buildStyle } from './style';
+import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
+import { addMapNames, applyMapNames, registerGlyphs } from './mapNames';
+import { TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 
 export interface MapController {
@@ -58,6 +60,9 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
   const tiles = tilesEnabled();
   const hasImagery = tiles && !!esriKey;
+  // If IGN keeps failing, Esri stops skipping Spain and its tiles reload with a new URL.
+  if (hasImagery) registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) });
+  if (tiles) registerGlyphs(import.meta.env.BASE_URL);
   const map = new maplibregl.Map({
     container,
     style: buildStyle({ esriKey, tiles, menu }),
@@ -106,15 +111,21 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (map.getLayer('hillshade')) map.setPaintProperty('hillshade', 'hillshade-exaggeration', p.hillshadeExaggeration);
     map.setPaintProperty('dos-fill', 'fill-opacity', p.dosFillOpacity as never);
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
+    map.setPaintProperty('dos-line', 'line-opacity', p.dosLineOpacity as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
     const colour = ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', m.colourBy === 'region' ? 'color' : 'climate']];
     map.setPaintProperty('dos-fill', 'fill-color', colour as never);
     map.setPaintProperty('dos-line', 'line-color', colour as never);
     if (tiles) map.setTerrain(m.relief ? TERRAIN : null);
-    labels?.setVisible(namesShown());
+    syncNames();
     render();
   };
   const namesShown = () => current.boundaries && !quizView?.hideNames;
+  // Place labels follow the boundaries switch; the photo's own names (towns, rivers) stay unless a quiz hides names.
+  const syncNames = () => {
+    labels?.setVisible(namesShown());
+    if (ready) applyMapNames(map, current.satellite && imagery, !quizView?.hideNames);
+  };
   // With 3D relief on, MapLibre 4.7 caches the flat layers as textures on the terrain and does not redraw them when GeoJSON
   // arrives later, so country borders stayed missing until a menu toggle (#40). Once the world map has loaded, take the terrain
   // off and put it back to rebuild those textures (setting the same terrain again was not enough in a headless check).
@@ -126,6 +137,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
 
   map.once('load', () => {
     ready = true;
+    if (tiles) addMapNames(map, current.satellite && imagery, !quizView?.hideNames);
     apply(current, imagery);
     render();
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
@@ -306,7 +318,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   function applyQuiz() {
     const q = quizView;
     if (!q || !ready || !boundaries) return;
-    labels?.setVisible(namesShown());
+    syncNames();
     const keep = q.dimExcept ? new Set(q.dimExcept) : null;
     for (const f of boundaries.features) setState('dos', String(f.properties.id), { dim: !!keep && !keep.has(String(f.properties.id)) });
     if (quizSel && quizSel !== q.select) setState('dos', quizSel, { sel: false });
@@ -359,7 +371,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     quizFrame = null;
     selected = null;
     dimmedRegion = undefined;
-    labels?.setVisible(namesShown());
+    syncNames();
     if (beforeQuiz) map.easeTo({ ...beforeQuiz, duration: reduceMotion() ? 0 : 400 });
     beforeQuiz = null;
     if (want) { framePending = true; animateFrame = true; }
@@ -415,7 +427,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         dimmedRegion = undefined;
       }
       if (!q && was) { if (ready) leaveQuiz(); return; }
-      if (q) { labels?.setVisible(namesShown()); applyQuiz(); }
+      if (q) { syncNames(); applyQuiz(); }
     },
     remove() { pin?.remove(); labels?.remove(); map.remove(); },
   };
