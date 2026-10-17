@@ -71,8 +71,19 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   useEffect(() => { if (!item) onExit({ kind, round, outcomes }); }, [item]);
 
   // A new step: start the stopwatch and put the keyboard on the question; a reveal moves it to the result.
-  useEffect(() => { shownAt.current = Date.now(); heading.current?.focus(); }, [index]);
-  useEffect(() => { if (outcome) result.current?.focus(); }, [!!outcome]);
+  // The card scrolls by hand: focus alone left a phone's short card scrolled to wherever the last step ended (mobile check, 17 Oct 2026).
+  useEffect(() => {
+    shownAt.current = Date.now();
+    heading.current?.focus({ preventScroll: true });
+    heading.current?.closest('.body')?.scrollTo({ top: 0 });
+  }, [index]);
+  useEffect(() => {
+    const el = result.current;
+    if (!outcome || !el) return;
+    el.focus({ preventScroll: true });
+    const body = el.closest('.body');
+    if (body) body.scrollTo({ top: Math.max(0, el.getBoundingClientRect().top - body.getBoundingClientRect().top + body.scrollTop - 12) });
+  }, [!!outcome]);
 
   // Right answers move on after about a second.
   useEffect(() => {

@@ -29,7 +29,7 @@ a{color:inherit}
 
 /* glass chrome */
 .glass{background:var(--glass);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border:1px solid var(--edge);box-shadow:var(--shadow);border-radius:var(--rad)}
-.topleft{position:absolute;left:1rem;top:1rem;display:flex;gap:.6rem;align-items:center;z-index:5;max-width:calc(100% - 22rem)}
+.topleft{position:absolute;left:1rem;top:1rem;display:flex;gap:.6rem;align-items:center;z-index:7;max-width:calc(100% - 22rem)}
 .brand{display:flex;align-items:baseline;gap:.5rem;padding:.55rem 1rem;text-decoration:none;min-height:2.75rem}
 .brand b{font-family:var(--serif);font-weight:600;font-size:1.35rem;letter-spacing:.01em}
 .brand small{font-size:.75rem;color:var(--ink3)}
@@ -78,7 +78,7 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .seg a{padding:.45rem .9rem}
 .brand{border:0;cursor:pointer;font:inherit;color:var(--ink);text-align:left}
 .brand[aria-expanded="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
-.menu.tl{left:1rem;right:auto;top:4.4rem;min-width:14rem;display:flex;flex-direction:column;z-index:7}
+.menu.tl{left:1rem;right:auto;top:4.4rem;min-width:14rem;display:flex;flex-direction:column;z-index:8}
 .menu.tl [role="menuitem"]{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.55rem .7rem;border-radius:.6rem;min-height:2.75rem;text-decoration:none;font:inherit;font-size:.95rem;color:var(--ink);background:transparent;border:0;cursor:pointer;text-align:left}
 .menu.tl [role="menuitem"]:hover{background:var(--line)}
 .menu.tl svg{width:1.1rem;height:1.1rem}
@@ -121,6 +121,10 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .results a:hover{background:var(--line)}
 .results small{color:var(--ink3);font-size:.8rem}
 .search{position:relative}
+/* Search results sit above the card (the top bar is z-index 7); on a phone they get room to the left of the narrow field. */
+@media (max-width:51.25em),(max-height:30em){.results{left:auto;min-width:min(18rem,calc(100vw - 2rem))}}
+/* iPhone Safari zooms the page into any field with text under 16 px and doesn't zoom back out. */
+@media (pointer:coarse){.search input{font-size:max(1rem,16px)}}
 @media (max-width:68.75em){.card{width:22rem}.search{width:12rem}}
 @media (max-width:51.25em) and (orientation:portrait){
  .card{left:0;right:0;top:auto;bottom:0;width:auto;max-height:52%;border-radius:var(--rad-card) var(--rad-card) 0 0}

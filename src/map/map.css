@@ -9,7 +9,6 @@
 .menu .colourby .hint{display:block;padding:.2rem .6rem;color:var(--ink3);font-size:.78rem}
 .imagery-note{position:absolute;left:27rem;right:5rem;margin-inline:auto;width:fit-content;bottom:1.6rem;z-index:5;display:flex;align-items:center;gap:.4rem;padding:.4rem .4rem .4rem 1rem;max-width:36rem;font-size:.9rem}
 .maplibregl-ctrl-attrib{font-family:var(--sans)}
-@media (max-width:51.25em) and (orientation:portrait){.menu.br{bottom:54%}}
 
 @media (max-width:51.25em) and (orientation:portrait){.imagery-note{left:1rem;right:4.5rem;bottom:calc(52% + 1rem);margin-inline:0}}
 /* Quiz reveal: the answer's name in the wine colour, a wrong pick in a plain ink beside it. */
@@ -31,3 +30,20 @@
 .menu .colourby{border:0;border-top:1px solid var(--line);margin:.3rem 0 0;padding:.4rem 0 0}
 .menu .colourby legend{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding:0 .6rem}
 @media (max-width:51.25em) and (orientation:portrait){.legend{top:8.4rem}}
+
+/* Phones (portrait, or landscape with little height): the legend folds into a small button so it doesn't cover the map (mobile check, 17 Oct 2026). */
+.legend-toggle{display:none}
+@media (max-width:51.25em),(max-height:30em){
+ .legend{padding:0}
+ .legend>b,.legend>ul{display:none}
+ .legend[data-open]>ul{display:grid;padding:.1rem .8rem .7rem}
+ .legend-toggle{display:flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 .75rem;border:0;background:transparent;font:inherit;font-size:.82rem;font-weight:600;color:var(--ink);cursor:pointer;border-radius:var(--rad)}
+ .legend-toggle .sw{display:inline-flex;border-radius:.2rem;overflow:hidden}
+ .legend-toggle .sw i{width:.45rem;height:.9rem;border:0;border-radius:0;background:var(--sw)}
+ .legend-toggle svg{width:1rem;height:1rem;color:var(--ink3)}
+ .legend[data-open] .legend-toggle svg{transform:rotate(180deg)}
+}
+/* The layers menu is a popup: above the top bar, and it scrolls rather than running off a short screen. */
+/* It sits inside the button column, so its height is capped against the screen, not the column. */
+.menu.br{z-index:8;max-height:calc(100vh - 5rem);max-height:calc(100dvh - 5rem);overflow:auto}
+@media (max-width:51.25em) and (orientation:portrait){.menu.br{bottom:0;max-height:calc(46vh - 2rem);max-height:calc(46dvh - 2rem)}}
