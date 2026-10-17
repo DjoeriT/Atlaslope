@@ -52,7 +52,9 @@ progress won't be kept. [O; blocked-storage wording A]
 |---|---|---|---|
 | `release-7-card-1-engine.md`: memories, log replay, shades, due, intake, focus, zones, rounds, slip | Opus | `src/quiz/` engine files, `tests/unit/quiz-*.test.ts` | – |
 | Card 2: storage (versioned record, migration, file save and load), question making (distractors, fact choices) | Sonnet | `src/quiz/store*`, `src/quiz/questions*` | card 1 |
-| Cards 3 to 5: quiz screens, intro and reveal, doors and picker, Today card and Progress | Sonnet | `src/quiz-ui/` and the shell | card 2 and the approved mocks |
+| `release-7-card-3-map-quiz.md`: map quiz mode (names hidden, flat, 44 px tap, reveal), the #quiz route | Sonnet | `src/map/`, `src/url.ts`, shell | card 2 |
+| `release-7-card-4-round.md`: playing a round, intro, reveal, slip, round end with Keep going | Sonnet | `src/quiz-ui/` | card 3 |
+| `release-7-card-5-doors.md`: Study and Review doors, focus, practise any mix, Today card, progress file, manifest | Sonnet | `src/quiz-ui/`, shell | card 4 |
 
 New UI (intro, reveal with fact, Study and Review doors, "Practise any mix" picker, focus) is mocked first in
-`/mnt/project-files/atlaslope/mocks/quiz-v4/`, design-checked, and approved by the owner before cards 3 to 5 start.
+`Review/mock-quiz-v4/`, design-checked (`Review/release-7-mock-design-check.md`, all fixed), approved by the owner (card, 17 Oct 05:44Z).
