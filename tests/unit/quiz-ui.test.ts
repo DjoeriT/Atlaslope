@@ -52,6 +52,12 @@ describe('what the map is asked to show', () => {
   it('hides names always and frames the place at its intro', () => {
     expect(viewFor({ ...base, type: 'intro' })).toMatchObject({ hideNames: true, select: 'toro', reveal: { answer: 'toro' } });
   });
+  it('frames the place before it is asked, and leaves find it on all of Spain', () => {
+    expect(viewFor({ ...base, type: 'intro' }).frame).toEqual(['toro']);
+    expect(viewFor({ ...base, type: 'what-is-this' }).frame).toEqual(['toro']);
+    expect(viewFor({ ...base, type: 'what-is-this', revealed: true }).frame).toBeUndefined();
+    expect(viewFor({ ...base, type: 'find-it' }).frame).toBeUndefined();
+  });
   it('shows the tapped place while finding it, and the answer with the wrong pick after', () => {
     expect(viewFor({ ...base, type: 'find-it', picked: 'rueda' })).toMatchObject({ select: 'rueda', reveal: null, dimExcept: null });
     expect(viewFor({ ...base, type: 'find-it', picked: 'rueda', revealed: true })).toMatchObject({ select: 'toro', reveal: { answer: 'toro', picked: 'rueda' }, dimExcept: ['toro', 'rueda'] });
