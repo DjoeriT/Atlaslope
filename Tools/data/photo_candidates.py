@@ -4,6 +4,11 @@
 Runs in GitHub Actions (data-photos workflow; Commons throttles the cloud container). Needs shapely and Pillow.
 Writes Review/sources/photo-candidates.json and Review/sources/contact-sheets/<region>.jpg.
 
+Fill pass (release 9): `photo_candidates.py fill` runs only for places that have no shipped photo or whose first photo is off-topic
+(NEEDS_NEW), adds more search words (bodega, winery, vendimia, cepas), works without a boundary for Vinos de Pago that have none yet
+(a file then has to name the place and a vineyard word), and writes Review/sources/photo-candidates-fill.json and
+contact-sheets/fill-<region>.jpg. The first-pass candidates stay untouched.
+
 Second version (release 4). The first one searched by name and within 10 km of the centroid, which returned wine bottles from
 other regions, a Chilean winery and space-station photos. This one:
 - searches only files with coordinates **inside the place's boundary** (geosearch discs of 10 km laid over the boundary, then a
@@ -34,6 +39,12 @@ DROP = re.compile(r"ISS\d|View of Earth|Mapillary|etiqueta|label|bottle|botella|
                   r"capitel|portada|arquivolta|modill|lápida|placa|cartel|sign\b|señal|\btren\b|train|autobús|bus\b|estación|station|aeropuerto|"
                   r"retrato|portrait|concierto|fiesta|feria|futbol|fútbol|plaza de toros|colegio|instituto|hospital|cementerio|cemetery|"
                   r"ayuntamiento|town hall|casa consistorial|museo|museum|tapas|registro|\.png$", re.I)
+FILL_OUT = ROOT / "Review/sources/photo-candidates-fill.json"
+# Places whose shipped first photo is not vines, a vineyard landscape or a wine village (audit 2026-10-17, no better candidate in the
+# first pass); places with no shipped photo at all are added by fill_places().
+NEEDS_NEW = ("lebrija", "calatayud", "binissalem", "abona", "ycoden-daute-isora", "valle-de-la-orotava", "almansa", "bullas", "cangas",
+             "valdeorras", "txakoli-alava", "campo-de-calatrava", "mondejar", "ribera-del-jucar", "valdepenas", "ribera-del-guadiana",
+             "utiel-requena", "valles-de-benavente")
 FLAGS = {"Featured pictures on Wikimedia Commons": 3, "Quality images": 2, "Valued images sorted by promotion date": 1}
 
 
@@ -59,7 +70,7 @@ def boundaries(places):
     out = {}
     for p in places:
         b = p.get("boundary")
-        if b == "mapa-2014": out[p["id"]] = unary_union(dops[p["layerCode"]])
+        if b == "mapa-2014" and p["layerCode"] in dops: out[p["id"]] = unary_union(dops[p["layerCode"]])
         elif b == "added": out[p["id"]] = added[p["id"]]
         elif b == "rioja-zones": out[p["id"]] = zones[p["name"]]
     return out
@@ -81,23 +92,35 @@ def discs(geom, max_n=16):
     return pts or [(c.x, c.y)]
 
 
-def titles_for(place, geom):
+def short_name(place):
+    """The name searched for: first part before ' / ' or '-', without a leading 'Pago de'."""
+    name = place["name"].split(" / ")[0].split("-")[0].strip()
+    return re.sub(r"^Pago (de |del )", "", name) if place["kind"] == "VP" else name
+
+
+def queries(name, fill=False):
+    q = [f'"{name}" (viñedo OR viñedos OR vineyard OR vinyes OR viña OR mahastia)']
+    if fill: q.append(f'"{name}" (bodega OR bodegas OR winery OR vendimia OR viñas OR cepas)')
+    return q
+
+
+def titles_for(place, geom, fill=False):
     found = {}
-    for lon, lat in discs(geom):
+    for lon, lat in (discs(geom) if geom is not None else []):
         r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 200, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
         for g in r["query"]["geosearch"]:
             found[g["title"]] = (g["lon"], g["lat"])
         time.sleep(.5)
-    name = place["name"].split(" / ")[0].split("-")[0].strip()
-    r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 50,
-             "srsearch": f'"{name}" (viñedo OR viñedos OR vineyard OR vinyes OR viña OR mahastia)'})
-    for s in r["query"]["search"]:
-        found.setdefault(s["title"], None)
+    for q in queries(short_name(place) if fill else place["name"].split(" / ")[0].split("-")[0].strip(), fill):
+        r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 50, "srsearch": q})
+        for s in r["query"]["search"]:
+            found.setdefault(s["title"], None)
+        time.sleep(.5)
     return found
 
 
 def info(found, geom, name):
-    g = prep(geom)
+    g = prep(geom) if geom is not None else None  # no boundary yet: a file must name the place and a vineyard word
     titles = [t for t in found if not DROP.search(t)]
     out = []
     for i in range(0, len(titles), 40):
@@ -114,9 +137,12 @@ def info(found, geom, name):
             text = p["title"] + " " + desc + " " + " ".join(cats)
             if DROP.search(p["title"] + " " + desc[:80]): continue
             xy = found.get(p["title"]) or ((p["coordinates"][0]["lon"], p["coordinates"][0]["lat"]) if p.get("coordinates") else None)
-            inside = bool(xy) and g.contains(Point(xy))
-            if xy and not inside: continue
-            if not xy and not (name.lower() in text.lower() and VINE.search(text)): continue
+            inside = bool(xy) and g is not None and g.contains(Point(xy))
+            named = name.lower() in text.lower() and bool(VINE.search(text))
+            if g is None:
+                if not named: continue
+            elif xy and not inside: continue
+            elif not xy and not named: continue
             out.append({"title": p["title"], "page": ii["descriptionurl"], "thumb": ii.get("thumburl"), "url": ii["url"],
                         "width": ii["width"], "height": ii["height"], "licence": lic, "licenceUrl": m.get("LicenseUrl", {}).get("value"),
                         "artist": re.sub("<[^>]+>", "", m.get("Artist", {}).get("value", "")).strip()[:120],
@@ -148,7 +174,7 @@ def thumb(url):
     return None
 
 
-def sheet(region, places, done):
+def sheet(region, places, done, prefix=""):
     """One JPEG per study region: a row per place, up to 12 thumbnails, each labelled place-number."""
     W, H, PAD, LABEL = 240, 160, 6, 26
     rows = [p for p in places if done.get(p["id"], {}).get("candidates")]
@@ -168,10 +194,38 @@ def sheet(region, places, done):
             d.text((x, y + H + 4), f"{p['id'][:14]}-{i + 1}{' Q' if c['quality'] else ''}", fill="black", font=font)
             time.sleep(.2)
     SHEETS.mkdir(parents=True, exist_ok=True)
-    img.save(SHEETS / f"{region}.jpg", quality=72, optimize=True)
+    img.save(SHEETS / f"{prefix}{region}.jpg", quality=72, optimize=True)
+
+
+def fill_places(places, shipped):
+    """Places to search in the fill pass: listed in NEEDS_NEW, or without any shipped photo."""
+    return [p for p in places if p["id"] in NEEDS_NEW or f"{p['id']}-1" not in shipped]
+
+
+def fill():
+    tree = json.loads((ROOT / "data/places.json").read_text())
+    shipped = json.loads((ROOT / "data/photos.json").read_text())["photos"]
+    places = fill_places(tree["places"], shipped)
+    geoms = boundaries([p for p in places if p["boundary"] != "to-fetch"])
+    done = json.loads(FILL_OUT.read_text()) if FILL_OUT.exists() else {}
+    for p in places:
+        if p["id"] in done: continue
+        g = geoms.get(p["id"])
+        try:
+            found = titles_for(p, g, fill=True)
+            cands = info(found, g, short_name(p))
+        except Exception as e:  # keep what is done; a rerun retries this place
+            print(p["id"], "error:", e, flush=True); continue
+        done[p["id"]] = {"name": p["name"], "region": p["region"], "seen": len(found), "kept": len(cands), "candidates": rank(cands)}
+        print(p["id"], len(found), len(cands), flush=True)
+        FILL_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for region in dict.fromkeys(p["region"] for p in places):
+        sheet(region, [p for p in places if p["region"] == region], done, "fill-")
+        print("sheet", region, flush=True)
 
 
 def main():
+    if sys.argv[1:] == ["fill"]: return fill()
     tree = json.loads((ROOT / "data/places.json").read_text())
     places = [p for p in tree["places"] if p["quiz"] != "none"]
     geoms = boundaries(places)
