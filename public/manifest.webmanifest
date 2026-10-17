@@ -1,6 +1,6 @@
 {
-  "name": "Atlaslope",
-  "short_name": "Atlaslope",
+  "name": "AtlaSlope",
+  "short_name": "AtlaSlope",
   "description": "The wine atlas that quizzes you: where Spain's wine places are and why their wines taste as they do.",
   "start_url": "./",
   "scope": "./",

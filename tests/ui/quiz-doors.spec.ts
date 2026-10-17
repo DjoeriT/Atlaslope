@@ -106,11 +106,11 @@ test('practise any mix: ticks, the partial state, the real count, a review round
 
 test('progress file: save downloads JSON, load restores the log, Undo brings the earlier one back, a bad file changes nothing', async ({ page }) => {
   await open(page, '#quiz', SEED);
-  await page.getByRole('button', { name: 'Atlaslope' }).click();
+  await page.getByRole('button', { name: 'AtlaSlope' }).click();
   await page.getByRole('menuitem', { name: 'Save or load progress' }).click();
   await expect(page).toHaveURL(/#quiz=progress-file/);
   await expect(page.locator('.facts')).toContainText('3 answers since');
-  await expect(page.getByText('Add Atlaslope to your Home Screen')).toBeVisible();
+  await expect(page.getByText('Add AtlaSlope to your Home Screen')).toBeVisible();
 
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Save to a file' }).click()]);
   expect(download.suggestedFilename()).toBe('atlaslope-progress-2026-10-17.json');
@@ -171,7 +171,7 @@ test('the manifest is linked and parses', async ({ page, request }) => {
   const res = await request.get(new URL(href!, page.url()).toString());
   expect(res.ok()).toBe(true);
   const manifest = await res.json();
-  expect(manifest).toMatchObject({ name: 'Atlaslope', display: 'standalone', start_url: './' });
+  expect(manifest).toMatchObject({ name: 'AtlaSlope', display: 'standalone', start_url: './' });
 });
 
 test('a place card opened from the quiz comes back to the same question', async ({ page }) => {

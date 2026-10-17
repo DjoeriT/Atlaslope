@@ -1,10 +1,10 @@
 // All interface text lives here (decision #5).
 export const strings = {
-  appName: 'Atlaslope',
+  appName: 'AtlaSlope',
   brandContext: 'Spain',
   // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
-  pageTitleHome: 'Atlaslope · The wine atlas that quizzes you',
-  pageTitle: (name: string) => `${name} · Atlaslope`,
+  pageTitleHome: 'AtlaSlope · The wine atlas that quizzes you',
+  pageTitle: (name: string) => `${name} · AtlaSlope`,
   mapMountLabel: 'Map of Spain. Click a place to select it.',
   map: {
     menuButton: 'Map layers',
@@ -82,7 +82,7 @@ export const strings = {
     reportLink: 'Report a mistake',
     /** Where "Report a mistake" sends the email. Empty until the owner chooses an address; the link is hidden while it is empty. */
     reportAddress: '' as string,
-    reportSubject: (place: string) => `Atlaslope: mistake on ${place}`,
+    reportSubject: (place: string) => `AtlaSlope: mistake on ${place}`,
     reportBody: (place: string, id: string) => `Place: ${place} (${id})\nWhich row is wrong:\nWhat it should say:\n`,
     styleKinds: { red: 'Red', white: 'White', rose: 'Rosé', sparkling: 'Sparkling', fortified: 'Fortified', sweet: 'Sweet' },
     // Köppen-Geiger codes in plain words (Beck et al. 2023). Only the codes that appear in the measured data need a name.
@@ -164,7 +164,7 @@ export const strings = {
     none: 'No place or region matches.',
   },
   firstRun: {
-    label: 'Welcome to Atlaslope',
+    label: 'Welcome to AtlaSlope',
     kicker: 'Welcome',
     lede: "The wine atlas that quizzes you. Learn where Spain's wine places are and why their wines taste as they do.",
     hintsTitle: 'Moving the map',
@@ -182,7 +182,7 @@ export const strings = {
     kicker: (day: string) => `Quiz · ${day}`,
     backToQuiz: 'Back to the quiz',
     backToQuizLabel: 'Back to the quiz, where you left off',
-    storageDamaged: "The progress stored in this browser could not be read, so the quiz started afresh. A copy was kept; if you saved a file, load it from the Atlaslope menu.",
+    storageDamaged: "The progress stored in this browser could not be read, so the quiz started afresh. A copy was kept; if you saved a file, load it from the AtlaSlope menu.",
     storageBlocked: "Progress can't be kept in this browser, so it will be lost when you close the page. Save a copy to a file to keep it.",
     doors: {
       study: 'Study',
@@ -256,7 +256,7 @@ export const strings = {
       neverSaved: 'Never. Save a copy now, and again every week or so.',
       savedTo: (when: string, name: string) => `${when} · ${name}`,
       deviceHeading: 'On iPad or iPhone',
-      deviceNote: "Add Atlaslope to your Home Screen before you start: Safari can clear a website's storage after a week away; the Home Screen app keeps it.",
+      deviceNote: "Add AtlaSlope to your Home Screen before you start: Safari can clear a website's storage after a week away; the Home Screen app keeps it.",
       save: 'Save to a file',
       load: 'Load from a file',
       loadLabel: 'Progress file to load',
@@ -264,7 +264,7 @@ export const strings = {
       undo: 'Undo',
       undone: 'Your earlier progress is back.',
       refused: (why: string) => `${why} Nothing was changed.`,
-      newer: (v: number) => `This browser holds progress from a newer version of Atlaslope (version ${v}). It is left untouched, and loading is off.`,
+      newer: (v: number) => `This browser holds progress from a newer version of AtlaSlope (version ${v}). It is left untouched, and loading is off.`,
     },
     today: {
       label: 'Today',

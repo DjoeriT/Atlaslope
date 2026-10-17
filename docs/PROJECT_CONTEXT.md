@@ -94,6 +94,7 @@ archived context file; the ones that changed:
   release 8; the pages follow in release 9 (owner card 17 Oct 06:48Z: two releases; photos "fix and fill", three per place).
 - 2026-10-17 [O]: a visual design check runs next to the UX and UI check on every new or changed screen, and built screens are compared
   with their approved mock before a release (`CLAUDE.md`).
+- 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
 
 ## 9. Where things are written down
 Rules `CLAUDE.md`; this file; scope and decisions in `docs/`; handoffs `docs/handoffs/`; brief, reviews, mocks, cards and digests in
