@@ -1,0 +1,151 @@
+{
+ "id": "rioja",
+ "title": "Why Rioja tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Two climates that rarely meet share one sheltered valley. That is where Rioja's wines get their body, their colour and their acidity.",
+  "cite": [
+   "rioja-pliego:p15",
+   "rioja-pliego:p19"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "title": "A valley with walls",
+   "paras": [
+    "The vineyards follow the Ebro for 100 km, from Haro in the west to Alfaro in the east, in a valley never more than about 40 km wide. They climb in terraces to about 700 m. The mountains around it make Rioja a natural region of its own, and the Sierra de Cantabria to the north protects the vines.",
+    "Three provinces share the vineyard: La Rioja, Álava and Navarra, 63,593 hectares across 144 municipalities."
+   ],
+   "cite": [
+    "rioja-pliego:p15",
+    "rioja-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Haro to Alfaro, the whole valley",
+     "place": "rioja",
+     "caption": "The vineyards run 100 km along the Ebro, from Haro to Alfaro, in a valley at most about 40 km wide.",
+     "cite": [
+      "rioja-pliego:p15"
+     ]
+    },
+    {
+     "label": "Sierra de Cantabria",
+     "point": [
+      -2.62,
+      42.61
+     ],
+     "zoom": 9.8,
+     "caption": "The mountains on Rioja's northern side. They protect Rioja Alta, and Rioja Alavesa even more.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "title": "Cool in the west, warm in the east",
+   "paras": [
+    "The whole valley sits where the Atlantic and the Mediterranean meet, so temperatures stay mild and about 400 mm of rain falls in a year. Moving east, the climate turns Mediterranean and the wine changes with it."
+   ],
+   "cards": [
+    {
+     "title": "Rioja Alta",
+     "climate": "Atlantic. More rain and fewer hours of sun than the south.",
+     "wine": "Wines of medium strength with body and high acidity, made for the barrel.",
+     "fly": {
+      "label": "Rioja Alta",
+      "place": "rioja-alta",
+      "caption": "Atlantic weather, more rain and fewer hours of sun: wines with body and high acidity, made for the barrel.",
+      "cite": [
+       "rioja-pliego:p20"
+      ]
+     }
+    },
+    {
+     "title": "Rioja Alavesa",
+     "climate": "Both climates meet. As sunny as Rioja Alta, a little drier, and the most sheltered by the Sierra de Cantabria.",
+     "wine": "A touch more alcohol and less acidity. Good young or aged.",
+     "fly": {
+      "label": "Rioja Alavesa",
+      "place": "rioja-alavesa",
+      "caption": "Atlantic and Mediterranean meet here, behind the Sierra de Cantabria: wines to drink young or to age.",
+      "cite": [
+       "rioja-pliego:p20"
+      ]
+     }
+    },
+    {
+     "title": "Rioja Oriental",
+     "climate": "Mediterranean. The least rain and the most sun. Older documents call it Rioja Baja.",
+     "wine": "More alcohol and extract. Used in blends for barrel ageing, and also drunk young.",
+     "fly": {
+      "label": "Rioja Oriental",
+      "place": "rioja-oriental",
+      "caption": "The Mediterranean end of Rioja: the least rain and the most sun.",
+      "cite": [
+       "rioja-pliego:p20"
+      ]
+     }
+    }
+   ],
+   "cite": [
+    "rioja-pliego:p15",
+    "rioja-pliego:p20",
+    "rioja-doc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "title": "Three soils, three weights",
+   "paras": [
+    "Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa, the Sonsierra and parts of Rioja Alta. It is the main source of wines for ageing. Ferrous clay, red and rolling, covers another quarter. Alluvial soil near the rivers, flat, deep and full of stones, covers half. Both of these give wines with less body than the clay-limestone.",
+    "Most of Rioja's soil is balanced between sand, silt and clay, slightly alkaline, poor in organic matter, and holds a moderate amount of water through the summer."
+   ],
+   "cite": [
+    "rioja-pliego:p15",
+    "rioja-pliego:p16",
+    "rioja-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Clay-limestone terraces, Rioja Alavesa",
+     "place": "rioja-alavesa",
+     "caption": "Clay-limestone on terraces and small plots: the main source of Rioja's wines for ageing.",
+     "cite": [
+      "rioja-pliego:p15",
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "barrel",
+   "title": "Made for the barrel",
+   "paras": [
+    "Wine is about a fifth of the region's economy, and Rioja's long focus on ageing has built one of the largest concentrations of oak barrels in the world. Crianza, Reserva and Gran Reserva are the result.",
+    "Rioja makes sparkling wine too. Wines \"made by the Champagne method\" from Rioja Alta and Alavesa were shown in Madrid in 1857, and in 1890 a French firm in Haro's station quarter hired a champagne maker from Reims. The cool end of the Winkler heat scale keeps the base wines fresh and acidic. Since 2017 the rules cover traditional-method sparkling whites and rosés."
+   ],
+   "cite": [
+    "rioja-pliego:p19",
+    "rioja-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Haro's station quarter",
+     "point": [
+      -2.851,
+      42.585
+     ],
+     "zoom": 14,
+     "caption": "A French firm set up here in Haro made sparkling wine, and in 1890 it hired a champagne maker from Reims.",
+     "cite": [
+      "rioja-pliego:p19"
+     ]
+    }
+   ]
+  }
+ ]
+}

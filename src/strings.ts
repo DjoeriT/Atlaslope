@@ -52,7 +52,7 @@ export const strings = {
   },
   regionPage: {
     lede: (n: number) => `${n} ${n === 1 ? 'place' : 'places'}, in course order. Open a place to read its page.`,
-    placesToLearn: 'places to learn',
+    placesToLearn: (n: number) => (n === 1 ? 'place to learn' : 'places to learn'),
     coverCredit: 'Photo:',
     credits: 'Photos:',
     showOnMap: (name: string) => `Show ${name} on the map`,
@@ -123,6 +123,7 @@ export const strings = {
       jumpLabel: 'On this page',
       sections: {
         overview: 'Overview',
+        terroir: 'Terroir',
         taste: 'How it tastes',
         styles: 'Famous styles',
         grapes: 'Grapes',
@@ -157,6 +158,18 @@ export const strings = {
       sourceLink: 'Source',
       showOnMap: (name: string) => `Show ${name} on the map`,
       showOnMapShort: 'Show on the map',
+      terroirKicker: (minutes: number) => `Terroir · ${minutes}-minute read`,
+      terroirLink: (minutes: number) => `terroir, ${minutes}-minute read`,
+      onTheMap: 'On the map',
+      flyLabel: (label: string) => `Show ${label} on the map`,
+      testTitle: (name: string) => `Test me on ${name}`,
+      testText: (name: string, withZones: boolean) => `A short round on ${name}${withZones ? ' and its zones' : ''}: where they sit and what they are known for.`,
+      testButton: 'Test me',
+    },
+    fly: {
+      kicker: (name: string) => `From the ${name} guide`,
+      back: 'Back to the guide',
+      close: 'Close and stay on the map',
     },
   },
   search: {

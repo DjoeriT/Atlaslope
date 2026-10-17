@@ -5,11 +5,11 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, grapeLabel, measuresOf, photosOf, sheetOf, tasteLines } from '../facts';
+import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, sheetOf, tasteLines } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
-import { selectionToHash } from '../url';
+import { quizToHash, selectionToHash, type Selection } from '../url';
 import { AltitudeRange, ClimateBar } from './Charts';
 import { glanceCells, mosaicPics, nextRegion, swatchOf } from './helpers';
 import { Mosaic } from './Mosaic';
@@ -23,11 +23,16 @@ interface Props {
   tree: Tree;
   go: Go;
   place: Place;
+  /** The guide chapter to scroll to on opening ("Back to the guide"). */
+  at?: string;
+  /** Starts a review round of 10 on these places ("Test me"). */
+  onTest(set: string[]): void;
 }
 
-function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
+function Section({ id, title, kicker, children }: { id: string; title: string; kicker?: string; children: ReactNode }) {
   return (
     <section id={id} aria-labelledby={`${id}-h`}>
+      {kicker && <p className="kicker pg-kicker">{kicker}</p>}
       <h2 id={`${id}-h`} tabIndex={-1}>{title}</h2>
       {children}
     </section>
@@ -35,13 +40,19 @@ function Section({ id, title, children }: { id: string; title: string; children:
 }
 
 /** The full page of a place (#place=<id>&page): photos, a jump bar, ruled sections that each keep their source lines, and an "at a glance" box. */
-export function PlacePage({ tree, go, place }: Props) {
+export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
   const [current, setCurrent] = useState('');
   useEffect(() => {
     if (cardShownBefore()) heading.current?.focus({ preventScroll: true });
     noteCardKey('page');
   }, [place.id]);
+
+  useEffect(() => {
+    if (!at) return;
+    document.getElementById(`terroir-${at}`)?.scrollIntoView({ block: 'start' });
+    document.getElementById(`terroir-${at}-h`)?.focus({ preventScroll: true });
+  }, [place.id, at]);
 
   const trail = tree.breadcrumb(place.id, 'place');
   const region = tree.getRegion(place.region);
@@ -68,9 +79,33 @@ export function PlacePage({ tree, go, place }: Props) {
   const koppen = measures?.koppen ?? [];
   const producers = sheet?.producers?.items ?? [];
   const next = nextRegion(tree, place.region);
+  const guide = guideOf(place.id);
+  const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
+  const testMe = quizzed && (
+    <div className="pg-testme">
+      <div>
+        <b>{t.testTitle(place.name)}</b>
+        <span>{t.testText(place.name, testSet.length > 1)}</span>
+      </div>
+      <a className="btn accent" href={quizToHash({ sub: 'test', set: testSet })} onClick={(e) => { e.preventDefault(); onTest(testSet); }}>
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="8.5" /><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.6" /><circle cx="12" cy="16.6" r=".6" fill="currentColor" /></svg>
+        {t.testButton}
+      </a>
+    </div>
+  );
+  const pill = (chapter: string, index: number, label: string) => {
+    const to: Selection = { kind: 'place', id: place.id, fly: { chapter, index } };
+    return (
+      <Link key={`${chapter}.${index}`} className="fly" to={to} go={go} label={t.flyLabel(label)}>
+        <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" /><circle cx="12" cy="10" r="2.3" /></svg>
+        <span><small>{t.onTheMap}</small>{label}</span>
+      </Link>
+    );
+  };
 
   const sections = [
     { id: 'overview', label: t.sections.overview, present: !!sheet || !!official },
+    { id: 'terroir', label: t.sections.terroir, present: !!guide },
     { id: 'taste', label: t.sections.taste, present: !!tastes },
     { id: 'styles', label: t.sections.styles, present: famous.length > 0 },
     { id: 'grapes', label: t.sections.grapes, present: main.length > 0 || others.length > 0 || !!wineTypes },
@@ -124,7 +159,10 @@ export function PlacePage({ tree, go, place }: Props) {
           ))}
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
-        <p className="pg-sub">{sub}</p>
+        <p className="pg-sub">
+          {sub}
+          {guide && <>{' · '}<a href={selectionToHash({ kind: 'place', id: place.id, page: true })} onClick={jump('terroir')}>{t.terroirLink(guide.minutes)}</a></>}
+        </p>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
 
         <nav className="pg-jump" aria-label={t.jumpLabel}>
@@ -144,6 +182,37 @@ export function PlacePage({ tree, go, place }: Props) {
                     {official && <p className="official">{official}</p>}
                   </>
                 ) : <p className="pg-read">{official}</p>}
+              </Section>
+            )}
+
+            {guide && (
+              <Section id="terroir" title={guide.title} kicker={t.terroirKicker(guide.minutes)}>
+                <p className="pg-read">{guide.lede.text}</p>
+                <SourceLine cites={guide.lede.cite} />
+                {guide.chapters.map((ch) => {
+                  const own = ch.fly ?? [];
+                  return (
+                    <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
+                      <h3 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h3>
+                      {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
+                      {ch.cards && (
+                        <div className="pg-zguide">
+                          {ch.cards.map((c, i) => (
+                            <div key={c.title}>
+                              <b>{c.title}</b>
+                              <p className="cl">{c.climate}</p>
+                              <p>{c.wine}</p>
+                              {pill(ch.id, own.length + i, c.fly.label)}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
+                      <SourceLine cites={ch.cite} />
+                    </div>
+                  );
+                })}
+                {testMe}
               </Section>
             )}
 
@@ -263,6 +332,8 @@ export function PlacePage({ tree, go, place }: Props) {
                 </ul>
               </Section>
             )}
+
+            {!guide && testMe}
 
             <Section id="where" title={t.sections.where}>
               <dl className="pg-rows">

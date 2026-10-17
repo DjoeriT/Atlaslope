@@ -64,7 +64,7 @@ test('a link to the page opens it directly, and "Show on the map" goes to the ca
 test('the jump bar lists only the sections that exist and moves focus to the section', async ({ page }) => {
   await open(page, '#place=rioja&page');
   const jump = page.getByRole('navigation', { name: 'On this page' });
-  await expect(jump.locator('a')).toHaveText(['Overview', 'How it tastes', 'Famous styles', 'Grapes', 'The land', 'Producers', 'Zones', 'Where it sits']);
+  await expect(jump.locator('a')).toHaveText(['Overview', 'Terroir', 'How it tastes', 'Famous styles', 'Grapes', 'The land', 'Producers', 'Zones', 'Where it sits']);
   await jump.getByRole('link', { name: 'The land' }).click();
   await expect(page.locator('#land-h')).toBeFocused();
   await expect(page).toHaveURL(/#place=rioja&page/);
@@ -105,7 +105,7 @@ test('a place without photos shows its name on a cover, never a broken image', a
 test('every section of the Rioja page keeps a source link', async ({ page }) => {
   await open(page, '#place=rioja&page');
   const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
-  expect(ids).toEqual(['overview', 'taste', 'styles', 'grapes', 'land', 'producers', 'zones', 'where']);
+  expect(ids).toEqual(['overview', 'terroir', 'taste', 'styles', 'grapes', 'land', 'producers', 'zones', 'where']);
   for (const id of ids) {
     await expect(page.locator(`#${id} .src a[target="_blank"]`).first()).toBeVisible();
   }

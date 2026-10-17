@@ -185,3 +185,14 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .zrow .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
 .card.has-cover .foot .btn{width:100%;justify-content:center}
 @media (max-width:820px){.cover{aspect-ratio:16/8}}
+
+/* The caption card after a guide's fly-there (release 10; mock-guides-v1/2-fly-there.html): short, at the bottom left of the map */
+.card.flycap{top:auto;bottom:1.6rem;width:24rem;max-height:calc(100vh - 6.2rem)}
+.flycap .kicker{color:var(--accent);margin:0 0 .3rem}
+.flycap h1{font:500 2rem/1.05 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.flycap .cap{margin:0;color:var(--ink2)}
+.flycap .btn.primary{margin-top:1rem;width:100%;justify-content:center}
+@media (max-width:820px){.card.flycap{left:.6rem;right:.6rem;width:auto;bottom:.6rem}}
+.flycap .btn svg{width:1.1rem;height:1.1rem;flex:none}
+.flycap .close{background:var(--paper2);border-radius:50%;right:.8rem;top:.8rem}
+.flycap h1:focus{outline:none}

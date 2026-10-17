@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { sentences } from '../../src/pages/sentence';
 import { parseSelection, selectionToHash } from '../../src/url';
+import { strings } from '../../src/strings';
 
 describe('the region page route', () => {
   it('writes and reads #region=<id>&page', () => {
@@ -26,5 +27,13 @@ describe('sentences', () => {
   });
   it('does not split on a number or a lower-case word after a full stop', () => {
     expect(sentences('Vines grow at about 460 m. above the river, and more. Next.', 30)).toBe('Vines grow at about 460 m. above the river, and more.');
+  });
+});
+
+describe('the count under the region page title', () => {
+  it('says "1 place to learn" for one and "places to learn" otherwise', () => {
+    expect(strings.regionPage.placesToLearn(1)).toBe('place to learn');
+    expect(strings.regionPage.placesToLearn(0)).toBe('places to learn');
+    expect(strings.regionPage.placesToLearn(4)).toBe('places to learn');
   });
 });

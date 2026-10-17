@@ -66,7 +66,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
       </header>
       <div className="rintro">
         <p>{t.lede(places.length)}</p>
-        <div className="count"><b>{learn.length}</b><span className="kicker">{t.placesToLearn}</span></div>
+        <div className="count"><b>{learn.length}</b><span className="kicker">{t.placesToLearn(learn.length)}</span></div>
       </div>
       <ul className="rgrid" aria-label={t.grid}>
         {learn.map((p, i) => <Tile key={p.id} place={p} go={go} photo={shots[i]} onBroken={markBroken} />)}

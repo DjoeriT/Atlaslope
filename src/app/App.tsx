@@ -3,10 +3,12 @@ import places from '../../data/places.json';
 import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
 import { RegionPage } from '../pages/RegionPage';
 import { PlacePage } from '../pages/PlacePage';
-import { focusFor, validSelection } from '../cards/nav';
+import { FlyCaption } from '../cards/FlyCaption';
+import { flyOf, focusFor, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
 import { MapView } from '../map/MapView';
+import type { Focus } from '../map/focus';
 import type { QuizView } from '../map/quiz';
 import { makeClock } from '../quiz-ui/helpers';
 import { IDLE_VIEW, QuizScreen } from '../quiz-ui/QuizScreen';
@@ -20,6 +22,7 @@ import { FirstRun } from './FirstRun';
 import { TopBar } from './TopBar';
 import { useTheme } from './theme';
 
+const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
 
 export function App() {
@@ -36,22 +39,25 @@ export function App() {
   // A new card is a new history entry; back and forward come back as popstate.
   const go = useCallback((to: Selection) => {
     const cur = selRef.current;
-    if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page) return;
-    // The card and the page of one place share the camera, so the link keeps it.
-    const view = to.kind === cur.kind && to.id === cur.id ? parseView(location.hash) : null;
+    if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page && flyKey(to) === flyKey(cur) && to.at === cur.at) return;
+    // The card and the page of one place share the camera, so the link keeps it (a fly-there moves it, so it keeps nothing).
+    const view = to.kind === cur.kind && to.id === cur.id && !to.fly ? parseView(location.hash) : null;
     history.pushState(null, '', here() + selectionToHash(to, view));
     setQuiz(null);
+    setStay(null);
     setSel(to);
   }, []);
+  // "Close and stay on the map": the place's card opens over the camera the fly-there set, until anything else is opened.
+  const [stay, setStay] = useState<Focus | null>(null);
   const lastQuiz = useRef<QuizRoute>({ sub: null }); // where the quiz was, for "Back to the quiz"
   if (quiz) lastQuiz.current = quiz;
   // A round left for a place's card stays in memory (QuizScreen stays mounted, out of sight) until the learner is back or goes to Explore.
   const [keepQuiz, setKeepQuiz] = useState(false);
   const [autoStart, setAutoStart] = useState(false);
   const [todayClosed, setTodayClosed] = useState(false);
-  const openQuiz = useCallback((sub: QuizRoute['sub'] = null) => {
-    if (quizRef.current && quizRef.current.sub === sub) return;
-    const route = { sub };
+  const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
+    if (quizRef.current && quizRef.current.sub === sub && !set) return;
+    const route: QuizRoute = set ? { sub, set } : { sub };
     history.pushState(null, '', here() + quizToHash(route));
     setQuiz(route);
   }, []);
@@ -71,6 +77,7 @@ export function App() {
     const onPop = () => {
       setQuiz(parseQuizRoute(location.hash));
       setSel(validSelection(tree, parseSelection(location.hash)));
+      setStay(null);
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -92,7 +99,14 @@ export function App() {
   const clock = useMemo(() => makeClock(debugNow()), []);
   const progress = useQuiz(tree, clock);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
-  const focus = useMemo(() => focusFor(tree, sel), [tree, sel.kind, sel.id]);
+  const flown = flyOf(sel);
+  const fly = sel.kind === 'place' ? sel.fly : undefined;
+  const focus = useMemo(() => stay ?? focusFor(tree, sel), [tree, sel.kind, sel.id, flyKey(sel), stay]);
+  const closeFly = useCallback(() => {
+    setStay(focus);
+    history.pushState(null, '', here() + selectionToHash({ kind: 'place', id: selRef.current.id }, parseView(location.hash)));
+    setSel({ kind: 'place', id: selRef.current.id });
+  }, [focus]);
   const pageOpen = !quiz && sel.kind !== 'country' && !!sel.page;
   useEffect(() => {
     document.getElementById('map')?.toggleAttribute('inert', pageOpen); // the page covers the map; keep the keyboard off it
@@ -116,7 +130,8 @@ export function App() {
       {!quiz && keepQuiz && !pageOpen && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {quiz ? null : place && sel.page ? <PlacePage tree={tree} go={go} place={place} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
+      {quiz ? null : place && flown && fly && !sel.page ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
+        : place && sel.page ? <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
         : progress.hasProgress && !todayClosed ? (
           <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
         ) : <SpainCard tree={tree} go={go} />}
