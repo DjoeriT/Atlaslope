@@ -20,4 +20,6 @@ different test (39065041152: Escape from the Toro page landed on Castilla y Leó
 Cause [V, code read]: since release 16 a new card or quiz screen is pushed to the address at once, but its state lands a frame later
 inside the view transition; a map move ending in that gap rewrote the address from the old state, putting the old screen back. Fix:
 `withView()` in `src/url.ts` rewrites only the view part of the current address (`onView` in `src/app/App.tsx`); unit test
-`tests/unit/url-view.test.ts`. The two specs passed locally before and after (the race did not show here in 15 runs) [V]; CI is the check.
+`tests/unit/url-view.test.ts`. The two specs passed locally before and after (`--repeat-each=15` of the Escape test: no failure) [V]; CI is the check.
+Accepted change: an unknown id in a link (`#place=bogus`) now stays in the address while the card shows Spain; before, the first map move rewrote it.
+Code review `Review/address-view-code-review.md` (merge; tests added, the id change accepted).
