@@ -42,8 +42,9 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 10, place guides (PR #45; tag `release-10` on f0eada5, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
-redirects there. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
+Live: release 11, QA round (PRs #49 and #51: Reset view, hover highlight, large text, climate colours, richer Spain and region cards;
+tag `release-11` on db26b9b, publish run 39030838094, 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
+redirects there. Release 10, place guides (PR #45): tag on f0eada5. Release 9 (pages, photos, border fix): tag on 0c185b9. Release 8 (new look): tag on c18b463. Release 7, the quiz (PR #34): tag
 on 1f110ed, publish run 39010719099, live map check run 39010972212 passed; it also carries the logo and tab title (PR #32).
 Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. Release 4: tag on b5c773b.
 Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
@@ -76,8 +77,9 @@ session on his Mac also sees his thread messages and started a second publish ru
   (owner card 10:05Z "highlight only"), large-text layout on iPad, compass after a reload (PR #49, merged). Then (#50): places
   coloured by climate, six Köppen groups, with a legend and a "Colour places by: Climate / Study region" switch (owner 11:15Z, after
   "one wine tone" looked too uniform); Spain and region cards with photo rows, main grapes and "N due" (mock
-  `Review/mock-cards-climate-v2/`, approved 11:25Z; design check `Review/qa-round-1-cards-design-check.md`). Both ride the next
-  release (11); tester note `Review/release-11-what-to-test.md`. The mastery map and ready for friends move to 12 and 13.
+  `Review/mock-cards-climate-v2/`, approved 11:25Z; design check `Review/qa-round-1-cards-design-check.md`). Both live in
+  release 11 (17 Oct, owner "publish release 11" 11:53Z); tester note `Review/release-11-what-to-test.md`. The mastery map and ready
+  for friends move to 12 and 13 (#15, #16).
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
