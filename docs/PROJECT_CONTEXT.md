@@ -29,7 +29,7 @@ Still missing: the outlines of 13 Vinos de Pago (#18).
 ## 4. What is built
 Release 3, the atlas (PR #21): place tree and search (`src/tree/`), React shell with theme, first run and strings (`src/app/`), the
 MapLibre map with Esri satellite, atlas base, Terrarium terrain, map menu and the imagery-failure note (`src/map/`), the Spain, region
-and place cards with breadcrumbs and hash URLs (`src/cards/`, `src/url.ts`). Quiz and Progress are shown but disabled. The approved mocks are the visual reference:
+and place cards with breadcrumbs and hash URLs (`src/cards/`, `src/url.ts`). Quiz and Progress were shown but disabled (Quiz enabled in release 7). The approved mocks are the visual reference:
 `Review/mock-atlas-v3/` (round 3), `Review/mock-atlas-v2.2/` (quiz screens), `Review/mock-flow/` (every screen and how they connect).
 They need `assets/data.js` and `assets/maplibre-gl.*` from the project files to run (see their README).
 Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 quizzed places (`content/facts/<region>.json`, sources in
@@ -37,10 +37,14 @@ Release 4, the reference (PRs #23, #24): a cited fact sheet for each of the 79 q
 photos for 77 places (`public/photos/`, `data/photos.json`), grapes in search. The "Report a mistake" link is built but hidden (owner, no address).
 Release 6, tastes and producers (planned as 4.1, issue #27): How it tastes (76 sheets), Famous styles (75) and Famous producers (6, from
 English Wikipedia by the owner's card, Lebrija from Spanish) rows on the fact sheet.
+Release 7, the quiz (PR #34, issue #13): engine `src/quiz/` (answer log, two memories per place, boxes, intake, rounds, store with
+file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (Study and Review doors, focus, practise, round, Today card).
+Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 5, the world background map (PR #26; tag `release-5` on 25a951e, 16 Oct 20:10Z, publish run 38959982676, live map check
-run 38960276425 passed) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there. Release 4: tag on b5c773b.
+Live: release 7, the quiz (PR #34; tag `release-7` on 1f110ed, 17 Oct, publish run 39010719099, live map check run 39010972212
+passed) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/ redirects there. It also carries the logo and tab title (PR #32).
+Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. Release 4: tag on b5c773b.
 Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
 Numbering: the publish workflow takes only the next whole number, so the slice called "release 4.1" ships as release 6 and the quiz
 (planned as release 5) as release 7 [V, publish.yml; owner said "publish release 5" for the map, 16 Oct 20:05Z].
@@ -54,7 +58,7 @@ session on his Mac also sees his thread messages and started a second publish ru
   and producers, built (PR #31); planted-area main grapes moved to issue #29, more producers to #30. Then the quiz (planned as release 5,
   now numbered 7). The owner's go (16 Oct 12:51Z) covers the restart, the data step, releases 3 and 4 and the quiz (now release 7) [O];
   4.1 (now release 6) came from his cards at 19:37Z. The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
-- Release 7, the quiz (17 Oct, issue #13): built on one PR from `claude/release-7-quiz-zwvn6k`; mocks `Review/mock-quiz-v4/` approved
+- Release 7, the quiz (17 Oct, issue #13): live 17 Oct (PR #34); mocks `Review/mock-quiz-v4/` approved
   (owner card 05:44Z); engine, store and screens in `src/quiz/` and `src/quiz-ui/`; agents 0.61 M tokens [V, spend log]. Handoff
   `docs/handoffs/2026-10-17-release-7-quiz.md`. Issues #14 to #16 renumbered as releases 8 to 10.
 
