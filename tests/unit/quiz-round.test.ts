@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
 import {
-  afterAnswer, MIN_DISTANCE, replay, reviewRound, roundKeys, studyPlan, studyRound, studySet, withSlip,
+  afterAnswer, MIN_DISTANCE, replay, reviewRound, roundKeys, roundSeed, studyPlan, studyRound, studySet, withSlip,
   type Answer, type LogEntry, type MemoryName, type Round, type RoundItem,
 } from '../../src/quiz';
 
@@ -162,6 +162,25 @@ describe('Study rounds over data/places.json', () => {
       expect(questions(r)).toHaveLength(20);
       expect(closest(r.items)).toBeGreaterThanOrEqual(MIN_DISTANCE);
     }
+  });
+
+  it('a Review round with more new places than one batch keeps every intro at least MIN_DISTANCE from its question (ReviewBot, PR #69)', () => {
+    const ids = studySet(spain).map((p) => p.id);
+    for (const n of [6, 7, 8, 11, 12, 16, 20]) {
+      for (let seed = 0; seed < 30; seed++) {
+        const r = reviewRound(spain, ids.slice(0, n), [], today, { seed });
+        expect(introsFirst(r.items)).toBe(true);
+        expect(closest(r.items)).toBeGreaterThanOrEqual(MIN_DISTANCE);
+      }
+    }
+    const three = ids.slice(0, 3).flatMap((id) => [intro(id, -3), answer(id, -2)]);
+    for (let seed = 0; seed < 30; seed++) expect(closest(reviewRound(spain, ids.slice(0, 20), three, today, { seed }).items)).toBeGreaterThanOrEqual(MIN_DISTANCE);
+  });
+
+  it('roundSeed differs by day and by log length, and is the same for the same moment', () => {
+    expect(roundSeed(now(0), 4)).toBe(roundSeed(now(0.3), 4));
+    expect(roundSeed(now(0), 4)).not.toBe(roundSeed(now(0), 5));
+    expect(roundSeed(now(0), 4)).not.toBe(roundSeed(now(1), 4));
   });
 
   it('a Review round on one place still asks everything, farthest apart it can', () => {

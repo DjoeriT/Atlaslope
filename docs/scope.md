@@ -45,7 +45,7 @@ One model for every country, with Spain as its first instance.
 
 ## Quiz rules (owner, 16 Oct 2026, flow sketch cards)
 - **Intake**: five new places a day (was "a session"; default from the plan review, 16 Oct), in course order, on top of what is due. [O]
-- **Mastery shades**: new (never asked), learning (asked), known (right on the last two tries), solid (three spaced passes in a row, days apart). A miss drops a place back. [O]
+- **Mastery shades**: new (never asked), learning (asked), known (right twice in a row, a day apart; was "right on the last two tries" until 17 Oct, see "Known needs two days"), solid (three spaced passes in a row, days apart). A miss drops a place back. [O]
 - **Zones**: enter the quiz pool only once their parent appellation is known. Until then they show on the map and in guides. [O]
 - **Course order**: the Spanish Wine Scholar sequence through the ten study regions, north to south, drives "continue" and intake. [O]
 

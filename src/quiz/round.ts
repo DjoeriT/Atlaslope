@@ -91,11 +91,16 @@ function arrangeOnce(reviews: RoundItem[], fresh: string[], rng: () => number): 
   const batches: string[][] = [];
   for (let i = 0; i < fresh.length; i += INTRO_BATCH) batches.push(fresh.slice(i, i + INTRO_BATCH));
   const plan: RoundItem[] = take(pool, Math.floor(pool.length / (batches.length + 1)));
+  // The batch before the last holds back its last few questions to sit between the last batch's intros and its questions,
+  // so a short last batch (a Review set of six new places: five, then one) is not asked straight after its intro.
+  let held: string[] = [];
   batches.forEach((batch, b) => {
     plan.push(...batch.map((place): RoundItem => ({ kind: 'intro', place })));
     const mine = take(pool, Math.ceil(pool.length / (batches.length - b)));
-    shuffled(batch, rng).forEach((place, i) => {
-      plan.push(...take(mine, Math.ceil(mine.length / (batch.length - i))));
+    const asks = [...held, ...shuffled(batch, rng)];
+    held = b === batches.length - 2 ? asks.splice(-(MIN_DISTANCE - 1)) : [];
+    asks.forEach((place, i) => {
+      plan.push(...take(mine, Math.ceil(mine.length / (asks.length - i))));
       plan.push({ kind: 'question', place, memory: 'where', type: 'what-is-this' });
     });
   });

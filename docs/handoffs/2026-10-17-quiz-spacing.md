@@ -25,3 +25,9 @@ Thread "Quiz round spacing", started from the owner's point that a Study round s
 
 ## Where things are
 PR from `claude/spaced-quiz-qybrxt`; tester note `Review/quiz-spacing-what-to-test.md`.
+
+## Review
+ReviewBot code review `Review/quiz-spacing-code-review.md`: the must-fix (a short last batch of new places in a Review round was asked
+right after its intro) is fixed by holding the previous batch's last three questions back, with a test over 6 to 20 new places; scope
+line 48 now points at the new known rule; `roundSeed` has a test. Kept as is: re-asks only skip the very next screen (stated in scope),
+and the UI test pins the planned order on purpose so a change in the shuffle fails loudly.
