@@ -5,6 +5,8 @@ import type { NodeKind } from './tree';
 export interface Selection {
   kind: NodeKind;
   id: string;
+  /** A place opened as its full page (#place=toro&page) rather than as the card on the map. */
+  page?: boolean;
 }
 
 export interface View {
@@ -21,8 +23,10 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   const p = new URLSearchParams();
   if (sel.kind === 'place') p.set('place', sel.id);
   else if (sel.kind === 'region') p.set('region', sel.id);
+  if (sel.kind === 'place' && sel.page) p.set('page', '');
   if (view) p.set('view', viewToText(view));
-  const text = p.toString().replace(/%2C/g, ',');
+  // `page` is a flag, written bare rather than as page=
+  const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)page=(?=&|$)/, '$1page');
   return text ? `#${text}` : '';
 }
 
@@ -31,7 +35,7 @@ export function parseSelection(hash: string): Selection {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
   const place = p.get('place');
   const region = p.get('region');
-  if (place) return { kind: 'place', id: place };
+  if (place) return p.has('page') ? { kind: 'place', id: place, page: true } : { kind: 'place', id: place };
   if (region) return { kind: 'region', id: region };
   return SPAIN;
 }
