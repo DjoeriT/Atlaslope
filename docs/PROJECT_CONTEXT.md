@@ -138,6 +138,9 @@ archived context file; the ones that changed:
 - 2026-10-17 [O]: UX sweep (cards 15:58Z): motion between cards, pages and quiz steps; the phone card is a sheet with three stops; a
   study region holding only its namesake (Rioja) is skipped in trails and navigation. Progress tab hidden until the mastery map. Handoff
   `docs/handoffs/2026-10-17-ux-sweep.md`.
+- 2026-10-17 [O]: quiz rounds fixed (cards 18:09 to 18:20Z): new places shown in a batch and asked later in the round, rounds shuffled,
+  three screens at least between two about one place, known needs two rights a day apart, no level question. Handoff
+  `docs/handoffs/2026-10-17-quiz-spacing.md`.
 - 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
 
 ## 9. Where things are written down

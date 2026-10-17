@@ -2,8 +2,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
 import {
-  afterAnswer, replay, reviewRound, roundKeys, studyPlan, studyRound, studySet, withSlip,
-  type Answer, type LogEntry, type MemoryName, type Round,
+  afterAnswer, MIN_DISTANCE, replay, reviewRound, roundKeys, studyPlan, studyRound, studySet, withSlip,
+  type Answer, type LogEntry, type MemoryName, type Round, type RoundItem,
 } from '../../src/quiz';
 
 const fixture = loadTree(JSON.parse(readFileSync('tests/fixtures/quiz-tree.json', 'utf8')));
@@ -17,11 +17,20 @@ const intro = (place: string, days: number): LogEntry => ({ kind: 'intro', place
 const answer = (place: string, days: number, right = true, memory: MemoryName = 'where'): Answer => ({
   kind: 'answer', place, memory, type: memory === 'what' ? 'fact' : 'find-it', right, at: at(days), seconds: 3,
 });
-/** A place whose where and what are both known by day 2. */
+/** A place whose where and what are both known by day 2.1 (each memory right twice, a day apart). */
 const known = (place: string): LogEntry[] => [
-  intro(place, 0), answer(place, 0), answer(place, 1), answer(place, 1.1, true, 'what'), answer(place, 2, true, 'what'),
+  intro(place, 0), answer(place, 0), answer(place, 1), answer(place, 1.1, true, 'what'), answer(place, 2.1, true, 'what'),
 ];
 const questions = (r: Round) => r.items.filter((i) => i.kind === 'question');
+const label = (i: RoundItem) => (i.kind === 'intro' ? `intro ${i.place}` : `${i.place}/${i.memory}/${i.type}`);
+/** The closest two screens about the same place come in a round (Infinity when every place shows once). */
+function closest(items: RoundItem[]): number {
+  let min = Infinity;
+  items.forEach((a, i) => items.slice(i + 1).forEach((b, j) => { if (a.place === b.place) min = Math.min(min, j + 1); }));
+  return min;
+}
+/** Every new place's intro comes before its first question. */
+const introsFirst = (items: RoundItem[]) => items.every((q, i) => q.kind !== 'question' || q.type !== 'what-is-this' || items.slice(0, i).some((x) => x.kind === 'intro' && x.place === q.place));
 const planOf = (log: LogEntry[], days: number, opts = {}) => studyPlan(fixture, replay(log), now(days), opts);
 
 describe('Study intake', () => {
@@ -71,17 +80,13 @@ describe('Study intake', () => {
 });
 
 describe('Review set', () => {
-  it('asks Vinos de Calidad the set holds, drops never-asked places, due first then new places with their intro', () => {
+  it('asks Vinos de Calidad the set holds, drops never-asked places, due and new places with their intro', () => {
     const log = [intro('south-a', 0), answer('south-a', 0.5), intro('north-a', 0), answer('north-a', 0)];
     const r = reviewRound(fixture, ['south-a', 'south-vc', 'south-none', 'north-b', 'north-a'], log, now(2), { size: 10 });
-    expect(r.items).toEqual([
-      { kind: 'question', place: 'north-a', memory: 'where', type: 'find-it' },
-      { kind: 'question', place: 'south-a', memory: 'where', type: 'find-it' },
-      { kind: 'intro', place: 'north-b' },
-      { kind: 'question', place: 'north-b', memory: 'where', type: 'what-is-this' },
-      { kind: 'intro', place: 'south-vc' },
-      { kind: 'question', place: 'south-vc', memory: 'where', type: 'what-is-this' },
+    expect(r.items.map(label).sort()).toEqual([
+      'intro north-b', 'intro south-vc', 'north-a/where/find-it', 'north-b/where/what-is-this', 'south-a/where/find-it', 'south-vc/where/what-is-this',
     ]);
+    expect(introsFirst(r.items)).toBe(true);
     expect(r.more).toBe(false);
   });
 
@@ -106,41 +111,85 @@ describe('Study rounds over data/places.json', () => {
   const log = seen.flatMap((p, i) => [intro(p.id, -3), answer(p.id, -2 - i / 1440)]);
   const today = now(0);
 
-  it('holds 20 questions, due memories first, most overdue first', () => {
+  it('holds 20 questions: the 20 most overdue, not in the order they were learned', () => {
     const r = studyRound(spain, log, today);
     expect(questions(r)).toHaveLength(20);
-    expect(r.items.map((i) => i.place)).toEqual(seen.slice(15).reverse().map((p) => p.id));
+    const places = r.items.map((i) => i.place);
+    expect([...places].sort()).toEqual(seen.slice(15).map((p) => p.id).sort());
+    expect(places).not.toEqual(seen.slice(15).reverse().map((p) => p.id));
     expect(r.items.every((i) => i.kind === 'question' && i.type === 'find-it')).toBe(true);
     expect(r.more).toBe(true);
   });
 
-  it('Keep going builds the next 20 from what is left (due, then intake with intro first), then nothing is left', () => {
+  it('gives the same order for the same seed and a different one for another seed', () => {
+    expect(studyRound(spain, log, today, { seed: 3 })).toEqual(studyRound(spain, log, today, { seed: 3 }));
+    expect(studyRound(spain, log, today, { seed: 3 }).items).not.toEqual(studyRound(spain, log, today, { seed: 4 }).items);
+  });
+
+  it('Keep going builds the next 20 from what is left: the other due memories and the intake, shown as a batch and asked later', () => {
     const r1 = studyRound(spain, log, today);
     const r2 = studyRound(spain, log, today, { asked: roundKeys(r1) });
     expect(questions(r2)).toHaveLength(20);
-    expect(r2.items.slice(0, 15).map((i) => i.place)).toEqual(seen.slice(0, 15).reverse().map((p) => p.id));
-    const intake = r2.items.slice(15);
-    expect(intake).toHaveLength(10);
-    for (let i = 0; i < 10; i += 2) {
-      expect(intake[i].kind).toBe('intro');
-      expect(intake[i + 1]).toEqual({ kind: 'question', place: intake[i].place, memory: 'where', type: 'what-is-this' });
+    const due = r2.items.filter((i) => i.kind === 'question' && i.type === 'find-it').map((i) => i.place);
+    expect(due.sort()).toEqual(seen.slice(0, 15).map((p) => p.id).sort());
+    const intros = r2.items.flatMap((i, at) => (i.kind === 'intro' ? [at] : []));
+    expect(intros).toHaveLength(5);
+    expect(intros[4] - intros[0]).toBe(4); // five intros in a row
+    for (const at of intros) {
+      const q = r2.items.findIndex((i) => i.kind === 'question' && i.place === r2.items[at].place);
+      expect(r2.items[q]).toEqual({ kind: 'question', place: r2.items[at].place, memory: 'where', type: 'what-is-this' });
+      expect(q - at).toBeGreaterThanOrEqual(MIN_DISTANCE);
     }
     expect(r2.more).toBe(false);
     const r3 = studyRound(spain, log, today, { asked: [...roundKeys(r1), ...roundKeys(r2)] });
     expect(r3).toEqual({ items: [], more: false });
   });
 
+  it('never asks a new place on the screen after its intro, even on day one with nothing else to ask', () => {
+    for (let seed = 0; seed < 20; seed++) {
+      const r = studyRound(spain, [], today, { seed });
+      expect(r.items.slice(0, 5).every((i) => i.kind === 'intro')).toBe(true);
+      expect(introsFirst(r.items)).toBe(true);
+      expect(closest(r.items)).toBeGreaterThanOrEqual(MIN_DISTANCE);
+    }
+  });
+
+  it('keeps two screens about the same place at least MIN_DISTANCE apart, where and what of one place included', () => {
+    // 12 places with where and what both due: 24 memories, 20 asked, so some places come twice.
+    const both = studySet(spain).slice(0, 12).flatMap((p) => known(p.id).map((e) => ({ ...e, at: at(Date.parse(e.at) / DAY - T0 / DAY - 30) })));
+    for (let seed = 0; seed < 200; seed++) {
+      const r = studyRound(spain, both, today, { seed });
+      expect(questions(r)).toHaveLength(20);
+      expect(closest(r.items)).toBeGreaterThanOrEqual(MIN_DISTANCE);
+    }
+  });
+
+  it('a Review round on one place still asks everything, farthest apart it can', () => {
+    const r = reviewRound(fixture, ['north-a'], known('north-a'), now(40));
+    expect(r.items.map(label).sort()).toEqual(['north-a/what/fact', 'north-a/where/find-it']);
+  });
+
   it('asks a miss once more at the end of the round, typed for its new state', () => {
     const r = studyRound(spain, log, today, { asked: roundKeys(studyRound(spain, log, today)) });
-    const first = r.items.findIndex((i) => i.kind === 'intro');
-    const q = r.items[first + 1];
+    const at0 = r.items.findIndex((i) => i.kind === 'question' && i.type === 'what-is-this');
+    const q = r.items[at0];
     const missed = [...log, intro(q.place, 0), answer(q.place, 0.01, false)];
-    const again = afterAnswer(r, first + 1, false, missed);
+    const again = afterAnswer(r, at0, false, missed);
     expect(again.items).toHaveLength(r.items.length + 1);
     expect(again.items[again.items.length - 1]).toEqual({ kind: 'question', place: q.place, memory: 'where', type: 'find-it', reask: true });
     expect(afterAnswer(again, again.items.length - 1, false, missed)).toEqual(again);
-    expect(afterAnswer(r, first + 1, true, log)).toEqual(r);
-    expect(afterAnswer(r, first, false, log)).toEqual(r);
+    expect(afterAnswer(r, at0, true, log)).toEqual(r);
+    expect(afterAnswer(r, r.items.findIndex((i) => i.kind === 'intro'), false, log)).toEqual(r);
+  });
+
+  it('a miss on the last question is not asked again straight away; one on the question before last is, a screen later', () => {
+    const r = studyRound(spain, log, today);
+    const last = r.items.length - 1;
+    const missed = (i: number) => [...log, answer(r.items[i].place, 0.01, false)];
+    expect(afterAnswer(r, last, false, missed(last))).toEqual(r);
+    const again = afterAnswer(r, last - 1, false, missed(last - 1));
+    expect(again.items).toHaveLength(r.items.length + 1);
+    expect(again.items[again.items.length - 1]).toMatchObject({ place: r.items[last - 1].place, reask: true });
   });
 
   it('after a slip, the missed memory moves on as if right', () => {

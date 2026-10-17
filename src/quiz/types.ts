@@ -6,7 +6,7 @@ export type MemoryName = 'where' | 'what';
 /** What is this (four choices), find it on the map, or the fact question. */
 export type QuestionType = 'what-is-this' | 'find-it' | 'fact';
 
-/** new: never asked; learning: asked; known: right on the last two answers; solid: three rights in a row, each a day apart. */
+/** new: never asked; learning: asked; known: two rights in a row, a day apart; solid: three rights in a row, each a day apart. */
 export type Shade = 'new' | 'learning' | 'known' | 'solid';
 
 /** One answer. A miss the learner marked "That was a slip" keeps `right: false` and gets `slip: true`. */

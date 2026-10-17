@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { plannedRound } from './round-plan';
 
 // Mobile check (17 Oct 2026, owner: "weird navigation and other weirdness"): phone layouts, search over the card,
 // the Explore tab and Back to map in the history, and the quiz card's scroll between steps. No network.
@@ -108,15 +109,15 @@ test.describe('on a phone', () => {
     await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
     await page.goto('./?now=2026-10-17T10:00:00Z#quiz');
     await page.getByRole('button', { name: /Learn 5 new places/ }).click();
-    const name = (await page.locator('h1.intro-h').textContent())!;
-    await page.getByRole('button', { name: 'Got it, ask me' }).click();
+    for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
     await expect(page.locator('.q')).toHaveText('What is this?');
+    const name = plannedRound('2026-10-17T10:00:00Z').find((i) => i.kind === 'question')!.name;
     // A wrong pick: the result shows at the top of the card, then the next step opens scrolled to the top.
     await page.locator('.choice').filter({ hasNotText: name }).first().click();
     await expect(page.locator('#result')).toContainText('The answer is');
     expect(await onTop(page, '#result')).toBe(true);
     await page.getByRole('button', { name: 'Next question' }).click();
-    await expect(page.locator('h1.intro-h')).toBeVisible();
+    await expect(page.locator('.q')).toHaveText('What is this?');
     await expect(page.locator('.card .body').first()).toHaveJSProperty('scrollTop', 0);
   });
 });

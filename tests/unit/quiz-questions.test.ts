@@ -63,7 +63,6 @@ describe('fact questions', () => {
   const trueOf = (kind: string, id: string): string[] => {
     if (kind === 'grape') return (grapes[id] ?? []).flatMap((x) => [x.local, x.grape ? `${x.local} (${x.grape})` : x.local]);
     if (kind === 'style') return famous[id] ?? [];
-    if (kind === 'level') return [tree.getPlace(id)!.kind];
     return (climate[id] ?? []).map(([n]) => n);
   };
 
@@ -79,7 +78,7 @@ describe('fact questions', () => {
         expect(POOL.some((id) => id !== 'south-a' && trueOf(q.fact, id).includes(wrong))).toBe(true);
       }
     }
-    expect([...seen].sort()).toEqual(['climate', 'grape', 'level', 'style']);
+    expect([...seen].sort()).toEqual(['climate', 'grape', 'style']);
   });
 
   it('asks climate as the class with the largest share', () => {
@@ -88,12 +87,10 @@ describe('fact questions', () => {
     expect(climateQ && climateQ.type === 'fact' && climateQ.answer).toBe('Cold');
   });
 
-  it('never asks level when every choice would be the same kind', () => {
-    const sameKind = ['south-a', 'south-b', 'south-c', 'north-b', 'north-c'];
-    expect(askableFacts('south-a', ctx(1, { pool: sameKind }))).not.toContain('level');
-    expect(askableFacts('south-a', ctx(1))).toContain('level');
+  it('never asks level: 68 of the 73 Study places are a DO, so "DO" was nearly always right (owner card, 17 Oct 2026)', () => {
+    expect(askableFacts('south-a', ctx(1))).not.toContain('level');
     for (let seed = 0; seed < 30; seed++) {
-      const q = makeQuestion(item('south-a', 'fact'), ctx(seed, { pool: sameKind }));
+      const q = makeQuestion(item('south-a', 'fact'), ctx(seed));
       expect(q?.type === 'fact' && q.fact).not.toBe('level');
     }
   });
