@@ -19,6 +19,7 @@ import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
 import { addMapNames, applyMapNames, registerGlyphs } from './mapNames';
 import { TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
+import { stateSetter } from './terrainCache';
 
 export interface MapController {
   map: MapLibreMap;
@@ -178,7 +179,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (!matchMedia('(max-width: 51.25em) and (orientation: portrait)').matches) return { left: Math.round((card?.right ?? 0) + rem), top: Math.round(rem * 4.6), bottom: Math.round(rem * 1.5), right: Math.round(rem * 5) };
     return { left: Math.round(rem), top: Math.round(rem * 4.6), bottom: Math.round((card ? window.innerHeight - card.top : window.innerHeight * 0.52) + rem), right: Math.round(rem * 4) };
   };
-  const setState = (source: string, id: string, state: Record<string, boolean>) => map.setFeatureState({ source, id }, state);
+  const setState = stateSetter(map);
   const FRAME_ZOOM = { region: 9, place: 10.5, zone: 10.5 };
 
   let pin: maplibregl.Marker | null = null;
@@ -367,7 +368,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       if (quizSel) setState('dos', quizSel, { sel: false });
       if (selected) setState('dos', selected, { sel: false });
     }
-    if (quizZoneSel) map.setFeatureState({ source: 'zones', id: quizZoneSel }, { sel: false });
+    if (quizZoneSel) setState('zones', quizZoneSel, { sel: false });
     quizZoneSel = null;
     quizSel = null;
     quizFrame = null;
