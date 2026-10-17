@@ -120,7 +120,7 @@ export function App() {
         : progress.hasProgress && !todayClosed ? (
           <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
         ) : <SpainCard tree={tree} go={go} />}
-      <FirstRun />
+      {!pageOpen && <FirstRun />}
     </>
   );
 }
