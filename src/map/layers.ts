@@ -11,8 +11,8 @@ export const DEFAULT_MENU: MenuState = { satellite: true, relief: true, boundari
 
 type Visibility = 'visible' | 'none';
 
-/** Layer ids in draw order. `satellite` is absent from the style when the build has no key. */
-export const LAYER_IDS = ['land', 'satellite', 'hillshade', 'ocean', 'coast', 'borders', 'dos-casing', 'dos-fill', 'dos-line'] as const;
+/** Layer ids in draw order. `satellite` and `pnoa` are absent from the style when the build has no key. */
+export const LAYER_IDS = ['land', 'satellite', 'pnoa', 'hillshade', 'ocean', 'coast', 'borders', 'dos-casing', 'dos-fill', 'dos-line'] as const;
 export type LayerId = (typeof LAYER_IDS)[number];
 
 /** `imagery` is false when satellite is missing or has failed: the atlas base shows whatever the menu says. */
@@ -22,6 +22,7 @@ export function layerVisibility(menu: MenuState, imagery: boolean): Record<Layer
   return {
     land: 'visible',
     satellite: v(sat),
+    pnoa: v(sat),
     hillshade: v(menu.relief),
     ocean: 'visible',
     coast: 'visible',
@@ -45,9 +46,18 @@ export function basemapPaint(sat: boolean) {
     bordersCasing: { color: sat ? '#1A1512' : '#FFFFFF', opacity: sat ? 0.45 : 0.75 },
     hillshadeExaggeration: sat ? 0.25 : 0.5,
     // A hovered place shows even where it is dimmed, so a row in a card always finds its place on the map.
-    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, hover, 0.85, dim, 0.06, sat ? 0.6 : 0.5],
-    dosLineOpacity: ['case', hover, 1, dim, 0.2, 0.7],
-    dosLineWidth: ['case', sel, 3, hover, 2.8, sat ? 1.6 : 0.9],
+    // Over the photo the fills thin out from zoom 10 to 13, so close in the land itself shows (towns, vineyards, rivers)
+    // with the outline still drawn; on the plain atlas they stay solid.
+    dosFillOpacity: sat
+      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6], 13, ['case', sel, 0.3, hover, 0.4, dim, 0.03, 0.14]]
+      : ['case', sel, 0.65, hover, 0.85, dim, 0.06, 0.5],
+    // As the fills thin close in over the photo, the outline gets stronger so the place still reads.
+    dosLineOpacity: sat
+      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', hover, 1, dim, 0.2, 0.7], 12, ['case', hover, 1, dim, 0.25, 0.95]]
+      : ['case', hover, 1, dim, 0.2, 0.7],
+    dosLineWidth: sat
+      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 3, hover, 2.8, 1.6], 12, ['case', sel, 3.2, hover, 3, 2.2]]
+      : ['case', sel, 3, hover, 2.8, 0.9],
     dosLineDash: [10, 0],
   };
 }
