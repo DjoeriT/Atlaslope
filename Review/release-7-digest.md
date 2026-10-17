@@ -16,10 +16,12 @@ a Home Screen manifest. Out of v1 (owner, 12:49Z): mixed-up pairs, the Study inc
 - **Vinos de Calidad**: not in Study intake; asked in Review when the picked set contains them. [A, from the 2.2 rule "only in an All of Spain quiz"]
 - **Two memories per place**: `where` (map questions) and `what` (fact question), each with its own box and due date. [O]
 - **Boxes**: five, gaps 1, 3, 7, 14, 30 days. First right answer puts a memory in box 1. A right answer on a due memory moves it up one
-  box (max 5); a right answer before it is due changes nothing; a miss drops one box (min 1) and is due now. [O; "first right = box 1" A]
+  box (max 5); a right answer before it is due changes nothing; a miss drops one box (min 0) and is due after that box's gap (box 0:
+  tomorrow). The re-ask at the end of the same round is therefore never due: it is logged, it moves nothing. [O; "first right = box 1" and
+  the re-ask ruling LeadBot 17 Oct, A]
 - **Shades** per memory: new (never asked), learning (asked), known (right on the last two answers), solid (three right answers in a row
-  on three different days, each at least a day apart). Any miss drops it back from known or solid. [O] A place's shade is the lower of its
-  two memories; a place is known only when both are known. [O; "lower of the two" A]
+  on three different days, each at least a day apart). Any miss drops it back from known or solid. [O] A place's shade follows `where`, capped
+  by `what`: new while `where` is new; known only when both are known; solid only when both are solid; otherwise learning. [O; cap rule A]
 - **Question type by memory**: `where` new → what is this (four choices); `where` learning or later → find it; `what` is asked only once
   `where` is known → the fact question. [O, scope 12:37Z replaces decisions #14: "solid gets the fact question"]
 - **Show, then ask**: a place's first appearance is the intro (map, name, why line, one fact), then its first question in the same round.
