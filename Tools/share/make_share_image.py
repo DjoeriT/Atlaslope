@@ -82,7 +82,7 @@ html, body {{ margin: 0; width: {W}px; height: {H}px; overflow: hidden; backgrou
 .map {{ position: absolute; inset: 0; }}
 .text {{ position: absolute; left: 80px; top: 0; bottom: 0; width: 520px; display: flex; flex-direction: column; justify-content: center; }}
 .name {{ font: 600 104px/1 Newsreader, serif; color: {C['name']}; letter-spacing: -1.5px; margin: 36px 0 22px; }}
-.tag {{ font: 400 40px/1.3 'IBM Plex Sans', sans-serif; color: {C['tag']}; }}
+.tag {{ font: 400 34px/1.3 'IBM Plex Sans', sans-serif; color: {C['tag']}; }}
 .credit {{ position: absolute; right: 22px; bottom: 14px; font: 400 13px/1 'IBM Plex Sans', sans-serif; color: {C['muted']}; }}
 </style></head><body>
 <svg class="map" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
@@ -92,7 +92,7 @@ html, body {{ margin: 0; width: {W}px; height: {H}px; overflow: hidden; backgrou
 <rect x="0" y="0" width="600" height="{H}" fill="url(#fade)"/>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0.78" stop-color="{C['bg']}"/><stop offset="1" stop-color="{C['bg']}" stop-opacity="0"/></linearGradient></defs>
 </svg>
-<div class="text">{logo}<div class="name">AtlaSlope</div><div class="tag">The wine atlas<br>that quizzes you</div></div>
+<div class="text">{logo}<div class="name">AtlaSlope</div><div class="tag">A study atlas for WSET<br>and Wine Scholar candidates</div></div>
 <div class="credit">Map: © MAPA · Natural Earth</div>
 </body></html>"""
 (ROOT / 'Tools/share/share.html').write_text(html)
