@@ -51,8 +51,13 @@ export function basemapPaint(sat: boolean) {
     dosFillOpacity: sat
       ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6], 13, ['case', sel, 0.3, hover, 0.4, dim, 0.03, 0.14]]
       : ['case', sel, 0.65, hover, 0.85, dim, 0.06, 0.5],
-    dosLineOpacity: ['case', hover, 1, dim, 0.2, 0.7],
-    dosLineWidth: ['case', sel, 3, hover, 2.8, sat ? 1.6 : 0.9],
+    // As the fills thin close in over the photo, the outline gets stronger so the place still reads.
+    dosLineOpacity: sat
+      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', hover, 1, dim, 0.2, 0.7], 12, ['case', hover, 1, dim, 0.25, 0.95]]
+      : ['case', hover, 1, dim, 0.2, 0.7],
+    dosLineWidth: sat
+      ? ['interpolate', ['linear'], ['zoom'], 10, ['case', sel, 3, hover, 2.8, 1.6], 12, ['case', sel, 3.2, hover, 3, 2.2]]
+      : ['case', sel, 3, hover, 2.8, 0.9],
     dosLineDash: [10, 0],
   };
 }

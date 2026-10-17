@@ -6,7 +6,7 @@ import maplibregl, { type LayerSpecification, type SourceSpecification } from 'm
 export const OSM_TILEJSON = 'https://tiles.openfreemap.org/planet';
 export const OSM_ATTRIBUTION = '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> © <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>';
 /** Font stacks built into public/glyphs/; any other stack or range gets an empty answer instead of a 404. */
-export const GLYPH_STACKS = ['Plex Sans Regular', 'Plex Sans Medium', 'Plex Sans SemiBold', 'Newsreader Italic', 'Newsreader Medium'];
+export const GLYPH_STACKS = ['Plex Sans Regular', 'Plex Sans Medium', 'Newsreader Italic', 'Newsreader Medium'];
 export const GLYPH_RANGES = ['0-255', '256-511', '8192-8447'];
 export const GLYPHS_URL = 'glyphs://{fontstack}/{range}';
 
@@ -19,60 +19,68 @@ export function osmSource(): SourceSpecification {
 /** Colours over the photo (sat) and over the plain atlas. */
 export function namePaint(sat: boolean) {
   return {
-    text: sat ? '#FFFFFF' : '#2B2420',
-    halo: sat ? 'rgba(18,14,12,0.78)' : 'rgba(255,255,255,0.92)',
+    // Inks from Review/visual-style.md: white and dark ink 1 over the photo, light inks 1 and 2 on the atlas.
+    text: sat ? '#FFFFFF' : '#1F1F1F',
+    halo: sat ? 'rgba(18,14,12,0.85)' : 'rgba(255,255,255,0.92)',
     water: sat ? '#D6ECF7' : '#2F6A84',
-    waterHalo: sat ? 'rgba(10,24,34,0.75)' : 'rgba(255,255,255,0.9)',
-    muted: sat ? '#F1ECE4' : '#5A4E46',
+    waterHalo: sat ? 'rgba(10,24,34,0.8)' : 'rgba(255,255,255,0.9)',
+    muted: sat ? '#F3F1EC' : '#484848',
+    faint: sat ? 'rgba(255,255,255,0.72)' : '#6E6E6E',
   };
 }
 
-const NAME = ['coalesce', ['get', 'name'], ['get', 'name_en']] as const;
+const FULL_NAME = ['coalesce', ['get', 'name'], ['get', 'name_en']];
+/** Bilingual names ("Labastida / Bastida") keep their first form, which is the Spanish one in OSM's Spanish data. */
+const NAME = ['let', 'n', FULL_NAME, ['let', 'i', ['index-of', ' / ', ['var', 'n']],
+  ['case', ['>=', ['var', 'i'], 0], ['slice', ['var', 'n'], 0, ['var', 'i']], ['var', 'n']]]] as const;
 
 export function mapNameLayers(sat: boolean, visible: boolean): LayerSpecification[] {
   const p = namePaint(sat);
   const visibility = visible ? 'visible' : 'none';
-  const halo = { 'text-halo-color': p.halo, 'text-halo-width': 1.4, 'text-halo-blur': 0.4 };
+  const halo = { 'text-halo-color': p.halo, 'text-halo-width': 1.6, 'text-halo-blur': 0.6 };
+  // Every OSM name stays smaller than the wine places' own labels (13.6 px serif, src/map/map.css), which are the hero.
   return [
     {
       id: 'osm-water', type: 'symbol', source: 'osm', 'source-layer': 'water_name', minzoom: 10,
       filter: ['in', ['get', 'class'], ['literal', ['lake', 'bay', 'strait']]],
       layout: { visibility, 'text-field': NAME, 'text-font': ['Newsreader Italic'], 'text-size': 13, 'text-max-width': 8 },
-      paint: { 'text-color': p.water, 'text-halo-color': p.waterHalo, 'text-halo-width': 1.4 },
+      paint: { 'text-color': p.water, 'text-halo-color': p.waterHalo, 'text-halo-width': 1.6 },
     },
     {
       id: 'osm-river', type: 'symbol', source: 'osm', 'source-layer': 'waterway', minzoom: 9,
       filter: ['any', ['==', ['get', 'class'], 'river'], ['all', ['>=', ['zoom'], 13], ['in', ['get', 'class'], ['literal', ['stream', 'canal']]]]],
       layout: {
         visibility, 'symbol-placement': 'line', 'symbol-spacing': 400, 'text-field': NAME, 'text-font': ['Newsreader Italic'],
-        'text-size': ['interpolate', ['linear'], ['zoom'], 9, 12, 14, 15], 'text-letter-spacing': 0.04, 'text-max-angle': 30,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 9, 12.5, 14, 13.5], 'text-letter-spacing': 0.04, 'text-max-angle': 30,
       },
-      paint: { 'text-color': p.water, 'text-halo-color': p.waterHalo, 'text-halo-width': 1.4 },
+      paint: { 'text-color': p.water, 'text-halo-color': p.waterHalo, 'text-halo-width': 1.6 },
     },
     {
-      id: 'osm-road', type: 'symbol', source: 'osm', 'source-layer': 'transportation_name', minzoom: 11,
-      filter: ['all', ['in', ['get', 'class'], ['literal', ['motorway', 'trunk', 'primary']]], ['has', 'ref']],
+      id: 'osm-road', type: 'symbol', source: 'osm', 'source-layer': 'transportation_name', minzoom: 13,
+      filter: ['all', ['in', ['get', 'class'], ['literal', ['motorway', 'trunk']]], ['has', 'ref']],
       layout: {
         visibility, 'symbol-placement': 'line', 'symbol-spacing': 500, 'text-field': ['get', 'ref'], 'text-font': ['Plex Sans Medium'],
         'text-size': 10.5, 'text-letter-spacing': 0.06, 'text-rotation-alignment': 'viewport',
       },
-      paint: { 'text-color': p.muted, ...halo, 'text-halo-width': 1.2 },
+      paint: { 'text-color': p.faint, ...halo, 'text-halo-width': 1.2 },
     },
     {
-      id: 'osm-peak', type: 'symbol', source: 'osm', 'source-layer': 'mountain_peak', minzoom: 11,
-      filter: ['all', ['==', ['get', 'class'], 'peak'], ['has', 'name']],
+      // Only the main peaks, and heights only close in: a wine atlas, not a hiking map.
+      id: 'osm-peak', type: 'symbol', source: 'osm', 'source-layer': 'mountain_peak', minzoom: 12,
+      filter: ['all', ['==', ['get', 'class'], 'peak'], ['has', 'name'], ['<=', ['get', 'rank'], ['step', ['zoom'], 1, 14, 3]]],
       layout: {
-        visibility, 'text-field': ['format', NAME, {}, '\n', {}, ['concat', ['to-string', ['get', 'ele']], ' m'], { 'font-scale': 0.85, 'text-font': ['literal', ['Plex Sans Regular']] }],
-        'text-font': ['Plex Sans Medium'], 'text-size': 11, 'text-anchor': 'top', 'text-offset': [0, 0.3], 'text-max-width': 8,
+        visibility, 'text-field': ['step', ['zoom'], ['format', NAME, {}], 14, ['format', NAME, {}, '\n', {}, ['concat', ['to-string', ['get', 'ele']], ' m'], { 'font-scale': 0.9 }]],
+        'text-font': ['Plex Sans Regular'], 'text-size': 10.5, 'text-anchor': 'top', 'text-offset': [0, 0.3], 'text-max-width': 8, 'text-padding': 8,
       },
-      paint: { 'text-color': p.muted, ...halo },
+      paint: { 'text-color': p.faint, ...halo },
     },
     {
       id: 'osm-village', type: 'symbol', source: 'osm', 'source-layer': 'place', minzoom: 11,
-      filter: ['in', ['get', 'class'], ['literal', ['village', 'suburb', 'hamlet']]],
+      // Villages from zoom 11, hamlets from 13, suburbs from 14, so towns are not buried in names.
+      filter: ['any', ['==', ['get', 'class'], 'village'], ['all', ['>=', ['zoom'], 13], ['==', ['get', 'class'], 'hamlet']], ['all', ['>=', ['zoom'], 14], ['==', ['get', 'class'], 'suburb']]],
       layout: {
-        visibility, 'text-field': NAME, 'text-font': ['Plex Sans Regular'], 'text-max-width': 8,
-        'text-size': ['interpolate', ['linear'], ['zoom'], 11, 11, 15, 13.5],
+        visibility, 'text-field': NAME, 'text-font': ['Plex Sans Regular'], 'text-max-width': 8, 'text-padding': 6,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 11, 10.5, 15, 12],
         'symbol-sort-key': ['get', 'rank'],
       },
       paint: { 'text-color': p.text, ...halo },
@@ -82,7 +90,7 @@ export function mapNameLayers(sat: boolean, visible: boolean): LayerSpecificatio
       filter: ['==', ['get', 'class'], 'town'],
       layout: {
         visibility, 'text-field': NAME, 'text-font': ['Plex Sans Medium'], 'text-max-width': 8,
-        'text-size': ['interpolate', ['linear'], ['zoom'], 9, 12, 14, 15.5], 'symbol-sort-key': ['get', 'rank'],
+        'text-size': ['interpolate', ['linear'], ['zoom'], 9, 11, 14, 13], 'symbol-sort-key': ['get', 'rank'], 'text-padding': 6,
       },
       paint: { 'text-color': p.text, ...halo },
     },
@@ -90,8 +98,8 @@ export function mapNameLayers(sat: boolean, visible: boolean): LayerSpecificatio
       id: 'osm-city', type: 'symbol', source: 'osm', 'source-layer': 'place', minzoom: 7,
       filter: ['==', ['get', 'class'], 'city'],
       layout: {
-        visibility, 'text-field': NAME, 'text-font': ['Plex Sans SemiBold'], 'text-max-width': 8, 'text-letter-spacing': 0.02,
-        'text-size': ['interpolate', ['linear'], ['zoom'], 7, 12, 12, 17], 'symbol-sort-key': ['get', 'rank'],
+        visibility, 'text-field': NAME, 'text-font': ['Plex Sans Medium'], 'text-max-width': 8, 'text-letter-spacing': 0.02,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 7, 11, 12, 13.5], 'symbol-sort-key': ['get', 'rank'], 'text-padding': 6,
       },
       paint: { 'text-color': p.text, ...halo },
     },

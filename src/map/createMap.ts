@@ -111,6 +111,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (map.getLayer('hillshade')) map.setPaintProperty('hillshade', 'hillshade-exaggeration', p.hillshadeExaggeration);
     map.setPaintProperty('dos-fill', 'fill-opacity', p.dosFillOpacity as never);
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
+    map.setPaintProperty('dos-line', 'line-opacity', p.dosLineOpacity as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
     const colour = ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', m.colourBy === 'region' ? 'color' : 'climate']];
     map.setPaintProperty('dos-fill', 'fill-color', colour as never);

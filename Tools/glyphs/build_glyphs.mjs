@@ -16,7 +16,6 @@ const outDir = join(root, 'public/glyphs');
 export const STACKS = {
   'Plex Sans Regular': { file: 'ibm-plex-sans-latin-400-normal.woff2', weight: '400', style: 'normal' },
   'Plex Sans Medium': { file: 'ibm-plex-sans-latin-500-normal.woff2', weight: '500', style: 'normal' },
-  'Plex Sans SemiBold': { file: 'ibm-plex-sans-latin-600-normal.woff2', weight: '600', style: 'normal' },
   'Newsreader Italic': { file: 'newsreader-latin-400-italic.woff2', weight: '400', style: 'italic' },
   'Newsreader Medium': { file: 'newsreader-latin-500-normal.woff2', weight: '500', style: 'normal' },
 };
