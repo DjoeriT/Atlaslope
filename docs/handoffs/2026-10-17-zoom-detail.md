@@ -28,3 +28,10 @@ without a CORS header; one retry covers most. Not verified: Safari, a real iPad,
 **Where.** Plan `/mnt/project-files/atlaslope/zoom-detail/2026-10-17-zoom-detail-plan.md`. Design check
 `/mnt/project-files/atlaslope/reviews/2026-10-17-zoom-detail-design-check.md`; code review `Review/zoom-detail-review.md`.
 Live as release 13 (tag `release-13` on 4827bea, owner "publish release 13" 14:52Z). Tester note `Review/release-13-what-to-test.md`. Sources: `data/SOURCES.md` (spain-mask, PNOA, OpenFreeMap, map lettering).
+
+**Follow-up, same day: landscape through the colours.** Owner (15:17Z): Spain-wide colours and opacity are right, but zoomed in the
+colour hides the landscape. Over the photo the place fills now keep the Spain-wide look up to zoom 6, thin to about a third by zoom 9
+(a region) and nearly vanish by 12; outlines firm up from 6 to 9 instead of 10 to 12 (`src/map/layers.ts`). Plain atlas unchanged.
+Before/after shots (Spain at 6, Rioja at 9): `Review/mock-zoom-detail/shots/` and project files `atlaslope/zoom-detail/fade-*.jpg`;
+owner card "Ship it" 15:57Z. `map-preview` now takes a list of views (`only` input). The quiz frames places at zoom 8.5 at most, where
+fills are about 0.3 with a firm outline [A: not checked on a real quiz round over the photo].

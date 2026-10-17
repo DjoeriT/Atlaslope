@@ -90,6 +90,10 @@ session on his Mac also sees his thread messages and started a second publish ru
 - Mobile check (owner 17 Oct 12:50Z, issue #57): Explore without a reload, Back to map steps back, search results above the card,
   folding legend and a fitting map menu on phones, 16 px search (iPhone zoom), quiz steps start at the top. Live as
   release 14 (owner "publish release 14" 15:14Z); the mastery map and ready for friends move to 15 and 16 (#15, #16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
+- Landscape through the colours (owner 15:17Z: close in the climate colour hides the satellite; card "Ship it" 15:57Z): over the photo
+  the place fills keep the Spain-wide look up to zoom 6, thin by zoom 9 and nearly vanish by 12, outlines firm up from 6 to 9.
+  Release 15 when published (mastery map and ready for friends then 16 and 17). Tester note `Review/release-15-what-to-test.md`;
+  addendum in `docs/handoffs/2026-10-17-zoom-detail.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
