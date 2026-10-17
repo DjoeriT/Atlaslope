@@ -1,0 +1,28 @@
+{
+  "$comment": "Test fixture for src/quiz: two study regions, six core places (north-c before north-b on northSouth), two zones of north-a, one vc and one never-asked place. Not real data.",
+  "version": 1,
+  "countries": [{ "id": "land", "name": "Land", "level": "country", "levels": ["country", "region", "place", "zone"] }],
+  "courses": [
+    {
+      "id": "course",
+      "name": "Course",
+      "country": "land",
+      "groups": [
+        { "id": "south", "name": "South", "order": 2 },
+        { "id": "north", "name": "North", "order": 1 }
+      ]
+    }
+  ],
+  "places": [
+    { "id": "south-a", "name": "South A", "kind": "DO", "level": "place", "parent": "land", "region": "south", "quiz": "core", "courseOrder": 1, "northSouth": 1 },
+    { "id": "south-b", "name": "South B", "kind": "DO", "level": "place", "parent": "land", "region": "south", "quiz": "core", "courseOrder": 2, "northSouth": 2 },
+    { "id": "south-c", "name": "South C", "kind": "DO", "level": "place", "parent": "land", "region": "south", "quiz": "core", "courseOrder": 3, "northSouth": 3 },
+    { "id": "south-vc", "name": "South VC", "kind": "VC", "level": "place", "parent": "land", "region": "south", "quiz": "vc", "courseOrder": 4, "northSouth": 4 },
+    { "id": "south-none", "name": "South None", "kind": "DO", "level": "place", "parent": "land", "region": "south", "quiz": "none", "courseOrder": 5, "northSouth": 5 },
+    { "id": "north-b", "name": "North B", "kind": "DO", "level": "place", "parent": "land", "region": "north", "quiz": "core", "courseOrder": 11, "northSouth": 5 },
+    { "id": "north-c", "name": "North C", "kind": "DO", "level": "place", "parent": "land", "region": "north", "quiz": "core", "courseOrder": 11, "northSouth": 2 },
+    { "id": "north-a", "name": "North A", "kind": "DOCa", "level": "place", "parent": "land", "region": "north", "quiz": "core", "courseOrder": 10, "northSouth": 9 },
+    { "id": "north-a-z1", "name": "North A Zone 1", "kind": "zone", "level": "zone", "parent": "north-a", "region": "north", "quiz": "zone" },
+    { "id": "north-a-z2", "name": "North A Zone 2", "kind": "zone", "level": "zone", "parent": "north-a", "region": "north", "quiz": "zone" }
+  ]
+}
