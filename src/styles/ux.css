@@ -1,0 +1,100 @@
+/* UX sweep (17 Oct 2026, mock): motion, the phone sheet, the phone top bar, the page header, cards that fit their content. */
+
+/* ---- Motion (owner card "Full set"). The view transition names: the floating card, the full page, and the cover photo that
+   travels from a card to the next card or to the page. The map itself never crossfades (it moves on its own). */
+.card:not(.first){view-transition-name:card}
+.pg,.rpage{view-transition-name:page}
+.card .cover img,.pg-mosaic figure:first-child img,.rcover img{view-transition-name:hero}
+.card:not(.first) .body > .q-num,.card:not(.first) .body > .kicker:first-child{view-transition-name:none}
+::view-transition-old(root),::view-transition-new(root){animation:none}
+::view-transition-group(*){animation-duration:.32s;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+::view-transition-group(hero){animation-duration:.38s;z-index:2}
+::view-transition-image-pair(hero){isolation:auto}
+::view-transition-old(hero),::view-transition-new(hero){animation:none;mix-blend-mode:normal;height:100%;object-fit:cover;overflow:clip}
+::view-transition-old(hero){display:none}
+/* card to card: the old card fades quickly, the new one rises into place */
+::view-transition-old(card){animation:vt-fade-out .14s ease-in both}
+::view-transition-new(card){animation:vt-rise .3s cubic-bezier(.2,.8,.2,1) .05s both}
+/* quiz steps: a quicker crossfade with a small rise, the card's frame stays put */
+html[data-motion="step"]::view-transition-old(card){animation:vt-fade-out .1s ease-in both}
+html[data-motion="step"]::view-transition-new(card){animation:vt-rise-small .22s cubic-bezier(.2,.8,.2,1) both}
+/* a page slides up over the map, and down again on Back to map */
+html[data-motion="page-open"]::view-transition-new(page){animation:vt-page-in .36s cubic-bezier(.2,.8,.2,1) both}
+html[data-motion="page-close"]::view-transition-old(page){animation:vt-page-out .28s cubic-bezier(.4,0,.8,.4) both}
+html[data-motion="page-close"]::view-transition-new(card){animation:vt-rise .3s cubic-bezier(.2,.8,.2,1) .12s both}
+@keyframes vt-fade-out{to{opacity:0}}
+@keyframes vt-rise{from{opacity:0;transform:translateY(14px)}}
+@keyframes vt-rise-small{from{opacity:0;transform:translateY(6px)}}
+@keyframes vt-page-in{from{opacity:.4;transform:translateY(8vh)}}
+@keyframes vt-page-out{to{opacity:0;transform:translateY(8vh)}}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+
+/* ---- A title the app focuses (for screen readers) shows no ring; keyboard focus on controls keeps the ring. */
+h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
+:focus-visible{outline-color:var(--accent)}
+
+/* ---- Desktop and iPad: the card is as tall as what it holds, up to the screen, so the main button sits under the content. */
+@media not ((max-width:51.25em) and (orientation:portrait)){
+  .card:not(.flycap){bottom:auto;max-height:calc(100% - 6.2rem)}
+  .card .body{flex:1 1 auto}
+  .first .foot .btn{width:100%;justify-content:center}
+}
+
+/* ---- The phone sheet (owner card "Drag, 3 stops"). Outside phones the wrapper is invisible. */
+.sheet{display:contents}
+@media (max-width:51.25em) and (orientation:portrait){
+  .sheet.phone{display:block;position:absolute;left:0;right:0;bottom:0;z-index:5;transition:height .3s cubic-bezier(.2,.8,.2,1)}
+  .sheet.phone[data-drag]{transition:none}
+  .sheet.phone > .card{position:absolute;inset:0;top:0;bottom:0;max-height:none;height:100%;border-radius:var(--rad-card) var(--rad-card) 0 0}
+  .sheet.phone > .card.flycap{left:0;right:0;width:auto}
+  .grab{position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:7;width:8rem;height:2.75rem;border:0;background:transparent;cursor:grab;touch-action:none;display:flex;align-items:flex-start;justify-content:center;padding-top:.5rem}
+  .grab i{width:2.4rem;height:.3rem;border-radius:1rem;background:var(--line2)}
+  .sheet.phone .card.has-cover ~ .grab i,.sheet.phone .grab:has(+ .card.has-cover) i{background:rgba(255,255,255,.95);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .sheet.phone .card:not(.has-cover) .body,.sheet.phone .card .scroll .body{padding-top:1.6rem}
+  .sheet.phone .card.has-cover .scroll .body{padding-top:1rem}
+  .sheet.phone[data-stop="peek"] .cover{display:none}
+  .sheet.phone[data-stop="peek"] .card .body,.sheet.phone[data-stop="peek"] .card .scroll{overflow:hidden}
+  .sheet.phone[data-stop="peek"] .card.has-cover .scroll .body{padding-top:1.6rem}
+  .sheet.phone[data-stop="half"] .cover{aspect-ratio:16/6}
+  .sheet.phone[data-stop="full"] .cover{aspect-ratio:16/11}
+  .sheet.phone .card .close{top:.9rem}
+  .bottomright{bottom:calc(var(--sheet-h,52vh) + .75rem);transition:bottom .3s cubic-bezier(.2,.8,.2,1)}
+  .imagery-note{bottom:calc(var(--sheet-h,52vh) + .75rem)!important}
+  /* one row on top: the logo mark, search, and the two tabs */
+  .topleft{max-width:calc(100% - 11.5rem)}
+  .topright{top:1rem}
+  .brand{padding:.55rem .55rem}
+  .brand b{display:none}
+  .seg a,.seg button{padding:.45rem .7rem}
+  .search{width:auto;flex:1;min-width:0}
+  .topleft .search{flex:1}
+  /* pinch zooms on a phone; the zoom buttons only cover the map */
+  .zoomset > .iconbtn:nth-child(-n+2){display:none}
+  .legend{top:4.6rem}
+}
+@media (prefers-reduced-motion:reduce){.sheet.phone,.bottomright{transition:none}}
+
+/* ---- The region page sits above the map's legend and buttons, like the place page; its header is the page bar. */
+.rpage{z-index:30}
+.rpage .rcover{height:min(56vh,36rem)}
+
+/* ---- Quiz: the End round question */
+.q-end{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;padding:.7rem .8rem;border-radius:.8rem;background:var(--paper2);margin:0 0 .4rem}
+.q-end p{margin:0 0 .2rem;flex-basis:100%;font-size:.95rem}
+
+/* The welcome card sizes to its text too, so the card it covers is hidden while it shows. */
+body:has(.card.first) .sheet{visibility:hidden}
+
+/* Design check fixes (mock v1) */
+@media (orientation:landscape) and (max-height:30em){
+  .card .cover{display:none}
+  .card:not(.flycap){max-height:calc(100% - 5rem)}
+}
+@media (max-width:51.25em) and (orientation:portrait){
+  .sheet.phone .cover .nav{top:auto;bottom:2.6rem;width:2.75rem;height:2.75rem}
+  .sheet.phone .cover .dots{bottom:3.6rem}
+  .imagery-note{font-size:.88rem}
+  .zoomset:not(:has(> .iconbtn:nth-child(3))){display:none}
+}
+.pg-sub a{white-space:nowrap}
+.rintro .count .kicker{white-space:nowrap}

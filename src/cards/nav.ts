@@ -14,7 +14,11 @@ export function selectionOf(tree: Tree, crumb: Crumb): Selection {
 
 /** The selection a hash named, or Spain when the id is not in the tree. */
 export function validSelection(tree: Tree, sel: Selection): Selection {
-  if (sel.kind === 'region') return tree.getRegion(sel.id) ? sel : SPAIN;
+  if (sel.kind === 'region') {
+    if (!tree.getRegion(sel.id)) return SPAIN;
+    const sole = tree.soleSameName(sel.id); // a region that holds only its namesake (Rioja) opens the place itself
+    return sole ? { kind: 'place', id: sole.id, ...(sel.page ? { page: true } : {}) } : sel;
+  }
   if (sel.kind === 'place') {
     if (!tree.getPlace(sel.id)) return SPAIN;
     if (!sel.fly || flyOf(sel)) return sel;

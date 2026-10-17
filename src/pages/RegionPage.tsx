@@ -1,3 +1,4 @@
+import { PageTop } from './PageTop';
 import { useEffect, useRef, useState } from 'react';
 import { Link, type Go } from '../cards/Link';
 import { photosOf, sheetOf, type Photo } from '../facts';
@@ -50,10 +51,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
 
   return (
     <div className="rpage" role="region" aria-label={region.name}>
-      <Link className="rback" to={back} go={go}>
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M15 5l-7 7 7 7" /></svg>
-        {t.backToMap}
-      </Link>
+      <PageTop tree={tree} go={go} back={back} />
       <header className={`rcover${cover ? '' : ' none'}`}>
         {cover && <img src={cover.src} alt={cover.alt} onError={() => markBroken(cover.src)} />}
         <div className="ttl">

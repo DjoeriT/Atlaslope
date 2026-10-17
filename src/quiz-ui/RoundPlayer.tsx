@@ -1,3 +1,4 @@
+import { withMotion } from '../app/motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { measuresOf, sheetOf } from '../facts';
 import type { QuizView } from '../map/quiz';
@@ -16,6 +17,8 @@ export interface RoundResult {
   kind: RoundKind;
   round: Round;
   outcomes: Outcomes;
+  /** Ended with "End round" before the last step. */
+  early?: boolean;
 }
 
 /** A tap on the map in quiz mode; `n` makes a second tap on the same place a new event. */
@@ -41,6 +44,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   const [outcomes, setOutcomes] = useState<Outcomes>({});
   const [tentative, setTentative] = useState<string | null>(null);
   const [auto, setAuto] = useState(true);
+  const [ending, setEnding] = useState(false);
   const shownAt = useRef(Date.now());
   const firstPick = useRef(pick); // a tap from before this round is not a pick
   const rng = useMemo(() => seededRandom(Date.now()), []);
@@ -60,9 +64,12 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
 
   function next() {
     if (index + 1 >= round.items.length) return onExit({ kind, round, outcomes });
-    setIndex(index + 1);
-    setTentative(null);
-    setAuto(true);
+    withMotion(() => {
+      setIndex(index + 1);
+      setTentative(null);
+      setAuto(true);
+      setEnding(false);
+    }, 'step');
   }
   latest.current.next = next;
 
@@ -114,10 +121,18 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   const sheet = sheetOf(place.id);
   const grape = grapeOf(place.id, { sheetOf, measuresOf });
 
-  const exit = () => onExit({ kind, round, outcomes });
+  const exit = () => onExit({ kind, round, outcomes, early: true });
   const top = (label: string) => (
     <>
-      <div className="q-num"><span>{label}</span><button className="btn quiet" style={{ marginRight: '-1rem' }} onClick={exit}>{t.endRound}</button></div>
+      {ending ? (
+        <div className="q-end" role="alertdialog" aria-label={t.endAsk}>
+          <p>{t.endAsk}</p>
+          <button className="btn primary" autoFocus onClick={() => setEnding(false)}>{t.keepGoingNow}</button>
+          <button className="btn" onClick={exit}>{t.endRound}</button>
+        </div>
+      ) : (
+        <div className="q-num"><span>{label}</span><button className="btn quiet" style={{ marginRight: '-1rem' }} onClick={() => setEnding(true)}>{t.endRound}</button></div>
+      )}
       <div className="dots" role="img" aria-label={t.dotsLabel(Math.max(progress.n, 1), progress.of, progress.right, progress.wrong)}>
         {progress.dots.map((d, i) => <i key={i} className={d === 'todo' ? '' : d} />)}
       </div>

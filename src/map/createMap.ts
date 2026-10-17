@@ -175,7 +175,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const card = document.querySelector('.card')?.getBoundingClientRect();
     // The same breakpoint as the CSS, in em so a larger text setting gets the bottom-sheet layout sooner.
     if (!matchMedia('(max-width: 51.25em) and (orientation: portrait)').matches) return { left: Math.round((card?.right ?? 0) + rem), top: Math.round(rem * 4.6), bottom: Math.round(rem * 1.5), right: Math.round(rem * 5) };
-    return { left: Math.round(rem), top: Math.round(rem * 8), bottom: Math.round(window.innerHeight * 0.52 + rem), right: Math.round(rem * 4) };
+    return { left: Math.round(rem), top: Math.round(rem * 4.6), bottom: Math.round((card ? window.innerHeight - card.top : window.innerHeight * 0.52) + rem), right: Math.round(rem * 4) };
   };
   const setState = (source: string, id: string, state: Record<string, boolean>) => map.setFeatureState({ source, id }, state);
   const FRAME_ZOOM = { region: 9, place: 10.5, zone: 10.5 };

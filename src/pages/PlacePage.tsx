@@ -1,3 +1,4 @@
+import { PageTop } from './PageTop';
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -140,16 +141,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
 
   return (
     <div className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <header className="pg-top">
-        <div className="in">
-          <span className="brand"><BrandMark /><b>{strings.appName}</b></span>
-          <SearchBox tree={tree} open={go} />
-          <Link className="btn" to={{ kind: 'place', id: place.id }} go={go}>
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M9 4L3 6.5v13L9 17l6 2.5 6-2.5v-13L15 7zM9 4v13M15 7v12.5" /></svg>
-            {t.backToMap}
-          </Link>
-        </div>
-      </header>
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} />
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
           {trail.map((c, i) => (

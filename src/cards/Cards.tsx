@@ -87,10 +87,11 @@ export function SpainCard({ tree, go, due, onReview }: Props) {
         {regions.map((r) => {
           const ids = tree.placesInRegion(r.id).map((p) => p.id);
           const grapes = mainGrapes(ids);
+          const sole = tree.soleSameName(r.id);
           return (
             <TileRow
-              key={r.id} to={{ kind: 'region', id: r.id }} go={go} name={r.name} photoIds={ids} places={() => ids}
-              detail={[t.placeCount(ids.length), grapes.join(', ')].filter(Boolean).join(' · ')}
+              key={r.id} to={sole ? { kind: 'place', id: sole.id } : { kind: 'region', id: r.id }} go={go} name={r.name} photoIds={ids} places={() => ids}
+              detail={[sole ? sole.kind : t.placeCount(ids.length), grapes.join(', ')].filter(Boolean).join(' · ')}
               due={dueOf(due, withZones(tree, r.id))}
             />
           );
@@ -107,12 +108,11 @@ export function RegionCard({ tree, go, region, due }: Props & { region: Region }
   const cover = places.flatMap((p) => photosOf(p.id)).slice(0, 4);
   return (
     <CardShell
-      tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name}
+      tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name} close={{ to: tree.breadcrumb(region.id, 'region')[0] }}
       cover={<div className="cover-short"><CoverPhoto name={region.name} color="#8C2340" photos={cover} /></div>}
       foot={(
         <>
-          <Link className="btn primary" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.seeRegion}</Link>
-          <Link className="btn quiet" to={SPAIN} go={go}>{t.allOfSpain}</Link>
+          <Link className="btn primary" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.openPage(region.name)}</Link>
         </>
       )}
     >
@@ -167,7 +167,7 @@ export function PlaceCard({ tree, go, place }: Props & { place: Place }) {
     <CardShell
       tree={tree} go={go} trail={trail} suffix={isZone ? undefined : place.kind} title={place.name} close={up ? { to: up } : undefined}
       cover={<Cover key={place.id} name={place.name} color={color} photos={quizzed ? photosOf(place.id) : []} />}
-      foot={<Link className="btn primary" to={{ kind: 'place', id: place.id, page: true }} go={go}>{tp.readFullPage}</Link>}
+      foot={<Link className="btn primary" to={{ kind: 'place', id: place.id, page: true }} go={go}>{t.openPage(place.name)}</Link>}
     >
       <p className="sub">{tp.subLine(isZone ? t.zoneLevel : place.kind, region?.name ?? '')}</p>
       {sheet ? (

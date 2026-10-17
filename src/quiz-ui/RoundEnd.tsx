@@ -31,20 +31,23 @@ function missTag(o: Outcome, tree: Tree): string {
 /** The end of a round: the score, the misses (each links to its place), what is left today, then Keep going or Done for today. */
 export function RoundEnd({ result, tree, quiz, keepGoing, onKeepGoing, onLearnMore, onDone, onOpenPlace }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
-  useEffect(() => heading.current?.focus(), []);
+  useEffect(() => heading.current?.focus({ preventScroll: true }), []);
   const { right, of } = scoreOf(result.outcomes);
   const misses = missesOf(result.outcomes);
   const due = quiz.plan.due.length;
   const seen = Math.min(quiz.plan.seenToday, INTAKE_PER_DAY);
   const more = keepGoing ? keepGoing.items.filter((i) => i.kind === 'question').length : 0;
   const kindName = result.kind === 'study' ? strings.quiz.round.kindStudy : strings.quiz.round.kindReview;
+  const stopped = !!result.early;
+  const answered = Object.keys(result.outcomes).length;
+  const asked = result.round.items.filter((i) => i.kind === 'question').length;
   const open = (id: string) => (e: React.MouseEvent) => { e.preventDefault(); onOpenPlace(id); };
   return (
     <section className="card glass" aria-labelledby="rh">
       <div className="body">
-        <div className="kicker">{t.kicker(kindName)}</div>
+        <div className="kicker">{stopped ? t.stoppedKicker(kindName) : t.kicker(kindName)}</div>
         <h1 id="rh" ref={heading} tabIndex={-1} className="score" aria-label={t.scoreLabel(right, of)}>{right}<small> / {of}</small></h1>
-        <p className="lede" aria-live="polite">{more ? t.keepGoingLede(due) : t.doneLede(misses.length)}</p>
+        <p className="lede" aria-live="polite">{stopped ? t.stoppedLede(answered, asked) : more ? t.keepGoingLede(due) : t.doneLede(misses.length)}</p>
         {misses.length > 0 && (
           <>
             <h2>{t.missed}</h2>
@@ -67,7 +70,12 @@ export function RoundEnd({ result, tree, quiz, keepGoing, onKeepGoing, onLearnMo
         </p>
       </div>
       <div className="foot">
-        {more ? (
+        {stopped ? (
+          <>
+            <button className="btn primary" onClick={result.kind === 'study' ? onLearnMore : keepGoing ? onKeepGoing : onDone}>{t.startAgain}</button>
+            <button className="btn quiet" onClick={onDone}>{t.doneForNow}</button>
+          </>
+        ) : more ? (
           <>
             <button className="btn primary" onClick={onKeepGoing}>{t.keepGoing(more)}</button>
             <button className="btn quiet" onClick={onDone}>{t.done}</button>

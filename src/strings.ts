@@ -28,6 +28,10 @@ export const strings = {
     dataNote: 'The place boundaries did not load, so the map has no places on it. Reloading the page usually fixes this.',
     reload: 'Reload',
   },
+  sheet: {
+    stops: { peek: 'small', half: 'half', full: 'full' } as Record<'peek' | 'half' | 'full', string>,
+    label: (stop: string) => `Card size: ${stop}. Drag, or use the up and down arrows, to change it`,
+  },
   topBar: {
     darkInterface: 'Dark interface',
     searchPlaceholder: 'Search places and regions',
@@ -54,6 +58,7 @@ export const strings = {
     placeCount: (n: number) => `${n} ${n === 1 ? 'place' : 'places'}`,
     allOfSpain: 'All of Spain',
     seeRegion: 'See the region',
+    openPage: (name: string) => `Open the ${name} page`,
     closeBackTo: (name: string) => `Close, back to ${name}`,
     level: 'Level',
     zoneLevel: 'Zone',
@@ -319,6 +324,8 @@ export const strings = {
       newPlace: (n: number, of: number, kind: string) => `New place · ${n} of ${of} today · ${kind}`,
       questionOf: (n: number, of: number, kind: string) => `Question ${n} of ${of} · ${kind}`,
       endRound: 'End round',
+      endAsk: 'End this round? What you answered is kept.',
+      keepGoingNow: 'Keep going',
       dotsLabel: (n: number, of: number, right: number, wrong: number) => `Question ${n} of ${of}, ${right} right, ${wrong} wrong so far`,
       gotIt: 'Got it, ask me',
       moreAbout: (name: string) => `More about ${name}`,
@@ -353,6 +360,10 @@ export const strings = {
     },
     end: {
       kicker: (kind: string) => `Round done · ${kind}`,
+      stoppedKicker: (kind: string) => `Round stopped · ${kind}`,
+      stoppedLede: (n: number, of: number) => `You stopped after ${n} of ${of}. What you didn't reach is still waiting for you today.`,
+      startAgain: 'Start a new round',
+      doneForNow: 'Done for now',
       scoreLabel: (right: number, of: number) => `${right} right out of ${of}`,
       keepGoingLede: (due: number) => `${due} more ${due === 1 ? 'is' : 'are'} due today. Keep going, or stop: they wait until next time.`,
       doneLede: (missed: number) => (missed ? `All done for today. The ${missed} you missed come back tomorrow.` : 'All done for today.'),

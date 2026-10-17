@@ -80,7 +80,7 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
       <div id="map" ref={el} data-base={menu.satellite && !imageryFailed ? 'satellite' : 'atlas'} role="application" aria-label={quiz ? strings.quiz.mapLabel : strings.mapMountLabel} />
       <div className="bottomright">
         <MapMenu menu={menu} imageryFailed={imageryFailed} onChange={setMenu} />
-        <div className="glass">
+        <div className="glass zoomset">
           <button className="iconbtn" aria-label={t.zoomIn} onClick={() => ctl.current?.map.zoomIn()}>{icon('M12 5v14M5 12h14')}</button>
           <button className="iconbtn" aria-label={t.zoomOut} onClick={() => ctl.current?.map.zoomOut()}>{icon('M5 12h14')}</button>
           {!quiz && (

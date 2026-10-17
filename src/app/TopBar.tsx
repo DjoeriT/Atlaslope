@@ -56,8 +56,7 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, o
         <nav className="seg glass" aria-label={t.modeNav}>
           <a href="./" aria-current={quizOpen ? undefined : 'page'} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onExplore(); }}>{t.explore}</a>
           <button aria-current={quizOpen ? 'page' : undefined} onClick={onQuiz}>{t.quiz}</button>
-          {/* Visible but not yet usable; it arrives in a later release. */}
-          <button aria-disabled="true" title={t.comingSoon} aria-label={`${t.progress}, ${t.comingSoon.toLowerCase()}`}>{t.progress}</button>
+          {/* Progress comes back with the mastery map; a tab that does nothing is hidden until then (UX sweep, 17 Oct 2026). */}
         </nav>
       </div>
     </>
