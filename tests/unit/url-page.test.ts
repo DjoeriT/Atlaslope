@@ -17,9 +17,9 @@ describe('the place page route', () => {
     expect(parseSelection(hash)).toEqual({ kind: 'place', id: 'rioja-alta', page: true });
     expect(parseView(hash)).toEqual(view);
   });
-  it('ignores page on regions and on Spain', () => {
-    expect(selectionToHash({ kind: 'region', id: 'rioja', page: true })).toBe('#region=rioja');
-    expect(parseSelection('#region=rioja&page')).toEqual({ kind: 'region', id: 'rioja' });
+  it('keeps page on regions (the region page) and ignores it on Spain', () => {
+    expect(selectionToHash({ kind: 'region', id: 'rioja', page: true })).toBe('#region=rioja&page');
+    expect(parseSelection('#region=rioja&page')).toEqual({ kind: 'region', id: 'rioja', page: true });
     expect(parseSelection('#page').id).toBe('spain');
   });
 });

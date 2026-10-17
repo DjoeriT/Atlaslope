@@ -9,7 +9,7 @@ async function open(page: Page, hash = '') {
 }
 
 test('a place card shows the cover, three glance cells and "Read the full page"', async ({ page }) => {
-  await open(page, '#place=toro');
+  await open(page, '#place=alella');
   const card = page.locator('.card');
   await expect(card.locator('.cover img')).toBeVisible();
   await expect(card.locator('.cover .credit')).toHaveAttribute('href', /commons\.wikimedia\.org/);
@@ -73,7 +73,7 @@ test('the jump bar lists only the sections that exist and moves focus to the sec
   await expect(page.getByRole('navigation', { name: 'On this page' }).locator('a')).toHaveText(['Where it sits']);
 });
 
-for (const [id, n] of [['toro', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {
+for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {
   test(`the mosaic of ${id} has ${n} photo${n > 1 ? 's' : ''} and no empty frame`, async ({ page }) => {
     await open(page, `#place=${id}&page`);
     const figures = page.locator('.pg-mosaic figure');
