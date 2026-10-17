@@ -30,6 +30,9 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
   await ctx.addInitScript(() => { try { localStorage.setItem('atlaslope-first-run', 'seen'); } catch { /* none */ } });
   const page = await ctx.newPage();
   const failed = [];
+  const logged = new Set();
+  page.on('console', (m) => { if (m.type() === 'error') logged.add(`console: ${m.text().slice(0, 300)}`); });
+  page.on('pageerror', (e) => logged.add(`page error: ${e.message.slice(0, 300)}`));
   page.on('response', (r) => { if (!r.ok() && /ign\.es|openfreemap|arcgis|terrarium/.test(r.url())) failed.push(`${r.status()} ${r.url().split('?')[0]}`); });
   for (const [name, view] of Object.entries(VIEWS)) {
     if (screen === 'ipad' && !['haro-z16', 'priorat-z13-tilt'].includes(name)) continue;
@@ -41,6 +44,7 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
     console.log(`${label} ${screen} ${name}`);
   }
   console.log(`failed tile requests: ${failed.length}`);
+  [...logged].slice(0, 15).forEach((l) => console.log(l));
   failed.slice(0, 15).forEach((f) => console.log(f));
   await ctx.close();
 }
