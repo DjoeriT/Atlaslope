@@ -17,7 +17,7 @@ async function start(page: Page, seed?: unknown) {
     if (s && !sessionStorage.getItem('seeded')) { localStorage.setItem('atlaslope.quiz', JSON.stringify(s)); sessionStorage.setItem('seeded', '1'); }
   }, [seed]);
   await page.goto(`./?now=${NOW}#quiz`);
-  await page.getByRole('button', { name: "Start today's round" }).click();
+  await page.getByRole('button', { name: /Start today's round|Learn 5 new places/ }).click();
 }
 
 /** On an intro: read the name, go on to its what-is-this question. */

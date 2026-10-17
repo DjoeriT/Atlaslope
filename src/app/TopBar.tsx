@@ -15,9 +15,10 @@ interface Props {
   quizOpen: boolean;
   onQuiz: () => void;
   onExplore: () => void;
+  onProgressFile: () => void;
 }
 
-export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, onExplore }: Props) {
+export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, onExplore, onProgressFile }: Props) {
   const [open, setOpen] = useState(false);
   const brandRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -49,6 +50,7 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, o
           <span>{t.darkInterface}</span>
           <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="8" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" /></svg>
         </button>
+        <button role="menuitem" onClick={() => { setOpen(false); onProgressFile(); }}>{t.saveLoad}</button>
       </div>
       <div className="topright">
         <nav className="seg glass" aria-label={t.modeNav}>
