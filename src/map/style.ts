@@ -61,16 +61,16 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     { id: 'dos-casing', type: 'line', source: 'dos', layout: { visibility: vis['dos-casing'] }, paint: { 'line-color': '#FFFFFF', 'line-width': 3.6, 'line-opacity': 0.55 } },
     {
       id: 'dos-fill', type: 'fill', source: 'dos', layout: { visibility: vis['dos-fill'] },
-      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#7A2E3B', ['get', 'color']], 'fill-opacity': paint.dosFillOpacity as never },
+      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', 'color']], 'fill-opacity': paint.dosFillOpacity as never },
     },
     {
       id: 'dos-line', type: 'line', source: 'dos', layout: { visibility: vis['dos-line'] },
-      paint: { 'line-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#7A2E3B', ['get', 'color']], 'line-width': paint.dosLineWidth as never, 'line-dasharray': paint.dosLineDash, 'line-opacity': paint.dosLineOpacity as never },
+      paint: { 'line-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', 'color']], 'line-width': paint.dosLineWidth as never, 'line-dasharray': paint.dosLineDash, 'line-opacity': paint.dosLineOpacity as never },
     },
     // The three Rioja zones: hidden until a Rioja card is open (createMap.ts), then drawn over the DOCa.
     {
       id: 'zones-fill', type: 'fill', source: 'zones', layout: { visibility: 'none' },
-      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#7A2E3B', '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, 0.3] },
+      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, 0.3] },
     },
     { id: 'zones-line', type: 'line', source: 'zones', layout: { visibility: 'none' }, paint: { 'line-color': '#FFFFFF', 'line-width': 2, 'line-opacity': 0.9 } },
   );

@@ -10,5 +10,5 @@
 
 @media (max-width:820px){.imagery-note{left:1rem;right:4.5rem;bottom:calc(52% + 1rem);margin-inline:0}}
 /* Quiz reveal: the answer's name in the wine colour, a wrong pick in a plain ink beside it. */
-.lbl.quiz-answer{font-weight:700;font-size:1rem;color:var(--accent,#7A2E3B)}
+.lbl.quiz-answer{font-weight:700;font-size:1rem;color:var(--accent,#8C2340)}
 .lbl.quiz-miss{font-weight:600;font-style:italic}
