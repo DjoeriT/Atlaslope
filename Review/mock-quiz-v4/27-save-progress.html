@@ -1,0 +1,28 @@
+<!doctype html><html lang="en" data-theme="paper"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlaslope · Progress file</title><link rel="stylesheet" href="assets/maplibre-gl.css"><link rel="stylesheet" href="assets/app.css"><link rel="stylesheet" href="assets/quiz.css"></head><body>
+<div id="map" role="application" aria-label="Map of Spain"></div>
+<section class="card glass" aria-labelledby="sh"><a href="20-quiz.html" class="iconbtn close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></a><div class="body"><div class="kicker">Your progress</div><h1 id="sh" tabindex="-1">Save or load</h1>
+<p class="lede">Progress lives in this browser only. A file is your backup, and how you move it to another device.</p>
+<dl class="facts"><dt>In this browser</dt><dd>412 answers since 17 October · 23 places known</dd><dt>Last saved</dt><dd>Never. Save a copy now, and again every week or so.</dd></dl>
+<h2>On iPad or iPhone</h2><p class="note">Add Atlaslope to your Home Screen before you start: Safari can clear a website’s storage after a week away; the Home Screen app keeps it.</p>
+<p class="undo" id="loaded" role="status" hidden>Loaded: 380 answers from 15 October. Your earlier progress is kept as a backup. <button class="linkbtn" id="undo-load">Undo</button></p></div>
+<div class="foot"><button class="btn primary" id="save">Save to a file</button><button class="btn" id="load">Load from a file</button></div></section>
+<div class="topleft"><button id="brand-btn" class="brand glass" aria-haspopup="menu" aria-expanded="false" aria-controls="brand-menu"><b>Atlaslope</b><small>Progress file</small></button>
+<div class="search glass"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" placeholder="Search places, regions, towns, grapes" aria-label="Search places, regions, towns and grapes"></div></div>
+<div id="brand-menu" class="glass menu tl" role="menu" hidden><a role="menuitem" href="../atlas-v3/10-home-today.html">Home: today</a><a role="menuitem" href="../atlas-v3/15-explore-spain.html">Spain, the place tree</a><a role="menuitem" href="27-save-progress.html">Save or load progress</a><button role="menuitem" id="theme" aria-pressed="false"><span>Dark interface</span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><a role="menuitem" href="index.html">About this round</a></div>
+<div class="topright"><span class="mock glass">mock · DO boundaries © MAPA 2014</span><nav class="seg glass" aria-label="Mode"><a href="../atlas-v3/15-explore-spain.html">Explore</a><a href="20-quiz.html" aria-current="page">Quiz</a><a href="../atlas-v3/13-mastery.html">Progress</a></nav></div>
+<div id="layers-menu" class="glass menu br" hidden><h4>Map</h4>
+<label><input type="checkbox" data-layer="satellite" checked>Satellite imagery</label>
+<label><input type="checkbox" data-layer="relief" checked>3D relief</label>
+<label><input type="checkbox" data-layer="dos" checked>Place boundaries</label></div>
+<div class="bottomright"><div class="glass"><button id="zin" class="iconbtn" aria-label="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button><button id="zout" class="iconbtn" aria-label="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14"/></svg></button></div>
+<div class="glass"><button id="layers-btn" class="iconbtn" aria-label="Map layers" aria-expanded="false" aria-controls="layers-menu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></button></div></div>
+
+<script>window.PAGE={"page": "spain", "basemap": "satellite"};</script>
+<script src="assets/maplibre-gl.js"></script><script src="assets/data.js"></script><script src="assets/app.js"></script>
+<script>(function(){const b=document.getElementById('brand-btn'),m=document.getElementById('brand-menu');b.addEventListener('click',()=>{const o=m.hidden;m.hidden=!o;b.setAttribute('aria-expanded',String(o));});document.addEventListener('click',e=>{if(!m.hidden&&!m.contains(e.target)&&!b.contains(e.target)){m.hidden=true;b.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden){m.hidden=true;b.setAttribute('aria-expanded','false');b.focus();}});})();
+const whenReady=f=>{const t=setInterval(()=>{if(document.body.dataset.ready){clearInterval(t);f();}},150);};
+document.getElementById('save').addEventListener('click',()=>{document.querySelector('.facts dd:last-child').textContent='Just now · atlaslope-progress-2026-10-17.json';});
+document.getElementById('load').addEventListener('click',()=>{document.getElementById('loaded').hidden=false;});
+document.getElementById('undo-load').addEventListener('click',()=>{document.getElementById('loaded').hidden=true;});</script>
+</body></html>
