@@ -17,6 +17,9 @@ The QA round after release 10 (issues #48 and #50). The mastery map, planned as 
    reloading a turned map.
 6. **Large text on iPad.** With a bigger text size, the top bar switches to the compact layout instead of overlapping.
 7. **Light and dark, iPad,** and the colours over satellite (only checkable on the live site).
+8. **Also in this release (merged since 10):** the name shows as "AtlaSlope" everywhere you read it (#44); a shared link shows a dark
+   preview card with "The wine study atlas for WSET and Wine Scholar students" (#46); the home tab reads "AtlaSlope · The Wine Study
+   Atlas" (#47).
 
 ## For you
 PRs #49 and the one for #50 from `claude/qa-review-round-5g09tq`. Findings `Review/qa-round-1.md`, mock `Review/mock-cards-climate-v2/`,
