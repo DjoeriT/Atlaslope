@@ -5,7 +5,8 @@
 /* Release 8 review: on the plain atlas (cream land) dark-mode labels stay dark ink; white with a black halo is only for satellite. */
 :root[data-theme="dark"] #map[data-base="atlas"]{--label:#1F1F1F;--label-halo:rgba(255,255,255,.9)}
 .menu.br{top:auto;bottom:1.6rem;right:4.4rem;min-width:14rem}
-.menu label[aria-disabled="true"]{color:var(--ink3);cursor:default}
+.menu .colourby:disabled label{color:var(--ink3);cursor:default}
+.menu .colourby .hint{display:block;padding:.2rem .6rem;color:var(--ink3);font-size:.78rem}
 .imagery-note{position:absolute;left:27rem;right:5rem;margin-inline:auto;width:fit-content;bottom:1.6rem;z-index:5;display:flex;align-items:center;gap:.4rem;padding:.4rem .4rem .4rem 1rem;max-width:36rem;font-size:.9rem}
 .maplibregl-ctrl-attrib{font-family:var(--sans)}
 @media (max-width:51.25em) and (orientation:portrait){.menu.br{bottom:54%}}

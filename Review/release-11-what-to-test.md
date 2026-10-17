@@ -10,7 +10,7 @@ The QA round after release 10 (issues #48 and #50). The mastery map, planned as 
    (layers button, bottom right): "Colour places by" switches to Study region, and the legend changes to the ten regions. Turning place
    boundaries off hides the legend.
 2. **Spain card.** A cover photo, "106 places in 10 study regions", and a row per region with a photo, its place count and most common
-   main grapes. If something is due, "Review N due today" opens the quiz, and rows show "N due".
+   main grapes. If something is due, "Start today's round · N due" opens the quiz (due counts are reviews, as on the Today card), and rows show "N due".
 3. **Region card.** Cover, "Main grapes here", and a photo row per place with its zones indented under it (Rioja).
 4. **Hover.** Pointing at a row lights its places up on the map without moving it (keyboard focus does too). On iPad the "Hover…" hint is hidden.
 5. **Reset view.** Tilt or turn the map, then the button under zoom puts it back. The compass now says "Point north" and also shows after

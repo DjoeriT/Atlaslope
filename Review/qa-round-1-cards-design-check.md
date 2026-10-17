@@ -35,7 +35,7 @@ Owner decisions not reopened.
 4. Hover: fill 85%, edge 2.8 px; keyboard focus on a row already lights the place up (`hoverProps`).
 5. "Hover a region…" sits in its own span hidden under `@media (hover: none)`.
 6. Covers on the Spain and region cards are 16:7. "All of Spain" is already 44 px (`.btn` min-height 2.75rem) [V].
-7. "N due for review today" is now a "Review N due today" button that opens the quiz.
+7. "N due for review today" is now a "Start today's round · N due" button (the round also brings new places, as Today does). Counts are memories due, matching the Today card (code review should-fix 1).
 8. Study-region mode shows its own legend (the ten regions and colours), replacing the old row swatches and sentence. Counts: the
    mock counted quizzed places only; the built card counts every place, as the old card did (106), and due counts include zones.
 Notes: grape chips are drawn flat (no border) so they don't read as buttons.

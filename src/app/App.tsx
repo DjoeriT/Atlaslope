@@ -98,7 +98,11 @@ export function App() {
   useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
   const clock = useMemo(() => makeClock(debugNow()), []);
   const progress = useQuiz(tree, clock);
-  const dueSet = useMemo(() => new Set(progress.plan.due.map((r) => r.place)), [progress.plan]);
+  const dueSet = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const r of progress.plan.due) m.set(r.place, (m.get(r.place) ?? 0) + 1);
+    return m;
+  }, [progress.plan]);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
   const flown = flyOf(sel);
   const fly = sel.kind === 'place' ? sel.fly : undefined;

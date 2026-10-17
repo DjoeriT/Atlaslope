@@ -4,8 +4,10 @@ import { expect, test, type Page } from '@playwright/test';
 // (QA round after release 10, mock cards-climate-v2). No network; a fixed clock for the due counts.
 
 const NOW = '2026-10-17T10:00:00Z';
-const rioja = [{ id: 'rioja' }, { id: 'rioja-alta' }]; // the DOCa and one zone: the region row counts both
-const SEED = { version: 1, focus: [], savedAt: '', log: rioja.map((p, i) => ({ kind: 'answer', place: p.id, memory: 'where', type: 'find-it', right: true, at: `2026-10-10T10:0${i}:00Z`, seconds: 3 })) };
+// Rioja and Rioja Alta answered a week ago: the Rioja row (zones included) and the button count what the Today card counts.
+// That they count memories, not places, is a unit test (tests/unit/climate.test.ts): a second memory needs weeks of answers.
+const answer = (place: string, memory: string, i: number) => ({ kind: 'answer', place, memory, type: 'find-it', right: true, at: `2026-10-10T10:0${i}:00Z`, seconds: 3 });
+const SEED = { version: 1, focus: [], savedAt: '', log: [answer('rioja', 'where', 0), answer('rioja-alta', 'where', 1)] };
 
 async function open(page: Page, hash = '', seed?: unknown) {
   await page.addInitScript(([s]) => {
@@ -31,6 +33,7 @@ test('the legend names the six climates, and the menu switches it to the study r
   await page.getByRole('checkbox', { name: 'Place boundaries' }).uncheck();
   await expect(regions).toBeHidden();
   await expect(page.getByRole('radio', { name: 'Climate' })).toBeDisabled();
+  await expect(page.getByText('Turn on place boundaries to colour them')).toBeVisible();
 });
 
 test('the legend is not shown in the quiz', async ({ page }) => {
@@ -40,11 +43,13 @@ test('the legend is not shown in the quiz', async ({ page }) => {
 
 test('Spain and region cards show photo rows, main grapes and what is due, and Review opens the quiz', async ({ page }) => {
   await open(page, '', SEED);
+  const today = Number((await page.locator('.card h1').textContent())?.match(/\d+/)?.[0]); // the Today card counts due memories
+  expect(today).toBe(2);
   await page.locator('.card .close').click(); // the Today card
   const card = page.locator('.card');
   await expect(card.locator('h1')).toHaveText('Spain');
   const row = card.locator('.tiles li', { hasText: 'Rioja' }).first();
-  await expect(row.locator('.due')).toHaveText('2 due');
+  await expect(row.locator('.due')).toHaveText(`${today} due`);
   await expect(row.locator('small')).toContainText('Tempranillo');
 
   await row.locator('a').click();
@@ -53,6 +58,6 @@ test('Spain and region cards show photo rows, main grapes and what is due, and R
   await expect(card.locator('.tiles li.sub')).toHaveCount(3); // the three Rioja zones under the DOCa
   await card.getByRole('link', { name: 'All of Spain' }).click();
 
-  await card.getByRole('button', { name: 'Review 2 due today' }).click();
+  await card.getByRole('button', { name: `Start today's round · ${today} due` }).click();
   await expect(page).toHaveURL(/#quiz/);
 });

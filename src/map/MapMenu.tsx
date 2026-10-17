@@ -46,6 +46,7 @@ export function MapMenu({ menu, imageryFailed, onChange }: Props) {
             <legend>{t.colourBy}</legend>
             <label><input type="radio" name="colourby" checked={menu.colourBy === 'climate'} onChange={() => onChange({ ...menu, colourBy: 'climate' })} />{t.byClimate}</label>
             <label><input type="radio" name="colourby" checked={menu.colourBy === 'region'} onChange={() => onChange({ ...menu, colourBy: 'region' })} />{t.byRegion}</label>
+            {!menu.boundaries && <small className="hint">{t.colourByOff}</small>}
           </fieldset>
         </div>
       )}
