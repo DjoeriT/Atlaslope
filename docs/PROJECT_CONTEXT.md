@@ -54,6 +54,9 @@ session on his Mac also sees his thread messages and started a second publish ru
   and producers, built (PR #31); planted-area main grapes moved to issue #29, more producers to #30. Then the quiz (planned as release 5,
   now numbered 7). The owner's go (16 Oct 12:51Z) covers the restart, the data step, releases 3 and 4 and the quiz (now release 7) [O];
   4.1 (now release 6) came from his cards at 19:37Z. The planned releases after the quiz (once 6 to 8, now 8 to 10) need a new go.
+- Release 7, the quiz (17 Oct, issue #13): built on one PR from `claude/release-7-quiz-zwvn6k`; mocks `Review/mock-quiz-v4/` approved
+  (owner card 05:44Z); engine, store and screens in `src/quiz/` and `src/quiz-ui/`; agents 0.61 M tokens [V, spend log]. Handoff
+  `docs/handoffs/2026-10-17-release-7-quiz.md`. Issues #14 to #16 renumbered as releases 8 to 10.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

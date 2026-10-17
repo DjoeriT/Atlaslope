@@ -16,3 +16,14 @@ export function applyDebugFlags(search: string = location.search): DebugFlags {
   }
   return { fixture: params.get('fixture') };
 }
+
+/** `?now=<ISO time>`: a fixed start for the quiz clock (it keeps counting from there), so a test can plan and log at a known time. Null in the production build. */
+export function debugNow(search: string = location.search): string | null {
+  if (!__DEBUG_FLAGS__) return null;
+  return new URLSearchParams(search).get('now');
+}
+
+/** Debug builds only: `window.__quizPick(id)` does what a tap on that place on the map does in quiz mode (the UI tests cannot aim at the canvas). */
+export function exposeQuizPick(pick: (id: string) => void): void {
+  if (__DEBUG_FLAGS__) (window as unknown as { __quizPick?: (id: string) => void }).__quizPick = pick;
+}

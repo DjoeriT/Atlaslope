@@ -16,9 +16,10 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   expect(failed).toEqual([]);
 });
 
-test('Quiz and Progress are visible, disabled, and say why', async ({ page }) => {
+test('Progress is visible, disabled, and says why; Quiz is enabled', async ({ page }) => {
   await page.goto('./?fresh=1');
-  for (const name of ['Quiz', 'Progress']) {
+  await expect(page.getByRole('button', { name: 'Quiz', exact: true })).not.toHaveAttribute('aria-disabled', 'true');
+  for (const name of ['Progress']) {
     const item = page.getByRole('button', { name: new RegExp(`^${name}, coming soon$`) });
     await expect(item).toHaveAttribute('aria-disabled', 'true');
     await expect(item).toHaveAttribute('title', 'Coming soon');

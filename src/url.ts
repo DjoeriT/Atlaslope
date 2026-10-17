@@ -36,6 +36,25 @@ export function parseSelection(hash: string): Selection {
   return SPAIN;
 }
 
+/** The quiz route: #quiz, with #quiz=practise, #quiz=focus and #quiz=progress-file reserved for the screens that follow. */
+export type QuizSub = 'practise' | 'focus' | 'progress-file' | null;
+export interface QuizRoute { sub: QuizSub }
+const QUIZ_SUBS = ['practise', 'focus', 'progress-file'] as const;
+
+/** The quiz route a hash names, or null when it names Explore. An unknown sub-route means plain #quiz. */
+export function parseQuizRoute(hash: string): QuizRoute | null {
+  const p = new URLSearchParams(hash.replace(/^#/, ''));
+  if (!p.has('quiz')) return null;
+  const sub = p.get('quiz');
+  return { sub: QUIZ_SUBS.find((s) => s === sub) ?? null };
+}
+
+export function quizToHash(route: QuizRoute, view?: View | null): string {
+  const parts = [route.sub ? `quiz=${route.sub}` : 'quiz'];
+  if (view) parts.push(`view=${viewToText(view)}`);
+  return `#${parts.join('&')}`;
+}
+
 export function viewToText(v: View): string {
   return [v.lng.toFixed(4), v.lat.toFixed(4), v.zoom.toFixed(2), v.bearing.toFixed(0), v.pitch.toFixed(0)].join(',');
 }

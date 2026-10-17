@@ -1,0 +1,11 @@
+{
+  "name": "Atlaslope",
+  "short_name": "Atlaslope",
+  "description": "The wine atlas that quizzes you: where Spain's wine places are and why their wines taste as they do.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#faf7f0",
+  "icons": []
+}

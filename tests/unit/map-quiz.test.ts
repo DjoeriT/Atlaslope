@@ -1,0 +1,77 @@
+import { describe, expect, it } from 'vitest';
+import type { Collection } from '../../src/map/boundaries';
+import { frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type QuizView, type Shape } from '../../src/map/quiz';
+
+// A 100 px square at (100,100)-(200,200), and a small one at (300,100)-(310,110).
+const square = (id: string, x: number, y: number, size: number): Shape => ({
+  id, polygons: [[[[x, y], [x + size, y], [x + size, y + size], [x, y + size], [x, y]]]],
+});
+const shapes = [square('big', 100, 100, 100), square('tiny', 300, 100, 10)];
+
+describe('the nearest-place tap', () => {
+  it('picks a place when the tap is inside it', () => {
+    expect(nearestPlace([150, 150], shapes)).toBe('big');
+  });
+  it('picks a place 20 px outside its boundary and none at 30 px', () => {
+    expect(nearestPlace([220, 150], shapes)).toBe('big');
+    expect(nearestPlace([230, 150], shapes)).toBeNull();
+  });
+  it('gives a tiny place a 44 px tap area', () => {
+    expect(nearestPlace([330, 105], shapes)).toBe('tiny');
+  });
+  it('picks the nearer of two places', () => {
+    expect(nearestPlace([245, 150], [square('a', 100, 100, 100), square('b', 250, 100, 100)])).toBe('b');
+  });
+  it('does not pick a place through its hole', () => {
+    const ring = square('ring', 0, 0, 100).polygons[0][0];
+    const hole = square('h', 40, 40, 20).polygons[0][0];
+    expect(nearestPlace([50, 50], [{ id: 'ring', polygons: [[ring, hole]] }], 5)).toBeNull();
+  });
+});
+
+const feature = (id: string, box: [number, number, number, number]) => ({
+  type: 'Feature', properties: { id },
+  geometry: { type: 'Polygon', coordinates: [[[box[0], box[1]], [box[2], box[1]], [box[2], box[3]], [box[0], box[3]], [box[0], box[1]]]] },
+}) as unknown as Collection['features'][number];
+
+describe('the reveal frame', () => {
+  const fs = [feature('toro', [-5.6, 41.4, -5.2, 41.7]), feature('rueda', [-4.9, 41.2, -4.6, 41.5]), feature('cava', [1, 41, 2, 42])];
+  it('contains the answer and the pick, and nothing else', () => {
+    expect(revealBox(fs, { answer: 'toro', picked: 'rueda' })).toEqual([-5.6, 41.2, -4.6, 41.7]);
+  });
+  it('frames the answer alone when nothing was picked', () => {
+    expect(revealBox(fs, { answer: 'toro' })).toEqual([-5.6, 41.4, -5.2, 41.7]);
+  });
+  it('leaves room left of the card on wide screens and above it under 900 px', () => {
+    const wide = revealPadding({ width: 1280, height: 800 }, { right: 440, top: 70 });
+    expect(wide.left).toBeGreaterThan(440);
+    const narrow = revealPadding({ width: 800, height: 1000 }, { right: 800, top: 520 });
+    expect(narrow.bottom).toBeGreaterThan(1000 - 520);
+  });
+});
+
+describe('the intro frame', () => {
+  const fs = [feature('toro', [-5.6, 41.4, -5.2, 41.7]), feature('rueda', [-4.9, 41.2, -4.6, 41.5])];
+  it('is the place with room around it for its neighbours', () => {
+    const [w, s, e, n] = frameBox(fs, ['toro'])!;
+    expect(w).toBeLessThan(-5.6); expect(e).toBeGreaterThan(-5.2);
+    expect(s).toBeLessThan(41.4); expect(n).toBeGreaterThan(41.7);
+    expect(e).toBeLessThan(-4.9 + 0.5);
+  });
+  it('is null for a place with no boundary', () => {
+    expect(frameBox(fs, ['nowhere'])).toBeNull();
+  });
+});
+
+describe('the Rioja zones in quiz mode', () => {
+  const view: QuizView = { hideNames: true, dimExcept: null, select: null, reveal: null };
+  it('stay hidden unless the question is about a zone', () => {
+    expect(zoneVisibility(view)).toBe('none');
+    expect(zoneVisibility({ ...view, showZones: false })).toBe('none');
+    expect(zoneVisibility({ ...view, showZones: true })).toBe('visible');
+  });
+  it('win a tap over the DOCa beneath them when listed first', () => {
+    const zone = square('rioja-alta', 100, 100, 50), doca = square('rioja', 50, 50, 200);
+    expect(nearestPlace([120, 120], [zone, doca])).toBe('rioja-alta');
+  });
+});
