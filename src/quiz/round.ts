@@ -53,7 +53,7 @@ export function studyRound(tree: Tree, log: readonly LogEntry[], now: Date, opts
   return fill(state, plan.due, plan.intake, [], opts.size ?? ROUND_SIZE, new Set(opts.asked));
 }
 
-/** A Review round over a set of place ids (places never asked are dropped): due first, then new places with their intro, then the set's other memories, soonest due first. A right answer before due moves nothing (see applyAnswer). */
+/** A Review round over a set of place ids (places with `quiz: "none"` are dropped): due first, then new places with their intro, then the set's other memories, soonest due first. A right answer before due moves nothing (see applyAnswer). */
 export function reviewRound(tree: Tree, set: readonly string[], log: readonly LogEntry[], now: Date, opts: RoundOptions = {}): Round {
   const state = replay(log);
   const places = set.map((id) => tree.getPlace(id)).filter((p): p is Place => p !== undefined && REVIEW_KINDS.includes(p.quiz));
