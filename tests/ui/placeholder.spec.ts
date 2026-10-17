@@ -7,7 +7,7 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   const failed: string[] = [];
   page.on('requestfailed', (r) => failed.push(r.url()));
   await page.goto('./?fresh=1');
-  await expect(page).toHaveTitle('AtlaSlope · The wine atlas that quizzes you');
+  await expect(page).toHaveTitle('AtlaSlope · The Wine Study Atlas');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.png');
   await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');

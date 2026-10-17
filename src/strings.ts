@@ -3,7 +3,7 @@ export const strings = {
   appName: 'AtlaSlope',
   brandContext: 'Spain',
   // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
-  pageTitleHome: 'AtlaSlope · The wine atlas that quizzes you',
+  pageTitleHome: 'AtlaSlope · The Wine Study Atlas',
   pageTitle: (name: string) => `${name} · AtlaSlope`,
   mapMountLabel: 'Map of Spain. Click a place to select it.',
   map: {
@@ -179,7 +179,7 @@ export const strings = {
   firstRun: {
     label: 'Welcome to AtlaSlope',
     kicker: 'Welcome',
-    lede: "The wine atlas that quizzes you. Learn where Spain's wine places are and why their wines taste as they do.",
+    lede: "The wine study atlas for WSET and Wine Scholar students. Learn where Spain's wine places are and why their wines taste as they do.",
     hintsTitle: 'Moving the map',
     // Each hint alternates plain and bold text, starting with bold.
     hints: [

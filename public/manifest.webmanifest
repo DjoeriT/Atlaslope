@@ -1,7 +1,7 @@
 {
   "name": "AtlaSlope",
   "short_name": "AtlaSlope",
-  "description": "The wine atlas that quizzes you: where Spain's wine places are and why their wines taste as they do.",
+  "description": "The wine study atlas for WSET and Wine Scholar students: where Spain's wine places are and why their wines taste as they do.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

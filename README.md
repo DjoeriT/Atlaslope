@@ -1,6 +1,6 @@
 # Atlaslope
 
-The wine atlas that quizzes you. For passionate wine lovers first and exam students (WSET, Spanish Wine Scholar) second, starting with Spain.
+The wine study atlas for WSET and Wine Scholar students, and for passionate wine lovers, starting with Spain.
 Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (atlaslope.com from release 3). Free, no accounts, progress stored in the browser.
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
