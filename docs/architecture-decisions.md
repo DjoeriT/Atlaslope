@@ -26,7 +26,7 @@ One page for the builder brief to stand on. Tags: **[O]** the owner decided, **[
 |---|---|---|---|
 | 10 | Facts live as data, one file per place, with a source on every row. A check fails the build on a row without a source. Guides are Markdown, one per place, with a sources line. | A wrong fact teaches a wrong answer. A contract catches the missing source before a person reads it. | [O] facts cited; [A] format |
 | 11 | Launch: fact sheets for all 68 core places. Full guides for Green Spain, Castilla y León and Rioja first, then region by region. | The quiz works everywhere from day one. | [O] 16 Oct |
-| 12 | Sources: official pliegos, IGN, MAPA, AEMET. Never the Wine Scholar Guild's own materials. The why text is Atlaslope's own synthesis and says so. | The repo rule, and honest attribution. | [O] rule |
+| 12 | Sources: official pliegos, IGN, MAPA, AEMET. Wine Scholar Guild and WSET course structure (which places, how they are grouped, what the exam asks) may set coverage; their text, maps and images are never used. The why text is Atlaslope's own synthesis and says so. | Their terms forbid reproducing their materials; the syllabus angle is the study value. The first wording (a blanket ban, written by Claude at setup on 15 Oct and tagged as the owner's) was narrowed by the owner on 17 Oct. | [O] 17 Oct |
 | 13 | LeadBot drafts, the owner spot-checks. | The owner knows wine, LeadBot does the legwork. | [O] |
 
 ## 4. The quiz and memory

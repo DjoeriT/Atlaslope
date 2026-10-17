@@ -43,4 +43,4 @@ Data files under `data/` keep their own licences, listed per file in `data/SOURC
 
 ## Notes
 - The site is free for the owner and friends, not a business. Licences in `data/SOURCES.md` are checked for non-commercial use with attribution.
-- Nothing from the Wine Scholar Guild's own maps or study guides is used.
+- Course structure from the Wine Scholar Guild and WSET (which places, how they are grouped, what the exam asks) guides what is covered; nothing of their text, maps or images is used, and facts come from official sources.

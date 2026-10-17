@@ -49,7 +49,9 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
   points into the repo. When they disagree, the repo wins and memory is corrected.
 - **Archive, never delete** documents: finished or superseded ones move to `Review/archive/`. Old app code was removed at the restart; Git history keeps it.
 - **Data has a paper trail.** Every file under `data/` is listed in `data/SOURCES.md` with its origin, date, licence and the steps that
-  produced it. Never add a map layer, photo or fact source without that entry. Nothing from the Wine Scholar Guild's own materials.
+  produced it. Never add a map layer, photo or fact source without that entry. Course structure from the Wine Scholar Guild and WSET is fair to use (which places, how they are grouped, what the exam asks);
+  never copy their text, maps or images, and write facts from official sources (owner card, 17 Oct 2026, after a thread read the old
+  blanket ban as excluding their syllabi).
 - **Licence:** code is MIT; the owner's writing (fact sheets, guides, interface copy) is all rights reserved (`NOTICE.md`); data keeps its own terms.
 - Releases are cheap: ship small changes as separate releases. Finish a slice's fixes, notes and records locally and push once; write the
   tester note and sign-off record while waiting on the owner, not after "publish" (release 4: four pushes restarted CI before publishing).
