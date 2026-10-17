@@ -3,9 +3,11 @@ import places from '../../data/places.json';
 import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
 import { focusFor, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
+import { exposeQuizPick } from '../debug';
 import { MapView } from '../map/MapView';
 import type { QuizView } from '../map/quiz';
-import { QuizScreen } from '../quiz-ui/QuizScreen';
+import { IDLE_VIEW, QuizScreen } from '../quiz-ui/QuizScreen';
+import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
 import { parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
@@ -57,16 +59,21 @@ export function App() {
     history.replaceState(history.state, '', here() + (route ? quizToHash(route, view) : selectionToHash(selRef.current, view)));
   }, []);
 
-  // Cards 4 and 5 drive this from the question in play; for now the quiz map is flat and nameless.
-  const quizView = useMemo<QuizView | null>(() => (quiz ? { hideNames: true, dimExcept: null, select: null, reveal: null } : null), [!!quiz]);
+  // In quiz mode the question in play decides what the map shows, and a tap on the map is the pick for find it.
+  const [mapView, setMapView] = useState<QuizView>(IDLE_VIEW);
+  const quizView = quiz ? mapView : null;
+  const [mapPick, setMapPick] = useState<MapPick | null>(null);
+  const pickCount = useRef(0);
+  const pickOnMap = useCallback((id: string) => setMapPick({ id, n: ++pickCount.current }), []);
+  useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
   const focus = useMemo(() => focusFor(tree, sel), [tree, sel]);
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
   const region = sel.kind === 'region' ? tree.getRegion(sel.id) : undefined;
   return (
     <>
-      <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (!quizRef.current) go({ kind: 'place', id }); }} onView={onView} />
+      <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} />
       <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={openQuiz} onExplore={openExplore} />
-      {quiz ? <QuizScreen route={quiz} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} /> : <SpainCard tree={tree} go={go} />}
+      {quiz ? <QuizScreen route={quiz} tree={tree} pick={mapPick} onView={setMapView} onOpenPlace={(id) => go({ kind: 'place', id })} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} /> : <SpainCard tree={tree} go={go} />}
       <FirstRun />
     </>
   );

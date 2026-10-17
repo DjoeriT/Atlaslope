@@ -1,0 +1,41 @@
+/* Playing a round (release 7 card 4): from the approved mock's quiz.css and app.css, on the app's tokens. */
+.q-num{font-size:.85rem;color:var(--ink3);display:flex;justify-content:space-between;align-items:center}
+.dots{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.5rem}
+.dots i{width:1.1rem;height:.35rem;border-radius:.2rem;background:var(--line)}
+.dots i.ok{background:var(--ok)}
+.dots i.bad{background:var(--bad);border-radius:0}
+.dots i.cur{background:var(--ink)}
+.dots+.kicker,.dots+.intro-h{margin-top:1rem}
+.q{font-family:var(--serif);font-size:1.7rem;line-height:1.2;margin:.6rem 0 .4rem;font-weight:500}
+.q em{color:var(--accent);font-style:normal;font-weight:600}
+.q:focus,#result:focus,.score:focus{outline:none}
+.status{font-size:.95rem;color:var(--ink2);margin:.2rem 0 0;min-height:1.4em}
+.choices{display:grid;gap:.5rem;margin-top:.9rem}
+.choice{border:1.5px solid var(--line);background:transparent;border-radius:.7rem;padding:.8rem 1rem;font:inherit;font-size:1.05rem;text-align:left;cursor:pointer;color:var(--ink);min-height:3.2rem;display:flex;align-items:center;gap:.8rem}
+.choice b{width:1.7rem;height:1.7rem;border-radius:50%;border:1.5px solid var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;flex:none}
+.choice.ok{border-color:var(--ok)}
+.choice.ok b{background:var(--ok);border-color:var(--ok);color:#fff}
+.choice.bad{border-color:var(--bad)}
+.choice.bad b{background:var(--bad);border-color:var(--bad);color:#fff}
+.feedback{margin-top:.9rem;padding:.75rem .9rem;border-radius:.7rem;border:1.5px solid var(--ok);font-size:.95rem;display:flex;gap:.6rem}
+.feedback.bad{border-color:var(--bad)}
+.facts.reveal{margin-top:.8rem;padding-top:.6rem;border-top:1px solid var(--line)}
+.autonext{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--ink2);margin-top:.6rem}
+.autonext i{flex:none;width:3rem;height:.25rem;border-radius:1rem;background:var(--line);overflow:hidden;position:relative}
+.autonext i::after{content:"";position:absolute;inset:0;background:var(--ok);transform-origin:left;animation:quiz-fill 1s linear forwards}
+@keyframes quiz-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.autonext i::after{animation-duration:2.5s}}
+.undo{font-size:.9rem;background:var(--fill);border-radius:.6rem;padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
+.linkbtn{appearance:none;border:0;background:transparent;font:inherit;color:var(--accent);font-weight:600;cursor:pointer;min-height:2.75rem;padding:0 .4rem;text-decoration:underline}
+.linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.score{font-family:var(--serif);font-size:4rem;line-height:1;margin:.3rem 0 .2rem}
+.score small{font-size:1.5rem;color:var(--ink3)}
+.row{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--ink2);margin-top:.5rem}
+.row>span:first-child{width:7rem}
+.bar{flex:1;height:.4rem;background:var(--line);border-radius:.2rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok)}
+.list.misses{list-style:none;margin:.4rem 0 0;padding:0}
+.list.misses li{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.2rem 0;border-bottom:1px solid var(--line)}
+.list.misses a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500}
+.tag{font-size:.8rem;color:var(--bad);font-weight:600;text-align:right}
+.note a{color:var(--accent);font-weight:500}

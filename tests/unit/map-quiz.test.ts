@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Collection } from '../../src/map/boundaries';
-import { nearestPlace, revealBox, revealPadding, type Shape } from '../../src/map/quiz';
+import { nearestPlace, revealBox, revealPadding, zoneVisibility, type QuizView, type Shape } from '../../src/map/quiz';
 
 // A 100 px square at (100,100)-(200,200), and a small one at (300,100)-(310,110).
 const square = (id: string, x: number, y: number, size: number): Shape => ({
@@ -47,5 +47,18 @@ describe('the reveal frame', () => {
     expect(wide.left).toBeGreaterThan(440);
     const narrow = revealPadding({ width: 800, height: 1000 }, { right: 800, top: 520 });
     expect(narrow.bottom).toBeGreaterThan(1000 - 520);
+  });
+});
+
+describe('the Rioja zones in quiz mode', () => {
+  const view: QuizView = { hideNames: true, dimExcept: null, select: null, reveal: null };
+  it('stay hidden unless the question is about a zone', () => {
+    expect(zoneVisibility(view)).toBe('none');
+    expect(zoneVisibility({ ...view, showZones: false })).toBe('none');
+    expect(zoneVisibility({ ...view, showZones: true })).toBe('visible');
+  });
+  it('win a tap over the DOCa beneath them when listed first', () => {
+    const zone = square('rioja-alta', 100, 100, 50), doca = square('rioja', 50, 50, 200);
+    expect(nearestPlace([120, 120], [zone, doca])).toBe('rioja-alta');
   });
 });
