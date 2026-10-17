@@ -65,7 +65,7 @@ export function migrate(raw: unknown): Migrated {
   const version = raw.version === undefined ? 0 : raw.version;
   if (typeof version !== 'number' || !Number.isInteger(version) || version < 0) return { ok: false, newer: null, message: NOT_A_FILE };
   if (version > RECORD_VERSION) {
-    return { ok: false, newer: version, message: `This progress was saved by a newer version of Atlaslope (version ${version}).` };
+    return { ok: false, newer: version, message: `This progress was saved by a newer version of AtlaSlope (version ${version}).` };
   }
   const source = version === 0 ? raw.answers : raw.log;
   if (!Array.isArray(source)) return { ok: false, newer: null, message: NOT_A_FILE };
@@ -166,7 +166,7 @@ export function createStore(storage: Storage | null, now: () => Date = () => new
       fresh();
       const m = parse(text);
       if (!m || !m.ok) return { ok: false, message: m ? m.message : NOT_A_FILE };
-      if (newerVersion !== null) return { ok: false, message: 'Progress from a newer version of Atlaslope is stored here and is left untouched.' };
+      if (newerVersion !== null) return { ok: false, message: 'Progress from a newer version of AtlaSlope is stored here and is left untouched.' };
       memoryBackup = structuredClone(current!);
       write(BACKUP_KEY, memoryBackup);
       put(m.record);
