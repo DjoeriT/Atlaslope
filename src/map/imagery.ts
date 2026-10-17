@@ -115,7 +115,11 @@ function measure(z: number, x: number, y: number): Coverage {
 /** A fully transparent tile. */
 let blank: Promise<ArrayBuffer> | null = null;
 function blankTile(): Promise<ArrayBuffer> {
-  blank ??= new OffscreenCanvas(1, 1).convertToBlob({ type: 'image/png' }).then((b) => b.arrayBuffer());
+  if (!blank) {
+    const c = new OffscreenCanvas(1, 1);
+    c.getContext('2d'); // convertToBlob needs a context, even for an empty canvas
+    blank = c.convertToBlob({ type: 'image/png' }).then((b) => b.arrayBuffer());
+  }
   return blank;
 }
 
