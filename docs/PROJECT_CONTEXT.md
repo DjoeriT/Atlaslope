@@ -79,7 +79,7 @@ session on his Mac also sees his thread messages and started a second publish ru
   "one wine tone" looked too uniform); Spain and region cards with photo rows, main grapes and "N due" (mock
   `Review/mock-cards-climate-v2/`, approved 11:25Z; design check `Review/qa-round-1-cards-design-check.md`). Both live in
   release 11 (17 Oct, owner "publish release 11" 11:53Z); tester note `Review/archive/release-11-what-to-test.md`. The mastery map and ready
-  for friends then moved to 12 and 13; the polish slice took 12, so they are now 13 and 14 (#15, #16).
+  for friends then moved to 12 and 13; the polish slice took 12, so they became 13 and 14 (#15, #16).
 - Polish slice (owner 17 Oct 11:58Z, "first going to polish"): favicon and Home Screen icon on the slope logo in today's colours
   (owner card 12:05Z "Mix"), install icons in the manifest, photos for Jerez, Manzanilla and Ribera del Guadiana (#42). Live as
   release 12 (owner "publish release 12" 12:50Z); the mastery map and ready for friends move to 13 and 14 (#15, #16). Handoff `docs/handoffs/2026-10-17-polish-icons-photos.md`.
