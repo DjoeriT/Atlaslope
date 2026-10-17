@@ -32,6 +32,12 @@ describe('layer list per menu state', () => {
     expect(v.satellite).toBe('none');
     expect(v.land).toBe('visible');
   });
+  it('puts a halo under country borders, light on the atlas and dark over imagery (#40)', () => {
+    const ids = buildStyle({ tiles: false, menu: on }).layers.map((l) => l.id);
+    expect(ids.indexOf('borders-casing')).toBe(ids.indexOf('borders') - 1);
+    expect(basemapPaint(false).bordersCasing.color).toBe('#FFFFFF');
+    expect(basemapPaint(true).bordersCasing.color).not.toBe(basemapPaint(true).borders);
+  });
   it('draws boundaries stronger over imagery than on the atlas', () => {
     expect(basemapPaint(true).dosFillOpacity).not.toEqual(basemapPaint(false).dosFillOpacity);
     expect(basemapPaint(true).ocean.opacity).toBeLessThan(1);
