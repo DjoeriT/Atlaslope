@@ -39,5 +39,7 @@ jobs:
         if: steps.scope.outputs.docs != 'true'
       - run: npx playwright install --with-deps chromium
         if: steps.scope.outputs.docs != 'true'
-      - run: Tools/check.sh ui
+      # publish.yml looks this step up by name to reuse a green run on main; keep the name.
+      - name: Tools/check.sh ui
+        run: Tools/check.sh ui
         if: steps.scope.outputs.docs != 'true'
