@@ -32,13 +32,13 @@ jobs:
         env:
           VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
         run: |
+          set +e
+          npx vite preview --port 4174 --strictPort &
           for v in plain tile256 nonames both; do
             case $v in tile256) export VITE_DEBUG_TILE256=1 VITE_DEBUG_NONAMES=;; nonames) export VITE_DEBUG_TILE256= VITE_DEBUG_NONAMES=1;; both) export VITE_DEBUG_TILE256=1 VITE_DEBUG_NONAMES=1;; *) export VITE_DEBUG_TILE256= VITE_DEBUG_NONAMES=;; esac
-            npm run build >/dev/null
-            npx vite preview --port 4174 --strictPort & P=$!
+            npm run build >/dev/null 2>&1
             for i in $(seq 30); do curl -sf http://localhost:4174/ >/dev/null && break; sleep 1; done
             ONLY=haro-z14 node Tools/preview/map_shots.mjs http://localhost:4174/ Review/mock-zoom-detail/exp $v
-            kill $P; sleep 1
           done
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
