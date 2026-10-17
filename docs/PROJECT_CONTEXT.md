@@ -73,8 +73,11 @@ session on his Mac also sees his thread messages and started a second publish ru
   `docs/handoffs/2026-10-17-release-10-guides.md`.
 
 - QA round after release 10 (owner 17 Oct 09:03Z; findings `Review/qa-round-1.md`): Reset view button, hover lights places up
-  (owner card 10:05Z "highlight only"), large-text layout on iPad, compass after a reload. Next in the same thread: a mock of richer
-  Spain and region cards with the map in one wine tone (owner cards 10:06Z "one wine tone", "mock now").
+  (owner card 10:05Z "highlight only"), large-text layout on iPad, compass after a reload (PR #49, merged). Then (#50): places
+  coloured by climate, six Köppen groups, with a legend and a "Colour places by: Climate / Study region" switch (owner 11:15Z, after
+  "one wine tone" looked too uniform); Spain and region cards with photo rows, main grapes and "N due" (mock
+  `Review/mock-cards-climate-v2/`, approved 11:25Z; design check `Review/qa-round-1-cards-design-check.md`). Both ride the next
+  release (11); tester note `Review/release-11-what-to-test.md`. The mastery map and ready for friends move to 12 and 13.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

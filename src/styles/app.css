@@ -54,7 +54,7 @@ a{color:inherit}
 .menu label:hover{background:var(--line)}
 .menu input{accent-color:var(--accent);width:1.1rem;height:1.1rem;margin:0}
 .menu small{color:var(--ink3);font-size:.8rem;margin-left:auto}
-.bottomright{position:absolute;right:1rem;bottom:1.6rem;display:flex;flex-direction:column;gap:.4rem;z-index:5}
+.bottomright{position:absolute;right:1rem;bottom:1.6rem;display:flex;flex-direction:column;gap:.4rem;z-index:6} /* above the imagery note, so the open map menu is never under it */
 .bottomright .iconbtn{border-radius:.7rem}
 .bottomright .glass{display:flex;flex-direction:column;padding:.2rem}
 
@@ -198,3 +198,22 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .flycap .btn svg{width:1.1rem;height:1.1rem;flex:none}
 .flycap .close{background:var(--paper2);border-radius:50%;right:.8rem;top:.8rem}
 .flycap h1:focus{outline:none}
+
+/* Spain and region cards: photo rows, due counts */
+.tiles{list-style:none;margin:.2rem 0 0;padding:0;display:flex;flex-direction:column;gap:.1rem}
+.tiles a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.4rem;margin:0 -.4rem;border-radius:.8rem;min-height:3.8rem}
+.tiles li:hover a,.tiles a:focus-visible{background:var(--paper2)}
+.tiles img,.tiles i{width:3.6rem;height:3.6rem;border-radius:.65rem;object-fit:cover;flex:none}
+.tiles i{display:flex;align-items:center;justify-content:center;background:var(--paper2);color:var(--accent);font:500 1.4rem var(--serif);font-style:normal}
+.tiles .txt{display:flex;flex-direction:column;min-width:0}
+.tiles b{font:500 1.08rem var(--serif)}
+.tiles small{color:var(--ink3);font-size:.82rem;line-height:1.35}
+.tiles .due{margin-left:auto;font-size:.75rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:999px;padding:.15rem .55rem;white-space:nowrap}
+.tiles .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
+.tiles .due+.go{margin-left:.2rem}
+.tiles li.sub a{padding-left:1.6rem}
+.tiles li.sub img,.tiles li.sub i{width:2.8rem;height:2.8rem}
+.duebar{margin:.6rem 0 0;color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
+.cover-short .cover{aspect-ratio:16/7}
+.chips.plain li{border-color:transparent;background:var(--paper2)}
+@media (hover:none){.hoverhint{display:none}}

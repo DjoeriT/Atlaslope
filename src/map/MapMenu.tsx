@@ -11,7 +11,7 @@ interface Props {
   onChange(next: MenuState): void;
 }
 
-/** The one map menu: satellite, climate (not yet), 3D relief, place boundaries. */
+/** The one map menu: satellite, 3D relief, place boundaries, and what the place colours show (climate or study region). */
 export function MapMenu({ menu, imageryFailed, onChange }: Props) {
   const [open, setOpen] = useState(false);
   const button = useRef<HTMLButtonElement>(null);
@@ -29,7 +29,7 @@ export function MapMenu({ menu, imageryFailed, onChange }: Props) {
     return () => { document.removeEventListener('click', onClick); document.removeEventListener('keydown', onKey); };
   }, [open]);
 
-  const toggle = (key: keyof MenuState) => onChange({ ...menu, [key]: !menu[key] });
+  const toggle = (key: 'satellite' | 'relief' | 'boundaries') => onChange({ ...menu, [key]: !menu[key] });
   return (
     <>
       {open && (
@@ -40,13 +40,14 @@ export function MapMenu({ menu, imageryFailed, onChange }: Props) {
             {t.satellite}
             {imageryFailed && <small>{t.satelliteUnavailable}</small>}
           </label>
-          <label aria-disabled="true">
-            <input type="checkbox" checked={false} disabled />
-            {t.climate}
-            <small>{t.climateComing}</small>
-          </label>
           <label><input type="checkbox" checked={menu.relief} onChange={() => toggle('relief')} />{t.relief}</label>
           <label><input type="checkbox" checked={menu.boundaries} onChange={() => toggle('boundaries')} />{t.boundaries}</label>
+          <fieldset className="colourby" disabled={!menu.boundaries}>
+            <legend>{t.colourBy}</legend>
+            <label><input type="radio" name="colourby" checked={menu.colourBy === 'climate'} onChange={() => onChange({ ...menu, colourBy: 'climate' })} />{t.byClimate}</label>
+            <label><input type="radio" name="colourby" checked={menu.colourBy === 'region'} onChange={() => onChange({ ...menu, colourBy: 'region' })} />{t.byRegion}</label>
+            {!menu.boundaries && <small className="hint">{t.colourByOff}</small>}
+          </fieldset>
         </div>
       )}
       <div className="glass">

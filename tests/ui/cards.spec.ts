@@ -15,7 +15,7 @@ const viewOf = (page: Page) => page.evaluate(() => new URLSearchParams(location.
 test('the Spain card lists ten regions in course order', async ({ page }) => {
   await open(page);
   await expect(page.locator('.card h1')).toHaveText('Spain');
-  const names = await page.locator('.card .tree li a b').allTextContents();
+  const names = await page.locator('.card .tiles li a .txt b').allTextContents();
   const course = JSON.parse(readFileSync('data/places.json', 'utf8')).courses[0].groups as Array<{ name: string; order: number }>;
   expect(names).toEqual(course.sort((a, b) => a.order - b.order).map((g) => g.name));
   expect(names).toHaveLength(10);
@@ -135,7 +135,7 @@ test('the keyboard follows the walk from Spain to a region to a place', async ({
   await card.getByRole('link', { name: /^Rioja/ }).click();
   await expect(card.locator('h1')).toHaveText('Rioja');
   await expect(card.locator('h1')).toBeFocused(); // Spain card to region card
-  await card.locator('.tree a').first().click();
+  await card.locator('.tiles a').first().click();
   await expect(card.locator('h1')).toBeFocused(); // region card to place card
 });
 
