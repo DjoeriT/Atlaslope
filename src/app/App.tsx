@@ -138,6 +138,8 @@ export function App() {
       if (e.key !== 'Escape' || e.defaultPrevented || quizRef.current) return;
       const el = e.target as HTMLElement;
       if (el.closest('input, textarea, select, [role="menu"], .menu, .flycap')) return;
+      // The fly caption marks its Escape handled; the welcome and End round dialogs keep theirs (PR #63 review).
+      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]')) return;
       const cur = selRef.current;
       if (cur.kind === 'country') return;
       go(cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));

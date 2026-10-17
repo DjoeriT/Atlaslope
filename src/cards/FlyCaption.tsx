@@ -28,7 +28,7 @@ export function FlyCaption({ place, chapter, target, go, onClose }: Props) {
     const onKey = (e: KeyboardEvent) => {
       // Escape meant for the search box or another field is not a close (release 10 review).
       const field = e.target instanceof HTMLElement && e.target.closest('input, textarea, select, [contenteditable="true"]');
-      if (e.key === 'Escape' && !e.defaultPrevented && !field) onClose();
+      if (e.key === 'Escape' && !e.defaultPrevented && !field) { e.preventDefault(); onClose(); } // the app's own Escape then stands down
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);

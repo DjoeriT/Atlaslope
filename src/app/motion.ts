@@ -10,7 +10,8 @@ let running: Promise<void> | null = null;
 /** Runs `fn` once the screen change in progress has finished, or now when none is. The map waits, so its flight and the card's
  *  move don't compete for the same frames (owner, 17 Oct 2026: "jittery and too fast"). */
 export function afterMotion(fn: () => void) {
-  if (running) running.then(fn); else fn();
+  // Without a transition, wait two frames so the sheet's new height has landed before the map measures it (PR #63 review).
+  if (running) running.then(fn); else requestAnimationFrame(() => requestAnimationFrame(fn));
 }
 
 const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;

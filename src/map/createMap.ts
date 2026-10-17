@@ -172,7 +172,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   /** Room beside the floating card (a bottom sheet on a narrow screen), as in the approved mock. */
   const padding = () => {
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    const card = document.querySelector('.card')?.getBoundingClientRect();
+    // The visible card: a quiz kept behind an opened place still has its card in the DOM, hidden (PR #63 review).
+    const card = [...document.querySelectorAll('.card')].find((c) => c.getClientRects().length > 0)?.getBoundingClientRect();
     // The same breakpoint as the CSS, in em so a larger text setting gets the bottom-sheet layout sooner.
     if (!matchMedia('(max-width: 51.25em) and (orientation: portrait)').matches) return { left: Math.round((card?.right ?? 0) + rem), top: Math.round(rem * 4.6), bottom: Math.round(rem * 1.5), right: Math.round(rem * 5) };
     return { left: Math.round(rem), top: Math.round(rem * 4.6), bottom: Math.round((card ? window.innerHeight - card.top : window.innerHeight * 0.52) + rem), right: Math.round(rem * 4) };
@@ -351,7 +352,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (key === quizFrame) return;
     quizFrame = key;
     const view = { width: window.innerWidth, height: window.innerHeight };
-    const card = document.querySelector('.card')?.getBoundingClientRect();
+    // The visible card: a quiz kept behind an opened place still has its card in the DOM, hidden (PR #63 review).
+    const card = [...document.querySelectorAll('.card')].find((c) => c.getClientRects().length > 0)?.getBoundingClientRect();
     const box = q.frame ? frameBox(places, q.frame) : q.reveal ? revealBox(places, q.reveal) : null;
     if (box) map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...flat, padding: revealPadding(view, card), maxZoom: 8.5 });
     else map.fitBounds(SPAIN_BOUNDS, { ...flat, padding: padding() });
