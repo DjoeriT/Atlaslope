@@ -5,6 +5,11 @@ name: map-preview
 # before the next push. By hand only: on every push its commit made the thread's next push fail as non-fast-forward.
 on:
   workflow_dispatch:
+    inputs:
+      only:
+        description: 'Comma-separated view names from Tools/preview/map_shots.mjs (empty = all)'
+        required: false
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -27,6 +32,8 @@ jobs:
           VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
         run: npm run build
       - name: Screenshots
+        env:
+          ONLY: ${{ inputs.only }}
         run: |
           npx vite preview --port 4173 --strictPort &
           for i in $(seq 30); do curl -sf http://localhost:4173/ >/dev/null && break; sleep 1; done

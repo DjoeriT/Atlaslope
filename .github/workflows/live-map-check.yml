@@ -66,6 +66,9 @@ jobs:
           // Close in over Haro (Rioja): the zoom where Spain's own photo and the names take over.
           await page.goto('about:blank');
           await page.goto(`${url}#view=-2.848,42.574,14,0,0`, { waitUntil: 'load' });
+          // The names are added only after the map's 'load', so the network can fall quiet before they are asked for
+          // (release 14 and 15 checks saw 0 name tiles on a first try); wait for one name tile itself.
+          await page.waitForResponse((r) => isNames(r.url()) && r.ok(), { timeout: 45_000 }).catch(() => console.log('close-in view: no name tile after 45 s'));
           await page.waitForLoadState('networkidle', { timeout: 45_000 }).catch(() => console.log('close-in view: network not idle after 45 s'));
           await page.waitForTimeout(2000);
           await page.screenshot({ path: 'live-map-check/live-close.png' });
