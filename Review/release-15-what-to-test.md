@@ -14,5 +14,5 @@ Landscape through the place colours (owner, 17 Oct 15:17Z). The mastery map move
 5. **Plain atlas.** Turn satellite off: colours stay solid at every zoom, as before.
 
 ## For you
-Branch `claude/project-thread-xkhjw7`; change in `src/map/layers.ts`. Checks: `Tools/check.sh ui` passed on 7402a78 (258 unit, 95 UI tests).
+Branch `claude/project-thread-xkhjw7`; change in `src/map/layers.ts`. Checks: `Tools/check.sh ui` passed on 7402a78 (258 unit, 95 UI tests); after the review only a test and the preview script changed (`check.sh quick` green). ReviewBot `Review/landscape-fade-review.md`.
 Before/after shots in `Review/mock-zoom-detail/shots/` (spain-z6, rioja-z9). Not verified: Safari, a real iPad, a quiz round over the photo.

@@ -42,8 +42,14 @@ describe('layer list per menu state', () => {
   it('thins the place fills from a region view over the photo, so the land shows, but keeps the Spain-wide look and the atlas', () => {
     const sat = JSON.stringify(basemapPaint(true).dosFillOpacity);
     expect(sat).toMatch(/^\["interpolate",\["linear"\],\["zoom"\],6,.*,9,.*,12,/);
-    // Spain-wide (zoom 6 and out) keeps the colours the owner likes: 0.6 for a place, 0.82 selected.
-    expect(sat).toContain('6,["case",["boolean",["feature-state","sel"],false],0.82');
+    // Spain-wide (zoom 6 and out) keeps the colours and outlines the owner likes (release 13 values), for every state.
+    const at6 = (e: unknown) => JSON.stringify((e as unknown[]).slice(3, 5));
+    const sel = ['boolean', ['feature-state', 'sel'], false];
+    const hover = ['boolean', ['feature-state', 'hover'], false];
+    const dim = ['boolean', ['feature-state', 'dim'], false];
+    expect(at6(basemapPaint(true).dosFillOpacity)).toBe(JSON.stringify([6, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6]]));
+    expect(at6(basemapPaint(true).dosLineOpacity)).toBe(JSON.stringify([6, ['case', hover, 1, dim, 0.2, 0.7]]));
+    expect(at6(basemapPaint(true).dosLineWidth)).toBe(JSON.stringify([6, ['case', sel, 3, hover, 2.8, 1.6]]));
     expect(JSON.stringify(basemapPaint(false).dosFillOpacity)).not.toContain('zoom');
   });
   it('draws boundaries stronger over imagery than on the atlas', () => {
