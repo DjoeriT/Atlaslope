@@ -32,4 +32,14 @@ describe('feature state with 3D relief', () => {
     queued.shift()!();
     expect(map.triggerRepaint).not.toHaveBeenCalled();
   });
+
+  it('does nothing once the map is removed', () => {
+    const { map, freeRtt } = fakeMap(true);
+    const queued: Array<() => void> = [];
+    stateSetter(map as unknown as maplibregl.Map, (f) => queued.push(f))('dos', 'a', { sel: true });
+    (map as unknown as { _removed: boolean })._removed = true;
+    queued.shift()!();
+    expect(freeRtt).not.toHaveBeenCalled();
+    expect(map.triggerRepaint).not.toHaveBeenCalled();
+  });
 });

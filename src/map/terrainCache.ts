@@ -4,7 +4,7 @@
 // question's highlight stayed on the rest (owner's Galicia screenshot, 17 Oct 2026). Freeing the cache after a state change fixes it.
 import type maplibregl from 'maplibre-gl';
 
-type WithTerrain = { terrain?: { sourceCache?: { freeRtt?: () => void } } | null };
+type WithTerrain = { _removed?: boolean; terrain?: { sourceCache?: { freeRtt?: () => void } } | null };
 
 /** Feature state setter that also clears the relief's texture cache, once per batch of changes. */
 export function stateSetter(map: maplibregl.Map, defer: (f: () => void) => void = queueMicrotask) {
@@ -15,8 +15,8 @@ export function stateSetter(map: maplibregl.Map, defer: (f: () => void) => void 
     pending = true;
     defer(() => {
       pending = false;
-      const terrain = (map as unknown as WithTerrain).terrain;
-      if (!terrain) return;
+      const { terrain, _removed } = map as unknown as WithTerrain;
+      if (!terrain || _removed) return; // a map removed in the same tick must not draw again
       terrain.sourceCache?.freeRtt?.();
       map.triggerRepaint();
     });
