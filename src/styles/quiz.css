@@ -43,9 +43,8 @@
 /* The doors, focus, practise, progress file and Today card (release 7 card 5): from the approved mocks, on the app tokens. */
 h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:1.3rem 0 .5rem;font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem}
-.chip{border:1px solid var(--line);background:transparent;border-radius:999px;padding:.45rem .9rem;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);min-height:2.75rem;display:inline-flex;align-items:center;gap:.5rem}
-.chip[aria-checked="true"]{background:var(--ink);color:var(--glass);border-color:var(--ink)}
-:root[data-theme="dark"] .chip[aria-checked="true"]{background:var(--ink);color:#1B1611}
+.chip{border:1px solid var(--line2);background:transparent;border-radius:999px;padding:.45rem .9rem;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);min-height:2.75rem;display:inline-flex;align-items:center;gap:.5rem}
+.chip[aria-checked="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .chip.multi::before{content:"";width:.85rem;height:.85rem;border:1.5px solid currentColor;border-radius:.2rem}
 .chip.multi[aria-checked="true"]::before{background:currentColor;box-shadow:inset 0 0 0 2px var(--ink)}
 .today{list-style:none;margin:.6rem 0 0;padding:0}
@@ -54,8 +53,8 @@ h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink
 .today li a b{font-family:var(--serif);font-weight:500;font-size:1.1rem}
 .today li a small{color:var(--ink3);font-size:.85rem}
 .today li .bar{flex:0 0 5.5rem}
-.door{border:1px solid var(--line);border-radius:var(--rad);padding:1rem 1.1rem;margin:1rem 0}
-.door h2{margin:0 0 .25rem;font-family:var(--serif);font-size:1.35rem;font-weight:600}
+.door{border:1px solid var(--line);border-radius:var(--rad-card);padding:1rem 1.1rem;margin:1rem 0}
+.door h2{border-top:0;padding-top:0;margin:0 0 .25rem;font-family:var(--serif);font-size:1.35rem;font-weight:600}
 .door p{margin:.25rem 0 .6rem;color:var(--ink2)}
 .door .big{font-size:1.15rem;color:var(--ink);margin:.6rem 0 .2rem}
 .door .sub{font-size:.9rem}
