@@ -172,6 +172,13 @@ test('the manifest is linked and parses', async ({ page, request }) => {
   expect(res.ok()).toBe(true);
   const manifest = await res.json();
   expect(manifest).toMatchObject({ name: 'AtlaSlope', display: 'standalone', start_url: './' });
+  // Home Screen and install icons (polish slice): each one resolves as a PNG.
+  expect(manifest.icons.map((i: { sizes: string; purpose?: string }) => `${i.sizes} ${i.purpose ?? 'any'}`)).toEqual(['192x192 any', '512x512 any', '512x512 maskable']);
+  for (const icon of manifest.icons) {
+    const r = await request.get(new URL(icon.src, res.url()).toString());
+    expect(r.ok()).toBe(true);
+    expect(r.headers()['content-type']).toContain('image/png');
+  }
 });
 
 test('a place card opened from the quiz comes back to the same question', async ({ page }) => {

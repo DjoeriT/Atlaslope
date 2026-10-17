@@ -94,10 +94,10 @@ test('Rioja mixes its own photos with zone photos, five frames', async ({ page }
 });
 
 test('a place without photos shows its name on a cover, never a broken image', async ({ page }) => {
-  for (const hash of ['#place=jerez', '#place=jerez&page']) {
+  for (const hash of ['#place=txakoli-alava', '#place=txakoli-alava&page']) {
     await open(page, hash);
     await expect(page.locator('.namecover')).toBeVisible();
-    await expect(page.locator('.namecover')).toContainText('Jerez');
+    await expect(page.locator('.namecover')).toContainText('Txakol');
     await expect(page.locator('.card img, .pg img')).toHaveCount(0);
   }
 });

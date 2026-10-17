@@ -9,6 +9,11 @@ Fill pass (release 9): `photo_candidates.py fill` runs only for places that have
 (a file then has to name the place and a vineyard word), and writes Review/sources/photo-candidates-fill.json and
 contact-sheets/fill-<region>.jpg. The first-pass candidates stay untouched.
 
+Category pass (polish slice, issue #42): `photo_candidates.py cats` walks hand-picked Commons categories (and their direct
+subcategories) for the quizzed places the fill pass left empty, because their files rarely carry coordinates or the place's DO name.
+A file is kept when its coordinates fall inside the boundary (2 km margin) or, without coordinates, when it names one of the place's
+towns and a vine or wine word. Writes Review/sources/photo-candidates-cats.json and contact-sheets/cats-<place>.jpg.
+
 Second version (release 4). The first one searched by name and within 10 km of the centroid, which returned wine bottles from
 other regions, a Chilean winery and space-station photos. This one:
 - searches only files with coordinates **inside the place's boundary** (geosearch discs of 10 km laid over the boundary, then a
@@ -224,8 +229,94 @@ def fill():
         print("sheet", region, flush=True)
 
 
+CATS_OUT = ROOT / "Review/sources/photo-candidates-cats.json"
+# Place: (categories to walk, towns a file without coordinates must name). Category names are guesses; missing ones are skipped.
+CATS = {
+    "jerez": (["Vineyards in Jerez de la Frontera", "Vineyards in the Province of Cádiz", "Vineyards in Cádiz Province", "Sherry",
+               "Albariza", "Wine of Jerez", "Viñedos de Jerez", "Vineyards in Andalusia", "Bodegas in Jerez de la Frontera",
+               "Vineyards in El Puerto de Santa María", "Vineyards in Trebujena", "Vineyards in Chipiona"],
+              r"jerez|xer[eè]s|sherry|trebujena|chipiona|puerto de santa mar|rota\b|chiclana|lebrija|albariza|macharnudo|carrascal|balbaína|a[ñn]ina"),
+    "manzanilla": (["Vineyards in Sanlúcar de Barrameda", "Manzanilla (wine)", "Manzanilla sherry", "Bodegas in Sanlúcar de Barrameda",
+                    "Wine of Sanlúcar de Barrameda", "Sanlúcar de Barrameda"],
+                   r"sanl[uú]car|manzanilla|miraflores|el hornillo|barbadillo"),
+    "ribera-del-guadiana": (["Vineyards in the Province of Badajoz", "Vineyards in Badajoz Province", "Vineyards in Extremadura",
+                             "Vineyards in the Province of Cáceres", "Tierra de Barros", "Almendralejo", "Wine of Extremadura",
+                             "Ribera del Guadiana (DO)", "Vineyards in Almendralejo"],
+                            r"extremadura|badajoz|almendralejo|tierra de barros|villafranca de los barros|guare[ñn]a|montánchez|ca[ñn]amero|matanegra|ribera alta|ribera baja|cáceres|zafra|fuente del maestre|azuaga"),
+    "txakoli-alava": (["Vineyards in Álava", "Txakoli", "Txakoli de Álava", "Arabako Txakolina", "Ayala, Álava", "Amurrio",
+                       "Okondo", "Laudio/Llodio", "Artziniega", "Aiara"],
+                      r"aiara|ayala|amurrio|okondo|llodio|laudio|artziniega|arabako txakolin|txakol[ií] de [aá]lava|menagarai|respaldiza|quejana"),
+}
+
+
+def members(cat, depth=1):
+    titles, subs = [], []
+    cont = {}
+    while True:
+        r = get({"action": "query", "list": "categorymembers", "cmtitle": "Category:" + cat, "cmtype": "file|subcat", "cmlimit": 500, **cont})
+        for m in r.get("query", {}).get("categorymembers", []):
+            (subs if m["ns"] == 14 else titles).append(m["title"])
+        if "continue" not in r: break
+        cont = {"cmcontinue": r["continue"]["cmcontinue"]}
+        time.sleep(.5)
+    if depth:
+        for sc in subs[:25]:
+            titles += members(sc.split(":", 1)[1], depth - 1)
+            time.sleep(.3)
+    return titles
+
+
+def cats():
+    tree = {p["id"]: p for p in json.loads((ROOT / "data/places.json").read_text())["places"]}
+    geoms = boundaries([tree[i] for i in CATS])
+    done = json.loads(CATS_OUT.read_text()) if CATS_OUT.exists() else {}
+    for pid, (cat_list, towns) in CATS.items():
+        if pid in done: continue
+        g = prep(geoms[pid].buffer(0.02)) if pid in geoms else None
+        hint = re.compile(towns, re.I)
+        found = {}
+        for c in cat_list:
+            try: found.update({t: c for t in members(c)})
+            except Exception as e: print(pid, c, "error:", e, flush=True)
+            time.sleep(.5)
+        titles = [t for t in found if not DROP.search(t)]
+        out = []
+        for i in range(0, len(titles), 40):
+            r = get({"action": "query", "titles": "|".join(titles[i:i + 40]), "prop": "imageinfo|categories|coordinates", "clshow": "!hidden",
+                     "cllimit": "max", "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 480})
+            for p in r["query"].get("pages", []):
+                ii = (p.get("imageinfo") or [None])[0]
+                if not ii or ii.get("mime") not in ("image/jpeg", "image/png"): continue
+                m = ii.get("extmetadata", {})
+                lic = m.get("LicenseShortName", {}).get("value", "")
+                if not OK.match(lic) or ii["width"] < 1600: continue
+                desc = re.sub("<[^>]+>", "", m.get("ImageDescription", {}).get("value", ""))[:300]
+                cl = {c["title"].split(":", 1)[1] for c in p.get("categories", [])}
+                text = p["title"] + " " + desc + " " + " ".join(cl)
+                if DROP.search(p["title"] + " " + desc[:80]): continue
+                if not (VINE.search(text) or WINE.search(text)): continue
+                xy = (p["coordinates"][0]["lon"], p["coordinates"][0]["lat"]) if p.get("coordinates") else None
+                inside = bool(xy) and g is not None and g.contains(Point(xy))
+                if xy and g is not None and not inside: continue
+                if not xy and not hint.search(text): continue
+                out.append({"title": p["title"], "page": ii["descriptionurl"], "thumb": ii.get("thumburl"), "url": ii["url"],
+                            "width": ii["width"], "height": ii["height"], "licence": lic, "licenceUrl": m.get("LicenseUrl", {}).get("value"),
+                            "artist": re.sub("<[^>]+>", "", m.get("Artist", {}).get("value", "")).strip()[:120],
+                            "credit": re.sub("<[^>]+>", "", m.get("Credit", {}).get("value", "")).strip()[:200], "description": desc,
+                            "coords": xy, "inside": inside, "quality": max([FLAGS.get(c, 0) for c in cl] or [0]),
+                            "vine": bool(VINE.search(text)), "wine": bool(WINE.search(text)), "category": found.get(p["title"])})
+            time.sleep(.5)
+        done[pid] = {"name": tree[pid]["name"], "region": tree[pid]["region"], "seen": len(found), "kept": len(out), "candidates": rank(out)}
+        print(pid, len(found), len(out), flush=True)
+        CATS_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for pid in CATS:
+        sheet(pid, [tree[pid]], done, "cats-")
+        print("sheet", pid, flush=True)
+
+
 def main():
     if sys.argv[1:] == ["fill"]: return fill()
+    if sys.argv[1:] == ["cats"]: return cats()
     tree = json.loads((ROOT / "data/places.json").read_text())
     places = [p for p in tree["places"] if p["quiz"] != "none"]
     geoms = boundaries(places)

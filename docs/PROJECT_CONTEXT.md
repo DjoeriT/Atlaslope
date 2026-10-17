@@ -80,12 +80,15 @@ session on his Mac also sees his thread messages and started a second publish ru
   `Review/mock-cards-climate-v2/`, approved 11:25Z; design check `Review/qa-round-1-cards-design-check.md`). Both live in
   release 11 (17 Oct, owner "publish release 11" 11:53Z); tester note `Review/release-11-what-to-test.md`. The mastery map and ready
   for friends move to 12 and 13 (#15, #16).
+- Polish slice (owner 17 Oct 11:58Z, "first going to polish"): favicon and Home Screen icon on the slope logo in today's colours
+  (owner card 12:05Z "Mix"), install icons in the manifest, photos for Jerez, Manzanilla and Ribera del Guadiana (#42). If it ships on
+  its own it is release 12, and the mastery map and ready for friends move to 13 and 14. Handoff `docs/handoffs/2026-10-17-polish-icons-photos.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
-- 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Jerez and Manzanilla have no photos.
+- 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Txakoli de Álava has no photo (Jerez, Manzanilla and Ribera del Guadiana got theirs in the polish slice).
 - Famous producers on only 6 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - 3D relief caches flat layers as textures (MapLibre 4.7.1) and does not redraw them after a paint change or late GeoJSON; the app takes the
