@@ -66,6 +66,10 @@ session on his Mac also sees his thread messages and started a second publish ru
   `Review/release-8-9-plan.md`, handoff `docs/handoffs/2026-10-17-release-8-new-look.md`. Guides, mastery map and ready for friends are now
   releases 10, 11 and 12 (#14 to #16). Release 8 live 17 Oct (tag `release-8` on c18b463). Release 9 (pages and photos) built,
   handoff `docs/handoffs/2026-10-17-release-9-travel-pages.md`; photo gaps in #42.
+- Release 10, place guides (#14, owner kick-off 17 Oct 09:03Z): a "Terroir" section on the place page (owner cards 09:13Z: a section,
+  named Terroir) for Rioja and its three zones (`content/guides/`), fly-there buttons with a caption card on the map, "Test me" on every
+  quizzed place page, the "1 place to learn" plural fix. Mock `Review/mock-guides-v1/`, plan `Review/release-10-plan.md`, handoff
+  `docs/handoffs/2026-10-17-release-10-guides.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
@@ -92,6 +96,7 @@ archived context file; the ones that changed:
   a full place page with a photo mosaic, highlights, small charts and an "at a glance" box, and a region page with photo tiles. Light is
   white and wine, dark is gold on black. Mocks `Review/mock-travel-v1/`, rules `Review/visual-style.md`. Colours and type built in
   release 8; the pages follow in release 9 (owner card 17 Oct 06:48Z: two releases; photos "fix and fill", three per place).
+- 2026-10-17 [O]: place guides are a "Terroir" section of the place page, not a separate page; text only from sources (cards 09:13Z).
 - 2026-10-17 [O]: a visual design check runs next to the UX and UI check on every new or changed screen, and built screens are compared
   with their approved mock before a release (`CLAUDE.md`).
 

@@ -60,7 +60,9 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
   const startStudy = (learnMore: boolean) => { asked.current.clear(); play(study(learnMore)); };
   const startReview = (set: string[], size: 10 | 20) => {
     asked.current.clear();
-    go(null);
+    // A Test me address is replaced, not pushed past, so Back from the round does not start it again (release 10 review).
+    if (route.sub === 'test') location.replace(quizToHash({ sub: null }));
+    else go(null);
     play(reviewRound(tree, set, quiz.log, quiz.now(), { size }), 'review', { set, size });
   };
 
