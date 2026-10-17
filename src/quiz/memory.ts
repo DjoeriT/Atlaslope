@@ -34,10 +34,11 @@ export function newMemory(due: string): MemoryState {
   return { box: 0, due, shade: 'new', answers: 0, streak: 0, streakDays: [] };
 }
 
-function shadeFrom(answers: number, streak: number, streakDays: string[]): Shade {
+/** Known: two rights in a row on different days (at least a day apart), so cramming in one sitting does not count (owner card, 17 Oct 2026). Solid: three. */
+function shadeFrom(answers: number, streakDays: string[]): Shade {
   if (answers === 0) return 'new';
   if (streakDays.length >= 3) return 'solid';
-  return streak >= 2 ? 'known' : 'learning';
+  return streakDays.length >= 2 ? 'known' : 'learning';
 }
 
 /** One answer applied to a memory: right when due moves up a box (max 5); right before due changes no box or due date (so a miss re-asked in the same round moves nothing); a miss drops a box (min 0) and is due after that box's gap. */
@@ -45,13 +46,13 @@ export function applyAnswer(m: MemoryState, at: string, right: boolean): MemoryS
   const answers = m.answers + 1;
   if (!right) {
     const box = Math.max(MIN_BOX, m.box - 1);
-    return { box, due: addDays(at, gapDays(box)), shade: shadeFrom(answers, 0, []), answers, streak: 0, streakDays: [] };
+    return { box, due: addDays(at, gapDays(box)), shade: shadeFrom(answers, []), answers, streak: 0, streakDays: [] };
   }
   const streak = m.streak + 1;
   const last = m.streakDays[m.streakDays.length - 1];
   const streakDays =
     m.streakDays.length < 3 && (last === undefined || time(at) - time(last) >= DAY_MS) ? [...m.streakDays, at] : m.streakDays;
-  const shade = shadeFrom(answers, streak, streakDays);
+  const shade = shadeFrom(answers, streakDays);
   if (time(at) < time(m.due)) return { ...m, shade, answers, streak, streakDays };
   const box = m.box === 0 ? FIRST_BOX : Math.min(MAX_BOX, m.box + 1);
   return { box, due: addDays(at, gapDays(box)), shade, answers, streak, streakDays };

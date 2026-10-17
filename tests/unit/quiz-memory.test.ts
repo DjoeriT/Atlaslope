@@ -71,8 +71,14 @@ describe('shades', () => {
     expect(mem([answer(0, false)]).shade).toBe('learning');
   });
 
-  it('is known after two right answers in a row', () => {
-    expect(mem([answer(0, false), answer(0.1, true), answer(0.2, true)]).shade).toBe('known');
+  it('is known after two right answers in a row, the second at least a day after the first', () => {
+    expect(mem([answer(0, false), answer(0.1, true), answer(1.1, true)]).shade).toBe('known');
+  });
+
+  it('is not known after two rights in one sitting: cramming does not count (owner card, 17 Oct 2026)', () => {
+    expect(mem([answer(0, true), answer(0.01, true), answer(0.02, true)]).shade).toBe('learning');
+    expect(mem([answer(0, true), answer(0.9, true)]).shade).toBe('learning');
+    expect(mem([answer(0, true), answer(0.9, true), answer(1, true)]).shade).toBe('known');
   });
 
   it('is solid after three rights in a row on three days, each a day apart', () => {
@@ -85,7 +91,7 @@ describe('shades', () => {
   it('drops back to learning on any miss, from known or solid', () => {
     expect(mem([answer(0, true), answer(1, true), answer(1.5, false)]).shade).toBe('learning');
     expect(mem([answer(0, true), answer(1, true), answer(2, true), answer(5, false)]).shade).toBe('learning');
-    expect(mem([answer(0, true), answer(1, true), answer(2, true), answer(5, false), answer(5.1, true), answer(5.2, true)]).shade).toBe('known');
+    expect(mem([answer(0, true), answer(1, true), answer(2, true), answer(5, false), answer(5.1, true), answer(6.1, true)]).shade).toBe('known');
   });
 
   it('gives a place the shade of where, capped by what: known only when both are, solid only when both are', () => {

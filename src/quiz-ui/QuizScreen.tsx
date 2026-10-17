@@ -1,7 +1,7 @@
 import { Sheet } from '../app/Sheet';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { QuizView } from '../map/quiz';
-import { memoryKey, reviewRound, studyRound, type Round } from '../quiz';
+import { memoryKey, reviewRound, roundSeed, studyRound, type Round } from '../quiz';
 import type { Tree } from '../tree';
 import { quizToHash, type QuizRoute } from '../url';
 import { Doors } from './Doors';
@@ -57,22 +57,22 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
     setEmpty(!round.items.length);
     if (round.items.length) setMode({ at: 'playing', round, id: ++ids.current, kind, review });
   };
-  const study = (learnMore: boolean) => studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, learnMore, focus: quiz.focus, ...localDay(quiz.now()) });
+  const study = (learnMore: boolean) => studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, learnMore, focus: quiz.focus, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
   const startStudy = (learnMore: boolean) => { asked.current.clear(); play(study(learnMore)); };
   const startReview = (set: string[], size: 10 | 20) => {
     asked.current.clear();
     // A Test me address is replaced, not pushed past, so Back from the round does not start it again (release 10 review).
     if (route.sub === 'test') location.replace(quizToHash({ sub: null }));
     else go(null);
-    play(reviewRound(tree, set, quiz.log, quiz.now(), { size }), 'review', { set, size });
+    play(reviewRound(tree, set, quiz.log, quiz.now(), { size, seed: roundSeed(quiz.now(), quiz.log.length) }), 'review', { set, size });
   };
 
   const today = useMemo(() => studyRound(tree, quiz.log, quiz.now(), { focus: quiz.focus, ...localDay(quiz.now()) }), [tree, quiz.log, quiz.focus]);
   const keepGoing = useMemo(() => {
     if (mode.at !== 'ended' || !mode.result.round.more) return null;
     return mode.review
-      ? reviewRound(tree, mode.review.set, quiz.log, quiz.now(), { size: mode.review.size, asked: asked.current })
-      : studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, focus: quiz.focus, ...localDay(quiz.now()) });
+      ? reviewRound(tree, mode.review.set, quiz.log, quiz.now(), { size: mode.review.size, asked: asked.current, seed: roundSeed(quiz.now(), quiz.log.length) })
+      : studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, focus: quiz.focus, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
   }, [mode, quiz.log]);
 
   // Coming back from a place card puts the keyboard on the question again.
