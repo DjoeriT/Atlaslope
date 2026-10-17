@@ -34,7 +34,7 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
   page.on('console', (m) => { if (m.type() === 'error') logged.add(`console: ${m.text().slice(0, 300)}`); });
   page.on('pageerror', (e) => logged.add(`page error: ${e.message.slice(0, 300)}`));
   page.on('response', (r) => { if (!r.ok() && /ign\.es|openfreemap|arcgis|terrarium/.test(r.url())) failed.push(`${r.status()} ${r.url().split('?')[0]}`); });
-  for (const [name, view] of Object.entries(VIEWS)) {
+  for (const [name, view] of Object.entries(VIEWS).filter(([n]) => !process.env.ONLY || n === process.env.ONLY)) {
     if (screen === 'ipad' && !['haro-z16', 'priorat-z13-tilt'].includes(name)) continue;
     await page.goto('about:blank');
     await page.goto(`${base}#view=${view}`, { waitUntil: 'domcontentloaded', timeout: 60_000 });

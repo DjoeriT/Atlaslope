@@ -17,6 +17,7 @@ const SEA_STRIP_M = 2000;
 
 /** Raster tile size to declare: 128 on 2x screens makes MapLibre fetch the next zoom, drawn at one tile pixel per screen pixel. */
 export function rasterTileSize(dpr: number = typeof window === 'undefined' ? 1 : window.devicePixelRatio): 128 | 256 {
+  if (import.meta.env.VITE_DEBUG_TILE256) return 256; // TEMP experiment
   return dpr >= 1.5 ? 128 : 256;
 }
 
