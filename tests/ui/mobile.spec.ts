@@ -20,6 +20,14 @@ async function onTop(page: Page, selector: string) {
   });
 }
 
+/** Nothing (the top bar, above all) is drawn over the menu's top edge. */
+async function topEdgeClear(page: Page) {
+  return page.locator('.menu.br').evaluate((el) => {
+    const r = el.getBoundingClientRect();
+    return [0.1, 0.5, 0.9].every((f) => el.contains(document.elementFromPoint(r.x + r.width * f, r.y + 4)));
+  });
+}
+
 test('search results show above the open card', async ({ page }) => {
   await open(page, '#region=rioja');
   await page.getByRole('searchbox', { name: /Search/ }).fill('rib');
@@ -37,6 +45,15 @@ test('the Explore tab goes back to Spain without reloading the page', async ({ p
   expect(await page.evaluate(() => (window as unknown as { marker?: number }).marker)).toBe(1);
   await page.goBack();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
+});
+
+test('the Explore tab on the Spain card stays put without a reload', async ({ page }) => {
+  await open(page);
+  await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
+  const before = await page.evaluate(() => history.length);
+  await page.getByRole('link', { name: 'Explore' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Spain');
+  expect(await page.evaluate(() => [(window as unknown as { marker?: number }).marker, history.length])).toEqual([1, before]);
 });
 
 test('Back to map steps back, so the back button does not reopen the page just closed', async ({ page }) => {
@@ -76,6 +93,7 @@ test.describe('on a phone', () => {
     expect(box.y).toBeGreaterThanOrEqual(0);
     expect(await menu.evaluate((el) => el.scrollHeight <= el.clientHeight + 1)).toBe(true);
     expect(await onTop(page, '.menu.br label')).toBe(true);
+    expect(await topEdgeClear(page)).toBe(true);
     await page.getByRole('radio', { name: 'Study region' }).check();
     await expect(page.getByRole('group', { name: 'Study regions' })).toBeVisible();
   });
@@ -114,5 +132,6 @@ test.describe('on a phone held sideways', () => {
     expect(box.y).toBeGreaterThanOrEqual(0);
     expect(box.y + box.height).toBeLessThanOrEqual(390);
     expect(await onTop(page, '.menu.br label')).toBe(true);
+    expect(await topEdgeClear(page)).toBe(true);
   });
 });

@@ -17,8 +17,12 @@ touch on, through the map, cards, place and region pages, search, menus, legend 
 6. The search field is at least 16 px on touch screens, so iPhone Safari no longer zooms in on it.
 7. Quiz: a new step opened at the scroll position the last one ended on; each step now starts at the top, and a reveal scrolls to the result.
 
-Tests: `tests/ui/mobile.spec.ts` (8 tests; all 8 fail on the old code, pass now [V]). `tests/ui/region-page.spec.ts` expected Back
+Tests: `tests/ui/mobile.spec.ts` (9 tests; the first 8 all fail on the old code, pass now [V]). `tests/ui/region-page.spec.ts` expected Back
 after "Back to map" to reopen the page; it now checks Forward reopens it. `Tools/check.sh ui` green [V].
+
+ReviewBot (`Review/mobile-check-review.md`): merge after fixes, 0 blockers, 3 should-fix, all fixed: the map menu was still drawn
+under the top bar (its button column now rises while it is open), Explore swallowed Cmd/Ctrl-click (modifier clicks open a new tab again),
+and Explore on the Spain card kept a "stay" camera. Two tests added (menu's top edge clear, Explore on Spain).
 
 **Open (design choices, not built).** Phone landscape: the side card is about 290 px tall and its buttons take half of it. Phone
 portrait: the cover photo takes about half of the bottom sheet. Tap targets under 44 px from `Review/qa-round-1.md` remain. Search

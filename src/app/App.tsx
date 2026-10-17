@@ -128,7 +128,7 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setKeepQuiz(false); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
+      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setKeepQuiz(false); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
       {(quiz || keepQuiz) && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
