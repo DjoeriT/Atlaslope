@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import places from '../../data/places.json';
 import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
+import { RegionPage } from '../pages/RegionPage';
 import { focusFor, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
@@ -33,7 +34,7 @@ export function App() {
 
   // A new card is a new history entry; back and forward come back as popstate.
   const go = useCallback((to: Selection) => {
-    if (to.kind === selRef.current.kind && to.id === selRef.current.id) return;
+    if (to.kind === selRef.current.kind && to.id === selRef.current.id && !!to.page === !!selRef.current.page) return;
     history.pushState(null, '', here() + selectionToHash(to));
     setQuiz(null);
     setSel(to);
@@ -106,7 +107,7 @@ export function App() {
       {!quiz && keepQuiz && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {quiz ? null : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
+      {quiz ? null : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
         : progress.hasProgress && !todayClosed ? (
           <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
         ) : <SpainCard tree={tree} go={go} />}

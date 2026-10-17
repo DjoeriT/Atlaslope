@@ -51,7 +51,12 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name}
-      foot={<Link className="btn quiet" to={SPAIN} go={go}>{t.allOfSpain}</Link>}
+      foot={(
+        <>
+          <Link className="btn primary" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.seeRegion}</Link>
+          <Link className="btn quiet" to={SPAIN} go={go}>{t.allOfSpain}</Link>
+        </>
+      )}
     >
       <p className="lede">{t.regionLede(places.length)}</p>
       <ul className="tree">
