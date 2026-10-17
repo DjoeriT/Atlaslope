@@ -37,7 +37,9 @@ export function basemapPaint(sat: boolean) {
   return {
     ocean: { color: sat ? '#1B3A52' : '#9DBCCB', opacity: sat ? 0.45 : 1 },
     coast: sat ? '#E6F0F4' : '#4F6873',
-    borders: sat ? '#F4EFE6' : '#5B5048',
+    // Country borders get a halo so they still read over dark relief shading and busy imagery (#40).
+    borders: sat ? '#F4EFE6' : '#4A3F38',
+    bordersCasing: { color: sat ? '#1A1512' : '#FFFFFF', opacity: sat ? 0.45 : 0.75 },
     hillshadeExaggeration: sat ? 0.25 : 0.5,
     dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, dim, 0.06, sat ? 0.62 : 0.45],
     dosLineOpacity: ['case', dim, 0.25, 1],
