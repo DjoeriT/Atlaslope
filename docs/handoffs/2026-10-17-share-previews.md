@@ -13,3 +13,8 @@ Dark card (owner, 17 Oct 2026); `make_share_image.py light` still builds the lig
 WhatsApp sometimes shows a small square thumbnail cut from the middle of the image. Previews are cached by each app,
 so a link already shared keeps its old (empty) preview for a while. Not verified on a real phone until the next publish.
 The favicon and Home Screen icon still use the older three-row logo; the app and this card use the five-row one.
+
+**Follow-up, same day (owner card "Everywhere").** The app's own wording now matches the share card: tab title
+"AtlaSlope · The Wine Study Atlas" (title case there because it reads as a name), first-run welcome and Home Screen description
+open with "The wine study atlas for WSET and Wine Scholar students". `docs/scope.md` "Job" records the shift to exam students first.
+Place tabs ("Rioja · AtlaSlope") are unchanged.

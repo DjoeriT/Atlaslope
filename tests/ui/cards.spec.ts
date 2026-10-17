@@ -158,11 +158,11 @@ test('boundaries that fail to load say so and offer a reload', async ({ page }) 
 
 test('the tab title names the open place first and follows the walk', async ({ page }) => {
   await open(page);
-  await expect(page).toHaveTitle('AtlaSlope · The wine atlas that quizzes you');
+  await expect(page).toHaveTitle('AtlaSlope · The Wine Study Atlas');
   await page.locator('.card').getByRole('link', { name: /^Castilla y León/ }).click();
   await expect(page).toHaveTitle('Castilla y León · AtlaSlope');
   await page.goBack();
-  await expect(page).toHaveTitle('AtlaSlope · The wine atlas that quizzes you');
+  await expect(page).toHaveTitle('AtlaSlope · The Wine Study Atlas');
   await open(page, '#place=toro');
   await expect(page).toHaveTitle('Toro · AtlaSlope');
 });
