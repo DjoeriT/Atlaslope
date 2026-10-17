@@ -5,6 +5,14 @@ import { flushSync } from 'react-dom';
 // the page. No motion under "reduce motion", and none in browsers without view transitions (the change simply happens).
 type Doc = Document & { startViewTransition?: (cb: () => void) => { finished: Promise<void> } };
 
+let running: Promise<void> | null = null;
+
+/** Runs `fn` once the screen change in progress has finished, or now when none is. The map waits, so its flight and the card's
+ *  move don't compete for the same frames (owner, 17 Oct 2026: "jittery and too fast"). */
+export function afterMotion(fn: () => void) {
+  if (running) running.then(fn); else fn();
+}
+
 const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** Runs a state change as one view transition. `kind` lands on <html data-motion> for the CSS to pick the move. */
@@ -13,5 +21,9 @@ export function withMotion(change: () => void, kind: 'card' | 'page-open' | 'pag
   if (!doc.startViewTransition || reduce() || document.visibilityState !== 'visible') { change(); return; }
   document.documentElement.dataset.motion = kind;
   const vt = doc.startViewTransition(() => flushSync(change));
-  vt.finished.finally(() => { if (document.documentElement.dataset.motion === kind) delete document.documentElement.dataset.motion; });
+  const done: Promise<void> = vt.finished.catch(() => {}).then(() => {
+    if (document.documentElement.dataset.motion === kind) delete document.documentElement.dataset.motion;
+    if (running === done) running = null;
+  });
+  running = done;
 }

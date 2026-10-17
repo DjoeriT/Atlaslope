@@ -4,29 +4,32 @@
    travels from a card to the next card or to the page. The map itself never crossfades (it moves on its own). */
 .card:not(.first){view-transition-name:card}
 .pg,.rpage{view-transition-name:page}
-.card .cover img,.pg-mosaic figure:first-child img,.rcover img{view-transition-name:hero}
-.card:not(.first) .body > .q-num,.card:not(.first) .body > .kicker:first-child{view-transition-name:none}
+/* the cover photo travels only between a card and its page; between cards it simply crossfades with the card */
+html[data-motion^="page"] .card .cover img,html[data-motion^="page"] .pg-mosaic figure:first-child img,html[data-motion^="page"] .rcover img{view-transition-name:hero}
 ::view-transition-old(root),::view-transition-new(root){animation:none}
-::view-transition-group(*){animation-duration:.32s;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
-::view-transition-group(hero){animation-duration:.38s;z-index:2}
-::view-transition-image-pair(hero){isolation:auto}
-::view-transition-old(hero),::view-transition-new(hero){animation:none;mix-blend-mode:normal;height:100%;object-fit:cover;overflow:clip}
-::view-transition-old(hero){display:none}
-/* card to card: the old card fades quickly, the new one rises into place */
-::view-transition-old(card){animation:vt-fade-out .14s ease-in both}
-::view-transition-new(card){animation:vt-rise .3s cubic-bezier(.2,.8,.2,1) .05s both}
-/* quiz steps: a quicker crossfade with a small rise, the card's frame stays put */
-html[data-motion="step"]::view-transition-old(card){animation:vt-fade-out .1s ease-in both}
-html[data-motion="step"]::view-transition-new(card){animation:vt-rise-small .22s cubic-bezier(.2,.8,.2,1) both}
-/* a page slides up over the map, and down again on Back to map */
-html[data-motion="page-open"]::view-transition-new(page){animation:vt-page-in .36s cubic-bezier(.2,.8,.2,1) both}
-html[data-motion="page-close"]::view-transition-old(page){animation:vt-page-out .28s cubic-bezier(.4,0,.8,.4) both}
-html[data-motion="page-close"]::view-transition-new(card){animation:vt-rise .3s cubic-bezier(.2,.8,.2,1) .12s both}
-@keyframes vt-fade-out{to{opacity:0}}
-@keyframes vt-rise{from{opacity:0;transform:translateY(14px)}}
-@keyframes vt-rise-small{from{opacity:0;transform:translateY(6px)}}
-@keyframes vt-page-in{from{opacity:.4;transform:translateY(8vh)}}
-@keyframes vt-page-out{to{opacity:0;transform:translateY(8vh)}}
+/* One easing and calm timings everywhere (owner, 17 Oct 2026: "jittery and too fast"): an ease-out that settles slowly. */
+:root{--vt-ease:cubic-bezier(.22,1,.36,1);--vt-card:.48s;--vt-page:.6s}
+::view-transition-group(*){animation-duration:var(--vt-card);animation-timing-function:var(--vt-ease)}
+/* snapshots keep their own size and are clipped, never stretched, while the frame between two cards changes height */
+::view-transition-group(card){overflow:clip;border-radius:var(--rad-card)}
+::view-transition-old(card),::view-transition-new(card){height:100%;width:100%;object-fit:none;object-position:top}
+::view-transition-old(card){animation:vt-fade-out var(--vt-card) var(--vt-ease) both}
+::view-transition-new(card){animation:vt-rise var(--vt-card) var(--vt-ease) both}
+html[data-motion="step"]::view-transition-old(card){animation:vt-fade-out .36s var(--vt-ease) both}
+html[data-motion="step"]::view-transition-new(card){animation:vt-fade-in .36s var(--vt-ease) both}
+::view-transition-group(hero){animation-duration:var(--vt-page);z-index:2}
+::view-transition-old(hero),::view-transition-new(hero){height:100%;width:100%;object-fit:cover;animation-duration:var(--vt-page);animation-timing-function:var(--vt-ease)}
+html[data-motion="page-open"]::view-transition-group(page),html[data-motion="page-close"]::view-transition-group(page){animation-duration:var(--vt-page)}
+html[data-motion="page-open"]::view-transition-new(page){animation:vt-page-in var(--vt-page) var(--vt-ease) both}
+html[data-motion="page-open"]::view-transition-old(card){animation:vt-fade-out .3s var(--vt-ease) both}
+html[data-motion="page-close"]::view-transition-old(page){animation:vt-page-out .55s cubic-bezier(.5,0,.75,0) both}
+html[data-motion="page-close"]::view-transition-new(card){animation:vt-rise var(--vt-card) var(--vt-ease) .15s both}
+@keyframes vt-fade-out{from{opacity:1}to{opacity:0}}
+@keyframes vt-fade-in{from{opacity:0}}
+@keyframes vt-rise{from{opacity:0;transform:translateY(10px)}}
+@keyframes vt-page-in{from{opacity:0;transform:translateY(40px)}}
+@keyframes vt-page-out{to{transform:translateY(100%)}}
+@keyframes vt-page-in-op{from{opacity:0}}
 @media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
 
 /* ---- A title the app focuses (for screen readers) shows no ring; keyboard focus on controls keeps the ring. */
