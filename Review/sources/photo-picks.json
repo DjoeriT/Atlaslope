@@ -591,6 +591,19 @@
      -7.132824,
      42.305
     ]
+   },
+   {
+    "title": "File:Río Sil dende Santa María.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Sil_dende_Santa_Mar%C3%ADa.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Mayte Ríos",
+    "credit": "Own work",
+    "description": "Vistas do Río Sil dende Santa María",
+    "coords": [
+     -7.108519,
+     42.378268
+    ]
    }
   ],
   "txakoli-alava": [
@@ -2141,6 +2154,113 @@
     "artist": "19Tarrestnom65",
     "credit": "Own work",
     "description": "Paisaje de la Manchuela Albaceteña",
+    "coords": null
+   }
+  ],
+  "cava": [
+   {
+    "title": "File:Vista des del carrer Monturiol de la Granada - 20260823 175921.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vista_des_del_carrer_Monturiol_de_la_Granada_-_20260823_175921.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pere López Brosa",
+    "credit": "Own work",
+    "description": "Vista de la Granada",
+    "coords": [
+     1.718846,
+     41.379304
+    ]
+   },
+   {
+    "title": "File:34 Vinyes de Cava Reverté, a la Polla-rossa (Salomó).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:34_Vinyes_de_Cava_Revert%C3%A9,_a_la_Polla-rossa_(Salom%C3%B3).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Enric",
+    "credit": "Own work",
+    "description": "Vinyes de Cava Reverté, a la Polla-rossa (Salomó)",
+    "coords": null
+   },
+   {
+    "title": "File:Vista general del Monestir i camp de vinyes.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Vista_general_del_Monestir_i_camp_de_vinyes.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "DagafeSQV",
+    "credit": "Own work",
+    "description": "Monestir de Santa Maria de Poblet (Vimbodí i Poblet)",
+    "coords": [
+     1.083126,
+     41.380696
+    ]
+   }
+  ],
+  "catalunya": [
+   {
+    "title": "File:Viñedos en el Alt Penedès, Torrelles de Foix.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_el_Alt_Pened%C3%A8s,_Torrelles_de_Foix.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Àngela Llop",
+    "credit": "Own work",
+    "description": "\n\n\n\n\nThis is a photograph of a Special Area of Conservation in Spain with the ID: Capçaleres del Foix.\ndel Foix Natura2000 entry, del Foix EEA entry\n\n",
+    "coords": null
+   },
+   {
+    "title": "File:L'escaladei-el priorat-2011.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:L%27escaladei-el_priorat-2011.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Alberto-g-rovi",
+    "credit": "Own work",
+    "description": "Viñedos de L'escaladei en el priorat-cataluña-españa",
+    "coords": null
+   },
+   {
+    "title": "File:Panoramica de los viñedos de montferri-2012.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Panoramica_de_los_vi%C3%B1edos_de_montferri-2012.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Alberto-g-rovi",
+    "credit": "Own work",
+    "description": "alt camp-tarragona-cataluña",
+    "coords": null
+   }
+  ],
+  "arinzano": [
+   {
+    "title": "File:Arínzano (1).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ar%C3%ADnzano_(1).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Pompilos",
+    "credit": "Own work",
+    "description": "Caserío de Arínzano, con capilla a la derecha, caserón a la izquierda y bodegas al fondo",
+    "coords": [
+     -1.993377,
+     42.631159
+    ]
+   }
+  ],
+  "otazu": [
+   {
+    "title": "File:Exterior-Otazu-Vinedos.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Exterior-Otazu-Vinedos.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Unknown authorUnknown author",
+    "credit": "Estos trabajos me los cedio BODEGA OTAZU S.A.U. para poder publicarlos en la wikipedia",
+    "description": "Exterior bodega Otazu, viñedos.",
+    "coords": null
+   },
+   {
+    "title": "File:El espectáculo de las viñas tras su poda a finales de otoño.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:El_espect%C3%A1culo_de_las_vi%C3%B1as_tras_su_poda_a_finales_de_oto%C3%B1o.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "AlloopWine&amp;Pepper",
+    "credit": "Own work",
+    "description": "El espectáculo de las viñas tras su poda a finales de otoño",
     "coords": null
    }
   ]
