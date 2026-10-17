@@ -92,7 +92,7 @@ html, body {{ margin: 0; width: {W}px; height: {H}px; overflow: hidden; backgrou
 <rect x="0" y="0" width="600" height="{H}" fill="url(#fade)"/>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0.78" stop-color="{C['bg']}"/><stop offset="1" stop-color="{C['bg']}" stop-opacity="0"/></linearGradient></defs>
 </svg>
-<div class="text">{logo}<div class="name">AtlaSlope</div><div class="tag">A study atlas for WSET<br>and Wine Scholar candidates</div></div>
+<div class="text">{logo}<div class="name">AtlaSlope</div><div class="tag">The wine study atlas for<br>WSET and Wine Scholar students</div></div>
 <div class="credit">Map: © MAPA · Natural Earth</div>
 </body></html>"""
 (ROOT / 'Tools/share/share.html').write_text(html)

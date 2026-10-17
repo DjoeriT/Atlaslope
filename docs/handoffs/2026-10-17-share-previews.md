@@ -7,7 +7,7 @@ LinkedIn showed no card at all. The page keeps `noindex`. The image is rebuilt w
 (command in its docstring). UI test checks the two key tags. `Tools/check.sh ui` green on the branch.
 
 **Decided.** One card for every link (coordinator default): crawlers don't run the app, so a place link shows the same card.
-Dark card (owner, 17 Oct 2026); `make_share_image.py light` still builds the light one. Preview line under the title: owner to pick a new one.
+Dark card (owner, 17 Oct 2026); `make_share_image.py light` still builds the light one. Wording (owner, 17 Oct 2026): preview title "AtlaSlope", line on the card and under the title "The wine study atlas for WSET and Wine Scholar students." The page's own title and in-app tagline are unchanged.
 
 **Open.** Per-place previews ("Rioja" with its photo) would need a small HTML page per place at build time; not built.
 WhatsApp sometimes shows a small square thumbnail cut from the middle of the image. Previews are cached by each app,
