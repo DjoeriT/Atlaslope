@@ -51,6 +51,7 @@ export const strings = {
     noBoundary: 'Its boundary is not on the map yet.',
   },
   regionPage: {
+    lede: (n: number) => `${n} ${n === 1 ? 'place' : 'places'}, in course order. Open a place to read its page.`,
     placesToLearn: 'places to learn',
     coverCredit: 'Photo:',
     credits: 'Photos:',
@@ -153,6 +154,7 @@ export const strings = {
       allPlacesInRegion: 'All places in this region',
       nextInCourse: 'Next in the course',
       glanceTitle: (name: string) => `${name} at a glance`,
+      sourceLink: 'Source',
       showOnMap: (name: string) => `Show ${name} on the map`,
       showOnMapShort: 'Show on the map',
     },

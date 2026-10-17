@@ -64,7 +64,8 @@ session on his Mac also sees his thread messages and started a second publish ru
 - New look (owner's go, card 17 Oct 06:48Z): release 8 = new colours and type on every screen (#36, PR from
   `claude/release-8-new-look-4kufin`); release 9 = place page, map card teaser, region page and the photo pass (#37). Plan
   `Review/release-8-9-plan.md`, handoff `docs/handoffs/2026-10-17-release-8-new-look.md`. Guides, mastery map and ready for friends are now
-  releases 10, 11 and 12 (#14 to #16).
+  releases 10, 11 and 12 (#14 to #16). Release 8 live 17 Oct (tag `release-8` on c18b463). Release 9 (pages and photos) built,
+  handoff `docs/handoffs/2026-10-17-release-9-travel-pages.md`; photo gaps in #42.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

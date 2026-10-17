@@ -89,13 +89,19 @@ export function PlacePage({ tree, go, place }: Props) {
 
   const sub = [level, region ? t.subRegion(region.name) : '', zones.length > 0 ? t.subZones(zones.length) : ''].filter(Boolean).join(' · ');
   const altitudeCell = glanceCells(sheet, measures).find((c) => c.kind === 'altitude');
-  const glance: Array<[string, string]> = [
-    [t.level, level],
-    ...(main.length > 0 ? [[t.mainGrapes, main.map((g) => g.grape ?? g.local).join(', ')] as [string, string]] : []),
-    ...(kinds.length > 0 ? [[t.wineTypes, kinds.map((k, i) => (i === 0 ? k : k.toLowerCase())).join(', ')] as [string, string]] : []),
-    ...(altitudeCell ? [[t.altitude, altitudeCell.big] as [string, string]] : []),
-    ...(zones.length > 0 ? [[t.zoneCount, String(zones.length)] as [string, string]] : []),
+  // Each glance row names the section that holds its source (release 9 review: a fact keeps a visible way to its source).
+  const glance: Array<[string, string, string]> = [
+    [t.level, level, 'where'],
+    ...(main.length > 0 ? [[t.mainGrapes, main.map((g) => g.grape ?? g.local).join(', '), 'grapes'] as [string, string, string]] : []),
+    ...(kinds.length > 0 ? [[t.wineTypes, kinds.map((k, i) => (i === 0 ? k : k.toLowerCase())).join(', '), 'grapes'] as [string, string, string]] : []),
+    ...(altitudeCell ? [[t.altitude, altitudeCell.big, 'land'] as [string, string, string]] : []),
+    ...(zones.length > 0 ? [[t.zoneCount, String(zones.length), 'zones'] as [string, string, string]] : []),
   ];
+  const toSection = (id: string) => {
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ block: 'start' });
+    el?.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
+  };
 
   return (
     <div className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
@@ -246,7 +252,7 @@ export function PlacePage({ tree, go, place }: Props) {
                     const why = sheetOf(z.id)?.why;
                     return (
                       <li key={z.id}>
-                        <Link className="zlink" to={{ kind: 'place', id: z.id }} go={go}>
+                        <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
                           {photo ? <img src={photo.src} alt="" loading="lazy" /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
                           <b>{z.name}</b>
                         </Link>
@@ -262,18 +268,18 @@ export function PlacePage({ tree, go, place }: Props) {
               <dl className="pg-rows">
                 <dt>{t.level}</dt>
                 <dd>{level}{sheet && !isZone && <SourceLine cites={['mapa-list']} />}</dd>
-                {region && !isZone && (<><dt>{t.studyRegion}</dt><dd><Link to={{ kind: 'region', id: region.id }} go={go}>{region.name}</Link></dd></>)}
+                {region && !isZone && (<><dt>{t.studyRegion}</dt><dd><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link></dd></>)}
                 {also.length > 0 && (
                   <>
                     <dt>{t.alsoWithin}</dt>
-                    <dd><ul>{also.map((o) => <li key={o.id}><Link to={{ kind: 'place', id: o.id }} go={go}>{o.name}</Link></li>)}</ul></dd>
+                    <dd><ul>{also.map((o) => <li key={o.id}><Link to={{ kind: 'place', id: o.id, page: true }} go={go}>{o.name}</Link></li>)}</ul></dd>
                   </>
                 )}
               </dl>
               <div className="pg-next">
-                {region && <Link className="btn" to={{ kind: 'region', id: region.id }} go={go}>{t.allPlacesInRegion}</Link>}
+                {region && <Link className="btn" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.allPlacesInRegion}</Link>}
                 {next && (
-                  <Link className="nextlink" to={{ kind: 'region', id: next.id }} go={go}>
+                  <Link className="nextlink" to={{ kind: 'region', id: next.id, page: true }} go={go}>
                     <span className="kicker">{t.nextInCourse}</span>
                     <b>{next.name} →</b>
                   </Link>
@@ -285,7 +291,9 @@ export function PlacePage({ tree, go, place }: Props) {
           <aside aria-labelledby="pg-glance-h">
             <div className="sticky">
               <h2 id="pg-glance-h">{t.glanceTitle(place.name)}</h2>
-              <dl>{glance.map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
+              <dl>{glance.map(([k, v, sec]) => (
+                <div key={k}><dt>{k}</dt><dd>{v} <button type="button" className="srcbtn" onClick={() => toSection(sec)}>{t.sourceLink}</button></dd></div>
+              ))}</dl>
               <Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link>
             </div>
           </aside>

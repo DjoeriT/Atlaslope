@@ -43,3 +43,6 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-17 | ReviewBot, Sonnet | WSG rule rewording, docs review (PR #38) | 20k | 30,535 tokens, 7 tool uses, 1 min | Merge: 0 blockers, 0 should-fix, 3 notes; wording aligned in README and scope |
 | 2026-10-17 | BuilderBot, Sonnet | Release 9 photo pass prep: audit of 77 first photos, picks reordered, fill mode for the candidates run | 120k | 82,956 tokens, 53 tool uses, 6 min | Done; 48 ok, 11 reordered, 50 places for the Actions run; work held on a local branch for the release 9 slice |
 | 2026-10-17 | ReviewBot, Sonnet | Release 8 code and design review (`release-8-review.md`) | 70k | 46,912 tokens, 16 tool uses, 1 min | Merge after fixes: 0 blockers, 2 should-fix (both fixed), 5 notes |
+| 2026-10-17 | BuilderBot, Sonnet | Release 9 card 1, place page and teaser | 250k | 188,901 tokens, 98 tool uses, 47 min | Done after one restart at the 60-turn limit; 1 quiz test timing flake reported |
+| 2026-10-17 | BuilderBot, Sonnet | Release 9 card 2, region page | 150k | 110,454 tokens, 62 tool uses, 22 min | Done; page flag added on its own base (merged with card 1 by LeadBot) |
+| 2026-10-17 | BuilderBot, Sonnet | Release 9 photo picks from the Commons fill run | 100k | 51,537 tokens, 22 tool uses, 1 min | 5 of 47 places usable; 26 still without a photo (#42) |

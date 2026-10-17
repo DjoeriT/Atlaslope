@@ -18,7 +18,7 @@ function Tile({ place, go, photo, onBroken }: { place: Place; go: Go; photo?: Sh
   const why = sheetOf(place.id)?.why.text;
   return (
     <li className="rtile">
-      <Link to={{ kind: 'place', id: place.id }} go={go}>
+      <Link to={{ kind: 'place', id: place.id, page: true }} go={go}>
         <div className={`ph${photo ? '' : ' none'}`}>
           {photo ? <img src={photo.src} alt={photo.alt} loading="lazy" onError={() => onBroken(photo.src)} /> : <span>{place.name}</span>}
         </div>
@@ -41,7 +41,9 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
   const learn = places.filter((p) => p.quiz !== 'none');
   const also = places.filter((p) => p.quiz === 'none');
   const shots = learn.map((p) => photoOf(p));
-  const cover = places.map(photoOf).find(Boolean); // the first photo of the first place, in course order, that has one
+  // The cover is a photo no tile shows: a second photo of a place in course order, else the first place photo as before.
+  const second = places.map((p) => photosOf(p.id).filter((x) => !broken.has(x.src))[1]).find(Boolean);
+  const cover = second ?? places.map(photoOf).find(Boolean);
   const shown = shots.filter((s): s is Shot => !!s);
   const back = { kind: 'region' as const, id: region.id };
   const crumb = tree.breadcrumb(region.id, 'region');
@@ -63,7 +65,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
         {cover && <span className="pill">{t.coverCredit} {credit(cover)}</span>}
       </header>
       <div className="rintro">
-        <p>{strings.cards.regionLede(places.length)}</p>
+        <p>{t.lede(places.length)}</p>
         <div className="count"><b>{learn.length}</b><span className="kicker">{t.placesToLearn}</span></div>
       </div>
       <ul className="rgrid" aria-label={t.grid}>
@@ -76,7 +78,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
         <section className="ralso">
           <h2>{t.alsoHere}</h2>
           <p>{t.alsoHereNote}</p>
-          <ul>{also.map((p) => <li key={p.id}><Link to={{ kind: 'place', id: p.id }} go={go}>{p.name}<small>{p.kind}</small></Link></li>)}</ul>
+          <ul>{also.map((p) => <li key={p.id}><Link to={{ kind: 'place', id: p.id, page: true }} go={go}>{p.name}<small>{p.kind}</small></Link></li>)}</ul>
         </section>
       )}
       <div className="rend">

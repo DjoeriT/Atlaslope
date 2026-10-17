@@ -45,8 +45,8 @@ test('a tile opens its place and the credits line is there', async ({ page }) =>
   expect(await rpage.locator('.rcredits a').count()).toBeGreaterThan(0);
   await expect(rpage.locator('.rcover .pill')).toContainText('Photo:');
   await rpage.getByRole('link', { name: /Somontano DO/ }).click();
-  await expect(page).toHaveURL(/#place=somontano/);
-  await expect(page.locator('.card h1')).toHaveText('Somontano');
+  await expect(page).toHaveURL(/#place=somontano&page/);
+  await expect(page.locator('.pg h1')).toHaveText('Somontano');
 });
 
 test('Show on the map goes to the region card', async ({ page }) => {

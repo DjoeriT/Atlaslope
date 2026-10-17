@@ -145,3 +145,6 @@
   .pg-rows dd{margin-bottom:.7rem}
   .pg-jump{margin:1.4rem -1rem 0;padding:0 1rem}
 }
+/* Release 9 review: each "at a glance" value links to the section with its source */
+.srcbtn{appearance:none;border:0;background:none;padding:.35rem 0;margin-left:.25rem;font:inherit;font-size:.78rem;color:var(--ink3);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.srcbtn:hover{color:var(--accent)}
