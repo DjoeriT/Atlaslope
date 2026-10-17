@@ -205,7 +205,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
                 {!counts && sheet && <><dt>{t.why}</dt><dd>{sheet.why.text}</dd></>}
               </dl>
               {!counts && <button className="linkish-open" onClick={() => onOpenPlace(place.id)}>{t.openCard(place.name)}</button>}
-              {outcome.right && auto && !last && (
+              {outcome.right && auto && (
                 <div className="autonext"><i /><span>{t.nextSoon}</span> <button className="linkbtn" onClick={() => setAuto(false)}>{t.stay}</button></div>
               )}
               {outcome.slip && <p className="undo" role="status">{t.slipped} <button className="linkbtn" onClick={unslip}>{t.undo}</button></p>}
@@ -215,7 +215,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
       </div>
       <div className="foot">
         {question.type === 'find-it' && !outcome && <button className="btn primary" disabled={!tentative} onClick={() => tentative && answer(tentative, tentative === place.id)}>{t.confirm}</button>}
-        {outcome && (!outcome.right || !auto || last) && <button className="btn primary" onClick={next}>{last ? t.finish : t.next}</button>}
+        {outcome && (!outcome.right || !auto) && <button className="btn primary" onClick={next}>{last ? t.finish : t.next}</button>}
         {outcome && !outcome.right && !outcome.slip && !outcome.skipped && <button className="btn" onClick={slip}>{t.slip}</button>}
         {!outcome && <button className="btn quiet" onClick={() => answer(null, false)}>{t.dontKnow}</button>}
       </div>
