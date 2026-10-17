@@ -19,10 +19,12 @@ interface Props {
   /** A new value (the open card) puts the sheet back to half. */
   resetKey: string;
   hidden?: boolean;
+  /** Marks the Explore sheet, which the welcome card covers. */
+  explore?: boolean;
   children: ReactNode;
 }
 
-export function Sheet({ resetKey, hidden, children }: Props) {
+export function Sheet({ resetKey, hidden, explore, children }: Props) {
   const [stop, setStop] = useState<Stop>('half');
   const [phone, setPhone] = useState(() => matchMedia(PHONE).matches);
   const [drag, setDrag] = useState<number | null>(null);
@@ -86,10 +88,11 @@ export function Sheet({ resetKey, hidden, children }: Props) {
     if (e.key === 'ArrowDown') { e.preventDefault(); setStop(STOPS[Math.max(0, i - 1)]); }
   };
 
-  if (!phone) return <div className="sheet" hidden={hidden}>{children}</div>;
+  const cls = explore ? 'sheet explore' : 'sheet';
+  if (!phone) return <div className={cls} hidden={hidden}>{children}</div>;
   return (
     <div
-      ref={ref} className="sheet phone" data-stop={stop} data-drag={drag !== null || undefined} hidden={hidden}
+      ref={ref} className={`${cls} phone`} data-stop={stop} data-drag={drag !== null || undefined} hidden={hidden}
       style={{ height: `${Math.round(height)}px` }}
     >
       <button

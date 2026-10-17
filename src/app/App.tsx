@@ -167,7 +167,7 @@ export function App() {
       {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
       {!quiz && region && sel.page && <RegionPage tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (
-        <Sheet resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
+        <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
             : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
             : progress.hasProgress && !todayClosed ? (

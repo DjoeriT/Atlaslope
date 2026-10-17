@@ -86,7 +86,7 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
 .q-end p{margin:0 0 .2rem;flex-basis:100%;font-size:.95rem}
 
 /* The welcome card sizes to its text too, so the card it covers is hidden while it shows. */
-body:has(.card.first) .sheet{visibility:hidden}
+body:has(.card.first) .sheet.explore{visibility:hidden}
 
 /* Design check fixes (mock v1) */
 @media (orientation:landscape) and (max-height:30em){
