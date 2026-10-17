@@ -606,21 +606,6 @@
     ]
    }
   ],
-  "txakoli-alava": [
-   {
-    "title": "File:A-3630 - Ayala, Spain - July 26, 2024 03.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:A-3630_-_Ayala,_Spain_-_July_26,_2024_03.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Giorgio Galeotti",
-    "credit": "Own work",
-    "description": "A-3630 with Eskutxi and Aro Peñas - Ayala, Spain",
-    "coords": [
-     -3.138732,
-     43.059859
-    ]
-   }
-  ],
   "txakoli-bizkaia": [
    {
     "title": "File:Txakoli vinyards - panoramio.jpg",
@@ -650,19 +635,6 @@
    }
   ],
   "abona": [
-   {
-    "title": "File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Panorama-Surfing-Las-Americas-Playa-del-Duque-La-Caleta-2024.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Tuxyso",
-    "credit": "Own work",
-    "description": "Panorama of surf students at Playa de las Américas, photographed from paleontological zone El Guinco - El Búnker in direction to Playa del Duque and La Caleta",
-    "coords": [
-     -16.73585346014,
-     28.059538401448
-    ]
-   },
    {
     "title": "File:Eastern Caldera of El Teide with the Observatorio del Teide in the background, Tenerife, Spain.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Eastern_Caldera_of_El_Teide_with_the_Observatorio_del_Teide_in_the_background,_Tenerife,_Spain.jpg",
@@ -1423,21 +1395,6 @@
     ]
    }
   ],
-  "ribera-del-guadiana": [
-   {
-    "title": "File:Mérida 2024-08-20 - Teatro Romano 03.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:M%C3%A9rida_2024-08-20_-_Teatro_Romano_03.jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Rafa Esteve",
-    "credit": "Own work",
-    "description": "Teatro Romano",
-    "coords": [
-     -6.338629,
-     38.915022
-    ]
-   }
-  ],
   "vinos-de-madrid": [
    {
     "title": "File:P1080592-24x15 (28473730058).jpg",
@@ -1779,19 +1736,6 @@
   ],
   "bullas": [
    {
-    "title": "File:Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca..jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Cala_Blanca_se_encuentra_en_el_entorno_natural_de_Puntas_d_Calnegre,_Lorca..jpg",
-    "licence": "CC BY-SA 4.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "artist": "Lorenzo Soriano",
-    "credit": "Own work",
-    "description": "Cala Blanca se encuentra en el entorno natural de Puntas d Calnegre, Lorca. ",
-    "coords": [
-     -1.4613936318542,
-     37.482364014601
-    ]
-   },
-   {
     "title": "File:River canyon of Rambla de Perea in Los Baños de Mula, Río Mula, Murcia, Spain, 2025 February - 2.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:River_canyon_of_Rambla_de_Perea_in_Los_Ba%C3%B1os_de_Mula,_R%C3%ADo_Mula,_Murcia,_Spain,_2025_February_-_2.jpg",
     "licence": "CC BY-SA 4.0",
@@ -1886,19 +1830,6 @@
    }
   ],
   "calatayud": [
-   {
-    "title": "File:RENFE Class 470 Embid de Jalón.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:RENFE_Class_470_Embid_de_Jal%C3%B3n.jpg",
-    "licence": "CC BY-SA 3.0",
-    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "artist": "Kabelleger / David Gubler (http://www.bahnbilder.ch)",
-    "credit": "Own work: http://www.bahnbilder.ch/picture/11371",
-    "description": "A RENFE class 470 is taking the old line from Zaragoza to Calatayud. Picture taken at Embid de Jalón, Spain.",
-    "coords": [
-     -1.5953166666667,
-     41.419728333333
-    ]
-   },
    {
     "title": "File:Castillos de Armantes - 53656042420.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Castillos_de_Armantes_-_53656042420.jpg",
