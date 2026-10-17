@@ -2194,6 +2194,88 @@
     "description": "El espectáculo de las viñas tras su poda a finales de otoño",
     "coords": null
    }
+  ],
+  "jerez": [
+   {
+    "title": "File:Torre de Macharnudo Viña El Majuelo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Torre_de_Macharnudo_Vi%C3%B1a_El_Majuelo.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Historiador jerezano",
+    "credit": "Own work",
+    "description": "Viña El Majuelo en el Pago de Macharnudo (Jerez) con vistas al Castillo de Macharnudo.",
+    "coords": null
+   },
+   {
+    "title": "File:Viña referencia.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_referencia.jpg",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "artist": "Urienttr",
+    "credit": "Own work",
+    "description": "Viñedo de Trebujena",
+    "coords": null
+   },
+   {
+    "title": "File:Viña de Arriba o Viña la Riva - IMG 20220604 123203.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_de_Arriba_o_Vi%C3%B1a_la_Riva_-_IMG_20220604_123203.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "El Pantera",
+    "credit": "Own work",
+    "description": "Viña de Arriba o Viña la Riva - Jerez",
+    "coords": [
+     -6.16911,
+     36.736606
+    ]
+   }
+  ],
+  "ribera-del-guadiana": [
+   {
+    "title": "File:Olivares-y-vides-al-lado-de-la-sierra-de-la-calera-1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Olivares-y-vides-al-lado-de-la-sierra-de-la-calera-1.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Lolosanagon",
+    "credit": "Own work",
+    "description": "Sierra y campo de santa marta",
+    "coords": null
+   },
+   {
+    "title": "File:Viñedos, provincia de Badajoz.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos,_provincia_de_Badajoz.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "sam.romilly",
+    "credit": "Flickr",
+    "description": "Viñedos de la provincia de Badajoz, situados cerca de Zafra.",
+    "coords": null
+   },
+   {
+    "title": "File:Viñedos en Tierra de Barros (Badajoz).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_Tierra_de_Barros_(Badajoz).jpg",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "artist": "Juan A. Mariano",
+    "credit": "Flickr",
+    "description": "Campo de viñedos en Tierra de Barros, provincia de Badajoz.",
+    "coords": [
+     -6.355934,
+     38.419973
+    ]
+   }
+  ],
+  "manzanilla": [
+   {
+    "title": "File:Velo de Flor.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Velo_de_Flor.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Caballero 1830",
+    "credit": "Own work",
+    "description": "La crianza biológica se produce gracias a la película de levaduras que protege de la oxidación al vino en el interior de la bota.",
+    "coords": null
+   }
   ]
  }
 }
