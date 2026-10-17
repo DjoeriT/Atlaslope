@@ -22,12 +22,12 @@ Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.m
 - **Decisions** as tap-to-pick cards, batched up front, one recommended. Reversible work continues on the recommended option; outward or hard-to-undo work waits.
 - **New UI is mocked first** and gets a UX, UI and visual check against `Review/visual-style.md` before he sees it, with the findings
   fixed, not listed. Small slices (a fix or tweak, no new screen, data or content) run lean: LeadBot's own check, a rough first look early,
-  ReviewBot alongside CI, targeted tests locally. New screens and redesigns use a ReviewBot design run. Details: `docs/AGENT_ROLES.md`.
+  ReviewBot alongside CI, targeted tests locally. New screens and redesigns use a ReviewBot design run. Details: `docs/AGENT_ROLES.md`, "Working detail".
 - **Talking to him:** plain words, answer first, progress in two or three sentences. Something failed: say what, show the output, wait.
 - **Tag claims** [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
 - **Never print keys or secrets.** Keys live in repo secrets or `.env.local` (check with `grep -c`); values for him go to `pbcopy`.
-- **Git is the record**: decisions, scope, plans, cards, mocks, reviews, handoffs. `main` is the only long-lived branch; `release-N` tags mark what is live. Archive, never delete (`Review/archive/`).
-- **Data has a paper trail**: every file under `data/` is in `data/SOURCES.md`. WSG and WSET course structure is fine; never their text, maps or images.
+- **Git is the record**: decisions, scope, plans, cards, mocks, reviews, handoffs. `main` is the only long-lived branch; `release-N` tags mark what is live. The repo wins over memory. Archive, never delete (`Review/archive/`).
+- **Data has a paper trail**: every file under `data/`, and every layer, photo or fact source, is in `data/SOURCES.md`; facts from official sources. WSG and WSET course structure is fine; never their text, maps or images.
 - Licence: code MIT; his writing all rights reserved (`NOTICE.md`); data keeps its own terms.
 - **Releases are cheap and carry their own records**: the slice PR holds the handoff, context update and tester note before publish;
   no records PR after it (owner card, 17 Oct 2026: 6 records PRs in one day). The "live on release-N" line rides the next slice's PR.

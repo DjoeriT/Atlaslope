@@ -20,7 +20,7 @@ How to talk to the owner during a release:
    mocks or `Review/` differ; name that commit). Otherwise run it with the log saved. Any failure: show it and stop.
 5. Records go in the slice's own pull request, before publish (owner card, 17 Oct 2026: no records PR after a release): the tester note
    `Review/release-N-what-to-test.md` (general part copied from the last one, a release-specific part in tester language, then "For you":
-   commits, checks with the hash, what was not verified), the handoff, the `docs/PROJECT_CONTEXT.md` update written as "release N, once
+   commits, checks with the PR head hash, which the publish run then reuses on the merge commit, what was not verified), the handoff, the `docs/PROJECT_CONTEXT.md` update written as "release N, once
    published", and `Review/release-(N-1)-what-to-test.md` moved to `Review/archive/`. The release commit is the merge of that PR.
 6. Ask:
    > Release N is ready to publish. What's new: <plain summary>. Not visible on the site: <one line>.
@@ -34,7 +34,7 @@ How to talk to the owner during a release:
    GitHub Pages and, only once the deploy succeeded, creates the `release-N` tag. A failed run leaves no tag, so the same N can be started again after the fix.
 2. If the platform refuses to start it, give the owner the one tap: GitHub app › Atlaslope › Actions › Publish › Run workflow, with N and the
    hash. Then wait for him.
-3. Watch the run through the GitHub tools. Failed: tell the owner with the failing step's output and stop.
+3. Wait for the run's completion notification (no polling); then read its result through the GitHub tools. Failed: tell the owner with the failing step's output and stop.
 4. Confirm the live site shows the new version (a session that can reach the site, or the post-deploy check from release 3 on).
 5. No records PR. Put the one "live: release-N on <hash>, <date>" line in project memory now and in the next slice's PR. A wrong
    statement found in the records is fixed in that next PR too.

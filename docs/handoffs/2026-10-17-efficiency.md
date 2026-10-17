@@ -14,7 +14,7 @@
 **Open.**
 - Remove `djoerit/paraje` from the project's repositories (owner, Project settings): same repo, cloned and loaded twice.
 - `MEMORY.md` trim to about 4 KB: the coordinator.
-- Playwright at 4 workers instead of 2: measured in the efficiency thread, not adopted (not on a card).
+- Playwright at 4 workers instead of 2: measured, not worth it (264 s vs 268 s, and one test failed at 4 workers).
 - Re-measure cost per release after a day of short threads, on the plan's table; then decide Sonnet for small slices again.
 - First publish after this merge is the first real test of the reuse step; check its log says "Reusing checks run".
 

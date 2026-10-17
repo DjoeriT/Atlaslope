@@ -77,7 +77,7 @@ Upside: about 7 K fewer tokens per step. At about 1,500 to 2,000 steps a day [A]
 
 ### 4. Tests: run each suite once per change
 - Locally, run only the specs the change touches; CI runs the full suite (lean rule; extend to big releases too: one full local run before the single push, not two).
-- Measured full UI suite in this container: 95 tests, 4 min 28 s [V, 17 Oct 17:20Z]. Playwright sets no worker count, so it uses 2 of the container's 4 cores. Trying 4 workers is a one-line change; if the map tests stay stable, it could bring the run to about 2.5 to 3 minutes [A, to measure before adopting].
+- Measured full UI suite in this container: 95 tests, 4 min 28 s [V, 17 Oct 17:20Z]. Playwright sets no worker count, so it uses 2 of the container's 4 cores. Measured at 4 workers: 4 min 24 s with one test failing [V], so more workers buy nothing on this machine (the map rendering is CPU-bound). Dropped.
 
 ### 5. Thread model (your call, card)
 Sonnet 5.5 re-reads at the same price as Opus 5.5 ($0.20 per M) [V, current price list]; it is cheaper only on writing ($10 vs $20 per M output). Since 60% of the bill is re-reading, moving small-slice threads to Sonnet saves about 20% of their cost [V arithmetic on today's totals], with some risk on quality. Fixing conversation length (item 1) saves more with no quality risk. Recommendation: keep Opus for threads now, re-measure after item 1, then decide.
