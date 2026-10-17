@@ -34,6 +34,7 @@ export function layerVisibility(menu: MenuState, imagery: boolean): Record<Layer
 export function basemapPaint(sat: boolean) {
   const sel = ['boolean', ['feature-state', 'sel'], false];
   const dim = ['boolean', ['feature-state', 'dim'], false];
+  const hover = ['boolean', ['feature-state', 'hover'], false];
   return {
     ocean: { color: sat ? '#1B3A52' : '#9DBCCB', opacity: sat ? 0.45 : 1 },
     coast: sat ? '#E6F0F4' : '#4F6873',
@@ -41,9 +42,10 @@ export function basemapPaint(sat: boolean) {
     borders: sat ? '#F4EFE6' : '#4A3F38',
     bordersCasing: { color: sat ? '#1A1512' : '#FFFFFF', opacity: sat ? 0.45 : 0.75 },
     hillshadeExaggeration: sat ? 0.25 : 0.5,
-    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, dim, 0.06, sat ? 0.62 : 0.45],
-    dosLineOpacity: ['case', dim, 0.25, 1],
-    dosLineWidth: ['case', sel, 3.2, sat ? 2.2 : 1.2],
+    // A hovered place shows even where it is dimmed, so a row in a card always finds its place on the map.
+    dosFillOpacity: ['case', sel, sat ? 0.82 : 0.65, hover, sat ? 0.9 : 0.85, dim, 0.06, sat ? 0.62 : 0.45],
+    dosLineOpacity: ['case', hover, 1, dim, 0.25, 1],
+    dosLineWidth: ['case', sel, 3.2, hover, 2.8, sat ? 2.2 : 1.2],
     dosLineDash: sat ? [10, 0] : [2, 1.5],
   };
 }

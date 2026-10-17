@@ -74,7 +74,7 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     // The three Rioja zones: hidden until a Rioja card is open (createMap.ts), then drawn over the DOCa.
     {
       id: 'zones-fill', type: 'fill', source: 'zones', layout: { visibility: 'none' },
-      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, 0.3] },
+      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, ['boolean', ['feature-state', 'hover'], false], 0.6, 0.3] },
     },
     { id: 'zones-line', type: 'line', source: 'zones', layout: { visibility: 'none' }, paint: { 'line-color': '#FFFFFF', 'line-width': 2, 'line-opacity': 0.9 } },
   );

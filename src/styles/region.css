@@ -41,6 +41,6 @@
 .rcover .kicker span + span::before{content:"›";margin-right:.35rem}
 /* The map's own controls and notices have no place on a full page. */
 body:has(.rpage) .bottomright,body:has(.rpage) .imagery-note{display:none}
-@media (max-width:1100px){.rgrid,.ralso ul{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:760px){.rgrid,.ralso ul{grid-template-columns:1fr}.rintro{grid-template-columns:1fr}.rintro .count{justify-self:start;text-align:left}}
+@media (max-width:68.75em){.rgrid,.ralso ul{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:47.5em){.rgrid,.ralso ul{grid-template-columns:1fr}.rintro{grid-template-columns:1fr}.rintro .count{justify-self:start;text-align:left}}
 @media (prefers-reduced-motion:reduce){.rtile .ph img{transition:none}}

@@ -5,6 +5,7 @@ import { createMap, type MapController } from './createMap';
 import type { Focus } from './focus';
 import { DEFAULT_MENU, type MenuState } from './layers';
 import { MapMenu } from './MapMenu';
+import { onHoverPlaces } from './hover';
 import type { QuizView } from './quiz';
 import './map.css';
 
@@ -21,7 +22,7 @@ interface Props {
   onView(view: View): void;
 }
 
-/** The map element, the map menu with zoom and compass buttons, and the imagery note. */
+/** The map element, the map menu with zoom, reset-view and compass buttons, and the imagery note. */
 export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
   const el = useRef<HTMLDivElement>(null);
   const ctl = useRef<MapController | null>(null);
@@ -47,7 +48,9 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
       return; // no WebGL: the shell still works
     }
     ctl.current = c;
-    c.map.on('rotate', () => setTurned(Math.abs(c.map.getBearing()) > 0.5));
+    const onTurn = () => setTurned(Math.abs(c.map.getBearing()) > 0.5);
+    c.map.on('rotate', onTurn);
+    onTurn(); // a link or reload can open the map already turned
     return () => { c.remove(); ctl.current = null; };
   }, []);
 
@@ -61,6 +64,10 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
 
   useEffect(() => { ctl.current?.quiz(quiz); }, [quiz]);
 
+  // A card's row lights its places up; a new card starts with nothing lit (its rows were never left, so no mouseleave came).
+  useEffect(() => onHoverPlaces((ids) => ctl.current?.hover(ids)), []);
+  useEffect(() => { ctl.current?.hover(null); }, [focus]);
+
   const icon = (d: string) => (
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d={d} /></svg>
   );
@@ -72,6 +79,11 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
         <div className="glass">
           <button className="iconbtn" aria-label={t.zoomIn} onClick={() => ctl.current?.map.zoomIn()}>{icon('M12 5v14M5 12h14')}</button>
           <button className="iconbtn" aria-label={t.zoomOut} onClick={() => ctl.current?.map.zoomOut()}>{icon('M5 12h14')}</button>
+          {!quiz && (
+            <button className="iconbtn" aria-label={t.resetView} title={t.resetView} onClick={() => ctl.current?.reset()}>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /><circle cx="12" cy="12" r="2.2" /></svg>
+            </button>
+          )}
           {turned && (
             <button className="iconbtn" aria-label={t.north} onClick={() => ctl.current?.map.easeTo({ bearing: 0 })}>
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 5l3 7-3 7-3-7z" fill="currentColor" /></svg>
