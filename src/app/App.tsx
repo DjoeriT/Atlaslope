@@ -89,6 +89,10 @@ export function App() {
   const focus = useMemo(() => focusFor(tree, sel), [tree, sel]);
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
   const region = sel.kind === 'region' ? tree.getRegion(sel.id) : undefined;
+  const titleName = place?.name ?? region?.name;
+  useEffect(() => {
+    document.title = titleName ? strings.pageTitle(titleName) : strings.pageTitleHome;
+  }, [titleName]);
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} />

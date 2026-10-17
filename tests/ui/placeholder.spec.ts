@@ -7,7 +7,7 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   const failed: string[] = [];
   page.on('requestfailed', (r) => failed.push(r.url()));
   await page.goto('./?fresh=1');
-  await expect(page).toHaveTitle('Atlaslope');
+  await expect(page).toHaveTitle('Atlaslope · The wine atlas that quizzes you');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
   await expect(page.getByRole('button', { name: /^Atlaslope/ })).toBeVisible();
   await expect(page.getByRole('searchbox', { name: /Search/ })).toBeVisible();
