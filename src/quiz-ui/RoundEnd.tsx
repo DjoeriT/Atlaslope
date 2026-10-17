@@ -75,7 +75,7 @@ export function RoundEnd({ result, tree, quiz, keepGoing, onKeepGoing, onLearnMo
         ) : (
           <>
             <button className="btn primary" onClick={onDone}>{t.done}</button>
-            <button className="btn" onClick={onLearnMore}>{t.learnMore}</button>
+            {result.kind === 'study' && <button className="btn" onClick={onLearnMore}>{t.learnMore}</button>}
             <a className="btn quiet" href={quizToHash({ sub: 'practise' })}>{t.practise}</a>
           </>
         )}

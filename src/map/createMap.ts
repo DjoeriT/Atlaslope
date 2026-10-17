@@ -13,7 +13,7 @@ import type { View } from '../url';
 import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type PlaceRow } from './boundaries';
 import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
 import { addLabels, type Labels } from './labels';
-import { TAP_RADIUS_PX, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
+import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
 import { TERRAIN_EXAGGERATION, buildStyle } from './style';
 import { tilesEnabled } from './tiles';
@@ -236,7 +236,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const places = [...boundaries.features, ...(zones?.features ?? [])];
     revealMarks.forEach((m) => m.remove());
     revealMarks = [];
-    const key = q.reveal ? `${q.reveal.answer}|${q.reveal.picked ?? ''}` : '';
+    const key = q.frame ? `frame|${q.frame.join(',')}` : q.reveal ? `${q.reveal.answer}|${q.reveal.picked ?? ''}` : '';
     const duration = reduceMotion() ? 0 : 900;
     const flat = { pitch: 0, bearing: 0, duration };
     if (q.reveal) {
@@ -256,7 +256,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     quizFrame = key;
     const view = { width: window.innerWidth, height: window.innerHeight };
     const card = document.querySelector('.card')?.getBoundingClientRect();
-    const box = q.reveal ? revealBox(places, q.reveal) : null;
+    const box = q.frame ? frameBox(places, q.frame) : q.reveal ? revealBox(places, q.reveal) : null;
     if (box) map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...flat, padding: revealPadding(view, card), maxZoom: 8.5 });
     else map.fitBounds(SPAIN_BOUNDS, { ...flat, padding: padding() });
   }

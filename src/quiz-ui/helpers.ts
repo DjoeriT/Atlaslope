@@ -70,13 +70,15 @@ export interface MapStep {
 
 export function viewFor(step: MapStep): QuizView {
   const base = { hideNames: true, showZones: step.zone };
-  if (step.type === 'intro') return { ...base, dimExcept: [step.place], select: step.place, reveal: { answer: step.place } };
+  if (step.type === 'intro') return { ...base, dimExcept: [step.place], select: step.place, reveal: { answer: step.place }, frame: [step.place] };
   if (step.type === 'find-it' && !step.revealed) return { ...base, dimExcept: null, select: step.picked, reveal: null };
   if (step.type === 'find-it') {
     const shown = step.picked && step.picked !== step.place ? [step.place, step.picked] : [step.place];
     return { ...base, dimExcept: shown, select: step.place, reveal: { answer: step.place, ...(shown.length > 1 ? { picked: step.picked! } : {}) } };
   }
-  return { ...base, dimExcept: [step.place], select: step.place, reveal: step.revealed ? { answer: step.place } : null };
+  // Show before ask: until the answer is revealed the place is framed with its neighbours.
+  if (!step.revealed) return { ...base, dimExcept: [step.place], select: step.place, reveal: null, frame: [step.place] };
+  return { ...base, dimExcept: [step.place], select: step.place, reveal: { answer: step.place } };
 }
 
 /** Today's clock for the quiz: the real one, or (debug builds only) a fixed start from `?now=` that keeps counting. */

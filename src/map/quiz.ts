@@ -13,6 +13,8 @@ export interface QuizView {
   reveal: { answer: string; picked?: string } | null;
   /** The Rioja zones are drawn and can be tapped: set when the question asks about a zone, otherwise they stay hidden. */
   showZones?: boolean;
+  /** Place ids the camera frames with their neighbours around them (the intro and what-is-this show the place before asking). Unset: the reveal frames, else all of Spain. */
+  frame?: string[];
 }
 
 /** The visibility the zone layers get in quiz mode: hidden unless the question is about a zone. */
@@ -67,6 +69,18 @@ export function nearestPlace(p: Pt, shapes: Shape[], radius = TAP_RADIUS_PX): st
 export function revealBox(features: Collection['features'], reveal: NonNullable<QuizView['reveal']>): Box | null {
   const ids = new Set([reveal.answer, ...(reveal.picked ? [reveal.picked] : [])]);
   return boundsOf(features.filter((f) => ids.has(String(f.properties.id))));
+}
+
+/** How much of the place's own size is added on every side, so its neighbours show. */
+export const FRAME_MARGIN = 0.6;
+
+/** The box for `frame`: the places' own box with room around it for their neighbours; null when none has a boundary. */
+export function frameBox(features: Collection['features'], ids: string[]): Box | null {
+  const want = new Set(ids);
+  const box = boundsOf(features.filter((f) => want.has(String(f.properties.id))));
+  if (!box) return null;
+  const dx = (box[2] - box[0]) * FRAME_MARGIN, dy = (box[3] - box[1]) * FRAME_MARGIN;
+  return [box[0] - dx, box[1] - dy, box[2] + dx, box[3] + dy];
 }
 
 /** Room for the card: to its right on a wide screen, above it under 900 px (as in the approved find-it mock). */

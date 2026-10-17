@@ -17,6 +17,13 @@ export interface QuizApi {
   /** Takes the slip mark off the last answer again. Returns the log. */
   unslip(): LogEntry[];
   now(): Date;
+  /** The focus: study region ids or place ids. */
+  focus: string[];
+  setFocus(ids: string[]): void;
+  /** Reads the record again from the store, after a file was loaded or its load undone. */
+  reload(): void;
+  /** True once the learner has any progress (an intro or an answer). */
+  hasProgress: boolean;
 }
 
 /** The log without the slip mark on its last answer. */
@@ -40,6 +47,10 @@ export function useQuiz(tree: Tree, now: () => Date): QuizApi {
   return {
     store, log: record.log, state, plan, now, persistent: store.status().persistent,
     record: (entry) => commit([...record.log, entry]),
+    focus: record.focus,
+    setFocus: (ids) => setRecord(store.save({ log: record.log, focus: ids })),
+    reload: () => setRecord(store.load()),
+    hasProgress: record.log.length > 0,
     slip: () => commit(withSlip(record.log)),
     unslip: () => commit(withoutSlip(record.log)),
   };

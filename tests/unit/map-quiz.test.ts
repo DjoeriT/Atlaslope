@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Collection } from '../../src/map/boundaries';
-import { nearestPlace, revealBox, revealPadding, zoneVisibility, type QuizView, type Shape } from '../../src/map/quiz';
+import { frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type QuizView, type Shape } from '../../src/map/quiz';
 
 // A 100 px square at (100,100)-(200,200), and a small one at (300,100)-(310,110).
 const square = (id: string, x: number, y: number, size: number): Shape => ({
@@ -47,6 +47,19 @@ describe('the reveal frame', () => {
     expect(wide.left).toBeGreaterThan(440);
     const narrow = revealPadding({ width: 800, height: 1000 }, { right: 800, top: 520 });
     expect(narrow.bottom).toBeGreaterThan(1000 - 520);
+  });
+});
+
+describe('the intro frame', () => {
+  const fs = [feature('toro', [-5.6, 41.4, -5.2, 41.7]), feature('rueda', [-4.9, 41.2, -4.6, 41.5])];
+  it('is the place with room around it for its neighbours', () => {
+    const [w, s, e, n] = frameBox(fs, ['toro'])!;
+    expect(w).toBeLessThan(-5.6); expect(e).toBeGreaterThan(-5.2);
+    expect(s).toBeLessThan(41.4); expect(n).toBeGreaterThan(41.7);
+    expect(e).toBeLessThan(-4.9 + 0.5);
+  });
+  it('is null for a place with no boundary', () => {
+    expect(frameBox(fs, ['nowhere'])).toBeNull();
   });
 });
 
