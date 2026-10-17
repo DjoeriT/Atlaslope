@@ -86,7 +86,7 @@ session on his Mac also sees his thread messages and started a second publish ru
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
 - Rioja zone approximations: Santa Engracia del Jubera taken whole; Lodosa left out; 2.7% less area than the ministry's DOCa polygon, cause not traced.
 - No open vineyard-soil polygons for Rioja; soil stays in the card text.
-- 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Jerez and Manzanilla have no photos.
+- 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Txakoli de Álava has no photo (Jerez, Manzanilla and Ribera del Guadiana got theirs in the polish slice).
 - Famous producers on only 6 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - 3D relief caches flat layers as textures (MapLibre 4.7.1) and does not redraw them after a paint change or late GeoJSON; the app takes the
