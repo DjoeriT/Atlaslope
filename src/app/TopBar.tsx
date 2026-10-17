@@ -65,7 +65,7 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, o
 }
 
 /** The logo: vine rows running up a slope, cut from a tile in the theme's accent colour. Decorative; the button's text names it. */
-function BrandMark() {
+export function BrandMark() {
   return (
     <svg className="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
       <defs>

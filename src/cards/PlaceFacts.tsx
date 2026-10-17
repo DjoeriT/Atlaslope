@@ -32,7 +32,7 @@ function Row({ label, cites, children }: { label: string; cites: Cite[]; childre
 const SHORT_LIST = 8;
 
 /** Long allowed lists (the Canary Islands allow 30 grapes) show the first few and a button for the rest. */
-function OtherGrapes({ names }: { names: string[] }) {
+export function OtherGrapes({ names }: { names: string[] }) {
   const [open, setOpen] = useState(false);
   if (names.length <= SHORT_LIST) return <>{names.join(', ')}</>;
   const shown = SHORT_LIST - 2;

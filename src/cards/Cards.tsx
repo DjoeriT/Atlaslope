@@ -1,13 +1,18 @@
 import { measuresOf, photosOf, sheetOf } from '../facts';
+import { glanceCells } from '../pages/helpers';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Region, Tree } from '../tree';
 import { SPAIN, type Selection } from '../url';
 import { CardShell } from './CardShell';
 import { Link, type Go } from './Link';
-import { FactRows, Photos, ReportLink, SourceLine } from './PlaceFacts';
+import { SourceLine } from './PlaceFacts';
+import { Cover } from './Cover';
+import { Glance } from './Glance';
+
 
 const t = strings.cards;
+const tp = strings.place;
 
 interface Props {
   tree: Tree;
@@ -61,32 +66,39 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
   );
 }
 
-function PlaceLink({ place, go }: { place: Place; go: Go }) {
-  return <Link to={{ kind: 'place', id: place.id }} go={go}>{place.name}</Link>;
+function ZoneRow({ zone, go, color }: { zone: Place; go: Go; color: string }) {
+  const photo = photosOf(zone.id)[0];
+  return (
+    <li>
+      <Link to={{ kind: 'place', id: zone.id }} go={go}>
+        {photo ? <img src={photo.src} alt="" loading="lazy" /> : <i style={{ background: color }} aria-hidden="true" />}
+        <span><b>{zone.name}</b><small>{t.zoneLevel}</small></span>
+        <span className="go" aria-hidden="true">›</span>
+      </Link>
+    </li>
+  );
 }
 
-/** The fact sheet (why line, rows with their sources, measured altitude and climate), photos, "Report a mistake", then where the place sits. */
+/** The place card as a teaser: cover photo, title, sub line, the opening sentence with its source, three facts, the zones and a way to the full page. */
 export function PlaceCard({ tree, go, place }: Props & { place: Place }) {
   const trail = tree.breadcrumb(place.id, 'place');
   const up = trail[trail.length - 2];
   const region = tree.getRegion(place.region);
-  const also = tree.alsoWithin(place.id);
   const zones = tree.children(place.id, 'place') as Place[];
   const isZone = tree.levelName(place) === 'zone';
   const quizzed = place.quiz !== 'none';
   const sheet = quizzed ? sheetOf(place.id) : undefined;
   const measures = quizzed ? measuresOf(place.id) : undefined;
-  const photos = quizzed ? photosOf(place.id) : [];
-  const where = (
-    <>
-      {region && !isZone && (<><dt>{t.studyRegion}</dt><dd><Link to={{ kind: 'region', id: region.id }} go={go}>{region.name}</Link></dd></>)}
-      {also.length > 0 && (<><dt>{t.alsoWithin}</dt><dd><ul>{also.map((o) => <li key={o.id}><PlaceLink place={o} go={go} /></li>)}</ul></dd></>)}
-    </>
-  );
+  const color = regionColor(place.region);
   const official = place.official && place.official !== place.name ? place.official : undefined;
-  const level = <><dt>{t.level}</dt><dd>{isZone ? t.zoneLevel : place.kind}{sheet && !isZone && <SourceLine cites={['mapa-list']} />}</dd></>;
+  const famous = sheet?.famous?.styles ?? [];
   return (
-    <CardShell tree={tree} go={go} trail={trail} suffix={isZone ? undefined : place.kind} title={place.name} close={up ? { to: up } : undefined}>
+    <CardShell
+      tree={tree} go={go} trail={trail} suffix={isZone ? undefined : place.kind} title={place.name} close={up ? { to: up } : undefined}
+      cover={<Cover key={place.id} name={place.name} color={color} photos={quizzed ? photosOf(place.id) : []} />}
+      foot={<Link className="btn primary" to={{ kind: 'place', id: place.id, page: true }} go={go}>{tp.readFullPage}</Link>}
+    >
+      <p className="sub">{tp.subLine(isZone ? t.zoneLevel : place.kind, region?.name ?? '')}</p>
       {sheet ? (
         <>
           <p className="lede">{sheet.why.text}</p>
@@ -94,22 +106,17 @@ export function PlaceCard({ tree, go, place }: Props & { place: Place }) {
           {official && <p className="official">{official}</p>}
         </>
       ) : official && <p className="lede">{official}</p>}
-      {quizzed ? (
+      <Glance cells={glanceCells(sheet, measures)} />
+      {famous.length > 0 && (
         <>
-          <dl className="facts">{level}<FactRows sheet={sheet} measures={measures} /></dl>
-          <Photos photos={photos} />
-          {sheet && <ReportLink id={place.id} name={place.name} />}
-          <dl className="facts">{where}</dl>
+          <h2>{tp.famousStyles}</h2>
+          <ul className="chips">{famous.map((f) => <li key={f.name}>{f.name}</li>)}</ul>
         </>
-      ) : (
-        <dl className="facts">{level}{where}</dl>
       )}
       {zones.length > 0 && (
         <>
           <h2>{t.zones}</h2>
-          <ul className="tree">
-            {zones.map((z) => <Row key={z.id} to={{ kind: 'place', id: z.id }} go={go} name={z.name} detail={t.zoneLevel} color={regionColor(place.region)} />)}
-          </ul>
+          <ul className="zrow">{zones.map((z) => <ZoneRow key={z.id} zone={z} go={go} color={color} />)}</ul>
         </>
       )}
       {place.boundary === 'to-fetch' && <p className="note">{t.noBoundary}</p>}
