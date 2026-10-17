@@ -35,6 +35,10 @@ Sources of truth, highest first: scope, architecture decisions, the brief, the a
   decision can be undone; plain words; the screen's existing patterns reused; checked at desktop and iPad width, with large text, in
   light and dark; keyboard reachable, 44 px targets, labels for screen readers. For a new screen or a redesign, ReviewBot in design mode does the
   check (fresh eyes, without LeadBot's reasoning) and LeadBot fixes the mock; wording and small tweaks keep LeadBot's own check.
+  **A visual design check runs alongside it** (owner, 17 Oct 2026, after he found the app "too Atlassy" and asked for it to look
+  immaculate): the screen is held against `Review/visual-style.md` (type scale, spacing, colours, photo crop and credit, reference
+  spreads) with screenshots in light, dark and iPad width, by the same ReviewBot design run, and fixed before the owner sees it. Before
+  a release, the built screens are compared with their approved mock; a gap is fixed in the slice or named in the tester note.
 - **Talking to the owner:** plain words, lead with the answer. Progress is two or three sentences: what happened, what comes next.
   Something failed: say what, show the relevant output, and wait.
 - **Say what is verified and what is assumed** ([V] / [O] / [R] / [A]). Re-run a number before relying on it; a report's figure is a lead until reproduced.
