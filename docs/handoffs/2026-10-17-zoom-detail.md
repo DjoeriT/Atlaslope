@@ -27,4 +27,4 @@ without a CORS header; one retry covers most. Not verified: Safari, a real iPad,
 
 **Where.** Plan `/mnt/project-files/atlaslope/zoom-detail/2026-10-17-zoom-detail-plan.md`. Design check
 `/mnt/project-files/atlaslope/reviews/2026-10-17-zoom-detail-design-check.md`; code review `Review/zoom-detail-review.md`.
-Tester note `Review/zoom-detail-what-to-test.md`. Sources: `data/SOURCES.md` (spain-mask, PNOA, OpenFreeMap, map lettering).
+Live as release 13 (tag `release-13` on 4827bea, owner "publish release 13" 14:52Z). Tester note `Review/release-13-what-to-test.md`. Sources: `data/SOURCES.md` (spain-mask, PNOA, OpenFreeMap, map lettering).
