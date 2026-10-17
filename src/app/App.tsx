@@ -98,6 +98,7 @@ export function App() {
   useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
   const clock = useMemo(() => makeClock(debugNow()), []);
   const progress = useQuiz(tree, clock);
+  const dueSet = useMemo(() => new Set(progress.plan.due.map((r) => r.place)), [progress.plan]);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
   const flown = flyOf(sel);
   const fly = sel.kind === 'place' ? sel.fly : undefined;
@@ -119,7 +120,7 @@ export function App() {
   }, [titleName]);
   return (
     <>
-      <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} />
+      <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
       {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={openExplore} onProgressFile={() => openQuiz('progress-file')} />}
       {(quiz || keepQuiz) && (
         <QuizScreen
@@ -131,10 +132,10 @@ export function App() {
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
       {quiz ? null : place && flown && fly && !sel.page ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
-        : place && sel.page ? <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
+        : place && sel.page ? <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
         : progress.hasProgress && !todayClosed ? (
           <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
-        ) : <SpainCard tree={tree} go={go} />}
+        ) : <SpainCard tree={tree} go={go} due={dueSet} onReview={() => { setAutoStart(true); openQuiz(); }} />}
       {!pageOpen && <FirstRun />}
     </>
   );

@@ -1,6 +1,36 @@
 {
  "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. See data/SOURCES.md.",
  "places": {
+  "cava": {
+   "altitude": {
+    "p10": 130,
+    "median": 410,
+    "p90": 700,
+    "samples": 4885
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.56
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.18
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.13
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.11
+    }
+   ]
+  },
   "jumilla": {
    "altitude": {
     "p10": 440,
@@ -168,6 +198,21 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.96
+    }
+   ]
+  },
+  "ayles": {
+   "altitude": {
+    "p10": 500,
+    "median": 510,
+    "p90": 520,
+    "samples": 153
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
     }
    ]
   },
@@ -418,6 +463,36 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.05
+    }
+   ]
+  },
+  "islas-canarias": {
+   "altitude": {
+    "p10": 50,
+    "median": 330,
+    "p90": 1310,
+    "samples": 6002
+   },
+   "koppen": [
+    {
+     "code": "BWh",
+     "name": "Arid, desert, hot",
+     "share": 0.41
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.27
+    },
+    {
+     "code": "BSh",
+     "name": "Arid, steppe, hot",
+     "share": 0.2
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.1
     }
    ]
   },
@@ -856,6 +931,21 @@
     }
    ]
   },
+  "calzadilla": {
+   "altitude": {
+    "p10": 820,
+    "median": 830,
+    "p90": 870,
+    "samples": 246
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
   "campo-de-calatrava": {
    "altitude": {
     "p10": 620,
@@ -873,6 +963,96 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.14
+    }
+   ]
+  },
+  "campo-de-la-guardia": {
+   "altitude": {
+    "p10": 690,
+    "median": 690,
+    "p90": 690,
+    "samples": 136
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
+    }
+   ]
+  },
+  "casa-del-blanco": {
+   "altitude": {
+    "p10": 670,
+    "median": 670,
+    "p90": 670,
+    "samples": 163
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
+    }
+   ]
+  },
+  "dehesa-del-carrizal": {
+   "altitude": {
+    "p10": 780,
+    "median": 780,
+    "p90": 790,
+    "samples": 178
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "dominio-de-valdepusa": {
+   "altitude": {
+    "p10": 480,
+    "median": 480,
+    "p90": 480,
+    "samples": 234
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
+    }
+   ]
+  },
+  "finca-elez": {
+   "altitude": {
+    "p10": 980,
+    "median": 980,
+    "p90": 980,
+    "samples": 190
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "guijoso": {
+   "altitude": {
+    "p10": 960,
+    "median": 960,
+    "p90": 960,
+    "samples": 235
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
     }
    ]
   },
@@ -961,6 +1141,21 @@
     }
    ]
   },
+  "pago-florentino": {
+   "altitude": {
+    "p10": 640,
+    "median": 690,
+    "p90": 830,
+    "samples": 259
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
+    }
+   ]
+  },
   "ribera-del-jucar": {
    "altitude": {
     "p10": 720,
@@ -1038,6 +1233,31 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.21
+    }
+   ]
+  },
+  "catalunya": {
+   "altitude": {
+    "p10": 90,
+    "median": 340,
+    "p90": 680,
+    "samples": 5992
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.58
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.28
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.08
     }
    ]
   },
@@ -1411,6 +1631,51 @@
     }
    ]
   },
+  "arinzano": {
+   "altitude": {
+    "p10": 400,
+    "median": 430,
+    "p90": 480,
+    "samples": 256
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "otazu": {
+   "altitude": {
+    "p10": 380,
+    "median": 390,
+    "p90": 390,
+    "samples": 283
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "prado-de-irache": {
+   "altitude": {
+    "p10": 500,
+    "median": 520,
+    "p90": 540,
+    "samples": 247
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
   "txakoli-alava": {
    "altitude": {
     "p10": 230,
@@ -1478,6 +1743,36 @@
      "code": "BSh",
      "name": "Arid, steppe, hot",
      "share": 0.18
+    }
+   ]
+  },
+  "el-terrerazo": {
+   "altitude": {
+    "p10": 770,
+    "median": 790,
+    "p90": 790,
+    "samples": 222
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
+    }
+   ]
+  },
+  "los-balagueses": {
+   "altitude": {
+    "p10": 670,
+    "median": 670,
+    "p90": 680,
+    "samples": 184
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 1.0
     }
    ]
   },

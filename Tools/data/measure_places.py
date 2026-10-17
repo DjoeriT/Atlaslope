@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Measured rows for the fact sheets: altitude and Köppen climate inside each quizzed place's boundary.
+"""Measured rows for the fact sheets and the map's climate colours: altitude and Köppen climate inside each place's boundary
+(every place with a boundary, quizzed or not; places still waiting for a boundary are skipped).
 
 Writes data/place-measures.json. Needs shapely and Pillow, and network access to the Mapzen Terrarium tiles on AWS Open Data
 (the same tiles the 3D map streams). Tiles are cached in ./.cache/terrarium (git-ignored).
@@ -118,9 +119,10 @@ def r10(v):
 
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
-    places = [p for p in load("places.json")["places"] if p["quiz"] != "none"]
+    every = load("places.json")["places"]
+    places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones")]
     geoms = boundaries(places)
-    missing = [p["id"] for p in places if p["id"] not in geoms]
+    missing = [p["id"] for p in places if p["id"] not in geoms] + [p["id"] for p in every if p["quiz"] != "none" and p not in places]
     if missing:
         sys.exit(f"no boundary for {missing}")
     samples = {pid: points_in(g) for pid, g in geoms.items()}

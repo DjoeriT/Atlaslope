@@ -20,3 +20,13 @@
 .flypin span{background:var(--ink);color:var(--paper);font:600 .85rem var(--sans);padding:.35rem .75rem;border-radius:999px;box-shadow:var(--shadow);white-space:nowrap}
 .flypin i{width:2px;height:1.4rem;background:var(--ink)}
 .flypin b{width:.8rem;height:.8rem;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,255,255,.85)}
+
+/* The legend under the mode bar and the colour-by choice in the menu */
+.legend{position:absolute;right:1rem;top:4.6rem;z-index:5;padding:.6rem .8rem;font-size:.8rem;max-width:15rem}
+.legend b{display:block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.3rem}
+.legend ul{list-style:none;margin:0;padding:0;display:grid;gap:.2rem}
+.legend li{display:flex;align-items:center;gap:.5rem;color:var(--ink)}
+.legend i{width:.9rem;height:.9rem;border-radius:.2rem;flex:none;background:color-mix(in srgb,var(--sw) 55%,#EFE9DC);border:2px solid var(--sw);box-sizing:border-box}
+.menu .colourby{border:0;border-top:1px solid var(--line);margin:.3rem 0 0;padding:.4rem 0 0}
+.menu .colourby legend{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding:0 .6rem}
+@media (max-width:51.25em) and (orientation:portrait){.legend{top:8.4rem}}

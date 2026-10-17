@@ -6,6 +6,8 @@ import type { Focus } from './focus';
 import { DEFAULT_MENU, type MenuState } from './layers';
 import { MapMenu } from './MapMenu';
 import { onHoverPlaces } from './hover';
+import { CLIMATE_GROUPS } from './climate';
+import { regionColor } from './regionColors';
 import type { QuizView } from './quiz';
 import './map.css';
 
@@ -20,10 +22,12 @@ interface Props {
   quiz: QuizView | null;
   onPick(placeId: string): void;
   onView(view: View): void;
+  /** The study regions, for the legend when places are coloured by region. */
+  regions?: readonly { id: string; name: string }[];
 }
 
 /** The map element, the map menu with zoom, reset-view and compass buttons, and the imagery note. */
-export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
+export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }: Props) {
   const el = useRef<HTMLDivElement>(null);
   const ctl = useRef<MapController | null>(null);
   const [menu, setMenu] = useState<MenuState>(DEFAULT_MENU);
@@ -91,6 +95,7 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
           )}
         </div>
       </div>
+      {!quiz && menu.boundaries && <Legend title={menu.colourBy === 'climate' ? t.legendTitle : t.legendRegions} rows={menu.colourBy === 'climate' ? CLIMATE_GROUPS : regions.map((r) => ({ id: r.id, label: r.name, color: regionColor(r.id) }))} />}
       {dataFailed && (
         <div className="glass imagery-note" role="alert">
           <span>{t.dataNote}</span>
@@ -104,5 +109,15 @@ export function MapView({ focus, restored, quiz, onPick, onView }: Props) {
         </div>
       )}
     </>
+  );
+}
+
+/** What the place colours mean. Swatches are drawn the way the map draws a place: a light fill with a solid edge. */
+function Legend({ title, rows }: { title: string; rows: readonly { id: string; label: string; color: string }[] }) {
+  return (
+    <div className="glass legend" role="group" aria-label={title}>
+      <b>{title}</b>
+      <ul>{rows.map((r) => <li key={r.id}><i style={{ ['--sw' as string]: r.color }} aria-hidden="true" />{r.label}</li>)}</ul>
+    </div>
   );
 }
