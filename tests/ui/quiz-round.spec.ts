@@ -103,6 +103,8 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
 });
 
 test('a slip is kept in the log, and the miss is not asked again', async ({ page }) => {
+  // Five scripted questions, like the round above; the step crossfade (PR #63) pushed it past the 30 s default (CI and local). More time, same assertions.
+  test.slow();
   await start(page);
   const first = await pastIntro(page);
   await wrongChoice(page, first);
