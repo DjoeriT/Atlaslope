@@ -6,3 +6,10 @@ export {
 } from './memory';
 export { askable, courseKey, dueNow, inCourseOrder, INTAKE_PER_DAY, REVIEW_KINDS, STUDY_KINDS, studyPlan, studySet, type PlanOptions, type StudyPlan } from './plan';
 export { afterAnswer, memoryKey, reviewRound, ROUND_SIZE, roundKeys, studyRound, type RoundOptions } from './round';
+export {
+  browserStorage, createStore, emptyRecord, migrate, RECORD_VERSION,
+  type ImportResult, type Migrated, type QuizRecord, type QuizStore, type StoreStatus,
+} from './store';
+export {
+  askableFacts, FACT_KINDS, makeQuestion, revealFact, seededRandom, type FactKind, type FactSource, type Question, type QuestionContext,
+} from './questions';
