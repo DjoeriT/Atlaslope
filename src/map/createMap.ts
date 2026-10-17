@@ -45,6 +45,8 @@ export interface MapEvents {
 const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
 const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
 
+const TERRAIN = { source: 'terrain', exaggeration: TERRAIN_EXAGGERATION };
+
 export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null): MapController {
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
   const tiles = tilesEnabled();
@@ -97,17 +99,18 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     map.setPaintProperty('dos-fill', 'fill-opacity', p.dosFillOpacity as never);
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
-    redrape();
+    if (tiles) map.setTerrain(m.relief ? TERRAIN : null);
     labels?.setVisible(namesShown());
     render();
   };
   const namesShown = () => current.boundaries && !quizView?.hideNames;
-  // With 3D relief on, MapLibre 4.7 caches the flat layers as textures on the terrain and does not redraw them after a paint
-  // change or late-arriving GeoJSON, so borders stayed missing until a menu toggle (#40). Setting the terrain afresh redraws them.
+  // With 3D relief on, MapLibre 4.7 caches the flat layers as textures on the terrain and does not redraw them when GeoJSON
+  // arrives later, so country borders stayed missing until a menu toggle (#40). Once the world map has loaded, take the terrain
+  // off and put it back to rebuild those textures (setting the same terrain again was not enough in a headless check).
   const redrape = () => {
-    if (!tiles) return;
+    if (!tiles || !current.relief) return;
     map.setTerrain(null);
-    if (current.relief) map.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
+    map.setTerrain(TERRAIN);
   };
 
   map.once('load', () => {
@@ -123,7 +126,12 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
       (map.getSource('land') as maplibregl.GeoJSONSource).setData(land as never);
       (map.getSource('ocean') as maplibregl.GeoJSONSource).setData(oceanFromLand(land) as never);
-      map.once('idle', redrape);
+      const onLand = (e: maplibregl.MapSourceDataEvent) => {
+        if (e.sourceId !== 'land' || !map.isSourceLoaded('land')) return;
+        map.off('sourcedata', onLand);
+        redrape();
+      };
+      map.on('sourcedata', onLand);
       labels = addLabels(map, boundaries.features.map((f) => ({
         id: String(f.properties.id), name: String(f.properties.name), kind: String(f.properties.kind),
         at: centerOf(places.places as Array<PlaceRow & { centroid?: [number, number] | null }>, String(f.properties.id)),

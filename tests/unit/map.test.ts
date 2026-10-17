@@ -32,7 +32,7 @@ describe('layer list per menu state', () => {
     expect(v.satellite).toBe('none');
     expect(v.land).toBe('visible');
   });
-  it('draws country borders over a halo that contrasts with the base (#40)', () => {
+  it('puts a halo under country borders, light on the atlas and dark over imagery (#40)', () => {
     const ids = buildStyle({ tiles: false, menu: on }).layers.map((l) => l.id);
     expect(ids.indexOf('borders-casing')).toBe(ids.indexOf('borders') - 1);
     expect(basemapPaint(false).bordersCasing.color).toBe('#FFFFFF');

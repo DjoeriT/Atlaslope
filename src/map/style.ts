@@ -59,7 +59,7 @@ export function buildStyle({ esriKey, tiles, menu }: StyleOptions): StyleSpecifi
     { id: 'coast', type: 'line', source: 'land', filter: isLand, paint: { 'line-color': paint.coast, 'line-width': ['interpolate', ['linear'], ['zoom'], 5, 1.2, 9, 2], 'line-opacity': 0.9 } },
     {
       id: 'borders-casing', type: 'line', source: 'land', filter: isBorder, layout: { 'line-join': 'round' },
-      paint: { 'line-color': paint.bordersCasing.color, 'line-opacity': paint.bordersCasing.opacity, 'line-width': ['interpolate', ['linear'], ['zoom'], 4, 3, 9, 4.5] },
+      paint: { 'line-color': paint.bordersCasing.color, 'line-opacity': paint.bordersCasing.opacity, 'line-width': ['interpolate', ['linear'], ['zoom'], 4, 2.5, 9, 4] },
     },
     { id: 'borders', type: 'line', source: 'land', filter: isBorder, paint: { 'line-color': paint.borders, 'line-width': ['interpolate', ['linear'], ['zoom'], 4, 1.1, 9, 1.8], 'line-dasharray': [3, 2] } },
     { id: 'dos-casing', type: 'line', source: 'dos', layout: { visibility: vis['dos-casing'] }, paint: { 'line-color': '#FFFFFF', 'line-width': 3.6, 'line-opacity': 0.55 } },

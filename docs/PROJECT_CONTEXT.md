@@ -73,8 +73,8 @@ session on his Mac also sees his thread messages and started a second publish ru
 - 30 of 79 fact sheets have no main grape (no source names one; planted area is issue #29, the MAPA DOP reports list no grapes [V]); Jerez and Manzanilla have no photos.
 - Famous producers on only 6 places: Wikipedia singles out few; to be supplemented later (owner 20:23Z, issue #30).
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
-- 3D relief caches flat layers as textures (MapLibre 4.7.1) and does not redraw them after a paint change or late GeoJSON; the app re-sets
-  the terrain after the world map loads and on every menu change (`redrape()` in `src/map/createMap.ts`, #40). Other layers changed
+- 3D relief caches flat layers as textures (MapLibre 4.7.1) and does not redraw them after a paint change or late GeoJSON; the app takes the
+  terrain off and back on once the world map has loaded (`redrape()` in `src/map/createMap.ts`, #40). Other layers changed
   without a menu change (selection highlight, quiz) could show the same stale look; not seen yet [A].
 - Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 
