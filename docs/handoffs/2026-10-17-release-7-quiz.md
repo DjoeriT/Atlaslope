@@ -1,5 +1,7 @@
 # Handoff: release 7, the quiz (planned as release 5, issue #13), 17 Oct 2026
 
+Live since 17 Oct 06:43Z: tag `release-7` on 1f110ed (PR #34, publish run 39010719099, live map check 39010972212 passed).
+
 ## Done
 - Engine (`src/quiz/`, pure TypeScript): answer log replayed into two memories per place (`where`, `what`), boxes 1/3/7/14/30 days,
   shades, Study plan (five new a day, focus first, course order, zones after their parent), rounds of 20 with re-asks and Keep going,
