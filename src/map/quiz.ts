@@ -11,6 +11,13 @@ export interface QuizView {
   select: string | null;
   /** The answer, framed and named; with the learner's wrong pick, if any. */
   reveal: { answer: string; picked?: string } | null;
+  /** The Rioja zones are drawn and can be tapped: set when the question asks about a zone, otherwise they stay hidden. */
+  showZones?: boolean;
+}
+
+/** The visibility the zone layers get in quiz mode: hidden unless the question is about a zone. */
+export function zoneVisibility(q: QuizView): 'visible' | 'none' {
+  return q.showZones ? 'visible' : 'none';
 }
 
 /** How far outside a boundary a tap still counts: half of a 44 px square. */

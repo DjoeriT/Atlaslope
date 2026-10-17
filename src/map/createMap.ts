@@ -13,7 +13,7 @@ import type { View } from '../url';
 import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type PlaceRow } from './boundaries';
 import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
 import { addLabels, type Labels } from './labels';
-import { TAP_RADIUS_PX, nearestPlace, revealBox, revealPadding, type Pt, type QuizView, type Shape } from './quiz';
+import { TAP_RADIUS_PX, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
 import { TERRAIN_EXAGGERATION, buildStyle } from './style';
 import { tilesEnabled } from './tiles';
@@ -72,6 +72,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let imagery = hasImagery;
   let quizView: QuizView | null = null;
   let quizSel: string | null = null;
+  let quizZoneSel: string | null = null;
   let quizFrame: string | null = null; // the reveal last framed, so a repeat call does not move the camera again
   let beforeQuiz: { pitch: number; bearing: number } | null = null;
   let revealMarks: maplibregl.Marker[] = [];
@@ -208,7 +209,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   /** The places' outlines in screen pixels, for the nearest-place tap. */
   function shapesOnScreen(): Shape[] {
     const project = (c: number[]): Pt => { const p = map.project([c[0], c[1]]); return [p.x, p.y]; };
-    const features = [...(boundaries?.features ?? []), ...(map.getLayoutProperty('zones-fill', 'visibility') === 'visible' ? zones?.features ?? [] : [])];
+    // Zones first: inside a zone the tap means the zone, not the DOCa beneath it (ties go to the first).
+    const features = [...(map.getLayoutProperty('zones-fill', 'visibility') === 'visible' ? zones?.features ?? [] : []), ...(boundaries?.features ?? [])];
     return features.map((f) => {
       const g = f.geometry as unknown as { type: string; coordinates: number[][][] | number[][][][] };
       const polys = (g.type === 'Polygon' ? [g.coordinates] : g.coordinates) as number[][][][];
@@ -226,7 +228,12 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (quizSel && quizSel !== q.select) setState('dos', quizSel, { sel: false });
     quizSel = q.select && boundaries.features.some((f) => f.properties.id === q.select) ? q.select : null;
     if (quizSel) setState('dos', quizSel, { sel: true });
-    for (const id of ['zones-fill', 'zones-line']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', 'none');
+    const zsel = q.select && zones?.features.some((f) => f.properties.id === q.select) ? q.select : null;
+    if (quizZoneSel && quizZoneSel !== zsel) setState('zones', quizZoneSel, { sel: false });
+    quizZoneSel = zsel;
+    if (zsel) setState('zones', zsel, { sel: true });
+    for (const id of ['zones-fill', 'zones-line']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', zoneVisibility(q));
+    const places = [...boundaries.features, ...(zones?.features ?? [])];
     revealMarks.forEach((m) => m.remove());
     revealMarks = [];
     const key = q.reveal ? `${q.reveal.answer}|${q.reveal.picked ?? ''}` : '';
@@ -234,7 +241,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const flat = { pitch: 0, bearing: 0, duration };
     if (q.reveal) {
       for (const [id, cls, tag] of [[q.reveal.answer, 'answer', strings.quiz.answerTag], [q.reveal.picked, 'miss', strings.quiz.pickTag]] as const) {
-        const f = id && boundaries.features.find((x) => x.properties.id === id);
+        const f = id && places.find((x) => x.properties.id === id);
         const box = f && boundsOf([f]);
         if (!f || !box) continue;
         const el = document.createElement('div');
@@ -249,7 +256,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     quizFrame = key;
     const view = { width: window.innerWidth, height: window.innerHeight };
     const card = document.querySelector('.card')?.getBoundingClientRect();
-    const box = q.reveal ? revealBox(boundaries.features, q.reveal) : null;
+    const box = q.reveal ? revealBox(places, q.reveal) : null;
     if (box) map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...flat, padding: revealPadding(view, card), maxZoom: 8.5 });
     else map.fitBounds(SPAIN_BOUNDS, { ...flat, padding: padding() });
   }
@@ -262,6 +269,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       if (quizSel) setState('dos', quizSel, { sel: false });
       if (selected) setState('dos', selected, { sel: false });
     }
+    if (quizZoneSel) map.setFeatureState({ source: 'zones', id: quizZoneSel }, { sel: false });
+    quizZoneSel = null;
     quizSel = null;
     quizFrame = null;
     selected = null;
