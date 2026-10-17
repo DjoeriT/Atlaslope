@@ -1,0 +1,66 @@
+{
+ "id": "rioja-alta",
+ "title": "Why Rioja Alta tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "The Atlantic sets the tone here. More rain and fewer hours of sun than further south keep the wines' acidity high.",
+  "cite": [
+   "rioja-pliego:p20"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "weather",
+   "title": "Atlantic weather",
+   "paras": [
+    "Rioja Alta is mostly Atlantic in climate. Through the growing season it gets more rain and fewer hours of sun than the south of Rioja, and the Sierra de Cantabria protects it. Its wines have medium alcohol, body and high acidity, which suits ageing in barrel, whether they are bottled alone or blended with wine from the other zones."
+   ],
+   "cite": [
+    "rioja-pliego:p15",
+    "rioja-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Cantabria",
+     "point": [
+      -2.62,
+      42.61
+     ],
+     "zoom": 10.5,
+     "caption": "The mountains on Rioja's northern side. They protect Rioja Alta, and Rioja Alavesa even more.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "title": "Three soils",
+   "paras": [
+    "Its soils are split between clay-limestone, ferrous clay and alluvial land. The clay-limestone, which it shares with Rioja Alavesa, is the main source of wines for ageing. The ferrous clay and alluvial soils give wines with less body.",
+    "Haro lies in Rioja Alta. Wines from Rioja Alta and Alavesa \"made by the Champagne method\" were shown in Madrid in 1857."
+   ],
+   "cite": [
+    "rioja-pliego:p12",
+    "rioja-pliego:p15",
+    "rioja-pliego:p19",
+    "rioja-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Haro's station quarter",
+     "point": [
+      -2.851,
+      42.585
+     ],
+     "zoom": 14,
+     "caption": "A French firm set up here in Haro made sparkling wine, and in 1890 it hired a champagne maker from Reims.",
+     "cite": [
+      "rioja-pliego:p19"
+     ]
+    }
+   ]
+  }
+ ]
+}

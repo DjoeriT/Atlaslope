@@ -1,0 +1,48 @@
+{
+ "id": "rioja-oriental",
+ "title": "Why Rioja Oriental tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "The Mediterranean end of Rioja: drier and warmer, with the most sun.",
+  "cite": [
+   "rioja-pliego:p15",
+   "rioja-pliego:p20"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "weather",
+   "title": "Mediterranean weather",
+   "paras": [
+    "Rioja Oriental has less rain and a clearly Mediterranean climate, with more sun in general than the rest of Rioja. Its wines have more alcohol and more extract. They are suited to blends meant for barrel ageing, and some are made to drink young. Older documents call this zone Rioja Baja."
+   ],
+   "cite": [
+    "rioja-pliego:p15",
+    "rioja-pliego:p20",
+    "rioja-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Rioja Oriental",
+     "place": "rioja-oriental",
+     "caption": "The Mediterranean end of Rioja: the least rain and the most sun.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "title": "River land and red clay",
+   "paras": [
+    "Alluvial soils near the rivers and ferrous clay dominate. Both give wines with less body than the clay-limestone further north. Alfaro, the easternmost town of Rioja, lies here."
+   ],
+   "cite": [
+    "rioja-pliego:p12",
+    "rioja-pliego:p15",
+    "rioja-pliego:p20"
+   ]
+  }
+ ]
+}
