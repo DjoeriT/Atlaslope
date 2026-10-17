@@ -72,6 +72,7 @@ archived context file; the ones that changed:
 - 2026-10-16 [O]: pull request per slice on a `claude/...` branch (replaces "push `main`"); `publish` workflow tags and deploys (replaces tag pushes from the Mac).
 - 2026-10-16 [O]: threads close themselves with a handoff in `docs/handoffs/`; the owner's go on a plan covers the agents it names.
 - 2026-10-16 [O]: the data step runs where the source hosts are reachable (cloud environment with them allowed, else GitHub Actions, else the Mac). Replaces "data on the owner's Mac".
+- 2026-10-17 [O]: logo is the vineyard slope (vine rows up a hill in an accent tile); favicon follows the browser theme; tab title names the place first ("Rioja · Atlaslope", home "Atlaslope · The wine atlas that quizzes you").
 
 ## 9. Where things are written down
 Rules `CLAUDE.md`; this file; scope and decisions in `docs/`; handoffs `docs/handoffs/`; brief, reviews, mocks, cards and digests in

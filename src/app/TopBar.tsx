@@ -37,7 +37,7 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen }: Props) {
     <>
       <div className="topleft">
         <button ref={brandRef} className="brand glass" aria-haspopup="menu" aria-expanded={open} aria-controls="brand-menu" onClick={() => setOpen(!open)}>
-          <b>{strings.appName}</b><small>{strings.brandContext}</small>
+          <BrandMark /><b>{strings.appName}</b><small>{strings.brandContext}</small>
         </button>
         <SearchBox tree={tree} open={onOpen} />
       </div>
@@ -56,5 +56,26 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen }: Props) {
         </nav>
       </div>
     </>
+  );
+}
+
+/** The logo: vine rows running up a slope, cut from a tile in the theme's accent colour. Decorative; the button's text names it. */
+function BrandMark() {
+  return (
+    <svg className="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="mark-tile"><rect width="64" height="64" rx="14" /></clipPath>
+        <clipPath id="mark-hill"><path d="M-2 52 C 14 50 30 40 44 26 C 50 20 56 17 66 16 L66 66 L-2 66 Z" /></clipPath>
+      </defs>
+      <g clipPath="url(#mark-tile)">
+        <rect width="64" height="64" fill="var(--accent)" />
+        <g clipPath="url(#mark-hill)">
+          <rect width="64" height="64" fill="var(--accent-ink)" />
+          <g fill="none" stroke="var(--accent)" strokeWidth="3.6" strokeLinecap="round">
+            <path d="M8 66 L20 49" /><path d="M22 66 L31 40.5" /><path d="M36 66 L41 30.5" /><path d="M50 66 L51 22.5" /><path d="M64 66 L61 17" />
+          </g>
+        </g>
+      </g>
+    </svg>
   );
 }

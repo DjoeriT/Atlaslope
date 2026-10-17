@@ -2,6 +2,9 @@
 export const strings = {
   appName: 'Atlaslope',
   brandContext: 'Spain',
+  // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
+  pageTitleHome: 'Atlaslope · The wine atlas that quizzes you',
+  pageTitle: (name: string) => `${name} · Atlaslope`,
   mapMountLabel: 'Map of Spain. Click a place to select it.',
   map: {
     menuButton: 'Map layers',
