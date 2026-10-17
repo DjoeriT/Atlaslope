@@ -98,6 +98,16 @@ export function mapNameLayers(sat: boolean, visible: boolean): LayerSpecificatio
   ] as LayerSpecification[];
 }
 
+/**
+ * Adds the names on top of the map. Called after the map's 'load': MapLibre waits for every source before 'load', so a
+ * names server that is slow or blocked must not be in the first style, or the places would never be drawn.
+ */
+export function addMapNames(map: maplibregl.Map, sat: boolean, visible: boolean): void {
+  if (map.getSource('osm')) return;
+  map.addSource('osm', osmSource());
+  for (const layer of mapNameLayers(sat, visible)) map.addLayer(layer);
+}
+
 /** Repaints the names for the photo or the plain atlas and shows or hides them. */
 export function applyMapNames(map: maplibregl.Map, sat: boolean, visible: boolean): void {
   for (const layer of mapNameLayers(sat, visible)) {

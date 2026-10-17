@@ -39,6 +39,11 @@ describe('layer list per menu state', () => {
     expect(basemapPaint(false).bordersCasing.color).toBe('#FFFFFF');
     expect(basemapPaint(true).bordersCasing.color).not.toBe(basemapPaint(true).borders);
   });
+  it('thins the place fills close in over the photo, so the land shows, but not on the atlas', () => {
+    const sat = JSON.stringify(basemapPaint(true).dosFillOpacity);
+    expect(sat).toMatch(/^\["interpolate",\["linear"\],\["zoom"\],10,.*,13,/);
+    expect(JSON.stringify(basemapPaint(false).dosFillOpacity)).not.toContain('zoom');
+  });
   it('draws boundaries stronger over imagery than on the atlas', () => {
     expect(basemapPaint(true).dosFillOpacity).not.toEqual(basemapPaint(false).dosFillOpacity);
     expect(basemapPaint(true).ocean.opacity).toBeLessThan(1);

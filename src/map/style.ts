@@ -2,7 +2,7 @@
 import type { StyleSpecification } from 'maplibre-gl';
 import { ESRI_PROTOCOL_TILES, PNOA_ATTRIBUTION, PNOA_MAX_ZOOM, PNOA_MIN_ZOOM, PNOA_PROTOCOL_TILES, rasterTileSize } from './imagery';
 import { basemapPaint, layerVisibility, type MenuState } from './layers';
-import { GLYPHS_URL, mapNameLayers, osmSource } from './mapNames';
+import { GLYPHS_URL } from './mapNames';
 
 // The patterns .github/workflows/live-map-check.yml matches on.
 export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
@@ -44,7 +44,6 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
     sources.pnoa = { type: 'raster', tiles: [PNOA_PROTOCOL_TILES], tileSize, minzoom: PNOA_MIN_ZOOM, maxzoom: PNOA_MAX_ZOOM, attribution: PNOA_ATTRIBUTION };
   }
   if (tiles) {
-    sources.osm = osmSource();
     sources.terrain = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13, attribution: TERRAIN_ATTRIBUTION };
   }
   const isLand = ['==', ['get', 'layer'], 'land'] as never;
@@ -91,6 +90,6 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
     },
     { id: 'zones-line', type: 'line', source: 'zones', layout: { visibility: 'none' }, paint: { 'line-color': '#FFFFFF', 'line-width': 2, 'line-opacity': 0.9 } },
   );
-  if (tiles) layers.push(...mapNameLayers(sat, true));
+  // The place names (src/map/mapNames.ts) are added once the map has loaded, so a slow or blocked name server never holds it up.
   return { version: 8, sources, layers, ...(tiles ? { glyphs: GLYPHS_URL } : {}) };
 }

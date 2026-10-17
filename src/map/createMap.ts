@@ -16,7 +16,7 @@ import { addLabels, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
 import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
-import { applyMapNames, registerGlyphs } from './mapNames';
+import { addMapNames, applyMapNames, registerGlyphs } from './mapNames';
 import { TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 
@@ -136,6 +136,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
 
   map.once('load', () => {
     ready = true;
+    if (tiles) addMapNames(map, current.satellite && imagery, !quizView?.hideNames);
     apply(current, imagery);
     render();
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
