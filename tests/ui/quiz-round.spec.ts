@@ -33,6 +33,9 @@ async function wrongChoice(page: Page, name: string) {
 }
 
 test('a round: intros, a right answer moves on by itself, a miss waits, slip and undo, the miss comes back, the log has it all', async ({ page }) => {
+  // A whole scripted round takes about 25 s alone (same on main, 17 Oct), too close to the 30 s default once the suite grew; release 9
+  // runs timed it out under parallel load. More time, same assertions.
+  test.slow();
   await start(page);
 
   // 1. A new place: its intro is not a numbered question. A right answer moves on after about a second.
