@@ -14,11 +14,11 @@ test('Quiz in the top bar opens the quiz card, hides place names, and Back retur
   await open(page);
   await expect.poll(() => visibleNames(page)).toBeGreaterThan(0);
 
-  await page.getByRole('navigation', { name: 'Mode' }).getByRole('button', { name: 'Quiz' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
   await expect(page.locator('.card h1')).toHaveText('Study or review');
-  await expect(page).toHaveURL(/#quiz/);
+  await expect(page).toHaveURL(/#study/);
   await expect.poll(() => visibleNames(page)).toBe(0);
-  await expect.poll(() => page.url()).toMatch(/#quiz&view=[^&]*,0,0$/); // flat and north up
+  await expect.poll(() => page.url()).toMatch(/#study&view=[^&]*,0,0$/); // flat and north up
 
   await page.goBack();
   await expect(page.locator('.card:visible h1')).toHaveText('Spain');
@@ -28,8 +28,8 @@ test('Quiz in the top bar opens the quiz card, hides place names, and Back retur
 test('a #quiz link opens the quiz, and Explore in the top bar leaves it', async ({ page }) => {
   await open(page, '#quiz');
   await expect(page.locator('.card h1')).toHaveText('Study or review');
-  await expect(page.getByRole('button', { name: 'Quiz' })).toHaveAttribute('aria-current', 'page');
-  await page.getByRole('link', { name: 'Explore' }).click();
+  await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' })).toHaveAttribute('aria-current', 'page');
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.locator('.card:visible h1')).toHaveText('Spain');
   await expect(page).not.toHaveURL(/quiz/);
 });

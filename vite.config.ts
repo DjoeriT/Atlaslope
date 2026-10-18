@@ -5,6 +5,8 @@ import { defineConfig } from 'vite';
 // Debug-only query flags (src/debug.ts) exist only in dev and in the UI-test build (`--mode uitest`); the production build compiles them out.
 export default defineConfig(({ mode }) => ({
   base: './',
+  // Two pages (website slice 2): the home page at the root, the atlas at atlas/. Each is a real file, as GitHub Pages needs.
+  build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html' } } },
   esbuild: { jsx: 'automatic' },
   define: { __DEBUG_FLAGS__: JSON.stringify(mode === 'development' || mode === 'uitest') },
   test: { include: ['tests/unit/**/*.test.ts'] },

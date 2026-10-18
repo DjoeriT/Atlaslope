@@ -42,7 +42,7 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 20, black and champagne, light only (PR #77; tag `release-20` on 08e4110, 18 Oct, live map check passed; tester note `Review/release-20-what-to-test.md`). Release 19, Explore leaves the quiz behind (PR #72; tag `release-19` on 7e4938f, 18 Oct; tester note `Review/archive/release-19-what-to-test.md`). Release 18, the polish pack (PR #73; tag `release-18` on f1fb654, 18 Oct; tester note `Review/release-18-what-to-test.md`). Release 17, the quiz highlight fix with 3D relief, quiz spacing and the address-bar race (PRs #67, #69, #70; tag `release-17` on db0c0d4, publish run 39067171750, 17 Oct). Release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
+Live: release 20, black and champagne, light only (PR #77; tag `release-20` on 08e4110, 18 Oct, live map check passed; tester note `Review/archive/release-20-what-to-test.md`). Release 19, Explore leaves the quiz behind (PR #72; tag `release-19` on 7e4938f, 18 Oct; tester note `Review/archive/release-19-what-to-test.md`). Release 18, the polish pack (PR #73; tag `release-18` on f1fb654, 18 Oct; tester note `Review/release-18-what-to-test.md`). Release 17, the quiz highlight fix with 3D relief, quiz spacing and the address-bar race (PRs #67, #69, #70; tag `release-17` on db0c0d4, publish run 39067171750, 17 Oct). Release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
 publish run 39047992444; live map check run 39048373912 failed twice on 0 name tiles because it stopped waiting before the names were
 asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct) at https://atlaslope.com/. Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
 fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
@@ -113,12 +113,17 @@ session on his Mac also sees his thread messages and started a second publish ru
   Handoff `docs/handoffs/2026-10-18-explore-leaves-quiz.md`, tester note `Review/archive/release-19-what-to-test.md`.
 - Black and champagne, light only (owner 18 Oct 07:49Z to 10:49Z): wine red and dark mode dropped, black band with champagne foil,
   small corners, map selection black with a champagne edge. Live as release 20 (owner "publish release 20", 10:58Z; live 11:15Z). Handoff `docs/handoffs/2026-10-18-black-and-champagne.md`,
-  tester note `Review/release-20-what-to-test.md`. Next: a wider plan for a persistent top bar and a website around the atlas.
+  tester note `Review/archive/release-20-what-to-test.md`. Next: a wider plan for a persistent top bar and a website around the atlas.
 - Website plan and home page mock (18 Oct 11:04Z to 11:50Z): plan `Review/website-plan.md` (top bar Atlas, Study, Guides, About; real
   addresses per guide; slices 2 to 5). Words: "Quiz" becomes "Study" everywhere (owner 11:11Z, rides slice 2); each place page is its
   guide, with a Terroir section. Google: "decide later", site stays link-only. Home mock `Review/mock-home-v1/`: Salon book, the
   satellite atlas as hero, source logos, soft buttons; review `Review/home-mock-review.md`, benchmark `Review/home-benchmark.md`,
   design check `Review/home-mock-design-check.md`. Mock only. Handoff `docs/handoffs/2026-10-18-website-plan.md`. Next: slice 2 on his go.
+- Website slice 2 (owner go 11:55Z, 18 Oct): home page at the root (plain HTML from the approved mock, no map script), the atlas at
+  `atlas/` under the site bar (logo home, Atlas, Study, search; the same bar on place and region pages), old `#` links forward, Quiz is
+  Study in labels and in the address (`#study`, `#quiz` still opens it), Save or load progress on the Study screen, favicon, icons and
+  share card in black and champagne. Owner cards: source names until MAPA and IGN agree; Guides and About join the bar with their pages.
+  Handoff `docs/handoffs/2026-10-18-website-slice-2.md`, tester note `Review/release-21-what-to-test.md`. Ships as release 21 on his word.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

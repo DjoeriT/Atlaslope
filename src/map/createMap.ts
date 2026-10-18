@@ -5,6 +5,7 @@ import dopsUrl from '../../data/dops.geojson?url';
 import addedUrl from '../../data/added-boundaries.geojson?url';
 import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
+import { ROOT } from '../site';
 import overrides from '../../data/dop-overrides.json';
 import places from '../../data/places.json';
 import type { Overrides } from '../dops';
@@ -63,7 +64,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const hasImagery = tiles && !!esriKey;
   // If IGN keeps failing, Esri stops skipping Spain and its tiles reload with a new URL.
   if (hasImagery) registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) });
-  if (tiles) registerGlyphs(import.meta.env.BASE_URL);
+  if (tiles) registerGlyphs(ROOT);
   const map = new maplibregl.Map({
     container,
     style: buildStyle({ esriKey, tiles, menu }),

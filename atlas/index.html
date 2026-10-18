@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Atlas · AtlaSlope</title>
+    <meta name="description" content="The wine study atlas for WSET and Wine Scholar students." />
+    <!-- Link previews (WhatsApp, iMessage, LinkedIn, X, Slack). Crawlers don't run the app, so every link shows this one card.
+         Absolute URLs: preview fetchers ignore relative ones. The image is built by Tools/share/make_share_image.py. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AtlaSlope" />
+    <meta property="og:title" content="AtlaSlope" />
+    <meta property="og:description" content="The wine study atlas for WSET and Wine Scholar students." />
+    <meta property="og:url" content="https://atlaslope.com/atlas/" />
+    <meta property="og:image" content="https://atlaslope.com/share.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AtlaSlope: Know the land behind the glass. The logo beside Spain's wine regions on a satellite map." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#141414" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      /* Newsreader as one variable font with its optical-size axis: display cuts for big titles, text cuts for reading (polish pack). */
+      @font-face { font-family: Newsreader; src: url('/fonts/newsreader-latin-opsz-normal.woff2') format('woff2'); font-weight: 200 800; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>AtlaSlope needs JavaScript to draw the map.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

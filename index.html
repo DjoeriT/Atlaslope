@@ -4,37 +4,119 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>AtlaSlope · The Wine Study Atlas</title>
-    <meta name="description" content="The wine study atlas for WSET and Wine Scholar students." />
-    <!-- Link previews (WhatsApp, iMessage, LinkedIn, X, Slack). Crawlers don't run the app, so every link shows this one card.
-         Absolute URLs: preview fetchers ignore relative ones. The image is built by Tools/share/make_share_image.py. -->
+    <title>AtlaSlope · Know the land behind the glass</title>
+    <meta name="description" content="The wine study atlas for WSET and Wine Scholar students: detailed maps, sourced guides and study rounds. Free, in your browser." />
+    <!-- Links from before the website (atlaslope.com/#place=toro, #quiz) open the atlas at the same place, before anything draws. -->
+    <script>
+      (function () { var h = location.hash; if (/^#(place|region|quiz|study|view)\b/.test(h)) location.replace('atlas/' + location.search + h); })();
+    </script>
+    <!-- Link previews (WhatsApp, iMessage, LinkedIn, X, Slack). Absolute URLs: preview fetchers ignore relative ones.
+         The image is built by Tools/share/make_share_image.py. -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AtlaSlope" />
-    <meta property="og:title" content="AtlaSlope" />
-    <meta property="og:description" content="The wine study atlas for WSET and Wine Scholar students." />
+    <meta property="og:title" content="AtlaSlope · Know the land behind the glass" />
+    <meta property="og:description" content="The wine study atlas for WSET and Wine Scholar students. Free, in your browser, no account." />
     <meta property="og:url" content="https://atlaslope.com/" />
-    <meta property="og:image" content="https://atlaslope.com/share.png" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image" content="https://atlaslope.com/share.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="The AtlaSlope logo beside a map of Spain's wine regions." />
+    <meta property="og:image:alt" content="AtlaSlope: Know the land behind the glass. The logo beside Spain's wine regions on a satellite map." />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./favicon-32.png" sizes="32x32" type="image/png" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="preload" href="./fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#141414" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
     <style>
-      /* Newsreader as one variable font with its optical-size axis: display cuts for big titles, text cuts for reading (polish pack). */
-      @font-face { font-family: Newsreader; src: url('./fonts/newsreader-latin-opsz-normal.woff2') format('woff2'); font-weight: 200 800; font-display: swap; }
-      @font-face { font-family: 'IBM Plex Sans'; src: url('./fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
-      @font-face { font-family: 'IBM Plex Sans'; src: url('./fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-display: swap; }
-      @font-face { font-family: 'IBM Plex Sans'; src: url('./fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+      @font-face { font-family: Newsreader; src: url('/fonts/newsreader-latin-opsz-normal.woff2') format('woff2'); font-weight: 200 800; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+      @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
     </style>
+    <script type="module" src="/src/home/main.ts"></script>
   </head>
+  <!-- The home page (website slice 2; approved mock Review/mock-home-v1/, Salon book with the atlas as hero). Plain HTML: no map script.
+       Owner cards 18 Oct 2026: source names, not logos, until MAPA and IGN agree; Guides and About join the bar when their pages exist. -->
   <body>
-    <div id="root"></div>
-    <noscript>AtlaSlope needs JavaScript to draw the map.</noscript>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip" href="#main">Skip to the content</a>
+    <header class="sitebar">
+      <div class="in">
+        <a class="brand" href="./" aria-label="AtlaSlope home">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><defs><clipPath id="mt"><rect width="64" height="64" rx="14" /></clipPath><clipPath id="mh"><path d="M-2 52 C 14 50 30 40 44 26 C 50 20 56 17 66 16 L66 66 L-2 66 Z" /></clipPath></defs><g clip-path="url(#mt)"><rect width="64" height="64" fill="#E9D8B4" /><g clip-path="url(#mh)"><rect width="64" height="64" fill="#141414" /><g fill="none" stroke="#E9D8B4" stroke-width="3.6" stroke-linecap="round"><path d="M8 66 L20 49" /><path d="M22 66 L31 40.5" /><path d="M36 66 L41 30.5" /><path d="M50 66 L51 22.5" /><path d="M64 66 L61 17" /></g></g></g></svg>
+          <b>AtlaSlope</b>
+        </a>
+        <nav aria-label="Site"><a href="atlas/">Atlas</a><a href="atlas/#study">Study</a></nav>
+        <a class="search" href="atlas/#search" aria-label="Search places and regions"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2" /><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg><span>Search<span class="long"> places and regions</span></span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="txt">
+          <h1>Know the land behind the glass.</h1>
+          <p class="sub">The wine study atlas for WSET and Wine Scholar students. Detailed maps, guides that fly you to every place they name, and study rounds that make it stick.</p>
+          <div class="ctas"><a class="btn a" href="atlas/">Open the atlas</a><a class="btn link" href="atlas/#study">Start studying</a></div>
+          <dl class="nums">
+            <div><dt data-count="places">106</dt><dd>places mapped</dd></div>
+            <div><dt data-count="regions">10</dt><dd>study regions</dd></div>
+            <div><dt>€0</dt><dd>no account needed</dd></div>
+          </dl>
+        </div>
+        <figure class="map">
+          <img src="/home/hero.webp" alt="The atlas: northern Spain on satellite imagery, wine regions outlined and coloured by climate, Rioja selected" width="1600" height="880" fetchpriority="high" />
+          <div class="card fact" aria-hidden="true"><p class="k">Rioja · DOCa</p><p class="v">Two climates that rarely meet share one sheltered valley.</p><p class="s">63,593 ha · 144 municipalities<span>Pliego de condiciones, p. 20</span></p></div>
+          <div class="card quiz" aria-hidden="true"><p class="k">Study · 3 of 10</p><p class="q">Which DO is outlined?</p><div class="opts"><span>Navarra</span><span class="ok">Rioja</span><span>Campo de Borja</span></div></div>
+          <figcaption><span><b>Rioja and its neighbours</b>Coloured by climate, drawn from each official boundary</span><span>Imagery: Esri, Maxar · Spain: PNOA © IGN</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="sources">
+        <div class="wrap">
+          <p>Built on official sources</p>
+          <ul><li>EU single documents</li><li>Pliegos de condiciones</li><li>MAPA</li><li>IGN España</li></ul>
+        </div>
+      </section>
+
+      <section class="screens">
+        <div class="wrap">
+          <p class="eyebrow">What you get</p>
+          <h2>One map, every place, and the reason it tastes the way it does.</h2>
+          <div class="trio">
+            <figure><img class="shot" src="/home/atlas.webp" alt="Northern Spain in the atlas, every region coloured by climate" width="1100" height="719" loading="lazy" />
+              <figcaption><h3>The atlas</h3><p>106 places in 10 study regions, each on satellite imagery and coloured by climate.</p></figcaption></figure>
+            <figure><img class="shot" src="/home/guide.webp" alt="Rioja's card in the atlas: climate, grapes, altitude and its official source" width="980" height="832" loading="lazy" />
+              <figcaption><h3>The guides</h3><p>Every fact links to the official document it comes from, and every place it names is one tap away on the map.</p></figcaption></figure>
+            <figure><img class="shot" src="/home/study.webp" alt="The Study screen: new places to learn and a review round" width="1100" height="837" loading="lazy" />
+              <figcaption><h3>Study</h3><p>Short rounds on the map. What you miss comes back sooner, what you know waits.</p></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide">
+        <div class="wrap">
+          <div>
+            <img class="ph" src="/photos/rioja-alta-1.webp" srcset="/photos/480/rioja-alta-1.webp 480w, /photos/800/rioja-alta-1.webp 800w, /photos/rioja-alta-1.webp 1200w" sizes="(max-width: 900px) 100vw, 600px" alt="A stone guardaviñas hut among the vines near Rodezno, Rioja" loading="lazy" />
+            <p class="credit">Guardaviñas near Rodezno. Photo: <a href="https://commons.wikimedia.org/wiki/File:Guardavi%C3%B1as_en_el_t%C3%A9rmino_de_la_Deesilla_(Rodezno).jpg">Nicolás Pérez Gimilio</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></p>
+          </div>
+          <div>
+            <p class="eyebrow">From the Rioja guide</p>
+            <h2>Why Rioja tastes the way it does</h2>
+            <blockquote>Two climates that rarely meet share one sheltered valley. That is where Rioja's wines get their body, their colour and their acidity.</blockquote>
+            <p class="src">Pliego de condiciones, DOCa Rioja, p. 15 and 19</p>
+            <div class="meta"><a class="btn a" href="atlas/#place=rioja&amp;page">Read the guide</a><span>4-minute read · 4 stops on the map</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div><p class="h">AtlaSlope</p><small>The wine study atlas for WSET and Wine Scholar students. Free, in your browser, no account.</small></div>
+        <div><p class="h">Atlas</p><a href="atlas/">Spain</a><a href="atlas/#search">Search</a></div>
+        <div><p class="h">Learn</p><a href="atlas/#place=rioja&amp;page">The Rioja guide</a><a href="atlas/#study">Study</a></div>
+      </div>
+    </footer>
   </body>
 </html>

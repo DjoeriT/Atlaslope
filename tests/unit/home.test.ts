@@ -1,0 +1,22 @@
+import { readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
+import { loadTree } from '../../src/tree';
+
+// The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
+const html = readFileSync('index.html', 'utf8');
+const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
+const spain = tree.countries[0];
+const regions = tree.regionsOf(spain.id);
+const places = regions.flatMap((r) => tree.placesInRegion(r.id));
+const count = (name: string) => Number(new RegExp(`data-count="${name}">(\\d+)<`).exec(html)?.[1]);
+
+describe('the home page', () => {
+  it('counts the places and study regions the atlas has', () => {
+    expect(count('places')).toBe(places.length);
+    expect(count('regions')).toBe(regions.length);
+    expect(html).toContain(`${places.length} places in ${regions.length} study regions`);
+  });
+  it('sends links from before the website to the atlas', () => {
+    expect(html).toMatch(/location\.replace\('atlas\/'/);
+  });
+});

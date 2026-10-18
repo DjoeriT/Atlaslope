@@ -4,15 +4,17 @@ The wine study atlas for WSET and Wine Scholar students, and for passionate wine
 Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (atlaslope.com from release 3). Free, no accounts, progress stored in the browser.
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
-## Start here (state on 17 Oct 2026)
-- Live: the latest `release-*` tag on https://atlaslope.com (release 19 on 18 Oct 2026). Planned numbers and what is in flight:
+## Start here (state on 18 Oct 2026)
+- Live: the latest `release-*` tag on https://atlaslope.com (release 20 on 18 Oct 2026). Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
 - Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
 - Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
 - Keep this section current in the slice PR that changes it.
 
 ## Layout
-    src/app/             shell: App, top bar, first run
+    index.html           the home page (plain HTML, no map); src/home/ holds its styles
+    atlas/index.html     the atlas (the React app) at atlas/; it reaches public/ files through src/site.ts
+    src/app/             shell: App, the site bar (TopBar.tsx), first run
     src/map/             MapLibre map: imagery, boundaries, climate colours, hover, focus, map menu
     src/cards/           floating cards on the map (place, region, Spain), search box
     src/pages/           place page and region page (photo mosaic, charts)
@@ -34,7 +36,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 
 ## Commands
 - Install: `npm ci` (Node 22). Playwright browsers once: `npx playwright install chromium`.
-- Dev server: `npm run dev` (http://localhost:5173).
+- Dev server: `npm run dev` (home http://localhost:5173/, atlas http://localhost:5173/atlas/).
 - Unit tests: `npm test` (`npm test -- tests/unit/dops.test.ts` for one file).
 - Build: `npm run build` → `dist/`.
 - UI tests: `npm run test:ui` (builds first, serves `dist/`, runs Playwright).

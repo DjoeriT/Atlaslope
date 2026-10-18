@@ -21,7 +21,7 @@ describe('photo sizes', () => {
   });
   it('gives each photo a srcset from the small copies up to the full file', () => {
     const [p] = photosOf('cebreros');
-    expect(p.srcSet).toBe('photos/160/cebreros-1.webp 160w, photos/480/cebreros-1.webp 480w, photos/800/cebreros-1.webp 800w, photos/cebreros-1.webp 1200w');
+    expect(p.srcSet).toBe('../photos/160/cebreros-1.webp 160w, ../photos/480/cebreros-1.webp 480w, ../photos/800/cebreros-1.webp 800w, ../photos/cebreros-1.webp 1200w');
     expect(p.blur).toMatch(/^UklGR/);
   });
 });

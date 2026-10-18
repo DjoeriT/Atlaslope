@@ -1,9 +1,8 @@
 // All interface text lives here (decision #5).
 export const strings = {
   appName: 'AtlaSlope',
-  brandContext: 'Spain',
   // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
-  pageTitleHome: 'AtlaSlope · The Wine Study Atlas',
+  pageTitleHome: 'Atlas · AtlaSlope',
   pageTitle: (name: string) => `${name} · AtlaSlope`,
   mapMountLabel: 'Map of Spain. Click a place to select it.',
   map: {
@@ -35,9 +34,10 @@ export const strings = {
   topBar: {
     searchPlaceholder: 'Search places and regions',
     searchLabel: 'Search places and regions',
-    modeNav: 'Mode',
-    explore: 'Explore',
-    quiz: 'Quiz',
+    modeNav: 'Site',
+    explore: 'Atlas',
+    quiz: 'Study',
+    home: 'AtlaSlope home',
     progress: 'Progress',
     comingSoon: 'Coming soon',
     saveLoad: 'Save or load progress',
@@ -74,7 +74,7 @@ export const strings = {
     showOnMap: (name: string) => `Show ${name} on the map`,
     backToMap: 'Back to map',
     alsoHere: 'Also here',
-    alsoHereNote: 'On the map, not in the quiz.',
+    alsoHereNote: 'On the map, not in the study rounds.',
     grid: 'Places to learn',
   },
   facts: {
@@ -207,11 +207,11 @@ export const strings = {
   },
   quiz: {
     heading: 'Study or review',
-    cardLabel: 'Quiz',
-    kicker: (day: string) => `Quiz · ${day}`,
-    backToQuiz: 'Back to the quiz',
-    backToQuizLabel: 'Back to the quiz, where you left off',
-    storageDamaged: "The progress stored in this browser could not be read, so the quiz started afresh. A copy was kept; if you saved a file, load it from the AtlaSlope menu.",
+    cardLabel: 'Study',
+    kicker: (day: string) => `Study · ${day}`,
+    backToQuiz: 'Back to Study',
+    backToQuizLabel: 'Back to Study, where you left off',
+    storageDamaged: "The progress stored in this browser could not be read, so Study started afresh. A copy was kept; if you saved a file, load it with Save or load progress on the Study screen.",
     storageBlocked: "Progress can't be kept in this browser, so it will be lost when you close the page. Save a copy to a file to keep it.",
     doors: {
       study: 'Study',
@@ -240,7 +240,7 @@ export const strings = {
     },
     focus: {
       heading: 'Focus',
-      crumbQuiz: 'Quiz',
+      crumbQuiz: 'Study',
       crumbLabel: 'Where this sits',
       close: 'Close without saving',
       lede: "New places come from your focus first. When they're all in, the course order carries on.",
@@ -261,7 +261,7 @@ export const strings = {
     practiseScreen: {
       heading: 'Practise any mix',
       crumbReview: 'Review',
-      close: 'Close, back to the quiz',
+      close: 'Close, back to Study',
       quick: 'Quick picks',
       missed: (n: number) => `Missed today (${n})`,
       allOfSpain: 'All of Spain',
@@ -277,7 +277,7 @@ export const strings = {
     file: {
       kicker: 'Your progress',
       heading: 'Save or load',
-      close: 'Close, back to the quiz',
+      close: 'Close, back to Study',
       lede: 'Progress lives in this browser only. A file is your backup, and how you move it to another device.',
       inBrowser: 'In this browser',
       inBrowserValue: (answers: number, since: string, known: number) => (answers ? `${answers} ${answers === 1 ? 'answer' : 'answers'} since ${since} · ${known} ${known === 1 ? 'place' : 'places'} known` : 'No answers yet'),

@@ -40,7 +40,7 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
 
 /* ---- Desktop and iPad: the card is as tall as what it holds, up to the screen, so the main button sits under the content. */
 @media not ((max-width:51.25em) and (orientation:portrait)){
-  .card:not(.flycap){bottom:auto;max-height:calc(100% - 6.2rem)}
+  .card:not(.flycap){bottom:auto;max-height:calc(100% - 2.6rem)}
   .card .body{flex:1 1 auto}
   .first .foot .btn{width:100%;justify-content:center}
 }
@@ -65,17 +65,8 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
   .sheet.phone .card .close{top:.9rem}
   .bottomright{bottom:calc(var(--sheet-h,52vh) + .75rem);transition:bottom .3s cubic-bezier(.2,.8,.2,1)}
   .imagery-note{bottom:calc(var(--sheet-h,52vh) + .75rem)!important}
-  /* one row on top: the logo mark, search, and the two tabs */
-  .topleft{max-width:calc(100% - 11.5rem)}
-  .topright{top:1rem}
-  .brand{padding:.55rem .55rem}
-  .brand b{display:none}
-  .seg a,.seg button{padding:.45rem .7rem}
-  .search{width:auto;flex:1;min-width:0}
-  .topleft .search{flex:1}
   /* pinch zooms on a phone; the zoom buttons only cover the map */
   .zoomset > .iconbtn:nth-child(-n+2){display:none}
-  .legend{top:4.6rem}
 }
 @media (prefers-reduced-motion:reduce){.sheet.phone,.bottomright{transition:none}}
 

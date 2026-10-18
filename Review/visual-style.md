@@ -50,7 +50,11 @@ an addition and the owner decides.
 ## Website pages (home, owner 18 Oct 2026)
 - Reference: `Review/mock-home-v1/`. The home page shows the product, not a stock photo: the satellite atlas is the hero, with real cards on it.
 - Big Newsreader headline (light weight), one main button in black and champagne, the second action as a text link.
-- Proof is real numbers from the app, not claims. Source organisations appear as their logos in one grey line, only with their permission at launch.
+- Proof is real numbers from the app, not claims. Source organisations appear as their names set in italic Newsreader until each one agrees to its logo
+  (owner card, 18 Oct 2026); then their logos in one grey line.
+- The site bar (slice 2): the black band, 52 px plus a 1 px champagne line, on every page. Logo (goes home), then Atlas and Study on the right in muted
+  champagne, the current one full champagne, semibold and underlined, then search. On the atlas, search is the field; on the home page a link to it.
+  Phone: the logo's mark, search, Atlas, Study in one row. Guides and About join when their pages exist.
 
 ## How the check is run
 1. Screenshots: desktop 1440x900 and iPad 834x1194, on the atlas and on satellite, plus large text (root font 125%).

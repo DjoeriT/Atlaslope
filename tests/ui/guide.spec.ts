@@ -82,7 +82,7 @@ test('Test me on Rioja starts a review round on Rioja and its zones', async ({ p
   await expect(box).toContainText('A short round on Rioja and its zones: where they sit and what they are known for.');
   await box.getByRole('link', { name: 'Test me' }).click();
   await expect(page.locator('.q-num')).toContainText('Review');
-  await expect(page).toHaveURL(/#quiz($|&view)/);
+  await expect(page).toHaveURL(/#study($|&view)/);
   await expect(page.locator('h1.intro-h')).toHaveText('Rioja');
 });
 
