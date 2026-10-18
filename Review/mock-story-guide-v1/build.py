@@ -210,7 +210,7 @@ steps.append(('end', 0, f'''<div class="end">
 CHAPTERS = [c['title'] for c in guide['chapters']]
 
 step_html = '\n'.join(
-    f'<section class="step{" step-intro" if vid == "intro" else ""}{" step-end" if vid == "end" else ""}" data-view="{vid}" data-ch="{n}">{h}</section>'
+    f'<section class="step{" step-intro" if vid == "intro" else ""}{" step-end" if vid == "end" else ""}" data-view="{vid}" data-ch="{n}"><div class="step-in">{h}</div></section>'
     for vid, n, h in steps)
 
 # ---------- assets ----------

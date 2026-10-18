@@ -121,11 +121,21 @@
   // which step is active: the one crossing the middle of the reading area
   const steps = [...document.querySelectorAll('.step')];
   const whereN = document.querySelector('.where-n');
+  // Each map move gets time to land before the next starts; while you scroll fast it goes straight to the latest step.
+  const DWELL = 1600;
+  let lastGo = 0, wanted = null, timer = 0;
+  function want(id) {
+    wanted = id;
+    clearTimeout(timer);
+    const wait = reduce.matches ? 0 : Math.max(0, lastGo + DWELL - performance.now());
+    const run = () => { if (wanted !== current) { lastGo = performance.now(); go(wanted); } };
+    if (wait) timer = setTimeout(run, wait); else run();
+  }
   function setActive(step) {
     steps.forEach((s) => { s.classList.toggle('is-on', s === step); if (s === step) s.setAttribute('aria-current', 'step'); else s.removeAttribute('aria-current'); });
     const n = +step.dataset.ch;
     whereN.textContent = n ? `Chapter ${n} of ${SG.chapters.length}` : '';
-    if (step.dataset.view !== current) go(step.dataset.view);
+    want(step.dataset.view);
   }
   function pick() {
     const top = narrow.matches ? document.querySelector('.mapwrap').getBoundingClientRect().bottom : document.querySelector('.top').getBoundingClientRect().bottom;

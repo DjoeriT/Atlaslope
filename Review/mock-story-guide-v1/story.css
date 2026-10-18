@@ -42,9 +42,11 @@ a{color:inherit}
 .step-intro{min-height:auto;padding-top:1.5rem}
 .step.solo-wrap{border-top:0}
 .step-end{min-height:auto;padding-bottom:1rem}
-.step{position:relative}
-.step::before{content:"";position:absolute;left:-3rem;top:2rem;bottom:3rem;width:3px;border-radius:0 3px 3px 0;background:var(--accent);opacity:0;transition:opacity .3s}
-.step.is-on:not(.step-intro):not(.step-end)::before{opacity:1}
+/* Every step gets at least about two thirds of a screen of scrolling, so a short one still holds its map view while you read. */
+.step:not(.step-intro):not(.step-end){min-height:calc((100svh - var(--top)) * .68)}
+.step-in{position:relative}
+.step-in::before{content:"";position:absolute;left:-3rem;top:0;bottom:0;width:3px;border-radius:0 3px 3px 0;background:var(--accent);opacity:0;transition:opacity .3s}
+.step.is-on:not(.step-intro):not(.step-end) .step-in::before{opacity:1}
 .step:has(.solo){border-top:0;padding-top:0}
 
 /* type */
@@ -116,8 +118,8 @@ p{margin:0 0 1rem;max-width:36rem;text-wrap:pretty}
   .mapwrap{height:42vh;height:42svh;z-index:10;border-bottom:1px solid var(--line)}
   .text{padding:0 1.5rem 2rem;border-right:0;max-width:40rem;margin:0 auto}
   .cover{margin:0 -1.5rem 1.5rem}
-  .step{min-height:48vh}
-  .step::before{left:-1.5rem}
+  .step-in::before{left:-1.5rem}
+  .step:not(.step-intro):not(.step-end){min-height:calc((100svh - var(--top) - 42svh) * .8)}
   h1{font-size:2.3rem}
   .where-t{display:none}
   .where{justify-content:flex-end}
