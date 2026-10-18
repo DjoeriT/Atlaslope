@@ -79,7 +79,7 @@ export function SpainCard({ tree, go, due, onReview }: Props) {
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
-      cover={<div className="cover-short"><CoverPhoto name={country.name} color="#8C2340" photos={covers} /></div>}
+      cover={<div className="cover-short"><CoverPhoto name={country.name} color="#141414" photos={covers} /></div>}
     >
       <p className="lede">{t.spainLedeRich(all.length, regions.length)} <span className="hoverhint">{t.hoverRegion}</span></p>
       {dueAll > 0 && onReview && <button type="button" className="btn duebar" onClick={onReview}>{t.reviewDue(dueAll)}</button>}
@@ -110,7 +110,7 @@ export function RegionCard({ tree, go, region, due }: Props & { region: Region }
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name} close={{ to: tree.breadcrumb(region.id, 'region')[0] }}
-      cover={<div className="cover-short"><CoverPhoto name={region.name} color="#8C2340" photos={cover} /></div>}
+      cover={<div className="cover-short"><CoverPhoto name={region.name} color="#141414" photos={cover} /></div>}
       foot={(
         <>
           <Link className="btn primary" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.openPage(region.name)}</Link>

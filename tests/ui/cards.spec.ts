@@ -108,23 +108,19 @@ test('keyboard reaches every card control', async ({ page }) => {
   await expect(card.locator('h1')).toBeFocused(); // the new card's title takes the keyboard
 });
 
-for (const scheme of ['light', 'dark'] as const) {
-  test(`cards fit at iPad width, ${scheme}`, async ({ page }) => {
-    await page.emulateMedia({ colorScheme: scheme });
-    await page.setViewportSize({ width: 1024, height: 768 });
-    await open(page, '#place=rioja');
-    const card = await page.locator('.card').boundingBox();
-    const search = await page.locator('.search').boundingBox();
-    expect(card && card.x >= 0 && card.x + card.width <= 1024).toBe(true);
-    expect(search && card && search.x + search.width <= 1024).toBe(true);
-    const note = page.locator('.imagery-note');
-    if (await note.isVisible()) {
-      const n = (await note.boundingBox())!;
-      expect(n.x).toBeGreaterThanOrEqual(card!.x + card!.width);
-    }
-    await expect(page.locator('html')).toHaveAttribute('data-theme', scheme === 'dark' ? 'dark' : 'paper');
-  });
-}
+test('cards fit at iPad width', async ({ page }) => {
+  await page.setViewportSize({ width: 1024, height: 768 });
+  await open(page, '#place=rioja');
+  const card = await page.locator('.card').boundingBox();
+  const search = await page.locator('.search').boundingBox();
+  expect(card && card.x >= 0 && card.x + card.width <= 1024).toBe(true);
+  expect(search && card && search.x + search.width <= 1024).toBe(true);
+  const note = page.locator('.imagery-note');
+  if (await note.isVisible()) {
+    const n = (await note.boundingBox())!;
+    expect(n.x).toBeGreaterThanOrEqual(card!.x + card!.width);
+  }
+});
 
 test('the keyboard follows the walk from Spain to a region to a place', async ({ page }) => {
   await open(page);

@@ -68,7 +68,7 @@ Nothing paid. Any new service is a question to the owner first (repo rule).
 |---|---|---|---|
 | 30 | Contracts and tests come before behaviour. That means unit tests for the quiz engine, the place tree and the data contracts, plus Playwright on the built site with fixtures and no network. | Repo rule. | [O] rule |
 | 31 | **New rule:** after each deploy, a GitHub workflow loads the live site in a real browser on the real network and fails if satellite or terrain is blank; the owner glances at map releases himself. No Mac needed. | Incident: release 2 showed a black or grey map on his screen while CI was green. | [O] 16 Oct 10:38Z |
-| 32 | Every mock and screen is checked at desktop and iPad width, with large text, in light and dark. | Repo rule. | [O] rule |
+| 32 | Every mock and screen is checked at desktop and iPad width, with large text, on the atlas and on satellite (one light theme since 18 Oct 2026). | Repo rule. | [O] rule |
 
 ## Still open (not blocking the brief)
 - A name for the app's home address: it stays `djoerit.github.io/Paraje` unless the owner wants a domain (a paid service, so his call later).

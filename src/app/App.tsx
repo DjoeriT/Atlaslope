@@ -20,7 +20,6 @@ import { loadTree } from '../tree';
 import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { TopBar } from './TopBar';
-import { useTheme } from './theme';
 import { withMotion } from './motion';
 import { Sheet } from './Sheet';
 
@@ -35,7 +34,6 @@ const writeStore = (key: string, value: string) => { try { localStorage.setItem(
 const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
 
 export function App() {
-  const [theme, toggleTheme] = useTheme();
   const tree = useMemo(() => loadTree(places, grapeNames()), []);
   const [sel, setSel] = useState<Selection>(() => validSelection(tree, parseSelection(location.hash)));
   const selRef = useRef(sel);
@@ -171,7 +169,7 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
+      {!pageOpen && <TopBar tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
       {keepQuiz.current && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}

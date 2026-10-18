@@ -1,12 +1,9 @@
 /* The full place page (release 9; approved mock Review/mock-travel-v1/2-place-listing.html). Tokens come from app.css; the only additions are
    the chart tints and the wine swatches that Review/visual-style.md "Colour" names. Selectors start with .pg so the page leaves the cards alone. */
 :root{
-  --tint1:#8C2340;--tint2:#D9677E;--tint3:#F2C4CD;--tint4:#F7E6EA;
+  --tint1:#141414;--tint2:#7D6540;--tint3:#C9B48A;--tint4:#EFE6D2;
+  /* The wine swatches show the wine itself; the one place wine red stays (Review/visual-style.md "Colour"). */
   --wine-red:#8C2340;--wine-white:#EBDD9E;--wine-rose:#F2A7A7;
-}
-:root[data-theme="dark"]{
-  --tint1:#C9A54E;--tint2:#8F7536;--tint3:#4A3F25;--tint4:#2A251B;
-  --wine-red:#9E3348;
 }
 
 .pg{position:fixed;inset:0;z-index:30;overflow:auto;background:var(--paper);color:var(--ink);scroll-behavior:auto}
@@ -15,12 +12,18 @@
 .pg h1:focus-visible,.pg h2:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 
 /* top bar */
-.pg-top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+/* The top bar is the black band with champagne type (owner, 18 Oct 2026). */
+.pg-top{position:sticky;top:0;z-index:20;background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
+.pg-top .brand,.pg-top .pg-ttl,.pg-top .btn{color:var(--foil)}
+.pg-top .btn{border-color:color-mix(in srgb,var(--foil) 45%,transparent)}
+.pg-top .btn:hover{background:color-mix(in srgb,var(--foil) 12%,transparent)}
 .pg-top .in{max-width:76rem;margin:0 auto;padding:.6rem 2rem;display:flex;align-items:center;gap:1rem}
 .pg-top .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:0}
 .pg-top .brand b{font-family:var(--serif);font-weight:600;font-size:1.3rem;letter-spacing:.01em}
 .pg-top .mark{width:1.7rem;height:1.7rem}
-.pg-top .search{flex:1;max-width:26rem;width:auto;margin:0 auto;border-radius:999px;border:1px solid var(--line2);background:var(--paper);box-shadow:0 1px 6px rgba(0,0,0,.06);min-height:2.9rem;padding:0 1rem}
+.pg-top .search{flex:1;max-width:26rem;width:auto;margin:0 auto;border-radius:.25rem;border:1px solid color-mix(in srgb,var(--foil) 35%,transparent);background:color-mix(in srgb,var(--foil) 8%,var(--band));color:var(--foil);min-height:2.9rem;padding:0 1rem}
+.pg-top .search input,.pg-top .search svg{color:var(--foil)}
+.pg-top .search input::placeholder{color:color-mix(in srgb,var(--foil) 70%,transparent)}
 .pg-top .btn svg{width:1.1rem;height:1.1rem;flex:none}
 .pg-top .results{left:0;right:0}
 
@@ -31,7 +34,7 @@
 .pg-sub{color:var(--ink2);margin:0}
 
 /* mosaic: 1 to 5 photos, every layout fills its frame */
-.pg-mosaic{display:grid;gap:.5rem;height:min(30rem,46vw);margin:1.4rem 0 0;border-radius:1rem;overflow:hidden}
+.pg-mosaic{display:grid;gap:.5rem;height:min(30rem,46vw);margin:1.4rem 0 0;border-radius:var(--rad-card);overflow:hidden}
 .pg-mosaic figure{margin:0;position:relative;overflow:hidden;background:var(--paper2);min-height:0}
 .pg-mosaic img{display:block;width:100%;height:100%;object-fit:cover}
 .pg-mosaic[data-n="1"]{grid-template-columns:1fr}
@@ -43,7 +46,7 @@
 .pg-mosaic[data-n="5"]{grid-template-columns:2fr 1fr 1fr}
 .pg-credits{font-size:.78rem;color:var(--ink3);margin:.6rem 0 0}
 .pg-credits a{text-decoration:underline;text-underline-offset:2px}
-.pg-namecover{height:min(16rem,32vw);min-height:9rem;margin:1.4rem 0 0;border-radius:1rem;overflow:hidden}
+.pg-namecover{height:min(16rem,32vw);min-height:9rem;margin:1.4rem 0 0;border-radius:var(--rad-card);overflow:hidden}
 .pg-namecover span{font-size:clamp(3rem,8vw,5.5rem)}
 
 /* jump bar */
@@ -63,7 +66,7 @@
 .pg p{max-width:46rem}
 
 .pg-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem}
-.pg-cards > div{border:1px solid var(--line);border-radius:1rem;padding:1.1rem;background:var(--paper)}
+.pg-cards > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper)}
 .pg-cards b{display:block;font:500 1.15rem var(--serif);margin-bottom:.3rem}
 .pg-cards p{margin:0;color:var(--ink2);font-size:.95rem}
 .pg-cards p::first-letter{text-transform:uppercase}
@@ -75,7 +78,7 @@
 .pg-styles span{color:var(--ink2)}
 
 .pg-grapes{display:flex;gap:.8rem;flex-wrap:wrap;list-style:none;margin:0 0 .4rem;padding:0}
-.pg-grapes li{border:1px solid var(--line);border-radius:1rem;padding:.7rem 1.1rem;font:500 1.15rem var(--serif)}
+.pg-grapes li{border:1px solid var(--line);border-radius:var(--rad-card);padding:.7rem 1.1rem;font:500 1.15rem var(--serif)}
 .pg-rows{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.7rem 1rem;margin:1.2rem 0 0}
 .pg-rows dt{color:var(--ink3)}
 .pg-rows dd{margin:0}
@@ -86,12 +89,12 @@
 
 .pg-land{display:grid;grid-template-columns:1fr 1fr;gap:2rem 2.5rem}
 .pg-land p{margin:0 0 .3rem;color:var(--ink2)}
-.pg-stack{display:block;width:100%;height:.8rem;border-radius:999px;overflow:hidden;margin:.7rem 0 .5rem}
+.pg-stack{display:block;width:100%;height:.8rem;border-radius:.25rem;overflow:hidden;margin:.7rem 0 .5rem}
 .pg-legend{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;list-style:none;margin:0 0 .3rem;padding:0;font-size:.85rem;color:var(--ink2)}
 .pg-legend li{display:inline-flex;align-items:center;gap:.4rem}
 .pg-legend i{width:.8rem;height:.8rem;border-radius:.2rem;display:inline-block}
 .pg-range{position:relative;height:3.6rem;margin:.4rem 0 .3rem}
-.pg-range svg{position:absolute;left:0;right:0;top:1.4rem;width:100%;height:.5rem;overflow:visible;border-radius:999px}
+.pg-range svg{position:absolute;left:0;right:0;top:1.4rem;width:100%;height:.5rem;overflow:visible;border-radius:.25rem}
 .pg-range .track{fill:var(--paper2)}
 .pg-range .fill{fill:var(--tint2)}
 .pg-range .tick{stroke:var(--accent);stroke-width:2}
@@ -104,8 +107,8 @@
 .pg-names li{font:500 1.2rem var(--serif)}
 
 .pg-zones{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.4rem}
-.pg-zones .zlink{display:block;text-decoration:none;border-radius:1rem}
-.pg-zones img,.pg-zones .zblank{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:1rem}
+.pg-zones .zlink{display:block;text-decoration:none;border-radius:var(--rad-card)}
+.pg-zones img,.pg-zones .zblank{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rad-card)}
 .pg-zones .zblank{opacity:.35}
 .pg-zones b{display:block;font:500 1.15rem var(--serif);margin-top:.6rem}
 .pg-zones .zlink:hover b{text-decoration:underline;text-underline-offset:3px}
@@ -117,7 +120,7 @@
 .pg-next .nextlink:hover b{text-decoration:underline;text-underline-offset:3px}
 
 /* at a glance */
-.pg aside .sticky{position:sticky;top:8rem;border:1px solid var(--line);border-radius:1.25rem;box-shadow:var(--shadow);background:var(--paper);padding:1.2rem 1.3rem 1.3rem}
+.pg aside .sticky{position:sticky;top:8rem;border:1px solid var(--line);border-radius:var(--rad-card);box-shadow:var(--shadow);background:var(--paper);padding:1.2rem 1.3rem 1.3rem}
 .pg aside h2{font:500 1.35rem var(--serif);margin:0}
 .pg aside dl{margin:1rem 0 1.2rem;font-size:.9rem}
 .pg aside dl div{display:flex;justify-content:space-between;gap:1rem;padding:.35rem 0}
@@ -150,7 +153,7 @@
 .srcbtn:hover{color:var(--accent)}
 
 /* Release 10: the terroir section (mock-guides-v1/1-place-guide.html), the fly-there pills and the Test me box */
-.pg .pg-kicker{margin:0 0 .5rem;color:var(--accent)}
+.pg .pg-kicker{margin:0 0 .5rem;color:var(--foil-ink)}
 .pg-sub a{color:var(--accent);text-underline-offset:2px}
 .pg-ch{margin-top:2.2rem;max-width:40rem}
 .pg-ch:has(.pg-zguide){max-width:none}
@@ -159,17 +162,17 @@
 .pg-ch h3:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .pg-ch p{margin:0 0 .8rem;color:var(--ink2);max-width:38rem}
 .pg-flies{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .4rem}
-.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:999px;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.92rem;line-height:1.2}
+.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:.25rem;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.92rem;line-height:1.2}
 .pg .fly .icon{width:1.2rem;height:1.2rem;color:var(--accent);flex:none}
 .pg .fly small{display:block;font-size:.7rem;color:var(--ink3);letter-spacing:.04em}
 .pg .fly:hover{border-color:var(--accent)}
 .pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
-.pg-zguide > div{border:1px solid var(--line);border-radius:1rem;padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
+.pg-zguide > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
 .pg-zguide b{font:500 1.15rem var(--serif);margin-bottom:.4rem}
 .pg-zguide p{font-size:.92rem;margin:0 0 .6rem}
 .pg-zguide p.cl{color:var(--ink3)}
 .pg-zguide .fly{margin-top:auto;align-self:flex-start}
-.pg-testme{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:1.25rem;background:var(--paper2)}
+.pg-testme{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:var(--rad-card);background:var(--paper2)}
 .pg-cols main > .pg-testme{margin:0 0 2rem}
 .pg-testme b{display:block;font:500 1.25rem var(--serif)}
 .pg-testme span{color:var(--ink2);font-size:.92rem}
@@ -181,7 +184,7 @@
 @media (max-width:47.5em){.pg-testme{flex-direction:column;align-items:flex-start}}
 
 /* Drop cap where a guide opens (polish pack): two lines deep (the ledes run two lines or more) in the accent colour; a floated letter where initial-letter is missing. */
-.pg-lede::first-letter{float:left;font-size:2.75em;line-height:.85;font-weight:500;margin:.08em .08em 0 0;color:var(--accent)}
+.pg-lede::first-letter{float:left;font-size:2.75em;line-height:.85;font-weight:500;margin:.08em .08em 0 0;color:var(--foil-ink)}
 @supports (initial-letter:2) or (-webkit-initial-letter:2){
   .pg-lede::first-letter{float:none;font-size:inherit;line-height:inherit;margin:0 .1em 0 0;-webkit-initial-letter:2;initial-letter:2}
 }
@@ -203,7 +206,7 @@
     .pg,.rpage{scroll-timeline:--page block;timeline-scope:--title}
     .pg h1,.rcover h1{view-timeline:--title block}
     .rcover{overflow:clip} /* hidden would make the cover the title's scroller, and its timeline would never move */
-    .pg-top::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);transform-origin:0 50%;
+    .pg-top::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--foil);transform-origin:0 50%;
       transform:scaleX(0);animation:pg-progress linear both;animation-timeline:--page}
     .pg-mosaic img,.rcover img{animation:pg-drift linear both;animation-timeline:--page;animation-range:0 40rem}
     .pg-mosaic img.ph-fade,.rcover img.ph-fade{animation:ph-in .5s ease-out,pg-drift linear both;animation-timeline:auto,--page;animation-range:normal,0 40rem}

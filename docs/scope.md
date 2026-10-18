@@ -33,7 +33,7 @@ One model for every country, with Spain as its first instance.
 - **Terroir layers**: 3D terrain, plus a Spain-wide climate layer you can switch on. Soil stays in the card and guide, because no open soil map is fine enough to teach from [R]. [O]
 
 ## Navigation is the place tree (owner, 16 Oct 2026, after the first-principles check of round 3)
-- Explore opens on the **Spain card**: the ten study regions in course order, each with its colour (the map's legend) and known count. A region opens the **region card** (its places with their state, "continue here"), a place opens the **place card**, then the **guide**. Every card carries a clickable breadcrumb (Spain › Castilla y León › Toro). No region dropdown; search finds regions, places, towns and grapes. The light/dark toggle sits under the Atlaslope wordmark. [O]
+- Explore opens on the **Spain card**: the ten study regions in course order, each with its colour (the map's legend) and known count. A region opens the **region card** (its places with their state, "continue here"), a place opens the **place card**, then the **guide**. Every card carries a clickable breadcrumb (Spain › Castilla y León › Toro). No region dropdown; search finds regions, places, towns and grapes. One light theme, no dark mode (owner, 18 Oct 2026). [O]
 - The mastery map marks places due today and shades a known parent by its zones. [O]
 - Round 3 review: /mnt/project-files/atlaslope/reviews/2026-10-16-first-principles-review-mocks-3.md.
 

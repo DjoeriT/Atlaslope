@@ -3,13 +3,10 @@ import { strings } from '../strings';
 import { SearchBox } from '../cards/SearchBox';
 import type { Tree } from '../tree';
 import type { Selection } from '../url';
-import type { Theme } from './theme';
 
 const t = strings.topBar;
 
 interface Props {
-  theme: Theme;
-  onToggleTheme: () => void;
   tree: Tree;
   onOpen: (to: Selection) => void;
   quizOpen: boolean;
@@ -18,7 +15,7 @@ interface Props {
   onProgressFile: () => void;
 }
 
-export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, onExplore, onProgressFile }: Props) {
+export function TopBar({ tree, onOpen, quizOpen, onQuiz, onExplore, onProgressFile }: Props) {
   const [open, setOpen] = useState(false);
   const brandRef = useRef<HTMLButtonElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -46,10 +43,6 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, o
         <SearchBox tree={tree} open={onOpen} />
       </div>
       <div id="brand-menu" ref={menuRef} className="glass menu tl" role="menu" hidden={!open}>
-        <button role="menuitem" id="theme" aria-pressed={theme === 'dark'} onClick={onToggleTheme}>
-          <span>{t.darkInterface}</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="8" /><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" /></svg>
-        </button>
         <button role="menuitem" onClick={() => { setOpen(false); onProgressFile(); }}>{t.saveLoad}</button>
       </div>
       <div className="topright">
@@ -63,7 +56,7 @@ export function TopBar({ theme, onToggleTheme, tree, onOpen, quizOpen, onQuiz, o
   );
 }
 
-/** The logo: vine rows running up a slope, cut from a tile in the theme's accent colour. Decorative; the button's text names it. */
+/** The logo: vine rows running up a slope, cut from a champagne tile. Decorative; the button's text names it. */
 export function BrandMark() {
   return (
     <svg className="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">

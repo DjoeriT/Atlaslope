@@ -1,19 +1,23 @@
 # Visual style: the yardstick for the visual design check
 
 Owner, 17 Oct 2026: the information screens should look "immaculate", like Airbnb crossed with a coffee-table book, and
-less "Atlassy". He picked the listing page, white and wine for light mode, and gold on black for dark mode. The reference mocks
+less "Atlassy". He picked the listing page. On 18 Oct 2026 he dropped dark mode and wine red: one light theme, black and champagne
+(palette rounds 1 to 5, https://claude.ai/artifact/3hiFjKAVqRKNoesnxW9R7Q, handoff `docs/handoffs/2026-10-18-black-and-champagne.md`). The reference mocks
 are `Review/mock-travel-v1/` (map card, place page, region page). Every new or changed screen is checked against this page
 (CLAUDE.md, "Visual design check"). If a screen needs something this page does not cover, the screen's lead thread proposes
 an addition and the owner decides.
 
 ## Colour
-- One accent per theme. Light: wine `#8C2340` on white `#FFFFFF`. Dark: gold `#C9A54E` on `#121212`, text on gold is `#141210`.
-  The dark accent matches the dark logo.
-- Ink: light `#1F1F1F` / `#484848` / `#6E6E6E`, lines `#EBEBEB` and `#DDDDDD`. Dark `#F3F1EC` / `#CFCBC3` / `#9A968F`, lines `#2A2A2A` and `#3A3A3A`.
-- Charts use tints of the accent only (light `#8C2340`, `#D9677E`, `#F2C4CD`, `#F7E6EA`; dark `#C9A54E`, `#8F7536`, `#4A3F25`, `#2A251B`).
-  No browns and no cream paper. Wine-colour swatches (red, white, rosé) are the one exception, because they show the wine itself.
-- The map keeps its own region colours; the chrome around it follows this page.
-- Text contrast is at least 4.5:1, including source lines and photo credits.
+- One theme, light. White paper `#FFFFFF`, warm second paper `#F7F5F0`. Black `#141414` is the band (page top bar, brand) and the
+  main buttons; champagne `#E9D8B4` is the foil on black (logo, band type, button text, the line under the band). Small labels and
+  the drop cap use dark champagne `#7D6540` (5.5:1 on white). Wine red is gone from the interface: the category over-uses it.
+- Ink `#1A1714` / `#46403A` / `#6F6860`, lines `#E8E3D9` and `#D8CFBF`.
+- Corners are small (`.3rem`, cards `.4rem`), no pills; shadows start with a hairline. Soft round chrome read as a template.
+- Charts use black and champagne tints only: `#141414`, `#7D6540`, `#C9B48A`, `#EFE6D2`. No pinks. Wine-colour swatches
+  (red, white, rosé) are the one exception, because they show the wine itself.
+- The map keeps its own region colours. The selected place is black with a champagne edge, so it stands off the atlas and the photo.
+- The system's dark setting is ignored; there is no theme switch.
+- Text contrast is at least 4.5:1, including source lines and photo credits (`tests/unit/contrast.test.ts`).
 
 ## Type
 - Newsreader for names, headings and the opening sentence. IBM Plex Sans for everything people read in bulk: body, facts, labels, buttons.
@@ -44,7 +48,7 @@ an addition and the owner decides.
   No two controls that mean nearly the same.
 
 ## How the check is run
-1. Screenshots: desktop 1440x900 and iPad 834x1194, light and dark, plus large text (root font 125%).
+1. Screenshots: desktop 1440x900 and iPad 834x1194, on the atlas and on satellite, plus large text (root font 125%).
 2. ReviewBot in design mode compares them with this page and with the reference mocks, and writes findings with fixes.
 3. LeadBot fixes the findings before the owner sees the screen. A fix that would change an owner decision goes to him as a card.
 4. Before a release, the built screens get the same screenshots, compared with the approved mock. A gap is fixed in the slice

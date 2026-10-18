@@ -1,25 +1,19 @@
 /* Ported from the approved mock (Review/mock-atlas-v3/assets/app.css); colours and type from Review/visual-style.md (release 8). Fonts are declared in index.html. */
 :root{
   --serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;
-  /* Release 8: tokens from Review/visual-style.md (light white and wine, dark gold on black). */
-  --paper:#FFFFFF;--paper2:#F4F4F2;
-  --glass:rgba(255,255,255,.92);--glass2:rgba(255,255,255,.76);--edge:#EBEBEB;
-  --ink:#1F1F1F;--ink2:#484848;--ink3:#6E6E6E;--line:#EBEBEB;--line2:#DDDDDD;--fill:#F4F4F2;
-  --accent:#8C2340;--accent-ink:#FFFFFF;--ok:#2F6B3E;--bad:#A3371F;--focus:#2F5F9E;
-  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 28px rgba(0,0,0,.14);
-  --shadow-lg:0 2px 6px rgba(0,0,0,.08),0 24px 60px rgba(0,0,0,.22);
-  --rad:.9rem;--rad-card:1.25rem;
-  --label:#1F1F1F;--label-halo:rgba(255,255,255,.9);
+  /* Light only, black and champagne (owner, 18 Oct 2026: dark mode dropped, wine red out). Review/visual-style.md "Colour". */
+  --paper:#FFFFFF;--paper2:#F7F5F0;
+  --glass:rgba(255,255,255,.94);--glass2:rgba(255,255,255,.8);--edge:#E8E3D9;
+  --ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;--line:#E8E3D9;--line2:#D8CFBF;--fill:#F7F5F0;
+  --band:#141414;--foil:#E9D8B4;--foil-ink:#7D6540;
+  --accent:#141414;--accent-ink:#E9D8B4;--ok:#2F6B3E;--bad:#A3371F;--focus:#2F5F9E;
+  --shadow:0 0 0 1px rgba(20,20,20,.06),0 8px 24px rgba(0,0,0,.1);
+  --shadow-lg:0 0 0 1px rgba(20,20,20,.06),0 18px 44px rgba(0,0,0,.16);
+  --rad:.3rem;--rad-card:.4rem;
+  --label:#1A1714;--label-halo:rgba(255,255,255,.9);
 }
-:root[data-theme="dark"]{
-  --paper:#121212;--paper2:#1E1E1E;
-  --glass:rgba(18,18,18,.9);--glass2:rgba(18,18,18,.72);--edge:#2A2A2A;
-  --ink:#F3F1EC;--ink2:#CFCBC3;--ink3:#9A968F;--line:#2A2A2A;--line2:#3A3A3A;--fill:#1E1E1E;
-  --accent:#C9A54E;--accent-ink:#141210;--ok:#7CC48A;--bad:#E8846A;--focus:#8AB4F8;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 28px rgba(0,0,0,.45);
-  --shadow-lg:0 2px 6px rgba(0,0,0,.3),0 24px 60px rgba(0,0,0,.6);
-  --label:#fff;--label-halo:rgba(0,0,0,.75);
-}
+/* One light theme: native controls stay light whatever the system says. */
+:root{color-scheme:light}
 *{box-sizing:border-box}[hidden]{display:none!important}
 html,body{margin:0;height:100%;overflow:hidden}
 body{font-family:var(--sans);font-size:1rem;line-height:1.45;color:var(--ink);background:#0b1016}
@@ -34,6 +28,11 @@ a{color:inherit}
 .brand b{font-family:var(--serif);font-weight:600;font-size:1.35rem;letter-spacing:.01em}
 .brand small{font-size:.75rem;color:var(--ink3)}
 .brand .mark{width:1.65rem;height:1.65rem;flex:none;align-self:center}
+/* The brand sits on the black band, in champagne: the same band as the page top bar (Review/visual-style.md "Colour"). */
+.brand.glass{background:var(--band);border-color:var(--band);color:var(--foil)}
+.brand.glass small{color:var(--foil);opacity:.75}
+/* The logo is always champagne with black rows, on white or on the band. */
+.mark{--accent:var(--foil);--accent-ink:var(--band)}
 .search{display:flex;align-items:center;gap:.5rem;padding:0 .9rem;min-height:2.75rem;width:19rem}
 .search svg{width:1.05rem;height:1.05rem;flex:none;color:var(--ink3)}
 .search input{border:0;background:transparent;font:inherit;font-size:.95rem;color:var(--ink);width:100%;outline:none}
@@ -43,25 +42,23 @@ a{color:inherit}
 .iconbtn[aria-pressed="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
 .iconbtn.text{font-weight:600;font-size:.85rem;letter-spacing:.04em}
 .seg{display:inline-flex;padding:.2rem}
-.seg a{font-size:.95rem;padding:.45rem 1.1rem;border-radius:.7rem;color:var(--ink);text-decoration:none;min-height:2.75rem;display:inline-flex;align-items:center}
+.seg a{font-size:.95rem;padding:.45rem 1.1rem;border-radius:var(--rad);color:var(--ink);text-decoration:none;min-height:2.75rem;display:inline-flex;align-items:center}
 .seg [aria-current="page"]{background:var(--accent);color:var(--accent-ink);font-weight:600}
 .iconbtn{background:transparent;border:0;width:2.75rem;height:2.75rem;display:inline-flex;align-items:center;justify-content:center;font:inherit;color:var(--ink);cursor:pointer;border-radius:var(--rad)}
 .iconbtn svg{width:1.25rem;height:1.25rem;color:var(--ink)}
 .bottomright .iconbtn{color:var(--ink)}
 .menu{position:absolute;right:1rem;top:4.4rem;z-index:6;padding:.6rem;min-width:15rem}
 .menu h4{margin:.3rem .6rem .2rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600}
-.menu label{display:flex;align-items:center;gap:.7rem;padding:.5rem .6rem;border-radius:.6rem;min-height:2.75rem;cursor:pointer;font-size:.95rem}
+.menu label{display:flex;align-items:center;gap:.7rem;padding:.5rem .6rem;border-radius:var(--rad);min-height:2.75rem;cursor:pointer;font-size:.95rem}
 .menu label:hover{background:var(--line)}
 .menu input{accent-color:var(--accent);width:1.1rem;height:1.1rem;margin:0}
 .menu small{color:var(--ink3);font-size:.8rem;margin-left:auto}
 .bottomright{position:absolute;right:1rem;bottom:1.6rem;display:flex;flex-direction:column;gap:.4rem;z-index:6} /* above the imagery note, so the open map menu is never under it */
-.bottomright .iconbtn{border-radius:.7rem}
+.bottomright .iconbtn{border-radius:var(--rad)}
 .bottomright .glass{display:flex;flex-direction:column;padding:.2rem}
 
 /* floating card: solid paper, the one floating panel (visual-style.md "Space and shape") */
 .card.glass{background:var(--paper);backdrop-filter:none;-webkit-backdrop-filter:none;border:0;border-radius:var(--rad-card);box-shadow:var(--shadow-lg)}
-/* dark: a hairline keeps the near-black card apart from the map (release 8 review) */
-:root[data-theme="dark"] .card.glass{border:1px solid var(--line2)}
 .card{position:absolute;left:1rem;top:4.6rem;bottom:1.6rem;width:25rem;display:flex;flex-direction:column;z-index:5;overflow:hidden}
 .card .body{padding:1.25rem 1.4rem;overflow:auto;flex:1;min-height:0}
 .card .foot{padding:.9rem 1.4rem;border-top:1px solid var(--line);box-shadow:0 -14px 14px -14px rgba(0,0,0,.3);position:relative;display:flex;gap:.6rem;flex-wrap:wrap;flex:none}
@@ -70,26 +67,25 @@ h1{font-family:var(--serif);font-weight:500;font-size:2.3rem;line-height:1.02;ma
 h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
 .facts{display:grid;grid-template-columns:7.5rem 1fr;gap:.55rem .9rem;margin:.9rem 0 0;font-size:.95rem}
 .facts dt{color:var(--ink3)}.facts dd{margin:0}
-.btn{appearance:none;font:inherit;font-size:.95rem;font-weight:500;border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:.75rem;padding:.6rem 1.1rem;min-height:2.75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
+.btn{appearance:none;font:inherit;font-size:.95rem;font-weight:500;border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:var(--rad);padding:.6rem 1.1rem;min-height:2.75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .btn:hover{border-color:var(--ink)}
 .btn.primary:hover{filter:brightness(1.08)}
 .btn.quiet{border-color:transparent;color:var(--ink2)}
 .seg a{padding:.45rem .9rem}
 .brand{border:0;cursor:pointer;font:inherit;color:var(--ink);text-align:left}
-.brand[aria-expanded="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
+.brand[aria-expanded="true"]{box-shadow:inset 0 0 0 2px var(--foil)}
 .menu.tl{left:1rem;right:auto;top:4.4rem;min-width:14rem;display:flex;flex-direction:column;z-index:8}
-.menu.tl [role="menuitem"]{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.55rem .7rem;border-radius:.6rem;min-height:2.75rem;text-decoration:none;font:inherit;font-size:.95rem;color:var(--ink);background:transparent;border:0;cursor:pointer;text-align:left}
+.menu.tl [role="menuitem"]{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.55rem .7rem;border-radius:var(--rad);min-height:2.75rem;text-decoration:none;font:inherit;font-size:.95rem;color:var(--ink);background:transparent;border:0;cursor:pointer;text-align:left}
 .menu.tl [role="menuitem"]:hover{background:var(--line)}
 .menu.tl svg{width:1.1rem;height:1.1rem}
-.menu.tl #theme[aria-pressed="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
 .first{width:30rem}
 .hints{margin:.3rem 0 0;padding-left:1.1rem;font-size:.92rem;color:var(--ink2)}
 .hints li{margin:.25rem 0}
 @media (max-width:68.75em){.first{width:24rem}}
 
 /* Quiz and Progress are shown but not usable yet (aria-disabled buttons in the mode bar) */
-.seg button{font:inherit;font-size:.95rem;padding:.45rem .9rem;border-radius:.7rem;color:var(--ink);background:transparent;border:0;min-height:2.75rem;display:inline-flex;align-items:center}
+.seg button{font:inherit;font-size:.95rem;padding:.45rem .9rem;border-radius:var(--rad);color:var(--ink);background:transparent;border:0;min-height:2.75rem;display:inline-flex;align-items:center}
 .seg button[aria-disabled="true"]{color:var(--ink3);cursor:not-allowed}
 
 /* Cards: Spain, region and place (approved mock 14 to 16) */
@@ -116,7 +112,7 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .facts dd li{min-height:1.6rem}
 .facts .named li{margin-bottom:.2rem}.facts .named strong{font-weight:600}
 .results{position:absolute;left:0;right:0;top:calc(100% + .4rem);z-index:8;padding:.3rem;margin:0;list-style:none}
-.results a,.results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:.6rem;min-height:2.75rem;text-decoration:none;font-size:.95rem;color:var(--ink)}
+.results a,.results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:var(--rad);min-height:2.75rem;text-decoration:none;font-size:.95rem;color:var(--ink)}
 .results p{margin:0;color:var(--ink3)}
 .results a:hover{background:var(--line)}
 .results small{color:var(--ink3);font-size:.8rem}
@@ -144,10 +140,10 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .measured,.written{display:block}
 .photos{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.9rem 0 0;padding:0;list-style:none}
 .photo{margin:0}
-.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:1rem;background:var(--line)}
+.photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rad-card);background:var(--line)}
 .photo figcaption{margin-top:.25rem}
 .report{margin:.6rem 0 0}
-.facts .more{font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:.6rem;padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
+.facts .more{font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:var(--rad);padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
 .facts .more:hover{border-color:var(--accent)}
 
 /* Place card as a teaser (release 9; approved mock Review/mock-travel-v1/1-map-card.html) */
@@ -181,11 +177,11 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .glance small{color:var(--ink3);font-size:.78rem}
 .card .scroll h2{font-size:1.15rem;margin:1.3rem 0 .6rem;padding-top:0;border-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
-.chips li{border:1px solid var(--line2);border-radius:999px;padding:.3rem .8rem;font-size:.85rem}
+.chips li{border:1px solid var(--line2);border-radius:.25rem;padding:.3rem .8rem;font-size:.85rem}
 .zrow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.15rem}
-.zrow a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.35rem;margin:0 -.35rem;border-radius:.8rem;min-height:3.6rem}
+.zrow a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.35rem;margin:0 -.35rem;border-radius:var(--rad);min-height:3.6rem}
 .zrow a:hover{background:var(--paper2)}
-.zrow img,.zrow i{width:3.4rem;height:3.4rem;border-radius:.6rem;object-fit:cover;flex:none}
+.zrow img,.zrow i{width:3.4rem;height:3.4rem;border-radius:var(--rad);object-fit:cover;flex:none}
 .zrow b{font:500 1.05rem var(--serif);display:block}
 .zrow small{color:var(--ink3);font-size:.8rem}
 .zrow .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
@@ -194,7 +190,7 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 
 /* The caption card after a guide's fly-there (release 10; mock-guides-v1/2-fly-there.html): short, at the bottom left of the map */
 .card.flycap{top:auto;bottom:1.6rem;width:24rem;max-height:calc(100vh - 6.2rem)}
-.flycap .kicker{color:var(--accent);margin:0 0 .3rem}
+.flycap .kicker{color:var(--foil-ink);margin:0 0 .3rem}
 .flycap h1{font:500 2rem/1.05 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
 .flycap .cap{margin:0;color:var(--ink2)}
 .flycap .btn.primary{margin-top:1rem;width:100%;justify-content:center}
@@ -205,14 +201,14 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 
 /* Spain and region cards: photo rows, due counts */
 .tiles{list-style:none;margin:.2rem 0 0;padding:0;display:flex;flex-direction:column;gap:.1rem}
-.tiles a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.4rem;margin:0 -.4rem;border-radius:.8rem;min-height:3.8rem}
+.tiles a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.4rem;margin:0 -.4rem;border-radius:var(--rad);min-height:3.8rem}
 .tiles li:hover a,.tiles a:focus-visible{background:var(--paper2)}
-.tiles img,.tiles i{width:3.6rem;height:3.6rem;border-radius:.65rem;object-fit:cover;flex:none}
+.tiles img,.tiles i{width:3.6rem;height:3.6rem;border-radius:var(--rad);object-fit:cover;flex:none}
 .tiles i{display:flex;align-items:center;justify-content:center;background:var(--paper2);color:var(--accent);font:500 1.4rem var(--serif);font-style:normal}
 .tiles .txt{display:flex;flex-direction:column;min-width:0}
 .tiles b{font:500 1.08rem var(--serif)}
 .tiles small{color:var(--ink3);font-size:.82rem;line-height:1.35}
-.tiles .due{margin-left:auto;font-size:.75rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:999px;padding:.15rem .55rem;white-space:nowrap}
+.tiles .due{margin-left:auto;font-size:.75rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:.25rem;padding:.15rem .55rem;white-space:nowrap}
 .tiles .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
 .tiles .due+.go{margin-left:.2rem}
 .tiles li.sub a{padding-left:1.6rem}

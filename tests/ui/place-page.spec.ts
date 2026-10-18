@@ -125,12 +125,9 @@ test('"Next in the course" leads to the next study region', async ({ page }) => 
   await expect(page).toHaveURL(/#region=/);
 });
 
-for (const scheme of ['light', 'dark'] as const) {
-  test(`the page has no sideways scroll at 834 wide and 125% text, ${scheme}`, async ({ page }) => {
-    await page.emulateMedia({ colorScheme: scheme });
-    await page.setViewportSize({ width: 834, height: 1194 });
-    await open(page, '#place=rioja&page');
-    await page.addStyleTag({ content: 'html{font-size:125%}' });
-    expect(await page.locator('.pg').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
-  });
-}
+test('the page has no sideways scroll at 834 wide and 125% text', async ({ page }) => {
+  await page.setViewportSize({ width: 834, height: 1194 });
+  await open(page, '#place=rioja&page');
+  await page.addStyleTag({ content: 'html{font-size:125%}' });
+  expect(await page.locator('.pg').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
+});

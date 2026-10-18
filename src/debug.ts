@@ -1,8 +1,8 @@
 // Debug-only query flags. __DEBUG_FLAGS__ is false in the production build, so everything below is removed from it
-// (Tools/check.sh greps dist/ to prove it). Flags: ?fixture=<name> (card 4 picks a test dataset), ?fresh=1 (forget first run and theme).
+// (Tools/check.sh greps dist/ to prove it). Flags: ?fixture=<name> (card 4 picks a test dataset), ?fresh=1 (forget first run).
 declare const __DEBUG_FLAGS__: boolean;
 
-export const STORAGE_KEYS = ['atlaslope-first-run', 'atlaslope-theme'];
+export const STORAGE_KEYS = ['atlaslope-first-run'];
 
 export interface DebugFlags {
   fixture: string | null;
