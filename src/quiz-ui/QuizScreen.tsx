@@ -24,9 +24,6 @@ interface Props {
   pick: MapPick | null;
   /** True while the learner is in Explore: the round stays in memory, out of sight, until the Quiz tab or "Back to the quiz". */
   hidden?: boolean;
-  /** Start today's round as soon as the screen opens (the Today card's button). */
-  autoStart?: boolean;
-  onAutoStarted?(): void;
   onView(view: QuizView): void;
   /** Leaves for a place's card; the quiz comes back with "Back to the quiz". */
   onOpenPlace(id: string): void;
@@ -42,7 +39,7 @@ type Mode =
 const go = (sub: QuizRoute['sub']) => { location.hash = quizToHash({ sub }); };
 
 /** The quiz card: the doors, focus, practise any mix, the progress file, a round and its end. */
-export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoStarted, onView, onOpenPlace }: Props) {
+export function QuizScreen({ route, tree, quiz, pick, hidden, onView, onOpenPlace }: Props) {
   const [mode, setMode] = useState<Mode>({ at: 'idle' });
   const [empty, setEmpty] = useState(false);
   const asked = useRef(new Set<string>()); // memories answered in earlier rounds of this sitting, for "Keep going"
@@ -86,16 +83,6 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
   useEffect(() => {
     if (testSet) startReview(testSet.split(','), 10);
   }, [testSet]);
-
-  // A round paused for Explore is picked up again rather than replaced by a new one.
-  const started = useRef(false);
-  useEffect(() => {
-    if (!autoStart) { started.current = false; return; }
-    if (started.current || route.sub) return;
-    started.current = true;
-    onAutoStarted?.();
-    if (mode.at !== 'playing') startStudy(quiz.plan.due.length === 0 && quiz.plan.intake.length === 0);
-  }, [autoStart]);
 
   const screen = (() => {
     if (mode.at === 'playing') {

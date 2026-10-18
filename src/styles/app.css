@@ -191,12 +191,9 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:1.6rem 0 .6
 .tiles .txt{display:flex;flex-direction:column;min-width:0}
 .tiles b{font:500 1rem var(--serif)}
 .tiles small{color:var(--ink3);font-size:.78rem;line-height:1.35}
-.tiles .due{margin-left:auto;font-size:.78rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:.25rem;padding:.15rem .55rem;white-space:nowrap}
 .tiles .go{margin-left:auto;color:var(--ink3);font-size:1.25rem}
-.tiles .due+.go{margin-left:.2rem}
 .tiles li.sub a{padding-left:1.6rem}
 .tiles li.sub img,.tiles li.sub i{width:2.8rem;height:2.8rem}
-.duebar{margin:.6rem 0 0;color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
 .cover-short .cover{aspect-ratio:16/7}
 .chips.plain li{border-color:transparent;background:var(--paper2)}
 @media (hover:none){.hoverhint{display:none}}

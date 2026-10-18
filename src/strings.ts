@@ -320,7 +320,6 @@ export const strings = {
     mapLabel: 'Map of Spain with place names hidden. Tap a place to pick it.',
     answerTag: 'Answer',
     pickTag: 'Your pick',
-    startToday: "Start today's round",
     nothingToAsk: 'Nothing to ask right now.',
     round: {
       kindStudy: 'Study',

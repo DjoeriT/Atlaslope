@@ -64,7 +64,6 @@ export function App() {
   if (quiz) keepQuiz.current = true;
   // The place card opened from the quiz offers "Back to the quiz"; anywhere else in Explore says nothing about the quiz (owner, 18 Oct 2026).
   const [backTo, setBackTo] = useState<string | null>(null);
-  const [autoStart, setAutoStart] = useState(false);
   const clock = useMemo(() => makeClock(debugNow()), []);
   const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
     if (quizRef.current && quizRef.current.sub === sub && !set) return;
@@ -164,8 +163,8 @@ export function App() {
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
       {keepQuiz.current && (
         <QuizScreen
-          route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
-          onAutoStarted={() => setAutoStart(false)} onView={setMapView} onOpenPlace={openPlaceFromQuiz}
+          route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz}
+          onView={setMapView} onOpenPlace={openPlaceFromQuiz}
         />
       )}
       {!quiz && !pageOpen && place && place.id === backTo && (
