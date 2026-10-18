@@ -37,6 +37,8 @@ export const strings = {
     modeNav: 'Site',
     explore: 'Atlas',
     quiz: 'Study',
+    guides: 'Guides',
+    about: 'About',
     home: 'AtlaSlope home',
     progress: 'Progress',
     comingSoon: 'Coming soon',

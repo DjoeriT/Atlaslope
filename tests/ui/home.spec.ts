@@ -10,8 +10,9 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await expect(page).toHaveTitle('AtlaSlope · Know the land behind the glass');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');
   const nav = page.getByRole('navigation', { name: 'Site' });
-  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study']); // Guides and About come with their pages (owner card)
-  await expect(page.getByRole('link', { name: 'Open the atlas' })).toHaveAttribute('href', 'atlas/');
+  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'About']);
+  await expect(page.locator('.sitebar .search')).toHaveCount(0); // no search here: it could only throw you into the atlas (owner, 18 Oct)
+  await expect(page.getByRole('link', { name: 'Open the atlas' }).first()).toHaveAttribute('href', 'atlas/');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
   await expect(page.locator('#map')).toHaveCount(0);
@@ -21,7 +22,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
 test('Open the atlas leads to the atlas, and its logo comes back home', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto('../');
-  await page.getByRole('link', { name: 'Open the atlas' }).click();
+  await page.getByRole('link', { name: 'Open the atlas' }).first().click();
   await expect(page).toHaveURL(/\/atlas\/(#.*)?$/);
   await expect(page.locator('.card h1')).toHaveText('Spain');
   await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' })).toHaveAttribute('aria-current', 'page');
@@ -46,12 +47,16 @@ test('an old #quiz link opens Study, and the address says #study', async ({ page
   await expect(page.getByRole('heading', { name: 'Study or review' })).toBeVisible();
 });
 
-test('Search on the home page opens the atlas with the search field ready', async ({ page }) => {
+test('Guides and About are plain pages with the same bar, and the guides lead into the atlas', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
-  await page.goto('../');
-  await page.getByRole('link', { name: 'Search places and regions' }).click();
-  await expect(page.getByRole('searchbox')).toBeFocused();
-  await expect(page).not.toHaveURL(/#search/);
+  await page.goto('../about/');
+  await expect(page).toHaveTitle('About · AtlaSlope');
+  const nav = page.getByRole('navigation', { name: 'Site' });
+  await expect(nav.getByRole('link', { name: 'About' })).toHaveAttribute('aria-current', 'page');
+  await nav.getByRole('link', { name: 'Guides' }).click();
+  await expect(page).toHaveTitle('Guides · AtlaSlope');
+  await page.getByRole('link', { name: /Rioja Alta/ }).click();
+  await expect(page).toHaveURL(/\/atlas\/#place=rioja-alta/);
 });
 
 test('Study and back to Atlas returns to the card that was open', async ({ page }) => {
