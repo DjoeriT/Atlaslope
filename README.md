@@ -40,6 +40,9 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Unit tests: `npm test` (`npm test -- tests/unit/dops.test.ts` for one file).
 - Build: `npm run build` → `dist/`.
 - UI tests: `npm run test:ui` (builds first, serves `dist/`, runs Playwright).
+- Screenshots: `npm run shots` builds the UI-test build and writes `shots/<view>-<size>.png` (home, atlas, rioja, study, question at desktop, ipad, phone; ignored by git).
+  Filter with `--only home,study` and `--sizes desktop,phone`; `--no-build` reuses `dist/uitest`; `--url <base>` uses a running server.
+  Needs the Chromium Playwright already has; a failed view logs one line and the run goes on (15 s per view, 3 min overall).
 - Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the UI tests, always before a merge or release).
 
 ## Data
