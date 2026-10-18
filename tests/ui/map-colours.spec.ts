@@ -45,7 +45,7 @@ test('the legend is not shown in the quiz', async ({ page }) => {
   await expect(page.locator('.legend')).toHaveCount(0);
 });
 
-test('Spain and region cards show photo rows and main grapes, and no Study counts even with progress', async ({ page }) => {
+test('Spain and region cards show photo tiles with headlines, main grapes on the region card, and no Study counts even with progress', async ({ page }) => {
   await open(page, '', SEED);
   const card = page.locator('.card');
   // The Atlas shows no Study items (owner, 18 Oct 2026): the Spain card, not the Today card, and no due counts.
@@ -53,7 +53,9 @@ test('Spain and region cards show photo rows and main grapes, and no Study count
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
   await expect(card.locator('.due, .duebar')).toHaveCount(0);
   const row = card.locator('.tiles li', { hasText: 'Rioja' }).first();
-  await expect(row.locator('small')).toContainText('Tempranillo');
+  // The tile carries the kind and a sourced headline (owner points 15 and 16, 18 Oct 2026); grapes moved to the region card's chips.
+  await expect(row.locator('small')).toHaveText('DOCa');
+  await expect(row.locator('em')).toHaveText(/\S/);
 
   // Rioja is a one-place region, so its row opens the Rioja DOCa itself (owner card, 17 Oct 2026)
   await row.locator('a').click();

@@ -33,6 +33,9 @@ export function mainGrapes(placeIds: readonly string[], n = 3): string[] {
   return [...count].sort((a, b) => b[1] - a[1]).slice(0, n).map(([name]) => name);
 }
 
+/** The first form of a two-language name («Bizkaiko Txakolina / Txakolí de Bizkaia»), as on the map; the card title keeps both. */
+const firstName = (name: string) => name.split(' / ')[0];
+
 const firstPhoto = (ids: readonly string[]) => ids.map((id) => photosOf(id)[0]).find(Boolean);
 
 interface TileProps {
@@ -54,7 +57,7 @@ function Tile({ to, go, name, label, line, photoIds, places }: TileProps) {
     <li {...hoverProps(places)}>
       <Link to={to} go={go} title={line ? `${name}: ${line}` : t.openPage(name)}>
         <span className="ph">{photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 50vw, 15rem" alt="" lazy /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}</span>
-        <span className="txt"><small>{label}</small><b>{name}</b>{line && <em>{line}</em>}</span>
+        <span className="txt"><b>{firstName(name)}</b><small>{label}</small>{line && <em>{line}</em>}</span>
       </Link>
     </li>
   );
@@ -63,13 +66,22 @@ function Tile({ to, go, name, label, line, photoIds, places }: TileProps) {
 /** Tiles in two columns; with an odd count the first one runs full width, so no tile sits alone. */
 const tileClass = (n: number) => (n % 2 === 1 ? 'tiles lead' : 'tiles');
 
-/** A country or region lede from content/tiles.json with its short source tags; the old count line where none is written yet. */
-function Lede({ line, fallback, hint }: { line?: TileLine; fallback: string; hint: string }) {
+/** A country or region lede from content/tiles.json; the old count line where none is written yet. It names the places whose official
+ *  documents it restates, each a link to that place's card, where the cited line sits (one short trail, not a row of document tags). */
+function Lede({ tree, go, line, fallback, hint }: { tree: Tree; go: Go; line?: TileLine; fallback: string; hint: string }) {
   if (!line?.lede) return <p className="lede">{fallback} <span className="hoverhint">{hint}</span></p>;
+  const from = (line.from ?? []).map((id) => tree.getPlace(id)).filter((p): p is Place => !!p);
   return (
     <>
       <p className="lede">{line.lede}</p>
-      <p className="ledesrc"><SourceLine cites={line.cite} short /> <span className="hoverhint">{hint}</span></p>
+      <p className="ledesrc">
+        {from.length > 0 && (
+          <>{t.ledeFrom} {from.map((p, i) => (
+            <span key={p.id}>{i > 0 && (i === from.length - 1 ? t.ledeAnd : ', ')}<Link to={{ kind: 'place', id: p.id }} go={go}>{firstName(p.name)}</Link></span>
+          ))}. </>
+        )}
+        <span className="hoverhint">{hint}</span>
+      </p>
     </>
   );
 }
@@ -85,7 +97,7 @@ export function SpainCard({ tree, go }: Props) {
       tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
       cover={<div className="cover-short"><CoverPhoto name={country.name} color="#141414" photos={covers} /></div>}
     >
-      <Lede line={spainLine()} fallback={t.spainLedeRich(all.length, regions.length)} hint={t.hoverRegion} />
+      <Lede tree={tree} go={go} line={spainLine()} fallback={t.spainLedeRich(all.length, regions.length)} hint={t.hoverRegion} />
       <h2>{t.regions}</h2>
       <ul className={tileClass(regions.length)}>
         {regions.map((r) => {
@@ -119,7 +131,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
         </>
       )}
     >
-      <Lede line={regionLine(region.id)} fallback={t.regionLedeRich(places.length)} hint={t.hoverPlace} />
+      <Lede tree={tree} go={go} line={regionLine(region.id)} fallback={t.regionLedeRich(places.length)} hint={t.hoverPlace} />
       {grapes.length > 0 && (
         <>
           <h2>{t.mainGrapesHere}</h2>

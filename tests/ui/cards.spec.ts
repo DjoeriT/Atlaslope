@@ -82,7 +82,7 @@ test('the map frames each step and a reloaded place URL restores place and view'
   await expect.poll(async () => Number((await viewOf(page))?.split(',')[2])).toBeLessThan(6);
 
   await page.getByRole('link', { name: /^Castilla y León/ }).click();
-  await page.getByRole('link', { name: /^Toro/ }).click();
+  await page.locator('.card .tiles').getByRole('link', { name: /^Toro/ }).click(); // the lede's source trail also links Toro
   await expect.poll(() => viewOf(page)).toBe(first);
   const url = page.url();
   await page.reload();
