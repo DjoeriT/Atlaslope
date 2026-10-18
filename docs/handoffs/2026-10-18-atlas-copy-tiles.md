@@ -6,7 +6,7 @@ Slice 3 of the atlas overhaul (plan `/mnt/project-files/atlaslope/plans/2026-10-
 - Spain and the 10 study regions open with a written lede. Under it, a line names the places whose documents it restates, each linked to its card.
 - Regions and places are two-column photo tiles, each with a label (place count or kind), the name and a headline. An odd count puts the first tile at full width.
 - All copy is in `content/tiles.json`: the Spain lede, 10 region titles and ledes, and 79 place titles, each with cites. `tests/unit/tiles.test.ts` checks coverage, ids and cites.
-- An independent source check passed all 100 lines after 9 fixes (`/mnt/project-files/atlaslope/reviews/2026-10-18-tile-copy-source-check.md`).
+- Independent source checks passed all lines (round 1: 9 fixes; round 2 after the owner asked for less, one idea per line: 4 fixes) (`/mnt/project-files/atlaslope/reviews/2026-10-18-tile-copy-source-check.md`).
 - Card width is `--card-w: clamp(25rem, 29vw, 27rem)`, so 400 to 432px. The benchmark measured map-first panels at 408 to 420px (`/mnt/project-files/atlaslope/reviews/2026-10-18-guide-page-benchmark.md` part B).
 - Tile photo credits sit in one line under the tiles (visual-style "Photos").
 - Round 1 mock (four directions, subtle to bold, with all copy): https://claude.ai/artifact/Df8Wm37xkkU8G6JMKSFg9m
