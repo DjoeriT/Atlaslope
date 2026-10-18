@@ -19,7 +19,7 @@ import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
 import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
-import { TopBar } from './TopBar';
+import { SiteBar } from './TopBar';
 import { withMotion } from './motion';
 import { Sheet } from './Sheet';
 
@@ -164,12 +164,20 @@ export function App() {
   const region = sel.kind === 'region' ? tree.getRegion(sel.id) : undefined;
   const titleName = place?.name ?? region?.name;
   useEffect(() => {
-    document.title = titleName ? strings.pageTitle(titleName) : strings.pageTitleHome;
-  }, [titleName]);
+    document.title = quiz ? strings.pageTitle(strings.topBar.quiz) : titleName ? strings.pageTitle(titleName) : strings.pageTitleHome;
+  }, [titleName, !!quiz]);
+  // The home page's Search goes to atlas/#search: the atlas opens on Spain with the search field ready.
+  useEffect(() => {
+    if (location.hash !== '#search') return;
+    history.replaceState(history.state, '', here());
+    document.querySelector<HTMLInputElement>('.sitebar .search input')?.focus();
+  }, []);
   return (
     <>
+      {!pageOpen && <SiteBar tree={tree} onOpen={go} current={quiz ? 'study' : 'atlas'} onAtlas={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} />}
+      {/* Everything under the bar: the map and what floats on it are placed against this box, not the window. */}
+      <div className="stage">
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
       {keepQuiz.current && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
@@ -191,6 +199,7 @@ export function App() {
         </Sheet>
       )}
       {!pageOpen && <FirstRun />}
+      </div>
     </>
   );
 }

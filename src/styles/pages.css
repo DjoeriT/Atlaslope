@@ -14,18 +14,11 @@
 /* top bar */
 /* The top bar is the black band with champagne type (owner, 18 Oct 2026). */
 .pg-top{position:sticky;top:0;z-index:20;background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
-.pg-top .brand,.pg-top .pg-ttl,.pg-top .btn{color:var(--foil)}
+.pg-top .pg-ttl,.pg-top .btn{color:var(--foil)}
 .pg-top .btn{border-color:color-mix(in srgb,var(--foil) 45%,transparent)}
 .pg-top .btn:hover{background:color-mix(in srgb,var(--foil) 12%,transparent)}
-.pg-top .in{max-width:76rem;margin:0 auto;padding:.6rem 2rem;display:flex;align-items:center;gap:1rem}
-.pg-top .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:0}
-.pg-top .brand b{font-family:var(--serif);font-weight:600;font-size:1.3rem;letter-spacing:.01em}
-.pg-top .mark{width:1.7rem;height:1.7rem}
-.pg-top .search{flex:1;max-width:26rem;width:auto;margin:0 auto;border-radius:.25rem;border:1px solid color-mix(in srgb,var(--foil) 35%,transparent);background:color-mix(in srgb,var(--foil) 8%,var(--band));color:var(--foil);min-height:2.9rem;padding:0 1rem}
-.pg-top .search input,.pg-top .search svg{color:var(--foil)}
-.pg-top .search input::placeholder{color:color-mix(in srgb,var(--foil) 70%,transparent)}
+.pg-top .in{max-width:76rem;margin:0 auto;padding:0 2rem}
 .pg-top .btn svg{width:1.1rem;height:1.1rem;flex:none}
-.pg-top .results{left:0;right:0}
 
 /* header */
 .pg-listing{max-width:76rem;margin:0 auto;padding:1.2rem 2rem 6rem}
@@ -50,7 +43,7 @@
 .pg-namecover span{font-size:clamp(3rem,8vw,5.5rem)}
 
 /* jump bar */
-.pg-jump{position:sticky;top:4.05rem;z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem -2rem 0;padding:0 2rem;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.pg-jump{position:sticky;top:calc(var(--bar) + 1px);z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem -2rem 0;padding:0 2rem;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .pg-jump a{flex:none;display:inline-flex;align-items:center;min-height:3rem;padding:0 .8rem;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink2);border-bottom:2px solid transparent}
 .pg-jump a:hover{color:var(--ink)}
 .pg-jump a[aria-current]{color:var(--ink);border-bottom-color:var(--ink)}
@@ -134,10 +127,9 @@
   .pg aside .sticky{position:static}
   .pg-mosaic[data-n="3"],.pg-mosaic[data-n="4"],.pg-mosaic[data-n="5"]{grid-template-columns:2fr 1fr;height:min(28rem,60vw)}
   .pg-mosaic[data-n="4"] figure:nth-child(4),.pg-mosaic[data-n="5"] figure:nth-child(n+4){display:none}
-  .pg-jump{top:3.9rem}
 }
 @media (max-width:47.5em){
-  .pg-top .in{padding:.5rem 1rem}
+  .pg-top .in{padding:0 1rem}
   .pg-top .search{display:none}
   .pg-listing{padding:1rem 1rem 6rem}
   .pg-mosaic{grid-template-columns:1fr!important;grid-template-rows:1fr!important;height:62vw;border-radius:0;margin:1rem -1rem 0}

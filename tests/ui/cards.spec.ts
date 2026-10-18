@@ -151,18 +151,18 @@ test('boundaries that fail to load say so and offer a reload', async ({ page }) 
 
 test('the tab title names the open place first and follows the walk', async ({ page }) => {
   await open(page);
-  await expect(page).toHaveTitle('AtlaSlope · The Wine Study Atlas');
+  await expect(page).toHaveTitle('Atlas · AtlaSlope');
   await page.locator('.card').getByRole('link', { name: /^Castilla y León/ }).click();
   await expect(page).toHaveTitle('Castilla y León · AtlaSlope');
   await page.goBack();
-  await expect(page).toHaveTitle('AtlaSlope · The Wine Study Atlas');
+  await expect(page).toHaveTitle('Atlas · AtlaSlope');
   await open(page, '#place=toro');
   await expect(page).toHaveTitle('Toro · AtlaSlope');
 });
 
 test('the page has a favicon and the header shows the logo', async ({ page, request }) => {
   await open(page);
-  for (const href of ['./favicon.svg', './favicon-32.png', './apple-touch-icon.png']) {
+  for (const href of ['../favicon.svg', '../favicon-32.png', '../apple-touch-icon.png']) {
     await expect(page.locator(`link[href="${href}"]`)).toHaveCount(1);
     expect((await request.get(href)).ok()).toBe(true);
   }

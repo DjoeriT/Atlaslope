@@ -41,7 +41,7 @@ test('search results show above the open card', async ({ page }) => {
 test('the Explore tab goes back to Spain without reloading the page', async ({ page }) => {
   await open(page, '#place=rioja-alta');
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
-  await page.getByRole('link', { name: 'Explore' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.locator('.card h1')).toHaveText('Spain');
   expect(await page.evaluate(() => (window as unknown as { marker?: number }).marker)).toBe(1);
   await page.goBack();
@@ -52,7 +52,7 @@ test('the Explore tab on the Spain card stays put without a reload', async ({ pa
   await open(page);
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
   const before = await page.evaluate(() => history.length);
-  await page.getByRole('link', { name: 'Explore' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.locator('.card h1')).toHaveText('Spain');
   expect(await page.evaluate(() => [(window as unknown as { marker?: number }).marker, history.length])).toEqual([1, before]);
 });

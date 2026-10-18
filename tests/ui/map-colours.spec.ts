@@ -64,5 +64,5 @@ test('Spain and region cards show photo rows, main grapes and what is due, and R
   await card.getByRole('link', { name: 'Close, back to Spain' }).click();
 
   await card.getByRole('button', { name: `Start today's round · ${today} due` }).click();
-  await expect(page).toHaveURL(/#quiz/);
+  await expect(page).toHaveURL(/#study/);
 });

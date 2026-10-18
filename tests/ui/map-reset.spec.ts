@@ -13,7 +13,7 @@ test('Reset view levels a turned and tilted map back to the start camera, and is
   await expect.poll(() => page.url()).toMatch(/view=[^&]*,0,45$/); // north up, the start tilt
   await expect(page.getByRole('button', { name: 'Point north' })).toBeHidden();
 
-  await page.getByRole('navigation', { name: 'Mode' }).getByRole('button', { name: 'Quiz' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
   await expect(page.locator('.card h1')).toHaveText('Study or review');
   await expect(reset).toBeHidden();
 });

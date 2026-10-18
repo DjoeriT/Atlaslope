@@ -92,7 +92,7 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   // 5. The round end: score over first asks, the miss linking to its card, Today, then Done for today.
   await expect(page.locator('h1.score')).toContainText('4 / 5');
   await expect(page.getByRole('link', { name: second })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Save a copy to a file' })).toHaveAttribute('href', '#quiz=progress-file');
+  await expect(page.getByRole('link', { name: 'Save a copy to a file' })).toHaveAttribute('href', '#study=progress-file');
   await expect(page.getByRole('button', { name: 'Done for today' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Learn 5 extra places' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Practise any mix' })).toBeVisible();

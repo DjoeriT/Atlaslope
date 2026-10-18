@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import type { MouseEvent, ReactNode } from 'react';
 import { strings } from '../strings';
 import { SearchBox } from '../cards/SearchBox';
 import type { Tree } from '../tree';
@@ -9,50 +9,40 @@ const t = strings.topBar;
 interface Props {
   tree: Tree;
   onOpen: (to: Selection) => void;
-  quizOpen: boolean;
-  onQuiz: () => void;
-  onExplore: () => void;
-  onProgressFile: () => void;
+  /** Which of the bar's items is the screen in view; none on a full page. */
+  current: 'atlas' | 'study' | null;
+  onAtlas: () => void;
+  className?: string;
+  /** The page's name, which slides into the bar on full pages (pages.css). */
+  title?: string;
+  children?: ReactNode;
 }
 
-export function TopBar({ tree, onOpen, quizOpen, onQuiz, onExplore, onProgressFile }: Props) {
-  const [open, setOpen] = useState(false);
-  const brandRef = useRef<HTMLButtonElement>(null);
-  const menuRef = useRef<HTMLDivElement>(null);
+/** A plain left click stays in the app; a modified click (new tab, new window) follows the link. */
+const inApp = (run: () => void) => (e: MouseEvent) => {
+  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+  e.preventDefault();
+  run();
+};
 
-  useEffect(() => {
-    if (!open) return;
-    const onClick = (e: MouseEvent) => {
-      const target = e.target as Node;
-      if (!menuRef.current?.contains(target) && !brandRef.current?.contains(target)) setOpen(false);
-    };
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') { setOpen(false); brandRef.current?.focus(); }
-    };
-    document.addEventListener('click', onClick);
-    document.addEventListener('keydown', onKey);
-    return () => { document.removeEventListener('click', onClick); document.removeEventListener('keydown', onKey); };
-  }, [open]);
-
+/** The site's top bar, the black band (website slice 2; approved mock Review/mock-home-v1/): the logo goes home, Atlas and Study are
+ *  the atlas's two modes, then search. The home page (index.html) draws the same bar in plain HTML. Guides and About join it when their
+ *  pages exist (owner card, 18 Oct 2026). Study is a plain # link: the app follows the address on its own (popstate). */
+export function SiteBar({ tree, onOpen, current, onAtlas, className, title, children }: Props) {
   return (
-    <>
-      <div className="topleft">
-        <button ref={brandRef} className="brand glass" aria-haspopup="menu" aria-expanded={open} aria-controls="brand-menu" onClick={() => setOpen(!open)}>
-          <BrandMark /><b>{strings.appName}</b><small>{strings.brandContext}</small>
-        </button>
-        <SearchBox tree={tree} open={onOpen} />
-      </div>
-      <div id="brand-menu" ref={menuRef} className="glass menu tl" role="menu" hidden={!open}>
-        <button role="menuitem" onClick={() => { setOpen(false); onProgressFile(); }}>{t.saveLoad}</button>
-      </div>
-      <div className="topright">
-        <nav className="seg glass" aria-label={t.modeNav}>
-          <a href="./" aria-current={quizOpen ? undefined : 'page'} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return; e.preventDefault(); onExplore(); }}>{t.explore}</a>
-          <button aria-current={quizOpen ? 'page' : undefined} onClick={onQuiz}>{t.quiz}</button>
-          {/* Progress comes back with the mastery map; a tab that does nothing is hidden until then (UX sweep, 17 Oct 2026). */}
+    <header className={`sitebar${className ? ` ${className}` : ''}`}>
+      <div className="in">
+        <a className="brand" href="../" aria-label={t.home}>
+          <BrandMark /><b>{strings.appName}</b>{title && <span className="pg-ttl" aria-hidden="true">{title}</span>}
+        </a>
+        <nav aria-label={t.modeNav}>
+          <a href="./" aria-current={current === 'atlas' ? 'page' : undefined} onClick={inApp(onAtlas)}>{t.explore}</a>
+          <a href="#study" aria-current={current === 'study' ? 'page' : undefined}>{t.quiz}</a>
         </nav>
+        <SearchBox tree={tree} open={onOpen} />
+        {children}
       </div>
-    </>
+    </header>
   );
 }
 

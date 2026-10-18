@@ -55,16 +55,18 @@ export function parseSelection(hash: string): Selection {
   return SPAIN;
 }
 
-/** The quiz route: #quiz, with #quiz=practise, #quiz=focus and #quiz=progress-file for the screens, and #quiz=test&set=a,b which starts a review round of 10 on those places at once. */
+/** The Study route (the code keeps the name quiz): #study, with #study=practise, #study=focus and #study=progress-file for the screens, and
+ *  #study=test&set=a,b which starts a review round of 10 on those places at once. Links from before the rename (#quiz=...) still open it. */
 export type QuizSub = 'practise' | 'focus' | 'progress-file' | 'test' | null;
 export interface QuizRoute { sub: QuizSub; /** The places of a `test` round. */ set?: string[] }
 const QUIZ_SUBS = ['practise', 'focus', 'progress-file', 'test'] as const;
 
-/** The quiz route a hash names, or null when it names Explore. An unknown sub-route means plain #quiz. */
+/** The Study route a hash names, or null when it names the atlas. An unknown sub-route means plain #study. */
 export function parseQuizRoute(hash: string): QuizRoute | null {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
-  if (!p.has('quiz')) return null;
-  const sub = p.get('quiz');
+  const key = p.has('study') ? 'study' : p.has('quiz') ? 'quiz' : null;
+  if (!key) return null;
+  const sub = p.get(key);
   const found = QUIZ_SUBS.find((s) => s === sub) ?? null;
   if (found !== 'test') return { sub: found };
   const set = (p.get('set') ?? '').split(',').filter(Boolean);
@@ -72,7 +74,7 @@ export function parseQuizRoute(hash: string): QuizRoute | null {
 }
 
 export function quizToHash(route: QuizRoute, view?: View | null): string {
-  const parts = [route.sub ? `quiz=${route.sub}` : 'quiz'];
+  const parts = [route.sub ? `study=${route.sub}` : 'study'];
   if (route.sub === 'test' && route.set?.length) parts.push(`set=${route.set.join(',')}`);
   if (view) parts.push(`view=${viewToText(view)}`);
   return `#${parts.join('&')}`;

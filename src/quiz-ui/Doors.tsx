@@ -23,7 +23,7 @@ interface Props {
   onStudy(learnMore: boolean): void;
 }
 
-/** The Quiz screen: the Study door (today's round), the Review door (Practise any mix). Mocks 20-quiz and 20b. */
+/** The Study screen: the Study door (today's round), the Review door (Practise any mix). Mocks 20-quiz and 20b. */
 export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => { if (document.activeElement === document.body) heading.current?.focus({ preventScroll: true }); }, []);
@@ -70,6 +70,8 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
           <a className="btn wide" href={quizToHash({ sub: 'practise' })}>{d.practise}</a>
         </section>
         {due === 0 && next && <p className="note">{d.nextDue(dayName(next.day, false), next.places)}</p>}
+        {/* Moved here from the logo's menu in website slice 2: the logo now goes home, and the file is Study's progress. */}
+        <p className="note saveload"><a href={quizToHash({ sub: 'progress-file' })}>{strings.topBar.saveLoad}</a></p>
       </div>
     </section>
   );

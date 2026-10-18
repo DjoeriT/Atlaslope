@@ -43,7 +43,7 @@ test('focus: Save changes the new places, Clear then Undo brings the picks back,
   const before = await newToday();
 
   await page.getByRole('link', { name: 'Set a focus' }).click();
-  await expect(page).toHaveURL(/#quiz=focus/);
+  await expect(page).toHaveURL(/#study=focus/);
   const chips = page.getByRole('group', { name: 'Regions in your focus' }).getByRole('checkbox');
   const last = chips.last();
   await last.click();
@@ -102,14 +102,13 @@ test('practise any mix: ticks, the partial state, the real count, a review round
   await page.getByRole('radio', { name: '10' }).click();
   await page.getByRole('button', { name: /^Start · / }).click();
   await expect(page.locator('.q-num')).toContainText('Review');
-  await expect(page).toHaveURL(/#quiz($|&)/);
+  await expect(page).toHaveURL(/#study($|&)/);
 });
 
 test('progress file: save downloads JSON, load restores the log, Undo brings the earlier one back, a bad file changes nothing', async ({ page }) => {
   await open(page, '#quiz', SEED);
-  await page.getByRole('button', { name: 'AtlaSlope' }).click();
-  await page.getByRole('menuitem', { name: 'Save or load progress' }).click();
-  await expect(page).toHaveURL(/#quiz=progress-file/);
+  await page.getByRole('link', { name: 'Save or load progress' }).click();
+  await expect(page).toHaveURL(/#study=progress-file/);
   await expect(page.locator('.facts')).toContainText('3 answers since');
   await expect(page.getByText('Add AtlaSlope to your Home Screen')).toBeVisible();
 
@@ -170,7 +169,7 @@ test('Home shows the Today card once there is progress; closing it shows the Spa
   await page.getByRole('region', { name: 'Today' }).getByRole('button', { name: /^Review \d+ due$/ }).click();
   await expect(page.locator('.q-num')).toContainText('Study');
   await page.reload();
-  await page.getByRole('link', { name: 'Explore' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
 });
 
@@ -199,7 +198,7 @@ test('a place card opened from the quiz comes back to the same question', async 
   const name = (await page.locator('h1.intro-h').textContent())!;
   await page.getByRole('button', { name: `More about ${name}` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
-  await page.getByRole('button', { name: /Back to the quiz/ }).click();
+  await page.getByRole('button', { name: /Back to Study/ }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
   for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
 
@@ -212,9 +211,9 @@ test('a place card opened from the quiz comes back to the same question', async 
   const feedback = await page.locator('.feedback').textContent();
   await page.getByRole('button', { name: `Open ${target}'s card` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(target);
-  await page.getByRole('button', { name: /Back to the quiz/ }).click();
+  await page.getByRole('button', { name: /Back to Study/ }).click();
   await expect(page.locator('.q-num')).toHaveText(question!);
   await expect(page.locator('.feedback')).toHaveText(feedback!);
   await expect(page.locator('.choice[disabled]').first()).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Back to the quiz' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Back to Study' })).toHaveCount(0);
 });

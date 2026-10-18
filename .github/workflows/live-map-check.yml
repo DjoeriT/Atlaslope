@@ -11,7 +11,7 @@ on:
       url:
         description: 'Live URL to check'
         required: false
-        default: 'https://djoerit.github.io/Atlaslope/'
+        default: 'https://atlaslope.com/atlas/'
         type: string
 permissions:
   contents: read
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      LIVE_URL: ${{ inputs.url || 'https://atlaslope.com/' }}
+      LIVE_URL: ${{ inputs.url || 'https://atlaslope.com/atlas/' }}  # the atlas moved to atlas/ in website slice 2
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

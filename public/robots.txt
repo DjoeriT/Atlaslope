@@ -10,6 +10,8 @@ User-agent: Discordbot
 User-agent: TelegramBot
 Allow: /$
 Allow: /index.html
+Allow: /atlas/$
+Allow: /atlas/index.html
 Allow: /share.png
 Disallow: /
 

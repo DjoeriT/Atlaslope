@@ -137,7 +137,7 @@ test.describe('on a phone', () => {
 
   test('one row on top: logo mark, search and the two tabs; no zoom buttons', async ({ page }) => {
     await open(page);
-    const [brand, tabs] = await Promise.all([page.locator('.brand').boundingBox(), page.locator('.seg').boundingBox()]);
+    const [brand, tabs] = await Promise.all([page.locator('.brand').boundingBox(), page.locator('.sitebar nav').boundingBox()]);
     expect(Math.abs(brand!.y - tabs!.y)).toBeLessThan(12);
     await expect(page.getByRole('button', { name: 'Zoom in' })).toBeHidden();
     await expect(page.getByRole('searchbox')).toHaveAttribute('placeholder', 'Search');
