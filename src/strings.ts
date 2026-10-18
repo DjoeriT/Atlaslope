@@ -52,6 +52,7 @@ export const strings = {
     hoverRegion: 'Hover a region to find it on the map.',
     ledeFrom: 'From the official documents of',
     ledeAnd: ' and ',
+    tilePhotos: 'Photos:',
     hoverPlace: 'Hover a place to find it on the map.',
     regions: 'Regions',
     mainGrapesHere: 'Main grapes here',

@@ -12,6 +12,8 @@ import { SourceLine } from './PlaceFacts';
 import { Cover } from './Cover';
 import { Glance } from './Glance';
 import { Img } from './Img';
+import { Credit } from './Credit';
+import type { ShownPhoto } from '../facts';
 import { placeLine, regionLine, spainLine, type TileLine } from '../facts/tiles';
 
 
@@ -63,6 +65,13 @@ function Tile({ to, go, name, label, line, photoIds, places }: TileProps) {
   );
 }
 
+/** The credits of the tile photos, in one line under the tiles: never text on a photo (Review/visual-style.md "Photos", 18 Oct 2026). */
+function TileCredits({ photoIds }: { photoIds: readonly (readonly string[])[] }) {
+  const shown = photoIds.map(firstPhoto).filter((p): p is ShownPhoto => !!p);
+  if (shown.length === 0) return null;
+  return <p className="tile-credits">{t.tilePhotos} {shown.map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}</p>;
+}
+
 /** Tiles in two columns; with an odd count the first one runs full width, so no tile sits alone. */
 const tileClass = (n: number) => (n % 2 === 1 ? 'tiles lead' : 'tiles');
 
@@ -111,6 +120,7 @@ export function SpainCard({ tree, go }: Props) {
           );
         })}
       </ul>
+      <TileCredits photoIds={regions.map((r) => tree.placesInRegion(r.id).map((p) => p.id))} />
     </CardShell>
   );
 }
@@ -144,6 +154,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
           <Tile key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} label={zone ? t.zoneLevel : p.kind} line={placeLine(p.id)?.title} photoIds={[p.id]} places={() => [p.id]} />
         ))}
       </ul>
+      <TileCredits photoIds={rows.map(({ p }) => [p.id])} />
     </CardShell>
   );
 }
