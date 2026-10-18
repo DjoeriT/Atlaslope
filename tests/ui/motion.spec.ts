@@ -36,7 +36,8 @@ test('a jump bar tab glides to its section, the marker follows, and the charts t
   await expect(page.locator('.pg-jump a', { hasText: 'The land' })).toHaveAttribute('aria-current', 'true');
   await expect(page.locator('.pg-jump')).toHaveAttribute('data-mark', '');
   await expect(land.locator('.pg-chart').first()).toHaveAttribute('data-seen', '');
-  // a hover names the class and lights it in every row
+  // a hover names the class and lights it in every row (once the bars have finished growing, so the pointer meets a still target)
+  await page.waitForFunction(() => [...document.querySelectorAll('#land .pg-stack rect')].every((r) => r.getAnimations().every((a) => a.playState === 'finished')));
   await land.locator('.pg-climate .pg-stack rect').first().hover();
   await expect(land.locator('.pg-climate')).toHaveAttribute('data-hover', '0');
 });
