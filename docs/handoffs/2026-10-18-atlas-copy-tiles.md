@@ -17,10 +17,11 @@ Slice 3 of the atlas overhaul (plan `/mnt/project-files/atlaslope/plans/2026-10-
 - The hover title on tiles stays (point 11), though ReviewBot suggested dropping it.
 
 ## Open
-- The owner's OK on the copy and his tile direction pick.
+- Owner picked C (card 16:39Z) and OKed copy round 2 ("Yes way better", 16:46Z).
 - 30 places without a fact sheet (the Vinos de Pago, Cava, Catalunya, Islas Canarias) show only their kind. They get headlines when their sheets exist.
 - The txakoli-bizkaia sheet contradicts itself: its "why" row says high-acid, its styles row says lightly acidic. It needs a source check.
 - Cover.tsx `sizes` still assumes a 25rem card. This is minor: the card is at most 27rem.
 
 ## Where
 `content/tiles.json`, `src/facts/tiles.ts`, `src/cards/Cards.tsx` (`Tile`, `Lede`, `TileCredits`), `src/styles/app.css` (`.tiles`, `--card-w`, `.tile-credits`, `.ledesrc`).
+- Card and guide-page trails now name only the levels above the title (owner 16:45Z: "Spain and Spain in one screen"). The place card's sub line shows the kind only.
