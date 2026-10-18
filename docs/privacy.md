@@ -1,12 +1,13 @@
 # Privacy: what the site does with visitors' data
 
-Internal facts sheet, kept true by every slice that adds storage or a third-party host (PR template). The public privacy page is
-written from it; its wording waits for the owner's card (18 Oct 2026). Atlaslope is run from the EU, so GDPR applies. This is a
+Internal facts sheet, kept true by every slice that adds storage or a third-party host (PR template). There is no public privacy page
+yet: it comes just before friends get the link, written from this file (owner card, 18 Oct 2026; draft in
+`/mnt/project-files/atlaslope/mocks/privacy-page/`, to ship as its own route). Atlaslope is run from the EU, so GDPR applies. This is a
 record of facts, not legal advice. Checked [V] 18 Oct 2026 against `src/`.
 
 ## What we collect
-Nothing on a server we run. No accounts, no cookies, no analytics, no error service (Sentry and PostHog were decided on 16 Oct,
-`docs/architecture-decisions.md` #20, #40, #46, and are not built).
+Nothing on a server we run. No accounts, no cookies, no analytics, no error service (Sentry and PostHog, decisions #20, #40,
+#46, are postponed until just before friends get the link: owner card, 18 Oct 2026).
 
 ## What stays in the visitor's browser (localStorage, never sent anywhere)
 | Key | What | Where in code |

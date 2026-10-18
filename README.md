@@ -8,7 +8,8 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Live: the latest `release-*` tag on https://atlaslope.com . Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
 - Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
-- Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
+- Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`. Rollback, incidents, keys:
+  `docs/operations.md`. Words: `docs/glossary.md`. Privacy facts: `docs/privacy.md`.
 - Keep this section current in the slice PR that changes it.
 
 ## Layout
@@ -18,8 +19,8 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
     src/map/             MapLibre map: imagery, boundaries, climate colours, hover, focus, map menu
     src/cards/           floating cards on the map (place, region, Spain), search box
     src/pages/           place page and region page (photo mosaic, charts)
-    src/quiz/            quiz engine: questions, rounds, memory, progress store (no UI)
-    src/quiz-ui/         quiz screens: doors, round player, round end, Today card, progress file
+    src/quiz/            Study engine (code name quiz): questions, rounds, memory, progress store (no UI)
+    src/quiz-ui/         Study screens: doors, round player, round end, Today card, progress file
     src/tree/            the place tree (country to zone) and search
     src/facts/           fact sheets and guides: types, formatting, checks
     src/debug.ts         debug-only query flags (?fixture=, ?fresh=1), stripped from production builds
@@ -61,7 +62,7 @@ owner's words "publish release N" (owner card, 18 Oct 2026; `.claude/skills/rele
    After a self-published small slice whose live check fails, do this at once and tell the owner.
 
 ## Licence
-Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
+Code: MIT (`LICENSE`). Writing (fact sheets, guides, Study text, interface copy): all rights reserved (`NOTICE.md`).
 Data files under `data/` keep their own licences, listed per file in `data/SOURCES.md`, and the app shows their credit lines.
 
 ## Notes

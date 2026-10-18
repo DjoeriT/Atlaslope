@@ -106,5 +106,5 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#26 and #47 timing**: atlaslope.com is connected in release 3, not "before release 4". [A, brief]
 - **#27 fetch location**: the data step runs as one GitHub Actions run, the owner's Mac only as fallback. [A, brief step 1]
 - **#40 timing**: superseded by #46; Sentry and PostHog arrive in release 8.
-- **#46 status (18 Oct 2026)**: release 8 shipped the new look instead; Sentry, PostHog and the privacy note are still not built [V]. Asked again on a card in the docs and hygiene sweep, 18 Oct.
+- **#46 status (18 Oct 2026)**: release 8 shipped the new look instead; Sentry, PostHog and the privacy note are still not built [V]. Owner cards, 18 Oct 15:30Z: neither Sentry nor PostHog yet, revisit just before friends get the link; the privacy note stays internal (`docs/privacy.md`) until then; photo credits link their licence and say "resized", and the owner's writing stays all rights reserved.
 - **Still open, domain**: closed. atlaslope.com is bought (owner, 12:19Z).
