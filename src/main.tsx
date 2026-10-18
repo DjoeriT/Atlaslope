@@ -3,6 +3,7 @@ import { App } from './app/App';
 import { applyDebugFlags } from './debug';
 import './styles/app.css';
 import './styles/ux.css';
+import './styles/motion.css';
 import './styles/site.css';
 
 applyDebugFlags(); // must run before the first render: ?fresh=1 clears what the first render reads

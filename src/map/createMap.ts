@@ -22,6 +22,8 @@ import { addBaseMap, applyBaseMap } from './osmBase';
 import { SELECTED, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
+import { cameraEase, flightMs, type Cam } from './flight';
+import { motionScale } from '../app/motion';
 
 export interface MapController {
   map: MapLibreMap;
@@ -35,6 +37,10 @@ export interface MapController {
   reset(): void;
   /** Lights up places or zones by id while a card's row or the place under the mouse is hovered; null clears it. Never moves the map. */
   hover(ids: readonly string[] | null): void;
+  /** Leaving a guide for the map (owner, 18 Oct 2026: "Fly to Rueda doesn't really fly"): the camera steps back now, under the closing
+   *  guide; `land` then flies back in to the very view the learner had, tilted on the relief. */
+  swoop(): void;
+  land(): void;
   /** Quiz mode: flat, north up, names hidden as asked, taps find the nearest place. Null goes back to Explore. */
   quiz(q: QuizView | null): void;
   remove(): void;
@@ -88,6 +94,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let framePending = false;
   let skipFrame = !!restored; // a restored view is not framed over
   let animateFrame = false;
+  let landing: { center: maplibregl.LngLat; zoom: number; pitch: number; bearing: number } | null = null; // where a swoop lands
   let resetCamera = false; // the next frame uses the start camera instead of keeping the learner's tilt and turn
   let dimmedRegion: string | null | undefined;
   let selectedZone: string | null = null;
@@ -244,14 +251,27 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const zoneVis = want.showZones && current.boundaries ? 'visible' : 'none';
     for (const id of ['zones-fill', 'zones-line']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', zoneVis);
     if (!framePending) return;
-    const duration = animateFrame && !reduceMotion() ? 700 : 0;
+    const animate = animateFrame && !reduceMotion();
+    // The camera's time follows the distance it travels, with an ease that starts and lands softly (owner point 8, src/map/flight.ts).
+    const here = (): Cam => ({ lng: map.getCenter().lng, lat: map.getCenter().lat, zoom: map.getZoom() });
+    const timed = (to: { center?: maplibregl.LngLatLike; zoom?: number } | undefined) => {
+      if (!animate || !to?.center || to.zoom === undefined) return animate ? 900 : 0;
+      const c = maplibregl.LngLat.convert(to.center);
+      return flightMs(here(), { lng: c.lng, lat: c.lat, zoom: to.zoom }, motionScale());
+    };
+    const duration = animate ? 900 : 0;
     const keep = resetCamera ? { pitch: START_PITCH, bearing: 0, duration } : { pitch: map.getPitch(), bearing: map.getBearing(), duration };
+    const fit = (box: maplibregl.LngLatBoundsLike, maxZoom?: number) => {
+      const opts = { padding: padding(), bearing: keep.bearing, ...(maxZoom ? { maxZoom } : {}) };
+      map.fitBounds(box, { ...keep, ...opts, duration: timed(map.cameraForBounds(box, opts)), easing: cameraEase });
+    };
     if (!want.frame) {
       framePending = false;
-      map.fitBounds(SPAIN_BOUNDS, { ...keep, padding: padding() });
+      fit(SPAIN_BOUNDS);
     } else if ('point' in want.frame) {
       framePending = false;
-      map.flyTo({ center: want.frame.point, zoom: want.frame.zoom, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: duration ? 1200 : 0 });
+      const to = { center: want.frame.point, zoom: want.frame.zoom };
+      map.flyTo({ ...to, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: animate ? Math.max(1200, timed(to)) : 0, easing: cameraEase });
     } else if (boundaries && zones) {
       framePending = false;
       const box = boundsOf(framedFeatures(want.frame, boundaries, zones));
@@ -261,12 +281,13 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         return;
       }
       const kind = 'region' in want.frame ? 'region' : 'place' in want.frame ? 'place' : 'zone';
-      map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...keep, padding: padding(), maxZoom: FRAME_ZOOM[kind] });
+      fit([[box[0], box[1]], [box[2], box[3]]], FRAME_ZOOM[kind]);
     }
     if (!framePending) resetCamera = false;
   }
 
   map.on('moveend', () => {
+    if (landing) return; // the step back before a fly-in is not a view to keep in the address (PR #95 review)
     const c = map.getCenter();
     events.onView?.({ lng: c.lng, lat: c.lat, zoom: map.getZoom(), bearing: map.getBearing(), pitch: map.getPitch() });
   });
@@ -399,6 +420,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   function focus(f: Focus, animate: boolean, reframe: boolean) {
     want = f;
     if (reframe) {
+      landing = null; // a new card frames its own place from wherever the camera is
       resetCamera = false; // a new card keeps the learner's tilt; a reset still pending does not carry over to it
       framePending = !skipFrame;
       skipFrame = false;
@@ -414,6 +436,20 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       focus({ ...(want ?? { frame: null, dimRegion: null, showZones: false }), select: id }, false, false);
     },
     focus(f, animate) { focus(f, animate, true); },
+    swoop() {
+      // a camera still flying to its card has no view of its own to come back to: the frame is left to finish (PR #95 review)
+      if (!want || quizView || reduceMotion() || map.isMoving()) return;
+      landing = { center: map.getCenter(), zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() };
+      map.jumpTo({ zoom: Math.max(5.2, landing.zoom - 2.6), pitch: 0 });
+    },
+    land() {
+      const to = landing;
+      landing = null;
+      if (!to) return;
+      const from = map.getCenter();
+      map.flyTo({ ...to, easing: cameraEase,
+        duration: flightMs({ lng: from.lng, lat: from.lat, zoom: map.getZoom() }, { lng: to.center.lng, lat: to.center.lat, zoom: to.zoom }, motionScale()) });
+    },
     hover,
     reset() {
       if (!want || quizView) return;

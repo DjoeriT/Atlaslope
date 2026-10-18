@@ -39,6 +39,8 @@ export const strings = {
     quiz: 'Study',
     guides: 'Guides',
     about: 'About',
+    showMap: 'Show map',
+    showMapLabel: (name: string) => `Show map: ${name}`,
     home: 'AtlaSlope home',
     progress: 'Progress',
     comingSoon: 'Coming soon',
