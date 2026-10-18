@@ -14,4 +14,4 @@ Website slice 2 (plan `Review/website-plan.md`): a home page, the atlas at its o
 6. **Icons and link preview.** The browser tab and the Home Screen icon are champagne and black. Paste atlaslope.com into WhatsApp or iMessage: the card shows the tagline and the satellite map.
 
 ## For you
-Sources show names, not logos, until MAPA and IGN agree (your card). Not verified: Safari, iPad, the link preview in real apps (the image is built and served [V], the apps cache old cards for a while).
+PR #79 (website slice 2). Checks: `Tools/check.sh` and the UI suite locally, full CI on the PR. Sources show names, not logos, until MAPA and IGN agree (your card). Not verified: Safari, iPad, the link preview in real apps (the image is built and served [V], the apps cache old cards for a while).
