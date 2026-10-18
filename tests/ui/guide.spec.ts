@@ -37,7 +37,7 @@ test('a place with no guide has no Terroir section', async ({ page }) => {
 for (const { chapter, index, fly } of pills) {
   test(`pill "${fly.label}" lands on its caption, the address names it, Back returns to the chapter`, async ({ page }) => {
     await open(page, '#place=rioja&page');
-    await page.getByRole('link', { name: `Show ${fly.label} on the map` }).click();
+    await page.getByRole('link', { name: `See ${fly.label} from above` }).click();
     await expect(page).toHaveURL(new RegExp(`#place=rioja&fly=${chapter}\\.${index}`));
     const cap = page.locator('.flycap');
     await expect(cap.locator('.kicker')).toHaveText('From the Rioja guide');

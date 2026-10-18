@@ -42,6 +42,8 @@ export function Img({ photo, sizes, alt = photo.alt, lazy, onError }: Props) {
       srcSet={photo.srcSet}
       sizes={photo.srcSet ? sizes : undefined}
       alt={alt}
+      // Hover shows what the photo is and whose it is (owner, 18 Oct 2026: "On-hover has no texts anywhere"); decorative thumbnails stay silent.
+      title={alt ? `${alt} · ${photo.artist}, ${photo.licence}` : undefined}
       loading={lazy ? 'lazy' : undefined}
       decoding="async"
       style={style}

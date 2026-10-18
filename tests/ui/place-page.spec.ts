@@ -8,7 +8,7 @@ async function open(page: Page, hash = '') {
   await expect(page.locator('h1').first()).toBeVisible();
 }
 
-test('a place card shows the cover, three glance cells and "Open the X page"', async ({ page }) => {
+test('a place card shows the cover, three glance cells and "Explore X"', async ({ page }) => {
   await open(page, '#place=alella');
   const card = page.locator('.card');
   await expect(card.locator('.cover img')).toBeVisible();
@@ -17,7 +17,7 @@ test('a place card shows the cover, three glance cells and "Open the X page"', a
   await expect(card.locator('.cover .credit a').nth(1)).toHaveAttribute('href', /creativecommons\.org/); // alella-1 is CC BY-SA 4.0
   await expect(card.locator('.cover .credit')).toContainText(', resized');
   await expect(card.locator('.glance > div')).toHaveCount(3);
-  await expect(card.getByRole('link', { name: /^Open the .+ page$/ })).toBeVisible();
+  await expect(card.getByRole('link', { name: /^Explore .+$/ })).toBeVisible();
   await expect(card.locator('.cover .nav')).toHaveCount(0); // one photo: no arrows
 });
 
@@ -38,7 +38,7 @@ test('Rioja lists its zones with thumbnails on the card', async ({ page }) => {
 
 test('the button opens the page and Atlas in the bar returns to the card with the same view', async ({ page }) => {
   await open(page, '#place=rioja&view=-2.4000,42.3000,9.10,0,45');
-  await page.getByRole('link', { name: /^Open the .+ page$/ }).click();
+  await page.getByRole('link', { name: /^Explore .+$/ }).click();
   await expect(page).toHaveURL(/#place=rioja&page&view=-2\.4000,42\.3000,9\.10,0,45/);
   await expect(page.locator('.pg h1')).toHaveText('Rioja');
   await page.locator('.pg-top').getByRole('link', { name: 'Atlas', exact: true }).click();
@@ -49,7 +49,7 @@ test('the button opens the page and Atlas in the bar returns to the card with th
 
 test('back and forward move between the card and the page', async ({ page }) => {
   await open(page, '#place=toro');
-  await page.getByRole('link', { name: /^Open the .+ page$/ }).click();
+  await page.getByRole('link', { name: /^Explore .+$/ }).click();
   await expect(page.locator('.pg')).toBeVisible();
   await page.goBack();
   await expect(page.locator('.card h1')).toHaveText('Toro');
@@ -59,7 +59,7 @@ test('back and forward move between the card and the page', async ({ page }) => 
 
 test('a link to the page opens it directly, and "Show on the map" goes to the card', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await page.getByRole('link', { name: 'Show Rioja on the map' }).click();
+  await page.getByRole('link', { name: 'Fly to Rioja' }).click();
   await expect(page).toHaveURL(/#place=rioja(&view=.*)?$/);
   await expect(page.locator('.card h1')).toHaveText('Rioja');
 });

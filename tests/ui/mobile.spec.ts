@@ -61,7 +61,7 @@ test('Atlas on a page steps back, so the back button does not reopen the page ju
   await open(page, '#place=rioja');
   await page.locator('.card a').filter({ hasText: 'Rioja Alta' }).first().click();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
-  await page.getByText('Open the Rioja Alta page').click();
+  await page.getByText('Explore Rioja Alta').click();
   await expect(page.locator('.pg')).toBeVisible();
   await page.locator('.pg-top').getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page.locator('.pg')).toHaveCount(0);

@@ -9,7 +9,7 @@ async function open(page: Page, hash: string) {
 
 test('the region card opens the page and Atlas returns to the card', async ({ page }) => {
   await open(page, '#region=ebro');
-  await page.locator('.card').getByRole('link', { name: 'Open the Navarra and Aragón page' }).click();
+  await page.locator('.card').getByRole('link', { name: 'Explore Navarra and Aragón' }).click();
   await expect(page).toHaveURL(/#region=ebro&page/);
   const rpage = page.locator('.rpage');
   await expect(rpage.locator('h1')).toHaveText('Navarra and Aragón');
@@ -52,6 +52,6 @@ test('a tile opens its place and the credits line is there', async ({ page }) =>
 
 test('Show on the map goes to the region card', async ({ page }) => {
   await open(page, '#region=ebro&page');
-  await page.getByRole('link', { name: 'Show Navarra and Aragón on the map' }).click();
+  await page.getByRole('link', { name: 'Fly to Navarra and Aragón' }).click();
   await expect(page).toHaveURL(/#region=ebro(&view=[^&]*)?$/);
 });

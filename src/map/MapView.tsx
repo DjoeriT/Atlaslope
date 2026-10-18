@@ -86,15 +86,15 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
       <div className="bottomright">
         <MapMenu menu={menu} imageryFailed={imageryFailed} onChange={setMenu} />
         <div className="glass zoomset">
-          <button className="iconbtn" aria-label={t.zoomIn} onClick={() => ctl.current?.map.zoomIn()}>{icon('M12 5v14M5 12h14')}</button>
-          <button className="iconbtn" aria-label={t.zoomOut} onClick={() => ctl.current?.map.zoomOut()}>{icon('M5 12h14')}</button>
+          <button className="iconbtn" aria-label={t.zoomIn} title={t.zoomIn} onClick={() => ctl.current?.map.zoomIn()}>{icon('M12 5v14M5 12h14')}</button>
+          <button className="iconbtn" aria-label={t.zoomOut} title={t.zoomOut} onClick={() => ctl.current?.map.zoomOut()}>{icon('M5 12h14')}</button>
           {!quiz && (
             <button className="iconbtn" aria-label={t.resetView} title={t.resetView} onClick={() => ctl.current?.reset()}>
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /><circle cx="12" cy="12" r="2.2" /></svg>
             </button>
           )}
           {turned && (
-            <button className="iconbtn" aria-label={t.north} onClick={() => ctl.current?.map.easeTo({ bearing: 0 })}>
+            <button className="iconbtn" aria-label={t.north} title={t.north} onClick={() => ctl.current?.map.easeTo({ bearing: 0 })}>
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 5l3 7-3 7-3-7z" fill="currentColor" /></svg>
             </button>
           )}
@@ -110,7 +110,7 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
       {!dataFailed && imageryFailed && noteShown && (
         <div className="glass imagery-note" role="status">
           <span>{t.imageryNote}</span>
-          <button className="iconbtn" aria-label={t.dismissNote} onClick={() => setNoteShown(false)}>{icon('M6 6l12 12M18 6L6 18')}</button>
+          <button className="iconbtn" aria-label={t.dismissNote} title={t.dismissNote} onClick={() => setNoteShown(false)}>{icon('M6 6l12 12M18 6L6 18')}</button>
         </div>
       )}
     </>
@@ -119,7 +119,7 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
 
 /** What the place colours mean. Swatches are drawn the way the map draws a place: a light fill with a solid edge.
  *  On a phone it folds into a small button so it doesn't cover the map; the list opens on a tap. */
-function Legend({ title, rows }: { title: string; rows: readonly { id: string; label: string; color: string }[] }) {
+function Legend({ title, rows }: { title: string; rows: readonly { id: string; label: string; note?: string; codes?: string[]; color: string }[] }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="glass legend" role="group" aria-label={title} data-open={open || undefined}>
@@ -129,7 +129,12 @@ function Legend({ title, rows }: { title: string; rows: readonly { id: string; l
         <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 9l6 6 6-6" /></svg>
       </button>
       <b>{title}</b>
-      <ul>{rows.map((r) => <li key={r.id}><i style={{ ['--sw' as string]: r.color }} aria-hidden="true" />{r.label}</li>)}</ul>
+      <ul>{rows.map((r) => (
+        <li key={r.id} title={r.codes ? `Köppen ${r.codes.join(', ')}` : undefined}>
+          <i style={{ ['--sw' as string]: r.color }} aria-hidden="true" />
+          <span>{r.label}{r.note && <> <small>{r.note}</small></>}</span>
+        </li>
+      ))}</ul>
     </div>
   );
 }
