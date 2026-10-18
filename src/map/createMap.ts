@@ -287,6 +287,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   }
 
   map.on('moveend', () => {
+    if (landing) return; // the step back before a fly-in is not a view to keep in the address (PR #95 review)
     const c = map.getCenter();
     events.onView?.({ lng: c.lng, lat: c.lat, zoom: map.getZoom(), bearing: map.getBearing(), pitch: map.getPitch() });
   });
@@ -419,6 +420,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   function focus(f: Focus, animate: boolean, reframe: boolean) {
     want = f;
     if (reframe) {
+      landing = null; // a new card frames its own place from wherever the camera is
       resetCamera = false; // a new card keeps the learner's tilt; a reset still pending does not carry over to it
       framePending = !skipFrame;
       skipFrame = false;
@@ -435,7 +437,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     },
     focus(f, animate) { focus(f, animate, true); },
     swoop() {
-      if (!want || quizView || reduceMotion()) return;
+      // a camera still flying to its card has no view of its own to come back to: the frame is left to finish (PR #95 review)
+      if (!want || quizView || reduceMotion() || map.isMoving()) return;
       landing = { center: map.getCenter(), zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() };
       map.jumpTo({ zoom: Math.max(5.2, landing.zoom - 2.6), pitch: 0 });
     },

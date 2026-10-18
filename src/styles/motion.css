@@ -75,8 +75,14 @@ html[data-motion="page-up"]::view-transition-new(page){animation:m-enter-l var(-
   background:var(--band);color:var(--foil);font-weight:600;font-size:.92rem;text-decoration:none;
   box-shadow:0 0 0 1px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.22)}
 .showmap svg{width:1.15rem;height:1.15rem}
+.showmap{transition:transform .3s var(--vt-ease),opacity .3s var(--vt-ease)}
+.showmap[data-away]:not(:focus-visible){transform:translate(-50%,150%);opacity:0;pointer-events:none}
 .showmap:hover{background:#000}
 .showmap:focus-visible{outline:2px solid var(--foil);outline-offset:3px}
+
+/* Only the card's first photo travels: a card with two or three photos named them all "hero", the browser refused the duplicate
+   name and dropped the whole move, so card to guide simply cut (owner, 18 Oct 2026: "sudden"; the recording logged the duplicate). */
+html[data-motion^="page"] .card .cover figure:not(:first-child) img{view-transition-name:none}
 
 /* ---- Card to guide and back (owner, 18 Oct 2026: "sudden"): the card itself grows into the guide, and the guide shrinks back into the
    card, instead of one fading while the other rises. The guide borrows the card's name for the move only. */

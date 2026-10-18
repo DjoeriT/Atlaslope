@@ -52,10 +52,22 @@ test('under reduced motion the charts are drawn at once and no move runs', async
 
 test('every guide has a Show map button that goes back to the place on the map', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await page.getByRole('link', { name: 'Show Rioja on the map' }).click();
+  await page.getByRole('link', { name: 'Show map: Rioja' }).click();
   await expect(page.locator('.card h1')).toHaveText('Rioja');
   await expect(page.locator('.pg')).toHaveCount(0);
   await open(page, '#region=castilla-y-leon&page');
-  await page.getByRole('link', { name: 'Show Castilla y León on the map' }).click();
+  await page.getByRole('link', { name: 'Show map: Castilla y León' }).click();
   await expect(page.locator('.card h1')).toHaveText('Castilla y León');
+});
+
+test('card to guide and back run as one move: only one photo carries the shared name', async ({ page }) => {
+  const dup: string[] = [];
+  page.on('console', (m) => { if (/duplicate view-transition-name/i.test(m.text())) dup.push(m.text()); });
+  await open(page, '#place=rueda');
+  await expect(page.locator('.card .cover figure')).not.toHaveCount(0);
+  await page.getByRole('link', { name: /^Explore / }).click();
+  await expect(page.locator('.pg h1')).toHaveText('Rueda');
+  await page.getByRole('link', { name: 'Show map: Rueda' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Rueda');
+  expect(dup).toEqual([]);
 });
