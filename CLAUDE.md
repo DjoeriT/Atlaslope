@@ -57,7 +57,7 @@ Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never
 
 ## Commands
 `npm test` (Vitest), `npm run build`, `npm run shots` (standard screenshots into `shots/`), `Tools/check.sh` (`quick` without UI tests
-and build, `ui` with Playwright UI tests). CI runs the checks and the UI tests in two parallel halves.
+and build, `ui` with Playwright UI tests). CI runs the checks and the UI tests in four parallel parts.
 Locally run only the specs your change touches, once; never the full UI suite, CI runs that (18 Oct: "Site visual fixes" spent 25 of 63
 minutes on local runs CI repeats). Don't rerun a passing check on unchanged code.
 **Flaky tests**: a test that fails then passes on the same code gets an issue and is made deterministic in its own slice, never skipped or left

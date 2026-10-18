@@ -47,7 +47,7 @@ jobs:
       - run: npm ci
       - name: Tools/check.sh
         run: Tools/check.sh
-  # The UI tests are about 90% of the run, so they run in two halves at once (owner card, 18 Oct 2026: one serial job took 4.2 minutes).
+  # The UI tests are about 90% of the run, so they run in four parts at once (owner card, 18 Oct 2026: one serial job took 4.2 minutes; two halves still took 3.7).
   # publish.yml looks these steps up by name to reuse a green run; keep the name.
   ui:
     needs: scope
@@ -57,7 +57,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [1/2, 2/2]
+        shard: [1/4, 2/4, 3/4, 4/4]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

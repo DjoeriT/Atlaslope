@@ -71,10 +71,10 @@ jobs:
               echo "checks run $id is $status; waiting"; if [ "$i" -lt 16 ]; then sleep 30; fi
             done
             [ "${status:-}" = "completed" ] && [ "${conclusion:-}" = "success" ] || return 1
-            # Full checks ran: the old single "Tools/check.sh ui" step, or "Tools/check.sh" plus both "UI tests" halves (a docs-only run skips them all).
+            # Full checks ran: the old single "Tools/check.sh ui" step, or "Tools/check.sh" plus all four "UI tests" parts (a docs-only run skips them all).
             ok=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '[.jobs[].steps[]] as $s | ([$s[] | select(.name == "Tools/check.sh ui" and .conclusion == "success")] | length > 0)
               or (([$s[] | select(.name == "Tools/check.sh" and .conclusion == "success")] | length > 0)
-                and ([$s[] | select(.name == "UI tests" and .conclusion == "success")] | length) >= 2)' 2>/dev/null) || ok=""
+                and ([$s[] | select(.name == "UI tests" and .conclusion == "success")] | length) >= 4)' 2>/dev/null) || ok=""
             [ "$ok" = "true" ] && echo "Reusing checks run $id: the full checks passed on $1 ($2)."
           }
           # A merge commit with exactly the files of its PR head was already tested by the PR's run, so don't wait for main's
