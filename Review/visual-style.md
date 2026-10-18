@@ -26,6 +26,8 @@ an addition and the owner decides.
 - Newsreader for names, headings and the opening sentence. IBM Plex Sans for everything people read in bulk: body, facts, labels, buttons.
 - Scale (rem): 0.7 credit tags on photos, 0.78 small print (source tags, credit lines), 0.9 labels, 1.0 body, 1.25 opening sentence,
   1.6 section heading, 2.3 card title, 3.2 page title, 5 to 8.5 cover title. Uppercase only for kickers (0.72, letter-spacing 0.14em).
+  A kicker only where it carries a fact (legal level "RIOJA · DOCA", quiz progress "STUDY · 3 OF 10"); never one that repeats the
+  heading or the button (premium feel review, 18 Oct 2026: kickers on every home block read as a template). Counts and labels are sentence case.
   No sizes between the steps (site visual review, 18 Oct 2026: the guide had drifted to 22 size and weight pairs).
 - Newsreader weights: 500 for every heading and name; regular (400) for display type, the home page's big headline and its numbers
   (owner 18 Oct 2026, 15:09Z: light 300 read too thin next to the headings below it).
@@ -33,7 +35,7 @@ an addition and the owner decides.
 
 ## Space and shape
 - 8 px rhythm: gaps of 0.5, 1, 1.5, 2 or 3 rem. Sections are separated by a 1 px line and 2 rem of space.
-- Radius: small, as in Colour: `.3rem`, cards and buttons `.4rem`, no pills (owner 18 Oct 11:49Z: "soft buttons"). Shadows are soft and used only on floating things
+- Radius: small, as in Colour: `.3rem`, cards and buttons `.4rem`, no pills anywhere, badges included (owner 18 Oct 11:49Z: "soft buttons"; the SPAIN badge was the last pill, 18 Oct 2026). Shadows are soft and used only on floating things
   (map card, the "at a glance" box, buttons over photos, cards over the map).
 - Targets are at least 44 px. Every interactive item has a visible focus ring.
 - The bar is WCAG 2.2 AA: keyboard reachable, screen-reader labels, no information by colour alone.

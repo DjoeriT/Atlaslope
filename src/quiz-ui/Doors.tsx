@@ -3,7 +3,7 @@ import type { Round } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
-import { focusNames, listOf, nextDue, questionCount } from './doors';
+import { focusNames, listOf, nextDue, questionCount, sharedRegion } from './doors';
 import type { QuizApi } from './useQuiz';
 
 const t = strings.quiz;
@@ -29,14 +29,14 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
   useEffect(() => { if (document.activeElement === document.body) heading.current?.focus({ preventScroll: true }); }, []);
   const due = quiz.plan.due.length;
   const fresh = quiz.plan.intake;
-  const freshNames = listOf(fresh.map((id) => (tree.getPlace(id)?.name ?? id).split(' / ')[0])); // the first form of a two-language name
   const focus = quiz.focus;
+  // A count and the region they share, not a list of names (premium feel review, 18 Oct 2026).
+  const upNext = d.upNext(fresh.length, sharedRegion(tree, fresh), focus.length > 0);
   const next = nextDue(tree, quiz.state, quiz.now());
   const questions = questionCount(round);
   return (
     <section className="card glass" aria-labelledby="qh" data-sub="">
       <div className="body">
-        <div className="kicker">{t.kicker(dayName(quiz.now()))}</div>
         <h1 id="qh" ref={heading} tabIndex={-1}>{t.heading}</h1>
         {!quiz.persistent && <p className="note" role="status">{t.storageBlocked}</p>}
         {quiz.store.status().damaged && <p className="note" role="status">{t.storageDamaged}</p>}
@@ -47,20 +47,20 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
             <>
               <p>{d.studyLede}</p>
               <p className="big"><b>{d.due(due)}</b>{d.and}<b>{d.newCount(fresh.length)}</b>{d.today}</p>
-              {fresh.length > 0 && <p className="sub">{(focus.length ? d.newFromFocus : d.newPlain)(freshNames)}</p>}
+              {fresh.length > 0 && <p className="sub">{upNext}</p>}
               <button className="btn primary wide" onClick={() => onStudy(false)}>{d.start(questions)}</button>
             </>
           ) : (
             <>
               <p>{d.nothingDue}</p>
-              {fresh.length > 0 && <p className="sub">{d.readyNew(freshNames)}</p>}
+              {fresh.length > 0 && <p className="sub">{upNext}</p>}
               {fresh.length > 0
                 ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.learnNew(fresh.length)}</button>
                 : <button className="btn primary wide" onClick={() => onStudy(true)}>{d.learnExtra}</button>}
             </>
           )}
           <p className="focusline">
-            {d.focusLine} <b>{focus.length ? listOf(focusNames(tree, focus)) : d.focusNone}</b>{' '}
+            {focus.length ? d.focusOn(listOf(focusNames(tree, focus))) : d.focusNone}{' '}
             <a href={quizToHash({ sub: 'focus' })}>{focus.length ? d.change : d.setFocus}</a>
           </p>
         </section>

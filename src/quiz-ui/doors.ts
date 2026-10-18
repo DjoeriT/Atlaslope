@@ -40,6 +40,13 @@ export function dueByRegion(tree: Tree, due: readonly MemoryRef[]): Array<{ name
 /** The names a focus list stands for (regions and places), for the focus line. */
 export const focusNames = (tree: Tree, focus: readonly string[]): string[] => focus.map((id) => tree.getRegion(id)?.name ?? tree.getPlace(id)?.name ?? id);
 
+/** The study region all the given places share, or null when they come from more than one: "Up next: 5 places in Green Spain." */
+export function sharedRegion(tree: Tree, placeIds: readonly string[]): string | null {
+  const ids = new Set(placeIds.map((id) => tree.getPlace(id)?.region ?? ''));
+  const [only] = ids;
+  return ids.size === 1 ? tree.getRegion(only)?.name ?? null : null;
+}
+
 /** "A, B and C". */
 export function listOf(names: readonly string[]): string {
   return names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;

@@ -17,6 +17,10 @@ export interface Labels {
   remove(): void;
 }
 
+/** The name a label shows: the first official name of a two-name place ("Bizkaiko Txakolina / Txakolí de Bizkaia" shows "Bizkaiko
+ *  Txakolina"), so it does not run over its neighbours (premium feel review, 18 Oct 2026). The card and the guide keep both names. */
+export const mapName = (name: string) => name.split(' / ')[0];
+
 /** Collision priority: DOCa first, then the rest. Lower wins. */
 const priority = (kind: string) => (kind === 'DOCa' ? 0 : 1);
 
@@ -26,7 +30,7 @@ export function addLabels(map: MapLibreMap, specs: LabelSpec[]): Labels {
     if (!s.at) continue;
     const el = document.createElement('div');
     el.className = `lbl do${s.kind === 'DOCa' ? ' docalvl' : ''}`;
-    el.textContent = s.name;
+    el.textContent = mapName(s.name);
     el.setAttribute('aria-hidden', 'true'); // the cards carry the names for screen readers
     items.push({ marker: new maplibregl.Marker({ element: el }).setLngLat(s.at).addTo(map), el, minZoom: s.minZoom, prio: priority(s.kind) });
   }
