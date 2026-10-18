@@ -10,8 +10,9 @@
   --shadow:0 0 0 1px rgba(20,20,20,.06),0 8px 24px rgba(0,0,0,.1);
   --shadow-lg:0 0 0 1px rgba(20,20,20,.06),0 18px 44px rgba(0,0,0,.16);
   --rad:.3rem;--rad-card:.4rem;
-  /* Card width grows with the photo tiles: 400px on small laptops to 480px on wide screens (owner point 5, 18 Oct 2026). */
-  --card-w:clamp(25rem,30vw,30rem);
+  /* Card width (owner point 5, 18 Oct 2026): map-first products measure 408-420px, 28-29% of 1440 (Google Maps, Apple Maps, Komoot;
+     /mnt/project-files/atlaslope/reviews/2026-10-18-guide-page-benchmark.md part B). So 400px to 432px, about 418px at 1440; the map stays the hero. */
+  --card-w:clamp(25rem,29vw,27rem);
   --label:#1A1714;--label-halo:rgba(255,255,255,.9);
 }
 /* One light theme: native controls stay light whatever the system says. */
