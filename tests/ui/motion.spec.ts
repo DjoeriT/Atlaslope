@@ -82,4 +82,8 @@ test('one way back per screen: top-left Map on a wide screen, the floating Show 
   await expect(page.locator('.showmap')).toBeVisible();
   await page.locator('.showmap').click();
   await expect(page.locator('.card h1')).toHaveText('Rioja');
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await open(page, '#region=castilla-y-leon&page');
+  await expect(page.locator('.rpage > .pg-back')).toBeVisible();
+  await expect(page.locator('.rpage .showmap')).toBeHidden();
 });
