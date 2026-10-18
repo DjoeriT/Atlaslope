@@ -27,8 +27,8 @@ an addition and the owner decides.
 
 ## Space and shape
 - 8 px rhythm: gaps of 0.5, 1, 1.5, 2 or 3 rem. Sections are separated by a 1 px line and 2 rem of space.
-- Radius: 1.25 rem for cards and panels, 1 rem for photos and tiles, pills fully round. Shadows are soft and used only on floating things
-  (map card, the "at a glance" box, buttons over photos).
+- Radius: small, as in Colour: `.3rem`, cards and buttons `.4rem`, no pills (owner 18 Oct 11:49Z: "soft buttons"). Shadows are soft and used only on floating things
+  (map card, the "at a glance" box, buttons over photos, cards over the map).
 - Targets are at least 44 px. Every interactive item has a visible focus ring.
 
 ## Photos
@@ -46,6 +46,11 @@ an addition and the owner decides.
 - No text cut off mid-sentence. If it does not fit, show a shorter sourced fact instead.
 - One way out and one main action per screen. On the full page these are "Back to map" and "Show [place] on the map".
   No two controls that mean nearly the same.
+
+## Website pages (home, owner 18 Oct 2026)
+- Reference: `Review/mock-home-v1/`. The home page shows the product, not a stock photo: the satellite atlas is the hero, with real cards on it.
+- Big Newsreader headline (light weight), one main button in black and champagne, the second action as a text link.
+- Proof is real numbers from the app, not claims. Source organisations appear as their logos in one grey line, only with their permission at launch.
 
 ## How the check is run
 1. Screenshots: desktop 1440x900 and iPad 834x1194, on the atlas and on satellite, plus large text (root font 125%).
