@@ -7,4 +7,4 @@ Escape in Explore ignores a hidden End round prompt. ReviewBot (`Review/explore-
 
 **Decided.** Leaving the quiz pauses rather than discards the round (coordinator default, reversible). Owner card "Once a day": the Today card on the Explore home stays away for the local day once closed or started (`atlaslope.today-closed` in localStorage, `src/app/App.tsx`).
 
-**Open.** Nothing. Release 18 went to the polish pack, so this ships as release 19 on "publish release 19"; merge waits for the release-18 tag. Tester note: `Review/release-18-what-to-test.md`.
+**Open.** Nothing. Release 18 went to the polish pack, so this ships as release 19 on "publish release 19"; merge waits for the release-18 tag. Tester note: `Review/release-19-what-to-test.md`.

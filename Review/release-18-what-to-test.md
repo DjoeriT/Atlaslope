@@ -4,16 +4,19 @@
 Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once with a hard refresh if a page looks stale. Anything odd: a screenshot plus the page address and what you expected is enough.
 
 ## This release
-Explore leaves the quiz behind (#71; if the polish pack ships first, this note goes with release 19 and the polish pack note with 18; owner, 18 Oct 2026: "I was in Explore but it still prompted me on what I had open on the quiz").
+The polish pack (18 Oct 2026): photos that arrive gracefully, magazine type, pages that react as you scroll.
 
-1. **Back to the quiz only where it belongs.** In a round, tap "More about …" on a new place. Its card shows "Back to the quiz".
-   Press Escape, search, or open another place or region: the button is gone, even if you come back to the same place. The Quiz tab still resumes the round.
-2. **The Explore tab pauses the round.** Mid-round, tap Explore: Spain, no quiz on screen. Tap Quiz: the same question, where you left it.
-3. **Browser Back pauses it too.** Mid-round, press the browser's Back until you are in Explore, then tap Quiz: the round is still there.
-4. **Today's button resumes, never replaces.** With a round paused, close nothing and use the Today card's start button on the Explore home: the paused round comes back, not a new one.
-5. **Today card once a day** (owner card "Once a day"). With progress, the Explore home opens on the Today card. Close it, or start the round from it:
-   it stays away (Spain card instead) for the rest of the day, also after a reload. Tomorrow it is back.
+### Photos
+1. **Soft first, sharp after.** Open the Rioja page on a slow connection (or the first time on a phone): each photo shows as a soft blur of itself at once, then sharpens. No grey boxes, no photo drawing top to bottom.
+2. **Second visit is instant.** Go back to the map and open the page again: photos show sharp straight away, no blur.
+3. **Still sharp.** On a Retina screen the big Rioja photo and the region tiles look as sharp as before.
 
-## For you
-PR for #71. Cause [V]: the "Back to the quiz" button showed whenever a round was kept in memory, whatever card was open; the Explore tab unmounted the quiz, dropping the round.
-All 105 UI tests passed locally on the branch [V]. Not verified: Safari, iPad, phone.
+### Type
+4. **Titles.** Big titles (Rioja, Navarra and Aragón) look a little finer and tighter than before; two-line titles break into even lines.
+5. **Drop cap.** On the Rioja page, Terroir opens with a large wine-coloured "T" two lines deep.
+
+### Scroll
+6. **Cover.** On a region page, scroll down slowly: the cover photo moves slower than the page and the big title fades upward.
+7. **Name in the bar.** Keep scrolling: once the big title is gone, the page name appears in the bar next to the logo (wide screens).
+8. **Progress line.** A thin wine line under the bar grows as you scroll and reaches the right edge at the bottom.
+9. **Reduced motion.** With "Reduce motion" on (System Settings, Accessibility), none of 6 to 8 moves; the page works as before.
