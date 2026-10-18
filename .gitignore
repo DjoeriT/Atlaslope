@@ -27,4 +27,4 @@ __pycache__/
 Tools/share/share.html
 
 # Screenshots from Tools/shots.mjs
-shots/
+/shots/
