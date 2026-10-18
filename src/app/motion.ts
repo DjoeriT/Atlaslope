@@ -6,7 +6,7 @@ import { flushSync } from 'react-dom';
 // the page. No motion under "reduce motion", and none in browsers without view transitions (the change simply happens).
 // Owner points 8 and 9 (18 Oct 2026) add the moves inside a guide (sections, charts) and between guides; the spec is
 // Review/motion-spec.md and the moves live in styles/motion.css.
-type Doc = Document & { startViewTransition?: (cb: () => void) => { finished: Promise<void> } };
+type Doc = Document & { startViewTransition?: (cb: () => void) => { finished: Promise<void>; skipTransition?: () => void } };
 export type Move = 'card' | 'page-open' | 'page-close' | 'page-step' | 'page-up' | 'step';
 
 let running: Promise<void> | null = null;
@@ -40,12 +40,17 @@ export function withMotion(change: () => void, kind: Move = 'card') {
   const photo = kind === 'page-step' ? tappedPhoto() : null;
   if (photo instanceof HTMLElement) { photo.style.viewTransitionName = 'hero'; html.dataset.vtFrom = 'tile'; }
   const clear = () => { if (photo instanceof HTMLElement) photo.style.viewTransitionName = ''; delete html.dataset.vtFrom; };
-  let vt: { finished: Promise<void> };
+  let applied = false;
+  const apply = () => { if (applied) return; applied = true; clear(); flushSync(change); };
+  let vt: { finished: Promise<void>; skipTransition?: () => void };
   try {
-    vt = doc.startViewTransition(() => { clear(); flushSync(change); });
+    vt = doc.startViewTransition(apply);
   } catch {
     clear(); delete html.dataset.motion; change(); return;
   }
+  // Navigation never waits on a transition: when the browser has not captured the old screen within a beat (a busy device, the map
+  // drawing behind a long guide; CI caught it stuck for seconds), the move is dropped and the change lands at once.
+  setTimeout(() => { if (!applied) { vt.skipTransition?.(); apply(); } }, 400);
   const done: Promise<void> = vt.finished.catch(() => {}).then(() => {
     if (html.dataset.motion === kind) delete html.dataset.motion;
     if (running === done) running = null;
