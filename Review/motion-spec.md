@@ -20,7 +20,8 @@ One set of moves for the whole atlas, so every navigation feels like the same pr
 | Where | Move | Strength (subtle / balanced / bold) |
 |---|---|---|
 | Card to card | Crossfade, new card rises 10 px (ux.css) | unchanged |
-| Card to guide | Guide rises in, cover photo travels to the header (ux.css) | unchanged |
+| Card to guide | The card grows into the guide; its cover photo travels to the header (owner, 18 Oct: "sudden") | 0.66 s |
+| Guide to map | The guide shrinks back into the card; the camera steps back and flies in to the view you had ("Show map", Atlas, Fly to, Escape, browser back) | 0.66 s, then the flight |
 | Guide to guide | Slides 2 / 5 / 9 % in the direction of travel; a tapped tile photo becomes the next header | 0.6 s |
 | Jump bar tab | Page glides to the section; the bar's marker slides to the tab; a champagne rule sweeps under the heading | marker 0.3 / 0.42 / 0.55 s |
 | Reading a guide | The bar's marker follows the section being read | same |

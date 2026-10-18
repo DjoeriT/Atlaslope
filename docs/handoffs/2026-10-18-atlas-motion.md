@@ -8,6 +8,9 @@ Owner points 8 (navigation transitions) and 9 (animated charts), atlas overhaul 
   an in-out ease (`src/map/flight.ts`).
 - Point 9: climate and altitude charts draw once when seen, Spain row last (`Drawn` in `src/pages/Charts.tsx`); mouse hover lights one
   climate class in every row and the legend. Guideline for new charts in `Review/motion-spec.md`.
+- Owner's three transition notes (17:18Z): card grows into the guide and shrinks back (`motion.css`, the guide borrows the name
+  `card`); a "Show map" button on every guide (`src/pages/PageTop.tsx`); leaving a guide steps the camera back and flies in to the
+  learner's own view (`swoop`/`land` in `src/map/createMap.ts`, `swoopIn` in `MapView.tsx`, called from `App.tsx` on `page-close`).
 - Rioja's study region badge (and its "Where it sits" row and region button) no longer link to the same guide.
 
 ## Decided

@@ -11,7 +11,8 @@ Motion in the atlas (owner points 8 and 9). Best judged on a real Mac or iPad; t
 4. **Sections and photos.** Scrolling a guide, each block eases up as it enters. The full-screen photo viewer fades open.
 5. **Map.** From Spain open a region, then a place, then search a far place (Jerez, then Rioja Alta): short hops are quick, long trips take longer, each starts and lands softly.
 6. **Reduce motion** (macOS Accessibility › Display › Reduce motion): none of the above moves; everything is simply there.
-7. **Rioja's study region badge** on the Rioja guide is plain text now (Rioja is its own study region), not a link to the same page.
+7. **Card to guide and back.** On a map card tap "Explore Rueda": the card grows into the guide. Leave it with the black "Show map" button at the foot of the guide, "Fly to Rueda", Atlas in the bar, Escape or the browser's back: the guide shrinks into the card, the map steps back and flies in to where you were.
+8. **Rioja's study region badge** on the Rioja guide is plain text now (Rioja is its own study region), not a link to the same page.
 
 ## For you
 One PR from `claude/atlas-motion-k1e4fa` (PR #95). Spec `Review/motion-spec.md`; handoff `docs/handoffs/2026-10-18-atlas-motion.md`; ReviewBot `Review/atlas-motion-review.md`, findings fixed. Recordings in the project files `atlaslope/mocks/atlas-motion-r1/`.
