@@ -104,7 +104,8 @@ export function App() {
       const q = parseQuizRoute(location.hash);
       withMotion(() => {
         setQuiz(q);
-        setSel(to);
+        // A Study address names no card: the atlas keeps the one it had, so Atlas comes back to it (review of website slice 2).
+        if (!q) setSel(to);
         setStay(null);
       }, q || quizRef.current ? 'card' : moveOf(selRef.current, to));
     };

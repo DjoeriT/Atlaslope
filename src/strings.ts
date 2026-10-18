@@ -1,7 +1,6 @@
 // All interface text lives here (decision #5).
 export const strings = {
   appName: 'AtlaSlope',
-  brandContext: 'Spain',
   // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
   pageTitleHome: 'Atlas · AtlaSlope',
   pageTitle: (name: string) => `${name} · AtlaSlope`,

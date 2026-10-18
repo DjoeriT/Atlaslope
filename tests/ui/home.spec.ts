@@ -12,7 +12,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   const nav = page.getByRole('navigation', { name: 'Site' });
   await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study']); // Guides and About come with their pages (owner card)
   await expect(page.getByRole('link', { name: 'Open the atlas' })).toHaveAttribute('href', 'atlas/');
-  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.png');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
   await expect(page.locator('#map')).toHaveCount(0);
   expect(scripts.some((u) => /atlas-[\w-]+\.js/.test(u))).toBe(false);
@@ -52,4 +52,16 @@ test('Search on the home page opens the atlas with the search field ready', asyn
   await page.getByRole('link', { name: 'Search places and regions' }).click();
   await expect(page.getByRole('searchbox')).toBeFocused();
   await expect(page).not.toHaveURL(/#search/);
+});
+
+test('Study and back to Atlas returns to the card that was open', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
+  await page.goto('./#place=toro');
+  await expect(page.locator('.card h1')).toHaveText('Toro');
+  const nav = page.getByRole('navigation', { name: 'Site' });
+  await nav.getByRole('link', { name: 'Study' }).click();
+  await expect(page.getByRole('heading', { name: 'Study or review' })).toBeVisible();
+  await nav.getByRole('link', { name: 'Atlas' }).click();
+  await expect(page.getByRole('heading', { level: 1, name: 'Toro' })).toBeVisible();
+  await expect(page).toHaveURL(/#place=toro/);
 });

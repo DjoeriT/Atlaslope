@@ -5,6 +5,7 @@
 .sitebar{position:relative;z-index:10;height:calc(var(--bar) + 1px);background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
 .sitebar:not(.pg-top){position:absolute;top:0;left:0;right:0}
 .pg-top.sitebar{position:sticky;top:0;z-index:20}
+.pg-top.sitebar .in{max-width:76rem;margin:0 auto;padding:0 2rem}
 .sitebar .in{height:100%;display:flex;align-items:center;gap:1.25rem;padding:0 1rem}
 .sitebar :focus-visible{outline-color:var(--foil)}
 .sitebar .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;padding:0;text-decoration:none;color:var(--foil);flex:none;position:relative}
@@ -32,6 +33,7 @@
   .sitebar nav a{padding:0 .55rem}
   .sitebar nav a[aria-current="page"]::after{left:.55rem;right:.55rem}
   .sitebar > .in > .btn{order:3}
+  .pg-top.sitebar .in{padding:0 .5rem 0 .75rem}
 }
 @media (max-width:47.5em){
   .pg-top .search{display:none}

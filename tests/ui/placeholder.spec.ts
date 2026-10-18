@@ -9,7 +9,7 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
   await page.goto('./?fresh=1');
   await expect(page).toHaveTitle('Atlas · AtlaSlope');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
-  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.png');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
   await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image');
   await expect(page.getByRole('link', { name: 'AtlaSlope home' })).toHaveAttribute('href', '../');
   await expect(page.getByRole('searchbox', { name: /Search/ })).toBeVisible();
@@ -26,14 +26,13 @@ test('the bar offers Atlas and Study, and no Progress tab yet', async ({ page })
 });
 
 // Owner, 18 Oct 2026: dark mode dropped; the page stays black and champagne on white whatever the system says.
-test('the page stays light when the system is dark, and the menu has no theme switch', async ({ page }) => {
+test('the page stays light when the system is dark, with no theme switch', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.goto('./?fresh=1');
   await page.getByRole('button', { name: 'Start exploring' }).click();
   await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.*/);
   expect(await page.evaluate(() => getComputedStyle(document.body).getPropertyValue('--paper').trim())).toBe('#FFFFFF');
-  await page.getByRole('button', { name: /^AtlaSlope/ }).click();
-  await expect(page.getByRole('menuitem', { name: /Dark interface/ })).toHaveCount(0);
+  await expect(page.getByText(/Dark interface/)).toHaveCount(0); // the logo's menu is gone too (website slice 2): the logo goes home
 });
 
 test('the first-run screen shows once, and ?fresh=1 brings it back', async ({ page }) => {

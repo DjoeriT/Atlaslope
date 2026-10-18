@@ -1,9 +1,11 @@
-"""Build the link-preview image (public/share.png, 1200x630) shown when atlaslope.com is pasted into a chat or a post.
+"""Build the link-preview image (public/share.jpg, 1200x630) shown when atlaslope.com is pasted into a chat or a post.
 
 Website slice 2 (18 Oct 2026): the home page's look, Salon book in black and champagne. The tagline on white on the left, the atlas on
 satellite (the home page's hero, public/home/hero.webp) on the right. Writes an HTML page of the card and renders it with Playwright's Chromium:
   python3 Tools/share/make_share_image.py && npx playwright screenshot --viewport-size=1200,630 \
-    file://$PWD/Tools/share/share.html public/share.png
+    file://$PWD/Tools/share/share.html /tmp/share.png && python3 -c "from PIL import Image; \
+    Image.open('/tmp/share.png').convert('RGB').save('public/share.jpg', quality=84, optimize=True, progressive=True)"
+JPEG, not PNG: the satellite makes a 700 KB PNG, and chat apps skip preview images that large (code review, website slice 2).
 """
 import pathlib
 

@@ -13,8 +13,13 @@ Thread "Website slice 2" (owner go 11:55Z: "OK let's go"; plan `Review/website-p
 - Quiz is Study in every label (`src/strings.ts`) and in the address (`#study`; `#quiz` still parses). Save or load progress is a link
   at the bottom of the Study screen. `atlas/#search` (the home page's Search) focuses the search field.
 - Favicon, app icons and share card in black and champagne; the share card (`Tools/share/make_share_image.py`) carries the tagline
-  over the hero. `robots.txt` lets preview bots read `/atlas/`. Live map check now opens `/atlas/`.
+  over the hero, as `public/share.jpg` (120 KB; the PNG was 700 KB, too big for chat previews). `robots.txt` lets preview bots read
+  `/atlas/`. The live map check and map preview workflows now open `/atlas/`.
 - UI tests run against `atlas/` (`playwright.config.ts`); new `tests/ui/home.spec.ts` (home, forwarding, Study address, search).
+
+- Reviews: design check `Review/website-slice-2-design-check.md` and code review `Review/website-slice-2-code-review.md`; the should-fix
+  findings are fixed (home search matches the atlas field at 44 px, Study keeps the open card, back-to-Study pill and map menu under the bar,
+  dead brand/toggle CSS removed). `Tools/check.sh ui` passed locally (107 UI tests) [V].
 
 ## Decided (owner cards)
 - 11:56Z: source names, not logos, until MAPA and IGN agree. 11:57Z: Guides and About stay out of the bar until their pages exist;
@@ -25,4 +30,5 @@ Thread "Website slice 2" (owner go 11:55Z: "OK let's go"; plan `Review/website-p
 - Slice 3 (static guide pages, `/spain/` index, per-place share cards, sitemap) and slice 4 (About) bring Guides and About into the bar.
 - Logos: clean official files and an OK from MAPA and IGN.
 - The Study screen's first door is also called "Study" ("Study or review"); fine for now, revisit if it reads oddly.
+- Cloud screenshots of the atlas zoomed into Rioja over satellite sometimes miss the place fills (seen again here); the phone and Study shots draw.
 - Code folders keep the name quiz (`src/quiz/`, `src/quiz-ui/`), as the plan says.

@@ -12,7 +12,7 @@ Allow: /$
 Allow: /index.html
 Allow: /atlas/$
 Allow: /atlas/index.html
-Allow: /share.png
+Allow: /share.jpg
 Disallow: /
 
 User-agent: *

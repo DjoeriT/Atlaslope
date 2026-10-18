@@ -1,7 +1,5 @@
 /* The region page: a full-width page over the map (mock-travel-v1/4-region.html), on the app's tokens. */
 .rpage{position:fixed;inset:0;z-index:4;overflow:auto;background:var(--paper);color:var(--ink)}
-.rback{position:fixed;left:1rem;top:4.6rem;z-index:6;display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1rem 0 .8rem;border-radius:.25rem;background:rgba(255,255,255,.94);color:#1D1915;text-decoration:none;font-weight:500;font-size:.92rem;box-shadow:0 2px 10px rgba(0,0,0,.18)}
-.rback svg{width:1.1rem;height:1.1rem}
 .rcover{position:relative;height:min(62vh,40rem);min-height:22rem;overflow:hidden;background:var(--paper2)}
 .rcover img{width:100%;height:100%;object-fit:cover;display:block}
 .rcover:not(.none)::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.72) 100%)}

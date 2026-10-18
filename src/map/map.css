@@ -45,5 +45,5 @@
 /* It sits inside the button column, so its height is capped against the screen, not the column. */
 /* The column is its stacking context, so the column itself rises above the top bar while the menu is open (ReviewBot, mobile check). */
 .bottomright:has(.menu.br){z-index:9}
-.menu.br{z-index:8;max-height:calc(100vh - 5rem);max-height:calc(100dvh - 5rem);overflow:auto}
+.menu.br{z-index:8;max-height:calc(100vh - var(--bar) - 5rem);max-height:calc(100dvh - var(--bar) - 5rem);overflow:auto} /* the site bar takes the top */
 @media (max-width:51.25em) and (orientation:portrait){.menu.br{bottom:0;max-height:calc(46vh - 2rem);max-height:calc(46dvh - 2rem)}}
