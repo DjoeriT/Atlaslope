@@ -61,8 +61,11 @@ export function App() {
   const [stay, setStay] = useState<Focus | null>(null);
   const lastQuiz = useRef<QuizRoute>({ sub: null }); // where the quiz was, for "Back to the quiz"
   if (quiz) lastQuiz.current = quiz;
-  // A round left for a place's card stays in memory (QuizScreen stays mounted, out of sight) until the learner is back or goes to Explore.
-  const [keepQuiz, setKeepQuiz] = useState(false);
+  // Once opened, the quiz stays mounted out of sight in Explore, so a round left by any way out waits for the Quiz tab.
+  const keepQuiz = useRef(false);
+  if (quiz) keepQuiz.current = true;
+  // The place card opened from the quiz offers "Back to the quiz"; anywhere else in Explore says nothing about the quiz (owner, 18 Oct 2026).
+  const [backTo, setBackTo] = useState<string | null>(null);
   const [autoStart, setAutoStart] = useState(false);
   const [todayClosed, setTodayClosed] = useState(false);
   const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
@@ -75,12 +78,12 @@ export function App() {
     history.pushState(null, '', here() + selectionToHash(selRef.current));
     withMotion(() => {
       setQuiz(null);
-      setKeepQuiz(false);
+      setBackTo(null);
     });
   }, []);
   const openPlaceFromQuiz = useCallback((id: string) => {
     history.pushState(null, '', here() + selectionToHash({ kind: 'place', id }));
-    setKeepQuiz(true);
+    setBackTo(id);
     setQuiz(null);
     setSel({ kind: 'place', id });
   }, []);
@@ -138,7 +141,7 @@ export function App() {
       const el = e.target as HTMLElement;
       if (el.closest('input, textarea, select, [role="menu"], .menu, .flycap')) return;
       // The fly caption marks its Escape handled; the welcome and End round dialogs keep theirs (PR #63 review).
-      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]')) return;
+      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden] *)')) return;
       const cur = selRef.current;
       if (cur.kind === 'country') return;
       go(cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));
@@ -155,14 +158,14 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setKeepQuiz(false); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
-      {(quiz || keepQuiz) && (
+      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
+      {keepQuiz.current && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
           onAutoStarted={() => setAutoStart(false)} onView={setMapView} onOpenPlace={openPlaceFromQuiz}
         />
       )}
-      {!quiz && keepQuiz && !pageOpen && (
+      {!quiz && !pageOpen && place && place.id === backTo && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
       {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
