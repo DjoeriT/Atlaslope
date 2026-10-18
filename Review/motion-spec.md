@@ -30,9 +30,14 @@ One set of moves for the whole atlas, so every navigation feels like the same pr
 | Photo viewer | Fades open | 0.32 s |
 | Map camera | Time grows with distance (zoom levels plus screens), 800 to 2000 ms, soft start and landing | x0.8 / x1 / x1.25 |
 
+Known limit: guide to guide at the same depth (place to place) always slides forward, also on the browser's back; the history API
+does not say which way it went.
+
+Hover is for a mouse only; on touch, and for a screen reader, the legend and the chart's label carry the same words.
+
 ## Guideline for new visualisations (owner point 9)
 A new chart draws itself the first time it is seen (wrap it in `Drawn`, `src/pages/Charts.tsx`), in reading order, with the comparison
-(Spain, the study region) arriving last so the eye reads the place first and the yardstick second. Hover or tap names what is under the
+(Spain, the study region) arriving last so the eye reads the place first and the yardstick second. A mouse hover names what is under the
 pointer. Nothing animates on every scroll; once is enough.
 
 ## Design round 1

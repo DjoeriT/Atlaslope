@@ -21,11 +21,11 @@ function Drawn({ className, children, hover }: { className?: string; children: R
 function Stack({ segments, label, onHover }: { segments: Array<{ label: string; pct: number }>; label: string; onHover(i: number | null): void }) {
   let x = 0;
   return (
-    <svg className="pg-stack" viewBox="0 0 100 4" preserveAspectRatio="none" role="img" aria-label={label} onMouseLeave={() => onHover(null)}>
+    <svg className="pg-stack" viewBox="0 0 100 4" preserveAspectRatio="none" role="img" aria-label={label} onPointerLeave={() => onHover(null)} onPointerCancel={() => onHover(null)}>
       {segments.map((s, i) => {
         // Each class grows from its own left edge, one after the other; a hover names it and lights the same class in every row.
         const rect = (
-          <rect key={i} x={x} y="0" width={Math.max(0, s.pct - 0.4)} height="4" fill={TINTS[i]} data-i={i} style={{ '--seg': i } as CSSProperties} onMouseEnter={() => onHover(i)}>
+          <rect key={i} x={x} y="0" width={Math.max(0, s.pct - 0.4)} height="4" fill={TINTS[i]} data-i={i} style={{ '--seg': i } as CSSProperties} onPointerEnter={(e) => { if (e.pointerType === 'mouse') onHover(i); }}>
             <title>{s.label}</title>
           </rect>
         );
@@ -58,8 +58,9 @@ export function ClimateBar({ name, shares, compare = [] }: { name?: string; shar
           })}
         </dl>
       )}
-      <ul className="pg-legend" aria-hidden="true">
-        {segments.map((s, i) => <li key={s.label} data-i={i}><i style={{ background: TINTS[i] }} />{s.label}</li>)}
+      {/* The legend lights its class too; the chart's label carries the same words for a screen reader, so the legend stays hidden from it. */}
+      <ul className="pg-legend" aria-hidden="true" onPointerLeave={() => setHover(null)}>
+        {segments.map((s, i) => <li key={s.label} data-i={i} onPointerEnter={(e) => { if (e.pointerType === 'mouse') setHover(i); }}><i style={{ background: TINTS[i] }} />{s.label}</li>)}
         {/* A comparison row can hold an "Other" the place itself has none of: it still gets its key (PR #92 review). */}
         {compare.some((c) => compareShares(shares, c.shares).length > segments.length) && <li data-i={segments.length}><i style={{ background: TINTS[segments.length] }} />{t.otherClimate}</li>}
       </ul>

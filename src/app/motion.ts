@@ -39,11 +39,13 @@ export function withMotion(change: () => void, kind: Move = 'card') {
   // Between guides the tile's photo, when one was tapped, becomes the next header (the old header then steps aside: motion.css).
   const photo = kind === 'page-step' ? tappedPhoto() : null;
   if (photo instanceof HTMLElement) { photo.style.viewTransitionName = 'hero'; html.dataset.vtFrom = 'tile'; }
-  const vt = doc.startViewTransition(() => {
-    if (photo instanceof HTMLElement) photo.style.viewTransitionName = '';
-    delete html.dataset.vtFrom;
-    flushSync(change);
-  });
+  const clear = () => { if (photo instanceof HTMLElement) photo.style.viewTransitionName = ''; delete html.dataset.vtFrom; };
+  let vt: { finished: Promise<void> };
+  try {
+    vt = doc.startViewTransition(() => { clear(); flushSync(change); });
+  } catch {
+    clear(); delete html.dataset.motion; change(); return;
+  }
   const done: Promise<void> = vt.finished.catch(() => {}).then(() => {
     if (html.dataset.motion === kind) delete html.dataset.motion;
     if (running === done) running = null;
@@ -59,26 +61,33 @@ export function scrollToSection(id: string, focus: 'heading' | string = 'heading
   const target = focus === 'heading' ? document.getElementById(`${id}-h`) ?? el.querySelector<HTMLElement>('h2') : document.getElementById(focus);
   target?.focus({ preventScroll: true });
   if (reduceMotion()) return;
-  // The section marks its arrival once the glide has settled, so the eye finds where it landed.
+  // The section marks its arrival once the glide has settled, so the eye finds where it landed. A second jump cancels the first's marks.
+  arrival?.();
   el.removeAttribute('data-arrived');
   const root = el.closest('.pg') ?? window;
   let timer = 0;
   const settle = () => { clearTimeout(timer); timer = window.setTimeout(land, 120); };
-  const land = () => { root.removeEventListener('scroll', settle); el.setAttribute('data-arrived', ''); setTimeout(() => el.removeAttribute('data-arrived'), 1400); };
+  const land = () => {
+    root.removeEventListener('scroll', settle);
+    el.setAttribute('data-arrived', '');
+    timer = window.setTimeout(() => el.removeAttribute('data-arrived'), 1400);
+  };
+  arrival = () => { clearTimeout(timer); root.removeEventListener('scroll', settle); el.removeAttribute('data-arrived'); };
   root.addEventListener('scroll', settle, { passive: true });
   settle();
 }
+let arrival: (() => void) | undefined;
 
 /** True once the element has come into view (and stays true), so a chart draws itself once when it is first seen. */
-export function useSeen<T extends Element>(ref: RefObject<T>, margin = '0px 0px -12% 0px'): boolean {
+export function useSeen<T extends Element>(ref: RefObject<T>): boolean {
   const [seen, setSeen] = useState(() => typeof IntersectionObserver === 'undefined' || reduceMotion());
   useEffect(() => {
     const el = ref.current;
     if (seen || !el) return;
-    const io = new IntersectionObserver((entries) => { if (entries.some((e) => e.isIntersecting)) { setSeen(true); io.disconnect(); } }, { rootMargin: margin });
+    const io = new IntersectionObserver((entries) => { if (entries.some((e) => e.isIntersecting)) { setSeen(true); io.disconnect(); } }, { threshold: 0.3 });
     io.observe(el);
     return () => io.disconnect();
-  }, [ref, seen, margin]);
+  }, [ref, seen]);
   return seen;
 }
 
@@ -127,8 +136,11 @@ export function useJumpMarker(nav: RefObject<HTMLElement>, current: string) {
       }
     };
     place();
+    // Fonts landing or the bar wrapping move the tabs: the marker follows.
+    const ro = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(place);
+    ro?.observe(bar);
     window.addEventListener('resize', place);
-    return () => window.removeEventListener('resize', place);
+    return () => { ro?.disconnect(); window.removeEventListener('resize', place); };
   }, [nav, current]);
 }
 

@@ -7,7 +7,7 @@ html[data-motion-level="bold"]{--m-rise:32px;--m-step:9%;--m-chart:1.3s;--m-row:
 
 /* ---- Between guides: forward slides the next guide in from the right, up to a wider guide from the left; a tapped tile's photo
    travels to the next header (motion.ts), and when no photo was tapped the header photos morph into each other. */
-html[data-vt-from="tile"] .rcover img,html[data-vt-from="tile"] .pg-mosaic figure:first-child img{view-transition-name:none}
+html[data-motion][data-vt-from="tile"] .rcover img,html[data-motion][data-vt-from="tile"] .pg-mosaic figure:first-child img{view-transition-name:none}
 html[data-motion="page-step"]::view-transition-group(page),html[data-motion="page-up"]::view-transition-group(page){animation:none}
 html[data-motion="page-step"]::view-transition-old(page){animation:m-leave-l var(--vt-page) var(--vt-ease) both}
 html[data-motion="page-step"]::view-transition-new(page){animation:m-enter-r var(--vt-page) var(--vt-ease) both}
@@ -64,3 +64,6 @@ html[data-motion="page-up"]::view-transition-new(page){animation:m-enter-l var(-
 .pg-chart[data-hover="3"] :is(.pg-stack rect:not([data-i="3"]),.pg-legend li:not([data-i="3"])),
 .pg-chart[data-hover="4"] :is(.pg-stack rect:not([data-i="4"]),.pg-legend li:not([data-i="4"])){opacity:.28}
 .pg-chart[data-hover] .pg-legend li:is([data-i]){color:var(--ink)}
+
+/* Printed, a chart is always fully drawn. */
+@media print{.pg-chart :is(rect,line,span,li){animation:none!important;transform:none!important;opacity:1!important}}
