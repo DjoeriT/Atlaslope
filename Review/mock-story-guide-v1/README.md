@@ -10,7 +10,8 @@ which keeps its plain text (the story is added, nothing is taken away).
 
 ## What it shows
 - Normal scrolling, no scroll-jacking. The step crossing the middle of the reading area sets the map view; the map flies there
-  (jumps instead under reduced motion). The active step gets a wine (gold in dark) bar on its left edge.
+  (jumps instead under reduced motion). Each step gets at least about two thirds of a screen of scrolling and each map move gets 1.6 s to land
+  before the next starts (owner, 07:36Z: short sections jumped too quickly). The active step gets a wine (gold in dark) bar on its left edge.
 - Every "fly" target already in `content/guides/rioja.json` becomes a map stop: the guide text and captions are unchanged.
   Map moves added by the mock: the intro view (Rioja in northern Spain), the three-zone overview for chapter 2, the Rioja overview
   for chapter 4, and the camera tilt on the Sierra de Cantabria, the Alavesa terraces and Haro (pitch and bearing are design choices, not facts).
