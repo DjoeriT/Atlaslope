@@ -12,6 +12,7 @@ Branch `claude/spain-only-badge-ba3jgw`. Small slice (one line of copy, no new s
   `/mnt/project-files/atlaslope/mocks/spain-badge/`, plus `built-desk.png` and `built-phone.png` of the build.
 
 ## Decided
+- ReviewBot (Review/pr-94-review.md): pill radius kept as an owner exception (he asked for a pill), tag .7rem, span plus space.
 - Built B, the recommended option on his card, while it waits [A until he taps]. C was not recommended: chips look clickable, like a country switcher that does nothing.
 
 ## Open
