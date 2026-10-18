@@ -27,7 +27,8 @@ an addition and the owner decides.
 - Scale (rem): 0.7 credit tags on photos, 0.78 small print (source tags, credit lines), 0.9 labels, 1.0 body, 1.25 opening sentence,
   1.6 section heading, 2.3 card title, 3.2 page title, 5 to 8.5 cover title. Uppercase only for kickers (0.72, letter-spacing 0.14em).
   No sizes between the steps (site visual review, 18 Oct 2026: the guide had drifted to 22 size and weight pairs).
-- Newsreader weights: 500 for every heading and name; light (300) only for display type, the home page's big headline and its numbers.
+- Newsreader weights: 500 for every heading and name; regular (400) for display type, the home page's big headline and its numbers
+  (owner 18 Oct 2026, 15:09Z: light 300 read too thin next to the headings below it).
 - Body lines stay under about 75 characters.
 
 ## Space and shape
@@ -64,12 +65,14 @@ an addition and the owner decides.
 
 ## Website pages (home, owner 18 Oct 2026)
 - Reference: `Review/mock-home-v1/`. The home page shows the product, not a stock photo: the satellite atlas is the hero, with real cards on it.
-- Big Newsreader headline (light weight), one main button in black and champagne, the second action as a text link.
+- Big Newsreader headline (regular weight), one main button in black and champagne, the second action as a semibold text link. Open the
+  atlas is the call to action: 60 px tall, semibold, a champagne edge and arrow, and it closes the page again on the black band (owner, 15:09Z).
 - Proof is real numbers from the app, not claims. Source organisations appear as their names set in italic Newsreader until each one agrees to its logo
   (owner card, 18 Oct 2026); then their logos in one grey line.
-- The site bar (slice 2): the black band, 52 px plus a 1 px champagne line, on every page. Logo (goes home), then Atlas and Study on the right in muted
-  champagne, the current one full champagne, semibold and underlined, then search. On the atlas, search is the field; on the home page a link to it.
-  Phone: the logo's mark, search, Atlas, Study in one row. Guides and About join when their pages exist.
+- The site bar: the black band, 64 px (56 on a phone) plus a 1 px champagne line, on every page; a 34 px mark and a 1.6 rem wordmark. Logo
+  (goes home), then Atlas, Study, Guides and About on the right, semibold, muted champagne, the current one full champagne and underlined.
+  Search is in the bar only on the atlas, where it works in place; elsewhere it could only throw you into the atlas (owner, 18 Oct 15:09Z).
+  Phone: the logo's mark, search, Atlas, Study on the atlas (Guides and About wait for a phone menu); all four items on the plain pages.
   It is one bar on every page: the logo 16 px from the window's edge everywhere, the same items; on a guide, Atlas is current and
   there is no separate "Back to map" (site visual review, 18 Oct 2026).
 - One left edge per page: section strips, the footer columns and the tiles hang on the same grid. Home tiles show one readable detail

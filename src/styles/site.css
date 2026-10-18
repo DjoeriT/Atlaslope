@@ -1,20 +1,20 @@
 /* The site's top bar (website slice 2, 18 Oct 2026; approved mock Review/mock-home-v1/): the black band with champagne type, on the atlas
    and on every full page. The home page (index.html, src/home/home.css) draws the same bar. On the atlas the map and everything floating
    on it sit in .stage, the box under the bar, so their positions count from the bar's edge, not the window's. */
-:root{--bar:3.25rem}
+:root{--bar:4rem}
 .sitebar{position:relative;z-index:10;height:calc(var(--bar) + 1px);background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
 .sitebar:not(.pg-top){position:absolute;top:0;left:0;right:0}
 .pg-top.sitebar{position:sticky;top:0;z-index:20}
 .sitebar .in{height:100%;display:flex;align-items:center;gap:1.25rem;padding:0 1rem}
 .sitebar :focus-visible{outline-color:var(--foil)}
-.sitebar .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;min-width:2.75rem;padding:0;text-decoration:none;color:var(--foil);flex:none;position:relative}
-.sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.25rem;letter-spacing:0}
-.sitebar .mark{width:1.6rem;height:1.6rem}
-.sitebar nav{display:flex;gap:.25rem;margin-left:auto}
-.sitebar nav a{position:relative;display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .75rem;color:#D8CDB4;text-decoration:none;font-size:.9rem}
+.sitebar .brand{display:flex;align-items:center;gap:.7rem;min-height:2.75rem;min-width:2.75rem;padding:0;text-decoration:none;color:var(--foil);flex:none;position:relative}
+.sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.6rem;letter-spacing:-.01em}
+.sitebar .mark{width:2.15rem;height:2.15rem}
+.sitebar nav{display:flex;gap:.5rem;margin-left:auto}
+.sitebar nav a{position:relative;display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .85rem;color:#D8CDB4;text-decoration:none;font-size:1rem;font-weight:600;letter-spacing:.01em}
 .sitebar nav a:hover{color:var(--foil)}
-.sitebar nav a[aria-current="page"]{color:var(--foil);font-weight:600}
-.sitebar nav a[aria-current="page"]::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:.3rem;height:2px;background:var(--foil)}
+.sitebar nav a[aria-current="page"]{color:var(--foil)}
+.sitebar nav a[aria-current="page"]::after{content:"";position:absolute;left:.85rem;right:.85rem;bottom:.45rem;height:2px;background:var(--foil)}
 .sitebar .search{width:17rem;min-height:2.75rem;padding:0 .8rem;border-radius:var(--rad);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);
   background:color-mix(in srgb,var(--foil) 8%,var(--band));box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
 .sitebar .search input,.sitebar .search > svg{color:var(--foil)}
@@ -23,13 +23,17 @@
 .stage{position:absolute;top:calc(var(--bar) + 1px);left:0;right:0;bottom:0}
 .saveload a{color:var(--ink2)}
 
-/* Phone, or large text on an iPad: the logo's mark, the search, then Atlas and Study, in one row. */
+/* Phone, or large text on an iPad: the logo's mark, the search, then Atlas and Study, in one row. Guides and About wait for a phone menu
+   (plan: logo, search, Menu); they stay on the home page's bar and footer. */
 @media (max-width:51.25em){
+  :root{--bar:3.5rem}
+  .sitebar .mark{width:1.9rem;height:1.9rem}
   .sitebar .in{gap:.5rem;padding:0 .5rem 0 .75rem}
   .sitebar .brand b{display:none}
   .sitebar .search{order:1;width:auto;flex:1;min-width:0}
   .sitebar nav{order:2;margin-left:0;gap:0}
-  .sitebar nav a{padding:0 .55rem}
+  .sitebar nav a{padding:0 .55rem;font-size:.95rem}
+  .sitebar nav a.more{display:none}
   .sitebar nav a[aria-current="page"]::after{left:.55rem;right:.55rem}
   .sitebar > .in > .btn{order:3}
 }
