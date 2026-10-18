@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { measuresOf, sheetOf } from '../../src/facts';
-import { altitudeBar, climateSegments, glanceCells, mosaicPics, swatchOf, type Pic } from '../../src/pages/helpers';
+import { altitudeBar, climateSegments, compareShares, glanceCells, mosaicPics, swatchOf, type Pic } from '../../src/pages/helpers';
 
 const pic = (n: string): Pic => ({ src: `photos/${n}.webp`, alt: n, artist: 'A', licence: 'CC', page: 'https://commons.wikimedia.org/' });
 
@@ -44,6 +44,17 @@ describe('altitude bar', () => {
   });
   it('widens the scale for a place that goes higher', () => {
     expect(altitudeBar({ p10: 1000, median: 1500, p90: 2300, samples: 9 }).max).toBe(2500);
+  });
+  it('shares one scale with its comparison rows', () => {
+    expect(altitudeBar({ p10: 360, median: 550, p90: 890, samples: 9 }, 2500).max).toBe(2500);
+  });
+});
+
+describe('climate comparison rows', () => {
+  it('reads the other row in the place\'s own classes, the rest as Other', () => {
+    const own = [{ code: 'Csb', name: '', share: 0.6 }, { code: 'Cfb', name: '', share: 0.4 }];
+    const spain = [{ code: 'Csa', name: '', share: 0.5 }, { code: 'Csb', name: '', share: 0.2 }];
+    expect(compareShares(own, spain).map((r) => r.label)).toEqual(['Warm-summer Mediterranean 20%', 'Oceanic 0%', 'Other 80%']);
   });
 });
 

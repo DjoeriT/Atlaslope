@@ -3,6 +3,7 @@ import { ROOT } from '../site';
 import photosFile from '../../data/photos.json';
 import photoSizesFile from '../../data/photo-sizes.json';
 import sourcesFile from '../../content/sources.json';
+import curriculumFile from '../../content/curriculum.json';
 import type { Measures, Photo, ShownPhoto, Sheet, SheetFile, Sources } from './types';
 
 export { checkSheets } from './check';
@@ -16,12 +17,25 @@ const modules = import.meta.glob<SheetFile>('../../content/facts/*.json', { eage
 export const sheetFiles: SheetFile[] = Object.values(modules);
 export const sources = sourcesFile as Sources;
 const sheets = new Map<string, Sheet>(sheetFiles.flatMap((f) => f.sheets.map((s) => [s.id, s] as const)));
-const measures = (measuresFile as unknown as { places: Record<string, Measures> }).places;
+const measuresDoc = measuresFile as unknown as {
+  places: Record<string, Measures>;
+  country: { spain: Measures };
+  regions: Record<string, Measures>;
+};
+const measures = measuresDoc.places;
 const photos = (photosFile as unknown as { photos: Record<string, Photo> }).photos;
 const photoSizes = photoSizesFile as { sizes: number[]; photos: Record<string, { w: number; h: number; blur: string }> };
 
 export const sheetOf = (placeId: string): Sheet | undefined => sheets.get(placeId);
 export const measuresOf = (placeId: string): Measures | undefined => measures[placeId];
+/** All of Spain's land, measured the same way as a place, for comparisons. */
+export const spainMeasures = (): Measures => measuresDoc.country.spain;
+/** A study region's appellation-level land, measured the same way as a place, for comparisons. */
+export const regionMeasuresOf = (regionId: string): Measures | undefined => measuresDoc.regions[regionId];
+
+const wset = (curriculumFile as { wset: { levels: Record<string, string[]> } }).wset.levels;
+/** The WSET levels whose published specification lists this place by name ("3", "2"), lowest first; empty when none does. */
+export const wsetLevelsOf = (placeId: string): string[] => Object.keys(wset).filter((l) => wset[l].includes(placeId)).sort();
 
 /** Up to three photos of a place, in numbered order. `src` (the full 1200 px file) and the `srcSet` widths start at the site root (ROOT). */
 export function photosOf(placeId: string): ShownPhoto[] {

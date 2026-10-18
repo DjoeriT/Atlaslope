@@ -1,5 +1,5 @@
 {
- "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. See data/SOURCES.md.",
+ "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json). regions: the same measures over the union of a study region's appellation-level places (parent spain; zones excluded), for comparisons. See data/SOURCES.md.",
  "places": {
   "cava": {
    "altitude": {
@@ -1878,6 +1878,285 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.06
+    }
+   ]
+  }
+ },
+ "country": {
+  "spain": {
+   "altitude": {
+    "p10": 180,
+    "median": 680,
+    "p90": 1190,
+    "samples": 5992
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.37
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.21
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.19
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.12
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.06
+    }
+   ]
+  }
+ },
+ "regions": {
+  "andalucia": {
+   "altitude": {
+    "p10": 40,
+    "median": 660,
+    "p90": 1330,
+    "samples": 5978
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.81
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.09
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "baleares": {
+   "altitude": {
+    "p10": 30,
+    "median": 100,
+    "p90": 190,
+    "samples": 1925
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.96
+    }
+   ]
+  },
+  "canarias": {
+   "altitude": {
+    "p10": 50,
+    "median": 330,
+    "p90": 1310,
+    "samples": 6002
+   },
+   "koppen": [
+    {
+     "code": "BWh",
+     "name": "Arid, desert, hot",
+     "share": 0.41
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.27
+    },
+    {
+     "code": "BSh",
+     "name": "Arid, steppe, hot",
+     "share": 0.2
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.1
+    }
+   ]
+  },
+  "castilla-y-leon": {
+   "altitude": {
+    "p10": 680,
+    "median": 790,
+    "p90": 970,
+    "samples": 6022
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.49
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.35
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.14
+    }
+   ]
+  },
+  "cataluna": {
+   "altitude": {
+    "p10": 100,
+    "median": 370,
+    "p90": 710,
+    "samples": 5973
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.52
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.24
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.14
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "ebro": {
+   "altitude": {
+    "p10": 340,
+    "median": 530,
+    "p90": 890,
+    "samples": 6001
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.56
+    },
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.19
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.19
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "green-spain": {
+   "altitude": {
+    "p10": 100,
+    "median": 460,
+    "p90": 970,
+    "samples": 6010
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.62
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.38
+    }
+   ]
+  },
+  "mediterranean": {
+   "altitude": {
+    "p10": 240,
+    "median": 620,
+    "p90": 980,
+    "samples": 6010
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.71
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.2
+    }
+   ]
+  },
+  "meseta": {
+   "altitude": {
+    "p10": 330,
+    "median": 680,
+    "p90": 890,
+    "samples": 5998
+   },
+   "koppen": [
+    {
+     "code": "BSk",
+     "name": "Arid, steppe, cold",
+     "share": 0.54
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.45
+    }
+   ]
+  },
+  "rioja": {
+   "altitude": {
+    "p10": 360,
+    "median": 550,
+    "p90": 890,
+    "samples": 3695
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.4
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.32
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.24
     }
    ]
   }
