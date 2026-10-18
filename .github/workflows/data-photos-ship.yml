@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q pillow==11.0.0
       - run: /tmp/venv/bin/python -I Tools/data/photo_ship.py
       - run: /tmp/venv/bin/python -I Tools/data/photo_sizes.py
