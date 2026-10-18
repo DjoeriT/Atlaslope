@@ -14,6 +14,8 @@ export interface LabelSpec {
 
 export interface Labels {
   setVisible(on: boolean): void;
+  /** Re-run the collision checks, after something else on the map (a key-place chip) moved. */
+  refresh(): void;
   remove(): void;
 }
 
@@ -41,8 +43,9 @@ export function addLabels(map: MapLibreMap, specs: LabelSpec[]): Labels {
     const z = map.getZoom();
     kept = [];
     const W = window.innerWidth, H = window.innerHeight;
-    // The map's own buttons and legend count as taken, so a name never runs under them (site visual review, 18 Oct 2026).
-    const chrome = [...document.querySelectorAll('.bottomright, .legend')].map((c) => c.getBoundingClientRect()).filter((r) => r.width > 0);
+    // The map's own buttons and legend count as taken, so a name never runs under them (site visual review, 18 Oct 2026). So do the
+    // key-place chips (flags.ts): a chip names what the region's source names, so it wins over a place name.
+    const chrome = [...document.querySelectorAll<HTMLElement>('.bottomright, .legend, .mapflag')].filter((c) => c.style.visibility !== 'hidden').map((c) => c.getBoundingClientRect()).filter((r) => r.width > 0);
     const order = items.filter((i) => shown && z >= i.minZoom).sort((a, b) => a.prio - b.prio);
     for (const i of items) i.el.style.visibility = 'hidden';
     for (const { el } of order) {
@@ -65,13 +68,15 @@ export function addLabels(map: MapLibreMap, specs: LabelSpec[]): Labels {
     for (const id of layers) if (!base.has(id)) base.set(id, map.getFilter(id) as FilterSpecification | undefined);
     const box = map.getCanvasContainer().getBoundingClientRect();
     const hide = new Set<string>();
-    if (kept.length > 0) {
+    const flags = [...document.querySelectorAll<HTMLElement>('.mapflag')].filter((el) => el.style.visibility !== 'hidden').map((el) => el.getBoundingClientRect());
+    const taken = [...kept, ...flags];
+    if (taken.length > 0) {
       for (const f of map.querySourceFeatures('osm', { sourceLayer: 'place' })) {
         const name = f.properties?.name;
         if (typeof name !== 'string' || hide.has(name) || f.geometry.type !== 'Point') continue;
         const p = map.project(f.geometry.coordinates as [number, number]);
         const x = box.left + p.x, y = box.top + p.y, half = name.length * 3.5 + 4;
-        if (kept.some((k) => x + half > k.left && x - half < k.right && y + 9 > k.top && y - 9 < k.bottom)) hide.add(name);
+        if (taken.some((k) => x + half > k.left && x - half < k.right && y + 9 > k.top && y - 9 < k.bottom)) hide.add(name);
       }
     }
     const key = [...hide].sort().join('|');
@@ -98,6 +103,7 @@ export function addLabels(map: MapLibreMap, specs: LabelSpec[]): Labels {
 
   return {
     setVisible(on) { shown = on; update(); yieldTowns(); },
+    refresh() { update(); soon(); },
     remove() {
       map.off('zoom', update); map.off('moveend', update); map.off('pitchend', update); map.off('rotateend', update); map.off('moveend', soon); map.off('sourcedata', onData);
       clearTimeout(timer);

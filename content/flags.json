@@ -1,0 +1,128 @@
+{
+  "_about": "Key places on the map: 3 to 5 per region, only places an official source names, each line one idea, all backed by the cites (owner card 18 Oct 2026, style B name chips). Shown while one of the listed places is selected. Positions are OpenStreetMap points (data/SOURCES.md, Map flags).",
+  "sets": [
+    {
+      "places": [
+        "rioja",
+        "rioja-alta",
+        "rioja-alavesa",
+        "rioja-oriental"
+      ],
+      "flags": [
+        {
+          "id": "haro",
+          "name": "Haro",
+          "at": [-2.8467, 42.5769],
+          "lines": [
+            "Rioja's westernmost town.",
+            "A French firm in its station quarter hired a champagne maker from Reims in 1890."
+          ],
+          "cite": [
+            "rioja-pliego:p15",
+            "rioja-pliego:p19"
+          ]
+        },
+        {
+          "id": "sierra-de-cantabria",
+          "name": "Sierra de Cantabria",
+          "at": [-2.6432, 42.5972],
+          "lines": [
+            "The mountains on the northern side.",
+            "They shelter Rioja Alta, and Rioja Alavesa even more."
+          ],
+          "cite": [
+            "rioja-pliego:p20"
+          ]
+        },
+        {
+          "id": "ebro",
+          "name": "Ebro",
+          "at": [-2.4437, 42.4699],
+          "lines": [
+            "The vineyards lie on both banks of the river.",
+            "Alluvial soils near the rivers make up half the land."
+          ],
+          "cite": [
+            "rioja-pliego:p14",
+            "rioja-pliego:p15"
+          ]
+        },
+        {
+          "id": "alfaro",
+          "name": "Alfaro",
+          "at": [-1.7492, 42.1786],
+          "lines": [
+            "Rioja's easternmost town, 100 km from Haro."
+          ],
+          "cite": [
+            "rioja-pliego:p15"
+          ]
+        }
+      ]
+    },
+    {
+      "places": [
+        "jerez"
+      ],
+      "flags": [
+        {
+          "id": "jerez-de-la-frontera",
+          "name": "Jerez de la Frontera",
+          "at": [-6.1377, 36.6817],
+          "lines": [
+            "One of the three towns where Sherry must be aged."
+          ],
+          "cite": [
+            "jerez-doc:p3"
+          ]
+        },
+        {
+          "id": "sanlucar",
+          "name": "Sanlúcar de Barrameda",
+          "at": [-6.3535, 36.7761],
+          "lines": [
+            "One of the three towns where Sherry must be aged.",
+            "Manzanilla has its own DO named after it."
+          ],
+          "cite": [
+            "jerez-doc:p3",
+            "manzanilla-doc"
+          ]
+        },
+        {
+          "id": "el-puerto",
+          "name": "El Puerto de Santa María",
+          "at": [-6.2253, 36.6004],
+          "lines": [
+            "The third of the three towns where Sherry must be aged."
+          ],
+          "cite": [
+            "jerez-doc:p3"
+          ]
+        },
+        {
+          "id": "guadalete",
+          "name": "Guadalete",
+          "at": [-5.9349, 36.6476],
+          "lines": [
+            "The river is the southern edge of the area where Sherry is aged."
+          ],
+          "cite": [
+            "jerez-doc:p3"
+          ]
+        },
+        {
+          "id": "chipiona",
+          "name": "Chipiona",
+          "at": [-6.4348, 36.7355],
+          "lines": [
+            "Moscatel may also be aged here, and in Chiclana."
+          ],
+          "cite": [
+            "jerez-doc:p3"
+          ]
+        }
+      ]
+    }
+  ]
+}
