@@ -1,0 +1,627 @@
+{
+ "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it.",
+ "spain": {
+  "lede": "From Atlantic rain in the north to volcanic ash in the Canaries. Pick a region and fly in.",
+  "from": [
+   "txakoli-getaria",
+   "lanzarote"
+  ],
+  "cite": [
+   "txakoli-getaria-doc:p3",
+   "lanzarote-doc:p6"
+  ]
+ },
+ "regions": {
+  "green-spain": {
+   "title": "Spain's wet Atlantic edge",
+   "lede": "The Atlantic side of Spain, with about 1,600 mm of rain at Getaria. The whites come out bright and high in acid.",
+   "from": [
+    "txakoli-getaria",
+    "rias-baixas",
+    "txakoli-bizkaia"
+   ],
+   "cite": [
+    "txakoli-getaria-doc:p3",
+    "rias-baixas-doc:p5",
+    "txakoli-bizkaia-doc:p5"
+   ]
+  },
+  "castilla-y-leon": {
+   "title": "High, harsh and continental",
+   "lede": "A high plateau with hard winters and big swings between day and night. In Ribera del Duero, Tempranillo is made to age.",
+   "from": [
+    "rueda",
+    "toro",
+    "ribera-del-duero"
+   ],
+   "cite": [
+    "rueda-doc:p13",
+    "rueda-doc:p14",
+    "toro-doc:p3",
+    "ribera-del-duero-doc:p3"
+   ]
+  },
+  "rioja": {
+   "title": "Where the Atlantic meets the Mediterranean",
+   "lede": "Two climates meet here, with about 400 mm of rain. The reds are made for ageing.",
+   "from": [
+    "rioja"
+   ],
+   "cite": [
+    "rioja-doc:p5"
+   ]
+  },
+  "ebro": {
+   "title": "Shaped by the cierzo",
+   "lede": "A dry wind, the cierzo, keeps the vines short of water. They ripen slowly, into deep-coloured, aromatic wines.",
+   "from": [
+    "campo-de-borja"
+   ],
+   "cite": [
+    "campo-de-borja-doc:p6"
+   ]
+  },
+  "cataluna": {
+   "title": "From the sea to the mountains",
+   "lede": "Vines from the coast, shaped by the sea, to mountain slopes sheltered from it. Priorat's steep slate gives deep-coloured reds.",
+   "from": [
+    "tarragona",
+    "montsant",
+    "priorat"
+   ],
+   "cite": [
+    "tarragona-doc:p6",
+    "montsant-doc:p7",
+    "priorat-doc:p5"
+   ]
+  },
+  "mediterranean": {
+   "title": "Monastrell country",
+   "lede": "Hot, dry and chalky. Monastrell gives broad, fleshy reds here.",
+   "from": [
+    "jumilla",
+    "yecla"
+   ],
+   "cite": [
+    "jumilla-doc:p12",
+    "yecla-doc:p3",
+    "yecla-doc:p6"
+   ]
+  },
+  "meseta": {
+   "title": "Wide, dry, sunny plains",
+   "lede": "Plains with 300 to 350 mm of rain and 3,000 hours of sun. Low yields add balance.",
+   "from": [
+    "la-mancha"
+   ],
+   "cite": [
+    "la-mancha-doc:p7"
+   ]
+  },
+  "andalucia": {
+   "title": "Flor and the solera",
+   "lede": "In Jerez, flor yeast and soleras age the wines. The vines grow on albariza, a soft marl that holds moisture.",
+   "from": [
+    "jerez"
+   ],
+   "cite": [
+    "jerez-doc:p3"
+   ]
+  },
+  "baleares": {
+   "title": "Island vines at sea level",
+   "lede": "Island vineyards at sea level, under strong sun. The salty Embat wind keeps them cool.",
+   "from": [
+    "pla-i-llevant"
+   ],
+   "cite": [
+    "pla-i-llevant-doc:p5",
+    "pla-i-llevant-doc:p6"
+   ]
+  },
+  "canarias": {
+   "title": "Native grapes on volcanic soil",
+   "lede": "Native grapes on volcanic soil, under an Atlantic climate. On Lanzarote they grow in ash, behind stone walls, on 150 mm of rain.",
+   "from": [
+    "la-palma",
+    "lanzarote"
+   ],
+   "cite": [
+    "la-palma-doc:p6",
+    "la-palma-doc:p7",
+    "lanzarote-doc:p6"
+   ]
+  }
+ },
+ "places": {
+  "montilla-moriles": {
+   "title": "Pedro Ximénez, ripened fast in the heat",
+   "cite": [
+    "montilla-moriles-doc:p4",
+    "montilla-moriles-doc:p5"
+   ]
+  },
+  "granada": {
+   "title": "Half the area lies above 1,000 metres",
+   "cite": [
+    "granada-doc:p6"
+   ]
+  },
+  "condado-de-huelva": {
+   "title": "Lowland beside Doñana",
+   "cite": [
+    "condado-de-huelva-doc:p6"
+   ]
+  },
+  "malaga": {
+   "title": "Sun-dried grapes for sweet wines",
+   "cite": [
+    "malaga-doc:p6"
+   ]
+  },
+  "sierras-de-malaga": {
+   "title": "Europe's southernmost sierras",
+   "cite": [
+    "sierras-de-malaga-doc:p5"
+   ]
+  },
+  "lebrija": {
+   "title": "Summers topping 40 °C",
+   "cite": [
+    "lebrija-doc:p5"
+   ]
+  },
+  "jerez": {
+   "title": "Albariza, a marl that holds moisture",
+   "cite": [
+    "jerez-doc:p3"
+   ]
+  },
+  "manzanilla": {
+   "title": "Sea air feeds the flor",
+   "cite": [
+    "manzanilla-doc:p3"
+   ]
+  },
+  "binissalem": {
+   "title": "Local grapes, ripened in full",
+   "cite": [
+    "binissalem-doc:p6"
+   ]
+  },
+  "pla-i-llevant": {
+   "title": "Island vines cooled by the salty Embat",
+   "cite": [
+    "pla-i-llevant-doc:p5",
+    "pla-i-llevant-doc:p6"
+   ]
+  },
+  "lanzarote": {
+   "title": "Vines in ash, behind stone walls",
+   "cite": [
+    "lanzarote-doc:p6"
+   ]
+  },
+  "la-palma": {
+   "title": "Volcanic soil in the trade winds",
+   "cite": [
+    "la-palma-doc:p6",
+    "la-palma-doc:p7"
+   ]
+  },
+  "tacoronte-acentejo": {
+   "title": "A long, slow growing season",
+   "cite": [
+    "tacoronte-acentejo-doc:p6"
+   ]
+  },
+  "valle-de-guimar": {
+   "title": "Vines from 300 to 1,700 metres",
+   "cite": [
+    "valle-de-guimar-doc:p8",
+    "valle-de-guimar-doc:p9"
+   ]
+  },
+  "valle-de-la-orotava": {
+   "title": "Gentle volcanic slopes at 400 to 800 metres",
+   "cite": [
+    "valle-de-la-orotava-doc:p7"
+   ]
+  },
+  "ycoden-daute-isora": {
+   "title": "Slopes falling from Teide to the sea",
+   "cite": [
+    "ycoden-daute-isora-doc:p6"
+   ]
+  },
+  "abona": {
+   "title": "Arid slopes of south-east Tenerife",
+   "cite": [
+    "abona-doc:p7"
+   ]
+  },
+  "la-gomera": {
+   "title": "Many microclimates on steep terraces",
+   "cite": [
+    "la-gomera-doc:p8"
+   ]
+  },
+  "gran-canaria": {
+   "title": "Warmth from the African coast",
+   "cite": [
+    "gran-canaria-doc:p7"
+   ]
+  },
+  "el-hierro": {
+   "title": "Stony terraces from 50 to 1,000 metres",
+   "cite": [
+    "el-hierro-doc:p6"
+   ]
+  },
+  "bierzo": {
+   "title": "An Atlantic-continental basin",
+   "cite": [
+    "bierzo-doc:p3"
+   ]
+  },
+  "leon": {
+   "title": "Long winters, short summers",
+   "cite": [
+    "leon-doc:p5"
+   ]
+  },
+  "arlanza": {
+   "title": "Big day-night swings at altitude",
+   "cite": [
+    "arlanza-doc:p5"
+   ]
+  },
+  "valles-de-benavente": {
+   "title": "Prieto Picudo on deep, poor soils",
+   "cite": [
+    "valles-de-benavente-doc:p4"
+   ]
+  },
+  "cigales": {
+   "title": "Old vines along the Pisuerga",
+   "cite": [
+    "cigales-doc:p5"
+   ]
+  },
+  "ribera-del-duero": {
+   "title": "Tempranillo built to age",
+   "cite": [
+    "ribera-del-duero-doc:p3"
+   ]
+  },
+  "valtiendas": {
+   "title": "High, dry vineyards on clay and pebbles",
+   "cite": [
+    "valtiendas-doc:p4",
+    "valtiendas-doc:p5"
+   ]
+  },
+  "toro": {
+   "title": "Old bush vines on iron-rich loam",
+   "cite": [
+    "toro-doc:p3"
+   ]
+  },
+  "tierra-del-vino-de-zamora": {
+   "title": "Old vines, very ripe grapes",
+   "cite": [
+    "tierra-del-vino-de-zamora-doc:p5"
+   ]
+  },
+  "rueda": {
+   "title": "A high plateau, 700 to 870 metres",
+   "cite": [
+    "rueda-doc:p13",
+    "rueda-doc:p14"
+   ]
+  },
+  "arribes": {
+   "title": "Canyon vineyards on granite and slate",
+   "cite": [
+    "arribes-doc:p11",
+    "arribes-doc:p12"
+   ]
+  },
+  "sierra-de-salamanca": {
+   "title": "Rufete on terraced slate",
+   "cite": [
+    "sierra-de-salamanca-doc:p4"
+   ]
+  },
+  "cebreros": {
+   "title": "Old Garnacha on granite slopes",
+   "cite": [
+    "cebreros-doc:p9",
+    "cebreros-doc:p11",
+    "cebreros-doc:p12"
+   ]
+  },
+  "emporda": {
+   "title": "Light soils on the Empordà plain",
+   "cite": [
+    "emporda-doc:p7"
+   ]
+  },
+  "costers-del-segre": {
+   "title": "An inland zone of big day-night swings",
+   "cite": [
+    "costers-del-segre-doc:p6"
+   ]
+  },
+  "pla-de-bages": {
+   "title": "Aromas of wild herbs",
+   "cite": [
+    "pla-de-bages-doc:p6"
+   ]
+  },
+  "alella": {
+   "title": "Deep roots in granite",
+   "cite": [
+    "alella-doc:p6"
+   ]
+  },
+  "conca-de-barbera": {
+   "title": "The home of Trepat",
+   "cite": [
+    "conca-de-barbera-doc:p8"
+   ]
+  },
+  "penedes": {
+   "title": "Where white grapes ripen fresh",
+   "cite": [
+    "penedes-doc:p6"
+   ]
+  },
+  "priorat": {
+   "title": "Steep slopes of shallow slate",
+   "cite": [
+    "priorat-doc:p5"
+   ]
+  },
+  "tarragona": {
+   "title": "Sea air in Camp de Tarragona",
+   "cite": [
+    "tarragona-doc:p6"
+   ]
+  },
+  "montsant": {
+   "title": "Sheltered from the sea",
+   "cite": [
+    "montsant-doc:p7"
+   ]
+  },
+  "terra-alta": {
+   "title": "A salty note from limestone",
+   "cite": [
+    "terra-alta-doc:p6"
+   ]
+  },
+  "navarra": {
+   "title": "A cold, drying wind",
+   "cite": [
+    "navarra-doc:p8"
+   ]
+  },
+  "somontano": {
+   "title": "Big swings in August and September",
+   "cite": [
+    "somontano-doc:p7"
+   ]
+  },
+  "campo-de-borja": {
+   "title": "Vines kept thirsty by the cierzo",
+   "cite": [
+    "campo-de-borja-doc:p6"
+   ]
+  },
+  "urbezo": {
+   "title": "Deep, stony, well-drained soils",
+   "cite": [
+    "urbezo-doc:p5"
+   ]
+  },
+  "carinena": {
+   "title": "A harsh setting for hardy vines",
+   "cite": [
+    "carinena-doc:p8"
+   ]
+  },
+  "calatayud": {
+   "title": "Slow ripening at altitude",
+   "cite": [
+    "calatayud-doc:p9"
+   ]
+  },
+  "txakoli-bizkaia": {
+   "title": "Cool, humid Atlantic summers",
+   "cite": [
+    "txakoli-bizkaia-doc:p5"
+   ]
+  },
+  "cangas": {
+   "title": "Stony slate on steep slopes",
+   "cite": [
+    "cangas-doc:p6"
+   ]
+  },
+  "txakoli-getaria": {
+   "title": "Vines by the sea",
+   "cite": [
+    "txakoli-getaria-doc:p3"
+   ]
+  },
+  "txakoli-alava": {
+   "title": "The round, low-acid txakoli",
+   "cite": [
+    "txakoli-alava-doc:p4"
+   ]
+  },
+  "rias-baixas": {
+   "title": "Albariño on pergolas",
+   "cite": [
+    "rias-baixas-doc:p5"
+   ]
+  },
+  "ribeira-sacra": {
+   "title": "Terraces above the Miño and Sil",
+   "cite": [
+    "ribeira-sacra-doc:p11",
+    "ribeira-sacra-doc:p12"
+   ]
+  },
+  "valdeorras": {
+   "title": "Godello on sloping vineyards",
+   "cite": [
+    "valdeorras-doc:p6"
+   ]
+  },
+  "ribeiro": {
+   "title": "Rugged, thirsty soils",
+   "cite": [
+    "ribeiro-doc:p4"
+   ]
+  },
+  "monterrei": {
+   "title": "Big day-night swings at ripening",
+   "cite": [
+    "monterrei-doc:p5"
+   ]
+  },
+  "valencia": {
+   "title": "Grapes that ripen early",
+   "cite": [
+    "valencia-doc:p8"
+   ]
+  },
+  "utiel-requena": {
+   "title": "Bobal, deep red and high in acid",
+   "cite": [
+    "utiel-requena-doc:p9",
+    "utiel-requena-doc:p10"
+   ]
+  },
+  "yecla": {
+   "title": "Monastrell on a high, dry plateau",
+   "cite": [
+    "yecla-doc:p3",
+    "yecla-doc:p6"
+   ]
+  },
+  "jumilla": {
+   "title": "Monastrell, made for drought",
+   "cite": [
+    "jumilla-doc:p12"
+   ]
+  },
+  "alicante": {
+   "title": "Freshened by sea air",
+   "cite": [
+    "alicante-doc:p7"
+   ]
+  },
+  "bullas": {
+   "title": "Monastrell at altitude",
+   "cite": [
+    "bullas-doc:p7"
+   ]
+  },
+  "mondejar": {
+   "title": "Red, potassium-rich soils",
+   "cite": [
+    "mondejar-doc:p5"
+   ]
+  },
+  "vinos-de-madrid": {
+   "title": "Low yields, about 3,000 kg/ha",
+   "cite": [
+    "vinos-de-madrid-doc:p5",
+    "vinos-de-madrid-doc:p6"
+   ]
+  },
+  "mentrida": {
+   "title": "An extreme continental climate",
+   "cite": [
+    "mentrida-doc:p6"
+   ]
+  },
+  "ucles": {
+   "title": "Wines made to last in bottle",
+   "cite": [
+    "ucles-doc:p6"
+   ]
+  },
+  "manchuela": {
+   "title": "Bobal between two river valleys",
+   "cite": [
+    "manchuela-doc:p7"
+   ]
+  },
+  "ribera-del-jucar": {
+   "title": "More rain, thanks to the Júcar canyon",
+   "cite": [
+    "ribera-del-jucar-doc:p5"
+   ]
+  },
+  "la-mancha": {
+   "title": "3,000 hours of sun",
+   "cite": [
+    "la-mancha-doc:p7"
+   ]
+  },
+  "almansa": {
+   "title": "A high plateau on limestone",
+   "cite": [
+    "almansa-doc:p7"
+   ]
+  },
+  "ribera-del-guadiana": {
+   "title": "Dry months that keep disease away",
+   "cite": [
+    "ribera-del-guadiana-doc:p6",
+    "ribera-del-guadiana-doc:p7"
+   ]
+  },
+  "campo-de-calatrava": {
+   "title": "Dark volcanic soils that warm early",
+   "cite": [
+    "campo-de-calatrava-doc:p8",
+    "campo-de-calatrava-doc:p9"
+   ]
+  },
+  "valdepenas": {
+   "title": "Stressed vines on chalky soil",
+   "cite": [
+    "valdepenas-doc:p6"
+   ]
+  },
+  "rioja": {
+   "title": "Where the Atlantic meets the Mediterranean",
+   "cite": [
+    "rioja-doc:p5"
+   ]
+  },
+  "rioja-alta": {
+   "title": "The Atlantic side, with more rain",
+   "cite": [
+    "rioja-pliego:p20"
+   ]
+  },
+  "rioja-alavesa": {
+   "title": "Behind the Sierra de Cantabria",
+   "cite": [
+    "rioja-pliego:p20"
+   ]
+  },
+  "rioja-oriental": {
+   "title": "The drier, warmer side",
+   "cite": [
+    "rioja-pliego:p20"
+   ]
+  }
+ }
+}

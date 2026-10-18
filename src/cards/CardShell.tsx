@@ -9,10 +9,8 @@ const t = strings.cards;
 interface ShellProps {
   tree: Tree;
   go: Go;
-  /** The trail ending at this card; every step but the last is a link. */
+  /** The trail ending at this card; the card shows the steps above it as links. */
   trail: Crumb[];
-  /** Shown after the last step, e.g. "DO". */
-  suffix?: string;
   title: string;
   /** A close button that goes up one step (place cards). */
   close?: { to: Crumb };
@@ -31,23 +29,22 @@ export function noteCardKey(key: string) { lastKey = key; }
 export const cardShownBefore = () => lastKey !== null;
 
 /** The floating card: breadcrumb, title, body. After the first card, moving to another puts the keyboard on the new title. */
-export function CardShell({ tree, go, trail, suffix, title, close, cover, children, foot }: ShellProps) {
+export function CardShell({ tree, go, trail, title, close, cover, children, foot }: ShellProps) {
   const heading = useRef<HTMLHeadingElement>(null);
   const key = trail.map((c) => c.id).join('/');
   useEffect(() => {
     if (lastKey !== null && lastKey !== key) heading.current?.focus();
     lastKey = key;
   }, [key]);
-  const last = trail.length - 1;
+  // The trail names only what lies above: the title right under it names the card itself (owner, 18 Oct 2026: "Spain and Spain in one screen").
+  const up = trail.slice(0, -1);
   const body = (
     <div className="body">
-      <nav className="kicker crumb" aria-label={t.whereThisSits}>
-        {trail.map((c, i) => (
-          i === last
-            ? <span key={c.id + i} aria-current="page">{c.name}{suffix ? ` · ${suffix}` : ''}</span>
-            : <span key={c.id + i} className="step"><Link to={selectionOf(tree, c)} go={go}>{c.name}</Link> ›</span>
-        ))}
-      </nav>
+      {up.length > 0 && (
+        <nav className="kicker crumb" aria-label={t.whereThisSits}>
+          {up.map((c, i) => <span key={c.id + i} className="step">{i > 0 && ' › '}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
+        </nav>
+      )}
       <h1 ref={heading} tabIndex={-1}>{title}</h1>
       {children}
     </div>

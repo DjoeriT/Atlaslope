@@ -56,7 +56,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
         {cover && <Img key={cover.src} photo={cover} sizes="100vw" onError={() => markBroken(cover.src)} />}
         <div className="ttl">
           <nav className="kicker crumb" aria-label={strings.cards.whereThisSits}>
-            {crumb.map((c, i) => <span key={c.id + i} aria-current={i === crumb.length - 1 ? 'page' : undefined}>{c.name}</span>)}
+            {crumb.slice(0, -1).map((c, i) => <span key={c.id + i}>{i > 0 && ' › '}{c.name}</span>)}
           </nav>
           <h1 ref={heading} tabIndex={-1}>{region.name}</h1>
         </div>
