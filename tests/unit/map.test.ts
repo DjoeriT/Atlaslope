@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { buildBoundaries, labelMinZoom, oceanFromLand, spanOf, type Collection } from '../../src/map/boundaries';
-import { IMAGERY_ERROR_LIMIT, basemapPaint, imageryFailed, layerVisibility } from '../../src/map/layers';
+import { IMAGERY_ERROR_LIMIT, RELIEF_STOPS, basemapPaint, imageryFailed, layerVisibility, reliefExaggeration } from '../../src/map/layers';
 import { NO_REGION_COLOR, REGION_COLORS, regionColor } from '../../src/map/regionColors';
 import { buildStyle, esriTemplate } from '../../src/map/style';
 import { rasterTileSize, tileXYZ } from '../../src/map/imagery';
@@ -50,7 +50,17 @@ describe('layer list per menu state', () => {
     expect(at6(basemapPaint(true).dosFillOpacity)).toBe(JSON.stringify([6, ['case', sel, 0.82, hover, 0.85, dim, 0.06, 0.6]]));
     expect(at6(basemapPaint(true).dosLineOpacity)).toBe(JSON.stringify([6, ['case', hover, 1, dim, 0.2, 0.7]]));
     expect(at6(basemapPaint(true).dosLineWidth)).toBe(JSON.stringify([6, ['case', sel, 3, hover, 2.8, 1.6]]));
-    expect(JSON.stringify(basemapPaint(false).dosFillOpacity)).not.toContain('zoom');
+    // The plain atlas keeps its look up to a region view, then thins so the road map shows close in (owner, 18 Oct 2026, point 7).
+    expect(at6(basemapPaint(false).dosFillOpacity)).toBe(JSON.stringify([8, ['case', sel, 0.65, hover, 0.85, dim, 0.06, 0.5]]));
+  });
+  it('raises the relief most Spain-wide and eases it off close in (owner, 18 Oct 2026, point 6)', () => {
+    expect(reliefExaggeration(4)).toBe(RELIEF_STOPS[0][1]);
+    expect(reliefExaggeration(20)).toBe(RELIEF_STOPS[RELIEF_STOPS.length - 1][1]);
+    expect(reliefExaggeration(9)).toBeCloseTo(2.25);
+    // Never below the release 22 value of 1.3, and falling as the zoom rises.
+    const zooms = [4, 6, 8, 9, 10, 11, 12, 13, 14, 16];
+    const ex = zooms.map((z) => reliefExaggeration(z));
+    ex.forEach((e, i) => { expect(e).toBeGreaterThan(1.3); if (i) expect(e).toBeLessThanOrEqual(ex[i - 1]); });
   });
   it('draws boundaries stronger over imagery than on the atlas', () => {
     expect(basemapPaint(true).dosFillOpacity).not.toEqual(basemapPaint(false).dosFillOpacity);

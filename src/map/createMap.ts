@@ -15,10 +15,11 @@ import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type Pla
 import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
 import { addLabels, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
-import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
+import { basemapPaint, imageryFailed, layerVisibility, reliefExaggeration, type MenuState } from './layers';
 import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
 import { addMapNames, applyMapNames, registerGlyphs } from './mapNames';
-import { SELECTED, TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
+import { addBaseMap, applyBaseMap } from './osmBase';
+import { SELECTED, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
 
@@ -56,7 +57,6 @@ const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { 
 /** The tilt the map opens with, and goes back to on "Reset view". */
 const START_PITCH = 45;
 
-const TERRAIN = { source: 'terrain', exaggeration: TERRAIN_EXAGGERATION };
 
 export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null): MapController {
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
@@ -100,6 +100,11 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let beforeQuiz: { pitch: number; bearing: number } | null = null;
   let revealMarks: maplibregl.Marker[] = [];
 
+  const terrain = () => ({ source: 'terrain', exaggeration: reliefExaggeration(map.getZoom()) });
+  // The relief height follows the zoom (src/map/layers.ts). MapLibre reads the terrain's exaggeration on every frame, so setting it
+  // as the camera moves changes it smoothly; a new setTerrain would rebuild the draped textures on each step.
+  map.on('zoom', () => { if (map.terrain) map.terrain.exaggeration = reliefExaggeration(map.getZoom()); });
+
   let ready = false; // the style must be loaded before paint or layout can change; until then apply() only remembers
   const apply = (m: MenuState, img: boolean) => {
     current = m;
@@ -125,7 +130,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const sel = ['boolean', ['feature-state', 'sel'], false];
     map.setPaintProperty('dos-fill', 'fill-color', ['case', sel, SELECTED.fill, own] as never);
     map.setPaintProperty('dos-line', 'line-color', ['case', sel, SELECTED.line, own] as never);
-    if (tiles) map.setTerrain(m.relief ? TERRAIN : null);
+    if (tiles) map.setTerrain(m.relief ? terrain() : null);
     syncNames();
     render();
   };
@@ -134,6 +139,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const syncNames = () => {
     labels?.setVisible(namesShown());
     if (ready) applyMapNames(map, current.satellite && imagery, !quizView?.hideNames);
+    if (ready) applyBaseMap(map, !(current.satellite && imagery));
   };
   // With 3D relief on, MapLibre 4.7 caches the flat layers as textures on the terrain and does not redraw them when GeoJSON
   // arrives later, so country borders stayed missing until a menu toggle (#40). Once the world map has loaded, take the terrain
@@ -141,12 +147,13 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const redrape = () => {
     if (!tiles || !current.relief) return;
     map.setTerrain(null);
-    map.setTerrain(TERRAIN);
+    map.setTerrain(terrain());
   };
 
   map.once('load', () => {
     ready = true;
     if (tiles) addMapNames(map, current.satellite && imagery, !quizView?.hideNames);
+    if (tiles) addBaseMap(map, !(current.satellite && imagery));
     apply(current, imagery);
     render();
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
