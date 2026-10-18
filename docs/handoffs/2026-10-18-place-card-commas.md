@@ -10,7 +10,7 @@ Owner, 17:15Z, with a screenshot of the Vinos de Madrid card: "What's with the c
 - All 78 place ledes (`content/facts/*.json`, `why.text`) rewritten to two short sentences: no comma splices, no "X, Y and Z" runs. Same
   sources, same pages, no new facts; some facts dropped from the lede (they stay in the sheet's own rows). Conca de Barberà was already fine.
   Three tile lines in `content/tiles.json` lost their three-adjective runs.
-- Citations: "Title · 2014 · pp. 5–6" (was "Title, p. 5, p. 6, 2014"); page runs become ranges (`pageText` in `src/facts/format.ts`).
+- Citations: "Title · 2014 · pp. 5–6" (was "Title, p. 5, p. 6, 2014"; the year now sits next to the title it dates); page runs become ranges (`pageText` in `src/facts/format.ts`).
 - Photo credits: "Name · CC BY 2.0 · resized" (was commas).
 - Photo hover shows only the credit, never the alt: the alts are Commons file names ("P -24x15").
 

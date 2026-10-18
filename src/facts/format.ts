@@ -47,7 +47,6 @@ export function shortTitle(title: string): string {
   return title.split(/[,(:]/)[0].trim();
 }
 
-/** One reference per source, in the order first cited, with its pages gathered. A source id that is not in the registry is left out. */
 /** "p. 5" for one page, "pp. 5–6" for a run, "pp. 5, 8" otherwise: one page mark, not "p. 5, p. 6" (owner, 18 Oct 2026: "What's with
  *  the commas"). Pages that are not plain numbers keep their order. */
 export function pageText(pages: string[]): string {
@@ -68,6 +67,7 @@ export function pageText(pages: string[]): string {
   return t.pages(pages.join(', '));
 }
 
+/** One reference per source, in the order first cited, with its pages gathered. A source id that is not in the registry is left out. */
 export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
   const refs = new Map<string, { source: Sources[string]; pages: string[] }>();
   for (const c of cites) {
