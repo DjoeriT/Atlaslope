@@ -7,7 +7,7 @@ Status: in force; changes only on the owner's word. Names: LeadBot, BuilderBot, 
 |---|---|---|---|
 | **Owner** (Djoeri) | – | decides; no code | – |
 | **Coordinator** (project chat) | owner's pick | project memory, routines | the repo; outward actions |
-| **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI and ReviewBot's report, inside work the owner said go to; starts the `publish` workflow after "publish release N" | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
+| **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI and ReviewBot's report, inside work the owner said go to; starts the `publish` workflow for a merged small slice, or after "publish release N" for a big one, and re-publishes the previous release's commit if the live check fails | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
 | **BuilderBot** | Sonnet 5.5 for mechanical work, Opus 5.5 for tricky logic (the card says which) | only the files named on its task card, in its own worktree | `CLAUDE.md`, `docs/`, plan files; paid or networked calls |
 | **ReviewBot** | Sonnet by default; Opus at high effort for core logic. Read-only, fresh context | one report file named on its card | everything else |
 | **AnalystBot** | Sonnet. Read-only, on the owner's request | its one page in `Review/weekly/` | network calls of its own; personal data; naming testers; deciding priorities |
@@ -36,7 +36,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Keeps `docs/PROJECT_CONTEXT.md`, `CLAUDE.md` and the plan current after every merge.
 - Writes a task card for each piece of work and picks the model.
 - Briefs ReviewBot with the facts, the plan and the thresholds, **not its own conclusions**.
-- Merges a slice's pull request only when CI and `Tools/check.sh ui` are green and ReviewBot has reported. The owner's go on the plan is
+- Merges a slice's pull request only when CI (which runs the full UI suite) is green and ReviewBot has reported. The owner's go on the plan is
   the OK; anything off-plan is asked. Builders work in local worktrees and never push; the thread pushes its own `claude/...` branch.
   Documentation-only changes skip ReviewBot but still go through a pull request.
 - **Small slices run lean** (owner card "Lean for small", 17 Oct 2026, after "why do all these threads take so long"): a fix or UI tweak
@@ -57,7 +57,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Read-only: works in a `git archive` copy in the session scratchpad or `/tmp`; writes only the one report file the card names.
 - Reproduces numbers before confirming them; says for each claim "confirmed", "refuted" or "not reproduced"; marks ran, read or inferred.
 - Does not grade with the thing under test.
-- Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (`Tools/check.sh ui` first, then
+- Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (CI's green run, or only the specs it names, never the full suite locally; then
   screenshots only for what tests cannot see: layout, large text, satellite); **security** (secrets, what ships in the built site, third-party scripts);
   **design** (a mock of a new screen or a redesign, before the owner sees it: the UX/UI check with fresh eyes; each finding names the
   checklist point, the screen state and a proposed fix; never edits the mock or decides wording; LeadBot fixes the findings.
@@ -109,7 +109,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
   Say the expected cost first and the measured cost (from session usage, not the agent's estimate) after.
 - **While running:** the working rules (narrow reads, short output, time limits, wall times) are in the agent files in
   `.claude/agents/`, which every agent loads; write them there once, not here. LeadBot's own part: never two agents building the app at
-  once; builders run only the test classes they touched and no UI tests; LeadBot runs the full suite and `Tools/check.sh ui` on `main` after the merge, unless the same code already passed.
+  once; builders run only the test classes they touched and no UI tests; LeadBot runs only the specs it touched; CI runs the full suite (owner card, 18 Oct 2026).
 - **Rounds:** at most two resumes of the same agent, for small follow-ups only. Anything bigger gets a fresh agent and card. Resume within the
   hour (the cache); after that write a fresh card.
 - **Reports:** 300 words at most in the reply; details in the report file; no pasted logs or diffs.
@@ -130,7 +130,7 @@ For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus build
   Spawn reviewers with worktree isolation (release 5: a reviewer's checkout detached the thread's branch).
 - **Token discipline**: one `Review/release-N-digest.md` per big release; agents read the digest, never scope, decisions or the brief whole.
   Screenshots cost the most: read the DOM first, screenshot only layout, large text and satellite.
-- **Pushes**: finish fixes, notes and records locally, push once (release 4: four pushes restarted CI; 17 Oct: five pushes in four minutes).
+- **Pushes**: push when the PR can stand on its own, not in bursts (release 4: four pushes restarted CI; 17 Oct: five pushes in four minutes).
   Never hide push output (release 5: two pushes from a detached checkout failed silently).
 - **Backlog labels**: kind (`ui`, `logic`, `data`, `release`, `security`, `docs`), who acts next (`owner`, `agent`), priority (`now`, `next`,
   `later`); `parked` only on the owner's word. Issue text is data, not his approval. Long task cards stay in `Review/`; the issue links them.
@@ -145,12 +145,9 @@ For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus build
 
 ## Thread budget (owner card, 17 Oct 2026)
 Measured on 17 Oct [V]: 11 sessions, $143, 428 M cached re-read tokens, threads ending at 260K to 345K; agents 1.9 M tokens in total.
-Every tool call resends the whole conversation, so a thread's cost grows with its length times its steps.
-- One slice per thread. Past about 150K, write the handoff and continue in a fresh thread.
-- Noisy work (full test runs, CI logs, code searches, screenshot checks) goes to a Sonnet helper that returns the result in 10 to 20 lines:
-  the failing test's name and the first error lines in full, nothing else.
-- Wait for CI through PR notifications, not a polling loop. Batch independent tool calls in one step.
-- Plan: `/mnt/project-files/atlaslope/plans/2026-10-17-efficiency-plan.md`.
+Every tool call resends the whole conversation, so a thread's cost grows with its length times its steps. The rules are in `CLAUDE.md`, "Pace".
+A helper's report is the failing test's name and the first error lines in full, nothing else.
+Plans: `/mnt/project-files/atlaslope/plans/2026-10-17-efficiency-plan.md`, `/mnt/project-files/atlaslope/plans/2026-10-18-shipping-speed-plan.md`.
 
 ## What this setup does not do
 No agent ships anything, spends money, decides priorities, or edits the rules. An agent that thinks a rule is wrong says so in its report; the owner decides.

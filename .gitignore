@@ -25,3 +25,6 @@ Review/mock-*/assets/maplibre-gl.*
 __pycache__/
 .cache/
 Tools/share/share.html
+
+# Screenshots from Tools/shots.mjs
+shots/

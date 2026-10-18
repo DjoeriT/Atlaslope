@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:ui": "playwright test"
+    "test:ui": "playwright test",
+    "shots": "node Tools/shots.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",

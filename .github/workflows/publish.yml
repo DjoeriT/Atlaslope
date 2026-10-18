@@ -51,8 +51,8 @@ jobs:
           if git rev-parse -q --verify "refs/tags/release-$RELEASE" >/dev/null; then echo "release-$RELEASE already exists"; exit 1; fi
           last=$(git tag -l 'release-*' | sed 's/release-//' | sort -n | tail -1)
           [ "$RELEASE" -eq $(( ${last:-0} + 1 )) ] || { echo "next release is $(( ${last:-0} + 1 )), not $RELEASE"; exit 1; }
-      # The full suite already ran on this exact commit when it reached main (ci.yml, push event). Reuse that run when its
-      # "Tools/check.sh ui" step succeeded (a docs-only run skips it, so it does not count); wait up to 8 minutes if it is still running.
+      # The full suite already ran on these exact files, in the PR (when the merge changed nothing) or on main (ci.yml, push event). Reuse that run when its
+      # full checks succeeded (a docs-only run skips them, so it does not count); wait up to 8 minutes if it is still running.
       # Anything else (no run, failed, cancelled, docs-only) runs the checks here. Owner card, 17 Oct 2026: the suite ran three times per release.
       - name: Main already passed on this commit?
         id: reuse
@@ -61,19 +61,28 @@ jobs:
           REPO: ${{ github.repository }}
           COMMIT: ${{ inputs.commit }}
         run: |
-          for i in $(seq 1 16); do
-            run=$(gh api "repos/$REPO/actions/workflows/ci.yml/runs?head_sha=$COMMIT&event=push&branch=main&per_page=1" --jq '.workflow_runs[0] | "\(.id) \(.status) \(.conclusion)"' 2>/dev/null) || run=""
-            read -r id status conclusion <<<"$run"
-            [ -n "${id:-}" ] && [ "$id" != "null" ] || { echo "no checks run on main for $COMMIT"; break; }
-            [ "$status" = "completed" ] && break
-            echo "checks run $id is $status; waiting"; if [ "$i" -lt 16 ]; then sleep 30; fi
-          done
-          if [ "${status:-}" = "completed" ] && [ "${conclusion:-}" = "success" ]; then
-            ui=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '[.jobs[].steps[] | select(.name == "Tools/check.sh ui")][0].conclusion' 2>/dev/null) || ui=""
-            if [ "$ui" = "success" ]; then
-              echo "reuse=true" >> "$GITHUB_OUTPUT"; echo "Reusing checks run $id: Tools/check.sh ui passed on $COMMIT."; exit 0
-            fi
+          # passed SHA EVENT: true when the newest ci.yml run for SHA and EVENT finished with the full checks green; waits up to 8 minutes.
+          passed() {
+            for i in $(seq 1 16); do
+              run=$(gh api "repos/$REPO/actions/workflows/ci.yml/runs?head_sha=$1&event=$2&per_page=1" --jq '.workflow_runs[0] | "\(.id) \(.status) \(.conclusion)"' 2>/dev/null) || run=""
+              read -r id status conclusion <<<"$run"
+              [ -n "${id:-}" ] && [ "$id" != "null" ] || { echo "no $2 checks run for $1"; return 1; }
+              [ "$status" = "completed" ] && break
+              echo "checks run $id is $status; waiting"; if [ "$i" -lt 16 ]; then sleep 30; fi
+            done
+            [ "${status:-}" = "completed" ] && [ "${conclusion:-}" = "success" ] || return 1
+            # Full checks ran: the old single "Tools/check.sh ui" step, or "Tools/check.sh" plus all four "UI tests" parts (a docs-only run skips them all).
+            ok=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '[.jobs[].steps[]] as $s | ([$s[] | select(.name == "Tools/check.sh ui" and .conclusion == "success")] | length > 0)
+              or (([$s[] | select(.name == "Tools/check.sh" and .conclusion == "success")] | length > 0)
+                and ([$s[] | select(.name == "UI tests" and .conclusion == "success")] | length) >= 4)' 2>/dev/null) || ok=""
+            [ "$ok" = "true" ] && echo "Reusing checks run $id: the full checks passed on $1 ($2)."
+          }
+          # A merge commit with exactly the files of its PR head was already tested by the PR's run, so don't wait for main's
+          # (owner card, 18 Oct 2026: main's run held every publish about 6 minutes). A PR that was behind main has a different tree and falls through.
+          if head=$(git rev-parse -q --verify "$COMMIT^2") && [ "$(git rev-parse "$COMMIT^{tree}")" = "$(git rev-parse "$head^{tree}")" ] && passed "$head" pull_request; then
+            echo "reuse=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          if passed "$COMMIT" push; then echo "reuse=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           echo "reuse=false" >> "$GITHUB_OUTPUT"; echo "Running the checks here."
       - uses: actions/setup-node@v4
         if: steps.reuse.outputs.reuse != 'true'

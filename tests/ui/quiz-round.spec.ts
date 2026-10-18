@@ -74,7 +74,9 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   await page.getByRole('button', { name: 'Next question' }).click();
 
   // 3. The other three, right.
-  for (const name of asked.slice(2)) {
+  // Each answer waits for its own question number: the step before still reads "What is this?" until the next one is in.
+  for (const [i, name] of asked.slice(2).entries()) {
+    await expect(page.locator('.q-num')).toContainText(`Question ${i + 3} of 6 · Study`);
     await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
     await expect(page.locator('.feedback')).toContainText('Right');
@@ -118,7 +120,8 @@ test('a slip is kept in the log, and the miss is not asked again', async ({ page
   await page.getByRole('button', { name: 'That was a slip' }).click();
   expect((await log(page)).filter((e) => e.kind === 'answer')).toMatchObject([{ place: idOf(asked[0]), right: false, slip: true }]);
   await page.getByRole('button', { name: 'Next question' }).click();
-  for (const name of asked.slice(1)) {
+  for (const [i, name] of asked.slice(1).entries()) {
+    await expect(page.locator('.q-num')).toContainText(`Question ${i + 2} of 5 · Study`); // its own step, not the one just answered
     await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
     await expect(page.locator('.feedback')).toContainText('Right');
