@@ -18,6 +18,11 @@ Thread "light palette" (owner 07:49Z: light mode wine and white "feels so vibeco
   10:28Z must work on map and satellite; 10:46Z drop dark mode, light gets the black and champagne treatment.
 - 10:49Z finish this slice, then a wider plan.
 
+## Code review (ReviewBot, alongside CI)
+- Fixed: focus ring was black on the black band (now blue, champagne on the band, with a test); dead `#theme` rule; quiz answer label now a black chip
+  in champagne; `color-scheme: light`; scope.md line 36 no longer names a light/dark toggle; comment on the one wine swatch.
+- Left: `Cards.tsx` passes `#141414` to the name cover as a literal (the prop takes a colour string, not a CSS variable).
+
 ## Open
 - Wider plan (next thread): a persistent top bar and a website around the tool (home page, information pages, the atlas as one page).
   Needs a mock first and real page addresses instead of `#` links for search engines.

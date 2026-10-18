@@ -48,3 +48,16 @@ test('the first-run screen shows once, and ?fresh=1 brings it back', async ({ pa
   await page.goto('./?fresh=1');
   await expect(welcome).toBeVisible();
 });
+
+// Code review PR #77: with a black accent the focus ring went black on the black band; there it is champagne, elsewhere blue.
+test('keyboard focus shows a champagne ring on the black top bar', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
+  await page.goto('./#place=rioja&page');
+  await expect(page.locator('.pg-top')).toBeVisible();
+  await page.locator('.pg-top a, .pg-top button').first().focus();
+  await page.keyboard.press('Tab');
+  await page.keyboard.press('Shift+Tab');
+  const ring = await page.evaluate(() => getComputedStyle(document.activeElement as Element).outlineColor);
+  expect(await page.evaluate(() => !!document.activeElement?.closest('.pg-top'))).toBe(true);
+  expect(ring).toBe('rgb(233, 216, 180)');
+});

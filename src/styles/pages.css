@@ -2,6 +2,7 @@
    the chart tints and the wine swatches that Review/visual-style.md "Colour" names. Selectors start with .pg so the page leaves the cards alone. */
 :root{
   --tint1:#141414;--tint2:#7D6540;--tint3:#C9B48A;--tint4:#EFE6D2;
+  /* The wine swatches show the wine itself; the one place wine red stays (Review/visual-style.md "Colour"). */
   --wine-red:#8C2340;--wine-white:#EBDD9E;--wine-rose:#F2A7A7;
 }
 

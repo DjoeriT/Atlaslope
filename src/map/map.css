@@ -9,8 +9,9 @@
 .maplibregl-ctrl-attrib{font-family:var(--sans)}
 
 @media (max-width:51.25em) and (orientation:portrait){.imagery-note{left:1rem;right:4.5rem;bottom:calc(52% + 1rem);margin-inline:0}}
-/* Quiz reveal: the answer's name in the wine colour, a wrong pick in a plain ink beside it. */
-.lbl.quiz-answer{font-weight:700;font-size:1rem;color:var(--accent)}
+/* Quiz reveal: the answer's name on a black chip in champagne, so it stands apart from the other names on the atlas and the photo;
+   a wrong pick in a plain ink beside it. */
+.lbl.quiz-answer{font-weight:700;font-size:1rem;color:var(--foil);background:var(--band);padding:.1rem .45rem;border-radius:var(--rad);text-shadow:none}
 .lbl.quiz-miss{font-weight:600;font-style:italic}
 
 /* The labelled pin of a guide's fly-there to a named point (release 10) */
