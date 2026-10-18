@@ -200,7 +200,12 @@ test('a place card opened from the quiz comes back to the same question', async 
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
   await page.getByRole('button', { name: /Back to Study/ }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
-  for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
+  // Each "Got it" only once its intro is on screen: "Got it" moves on inside a view transition, and a click before the step has
+  // changed lands on the step just left, so two clicks advance once and the round is one intro short (flaky under load, 18 Oct 2026).
+  for (const intro of plannedRound(NOW).filter((i) => i.kind === 'intro')) {
+    await expect(page.locator('h1.intro-h')).toHaveText(intro.name);
+    await page.getByRole('button', { name: 'Got it' }).click();
+  }
 
   // A miss: Open the card, and back to the same reveal.
   await expect(page.locator('.q')).toHaveText('What is this?');
