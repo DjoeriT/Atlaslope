@@ -9,7 +9,8 @@ Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once wi
 3. **Citation.** Under the lede: "Documento único … · 2014 · pp. 5–6".
 4. **Photo hover.** Hover the cover photo: only the photographer and licence, no file name.
 5. **Search.** Type "Extremadura": Meseta comes up.
+6. **Photo credits.** Under photos: "Name · CC BY-SA 4.0 · resized", no "Unknown author" twice, no "→ (Talk)", no "from City, Country".
 
 ## For you
-One PR from `claude/place-card-cleanup-wmnr3e`. Handoff `docs/handoffs/2026-10-18-place-card-commas.md`.
+One PR (#97) from `claude/place-card-cleanup-wmnr3e`. Handoff `docs/handoffs/2026-10-18-place-card-commas.md`. Checks: CI on PR #97 (check plus four UI parts); ReviewBot `Review/pr-97-review.md`, small findings fixed. Release 31 tester note moved to `Review/archive/`.
 Not verified: Safari, iPad, real phones.
