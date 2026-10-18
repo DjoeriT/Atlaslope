@@ -197,9 +197,9 @@ steps.append(('haro', 4, f'''<p>{esc(p2)}</p>
 {stop_html(fb, 'haro')}'''))
 
 # End
-VIEWS['end'] = {'bounds': BOUNDS['rioja'], 'focus': 'zones', 'pitch': 0, 'bearing': 0, 'chip': 'Rioja', 'zonelabels': True}
+# The end keeps the last view (Haro): an overview here pulled the map out before Haro had landed (owner, 07:46Z).
 credits = ''.join(f'<li>{esc(photos[p]["alt"])}: {credit(p)}</li>' for p in dict.fromkeys(USED))
-steps.append(('end', 0, f'''<div class="end">
+steps.append(('haro', 0, f'''<div class="end">
 <p class="kicker">You reached the end</p>
 <p class="endq">Can you place the three zones?</p>
 <a class="btn" href="#quiz=test&amp;set=rioja-alta,rioja-alavesa,rioja-oriental">Test me on Rioja’s zones</a>
@@ -210,7 +210,7 @@ steps.append(('end', 0, f'''<div class="end">
 CHAPTERS = [c['title'] for c in guide['chapters']]
 
 step_html = '\n'.join(
-    f'<section class="step{" step-intro" if vid == "intro" else ""}{" step-end" if vid == "end" else ""}" data-view="{vid}" data-ch="{n}"><div class="step-in">{h}</div></section>'
+    f'<section class="step{" step-intro" if vid == "intro" else ""}{" step-end" if 'class="end"' in h else ""}" data-view="{vid}" data-ch="{n}"><div class="step-in">{h}</div></section>'
     for vid, n, h in steps)
 
 # ---------- assets ----------

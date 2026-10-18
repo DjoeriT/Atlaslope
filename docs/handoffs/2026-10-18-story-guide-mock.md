@@ -13,10 +13,11 @@ Thread "Story guide mock". Follows owner card 06:18Z ("Both, polish first"): aft
   keyboard map control off, skip link, aria-current on the active step.
 
 ## Decided
+- Owner looked on his Mac (07:36Z, "Really cool"). Two fixes after: short sections hold their map view longer (PR #75),
+  and the ending keeps the Haro view instead of pulling back out before Haro landed.
 - Owner card 07:20Z: the story opens from a "Read with the map" button in the Terroir section; the section keeps its text.
 
 ## Open
-- Owner to look at it in Chrome on his Mac and say what to polish.
 - Text on the page that is not guide text (owner to confirm): map chips "Rioja in northern Spain", "Rioja's three zones", "Rioja";
   the end prompt "Can you place the three zones?"; Haro and Alfaro labels at approximate town coordinates [A].
 - Rivers (Ebro) and villages are not drawn: no sourced layer in `data/` yet.
