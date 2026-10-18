@@ -24,6 +24,11 @@ describe('tile copy', () => {
       for (const from of line.from ?? []) expect(sheetIds, `${id} from ${from}`).toContain(from);
     }
   });
+  it('names only real places and regions', () => {
+    const placeIds = new Set(raw.places.map((p: { id: string }) => p.id));
+    for (const id of Object.keys(tilesContent.places)) expect(placeIds.has(id), id).toBe(true);
+    for (const id of Object.keys(tilesContent.regions)) expect(regionIds, id).toContain(id);
+  });
   it('cites only known sources and keeps headlines short', () => {
     const all = [tilesContent.spain, ...Object.values(tilesContent.regions), ...Object.values(tilesContent.places)];
     for (const line of all) {
