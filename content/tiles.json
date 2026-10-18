@@ -89,7 +89,7 @@
    ]
   },
   "meseta": {
-   "title": "Wide, dry, sunny plains",
+   "title": "Wide, dry plains under strong sun",
    "lede": "Plains with 300 to 350 mm of rain and 3,000 hours of sun. Low yields add balance.",
    "from": [
     "la-mancha"
@@ -121,7 +121,7 @@
   },
   "canarias": {
    "title": "Native grapes on volcanic soil",
-   "lede": "Native grapes on volcanic soil, under an Atlantic climate. On Lanzarote they grow in ash, behind stone walls, on 150 mm of rain.",
+   "lede": "Native grapes on volcanic soil, under an Atlantic climate. On Lanzarote they grow in ash behind stone walls, on 150 mm of rain.",
    "from": [
     "la-palma",
     "lanzarote"
@@ -420,7 +420,7 @@
    ]
   },
   "urbezo": {
-   "title": "Deep, stony, well-drained soils",
+   "title": "Deep, stony soils that drain well",
    "cite": [
     "urbezo-doc:p5"
    ]

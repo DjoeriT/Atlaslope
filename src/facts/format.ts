@@ -48,6 +48,26 @@ export function shortTitle(title: string): string {
 }
 
 /** One reference per source, in the order first cited, with its pages gathered. A source id that is not in the registry is left out. */
+/** "p. 5" for one page, "pp. 5–6" for a run, "pp. 5, 8" otherwise: one page mark, not "p. 5, p. 6" (owner, 18 Oct 2026: "What's with
+ *  the commas"). Pages that are not plain numbers keep their order. */
+export function pageText(pages: string[]): string {
+  if (pages.length === 0) return '';
+  if (pages.length === 1) return t.page(pages[0]);
+  const nums = pages.map(Number);
+  if (nums.every(Number.isInteger)) {
+    const sorted = [...new Set(nums)].sort((a, b) => a - b);
+    const runs: string[] = [];
+    for (let i = 0; i < sorted.length; ) {
+      let j = i;
+      while (j + 1 < sorted.length && sorted[j + 1] === sorted[j] + 1) j++;
+      runs.push(j > i ? `${sorted[i]}–${sorted[j]}` : String(sorted[i]));
+      i = j + 1;
+    }
+    return runs.length === 1 && !runs[0].includes('–') ? t.page(runs[0]) : t.pages(runs.join(', '));
+  }
+  return t.pages(pages.join(', '));
+}
+
 export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
   const refs = new Map<string, { source: Sources[string]; pages: string[] }>();
   for (const c of cites) {
@@ -64,7 +84,7 @@ export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
       id,
       title: source.title,
       url: source.url,
-      pages: pages.map((p) => t.page(p.replace(/^p/, ''))).join(', '),
+      pages: pageText(pages.map((p) => p.replace(/^p/, ''))),
       year: year < 2018 ? String(year) : '',
       short: shortTitle(source.title),
     };

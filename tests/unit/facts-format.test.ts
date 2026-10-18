@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { altitudeText, grapeLabel, koppenText, photosOf, shortTitle, sourceRefs, type Sources } from '../../src/facts';
+import { altitudeText, grapeLabel, koppenText, pageText, photosOf, shortTitle, sourceRefs, type Sources } from '../../src/facts';
 
 const sources: Sources = {
   old: { title: 'Old document', url: 'https://example.org/old', date: '2014-06-30', kind: 'official' },
@@ -21,9 +21,16 @@ describe('fact formatting', () => {
   it('gathers pages per source and dates only sources from before 2018', () => {
     const refs = sourceRefs(['old:p11', 'old:p12', 'old:p11', 'fresh', 'gone:p1'], sources);
     expect(refs).toEqual([
-      { id: 'old', title: 'Old document', url: 'https://example.org/old', pages: 'p. 11, p. 12', year: '2014', short: 'Old document' },
+      { id: 'old', title: 'Old document', url: 'https://example.org/old', pages: 'pp. 11–12', year: '2014', short: 'Old document' },
       { id: 'fresh', title: 'Fresh document', url: 'https://example.org/fresh', pages: '', year: '', short: 'Fresh document' },
     ]);
+  });
+  it('writes one page mark: a run as a range', () => {
+    expect(pageText(['5'])).toBe('p. 5');
+    expect(pageText(['6', '5'])).toBe('pp. 5–6');
+    expect(pageText(['5', '6', '8'])).toBe('pp. 5–6, 8');
+    expect(pageText(['5', '8'])).toBe('pp. 5, 8');
+    expect(pageText([])).toBe('');
   });
   // Owner card, 18 Oct 2026: a guide tags each fact with a short source name; the full title is listed once under Sources.
   it('gives each kind of source a short tag', () => {

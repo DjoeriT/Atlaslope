@@ -58,7 +58,8 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
         throw new Error(`places.json: course ${course.id} has a region without slug id, name and order: ${JSON.stringify(g)}`);
       }
       if (regions.has(g.id)) throw new Error(`places.json: region ${g.id} is a duplicate`);
-      regions.set(g.id, { id: g.id, name: g.name, order: g.order, country: course.country, course: course.id });
+      if (g.chapter !== undefined && !isText(g.chapter)) throw new Error(`places.json: region ${g.id} has an empty chapter`);
+      regions.set(g.id, { id: g.id, name: g.name, order: g.order, country: course.country, course: course.id, ...(isText(g.chapter) ? { chapter: g.chapter } : {}) });
     }
   }
 
@@ -150,7 +151,7 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
 
   const entries: Entry[] = [
     ...[...regions.values()].filter((r) => !soleSameName(r.id)).map((r) => ({
-      hit: { level: countries.get(r.country)!.levels[1], id: r.id, name: r.name }, names: [fold(r.name)], rank: 0, order: r.order,
+      hit: { level: countries.get(r.country)!.levels[1], id: r.id, name: r.name }, names: [r.name, r.chapter ?? ''].filter(Boolean).map(fold), rank: 0, order: r.order,
     })),
     ...places.map((p) => ({
       hit: { level: p.level, id: p.id, name: p.name },

@@ -4,7 +4,7 @@
   {
    "id": "emporda",
    "why": {
-    "text": "Poor, light, well-drained soils on the Empordà plain give light, fresh, fruity wines with good acidity; old Garnacha is the classic liqueur wine.",
+    "text": "Poor, well-drained soils on the Empordà plain give light, fresh wines with good acidity. Old Garnacha is the classic liqueur wine.",
     "cite": [
      "emporda-doc:p7"
     ]
@@ -105,7 +105,7 @@
   {
    "id": "costers-del-segre",
    "why": {
-    "text": "Large temperature swings between day and night in this inland zone shape the alcohol, aromas and flavours of the wines.",
+    "text": "This inland zone has large temperature swings between day and night. They shape the alcohol and aromas of the wines.",
     "cite": [
      "costers-del-segre-doc:p6"
     ]
@@ -193,7 +193,7 @@
   {
    "id": "pla-de-bages",
    "why": {
-    "text": "Altitude and distance from the sea give the wines their acid core, and wild herbs and forest add aromas of rosemary, lavender and thyme.",
+    "text": "Altitude and distance from the sea give the wines their acid core. Wild herbs and forest add aromas such as rosemary and thyme.",
     "cite": [
      "pla-de-bages-doc:p6"
     ]
@@ -273,7 +273,7 @@
   {
    "id": "alella",
    "why": {
-    "text": "Well-drained granite soil with marine remains makes vines root deep and live under mild stress, which helps regulate yield.",
+    "text": "Well-drained granite soil with marine remains makes the vines root deep. The mild stress helps regulate yield.",
     "cite": [
      "alella-doc:p6"
     ]
@@ -440,7 +440,7 @@
   {
    "id": "penedes",
    "why": {
-    "text": "Soil and climate bring white grapes to ripeness here, giving the whites freshness, acidity and fruit.",
+    "text": "Soil and climate bring white grapes to ripeness here. The whites get freshness and fruit.",
     "cite": [
      "penedes-doc:p6"
     ]
@@ -550,7 +550,7 @@
   {
    "id": "priorat",
    "why": {
-    "text": "Steep slopes with shallow slate soils and bedrock near the surface give wines high in dry extract and deep red colour.",
+    "text": "Steep slopes have shallow slate soils with bedrock near the surface. The wines are high in dry extract and deep red in colour.",
     "cite": [
      "priorat-doc:p5"
     ]
@@ -633,7 +633,7 @@
   {
    "id": "tarragona",
    "why": {
-    "text": "Direct sea influence around Camp de Tarragona gives Mediterranean wines; continental Ribera d'Ebre gives fuller reds from Cariñena and Garnacha.",
+    "text": "Camp de Tarragona, under direct sea influence, gives Mediterranean wines. Continental Ribera d'Ebre gives fuller reds from Cariñena and Garnacha.",
     "cite": [
      "tarragona-doc:p6"
     ]
@@ -717,7 +717,7 @@
   {
    "id": "montsant",
    "why": {
-    "text": "Mountains shelter the vines from the sea, giving hot days and cool nights; old Garnacha and Cariñena vines give full-bodied wines.",
+    "text": "Mountains shelter the vines from the sea, giving hot days and cool nights. Old Garnacha and Cariñena vines give full-bodied wines.",
     "cite": [
      "montsant-doc:p7"
     ]
@@ -818,7 +818,7 @@
   {
    "id": "terra-alta",
    "why": {
-    "text": "Calcareous soils give the wines a salty note and long finish; Garnacha Blanca has a long tradition here.",
+    "text": "Calcareous soils give the wines a salty note and a long finish. Garnacha Blanca has a long tradition here.",
     "cite": [
      "terra-alta-doc:p6"
     ]

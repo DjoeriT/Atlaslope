@@ -18,8 +18,8 @@ export function SourceLine({ cites, short }: { cites: Cite[]; short?: boolean })
         <span key={r.id}>
           {i > 0 && '; '}
           {short
-            ? <a href={r.url} target="_blank" rel="noopener noreferrer" title={t.sourceTag(r.title)}>{[r.short, r.pages].filter(Boolean).join(', ')}</a>
-            : <a href={r.url} target="_blank" rel="noopener noreferrer">{[r.title, r.pages, r.year].filter(Boolean).join(', ')}</a>}
+            ? <a href={r.url} target="_blank" rel="noopener noreferrer" title={t.sourceTag(r.title)}>{[r.short, r.pages].filter(Boolean).join(' · ')}</a>
+            : <a href={r.url} target="_blank" rel="noopener noreferrer">{[r.title, r.year, r.pages].filter(Boolean).join(' · ')}</a>}
         </span>
       ))}
     </span>

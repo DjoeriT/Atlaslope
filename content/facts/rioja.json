@@ -4,7 +4,7 @@
   {
    "id": "rioja",
    "why": {
-    "text": "Atlantic and Mediterranean climates meet here, giving mild temperatures and about 400 mm of rain, which suits full-bodied reds made for ageing.",
+    "text": "Atlantic and Mediterranean climates meet here, giving mild temperatures and about 400 mm of rain. That suits full-bodied reds made for ageing.",
     "cite": [
      "rioja-doc:p5"
     ]
@@ -112,7 +112,7 @@
   {
    "id": "rioja-alta",
    "why": {
-    "text": "Atlantic influence and more rain give reds of medium strength with body and high acidity, suited to barrel ageing.",
+    "text": "Rioja Alta gets Atlantic influence and more rain. Its reds are medium-strength with high acidity, suited to barrel ageing.",
     "cite": [
      "rioja-pliego:p20"
     ]
@@ -209,7 +209,7 @@
   {
    "id": "rioja-alavesa",
    "why": {
-    "text": "Atlantic and Mediterranean climates meet behind the Sierra de Cantabria, giving slightly riper wines with a little less acidity, to drink young or age.",
+    "text": "Atlantic and Mediterranean climates meet behind the Sierra de Cantabria. The wines are slightly riper, with a little less acidity, to drink young or age.",
     "cite": [
      "rioja-pliego:p20"
     ]
@@ -306,7 +306,7 @@
   {
    "id": "rioja-oriental",
    "why": {
-    "text": "A drier, warmer Mediterranean climate with more sun gives riper, fuller reds that suit blending and barrel ageing.",
+    "text": "A drier, warmer Mediterranean climate with more sun gives riper, fuller reds. They suit blending and barrel ageing.",
     "cite": [
      "rioja-pliego:p20"
     ]

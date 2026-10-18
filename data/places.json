@@ -52,7 +52,8 @@
     },
     {
      "id": "meseta",
-     "name": "Meseta: Castilla-La Mancha, Madrid, Extremadura",
+     "name": "Meseta",
+     "chapter": "Meseta: Castilla-La Mancha, Madrid, Extremadura",
      "order": 7
     },
     {

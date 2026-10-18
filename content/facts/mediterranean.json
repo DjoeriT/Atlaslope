@@ -4,7 +4,7 @@
   {
    "id": "valencia",
    "why": {
-    "text": "Mild average temperatures ripen grapes early, and water stress in hot spring and summer gives the wines intense aroma.",
+    "text": "Mild average temperatures ripen grapes early. Water stress in the hot spring and summer gives the wines intense aroma.",
     "cite": [
      "valencia-doc:p8"
     ]
@@ -123,7 +123,7 @@
   {
    "id": "utiel-requena",
    "why": {
-    "text": "Bobal's strong polyphenols and high acidity give deep red, full-bodied wines; chalky soils keep the whites floral and fresh.",
+    "text": "Bobal's strong polyphenols and high acidity give deep red, full-bodied wines. Chalky soils keep the whites floral and fresh.",
     "cite": [
      "utiel-requena-doc:p9",
      "utiel-requena-doc:p10"
@@ -232,7 +232,7 @@
   {
    "id": "yecla",
    "why": {
-    "text": "Monastrell on a high, dry, sunny plateau with deep, chalky, low-organic soils gives fleshy, warm, well-balanced reds.",
+    "text": "Monastrell grows on a high, dry plateau with deep, chalky soils. It gives fleshy, warm reds with good balance.",
     "cite": [
      "yecla-doc:p3",
      "yecla-doc:p6"
@@ -329,7 +329,7 @@
   {
    "id": "jumilla",
    "why": {
-    "text": "Hardy Monastrell, suited to drought, strong summer heat and spring frost, makes broad, fleshy reds with ripe-fruit aroma.",
+    "text": "Hardy Monastrell is suited to drought and strong summer heat. It makes broad, fleshy reds with ripe-fruit aroma.",
     "cite": [
      "jumilla-doc:p12"
     ]
@@ -425,7 +425,7 @@
   {
    "id": "alicante",
    "why": {
-    "text": "Humid sea air and dry, hard calcareous ground make the wines fresher and subtler than those of inland or continental neighbours.",
+    "text": "Humid sea air meets dry, hard calcareous ground here. Together they make the wines fresher and subtler than those of inland neighbours.",
     "cite": [
      "alicante-doc:p7"
     ]
@@ -528,7 +528,7 @@
   {
    "id": "bullas",
    "why": {
-    "text": "Monastrell (80% of plantings), altitude, chalky soil and a dry climate give broad, fleshy, deeply coloured reds.",
+    "text": "Monastrell makes up 80% of plantings, on chalky soil in a dry climate at altitude. It gives broad, deeply coloured reds.",
     "cite": [
      "bullas-doc:p7"
     ]

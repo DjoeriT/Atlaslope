@@ -15,6 +15,9 @@ export interface Region {
   order: number;
   country: string;
   course: string;
+  /** The course's own chapter name when the shown name is shorter ("Meseta: Castilla-La Mancha, Madrid, Extremadura" shows as "Meseta";
+   *  owner, 18 Oct 2026: "What's with the commas"). */
+  chapter?: string;
 }
 
 export interface Place {
