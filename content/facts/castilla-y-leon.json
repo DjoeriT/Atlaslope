@@ -4,7 +4,7 @@
   {
    "id": "bierzo",
    "why": {
-    "text": "An Atlantic-continental basin with mild temperatures, fair rainfall, plenty of sun and acid soils gives fresh, mineral wines.",
+    "text": "Bierzo is an Atlantic-continental basin with mild temperatures and plenty of sun. Fair rainfall and acid soils give fresh, mineral wines.",
     "cite": [
      "bierzo-doc:p3"
     ]
@@ -77,7 +77,7 @@
   {
    "id": "leon",
    "why": {
-    "text": "Long winters, short summers, about 500 mm of rain, strong sun and poor soils, plus Prieto Picudo, give aromatic wines.",
+    "text": "Winters are long and summers short, with strong sun and about 500 mm of rain. Prieto Picudo on poor soils gives aromatic wines.",
     "cite": [
      "leon-doc:p5"
     ]
@@ -159,7 +159,7 @@
   {
    "id": "arlanza",
    "why": {
-    "text": "Extreme continental climate with sharp day-night swings and altitude slow ripening, giving Tinta del País wines rich in polyphenols and acidity.",
+    "text": "Altitude and an extreme continental climate slow ripening. Tinta del País wines come out rich in polyphenols and acidity.",
     "cite": [
      "arlanza-doc:p5"
     ]
@@ -240,7 +240,7 @@
   {
    "id": "valles-de-benavente",
    "why": {
-    "text": "A dry Mediterranean-continental climate and deep, well-drained poor soils let Prieto Picudo ripen and give red-fruited wines with a slight spritz.",
+    "text": "A dry Mediterranean-continental climate and deep, well-drained poor soils let Prieto Picudo ripen. The wines are red-fruited with a slight spritz.",
     "cite": [
      "valles-de-benavente-doc:p4"
     ]
@@ -317,7 +317,7 @@
   {
    "id": "cigales",
    "why": {
-    "text": "Vines along the Pisuerga, 30 % of them over 60 years old, ripen intensely with balanced acidity and sugar, suiting aged wines.",
+    "text": "Vines line the Pisuerga, and 30 % are over 60 years old. They ripen intensely, with balanced acidity and sugar that suit aged wines.",
     "cite": [
      "cigales-doc:p5"
     ]
@@ -401,7 +401,7 @@
   {
    "id": "ribera-del-duero",
    "why": {
-    "text": "Tempranillo in a high, strongly continental climate with big temperature swings gains balanced acidity and sweet tannins, suited to ageing.",
+    "text": "Tempranillo grows in a high, strongly continental climate with big temperature swings. It gains balanced acidity and sweet tannins, suited to ageing.",
     "cite": [
      "ribera-del-duero-doc:p3"
     ]
@@ -485,7 +485,7 @@
   {
    "id": "valtiendas",
    "why": {
-    "text": "High, dry, continental-Mediterranean vineyards on clay with pebbles give Tempranillo wines rich in phenols, fresh and mineral.",
+    "text": "The vineyards are high and dry, on clay with pebbles. Tempranillo here gives fresh, mineral wines rich in phenols.",
     "cite": [
      "valtiendas-doc:p4",
      "valtiendas-doc:p5"
@@ -554,7 +554,7 @@
   {
    "id": "toro",
    "why": {
-    "text": "Harsh winters, hot sun, iron-rich sandy-loam soils and old bush vines give very deeply coloured, high-alcohol wines.",
+    "text": "Old bush vines face harsh winters and hot sun on iron-rich sandy-loam soils. The wines are very deeply coloured and high in alcohol.",
     "cite": [
      "toro-doc:p3"
     ]
@@ -632,7 +632,7 @@
   {
    "id": "tierra-del-vino-de-zamora",
    "why": {
-    "text": "Alluvial soils, 350 to 400 mm rain, harsh winters, spring frost and old vines give very ripe grapes and deeply coloured, structured reds.",
+    "text": "Old vines on alluvial soils face harsh winters and spring frost. The grapes get very ripe, giving deeply coloured, structured reds.",
     "cite": [
      "tierra-del-vino-de-zamora-doc:p5"
     ]
@@ -721,7 +721,7 @@
   {
    "id": "rueda",
    "why": {
-    "text": "A high plateau, 700 to 870 m, with big day-night swings lets grapes gain sugar while keeping acidity.",
+    "text": "A high plateau at 700 to 870 m has big day-night swings. Grapes gain sugar while keeping their acidity.",
     "cite": [
      "rueda-doc:p13",
      "rueda-doc:p14"
@@ -837,7 +837,7 @@
   {
    "id": "arribes",
    "why": {
-    "text": "Canyon vineyards on granite and slate, warmer and wetter than the rest of the region, give Juan García wines with structure and softness.",
+    "text": "Canyon vineyards on granite and slate are warmer and wetter than the rest of the region. Juan García gives wines with structure and softness.",
     "cite": [
      "arribes-doc:p11",
      "arribes-doc:p12"
@@ -933,7 +933,7 @@
   {
    "id": "sierra-de-salamanca",
    "why": {
-    "text": "A mild, damp Mediterranean microclimate, terraced slopes and acid slate soils give Rufete wines of medium-high alcohol, minerality and long life.",
+    "text": "Terraced slopes on acid slate soils have a mild, damp Mediterranean microclimate. Rufete gives mineral wines of medium-high alcohol and long life.",
     "cite": [
      "sierra-de-salamanca-doc:p4"
     ]
@@ -1003,7 +1003,7 @@
   {
    "id": "cebreros",
    "why": {
-    "text": "Mostly old Garnacha vines on south-facing granite slopes, some above 1,000 m, give fresh wines despite hot, dry summers.",
+    "text": "Mostly old Garnacha vines grow on south-facing granite slopes, some above 1,000 m. They give fresh wines despite hot, dry summers.",
     "cite": [
      "cebreros-doc:p9",
      "cebreros-doc:p11",

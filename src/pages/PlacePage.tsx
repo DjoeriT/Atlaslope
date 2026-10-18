@@ -166,12 +166,12 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
           {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
-          {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && ' › '}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
+          {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
         <ul className="pg-badges" aria-label={t.sections.where}>
           <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
-          {region && <li title={t.swsTitle(region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
+          {region && <li title={t.swsTitle(region.chapter ?? region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
           {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
           {meta && <li className="meta">{meta}</li>}
         </ul>

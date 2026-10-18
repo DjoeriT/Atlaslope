@@ -4,7 +4,7 @@
   {
    "id": "lanzarote",
    "why": {
-    "text": "Native grapes cope with 150 mm of rain and wind on volcanic ash, behind stone walls, giving balanced, mineral wines.",
+    "text": "Native grapes grow on volcanic ash behind stone walls, coping with wind and 150 mm of rain. The wines are balanced and mineral.",
     "cite": [
      "lanzarote-doc:p6"
     ]
@@ -108,7 +108,7 @@
   {
    "id": "la-palma",
    "why": {
-    "text": "Native grapes on volcanic soil under an Atlantic climate, with trade winds, wide day-night swings and scarce but sufficient rain.",
+    "text": "Native grapes grow on volcanic soil under an Atlantic climate with trade winds. Days and nights swing widely, and rain is scarce but sufficient.",
     "cite": [
      "la-palma-doc:p6",
      "la-palma-doc:p7"
@@ -219,7 +219,7 @@
   {
    "id": "tacoronte-acentejo",
    "why": {
-    "text": "A long growing season and slow ripening on clay-loam and silt-loam soil give intense, aromatic wines.",
+    "text": "A long growing season ripens grapes slowly on clay-loam and silt-loam soil. The wines are intense and aromatic.",
     "cite": [
      "tacoronte-acentejo-doc:p6"
     ]
@@ -329,7 +329,7 @@
   {
    "id": "valle-de-guimar",
    "why": {
-    "text": "A sunny basin in south-east Tenerife, with vines from 300 to 1,700 m: porous volcanic soil low down, fertile clay high up.",
+    "text": "Vines climb from 300 to 1,700 m in a sunny basin in south-east Tenerife. Porous volcanic soil lies low down, with fertile clay higher up.",
     "cite": [
      "valle-de-guimar-doc:p8",
      "valle-de-guimar-doc:p9"
@@ -451,7 +451,7 @@
   {
    "id": "valle-de-la-orotava",
    "why": {
-    "text": "Vines on gentle slopes at 400 to 800 m, with mild temperatures and mostly volcanic soil.",
+    "text": "Vines grow on gentle slopes at 400 to 800 m, mostly on volcanic soil. Temperatures are mild.",
     "cite": [
      "valle-de-la-orotava-doc:p7"
     ]
@@ -561,7 +561,7 @@
   {
    "id": "ycoden-daute-isora",
    "why": {
-    "text": "Slopes fall from Teide to the coast, from 1,400 to 50 m, on fertile volcanic soil with trade winds and strong sun.",
+    "text": "Slopes fall from Teide to the coast, from 1,400 to 50 m, on fertile volcanic soil. The vines get trade winds and strong sun.",
     "cite": [
      "ycoden-daute-isora-doc:p6"
     ]
@@ -665,7 +665,7 @@
   {
    "id": "abona",
    "why": {
-    "text": "Gentle slopes in arid south-east Tenerife, with vines from 300 to 1,700 m, high heat and strong sun.",
+    "text": "Vines grow from 300 to 1,700 m on gentle slopes in arid south-east Tenerife. The heat is high and the sun strong.",
     "cite": [
      "abona-doc:p7"
     ]
@@ -780,7 +780,7 @@
   {
    "id": "la-gomera",
    "why": {
-    "text": "Many microclimates and steep terraces; Forastera Blanca, the majority white grape, gives high, balanced acidity.",
+    "text": "The island has many microclimates and steep terraces. Forastera Blanca, the majority white grape, gives high, balanced acidity.",
     "cite": [
      "la-gomera-doc:p8"
     ]
@@ -900,7 +900,7 @@
   {
    "id": "gran-canaria",
    "why": {
-    "text": "Varied geography, soils and climate, with trade winds and warmth from the African coast, give structured, balanced wines.",
+    "text": "Geography and soils vary widely, with trade winds and warmth from the African coast. The wines are structured and balanced.",
     "cite": [
      "gran-canaria-doc:p7"
     ]
@@ -1006,7 +1006,7 @@
   {
    "id": "el-hierro",
    "why": {
-    "text": "Steep terraces from 50 to 1,000 m on loose, stony soil, with low rainfall, give wines high in alcohol and acidity.",
+    "text": "Steep terraces run from 50 to 1,000 m on loose, stony soil with low rainfall. The wines are high in alcohol and acidity.",
     "cite": [
      "el-hierro-doc:p6"
     ]

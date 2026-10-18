@@ -42,7 +42,7 @@ export function CardShell({ tree, go, trail, title, close, cover, children, foot
     <div className="body">
       {up.length > 0 && (
         <nav className="kicker crumb" aria-label={t.whereThisSits}>
-          {up.map((c, i) => <span key={c.id + i} className="step">{i > 0 && ' › '}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
+          {up.map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
         </nav>
       )}
       <h1 ref={heading} tabIndex={-1}>{title}</h1>

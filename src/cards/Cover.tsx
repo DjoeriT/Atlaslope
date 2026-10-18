@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { strings } from '../strings';
 import type { Pic } from '../pages/helpers';
 import { Img } from './Img';
-import { Credit } from './Credit';
+import { Credit, oneEach } from './Credit';
 import { Lightbox } from '../pages/Lightbox';
 
 const t = strings.place;
@@ -44,7 +44,7 @@ export function Cover({ name, color, photos }: Props) {
     </div>
     <p className="cover-credits">
       {t.page.photosLine}{' '}
-      {frames.map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}
+      {oneEach(frames).map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}
     </p>
     {open !== null && <Lightbox photos={shown} start={open} name={name} onClose={() => setOpen(null)} />}
     </>

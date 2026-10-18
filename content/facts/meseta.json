@@ -4,7 +4,7 @@
   {
    "id": "mondejar",
    "why": {
-    "text": "Hot summers, cold winters and potassium-rich red soils give fresh, aromatic, acidic wines; Malvar and Torrontés whites stand out.",
+    "text": "Hot summers and cold winters on potassium-rich red soils give fresh, aromatic wines. Whites from Malvar and Torrontés stand out.",
     "cite": [
      "mondejar-doc:p5"
     ]
@@ -98,7 +98,7 @@
   {
    "id": "vinos-de-madrid",
    "why": {
-    "text": "Low yields (about 3,000 kg/ha) give high-alcohol, deeply coloured reds with ripe fruit; sierra zones add minerality, the chalky south-east ripeness.",
+    "text": "Low yields (about 3,000 kg/ha) give deeply coloured reds with ripe fruit. The sierra zones add minerality, while the chalky south-east adds ripeness.",
     "cite": [
      "vinos-de-madrid-doc:p5",
      "vinos-de-madrid-doc:p6"
@@ -187,7 +187,7 @@
   {
    "id": "mentrida",
    "why": {
-    "text": "Extreme continental climate and sandy, acidic, lime-poor soil give high-alcohol, full-bodied, warm wines.",
+    "text": "An extreme continental climate meets sandy, acidic soil poor in lime. The wines are warm and full-bodied, with high alcohol.",
     "cite": [
      "mentrida-doc:p6"
     ]
@@ -284,7 +284,7 @@
   {
    "id": "ucles",
    "why": {
-    "text": "Altitude and potassium-rich soils, with low-density bush vines, give balanced grapes and acidic wines made to last in bottle.",
+    "text": "Altitude and potassium-rich soils, with low-density bush vines, give balanced grapes. The wines are acidic and made to last in bottle.",
     "cite": [
      "ucles-doc:p6"
     ]
@@ -363,7 +363,7 @@
   {
    "id": "manchuela",
    "why": {
-    "text": "Between two river valleys, hot sunny summers with almost no rain and calcareous clay soils suit Bobal: aromatic, acidic, deeply coloured wines.",
+    "text": "Between two river valleys, summers are hot and sunny with almost no rain. On calcareous clay soils, Bobal gives aromatic, deeply coloured wines.",
     "cite": [
      "manchuela-doc:p7"
     ]
@@ -473,7 +473,7 @@
   {
    "id": "ribera-del-jucar",
    "why": {
-    "text": "The Júcar canyon brings more rain than the surrounding flatland; lake-deposit soils give soft, balanced reds and whites with good acidity.",
+    "text": "The Júcar canyon brings more rain than the surrounding flatland. Lake-deposit soils give soft, balanced wines with good acidity.",
     "cite": [
      "ribera-del-jucar-doc:p5"
     ]
@@ -556,7 +556,7 @@
   {
    "id": "la-mancha",
    "why": {
-    "text": "Dry, very sunny plains (300 to 350 mm of rain, 3,000 sun hours) over chalky soils give colourful, aromatic wines; low yields add balance.",
+    "text": "Dry, chalky plains get 3,000 hours of sun and 300 to 350 mm of rain. Wines are colourful and aromatic, balanced by low yields.",
     "cite": [
      "la-mancha-doc:p7"
     ]
@@ -666,7 +666,7 @@
   {
    "id": "almansa",
    "why": {
-    "text": "High, extreme-continental plateau with limestone-rich soil and yields of 4,500 kg/ha concentrate colour, tannin and aroma in the wines.",
+    "text": "Almansa is a high plateau with an extreme continental climate and limestone-rich soil. Yields of 4,500 kg/ha concentrate colour and tannin in the wines.",
     "cite": [
      "almansa-doc:p7"
     ]
@@ -762,7 +762,7 @@
   {
    "id": "ribera-del-guadiana",
    "why": {
-    "text": "Mediterranean climate and low rain in key months cut disease; reds are rich in tannin and colour, whites fruity with medium-high acidity.",
+    "text": "A Mediterranean climate with low rain in key months cuts disease. Reds are rich in tannin and colour, while whites are fruity with medium-high acidity.",
     "cite": [
      "ribera-del-guadiana-doc:p6",
      "ribera-del-guadiana-doc:p7"
@@ -858,7 +858,7 @@
   {
    "id": "campo-de-calatrava",
    "why": {
-    "text": "Dark volcanic-zone soils warm early; little rain (about 400 mm), dry air and 2,800 sun hours let vines ripen with little disease.",
+    "text": "Dark volcanic-zone soils warm up early. Dry air and about 400 mm of rain let vines ripen with little disease.",
     "cite": [
      "campo-de-calatrava-doc:p8",
      "campo-de-calatrava-doc:p9"
@@ -959,7 +959,7 @@
   {
    "id": "valdepenas",
    "why": {
-    "text": "Dry continental climate and chalky, humus-poor soil stress the vines, giving low yields and well-structured, complex reds.",
+    "text": "A dry continental climate and chalky, humus-poor soil stress the vines. Low yields give well-structured, complex reds.",
     "cite": [
      "valdepenas-doc:p6"
     ]

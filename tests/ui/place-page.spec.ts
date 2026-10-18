@@ -15,7 +15,7 @@ test('a place card shows the cover, three glance cells and "Explore X"', async (
   // The credit: author to the Commons page, licence to its text, and "resized" for CC BY(-SA) files (owner card, 18 Oct 2026).
   await expect(card.locator('.cover-credits a').first()).toHaveAttribute('href', /commons\.wikimedia\.org/);
   await expect(card.locator('.cover-credits a').nth(1)).toHaveAttribute('href', /creativecommons\.org/); // alella-1 is CC BY-SA 4.0
-  await expect(card.locator('.cover-credits')).toContainText(', resized');
+  await expect(card.locator('.cover-credits')).toContainText(' · resized');
   await expect(card.locator('.cover .credit, .cover .ctag')).toHaveCount(0); // no text on the photo (owner point 4)
   await expect(card.locator('.glance > div')).toHaveCount(3);
   await expect(card.getByRole('link', { name: /^Explore .+$/ })).toBeVisible();
@@ -26,7 +26,8 @@ test('a card with several photos shows them as a mosaic, and the arrows only in 
   await open(page, '#place=cebreros');
   await expect(page.locator('.cover figure')).toHaveCount(3);
   await expect(page.locator('.cover .nav')).toHaveCount(0);
-  await expect(page.locator('.cover-credits span')).toHaveCount(3);
+  // Two of the three are by Dopcebreros under the same licence: the line names them once (premium feel review, 18 Oct 2026).
+  await expect(page.locator('.cover-credits span')).toHaveCount(2);
   await page.locator('.cover .ph').nth(1).click();
   const viewer = page.getByRole('dialog', { name: 'Photos of Cebreros' });
   await expect(viewer.locator('.count')).toHaveText('2 / 3');

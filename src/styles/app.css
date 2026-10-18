@@ -81,8 +81,12 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:1.6rem 0 .6
 .card h1:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .card .close{position:absolute;right:.6rem;top:.6rem;z-index:1}
 .card h1{padding-right:2.5rem}
-.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;letter-spacing:.06em}
-.crumb a{text-decoration:none;color:var(--ink3);min-height:2.75rem;min-width:2.75rem;display:inline-flex;align-items:center}
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:0 .45rem;letter-spacing:.06em}
+/* A step and its › stay on one line, so a wrap never leaves a lone › (owner, 18 Oct 2026: Vinos de Madrid card). */
+.crumb .step{display:inline-flex;align-items:center;gap:.45rem;white-space:nowrap;max-width:100%}
+.crumb .step a{white-space:normal}
+.crumb .sep{color:var(--ink3)}
+.crumb a{text-decoration:none;color:var(--ink3);min-height:2.75rem;display:inline-flex;align-items:center}
 .facts dd a{display:inline-flex;align-items:center;min-height:2.75rem}
 .crumb a:hover{color:var(--accent);text-decoration:underline}
 .crumb span{color:var(--ink2)}

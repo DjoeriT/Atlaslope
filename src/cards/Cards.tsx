@@ -12,7 +12,7 @@ import { SourceLine } from './PlaceFacts';
 import { Cover } from './Cover';
 import { Glance } from './Glance';
 import { Img } from './Img';
-import { Credit } from './Credit';
+import { Credit, oneEach } from './Credit';
 import type { ShownPhoto } from '../facts';
 import { placeLine, regionLine, spainLine, type TileLine } from '../facts/tiles';
 
@@ -69,7 +69,7 @@ function Tile({ to, go, name, label, line, photoIds, places }: TileProps) {
 function TileCredits({ photoIds }: { photoIds: readonly (readonly string[])[] }) {
   const shown = photoIds.map(firstPhoto).filter((p): p is ShownPhoto => !!p);
   if (shown.length === 0) return null;
-  return <p className="tile-credits">{t.tilePhotos} {shown.map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}</p>;
+  return <p className="tile-credits">{t.tilePhotos} {oneEach(shown).map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}</p>;
 }
 
 /** Tiles in two columns; with an odd count the first one runs full width, so no tile sits alone. */

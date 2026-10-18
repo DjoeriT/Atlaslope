@@ -97,6 +97,7 @@ export const strings = {
     altitudeMeasured: (low: string, high: string) => `Most of the land between ${low} and ${high} m`,
     soil: 'Soil',
     page: (n: string) => `p. ${n}`,
+    pages: (list: string) => `pp. ${list}`,
     shortSource: {
       pliego: 'Pliego',
       singleDocument: 'EU single document',

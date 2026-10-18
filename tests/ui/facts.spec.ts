@@ -118,10 +118,10 @@ test('Rioja shows its famous styles and how it tastes, each with a source', asyn
 test('the Rioja guide tags facts with short sources and lists each source once', async ({ page }) => {
   await open(page, '#place=rioja&page');
   const tag = page.locator('#overview .src.short a').first();
-  await expect(tag).toHaveText(/^EU single document, p\. \d+$/);
+  await expect(tag).toHaveText(/^EU single document · pp?\. \d+(–\d+)?$/);
   await expect(tag).toHaveAttribute('href', /^https:\/\//);
   await expect(tag).toHaveAttribute('title', /^Source: Documento único/);
-  await expect(page.locator('#terroir .src.short a').first()).toHaveText(/^Pliego, p\. \d+/);
+  await expect(page.locator('#terroir .src.short a').first()).toHaveText(/^Pliego · pp?\. \d+/);
   const list = page.locator('#sources li');
   const texts = await list.allTextContents();
   expect(texts.length).toBeGreaterThan(1);

@@ -7,7 +7,7 @@ import type { Place, Region, Tree } from '../tree';
 import '../styles/region.css';
 import { sentences } from './sentence';
 import { Img } from '../cards/Img';
-import { Credit } from '../cards/Credit';
+import { Credit, oneEach } from '../cards/Credit';
 
 const t = strings.regionPage;
 type Shot = ShownPhoto;
@@ -69,7 +69,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
         {learn.map((p, i) => <Tile key={p.id} place={p} go={go} photo={shots[i]} onBroken={markBroken} />)}
       </ul>
       {shown.length > 0 && (
-        <p className="rcredits">{t.credits} {shown.map((p, i) => <span key={p.src}>{i > 0 && '; '}{credit(p)}</span>)}</p>
+        <p className="rcredits">{t.credits} {oneEach(shown).map((p, i) => <span key={p.src}>{i > 0 && '; '}{credit(p)}</span>)}</p>
       )}
       {also.length > 0 && (
         <section className="ralso">

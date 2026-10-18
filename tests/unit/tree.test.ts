@@ -96,6 +96,12 @@ describe('search', () => {
     expect(tree.search('xeres')[0]).toMatchObject({ id: 'jerez' });
   });
 
+  // Owner, 18 Oct 2026 ("What's with the commas"): the Meseta chapter shows as "Meseta"; its full chapter name still finds it.
+  it('shows a long course chapter by its short name and still finds it by the full one', () => {
+    expect(tree.getRegion('meseta')).toMatchObject({ name: 'Meseta', chapter: 'Meseta: Castilla-La Mancha, Madrid, Extremadura' });
+    expect(tree.search('extremadura')[0]).toMatchObject({ level: 'region', id: 'meseta', name: 'Meseta' });
+  });
+
   it('finds a one-place region as its place, and other regions as regions', () => {
     expect(tree.search('rioja')[0]).toEqual({ level: 'place', id: 'rioja', name: 'Rioja' });
     expect(tree.search('rioja').some((c) => c.level === 'region')).toBe(false);

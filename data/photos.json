@@ -35,7 +35,7 @@
   },
   "alicante-3": {
    "alt": "Viñedo de Terlinques hacia el Corredor",
-   "artist": "Enrique Íñiguez Rodríguez (Qoan) Credit information This work was created by Enr",
+   "artist": "Enrique Íñiguez Rodríguez (Qoan)",
    "licence": "CC BY-SA 4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_de_Terlinques_hacia_el_Corredor.jpg",
@@ -66,20 +66,20 @@
    "title": "File:Viña Vino Vinalopo.jpg"
   },
   "rioja-1": {
-   "alt": "Laguardia - Viñedo 01",
-   "artist": "Basotxerri",
-   "licence": "CC BY-SA 4.0",
-   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Laguardia_-_Vi%C3%B1edo_01.jpg",
-   "title": "File:Laguardia - Viñedo 01.jpg"
-  },
-  "rioja-2": {
    "alt": "Viñedos en Cuzcurritilla",
    "artist": "Nicondarreta",
    "licence": "CC BY-SA 4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_en_Cuzcurritilla.jpg",
    "title": "File:Viñedos en Cuzcurritilla.jpg"
+  },
+  "rioja-2": {
+   "alt": "Laguardia - Viñedo 01",
+   "artist": "Basotxerri",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Laguardia_-_Vi%C3%B1edo_01.jpg",
+   "title": "File:Laguardia - Viñedo 01.jpg"
   },
   "rioja-3": {
    "alt": "CEPAS CERCA DE NAJERA",
@@ -147,7 +147,7 @@
   },
   "malaga-1": {
    "alt": "Circular por Almáchar",
-   "artist": "Juan Pablo Olmo from málaga, spain",
+   "artist": "Juan Pablo Olmo",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Circular_por_Alm%C3%A1char_(8459149046).jpg",
@@ -155,7 +155,7 @@
   },
   "malaga-2": {
    "alt": "Viñas",
-   "artist": "Antonio from Mijas, España",
+   "artist": "Antonio",
    "licence": "CC BY-SA 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_(3543402622).jpg",
@@ -163,7 +163,7 @@
   },
   "montilla-moriles-1": {
    "alt": "Olivares y viñas",
-   "artist": "Javi Carretero from Sevilla, Spain",
+   "artist": "Javi Carretero",
    "licence": "CC BY-SA 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Olivares_y_vi%C3%B1as_(4021471167).jpg",
@@ -171,7 +171,7 @@
   },
   "montilla-moriles-2": {
    "alt": "Viñedo en Montilla",
-   "artist": "Víctor Fernández Salinas from Sevilla, España",
+   "artist": "Víctor Fernández Salinas",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_en_Montilla_(8203573968).jpg",
@@ -195,7 +195,7 @@
   },
   "carinena-1": {
    "alt": "Viña",
-   "artist": "Juanedc from Zaragoza, España",
+   "artist": "Juanedc",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1a_(8249936932).jpg",
@@ -203,7 +203,7 @@
   },
   "carinena-2": {
    "alt": "Vid",
-   "artist": "Juanedc from Zaragoza, España",
+   "artist": "Juanedc",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vid_(9281267053).jpg",
@@ -267,7 +267,7 @@
   },
   "rias-baixas-2": {
    "alt": "Rectoral de Breixa",
-   "artist": "José Antonio Gil Martínez from Vigo, Spain",
+   "artist": "José Antonio Gil Martínez",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Rectoral_de_Breixa_(2395726907).jpg",
@@ -379,7 +379,7 @@
   },
   "gran-canaria-2": {
    "alt": "El Confital D81 4892",
-   "artist": "Bengt Nyman from Vaxholm, Sweden",
+   "artist": "Bengt Nyman",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:El_Confital_D81_4892_(27756760809).jpg",
@@ -419,7 +419,7 @@
   },
   "valle-de-guimar-1": {
    "alt": "At Tenerife 2020 604",
-   "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+   "artist": "Mike Peel",
    "licence": "CC BY-SA 4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2020_604.jpg",
@@ -483,7 +483,7 @@
   },
   "bierzo-2": {
    "alt": "Palacio de Canedo",
-   "artist": "José Antonio Gil Martínez from Vigo, Spain",
+   "artist": "José Antonio Gil Martínez",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Palacio_de_Canedo_(440125665).jpg",
@@ -595,7 +595,7 @@
   },
   "sierra-de-salamanca-1": {
    "alt": "Campo de viñas",
-   "artist": "Frayle from Salamanca, España",
+   "artist": "Frayle",
    "licence": "CC0",
    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "page": "https://commons.wikimedia.org/wiki/File:Campo_de_vi%C3%B1as_(34216460053).jpg",
@@ -787,7 +787,7 @@
   },
   "conca-de-barbera-3": {
    "alt": "Sarral, celler de la Cooperativa Vinícola, de Pere Domènech i Roura (1914, ampliat el 1931)",
-   "artist": "Catalan Art &amp; Architecture Gallery (Josep Bracons) from Barcelona, Catalonia",
+   "artist": "Catalan Art & Architecture Gallery (Josep Bracons)",
    "licence": "CC BY-SA 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Sarral,_celler_de_la_Cooperativa_Vin%C3%ADcola,_de_Pere_Dom%C3%A8nech_i_Roura_(1914,_ampliat_el_1931)_(12716714774).jpg",
@@ -811,7 +811,7 @@
   },
   "emporda-1": {
    "alt": "Espolla 2011 03",
-   "artist": "Bertrand GRONDIN → (Talk)",
+   "artist": "Bertrand GRONDIN",
    "licence": "CC BY-SA 3.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Espolla_2011_03.jpg",
@@ -931,7 +931,7 @@
   },
   "terra-alta-1": {
    "alt": "Vinya i Paisatge de Bot, Terra Alta, Tarragona.",
-   "artist": "Angela Llop from Spain",
+   "artist": "Angela Llop",
    "licence": "CC BY-SA 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vinya_i_Paisatge_de_Bot,_Terra_Alta,_Tarragona._(25931104190).jpg",
@@ -1019,7 +1019,7 @@
   },
   "campo-de-borja-2": {
    "alt": "Palacio de los Condes de Bureta . Bureta. Zaragoza.",
-   "artist": "Miguel Ángel García. from Ólvega., España",
+   "artist": "Miguel Ángel García.",
    "licence": "CC BY 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Palacio_de_los_Condes_de_Bureta_._Bureta._Zaragoza._(26886652616).jpg",
@@ -1123,7 +1123,7 @@
   },
   "ycoden-daute-isora-1": {
    "alt": "At Tenerife 2022 216",
-   "artist": "Photograph by Mike Peel (www.mikepeel.net).",
+   "artist": "Mike Peel",
    "licence": "CC BY-SA 4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:At_Tenerife_2022_216.jpg",
@@ -1163,7 +1163,7 @@
   },
   "sierras-de-malaga-2": {
    "alt": "Viñas",
-   "artist": "Antonio from Mijas, España",
+   "artist": "Antonio",
    "licence": "CC BY-SA 2.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1as_(3543402622).jpg",
@@ -1171,7 +1171,7 @@
   },
   "sierras-de-malaga-3": {
    "alt": "Paseando por el Torcal de Antequera",
-   "artist": "Abel Maestro Garcia from Asunción, España",
+   "artist": "Abel Maestro Garcia",
    "licence": "Public domain",
    "licenceUrl": null,
    "page": "https://commons.wikimedia.org/wiki/File:Paseando_por_el_Torcal_de_Antequera_(31545451041).jpg",
@@ -1323,7 +1323,7 @@
   },
   "otazu-1": {
    "alt": "Exterior-Otazu-Vinedos",
-   "artist": "Unknown authorUnknown author",
+   "artist": "Unknown",
    "licence": "CC BY-SA 4.0",
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Exterior-Otazu-Vinedos.jpg",
@@ -1331,7 +1331,7 @@
   },
   "otazu-2": {
    "alt": "El espectáculo de las viñas tras su poda a finales de otoño",
-   "artist": "AlloopWine&amp;Pepper",
+   "artist": "AlloopWine&Pepper",
    "licence": "CC0",
    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "page": "https://commons.wikimedia.org/wiki/File:El_espect%C3%A1culo_de_las_vi%C3%B1as_tras_su_poda_a_finales_de_oto%C3%B1o.jpg",
