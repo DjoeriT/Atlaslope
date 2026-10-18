@@ -109,7 +109,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
   Say the expected cost first and the measured cost (from session usage, not the agent's estimate) after.
 - **While running:** the working rules (narrow reads, short output, time limits, wall times) are in the agent files in
   `.claude/agents/`, which every agent loads; write them there once, not here. LeadBot's own part: never two agents building the app at
-  once; builders run only the test classes they touched and no UI tests; LeadBot runs the full suite and `Tools/check.sh ui` on `main` after the merge, unless the same code already passed.
+  once; builders run only the test classes they touched and no UI tests; LeadBot runs only the specs it touched; CI runs the full suite (owner card, 18 Oct 2026).
 - **Rounds:** at most two resumes of the same agent, for small follow-ups only. Anything bigger gets a fresh agent and card. Resume within the
   hour (the cache); after that write a fresh card.
 - **Reports:** 300 words at most in the reply; details in the report file; no pasted logs or diffs.

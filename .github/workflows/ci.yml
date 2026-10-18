@@ -8,15 +8,17 @@ concurrency:
   group: ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 jobs:
-  check:
+  # Docs-only changes (docs/, Review/, top-level .md files) skip the build and tests; the jobs still report, so the PR can merge.
+  # Anything else runs everything; publish.yml reuses a green run for the same files, or runs the checks itself. Owner's yes, 16 Oct 20:17Z.
+  scope:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 5
+    outputs:
+      docs: ${{ steps.scope.outputs.docs }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      # Docs-only changes (docs/, Review/, top-level .md files) skip the build and tests; the job still reports, so the PR can merge.
-      # Anything else, runs everything; publish.yml reuses this run's full checks on main for the same commit, or runs them itself. Owner's yes, 16 Oct 20:17Z.
       - name: Docs only?
         id: scope
         env:
@@ -30,16 +32,39 @@ jobs:
           else
             echo "docs=false" >> "$GITHUB_OUTPUT"
           fi
+  # Typecheck, unit tests, data ledger, production build and size: everything in Tools/check.sh except the UI tests.
+  check:
+    needs: scope
+    if: needs.scope.outputs.docs != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        if: steps.scope.outputs.docs != 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-        if: steps.scope.outputs.docs != 'true'
+      - name: Tools/check.sh
+        run: Tools/check.sh
+  # The UI tests are about 90% of the run, so they run in two halves at once (owner card, 18 Oct 2026: one serial job took 4.2 minutes).
+  # publish.yml looks these steps up by name to reuse a green run; keep the name.
+  ui:
+    needs: scope
+    if: needs.scope.outputs.docs != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1/2, 2/2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
       - run: npx playwright install --with-deps chromium
-        if: steps.scope.outputs.docs != 'true'
-      # publish.yml looks this step up by name to reuse a green run on main; keep the name.
-      - name: Tools/check.sh ui
-        run: Tools/check.sh ui
-        if: steps.scope.outputs.docs != 'true'
+      - name: UI tests
+        run: npx playwright test --shard=${{ matrix.shard }} --reporter=line

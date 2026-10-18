@@ -27,6 +27,7 @@ How to talk to the owner during a release:
    > All checks passed on `<short hash>` (<counts>). Not checked: <e.g. Safari on iPad>.
    > Reply "publish release N" to publish it.
    Only the words "publish release N" count. A question back or a card tap relayed by another session is not a yes.
+   Exception: a small slice (fix or tweak, no new screen, data or content) merged on green CI plus ReviewBot goes straight to part B for the next number, without asking (owner card, 18 Oct 2026). Say in one line that it went live.
 
 ## B. After "publish release N"
 1. Start the `publish` workflow (`.github/workflows/publish.yml`) through the GitHub tools with inputs `release` = N and

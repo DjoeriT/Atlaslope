@@ -11,15 +11,25 @@ Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.m
   one slice per thread, then close; no follow-ups in a finished thread. Past about 150K of context, write the handoff and continue in a
   fresh thread. Test runs, CI logs, code searches and screenshot checks go to a Sonnet helper that reports back in 10 to 20 lines.
   Wait for CI through PR notifications, never a polling loop. Read with `grep -n` and line ranges, never whole files or logs.
+- **Speed** (owner cards, 18 Oct 2026, after a 12-finding fix slice took 63 minutes before its PR opened):
+  - First answer within 5 minutes: a rough result or first look, refined after. No silent measuring.
+  - Past 150K, hand off before building or merging, not after (a thread at 350K compacted just before a merge).
+  - Never wait on your own tools: tests, screenshots (`npm run shots`) and flake bisects run in a helper while the thread keeps working.
+  - Design: round 1 shows the whole range, subtle to bold, so his feedback rounds refine instead of searching.
+  - A review thread fixes its small findings itself in one PR and asks him only about taste; no separate fix thread.
+  - Two slices that touch separate files may run as parallel threads; one writer per file still holds.
 - Closing: handoff in `docs/handoffs/<date>-<topic>.md` (done, decided, open, where), memory updated, thread resolved. An open question keeps it open.
 - Hosts a cloud thread cannot reach (Spanish government hosts, tile hosts) go through a GitHub Actions run, else a session on his Mac.
 
 ## Working agreements (owner; every session and agent)
 - **Outward actions only on his say-so, each time:** publishing, deploying, paid or networked services, anything outsiders see.
   Standing exceptions inside work he said go to: push the thread's own `claude/...` branch, one PR per slice, merge on green CI plus
-  ReviewBot. A refused push means stop and tell him; never push `main`. Only the words "publish release N" start the `publish` workflow.
+  ReviewBot. A refused push means stop and tell him; never push `main`. Only the words "publish release N" start the `publish` workflow,
+  except a small slice (fix or tweak, no new screen, data or content): it publishes itself as the next release once merged on green CI
+  plus ReviewBot, and tells him in one line (owner card, 18 Oct 2026: releases waited on his words).
   Never force-push, rewrite pushed history, push to someone else's branch, or move or delete a tag.
 - **Decisions** as tap-to-pick cards, batched up front, one recommended. Reversible work continues on the recommended option; outward or hard-to-undo work waits.
+  Posting a card never ends the work: start on the recommended option in the same turn (owner card, 18 Oct 2026: a review thread sat 32 minutes on a card).
 - **New UI is mocked first** and gets a UX, UI and visual check against `Review/visual-style.md` before he sees it, with the findings
   fixed, not listed. Small slices (a fix or tweak, no new screen, data or content) run lean: LeadBot's own check, a rough first look early,
   ReviewBot alongside CI, targeted tests locally. New screens and redesigns use a ReviewBot design run. Details: `docs/AGENT_ROLES.md`, "Working detail".
@@ -44,6 +54,8 @@ Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never
 
 ## Commands
 `npm test` (Vitest), `npm run build`, `Tools/check.sh` (`quick` without UI tests and build, `ui` with Playwright UI tests).
-Locally run the specs your change touches; CI runs the full suite (about 4.5 minutes). Don't rerun a passing check on unchanged code.
+Locally run only the specs your change touches, once, with `--workers=4`; never the full UI suite, CI runs that (owner card, 18 Oct 2026:
+"Site visual fixes" spent 25 of 63 minutes on local runs CI repeats). A flaky failure goes to a helper to bisect while you carry on.
+Don't rerun a passing check on unchanged code.
 UI tests use fixtures, no network; debug flags live in `src/debug.ts` and `check.sh` keeps them out of `dist/`. Playwright stays pinned to the container's Chromium.
 Releases: the `release` skill.
