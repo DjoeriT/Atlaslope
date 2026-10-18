@@ -1,10 +1,11 @@
-/* The home page (website slice 2), ported from the approved mock Review/mock-home-v1/template.html: Salon book, the atlas as hero, soft
-   6 px buttons (owner 11:49Z, 18 Oct 2026), source names until MAPA and IGN agree to their logos (owner card). One light theme. */
+/* The home page and the site's plain pages (guides/, about/), ported from the approved mock Review/mock-home-v1/template.html: Salon book,
+   the atlas as hero, soft 6 px buttons (owner 11:49Z, 18 Oct 2026), source names until MAPA and IGN agree to their logos (owner card).
+   One light theme. Owner 15:09Z, 18 Oct 2026: a taller bar with bold items and no search, a heavier headline, a louder Open the atlas. */
 :root{
   --serif:Newsreader,Georgia,serif;--sans:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif;
   --band:#141414;--foil:#E9D8B4;--foil-ink:#7D6540;
   --bg:#FFFFFF;--bg2:#F7F5F0;--ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;--line:#DCD4C6;
-  --r-btn:.4rem;--r-img:.3rem;--bar:3.25rem;
+  --r-btn:.4rem;--r-img:.3rem;--bar:4rem;--gut:clamp(24px,4vw,64px);--max:1320px;
   color-scheme:light;font-optical-sizing:auto;
 }
 *{box-sizing:border-box}
@@ -14,40 +15,42 @@ img{display:block;max-width:100%}
 :focus-visible{outline:3px solid #2F5F9E;outline-offset:3px}
 .skip{position:absolute;left:1rem;top:-4rem;z-index:20;background:var(--bg);padding:.6rem 1rem;border-radius:var(--r-btn)}
 .skip:focus{top:.5rem}
-.wrap{max-width:1200px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+/* one column edge for every section: 1320 px of content, a gutter that grows with the window (owner asked about the side space) */
+.wrap{max-width:calc(var(--max) + 2 * var(--gut));margin:0 auto;padding-left:max(var(--gut),env(safe-area-inset-left,0px));padding-right:max(var(--gut),env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
 p{text-wrap:pretty}
 .eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);font-weight:600;margin:0 0 .9rem}
 
 /* The bar: the same band as the atlas's (src/styles/site.css), as plain HTML. */
 .sitebar{position:sticky;top:0;z-index:10;height:calc(var(--bar) + 1px);background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
-/* full width with the atlas's 1 rem edge, so the logo and search sit where they sit on the atlas */
+/* full width with the atlas's 1 rem edge, so the logo sits where it sits on the atlas */
 .sitebar .in{height:100%;display:flex;align-items:center;gap:1.25rem;padding:0 max(1rem,env(safe-area-inset-right,0px)) 0 max(1rem,env(safe-area-inset-left,0px))}
 .sitebar :focus-visible{outline-color:var(--foil)}
-.sitebar .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;text-decoration:none;color:var(--foil);flex:none}
-.sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.25rem}
-.sitebar .mark{width:1.6rem;height:1.6rem}
-.sitebar nav{display:flex;gap:.25rem;margin-left:auto}
-.sitebar nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .75rem;color:#D8CDB4;text-decoration:none;font-size:.9rem}
-.sitebar nav a:hover{color:var(--foil)}
-/* the atlas's search field, drawn as a link to it */
-.sitebar .search{display:flex;align-items:center;gap:.5rem;width:17rem;min-height:2.75rem;padding:0 .8rem;border-radius:.3rem;text-decoration:none;font-size:1rem;
-  color:color-mix(in srgb,var(--foil) 70%,transparent);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);background:color-mix(in srgb,var(--foil) 8%,var(--band))}
-.sitebar .search:hover{color:var(--foil);border-color:color-mix(in srgb,var(--foil) 55%,transparent)}
-.sitebar .search svg{width:1.05rem;height:1.05rem;flex:none;color:var(--foil)}
-
+.sitebar .brand{display:flex;align-items:center;gap:.7rem;min-height:2.75rem;text-decoration:none;color:var(--foil);flex:none}
+.sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.6rem;letter-spacing:-.01em}
+.sitebar .mark{width:2.15rem;height:2.15rem}
+.sitebar nav{display:flex;gap:.5rem;margin-left:auto}
+.sitebar nav a{position:relative;display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .85rem;color:#D8CDB4;text-decoration:none;font-size:1rem;font-weight:600;letter-spacing:.01em}
+.sitebar nav a:hover,.sitebar nav a[aria-current="page"]{color:var(--foil)}
+.sitebar nav a[aria-current="page"]::after{content:"";position:absolute;left:.85rem;right:.85rem;bottom:.45rem;height:2px;background:var(--foil)}
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.5rem;height:48px;padding:0 1.5rem;border-radius:var(--r-btn);font-weight:500;font-size:1rem;text-decoration:none;white-space:nowrap}
+/* the call to action: taller, bolder, with a champagne edge and arrow, the one thing on the page that asks to be pressed */
+.btn.cta{height:60px;padding:0 1.6rem 0 2rem;gap:.85rem;font-size:1.1rem;font-weight:600;box-shadow:inset 0 0 0 1px var(--foil),0 10px 24px -12px rgba(20,20,20,.55)}
+.btn.cta svg{width:1.2rem;height:1.2rem;color:var(--foil);transition:transform .15s ease}
+.btn.cta:hover svg{transform:translateX(3px)}
 .btn.a{background:var(--band);color:var(--foil)}
 .btn.a:hover{background:#2A2722}
-.btn.link{padding:0;height:44px;border-radius:0;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;align-self:center;margin-left:.75rem}
+.btn.link{padding:0;height:44px;border-radius:0;font-weight:600;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;align-self:center;margin-left:.75rem}
 .ctas{display:flex;gap:.75rem;flex-wrap:wrap}
 
 /* hero: text on the page, the atlas bleeding off the right edge */
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);min-height:min(760px,calc(100vh - var(--bar)));border-bottom:1px solid var(--ink)}
-.hero .txt{display:flex;flex-direction:column;justify-content:center;padding-block:4rem;padding-right:3.5rem;padding-left:max(24px,calc((100vw - 1200px)/2 + 24px),env(safe-area-inset-left,0px))}
-.hero h1{font-size:clamp(3.2rem,6.4vw,6.2rem);line-height:1;font-weight:300} /* display: the one light heading (visual-style.md) */
+.hero .txt{display:flex;flex-direction:column;justify-content:center;padding-block:4rem;padding-right:3.5rem;padding-left:max(var(--gut),calc((100vw - var(--max))/2),env(safe-area-inset-left,0px))}
+.hero h1{font-size:clamp(3.2rem,6.4vw,6.2rem);line-height:1;font-weight:400} /* display: regular, not light (owner: 300 read too thin) */
 .hero .sub{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:30rem;margin:1.75rem 0 2.25rem}
+/* wide windows: the text column ends a fixed width past the page edge, so the headline keeps its three lines and the atlas takes the rest */
+@media (min-width:1280px){.hero{grid-template-columns:minmax(0,calc(max(var(--gut),(100vw - var(--max))/2) + 640px)) minmax(0,1fr)}}
 .hero .map{position:relative;margin:0;min-height:440px;overflow:hidden;background:#2B3A2A}
 .hero .map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 62%}
 .hero .map figcaption{position:absolute;left:1rem;bottom:1rem;right:1rem;display:flex;justify-content:space-between;gap:.5rem 1rem;flex-wrap:wrap;align-items:flex-end;color:#fff;font-size:.78rem}
@@ -70,8 +73,8 @@ p{text-wrap:pretty}
 .opts .ok{background:var(--foil);color:var(--band);border-color:var(--foil);font-weight:500}
 .nums{display:flex;gap:2.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
 .nums div{margin:0}
-.nums dt{font-family:var(--serif);font-weight:300;font-size:2.3rem;line-height:1}
-.nums dd{margin:.35rem 0 0;font-size:.78rem;color:var(--ink3)}
+.nums dt{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1}
+.nums dd{margin:.45rem 0 0;font-size:.85rem;line-height:1.35;color:var(--ink2);max-width:11rem}
 
 /* sources line: names set in type */
 .sources{padding-block:2.25rem;border-bottom:1px solid var(--line)}
@@ -100,8 +103,42 @@ p{text-wrap:pretty}
 .guide .credit{font-size:.78rem;color:var(--ink3);margin:.6rem 0 0}
 .guide .src{font-size:.78rem;color:var(--ink3);margin:-1rem 0 2rem}
 
+/* the last word: the call to action again, on the band */
+.closer{background:var(--band);color:#fff;padding-block:5.5rem}
+.closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2rem 3rem;flex-wrap:wrap}
+.closer h2{font-size:clamp(2.1rem,3.6vw,3rem);line-height:1.08;max-width:20ch;color:#fff}
+.closer p{margin:.9rem 0 0;color:#D8D2C6;font-size:1.05rem;max-width:34rem}
+.closer .btn.cta{background:var(--foil);color:var(--band);box-shadow:none}
+.closer .btn.cta svg{color:var(--band)}
+.closer .btn.cta:hover{background:#F3E7CC}
+.closer .btn.link{color:var(--foil)}
+
+/* plain pages (guides/, about/): a masthead, then one reading column */
+.page-head{padding-block:5rem 3rem;border-bottom:1px solid var(--line)}
+.page-head h1{font-size:clamp(2.8rem,5vw,4.4rem);line-height:1.02;font-weight:400}
+.page-head .sub{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:38rem;margin:1.25rem 0 0}
+.page-body{padding-block:3.5rem 5.5rem}
+.page-body section{max-width:46rem}
+.page-body section + section{margin-top:3.25rem}
+.page-body h2{font-size:1.8rem;line-height:1.15;margin-bottom:.8rem}
+.page-body p,.page-body li{color:var(--ink2);font-size:1.05rem}
+.page-body p{margin:0 0 1rem}
+.page-body ol{margin:0;padding-left:1.25rem}
+.page-body li + li{margin-top:.5rem}
+.progress{display:flex;align-items:center;gap:1rem;margin:0 0 1.75rem;font-size:.9rem;color:var(--ink3)}
+.progress .bar{flex:0 1 16rem;height:6px;border-radius:3px;background:var(--bg2);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.progress .bar i{display:block;height:100%;background:var(--foil-ink)}
+.guide-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.guide-list li{margin:0}
+.guide-list a{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line);text-decoration:none}
+.guide-list a:hover b{text-decoration:underline;text-underline-offset:4px}
+.guide-list b{font-family:var(--serif);font-weight:500;font-size:1.45rem;color:var(--ink)}
+.guide-list span{font-size:.85rem;color:var(--ink3);white-space:nowrap}
+.soon{margin-top:2rem;padding:1.25rem 1.4rem;background:var(--bg2);border-radius:var(--r-btn);border-left:3px solid var(--foil)}
+.soon p{margin:0}
+
 /* footer */
-footer .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;padding-block:3.5rem}
+footer .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem;padding-block:3.5rem}
 footer .h{margin:0 0 .8rem;font-size:.9rem;font-weight:600}
 footer a{display:flex;align-items:center;min-height:44px;text-decoration:none;color:var(--ink2);font-size:.9rem}
 footer a:hover{text-decoration:underline}
@@ -111,9 +148,11 @@ footer small{display:block;color:var(--ink3);font-size:.78rem;margin-top:.5rem;m
   .sitebar .brand b{display:none}
   .sitebar .in{gap:.25rem}
   .sitebar nav a{padding:0 .6rem}
-  .sitebar .search{order:1;width:auto;flex:1;min-width:0}
-  .sitebar nav{order:2;margin-left:0}
-  .sitebar .search .long{display:none}
+  :root{--bar:3.5rem}
+  .sitebar .mark{width:1.9rem;height:1.9rem}
+  .sitebar nav{gap:0}
+  .sitebar nav a{font-size:.95rem}
+  .sitebar nav a[aria-current="page"]::after{left:.6rem;right:.6rem}
   .hero{grid-template-columns:minmax(0,1fr);min-height:0}
   .hero .txt{padding-block:3.25rem 2.5rem;padding-right:max(24px,env(safe-area-inset-right,0px))}
   .hero .map{min-height:0;aspect-ratio:1/1.1}
@@ -125,6 +164,9 @@ footer small{display:block;color:var(--ink3);font-size:.78rem;margin-top:.5rem;m
   .trio{grid-template-columns:minmax(0,1fr);gap:2.75rem}
   .guide .wrap{grid-template-columns:minmax(0,1fr);gap:2.5rem}
   .screens{padding-block:4.5rem}.guide{padding-block:4rem}
+  .closer{padding-block:4rem}
+  .page-head{padding-block:3.5rem 2.25rem}
+  .guide-list span{white-space:normal;text-align:right}
   footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
   footer .wrap > div:first-child{grid-column:1 / -1}
 }
