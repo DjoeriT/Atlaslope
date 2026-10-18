@@ -4,7 +4,7 @@ import { creditName, oneEach } from '../../src/cards/Credit';
 
 const photo = (artist: string, licence = 'CC BY 2.0', page = artist) => ({ alt: '', artist, licence, licenceUrl: '', page, title: '' });
 
-// Premium feel review, 18 Oct 2026: "Unknown authorUnknown author" in a live credit line.
+// Premium feel review, 18 Oct 2026: "Unknown authorUnknown author" and "Bertrand GRONDIN → (Talk)" in live credit lines.
 describe('photo credits', () => {
   it('credits Wikimedia Commons when Commons names no author', () => {
     expect(creditName('Unknown')).toBe('Wikimedia Commons');
@@ -18,7 +18,7 @@ describe('photo credits', () => {
     const artists: string[] = [];
     JSON.stringify(JSON.parse(readFileSync('data/photos.json', 'utf8')), (k, v) => { if (k === 'artist') artists.push(v); return v; });
     expect(artists.length).toBeGreaterThan(100);
-    const bad = artists.filter((a) => /Credit information|&amp;|^Photograph by|\bfrom [A-ZÁÉÍÓÚa-z]+, |(Unknown author){2}/.test(a) || /^(.{4,})\1$/.test(a));
+    const bad = artists.filter((a) => /Credit information|&amp;|^Photograph by|[→←]|\((?:[Tt]alk|[Cc]ontribs?)\)|\bfrom [A-ZÁÉÍÓÚa-z]+, |(Unknown author){2}/.test(a) || /^(.{4,})\1$/.test(a));
     expect(bad).toEqual([]);
   });
 });

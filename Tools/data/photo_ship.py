@@ -21,6 +21,8 @@ def clean_artist(raw):
     a = re.sub(r"\s+", " ", raw.replace("&amp;", "&")).strip()
     a = re.split(r"\s*Credit information\b", a)[0]                # Commons' credit template text run on after the name
     a = re.sub(r"^Photograph by\s+|\s*\((?:www\.|https?://)[^)]*\)\.?$", "", a)
+    a = re.sub(r"\s*[→←|·]?\s*\((?:talk|contribs?|discussion|disc|user talk)\)\s*$", "", a, flags=re.I)  # Commons signature: "Name → (Talk)"
+    a = re.sub(r"\s*[→←|]\s*$", "", a)
     a = re.sub(r"\s+from\s+[^,()]+(?:,\s*[^,()]+)?$", "", a)       # Flickr's "Name from City, Country"
     a = a.strip()
     if not a or re.fullmatch(r"(?:Unknown(?: author)?)+", a, re.I) or re.fullmatch(r"(Unknown author)+", a, re.I):
