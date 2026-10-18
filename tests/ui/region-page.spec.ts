@@ -9,7 +9,7 @@ async function open(page: Page, hash: string) {
 
 test('the region card opens the page and Back to map returns to the card', async ({ page }) => {
   await open(page, '#region=ebro');
-  await page.locator('.card').getByRole('link', { name: 'See the region' }).click();
+  await page.locator('.card').getByRole('link', { name: 'Open the Navarra and Aragón page' }).click();
   await expect(page).toHaveURL(/#region=ebro&page/);
   const rpage = page.locator('.rpage');
   await expect(rpage.locator('h1')).toHaveText('Navarra and Aragón');

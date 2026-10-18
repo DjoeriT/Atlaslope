@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { plannedRound } from './round-plan';
 
 // Playing a Study round with a fixed clock (?now=) and a fresh browser. No tile requests in the UI-test build; a tap on the map is
 // window.__quizPick(id), which does what the map's click handler does.
@@ -20,13 +21,19 @@ async function start(page: Page, seed?: unknown) {
   await page.getByRole('button', { name: /Start today's round|Learn 5 new places/ }).click();
 }
 
-/** On an intro: read the name, go on to its what-is-this question. */
-async function pastIntro(page: Page): Promise<string> {
-  const name = (await page.locator('h1.intro-h').textContent())!;
-  await page.getByRole('button', { name: 'Got it, ask me' }).click();
+/** Through the five intros of day one: each "Got it" shows the next new place, not a question about the one just shown. */
+async function pastIntros(page: Page, names: string[]) {
+  for (const [i, name] of names.entries()) {
+    await expect(page.locator('h1.intro-h')).toHaveText(name);
+    await expect(page.locator('.q-num')).toContainText(`New place · ${i + 1} of ${names.length} today`);
+    await page.getByRole('button', { name: 'Got it' }).click();
+  }
   await expect(page.locator('.q')).toHaveText('What is this?');
-  return name;
 }
+/** Day one: five intros in a row, then their five what-is-this questions in another order. */
+const dayOne = plannedRound(NOW);
+const introNames = dayOne.filter((i) => i.kind === 'intro').map((i) => i.name);
+const asked = dayOne.filter((i) => i.kind === 'question').map((i) => i.name);
 const choice = (page: Page, name: string) => page.locator('.choice').filter({ hasText: new RegExp(`^[A-D]${escape(name)}$`) });
 async function wrongChoice(page: Page, name: string) {
   await page.locator('.choice').filter({ hasNotText: new RegExp(`^[A-D]${escape(name)}$`) }).first().click();
@@ -38,17 +45,18 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   test.slow();
   await start(page);
 
-  // 1. A new place: its intro is not a numbered question. A right answer moves on after about a second.
+  // 1. Five new places shown in a row; intros are not numbered questions. Then the first question; a right answer moves on after about a second.
+  expect(dayOne.map((i) => i.kind)).toEqual(['intro', 'intro', 'intro', 'intro', 'intro', 'question', 'question', 'question', 'question', 'question']);
   await expect(page.locator('.q-num')).toContainText('New place · 1 of 5 today · Study');
   expect(await dots(page)).toHaveLength(5);
-  const first = await pastIntro(page);
+  await pastIntros(page, introNames);
+  const [first, second] = asked;
   await expect(page.locator('.q-num')).toContainText('Question 1 of 5 · Study');
   await choice(page, first).click();
   await expect(page.locator('.feedback')).toContainText(`Right, that's ${first}`);
-  await expect(page.locator('h1.intro-h')).toBeVisible(); // moved on by itself, to the next intro
+  await expect(page.locator('.q-num')).toContainText('Question 2 of 5 · Study'); // moved on by itself
 
   // 2. A miss waits: the why line, Next, "That was a slip", the place's card.
-  const second = await pastIntro(page);
   await wrongChoice(page, second);
   await expect(page.locator('.feedback.bad')).toBeVisible();
   await expect(page.locator('dl.reveal dt', { hasText: 'Why' })).toBeVisible();
@@ -66,11 +74,10 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   await page.getByRole('button', { name: 'Next question' }).click();
 
   // 3. The other three, right.
-  for (let i = 0; i < 3; i++) {
-    const name = await pastIntro(page);
+  for (const name of asked.slice(2)) {
+    await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
     await expect(page.locator('.feedback')).toContainText('Right');
-    await expect(page.locator('h1.intro-h, .q:has-text("Find")')).toBeVisible();
   }
 
   // 4. The missed place comes back at the end: now a find it, six questions in all.
@@ -103,27 +110,30 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
 });
 
 test('a slip is kept in the log, and the miss is not asked again', async ({ page }) => {
+  // Five scripted questions, like the round above; the step crossfade (PR #63) pushed it past the 30 s default (CI and local). More time, same assertions.
+  test.slow();
   await start(page);
-  const first = await pastIntro(page);
-  await wrongChoice(page, first);
+  await pastIntros(page, introNames);
+  await wrongChoice(page, asked[0]);
   await page.getByRole('button', { name: 'That was a slip' }).click();
-  expect((await log(page)).filter((e) => e.kind === 'answer')).toMatchObject([{ place: idOf(first), right: false, slip: true }]);
+  expect((await log(page)).filter((e) => e.kind === 'answer')).toMatchObject([{ place: idOf(asked[0]), right: false, slip: true }]);
   await page.getByRole('button', { name: 'Next question' }).click();
-  for (let i = 0; i < 4; i++) {
-    const name = await pastIntro(page);
+  for (const name of asked.slice(1)) {
+    await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
-    if (i < 3) await expect(page.locator('h1.intro-h')).toBeVisible();
+    await expect(page.locator('.feedback')).toContainText('Right');
   }
   await expect(page.locator('h1.score')).toContainText('5 / 5');
 });
 
 test('keyboard only: Confirm and the four choices are reachable and the result is announced', async ({ page }) => {
-  // Two places already learned and due, so the round opens with find it questions.
+  // Two places already learned and due: the round opens with a find it, then shows five new places.
   const core = places.filter((p) => p.quiz === 'core').slice(0, 2).map((p) => p.id);
   const old = (place: string, kind: string) => (kind === 'intro'
     ? { kind, place, at: '2026-10-10T10:00:00Z' }
     : { kind, place, memory: 'where', type: 'what-is-this', right: true, at: '2026-10-10T10:01:00Z', seconds: 4 });
-  await start(page, { version: 1, focus: [], savedAt: '', log: core.flatMap((id) => [old(id, 'intro'), old(id, 'answer')]) });
+  const seedLog = core.flatMap((id) => [old(id, 'intro'), old(id, 'answer')]);
+  await start(page, { version: 1, focus: [], savedAt: '', log: seedLog });
 
   await expect(page.locator('.q')).toContainText('Find');
   const target = (await page.locator('.q em').textContent())!;
@@ -136,16 +146,20 @@ test('keyboard only: Confirm and the four choices are reachable and the result i
   await expect(page.locator('#result')).toContainText(`Right, that's ${target}`);
   await expect(page.locator('#result')).toBeFocused();
 
-  // It moves on by itself to a find it for the other place; skip that one with "I don't know".
-  await expect(page.locator('.q')).toContainText('Find');
-  await expect(page.locator('.q em')).not.toHaveText(target);
-  await page.getByRole('button', { name: "I don't know" }).click();
-  await page.getByRole('button', { name: 'Next question' }).click();
-
-  // An intro, then the four choices: Tab reaches A, B, C and D in turn.
+  // It moves on by itself to the five new places in a row (the first by keyboard), then on to the first what-is-this, skipping any find it before it.
+  const plan = plannedRound(NOW, seedLog as never);
+  expect(plan.slice(0, 6).map((i) => i.kind)).toEqual(['question', 'intro', 'intro', 'intro', 'intro', 'intro']);
   await expect(page.locator('h1.intro-h')).toBeVisible();
-  await page.getByRole('button', { name: 'Got it, ask me' }).focus();
+  await page.getByRole('button', { name: 'Got it' }).focus();
   await page.keyboard.press('Enter');
+  for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Got it' }).click();
+  for (const step of plan.slice(6, plan.findIndex((i) => i.kind === 'question' && i.type === 'what-is-this'))) {
+    await expect(page.locator('.q em')).toHaveText(step.name);
+    await page.getByRole('button', { name: "I don't know" }).click();
+    await page.getByRole('button', { name: 'Next question' }).click();
+  }
+
+  // The four choices: Tab reaches A, B, C and D in turn.
   await expect(page.locator('.q')).toHaveText('What is this?');
   for (const letter of 'ABCD') {
     await page.keyboard.press('Tab');

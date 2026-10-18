@@ -4,7 +4,7 @@ import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
 import { RegionPage } from '../pages/RegionPage';
 import { PlacePage } from '../pages/PlacePage';
 import { FlyCaption } from '../cards/FlyCaption';
-import { flyOf, focusFor, validSelection } from '../cards/nav';
+import { flyOf, focusFor, parentOf, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
 import { MapView } from '../map/MapView';
@@ -17,13 +17,17 @@ import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
-import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, type QuizRoute, type Selection, type View } from '../url';
+import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { TopBar } from './TopBar';
 import { useTheme } from './theme';
+import { withMotion } from './motion';
+import { Sheet } from './Sheet';
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
+/** Which move a change of card or page makes. */
+const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
 
 export function App() {
   const [theme, toggleTheme] = useTheme();
@@ -37,7 +41,8 @@ export function App() {
   const restored = useRef(parseView(location.hash)); // only the first card keeps the camera from the link
 
   // A new card is a new history entry; back and forward come back as popstate.
-  const go = useCallback((to: Selection) => {
+  const go = useCallback((wanted: Selection) => {
+    const to = validSelection(tree, wanted);
     const cur = selRef.current;
     if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page && flyKey(to) === flyKey(cur) && to.at === cur.at) return;
     // The card and the page of one place share the camera, so the link keeps it (a fly-there moves it, so it keeps nothing).
@@ -46,10 +51,12 @@ export function App() {
     if (same && cur.page && !to.page && !to.fly && (history.state as { fromCard?: boolean } | null)?.fromCard) { history.back(); return; }
     const view = same && !to.fly ? parseView(location.hash) : null;
     history.pushState(same && to.page && !cur.page ? { fromCard: true } : null, '', here() + selectionToHash(to, view));
-    setQuiz(null);
-    setStay(null);
-    setSel(to);
-  }, []);
+    withMotion(() => {
+      setQuiz(null);
+      setStay(null);
+      setSel(to);
+    }, quizRef.current ? 'card' : moveOf(cur, to));
+  }, [tree]);
   // "Close and stay on the map": the place's card opens over the camera the fly-there set, until anything else is opened.
   const [stay, setStay] = useState<Focus | null>(null);
   const lastQuiz = useRef<QuizRoute>({ sub: null }); // where the quiz was, for "Back to the quiz"
@@ -62,12 +69,14 @@ export function App() {
     if (quizRef.current && quizRef.current.sub === sub && !set) return;
     const route: QuizRoute = set ? { sub, set } : { sub };
     history.pushState(null, '', here() + quizToHash(route));
-    setQuiz(route);
+    withMotion(() => setQuiz(route));
   }, []);
   const openExplore = useCallback(() => {
     history.pushState(null, '', here() + selectionToHash(selRef.current));
-    setQuiz(null);
-    setKeepQuiz(false);
+    withMotion(() => {
+      setQuiz(null);
+      setKeepQuiz(false);
+    });
   }, []);
   const openPlaceFromQuiz = useCallback((id: string) => {
     history.pushState(null, '', here() + selectionToHash({ kind: 'place', id }));
@@ -78,9 +87,13 @@ export function App() {
   const backToQuiz = useCallback(() => openQuiz(lastQuiz.current.sub), [openQuiz]);
   useEffect(() => {
     const onPop = () => {
-      setQuiz(parseQuizRoute(location.hash));
-      setSel(validSelection(tree, parseSelection(location.hash)));
-      setStay(null);
+      const to = validSelection(tree, parseSelection(location.hash));
+      const q = parseQuizRoute(location.hash);
+      withMotion(() => {
+        setQuiz(q);
+        setSel(to);
+        setStay(null);
+      }, q || quizRef.current ? 'card' : moveOf(selRef.current, to));
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -88,8 +101,7 @@ export function App() {
 
   // Where the map looks goes into the address bar without a new history entry.
   const onView = useCallback((view: View) => {
-    const route = quizRef.current;
-    history.replaceState(history.state, '', here() + (route ? quizToHash(route, view) : selectionToHash(selRef.current, view)));
+    history.replaceState(history.state, '', here() + withView(location.hash, view));
   }, []);
 
   // In quiz mode the question in play decides what the map shows, and a tap on the map is the pick for find it.
@@ -119,6 +131,21 @@ export function App() {
   useEffect(() => {
     document.getElementById('map')?.toggleAttribute('inert', pageOpen); // the page covers the map; keep the keyboard off it
   }, [pageOpen]);
+  // Escape closes the full page, or steps up from a card (not while typing, and not when a menu or the caption took it first).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape' || e.defaultPrevented || quizRef.current) return;
+      const el = e.target as HTMLElement;
+      if (el.closest('input, textarea, select, [role="menu"], .menu, .flycap')) return;
+      // The fly caption marks its Escape handled; the welcome and End round dialogs keep theirs (PR #63 review).
+      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]')) return;
+      const cur = selRef.current;
+      if (cur.kind === 'country') return;
+      go(cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [go, tree]);
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
   const region = sel.kind === 'region' ? tree.getRegion(sel.id) : undefined;
   const titleName = place?.name ?? region?.name;
@@ -138,11 +165,17 @@ export function App() {
       {!quiz && keepQuiz && !pageOpen && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {quiz ? null : place && flown && fly && !sel.page ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
-        : place && sel.page ? <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} /> : region && sel.page ? <RegionPage tree={tree} go={go} region={region} /> : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
-        : progress.hasProgress && !todayClosed ? (
-          <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
-        ) : <SpainCard tree={tree} go={go} due={dueSet} onReview={() => { setAutoStart(true); openQuiz(); }} />}
+      {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
+      {!quiz && region && sel.page && <RegionPage tree={tree} go={go} region={region} />}
+      {!quiz && !pageOpen && (
+        <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
+          {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
+            : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
+            : progress.hasProgress && !todayClosed ? (
+              <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
+            ) : <SpainCard tree={tree} go={go} due={dueSet} onReview={() => { setAutoStart(true); openQuiz(); }} />}
+        </Sheet>
+      )}
       {!pageOpen && <FirstRun />}
     </>
   );

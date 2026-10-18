@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { plannedRound } from './round-plan';
 
 // Mobile check (17 Oct 2026, owner: "weird navigation and other weirdness"): phone layouts, search over the card,
 // the Explore tab and Back to map in the history, and the quiz card's scroll between steps. No network.
@@ -29,7 +30,7 @@ async function topEdgeClear(page: Page) {
 }
 
 test('search results show above the open card', async ({ page }) => {
-  await open(page, '#region=rioja');
+  await open(page, '#region=castilla-y-leon');
   await page.getByRole('searchbox', { name: /Search/ }).fill('rib');
   await expect(page.locator('.results a').first()).toBeVisible();
   expect(await onTop(page, '.results a')).toBe(true);
@@ -57,10 +58,10 @@ test('the Explore tab on the Spain card stays put without a reload', async ({ pa
 });
 
 test('Back to map steps back, so the back button does not reopen the page just closed', async ({ page }) => {
-  await open(page, '#region=rioja');
+  await open(page, '#place=rioja');
   await page.locator('.card a').filter({ hasText: 'Rioja Alta' }).first().click();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
-  await page.getByText('Read the full page').click();
+  await page.getByText('Open the Rioja Alta page').click();
   await expect(page.locator('.pg')).toBeVisible();
   await page.getByText('Back to map').click();
   await expect(page.locator('.pg')).toHaveCount(0);
@@ -86,7 +87,7 @@ test.describe('on a phone', () => {
   });
 
   test('the map menu is wholly on screen and above the top bar', async ({ page }) => {
-    await open(page, '#region=rioja');
+    await open(page, '#region=castilla-y-leon');
     await page.getByRole('button', { name: 'Map layers' }).click();
     const menu = page.locator('.menu.br');
     const box = (await menu.boundingBox())!;
@@ -108,15 +109,15 @@ test.describe('on a phone', () => {
     await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
     await page.goto('./?now=2026-10-17T10:00:00Z#quiz');
     await page.getByRole('button', { name: /Learn 5 new places/ }).click();
-    const name = (await page.locator('h1.intro-h').textContent())!;
-    await page.getByRole('button', { name: 'Got it, ask me' }).click();
+    for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
     await expect(page.locator('.q')).toHaveText('What is this?');
+    const name = plannedRound('2026-10-17T10:00:00Z').find((i) => i.kind === 'question')!.name;
     // A wrong pick: the result shows at the top of the card, then the next step opens scrolled to the top.
     await page.locator('.choice').filter({ hasNotText: name }).first().click();
     await expect(page.locator('#result')).toContainText('The answer is');
     expect(await onTop(page, '#result')).toBe(true);
     await page.getByRole('button', { name: 'Next question' }).click();
-    await expect(page.locator('h1.intro-h')).toBeVisible();
+    await expect(page.locator('.q')).toHaveText('What is this?');
     await expect(page.locator('.card .body').first()).toHaveJSProperty('scrollTop', 0);
   });
 });
@@ -125,7 +126,7 @@ test.describe('on a phone held sideways', () => {
   test.use(PHONE_LANDSCAPE);
 
   test('the legend is folded and the map menu fits', async ({ page }) => {
-    await open(page, '#region=rioja');
+    await open(page, '#region=castilla-y-leon');
     await expect(page.locator('.legend-toggle')).toBeVisible();
     await page.getByRole('button', { name: 'Map layers' }).click();
     const box = (await page.locator('.menu.br').boundingBox())!;

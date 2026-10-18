@@ -42,7 +42,7 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
+Live: release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
 publish run 39047992444; live map check run 39048373912 failed twice on 0 name tiles because it stopped waiting before the names were
 asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct) at https://atlaslope.com/. Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
 fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
@@ -94,8 +94,14 @@ session on his Mac also sees his thread messages and started a second publish ru
   release 14 (owner "publish release 14" 15:14Z); the mastery map and ready for friends move to 15 and 16 (#15, #16). Handoff `docs/handoffs/2026-10-17-mobile-check.md`.
 - Landscape through the colours (owner 15:17Z: close in the climate colour hides the satellite; card "Ship it" 15:57Z): over the photo
   the place fills keep the Spain-wide look up to zoom 6, thin by zoom 9 and nearly vanish by 12, outlines firm up from 6 to 9.
-  Live as release 15 (owner "publish release 15" 16:03Z); the mastery map and ready for friends move to 16 and 17 (#15, #16). Tester note `Review/release-15-what-to-test.md`;
+  Live as release 15 (owner "publish release 15" 16:03Z); the mastery map and ready for friends move to 16 and 17 (#15, #16). Tester note `Review/archive/release-15-what-to-test.md`;
   addendum in `docs/handoffs/2026-10-17-zoom-detail.md`.
+- UX sweep (owner 17 Oct 15:26Z, cards 15:58Z "Full set", "Drag, 3 stops", "Skip it"; preview v2 "OK better" 16:44Z): see section 5.
+  Live as release 16 (owner "publish release 16" 17:15Z); the mastery map and ready for friends move to 17 and 18 (#15, #16).
+  Handoff `docs/handoffs/2026-10-17-ux-sweep.md`, tester note `Review/archive/release-16-what-to-test.md`, code review `Review/ux-sweep-1-code-review.md`.
+- Quiz highlight fix (owner report 17 Oct 18:02Z, #66): with 3D relief on, highlights were cut off at tile edges and old ones stayed;
+  feature state changes now clear the relief's texture cache. Takes release 17; the mastery map and ready for friends move to 18 and 19 (#15, #16).
+  Handoff `docs/handoffs/2026-10-17-quiz-highlight.md`, tester note `Review/release-17-what-to-test.md` (also covers quiz spacing, PR #69).
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].
@@ -106,7 +112,8 @@ session on his Mac also sees his thread messages and started a second publish ru
 - www.mapa.gob.es refused or failed TLS from GitHub Actions on 16 Oct 19:30 to 19:45Z (earlier the same day it worked).
 - 3D relief caches flat layers as textures (MapLibre 4.7.1) and does not redraw them after a paint change or late GeoJSON; the app takes the
   terrain off and back on once the world map has loaded (`redrape()` in `src/map/createMap.ts`, #40). Other layers changed
-  without a menu change (selection highlight, quiz) could show the same stale look; not seen yet [A].
+  without a menu change showed the same stale look: the quiz highlight cut off at tile edges (#66); feature state changes now
+  clear the cache (`src/map/terrainCache.ts`) [V headless].
 - Release 2's black map: release 3's live check loads imagery and terrain in Chromium [V]; on his screen not yet confirmed.
 
 ## 8. Decisions log
@@ -128,6 +135,12 @@ archived context file; the ones that changed:
   with their approved mock before a release (`CLAUDE.md`).
 - 2026-10-17 [O]: close in, Spain shows IGN's PNOA photo (cut to Spain in the browser) over Esri, 2x screens fetch the next zoom, and
   OpenStreetMap town, river and peak names are drawn in our fonts, smaller than the wine places (card "Full fix", mock approved 14:32Z).
+- 2026-10-17 [O]: UX sweep (cards 15:58Z): motion between cards, pages and quiz steps; the phone card is a sheet with three stops; a
+  study region holding only its namesake (Rioja) is skipped in trails and navigation. Progress tab hidden until the mastery map. Handoff
+  `docs/handoffs/2026-10-17-ux-sweep.md`.
+- 2026-10-17 [O]: quiz rounds fixed (cards 18:09 to 18:20Z): new places shown in a batch and asked later in the round, rounds shuffled,
+  three screens at least between two about one place, known needs two rights a day apart, no level question. Handoff
+  `docs/handoffs/2026-10-17-quiz-spacing.md`.
 - 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
 - 2026-10-17 [O]: efficiency (owner cards 17:29-17:30Z, plan `Review/efficiency-plan-2026-10-17.md`): one slice per thread and a handoff
   at about 150K of context, noisy work to Sonnet helpers; publish reuses the green `main` checks for its commit; records go in the slice PR,

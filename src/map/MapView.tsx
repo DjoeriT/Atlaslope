@@ -3,6 +3,7 @@ import { strings } from '../strings';
 import type { View } from '../url';
 import { createMap, type MapController } from './createMap';
 import type { Focus } from './focus';
+import { afterMotion } from '../app/motion';
 import { DEFAULT_MENU, type MenuState } from './layers';
 import { MapMenu } from './MapMenu';
 import { onHoverPlaces } from './hover';
@@ -61,9 +62,13 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
   useEffect(() => { ctl.current?.apply(menu, !imageryFailed); }, [menu, imageryFailed]);
 
   // The card is in the page by now, so the framing can leave room for it.
+  // It flies once the card's own move has finished, so the two don't stutter against each other.
   useEffect(() => {
-    ctl.current?.focus(focus, shown.current);
+    const animate = shown.current;
     shown.current = true;
+    let live = true;
+    afterMotion(() => { if (live) ctl.current?.focus(focus, animate); });
+    return () => { live = false; };
   }, [focus]);
 
   useEffect(() => { ctl.current?.quiz(quiz); }, [quiz]);
@@ -80,7 +85,7 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
       <div id="map" ref={el} data-base={menu.satellite && !imageryFailed ? 'satellite' : 'atlas'} role="application" aria-label={quiz ? strings.quiz.mapLabel : strings.mapMountLabel} />
       <div className="bottomright">
         <MapMenu menu={menu} imageryFailed={imageryFailed} onChange={setMenu} />
-        <div className="glass">
+        <div className="glass zoomset">
           <button className="iconbtn" aria-label={t.zoomIn} onClick={() => ctl.current?.map.zoomIn()}>{icon('M12 5v14M5 12h14')}</button>
           <button className="iconbtn" aria-label={t.zoomOut} onClick={() => ctl.current?.map.zoomOut()}>{icon('M5 12h14')}</button>
           {!quiz && (

@@ -1,5 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { plannedRound } from './round-plan';
 
 // The Quiz screen's doors, focus, practise any mix, the progress file, the Today card, the manifest and the way back from a place card.
 // A fixed clock (?now=) and a seeded browser; no network.
@@ -191,16 +192,17 @@ test('a place card opened from the quiz comes back to the same question', async 
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
   await page.getByRole('button', { name: /Back to the quiz/ }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
-  await page.getByRole('button', { name: 'Got it, ask me' }).click();
+  for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
 
   // A miss: Open the card, and back to the same reveal.
   await expect(page.locator('.q')).toHaveText('What is this?');
-  await page.locator('.choice').filter({ hasNotText: new RegExp(`^[A-D]${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`) }).first().click();
+  const target = plannedRound(NOW).find((i) => i.kind === 'question')!.name;
+  await page.locator('.choice').filter({ hasNotText: new RegExp(`^[A-D]${target.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`) }).first().click();
   await expect(page.locator('.feedback.bad')).toBeVisible();
   const question = await page.locator('.q-num').textContent();
   const feedback = await page.locator('.feedback').textContent();
-  await page.getByRole('button', { name: `Open ${name}'s card` }).click();
-  await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
+  await page.getByRole('button', { name: `Open ${target}'s card` }).click();
+  await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(target);
   await page.getByRole('button', { name: /Back to the quiz/ }).click();
   await expect(page.locator('.q-num')).toHaveText(question!);
   await expect(page.locator('.feedback')).toHaveText(feedback!);

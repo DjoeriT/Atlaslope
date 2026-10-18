@@ -45,7 +45,7 @@ One model for every country, with Spain as its first instance.
 
 ## Quiz rules (owner, 16 Oct 2026, flow sketch cards)
 - **Intake**: five new places a day (was "a session"; default from the plan review, 16 Oct), in course order, on top of what is due. [O]
-- **Mastery shades**: new (never asked), learning (asked), known (right on the last two tries), solid (three spaced passes in a row, days apart). A miss drops a place back. [O]
+- **Mastery shades**: new (never asked), learning (asked), known (right twice in a row, a day apart; was "right on the last two tries" until 17 Oct, see "Known needs two days"), solid (three spaced passes in a row, days apart). A miss drops a place back. [O]
 - **Zones**: enter the quiz pool only once their parent appellation is known. Until then they show on the map and in guides. [O]
 - **Course order**: the Spanish Wine Scholar sequence through the ten study regions, north to south, drives "continue" and intake. [O]
 
@@ -141,6 +141,8 @@ Building does **not** start yet. The owner wants all key decisions cleared first
 ## Quiz first principles (owner, cards in the "Cutting the build cost" thread, 16 Oct 2026 12:37 to 12:38Z)
 - **Knowing a place means where it is and what it makes.** Every answer reveals the place with one fact from day one; from known (right twice on the map) the fact question is asked too. Replaces "solid gets the fact question". [O]
 - **Show, then ask.** A new place first gets a short intro (map, name, one why line and its fact), then its first question. The intro is new UI and is mocked before it is built. [O]
+  **Spaced, not back to back** (owner card "Space it out", 17 Oct 2026 18:09Z, after "it shows me the region and then immediately asks what it is"): new places are shown in a batch of up to five intros in a row, then each is asked later in the same round, mixed with other questions, never on the next screen. Defaults: batches of five, three other screens at least between two screens about one place where the round allows it. [O; numbers A]
+- **Rounds are shuffled** (owner card "All of them", 17 Oct 2026 18:15Z): what a round asks is picked as before (due first, most overdue first), but the order inside the round is shuffled, so places learned together do not come back in the same sequence. A miss is asked again at the end of the round unless that would be the very next screen; a miss on the last question waits for its next review. [O]
 - **Goal 1:** 40 of the 68 core places known after three weeks of use, read from the answer log, measured from release 5 (the quiz; release order changed 12:43Z). Weekly use without a reminder stays goal 2. [O]
 - **Practise any mix** next to the daily round (owner, 12:39Z: "it should not just be a set curriculum in a specific order"): pick whole regions or single places, for example Rioja, Toro and Priorat, and 10 or 20 questions; question type by box; a miss drops the place, a right answer before it is due does not move it up. The 2.2 setup mock is reworked to that picker. [O]
 - **The engine works on sets of places, not a fixed list.** The daily round, practice and new-place intake each take a set picked from the place tree; one memory per place is shared by all of them. Course order is the default for "what's next", not a rail. [O, 12:39Z]
@@ -152,6 +154,8 @@ Building does **not** start yet. The owner wants all key decisions cleared first
 
 ## Learning engine (owner, cards, 16 Oct 2026 12:41 to 12:42Z)
 - **Boxes for v1**: fixed gaps (1, 3, 7, 14, 30 days), matching the four shades. Every answer is logged (#43), so an adaptive model (FSRS) can replace boxes later by replaying the log. [O]
+- **Known needs two days** (owner card, 17 Oct 2026; replaces "right on the last two tries" of 16 Oct): a memory is known after two right answers in a row, the second at least a day after the first; solid stays three such days. Two rights in one sitting (Review) no longer count. [O, card "Two days" 19:37Z]
+- **No level question** (owner card, 17 Oct 2026): the fact question asks grape, style or climate, not the level, because 68 of the 73 Study places are a DO and "DO" was nearly always right. [O, card "Drop it" 19:37Z]
 - **Two memories per place**: "where it is" (map questions) and "what it makes" (fact questions) each have their own box and schedule. A place shows as known on the mastery map only when both are known; the fact memory starts at the intro. [O; shade rule A]
 - **Right or wrong only**, no confidence rating; "That was a slip" stays. [O]
 - **A miss drops one step** and the question comes back at the end of the same round, then on its new schedule. [O]

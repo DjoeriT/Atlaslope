@@ -3,8 +3,8 @@ import type { Measures, Sheet } from '../facts/types';
 import type { Place, Tree } from '../tree';
 import type { RoundItem } from './types';
 
-/** The four kinds of fact question. `level` is the place's kind (DO, DOCa, VC, zone). */
-export const FACT_KINDS = ['grape', 'style', 'level', 'climate'] as const;
+/** The kinds of fact question. Level (DO, DOCa) is not asked: 68 of the 73 Study places are a DO, so "DO" was nearly always right (owner card, 17 Oct 2026). */
+export const FACT_KINDS = ['grape', 'style', 'climate'] as const;
 export type FactKind = (typeof FACT_KINDS)[number];
 
 /** The facts the questions read; `src/facts` has the real ones (`sheetOf`, `measuresOf`), tests pass small ones. */
@@ -41,7 +41,8 @@ export function seededRandom(seed: number): () => number {
   };
 }
 
-function shuffled<T>(items: readonly T[], rng: () => number): T[] {
+/** A copy of `items` in random order (Fisher-Yates with `rng`). */
+export function shuffled<T>(items: readonly T[], rng: () => number): T[] {
   const a = [...items];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
@@ -61,7 +62,6 @@ export function revealFact(placeId: string, facts: FactSource): string | undefin
 
 /** Every text of this kind that is true of the place (empty: the place has nothing to ask). Climate: the class with the largest share only. */
 function truths(kind: FactKind, place: Place, ctx: QuestionContext): { asked: string | undefined; all: string[] } {
-  if (kind === 'level') return { asked: place.kind, all: [place.kind] };
   if (kind === 'grape') {
     const main = ctx.facts.sheetOf(place.id)?.grapes.main ?? [];
     return { asked: main[0] ? grapeText(main[0]) : undefined, all: main.flatMap((g) => [grapeText(g), g.local, ...(g.grape ? [g.grape] : [])]) };
@@ -108,7 +108,7 @@ function factChoices(kind: FactKind, place: Place, ctx: QuestionContext, order: 
 
 /**
  * Builds the question for a round item: find-it has the target only; what-is-this has the place and three others from the pool
- * (neighbours in the same study region first); fact picks one of the fact kinds the place can be asked (grape, style, level,
+ * (neighbours in the same study region first); fact picks one of the fact kinds the place can be asked (grape, style,
  * climate), with three wrong choices that are true of other places and not of this one. Choices are shuffled with `ctx.rng`.
  * Returns undefined for an intro, an unknown place, or a fact question when no fact kind is available.
  */

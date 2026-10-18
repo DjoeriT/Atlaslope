@@ -102,8 +102,8 @@ test('a place with no zones and no guide shows Test me without "and its zones", 
   expect(order.slice(-2)).toEqual(['pg-testme', 'where']);
 });
 
-test('the region page says "1 place to learn" for a one-place region (Rioja)', async ({ page }) => {
+test('the one-place Rioja region has no page of its own: its address opens the Rioja page', async ({ page }) => {
   await open(page, '#region=rioja&page');
-  await expect(page.locator('.rpage .count b')).toHaveText('1');
-  await expect(page.locator('.rpage .count span')).toHaveText('place to learn');
+  await expect(page.locator('.pg h1')).toHaveText('Rioja');
+  await expect(page.locator('.rpage')).toHaveCount(0);
 });

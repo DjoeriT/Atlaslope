@@ -34,15 +34,21 @@ describe('tree model over data/places.json', () => {
     expect(ids(tree.children('spain'))).toEqual(ids(tree.regionsOf('spain')));
   });
 
-  it('breadcrumbs a zone as Spain › Rioja region › Rioja › Rioja Alta', () => {
+  // Owner card, 17 Oct 2026 ("Skip it"): a study region that holds only its namesake place is left out of the trail.
+  it('breadcrumbs a zone as Spain › Rioja › Rioja Alta, skipping the one-place Rioja region', () => {
     expect(tree.breadcrumb('rioja-alta')).toEqual([
       { level: 'country', id: 'spain', name: 'Spain' },
-      { level: 'region', id: 'rioja', name: 'Rioja' },
       { level: 'place', id: 'rioja', name: 'Rioja' },
       { level: 'zone', id: 'rioja-alta', name: 'Rioja Alta' },
     ]);
     expect(tree.breadcrumb('spain')).toEqual([{ level: 'country', id: 'spain', name: 'Spain' }]);
     expect(tree.breadcrumb('rioja', 'region')).toHaveLength(2);
+    expect(tree.breadcrumb('toro')).toHaveLength(3); // other regions keep their step
+  });
+
+  it('names the regions that hold only their namesake', () => {
+    expect(tree.soleSameName('rioja')?.id).toBe('rioja');
+    expect(tree.regionsOf('spain').filter((r) => tree.soleSameName(r.id)).map((r) => r.id)).toEqual(['rioja']);
   });
 
   it('lists the places of a region in course order, then north to south', () => {
@@ -90,11 +96,10 @@ describe('search', () => {
     expect(tree.search('xeres')[0]).toMatchObject({ id: 'jerez' });
   });
 
-  it('puts regions before places on an equal match', () => {
-    expect(tree.search('rioja').slice(0, 2)).toEqual([
-      { level: 'region', id: 'rioja', name: 'Rioja' },
-      { level: 'place', id: 'rioja', name: 'Rioja' },
-    ]);
+  it('finds a one-place region as its place, and other regions as regions', () => {
+    expect(tree.search('rioja')[0]).toEqual({ level: 'place', id: 'rioja', name: 'Rioja' });
+    expect(tree.search('rioja').some((c) => c.level === 'region')).toBe(false);
+    expect(tree.search('green spain')[0]).toMatchObject({ level: 'region', id: 'green-spain' });
   });
 
   it('respects the limit and ignores an empty query', () => {

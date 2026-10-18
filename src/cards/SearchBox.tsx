@@ -20,7 +20,7 @@ export function SearchBox({ tree, open }: Props) {
     <div className="search glass">
       <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" strokeWidth="2" /><path d="M13 13l5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
       <input
-        type="search" placeholder={t.searchPlaceholder} aria-label={t.searchLabel} value={text} autoComplete="off"
+        type="search" placeholder={typeof matchMedia === 'function' && matchMedia('(max-width: 52em)').matches ? 'Search' : t.searchPlaceholder} aria-label={t.searchLabel} value={text} autoComplete="off"
         onChange={(e) => setText(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === 'Enter' && hits[0]) done(selectionOf(tree, hits[0]));
