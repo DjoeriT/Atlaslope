@@ -93,3 +93,19 @@ html[data-motion="page-open"]::view-transition-new(card){animation:vt-fade-in .4
 html[data-motion="page-close"]::view-transition-old(card){animation:vt-fade-out .34s var(--vt-ease) both}
 html[data-motion="page-close"]::view-transition-new(card){animation:vt-fade-in .4s var(--vt-ease) .2s both}
 .pg,.rpage{padding-bottom:4.5rem} /* room under the last line for the Show map button */
+
+/* ---- One way back per screen size (owner, 18 Oct 2026): a "‹ Map" back control top left on a wide screen, where people look for
+   back; the floating Show map button only on a phone, in thumb reach. */
+.pg-back{display:flex;align-items:center;width:fit-content;min-height:1.75rem;max-width:76rem;margin:0 auto;padding:.9rem 2rem 0;
+  box-sizing:content-box;font-size:.9rem;font-weight:600;color:var(--ink);text-decoration:none}
+.pg > .pg-back{margin:0 max(0rem,calc((100% - 76rem) / 2))}
+.pg-back span{display:inline-block;margin-right:.3rem;transition:transform .2s var(--vt-ease)}
+.pg-back:hover span{transform:translateX(-3px)}
+.pg-back:hover{text-decoration:underline;text-underline-offset:3px}
+.pg-back:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+/* over a region's cover photo it sits on a dark chip, readable on bright sky and on a cover without a photo alike */
+.rpage > .pg-back{position:absolute;z-index:2;top:calc(var(--bar,3.5rem) + .8rem);left:max(2rem,calc((100% - 76rem) / 2 + 2rem));margin:0;
+  padding:0 .75rem;border-radius:var(--rad);background:rgba(20,20,20,.72);color:#fff}
+.rpage > .pg-back:focus-visible{outline-color:var(--foil)}
+@media (min-width:47.51em){.showmap{display:none}.pg > .pg-back + .showmap + .pg-listing{padding-top:.4rem}}
+@media (max-width:47.5em){.pg-back{display:none}}
