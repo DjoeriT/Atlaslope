@@ -1,6 +1,6 @@
 # Top bar, home and placeholder pages (18 Oct 2026)
 
-Thread "Top bar and home cleanup", owner asks 15:09-15:10Z. Branch `claude/top-bar-home-cleanup-iwlxak`. Big slice (two new pages): publishes only on "publish release N".
+Thread "Top bar and home cleanup", owner asks 15:09-15:10Z. Branch `claude/top-bar-home-cleanup-iwlxak`. Big slice (two new pages). Owner 15:28Z: "Publish release 24" [O]. Tester note Review/release-24-what-to-test.md.
 
 ## Done
 - Bar: 64 px (56 on a phone), 34 px mark, 1.6 rem wordmark, items semibold 1 rem. Items Atlas, Study, Guides, About on every page.
@@ -20,6 +20,7 @@ Thread "Top bar and home cleanup", owner asks 15:09-15:10Z. Branch `claude/top-b
 ## Open
 - Owner review of the copy and the first look. About's "Who made it" needs his words.
 - "Free, in beta" tells visitors pricing may come later; his call whether that is the message.
+- Privacy page (docs sweep, route privacy/) gets a link from About and the footer once it exists; kept out until then (no dead link).
 - Guides placeholder is at `/guides/`; the website plan put the guides index at `/spain/` (slice 3 decides).
 
 ## Where
