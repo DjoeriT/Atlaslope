@@ -1,5 +1,6 @@
 // Debug-only query flags. __DEBUG_FLAGS__ is false in the production build, so everything below is removed from it
-// (Tools/check.sh greps dist/ to prove it). Flags: ?fixture=<name> (card 4 picks a test dataset), ?fresh=1 (forget first run).
+// (Tools/check.sh greps dist/ to prove it). Flags: ?fixture=<name> (card 4 picks a test dataset), ?fresh=1 (forget first run),
+// ?motion=subtle|bold (motion strength, design round 1).
 declare const __DEBUG_FLAGS__: boolean;
 
 export const STORAGE_KEYS = ['atlaslope-first-run'];
@@ -11,6 +12,9 @@ export interface DebugFlags {
 export function applyDebugFlags(search: string = location.search): DebugFlags {
   if (!__DEBUG_FLAGS__) return { fixture: null };
   const params = new URLSearchParams(search);
+  // ?motion=subtle|bold: the motion strength for design round 1 (owner points 8 and 9); the build ships "balanced".
+  const level = params.get('motion');
+  if (level === 'subtle' || level === 'bold') document.documentElement.dataset.motionLevel = level;
   if (params.get('fresh') === '1') {
     try { STORAGE_KEYS.forEach((k) => localStorage.removeItem(k)); } catch { /* storage blocked: nothing to reset */ }
   }

@@ -27,6 +27,16 @@ interface Props {
   regions?: readonly { id: string; name: string }[];
 }
 
+// The map on screen, so leaving a guide can ask it for a flight in (App calls swoopIn as the guide closes).
+let live: { ctl: MapController; focus: Focus } | null = null;
+/** Steps the camera back under the closing guide and flies it in once the guide has gone (owner, 18 Oct 2026: "Fly to Rueda"). */
+export function swoopIn() {
+  const at = live;
+  if (!at) return;
+  at.ctl.swoop();
+  afterMotion(() => { if (live === at) at.ctl.land(); });
+}
+
 /** The map element, the map menu with zoom, reset-view and compass buttons, and the imagery note. */
 export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }: Props) {
   const el = useRef<HTMLDivElement>(null);
@@ -63,6 +73,11 @@ export function MapView({ focus, restored, quiz, onPick, onView, regions = [] }:
 
   // The card is in the page by now, so the framing can leave room for it.
   // It flies once the card's own move has finished, so the two don't stutter against each other.
+  useEffect(() => {
+    live = ctl.current ? { ctl: ctl.current, focus } : null;
+    return () => { live = null; };
+  }, [focus]);
+
   useEffect(() => {
     const animate = shown.current;
     shown.current = true;

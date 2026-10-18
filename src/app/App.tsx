@@ -7,7 +7,7 @@ import { FlyCaption } from '../cards/FlyCaption';
 import { flyOf, focusFor, parentOf, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
-import { MapView } from '../map/MapView';
+import { MapView, swoopIn } from '../map/MapView';
 import type { Focus } from '../map/focus';
 import type { QuizView } from '../map/quiz';
 import { makeClock } from '../quiz-ui/helpers';
@@ -19,13 +19,18 @@ import { loadTree } from '../tree';
 import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { SiteBar } from './TopBar';
-import { withMotion } from './motion';
+import { withMotion, type Move } from './motion';
 import { Sheet } from './Sheet';
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
-/** Which move a change of card or page makes. */
-const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
+const depth = (s: Selection) => (s.kind === 'place' ? 2 : s.kind === 'region' ? 1 : 0);
+/** Which move a change of card or page makes. Guide to guide steps forward, or back up when it goes to a wider guide (owner point 8). */
+const moveOf = (from: Selection, to: Selection): Move => (
+  to.page && !from.page ? 'page-open'
+    : from.page && !to.page ? 'page-close'
+      : from.page && to.page && (from.kind !== to.kind || from.id !== to.id) ? (depth(to) < depth(from) ? 'page-up' : 'page-step')
+        : 'card');
 
 export function App() {
   const tree = useMemo(() => loadTree(places, grapeNames()), []);
@@ -48,12 +53,15 @@ export function App() {
     if (same && cur.page && !to.page && !to.fly && (history.state as { fromCard?: boolean } | null)?.fromCard) { history.back(); return; }
     const view = same && !to.fly ? parseView(location.hash) : null;
     history.pushState(same && to.page && !cur.page ? { fromCard: true } : null, '', here() + selectionToHash(to, view));
+    const move = quizRef.current ? 'card' : moveOf(cur, to);
     withMotion(() => {
       setQuiz(null);
       setStay(null);
       setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
-    }, quizRef.current ? 'card' : moveOf(cur, to));
+    }, move);
+    // Back on the map from a guide, the camera flies in once the guide has gone (owner, 18 Oct 2026: "Fly to Rueda" did not fly).
+    if (move === 'page-close') swoopIn();
   }, [tree]);
   // "Close and stay on the map": the place's card opens over the camera the fly-there set, until anything else is opened.
   const [stay, setStay] = useState<Focus | null>(null);
@@ -89,12 +97,14 @@ export function App() {
     const onPop = () => {
       const to = validSelection(tree, parseSelection(location.hash));
       const q = parseQuizRoute(location.hash);
+      const move = q || quizRef.current ? 'card' : moveOf(selRef.current, to);
       withMotion(() => {
         setQuiz(q);
         // A Study address names no card: the atlas keeps the one it had, so Atlas comes back to it (review of website slice 2).
         if (!q) setSel(to);
         setStay(null);
-      }, q || quizRef.current ? 'card' : moveOf(selRef.current, to));
+      }, move);
+      if (move === 'page-close') swoopIn();
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -170,8 +180,8 @@ export function App() {
       {!quiz && !pageOpen && place && place.id === backTo && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
-      {!quiz && region && sel.page && <RegionPage tree={tree} go={go} region={region} />}
+      {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
+      {!quiz && region && sel.page && <RegionPage key={region.id} tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (
         <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />

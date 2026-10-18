@@ -1,0 +1,95 @@
+/* Motion inside and between guides (owner points 8 and 9, 18 Oct 2026). Spec: Review/motion-spec.md. One ease (--vt-ease, ux.css),
+   three strengths for design round 1 (html[data-motion-level], a debug flag; the shipped default is "balanced"). Everything here is
+   transform and opacity only, so it stays off the map's frames, and nothing moves under "reduce motion". */
+:root{--m-rise:14px;--m-step:5%;--m-chart:.9s;--m-row:.16s;--m-seg:.12s;--m-mark:.42s;--m-arrive:.9;--m-reveal:entry 0% entry 55%}
+html[data-motion-level="subtle"]{--m-rise:6px;--m-step:2%;--m-chart:.55s;--m-row:.08s;--m-seg:.06s;--m-mark:.3s;--m-arrive:.5;--m-reveal:entry 0% entry 35%}
+html[data-motion-level="bold"]{--m-rise:32px;--m-step:9%;--m-chart:1.3s;--m-row:.26s;--m-seg:.2s;--m-mark:.55s;--m-arrive:1;--m-reveal:entry 0% entry 80%}
+
+/* ---- Between guides: forward slides the next guide in from the right, up to a wider guide from the left; a tapped tile's photo
+   travels to the next header (motion.ts), and when no photo was tapped the header photos morph into each other. */
+html[data-motion][data-vt-from="tile"] .rcover img,html[data-motion][data-vt-from="tile"] .pg-mosaic figure:first-child img{view-transition-name:none}
+html[data-motion="page-step"]::view-transition-group(page),html[data-motion="page-up"]::view-transition-group(page){animation:none}
+html[data-motion="page-step"]::view-transition-old(page){animation:m-leave-l var(--vt-page) var(--vt-ease) both}
+html[data-motion="page-step"]::view-transition-new(page){animation:m-enter-r var(--vt-page) var(--vt-ease) both}
+html[data-motion="page-up"]::view-transition-old(page){animation:m-leave-r var(--vt-page) var(--vt-ease) both}
+html[data-motion="page-up"]::view-transition-new(page){animation:m-enter-l var(--vt-page) var(--vt-ease) both}
+@keyframes m-leave-l{to{opacity:0;transform:translateX(calc(var(--m-step) * -1))}}
+@keyframes m-leave-r{to{opacity:0;transform:translateX(var(--m-step))}}
+@keyframes m-enter-r{from{opacity:0;transform:translateX(var(--m-step))}}
+@keyframes m-enter-l{from{opacity:0;transform:translateX(calc(var(--m-step) * -1))}}
+
+/* ---- The jump bar: one marker slides to the section being read. */
+.pg-jump::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:var(--mark-w,0);background:var(--ink);opacity:0;
+  transform:translateX(var(--mark-x,0));transition:transform var(--m-mark) var(--vt-ease),width var(--m-mark) var(--vt-ease),opacity .2s}
+.pg-jump[data-mark]::after{opacity:1}
+.pg-jump[data-mark] a[aria-current]{border-bottom-color:transparent}
+
+@media (prefers-reduced-motion:no-preference){
+  /* ---- A section that was jumped to marks its arrival: a champagne rule sweeps under its heading and fades. */
+  .pg-cols main > section > h2{position:relative}
+  .pg-cols main > section[data-arrived] > h2::after{content:"";position:absolute;left:0;bottom:-.45rem;height:3px;border-radius:2px;
+    width:calc(var(--m-arrive) * 6rem);background:var(--foil);transform-origin:left;animation:m-arrive 1.4s var(--vt-ease) both}
+  @keyframes m-arrive{0%{transform:scaleX(0)}35%{transform:scaleX(1);opacity:1}70%{opacity:1}100%{transform:scaleX(1);opacity:0}}
+
+  /* ---- Sections ease up into place as they scroll into view (scroll-driven, so it costs no script and never runs ahead of the reader). */
+  @supports (animation-timeline:view()){
+    .pg-cols main > section > *,.pg-cols aside > *,.rgrid > li{animation:m-reveal linear both;animation-timeline:view();animation-range:var(--m-reveal)}
+  }
+  @keyframes m-reveal{from{opacity:0;transform:translateY(var(--m-rise))}}
+
+  /* ---- Charts draw themselves once, when first seen: the place's row, then each comparison row, Spain last. */
+  .pg-chart .pg-stack rect{transform-box:fill-box;transform-origin:left center}
+  .pg-chart:not([data-seen]) .pg-stack rect{transform:scaleX(0)}
+  .pg-chart[data-seen] .pg-stack rect{animation:m-grow var(--m-chart) var(--vt-ease) both;animation-delay:calc(var(--row,0) * var(--m-row) + var(--seg,0) * var(--m-seg))}
+  .pg-chart .pg-range .fill{transform-box:view-box}
+  .pg-chart:not([data-seen]) .pg-range .fill{transform:scaleX(0)}
+  .pg-chart[data-seen] .pg-range .fill{animation:m-grow var(--m-chart) var(--vt-ease) both;animation-delay:calc(var(--row,0) * var(--m-row))}
+  .pg-chart:not([data-seen]) :is(.pg-range .tick,.pg-range span,.pg-legend li){opacity:0}
+  .pg-chart[data-seen] .pg-range .tick{animation:m-drop calc(var(--m-chart) * .6) var(--vt-ease) both;animation-delay:calc(var(--row,0) * var(--m-row) + var(--m-chart) * .55)}
+  .pg-chart[data-seen] .pg-range span{animation:m-fade calc(var(--m-chart) * .6) var(--vt-ease) both;animation-delay:calc(var(--row,0) * var(--m-row) + var(--m-chart) * .65)}
+  .pg-chart[data-seen] .pg-legend li{animation:m-fade calc(var(--m-chart) * .6) var(--vt-ease) both;animation-delay:calc(var(--m-chart) * .6 + var(--m-row) * 2)}
+  /* ---- The photo viewer opens as a quick fade (each photo already sharpens in as it loads: img.ph-fade, app.css). */
+  .lightbox[open],.lightbox[open]::backdrop{animation:m-fade .32s var(--vt-ease) both}
+
+  @keyframes m-grow{from{transform:scaleX(0)}}
+  @keyframes m-drop{from{opacity:0;transform:translateY(-3px)}}
+  @keyframes m-fade{from{opacity:0}}
+}
+
+/* ---- Exploring a chart: hovering a climate class names it and lights the same class in every row and in the legend. */
+.pg-chart .pg-stack rect,.pg-chart .pg-legend li{transition:opacity .2s}
+.pg-chart[data-hover="0"] :is(.pg-stack rect:not([data-i="0"]),.pg-legend li:not([data-i="0"])),
+.pg-chart[data-hover="1"] :is(.pg-stack rect:not([data-i="1"]),.pg-legend li:not([data-i="1"])),
+.pg-chart[data-hover="2"] :is(.pg-stack rect:not([data-i="2"]),.pg-legend li:not([data-i="2"])),
+.pg-chart[data-hover="3"] :is(.pg-stack rect:not([data-i="3"]),.pg-legend li:not([data-i="3"])),
+.pg-chart[data-hover="4"] :is(.pg-stack rect:not([data-i="4"]),.pg-legend li:not([data-i="4"])){opacity:.28}
+.pg-chart[data-hover] .pg-legend li:is([data-i]){color:var(--ink)}
+
+/* Printed, a chart is always fully drawn. */
+@media print{.pg-chart :is(rect,line,span,li){animation:none!important;transform:none!important;opacity:1!important}}
+
+/* ---- "Show map": a black button floating at the foot of every guide (owner, 18 Oct 2026). Small corners like every button, no pill
+   (visual-style.md); the band's black with champagne text, a soft shadow because it floats. */
+.showmap{position:fixed;left:50%;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));z-index:25;transform:translateX(-50%);
+  display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1.1rem;border-radius:var(--rad-card);
+  background:var(--band);color:var(--foil);font-weight:600;font-size:.92rem;text-decoration:none;
+  box-shadow:0 0 0 1px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.22)}
+.showmap svg{width:1.15rem;height:1.15rem}
+.showmap{transition:transform .3s var(--vt-ease),opacity .3s var(--vt-ease)}
+.showmap[data-away]:not(:focus-visible){transform:translate(-50%,150%);opacity:0;pointer-events:none}
+.showmap:hover{background:#000}
+.showmap:focus-visible{outline:2px solid var(--foil);outline-offset:3px}
+
+/* Only the card's first photo travels: a card with two or three photos named them all "hero", the browser refused the duplicate
+   name and dropped the whole move, so card to guide simply cut (owner, 18 Oct 2026: "sudden"; the recording logged the duplicate). */
+html[data-motion^="page"] .card .cover figure:not(:first-child) img{view-transition-name:none}
+
+/* ---- Card to guide and back (owner, 18 Oct 2026: "sudden"): the card itself grows into the guide, and the guide shrinks back into the
+   card, instead of one fading while the other rises. The guide borrows the card's name for the move only. */
+html[data-motion="page-open"] :is(.pg,.rpage),html[data-motion="page-close"] :is(.pg,.rpage){view-transition-name:card}
+html[data-motion="page-open"]::view-transition-group(card),html[data-motion="page-close"]::view-transition-group(card){animation-duration:.66s}
+html[data-motion="page-open"]::view-transition-old(card){animation:vt-fade-out .28s var(--vt-ease) both}
+html[data-motion="page-open"]::view-transition-new(card){animation:vt-fade-in .4s var(--vt-ease) .08s both}
+html[data-motion="page-close"]::view-transition-old(card){animation:vt-fade-out .34s var(--vt-ease) both}
+html[data-motion="page-close"]::view-transition-new(card){animation:vt-fade-in .4s var(--vt-ease) .2s both}
+.pg,.rpage{padding-bottom:4.5rem} /* room under the last line for the Show map button */
