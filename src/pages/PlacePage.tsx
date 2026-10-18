@@ -165,11 +165,8 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
-          {trail.map((c, i) => (
-            i === trail.length - 1
-              ? <span key={c.id + i} aria-current="page">{c.name}{isZone ? '' : ` · ${place.kind}`}</span>
-              : <span key={c.id + i} className="step"><Link to={selectionOf(tree, c)} go={go}>{c.name}</Link> ›</span>
-          ))}
+          {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
+          {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && ' › '}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
         <ul className="pg-badges" aria-label={t.sections.where}>
