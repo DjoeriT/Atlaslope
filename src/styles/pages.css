@@ -179,3 +179,38 @@
 .pg .btn.accent svg{width:1.2rem;height:1.2rem}
 @media (max-width:68.75em){.pg-zguide{grid-template-columns:1fr}}
 @media (max-width:47.5em){.pg-testme{flex-direction:column;align-items:flex-start}}
+
+/* Drop cap where a guide opens (polish pack): two lines deep (the ledes run two lines or more) in the accent colour; a floated letter where initial-letter is missing. */
+.pg-lede::first-letter{float:left;font-size:2.75em;line-height:.85;font-weight:500;margin:.08em .08em 0 0;color:var(--accent)}
+@supports (initial-letter:2) or (-webkit-initial-letter:2){
+  .pg-lede::first-letter{float:none;font-size:inherit;line-height:inherit;margin:0 .1em 0 0;-webkit-initial-letter:2;initial-letter:2}
+}
+
+/* Scroll-linked motion on place and region pages (polish pack, 18 Oct 2026), driven by the page's own scroll, no script:
+   the cover photos drift slower than the page, the region title lifts away, the page's name slides into the bar once the big title has
+   gone, and a thin accent line under the bar shows how far down the page you are. Only where the browser has scroll timelines; never
+   under reduced motion. */
+.pg-ttl{display:none}
+@supports (animation-timeline:scroll()) and (timeline-scope:--a){
+  @media (prefers-reduced-motion:no-preference) and (min-width:64em){
+    .pg-top .brand{position:relative}
+    .pg-ttl{display:block;position:absolute;left:calc(100% + .9rem);top:50%;max-width:clamp(0rem,50vw - 25rem,14rem);overflow:hidden;
+      text-overflow:ellipsis;white-space:nowrap;font:500 1.15rem var(--serif);color:var(--ink);pointer-events:none;
+      padding-left:.9rem;border-left:1px solid var(--line2);
+      opacity:0;transform:translateY(-20%);animation:pg-ttl-in linear both;animation-timeline:--title;animation-range:exit 40% exit 100%}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .pg,.rpage{scroll-timeline:--page block;timeline-scope:--title}
+    .pg h1,.rcover h1{view-timeline:--title block}
+    .rcover{overflow:clip} /* hidden would make the cover the title's scroller, and its timeline would never move */
+    .pg-top::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);transform-origin:0 50%;
+      transform:scaleX(0);animation:pg-progress linear both;animation-timeline:--page}
+    .pg-mosaic img,.rcover img{animation:pg-drift linear both;animation-timeline:--page;animation-range:0 40rem}
+    .pg-mosaic img.ph-fade,.rcover img.ph-fade{animation:ph-in .5s ease-out,pg-drift linear both;animation-timeline:auto,--page;animation-range:normal,0 40rem}
+    .rcover .ttl{animation:pg-lift linear both;animation-timeline:--page;animation-range:0 min(50vh,30rem)}
+  }
+}
+@keyframes pg-ttl-in{to{opacity:1;transform:translateY(-50%)}}
+@keyframes pg-progress{to{transform:scaleX(1)}}
+@keyframes pg-drift{to{transform:translateY(7%) scale(1.15)}}
+@keyframes pg-lift{to{opacity:0;transform:translateY(-2.5rem)}}

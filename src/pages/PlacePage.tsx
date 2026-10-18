@@ -15,6 +15,7 @@ import { AltitudeRange, ClimateBar } from './Charts';
 import { glanceCells, mosaicPics, nextRegion, swatchOf } from './helpers';
 import { Mosaic } from './Mosaic';
 import '../styles/pages.css';
+import { Img } from '../cards/Img';
 
 const t = strings.place.page;
 const tf = strings.facts;
@@ -141,7 +142,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
 
   return (
     <div className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
           {trail.map((c, i) => (
@@ -179,7 +180,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
 
             {guide && (
               <Section id="terroir" title={guide.title} kicker={t.terroirKicker(guide.minutes)}>
-                <p className="pg-read">{guide.lede.text}</p>
+                <p className="pg-read pg-lede">{guide.lede.text}</p>
                 <SourceLine cites={guide.lede.cite} />
                 {guide.chapters.map((ch) => {
                   const own = ch.fly ?? [];
@@ -314,7 +315,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                     return (
                       <li key={z.id}>
                         <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
-                          {photo ? <img src={photo.src} alt="" loading="lazy" /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
+                          {photo ? <Img photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
                           <b>{z.name}</b>
                         </Link>
                         {why && <><p>{why.text}</p><SourceLine cites={why.cite} /></>}

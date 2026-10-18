@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { strings } from '../strings';
 import type { Pic } from '../pages/helpers';
+import { Img } from './Img';
 
 const t = strings.place;
 
@@ -39,7 +40,7 @@ export function Cover({ name, color, photos }: Props) {
   const step = (d: number) => setI((at + d + shown.length) % shown.length);
   return (
     <div className="cover">
-      <img key={photo.src} src={photo.src} alt={photo.alt} onError={() => setBroken(new Set(broken).add(photo.src))} />
+      <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 25rem" onError={() => setBroken(new Set(broken).add(photo.src))} />
       {many && (
         <>
           <button type="button" className="round nav prev" aria-label={t.previousPhoto} onClick={() => step(-1)}><Chevron dir="prev" /></button>

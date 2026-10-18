@@ -1,14 +1,15 @@
 import { PageTop } from './PageTop';
 import { useEffect, useRef, useState } from 'react';
 import { Link, type Go } from '../cards/Link';
-import { photosOf, sheetOf, type Photo } from '../facts';
+import { photosOf, sheetOf, type ShownPhoto } from '../facts';
 import { strings } from '../strings';
 import type { Place, Region, Tree } from '../tree';
 import '../styles/region.css';
 import { sentences } from './sentence';
+import { Img } from '../cards/Img';
 
 const t = strings.regionPage;
-type Shot = Photo & { src: string };
+type Shot = ShownPhoto;
 
 const credit = (p: Shot) => (
   <a href={p.page} target="_blank" rel="noopener noreferrer">{p.artist}, {p.licence}</a>
@@ -21,7 +22,7 @@ function Tile({ place, go, photo, onBroken }: { place: Place; go: Go; photo?: Sh
     <li className="rtile">
       <Link to={{ kind: 'place', id: place.id, page: true }} go={go}>
         <div className={`ph${photo ? '' : ' none'}`}>
-          {photo ? <img src={photo.src} alt={photo.alt} loading="lazy" onError={() => onBroken(photo.src)} /> : <span>{place.name}</span>}
+          {photo ? <Img photo={photo} sizes="(max-width: 47.5em) 100vw, (max-width: 68.75em) 50vw, 24rem" lazy onError={() => onBroken(photo.src)} /> : <span>{place.name}</span>}
         </div>
         <span className="meta"><b>{place.name}</b><small>{place.kind}</small></span>
         {why && <span className="why">{sentences(why, 150)}</span>}
@@ -51,9 +52,9 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
 
   return (
     <div className="rpage" role="region" aria-label={region.name}>
-      <PageTop tree={tree} go={go} back={back} />
+      <PageTop tree={tree} go={go} back={back} title={region.name} />
       <header className={`rcover${cover ? '' : ' none'}`}>
-        {cover && <img src={cover.src} alt={cover.alt} onError={() => markBroken(cover.src)} />}
+        {cover && <Img photo={cover} sizes="100vw" onError={() => markBroken(cover.src)} />}
         <div className="ttl">
           <nav className="kicker crumb" aria-label={strings.cards.whereThisSits}>
             {crumb.map((c, i) => <span key={c.id + i} aria-current={i === crumb.length - 1 ? 'page' : undefined}>{c.name}</span>)}
