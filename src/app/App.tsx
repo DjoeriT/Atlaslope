@@ -7,7 +7,7 @@ import { FlyCaption } from '../cards/FlyCaption';
 import { flyOf, focusFor, parentOf, validSelection } from '../cards/nav';
 import { grapeNames } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
-import { MapView } from '../map/MapView';
+import { MapView, swoopIn } from '../map/MapView';
 import type { Focus } from '../map/focus';
 import type { QuizView } from '../map/quiz';
 import { makeClock } from '../quiz-ui/helpers';
@@ -53,12 +53,15 @@ export function App() {
     if (same && cur.page && !to.page && !to.fly && (history.state as { fromCard?: boolean } | null)?.fromCard) { history.back(); return; }
     const view = same && !to.fly ? parseView(location.hash) : null;
     history.pushState(same && to.page && !cur.page ? { fromCard: true } : null, '', here() + selectionToHash(to, view));
+    const move = quizRef.current ? 'card' : moveOf(cur, to);
     withMotion(() => {
       setQuiz(null);
       setStay(null);
       setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
-    }, quizRef.current ? 'card' : moveOf(cur, to));
+    }, move);
+    // Back on the map from a guide, the camera flies in once the guide has gone (owner, 18 Oct 2026: "Fly to Rueda" did not fly).
+    if (move === 'page-close') swoopIn();
   }, [tree]);
   // "Close and stay on the map": the place's card opens over the camera the fly-there set, until anything else is opened.
   const [stay, setStay] = useState<Focus | null>(null);
@@ -94,12 +97,14 @@ export function App() {
     const onPop = () => {
       const to = validSelection(tree, parseSelection(location.hash));
       const q = parseQuizRoute(location.hash);
+      const move = q || quizRef.current ? 'card' : moveOf(selRef.current, to);
       withMotion(() => {
         setQuiz(q);
         // A Study address names no card: the atlas keeps the one it had, so Atlas comes back to it (review of website slice 2).
         if (!q) setSel(to);
         setStay(null);
-      }, q || quizRef.current ? 'card' : moveOf(selRef.current, to));
+      }, move);
+      if (move === 'page-close') swoopIn();
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);

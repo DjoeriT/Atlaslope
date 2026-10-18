@@ -67,3 +67,23 @@ html[data-motion="page-up"]::view-transition-new(page){animation:m-enter-l var(-
 
 /* Printed, a chart is always fully drawn. */
 @media print{.pg-chart :is(rect,line,span,li){animation:none!important;transform:none!important;opacity:1!important}}
+
+/* ---- "Show map": a black button floating at the foot of every guide (owner, 18 Oct 2026). Small corners like every button, no pill
+   (visual-style.md); the band's black with champagne text, a soft shadow because it floats. */
+.showmap{position:fixed;left:50%;bottom:calc(1.25rem + env(safe-area-inset-bottom,0px));z-index:25;transform:translateX(-50%);
+  display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:0 1.1rem;border-radius:var(--rad-card);
+  background:var(--band);color:var(--foil);font-weight:600;font-size:.92rem;text-decoration:none;
+  box-shadow:0 0 0 1px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.22)}
+.showmap svg{width:1.15rem;height:1.15rem}
+.showmap:hover{background:#000}
+.showmap:focus-visible{outline:2px solid var(--foil);outline-offset:3px}
+
+/* ---- Card to guide and back (owner, 18 Oct 2026: "sudden"): the card itself grows into the guide, and the guide shrinks back into the
+   card, instead of one fading while the other rises. The guide borrows the card's name for the move only. */
+html[data-motion="page-open"] :is(.pg,.rpage),html[data-motion="page-close"] :is(.pg,.rpage){view-transition-name:card}
+html[data-motion="page-open"]::view-transition-group(card),html[data-motion="page-close"]::view-transition-group(card){animation-duration:.66s}
+html[data-motion="page-open"]::view-transition-old(card){animation:vt-fade-out .28s var(--vt-ease) both}
+html[data-motion="page-open"]::view-transition-new(card){animation:vt-fade-in .4s var(--vt-ease) .08s both}
+html[data-motion="page-close"]::view-transition-old(card){animation:vt-fade-out .34s var(--vt-ease) both}
+html[data-motion="page-close"]::view-transition-new(card){animation:vt-fade-in .4s var(--vt-ease) .2s both}
+.pg,.rpage{padding-bottom:4.5rem} /* room under the last line for the Show map button */

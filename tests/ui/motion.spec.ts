@@ -49,3 +49,13 @@ test('under reduced motion the charts are drawn at once and no move runs', async
   await expect(page.locator('#land-h')).toBeFocused();
   await expect(page.locator('#land')).not.toHaveAttribute('data-arrived', '');
 });
+
+test('every guide has a Show map button that goes back to the place on the map', async ({ page }) => {
+  await open(page, '#place=rioja&page');
+  await page.getByRole('link', { name: 'Show Rioja on the map' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Rioja');
+  await expect(page.locator('.pg')).toHaveCount(0);
+  await open(page, '#region=castilla-y-leon&page');
+  await page.getByRole('link', { name: 'Show Castilla y León on the map' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Castilla y León');
+});

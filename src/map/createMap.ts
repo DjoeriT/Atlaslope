@@ -37,6 +37,10 @@ export interface MapController {
   reset(): void;
   /** Lights up places or zones by id while a card's row or the place under the mouse is hovered; null clears it. Never moves the map. */
   hover(ids: readonly string[] | null): void;
+  /** Leaving a guide for the map (owner, 18 Oct 2026: "Fly to Rueda doesn't really fly"): the camera steps back now, under the closing
+   *  guide; `land` then flies back in to the very view the learner had, tilted on the relief. */
+  swoop(): void;
+  land(): void;
   /** Quiz mode: flat, north up, names hidden as asked, taps find the nearest place. Null goes back to Explore. */
   quiz(q: QuizView | null): void;
   remove(): void;
@@ -90,6 +94,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   let framePending = false;
   let skipFrame = !!restored; // a restored view is not framed over
   let animateFrame = false;
+  let landing: { center: maplibregl.LngLat; zoom: number; pitch: number; bearing: number } | null = null; // where a swoop lands
   let resetCamera = false; // the next frame uses the start camera instead of keeping the learner's tilt and turn
   let dimmedRegion: string | null | undefined;
   let selectedZone: string | null = null;
@@ -429,6 +434,19 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       focus({ ...(want ?? { frame: null, dimRegion: null, showZones: false }), select: id }, false, false);
     },
     focus(f, animate) { focus(f, animate, true); },
+    swoop() {
+      if (!want || quizView || reduceMotion()) return;
+      landing = { center: map.getCenter(), zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() };
+      map.jumpTo({ zoom: Math.max(5.2, landing.zoom - 2.6), pitch: 0 });
+    },
+    land() {
+      const to = landing;
+      landing = null;
+      if (!to) return;
+      const from = map.getCenter();
+      map.flyTo({ ...to, easing: cameraEase,
+        duration: flightMs({ lng: from.lng, lat: from.lat, zoom: map.getZoom() }, { lng: to.center.lng, lat: to.center.lat, zoom: to.zoom }, motionScale()) });
+    },
     hover,
     reset() {
       if (!want || quizView) return;
