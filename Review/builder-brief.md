@@ -28,7 +28,7 @@ All key decisions were cleared by angle before building: hosting and accounts, p
 - Don't commit the mocks' `data.js` (4.3 MB) or their MapLibre copy; `Review/mock-atlas-v3/` keeps the HTML, CSS and fonts only and points at `/mnt/project-files/atlaslope/mocks/atlas-v3/` for the rest.
 
 ## Step 1: data before code (a GitHub Actions workflow; the owner's Mac only if GitHub can't reach the hosts)
-Cloud threads cannot reach any content source [V, review 16 Oct]: mapa.gob.es, boe.es, eAmbrosia, ign.es, Wikimedia and Wikipedia, naciscdn.org and both Esri hosts. So this one run fetches everything the build and the writing need, and commits it or its extracts.
+Cloud threads could not reach any content source on 16 Oct [V, review 16 Oct]; the network was opened on 18 Oct, so try a host directly first and fall back to this run only when refused. The hosts were: mapa.gob.es, boe.es, eAmbrosia, ign.es, Wikimedia and Wikipedia, naciscdn.org and both Esri hosts. So this one run fetches everything the build and the writing need, and commits it or its extracts.
 - Fetch boundaries for Campo de Calatrava and Cebreros (both quizzed) and the 14 Vinos de Pago (never asked). The source is the ministry service or each pliego's municipality list, done the way the Rioja zones were.
 - Bundle Natural Earth for the atlas base, extended to cover the Canary Islands for the inset.
 - Bundle the Köppen-Geiger climate map, clipped to Spain.

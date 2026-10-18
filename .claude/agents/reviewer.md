@@ -22,7 +22,7 @@ checked and what you did not.
 
 Report first: create the report file within your first 5 turns and append as you go. At turn 27 of 40 stop and write the hand-back.
 
-For a QA pass run `Tools/check.sh ui` first; take Playwright screenshots only for what the UI tests cannot check (layout at desktop and iPad width, large text, dark mode), at reduced scale.
+For a QA pass read the PR's CI result first (CI runs the full UI suite; run locally only the specs the change touches); take Playwright screenshots only for what the UI tests cannot check (layout at desktop, iPad and phone width, large text, reduced motion), at reduced scale. There is no dark mode (owner, 18 Oct 2026).
 
 Design mode: use the mock files, the UX/UI check in `CLAUDE.md` and the decisions the card names; view the mock at every size and appearance
 the app supports. For each finding give the checklist point, the screen state and a proposed fix. Never edit the mock, decide wording, or

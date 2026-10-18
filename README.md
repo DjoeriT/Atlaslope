@@ -5,7 +5,7 @@ Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (at
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
 ## Start here (state on 18 Oct 2026)
-- Live: the latest `release-*` tag on https://atlaslope.com (release 20 on 18 Oct 2026). Planned numbers and what is in flight:
+- Live: the latest `release-*` tag on https://atlaslope.com . Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
 - Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
 - Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
@@ -40,19 +40,25 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Unit tests: `npm test` (`npm test -- tests/unit/dops.test.ts` for one file).
 - Build: `npm run build` → `dist/`.
 - UI tests: `npm run test:ui` (builds first, serves `dist/`, runs Playwright).
-- Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the UI tests, always before a merge or release).
+- Screenshots: `npm run shots` builds the UI-test build and writes `shots/<view>-<size>.png` (home, atlas, rioja, study, question at desktop, ipad, phone; ignored by git).
+  Filter with `--only home,study` and `--sizes desktop,phone`; `--no-build` reuses `dist/uitest`; `--url <base>` uses a running server.
+  Needs the Chromium Playwright already has; a failed view logs one line and the run goes on (15 s per view, 3 min overall).
+- Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the full UI suite, which CI runs in four parts on every PR; locally run only the specs you touched).
 
 ## Data
 Every file in `data/` has an entry in `data/SOURCES.md`: source, URL, date fetched, licence, and the processing steps. Raw downloads stay
 out of the repo (`data/raw/` is git-ignored); only processed, simplified files are committed. Attribution for each layer is shown in the app.
 
 ## Releasing (GitHub Pages)
-Releases start only with the owner's words "publish release N" (`.claude/skills/release/SKILL.md`).
-1. The slice's pull request, with its tester note, handoff and context update, is merged and CI is green on `main`.
+A small slice (fix or tweak, no new screen, data or content) publishes itself once merged on green CI plus ReviewBot; a big slice only on the
+owner's words "publish release N" (owner card, 18 Oct 2026; `.claude/skills/release/SKILL.md`).
+1. The slice's pull request, with its tester note and handoff, is merged on green CI.
 2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
    It checks the inputs (the commit is on `main`, `release-N` is new and next in line), reuses the green `main` run for that exact commit
-   or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
-3. Check the live site once. No records PR: the "live on release-N" line goes in the next slice's PR.
+   (or the PR's green run when the merge changed nothing), or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
+3. Check the live site once. No records PR, and no "live" line to update: the tag is the record.
+4. Undo a bad release: run `publish` again with the next number and the previous release's commit (`git rev-list -n1 release-<N-1>`).
+   After a self-published small slice whose live check fails, do this at once and tell the owner.
 
 ## Licence
 Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
