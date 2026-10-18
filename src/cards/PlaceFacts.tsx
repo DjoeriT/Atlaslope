@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react';
-import { altitudeText, grapeLabel, tasteLines, koppenText, sourceRefs, sources, type Cite, type Measures, type Photo, type Sheet } from '../facts';
+import { altitudeText, grapeLabel, tasteLines, koppenText, sourceRefs, sources, type Cite, type Measures, type ShownPhoto, type Sheet } from '../facts';
 import { strings } from '../strings';
+import { Img } from './Img';
 
 const t = strings.facts;
 
@@ -99,13 +100,13 @@ export function FactRows({ sheet, measures }: FactRowsProps) {
   );
 }
 
-function PhotoFigure({ photo }: { photo: Photo & { src: string } }) {
+function PhotoFigure({ photo }: { photo: ShownPhoto }) {
   const [broken, setBroken] = useState(false);
   if (broken) return null;
   return (
     <li>
       <figure className="photo">
-        <img src={photo.src} alt={photo.alt} loading="lazy" onError={() => setBroken(true)} />
+        <Img photo={photo} sizes="12rem" lazy onError={() => setBroken(true)} />
         <figcaption className="src">
           {t.photoCredit} <a href={photo.page} target="_blank" rel="noopener noreferrer">{photo.artist}, {photo.licence}</a>
         </figcaption>
@@ -114,7 +115,7 @@ function PhotoFigure({ photo }: { photo: Photo & { src: string } }) {
   );
 }
 
-export function Photos({ photos }: { photos: Array<Photo & { src: string }> }) {
+export function Photos({ photos }: { photos: ShownPhoto[] }) {
   if (photos.length === 0) return null;
   return <ul className="photos" aria-label={t.photos}>{photos.map((p) => <PhotoFigure key={p.src} photo={p} />)}</ul>;
 }

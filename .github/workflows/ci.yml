@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       # Docs-only changes (docs/, Review/, top-level .md files) skip the build and tests; the job still reports, so the PR can merge.
-      # Anything else, and every publish (publish.yml re-runs the checks itself), runs everything. Owner's yes, 16 Oct 20:17Z.
+      # Anything else, runs everything; publish.yml reuses this run's full checks on main for the same commit, or runs them itself. Owner's yes, 16 Oct 20:17Z.
       - name: Docs only?
         id: scope
         env:
@@ -39,5 +39,7 @@ jobs:
         if: steps.scope.outputs.docs != 'true'
       - run: npx playwright install --with-deps chromium
         if: steps.scope.outputs.docs != 'true'
-      - run: Tools/check.sh ui
+      # publish.yml looks this step up by name to reuse a green run on main; keep the name.
+      - name: Tools/check.sh ui
+        run: Tools/check.sh ui
         if: steps.scope.outputs.docs != 'true'

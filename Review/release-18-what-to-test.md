@@ -4,7 +4,7 @@
 Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once with a hard refresh if a page looks stale. Anything odd: a screenshot plus the page address and what you expected is enough.
 
 ## This release
-Explore leaves the quiz behind (#71, owner, 18 Oct 2026: "I was in Explore but it still prompted me on what I had open on the quiz").
+Explore leaves the quiz behind (#71; if the polish pack ships first, this note goes with release 19 and the polish pack note with 18; owner, 18 Oct 2026: "I was in Explore but it still prompted me on what I had open on the quiz").
 
 1. **Back to the quiz only where it belongs.** In a round, tap "More about …" on a new place. Its card shows "Back to the quiz".
    Press Escape, search, or open another place or region: the button is gone, even if you come back to the same place. The Quiz tab still resumes the round.

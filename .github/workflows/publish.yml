@@ -1,6 +1,6 @@
 name: publish
 # Started by hand (Actions › publish › Run workflow) or by the thread after the owner's words "publish release N".
-# Re-runs every check on the commit, deploys that commit to GitHub Pages, then creates the release-N tag on it.
+# Re-runs every check on the commit (or reuses the green checks run on main for that exact commit), deploys that commit to GitHub Pages, then creates the release-N tag on it.
 # The tag is created last, only after the deploy succeeded, so a failed run leaves no tag behind and N can be retried.
 # A tag pushed with the workflow token does not start deploy.yml, so the site is deployed once.
 on:
@@ -25,6 +25,9 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
     steps:
       - name: Validate inputs
         env:
@@ -48,13 +51,41 @@ jobs:
           if git rev-parse -q --verify "refs/tags/release-$RELEASE" >/dev/null; then echo "release-$RELEASE already exists"; exit 1; fi
           last=$(git tag -l 'release-*' | sed 's/release-//' | sort -n | tail -1)
           [ "$RELEASE" -eq $(( ${last:-0} + 1 )) ] || { echo "next release is $(( ${last:-0} + 1 )), not $RELEASE"; exit 1; }
+      # The full suite already ran on this exact commit when it reached main (ci.yml, push event). Reuse that run when its
+      # "Tools/check.sh ui" step succeeded (a docs-only run skips it, so it does not count); wait up to 8 minutes if it is still running.
+      # Anything else (no run, failed, cancelled, docs-only) runs the checks here. Owner card, 17 Oct 2026: the suite ran three times per release.
+      - name: Main already passed on this commit?
+        id: reuse
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          COMMIT: ${{ inputs.commit }}
+        run: |
+          for i in $(seq 1 16); do
+            run=$(gh api "repos/$REPO/actions/workflows/ci.yml/runs?head_sha=$COMMIT&event=push&branch=main&per_page=1" --jq '.workflow_runs[0] | "\(.id) \(.status) \(.conclusion)"' 2>/dev/null) || run=""
+            read -r id status conclusion <<<"$run"
+            [ -n "${id:-}" ] && [ "$id" != "null" ] || { echo "no checks run on main for $COMMIT"; break; }
+            [ "$status" = "completed" ] && break
+            echo "checks run $id is $status; waiting"; if [ "$i" -lt 16 ]; then sleep 30; fi
+          done
+          if [ "${status:-}" = "completed" ] && [ "${conclusion:-}" = "success" ]; then
+            ui=$(gh api "repos/$REPO/actions/runs/$id/jobs" --jq '[.jobs[].steps[] | select(.name == "Tools/check.sh ui")][0].conclusion' 2>/dev/null) || ui=""
+            if [ "$ui" = "success" ]; then
+              echo "reuse=true" >> "$GITHUB_OUTPUT"; echo "Reusing checks run $id: Tools/check.sh ui passed on $COMMIT."; exit 0
+            fi
+          fi
+          echo "reuse=false" >> "$GITHUB_OUTPUT"; echo "Running the checks here."
       - uses: actions/setup-node@v4
+        if: steps.reuse.outputs.reuse != 'true'
         with:
           node-version: 22
           cache: npm
       - run: npm ci
+        if: steps.reuse.outputs.reuse != 'true'
       - run: npx playwright install --with-deps chromium
+        if: steps.reuse.outputs.reuse != 'true'
       - run: Tools/check.sh ui
+        if: steps.reuse.outputs.reuse != 'true'
   build:
     needs: check
     runs-on: ubuntu-latest

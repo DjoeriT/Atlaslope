@@ -1,12 +1,12 @@
 // Pure helpers for the teaser card and the full place page: which photos, which glance cells, how the two charts are drawn.
-import { grapeLabel, STYLE_KINDS, type KoppenShare, type Measures, type Photo, type Sheet } from '../facts';
+import { grapeLabel, STYLE_KINDS, type KoppenShare, type Measures, type ShownPhoto, type Sheet } from '../facts';
 import { strings } from '../strings';
 import type { Region, Tree } from '../tree';
 
 const t = strings.place;
 const tf = strings.facts;
 
-export type Pic = Photo & { src: string };
+export type Pic = ShownPhoto;
 
 /** The photos of a mosaic: the place's own first, then one per zone, no photo twice, at most five. */
 export function mosaicPics(own: Pic[], zonePics: Pic[], max = 5): Pic[] {
