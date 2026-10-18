@@ -8,7 +8,6 @@
 .rcover .kicker{color:inherit;opacity:.9;display:flex;gap:.35rem}
 .rcover h1{font:400 clamp(3rem,8vw,6.5rem)/.95 var(--serif);letter-spacing:-.03em;margin:.6rem 0 0}
 .rcover h1:focus{outline:none}
-.rcover .ctag{right:.6rem;bottom:.6rem}
 .rintro{max-width:76rem;margin:0 auto;padding:3rem 2rem 2rem;display:grid;grid-template-columns:minmax(0,40rem) 1fr;gap:3rem;align-items:end}
 .rintro p{font:400 1.25rem/1.55 var(--serif);color:var(--ink2);margin:0}
 .rintro .count{justify-self:end;text-align:right}

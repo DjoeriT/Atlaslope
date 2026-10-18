@@ -42,6 +42,8 @@ export function ClimateBar({ name, shares, compare = [] }: { name?: string; shar
       )}
       <ul className="pg-legend" aria-hidden="true">
         {segments.map((s, i) => <li key={s.label}><i style={{ background: TINTS[i] }} />{s.label}</li>)}
+        {/* A comparison row can hold an "Other" the place itself has none of: it still gets its key (PR #92 review). */}
+        {compare.some((c) => compareShares(shares, c.shares).length > segments.length) && <li><i style={{ background: TINTS[segments.length] }} />{t.otherClimate}</li>}
       </ul>
     </>
   );

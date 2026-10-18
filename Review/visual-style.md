@@ -49,10 +49,10 @@ an addition and the owner decides.
   /mnt/project-files/atlaslope/reviews/2026-10-18-guide-page-benchmark.md).
 - Wine places show vines, landscape or villages. No trains, roads or unrelated buildings as the first photo (Calatayud's first photo is a train).
 - Crops fill their frame (`object-fit: cover`) at a fixed ratio: cover 16:11, tile about 1:1, zone 4:3. No letterboxing and no washed-out skies.
-- Every photo keeps its credit and licence one step away at most: a 0.7 rem "Photos:" line under a mosaic or grid, and on any photo a
-  1.1 rem © tag in its bottom-right corner that opens to "Name, CC BY-SA 4.0, resized" (licence linked) on hover, focus or a tap
-  (owner point 4, 18 Oct 2026: "way smaller", "of all images"; `CreditTag` in `src/cards/Credit.tsx`, one component everywhere). The
-  opened tag is 0.7 rem white on 70% black and clears 4.5:1 over a white sky (`tests/unit/contrast.test.ts`). Never bare text on the picture.
+- No credit text on photos (owner point 4, 18 Oct 2026: "way smaller", "of all images"). Every photo's credit and licence is always visible
+  in one small line under it: "Photos: Name, CC BY-SA 4.0, resized; ..." (licence linked), 0.66 rem under a card cover, 0.7 rem under a
+  guide mosaic or region cover, in ink 3, which clears 4.5:1 on white (`tests/unit/contrast.test.ts`). A credit hidden behind a tap was
+  tried and dropped: the CC licences ask for it to be visible (PR #92 review). The full-screen viewer shows the credit under each photo.
 - Alt text describes what is in the picture, not the file name.
 
 ## Content

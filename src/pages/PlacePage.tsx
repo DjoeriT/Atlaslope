@@ -172,7 +172,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
         <ul className="pg-badges" aria-label={t.sections.where}>
-          <li className="lvl" title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</li>
+          <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
           {region && <li title={t.swsTitle(region.name)}><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link></li>}
           {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
           {meta && <li className="meta">{meta}</li>}

@@ -1,5 +1,5 @@
 /* All photos full screen (owner point 3, 18 Oct 2026): the one view with arrows. Black, like a photo viewer, whatever the page. */
-.lightbox{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0b0b0b;color:#f4efe4}
+.lightbox{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0b0b0b;color:#f4efe4}
 .lightbox::backdrop{background:#0b0b0b}
 .lightbox figure{margin:0;height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto;padding:3.5rem 4.5rem 1rem}
 .lightbox img{width:100%;height:100%;object-fit:contain;display:block}

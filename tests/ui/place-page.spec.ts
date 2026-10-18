@@ -13,11 +13,10 @@ test('a place card shows the cover, three glance cells and "Explore X"', async (
   const card = page.locator('.card');
   await expect(card.locator('.cover img')).toBeVisible();
   // The credit: author to the Commons page, licence to its text, and "resized" for CC BY(-SA) files (owner card, 18 Oct 2026).
-  await expect(card.locator('.cover .ctag-full a').first()).toHaveAttribute('href', /commons\.wikimedia\.org/);
-  await expect(card.locator('.cover .ctag-full a').nth(1)).toHaveAttribute('href', /creativecommons\.org/); // alella-1 is CC BY-SA 4.0
-  await expect(card.locator('.cover .ctag-full')).toContainText(', resized');
-  await card.locator('.cover .ctag-i').first().click(); // the © tag opens to the full credit (owner point 4)
-  await expect(card.locator('.cover .ctag-full').first()).toBeVisible();
+  await expect(card.locator('.cover-credits a').first()).toHaveAttribute('href', /commons\.wikimedia\.org/);
+  await expect(card.locator('.cover-credits a').nth(1)).toHaveAttribute('href', /creativecommons\.org/); // alella-1 is CC BY-SA 4.0
+  await expect(card.locator('.cover-credits')).toContainText(', resized');
+  await expect(card.locator('.cover .credit, .cover .ctag')).toHaveCount(0); // no text on the photo (owner point 4)
   await expect(card.locator('.glance > div')).toHaveCount(3);
   await expect(card.getByRole('link', { name: /^Explore .+$/ })).toBeVisible();
   await expect(card.locator('.cover .nav')).toHaveCount(0); // one photo: no arrows
@@ -27,7 +26,7 @@ test('a card with several photos shows them as a mosaic, and the arrows only in 
   await open(page, '#place=cebreros');
   await expect(page.locator('.cover figure')).toHaveCount(3);
   await expect(page.locator('.cover .nav')).toHaveCount(0);
-  await expect(page.locator('.cover .ctag')).toHaveCount(3);
+  await expect(page.locator('.cover-credits span')).toHaveCount(3);
   await page.locator('.cover .ph').nth(1).click();
   const viewer = page.getByRole('dialog', { name: 'Photos of Cebreros' });
   await expect(viewer.locator('.count')).toHaveText('2 / 3');
@@ -37,6 +36,8 @@ test('a card with several photos shows them as a mosaic, and the arrows only in 
   await expect(viewer.locator('.count')).toHaveText('1 / 3');
   await page.keyboard.press('Escape');
   await expect(viewer).toHaveCount(0);
+  await expect(page.locator('.card h1')).toHaveText('Cebreros'); // Escape closed only the viewer, not the card
+  await expect(page.locator('.cover .ph').nth(1)).toBeFocused();
 });
 
 test('Rioja lists its zones with thumbnails on the card', async ({ page }) => {
@@ -150,7 +151,7 @@ test('the guide labels its level, its study region and WSET only where the speci
   await open(page, '#place=rioja&page');
   const badges = page.locator('.pg-badges li');
   await expect(badges).toHaveText(['DOCa', 'Wine Scholar · Rioja', 'WSET Level 2 and 3', '3 zones · 4-minute read']);
-  await expect(badges.first()).toHaveAttribute('title', 'Denominación de Origen Calificada');
+  await expect(badges.first().locator('abbr')).toHaveAttribute('title', 'Denominación de Origen Calificada');
   await open(page, '#place=rioja-alta&page');
   await expect(page.locator('.pg-badges')).not.toContainText('WSET');
 });

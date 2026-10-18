@@ -7,8 +7,9 @@ Owner points 3, 4, 5, 10, 12, 14 of his 16-point atlas message. Thread "Atlas gu
   "Page" left the wording: "The Rioja guide", "In this guide". Reading time moved to the label row under the title.
 - 3, photos: guide header is a hero plus up to two photos (`src/pages/Mosaic.tsx`), "All N photos" button; map card cover is the same
   small mosaic (`src/cards/Cover.tsx`). Arrows only in the full-screen viewer (`src/pages/Lightbox.tsx`, a `<dialog>`, arrow keys, Escape).
-- 4, credits: every on-photo credit is a 1.1 rem © tag that opens to the full credit on hover, focus or tap (`CreditTag` in
-  `src/cards/Credit.tsx`, one component). "Photos:" lines under mosaics went from 0.78 to 0.7 rem.
+- 4, credits: no credit text on any photo any more. Credits are one small, always-visible "Photos:" line under each cover or mosaic
+  (0.66 rem on the card via `src/cards/Cover.tsx` `.cover-credits`, 0.7 rem on guide and region). A © tap-to-reveal tag was built first
+  and dropped after ReviewBot (P1): the CC licences want the credit visible. Full credit also under each photo in the viewer.
 - 10, comparisons: `data/place-measures.json` gained `country.spain` (from `spain-mask.json`) and `regions.<id>` (union of a region's
   appellations, zones left out), same method. Charts show the place, the zone's appellation or the study region (when it differs), and all
   of Spain on one scale (`src/pages/Charts.tsx`). Rule in `Review/visual-style.md` "Content".
@@ -16,6 +17,11 @@ Owner points 3, 4, 5, 10, 12, 14 of his 16-point atlas message. Thread "Atlas gu
   (names from WSET L3 spec Issue 2, May 2022, and L2 Issue 2.1, Apr 2026; 19 places at L3, 8 at L2; zones and VP get none).
 - 5, card width: benchmark [V] Google Maps 408 px, Apple Maps web 420, Komoot 420; Airbnb ~47%, Zillow ~52% of 1440. Keep 400 px; any
   change is the "Atlas copy and tiles" thread's (tiles drive it). Benchmark: /mnt/project-files/atlaslope/reviews/2026-10-18-guide-page-benchmark.md.
+
+## Review
+ReviewBot report /mnt/project-files/atlaslope/reviews/2026-10-18-pr92-review.md: P1 and all P2s fixed (credit line, viewer in a
+portal with keys and clicks stopped, focus back to the opener, 44 px buttons); P3s fixed (click beside photo closes, live caption, legend
+Other key, level badge as abbr, Sherry note).
 
 ## Open
 - Owner's pick of the look (subtle, recommended, bold, recommended + numbered chapters); built on recommended.
