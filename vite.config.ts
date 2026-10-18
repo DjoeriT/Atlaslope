@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig(({ mode }) => ({
   base: './',
   // Two pages (website slice 2): the home page at the root, the atlas at atlas/. Each is a real file, as GitHub Pages needs.
-  build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html' } } },
+  build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', about: 'about/index.html' } } },
   esbuild: { jsx: 'automatic' },
   define: { __DEBUG_FLAGS__: JSON.stringify(mode === 'development' || mode === 'uitest') },
   test: { include: ['tests/unit/**/*.test.ts'] },

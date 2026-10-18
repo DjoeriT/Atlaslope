@@ -12,7 +12,10 @@ test('a place card shows the cover, three glance cells and "Explore X"', async (
   await open(page, '#place=alella');
   const card = page.locator('.card');
   await expect(card.locator('.cover img')).toBeVisible();
-  await expect(card.locator('.cover .credit')).toHaveAttribute('href', /commons\.wikimedia\.org/);
+  // The credit: author to the Commons page, licence to its text, and "resized" for CC BY(-SA) files (owner card, 18 Oct 2026).
+  await expect(card.locator('.cover .credit a').first()).toHaveAttribute('href', /commons\.wikimedia\.org/);
+  await expect(card.locator('.cover .credit a').nth(1)).toHaveAttribute('href', /creativecommons\.org/); // alella-1 is CC BY-SA 4.0
+  await expect(card.locator('.cover .credit')).toContainText(', resized');
   await expect(card.locator('.glance > div')).toHaveCount(3);
   await expect(card.getByRole('link', { name: /^Explore .+$/ })).toBeVisible();
   await expect(card.locator('.cover .nav')).toHaveCount(0); // one photo: no arrows

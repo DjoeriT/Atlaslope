@@ -7,13 +7,12 @@ import type { Place, Region, Tree } from '../tree';
 import '../styles/region.css';
 import { sentences } from './sentence';
 import { Img } from '../cards/Img';
+import { Credit } from '../cards/Credit';
 
 const t = strings.regionPage;
 type Shot = ShownPhoto;
 
-const credit = (p: Shot) => (
-  <a href={p.page} target="_blank" rel="noopener noreferrer">{p.artist}, {p.licence}</a>
-);
+const credit = (p: Shot) => <Credit photo={p} />;
 
 /** A tile with the place's photo, or its name on a plain tile when it has none or the photo fails. */
 function Tile({ place, go, photo, onBroken }: { place: Place; go: Go; photo?: Shot; onBroken: (src: string) => void }) {

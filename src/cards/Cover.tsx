@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { strings } from '../strings';
 import type { Pic } from '../pages/helpers';
 import { Img } from './Img';
+import { Credit } from './Credit';
 
 const t = strings.place;
 
@@ -48,7 +49,7 @@ export function Cover({ name, color, photos }: Props) {
           <div className="dots" aria-hidden="true">{shown.map((p, k) => <i key={p.src} className={k === at ? 'on' : undefined} />)}</div>
         </>
       )}
-      <a className="credit" href={photo.page} target="_blank" rel="noopener noreferrer">{t.photoCredit(photo.artist, photo.licence)}</a>
+      <span className="credit"><Credit photo={photo} /></span>
     </div>
   );
 }

@@ -149,7 +149,7 @@ export function App() {
   useEffect(() => {
     document.title = quiz ? strings.pageTitle(strings.topBar.quiz) : titleName ? strings.pageTitle(titleName) : strings.pageTitleHome;
   }, [titleName, !!quiz]);
-  // The home page's Search goes to atlas/#search: the atlas opens on Spain with the search field ready.
+  // atlas/#search (the home page's search link until 18 Oct 2026, maybe bookmarked): the atlas opens on Spain with the search field ready.
   useEffect(() => {
     if (location.hash !== '#search') return;
     history.replaceState(history.state, '', here());
