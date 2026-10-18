@@ -1,7 +1,7 @@
 {
  "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it.",
  "spain": {
-  "lede": "From Atlantic rain in the green north to volcanic ash in the Canaries, Spain grows its wine on slate terraces, chalk plains and the albariza of Jerez. Pick a region and fly in.",
+  "lede": "From Atlantic rain in the green north to volcanic ash in the Canaries, Spain grows its wine on steep slate slopes, chalk plains and the albariza of Jerez. Pick a region and fly in.",
   "from": [
    "txakoli-getaria",
    "lanzarote",
@@ -64,19 +64,23 @@
    ]
   },
   "ebro": {
-   "title": "The dry cierzo wind and slow-ripened reds",
+   "title": "The dry cierzo and slow-ripened, deep-coloured wines",
    "lede": "The dry cierzo wind shapes this region. In Campo de Borja it keeps the vines short of water, so they ripen slowly into deep-coloured, aromatic wines; Navarra adds limestone and freshness.",
    "from": [
     "campo-de-borja",
-    "navarra"
+    "navarra",
+    "urbezo",
+    "carinena"
    ],
    "cite": [
     "campo-de-borja-doc:p6",
-    "navarra-doc:p8"
+    "navarra-doc:p8",
+    "urbezo-doc:p5",
+    "carinena-doc:p8"
    ]
   },
   "cataluna": {
-   "title": "Slate slopes, sea influence and old Garnacha",
+   "title": "Slate slopes, mountain shelter and old Garnacha",
    "lede": "From the sea to the mountains. Priorat's steep slate gives deep-coloured reds high in extract, Montsant's old Garnacha and Cariñena grow sheltered from the sea, and wild herbs give Pla de Bages aromas of rosemary and thyme.",
    "from": [
     "priorat",
@@ -90,7 +94,7 @@
    ]
   },
   "mediterranean": {
-   "title": "Monastrell and Bobal on dry, chalky plateaus",
+   "title": "Monastrell and Bobal under strong sun, on chalk",
    "lede": "Hot, dry and chalky. Monastrell makes broad, fleshy reds in Jumilla and Yecla, Bobal gives deep red, high-acid wine in Utiel-Requena, and the sea air keeps Alicante fresher than its inland neighbours.",
    "from": [
     "jumilla",
@@ -109,7 +113,7 @@
   },
   "meseta": {
    "title": "Sun-struck plains: 3,000 hours of sun on chalk",
-   "lede": "Spain's great central plateau. La Mancha gets 3,000 hours of sun and only 300 to 350 mm of rain, Almansa sits high on limestone, and Campo de Calatrava grows on dark volcanic soil.",
+   "lede": "Sunny plains and a high plateau. La Mancha gets 3,000 hours of sun and only 300 to 350 mm of rain, Almansa sits high on limestone, and Campo de Calatrava grows on dark volcanic soil.",
    "from": [
     "la-mancha",
     "almansa",
@@ -151,7 +155,7 @@
   },
   "canarias": {
    "title": "Native grapes on volcanic ash, behind stone walls",
-   "lede": "Wine on volcanic islands. Lanzarote grows native grapes in volcanic ash on 150 mm of rain, Tenerife's slopes fall from Teide to the coast, and El Hierro's terraces run from 50 to 1,000 metres.",
+   "lede": "Wine on volcanic islands. Lanzarote grows native grapes in volcanic ash on 150 mm of rain, in Ycoden-Daute-Isora the slopes fall from Teide to the coast, and El Hierro's terraces run from 50 to 1,000 metres.",
    "from": [
     "lanzarote",
     "ycoden-daute-isora",
@@ -179,7 +183,7 @@
    ]
   },
   "condado-de-huelva": {
-   "title": "Lowland by Doñana, wines aged in solera",
+   "title": "Lowland by Doñana, many wines aged in solera",
    "cite": [
     "condado-de-huelva-doc:p6"
    ]
@@ -209,7 +213,7 @@
    ]
   },
   "manzanilla": {
-   "title": "Sea air and a thick, lasting flor",
+   "title": "Sea air and an intense, lasting flor",
    "cite": [
     "manzanilla-doc:p3"
    ]
@@ -518,7 +522,7 @@
    ]
   },
   "monterrei": {
-   "title": "Hot summers, cool ripening nights, native grapes",
+   "title": "Hot summers, wide ripening swings, native grapes",
    "cite": [
     "monterrei-doc:p5"
    ]
