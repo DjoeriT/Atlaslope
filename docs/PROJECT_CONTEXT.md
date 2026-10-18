@@ -52,7 +52,7 @@ Release 6: tag on e8a3f78. Release 5, the world background map: tag on 25a951e. 
 Release 3 (tag on 6a78915) passed the post-deploy live map check with 85 satellite and 85 terrain tiles [V, run 38924845710].
 Numbering: the publish workflow takes only the next whole number, so the slice called "release 4.1" ships as release 6 and the quiz
 (planned as release 5) as release 7 [V, publish.yml; owner said "publish release 5" for the map, 16 Oct 20:05Z].
-Route from now on: one pull request per slice on a `claude/...` branch, merged after green CI and ReviewBot; releases through the `publish`
+Route from now on: one pull request per slice on a `claude/...` branch, merged after green CI (plus ReviewBot on new screens, user-facing copy, licence or legal questions, owner 18 Oct 2026); releases through the `publish`
 workflow after the owner's "publish release N" [O, cards 16 Oct 10:18 to 10:19Z]. A cloud thread can start that workflow [V, release 3]. The Remote Control
 session on his Mac also sees his thread messages and started a second publish run 7 s apart; the workflow's tag guard stopped it harmlessly.
 

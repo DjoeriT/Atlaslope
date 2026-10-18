@@ -112,7 +112,7 @@ Building does **not** start yet. The owner wants all key decisions cleared first
 - **Photos** (10:48Z): yes, photos in v1. Open-licence only (Wikimedia Commons public domain, CC BY or CC BY-SA), credited on screen and listed in data/SOURCES.md; never WSG or unlicensed images. Count and selection: see the follow-up card. [O]
 
 ## Build decisions, round 5: code standards and platform (owner, 16 Oct 2026)
-- House rules (stand unless the owner objects): strict TypeScript, automatic formatting and lint in CI, every change through a PR with green tests and a ReviewBot review, the most tests on the quiz engine. [A]
+- House rules (stand unless the owner objects): strict TypeScript, automatic formatting and lint in CI, every change through a PR with green tests, plus a ReviewBot review on new screens, user-facing copy and licence or legal questions [O, 18 Oct 2026], the most tests on the quiz engine. [A]
 - **Browsers** (10:50Z): Safari, Chrome, Edge and Firefox from the last two years, iPadOS 17 and later; tested on Safari and Chrome. [O]
 - **Speed** (10:50Z): the map is usable within 3 seconds on home Wi-Fi; a build check fails if the download (satellite and photos excluded) grows past about 2 MB. [O]
 - **Interface toolkit** (10:53Z): React (after a Preact versus React comparison; size cost about 2% of the budget, larger ecosystem, builders' fluency, React Native path). MapLibre driven directly. [O]

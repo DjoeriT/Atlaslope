@@ -7,7 +7,7 @@ Status: in force; changes only on the owner's word. Names: LeadBot, BuilderBot, 
 |---|---|---|---|
 | **Owner** (Djoeri) | – | decides; no code | – |
 | **Coordinator** (project chat) | owner's pick | project memory, routines | the repo; outward actions |
-| **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI and ReviewBot's report, inside work the owner said go to; starts the `publish` workflow after "publish release N" (also for a rollback) | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
+| **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI (and ReviewBot's report where it runs), inside work the owner said go to; starts the `publish` workflow after "publish release N" (also for a rollback) | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
 | **BuilderBot** | Sonnet 5.5 for mechanical work, Opus 5.5 for tricky logic (the card says which) | only the files named on its task card, in its own worktree | `CLAUDE.md`, `docs/`, plan files; paid or networked calls |
 | **ReviewBot** | Sonnet by default; Opus at high effort for core logic. Read-only, fresh context | one report file named on its card | everything else |
 | **AnalystBot** | Sonnet. Read-only, on the owner's request | its one page in `Review/weekly/` | network calls of its own; personal data; naming testers; deciding priorities |
@@ -36,12 +36,14 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Keeps `docs/PROJECT_CONTEXT.md`, `CLAUDE.md` and the plan current after every merge.
 - Writes a task card for each piece of work and picks the model.
 - Briefs ReviewBot with the facts, the plan and the thresholds, **not its own conclusions**.
-- Merges a slice's pull request only when CI (which runs the full UI suite) is green and ReviewBot has reported. The owner's go on the plan is
-  the OK; anything off-plan is asked. Builders work in local worktrees and never push; the thread pushes its own `claude/...` branch.
-  Documentation-only changes skip ReviewBot but still go through a pull request.
+- Merges a slice's pull request only when CI (which runs the full UI suite) is green and, where ReviewBot runs, it has reported. The owner's
+  go on the plan is the OK; anything off-plan is asked. Builders work in local worktrees and never push; the thread pushes its own `claude/...` branch.
+- **When ReviewBot runs** (owner, 18 Oct 2026): only on PRs with a new screen, new or changed user-facing copy, or a licence or legal
+  question. Fixes, tweaks and docs merge on green CI alone, still through a pull request. Why it stays there: it catches what no test
+  checks (PR #92, a tap-to-reveal photo credit hid the CC attribution the licence requires, with CI fully green).
 - **Small slices run lean** (owner card "Lean for small", 17 Oct 2026, after "why do all these threads take so long"): a fix or UI tweak
   with no new screen and no new data or content skips the separate ReviewBot design run (LeadBot does the check itself), shows the owner
-  a rough first look early, carries its records in the same PR, runs ReviewBot code review alongside CI rather than after it, and runs only
+  a rough first look early, carries its records in the same PR, runs ReviewBot alongside CI only when it changes user-facing copy, and runs only
   the targeted tests locally while CI runs the full suite. New screens, redesigns and big releases keep the full process.
 - Treats every agent report as a lead: re-runs a number before relying on it.
 - A worktree may lack secrets and dependencies: builders run what they can; after the merge LeadBot runs the checks on `main` and says which ran.

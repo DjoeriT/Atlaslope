@@ -26,15 +26,18 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 
 ## Working agreements (owner; every session and agent)
 - **Outward actions only on his say-so, each time:** publishing, deploying, paid or networked services, anything outsiders see.
-  Standing exceptions inside work he said go to: push the thread's own `claude/...` branch, one PR per slice, merge on green CI plus
-  ReviewBot. Then one line asks him to say "publish release N"; only those words in the thread start the `publish` workflow, also for
+  Standing exceptions inside work he said go to: push the thread's own `claude/...` branch, one PR per slice, merge on green CI, plus
+  ReviewBot where it runs. ReviewBot runs only on PRs with a new screen, new or changed user-facing copy, or a licence or legal question;
+  fixes, tweaks and docs merge on green CI alone (18 Oct 2026, owner asked "Do we need ReviewBot if we have CI?"; it stays where tests
+  can't look: PR #92's tap-to-reveal credit hid the CC attribution with CI green). Then one line asks him to say "publish release N";
+  only those words in the thread start the `publish` workflow, also for
   a rollback (18 Oct 2026: the cloud safety check refused a thread starting publish without his words; he chose to say the words over tapping or a permission rule). A refused push means stop and tell him; never push `main`.
   Never force-push, rewrite pushed history, push to someone else's branch, or move or delete a tag.
 - **Decisions** as tap-to-pick cards, batched up front, one recommended. Posting a card never ends the work: reversible work starts on the
   recommended option in the same turn; outward or hard-to-undo work waits (18 Oct: a review thread sat 32 minutes on a card).
 - **New UI**: a rough first look goes to him early. A big slice's mock then gets a UX, UI and visual check against `Review/visual-style.md`
   before the polished version, with the findings fixed, not listed; new screens and redesigns use a ReviewBot design run. A small slice:
-  LeadBot's own check and ReviewBot alongside CI.
+  LeadBot's own check, plus ReviewBot alongside CI only if it changes user-facing copy.
 - **Talking to him:** plain words, answer first, progress in two or three sentences. Something failed: say what, show the output, wait.
 - **Tag claims** [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
 - **Never print keys or secrets.** Keys live in repo secrets or `.env.local` (check with `grep -c`); a value he needs goes to him only
