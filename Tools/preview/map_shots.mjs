@@ -20,6 +20,10 @@ export const VIEWS = {
   'rioja-z9': '-2.6,42.5,9,0,0',
   'rioja-z10': '-2.6,42.5,10,0,0',
   'border-tui-z14': '-8.646,42.047,14,0,0',
+  // 3D relief, tilted (relief and base-map slice, 18 Oct 2026). For the plain atlas (satellite off), build without the Esri key
+  // and shoot locally: the container reaches the tile hosts since 18 Oct.
+  'spain-z6-tilt': '-3.7,40.6,5.8,0,50',
+  'rioja-z10-tilt': '-2.75,42.45,10,15,60',
 };
 const SCREENS = { mac: { width: 1440, height: 900 }, ipad: { width: 1024, height: 768 } };
 

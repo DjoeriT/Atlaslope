@@ -9,7 +9,6 @@ export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services
 export const TERRAIN_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
 export const ESRI_ATTRIBUTION = 'Imagery: Esri, Maxar, Earthstar Geographics, and the GIS User Community';
 export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
-export const TERRAIN_EXAGGERATION = 1.3;
 /** The selected place: black with a champagne edge, so it stands off both the atlas and the photo (Review/visual-style.md "Colour"). */
 export const SELECTED = { fill: '#141414', line: '#E9D8B4' };
 
@@ -47,6 +46,9 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
   }
   if (tiles) {
     sources.terrain = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13, attribution: TERRAIN_ATTRIBUTION };
+    // The shading has its own copy of the same tiles (MapLibre draws hillshade badly from the 3D relief's source) and one zoom
+    // finer, so slopes stay crisp close in instead of blurring.
+    sources.shade = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 14 };
   }
   const isLand = ['==', ['get', 'layer'], 'land'] as never;
   const isBorder = ['==', ['get', 'layer'], 'border'] as never;
@@ -65,7 +67,7 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
   }
   if (tiles) {
     layers.push({
-      id: 'hillshade', type: 'hillshade', source: 'terrain', layout: { visibility: vis.hillshade },
+      id: 'hillshade', type: 'hillshade', source: 'shade', layout: { visibility: vis.hillshade },
       paint: { 'hillshade-exaggeration': paint.hillshadeExaggeration, 'hillshade-shadow-color': '#5A4A3A', 'hillshade-highlight-color': '#FFFFFF', 'hillshade-accent-color': '#8A7A66' },
     });
   }
