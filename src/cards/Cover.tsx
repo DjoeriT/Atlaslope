@@ -43,8 +43,8 @@ export function Cover({ name, color, photos }: Props) {
       <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 25rem" onError={() => setBroken(new Set(broken).add(photo.src))} />
       {many && (
         <>
-          <button type="button" className="round nav prev" aria-label={t.previousPhoto} onClick={() => step(-1)}><Chevron dir="prev" /></button>
-          <button type="button" className="round nav next" aria-label={t.nextPhoto(((at + 1) % shown.length) + 1, shown.length)} onClick={() => step(1)}><Chevron dir="next" /></button>
+          <button type="button" className="round nav prev" aria-label={t.previousPhoto} title={t.previousPhoto} onClick={() => step(-1)}><Chevron dir="prev" /></button>
+          <button type="button" className="round nav next" aria-label={t.nextPhoto(((at + 1) % shown.length) + 1, shown.length)} title={t.nextPhoto(((at + 1) % shown.length) + 1, shown.length)} onClick={() => step(1)}><Chevron dir="next" /></button>
           <div className="dots" aria-hidden="true">{shown.map((p, k) => <i key={p.src} className={k === at ? 'on' : undefined} />)}</div>
         </>
       )}

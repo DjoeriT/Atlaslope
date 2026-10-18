@@ -51,7 +51,7 @@ export function MapMenu({ menu, imageryFailed, onChange }: Props) {
         </div>
       )}
       <div className="glass">
-        <button ref={button} className="iconbtn" aria-label={t.menuButton} aria-expanded={open} aria-controls="layers-menu" onClick={() => setOpen(!open)}>
+        <button ref={button} className="iconbtn" aria-label={t.menuButton} title={t.menuButton} aria-expanded={open} aria-controls="layers-menu" onClick={() => setOpen(!open)}>
           <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z" /><path d="M3 13l9 5 9-5" /><path d="M3 17l9 5 9-5" /></svg>
         </button>
       </div>

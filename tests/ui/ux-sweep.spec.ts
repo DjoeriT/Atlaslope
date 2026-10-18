@@ -57,7 +57,7 @@ test('Escape closes a page, then steps up from the card, but not while typing in
   await open(page, '#region=castilla-y-leon');
   await page.locator('.card .tiles a', { hasText: 'Toro' }).click();
   await expect(page.locator('.card h1')).toHaveText('Toro');
-  await page.getByRole('link', { name: 'Open the Toro page' }).click();
+  await page.getByRole('link', { name: 'Explore Toro' }).click();
   await expect(page.locator('.pg h1')).toHaveText('Toro');
   await page.keyboard.press('Escape');
   await expect(page.locator('.pg')).toHaveCount(0);
@@ -74,7 +74,7 @@ test('the region card closes to Spain and its one main button names the page', a
   await open(page, '#region=castilla-y-leon');
   const card = page.locator('.card');
   await expect(card.locator('.foot a')).toHaveCount(1);
-  await expect(card.locator('.foot a')).toHaveText('Open the Castilla y León page');
+  await expect(card.locator('.foot a')).toHaveText('Explore Castilla y León');
   await card.getByRole('link', { name: 'Close, back to Spain' }).click();
   await expect(card.locator('h1')).toHaveText('Spain');
 });
@@ -90,7 +90,7 @@ test('a card change runs as a view transition, and none runs under reduced motio
   });
   await page.locator('.card .tiles a', { hasText: 'Toro' }).click();
   await expect(page.locator('.card h1')).toHaveText('Toro');
-  await page.getByRole('link', { name: 'Open the Toro page' }).click();
+  await page.getByRole('link', { name: 'Explore Toro' }).click();
   await expect(page.locator('.pg h1')).toHaveText('Toro');
   expect(await page.evaluate(() => (window as unknown as { seen: string[] }).seen)).toEqual(['card', 'page-open']);
 
@@ -117,7 +117,7 @@ test.describe('on a phone', () => {
     await expect(sheet).toHaveAttribute('data-stop', 'peek');
     await expect(page.getByRole('button', { name: /^Card size: small/ })).toHaveAttribute('aria-expanded', 'false');
     await expect(sheet.locator('.cover')).toBeHidden();
-    await expect(page.getByRole('link', { name: 'Open the Rioja Alta page' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Explore Rioja Alta' })).toBeVisible();
     expect(await sheet.locator('.scroll').evaluate((el) => (el as HTMLElement).inert)).toBe(true);
     await page.waitForTimeout(400); // the height eases into place
     expect((await sheet.boundingBox())!.height).toBeLessThan(full / 2);

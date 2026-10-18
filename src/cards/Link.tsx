@@ -19,5 +19,5 @@ export function Link({ to, go, children, className, label }: Props) {
     e.preventDefault();
     go(to);
   };
-  return <a className={className} aria-label={label} href={selectionToHash(to) || './'} onClick={onClick}>{children}</a>;
+  return <a className={className} aria-label={label} title={label} href={selectionToHash(to) || './'} onClick={onClick}>{children}</a>;
 }

@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { CLIMATE_GROUPS, NO_CLIMATE_COLOR, climateColor, climateGroupOf } from '../../src/map/climate';
 import { buildStyle } from '../../src/map/style';
-import { dueOf, mainGrapes } from '../../src/cards/Cards';
+import { mainGrapes } from '../../src/cards/Cards';
 
 const places = JSON.parse(readFileSync('data/places.json', 'utf8')).places as { id: string; boundary: string }[];
 const measures = JSON.parse(readFileSync('data/place-measures.json', 'utf8')).places as Record<string, { koppen: { code: string }[] }>;
@@ -38,13 +38,5 @@ describe('main grapes on the cards', () => {
     const g = mainGrapes(['rioja', 'ribera-del-duero', 'toro', 'no-such-place'], 3);
     expect(g.length).toBeGreaterThan(0);
     expect(g[0]).toMatch(/Tempranillo|Tinta/);
-  });
-});
-
-describe('due counts on the cards', () => {
-  it('counts memories, as the Today card does, not places', () => {
-    const due = new Map([['rioja', 2], ['rioja-alta', 1]]);
-    expect(dueOf(due, ['rioja', 'rioja-alta', 'toro'])).toBe(3);
-    expect(dueOf(undefined, ['rioja'])).toBe(0);
   });
 });

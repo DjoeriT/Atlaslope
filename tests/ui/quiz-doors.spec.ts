@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { plannedRound } from './round-plan';
 
-// The Quiz screen's doors, focus, practise any mix, the progress file, the Today card, the manifest and the way back from a place card.
+// The Quiz screen's doors, focus, practise any mix, the progress file, no Today card in the Atlas, the manifest and the way back from a place card.
 // A fixed clock (?now=) and a seeded browser; no network.
 
 const places = JSON.parse(readFileSync('data/places.json', 'utf8')).places as Array<{ id: string; name: string; quiz: string }>;
@@ -151,26 +151,13 @@ test('Home has no Today card before there is progress', async ({ page }) => {
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
 });
 
-test('Home shows the Today card once there is progress; closing it shows the Spain card; Start plays the round', async ({ page }) => {
+test('the Atlas has no Today card with progress either; the Study door carries what is due', async ({ page }) => {
+  // Atlas and Study apart (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
   await open(page, '', SEED);
-  const card = page.getByRole('region', { name: 'Today' });
-  await expect(card.locator('h1')).toHaveText('3 due');
-  await expect(card).toContainText('new places today');
-  await card.getByRole('button', { name: 'Close, show the map' }).click();
-  await expect(page.locator('.card h1')).toHaveText('Spain');
-
-  // Once a day (owner card, 18 Oct 2026): closed stays closed until tomorrow.
-  await page.reload();
   await expect(page.locator('.card h1')).toHaveText('Spain');
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
-
-  // The next day it is back, and Start plays the round; started, it stays away for the day too.
-  await page.goto(`./?now=2026-10-18T10:00:00Z`);
-  await page.getByRole('region', { name: 'Today' }).getByRole('button', { name: /^Review \d+ due$/ }).click();
-  await expect(page.locator('.q-num')).toContainText('Study');
-  await page.reload();
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
-  await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
+  await expect(page.locator('.door').first().locator('.big')).toHaveText('3 due and 5 new today');
 });
 
 test('the manifest is linked and parses', async ({ page, request }) => {
