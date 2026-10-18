@@ -152,6 +152,8 @@ test('the guide labels its level, its study region and WSET only where the speci
   const badges = page.locator('.pg-badges li');
   await expect(badges).toHaveText(['DOCa', 'Wine Scholar · Rioja', 'WSET Level 2 and 3', '3 zones · 4-minute read']);
   await expect(badges.first().locator('abbr')).toHaveAttribute('title', 'Denominación de Origen Calificada');
+  // Rioja is its own study region: the badge names it without a link back to this same guide
+  await expect(badges.nth(1).locator('a')).toHaveCount(0);
   await open(page, '#place=rioja-alta&page');
   await expect(page.locator('.pg-badges')).not.toContainText('WSET');
 });

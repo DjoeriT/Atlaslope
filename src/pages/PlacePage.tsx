@@ -59,6 +59,8 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
 
   const trail = tree.breadcrumb(place.id, 'place');
   const region = tree.getRegion(place.region);
+  // A study region that holds only this place (Rioja) opens this same guide, so it is named without a link to itself.
+  const ownRegion = !!region && tree.soleSameName(region.id)?.id === place.id;
   const also = tree.alsoWithin(place.id);
   const zones = tree.children(place.id, 'place') as Place[];
   const isZone = tree.levelName(place) === 'zone';
@@ -172,7 +174,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
         <ul className="pg-badges" aria-label={t.sections.where}>
           <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
-          {region && <li title={t.swsTitle(region.name)}><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link></li>}
+          {region && <li title={t.swsTitle(region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
           {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
           {meta && <li className="meta">{meta}</li>}
         </ul>
@@ -353,7 +355,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
               <dl className="pg-rows">
                 <dt>{t.level}</dt>
                 <dd>{level}{sheet && !isZone && src(['mapa-list'])}</dd>
-                {region && !isZone && (<><dt>{t.studyRegion}</dt><dd><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link></dd></>)}
+                {region && !isZone && (<><dt>{t.studyRegion}</dt><dd>{ownRegion ? region.name : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link>}</dd></>)}
                 {also.length > 0 && (
                   <>
                     <dt>{t.alsoWithin}</dt>
@@ -362,7 +364,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                 )}
               </dl>
               <div className="pg-next">
-                {region && <Link className="btn" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.allPlacesInRegion}</Link>}
+                {region && !ownRegion && <Link className="btn" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.allPlacesInRegion}</Link>}
                 {next && (
                   <Link className="nextlink" to={{ kind: 'region', id: next.id, page: true }} go={go}>
                     <span className="kicker">{t.nextInCourse}</span>
