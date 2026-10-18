@@ -92,6 +92,11 @@ an addition and the owner decides.
 - The atlas opens on the map: the home page does the welcome, so first-run is a three-line note on moving the map that goes at the
   first touch.
 
+## How mocks reach the owner
+One HTML page per round: the before and after, or every option (A / B / C / D) on the same page, labelled so he can pick one.
+Published as an Artifact, its link in the reply, never separate files (owner, 18 Oct 2026). A map mock whose tiles fail there also goes
+to his Mac as that same page, with its file:/// path.
+
 ## How the check is run
 1. Screenshots: desktop 1440x900, iPad 834x1194 and phone 390x844 (the phone size the UI tests use, `tests/ui/ux-sweep.spec.ts:7`),
    on the atlas and on satellite, plus large text (root font 125%) and reduced motion.
