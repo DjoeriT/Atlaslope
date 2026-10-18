@@ -9,7 +9,8 @@ export interface Flag {
   id: string;
   name: string;
   at: [number, number];
-  line: string;
+  /** One idea each (Review/visual-style.md, Content). */
+  lines: string[];
   cite: Cite[];
 }
 
@@ -36,18 +37,21 @@ export interface Flags {
 
 const t = strings.map;
 
-export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void): Flags {
+/** `onUpdate` runs after the chips move or hide, so the place names can give way to them again (labels.ts). */
+export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void, onUpdate: () => void): Flags {
   let shownKey = '';
   let chips: Array<{ flag: Flag; el: HTMLButtonElement; marker: Marker }> = [];
   let popup: Popup | null = null;
   let openId: string | null = null;
 
-  const close = () => {
+  const close = (refocus = false) => {
+    const chip = chips.find((c) => c.flag.id === openId);
     const p = popup;
     popup = null;
     openId = null;
     p?.remove();
     for (const c of chips) { c.el.classList.remove('open'); c.el.setAttribute('aria-expanded', 'false'); }
+    if (refocus) chip?.el.focus();
   };
 
   const content = (f: Flag) => {
@@ -55,8 +59,7 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
     box.className = 'flagpop';
     const h = document.createElement('h3');
     h.textContent = f.name;
-    const p = document.createElement('p');
-    p.textContent = f.line;
+    const lines = f.lines.map((line) => { const p = document.createElement('p'); p.textContent = line; return p; });
     const src = document.createElement('p');
     src.className = 'src';
     const refs = sourceRefs(f.cite, sources);
@@ -77,7 +80,7 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
     go.className = 'btn primary';
     go.textContent = t.flagFly(f.name);
     go.addEventListener('click', () => { close(); fly(f.at); });
-    box.append(h, p, src, go);
+    box.append(h, ...lines, src, go);
     return box;
   };
 
@@ -89,9 +92,15 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
     c.el.setAttribute('aria-expanded', 'true');
     const p = new maplibregl.Popup({ className: 'flagpopup', offset: 22, maxWidth: '18rem', closeButton: true, closeOnClick: true, focusAfterOpen: false })
       .setLngLat(c.flag.at).setDOMContent(content(c.flag)).addTo(map);
-    p.getElement()?.querySelector('.maplibregl-popup-close-button')?.setAttribute('aria-label', t.flagClose);
+    const el = p.getElement();
+    const cross = el?.querySelector<HTMLButtonElement>('.maplibregl-popup-close-button');
+    cross?.setAttribute('aria-label', t.flagClose);
+    // Keyboard: focus goes into the box, and the cross or Escape brings it back to the chip.
+    cross?.addEventListener('click', () => c.el.focus());
+    el?.addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.stopPropagation(); close(true); } });
     p.on('close', () => { if (popup === p) close(); });
     popup = p;
+    el?.querySelector<HTMLButtonElement>('.btn')?.focus({ preventScroll: true });
   };
 
   // A chip that would touch an earlier one, the card, the map's own buttons or the map's edge moves just above or below its point; if both are taken too, it is
@@ -116,6 +125,7 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
       c.el.tabIndex = placed ? 0 : -1;
       if (placed) kept.push(c.el.getBoundingClientRect());
     }
+    onUpdate();
   };
 
   const clear = () => {
@@ -124,14 +134,16 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
     chips = [];
   };
 
+  // The card opening or the window turning moves no camera, so a resize and every show() re-place the chips too.
   map.on('moveend', update);
   map.on('zoomend', update);
+  map.on('resize', update);
 
   return {
     show(placeId) {
       const flags = flagsFor(placeId);
       const key = flags.map((f) => f.id).join('|');
-      if (key === shownKey) return;
+      if (key === shownKey) { update(); return; }
       shownKey = key;
       clear();
       for (const flag of flags) {
@@ -152,6 +164,7 @@ export function addFlags(map: MapLibreMap, fly: (at: [number, number]) => void):
     remove() {
       map.off('moveend', update);
       map.off('zoomend', update);
+      map.off('resize', update);
       clear();
     },
   };

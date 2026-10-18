@@ -38,7 +38,8 @@ describe('the key-place flags (content/flags.json)', () => {
 
   it('back every line with an official source that content/sources.json knows', () => {
     for (const f of flagSets.flatMap((s) => s.flags)) {
-      expect(f.line.length, f.id).toBeGreaterThan(0);
+      expect(f.lines.length, f.id).toBeGreaterThan(0);
+      for (const line of f.lines) expect(line, f.id).toMatch(/^[^.]+\.$/); // one sentence, one idea
       expect(f.cite.length, f.id).toBeGreaterThan(0);
       for (const c of f.cite) {
         const m = /^([a-z0-9-]+)(?::p\d+)?$/.exec(c);

@@ -20,6 +20,11 @@ test('Rioja shows its four key places; a tap opens the line, its source and Fly 
   await expect(pop).toContainText("Rioja's westernmost town.");
   await expect(pop.locator('.src a')).toHaveText('Pliego · pp. 15, 19');
   await expect(page.locator('.card h1')).toHaveText('Rioja'); // the tap did not select the place under the chip
+  await expect(pop.getByRole('button', { name: 'Fly to Haro' })).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(pop).toHaveCount(0);
+  await expect(haro).toBeFocused();
+  await haro.press('Enter');
 
   await pop.getByRole('button', { name: 'Fly to Haro' }).click();
   await expect(pop).toHaveCount(0);

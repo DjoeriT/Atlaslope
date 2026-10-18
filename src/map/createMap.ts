@@ -198,7 +198,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const from = map.getCenter();
     map.flyTo({ center: at, zoom: 12, easing: cameraEase,
       duration: reduceMotion() ? 0 : flightMs({ lng: from.lng, lat: from.lat, zoom: map.getZoom() }, { lng: at[0], lat: at[1], zoom: 12 }, motionScale()) });
-  });
+  }, () => labels?.refresh());
   /** Room beside the floating card (a bottom sheet on a narrow screen), as in the approved mock. */
   const padding = () => {
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);

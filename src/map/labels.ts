@@ -14,6 +14,8 @@ export interface LabelSpec {
 
 export interface Labels {
   setVisible(on: boolean): void;
+  /** Re-run the collision checks, after something else on the map (a key-place chip) moved. */
+  refresh(): void;
   remove(): void;
 }
 
@@ -101,6 +103,7 @@ export function addLabels(map: MapLibreMap, specs: LabelSpec[]): Labels {
 
   return {
     setVisible(on) { shown = on; update(); yieldTowns(); },
+    refresh() { update(); soon(); },
     remove() {
       map.off('zoom', update); map.off('moveend', update); map.off('pitchend', update); map.off('rotateend', update); map.off('moveend', soon); map.off('sourcedata', onData);
       clearTimeout(timer);
