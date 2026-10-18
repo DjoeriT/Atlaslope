@@ -11,6 +11,7 @@ import { Link, type Go } from './Link';
 import { SourceLine } from './PlaceFacts';
 import { Cover } from './Cover';
 import { Glance } from './Glance';
+import { Img } from './Img';
 
 
 const t = strings.cards;
@@ -60,7 +61,7 @@ function TileRow({ to, go, name, detail, photoIds, places, due, sub }: TileRowPr
   return (
     <li className={sub ? 'sub' : undefined} {...hoverProps(places)}>
       <Link to={to} go={go}>
-        {photo ? <img src={photo.src} alt="" loading="lazy" /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}
+        {photo ? <Img key={photo.src} photo={photo} sizes="3.6rem" alt="" lazy /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}
         <span className="txt"><b>{name}</b><small>{detail}</small></span>
         {due > 0 && <span className="due">{t.dueCount(due)}</span>}
         <span className="go" aria-hidden="true">›</span>
@@ -142,7 +143,7 @@ function ZoneRow({ zone, go, color }: { zone: Place; go: Go; color: string }) {
   return (
     <li {...hoverProps(() => [zone.id])}>
       <Link to={{ kind: 'place', id: zone.id }} go={go}>
-        {photo ? <img src={photo.src} alt="" loading="lazy" /> : <i style={{ background: color }} aria-hidden="true" />}
+        {photo ? <Img key={photo.src} photo={photo} sizes="3.4rem" alt="" lazy /> : <i style={{ background: color }} aria-hidden="true" />}
         <span><b>{zone.name}</b><small>{t.zoneLevel}</small></span>
         <span className="go" aria-hidden="true">›</span>
       </Link>

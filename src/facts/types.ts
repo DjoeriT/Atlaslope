@@ -86,3 +86,6 @@ export interface Photo {
   /** The Wikimedia Commons page. */
   page: string;
 }
+
+/** A photo as the app shows it: the file, its smaller copies for `srcset`, and a tiny WebP (base64) to blur while it loads. */
+export type ShownPhoto = Photo & { src: string; srcSet?: string; blur?: string };
