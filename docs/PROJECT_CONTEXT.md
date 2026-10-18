@@ -142,6 +142,9 @@ archived context file; the ones that changed:
   three screens at least between two about one place, known needs two rights a day apart, no level question. Handoff
   `docs/handoffs/2026-10-17-quiz-spacing.md`.
 - 2026-10-17 [O]: the name is shown as "AtlaSlope" wherever people read it (wordmark, tab titles, interface text, Home Screen name); repo, domain, URLs, storage keys and file names stay lowercase "atlaslope".
+- 2026-10-17 [O]: efficiency (owner cards 17:29-17:30Z, plan `Review/efficiency-plan-2026-10-17.md`): one slice per thread and a handoff
+  at about 150K of context, noisy work to Sonnet helpers; publish reuses the green `main` checks for its commit; records go in the slice PR,
+  no records PR after a release; `CLAUDE.md` cut from 10.9 KB to 5 KB with the detail in `docs/AGENT_ROLES.md`; threads stay on Opus 5.5.
 
 ## 9. Where things are written down
 Rules `CLAUDE.md`; this file; scope and decisions in `docs/`; handoffs `docs/handoffs/`; brief, reviews, mocks, cards and digests in

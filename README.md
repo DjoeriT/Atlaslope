@@ -4,18 +4,32 @@ The wine study atlas for WSET and Wine Scholar students, and for passionate wine
 Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (atlaslope.com from release 3). Free, no accounts, progress stored in the browser.
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
-**Restart, 16 Oct 2026.** The old app code was removed; the new app is built release by release from `docs/scope.md` and
-`Review/builder-brief.md`. Until release 3 the site build is a placeholder page.
+## Start here (state on 17 Oct 2026)
+- Live: the latest `release-*` tag on https://atlaslope.com (release 17 on 18 Oct 2026). Planned numbers and what is in flight:
+  `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
+- Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
+- Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
+- Keep this section current in the slice PR that changes it.
 
 ## Layout
-    src/                 the app; today only src/dops.ts (applies data/dop-overrides.json to the DO layer)
-    data/                processed map layers and facts; SOURCES.md lists origin, date, licence and processing of every file
-    tests/unit/          Vitest unit tests (today: the data tests)
-    tests/ui/            Playwright UI tests (run against the built site with fixtures, no network)
-    docs/                scope.md, architecture-decisions.md, PROJECT_CONTEXT.md (state), AGENT_ROLES.md (agents), handoffs/
-    Review/              builder brief, release digests, task cards, reviews, approved mocks (Review/mock-<topic>/); Review/archive/ for finished ones
+    src/app/             shell: App, top bar, first run, theme
+    src/map/             MapLibre map: imagery, boundaries, climate colours, hover, focus, map menu
+    src/cards/           floating cards on the map (place, region, Spain), search box
+    src/pages/           place page and region page (photo mosaic, charts)
+    src/quiz/            quiz engine: questions, rounds, memory, progress store (no UI)
+    src/quiz-ui/         quiz screens: doors, round player, round end, Today card, progress file
+    src/tree/            the place tree (country to zone) and search
+    src/facts/           fact sheets and guides: types, formatting, checks
+    src/debug.ts         debug-only query flags (?fixture=, ?fresh=1), stripped from production builds
+    content/             fact sheets (content/facts), guides (content/guides), sources.json
+    data/                map layers and facts; SOURCES.md lists origin, date, licence and processing of every file
+    tests/unit/          Vitest unit tests
+    tests/ui/            Playwright UI tests against the built site with fixtures (tests/fixtures), no network
+    docs/                scope, architecture decisions, PROJECT_CONTEXT (state and history), AGENT_ROLES, handoffs/
+    Review/              builder brief, digests, task cards, reviews, approved mocks (Review/mock-<topic>/), tester notes; Review/archive/
     Tools/check.sh       every check, one command
-    .github/workflows/   ci.yml (checks on pull requests and main), publish.yml (tags release-N and deploys), deploy.yml (fallback: deploy on a hand-pushed tag)
+    .github/workflows/   ci.yml (pull requests and main), publish.yml (checks unless main already passed, deploys, tags release-N),
+                         live-map-check.yml, data-*.yml (fetches the container cannot reach), deploy.yml (fallback)
     .claude/             agents, release skill, hooks, settings
 
 ## Commands
@@ -32,10 +46,11 @@ out of the repo (`data/raw/` is git-ignored); only processed, simplified files a
 
 ## Releasing (GitHub Pages)
 Releases start only with the owner's words "publish release N" (`.claude/skills/release/SKILL.md`).
-1. The slice's pull requests are merged and CI is green on `main`.
+1. The slice's pull request, with its tester note, handoff and context update, is merged and CI is green on `main`.
 2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
-   It checks the inputs (the commit is on `main`, `release-N` is new and next in line), runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
-3. Check the live site once. Update `docs/PROJECT_CONTEXT.md` section 5 through a pull request.
+   It checks the inputs (the commit is on `main`, `release-N` is new and next in line), reuses the green `main` run for that exact commit
+   or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
+3. Check the live site once. No records PR: the "live on release-N" line goes in the next slice's PR.
 
 ## Licence
 Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
