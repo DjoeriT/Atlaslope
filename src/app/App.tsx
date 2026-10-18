@@ -54,6 +54,7 @@ export function App() {
     withMotion(() => {
       setQuiz(null);
       setStay(null);
+      setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
     }, quizRef.current ? 'card' : moveOf(cur, to));
   }, [tree]);
@@ -114,6 +115,8 @@ export function App() {
   const pickCount = useRef(0);
   const pickOnMap = useCallback((id: string) => setMapPick({ id, n: ++pickCount.current }), []);
   useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
+  // A tap from before the quiz went out of sight is not replayed when it comes back (review of PR #72).
+  useEffect(() => { if (!quiz) setMapPick(null); }, [quiz]);
   const clock = useMemo(() => makeClock(debugNow()), []);
   const progress = useQuiz(tree, clock);
   const dueSet = useMemo(() => {

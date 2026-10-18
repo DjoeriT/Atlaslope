@@ -27,6 +27,13 @@ test('Back to the quiz shows only on the card opened from the quiz, not once the
   await expect(page.locator('.card:visible h1:not(.intro-h)')).not.toHaveText(name);
   await expect(page.getByRole('button', { name: /Back to the quiz/ })).toHaveCount(0);
 
+  // Opening the same place again from search is exploring too: no quiz prompt on it.
+  const box = page.getByRole('searchbox', { name: /Search/ });
+  await box.fill(name.split(' ')[0]);
+  await page.getByRole('list', { name: 'Search results' }).getByRole('link', { name: new RegExp(`^${name.split(' ')[0]}`) }).first().click();
+  await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
+  await expect(page.getByRole('button', { name: /Back to the quiz/ })).toHaveCount(0);
+
   // The round waited: the Quiz tab comes back to the same intro.
   await page.getByRole('button', { name: 'Quiz' }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
@@ -35,6 +42,7 @@ test('Back to the quiz shows only on the card opened from the quiz, not once the
 test('the Explore tab mid-round leaves the quiz behind, and the Quiz tab picks the round up again', async ({ page }) => {
   const name = await startRound(page);
   await page.getByRole('button', { name: 'Got it' }).click();
+  await expect(page.locator('h1.intro-h')).toBeVisible();
   await expect(page.locator('h1.intro-h')).not.toHaveText(name);
   const second = await page.locator('h1.intro-h').textContent();
 

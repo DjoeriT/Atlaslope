@@ -3,7 +3,7 @@
 **Done.** Issue #71. "Back to the quiz" shows only on the place card opened from the quiz (`backTo` in `src/app/App.tsx`).
 The quiz stays mounted out of sight once opened, so leaving it by the Explore tab, browser Back or a place card pauses the round,
 and the Quiz tab picks it up. The Today card's start button resumes a paused round instead of replacing it (`src/quiz-ui/QuizScreen.tsx`).
-Escape in Explore ignores a hidden End round prompt. New UI tests: `tests/ui/quiz-leave.spec.ts`; `quiz-map.spec.ts` now looks at the visible card.
+Escape in Explore ignores a hidden End round prompt. ReviewBot (`Review/explore-leaves-quiz-code-review.md`): any Explore move now ends the button, and a map tap from before is not replayed on resume. New UI tests: `tests/ui/quiz-leave.spec.ts`; `quiz-map.spec.ts` now looks at the visible card.
 
 **Decided.** Leaving the quiz pauses rather than discards the round (coordinator default, reversible).
 
