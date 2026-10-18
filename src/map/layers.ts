@@ -58,8 +58,9 @@ export function basemapPaint(sat: boolean) {
       : ['interpolate', ['linear'], ['zoom'],
         8, ['case', sel, 0.65, hover, 0.85, dim, 0.06, 0.5],
         // Close in on the plain atlas the road map (src/map/osmBase.ts) shows through, as the photo does.
-        11, ['case', sel, 0.4, hover, 0.5, dim, 0.04, 0.22],
-        13, ['case', sel, 0.22, hover, 0.3, dim, 0.03, 0.1]],
+        // The selected place (and a quiz answer) stays clearly black over the roads.
+        11, ['case', sel, 0.55, hover, 0.5, dim, 0.04, 0.22],
+        13, ['case', sel, 0.45, hover, 0.3, dim, 0.03, 0.1]],
     // As the fills thin close in over the photo, the outline gets stronger so the place still reads.
     dosLineOpacity: sat
       ? ['interpolate', ['linear'], ['zoom'], 6, ['case', hover, 1, dim, 0.2, 0.7], 9, ['case', hover, 1, dim, 0.25, 0.95]]

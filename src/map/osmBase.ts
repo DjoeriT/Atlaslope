@@ -31,12 +31,13 @@ const roadWidth = (minor: number, major: number) => [
   16, ['match', ['get', 'class'], ['motorway', 'trunk'], major * 3.5, ['primary', 'secondary'], minor * 3.5, minor * 2.5],
 ];
 
-/** Which roads show at a zoom: the main network from a region view, local roads only close in. */
+/** Which roads show at a zoom: the main network from a region view, local roads only close in. A filter sees the tile's whole
+ * zoom, not the camera's, so the steps are whole zooms. */
 const ROADS = ['any',
   ['in', ['get', 'class'], ['literal', ['motorway', 'trunk']]],
   ['all', ['>=', ['zoom'], 9], ['==', ['get', 'class'], 'primary']],
   ['all', ['>=', ['zoom'], 10], ['==', ['get', 'class'], 'secondary']],
-  ['all', ['>=', ['zoom'], 11.5], ['==', ['get', 'class'], 'tertiary']],
+  ['all', ['>=', ['zoom'], 12], ['==', ['get', 'class'], 'tertiary']],
   ['all', ['>=', ['zoom'], 13], ['in', ['get', 'class'], ['literal', ['minor', 'service']]]],
 ];
 
