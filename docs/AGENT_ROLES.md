@@ -57,7 +57,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Read-only: works in a `git archive` copy in the session scratchpad or `/tmp`; writes only the one report file the card names.
 - Reproduces numbers before confirming them; says for each claim "confirmed", "refuted" or "not reproduced"; marks ran, read or inferred.
 - Does not grade with the thing under test.
-- Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (`Tools/check.sh ui` first, then
+- Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (CI's green run, or only the specs it names, never the full suite locally; then
   screenshots only for what tests cannot see: layout, large text, satellite); **security** (secrets, what ships in the built site, third-party scripts);
   **design** (a mock of a new screen or a redesign, before the owner sees it: the UX/UI check with fresh eyes; each finding names the
   checklist point, the screen state and a proposed fix; never edits the mock or decides wording; LeadBot fixes the findings.

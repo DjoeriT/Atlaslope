@@ -16,8 +16,8 @@ How to talk to the owner during a release:
 1. The slice's pull requests are merged and `main` is green in CI. If not, tell the owner why and stop.
 2. N = the number of the latest `release-*` tag + 1 (1 if none). Note the commit: the head of `main`.
 3. Changes: `git log --oneline release-(N-1)..<commit>`. Summarise the user-visible changes in plain words; name what does not change the site.
-4. Checks: reuse a full `Tools/check.sh ui` run (local or the CI run on that commit) if its code paths match the commit (only docs,
-   mocks or `Review/` differ; name that commit). Otherwise run it with the log saved. Any failure: show it and stop.
+4. Checks: CI's green run on the slice PR is the check; never run the full UI suite locally (owner card, 18 Oct 2026). The publish run
+   reuses that PR run (or main's) for the merge commit, else runs the checks itself. Any failure: show it and stop.
 5. Records go in the slice's own pull request, before publish (owner card, 17 Oct 2026: no records PR after a release): the tester note
    `Review/release-N-what-to-test.md` (general part copied from the last one, a release-specific part in tester language, then "For you":
    commits, checks with the PR head hash, which the publish run then reuses on the merge commit, what was not verified), the handoff (no "live on release-N" line anywhere: the tag is the record, owner card 18 Oct 2026), and `Review/release-(N-1)-what-to-test.md` moved to `Review/archive/`. The release commit is the merge of that PR.
@@ -30,7 +30,7 @@ How to talk to the owner during a release:
 
 ## B. After "publish release N" (or a merged small slice)
 1. Start the `publish` workflow (`.github/workflows/publish.yml`) through the GitHub tools with inputs `release` = N and
-   `commit` = the full hash from part A. It reuses the green checks run on `main` for that commit (or runs the checks itself), deploys to
+   `commit` = the full hash from part A. It reuses the PR's green run when the merge commit has the PR head's files, else the green run on `main` for that commit, else runs the checks itself, deploys to
    GitHub Pages and, only once the deploy succeeded, creates the `release-N` tag. A failed run leaves no tag, so the same N can be started again after the fix.
 2. If the platform refuses to start it, give the owner the one tap: GitHub app › Atlaslope › Actions › Publish › Run workflow, with N and the
    hash. Then wait for him.

@@ -6,7 +6,7 @@
 - Publish (`publish.yml`): reuses the PR's green run when the merge commit has exactly the PR head's files (true for the last 6 merges), so it no longer waits for main's run; falls back to main's run, then to running the checks.
 - 4 Playwright workers measured: 3m51-57s vs 4m27s with one flaky failure, fully-parallel 6 failures. Kept the default 2.
 - `npm run shots` (`Tools/shots.mjs`): 15 standard screenshots in about 38 s.
-- Flaky Study tests made deterministic (see the PR).
+- Flaky Study tests: each "Got it" now waits for its intro and each answer for its question number (a real race). Still flaky under heavy load (11 of 130 at repeat-each=10 with 4 workers): issue #83, its own slice.
 - CLAUDE.md rewritten from the review (`/mnt/project-files/atlaslope/plans/2026-10-18-claude-md-review.md`): one Pace section, definition of done, flaky-test rule, parallel threads, token aim, no hand-kept live line. README, AGENT_ROLES and the release skill agree; release rollback added; Playwright pinned exactly.
 
 ## Decided (owner cards, 14:47-14:57Z)
