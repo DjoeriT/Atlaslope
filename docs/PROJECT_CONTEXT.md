@@ -105,6 +105,9 @@ session on his Mac also sees his thread messages and started a second publish ru
 - Polish pack (18 Oct, owner card 06:18Z "Both, polish first"): photo sizes with blur-up, Newsreader optical sizes and drop cap,
   scroll-linked page motion. Live as release 18. Handoff `docs/handoffs/2026-10-18-polish-pack.md`, tester note `Review/release-18-what-to-test.md`.
   Next: the story-guide mock (new thread).
+- Story guide mock (18 Oct, follows the polish pack): the Rioja guide where the map follows the text, `Review/mock-story-guide-v1/`.
+  Mock only. Owner card 07:20Z: it opens from a "Read with the map" button in the Terroir section, which keeps its text.
+  Design check `Review/story-guide-mock-design-check.md`, findings fixed. Handoff `docs/handoffs/2026-10-18-story-guide-mock.md`.
 - Explore leaves the quiz behind (owner report 18 Oct 06:03Z, #71, PR #72): "Back to the quiz" only on the card the quiz opened, leaving
   the quiz pauses the round, the Today card shows once a day (owner card "Once a day"). Takes release 19 on "publish release 19".
   Handoff `docs/handoffs/2026-10-18-explore-leaves-quiz.md`, tester note `Review/release-19-what-to-test.md`.
