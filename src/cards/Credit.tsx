@@ -15,3 +15,14 @@ export function Credit({ photo }: { photo: Photo }) {
     </>
   );
 }
+
+/** The credit on a photo (owner point 4, 18 Oct 2026: "way smaller", "of all images"): a small © tag in the corner that opens to the full
+ * credit on hover, keyboard focus or a tap, so the photo stays clean and the author and licence stay one step away. */
+export function CreditTag({ photo }: { photo: Photo }) {
+  return (
+    <span className="ctag">
+      <button type="button" className="ctag-i" aria-label={`Photo: ${photo.artist}, ${photo.licence}`} title={`Photo: ${photo.artist}, ${photo.licence}`}>©</button>
+      <span className="ctag-full"><Credit photo={photo} /></span>
+    </span>
+  );
+}

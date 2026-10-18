@@ -44,7 +44,7 @@ test('a tile opens its place and the credits line is there', async ({ page }) =>
   const rpage = page.locator('.rpage');
   await expect(rpage.locator('.rcredits')).toContainText('Photos:');
   expect(await rpage.locator('.rcredits a').count()).toBeGreaterThan(0);
-  await expect(rpage.locator('.rcover .pill a').first()).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//); // the small credit tag (owner, 18 Oct 2026)
+  await expect(rpage.locator('.rcover .ctag-full a').first()).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//); // the small credit tag (owner, 18 Oct 2026)
   await rpage.getByRole('link', { name: /Somontano DO/ }).click();
   await expect(page).toHaveURL(/#place=somontano&page/);
   await expect(page.locator('.pg h1')).toHaveText('Somontano');

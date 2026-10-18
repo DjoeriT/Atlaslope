@@ -42,13 +42,17 @@ an addition and the owner decides.
 - Devices: browsers from the last two years, iPadOS 17+, Safari and Chrome (decision #38). Not yet verified on real Safari, iPad or phones.
 
 ## Photos
-- A screen with a place or region on it leads with a real photo of that place: a cover on the card, a five-photo mosaic on the place page,
-  a cover on the region page, and tiles for the places.
+- A screen with a place or region on it leads with a real photo of that place: a small mosaic on the card (a hero and up to two beside it),
+  the same hero-plus-two header on the guide, a cover on the region page, and tiles for the places (owner point 3, 18 Oct 2026).
+- No carousel arrows on a card or a guide. Arrows, a "2 / 5" counter and the full credit live only in the full-screen viewer, which any
+  photo or "All N photos" opens (benchmark: Airbnb, Booking and Michelin show a grid and a "show all" button,
+  /mnt/project-files/atlaslope/reviews/2026-10-18-guide-page-benchmark.md).
 - Wine places show vines, landscape or villages. No trains, roads or unrelated buildings as the first photo (Calatayud's first photo is a train).
 - Crops fill their frame (`object-fit: cover`) at a fixed ratio: cover 16:11, tile about 1:1, zone 4:3. No letterboxing and no washed-out skies.
-- Every photo shows its credit and licence in readable text: a "Photos:" line under a mosaic or grid, and on a single cover a small
-  credit tag in its bottom-right corner (owner, 18 Oct 2026: "way smaller"): artist and licence only, 0.7 rem white on 55% black,
-  tucked into the corner, small corners. That still clears 4.5:1 over a white sky (`tests/unit/contrast.test.ts`). Never bare text on the picture.
+- Every photo keeps its credit and licence one step away at most: a 0.7 rem "Photos:" line under a mosaic or grid, and on any photo a
+  1.1 rem © tag in its bottom-right corner that opens to "Name, CC BY-SA 4.0, resized" (licence linked) on hover, focus or a tap
+  (owner point 4, 18 Oct 2026: "way smaller", "of all images"; `CreditTag` in `src/cards/Credit.tsx`, one component everywhere). The
+  opened tag is 0.7 rem white on 70% black and clears 4.5:1 over a white sky (`tests/unit/contrast.test.ts`). Never bare text on the picture.
 - Alt text describes what is in the picture, not the file name.
 
 ## Content
@@ -59,6 +63,14 @@ an addition and the owner decides.
   tag it goes by (owner card, 18 Oct 2026, "Go, short citations": about 20 full titles had turned the guide into a footnote apparatus).
   The short names: Pliego, EU single document, Wikipedia, MAPA list, Köppen-Geiger, Measured (`shortTitle` in `src/facts/format.ts`).
   Cards on the map keep the full line, since they have no Sources section.
+- A measured number never stands alone (owner point 10, 18 Oct 2026). Every measured chart shows the same measure for a reference next to
+  it: all of Spain on every guide, the study region on a place's guide when it is more than that place, and the appellation on a zone's
+  guide. The reference is measured from the same source with the same method (same boundary rule, same sampling, same year), and the chart
+  says so; when no like-for-like figure exists, the chart shows none rather than a figure from another source. Comparison rows sit on
+  one shared scale, in quieter tints than the place's own row, in the place's own legend.
+- Course labels under a guide's title (owner point 12, 18 Oct 2026): the legal level as a solid badge (DO, DOCa, VP, VC, Zone; the full
+  name on hover), "Wine Scholar · <study region>", and "WSET Level N" only where WSET's published specification names the place
+  (`content/curriculum.json`; names only, never their text).
 - No text cut off mid-sentence. If it does not fit, show a shorter sourced fact instead.
 - One way out and one main action per screen. On the full page these are Atlas in the site bar (back to the place on the map) and
   "Show [place] on the map". No two controls that mean nearly the same.

@@ -7,7 +7,7 @@ import type { Place, Region, Tree } from '../tree';
 import '../styles/region.css';
 import { sentences } from './sentence';
 import { Img } from '../cards/Img';
-import { Credit } from '../cards/Credit';
+import { Credit, CreditTag } from '../cards/Credit';
 
 const t = strings.regionPage;
 type Shot = ShownPhoto;
@@ -60,7 +60,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
           </nav>
           <h1 ref={heading} tabIndex={-1}>{region.name}</h1>
         </div>
-        {cover && <span className="pill">{credit(cover)}</span>}
+        {cover && <CreditTag photo={cover} />}
       </header>
       <div className="rintro">
         <p>{t.lede(places.length)}</p>

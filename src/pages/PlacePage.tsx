@@ -6,7 +6,7 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, sheetOf, tasteLines, type Cite } from '../facts';
+import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Cite } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
@@ -31,10 +31,9 @@ interface Props {
   onTest(set: string[]): void;
 }
 
-function Section({ id, title, kicker, children }: { id: string; title: string; kicker?: string; children: ReactNode }) {
+function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
     <section id={id} aria-labelledby={`${id}-h`}>
-      {kicker && <p className="kicker pg-kicker">{kicker}</p>}
       <h2 id={`${id}-h`} tabIndex={-1}>{title}</h2>
       {children}
     </section>
@@ -133,7 +132,18 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     setCurrent(id);
   };
 
-  const sub = [level, region ? t.subRegion(region.name) : '', zones.length > 0 ? t.subZones(zones.length) : ''].filter(Boolean).join(' · ');
+  const parent = isZone && place.parent ? tree.getPlace(place.parent) : undefined;
+  const wsetLevels = wsetLevelsOf(place.id);
+  const meta = [zones.length > 0 ? t.subZones(zones.length) : '', guide ? t.readMinutes(guide.minutes) : ''].filter(Boolean).join(' · ');
+  // The comparison rows for the measured charts (owner point 10, 18 Oct 2026): a zone's appellation, the study region when it is more than
+  // this one place, then Spain.
+  const regionM = region && !isZone ? regionMeasuresOf(region.id) : undefined;
+  const parentM = parent ? measuresOf(parent.id) : undefined;
+  const compare = [
+    ...(parent && parentM ? [{ label: parent.name, m: parentM }] : []),
+    ...(regionM && measures && JSON.stringify(regionM) !== JSON.stringify(measures) ? [{ label: t.regionRow(region!.name), m: regionM }] : []),
+    { label: t.allSpain, m: spainMeasures() },
+  ];
   const altitudeCell = glanceCells(sheet, measures).find((c) => c.kind === 'altitude');
   // Each glance row names the section that holds its source (release 9 review: a fact keeps a visible way to its source).
   const glance: Array<[string, string, string]> = [
@@ -161,10 +171,12 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
           ))}
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
-        <p className="pg-sub">
-          {sub}
-          {guide && <>{' · '}<a href={selectionToHash({ kind: 'place', id: place.id, page: true })} onClick={jump('terroir')}>{t.terroirLink(guide.minutes)}</a></>}
-        </p>
+        <ul className="pg-badges" aria-label={t.sections.where}>
+          <li className="lvl" title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</li>
+          {region && <li title={t.swsTitle(region.name)}><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link></li>}
+          {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
+          {meta && <li className="meta">{meta}</li>}
+        </ul>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
 
         <nav className="pg-jump" aria-label={t.jumpLabel}>
@@ -188,8 +200,8 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
             )}
 
             {guide && (
-              <Section id="terroir" title={guide.title} kicker={t.terroirKicker(guide.minutes)}>
-                <p className="pg-read pg-lede">{guide.lede.text}</p>
+              <Section id="terroir" title={guide.title}>
+                <p className="pg-read">{guide.lede.text}</p>
                 {src(guide.lede.cite)}
                 {guide.chapters.map((ch) => {
                   const own = ch.fly ?? [];
@@ -284,8 +296,9 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                   {koppen.length > 0 && (
                     <div>
                       <h3 className="pg-h3">{t.climateMeasured}</h3>
-                      <ClimateBar shares={koppen} />
+                      <ClimateBar name={place.name} shares={koppen} compare={compare.map((c) => ({ label: c.label, shares: c.m.koppen }))} />
                       {src(['koppen'])}
+                      <p className="pg-note">{t.compareNote}</p>
                     </div>
                   )}
                   {soil && (
@@ -298,7 +311,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                   {(writtenAltitude || measures) && (
                     <div>
                       <h3 className="pg-h3">{t.altitude}</h3>
-                      {measures && <AltitudeRange altitude={measures.altitude} />}
+                      {measures && <AltitudeRange name={place.name} altitude={measures.altitude} compare={compare.map((c) => ({ label: c.label, altitude: c.m.altitude }))} />}
                       {writtenAltitude && <p>{writtenAltitude}</p>}
                       {measures && <p>{altitudeText(measures.altitude)}</p>}
                       {src([...(writtenAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])])}

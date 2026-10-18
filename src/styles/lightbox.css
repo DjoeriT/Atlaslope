@@ -1,0 +1,19 @@
+/* All photos full screen (owner point 3, 18 Oct 2026): the one view with arrows. Black, like a photo viewer, whatever the page. */
+.lightbox{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0b0b0b;color:#f4efe4}
+.lightbox::backdrop{background:#0b0b0b}
+.lightbox figure{margin:0;height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto;padding:3.5rem 4.5rem 1rem}
+.lightbox img{width:100%;height:100%;object-fit:contain;display:block}
+.lightbox figcaption{display:flex;gap:1rem;align-items:baseline;padding:.8rem 0 0;font-size:.8rem;color:#bdb6a8}
+.lightbox figcaption .count{color:#f4efe4;font-variant-numeric:tabular-nums}
+.lightbox figcaption .alt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lightbox figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.lightbox .round{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:0}
+.lightbox .round:hover,.lightbox .round:focus-visible{background:rgba(255,255,255,.22)}
+.lightbox .nav{top:calc(50% - 1.375rem)}
+.lightbox .prev{left:1rem}.lightbox .next{right:1rem}
+.lightbox .close{top:.75rem;right:1rem}
+@media (max-width:47.5em){
+  .lightbox figure{padding:3.5rem 0 1rem}
+  .lightbox figcaption{padding:.8rem 1rem 0}
+  .lightbox .nav{top:auto;bottom:3.5rem}
+}
