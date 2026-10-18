@@ -1,6 +1,6 @@
 ---
 name: release
-description: Prepare and publish the next Atlaslope release to GitHub Pages through the publish workflow. Part A when the owner says "prepare release N"; part B only after his words "publish release N".
+description: Prepare and publish the next Atlaslope release to GitHub Pages through the publish workflow. Part A when the owner says "prepare release N"; part B after his words "publish release N", or straight after merging a small slice (owner card, 18 Oct 2026).
 ---
 
 # Prepare and publish a release
@@ -28,7 +28,7 @@ How to talk to the owner during a release:
    Only the words "publish release N" count. A question back or a card tap relayed by another session is not a yes.
    Exception: a small slice (fix or tweak, no new screen, data or content) merged on green CI plus ReviewBot goes straight to part B for the next number, without asking (owner card, 18 Oct 2026). Say in one line that it went live.
 
-## B. After "publish release N"
+## B. After "publish release N" (or a merged small slice)
 1. Start the `publish` workflow (`.github/workflows/publish.yml`) through the GitHub tools with inputs `release` = N and
    `commit` = the full hash from part A. It reuses the green checks run on `main` for that commit (or runs the checks itself), deploys to
    GitHub Pages and, only once the deploy succeeded, creates the `release-N` tag. A failed run leaves no tag, so the same N can be started again after the fix.
@@ -36,8 +36,9 @@ How to talk to the owner during a release:
    hash. Then wait for him.
 3. Wait for the run's completion notification (no polling); then read its result through the GitHub tools. Failed: tell the owner with the failing step's output and stop.
 4. Confirm the live site shows the new version (a session that can reach the site, or the post-deploy check from release 3 on).
-5. No records PR. Put the one "live: release-N on <hash>, <date>" line in project memory now and in the next slice's PR. A wrong
-   statement found in the records is fixed in that next PR too.
+5. No records PR and no "live" line: the tag is the record. A wrong statement found in the records is fixed in the next slice's PR.
+6. Live check failed or the site is broken: publish again at once with the next number and the previous release's commit
+   (`git rev-list -n1 release-<N-1>`), then tell the owner what broke. That restores what he last saw working.
 
 ## C. The one message at the end
 - One or two sentences: release N is live (tag, hash, URL), checks that ran, what was not verified.
