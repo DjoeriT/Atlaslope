@@ -56,7 +56,7 @@ test('back and forward move between the card and the page', async ({ page }) => 
 
 test('a link to the page opens it directly, and "Show on the map" goes to the card', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await page.getByRole('link', { name: 'Show Rioja on the map' }).click();
+  await page.getByRole('link', { name: 'Fly to Rioja' }).click();
   await expect(page).toHaveURL(/#place=rioja(&view=.*)?$/);
   await expect(page.locator('.card h1')).toHaveText('Rioja');
 });
