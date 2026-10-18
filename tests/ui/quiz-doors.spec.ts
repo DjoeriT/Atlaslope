@@ -25,7 +25,7 @@ test('the Quiz screen has two doors with the due and new counts; nothing due off
   await open(page, '#quiz', SEED);
   await expect(page.locator('.card h1')).toHaveText('Study or review');
   await expect(page.locator('.door').first().locator('.big')).toHaveText('3 due and 5 new today');
-  await expect(page.locator('.door').first().locator('.sub')).toContainText('New today:');
+  await expect(page.locator('.door').first().locator('.sub')).toContainText('Up next:');
   await expect(page.getByRole('button', { name: /^Start today's round · \d+ questions$/ })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Practise any mix' })).toBeVisible();
 });
@@ -34,7 +34,7 @@ test('with nothing due the Study door offers five new places', async ({ page }) 
   await open(page, '#quiz');
   await expect(page.locator('.door').first()).toContainText('Nothing due today');
   await expect(page.getByRole('button', { name: 'Learn 5 new places' })).toBeVisible();
-  await expect(page.locator('.focusline')).toContainText('none, following the course');
+  await expect(page.locator('.focusline')).toContainText('Following the course order.');
 });
 
 test('focus: Save changes the new places, Clear then Undo brings the picks back, Close saves nothing', async ({ page }) => {
@@ -75,7 +75,7 @@ test('focus: Save changes the new places, Clear then Undo brings the picks back,
   // Clear and save: the course order carries on.
   await page.getByRole('button', { name: 'Clear focus' }).click();
   await page.getByRole('button', { name: 'Save: follow the course' }).click();
-  await expect(page.locator('.focusline')).toContainText('none, following the course');
+  await expect(page.locator('.focusline')).toContainText('Following the course order.');
   expect(await newToday()).toBe(before);
 });
 

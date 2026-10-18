@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { replay, studyPlan, type LogEntry } from '../../src/quiz';
 import { loadTree } from '../../src/tree';
-import { dueByRegion, focusNames, listOf, missedToday, nextDue, practiseTree, tickOf } from '../../src/quiz-ui/doors';
+import { dueByRegion, focusNames, listOf, missedToday, nextDue, practiseTree, sharedRegion, tickOf } from '../../src/quiz-ui/doors';
 
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
 const core = tree.places.filter((p) => p.quiz === 'core');
@@ -45,6 +45,13 @@ describe('names and lists', () => {
     expect(listOf([])).toBe('');
     expect(listOf(['Toro'])).toBe('Toro');
     expect(listOf(['Toro', 'Rueda', 'Rioja'])).toBe('Toro, Rueda and Rioja');
+  });
+  it('names the study region new places share, and nothing when they come from more than one', () => {
+    const [r1, r2] = tree.regionsOf(tree.countries[0].id);
+    const [p1, p2] = tree.placesInRegion(r1.id);
+    expect(sharedRegion(tree, [p1.id, p2.id])).toBe(r1.name);
+    expect(sharedRegion(tree, [p1.id, tree.placesInRegion(r2.id)[0].id])).toBeNull();
+    expect(sharedRegion(tree, [])).toBeNull();
   });
   it('turns focus ids into region and place names', () => {
     const region = tree.regionsOf(tree.countries[0].id)[0];

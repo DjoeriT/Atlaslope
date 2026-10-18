@@ -19,7 +19,6 @@ img{display:block;max-width:100%}
 .wrap{max-width:calc(var(--max) + 2 * var(--gut));margin:0 auto;padding-left:max(var(--gut),env(safe-area-inset-left,0px));padding-right:max(var(--gut),env(safe-area-inset-right,0px))}
 h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
 p{text-wrap:pretty}
-.eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);font-weight:600;margin:0 0 .9rem}
 
 /* The bar: the same band as the atlas's (src/styles/site.css), as plain HTML. */
 .sitebar{position:sticky;top:0;z-index:10;height:calc(var(--bar) + 1px);background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
@@ -48,9 +47,9 @@ p{text-wrap:pretty}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);min-height:min(760px,calc(100vh - var(--bar)));border-bottom:1px solid var(--ink)}
 .hero .txt{display:flex;flex-direction:column;justify-content:center;padding-block:4rem;padding-right:3.5rem;padding-left:max(var(--gut),calc((100vw - var(--max))/2),env(safe-area-inset-left,0px))}
 .hero h1{font-size:clamp(3.2rem,6.4vw,6.2rem);line-height:1;font-weight:400} /* display: regular, not light (owner: 300 read too thin) */
-/* coverage line under the buttons (owner, 18 Oct 2026: "the pill somewhere around the Open the atlas button"); the tag is a pill by his ask, the one exception to "no pills" */
+/* coverage line under the buttons (owner, 18 Oct 2026: "the pill somewhere around the Open the atlas button"); the tag has the same small corners as every control since the premium feel review, 18 Oct 2026 */
 .hero .reach{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .5rem;margin:1rem 0 0;font-size:.85rem;line-height:1.4;color:var(--ink3)}
-.hero .reach span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink);background:var(--bg2);border:1px solid var(--foil);border-radius:999px;padding:.2rem .55rem}
+.hero .reach span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink);background:var(--bg2);border:1px solid var(--foil);border-radius:.3rem;padding:.2rem .55rem}
 .hero .sub{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:30rem;margin:1.75rem 0 2.25rem}
 /* wide windows: the text column ends a fixed width past the page edge, so the headline keeps its three lines and the atlas takes the rest */
 @media (min-width:1280px){.hero{grid-template-columns:minmax(0,calc(max(var(--gut),(100vw - var(--max))/2) + 640px)) minmax(0,1fr)}}
@@ -82,7 +81,7 @@ p{text-wrap:pretty}
 /* sources line: names set in type */
 .sources{padding-block:2.25rem;border-bottom:1px solid var(--line)}
 .sources .wrap{display:flex;gap:.5rem 2.5rem;align-items:center;justify-content:flex-start;flex-wrap:wrap}
-.sources p{margin:0;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.sources p{margin:0;font-size:.9rem;color:var(--ink3);font-weight:500}
 .sources ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 2rem;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--ink2)}
 
 /* three real screens */

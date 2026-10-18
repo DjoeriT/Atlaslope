@@ -13,7 +13,7 @@ import { strings } from '../strings';
 import type { View } from '../url';
 import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type PlaceRow } from './boundaries';
 import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
-import { addLabels, type Labels } from './labels';
+import { addLabels, mapName, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, reliefExaggeration, type MenuState } from './layers';
 import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
@@ -380,7 +380,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         if (!f || !box) continue;
         const el = document.createElement('div');
         el.className = `lbl do quiz-${cls}`;
-        el.textContent = String(f.properties.name);
+        el.textContent = mapName(String(f.properties.name));
         el.title = tag;
         el.setAttribute('aria-hidden', 'true');
         revealMarks.push(new maplibregl.Marker({ element: el }).setLngLat([(box[0] + box[2]) / 2, (box[1] + box[3]) / 2]).addTo(map));
