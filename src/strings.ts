@@ -37,6 +37,8 @@ export const strings = {
     modeNav: 'Site',
     explore: 'Atlas',
     quiz: 'Study',
+    guides: 'Guides',
+    about: 'About',
     home: 'AtlaSlope home',
     progress: 'Progress',
     comingSoon: 'Coming soon',
@@ -132,7 +134,6 @@ export const strings = {
     subLine: (level: string, region: string) => `${level} · ${region}`,
     previousPhoto: 'Previous photo',
     nextPhoto: (n: number, total: number) => `Next photo, ${n} of ${total}`,
-    photoCredit: (artist: string, licence: string) => `${artist}, ${licence}`,
     glance: {
       grapeAnd: (other: string) => `and ${other}`,
       grapeAndMore: (n: number) => `and ${n} more`,

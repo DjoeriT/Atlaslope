@@ -20,15 +20,15 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - A review thread fixes its small findings itself in one PR and asks him only about taste; no separate fix thread.
 - Two slices that touch separate files may run as parallel threads; one writer per file. The first to go green merges first; the other
   merges `main` in and lets CI rerun.
-- **Done** means: merged, published (small slices), live check green, handoff in `docs/handoffs/<date>-<topic>.md` (done, decided, open,
+- **Done** means: merged, ready-to-publish line sent (or published after his words) and live check green, handoff in `docs/handoffs/<date>-<topic>.md` (done, decided, open,
   where), memory updated, thread resolved. An open question keeps it open.
 - Hosts: try directly first (the network was opened 18 Oct); only a refused host goes through a GitHub Actions run or a session on his Mac.
 
 ## Working agreements (owner; every session and agent)
 - **Outward actions only on his say-so, each time:** publishing, deploying, paid or networked services, anything outsiders see.
   Standing exceptions inside work he said go to: push the thread's own `claude/...` branch, one PR per slice, merge on green CI plus
-  ReviewBot. A small slice then publishes itself as the next release and tells him in one line; a big slice publishes only on his words
-  "publish release N" (owner card, 18 Oct 2026). A refused push means stop and tell him; never push `main`.
+  ReviewBot. Then one line asks him to say "publish release N"; only those words in the thread start the `publish` workflow, also for
+  a rollback (18 Oct 2026: the cloud safety check refused a thread starting publish without his words; he chose to say the words over tapping or a permission rule). A refused push means stop and tell him; never push `main`.
   Never force-push, rewrite pushed history, push to someone else's branch, or move or delete a tag.
 - **Decisions** as tap-to-pick cards, batched up front, one recommended. Posting a card never ends the work: reversible work starts on the
   recommended option in the same turn; outward or hard-to-undo work waits (18 Oct: a review thread sat 32 minutes on a card).

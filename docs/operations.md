@@ -1,6 +1,6 @@
 # Operations: rollback, incidents, keys
 
-What to do when the live site breaks. Added 18 Oct 2026 (docs gap audit): small slices now publish themselves, and nothing said how to undo one.
+What to do when the live site breaks. Added 18 Oct 2026 (docs gap audit): releases happen often, and nothing said how to undo one.
 
 ## Rollback
 The site is whatever commit the latest `release-*` tag points at. Tags are never moved or deleted, so a rollback is a new release.
@@ -13,8 +13,10 @@ The site is whatever commit the latest `release-*` tag points at. Tags are never
    PR, green CI, merge. That ships with the next release as usual. Never publish `main` before this lands, or the bad change returns.
 3. Write it up as an incident (below).
 
-Who may roll back (owner card, 18 Oct 2026): the thread that published the release rolls back at once when the live check fails, and
-tells him in one line. Any other rollback only on his words "publish release N".
+Who may roll back: only on his words "publish release N", like any release (owner, 18 Oct 2026). When the live check fails, the thread
+tells him at once with the commit it would publish, so he can say the words.
+His card earlier that day picked "the thread rolls back, then tells you"; the cloud safety check refuses a publish without his
+words (PR #89), so that cannot run and this rule stands.
 
 If the `publish` workflow itself is broken: say so and stop. Don't deploy by hand or push a tag (a hand-pushed `release-*` tag starts
 the fallback `deploy.yml`).

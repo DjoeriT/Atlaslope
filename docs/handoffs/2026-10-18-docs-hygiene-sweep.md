@@ -14,7 +14,8 @@ Plan: `/mnt/project-files/atlaslope/plans/2026-10-18-docs-hygiene-plan.md`.
 ## Decided (owner cards, 18 Oct 15:30Z)
 - Privacy: internal note only; a public page just before friends get the link. Draft: `/mnt/project-files/atlaslope/mocks/privacy-page/`
   (ship as its own route `privacy/index.html`; the home footer and About belong to the top bar thread, PR #85, link target `privacy/`).
-- Rollback: the thread that published a release rolls back at once when the live check fails and tells him in one line.
+- Rollback: his card picked "the thread rolls back, then tells you", but the cloud safety check refuses a publish without his words
+  (PR #89), so a rollback, like any release, waits for "publish release N"; the thread tells him at once with the commit.
 - Sentry and PostHog: neither yet; revisit just before friends get the link.
 - Licence: photo credits fixed; his writing stays all rights reserved.
 - Checked [V]: no shipped text copies Wikipedia; four hosts see visitor IPs (Esri, IGN, OpenFreeMap, AWS Terrarium).
@@ -23,5 +24,4 @@ Plan: `/mnt/project-files/atlaslope/plans/2026-10-18-docs-hygiene-plan.md`.
 - Lint and format gate in CI (decision #38): no ESLint in the repo yet; adding it is its own slice (config, dependencies, fixing what it finds).
 - CSP meta tag with an allowlist of the four tile hosts: own slice after PR #85 (touches `index.html`, `atlas/index.html`); needs a live check
   on atlaslope.com because satellite only loads there.
-- `strings.photoCredit` (`src/strings.ts:135`) is unused since #90; remove it once #85 has merged (it owns `strings.ts`).
 - Smaller audit items not done: backup of project files and memory outside the repo, SEO rules beyond noindex, a fact-check workflow, data refresh cadence.
