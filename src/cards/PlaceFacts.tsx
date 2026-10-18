@@ -5,19 +5,40 @@ import { Img } from './Img';
 
 const t = strings.facts;
 
-/** The line under a row: source title, page, and the year when the source is old, each source a link that opens in a new tab. */
-export function SourceLine({ cites }: { cites: Cite[] }) {
+/** The line under a row: source title, page, and the year when the source is old, each source a link that opens in a new tab.
+ * `short` is the guide's form (owner card, 18 Oct 2026): a short tag such as "Pliego, p. 15", still a link to the document, with the
+ * full reference listed once in the guide's Sources section (SourceList). */
+export function SourceLine({ cites, short }: { cites: Cite[]; short?: boolean }) {
   const refs = sourceRefs(cites, sources);
   if (refs.length === 0) return null;
   return (
-    <span className="src">
+    <span className={short ? 'src short' : 'src'}>
       {refs.map((r, i) => (
         <span key={r.id}>
           {i > 0 && '; '}
-          <a href={r.url} target="_blank" rel="noopener noreferrer">{[r.title, r.pages, r.year].filter(Boolean).join(', ')}</a>
+          {short
+            ? <a href={r.url} target="_blank" rel="noopener noreferrer" title={t.sourceTag(r.title)}>{[r.short, r.pages].filter(Boolean).join(', ')}</a>
+            : <a href={r.url} target="_blank" rel="noopener noreferrer">{[r.title, r.pages, r.year].filter(Boolean).join(', ')}</a>}
         </span>
       ))}
     </span>
+  );
+}
+
+/** A guide's full references, once each, in the order first cited: the tag it goes by, the full title as a link to the document, and
+ * the year when the source is old. */
+export function SourceList({ cites }: { cites: Cite[] }) {
+  // Pages stay on the tags beside the facts; the list names each document once.
+  const refs = sourceRefs(cites.map((c) => c.split(':')[0]), sources);
+  return (
+    <ol className="pg-sources">
+      {refs.map((r) => (
+        <li key={r.id}>
+          <b>{r.short}</b>
+          <span><a href={r.url} target="_blank" rel="noopener noreferrer">{r.title}</a>{r.year && `, ${r.year}`}</span>
+        </li>
+      ))}
+    </ol>
   );
 }
 

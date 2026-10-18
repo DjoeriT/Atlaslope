@@ -41,3 +41,14 @@ describe('theme contrast', () => {
     }
   }
 });
+
+// Owner, 18 Oct 2026: photo credits on a picture got much smaller (src/styles/app.css .cover .credit). White text on the tag's 55% black
+// still has to clear 4.5:1 where it is hardest, over a white sky.
+describe('photo credit tag', () => {
+  it('white on 55% black over white is at least 4.5:1', () => {
+    const alpha = Number(/\.cover \.credit\{[^}]*background:rgba\(0,0,0,([\d.]+)\)/.exec(css)?.[1]);
+    expect(alpha).toBeGreaterThan(0);
+    const grey = Math.round(255 * (1 - alpha)).toString(16).padStart(2, '0');
+    expect(ratio('#FFFFFF', `#${grey}${grey}${grey}`)).toBeGreaterThanOrEqual(4.5);
+  });
+});

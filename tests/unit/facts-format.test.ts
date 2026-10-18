@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { altitudeText, grapeLabel, koppenText, photosOf, sourceRefs, type Sources } from '../../src/facts';
+import { altitudeText, grapeLabel, koppenText, photosOf, shortTitle, sourceRefs, type Sources } from '../../src/facts';
 
 const sources: Sources = {
   old: { title: 'Old document', url: 'https://example.org/old', date: '2014-06-30', kind: 'official' },
@@ -21,9 +21,18 @@ describe('fact formatting', () => {
   it('gathers pages per source and dates only sources from before 2018', () => {
     const refs = sourceRefs(['old:p11', 'old:p12', 'old:p11', 'fresh', 'gone:p1'], sources);
     expect(refs).toEqual([
-      { id: 'old', title: 'Old document', url: 'https://example.org/old', pages: 'p. 11, p. 12', year: '2014' },
-      { id: 'fresh', title: 'Fresh document', url: 'https://example.org/fresh', pages: '', year: '' },
+      { id: 'old', title: 'Old document', url: 'https://example.org/old', pages: 'p. 11, p. 12', year: '2014', short: 'Old document' },
+      { id: 'fresh', title: 'Fresh document', url: 'https://example.org/fresh', pages: '', year: '', short: 'Fresh document' },
     ]);
+  });
+  // Owner card, 18 Oct 2026: a guide tags each fact with a short source name; the full title is listed once under Sources.
+  it('gives each kind of source a short tag', () => {
+    expect(shortTitle('Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)')).toBe('Pliego');
+    expect(shortTitle('Documento único PDO-ES-A0975 (EU single document, Abona)')).toBe('EU single document');
+    expect(shortTitle('Wikipedia (es), «Abona», revision 1')).toBe('Wikipedia');
+    expect(shortTitle('Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020')).toBe('Köppen-Geiger');
+    expect(shortTitle('MAPA, list of protected wine names')).toBe('MAPA list');
+    expect(shortTitle('Some other report (2020)')).toBe('Some other report');
   });
   it('gives a place at most three photos, in order, each with a credit', () => {
     const photos = photosOf('cebreros');

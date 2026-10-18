@@ -32,6 +32,19 @@ export interface SourceRef {
   pages: string;
   /** The source's year, only when it is before 2018 so a reader can see the age; otherwise "". */
   year: string;
+  /** The tag shown beside a fact on a guide, "Pliego" or "EU single document"; the full title is listed once under Sources. */
+  short: string;
+}
+
+/** A source's short name for its tag (owner card, 18 Oct 2026: short source tags, full references once per guide). */
+export function shortTitle(title: string): string {
+  if (/^Pliego\b/.test(title)) return t.shortSource.pliego;
+  if (/^Documento único\b/.test(title)) return t.shortSource.singleDocument;
+  if (/^Wikipedia\b/.test(title)) return t.shortSource.wikipedia;
+  if (/^Measured inside\b/.test(title)) return t.shortSource.measured;
+  if (/^Köppen/.test(title)) return t.shortSource.koppen;
+  if (/^MAPA\b/.test(title)) return t.shortSource.mapa;
+  return title.split(/[,(:]/)[0].trim();
 }
 
 /** One reference per source, in the order first cited, with its pages gathered. A source id that is not in the registry is left out. */
@@ -53,6 +66,7 @@ export function sourceRefs(cites: Cite[], sources: Sources): SourceRef[] {
       url: source.url,
       pages: pages.map((p) => t.page(p.replace(/^p/, ''))).join(', '),
       year: year < 2018 ? String(year) : '',
+      short: shortTitle(source.title),
     };
   });
 }

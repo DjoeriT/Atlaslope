@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 import { plannedRound } from './round-plan';
 
 // Mobile check (17 Oct 2026, owner: "weird navigation and other weirdness"): phone layouts, search over the card,
-// the Explore tab and Back to map in the history, and the quiz card's scroll between steps. No network.
+// the Explore tab and the page bar's Atlas in the history, and the quiz card's scroll between steps. No network.
 
 const PHONE = { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true };
 const PHONE_LANDSCAPE = { viewport: { width: 844, height: 390 }, isMobile: true, hasTouch: true };
@@ -41,7 +41,7 @@ test('search results show above the open card', async ({ page }) => {
 test('the Explore tab goes back to Spain without reloading the page', async ({ page }) => {
   await open(page, '#place=rioja-alta');
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page.locator('.card h1')).toHaveText('Spain');
   expect(await page.evaluate(() => (window as unknown as { marker?: number }).marker)).toBe(1);
   await page.goBack();
@@ -52,18 +52,18 @@ test('the Explore tab on the Spain card stays put without a reload', async ({ pa
   await open(page);
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
   const before = await page.evaluate(() => history.length);
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page.locator('.card h1')).toHaveText('Spain');
   expect(await page.evaluate(() => [(window as unknown as { marker?: number }).marker, history.length])).toEqual([1, before]);
 });
 
-test('Back to map steps back, so the back button does not reopen the page just closed', async ({ page }) => {
+test('Atlas on a page steps back, so the back button does not reopen the page just closed', async ({ page }) => {
   await open(page, '#place=rioja');
   await page.locator('.card a').filter({ hasText: 'Rioja Alta' }).first().click();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
   await page.getByText('Open the Rioja Alta page').click();
   await expect(page.locator('.pg')).toBeVisible();
-  await page.getByText('Back to map').click();
+  await page.locator('.pg-top').getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page.locator('.pg')).toHaveCount(0);
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
   await page.goBack();
