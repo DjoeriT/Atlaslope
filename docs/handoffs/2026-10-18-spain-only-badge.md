@@ -13,9 +13,8 @@ Branch `claude/spain-only-badge-ba3jgw`. Small slice (one line of copy, no new s
 
 ## Decided
 - ReviewBot (Review/pr-94-review.md): pill radius kept as an owner exception (he asked for a pill), tag .7rem, span plus space.
-- Built B, the recommended option on his card, while it waits [A until he taps]. C was not recommended: chips look clickable, like a country switcher that does nothing.
+- Tag + line (B): owner card 16:48Z [O]. C was not recommended: chips look clickable, like a country switcher that does nothing.
 
 ## Open
-- His tap on A, B or C.
 - "Coming soon" is a promise while no next country is approved (plan /mnt/project-files/atlaslope/plans/2026-10-17-more-countries-plan.md).
   The badge names no country on purpose.
