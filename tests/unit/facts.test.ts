@@ -32,9 +32,9 @@ describe('checkSheets', () => {
   it('passes a complete, cited region file', () => {
     expect(toro()).toEqual([]);
   });
-  it('rejects an unknown place and a place that is not quizzed', () => {
+  it('rejects an unknown place but accepts a place that is not quizzed', () => {
     expect(checkSheets([file('rioja', sheet('rioja-x'), sheet('atlantis'))], places, src)).toEqual(['rioja: "atlantis" is not a place.']);
-    expect(checkSheets([file('rioja', sheet('rioja-x'), sheet('cava'))], places, src)).toEqual(['rioja: cava is not quizzed, so it has no sheet.']);
+    expect(checkSheets([file('rioja', sheet('rioja-x'), sheet('cava'))], places, src)).toEqual([]);
   });
   it('rejects a sheet in the wrong region file', () => {
     const errors = checkSheets([file('rioja', sheet('rioja-x'), sheet('toro'))], places, src);

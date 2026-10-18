@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cuts the source pack: one short extract per quizzed place, from the EU single document of its DOP.
+"""Cuts the source pack: one short extract per place with an EU file (quizzed or not), from the EU single document of its DOP.
 
 Run: python3 -I Tools/data/cut_extracts.py   (reads Review/sources/fetched/, writes Review/sources/places/<id>.md and Review/sources/places/INDEX.md)
 The single document («documento único») is the official summary of the pliego, in Spanish: wine categories, wine descriptions, delimited area,
@@ -107,11 +107,11 @@ def main():
     tree = json.loads((ROOT / "data/places.json").read_text())
     manifest = json.loads((F / "manifest.json").read_text())
     OUT.mkdir(parents=True, exist_ok=True)
-    index = ["# Source pack: one extract per quizzed place", "", "Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/sources/fetched/`.", "",
+    index = ["# Source pack: one extract per place", "", "Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/sources/fetched/`.", "",
              "| Place | Extract | Source document | Dated |", "|---|---|---|---|"]
     missing = []
     for p in tree["places"]:
-        if p["quiz"] not in ("core", "vc"): continue
+        if not p.get("euFile"): continue
         best = max(candidates(p["euFile"]), key=lambda c: c[0], default=None)
         if not best:
             missing.append(p["id"]); index.append(f"| {p['name']} | none yet | | |"); continue

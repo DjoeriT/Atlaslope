@@ -179,7 +179,7 @@ export function PlaceCard({ tree, go, place }: Props & { place: Place }) {
   const zones = tree.children(place.id, 'place') as Place[];
   const isZone = tree.levelName(place) === 'zone';
   const quizzed = place.quiz !== 'none';
-  const sheet = quizzed ? sheetOf(place.id) : undefined;
+  const sheet = sheetOf(place.id);
   const measures = quizzed ? measuresOf(place.id) : undefined;
   const color = regionColor(place.region);
   const official = place.official && place.official !== place.name ? place.official : undefined;
