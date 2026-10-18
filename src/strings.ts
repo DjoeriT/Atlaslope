@@ -26,6 +26,10 @@ export const strings = {
     dismissNote: 'Dismiss',
     dataNote: 'The place boundaries did not load, so the map has no places on it. Reloading the page usually fixes this.',
     reload: 'Reload',
+    // Key places of the selected region (content/flags.json).
+    flagLabel: (name: string) => `${name}, key place`,
+    flagFly: (name: string) => `Fly to ${name}`,
+    flagClose: 'Close',
   },
   sheet: {
     stops: { peek: 'small', half: 'half', full: 'full' } as Record<'peek' | 'half' | 'full', string>,

@@ -13,6 +13,7 @@ import { strings } from '../strings';
 import type { View } from '../url';
 import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type PlaceRow } from './boundaries';
 import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
+import { addFlags } from './flags';
 import { addLabels, mapName, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
 import { basemapPaint, imageryFailed, layerVisibility, reliefExaggeration, type MenuState } from './layers';
@@ -192,6 +193,12 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   });
 
   const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // A key-place chip's "Fly to" lands close enough to see the town or the river (flags.ts).
+  const flags = addFlags(map, (at) => {
+    const from = map.getCenter();
+    map.flyTo({ center: at, zoom: 12, easing: cameraEase,
+      duration: reduceMotion() ? 0 : flightMs({ lng: from.lng, lat: from.lat, zoom: map.getZoom() }, { lng: at[0], lat: at[1], zoom: 12 }, motionScale()) });
+  });
   /** Room beside the floating card (a bottom sheet on a narrow screen), as in the approved mock. */
   const padding = () => {
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -228,6 +235,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   function render() {
     if (!want || quizView) return;
     syncPin();
+    flags.show(want.select);
     if (boundaries && map.getSource('dos')) {
       if (dimmedRegion !== want.dimRegion) {
         for (const f of boundaries.features) setState('dos', String(f.properties.id), { dim: want.dimRegion !== null && f.properties.region !== want.dimRegion });
@@ -466,6 +474,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         pin?.remove();
         pin = null;
         pinKey = '';
+        flags.show(null);
         hover(null);
         resetCamera = false;
         beforeQuiz = { pitch: map.getPitch(), bearing: map.getBearing() };
@@ -483,7 +492,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       if (!q && was) { if (ready) leaveQuiz(); return; }
       if (q) { syncNames(); applyQuiz(); }
     },
-    remove() { pin?.remove(); labels?.remove(); map.remove(); },
+    remove() { pin?.remove(); flags.remove(); labels?.remove(); map.remove(); },
   };
 }
 
