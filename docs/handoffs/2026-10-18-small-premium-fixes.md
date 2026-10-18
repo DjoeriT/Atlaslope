@@ -13,7 +13,7 @@ Five fixes from the approved mockup https://claude.ai/artifact/8gCGvXzZtu8iQg9Jw
 
 ## Decided
 - "Jerez-Xérès-Sherry" stays whole on the map: it is the DO's one official name in three languages and no longer than the shortened Basque names.
-- The "About" and "Guides" page eyebrows stay: they are page labels above the h1, not on the owner's list. His call if they go.
+- The "About" and "Guides" page kickers went too (owner card "Remove both", 18:16Z): they only repeated the bar item. `.eyebrow` CSS removed.
 
 ## Open
 - Three-beat home heading: copy options for the owner (not started).
