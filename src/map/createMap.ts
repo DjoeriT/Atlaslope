@@ -22,6 +22,8 @@ import { addBaseMap, applyBaseMap } from './osmBase';
 import { SELECTED, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
+import { cameraEase, flightMs, type Cam } from './flight';
+import { motionScale } from '../app/motion';
 
 export interface MapController {
   map: MapLibreMap;
@@ -244,14 +246,27 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const zoneVis = want.showZones && current.boundaries ? 'visible' : 'none';
     for (const id of ['zones-fill', 'zones-line']) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', zoneVis);
     if (!framePending) return;
-    const duration = animateFrame && !reduceMotion() ? 700 : 0;
+    const animate = animateFrame && !reduceMotion();
+    // The camera's time follows the distance it travels, with an ease that starts and lands softly (owner point 8, src/map/flight.ts).
+    const here = (): Cam => ({ lng: map.getCenter().lng, lat: map.getCenter().lat, zoom: map.getZoom() });
+    const timed = (to: { center?: maplibregl.LngLatLike; zoom?: number } | undefined) => {
+      if (!animate || !to?.center || to.zoom === undefined) return animate ? 900 : 0;
+      const c = maplibregl.LngLat.convert(to.center);
+      return flightMs(here(), { lng: c.lng, lat: c.lat, zoom: to.zoom }, motionScale());
+    };
+    const duration = animate ? 900 : 0;
     const keep = resetCamera ? { pitch: START_PITCH, bearing: 0, duration } : { pitch: map.getPitch(), bearing: map.getBearing(), duration };
+    const fit = (box: maplibregl.LngLatBoundsLike, maxZoom?: number) => {
+      const opts = { padding: padding(), bearing: keep.bearing, ...(maxZoom ? { maxZoom } : {}) };
+      map.fitBounds(box, { ...keep, ...opts, duration: timed(map.cameraForBounds(box, opts)), easing: cameraEase });
+    };
     if (!want.frame) {
       framePending = false;
-      map.fitBounds(SPAIN_BOUNDS, { ...keep, padding: padding() });
+      fit(SPAIN_BOUNDS);
     } else if ('point' in want.frame) {
       framePending = false;
-      map.flyTo({ center: want.frame.point, zoom: want.frame.zoom, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: duration ? 1200 : 0 });
+      const to = { center: want.frame.point, zoom: want.frame.zoom };
+      map.flyTo({ ...to, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: animate ? Math.max(1200, timed(to)) : 0, easing: cameraEase });
     } else if (boundaries && zones) {
       framePending = false;
       const box = boundsOf(framedFeatures(want.frame, boundaries, zones));
@@ -261,7 +276,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         return;
       }
       const kind = 'region' in want.frame ? 'region' : 'place' in want.frame ? 'place' : 'zone';
-      map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...keep, padding: padding(), maxZoom: FRAME_ZOOM[kind] });
+      fit([[box[0], box[1]], [box[2], box[3]]], FRAME_ZOOM[kind]);
     }
     if (!framePending) resetCamera = false;
   }

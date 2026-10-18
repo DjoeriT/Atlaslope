@@ -19,13 +19,18 @@ import { loadTree } from '../tree';
 import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { SiteBar } from './TopBar';
-import { withMotion } from './motion';
+import { withMotion, type Move } from './motion';
 import { Sheet } from './Sheet';
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
-/** Which move a change of card or page makes. */
-const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
+const depth = (s: Selection) => (s.kind === 'place' ? 2 : s.kind === 'region' ? 1 : 0);
+/** Which move a change of card or page makes. Guide to guide steps forward, or back up when it goes to a wider guide (owner point 8). */
+const moveOf = (from: Selection, to: Selection): Move => (
+  to.page && !from.page ? 'page-open'
+    : from.page && !to.page ? 'page-close'
+      : from.page && to.page && (from.kind !== to.kind || from.id !== to.id) ? (depth(to) < depth(from) ? 'page-up' : 'page-step')
+        : 'card');
 
 export function App() {
   const tree = useMemo(() => loadTree(places, grapeNames()), []);
@@ -170,8 +175,8 @@ export function App() {
       {!quiz && !pageOpen && place && place.id === backTo && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
-      {!quiz && region && sel.page && <RegionPage tree={tree} go={go} region={region} />}
+      {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
+      {!quiz && region && sel.page && <RegionPage key={region.id} tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (
         <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />

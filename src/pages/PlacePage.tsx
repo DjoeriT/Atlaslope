@@ -1,5 +1,6 @@
 import { PageTop } from './PageTop';
-import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react';
+import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
+import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
 import { Link, type Go } from '../cards/Link';
@@ -43,7 +44,8 @@ function Section({ id, title, children }: { id: string; title: string; children:
 /** The full page of a place (#place=<id>&page): photos, a jump bar, ruled sections whose facts carry short source tags, a Sources list, and an "at a glance" box. */
 export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
-  const [current, setCurrent] = useState('');
+  const pageRef = useRef<HTMLDivElement>(null);
+  const jumpBar = useRef<HTMLElement>(null);
   useEffect(() => {
     if (cardShownBefore()) heading.current?.focus({ preventScroll: true });
     noteCardKey('page');
@@ -125,11 +127,12 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     { id: 'sources', label: t.sections.sources, present: !!sheet || !!guide },
   ].filter((s) => s.present);
 
+  // The jump bar's marker follows the reading position, and a tab glides the page to its section (owner point 8, 18 Oct 2026).
+  const current = useSectionInView(sections.map((s) => s.id), pageRef, place.id);
+  useJumpMarker(jumpBar, current);
   const jump = (id: string) => (e: MouseEvent) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ block: 'start' });
-    document.getElementById(`${id}-h`)?.focus({ preventScroll: true });
-    setCurrent(id);
+    scrollToSection(id);
   };
 
   const parent = isZone && place.parent ? tree.getPlace(place.parent) : undefined;
@@ -153,14 +156,10 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     ...(altitudeCell ? [[t.altitude, altitudeCell.big, 'land'] as [string, string, string]] : []),
     ...(zones.length > 0 ? [[t.zoneCount, String(zones.length), 'zones'] as [string, string, string]] : []),
   ];
-  const toSection = (id: string) => {
-    const el = document.getElementById(id);
-    el?.scrollIntoView({ block: 'start' });
-    el?.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
-  };
+  const toSection = (id: string) => scrollToSection(id);
 
   return (
-    <div className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
+    <div ref={pageRef} className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
@@ -179,7 +178,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
         </ul>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
 
-        <nav className="pg-jump" aria-label={t.jumpLabel}>
+        <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
             <a key={s.id} href={selectionToHash({ kind: 'place', id: place.id, page: true })} aria-current={current === s.id ? 'true' : undefined} onClick={jump(s.id)}>{s.label}</a>
           ))}
