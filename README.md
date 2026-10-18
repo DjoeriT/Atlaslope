@@ -5,7 +5,7 @@ Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (at
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
 ## Start here (state on 17 Oct 2026)
-- Live: the latest `release-*` tag on https://atlaslope.com (release 18 on 18 Oct 2026). Planned numbers and what is in flight:
+- Live: the latest `release-*` tag on https://atlaslope.com (release 19 on 18 Oct 2026). Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
 - Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
 - Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
