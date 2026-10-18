@@ -7,3 +7,5 @@
 - Config: none needed. ReviewBot is an agent a thread starts, not a CI job or required check, so nothing to make conditional [V, grep of
   `.github/workflows/`]. The release skill never mentioned it.
 - Open: nothing.
+- Also in this PR (owner, 17:58Z): mockups are one HTML page with the before and after or all options (A / B / C / D), published as an
+  Artifact with its link in the reply, never separate files. In `CLAUDE.md`, `docs/AGENT_ROLES.md` (Mocks) and `Review/visual-style.md`.

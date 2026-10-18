@@ -120,8 +120,9 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus builders 330k to 360k over four or five rounds, Sonnet reviewers 20k to 70k; the cards that ran over all had more than three steps.
 
 ## Working detail (moved from CLAUDE.md on 17 Oct 2026 so every step reads less)
-- **Mocks**: a mock of an existing screen keeps every section it has today. Drafts live in project files; approved mocks are committed to
-  `Review/mock-<topic>/`. Map mocks also go to the owner's Mac (`~/Developer/Atlaslope/mocks/`) with a file:/// path, since previews block satellite tiles.
+- **Mocks**: one HTML page per round with the before and after, or every option (A / B / C / D) side by side, published as an Artifact
+  with its link in the reply, never separate files (owner, 18 Oct 2026). A mock of an existing screen keeps every section it has today. Drafts live in project files; approved mocks are committed to
+  `Review/mock-<topic>/`. Map mocks also go to the owner's Mac (`~/Developer/Atlaslope/mocks/`) as that same one page with a file:/// path, since previews block satellite tiles.
   Wording decisions in the decisions log stay unless he reopens them. Only a fix that would change one of his decisions goes to him as a question.
 - **The UX and UI check**: one obvious main action per item, the common case in one click and the rare case tucked away; no two controls that
   mean nearly the same; every state says what happens next and a decision can be undone; plain words; existing patterns reused; desktop and
