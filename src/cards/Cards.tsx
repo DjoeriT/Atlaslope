@@ -187,11 +187,11 @@ export function PlaceCard({ tree, go, place }: Props & { place: Place }) {
   const famous = sheet?.famous?.styles ?? [];
   return (
     <CardShell
-      tree={tree} go={go} trail={trail} suffix={isZone ? undefined : place.kind} title={place.name} close={up ? { to: up } : undefined}
+      tree={tree} go={go} trail={trail} title={place.name} close={up ? { to: up } : undefined}
       cover={<Cover key={place.id} name={place.name} color={color} photos={quizzed ? photosOf(place.id) : []} />}
       foot={<Link className="btn primary" to={{ kind: 'place', id: place.id, page: true }} go={go}>{t.openPage(place.name)}</Link>}
     >
-      <p className="sub">{tp.subLine(isZone ? t.zoneLevel : place.kind, region?.name ?? '')}</p>
+      <p className="sub">{isZone ? t.zoneLevel : place.kind}</p>
       {sheet ? (
         <>
           <p className="lede">{sheet.why.text}</p>
