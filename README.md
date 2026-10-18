@@ -5,7 +5,7 @@ Static web app: Vite, TypeScript, React, MapLibre GL, hosted on GitHub Pages (at
 Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed the same day; GitHub forwards the old URL).
 
 ## Start here (state on 18 Oct 2026)
-- Live: the latest `release-*` tag on https://atlaslope.com (release 20 on 18 Oct 2026). Planned numbers and what is in flight:
+- Live: the latest `release-*` tag on https://atlaslope.com . Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
 - Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
 - Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`.
@@ -51,8 +51,8 @@ Releases start only with the owner's words "publish release N" (`.claude/skills/
 1. The slice's pull request, with its tester note, handoff and context update, is merged and CI is green on `main`.
 2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
    It checks the inputs (the commit is on `main`, `release-N` is new and next in line), reuses the green `main` run for that exact commit
-   or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
-3. Check the live site once. No records PR: the "live on release-N" line goes in the next slice's PR.
+   (or the PR's green run when the merge changed nothing), or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
+3. Check the live site once. No records PR, and no "live" line to update: the tag is the record.
 
 ## Licence
 Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
