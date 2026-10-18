@@ -160,9 +160,18 @@ test('Home shows the Today card once there is progress; closing it shows the Spa
   await card.getByRole('button', { name: 'Close, show the map' }).click();
   await expect(page.locator('.card h1')).toHaveText('Spain');
 
+  // Once a day (owner card, 18 Oct 2026): closed stays closed until tomorrow.
   await page.reload();
-  await page.getByRole('region', { name: 'Today' }).getByRole('button', { name: 'Review 3 due' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
+
+  // The next day it is back, and Start plays the round; started, it stays away for the day too.
+  await page.goto(`./?now=2026-10-18T10:00:00Z`);
+  await page.getByRole('region', { name: 'Today' }).getByRole('button', { name: /^Review \d+ due$/ }).click();
   await expect(page.locator('.q-num')).toContainText('Study');
+  await page.reload();
+  await page.getByRole('link', { name: 'Explore' }).click();
+  await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
 });
 
 test('the manifest is linked and parses', async ({ page, request }) => {

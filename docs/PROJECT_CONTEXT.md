@@ -42,7 +42,7 @@ file save and load), map quiz mode `src/map/quiz.ts`, screens `src/quiz-ui/` (St
 Quiz is enabled; Progress (the mastery map) is still disabled. Handoff `docs/handoffs/2026-10-17-release-7-quiz.md`.
 
 ## 5. Release and deployment state
-Live: release 17, the quiz highlight fix with 3D relief, quiz spacing and the address-bar race (PRs #67, #69, #70; tag `release-17` on db0c0d4, publish run 39067171750, 17 Oct). Release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
+Live: release 18, the polish pack (PR #73; tag `release-18` on f1fb654, 18 Oct; tester note `Review/release-18-what-to-test.md`). Release 17, the quiz highlight fix with 3D relief, quiz spacing and the address-bar race (PRs #67, #69, #70; tag `release-17` on db0c0d4, publish run 39067171750, 17 Oct). Release 16, the UX sweep (PR #63: view-transition motion, a three-stop phone sheet, one page bar, End round asks first, the one-place Rioja region skipped, Escape steps up, Progress tab hidden; tag `release-16` on 86d55ea, publish run 39054367454, 17 Oct). Release 15, landscape through the colours (PR #61: place fills thin from zoom 6 over the photo; tag `release-15` on f451d41,
 publish run 39047992444; live map check run 39048373912 failed twice on 0 name tiles because it stopped waiting before the names were
 asked for; with the fixed check (run 39048612822) all four kinds loaded, 9 name tiles, 17 Oct) at https://atlaslope.com/. Release 14, mobile check (PR #59: Explore without a reload, Back to map steps back, search above the card, folding legend and
 fitting map menu on phones, 16 px search, quiz steps start at the top; tag `release-14` on 8526daf, publish run 39044219743, live map check run 39044664030 passed on its second attempt (the first loaded photo, relief and PNOA but no OpenFreeMap name tile), 17 Oct) at https://atlaslope.com/ over HTTPS; djoerit.github.io/Atlaslope/
@@ -103,8 +103,11 @@ session on his Mac also sees his thread messages and started a second publish ru
   feature state changes now clear the relief's texture cache. Takes release 17; the mastery map and ready for friends move to 18 and 19 (#15, #16).
   Handoff `docs/handoffs/2026-10-17-quiz-highlight.md`, tester note `Review/release-17-what-to-test.md` (also covers quiz spacing, PR #69).
 - Polish pack (18 Oct, owner card 06:18Z "Both, polish first"): photo sizes with blur-up, Newsreader optical sizes and drop cap,
-  scroll-linked page motion. Handoff `docs/handoffs/2026-10-18-polish-pack.md`, tester note `Review/release-19-what-to-test.md`.
-  Next after it ships: the story-guide mock (new thread).
+  scroll-linked page motion. Live as release 18. Handoff `docs/handoffs/2026-10-18-polish-pack.md`, tester note `Review/release-18-what-to-test.md`.
+  Next: the story-guide mock (new thread).
+- Explore leaves the quiz behind (owner report 18 Oct 06:03Z, #71, PR #72): "Back to the quiz" only on the card the quiz opened, leaving
+  the quiz pauses the round, the Today card shows once a day (owner card "Once a day"). Takes release 19 on "publish release 19".
+  Handoff `docs/handoffs/2026-10-18-explore-leaves-quiz.md`, tester note `Review/release-19-what-to-test.md`.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

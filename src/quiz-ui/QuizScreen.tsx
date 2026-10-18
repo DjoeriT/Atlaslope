@@ -22,7 +22,7 @@ interface Props {
   quiz: QuizApi;
   /** The latest tap on the map. */
   pick: MapPick | null;
-  /** True while a place card is open over the quiz: the round stays in memory, out of sight. */
+  /** True while the learner is in Explore: the round stays in memory, out of sight, until the Quiz tab or "Back to the quiz". */
   hidden?: boolean;
   /** Start today's round as soon as the screen opens (the Today card's button). */
   autoStart?: boolean;
@@ -87,12 +87,14 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, autoStart, onAutoS
     if (testSet) startReview(testSet.split(','), 10);
   }, [testSet]);
 
+  // A round paused for Explore is picked up again rather than replaced by a new one.
   const started = useRef(false);
   useEffect(() => {
-    if (!autoStart || started.current || route.sub) return;
+    if (!autoStart) { started.current = false; return; }
+    if (started.current || route.sub) return;
     started.current = true;
     onAutoStarted?.();
-    startStudy(quiz.plan.due.length === 0 && quiz.plan.intake.length === 0);
+    if (mode.at !== 'playing') startStudy(quiz.plan.due.length === 0 && quiz.plan.intake.length === 0);
   }, [autoStart]);
 
   const screen = (() => {

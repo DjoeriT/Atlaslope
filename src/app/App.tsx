@@ -27,6 +27,11 @@ import { Sheet } from './Sheet';
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
 /** Which move a change of card or page makes. */
+const TODAY_KEY = 'atlaslope.today-closed';
+/** The learner's local calendar day, so "until tomorrow" means their midnight. */
+const dayOf = (d: Date) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+const readStore = (key: string) => { try { return localStorage.getItem(key); } catch { return null; } };
+const writeStore = (key: string, value: string) => { try { localStorage.setItem(key, value); } catch { /* storage blocked: closed for this visit only */ } };
 const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
 
 export function App() {
@@ -54,6 +59,7 @@ export function App() {
     withMotion(() => {
       setQuiz(null);
       setStay(null);
+      setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
     }, quizRef.current ? 'card' : moveOf(cur, to));
   }, [tree]);
@@ -61,10 +67,19 @@ export function App() {
   const [stay, setStay] = useState<Focus | null>(null);
   const lastQuiz = useRef<QuizRoute>({ sub: null }); // where the quiz was, for "Back to the quiz"
   if (quiz) lastQuiz.current = quiz;
-  // A round left for a place's card stays in memory (QuizScreen stays mounted, out of sight) until the learner is back or goes to Explore.
-  const [keepQuiz, setKeepQuiz] = useState(false);
+  // Once opened, the quiz stays mounted out of sight in Explore, so a round left by any way out waits for the Quiz tab.
+  const keepQuiz = useRef(false);
+  if (quiz) keepQuiz.current = true;
+  // The place card opened from the quiz offers "Back to the quiz"; anywhere else in Explore says nothing about the quiz (owner, 18 Oct 2026).
+  const [backTo, setBackTo] = useState<string | null>(null);
   const [autoStart, setAutoStart] = useState(false);
-  const [todayClosed, setTodayClosed] = useState(false);
+  // The Today card shows once a day: closed or started, it stays away until tomorrow (owner card "Once a day", 18 Oct 2026).
+  const clock = useMemo(() => makeClock(debugNow()), []);
+  const [todayClosed, setTodayClosed] = useState(() => readStore(TODAY_KEY) === dayOf(clock()));
+  const closeToday = useCallback(() => {
+    writeStore(TODAY_KEY, dayOf(clock()));
+    setTodayClosed(true);
+  }, [clock]);
   const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
     if (quizRef.current && quizRef.current.sub === sub && !set) return;
     const route: QuizRoute = set ? { sub, set } : { sub };
@@ -75,12 +90,12 @@ export function App() {
     history.pushState(null, '', here() + selectionToHash(selRef.current));
     withMotion(() => {
       setQuiz(null);
-      setKeepQuiz(false);
+      setBackTo(null);
     });
   }, []);
   const openPlaceFromQuiz = useCallback((id: string) => {
     history.pushState(null, '', here() + selectionToHash({ kind: 'place', id }));
-    setKeepQuiz(true);
+    setBackTo(id);
     setQuiz(null);
     setSel({ kind: 'place', id });
   }, []);
@@ -111,7 +126,8 @@ export function App() {
   const pickCount = useRef(0);
   const pickOnMap = useCallback((id: string) => setMapPick({ id, n: ++pickCount.current }), []);
   useEffect(() => exposeQuizPick(pickOnMap), [pickOnMap]);
-  const clock = useMemo(() => makeClock(debugNow()), []);
+  // A tap from before the quiz went out of sight is not replayed when it comes back (review of PR #72).
+  useEffect(() => { if (!quiz) setMapPick(null); }, [quiz]);
   const progress = useQuiz(tree, clock);
   const dueSet = useMemo(() => {
     const m = new Map<string, number>();
@@ -138,7 +154,7 @@ export function App() {
       const el = e.target as HTMLElement;
       if (el.closest('input, textarea, select, [role="menu"], .menu, .flycap')) return;
       // The fly caption marks its Escape handled; the welcome and End round dialogs keep theirs (PR #63 review).
-      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]')) return;
+      if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden] *)')) return;
       const cur = selRef.current;
       if (cur.kind === 'country') return;
       go(cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));
@@ -155,14 +171,14 @@ export function App() {
   return (
     <>
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
-      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setKeepQuiz(false); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
-      {(quiz || keepQuiz) && (
+      {!pageOpen && <TopBar theme={theme} onToggleTheme={toggleTheme} tree={tree} onOpen={go} quizOpen={!!quiz} onQuiz={() => openQuiz()} onExplore={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} onProgressFile={() => openQuiz('progress-file')} />}
+      {keepQuiz.current && (
         <QuizScreen
           route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
           onAutoStarted={() => setAutoStart(false)} onView={setMapView} onOpenPlace={openPlaceFromQuiz}
         />
       )}
-      {!quiz && keepQuiz && !pageOpen && (
+      {!quiz && !pageOpen && place && place.id === backTo && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
       {!quiz && place && sel.page && <PlacePage tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
@@ -172,7 +188,7 @@ export function App() {
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
             : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
             : progress.hasProgress && !todayClosed ? (
-              <TodayCard tree={tree} quiz={progress} go={go} onClose={() => setTodayClosed(true)} onStart={() => { setAutoStart(true); openQuiz(); }} />
+              <TodayCard tree={tree} quiz={progress} go={go} onClose={closeToday} onStart={() => { closeToday(); setAutoStart(true); openQuiz(); }} />
             ) : <SpainCard tree={tree} go={go} due={dueSet} onReview={() => { setAutoStart(true); openQuiz(); }} />}
         </Sheet>
       )}
