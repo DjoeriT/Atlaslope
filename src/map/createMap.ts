@@ -17,7 +17,7 @@ import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVi
 import { basemapPaint, imageryFailed, layerVisibility, type MenuState } from './layers';
 import { ESRI_PROTOCOL_TILES, registerImagery } from './imagery';
 import { addMapNames, applyMapNames, registerGlyphs } from './mapNames';
-import { TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
+import { SELECTED, TERRAIN_EXAGGERATION, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
 
@@ -114,9 +114,10 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     map.setPaintProperty('dos-line', 'line-width', p.dosLineWidth as never);
     map.setPaintProperty('dos-line', 'line-opacity', p.dosLineOpacity as never);
     map.setPaintProperty('dos-line', 'line-dasharray', p.dosLineDash);
-    const colour = ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', m.colourBy === 'region' ? 'color' : 'climate']];
-    map.setPaintProperty('dos-fill', 'fill-color', colour as never);
-    map.setPaintProperty('dos-line', 'line-color', colour as never);
+    const own = ['get', m.colourBy === 'region' ? 'color' : 'climate'];
+    const sel = ['boolean', ['feature-state', 'sel'], false];
+    map.setPaintProperty('dos-fill', 'fill-color', ['case', sel, SELECTED.fill, own] as never);
+    map.setPaintProperty('dos-line', 'line-color', ['case', sel, SELECTED.line, own] as never);
     if (tiles) map.setTerrain(m.relief ? TERRAIN : null);
     syncNames();
     render();

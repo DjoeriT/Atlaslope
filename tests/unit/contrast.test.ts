@@ -1,4 +1,4 @@
-// Release 8: every text and background token pair in src/styles/app.css meets 4.5:1 in both themes (Review/visual-style.md, "Colour").
+// Release 8, light only since 18 Oct 2026: every text and background token pair in src/styles/app.css meets 4.5:1 (Review/visual-style.md, "Colour").
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
@@ -27,12 +27,11 @@ const pairs: [string, string][] = [
   ['accent', 'paper'], ['accent-ink', 'accent'],
   ['ink', 'fill'], ['ink2', 'fill'], ['ink3', 'fill'], ['accent', 'fill'],
   ['ok', 'paper'], ['bad', 'paper'], ['focus', 'paper'],
+  ['foil', 'band'], ['foil-ink', 'paper'], ['foil-ink', 'paper2'],
 ];
 
 describe('theme contrast', () => {
-  const light = block(':root');
-  const dark = { ...light, ...block(':root[data-theme="dark"]') };
-  for (const [name, theme] of [['light', light], ['dark', dark]] as const) {
+  for (const [name, theme] of [['light', block(':root')]] as const) {
     for (const [fg, bg] of pairs) {
       it(`${name}: ${fg} on ${bg} is at least 4.5:1`, () => {
         expect(theme[fg], `--${fg}`).toBeDefined();

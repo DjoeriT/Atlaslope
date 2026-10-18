@@ -10,6 +10,8 @@ export const TERRAIN_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terr
 export const ESRI_ATTRIBUTION = 'Imagery: Esri, Maxar, Earthstar Geographics, and the GIS User Community';
 export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
 export const TERRAIN_EXAGGERATION = 1.3;
+/** The selected place: black with a champagne edge, so it stands off both the atlas and the photo (Review/visual-style.md "Colour"). */
+export const SELECTED = { fill: '#141414', line: '#E9D8B4' };
 
 /** The keyed Esri tile URL; src/map/imagery.ts fetches it behind the `esri://` protocol. */
 export const esriTemplate = (key: string) => `${ESRI_TILES}?token=${encodeURIComponent(key)}`;
@@ -78,16 +80,16 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
     { id: 'dos-casing', type: 'line', source: 'dos', layout: { visibility: vis['dos-casing'] }, paint: { 'line-color': '#FFFFFF', 'line-width': 3.6, 'line-opacity': 0.55 } },
     {
       id: 'dos-fill', type: 'fill', source: 'dos', layout: { visibility: vis['dos-fill'] },
-      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', menu.colourBy === 'region' ? 'color' : 'climate']], 'fill-opacity': paint.dosFillOpacity as never },
+      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], SELECTED.fill, ['get', menu.colourBy === 'region' ? 'color' : 'climate']], 'fill-opacity': paint.dosFillOpacity as never },
     },
     {
       id: 'dos-line', type: 'line', source: 'dos', layout: { visibility: vis['dos-line'] },
-      paint: { 'line-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', ['get', menu.colourBy === 'region' ? 'color' : 'climate']], 'line-width': paint.dosLineWidth as never, 'line-dasharray': paint.dosLineDash, 'line-opacity': paint.dosLineOpacity as never },
+      paint: { 'line-color': ['case', ['boolean', ['feature-state', 'sel'], false], SELECTED.line, ['get', menu.colourBy === 'region' ? 'color' : 'climate']], 'line-width': paint.dosLineWidth as never, 'line-dasharray': paint.dosLineDash, 'line-opacity': paint.dosLineOpacity as never },
     },
     // The three Rioja zones: hidden until a Rioja card is open (createMap.ts), then drawn over the DOCa.
     {
       id: 'zones-fill', type: 'fill', source: 'zones', layout: { visibility: 'none' },
-      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], '#8C2340', '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, ['boolean', ['feature-state', 'hover'], false], 0.6, 0.3] },
+      paint: { 'fill-color': ['case', ['boolean', ['feature-state', 'sel'], false], SELECTED.fill, '#AE4656'], 'fill-opacity': ['case', ['boolean', ['feature-state', 'sel'], false], 0.8, ['boolean', ['feature-state', 'hover'], false], 0.6, 0.3] },
     },
     { id: 'zones-line', type: 'line', source: 'zones', layout: { visibility: 'none' }, paint: { 'line-color': '#FFFFFF', 'line-width': 2, 'line-opacity': 0.9 } },
   );

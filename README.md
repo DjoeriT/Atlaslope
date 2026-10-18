@@ -12,7 +12,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Keep this section current in the slice PR that changes it.
 
 ## Layout
-    src/app/             shell: App, top bar, first run, theme
+    src/app/             shell: App, top bar, first run
     src/map/             MapLibre map: imagery, boundaries, climate colours, hover, focus, map menu
     src/cards/           floating cards on the map (place, region, Spain), search box
     src/pages/           place page and region page (photo mosaic, charts)

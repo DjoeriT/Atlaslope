@@ -33,7 +33,6 @@ export const strings = {
     label: (stop: string) => `Card size: ${stop}. Drag, or use the up and down arrows, to change it`,
   },
   topBar: {
-    darkInterface: 'Dark interface',
     searchPlaceholder: 'Search places and regions',
     searchLabel: 'Search places and regions',
     modeNav: 'Mode',

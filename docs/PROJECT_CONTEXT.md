@@ -111,6 +111,9 @@ session on his Mac also sees his thread messages and started a second publish ru
 - Explore leaves the quiz behind (owner report 18 Oct 06:03Z, #71, PR #72): "Back to the quiz" only on the card the quiz opened, leaving
   the quiz pauses the round, the Today card shows once a day (owner card "Once a day"). Live as release 19.
   Handoff `docs/handoffs/2026-10-18-explore-leaves-quiz.md`, tester note `Review/release-19-what-to-test.md`.
+- Black and champagne, light only (owner 18 Oct 07:49Z to 10:49Z): wine red and dark mode dropped, black band with champagne foil,
+  small corners, map selection black with a champagne edge. Takes release 20 when he says so. Handoff `docs/handoffs/2026-10-18-black-and-champagne.md`,
+  tester note `Review/release-20-what-to-test.md`. Next: a wider plan for a persistent top bar and a website around the atlas.
 
 ## 7. Known problems
 - The ministry DOP layer is from 2014; corrections live in `dop-overrides.json` [R].

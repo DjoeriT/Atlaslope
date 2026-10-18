@@ -22,7 +22,7 @@ Each role works toward an outcome, not toward approval; the owner's decisions co
 | **LeadBot** | The right work gets done well: the plan is sound, each piece goes to the right role, quality is proven rather than assumed, and the project record is always true, without wasted effort or tokens | – |
 | **BuilderBot** | Working, tested code that does exactly what the card describes: simple, readable, consistent with the surrounding code, and leaving the codebase no worse than it found it | Done / partly done (what's left) / blocked (why) |
 | **ReviewBot, code review** | Code that is correct, simple and safe to build on: bugs, regressions, needless complexity and broken rules are caught before they reach `main` | Merge / merge after fixes / don't merge |
-| **ReviewBot, QA** | Testers get a site that works and feels solid: every main flow works at desktop and iPad width, with large text and in light and dark, with no crashes, dead ends or broken layouts | Ready to publish / not ready |
+| **ReviewBot, QA** | Testers get a site that works and feels solid: every main flow works at desktop and iPad width, with large text and on the atlas and satellite, with no crashes, dead ends or broken layouts | Ready to publish / not ready |
 | **ReviewBot, security and privacy** | People can trust the app: no secret leaks, nothing is collected or kept beyond what we say, and what ships matches every promise we make | Matches / gaps (listed) |
 | **ReviewBot, design** | The best UX for the job: simple, effective, consistent with the app and in line with good web and iPad practice (WCAG 2.2 AA); the common case is effortless and nothing is confusing or a dead end | Ready / fix first (the fixes go into the mock) |
 | **AnalystBot** | A clear, honest picture of how the app is really used: what works for people, what doesn't, and where the evidence points next, including saying plainly when there's too little evidence to tell | Evidence points to … / not enough data |
@@ -58,10 +58,10 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 - Reproduces numbers before confirming them; says for each claim "confirmed", "refuted" or "not reproduced"; marks ran, read or inferred.
 - Does not grade with the thing under test.
 - Modes (the card says which): **code review** (diff against plan, tests and `CLAUDE.md`); **QA** (`Tools/check.sh ui` first, then
-  screenshots only for what tests cannot see: layout, large text, dark mode); **security** (secrets, what ships in the built site, third-party scripts);
+  screenshots only for what tests cannot see: layout, large text, satellite); **security** (secrets, what ships in the built site, third-party scripts);
   **design** (a mock of a new screen or a redesign, before the owner sees it: the UX/UI check with fresh eyes; each finding names the
   checklist point, the screen state and a proposed fix; never edits the mock or decides wording; LeadBot fixes the findings.
-  It also runs the visual check against `Review/visual-style.md` from screenshots in light, dark and iPad width, and on a release
+  It also runs the visual check against `Review/visual-style.md` from screenshots on the atlas, satellite and iPad width, and on a release
   compares built screens with their approved mock).
 
 ## AnalystBot
@@ -123,13 +123,13 @@ For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus build
   Wording decisions in the decisions log stay unless he reopens them. Only a fix that would change one of his decisions goes to him as a question.
 - **The UX and UI check**: one obvious main action per item, the common case in one click and the rare case tucked away; no two controls that
   mean nearly the same; every state says what happens next and a decision can be undone; plain words; existing patterns reused; desktop and
-  iPad width, large text, light and dark; keyboard reachable, 44 px targets, screen-reader labels. **Visual check** (owner, 17 Oct, "too Atlassy"):
-  held against `Review/visual-style.md` with screenshots in light, dark and iPad width. Before a release, built screens are compared with
+  iPad width, large text, atlas and satellite; keyboard reachable, 44 px targets, screen-reader labels. **Visual check** (owner, 17 Oct, "too Atlassy"):
+  held against `Review/visual-style.md` with screenshots on the atlas, satellite and iPad width. Before a release, built screens are compared with
   their approved mock; a gap is fixed in the slice or named in the tester note.
 - **Reviewers**: give an independent reviewer the facts and constraints, not your conclusion. A report is input, never the owner's approval.
   Spawn reviewers with worktree isolation (release 5: a reviewer's checkout detached the thread's branch).
 - **Token discipline**: one `Review/release-N-digest.md` per big release; agents read the digest, never scope, decisions or the brief whole.
-  Screenshots cost the most: read the DOM first, screenshot only layout, large text and dark mode.
+  Screenshots cost the most: read the DOM first, screenshot only layout, large text and satellite.
 - **Pushes**: finish fixes, notes and records locally, push once (release 4: four pushes restarted CI; 17 Oct: five pushes in four minutes).
   Never hide push output (release 5: two pushes from a detached checkout failed silently).
 - **Backlog labels**: kind (`ui`, `logic`, `data`, `release`, `security`, `docs`), who acts next (`owner`, `agent`), priority (`now`, `next`,

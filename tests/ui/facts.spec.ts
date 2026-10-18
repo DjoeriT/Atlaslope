@@ -82,18 +82,15 @@ test('the keyboard reaches every link on the Cebreros card', async ({ page }) =>
   expect(new Set(seen).size).toBe(controls);
 });
 
-for (const scheme of ['light', 'dark'] as const) {
-  test(`the card and the page fit at iPad width, ${scheme}`, async ({ page }) => {
-    await page.emulateMedia({ colorScheme: scheme });
-    await page.setViewportSize({ width: 1024, height: 768 });
-    await open(page, '#place=cebreros');
-    const card = (await page.locator('.card').boundingBox())!;
-    expect(card.x >= 0 && card.x + card.width <= 1024).toBe(true);
-    expect(await page.locator('.card .scroll').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
-    await open(page, '#place=cebreros&page');
-    expect(await page.locator('.pg').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
-  });
-}
+test('the card and the page fit at iPad width', async ({ page }) => {
+  await page.setViewportSize({ width: 1024, height: 768 });
+  await open(page, '#place=cebreros');
+  const card = (await page.locator('.card').boundingBox())!;
+  expect(card.x >= 0 && card.x + card.width <= 1024).toBe(true);
+  expect(await page.locator('.card .scroll').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
+  await open(page, '#place=cebreros&page');
+  expect(await page.locator('.pg').evaluate((el) => el.scrollWidth > el.clientWidth)).toBe(false);
+});
 
 test('a long grape list opens and closes without losing focus', async ({ page }) => {
   await open(page, '#place=granada&page');

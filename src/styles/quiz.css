@@ -11,13 +11,13 @@
 .q:focus,#result:focus,.score:focus{outline:none}
 .status{font-size:.95rem;color:var(--ink2);margin:.2rem 0 0;min-height:1.4em}
 .choices{display:grid;gap:.5rem;margin-top:.9rem}
-.choice{border:1.5px solid var(--line);background:transparent;border-radius:.7rem;padding:.8rem 1rem;font:inherit;font-size:1.05rem;text-align:left;cursor:pointer;color:var(--ink);min-height:3.2rem;display:flex;align-items:center;gap:.8rem}
+.choice{border:1.5px solid var(--line);background:transparent;border-radius:var(--rad);padding:.8rem 1rem;font:inherit;font-size:1.05rem;text-align:left;cursor:pointer;color:var(--ink);min-height:3.2rem;display:flex;align-items:center;gap:.8rem}
 .choice b{width:1.7rem;height:1.7rem;border-radius:50%;border:1.5px solid var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;flex:none}
 .choice.ok{border-color:var(--ok)}
 .choice.ok b{background:var(--ok);border-color:var(--ok);color:#fff}
 .choice.bad{border-color:var(--bad)}
 .choice.bad b{background:var(--bad);border-color:var(--bad);color:#fff}
-.feedback{margin-top:.9rem;padding:.75rem .9rem;border-radius:.7rem;border:1.5px solid var(--ok);font-size:.95rem;display:flex;gap:.6rem}
+.feedback{margin-top:.9rem;padding:.75rem .9rem;border-radius:var(--rad);border:1.5px solid var(--ok);font-size:.95rem;display:flex;gap:.6rem}
 .feedback.bad{border-color:var(--bad)}
 .facts.reveal{margin-top:.8rem;padding-top:.6rem;border-top:1px solid var(--line)}
 .autonext{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--ink2);margin-top:.6rem}
@@ -25,7 +25,7 @@
 .autonext i::after{content:"";position:absolute;inset:0;background:var(--ok);transform-origin:left;animation:quiz-fill 1s linear forwards}
 @keyframes quiz-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media (prefers-reduced-motion:reduce){.autonext i::after{animation-duration:2.5s}}
-.undo{font-size:.9rem;background:var(--fill);border-radius:.6rem;padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
+.undo{font-size:.9rem;background:var(--fill);border-radius:var(--rad);padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
 .linkbtn{appearance:none;border:0;background:transparent;font:inherit;color:var(--accent);font-weight:600;cursor:pointer;min-height:2.75rem;padding:0 .4rem;text-decoration:underline}
 .linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer}
 .score{font-family:var(--serif);font-size:4rem;line-height:1;margin:.3rem 0 .2rem}
@@ -43,7 +43,7 @@
 /* The doors, focus, practise, progress file and Today card (release 7 card 5): from the approved mocks, on the app tokens. */
 h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:1.3rem 0 .5rem;font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem}
-.chip{border:1px solid var(--line2);background:transparent;border-radius:999px;padding:.45rem .9rem;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);min-height:2.75rem;display:inline-flex;align-items:center;gap:.5rem}
+.chip{border:1px solid var(--line2);background:transparent;border-radius:.25rem;padding:.45rem .9rem;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);min-height:2.75rem;display:inline-flex;align-items:center;gap:.5rem}
 .chip[aria-checked="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .chip.multi::before{content:"";width:.85rem;height:.85rem;border:1.5px solid currentColor;border-radius:.2rem}
 .chip.multi[aria-checked="true"]::before{background:currentColor;box-shadow:inset 0 0 0 2px var(--ink)}
@@ -65,7 +65,7 @@ h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink
 .focusline a{min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .3rem}
 .search.inline{position:static;width:auto;margin:.3rem 0 .5rem;box-shadow:none;border:1px solid var(--line)}
 .picked{list-style:none;padding:0;margin:.2rem 0 .8rem;display:flex;flex-wrap:wrap;gap:.45rem}
-.picked li{display:inline-flex;align-items:center;gap:.2rem;border:1px solid var(--ink);border-radius:999px;padding:0 .2rem 0 .9rem;font-size:.9rem;min-height:2.75rem}
+.picked li{display:inline-flex;align-items:center;gap:.2rem;border:1px solid var(--ink);border-radius:.25rem;padding:0 .2rem 0 .9rem;font-size:.9rem;min-height:2.75rem}
 .x{appearance:none;border:0;background:transparent;color:var(--ink2);width:2.75rem;height:2.75rem;border-radius:50%;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
 .x svg{width:1rem;height:1rem}
 .tree summary{display:flex;align-items:center;justify-content:space-between;gap:.5rem;min-height:2.75rem;cursor:pointer;list-style:none}
@@ -83,6 +83,6 @@ h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink
 .tree summary input,.tree details ul input{width:1.1rem;height:1.1rem}
 .undo.bad{border:1.5px solid var(--bad)}
 .card .btn:disabled{opacity:.5;cursor:not-allowed}
-.back-quiz{position:absolute;left:27rem;top:4.6rem;z-index:6;min-height:2.75rem;padding:0 1rem;border-radius:.7rem;font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
+.back-quiz{position:absolute;left:27rem;top:4.6rem;z-index:6;min-height:2.75rem;padding:0 1rem;border-radius:var(--rad);font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
 @media (max-width:68.75em){.back-quiz{left:24rem}}
 @media (max-width:51.25em) and (orientation:portrait){.back-quiz{left:1rem;top:auto;bottom:calc(52% + .6rem)}}
