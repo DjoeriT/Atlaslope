@@ -85,7 +85,6 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
 }
 @media (max-width:51.25em) and (orientation:portrait){
   .sheet.phone .cover .nav{top:auto;bottom:2.6rem;width:2.75rem;height:2.75rem}
-  .sheet.phone .cover .dots{bottom:3.6rem}
   .imagery-note{font-size:.9rem}
   .zoomset:not(:has(> .iconbtn:nth-child(3))){display:none}
 }

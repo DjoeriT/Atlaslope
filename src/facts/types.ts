@@ -83,6 +83,8 @@ export interface Photo {
   alt: string;
   artist: string;
   licence: string;
+  /** The licence text (Creative Commons deed); missing for public-domain files. */
+  licenceUrl?: string | null;
   /** The Wikimedia Commons page. */
   page: string;
 }

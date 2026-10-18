@@ -1,0 +1,50 @@
+{
+ "$comment": "Where each place sits in the WSET course: only the place names each published specification lists (names and structure, never their text). Zones are not listed and get no badge. See data/SOURCES.md.",
+ "wset": {
+  "sources": {
+   "3": {
+    "title": "WSET Level 3 Award in Wines, Specification, Issue 2",
+    "url": "https://www.wsetglobal.com/media/11731/wset_l3wines_specification_en_highres_may2022_issue2.pdf",
+    "date": "2022-05"
+   },
+   "2": {
+    "title": "WSET Level 2 Award in Wines, Specification, Issue 2.1",
+    "url": "https://www.wsetglobal.com/media/19132/wset_l2wines_specification_en_april2026_issue21.pdf",
+    "date": "2026-04"
+   }
+  },
+  "levels": {
+   "2": [
+    "rioja",
+    "navarra",
+    "priorat",
+    "ribera-del-duero",
+    "catalunya",
+    "rias-baixas",
+    "cava",
+    "jerez"
+   ],
+   "3": [
+    "rioja",
+    "navarra",
+    "calatayud",
+    "carinena",
+    "priorat",
+    "catalunya",
+    "penedes",
+    "ribera-del-duero",
+    "toro",
+    "rueda",
+    "rias-baixas",
+    "bierzo",
+    "valencia",
+    "jumilla",
+    "yecla",
+    "la-mancha",
+    "valdepenas",
+    "cava",
+    "jerez"
+   ]
+  }
+ }
+}

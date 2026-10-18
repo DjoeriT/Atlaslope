@@ -10,7 +10,7 @@ Tags: **[V]** verified in this working copy when this snapshot was written; **[O
 ## 1. What Atlaslope is
 The wine study atlas for WSET and Wine Scholar students [O, 17 Oct 2026; was "The wine atlas that quizzes you"]. For exam students (WSET, Spanish Wine Scholar) and passionate wine lovers, then "show the
 why". Spain first, on a world place tree (country, region, DO, zone). Free for the owner and friends; read-and-test only in v1 [O].
-Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The owner renamed the GitHub repo to `DjoeriT/Atlaslope` on 16 Oct 2026 (14:07Z); the Pages project URL is now https://djoerit.github.io/Atlaslope/ until atlaslope.com is pointed at it.
+Renamed from Paraje on 16 Oct 2026; domain atlaslope.com bought by the owner [O]. The owner renamed the GitHub repo to `DjoeriT/Atlaslope` on 16 Oct 2026 (14:07Z); the site has been on https://atlaslope.com since release 3.
 Full scope: `docs/scope.md`. Architecture: `docs/architecture-decisions.md`. Build plan and estimate: `Review/builder-brief.md`.
 
 ## 2. Architecture (decided; built in release 3)
@@ -174,4 +174,4 @@ Rules `CLAUDE.md`; this file; scope and decisions in `docs/`; handoffs `docs/han
 
 ## 10. What this snapshot did not verify
 The restart passed `Tools/check.sh ui` in the cloud container (see the restart pull request for the counts) [V]. The publish workflow has
-never run [A]. Everything about imagery on the owner's screen is unverified [A].
+run since the early releases; the `release-*` tags are its record [R]. Everything about imagery on the owner's screen is unverified [A].

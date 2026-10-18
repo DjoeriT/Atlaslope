@@ -137,16 +137,20 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:1.6rem 0 .6
 .cover img{display:block;width:100%;height:100%;object-fit:cover}
 .round{width:2.75rem;height:2.75rem;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;background:rgba(255,255,255,.94);color:#1D1915;box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .round .icon{width:1.15rem;height:1.15rem}
-.cover .nav{position:absolute;top:calc(50% - 1.375rem);opacity:.85}
-.cover .nav:hover,.cover .nav:focus-visible{opacity:1}
-.cover .prev{left:.6rem}.cover .next{right:.6rem}
+/* Cover as a small mosaic (owner point 3, 18 Oct 2026): a hero and up to two photos beside it, no arrows or dots; a tap opens the viewer. */
+.cover[data-n="2"],.cover[data-n="3"]{display:grid;gap:2px;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}
+.cover[data-n="2"] figure:first-child,.cover[data-n="3"] figure:first-child,.cover[data-n="2"] figure:nth-child(2){grid-row:1/3}
+.cover figure{margin:0;position:relative;overflow:hidden;min-height:0;height:100%}
+.cover .ph{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.cover .ph:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
 .dots{position:absolute;left:50%;bottom:.75rem;transform:translateX(-50%);display:flex;gap:.35rem}
 .dots i{width:.4rem;height:.4rem;border-radius:50%;background:rgba(255,255,255,.6)}
 .dots i.on{background:#fff}
-/* Photo credits on a picture are the smallest text on the site (owner, 18 Oct 2026: "way smaller"): 0.7 rem white on 55% black, which still
-   clears 4.5:1 over a white sky (Review/visual-style.md "Photos"). */
-.cover .credit{position:absolute;right:.4rem;bottom:.4rem;max-width:calc(100% - .8rem);font-size:.7rem;line-height:1.3;color:#fff;background:rgba(0,0,0,.55);padding:.05rem .35rem;border-radius:.2rem;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.cover .credit:hover{text-decoration:underline}
+/* No text on photos (owner point 4, 18 Oct 2026, "way smaller", "of all images"): the credits are one small line under the cover, always
+   visible (the CC licences ask for it; PR #92 review), full names and licences, never cut off. */
+.cover-credits{margin:.35rem 1rem 0;font-size:.66rem;line-height:1.35;color:var(--ink3)}
+.cover-credits a{color:inherit;text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:2px}
+.cover-credits a:hover{color:var(--ink);text-decoration-color:currentColor}
 .namecover{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--paper2);padding:1rem;text-align:center}
 .namecover span{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3rem);line-height:1.05;letter-spacing:-.015em;color:var(--ink)}
 .namecover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.3rem;background:var(--rule,var(--accent))}
@@ -191,12 +195,9 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:1.6rem 0 .6
 .tiles .txt{display:flex;flex-direction:column;min-width:0}
 .tiles b{font:500 1rem var(--serif)}
 .tiles small{color:var(--ink3);font-size:.78rem;line-height:1.35}
-.tiles .due{margin-left:auto;font-size:.78rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:.25rem;padding:.15rem .55rem;white-space:nowrap}
 .tiles .go{margin-left:auto;color:var(--ink3);font-size:1.25rem}
-.tiles .due+.go{margin-left:.2rem}
 .tiles li.sub a{padding-left:1.6rem}
 .tiles li.sub img,.tiles li.sub i{width:2.8rem;height:2.8rem}
-.duebar{margin:.6rem 0 0;color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,transparent)}
 .cover-short .cover{aspect-ratio:16/7}
 .chips.plain li{border-color:transparent;background:var(--paper2)}
 @media (hover:none){.hoverhint{display:none}}

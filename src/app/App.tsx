@@ -12,7 +12,6 @@ import type { Focus } from '../map/focus';
 import type { QuizView } from '../map/quiz';
 import { makeClock } from '../quiz-ui/helpers';
 import { IDLE_VIEW, QuizScreen } from '../quiz-ui/QuizScreen';
-import { TodayCard } from '../quiz-ui/TodayCard';
 import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
@@ -26,11 +25,6 @@ import { Sheet } from './Sheet';
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
 /** Which move a change of card or page makes. */
-const TODAY_KEY = 'atlaslope.today-closed';
-/** The learner's local calendar day, so "until tomorrow" means their midnight. */
-const dayOf = (d: Date) => `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-const readStore = (key: string) => { try { return localStorage.getItem(key); } catch { return null; } };
-const writeStore = (key: string, value: string) => { try { localStorage.setItem(key, value); } catch { /* storage blocked: closed for this visit only */ } };
 const moveOf = (from: Selection, to: Selection) => (to.page && !from.page ? 'page-open' : from.page && !to.page ? 'page-close' : 'card');
 
 export function App() {
@@ -70,14 +64,7 @@ export function App() {
   if (quiz) keepQuiz.current = true;
   // The place card opened from the quiz offers "Back to the quiz"; anywhere else in Explore says nothing about the quiz (owner, 18 Oct 2026).
   const [backTo, setBackTo] = useState<string | null>(null);
-  const [autoStart, setAutoStart] = useState(false);
-  // The Today card shows once a day: closed or started, it stays away until tomorrow (owner card "Once a day", 18 Oct 2026).
   const clock = useMemo(() => makeClock(debugNow()), []);
-  const [todayClosed, setTodayClosed] = useState(() => readStore(TODAY_KEY) === dayOf(clock()));
-  const closeToday = useCallback(() => {
-    writeStore(TODAY_KEY, dayOf(clock()));
-    setTodayClosed(true);
-  }, [clock]);
   const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
     if (quizRef.current && quizRef.current.sub === sub && !set) return;
     const route: QuizRoute = set ? { sub, set } : { sub };
@@ -128,11 +115,6 @@ export function App() {
   // A tap from before the quiz went out of sight is not replayed when it comes back (review of PR #72).
   useEffect(() => { if (!quiz) setMapPick(null); }, [quiz]);
   const progress = useQuiz(tree, clock);
-  const dueSet = useMemo(() => {
-    const m = new Map<string, number>();
-    for (const r of progress.plan.due) m.set(r.place, (m.get(r.place) ?? 0) + 1);
-    return m;
-  }, [progress.plan]);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
   const flown = flyOf(sel);
   const fly = sel.kind === 'place' ? sel.fly : undefined;
@@ -181,8 +163,8 @@ export function App() {
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
       {keepQuiz.current && (
         <QuizScreen
-          route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz} autoStart={autoStart}
-          onAutoStarted={() => setAutoStart(false)} onView={setMapView} onOpenPlace={openPlaceFromQuiz}
+          route={quiz ?? lastQuiz.current} tree={tree} quiz={progress} pick={mapPick} hidden={!quiz}
+          onView={setMapView} onOpenPlace={openPlaceFromQuiz}
         />
       )}
       {!quiz && !pageOpen && place && place.id === backTo && (
@@ -193,10 +175,9 @@ export function App() {
       {!quiz && !pageOpen && (
         <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
-            : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} due={dueSet} />
-            : progress.hasProgress && !todayClosed ? (
-              <TodayCard tree={tree} quiz={progress} go={go} onClose={closeToday} onStart={() => { closeToday(); setAutoStart(true); openQuiz(); }} />
-            ) : <SpainCard tree={tree} go={go} due={dueSet} onReview={() => { setAutoStart(true); openQuiz(); }} />}
+            : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
+            // The Atlas shows no Study items: no Today card, no due counts (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
+            : <SpainCard tree={tree} go={go} />}
         </Sheet>
       )}
       {!pageOpen && <FirstRun />}

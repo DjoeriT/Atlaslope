@@ -2,6 +2,7 @@ import { useState, type ReactNode } from 'react';
 import { altitudeText, grapeLabel, tasteLines, koppenText, sourceRefs, sources, type Cite, type Measures, type ShownPhoto, type Sheet } from '../facts';
 import { strings } from '../strings';
 import { Img } from './Img';
+import { Credit } from './Credit';
 
 const t = strings.facts;
 
@@ -129,7 +130,7 @@ function PhotoFigure({ photo }: { photo: ShownPhoto }) {
       <figure className="photo">
         <Img photo={photo} sizes="12rem" lazy onError={() => setBroken(true)} />
         <figcaption className="src">
-          {t.photoCredit} <a href={photo.page} target="_blank" rel="noopener noreferrer">{photo.artist}, {photo.licence}</a>
+          {t.photoCredit} <Credit photo={photo} />
         </figcaption>
       </figure>
     </li>

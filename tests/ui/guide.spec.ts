@@ -20,12 +20,12 @@ test('the Rioja page has a Terroir section after the overview, with 7 pills and 
   const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
   expect(ids.slice(0, 2)).toEqual(['overview', 'terroir']);
   await expect(page.locator('.pg-jump a').nth(1)).toHaveText('Terroir');
-  await expect(page.locator('#terroir .kicker')).toHaveText('Terroir · 4-minute read');
+  await expect(page.locator('#terroir .kicker')).toHaveCount(0); // one guide, one type: no kicker of its own (owner point 14)
   await expect(page.locator('#terroir h2')).toHaveText('Why Rioja tastes the way it does');
   await expect(page.locator('#terroir .fly')).toHaveCount(7);
   await expect(page.locator('#terroir .pg-zguide > div')).toHaveCount(3);
   await expect(page.locator('#terroir .pg-ch .src')).toHaveCount(4);
-  await expect(page.locator('.pg-sub').getByRole('link', { name: 'terroir, 4-minute read' })).toBeVisible();
+  await expect(page.locator('.pg-badges')).toContainText('4-minute read');
 });
 
 test('a place with no guide has no Terroir section', async ({ page }) => {
@@ -37,7 +37,7 @@ test('a place with no guide has no Terroir section', async ({ page }) => {
 for (const { chapter, index, fly } of pills) {
   test(`pill "${fly.label}" lands on its caption, the address names it, Back returns to the chapter`, async ({ page }) => {
     await open(page, '#place=rioja&page');
-    await page.getByRole('link', { name: `Show ${fly.label} on the map` }).click();
+    await page.getByRole('link', { name: `See ${fly.label} from above` }).click();
     await expect(page).toHaveURL(new RegExp(`#place=rioja&fly=${chapter}\\.${index}`));
     const cap = page.locator('.flycap');
     await expect(cap.locator('.kicker')).toHaveText('From the Rioja guide');

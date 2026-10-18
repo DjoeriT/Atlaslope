@@ -21,7 +21,11 @@ async function open(page: Page, hash = '', seed?: unknown) {
 test('the legend names the six climates, and the menu switches it to the study regions', async ({ page }) => {
   await open(page);
   const legend = page.getByRole('group', { name: 'Climate' });
-  await expect(legend.locator('li')).toHaveText(['Oceanic', 'Humid, hot summers', 'Mediterranean, warm summers', 'Mediterranean, hot summers', 'Dry, cold winters', 'Hot and dry']);
+  await expect(legend.locator('li')).toHaveText([
+    'Oceanic rain all year, mild summers', 'Humid subtropical rain all year, hot summers', 'Mild Mediterranean dry, warm summers',
+    'Hot Mediterranean dry, hot summers', 'Cold semi-arid dry, cold winters', 'Hot semi-arid and desert dry and hot',
+  ]);
+  await expect(legend.locator('li').first()).toHaveAttribute('title', 'Köppen Cfb');
 
   await page.getByRole('button', { name: 'Map layers' }).click();
   await page.getByRole('radio', { name: 'Study region' }).check();
@@ -41,15 +45,14 @@ test('the legend is not shown in the quiz', async ({ page }) => {
   await expect(page.locator('.legend')).toHaveCount(0);
 });
 
-test('Spain and region cards show photo rows, main grapes and what is due, and Review opens the quiz', async ({ page }) => {
+test('Spain and region cards show photo rows and main grapes, and no Study counts even with progress', async ({ page }) => {
   await open(page, '', SEED);
-  const today = Number((await page.locator('.card h1').textContent())?.match(/\d+/)?.[0]); // the Today card counts due memories
-  expect(today).toBe(2);
-  await page.locator('.card .close').click(); // the Today card
   const card = page.locator('.card');
+  // The Atlas shows no Study items (owner, 18 Oct 2026): the Spain card, not the Today card, and no due counts.
   await expect(card.locator('h1')).toHaveText('Spain');
+  await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
+  await expect(card.locator('.due, .duebar')).toHaveCount(0);
   const row = card.locator('.tiles li', { hasText: 'Rioja' }).first();
-  await expect(row.locator('.due')).toHaveText(`${today} due`);
   await expect(row.locator('small')).toContainText('Tempranillo');
 
   // Rioja is a one-place region, so its row opens the Rioja DOCa itself (owner card, 17 Oct 2026)
@@ -61,8 +64,5 @@ test('Spain and region cards show photo rows, main grapes and what is due, and R
   await card.locator('.tiles li', { hasText: 'Castilla y León' }).locator('a').click();
   await expect(card.locator('h1')).toHaveText('Castilla y León');
   await expect(card.getByRole('heading', { name: 'Main grapes here' })).toBeVisible();
-  await card.getByRole('link', { name: 'Close, back to Spain' }).click();
-
-  await card.getByRole('button', { name: `Start today's round · ${today} due` }).click();
-  await expect(page).toHaveURL(/#study/);
+  await expect(card.locator('.due')).toHaveCount(0);
 });
