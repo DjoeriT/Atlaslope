@@ -7,4 +7,5 @@ Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once wi
 1. **Home page badge.** Under the Open the atlas button, a small champagne SPAIN tag with "Live now. More countries coming soon." Check it on a phone too: one line, under the buttons.
 
 ## For you
-One PR from `claude/spain-only-badge-ba3jgw`. Handoff `docs/handoffs/2026-10-18-spain-only-badge.md`. Release number assumes 28 and 29 publish first.
+One PR from `claude/spain-only-badge-ba3jgw`. Handoff `docs/handoffs/2026-10-18-spain-only-badge.md`. Checks: CI on PR #94 (check plus four UI parts); ReviewBot `Review/pr-94-review.md`, findings fixed. Older tester notes moved to `Review/archive/`.
+Not verified: Safari, iPad, real phones.
