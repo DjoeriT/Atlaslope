@@ -20,6 +20,14 @@ export const VIEWS = {
   'rioja-z9': '-2.6,42.5,9,0,0',
   'rioja-z10': '-2.6,42.5,10,0,0',
   'border-tui-z14': '-8.646,42.047,14,0,0',
+  // 3D relief, tilted (relief and base-map slice, 18 Oct 2026).
+  'spain-z6-tilt': '-3.7,40.6,5.8,0,50',
+  'rioja-z10-tilt': '-2.75,42.45,10,15,60',
+  // Satellite switched off in the map menu: the road map under the plain atlas.
+  'atlas-rioja-z11': '-2.7,42.53,11,0,0',
+  'atlas-haro-z13': '-2.848,42.574,13,0,0',
+  'atlas-haro-z15': '-2.848,42.574,15,0,0',
+  'atlas-rioja-z10-tilt': '-2.75,42.45,10,15,60',
 };
 const SCREENS = { mac: { width: 1440, height: 900 }, ipad: { width: 1024, height: 768 } };
 
@@ -41,6 +49,11 @@ for (const [screen, viewport] of Object.entries(SCREENS)) {
     if (screen === 'ipad' && !['haro-z16', 'priorat-z13-tilt'].includes(name)) continue;
     await page.goto('about:blank');
     await page.goto(`${base}#view=${view}`, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    if (name.startsWith('atlas-')) {
+      await page.getByRole('button', { name: 'Map layers' }).click({ timeout: 30_000 }).catch(() => console.log(`${name}: no map menu`));
+      await page.getByLabel('Satellite imagery').uncheck({ timeout: 10_000 }).catch(() => console.log(`${name}: satellite not switched off`));
+      await page.keyboard.press('Escape');
+    }
     await page.waitForLoadState('networkidle', { timeout: Number(process.env.IDLE_MS ?? 45_000) }).catch(() => console.log(`${name}: network not idle after 45 s`));
     // Software GL (no GPU on the runner) redraws 3D relief slowly and shows empty frames meanwhile: take four frames
     // ten seconds apart and keep the one with the most detail (the largest file).
