@@ -12,6 +12,7 @@ import { SourceLine } from './PlaceFacts';
 import { Cover } from './Cover';
 import { Glance } from './Glance';
 import { Img } from './Img';
+import { placeLine, regionLine, spainLine, type TileLine } from '../facts/tiles';
 
 
 const t = strings.cards;
@@ -34,27 +35,42 @@ export function mainGrapes(placeIds: readonly string[], n = 3): string[] {
 
 const firstPhoto = (ids: readonly string[]) => ids.map((id) => photosOf(id)[0]).find(Boolean);
 
-interface TileRowProps {
+interface TileProps {
   to: Selection;
   go: Go;
   name: string;
-  detail: string;
+  /** Small label above the name: the place count or the place's kind. */
+  label: string;
+  /** The headline from content/tiles.json; a place without a fact sheet has none yet. */
+  line?: string;
   photoIds: readonly string[];
   places: () => readonly string[];
-  sub?: boolean;
 }
 
-/** A row with a photo: the region or place and a short line. Study counts stay in Study (owner, 18 Oct 2026). */
-function TileRow({ to, go, name, detail, photoIds, places, sub }: TileRowProps) {
+/** A photo card: the region or place, a small label and its headline (owner points 15 and 16, 18 Oct 2026). Study counts stay in Study. */
+function Tile({ to, go, name, label, line, photoIds, places }: TileProps) {
   const photo = firstPhoto(photoIds);
   return (
-    <li className={sub ? 'sub' : undefined} {...hoverProps(places)}>
-      <Link to={to} go={go} title={t.openPage(name)}>
-        {photo ? <Img key={photo.src} photo={photo} sizes="3.6rem" alt="" lazy /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}
-        <span className="txt"><b>{name}</b><small>{detail}</small></span>
-        <span className="go" aria-hidden="true">›</span>
+    <li {...hoverProps(places)}>
+      <Link to={to} go={go} title={line ? `${name}: ${line}` : t.openPage(name)}>
+        <span className="ph">{photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 50vw, 15rem" alt="" lazy /> : <i aria-hidden="true">{name.slice(0, 1)}</i>}</span>
+        <span className="txt"><small>{label}</small><b>{name}</b>{line && <em>{line}</em>}</span>
       </Link>
     </li>
+  );
+}
+
+/** Tiles in two columns; with an odd count the first one runs full width, so no tile sits alone. */
+const tileClass = (n: number) => (n % 2 === 1 ? 'tiles lead' : 'tiles');
+
+/** A country or region lede from content/tiles.json with its short source tags; the old count line where none is written yet. */
+function Lede({ line, fallback, hint }: { line?: TileLine; fallback: string; hint: string }) {
+  if (!line?.lede) return <p className="lede">{fallback} <span className="hoverhint">{hint}</span></p>;
+  return (
+    <>
+      <p className="lede">{line.lede}</p>
+      <p className="ledesrc"><SourceLine cites={line.cite} short /> <span className="hoverhint">{hint}</span></p>
+    </>
   );
 }
 
@@ -69,17 +85,16 @@ export function SpainCard({ tree, go }: Props) {
       tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
       cover={<div className="cover-short"><CoverPhoto name={country.name} color="#141414" photos={covers} /></div>}
     >
-      <p className="lede">{t.spainLedeRich(all.length, regions.length)} <span className="hoverhint">{t.hoverRegion}</span></p>
+      <Lede line={spainLine()} fallback={t.spainLedeRich(all.length, regions.length)} hint={t.hoverRegion} />
       <h2>{t.regions}</h2>
-      <ul className="tiles">
+      <ul className={tileClass(regions.length)}>
         {regions.map((r) => {
           const ids = tree.placesInRegion(r.id).map((p) => p.id);
-          const grapes = mainGrapes(ids);
           const sole = tree.soleSameName(r.id);
           return (
-            <TileRow
+            <Tile
               key={r.id} to={sole ? { kind: 'place', id: sole.id } : { kind: 'region', id: r.id }} go={go} name={r.name} photoIds={ids} places={() => ids}
-              detail={[sole ? sole.kind : t.placeCount(ids.length), grapes.join(', ')].filter(Boolean).join(' · ')}
+              label={sole ? sole.kind : t.placeCount(ids.length)} line={regionLine(r.id)?.title}
             />
           );
         })}
@@ -93,6 +108,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
   const ids = places.map((p) => p.id);
   const grapes = mainGrapes(ids, 4);
   const cover = places.flatMap((p) => photosOf(p.id)).slice(0, 4);
+  const rows = places.flatMap((p) => [{ p, zone: false }, ...(tree.children(p.id, 'place') as Place[]).map((z) => ({ p: z, zone: true }))]);
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(region.id, 'region')} title={region.name} close={{ to: tree.breadcrumb(region.id, 'region')[0] }}
@@ -103,7 +119,7 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
         </>
       )}
     >
-      <p className="lede">{t.regionLedeRich(places.length)} <span className="hoverhint">{t.hoverPlace}</span></p>
+      <Lede line={regionLine(region.id)} fallback={t.regionLedeRich(places.length)} hint={t.hoverPlace} />
       {grapes.length > 0 && (
         <>
           <h2>{t.mainGrapesHere}</h2>
@@ -111,14 +127,10 @@ export function RegionCard({ tree, go, region }: Props & { region: Region }) {
         </>
       )}
       <h2>{t.placesHeading}</h2>
-      <ul className="tiles">
-        {places.flatMap((p) => {
-          const zones = tree.children(p.id, 'place') as Place[];
-          return [
-            <TileRow key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} detail={p.kind} photoIds={[p.id]} places={() => [p.id]} />,
-            ...zones.map((z) => <TileRow key={z.id} sub to={{ kind: 'place', id: z.id }} go={go} name={z.name} detail={t.zoneLevel} photoIds={[z.id]} places={() => [z.id]} />),
-          ];
-        })}
+      <ul className={tileClass(rows.length)}>
+        {rows.map(({ p, zone }) => (
+          <Tile key={p.id} to={{ kind: 'place', id: p.id }} go={go} name={p.name} label={zone ? t.zoneLevel : p.kind} line={placeLine(p.id)?.title} photoIds={[p.id]} places={() => [p.id]} />
+        ))}
       </ul>
     </CardShell>
   );
@@ -130,7 +142,7 @@ function ZoneRow({ zone, go, color }: { zone: Place; go: Go; color: string }) {
     <li {...hoverProps(() => [zone.id])}>
       <Link to={{ kind: 'place', id: zone.id }} go={go} title={t.openPage(zone.name)}>
         {photo ? <Img key={photo.src} photo={photo} sizes="3.4rem" alt="" lazy /> : <i style={{ background: color }} aria-hidden="true" />}
-        <span><b>{zone.name}</b><small>{t.zoneLevel}</small></span>
+        <span><b>{zone.name}</b><small>{placeLine(zone.id)?.title ?? t.zoneLevel}</small></span>
         <span className="go" aria-hidden="true">›</span>
       </Link>
     </li>
