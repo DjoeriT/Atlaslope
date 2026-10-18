@@ -30,18 +30,21 @@ test('walk Spain, Rioja, Rioja Alta and back by breadcrumb (the one-place Rioja 
   await card.getByRole('link', { name: /^Rioja/ }).click();
   await expect(card.locator('h1')).toHaveText('Rioja');
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
-  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveText(/^Spain\s*›\s*Rioja · DOCa$/);
+  // The trail names only the levels above; the title names the card (owner, 18 Oct 2026: "Spain and Spain in one screen").
+  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveText(/^Spain$/);
+  await expect(card.locator('.sub')).toHaveText('DOCa');
 
   await card.getByRole('link', { name: /^Rioja Alta/ }).click();
   await expect(page).toHaveURL(/#place=rioja-alta/);
   await expect(card.locator('h1')).toHaveText('Rioja Alta');
   const crumbs = card.getByRole('navigation', { name: 'Where this sits' });
-  await expect(crumbs).toHaveText(/^Spain\s*›\s*Rioja\s*›\s*Rioja Alta$/);
+  await expect(crumbs).toHaveText(/^Spain\s*›\s*Rioja$/);
 
   await crumbs.getByRole('link', { name: 'Rioja' }).click();
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
   await card.getByRole('navigation', { name: 'Where this sits' }).getByRole('link', { name: 'Spain' }).click();
   await expect(card.locator('h1')).toHaveText('Spain');
+  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveCount(0);
   await page.goBack();
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
   // an old link to the region still works and lands on the place
@@ -82,7 +85,7 @@ test('the map frames each step and a reloaded place URL restores place and view'
   await expect.poll(async () => Number((await viewOf(page))?.split(',')[2])).toBeLessThan(6);
 
   await page.getByRole('link', { name: /^Castilla y León/ }).click();
-  await page.getByRole('link', { name: /^Toro/ }).click();
+  await page.locator('.card .tiles').getByRole('link', { name: /^Toro/ }).click(); // the lede's source trail also links Toro
   await expect.poll(() => viewOf(page)).toBe(first);
   const url = page.url();
   await page.reload();
