@@ -1,6 +1,7 @@
 # Atlaslope scope (owner decisions, 16 Oct 2026)
 
-Renamed from Paraje to Atlaslope on 16 Oct 2026 (product name only; repo and URLs keep Paraje until the owner renames them). Moved into the repo at the restart commit; the copy in the project files is superseded.
+Renamed from Paraje to Atlaslope on 16 Oct 2026; the repo (DjoeriT/Atlaslope) and the address (atlaslope.com) followed the same day. Moved into the repo at the restart commit; the copy in the project files is superseded.
+"Quiz" below is called **Study** everywhere users look (owner, 18 Oct 2026); the decisions stand as written. Words: `docs/glossary.md`.
 
 From the first-principles scope quiz in the thread "ideate the whole system". These supersede the on-hold development plan wherever they differ. Tags: [O] owner said so, [V] verified, [R] from memory, [A] assumption.
 

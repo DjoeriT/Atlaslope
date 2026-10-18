@@ -1,0 +1,23 @@
+# Decided 16 Oct 2026 (docs/architecture-decisions.md #38): monthly grouped PRs, security updates at once, merged by a thread on green CI.
+# Playwright is held back: it stays pinned to the browser build the cloud container ships (CLAUDE.md, "Commands"); bump it by hand with that image.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      dev:
+        dependency-type: development
+      runtime:
+        dependency-type: production
+    ignore:
+      - dependency-name: "@playwright/test"
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]

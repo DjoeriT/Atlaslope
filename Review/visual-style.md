@@ -35,6 +35,10 @@ an addition and the owner decides.
 - Radius: small, as in Colour: `.3rem`, cards and buttons `.4rem`, no pills (owner 18 Oct 11:49Z: "soft buttons"). Shadows are soft and used only on floating things
   (map card, the "at a glance" box, buttons over photos, cards over the map).
 - Targets are at least 44 px. Every interactive item has a visible focus ring.
+- The bar is WCAG 2.2 AA: keyboard reachable, screen-reader labels, no information by colour alone.
+- Motion respects `prefers-reduced-motion: reduce`: transitions, view transitions, scroll timelines and map fly-bys stop or shorten
+  (done in `src/styles/*.css`, `src/app/motion.ts`, `src/map/createMap.ts`). New motion gets the same guard in the same PR.
+- Devices: browsers from the last two years, iPadOS 17+, Safari and Chrome (decision #38). Not yet verified on real Safari, iPad or phones.
 
 ## Photos
 - A screen with a place or region on it leads with a real photo of that place: a cover on the card, a five-photo mosaic on the place page,
@@ -74,7 +78,8 @@ an addition and the owner decides.
   first touch.
 
 ## How the check is run
-1. Screenshots: desktop 1440x900 and iPad 834x1194, on the atlas and on satellite, plus large text (root font 125%).
+1. Screenshots: desktop 1440x900, iPad 834x1194 and phone 390x844 (the phone size the UI tests use, `tests/ui/ux-sweep.spec.ts:7`),
+   on the atlas and on satellite, plus large text (root font 125%) and reduced motion.
 2. ReviewBot in design mode compares them with this page and with the reference mocks, and writes findings with fixes.
 3. LeadBot fixes the findings before the owner sees the screen. A fix that would change an owner decision goes to him as a card.
 4. Before a release, the built screens get the same screenshots, compared with the approved mock. A gap is fixed in the slice
