@@ -15,3 +15,6 @@ No local full UI suite; start on the recommended option while a card waits; all 
 ## Open
 - Re-measure minutes and cost per slice after a few slices under the new rules.
 - The coordinator's wider docs audit (privacy, CSP, licensing, glossary, Dependabot) goes to the owner separately: `/mnt/project-files/atlaslope/reviews/2026-10-18-docs-gap-audit.md`.
+
+## Correction after release 23 (15:34Z)
+Self-publish did not survive contact: the cloud safety check refuses a thread starting `publish` without his words, and refuses a thread adding its own permission rule. He chose to say "publish release N" in the thread (no tap, no rule). Docs reverted to that, rollback included. Release 23 (6eeabb2) published in 61 s by reusing main's run.
