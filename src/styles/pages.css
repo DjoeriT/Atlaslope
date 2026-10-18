@@ -192,9 +192,9 @@
    under reduced motion. */
 .pg-ttl{display:none}
 @supports (animation-timeline:scroll()) and (timeline-scope:--a){
-  @media (prefers-reduced-motion:no-preference) and (min-width:64em){
+  @media (prefers-reduced-motion:no-preference) and (min-width:72em){
     .pg-top .brand{position:relative}
-    .pg-ttl{display:block;position:absolute;left:calc(100% + .9rem);top:50%;max-width:clamp(0rem,50vw - 25rem,14rem);overflow:hidden;
+    .pg-ttl{display:block;position:absolute;left:calc(100% + .9rem);top:50%;max-width:clamp(0rem,50vw - 24rem,16rem);overflow:hidden;
       text-overflow:ellipsis;white-space:nowrap;font:500 1.15rem var(--serif);color:var(--ink);pointer-events:none;
       padding-left:.9rem;border-left:1px solid var(--line2);
       opacity:0;transform:translateY(-20%);animation:pg-ttl-in linear both;animation-timeline:--title;animation-range:exit 40% exit 100%}

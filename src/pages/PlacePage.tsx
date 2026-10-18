@@ -315,7 +315,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                     return (
                       <li key={z.id}>
                         <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
-                          {photo ? <Img photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
+                          {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
                           <b>{z.name}</b>
                         </Link>
                         {why && <><p>{why.text}</p><SourceLine cites={why.cite} /></>}

@@ -22,7 +22,7 @@ function Tile({ place, go, photo, onBroken }: { place: Place; go: Go; photo?: Sh
     <li className="rtile">
       <Link to={{ kind: 'place', id: place.id, page: true }} go={go}>
         <div className={`ph${photo ? '' : ' none'}`}>
-          {photo ? <Img photo={photo} sizes="(max-width: 47.5em) 100vw, (max-width: 68.75em) 50vw, 24rem" lazy onError={() => onBroken(photo.src)} /> : <span>{place.name}</span>}
+          {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, (max-width: 68.75em) 50vw, 24rem" lazy onError={() => onBroken(photo.src)} /> : <span>{place.name}</span>}
         </div>
         <span className="meta"><b>{place.name}</b><small>{place.kind}</small></span>
         {why && <span className="why">{sentences(why, 150)}</span>}
@@ -54,7 +54,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
     <div className="rpage" role="region" aria-label={region.name}>
       <PageTop tree={tree} go={go} back={back} title={region.name} />
       <header className={`rcover${cover ? '' : ' none'}`}>
-        {cover && <Img photo={cover} sizes="100vw" onError={() => markBroken(cover.src)} />}
+        {cover && <Img key={cover.src} photo={cover} sizes="100vw" onError={() => markBroken(cover.src)} />}
         <div className="ttl">
           <nav className="kicker crumb" aria-label={strings.cards.whereThisSits}>
             {crumb.map((c, i) => <span key={c.id + i} aria-current={i === crumb.length - 1 ? 'page' : undefined}>{c.name}</span>)}

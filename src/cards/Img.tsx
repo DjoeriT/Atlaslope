@@ -20,14 +20,20 @@ interface Props {
   onError?: () => void;
 }
 
+/** The file each photo last showed (its `currentSrc`), so the same photo in another slot can paint that cached file at once. */
+const shown = new Map<string, string>();
+
 /** A shipped photo (polish pack, 18 Oct 2026): the right file for its slot, a blurred preview at once, and the photo sharpening in when
- * it arrives. A photo that is already in the cache shows straight away, with no fade. */
+ * it arrives. A photo already in the cache shows straight away. A photo shown before in another slot (the card cover that becomes the
+ * page's hero in the view transition) paints that earlier file underneath while its own loads, with no blur or fade. */
 export function Img({ photo, sizes, alt = photo.alt, lazy, onError }: Props) {
   const [state, setState] = useState<'wait' | 'fade' | 'done'>('wait');
+  const before = shown.get(photo.src);
   const seen = useCallback((el: HTMLImageElement | null) => {
     if (el?.complete && el.naturalWidth > 0) setState('done');
   }, []);
-  const style = photo.blur && state !== 'done' ? ({ backgroundImage: blurImage(photo.blur) } as CSSProperties) : undefined;
+  const layers = [before && `url("${before}")`, photo.blur && blurImage(photo.blur)].filter(Boolean).join(', ');
+  const style = layers && state !== 'done' ? ({ backgroundImage: layers } as CSSProperties) : undefined;
   return (
     <img
       ref={seen}
@@ -39,7 +45,11 @@ export function Img({ photo, sizes, alt = photo.alt, lazy, onError }: Props) {
       loading={lazy ? 'lazy' : undefined}
       decoding="async"
       style={style}
-      onLoad={() => setState((s) => (s === 'wait' ? 'fade' : s))}
+      onLoad={(e) => {
+        shown.set(photo.src, e.currentTarget.currentSrc);
+        setState((s) => (s === 'wait' && !before ? 'fade' : 'done'));
+      }}
+      onAnimationEnd={(e) => { if (e.animationName === 'ph-in') setState('done'); }}
       onError={onError}
     />
   );

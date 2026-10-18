@@ -13,7 +13,7 @@ Small slice, lean process. Planned as release 19 (the Explore quiz fix, PR #72, 
   OFL, 132 KB, preloaded), `font-optical-sizing:auto`. Headings `text-wrap:balance`, reading text `pretty`. Drop cap (two lines, accent colour,
   `initial-letter` with a float fallback) on the guide's opening paragraph (`.pg-lede`). Static files stay for the map glyph builder.
 - **Scroll-linked motion** (`pages.css`, end): cover photos drift slower than the page, the region title lifts away, the page name slides into
-  the bar beside the logo (desktop, 64em and up), and an accent progress line under the bar. CSS scroll timelines only, inside
+  the bar beside the logo (desktop, 72em and up), and an accent progress line under the bar. CSS scroll timelines only, inside
   `@supports` and `prefers-reduced-motion:no-preference`. `.rcover` uses `overflow:clip` there, since `hidden` made it the title's scroller.
 
 ## Decided
