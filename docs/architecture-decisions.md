@@ -1,6 +1,7 @@
 # Atlaslope v1: architecture, services and data decisions (16 Oct 2026)
 
-Renamed from Paraje to Atlaslope on 16 Oct 2026 (product name only; repo and URLs keep Paraje until the owner renames them). Moved into the repo at the restart commit; the copy in the project files is superseded.
+Renamed from Paraje to Atlaslope on 16 Oct 2026; the repo (DjoeriT/Atlaslope) and the address (atlaslope.com) followed the same day. Moved into the repo at the restart commit; the copy in the project files is superseded.
+Words: `docs/glossary.md`. Operations (rollback, keys, third-party hosts): `docs/operations.md`. Privacy facts: `docs/privacy.md`.
 
 One page for the builder brief to stand on. Tags: **[O]** the owner decided, **[A]** my proposed default (stands unless the owner objects), **[V]** checked in the repo. When building resumes these move into `docs/PROJECT_CONTEXT.md` (decisions log) as one commit.
 
@@ -8,7 +9,7 @@ One page for the builder brief to stand on. Tags: **[O]** the owner decided, **[
 | # | Decision | Why | Tag |
 |---|---|---|---|
 | 1 | A static web app: Vite, TypeScript, MapLibre GL. No server, no database, no accounts. | Free to run, nothing to operate, works for the owner and friends. | [O] 15 Oct |
-| 2 | Hosted on GitHub Pages from the public repo; a `release-N` tag deploys. | Free, already set up and proven by releases 1 and 2. | [O] 15 Oct |
+| 2 | Hosted on GitHub Pages from the public repo; the `publish` workflow deploys a commit on `main`, then tags it `release-N` (a tag no longer deploys by itself). | Free, already set up and proven by releases 1 and 2. | [O] 15 Oct |
 | 3 | The build starts from scratch. Kept: `data/`, `data/SOURCES.md`, the data tests and the repo rules. Binned: the app code and the old plan. Mocks are reference only. | The old code grew from a different design. | [O] 16 Oct |
 | 4 | Desktop and iPad are the designed sizes. Phone works but is not polished. | It is a study-at-the-desk tool. | [A] |
 | 5 | English interface. Place names as they are officially written (Rías Baixas, Penedès). All interface text sits in one strings file, so a translation is a file and not a rewrite. | Cheap now, expensive later. | [A] |
@@ -47,7 +48,7 @@ One page for the builder brief to stand on. Tags: **[O]** the owner decided, **[
 ## 6. Map and outside services (all free)
 | # | Service | Used for | Key or cost | Tag |
 |---|---|---|---|---|
-| 21 | Esri World Imagery, keyed endpoint | Satellite, the default view | Free ArcGIS developer key, restricted to `https://djoerit.github.io`. The key is visible in the page by nature; the referrer lock is its protection. Repo secret `VITE_ESRI_API_KEY`. The owner creates the key once. | [O] 16 Oct |
+| 21 | Esri World Imagery, keyed endpoint | Satellite, the default view | Free ArcGIS developer key, restricted to `https://atlaslope.com` (see "#21 referrer" below; handling in `docs/operations.md`). The key is visible in the page by nature; the referrer lock is its protection. Repo secret `VITE_ESRI_API_KEY`. The owner creates the key once. | [O] 16 Oct |
 | 22 | Mapzen Terrarium tiles on AWS Open Data | 3D terrain and hillshade | Free, no key | [V] in use |
 | 23 | Natural Earth, bundled | Atlas base: land, sea, coast, rivers, towns. Also the offline fallback. | Public domain | [V] in mocks |
 | 24 | Köppen-Geiger climate map (Beck et al.), bundled | Climate layer | CC BY 4.0, entry in SOURCES.md first | [A] |
@@ -71,7 +72,7 @@ Nothing paid. Any new service is a question to the owner first (repo rule).
 | 32 | Every mock and screen is checked at desktop and iPad width, with large text, on the atlas and on satellite (one light theme since 18 Oct 2026). | Repo rule. | [O] rule |
 
 ## Still open (not blocking the brief)
-- A name for the app's home address: it stays `djoerit.github.io/Paraje` unless the owner wants a domain (a paid service, so his call later).
+- ~~A name for the app's home address~~: settled by #47, atlaslope.com.
 
 ## Updates from the decisions interview (16 Oct 2026)
 - **#14 refined [O]**: question type follows the box: new = what is this, learning and known = find it, solid = fact question.
@@ -96,7 +97,7 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#43 Answer log**: progress keeps every answer (place id, question type, right or wrong, time, seconds taken), and boxes are computed from it. Why: history that isn't recorded can't be rebuilt. The log lets the box rules (#16) change without resetting anyone, measures both goals (40 of 68 by session three, weekly use) from the owner's own record, and makes sync (#8) a merge. Size: tens of KB a year. Refines #19.
 - **#44 Photos in git**: commit one resized copy per photo (about 1200 px WebP, about 150 KB), never originals. Git history can't be shrunk under the no-rewrite rule, so 200 originals would stay in the repo forever.
 - **Heads-up, two-way, no card**: PostHog cookieless memory mode makes every visit a new visitor, so it cannot show retention or "comes back weekly" for friends. The owner's own goals come from the answer log. Revisit when friends join at v1.
-- **#45 [O] 10:59Z Writing licence**: code stays MIT; the owner's writing (fact sheets, guides, why lines) is all rights reserved, with a notice in the repo (a `CONTENT-LICENSE` file and a line in README) saying MIT covers code only. Photos and data keep their own licences. Repo stays public. Can be loosened later, never tightened.
+- **#45 [O] 10:59Z Writing licence**: code stays MIT; the owner's writing (fact sheets, guides, why lines) is all rights reserved, with a notice in the repo (`NOTICE.md`, first planned as `CONTENT-LICENSE`, and a line in README) saying MIT covers code only. Photos and data keep their own licences. Repo stays public. Can be loosened later, never tightened.
 - **#47 [O] 12:08Z Name and address**: the app is **Atlaslope**, at atlaslope.com (atlasslope.com redirects to it). Browser progress, shared links and the Esri key referrer use atlaslope.com from release 4. The repo and Pages path rename, wordmark and strings follow in the restart commit [A]. Because the domain is owned, the host stays a two-way door.
 - **#46 [O] 11:02Z Phasing**: Sentry (was release 3), PostHog (was release 4), the privacy note and the offline service worker (#36) move to release 8, "ready for friends". The Home Screen manifest and progress file stay in release 4; the post-deploy map check stays in release 3.
 
@@ -105,4 +106,5 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#26 and #47 timing**: atlaslope.com is connected in release 3, not "before release 4". [A, brief]
 - **#27 fetch location**: the data step runs as one GitHub Actions run, the owner's Mac only as fallback. [A, brief step 1]
 - **#40 timing**: superseded by #46; Sentry and PostHog arrive in release 8.
+- **#46 status (18 Oct 2026)**: release 8 shipped the new look instead; Sentry, PostHog and the privacy note are still not built [V]. Asked again on a card in the docs and hygiene sweep, 18 Oct.
 - **Still open, domain**: closed. atlaslope.com is bought (owner, 12:19Z).
