@@ -1,5 +1,6 @@
 # Decided 16 Oct 2026 (docs/architecture-decisions.md #38): monthly grouped PRs, security updates at once, merged by a thread on green CI.
 # Playwright is held back: it stays pinned to the browser build the cloud container ships (CLAUDE.md, "Commands"); bump it by hand with that image.
+# The ignore also silences Playwright security PRs; it is a test-only dev dependency that never ships to visitors.
 version: 2
 updates:
   - package-ecosystem: npm

@@ -33,4 +33,4 @@ Self-hosted, so no third party sees them: the app, data, photos (resized copies 
 site and keeps its own access logs (GitHub's privacy statement).
 
 ## Keep it true
-A slice that adds a storage key, a third-party host or a service updates this file, `docs/operations.md` and the CSP in the same PR.
+A slice that adds a storage key, a third-party host or a service updates this file, `docs/operations.md` and the CSP (once one exists) in the same PR.

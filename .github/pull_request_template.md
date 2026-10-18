@@ -13,6 +13,6 @@ After:
 - [ ] ReviewBot has reported (and its small findings are fixed in this PR)
 - [ ] New UI: rough look shown early; checked against `Review/visual-style.md` at desktop, iPad and phone width, large text, reduced motion
 - [ ] New data, layer, photo or fact source is in `data/SOURCES.md`
-- [ ] New third-party host: added to `docs/operations.md`, `docs/privacy.md` and the CSP
+- [ ] New third-party host: added to `docs/operations.md`, `docs/privacy.md` (and the CSP once one exists)
 - [ ] Handoff in `docs/handoffs/`; tester note `Review/release-N-what-to-test.md` if it ships
 - [ ] Issue linked (`#n`)
