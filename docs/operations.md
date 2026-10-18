@@ -15,6 +15,8 @@ The site is whatever commit the latest `release-*` tag points at. Tags are never
 
 Who may roll back: only on his words "publish release N", like any release (owner, 18 Oct 2026). When the live check fails, the thread
 tells him at once with the commit it would publish, so he can say the words.
+His card earlier that day picked "the thread rolls back, then tells you"; the cloud safety check refuses a publish without his
+words (PR #89), so that cannot run and this rule stands.
 
 If the `publish` workflow itself is broken: say so and stop. Don't deploy by hand or push a tag (a hand-pushed `release-*` tag starts
 the fallback `deploy.yml`).
@@ -32,8 +34,8 @@ An incident is anything that broke for visitors on a live release, or a near mis
 - Rule or test added: <the test that now catches it, or the rule and where it lives; "none" with a reason>
 ```
 
-How breakage is found today: the owner, and `live-map-check.yml` after every publish (and on demand). No error service yet
-(Sentry and PostHog were decided on 16 Oct, `docs/architecture-decisions.md` #40 and #46, and are not built).
+How breakage is found today: the owner, and `live-map-check.yml` after every publish (and on demand). No error service: Sentry and
+PostHog (decisions #40, #46) are postponed until just before friends get the link (owner card, 18 Oct 2026).
 
 ## Esri key
 - Repo secret `VITE_ESRI_API_KEY`, baked into the build by Vite. It is visible in the page by nature; the protection is the referrer lock

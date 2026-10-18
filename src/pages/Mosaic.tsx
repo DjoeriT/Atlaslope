@@ -3,6 +3,7 @@ import { NameCover } from '../cards/Cover';
 import { strings } from '../strings';
 import type { Pic } from './helpers';
 import { Img } from '../cards/Img';
+import { Credit } from '../cards/Credit';
 
 /** How wide each frame of the mosaic is (pages.css: a 76rem page, the first photo 2 parts of 3 (up to 3 photos) or of 4, the others 1;
  * a phone shows only the first, full width, so the others are lazy and never load there). */
@@ -32,7 +33,7 @@ export function Mosaic({ photos, name, color }: { photos: Pic[]; name: string; c
         {shown.map((p, i) => (
           <span key={p.src}>
             {i > 0 && '; '}
-            <a href={p.page} target="_blank" rel="noopener noreferrer">{p.artist}, {p.licence}</a>
+            <Credit photo={p} />
           </span>
         ))}
       </p>
