@@ -3,7 +3,7 @@ import { NameCover } from '../cards/Cover';
 import { strings } from '../strings';
 import type { Pic } from './helpers';
 import { Img } from '../cards/Img';
-import { Credit } from '../cards/Credit';
+import { Credit, oneEach } from '../cards/Credit';
 import { Lightbox } from './Lightbox';
 
 const t = strings.place;
@@ -44,7 +44,7 @@ export function Mosaic({ photos, name, color }: { photos: Pic[]; name: string; c
       </div>
       <p className="pg-credits">
         {strings.place.page.photosLine}{' '}
-        {shown.map((p, i) => (
+        {oneEach(shown).map((p, i) => (
           <span key={p.src}>
             {i > 0 && '; '}
             <Credit photo={p} />

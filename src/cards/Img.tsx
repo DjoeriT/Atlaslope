@@ -1,5 +1,6 @@
 import { useCallback, useState, type CSSProperties } from 'react';
 import type { ShownPhoto } from '../facts';
+import { creditName } from './Credit';
 
 /** The blur preview as a CSS image: the 16 px WebP drawn in an SVG with a blur that keeps the edges opaque. */
 function blurImage(b64: string): string {
@@ -44,7 +45,7 @@ export function Img({ photo, sizes, alt = photo.alt, lazy, onError }: Props) {
       alt={alt}
       // Hover says whose the photo is (owner, 18 Oct 2026: "On-hover has no texts anywhere"); decorative thumbnails stay silent. Not the alt:
       // it is still the Commons file name ("P -24x15"), which read as junk on the Vinos de Madrid card (owner, 18 Oct 2026).
-      title={alt ? `${photo.artist} · ${photo.licence}` : undefined}
+      title={alt ? `${creditName(photo.artist)} · ${photo.licence}` : undefined}
       loading={lazy ? 'lazy' : undefined}
       decoding="async"
       style={style}

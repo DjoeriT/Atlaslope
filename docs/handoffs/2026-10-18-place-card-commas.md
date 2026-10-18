@@ -12,6 +12,9 @@ Owner, 17:15Z, with a screenshot of the Vinos de Madrid card: "What's with the c
   Three tile lines in `content/tiles.json` lost their three-adjective runs.
 - Citations: "Title · 2014 · pp. 5–6" (was "Title, p. 5, p. 6, 2014"; the year now sits next to the title it dates); page runs become ranges (`pageText` in `src/facts/format.ts`).
 - Photo credits: "Name · CC BY 2.0 · resized" (was commas).
+- Credit names cleaned at the source (`clean_artist` in `Tools/data/photo_ship.py`, applied to `data/photos.json`): no "Unknown authorUnknown
+  author", no Commons template run-ons, no Flickr "from City, Country". An unknown author credits Wikimedia Commons (CC asks for a
+  name only when one is supplied). A credit line names each author and licence once; the full-screen view still credits every photo.
 - Photo hover shows only the credit, never the alt: the alts are Commons file names ("P -24x15").
 
 ## Already fixed before this slice
