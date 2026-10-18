@@ -19,7 +19,7 @@ Thread "Website slice 2" (owner go 11:55Z: "OK let's go"; plan `Review/website-p
 
 - Reviews: design check `Review/website-slice-2-design-check.md` and code review `Review/website-slice-2-code-review.md`; the should-fix
   findings are fixed (home search matches the atlas field at 44 px, Study keeps the open card, back-to-Study pill and map menu under the bar,
-  dead brand/toggle CSS removed). `Tools/check.sh ui` passed locally (107 UI tests) [V].
+  dead brand/toggle CSS removed). Locally: `Tools/check.sh` passed, the UI suite 106 of 107, then the last spec passed after its fix [V].
 
 ## Decided (owner cards)
 - 11:56Z: source names, not logos, until MAPA and IGN agree. 11:57Z: Guides and About stay out of the bar until their pages exist;
