@@ -21,16 +21,20 @@ p{text-wrap:pretty}
 
 /* The bar: the same band as the atlas's (src/styles/site.css), as plain HTML. */
 .sitebar{position:sticky;top:0;z-index:10;height:calc(var(--bar) + 1px);background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
-.sitebar .in{height:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1.25rem;padding:0 max(24px,env(safe-area-inset-right,0px)) 0 max(24px,env(safe-area-inset-left,0px))}
+/* full width with the atlas's 1 rem edge, so the logo and search sit where they sit on the atlas */
+.sitebar .in{height:100%;display:flex;align-items:center;gap:1.25rem;padding:0 max(1rem,env(safe-area-inset-right,0px)) 0 max(1rem,env(safe-area-inset-left,0px))}
 .sitebar :focus-visible{outline-color:var(--foil)}
 .sitebar .brand{display:flex;align-items:center;gap:.55rem;min-height:2.75rem;text-decoration:none;color:var(--foil);flex:none}
 .sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.25rem}
 .sitebar .mark{width:1.6rem;height:1.6rem}
 .sitebar nav{display:flex;gap:.25rem;margin-left:auto}
-.sitebar nav a,.sitebar .search{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .75rem;color:#D8CDB4;text-decoration:none;font-size:.92rem}
-.sitebar nav a:hover,.sitebar .search:hover{color:var(--foil)}
-.sitebar .search{gap:.45rem;margin-left:.5rem;padding-left:1.25rem;border-left:1px solid #3A352C;min-height:1.75rem}
-.sitebar .search svg{width:1rem;height:1rem}
+.sitebar nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .75rem;color:#D8CDB4;text-decoration:none;font-size:.92rem}
+.sitebar nav a:hover{color:var(--foil)}
+/* the atlas's search field, drawn as a link to it */
+.sitebar .search{display:flex;align-items:center;gap:.5rem;width:17rem;min-height:2.75rem;padding:0 .8rem;border-radius:.3rem;text-decoration:none;font-size:.95rem;
+  color:color-mix(in srgb,var(--foil) 70%,transparent);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);background:color-mix(in srgb,var(--foil) 8%,var(--band))}
+.sitebar .search:hover{color:var(--foil);border-color:color-mix(in srgb,var(--foil) 55%,transparent)}
+.sitebar .search svg{width:1.05rem;height:1.05rem;flex:none;color:var(--foil)}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.5rem;height:48px;padding:0 1.5rem;border-radius:var(--r-btn);font-weight:500;font-size:.95rem;text-decoration:none;white-space:nowrap}
@@ -105,9 +109,9 @@ footer small{display:block;color:var(--ink3);font-size:.8rem;margin-top:.5rem;ma
   .sitebar .brand b{display:none}
   .sitebar .in{gap:.25rem}
   .sitebar nav a{padding:0 .6rem}
-  .sitebar .search{margin-left:0;padding:0 .6rem;border-left:0}
-  .sitebar .search span{display:none}
-  .sitebar .search{min-width:44px;justify-content:center}
+  .sitebar .search{order:1;width:auto;flex:1;min-width:0}
+  .sitebar nav{order:2;margin-left:0}
+  .sitebar .search .long{display:none}
   .hero{grid-template-columns:minmax(0,1fr);min-height:0}
   .hero .txt{padding-block:3.25rem 2.5rem;padding-right:max(24px,env(safe-area-inset-right,0px))}
   .hero .map{min-height:0;aspect-ratio:1/1.1}

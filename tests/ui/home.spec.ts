@@ -49,7 +49,7 @@ test('an old #quiz link opens Study, and the address says #study', async ({ page
 test('Search on the home page opens the atlas with the search field ready', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto('../');
-  await page.getByRole('link', { name: 'Search' }).click();
+  await page.getByRole('link', { name: 'Search places and regions' }).click();
   await expect(page.getByRole('searchbox')).toBeFocused();
   await expect(page).not.toHaveURL(/#search/);
 });

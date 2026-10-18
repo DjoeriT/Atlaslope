@@ -15,7 +15,7 @@
 .sitebar nav a:hover{color:var(--foil)}
 .sitebar nav a[aria-current="page"]{color:var(--foil);font-weight:600}
 .sitebar nav a[aria-current="page"]::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:.3rem;height:2px;background:var(--foil)}
-.sitebar .search{width:17rem;min-height:2.5rem;padding:0 .8rem;border-radius:var(--rad);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);
+.sitebar .search{width:17rem;min-height:2.75rem;padding:0 .8rem;border-radius:var(--rad);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);
   background:color-mix(in srgb,var(--foil) 8%,var(--band));box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
 .sitebar .search input,.sitebar .search > svg{color:var(--foil)}
 .sitebar .search input::placeholder{color:color-mix(in srgb,var(--foil) 70%,transparent)}
