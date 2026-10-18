@@ -14,6 +14,12 @@ export function PageTop({ tree, go, back, title }: { tree: Tree; go: Go; back: S
   return (
     <>
       <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title} />
+      {/* Where people look for "back" (owner, 18 Oct 2026: "is the show map placement the best place?"): top left on a wide screen,
+          the floating button in thumb reach on a phone. CSS shows one or the other (motion.css). */}
+      <a className="pg-back" href={selectionToHash(back)} aria-label={title ? strings.topBar.showMapLabel(title) : undefined}
+        onClick={(e) => { e.preventDefault(); go(back); }}>
+        <span aria-hidden="true">‹</span> {strings.topBar.backToMap}
+      </a>
       <ShowMap go={go} back={back} name={title} />
     </>
   );

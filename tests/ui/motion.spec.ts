@@ -72,3 +72,14 @@ test('card to guide and back run as one move: only one photo carries the shared 
   await expect(page.locator('.card h1')).toHaveText('Rueda');
   expect(dup).toEqual([]);
 });
+
+test('one way back per screen: top-left Map on a wide screen, the floating Show map button on a phone', async ({ page }) => {
+  await open(page, '#place=rioja&page');
+  await expect(page.locator('.pg-back')).toBeVisible();
+  await expect(page.locator('.showmap')).toBeHidden();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.locator('.pg-back')).toBeHidden();
+  await expect(page.locator('.showmap')).toBeVisible();
+  await page.locator('.showmap').click();
+  await expect(page.locator('.card h1')).toHaveText('Rioja');
+});
