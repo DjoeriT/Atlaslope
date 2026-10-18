@@ -36,7 +36,10 @@ test('the place and region pages share the page bar, drawn over the legend and m
     const bar = page.locator('.pg-top');
     await expect(bar).toHaveCount(1);
     await expect(bar.getByRole('searchbox')).toBeVisible();
-    await expect(bar.getByRole('link', { name: 'Back to map' })).toBeVisible();
+    // One bar on every page (site visual review, 18 Oct 2026): Atlas is current, no Back to map beside it, the logo at the window's edge.
+    await expect(bar.getByRole('link', { name: 'Atlas', exact: true })).toHaveAttribute('aria-current', 'page');
+    await expect(bar.getByRole('link', { name: 'Back to map' })).toHaveCount(0);
+    expect(await bar.locator('.brand').evaluate((el) => el.getBoundingClientRect().left)).toBe(16);
     // nothing of the map shows through: the middle of the legend's box is the page (once any screen change has settled)
     await expect(page.locator('html')).not.toHaveAttribute('data-motion', /./);
     const covered = await page.evaluate(() => {
@@ -92,7 +95,7 @@ test('a card change runs as a view transition, and none runs under reduced motio
   expect(await page.evaluate(() => (window as unknown as { seen: string[] }).seen)).toEqual(['card', 'page-open']);
 
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.getByRole('link', { name: 'Back to map' }).click();
+  await page.locator('.pg-top').getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page.locator('.card h1')).toHaveText('Toro');
   expect(await page.evaluate(() => (window as unknown as { seen: string[] }).seen)).toEqual(['card', 'page-open']);
 });

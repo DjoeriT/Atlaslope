@@ -74,7 +74,8 @@ export function SpainCard({ tree, go, due, onReview }: Props) {
   const country = tree.countries[0];
   const regions = tree.regionsOf(country.id);
   const all = regions.flatMap((r) => tree.placesInRegion(r.id));
-  const covers = ['rioja', 'rias-baixas', 'jerez'].map((id) => photosOf(id)[0]).filter(Boolean);
+  // Spain leads with its own cover, not the Rioja card's (site visual review, 18 Oct 2026).
+  const covers = ['jerez', 'rias-baixas', 'rioja'].map((id) => photosOf(id)[0]).filter(Boolean);
   const dueAll = dueOf(due, regions.flatMap((r) => withZones(tree, r.id)));
   return (
     <CardShell

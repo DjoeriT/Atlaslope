@@ -7,17 +7,17 @@ async function open(page: Page, hash: string) {
   await page.goto(`./${hash}`);
 }
 
-test('the region card opens the page and Back to map returns to the card', async ({ page }) => {
+test('the region card opens the page and Atlas returns to the card', async ({ page }) => {
   await open(page, '#region=ebro');
   await page.locator('.card').getByRole('link', { name: 'Open the Navarra and Aragón page' }).click();
   await expect(page).toHaveURL(/#region=ebro&page/);
   const rpage = page.locator('.rpage');
   await expect(rpage.locator('h1')).toHaveText('Navarra and Aragón');
-  await rpage.getByRole('link', { name: 'Back to map' }).click();
+  await page.locator('.pg-top').getByRole('link', { name: 'Atlas', exact: true }).click();
   await expect(page).toHaveURL(/#region=ebro(&view=[^&]*)?$/);
   await expect(page.locator('.rpage')).toHaveCount(0);
   await expect(page.locator('.card h1')).toHaveText('Navarra and Aragón');
-  // Back to map stepped back (mobile check, 17 Oct 2026), so forward reopens the page and back from the card leaves the region.
+  // Atlas (once Back to map) stepped back (mobile check, 17 Oct 2026), so forward reopens the page and back from the card leaves the region.
   await page.goForward();
   await expect(page.locator('.rpage h1')).toBeVisible();
 });
@@ -44,7 +44,7 @@ test('a tile opens its place and the credits line is there', async ({ page }) =>
   const rpage = page.locator('.rpage');
   await expect(rpage.locator('.rcredits')).toContainText('Photos:');
   expect(await rpage.locator('.rcredits a').count()).toBeGreaterThan(0);
-  await expect(rpage.locator('.rcover .pill')).toContainText('Photo:');
+  await expect(rpage.locator('.rcover .pill a')).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//); // the small credit tag (owner, 18 Oct 2026)
   await rpage.getByRole('link', { name: /Somontano DO/ }).click();
   await expect(page).toHaveURL(/#place=somontano&page/);
   await expect(page.locator('.pg h1')).toHaveText('Somontano');

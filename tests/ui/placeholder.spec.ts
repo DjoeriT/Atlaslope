@@ -29,17 +29,20 @@ test('the bar offers Atlas and Study, and no Progress tab yet', async ({ page })
 test('the page stays light when the system is dark, with no theme switch', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.goto('./?fresh=1');
-  await page.getByRole('button', { name: 'Start exploring' }).click();
   await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.*/);
   expect(await page.evaluate(() => getComputedStyle(document.body).getPropertyValue('--paper').trim())).toBe('#FFFFFF');
   await expect(page.getByText(/Dark interface/)).toHaveCount(0); // the logo's menu is gone too (website slice 2): the logo goes home
 });
 
-test('the first-run screen shows once, and ?fresh=1 brings it back', async ({ page }) => {
+// Site visual review, 18 Oct 2026: the home page does the welcome, so the atlas shows a small note on moving the map instead of a card.
+// It takes no focus (no ring on load), and goes at the first touch of the map.
+test('the note on moving the map shows once, goes when the map is touched, and ?fresh=1 brings it back', async ({ page }) => {
   await page.goto('./?fresh=1');
-  const welcome = page.getByRole('dialog', { name: 'Welcome to AtlaSlope' });
+  const welcome = page.getByRole('complementary', { name: 'Moving the map' });
   await expect(welcome).toBeVisible();
-  await welcome.getByRole('button', { name: 'Start exploring' }).click();
+  await expect(page.locator('.card h1')).toHaveText('Spain');
+  expect(await page.evaluate(() => !!document.activeElement?.closest('.gesture-hint'))).toBe(false);
+  await page.locator('.maplibregl-canvas').click({ position: { x: 700, y: 400 } });
   await expect(welcome).toBeHidden();
   await page.goto('./');
   await expect(page.getByRole('link', { name: 'AtlaSlope home' })).toHaveAttribute('href', '../');
@@ -48,7 +51,8 @@ test('the first-run screen shows once, and ?fresh=1 brings it back', async ({ pa
   await expect(welcome).toBeVisible();
 });
 
-// Code review PR #77: with a black accent the focus ring went black on the black band; there it is champagne, elsewhere blue.
+// Code review PR #77: with a black accent the focus ring went black on the black band; there it is champagne, elsewhere black
+// (site visual review, 18 Oct 2026: the blue ring was off the palette).
 test('keyboard focus shows a champagne ring on the black top bar', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto('./#place=rioja&page');

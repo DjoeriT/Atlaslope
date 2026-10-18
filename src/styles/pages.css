@@ -14,11 +14,7 @@
 /* top bar */
 /* The top bar is the black band with champagne type (owner, 18 Oct 2026). */
 .pg-top{position:sticky;top:0;z-index:20;background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil)}
-.pg-top .pg-ttl,.pg-top .btn{color:var(--foil)}
-.pg-top .btn{border-color:color-mix(in srgb,var(--foil) 45%,transparent)}
-.pg-top .btn:hover{background:color-mix(in srgb,var(--foil) 12%,transparent)}
-.pg-top .in{max-width:76rem;margin:0 auto;padding:0 2rem}
-.pg-top .btn svg{width:1.1rem;height:1.1rem;flex:none}
+.pg-top .pg-ttl{color:var(--foil)}
 
 /* header */
 .pg-listing{max-width:76rem;margin:0 auto;padding:1.2rem 2rem 6rem}
@@ -43,8 +39,9 @@
 .pg-namecover span{font-size:clamp(3rem,8vw,5.5rem)}
 
 /* jump bar */
-.pg-jump{position:sticky;top:calc(var(--bar) + 1px);z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem -2rem 0;padding:0 2rem;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.pg-jump{position:sticky;top:calc(var(--bar) + 1px);z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem 0 0;padding:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .pg-jump a{flex:none;display:inline-flex;align-items:center;min-height:3rem;padding:0 .8rem;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink2);border-bottom:2px solid transparent}
+.pg-jump a:first-child{padding-left:0}
 .pg-jump a:hover{color:var(--ink)}
 .pg-jump a[aria-current]{color:var(--ink);border-bottom-color:var(--ink)}
 
@@ -54,24 +51,32 @@
 .pg-cols main > section:first-child{border-top:0;padding-top:0}
 .pg-cols main h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;line-height:1.2;letter-spacing:-.01em;margin:0 0 1rem}
 .pg .src{font-size:.78rem}
+.pg .src.short a{text-decoration-color:var(--line2)}
+.pg .src.short a:hover{text-decoration-color:currentColor}
+/* Sources: each document once, under the short tag it goes by beside the facts (owner card, 18 Oct 2026) */
+.pg-sources{list-style:none;margin:0;padding:0;display:grid;gap:.75rem;font-size:.9rem;color:var(--ink2);max-width:46rem}
+.pg-sources li{display:grid;grid-template-columns:10rem minmax(0,1fr);gap:1rem}
+.pg-sources b{font-weight:500;color:var(--ink)}
+.pg-sources a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.pg-sources a:hover{color:var(--accent)}
 .pg-read{font-family:var(--serif);font-size:1.25rem;line-height:1.6;margin:0;max-width:38rem}
-.pg-h3{font:600 .8rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 .5rem}
-.pg p{max-width:46rem}
+.pg-h3{font:600 .78rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 .5rem}
+.pg p{max-width:38rem} /* one measure for running text, about 70 characters (site visual review, 18 Oct 2026) */
 
 .pg-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem}
 .pg-cards > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper)}
-.pg-cards b{display:block;font:500 1.15rem var(--serif);margin-bottom:.3rem}
-.pg-cards p{margin:0;color:var(--ink2);font-size:.95rem}
+.pg-cards b{display:block;font:500 1.25rem var(--serif);margin-bottom:.3rem}
+.pg-cards p{margin:0;color:var(--ink2);font-size:1rem}
 .pg-cards p::first-letter{text-transform:uppercase}
 .pg-sw{display:block;width:2rem;height:2rem;border-radius:50%;margin-bottom:.8rem;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
 .pg-sw.red{background:var(--wine-red)}.pg-sw.white{background:var(--wine-white)}.pg-sw.rose{background:var(--wine-rose)}
 
 .pg-styles{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.9rem}
-.pg-styles strong{font:500 1.15rem var(--serif);display:block}
+.pg-styles strong{font:500 1.25rem var(--serif);display:block}
 .pg-styles span{color:var(--ink2)}
 
 .pg-grapes{display:flex;gap:.8rem;flex-wrap:wrap;list-style:none;margin:0 0 .4rem;padding:0}
-.pg-grapes li{border:1px solid var(--line);border-radius:var(--rad-card);padding:.7rem 1.1rem;font:500 1.15rem var(--serif)}
+.pg-grapes li{border:1px solid var(--line);border-radius:var(--rad-card);padding:.7rem 1.1rem;font:500 1.25rem var(--serif)}
 .pg-rows{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.7rem 1rem;margin:1.2rem 0 0}
 .pg-rows dt{color:var(--ink3)}
 .pg-rows dd{margin:0}
@@ -83,7 +88,7 @@
 .pg-land{display:grid;grid-template-columns:1fr 1fr;gap:2rem 2.5rem}
 .pg-land p{margin:0 0 .3rem;color:var(--ink2)}
 .pg-stack{display:block;width:100%;height:.8rem;border-radius:.25rem;overflow:hidden;margin:.7rem 0 .5rem}
-.pg-legend{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;list-style:none;margin:0 0 .3rem;padding:0;font-size:.85rem;color:var(--ink2)}
+.pg-legend{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;list-style:none;margin:0 0 .3rem;padding:0;font-size:.9rem;color:var(--ink2)}
 .pg-legend li{display:inline-flex;align-items:center;gap:.4rem}
 .pg-legend i{width:.8rem;height:.8rem;border-radius:.2rem;display:inline-block}
 .pg-range{position:relative;height:3.6rem;margin:.4rem 0 .3rem}
@@ -91,30 +96,30 @@
 .pg-range .track{fill:var(--paper2)}
 .pg-range .fill{fill:var(--tint2)}
 .pg-range .tick{stroke:var(--accent);stroke-width:2}
-.pg-range span{position:absolute;font-size:.8rem;white-space:nowrap}
+.pg-range span{position:absolute;font-size:.78rem;white-space:nowrap}
 .pg-range .mid{top:0;transform:translateX(-50%);color:var(--accent);font-weight:600}
 .pg-range .lo,.pg-range .hi{top:2.2rem;color:var(--ink2)}
 .pg-range .lo{padding-right:.35rem}.pg-range .hi{padding-left:.35rem}
 
 .pg-names{list-style:none;margin:0;padding:0}
-.pg-names li{font:500 1.2rem var(--serif)}
+.pg-names li{font:500 1.25rem var(--serif)}
 
 .pg-zones{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.4rem}
 .pg-zones .zlink{display:block;text-decoration:none;border-radius:var(--rad-card)}
 .pg-zones img,.pg-zones .zblank{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rad-card)}
 .pg-zones .zblank{opacity:.35}
-.pg-zones b{display:block;font:500 1.15rem var(--serif);margin-top:.6rem}
+.pg-zones b{display:block;font:500 1.25rem var(--serif);margin-top:.6rem}
 .pg-zones .zlink:hover b{text-decoration:underline;text-underline-offset:3px}
 .pg-zones p{margin:.2rem 0 0;color:var(--ink3);font-size:.9rem}
 
 .pg-next{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
 .pg-next .nextlink{text-decoration:none;text-align:right;min-height:2.75rem}
-.pg-next .nextlink b{display:block;font:500 1.4rem var(--serif)}
+.pg-next .nextlink b{display:block;font:500 1.25rem var(--serif)}
 .pg-next .nextlink:hover b{text-decoration:underline;text-underline-offset:3px}
 
 /* at a glance */
 .pg aside .sticky{position:sticky;top:8rem;border:1px solid var(--line);border-radius:var(--rad-card);box-shadow:var(--shadow);background:var(--paper);padding:1.2rem 1.3rem 1.3rem}
-.pg aside h2{font:500 1.35rem var(--serif);margin:0}
+.pg aside h2{font:500 1.25rem var(--serif);margin:0}
 .pg aside dl{margin:1rem 0 1.2rem;font-size:.9rem}
 .pg aside dl div{display:flex;justify-content:space-between;gap:1rem;padding:.35rem 0}
 .pg aside dt{color:var(--ink3)}
@@ -129,45 +134,47 @@
   .pg-mosaic[data-n="4"] figure:nth-child(4),.pg-mosaic[data-n="5"] figure:nth-child(n+4){display:none}
 }
 @media (max-width:47.5em){
-  .pg-top .in{padding:0 1rem}
-  .pg-top .search{display:none}
   .pg-listing{padding:1rem 1rem 6rem}
   .pg-mosaic{grid-template-columns:1fr!important;grid-template-rows:1fr!important;height:62vw;border-radius:0;margin:1rem -1rem 0}
   .pg-mosaic figure{grid-row:auto!important;grid-column:auto!important}
   .pg-mosaic figure:nth-child(n+2){display:none}
   .pg-land{grid-template-columns:1fr}
   .pg-rows{grid-template-columns:1fr;gap:.2rem}
+  .pg-sources li{grid-template-columns:1fr;gap:0}
   .pg-rows dd{margin-bottom:.7rem}
   .pg-jump{margin:1.4rem -1rem 0;padding:0 1rem}
 }
 /* Release 9 review: each "at a glance" value links to the section with its source */
 .srcbtn{appearance:none;border:0;background:none;padding:.35rem 0;margin-left:.25rem;font:inherit;font-size:.78rem;color:var(--ink3);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
 .srcbtn:hover{color:var(--accent)}
+/* The link stays small text, but its tap area is 44 px tall and wide (site visual review, 18 Oct 2026). */
+.srcbtn{position:relative}
+.srcbtn::before{content:"";position:absolute;left:50%;top:50%;width:max(100%,2.75rem);height:2.75rem;transform:translate(-50%,-50%)}
 
 /* Release 10: the terroir section (mock-guides-v1/1-place-guide.html), the fly-there pills and the Test me box */
 .pg .pg-kicker{margin:0 0 .5rem;color:var(--foil-ink)}
 .pg-sub a{color:var(--accent);text-underline-offset:2px}
-.pg-ch{margin-top:2.2rem;max-width:40rem}
+.pg-ch{margin-top:2rem;max-width:38rem}
 .pg-ch:has(.pg-zguide){max-width:none}
 .pg-ch h3{font:500 1.25rem/1.3 var(--serif);margin:0 0 .6rem;text-transform:none;letter-spacing:normal;color:var(--ink)}
 .pg-ch h3:focus{outline:none}
 .pg-ch h3:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .pg-ch p{margin:0 0 .8rem;color:var(--ink2);max-width:38rem}
 .pg-flies{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .4rem}
-.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:.25rem;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.92rem;line-height:1.2}
+.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:.25rem;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.9rem;line-height:1.2}
 .pg .fly .icon{width:1.2rem;height:1.2rem;color:var(--accent);flex:none}
-.pg .fly small{display:block;font-size:.7rem;color:var(--ink3);letter-spacing:.04em}
+.pg .fly small{display:block;font-size:.72rem;color:var(--ink3);letter-spacing:.04em}
 .pg .fly:hover{border-color:var(--accent)}
 .pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
 .pg-zguide > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
-.pg-zguide b{font:500 1.15rem var(--serif);margin-bottom:.4rem}
-.pg-zguide p{font-size:.92rem;margin:0 0 .6rem}
+.pg-zguide b{font:500 1.25rem var(--serif);margin-bottom:.4rem}
+.pg-zguide p{font-size:.9rem;margin:0 0 .6rem}
 .pg-zguide p.cl{color:var(--ink3)}
 .pg-zguide .fly{margin-top:auto;align-self:flex-start}
 .pg-testme{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:var(--rad-card);background:var(--paper2)}
 .pg-cols main > .pg-testme{margin:0 0 2rem}
 .pg-testme b{display:block;font:500 1.25rem var(--serif)}
-.pg-testme span{color:var(--ink2);font-size:.92rem}
+.pg-testme span{color:var(--ink2);font-size:.9rem}
 .pg-testme .btn.accent{flex:none}
 .pg .btn.accent{border-color:var(--accent);color:var(--accent)}
 .pg .btn.accent:hover{background:var(--accent);color:var(--accent-ink)}
@@ -190,7 +197,7 @@
   @media (prefers-reduced-motion:no-preference) and (min-width:72em){
     .pg-top .brand{position:relative}
     .pg-ttl{display:block;position:absolute;left:calc(100% + .9rem);top:50%;max-width:clamp(0rem,50vw - 24rem,16rem);overflow:hidden;
-      text-overflow:ellipsis;white-space:nowrap;font:500 1.15rem var(--serif);color:var(--ink);pointer-events:none;
+      text-overflow:ellipsis;white-space:nowrap;font:500 1.25rem var(--serif);color:var(--ink);pointer-events:none;
       padding-left:.9rem;border-left:1px solid var(--line2);
       opacity:0;transform:translateY(-20%);animation:pg-ttl-in linear both;animation-timeline:--title;animation-range:exit 40% exit 100%}
   }

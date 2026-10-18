@@ -61,7 +61,7 @@ export function RegionPage({ tree, go, region }: { tree: Tree; go: Go; region: R
           </nav>
           <h1 ref={heading} tabIndex={-1}>{region.name}</h1>
         </div>
-        {cover && <span className="pill">{t.coverCredit} {credit(cover)}</span>}
+        {cover && <span className="pill">{credit(cover)}</span>}
       </header>
       <div className="rintro">
         <p>{t.lede(places.length)}</p>

@@ -8,7 +8,7 @@
 .rcover .kicker{color:inherit;opacity:.9;display:flex;gap:.35rem}
 .rcover h1{font:400 clamp(3rem,8vw,6.5rem)/.95 var(--serif);letter-spacing:-.03em;margin:.6rem 0 0}
 .rcover h1:focus{outline:none}
-.rcover .pill{position:absolute;right:1rem;bottom:1rem;z-index:2;font-size:.78rem;background:var(--paper);color:var(--ink);padding:.3rem .7rem;border-radius:.25rem;box-shadow:var(--shadow)}
+.rcover .pill{position:absolute;right:.6rem;bottom:.6rem;z-index:2;font-size:.7rem;line-height:1.3;background:rgba(0,0,0,.55);color:#fff;padding:.05rem .35rem;border-radius:.2rem}
 .rcover .pill a{text-decoration:underline;text-underline-offset:2px}
 .rintro{max-width:76rem;margin:0 auto;padding:3rem 2rem 2rem;display:grid;grid-template-columns:minmax(0,40rem) 1fr;gap:3rem;align-items:end}
 .rintro p{font:400 1.25rem/1.55 var(--serif);color:var(--ink2);margin:0}
@@ -21,17 +21,17 @@
 .rtile a:hover .ph img{transform:scale(1.03)}
 .rtile .ph.none{display:flex;align-items:center;justify-content:center;padding:1rem;text-align:center;font:500 1.6rem/1.15 var(--serif);color:var(--ink2)}
 .rtile .meta{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;margin-top:.75rem}
-.rtile .meta b{font:500 1.3rem var(--serif)}
-.rtile .meta small{color:var(--ink3);font-size:.85rem;white-space:nowrap}
-.rtile .why{display:block;margin-top:.25rem;color:var(--ink2);font-size:.92rem}
+.rtile .meta b{font:500 1.25rem var(--serif)}
+.rtile .meta small{color:var(--ink3);font-size:.9rem;white-space:nowrap}
+.rtile .why{display:block;margin-top:.25rem;color:var(--ink2);font-size:.9rem}
 .rcredits{max-width:76rem;margin:1.2rem auto 0;padding:0 2rem;font-size:.78rem;color:var(--ink3)}
 .rcredits a{text-decoration:underline;text-underline-offset:2px}
 .ralso{max-width:72rem;width:calc(100% - 4rem);margin:3rem auto 0;padding:2rem 0 0;border-top:1px solid var(--line)}
-.ralso h2{font:400 1.6rem var(--serif);margin:0 0 .3rem;padding:0;border:0}
-.ralso p{color:var(--ink3);margin:0 0 1.2rem;font-size:.92rem}
+.ralso h2{font:500 1.6rem var(--serif);margin:0 0 .3rem;padding:0;border:0}
+.ralso p{color:var(--ink3);margin:0 0 1.2rem;font-size:.9rem}
 .ralso ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 2rem}
-.ralso a{display:flex;justify-content:space-between;align-items:center;min-height:3.2rem;border-bottom:1px solid var(--line);text-decoration:none;font:400 1.15rem var(--serif)}
-.ralso a small{font:400 .8rem var(--sans);color:var(--ink3)}
+.ralso a{display:flex;justify-content:space-between;align-items:center;min-height:3.2rem;border-bottom:1px solid var(--line);text-decoration:none;font:400 1.25rem var(--serif)}
+.ralso a small{font:400 .78rem var(--sans);color:var(--ink3)}
 .ralso a:hover{color:var(--accent)}
 .rend{max-width:72rem;width:calc(100% - 4rem);margin:3rem auto 0;padding:2rem 0 6rem;border-top:1px solid var(--line)}
 .rcover .kicker span{color:inherit}

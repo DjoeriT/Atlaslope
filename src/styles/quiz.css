@@ -1,23 +1,23 @@
 /* Playing a round (release 7 card 4): from the approved mock's quiz.css and app.css, on the app's tokens. */
-.q-num{font-size:.85rem;color:var(--ink3);display:flex;justify-content:space-between;align-items:center}
+.q-num{font-size:.9rem;color:var(--ink3);display:flex;justify-content:space-between;align-items:center}
 .dots{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.5rem}
 .dots i{width:1.1rem;height:.35rem;border-radius:.2rem;background:var(--line)}
 .dots i.ok{background:var(--ok)}
 .dots i.bad{background:var(--bad);border-radius:0}
 .dots i.cur{background:var(--ink)}
 .dots+.kicker,.dots+.intro-h{margin-top:1rem}
-.q{font-family:var(--serif);font-size:1.7rem;line-height:1.2;margin:.6rem 0 .4rem;font-weight:500}
+.q{font-family:var(--serif);font-size:1.6rem;line-height:1.2;margin:.6rem 0 .4rem;font-weight:500}
 .q em{color:var(--accent);font-style:normal;font-weight:600}
 .q:focus,#result:focus,.score:focus{outline:none}
-.status{font-size:.95rem;color:var(--ink2);margin:.2rem 0 0;min-height:1.4em}
+.status{font-size:1rem;color:var(--ink2);margin:.2rem 0 0;min-height:1.4em}
 .choices{display:grid;gap:.5rem;margin-top:.9rem}
-.choice{border:1.5px solid var(--line);background:transparent;border-radius:var(--rad);padding:.8rem 1rem;font:inherit;font-size:1.05rem;text-align:left;cursor:pointer;color:var(--ink);min-height:3.2rem;display:flex;align-items:center;gap:.8rem}
-.choice b{width:1.7rem;height:1.7rem;border-radius:50%;border:1.5px solid var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;flex:none}
+.choice{border:1.5px solid var(--line);background:transparent;border-radius:var(--rad);padding:.8rem 1rem;font:inherit;font-size:1rem;text-align:left;cursor:pointer;color:var(--ink);min-height:3.2rem;display:flex;align-items:center;gap:.8rem}
+.choice b{width:1.7rem;height:1.7rem;border-radius:50%;border:1.5px solid var(--ink3);display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;flex:none}
 .choice.ok{border-color:var(--ok)}
 .choice.ok b{background:var(--ok);border-color:var(--ok);color:#fff}
 .choice.bad{border-color:var(--bad)}
 .choice.bad b{background:var(--bad);border-color:var(--bad);color:#fff}
-.feedback{margin-top:.9rem;padding:.75rem .9rem;border-radius:var(--rad);border:1.5px solid var(--ok);font-size:.95rem;display:flex;gap:.6rem}
+.feedback{margin-top:.9rem;padding:.75rem .9rem;border-radius:var(--rad);border:1.5px solid var(--ok);font-size:1rem;display:flex;gap:.6rem}
 .feedback.bad{border-color:var(--bad)}
 .facts.reveal{margin-top:.8rem;padding-top:.6rem;border-top:1px solid var(--line)}
 .autonext{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--ink2);margin-top:.6rem}
@@ -28,20 +28,20 @@
 .undo{font-size:.9rem;background:var(--fill);border-radius:var(--rad);padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
 .linkbtn{appearance:none;border:0;background:transparent;font:inherit;color:var(--accent);font-weight:600;cursor:pointer;min-height:2.75rem;padding:0 .4rem;text-decoration:underline}
 .linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer}
-.score{font-family:var(--serif);font-size:4rem;line-height:1;margin:.3rem 0 .2rem}
-.score small{font-size:1.5rem;color:var(--ink3)}
-.row{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--ink2);margin-top:.5rem}
+.score{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3rem 0 .2rem}
+.score small{font-size:1.6rem;color:var(--ink3)}
+.row{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--ink2);margin-top:.5rem}
 .row>span:first-child{width:7rem}
 .bar{flex:1;height:.4rem;background:var(--line);border-radius:.2rem;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--ok)}
 .list.misses{list-style:none;margin:.4rem 0 0;padding:0}
 .list.misses li{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.2rem 0;border-bottom:1px solid var(--line)}
 .list.misses a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500}
-.tag{font-size:.8rem;color:var(--bad);font-weight:600;text-align:right}
+.tag{font-size:.78rem;color:var(--bad);font-weight:600;text-align:right}
 .note a{color:var(--accent);font-weight:500}
 
 /* The doors, focus, practise, progress file and Today card (release 7 card 5): from the approved mocks, on the app tokens. */
-h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:1.3rem 0 .5rem;font-weight:600}
+h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin:1.3rem 0 .5rem;font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem}
 .chip{border:1px solid var(--line2);background:transparent;border-radius:.25rem;padding:.45rem .9rem;font:inherit;font-size:.9rem;cursor:pointer;color:var(--ink);min-height:2.75rem;display:inline-flex;align-items:center;gap:.5rem}
 .chip[aria-checked="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
@@ -50,15 +50,22 @@ h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink
 .today{list-style:none;margin:.6rem 0 0;padding:0}
 .today li{display:flex;align-items:center;gap:.8rem;padding:.7rem 0;border-top:1px solid var(--line)}
 .today li a{text-decoration:none;flex:1;display:flex;flex-direction:column;gap:.15rem;min-height:2.75rem;justify-content:center}
-.today li a b{font-family:var(--serif);font-weight:500;font-size:1.1rem}
-.today li a small{color:var(--ink3);font-size:.85rem}
+.today li a b{font-family:var(--serif);font-weight:500;font-size:1rem}
+.today li a small{color:var(--ink3);font-size:.9rem}
 .today li .bar{flex:0 0 5.5rem}
-.door{border:1px solid var(--line);border-radius:var(--rad-card);padding:1rem 1.1rem;margin:1rem 0}
-.door h2{border-top:0;padding-top:0;margin:0 0 .25rem;font-family:var(--serif);font-size:1.35rem;font-weight:600}
-.door p{margin:.25rem 0 .6rem;color:var(--ink2)}
-.door .big{font-size:1.15rem;color:var(--ink);margin:.6rem 0 .2rem}
+/* Study and Review are flat sections under a hairline, not cards inside the card, with 1 rem above their buttons (site visual review,
+   18 Oct 2026). */
+.door{border-top:1px solid var(--line);padding:1.5rem 0 0;margin:1.5rem 0 0}
+.door h2{border-top:0;padding-top:0;margin:0 0 .25rem;font-family:var(--serif);font-size:1.25rem;font-weight:500}
+.door p{margin:.25rem 0 0;color:var(--ink2)}
+.door > .btn{margin-top:1rem}
+.door .big{font-size:1.25rem;color:var(--ink);margin:.6rem 0 .2rem}
 .door .sub{font-size:.9rem}
 .btn.wide{width:100%;justify-content:center}
+/* The learn step: one full-width Got it, the link to the place under it on the left edge, as on the atlas card. */
+.intro-foot{flex-direction:column;align-items:stretch}
+.intro-foot .btn.primary{width:100%;justify-content:center}
+.intro-foot .btn.quiet{justify-content:flex-start;text-align:left;padding-left:0;padding-right:0;white-space:normal}
 .btn.off{background:transparent;color:var(--ink3);border-color:var(--line);cursor:not-allowed}
 .focusline{font-size:.9rem;margin:.7rem 0 0!important;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
 .focusline a,.note a{color:var(--accent);font-weight:500}
@@ -70,7 +77,7 @@ h3{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink
 .x svg{width:1rem;height:1rem}
 .tree summary{display:flex;align-items:center;justify-content:space-between;gap:.5rem;min-height:2.75rem;cursor:pointer;list-style:none}
 .tree summary::-webkit-details-marker{display:none}
-.tree summary::after{content:"›";color:var(--ink3);font-size:1.2rem;transition:transform .15s}
+.tree summary::after{content:"›";color:var(--ink3);font-size:1.25rem;transition:transform .15s}
 .tree details[open] summary::after{transform:rotate(90deg)}
 .tree summary small{color:var(--ink3);margin-left:auto}
 .tree summary>label{flex:1}

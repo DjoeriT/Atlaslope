@@ -1,18 +1,12 @@
 import { SiteBar } from '../app/TopBar';
-import { Link, type Go } from '../cards/Link';
-import { strings } from '../strings';
+import type { Go } from '../cards/Link';
 import type { Tree } from '../tree';
-import { SPAIN, type Selection } from '../url';
+import type { Selection } from '../url';
 
-/** The bar over every full page (place and region alike; UX sweep, 17 Oct 2026): the site's bar, with Back to map on the right.
+/** The bar over every full page (place and region alike): the site's own bar, the same as on the atlas, with Atlas marked current
+ * since a guide is part of the atlas. Atlas goes back to the page's place on the map (site visual review, 18 Oct 2026: one bar on every
+ * page, no "Back to map" beside Atlas, two controls that meant the same).
  * `title` is the page's name, which slides into the bar once the big title has scrolled away (pages.css, scroll-linked motion). */
 export function PageTop({ tree, go, back, title }: { tree: Tree; go: Go; back: Selection; title?: string }) {
-  return (
-    <SiteBar tree={tree} onOpen={go} current={null} onAtlas={() => go(SPAIN)} className="pg-top" title={title}>
-      <Link className="btn" to={back} go={go}>
-        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M9 4L3 6.5v13L9 17l6 2.5 6-2.5v-13L15 7zM9 4v13M15 7v12.5" /></svg>
-        {strings.place.page.backToMap}
-      </Link>
-    </SiteBar>
-  );
+  return <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title} />;
 }

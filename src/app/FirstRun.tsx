@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { strings } from '../strings';
 
 const KEY = 'atlaslope-first-run';
@@ -8,37 +8,42 @@ function alreadySeen(): boolean {
   try { return localStorage.getItem(KEY) === 'seen'; } catch { return false; }
 }
 
-/** Shown once per browser; "Start exploring" remembers that it was seen. */
+/** Shown once per browser: a small note on how to move the map, over the map's top edge. The home page now does the welcome, so the
+ * atlas opens straight on the map (site visual review, 18 Oct 2026); the note goes at the first touch of the map, or with its close
+ * button, and is remembered. It takes no focus, so no ring shows unless the keyboard reaches it. */
 export function FirstRun() {
   const [visible, setVisible] = useState(() => !alreadySeen());
-  const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => { if (visible) buttonRef.current?.focus(); }, [visible]);
+  useEffect(() => {
+    if (!visible) return;
+    const dismiss = () => {
+      try { localStorage.setItem(KEY, 'seen'); } catch { /* storage blocked: it shows again next visit */ }
+      setVisible(false);
+    };
+    const onMap = (e: Event) => { if ((e.target as Element | null)?.closest?.('.maplibregl-canvas-container, .gesture-hint .x')) dismiss(); };
+    window.addEventListener('pointerdown', onMap, true);
+    window.addEventListener('wheel', onMap, { capture: true, passive: true });
+    window.addEventListener('click', onMap, true);
+    return () => {
+      window.removeEventListener('pointerdown', onMap, true);
+      window.removeEventListener('wheel', onMap, true);
+      window.removeEventListener('click', onMap, true);
+    };
+  }, [visible]);
   if (!visible) return null;
 
-  const dismiss = () => {
-    try { localStorage.setItem(KEY, 'seen'); } catch { /* storage blocked: it shows again next visit */ }
-    setVisible(false);
-  };
-
   return (
-    <section className="card glass first" role="dialog" aria-label={t.label}>
-      <div className="body">
-        <div className="kicker">{t.kicker}</div>
-        <h1>{strings.appName}</h1>
-        <p className="lede">{t.lede}</p>
-        <h3>{t.hintsTitle}</h3>
-        <ul className="hints">
-          {t.hints.map((parts) => (
-            <li key={parts[0]}>
-              {parts.map((text, i) => (i % 2 === 0 ? <b key={i}>{text}</b> : text))}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="foot">
-        <button ref={buttonRef} className="btn primary" onClick={dismiss}>{t.start}</button>
-      </div>
-    </section>
+    <aside className="gesture-hint glass" aria-label={t.label}>
+      <ul>
+        {t.hints.map((parts) => (
+          <li key={parts[0]}>
+            {parts.map((text, i) => (i % 2 === 0 ? <b key={i}>{text}</b> : text))}
+          </li>
+        ))}
+      </ul>
+      <button type="button" className="x" aria-label={t.close}>
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </aside>
   );
 }

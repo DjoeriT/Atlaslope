@@ -6,7 +6,7 @@
   --glass:rgba(255,255,255,.94);--glass2:rgba(255,255,255,.8);--edge:#E8E3D9;
   --ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;--line:#E8E3D9;--line2:#D8CFBF;--fill:#F7F5F0;
   --band:#141414;--foil:#E9D8B4;--foil-ink:#7D6540;
-  --accent:#141414;--accent-ink:#E9D8B4;--ok:#2F6B3E;--bad:#A3371F;--focus:#2F5F9E;
+  --accent:#141414;--accent-ink:#E9D8B4;--ok:#2F6B3E;--bad:#A3371F;--focus:#141414;
   --shadow:0 0 0 1px rgba(20,20,20,.06),0 8px 24px rgba(0,0,0,.1);
   --shadow-lg:0 0 0 1px rgba(20,20,20,.06),0 18px 44px rgba(0,0,0,.16);
   --rad:.3rem;--rad-card:.4rem;
@@ -27,21 +27,21 @@ a{color:inherit}
 .mark{--accent:var(--foil);--accent-ink:var(--band)}
 .search{display:flex;align-items:center;gap:.5rem;padding:0 .9rem;min-height:2.75rem;width:19rem}
 .search svg{width:1.05rem;height:1.05rem;flex:none;color:var(--ink3)}
-.search input{border:0;background:transparent;font:inherit;font-size:.95rem;color:var(--ink);width:100%;outline:none}
+.search input{border:0;background:transparent;font:inherit;font-size:1rem;color:var(--ink);width:100%;outline:none}
 .search input::placeholder{color:var(--ink3)}
 .iconbtn.glass{background:var(--glass);border:1px solid var(--edge)}
 .iconbtn[aria-pressed="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
-.iconbtn.text{font-weight:600;font-size:.85rem;letter-spacing:.04em}
+.iconbtn.text{font-weight:600;font-size:.9rem;letter-spacing:.04em}
 .iconbtn{background:transparent;border:0;width:2.75rem;height:2.75rem;display:inline-flex;align-items:center;justify-content:center;font:inherit;color:var(--ink);cursor:pointer;border-radius:var(--rad)}
 .iconbtn svg{width:1.25rem;height:1.25rem;color:var(--ink)}
 .bottomright .iconbtn{color:var(--ink)}
 .menu{position:absolute;right:1rem;top:4.4rem;z-index:6;padding:.6rem;min-width:15rem}
 .menu h4{margin:.3rem .6rem .2rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600}
-.menu label{display:flex;align-items:center;gap:.7rem;padding:.5rem .6rem;border-radius:var(--rad);min-height:2.75rem;cursor:pointer;font-size:.95rem}
+.menu label{display:flex;align-items:center;gap:.7rem;padding:.5rem .6rem;border-radius:var(--rad);min-height:2.75rem;cursor:pointer;font-size:1rem}
 .menu label:hover{background:var(--line)}
 .menu input{accent-color:var(--accent);width:1.1rem;height:1.1rem;margin:0}
-.menu small{color:var(--ink3);font-size:.8rem;margin-left:auto}
-.bottomright{position:absolute;right:1rem;bottom:1.6rem;display:flex;flex-direction:column;gap:.4rem;z-index:6} /* above the imagery note, so the open map menu is never under it */
+.menu small{color:var(--ink3);font-size:.78rem;margin-left:auto}
+.bottomright{position:absolute;right:1rem;bottom:2.75rem;display:flex;flex-direction:column;gap:.4rem;z-index:6} /* above the imagery note, so the open map menu is never under it */
 .bottomright .iconbtn{border-radius:var(--rad)}
 .bottomright .glass{display:flex;flex-direction:column;padding:.2rem}
 
@@ -52,29 +52,34 @@ a{color:inherit}
 .card .foot{padding:.9rem 1.4rem;border-top:1px solid var(--line);box-shadow:0 -14px 14px -14px rgba(0,0,0,.3);position:relative;display:flex;gap:.6rem;flex-wrap:wrap;flex:none}
 .kicker{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:600}
 h1{font-family:var(--serif);font-weight:500;font-size:2.3rem;line-height:1.02;margin:.15rem 0 .4rem;letter-spacing:-.015em}
-h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
-.facts{display:grid;grid-template-columns:7.5rem 1fr;gap:.55rem .9rem;margin:.9rem 0 0;font-size:.95rem}
+h2{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:1.6rem 0 .6rem;padding-top:1.2rem;border-top:1px solid var(--line)}
+.facts{display:grid;grid-template-columns:7.5rem 1fr;gap:.55rem .9rem;margin:.9rem 0 0;font-size:1rem}
 .facts dt{color:var(--ink3)}.facts dd{margin:0}
-.btn{appearance:none;font:inherit;font-size:.95rem;font-weight:500;border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:var(--rad);padding:.6rem 1.1rem;min-height:2.75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
+.btn{appearance:none;font:inherit;font-size:1rem;font-weight:500;border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:var(--rad);padding:.6rem 1.1rem;min-height:2.75rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
 .btn:hover{border-color:var(--ink)}
 .btn.primary:hover{filter:brightness(1.08)}
 .btn.quiet{border-color:transparent;color:var(--ink2)}
-.first{width:30rem}
-.hints{margin:.3rem 0 0;padding-left:1.1rem;font-size:.92rem;color:var(--ink2)}
-.hints li{margin:.25rem 0}
-@media (max-width:68.75em){.first{width:24rem}}
+/* The first-run note on moving the map (FirstRun.tsx): three short lines over the map's top edge, clear of the card and the legend. */
+.gesture-hint{position:absolute;top:1rem;left:27rem;right:17rem;margin-inline:auto;width:fit-content;max-width:26rem;z-index:6;display:flex;align-items:flex-start;gap:.25rem;padding:.5rem .25rem .5rem 1rem;font-size:.9rem;color:var(--ink2)}
+.gesture-hint ul{list-style:none;margin:0;padding:.25rem 0}
+.gesture-hint li{margin:.15rem 0}
+.gesture-hint b{color:var(--ink);font-weight:600}
+.gesture-hint .x{flex:none;display:grid;place-items:center;width:2.75rem;height:2.75rem;border:0;background:transparent;color:var(--ink2);border-radius:var(--rad);cursor:pointer}
+.gesture-hint .x:hover{color:var(--ink);background:var(--paper2)}
+.gesture-hint .x svg{width:1.1rem;height:1.1rem}
+@media (max-width:51.25em){.gesture-hint{left:.75rem;right:.75rem;top:4.25rem;max-width:none;width:auto}} /* under the folded legend */
 
 
 /* Cards: Spain, region and place (approved mock 14 to 16) */
-.lede{font-family:var(--serif);font-size:1.1rem;line-height:1.4;color:var(--ink2);margin:0 0 .4rem}
-.note{font-size:.8rem;color:var(--ink3);margin-top:.9rem}
+.lede{font-family:var(--serif);font-size:1rem;line-height:1.4;color:var(--ink2);margin:0 0 .4rem}
+.note{font-size:.78rem;color:var(--ink3);margin-top:.9rem}
 .card h1:focus{outline:none}
 .card h1:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .card .close{position:absolute;right:.6rem;top:.6rem;z-index:1}
 .card h1{padding-right:2.5rem}
 .crumb{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;letter-spacing:.06em}
-.crumb a{text-decoration:none;color:var(--ink3);min-height:2.75rem;display:inline-flex;align-items:center}
+.crumb a{text-decoration:none;color:var(--ink3);min-height:2.75rem;min-width:2.75rem;display:inline-flex;align-items:center}
 .facts dd a{display:inline-flex;align-items:center;min-height:2.75rem}
 .crumb a:hover{color:var(--accent);text-decoration:underline}
 .crumb span{color:var(--ink2)}
@@ -82,18 +87,18 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .tree li{display:flex;align-items:center;gap:.7rem;border-top:1px solid var(--line)}
 .tree li i{width:.9rem;height:.9rem;border-radius:.25rem;border:1px solid var(--line2);flex:none}
 .tree li a{flex:1;display:flex;flex-direction:column;text-decoration:none;min-height:2.9rem;justify-content:center;padding:.3rem 0}
-.tree li a b{font-family:var(--serif);font-weight:500;font-size:1.05rem}
-.tree li a small{color:var(--ink3);font-size:.82rem}
-.tree li .go{color:var(--ink3);font-size:1.2rem}
+.tree li a b{font-family:var(--serif);font-weight:500;font-size:1rem}
+.tree li a small{color:var(--ink3);font-size:.78rem}
+.tree li .go{color:var(--ink3);font-size:1.25rem}
 .facts dd a{color:var(--ink)}
 .facts dd ul{list-style:none;margin:0;padding:0}
 .facts dd li{min-height:1.6rem}
 .facts .named li{margin-bottom:.2rem}.facts .named strong{font-weight:600}
 .results{position:absolute;left:0;right:0;top:calc(100% + .4rem);z-index:8;padding:.3rem;margin:0;list-style:none}
-.results a,.results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:var(--rad);min-height:2.75rem;text-decoration:none;font-size:.95rem;color:var(--ink)}
+.results a,.results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:var(--rad);min-height:2.75rem;text-decoration:none;font-size:1rem;color:var(--ink)}
 .results p{margin:0;color:var(--ink3)}
 .results a:hover{background:var(--line)}
-.results small{color:var(--ink3);font-size:.8rem}
+.results small{color:var(--ink3);font-size:.78rem}
 .search{position:relative}
 /* Search results sit above the card (the top bar is z-index 7); on a phone they get room to the left of the narrow field. */
 @media (max-width:51.25em),(max-height:30em){.results{left:auto;min-width:min(18rem,calc(100vw - 2rem))}}
@@ -112,14 +117,14 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .facts dd .src a,.src a{display:inline;min-height:0;padding:.35rem 0;color:inherit;text-decoration:underline;text-underline-offset:2px}
 .src a:hover{color:var(--accent)}
 .lede + .src{margin:0 0 .4rem}
-.official{font-size:.8rem;color:var(--ink3);margin:0 0 .4rem}
+.official{font-size:.78rem;color:var(--ink3);margin:0 0 .4rem}
 .measured,.written{display:block}
 .photos{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.9rem 0 0;padding:0;list-style:none}
 .photo{margin:0}
 .photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--rad-card);background:var(--line)}
 .photo figcaption{margin-top:.25rem}
 .report{margin:.6rem 0 0}
-.facts .more{font:inherit;font-size:.85rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:var(--rad);padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
+.facts .more{font:inherit;font-size:.9rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:var(--rad);padding:.3rem .7rem;min-height:2.75rem;cursor:pointer}
 .facts .more:hover{border-color:var(--accent)}
 
 /* Place card as a teaser (release 9; approved mock Review/mock-travel-v1/1-map-card.html) */
@@ -138,12 +143,14 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .dots{position:absolute;left:50%;bottom:.75rem;transform:translateX(-50%);display:flex;gap:.35rem}
 .dots i{width:.4rem;height:.4rem;border-radius:50%;background:rgba(255,255,255,.6)}
 .dots i.on{background:#fff}
-.cover .credit{position:absolute;right:.6rem;bottom:.6rem;max-width:calc(100% - 1.2rem);font-size:.78rem;color:#fff;background:rgba(0,0,0,.62);padding:.2rem .55rem;border-radius:.4rem;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Photo credits on a picture are the smallest text on the site (owner, 18 Oct 2026: "way smaller"): 0.7 rem white on 55% black, which still
+   clears 4.5:1 over a white sky (Review/visual-style.md "Photos"). */
+.cover .credit{position:absolute;right:.4rem;bottom:.4rem;max-width:calc(100% - .8rem);font-size:.7rem;line-height:1.3;color:#fff;background:rgba(0,0,0,.55);padding:.05rem .35rem;border-radius:.2rem;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cover .credit:hover{text-decoration:underline}
 .namecover{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--paper2);padding:1rem;text-align:center}
 .namecover span{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3rem);line-height:1.05;letter-spacing:-.015em;color:var(--ink)}
 .namecover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.3rem;background:var(--rule,var(--accent))}
-.card .sub{color:var(--ink2);font-size:.92rem;margin:0}
+.card .sub{color:var(--ink2);font-size:.9rem;margin:0}
 .card .sub + .lede{margin-top:1rem}
 .glance{display:grid;margin:1.1rem 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .glance div{padding:.8rem .2rem .8rem 0;display:flex;flex-direction:column;gap:.15rem;min-width:0}
@@ -151,23 +158,23 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .glance .icon{width:1.3rem;height:1.3rem;color:var(--ink2);margin-bottom:.2rem}
 .glance b{font:500 1rem/1.2 var(--serif)}
 .glance small{color:var(--ink3);font-size:.78rem}
-.card .scroll h2{font-size:1.15rem;margin:1.3rem 0 .6rem;padding-top:0;border-top:0}
+.card .scroll h2{font-size:1.25rem;margin:1.3rem 0 .6rem;padding-top:0;border-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:0;padding:0}
-.chips li{border:1px solid var(--line2);border-radius:.25rem;padding:.3rem .8rem;font-size:.85rem}
+.chips li{border:1px solid var(--line2);border-radius:.25rem;padding:.3rem .8rem;font-size:.9rem}
 .zrow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.15rem}
 .zrow a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.35rem;margin:0 -.35rem;border-radius:var(--rad);min-height:3.6rem}
 .zrow a:hover{background:var(--paper2)}
 .zrow img,.zrow i{width:3.4rem;height:3.4rem;border-radius:var(--rad);object-fit:cover;flex:none}
-.zrow b{font:500 1.05rem var(--serif);display:block}
-.zrow small{color:var(--ink3);font-size:.8rem}
-.zrow .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
+.zrow b{font:500 1rem var(--serif);display:block}
+.zrow small{color:var(--ink3);font-size:.78rem}
+.zrow .go{margin-left:auto;color:var(--ink3);font-size:1.25rem}
 .card.has-cover .foot .btn{width:100%;justify-content:center}
 @media (max-width:51.25em) and (orientation:portrait){.cover{aspect-ratio:16/8}}
 
 /* The caption card after a guide's fly-there (release 10; mock-guides-v1/2-fly-there.html): short, at the bottom left of the map */
 .card.flycap{top:auto;bottom:1.6rem;width:24rem;max-height:calc(100% - 2.6rem)}
 .flycap .kicker{color:var(--foil-ink);margin:0 0 .3rem}
-.flycap h1{font:500 2rem/1.05 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
+.flycap h1{font:500 2.3rem/1.05 var(--serif);margin:0 0 .5rem;letter-spacing:-.01em}
 .flycap .cap{margin:0;color:var(--ink2)}
 .flycap .btn.primary{margin-top:1rem;width:100%;justify-content:center}
 @media (max-width:51.25em) and (orientation:portrait){.card.flycap{left:.6rem;right:.6rem;width:auto;bottom:.6rem}}
@@ -180,12 +187,12 @@ h2{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:1.6rem 0 .6
 .tiles a{display:flex;align-items:center;gap:.85rem;text-decoration:none;padding:.4rem;margin:0 -.4rem;border-radius:var(--rad);min-height:3.8rem}
 .tiles li:hover a,.tiles a:focus-visible{background:var(--paper2)}
 .tiles img,.tiles i{width:3.6rem;height:3.6rem;border-radius:var(--rad);object-fit:cover;flex:none}
-.tiles i{display:flex;align-items:center;justify-content:center;background:var(--paper2);color:var(--accent);font:500 1.4rem var(--serif);font-style:normal}
+.tiles i{display:flex;align-items:center;justify-content:center;background:var(--paper2);color:var(--accent);font:500 1.25rem var(--serif);font-style:normal}
 .tiles .txt{display:flex;flex-direction:column;min-width:0}
-.tiles b{font:500 1.08rem var(--serif)}
-.tiles small{color:var(--ink3);font-size:.82rem;line-height:1.35}
-.tiles .due{margin-left:auto;font-size:.75rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:.25rem;padding:.15rem .55rem;white-space:nowrap}
-.tiles .go{margin-left:auto;color:var(--ink3);font-size:1.2rem}
+.tiles b{font:500 1rem var(--serif)}
+.tiles small{color:var(--ink3);font-size:.78rem;line-height:1.35}
+.tiles .due{margin-left:auto;font-size:.78rem;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);border-radius:.25rem;padding:.15rem .55rem;white-space:nowrap}
+.tiles .go{margin-left:auto;color:var(--ink3);font-size:1.25rem}
 .tiles .due+.go{margin-left:.2rem}
 .tiles li.sub a{padding-left:1.6rem}
 .tiles li.sub img,.tiles li.sub i{width:2.8rem;height:2.8rem}
