@@ -26,7 +26,8 @@ test('a card with several photos shows them as a mosaic, and the arrows only in 
   await open(page, '#place=cebreros');
   await expect(page.locator('.cover figure')).toHaveCount(3);
   await expect(page.locator('.cover .nav')).toHaveCount(0);
-  await expect(page.locator('.cover-credits span')).toHaveCount(3);
+  // Two of the three are by Dopcebreros under the same licence: the line names them once (premium feel review, 18 Oct 2026).
+  await expect(page.locator('.cover-credits span')).toHaveCount(2);
   await page.locator('.cover .ph').nth(1).click();
   const viewer = page.getByRole('dialog', { name: 'Photos of Cebreros' });
   await expect(viewer.locator('.count')).toHaveText('2 / 3');
