@@ -112,3 +112,20 @@ test('Rioja shows its famous styles and how it tastes, each with a source', asyn
   await expect(page.locator('#taste b', { hasText: 'Reds' })).toBeVisible();
   await expect(page.locator('#taste .src a').first()).toHaveAttribute('target', '_blank');
 });
+
+// Owner card, 18 Oct 2026 ("Go, short citations"): a fact carries a short tag that still links to its document, and the guide lists
+// each document once, in full, under Sources.
+test('the Rioja guide tags facts with short sources and lists each source once', async ({ page }) => {
+  await open(page, '#place=rioja&page');
+  const tag = page.locator('#overview .src.short a').first();
+  await expect(tag).toHaveText(/^EU single document, p\. \d+$/);
+  await expect(tag).toHaveAttribute('href', /^https:\/\//);
+  await expect(tag).toHaveAttribute('title', /^Source: Documento único/);
+  await expect(page.locator('#terroir .src.short a').first()).toHaveText(/^Pliego, p\. \d+/);
+  const list = page.locator('#sources li');
+  const texts = await list.allTextContents();
+  expect(texts.length).toBeGreaterThan(1);
+  expect(new Set(texts).size).toBe(texts.length);
+  await expect(list.filter({ hasText: 'Pliego de condiciones DOCa Rioja' })).toHaveCount(1);
+  await expect(page.locator('.pg-jump a', { hasText: 'Sources' })).toHaveCount(1);
+});

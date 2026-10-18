@@ -2,7 +2,7 @@
 
 /* ---- Motion (owner card "Full set"). The view transition names: the floating card, the full page, and the cover photo that
    travels from a card to the next card or to the page. The map itself never crossfades (it moves on its own). */
-.card:not(.first){view-transition-name:card}
+.card{view-transition-name:card}
 .pg,.rpage{view-transition-name:page}
 /* the cover photo travels only between a card and its page; between cards it simply crossfades with the card */
 html[data-motion^="page"] .card .cover img,html[data-motion^="page"] .pg-mosaic figure:first-child img,html[data-motion^="page"] .rcover img{view-transition-name:hero}
@@ -42,7 +42,6 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
 @media not ((max-width:51.25em) and (orientation:portrait)){
   .card:not(.flycap){bottom:auto;max-height:calc(100% - 2.6rem)}
   .card .body{flex:1 1 auto}
-  .first .foot .btn{width:100%;justify-content:center}
 }
 
 /* ---- The phone sheet (owner card "Drag, 3 stops"). Outside phones the wrapper is invisible. */
@@ -76,10 +75,8 @@ h1[tabindex="-1"]:focus-visible,.q[tabindex="-1"]:focus-visible{outline:none}
 
 /* ---- Quiz: the End round question */
 .q-end{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;padding:.7rem .8rem;border-radius:var(--rad);background:var(--paper2);margin:0 0 .4rem}
-.q-end p{margin:0 0 .2rem;flex-basis:100%;font-size:.95rem}
+.q-end p{margin:0 0 .2rem;flex-basis:100%;font-size:1rem}
 
-/* The welcome card sizes to its text too, so the card it covers is hidden while it shows. */
-body:has(.card.first) .sheet.explore{visibility:hidden}
 
 /* Design check fixes (mock v1) */
 @media (orientation:landscape) and (max-height:30em){
@@ -89,7 +86,7 @@ body:has(.card.first) .sheet.explore{visibility:hidden}
 @media (max-width:51.25em) and (orientation:portrait){
   .sheet.phone .cover .nav{top:auto;bottom:2.6rem;width:2.75rem;height:2.75rem}
   .sheet.phone .cover .dots{bottom:3.6rem}
-  .imagery-note{font-size:.88rem}
+  .imagery-note{font-size:.9rem}
   .zoomset:not(:has(> .iconbtn:nth-child(3))){display:none}
 }
 .pg-sub a{white-space:nowrap}

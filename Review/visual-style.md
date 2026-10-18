@@ -16,13 +16,18 @@ an addition and the owner decides.
 - Charts use black and champagne tints only: `#141414`, `#7D6540`, `#C9B48A`, `#EFE6D2`. No pinks. Wine-colour swatches
   (red, white, rosé) are the one exception, because they show the wine itself.
 - The map keeps its own region colours. The selected place is black with a champagne edge, so it stands off the atlas and the photo.
+  Parts of a selected place (Rioja's zones) take the same black and champagne: thin champagne lines between them, black when one is
+  picked, never a colour of their own (site visual review, 18 Oct 2026: a wine zone tint made the selection read wine-brown).
+- The keyboard focus ring is black (`--focus`), champagne on the black band. No blue.
 - The system's dark setting is ignored; there is no theme switch.
 - Text contrast is at least 4.5:1, including source lines and photo credits (`tests/unit/contrast.test.ts`).
 
 ## Type
 - Newsreader for names, headings and the opening sentence. IBM Plex Sans for everything people read in bulk: body, facts, labels, buttons.
-- Scale (rem): 0.78 small print (sources, credits), 0.9 labels, 1.0 body, 1.25 opening sentence, 1.6 section heading,
-  2.3 card title, 3.2 page title, 5 to 8.5 cover title. Uppercase only for kickers (0.72, letter-spacing 0.14em).
+- Scale (rem): 0.7 credit tags on photos, 0.78 small print (source tags, credit lines), 0.9 labels, 1.0 body, 1.25 opening sentence,
+  1.6 section heading, 2.3 card title, 3.2 page title, 5 to 8.5 cover title. Uppercase only for kickers (0.72, letter-spacing 0.14em).
+  No sizes between the steps (site visual review, 18 Oct 2026: the guide had drifted to 22 size and weight pairs).
+- Newsreader weights: 500 for every heading and name; light (300) only for display type, the home page's big headline and its numbers.
 - Body lines stay under about 75 characters.
 
 ## Space and shape
@@ -36,16 +41,22 @@ an addition and the owner decides.
   a cover on the region page, and tiles for the places.
 - Wine places show vines, landscape or villages. No trains, roads or unrelated buildings as the first photo (Calatayud's first photo is a train).
 - Crops fill their frame (`object-fit: cover`) at a fixed ratio: cover 16:11, tile about 1:1, zone 4:3. No letterboxing and no washed-out skies.
-- Every photo shows its credit and licence in readable text: a pill on a single cover, a "Photos:" line under a mosaic or grid.
-  Never small text printed over the picture.
+- Every photo shows its credit and licence in readable text: a "Photos:" line under a mosaic or grid, and on a single cover a small
+  credit tag in its bottom-right corner (owner, 18 Oct 2026: "way smaller"): artist and licence only, 0.7 rem white on 55% black,
+  tucked into the corner, small corners. That still clears 4.5:1 over a white sky (`tests/unit/contrast.test.ts`). Never bare text on the picture.
 - Alt text describes what is in the picture, not the file name.
 
 ## Content
 - Facts come only from sources, and every fact keeps a visible source link. A highlight or headline restates one sourced fact
   and links to the section that holds its source.
+- On a guide, the link is a short source tag under the fact, such as "Pliego, p. 15" or "EU single document, p. 5", in small print,
+  and still a link to the document itself. Each document is listed once, in full, in a Sources section at the end of the guide, under the
+  tag it goes by (owner card, 18 Oct 2026, "Go, short citations": about 20 full titles had turned the guide into a footnote apparatus).
+  The short names: Pliego, EU single document, Wikipedia, MAPA list, Köppen-Geiger, Measured (`shortTitle` in `src/facts/format.ts`).
+  Cards on the map keep the full line, since they have no Sources section.
 - No text cut off mid-sentence. If it does not fit, show a shorter sourced fact instead.
-- One way out and one main action per screen. On the full page these are "Back to map" and "Show [place] on the map".
-  No two controls that mean nearly the same.
+- One way out and one main action per screen. On the full page these are Atlas in the site bar (back to the place on the map) and
+  "Show [place] on the map". No two controls that mean nearly the same.
 
 ## Website pages (home, owner 18 Oct 2026)
 - Reference: `Review/mock-home-v1/`. The home page shows the product, not a stock photo: the satellite atlas is the hero, with real cards on it.
@@ -55,6 +66,12 @@ an addition and the owner decides.
 - The site bar (slice 2): the black band, 52 px plus a 1 px champagne line, on every page. Logo (goes home), then Atlas and Study on the right in muted
   champagne, the current one full champagne, semibold and underlined, then search. On the atlas, search is the field; on the home page a link to it.
   Phone: the logo's mark, search, Atlas, Study in one row. Guides and About join when their pages exist.
+  It is one bar on every page: the logo 16 px from the window's edge everywhere, the same items; on a guide, Atlas is current and
+  there is no separate "Back to map" (site visual review, 18 Oct 2026).
+- One left edge per page: section strips, the footer columns and the tiles hang on the same grid. Home tiles show one readable detail
+  of the app at close to real size, never a whole screen shrunk.
+- The atlas opens on the map: the home page does the welcome, so first-run is a three-line note on moving the map that goes at the
+  first touch.
 
 ## How the check is run
 1. Screenshots: desktop 1440x900 and iPad 834x1194, on the atlas and on satellite, plus large text (root font 125%).

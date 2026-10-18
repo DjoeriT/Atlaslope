@@ -69,10 +69,8 @@ export const strings = {
   regionPage: {
     lede: (n: number) => `${n} ${n === 1 ? 'place' : 'places'}, in course order. Open a place to read its page.`,
     placesToLearn: (n: number) => (n === 1 ? 'place to learn' : 'places to learn'),
-    coverCredit: 'Photo:',
     credits: 'Photos:',
     showOnMap: (name: string) => `Show ${name} on the map`,
-    backToMap: 'Back to map',
     alsoHere: 'Also here',
     alsoHereNote: 'On the map, not in the study rounds.',
     grid: 'Places to learn',
@@ -93,6 +91,16 @@ export const strings = {
     altitudeMeasured: (low: string, high: string) => `Most of the land between ${low} and ${high} m`,
     soil: 'Soil',
     page: (n: string) => `p. ${n}`,
+    shortSource: {
+      pliego: 'Pliego',
+      singleDocument: 'EU single document',
+      wikipedia: 'Wikipedia',
+      measured: 'Measured',
+      koppen: 'Köppen-Geiger',
+      mapa: 'MAPA list',
+    },
+    /** The tag's link names the full source for screen readers and on hover. */
+    sourceTag: (title: string) => `Source: ${title}`,
     photoCredit: 'Photo:',
     photos: 'Photos',
     reportLink: 'Report a mistake',
@@ -124,7 +132,7 @@ export const strings = {
     subLine: (level: string, region: string) => `${level} · ${region}`,
     previousPhoto: 'Previous photo',
     nextPhoto: (n: number, total: number) => `Next photo, ${n} of ${total}`,
-    photoCredit: (artist: string, licence: string) => `Photo: ${artist}, ${licence}`,
+    photoCredit: (artist: string, licence: string) => `${artist}, ${licence}`,
     glance: {
       grapeAnd: (other: string) => `and ${other}`,
       grapeAndMore: (n: number) => `and ${n} more`,
@@ -135,7 +143,6 @@ export const strings = {
     famousStyles: 'Famous styles',
     page: {
       pageLabel: (name: string) => `${name}, full page`,
-      backToMap: 'Back to map',
       jumpLabel: 'On this page',
       sections: {
         overview: 'Overview',
@@ -147,6 +154,7 @@ export const strings = {
         producers: 'Famous producers',
         zones: 'Zones',
         where: 'Where it sits',
+        sources: 'Sources',
       },
       jump: { producers: 'Producers' } as Record<string, string>,
       subRegion: (name: string) => `study region ${name}`,
@@ -172,6 +180,7 @@ export const strings = {
       nextInCourse: 'Next in the course',
       glanceTitle: (name: string) => `${name} at a glance`,
       sourceLink: 'Source',
+      sourcesLede: 'Every fact on this page is tagged with its source. The full references, each a link to the document:',
       showOnMap: (name: string) => `Show ${name} on the map`,
       showOnMapShort: 'Show on the map',
       terroirKicker: (minutes: number) => `Terroir · ${minutes}-minute read`,
@@ -193,17 +202,14 @@ export const strings = {
     none: 'No place or region matches.',
   },
   firstRun: {
-    label: 'Welcome to AtlaSlope',
-    kicker: 'Welcome',
-    lede: "The wine study atlas for WSET and Wine Scholar students. Learn where Spain's wine places are and why their wines taste as they do.",
-    hintsTitle: 'Moving the map',
+    label: 'Moving the map',
     // Each hint alternates plain and bold text, starting with bold.
     hints: [
       ['Drag', ' to move, ', 'pinch or scroll', ' to zoom.'],
-      ['Two fingers up or down', ', or ', 'right-drag', ' with a mouse, to tilt into 3D.'],
-      ['Two fingers twist', ', or ', 'Ctrl-drag', ', to turn. The compass button points north again.'],
+      ['Two fingers up or down', ', or ', 'right-drag', ', to tilt into 3D.'],
+      ['Two fingers twist', ', or ', 'Ctrl-drag', ', to turn.'],
     ],
-    start: 'Start exploring',
+    close: 'Got it, hide this note',
   },
   quiz: {
     heading: 'Study or review',

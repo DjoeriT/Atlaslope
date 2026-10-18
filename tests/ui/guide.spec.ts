@@ -99,7 +99,7 @@ test('a place with no zones and no guide shows Test me without "and its zones", 
   await expect(box).toContainText('A short round on Jumilla: where they sit and what they are known for.');
   await expect(box).not.toContainText('zones');
   const order = await page.locator('.pg main > *').evaluateAll((els) => els.map((e) => e.id || e.className));
-  expect(order.slice(-2)).toEqual(['pg-testme', 'where']);
+  expect(order.slice(-3)).toEqual(['pg-testme', 'where', 'sources']);
 });
 
 test('the one-place Rioja region has no page of its own: its address opens the Rioja page', async ({ page }) => {

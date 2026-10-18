@@ -154,7 +154,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
           </dl>
           <p className="note">{t.introNote}</p>
         </div>
-        <div className="foot">
+        <div className="foot intro-foot">
           <button className="btn primary" onClick={() => { seen(); next(); }}>{t.gotIt}</button>
           <button className="btn quiet" onClick={() => { seen(); onOpenPlace(place.id); }}>{t.moreAbout(place.name)}</button>
         </div>

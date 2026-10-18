@@ -4,9 +4,9 @@ import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
 import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
-import { OtherGrapes, SourceLine } from '../cards/PlaceFacts';
+import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, sheetOf, tasteLines } from '../facts';
+import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, sheetOf, tasteLines, type Cite } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
@@ -41,7 +41,7 @@ function Section({ id, title, kicker, children }: { id: string; title: string; k
   );
 }
 
-/** The full page of a place (#place=<id>&page): photos, a jump bar, ruled sections that each keep their source lines, and an "at a glance" box. */
+/** The full page of a place (#place=<id>&page): photos, a jump bar, ruled sections whose facts carry short source tags, a Sources list, and an "at a glance" box. */
 export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
   const [current, setCurrent] = useState('');
@@ -105,6 +105,14 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     );
   };
 
+  // Every fact carries a short source tag; the tags are gathered as the page draws, in reading order, and the Sources section at the
+  // end lists each document once (owner card, 18 Oct 2026). The Sources section is drawn last, so it sees every tag above it.
+  const cited: Cite[] = [];
+  const src = (cites: Cite[]) => {
+    cited.push(...cites);
+    return <SourceLine cites={cites} short />;
+  };
+
   const sections = [
     { id: 'overview', label: t.sections.overview, present: !!sheet || !!official },
     { id: 'terroir', label: t.sections.terroir, present: !!guide },
@@ -115,6 +123,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     { id: 'producers', label: t.jump.producers, present: producers.length > 0 },
     { id: 'zones', label: t.sections.zones, present: zones.length > 0 },
     { id: 'where', label: t.sections.where, present: true },
+    { id: 'sources', label: t.sections.sources, present: !!sheet || !!guide },
   ].filter((s) => s.present);
 
   const jump = (id: string) => (e: MouseEvent) => {
@@ -171,7 +180,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                 {sheet ? (
                   <>
                     <p className="pg-read">{sheet.why.text}</p>
-                    <SourceLine cites={sheet.why.cite} />
+                    {src(sheet.why.cite)}
                     {official && <p className="official">{official}</p>}
                   </>
                 ) : <p className="pg-read">{official}</p>}
@@ -181,7 +190,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
             {guide && (
               <Section id="terroir" title={guide.title} kicker={t.terroirKicker(guide.minutes)}>
                 <p className="pg-read pg-lede">{guide.lede.text}</p>
-                <SourceLine cites={guide.lede.cite} />
+                {src(guide.lede.cite)}
                 {guide.chapters.map((ch) => {
                   const own = ch.fly ?? [];
                   return (
@@ -201,7 +210,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                         </div>
                       )}
                       {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
-                      <SourceLine cites={ch.cite} />
+                      {src(ch.cite)}
                     </div>
                   );
                 })}
@@ -223,7 +232,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                     );
                   })}
                 </div>
-                <SourceLine cites={sheet!.tastes!.cite} />
+                {src(sheet!.tastes!.cite)}
               </Section>
             )}
 
@@ -232,7 +241,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                 <ul className="pg-styles">
                   {famous.map((f) => <li key={f.name}><strong>{f.name}</strong>{f.text.trim() && <span>{f.text.trim()}</span>}</li>)}
                 </ul>
-                <SourceLine cites={sheet!.famous!.cite} />
+                {src(sheet!.famous!.cite)}
               </Section>
             )}
 
@@ -242,20 +251,20 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                   <>
                     <h3 className="pg-h3">{t.mainGrapes}</h3>
                     <ul className="pg-grapes">{main.map((g) => <li key={g.local}>{grapeLabel(g)}</li>)}</ul>
-                    <SourceLine cites={sheet!.grapes.cite} />
+                    {src(sheet!.grapes.cite)}
                   </>
                 )}
                 <dl className="pg-rows">
                   {others.length > 0 && (
                     <>
                       <dt>{sheet!.grapes.othersPartial ? t.otherGrapesPartial : t.otherGrapes}</dt>
-                      <dd><OtherGrapes names={others} /><SourceLine cites={sheet!.grapes.othersCite} /></dd>
+                      <dd><OtherGrapes names={others} />{src(sheet!.grapes.othersCite)}</dd>
                     </>
                   )}
                   {wineTypes && (
                     <>
                       <dt>{t.wineTypes}</dt>
-                      <dd>{wineTypes}<SourceLine cites={sheet!.styles.cite} /></dd>
+                      <dd>{wineTypes}{src(sheet!.styles.cite)}</dd>
                     </>
                   )}
                 </dl>
@@ -269,21 +278,21 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                     <div>
                       <h3 className="pg-h3">{t.climateWritten}</h3>
                       <p>{climate}</p>
-                      <SourceLine cites={sheet!.climate.cite} />
+                      {src(sheet!.climate.cite)}
                     </div>
                   )}
                   {koppen.length > 0 && (
                     <div>
                       <h3 className="pg-h3">{t.climateMeasured}</h3>
                       <ClimateBar shares={koppen} />
-                      <SourceLine cites={['koppen']} />
+                      {src(['koppen'])}
                     </div>
                   )}
                   {soil && (
                     <div>
                       <h3 className="pg-h3">{t.soil}</h3>
                       <p>{soil}</p>
-                      <SourceLine cites={sheet!.soil.cite} />
+                      {src(sheet!.soil.cite)}
                     </div>
                   )}
                   {(writtenAltitude || measures) && (
@@ -292,7 +301,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                       {measures && <AltitudeRange altitude={measures.altitude} />}
                       {writtenAltitude && <p>{writtenAltitude}</p>}
                       {measures && <p>{altitudeText(measures.altitude)}</p>}
-                      <SourceLine cites={[...(writtenAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])]} />
+                      {src([...(writtenAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])])}
                     </div>
                   )}
                 </div>
@@ -302,7 +311,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
             {producers.length > 0 && (
               <Section id="producers" title={t.sections.producers}>
                 <ul className="pg-names">{producers.map((p) => <li key={p.name}>{p.wine ? `${p.name} (${p.wine})` : p.name}</li>)}</ul>
-                <SourceLine cites={sheet!.producers!.cite} />
+                {src(sheet!.producers!.cite)}
               </Section>
             )}
 
@@ -318,7 +327,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                           {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
                           <b>{z.name}</b>
                         </Link>
-                        {why && <><p>{why.text}</p><SourceLine cites={why.cite} /></>}
+                        {why && <><p>{why.text}</p>{src(why.cite)}</>}
                       </li>
                     );
                   })}
@@ -331,7 +340,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
             <Section id="where" title={t.sections.where}>
               <dl className="pg-rows">
                 <dt>{t.level}</dt>
-                <dd>{level}{sheet && !isZone && <SourceLine cites={['mapa-list']} />}</dd>
+                <dd>{level}{sheet && !isZone && src(['mapa-list'])}</dd>
                 {region && !isZone && (<><dt>{t.studyRegion}</dt><dd><Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link></dd></>)}
                 {also.length > 0 && (
                   <>
@@ -350,6 +359,12 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                 )}
               </div>
             </Section>
+
+            {cited.length > 0 && (
+              <Section id="sources" title={t.sections.sources}>
+                <SourceList cites={cited} />
+              </Section>
+            )}
           </main>
 
           <aside aria-labelledby="pg-glance-h">

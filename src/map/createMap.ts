@@ -74,6 +74,12 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     attributionControl: { compact: true },
     antialias: true,
   });
+  // The credits start folded to their small "i" on every screen (site visual review, 18 Oct 2026): MapLibre only folds them on narrow
+  // screens or after the first drag, and leaves a full-width line of grey text over the map on a laptop. One tap opens them. Done
+  // before MapLibre fills them: once the box is marked compact, it does not unfold it again on its own.
+  const attrib = container.querySelector('.maplibregl-ctrl-attrib');
+  attrib?.classList.add('maplibregl-compact');
+  attrib?.classList.remove('maplibregl-compact-show');
   let labels: Labels | null = null;
   let selected: string | null = null;
   let boundaries: Collection | null = null;
