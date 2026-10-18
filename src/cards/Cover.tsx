@@ -3,6 +3,7 @@ import { strings } from '../strings';
 import type { Pic } from '../pages/helpers';
 import { Img } from './Img';
 import { Credit } from './Credit';
+import { Lightbox } from '../pages/Lightbox';
 
 const t = strings.place;
 
@@ -15,41 +16,37 @@ export function NameCover({ name, color, className = '' }: { name: string; color
   );
 }
 
-function Chevron({ dir }: { dir: 'prev' | 'next' }) {
-  return (
-    <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-      <path d={dir === 'prev' ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7'} />
-    </svg>
-  );
-}
-
 interface Props {
   name: string;
   color: string;
   photos: Pic[];
 }
 
-/** The card's cover photo (16:11) with previous and next when there are two or more, dots, and the credit as a pill on the photo. */
+/** The card's cover (16:11): one photo, or with more a hero and up to two beside it, no arrows and no dots (owner point 3, 18 Oct 2026:
+ * the arrows were too loud). No text on the photos (owner point 4, "way smaller", "of all images"): the credits are one small line under
+ * the cover, always visible, as the licences ask (PR #92 review). A tap opens all photos full screen, the one view with arrows. */
 export function Cover({ name, color, photos }: Props) {
-  const [i, setI] = useState(0);
   const [broken, setBroken] = useState<Set<string>>(new Set());
+  const [open, setOpen] = useState<number | null>(null);
   const shown = photos.filter((p) => !broken.has(p.src));
   if (shown.length === 0) return <div className="cover"><NameCover name={name} color={color} /></div>;
-  const at = Math.min(i, shown.length - 1);
-  const photo = shown[at];
-  const many = shown.length > 1;
-  const step = (d: number) => setI((at + d + shown.length) % shown.length);
+  const frames = shown.slice(0, 3);
   return (
-    <div className="cover">
-      <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 25rem" onError={() => setBroken(new Set(broken).add(photo.src))} />
-      {many && (
-        <>
-          <button type="button" className="round nav prev" aria-label={t.previousPhoto} title={t.previousPhoto} onClick={() => step(-1)}><Chevron dir="prev" /></button>
-          <button type="button" className="round nav next" aria-label={t.nextPhoto(((at + 1) % shown.length) + 1, shown.length)} title={t.nextPhoto(((at + 1) % shown.length) + 1, shown.length)} onClick={() => step(1)}><Chevron dir="next" /></button>
-          <div className="dots" aria-hidden="true">{shown.map((p, k) => <i key={p.src} className={k === at ? 'on' : undefined} />)}</div>
-        </>
-      )}
-      <span className="credit"><Credit photo={photo} /></span>
+    <>
+    <div className="cover" data-n={frames.length}>
+      {frames.map((p, i) => (
+        <figure key={p.src}>
+          <button type="button" className="ph" aria-label={t.openPhoto(p.alt, i + 1, shown.length)} onClick={() => setOpen(i)}>
+            <Img photo={p} sizes={i === 0 ? (frames.length === 1 ? '(max-width: 47.5em) 100vw, 25rem' : '(max-width: 47.5em) 67vw, 17rem') : '(max-width: 47.5em) 33vw, 8.5rem'} lazy={i > 0} onError={() => setBroken(new Set(broken).add(p.src))} />
+          </button>
+        </figure>
+      ))}
     </div>
+    <p className="cover-credits">
+      {t.page.photosLine}{' '}
+      {frames.map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}
+    </p>
+    {open !== null && <Lightbox photos={shown} start={open} name={name} onClose={() => setOpen(null)} />}
+    </>
   );
 }

@@ -72,6 +72,20 @@ export function climateSegments(shares: KoppenShare[]): ClimateSegment[] {
   return top.map((s) => ({ ...s, label: `${s.label} ${Math.round(s.pct)}%` }));
 }
 
+/** A comparison row's climate in the place's own classes (same order, same tints), with everything else as "Other", so one legend reads
+ * every row. */
+export function compareShares(own: KoppenShare[], other: KoppenShare[]): ClimateSegment[] {
+  const codes = [...own].sort((a, b) => b.share - a.share).slice(0, 3).map((s) => s.code);
+  const rows = codes.map((c) => {
+    const s = other.find((o) => o.code === c);
+    const n = tf.koppenNames[c] ?? c;
+    return { label: `${n.charAt(0).toUpperCase() + n.slice(1)} ${Math.round((s?.share ?? 0) * 100)}%`, pct: (s?.share ?? 0) * 100 };
+  });
+  const rest = Math.max(0, 100 - rows.reduce((sum, r) => sum + r.pct, 0));
+  if (Math.round(rest) >= 1) rows.push({ label: `${t.page.otherClimate} ${Math.round(rest)}%`, pct: rest });
+  return rows;
+}
+
 export interface AltitudeBar {
   /** Positions on the 0 to `max` m scale, in percent. */
   from: number;
@@ -84,8 +98,8 @@ export interface AltitudeBar {
 }
 
 /** The 10th to 90th percentile as a bar on a fixed 0 to 2000 m scale (wider only when a place goes higher), so places compare at a glance. */
-export function altitudeBar(a: Measures['altitude']): AltitudeBar {
-  const max = Math.max(2000, Math.ceil(a.p90 / 500) * 500);
+export function altitudeBar(a: Measures['altitude'], atLeast = 0): AltitudeBar {
+  const max = Math.max(2000, atLeast, Math.ceil(a.p90 / 500) * 500);
   const at = (m: number) => Math.min(100, Math.max(0, (m / max) * 100));
   return { from: at(a.p10), to: at(a.p90), median: at(a.median), max, low: fmt(a.p10), high: fmt(a.p90), mid: fmt(a.median) };
 }

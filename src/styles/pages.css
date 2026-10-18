@@ -21,19 +21,34 @@
 .pg-listing .crumb{letter-spacing:.06em}
 .pg h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.02em;margin:.2rem 0}
 .pg-sub{color:var(--ink2);margin:0}
+/* Labels under the title (owner point 12, 18 Oct 2026): the legal level as a solid badge, the course placings as outlined ones, the
+   reading facts as plain text after them. Every badge says in full what it means on hover. */
+.pg-badges{list-style:none;margin:.7rem 0 0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.pg-badges li{display:inline-flex;align-items:center;min-height:1.9rem;padding:0 .7rem;border:1px solid var(--line2);border-radius:var(--rad);font-size:.82rem;font-weight:500;letter-spacing:.02em;color:var(--ink);cursor:default}
+.pg-badges li a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;min-height:2.75rem;margin:-.45rem 0}
+.pg-badges li:has(a):hover{border-color:var(--ink)}
+.pg-badges li:has(a){cursor:pointer}
+.pg-badges abbr{text-decoration:none}
+.pg-badges .lvl{background:var(--band);color:var(--foil);border-color:var(--band);letter-spacing:.06em}
+.pg-badges .meta{border:0;padding:0 0 0 .3rem;font-weight:400;color:var(--ink2)}
 
 /* mosaic: 1 to 5 photos, every layout fills its frame */
 .pg-mosaic{display:grid;gap:.5rem;height:min(30rem,46vw);margin:1.4rem 0 0;border-radius:var(--rad-card);overflow:hidden}
 .pg-mosaic figure{margin:0;position:relative;overflow:hidden;background:var(--paper2);min-height:0}
 .pg-mosaic img{display:block;width:100%;height:100%;object-fit:cover}
+.pg-mosaic{position:relative}
+.pg-mosaic .ph{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.pg-mosaic .ph:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+.pg-mosaic .ph img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.pg-mosaic .ph:hover img{transform:scale(1.03)}
+.pg-mosaic .all{position:absolute;right:1rem;bottom:1rem;display:inline-flex;align-items:center;gap:.45rem;min-height:2.75rem;padding:0 .9rem;border:1px solid var(--ink);border-radius:var(--rad);background:var(--paper);color:var(--ink);font:500 .85rem var(--sans);cursor:pointer}
+.pg-mosaic .all .icon{width:1rem;height:1rem}
+.pg-mosaic .all:hover{background:var(--paper2)}
 .pg-mosaic[data-n="1"]{grid-template-columns:1fr}
 .pg-mosaic[data-n="2"]{grid-template-columns:2fr 1fr}
-.pg-mosaic[data-n="3"],.pg-mosaic[data-n="4"],.pg-mosaic[data-n="5"]{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}
-.pg-mosaic[data-n="3"] figure:first-child,.pg-mosaic[data-n="4"] figure:first-child,.pg-mosaic[data-n="5"] figure:first-child{grid-row:1/3}
-.pg-mosaic[data-n="4"]{grid-template-columns:2fr 1fr 1fr}
-.pg-mosaic[data-n="4"] figure:nth-child(4){grid-row:1/3;grid-column:3}
-.pg-mosaic[data-n="5"]{grid-template-columns:2fr 1fr 1fr}
-.pg-credits{font-size:.78rem;color:var(--ink3);margin:.6rem 0 0}
+.pg-mosaic[data-n="3"]{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}
+.pg-mosaic[data-n="3"] figure:first-child{grid-row:1/3}
+.pg-credits{font-size:.7rem;color:var(--ink3);margin:.6rem 0 0}
 .pg-credits a{text-decoration:underline;text-underline-offset:2px}
 .pg-namecover{height:min(16rem,32vw);min-height:9rem;margin:1.4rem 0 0;border-radius:var(--rad-card);overflow:hidden}
 .pg-namecover span{font-size:clamp(3rem,8vw,5.5rem)}
@@ -91,6 +106,16 @@
 .pg-legend{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;list-style:none;margin:0 0 .3rem;padding:0;font-size:.9rem;color:var(--ink2)}
 .pg-legend li{display:inline-flex;align-items:center;gap:.4rem}
 .pg-legend i{width:.8rem;height:.8rem;border-radius:.2rem;display:inline-block}
+.pg-compare{margin:.6rem 0 .4rem;display:grid;gap:.15rem}
+.pg-compare > div{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:.8rem;align-items:center}
+.pg-compare dt{font-size:.82rem;color:var(--ink3);line-height:1.2}
+.pg-compare .own dt{color:var(--ink);font-weight:600}
+.pg-compare dd{margin:0}
+.pg-compare .pg-stack{margin:.35rem 0}
+.pg-compare > div:not(.own) .pg-stack{height:.5rem;opacity:.8}
+.pg-compare > div:not(.own) .pg-range .fill{fill:var(--tint3)}
+.pg-compare > div:not(.own) .pg-range .mid{color:var(--ink2);font-weight:500}
+.pg-note{font-size:.78rem;color:var(--ink3);margin:.3rem 0 0}
 .pg-range{position:relative;height:3.6rem;margin:.4rem 0 .3rem}
 .pg-range svg{position:absolute;left:0;right:0;top:1.4rem;width:100%;height:.5rem;overflow:visible;border-radius:.25rem}
 .pg-range .track{fill:var(--paper2)}
@@ -130,8 +155,7 @@
   .pg-cols{grid-template-columns:1fr;gap:0}
   .pg aside{order:-1;margin-bottom:2rem}
   .pg aside .sticky{position:static}
-  .pg-mosaic[data-n="3"],.pg-mosaic[data-n="4"],.pg-mosaic[data-n="5"]{grid-template-columns:2fr 1fr;height:min(28rem,60vw)}
-  .pg-mosaic[data-n="4"] figure:nth-child(4),.pg-mosaic[data-n="5"] figure:nth-child(n+4){display:none}
+  .pg-mosaic[data-n="3"]{height:min(28rem,60vw)}
 }
 @media (max-width:47.5em){
   .pg-listing{padding:1rem 1rem 6rem}
@@ -152,19 +176,18 @@
 .srcbtn::before{content:"";position:absolute;left:50%;top:50%;width:max(100%,2.75rem);height:2.75rem;transform:translate(-50%,-50%)}
 
 /* Release 10: the terroir section (mock-guides-v1/1-place-guide.html), the fly-there pills and the Test me box */
-.pg .pg-kicker{margin:0 0 .5rem;color:var(--foil-ink)}
-.pg-sub a{color:var(--accent);text-underline-offset:2px}
 .pg-ch{margin-top:2rem;max-width:38rem}
 .pg-ch:has(.pg-zguide){max-width:none}
 .pg-ch h3{font:500 1.25rem/1.3 var(--serif);margin:0 0 .6rem;text-transform:none;letter-spacing:normal;color:var(--ink)}
 .pg-ch h3:focus{outline:none}
 .pg-ch h3:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .pg-ch p{margin:0 0 .8rem;color:var(--ink2);max-width:38rem}
-.pg-flies{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .4rem}
-.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.35rem 1rem .35rem .75rem;border:1px solid var(--line2);border-radius:.25rem;text-decoration:none;color:var(--ink);background:var(--paper);font-size:.9rem;line-height:1.2}
+.pg-flies{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;margin:1rem 0 .4rem}
+/* Fly-there links read as the guide's own links, not as buttons (owner point 14: one page, one style). */
+.pg .fly{display:inline-flex;align-items:center;gap:.45rem;min-height:2.75rem;padding:0;border:0;text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px;color:var(--ink);background:none;font-size:.95rem;line-height:1.2}
 .pg .fly .icon{width:1.2rem;height:1.2rem;color:var(--accent);flex:none}
-.pg .fly small{display:block;font-size:.72rem;color:var(--ink3);letter-spacing:.04em}
-.pg .fly:hover{border-color:var(--accent)}
+.pg .fly small{display:none}
+.pg .fly:hover{text-decoration-color:currentColor}
 .pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
 .pg-zguide > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
 .pg-zguide b{font:500 1.25rem var(--serif);margin-bottom:.4rem}
@@ -182,11 +205,6 @@
 @media (max-width:68.75em){.pg-zguide{grid-template-columns:1fr}}
 @media (max-width:47.5em){.pg-testme{flex-direction:column;align-items:flex-start}}
 
-/* Drop cap where a guide opens (polish pack): two lines deep (the ledes run two lines or more) in the accent colour; a floated letter where initial-letter is missing. */
-.pg-lede::first-letter{float:left;font-size:2.75em;line-height:.85;font-weight:500;margin:.08em .08em 0 0;color:var(--foil-ink)}
-@supports (initial-letter:2) or (-webkit-initial-letter:2){
-  .pg-lede::first-letter{float:none;font-size:inherit;line-height:inherit;margin:0 .1em 0 0;-webkit-initial-letter:2;initial-letter:2}
-}
 
 /* Scroll-linked motion on place and region pages (polish pack, 18 Oct 2026), driven by the page's own scroll, no script:
    the cover photos drift slower than the page, the region title lifts away, the page's name slides into the bar once the big title has

@@ -11,6 +11,11 @@ not only its vineyards, so the range describes the land, and the sheet says so.
 Climate: the share of the boundary's area in each Köppen-Geiger class (Beck et al. 2023, 1991-2020), largest first, classes under
 5% dropped.
 
+Comparison rows, measured the same way: "country.spain" (all of Spain's land: spain-mask.json's Spain polygons, i.e. the mainland, the
+Balearics, the Canaries, Ceuta and Melilla; natural-earth-spain.geojson also holds neighbours' land, so it is not used) and "regions.<id>"
+(the union of the boundaries of the region's appellation-level places: parent "spain"; the Rioja zones, whose parent is another place,
+are left out because they lie inside the Rioja DOCa).
+
 Usage: python3 Tools/data/measure_places.py
 """
 import io, json, math, sys, urllib.request
@@ -49,6 +54,10 @@ def boundaries(places):
         elif p["boundary"] == "rioja-zones":
             out[p["id"]] = zones[p["name"]]
     return out
+
+
+def spain_land():
+    return unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("spain-mask.json")["spain"]])
 
 
 def tile_xy(lon, lat):
@@ -125,17 +134,23 @@ def main():
     missing = [p["id"] for p in places if p["id"] not in geoms] + [p["id"] for p in every if p["quiz"] != "none" and p not in places]
     if missing:
         sys.exit(f"no boundary for {missing}")
-    samples = {pid: points_in(g) for pid, g in geoms.items()}
+    regions = {}
+    for p in places:
+        if p["parent"] == "spain" and p["id"] in geoms:  # appellation level; zones have another place as parent
+            regions.setdefault(p["region"], []).append(geoms[p["id"]])
+    targets = dict(geoms)
+    targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
+    targets["country:spain"] = spain_land()
+    samples = {tid: points_in(g) for tid, g in targets.items()}
     need = {(int(x), int(y)) for pts in samples.values() for lon, lat in pts for x, y in [tile_xy(lon, lat)]}
     print(f"{len(need)} tiles", file=sys.stderr)
     with ThreadPoolExecutor(8) as ex:
         tiles = dict(ex.map(fetch, sorted(need)))
     koppen = [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in load("koppen-spain.geojson")["features"]]
-    out = {}
-    for p in places:
-        pid, geom = p["id"], geoms[p["id"]]
+    rows = {}
+    for tid, geom in targets.items():
         elev = []
-        for lon, lat in samples[pid]:
+        for lon, lat in samples[tid]:
             x, y = tile_xy(lon, lat)
             elev.append(elevation(tiles[(int(x), int(y))], x - int(x), y - int(y)))
         land = [e for e in elev if e > 0] or elev
@@ -147,18 +162,23 @@ def main():
                     shares[code] = (shares.get(code, (name, 0))[0], shares.get(code, (name, 0))[1] + a)
         total = sum(a for _, a in shares.values()) or 1
         climate = sorted(({"code": c, "name": n, "share": round(a / total, 2)} for c, (n, a) in shares.items()), key=lambda d: -d["share"])
-        out[pid] = {
+        rows[tid] = {
             "altitude": {"p10": r10(pct(land, .1)), "median": r10(pct(land, .5)), "p90": r10(pct(land, .9)), "samples": len(land)},
             "koppen": [c for c in climate if c["share"] >= .05],
         }
+    out = {pid: rows[pid] for pid in geoms}
     doc = {
         "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside "
                     "the boundary (Mapzen Terrarium zoom 10). koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
-                    "1991-2020), classes under 5% dropped. See data/SOURCES.md.",
+                    "1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land "
+                    "(spain-mask.json). regions: the same measures over the union of a study region's appellation-level places (parent spain; "
+                    "zones excluded), for comparisons. See data/SOURCES.md.",
         "places": out,
+        "country": {"spain": rows["country:spain"]},
+        "regions": {r: rows[f"region:{r}"] for r in sorted(regions)},
     }
     (DATA / "place-measures.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
-    print(f"wrote {len(out)} places", file=sys.stderr)
+    print(f"wrote {len(out)} places, {len(regions)} regions, Spain", file=sys.stderr)
 
 
 if __name__ == "__main__":
