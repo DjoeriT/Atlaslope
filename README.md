@@ -50,15 +50,14 @@ Every file in `data/` has an entry in `data/SOURCES.md`: source, URL, date fetch
 out of the repo (`data/raw/` is git-ignored); only processed, simplified files are committed. Attribution for each layer is shown in the app.
 
 ## Releasing (GitHub Pages)
-A small slice (fix or tweak, no new screen, data or content) publishes itself once merged on green CI plus ReviewBot; a big slice only on the
-owner's words "publish release N" (owner card, 18 Oct 2026; `.claude/skills/release/SKILL.md`).
+Releases start only with the owner's words "publish release N" in the thread; the thread then starts `publish` (`.claude/skills/release/SKILL.md`).
 1. The slice's pull request, with its tester note and handoff, is merged on green CI.
 2. Start the `publish` workflow (Actions › publish › Run workflow; works in the GitHub phone app) with N and the full commit hash.
    It checks the inputs (the commit is on `main`, `release-N` is new and next in line), reuses the green `main` run for that exact commit
    (or the PR's green run when the merge changed nothing), or else runs `Tools/check.sh ui`, deploys, then creates the tag (only after a successful deploy).
 3. Check the live site once. No records PR, and no "live" line to update: the tag is the record.
 4. Undo a bad release: run `publish` again with the next number and the previous release's commit (`git rev-list -n1 release-<N-1>`).
-   After a self-published small slice whose live check fails, do this at once and tell the owner.
+   When a live check fails, the thread tells the owner at once and asks for "publish release N+1" with that commit.
 
 ## Licence
 Code: MIT (`LICENSE`). Writing (fact sheets, guides, quiz text, interface copy): all rights reserved (`NOTICE.md`).
