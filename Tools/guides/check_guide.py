@@ -8,11 +8,10 @@ The manifest maps a source id (as in content/sources.json) to its text file unde
 
 Fails (exit 1) on:
 - a cite that is not "<id>" or "<id>:p<n>", names a source content/sources.json lacks, or a page the text does not have;
-- a number in a sentence that appears on none of the pages its block cites (numbers are compared as bare digits, so 13,000 and
-  13.000 match; a number written in words is not checked);
 - a chapter with no "beat" or an unknown beat, a beat used twice, or beats out of order;
 - exam framing (exam, WSET, Wine Scholar, remember, Study) or talk about the source instead of the place ("the pliego says").
-Warns on: minutes far from words / 200, flights that only go to the place itself.
+Warns on: a number in a sentence that is not on the pages its block cites as digits (13,000 and 13.000 match; the source
+may write it in words or roman numerals, so the sentence check confirms each one), minutes far from words / 200, flights that only go to the place itself.
 """
 import json
 import re
@@ -85,7 +84,7 @@ def check(manifest: dict, path: str) -> tuple[list[str], list[str]]:
             if pages:
                 for n in NUM.findall(para):
                     if digits(n) not in nums and not all(d in nums for d in re.findall(r'\d+', n)):
-                        errs.append(f'{where}: number "{n.strip()}" is on none of its cited pages')
+                        warns.append(f'{where}: number "{n.strip()}" is not on its cited pages as digits (the sentence check must confirm it)')
 
     seen = [c.get('beat') for c in g.get('chapters', [])]
     for b in seen:

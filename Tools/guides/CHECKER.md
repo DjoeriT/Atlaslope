@@ -17,7 +17,10 @@ Also FIX: lines about the source instead of the place ("the pliego says"), exam 
 splices, "X, Y and Z" lists, and a cause-to-taste link the page does not make. Taste words must be the source's.
 
 ## Also check
-- Flights: the pliego names the place, and the point is that place (check the label against the coordinates).
+- Flights: the pliego names the place, and the point is that place. Look each point up on OpenStreetMap Nominatim
+  (`https://nominatim.openstreetmap.org/search?q=...&format=json&limit=1`, a User-Agent header, one request a second) and correct
+  coordinates more than about 3 km off.
+- Numbers: every number the machine check warns about is confirmed against the page (words and roman numerals count) or fixed.
 - Label terms: the pliego defines the term, and the sentence carries its rule.
 - The fact sheet: list each field where it disagrees with the pliego (sheet says, pliego says, page). Do not edit the sheet.
 
