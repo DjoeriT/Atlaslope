@@ -1,0 +1,90 @@
+{
+ "id": "toro",
+ "title": "Why Toro tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Toro's vines face winters of extreme cold and a lot of sun, and they sit in iron-rich soil. Old vines in that soil give wines with a remarkable amount of colour and a high alcohol level.",
+  "cite": [
+   "toro-pliego:p20"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "The far west of Castilla y León",
+   "paras": [
+    "Toro lies in the far west of Castilla y León, in the south-east of Zamora province. It covers 62,000 hectares and borders the páramos (high limestone plateaus) of Tierra del Pan and Tierra de Campos.",
+    "The land is gentle. The Duero and its tributary the Talanda, along with the Guareña and the Hornija, have shaped it into valleys and terraces. The vineyards sit between 620 m and 840 m, with the highest ones in the south-west."
+   ],
+   "cite": [
+    "toro-pliego:p15",
+    "toro-pliego:p17",
+    "toro-pliego:p18"
+   ],
+   "fly": [
+    {
+     "label": "Toro",
+     "place": "toro",
+     "caption": "The wine zone covers 62,000 hectares in the south-east of Zamora province.",
+     "cite": [
+      "toro-pliego:p15"
+     ]
+    },
+    {
+     "label": "The Duero valley",
+     "point": [-5.4, 41.51],
+     "zoom": 10,
+     "caption": "The Duero and the rivers around it shape the land into valleys and terraces.",
+     "cite": [
+      "toro-pliego:p17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Hot sun, hard frost",
+   "paras": [
+    "The climate is continental and extreme, with some Atlantic influence. It is semi-arid, and frost often comes in spring.",
+    "Rain adds up to only 350-400 mm a year. The average temperature is 12-13º C, but the range runs from -11 to 37º C. The vines get about 2,600 hours of sun, up to 3,000.",
+    "While the grapes ripen, the swing between day and night is more than 15º C. The hard conditions hold yields down."
+   ],
+   "cite": [
+    "toro-pliego:p18",
+    "toro-pliego:p20"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Sandy loam with iron",
+   "paras": [
+    "The soil is mostly sandy loam, with less than 1% organic matter. Its pH runs from slightly acid to neutral, 6-7, and only the south-west goes up to about 8. It is poor in trace elements, except iron.",
+    "Growers match each grape to the ground. Tinta de Toro goes mostly on stony soil over a clay subsoil. Malvasía Castellana and Garnacha Tinta prefer lighter, sandy ground.",
+    "The iron and the age of the vines explain the unusual amount of colour in the wines. More than 50% of the vineyards are over 40 years old, and some vines survive from before phylloxera."
+   ],
+   "cite": [
+    "toro-pliego:p18",
+    "toro-pliego:p19",
+    "toro-pliego:p20"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A grape that gives little and gives strongly",
+   "paras": [
+    "Tinta de Toro is close to Tempranillo in its genes. It yields less, has more tannin and less acidity, and makes more concentrated, more powerful wines.",
+    "The rules cap its yield at 7,500 kg per hectare, against 9,000 kg for Garnacha Tinta and the white grapes. Vines are trained as vaso (bush) or on wires, with at least 500 vines per hectare.",
+    "Next to wines from neighbouring areas with similar grapes, Toro's are more structured. They have more polyphenols and tannin, less acidity, a higher pH and riper fruit."
+   ],
+   "cite": [
+    "toro-pliego:p13",
+    "toro-pliego:p16",
+    "toro-pliego:p19"
+   ]
+  }
+ ]
+}
