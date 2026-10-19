@@ -3,7 +3,7 @@
  "title": "Why León tastes the way it does",
  "minutes": 4,
  "lede": {
-  "text": "On a summer day in León the vineyards can turn torrid, and the night is much colder. That swing builds the natural acidity behind the fresh rosés of Prieto Picudo.",
+  "text": "On a summer day in León the heat can turn torrid, and the night is much colder. That swing builds the natural acidity behind the fresh rosés of Prieto Picudo.",
   "cite": ["leon-pliego:p16", "leon-pliego:p23"]
  },
  "chapters": [
@@ -31,9 +31,9 @@
    "beat": "weather",
    "title": "Torrid days, cold nights",
    "paras": [
-    "Winter is harsh and long, with fog and frost. Even so, the lowest temperatures in the coldest months never pass -15º C, the limit for vines in winter. Spring is irregular, with mild spells and the dreaded spring frosts. They never stop the vines from growing. Summer alternates torrid, arid spells with cold ones, and the warmest months always average above 20º C. Autumn is mild and a little rainy, which helps the grapes finish ripening.",
+    "Winter is harsh and long, with fog and frost. Even so, the lowest temperatures in the coldest months never pass -15º C, the limit for vines in winter. Spring is irregular, with mild spells and the dreaded spring frosts. They are never a limiting factor for growing vines. Summer alternates torrid, arid spells with cold ones, and the warmest months always average above 20º C. Autumn is mild and a little rainy, which helps the grapes finish ripening.",
     "About 500 mm of rain falls in a year, spread over summer and autumn. Vines need no irrigation except in a few isolated years. The sun shines about 2,700 hours a year.",
-    "That light feeds the leaves and berries, so they gather sugars and polyphenols. The polyphenols give rosés and reds their intense, warm colours. At night the vine breathes and keeps its natural acidity, about 5.5 g/l of tartaric acid in the must. That is the freshness of León's rosés. Hot days also help the skins build up the terpenes that carry Prieto Picudo's aroma."
+    "That light feeds the leaves and berries, so they gather sugars and polyphenols. The polyphenols give rosés and reds their intense, warm colours. The gap between torrid days and much colder nights lets the vine carry out the cell respiration that builds its natural acidity, about 5.5 g/l of tartaric acid in the must. That is the freshness of León's rosés. Hot days also help the skins build up the terpenes that carry Prieto Picudo's aroma."
    ],
    "cite": ["leon-pliego:p16", "leon-pliego:p17", "leon-pliego:p23"]
   },
@@ -45,13 +45,13 @@
     "The soils all lie below 900 m and fall into three groups. The first is the rañas, a flat plateau of coarse rolled stones in a sandy, silty matrix. It slopes south from 1,000 m to 800 m. The rivers Órbigo, Esla and Cea have worn it into small hills. These soils are poor in fertility and organic matter. Stones run through the whole profile, so air and drainage are good.",
     "The second group is the terraces, laid down by the Esla, Órbigo and Cea as they eroded and deposited gravel. They hold pebbles, gravel and sand, with a little silt and clay. The vineyard has traditionally sat here. Their drainage is excellent and they keep an acceptable amount of water. They are deep and poor in organic matter. The big quality denominations of Castilla y León mostly sit on this type of soil.",
     "The third group is the campiña, a gently rolling land that covers Los Oteros and Tierra de Campos. Tierra de Campos has finer soils of marl, clay, sandstone and calcareous conglomerate. Los Oteros is coarser, with less clay.",
-    "Every one of these soils is low in organic matter, and that matters most for the whites. They are especially light, with little clay and excellent drainage, which gives whites a great aromatic expression."
+    "Every one of these soils is low in organic matter, and that matters most for the whites. The whites reach a great aromatic expression because the soils under them are especially light, with little clay and excellent drainage."
    ],
    "cite": ["leon-pliego:p17", "leon-pliego:p18", "leon-pliego:p19", "leon-pliego:p24"],
    "fly": [
     {
      "label": "Terraces of the Esla at Valdevimbre",
-     "point": [-5.45, 42.38],
+     "point": [-5.62, 42.42],
      "zoom": 10,
      "caption": "The Esla terraces, where the vineyard has traditionally sat, include the whole Valdevimbre zone.",
      "cite": ["leon-pliego:p18"]
@@ -70,9 +70,9 @@
    "beat": "rules",
    "title": "Whole bunches in the rosé",
    "paras": [
-    "Prieto Picudo, the main grape, gives an irregular crop. Growers learned that long pruning suits it best, because it is most productive from the fourth and fifth bud on each cane. New plantings of the past 20 years have all been on trellises, and the rules let trellised vines yield more grapes.",
-    "A technique found only in this zone makes the rosés stand out. It is called madreo. The winemaker adds whole, perfectly healthy Prieto Picudo bunches, 5 to 10% of the tank's capacity, to rosé fermenting in the tank. When fermentation ends, the bunches are thrown away. The light maceration gives the wine more colour and more structure. Natural carbon dioxide from inside the berries adds a fine bubble and more freshness. Many wineries make a classic rosé and also set aside some must for madreo.",
-    "Young Prieto Picudo reds are intense in colour, aroma and taste. They have red and black fruit, especially strawberry and raspberry. They are fleshy and full-bodied, with some astringency and a long finish. Reds aged in oak barrels add wood and toast to the fruit. The white Albarín is the most aromatic, but it has less structure than Verdejo or Godello. Wineries blend it with Verdejo or age it in barrel to give it more."
+    "Prieto Picudo, the main grape, gives an irregular crop. Long pruning suits it best: it is most productive from the fourth and fifth bud on each cane. New plantings of the past 20 years have all been on trellises, and the rules let trellised vines yield more grapes.",
+    "One rosé technique is found only in this zone. It is called madreo. The winemaker adds whole, perfectly healthy Prieto Picudo bunches, 5 to 10% of the tank's capacity, to rosé fermenting in the tank. When fermentation ends, the bunches are thrown away. The rosé gains deeper colour and more structure. A fine bubble of natural carbon dioxide, from the physical and chemical processes of the technique, adds more freshness. Many wineries make a classic rosé and also set aside some must for madreo.",
+    "Young Prieto Picudo reds are intense in colour, aroma and taste. They have red and black fruit, above all red fruit such as strawberry and raspberry. They are fleshy and full-bodied, with some astringency and a long finish. Reds aged in oak barrels add wood and toast to the fruit. Whites of Albarín are more aromatic than those of Verdejo or Godello, but they have less complexity and structure. More and more wineries blend Albarín with Verdejo or age it in barrel to give it more."
    ],
    "cite": ["leon-pliego:p11", "leon-pliego:p12", "leon-pliego:p20", "leon-pliego:p21", "leon-pliego:p22", "leon-pliego:p24"]
   }

@@ -18,3 +18,4 @@
 | Check | toro | Opus | 76,473 | 2.5 |
 | Check | ribera-del-duero | Opus | 83,897 | 3.1 |
 | Check | cigales | Opus | 85,700 | 3.5 |
+| Check | leon | Opus | 83,572 | 3.1 |
