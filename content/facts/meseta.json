@@ -4,7 +4,7 @@
   {
    "id": "mondejar",
    "why": {
-    "text": "Hot summers and cold winters on potassium-rich red soils give fresh, aromatic wines. Whites from Malvar and Torrontés stand out.",
+    "text": "Summers reach 40 °C, winters -8 °C, on deep red, potassium-rich soils. Wines are fruity and fresh; Malvar and Torrontés whites stand out.",
     "cite": [
      "mondejar-doc:p5"
     ]
@@ -43,10 +43,11 @@
      "rose",
      "red"
     ],
-    "text": "Light, fresh whites and rosados (Torrontés), plus moderately tannic reds: young, aged or carbonic-maceration.",
+    "text": "Light, fresh whites and rosados (Torrontés): young, over one year or barrel-fermented; rosados from red grapes only. Plus moderately tannic reds: young, aged or carbonic-maceration.",
     "cite": [
      "mondejar-doc:p1",
-     "mondejar-doc:p2"
+     "mondejar-doc:p2",
+     "mondejar-doc:p3"
     ]
    },
    "climate": {
@@ -56,13 +57,13 @@
     ]
    },
    "soil": {
-    "text": "Deep red silty-clay soil with gravel; alkaline, low in organic matter and phosphorus, rich in potassium.",
+    "text": "Deep red soil over silty-clay sediments with gravel, sandy clay loam; alkaline, low in organic matter and phosphorus, rich in potassium.",
     "cite": [
      "mondejar-doc:p5"
     ]
    },
    "tastes": {
-    "text": "Whites: yellow, light, perfumed and pleasantly acidic; Torrontés intensely aromatic. Rosés: pink, red fruit and flowers, fresh. Reds: cherry, garnet or ruby, fruity, moderately tannic; aged ones tile-coloured, toasty, spiced.",
+    "text": "Whites: light, perfumed and pleasantly acidic; Torrontés intensely aromatic; barrel-fermented ones yellow. Rosés: pink, red fruit and flowers, fresh. Reds: cherry, garnet or ruby, fruity, moderately tannic; aged ones tile-coloured, toasty, spiced.",
     "cite": [
      "mondejar-doc:p1",
      "mondejar-doc:p2",
@@ -98,20 +99,31 @@
   {
    "id": "vinos-de-madrid",
    "why": {
-    "text": "Low yields (about 3,000 kg/ha) give deeply coloured reds with ripe fruit. The sierra zones add minerality, while the chalky south-east adds ripeness.",
+    "text": "Normally low yields (about 3,000 kg/ha) and deeply coloured reds with ripe fruit. The sierra zones add minerality; the limy south-east adds ripeness.",
     "cite": [
      "vinos-de-madrid-doc:p5",
      "vinos-de-madrid-doc:p6"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Albillo Real"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Malvar"
+     },
+     {
+      "local": "Garnacha Tinta"
+     }
+    ],
+    "cite": [
+     "vinos-de-madrid-doc:p5"
+    ],
     "others": [
-     "Albillo Real",
-     "Tempranillo",
-     "Malvar",
-     "Garnacha Tinta",
      "Airén",
      "Cabernet Sauvignon",
      "Garnacha Tintorera",
@@ -126,7 +138,6 @@
      "Torrontés"
     ],
     "othersCite": [
-     "vinos-de-madrid-doc:p5",
      "vinos-de-madrid-doc:p9"
     ]
    },
@@ -150,8 +161,9 @@
     "cite": []
    },
    "soil": {
-    "text": "Chalky ground in the south-east; the sierra zones give mineral, scrubland notes.",
+    "text": "Limy zones in the south-east; the sierra zones give mineral, scrubland notes.",
     "cite": [
+     "vinos-de-madrid-doc:p5",
      "vinos-de-madrid-doc:p6"
     ]
    },
@@ -171,7 +183,7 @@
      },
      {
       "name": "Crianza y Reserva",
-      "text": "White wines age to deep golden or old gold."
+      "text": "White wines age to golden yellow or old gold."
      }
     ],
     "cite": [
@@ -193,11 +205,18 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Garnacha Tinta"
+     }
+    ],
+    "cite": [
+     "calzadilla-doc:p7"
+    ],
     "others": [
-     "Tempranillo (Cencibel, Tinto de Toro)",
-     "Garnacha Tinta",
      "Cabernet Sauvignon",
      "Syrah"
     ],
@@ -216,7 +235,7 @@
     ]
    },
    "climate": {
-    "text": "A cool area, where the grapes ripen slowly and evenly.",
+    "text": "A cool area. With the alkaline soil, it makes the grapes ripen slowly and evenly.",
     "cite": [
      "calzadilla-doc:p3"
     ]
@@ -259,7 +278,7 @@
      }
     ],
     "cite": [
-     "mentrida-wiki"
+     "mentrida-doc:p6"
     ],
     "others": [
      "Albillo Real",
@@ -291,6 +310,7 @@
     "text": "Dry to sweet whites and rosados, young and oak-aged reds, and sparkling wines.",
     "cite": [
      "mentrida-doc:p1",
+     "mentrida-doc:p2",
      "mentrida-doc:p3",
      "mentrida-doc:p4"
     ]
@@ -327,7 +347,7 @@
      },
      {
       "name": "Vino espumoso",
-      "text": "Fine, lasting bubbles; fruity aromas; reservas more intense."
+      "text": "Fine, lasting bubbles; clean, fruity aromas; reservas with intense aromas."
      }
     ],
     "cite": [
@@ -344,7 +364,7 @@
   {
    "id": "ucles",
    "why": {
-    "text": "Altitude and potassium-rich soils, with low-density bush vines, give balanced grapes. The wines are acidic and made to last in bottle.",
+    "text": "Altitude and potassium-rich soils, with low-density bush vines, give grapes balanced in acids. A low pH suits the wines to a longer life in bottle.",
     "cite": [
      "ucles-doc:p6"
     ]
@@ -372,7 +392,9 @@
     ],
     "text": "Reds, young whites and barrel-fermented or aged whites, rosados, and quality sparkling wines.",
     "cite": [
-     "ucles-doc:p1"
+     "ucles-doc:p1",
+     "ucles-doc:p2",
+     "ucles-doc:p3"
     ]
    },
    "climate": {
@@ -380,7 +402,7 @@
     "cite": []
    },
    "soil": {
-    "text": "Fine-textured, deep, tending to chalky; clay-loam to sandy-loam; rich in potassium.",
+    "text": "Fine-textured, deep, tending to limy; clay-loam to sandy-loam; rich in potassium.",
     "cite": [
      "ucles-doc:p6"
     ]
@@ -392,7 +414,7 @@
     ]
    },
    "tastes": {
-    "text": "Reds: deep colour, intense fruity and floral aromas; powerful, full-bodied, harmonious. Whites: pale yellow, fruity and fresh; barrel-fermented straw to golden, toasty. Rosés: strawberry or raspberry pink, fruity.",
+    "text": "Reds: medium-high colour, intense fruity and floral aromas; powerful, with body, harmonious. Whites: pale yellow, fruity and fresh; barrel-fermented straw to golden, toasty. Rosés: strawberry or raspberry pink, fruity.",
     "cite": [
      "ucles-doc:p1",
      "ucles-doc:p2",
@@ -429,13 +451,24 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Graciano"
+     },
+     {
+      "local": "Petit Verdot"
+     }
+    ],
+    "cite": [
+     "dominio-de-valdepusa-doc:p3"
+    ],
     "others": [
-     "Syrah",
-     "Cabernet Sauvignon",
-     "Graciano",
-     "Petit Verdot",
      "Merlot"
     ],
     "othersCite": [
@@ -480,7 +513,7 @@
   {
    "id": "campo-de-la-guardia",
    "why": {
-    "text": "Very salty soils rich in potassium, plus low air humidity, keep the grapes small, with more skin to pulp.",
+    "text": "Very salty soils rich in potassium, plus low air humidity, mean the grapes swell less and tend to stay small, with more skin to pulp.",
     "cite": [
      "campo-de-la-guardia-doc:p5"
     ]
@@ -540,7 +573,7 @@
   {
    "id": "manchuela",
    "why": {
-    "text": "Between two river valleys, summers are hot and sunny with almost no rain. On calcareous clay soils, Bobal gives aromatic, deeply coloured wines.",
+    "text": "Between two river valleys: hot, sunny, almost no rain from May to September. On clay over limestone, Bobal gives aromatic, deep-coloured wines.",
     "cite": [
      "manchuela-doc:p7"
     ]
@@ -614,7 +647,7 @@
     ]
    },
    "tastes": {
-    "text": "Whites: very pale yellow with green glints, fruity. Rosés: strawberry, raspberry, bright, fresh, harmonious. Reds: cherry to ruby with violet; wild red fruit, long. Aged reds: garnet to tile; vanilla, toast, spice, jam.",
+    "text": "Whites: very pale yellow with green glints, fruity. Rosés: strawberry, raspberry, bright, fresh, harmonious. Reds: cherry to ruby with violet; wild red fruit, long. Aged reds: garnet or ruby with tile tones; vanilla, toast, spice, jam.",
     "cite": [
      "manchuela-doc:p1",
      "manchuela-doc:p2",
@@ -629,7 +662,7 @@
      },
      {
       "name": "Crianza, Reserva y Gran Reserva",
-      "text": "Garnet or ruby with tile tones; vanilla, toast; medium-high to high tannin."
+      "text": "Garnet or ruby with tile tones; vanilla, toast; medium to high tannin."
      },
      {
       "name": "Vino espumoso",
@@ -657,14 +690,27 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Tempranillo"
+     }
+    ],
+    "cite": [
+     "dehesa-del-carrizal-doc:p6"
+    ],
     "others": [
-     "Chardonnay",
-     "Merlot",
-     "Syrah",
-     "Cabernet Sauvignon",
-     "Tempranillo",
      "Petit Verdot"
     ],
     "othersCite": [
@@ -815,23 +861,42 @@
   {
    "id": "la-mancha",
    "why": {
-    "text": "Dry, chalky plains get 3,000 hours of sun and 300 to 350 mm of rain. Wines are colourful and aromatic, balanced by low yields.",
+    "text": "Dry, limy plains get 3,000 hours of sun and 300 to 350 mm of rain. Wines are colourful and aromatic, balanced by low yields.",
     "cite": [
      "la-mancha-doc:p7"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Airén"
+     },
+     {
+      "local": "Bobal"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Verdejo"
+     }
+    ],
+    "cite": [
+     "la-mancha-doc:p6"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Bobal",
-     "Airén",
-     "Verdejo",
-     "Tempranillo",
-     "Syrah",
-     "Macabeo",
-     "Garnacha Tinta",
      "Cabernet Franc",
      "Chardonnay",
      "Gewürztraminer",
@@ -852,7 +917,6 @@
      "Viognier"
     ],
     "othersCite": [
-     "la-mancha-doc:p6",
      "la-mancha-doc:p11",
      "la-mancha-doc:p12"
     ]
@@ -865,9 +929,10 @@
      "sweet",
      "sparkling"
     ],
-    "text": "Whites and rosados, young or traditional; oak and aged reds; naturally sweet wine; semi-sparkling and sparkling wines.",
+    "text": "Whites and rosados, young or traditional; oak and aged whites and reds; naturally sweet white; semi-sparkling and sparkling wines.",
     "cite": [
      "la-mancha-doc:p1",
+     "la-mancha-doc:p2",
      "la-mancha-doc:p3",
      "la-mancha-doc:p4"
     ]
@@ -879,7 +944,7 @@
     ]
    },
    "soil": {
-    "text": "Miocene limestone, marl and sand, brown to red-brown; chalky soils give full-bodied reds.",
+    "text": "Miocene limestone, marl and sand, brown to red-brown; limy soils favour full-bodied reds.",
     "cite": [
      "la-mancha-doc:p7"
     ]
@@ -899,7 +964,7 @@
      },
      {
       "name": "Roble",
-      "text": "Red garnet to ruby; vanilla; persistent and balanced."
+      "text": "White or red; whites yellow to gold, reds garnet to ruby; vanilla and toast."
      },
      {
       "name": "Crianza, Reserva y Gran Reserva",
@@ -911,6 +976,7 @@
      }
     ],
     "cite": [
+     "la-mancha-doc:p1",
      "la-mancha-doc:p2",
      "la-mancha-doc:p3",
      "la-mancha-doc:p4",
@@ -1767,7 +1833,7 @@
     ]
    },
    "climate": {
-    "text": "Continental Mediterranean: hot summers, cold winters. Usually over 2,500 sun hours a year. Late spring frosts. Rain well above the rest of La Mancha.",
+    "text": "Continental Mediterranean: warm summers, cold winters. Usually over 2,500 sun hours a year. Late spring frosts. Rain well above the rest of La Mancha.",
     "cite": [
      "los-cerrillos-doc"
     ]
@@ -1785,7 +1851,7 @@
     ]
    },
    "tastes": {
-    "text": "Six-month wines: purple or picota red, violet rims; fruit with floral scents; soft and fresh. Longer-aged wines: cherry red, garnet-tile rims; ripe fruit, liquorice, balsam; fleshy, with creamy oak notes.",
+    "text": "Younger wines: purple or picota red, violet rims; fruit with floral scents; soft, fresh, good structure. Longer-aged wines: cherry red, garnet-tile rims; ripe fruit, liquorice, balsam; fleshy, powerful, with rich, creamy ageing notes.",
     "cite": [
      "los-cerrillos-doc"
     ]
@@ -1850,9 +1916,9 @@
     ]
    },
    "soil": {
-    "text": "Very old red soil, acid (pH below 6) and rich in iron. Half the topsoil is stone, including quartzite.",
+    "text": "Very old soil: red on top, yellowish deeper down. Acid (pH below 6) and rich in iron. Half the topsoil is stone, including quartzite.",
     "cite": [
-     "rosalejo-doc"
+     "rosalejo-doc:p1"
     ]
    },
    "altitude": {

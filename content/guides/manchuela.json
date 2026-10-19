@@ -1,0 +1,99 @@
+{
+ "id": "manchuela",
+ "title": "Why Manchuela tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Manchuela sits between two river valleys, with high temperatures, many hours of sun and almost no rain from May to September. In that setting the native Bobal grape gives wines with deep colour and a lot of aroma.",
+  "cite": [
+   "manchuela-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rivers",
+   "beat": "place",
+   "title": "Between the Júcar and the Cabriel",
+   "paras": [
+    "The vineyards lie in the south-east of Cuenca province and the north-west of Albacete province. Two rivers frame them: the Júcar and the Cabriel.",
+    "The producers' group that applied for the name counted 34 wineries and 900 growers."
+   ],
+   "cite": [
+    "manchuela-doc:p6",
+    "manchuela-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Júcar valley",
+     "point": [
+      -1.43,
+      39.19
+     ],
+     "zoom": 10,
+     "caption": "The Júcar is one of the two rivers that bound the Manchuela vineyards.",
+     "cite": [
+      "manchuela-doc:p6"
+     ]
+    },
+    {
+     "label": "The Cabriel valley",
+     "point": [
+      -1.31,
+      39.33
+     ],
+     "zoom": 10,
+     "caption": "The Cabriel is the other river that bounds the Manchuela vineyards.",
+     "cite": [
+      "manchuela-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "High heat and an almost rainless summer",
+   "paras": [
+    "Temperatures are high. Almost no rain falls from May to September.",
+    "The vines also get a great many hours of sun."
+   ],
+   "cite": [
+    "manchuela-doc:p7"
+   ]
+  },
+  {
+   "id": "clay",
+   "beat": "ground",
+   "title": "Clay on a limestone base",
+   "paras": [
+    "The soils are clay with a limestone base. They come from the sediments of the two rivers."
+   ],
+   "cite": [
+    "manchuela-doc:p7"
+   ]
+  },
+  {
+   "id": "bobal",
+   "beat": "rules",
+   "title": "Native Bobal and many kinds of wine",
+   "paras": [
+    "Bobal is the native grape. This setting decides where it is planted.",
+    "It gives wines with strong aromas of fruit and flowers, with excellent acidity and deep colour. The colour is lively and lasts over time. It comes from a rich load of polyphenols and a low pH, without long macerations.",
+    "The other main grapes are Cabernet Sauvignon, Verdejo, Tempranillo, Macabeo and Garnacha Tinta. Twenty more are listed as secondary grapes, among them Syrah and Chardonnay.",
+    "Whites and rosés come dry or in three sweeter grades: semi-dry, semi-sweet and sweet. The sweeter wines look and smell like the dry wines of the same grape. Whites can also be fermented in barrel.",
+    "Reds come young or fermented in barrel. Roble (oak) reds and carbonic-maceration reds are made too. Each of these comes dry or in the same three sweeter grades.",
+    "Crianza, Reserva and Gran Reserva are the aged reds. They have medium to high tannin and a long, harmonious finish.",
+    "Quality sparkling wine is white or rosé. It is pale and bright, with small persistent bubbles. It smells fruity and tastes fresh and balanced."
+   ],
+   "cite": [
+    "manchuela-doc:p1",
+    "manchuela-doc:p2",
+    "manchuela-doc:p3",
+    "manchuela-doc:p4",
+    "manchuela-doc:p5",
+    "manchuela-doc:p6",
+    "manchuela-doc:p7",
+    "manchuela-doc:p11"
+   ]
+  }
+ ]
+}

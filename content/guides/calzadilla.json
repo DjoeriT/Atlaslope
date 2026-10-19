@@ -1,0 +1,68 @@
+{
+ "id": "calzadilla",
+ "title": "Why Calzadilla tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "A cool vineyard on very limy, strongly alkaline ground ripens its grapes slowly and evenly. The wines are red only, deep in colour and rich in polyphenols.",
+  "cite": [
+   "calzadilla-doc:p1",
+   "calzadilla-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "heights",
+   "beat": "place",
+   "title": "High vines, some on steep slopes",
+   "paras": [
+    "Calzadilla is a pago, a vineyard estate with its own protected name. It lies in the municipality of Huete in Cuenca.",
+    "The vines grow high, at 845 to 1,005 m. In places they sit on steep slopes. Some grow on terraces cut into the hillside, called bancales. This ground makes it necessary to train each vine on its own cross of stakes."
+   ],
+   "cite": [
+    "calzadilla-doc:p1",
+    "calzadilla-doc:p3"
+   ]
+  },
+  {
+   "id": "cool",
+   "beat": "weather",
+   "title": "A cool place for slow ripening",
+   "paras": [
+    "The area is cool. Together with the alkaline soil, this makes the grapes ripen slowly and evenly."
+   ],
+   "cite": [
+    "calzadilla-doc:p3"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Limy soil that shapes the grape",
+   "paras": [
+    "The soil is very high in limestone and strongly alkaline.",
+    "With this soil and the cool area, the grapes ripen with a characteristic mineral quality. They hold more anthocyanins, the colour compounds, and more of the components of taste and aroma."
+   ],
+   "cite": [
+    "calzadilla-doc:p3"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Red only, and picked by hand",
+   "paras": [
+    "Calzadilla makes red wine only. The main grapes are Tempranillo (also called Cencibel or Tinto de Toro) and Garnacha Tinta. Cabernet Sauvignon and Syrah are allowed as secondary grapes.",
+    "Yields are capped at 9,000 kg of grapes per hectare for Garnacha, or 63 hl per hectare. Tempranillo, Syrah and Cabernet Sauvignon are capped at 10,000 kg per hectare, or 70 hl per hectare.",
+    "All the grapes are picked by hand into boxes of about 15 kg, which allows a first selection of the best bunches in the vineyard. The boxes go into a cold room for two days at 13º C. The cold delays the start of fermentation, which keeps the fruity aromas and steadies the colour.",
+    "Fermentation is normally spontaneous, with native yeasts, at 15 to 32º C. The wine macerates on its skins for 12 to 30 days. New wines with low volatile acidity, under 10 meq/l, are chosen for ageing. They spend at least 8 months in oak barrels or fudres, larger oak casks, of 225 to 4,700 l.",
+    "The wines are intensely mineral, with forest-floor aromas. Their fruity aromas hold, and their colours stay bright and intense with time."
+   ],
+   "cite": [
+    "calzadilla-doc:p1",
+    "calzadilla-doc:p2",
+    "calzadilla-doc:p3",
+    "calzadilla-doc:p7"
+   ]
+  }
+ ]
+}

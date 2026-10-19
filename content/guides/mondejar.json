@@ -1,0 +1,70 @@
+{
+ "id": "mondejar",
+ "title": "Why Mondéjar tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Deep red soil, rich in potassium, under temperatures that swing widely through the year. Whites from Malvar and Torrontés stand out.",
+  "cite": [
+   "mondejar-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Twenty-one villages of Guadalajara",
+   "paras": [
+    "Mondéjar is a protected designation of origin (DOP) in the province of Guadalajara. Its zone covers vineyard plots in 21 municipalities of the province, among them Mondéjar itself and Pastrana.",
+    "The producers' association behind the name is made up of 2 bodegas and 350 viticultores (grape growers)."
+   ],
+   "cite": [
+    "mondejar-doc:p1",
+    "mondejar-doc:p5",
+    "mondejar-doc:p6"
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "From 40 °C to -8 °C",
+   "paras": [
+    "Temperatures run from 40 °C in summer to -8 °C in winter. Rainfall averages 500 mm a year."
+   ],
+   "cite": [
+    "mondejar-doc:p5"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Deep red soil, rich in potassium",
+   "paras": [
+    "The soil is red, over silty-clay sediments with gravel. It is deep, with good permeability and aeration, and holds small pieces of limestone.",
+    "It is alkaline and poor in organic matter and phosphorus. It is rich in potassium."
+   ],
+   "cite": [
+    "mondejar-doc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Malvar and Torrontés whites",
+   "paras": [
+    "Torrontés and Malvar are the main white grapes. Torrontés is the traditional grape of the comarca (district). Tempranillo (also called Cencibel or Tinto de Toro) is joined by Cabernet Sauvignon and Syrah among the main red grapes. Merlot and Verdejo are among the secondary grapes.",
+    "The designation makes white, rosado (rosé) and red wines. Their aromatic intensity is medium-high, with fruity and floral aromas. They are fresh and pleasantly acidic, with slightly aniseed tones.",
+    "The whites are low in alcohol. Torrontés gives light, pleasantly acidic whites with an intense, deep aroma and marked perfumed accents. They get a light, cold maceration of skins and must for more aroma, and ferment below 18 °C. Some are fermented in barrel: these are yellow, with clean fruit or floral aromas.",
+    "Rosados come from 100% red grapes, macerated for 4 to 12 hours. They are pink, with red fruit or flower aromas, fresh and harmonious. Some are fermented in barrel too.",
+    "The reds are cherry, garnet or ruby in colour, fruity and moderately tannic, with a long finish. Those made with carbonic maceration (maceración carbónica) are silky and very tannic, with a lasting fruity finish.",
+    "Aged reds carry one of three names: Crianza, Reserva or Gran Reserva. They turn tile-coloured. Oak and stewed fruit meet toasty, spicy notes. They are fleshy and persistent."
+   ],
+   "cite": [
+    "mondejar-doc:p1",
+    "mondejar-doc:p2",
+    "mondejar-doc:p3",
+    "mondejar-doc:p5",
+    "mondejar-doc:p8"
+   ]
+  }
+ ]
+}

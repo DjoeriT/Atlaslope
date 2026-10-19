@@ -1,0 +1,67 @@
+{
+ "id": "dominio-de-valdepusa",
+ "title": "Why Dominio de Valdepusa tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Clay on top and pure limestone underneath: the two layers of one estate's soil each leave their mark on the glass.",
+  "cite": [
+   "dominio-de-valdepusa-doc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "estate",
+   "beat": "place",
+   "title": "One estate, one winery",
+   "paras": [
+    "Dominio de Valdepusa is a pago, a single estate, in the municipality of Malpica de Tajo in Toledo. The vineyard covers 49.0848 hectares.",
+    "The wines are made in the winery on the property."
+   ],
+   "cite": [
+    "dominio-de-valdepusa-doc:p3",
+    "dominio-de-valdepusa-doc:p4"
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers, cold winters",
+   "paras": [
+    "The climate is continental. Summers are dry and hot. Winters are cold. Day and night differ sharply.",
+    "The mean temperature is 17 °C in winter and 26 °C in summer. Rain averages 450 mm a year."
+   ],
+   "cite": [
+    "dominio-de-valdepusa-doc:p4"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay over limestone",
+   "paras": [
+    "A layer of clay 30 to 50 cm thick lies on top. Below it is fragmented limestone, 2 m or more deep.",
+    "The soil is basic (pH above 8). It has good structure and porosity, and it drains well.",
+    "The clay brings power and complexity to the wines, along with intensity. The pure limestone subsoil brings elegance and minerality. It gives the tannins a velvety texture."
+   ],
+   "cite": [
+    "dominio-de-valdepusa-doc:p4"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Deep reds, aged in oak",
+   "paras": [
+    "Only red wine is made here. It is very deep in colour.",
+    "Syrah and Cabernet Sauvignon are the main grapes, with Graciano and Petit Verdot. The small amount of Merlot is made together with the Syrah.",
+    "Fermentation lasts at least 7 days, between 25 °C and 30 °C, with the grapes' natural yeasts. The juice macerates with the skins. The wine then goes through malolactic fermentation. It is filtered little or not at all before bottling.",
+    "At least 85 per cent of each wine ages in oak barrels of 225 to 500 litres. A single-grape wine needs at least 10 months. A blend needs at least 6 months. A blend made from already aged single-grape wines gets at least 6 more months."
+   ],
+   "cite": [
+    "dominio-de-valdepusa-doc:p1",
+    "dominio-de-valdepusa-doc:p2",
+    "dominio-de-valdepusa-doc:p3"
+   ]
+  }
+ ]
+}

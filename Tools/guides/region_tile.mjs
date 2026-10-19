@@ -8,13 +8,14 @@ import { chromium } from '@playwright/test';
 import { execFileSync } from 'node:child_process';
 import { mkdirSync } from 'node:fs';
 
-// lng,lat,zoom of the map's centre (the frame is its top 812 of 900 - bar px); a new region adds its line; a new region adds its line.
+// lng,lat,zoom of the map's centre (the frame is its top 812 of 900 - bar px); a new region adds its line.
 const VIEWS = {
   cataluna: '1.45,41.62,7.45',
   baleares: '2.98,39.60,8.9',
   ebro: '-1.00,42.05,7.55',
   mediterranean: '-1.00,38.78,7.6',
   canarias: '-15.80,28.45,7.35',
+  meseta: '-3.75,39.45,7.05',
 };
 
 const [base, ...regions] = process.argv.slice(2);
@@ -38,8 +39,11 @@ for (const id of regions) {
   // The map sits under the site bar: clip a 1300x812 frame from the canvas's own top.
   const box = await page.locator('.maplibregl-canvas').boundingBox();
   await page.screenshot({ path: png, clip: { x: box.x, y: box.y, width: 1300, height: 812 } });
-  execFileSync('convert', [png, '-resize', '1200x750!', '-quality', '72', `public/guides/${id}.webp`]);
-  console.log(`public/guides/${id}.webp`);
+  // ImageMagick on Linux; cwebp (Homebrew) on the owner's Mac, which has no ImageMagick.
+  const out = `public/guides/${id}.webp`;
+  try { execFileSync('convert', [png, '-resize', '1200x750!', '-quality', '72', out]); }
+  catch { execFileSync('cwebp', ['-quiet', '-q', '72', '-resize', '1200', '750', png, '-o', out]); }
+  console.log(out);
   await page.close();
 }
 await browser.close();

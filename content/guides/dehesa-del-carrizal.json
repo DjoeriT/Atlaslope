@@ -1,0 +1,92 @@
+{
+ "id": "dehesa-del-carrizal",
+ "title": "Why Dehesa del Carrizal tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Soil and a north-facing slope, shaded by a hill early in the afternoon, give wines of almost Atlantic character rather than Mediterranean. Critics find no warm notes in them, and every wine smells of the wild scrub around it.",
+  "cite": [
+   "dehesa-del-carrizal-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "montes",
+   "beat": "place",
+   "title": "The middle of the Montes de Toledo",
+   "paras": [
+    "The estate lies at the far western edge of Retuerta del Bullaque, in Ciudad Real, very close to Navas de Estena. It belongs to the Montes de Toledo and can be seen as the geographic centre of that comarca.",
+    "The vineyard covers 26.2764 hectares in eleven plots.",
+    "The Montes de Toledo are a tight knot of mountains. They set the area apart from its neighbours. The Meseta Toledana lies to the north and La Mancha to the east. The Campo de Calatrava lies to the south.",
+    "Difficult travel kept the area isolated. Through its whole history people used the land for grazing and farming. They also used it for timber and hunting. Shepherds set fires to renew the vegetation. Heather and rockrose grew in the burned zones, as did rosemary and gorse. The main stands of trees grow beside the pedrizas, the stony slopes that acted as natural firebreaks. The rañas are land cleared by people for crops."
+   ],
+   "cite": [
+    "dehesa-del-carrizal-doc:p5",
+    "dehesa-del-carrizal-doc:p6",
+    "dehesa-del-carrizal-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Montes de Toledo",
+     "point": [
+      -4.3677,
+      39.573
+     ],
+     "zoom": 9,
+     "caption": "The mountain comarca. Dehesa del Carrizal can be seen as its geographic centre.",
+     "cite": [
+      "dehesa-del-carrizal-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Wetter hills, foggy hollows, slow ripening",
+   "paras": [
+    "The climate is wetter than in the neighbouring regions. Different slope directions create several microclimates.",
+    "Cold air collects in the hollows, and fog stays there. The stony pedrizas also shape the climate.",
+    "The vineyard sits at altitude, so day and night temperatures differ a lot. Grapes ripen slowly. In extreme years the time from veraison to harvest reaches 60 days.",
+    "The north-facing slope sits behind a hill that leaves the vines in shade early in the afternoon. With the soil, this gives wine of almost Atlantic character, rather than the Mediterranean character its location would suggest. The critic José Peñín has pointed to this Atlantic character, meaning the absence of the warm notes found in other wines of the area."
+   ],
+   "cite": [
+    "dehesa-del-carrizal-doc:p7",
+    "dehesa-del-carrizal-doc:p8"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Acid soil and wild scrub",
+   "paras": [
+    "The area is a siliceous basement of Appalachian-style relief, part of the southern Hesperian Massif. The vineyard soil is siliceous and acid.",
+    "That soil works with the mountain setting, the gentle north-facing slopes and the shade. Together they produce a wine of almost Atlantic character.",
+    "The wild plants around the vines also leave their mark. Every wine of the winery smells of low scrub such as thyme and rosemary. Heather is there too. So are resinous and balsamic hints of pine and eucalyptus."
+   ],
+   "cite": [
+    "dehesa-del-carrizal-doc:p7",
+    "dehesa-del-carrizal-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Five red grapes, one oaked white",
+   "paras": [
+    "This is a vino de pago, a protected name held by one wine estate. It comes in two colours: red and white. The six grapes are five reds and one white, Chardonnay.",
+    "Every wine is dry, with under 4 g/l of sugar. Each has at least 12% alcohol.",
+    "Cabernet Sauvignon and Syrah each make a red on their own. So does Petit Verdot. These single-grape reds age 12 to 24 months in oak barrels and wooden vats. Tasting decides how long.",
+    "Blended reds use the five red grapes in varying proportions. The winemakers may leave a grape out if they think it right. One blend ages 3 to 12 months and the other 12 to 24 months. The younger blend smells of ripe red fruit and cocoa. The older one leads with blackberry and raspberry.",
+    "The one white is a dry Chardonnay. At least 25% of the must ferments on its lees in new French oak barrels, at no more than 20ºC. The rest ferments in stainless steel."
+   ],
+   "cite": [
+    "dehesa-del-carrizal-doc:p1",
+    "dehesa-del-carrizal-doc:p2",
+    "dehesa-del-carrizal-doc:p3",
+    "dehesa-del-carrizal-doc:p4",
+    "dehesa-del-carrizal-doc:p5",
+    "dehesa-del-carrizal-doc:p6"
+   ]
+  }
+ ]
+}
