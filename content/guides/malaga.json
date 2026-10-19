@@ -3,7 +3,7 @@
   "title": "Why Málaga tastes the way it does",
   "minutes": 6,
   "lede": {
-    "text": "Málaga lies at the southernmost point of Europe's Mediterranean shore, and its many hours of sun give a high potential for ripening and overripening grapes. Mountains and the nearby sea buffer the temperatures, as does the position at the entrance to the Atlantic. With the growers' skill, that gives the wines finesse and keeps their varietal aromas.",
+    "text": "Málaga lies at the southernmost point of Europe's Mediterranean shore, and its many hours of sun give a high potential for ripening and overripening grapes. Mountains and the sea buffer the temperatures, which gives finesse and keeps the varietal aromas.",
     "cite": [
       "malaga-pliego:p10"
     ]
@@ -14,9 +14,9 @@
       "beat": "place",
       "title": "Mountains down to the sea",
       "paras": [
-        "Málaga province is mountainous in general, with many sierras that are the foothills of the Sierra Nevada massif. Vines grow from sea level up to 1000 m, which makes many microclimates.",
+        "Málaga province is mountainous in general, with many sierras that are the foothills of the Sierra Nevada massif. Vines grow from sea level up to 1,000 m, which creates many microclimates.",
         "Wine has been part of the province's story since the Phoenicians colonised its coast in the 9th century BC. Large quantities were later exported from the port of Málaga.",
-        "Before phylloxera, vines covered 110,000 hectares and grew in every municipality of the province. Phylloxera entered Spain through Málaga in 1874. Today the vineyard is scattered in patches of vines across the province."
+        "Before phylloxera, the vine-killing root pest, vines covered 110,000 hectares and grew in every municipality of the province. Phylloxera entered Spain through Málaga in 1874. Today the vineyard is scattered in patches of vines across the province."
       ],
       "cite": [
         "malaga-pliego:p9",
@@ -56,7 +56,7 @@
       "title": "Slate, limestone and albariza",
       "paras": [
         "In Axarquía and the Montes de Málaga the soils are slate and shallow. The land is abrupt, with steep slopes facing different ways. The nearby sea keeps summers mild there, and rainfall is between 300 and 700 mm. In the driest zones that suits asoleo, the ancient practice of laying bunches in the open sun to overripen. The berries stay whole and do not rot. In the Montes, days and nights differ a lot in temperature while the grapes ripen.",
-        "The Serranía de Ronda has limestone soils and medium slopes at 600 to 1000 m. Rain is high over the year and summers are dry and hot. Day and night temperatures differ more here.",
+        "The Serranía de Ronda has limestone soils and medium slopes at 600 to 1,000 m. Rainfall is high through the year and summers are dry and hot. Day and night temperatures differ more here.",
         "Around Manilva the soils are albariza, high in limestone, on gentle slopes. The nearby Atlantic gives a damper, cooler subclimate.",
         "The Norte area lies on the high plain of Antequera, from 400 m up. Soils are deep and brown-limestone, and slopes are generally low. Being inland, the climate is more continental, with more extreme temperatures in summer and winter."
       ],
@@ -85,7 +85,7 @@
             36.677
           ],
           "zoom": 10,
-          "caption": "Limestone soils at 600 to 1000 m, with bigger day-night swings.",
+          "caption": "Limestone soils at 600 to 1,000 m, with bigger day-night swings.",
           "cite": [
             "malaga-pliego:p11"
           ]
@@ -98,13 +98,13 @@
       "title": "From dry to very sweet",
       "paras": [
         "The preferred grapes are Pero Ximén (Pedro Ximénez) and the Moscatels. Moscatel de Málaga is Moscatel de Alejandría, and Moscatel Morisco is Moscatel de grano menudo. Three other grapes are also allowed: Lairén, Doradilla and Rome. Yields reach at most 12,000 kg per hectare.",
-        "Málaga makes three groups of wine. Vinos de licor are fortified: wine alcohol is added, a step called encabezado. They are dry or sweet, with 15% to 22% vol of acquired alcohol. Dry ones have under 45 g/l of sugar, and sweet ones have 45 g/l or more. A dry one with over 12 g/l may be called semiseco, and a sweet one with 140 g/l or less may be called semidulce.",
-        "Sweet liqueur wines come from ripe or sun-dried grapes. Only free-run must is used, and it ferments very slowly and incompletely. Three basic types come from Pero Ximén and/or Moscatel must. Dulce Natural starts from must with at least 212 g/l of natural sugar. For Maestro, wine alcohol up to 8% vol is added before fermentation starts, so fermentation runs very slowly and stops at 15-16% vol with over 100 g/l of sugar left. Tierno comes from long sun-dried grapes with must over 350 g/l of sugar, and it has notes of raisins.",
-        "Sweet wines made without fortification are the second group. Vino Naturalmente Dulce comes from overripe Pero Ximén and/or Moscatel grapes. The must has more than 300 g/l of sugar and the alcohol, at least 13% vol, comes wholly from fermentation. The wine is pale yellow to gold. On the palate it balances acid and sweet, and it is fresh and unctuous. Other sweet wines from overripe grapes need at least 12% vol of acquired alcohol and 45 g/l of sugar.",
-        "Vino de uvas pasificadas, from raisined grapes, is also sweet, with over 140 g/l of sugar. It runs from pale yellow to old gold, with raisin notes.",
-        "The third group is dry wine that is not fortified. Its alcohol, at least 15% vol, comes only from fermentation, and it has under 4 g/l of sugar. It runs from yellow to amber with age and has a penetrating, powerful aroma.",
-        "Liqueur wines may also carry a style term. Pale Dry has under 45 g/l of sugar, and Pale Cream has 45 to 100 g/l. Neither has arrope added, and both run from pale yellow to gold. Pajarete has 45 to 140 g/l of sugar and no arrope. It ages at least 2 years and runs from gold to dark amber. Dulce Crema, or Cream, is made with arrope and ages at least 2 years. It has 75 to 125 g/l of sugar and runs from amber to mahogany. Sweet has over 140 g/l of sugar and must be aged. It runs from amber to black.",
+        "Málaga makes three groups of wine. Vinos de licor are fortified: wine alcohol is added, a step called encabezado. They are dry or sweet, with 15% to 22% vol of acquired alcohol. Dry ones have under 45 g/L of sugar, and sweet ones have 45 g/L or more. A dry one with over 12 g/L may be called semiseco, and a sweet one with 140 g/L or less may be called semidulce.",
+        "Sweet liqueur wines come from ripe or sun-dried grapes. Only free-run must is used, and it ferments very slowly and incompletely. Three basic types come from Pero Ximén must, Moscatel must or a mix. Dulce Natural starts from must with at least 212 g/L of natural sugar. For Maestro, wine alcohol up to 8% vol is added before fermentation starts, so fermentation runs very slowly and stops at 15-16% vol with over 100 g/L of sugar left. Tierno comes from grapes sun-dried for a long time with must over 350 g/L of sugar, and it has notes of raisins.",
+        "Sweet wines made without fortification are the second group. Vino Naturalmente Dulce comes from overripe Pero Ximén grapes, Moscatel grapes or a mix. The must has more than 300 g/L of sugar and the alcohol, at least 13% vol, comes wholly from fermentation. The wine is pale yellow to gold. On the palate it balances acid and sweet, and it is fresh and unctuous. Other sweet wines from overripe grapes need at least 12% vol of acquired alcohol and 45 g/L of sugar.",
+        "Vino de uvas pasificadas, from raisined grapes, is also sweet, with over 140 g/L of sugar. It runs from pale yellow to old gold, with raisin notes.",
+        "The third group is dry wine that is not fortified. Its alcohol, at least 15% vol, comes only from fermentation, and it has under 4 g/L of sugar. It runs from yellow to amber with age and has a penetrating, powerful aroma.",
         "Arrope gives Málaga liqueur wines their characteristic shades of colour. It is grape must boiled down by direct heat to a third of its volume. Boiled down further to 50% of that volume, it is called pantomima.",
+        "Liqueur wines may also carry a style term. Pale Dry has under 45 g/L of sugar, and Pale Cream has 45 to 100 g/L. Neither has arrope added, and both run from pale yellow to gold. Pajarete has 45 to 140 g/L of sugar and no arrope. It ages at least 2 years and runs from gold to dark amber. Dulce Crema, or Cream, is made with arrope and ages at least 2 years. It has 75 to 125 g/L of sugar and runs from amber to mahogany. Sweet has over 140 g/L of sugar and must be aged. It runs from amber to black.",
         "Ageing takes place only in oak vessels of at most 1,000 litres. It follows either the static system of single vintages (añadas) or the dynamic system of criaderas and soleras. Liqueur wines, except Pálido, age at least six months on average."
       ],
       "cite": [
@@ -132,7 +132,7 @@
       },
       {
         "term": "Vendimia Asoleada",
-        "text": "A wine whose must comes wholly from sun-dried Moscatel and/or Pero Ximén grapes."
+        "text": "A wine whose must comes wholly from sun-dried Moscatel grapes, Pero Ximén grapes or a mix."
       },
       {
         "term": "Dorado",
