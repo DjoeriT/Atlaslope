@@ -1,6 +1,6 @@
 # Release 51: what to test (Meseta guides, next 8)
 
-8 more Meseta places get their Terroir guide.
+8 more Meseta places get their guide.
 The guide count goes from 96 to 104.
 
 Hard-reload first (Cmd+Shift+R).
