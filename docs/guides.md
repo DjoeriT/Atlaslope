@@ -59,18 +59,28 @@ under the title, and a fact sheet line shows in a beat only when no chapter tell
 | What the rules make | main grapes, also allowed, wine types, famous styles | `grapes`, `styles`, `famous` |
 | How it tastes | when the sheet has `tastes` | `tastes` |
 | In short | only with 3 or more lines; fewer lines when climate, soil or altitude are missing | sheet fields, measures |
-| Producers, extras | only when filled | sheet, `label` / `more` |
+| Producers, extras | only when filled; producers never for places outside Study | sheet, `label` / `more` |
 | Sources | always | cites |
 
-What a place outside Study (`quiz: "none"`: the Vinos de Pago, Cava, Catalunya, Islas Canarias) never shows: photos, measured charts
-(climate share, altitude range), "Test me", "If you like this, try". Its sheet holds written rows only (`src/facts/check.ts`). No beat is
-filled with text to make the page look complete: a short page is the honest page.
+What the 30 places outside Study (`quiz: "none"`: 27 Vinos de Pago, Cava, Catalunya, Islas Canarias; PR #105) never show: photos,
+measured charts (climate share, altitude range), producers, "Test me", "If you like this, try". Their sheets hold written rows only
+(why, how it tastes, famous styles, grapes, wine types, climate, soil, altitude where the document gives it), each with its source
+line; `src/facts/check.ts` accepts sheets for them, and the all-or-nothing rule per region still covers Study places only. Their Atlas
+tile headline restates the why line (`content/tiles.json`). No beat is filled with text to make the page look complete: a short page is
+the honest page.
+
+Fact sheet rules for this format: same schema (`src/facts/types.ts`, template `Review/release-4-fact-sheet-template.md`). Source is the
+EU single document or the pliego; a later amendment that changes a row wins and is cited as `<id>-doc2` (short tag "EU amendment").
+Vino de licor is fortified, not sweet; aguja is not sparkling; sweet only where the text says dulce or semidulce or gives a sweet sugar
+level; a main grape only where the text singles it out. Process: Sonnet draft, Opus sentence check
+(`Review/fact-sheets-30-source-check.md`), ReviewBot copy check (`Review/pr-105-review.md`); handoff
+`docs/handoffs/2026-10-19-fact-sheets-30.md`.
 
 ## Format log
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
-| 19 Oct 2026 | Fact-sheet-only format recorded as its own format | this file, "Two formats" |
+| 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Study | this file, "Two formats"; PR #105 |
 | 19 Oct 2026 | Shape C: four beats as the page, How it tastes, In short, extras; Terroir chapters get `beat`; `label`, `say`, `more`; named-place flights warned on | PR #107, Green Spain pilot PR |
 | 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
 | 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
