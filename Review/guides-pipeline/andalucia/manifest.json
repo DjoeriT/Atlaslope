@@ -1,0 +1,12 @@
+{
+  "sources": {
+    "montilla-moriles-pliego": "Review/sources/fetched/pliego-PDO-ES-A1479-montilla-moriles.txt",
+    "granada-pliego": "Review/sources/fetched/pliego-PDO-ES-A1475-granada.txt",
+    "condado-de-huelva-pliego": "Review/sources/fetched/pliego-PDO-ES-A1485-condado-de-huelva.txt",
+    "malaga-pliego": "Review/sources/fetched/pliego-PDO-ES-A1481-malaga.txt",
+    "sierras-de-malaga-pliego": "Review/sources/fetched/pliego-PDO-ES-A1480-sierras-de-malaga.txt",
+    "lebrija-pliego": "Review/sources/fetched/pliego-PDO-ES-A1478-lebrija.txt",
+    "jerez-pliego": "Review/sources/fetched/pliego-PDO-ES-A1483-jerez.txt",
+    "manzanilla-pliego": "Review/sources/fetched/pliego-PDO-ES-A1482-manzanilla.txt"
+  }
+}

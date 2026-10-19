@@ -1264,5 +1264,53 @@
   "title": "Pliego de condiciones PDO-ES-02485 (Urueña, ITACyL rev 1)",
   "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+URUE%C3%91A_en+vigor.pdf/e3569dbe-e269-2292-6c7f-ffa7f20b5efd",
   "date": "2022-01-12"
+ },
+ "montilla-moriles-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1479 (Montilla-Moriles, Junta, text of the 2020 amendment)",
+  "url": "https://www.juntadeandalucia.es/export/drupaljda/PC_DO_Montilla_modificado2.pdf",
+  "date": "2020-12-03"
+ },
+ "granada-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1475 (Granada, Junta, consolidated text)",
+  "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/10/Pliego_DO_Granada_modificado_4.pdf",
+  "date": "2024-10-18"
+ },
+ "condado-de-huelva-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1485 (Condado de Huelva, Junta, consolidated text)",
+  "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/PC_Condado_modificado_6.pdf",
+  "date": "2026-03-06"
+ },
+ "malaga-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1481 (Málaga, Junta, text approved 2011)",
+  "url": "https://www.juntadeandalucia.es/export/drupaljda/V_DO_MALAGA.pdf",
+  "date": "2011-12-22"
+ },
+ "sierras-de-malaga-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1480 (Sierras de Málaga, Junta, consolidated text)",
+  "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/08/PC_Sierras_de_Malaga_modificado_3.pdf",
+  "date": "2024-08-28"
+ },
+ "lebrija-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1478 (Lebrija, Junta, text of the 2021 amendment)",
+  "url": "https://www.juntadeandalucia.es/export/drupaljda/PC_Lebrija_modificado.pdf",
+  "date": "2021-09-14"
+ },
+ "jerez-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1483 (Jerez-Xérès-Sherry, Junta, consolidated text)",
+  "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/Pliego_Jerez_modif_normal_consolidado_3.pdf",
+  "date": "2026-05-21"
+ },
+ "manzanilla-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A1482 (Manzanilla-Sanlúcar de Barrameda, Junta, consolidated text)",
+  "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/05/Pliego_Manzanilla_modif_normal_consolidado_3.pdf",
+  "date": "2026-05-21"
  }
 }
