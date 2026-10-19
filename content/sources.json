@@ -95,11 +95,11 @@
   "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-08/Pliego_Condic_CAMPO_DE_CALATRAVA_definitivo.pdf",
   "date": "2025-08"
  },
- "cangas-doc": {
+ "cangas-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A0119 (EU single document, Cangas)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22383",
-  "date": "2014-06-30"
+  "title": "Pliego de condiciones DOP Cangas (Principado de Asturias, undated, PDF made 23 Feb 2018)",
+  "url": "https://www.asturias.es/documents/4911212/4919355/Vino+de+Cangas.pdf/04071915-42dc-456c-e549-1b4855f9073a",
+  "date": "2018-02-23"
  },
  "carinena-doc": {
   "kind": "official",
@@ -239,11 +239,11 @@
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29272",
   "date": "2014-06-27"
  },
- "monterrei-doc": {
+ "monterrei-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A1114 (EU single document, Monterrei)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28929",
-  "date": "2014-06-26"
+  "title": "Pliego de condiciones DOP Monterrei (DOG no. 139, resolution of 11 Jul 2025; EU amendment OJ C/2025/6565)",
+  "url": "https://www.xunta.gal/dog/Publicados/2025/20250722/AnuncioG0528-110725-0001_es.pdf",
+  "date": "2025-07-22"
  },
  "montilla-moriles-doc": {
   "kind": "official",
@@ -287,23 +287,23 @@
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30019",
   "date": "2014-06-30"
  },
- "rias-baixas-doc": {
+ "rias-baixas-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A1119 (EU single document, Rías Baixas)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31280",
-  "date": "2014-12-16"
+  "title": "Pliego de condiciones DOP Rías Baixas (DOG no. 156, resolution of 2 Aug 2024; EU amendment OJ C/2024/7432)",
+  "url": "https://www.xunta.gal/dog/Publicados/2024/20240813/AnuncioG0528-050824-0002_es.pdf",
+  "date": "2024-08-13"
  },
- "ribeira-sacra-doc": {
+ "ribeira-sacra-pliego": {
   "kind": "official",
-  "title": "Pliego PDO-ES-A1128 (pliego de condiciones, Ribeira Sacra)",
-  "url": "https://ribeirasacra.org/media/documentos/25%2002%2018%20Pliego%20de%20Condiciones.pdf",
+  "title": "Pliego de condiciones DOP Ribeira Sacra (DOG no. 33, resolution of 7 Feb 2025; EU amendment OJ C/2025/2949)",
+  "url": "https://www.xunta.gal/dog/Publicados/2025/20250218/AnuncioG0528-100225-0001_es.pdf",
   "date": "2025-02-18"
  },
- "ribeiro-doc": {
+ "ribeiro-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A1123 (EU single document, Ribeiro)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/31230",
-  "date": "2014-12-16"
+  "title": "Pliego de condiciones DOP Ribeiro (DOG no. 105, resolution of 20 May 2025; EU amendment OJ C/2025/6457)",
+  "url": "https://www.xunta.gal/dog/Publicados/2025/20250604/AnuncioG0528-220525-0001_es.pdf",
+  "date": "2025-06-04"
  },
  "ribera-del-duero-doc": {
   "kind": "official",
@@ -383,23 +383,23 @@
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29786",
   "date": "2014-06-27"
  },
- "txakoli-alava-doc": {
+ "txakoli-alava-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A0732 (EU single document, Arabako Txakolina / Txakolí de Álava)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/35586",
-  "date": "2016-02-19"
+  "title": "Pliego de condiciones DOP Arabako Txakolina (consolidated text, Gobierno Vasco, file of 19 Dec 2024; EU amendment OJ C/2025/6777)",
+  "url": "https://www.euskadi.eus/contenidos/informacion/dop_txakoli_araba/es_dapa/adjuntos/Pliego-Arabako-Tx-20241219-consolidado.pdf",
+  "date": "2024-12-19"
  },
- "txakoli-bizkaia-doc": {
+ "txakoli-bizkaia-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A0746 (EU single document, Bizkaiko Txakolina / Txakolí de Bizkaia)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27068",
-  "date": "2014-06-26"
+  "title": "Pliego de condiciones DOP Bizkaiko Txakolina (consolidated text, Gobierno Vasco, file of 28 Nov 2024; EU amendment OJ C/2025/6563)",
+  "url": "https://www.euskadi.eus/contenidos/informacion/dop_txakoli_bizkaia/es_dapa/adjuntos/BIZKAIKO-TXAKOLINAren-pliegoak-20241128-consolidado.pdf",
+  "date": "2024-11-28"
  },
- "txakoli-getaria-doc": {
+ "txakoli-getaria-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A0741 (EU single document, Getariako Txakolina / Txakolí de Getaria)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/26992",
-  "date": "2014-06-26"
+  "title": "Pliego de condiciones DOP Getariako Txakolina (Gobierno Vasco, text of 29 Jun 2011; newer version not confirmed)",
+  "url": "https://euskadi.eus/contenidos/informacion/dop_txakoli_getaria/eu_dapa/adjuntos/PLIEGO-CR-GT_29-06-2011.pdf",
+  "date": "2011-06-29"
  },
  "ucles-doc": {
   "kind": "official",
@@ -419,11 +419,11 @@
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28867",
   "date": "2014-06-30"
  },
- "valdeorras-doc": {
+ "valdeorras-pliego": {
   "kind": "official",
-  "title": "Documento único PDO-ES-A1132 (EU single document, Valdeorras)",
-  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/39186",
-  "date": "2016-12-19"
+  "title": "Pliego de condiciones DOP Valdeorras (DOG no. 222, resolution of 11 Nov 2024; EU amendment OJ C/2025/1383)",
+  "url": "https://www.xunta.gal/dog/Publicados/2024/20241118/AnuncioG0528-111124-0001_es.pdf",
+  "date": "2024-11-18"
  },
  "valdepenas-doc": {
   "kind": "official",

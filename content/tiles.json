@@ -7,23 +7,25 @@
    "lanzarote"
   ],
   "cite": [
-   "txakoli-getaria-doc:p3",
+   "txakoli-getaria-pliego:p3",
    "lanzarote-doc:p6"
   ]
  },
  "regions": {
   "green-spain": {
-   "title": "Spain's wet Atlantic edge",
-   "lede": "The Atlantic side of Spain, with about 1,600 mm of rain at Getaria. The whites come out bright and high in acid.",
+   "title": "Spain's green north",
+   "lede": "On the Atlantic coast the climate is mild and humid, with about 1,600 mm of rain at Getaria. Inland Galicia turns drier and hotter.",
    "from": [
     "txakoli-getaria",
     "rias-baixas",
-    "txakoli-bizkaia"
+    "txakoli-bizkaia",
+    "monterrei"
    ],
    "cite": [
-    "txakoli-getaria-doc:p3",
-    "rias-baixas-doc:p5",
-    "txakoli-bizkaia-doc:p5"
+    "txakoli-getaria-pliego:p3",
+    "rias-baixas-pliego:p12",
+    "txakoli-bizkaia-pliego:p7",
+    "monterrei-pliego:p14"
    ]
   },
   "castilla-y-leon": {
@@ -440,56 +442,56 @@
   "txakoli-bizkaia": {
    "title": "Cool, humid Atlantic summers",
    "cite": [
-    "txakoli-bizkaia-doc:p5"
+    "txakoli-bizkaia-pliego:p7"
    ]
   },
   "cangas": {
    "title": "Stony slate on steep slopes",
    "cite": [
-    "cangas-doc:p6"
+    "cangas-pliego:p7"
    ]
   },
   "txakoli-getaria": {
    "title": "Vines by the sea",
    "cite": [
-    "txakoli-getaria-doc:p3"
+    "txakoli-getaria-pliego:p3"
    ]
   },
   "txakoli-alava": {
    "title": "The round, low-acid txakoli",
    "cite": [
-    "txakoli-alava-doc:p4"
+    "txakoli-alava-pliego:p6"
    ]
   },
   "rias-baixas": {
    "title": "Albariño on pergolas",
    "cite": [
-    "rias-baixas-doc:p5"
+    "rias-baixas-pliego:p13"
    ]
   },
   "ribeira-sacra": {
    "title": "Terraces above the Miño and Sil",
    "cite": [
-    "ribeira-sacra-doc:p11",
-    "ribeira-sacra-doc:p12"
+    "ribeira-sacra-pliego:p11",
+    "ribeira-sacra-pliego:p12"
    ]
   },
   "valdeorras": {
    "title": "Godello on sloping vineyards",
    "cite": [
-    "valdeorras-doc:p6"
+    "valdeorras-pliego:p11"
    ]
   },
   "ribeiro": {
    "title": "Rugged, thirsty soils",
    "cite": [
-    "ribeiro-doc:p4"
+    "ribeiro-pliego:p22"
    ]
   },
   "monterrei": {
    "title": "Big day-night swings at ripening",
    "cite": [
-    "monterrei-doc:p5"
+    "monterrei-pliego:p14"
    ]
   },
   "valencia": {
