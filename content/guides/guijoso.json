@@ -1,0 +1,70 @@
+{
+ "id": "guijoso",
+ "title": "Why Guijoso tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Guijoso is one estate at 960 m in El Bonillo, with very cold winters and a lot of wind. Its grapes develop slowly, and that gives polished wines with deep colour.",
+  "cite": [
+   "guijoso-doc:p3",
+   "guijoso-doc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "pago",
+   "beat": "place",
+   "title": "One estate among the junipers",
+   "paras": [
+    "Guijoso is a vino de pago, a wine from a single estate. It lies in the municipality of El Bonillo, in Albacete.",
+    "The vines sit at an average altitude of 960 m. The setting is rural, and forests of sabina (juniper) and holm oak predominate."
+   ],
+   "cite": [
+    "guijoso-doc:p3",
+    "guijoso-doc:p4",
+    "guijoso-doc:p7"
+   ]
+  },
+  {
+   "id": "cold-wind",
+   "beat": "weather",
+   "title": "Snow and wind",
+   "paras": [
+    "The climate is dry and continental. Winters are very cold, with many days below 0 °C and several snowfalls.",
+    "It is also a very windy place."
+   ],
+   "cite": [
+    "guijoso-doc:p4"
+   ]
+  },
+  {
+   "id": "pebbles",
+   "beat": "ground",
+   "title": "Pebbly and poor",
+   "paras": [
+    "The soil is sandy loam with pebbles, and its fertility is low.",
+    "The grapes develop slowly here. That slow development gives a high concentration of substances. The wines come out polished and deep in colour because of it."
+   ],
+   "cite": [
+    "guijoso-doc:p4"
+   ]
+  },
+  {
+   "id": "whites-reds",
+   "beat": "rules",
+   "title": "Blended reds, golden whites",
+   "paras": [
+    "The main grapes are Cabernet Sauvignon, Syrah, Merlot and Chardonnay. Sauvignon Blanco and Tempranillo (also called Cencibel or Tinto de Toro) are secondary.",
+    "The whites macerate cold for 5 to 12 hours. They ferment in stainless steel at 14 to 19 °C.",
+    "The reds are blends. Their grapes macerate for 2 to 4 weeks and ferment at 25 to 30 °C. Each variety then ages on its own in 225-litre oak barrels, for 6 to 36 months. The barrels are used for no more than 5 years. The blend is made afterwards.",
+    "In the mouth the wines are gentle and savoury, from a perfect balance between power and elegance. The astringency is pleasant. The finish has a certain bitterness, which comes from tannins that developed in a singular way."
+   ],
+   "cite": [
+    "guijoso-doc:p1",
+    "guijoso-doc:p2",
+    "guijoso-doc:p3",
+    "guijoso-doc:p4",
+    "guijoso-doc:p7"
+   ]
+  }
+ ]
+}

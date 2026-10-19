@@ -1,0 +1,98 @@
+{
+ "id": "almansa",
+ "title": "Why Almansa tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Almansa sits on a high plateau with very cold winters and very hot summers. A yield of 4,500 kg/ha raises the concentration of colour, tannin and aroma in the wines.",
+  "cite": [
+   "almansa-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A plateau in eastern Albacete",
+   "paras": [
+    "The zone lies in the east of the province of Albacete. It is an altiplano, a high plateau, that rises from 400 m above sea level at nearby Fuente la Higuera to 700 m at Almansa.",
+    "The vineyard covers the municipalities of Almansa, Alpera, Bonete, Corral Rubio, Higueruela, Hoya Gonzalo and Pétrola, plus the hamlet of Villar de Chinchilla."
+   ],
+   "cite": [
+    "almansa-doc:p6",
+    "almansa-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Almansa, the high end",
+     "point": [
+      -1.097,
+      38.869
+     ],
+     "zoom": 10,
+     "caption": "The plateau reaches 700 m at Almansa.",
+     "cite": [
+      "almansa-doc:p7"
+     ]
+    },
+    {
+     "label": "Fuente la Higuera, the low end",
+     "point": [
+      -0.883,
+      38.808
+     ],
+     "zoom": 10,
+     "caption": "The plateau drops to 400 m at nearby Fuente la Higuera.",
+     "cite": [
+      "almansa-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Very cold winters, very hot summers",
+   "paras": [
+    "The climate is extreme continental: very cold, dry winters and very hot summers.",
+    "Rain falls mostly in spring and at the end of summer. On average it stays under 250 mm a year."
+   ],
+   "cite": [
+    "almansa-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone, thin or deep",
+   "paras": [
+    "The soil is generally rich in limestone. Some zones have little substrate and are stony. Others are sandier and deeper."
+   ],
+   "cite": [
+    "almansa-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Three main grapes, three colours",
+   "paras": [
+    "The main grapes are Verdejo, Monastrell and Garnacha Tintorera. Tempranillo, Syrah, Cabernet Sauvignon, Merlot, Garnacha Tinta, Petit Verdot and Pinot Noir are also allowed. So are Chardonnay, Sauvignon Blanco and Moscatel Grano Menudo.",
+    "A single grape named on the label means at least 89% of the wine is that grape.",
+    "Almansa makes white, rosado (rosé) and red wines. Young whites and rosados come dry, and also in semi-dry to sweet versions. Young reds and roble reds do too. Roble marks a red that has passed through oak.",
+    "The sweeter wines look and smell like the dry ones of the same grape. Fermentation is stopped to keep some sugar, or a dry wine is sweetened with rectified concentrated must from the zone.",
+    "Whites can also be fermented in barrel, or aged as a white crianza.",
+    "The reds' excellent acidity makes them very fit for ageing and long keeping. Crianza, reserva and gran reserva are ageing grades of 18, 24 and 36 months. The barrels are 330-litre oak."
+   ],
+   "cite": [
+    "almansa-doc:p1",
+    "almansa-doc:p2",
+    "almansa-doc:p3",
+    "almansa-doc:p4",
+    "almansa-doc:p5",
+    "almansa-doc:p6",
+    "almansa-doc:p7",
+    "almansa-doc:p11"
+   ]
+  }
+ ]
+}

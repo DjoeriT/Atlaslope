@@ -1055,21 +1055,33 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Tempranillo (Cencibel, Tinto de Toro)"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Petit Verdot"
+     },
+     {
+      "local": "Merlot"
+     }
+    ],
+    "cite": [
+     "casa-del-blanco-doc:p3"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Tempranillo (Cencibel, Tinto de Toro)",
-     "Syrah",
-     "Petit Verdot",
-     "Merlot",
      "Cabernet Franc",
      "Chardonnay",
      "Malbec",
      "Sauvignon Blanco"
     ],
     "othersCite": [
-     "casa-del-blanco-doc:p3",
      "casa-del-blanco-doc:p8"
     ]
    },
@@ -1116,12 +1128,21 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Verdejo"
+     },
+     {
+      "local": "Monastrell"
+     },
+     {
+      "local": "Garnacha Tintorera"
+     }
+    ],
+    "cite": [
+     "almansa-doc:p6"
+    ],
     "others": [
-     "Verdejo",
-     "Monastrell",
-     "Garnacha Tintorera",
      "Cabernet Sauvignon",
      "Chardonnay",
      "Garnacha Tinta",
@@ -1134,7 +1155,6 @@
      "Tempranillo"
     ],
     "othersCite": [
-     "almansa-doc:p6",
      "almansa-doc:p11"
     ]
    },
@@ -1145,9 +1165,11 @@
      "red",
      "sweet"
     ],
-    "text": "Young and barrel-aged whites, rosados and reds, dry to sweet; reds also crianza, reserva and gran reserva.",
+    "text": "Young whites, rosados and reds, dry to sweet; barrel-fermented and crianza whites; reds also roble, crianza, reserva and gran reserva.",
     "cite": [
      "almansa-doc:p1",
+     "almansa-doc:p2",
+     "almansa-doc:p3",
      "almansa-doc:p4"
     ]
    },
@@ -1170,7 +1192,7 @@
     ]
    },
    "tastes": {
-    "text": "Whites: light, sustained yellow, mildly aromatic. Rosés: strawberry to raspberry pink, fruity. Reds: violet, deep colour, fleshy, lightly tannic; oaked ones toasty. Aged reds: cherry or garnet, tile tones, fruit and spice.",
+    "text": "Whites: light, sustained yellow, mildly aromatic. Rosés: strawberry to raspberry pink, fruity. Reds: violet, deep colour, fleshy, lightly tannic; oaked ones toasty. Aged reds: cherry or garnet, possible tile tones, fruit and spice.",
     "cite": [
      "almansa-doc:p1",
      "almansa-doc:p3",
@@ -1212,13 +1234,24 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "guijoso-doc:p7"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Syrah",
-     "Merlot",
-     "Chardonnay",
      "Sauvignon Blanco",
      "Tempranillo (Cencibel, Tinto de Toro)"
     ],
@@ -1277,17 +1310,26 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Tempranillo (Cencibel, Tinto de Toro)"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "finca-elez-doc:p5",
+     "finca-elez-doc:p6"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Tempranillo (Cencibel, Tinto de Toro)",
-     "Chardonnay",
      "Merlot",
      "Syrah"
     ],
     "othersCite": [
-     "finca-elez-doc:p6",
      "finca-elez-doc:p9",
      "finca-elez-doc:p10"
     ]
@@ -1334,7 +1376,7 @@
     "styles": [
      {
       "name": "Partly barrel-fermented Chardonnay",
-      "text": "Fruity and floral aromas with oak; long finish."
+      "text": "Fruity, floral and ageing aromas; long finish."
      },
      {
       "name": "Vendimia Tardía",
@@ -1505,7 +1547,7 @@
     ]
    },
    "climate": {
-    "text": "Mean 15.6 °C, no more than about 400 mm of rain, 52% humidity, over 2,800 sun hours; disease risk almost nil.",
+    "text": "Mean 15.6 °C, barely 400 mm of rain, 52% humidity, over 2,800 sun hours; damp-related disease risk almost nil.",
     "cite": [
      "campo-de-calatrava-doc:p9"
     ]
@@ -1540,7 +1582,7 @@
      },
      {
       "name": "Crianza, Reserva y Gran Reserva",
-      "text": "Reds reach ochre or brown; stewed fruit, nuts, toast, balsamic."
+      "text": "Reds may reach orange, then ochre or brown; stewed fruit, nuts, toast, balsamic."
      }
     ],
     "cite": [
@@ -1680,7 +1722,7 @@
     ]
    },
    "climate": {
-    "text": "Milder than the surrounding area: the river and the nearby reservoir limit extreme weather.",
+    "text": "A milder mesoclimate: the river and the nearby reservoir limit extreme weather.",
     "cite": [
      "el-vicario-doc:p11",
      "el-vicario-doc:p12"
@@ -1729,18 +1771,25 @@
   {
    "id": "la-jaraba",
    "why": {
-    "text": "High-strontium soils in a sediment-filled river hollow give intense wines with a marked mineral note.",
+    "text": "High-strontium soils in a sediment-filled river hollow help make intense wines with marked mineral notes.",
     "cite": [
      "la-jaraba-doc"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Tempranillo (Cencibel)"
+     }
+    ],
+    "cite": [
+     "la-jaraba-doc"
+    ],
     "others": [
-     "Tempranillo (Cencibel)",
      "Cabernet Sauvignon",
-     "Merlot",
      "Graciano",
      "Sauvignon Blanc"
     ],

@@ -1,0 +1,70 @@
+{
+ "id": "finca-elez",
+ "title": "Why Finca Élez tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "One estate in Albacete sits at 1,080 m. Its wines come out fresh and built to keep.",
+  "cite": [
+   "finca-elez-doc:p5",
+   "finca-elez-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "estate",
+   "beat": "place",
+   "title": "One estate high in Albacete",
+   "paras": [
+    "Finca Élez is a vino de pago, a single-estate protected name. The estate lies in the municipality of El Bonillo, in the province of Albacete, at 1,080 m."
+   ],
+   "cite": [
+    "finca-elez-doc:p5",
+    "finca-elez-doc:p6",
+    "finca-elez-doc:p9"
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Dry air, wide day-night swings",
+   "paras": [
+    "The climate is continental, with very dry air. While the grapes ripen, day and night differ a great deal in temperature."
+   ],
+   "cite": [
+    "finca-elez-doc:p6"
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "Poor, stony ground",
+   "paras": [
+    "The soils are clay-limestone, poor and stony. They drain well and are basic, with a pH of about 8."
+   ],
+   "cite": [
+    "finca-elez-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Whites and reds made to keep",
+   "paras": [
+    "The main grapes are Cabernet Sauvignon and Tempranillo, also called Cencibel or Tinto de Toro. Chardonnay is the third main grape. Merlot and Syrah are secondary.",
+    "The wines balance good acidity with alcohol that is usually relatively high. That gives wines that are fresher and better suited to ageing. They are wines to keep, with fresh, more acidic fruit and floral and mineral touches. In style they seem more continental than Mediterranean.",
+    "Chardonnay makes the whites. It comes young, or partly fermented in barrel. The Chardonnay rules ask that at least 10% ferment in oak barrels of up to 500 l, new or less than a year old. The wine rests in the barrel for 2 to 12 months. A late-harvest Chardonnay shows fruity, sweet notes, with acidity and sugar in balance.",
+    "The reds come young or aged. Aged reds are named barrica, crianza or reserva. Gran reserva is a fourth aged red. It shows ripe fruit and clear ageing aromas. Its oak tannins give good structure without being aggressive. Barrica and crianza reds ferment on their skins for at least 10 days at 25 to 30 °C. Reserva and gran reserva need at least 15 days."
+   ],
+   "cite": [
+    "finca-elez-doc:p1",
+    "finca-elez-doc:p2",
+    "finca-elez-doc:p3",
+    "finca-elez-doc:p4",
+    "finca-elez-doc:p5",
+    "finca-elez-doc:p6",
+    "finca-elez-doc:p9",
+    "finca-elez-doc:p10"
+   ]
+  }
+ ]
+}

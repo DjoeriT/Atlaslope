@@ -1,0 +1,94 @@
+{
+ "id": "el-vicario",
+ "title": "Why El Vicario tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "A river and a reservoir soften the weather around these vines, and the shallow ground is rich in calcium. The wines that come from it are fine and balanced, with a faint note of scrub.",
+  "cite": [
+   "el-vicario-doc:p11",
+   "el-vicario-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "reservoir",
+   "beat": "place",
+   "title": "A strip beside the Guadiana",
+   "paras": [
+    "El Vicario is a place beside the River Guadiana, named after the El Vicario dam. The zone reaches about 2 km from the riverbed and runs for 7 km. It lies entirely in the municipality of Ciudad Real and covers 1,252 hectares.",
+    "The land rolls gently and generally falls towards the river. Around the vines grows low holm oak woodland with shrubs.",
+    "The zone is surrounded by DOP La Mancha, but its conditions are substantially different. It was drawn around its calcium-rich limy soil and the influence of the river."
+   ],
+   "cite": [
+    "el-vicario-doc:p10",
+    "el-vicario-doc:p11",
+    "el-vicario-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "El Vicario dam on the Guadiana",
+     "point": [
+      -4.03,
+      38.95
+     ],
+     "zoom": 11,
+     "caption": "The zone takes its name from the El Vicario dam and follows the river, about 2 km wide and 7 km long.",
+     "cite": [
+      "el-vicario-doc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mesoclimate",
+   "beat": "weather",
+   "title": "A river that calms the weather",
+   "paras": [
+    "The river and the nearby reservoir give the area a milder mesoclima, a local climate of its own. It limits extreme weather.",
+    "That gentler climate softens ripening. It helps give the wines fine aromas, with a feel of low scrub."
+   ],
+   "cite": [
+    "el-vicario-doc:p11",
+    "el-vicario-doc:p12"
+   ]
+  },
+  {
+   "id": "limestone",
+   "beat": "ground",
+   "title": "Shallow, limy ground",
+   "paras": [
+    "The soil is limy and light in texture. It is shallow and well drained, with medium fertility.",
+    "Calcium averages over 15 meq/100 g (over 3,000 ppm). Other vineyard soils in Castilla-La Mancha average 8-10 meq/100 g (1,600-2,000 ppm).",
+    "Calcium plays a key part in the quality of grape skins. The skins help form the polyphenols and aroma compounds. The wines have a relatively high pH, yet they taste fresh because the tannins are fine."
+   ],
+   "cite": [
+    "el-vicario-doc:p11",
+    "el-vicario-doc:p12"
+   ]
+  },
+  {
+   "id": "blends",
+   "beat": "rules",
+   "title": "Whites from red grapes, and a sweet red",
+   "paras": [
+    "Two white grapes are allowed: Chardonnay and Sauvignon Blanc. Seven red grapes are allowed. The native ones are Tempranillo, Garnacha tinta and Graciano. The foreign ones are Syrah, Cabernet Sauvignon, Merlot and Petit Verdot.",
+    "The rules cover white, white from red grapes, rosado (rosé) and red. The white can be dry or semi-sweet, and one red is sweet.",
+    "The dry white is Chardonnay and Sauvignon Blanc, fermented partly in barrel. At least 15% of the must ferments in oak and stays there 4 to 8 months. A smaller share of Garnacha tinta or Tempranillo, made without maceration, may join it.",
+    "The white from red grapes is made in steel tanks at 11 to 20 °C. It ranges from steely yellow to pale pink, and against the light a pink tone may show.",
+    "The rosado is made from Petit Verdot. It has balsamic notes of eucalyptus and hints of aniseed.",
+    "The semi-sweet white is Chardonnay and Sauvignon Blanc. Its fermentation is stopped by chilling, with 12 to 45 g/l of sugar left.",
+    "The reds blend native grapes with foreign ones, or use native grapes only. At least 30% of the wine spends 3 months or more in oak. The rest stays in tank for freshness.",
+    "The sweet red is pure Merlot, picked at over 280 g/l of sugar. Its fermentation is stopped by chilling, with 46 to 90 g/l of sugar left. Neither sweet wine is fortified.",
+    "Pressing may not go above 2 bar. It may yield at most 70 litres for every 100 kg of grapes."
+   ],
+   "cite": [
+    "el-vicario-doc:p1",
+    "el-vicario-doc:p3",
+    "el-vicario-doc:p4",
+    "el-vicario-doc:p5",
+    "el-vicario-doc:p6",
+    "el-vicario-doc:p10"
+   ]
+  }
+ ]
+}

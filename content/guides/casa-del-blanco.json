@@ -1,0 +1,58 @@
+{
+ "id": "casa-del-blanco",
+ "title": "Why Casa del Blanco tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The estate's soil holds a high level of lithium, an uncommon metal. The wines carry up to 10 times the lithium of the wines around them.",
+  "cite": [
+   "casa-del-blanco-doc:p1",
+   "casa-del-blanco-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "One estate on a flat plateau",
+   "paras": [
+    "Casa del Blanco is a single estate in the municipality of Manzanares, in Ciudad Real. It is a vino de pago, a wine from one named estate.",
+    "The land is a very flat plateau, a meseta, with average slopes below 2%."
+   ],
+   "cite": [
+    "casa-del-blanco-doc:p3",
+    "casa-del-blanco-doc:p7"
+   ]
+  },
+  {
+   "id": "lithium",
+   "beat": "ground",
+   "title": "Basalt in the soil, lithium in the wine",
+   "paras": [
+    "The soil is a sandy loam with a basic pH. Volcanic material, basalt, has been found in it.",
+    "Its lithium is the standout. It reaches 0.86 to 2.9 mg/kg. That matches the level of zinc or copper, two trace elements, in other red soils.",
+    "Lithium in the wine can be taken as a reliable marker. Plots with more lithium in the soil have given wines with more lithium."
+   ],
+   "cite": [
+    "casa-del-blanco-doc:p3"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "A red and a white",
+   "paras": [
+    "Two wines are protected, a red and a white.",
+    "The main grapes are Cabernet Sauvignon, Tempranillo (also called Cencibel or Tinto de Toro), Syrah, Petit Verdot and Merlot. Cabernet Franc, Chardonnay, Malbec and Sauvignon Blanco are the secondary grapes.",
+    "For the red, each variety ferments on its skins for at least 10 days, at 22 to 32ºC. Each variety then ages on its own in French and American oak barrels for at least 12 months. The wines are then blended and spend at least 12 months in bottle.",
+    "For the white, the must settles at 10 to 15ºC for at least 18 hours. It then ferments under control at 13 to 21ºC.",
+    "Yields are capped at 7,500 kg of grapes per hectare, or 52.5 hl per hectare."
+   ],
+   "cite": [
+    "casa-del-blanco-doc:p1",
+    "casa-del-blanco-doc:p2",
+    "casa-del-blanco-doc:p3",
+    "casa-del-blanco-doc:p8"
+   ]
+  }
+ ]
+}
