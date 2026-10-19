@@ -1,0 +1,31 @@
+# Running locally (the owner's Mac)
+
+Loaded only by a local Claude Code session, through the git-ignored `CLAUDE.local.md` (one line: `@docs/env-local.md`). Cloud threads and the
+hosted coordinator never see this file; their part is `docs/env-cloud.md`. Checked 19 Oct 2026 [V] unless tagged.
+
+## Role
+- This session is **LeadBot** for its slice. There is no coordinator here: the owner and this session cover that part (what's open, memory).
+- Read `docs/AGENT_ROLES.md` by section, not whole: "LeadBot" when starting a slice; "Task card" and "Token budget" before spawning.
+- Helpers are the `builder`, `reviewer` and `analyst` agent types; builders run with worktree isolation and never push.
+- Local sessions and cloud threads count together toward "at most two working sessions". Before editing shared files, check open PRs and
+  `gh run list` for another session's branch.
+
+## Access
+- `gh` is the owner's own login, with admin rights; `main` has no branch protection. Only `CLAUDE.md` stops a push to `main`, a self-publish
+  or a tag move here (the cloud's safety check does not run locally). Keep to the release route word for word.
+- Hosts load directly, including the ones the cloud is refused (mapa.gob.es, navarra.es, portalagrari.gva.es, INTIA, jumilla.wine, EU Cellar,
+  Esri, IGN). The data workflows on GitHub Actions are no longer needed as a detour. Fetching stays limited to sources in `data/SOURCES.md`.
+
+## Tools
+- Playwright's own Chromium is installed (`npx playwright install chromium` again after a Playwright version bump). CI still runs the full
+  UI suite; locally run only the specs your change touches.
+- Homebrew's Python refuses `pip install`. `pdfplumber` lives in a git-ignored `.venv`: run `Tools/guides/unstrike.py` with
+  `.venv/bin/python3`. Rebuild with `python3 -m venv .venv && .venv/bin/pip install pdfplumber`. The other guide scripts use plain `python3`.
+- No workflow runner: `Tools/guides/region.workflow.js` does not run here. Use the fallback in `docs/PROJECT.md` ("Run a region locally"):
+  one subagent per place with `pack.py write|check|sheet`.
+
+## Keys and files
+- The Esri key is only in `.env.local`, which the owner fills in himself; check presence with `grep -c`. Without it the local map has no
+  close-in imagery. CI and the live site take it from the repo secret.
+- Map mocks that need live satellite go to `mocks/` in this folder (git-ignored), as one page, with its file:/// path.
+- For a long run, ask the app to keep the Mac awake.

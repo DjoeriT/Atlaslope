@@ -1,10 +1,15 @@
 # Atlaslope: working rules
 
 Start with `docs/PROJECT.md` (what this is, state, decisions, costs, open questions, how to run a region and a release), then `README.md`
-(layout, commands). Detail behind these rules: `docs/AGENT_ROLES.md` section "Working detail" (read only that). History: `docs/handoffs/README.md`
+(layout, commands). Roles: the session doing the work is **LeadBot**; its helpers are BuilderBot, ReviewBot and AnalystBot (agent types
+`builder`, `reviewer`, `analyst`). `docs/AGENT_ROLES.md` holds the detail: read only the section you need ("LeadBot" when starting a slice,
+"Task card" and "Token budget" before spawning, "Working detail" for the reasons behind these rules). History: `docs/handoffs/README.md`
 (index) and `docs/PROJECT_CONTEXT.md` (only the section you need). Atlaslope is a static web app (React, MapLibre) for Spain's wine places.
 Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.md`, `Review/builder-brief.md`, approved mocks in `Review/mock-*/`,
 then these rules. A gap goes to the owner; do not invent behaviour. Repo wins over any memory or chat. The owner's standing rules, verbatim from the hosted project: `docs/OWNER-RULES.md`.
+
+**Where you run.** This file holds what applies everywhere. A local session on the owner's Mac also loads `CLAUDE.local.md` (git-ignored,
+one line importing `docs/env-local.md`). Without it you are a cloud thread or the hosted coordinator: follow `docs/env-cloud.md`.
 
 A **small slice** is a fix or tweak with no new screen, data or content. Everything else is a big slice.
 
@@ -41,7 +46,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
   rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
 - **Git:** PR per slice on a `claude/` branch; merge `main` in, never rebase. The slice PR holds the handoff and tester note (no records
-  PR after it). Push when the PR can stand alone, not in bursts. `gh pr create` fails (GraphQL blocked): use `gh api` REST. Archive, never
+  PR after it). Push when the PR can stand alone, not in bursts. Archive, never
   delete (`Review/archive/`). `release-N` tags mark what is live; keep no "live on release-N" line anywhere. Backlog = GitHub Issues
   (`DjoeriT/Atlaslope`, `#n` in commits; he sets priority).
 - **ReviewBot scope:** only PRs with a new screen, new or changed user-facing copy, or a licence/legal question. Fixes, tweaks and docs merge
@@ -49,7 +54,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **New UI:** rough first look early; a big slice's mock gets a UX/UI/visual check against `Review/visual-style.md` before polish, findings
   fixed not listed. Design round 1 shows the whole range, subtle to bold, and must be designed, not CSS deletions.
 - **Mockups are ONE HTML page** (before/after or options A-D, recommendation marked), shared as an Artifact/link, never separate files. A
-  live-satellite map mock goes to his Mac as that one page with its file:/// path.
+  live-satellite map mock goes to his Mac (`~/Developer/Atlaslope/mocks/`, git-ignored) as that one page with its file:/// path.
 - **Mock language:** NO drawn illustrations, icons, diagrams or fake geography. Richer = more real product and photos, same calm. Prefer
   visuals over lines of text.
 - **Photos hard rule:** never force photos into fixed or square tiles (no `object-fit: cover`); each keeps its own aspect ratio, trim only
@@ -80,5 +85,5 @@ never push. Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-lo
 `npm test` (Vitest), `npm run build`, `npm run shots`, `Tools/check.sh` (`quick` skips UI tests and build; `ui` adds Playwright). CI runs the
 UI tests in four parts: locally run only the specs your change touches, once; don't rerun a passing check on unchanged code.
 **Flaky tests** get an issue and are made deterministic in their own slice, never skipped. UI tests use fixtures, no network; debug flags are
-in `src/debug.ts` (kept out of `dist/`). Playwright stays pinned to the container's Chromium. Hosts: try directly first; a refused host goes
-through a GitHub Actions run or the owner's Mac. Regions: `Tools/guides/` (see `docs/PROJECT.md`).
+in `src/debug.ts` (kept out of `dist/`). Hosts: try directly first; what to do when one refuses depends on where you run (env files).
+Regions: `Tools/guides/` (see `docs/PROJECT.md`).

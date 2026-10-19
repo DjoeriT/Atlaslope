@@ -86,7 +86,7 @@ cards, sitemap) only on his go, pilot 2 guides first (`Review/website-plan.md`).
 - Website slice 3 and Google indexing: go or wait.
 
 ## Where things live
-`README.md` layout and commands; `docs/scope.md`, `architecture-decisions.md`, `guides.md` (guide format), `glossary.md`, `operations.md`
+`README.md` layout and commands; `docs/env-local.md` and `docs/env-cloud.md` what differs by where a session runs; `docs/scope.md`, `architecture-decisions.md`, `guides.md` (guide format), `glossary.md`, `operations.md`
 (rollback, incidents, keys), `privacy.md`, `AGENT_ROLES.md`, `PROJECT_CONTEXT.md`; `docs/handoffs/README.md` index of what each session did;
 `Review/` briefs, mocks, tester notes, `visual-style.md`; `content/facts` fact sheets, `content/guides` guides; `data/SOURCES.md`;
 `Tools/guides/` guide pipeline (`WRITER.md`, `CHECKER.md`, `pack.py`, `check_guide.py`, `usage.py`, `region.workflow.js`); `.claude/skills/release`.
