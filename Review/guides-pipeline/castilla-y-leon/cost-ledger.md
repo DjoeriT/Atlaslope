@@ -32,3 +32,4 @@
 | Check | tierra-del-vino-de-zamora | Opus | 97,893 | 3.6 |
 | Check | arlanza | Opus | 84,452 | 3.1 |
 | Check | dehesa-penalba | Opus | 90,277 | 3.4 |
+| Check | cebreros | Opus | 88,051 | 3.5 |
