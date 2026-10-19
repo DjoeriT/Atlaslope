@@ -23,6 +23,8 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   hard-to-undo work waits. Do not start big token work on an unanswered recommendation.
 - Vague UI asks ("map navigation looks whacky"): screenshot the candidates and ask in one line first (a guess cost a revert, 19 Oct).
 - Tag claims [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
+- Answer his questions in a normal message, never in the text just before a decision box: he does not see it (19 Oct, the CI question
+  went unanswered three times).
 
 ## Token budget (owner 19 Oct 2026, after a 5h limit and weekly warning; audit: 485M tokens in 10 sessions, 97% re-reads)
 - Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 80K context,
@@ -38,6 +40,9 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Few, big tool calls. Read with `grep -n` and line ranges, never whole files or logs. Batch independent calls. Never wait on your own tools:
   tests, CI logs, searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet subagent that reports in 10-20 lines.
 - Batch small asks into one session unless he says urgent. Past ~60K before a long wait, write the handoff first.
+- Loops are scripts, not chat (19 Oct, Mediterranean prep agent: 14.5M over 107 calls): fetching and per-unit runs happen in a script that
+  writes results to files; the session reads a short summary. Quiet commands (`git pull -q`, no full logs): a plain pull put 244 KB in context.
+- Say when the session passes ~80K and what is left, so the owner can move the rest to a fresh session.
 
 ## Working agreements
 - **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
