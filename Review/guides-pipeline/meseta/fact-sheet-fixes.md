@@ -149,3 +149,11 @@
 - vallegarcia `grapes.others` (checker marked unsure): the sheet repeated the three main grapes. Merlot, Cabernet Franc and Petit Verdot are
   the other varieties with a maximum yield on p1; applied, cite p1.
 - ribera-del-guadiana `why.text`: 30 words after the script edit, over the 25-word limit (`src/facts/check.ts`); cut to 24, same facts.
+
+## unsure items, decided in slice B (19 Oct 2026)
+- campo-de-calatrava: applied `soil.text`: p8 gives clay loam ('franco-arcillosa') for the subsurface horizons and high stoniness in the surface horizon of many profiles -> "Dark soils, clay loam below, often stony on top; ..."
+- finca-elez: applied `why.text`: p6 states altitude, climate and the acidity/alcohol balance side by side; it does not make altitude the cause of acidity. Kept the day-night swing (same line of p6)
+- campo-de-la-guardia: applied `grapes.main` / `grapes.cite` (p4 'PRINCIPALES UVAS') and `grapes.others` / `grapes.othersCite` (p8 'UVAS DE VINIFICACIÓN SECUNDARIAS': Malbec, Petit Verdot). The pliego itself splits the two lists, so the batch-1 rule (los-cerrillos) allows it
+- ucles: kept NOT applied `grapes.main`: the single document has only the fixed heading '7. PRINCIPALES UVAS DE VINIFICACIÓN' and no secondary list; p1 'sobre todo la variedad Tempranillo' is the amendment's reasoning, not a split. Batch-1 rule: grapes stay under others
+- manchuela: applied `styles.text` and added cites p2, p3: p2 sweet-range whites and rosados, p3 young/barrel/roble/carbonic reds 'semisecos, semidulces y dulces', p4 Crianza, Reserva, Gran Reserva reds and sparkling white and rosado
+- mentrida: applied `famous.styles.1.text`: p3's colours are shared with young reds, so the line now holds only what oak brings ('potencia ... estructura y cuerpo', 'Final ligeramente amargo, largo e intenso')
