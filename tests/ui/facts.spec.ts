@@ -63,11 +63,13 @@ test('photos show with a credit that links to their Commons page', async ({ page
   await expect(page.locator('.pg-credits a').first()).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//);
 });
 
-test('a place that is not quizzed shows no measured rows', async ({ page }) => {
+test('a place that is not quizzed shows its sheet but no measured rows', async ({ page }) => {
   await open(page, '#place=cava&page');
   await expect(page.locator('#place dt', { hasText: 'Level' })).toBeVisible();
-  await expect(page.locator('#weather')).toHaveCount(0);
-  await expect(page.locator('#ground')).toHaveCount(0);
+  await expect(page.locator('#weather .pg-h3', { hasText: 'Climate' }).first()).toBeVisible();
+  await expect(page.locator('#weather .pg-h3', { hasText: 'Measured climate' })).toHaveCount(0);
+  await expect(page.locator('.pg-testme')).toHaveCount(0);
+  await expect(page.locator('#alike')).toHaveCount(0);
 });
 
 test('the keyboard reaches every link on the Cebreros card', async ({ page }) => {

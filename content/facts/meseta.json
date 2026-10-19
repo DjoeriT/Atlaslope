@@ -185,6 +185,66 @@
    }
   },
   {
+   "id": "calzadilla",
+   "why": {
+    "text": "Highly alkaline soil and a cool area make the grapes ripen slowly and evenly.",
+    "cite": [
+     "calzadilla-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Garnacha Tinta",
+     "Cabernet Sauvignon",
+     "Syrah"
+    ],
+    "othersCite": [
+     "calzadilla-doc:p3",
+     "calzadilla-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wines only, deep in colour and rich in polyphenols.",
+    "cite": [
+     "calzadilla-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "A cool area, where the grapes ripen slowly and evenly.",
+    "cite": [
+     "calzadilla-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "Very high in limestone and strongly alkaline.",
+    "cite": [
+     "calzadilla-doc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow at 845 to 1,005 m, sometimes on steep slopes and terraces.",
+    "cite": [
+     "calzadilla-doc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Cherry red, bright or dark, medium to medium-high depth. Floral nose, with wild-berry fruit or jam. Polished, creamy tannins, sometimes firm; well balanced.",
+    "cite": [
+     "calzadilla-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
    "id": "mentrida",
    "why": {
     "text": "An extreme continental climate meets sandy, acidic soil poor in lime. The wines are warm and full-bodied, with high alcohol.",
@@ -361,6 +421,123 @@
    }
   },
   {
+   "id": "dominio-de-valdepusa",
+   "why": {
+    "text": "Clay topsoil gives the wines power and intensity, and the limestone below gives their tannins elegance and a velvety texture.",
+    "cite": [
+     "dominio-de-valdepusa-doc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Graciano",
+     "Petit Verdot",
+     "Merlot"
+    ],
+    "othersCite": [
+     "dominio-de-valdepusa-doc:p2",
+     "dominio-de-valdepusa-doc:p3"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wines only, deep in colour, made at the estate's own winery.",
+    "cite": [
+     "dominio-de-valdepusa-doc:p1",
+     "dominio-de-valdepusa-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Continental, with hot, dry summers and cold winters. Mean 17 °C in winter, 26 °C in summer; 450 mm of rain a year.",
+    "cite": [
+     "dominio-de-valdepusa-doc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Clay topsoil 30 to 50 cm deep over fragmented limestone; basic (pH above 8) and well drained.",
+    "cite": [
+     "dominio-de-valdepusa-doc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Very deep colour. Nose: spice and tobacco, with balsamic and cocoa notes. Palate: powerful and fleshy, with fruit and soft tannins; persistent.",
+    "cite": [
+     "dominio-de-valdepusa-doc:p1",
+     "dominio-de-valdepusa-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "campo-de-la-guardia",
+   "why": {
+    "text": "Very salty soils rich in potassium, plus low air humidity, keep the grapes small, with more skin to pulp.",
+    "cite": [
+     "campo-de-la-guardia-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Syrah",
+     "Merlot",
+     "Chardonnay",
+     "Malbec",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "campo-de-la-guardia-doc:p4",
+     "campo-de-la-guardia-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Mostly red blends of the estate's grapes, plus a wine from the year's best grape. There is also a barrel-aged white.",
+    "cite": [
+     "campo-de-la-guardia-doc:p1",
+     "campo-de-la-guardia-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Low relative humidity, averaging 15% over the whole growing season.",
+    "cite": [
+     "campo-de-la-guardia-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Alkaline limestone soil that is very salty and very poor in nutrients; high in potassium.",
+    "cite": [
+     "campo-de-la-guardia-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: medium-high depth, bright, dense; red and black fruit; fresh, full, long finish. White: bright; fruit, tropical notes, toast, nuts; round, with butter and light smoke.",
+    "cite": [
+     "campo-de-la-guardia-doc:p1",
+     "campo-de-la-guardia-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
    "id": "manchuela",
    "why": {
     "text": "Between two river valleys, summers are hot and sunny with almost no rain. On calcareous clay soils, Bobal gives aromatic, deeply coloured wines.",
@@ -468,6 +645,88 @@
    "producers": {
     "items": [],
     "cite": []
+   }
+  },
+  {
+   "id": "dehesa-del-carrizal",
+   "why": {
+    "text": "North-facing vines in a hill's early-afternoon shade, on acid siliceous soil, give wines of almost Atlantic character, without warm notes.",
+    "cite": [
+     "dehesa-del-carrizal-doc:p7",
+     "dehesa-del-carrizal-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Merlot",
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Tempranillo",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "dehesa-del-carrizal-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry reds, varietal or blended; the blends age 3 to 24 months. One dry Chardonnay white with oak notes.",
+    "cite": [
+     "dehesa-del-carrizal-doc:p2",
+     "dehesa-del-carrizal-doc:p3",
+     "dehesa-del-carrizal-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Wetter than neighbouring regions, with several microclimates. Cold air pools in hollows, where fog lingers.",
+    "cite": [
+     "dehesa-del-carrizal-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Siliceous and acid.",
+    "cite": [
+     "dehesa-del-carrizal-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: ruby to cherry red. Berries and spice with tobacco and scrub; dry and long, with present tannin. White: greenish straw. Tropical and white stone fruit with butter; dry and almost oily, with a fresh finish.",
+    "cite": [
+     "dehesa-del-carrizal-doc:p2",
+     "dehesa-del-carrizal-doc:p3",
+     "dehesa-del-carrizal-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto Cabernet Sauvignon",
+      "text": "Ruby red. Pepper and tobacco, with cedar and scrub from ageing; dry and polished."
+     },
+     {
+      "name": "Tinto Syrah",
+      "text": "Cherry red (picota). Berries and leather; dry and fruity, filling the mouth."
+     },
+     {
+      "name": "Tinto Petit Verdot",
+      "text": "Dark cherry red (picota). Red fruit with spice and scrub; tannic, well structured."
+     },
+     {
+      "name": "Blanco Chardonnay",
+      "text": "Greenish straw. Exotic fruit and butter with lees; dry, almost oily, fresh finish."
+     }
+    ],
+    "cite": [
+     "dehesa-del-carrizal-doc:p2",
+     "dehesa-del-carrizal-doc:p3",
+     "dehesa-del-carrizal-doc:p4"
+    ]
    }
   },
   {
@@ -664,6 +923,125 @@
    }
   },
   {
+   "id": "pago-florentino",
+   "why": {
+    "text": "South-facing slopes beside natural lagoons give very ripe fruit aromas with a fresh feel in the mouth.",
+    "cite": [
+     "pago-florentino-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     }
+    ],
+    "cite": [
+     "pago-florentino-doc:p1",
+     "pago-florentino-doc:p3"
+    ],
+    "others": [
+     "Petit Verdot",
+     "Syrah"
+    ],
+    "othersCite": [
+     "pago-florentino-doc:p6",
+     "pago-florentino-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wine made at least 90% from Tempranillo.",
+    "cite": [
+     "pago-florentino-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "A sunny, south-facing site sheltered from north winds. Tempranillo ripens early here; harvest starts 15 days before nearby vineyards.",
+    "cite": [
+     "pago-florentino-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Very dark red with violet rims. Nose: very ripe fruit with roasted notes and a mineral touch. Palate: powerful and full; fruit with vanilla and soft cinnamon; fleshy and long.",
+    "cite": [
+     "pago-florentino-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "casa-del-blanco",
+   "why": {
+    "text": "Lithium-rich soil gives wines with up to ten times the lithium of nearby wines.",
+    "cite": [
+     "casa-del-blanco-doc:p1",
+     "casa-del-blanco-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Syrah",
+     "Petit Verdot",
+     "Merlot",
+     "Cabernet Franc",
+     "Chardonnay",
+     "Malbec",
+     "Sauvignon Blanco"
+    ],
+    "othersCite": [
+     "casa-del-blanco-doc:p3",
+     "casa-del-blanco-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines, marked by a high lithium content from the soil.",
+    "cite": [
+     "casa-del-blanco-doc:p1",
+     "casa-del-blanco-doc:p2",
+     "casa-del-blanco-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Sandy loam with volcanic basalt and a basic pH; lithium at 0.86 to 2.9 mg/kg.",
+    "cite": [
+     "casa-del-blanco-doc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: cherry or deep red, strong nose, tasty, fleshy, powerful. White: clear, pale straw with golden rims; white fruit, fresh, balanced acidity, long finish.",
+    "cite": [
+     "casa-del-blanco-doc:p1",
+     "casa-del-blanco-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
    "id": "almansa",
    "why": {
     "text": "Almansa is a high plateau with an extreme continental climate and limestone-rich soil. Yields of 4,500 kg/ha concentrate colour and tannin in the wines.",
@@ -757,6 +1135,158 @@
    "producers": {
     "items": [],
     "cite": []
+   }
+  },
+  {
+   "id": "guijoso",
+   "why": {
+    "text": "The grapes develop slowly here, which gives polished, deep-coloured wines with a high concentration of substances.",
+    "cite": [
+     "guijoso-doc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Syrah",
+     "Merlot",
+     "Chardonnay",
+     "Sauvignon Blanco",
+     "Tempranillo (Cencibel, Tinto de Toro)"
+    ],
+    "othersCite": [
+     "guijoso-doc:p4",
+     "guijoso-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Golden whites with yellow fruit and citrus notes; blended reds with deep colour.",
+    "cite": [
+     "guijoso-doc:p1",
+     "guijoso-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Dry and continental. Very cold winters, with many days below 0 °C and several snowfalls. Very windy.",
+    "cite": [
+     "guijoso-doc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Sandy loam with pebbles; low fertility.",
+    "cite": [
+     "guijoso-doc:p4"
+    ]
+   },
+   "altitude": {
+    "text": "Average altitude of 960 m.",
+    "cite": [
+     "guijoso-doc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "White: golden yellow. Yellow fruit such as banana and mango, with grapefruit; fruity palate. Red: deep colour; ripe red fruit. Silky and persistent, with a long, slightly bitter finish.",
+    "cite": [
+     "guijoso-doc:p1",
+     "guijoso-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "finca-elez",
+   "why": {
+    "text": "At 1,080 m, in dry continental air with big day-night swings, the wines keep good acidity and suit ageing.",
+    "cite": [
+     "finca-elez-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Chardonnay",
+     "Merlot",
+     "Syrah"
+    ],
+    "othersCite": [
+     "finca-elez-doc:p6",
+     "finca-elez-doc:p9",
+     "finca-elez-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Whites from Chardonnay, including a late harvest. Reds, young or aged up to Gran Reserva.",
+    "cite": [
+     "finca-elez-doc:p1",
+     "finca-elez-doc:p2",
+     "finca-elez-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Continental, with very dry air and a big difference between day and night while the grapes ripen.",
+    "cite": [
+     "finca-elez-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Poor, stony clay-limestone soils. They drain well and are basic, with pH around 8.",
+    "cite": [
+     "finca-elez-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The estate lies at 1,080 m.",
+    "cite": [
+     "finca-elez-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Chardonnay: yellow to gold; fruity and floral nose. Young reds: very deep violet and red; long, round finish. Aged reds: deep colour, turning garnet and tile with longer ageing; fruit and oak.",
+    "cite": [
+     "finca-elez-doc:p1",
+     "finca-elez-doc:p2",
+     "finca-elez-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Partly barrel-fermented Chardonnay",
+      "text": "Fruity and floral aromas with oak; long finish."
+     },
+     {
+      "name": "Vendimia Tardía",
+      "text": "Late-harvest Chardonnay. Fruity and sweet notes on the nose; acidity and sugar in balance."
+     },
+     {
+      "name": "Barrica, crianza, reserva",
+      "text": "Aged reds keep deep colour; longer ageing brings garnet and tile tones."
+     },
+     {
+      "name": "Gran Reserva",
+      "text": "Red and tile tones. Ripe fruit and clear ageing aromas; oak tannins, not harsh."
+     }
+    ],
+    "cite": [
+     "finca-elez-doc:p2",
+     "finca-elez-doc:p3"
+    ]
    }
   },
   {
@@ -1038,6 +1568,433 @@
    },
    "producers": {
     "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "el-vicario",
+   "why": {
+    "text": "Lime-rich soils high in calcium and a mild river-and-reservoir climate give fine, balanced wines with a scrub note.",
+    "cite": [
+     "el-vicario-doc:p11",
+     "el-vicario-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Sauvignon Blanc",
+     "Tempranillo",
+     "Garnacha Tinta",
+     "Graciano",
+     "Syrah",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "el-vicario-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sweet"
+    ],
+    "text": "Dry and semi-sweet whites, some from red grapes. Rosado from Petit Verdot. Red blends, and a sweet Merlot red.",
+    "cite": [
+     "el-vicario-doc:p1",
+     "el-vicario-doc:p4",
+     "el-vicario-doc:p5",
+     "el-vicario-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Milder than the surrounding area: the river and the nearby reservoir limit extreme weather.",
+    "cite": [
+     "el-vicario-doc:p11",
+     "el-vicario-doc:p12"
+    ]
+   },
+   "soil": {
+    "text": "Limestone soil of light texture, shallow and well drained; medium fertility; calcium above 15 meq/100 g (over 3,000 ppm).",
+    "cite": [
+     "el-vicario-doc:p11",
+     "el-vicario-doc:p12"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: lemon to gold; citrus and tropical fruit. Rosé: bright raspberry pink; cherry or strawberry candy. Reds: cherry red; red fruit and balsamic notes. Sweet red: figs and jam.",
+    "cite": [
+     "el-vicario-doc:p3",
+     "el-vicario-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Blanco parcialmente fermentado en barrica",
+      "text": "White from Chardonnay and Sauvignon Blanc; 15% or more of the must ferments in oak."
+     },
+     {
+      "name": "Blanco de uvas tintas",
+      "text": "White made from red grapes; fermented in steel tanks at 11 to 20 °C."
+     },
+     {
+      "name": "Tinto coupage autóctonas con foráneas",
+      "text": "Native and foreign red grapes; at least 30% spends 3 months or more in oak."
+     },
+     {
+      "name": "Vino dulce",
+      "text": "Sweet Merlot red: grapes above 280 g/l sugar; fermentation stopped at 46 to 90 g/l."
+     }
+    ],
+    "cite": [
+     "el-vicario-doc:p4",
+     "el-vicario-doc:p5",
+     "el-vicario-doc:p6"
+    ]
+   }
+  },
+  {
+   "id": "la-jaraba",
+   "why": {
+    "text": "High-strontium soils in a sediment-filled river hollow give intense wines with a marked mineral note.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Tempranillo (Cencibel)",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Graciano",
+     "Sauvignon Blanc"
+    ],
+    "othersCite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Oak-aged reds (blends, or single-grape Merlot) and a single-grape Sauvignon Blanc white.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "climate": {
+    "text": "Temperate Mediterranean with continental traits: a mean of 14 to 16 °C and 450 mm of rain a year. Woods shield the vines from the hot, dry Levante wind.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "soil": {
+    "text": "Red Mediterranean alfisols over limestone, sandy loam to clay. Coarse river pebbles abound. Strontium is high.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Flat ground at 700 m above sea level.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: ripe cherry (picota) red; red and black fruit with a mineral note; broad and fleshy. Whites: straw yellow; white stone fruit and floral notes; fresh and silky.",
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto de ensamblaje",
+      "text": "Red blend; at least 3 months in oak and 1 month in bottle."
+     },
+     {
+      "name": "Tinto monovarietal Merlot",
+      "text": "Single-grape Merlot red; At least 6 months in oak and 6 in bottle."
+     },
+     {
+      "name": "Blanco monovarietal Sauvignon Blanc",
+      "text": "Single-grape white, fermented in steel tank at 10 to 21 °C."
+     }
+    ],
+    "cite": [
+     "la-jaraba-doc"
+    ]
+   }
+  },
+  {
+   "id": "los-cerrillos",
+   "why": {
+    "text": "Hills around the riverside vineyard make it a cool site, raising acidity and phenolic compounds in the grapes.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Petit Verdot",
+     "Syrah",
+     "Tempranillo (Cencibel)"
+    ],
+    "othersCite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Oak-aged reds only, single-grape or blended; minimum barrel time runs from 30 days to 24 months.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "climate": {
+    "text": "Continental Mediterranean: hot summers, cold winters. Usually over 2,500 sun hours a year. Late spring frosts. Rain well above the rest of La Mancha.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone. The main rock is marl, an unconsolidated mix of clay and limestone. Loam texture, pH about 8.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyard at 695 m beside the Peñarroya reservoir, ringed by hills.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Six-month wines: purple or picota red, violet rims; fruit with floral scents; soft and fresh. Longer-aged wines: cherry red, garnet-tile rims; ripe fruit, liquorice, balsam; fleshy, with creamy oak notes.",
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Colección Privada",
+      "text": "Tempranillo and Cabernet Sauvignon blend; at least 13 months in oak."
+     },
+     {
+      "name": "Cabernet Sauvignon de Familia",
+      "text": "100% Cabernet Sauvignon; at least 24 months in barrel, then 18 in bottle."
+     },
+     {
+      "name": "Petit Verdot 12 meses",
+      "text": "100% Petit Verdot; at least 12 months in oak."
+     },
+     {
+      "name": "Tempranillo y Cabernet Sauvignon",
+      "text": "Blend of the two grapes; at least 6 months in oak."
+     }
+    ],
+    "cite": [
+     "los-cerrillos-doc"
+    ]
+   }
+  },
+  {
+   "id": "rosalejo",
+   "why": {
+    "text": "Poor, acid soils low in potassium and calcium give reds fresh acidity and a lasting ruby colour, even at a southern latitude.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Garnacha Tinta",
+     "Syrah",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "rosalejo-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry reds only, with barrel notes; fresh and young in character.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "climate": {
+    "text": "Atlantic influence and a nearby reservoir temper winter and summer. Big day-night swings. 650 mm of rain, mostly autumn and spring; almost dry summers.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "soil": {
+    "text": "Very old red soil, acid (pH below 6) and rich in iron. Half the topsoil is stone, including quartzite.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards at 650 m, at the foot of a sierra that reaches 1,279 m.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Deep ruby red. Intense red fruit, plus spice and toast from the barrels. Good structure and persistence; balanced acidity; fresh and young.",
+    "cite": [
+     "rosalejo-doc"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rio-negro",
+   "why": {
+    "text": "The high plateau (940 to 1,000 m) gives cooler days and a slow, balanced ripening that keeps the acidity.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Gewürztraminer",
+     "Merlot",
+     "Syrah",
+     "Tempranillo",
+     "Tinto Fragoso"
+    ],
+    "othersCite": [
+     "rio-negro-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Reds aged at least 11 months, then 6 in bottle. White Gewürztraminer aged at least 3 months on lees.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "climate": {
+    "text": "Continental Mediterranean; day-night swings over 20 °C at ripening. Wind and cold-air drainage protect against frost. Late-August storms cool the ripening days.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "soil": {
+    "text": "Acid soils, low in calcium and organic matter. Fairly high in clay. Regular liming partly offsets the acidity.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Plateau between 940 and 1,000 m.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow; citrus, floral, tropical fruit, apple; light acidity, bitter finish. Reds: picota red; fresh red fruit, floral, spice, smoke; light acidity, bitter finish.",
+    "cite": [
+     "rio-negro-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino tinto",
+      "text": "Red aged at least 11 months, 5 in oak, then 6 in bottle."
+     },
+     {
+      "name": "Vino blanco Gewürztraminer",
+      "text": "White aged at least 3 months on lees, then 1 in bottle."
+     }
+    ],
+    "cite": [
+     "rio-negro-doc"
+    ]
+   }
+  },
+  {
+   "id": "vallegarcia",
+   "why": {
+    "text": "Big day-night swings and more rain than the rest of the region give grapes a strong tannic structure for barrel and bottle ageing.",
+    "cite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Syrah",
+     "Viognier"
+    ],
+    "othersCite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Whites and reds. Both have toasty notes; in the red they come from wood.",
+    "cite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "climate": {
+    "text": "The Bullaque river and the sierra's shelter from north winds moderate extremes. Big day-night swings; more rain than the rest of the region.",
+    "cite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "soil": {
+    "text": "Acid raña soil, low in calcium and rich in silica. Iron and aluminium are also high.",
+    "cite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "tastes": {
+    "text": "White: intense yellow; stone and tropical fruit on a herbal background. Fresh and round, with a toasty, slightly bitter finish. Red: intense red with garnet rims; red fruit and scrub with toasted wood. Round, with slightly firm tannin.",
+    "cite": [
+     "vallegarcia-doc"
+    ]
+   },
+   "famous": {
+    "styles": [],
     "cite": []
    }
   }

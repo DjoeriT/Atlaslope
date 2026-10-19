@@ -30,7 +30,6 @@ export function checkSheets(files: SheetFile[], places: Place[], sources: Source
       const at = (row: string) => `${sheet.id}, ${row}`;
       const place = placeById.get(sheet.id);
       if (!place) errors.push(`${file.region}: "${sheet.id}" is not a place.`);
-      else if (place.quiz === 'none') errors.push(`${file.region}: ${sheet.id} is not quizzed, so it has no sheet.`);
       else if (place.region !== file.region) errors.push(`${sheet.id} is in the study region ${place.region} but its sheet is in the ${file.region} file.`);
       if (seen.has(sheet.id)) errors.push(`${sheet.id} has more than one sheet.`);
       seen.add(sheet.id);

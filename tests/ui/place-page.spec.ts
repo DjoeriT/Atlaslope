@@ -83,8 +83,9 @@ test('the jump bar lists only the sections that exist and moves focus to the sec
   await expect(page.locator('#terroir-soils-h')).toBeFocused();
   await expect(page).toHaveURL(/#place=rioja&page/);
 
+  // A place outside Study has its written sheet but no guide, producers or zones.
   await open(page, '#place=cava&page');
-  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place']);
+  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Sources']);
 });
 
 for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {

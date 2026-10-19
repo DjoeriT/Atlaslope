@@ -102,6 +102,7 @@ export const strings = {
     shortSource: {
       pliego: 'Pliego',
       singleDocument: 'EU single document',
+      amendment: 'EU amendment',
       wikipedia: 'Wikipedia',
       measured: 'Measured',
       koppen: 'Köppen-Geiger',

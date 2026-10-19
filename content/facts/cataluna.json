@@ -438,6 +438,77 @@
    }
   },
   {
+   "id": "cava",
+   "why": {
+    "text": "Long, hot, sunny summers ripen even late grapes well; cellars at about 13 to 15 °C suit the second fermentation in bottle.",
+    "cite": [
+     "cava-doc:p6",
+     "cava-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Viura (Macabeo)",
+     "Xarel·lo",
+     "Chardonnay",
+     "Parellada",
+     "Garnacha Tinta",
+     "Trepat",
+     "Pinot Noir"
+    ],
+    "othersCite": [
+     "cava-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling"
+    ],
+    "text": "Sparkling white and rosé, made by a second fermentation in the bottle.",
+    "cite": [
+     "cava-doc:p3",
+     "cava-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Transitional Mediterranean, between the mild coast and harsher inland. About 500 mm of rain a year and about 2,500 hours of sun.",
+    "cite": [
+     "cava-doc:p6",
+     "cava-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly chalky and fairly clayey, with little sand. Low in organic matter and not very fertile.",
+    "cite": [
+     "cava-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "White: pale yellow to straw. Rosé: varied shades, never violet. Small, steady bubbles. Fruity, fresh, lightly acidic, with a yeast note. Gran Reserva: ripe fruit, nuts, toast.",
+    "cite": [
+     "cava-doc:p3",
+     "cava-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Gran Reserva",
+      "text": "Long contact with yeast; ripe fruit, nuts and toast; complex, clean aromas."
+     },
+     {
+      "name": "Paraje Calificado",
+      "text": "Mineral hints from the plot; nuts and toast; balanced structure, creaminess and acidity."
+     }
+    ],
+    "cite": [
+     "cava-doc:p4"
+    ]
+   }
+  },
+  {
    "id": "penedes",
    "why": {
     "text": "Soil and climate bring white grapes to ripeness here. The whites get freshness and fruit.",
@@ -544,6 +615,109 @@
     ],
     "cite": [
      "penedes-enwiki"
+    ]
+   }
+  },
+  {
+   "id": "catalunya",
+   "why": {
+    "text": "Strong sunshine gives the wines deep colours, especially the reds.",
+    "cite": [
+     "catalunya-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Xarel·lo",
+     "Parellada (Montonega)",
+     "Garnacha Tinta",
+     "Alarije (Subirat Parent, Malvasía Riojana)",
+     "Albariño",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Mazuela (Cariñena)",
+     "Merlot",
+     "Monastrell",
+     "Moscatel de Alejandría",
+     "Moscatel Grano Menudo",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Chenin Blanc",
+     "Garnacha Blanca",
+     "Garnacha Peluda",
+     "Garnacha Roja",
+     "Garnacha Tintorera",
+     "Gewürztraminer",
+     "Macabeo (Viura)",
+     "Pedro Ximénez",
+     "Petit Verdot",
+     "Picapoll Blanco",
+     "Picapoll Negro",
+     "Pinot Noir",
+     "Riesling",
+     "Sauvignon Blanco",
+     "Sumoll Blanco",
+     "Sumoll Tinto",
+     "Syrah",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Trepat",
+     "Vinyater",
+     "Viognier"
+    ],
+    "othersCite": [
+     "catalunya-doc:p6",
+     "catalunya-doc:p10",
+     "catalunya-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified"
+    ],
+    "text": "Whites, rosados and reds; lightly sparkling aguja wines; liqueur wines.",
+    "cite": [
+     "catalunya-doc:p1",
+     "catalunya-doc:p3",
+     "catalunya-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Strong sunshine, which deepens the colour of the wines.",
+    "cite": [
+     "catalunya-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "White: pale greenish to deep gold; fruity or floral, with vanilla and toast if oaked. Rosé: bright red to onion-skin. Red: cherry to pale ruby; young ones light, oaked ones rounder.",
+    "cite": [
+     "catalunya-doc:p1",
+     "catalunya-doc:p2",
+     "catalunya-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino de aguja",
+      "text": "Lightly sparkling: a tingle from carbon dioxide; balanced and fresh."
+     },
+     {
+      "name": "Vino de licor",
+      "text": "Warm and rich; fruity if unoaked; nutty notes with ageing; colour up to amber."
+     }
+    ],
+    "cite": [
+     "catalunya-doc:p3",
+     "catalunya-doc:p4"
     ]
    }
   },

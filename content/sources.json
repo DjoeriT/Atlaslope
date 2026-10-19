@@ -964,5 +964,215 @@
   "title": "Wikipedia (en), «Rueda DO», revision 1231090800",
   "url": "https://en.wikipedia.org/w/index.php?oldid=1231090800",
   "date": "2024-06-26"
+ },
+ "arinzano-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0183 (EU single document, Pago de Arínzano)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27164",
+  "date": "2014-06-26"
+ },
+ "ayles-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1522 (EU single document, Aylés)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/34164",
+  "date": "2016-01-21"
+ },
+ "calzadilla-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0056 (EU single document, Calzadilla)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29578",
+  "date": "2014-06-27"
+ },
+ "campo-de-la-guardia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0055 (EU single document, Campo de la Guardia)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29565",
+  "date": "2014-06-27"
+ },
+ "casa-del-blanco-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0060 (EU single document, Casa del Blanco)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29754",
+  "date": "2014-06-27"
+ },
+ "catalunya-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1549 (EU single document, Cataluña / Catalunya)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29855",
+  "date": "2014-06-30"
+ },
+ "cava-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0735 (EU single document, Cava)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/40576",
+  "date": "2017-04-20"
+ },
+ "dehesa-del-carrizal-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0054 (EU single document, Dehesa del Carrizal)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17425",
+  "date": "2013-08-07"
+ },
+ "dominio-de-valdepusa-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0052 (EU single document, Dominio de Valdepusa, amendment AM02)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/38929",
+  "date": "2016-11-29"
+ },
+ "el-terrerazo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0940 (EU single document, Pago El Terrerazo)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28727",
+  "date": "2014-06-30"
+ },
+ "finca-elez-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0053 (EU single document, Finca Élez)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29498",
+  "date": "2014-06-27"
+ },
+ "guijoso-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0058 (EU single document, Guijoso)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29738",
+  "date": "2014-06-27"
+ },
+ "islas-canarias-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A1511 (EU single document, Islas Canarias)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27631",
+  "date": "2014-06-30"
+ },
+ "los-balagueses-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0941 (EU single document, Pago Los Balagueses)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/28806",
+  "date": "2014-06-30"
+ },
+ "otazu-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0184 (EU single document, Pago de Otazu)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27356",
+  "date": "2014-06-26"
+ },
+ "pago-florentino-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0057 (EU single document, Pago Florentino)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/29728",
+  "date": "2014-06-27"
+ },
+ "prado-de-irache-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-A0182 (EU single document, Pago Prado de Irache)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/27380",
+  "date": "2014-06-26"
+ },
+ "rosalejo-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02880 (EU single document, Rosalejo)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202301053",
+  "date": "2023-11-21"
+ },
+ "vallegarcia-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02085 (EU single document, Vallegarcía)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=uriserv:OJ.C_.2019.057.01.0010.01.SPA&toc=OJ:C:2019:057:FULL",
+  "date": "2019-02-13"
+ },
+ "abadia-retuerta-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02481 (EU single document, Abadía Retuerta)",
+  "url": "http://publications.europa.eu/resource/cellar/c25c579b-5d49-11ec-9c6c-01aa75ed71a1",
+  "date": "2021-12-15"
+ },
+ "abadia-retuerta-doc2": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02481 (EU single document, Abadía Retuerta, amendment AM01)",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.004.01.0012.01.ENG&toc=OJ%3AC%3A2023%3A004%3ATOC",
+  "date": "2023-01-06"
+ },
+ "arinzano-doc2": {
+  "kind": "official",
+  "title": "Modificación normal PDO-ES-A0183-AM02 (EU Official Journal C/2026/771, Pago de Arínzano)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600771",
+  "date": "2026-02-05"
+ },
+ "bolandin-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-N1876 (EU single document, Bolandin)",
+  "url": "http://publications.europa.eu/resource/cellar/55829db7-5cb2-11ec-91ac-01aa75ed71a1",
+  "date": "2021-12-14"
+ },
+ "bolandin-doc2": {
+  "kind": "official",
+  "title": "Modificación normal PDO-ES-N1876-AM01 (EU Official Journal C/2026/713, Bolandin)",
+  "url": "http://publications.europa.eu/resource/cellar/d7065b83-fd7e-11f0-8da5-01aa75ed71a1",
+  "date": "2026-01-30"
+ },
+ "chozas-carrascal-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-N1637 (EU single document, Chozas Carrascal)",
+  "url": "http://publications.europa.eu/resource/cellar/ef49f0df-465b-11ea-b81b-01aa75ed71a1",
+  "date": "2020-02-03"
+ },
+ "dehesa-penalba-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02592 (EU single document, Dehesa Peñalba)",
+  "url": "http://publications.europa.eu/resource/cellar/c51f5e5c-2253-11ec-bd8e-01aa75ed71a1",
+  "date": "2021-10-01"
+ },
+ "el-vicario-doc": {
+  "kind": "official",
+  "title": "Pliego PDO-ES-N1634 (pliego de condiciones, El Vicario)",
+  "url": "https://apliagri.castillalamancha.es/sites/default/files/2025-06/Pliego_Condiciones_vinoDOP_EL_VICARIO.pdf",
+  "date": "2020-10-19"
+ },
+ "la-jaraba-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-01895 (EU single document, La Jaraba)",
+  "url": "http://publications.europa.eu/resource/cellar/ab71392b-77d7-11eb-9ac9-01aa75ed71a1",
+  "date": "2021-02-26"
+ },
+ "los-cerrillos-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02228 (EU single document, Los Cerrillos)",
+  "url": "http://publications.europa.eu/resource/cellar/ef428939-770c-11eb-9ac9-01aa75ed71a1",
+  "date": "2021-02-25"
+ },
+ "otazu-doc2": {
+  "kind": "official",
+  "title": "Modificación normal PDO-ES-A0184-AM02 (EU Official Journal C/2026/3580, Pago de Otazu)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603580",
+  "date": "2026-07-13"
+ },
+ "rio-negro-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-03003 (EU single document, Río Negro)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202407000",
+  "date": "2024-11-21"
+ },
+ "tharsys-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02980 (EU single document, Tharsys)",
+  "url": "http://publications.europa.eu/resource/cellar/81f1ac08-426e-11f0-b9f2-01aa75ed71a1",
+  "date": "2025-06-06"
+ },
+ "uruena-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02485 (EU single document, Urueña)",
+  "url": "http://publications.europa.eu/resource/cellar/c28289a3-a181-11eb-b85c-01aa75ed71a1",
+  "date": "2021-04-20"
+ },
+ "uruena-doc2": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-02485 (EU single document, Urueña, amendment AM01)",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.208.01.0011.01.ENG&toc=OJ%3AC%3A2022%3A208%3ATOC",
+  "date": "2022-05-24"
+ },
+ "vera-de-estenas-doc": {
+  "kind": "official",
+  "title": "Documento único PDO-ES-N1665 (EU single document, Vera de Estenas)",
+  "url": "http://publications.europa.eu/resource/cellar/d452dd11-a475-11e9-9d01-01aa75ed71a1",
+  "date": "2019-07-12"
  }
 }
