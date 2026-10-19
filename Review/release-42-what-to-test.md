@@ -1,4 +1,4 @@
-# Release 43: what to test
+# Release 42: what to test
 
 ## General (every release)
 Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once with a hard refresh if a page looks stale. Anything odd: a screenshot plus the page address and what you expected is enough.
