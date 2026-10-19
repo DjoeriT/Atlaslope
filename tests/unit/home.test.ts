@@ -39,7 +39,25 @@ describe('the Guides page', () => {
     const list = guideRows();
     expect(list.rows).toHaveLength(guideCount());
     const out = fillGuideList(guidesHtml, list);
-    for (const r of list.rows) expect(out).toContain(link(r.id));
+    for (const r of list.regions.flatMap((g) => g.guides.slice(0, 6))) expect(out).toContain(link(r.id));
+  });
+  it('shows at most 6 guides per region, then "All <Region> guides" only for regions with more', () => {
+    const { regions } = guideRows();
+    const out = fillGuideList(guidesHtml, guideRows());
+    for (const r of regions) {
+      const sec = out.split('<section class="region"').find((x) => x.includes(`id="r-${r.id}"`))!;
+      expect(sec.match(/class="gcard-c"/g)?.length ?? 0).toBe(Math.min(6, r.guides.length));
+      const more = `<a href="../atlas/#region=${r.id}&amp;page">All ${r.name} guides</a>`;
+      expect(sec.includes(more), r.id).toBe(r.guides.length > 6);
+    }
+    expect(regions.some((r) => r.guides.length > 6)).toBe(true);
+  });
+  it('has a jump row with one link per region, to its section', () => {
+    const { regions } = guideRows();
+    const out = fillGuideList(guidesHtml, guideRows());
+    const nav = out.match(/<nav class="jump"[^>]*>(.*?)<\/nav>/)![1];
+    expect([...nav.matchAll(/<a href="(#r-[^"]+)"/g)].map((m) => m[1])).toEqual(regions.map((r) => `#r-${r.id}`));
+    for (const r of regions) expect(out).toContain(`<h2 id="r-${r.id}">`);
   });
   it('shows Rioja as the showcased guide over the home hero satellite view', () => {
     const list = guideRows();
@@ -76,7 +94,7 @@ describe('the Guides page', () => {
     const after = guideRows({ dir });
     const group = after.regions.find((r) => r.guides.some((g) => g.id === 'toro'));
     expect(group?.id).toBe('castilla-y-leon');
-    expect(fillGuideList(guidesHtml, after)).toContain(link('toro'));
+    expect(after.regions.find((r) => r.id === 'castilla-y-leon')!.guides.map((g) => g.id)).toContain('toro');
     expect(fillGuideList(guidesHtml, before)).not.toContain(link('toro'));
   });
   it('features Rioja with three photos, its In short and one credit line', () => {
@@ -96,9 +114,10 @@ describe('the Guides page', () => {
     expect(list.featured?.photos).toEqual([]);
     const out = fillGuideList(guidesHtml, list);
     expect(out).toContain('class="ct typo"');
+    expect(out.match(/class="ct typo"[^>]*><span class="kick"/)).toBeNull();
     expect(out).not.toContain('class="sat"');
     expect(out).not.toContain('Imagery: Esri');
-    for (const r of list.rows) expect(out).toContain(link(r.id));
+    for (const r of list.regions.flatMap((g) => g.guides.slice(0, 6))) expect(out).toContain(link(r.id));
   });
   it('shows the satellite tile and its credit only for regions that have one', () => {
     const { regions } = guideRows();

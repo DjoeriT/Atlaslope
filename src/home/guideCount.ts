@@ -122,13 +122,17 @@ const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: strin
 const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
   const top = g.photo
     ? `<span class="ct">${photoImg(g.photo, photos, '(max-width:700px) 90vw, 300px', false)}</span><span class="cb"><b>${esc(g.name)}</b>`
-    : `<span class="ct typo"><span class="kick">${esc(g.label)}</span><b>${esc(g.name)}</b></span><span class="cb"><b class="sr">${esc(g.name)}</b>`;
+    : `<span class="ct typo"><b>${esc(g.name)}</b></span><span class="cb"><b class="sr">${esc(g.name)}</b>`;
   return `<a class="gcard-c" href="../atlas/#place=${esc(g.id)}&amp;page">${top}<em>${esc(g.label)} · ${g.minutes}-minute read</em><span class="lede">${esc(g.lede)}</span></span></a>`;
 };
+
+// Guides shown per region on the Guides page; the rest sit behind the region link
+const PER_REGION = 6;
 
 export const fillGuideList = (html: string, list: GuideList): string => {
   const { regions, featured, photos } = list;
   const out: string[] = [];
+  if (regions.length) out.push(`<nav class="jump" aria-label="Jump to a region">${regions.map((r) => `<a href="#r-${esc(r.id)}">${esc(r.name)}</a>`).join('')}</nav>`);
   if (featured) {
     const f = featured.row;
     const hero = featured.hero ? FEATURED_HERO[f.id] : undefined;
@@ -146,13 +150,15 @@ export const fillGuideList = (html: string, list: GuideList): string => {
   }
   for (const r of regions) {
     const n = r.guides.length;
+    const shown = r.guides.slice(0, PER_REGION);
     out.push(
       `<section class="region" aria-labelledby="r-${esc(r.id)}"><div class="rowh"><h2 id="r-${esc(r.id)}">${esc(r.name)}</h2><span>${n} ${n === 1 ? 'guide' : 'guides'}</span></div>`,
       '<div class="rowg">',
       r.tile ? `<figure class="sat"><img src="../guides/${esc(r.tile)}" alt="Satellite view of ${esc(r.name)}" width="1200" height="750" loading="lazy" />${SAT_CREDIT}</figure>` : '',
-      ...r.guides.map((g) => card(g, photos)),
+      ...shown.map((g) => card(g, photos)),
       '</div>',
-      creditLine(r.guides.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
+      creditLine(shown.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
+      n > PER_REGION ? `<p class="more"><a href="../atlas/#region=${esc(r.id)}&amp;page">All ${esc(r.name)} guides</a></p>` : '',
       '</section>',
     );
   }
