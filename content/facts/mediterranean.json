@@ -723,7 +723,7 @@
   {
    "id": "chozas-carrascal",
    "why": {
-    "text": "At 720 m and open to cold north winds, this is one of the coolest sites in its district, on poor, limy soil.",
+    "text": "At 720 m and open to cold north winds, this is one of the coolest sites in its district.",
     "cite": [
      "chozas-carrascal-doc"
     ]
@@ -749,13 +749,13 @@
      "white",
      "rose"
     ],
-    "text": "Reds (blends, or Cabernet Franc alone): 5+ months in oak. White: barrel-fermented. Rosado: macerated in oak barrels.",
+    "text": "Reds (blends, or Cabernet Franc alone): at least 5 months in oak. White: barrel-fermented. Rosado: macerated in oak barrels.",
     "cite": [
      "chozas-carrascal-doc"
     ]
    },
    "climate": {
-    "text": "Continental with Mediterranean influence: 350 to 400 mm of rain, mostly in September, about 3,000 sun hours a year. Big day-night swings at ripening.",
+    "text": "Continental with Mediterranean influence. Rain is 350 to 400 mm, mostly in September. There are about 3,000 sun hours a year. Big day-night swings at ripening.",
     "cite": [
      "chozas-carrascal-doc"
     ]
@@ -782,7 +782,7 @@
     "styles": [
      {
       "name": "Tinto multivarietal",
-      "text": "Red blend; each grape made apart, 14+ days maceration, at least 5 months in oak."
+      "text": "Red blend of grapes made apart; at least 14 days on skins, 5 months in oak."
      },
      {
       "name": "Tinto monovarietal (Cabernet Franc)",
@@ -833,7 +833,7 @@
      "rose",
      "sparkling"
     ],
-    "text": "Reds, young or oak-aged. Whites and rosados. Quality sparkling wines, white and rosé.",
+    "text": "Reds, young or oak-aged. Whites and rosados. Quality sparkling wines, white and rosado.",
     "cite": [
      "tharsys-doc"
     ]
@@ -845,7 +845,7 @@
     ]
    },
    "soil": {
-    "text": "Sandy to sandy-loam, loose and shallow, over porous limestone 2 to 4 m down. High in carbonates; pH 8.2-8.3.",
+    "text": "Sandy to sandy-loam, loose and shallow, over porous limestone 2 to 4 m down. High in carbonates; pH 8.2 to 8.3.",
     "cite": [
      "tharsys-doc"
     ]
@@ -889,7 +889,7 @@
   {
    "id": "vera-de-estenas",
    "why": {
-    "text": "A shallow water table softens day-night swings and keeps humidity higher, which keeps the acidity balanced.",
+    "text": "A shallow water table softens day-night swings and raises humidity, which keeps the acidity balanced.",
     "cite": [
      "vera-de-estenas-doc"
     ]

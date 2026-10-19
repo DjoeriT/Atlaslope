@@ -222,7 +222,7 @@
     ]
    },
    "soil": {
-    "text": "Highly limestone and strongly alkaline.",
+    "text": "Very high in limestone and strongly alkaline.",
     "cite": [
      "calzadilla-doc:p3"
     ]
@@ -454,7 +454,7 @@
     ]
    },
    "climate": {
-    "text": "Continental, with dry hot summers and cold winters. Mean 17 °C in winter, 26 °C in summer; 450 mm of rain a year.",
+    "text": "Continental, with hot, dry summers and cold winters. Mean 17 °C in winter, 26 °C in summer; 450 mm of rain a year.",
     "cite": [
      "dominio-de-valdepusa-doc:p4"
     ]
@@ -480,7 +480,7 @@
   {
    "id": "campo-de-la-guardia",
    "why": {
-    "text": "Very salty soils high in potassium and low air humidity keep the grapes small, with more skin to pulp.",
+    "text": "Very salty soils rich in potassium, plus low air humidity, keep the grapes small, with more skin to pulp.",
     "cite": [
      "campo-de-la-guardia-doc:p5"
     ]
@@ -507,7 +507,7 @@
      "red",
      "white"
     ],
-    "text": "Mostly red blends of the estate's grapes, plus a wine from the year's best grape. A barrel-aged white too.",
+    "text": "Mostly red blends of the estate's grapes, plus a wine from the year's best grape. There is also a barrel-aged white.",
     "cite": [
      "campo-de-la-guardia-doc:p1",
      "campo-de-la-guardia-doc:p2"
@@ -1638,7 +1638,7 @@
     "styles": [
      {
       "name": "Blanco parcialmente fermentado en barrica",
-      "text": "Chardonnay, Sauvignon Blanc; 15% or more of the must ferments in oak."
+      "text": "White from Chardonnay and Sauvignon Blanc; 15% or more of the must ferments in oak."
      },
      {
       "name": "Blanco de uvas tintas",
@@ -1646,11 +1646,11 @@
      },
      {
       "name": "Tinto coupage autóctonas con foráneas",
-      "text": "Blend of native and foreign red grapes; at least 30% spends 3+ months in oak."
+      "text": "Native and foreign red grapes; at least 30% spends 3 months or more in oak."
      },
      {
       "name": "Vino dulce",
-      "text": "Sweet Merlot red, grapes over 280 g/l sugar; stopped at 46 to 90 g/l."
+      "text": "Sweet Merlot red from grapes over 280 g/l sugar; fermentation stops at 46 to 90 g/l."
      }
     ],
     "cite": [
@@ -1693,7 +1693,7 @@
     ]
    },
    "climate": {
-    "text": "Temperate Mediterranean with continental traits: 14 to 16 °C mean, 450 mm rain a year. Woods shield the vines from the hot, dry Levante wind.",
+    "text": "Temperate Mediterranean with continental traits: a mean of 14 to 16 °C and 450 mm of rain a year. Woods shield the vines from the hot, dry Levante wind.",
     "cite": [
      "la-jaraba-doc"
     ]
@@ -1724,7 +1724,7 @@
      },
      {
       "name": "Tinto monovarietal Merlot",
-      "text": "Single-grape Merlot red; 6 months in oak and 6 in bottle at least."
+      "text": "Single-grape Merlot red; At least 6 months in oak and 6 in bottle."
      },
      {
       "name": "Blanco monovarietal Sauvignon Blanc",
@@ -1900,7 +1900,7 @@
      "red",
      "white"
     ],
-    "text": "Reds aged 11+ months, then 6+ in bottle. White Gewürztraminer aged 3+ months on its lees.",
+    "text": "Reds aged at least 11 months, then 6 in bottle. White Gewürztraminer aged at least 3 months on lees.",
     "cite": [
      "rio-negro-doc"
     ]
@@ -1933,11 +1933,11 @@
     "styles": [
      {
       "name": "Vino tinto",
-      "text": "Red aged 11 months or more (5+ in oak), then 6+ in bottle."
+      "text": "Red aged at least 11 months, 5 in oak, then 6 in bottle."
      },
      {
       "name": "Vino blanco Gewürztraminer",
-      "text": "White aged 3+ months on lees in steel or oak, then 1+ in bottle."
+      "text": "White aged at least 3 months on lees, then 1 in bottle."
      }
     ],
     "cite": [

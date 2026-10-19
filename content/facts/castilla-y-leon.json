@@ -1124,7 +1124,7 @@
      "red",
      "white"
     ],
-    "text": "Reds: single-grape (oak, 12 months minimum) or blended (6 minimum). Whites: blends, steel tank or oak.",
+    "text": "Reds: single-grape (at least 12 months in oak) or blended (at least 6). Whites: blends, steel tank or oak.",
     "cite": [
      "abadia-retuerta-doc"
     ]
@@ -1209,7 +1209,7 @@
     ]
    },
    "climate": {
-    "text": "A milder microclimate, at 12 °C mean a year, with good west-east airflow. It has 206 frost-free days; neighbouring areas have under 200.",
+    "text": "A milder microclimate, with a mean of 12 °C a year and good west-east airflow. It has 206 frost-free days; neighbouring areas have under 200.",
     "cite": [
      "dehesa-penalba-doc"
     ]
@@ -1289,7 +1289,7 @@
     ]
    },
    "climate": {
-    "text": "Semi-arid Mediterranean, with about 410 mm of rain a year. Mean 11.4 °C and 2,650 sun hours. June to September are dry.",
+    "text": "Semi-arid Mediterranean, with about 410 mm of rain a year. The mean is 11.4 °C, with 2,650 sun hours. June to September are dry.",
     "cite": [
      "uruena-doc2"
     ]

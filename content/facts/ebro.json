@@ -4,7 +4,7 @@
   {
    "id": "otazu",
    "why": {
-    "text": "The Atlantic influence and the valley-floor site lengthen the growing cycle, which brings acidity and colour in balance.",
+    "text": "The Atlantic influence and the valley-floor site lengthen the growing cycle, so acidity and colour stay in balance.",
     "cite": [
      "otazu-doc:p3",
      "otazu-doc2"
@@ -136,7 +136,7 @@
   {
    "id": "arinzano",
    "why": {
-    "text": "Dry, hot summers and a big day-night temperature gap give a slow but good ripening.",
+    "text": "Dry, hot summers and a big day-night temperature swing ripen the grapes slowly and well.",
     "cite": [
      "arinzano-doc:p4",
      "arinzano-doc2"
@@ -166,7 +166,7 @@
     ]
    },
    "climate": {
-    "text": "Dry, hot summers, with a large temperature gap between night and day at summer's end. Atlantic orientation gives a long growing season.",
+    "text": "Dry, hot summers, with a large temperature swing between night and day at summer's end. Atlantic orientation gives a long growing season.",
     "cite": [
      "arinzano-doc:p4",
      "arinzano-doc2"
@@ -851,7 +851,7 @@
     ]
    },
    "climate": {
-    "text": "Extreme continental. Summer highs over 35 °C; winter lows -6 to -8 °C. Rain 354 to 379 mm. Dry Cierzo wind on 70% of days.",
+    "text": "Extreme continental. Summer highs over 35 °C; winter lows -6 to -8 °C. Rain 354 to 379 mm. Dry cierzo wind on 70% of days.",
     "cite": [
      "bolandin-doc"
     ]
