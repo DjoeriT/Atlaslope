@@ -343,7 +343,7 @@
      },
      {
       "name": "Crianza, Reserva y Gran Reserva",
-      "text": "Cherry to ruby-tile; structured, oak notes, long and intense."
+      "text": "Oak brings power, structure and body; slightly bitter, long, intense finish."
      },
      {
       "name": "Vino espumoso",
@@ -519,19 +519,31 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Tempranillo (Cencibel, Tinto de Toro)"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "campo-de-la-guardia-doc:p4"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Tempranillo (Cencibel, Tinto de Toro)",
-     "Syrah",
-     "Merlot",
-     "Chardonnay",
      "Malbec",
      "Petit Verdot"
     ],
     "othersCite": [
-     "campo-de-la-guardia-doc:p4",
      "campo-de-la-guardia-doc:p8"
     ]
    },
@@ -628,9 +640,11 @@
      "sparkling",
      "sweet"
     ],
-    "text": "Dry to sweet whites and rosados; young, oak-aged and carbonic-maceration reds; sparkling white and rosé.",
+    "text": "Whites and rosados, dry to sweet; young, oak and carbonic-maceration reds, dry to sweet; Crianza to Gran Reserva reds; sparkling white and rosé.",
     "cite": [
      "manchuela-doc:p1",
+     "manchuela-doc:p2",
+     "manchuela-doc:p3",
      "manchuela-doc:p4"
     ]
    },
@@ -1321,7 +1335,7 @@
   {
    "id": "finca-elez",
    "why": {
-    "text": "At 1,080 m, in dry continental air with big day-night swings, the wines keep good acidity and suit ageing.",
+    "text": "At 1,080 m, with dry continental air and big day-night swings. Good acidity balances fairly high alcohol, giving fresher wines for ageing.",
     "cite": [
      "finca-elez-doc:p6"
     ]
@@ -1590,7 +1604,7 @@
     ]
    },
    "soil": {
-    "text": "Dark clay-loam soils, often stony; low in calcium, high in potassium; volcanic rock.",
+    "text": "Dark soils, clay loam below, often stony on top; low in calcium, high in potassium; volcanic rock.",
     "cite": [
      "campo-de-calatrava-doc:p8"
     ]
