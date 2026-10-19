@@ -1,0 +1,162 @@
+{
+ "id": "tacoronte-acentejo",
+ "title": "Why Tacoronte-Acentejo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On Tenerife's north side the vines have a long growing season and ripen slowly, because the temperature barely changes and there is no risk of frost. That slow ripening gives the wines good aromatic intensity and a wide range of colours.",
+  "cite": [
+   "tacoronte-acentejo-pliego:p7",
+   "tacoronte-acentejo-pliego:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Terraces facing the Atlantic",
+   "paras": [
+    "Tacoronte-Acentejo runs 23 km along the north side of Tenerife. Its slopes fall from the northern end of the Cordillera Dorsal ridge down to the Atlantic shore.",
+    "Vines cover 2,422 hectares. That is 40% of the cultivated area on Tenerife and 20% of the Canaries' wine-growing land. No other part of the archipelago is so densely planted with vines.",
+    "The vineyards sit between 100 and 1,000 m up. They grow on terraces, or bancales, on steep slopes that face north towards the sea.",
+    "Wine here began almost five hundred years ago, when the first European settlers reached Tenerife. At first the wineries made only young whites and reds to drink early. Today the range covers almost every type of wine on the market.",
+    "Anaga is a subzone of its own, recognised for the particular character of its wines. It follows the bounds of the Parque Rural de Anaga."
+   ],
+   "cite": [
+    "tacoronte-acentejo-pliego:p6",
+    "tacoronte-acentejo-pliego:p7"
+   ],
+   "fly": [
+    {
+     "label": "Tacoronte-Acentejo",
+     "place": "tacoronte-acentejo",
+     "caption": "A 23 km strip of north-facing slopes between the Cordillera Dorsal and the Atlantic.",
+     "cite": [
+      "tacoronte-acentejo-pliego:p6"
+     ]
+    },
+    {
+     "label": "Parque Rural de Anaga",
+     "point": [
+      -16.2576,
+      28.5336
+     ],
+     "zoom": 10,
+     "caption": "The rural park that marks out Anaga, a subzone with wines of its own character.",
+     "cite": [
+      "tacoronte-acentejo-pliego:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mild all year, changed by the trade winds",
+   "paras": [
+    "The climate is temperate and very mild all year, with a mean of 20 °C. Day and night differ very little, except in the highest zones. Summer and winter differ very little too.",
+    "The alisios, the northerly trade winds, create a huge variety of microclimates. Strong contrasts can show up within just 100 metres. With other factors, these winds set the island apart from the drier, more extreme climate of its latitude, above all at mid-altitude.",
+    "The sun shines for about 2,500 hours a year.",
+    "So the whites get notes of white fruit such as apple and pear, with tropical, floral and balsamic notes. The reds get blackberry, herbaceous and mineral notes, with a hint of black pepper. The rosados get clean red fruit such as strawberry and raspberry, with floral and herbaceous tones."
+   ],
+   "cite": [
+    "tacoronte-acentejo-pliego:p6",
+    "tacoronte-acentejo-pliego:p7"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Volcanic soil that went its own way",
+   "paras": [
+    "The soil is volcanic, formed as igneous rock changed over time. It is mostly clay-loam and silt-loam, very permeable and acidic. It is rich in minerals but poor in lime. Nitrogen is abundant, and so are potassium and phosphorus.",
+    "All the Canaries share a volcanic origin, yet the soil here evolved differently. It gives balanced, fresh, persistent whites. It gives structured reds with good-quality tannin and a clean, lasting finish. The rosados get the right balance between acidity and freshness.",
+    "Vines are trained the local way, in rastras, rows set very far apart, or propped on forked supports called horquetas. Rastras help the sun reach the whole plant and keep its temperature even, which brings balance to the wines. A hectare may hold no more than 3,000 vines."
+   ],
+   "cite": [
+    "tacoronte-acentejo-pliego:p5",
+    "tacoronte-acentejo-pliego:p7",
+    "tacoronte-acentejo-pliego:p8"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "From young reds to licor wines",
+   "paras": [
+    "Listán Negro and Negramoll lead the reds. Listán Blanco leads the whites, with Moscatel and Malvasía. Other grapes are used in smaller amounts, Castellana Negra and Tintilla among them.",
+    "The zone makes white, rosado and red wine. It also makes vino de aguja, with fine bubbles, and a version with added carbon dioxide. Its sparkling wines come in three kinds, and the quality sparkling wine needs at least 3.5 bar of pressure.",
+    "Sweet wines come from raisined grapes and from overripe grapes. The naturally sweet wine uses overripe grapes with no added alcohol, a natural strength over 15% vol and at least 13% vol of acquired alcohol.",
+    "Vino de licor is fortified, with at least 15% vol. So many microclimates mean some grapes do not reach the best ripeness for a naturally sweet wine, which is why wine alcohol has traditionally been used to make it.",
+    "There is also mosto de uva parcialmente fermentado, partly fermented grape must. The rastra training gives grapes high in sugar, which is what makes it easier to make.",
+    "How it tastes: fresh and persistent, with great aromatic intensity and body. Mineral notes on the finish are balanced with tropical, wild, balsamic or black fruit notes.",
+    "In short: sun, breeze and volcanic earth beside the sea, in a diverse, benign and stable climate, meet the growers' know-how to give these wines their surprising personality."
+   ],
+   "cite": [
+    "tacoronte-acentejo-pliego:p1",
+    "tacoronte-acentejo-pliego:p2",
+    "tacoronte-acentejo-pliego:p3",
+    "tacoronte-acentejo-pliego:p4",
+    "tacoronte-acentejo-pliego:p7",
+    "tacoronte-acentejo-pliego:p8",
+    "tacoronte-acentejo-pliego:p9",
+    "tacoronte-acentejo-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Tenerife",
+    "text": "Every bottle must say \"Tacoronte-Acentejo, Denominación de Origen\" with \"Tenerife\" shown prominently beside it."
+   },
+   {
+    "term": "Anaga",
+    "text": "The subzone's name may appear only if all the grapes come from Anaga and the wine is made there."
+   },
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "Only for wine made from grapes picked in the year named."
+   },
+   {
+    "term": "Conjunto de vinos de varias cosechas (CVC)",
+    "text": "A wine blended from different vintages."
+   },
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Above seco and up to 12 g/l of sugar, or 18 g/l with enough acidity; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Above semiseco and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "45 g/l of sugar or more; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, with none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "tacoronte-acentejo-pliego:p3",
+   "tacoronte-acentejo-pliego:p12"
+  ]
+ }
+}

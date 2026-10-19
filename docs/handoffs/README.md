@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-19-canarias-guides](2026-10-19-canarias-guides.md): Canarias guides (19 Oct 2026, release 50)
 - [2026-10-19-home-page-refresh](2026-10-19-home-page-refresh.md): Home page refresh (19 Oct 2026, PR #111, release 40)
 - [2026-10-19-guides-showcase](2026-10-19-guides-showcase.md): Release 48: Binissalem photo and showcased guide (19 Oct 2026)
 - [2026-10-19-guides-page-cataluna](2026-10-19-guides-page-cataluna.md): Guides page: Cataluña tile (19 Oct 2026)

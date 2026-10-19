@@ -1,0 +1,168 @@
+{
+ "id": "la-palma",
+ "title": "Why La Palma tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "In Hoyo de Mazo and Fuencaliente, vines creep over volcanic stones and picón, the local volcanic ash, and one plant can reach 36 metres long. The soil gives these wines a salty taste in the mouth.",
+  "cite": [
+   "la-palma-pliego:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "An ocean volcano with terraces",
+   "paras": [
+    "La Palma is the top of an ocean volcano, mostly basalt, in the northwest of the Canary Islands.",
+    "The Caldera de Taburiente fills its centre, a vast hollow carved by erosion and ringed by peaks 8 km across. The highest is the Roque de los Muchachos, at 2,426 m.",
+    "All the island's farmland is wine zone. Norte de La Palma is its northern subzone. Hoyo de Mazo lies in the east and Fuencaliente in the southwest.",
+    "The first vines were probably planted in 1505. From the early 16th century, Malvasía was never missing at Europe's main courts. In Shakespeare's own words, it \"cheers the senses and perfumes the blood\". Wine became the main source of wealth of the archipelago.",
+    "Most vineyards are small, irregular plots on steep slopes, so machines are very hard to use. Narrow terraces held by dry-stone walls ring the island almost all the way round, between 200 and 1,400 m up."
+   ],
+   "cite": [
+    "la-palma-pliego:p9",
+    "la-palma-pliego:p10",
+    "la-palma-pliego:p11",
+    "la-palma-pliego:p12"
+   ],
+   "fly": [
+    {
+     "label": "Caldera de Taburiente",
+     "point": [
+      -17.8721,
+      28.7309
+     ],
+     "zoom": 10,
+     "caption": "A vast hollow carved by erosion at the island's centre, ringed by peaks 8 km across.",
+     "cite": [
+      "la-palma-pliego:p10"
+     ]
+    },
+    {
+     "label": "Roque de los Muchachos",
+     "point": [
+      -17.8849,
+      28.7542
+     ],
+     "zoom": 11,
+     "caption": "The island's highest summit, at 2,426 m.",
+     "cite": [
+      "la-palma-pliego:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Cloud in the northeast, sun in the west",
+   "paras": [
+    "The northeast trade winds pile a sea of clouds against the mountains of the north and east. That makes this the island's most humid side.",
+    "The west, from Puntagorda to Fuencaliente, is sheltered from them, so it gets strong sun and high evaporation.",
+    "The climate is mild, above all on the coast, with no real winter. The warmest and coldest months differ by only about 6 to 8 °C, and day and night differ by about as much.",
+    "The air is humid, yet rain is scarce. Yearly rain runs from 350 litres per m² on the driest southwest coast to 1,000 up high.",
+    "The wetter, cloudier northeast farms more crops, and more productively."
+   ],
+   "cite": [
+    "la-palma-pliego:p10",
+    "la-palma-pliego:p11"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Black ash and old roots",
+   "paras": [
+    "Vines have long had the poorest soils, while the best land went to staples such as potatoes.",
+    "Hoyo de Mazo and Fuencaliente are the most arid places on the island. The volcanic soil often has a layer of picón up to 5 m deep, so vines are planted in steps to keep people safe as they dig down to the fertile layer.",
+    "The pine-covered north trains its vines on parral, overhead trellises, or as low bushes.",
+    "Phylloxera, the pest that wiped out Europe's vineyards, never reached La Palma, so almost every vine grows ungrafted. Some Malvasía vines are more than 100 years old."
+   ],
+   "cite": [
+    "la-palma-pliego:p12"
+   ],
+   "fly": [
+    {
+     "label": "Fuencaliente",
+     "point": [
+      -17.8412,
+      28.5072
+     ],
+     "zoom": 11,
+     "caption": "The most arid corner of the island, where vines creep over volcanic stones and picón.",
+     "cite": [
+      "la-palma-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Twelve wines from one island",
+   "paras": [
+    "Malvasía aromática and Malvasía volcánica are among the preferred white grapes. Listán negro, also called Almuñeco, and Negramoll are among the preferred black ones.",
+    "La Palma makes twelve kinds of wine. Besides white, rosado and red, there is clarete. It is made like a red from black and white grapes together, at least 25% of them black, fermented on the skins. Negramoll is 85% to 100% of that black grape, never in barrel. Dry Malvasía is 85% to 100% Malvasía, with no more than 4 g/l of sugar.",
+    "Vino de Tea is a white, rosado or red from the Norte subzone. It spends up to 6 months in casks of tea, the wood of the Canary pine Pinus canariensis. The pine gives it a resin taste and makes it bitter.",
+    "Malvasía dulce and naturally sweet wine come from overripe grapes picked late, the vendimia tardía, with more than 45 g/l of sugar left. Sparkling wine is made by the traditional method from white grapes, with at least 9 months in bottle. Vino de aguja has fine bubbles. Vino de licor reaches at least 15% vol.",
+    "How it tastes: Negramoll can be light, or high in alcohol, depending on the zone. Vino de Tea smells pungent and resinous, and generally ends a little bitter. Malvasía dulce shows dried apricot and bitter almond, with a fruity, slightly bitter finish.",
+    "In short: La Palma's wines have a Mediterranean character, although the vineyards sit in the Atlantic."
+   ],
+   "cite": [
+    "la-palma-pliego:p1",
+    "la-palma-pliego:p4",
+    "la-palma-pliego:p5",
+    "la-palma-pliego:p6",
+    "la-palma-pliego:p7",
+    "la-palma-pliego:p9",
+    "la-palma-pliego:p10",
+    "la-palma-pliego:p12"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "The named year must make up at least 85% of the wine."
+   },
+   {
+    "term": "Seco",
+    "text": "Still, with at most 4 g/l of sugar. A sparkling seco has 17 to 32 g/l."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Still, with 4 to 12 g/l of sugar. A sparkling semi seco has 32 to 50 g/l."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Still, with 12 to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Still, with at least 45 g/l of sugar. A sparkling dulce has more than 50 g/l."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, with under 3 g/l of sugar and no sugar added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, with 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, with under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, with 12 to 17 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "la-palma-pliego:p2",
+   "la-palma-pliego:p15"
+  ]
+ }
+}

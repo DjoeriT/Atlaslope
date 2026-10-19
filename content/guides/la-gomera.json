@@ -1,0 +1,133 @@
+{
+ "id": "la-gomera",
+ "title": "Why La Gomera tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "La Gomera's soils are worn hard by water and sea, which leaves them acid and poor in salts. Combined with the island's weather, that ground gives the wines their high acidity.",
+  "cite": [
+   "la-gomera-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "An old volcano cut by ravines",
+   "paras": [
+    "La Gomera sits in the middle of the Canaries, between Tenerife, La Palma and El Hierro. It covers 369 km2 and rises to 1,487 metres. Its height against its area is among the highest ratios in the world.",
+    "The island is an old volcano that has not erupted since the Pliocene. Water and sea have eaten away its edges and cut back towards its heart. What is left is a central plateau at about 1,000 metres on average. Around it lies exceptionally steep ground, split by deep barrancos, the ravines that radiate from the centre.",
+    "There is no flat land here by nature. Growers dug terraces into the mountain slopes, some reaching places that are almost inaccessible. Most vines grow in monte bajo, a Mediterranean-style scrubland full of stone. The vineyard covers a little over 800 hectares on steep slopes. Machines are rarely used.",
+    "Vines arrived in the 15th century with the first Europeans. Settlers came from many lands and brought their own vines. Island isolation kept those varieties, and phylloxera has never been found on La Gomera."
+   ],
+   "cite": [
+    "la-gomera-pliego:p7",
+    "la-gomera-pliego:p8",
+    "la-gomera-pliego:p9",
+    "la-gomera-pliego:p10"
+   ],
+   "fly": [
+    {
+     "label": "The island of ravines",
+     "place": "la-gomera",
+     "caption": "A central plateau at about 1,000 metres, ringed by deep ravines that run out to the sea.",
+     "cite": [
+      "la-gomera-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Many small climates",
+   "paras": [
+    "La Gomera has no single climate. It has many microclimates, shaped by the alisios, the trade winds. The Canary sea current, the island's relief and nearby Africa also play a part.",
+    "The mountains split the island into three main zones. The north lies below 900 metres and takes the trade winds. The centre rises above 900 metres, where moisture from condensation matters most. The leeward side lies below 900 metres and is dry with high evapotranspiration.",
+    "The gap between the coldest and the warmest month stays under ten degrees. Average lows are 17 ºC and average highs 25 ºC.",
+    "About 370 mm of rain falls in an average year. On the wooded ridges, trees catch water from the trade winds, and this can add more than 400 mm.",
+    "The many microclimates help many grape varieties settle in, each in its own zone."
+   ],
+   "cite": [
+    "la-gomera-pliego:p8",
+    "la-gomera-pliego:p10"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Old soils without fresh ash",
+   "paras": [
+    "La Gomera's soils are unlike those of the other Canary Islands. No new volcanic material has reached it for the last two million years.",
+    "Height sorts the soils. Above 700 metres they show ferralitic weathering over old rock. Between 700 and 400 metres come brown soils. Below 400 metres, in a semi-arid climate at the foot of the slopes, vertisols form.",
+    "Terraces let growers make use of soils well suited to the vine."
+   ],
+   "cite": [
+    "la-gomera-pliego:p8",
+    "la-gomera-pliego:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "The island of Forastera",
+   "paras": [
+    "Forastera Blanca is held to be native to La Gomera. Locals call it forastera gomera. It covers 85% of the vineyard and grows all over the island, since it suits every soil there. It is in almost every wine the island makes.",
+    "La Gomera makes white, rosado and red wine. There is also a red made by carbonic maceration. Vino de licor, a liqueur wine, needs at least 15% vol. The island makes sparkling wine too.",
+    "Naturally sweet wine comes from overripe or dried grapes. They overripen on the vine, are picked late, or are dried in the sun after picking.",
+    "Traditional white or rosado reaches 13 to 17 degrees of alcohol and spends time in barrel. It is made from white grapes, with up to 10% red allowed, and at least 90% of the white grapes must be Forastera. A single-variety Forastera Blanca is made entirely from that grape.",
+    "How it tastes: a single-variety Forastera smells of apple, melon and tropical fruit. It tastes balanced and fresh from its high acidity. Traditional white or rosado recalls Jerez or Amontillado, yet keeps fruit or overripe fruit with notes of jara, the rockrose, and fennel. It has marked acidity and a robust body from its high glycerine.",
+    "In short: Forastera brings high acidity, well balanced with the rest of the wine. Its presence also gives nearly all of La Gomera's wines an orange tint, stronger or lighter depending on whether they are white, rosado or red."
+   ],
+   "cite": [
+    "la-gomera-pliego:p1",
+    "la-gomera-pliego:p5",
+    "la-gomera-pliego:p9",
+    "la-gomera-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "The named year must make up at least 85% of the wine."
+   },
+   {
+    "term": "Seco",
+    "text": "Still, with at most 4 g/l of sugar, or up to 9 g/l when acidity is high enough. A sparkling seco has 17 to 32 g/l."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Still, with more than 4 and at most 12 g/l of sugar. A sparkling semi seco has 32 to 50 g/l."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Still, with more than 12 and at most 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Still, with more than 45 g/l of sugar. A sparkling dulce has more than 50 g/l."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling with less than 3 g/l of sugar and no sugar added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling with 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling with less than 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling with 12 to 17 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "la-gomera-pliego:p3",
+   "la-gomera-pliego:p13"
+  ]
+ }
+}

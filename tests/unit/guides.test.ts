@@ -13,16 +13,18 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
-      'abadia-retuerta', 'alella', 'alicante', 'arinzano', 'arlanza', 'arribes', 'ayles', 'bierzo', 'binissalem', 'bolandin', 'bullas',
-      'calatayud', 'campo-de-borja', 'cangas', 'carinena', 'catalunya', 'cava', 'cebreros', 'chozas-carrascal', 'cigales', 'conca-de-barbera',
-      'condado-de-huelva', 'costers-del-segre', 'dehesa-penalba', 'el-terrerazo', 'emporda', 'granada', 'jerez', 'jumilla', 'lebrija', 'leon',
+      'abadia-retuerta', 'abona', 'alella', 'alicante', 'arinzano', 'arlanza', 'arribes', 'ayles', 'bierzo', 'binissalem', 'bolandin',
+      'bullas', 'calatayud', 'campo-de-borja', 'cangas', 'carinena', 'catalunya', 'cava', 'cebreros', 'chozas-carrascal', 'cigales',
+      'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dehesa-penalba', 'el-hierro', 'el-terrerazo', 'emporda',
+      'gran-canaria', 'granada', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-palma', 'lanzarote', 'lebrija', 'leon',
       'los-balagueses', 'malaga', 'manzanilla', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'otazu', 'penedes', 'pla-de-bages',
       'pla-i-llevant', 'prado-de-irache', 'priorat', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja',
-      'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rueda', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tarragona',
-      'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'urbezo', 'uruena',
-      'utiel-requena', 'valdeorras', 'valencia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'yecla',
+      'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rueda', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano',
+      'tacoronte-acentejo', 'tarragona', 'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
+      'txakoli-getaria', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava',
+      'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

@@ -1,0 +1,165 @@
+{
+ "id": "abona",
+ "title": "Why Abona tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Abona's land faces the sun under the trade winds, so it is extraordinarily dry and relatively hot. That high heat gives its wines a great balance of alcohol and acidity.",
+  "cite": [
+   "abona-pliego:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "From Teide's edge to the sea",
+   "paras": [
+    "Abona covers the far south and south-east of Tenerife. It sits between Isora and the Valle de Güímar. The land runs down a gentle slope from the outer edge of the Teide National Park to the coast. It carries the great cirque of Las Cañadas on toward the sea. The cirque runs from Boca de Tauce to Montaña Guajara.",
+    "Castilians brought the vine, and the first vineyard on the island was planted in 1497. In Abona the first vines grew on the coast, where sugar cane could not. Until 1680 Canary wines enjoyed great fame in Europe. Outside the islands they were known as \"vino canario\", Canary wine, or \"vino malvasía canario\". Shakespeare mentions these wines in his plays."
+   ],
+   "cite": [
+    "abona-pliego:p7",
+    "abona-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "Teide",
+     "point": [
+      -16.6423,
+      28.2727
+     ],
+     "zoom": 9.5,
+     "caption": "Abona starts at the outer edge of the Teide National Park and runs down to the coast.",
+     "cite": [
+      "abona-pliego:p7"
+     ]
+    },
+    {
+     "label": "Montaña Guajara",
+     "point": [
+      -16.6123,
+      28.217
+     ],
+     "zoom": 10.5,
+     "caption": "The cirque of Las Cañadas runs from Boca de Tauce to Montaña Guajara, and Abona carries it on toward the sea.",
+     "cite": [
+      "abona-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "The dry side of the trade wind",
+   "paras": [
+    "Abona lies on the leeward side of the island, sheltered from the prevailing winds. The trade wind speeds up as it changes slope, and it loses its moisture. This is the main reason for the zone's great dryness.",
+    "There is no sea of clouds here, the layer of stratocumulus so typical of the island's north side. So temperatures rise and the sun shines more. The climate could be called warm with a dry summer.",
+    "Rain is very light, and it falls less and less toward the coast. Only above 1,000 m does an acceptable amount fall. The average temperature is above 22 ºC, with a great number of hours of sun a year.",
+    "Growers usually prefer the high ground for their vines, where altitude brings the average temperature down."
+   ],
+   "cite": [
+    "abona-pliego:p8",
+    "abona-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "White pumice, black lava",
+   "paras": [
+    "Pumice deposits cover a large part of the zone. These whitish piles alternate with basalt flows of Series III and IV, a landscape known as the Bandas del Sur, the southern bands. Darker volcanic cones, most of them from Series III, rise both inland and on the coast.",
+    "Long, deep barrancos, or ravines, cut through it all. They start at the line of summits along the southern rim of Las Cañadas.",
+    "The vineyard runs from 400 to 1,700 m, in two bands. The medianías, the middle slopes from 400 to 800 m, have very porous volcanic ground. It is highly hygroscopic and can soak up water from the moisture in the air. The best wines come from this black ground.",
+    "Above the medianías the ground is mulched with jable, and the vines reach 1,700 m at Vilaflor. Up here the vines stand on dark clay of high fertility. They are grown as bush vines, en vaso, which is exceptional in the whole Canary vineyard.",
+    "The deep ravines and the mountainous land give the wines great personality."
+   ],
+   "cite": [
+    "abona-pliego:p7",
+    "abona-pliego:p8",
+    "abona-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Vilaflor",
+     "point": [
+      -16.6473,
+      28.1588
+     ],
+     "zoom": 10.5,
+     "caption": "The upper vineyards reach 1,700 m at Vilaflor, a truly astonishing altitude for the vine.",
+     "cite": [
+      "abona-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Listán Blanca and seven kinds of wine",
+   "paras": [
+    "More than 1,000 ha of vineyard are registered. Listán Blanca is the most planted grape, joined by a great diversity of minor whites and reds. Malvasía volcánica and Malvasía aromática are among the preferred white grapes. Listán Negro, also called Almuñeco, and Negramoll are among the preferred reds.",
+    "Abona's still wines come in white and rosado. There are reds too. Sparkling wine needs at least 3.5 bar of pressure. Vino de aguja gasificado holds dissolved carbon dioxide at 1 to 2.5 bar, added in whole or in part.",
+    "Vino dulce clásico comes from overripe or sun-dried grapes, the asoleo, and keeps at least 45 g/l of sugar. Vino de licor starts from the same grapes, but added wine alcohol stops its fermentation. It also keeps at least 45 g/l of sugar, and reaches at least 17.50% vol in total.",
+    "How it tastes: Abona's wines are harmonious, with countless aromatic nuances and a mineral accent in all of them. The whites are aromatic, with hints of almond blossom and acacia. Despite the warm climate they keep a balanced natural acidity.",
+    "In short: every Abona wine shows the notes of wines from volcanic zones."
+   ],
+   "cite": [
+    "abona-pliego:p1",
+    "abona-pliego:p3",
+    "abona-pliego:p5",
+    "abona-pliego:p7",
+    "abona-pliego:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Tenerife",
+    "text": "Every label must show the name Abona prominently, and the word Tenerife prominently too."
+   },
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "At least 85% of the wine comes from grapes picked in the year named."
+   }
+  ],
+  "cite": [
+   "abona-pliego:p2",
+   "abona-pliego:p12"
+  ]
+ }
+}

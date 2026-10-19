@@ -4,8 +4,9 @@
   {
    "id": "lanzarote",
    "why": {
-    "text": "Native grapes grow on volcanic ash behind stone walls, coping with wind and 150 mm of rain. The wines are balanced and mineral.",
+    "text": "Native grapes grow on volcanic ash behind stone walls, coping with wind and under 150 mm of rain. The wines are balanced and mineral.",
     "cite": [
+     "lanzarote-pliego:p9",
      "lanzarote-doc:p6"
     ]
    },
@@ -67,8 +68,9 @@
     ]
    },
    "climate": {
-    "text": "Very little rain (150 mm) and wind; vines are shielded by low stone walls.",
+    "text": "Under 150 mm of rain a year, and wind almost all year; vines are shielded by low stone walls.",
     "cite": [
+     "lanzarote-pliego:p6",
      "lanzarote-doc:p6"
     ]
    },
@@ -225,8 +227,26 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Listán Negro"
+     },
+     {
+      "local": "Negramoll"
+     },
+     {
+      "local": "Listán Blanco"
+     },
+     {
+      "local": "Moscatel"
+     },
+     {
+      "local": "Malvasía"
+     }
+    ],
+    "cite": [
+     "tacoronte-acentejo-pliego:p7"
+    ],
     "others": [
      "Vijariego Negro",
      "Verdello",
@@ -390,16 +410,18 @@
      "sparkling",
      "sweet"
     ],
-    "text": "Dry and off-dry whites, rosado and reds; liqueur wines, classic sweet wines and needle wines.",
+    "text": "Dry, semi-dry, semi-sweet and sweet whites, rosado and reds; liqueur wines, classic sweet wines, quality sparkling wines, needle wines (also carbonated) and partly fermented grape must.",
     "cite": [
+     "valle-de-guimar-pliego:p1",
      "valle-de-guimar-doc:p1",
      "valle-de-guimar-doc:p2",
      "valle-de-guimar-doc:p3"
     ]
    },
    "climate": {
-    "text": "Rain from 161 mm to 504 mm at Izaña a year; very high sunshine, the most sun hours in Spain.",
+    "text": "Rain from 161 mm a year on the coast to 504 mm at Izaña in the high mountains; abundant sunshine, and Izaña records the most sun hours a year in Spain.",
     "cite": [
+     "valle-de-guimar-pliego:p9",
      "valle-de-guimar-doc:p8",
      "valle-de-guimar-doc:p9"
     ]
@@ -561,8 +583,11 @@
   {
    "id": "ycoden-daute-isora",
    "why": {
-    "text": "Slopes fall from Teide to the coast, from 1,400 to 50 m, on fertile volcanic soil. The vines get trade winds and strong sun.",
+    "text": "Vines climb from 50 to 1,400 m below Teide on deep, poor volcanic soil. Trade winds and the Atlantic current make countless microclimates.",
     "cite": [
+     "ycoden-daute-isora-pliego:p8",
+     "ycoden-daute-isora-pliego:p10",
+     "ycoden-daute-isora-pliego:p9",
      "ycoden-daute-isora-doc:p6"
     ]
    },
@@ -590,9 +615,17 @@
      "Sabro",
      "Torrontés",
      "Verdello",
-     "Vijariego Blanco"
+     "Vijariego Blanco",
+     "Castellana Negra",
+     "Malvasía Rosada",
+     "Negramoll",
+     "Tintilla",
+     "Bastardo (Baboso) Negro",
+     "Moscatel Negra",
+     "Vijariego Negro"
     ],
     "othersCite": [
+     "ycoden-daute-isora-pliego:p8",
      "ycoden-daute-isora-doc:p6",
      "ycoden-daute-isora-doc"
     ]
@@ -618,8 +651,9 @@
     ]
    },
    "soil": {
-    "text": "Volcanic; sandy-loam or loam, acid, fertile, low in sodium and potassium.",
+    "text": "Volcanic, mostly ash and volcanic rock; sandy-loam to loam, acid (pH about 6.2), deep and of low fertility, low in sodium and potassium.",
     "cite": [
+     "ycoden-daute-isora-pliego:p9",
      "ycoden-daute-isora-doc:p6"
     ]
    },
@@ -674,8 +708,9 @@
     "main": [],
     "cite": [],
     "others": [
+     "Albillo Criollo",
      "Bermejuela (Marmajuelo)",
-     "Vijariego Blanco",
+     "Vijariego Blanco (Diego)",
      "Verdello",
      "Tintilla",
      "Sabro",
@@ -684,14 +719,14 @@
      "Malvasía Volcánica",
      "Malvasía Rosada",
      "Malvasía Aromática (Malvasía de Sitges)",
-     "Listán Negro",
+     "Listán Negro (Almuñeco)",
      "Gual",
      "Forastera Blanca",
      "Doradilla",
      "Castellana Negra",
      "Bastardo (Baboso) Blanco",
      "Bastardo (Baboso) Negro",
-     "Brebal",
+     "Breval",
      "Burrablanca",
      "Cabernet Sauvignon",
      "Listán Blanco de Canarias",
@@ -707,6 +742,7 @@
      "Vijariego Negro"
     ],
     "othersCite": [
+     "islas-canarias-pliego:p6",
      "islas-canarias-doc:p6",
      "islas-canarias-doc:p10",
      "islas-canarias-doc:p11"
@@ -782,8 +818,14 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Listán Blanco de Canarias"
+     }
+    ],
+    "cite": [
+     "abona-pliego:p9"
+    ],
     "others": [
      "Bermejuela (Marmajuelo)",
      "Bastardo (Baboso) Negro",
@@ -845,8 +887,10 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Two bands: very porous, hygroscopic black volcanic ground in the medianías (400 to 800 m), where the best wines come from; higher up, dark, fertile clay mulched with jable, up to 1,700 m at Vilaflor.",
+    "cite": [
+     "abona-pliego:p9"
+    ]
    },
    "altitude": {
     "text": "Vineyards from 300 to 1,700 m.",
@@ -951,8 +995,9 @@
      "sparkling",
      "sweet"
     ],
-    "text": "Whites (including single-variety Forastera), rosados, reds (some carbonic maceration), liqueur, sparkling and sweet wines.",
+    "text": "Whites (including single-variety Forastera Blanca), rosados, reds (some carbonic maceration), liqueur, sparkling, naturally sweet, and traditional white/rosado (13 to 17 degrees, barrel-aged, at least 90% Forastera among the white grapes).",
     "cite": [
+     "la-gomera-pliego:p1",
      "la-gomera-doc:p1",
      "la-gomera-doc:p2",
      "la-gomera-doc:p3",
@@ -966,8 +1011,11 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Unlike the other Canary Islands: no new volcanic material in the last two million years. Ferralitic soils above 700 m, brown soils from 700 to 400 m, vertisols below 400 m. Acid and poor in salts.",
+    "cite": [
+     "la-gomera-pliego:p8",
+     "la-gomera-pliego:p10"
+    ]
    },
    "tastes": {
     "text": "Reds: picota red with violet tones; red fruit or floral; balanced, moderately tannic. Whites: greenish yellow to amber; fresh, balanced, fruity finish. Rosés: raspberry to onion-skin.",
@@ -1027,7 +1075,7 @@
     ],
     "others": [
      "Bermejuela (Marmajuelo)",
-     "Albillo",
+     "Albillo Criollo",
      "Vijariego Blanco",
      "Verdello",
      "Tintilla",
@@ -1042,8 +1090,8 @@
      "Doradilla",
      "Castellana Negra",
      "Bastardo (Baboso) Blanco",
-     "Bastardo (Baboso) Negro",
-     "Brebal",
+     "Bruñal (Bastardo Negro, Baboso Negro)",
+     "Breval",
      "Burrablanca",
      "Listán Blanco de Canarias",
      "Listán Prieto",
@@ -1053,6 +1101,8 @@
      "Vijariego Negro"
     ],
     "othersCite": [
+     "gran-canaria-pliego:p7",
+     "gran-canaria-doc2",
      "gran-canaria-doc:p6",
      "gran-canaria-doc"
     ]
@@ -1066,8 +1116,10 @@
      "sparkling",
      "sweet"
     ],
-    "text": "White, rosado and red wines; also liqueur, sparkling and classic sweet wines.",
+    "text": "White, rosado and red wines; also liqueur wine, sparkling wine and wine from overripe grapes (vino de uvas sobremaduras), which may be labelled Clásico.",
     "cite": [
+     "gran-canaria-pliego:p1",
+     "gran-canaria-pliego:p16",
      "gran-canaria-doc:p1",
      "gran-canaria-doc:p2"
     ]
@@ -1079,8 +1131,11 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Very fertile volcanic soils of many kinds and ages: porous volcanic ash, clays of low permeability and high fertility, hard basaltic ground from old eruptions, and very loose picón (lapilli).",
+    "cite": [
+     "gran-canaria-pliego:p8",
+     "gran-canaria-pliego:p10"
+    ]
    },
    "tastes": {
     "text": "Reds: garnet, cherry or ruby; red fruit, pepper, tobacco, dark chocolate; clove and vanilla when aged. Whites: pale straw, green rims; tropical fruit, apple, citrus, fennel, anise. Structured, broad, persistent.",
@@ -1092,7 +1147,7 @@
    "famous": {
     "styles": [
      {
-      "name": "Dulce clásico",
+      "name": "Vino de uvas sobremaduras (Clásico)",
       "text": "Pale yellow to gold; ripe or raisined white fruit, honeyed; sweet, unctuous."
      },
      {
@@ -1105,6 +1160,9 @@
      }
     ],
     "cite": [
+     "gran-canaria-pliego:p1",
+     "gran-canaria-pliego:p16",
+     "gran-canaria-doc2",
      "gran-canaria-doc:p3",
      "gran-canaria-doc:p4"
     ]

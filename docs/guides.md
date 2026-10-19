@@ -150,6 +150,7 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 - Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
   (release 38), eight Andalucía places (release 39), 11 Ebro places (PR #119), 11 Mediterranean
   places (Valencia, Utiel-Requena, Alicante, Los Balagueses, Yecla, Jumilla, Bullas, Tharsys, Chozas Carrascal, Vera de Estenas,
-  El Terrerazo; PR #123).
+  El Terrerazo; PR #123), 11 Canarias places (PR #124, incl. Islas Canarias,
+  a place outside Study: Terroir pending the owner's OK).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.
