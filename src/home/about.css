@@ -15,6 +15,25 @@
 .trace{padding-block:4.5rem;border-top:1px solid var(--line)}
 .trace h2{font-size:1.8rem;line-height:1.15}
 .ab .trace p{margin-top:.6rem;color:var(--ink2);font-size:1.05rem;max-width:42rem}
+.chain{position:relative;display:grid;grid-template-columns:1.05fr 1fr 1fr 1.3fr;gap:0 1.6rem;margin-top:1.6rem;align-items:start}
+.step{position:relative;padding-top:2.1rem;min-width:0}
+.step::before{content:"";position:absolute;left:0;right:-1.6rem;top:.6rem;height:3px;background:var(--foil)}
+.step:last-child::before{right:0}
+.step .lab{position:absolute;top:0;left:0;background:var(--bg);padding-right:.65rem;line-height:1.25rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.chain figure{margin:0;min-width:0}
+.pg{position:relative;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--bg)}
+.ab .pg img{width:100%;height:auto;display:block}
+.pg i{position:absolute;background:rgba(222,184,92,.5);mix-blend-mode:multiply;border-bottom:1.5px solid var(--foil-ink)}
+.chain figcaption{font-size:.88rem;line-height:1.4;margin-top:.5rem;color:var(--ink2)}
+.chain figcaption b{display:block;font-weight:600;color:var(--ink)}
+.chain figcaption span{color:var(--ink3)}
+.quote{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:1rem}
+.ab .trace .quote p{margin:0;max-width:none}
+.ab .trace .quote .sent{font-family:var(--serif);font-size:1.2rem;line-height:1.4;color:var(--ink)}
+.quote mark{background:linear-gradient(transparent 62%,var(--foil) 62%);color:inherit}
+.ab .trace .quote .cite{margin-top:.7rem;font-size:.82rem;line-height:1.45}
+.quote .cite a{color:var(--ink3);text-decoration:underline;text-underline-offset:2px}
+.ab .trace .credit{margin-top:1.6rem;font-size:.82rem;color:var(--ink3)}
 .fine{padding-block:2rem 3rem;border-top:1px solid var(--line)}
 .ab .fine p{font-size:.82rem;line-height:1.55;color:var(--ink3);max-width:44rem}
 @media (max-width:900px){
@@ -26,4 +45,10 @@
   .note p{font-size:1.3rem}
   .trace{padding-block:3rem}
   .trace h2{font-size:1.6rem}
+  .chain{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.75rem}
+  .step:nth-child(2)::before{right:0}
+}
+@media (max-width:520px){
+  .chain{grid-template-columns:minmax(0,1fr)}
+  .step::before{right:0}
 }
