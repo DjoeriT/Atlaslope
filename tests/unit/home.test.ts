@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
+import { fillGuideCount, guideCount } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
 const html = readFileSync('index.html', 'utf8');
@@ -14,7 +15,11 @@ describe('the home page', () => {
   it('counts the places and study regions the atlas has', () => {
     expect(count('places')).toBe(places.length);
     expect(count('regions')).toBe(regions.length);
-    expect(html).toContain(`${places.length} places in ${regions.length} study regions`);
+  });
+  it('fills in the number of places with a guide at build time', () => {
+    expect(guideCount()).toBeGreaterThan(0);
+    expect(html).toContain('data-count="guides">');
+    expect(fillGuideCount(html, 42)).toContain('Deep guides to <span data-count="guides">42</span> places');
   });
   it('sends links from before the website to the atlas', () => {
     expect(html).toMatch(/location\.replace\('atlas\/'/);

@@ -9,7 +9,8 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await page.goto('../');
   await expect(page).toHaveTitle('AtlaSlope · Know the land behind the glass');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');
-  await expect(page.locator('.hero .reach')).toContainText('Live now. More countries coming soon.');
+  await expect(page.locator('.closer')).toContainText('More countries are on their way.');
+  await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
   await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'About']);
   await expect(page.locator('.sitebar .search')).toHaveCount(0); // no search here: it could only throw you into the atlas (owner, 18 Oct)
