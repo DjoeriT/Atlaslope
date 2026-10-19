@@ -21,9 +21,8 @@ hosted coordinator never see this file; their part is `docs/env-cloud.md`. Check
   UI suite; locally run only the specs your change touches.
 - Homebrew's Python refuses `pip install`. `pdfplumber` lives in a git-ignored `.venv`: run `Tools/guides/unstrike.py` with
   `.venv/bin/python3`. Rebuild with `python3 -m venv .venv && .venv/bin/pip install pdfplumber`. The other guide scripts use plain `python3`.
-- No workflow runner: `Tools/guides/region.workflow.js` does not run here. Use the fallback in `docs/PROJECT.md` ("Run a region locally"):
-  one subagent per place with `pack.py write|check|sheet`.
-- `claude -p` (headless runs) is installed, for the region route's one fresh run per place (`docs/PROJECT.md`, "Run a region locally").
+- No workflow runner: `Tools/guides/region.workflow.js` does not run here. Regions use the local route in `docs/PROJECT.md` ("Run a region
+  locally"): a script starts one fresh headless `claude -p` run per place (installed here) with `pack.py write|check|sheet`.
 
 ## Keys and files
 - The Esri key is only in `.env.local`, which the owner fills in himself; check presence with `grep -c`. Without it the local map has no
