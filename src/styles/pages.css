@@ -250,7 +250,6 @@
 .pg-beat-body:not(.two) .pg-facts > .pg-zones,.pg-beat-body:not(.two) .pg-facts > .pg-h3{grid-column:1 / -1}
 .pg-beat-body:not(.two) .pg-facts > .pg-h3{margin-bottom:-1.2rem}
 .pg-zguide{grid-column:1 / -1}
-.pg-beat-body.two:has(.pg-zguide){grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 .pg-zguide img{display:block;width:calc(100% + 2.2rem);aspect-ratio:4/3;object-fit:cover;margin:-1.1rem -1.1rem .9rem;border-radius:var(--rad-card) var(--rad-card) 0 0}
 .pg-zguide > div{overflow:hidden}
 .pg-zguide b a{color:inherit;text-decoration:none}
@@ -298,3 +297,6 @@
 /* The jump bar fades at its right edge while more tabs sit beyond it. */
 .pg-jump{mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent);-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent)}
 .pg-beat h3,.pg-ch h4{scroll-margin-top:8rem}
+.pg-facts,.pg-fact,.pg-prose{min-width:0}
+.pg-facts .src,.pg-facts .pg-rows dd{overflow-wrap:anywhere}
+@media (max-width:47.5em){.pg-compare > div{grid-template-columns:5.5rem minmax(0,1fr)}}
