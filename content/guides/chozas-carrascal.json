@@ -1,0 +1,98 @@
+{
+ "id": "chozas-carrascal",
+ "title": "Why Chozas Carrascal tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chozas Carrascal is one of the coldest sites in its district, at 720 m and close to the Sierra Juan Navarro, where the prevailing north winds come from. In September and October, when the grapes ripen, the days and nights differ greatly in temperature, and that gap helps the wines reach a fittingly high alcohol with good acidity.",
+  "cite": [
+   "chozas-carrascal-doc:p3",
+   "chozas-carrascal-doc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A tilted plain between long hills",
+   "paras": [
+    "Chozas Carrascal is a pago, a wine name for one single site. It lies in the municipality of Requena, in Valencia, in the hamlet of San Antonio. The site sits inside the Utiel-Requena zone but is clearly set apart from it.",
+    "The site is a plain that tilts gently, with a slope of 6.5%. To the north, east and west rise higher hills shaped like long mesas. They are not joined, and the gaps leave two narrow gorges, to the northeast and the northwest. Gusts of north wind race through them at great speed. To the south the edge is the Vereda Real, where the central plateau of Requena begins. Sheltered by the higher hills, the site has a microclimate of its own.",
+    "The owner's land covers about 93 ha. Only 30 ha of it form the pago, because the neighbouring vineyards cannot give wines with the same character. For now there is a single producer. More wineries could use the name in future if they keep to its rules."
+   ],
+   "cite": [
+    "chozas-carrascal-doc:p3",
+    "chozas-carrascal-doc:p4",
+    "chozas-carrascal-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "San Antonio, Requena",
+     "point": [
+      -1.1532,
+      39.52
+     ],
+     "zoom": 11,
+     "caption": "The hamlet of Requena where the site lies.",
+     "cite": [
+      "chozas-carrascal-doc:p3"
+     ]
+    },
+    {
+     "label": "Sierra Juan Navarro",
+     "point": [
+      -1.0997,
+      39.5711
+     ],
+     "zoom": 10,
+     "caption": "The sierra the north winds blow from. Its spur to the southeast holds back rain clouds from the Mediterranean.",
+     "cite": [
+      "chozas-carrascal-doc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Cold wind, little rain, strong sun",
+   "paras": [
+    "The climate is continental, with a Mediterranean influence. Rain is low, around 350-400 litres a year, and most of it falls in September. The spur of the Sierra Juan Navarro to the southeast stops much of the rain-laden cloud from the Mediterranean. So less rain falls here than elsewhere in the district. The sun is very intense, with almost 3,000 hours a year or more.",
+    "Fresh north winds keep the highest temperatures lower. The natural barriers to the east and west keep the lowest temperatures higher, which spares the vines spring frosts. The average wind speed is lower, but the north gusts are very fast, and the air stays dry. Pests and diseases are low here."
+   ],
+   "cite": [
+    "chozas-carrascal-doc:p3",
+    "chozas-carrascal-doc:p4"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "A lime layer at 30 cm",
+   "paras": [
+    "The soil is basic to alkaline, with a pH above 8 and below 9. It is a loam that tends to clay loam or sandy loam, depending on the part of the estate. Organic matter is quite poor, around 1%, and organic amendments have to be added from time to time. Active lime runs between 7 and 21%, a notably high figure.",
+    "A layer of lime lies 30 cm down, and the roots go no deeper. The vines grow with less vigour and give less fruit, with smaller bunches and berries. The grapes are better for it. The wines take an earthy, mineral character. More skin to pulp makes them more aromatic."
+   ],
+   "cite": [
+    "chozas-carrascal-doc:p3",
+    "chozas-carrascal-doc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Foreign grapes, crowded vines",
+   "paras": [
+    "The vines are planted densely, in places more than 3,000 plants per hectare against the usual 1,600 in the district. The crowded plants compete, grow fewer roots and carry less fruit. No vine gives more than 4 kg.",
+    "This was the first site in the district to grow foreign grapes, planted in 1992. Six grapes are named for its wines. The whites are Chardonnay and Macabeo, also called Viura. The reds are Cabernet Franc and Syrah, with Bobal and Garnacha Tinta, also called Gironet.",
+    "Chozas Carrascal makes red wine, along with a white and a rosado. Reds are a blend of grapes or Cabernet Franc alone. Each grape is made separately, macerated for at least 14 days and kept in barrel for at least five months. Reds need at least 13% alcohol, against 10.5% for aged reds of Utiel-Requena.",
+    "The white is kept in steel or concrete tanks, with skin contact that depends on how ripe the grapes are. It ferments in oak barrels. The rosado takes the free-run juice of four grapes, kept cold and settled until all four are together. It ferments in steel and then macerates for at least three weeks in oak barrels."
+   ],
+   "cite": [
+    "chozas-carrascal-doc:p2",
+    "chozas-carrascal-doc:p3",
+    "chozas-carrascal-doc:p4",
+    "chozas-carrascal-doc:p5"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "valencia-pliego": "Review/sources/fetched/pliego-PDO-ES-A0872-valencia.txt",
+    "utiel-requena-pliego": "Review/sources/fetched/pliego-PDO-ES-A0874-utiel-requena.txt",
+    "alicante-pliego": "Review/sources/fetched/pliego-PDO-ES-A1526-alicante.txt",
+    "los-balagueses-pliego": "Review/sources/fetched/pliego-PDO-ES-A0941-los-balagueses.txt",
+    "tharsys-pliego": "Review/sources/fetched/pliego-PDO-ES-02086-tharsys.txt",
+    "yecla-pliego": "Review/sources/fetched/pliego-PDO-ES-A0606-yecla.txt",
+    "jumilla-pliego": "Review/sources/fetched/pliego-PDO-ES-A0109-jumilla.txt",
+    "bullas-pliego": "Review/sources/fetched/pliego-PDO-ES-A0536-bullas.txt",
+    "chozas-carrascal-doc": "Review/sources/fetched/oj-PDO-ES-N1637-C-2020-35-chozas-carrascal.txt",
+    "vera-de-estenas-doc": "Review/sources/fetched/oj-PDO-ES-N1665-C-2019-235-vera-de-estenas.txt",
+    "el-terrerazo-doc": "Review/sources/fetched/att-PDO-ES-A0940-28727.txt",
+    "tharsys-doc": "Review/sources/fetched/oj-PDO-ES-02980-C-2025-3093-tharsys.txt",
+    "valencia-doc2": "Review/sources/fetched/oj-PDO-ES-A0872-C-2024-7448-valencia.txt",
+    "utiel-requena-doc2": "Review/sources/fetched/oj-PDO-ES-A0874-C-2023-280-utiel-requena.txt",
+    "alicante-doc2": "Review/sources/fetched/oj-PDO-ES-A1526-C-2024-4680-alicante.txt",
+    "los-balagueses-doc2": "Review/sources/fetched/oj-PDO-ES-A0941-C-2025-510-los-balagueses.txt",
+    "yecla-doc2": "Review/sources/fetched/oj-PDO-ES-A0606-C-2024-3268-yecla.txt",
+    "jumilla-doc2": "Review/sources/fetched/oj-PDO-ES-A0109-C-2025-3208-jumilla.txt"
+  }
+}

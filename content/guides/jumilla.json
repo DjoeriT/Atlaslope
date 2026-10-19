@@ -1,0 +1,86 @@
+{
+ "id": "jumilla",
+ "title": "Why Jumilla tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Under Jumilla's hard conditions, Monastrell gives a robust red wine with deep colour. Its Monastrell liqueur wines are high in tannin, with colour from medium to very high, close to opaque, a result of the area's high temperatures.",
+  "cite": ["jumilla-pliego:p7"]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between La Mancha and the Levante",
+   "paras": [
+    "Jumilla lies in the southeast of the Iberian Peninsula, on the Altiplano Levantino. It is a land of transition between the plain of La Mancha and the gentle Mediterranean lands of the Levante.",
+    "Ranges that are not very high, at 900 to 1,372 m, have wide foothills. They frame stepped \"valles corredores\", or corridor valleys, where plains and gentle undulations appear.",
+    "The zone takes in the municipality of Jumilla in the province of Murcia. It also takes in several municipalities of the province of Albacete, Hellín and Ontur among them.",
+    "Seeds of Vitis vinifera found at sites such as the Chalcolithic settlement of El Prado show that the vine has been known here for more than 5,000 years. In the 19th century the wine trade with France brought an extraordinary growth of winegrowing and important technical progress in winemaking. The Estación Enológica de Jumilla, was founded in 1910 to advise on growing and winemaking and to research better vines. Jumilla became a Denominación de Origen in 1961."
+   ],
+   "cite": ["jumilla-pliego:p4", "jumilla-pliego:p5", "jumilla-pliego:p6"],
+   "fly": [
+    {
+     "label": "The Altiplano",
+     "point": [-1.2575, 38.5188],
+     "zoom": 9,
+     "caption": "The Altiplano Levantino, a land of transition between the plain of La Mancha and the Mediterranean Levante.",
+     "cite": ["jumilla-pliego:p5"]
+    },
+    {
+     "label": "Jumilla town",
+     "point": [-1.3285, 38.4735],
+     "zoom": 11,
+     "caption": "Vine seeds found in this municipality show the vine has been known here for more than 5,000 years.",
+     "cite": ["jumilla-pliego:p5"]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Continental, though the sea is near",
+   "paras": [
+    "The Mediterranean is relatively near, yet the climate is clearly continental. It is dry, with barely 300 litres of rain per square metre a year on average. The rain falls unevenly. Its peak comes in autumn downpours that are sometimes torrential, and a smaller peak comes in April.",
+    "Summer highs at times go well over 40 degrees. Winter lows at times come close to -10 ºC. The average yearly temperature is 16 ºC. Frosts normally come from November to March, and now and then in October or April.",
+    "Evaporation is high and the light very strong, with about 3,000 hours of sun a year. Heavy dews are another of its main features.",
+    "The climate is very dry and extreme, with little water for irrigation. The same conditions mean fungal diseases such as oidium are very rare or absent."
+   ],
+   "cite": ["jumilla-pliego:p5", "jumilla-pliego:p6"]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Stony limestone that stores the rain",
+   "paras": [
+    "Vineyards run from 320 to 900 m above sea level.",
+    "The soils are brown and reddish-brown, and limy in nature. They are loam and sandy loam, loose and stony, and poor in organic matter and nutrients. They are normally deep. At times a limestone crust at or near the surface must be broken by machine before the land can be used.",
+    "These soils were carried down from the surrounding mountains as stony limy deposits, between the late Tertiary and the early Quaternary. They are alkaline and well aired. They have a notable capacity to hold water and moderate permeability. With their depth, this suits the vines very well, above all in long droughts, when the vines can use the water stored in them.",
+    "Many of the soils are sandy-clay, and this has limited the spread of phylloxera here."
+   ],
+   "cite": ["jumilla-pliego:p5", "jumilla-pliego:p6"]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Monastrell first",
+   "paras": [
+    "Monastrell is the main grape. More than 70 per cent of the vineyard is Monastrell, a very rustic vine perfectly adapted to the area. It stands up to drought and strong summer heat. It also resists spring frosts.",
+    "Its bunches are small, and its round berries are small and dark. The skin is thick and rich in colour. The pulp is very fleshy and colourless.",
+    "All this explains why red wines matter so much here, in quality and in quantity. They are broad and fleshy, with good alcohol and acidity matched with these traits. Their fruity aroma of ripe fruit is very personal, and their astringency is very well integrated.",
+    "The other authorised grapes are an ideal complement to Monastrell. They give it steadier colour and more acidity, and they help it age. Wineries get very attractive results with moderate ageing in quality oak.",
+    "Monastrell also makes broad rosados, extraordinarily fruity with fresh acidity, though they are hard to make.",
+    "Jumilla Monastrell must hold at least 85% Monastrell, and it comes as red, rosado or white. Plain Jumilla comes in the same three colours. In both, reds hold at least 95% of the authorised red grapes. Rosados hold at least 50% of them. Whites hold at least 85% wine from white grapes such as Airén and Macabeo, unless they are blanc de noirs.",
+    "Jumilla Dulce is a sweet red, rosado or white in which sweetness dominates the acidity.",
+    "The vino de licor is a fortified red made only from Monastrell. Neutral grape spirit is added to the partly fermented must or to the wine, and the acquired strength is 15 to 22% vol."
+   ],
+   "cite": ["jumilla-pliego:p1", "jumilla-pliego:p2", "jumilla-pliego:p3", "jumilla-pliego:p4", "jumilla-pliego:p7"]
+  }
+ ],
+ "label": {
+  "terms": [
+   {"term": "Viña vieja", "text": "Old vines: at least 85% of the grapes come from vineyards at least 30 years old, shown in the vineyard records."},
+   {"term": "Blanc de noirs", "text": "A white made only from authorised red grapes, and the label must say so."}
+  ],
+  "cite": ["jumilla-pliego:p4", "jumilla-pliego:p9"]
+ }
+}
