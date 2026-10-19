@@ -67,6 +67,8 @@ p{text-wrap:pretty}
 .gcard .go{display:flex;gap:.75rem;align-items:center;margin-top:.3rem;font-size:.75rem;color:var(--ink3)}
 .gcard .fb{display:inline-flex;align-items:center;height:32px;padding:0 .8rem;border-radius:var(--r-btn);background:var(--band);color:var(--foil);font-weight:600;font-size:.8rem}
 .gcard:hover .fb{background:#2A2722}
+.gcard:focus-visible{outline-offset:-3px} /* the card clips its corners, so the ring sits inside */
+.hero .map figcaption a{color:inherit}
 .nums{display:flex;gap:2.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
 .nums div{margin:0}
 .nums dt{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1}
@@ -104,6 +106,7 @@ p{text-wrap:pretty}
 .trio figcaption{padding-top:1rem}
 .trio h3{font-size:1.45rem;letter-spacing:-.01em;margin:0 0 .35rem}
 .trio p{margin:0;color:var(--ink2);font-size:.98rem;max-width:26rem}
+.screens .credit{font-size:.7rem;line-height:1.4;color:var(--ink3);margin:1.25rem 0 0}
 
 /* featured guide: one block, photos left and a teaser right (owner round 3: "less is more") */
 .guide{background:var(--bg2);padding-block:6rem}
