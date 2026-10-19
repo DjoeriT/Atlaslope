@@ -29,3 +29,11 @@ Rules
 - Acidity higher, from low sun and cool summers. p10 "La menor insolación ... las frescas temperaturas medias del verano ... la acidez total final de los vinos sea más alta que la de otras zonas"
 - Notes. p9 "Notas de Fruta Blanca, Cítricos y Herbáceos"
 - Aroma medium, very complex; bitter finish. p10 "intensidad aromática media, pero muy complejos ... lenta maduración"; "Amargor final ... producida por las variedades principales: Hondarrabi Zuri y Hondarrabi Zuri Zerratia"
+
+Label
+- Berezia (p4): "Serán txakolis envejecidos con un periodo mínimo de crianza de 5 meses en depósitos construidos en materiales diversos como cemento, cerámica, madera"; "calificación se iniciará a partir del 1 de mayo del año siguiente al de su cosecha"
+- Aparta (p4): "aquellos que han tenido un proceso de elaboración especial como la maceración carbónica, sin sulfuros o elaborados con sus pieles, y que además se someten al proceso de envejecimiento"
+- Fermentado en Barrica (p4): "fermentación y transformación mosto-vino en barricas de madera con una capacidad máxima de 600 litros"
+- Single grape name (p4): "nombre de una única variedad ... recomendadas ... mínimo del 85 %"
+- Vendimia tardía (p13): "uva sobremadurada ... Graduación alcohólica adquirida (mínima): 12 % Vol. ... azúcares reductores comprendido entre 60 gr/l y 150 gr/l"
+- Espumoso (p13): "Presión en envases conservados a 20ºC igual o superior a 3 bar. Grado alcohólico adquirido igual o superior a 10"

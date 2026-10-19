@@ -4,7 +4,44 @@
   "minutes": 3,
   "lede": {
     "text": "Mild, wet Atlantic weather and poor granite soils. More than 96% of the grapes are Albariño, which makes sugar and keeps an unusual amount of acidity.",
-    "cite": ["rias-baixas-pliego:p12", "rias-baixas-pliego:p14"]
+    "cite": [
+      "rias-baixas-pliego:p12",
+      "rias-baixas-pliego:p14"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Rías Baixas Albariño",
+        "text": "The wine is 100% Albariño."
+      },
+      {
+        "term": "Rías Baixas Condado do Tea",
+        "text": "The wine comes from the Condado do Tea subzone and has at least 70% Albariño and Treixadura."
+      },
+      {
+        "term": "Subzone name",
+        "text": "A subzone name may go on the label only if all the grapes come from that subzone and the wine is made there."
+      },
+      {
+        "term": "Rías Baixas barrica",
+        "text": "A white wine that spent time in wooden containers of up to 600 litres, with the time in months or years on the label."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine made only by a second fermentation in the bottle."
+      },
+      {
+        "term": "Brut nature",
+        "text": "A sparkling wine with 0 to 3 g/l of sugar and no sugar added after disgorging."
+      }
+    ],
+    "cite": [
+      "rias-baixas-pliego:p6",
+      "rias-baixas-pliego:p8",
+      "rias-baixas-pliego:p9",
+      "rias-baixas-pliego:p17"
+    ]
   },
   "chapters": [
     {
@@ -17,13 +54,20 @@
         "The zone has five subzones: Condado do Tea, O Rosal, Ribeira do Ulla, Soutomaior and Val do Salnés.",
         "Holdings are tiny. The 4,300 hectares are split into 22,800 plots, worked by more than 5,000 growers (2022 data)."
       ],
-      "cite": ["rias-baixas-pliego:p10", "rias-baixas-pliego:p11", "rias-baixas-pliego:p12", "rias-baixas-pliego:p13"],
+      "cite": [
+        "rias-baixas-pliego:p10",
+        "rias-baixas-pliego:p11",
+        "rias-baixas-pliego:p12",
+        "rias-baixas-pliego:p13"
+      ],
       "fly": [
         {
           "label": "Rías Baixas",
           "place": "rias-baixas",
           "caption": "A low, coastal zone, rarely above 300 m, with five subzones.",
-          "cite": ["rias-baixas-pliego:p12"]
+          "cite": [
+            "rias-baixas-pliego:p12"
+          ]
         }
       ]
     },
@@ -38,13 +82,17 @@
         "Spring and summer temperature and humidity make the vine very leafy.",
         "At ripening there is not much sun, and temperatures are middling. Rain falls less, and the vines feel a slight water stress."
       ],
-      "cite": ["rias-baixas-pliego:p12"],
+      "cite": [
+        "rias-baixas-pliego:p12"
+      ],
       "fly": [
         {
           "label": "Rías Baixas",
           "place": "rias-baixas",
           "caption": "About 1,300 mm of rain a year, much less of it in summer.",
-          "cite": ["rias-baixas-pliego:p12"]
+          "cite": [
+            "rias-baixas-pliego:p12"
+          ]
         }
       ]
     },
@@ -58,7 +106,9 @@
         "They are acid, poor in nutrients and fairly shallow. They hold little water and tend to dry out in summer. Only depth limits the roots.",
         "Growers have long worked to limit erosion and soil damage. They fertilise sensibly, and the soils respond to it very well."
       ],
-      "cite": ["rias-baixas-pliego:p12"]
+      "cite": [
+        "rias-baixas-pliego:p12"
+      ]
     },
     {
       "id": "rules",
@@ -72,7 +122,13 @@
         "Its wines have many aromas: apple, citrus, rose, ripe fruit and herbs. The pliego says the wines are known more for the strength and range of their acidity and for aroma than for alcohol.",
         "The traditional training is the pergola. It keeps the foliage away from the soil, which limits fungal disease in a humid place. It also uses sunlight better and helps manage vigour."
       ],
-      "cite": ["rias-baixas-pliego:p11", "rias-baixas-pliego:p12", "rias-baixas-pliego:p13", "rias-baixas-pliego:p14", "rias-baixas-pliego:p15"]
+      "cite": [
+        "rias-baixas-pliego:p11",
+        "rias-baixas-pliego:p12",
+        "rias-baixas-pliego:p13",
+        "rias-baixas-pliego:p14",
+        "rias-baixas-pliego:p15"
+      ]
     }
   ]
 }

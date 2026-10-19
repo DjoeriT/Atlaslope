@@ -22,3 +22,8 @@ Rules
 - p14 "variedades autóctonas muy adaptadas ... gran riqueza aromática, ... frescos y corpulentos y ... buen equilibrio entre alcohol y acidez"
 - p15 "se vendimia manualmente en el momento en que, a su juicio, está en el óptimo de madurez ... métodos tradicionales, con bajos rendimientos en la extracción de mosto, ... moderna tecnología enológica"
 - p13 "vaso griego ... nuevas plantaciones ... espaldera a doble cordón para facilitar el laboreo y la recolección"
+
+Label
+- Rosado (p10): "rosados Monterrei estarán elaborados con un mínimo del 85 % de uvas de variedades tintas"
+- Crianza, Reserva, Gran Reserva (p10, p17): "deben haber sido sometidos a un proceso de envejecimiento de acuerdo con los requisitos recogidos en la base de datos electrónica E-Ambrosia de la Unión Europea"
+- Barrica (p10, p17): "deberá ajustarse a lo establecido en el anexo III del Real decreto 1363/2011"

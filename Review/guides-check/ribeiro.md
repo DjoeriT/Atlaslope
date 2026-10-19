@@ -29,3 +29,9 @@ Rules
 - p21 "variedades principales ... identifican ... la denominación ... sistemas de diferenciación ... requisitos de producción y elaboración como en el etiquetado"
 - p20-21 "blancas ... las más abundantes ... Treixadura ... frescos y afrutados, de color entre amarillo pálido y amarillo dorado, que se consumen en su mayoría en el primer o segundo año"; reds "rojo violáceo y el rojo cereza, ... frescos, intensos y equilibrados, ... jóvenes"
 - p21 sparkling early 1980s traditional method; tostado "pasificación en locales con ventilación natural"
+
+Label
+- Castes (p12): "Los vinos Ribeiro castes deberán estar elaborados exclusivamente con variedades principales"
+- Barrica (p12): "en algún momento de su elaboración hubiesen estado contenidos en barrica de un volumen máximo de seiscientos litros ... exclusivamente con variedades principales"
+- Espumoso (p12-13): "elaborados exclusivamente con variedades principales ... método tradicional, en sus tipos brut y brut nature"
+- Tostado (p13): "período de secado ... mínima de tres meses"; "maduración en cubas de madera de roble o de cerezo ... no sea inferior a seis meses"; "maduración en botella no inferior a tres meses"

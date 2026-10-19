@@ -4,7 +4,35 @@
   "minutes": 3,
   "lede": {
     "text": "Ribeiro sits where Galicia's Atlantic and Mediterranean climates meet, shielded from the ocean by mountains. The pliego calls it a limit zone for viticulture, and the wines are fresh and fruity.",
-    "cite": ["ribeiro-pliego:p16", "ribeiro-pliego:p21", "ribeiro-pliego:p22"]
+    "cite": [
+      "ribeiro-pliego:p16",
+      "ribeiro-pliego:p21",
+      "ribeiro-pliego:p22"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Castes",
+        "text": "A wine made only from principal grape varieties."
+      },
+      {
+        "term": "Barrica",
+        "text": "A wine that was held in a barrel of up to 600 litres at some point, made only from principal varieties."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine made only from principal varieties by the traditional method, as brut or brut nature."
+      },
+      {
+        "term": "Tostado",
+        "text": "A naturally sweet wine from grapes dried for at least three months, then aged at least six months in oak or cherry wood and three months in bottle."
+      }
+    ],
+    "cite": [
+      "ribeiro-pliego:p12",
+      "ribeiro-pliego:p13"
+    ]
   },
   "chapters": [
     {
@@ -18,13 +46,21 @@
         "The zone covers nine municipalities in full, and parishes and places in others.",
         "The terrain is rough. The pliego says it often almost forces the vine on the land."
       ],
-      "cite": ["ribeiro-pliego:p13", "ribeiro-pliego:p16", "ribeiro-pliego:p17", "ribeiro-pliego:p22"],
+      "cite": [
+        "ribeiro-pliego:p13",
+        "ribeiro-pliego:p16",
+        "ribeiro-pliego:p17",
+        "ribeiro-pliego:p22"
+      ],
       "fly": [
         {
           "label": "Ribeiro",
           "place": "ribeiro",
           "caption": "Mountains on the west shield the zone from Atlantic storms, 45 km from the ocean.",
-          "cite": ["ribeiro-pliego:p16", "ribeiro-pliego:p22"]
+          "cite": [
+            "ribeiro-pliego:p16",
+            "ribeiro-pliego:p22"
+          ]
         }
       ]
     },
@@ -40,13 +76,20 @@
         "The pliego calls this almost marginal viticulture. The fruit has some trouble ripening. Alcohol and phenolic ripeness arrive together, and the acidity stays fresh, with tartaric acid ahead of malic.",
         "Mildew is a constant risk, so growers must always watch for it."
       ],
-      "cite": ["ribeiro-pliego:p15", "ribeiro-pliego:p16", "ribeiro-pliego:p22"],
+      "cite": [
+        "ribeiro-pliego:p15",
+        "ribeiro-pliego:p16",
+        "ribeiro-pliego:p22"
+      ],
       "fly": [
         {
           "label": "Ribeiro",
           "place": "ribeiro",
           "caption": "A big gap between day and night temperatures slows ripening.",
-          "cite": ["ribeiro-pliego:p16", "ribeiro-pliego:p22"]
+          "cite": [
+            "ribeiro-pliego:p16",
+            "ribeiro-pliego:p22"
+          ]
         }
       ]
     },
@@ -61,7 +104,11 @@
         "Nearly all the vineyard soil is terraced. The terraces add depth, ease the slope and help with work and sun.",
         "Growers have farmed and improved these soils for generations, and have fertilised them heavily for a long time. The pliego calls them anthropic soils."
       ],
-      "cite": ["ribeiro-pliego:p17", "ribeiro-pliego:p18", "ribeiro-pliego:p22"]
+      "cite": [
+        "ribeiro-pliego:p17",
+        "ribeiro-pliego:p18",
+        "ribeiro-pliego:p22"
+      ]
     },
     {
       "id": "rules",
@@ -75,7 +122,12 @@
         "The reds run from violet red to cherry red. They are fresh, intense and balanced, and are also drunk young.",
         "Sparkling wine has been made since the early 1980s, by the traditional method. Tostado is a sweet wine from the best grapes, dried in naturally ventilated rooms."
       ],
-      "cite": ["ribeiro-pliego:p14", "ribeiro-pliego:p15", "ribeiro-pliego:p20", "ribeiro-pliego:p21"]
+      "cite": [
+        "ribeiro-pliego:p14",
+        "ribeiro-pliego:p15",
+        "ribeiro-pliego:p20",
+        "ribeiro-pliego:p21"
+      ]
     }
   ]
 }

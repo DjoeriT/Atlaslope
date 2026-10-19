@@ -9,6 +9,38 @@
       "txakoli-bizkaia-pliego:p10"
     ]
   },
+  "label": {
+    "terms": [
+      {
+        "term": "Berezia",
+        "text": "A txakoli aged at least 5 months in tanks of materials such as cement, ceramic or wood, and sold from 1 May of the year after harvest."
+      },
+      {
+        "term": "Aparta",
+        "text": "A Berezia made by a special method, such as carbonic maceration, without sulphur or on its skins, and then aged."
+      },
+      {
+        "term": "Fermentado en Barrica",
+        "text": "A Berezia that fermented, and turned from must to wine, in wooden barrels of up to 600 litres."
+      },
+      {
+        "term": "Single grape name",
+        "text": "A wine sold under one grape's name must contain at least 85% of a recommended variety."
+      },
+      {
+        "term": "Vendimia tardía",
+        "text": "A late-harvest wine from overripe grapes, with at least 12% alcohol and 60 to 150 g/l of sugar."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine, at 20 °C a pressure of at least 3 bar and at least 10% alcohol."
+      }
+    ],
+    "cite": [
+      "txakoli-bizkaia-pliego:p4",
+      "txakoli-bizkaia-pliego:p13"
+    ]
+  },
   "chapters": [
     {
       "id": "place",

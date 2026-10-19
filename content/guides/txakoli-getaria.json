@@ -8,6 +8,34 @@
       "txakoli-getaria-pliego:p5"
     ]
   },
+  "label": {
+    "terms": [
+      {
+        "term": "Fermentado en Barrica",
+        "text": "The wine must have fermented, and turned from must to wine, in barrels."
+      },
+      {
+        "term": "Single grape name",
+        "text": "A wine sold under one grape's name must contain at least 85% of a recommended variety."
+      },
+      {
+        "term": "Rosé",
+        "text": "A rosé must be made with at least 50% of the recommended red variety."
+      },
+      {
+        "term": "Vendimia tardía",
+        "text": "The place name Getaria may go with this term for wines from overripe grapes, with at least 12% alcohol."
+      },
+      {
+        "term": "Espumoso",
+        "text": "The place name Getaria may be used for sparkling wine from registered vineyards, made in registered wineries."
+      }
+    ],
+    "cite": [
+      "txakoli-getaria-pliego:p2",
+      "txakoli-getaria-pliego:p7"
+    ]
+  },
   "chapters": [
     {
       "id": "place",

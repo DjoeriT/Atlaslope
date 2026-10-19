@@ -27,3 +27,10 @@ Rules
 - Lees, temp control, CO2. p4 "Tradicionalmente se ha elaborado sobre las propias lías con un control de la temperatura en todo el proceso, conservando parte del CO2 natural"
 - Result. p5 "una graduación que ronda los 11,5º y con una acidez en tartárico superior a 7 gr/l, dando lugar a un Txakoli fresco y ligero"
 - Lede sea 95% p5; "fresco y ligero" p5.
+
+Label
+- Fermentado en Barrica (p2): "indicación «Fermentado en Barrica» deberán haber realizado su fermentación y transformación mosto-vino en barricas"
+- Single grape name (p2): "nombre de una única variedad ... mínimo del 85%"
+- Rosé (p2): "vinos rosados ... mínimo del 50% de la variedad tinta recomendada"
+- Vendimia tardía (p7): "región determinada Getaria podrá emplearse junto con la mención vendimia tardía ... uva sobremadura ... graduación alcohólica adquirida (mínima) de 12% vol."
+- Espumoso (p7): "podrá emplearse para designar los vinos espumosos obtenidos de uva procedente de viñedos inscritos y elaborados en las bodegas acogidas"

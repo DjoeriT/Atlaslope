@@ -22,3 +22,9 @@ Rules
 - Bunches, mildew. p5 "racimos pequeños, prietos y de gruesos hollejos"; "resistentes al mildiu ... zona con un riesgo alto"
 - Acidity. p5 "Acidez Total Tartárica entre 9 y 12 g/l; Acidez Volátil Acética por debajo de 1 g/l y un pH de alrededor de 3"
 - Palate. p6 "acidez que no es excesiva pero tampoco insuficiente, ligero amargor"; p5 "Sabores cítricos y herbáceos"; p6 "matices de verde a amarillo pajizo"
+
+Label
+- Berezia (p2): "Son txakolis envejecidos, con un período mínimo de crianza de 5 meses. Su calificación se iniciará a partir del 1 de mayo del año siguiente al de su cosecha"
+- Single grape name (p4): "nombre de una única variedad ... mínimo del 85%"
+- Vendimia tardía (p8): "uva sobremadura ... con un grado alcohólico natural superior a 15% Vol."
+- Espumoso (p9): "Presión en envases conservados a 20ºC igual o superior a 3 bar"; "Graduación alcohólica adquirida (mínima): 10 % Vol."

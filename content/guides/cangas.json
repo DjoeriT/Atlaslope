@@ -9,6 +9,29 @@
       "cangas-pliego:p5"
     ]
   },
+  "label": {
+    "terms": [
+      {
+        "term": "Vino de Calidad con Indicación Geográfica",
+        "text": "This traditional term may replace \"Denominación de Origen Protegida\" on the label."
+      },
+      {
+        "term": "Crianza, Reserva, Gran Reserva, Añejo, Noble",
+        "text": "These five traditional terms may be used on Cangas wines."
+      },
+      {
+        "term": "Barrica, Roble",
+        "text": "These two terms may be used if the wine meets the conditions of the Spanish labelling decree (Real Decreto 1363/2011, Annex III)."
+      },
+      {
+        "term": "Harvest year",
+        "text": "The vintage year must appear on every protected wine, even if it was not aged."
+      }
+    ],
+    "cite": [
+      "cangas-pliego:p9"
+    ]
+  },
   "chapters": [
     {
       "id": "place",

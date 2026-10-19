@@ -4,7 +4,43 @@
   "minutes": 3,
   "lede": {
     "text": "Vines grow on terraced canyon walls above the Miño and the Sil. The climate is more continental than Atlantic, and the soils are slate and granite.",
-    "cite": ["ribeira-sacra-pliego:p11", "ribeira-sacra-pliego:p12"]
+    "cite": [
+      "ribeira-sacra-pliego:p11",
+      "ribeira-sacra-pliego:p12"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Súmmum",
+        "text": "A wine made with at least 85% of the principal grape varieties."
+      },
+      {
+        "term": "Tinto",
+        "text": "A red Ribeira Sacra must contain at least 70% Mencía."
+      },
+      {
+        "term": "Rosado",
+        "text": "A rosé must contain at least 85% of principal red varieties, so it is always Súmmum."
+      },
+      {
+        "term": "Barrica",
+        "text": "A wine aged at least 6 months (red, in barrels up to 500 litres) or 3 months (white, in wooden barrels up to 600 litres)."
+      },
+      {
+        "term": "Guarda",
+        "text": "A wine aged at least 7 months (red) or 4 months (white) in tanks of wood, concrete or other permitted materials, but not steel or polyester."
+      },
+      {
+        "term": "Subzone name",
+        "text": "A subzone may be named only if all the grapes come from it and the wine is made there."
+      }
+    ],
+    "cite": [
+      "ribeira-sacra-pliego:p6",
+      "ribeira-sacra-pliego:p7",
+      "ribeira-sacra-pliego:p19"
+    ]
   },
   "chapters": [
     {
@@ -16,13 +52,18 @@
         "It follows the banks of the Miño and the Sil, from Portomarín to A Peroxa and from Os Peares to Quiroga. The two rivers run to their meeting point through steep gorges or canyons.",
         "The land forces the vines onto terraces. They go by the names bancales, muras and terrazas. The slopes are very steep, so the pliego calls this \"heroic viticulture\"."
       ],
-      "cite": ["ribeira-sacra-pliego:p8", "ribeira-sacra-pliego:p11"],
+      "cite": [
+        "ribeira-sacra-pliego:p8",
+        "ribeira-sacra-pliego:p11"
+      ],
       "fly": [
         {
           "label": "Ribeira Sacra",
           "place": "ribeira-sacra",
           "caption": "The vineyards follow the Miño and the Sil, where the rivers cut steep canyons.",
-          "cite": ["ribeira-sacra-pliego:p11"]
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
         }
       ]
     },
@@ -37,13 +78,18 @@
         "The average temperature is 11.3 °C. The average high is 17.1 °C and the average low is 6.9 °C.",
         "Winds can blow hard, helped by the layout of the valleys. Average relative humidity is 70.6%. The sun shines about 166 hours a month."
       ],
-      "cite": ["ribeira-sacra-pliego:p11", "ribeira-sacra-pliego:p12"],
+      "cite": [
+        "ribeira-sacra-pliego:p11",
+        "ribeira-sacra-pliego:p12"
+      ],
       "fly": [
         {
           "label": "Ribeira Sacra",
           "place": "ribeira-sacra",
           "caption": "Rain is 700 to 800 mm a year, with more in the Miño subzones than in the Sil valley.",
-          "cite": ["ribeira-sacra-pliego:p12"]
+          "cite": [
+            "ribeira-sacra-pliego:p12"
+          ]
         }
       ]
     },
@@ -58,7 +104,10 @@
         "On the sunny bank the vineyards run down in terraces to the river. The shaded slopes are covered by deciduous trees, mostly oak and chestnut.",
         "The pliego says the soils set the wine's minerality. They also bring out different expressions and concentrations of fruit."
       ],
-      "cite": ["ribeira-sacra-pliego:p12", "ribeira-sacra-pliego:p15"]
+      "cite": [
+        "ribeira-sacra-pliego:p12",
+        "ribeira-sacra-pliego:p15"
+      ]
     },
     {
       "id": "rules",
@@ -72,7 +121,12 @@
         "Godello is the most common white grape, with Treixadura and Albariño. The whites run from pale yellow to gold. They smell of pome and stone fruit, with a good balance of acidity and alcohol.",
         "Maturity depends on aspect to the sun and on altitude."
       ],
-      "cite": ["ribeira-sacra-pliego:p10", "ribeira-sacra-pliego:p11", "ribeira-sacra-pliego:p15", "ribeira-sacra-pliego:p16"]
+      "cite": [
+        "ribeira-sacra-pliego:p10",
+        "ribeira-sacra-pliego:p11",
+        "ribeira-sacra-pliego:p15",
+        "ribeira-sacra-pliego:p16"
+      ]
     }
   ]
 }

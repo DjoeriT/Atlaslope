@@ -25,3 +25,11 @@ Rules
 - Reds p15 "Mencía es la variedad mayoritaria ... capa media alta ... rojo cereza al rojo con ribetes púrpura ... frutos rojos (de bosque) y ... fruta de hueso ... francos y equilibrados, amplios y de gran persistencia"
 - Whites p15 "Godello, Treixadura y Albariño, ... la primera ... la más abundante ... amarillo pálido al dorado ... frutos blancos de pepita y hueso ... gran equilibrio entre acidez y alcohol"
 - p15 "La maduración tiene mucho que ver con la orientación al sol y la altitud"
+
+Label
+- Súmmum (p6): "Súmmum estarán elaborados como mínimo con un 85 % de variedades de las consideradas principales"
+- Tinto (p6): "tintos deben estar elaborados al menos con un 70 % de la variedad mencía"
+- Rosado (p6): "Rosados ... mínimo con un 85 % de variedades tintas de las consideradas principales, por lo tanto, pertenecerán siempre a la categoría Súmmum"
+- Barrica (p7): "tintos ... mínimo de 6 meses en barricas de hasta 500 litros; blancos ... mínimo de 3 meses en barricas de madera de hasta 600 litros"
+- Guarda (p7): "mínimo de 7 meses en tintos y 4 meses en blancos en depósitos de madera, hormigón u otros materiales ... distintos del acero y el poliéster"
+- Subzone name (p19): "mención a la subzona ... si toda la uva procede de dicha subzona y la elaboración se produce en ella"

@@ -4,7 +4,29 @@
   "minutes": 2,
   "lede": {
     "text": "Monterrei has hot, dry summers, cold winters and big swings in temperature. The pliego says the local grapes thrive in these conditions.",
-    "cite": ["monterrei-pliego:p14"]
+    "cite": [
+      "monterrei-pliego:p14"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Rosado",
+        "text": "A rosé must be made with at least 85% red grapes."
+      },
+      {
+        "term": "Crianza, Reserva, Gran Reserva",
+        "text": "These terms are allowed only after ageing that meets the EU E-Ambrosia requirements for them."
+      },
+      {
+        "term": "Barrica",
+        "text": "The term is allowed if the wine meets the conditions of the Spanish labelling decree (Real Decreto 1363/2011, Annex III)."
+      }
+    ],
+    "cite": [
+      "monterrei-pliego:p10",
+      "monterrei-pliego:p17"
+    ]
   },
   "chapters": [
     {
@@ -16,13 +38,18 @@
         "The pliego splits the zone into two subzones: the Monterrei valley and the Monterrei hillside.",
         "The valley subzone takes in parishes of four municipalities: Castrelo do Val, Monterrei, Oímbra and Verín. The hillside subzone includes the municipality of Vilardevós and parishes of several others."
       ],
-      "cite": ["monterrei-pliego:p11", "monterrei-pliego:p14"],
+      "cite": [
+        "monterrei-pliego:p11",
+        "monterrei-pliego:p14"
+      ],
       "fly": [
         {
           "label": "Monterrei",
           "place": "monterrei",
           "caption": "The Támega crosses the zone from north to south.",
-          "cite": ["monterrei-pliego:p14"]
+          "cite": [
+            "monterrei-pliego:p14"
+          ]
         }
       ]
     },
@@ -36,13 +63,17 @@
         "Temperature swings are large, up to 30 degrees during ripening.",
         "Low rain and high summer heat stand out. The pliego says both are quite different from other Galician wine zones."
       ],
-      "cite": ["monterrei-pliego:p14"],
+      "cite": [
+        "monterrei-pliego:p14"
+      ],
       "fly": [
         {
           "label": "Monterrei",
           "place": "monterrei",
           "caption": "Swings of up to 30 degrees during ripening.",
-          "cite": ["monterrei-pliego:p14"]
+          "cite": [
+            "monterrei-pliego:p14"
+          ]
         }
       ]
     },
@@ -57,7 +88,10 @@
         "Sedimentary soils are complex, because several materials are mixed.",
         "Growers sought well-oriented sites with suitable soils. They have corrected the soils over time to improve fertility."
       ],
-      "cite": ["monterrei-pliego:p13", "monterrei-pliego:p14"]
+      "cite": [
+        "monterrei-pliego:p13",
+        "monterrei-pliego:p14"
+      ]
     },
     {
       "id": "rules",
@@ -70,7 +104,13 @@
         "Grapes are picked by hand when the growers judge them ripe. Winemaking follows traditional methods, with low must extraction and modern technology added.",
         "Many of the vines are trained as bush vines. New plantings are often on wires with two cordons, to ease work and harvest."
       ],
-      "cite": ["monterrei-pliego:p11", "monterrei-pliego:p12", "monterrei-pliego:p13", "monterrei-pliego:p14", "monterrei-pliego:p15"]
+      "cite": [
+        "monterrei-pliego:p11",
+        "monterrei-pliego:p12",
+        "monterrei-pliego:p13",
+        "monterrei-pliego:p14",
+        "monterrei-pliego:p15"
+      ]
     }
   ]
 }

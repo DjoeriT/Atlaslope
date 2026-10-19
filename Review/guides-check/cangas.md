@@ -29,3 +29,9 @@ Rules
 - Preferred white. p4 "Siendo el Albarín Blanco la preferente"
 - Yields. p4 "Variedades tintas: 8.000 Kg./Ha. Variedades blancas: 10.000 kg/Ha ... 56 Hectolitros ... 70 Hectolitros"
 - Density p2 "mínima será de 3.000 cepas por hectárea y la máxima de 6.000"; training p3 "forma tradicional de vaso o de espaldera, en función de los suelos y condiciones técnicas de cada viñedo"
+
+Label (all p9)
+- Vino de Calidad con Indicación Geográfica: "el término tradicional ... es: «Vino de Calidad con Indicación Geográfica» ... podrán sustituir en el etiquetado ... la expresión «Denominación de Origen Protegida»"
+- Crianza, Reserva, Gran Reserva, Añejo, Noble: "pueden utilizarse ... son: «Crianza», «Reserva», «Gran Reserva», «Añejo» y «Noble»"
+- Barrica, Roble: "podrán utilizarse como menciones ... «Barrica» y «Roble», siempre que cumplan las condiciones señaladas en el Anexo III del Real Decreto 1363/2011"
+- Harvest year: "Será obligatoria la indicación del año de cosecha en el etiquetado de todos los vinos protegidos aunque no hayan sido sometidos a envejecimiento"

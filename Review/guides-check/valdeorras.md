@@ -28,3 +28,11 @@ Rules
 - p14 godello "propia de la zona ... amarillos pálidos con matices verdosos ... aromas primarios limpios, afrutados de intensidad media ... perfectamente estructurados, con una acidez natural que los hace frescos y elegantes ... postgusto largo"
 - p14 mencía "rojo picota, morado ... intensos aromas a frutos rojos, con acidez media" (guide says "cherry-red to purple": picota = bigarreau cherry, source)
 - p14-15 "crianzas moderadas en envases de roble de calidad ... mencía, que aportan a los vinos estabilidad de color, acidez y capacidad de envejecimiento"
+
+Label
+- Godello (p5, p9): "elaboran exclusivamente con la variedad godello se comercializan como Valdeorras «godello»"
+- Mencía (p5): "al menos con un 85 % de la variedad mencía"
+- Variedades nobles (p5): "al menos un 85 % de las variedades ... «preferentes» ... «variedades nobles»/«castes nobres»"
+- Producción controlada (p6, p17, p6 note): "parcelas con limitaciones de producción ... «producción controlada»"; "reservado a los vinos tintos y a los blancos elaborados con la variedad godello"; "«producción controlada» ... graduación alcohólica adquirida y total mínima de 12,5 % vol."
+- Tostado (p9): "secado por pasificación natural bajo cubierta con un mínimo de 30 días ... naturalmente dulce, sin aumento artificial de su graduación"
+- Espumoso (p9): "espumosos blancos se elaborarán al menos con un 85 % de uva de la variedad blanca godello"

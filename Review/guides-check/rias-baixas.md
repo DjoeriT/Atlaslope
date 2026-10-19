@@ -27,3 +27,11 @@ Rules
 - Aromas. p15 "manzana, cítricos, florales (rosa), fruta madura y herbáceos"
 - Known for acid fraction and aroma more than alcohol. p12 "vinos más reconocidos por la concentración y variedad de su fracción ácida, así como por su aroma, que por su contenido alcohólico"
 - Pergola. p13 "emparrado ... limitar los ataques de enfermedades fúngicas ... alejando la vegetación del suelo ... mayor aprovechamiento de la radiación solar"; p14 "manejo eficaz del vigor"
+
+Label
+- Rías Baixas Albariño (p8): "100 % albariño"
+- Condado do Tea (p8): "≥ 70 % albariño y treixadura ... Subzona Condado do Tea"
+- Subzone name (p17): "será imprescindible que la materia prima proceda íntegramente de las mismas, así como que la elaboración se lleve a cabo en su interior"
+- Rías Baixas barrica (p9): "estancia en envases de madera de un tamaño no superior a 600 litros, indicándose en todo caso en el etiquetado el tiempo, en meses o años"; vinos blancos
+- Espumoso (p9): "se producirán exclusivamente por segunda fermentación en botella"
+- Brut nature (p6): "brut nature (0 a 3 g/l), esta mención únicamente podrá utilizarse para el vino espumoso al que no se añada azúcar después del degüelle"

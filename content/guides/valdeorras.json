@@ -4,7 +4,44 @@
   "minutes": 4,
   "lede": {
     "text": "A deep, bright valley of granite and slate along the river Sil, with five kinds of soil. The white grape Godello gives wines with a fresh natural acidity.",
-    "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p14"]
+    "cite": [
+      "valdeorras-pliego:p11",
+      "valdeorras-pliego:p14"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Godello",
+        "text": "A white wine made only from Godello."
+      },
+      {
+        "term": "Mencía",
+        "text": "A red wine with at least 85% Mencía."
+      },
+      {
+        "term": "Variedades nobles",
+        "text": "A white or red wine with at least 85% of the preferred grape varieties."
+      },
+      {
+        "term": "Producción controlada",
+        "text": "A wine from vineyards with limited yields, with at least 12.5% alcohol."
+      },
+      {
+        "term": "Tostado",
+        "text": "A naturally sweet wine from grapes dried under cover for at least 30 days, with no added strength."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine; the white version has at least 85% Godello."
+      }
+    ],
+    "cite": [
+      "valdeorras-pliego:p5",
+      "valdeorras-pliego:p6",
+      "valdeorras-pliego:p9",
+      "valdeorras-pliego:p17"
+    ]
   },
   "chapters": [
     {
@@ -18,13 +55,20 @@
         "Other rivers cut slopes where vines grow, often on terraces. The whole zone lies between 300 m and 700 m.",
         "The zone covers eight municipalities of Ourense, from O Barco de Valdeorras to Rubiá."
       ],
-      "cite": ["valdeorras-pliego:p10", "valdeorras-pliego:p11", "valdeorras-pliego:p13"],
+      "cite": [
+        "valdeorras-pliego:p10",
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p13"
+      ],
       "fly": [
         {
           "label": "Valdeorras",
           "place": "valdeorras",
           "caption": "A valley shaped by the Sil, between 300 m and 700 m.",
-          "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p13"]
+          "cite": [
+            "valdeorras-pliego:p11",
+            "valdeorras-pliego:p13"
+          ]
         }
       ]
     },
@@ -39,13 +83,19 @@
         "In the pliego's words, this is an ideal climate for first-quality dry wines.",
         "Slopes that face south were always seen as right for vines. They give less fertility and good drainage. That means a more moderate yield and proper ripening."
       ],
-      "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p12", "valdeorras-pliego:p13"],
+      "cite": [
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p12",
+        "valdeorras-pliego:p13"
+      ],
       "fly": [
         {
           "label": "Valdeorras",
           "place": "valdeorras",
           "caption": "850 to 1,000 mm of rain a year, and a Winkler sum of 1,300 to 1,500.",
-          "cite": ["valdeorras-pliego:p12"]
+          "cite": [
+            "valdeorras-pliego:p12"
+          ]
         }
       ]
     },
@@ -61,7 +111,10 @@
         "Clay-iron soils hold a lot of water and are cold. The best wines come from clay mixed with silica or silt.",
         "Alluvial soils are either terraces 4 to 10 m above the Sil or valley plains. The terraces drain well and stay warm at night, so the wines have less acidity. The plains are rich in nutrients and give big yields, and the pliego says that lowers quality."
       ],
-      "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p12"]
+      "cite": [
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p12"
+      ]
     },
     {
       "id": "rules",
@@ -75,7 +128,11 @@
         "Mencía is the red the pliego singles out. The reds are cherry-red to purple, with intense red-fruit aromas and medium acidity.",
         "Wineries use moderate ageing in quality oak. Mencía adds colour stability, acidity and ageing ability."
       ],
-      "cite": ["valdeorras-pliego:p10", "valdeorras-pliego:p14", "valdeorras-pliego:p15"]
+      "cite": [
+        "valdeorras-pliego:p10",
+        "valdeorras-pliego:p14",
+        "valdeorras-pliego:p15"
+      ]
     }
   ]
 }
