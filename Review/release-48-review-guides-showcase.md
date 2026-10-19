@@ -1,0 +1,6 @@
+# Release 48 review: guides showcase (PR #120, ebf5041), copy and licence (read only)
+Verdict: merge. 0 P1, 2 P2, 1 P3.
+- P2: "Showcased guide" is an uppercase, ruled label (.show) on every featured block. visual-style.md says uppercase only for kickers that carry a fact and never one that repeats the heading; this one is a fixed label, not a fact. Not a pill (radius none), no text on the photo. Owner's call, or sentence case.
+- P2: SAT_CREDIT sits at .78rem (shared .credit rule). The style guide sets the home hero credit at 0.65rem ("too prominent"), so this is consistent with the guide-page small print, larger than the hero. Fine for visibility; only a taste note.
+- P3: Binissalem fallback is CC BY-SA 3.0 (Pla); the full file is served at 800 wide (no 800 copy), so no new licence issue. Credit comes from creditLine; confirm the line still shows "resized" wording is right for an unresized file.
+Checks: (1) alt text is plain descriptive, no pills, credit is a figcaption under the image, not on it. (2) Attribution "Imagery: Esri, Maxar · Spain: PNOA © IGN" is present as a visible figcaption, ink3, not hidden. (3) Hero replaces the mosaic: imgs is '' and creditLine is dropped only when hero is true, so no photo shows without credit (hero flag needs hero.webp to exist). (4) See P3.
