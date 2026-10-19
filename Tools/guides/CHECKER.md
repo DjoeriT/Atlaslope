@@ -35,6 +35,12 @@ splices, "X, Y and Z" lists, and a cause-to-taste link the page does not make. T
 - Missing wine types: grep the whole pliego for every wine type, style and category it protects (still, sparkling, generoso,
   vino de licor, dulce, named styles such as Pale Cream). The rules beat must name each one; add a sentence with its cite for any
   that is missing, and say plainly whether a generoso is fortified. (Jerez lost Dulce, Pale Dry, Pale Cream and Medium.)
+- Misses a second Opus check found in Cataluña (19 Oct 2026, 22 in Priorat, Penedès and Cava), check each one:
+  hedges ("favorece", "propicia", "relativo") written as plain fact; a rule narrowed to one wine type when the page applies it to
+  all; a multi-region DO (Cava) framed as one region; rock words upgraded in translation ("calcárea" is limy, not chalky); title
+  adjectives with no source; a lede longer than two sentences or repeated in the body; a tasting paragraph that repeats the fact
+  sheet's `tastes`; a scale shown by its two ends only; Reserva-type terms checked beyond months (vine age, yield, organic, vintage);
+  and a full sweep of every mención and indicación in the pliego for `label` (Penedès lost nine terms).
 - The fact sheet: list each field where it disagrees with the pliego (sheet says, pliego says, page). Include `famous.styles` and `styles.kinds` (Granada's sheet listed a
   red sparkling the pliego does not allow). Do not edit the sheet.
 

@@ -1,0 +1,174 @@
+{
+ "id": "priorat",
+ "title": "Why Priorat tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Priorat's vines push their roots between sheets of slate, with bedrock only about 10-15 cm down, and give about 1 kg of grapes each on average. The wines have concentration, body and structure.",
+  "cite": [
+   "priorat-pliego:p22",
+   "priorat-pliego:p24"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bowl",
+   "beat": "place",
+   "title": "A ring of mountains in Tarragona province",
+   "paras": [
+    "Priorat sits in the middle of Tarragona province, 25 km from the sea, in the Prelitoral range. The Sierra de Montsant closes it to the north. The crests of El Lloar and La Figuera lie to the west. The Sierra del Molló lies to the east. To the south the zone ends where the Slate Mountain ends.",
+    "The Siurana river crosses the zone from northeast to southwest, along a winding depression completely ringed by mountains. These are rocky mountains with steep drops and no valleys or plains between them. The steep slopes run from 200 to 700 m of altitude.",
+    "The zone covers 176 km², equal to 17,629 ha, and 2,429.20 ha of that are excluded from vine growing. The slopes are so steep that machines struggle, so the vines are still worked in the most traditional ways.",
+    "The arrival and spread of the vine owe much to the Carthusian charterhouse of Scala Dei, founded in the 12th century. King Alfons I asked Carthusian monks to settle in the reconquered district. The charterhouse at the foot of the Montsant put seven villages under the Prior, and their lands became known as \"Priorato\"."
+   ],
+   "cite": [
+    "priorat-pliego:p21",
+    "priorat-pliego:p22",
+    "priorat-pliego:p23"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Montsant",
+     "point": [
+      0.8155,
+      41.2756
+     ],
+     "zoom": 9.5,
+     "caption": "The sierra closes Priorat to the north and shelters it from cold north winds.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22"
+     ]
+    },
+    {
+     "label": "Siurana river",
+     "point": [
+      0.7863,
+      41.1994
+     ],
+     "zoom": 10,
+     "caption": "The Siurana river crosses Priorat from northeast to southwest, in a winding depression ringed by mountains.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22"
+     ]
+    },
+    {
+     "label": "Scala Dei charterhouse",
+     "point": [
+      0.8104,
+      41.2565
+     ],
+     "zoom": 12,
+     "caption": "The Carthusian charterhouse of Scala Dei, founded in the 12th century at the foot of the Montsant. Its Prior's lands became known as \"Priorato\".",
+     "cite": [
+      "priorat-pliego:p22"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Set back from the sea, sheltered from the north",
+   "paras": [
+    "The zone is relatively cut off from the sea's influence, and the Montsant shelters it from cold north winds. This gives marked swings in temperature between day and night. The average annual temperature is between 14 and 15 degrees, and average annual rainfall is between 400 and 500 litres per m².",
+    "Northwest winds dry moisture off the surface quickly. Winters are cold and summers dry and hot. Hard ground and dry weather favour small vines, which helps keep disease low.",
+    "With the steep slopes and the old, little-mechanised ways of growing, this favours low yields. Bunches are small and concentrated, and ripening is slow and long. The weather and the slate favour full ripening, so the grapes can be picked at the best moment."
+   ],
+   "cite": [
+    "priorat-pliego:p22",
+    "priorat-pliego:p23",
+    "priorat-pliego:p24"
+   ]
+  },
+  {
+   "id": "licorella",
+   "beat": "ground",
+   "title": "Licorella, the dark copper slate",
+   "paras": [
+    "The hills are made of ancient slate, formed between 416 and 318 million years ago. It is among the oldest rock found at the surface in Catalonia.",
+    "The soils are shallow, usually a single thin layer over the bedrock. They hold little organic matter. They are mostly broken-down slate called licorella: flaky, brittle stones the colour of darkened copper. Vine roots slip between the layers looking for moisture, water and nutrients.",
+    "On such thin soil, harvests are small. This soil is said to shape much of the wines' character. Licorella soils also avoid excess humidity."
+   ],
+   "cite": [
+    "priorat-pliego:p21",
+    "priorat-pliego:p22",
+    "priorat-pliego:p23"
+   ],
+   "fly": [
+    {
+     "label": "Priorat's slate hills",
+     "place": "priorat",
+     "caption": "Slate hills of licorella.",
+     "cite": [
+      "priorat-pliego:p22"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Reds stand out, with liqueur and late-harvest wines too",
+   "paras": [
+    "Two red grapes are recommended: Garnacha tinta and Cariñena, also called Mazuela or Samsó. Eight more red grapes are authorised, such as Garnacha peluda and Syrah. Nine white grapes are authorised too, such as Garnacha blanca and Viognier.",
+    "Reds stand out, with a strong dark red colour. Whites, rosados (rosé) and reds have plenty of body, or dry extract, and sound acidity that helps them age. Still wines must reach at least 13% vol. for white and rosado, and 13.5% vol. for red.",
+    "Yields are low: at most 6,000 kg/ha of red grapes and 8,000 kg/ha of white, or 39 hl/ha and 52 hl/ha of wine. Harvest is preferably by hand, and the traditional training is a free-standing bush (en vaso). Vino de finca comes from a single named estate whose owner also makes the wine, with yields 15% lower.",
+    "Priorat also makes traditional liqueur wines (vinos de licor). Rancio ages in wood for at least five years, in small barrels called carratells that let in a lot of air. Reds lose their colour and whites darken. Rancio may not be fortified with wine spirit, and it counts as rancio dulce from 45 g/l of sugar.",
+    "The other liqueur wines are fortified with wine spirit to at least 15% vol. Vino de licor dulce gets its spirit once 8 degrees of natural alcohol are reached. Mistela, white or red, is fresh unfermented must mixed with wine spirit. Vino dulce natural gets its spirit partway through fermentation.",
+    "Wines of overripe grapes (uvas sobremaduradas) come from late-picked grapes high in sugar, with no added spirit. One of them, Vimblanc, is Garnacha tinta must fermented in vessels of up to 100 litres, preferably oak."
+   ],
+   "cite": [
+    "priorat-pliego:p1",
+    "priorat-pliego:p2",
+    "priorat-pliego:p6",
+    "priorat-pliego:p20",
+    "priorat-pliego:p21",
+    "priorat-pliego:p23",
+    "priorat-pliego:p24",
+    "priorat-pliego:p28"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de vila",
+    "text": "Wine from the plots of one named village (vila), such as Gratallops. At most 5,000 kg/ha of red grapes and 7,000 kg/ha of white, 90% of the vines older than 10 years, and at least 60% Cariñena and/or Garnacha."
+   },
+   {
+    "term": "Vino de paraje",
+    "text": "Wine from a named traditional site (paraje). At most 4,000 kg/ha of red grapes and 6,000 kg/ha of white, 90% of the vines older than 15 years, and at least 60% Cariñena and/or Garnacha."
+   },
+   {
+    "term": "Viña clasificada",
+    "text": "Wine from one vineyard named in the growers' register. At most 4,000 kg/ha of red grapes and 6,000 kg/ha of white, 80% of the vines older than 20 years, and at least 60% Cariñena and/or Garnacha."
+   },
+   {
+    "term": "Gran viña clasificada",
+    "text": "A registered vineyard that meets stricter rules: at most 3,000 kg/ha of red grapes and 4,000 kg/ha of white, 80% of the vines older than 35 years, and at least 90% Cariñena and/or Garnacha."
+   },
+   {
+    "term": "Vino de guarda",
+    "text": "A red wine that spent at least 12 months in oak before bottling."
+   },
+   {
+    "term": "Barrica",
+    "text": "The wine spent time in wooden containers of at most 600 litres. The time in them must be stated in months and years."
+   },
+   {
+    "term": "Roble",
+    "text": "The wine spent time in oak containers of at most 600 litres. The time in them must be stated in months or years."
+   },
+   {
+    "term": "Fermentado en barrica",
+    "text": "The wine fermented in wooden containers of at most 600 litres."
+   }
+  ],
+  "cite": [
+   "priorat-pliego:p26",
+   "priorat-pliego:p27",
+   "priorat-pliego:p28"
+  ]
+ }
+}

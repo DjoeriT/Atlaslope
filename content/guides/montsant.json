@@ -1,0 +1,155 @@
+{
+ "id": "montsant",
+ "title": "Why Montsant tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Rugged ground and the dominance of Garnacha and Cariñena help shape Montsant wines with plenty of body and a marked personality.",
+  "cite": [
+   "montsant-pliego:p11",
+   "montsant-pliego:p13"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bowl",
+   "beat": "place",
+   "title": "A half-circle of mountains",
+   "paras": [
+    "Seen on a map, Montsant is bounded by a half-circle of mountains. To the north the sierras of Montsant and La Llena link it to the leafy Prades mountains. To the east the border is the pre-coastal Argentera range with the Mola de Colldejou and Llaberia. They announce that the sea is near. To the west lie the sierras of La Figuera and El Tormo.",
+    "In the south the land opens toward the Ebro. The Siurana and Montsant rivers head that way. With the Capçanes stream they are the watercourses of the area. The terrain is varied and generally rugged, though it turns gentle in places, especially toward the south."
+   ],
+   "cite": [
+    "montsant-pliego:p10",
+    "montsant-pliego:p11"
+   ],
+   "fly": [
+    {
+     "label": "Serra de Montsant",
+     "point": [
+      0.8155,
+      41.2756
+     ],
+     "zoom": 10,
+     "caption": "The sierra that closes the northern side of the half-circle.",
+     "cite": [
+      "montsant-pliego:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry hot summers, a fairly sharp day-night gap",
+   "paras": [
+    "The climate is Mediterranean with some continentality. It is shaped by the rugged mountains and by sea winds. The Ebro adds its influence, especially in the south. Winters are generally cold and summers dry and hot.",
+    "The mountains partly shield the vines from the sea. That gives a fairly sharp gap between day and night temperatures as the grapes ripen. The gap helps the grapes build colour and tannin, for more consistent wines. Whites and rosados (rosé wines) turn fruity and fresh, as do young reds. Aged reds gain aromatic complexity.",
+    "Averaged over the year, daily lows sit around 7 °C and daily highs stay under 20 °C, even though summers are dry and hot. Rain falls at about 500 to 600 litres per m2 a year, unevenly spread and mostly in spring and autumn.",
+    "In summer, humid sea winds start to blow in the afternoon. That moisture helps the vines through the dry ripening season. The same climate is very well suited to liqueur wines from slightly overripe Garnacha tinta and Garnacha blanca. The relief also creates countless microclimates, so each plot has its own character."
+   ],
+   "cite": [
+    "montsant-pliego:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A mosaic of three soils",
+   "paras": [
+    "The soils come from many origins and alternate like a mosaic. Three types stand out.",
+    "Compact calcareous soils are mostly sediments left by erosion and by the rivers. Reddish soils rich in clay sit on the edge of the zone. These soils add complexity to the wines.",
+    "Loose granitic sands come from eroded conglomerate. They are found mainly around Falset. They hold little organic matter and little water. They add softness to white and rosado wines and more structure to all of them.",
+    "Stony soils of siliceous slate, known locally as llicorella, are poor in organic matter. More compact red clays from the same eroded stone also occur. These soils give the wines minerality and a wide range of colours."
+   ],
+   "cite": [
+    "montsant-pliego:p11"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Red first, with old vines",
+   "paras": [
+    "Most Montsant wine is red. Garnacha tinta and Cariñena grow across the whole zone. They give wines with body, well suited to ageing, especially when yields are controlled and the wine is well made. Ull de llebre predominates in the warmer south. Other grapes, Syrah and Cabernet Sauvignon among them, are planted in much smaller amounts. They give the blends their distinguishing touch.",
+    "Old vines matter here. Vines were traditionally trained as free-standing bushes (vaso). Centenarian vines are easy to find. After phylloxera, Cariñena was the most planted grape because it could crop heavily. Later, over-productive vines were pulled up and Cabernet Sauvignon, Merlot and Syrah, among others, came in. Old Garnacha and Cariñena plus these more powerful varieties give the wines depth and longer-lasting structure.",
+    "Whites come almost entirely from Garnacha blanca and Macabeo. Macabeo gives finer wines. Garnacha blanca has more body and structure and suits ageing or fermenting in oak, despite a natural tendency to oxidise. The other whites are Chardonnay, Garnacha roja (or gris), Moscatel de grano menudo, Parellada, Pansal and Picapoll blanc. Montsant also makes rosado and brisado, a white fermented with its skins and seeds.",
+    "Liqueur wines have deep roots across the north of Tarragona province. They are fortified: grape spirit brings them to at least 15% alcohol (15.5% for Garnacha), though for rancio and vimblanc it is added only if needed. Rancio is aged oxidatively in wood or by the quick \"sol y serena\" (sun and night) method, with notes of spice, nuts, toast and honey. Mistela blanca is free-run must with grape spirit added. Mistela negra is grapes macerated with grape spirit. Both are sweet. Garnacha is a sweet liqueur wine of orange to ruby colour. Vimblanc is made without skin maceration. There is also vino dulce natural (natural sweet wine), from musts rich in sugar and partly fermented.",
+    "Yields are capped at 12,000 kg of grapes per hectare for white varieties and 10,000 kg for red."
+   ],
+   "cite": [
+    "montsant-pliego:p1",
+    "montsant-pliego:p2",
+    "montsant-pliego:p3",
+    "montsant-pliego:p4",
+    "montsant-pliego:p5",
+    "montsant-pliego:p10",
+    "montsant-pliego:p12",
+    "montsant-pliego:p13"
+   ],
+   "fly": [
+    {
+     "label": "Scala Dei charterhouse",
+     "point": [
+      0.8104,
+      41.2565
+     ],
+     "zoom": 11,
+     "caption": "Carthusian monks of Scala Dei made vine growing inseparable from this land. Their charterhouse gave its name to a whole district, the Priorato (lands of the prior).",
+     "cite": [
+      "montsant-pliego:p12"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "Reds age two calendar years with at least six months in oak barrels. Whites and rosados age at least 18 months, also with at least six months in oak. For every ageing term the oak barrels hold 330 litres or less."
+   },
+   {
+    "term": "Reserva",
+    "text": "Reds age at least 3 years, with at least 12 months in oak and 18 months in bottle. Whites and rosados age at least 24 months, with at least six months in oak and 18 months in bottle."
+   },
+   {
+    "term": "Gran reserva",
+    "text": "Reds age at least 5 years, with at least 24 months in oak and at least 36 months in bottle. Whites and rosados age at least 48 months, with at least six months in oak and at least 42 months in bottle."
+   },
+   {
+    "term": "Vino de guarda",
+    "text": "The wine spends at least 12 months in oak barrels."
+   },
+   {
+    "term": "Vino nuevo",
+    "text": "The label must show the harvest year. The wine is bottled during the campaign in which the grapes were picked."
+   },
+   {
+    "term": "Vino joven",
+    "text": "The label must show the harvest year. The wine is bottled during the year of the campaign in which it was harvested."
+   },
+   {
+    "term": "Fermentado en barrica",
+    "text": "Barrel fermented: the wine fermented in wooden vessels of at most 600 litres."
+   },
+   {
+    "term": "Barrica",
+    "text": "Barrel: the wine's details must give the time in months and years and the type of wooden vessel, which holds at most 600 litres."
+   },
+   {
+    "term": "Roble",
+    "text": "Oak: the wine's details must give the time in months or years it spent in oak vessels of at most 600 litres."
+   },
+   {
+    "term": "Mínima intervención",
+    "text": "Grapes are picked by hand and fermentations are spontaneous. No additives or processing aids are allowed, and gentle filtering is the only physical treatment. The wine needs organic certification, and total sulphur dioxide stays at or below 35 mg/l."
+   }
+  ],
+  "cite": [
+   "montsant-pliego:p6",
+   "montsant-pliego:p8",
+   "montsant-pliego:p15",
+   "montsant-pliego:p16"
+  ]
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "id": "cava",
+ "title": "Why Cava tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cava is named after the underground caves where the bottles rested, at about 13 to 15 °C all year. Such cellars let the second fermentation run slowly, and as the wine ages, its yeast breaks down and adds delicate aromas.",
+  "cite": [
+   "cava-pliego:p10",
+   "cava-pliego:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "zones",
+   "beat": "place",
+   "title": "A wine with no single valley",
+   "paras": [
+    "As a rule, a protected wine region is named after a place. Cava took the name of a cellar: the underground caves, or \"cavas\", where sparkling bottles were kept while they aged. In 1989 the European Community accepted this as an exception to the rule of naming the region after a place.",
+    "The area is split into four zones: Comtats de Barcelona, Valle del Ebro, Viñedos de Almendralejo and Requena. Comtats de Barcelona takes in towns in the provinces of Barcelona, Girona, Lleida and Tarragona. It is split again into five subzones. Valle del Ebro takes in towns in Álava, La Rioja, Navarra and Zaragoza, in two subzones: Alto Ebro and Valle del Cierzo. Viñedos de Almendralejo is the town of Almendralejo in Badajoz, and Requena is the town of Requena in Valencia.",
+    "The first bottles of cava were made in 1872 in Sant Sadurní d'Anoia. Several winery families in inland Barcelona province had begun making sparkling wine in the second half of the 19th century, with the second fermentation in the bottle."
+   ],
+   "cite": [
+    "cava-pliego:p6",
+    "cava-pliego:p7",
+    "cava-pliego:p8",
+    "cava-pliego:p10"
+   ],
+   "fly": [
+    {
+     "label": "Sant Sadurní d'Anoia",
+     "point": [
+      1.7855,
+      41.4287
+     ],
+     "zoom": 11,
+     "caption": "Sant Sadurní d'Anoia, where cava began.",
+     "cite": [
+      "cava-pliego:p10"
+     ]
+    },
+    {
+     "label": "Requena",
+     "point": [
+      -1.1013,
+      39.4883
+     ],
+     "zoom": 10,
+     "caption": "Requena, in Valencia province, is one of Cava's four zones.",
+     "cite": [
+      "cava-pliego:p6",
+      "cava-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A long summer between sea and inland",
+   "paras": [
+    "The climate is Mediterranean, in transition between the milder coast and the harsher inland, which is colder in winter and hotter in summer. The summer season is very long, with strong sunshine and high temperatures in spring and summer. That allows good ripening even in the latest-ripening varieties.",
+    "About 500 mm of rain falls in a year, mostly in autumn and spring. Relative humidity is generally very low during the growing season, and the water deficit is pronounced, especially as the grapes ripen. Sunshine averages about 2,500 hours.",
+    "Late summers and autumns are relatively mild and dry. With the soils and careful harvesting, that lets the varieties ripen one after another and be picked separately. The aim is base wines with moderate alcohol and high acidity. Their pH is low."
+   ],
+   "cite": [
+    "cava-pliego:p10",
+    "cava-pliego:p12",
+    "cava-pliego:p13"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limy soils, low in organic matter",
+   "paras": [
+    "The soils are mostly calcareous (limy), with little sand and a fairly high share of clay. They are usually low in organic matter and not very fertile.",
+    "Vines are planted at 1,500 to 3,500 per hectare. That low density is thought to suit base-wine quality, and it makes use of the limited rainfall. Vines may be trained as traditional bush vines (vaso) or on wires (espaldera)."
+   ],
+   "cite": [
+    "cava-pliego:p3",
+    "cava-pliego:p9",
+    "cava-pliego:p11"
+   ]
+  },
+  {
+   "id": "bottle",
+   "beat": "rules",
+   "title": "Second fermentation in the same bottle",
+   "paras": [
+    "Cava is a sparkling wine made by the traditional method: the base wine ferments a second time in the bottle. It can be white or rosé (rosado), and the wine must stay on its lees, the spent yeast, in that same bottle for at least 9 months. A rosé base wine needs at least 25% red grapes.",
+    "Three white grapes make up about 85% of the grapes used: Macabeo (Viura), Xarel·lo and Parellada. Macabeo gives light, fresh wines with fruit and white-flower aromas. Xarel·lo gives fresh, fruity wines with a slight bitterness, structure and body. Parellada gives light, floral wines and adds elegance and softness.",
+    "Malvasía (Subirat Parent) and Chardonnay are also allowed. So are four red grapes: Garnacha tinta, Monastrell, Pinot Noir and Trepat.",
+    "As the yeast breaks down over time, it adds nutty and bakery aromas, especially in the long-aged wines. Gran Reserva wines need at least 30 months from bottling (tiraje) to disgorging, when the spent yeast is taken out, all in one winery. They are balanced wines with hints of ripe fruit and nuts, and of toast. Paraje Calificado wines come from a qualified single site picked by hand, and need at least 36 months from bottling to disgorging. They show nuts and toast with a balance of structure, creaminess and acidity. Gran Reserva and Paraje Calificado wines may only carry the three driest sweetness terms, from Brut Nature to Brut. Grapes for Reserva, Gran Reserva and Paraje Calificado must come from certified organic vineyards at least 10 years old. Yields are capped at 12,000 kg/ha for cava, 10,000 kg/ha for Reserva and Gran Reserva, and 8,000 kg/ha for Paraje Calificado. Their labels must show the vintage."
+   ],
+   "cite": [
+    "cava-pliego:p1",
+    "cava-pliego:p2",
+    "cava-pliego:p3",
+    "cava-pliego:p4",
+    "cava-pliego:p6",
+    "cava-pliego:p9",
+    "cava-pliego:p10",
+    "cava-pliego:p11",
+    "cava-pliego:p12",
+    "cava-pliego:p21"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Brut Nature",
+    "text": "Less than 3 g/l of sugar, with no sugar added."
+   },
+   {
+    "term": "Extra brut",
+    "text": "Between 0 and 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Less than 12 g/l of sugar."
+   },
+   {
+    "term": "Extra seco",
+    "text": "Between 12 and 17 g/l of sugar."
+   },
+   {
+    "term": "Seco",
+    "text": "Between 17 and 32 g/l of sugar."
+   },
+   {
+    "term": "Semi-seco",
+    "text": "Between 32 and 50 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "More than 50 g/l of sugar."
+   },
+   {
+    "term": "Reserva",
+    "text": "At least 18 months from bottling (tiraje) to disgorging."
+   },
+   {
+    "term": "Guarda",
+    "text": "A cava that is not Reserva, Gran Reserva or Paraje Calificado."
+   },
+   {
+    "term": "Guarda Superior",
+    "text": "The group name for Reserva, Gran Reserva and Paraje Calificado cavas."
+   },
+   {
+    "term": "Elaborador Integral",
+    "text": "The winery pressed and made all the base wine for its cava, made all its cava on its own premises, and bought no bottles part-way through from other producers."
+   }
+  ],
+  "cite": [
+   "cava-pliego:p1",
+   "cava-pliego:p6",
+   "cava-pliego:p22",
+   "cava-pliego:p23"
+  ]
+ }
+}

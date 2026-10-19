@@ -13,12 +13,12 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
-      'abadia-retuerta', 'arlanza', 'arribes', 'bierzo', 'cangas', 'cebreros', 'cigales', 'condado-de-huelva', 'dehesa-penalba',
-      'granada', 'jerez', 'lebrija', 'leon', 'malaga', 'manzanilla', 'monterrei', 'montilla-moriles', 'rias-baixas',
+      'abadia-retuerta', 'alella', 'arlanza', 'arribes', 'bierzo', 'cangas', 'catalunya', 'cava', 'cebreros', 'cigales',
+      'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dehesa-penalba', 'emporda', 'granada', 'jerez', 'lebrija', 'leon', 'malaga', 'manzanilla', 'monterrei', 'montilla-moriles', 'montsant', 'penedes', 'pla-de-bages', 'priorat', 'rias-baixas',
       'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rueda',
-      'sierra-de-salamanca', 'sierras-de-malaga', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
+      'sierra-de-salamanca', 'sierras-de-malaga', 'tarragona', 'terra-alta', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
       'txakoli-getaria', 'uruena', 'valdeorras', 'valles-de-benavente', 'valtiendas',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);

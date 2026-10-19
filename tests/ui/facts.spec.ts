@@ -64,7 +64,7 @@ test('photos show with a credit that links to their Commons page', async ({ page
 });
 
 test('a place that is not quizzed shows its sheet but no measured rows', async ({ page }) => {
-  await open(page, '#place=cava&page');
+  await open(page, '#place=islas-canarias&page');
   await expect(page.locator('#place dt', { hasText: 'Level' })).toBeVisible();
   await expect(page.locator('#weather .pg-h3', { hasText: 'Climate' }).first()).toBeVisible();
   await expect(page.locator('#weather .pg-h3', { hasText: 'Measured climate' })).toHaveCount(0);

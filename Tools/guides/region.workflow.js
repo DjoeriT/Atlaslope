@@ -9,13 +9,28 @@ export const meta = {
   ],
 }
 
-// args: { region: 'andalucia', facts: 'content/facts/andalucia.json', places: [{ id, source }], recheck?: true }
+// args: { region: 'andalucia', facts: 'content/facts/andalucia.json', places: [{ id, source }], recheck?: true, full?: true }
+// Budget (Cataluña, 19 Oct 2026: about 20M tokens against a 5-8M estimate, 8M of it one agent looping over 93 corrections):
+// without full: true the run is a pilot of the first two places. The thread then runs
+// `python3 Tools/guides/usage.py --budget 1.7 --places 2 <transcript dir>` (1.7M per place measured on Cataluña) and reruns with
+// full: true and resumeFromRunId only when it exits 0; the pilot's helpers replay from cache.
+// Every run also stops starting helpers past 1.5x the measured output tokens per place (25K: write 5K, check 16K, sheet 4K).
 // recheck: skip writing and run the sentence check again on the existing guides, after the thread's sample found a miss
 // and CHECKER.md gained that miss (plan step 6).
 // source is the content/sources.json id the guide cites, e.g. 'jerez-pliego'.
 // Run from the repo root. Each helper starts empty, writes only its own files and returns a short summary,
 // so no long context sits between helper runs (lesson of the Castilla y León run, Review/guide-pipeline-plan.md).
 
+const places = args.full || args.recheck ? args.places : args.places.slice(0, 2)
+const outCap = 1.5 * 25000 * places.length
+const start = budget.spent()
+const guarded = (prompt, opts) => {
+  if (budget.spent() - start > outCap) {
+    log(`Budget guard: ${budget.spent() - start} output tokens is past ${outCap}; ${opts.label} not started`)
+    return Promise.resolve(null)
+  }
+  return agent(prompt, opts)
+}
 const dir = `Review/guides-pipeline/${args.region}`
 const manifest = `${dir}/manifest.json`
 const safety = 'Never put a name, email address or any personal detail in a request header, User-Agent or URL. ' +
@@ -82,28 +97,37 @@ and ${args.recheck
 once and fix any ERROR. Do not edit the fact sheet; report its disagreements. ${few} ${safety}`
 
 const results = await pipeline(
-  args.places,
+  places,
   p => args.recheck ? Promise.resolve({ ok: true, words: 0, warnings: 0, note: 'recheck' })
-    : agent(writePrompt(p), { label: `write ${p.id}`, phase: 'Write', model: 'sonnet', schema: WRITE }),
-  (w, p) => w && agent(checkPrompt(p), { label: `check ${p.id}`, phase: 'Check', model: 'opus', schema: CHECK })
+    : guarded(writePrompt(p), { label: `write ${p.id}`, phase: 'Write', model: 'sonnet', schema: WRITE }),
+  (w, p) => w && guarded(checkPrompt(p), { label: `check ${p.id}`, phase: 'Check', model: 'opus', schema: CHECK })
     .then(c => ({ id: p.id, write: w, check: c })),
 )
 
 const done = results.filter(r => r && r.check)
-const missing = args.places.map(p => p.id).filter(id => !done.some(r => r.id === id))
+const missing = places.map(p => p.id).filter(id => !done.some(r => r.id === id))
 if (missing.length) log(`Not finished, rerun these: ${missing.join(', ')}`)
 
-// One writer for the region's fact sheet file, so this step waits for every check.
+// One fresh agent per place, run one after another: the region's fact sheet file keeps one writer at a time, and no agent
+// re-reads the whole region's corrections (Cataluña, 19 Oct 2026: one agent for 93 corrections re-read 8M tokens).
 const disagreements = done.flatMap(r => r.check.sheet.map(s => ({ id: r.id, ...s })))
 let sheets = null
-if (disagreements.length) {
-  sheets = await agent(`Apply these fact sheet corrections to ${args.facts}. Each says what the sheet says, what the pliego says, and the page.
-${JSON.stringify(disagreements, null, 1)}
-For each: open the cited page with Tools/guides/pages.py (the pliego file for a place is in ${manifest}) and confirm it.
-Apply only what the page plainly says, in the sheet's existing style, citing "<source id>:p<n>". Skip a correction that is a matter
-of wording or that the page does not settle, and say why. Keep the sheet's schema; run \`npm test -- tests/unit\` once at the end.
-Also ${args.recheck ? 'append a "## Second check" section to' : 'write'} ${dir}/fact-sheet-fixes.md: one line per correction, applied or skipped, with the reason. ${safety}`,
-  { label: 'fact sheets', phase: 'Sheets', model: 'opus', schema: SHEETS })
+for (const id of [...new Set(disagreements.map(d => d.id))]) {
+  const ds = disagreements.filter(d => d.id === id)
+  const source = places.find(p => p.id === id).source
+  const pages = [...new Set(ds.flatMap(d => String(d.page).match(/\d+/g) || []))].join(' ')
+  // Few steps (Cataluña re-check, 19 Oct 2026: 3.9M tokens for 7 places, about 600K each to make 3 or 4 edits): one pack, one edit,
+  // no test run (the thread and CI run the facts test).
+  const r = await guarded(`Apply the checker's fact sheet notes for ${id} to ${args.facts}.
+${JSON.stringify(ds, null, 1)}
+Step 1: run \`python3 Tools/guides/pack.py sheet ${args.region} ${id} ${source} ${pages}\`. It prints the sheet entry and the cited
+pliego pages. Read nothing else. Step 2: make all edits to ${args.facts} in one go, then append a "## ${id}" section to
+${dir}/fact-sheet-fixes.md, one line per note, applied or skipped with the reason. That is all; no other reads, no tests.
+Apply only what the page plainly says, in the sheet's existing style, citing "${source}:p<n>". Skip a note that is a matter
+of wording or that the page does not settle. Keep the schema; a famous-style text stays at 15 words or fewer. ${safety}`,
+    { label: `fact sheet ${id}`, phase: 'Sheets', model: 'opus', schema: SHEETS })
+  sheets = { applied: (sheets?.applied || 0) + (r?.applied || 0), skipped: (sheets?.skipped || 0) + (r?.skipped || 0),
+    note: [sheets?.note, r && `${id}: ${r.note}`].filter(Boolean).join('\n') }
 }
 
-return { region: args.region, guides: done.map(r => ({ id: r.id, words: r.write.words, ...r.check, sheet: r.check.sheet.length })), missing, sheets }
+return { region: args.region, pilot: places.length < args.places.length, guides: done.map(r => ({ id: r.id, words: r.write.words, ...r.check, sheet: r.check.sheet.length })), missing, sheets }

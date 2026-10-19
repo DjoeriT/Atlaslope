@@ -11,7 +11,7 @@ import re
 import sys
 
 START = re.compile(r'^\s*(?:1|A)[.)]?\s*(?:NOMBRE|DENOMINACI[ÓO]N)', re.I | re.M)
-STOP = re.compile(r'^\s*(?:9|I)[.)]?\s*VERIFICACI[ÓO]N', re.I | re.M)
+STOP = re.compile(r'^\s*(?:9|I)[.)]?\s*-?\s*(?:VERIFICACI[ÓO]N|COMPROBACI[ÓO]N|COMPROBACIONES|CONTROLES)', re.I | re.M)
 
 
 def pages(text: str) -> list[str]:
