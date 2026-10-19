@@ -31,3 +31,4 @@
 | Check | sierra-de-salamanca | Opus | 84,205 | 3.0 |
 | Check | tierra-del-vino-de-zamora | Opus | 97,893 | 3.6 |
 | Check | arlanza | Opus | 84,452 | 3.1 |
+| Check | dehesa-penalba | Opus | 90,277 | 3.4 |
