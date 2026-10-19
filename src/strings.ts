@@ -44,7 +44,6 @@ export const strings = {
     guides: 'Guides',
     about: 'About',
     showMap: 'Show map',
-    backToMap: 'Map',
     showMapLabel: (name: string) => `Show map: ${name}`,
     home: 'AtlaSlope home',
     progress: 'Progress',
