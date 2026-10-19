@@ -19,11 +19,13 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Share card keeps "The wine study atlas for WSET and Wine Scholar students"; home subline (owner chose, 19 Oct 14:44Z, same paragraph) "Spain's wine places from above, and why each one
   tastes the way it does. The wine study atlas for WSET and Wine Scholar students."; headline "Know the land behind the glass." About must not repeat the home page.
 - Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations, owner's photos at their own aspect
-  ratio. Detail: `Review/visual-style.md`.
+  ratio, except Guides page cards: square crops, each checked (release 55). Detail: `Review/visual-style.md`.
 
 ## Current state (19 Oct 2026)
-- Release 52 (`git tag -l 'release-*'` for the latest): the last 5 Meseta guides and the home page copy "106 / wine places, each
-  with its own guide" (PR #137). Guides: all 106 places have one, 109 guide files with the 3 Rioja zones [V, unit test roster]. Spain is
+- Release 55 (`git tag -l 'release-*'` for the latest): Guides page v2 (release 54, PR #143: region jump row, 6 guides per region then
+  "All <Region> guides", 10 region tiles from `Tools/guides/region_tile.mjs`) and square photo cards (PR #144). Since PR #145 a unit
+  test fails while a shown Guides photo has no checked crop (`src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`). Release 52 had
+  the last 5 Meseta guides and the home page copy "106 / wine places, each with its own guide" (PR #137). Guides: all 106 places have one, 109 guide files with the 3 Rioja zones [V, unit test roster]. Spain is
   complete; a next country waits on the owner. A region runs only on the owner's word, on the local route ("Run a region locally").
 - Local Mac: build, dev server and UI tests work again since PR #138 (Doors/doors.ts case clash; `tests/unit/file-names.test.ts` guards it).
 - Source quirks: mapa.gob.es, navarra.es refuse; portalagrari.gva.es pliego links 404. Use the Consejo Regulador copy (Jumilla:
@@ -47,7 +49,9 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   mock accepted, build only on his ask. Skip 3D showpieces, scroll-jacking, glass, bento, AI chat.
 - 19 Oct: guide shape C live (release 36); four beats, each fact once, pliego required. No drawn illustrations; photos never cropped to
   tiles (two complaints). Token budget and overrun guards. Navarra's four Vinos de Pago stay on EU single documents only. Zoomed-out
-  satellite deferred (#108). Per-sentence Opus check stays (Sonnet drafts need fixes on 36% of sentences).
+  satellite deferred (#108). Per-sentence Opus check stays (Sonnet drafts need fixes on 36% of sentences). Later on 19 Oct the owner
+  reopened the photo rule for the Guides page only: cards are square crops, each checked against the original (release 55). Guide
+  enrichment (travel tips, wineries, history) goes in its own clearly labelled section with its own source rules (#150).
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
@@ -70,6 +74,10 @@ built yet (`docs/handoffs/2026-10-18-atlas-guide-page.md`). The owner remembers 
 Tracked in #127 (related #4).
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)
+Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his: #146 full QA sweep; #147 Study plan; #148 fly-over for
+selected guides; #149 more countries (Portugal or France first); #150 guide enrichment; #151 code and backend setup; #152 performance
+(#149, #151, #152 hang together). Guides page leftovers (handoff `2026-10-19-guides-page-build.md`): Canarias tile mostly sea, Rioja
+tile dark fill, Green Spain neighbour outlines, long phone page.
 Priority labels set by the owner 19 Oct 2026 (cleanup). Next: #127 Rioja map flyby missing; #126 repetitive "If you like this, try" cards
 ("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
 outlines (Urbezo done, 12 left); #83 flaky Study tests; #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
@@ -82,7 +90,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Next slices, each in a fresh session: Guides page mock round, then Meseta unsure sheet edits (briefs in `docs/handoffs/2026-10-19-doors-case-fix.md`). Open: whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
