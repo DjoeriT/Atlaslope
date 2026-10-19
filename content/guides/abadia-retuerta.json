@@ -29,11 +29,15 @@
    "fly": [
     {
      "label": "Abadía Retuerta",
-     "place": "abadia-retuerta",
      "caption": "A river terrace in a Duero meander, between two plateaus about 880 m high.",
      "cite": [
       "abadia-retuerta-pliego:p7"
-     ]
+     ],
+     "point": [
+      -4.4109,
+      41.6165
+     ],
+     "zoom": 13
     },
     {
      "label": "The Duero valley",

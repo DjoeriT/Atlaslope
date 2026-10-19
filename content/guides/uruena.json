@@ -28,13 +28,17 @@
    ],
    "fly": [
     {
-     "label": "The Urueña estate",
-     "place": "uruena",
-     "caption": "78 ha in one block on a plain at 710 to 720 m, with the river Sequillo to the north.",
+     "label": "Urueña",
+     "caption": "The 78 ha estate lies on a plain north-west of the town, at 710 to 720 m.",
      "cite": [
       "uruena-pliego:p4",
       "uruena-pliego:p6"
-     ]
+     ],
+     "point": [
+      -5.2036,
+      41.7272
+     ],
+     "zoom": 12
     },
     {
      "label": "The river Sequillo",
