@@ -21,3 +21,4 @@
 | Check | leon | Opus | 83,572 | 3.1 |
 | Check | bierzo | Opus | 92,615 | 3.8 |
 | Write | arlanza | Sonnet | 41,291 | 1.0 |
+| Write | abadia-retuerta | Sonnet | 38,973 | 1.0 |
