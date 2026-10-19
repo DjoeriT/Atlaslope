@@ -11,7 +11,9 @@ Study, and guide and Terroir (docs gap audit, 18 Oct 2026). A new term goes here
 | **Study** | Rounds of questions with spaced memory (find it on the map, what is this, the fact question). Owner, 18 Oct 2026: "Quiz" is "Study" everywhere users look. | Quiz (still the code name: `src/quiz/`, `src/quiz-ui/`; don't rename code just for this) |
 | **Round** | One Study session, from "Start" to the results. | |
 | **Shade** | How well a place is known in spaced memory: new, learning, known, solid (`SHADES`, `src/quiz/memory.ts`). Older docs call these boxes. Harder questions come with higher shades. | Level, streak |
-| **Guide** | A place's own page: fact sheet, photos and, where written, the Terroir section. Every place has one. A reference for anyone who loves wine, not exam prep (owner, 19 Oct 2026). | Lesson, article |
+| **Guide** | A place's own page, in shape C (owner, 19 Oct 2026): "Why X tastes the way it does" told in four beats, then How it tastes, In short and plain sections (Producers, Read the label, Did you know, History, Places to visit, Food to try there, If you like this, try). Every place has one. A reference for anyone who loves wine, not exam prep. Shape and fields: `Review/visual-style.md` "Place page" and `src/facts/guides.ts`. | Lesson, article |
+| **Beat** | One of the four steps of a guide: the place, the weather, the ground, what the rules make. A Terroir chapter names its beat; a beat without one shows the fact sheet alone. | Chapter (the written text inside a beat) |
+| **In short** | The box of five key facts after How it tastes, each linked to its beat. | At a glance (retired 19 Oct 2026) |
 | **Terroir** | The written section of a guide (about 600 to 800 words: land, climate, soils, grapes). Progress is counted as "Terroir written, N of 79". | Guide (the whole page) |
 | **Fact sheet** | The short structured part of a guide: kind, region, grapes, area, producers, each with a source tag. | |
 | **Source tag** | The short tag after a fact, pointing to the one Sources list at the end of the guide. | Footnote |
