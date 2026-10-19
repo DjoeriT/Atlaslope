@@ -47,3 +47,9 @@ checks the checker.
 
 ## Effort
 About 3 to 4 hours wall clock. Helpers: 1 sources run, 16 writers, 16 checkers, all Sonnet except the checkers (Opus).
+
+## Result (19 Oct 2026)
+16 guides written and checked. $1.48 per guide measured (session cost $23.66 [V]); the helpers were 2.1M tokens, the rest was the
+thread re-reading itself between runs. 36% of Sonnet sentences needed a fix, so the per-sentence check stays. Hand sample of 3
+guides found no missed fact. Next: a fixed script runs the helpers, so no long thread sits in the middle. Handoff:
+`docs/handoffs/2026-10-19-cheaper-guide-writing.md`.
