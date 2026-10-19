@@ -3,7 +3,7 @@ import type { Round } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
-import { focusNames, listOf, nextDue, questionCount, sharedRegion } from './doors';
+import { focusNames, listOf, nextDue, questionCount, sharedRegion } from './doorsModel';
 import type { QuizApi } from './useQuiz';
 
 const t = strings.quiz;

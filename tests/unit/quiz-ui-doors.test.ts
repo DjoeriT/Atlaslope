@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { replay, studyPlan, type LogEntry } from '../../src/quiz';
 import { loadTree } from '../../src/tree';
-import { dueByRegion, focusNames, listOf, missedToday, nextDue, practiseTree, sharedRegion, tickOf } from '../../src/quiz-ui/doors';
+import { dueByRegion, focusNames, listOf, missedToday, nextDue, practiseTree, sharedRegion, tickOf } from '../../src/quiz-ui/doorsModel';
 
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
 const core = tree.places.filter((p) => p.quiz === 'core');

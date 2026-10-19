@@ -3,7 +3,7 @@ import { reviewRound } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
-import { missedToday, practiseTree, questionCount, tickOf } from './doors';
+import { missedToday, practiseTree, questionCount, tickOf } from './doorsModel';
 import type { QuizApi } from './useQuiz';
 
 const t = strings.quiz.practiseScreen;
