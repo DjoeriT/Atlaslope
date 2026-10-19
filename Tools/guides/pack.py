@@ -81,10 +81,14 @@ def main() -> None:
                   ('docs/guides.md (the parts a writer needs)', doc_sections(ROOT / 'docs/guides.md', GUIDE_SECTIONS)),
                   ('Example of the shape (copy structure, not wording)', (tools / 'example.json').read_text(encoding='utf-8'))]
     else:
-        guide = json.loads((ROOT / f'content/guides/{pid}.json').read_text(encoding='utf-8'))
-        parts += [('Brief', (tools / 'CHECKER.md').read_text(encoding='utf-8')),
-                  (f'The guide, content/guides/{pid}.json', json.dumps(guide, ensure_ascii=False, indent=1)),
-                  ('OpenStreetMap lookups for the flights (already done; do not query again unless one failed)', osm(guide))]
+        parts += [('Brief', (tools / 'CHECKER.md').read_text(encoding='utf-8'))]
+        gf = ROOT / f'content/guides/{pid}.json'
+        # One-shot route (oneshot.workflow.js): the guide is in the checker's prompt, not on disk yet, and oneshot.py checks the
+        # flights against OpenStreetMap after the run.
+        if gf.exists():
+            guide = json.loads(gf.read_text(encoding='utf-8'))
+            parts += [(f'The guide, content/guides/{pid}.json', json.dumps(guide, ensure_ascii=False, indent=1)),
+                      ('OpenStreetMap lookups for the flights (already done; do not query again unless one failed)', osm(guide))]
     parts += [(f'Fact sheet entry "{pid}" (content/facts/{region}.json)', sheet(region, pid)),
               (f'Pliego, every page a guide may use. Cite as "{source}:p<n>"', re.sub(r'[ \t]{2,}', '  ', extract))]
     print(f'# {mode.upper()} PACK: {pid} ({region})\nManifest for check_guide.py: {gp.relative_to(ROOT)}/manifest.json\n')

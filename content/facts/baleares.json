@@ -4,9 +4,9 @@
   {
    "id": "binissalem",
    "why": {
-    "text": "Local varieties ripen fully here, giving warm wines with good alcohol. The reds are fruity and structured, while the whites are fresh.",
+    "text": "Climate, ground and local grapes favour full ripening. Reds are fruity and structured, whites fresh.",
     "cite": [
-     "binissalem-doc:p6"
+     "binissalem-doc-2026:p10"
     ]
    },
    "grapes": {
@@ -19,16 +19,21 @@
      }
     ],
     "cite": [
-     "binissalem-wiki"
+     "binissalem-doc-2026:p2",
+     "binissalem-doc-2026:p9"
     ],
     "others": [
-     "Moscatel Grano Menudo",
+     "Moscatel de Grano Menudo",
      "Moscatel de Alejandría",
      "Cabernet Sauvignon",
      "Callet",
      "Chardonnay",
-     "Giro Ros",
-     "Gorgollasa",
+     "Escursac",
+     "Esperó de Gall",
+     "Fogoneu",
+     "Giró Negre",
+     "Giró Ros",
+     "Gorgollassa",
      "Macabeo",
      "Merlot",
      "Monastrell",
@@ -48,17 +53,17 @@
      "white",
      "sparkling"
     ],
-    "text": "Warm, structured reds, aromatic rosados, fresh whites, and white and rosé sparkling wines.",
+    "text": "Fruity, structured reds, aromatic rosados, fresh whites, and white and rosé sparkling wines.",
     "cite": [
-     "binissalem-doc:p1",
-     "binissalem-doc:p3",
-     "binissalem-doc:p6"
+     "binissalem-doc-2026:p3",
+     "binissalem-doc-2026:p6",
+     "binissalem-doc-2026:p10"
     ]
    },
    "climate": {
     "text": "Conditions favour full ripening and high sugar concentration.",
     "cite": [
-     "binissalem-doc:p6"
+     "binissalem-doc-2026:p10"
     ]
    },
    "soil": {
@@ -66,11 +71,11 @@
     "cite": []
    },
    "tastes": {
-    "text": "Reds: medium to medium-high colour; ripe red fruit with vegetal notes; warm, fleshy, structured. Rosés: red fruit, balanced. Whites: pear, apple, citrus; Moscatel very aromatic; fresh, intense, balanced.",
+    "text": "Reds: fruity, possible vegetal, floral or mineral notes; structure, balance, some persistence. Rosés: fruity; balance, some persistence. Whites: fruity, Moscatel varietal; balance, good intensity.",
     "cite": [
-     "binissalem-doc:p1",
-     "binissalem-doc:p2",
-     "binissalem-doc:p3"
+     "binissalem-doc-2026:p3",
+     "binissalem-doc-2026:p4",
+     "binissalem-doc-2026:p5"
     ]
    },
    "famous": {
@@ -81,12 +86,13 @@
      },
      {
       "name": "Vino espumoso",
-      "text": "Fruity, vegetal aromas; fresh, lively, very fine and persistent."
+      "text": "Fruity aromas; fresh, fine, lively whites; aromatic, persistent rosés."
      }
     ],
     "cite": [
-     "binissalem-doc:p1",
-     "binissalem-doc:p3"
+     "binissalem-doc-2026:p3",
+     "binissalem-doc-2026:p6",
+     "binissalem-doc-2026:p10"
     ]
    },
    "producers": {
@@ -97,10 +103,9 @@
   {
    "id": "pla-i-llevant",
    "why": {
-    "text": "Sea-level island vineyards are cooled by the salty Embat wind. High sun and chalky soils give aromatic wines with high alcohol and integrated acidity.",
+    "text": "Sea-level island vineyards get freshness, humidity and salt from the Embat wind. High sun and limy soils give aromatic, high-alcohol wines with integrated acidity.",
     "cite": [
-     "pla-i-llevant-doc:p5",
-     "pla-i-llevant-doc:p6"
+     "pla-i-llevant-doc-2026:p7"
     ]
    },
    "grapes": {
@@ -109,8 +114,8 @@
     "others": [
      "Moll",
      "Manto Negro",
-     "Gorgollasa",
-     "Giro Ros",
+     "Gorgollassa",
+     "Giró Ros",
      "Fogoneu",
      "Callet",
      "Riesling",
@@ -123,13 +128,12 @@
      "Merlot",
      "Monastrell",
      "Moscatel de Alejandría",
-     "Moscatel Grano Menudo",
+     "Moscatel de Grano Menudo",
      "Parellada",
      "Pinot Noir"
     ],
     "othersCite": [
-     "pla-i-llevant-doc:p5",
-     "pla-i-llevant-doc:p9"
+     "pla-i-llevant-doc-2026:p7"
     ]
    },
    "styles": {
@@ -142,30 +146,26 @@
     ],
     "text": "Whites, rosados and reds, liqueur wines, and sparkling and semi-sparkling wines.",
     "cite": [
-     "pla-i-llevant-doc:p1",
-     "pla-i-llevant-doc:p2",
-     "pla-i-llevant-doc:p3",
-     "pla-i-llevant-doc:p4"
+     "pla-i-llevant-doc-2026:p2"
     ]
    },
    "climate": {
     "text": "Island, almost at sea level; the Embat wind brings freshness, humidity and salt; strong sunshine. No figures given.",
     "cite": [
-     "pla-i-llevant-doc:p5",
-     "pla-i-llevant-doc:p6"
+     "pla-i-llevant-doc-2026:p7"
     ]
    },
    "soil": {
-    "text": "Chalky (calcareous) soils, which boost aromatic compounds.",
+    "text": "Limy (calcareous) soils, which boost aromatic compounds.",
     "cite": [
-     "pla-i-llevant-doc:p5"
+     "pla-i-llevant-doc-2026:p7"
     ]
    },
    "tastes": {
     "text": "Whites and rosés: bright, fresh and fruity; barrel-aged whites voluminous and unctuous. Reds: medium-high colour; fresh fruit when young, ripe fruit with oak when aged; elegant, fleshy, velvety.",
     "cite": [
-     "pla-i-llevant-doc:p1",
-     "pla-i-llevant-doc:p2"
+     "pla-i-llevant-doc-2026:p2",
+     "pla-i-llevant-doc-2026:p3"
     ]
    },
    "famous": {
@@ -184,9 +184,8 @@
      }
     ],
     "cite": [
-     "pla-i-llevant-doc:p2",
-     "pla-i-llevant-doc:p3",
-     "pla-i-llevant-doc:p4"
+     "pla-i-llevant-doc-2026:p4",
+     "pla-i-llevant-doc-2026:p5"
     ]
    },
    "producers": {
