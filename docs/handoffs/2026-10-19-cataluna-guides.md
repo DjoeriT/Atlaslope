@@ -1,7 +1,8 @@
 # Handoff: Cataluña guides, release 42 (19 Oct 2026)
 
-Thread "Cataluña guides" (coordinator spawn 10:08Z). Branch `claude/guides-cataluna-ui9puj`, pushed, no PR yet. Release 42, after 41
-(Guides list and About page): merge only once tag `release-41` exists, merge `main` in (never rebase), then ask "publish release 42".
+Thread "Cataluña guides" (coordinator spawn 10:08Z), continued in a fresh thread at 11:01Z on branch `claude/project-thread-cz5q1g`
+(built on `claude/guides-cataluna-ui9puj`). Release 43 (coordinator 11:28Z: PR #114 is 42): merge only once tag `release-42` exists,
+merge `main` in (never rebase), then ask "publish release 43". Preview: https://claude.ai/artifact/GTuWHa1LnHDWkvfAsxA8Tb
 
 ## Done
 - 12 pliegos, extracts, `content/sources.json` and `data/SOURCES.md` entries. Owner card 10:26Z: use the five nationally approved,
@@ -19,7 +20,18 @@ Thread "Cataluña guides" (coordinator spawn 10:08Z). Branch `claude/guides-cata
 Workflow 20.1M: write 5.57M re-read + 0.74M new, check 4.51M + 0.99M, fact sheets 7.96M + 0.32M. 1.7M per guide (Andalucía 2.6M).
 Sample helper 0.2M (output-side count). Coordinator warned; owner told.
 
-## Open
+## Re-check of the other 9 (fresh thread, owner tapped "Re-check all 9")
+- Run wf_b19ff338-e23 (recheck, full): all 9 guides re-checked with the new miss patterns, 11 to 22 sentence fixes each, mostly
+  label terms the pliego defines; real errors fixed too (Rancio wine alcohol only "si es necesario"; calcárea is limy, not chalky).
+- Fact sheet helpers for 7 places applied 15 notes and skipped 15. The run was stopped before Tarragona and Terra Alta (see tokens);
+  their notes and the two sample notes (Penedès climate, Cava soil) were applied by hand from the checkers' notes, logged in
+  `Review/guides-pipeline/cataluna/fact-sheet-fixes.md`. Alella Mistela line cut to the 15-word limit (facts test failed).
+- Tokens [V, usage.py]: 8.5M against a 4-6M estimate. Checks 4.6M (3.9M re-read, 0.8M new), 0.5M per guide, as estimated.
+  Fact sheets 3.9M for 7 places (3.6M re-read, 0.25M new), about 600K each for 3 or 4 edits; the estimate left them out.
+  Fix in this PR: `pack.py sheet` packs only the cited pliego pages and the workflow tells the sheet helper two steps, no tests.
+  Measure it at the next region's pilot.
+
+## Open (as of the first thread; 1 and the sheet notes are done)
 1. Owner card "Re-check the other 9 Cataluña guides" (recommended: all 9, 4-6M). On "all 9": run the workflow with
    `recheck: true, full: true` and the 9 places other than priorat, penedes, cava. Then apply the two sheet notes above.
 2. Preview Artifact for him (one page, all 12 guides) through a one-shot helper, before the PR.
