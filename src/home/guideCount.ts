@@ -16,7 +16,7 @@ export const fillGuideCount = (html: string, n: number): string => html.replace(
 // order, zones after their place. A new guide file lands in its region by itself; a region with no tile in public/guides/ shows no tile.
 export interface GuideRow { id: string; name: string; label: string; minutes: number; region: string; lede: string; photo: string | null }
 export interface RegionGroup { id: string; name: string; tile: string | null; guides: GuideRow[] }
-export interface Featured { row: GuideRow; photos: string[]; facts: Array<{ key: string; text: string }> }
+export interface Featured { row: GuideRow; photos: string[]; facts: Array<{ key: string; text: string }>; hero: boolean }
 export interface GuideList { rows: GuideRow[]; regions: RegionGroup[]; featured: Featured | null; photos: Record<string, PhotoCredit> }
 export interface PhotoCredit { alt: string; artist: string; licence: string; licenceUrl: string; page: string }
 export interface GuideSources { dir: string; placesFile: string; factsDir: string; photosFile: string; publicDir: string }
@@ -43,6 +43,10 @@ const factsOf = (id: string, factsDir: string): Array<{ key: string; text: strin
   ].filter((f) => f.text);
 };
 
+// The featured guide's satellite view with its flags, the home hero's image (owner 19 Oct 2026 13:50Z: "only the main region satellite image gets the home hero treatment")
+const FEATURED_HERO: Record<string, { src: string; alt: string }> = {
+  rioja: { src: '../home/hero.webp', alt: 'The atlas over Rioja on satellite imagery, with flags on Haro, the Sierra de Cantabria, the Ebro and Alfaro' },
+};
 export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   const { dir, placesFile, factsDir, photosFile, publicDir } = { ...GUIDE_SOURCES, ...src };
   const tree = loadTree(json(placesFile));
@@ -76,7 +80,7 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   if (missing.length) throw new Error(`content/guides: no place in data/places.json for ${missing.join(', ')}`);
   const row = rows.find((r) => r.id === FEATURED_ID);
   const featPhotos = [1, 2, 3].map((n) => `${FEATURED_ID}-${n}`).filter(hasPhoto);
-  const featured = row ? { row, photos: featPhotos, facts: factsOf(row.id, factsDir) } : null;
+  const featured = row ? { row, photos: featPhotos, facts: factsOf(row.id, factsDir), hero: row.id in FEATURED_HERO && existsSync(`${publicDir}/home/hero.webp`) } : null;
   return { rows, regions, featured, photos };
 };
 
@@ -121,15 +125,17 @@ export const fillGuideList = (html: string, list: GuideList): string => {
   const out: string[] = [];
   if (featured) {
     const f = featured.row;
-    const imgs = featured.photos.map((k, i) => photoImg(k, photos, i === 0 ? '(max-width:900px) 90vw, 480px' : '(max-width:900px) 45vw, 240px', true)).join('');
+    const hero = featured.hero ? FEATURED_HERO[f.id] : undefined;
+    const imgs = hero ? '' : featured.photos.map((k, i) => photoImg(k, photos, i === 0 ? '(max-width:900px) 90vw, 480px' : '(max-width:900px) 45vw, 240px', true)).join('');
     const facts = featured.facts.map((x) => `<div><dt>${esc(x.key)}</dt><dd>${esc(x.text)}</dd></div>`).join('');
     out.push(
       '<div class="feat">',
+      hero ? `<figure class="hero-sat"><img src="${hero.src}" alt="${esc(hero.alt)}" width="1400" height="1540" loading="lazy" />${SAT_CREDIT}</figure>` : '',
       imgs ? `<div class="mosaic">${imgs}</div>` : '',
-      `<div class="ft"><span class="kick">${esc(f.label)} · ${f.minutes}-minute read</span><h2>${esc(f.name)}</h2><p class="fl">${esc(f.lede)}</p>`,
+      `<div class="ft"><span class="show">Showcased guide</span><span class="kick">${esc(f.label)} · ${f.minutes}-minute read</span><h2>${esc(f.name)}</h2><p class="fl">${esc(f.lede)}</p>`,
       facts ? `<h3>In short</h3><dl class="facts">${facts}</dl>` : '',
       `<a class="btn a" href="../atlas/#place=${esc(f.id)}&amp;page">Read the ${esc(f.name)} guide</a></div></div>`,
-      creditLine(featured.photos, photos),
+      hero ? '' : creditLine(featured.photos, photos),
     );
   }
   for (const r of regions) {

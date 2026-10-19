@@ -37,6 +37,14 @@ describe('the Guides page', () => {
     const out = fillGuideList(guidesHtml, list);
     for (const r of list.rows) expect(out).toContain(link(r.id));
   });
+  it('shows Rioja as the showcased guide over the home hero satellite view', () => {
+    const list = guideRows();
+    expect(list.featured?.hero).toBe(true);
+    const out = fillGuideList(guidesHtml, list);
+    expect(out).toContain('<span class="show">Showcased guide</span>');
+    expect(out).toContain('<figure class="hero-sat"><img src="../home/hero.webp"');
+    expect(out).not.toContain('class="mosaic"');
+  });
   it('points every photo at a file that exists (release 47: Binissalem has no 800 px copy)', () => {
     const out = fillGuideList(guidesHtml, guideRows());
     const files = [...out.matchAll(/\.\.\/(photos\/[^"\s]+\.webp)/g)].map((m) => m[1]);
@@ -94,7 +102,8 @@ describe('the Guides page', () => {
     expect(regions.find((r) => r.id === 'rioja')?.tile).toBe('rioja.webp');
     const out = fillGuideList(guidesHtml, guideRows());
     expect(out.match(/<figure class="sat">/g)).toHaveLength(regions.filter((r) => r.tile).length);
-    expect(out.match(/Imagery: Esri, Maxar · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length);
+    // plus one for the featured guide's satellite view (the home hero image)
+    expect(out.match(/Imagery: Esri, Maxar · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
   });
   it('gives every region with guides its satellite tile, so a new region cannot ship without one', () => {
     // Cataluña went live in release 43 with no tile; the tiles are rendered by Tools/guides/region_tile.mjs.
@@ -103,7 +112,7 @@ describe('the Guides page', () => {
   });
   it('credits each photo set, never prints text on a photo', () => {
     const out = fillGuideList(guidesHtml, guideRows());
-    expect(out.match(/<p class="credit">Photos:/g)!.length).toBeGreaterThan(guideRows().regions.length);
+    expect(out.match(/<p class="credit">Photos:/g)!.length).toBe(guideRows().regions.length);
     expect(out).not.toContain('title="');
   });
 });
