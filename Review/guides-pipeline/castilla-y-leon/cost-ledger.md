@@ -28,3 +28,4 @@
 | Check | valtiendas | Opus | 81,891 | 2.7 |
 | Check | valles-de-benavente | Opus | 85,437 | 2.8 |
 | Check | arribes | Opus | 84,497 | 2.9 |
+| Check | sierra-de-salamanca | Opus | 84,205 | 3.0 |
