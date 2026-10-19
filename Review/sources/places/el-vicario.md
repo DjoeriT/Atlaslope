@@ -1,6 +1,6 @@
 # El Vicario (VP, PDO-ES-N1634)
 
-Source: pliego de condiciones, pliego-PDO-ES-N1634-el-vicario.txt (https://apliagri.castillalamancha.es/sites/default/files/2025-06/Pliego_Condiciones_vinoDOP_EL_VICARIO.pdf), dated 2025-06. Spanish, quoted as published. Cite as «Pliego PDO-ES-N1634, p. N».
+Source: pliego de condiciones, pliego-PDO-ES-N1634-el-vicario.txt (https://apliagri.castillalamancha.es/sites/default/files/2025-06/Pliego_Condiciones_vinoDOP_EL_VICARIO.pdf), dated 2020-10-19. Spanish, quoted as published. Cite as «Pliego PDO-ES-N1634, p. N».
 
 ## Wine descriptions (p. 1)
 

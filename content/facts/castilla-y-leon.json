@@ -1085,6 +1085,248 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "abadia-retuerta",
+   "why": {
+    "text": "An extreme climate with a wide day-night temperature swing ripens the grapes slowly, giving deeply coloured, structured wines.",
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Albillo Mayor",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Garnacha Tinta",
+     "Gewürztraminer",
+     "Godello",
+     "Graciano",
+     "Malbec",
+     "Merlot",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Riesling",
+     "Sauvignon Blanc",
+     "Syrah",
+     "Tempranillo",
+     "Verdejo"
+    ],
+    "othersCite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Reds: single-grape (oak, 12 months minimum) or blended (6 minimum). Whites: blends, steel tank or oak.",
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "climate": {
+    "text": "Markedly continental, with Atlantic cloud. Rain is moderate, about 490 mm a year, and summers are dry. Recorded extremes: 42 °C and -20 °C.",
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "soil": {
+    "text": "Sandy to clay-loam, weakly alkaline and low in organic matter. A sand cover, centimetres to metres thick, hides varied soils.",
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Vines on the river terrace; river at 725 m, plateaus at 880 m.",
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow to golden; stone fruit or citrus; balanced acidity. Reds: violet-red to tile red; red and black fruit; medium to high structure and length. Oak-aged reds add balsamic or spice notes.",
+    "cite": [
+     "abadia-retuerta-doc2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino Tinto Monovarietal",
+      "text": "Red from one authorised red grape; at least 12 months in oak."
+     },
+     {
+      "name": "Vino Tinto Multivarietal",
+      "text": "Blended red; at least 6 months in oak."
+     },
+     {
+      "name": "Vino Blanco Multivarietal",
+      "text": "Blended white; steel tank or at least 3 months in oak."
+     }
+    ],
+    "cite": [
+     "abadia-retuerta-doc"
+    ]
+   }
+  },
+  {
+   "id": "dehesa-penalba",
+   "why": {
+    "text": "Warm, poor soil of sand and gravel in a sheltered valley floor helps the grapes ripen and gain colour and tannin.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tempranillo"
+     }
+    ],
+    "cite": [
+     "dehesa-penalba-doc"
+    ],
+    "others": [
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Syrah"
+    ],
+    "othersCite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Reds only: young reds, and reds aged 6 to 24 months in wood.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "climate": {
+    "text": "A milder microclimate, at 12 °C mean a year, with good west-east airflow. It has 206 frost-free days; neighbouring areas have under 200.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "soil": {
+    "text": "Sandy river-terrace soil (about 78% sand) with stones and gravel; warm, free-draining and poor in organic matter.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Valley floor at about 720 m, between plateaus of 800 to 840 m.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Deep, steady colour with blue-red tones; ripe red and black fruit; sweet, long-lived tannin; medium-to-full body; long finish.",
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino Tinto Joven",
+      "text": "Young red: cold soak, steel tank, at least 21 days of maceration."
+     },
+     {
+      "name": "Vino Tinto Monovarietal",
+      "text": "Single-grape red aged 12 to 24 months in 225 l oak barrels."
+     },
+     {
+      "name": "Vino Tinto Multivarietal",
+      "text": "Blended red aged 6 to 24 months in oak barrels or wooden vats."
+     }
+    ],
+    "cite": [
+     "dehesa-penalba-doc"
+    ]
+   }
+  },
+  {
+   "id": "uruena",
+   "why": {
+    "text": "Poor, well-drained soils give wines rich in extract and in colour pigments (anthocyanins).",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "uruena-doc2"
+    ],
+    "others": [
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Tempranillo (Tinta del País)"
+    ],
+    "othersCite": [
+     "uruena-doc2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "rose",
+     "red"
+    ],
+    "text": "Rosados and reds, young or oak-aged. Ageing is in French and American oak barrels.",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "climate": {
+    "text": "Semi-arid Mediterranean, with about 410 mm of rain a year. Mean 11.4 °C and 2,650 sun hours. June to September are dry.",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "soil": {
+    "text": "Sandy clay loam with stones; medium-low fertility and organic matter; drains well. Alfisols and inceptisols.",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "altitude": {
+    "text": "Flat ground between 710 and 720 m.",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "tastes": {
+    "text": "Rosés: onion-skin to raspberry pink; fresh fruit and floral notes; fresh. Reds: purple to tile red; red and black fruit, with spice when oak-aged; medium to full body and length.",
+    "cite": [
+     "uruena-doc2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino rosado",
+      "text": "Onion-skin to raspberry-pink rosé; cold skin maceration, then temperature-controlled fermentation."
+     },
+     {
+      "name": "Vino tinto",
+      "text": "Red with a cold soak below 10 °C for at least 24 hours."
+     }
+    ],
+    "cite": [
+     "uruena-doc2"
+    ]
+   }
   }
  ]
 }

@@ -1,4 +1,4 @@
-# Source pack: one extract per quizzed place
+# Source pack: one extract per place
 
 Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/sources/fetched/`.
 
@@ -80,5 +80,35 @@ Built by `Tools/data/cut_extracts.py` from the EU single documents in `Review/so
 | Alicante | [alicante.md](alicante.md) | att-PDO-ES-A1526-31224.txt | 2015-01-23 |
 | Utiel-Requena | [utiel-requena.md](utiel-requena.md) | att-PDO-ES-A0874-28867.txt | 2014-06-30 |
 | Valencia | [valencia.md](valencia.md) | att-PDO-ES-A0872-65829.txt | 2014-06-30 |
+| Cava | [cava.md](cava.md) | oj-PDO-ES-A0735-C_C_2024_6465_30_10_2024.html | 2024-10-30 |
+| Aylés | [ayles.md](ayles.md) | att-PDO-ES-A1522-34164.txt | 2016-01-21 |
+| Islas Canarias | [islas-canarias.md](islas-canarias.md) | att-PDO-ES-A1511-27631.txt | 2014-06-30 |
+| Abadía Retuerta | [abadia-retuerta.md](abadia-retuerta.md) | oj-PDO-ES-02481-C_4_6_1_2023.html | 2023-01-06 |
+| Dehesa Peñalba | [dehesa-penalba.md](dehesa-penalba.md) | oj-PDO-ES-02592-C_398_1_10_2021.html | 2021-10-01 |
+| Urueña | [uruena.md](uruena.md) | oj-PDO-ES-02485-C_208_24_5_2022.html | 2022-05-24 |
+| Calzadilla | [calzadilla.md](calzadilla.md) | att-PDO-ES-A0056-29578.txt | 2014-06-27 |
+| Campo de la Guardia | [campo-de-la-guardia.md](campo-de-la-guardia.md) | att-PDO-ES-A0055-29565.txt | 2014-06-27 |
+| Casa del Blanco | [casa-del-blanco.md](casa-del-blanco.md) | att-PDO-ES-A0060-29754.txt | 2014-06-27 |
+| Dehesa del Carrizal | [dehesa-del-carrizal.md](dehesa-del-carrizal.md) | att-PDO-ES-A0054-17425.txt | 2013-08-07 |
+| Dominio de Valdepusa | [dominio-de-valdepusa.md](dominio-de-valdepusa.md) | att-PDO-ES-A0052-38929.txt | 2016-11-29 |
+| El Vicario | [el-vicario.md](el-vicario.md) | pliego-PDO-ES-N1634-el-vicario.txt | 2020-10-19 |
+| Finca Élez | [finca-elez.md](finca-elez.md) | att-PDO-ES-A0053-29498.txt | 2014-06-27 |
+| Guijoso | [guijoso.md](guijoso.md) | att-PDO-ES-A0058-29738.txt | 2014-06-27 |
+| La Jaraba | [la-jaraba.md](la-jaraba.md) | oj-PDO-ES-01895-C_66_26_2_2021.html | 2021-02-26 |
+| Los Cerrillos | [los-cerrillos.md](los-cerrillos.md) | oj-PDO-ES-02228-C_65_25_2_2021.html | 2021-02-25 |
+| Pago Florentino | [pago-florentino.md](pago-florentino.md) | att-PDO-ES-A0057-29728.txt | 2014-06-27 |
+| Río Negro | [rio-negro.md](rio-negro.md) | oj-PDO-ES-03003-C_C_2024_7000_21_11_2024.html | 2024-11-21 |
+| Rosalejo | [rosalejo.md](rosalejo.md) | oj-PDO-ES-02880-C_2023_1053_21_11_23.html | 2023-11-21 |
+| Vallegarcía | [vallegarcia.md](vallegarcia.md) | oj-PDO-ES-02085-C_57_13_2_2019.html | 2019-02-13 |
+| Cataluña / Catalunya | [catalunya.md](catalunya.md) | att-PDO-ES-A1549-29855.txt | 2014-06-30 |
+| Bolandin | [bolandin.md](bolandin.md) | oj-PDO-ES-N1876-C_504_14_12_2021.html | 2021-12-14 |
+| Pago de Arínzano | [arinzano.md](arinzano.md) | att-PDO-ES-A0183-27164.txt | 2014-06-26 |
+| Pago de Otazu | [otazu.md](otazu.md) | att-PDO-ES-A0184-27356.txt | 2014-06-26 |
+| Prado de Irache | [prado-de-irache.md](prado-de-irache.md) | att-PDO-ES-A0182-27380.txt | 2014-06-26 |
+| Chozas Carrascal | [chozas-carrascal.md](chozas-carrascal.md) | oj-PDO-ES-N1637-C_35_3_2_2020.html | 2020-02-03 |
+| El Terrerazo | [el-terrerazo.md](el-terrerazo.md) | att-PDO-ES-A0940-28727.txt | 2014-06-30 |
+| Los Balagueses | [los-balagueses.md](los-balagueses.md) | att-PDO-ES-A0941-28806.txt | 2014-06-30 |
+| Tharsys | [tharsys.md](tharsys.md) | oj-PDO-ES-02086-C_C_2025_3093_6_6_2025.html | 2025-06-06 |
+| Vera de Estenas | [vera-de-estenas.md](vera-de-estenas.md) | oj-PDO-ES-N1665-C_235_12_7_2019.html | 2019-07-12 |
 
 Missing: none.

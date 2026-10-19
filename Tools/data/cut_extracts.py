@@ -20,7 +20,7 @@ SECTIONS = [  # (key, title, heading pattern); headings vary a little between do
     ("practices", None, r"PR[ÁA]CTICAS (?:VITIVIN[ÍI]COLAS|ENOL[ÓO]GICAS)"),
     ("area", "Delimited area", r"ZONA (?:GEOGR[ÁA]FICA )?DELIMITADA|DEMARCACI[ÓO]N DE (?:LA )?ZONA|DELIMITACI[ÓO]N DE LA ZONA|DELIMITACI[ÓO]N DEL [ÁA]REA|ZONA GEOGR[ÁA]FICA$"),
     ("yields", None, r"RENDIMIENTOS? M[ÁA]XIMOS?"),
-    ("grapes", "Main grape varieties", r"(?:PRINCIPALES )?(?:UVAS|VARIEDADES?) DE (?:UVA DE )?VINIFICACI[ÓO]N|VARIEDADES? DE UVA|VARIEDADES? DE VID|VARIEDADES AUTORIZADAS|VARIEDAD O VARIEDADES|VARIEDADES VIN[ÍI]FERAS"),
+    ("grapes", "Main grape varieties", r"(?:PRINCIPAL(?:\(ES\)|ES)? )?(?:UVAS|VARIEDAD(?:\(ES\)|ES)?) DE (?:UVA DE )?VINIFICACI[ÓO]N|VARIEDADES? DE UVA|VARIEDADES? DE VID|VARIEDADES AUTORIZADAS|VARIEDAD O VARIEDADES|VARIEDADES VIN[ÍI]FERAS"),
     ("link", "Link with the area (soil, climate, altitude)", r"DESCRIPCI[ÓO]N DEL? \(?(?:DE )?(?:LOS\)? )?V[ÍI]NCULO|V[ÍI]NCULO CON LA ZONA|ELEMENTOS QUE APORTAN EL V[ÍI]NCULO|V[ÍI]NCULO$"),
     ("extra", None, r"CONDICIONES COMPLEMENTARIAS|REQUISITOS APLICABLES|OTROS DATOS|OTRAS CONDICIONES|DISPOSICIONES APLICABLES|VERIFICACI[ÓO]N DEL CUMPLIMIENTO|OTROS REQUISITOS"),
     ("pliego", "Link to the pliego", r"ENLACE AL PLIEGO|REFERENCIA A LA PUBLICACI[ÓO]N DEL PLIEGO"),
@@ -73,7 +73,7 @@ def cut_from(t, s0):
 
 
 # Pliegos whose file and URL carry no date: the date of the act that registered the text.
-PLIEGO_DATES = {"pliego-PDO-ES-02585-urbezo": "2024-10-25"}  # Implementing Regulation (EU) 2024/2742, OJ L of 25.10.2024
+PLIEGO_DATES = {"pliego-PDO-ES-02585-urbezo": "2024-10-25", "pliego-PDO-ES-N1634-el-vicario": "2020-10-19"}  # Urbezo: Implementing Regulation (EU) 2024/2742, OJ L of 25.10.2024. El Vicario: revision 1, DOCM 19 Oct 2020
 
 
 def _date_of(path):

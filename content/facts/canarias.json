@@ -663,6 +663,117 @@
    }
   },
   {
+   "id": "islas-canarias",
+   "why": {
+    "text": "Phylloxera is absent, so vines grow on their own roots in loose volcanic soils.",
+    "cite": [
+     "islas-canarias-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bermejuela (Marmajuelo)",
+     "Vijariego Blanco",
+     "Verdello",
+     "Tintilla",
+     "Sabro",
+     "Negramoll",
+     "Moscatel de Alejandría",
+     "Malvasía Volcánica",
+     "Malvasía Rosada",
+     "Malvasía Aromática (Malvasía de Sitges)",
+     "Listán Negro",
+     "Gual",
+     "Forastera Blanca",
+     "Doradilla",
+     "Castellana Negra",
+     "Bastardo (Baboso) Blanco",
+     "Bastardo (Baboso) Negro",
+     "Brebal",
+     "Burrablanca",
+     "Cabernet Sauvignon",
+     "Listán Blanco de Canarias",
+     "Listán Prieto",
+     "Merlot",
+     "Moscatel Negro",
+     "Pedro Ximénez",
+     "Pinot Noir",
+     "Ruby Cabernet",
+     "Syrah",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Torrontés",
+     "Vijariego Negro"
+    ],
+    "othersCite": [
+     "islas-canarias-doc:p6",
+     "islas-canarias-doc:p10",
+     "islas-canarias-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sparkling"
+    ],
+    "text": "Whites, rosés and reds; liqueur wines; overripe-grape wines; quality sparkling; lightly sparkling aguja wines.",
+    "cite": [
+     "islas-canarias-doc:p1",
+     "islas-canarias-doc:p2",
+     "islas-canarias-doc:p3",
+     "islas-canarias-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Trade winds and a cold Atlantic current. Average yearly rain is low.",
+    "cite": [
+     "islas-canarias-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic soils, loose and permeable; fertile and slightly acid.",
+    "cite": [
+     "islas-canarias-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: yellow with green or amber tones; fruity, fresh. Rosés: pink; fruity. Reds: cherry red (picota) with violet tones; red fruit, medium tannin; ageing adds spice and balsamic notes.",
+    "cite": [
+     "islas-canarias-doc:p1",
+     "islas-canarias-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vinos de licor",
+      "text": "Yellow and unctuous; raisin, spice and dried apricot; velvety, intense, fruity finish."
+     },
+     {
+      "name": "Vinos de uvas sobremaduras",
+      "text": "Yellow and unctuous like the liqueur wines; raisin and spice; velvety, balanced, intense."
+     },
+     {
+      "name": "Vino espumoso de calidad",
+      "text": "Pale yellow to gold, with small lasting bubbles; clean fruity nose; fresh."
+     },
+     {
+      "name": "Vino de aguja gasificado",
+      "text": "Visible bubbles; fresh and balanced, with a clean prickle of carbon dioxide."
+     }
+    ],
+    "cite": [
+     "islas-canarias-doc:p2",
+     "islas-canarias-doc:p3",
+     "islas-canarias-doc:p4"
+    ]
+   }
+  },
+  {
    "id": "abona",
    "why": {
     "text": "Vines grow from 300 to 1,700 m on gentle slopes in arid south-east Tenerife. The heat is high and the sun strong.",

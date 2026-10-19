@@ -622,6 +622,193 @@
    "cite": [
     "rioja-pliego:p20"
    ]
+  },
+  "arinzano": {
+   "title": "Big day-night gaps slow the ripening",
+   "cite": [
+    "arinzano-doc:p4",
+    "arinzano-doc2"
+   ]
+  },
+  "ayles": {
+   "title": "Calcareous soils poor in nitrogen",
+   "cite": [
+    "ayles-doc:p4"
+   ]
+  },
+  "calzadilla": {
+   "title": "Alkaline soil, slow and even ripening",
+   "cite": [
+    "calzadilla-doc:p3"
+   ]
+  },
+  "campo-de-la-guardia": {
+   "title": "Salty soils keep the grapes small",
+   "cite": [
+    "campo-de-la-guardia-doc:p5"
+   ]
+  },
+  "casa-del-blanco": {
+   "title": "Lithium from the soil, in the wine",
+   "cite": [
+    "casa-del-blanco-doc:p1",
+    "casa-del-blanco-doc:p3"
+   ]
+  },
+  "catalunya": {
+   "title": "Strong sun for deep colour",
+   "cite": [
+    "catalunya-doc:p6"
+   ]
+  },
+  "cava": {
+   "title": "Cool cellars for the second fermentation",
+   "cite": [
+    "cava-doc:p6",
+    "cava-doc:p7"
+   ]
+  },
+  "dehesa-del-carrizal": {
+   "title": "North-facing vines with an Atlantic feel",
+   "cite": [
+    "dehesa-del-carrizal-doc:p7",
+    "dehesa-del-carrizal-doc:p8"
+   ]
+  },
+  "dominio-de-valdepusa": {
+   "title": "Clay for power, limestone for velvet",
+   "cite": [
+    "dominio-de-valdepusa-doc:p4"
+   ]
+  },
+  "el-terrerazo": {
+   "title": "Sun all day at 870 metres",
+   "cite": [
+    "el-terrerazo-doc:p3"
+   ]
+  },
+  "finca-elez": {
+   "title": "Vines at 1,080 metres keep their acidity",
+   "cite": [
+    "finca-elez-doc:p6"
+   ]
+  },
+  "guijoso": {
+   "title": "Slow-ripening grapes, deep colour",
+   "cite": [
+    "guijoso-doc:p4"
+   ]
+  },
+  "islas-canarias": {
+   "title": "Vines on their own roots, free of phylloxera",
+   "cite": [
+    "islas-canarias-doc:p7"
+   ]
+  },
+  "los-balagueses": {
+   "title": "A sloping vineyard turned to the sun",
+   "cite": [
+    "los-balagueses-doc:p4"
+   ]
+  },
+  "otazu": {
+   "title": "Atlantic air lengthens the growing cycle",
+   "cite": [
+    "otazu-doc:p3",
+    "otazu-doc2"
+   ]
+  },
+  "pago-florentino": {
+   "title": "Ripe fruit beside natural lagoons",
+   "cite": [
+    "pago-florentino-doc:p3"
+   ]
+  },
+  "prado-de-irache": {
+   "title": "A cold north wind keeps the acidity",
+   "cite": [
+    "prado-de-irache-doc:p3"
+   ]
+  },
+  "rosalejo": {
+   "title": "Poor, acid soils keep reds fresh",
+   "cite": [
+    "rosalejo-doc"
+   ]
+  },
+  "vallegarcia": {
+   "title": "Day-night swings build firm tannins",
+   "cite": [
+    "vallegarcia-doc"
+   ]
+  },
+  "abadia-retuerta": {
+   "title": "Wide day-night swings slow the ripening",
+   "cite": [
+    "abadia-retuerta-doc"
+   ]
+  },
+  "bolandin": {
+   "title": "A hot south slope for deep-coloured reds",
+   "cite": [
+    "bolandin-doc",
+    "bolandin-doc2"
+   ]
+  },
+  "chozas-carrascal": {
+   "title": "Cold north winds at 720 metres",
+   "cite": [
+    "chozas-carrascal-doc"
+   ]
+  },
+  "dehesa-penalba": {
+   "title": "Warm sandy soil for colour and tannin",
+   "cite": [
+    "dehesa-penalba-doc"
+   ]
+  },
+  "el-vicario": {
+   "title": "Calcium-rich soils for balanced wines",
+   "cite": [
+    "el-vicario-doc:p11",
+    "el-vicario-doc:p12"
+   ]
+  },
+  "la-jaraba": {
+   "title": "Strontium-rich soils, a mineral note",
+   "cite": [
+    "la-jaraba-doc"
+   ]
+  },
+  "los-cerrillos": {
+   "title": "A cool site ringed by hills",
+   "cite": [
+    "los-cerrillos-doc"
+   ]
+  },
+  "rio-negro": {
+   "title": "A high plateau keeps the acidity",
+   "cite": [
+    "rio-negro-doc"
+   ]
+  },
+  "tharsys": {
+   "title": "Loose limestone and slow ripening",
+   "cite": [
+    "tharsys-doc"
+   ]
+  },
+  "uruena": {
+   "title": "Poor soils for deep colour",
+   "cite": [
+    "uruena-doc2"
+   ]
+  },
+  "vera-de-estenas": {
+   "title": "Shallow water table keeps acidity balanced",
+   "cite": [
+    "vera-de-estenas-doc"
+   ]
   }
  }
 }

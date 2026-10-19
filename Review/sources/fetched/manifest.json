@@ -4105,6 +4105,16 @@
   "type": "text/html; charset=UTF-8",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202600713"
  },
+ "oj-PDO-ES-N1876-C_C_2026_713_30_1_2026.html": {
+  "bytes": 51201,
+  "fetched": "2026-10-19T04:44:32+00:00",
+  "final_url": "http://publications.europa.eu/resource/cellar/d7065b83-fd7e-11f0-8da5-01aa75ed71a1",
+  "sha256": "e9b0b80d40c0702a602a5883cf646e50804f1a85366314fcea0f7778c26fff2a",
+  "status": 200,
+  "truncated": false,
+  "type": "application/xhtml+xml;charset=UTF-8",
+  "url": "http://publications.europa.eu/resource/cellar/d7065b83-fd7e-11f0-8da5-01aa75ed71a1"
+ },
  "pliego-PDO-ES-02348-cebreros": {
   "fetched": "2026-10-16T13:50:00+00:00",
   "final_url": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/cebreros_2020_09_07_tcm30-512540.pdf",
