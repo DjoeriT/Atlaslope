@@ -3,6 +3,7 @@
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
 - [2026-10-19-one-main-thread](2026-10-19-one-main-thread.md): one main thread, no side sessions (19 Oct 2026)
+- [2026-10-19-meseta-batch-2](2026-10-19-meseta-batch-2.md): Meseta batch 2, 20 of 25 guides; batch 3 and guides-page notes (19 Oct 2026)
 - [2026-10-19-meseta-batch-1](2026-10-19-meseta-batch-1.md): Meseta batch 1, 12 of 25 guides (19 Oct 2026)
 - [2026-10-19-meseta-pilot](2026-10-19-meseta-pilot.md): Meseta pilot of the local region route (19 Oct 2026)
 - [2026-10-19-claude-md-split](2026-10-19-claude-md-split.md): CLAUDE.md split into local and cloud parts (19 Oct 2026)

@@ -25,7 +25,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Release 49 (tag `release-49`; `git tag -l 'release-*'` for the latest): Mediterranean (11, PR #123) and Canarias (11, PR #124) guides,
   home study line (PR #125); commit `229294d` [O]. Release 48: Binissalem photo fix and a Rioja "Showcased guide" on the Guides page using
   the home-hero satellite view (rotation dropped by owner). Release 47: Ebro. Guides: 84 of 109 places [V, unit test roster]: Rioja, Green Spain, Castilla y León, Andalucía, Cataluña,
-  Baleares, Ebro, Mediterranean, Canarias. Left: Meseta, 13 of 25 places (batch 1, 12 places, is in release 50). Each region runs only on the
+  Baleares, Ebro, Mediterranean, Canarias. Left: Meseta, 5 of 25 places (batch 1 is in release 50; batch 2, 8 places, in its PR). Each region runs only on the
   owner's "use a workflow for X" (the sources step, then `region.workflow.js`).
 - Source quirks: mapa.gob.es, navarra.es refuse; portalagrari.gva.es pliego links 404. Use the Consejo Regulador copy (Jumilla:
   jumilla.wine; Ebro: INTIA) or EU Cellar SPARQL (works; Canarias newer single documents as `<id>-doc2`). EU single document only is OK
@@ -83,7 +83,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region; 96/109 guides live after batch 1, release 50). Next: batch 2 (13 places, see `docs/handoffs/2026-10-19-meseta-batch-1.md`) on the local route in "Run a region locally" (sources by script, one headless run per place, 2-place pilot, batches of ~8); ~25M on the old route, target 12-15M [A]. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region; 104/109 guides after batch 2, 0.56M a place measured). Next: batch 3 (last 5 places plus the home page copy, see `docs/handoffs/2026-10-19-meseta-batch-2.md`) on the local route in "Run a region locally" (sources by script, one headless run per place, 2-place pilot, batches of ~8); ~25M on the old route, target 12-15M [A]. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

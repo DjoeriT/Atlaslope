@@ -1,0 +1,70 @@
+{
+ "id": "pago-florentino",
+ "title": "Why Pago Florentino tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "One south-facing site beside natural lagoons, in Ciudad Real. The orientation and the lagoons give very ripe fruit aromas with a fresh feel in the mouth.",
+  "cite": [
+   "pago-florentino-doc:p2",
+   "pago-florentino-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "One site under a sierra",
+   "paras": [
+    "The whole denomination is one site, by the humilladero (wayside shrine) called La Solana, in the municipality of Malagón in Ciudad Real.",
+    "The vineyard lies on the foothills of the Sierra de Malagón. The slopes face south. The natural lagoons of Nava Grande and Nava En medio lie beside the vineyard."
+   ],
+   "cite": [
+    "pago-florentino-doc:p2",
+    "pago-florentino-doc:p3"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Malagón",
+     "point": [
+      -3.88,
+      39.15
+     ],
+     "zoom": 10,
+     "caption": "The vineyard is on the foothills of the Sierra de Malagón, on south-facing slopes.",
+     "cite": [
+      "pago-florentino-doc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Sheltered sun, early harvest",
+   "paras": [
+    "The slopes are sheltered from the north winds, so the site is a solana (a sun-facing slope). The orientation and the climate make Tempranillo particularly early here.",
+    "The grapes ripen sooner. The harvest starts 15 days before the surrounding vineyards."
+   ],
+   "cite": [
+    "pago-florentino-doc:p3"
+   ]
+  },
+  {
+   "id": "pago",
+   "beat": "rules",
+   "title": "A red built on Tempranillo",
+   "paras": [
+    "Pago Florentino protects one wine type, a red made at least 90% from Tempranillo. Syrah and Petit Verdot can be blended in, but together they never pass 10%.",
+    "Each variety is made separately. Fermentation is started by the grapes' own yeasts under normal conditions, and the skins stay in contact with the wine for 7 to 21 days. Yields are capped at 10,000 kg of grapes per hectare, or 70 hl per hectare.",
+    "The wine is deep and lively. The nose is fresh and direct. In the mouth come balsamic, velvety sensations. It is rich and very expressive, with a long finish."
+   ],
+   "cite": [
+    "pago-florentino-doc:p1",
+    "pago-florentino-doc:p2",
+    "pago-florentino-doc:p3",
+    "pago-florentino-doc:p6",
+    "pago-florentino-doc:p7"
+   ]
+  }
+ ]
+}

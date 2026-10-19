@@ -1,0 +1,84 @@
+{
+ "id": "la-jaraba",
+ "title": "Why La Jaraba tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "La Jaraba's soil holds far more strontium than the land around it. The wines carry that strontium too, along with marked mineral notes.",
+  "cite": [
+   "la-jaraba-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hollow",
+   "beat": "place",
+   "title": "A flat hollow filled with sediment",
+   "paras": [
+    "La Jaraba is the name of a rural site in the municipality of El Provencio, in Cuenca. The delimited zone covers about 75 ha, inside the larger La Mancha protected origin (DOP).",
+    "It lies in a depression filled with sediment. An old watercourse, now intermittent, crosses it: the Cañada de Valdelobos, which ends in the river Záncara, the border between the provinces of Cuenca and Albacete.",
+    "There is no real relief. The ground is completely flat, at 700 m above sea level."
+   ],
+   "cite": [
+    "la-jaraba-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "River Záncara",
+     "point": [
+      -2.7022,
+      39.4322
+     ],
+     "zoom": 10,
+     "caption": "The Cañada de Valdelobos ends in the Záncara, the border between Cuenca and Albacete.",
+     "cite": [
+      "la-jaraba-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter from the Levante",
+   "paras": [
+    "The climate is temperate Mediterranean with continental traits. Annual means are 14 to 16 °C and 450 mm of rain.",
+    "Holm oak and pine woods, 92 ha of them, wrap around much of the vineyard. This setting gives a particular microclimate. It largely spares the vines the water stress of the hot, dry Levante wind.",
+    "That lets the grapes ripen for longer. They gain more colour than grapes grown outside the zone. They also gain quality tannins and more aroma."
+   ],
+   "cite": [
+    "la-jaraba-doc:p1"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Red soil rich in strontium",
+   "paras": [
+    "The ground is Quaternary, part of the Guadiana river system. Its make-up varies: quartzite and quartz mix with old limestone. This lets it hold moisture longer. It also sets it apart from nearby land, which is far more limy.",
+    "The soils are alfisols: red Mediterranean soil over limestone. The texture runs from sandy loam to clay. A limestone crust appears at about 60 to 90 cm.",
+    "The soil is rich in coarse river pebbles. With yearly manure from the estate's own sheep, they give an airy, cool soil profile.",
+    "The strontium is what sets the zone apart. Soils here hold 111.67 to 158.41 mg/kg. Nearby Los Canforrales has 76.59 mg/kg, and Manteleros only 20.19 mg/kg, almost 8 times less.",
+    "It carries into the wines. Wines from La Jaraba hold above 2.2 mg/l of strontium, up to 3.3 mg/l in some. Wines from the neighbouring zones hold 0.95 to 1.6 mg/l."
+   ],
+   "cite": [
+    "la-jaraba-doc:p1"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Oak-aged reds and a Sauvignon Blanc white",
+   "paras": [
+    "The main grapes are Merlot and Tempranillo, called Cencibel here. Cabernet Sauvignon and Graciano are also allowed for reds. Sauvignon Blanc is the only white grape.",
+    "A red blend mixes Tempranillo with Cabernet Sauvignon and Merlot, in variable proportions. Graciano may join them. Blends spend at least 3 months in 225-litre oak barrels and at least 1 month in bottle. A single-grape Merlot spends at least 6 months in oak and 6 in bottle.",
+    "Ageing in barrel and bottle turns the reds a ripe cherry red of medium-high intensity. They smell of red and black fruit. In the mouth they are broad and fleshy, with marked mineral notes and a balsamic touch.",
+    "The white is a single-grape Sauvignon Blanc, fermented in stainless steel at 10 to 21 °C. It is straw yellow. It smells of white stone fruit with floral touches. In the mouth it is fresh and silky.",
+    "Every wine must hold at least 2.2 mg/l of strontium.",
+    "Winemaking and bottling must happen at the winery inside the zone."
+   ],
+   "cite": [
+    "la-jaraba-doc:p1"
+   ]
+  }
+ ]
+}

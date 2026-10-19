@@ -73,3 +73,39 @@
 - kept NOT applied `grapes.main` / `grapes.others`: "Principales variedades de uva de vinificación" is the fixed heading of section 7
   in every EU single document, not a principal-vs-secondary split (no secondary list exists). Meseta sheets fill `main` only where the
   pliego itself splits them (La Mancha, Mondéjar, Vinos de Madrid). The four grapes stay under others.
+
+## almansa
+- applied `grapes.main`: sheet has no main grapes; pliego p6 lists PRINCIPALES UVAS: Verdejo, Monastrell, Garnacha Tintorera
+- applied `grapes.others`: sheet lists the three main grapes among the others; pliego p11 lists only these as UVAS SECUNDARIAS
+- applied `grapes.othersCite`: once the main grapes move out, the secondary grapes come only from p11
+- applied `styles.text`: sheet says barrel-aged rosados and all styles dry to sweet; pliego p2/p4 gives sweet versions only for young wines and roble reds, and barrel wines only for whites (p2) and reds (p3-p4)
+- applied `tastes.text`: sheet says 'tile tones'; pliego p4 says 'posibles tonalidades teja' (hedge dropped)
+
+## campo-de-calatrava
+- applied `climate.text`: sheet says disease risk almost nil; pliego says only the risk of damp-related disease is "prácticamente inexistente", p9
+- NOT applied (unsure) `soil.text`: sheet says dark clay-loam soils; pliego says clay loam is the subsoil ("horizontes subsuperficiales") and the stoniness is in the surface of some profiles, p8 -> "Dark soils, clay loam below, often stony on top; low in calcium, high in potassium; volcanic rock."
+- applied `famous.styles`: sheet says the reds reach ochre or brown; pliego says Crianza "pudiendo llegar al tono anaranjado" and only Reserva and Gran Reserva reach "ocres/marrones", p4
+
+## casa-del-blanco
+- applied `grapes.main`: sheet has main empty; pliego p3 lists these five under PRINCIPALES UVAS DE VINIFICACIÓN
+- applied `grapes.others`: sheet lists all nine as others; pliego p8 lists only these four as UVAS DE VINIFICACIÓN SECUNDARIAS
+- applied `grapes.othersCite`: others now come from p8 only; p3 holds the main grapes
+
+## el-vicario
+- applied `climate.text`: sheet says 'Milder than the surrounding area'; pliego says 'un mesoclima más suave' with no comparison to the surroundings, p11
+
+## finca-elez
+- applied `grapes.main`: sheet has no main grapes; pliego p5-p6 'PRINCIPALES UVAS': Cabernet Sauvignon, Tempranillo/Cencibel/Tinto de Toro, Chardonnay
+- applied `grapes.others`: sheet lists all five as others; pliego p9-p10 'UVAS DE VINIFICACIÓN SECUNDARIAS': only Merlot and Syrah
+- applied `grapes.othersCite`: secondary grapes are on p9-p10; p6 holds the main ones
+- NOT applied (unsure) `why.text`: sheet makes altitude the cause of good acidity; p6 only says acidity balances usually fairly high alcohol, giving fresher wines better for ageing -> "At 1,080 m, in dry continental air. Good acidity balances fairly high alcohol, giving fresher wines for ageing."
+- applied `famous.styles`: sheet says the barrel Chardonnay has aromas 'with oak'; p2 says 'aromas frutales, florales y de crianza' (ageing aromas)
+
+## guijoso
+- applied `grapes.main`: sheet says main is empty; pliego p4 lists these four under 'PRINCIPALES UVAS DE VINIFICACIÓN'
+- applied `grapes.others`: sheet puts all six grapes in others; pliego p7 lists only these two as 'UVAS DE VINIFICACIÓN SECUNDARIAS'
+
+## la-jaraba
+- applied `grapes.main`: sheet says main grapes [], pliego says 'Principales variedades de uva de vinificación: MERLOT, TEMPRANILLO — CENCIBEL', p1
+- applied `grapes.others`: sheet lists Tempranillo and Merlot as others, pliego names them the main varieties, p1
+- applied `why.text`: sheet says the soils 'give' the wines, pliego says the strontium 'contribuye a producir unos vinos intensos, con marcadas notas minerales', p1
