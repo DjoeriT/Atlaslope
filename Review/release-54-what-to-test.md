@@ -17,3 +17,10 @@ Hard-reload first (Cmd+Shift+R).
    Rioja names Rioja Alta, Rioja Alavesa and Rioja Oriental.
    Under each tile is the line "Imagery: Esri, Maxar · Spain: PNOA © IGN".
 5. On a phone, scroll the whole page. Nothing scrolls sideways.
+
+## For you
+- Commits: the Guides page build (PR 143): page code, tile script, 10 new region tiles, design check, records.
+- Checks: PR 143's CI run on its head commit (check, scope, UI 1-4 of 4); unit home + guides 22 of 22 and build locally.
+- Design check: ReviewBot, ship, 4 lows (`Review/guides-build-design-check.md`).
+- Open: Canarias tile mostly sea; Rioja's dark fill; Green Spain neighbour outlines; long phone page.
+- Not verified: Safari, iPad, real phones, large text, reduced motion.
