@@ -4,7 +4,7 @@
   {
    "id": "montilla-moriles",
    "why": {
-    "text": "Hot, dry summers ripen the grapes quickly. The Superior subzone lies on albariza, the best soil for generosos and liqueur wines.",
+    "text": "One of the world's hottest growing seasons ripens the grapes quickly. The Superior subzone lies on albariza, the best soil for generosos and liqueur wines.",
     "cite": [
      "montilla-moriles-pliego:p10"
     ]
@@ -19,8 +19,15 @@
      "montilla-moriles-pliego:p8"
     ],
     "others": [
+     "Layren",
+     "Baladí",
+     "Verdejo",
+     "Moscatel de Grano Menudo",
      "Moscatel de Alejandría",
-     "Moscatel de Grano Menudo"
+     "Torrontés",
+     "Chardonnay",
+     "Sauvignon Blanc",
+     "Macabeo"
     ],
     "othersCite": [
      "montilla-moriles-pliego:p8"
@@ -32,13 +39,14 @@
      "fortified",
      "sweet"
     ],
-    "text": "Young whites, unaged or aged; generosos Fino (unfortified or fortified), Amontillado, Oloroso and Palo Cortado; sweet Pedro Ximénez and Moscatel; Generoso de Licor, Pale Cream and Cream.",
+    "text": "Whites: young (joven), unaged or aged; generosos Fino (unfortified or fortified), Amontillado, Oloroso and Palo Cortado; sweet Pedro Ximénez and Moscatel; Generoso de Licor, Pale Cream and Cream.",
     "cite": [
-     "montilla-moriles-pliego:p1"
+     "montilla-moriles-pliego:p1",
+     "montilla-moriles-pliego:p6"
     ]
    },
    "climate": {
-    "text": "Semi-continental Mediterranean: long, hot, dry summers and short, relatively mild winters, which speed up ripening.",
+    "text": "Semi-continental Mediterranean: long, hot, dry summers and short, relatively mild winters. Its growing season is among the world's hottest, which speeds up ripening.",
     "cite": [
      "montilla-moriles-pliego:p9",
      "montilla-moriles-pliego:p10"
@@ -90,7 +98,7 @@
   {
    "id": "granada",
    "why": {
-    "text": "Half the area lies above 1,000 m: grapes ripen slowly, with a daily temperature swing. Most vines grow on poor brown soils over siliceous rock.",
+    "text": "About half the area lies above 1,000 m: grapes ripen slowly, with a daily swing. Most vines grow on poor brown soils over siliceous rock.",
     "cite": [
      "granada-pliego:p11"
     ]
@@ -152,7 +160,7 @@
     ]
    },
    "altitude": {
-    "text": "Half of the area lies above 1,000 m above sea level.",
+    "text": "About half of the area lies above 1,000 m above sea level.",
     "cite": [
      "granada-pliego:p11"
     ]
@@ -170,14 +178,15 @@
       "text": "White, rosé or red wine made from overripe grapes."
      },
      {
-      "name": "Vino espumoso de calidad",
-      "text": "White, rosé or red sparkling wine with persistent foam."
+      "name": "Vino espumoso, Vino espumoso de calidad",
+      "text": "White or rosé sparkling wine, from a white or rosé base wine, with persistent foam."
      }
     ],
     "cite": [
      "granada-pliego:p1",
      "granada-pliego:p2",
-     "granada-pliego:p3"
+     "granada-pliego:p3",
+     "granada-pliego:p4"
     ]
    },
    "producers": {
@@ -188,10 +197,11 @@
   {
    "id": "condado-de-huelva",
    "why": {
-    "text": "A flat Guadalquivir lowland near Doñana, where Atlantic influence softens a Mediterranean climate. Generosos age in criaderas and solera or by vintage (añadas).",
+    "text": "A flat Guadalquivir lowland near Doñana; Mediterranean, with oceanic touches through its opening to the Atlantic. Generosos age in criaderas and solera or by vintage.",
     "cite": [
      "condado-de-huelva-doc:p6",
-     "condado-de-huelva-pliego:p5"
+     "condado-de-huelva-pliego:p5",
+     "condado-de-huelva-pliego:p9"
     ]
    },
    "grapes": {
@@ -273,7 +283,7 @@
      },
      {
       "name": "Generoso",
-      "text": "Dry, aged biologically or oxidatively; straw yellow to dark mahogany, nutty."
+      "text": "Dry: up to 4 g/l sugar, 9 g/l if oxidatively aged. Fino yeasty, others nutty."
      },
      {
       "name": "Mistela",
@@ -281,11 +291,12 @@
      },
      {
       "name": "Gran Reserva",
-      "text": "Red aged at least 60 months, 18 in oak casks up to 330 l."
+      "text": "Reds at least 60 months, 18 in oak; whites and rosados 48, 6 in oak."
      }
     ],
     "cite": [
      "condado-de-huelva-pliego:p1",
+     "condado-de-huelva-pliego:p2",
      "condado-de-huelva-pliego:p3",
      "condado-de-huelva-pliego:p4",
      "condado-de-huelva-pliego:p6"
@@ -299,7 +310,7 @@
   {
    "id": "malaga",
    "why": {
-    "text": "Strong southern sun lets grapes ripen and overripen; mountains, sea and Atlantic air temper the heat. In drier spots growers sun-dry grapes for sweet wines.",
+    "text": "Strong southern sun lets grapes ripen and overripen; mountains, sea and the Atlantic gateway buffer temperatures. In drier spots growers sun-dry grapes for sweet wines.",
     "cite": [
      "malaga-pliego:p10",
      "malaga-pliego:p11"
@@ -308,10 +319,12 @@
    "grapes": {
     "main": [
      {
-      "local": "Pedro Ximénez"
+      "local": "Pero Ximén",
+      "grape": "Pedro Ximénez"
      },
      {
-      "local": "Moscatel de Alejandría"
+      "local": "Moscatel de Málaga",
+      "grape": "Moscatel de Alejandría"
      },
      {
       "local": "Moscatel Morisco",
@@ -336,16 +349,18 @@
      "fortified",
      "sweet"
     ],
-    "text": "Dry unfortified wine, yellow to amber with age; dry and sweet liqueur wines; sweet wines from overripe or raisined grapes.",
+    "text": "Dry unfortified wine, yellow to amber with age; dry and sweet liqueur wines, among them Pale Dry, Pale Cream, Pajarete, Cream and Sweet, and the basic sweet types Dulce Natural, Maestro and Tierno; sweet wines from overripe or raisined grapes.",
     "cite": [
      "malaga-pliego:p1",
-     "malaga-pliego:p2"
+     "malaga-pliego:p2",
+     "malaga-pliego:p5",
+     "malaga-pliego:p6"
     ]
    },
    "climate": {
-    "text": "Mediterranean with very high sunshine, shaped by mountain relief, the nearby sea and an Atlantic transition.",
+    "text": "Mediterranean: mild winters, a dry summer, few rainy days and many hours of sun; mountains, the nearby sea and the position at the gateway to the Atlantic buffer temperatures.",
     "cite": [
-     "malaga-doc:p6"
+     "malaga-pliego:p10"
     ]
    },
    "soil": {
@@ -373,13 +388,14 @@
      },
      {
       "name": "Vino Naturalmente Dulce",
-      "text": "Sweet overripe-grape wine, fresh, lively, unctuous and persistent."
+      "text": "Sweet overripe-grape wine, pale yellow to gold, fresh, unctuous and persistent."
      }
     ],
     "cite": [
      "malaga-doc:p2",
      "malaga-doc:p3",
-     "malaga-doc:p4"
+     "malaga-doc:p4",
+     "malaga-pliego:p3"
     ]
    },
    "producers": {
@@ -397,58 +413,48 @@
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Pedro Ximénez"
-     },
-     {
-      "local": "Moscatel de Alejandría"
-     },
-     {
-      "local": "Moscatel de Grano Menudo"
-     },
-     {
-      "local": "Chardonnay"
-     },
-     {
-      "local": "Sauvignon Blanc"
-     },
-     {
-      "local": "Rome"
-     },
-     {
-      "local": "Cabernet Sauvignon"
-     },
-     {
-      "local": "Merlot"
-     },
-     {
-      "local": "Syrah"
-     },
-     {
-      "local": "Tempranillo"
-     }
-    ],
-    "cite": [
-     "sierras-de-malaga-wiki",
-     "sierras-de-malaga-pliego:p4"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
-     "Cabernet Franc",
-     "Viognier",
-     "Verdejo",
-     "Tintilla de Rota",
-     "Riesling",
-     "Pinot Noir",
-     "Petit Verdot",
-     "Monastrell",
-     "Malbec",
-     "Graciano",
-     "Gewürztraminer",
-     "Garnacha Tinta",
-     "Doradilla",
+     "Chardonnay",
      "Colombard",
-     "Lairen"
+     "Doradilla",
+     "Gewürztraminer",
+     "Garnacha Blanca",
+     "Lairen",
+     "Macabeo",
+     "Malvasía Aromática",
+     "Montúa",
+     "Moscatel de Alejandría",
+     "Moscatel de Grano Menudo",
+     "Pardina",
+     "Pedro Ximénez",
+     "Perruno",
+     "Riesling",
+     "Sauvignon Blanc",
+     "Verdejo",
+     "Vermentino",
+     "Vijariego Blanco",
+     "Viognier",
+     "Blauer Limberger",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Garnacha Tinta",
+     "Garnacha Tintorera",
+     "Graciano",
+     "Jaén Tinto",
+     "Malbec",
+     "Melonera",
+     "Merlot",
+     "Monastrell",
+     "Moscatel Negro",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Rome",
+     "Tempranillo",
+     "Tinto Velasco",
+     "Tintilla de Rota",
+     "Syrah"
     ],
     "othersCite": [
      "sierras-de-malaga-pliego:p4"
@@ -461,7 +467,7 @@
      "red",
      "sweet"
     ],
-    "text": "Whites, rosados and reds, from fresh young wines to oak-aged ones; also clearly sweet reds from overripe grapes.",
+    "text": "Whites, rosados and reds, some aged in oak vessels of up to 1,000 l, as Crianza, Reserva or Gran Reserva; also clearly sweet reds from overripe grapes.",
     "cite": [
      "sierras-de-malaga-pliego:p1",
      "sierras-de-malaga-pliego:p2",
@@ -540,10 +546,12 @@
      "fortified",
      "sweet"
     ],
-    "text": "Young whites; reds from young to gran reserva; flor-aged generosos; liqueur and natural sweet wines; mistela.",
+    "text": "Whites, young or aged; reds from young to gran reserva; Roble, Crianza, Reserva and Gran Reserva for reds and whites; flor-aged generosos; liqueur and natural sweet wines; mistela.",
     "cite": [
      "lebrija-pliego:p1",
-     "lebrija-pliego:p2"
+     "lebrija-pliego:p2",
+     "lebrija-pliego:p3",
+     "lebrija-pliego:p4"
     ]
    },
    "climate": {
@@ -580,7 +588,7 @@
      },
      {
       "name": "Dulce natural",
-      "text": "Gold to mahogany; honey, caramel and raisin aromas; velvety, glyceric."
+      "text": "Gold to mahogany; honey, caramel and raisin aromas; velvety, glyceric. May be labelled «Moscatel»."
      }
     ],
     "cite": [
@@ -638,7 +646,7 @@
      "fortified",
      "sweet"
     ],
-    "text": "Dry generosos (fino, amontillado, oloroso, palo cortado), unfortified or fortified; sweet Pedro Ximénez, Moscatel and Dulce; sweetened generosos de licor.",
+    "text": "Dry generosos (fino, amontillado, oloroso, palo cortado), unfortified or fortified; sweet Pedro Ximénez, Moscatel and Dulce; sweetened generosos de licor: Pale Dry, Pale Cream, Medium and Cream.",
     "cite": [
      "jerez-pliego:p1",
      "jerez-pliego:p2"
@@ -737,11 +745,12 @@
     "styles": [
      {
       "name": "Manzanilla",
-      "text": "Generoso aged wholly under flor, only in Sanlúcar de Barrameda cellars."
+      "text": "Generoso aged at least two years under flor in Sanlúcar; Pasada may show slight oxidation."
      }
     ],
     "cite": [
-     "manzanilla-doc:p1"
+     "manzanilla-pliego:p1",
+     "manzanilla-pliego:p3"
     ]
    },
    "producers": {

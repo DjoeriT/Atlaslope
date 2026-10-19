@@ -54,7 +54,7 @@
     {
       "id": "weather",
       "beat": "weather",
-      "title": "Hot and sunny, with the sea as a cushion",
+      "title": "Warm and sunny, tempered by the sea",
       "paras": [
         "The climate is warm. Winter lows are around 5 °C and summer highs about 35 °C. The risk of frost is minimal. The sea has a moderating effect, so vines inland reach somewhat more extreme values.",
         "There are more than 300 days of sun a year, yet about 600 litres of rain fall on each square metre. Most of it comes in November, December and March. Albariza soils can hold that moisture and avoid evapotranspiration. Vines near the coast also get heavy dew, which tempers the heat.",
@@ -69,7 +69,7 @@
     {
       "id": "ground",
       "beat": "ground",
-      "title": "A white soil from an ancient sea",
+      "title": "White marl from an ancient seabed",
       "paras": [
         "Most vineyards grow on albariza, a soft white marl. Where it reaches the surface, it gives the traditional look of a Jerez vineyard. It is easy to work and holds moisture well. Roots develop excellently in it.",
         "Albariza usually holds at least 25% and up to 40% calcium carbonate, along with clay and silica. The silica comes from the shells of diatoms and radiolarians in the sea that covered the area in the Oligocene.",
@@ -86,11 +86,11 @@
       "beat": "rules",
       "title": "Wines made to age in oak",
       "paras": [
-        "Palomino Fino is the main grape by volume. It gives wines a high expression of the land and a great capacity to age. Pedro Ximénez and Moscatel de Alejandría have more sugar and acidity, so they suit the sweet wines.",
-        "The dry wines are called vinos generosos. They are fermented fully dry and age at least two years on average in oak botas of no more than 1,000 litres. Fino ages only under flor, a film of yeast on the surface of the wine. Amontillado starts under flor and then ages in contact with air. Oloroso ages only in contact with air, once the flor has gone. Palo Cortado ages mainly that way after losing its flor.",
-        "In the glass, fino runs from pale straw to amber. It must show at least two aromas of biological ageing: green apple, nuts or yeast like fresh bread dough. Oloroso runs from old gold to dark mahogany. It smells of nuts and wine-soaked oak.",
-        "The sweet natural wines are made by fortifying must from overripe or sun-dried grapes. Pedro Ximénez is at least 85% raisined Pedro Ximénez must. It is ebony in colour and smells mostly of raisins. Moscatel is at least 85% Moscatel must. It smells of white flowers or citrus. The sun-drying is called asoleo. It concentrates both sugar and acidity, and adds very ripe fruit and a notable unctuousness.",
-        "A third family is blended. The vinos generosos de licor start from a generoso that is then sweetened, for example with sweet natural wine. They are sold with an average of two years in oak.",
+        "Palomino Fino is the main grape by volume. It gives wines a high expression of the land and a great capacity to age. Pedro Ximénez and Moscatel de Alejandría have more sugar and acidity, so they suit the traditional sweet natural wines.",
+        "The dry wines are called vinos generosos. They can be made with or without fortifying with alcohol. Unfortified, they count as wine; fortified, they count as vino de licor, a liqueur wine. Either way they are fermented fully dry and age at least two years on average in oak botas of no more than 1,000 litres. Fino ages only under flor, a film of yeast on the surface of the wine. Amontillado starts under flor and then ages in contact with air. Oloroso ages only in contact with air, once the flor has gone. Palo Cortado ages mainly that way after losing its flor.",
+        "In the glass, fino runs from straw yellow to amber. It must show at least two aromas of biological ageing: green apple, nuts or yeast like fresh bread dough. Oloroso runs from old gold to dark mahogany. It smells of nuts and wine-soaked oak.",
+        "The sweet natural wines are made by fortifying must from overripe or sun-dried grapes. Pedro Ximénez is at least 85% raisined Pedro Ximénez must. It is ebony in colour and smells mostly of raisins. Moscatel is at least 85% Moscatel must. It smells of white flowers or citrus. Dulce is made from must of one or more of the authorised grapes, raisined or not. It smells of honey. The sun-drying is called asoleo. It concentrates both sugar and acidity, and adds very ripe fruit and a notable unctuousness.",
+        "A third family is blended. The vinos generosos de licor start from a generoso that is then sweetened, for example with sweet natural wine. They are sold with an average of two years in oak. Pale Dry and Pale Cream start from generosos aged under flor. Pale Dry has 4 to under 50 g/L of sugar and tastes slightly sweet. Pale Cream has 50 to under 115 g/L and tastes sweet. Medium has 4 to under 115 g/L of sugar. Cream has 115 to 140 g/L and tastes sweet but balanced.",
         "Fortifying with alcohol began as a way to steady wines for long sea voyages. That practice played a decisive role in the appearance of the flor yeasts, by natural selection. The solera system goes back to the 18th century and a need for steady quality whatever the harvest. Part of each barrel is drawn off at intervals and refilled from a younger stage, and those regular drawings favour biological ageing."
       ],
       "cite": [
@@ -123,7 +123,7 @@
     "terms": [
       {
         "term": "Fino Viejo",
-        "text": "A fino aged on average at least 7 years, and showing slight signs of oxidation after that long ageing."
+        "text": "A fino aged on average at least 7 years in cellars anywhere in the zone except Sanlúcar de Barrameda, and showing slight signs of oxidation after that long ageing."
       },
       {
         "term": "Vejez Calificada",
@@ -140,14 +140,9 @@
       {
         "term": "Añada",
         "text": "Wine from each harvest aged on its own, never mixed with other vintages."
-      },
-      {
-        "term": "Cream",
-        "text": "Made from generosos, with 115 to 140 g/L of sugar."
       }
     ],
     "cite": [
-      "jerez-pliego:p2",
       "jerez-pliego:p5",
       "jerez-pliego:p6"
     ]

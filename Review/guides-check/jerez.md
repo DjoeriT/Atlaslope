@@ -89,3 +89,57 @@ Entry `jerez` in `content/facts/andalucia.json` (cites `jerez-doc`/`jerez-wiki`,
 - grapes.others: sheet "Moscatel Grano Menudo", "Palomino"; pliego authorises "Palomino, Listán Blanco o Palomino Fino, Pedro Ximénez, Moscatel de Alejandría, Beba, Perruno y Vigiriega" (p7). Moscatel Grano Menudo is not authorised; Beba, Perruno, Vigiriega are missing.
 - styles.kinds: sheet "fortified", "sweet"; pliego also has category "vino" (unfortified vinos generosos, point 1) beside "vino de licor" (p1).
 - climate and tastes: sheet empty; pliego has both (p8 "carácter cálido", p9 "equilibrados, sápidos, de gran intensidad y persistencia en boca").
+
+## Second check
+Fresh pass, 2026-10-19, same source (`jerez-pliego`, consolidated per Orden de 13 de mayo de 2026, BOJA núm. 95). Pages read: p1 to p10. Totals for this pass only: KEEP 68, FIX 8, CUT 1. `check_guide.py`: ok, 0 errors; its three number warnings are confirmed below (18 = "siglo XVIII" p9, 16 = "siglo XVI" p8, 7 = "siete años" p6).
+
+### Titles
+- KEEP guide title "Why Jerez tastes the way it does" (no factual claim).
+- KEEP place p7 "la provincia de Cádiz, la más meridional de la España peninsular"
+- FIX weather p8 "El clima ... es de carácter cálido" + "el efecto regulador del mar": "Hot and sunny, with the sea as a cushion" now "Warm and sunny, tempered by the sea".
+- FIX ground p8 "una marga blanda de color blanco" + "sílice, procedente de los caparazones ... presentes en el mar que ocupaba la zona": "A white soil from an ancient sea" said the whole soil came from the sea; now "White marl from an ancient seabed".
+- KEEP rules p5 "Crianza al proceso de permanencia en botas ... al que es necesario someter los vinos"
+
+### Lede
+- KEEP p8 "«albariza», una marga blanda de color blanco" + p7 "frecuentes brisas nocturnas ... contribuyen al mantenimiento de los niveles de humedad"
+- KEEP p10 "se beneficia extraordinariamente ... de los altos niveles de humedad que propicia el aprovechamiento –gracias a la tradicional arquitectura bodeguera"
+
+### place
+- KEEP p7 (all 7 sentences, same quotes as the first check: "noroeste de la provincia de Cádiz", "enmarcada al norte por el río Guadalquivir", "estribaciones de la Sierra de Cádiz", "terrenos llanos o suavemente ondulados", "restos inundables de lo que fue el Lacus Ligustinus", "salinas y esteros, parcialmente inundados por las mareas"; p6 "«pagos» ... características edáficas y de microclima propias")
+- KEEP fly captions "Guadalquivir marismas" and "Salt pans of Puerto Real" p7 (points checked in the first pass; not re-queried).
+
+### weather
+- KEEP p8, all 12 sentences ("carácter cálido", "alrededor de los 5 °C ... en torno a los 35 °C", "riesgo de heladas es mínimo", "viñas del interior alcancen valores algo más extremos", "más de 300 días de sol", "aproximadamente 600 litros por metro cuadrado", "noviembre, diciembre y marzo", "retener la humedad y evitar la evapotranspiración", "intensos rocíos", "dos vientos predominantes", "levante, proveniente del interior, seco y cálido", "poniente ... elevado grado de humedad ... factor moderador, especialmente en el verano", "temperaturas moderadas ... altos niveles de humedad son fundamentales").
+
+### ground
+- KEEP p8, 9 sentences ("marga blanda de color blanco", "tradicional paisaje de la viña jerezana", "fácil de labrar ... capacidad retentiva", "excelente desarrollo del sistema radicular", "al menos el 25% y hasta el 40%", "diatomeas y radiolarios ... período oligocénico", "«barros» ... vaguadas y partes bajas", "color más oscuro y más fertilidad", "arenas ... menos de un 20% de caliza").
+- KEEP p9, 3 sentences ("clara expresión calcárea", "elegantes, con cuerpo y sapidez ... capacidad de evolución a largo plazo", "niveles de vejez muy elevada en algunos casos").
+
+### rules
+- KEEP p10 "la principal variedad en términos cuantitativos, la Palomino Fino"; KEEP p10 "alta expresión del terreno y una gran capacidad de envejecimiento".
+- FIX p10 "óptimas para la elaboración de los tradicionales «vinos dulces naturales»": "suit the sweet wines" widened to every sweet wine; now "suit the traditional sweet natural wines".
+- KEEP p2 "Todos los «vinos generosos» se considerarán vinos secos".
+- FIX (missing fortified statement) p1 "I. Vino ... Los «vinos generosos» se obtienen mediante vinificación en seco" + "II. Vino de licor ... a. Vinos generosos ... fortificados con alcohol" + p7 "la diferencia entre unos y otros se reduce a la utilización o no de la práctica enológica tradicional de la fortificación": the guide never said whether a generoso is fortified; added "They can be made with or without fortifying with alcohol. Unfortified, they count as wine; fortified, they count as vino de licor, a liqueur wine."
+- KEEP p4 "fermentación alcohólica completa" + p1 "envejecimiento promedio mínimo de dos años" + p5 "botas ... de capacidad no superior a 1.000 litros".
+- KEEP p1/p5 Fino "crianza exclusivamente biológica", "película de levaduras"; Amontillado "primera fase de crianza biológica seguida de una fase de crianza oxidativa"; Oloroso "exclusivamente oxidativa, tras la desaparición del inicial velo de flor"; Palo Cortado "predominantemente oxidativa".
+- FIX p3 "del amarillo pajizo al ámbar": "pale straw" added "pale"; now "straw yellow".
+- KEEP p3 "al menos dos de los siguientes aromas ... manzana verde, frutos secos o levadura (masa fresca de pan)"; KEEP p3 "del oro viejo al caoba oscuro"; KEEP p3 "frutos secos y maderas nobles envinadas".
+- KEEP p1 "fortificación con alcohol de mostos de uva sobremadura o pasificada"; KEEP p1 "al menos un 85% de mostos de uva pasificada ... Pedro Ximénez"; KEEP p3 "tonos ébano", "principalmente aromas de pasas"; KEEP p1 "al menos un 85% de mostos ... Moscatel"; KEEP p3 "flores blancas y/o notas cítricas".
+- FIX (missing type Dulce) p2 "Dulce: vino elaborado a partir de mostos de uvas con o sin pasificación de una o más de las variedades autorizadas" + p3 "Aroma: aromas de miel": added "Dulce is made from must of one or more of the authorised grapes, raisined or not. It smells of honey."
+- KEEP p4 "«asoleo», consistente en la exposición de los racimos de uva al sol"; KEEP p10 "mayor concentración tanto del azúcar como de la acidez ... fruta muy madura y una notable untuosidad".
+- KEEP p10 "obtenidos por cabeceos (combinación) de los vinos anteriores"; KEEP p2 "obtenidos de «vino generoso» ... añadido ... «vino dulce natural»"; KEEP p2 "dos años de edad media de maduración en barricas de roble".
+- FIX (missing types Pale Dry, Pale Cream, Medium; Cream moved here from label) p2 "Pale Dry ... «vinos generosos» de crianza biológica ... igual o superior a 4 g/L e inferior a 50 g/L", "Pale Cream ... crianza biológica ... igual o superior a 50 e inferior a 115 g/L", "Medium ... igual o superior a 4 g/L e inferior a 115 g/L", "Cream ... entre 115 y 140 g/L"; p3 Pale Dry "Sabor: ligeramente dulce"; p4 Pale Cream "Sabor: dulce", Cream "Sabor: dulce pero equilibrado". Five short sentences added.
+- KEEP p9 "estabilizar vinos que habían de viajar" ("Largas travesías"); KEEP p9 "papel determinante en la aparición –por selección natural– de las levaduras de velo de flor"; KEEP p9 "se remonta hasta el siglo XVIII ... con independencia de las vicisitudes de cada cosecha"; KEEP p5 "«sacas» periódicas ... «rocíos» con vino de otra escala más joven" + p9 "notablemente favorecido por la realización periódica de «sacas»".
+- KEEP fly "Jerez de la Frontera" p8 "Ordenanzas del Gremio de la Vinatería de Jerez en el siglo XVI" (preservation of the area's wine, same paragraph).
+
+### label
+- FIX p6 "Fino sometido a un envejecimiento medio mínimo de siete años en bodegas ubicadas en cualquiera de los términos municipales de la Zona Delimitada con excepción de Sanlúcar de Barrameda": the place rule was dropped; added "in cellars anywhere in the zone except Sanlúcar de Barrameda".
+- KEEP p6 Vejez Calificada "Vinos de más de 12 años. Vinos de más de 15 años ... V.O.S. ... V.O.R.S."; KEEP p6 V.O.S. "más de 20 años"; KEEP p6 V.O.R.S. "más de 30 años"; KEEP p5 Añada "se envejecen separadamente, sin que se realicen mezclas".
+- CUT from label: Cream. It is a style the rules beat now describes (p2), so it is not repeated in `label`. Label cite p2 dropped.
+
+### Fact sheet (second pass)
+Entry `jerez` in `content/facts/andalucia.json` has been revised since the first check (others list and famous.styles sugar now match the pliego). Not edited. Remaining disagreements:
+- styles.kinds: sheet "fortified", "sweet"; pliego categories are "vino y vino de licor" (p1): generosos can be unfortified wine (point 1), and the sheet's own text says "unfortified or fortified". A kind for the unfortified generosos (dry white wine) is missing.
+- styles.text: sheet names "sweetened generosos de licor" but not their types Pale Dry, Pale Cream, Medium, Cream (p2).
+- grapes.others: sheet "Palomino", "Beba", "Perruno", "Vigiriega"; pliego lists "Palomino, Listán Blanco o Palomino Fino" (p7), so Listán Blanco is a synonym of Palomino Fino, a main grape; the sheet's "Palomino" entry is fine as the pliego names it separately.
+- why / soil: cite `jerez-doc:p3`, not the pliego; pliego p8 says the same of albariza ("gran capacidad retentiva de la humedad").

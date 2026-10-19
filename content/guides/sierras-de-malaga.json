@@ -12,7 +12,7 @@
       "beat": "place",
       "title": "Europe's southernmost mountains",
       "paras": [
-        "Málaga sits at the lowest latitude of the European Mediterranean arc, right where it opens to the Atlantic. The vineyards grow in the Sierras de Málaga, the southern foothills of the Penibética range, the most southerly mountains in Europe.",
+        "The zone sits at the lowest latitude of the European Mediterranean arc, right where it opens to the Atlantic. The vineyards grow in the Sierras de Málaga, the southern foothills of the Penibética range, the most southerly mountains in Europe.",
         "Mountain makes up most of the province. A chain runs east to west from the Serranía de Ronda to the Sierra de Tejeda and Almijara, and its spurs run south to the Mediterranean. Flatter land is limited to the Depresión de Antequera in the north, the Depresión de Ronda in the northwest, the Jimena depression near Manilva in the west, and the river valleys, above all the Guadalhorce.",
         "The vines do not form one block. They sit in patches of various sizes across the province, and the holdings are generally small because the terrain is so rough. The wider zone has 6 named areas, and the Serranía de Ronda is a subzone of its own."
       ],
@@ -22,7 +22,7 @@
           "label": "Serranía de Ronda",
           "point": [-5.178, 36.677],
           "zoom": 10,
-          "caption": "The mountain country at the western end of the chain, and a subzone of its own.",
+          "caption": "The mountain country where the chain begins, and a subzone of its own.",
           "cite": ["sierras-de-malaga-pliego:p3", "sierras-de-malaga-pliego:p5"]
         },
         {
@@ -39,9 +39,9 @@
       "beat": "weather",
       "title": "Sunny days, moderate ripening",
       "paras": [
-        "The climate is Mediterranean, with dry summers and few rainy days. Depending on the area it takes on a temperate, continental or subtropical character. The mountains face the Atlantic fronts, and that gives an annual rainfall that suits vines, though it is unevenly spread across space and time.",
+        "The climate is Mediterranean, with dry summers and few rainy days. Depending on the area it takes on a temperate, continental or subtropical character. The zone's position and the way the mountains face the Atlantic fronts give an annual rainfall that is optimal for vines, though it is unevenly spread across space and time.",
         "Sunshine hours are very high, as you would expect in the most southerly part of Europe. That sun favours musts with a high natural alcohol level. The wines from overripe grapes need such musts.",
-        "Even so, temperatures during ripening are characteristically moderate, with falls at night. The warmth of the latitude is held back because the zone lies in a climatic transition, and by local mesoclimates. The mountains and the sea create many of those mesoclimates. Ripening temperature matters a great deal here, because it shapes the range of aromas and the quality of the polyphenols."
+        "Even so, temperatures during ripening are characteristically moderate, with falls at night. The warmth of the latitude is held back both by the zone's position in a climatic transition and by local mesoclimates. The mountains and the sea create many of those mesoclimates. Ripening temperature matters a great deal here, because it decisively shapes the variety of aroma nuances and the quality of the polyphenols."
       ],
       "cite": ["sierras-de-malaga-pliego:p5", "sierras-de-malaga-pliego:p6"]
     },
@@ -52,7 +52,7 @@
       "paras": [
         "Soils are generally of medium to low fertility. North of the mountain arc the base materials are soft: sands, marls, limestones and sandstones. South of it they are more compact: mainly schist, slate, phyllite, gneiss and even marble.",
         "Each area has its own twist. The Axarquía and the Montes de Málaga have slate soils. The Serranía de Ronda has limestone, generally with calcarenites. Around Manilva the soils are albarizos with a high limestone content, and the north has deep, brown-limestone soils.",
-        "In general the soils drain well, through their composition, texture or slope. Together with the modest fertility, that concentrates the aroma compounds and adds finesse to the wines."
+        "In general the soils drain well, through their composition, texture or slope. Together with the modest fertility, that enhances the concentration of aroma compounds and the finesse of the wines."
       ],
       "cite": ["sierras-de-malaga-pliego:p5", "sierras-de-malaga-pliego:p6"],
       "fly": [

@@ -12,7 +12,7 @@
     {
       "id": "place",
       "beat": "place",
-      "title": "A province with a snowy wall",
+      "title": "A province with three subzones",
       "paras": [
         "The vineyards lie in Granada, a province in eastern Andalucía. Grapes must be grown inside the province, and the wine must be made and aged there too.",
         "Three subzones each have a uniform geography. Geoparque-Norte takes in Baza and Guadix. Poniente takes in Granada city itself, along with Almuñécar and Motril. Contraviesa-Alpujarra has just 13 municipalities.",
@@ -53,7 +53,7 @@
     {
       "id": "weather",
       "beat": "weather",
-      "title": "Half the province above 1,000 m",
+      "title": "About half the province above 1,000 m",
       "paras": [
         "About 50% of the province lies above 1,000 m, which gives low average temperatures over the year. Annual averages run 15 to 16 ºC. The mean absolute highs reach 39 ºC and the mean absolute lows -4 ºC.",
         "The low average temperatures delay budding, and that delays the whole growing cycle. Ripening runs from late August to early October. It is slower and more even. That goes for sugars and polyphenols as well as the compounds behind varietal aroma (terpenes and their precursors).",
@@ -68,9 +68,9 @@
     {
       "id": "ground",
       "beat": "ground",
-      "title": "Thin, hungry slate",
+      "title": "Poor brown soil on Palaeozoic rock",
       "paras": [
-        "Most vineyards stand on Palaeozoic land, where brown soil sits on siliceous metamorphic rock. It erodes easily. The breakdown of slates and clayey schists sometimes makes up for what erosion takes away.",
+        "Most vineyards stand on Palaeozoic land, where brown soil sits on siliceous metamorphic rock. It erodes very easily. The breakdown of slates and clayey schists sometimes makes up for what erosion takes away.",
         "The soil is not deep, but it holds moisture well. It is very poor in organic matter, as it is in phosphorus and nitrogen. In general those traits favour quality wine.",
         "Other vineyards sit on brown limy soil over loose material, with very little humus. How well those soils suit vines depends on the lie of the land and the geology beneath."
       ],
@@ -84,15 +84,15 @@
       "title": "Still, sparkling and late-harvest wines",
       "paras": [
         "Granada makes white and red wines as well as rosado (rosé), from dry to sweet. A rosado needs at least 25% red grapes. The province allows 12 white and 10 red varieties. Vigiriego (also spelled Vigiriega) opens the white list, and Tempranillo opens the red one.",
-        "Sparkling wine follows the traditional method, with a second fermentation in the bottle and at least 9 months between bottling and disgorging. Wines from overripe grapes must start above 15% natural alcohol and finish at no less than 13%.",
-        "Contraviesa-Alpujarra has stricter rules. Its whites need at least 11% alcohol, its rosados 12% and its reds 13%. Its limit is 65 litres of wine per 100 kg of grapes, against 70 elsewhere. Its grapes may not be carried in sacks, only in rigid, waterproof open crates that weigh at most 30 kg when full. Oak chips are banned in making or ageing any of its wines. Its sparkling wine uses only Vigiriego, Chardonnay or Pinot Noir, with at least 70% Vigiriego.",
+        "Sparkling wine comes in two categories, vino espumoso (sparkling wine) and vino espumoso de calidad (quality sparkling wine). It is white or rosado, and its sugar runs from brut nature up to dulce (sweet). It follows the traditional method, with a second fermentation in the bottle and at least 9 months between bottling and disgorging. Wines from overripe grapes, sold as naturalmente dulce or vendimia tardía (late harvest), must start above 15% natural alcohol and finish at no less than 13%. They are not fortified: all their alcohol comes from fermentation.",
+        "Contraviesa-Alpujarra has rules of its own. Its whites need at least 11% alcohol, its rosados 12% and its reds 13%. Its limit is 65 litres of wine per 100 kg of grapes, against 70 elsewhere. Its grapes may not be carried in sacks, only in rigid, waterproof open crates that weigh at most 30 kg when full. Oak chips are banned in making or ageing any of its wines. Its sparkling wine uses only Vigiriego, Chardonnay or Pinot Noir, with at least 70% Vigiriego.",
         "Yields are capped at 8,000 kg per hectare for red grapes, 9,000 kg for white and 12,000 kg for grapes meant only for sparkling wine. In Contraviesa-Alpujarra the caps are 6,000 kg for red (7,000 kg for Tempranillo) and 8,000 kg for white."
       ],
       "cite": [
         "granada-pliego:p1",
+        "granada-pliego:p2",
         "granada-pliego:p3",
         "granada-pliego:p6",
-        "granada-pliego:p7",
         "granada-pliego:p9"
       ],
       "fly": [
@@ -120,7 +120,7 @@
       },
       {
         "term": "Reserva",
-        "text": "Whites and rosados age at least 24 months in all and reds at least 36 months, counted from 1 November of the harvest year, with at least 6 months (whites and rosados) or 12 months (reds) in oak barrels of up to 330 litres."
+        "text": "Whites and rosados age at least 24 months in all and reds at least 36 months, counted from 1 November of the harvest year, with at least 6 months (whites and rosados) or 12 months (reds) in oak barrels of up to 330 litres. On a sparkling wine it means at least 18 months from bottling to disgorging."
       },
       {
         "term": "Gran Reserva",
@@ -145,11 +145,17 @@
       {
         "term": "Joven",
         "text": "A still wine made in the same season in which it is labelled."
+      },
+      {
+        "term": "Naturalmente Dulce or Vendimia tardía",
+        "text": "A wine from overripe grapes with no alcohol added, above 15% natural alcohol and at least 13% in the bottle, which must carry one of these two terms on its label."
       }
     ],
     "cite": [
+      "granada-pliego:p1",
       "granada-pliego:p4",
-      "granada-pliego:p5"
+      "granada-pliego:p5",
+      "granada-pliego:p13"
     ]
   }
 }

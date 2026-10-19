@@ -72,3 +72,38 @@ Corrections from the pliego check, applied to `content/facts/andalucia.json`. Ea
 
 ## Test run
 `npm test -- tests/unit`: 292 passed, 1 failed. The failure is `tests/unit/guides.test.ts`, which checks the list of guide ids. The eight new, uncommitted `content/guides/<andalucia place>.json` files make that list longer. This edit did not touch them. `tests/unit/facts.test.ts` passed.
+
+## Second check
+Second list of corrections, each page reopened with `Tools/guides/pages.py` on the pliego in `manifest.json`.
+
+- jerez styles.kinds: skipped. P1 does list generosos as category 1 "vino", but the kind list has no tag for a dry unfortified wine and the page does not call them "white". The text already says generosos come unfortified or fortified.
+- jerez styles.text: applied. Generosos de licor are now named: Pale Dry, Pale Cream, Medium and Cream (jerez-pliego:p2).
+- manzanilla styles.kinds: skipped. Same kind-list reason as Jerez; the text already says vino or, fortified, vino de licor (p1, p2, p4).
+- manzanilla famous.styles: applied. "Wholly" dropped; now aged at least two years under flor in Sanlúcar, and Pasada may show slight oxidation (the seven-year minimum did not fit the 15-word limit). Cite moved from manzanilla-doc:p1 to manzanilla-pliego:p1, p3.
+- montilla-moriles why.text: applied. Quick ripening now comes from one of the world's hottest growing seasons, not from summers (montilla-moriles-pliego:p10).
+- montilla-moriles climate.text: applied. Summers and winters kept; ripening now tied to the growing-season climate (p10). "Hot" for "cálidos" kept: wording only.
+- montilla-moriles grapes.others: applied. All nine: Layren, Baladí, Verdejo, Moscatel de Grano Menudo, Moscatel de Alejandría, Torrontés, Chardonnay, Sauvignon Blanc, Macabeo (p8).
+- montilla-moriles styles.text: applied. Whites are young (joven), unaged or aged, so aged whites are no longer called young; cite adds p6 (p1, p6).
+- montilla-moriles styles.kinds: skipped. Same kind-list reason; the text already says Fino is unfortified or fortified (p1, p6).
+- malaga grapes.main: applied. Local names «Pero Ximén» (Pedro Ximénez) and «Moscatel de Málaga» (Moscatel de Alejandría) (malaga-pliego:p9).
+- malaga styles.kinds: skipped. Dry liqueur wines are already covered by "fortified"; the dry unfortified wine has no kind tag and the page does not call it white. The text already names both (p1).
+- malaga why: applied. "Atlantic air temper the heat" is now "mountains, sea and the Atlantic gateway buffer temperatures" (p10).
+- malaga climate: applied. Rewritten from p10: mild winters, dry summer, few rainy days, many hours of sun, temperatures buffered by mountains, sea and the Atlantic gateway. Cite moved from malaga-doc:p6 to malaga-pliego:p10.
+- malaga famous Vino Naturalmente Dulce: applied. "Lively" dropped; now pale yellow to gold, fresh, unctuous and persistent. Famous cites add malaga-pliego:p3.
+- malaga styles.text / famous.styles: applied to styles.text. Adds Pale Dry, Pale Cream, Pajarete, Cream and Sweet (p6) and the basic sweet types Dulce Natural, Maestro and Tierno (p5); cite adds p5, p6. Famous list left as is: which styles count as famous is not something the page settles.
+- sierras-de-malaga styles.text: applied. "Fresh young wines" dropped; some are aged in oak vessels of up to 1,000 l, as Crianza, Reserva or Gran Reserva (sierras-de-malaga-pliego:p2).
+- sierras-de-malaga grapes.main: applied. Main emptied and its wiki cite dropped, since p4 lists all varieties on equal terms (docs/guides.md: a main grape only where the text singles it out). Others now hold the full p4 list: 20 white and 19 red.
+- condado-de-huelva why.text: applied. "Softens" dropped; now Mediterranean, with oceanic touches through its opening to the Atlantic; cite adds condado-de-huelva-pliego:p9. Doñana keeps its -doc:p6 cite. "(añadas)" dropped to stay within 25 words.
+- condado-de-huelva famous Generoso: applied. Up to 4 g/l sugar, 9 g/l if oxidatively aged; Fino yeasty, the others nutty (p2, p3). Famous cites add p2. Colour range dropped to stay within 15 words.
+- condado-de-huelva famous Gran Reserva: applied. Adds whites and rosados: at least 48 months, 6 in oak (p6). The 330 l cask size dropped to stay within 15 words.
+- condado-de-huelva styles.text: skipped. P1 lists generosos under category 1 (vino) and category 3 (vino de licor); docs/guides.md reads vino de licor as fortified, so "unfortified or fortified" follows the page and the format rule.
+- granada famous Vino espumoso de calidad: applied. White or rosé only, from a white or rosé base wine (granada-pliego:p2, p3).
+- granada famous (Vino espumoso): applied. The entry is now "Vino espumoso, Vino espumoso de calidad", since p1 protects both and p3 describes them together.
+- granada why: applied. "About half the area" (p11).
+- granada altitude: applied. "About half of the area" (p11).
+- granada famous.cite: applied. Adds granada-pliego:p4 for the overripe-grape wine.
+- lebrija styles.text: applied. Whites, young or aged; Roble, Crianza, Reserva and Gran Reserva for reds and whites; cite adds p3, p4 (lebrija-pliego:p3, p4).
+- lebrija famous Dulce natural: applied as a note, not a rename. P2 and p3 say the wine "podrá denominarse «Moscatel»", an optional label, so the name stays and the text adds "May be labelled «Moscatel»".
+- lebrija famous Lebrija Old Dulce: skipped. "Full-bodied" for "vino de cuerpo" is wording only (p2).
+
+Test run: `npm test -- tests/unit`, 293 passed. The first run caught why lines over 25 words and famous lines over 15; those were shortened as noted above.

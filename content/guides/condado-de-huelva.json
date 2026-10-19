@@ -3,7 +3,7 @@
  "title": "Why Condado de Huelva tastes the way it does",
  "minutes": 4,
  "lede": {
-  "text": "Vines grow on flat or gently rolling land beside Doñana National Park, in a Mediterranean climate with oceanic touches that show in the wines. The cellars are built to hold 15 to 22 °C all year while the wine ages.",
+  "text": "The wine is made and aged on flat or gently rolling land beside Doñana National Park, in a Mediterranean climate with oceanic touches that show in the wines. The cellars are built to hold 15 to 22 °C all year while the wine ages.",
   "cite": [
    "condado-de-huelva-pliego:p8",
    "condado-de-huelva-pliego:p9"
@@ -13,7 +13,7 @@
   {
    "id": "donana",
    "beat": "place",
-   "title": "Flat land beside Doñana",
+   "title": "Flat to gently rolling land beside Doñana",
    "paras": [
     "The vineyards sit in the Guadalquivir depression, in the south-east of Huelva province. They run from the foothills of the Sierra de Aracena down to the coast, right up against Doñana National Park. The park is considered \"one of the lungs of Europe\", and the Condado de Huelva area is known as the \"Entorno de Doñana\", the surroundings of Doñana.",
     "The land is flat or gently rolling, with slopes never above 17%. Altitude runs from 50 m in the south to 180 m in the north.",
@@ -33,7 +33,7 @@
       36.968
      ],
      "zoom": 9,
-     "caption": "The national park that borders the vineyards and shapes the \"Entorno de Doñana\".",
+     "caption": "The national park the area borders. The Condado de Huelva area is known as the \"Entorno de Doñana\".",
      "cite": [
       "condado-de-huelva-pliego:p8"
      ]
@@ -45,7 +45,7 @@
       37.827
      ],
      "zoom": 9,
-     "caption": "The hills where the vineyard area begins, running down to the coast.",
+     "caption": "The Condado de Huelva runs from the foothills of this range down to the coast.",
      "cite": [
       "condado-de-huelva-pliego:p8"
      ]
@@ -55,7 +55,7 @@
   {
    "id": "atlantic",
    "beat": "weather",
-   "title": "A Mediterranean climate with the Atlantic leaning in",
+   "title": "A Mediterranean climate open to the Atlantic",
    "paras": [
     "The climate is Mediterranean. The relief leaves the area open to the Atlantic, which adds oceanic touches that show in the wines. For that reason the climate is relatively humid.",
     "Annual mean temperature is between 15.8 °C and 16.9 °C. The average of the maximum temperatures is quite steady at 22.5 °C, and the average of the minimums is between 9.8 °C and 11.9 °C.",
@@ -68,9 +68,9 @@
   {
    "id": "soils",
    "beat": "ground",
-   "title": "White albariza, sand and red clay",
+   "title": "Three soils, from whitish albariza to red barro",
    "paras": [
-    "Three soils are named. Albarizas are whitish, alkaline and sandy, rich in limestone and with good permeability.",
+    "Albarizas are whitish alkaline sandy soils, rich in limestone, with good permeability.",
     "Arenas are sandy soils, acid or neutral and generally siliceous, with about 75% fine sand. They drain very well.",
     "Barros are clay-and-sand soils, the red Mediterranean kind, with about 45% clay and about 42% fine sand."
    ],
@@ -81,15 +81,16 @@
   {
    "id": "solera",
    "beat": "rules",
-   "title": "Made to age in oak",
+   "title": "From Joven whites to solera-aged generosos",
    "paras": [
     "Zalema is the main white grape, and it is the only variety allowed 18,000 kg per hectare. The limit for the others is 12,000 kg. Other white grapes include Palomino Fino and Listán del Condado. Reds and rosados use grapes such as Syrah and Tempranillo.",
-    "Reds and rosados can be anything from dry to sweet, and so can the white type called Condado de Huelva. Generosos are dry wines of 14 to 22% vol, such as Condado Pálido or Fino and Condado Viejo or Oloroso. Generosos de licor are liqueur wines that run from Pale Dry to Cream. Vinos de licor dulces, the sweet liqueur wines, include Pedro Ximénez and Mistela.",
+    "Whites come as Joven and Condado de Huelva, or as Tradicional and Vino de Pasto. Reds and rosados come as Joven or with oak ageing. Aged reds and rosados go from Roble, with the shortest time in oak, to Gran Reserva, with the longest; Crianza and Reserva sit between. Reds and rosados can be anything from dry to sweet, and so can the white type called Condado de Huelva.",
+    "Generosos have 14 to 22% vol and at most 4 g/l of sugar. Oxidative ageing can take Condado Viejo up to 9 g/l. The same goes for Amontillado and Palo Cortado. The generosos are Condado Pálido or Fino and Condado Viejo or Oloroso, plus Amontillado and Palo Cortado. A generoso can be a plain wine or a liqueur wine. Natural alcohol must reach at least 10.5% vol, and a Fino needs at least 14% vol as a wine or 15% vol as a liqueur wine, or 14% vol after long ageing. Generosos de licor are liqueur wines. They run from Pale Dry, with 4 to under 50 g/l of sugar, through Pale Cream and Medium to Cream, with 115 to 140 g/l. Vinos de licor dulces, the sweet liqueur wines, cover Pedro Ximénez and Moscatel. Mistela and Dulce belong to them too.",
     "Generosos age biologically under a floating layer of yeast called velo de flor, or oxidatively through the action of oxygen. Condado Viejo, also called Oloroso, ranges from old gold to dark mahogany. It smells of nuts and wood and can show varnish notes. Mistela is dense on the palate, with fruity aromas, and ranges from gold to deep mahogany.",
     "The barrels are stacked in pyramids. The row nearest the floor is the solera, where wine is drawn off. It is topped up from the row above, the first criadera, and so on up. This is the criaderas y soleras system. Barrels and bocoyes, the traditional barrels of the area, are American oak. Oxygen passing through the wood is calculated at 25 cm³ per litre in a year.",
     "Generosos spend an average of at least two years in oak of up to 1,000 litres.",
     "The cellars hold 15 to 22 °C all year, with humidity between 60% and 80%. High ceilings and well-placed windows help. In hot weather the floors are watered.",
-    "Pedro Ximénez here can come from raisined Pedro Ximénez must from Montilla-Moriles, fortified and aged at least 24 months in oak.",
+    "Pedro Ximénez here can come from raisined Pedro Ximénez must from Montilla-Moriles, with neutral wine alcohol added to stop fermentation, aged at least 24 months in oak vessels of up to 1,000 litres.",
     "Red Gran Reserva ages for at least 60 months. At least 18 of those are in oak barrels of up to 330 litres."
    ],
    "cite": [
@@ -121,7 +122,7 @@
    },
    {
     "term": "Viejo",
-    "text": "On generosos and generosos de licor, an average age of at least 7 years in oak barrels of up to 600 litres. On other wines, at least 3 years in such barrels."
+    "text": "On generosos and generosos de licor classed as liqueur wines, an average age of at least 7 years in oak barrels of up to 600 litres. On other wines, at least 3 years in such barrels."
    },
    {
     "term": "Abocado",

@@ -1,7 +1,7 @@
 {
   "id": "malaga",
   "title": "Why Málaga tastes the way it does",
-  "minutes": 4,
+  "minutes": 6,
   "lede": {
     "text": "Málaga lies at the southernmost point of Europe's Mediterranean shore, and its many hours of sun give a high potential for ripening and overripening grapes. Mountains and the nearby sea buffer the temperatures, as does the position at the entrance to the Atlantic. With the growers' skill, that gives the wines finesse and keeps their varietal aromas.",
     "cite": [
@@ -40,7 +40,7 @@
     {
       "id": "weather",
       "beat": "weather",
-      "title": "The sunniest corner of the Mediterranean",
+      "title": "Many hours of sun on Europe's southernmost Mediterranean shore",
       "paras": [
         "The climate is Mediterranean, with mild winters, a dry summer and few days of rain.",
         "The zone lies at the southernmost point of Europe's Mediterranean shore and gets many hours of sun. That gives a high potential for ripening and overripening grapes.",
@@ -95,14 +95,15 @@
     {
       "id": "rules",
       "beat": "rules",
-      "title": "Mostly sweet, and sometimes very sweet",
+      "title": "From dry to very sweet",
       "paras": [
         "The preferred grapes are Pero Ximén (Pedro Ximénez) and the Moscatels. Moscatel de Málaga is Moscatel de Alejandría, and Moscatel Morisco is Moscatel de grano menudo. Three other grapes are also allowed: Lairén, Doradilla and Rome. Yields reach at most 12,000 kg per hectare.",
-        "Málaga makes three groups of wine. Vinos de licor have wine alcohol added, a step called encabezado. They are dry or sweet and reach 15% to 22% vol alcohol. Dry ones have under 45 g/l of sugar, and sweet ones have 45 g/l or more.",
-        "Sweet liqueur wines come from ripe or sun-dried grapes. Only free-run must is used, and it ferments very slowly and incompletely. Dulce Natural uses Pero Ximén and/or Moscatel must with at least 212 g/l of natural sugar.",
-        "Sweet wines made without fortification are the second group. Vino Naturalmente Dulce comes from overripe Pero Ximén and/or Moscatel grapes. The must has more than 300 g/l of sugar and the alcohol, at least 13% vol, comes wholly from fermentation. The wine is pale yellow to gold. On the palate it balances acid and sweet, and it is fresh and unctuous.",
+        "Málaga makes three groups of wine. Vinos de licor are fortified: wine alcohol is added, a step called encabezado. They are dry or sweet, with 15% to 22% vol of acquired alcohol. Dry ones have under 45 g/l of sugar, and sweet ones have 45 g/l or more. A dry one with over 12 g/l may be called semiseco, and a sweet one with 140 g/l or less may be called semidulce.",
+        "Sweet liqueur wines come from ripe or sun-dried grapes. Only free-run must is used, and it ferments very slowly and incompletely. Three basic types come from Pero Ximén and/or Moscatel must. Dulce Natural starts from must with at least 212 g/l of natural sugar. For Maestro, wine alcohol up to 8% vol is added before fermentation starts, so fermentation runs very slowly and stops at 15-16% vol with over 100 g/l of sugar left. Tierno comes from long sun-dried grapes with must over 350 g/l of sugar, and it has notes of raisins.",
+        "Sweet wines made without fortification are the second group. Vino Naturalmente Dulce comes from overripe Pero Ximén and/or Moscatel grapes. The must has more than 300 g/l of sugar and the alcohol, at least 13% vol, comes wholly from fermentation. The wine is pale yellow to gold. On the palate it balances acid and sweet, and it is fresh and unctuous. Other sweet wines from overripe grapes need at least 12% vol of acquired alcohol and 45 g/l of sugar.",
         "Vino de uvas pasificadas, from raisined grapes, is also sweet, with over 140 g/l of sugar. It runs from pale yellow to old gold, with raisin notes.",
         "The third group is dry wine that is not fortified. Its alcohol, at least 15% vol, comes only from fermentation, and it has under 4 g/l of sugar. It runs from yellow to amber with age and has a penetrating, powerful aroma.",
+        "Liqueur wines may also carry a style term. Pale Dry has under 45 g/l of sugar, and Pale Cream has 45 to 100 g/l. Neither has arrope added, and both run from pale yellow to gold. Pajarete has 45 to 140 g/l of sugar and no arrope. It ages at least 2 years and runs from gold to dark amber. Dulce Crema, or Cream, is made with arrope and ages at least 2 years. It has 75 to 125 g/l of sugar and runs from amber to mahogany. Sweet has over 140 g/l of sugar and must be aged. It runs from amber to black.",
         "Arrope gives Málaga liqueur wines their characteristic shades of colour. It is grape must boiled down by direct heat to a third of its volume. Boiled down further to 50% of that volume, it is called pantomima.",
         "Ageing takes place only in oak vessels of at most 1,000 litres. It follows either the static system of single vintages (añadas) or the dynamic system of criaderas and soleras. Liqueur wines, except Pálido, age at least six months on average."
       ],
@@ -126,20 +127,8 @@
         "text": "A sweet wine from straw to pale gold, with primary or varietal aromas that are little or not at all evolved, as it has no ageing and no arrope."
       },
       {
-        "term": "Maestro",
-        "text": "A Dulce Natural at 15-16% vol with over 100 g/l of sugar left. Wine alcohol up to 8% vol is added before fermentation starts, so fermentation runs very slowly and stops."
-      },
-      {
-        "term": "Tierno",
-        "text": "A sweet liqueur wine from long sun-dried Pero Ximén and/or Moscatel grapes, with must over 350 g/l of sugar and raisin notes."
-      },
-      {
-        "term": "Pajarete",
-        "text": "A liqueur wine with 45 to 140 g/l of sugar, gold to dark amber, aged at least 2 years and made without arrope."
-      },
-      {
         "term": "Lágrima",
-        "text": "A wine made only from the must that flows from the trodden grapes without any mechanical pressure."
+        "text": "A wine made only from the must that flows from the trodden grapes without any mechanical pressure. Aged over 2 years, it may be called Lacrimae Christi."
       },
       {
         "term": "Vendimia Asoleada",
@@ -148,6 +137,18 @@
       {
         "term": "Dorado",
         "text": "An aged liqueur wine made with 0% arrope, gold to amber."
+      },
+      {
+        "term": "Rojo dorado",
+        "text": "An aged liqueur wine made with up to 5% arrope, amber to dark amber with red-gold glints."
+      },
+      {
+        "term": "Oscuro",
+        "text": "An aged liqueur wine made with 5% to 10% arrope, from dark amber to dark mahogany."
+      },
+      {
+        "term": "Color",
+        "text": "An aged liqueur wine made with 10% to 15% arrope, from dark mahogany to ebony."
       },
       {
         "term": "Negro",

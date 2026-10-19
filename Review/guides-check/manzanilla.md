@@ -89,3 +89,103 @@ The sheet's cites point to `manzanilla-doc`, not to this pliego. Disagreements w
 - tastes.text: sheet "Pale gold to straw yellow"; pliego p1 "del amarillo pajizo al ámbar", taste "seco y de sensación salina en boca".
 - soil.text: sheet empty; pliego p4 albariza, barros and arenas.
 - climate.text / why.text: sheet "intense, lasting activity of the flor yeast"; pliego p5/p6 say higher humidity all year and that biological ageing "se beneficia extraordinariamente" from humidity, with no "intense, lasting" wording.
+
+## Second check
+Fresh pass, 2026-10-19, same source and version (`manzanilla-pliego`, PDO-ES-A1482, Orden de 13 de mayo de 2026). Pages read: 1 to 6 (cited), 13 to 16 (grep for wine types and label terms). Counts for this pass only: 67 KEEP, 7 FIX (one of them an added sentence), 0 CUT. `check_guide.py`: ok, 0 errors, 2 warnings, both confirmed ("18" = p5 "siglo XVIII"; "7" = p3 "siete años").
+
+### Titles
+- KEEP "Why Manzanilla tastes the way it does" (no factual claim)
+- KEEP p4 "enmarcada al norte por el río Guadalquivir, al oeste y el sur por el Océano Atlántico" ("Between a river and the ocean")
+- FIX p4 "la proximidad del viñedo a la zona costera aporta intensos rocíos": "Sun, sea mist and two winds" became "Sun, coastal dew and two winds" (the page names dew, not mist)
+- KEEP p4 "«albariza», una marga blanda de color blanco ... gran capacidad retentiva de la humedad"; p6 "suelos calcáreos" ("White chalky soil that holds water")
+- KEEP p2 "«velo de flor», que consiste en una película de levaduras" ("Aged under a veil of yeast")
+
+### Lede
+- KEEP p5 "unos niveles superiores de humedad durante todo el año ... diferenciadas de las del resto de la Zona de Producción"
+- KEEP p1 "seco y de sensación salina en boca"
+
+### place
+- KEEP p4 "en el noroeste de la provincia de Cádiz"
+- KEEP p4 "la más meridional de la España peninsular"
+- KEEP p4 "al norte por el río Guadalquivir"
+- KEEP p4 "al oeste y el sur por el Océano Atlántico"
+- KEEP p4 "al este por las estribaciones de la Sierra de Cádiz"
+- FIX p4 "se caracteriza por horizontes abiertos, dominados por terrenos llanos o suavemente ondulados": "The land is open, flat or gently rolling" became "The landscape has open horizons, dominated by flat or gently rolling land" (the page's "dominated by" restored)
+- KEEP p4 "colinas con una pendiente variable, normalmente entre el 10 y el 15 %"
+- KEEP p4 "abundan las zonas de marismas, restos inundables de lo que fue el Lacus Ligustinus"
+- KEEP p4 "salinas y esteros, parcialmente inundados por las mareas"
+- KEEP p3 ten municipalities named in D.1, Sanlúcar de Barrameda to San José del Valle
+- KEEP p3 "Zona de Crianza ... constituida por el término municipal de Sanlúcar de Barrameda"
+- KEEP p5 "elementos vertebradores de la comarca a lo largo de toda su milenaria historia, que se remonta a tiempos fenicios"
+- Flight "The Guadalquivir marshes": KEEP p4 caption (2 sentences, "al norte por el río Guadalquivir", "restos inundables de lo que fue el Lacus Ligustinus"). Nominatim "Marismas del Guadalquivir" [-6.3258, 36.9562]: point matches.
+- Flight "Sanlúcar de Barrameda": KEEP p3 "Zona de Crianza". Nominatim [-6.3535, 36.7761]: point within 0.3 km.
+- Missing flights: none; the guide flies to the named river's marshes as well as the town.
+
+### weather
+- KEEP p4 "es de carácter cálido"
+- KEEP p4 "mínimas del invierno que giran alrededor de los 5 °C y las máximas del verano ... en torno a los 35 °C"
+- KEEP p4 "El riesgo de heladas es mínimo"
+- KEEP p4 "el efecto regulador del mar hace que las viñas del interior alcancen valores algo más extremos"
+- KEEP p4 "más de 300 días de sol al año"
+- KEEP p4 "la pluviometría media anual es de aproximadamente 600 litros por metro cuadrado"
+- KEEP p4 "aporta intensos rocíos a la planta, con la consiguiente aminoración en la transpiración"
+- KEEP p4 "los dos vientos predominantes"
+- FIX p4 "el viento de levante, proveniente del interior, seco y cálido": "dry and hot" became "dry and warm" (cálido)
+- KEEP p4 "el viento de poniente, que por proceder del océano aporta un elevado grado de humedad"
+- KEEP p4 "actúa como importante factor moderador, especialmente en el verano"
+- FIX p4 "Junto con las frecuentes brisas nocturnas procedentes del cercano océano, estos factores contribuyen al mantenimiento de los niveles de humedad": "X, Y and Z" list rewritten in the page's order ("Together with frequent night breezes ..., the marshes and salt pans help keep humidity levels up")
+- KEEP p5 "humedad durante todo el año y temperaturas más moderadas, tanto en invierno como en verano"
+
+### ground
+- KEEP p4 "Los suelos predominantes en el viñedo están formados por la roca madre llamada «albariza», una marga blanda de color blanco"
+- KEEP p4 "fácil de labrar"
+- KEEP p4 "gran capacidad retentiva de la humedad y que permite un excelente desarrollo del sistema radicular"
+- KEEP p4 "carbonato cálcico (normalmente en concentraciones de al menos el 25% y hasta el 40%)"
+- KEEP p4 "la arcilla y la sílice, procedente de los caparazones de diatomeas y radiolarios ... período oligocénico"
+- KEEP p4 "«barros» ... generalmente situados en las vaguadas y partes bajas de las colinas"
+- KEEP p4 "además de la caliza encontramos una importante proporción de arcilla y arena"
+- KEEP p4 "mayor contenido en materia orgánica, lo que le da un color más oscuro y más fertilidad"
+- KEEP p4 "Las arenas por su parte son terrenos predominantes en las viñas costeras"
+- KEEP p4 "menos de un 20 % de caliza y predominio de arena y arcilla"
+- KEEP p6 "la práctica ausencia de precipitaciones durante la mayor parte del ciclo activo de la planta"
+- KEEP p6 "el predominio de los vientos secos de levante y la capacidad retentiva ... aseguran vendimias sanas, de gran calidad, con una muy buena maduración"
+- KEEP p6 "vinos elegantes, con cuerpo y sapidez"
+- KEEP p6 "con una acidez moderada y una gran capacidad de evolución a largo plazo"
+
+### rules
+- KEEP p3 "variedad Listán Blanco, también denominada Palomino Fino, o bien de la variedad Palomino"
+- KEEP p6 "Los viticultores han seleccionado durante siglos la variedad mejor adaptada"
+- KEEP p6 "dan a los vinos una alta expresión del terreno y una gran capacidad de envejecimiento"
+- KEEP p1 "Categorías vitícolas de los productos: vino y vino de licor"
+- KEEP p4 "la diferencia entre unos y otros se reduce a la utilización o no de la práctica enológica tradicional de la fortificación"
+- KEEP p2 "adición de alcohol ... admitida exclusivamente para los vinos protegidos de licor"
+- KEEP p2 "el alcohol para la fortificación puede tener su origen fuera del Área de Producción"
+- FIX p1 "son «vinos generosos» cuyas características son el resultado del particular proceso de crianza biológica": "a vino generoso, a wine whose character comes from biological ageing" defined generoso by this DOP's ageing; now "Both kinds are vinos generosos, so a generoso here may be fortified or not. Their character is the result of biological ageing." Next sentence's "It" became "Manzanilla".
+- KEEP p1 "seco"; "entre 14 y 17 % vol."; "inferior a 4 g/L"
+- KEEP p1 "del amarillo pajizo al ámbar"
+- KEEP p1 "al menos dos de los siguientes aromas propios de la crianza biológica: flores blancas, frutos secos o levadura (masa fresca de pan)"
+- KEEP p1 "Puede presentar también notas de madera noble envinada"
+- KEEP p1 "de sensación salina en boca, pudiendo ser ligeramente ácido y amargo"
+- KEEP p1 "crianza biológica que se desarrolla durante un mínimo de dos años en bodegas situadas en el término municipal de Sanlúcar de Barrameda"
+- KEEP p2 "película de levaduras típicas que se desarrolla sobre la superficie libre del vino"; "botas ... capacidad no superior a 1.000 litros"
+- KEEP p6 "se beneficia extraordinariamente ... de los altos niveles de humedad que propicia el aprovechamiento –gracias a la tradicional arquitectura bodeguera de Sanlúcar– de las frecuentes brisas nocturnas"
+- KEEP p2 "sistema de «criaderas y solera»"
+- KEEP p2 "«sacas» periódicas de parte del vino ... «rocíos» con vino de otra escala más joven"
+- KEEP p2 "Se llama «Solera» a la escala final de envejecimiento, de la que se realiza la saca ... para su expedición"
+- KEEP p5 "se remonta hasta el siglo XVIII ... vinos de una calidad mantenida en el tiempo, con independencia de las vicisitudes de cada cosecha"
+- FIX p2 "se envejecen separadamente, sin que se realicen mezclas con vinos procedentes de vendimias diferentes": "never blended" widened the rule; now "never blended with wine from other harvests", and "añada (vintage)" explained
+- KEEP p5 "naves que partían tanto hacia las Américas como hacia los mercados del norte de Europa ... «abrigado» (fortificación) ... para evitar su deterioro"
+- KEEP p5 "tuvo un papel determinante en la aparición –por selección natural– de las levaduras de velo de flor"
+- FIX (added) p13 "referencia a la categoría «Manzanilla Pasada», siempre y cuando esta circunstancia pueda ser debidamente acreditada ... podrá incluirse la referencia «Manzanilla Fina»": the rules beat named neither protected category; new paragraph added, p13 added to the beat's cites
+- KEEP p3 "tendrá el límite de 11.428 kilogramos"
+- KEEP p1 "70 litros de vino por cada 100 kilogramos de uva"
+- KEEP p5 "la tradicional poda de vara y pulgar, una de las aportaciones más singulares de la zona a la viticultura"
+- Missing wine types: grep of the whole pliego finds vino, vino de licor, vinos generosos (p1), Manzanilla Pasada and Manzanilla Fina (p3, p13), Añada (p2, p3). All are now named in the rules beat. No sparkling, dulce or other style is protected. Whether a generoso is fortified is now said plainly.
+
+### label
+- KEEP p3 "«Manzanilla Pasada» podrá utilizarse en aquellos vinos protegidos sometidos a un envejecimiento medio mínimo de siete años, que como consecuencia de su prolongada crianza presenten signos leves de oxidación" ("7" = siete). Not a famous style on the fact sheet, so it stays. Not added this pass (left for the owner): p14 Pale/Golden, Vieja (over 7 years)/Muy Vieja (over 10 years), Muy Seco/Extra Seco/Seco, pago (85% rule); p15 Single Barrel, Single Vineyard, En rama.
+
+### Fact sheet (second check)
+The sheet has been updated since the first check: grapes, soil, climate, tastes and why now agree with p1 to p6. Remaining disagreements:
+- styles.kinds: sheet "fortified" only; pliego p1 "vino y vino de licor", p2 fortification "exclusivamente a los vinos de licor", p4 the two differ only in "la utilización o no ... de la fortificación". Unfortified vino is also protected.
+- famous.styles: cite is `manzanilla-doc:p1`, not the pliego; text "aged wholly under flor" has no "wholly" in the pliego, which (p3) lets Manzanilla Pasada show "signos leves de oxidación" after long ageing. Pliego p1 says only that the wines' characteristics are "el resultado del particular proceso de crianza biológica".
