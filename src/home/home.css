@@ -47,19 +47,26 @@ p{text-wrap:pretty}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);min-height:min(760px,calc(100vh - var(--bar)));border-bottom:1px solid var(--ink)}
 .hero .txt{display:flex;flex-direction:column;justify-content:center;padding-block:4rem;padding-right:3.5rem;padding-left:max(var(--gut),calc((100vw - var(--max))/2),env(safe-area-inset-left,0px))}
 .hero h1{font-size:clamp(3.2rem,6.4vw,6.2rem);line-height:1;font-weight:400} /* display: regular, not light (owner: 300 read too thin) */
-/* coverage line under the buttons (owner, 18 Oct 2026: "the pill somewhere around the Open the atlas button"); the tag has the same small corners as every control since the premium feel review, 18 Oct 2026 */
-.hero .reach{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .5rem;margin:1rem 0 0;font-size:.85rem;line-height:1.4;color:var(--ink3)}
-.hero .reach span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink);background:var(--bg2);border:1px solid var(--foil);border-radius:.3rem;padding:.2rem .55rem}
 .hero .sub{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:30rem;margin:1.75rem 0 2.25rem}
 /* wide windows: the text column ends a fixed width past the page edge, so the headline keeps its three lines and the atlas takes the rest */
 @media (min-width:1280px){.hero{grid-template-columns:minmax(0,calc(max(var(--gut),(100vw - var(--max))/2) + 640px)) minmax(0,1fr)}}
 .hero .map{position:relative;margin:0;min-height:440px;overflow:hidden;background:#2B3A2A}
-.hero .map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 62%}
-.hero .map figcaption{position:absolute;left:1rem;bottom:1rem;right:1rem;display:flex;justify-content:space-between;gap:.5rem 1rem;flex-wrap:wrap;align-items:flex-end;color:#fff;font-size:.78rem}
-.hero .map figcaption span{background:rgba(20,20,20,.82);padding:.45rem .7rem;border-radius:.3rem}
-/* the imagery credit: the small credit tag every photo carries (src/styles/app.css .cover .credit) */
-.hero .map figcaption span + span{font-size:.7rem;line-height:1.3;background:rgba(0,0,0,.55);padding:.05rem .35rem;border-radius:.2rem}
-.hero .map figcaption b{font-family:var(--serif);font-weight:400;font-style:italic;font-size:1rem;display:block}
+.hero .map > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+/* the imagery and card-photo credit: the small credit tag every photo carries (src/styles/app.css .cover .credit) */
+.hero .map figcaption{position:absolute;right:.75rem;bottom:.75rem;max-width:calc(100% - 1.5rem);text-align:right;color:#fff;font-size:.7rem;line-height:1.35;background:rgba(0,0,0,.55);padding:.1rem .4rem;border-radius:.2rem}
+/* the Rioja guide as a card on the map (owner pick 09:31Z, 19 Oct 2026), bottom left, clear of the flags */
+.kick{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink)}
+.gcard{position:absolute;left:clamp(12px,2.5%,28px);bottom:3.4rem;width:min(400px,calc(100% - 24px));display:grid;grid-template-columns:42% minmax(0,1fr);background:#fff;color:var(--ink);text-decoration:none;border-radius:.4rem;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.1),0 18px 40px -16px rgba(0,0,0,.6)}
+.gcard .ph{display:grid;grid-template-rows:1.6fr 1fr;grid-template-columns:1fr 1fr;gap:2px;min-height:9.5rem}
+.gcard .ph img{width:100%;height:100%;object-fit:cover}
+.gcard .ph img:first-child{grid-column:1/3}
+.gcard .bd{display:grid;gap:.25rem;align-content:center;padding:.75rem .9rem .8rem}
+.gcard .kick{font-size:.66rem}
+.gcard b{font-family:var(--serif);font-weight:500;font-size:1.08rem;line-height:1.2;letter-spacing:-.01em}
+.gcard .hook{font-size:.82rem;line-height:1.4;color:var(--ink2)}
+.gcard .go{display:flex;gap:.75rem;align-items:center;margin-top:.3rem;font-size:.75rem;color:var(--ink3)}
+.gcard .fb{display:inline-flex;align-items:center;height:32px;padding:0 .8rem;border-radius:var(--r-btn);background:var(--band);color:var(--foil);font-weight:600;font-size:.8rem}
+.gcard:hover .fb{background:#2A2722}
 .nums{display:flex;gap:2.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
 .nums div{margin:0}
 .nums dt{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1}
@@ -76,49 +83,51 @@ p{text-wrap:pretty}
 .screens .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem 3rem;align-items:end}
 .screens h2{font-size:clamp(2.3rem,3.8vw,3.2rem);line-height:1.08}
 .screens .head p{margin:0;font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);max-width:30rem}
-/* Understand the wine: the guide's five steps as type and hairlines only, no drawings (owner 19 Oct 2026, "way more subtle") */
-.steps{list-style:none;margin:2.5rem 0 4rem;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ink)}
-.steps li{padding:1.1rem 1.25rem 0 0;min-width:0}
+/* Understand the wine: the guide's five steps as type and hairlines, each with a line icon in the app's own style (owner pick 09:31Z, 19 Oct 2026) */
+.steps{list-style:none;margin:2.5rem 0 3.5rem;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ink)}
+.steps li{padding:1.25rem 1.25rem 0 0;min-width:0}
 .steps li + li{padding-left:1.25rem;border-left:1px solid var(--line)}
-.steps span{font-family:var(--serif);color:var(--foil-ink)}
-.steps h3{font-size:1.25rem;letter-spacing:-.01em;margin:.3rem 0 .4rem}
+.steps svg{display:block;width:28px;height:28px;fill:none;stroke:var(--foil-ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.steps h3{font-size:1.3rem;letter-spacing:-.01em;margin:.8rem 0 .4rem}
 .steps p{margin:0;font-size:.95rem;color:var(--ink2)}
+/* three real pieces of the app, a close-up laid over its screen, no flat screenshots (owner round 3) */
 .trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
 .trio figure{margin:0;min-width:0}
-.trio .shot{width:100%;height:auto;aspect-ratio:7/6;object-fit:cover;object-position:left top;border-radius:var(--r-img);box-shadow:0 0 0 1px rgba(20,20,20,.08)}
-.trio figure:first-child .shot{object-position:center 40%}
-.trio figcaption{padding-top:1.25rem}
-.trio h3{font-size:1.6rem;letter-spacing:-.01em;margin:0 0 .5rem}
-.trio p{margin:0;color:var(--ink2);font-size:1rem;max-width:26rem}
+.stage{position:relative;aspect-ratio:5/4;background:var(--bg2);border-radius:var(--r-img);overflow:hidden}
+.stage img{position:absolute;border-radius:.35rem;object-fit:cover;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 18px 40px -18px rgba(0,0,0,.55)}
+.stage .back{inset:0;width:100%;height:100%;border-radius:0;box-shadow:none}
+.see .front{width:62%;height:auto;aspect-ratio:1000/560;right:6%;bottom:8%}
+.und .back{inset:8% auto auto 7%;width:80%;height:auto;aspect-ratio:1280/585;object-position:left top;border-radius:.35rem;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 18px 40px -18px rgba(0,0,0,.55)}
+.und .front{right:6%;bottom:7%;width:64%;height:auto;object-fit:contain;background:#fff}
+.rem .back{filter:saturate(.85);object-position:center 30%}
+.rem .front{left:50%;top:50%;transform:translate(-50%,-46%);width:56%;height:auto}
+.trio figcaption{padding-top:1rem}
+.trio h3{font-size:1.45rem;letter-spacing:-.01em;margin:0 0 .35rem}
+.trio p{margin:0;color:var(--ink2);font-size:.98rem;max-width:26rem}
 
-/* featured guide */
+/* featured guide: one block, photos left and a teaser right (owner round 3: "less is more") */
 .guide{background:var(--bg2);padding-block:6rem}
-/* hero plus four, like a listing (owner liked the mosaic, 19 Oct 2026); credits always visible under the set */
-.guide .mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:.5rem;aspect-ratio:2.2/1;border-radius:.4rem;overflow:hidden}
+.guide .card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);background:var(--bg);border-radius:.4rem;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.guide .mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:3px;min-height:420px}
 .guide .mosaic img{width:100%;height:100%;object-fit:cover;display:block;background:var(--line)}
 .guide .mosaic img:first-child{grid-row:1/3}
+.guide .tease{padding:clamp(1.75rem,3.5vw,3rem);display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.guide h2{font-size:clamp(2rem,3.2vw,2.8rem);line-height:1.08}
+.guide .lede{font-family:var(--serif);font-size:1.45rem;line-height:1.35;margin:0;color:var(--ink)}
+.guide .src{font-size:.78rem;color:var(--ink3);margin:-.4rem 0 0}
+.guide .meta{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;font-size:.85rem;color:var(--ink3);margin-top:.5rem}
 .guide .credit{font-size:.7rem;line-height:1.4;color:var(--ink3);margin:.6rem 0 0}
 .guide .credit a{color:inherit}
-.guide .body{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:3rem;margin-top:2.75rem;align-items:start}
-.guide h2{font-size:clamp(2.3rem,3.8vw,3.2rem);line-height:1.08}
-.guide .lede{font-family:var(--serif);font-size:1.35rem;line-height:1.4;margin:1.25rem 0 .4rem;max-width:32rem}
-.guide .src{font-size:.78rem;color:var(--ink3);margin:0 0 1.75rem}
-.guide .meta{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap;font-size:.9rem;color:var(--ink3)}
-.short{background:var(--bg);border:1px solid var(--foil);border-radius:.4rem;padding:1.4rem 1.5rem}
-.short h3{font-size:1.25rem;margin:0 0 .8rem}
-.short dl{margin:0;display:grid;gap:.6rem}
-.short div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:.75rem;align-items:baseline}
-.short dt{font-family:var(--serif);font-size:1.35rem;line-height:1}
-.short dd{margin:0;font-size:.95rem;color:var(--ink2)}
 
-/* the last word: the call to action again, on the band */
-.closer{background:var(--band);color:#fff;padding-block:5.5rem}
+/* the last word: the call to action again, bigger, on the band (owner round 3) */
+.closer{background:var(--band);color:#fff;padding-block:clamp(3.5rem,7vw,6rem)}
 .closer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2rem 3rem;flex-wrap:wrap}
-.closer h2{font-size:clamp(2.1rem,3.6vw,3rem);line-height:1.08;max-width:20ch;color:#fff}
-.closer p{margin:.9rem 0 0;color:#D8D2C6;font-size:1.05rem;max-width:34rem}
-.closer .btn.cta{background:var(--foil);color:var(--band);box-shadow:none}
-.closer .btn.cta svg{color:var(--band)}
-.closer .btn.cta:hover{background:#F3E7CC}
+.closer h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.05;max-width:18ch;color:#fff;margin-bottom:1rem}
+.closer p{margin:0;color:#D8D2C6;font-size:1.1rem;max-width:34rem}
+.closer .ctas{align-items:center;gap:1rem 1.75rem}
+.closer .btn.big{height:68px;padding:0 2.2rem;font-size:1.25rem;gap:.9rem;background:var(--foil);color:var(--band);box-shadow:0 14px 30px -14px rgba(233,216,180,.6)}
+.closer .btn.big svg{width:1.35rem;height:1.35rem;color:var(--band)}
+.closer .btn.big:hover{background:#F3E7CC}
 .closer .btn.link{color:var(--foil)}
 
 /* plain pages (guides/, about/): a masthead, then one reading column */
@@ -164,14 +173,13 @@ footer small{display:block;color:var(--ink3);font-size:.78rem;margin-top:.5rem;m
   .hero{grid-template-columns:minmax(0,1fr);min-height:0}
   .hero .txt{padding-block:3.25rem 2.5rem;padding-right:max(24px,env(safe-area-inset-right,0px))}
   .hero .map{min-height:0;aspect-ratio:1/1.1}
-  .hero .map img{object-position:62% 20%}
   .nums{gap:1.75rem}
   .sources .wrap{justify-content:flex-start}.sources ul{gap:.2rem 1.25rem;font-size:1rem}
   .trio{grid-template-columns:minmax(0,1fr);gap:2.75rem}
-  .guide .body{grid-template-columns:minmax(0,1fr);gap:2rem}
-  .guide .mosaic{aspect-ratio:4/3;grid-template-columns:1fr 1fr;grid-template-rows:2fr 1fr 1fr}.guide .mosaic img:first-child{grid-row:auto;grid-column:1/3}
+  .guide .card{grid-template-columns:minmax(0,1fr)}.guide .mosaic{min-height:260px}
   .screens .head{grid-template-columns:minmax(0,1fr)}
   .steps{grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-bottom:3rem}.steps li,.steps li + li{padding:1rem 0;border-left:0;border-top:1px solid var(--line)}.steps li:nth-child(-n+2){border-top:0}.steps li:last-child{grid-column:1/3}
+  .gcard{bottom:4.6rem}
   .screens{padding-block:4.5rem}.guide{padding-block:4rem}
   .closer{padding-block:4rem}
   .page-head{padding-block:3.5rem 2.25rem}
