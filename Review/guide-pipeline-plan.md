@@ -53,3 +53,9 @@ About 3 to 4 hours wall clock. Helpers: 1 sources run, 16 writers, 16 checkers, 
 thread re-reading itself between runs. 36% of Sonnet sentences needed a fix, so the per-sentence check stays. Hand sample of 3
 guides found no missed fact. Next: a fixed script runs the helpers, so no long thread sits in the middle. Handoff:
 `docs/handoffs/2026-10-19-cheaper-guide-writing.md`.
+
+## Cataluña, first few-step run (19 Oct 2026)
+12 guides, about 20.1M tokens [V, usage.py]: write 5.57M re-read + 0.74M new, check 4.51M + 0.99M, fact sheets 7.96M + 0.32M.
+Per guide 1.7M (Andalucía 2.6M); write 0.53M (0.76M), check 0.46M (1.25M). Packs are about 25K tokens, not 10K: the pliego extract
+dominates. The overrun was the single fact-sheet agent (93 corrections in one context), now one agent per place. New budget guard:
+pilot of two places, `usage.py --budget 1.7`, output guard at 1.5x in the workflow (CLAUDE.md Pace).

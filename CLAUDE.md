@@ -20,6 +20,11 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Batch content work runs from a fixed script with few-step helpers: a script packs each helper's inputs into one file, the helper
   reads it once and writes once, and the thread gets one report at the end, with no status replies in between (owner 19 Oct 2026:
   Andalucía's checkers re-read about 1.1M cached tokens each to write 16K; every helper step re-reads its whole context).
+- Budget guard (owner 19 Oct 2026, after Cataluña cost about 20M tokens against a 5-8M estimate, 8M of it one agent looping over
+  93 corrections): estimates come only from measured per-place numbers (guides: 1.7M a place, packs about 25K). A new or changed
+  route pilots one or two places first and scales only if the projection fits the budget. One helper per place with a fixed
+  number of steps; no agent loops over many items. A run past 1.5x its budget stops and reports instead of continuing
+  (`Tools/guides/usage.py --budget`, the output guard in `region.workflow.js`).
 - Design: round 1 shows the whole range, subtle to bold, so his feedback rounds refine instead of searching.
 - A review thread fixes its small findings itself in one PR and asks him only about taste; no separate fix thread.
 - Two slices that touch separate files may run as parallel threads; one writer per file. The first to go green merges first; the other
