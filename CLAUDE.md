@@ -27,7 +27,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   went unanswered three times).
 
 ## Token budget (owner 19 Oct 2026, after a 5h limit and weekly warning; audit: 485M tokens in 10 sessions, 97% re-reads)
-- Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 80K context,
+- Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 150K context (owner 19 Oct 2026, raised from 80K),
   before building or merging, not after. Aim under 300K spend for a small slice. Subagents are one-shot from a fixed script with packed inputs
   and reply only with result, blocker or question (10-20 lines).
 - Proactive: before big work give a one-line token estimate and flag cheaper routes first. Above ~20M estimated tokens, wait for his word.
@@ -43,7 +43,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Batch small asks into the main thread unless he says urgent. Past ~60K before a long wait, write the handoff first.
 - Loops are scripts, not chat (19 Oct, Mediterranean prep agent: 14.5M over 107 calls): fetching and per-unit runs happen in a script that
   writes results to files; the session reads a short summary. Quiet commands (`git pull -q`, no full logs): a plain pull put 244 KB in context.
-- Say when the session passes ~80K and what is left, so the owner can move the rest to a fresh session.
+- Say when the session passes ~150K and what is left, so the owner can move the rest to a fresh session.
 
 ## Working agreements
 - **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
