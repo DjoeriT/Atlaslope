@@ -16,19 +16,21 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 
 ## Positioning
 - Guides are a general, fun wine reference for anyone who loves wine, not exam prep [O, 19 Oct]. "Why it tastes the way it does" is the spine.
-- Share card keeps "The wine study atlas for WSET and Wine Scholar students"; home subline "Spain's wine places from above, and why each one
-  tastes the way it does."; headline "Know the land behind the glass." About must not repeat the home page.
+- Share card keeps "The wine study atlas for WSET and Wine Scholar students"; home subline (owner chose, 19 Oct 14:44Z, same paragraph) "Spain's wine places from above, and why each one
+  tastes the way it does. The wine study atlas for WSET and Wine Scholar students."; headline "Know the land behind the glass." About must not repeat the home page.
 - Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations, owner's photos at their own aspect
   ratio. Detail: `Review/visual-style.md`.
 
 ## Current state (19 Oct 2026)
 - Release 49 (tag `release-49`; `git tag -l 'release-*'` for the latest): Mediterranean (11, PR #123) and Canarias (11, PR #124) guides,
-  home study line (PR #125). Guides: 84 of 109 places [V, unit test roster]: Rioja, Green Spain, Castilla y León, Andalucía, Cataluña,
+  home study line (PR #125); commit `229294d` [O]. Release 48: Binissalem photo fix and a Rioja "Showcased guide" on the Guides page using
+  the home-hero satellite view (rotation dropped by owner). Release 47: Ebro. Guides: 84 of 109 places [V, unit test roster]: Rioja, Green Spain, Castilla y León, Andalucía, Cataluña,
   Baleares, Ebro, Mediterranean, Canarias. Left: Meseta, 25 places (run in two halves, prep fixed first). Each region runs only on the
   owner's "use a workflow for X" (the sources step, then `region.workflow.js`).
 - Source quirks: mapa.gob.es, navarra.es refuse; portalagrari.gva.es pliego links 404. Use the Consejo Regulador copy (Jumilla:
   jumilla.wine; Ebro: INTIA) or EU Cellar SPARQL (works; Canarias newer single documents as `<id>-doc2`). EU single document only is OK
-  for Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo (owner). Tharsys is only applied for (OJ C/2025/3093). Detail in
+  for Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo (owner). Where no pliego is reachable, the EU single document alone is OK (Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo).
+  Tharsys was added from its EU application text + OJ C/2025/3093 (file PDO-ES-02980). Islas Canarias keeps its guide although it is outside Study (owner). Detail in
   the region handoffs.
 - Not verified anywhere: Safari, iPad, real phones. Photos, flags and Study for new regions are out of scope unless asked. A new region
   needs a satellite view for the Guides page (a test enforces it since release 44).
@@ -53,24 +55,32 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - 17 Oct: 11 sessions cost $143 for releases 6-15; ~60% was sessions re-reading their own history (428M cached reads); agents were under 1% [V].
 - 19 Oct audit: 485M tokens over 10 sessions, 97% re-reads [V].
 - Guide cost per place [V]: Andalucía 2.6M; Cataluña ~3.1M all-in (12 guides ~37M, write step 20.1M vs 5-8M estimated); packs ~25K.
-  Baleares workflow 0.42M per guide, but the session around it cost 14.7M re-read. Ebro (11 guides) ~10.4M re-read + 0.9M new, ~1.0M per
+  Baleares workflow 0.42M per guide, but the session around it cost 14.7M re-read. Ebro (11 guides, measured 19 Oct) ~10.4M re-read + 0.9M new, ~1.0M per
   guide all-in, one third of Cataluña. Use ~1.0M/guide for estimates, split re-read vs new.
 - Mediterranean (11) 21.2M re-read + 1.0M new: the prep agent alone took 14.5M over 107 calls (one agent fetching every source while
-  hosts refused); writers ~0.4M/guide; ship 3.2M. Canarias (11) 12.1M re-read + 1.0M new, same prep. Fix: one small prep agent per
-  place with a call cap, stop on a refused host.
+  hosts refused); writers ~0.4M/guide; ship 3.2M. Canarias (11) 12.1M re-read + 1.0M new, same prep. Canarias was ~1.2M/guide all-in. Writers, one place per agent,
+  ~0.4M/guide. Fix: one small prep agent per place with a call cap, stop on a refused host. Subagents cannot merge + publish (auto-mode needs the
+  owner's typed words); in the hosted project releases ran in a thread, locally the owner approves directly.
 - Four further estimate overruns on 19 Oct: Cataluña write 20.1M vs 5-8M; re-check 8.5M vs 4-6M (a step was left out); copy fixes 7.9M vs 1.2-2M
   (~100 calls x ~70K); Guides-page fix 5.8M vs 1-1.5M (~45 calls x ~130K). Rule: estimate = calls x ~100K + work, count every step.
 - A second Opus check finds ~7 misses per guide (patterns in `Tools/guides/CHECKER.md`). Pair agents ran long: re-read per guide 3x Baleares.
 
+## Read with the map (story guide, not built)
+Accepted mock `Review/mock-story-guide-v1/` (PR #75): text left, sticky map right, the map flies to each section as you click through. NOT
+built yet (`docs/handoffs/2026-10-18-atlas-guide-page.md`). The owner remembers it as a feature, so build it as its own slice on his word.
+Tracked in #127 (related #4).
+
 ## Open issues (GitHub, DjoeriT/Atlaslope)
-#57, #42, #83 (flaky Study tests), #96 (alt texts), #101 (travel flags), #103 (enrich guides from more sources), #106 (later guide ideas),
+#126 repetitive "If you like this, try" cards ("Tempranillo here too" x3, Navarra photo white band); #127 story guide above; Canarias guides
+need a polish pass (style lists "white, rosado and red", label terms read like regulation text); source quirks in the Mediterranean and
+Canarias handoffs. Older: #57, #42, #83 (flaky Study tests), #96 (alt texts), #101 (travel flags), #103 (enrich guides from more sources), #106 (later guide ideas),
 #108 (running/content costs, zoomed-out satellite), #29, #30, #18. Also: Cangas and Álava have no vineyard photos; Ribeira Sacra yield
 conflict; Getaria/Cangas pliego versions; Navarra pliego unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, share
 cards, sitemap) only on his go, pilot 2 guides first (`Review/website-plan.md`). Later: globe intro (needs MapLibre 5, with France), Cmd-K.
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region) timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region; 84/109 guides live). Next: fix the prep step first (one small capped prep agent per place), then run in two batches. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
