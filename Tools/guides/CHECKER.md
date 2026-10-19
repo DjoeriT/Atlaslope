@@ -18,7 +18,7 @@ splices, "X, Y and Z" lists, and a cause-to-taste link the page does not make. T
 
 ## Also check
 - Flights: the pliego names the place, and the point is that place. Look each point up on OpenStreetMap Nominatim
-  (`https://nominatim.openstreetmap.org/search?q=...&format=json&limit=1`, a User-Agent header, one request a second) and correct
+  (`https://nominatim.openstreetmap.org/search?q=...&format=json&limit=1`, User-Agent exactly "Atlaslope guide check", never an email address or name, one request a second) and correct
   coordinates more than about 3 km off.
 - Missing flights: if the guide only flies to the place itself but the pliego describes a named river, valley, mountain range or
   historic town worth seeing from above, add one flight for it (label, caption with cite, Nominatim point, zoom 8 to 11).
