@@ -76,6 +76,13 @@ function truths(kind: FactKind, place: Place, ctx: QuestionContext): { asked: st
   return { asked: top?.name, all: koppen.map((k) => k.name) };
 }
 
+/** The main words of a style name: lowercase, accents and plural s removed, words under 6 letters dropped ("Txakolis blancos fermentado en barrica" gives blanco, fermentado, barrica). */
+const styleWords = (name: string): string[] =>
+  name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z]+/).map((w) => w.replace(/s$/, '')).filter((w) => w.length >= 6);
+
+/** Two style names are the same style when they share a main word, so spelling variants ("Txacoli blanco ...", "Txakoli blanco ...") and a shared "Tostado" are not offered as wrong choices. */
+const sameStyle = (a: string, b: string): boolean => styleWords(a).some((w) => styleWords(b).includes(w));
+
 function poolPlaces(ctx: QuestionContext): Place[] {
   const ids = ctx.pool ?? ctx.tree.places.filter((p) => p.quiz !== 'none').map((p) => p.id);
   return ids.map((id) => ctx.tree.getPlace(id)).filter((p): p is Place => p !== undefined);
@@ -98,6 +105,7 @@ function factChoices(kind: FactKind, place: Place, ctx: QuestionContext, order: 
     if (other.id === place.id) continue;
     const t = truths(kind, other, ctx).asked;
     if (!t || mine.has(t.toLowerCase()) || seen.has(t.toLowerCase())) continue;
+    if (kind === 'style' && own.all.some((n) => sameStyle(n, t))) continue;
     // A wrong text must be true of some other place and false of this one; `asked` of the other place is true of it.
     seen.add(t.toLowerCase());
     candidates.push(t);

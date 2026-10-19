@@ -115,3 +115,25 @@ describe('revealFact', () => {
     expect(revealFact('south-none', facts)).toBeUndefined();
   });
 });
+
+describe('style questions with spelling variants', () => {
+  // The real names: three txakoli spellings, and a shared Tostado.
+  const names: Record<string, string[]> = {
+    'south-a': ['Txacolí blanco fermentado en barrica'], 'south-b': ['Txakoli blanco fermentado en barrica'], 'south-c': ['Txakolis blancos fermentados en barrica'],
+    'north-a': ['Tostado del Ribeiro'], 'north-b': ['Tostado de Valdeorras'], 'north-c': ['Crianza'],
+  };
+  const f: FactSource = {
+    sheetOf: (id) => ({ id, grapes: { main: grapes[id] ?? [] }, famous: { styles: names[id]!.map((name) => ({ name, text: '' })) } } as unknown as Sheet),
+    measuresOf: facts.measuresOf,
+  };
+  it('never offers the same style as a wrong choice', () => {
+    const key = (n: string) => (/tostado/i.test(n) ? 'tostado' : /txa/i.test(n) ? 'txakoli' : n);
+    for (const id of Object.keys(names)) {
+      for (let seed = 0; seed < 20; seed++) {
+        const q = makeQuestion(item(id, 'fact'), { tree, facts: f, rng: seededRandom(seed) });
+        if (q?.type !== 'fact' || q.fact !== 'style') continue;
+        for (const c of q.choices.filter((c) => c !== q.answer)) expect(key(c)).not.toBe(key(q.answer));
+      }
+    }
+  });
+});
