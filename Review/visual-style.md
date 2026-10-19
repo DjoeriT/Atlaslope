@@ -36,7 +36,7 @@ an addition and the owner decides.
 ## Space and shape
 - 8 px rhythm: gaps of 0.5, 1, 1.5, 2 or 3 rem. Sections are separated by a 1 px line and 2 rem of space.
 - Radius: small, as in Colour: `.3rem`, cards and buttons `.4rem`, no pills anywhere, badges included (owner 18 Oct 11:49Z: "soft buttons"; the SPAIN badge was the last pill, 18 Oct 2026). Shadows are soft and used only on floating things
-  (map card, the "at a glance" box, buttons over photos, cards over the map).
+  (map card, buttons over photos, cards over the map).
 - Targets are at least 44 px. Every interactive item has a visible focus ring.
 - The bar is WCAG 2.2 AA: keyboard reachable, screen-reader labels, no information by colour alone.
 - Motion respects `prefers-reduced-motion: reduce`: transitions, view transitions, scroll timelines and map fly-bys stop or shorten
@@ -93,6 +93,16 @@ an addition and the owner decides.
   of the app at close to real size, never a whole screen shrunk.
 - The atlas opens on the map: the home page does the welcome, so first-run is a three-line note on moving the map that goes at the
   first touch.
+
+## Place page: guide shape C (owner, 19 Oct 2026)
+Approved mock: `Review/mock-guide-shape-c/index.html` (option C). The guide is the whole place page; Terroir is its written section.
+- The page answers "Why X tastes the way it does" in four numbered beats: the place, the weather, the ground, what the rules make. Each
+  beat holds its own facts once, prose left and facts right on a wide screen. A beat with no written chapter shows the fact sheet alone.
+- How it tastes closes the chain as a toned panel; then In short: five facts, one line each, each a link to its beat.
+- The rest are plain sections a wine lover browses, with plain titles: Producers, Read the label, Did you know, History, Places to visit
+  (When to go inside it), Food to try there, If you like this, try. Each shows only when it has sourced text.
+- A guide is a fun reference, not exam-centric: no "Remember" cards, no "Beyond the exam". Test me is a small door into Study.
+- Later (issue #106): D's tappable cause chain on top of C, only where every step holds against the sources.
 
 ## How mocks reach the owner
 One HTML page per round: the before and after, or every option (A / B / C / D) on the same page, labelled so he can pick one.
