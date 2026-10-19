@@ -33,7 +33,7 @@ html, body {{ margin: 0; width: {W}px; height: {H}px; overflow: hidden; backgrou
 .brand {{ display: flex; align-items: center; gap: 18px; font: 500 48px/1 Newsreader, serif; color: {INK}; }}
 h1 {{ font: 400 70px/1 Newsreader, serif; letter-spacing: -2px; color: {INK}; margin: 0; }}
 .tag {{ font: 400 25px/1.35 Newsreader, serif; color: {INK2}; }}
-.map {{ position: absolute; left: 560px; right: 0; top: 0; bottom: 0; background: url('../../public/home/hero.webp') 44% 35% / cover; }}
+.map {{ position: absolute; left: 560px; right: 0; top: 0; bottom: 0; background: url('../../public/home/hero.webp') 88% 4% / 920px auto; }}
 .credit {{ position: absolute; right: 14px; bottom: 12px; font: 400 13px/1 'IBM Plex Sans', sans-serif; color: #fff;
   background: rgba(20,20,20,.75); padding: 6px 9px; border-radius: 4px; }}
 </style></head><body>
