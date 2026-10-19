@@ -7,8 +7,8 @@ hosted coordinator never see this file; their part is `docs/env-cloud.md`. Check
 - This session is **LeadBot** for its slice. There is no coordinator here: the owner and this session cover that part (what's open, memory).
 - Read `docs/AGENT_ROLES.md` by section, not whole: "LeadBot" when starting a slice; "Task card" and "Token budget" before spawning.
 - Helpers are the `builder`, `reviewer` and `analyst` agent types; builders run with worktree isolation and never push.
-- Local sessions and cloud threads count together toward "at most two working sessions". Before editing shared files, check open PRs and
-  `gh run list` for another session's branch.
+- One main thread does the work; follow-ups are listed in plain text, not started as side sessions. Long per-place runs are a script
+  (`Tools/guides/headless.py`) the main thread starts. Before editing shared files, check open PRs and `gh run list` for other branches.
 
 ## Access
 - `gh` is the owner's own login, with admin rights; `main` has no branch protection. Only `CLAUDE.md` stops a push to `main`, a self-publish

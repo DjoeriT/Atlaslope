@@ -35,11 +35,12 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Overrun guards: estimates only from measured per-unit numbers (calls x ~100K context + work; count every step, a fresh session is not cheap).
   Pilot 1-2 units first; one helper per unit with a fixed step count, no agent loops over many items; hard stop at 1.5x budget and report at
   once with the breakdown, and put the fix into the pipeline and these rules (`Tools/guides/usage.py --budget`, output guard in `region.workflow.js`). Measured numbers: `docs/PROJECT.md`.
-- At most two working sessions at once. Mock rounds run in a one-shot helper that builds the page and returns only the link and a few lines.
+- One main thread (owner 19 Oct 2026, after a chain of side sessions woke each other for full re-reads): no side sessions, and no
+  helper starts sessions of its own. Helpers are one-shot subagents. Mock rounds run in a one-shot helper that builds the page and returns only the link and a few lines.
 - Report cost in tokens (re-read and new), not dollars, and say which measurement an estimate rests on.
 - Few, big tool calls. Read with `grep -n` and line ranges, never whole files or logs. Batch independent calls. Never wait on your own tools:
   tests, CI logs, searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet subagent that reports in 10-20 lines.
-- Batch small asks into one session unless he says urgent. Past ~60K before a long wait, write the handoff first.
+- Batch small asks into the main thread unless he says urgent. Past ~60K before a long wait, write the handoff first.
 - Loops are scripts, not chat (19 Oct, Mediterranean prep agent: 14.5M over 107 calls): fetching and per-unit runs happen in a script that
   writes results to files; the session reads a short summary. Quiet commands (`git pull -q`, no full logs): a plain pull put 244 KB in context.
 - Say when the session passes ~80K and what is left, so the owner can move the rest to a fresh session.
