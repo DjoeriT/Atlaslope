@@ -3,8 +3,8 @@
  "title": "Why Bierzo tastes the way it does",
  "minutes": 3,
  "lede": {
-  "text": "Bierzo sits in a mountain-ringed basin where the ocean and the interior meet. Its vines get more rain than most of inland Spain, and more than 300 hours of sun a month in midsummer.",
-  "cite": ["bierzo-pliego:p12", "bierzo-pliego:p13"]
+  "text": "Bierzo sits in a basin ringed by mountains, with a climate that mixes the oceanic and the continental. It gets more rain than the so-called dry Spain, and more than 300 hours of sun on average in July and August.",
+  "cite": ["bierzo-pliego:p11", "bierzo-pliego:p12", "bierzo-pliego:p13"]
  },
  "chapters": [
   {
@@ -12,8 +12,8 @@
    "beat": "place",
    "title": "A basin behind the mountains",
    "paras": [
-    "Bierzo is one tectonic basin, a hoya, formed when the Alps were rising. A ring of blunt, flattened mountains surrounds it, with isolated quartzite crests poking out. Below them, rivers have cut deep, narrow gorges.",
-    "The vines grow on gentle terraces, on half-terraced slopes and on steep ground, from 355 m to 1,200 m. Most of the vineyard lies between 400 m and 800 m, and the vines face every direction. Vines above 1,000 m make wines that are very fresh and lively."
+    "Bierzo is one tectonic basin, a hoya, made by the Alpine mountain-building. A ring of blunt, flattened mountains surrounds it, with isolated quartzite crests poking out. Below them lie lowlands with sunken valleys that open into deep, narrow, steep gorges.",
+    "The vines grow from 355 m to 1,200 m. Some sit on gently sloping terraces, others on half-terraced slopes or on steep ground. Most of the vineyard lies between 400 m and 800 m, and vines can face any direction. Vines above 1,000 m make wines that are very fresh and lively."
    ],
    "cite": ["bierzo-pliego:p11", "bierzo-pliego:p15"],
    "fly": [
@@ -30,21 +30,21 @@
    "beat": "weather",
    "title": "Ocean and interior in one valley",
    "paras": [
-    "The mountain ring gives the basin its own climate, a mix of the oceanic (mild and wet) and the continental (cold and dry). It resembles the Spanish interior, but its winter minimums are higher.",
-    "The average year is mild, at about 12.3°C. Winters are cold, and fog often causes temperature inversions. Summers are mild, though very hot days are not rare. The swing between cold and warm is about 16°C, and that helps the grapes ripen.",
+    "Inside its mountain ring, the basin has a climate of its own, a mix or transition between the oceanic (mild and wet) and the continental (cold and dry). It resembles the climate of Spain's interior, but its minimum temperatures are higher.",
+    "The average year is mild, at about 12.3°C. Winters are cold, and fog often causes temperature inversions. Summers are mild, though very hot days are not rare. The temperature swing is very marked, about 16°C. It gives the zone a certain continental character and favours the ripening of the grapes.",
     "Rain is fairly plentiful, about 793 mm a year on average. It falls unevenly: October to December are the wettest months and June to August the driest.",
-    "Sun adds to it. July and August average more than 300 hours of sun, which is exceptional for this latitude and for the Atlantic-influenced northwest. The grapes ripen slowly, and slow ripening builds the colour and the aromas of the wines."
+    "Sunshine is another key factor in ripening good grapes. July and August average more than 300 hours of sun, which is exceptional for Bierzo's latitude and longitude and for its Atlantic influence in northwest Spain. The wines owe their qualities above all to slow ripening, which raises the polyphenols and gives them an attractive colour. Aromatic substances in the grape skins make them very fresh, with a subtle acidity."
    ],
-   "cite": ["bierzo-pliego:p12", "bierzo-pliego:p13", "bierzo-pliego:p14"]
+   "cite": ["bierzo-pliego:p12", "bierzo-pliego:p13", "bierzo-pliego:p14", "bierzo-pliego:p15"]
   },
   {
    "id": "soils",
    "beat": "ground",
    "title": "Slate, quartzite and a thirsty clay",
    "paras": [
-    "The soils are a mix of quartzite, sandstone, limestone, clay and slate. Their texture is franco-arcillosa, a clay loam, which passes water to the vines when they need it most. They are brown when dry and reddish-brown when wet.",
-    "They are acid, with no carbonates, and hold a lot of water. Their humus comes from the old forest and scrub that once covered the basin. They are low in organic matter, which favours quality over quantity.",
-    "More coarse slate and quartzite in the loam brings elegance and fineness to the wines. That is what sets them apart from wines of other zones."
+    "Most vineyard soils are a mix of quartzite, sandstone, limestone, clay and slate. Their texture is franco-arcillosa, a clay loam, which passes water to the vines when they need it most. They are brown when dry and reddish-brown when wet.",
+    "They are acid, with no carbonates, and hold a lot of water. Their high humus content is inherited from the rich tree and shrub cover the area once had. They are low in organic matter, which favours quality over quantity.",
+    "These clay loams carry more or less coarse slate and quartzite, and they bring elegance and fineness to the wines. That makes the wines easy to tell apart from those of other zones."
    ],
    "cite": ["bierzo-pliego:p11", "bierzo-pliego:p12", "bierzo-pliego:p14"]
   },
@@ -53,10 +53,10 @@
    "beat": "rules",
    "title": "Old vines, small harvests",
    "paras": [
-    "Monks and farmers have shaped Bierzo's local grapes for centuries. 25 monasteries are documented in the area before the desamortización, the sale of church lands. Mencía makes up about 75% of the vines, and Godello is the other main grape.",
-    "The average vine is about 75 years old, and old vineyards cover 85% of the vine area. Many were planted from the late 19th century into the early 20th century. Old vines carry many pruning scars that slow the sap. They make fewer and smaller bunches, with more sugar in the grapes.",
-    "Narrow planting and steep slopes, once worked by animals, keep yields modest. Mencía is capped at 11,000 kg per hectare, and no more than 81.40 hl per hectare of wine can be made from it. Irrigation is generally forbidden, except to keep vines alive or to improve grape quality.",
-    "The result is red wine with lots of fruit that can age in barrel, and white wine that is fresh, tasty and full-bodied."
+    "Monks and farmers have shaped Bierzo's local grapes for centuries. 25 monasteries are documented in the area before the desamortización, the sale of church lands. Mencía and Godello are the main grapes.",
+    "The average vine is about 75 years old, and old vineyards cover 85% of the vine area. Mencía makes up 75% of these old plantings. Many were planted from the late 19th century into the early 20th century. Old vines carry many pruning scars that slow the sap. They make fewer and smaller bunches, and tend to build up more sugar in the grapes.",
+    "The old vineyards were planted narrow, shaped by the habit of ploughing with animals. Narrow planting and the soils keep yields from being very high. Mencía is capped at 11,000 kg per hectare, and no more than 81.40 hl per hectare of wine can be made from it. Irrigation is generally forbidden, except to keep vines alive or to secure or improve grape quality.",
+    "Bierzo's red wines have great fruit expression and freshness, and a great capacity to age in barrel. Its white wines are fresh and tasty, with volume."
    ],
    "cite": ["bierzo-pliego:p6", "bierzo-pliego:p9", "bierzo-pliego:p13", "bierzo-pliego:p14", "bierzo-pliego:p15"]
   }
@@ -69,17 +69,17 @@
    },
    {
     "term": "Vino de Paraje",
-    "text": "A wine that carries the name of a smaller geographic unit, with yields cut by 25%."
+    "text": "A wine made from 100% grapes grown in one of Bierzo's listed parajes, or named sites, with yields cut by 25%."
    },
    {
     "term": "Viña Clasificada",
-    "text": "A kind of Vino de Paraje, with yields cut by 30%."
+    "text": "A wine from one plot, or adjoining plots, in one mapped paraje that has used Vino de Paraje for at least five years. Yields are cut by 30%, and the Consejo Regulador, the governing board, assesses the wine before sale."
    },
    {
     "term": "Gran Viña Clasificada",
-    "text": "A kind of Vino de Paraje, with yields cut by 35%."
+    "text": "A wine from one plot, or adjoining plots, in one mapped paraje that has used Viña Clasificada for at least five years. Yields are cut by 35%, and the Consejo Regulador assesses the wine before sale."
    }
   ],
-  "cite": ["bierzo-pliego:p9", "bierzo-pliego:p10", "bierzo-pliego:p17"]
+  "cite": ["bierzo-pliego:p9", "bierzo-pliego:p10", "bierzo-pliego:p17", "bierzo-pliego:p19", "bierzo-pliego:p30"]
  }
 }

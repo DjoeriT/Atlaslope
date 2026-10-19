@@ -19,3 +19,4 @@
 | Check | ribera-del-duero | Opus | 83,897 | 3.1 |
 | Check | cigales | Opus | 85,700 | 3.5 |
 | Check | leon | Opus | 83,572 | 3.1 |
+| Check | bierzo | Opus | 92,615 | 3.8 |
