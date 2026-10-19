@@ -15,15 +15,19 @@ export function PageTop({ tree, go, back, title }: { tree: Tree; go: Go; back: S
     <>
       <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title} />
       {/* Where people look for "back" (owner, 18 Oct 2026: "is the show map placement the best place?"): top left on a wide screen,
-          the floating button in thumb reach on a phone. CSS shows one or the other (motion.css). */}
+          the floating button in thumb reach on a phone. On a wide screen it is a button with the map icon, not a bare "‹ Map" (owner, 19 Oct 2026: "looks whacky"). CSS shows one or the other (motion.css). */}
       <a className="pg-back" href={selectionToHash(back)} aria-label={title ? strings.topBar.showMapLabel(title) : undefined}
         onClick={(e) => { e.preventDefault(); go(back); }}>
-        <span aria-hidden="true">‹</span> {strings.topBar.backToMap}
+        <MapIcon /> {strings.topBar.showMap}
       </a>
       <ShowMap go={go} back={back} name={title} />
     </>
   );
 }
+
+const MapIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z" /><path d="M9 4v14M15 6v14" /></svg>
+);
 
 /** A black "Show map" button floating at the foot of every guide, the way back to the map that reads at a glance (owner, 18 Oct 2026:
  *  "from the guide there's no way to go back to the atlas in an intuitive way"). It sits apart from the bar, so it never doubles Atlas
@@ -48,7 +52,7 @@ function ShowMap({ go, back, name }: { go: Go; back: Selection; name?: string })
   return (
     <a ref={ref} className="showmap" href={selectionToHash(back)} aria-label={name ? strings.topBar.showMapLabel(name) : undefined}
       onClick={(e) => { e.preventDefault(); go(back); }}>
-      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z" /><path d="M9 4v14M15 6v14" /></svg>
+      <MapIcon />
       {strings.topBar.showMap}
     </a>
   );
