@@ -12,3 +12,4 @@
 | Write | valtiendas | Sonnet | 33,725 | 0.8 |
 | Check | rueda | Opus | 87,340 | 3.6 |
 | Write | valles-de-benavente | Sonnet | 38,903 | 1.1 |
+| Write | tierra-del-vino-de-zamora | Sonnet | 44,219 | 1.0 |

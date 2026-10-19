@@ -1,0 +1,105 @@
+{
+ "id": "tierra-del-vino-de-zamora",
+ "title": "Why Tierra del Vino de Zamora tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Sandy soils kept the phylloxera plague away here, so many vines are more than 100 years old. Those old vines, grown in a dry and cold plateau climate, give ripe, tannic reds that last.",
+  "cite": [
+   "tierra-del-vino-de-zamora-pliego:p13",
+   "tierra-del-vino-de-zamora-pliego:p14"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A high plateau above the Duero",
+   "paras": [
+    "The vineyards lie on the Meseta Norte, the high northern plateau of Spain, in the basin of the river Duero. The average altitude is about 750 m, and most of the land sits between 700 and 900 m.",
+    "The zone covers the south-east of Zamora province and the north-east of Salamanca province. The name is old: since the Middle Ages, the Tierra del Vino (\"Wine Land\") has fed the city of Zamora with wine. It is the only place name in Spain that refers to a Tierra del Vino.",
+    "In 1489 the city banned wine from villages outside its jurisdiction. By the middle of the 16th century this wine was sold as far as Galicia."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p9",
+    "tierra-del-vino-de-zamora-pliego:p11",
+    "tierra-del-vino-de-zamora-pliego:p16",
+    "tierra-del-vino-de-zamora-pliego:p19"
+   ],
+   "fly": [
+    {
+     "label": "Zamora, city of the Tierra del Vino",
+     "point": [
+      -5.745,
+      41.503
+     ],
+     "zoom": 11,
+     "caption": "Zamora has been the centre of the Tierra del Vino since the Middle Ages, with a large vineyard of its own.",
+     "cite": [
+      "tierra-del-vino-de-zamora-pliego:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry, cold and very sunny",
+   "paras": [
+    "The climate is Mediterranean with a strong continental streak. Only 350-400 mm of rain falls in a year, summers are dry, and winters are harsh and very long. Day and night temperatures differ sharply, and frost often comes in spring.",
+    "The average winter temperature does not go above 3º C and the summer average is above 23º C. The frost-free period lasts 190 days, and the vines are active for about 210 days. The sun shines for more than 2,800 hours a year.",
+    "Most of the rain falls in winter and refills the groundwater. In the dry months the deep roots of the vines go down to find it. May brings a good share of rain just as temperatures climb, which wakes up the vine."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p12"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand over clay, left alone by phylloxera",
+   "paras": [
+    "Many streams cross the zone, among them the Duero, the Valdearaduey and the Guareña, so the soils are alluvial. They are deep and poor in organic matter (under 1%). Deeper down they are very clayey. At the surface it depends on height: sand on the plains, gravel on the slopes and pebbles on the hilltops.",
+    "The typical soil is fine and sandy, with clay in every layer. With so little humus the surface stays loose. This texture suits vines and gives the wines their own character. The pH is mostly between 7.0 and 8.0.",
+    "Phylloxera, the root louse that destroyed vineyards across Europe, barely touched these sandy soils. Many plots are over 100 years old, and the average vine is 65 years old. In the 1970s land consolidation skipped the vineyards of several villages, which saved some of the oldest ones."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p12",
+    "tierra-del-vino-de-zamora-pliego:p13",
+    "tierra-del-vino-de-zamora-pliego:p18"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Ripe grapes, big reds and a rare white",
+   "paras": [
+    "Old vines in a dry, sunny place give grapes with a lot of sugar, moderately low acidity and strong primary aromas of ripe fruit. Red grapes also carry plenty of anthocyanins and tannins. The wines follow: high in alcohol, aromatic and broad, and the reds have deep colour and firm structure, which makes them long-lived.",
+    "Tempranillo is the main red grape. Garnacha Tinta and Cabernet Sauvignon often complement it, but more and more of them are bottled alone. Tinto must contain at least 75% red grapes and a minimum of 12.5% alcohol.",
+    "Clarete is a local style made like a red wine, with some white grape must in it. It must contain at least 30% red grapes. Its colour runs from raspberry pink to onion skin, or from violet red to chestnut red, depending on how much white must is used and how long the must stays on the skins. Rosado needs at least 60% red grapes.",
+    "Among the whites, Malvasía Castellana (also called Doña Blanca) has one of its last strongholds on the Iberian Peninsula here. Moscatel de Grano Menudo has long led the tradition of semi-sweet and liqueur wines. Verdejo and Godello are widely planted in the south-east.",
+    "The rules keep yields low: 7,000 kg per hectare for red grapes and 10,000 kg for white. A press may extract at most 72 litres of wine from every 100 kg of grapes. Some vineyards are old multi-variety plots, and newer single-variety plantings now stand beside them. The old vines are the true symbol of the zone."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p5",
+    "tierra-del-vino-de-zamora-pliego:p8",
+    "tierra-del-vino-de-zamora-pliego:p9",
+    "tierra-del-vino-de-zamora-pliego:p10",
+    "tierra-del-vino-de-zamora-pliego:p13",
+    "tierra-del-vino-de-zamora-pliego:p14",
+    "tierra-del-vino-de-zamora-pliego:p15",
+    "tierra-del-vino-de-zamora-pliego:p19"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Pueblo",
+    "text": "A village name may appear on the label with this phrase when at least 85% of the grapes come from plots in that village."
+   }
+  ],
+  "cite": [
+   "tierra-del-vino-de-zamora-pliego:p22"
+  ]
+ }
+}
