@@ -1174,5 +1174,95 @@
   "title": "Documento único PDO-ES-N1665 (EU single document, Vera de Estenas)",
   "url": "http://publications.europa.eu/resource/cellar/d452dd11-a475-11e9-9d01-01aa75ed71a1",
   "date": "2019-07-12"
+ },
+ "bierzo-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0615 (Bierzo, ITACyL rev 3)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DO+BIERZO+Rev+3.1.pdf/62426d45-35fc-7636-2566-31fd2e8c20f5",
+  "date": "2026-08-17"
+ },
+ "leon-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0882 (León, ITACyL rev 3)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+LEON_rev+3.pdf/b43a186c-40b7-7efc-7536-10738608c5b3",
+  "date": "2024-02-16"
+ },
+ "arlanza-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0613 (Arlanza, ITACyL rev 3.1)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PPC+DOP+ARLANZA+rev.+3.1+%282%29.pdf/126d9762-e752-4a0a-17a7-561eb8319e28",
+  "date": "2026-06-03"
+ },
+ "valles-de-benavente-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0646 (Valles de Benavente, ITACyL rev 0)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+VALLES+DE+BENAVENTE_FINAL+%28Rev.+0%29+%281%29.pdf/717509e4-898d-e4e5-4f9f-5b71bc34d53c",
+  "date": "2011-12-31"
+ },
+ "cigales-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0622 (Cigales, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+CIGALES+en+vigor_Rev+2.pdf/2aae0caf-1631-ee29-c2ae-c65397b3292e",
+  "date": "2022-07-08"
+ },
+ "ribera-del-duero-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0626 (Ribera del Duero, ITACyL rev 5)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+RIBERA+DUERO+_rev+5+%281%29.pdf/a1e603c3-0df9-1129-0cd4-02cfa675f3ba",
+  "date": "2023-07-31"
+ },
+ "valtiendas-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0747 (Valtiendas, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+VALTIENDAS+Rev+2+en+vigor+%282%29.pdf/2037cb2f-e138-0d09-342a-765995b87f16",
+  "date": "2019-07-05"
+ },
+ "toro-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0886 (Toro, ITACyL rev 5)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DO+TORO_Rev+5+con+4.2.pdf/05b17302-6e3e-1ceb-2c03-61772db97301",
+  "date": "2024-12-11"
+ },
+ "tierra-del-vino-de-zamora-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0634 (Tierra del Vino de Zamora, ITACyL rev 1)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PLIEGO+DE+CONDICIONES+DO+TVZ+ITACYL+rev.1.2.pdf/88f14b4b-ec26-32b1-2538-cb5c0d26094a",
+  "date": "2026-09-23"
+ },
+ "arribes-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0614 (Arribes, ITACyL rev 4)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+ARRIBES+Rev+4.2.pdf/8e184668-8b8c-5dd0-e6a3-9adab025a028",
+  "date": "2026-06-10"
+ },
+ "sierra-de-salamanca-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-A0631 (Sierra de Salamanca, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+SSalamanca+Rev+2.3.pdf/d6eae069-98d5-8bad-ab26-857709321690",
+  "date": "2026-09-29"
+ },
+ "cebreros-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-02348 (Cebreros, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+CEBREROS_Rev+2+%281%29.pdf/a64c5e82-8b93-03b8-6a49-f9fa3bf78fc3",
+  "date": "2025-01-03"
+ },
+ "abadia-retuerta-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-02481 (Abadía Retuerta, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+VP+Abadia+Retuerta_v2.pdf/4ffcc3a9-7864-03c0-1283-3bb5415356f7",
+  "date": "2026-08-06"
+ },
+ "dehesa-penalba-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-02592 (Dehesa Peñalba, ITACyL rev 2)",
+  "url": "https://www.itacyl.es/documents/20143/342640/Pliego+de+condiciones+Dehesa+Pe%C3%B1alba_rev+2.2.pdf/6cf1fd95-ec55-0a0c-73c7-41a1dd1bb4bd",
+  "date": "2026-08-26"
+ },
+ "uruena-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones PDO-ES-02485 (Urueña, ITACyL rev 1)",
+  "url": "https://www.itacyl.es/documents/20143/342640/PCC+DOP+URUE%C3%91A_en+vigor.pdf/e3569dbe-e269-2292-6c7f-ffa7f20b5efd",
+  "date": "2022-01-12"
  }
 }
