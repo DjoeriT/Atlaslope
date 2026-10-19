@@ -1,0 +1,95 @@
+{
+ "id": "valdepenas",
+ "title": "Why Valdepeñas tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "A dry continental climate and mostly limy soils poor in organic matter leave the vines short of water. The vines answer with low yields and good ripening, which favours well-structured reds, complex and elegant.",
+  "cite": [
+   "valdepenas-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "south",
+   "beat": "place",
+   "title": "The south of Ciudad Real",
+   "paras": [
+    "The vineyards lie in the south of the province of Ciudad Real. Six municipalities lie wholly inside the zone, Valdepeñas among them. Parts of four more are in too."
+   ],
+   "cite": [
+    "valdepenas-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Valdepeñas, inside the zone",
+     "place": "valdepenas",
+     "caption": "The zone lies in the south of the province of Ciudad Real.",
+     "cite": [
+      "valdepenas-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "High summer heat that softens late",
+   "paras": [
+    "The climate is dry and continental. Summer temperatures are high, but they soften towards the end.",
+    "That favours a slower end of ripening. It brings more polyphenolic compounds and keeps the aromas."
+   ],
+   "cite": [
+    "valdepenas-doc:p6",
+    "valdepenas-doc:p7"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Limy ground that stores the heat",
+   "paras": [
+    "Limy soils poor in organic matter dominate, with a high pH of 7.5 to 8.5. Roots meet little resistance as they push down.",
+    "These limy soils reflect sunlight. They also store its heat for the night."
+   ],
+   "cite": [
+    "valdepenas-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Low yields, still and sparkling",
+   "paras": [
+    "Six grapes are the main ones. Tempranillo is one, here also called Cencibel or Tinto de Toro. Airén is another. Cabernet Sauvignon and Syrah are main grapes too. So are Verdejo and Macabeo, also called Viura. Six more are allowed as secondary grapes, Merlot and Chardonnay among them.",
+    "Yields are capped at 6,000 kg of grapes per hectare for red varieties. White varieties may give up to 7,500 kg.",
+    "Whites are light in the mouth and pale yellow, with a fine, clean aroma that is discreetly fruity. After barrels they show amber tones with golden glints. Rosados (rosés) are pink with red and violet hints. Their aroma is fresh and fruity, recalling red fruit, with medium-high acidity.",
+    "Reds run from picota cherry to violet cherry or ruby. Their aroma is very subtle and grows with time. In the mouth they are soft and warm, with a long finish. The Tinto Tradicional (traditional red) is violet to garnet, frank and fruity, with moderate tannins.",
+    "Quality sparkling wine is made too. It is pale or golden, with a fine and persistent bubble. Its aromas are clean and fruity."
+   ],
+   "cite": [
+    "valdepenas-doc:p1",
+    "valdepenas-doc:p2",
+    "valdepenas-doc:p3",
+    "valdepenas-doc:p4",
+    "valdepenas-doc:p5",
+    "valdepenas-doc:p6",
+    "valdepenas-doc:p11"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Premium",
+    "text": "Quality sparkling wines of Valdepeñas may carry \"Premium\" on the label."
+   },
+   {
+    "term": "Reserva",
+    "text": "Quality sparkling wines of Valdepeñas may also carry \"Reserva\" on the label."
+   }
+  ],
+  "cite": [
+   "valdepenas-doc:p7"
+  ]
+ }
+}

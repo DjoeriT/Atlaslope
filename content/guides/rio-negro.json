@@ -1,0 +1,92 @@
+{
+ "id": "rio-negro",
+ "title": "Why Río Negro tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Río Negro sits on a high plateau where days and nights often differ by more than 20 °C while the grapes ripen. The mild days slow the ripening, which helps keep the acidity, and the reds stay picota red even after ageing.",
+  "cite": [
+   "rio-negro-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "paramo",
+   "beat": "place",
+   "title": "A plateau cut off by ravines",
+   "paras": [
+    "Río Negro is a páramo, a high plateau, in the province of Guadalajara. It is an abrupt rise between 940 and 1,000 m above sea level.",
+    "The vineyards cover 472.80 hectares in one continuous block. Most of it lies in Cogolludo, with smaller parts in Membrillera and San Andrés. A deep system of ravines physically cuts the plateau off from the land around it.",
+    "Woods of pine and juniper surround the vines, with oak and holm oak. The scrub below them is full of aromatic plants.",
+    "These plants raise the level of terpenes in the wine even more, and with it the aroma. Their oils reach the soil through fallen leaves and roots, and through the air.",
+    "There is only one producer here, and the same person makes the wine."
+   ],
+   "cite": [
+    "rio-negro-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "Cogolludo, the plateau",
+     "point": [
+      -3.0975,
+      40.9467
+     ],
+     "zoom": 10,
+     "caption": "Most of the vineyard area lies in the municipality of Cogolludo, on the plateau between 940 and 1,000 m.",
+     "cite": [
+      "rio-negro-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Thin air, big swings, little frost",
+   "paras": [
+    "The climate is continental Mediterranean. Thinner air and less greenhouse effect at this height bring a strong daily swing in temperature. During ripening, the gap between day and night is usually more than 20 °C.",
+    "Milder daytime temperatures mean slower, more balanced ripening. Sugar builds up slowly and the skins have time to ripen fully. This helps keep the acidity.",
+    "The long ripening also builds up anthocyanins, the red pigments. Many of them break down only slowly, so they give the wine redder tones.",
+    "Rain, above all the storms from the second half of August, also cools and softens the days during ripening. The storms help the vine transpire properly, which keeps even more acidity. That gives the wine balance and a long life.",
+    "The plateau is protected from the hard frosts that hit the land around it. Heavy cold air tends to drain off through the ravines to the lower land. A strong wind, made as the air is squeezed up the steep rise, also works as a natural windmill against radiation frost.",
+    "The sun is much more intense than in the neighbouring areas. To protect themselves, the berries grow thicker skins. These give more intense aroma and add to the high levels of polyphenols and anthocyanins."
+   ],
+   "cite": [
+    "rio-negro-doc:p1"
+   ]
+  },
+  {
+   "id": "acid-soil",
+   "beat": "ground",
+   "title": "Acid soil, partly offset with lime",
+   "paras": [
+    "The soil is acid. It is low in calcium and magnesium. It holds little organic matter and fairly much clay. It is also low in strontium and high in rubidium and barium.",
+    "These are old, well-developed soils. Gravel often covers the surface, with clay built up below. Iron in the subsoil streaks it with mottled colours.",
+    "The neighbouring land was traditionally grown for cereal. Here, growers have added lime over the years to change the chemistry of the soil and partly offset the acidity. They also keep the stones in the vineyard because they are good for the vine, while stones were cleared from the cereal fields.",
+    "The low pH and high acidity of the soil add to the natural acidity of the wine. They also give it a slightly bitter note and a longer finish.",
+    "The strontium is even scarcer than the calcium, so it does not compete with it. The vine takes up calcium easily, and the wines end up with an unusually high calcium level."
+   ],
+   "cite": [
+    "rio-negro-doc:p1"
+   ]
+  },
+  {
+   "id": "aged-wines",
+   "beat": "rules",
+   "title": "Reds and whites that wait in the bottle",
+   "paras": [
+    "Six grapes are allowed: Cabernet Sauvignon, Gewürztraminer, Merlot, Syrah, Tempranillo and Tinto Fragoso. Tinto Fragoso is an old grape, endemic to Cogolludo. There is no record of it anywhere else in the world, and Río Negro makes the only wine of it sold today.",
+    "The appellation makes still red and white wine. Every wine must be aged and bottled before it is sold.",
+    "Reds are aged at least 11 months, at least 5 of them in oak (barrels, large casks or vats). Then they rest at least 6 months in bottle. The destemmed grapes first macerate cold on their skins for 3 to 21 days.",
+    "The white is Gewürztraminer. It ages at least 3 months on its lees, in stainless steel or oak, and then at least 1 month in bottle. At least half of the grapes macerate on their skins before pressing. The wine then ferments very cold, around 15 °C.",
+    "Whites have a high aromatic intensity from terpenes. Tropical fruit and apple stand out. Reds are of medium-high depth, with fresh red fruit such as strawberry and raspberry. Both are balanced, with light acidity and a typical bitter finish.",
+    "The long ageing brings more methoxyphenols, which give spice and smoke. Bottling must happen in the production zone, because the second ageing in bottle rounds the wine out.",
+    "Every wine needs at least 25 mg of calcium per litre. Reds need at least 250 mg of anthocyanins per litre.",
+    "Yields are limited to 9,000 kg of grapes per hectare for white and 7,000 kg for red. Vines are planted at 2,500 to 4,000 per hectare.",
+    "Vines grow on wires, pruned in a local way called «cordón tridimensional». The spurs sit at a slant to the main arm."
+   ],
+   "cite": [
+    "rio-negro-doc:p1"
+   ]
+  }
+ ]
+}

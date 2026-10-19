@@ -74,7 +74,7 @@ p{text-wrap:pretty}
 .gcard:hover .fb{background:#2A2722}
 .gcard:focus-visible{outline-offset:-3px} /* the card clips its corners, so the ring sits inside */
 .hero .map figcaption a{color:inherit}
-.nums{display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;gap:1.5rem 1.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
+.nums{display:grid;grid-template-columns:repeat(2,auto);justify-content:start;gap:1.5rem 3.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
 .nums div{margin:0}
 .nums dt{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1}
 .nums dd{margin:.45rem 0 0;font-size:.85rem;line-height:1.35;color:var(--ink2);max-width:11rem}

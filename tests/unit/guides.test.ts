@@ -13,7 +13,7 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 20 Meseta places, each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
       'abadia-retuerta', 'abona', 'alella', 'alicante', 'almansa', 'arinzano', 'arlanza', 'arribes', 'ayles', 'bierzo', 'binissalem',
       'bolandin', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja', 'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carinena',
@@ -22,11 +22,11 @@ describe('the Terroir sections', () => {
       'emporda', 'finca-elez', 'gran-canaria', 'granada', 'guijoso', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba',
       'la-mancha', 'la-palma', 'lanzarote', 'lebrija', 'leon', 'los-balagueses', 'los-cerrillos', 'malaga', 'manchuela', 'manzanilla',
       'mentrida', 'mondejar', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'otazu', 'pago-florentino', 'penedes', 'pla-de-bages',
-      'pla-i-llevant', 'prado-de-irache', 'priorat', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja',
+      'pla-i-llevant', 'prado-de-irache', 'priorat', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja',
       'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rosalejo', 'rueda', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano',
       'tacoronte-acentejo', 'tarragona', 'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
-      'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava',
-      'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinos-de-madrid', 'ycoden-daute-isora', 'yecla',
+      'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valdepenas', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava',
+      'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinos-de-madrid', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

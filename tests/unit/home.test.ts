@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
-import { fillGuideCount, fillGuideList, guideCount, guideRows } from '../../src/home/guideCount';
+import { fillGuideCount, fillGuideList, guideCount, guideRows, placeGuideCount } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
 const html = readFileSync('index.html', 'utf8');
@@ -22,6 +22,10 @@ describe('the home page', () => {
     expect(guideCount()).toBeGreaterThan(0);
     expect(html).toContain('data-count="guides">');
     expect(fillGuideCount(html, 42)).toContain('Deep guides to <span data-count="guides">42</span> places');
+  });
+  it('backs "each with its own guide": every place has a guide, and the zones stay out of the count', () => {
+    expect(html).toContain('wine places, each with its own guide');
+    expect(placeGuideCount()).toBe(places.length);
   });
   it('sends links from before the website to the atlas', () => {
     expect(html).toMatch(/location\.replace\('atlas\/'/);

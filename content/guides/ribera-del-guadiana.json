@@ -1,0 +1,105 @@
+{
+ "id": "ribera-del-guadiana",
+ "title": "Why Ribera del Guadiana tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Little rain falls in the months that matter most for the vines, and that lowers the risk of fungal disease. The Mediterranean climate gives reds and rosados rich in tannin and colour.",
+  "cite": [
+   "ribera-del-guadiana-doc:p6",
+   "ribera-del-guadiana-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "zone",
+   "beat": "place",
+   "title": "Two provinces, six subzones",
+   "paras": [
+    "The zone covers 127 municipalities in the provinces of Badajoz and Cáceres. It is split into six subzones: Tierra de Barros, Matanegra, Ribera Alta, Ribera Baja, Cañamero and Montánchez.",
+    "Even so, 90% of the registered vineyard area lies in 19 of those municipalities. Almendralejo and Mérida are among them.",
+    "The DO is made up of 2,877 growers and 57 wineries."
+   ],
+   "cite": [
+    "ribera-del-guadiana-doc:p6",
+    "ribera-del-guadiana-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Tierra de Barros",
+     "point": [
+      -6.41,
+      38.68
+     ],
+     "zoom": 9,
+     "caption": "Tierra de Barros is one of the six subzones.",
+     "cite": [
+      "ribera-del-guadiana-doc:p6"
+     ]
+    },
+    {
+     "label": "Montánchez",
+     "point": [
+      -6.15,
+      39.21
+     ],
+     "zoom": 10,
+     "caption": "Montánchez is another of the six subzones.",
+     "cite": [
+      "ribera-del-guadiana-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry when it counts",
+   "paras": [
+    "A Mediterranean climate prevails in the area. Little rain falls in the decisive months of the growing season, and that lowers the risk of fungal disease. It bears directly on the quality of the finished wine.",
+    "White wines come out aromatic and fruity, with medium-high acidity. Reds and rosados are rich in tannin and colour, with good alcohol and fitting acidity. Their distinctive aroma comes from the ripening of the grapes.",
+    "Red varieties that are not native to the area have adapted to the zone. That adaptation gives distinctive wines."
+   ],
+   "cite": [
+    "ribera-del-guadiana-doc:p6",
+    "ribera-del-guadiana-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Eight main grapes, capped yields",
+   "paras": [
+    "Eight grapes count as the main ones: Cabernet Sauvignon, Tempranillo, Syrah, Pardina, Macabeo, Garnacha Tintorera, Garnacha Tinta and Cayetana Blanca. Macabeo also goes by Viura. Tempranillo also goes by Cencibel.",
+    "Eighteen more are secondary grapes. Merlot, Graciano and Verdejo are among them.",
+    "Whites need at least 10% alcohol. Rosados need 11% and reds 12%.",
+    "Crianza, Reserva and Gran Reserva are made as whites and as reds. They need at least 12.5% alcohol. Aged reds shift to red and ruby tones, with a violet glint.",
+    "Yields are capped at 12,000 kg of grapes per hectare for white varieties and 10,000 kg for red ones. A second cap limits wine to 70 hl per hectare for white varieties and 84 hl for red ones. Pressing may extract no more than 70% wine."
+   ],
+   "cite": [
+    "ribera-del-guadiana-doc:p1",
+    "ribera-del-guadiana-doc:p2",
+    "ribera-del-guadiana-doc:p3",
+    "ribera-del-guadiana-doc:p4",
+    "ribera-del-guadiana-doc:p5",
+    "ribera-del-guadiana-doc:p6",
+    "ribera-del-guadiana-doc:p11",
+    "ribera-del-guadiana-doc:p12"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Tinto Roble",
+    "text": "A red aged for 90 days, at least 60 of them in oak barrels of up to 330 litres."
+   },
+   {
+    "term": "Fermentado en barrica",
+    "text": "Barrel-fermented: a white or red fermented in oak barrels of up to 600 litres."
+   }
+  ],
+  "cite": [
+   "ribera-del-guadiana-doc:p5"
+  ]
+ }
+}

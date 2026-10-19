@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-19-meseta-batch-3](2026-10-19-meseta-batch-3.md): Meseta batch 3, 25 of 25 guides, home page copy (19 Oct 2026)
 - [2026-10-19-one-main-thread](2026-10-19-one-main-thread.md): one main thread, no side sessions (19 Oct 2026)
 - [2026-10-19-meseta-batch-2](2026-10-19-meseta-batch-2.md): Meseta batch 2, 20 of 25 guides; batch 3 and guides-page notes (19 Oct 2026)
 - [2026-10-19-meseta-batch-1](2026-10-19-meseta-batch-1.md): Meseta batch 1, 12 of 25 guides (19 Oct 2026)
