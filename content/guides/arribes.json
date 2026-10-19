@@ -5,10 +5,10 @@
  "lede": {
   "text": "Vines here grow in a granite canyon about 5 °C warmer than the plateau above it. The warmth ripens the grapes fully and gives the wines a certain lean towards overripe, stewed fruit. Rain that comes in time keeps their natural acidity fresh.",
   "cite": [
-   "arribes-pliego:p12",
+   "arribes-pliego:p11",
+   "arribes-pliego:p14",
    "arribes-pliego:p15",
-   "arribes-pliego:p16",
-   "arribes-pliego:p17"
+   "arribes-pliego:p16"
   ]
  },
  "chapters": [
@@ -21,9 +21,9 @@
     "The plateau is called the penillanura. The canyon walls and the plateau give the vines two different climates."
    ],
    "cite": [
+    "arribes-pliego:p11",
     "arribes-pliego:p12",
-    "arribes-pliego:p13",
-    "arribes-pliego:p17"
+    "arribes-pliego:p16"
    ],
    "fly": [
     {
@@ -31,9 +31,9 @@
      "place": "arribes",
      "caption": "The Duero and its tributaries cut a canyon into the granite, from about 700 m down to 130 m.",
      "cite": [
+      "arribes-pliego:p11",
       "arribes-pliego:p12",
-      "arribes-pliego:p13",
-      "arribes-pliego:p17"
+      "arribes-pliego:p16"
      ]
     }
    ]
@@ -48,9 +48,9 @@
     "The spring comes early and the rain arrives in time, so the natural acidity does not usually fall below 5.5 g/l. The warmth ripens the grapes fully and concentrates the polyphenols. The wines show a certain lean towards overripe, stewed fruit."
    ],
    "cite": [
-    "arribes-pliego:p12",
-    "arribes-pliego:p15",
-    "arribes-pliego:p16"
+    "arribes-pliego:p11",
+    "arribes-pliego:p14",
+    "arribes-pliego:p15"
    ]
   },
   {
@@ -62,8 +62,8 @@
     "The soil is a pale yellow-brown. It is acid, with a pH of 5 to 6, and poor in lime. It holds little organic matter, 1.5 to 3%. Juan García, the main red grape, thrives even on the poorest ground and gives steady yields. It gives the wines structure and softness."
    ],
    "cite": [
-    "arribes-pliego:p13",
-    "arribes-pliego:p18"
+    "arribes-pliego:p12",
+    "arribes-pliego:p17"
    ],
    "fly": [
     {
@@ -75,7 +75,7 @@
      "zoom": 11,
      "caption": "Fermoselle is one of the towns where the vineyards recovered fully after phylloxera, by about 1913-14.",
      "cite": [
-      "arribes-pliego:p17"
+      "arribes-pliego:p16"
      ]
     }
    ]
@@ -91,11 +91,11 @@
     "The whites are fruity or floral, sometimes with a mineral note. The reds are rich in polyphenols with ripe fruit aromas."
    ],
    "cite": [
-    "arribes-pliego:p6",
-    "arribes-pliego:p9",
-    "arribes-pliego:p15",
-    "arribes-pliego:p17",
-    "arribes-pliego:p20"
+    "arribes-pliego:p5",
+    "arribes-pliego:p8",
+    "arribes-pliego:p14",
+    "arribes-pliego:p16",
+    "arribes-pliego:p19"
    ]
   }
  ],
@@ -107,7 +107,7 @@
    }
   ],
   "cite": [
-   "arribes-pliego:p20"
+   "arribes-pliego:p19"
   ]
  }
 }

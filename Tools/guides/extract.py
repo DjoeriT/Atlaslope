@@ -15,7 +15,8 @@ STOP = re.compile(r'^\s*(?:9|I)[.)]?\s*VERIFICACI[ÓO]N', re.I | re.M)
 
 
 def pages(text: str) -> list[str]:
-    parts = text.split('\f')
+    # A file that opens with a form feed has nothing before page 1.
+    parts = (text[1:] if text.startswith('\f') else text).split('\f')
     return [re.sub(r'^=== PAGE .*$', '', p, flags=re.M) for p in parts]
 
 

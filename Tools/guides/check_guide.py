@@ -56,7 +56,9 @@ def check(manifest: dict, path: str) -> tuple[list[str], list[str]]:
     errs, warns = [], []
     texts: dict[str, list[str]] = {}
     for sid, f in manifest['sources'].items():
-        texts[sid] = (root / f).read_text(encoding='utf-8').split('\f')
+        text = (root / f).read_text(encoding='utf-8')
+        # A file that opens with a form feed has nothing before page 1.
+        texts[sid] = (text[1:] if text.startswith('\f') else text).split('\f')
 
     for where, paras, cites in blocks(g):
         if not cites:

@@ -5,8 +5,8 @@
  "lede": {
   "text": "Prieto Picudo grows here in an arid climate with very cold winters, on poor soil that drains well. Its wines show red fruit and a touch of aguja, a slight spritz.",
   "cite": [
-   "valles-de-benavente-pliego:p10",
-   "valles-de-benavente-pliego:p11"
+   "valles-de-benavente-pliego:p9",
+   "valles-de-benavente-pliego:p10"
   ]
  },
  "chapters": [
@@ -20,10 +20,10 @@
     "Wine here is old business. In 1338 King Alfonso XI confirmed a town rule that banned outside wine from Benavente. The town had a great stretch of vineyards and enough wine of its own for the whole year."
    ],
    "cite": [
-    "valles-de-benavente-pliego:p7",
+    "valles-de-benavente-pliego:p6",
+    "valles-de-benavente-pliego:p11",
     "valles-de-benavente-pliego:p12",
-    "valles-de-benavente-pliego:p13",
-    "valles-de-benavente-pliego:p14"
+    "valles-de-benavente-pliego:p13"
    ],
    "fly": [
     {
@@ -31,7 +31,7 @@
      "place": "valles-de-benavente",
      "caption": "62 municipalities over 1,520 km² in the north-east of Zamora.",
      "cite": [
-      "valles-de-benavente-pliego:p7"
+      "valles-de-benavente-pliego:p6"
      ]
     },
     {
@@ -43,9 +43,9 @@
      "zoom": 10.5,
      "caption": "At about 740 m, where the Órbigo meets the Esla. In 1338 the town banned outside wine.",
      "cite": [
+      "valles-de-benavente-pliego:p11",
       "valles-de-benavente-pliego:p12",
-      "valles-de-benavente-pliego:p13",
-      "valles-de-benavente-pliego:p14"
+      "valles-de-benavente-pliego:p13"
      ]
     }
    ]
@@ -60,9 +60,9 @@
     "Prieto Picudo buds early and is very sensitive to spring frost."
    ],
    "cite": [
+    "valles-de-benavente-pliego:p9",
     "valles-de-benavente-pliego:p10",
-    "valles-de-benavente-pliego:p11",
-    "valles-de-benavente-pliego:p12"
+    "valles-de-benavente-pliego:p11"
    ]
   },
   {
@@ -75,9 +75,9 @@
     "Some Prieto Picudo vines are old, between 70 and 80 years. That age gives the grapes the quality for wines meant to be kept."
    ],
    "cite": [
-    "valles-de-benavente-pliego:p10",
-    "valles-de-benavente-pliego:p12",
-    "valles-de-benavente-pliego:p15"
+    "valles-de-benavente-pliego:p9",
+    "valles-de-benavente-pliego:p11",
+    "valles-de-benavente-pliego:p14"
    ]
   },
   {
@@ -92,13 +92,13 @@
     "Barrel-aged reds gain complexity on the nose, with wood notes and some fruit character on the finish. Ageing is counted from 1 November of the harvest year."
    ],
    "cite": [
+    "valles-de-benavente-pliego:p4",
     "valles-de-benavente-pliego:p5",
     "valles-de-benavente-pliego:p6",
     "valles-de-benavente-pliego:p7",
-    "valles-de-benavente-pliego:p8",
+    "valles-de-benavente-pliego:p10",
     "valles-de-benavente-pliego:p11",
-    "valles-de-benavente-pliego:p12",
-    "valles-de-benavente-pliego:p17"
+    "valles-de-benavente-pliego:p16"
    ]
   }
  ],
@@ -110,7 +110,7 @@
    }
   ],
   "cite": [
-   "valles-de-benavente-pliego:p17"
+   "valles-de-benavente-pliego:p16"
   ]
  }
 }

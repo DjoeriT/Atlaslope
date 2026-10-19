@@ -5,9 +5,9 @@
  "lede": {
   "text": "Arlanza's vineyards sit between 750 and 1,200 m, where day and night temperatures differ sharply. The grapes ripen slowly for almost 60 days, and their skins thicken and load up with polyphenols and aroma.",
   "cite": [
-   "arlanza-pliego:p13",
-   "arlanza-pliego:p16",
-   "arlanza-pliego:p17"
+   "arlanza-pliego:p12",
+   "arlanza-pliego:p15",
+   "arlanza-pliego:p16"
   ]
  },
  "chapters": [
@@ -20,9 +20,9 @@
     "The east is steep and rugged, around Covarrubias and Santo Domingo de Silos. Going west, the land turns into rolling plains that reach the Arlanzón valley."
    ],
    "cite": [
-    "arlanza-pliego:p10",
-    "arlanza-pliego:p13",
-    "arlanza-pliego:p14"
+    "arlanza-pliego:p9",
+    "arlanza-pliego:p12",
+    "arlanza-pliego:p13"
    ],
    "fly": [
     {
@@ -34,7 +34,7 @@
      "zoom": 11,
      "caption": "Covarrubias sits in the rugged east of the zone.",
      "cite": [
-      "arlanza-pliego:p14"
+      "arlanza-pliego:p13"
      ]
     }
    ]
@@ -51,10 +51,10 @@
     "Cold winters and the risk of frost also allow sweet wines made from grapes left on the vine until they freeze."
    ],
    "cite": [
+    "arlanza-pliego:p12",
     "arlanza-pliego:p13",
-    "arlanza-pliego:p14",
-    "arlanza-pliego:p16",
-    "arlanza-pliego:p17"
+    "arlanza-pliego:p15",
+    "arlanza-pliego:p16"
    ]
   },
   {
@@ -67,8 +67,8 @@
     "South of the Arlanza river, near where it meets the Pisuerga, lie the Páramos del Cerrato, high plateaus and valleys around Baltanás, Palenzuela and Villaviudas. They hold active limestone, which counts as a quality factor but calls for resistant rootstocks. In places they also hold clay and marly clay, which suit vines under moderate water stress. Across all these varied soils runs a common river influence, which to some degree gives the grapes a character of their own."
    ],
    "cite": [
-    "arlanza-pliego:p14",
-    "arlanza-pliego:p15"
+    "arlanza-pliego:p13",
+    "arlanza-pliego:p14"
    ],
    "fly": [
     {
@@ -80,8 +80,8 @@
      "zoom": 10,
      "caption": "The Páramos del Cerrato around Baltanás, south of the Arlanza river: active limestone, clay and marly clay.",
      "cite": [
-      "arlanza-pliego:p14",
-      "arlanza-pliego:p15"
+      "arlanza-pliego:p13",
+      "arlanza-pliego:p14"
      ]
     }
    ]
@@ -97,13 +97,13 @@
     "Wines may also be made by carbonic maceration. Whole grapes stay unbroken in an atmosphere rich in carbon dioxide while fermentation takes place inside each berry. A Vino de Hielo (ice wine) is pressed from grapes picked frozen, at -2 to -7 °C or colder, with no sugar or alcohol added."
    ],
    "cite": [
+    "arlanza-pliego:p7",
     "arlanza-pliego:p8",
     "arlanza-pliego:p9",
-    "arlanza-pliego:p10",
+    "arlanza-pliego:p11",
     "arlanza-pliego:p12",
-    "arlanza-pliego:p13",
-    "arlanza-pliego:p15",
-    "arlanza-pliego:p16"
+    "arlanza-pliego:p14",
+    "arlanza-pliego:p15"
    ]
   }
  ],
@@ -119,9 +119,9 @@
    }
   ],
   "cite": [
-   "arlanza-pliego:p12",
-   "arlanza-pliego:p22",
-   "arlanza-pliego:p23"
+   "arlanza-pliego:p11",
+   "arlanza-pliego:p21",
+   "arlanza-pliego:p22"
   ]
  }
 }

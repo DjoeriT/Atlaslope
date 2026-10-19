@@ -5,8 +5,8 @@
  "lede": {
   "text": "Some of Cebreros's vines grow above 1,000 m, on granite slopes that face south. Garnacha Tinta gives wines high in alcohol there, yet altitude and climate keep them fresh.",
   "cite": [
-   "cebreros-pliego:p12",
-   "cebreros-pliego:p13"
+   "cebreros-pliego:p11",
+   "cebreros-pliego:p12"
   ]
  },
  "chapters": [
@@ -20,10 +20,10 @@
     "Vines grow mainly on the south-facing slopes of the hills on the left bank of the valley. The Tiétar valley is gentler than the Alberche, but there is still a big drop from the peaks to its river, which runs at 500 m. Growers have picked south and south-east slopes for centuries, and some plots lie above 1,000 m."
    ],
    "cite": [
-    "cebreros-pliego:p7",
+    "cebreros-pliego:p6",
+    "cebreros-pliego:p8",
     "cebreros-pliego:p9",
-    "cebreros-pliego:p10",
-    "cebreros-pliego:p12"
+    "cebreros-pliego:p11"
    ],
    "fly": [
     {
@@ -35,7 +35,7 @@
      "zoom": 10,
      "caption": "Where the foothills of Gredos begin, at 1,303 m.",
      "cite": [
-      "cebreros-pliego:p9"
+      "cebreros-pliego:p8"
      ]
     },
     {
@@ -47,7 +47,7 @@
      "zoom": 9,
      "caption": "Gentler than the Alberche, with a big drop from the peaks to the river at 500 m.",
      "cite": [
-      "cebreros-pliego:p10"
+      "cebreros-pliego:p9"
      ]
     }
    ]
@@ -63,8 +63,8 @@
     "The local microclimate is more moderate than the rest of Castilla y León and cooler than the lands to the south and east. The lack of rain in summer and early autumn assures healthy, high-quality harvests. The altitude gives the grapes very good acidity, and that brings freshness and liveliness to the wine."
    ],
    "cite": [
-    "cebreros-pliego:p11",
-    "cebreros-pliego:p13"
+    "cebreros-pliego:p10",
+    "cebreros-pliego:p12"
    ]
   },
   {
@@ -78,11 +78,11 @@
     "Today 94% of the vines are over 50 years old and 37% are over 80. Spacing is wide, generally more than 2.5 x 2.5 metres, at 1,600 vines per hectare. This wide spacing, with low rain and soils poor in organic matter, gives very small crops of grapes with balanced analytical values."
    ],
    "cite": [
+    "cebreros-pliego:p9",
     "cebreros-pliego:p10",
     "cebreros-pliego:p11",
     "cebreros-pliego:p12",
-    "cebreros-pliego:p13",
-    "cebreros-pliego:p14"
+    "cebreros-pliego:p13"
    ]
   },
   {
@@ -96,14 +96,14 @@
     "Yields are capped at 8,000 kg per hectare, and no more than 56.00 hl per hectare. Only mechanical systems that do not tear the solid parts of the bunch may extract the must. No more than 70 litres of wine may come from 100 kg of grapes. In some years, after a reasoned technical report, yields may rise by up to 15% and extraction to 74 litres."
    ],
    "cite": [
+    "cebreros-pliego:p3",
     "cebreros-pliego:p4",
     "cebreros-pliego:p5",
     "cebreros-pliego:p6",
     "cebreros-pliego:p7",
-    "cebreros-pliego:p8",
+    "cebreros-pliego:p11",
     "cebreros-pliego:p12",
-    "cebreros-pliego:p13",
-    "cebreros-pliego:p15"
+    "cebreros-pliego:p14"
    ]
   }
  ],
@@ -113,28 +113,28 @@
     "term": "Fermentado en barrica",
     "text": "The wine ferments and rests on its lees in oak barrels.",
     "cite": [
-     "cebreros-pliego:p6"
+     "cebreros-pliego:p5"
     ]
    },
    {
     "term": "Vino de parcela",
     "text": "All the grapes come from one plot or from neighbouring plots, with no herbicides and a soil analysis by the producer.",
     "cite": [
-     "cebreros-pliego:p17"
+     "cebreros-pliego:p16"
     ]
    },
    {
     "term": "Vino de pueblo",
     "text": "All the grapes come from one named municipality.",
     "cite": [
-     "cebreros-pliego:p18"
+     "cebreros-pliego:p17"
     ]
    }
   ],
   "cite": [
-   "cebreros-pliego:p6",
-   "cebreros-pliego:p17",
-   "cebreros-pliego:p18"
+   "cebreros-pliego:p5",
+   "cebreros-pliego:p16",
+   "cebreros-pliego:p17"
   ]
  }
 }
