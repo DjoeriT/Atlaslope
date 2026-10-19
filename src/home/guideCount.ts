@@ -1,5 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import photoFocusFile from './photoFocus.json';
+import photoCropsFile from './photoCrops.json';
 import photoSizesFile from '../../data/photo-sizes.json';
 import { grapeLabel } from '../facts/format';
 import { sentences } from '../pages/sentence';
@@ -112,15 +112,17 @@ const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
 const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</figcaption>';
 
 // A photo no wider than 800 px has no 800 copy, only its full file (release 47: Binissalem's photo 404'd on the Guides page)
-// Square cards crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026)
-const photoFocus = photoFocusFile as Record<string, string>;
+// Square cards crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026).
+// Every shown photo has an entry (focus, plus the hash of the file that was checked); a unit test enforces it. Centre needs no style.
+export const photoCrops = photoCropsFile as Record<string, { focus: string; file: string }>;
+const focusOf = (key: string) => { const f = photoCrops[key]?.focus; return f && f !== '50% 50%' ? f : null; };
 
 const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean, square = false) => {
   const w = photoSizes.photos[key]?.w ?? 1200;
   const set: [string, number][] = [480, 800].filter((s) => s < w).map((s) => [`../photos/${s}/${key}.webp`, s]);
   if (w <= 800) set.push([`../photos/${key}.webp`, w]);
   const src = set[set.length - 1][0];
-  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && photoFocus[key] ? ` style="object-position:${photoFocus[key]}"` : ''} loading="lazy" />`;
+  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && focusOf(key) ? ` style="object-position:${focusOf(key)}"` : ''} loading="lazy" />`;
 };
 
 const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
@@ -132,6 +134,10 @@ const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
 
 // Guides shown per region on the Guides page; the rest sit behind the region link
 const PER_REGION = 6;
+
+/** Photo keys the Guides page shows as square cards. */
+export const squarePhotoKeys = (list: GuideList): string[] =>
+  list.regions.flatMap((r) => r.guides.slice(0, PER_REGION)).flatMap((g) => (g.photo ? [g.photo] : []));
 
 export const fillGuideList = (html: string, list: GuideList): string => {
   const { regions, featured, photos } = list;
