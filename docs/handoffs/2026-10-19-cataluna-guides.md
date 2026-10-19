@@ -34,7 +34,7 @@ Sample helper 0.2M (output-side count). Coordinator warned; owner told.
 ## Next (second thread stopped here at ~85K context, 11:35Z)
 1. CI on PR #115: ui (3/4) failed because Cava now has a label section; `tests/ui/place-page.spec.ts:88` expectation updated (content
    changed, not tuned). Watch the rerun.
-2. Copy review `Review/reviews/2026-10-19-cataluna-guides-copy-review.md`: 6 should-fix (glosses, lists, hype, source talk, repeats,
+2. DONE (third thread, by hand, see the review's "Fixed" section). Copy review `Review/reviews/2026-10-19-cataluna-guides-copy-review.md`: 6 should-fix (glosses, lists, hype, source talk, repeats,
    two unclear sentences). Fix in this PR: one Sonnet helper per guide with the guide, the review lines for it and its pliego pages
    packed in (few steps), facts unchanged; Opus spot check of the changed sentences only. Estimate from the review's size [A]:
    about 0.1-0.2M per guide, 1.5-2.5M total; pilot 2 guides first and measure.

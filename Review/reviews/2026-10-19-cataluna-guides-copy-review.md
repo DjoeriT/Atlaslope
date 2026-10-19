@@ -17,3 +17,10 @@ Licence: nothing resembling verbatim WSET/Wine Scholar text found (read; cannot 
 - Recommended/authorised grape talk is legal in tone; fine as label terms, softer in prose ("grown", "also used").
 - Long multi-idea paragraphs worth splitting: alella grapes p2 and liqueur p, emporda liqueur p, montsant liqueur p, cava ageing p.
 - Good: Spanish terms (sauló, marinada, comarca, licorella, brisado, vaso, glacis) are glossed once; titles are plain; no exam framing.
+
+## Fixed (third thread, 19 Oct 2026)
+All 6 should-fix items edited by hand in the 12 guide files, facts unchanged: jargon swapped for plain words or a short gloss with no new
+numbers (geological ages, lees, disgorging, active limestone, polyphenols, dry extract, Winkler bands), flagged lists cut to two names,
+hype and source talk reworded, repeats said once, the two unclear sentences rewritten from the pliego (montsant p11 yearly averages;
+tarragona Garnacha liqueur wine from Garnacha Negra and Blanca, pliego p2). Note 1 done too: every temperature is now "N °C".
+`check_guide.py` 0 errors; `npm test` 294 passed.
