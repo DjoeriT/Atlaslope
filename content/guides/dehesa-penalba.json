@@ -1,7 +1,7 @@
 {
  "id": "dehesa-penalba",
  "title": "Why Dehesa Peñalba tastes the way it does",
- "minutes": 3,
+ "minutes": 4,
  "lede": {
   "text": "Dehesa Peñalba is one continuous plot of 91.4287 ha on the floor of the Duero valley, with a pine wood on one side and the river on the other. Its warm, stony sand and its sheltered air give the reds a deep, steady colour and tannin made to last.",
   "cite": [
@@ -47,7 +47,7 @@
    "beat": "weather",
    "title": "A little warmer, a little longer",
    "paras": [
-    "The plateaus, the pines and the river give the vineyard a gentler microclimate. The mean is 12 °C a year, about half a degree more than the land around it. Spring and autumn are milder, and the air moves well from west to east.",
+    "The plateaus, the pines and the river give the vineyard a gentler microclimate. The mean is 12°C a year, about half a degree more than the land around it. Spring and autumn are milder, and the air moves well from west to east.",
     "There are 206 frost-free days, where the surroundings have fewer than 200. Spring matters because it is flowering and fruit set. Autumn matters because it is the last stretch of ripening. Milder weather in both adds to the growing season.",
     "The result is more even ripening, and more colour in the skins of the red grapes. The longer-cycle varieties Cabernet Sauvignon, Merlot and Syrah are the ones that gain most."
    ],
@@ -77,12 +77,12 @@
    "beat": "rules",
    "title": "Small yields, cold and careful cellar work",
    "paras": [
-    "Only four red grapes are allowed: Cabernet Sauvignon, Merlot, Tempranillo and Syrah. Tempranillo is the most important. Each adds something: Tempranillo structure and red and forest fruit, Cabernet volume and long-lived tannin, Merlot elegance and very soft tannin, Syrah silky tannin and freshness.",
+    "Only four red grapes are allowed. Tempranillo is the most important, with Cabernet Sauvignon, Merlot and Syrah. Each adds something: Tempranillo structure and red and forest fruit, Cabernet volume and long-lived tannin, Merlot elegance and very soft tannin, Syrah silky tannin and freshness.",
     "Yields are low. Young red and rosé are capped at 8,000 kg per hectare. Aged wines are capped at 6,000 kg. The Ribera del Duero cap for aged red is 7,000 kg, and the Castilla y León IGP allows 16,000 kg.",
-    "Grapes are picked by hand into boxes and chilled to between 5 and 10 ºC. They are sorted on a table and carried to the tank on a belt, with no pumps. That stops oxidation and protects colour.",
-    "Reds then soak cold at 5 to 10 ºC for 5 to 8 days and macerate for at least 21 days. Fermentation is spontaneous, in stainless steel. The wine rests on its lees before malolactic fermentation and gets micro-oxygenation, which improves colour stability.",
+    "Grapes are picked by hand into boxes and chilled to between 5 and 10°C. They are sorted on a table and carried to the tank on a belt, with no pumps. That stops oxidation and protects colour.",
+    "Reds then soak cold at 5 to 10°C for 5 to 8 days and macerate for at least 21 days. Fermentation is spontaneous, in stainless steel. The wine rests on its lees before malolactic fermentation and gets micro-oxygenation, which improves colour stability.",
     "Aged wines go into oak barrels of 225 to 600 L, or wooden vats of up to 5,500 L. The reds have a steady, intense, blue-red colour. Ripe red and black fruit leads, the tannin is sweet and long-lived, and the finish is long. Against neighbouring wines of similar age they hold more anthocyanins, and more stable ones.",
-    "Rosé comes from Tempranillo, Syrah or Merlot, alone or blended. The juice is drawn off its skins after 2 to 3 hours. It ferments at 14 to 18 ºC and rests on its lees."
+    "Rosé comes from Tempranillo, Syrah or Merlot, alone or blended. The juice is drawn off its skins after 2 to 3 hours. It ferments at 14 to 18°C and rests on its lees."
    ],
    "cite": [
     "dehesa-penalba-pliego:p4",
@@ -101,7 +101,7 @@
   "terms": [
    {
     "term": "Vino de Pago",
-    "text": "A traditional term that may replace \"Denominación de Origen Protegida\" on the label.",
+    "text": "A traditional term for a single-estate appellation. It may replace \"Denominación de Origen Protegida\" on the label.",
     "cite": [
      "dehesa-penalba-pliego:p18"
     ]
