@@ -123,7 +123,7 @@ describe('style questions with spelling variants', () => {
     'north-a': ['Tostado del Ribeiro'], 'north-b': ['Tostado de Valdeorras'], 'north-c': ['Crianza'],
   };
   const f: FactSource = {
-    sheetOf: (id) => ({ id, grapes: { main: grapes[id] ?? [] }, famous: { styles: names[id]!.map((name) => ({ name, text: '' })) } } as unknown as Sheet),
+    sheetOf: (id) => (names[id] ? ({ id, grapes: { main: grapes[id] ?? [] }, famous: { styles: names[id]!.map((name) => ({ name, text: '' })) } } as unknown as Sheet) : facts.sheetOf(id)),
     measuresOf: facts.measuresOf,
   };
   it('never offers the same style as a wrong choice', () => {
