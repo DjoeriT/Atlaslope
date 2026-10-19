@@ -12,7 +12,7 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
   ...g.chapters.flatMap((c: Chapter) => [...c.cite, ...chapterFlies(c).flatMap((f) => f.cite)].map((k) => [g.id, k] as [string, string])),
 ]);
 
-describe('the terroir guides', () => {
+describe('the Terroir sections', () => {
   it('exist for Rioja and its three zones, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual(['rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental']);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);

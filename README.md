@@ -7,7 +7,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 ## Start here (state on 18 Oct 2026)
 - Live: the latest `release-*` tag on https://atlaslope.com . Planned numbers and what is in flight:
   `docs/PROJECT_CONTEXT.md` sections 5 and 6, and the open issues.
-- Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); terroir guides so far only for Rioja and its zones (`content/guides/`).
+- Coverage: Spain (DOs, Vinos de Pago, Rioja's three zones); a guide (place page) for every place; its written Terroir section so far only for Rioja and its zones (`content/guides/`, folder name kept from release 10).
 - Rules: `CLAUDE.md` (short) and `docs/AGENT_ROLES.md` (detail). Releases: `.claude/skills/release/SKILL.md`. Rollback, incidents, keys:
   `docs/operations.md`. Words: `docs/glossary.md`. Privacy facts: `docs/privacy.md`.
 - Keep this section current in the slice PR that changes it.

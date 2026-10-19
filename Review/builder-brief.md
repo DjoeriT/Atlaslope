@@ -47,7 +47,7 @@ Cloud threads could not reach any content source on 16 Oct [V, review 16 Oct]; t
 | **7. Progress and climate** | The mastery map: four shades, due rings, zones once the parent is known, counts per region, reset with confirm and undo. The climate layer switched on in the map menu. | Playwright checks the shades from a fixture progress record. The climate legend names its source. |
 | **8. Ready for friends** (owner, 16 Oct 11:02Z) | Moved from releases 3 and 4: Sentry error reports (EU), PostHog analytics (EU; retention question revisited), the privacy note in About, and the offline shell (service worker). Then friends are invited. | Playwright's offline test passes. Sentry receives a test error. The privacy note names both services. |
 
-The remaining guides follow as content releases: Green Spain and Castilla y León first, then region by region in course order.
+The remaining Terroir sections follow as content releases: Green Spain and Castilla y León first, then region by region in course order.
 
 ## Defaults written in from the first-principles review (16 Oct) [A unless tagged]
 - Intake is five new places per day, not per session.
@@ -70,7 +70,7 @@ The remaining guides follow as content releases: Green Spain and Castilla y Leó
 - Cards hold at most three steps or one concern, and each ends in a working, committed state.
 
 ### Token discipline (added 16 Oct after the owner asked to bring the estimate down; none of it changes a settled decision)
-1. **Writing goes to Sonnet agents, not the lead.** Fact sheets and guides are written by Sonnet 5.5 builder agents, one region per card, from the source pack and a fixed template. The Opus lead checks a sample against the extracts; the build check and the owner's spot-check stay. A Sonnet token costs half an Opus token at list price [V, Anthropic price list: $2 vs $4 per M input, $10 vs $20 output].
+1. **Writing goes to Sonnet agents, not the lead.** Fact sheets and Terroir sections are written by Sonnet 5.5 builder agents, one region per card, from the source pack and a fixed template. The Opus lead checks a sample against the extracts; the build check and the owner's spot-check stay. A Sonnet token costs half an Opus token at list price [V, Anthropic price list: $2 vs $4 per M input, $10 vs $20 output].
 2. **One release digest, no whole-file reads.** At the start of each release the lead writes one page, `Review/release-N-digest.md`: the scope and decision lines that apply, the mock files and line ranges, the files to touch. Cards point at the digest. Agents never read scope.md, architecture-decisions.md or this brief whole, and never open `data.js`, `maplibre-gl.js`, `data/*.geojson` or `*.tif`. The restart commit adds those paths to `.claude/hooks/narrow-read.sh`.
 3. **Photos by script.** It runs where the data step runs (GitHub Actions, or the Mac), since cloud threads cannot reach Wikimedia Commons. A script queries Wikimedia Commons near each place, keeps only public domain, CC BY and CC BY-SA, ranks by Commons quality flags and size, and writes credits and licence for `data/SOURCES.md`. Claude picks from one contact sheet per region (a single image of the candidates), not by reading pages one by one. The owner can still swap any photo.
 4. **One review per release PR, sized to risk.** Where ReviewBot runs (see above), it reviews each slice's PR once (not each card): Sonnet for routine diffs and writing (it checks a random sample of rows against the extracts), Opus for the tree model (release 3) and the quiz engine (release 5).
