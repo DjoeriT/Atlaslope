@@ -22,11 +22,10 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   ratio. Detail: `Review/visual-style.md`.
 
 ## Current state (19 Oct 2026)
-- Release 49 (tag `release-49`; `git tag -l 'release-*'` for the latest): Mediterranean (11, PR #123) and Canarias (11, PR #124) guides,
-  home study line (PR #125); commit `229294d` [O]. Release 48: Binissalem photo fix and a Rioja "Showcased guide" on the Guides page using
-  the home-hero satellite view (rotation dropped by owner). Release 47: Ebro. Guides: 84 of 109 places [V, unit test roster]: Rioja, Green Spain, Castilla y León, Andalucía, Cataluña,
-  Baleares, Ebro, Mediterranean, Canarias. Left: Meseta, 5 of 25 places (batch 1 is in release 50; batch 2, 8 places, in its PR). Each region runs only on the
-  owner's "use a workflow for X" (the sources step, then `region.workflow.js`).
+- Release 52 (`git tag -l 'release-*'` for the latest): the last 5 Meseta guides and the home page copy "106 / wine places, each
+  with its own guide" (PR #137). Guides: all 106 places have one, 109 guide files with the 3 Rioja zones [V, unit test roster]. Spain is
+  complete; a next country waits on the owner. A region runs only on the owner's word, on the local route ("Run a region locally").
+- Local Mac: build, dev server and UI tests work again since PR #138 (Doors/doors.ts case clash; `tests/unit/file-names.test.ts` guards it).
 - Source quirks: mapa.gob.es, navarra.es refuse; portalagrari.gva.es pliego links 404. Use the Consejo Regulador copy (Jumilla:
   jumilla.wine; Ebro: INTIA) or EU Cellar SPARQL (works; Canarias newer single documents as `<id>-doc2`). EU single document only is OK
   for Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo (owner). Where no pliego is reachable, the EU single document alone is OK (Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo).
@@ -83,7 +82,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Open: whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Next slices, each in a fresh session: Guides page mock round, then Meseta unsure sheet edits (briefs in `docs/handoffs/2026-10-19-doors-case-fix.md`). Open: whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
