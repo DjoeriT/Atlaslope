@@ -132,14 +132,15 @@ export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => S
   const ownTop = top(place.id);
   const scored = tree.places
     .filter((p) => p.id !== place.id && p.quiz !== 'none' && p.parent !== place.id && place.parent !== p.id && sheetOf(p.id))
-    .map((p, order) => {
+    .map((p) => {
       const theirs = usual(sheetOf(p.id));
       const grape = own.find((g) => theirs.includes(g));
       const first = !!grape && grape === own[0];
       const climate = !!ownTop && top(p.id)?.code === ownTop.code;
       const score = (first ? 4 : grape ? 2 : 0) + (climate ? 1 : 0);
       const why = grape ? t.page.alsoGrape(grape) : climate ? t.page.sameClimate(ownTop!.name) : '';
-      return { place: p, why, score, order };
+      // Ties break on a stable shuffle of the two ids, so places with the same score do not all suggest the first one in the tree.
+      return { place: p, why, score, order: [...(place.id + p.id)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) };
     })
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score || a.order - b.order);

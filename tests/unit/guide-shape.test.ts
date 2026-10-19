@@ -44,7 +44,7 @@ describe('If you like this, try', () => {
       expect(a.place.id).not.toBe('rioja');
       expect(a.place.parent).not.toBe('rioja');
       expect(a.place.quiz).not.toBe('none');
-      expect(a.why).toMatch(/^(Also |Same climate: )/);
+      expect(a.why).toMatch(/ here too$/);
     }
     const alta = alikePlaces(tree, tree.getPlace('rioja-alta')!, sheetOf, measuresOf);
     expect(alta.map((a) => a.place.id)).not.toContain('rioja');

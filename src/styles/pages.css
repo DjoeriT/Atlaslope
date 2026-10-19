@@ -273,8 +273,8 @@
 .pg-short li{display:grid;grid-template-columns:6rem minmax(0,1fr);gap:.2rem 1rem;padding:.8rem 0;border-top:1px solid var(--line)}
 .pg-short li:first-child{border-top:0;padding-top:0}
 .pg-short .k{font:600 .78rem/1.6 var(--sans);color:var(--foil-ink)}
-.pg-short .f a{color:var(--ink);text-decoration:none}
-.pg-short .f a:hover{text-decoration:underline;text-underline-offset:3px}
+.pg-short .f a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+.pg-short .f a:hover{text-decoration-color:currentColor}
 .pg-short .f .src{display:block}
 .pg-cols main > section.pg-short + section{border-top:0}
 .pg-p{color:var(--ink2);margin:0 0 .8rem}
@@ -294,3 +294,6 @@
   .pg-cols main > section.pg-answer{padding:1.5rem 1rem;margin-left:-1rem;margin-right:-1rem;border-radius:0}
   .pg-beat-h .n{font-size:2.4rem}
 }
+.pg-facts .pg-h3{font:600 .9rem var(--sans);text-transform:none;letter-spacing:0;color:var(--ink)}
+/* The jump bar fades at its right edge while more tabs sit beyond it. */
+.pg-jump{mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent);-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent)}

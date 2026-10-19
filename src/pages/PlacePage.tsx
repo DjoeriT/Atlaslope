@@ -181,7 +181,6 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
         <dt>{t.level}</dt>
         <dd>{isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind] ?? level}{sheet && !isZone && src(['mapa-list'])}</dd>
         {official && (<><dt>{t.officialName}</dt><dd>{official}</dd></>)}
-        {region && !isZone && (<><dt>{t.studyRegion}</dt><dd>{ownRegion ? region.name : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link>}</dd></>)}
         {also.length > 0 && (
           <>
             <dt>{t.alsoWithin}</dt>
