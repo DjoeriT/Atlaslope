@@ -1,0 +1,97 @@
+{
+  "id": "txakoli-getaria",
+  "title": "Why Getariako Txakolina tastes the way it does",
+  "minutes": 3,
+  "lede": {
+    "text": "Almost every vineyard lies within 1 km of the sea. The pliego describes the wine as a fresh, light Txakoli.",
+    "cite": [
+      "txakoli-getaria-pliego:p5"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "Vines by the sea",
+      "beat": "place",
+      "paras": [
+        "The zone is the province of Gipuzkoa. Until 2007 it covered only Aia, Getaria and Zarautz.",
+        "The pliego says 95% of the vineyards are less than 1 km from the sea.",
+        "In the 19th century the province's vines retreated to the coast. Getaria kept 35 hectares in sheltered spots, and Zarautz kept 4."
+      ],
+      "cite": [
+        "txakoli-getaria-pliego:p2",
+        "txakoli-getaria-pliego:p4",
+        "txakoli-getaria-pliego:p5"
+      ],
+      "fly": [
+        {
+          "label": "Getariako Txakolina",
+          "place": "txakoli-getaria",
+          "caption": "95% of the vineyards are less than 1 km from the sea.",
+          "cite": [
+            "txakoli-getaria-pliego:p5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Mild, wet and maritime",
+      "beat": "weather",
+      "paras": [
+        "The pliego calls the climate mild Atlantic, with a maritime influence.",
+        "The average temperature is 13.4 °C. The average high is 16.4 °C and the average low is 10.5 °C.",
+        "Rain averages 1,600 mm a year and falls on 185 days. Clear sun lasts 1,800 hours a year.",
+        "The pliego puts the risk of spring frost at none.",
+        "Late summer and early autumn bring winds from the south and southwest. They make the air dry and warm."
+      ],
+      "cite": [
+        "txakoli-getaria-pliego:p3",
+        "txakoli-getaria-pliego:p5"
+      ],
+      "fly": [
+        {
+          "label": "The coast at Getaria",
+          "place": "txakoli-getaria",
+          "caption": "Rain averages 1,600 mm a year, and there is no risk of spring frost.",
+          "cite": [
+            "txakoli-getaria-pliego:p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Hard layers, soft layers",
+      "beat": "ground",
+      "paras": [
+        "Hard layers of limestone and sandstone alternate with soft layers of marl and clay rock.",
+        "Soil textures are mostly clay-loam or loam. The pH is usually neutral.",
+        "The wet climate grows thick vegetation. It protects the soil from erosion, and it feeds the soil with organic matter.",
+        "Most vineyards are on slopes sheltered from the northwest winds. The average slope is 15 to 20%. Growers always look for the most sun, for the best ripening."
+      ],
+      "cite": [
+        "txakoli-getaria-pliego:p3"
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Ondarrabi Zuri on a pergola",
+      "beat": "rules",
+      "paras": [
+        "Nearly all of the protected wine is white. Red and rosé are a small remainder.",
+        "The recommended grapes are Ondarrabi Zuri for white and Ondarrabi Beltza for red. Four other white grapes are authorised.",
+        "Yields are capped at 13,000 kg of grapes per hectare. Extraction is capped at 0.72 litres per kilo, or 93 hl of wine per hectare.",
+        "Vines are traditionally trained on pergolas, 80% of the registered vineyard. Ondarrabi Zuri is very vigorous, so it needs long pruning. On a pergola the bunches hang in the air, away from the damp of the soil.",
+        "The wine is traditionally made on its lees, with temperature control. It keeps part of its natural CO2.",
+        "The result, in the pliego's words, is a fresh, light Txakoli. Strength is around 11.5% and acidity is above 7 g/l as tartaric."
+      ],
+      "cite": [
+        "txakoli-getaria-pliego:p1",
+        "txakoli-getaria-pliego:p2",
+        "txakoli-getaria-pliego:p4",
+        "txakoli-getaria-pliego:p5"
+      ]
+    }
+  ]
+}

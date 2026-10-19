@@ -1,0 +1,98 @@
+{
+  "id": "txakoli-bizkaia",
+  "title": "Why Bizkaiko Txakolina tastes the way it does",
+  "minutes": 3,
+  "lede": {
+    "text": "A wet Atlantic hill country with cool summers and little sun. The wines are dry, lower in alcohol than their neighbours' and high in acidity.",
+    "cite": [
+      "txakoli-bizkaia-pliego:p6",
+      "txakoli-bizkaia-pliego:p10"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "Hills between two valleys",
+      "beat": "place",
+      "paras": [
+        "The zone is the province of Bizkaia. Any municipality can take part, if the Consejo Regulador and the authorities judge the land fit for the permitted grapes.",
+        "Mountain ranges of medium height, 100 to 1,000 m, run mostly northwest to southeast. Two main valleys lie between them, those of the Ibaizabal and the Butrón."
+      ],
+      "cite": [
+        "txakoli-bizkaia-pliego:p5",
+        "txakoli-bizkaia-pliego:p6",
+        "txakoli-bizkaia-pliego:p7"
+      ],
+      "fly": [
+        {
+          "label": "Bizkaia",
+          "place": "txakoli-bizkaia",
+          "caption": "Hills of 100 to 1,000 m and two main valleys, the Ibaizabal and the Butrón.",
+          "cite": [
+            "txakoli-bizkaia-pliego:p6",
+            "txakoli-bizkaia-pliego:p7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Wet, mild and short of sun",
+      "beat": "weather",
+      "paras": [
+        "The pliego calls the climate Atlantic, humid and temperate. Rain averages 1,200 mm a year and falls on 157 days. The average temperature is 12.4 °C.",
+        "The main winds blow from the north and northwest, 39% of the time. They come off the sea, colder and full of moisture. Vineyards therefore sit on slopes sheltered from them.",
+        "Humidity averages 82% over the year, and stays high in summer. The sun shines about 1,710 hours a year. There are 145 overcast days and only 47 clear ones.",
+        "Summers are cool and mild, because the sea is close. The grapes ripen slowly.",
+        "September is different. A foehn effect makes it warmer and drier, more like summer. The pliego says this decides the final ripening."
+      ],
+      "cite": [
+        "txakoli-bizkaia-pliego:p6"
+      ],
+      "fly": [
+        {
+          "label": "The Bizkaia vineyards",
+          "place": "txakoli-bizkaia",
+          "caption": "Average rain is 1,200 mm a year, with about 1,710 hours of sun.",
+          "cite": [
+            "txakoli-bizkaia-pliego:p6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "South-facing slopes, grassed rows",
+      "beat": "ground",
+      "paras": [
+        "The pliego gives no soil description for Bizkaia. It does describe how the vines sit on the land.",
+        "Vineyards are usually on slopes that face south. The slopes are moderate, so machines can work them.",
+        "Rain falls evenly through the year, so the vines always have water. Grass or other cover can grow between the rows. That helps control vigour, and it keeps and improves the soil."
+      ],
+      "cite": [
+        "txakoli-bizkaia-pliego:p6",
+        "txakoli-bizkaia-pliego:p7"
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Hondarrabi Zuri and a bitter finish",
+      "beat": "rules",
+      "paras": [
+        "The main grapes are Hondarrabi Zuri, Hondarrabi Beltza and Hondarrabi Zuri Zerratia (Petit Courbu). Other varieties are allowed, with limits.",
+        "A wine sold under one grape's name must use one of the main grapes for at least 85% of the blend.",
+        "Yields are capped at 11,500 kg per hectare for white grapes and 9,500 kg for red.",
+        "The wines are dry. The minimum strength is 10.5% in a standard wine. The pliego says typical strength is 10.5% to 11.5%, clearly lower than in nearby zones, because of the cool, humid climate.",
+        "The cool summers and low sun leave less sugar and more acidity than in sunnier zones. The pliego names white fruit, citrus and herbal notes.",
+        "The aroma is of medium intensity but very complex, from the grapes and slow ripening. A bitter finish is typical of Hondarrabi Zuri and Hondarrabi Zuri Zerratia."
+      ],
+      "cite": [
+        "txakoli-bizkaia-pliego:p1",
+        "txakoli-bizkaia-pliego:p4",
+        "txakoli-bizkaia-pliego:p5",
+        "txakoli-bizkaia-pliego:p9",
+        "txakoli-bizkaia-pliego:p10"
+      ]
+    }
+  ]
+}

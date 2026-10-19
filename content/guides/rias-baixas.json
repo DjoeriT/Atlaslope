@@ -1,0 +1,78 @@
+{
+  "id": "rias-baixas",
+  "title": "Why Rías Baixas tastes the way it does",
+  "minutes": 3,
+  "lede": {
+    "text": "Mild, wet Atlantic weather and poor granite soils. More than 96% of the grapes are Albariño, which makes sugar and keeps an unusual amount of acidity.",
+    "cite": ["rias-baixas-pliego:p12", "rias-baixas-pliego:p14"]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "Low land beside river mouths",
+      "beat": "place",
+      "paras": [
+        "Rías Baixas lies at 42° north and 8° west, in the provinces of Pontevedra and A Coruña.",
+        "The land rarely rises above 300 m. It is close to the sea. It is tied to the lower stretches of the Ulla, Umia, Oitavén, Xabriña and Miño rivers.",
+        "The zone has five subzones: Condado do Tea, O Rosal, Ribeira do Ulla, Soutomaior and Val do Salnés.",
+        "Holdings are tiny. The 4,300 hectares are split into 22,800 plots, worked by more than 5,000 growers (2022 data)."
+      ],
+      "cite": ["rias-baixas-pliego:p10", "rias-baixas-pliego:p11", "rias-baixas-pliego:p12", "rias-baixas-pliego:p13"],
+      "fly": [
+        {
+          "label": "Rías Baixas",
+          "place": "rias-baixas",
+          "caption": "A low, coastal zone, rarely above 300 m, with five subzones.",
+          "cite": ["rias-baixas-pliego:p12"]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Mild, wet and Atlantic",
+      "beat": "weather",
+      "paras": [
+        "The pliego calls the climate markedly Atlantic. Temperatures are mild, between 10 °C and 25 °C. The four seasons are clearly different, and temperature swings are short.",
+        "Rain is plentiful all year, about 1,300 mm. It falls much less in summer.",
+        "Topography, aspect and nearness to the sea or the rivers shade the general climate. That gives differences between the five subzones.",
+        "Spring and summer temperature and humidity make the vine very leafy.",
+        "At ripening there is not much sun, and temperatures are middling. Rain falls less, and the vines feel a slight water stress."
+      ],
+      "cite": ["rias-baixas-pliego:p12"],
+      "fly": [
+        {
+          "label": "Rías Baixas",
+          "place": "rias-baixas",
+          "caption": "About 1,300 mm of rain a year, much less of it in summer.",
+          "cite": ["rias-baixas-pliego:p12"]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Granite, poor and sandy",
+      "beat": "ground",
+      "paras": [
+        "The land belongs to the Hercynian orogeny. Soils on granite stand out. There is also room for soils on schist and for river deposits from the Quaternary.",
+        "Most soils are poor in minerals that weather. They are sandy to sandy loam. Rain has washed out much of the magnesium, calcium and potassium.",
+        "They are acid, poor in nutrients and fairly shallow. They hold little water and tend to dry out in summer. Only depth limits the roots.",
+        "Growers have long worked to limit erosion and soil damage. They fertilise sensibly, and the soils respond to it very well."
+      ],
+      "cite": ["rias-baixas-pliego:p12"]
+    },
+    {
+      "id": "rules",
+      "title": "Albariño above all",
+      "beat": "rules",
+      "paras": [
+        "Albariño is more than 96% of the grapes harvested in recent years. Other white grapes may join it. Loureira, Treixadura and Caíño Blanco are the ones that add the touches of each subzone, at no more than 30%.",
+        "Reds are under 1% of the harvest.",
+        "Yields are capped at 12,000 kg per hectare for Albariño, which gives 84 hl. Caíño Tinto is capped at 10,000 kg. Other varieties are capped at 12,500 kg.",
+        "Albariño can make more than 13% alcohol in good years. At the same time it keeps an acidity that very few grapes in the world reach.",
+        "Its wines have many aromas: apple, citrus, rose, ripe fruit and herbs. The pliego says the wines are known more for the strength and range of their acidity and for aroma than for alcohol.",
+        "The traditional training is the pergola. It keeps the foliage away from the soil, which limits fungal disease in a humid place. It also uses sunlight better and helps manage vigour."
+      ],
+      "cite": ["rias-baixas-pliego:p11", "rias-baixas-pliego:p12", "rias-baixas-pliego:p13", "rias-baixas-pliego:p14", "rias-baixas-pliego:p15"]
+    }
+  ]
+}

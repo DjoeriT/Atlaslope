@@ -1,0 +1,81 @@
+{
+  "id": "valdeorras",
+  "title": "Why Valdeorras tastes the way it does",
+  "minutes": 4,
+  "lede": {
+    "text": "A deep, bright valley of granite and slate along the river Sil, with five kinds of soil. The white grape Godello gives wines with a fresh natural acidity.",
+    "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p14"]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "A valley with a steep side",
+      "beat": "place",
+      "paras": [
+        "Valdeorras lies in the southwest of Ourense province. The pliego calls it the natural gateway into Galicia.",
+        "A deep valley, fertile and bright, is shaped by the river Sil. Granite and slate dominate the landscape. The pliego calls it a land of red and black earth, where chestnut, vine and olive grow.",
+        "The Sil crosses the area from east to west. That makes an asymmetric valley. The left bank has steep slopes. The right bank is softer and rolling.",
+        "Other rivers cut slopes where vines grow, often on terraces. The whole zone lies between 300 m and 700 m.",
+        "The zone covers eight municipalities of Ourense, from O Barco de Valdeorras to Rubiá."
+      ],
+      "cite": ["valdeorras-pliego:p10", "valdeorras-pliego:p11", "valdeorras-pliego:p13"],
+      "fly": [
+        {
+          "label": "Valdeorras",
+          "place": "valdeorras",
+          "caption": "A valley shaped by the Sil, between 300 m and 700 m.",
+          "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p13"]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Cold winters, warm summers",
+      "beat": "weather",
+      "paras": [
+        "The pliego calls the climate Mediterranean-oceanic, with an Atlantic influence. Winters are cold and summers are warm. Spring and autumn are mild.",
+        "Minimum temperatures reach 8 °C and maximum temperatures reach 33 °C. The average is 11 °C.",
+        "Rain is 850 to 1,000 mm a year. The Winkler heat sum is between 1,300 and 1,500, and the whole zone sits in Winkler zone I.",
+        "In the pliego's words, this is an ideal climate for first-quality dry wines.",
+        "Slopes that face south were always seen as right for vines. They give less fertility and good drainage. That means a more moderate yield and proper ripening."
+      ],
+      "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p12", "valdeorras-pliego:p13"],
+      "fly": [
+        {
+          "label": "Valdeorras",
+          "place": "valdeorras",
+          "caption": "850 to 1,000 mm of rain a year, and a Winkler sum of 1,300 to 1,500.",
+          "cite": ["valdeorras-pliego:p12"]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Five soils",
+      "beat": "ground",
+      "paras": [
+        "The pliego names five kinds of soil: slate, limestone, granite, clay-iron and alluvial.",
+        "Slate soils sit on Ordovician and Silurian rock with bands of sandstone. They are shallow, 30 to 50 cm, and stony. The texture is mostly silty. The pliego says they give wines with very subtle aromas and a marked mineral character. They are warm soils.",
+        "Limestone appears in the north, in O Barco and Rubiá. The clay-limestone soils open in winter to take in water and close in summer to hold it. The pliego says they give wines with ageing potential and strong variety character.",
+        "Granite soils are in A Rúa, Petín and Larouco. They are loose and sandy loam. They give off heat by day and cool at night. The swing raises sugar and avoids big losses of acidity at night. The wines are more floral.",
+        "Clay-iron soils hold a lot of water and are cold. The best wines come from clay mixed with silica or silt.",
+        "Alluvial soils are either terraces 4 to 10 m above the Sil or valley plains. The terraces drain well and stay warm at night, so the wines have less acidity. The plains are rich in nutrients and give big yields, and the pliego says that lowers quality."
+      ],
+      "cite": ["valdeorras-pliego:p11", "valdeorras-pliego:p12"]
+    },
+    {
+      "id": "rules",
+      "title": "Godello and Mencía",
+      "beat": "rules",
+      "paras": [
+        "Wines may be made only from the listed grapes. Eight whites and eleven reds are allowed. Seven whites and seven reds are called preferred.",
+        "Yields are capped at 15,000 kg per hectare. For preferred varieties the cap is 12,500 kg, or 90 hl of wine.",
+        "Godello is the white the pliego singles out, and it is native to the zone. Its wines are pale yellow with green tints. They have clean, fruity primary aromas of medium intensity.",
+        "In the mouth they are well structured. Their natural acidity makes them fresh and elegant. The aftertaste is long.",
+        "Mencía is the red the pliego singles out. The reds are cherry-red to purple, with intense red-fruit aromas and medium acidity.",
+        "Wineries use moderate ageing in quality oak. Mencía adds colour stability, acidity and ageing ability."
+      ],
+      "cite": ["valdeorras-pliego:p10", "valdeorras-pliego:p14", "valdeorras-pliego:p15"]
+    }
+  ]
+}
