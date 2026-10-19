@@ -10,7 +10,7 @@
 
 ## Open
 - Same as `2026-10-19-guides-page-build.md` "Open" (Canarias tile, Rioja fill, Green Spain outlines, long phone page).
-- No check stops an unchecked crop for a new guide photo [A]; a contact-sheet script could live in Tools/ if guides keep growing.
+- Closed same day (PR after release 55): a unit test fails while a shown photo has no checked crop or its file changed; `src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`, docs/guides.md "Photo crops".
 
 ## Cost
 - Builder ~57K [V]; LeadBot ~60K incl. 7 sheet images [A].
