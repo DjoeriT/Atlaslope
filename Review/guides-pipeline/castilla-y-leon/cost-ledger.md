@@ -4,3 +4,4 @@
 |---|---|---|---|---|
 | Sources (16 pliegos) | all | Sonnet | 104,852 | 3.6 |
 | Write | rueda | Sonnet | 43,641 | 1.9 |
+| Write | bierzo | Sonnet | 39,461 | 1.0 |
