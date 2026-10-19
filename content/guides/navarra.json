@@ -1,0 +1,160 @@
+{
+ "id": "navarra",
+ "title": "Why Navarra tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Navarra sits far to the north within the Iberian Peninsula, and the climate that comes with that position gives its wines a higher acidity than other traditional regions, even with the same grapes. That acidity shows up as a marked freshness and a great sense of balance.",
+  "cite": [
+   "navarra-pliego:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Five zones from the hills to the Ebro",
+   "paras": [
+    "Navarra lies in the north of the Iberian Peninsula. The area splits into five smaller zones. Baja Montaña lies in the north. Valdizarbe sits in the centre-north, to its west. Tierra Estella lies further west again. All three have a marked relief.",
+    "Ribera Alta lies south of those three, with much gentler land. Ribera Baja takes the far south. Most of it lies on the right bank of the Ebro.",
+    "Wine here is old. Finds at places such as Funes and Cascante show that the Romans made wine on an industrial scale between the 1st and 5th centuries AD. Later the pilgrim road to Santiago crossed Navarra with vines on both sides. Monasteries, above all Irache, were wine centres. Teobaldo I (1234-53), King of Navarra and Count of Champagne, brought in Burgundian grapes such as Chardonnay and Pinot Noir."
+   ],
+   "cite": [
+    "navarra-pliego:p6",
+    "navarra-pliego:p9",
+    "navarra-pliego:p10"
+   ],
+   "fly": [
+    {
+     "label": "Navarra",
+     "caption": "Five zones, from the hills of the north to the river in the south.",
+     "cite": [
+      "navarra-pliego:p5",
+      "navarra-pliego:p9"
+     ],
+     "place": "navarra"
+    },
+    {
+     "label": "The Ebro at Tudela",
+     "caption": "The southern end of Navarra's vineyards.",
+     "cite": [
+      "navarra-pliego:p9"
+     ],
+     "point": [
+      -1.5954,
+      42.1321
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mediterranean, with a northern twist",
+   "paras": [
+    "The climate is Mediterranean, with some Atlantic influence in the nor-northwest. Because of its latitude, summers are milder on average than in typically Mediterranean areas. Winters are colder, rain is higher and the swing between day and night is bigger.",
+    "Average yearly rain ranges from 350 to 800 mm. The gap between day and night temperatures is high to very high and passes 20 ºC. The first autumn frost comes, on even odds, between 10 November and 1 December.",
+    "One wind reaches every zone. Cierzo, the north-west wind, is persistent and sometimes violent. It is also cold and drying, which makes life hard for pests and diseases.",
+    "The climate changes from zone to zone much more than the soil does. Valdizarbe is the wettest zone. Baja Montaña feels the Pyrenees most. In Valdizarbe and Tierra Estella vines tend to sit on solanas, the sun-facing slopes. Ribera Alta is drier and warmer than the north. Ribera Baja has the most arid climate of all, with a water deficit for the vines of more than 300 mm a year."
+   ],
+   "cite": [
+    "navarra-pliego:p8",
+    "navarra-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Urbasa",
+     "caption": "With Andía, it filters the Atlantic air before it reaches Tierra Estella.",
+     "cite": [
+      "navarra-pliego:p9"
+     ],
+     "point": [
+      -2.1267,
+      42.8314
+     ],
+     "zoom": 9
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limy, stony and poor",
+   "paras": [
+    "The soils are typical of the Mediterranean side around the Ebro and its tributaries. They are basic, calcáreo (limy) and free-draining. They are low in nutrients, with loamy textures, on rolling land whose slopes face the sun.",
+    "Carbonates are always above 35%. Stoniness runs from medium to high. The colour is mostly dark, often red and light in places. The water table is low to very low, so the vines never stand in water.",
+    "Vineyards sit between 300 and 550 m on average. Tierra Estella has the highest vineyards on average. Its rocks are mostly marls with layers of sandstone, plus river terraces along the Ega and the Odrón. In Ribera Baja the vines grow mostly on river terraces and glacis, gentle slopes of old debris.",
+    "High levels of limestone, medium stoniness and clay-loam texture give the wines a certain mineral character."
+   ],
+   "cite": [
+    "navarra-pliego:p7",
+    "navarra-pliego:p8",
+    "navarra-pliego:p9",
+    "navarra-pliego:p11"
+   ],
+   "fly": [
+    {
+     "label": "The river Ega",
+     "caption": "Tierra Estella's river, seen from above.",
+     "cite": [
+      "navarra-pliego:p9"
+     ],
+     "point": [
+      -2.1691,
+      42.6497
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "From rosado by gravity to Moscatel de licor",
+   "paras": [
+    "Nine red grapes are allowed, from Garnacha tinta and Tempranillo to Graciano and Pinot Noir. The seven white grapes include Viura, Moscatel de grano menudo and Oneca.",
+    "Navarra makes white, rosado and red wine. The rosados and reds are dry. There are also sweet whites made from late-harvested grapes touched by botrytis, the noble rot.",
+    "Rosado has deep roots. In the 13th century wine was red and vermeyllo, also called clarete, a forerunner of today's rosados. After phylloxera, Navarra replanted mainly with hardy Garnacha. It is the grape of the traditional rosados made by sangrado, the local method. Sangrado means the juice runs off the skins by gravity alone, with no machine helping it out.",
+    "The zones shape the wine. Baja Montaña makes mostly rosados and reds. Its rosados are deeply coloured, very fruity and goloso, with a sweet-seeming feel. Tierra Estella gives high acidity, tied above all to the Atlantic influence, and very aromatic wines with a marked mineral character. Ribera Baja has the most heat, the least rain and the earliest harvest. Its wines carry more alcohol and body and somewhat lower acidity.",
+    "Ribera Baja is also the home of the traditional vinos de licor. These are fortified: wine alcohol is added to fermenting must or to wine. At least 85% must come from Moscatel de Grano Menudo or Garnacha, tinta or blanca. The very arid climate where they mainly grow gives them more structure and density, notable aromas and high sugar. They are round and unctuous, with raisin aromas and a good balance of sweetness and acidity."
+   ],
+   "cite": [
+    "navarra-pliego:p1",
+    "navarra-pliego:p2",
+    "navarra-pliego:p5",
+    "navarra-pliego:p6",
+    "navarra-pliego:p10",
+    "navarra-pliego:p11",
+    "navarra-pliego:p12",
+    "navarra-pliego:p13"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Tinto roble",
+    "text": "A red that has spent more than 90 days in oak barrels of at most 330 litres."
+   },
+   {
+    "term": "Rosado Tradición",
+    "text": "A rosado made from 100% Garnacha tinta, using only juice run off by gravity."
+   },
+   {
+    "term": "Vino de…",
+    "text": "A wine from the vineyards of one Navarra municipality, made, aged and bottled in that same municipality."
+   },
+   {
+    "term": "Viñedo en…",
+    "text": "A wine from the vineyards of one Navarra municipality, made in another municipality of the area."
+   },
+   {
+    "term": "Envejecido en roble",
+    "text": "A Moscatel vino de licor aged at least 24 months, at least 18 of them in oak."
+   }
+  ],
+  "cite": [
+   "navarra-pliego:p15"
+  ]
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "id": "bolandin",
+ "title": "Why Bolandin tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Bolandin is a single estate on a south-facing slope at the southern tip of Navarra, where both the heat sum and the top temperatures are the highest in the region. Its reds come out fruitier and less vegetal than usual, because pyrazines, the compounds behind green, leafy smells, sit at very low levels in grapes like Syrah and Cabernet Sauvignon.",
+  "cite": [
+   "bolandin-doc2:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A slope between the Moncayo and the Ebro",
+   "paras": [
+    "Bolandin lies in the municipality of Ablitas, in the Comunidad Foral de Navarra. It is not a town or a valley. It is a small group of plots, each one named in the land registry.",
+    "The slope sits in the valley on the north side of the Moncayo range. The river Ebro runs to its north."
+   ],
+   "cite": [
+    "bolandin-doc2:p7"
+   ],
+   "fly": [
+    {
+     "label": "Bolandin",
+     "caption": "One estate on a south-facing slope in Ablitas.",
+     "cite": [
+      "bolandin-doc2:p7"
+     ],
+     "place": "bolandin"
+    },
+    {
+     "label": "Moncayo",
+     "caption": "The range that keeps southern rain away from Bolandin.",
+     "cite": [
+      "bolandin-doc2:p7"
+     ],
+     "point": [
+      -1.8397,
+      41.7872
+     ],
+     "zoom": 9
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Very hot, very dry",
+   "paras": [
+    "The climate is extreme continental with a Mediterranean influence. The heat sum is the warmth the vines gather over a season.",
+    "The slope's exposure pushes the heat further. On the vineyard itself, temperatures run extraordinarily higher and the air is very dry.",
+    "Rain here is among the lowest in the region. Rain from the south is stopped by the Foehn effect of the Moncayo. The air drops its water on the far side of the range and never reaches this valley.",
+    "Rain from the north does not cross to the south bank of the Ebro, where Bolandin lies. The nearness of the river holds it back.",
+    "That northern rain also arrives behind cold north winds. Their low temperature brings the humidity down, which adds to the dryness."
+   ],
+   "cite": [
+    "bolandin-doc2:p7"
+   ],
+   "fly": [
+    {
+     "label": "River Ebro",
+     "caption": "Northern rain stops at the river, short of Bolandin.",
+     "cite": [
+      "bolandin-doc2:p7"
+     ],
+     "point": [
+      -1.5954,
+      42.1321
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Ripe reds and overripe whites",
+   "paras": [
+    "Seven grapes are allowed. Cabernet Sauvignon, Merlot, Syrah and Tempranillo grow beside Chardonnay and Sauvignon Blanc. The seventh is Moscatel de Grano Menudo, the small-berried Muscat.",
+    "Bolandin makes two kinds of wine. The first is still wine, red or white. The second is white wine from overripe grapes, left to ripen well past the usual point.",
+    "The heat and dryness give reds with more colour and more total polyphenols, the grape compounds behind colour and tannin. Their tannins are ripe, fine and silky. In the mouth they feel broad and opulent, with no astringency, the drying grip of tannin.",
+    "Alcohol runs high, and that heightens the sense of richness and sweetness. The phenolic compounds are very ripe, which limits how readily the wine takes up oxygen. That keeps away reduced, sulphury smells and leaves the wines very aromatic and expressive.",
+    "The high level of polyphenols also slows ageing and oxidation. That is what makes the wines long-lived.",
+    "Acidity is balanced and never very high. Malic acid is especially low, because the summer heat burns off organic acids while the grapes ripen.",
+    "The overripe whites share that high alcohol and long life. They are glyceric, which means smooth and round in the mouth. Their golden colour comes from long exposure to the sun. With no rain to cut it short, overripening can run on for a long time, and that gives ripe-fruit aromas of honey and citrus.",
+    "Every wine ends with a second stage of ageing in bottle, which is why it is bottled where it is made. In that time the wine rounds out until it is ready to drink."
+   ],
+   "cite": [
+    "bolandin-doc2:p2",
+    "bolandin-doc2:p5",
+    "bolandin-doc2:p7",
+    "bolandin-doc2:p8"
+   ]
+  }
+ ]
+}

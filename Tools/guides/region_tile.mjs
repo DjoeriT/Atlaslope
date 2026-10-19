@@ -12,6 +12,7 @@ import { mkdirSync } from 'node:fs';
 const VIEWS = {
   cataluna: '1.45,41.62,7.45',
   baleares: '2.98,39.60,8.9',
+  ebro: '-1.00,42.05,7.55',
 };
 
 const [base, ...regions] = process.argv.slice(2);

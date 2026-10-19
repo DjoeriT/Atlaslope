@@ -1,0 +1,94 @@
+{
+ "id": "otazu",
+ "title": "Why Pago de Otazu tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "Pago de Otazu lies on a valley floor under strong Atlantic influence. That Atlantic touch and the valley-floor site give the vines a long growing cycle, which brings acidity, colour and balance to the wines.",
+  "cite": [
+   "otazu-doc2:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A single estate below the Sierra del Perdón",
+   "paras": [
+    "Pago de Otazu is a Vino de Pago, a wine name that covers one single estate. It lies in the Cuenca de Pamplona, the basin around Navarra's capital.",
+    "The river Arga runs from east to west here, and the estate lies on its left bank, south of the river. Its southern edge sits at the foot of the Sierra del Perdón. The Sierra de Sarbil closes it to the west. The area lies inside the valley that forms between the two sierras."
+   ],
+   "cite": [
+    "otazu-doc2:p5"
+   ],
+   "fly": [
+    {
+     "label": "Pago de Otazu",
+     "caption": "One estate in the Cuenca de Pamplona.",
+     "cite": [
+      "otazu-doc2:p5"
+     ],
+     "place": "otazu"
+    },
+    {
+     "label": "Sierra del Perdón",
+     "caption": "One of the two sierras that frame the valley.",
+     "cite": [
+      "otazu-doc2:p5"
+     ],
+     "point": [
+      -1.7652,
+      42.7404
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mediterranean sun, Atlantic air",
+   "paras": [
+    "The climate is Mediterranean. Together with the soil, it ensures that the grapes ripen properly."
+   ],
+   "cite": [
+    "otazu-doc2:p5"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Deep, stony and limy",
+   "paras": [
+    "The soils are stony and deep, with high levels of carbonates and a basic pH. Their texture is loam. They hold little organic matter and offer the vines few natural nutrients."
+   ],
+   "cite": [
+    "otazu-doc2:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Chardonnay and three reds",
+   "paras": [
+    "Four grapes make the wine. Chardonnay is the one white grape. Cabernet Sauvignon, Merlot and Tempranillo are the reds.",
+    "Pago de Otazu makes only dry wines, white and red. Whites come young or fermented in barrel. Reds come young or aged in barrel."
+   ],
+   "cite": [
+    "otazu-doc2:p2",
+    "otazu-doc2:p3",
+    "otazu-doc2:p4"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Pago de Otazu",
+    "text": "Every bottle must show the name Vino de Pago de Otazu where it can be seen."
+   }
+  ],
+  "cite": [
+   "otazu-doc2:p5"
+  ]
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "id": "somontano",
+ "title": "Why Somontano tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Somontano's commonest soils, calcisols and gipsisols, ensure wines with alcohol, fruit and high acidity. Together with a strong swing between day and night temperatures in August and September, they favour the intense aroma of the wines.",
+  "cite": [
+   "somontano-pliego:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between the sierras and the plains",
+   "paras": [
+    "The river Alcanadre splits the area in two. The Somontano de Huesca lies to the west and the Somontano de Barbastro to the east.",
+    "The Huesca side begins on the banks of the river Flumen and spreads south-east. The Barbastro side has more hills, cut apart by deep barrancos, or ravines.",
+    "Three distinct zones run through it, from the sierras through the Somontano proper down to the plains.",
+    "A string of rivers crosses the area, among them the Alcanadre, the Vero and the Cinca. For most of their course they flow south.",
+    "Records of the time say vines were already grown in the Ebro Valley in 500 BC. By the 2nd century BC this area made a great deal of wine. Italic settlers brought their advanced winemaking and helped found trading companies.",
+    "In the Middle Ages monasteries spread the vine around them, since wine was part of Catholic rites. In the 19th century phylloxera struck the French vineyards, and Somontano's output and exports grew. The Denominación de Origen was approved in 1984."
+   ],
+   "cite": [
+    "somontano-pliego:p5",
+    "somontano-pliego:p6",
+    "somontano-pliego:p7"
+   ],
+   "fly": [
+    {
+     "label": "Somontano",
+     "caption": "The whole area, split in two by the river Alcanadre.",
+     "cite": [
+      "somontano-pliego:p6"
+     ],
+     "place": "somontano"
+    },
+    {
+     "label": "River Vero",
+     "caption": "One of the rivers that run south through the vineyards.",
+     "cite": [
+      "somontano-pliego:p7"
+     ],
+     "point": [
+      0.1487,
+      42.0157
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Wetter north, drier south",
+   "paras": [
+    "The climate can be called Mediterranean continental. It turns wetter and colder to the north, and drier and warmer to the south and east.",
+    "In winter, nights below freezing are frequent in the north. Summer is generally hot. The yearly average temperature sits between 11 and 15 °C.",
+    "Rain falls off gradually with altitude. It goes from 800 mm a year in the mountains to 400 mm a year in the dry Monegros zone to the south.",
+    "The yearly average may sit around 500 mm. Water runs short most of all in July and August.",
+    "Sunshine is high, about 2,700 hours a year. That also ensures the grapes ripen."
+   ],
+   "cite": [
+    "somontano-pliego:p8"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limy sierras and brown soils",
+   "paras": [
+    "The production zone lies between 350 and 1000 m above sea level.",
+    "On the northern edge rise sierras such as Guara, Balcés and Salinas. They are mostly limy rock from the Cretaceous and Eocene that slid south in overlapping sheets. Narrow bands of soft Triassic rock helped those huge masses slide.",
+    "Just south of the sierras come mostly Oligocene sediments from the old basin edge. Further south lie Miocene layers of sandstone alternating with lutita, a fine mudstone.",
+    "Near Barbastro a narrow band, also running roughly east to west, brings gypsum to the surface.",
+    "The soils are brown. They are generally loamy, with sandy loam where there is sandstone and clay loam in the south. Their pH is alkaline and they hold a good deal of active lime. How much water they hold varies widely, from moderate to very high, with their texture and depth.",
+    "Calcisols carry a build-up of calcium carbonate some way down. Most of the traditional vineyards grow on them.",
+    "Gipsisols formed on gypsum-rich marls. They hold extra gypsum as powder or small lens-shaped crystals, and they lie south-west of Barbastro."
+   ],
+   "cite": [
+    "somontano-pliego:p7",
+    "somontano-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Guara",
+     "caption": "Limy sierra on the northern edge of the area.",
+     "cite": [
+      "somontano-pliego:p7"
+     ],
+     "point": [
+      -0.2094,
+      42.2883
+     ],
+     "zoom": 9
+    },
+    {
+     "label": "Barbastro",
+     "caption": "Gypsum surfaces in a band near the town.",
+     "cite": [
+      "somontano-pliego:p7",
+      "somontano-pliego:p8"
+     ],
+     "point": [
+      0.1272,
+      42.0367
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "From still reds to sparkling and fortified",
+   "paras": [
+    "Eight red grapes are allowed: Cabernet Sauvignon, Garnacha Tinta, Merlot, Moristel, Parraleta, Pinot Noir, Syrah and Tempranillo. Seven white grapes join them: Alcañón, Chardonnay, Garnacha Blanca, Gewürztraminer, Macabeo, Riesling and Sauvignon Blanc.",
+    "The wines' fruity aroma, medium-high acidity and pleasant aftertaste knit together very well. The native grapes Moristel, Parraleta and Alcañón bring these traits and complement the other varieties. Colour depth across the wines is medium-high.",
+    "Somontano makes white, rosado and red wines. Whites and reds also come from maceración carbónica, where whole grapes start fermenting inside their own skins. Wines range from dry through semi-dry and semi-sweet to sweet. Sweet wines hold 45 grams of sugar per litre or more.",
+    "Naturalmente dulce is made from overripe grapes with no artificial boost to its strength. All of its alcohol comes from fermentation. Vendimia tardía, or late harvest, is a separate type, made in both white and red.",
+    "Vino de licor is fortified, made in sweet white and sweet red. If it is aged, it spends at least 24 months doing so, at least 18 of them in oak.",
+    "Espumoso de calidad is sparkling wine, white or rosado. Its second fermentation and its time on the lees happen in the same bottle used for the tiraje, the filling for that fermentation. At least nine months pass from tiraje to degüelle, the removal of the lees.",
+    "Every wine is bottled inside the zone. Shipping wine in bulk risks oxidation and big temperature swings that can harm it."
+   ],
+   "cite": [
+    "somontano-pliego:p1",
+    "somontano-pliego:p2",
+    "somontano-pliego:p3",
+    "somontano-pliego:p4",
+    "somontano-pliego:p5",
+    "somontano-pliego:p8",
+    "somontano-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Roble",
+    "text": "Whites spend more than 45 days, and reds more than 90 days, in oak barrels of at most 600 l."
+   }
+  ],
+  "cite": [
+   "somontano-pliego:p5"
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "id": "arinzano",
+ "title": "Why Pago de Arínzano tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Arínzano's stony soils, low in clay, help give its wines high colour intensity and notable acidity. Mineral notes stand out in them.",
+  "cite": [
+   "arinzano-doc3:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One estate on the slopes of Montejurra",
+   "paras": [
+    "Pago de Arínzano is a Vino de Pago, a protected name that belongs to one estate. The vineyard lies on the estate called Señorío de Arínzano, in the municipality of Aberin.",
+    "Aberin is in the Tierra Estella district of Navarra. The estate sits on the lower slopes of Montejurra, a mountain. The río Ega, the Ega river, runs through it.",
+    "On the south the estate ends at a small hydroelectric plant on the Ega. On the east its line follows the top of monte Santa Bárbara southward. On the west it meets the Peñazas ravine."
+   ],
+   "cite": [
+    "arinzano-doc3:p6"
+   ],
+   "fly": [
+    {
+     "label": "Señorío de Arínzano",
+     "caption": "The estate in Aberin, with the Ega running through it.",
+     "cite": [
+      "arinzano-doc3:p6"
+     ],
+     "place": "arinzano"
+    },
+    {
+     "label": "Montejurra",
+     "caption": "The mountain on whose lower slopes the estate lies.",
+     "cite": [
+      "arinzano-doc3:p6"
+     ],
+     "point": [
+      -2.0448,
+      42.6306
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Dry, hot summers and a long season",
+   "paras": [
+    "Summers here are dry and hot. At the end of summer the gap between night and day temperatures is large. The estate also has an Atlantic orientation.",
+    "Together these bring a long growing season. The grapes ripen slowly but well.",
+    "That is ideal for wines that are very aromatic, balanced and tasty, with a high content of polyphenols, the compounds behind colour and tannin."
+   ],
+   "cite": [
+    "arinzano-doc3:p6"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "The ground under the vines",
+   "paras": [
+    "The soils hold a medium level of carbonates. Their texture runs from loam to sandy clay loam.",
+    "This ground also helps give the wines great quality and aromatic intensity. It gives them structure and body that last."
+   ],
+   "cite": [
+    "arinzano-doc3:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A Chardonnay white and the reds",
+   "paras": [
+    "Two kinds of wine carry the name. The white is a varietal Chardonnay.",
+    "The red grapes are Tempranillo and two French varieties, Cabernet Sauvignon and Merlot. Each of the three can also make a single-variety red.",
+    "Growers tend toward planting the vines close together. The aim is to make the vines compete. That keeps the crop in check and seeks fruit with more body and extract.",
+    "Grapes are picked both by hand and by machine.",
+    "Fermentation happens in barrels and in vats of different sizes. Density and temperature are tracked throughout. Selected yeast is added.",
+    "During fermentation and the maceration after it, pump-overs (remontados) and other techniques draw out colour and aromas. Malolactic fermentation, the second fermentation, takes place in barrels and tanks.",
+    "Ageing happens in tanks and barrels of different materials and sizes, each adding its own nuance. A recent change ended the rule that ageing had to be in oak barrels only.",
+    "Every bottle shows the name Vino de Pago de Arínzano clearly on its label."
+   ],
+   "cite": [
+    "arinzano-doc3:p2",
+    "arinzano-doc3:p3",
+    "arinzano-doc3:p5",
+    "arinzano-doc3:p6",
+    "arinzano-doc3:p7"
+   ]
+  }
+ ]
+}

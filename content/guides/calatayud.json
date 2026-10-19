@@ -1,0 +1,127 @@
+{
+ "id": "calatayud",
+ "title": "Why Calatayud tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Calatayud's vines sit high, so in summer they ride out the strong daytime heat and recover their freshness at night. That lets them make sugars again the next morning, and because the vine never stalls, the wines gain more complexity and higher alcohol.",
+  "cite": [
+   "calatayud-pliego:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Rivers and sierras of an old wine country",
+   "paras": [
+    "Calatayud lies in the foothills of the Sistema Ibérico, the Iberian mountain system, in the far south-west of Zaragoza province. Mountains running off the Moncayo massif frame the area. Inside that frame, a tangle of Ebro tributaries shapes the land, with the Jalón and the Jiloca among them.",
+    "Wine here is old. A Celtiberian wine press found at Segeda takes vine growing back to the 2nd century BC. In the 1st century Marco Valerio Marcial, born in the Roman town of Bílbilis, wrote the first known words on the quality of the area's wines.",
+    "In the 1970s the market wanted wines with lots of alcohol and colour. Neighbouring areas made wines of 16 to 18 degrees, while Calatayud's stayed at 12-13. A 1978 book on Aragón's wines found that their greater balance, from lower-yielding vines, made up for this. It called them perhaps the best in Aragón.",
+    "Calatayud became a Denominación de Origen in 1989. From then on most wine was bottled instead of sold in bulk."
+   ],
+   "cite": [
+    "calatayud-pliego:p8",
+    "calatayud-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Calatayud",
+     "caption": "The whole area, in the far south-west of Zaragoza province.",
+     "cite": [
+      "calatayud-pliego:p9"
+     ],
+     "place": "calatayud"
+    },
+    {
+     "label": "Monasterio de Piedra",
+     "caption": "Cistercian monastery from the late 12th century, with old wine cellars.",
+     "cite": [
+      "calatayud-pliego:p8"
+     ],
+     "point": [
+      -1.7823,
+      41.1933
+     ],
+     "zoom": 11
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "An extreme continental climate",
+   "paras": [
+    "Calatayud's climate is extremely continental, a distinct climate unit within the Sistema Ibérico. Winters are long and cold. Summers are hot. Rain is very scarce.",
+    "The floor of the trough is the warmest and driest, and it gets colder and slightly wetter higher up. Average yearly rain runs between 300 and 550 mm, with peaks in spring and autumn.",
+    "Spring frosts are very frequent on the floors of closed valleys. Vines are placed higher up to escape that cold air.",
+    "Big gaps between night and day temperatures during ripening build the precursors of aroma in the grapes. This slow ripening builds the phenolic compounds that bring colour and structure, and it gives the wines a long life."
+   ],
+   "cite": [
+    "calatayud-pliego:p10",
+    "calatayud-pliego:p11"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Slate up high, lime and clay down low",
+   "paras": [
+    "The vineyards belong to the Calatayud depression, part of the Ebro Depression.",
+    "The sierras come in two kinds. Some, such as Sierra Vicort, are hard quartzite and slate. Others are softer rock such as limestone and marl. Sierra soils are very stony and yield little.",
+    "In the centre of the depression the soft rock wore away. The hard limestone stood firm as flat-topped hills that locals call castillos, castles. Brown limy soils, suelos pardo-calizos, form here. There are also reddish-brown soils on slate and quartzite, with a high iron content.",
+    "Vineyards have moved up above 550 m, and some plots sit above 1000 m. More than 80 % of the vines grow between 650 and 900 m. The slopes are steep, which favours airflow but hinders machines, so most work is done by hand.",
+    "Height sets the harvest date and which grapes go into which wine. Younger, more productive vines on the low limy and clay soils ripen earlier. They make young wines of all three colours, with floral and fruity aromas, plus sparkling and aguja wines. Older, less productive vines higher up, on stony and slate soils, make more structured reds for ageing and vino de licor."
+   ],
+   "cite": [
+    "calatayud-pliego:p9",
+    "calatayud-pliego:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Garnacha first, in many styles",
+   "paras": [
+    "Garnacha tinta stands out, adapted exceptionally well to the area. Seven other red grapes are allowed, Tempranillo and Mazuela among them. White wines can draw on seven grapes, Macabeo and Malvasía among them.",
+    "Calatayud Superior is a red \"of high expression\". At least 85 % of it is Garnacha tinta from vines more than 50 years old. It spends at least 6 months in barrel.",
+    "The area makes white, rosado and red wines. Some come semi-dry, semi-sweet or sweet.",
+    "The sparkling wine, vino espumoso de calidad, is made by the traditional method, with its second fermentation in the same bottle. It rests at least 9 months before disgorging. It comes from north-facing vineyards on fertile limy and clay soils.",
+    "Vino de aguja is lightly fizzy, not sparkling. Mild temperatures at harvest and the height of the vineyards give fresh grapes with less sugar and good acidity.",
+    "Vino de licor is a fortified wine. It is made only from Moscatel de Alejandría, Macabeo and Garnacha tinta.",
+    "Two wines come from overripe grapes. They come from a later harvest, with the grapes hanging longer in the sun to gain sugar. One is Vendimia tardía, late harvest. Naturalmente dulce is made from overripe grapes with nothing added to raise their strength. All its alcohol comes from fermentation, and it holds at least 45 g of sugar per litre."
+   ],
+   "cite": [
+    "calatayud-pliego:p1",
+    "calatayud-pliego:p3",
+    "calatayud-pliego:p4",
+    "calatayud-pliego:p6",
+    "calatayud-pliego:p7",
+    "calatayud-pliego:p8",
+    "calatayud-pliego:p11",
+    "calatayud-pliego:p12"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Roble",
+    "text": "A white with more than 45 days, or a red with more than 90 days, in oak barrels of at most 600 litres."
+   },
+   {
+    "term": "Viñas viejas",
+    "text": "From vines more than 35 years old, with at most 4,500 kg of grapes per hectare."
+   },
+   {
+    "term": "Maceración carbónica",
+    "text": "At most 4 g of sugar per litre, or 9 g when total acidity is no more than 2 g per litre below the sugar."
+   }
+  ],
+  "cite": [
+   "calatayud-pliego:p3",
+   "calatayud-pliego:p6",
+   "calatayud-pliego:p7",
+   "calatayud-pliego:p12"
+  ]
+ }
+}

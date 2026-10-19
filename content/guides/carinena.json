@@ -1,0 +1,157 @@
+{
+ "id": "carinena",
+ "title": "Why Cariñena tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "In Cariñena, high daytime temperatures and scarce rain give very sugar-rich harvests, especially when the grapes are picked late. That climate has long helped the making of vino de licor here, a fortified wine.",
+  "cite": [
+   "carinena-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A plain under the Iberian sierras",
+   "paras": [
+    "Cariñena lies in the province of Zaragoza, in Aragón. The Campo de Cariñena is a plain closed off to the south-west by the Iberian sierras. What washes down from them decides how each piece of land is used.",
+    "As the mountain spurs lose height, a landscape of hills slopes gently down into the plain. More than 80% of the DO lies on the flat land that runs alongside the Sierra de Algairén.",
+    "The Roman town of Carae, today's Cariñena, stood in the land called Celtiberia. Its people are known to have drunk wine mixed with honey around the 3rd century BC.",
+    "In 1773 Voltaire thanked the Conde de Aranda for wine from his cellar at Almonacid de la Sierra. If this wine is yours, he wrote, the promised land is near.",
+    "Late in the 19th century, phylloxera had wiped out the French vineyards. Important French wine families settled here. A narrow-gauge railway from Cariñena to Zaragoza opened in 1887 to carry out the zone's produce."
+   ],
+   "cite": [
+    "carinena-pliego:p4",
+    "carinena-pliego:p6",
+    "carinena-pliego:p7",
+    "carinena-pliego:p8",
+    "carinena-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Cariñena DO",
+     "caption": "Sierra edge, hills and plain, all in one zone.",
+     "cite": [
+      "carinena-pliego:p8",
+      "carinena-pliego:p9"
+     ],
+     "place": "carinena"
+    },
+    {
+     "label": "Cariñena",
+     "caption": "In 1585 the town welcomed Felipe II with two fountains of wine, one white and one red.",
+     "cite": [
+      "carinena-pliego:p7"
+     ],
+     "point": [
+      -1.2263,
+      41.3382
+     ],
+     "zoom": 11
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Cold winters, very hot summers",
+   "paras": [
+    "The climate is temperate, with a strong pull toward the continental. Winters are cold and summers very hot.",
+    "That continental pull and the frequent winds keep rain down. So does the torrential nature of many streams. The result is a semi-arid landscape. The local wind, called the cierzo, adds to the dryness.",
+    "The mountains help. Land close to the sierra gets higher and steadier yearly rain than the plain. On the plain, rain comes as spring showers or summer storms. Rainfall is very low, from 350 to 540 mm near the mountains."
+   ],
+   "cite": [
+    "carinena-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "From rocky foothills to Miocene clays",
+   "paras": [
+    "The land sits between 400 and 800 m. Height and the lie of the land mix with soil and climate in different ways. That favours a range of microclimates.",
+    "In the mountain foothills the soils are poor, with rock close below. Yields there are low, and machines struggle.",
+    "Part way down, the soil is made of pebbles laid by water and by slopes. It needs little moisture but holds what it gets for a long time. Here the climate softens, and the vines find ideal conditions.",
+    "The plain holds soils of Miocene clays, in four main types. Cascajo, a brown limy soil, covers the most ground. Royal, a brown earth mostly over slate, comes second. Tierra fuerte arcillosa is a clay terrace soil over stony brown limy ground. Calar is a thin dry soil over marl and sandstone, sometimes with layers of gypsum."
+   ],
+   "cite": [
+    "carinena-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Río Huerva",
+     "caption": "With the Jalón, its sediments left smaller patches of alluvial soil.",
+     "cite": [
+      "carinena-pliego:p9"
+     ],
+     "point": [
+      -1.0754,
+      41.313
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Garnacha, Cariñena and many styles",
+   "paras": [
+    "Garnacha Tinta and the Cariñena grape, also called Mazuela, are the native reds. Cellars get their best results with moderate ageing in good oak, and with a share of grapes such as Tempranillo and Syrah. These bring steadier colour and acidity, along with ageing power.",
+    "Six principal red grapes and three principal whites lead, with Macabeo among the whites. Secondary grapes include Juan Ibáñez and Vidadillo.",
+    "Wines come red, rosado or white. Sweeter styles, from semi-dry up to sweet, come from stopping fermentation early or from sweetening a dry wine with local grape must. Partially dealcoholised wines of all three colours are protected too.",
+    "Vino de licor is a fortified wine. One made from grape must, or from must blended with wine, may be called mistela. Sparkling wine and vino de licor have been made here since the start of the 20th century.",
+    "Vino espumoso de calidad, the quality sparkling wine, takes its second fermentation in the bottle by the traditional method. Extreme temperatures and limestone-rich soils let growers raise grapes that give these wines breadth and balance. Scant rain and the hours of sun set the natural alcohol they need.",
+    "Vino de aguja is not sparkling wine but a lightly fizzy one, with 1 to 2.5 bar of pressure from its own carbon dioxide. Its light acidity and intense fruit come from plenty of sun and sharp temperature swings. Little risk of rain at ripening helps too.",
+    "Vino de uvas sobremaduradas, wine from overripe grapes, comes as Vendimia tardía or Naturalmente dulce. Growers delay the harvest to get grapes with more sugar. Their long ripening in the sun brings ripe fruit aromas, and a balance led by sweetness or by the warmth of alcohol."
+   ],
+   "cite": [
+    "carinena-pliego:p1",
+    "carinena-pliego:p2",
+    "carinena-pliego:p6",
+    "carinena-pliego:p7",
+    "carinena-pliego:p8",
+    "carinena-pliego:p10",
+    "carinena-pliego:p11"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Superior",
+    "text": "Made with at least 85% of one of the DO's principal grapes."
+   },
+   {
+    "term": "Nuevo",
+    "text": "Unaged wine bottled in October, November or December of the harvest year, with the vintage on the label."
+   },
+   {
+    "term": "Joven",
+    "text": "Unaged wine bottled during the year after the harvest, with the vintage on the label."
+   },
+   {
+    "term": "Roble / Barrica",
+    "text": "Aged only in oak barrels, for at least 30 days for white and rosado and at least 60 days for red."
+   },
+   {
+    "term": "Maceración carbónica",
+    "text": "Whole grapes, neither crushed nor destemmed, ferment inside the berry in a vat rich in CO2, then pressing finishes the fermentation."
+   },
+   {
+    "term": "Viñas viejas",
+    "text": "Made from vineyards more than 20 years old."
+   },
+   {
+    "term": "Vendimia seleccionada / Selección",
+    "text": "Made from plots chosen before harvest that yield under 7,000 kilos per hectare."
+   }
+  ],
+  "cite": [
+   "carinena-pliego:p5",
+   "carinena-pliego:p6",
+   "carinena-pliego:p12",
+   "carinena-pliego:p13"
+  ]
+ }
+}
