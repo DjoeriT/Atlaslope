@@ -20,3 +20,4 @@
 | Check | cigales | Opus | 85,700 | 3.5 |
 | Check | leon | Opus | 83,572 | 3.1 |
 | Check | bierzo | Opus | 92,615 | 3.8 |
+| Write | arlanza | Sonnet | 41,291 | 1.0 |
