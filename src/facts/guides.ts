@@ -1,4 +1,4 @@
-// The terroir guides under content/guides/<place id>.json: chapters of plain text, each with its sources and "fly there" targets.
+// The Terroir sections of the guides (a guide is the whole place page), under content/guides/<place id>.json: chapters of plain text, each with its sources and "fly there" targets.
 import type { Cite } from './types';
 
 export interface FlyTarget {

@@ -11,7 +11,7 @@ Study, and guide and Terroir (docs gap audit, 18 Oct 2026). A new term goes here
 | **Study** | Rounds of questions with spaced memory (find it on the map, what is this, the fact question). Owner, 18 Oct 2026: "Quiz" is "Study" everywhere users look. | Quiz (still the code name: `src/quiz/`, `src/quiz-ui/`; don't rename code just for this) |
 | **Round** | One Study session, from "Start" to the results. | |
 | **Shade** | How well a place is known in spaced memory: new, learning, known, solid (`SHADES`, `src/quiz/memory.ts`). Older docs call these boxes. Harder questions come with higher shades. | Level, streak |
-| **Guide** | A place's own page: fact sheet, photos and, where written, the Terroir section. Every place has one. | Lesson, article |
+| **Guide** | A place's own page: fact sheet, photos and, where written, the Terroir section. Every place has one. A reference for anyone who loves wine, not exam prep (owner, 19 Oct 2026). | Lesson, article |
 | **Terroir** | The written section of a guide (about 600 to 800 words: land, climate, soils, grapes). Progress is counted as "Terroir written, N of 79". | Guide (the whole page) |
 | **Fact sheet** | The short structured part of a guide: kind, region, grapes, area, producers, each with a source tag. | |
 | **Source tag** | The short tag after a fact, pointing to the one Sources list at the end of the guide. | Footnote |

@@ -167,6 +167,8 @@ archived context file; the ones that changed:
 - 2026-10-17 [O]: efficiency (owner cards 17:29-17:30Z, plan `Review/efficiency-plan-2026-10-17.md`): one slice per thread and a handoff
   at about 150K of context, noisy work to Sonnet helpers; publish reuses the green `main` checks for its commit; records go in the slice PR,
   no records PR after a release; `CLAUDE.md` cut from 10.9 KB to 5 KB with the detail in `docs/AGENT_ROLES.md`; threads stay on Opus 5.5.
+- 2026-10-19 [O]: words. The guide is the whole place page; Terroir is its written section, never "the Terroir guide". The guide is a
+  reference for anyone who loves wine, not exam-centric; exam framing belongs to Study (owner, Green Spain pilot thread).
 
 ## 9. Where things are written down
 Rules `CLAUDE.md`; this file; scope and decisions in `docs/`; handoffs `docs/handoffs/`; brief, reviews, mocks, cards and digests in
