@@ -4,7 +4,7 @@ Start with `docs/PROJECT.md` (what this is, state, decisions, costs, open questi
 (layout, commands). Detail behind these rules: `docs/AGENT_ROLES.md` section "Working detail" (read only that). History: `docs/handoffs/README.md`
 (index) and `docs/PROJECT_CONTEXT.md` (only the section you need). Atlaslope is a static web app (React, MapLibre) for Spain's wine places.
 Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.md`, `Review/builder-brief.md`, approved mocks in `Review/mock-*/`,
-then these rules. A gap goes to the owner; do not invent behaviour. Repo wins over any memory or chat.
+then these rules. A gap goes to the owner; do not invent behaviour. Repo wins over any memory or chat. The owner's standing rules, verbatim from the hosted project: `docs/OWNER-RULES.md`.
 
 A **small slice** is a fix or tweak with no new screen, data or content. Everything else is a big slice.
 
@@ -14,7 +14,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Impatient: a rough first look within 5 minutes, refined after. Show previews before a PR. Verify his "Done" claims. He often sees a stale
   cached build: tell him to hard-reload (Cmd+Shift+R).
 - Full uptake: every point he raises is done in full or listed plainly as not done, with where it will be done. Apply an approved principle everywhere.
-- Decisions as short option lists, one recommended, batched up front. Reversible work starts on the recommended option at once; outward or
+- Decisions as short option lists, one recommended, batched up front. A decision he made stays until he reopens it. Reversible work starts on the recommended option at once; outward or
   hard-to-undo work waits. Do not start big token work on an unanswered recommendation.
 - Vague UI asks ("map navigation looks whacky"): screenshot the candidates and ask in one line first (a guess cost a revert, 19 Oct).
 - Tag claims [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
@@ -27,14 +27,16 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Always split every estimate and result into re-read vs new tokens (re-reads ~1/10 price on the API; plan weighting unknown [A]).
 - Overrun guards: estimates only from measured per-unit numbers (calls x ~100K context + work; count every step, a fresh session is not cheap).
   Pilot 1-2 units first; one helper per unit with a fixed step count, no agent loops over many items; hard stop at 1.5x budget and report at
-  once (`Tools/guides/usage.py --budget`, output guard in `region.workflow.js`). Measured numbers: `docs/PROJECT.md`.
+  once with the breakdown, and put the fix into the pipeline and these rules (`Tools/guides/usage.py --budget`, output guard in `region.workflow.js`). Measured numbers: `docs/PROJECT.md`.
+- At most two working sessions at once. Mock rounds run in a one-shot helper that builds the page and returns only the link and a few lines.
+- Report cost in tokens (re-read and new), not dollars, and say which measurement an estimate rests on.
 - Few, big tool calls. Read with `grep -n` and line ranges, never whole files or logs. Batch independent calls. Never wait on your own tools:
   tests, CI logs, searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet subagent that reports in 10-20 lines.
 - Batch small asks into one session unless he says urgent. Past ~60K before a long wait, write the handoff first.
 
 ## Working agreements
 - **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
-  your own `claude/...` branch, one PR per slice, merge on green CI. Never push `main`, force-push, rebase pushed history, push to someone
+  your own `claude/...` branch, one PR per slice, merge on green CI (and after ReviewBot has reported, where it runs). Never push `main`, force-push, rebase pushed history, push to someone
   else's branch, or move or delete a tag. A refused push means stop and tell him.
 - **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
   rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
@@ -70,7 +72,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 
 ## Models and agents
 Opus 5.5 for the main session and for the tree model and Study engine; Sonnet 5.5 for helpers, builders, checkers. Agent types `builder`,
-`reviewer`, `analyst` (`.claude/agents`); his go on a plan covers the agents it names. Builders and reviewers use their own worktree and
+`reviewer`, `analyst` (`.claude/agents`); his go on a plan covers the helpers and cost it names; anything off the plan is asked first. Builders and reviewers use their own worktree and
 never push. Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never open `data.js`, `maplibre-gl.js`,
 `data/*.geojson`, `*.tif`.
 
