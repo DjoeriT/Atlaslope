@@ -1,6 +1,6 @@
 # Mediterranean guides (19 Oct 2026)
 
-- Shipped (`claude/guides-mediterranean`): seven guides from current pliegos: Valencia, Utiel-Requena, Alicante, Los Balagueses, Yecla,
+- Shipped (`claude/guides-mediterranean`): seven guides from current pliegos (11 with the four added below): Valencia, Utiel-Requena, Alicante, Los Balagueses, Yecla,
   Jumilla, Bullas. Also the Guides-page tile `public/guides/mediterranean.webp` (96 KB, view -1.00,38.78,7.6, Pillow WebP q72), the
   roster in `tests/unit/guides.test.ts`, and `tests/ui/guide.spec.ts` switched its "no guide" place from Jumilla/Navarra to La Mancha.
   The `content/tiles.json` Mediterranean lede now says "limy" (not "chalky") and cites yecla-pliego:p4 and bullas-pliego:p6.
@@ -14,18 +14,22 @@
 - Pipeline: `Review/guides-pipeline/mediterranean/` (manifest, extracts). Guide validation: 7 guides, 0 errors; number warnings
   (19, 16, 1970 etc.) are for the sentence check, as before.
 
-## Held for the owner (open)
-- **Tharsys**: guide drafted, held in `Review/guides-pipeline/mediterranean/held/tharsys.json`. Its pliego is the EU application text
-  ("en tramitación"); eAmbrosia lists PDO-ES-02086 as applied, and OJ C/2025/3093 publishes it under PDO-ES-02980
-  (`oj-PDO-ES-02980-C-2025-3093-tharsys.txt`). places.json uses 02086. Recommend: hold until registration.
-- **El Terrerazo**: guide drafted, held in `.../held/el-terrerazo.json`. No pliego (portalagrari 404, MAPA refused); only the thin 2014
-  EU technical sheet. `docs/guides.md` requires a pliego; the pagos exception covers only the four Navarra pagos. BOE-A-2011-20342
-  (2010 recognition resolution) is reachable as a fallback. Needs an owner OK or a GitHub Actions fetch from mapa.gob.es.
-- **Chozas Carrascal, Vera de Estenas**: not written. No pliego (portalagrari 404, MAPA refused); EU single documents only (OJ C 35,
-  3.2.2020; OJ C 235, 12.7.2019). Same decision as El Terrerazo.
+## Owner approvals (Djoeri, project chat 19 Oct 2026, 14:29Z) and the four added guides
+- EU single document only is OK for Chozas Carrascal, Vera de Estenas and El Terrerazo (same as the Navarra pagos; `docs/guides.md`
+  exception line updated). Tharsys is added because documentation exists: its pliego is the EU application text, and OJ C/2025/3093
+  publishes the application under PDO-ES-02980. `data/places.json` euFile for Tharsys fixed from 02086 to 02980 (the OJ text confirms
+  it for «Tharsys»); `tharsys-doc` already carries the OJ publication in `content/sources.json` and `data/SOURCES.md`. The guide has no
+  "pending" line (the source states none). eAmbrosia still lists 02086 as applied (`Review/sources/fetched/ea-PDO-ES-02086.json`).
+- The guides now total 11. Held folder is empty. Roster in `tests/unit/guides.test.ts` has the four new ids.
+- UNSURE guide items for the owner:
+  - vera-de-estenas: soil is called "limestone" but pardocalizos (p4) is not literally limestone; the source gives two red yield
+    limits, 7,950 kg/ha (p4) vs 7,850 kg/ha (p6).
+  - chozas-carrascal: the Blanco skin-contact line is hedged (p2); check the wording.
+  - el-terrerazo: "desnivel de apenas 1,5 km" likely a typo in the source (p3).
+- Jumilla stray comma: checked every text string in `content/guides/jumilla.json`; no stray comma found and the JSON parses, so nothing changed.
 
 ## Fact sheets (`content/facts/mediterranean.json`)
-Sure edits applied (38): valencia 5, utiel-requena 4, alicante 2, los-balagueses 3, yecla 5, jumilla 7, bullas 5, vera-de-estenas 3,
+Sure edits applied (39, incl. chozas-carrascal Tinto multivarietal: 14 days and 5 months in oak apply to all reds, p2): valencia 5, utiel-requena 4, alicante 2, los-balagueses 3, yecla 5, jumilla 7, bullas 5, vera-de-estenas 3,
 el-terrerazo 4. Grape lists moved to `main` use `{local}` objects; sibling cites moved to the pliego pages. Three texts were shortened to
 the word limits (valencia why, utiel-requena and jumilla Vino de licor). Most other rows still cite the old `-doc` attachments.
 
@@ -46,9 +50,9 @@ UNSURE, left for the owner:
   grapes and why cites still on jumilla-doc (pliego p4, p7); styles.text omits blanc de noirs (p4).
 - bullas: "dry whites" and whites "dry and clean" (p1, p2); climate could say "Mediterráneo continentalizado" (p4, p6); rainfall 365 mm
   (town, p5) vs 300 l/m2 (zone, p9); remap remaining bullas-doc cites to bullas-pliego pages?
-- chozas-carrascal: grapes could move to main (p3 «Principales uvas»); multivarietal rules cover all reds (p2); rosado also «dulce» as a
+- chozas-carrascal: grapes could move to main (p3 «Principales uvas»); rosado also «dulce» as a
   taste word (p2); `Review/fact-sheets-30-source-check.md` wrongly says there is no causal link (p3-p5 has one).
-- vera-de-estenas: red yield 7 950 (p4) vs 7 850 kg/ha (p6), not on the sheet; "four ageing grades" counts madurado en barrica.
+- vera-de-estenas: red yield 7 950 (p4) vs 7 850 kg/ha (p6), not on the sheet; soil "limestone" vs pardocalizos (p4); "four ageing grades" counts madurado en barrica.
 - el-terrerazo: "desnivel de apenas 1,5 km" likely a typo (p3); styles "Red wine only" not literal; p3 colour/acidity and soil/finesse
   links not on the sheet.
 
