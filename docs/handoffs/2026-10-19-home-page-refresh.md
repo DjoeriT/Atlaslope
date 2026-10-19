@@ -2,7 +2,7 @@
 
 ## Done
 - Round 3 of option B built (mock https://claude.ai/artifact/Ek78Z4TFGcCN96sazrjAMN), with the owner's 09:31Z picks: the Rioja guide card on the hero map and line icons on the five steps.
-- Hero: a tall real shot of Rioja with its four flags (`public/home/hero.webp`, 1400x1540, `#view=-2.75,41.97,8.7,0,0`, Esri imagery). The hero keeps today's shape (big headline, near-square map), not the mock's wide map.
+- Hero: a tall real shot of Rioja with its four flags (`public/home/hero.webp`, 1400x1540, `#view=-2.62,42.17,8.95,0,0`, Esri imagery). The hero keeps today's shape (big headline, near-square map), not the mock's wide map.
 - Tiles are real app crops laid over their screens (`public/home/atlas-zoom.webp`, `guide-top.webp`, `guide-short.webp`). The old `guide.webp` is gone.
 - The guide count is filled in at build time from `content/guides/` (`src/home/guideCount.ts`, a Vite `transformIndexHtml` plugin).
 - Share card (`public/share.jpg`, `Tools/share/make_share_image.py`): the subline layout with today's line, logo 1.5x, no black strip.
