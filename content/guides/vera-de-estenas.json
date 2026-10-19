@@ -1,0 +1,103 @@
+{
+ "id": "vera-de-estenas",
+ "title": "Why Vera de Estenas tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "A water table lies just a few metres below the vines of Vera de Estenas. It softens the swing between day and night and keeps humidity higher than in the zones around it, and that makes possible a total acidity of about 5-6 g/l that leaves the wines very balanced in the mouth.",
+  "cite": [
+   "vera-de-estenas-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A gentle slope beside the rambla",
+   "paras": [
+    "Vera de Estenas is a pago, a wine named after one paraje, a named spot of land. It lies in the municipality of Utiel, inland in the province of Valencia. It sits inside the DOP Utiel-Requena.",
+    "The paraje spreads over a gentle slope. It falls from the Sierra Juan Navarro down to the vega, the river flats, of the río Magro. All of it lies a la vera, beside, the rambla de Estenas, which gives the zone its name. The rambla borders the estate and drains the northern sierras of Utiel into the río Magro.",
+    "The río Magro lies to the south and the Sierra Negrete to the north. Together with the rambla they act as natural barriers. On this land the way the rows face is decisive. So is the training system. Both depend mainly on the shape of each plot, the slope, the water at hand and the prevailing winds, always seeking the best sunlight.",
+    "In 2019 there was only one winery in the zone. Some neighbouring plots of the same winery were left out because they lack the soil and climate conditions needed."
+   ],
+   "cite": [
+    "vera-de-estenas-doc:p4",
+    "vera-de-estenas-doc:p5",
+    "vera-de-estenas-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Rambla de Estenas",
+     "caption": "The watercourse that borders the estate and gives it its name.",
+     "cite": [
+      "vera-de-estenas-doc:p4"
+     ],
+     "point": [
+      -1.1449,
+      39.5903
+     ],
+     "zoom": 11
+    },
+    {
+     "label": "Sierra Negrete",
+     "caption": "The sierra to the north that shelters the vines from cold north winds.",
+     "cite": [
+      "vera-de-estenas-doc:p5"
+     ],
+     "point": [
+      -1.1421,
+      39.6352
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Little rain, water close below",
+   "paras": [
+    "Rain averages about 430 mm a year, on 52 rainy days. The sun shines 2,600 hours on average. There are 60 overcast days and about 130 clear days a year.",
+    "The water table tempers the gap between day and night temperatures. The swings are not as sharp as in the rest of the comarca, the surrounding district. Humidity stays higher than in neighbouring zones. That favours good leaf growth, with vigorous leaves that last until after the harvest. This extra humidity keeps ripening from stalling, above all in the driest months of the year.",
+    "A 2 ha forest stands in the centre of the paraje. It keeps the vines cool in summer, so the grapes ripen slowly, and the wines gain a very balanced acidity. In winter and spring it shields nearby vines from the wind, which avoids late frosts.",
+    "The río Magro, to the south, also moderates temperature and humidity in its vega. To the north the Sierra Negrete is a shield against cold north winds in winter and spring."
+   ],
+   "cite": [
+    "vera-de-estenas-doc:p4",
+    "vera-de-estenas-doc:p5"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limy ground with a crust",
+   "paras": [
+    "The vineyards stand mainly on Miocene ground, and less often on Quaternary ground. The main soils are suelos pardocalizos, brown limy soils. They average 38% total lime and 14% active lime. In the rest of the comarca the average is 25%.",
+    "Organic matter averages 1.5%, lower than in neighbouring zones. Low average conductivity shows the soils have no salinity problems. Soils with a limy crust horizon also hold more moisture than the rest of the comarca, where soils on loose material dominate.",
+    "The soil pH is about 8.5, against about 8.2-8.3 in the zones next to it. This comes mainly from large amounts of calcium carbonate. High pH favours the uptake of phosphates and potassium by the vines, and of calcium and magnesium too."
+   ],
+   "cite": [
+    "vera-de-estenas-doc:p4",
+    "vera-de-estenas-doc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Four oak grades and a Bobal rosado",
+   "paras": [
+    "The main grapes are Cabernet Sauvignon, Bobal, Tempranillo, Merlot and Chardonnay. Bobal is pruned the traditional way, as a free-standing bush (en vaso). The other varieties grow on trellises. Checks on ripeness set the best day to pick, depending on the wine to be made.",
+    "The oak-aged reds come from Bobal, Tempranillo, Cabernet Sauvignon or Merlot. They are made in temperature-controlled tanks at no more than 28 °C, then rest in oak barrels of 225 or 300 litres. Madurado en barrica means less than 6 months in barrel. Crianza needs at least 6 months, Reserva at least 12 and Gran Reserva at least 18. Each then finishes its ageing in bottle up to the legal minimum.",
+    "The rosado is made mostly from Bobal, in stainless steel tanks at no more than 22 °C. Chardonnay whites ferment in new oak barrels of 225 or 300 litres.",
+    "The paraje gives grapes with optimal ripeness, a high sugar content and good acidity. The wines show great colour intensity, a high share of tannins and polyphenols, good alcohol and balanced acidity. They are fit for ageing in barrel and then in bottle, with dense tannins that are not at all aggressive.",
+    "Compared with the DOP Utiel-Requena around it, aged reds here must reach at least 12.5% vol alcohol, against 10.5%. They may hold at most 4 g/l of sugar, against 9."
+   ],
+   "cite": [
+    "vera-de-estenas-doc:p1",
+    "vera-de-estenas-doc:p3",
+    "vera-de-estenas-doc:p4",
+    "vera-de-estenas-doc:p5",
+    "vera-de-estenas-doc:p6"
+   ]
+  }
+ ]
+}

@@ -79,15 +79,14 @@
   },
   "mediterranean": {
    "title": "Monastrell country",
-   "lede": "Hot, dry and chalky. Monastrell gives broad, fleshy reds here.",
+   "lede": "Hot, dry and limy. Monastrell gives broad, fleshy reds here.",
    "from": [
-    "jumilla",
-    "yecla"
+    "yecla",
+    "bullas"
    ],
    "cite": [
-    "jumilla-doc:p12",
-    "yecla-doc:p3",
-    "yecla-doc:p6"
+    "yecla-pliego:p4",
+    "bullas-pliego:p6"
    ]
   },
   "meseta": {

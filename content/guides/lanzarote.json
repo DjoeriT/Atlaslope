@@ -1,0 +1,147 @@
+{
+ "id": "lanzarote",
+ "title": "Why Lanzarote tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Lanzarote's vines grow in a near-desert, under a layer of volcanic ash that holds the moisture in the air. Their wines have a marked volcanic-mineral taste, balanced by relatively high acidity.",
+  "cite": [
+   "lanzarote-pliego:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Vines in pits under the ash",
+   "paras": [
+    "Lanzarote is the easternmost island of the Canaries. It lies about 100 km west of Morocco, and the wine zone covers the whole island.",
+    "Vines grow where eruptions buried the old soil under a thick layer of lapilli, volcanic ash. This happened near the volcanic cones, above all in the eruptions between 1730 and 1736.",
+    "To plant a vine, growers dig a pit about 3 m across and 2 to 2.5 m deep, down to the buried soil. A stone windbreak often guards the pit. Together they make a vineyard landscape that is Lanzarote's own, at its fullest in La Geria.",
+    "No machine can work these pits, so all the work is done by hand. Dense planting is impossible, so harvests are small but of quality."
+   ],
+   "cite": [
+    "lanzarote-pliego:p5",
+    "lanzarote-pliego:p6",
+    "lanzarote-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "La Geria",
+     "point": [
+      -13.7145,
+      28.969
+     ],
+     "zoom": 11,
+     "caption": "Pits in the ash and stone windbreaks make Lanzarote's own vineyard landscape, at its fullest here.",
+     "cite": [
+      "lanzarote-pliego:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Dry, windy and sunny",
+   "paras": [
+    "Dryness is the main feature of Lanzarote's climate. The island is low and fairly flat, so it never reaches the height of the trade-wind cloud layer. It catches no sea of clouds and none of the moisture that cloud drops on most of the Canaries.",
+    "Less than 150 mm of rain falls in a year. Most of it comes between November and March, and almost none falls from June to August. Scorching winds from the Sahara make it harsher still.",
+    "The average temperature is 20 °C. January and August differ by only about 7 °C on average. Within one day, though, the swing can reach 17 °C, as in desert lands.",
+    "With few barriers in the way of the trade winds and sea breezes, wind blows almost all year. It comes mostly from the N-NE and is strongest in summer.",
+    "Scarce clouds favour long sunshine, 7.8 hours a day on average."
+   ],
+   "cite": [
+    "lanzarote-pliego:p6",
+    "lanzarote-pliego:p7",
+    "lanzarote-pliego:p8"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Black ash over buried soil",
+   "paras": [
+    "The vineyards sit on volcanic soils, and even on deep red soils over old basalt. They survive as fossil soils, buried by newer eruptions or by flood deposits.",
+    "On top lies picón, the layer of lapilli. It lets rain soak in fast and stops the topsoil drying out. It also keeps the soil temperature steady.",
+    "Black volcanic ash covers most of the vineyards. Nothing else grows through it, but it holds the water that comes from dew very well. Underneath, the soil is fertile, clay or sand over a bed of limestone.",
+    "Some vines are buried in funnel-shaped pits so their roots can reach that fertile earth. Others shelter from the wind behind half-circle walls of volcanic stone."
+   ],
+   "cite": [
+    "lanzarote-pliego:p7",
+    "lanzarote-pliego:p8"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Malvasía and seven kinds of wine",
+   "paras": [
+    "White grapes lead, and Malvasía Volcánica leads the whites. This native grape is the most planted, and it is perfectly adapted to the island's soil and climate. Among red grapes, Listán Negra and Negramoll are preferred.",
+    "Lanzarote makes white wines, rosados and reds. The whites are fresh and mineral, with a typical saltiness. Rosados are balanced between acidity and alcohol. The reds are light, with a mineral character that sets them apart.",
+    "The island's microclimates and sunshine are why it makes vino de licor, fortified with alcohol and high in sugar. It is usually aged, which makes it very complex on the nose.",
+    "Thanks to the trade winds the seasons stay close in temperature, so the sparkling wines are aromatic with high acidity and taste fresh. The quality sparkling, espumoso de calidad, needs a base wine of at least 9% vol.",
+    "Vino de uva sobremadurada is made from overripe grapes with at least 16% vol. of natural alcohol. Mild weather and more than 2,800 hours of sun a year help the grapes reach the sugar it needs. The wine is very aromatic, with a great balance of acidity, sweetness and alcohol.",
+    "In short, this way of growing is what lets vines survive in volcanic soil."
+   ],
+   "cite": [
+    "lanzarote-pliego:p1",
+    "lanzarote-pliego:p4",
+    "lanzarote-pliego:p5",
+    "lanzarote-pliego:p6",
+    "lanzarote-pliego:p8",
+    "lanzarote-pliego:p9",
+    "lanzarote-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "At least 85% of the wine comes from grapes picked in the year named."
+   },
+   {
+    "term": "A municipality's name",
+    "text": "Yaiza, Tinajo or another of seven named towns may appear only if the grapes grow there and the wine is made, aged and bottled there, in letters no bigger than Lanzarote."
+   }
+  ],
+  "cite": [
+   "lanzarote-pliego:p2",
+   "lanzarote-pliego:p3",
+   "lanzarote-pliego:p12",
+   "lanzarote-pliego:p13"
+  ]
+ }
+}

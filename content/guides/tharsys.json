@@ -1,0 +1,112 @@
+{
+ "id": "tharsys",
+ "title": "Why Tharsys tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Inside the Tharsys vineyard stand century-old elms and old olive trees beside a freshwater lake, and together they soften winter cold and summer heat by up to 3 degrees against the area around. That moderation brings slow ripening, and the cooler summer highs give high natural acidity with a low pH.",
+  "cite": [
+   "tharsys-pliego:p12",
+   "tharsys-pliego:p15"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A small enclave in the west of Requena",
+   "paras": [
+    "Tharsys is 19.5 ha of vineyard in the municipality of Requena, in Valencia. It lies in the far west of the province, a border zone at the eastern edge of the Iberian Southern Submeseta. The Sierra de Juan Navarro, 1,200 m high, shelters it to the north. It sits near the vega, the river plain, of the Magro.",
+    "The N-III road marks its northern edge. It borders the Utiel-Requena designation, which has 32,567 ha of vines in 9 municipalities.",
+    "The name Tharsys has been used for this vineyard land near Requena since the 16th century. In 1808 Doña Nicolasa Nuévalos and her husband built a cellar half-buried in the Toba limestone, with six trullos, underground tanks for 70,000 litres of wine. It worked until 1950, making wines already known for their longevity. New owners brought the vines and the cellar back to life in 1998. Since 2015 the whole vineyard has been certified organic. One winery makes the wine today."
+   ],
+   "cite": [
+    "tharsys-pliego:p7",
+    "tharsys-pliego:p8",
+    "tharsys-pliego:p9",
+    "tharsys-pliego:p12",
+    "tharsys-pliego:p13",
+    "tharsys-pliego:p15",
+    "tharsys-pliego:p16"
+   ],
+   "fly": [
+    {
+     "label": "Requena",
+     "point": [
+      -1.1002,
+      39.4881
+     ],
+     "zoom": 11,
+     "caption": "Tharsys lies in the west of Requena's municipality. In the old La Villa quarter, the older cellars hold tinajas, clay jars, where Tharsys has trullos.",
+     "cite": [
+      "tharsys-pliego:p8",
+      "tharsys-pliego:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Continental, 60 km from the sea",
+   "paras": [
+    "The coast is only 60 km to the east, yet the climate is continental with a slight Mediterranean influence. The cause is the altitude of 690 m and the mountains to the east, which screen out Mediterranean storms and the sea's influence. What little rain falls comes mostly from the Meseta Manchega to the south, where Atlantic storms come in.",
+    "Rain is low, about 430 mm a year, mostly in autumn and spring. Summers and winters are dry. The sun is very intense, with more than 3,000 hours a year. Summer days can reach 33 ºC and nights 12 ºC. That contrast is very good for cooling the plant and for correct ripening.",
+    "Winters are long and cold, and temperatures easily drop below zero. Springs are cool, with some risk of frost. The rows run north to south and the prevailing winds blow east to west, right through them. This helps air the vines well, which prevents spring frosts and keeps fungal diseases away.",
+    "The microclimate is milder than in the surrounding Utiel-Requena, with fewer extreme swings and more air. It gives wines with excellent phenolic ripeness."
+   ],
+   "cite": [
+    "tharsys-pliego:p8",
+    "tharsys-pliego:p11",
+    "tharsys-pliego:p12"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Sand over the limestone of an ancient lake",
+   "paras": [
+    "The vines grow on a limy fluvisol over Quaternary river deposits, on very gentle slopes of 1 to 2%. Beneath it lies Pontian Miocene lake limestone, unique in the region, because a lake lay here 23 million years ago. This porous bedrock sits 2 to 4 m down. The enclave stands up to 10 m above the fields to its west and south, since its different soil has eroded less.",
+    "From that rock have come loose, permeable, shallow soils that stay very cool. Water just below the surface keeps the risk of water stress limited.",
+    "The soils are sandy and sandy-loam, basic and high in carbonates. Utiel-Requena next door has clay and clay-loam soils instead. Against clay, this sand lets water and air in easily and holds little water.",
+    "The sand and its low hold on nutrients give a high vegetative balance and very low grape yields. High mineralisation of organic matter gives good polyphenolic ripeness and mineral notes when tasted. The limestone, with soils that are loose and cool, helps make wines of medium body and medium-low colour. They are soft and balanced, with high aromatic intensity and an extraordinary aptitude for ageing."
+   ],
+   "cite": [
+    "tharsys-pliego:p9",
+    "tharsys-pliego:p10",
+    "tharsys-pliego:p15"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Organic, vegan and long-lived",
+   "paras": [
+    "Tharsys makes red, rosado and white still wines. Reds can be young or aged. It also makes quality sparkling wine, espumoso de calidad, in white and rosado.",
+    "The red grapes are Merlot, Bobal, Garnacha and Cabernet Franc. The white grapes are Chardonnay, Albariño and Xarel·lo.",
+    "Every grape must be organic and grown inside the area, certified by the Valencian organic farming committee. Pruning is controlled, with green pruning and a green harvest when needed. This keeps the vines well aired, which favours ripening and makes organic growing easier. Sulfite levels are lower than in conventional wines. Every wine must also be suitable for vegans.",
+    "White grapes, and red grapes for white and rosado wines, are picked at night, depending on the vintage and the daytime heat. Still wines are high in alcohol, over 13.0% vol for reds and over 11.5% for whites and rosados. The sparkling wines are lower in alcohol because their grapes are picked earlier.",
+    "Next door in Utiel-Requena the wines have more colour and very ripe fruit, with less aroma and less acidity. They are also less long-lived. Every Tharsys wine is long-lived, thanks to high acidity with low pH and to complex aroma and flavour."
+   ],
+   "cite": [
+    "tharsys-pliego:p1",
+    "tharsys-pliego:p3",
+    "tharsys-pliego:p6",
+    "tharsys-pliego:p7",
+    "tharsys-pliego:p8",
+    "tharsys-pliego:p14",
+    "tharsys-pliego:p16"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de pago",
+    "text": "The traditional term Tharsys uses on its label is vino de pago."
+   }
+  ],
+  "cite": [
+   "tharsys-pliego:p17"
+  ]
+ }
+}

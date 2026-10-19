@@ -1,0 +1,156 @@
+{
+ "id": "valle-de-guimar",
+ "title": "Why Valle de Güímar tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "The notes of tropical fruit in these wines come from the valley's climate and its high level of sunshine. Izaña, up in its high mountains, records more hours of sun a year than anywhere else in Spain.",
+  "cite": [
+   "valle-de-guimar-pliego:p9",
+   "valle-de-guimar-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Born of a slide into the sea",
+   "paras": [
+    "The Valle de Güímar is a depression in the south-east of Tenerife. It formed when huge volumes of material slid down into the sea. It covers about 122 km² across three municipalities, Güímar among them.",
+    "The Cordillera Dorsal closes the head of the valley. The slopes of Chafa and Güímar close its eastern and western ends. In between, the ground falls fairly gently from high mountain to the coast.",
+    "Young volcanic cones stand out within the valley. Chief among them is Montaña Grande, 276 m high. It grew from piled-up pyroclastic material and gave rise to the Malpaís de Güímar.",
+    "The Castilians brought the vine to the Canaries in the 15th century and found the valley a privileged place for it. Vines first went on the coast, where no more profitable crop such as sugar cane was grown. Growers soon saw that vines would grow anywhere in the valley. By 1550 it already made notable amounts of wine. Until 1680 its wines were famous on three continents, from Europe to America. From the middle of the 17th century, pressure from Andalusian and Portuguese wines cut production a great deal. The fame survived, and drinking recovered in the 18th century."
+   ],
+   "cite": [
+    "valle-de-guimar-pliego:p8",
+    "valle-de-guimar-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Valle de Güímar",
+     "place": "valle-de-guimar",
+     "caption": "A depression of about 122 km² in south-east Tenerife, running from high mountain down to the coast.",
+     "cite": [
+      "valle-de-guimar-pliego:p8"
+     ]
+    },
+    {
+     "label": "Montaña Grande",
+     "point": [
+      -16.3773,
+      28.3136
+     ],
+     "zoom": 11,
+     "caption": "A young volcanic cone, 276 m high, that gave rise to the Malpaís de Güímar.",
+     "cite": [
+      "valle-de-guimar-pliego:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Wetter than the rest of the south",
+   "paras": [
+    "Relief shapes the weather here more than anything else, and the valley is cut by tangled barrancos, deep ravines. The south side of Tenerife lies in the lee of the trade winds, so it gets less rain.",
+    "The valley is an exception. Local conditions let part of the moisture carried by the north-east trade winds spill over the summits. It gets markedly less rain than the north of the island but significantly more than the rest of the south. It is the only place in southern Tenerife with a small patch of laurisilva, the laurel forest.",
+    "Rain usually comes when the trade winds stop and storms move in from the south-west. Scarce rain is the rule, but height changes it a lot. The coast gets 161 mm a year on average, and Izaña, in the high mountains, gets 504 mm.",
+    "Temperature follows a similar pattern. The yearly average is 19.5 °C at sea level and 9.8 °C on the summits at Izaña. The valley enjoys plentiful hours of sun."
+   ],
+   "cite": [
+    "valle-de-guimar-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Jable below, dark clay above",
+   "paras": [
+    "Vines grow from 300 up to 1,700 m, in two bands. The one that makes the better wines lies between 800 and 1,700 m, on black ground. The other lies between 400 and 800 m, on ground mulched with jable, a light volcanic sand.",
+    "Between 400 and 800 m the volcanic ground is very porous and strongly hygroscopic. It can soak up water from the moisture in the air.",
+    "From the upper edge of the medianías, the mid-slopes, up to 1,700 m, vines stand on dark, highly fertile clay. They are grown as bush vines, en vaso.",
+    "This spread of heights favours a wide range of wines, and with it a range of colours and aromas."
+   ],
+   "cite": [
+    "valle-de-guimar-pliego:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Mostly white, in many forms",
+   "paras": [
+    "White grapes predominate in the valley. Listán Blanca and Malvasía are the most planted. A wide range of minor white and red grapes grows beside them. Among the reds, Listán Negro, also called Almuñeco, is one of the preferred grapes.",
+    "The valley makes white, rosado and red wine. Whites range from dry to sweet, and a sweet white needs at least 13.5% vol. Reds made by carbonic maceration may stop at 11.5% vol., against 12% vol. for other reds.",
+    "Vino de licor needs at least 15% vol. of actual alcohol and 17.5% vol. in total. Its grapes must reach 13.5% vol. of natural alcohol. It is golden to amber, or cherry to garnet when made red.",
+    "Vino dulce clásico comes from grapes left to overripen or dried in the sun, a practice called asoleo. It keeps at least 55 g/l of sugar.",
+    "The valley also makes espumoso de calidad, a quality sparkling wine with at least 3.5 bar of pressure. Vino de aguja and vino de aguja gasificado both show fine bubbles. Mosto de uva parcialmente fermentado, partly fermented grape must, is made as well.",
+    "A white kept at least two months in barrel can take on golden tones. A red kept at least three months in oak turns ruby, with clean vanilla aromas.",
+    "How it tastes: the wines are harmonious and balanced. They are very aromatic, with a mineral accent in all of them. Every wine of the valley carries the notes typical of wines from volcanic zones.",
+    "In short, height is what favours such a range of wines in one valley."
+   ],
+   "cite": [
+    "valle-de-guimar-pliego:p1",
+    "valle-de-guimar-pliego:p2",
+    "valle-de-guimar-pliego:p3",
+    "valle-de-guimar-pliego:p4",
+    "valle-de-guimar-pliego:p5",
+    "valle-de-guimar-pliego:p6",
+    "valle-de-guimar-pliego:p8",
+    "valle-de-guimar-pliego:p9",
+    "valle-de-guimar-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Afrutado",
+    "text": "A white made from several grapes, with Moscatel as the common factor."
+   },
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar, or up to 18 g/l if total acidity is no more than 10 g/l below it; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, with none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "Cosecha",
+    "text": "Also añada or vendimia: grapes picked in the year named, with at least 85% of the wine from that harvest."
+   }
+  ],
+  "cite": [
+   "valle-de-guimar-pliego:p2",
+   "valle-de-guimar-pliego:p3",
+   "valle-de-guimar-pliego:p4",
+   "valle-de-guimar-pliego:p13",
+   "valle-de-guimar-pliego:p14"
+  ]
+ }
+}

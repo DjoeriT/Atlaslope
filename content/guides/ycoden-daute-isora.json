@@ -1,0 +1,155 @@
+{
+ "id": "ycoden-daute-isora",
+ "title": "Why Ycoden-Daute-Isora tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Below Teide, deep soils full of sand hold very little water and warm up sooner than finer soils. So the grapes start ripening earlier and ripen more slowly, and that long, steady ripening gives the wine a perfect balance.",
+  "cite": [
+   "ycoden-daute-isora-pliego:p8",
+   "ycoden-daute-isora-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A triangle under Teide",
+   "paras": [
+    "Ycoden-Daute-Isora sits on the northwest tip of Tenerife. Its vineyards cover the slopes that fall from Teide to the coast. The Valle de la Orotava closes it to the east, and the Barranco de Erques marks its southern end.",
+    "The zone is roughly an equilateral triangle, 31 km a side. It covers almost a quarter of the island. It is also the oldest part of Tenerife, at 12 million years, although part of it is recent volcanic soil from eruptions in the 18th and 20th centuries.",
+    "About 1,600 hectares grow vines, in plots between 50 and 1,400 m above the sea. The plots are small and steep, and they barely allow machines.",
+    "Vines have been grown here since the 16th and 17th centuries. Back then wine was almost the only engine of the local economy and of Tenerife's. The Canaries were an obligatory stop between Europe and America, and the famous \"Canary Wine\" sailed from the port of Garachico."
+   ],
+   "cite": [
+    "ycoden-daute-isora-pliego:p8",
+    "ycoden-daute-isora-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Teide",
+     "point": [
+      -16.6423,
+      28.2727
+     ],
+     "zoom": 10,
+     "caption": "The vineyards spread over the slopes that run down from Teide to the coast.",
+     "cite": [
+      "ycoden-daute-isora-pliego:p8"
+     ]
+    },
+    {
+     "label": "Garachico, the old wine port",
+     "point": [
+      -16.752,
+      28.3266
+     ],
+     "zoom": 11,
+     "caption": "\"Canary Wine\" was shipped from Garachico's port when the Canaries linked Europe and America.",
+     "cite": [
+      "ycoden-daute-isora-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Countless microclimates",
+   "paras": [
+    "Trade winds, the Atlantic current and the changes in altitude together create countless microclimates. The high average altitude and the sea currents make the vine grow very differently from sea level to the highest plots.",
+    "The year averages 19 ºC. Highs reach 35 ºC in August and September, and lows fall to 15 ºC in January and February. Rain averages around 540 mm a year, and the sun shines for an average of 3,000 hours.",
+    "The harvest lasts more than four months. It starts the earliest in the northern hemisphere."
+   ],
+   "cite": [
+    "ycoden-daute-isora-pliego:p9",
+    "ycoden-daute-isora-pliego:p10"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Ash, rock and poor soil",
+   "paras": [
+    "The soils vary, but most are made of ash and volcanic rock. They are generally acid, with an average pH of 6.2. Organic matter averages 6.0%, though most soils hold less than 4%. The texture runs from sandy loam to loam.",
+    "The soils are low in sodium and potassium. Listán Blanco, the main grape, tolerates this very well. The soils are also poor, and that suits quality grapes, while more fertile ground would give bigger crops of lower quality.",
+    "Growers terrace the soil to stop erosion and to make the most of the farmland. In the driest spots they add volcanic sand to stop the soil drying out. That has let vines grow on volcanic ground that is hard to farm.",
+    "On marked slopes and near plot edges, vines grow on emparrado, a trellis, one of several training systems that keep vines going on hard terrain."
+   ],
+   "cite": [
+    "ycoden-daute-isora-pliego:p9",
+    "ycoden-daute-isora-pliego:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Mostly white, sometimes sweet",
+   "paras": [
+    "White grapes fill most of the vineyard, and Listán Blanco alone covers 80% of it. It is the grape best suited to the local soils. The wines are mostly white and have long been known for their quality.",
+    "The zone also makes rosado from at least 50% red grapes. Young reds take at least 75% red grapes, and Listán Negro and Negramoll are among the recommended ones. Some reds are made by carbonic maceration. Crianza, Reserva and Gran Reserva reds turn ruby with brick tones. Young wines of every colour can also keep some sugar, up to fully sweet.",
+    "Malvasía clásico is made only from Malvasía grapes left to overripen on the vine. Its must holds at least 289 g/l of sugar. Fermentation is then halted, and the wine keeps at least 45 g/l of sugar and reaches at least 14% vol.",
+    "Vino de licor is a fortified wine. Wine alcohol is added to stop fermentation, leaving at least 45 g/l of sugar and at least 15% vol. Sparkling wine comes from white grapes and spends at least 9 months in bottle, second fermentation included.",
+    "How it tastes: the mark of the place is a nose of medium-high intensity and a fruity aftertaste. Malvasía clásico is yellow and unctuous, with hints of raisins and dried apricots.",
+    "In short: the soil and the climate, backed by a long tradition, have shaped wines that are mostly white."
+   ],
+   "cite": [
+    "ycoden-daute-isora-pliego:p1",
+    "ycoden-daute-isora-pliego:p4",
+    "ycoden-daute-isora-pliego:p5",
+    "ycoden-daute-isora-pliego:p6",
+    "ycoden-daute-isora-pliego:p8",
+    "ycoden-daute-isora-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar, or up to 18 g/l if total acidity is no more than 10 g/l below it; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, with none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "Tenerife",
+    "text": "Printed above the name Ycoden Daute Isora at half its size, with \"Denominación de origen\" below it."
+   },
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "At least 85% of the wine comes from grapes picked in the year named."
+   }
+  ],
+  "cite": [
+   "ycoden-daute-isora-pliego:p2",
+   "ycoden-daute-isora-pliego:p3",
+   "ycoden-daute-isora-pliego:p13",
+   "ycoden-daute-isora-pliego:p14"
+  ]
+ }
+}
