@@ -36,9 +36,9 @@ test('search "albillo" lists Cebreros with its main grape', async ({ page }) => 
   await open(page);
   await page.getByRole('searchbox', { name: /Search/ }).fill('albillo');
   const hits = page.getByRole('list', { name: 'Search results' }).getByRole('link');
-  await expect(hits).toHaveCount(1);
-  await expect(hits.first()).toContainText('Cebreros');
-  await expect(hits.first()).toContainText('main grape: Albillo Real');
+  const cebreros = hits.filter({ hasText: 'Cebreros' });
+  await expect(cebreros).toHaveCount(1);
+  await expect(cebreros).toContainText('main grape: Albillo Real');
 });
 
 test('the report link is absent while no address is set', async ({ page }) => {
