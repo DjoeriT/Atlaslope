@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "bierzo-pliego": "Review/sources/fetched/pliego-PDO-ES-A0615-bierzo.txt",
+    "leon-pliego": "Review/sources/fetched/pliego-PDO-ES-A0882-leon.txt",
+    "arlanza-pliego": "Review/sources/fetched/pliego-PDO-ES-A0613-arlanza.txt",
+    "valles-de-benavente-pliego": "Review/sources/fetched/pliego-PDO-ES-A0646-valles-de-benavente.txt",
+    "cigales-pliego": "Review/sources/fetched/pliego-PDO-ES-A0622-cigales.txt",
+    "ribera-del-duero-pliego": "Review/sources/fetched/pliego-PDO-ES-A0626-ribera-del-duero.txt",
+    "valtiendas-pliego": "Review/sources/fetched/pliego-PDO-ES-A0747-valtiendas.txt",
+    "toro-pliego": "Review/sources/fetched/pliego-PDO-ES-A0886-toro.txt",
+    "tierra-del-vino-de-zamora-pliego": "Review/sources/fetched/pliego-PDO-ES-A0634-tierra-del-vino-de-zamora.txt",
+    "rueda-doc": "Review/sources/fetched/pliego-PDO-ES-A0889-rueda.txt",
+    "arribes-pliego": "Review/sources/fetched/pliego-PDO-ES-A0614-arribes-itacyl-current.txt",
+    "sierra-de-salamanca-pliego": "Review/sources/fetched/pliego-PDO-ES-A0631-sierra-de-salamanca.txt",
+    "cebreros-pliego": "Review/sources/fetched/pliego-PDO-ES-02348-cebreros-itacyl-current.txt",
+    "abadia-retuerta-pliego": "Review/sources/fetched/pliego-PDO-ES-02481-abadia-retuerta.txt",
+    "dehesa-penalba-pliego": "Review/sources/fetched/pliego-PDO-ES-02592-dehesa-penalba.txt",
+    "uruena-pliego": "Review/sources/fetched/pliego-PDO-ES-02485-uruena.txt"
+  }
+}

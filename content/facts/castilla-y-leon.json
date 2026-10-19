@@ -4,9 +4,10 @@
   {
    "id": "bierzo",
    "why": {
-    "text": "Bierzo is an Atlantic-continental basin with mild temperatures and plenty of sun. Fair rainfall and acid soils give fresh, mineral wines.",
+    "text": "Bierzo is an Atlantic-continental basin with mild temperatures and plenty of sun. Fair rainfall and acid soils give fresh, fruity wines.",
     "cite": [
-     "bierzo-doc:p3"
+     "bierzo-doc:p3",
+     "bierzo-pliego:p14"
     ]
    },
    "grapes": {
@@ -15,24 +16,24 @@
       "local": "Mencía"
      },
      {
-      "local": "Doña Blanca"
-     },
-     {
       "local": "Godello"
      }
     ],
     "cite": [
-     "bierzo-wiki"
+     "bierzo-pliego:p14"
     ],
     "others": [
+     "Doña Blanca",
      "Alarije",
      "Garnacha Tintorera",
+     "Merenzao",
+     "Estaladiña",
      "Palomino"
     ],
     "othersCite": [
-     "bierzo-doc:p7"
-    ],
-    "othersPartial": true
+     "bierzo-pliego:p9",
+     "bierzo-pliego:p10"
+    ]
    },
    "styles": {
     "kinds": [
@@ -40,10 +41,10 @@
      "rose",
      "red"
     ],
-    "text": "Fruity or floral whites and rosados; silky, fresh reds with mineral notes and oak when aged.",
+    "text": "Fresh whites, rosados and claretes; fresh, structured reds with red or black fruit, and oak when aged.",
     "cite": [
-     "bierzo-doc:p1",
-     "bierzo-doc:p2"
+     "bierzo-pliego:p4",
+     "bierzo-pliego:p5"
     ]
    },
    "climate": {
@@ -59,10 +60,10 @@
     ]
    },
    "tastes": {
-    "text": "Whites: greenish yellow; fruity or floral, very fresh. Rosés: red-pink; red fruit, fresh. Reds: red-violet to ruby; fruity, floral, mineral, with oak when aged; silky, very fresh.",
+    "text": "Whites: steely to golden yellow; fruity or floral, fresh. Rosés: light pink to ruby red; red or black fruit, fresh. Reds: violet to red; red or black fruit, violets; fresh, structured. Aged reds add vanilla, toast or spice.",
     "cite": [
-     "bierzo-doc:p1",
-     "bierzo-doc:p2"
+     "bierzo-pliego:p4",
+     "bierzo-pliego:p5"
     ]
    },
    "famous": {
@@ -77,9 +78,10 @@
   {
    "id": "leon",
    "why": {
-    "text": "Winters are long and summers short, with strong sun and about 500 mm of rain. Prieto Picudo on poor soils gives aromatic wines.",
+    "text": "Winters are long and harsh, with strong summer sun and about 500 mm of rain. Hot summer days give Prieto Picudo its intense aroma.",
     "cite": [
-     "leon-doc:p5"
+     "leon-pliego:p15",
+     "leon-pliego:p22"
     ]
    },
    "grapes": {
@@ -89,41 +91,43 @@
      },
      {
       "local": "Mencía"
+     },
+     {
+      "local": "Negro Saurí"
      }
     ],
     "cite": [
-     "leon-wiki",
-     "leon-doc:p5"
+     "leon-pliego:p14"
     ],
     "others": [
      "Albarín Blanco",
      "Verdejo",
      "Godello",
-     "Doña Blanca",
      "Garnacha Tinta",
-     "Palomino",
      "Tempranillo"
     ],
     "othersCite": [
-     "leon-doc:p5",
-     "leon-doc:p9"
+     "leon-pliego:p14"
     ]
    },
    "styles": {
     "kinds": [
      "white",
      "rose",
-     "red"
+     "red",
+     "sweet"
     ],
-    "text": "Whites of Albarín Blanco, Verdejo and Godello; Prieto Picudo rosados; fleshy, aromatic reds, also aged.",
+    "text": "Whites of Albarín Blanco, Verdejo and Godello; Prieto Picudo rosados; fleshy, aromatic reds, also aged. Semi-sweet and sweet wines are also made.",
     "cite": [
-     "leon-doc:p1"
+     "leon-doc:p1",
+     "leon-pliego:p5"
     ]
    },
    "climate": {
-    "text": "Continental: long, harsh winter, short summer alternating very hot dry days with cold ones, about 500 mm rain, much sun.",
+    "text": "Continental: long, harsh winter, irregular summer alternating very hot dry spells with cold ones, about 500 mm rain, much sun.",
     "cite": [
-     "leon-doc:p5"
+     "leon-pliego:p15",
+     "leon-pliego:p22"
     ]
    },
    "soil": {
@@ -133,22 +137,24 @@
     ]
    },
    "tastes": {
-    "text": "Whites: balanced, fresh, complex. Rosés (Prieto Picudo): very aromatic, fresh. Reds: strong colour; red and black fruit; fleshy, full, lightly astringent, persistent. Aged reds: more complex, less astringent.",
+    "text": "Whites: balanced, fresh, complex. Rosés (Prieto Picudo): very aromatic, fresh. Reds: strong colour; red and black fruit; fleshy, full, lightly astringent, persistent. Aged reds: more complex; the astringency disappears in oak.",
     "cite": [
      "leon-doc:p1",
      "leon-doc:p2",
-     "leon-doc:p3"
+     "leon-doc:p3",
+     "leon-pliego:p21"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Tinto envejecido",
-      "text": "Prieto Picudo with more complexity, less astringency, tannic, great mouthfeel."
+      "text": "Prieto Picudo with more complexity, no astringency left, tannic, great mouthfeel."
      }
     ],
     "cite": [
-     "leon-doc:p3"
+     "leon-doc:p3",
+     "leon-pliego:p21"
     ]
    },
    "producers": {
@@ -159,7 +165,7 @@
   {
    "id": "arlanza",
    "why": {
-    "text": "Altitude and an extreme continental climate slow ripening. Tinta del País wines come out rich in polyphenols and acidity.",
+    "text": "Altitude and an extreme continental climate slow ripening. Tinta del País (Tempranillo) wines come out rich in polyphenols and acidity.",
     "cite": [
      "arlanza-doc:p5"
     ]
@@ -167,35 +173,38 @@
    "grapes": {
     "main": [
      {
-      "local": "Tempranillo"
+      "local": "Tinta del País",
+      "grape": "Tempranillo"
      }
     ],
     "cite": [
-     "arlanza-doc:p5"
+     "arlanza-pliego:p12"
     ],
     "others": [
      "Albillo Mayor",
      "Cabernet Sauvignon",
      "Garnacha Tinta",
-     "Macabeo",
      "Mencía",
      "Merlot",
-     "Petit Verdot"
+     "Petit Verdot",
+     "Viura"
     ],
     "othersCite": [
-     "arlanza-doc:p9"
+     "arlanza-pliego:p12"
     ]
    },
    "styles": {
     "kinds": [
      "white",
      "rose",
-     "red"
+     "red",
+     "sweet"
     ],
-    "text": "Whites, rosados and reds; the reds stand up well to long ageing in oak barrels.",
+    "text": "Whites, rosados and reds; the reds stand up well to long ageing in oak barrels. Sweet reds and ice wine (Vino de Hielo) are also made.",
     "cite": [
-     "arlanza-doc:p1",
-     "arlanza-doc:p2"
+     "arlanza-pliego:p3",
+     "arlanza-pliego:p8",
+     "arlanza-pliego:p15"
     ]
    },
    "climate": {
@@ -205,31 +214,33 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Sandy loam, low in organic matter. Soils in the middle of the area are basic and rich in calcium. The Campiña plains have more clay in the north and more carbonates in the south-west. The Páramos del Cerrato have active limestone and marly clays.",
+    "cite": [
+     "arlanza-pliego:p13",
+     "arlanza-pliego:p14"
+    ]
    },
    "tastes": {
-    "text": "Whites: straw yellow; fruity, tasty, balanced. Rosés: strawberry red; wild berries. Reds: intense red; wild fruit, very good structure. Aged wines: wood and fruit aromas; reds are dry.",
+    "text": "Whites: steely to golden yellow; fruity, balanced, fresh. Rosés: onion skin to strawberry red; red or black fruit. Reds: violet-red to purple; red or black fruit; balanced, fresh. Aged wines: wood and fruit aromas; reds are dry.",
     "cite": [
-     "arlanza-doc:p1",
-     "arlanza-doc:p2",
-     "arlanza-doc:p3"
+     "arlanza-pliego:p5",
+     "arlanza-pliego:p6"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Tinto envejecido",
-      "text": "Cherry red softened by ageing; fruit-and-wood aromas; bears long oak ageing well."
+      "text": "Garnet to brick red; wood-and-fruit aromas; bears long oak ageing well."
      },
      {
       "name": "Rosado envejecido",
-      "text": "Red with ageing tones; clean, balanced wood and fruit aromas."
+      "text": "Onion skin to raspberry pink with ageing tones; red fruit and wood aromas."
      }
     ],
     "cite": [
-     "arlanza-doc:p2",
-     "arlanza-doc:p3"
+     "arlanza-pliego:p6",
+     "arlanza-pliego:p15"
     ]
    },
    "producers": {
@@ -240,8 +251,9 @@
   {
    "id": "valles-de-benavente",
    "why": {
-    "text": "A dry Mediterranean-continental climate and deep, well-drained poor soils let Prieto Picudo ripen. The wines are red-fruited with a slight spritz.",
+    "text": "An extreme, arid continental climate and poor, well-drained soils let Prieto Picudo ripen. The wines are red-fruited with a slight spritz.",
     "cite": [
+     "valles-de-benavente-pliego:p9",
      "valles-de-benavente-doc:p4"
     ]
    },
@@ -249,22 +261,30 @@
     "main": [
      {
       "local": "Prieto Picudo"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Mencía"
+     },
+     {
+      "local": "Verdejo"
+     },
+     {
+      "local": "Malvasía Castellana",
+      "grape": "Doña Blanca"
      }
     ],
     "cite": [
-     "valles-de-benavente-doc:p4"
+     "valles-de-benavente-pliego:p8"
     ],
     "others": [
-     "Verdejo",
-     "Tempranillo",
-     "Mencía",
-     "Doña Blanca",
-     "Cabernet Sauvignon",
-     "Garnacha Tinta"
+     "Garnacha Tinta",
+     "Cabernet Sauvignon"
     ],
     "othersCite": [
-     "valles-de-benavente-doc:p4",
-     "valles-de-benavente-doc:p8"
+     "valles-de-benavente-pliego:p8"
     ]
    },
    "styles": {
@@ -280,19 +300,19 @@
     ]
    },
    "climate": {
-    "text": "Extreme, arid Mediterranean-continental climate with low rainfall.",
+    "text": "Extreme, arid continental climate with low rainfall (350 to 550 mm a year).",
     "cite": [
-     "valles-de-benavente-doc:p4"
+     "valles-de-benavente-pliego:p9"
     ]
    },
    "soil": {
-    "text": "Poor, infertile but deep, well drained and aerated.",
+    "text": "Mostly brown limy soils of sandy loam, 50 to 60 cm deep. They are low in fertility but well drained and aerated.",
     "cite": [
-     "valles-de-benavente-doc:p4"
+     "valles-de-benavente-pliego:p9"
     ]
    },
    "tastes": {
-    "text": "Whites: pale yellow; very fruity with aniseed notes; medium-high body. Rosés: picota and cherry; red fruit, lively, slight sparkle. Reds: bluish tones; red ripe fruit; high structure. Aged: wood, fruit remains.",
+    "text": "Whites: pale yellow; very fruity with aniseed notes; medium-high body. Rosés: picota (a dark cherry) and cherry; red fruit, lively, slight sparkle. Reds: bluish tones; red ripe fruit; high structure. Aged: wood, fruit remains.",
     "cite": [
      "valles-de-benavente-doc:p1",
      "valles-de-benavente-doc:p2"
@@ -317,34 +337,46 @@
   {
    "id": "cigales",
    "why": {
-    "text": "Vines line the Pisuerga, and 30 % are over 60 years old. They ripen intensely, with balanced acidity and sugar that suit aged wines.",
+    "text": "Vines line the Pisuerga, and 30 % are over 60 years old. Grapes ripen with balanced acidity and sugar, giving wines with a local stamp.",
     "cite": [
-     "cigales-doc:p5"
+     "cigales-doc:p5",
+     "cigales-pliego:p17",
+     "cigales-pliego:p19"
     ]
    },
    "grapes": {
     "main": [
      {
       "local": "Tempranillo"
+     },
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Verdejo"
+     },
+     {
+      "local": "Albillo Mayor"
+     },
+     {
+      "local": "Sauvignon Blanc"
      }
     ],
     "cite": [
-     "cigales-wiki"
+     "cigales-pliego:p13",
+     "cigales-pliego:p19"
     ],
     "others": [
-     "Verdejo",
-     "Garnacha Tinta",
-     "Garnacha Roja",
-     "Albillo Mayor",
-     "Cabernet Sauvignon",
-     "Macabeo",
+     "Viura",
+     "Garnacha Blanca",
+     "Garnacha Gris",
+     "Garnacha Tintorera",
+     "Syrah",
      "Merlot",
-     "Sauvignon Blanco",
-     "Syrah"
+     "Cabernet Sauvignon"
     ],
     "othersCite": [
-     "cigales-doc:p5",
-     "cigales-doc:p9"
+     "cigales-pliego:p13"
     ]
    },
    "styles": {
@@ -367,11 +399,14 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Young sediments rest on clays and marls. The soil is sandy with plenty of gravel, and poor in organic matter. Lime ranges from 1% to 35%. The pH is about 8.1.",
+    "cite": [
+     "cigales-pliego:p14",
+     "cigales-pliego:p17"
+    ]
    },
    "tastes": {
-    "text": "Whites: clear yellow; fruity, fresh, light. Rosés: strawberry to cherry; fresh or ripe fruit. Reds: picota to vermilion; wild berries, wood when aged; medium body. Sweet wines: same profile, with more aroma and volume.",
+    "text": "Whites: clear yellow; fruity, fresh, light. Rosés: strawberry to cherry; fresh or ripe fruit. Reds: dark cherry to vermilion; wild berries, wood when aged; medium body. Sweet wines: same profile, with more aroma and volume.",
     "cite": [
      "cigales-doc:p1",
      "cigales-doc:p2"
@@ -411,46 +446,56 @@
      {
       "local": "Tinto Fino",
       "grape": "Tempranillo"
+     },
+     {
+      "local": "Albillo Mayor"
      }
     ],
     "cite": [
-     "ribera-del-duero-doc:p3"
+     "ribera-del-duero-pliego:p17"
     ],
     "others": [
      "Cabernet Sauvignon",
-     "Merlot",
-     "Malbec"
+     "Garnacha Tinta",
+     "Malbec",
+     "Merlot"
     ],
     "othersCite": [
-     "ribera-del-duero-doc:p3"
-    ],
-    "othersPartial": true
+     "ribera-del-duero-pliego:p17"
+    ]
    },
    "styles": {
     "kinds": [
      "red",
-     "rose"
+     "rose",
+     "white"
     ],
-    "text": "Rosados with lively colour and fruit; young reds fruity and intense, aged reds complex and elegant.",
+    "text": "Very aromatic Albillo Mayor whites; rosados with lively colour and fruit; young reds fruity and intense, aged reds complex and elegant.",
     "cite": [
      "ribera-del-duero-doc:p1",
-     "ribera-del-duero-doc:p2"
+     "ribera-del-duero-doc:p2",
+     "ribera-del-duero-pliego:p13",
+     "ribera-del-duero-pliego:p22"
     ]
    },
    "climate": {
-    "text": "Strongly continental: big yearly and daily temperature swings, especially at ripening, low rainfall and high average altitude.",
+    "text": "Strongly continental: big yearly and daily temperature swings, especially at ripening, moderate to low rainfall and high average altitude.",
     "cite": [
-     "ribera-del-duero-doc:p3"
+     "ribera-del-duero-doc:p3",
+     "ribera-del-duero-pliego:p19"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Ochre and reddish sandy clays lie beside the Duero’s middle and low terraces. The pH is basic. Organic matter is scarce.",
+    "cite": [
+     "ribera-del-duero-pliego:p21"
+    ]
    },
    "tastes": {
-    "text": "Reds: vivid colour, deep; fruity and intense when young, well structured. Aged reds: blue tones that last; very complex, fruit and wood; powerful yet elegant. Rosés: vivid colours, fruity nose; refreshing, light.",
+    "text": "Whites: very aromatic, fruity or herbal; fresh acidity. Rosés: vivid colours, fruity nose; refreshing, light. Reds: vivid colour, deep; fruity and intense when young. Aged reds: lasting blue tones; complex fruit and wood; powerful yet elegant.",
     "cite": [
-     "ribera-del-duero-doc:p1"
+     "ribera-del-duero-doc:p1",
+     "ribera-del-duero-pliego:p22"
     ]
    },
    "famous": {
@@ -498,11 +543,18 @@
      }
     ],
     "cite": [
-     "valtiendas-wiki"
+     "valtiendas-pliego:p7"
     ],
-    "others": [],
-    "othersCite": [],
-    "othersPartial": true
+    "others": [
+     "Garnacha Tinta",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Syrah",
+     "Albillo Mayor"
+    ],
+    "othersCite": [
+     "valtiendas-pliego:p7"
+    ]
    },
    "styles": {
     "kinds": [
@@ -516,9 +568,9 @@
     ]
    },
    "climate": {
-    "text": "Mediterranean with continental influence, average altitude above 800 m: long cold winters, warm dry summers, little rain, large daily swings.",
+    "text": "Mediterranean with continental influence, average altitude above 800 m: long harsh winters, mild summers, little rain, large daily swings.",
     "cite": [
-     "valtiendas-doc:p4"
+     "valtiendas-pliego:p8"
     ]
    },
    "soil": {
@@ -529,21 +581,22 @@
     ]
    },
    "tastes": {
-    "text": "Rosés: cherry pink; fruity with floral touches; medium structure. Young reds: intense red; frank, intense aromas; tasty, good structure. Aged reds: wood well integrated; mineral tones in all reds.",
+    "text": "Rosés: cherry pink; fruity with floral touches; medium structure. Young reds: intense red; frank, intense aromas; tasty, good structure. Aged reds: intense red with ageing tones; tasty, balanced. Mineral tones stand out most in the reds.",
     "cite": [
-     "valtiendas-doc:p2",
-     "valtiendas-doc:p3"
+     "valtiendas-pliego:p3",
+     "valtiendas-pliego:p4",
+     "valtiendas-pliego:p10"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Crianza, Reserva, Gran Reserva",
-      "text": "Intense red with ageing tones; well-integrated wood."
+      "text": "Intense red with ageing tones; frank, intense aromas; tasty, good structure."
      }
     ],
     "cite": [
-     "valtiendas-doc:p3"
+     "valtiendas-pliego:p4"
     ]
    },
    "producers": {
@@ -554,9 +607,11 @@
   {
    "id": "toro",
    "why": {
-    "text": "Old bush vines face harsh winters and hot sun on iron-rich sandy-loam soils. The wines are very deeply coloured and high in alcohol.",
+    "text": "Old vines face harsh winters and long hours of sun on iron-rich sandy-loam soils. The wines are very deeply coloured and high in alcohol.",
     "cite": [
-     "toro-doc:p3"
+     "toro-doc:p3",
+     "toro-pliego:p18",
+     "toro-pliego:p19"
     ]
    },
    "grapes": {
@@ -568,30 +623,37 @@
      {
       "local": "Malvasía Castellana",
       "grape": "Doña Blanca"
+     },
+     {
+      "local": "Verdejo"
      }
     ],
     "cite": [
-     "toro-wiki"
+     "toro-pliego:p16"
     ],
     "others": [
-     "Verdejo",
-     "Garnacha Tinta"
+     "Garnacha Tinta",
+     "Moscatel de Grano Menudo",
+     "Albillo Real"
     ],
     "othersCite": [
-     "toro-doc:p3",
-     "toro-doc:p7"
+     "toro-pliego:p16"
     ]
    },
    "styles": {
     "kinds": [
      "white",
      "rose",
-     "red"
+     "red",
+     "sparkling",
+     "sweet"
     ],
-    "text": "Whites (some barrel-fermented) and rosados; structured, tannic reds with ripe fruit and lower acidity than elsewhere.",
+    "text": "Whites (some barrel-fermented) and rosados; structured, tannic reds with ripe fruit and lower acidity than elsewhere. Quality sparkling wines and semi-dry to sweet wines are also made.",
     "cite": [
      "toro-doc:p1",
-     "toro-doc:p2"
+     "toro-doc:p2",
+     "toro-pliego:p18",
+     "toro-pliego:p19"
     ]
    },
    "climate": {
@@ -601,16 +663,18 @@
     ]
    },
    "soil": {
-    "text": "Sandy loam, neutral pH, little organic matter and rich in iron.",
+    "text": "Sandy loam with little organic matter. The pH is slightly acid to neutral (6-7), about 8 in the south-west. Poor in trace elements except iron.",
     "cite": [
-     "toro-doc:p3"
+     "toro-pliego:p17"
     ]
    },
    "tastes": {
-    "text": "Whites: straw yellow; fruity, tasty, balanced. Rosés: strawberry to raspberry red; wild berries. Reds: cherry-picota; red and wild fruit; structured, tannic, ripe fruit, lower acidity; barrel tones when aged.",
+    "text": "Whites: pale to golden yellow; fruity, floral or herbal. Rosés: pale pink to salmon; fresh red or black fruit. Reds: dark cherry to ruby; red or black fruit; structured, tannic, lower acidity; barrel tones when aged.",
     "cite": [
-     "toro-doc:p1",
-     "toro-doc:p2"
+     "toro-doc:p2",
+     "toro-pliego:p7",
+     "toro-pliego:p8",
+     "toro-pliego:p18"
     ]
    },
    "famous": {
@@ -632,15 +696,20 @@
   {
    "id": "tierra-del-vino-de-zamora",
    "why": {
-    "text": "Old vines on alluvial soils face harsh winters and spring frost. The grapes get very ripe, giving deeply coloured, structured reds.",
+    "text": "Old vines on alluvial soils get little rain and much sun. The grapes ripen evenly and gain sugar, giving deeply coloured, structured reds.",
     "cite": [
-     "tierra-del-vino-de-zamora-doc:p5"
+     "tierra-del-vino-de-zamora-doc:p5",
+     "tierra-del-vino-de-zamora-pliego:p14"
     ]
    },
    "grapes": {
     "main": [
      {
-      "local": "Doña Blanca"
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Malvasía Castellana",
+      "grape": "Doña Blanca"
      },
      {
       "local": "Moscatel de Grano Menudo"
@@ -649,22 +718,21 @@
       "local": "Verdejo"
      },
      {
-      "local": "Tempranillo"
+      "local": "Godello"
      }
     ],
     "cite": [
-     "tierra-del-vino-de-zamora-wiki"
+     "tierra-del-vino-de-zamora-pliego:p12"
     ],
     "others": [
-     "Godello",
-     "Albillo Mayor",
-     "Cabernet Sauvignon",
+     "Albillo Real",
+     "Palomino",
      "Garnacha Tinta",
-     "Palomino"
+     "Cabernet Sauvignon"
     ],
     "othersCite": [
-     "tierra-del-vino-de-zamora-doc:p4",
-     "tierra-del-vino-de-zamora-doc:p8"
+     "tierra-del-vino-de-zamora-pliego:p10",
+     "tierra-del-vino-de-zamora-pliego:p12"
     ]
    },
    "styles": {
@@ -781,7 +849,9 @@
     ],
     "text": "Whites, rosados, reds, quality sparkling and fortified (vino de licor) wines.",
     "cite": [
-     "rueda-doc:p3"
+     "rueda-doc:p3",
+     "rueda-doc:p8",
+     "rueda-doc:p9"
     ]
    },
    "climate": {
@@ -798,7 +868,7 @@
     ]
    },
    "tastes": {
-    "text": "Whites: pale yellow to amber, gold or green tones; fruit, floral, herbal; fresh, medium to full body. Rosés: strawberry to onion-skin; red fruit. Reds: ruby to picota; black and red fruit; oak-aged add yeast and bakery notes.",
+    "text": "Whites: pale yellow to amber, gold or green tones; fruit, floral, herbal; fresh, medium to full body. Rosés: strawberry to onion-skin; red fruit. Reds: ruby to dark-cherry; black and red fruit; oak-aged ones add yeast or bakery notes and oak.",
     "cite": [
      "rueda-doc:p5",
      "rueda-doc:p6"
@@ -918,11 +988,13 @@
      },
      {
       "name": "Fermentado en Barrica",
-      "text": "White fermented in barrel; smoky, toasty notes with fruit; well-integrated oak."
+      "text": "Fermented and lees-aged in oak barrels; smoky, toasty notes mixed with fruit."
      }
     ],
     "cite": [
-     "arribes-doc:p5"
+     "arribes-doc:p5",
+     "arribes-pliego:p5",
+     "arribes-pliego:p8"
     ]
    },
    "producers": {
@@ -944,14 +1016,14 @@
     "others": [
      "Rufete",
      "Garnacha Tinta",
-     "Macabeo",
+     "Tempranillo",
+     "Viura",
      "Moscatel de Grano Menudo",
      "Palomino",
-     "Tempranillo"
+     "Rufete Serrano Blanco"
     ],
     "othersCite": [
-     "sierra-de-salamanca-doc:p4",
-     "sierra-de-salamanca-doc:p7"
+     "sierra-de-salamanca-pliego:p9"
     ]
    },
    "styles": {
@@ -960,9 +1032,10 @@
      "rose",
      "red"
     ],
-    "text": "Fruity whites with medium-high body; medium-structure rosados; long-lived reds suited to keeping.",
+    "text": "Whites and rosados of medium structure; young reds and reds aged in barrel. All are long-lived.",
     "cite": [
-     "sierra-de-salamanca-doc:p1"
+     "sierra-de-salamanca-pliego:p5",
+     "sierra-de-salamanca-pliego:p11"
     ]
    },
    "climate": {
@@ -972,16 +1045,17 @@
     ]
    },
    "soil": {
-    "text": "Acid pH; slate soils.",
+    "text": "Acid soils, mostly sandy loam. Slate lies to the west and granite to the east.",
     "cite": [
-     "sierra-de-salamanca-doc:p4"
+     "sierra-de-salamanca-pliego:p9",
+     "sierra-de-salamanca-pliego:p11"
     ]
    },
    "tastes": {
-    "text": "Whites: straw yellow, greenish; green apple; medium-high body, tasty, lively. Rosés: strawberry to raspberry; blackberry, redcurrant. Reds: picota, violet tints; wild fruit, undergrowth herbs, mineral; long-lived.",
+    "text": "Whites: yellow; fruity, floral or herbal; medium structure. Rosés: onion-skin to cherry pink; fruity, floral or herbal. Reds: red; fruity, floral or herbal; medium-high acidity, medium-low structure. All show mineral and scrub-herb notes.",
     "cite": [
-     "sierra-de-salamanca-doc:p1",
-     "sierra-de-salamanca-doc:p2"
+     "sierra-de-salamanca-pliego:p5",
+     "sierra-de-salamanca-pliego:p11"
     ]
    },
    "famous": {
@@ -1027,9 +1101,8 @@
      "Tempranillo"
     ],
     "othersCite": [
-     "cebreros-doc:p7"
-    ],
-    "othersPartial": true
+     "cebreros-pliego:p7"
+    ]
    },
    "styles": {
     "kinds": [
@@ -1063,7 +1136,7 @@
     ]
    },
    "tastes": {
-    "text": "Whites: straw to golden yellow; fruity, tasty, balanced. Rosés: pale pink to raspberry; red and black fruit. Reds: picota red, violet rims; red and black fruit, dry. Barrel-aged: wood, toast, spice.",
+    "text": "Whites: straw to golden yellow; fruity, tasty, balanced. Rosés: pale pink to raspberry; red and black fruit. Reds: dark cherry red, violet rims; red and black fruit, dry. Barrel-aged: wood, toast, spice.",
     "cite": [
      "cebreros-doc:p3",
      "cebreros-doc:p4"
@@ -1101,22 +1174,27 @@
      "Albillo Mayor",
      "Cabernet Franc",
      "Cabernet Sauvignon",
-     "Garnacha Tinta",
+     "Garnacha",
      "Gewürztraminer",
      "Godello",
      "Graciano",
+     "Hondarrabi Beltza",
      "Malbec",
+     "Mencía",
      "Merlot",
      "Petit Verdot",
      "Pinot Noir",
+     "Prieto Picudo",
      "Riesling",
      "Sauvignon Blanc",
      "Syrah",
      "Tempranillo",
+     "Touriga Nacional",
      "Verdejo"
     ],
     "othersCite": [
-     "abadia-retuerta-doc"
+     "abadia-retuerta-pliego:p6",
+     "abadia-retuerta-pliego:p7"
     ]
    },
    "styles": {
@@ -1124,9 +1202,10 @@
      "red",
      "white"
     ],
-    "text": "Reds: single-grape (at least 12 months in oak) or blended (at least 6). Whites: blends, steel tank or oak.",
+    "text": "Reds: single-grape (at least 12 months in oak) or blended (at least 6). Whites: single-grape or blended, steel tank or at least 3 months in oak.",
     "cite": [
-     "abadia-retuerta-doc"
+     "abadia-retuerta-pliego:p4",
+     "abadia-retuerta-pliego:p5"
     ]
    },
    "climate": {
@@ -1201,11 +1280,15 @@
    },
    "styles": {
     "kinds": [
-     "red"
+     "red",
+     "rose"
     ],
-    "text": "Reds only: young reds, and reds aged 6 to 24 months in wood.",
+    "text": "Young and oak-aged reds and rosados. Ageing is in oak barrels of 225 to 600 l or wooden vats up to 5,500 l.",
     "cite": [
-     "dehesa-penalba-doc"
+     "dehesa-penalba-pliego:p2",
+     "dehesa-penalba-pliego:p5",
+     "dehesa-penalba-pliego:p6",
+     "dehesa-penalba-pliego:p7"
     ]
    },
    "climate": {
@@ -1227,9 +1310,11 @@
     ]
    },
    "tastes": {
-    "text": "Deep, steady colour with blue-red tones; ripe red and black fruit; sweet, long-lived tannin; medium-to-full body; long finish.",
+    "text": "Reds: deep, steady colour with blue-red tones; ripe red and black fruit; sweet, long-lived tannin; medium-to-full body; long finish. Rosés: onion skin to redcurrant; red or black fruit; fresh, balanced.",
     "cite": [
-     "dehesa-penalba-doc"
+     "dehesa-penalba-doc",
+     "dehesa-penalba-pliego:p3",
+     "dehesa-penalba-pliego:p4"
     ]
    },
    "famous": {
@@ -1240,15 +1325,16 @@
      },
      {
       "name": "Vino Tinto Monovarietal",
-      "text": "Single-grape red aged 12 to 24 months in 225 l oak barrels."
+      "text": "Single-grape red aged in 225 to 600 l oak barrels or wooden vats."
      },
      {
       "name": "Vino Tinto Multivarietal",
-      "text": "Blended red aged 6 to 24 months in oak barrels or wooden vats."
+      "text": "Blended red aged in 225 to 600 l oak barrels or wooden vats."
      }
     ],
     "cite": [
-     "dehesa-penalba-doc"
+     "dehesa-penalba-doc",
+     "dehesa-penalba-pliego:p6"
     ]
    }
   },
@@ -1307,9 +1393,9 @@
     ]
    },
    "tastes": {
-    "text": "Rosés: onion-skin to raspberry pink; fresh fruit and floral notes; fresh. Reds: purple to tile red; red and black fruit, with spice when oak-aged; medium to full body and length.",
+    "text": "Rosés: onion-skin to raspberry pink; fresh fruit with floral or caramel notes; fresh. Reds: purple to tile red; red and black fruit, with spice when oak-aged; medium to full body and length.",
     "cite": [
-     "uruena-doc2"
+     "uruena-pliego:p3"
     ]
    },
    "famous": {

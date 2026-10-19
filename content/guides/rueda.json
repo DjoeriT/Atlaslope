@@ -1,0 +1,132 @@
+{
+ "id": "rueda",
+ "title": "Why Rueda tastes the way it does",
+ "minutes": 5,
+ "lede": {
+  "text": "On Rueda's high, flat plateau the nights can be more than 20°C colder than the days while the grapes ripen. The grape gains sugar in the sun and keeps its acidity through the cool night. Verdejo, the native grape, gives the wine its freshness and its aromatic intensity.",
+  "cite": [
+   "rueda-doc:p13",
+   "rueda-doc:p14",
+   "rueda-doc:p17",
+   "rueda-doc:p18"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A plateau above the Duero",
+   "paras": [
+    "Rueda sits in the middle of the Duero basin, in the southwest of Valladolid province. It spills over into the western edge of Segovia and a small part of the north of Ávila.",
+    "The zone is an upland plain 700 to 870 m above sea level, tilting gently from south to north. The relief is simple: eroded plains with a few isolated flat-topped hills and gently sloping ramps. The Duero marks the northern edge of the zone, apart from Tordesillas and Torrecilla de la Abadesa on its far bank. Four tributaries cross the land from south to north. They generally run at ground level, and deep gorges are rare."
+   ],
+   "cite": [
+    "rueda-doc:p9",
+    "rueda-doc:p14",
+    "rueda-doc:p15"
+   ],
+   "fly": [
+    {
+     "label": "The Rueda plateau",
+     "place": "rueda",
+     "caption": "An upland plain at 700 to 870 m, tilting gently from south to north.",
+     "cite": [
+      "rueda-doc:p15"
+     ]
+    },
+    {
+     "label": "The Duero at Tordesillas",
+     "point": [
+      -4.995,
+      41.502
+     ],
+     "zoom": 10,
+     "caption": "The Duero forms the northern limit of the zone. Only Tordesillas and Torrecilla de la Abadesa lie north of it.",
+     "cite": [
+      "rueda-doc:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Long winters, hot dry summers",
+   "paras": [
+    "By latitude Rueda is Mediterranean. At this height the climate is continental instead, with Atlantic winds from the west and southwest bringing the autumn rain. The mean yearly temperature is about 11.5°C, and the yearly range is about 17°C.",
+    "Winters are cold and very long. Spring is short, with late frosts. The frost-free season runs from the end of April to the middle of October, about 180 days. Extreme highs reach about 37°C and lows fall to between -6°C and -10°C. About 400 to 430 mm of rain falls in a year, on 70 to 85 days on average. Summers are hot and dry with strong sun, broken only by untimely storms.",
+    "The gap between day and night is wide. In the ripening season the nights are sometimes more than 20°C colder than the days. The grape gains sugar in the sun and keeps its acidity through the cool night.",
+    "This climate forces the vines to seek water deep in the subsoil. Growers once dug a hollow around each vine in late winter to catch spring water. In early summer they piled the earth back, often burying the vine up to halfway, to shield it from summer evaporation. Better farming and drip irrigation now make up for this work, which can no longer be done."
+   ],
+   "cite": [
+    "rueda-doc:p13",
+    "rueda-doc:p14",
+    "rueda-doc:p17"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Pebbles that hold the heat",
+   "paras": [
+    "The northwest of the zone, from roughly Medina del Campo onwards, is the land with the longest wine tradition. Here old deposits of rounded quartzite pebbles lie in reddish sandy clays and sands. They are 1 to 30 m thick and sit at several terrace levels. Brown soils have formed on these stony deposits, with a pH between 7 and 8.",
+    "These pebbly, \"cascajosos\" soils are a key factor in the quality of the grape. They hold back water loss in summer and reflect the sun's rays onto the plant. That helps the grapes ripen and gives the musts a proper balance.",
+    "In much of the southeast and southwest the soils are brown and non-calcareous, formed on layers of clay, sand, marl and limestone. In the east and southwest there are also large patches of continental sand, worn from the old sandstones of the Sistema Central mountains. These deep river deposits make very sandy soils on rolling ground."
+   ],
+   "cite": [
+    "rueda-doc:p15",
+    "rueda-doc:p16",
+    "rueda-doc:p17"
+   ],
+   "fly": [
+    {
+     "label": "Medina del Campo",
+     "point": [
+      -4.914,
+      41.314
+     ],
+     "zoom": 10,
+     "caption": "From about here to the northwest lie the stony soils, in the zone's oldest wine country and its most intensely farmed vineyards.",
+     "cite": [
+      "rueda-doc:p15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "verdejo",
+   "beat": "rules",
+   "title": "Verdejo and the cellars under the town",
+   "paras": [
+    "Verdejo is the main grape, and it is native to Rueda. It gives the white wines their freshness, aroma and presence in the mouth. The white wines are the most representative of the zone: young, lively, fresh and fruity. A white Rueda must be at least 75% of the main white grapes. These are Verdejo and Sauvignon Blanc. Viura, Chardonnay and Viognier also count. Tempranillo and Cenicienta are the main reds.",
+    "Growers prune long and thin out the bunches to get top-quality fruit, a habit passed down through generations.",
+    "In the 15th century the wines of the zone became popular as \"vinos de Tierra de Medina\", the wines of the Medina country. In 1498 Isabel la Católica issued ordinances to protect the vineyards. In the 16th century the fairs of Medina del Campo widened the trade, and northern Spain became the main buyer. The old generous wines were made in large casks and vats, in cellars dug under the houses or on the edge of the villages.",
+    "Dorado is a liqueur wine from Palomino Fino or Verdejo, aged in contact with air for at least four years, the last two in oak. Pálido is a dry liqueur wine from the same grapes. It is aged under a veil of yeast, with at least its last three years in oak barrels. The air-aged wines are the last trace of the traditional way of making wine here, and they are rare and of high quality."
+   ],
+   "cite": [
+    "rueda-doc:p8",
+    "rueda-doc:p13",
+    "rueda-doc:p16",
+    "rueda-doc:p17",
+    "rueda-doc:p18",
+    "rueda-doc:p19"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino Generoso",
+    "text": "A white wine with at least two years of average ageing in oak barrels, under a spontaneous veil of yeast called \"velo de flor\"."
+   },
+   {
+    "term": "Gran Vino de Rueda",
+    "text": "A wine from vineyards registered for more than thirty years, with a yield of no more than six thousand five hundred kg per hectare and no more than sixty-five per cent of juice extracted. It is kept in separate tanks and not released before 15 October of the year after the harvest."
+   }
+  ],
+  "cite": [
+   "rueda-doc:p23",
+   "rueda-doc:p24"
+  ]
+ }
+}

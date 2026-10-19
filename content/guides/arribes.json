@@ -1,0 +1,113 @@
+{
+ "id": "arribes",
+ "title": "Why Arribes tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Vines here grow in a granite canyon about 5°C warmer than the plateau above it. The warmth ripens the grapes fully and gives the wines a certain lean towards overripe, stewed fruit. Rain that comes in time keeps their natural acidity fresh.",
+  "cite": [
+   "arribes-pliego:p11",
+   "arribes-pliego:p14",
+   "arribes-pliego:p15",
+   "arribes-pliego:p16"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "canyon",
+   "beat": "place",
+   "title": "A canyon cut into the plateau",
+   "paras": [
+    "The land drops from about 700 m on the plateau to only 130 m at the riverbanks within a few kilometres. The Duero and the Tormes cut this canyon into a granite base, along with smaller rivers such as the Uces and the Huebra. These slopes are the arribes. It is not a mountain zone, but the drops are large and the hillsides are many.",
+    "The plateau is called the penillanura. The canyon walls and the plateau give the vines two different climates."
+   ],
+   "cite": [
+    "arribes-pliego:p11",
+    "arribes-pliego:p12",
+    "arribes-pliego:p16"
+   ],
+   "fly": [
+    {
+     "label": "The Arribes canyon",
+     "place": "arribes",
+     "caption": "The Duero and its tributaries cut a canyon into the granite, from about 700 m down to 130 m.",
+     "cite": [
+      "arribes-pliego:p11",
+      "arribes-pliego:p12",
+      "arribes-pliego:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "warm-valley",
+   "beat": "weather",
+   "title": "The warmest corner of Castilla y León",
+   "paras": [
+    "This is the westernmost end of the Duero basin, so rain is relatively high: 575 to 800 mm a year. The climate is sub-humid Mediterranean, warmer and wetter than the rest of the region. Average temperatures here are the highest in all of Castilla y León. The low altitude and the Atlantic influence explain it, helped by the microclimate of the valleys.",
+    "On the plateau the winters are long and cold and the summers short and hot. In the river valleys it is about 5°C warmer. The winters there are shorter and the summers longer. Frost is not known in the canyons. January averages about 9°C and August about 26°C, with about 2,680 hours of sun a year. The valleys also bring more sun and shelter from cold winds.",
+    "The spring comes early and the rain arrives in time, so the natural acidity does not usually fall below 5.5 g/l. The warmth ripens the grapes fully and concentrates the polyphenols. The wines show a certain lean towards overripe, stewed fruit."
+   ],
+   "cite": [
+    "arribes-pliego:p11",
+    "arribes-pliego:p14",
+    "arribes-pliego:p15"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Thin, stony granite",
+   "paras": [
+    "The base rock is granite, with some slate. The soils are silty sand and very stony. The soils are generally shallow, about 30 cm on average, a little deeper over slate.",
+    "The soil is a pale yellow-brown. It is acid, with a pH of 5 to 6, and poor in lime. It holds little organic matter, 1.5 to 3%. Juan García, the main red grape, thrives even on the poorest ground and gives steady yields. It gives the wines structure and softness."
+   ],
+   "cite": [
+    "arribes-pliego:p12",
+    "arribes-pliego:p17"
+   ]
+  },
+  {
+   "id": "old-vines",
+   "beat": "rules",
+   "title": "Old bush vines and the barrel",
+   "paras": [
+    "At least half of the vineyard was planted before 1956. Almost all of it is bush-trained. Traditional planting density is 2,000 to 3,000 vines per hectare. Trellised vines are rare.",
+    "Phylloxera came from Portugal and entered the region through the Arribes in 1888. By about 1913-14 the vineyards were recovering, and red grapes came to dominate.",
+    "A wine labelled Fermentado en Barrica (barrel-fermented) is both fermented and aged on its lees in oak barrels of 600 l at most, for at least three months. It shows smoky, toasty notes mixed with fruity or floral aromas, and well-blended oak.",
+    "The whites are fruity or floral, sometimes with a mineral note. The reds are rich in polyphenols with ripe fruit aromas."
+   ],
+   "cite": [
+    "arribes-pliego:p5",
+    "arribes-pliego:p8",
+    "arribes-pliego:p14",
+    "arribes-pliego:p16",
+    "arribes-pliego:p19"
+   ],
+   "fly": [
+    {
+     "label": "Fermoselle",
+     "point": [
+      -6.3967,
+      41.3145
+     ],
+     "zoom": 11,
+     "caption": "Fermoselle is one of the towns where the vineyards recovered fully after phylloxera, by about 1913-14.",
+     "cite": [
+      "arribes-pliego:p16"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Roble",
+    "text": "A rosé or red that has spent at least three months in oak barrels."
+   }
+  ],
+  "cite": [
+   "arribes-pliego:p19"
+  ]
+ }
+}

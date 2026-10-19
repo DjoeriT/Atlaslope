@@ -1,0 +1,119 @@
+{
+ "id": "tierra-del-vino-de-zamora",
+ "title": "Why Tierra del Vino de Zamora tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Phylloxera barely touched the fine sandy soils here, so many vines are more than 100 years old. Those old vines, with little rain and a lot of sun, give reds of deep colour and high tannin that live very long.",
+  "cite": [
+   "tierra-del-vino-de-zamora-pliego:p12",
+   "tierra-del-vino-de-zamora-pliego:p14",
+   "tierra-del-vino-de-zamora-pliego:p18"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A high plateau above the Duero",
+   "paras": [
+    "The vineyards lie on the Meseta Norte, the high northern plateau of Spain, in the basin of the river Duero. The average altitude is about 750 m, and most of the land sits between 700 and 900 m.",
+    "The zone covers the south-east of Zamora province and the north-east of Salamanca province. The name is old: in the Middle Ages the Tierra del Vino (\"Wine Land\"), south of the city of Zamora, supplied it with wine. It is the only place name in Spain that refers to a Tierra del Vino.",
+    "In 1489 local ordinances banned wine from villages outside Zamora's jurisdiction. By the middle of the 16th century the wine of the Tierra del Vino and of Zamora was sold as far as Galicia."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p8",
+    "tierra-del-vino-de-zamora-pliego:p10",
+    "tierra-del-vino-de-zamora-pliego:p15",
+    "tierra-del-vino-de-zamora-pliego:p16",
+    "tierra-del-vino-de-zamora-pliego:p18"
+   ],
+   "fly": [
+    {
+     "label": "Zamora, city of the Tierra del Vino",
+     "point": [
+      -5.745,
+      41.503
+     ],
+     "zoom": 11,
+     "caption": "In the Middle Ages the Tierra del Vino supplied the city of Zamora with wine, and the city had a large vineyard of its own.",
+     "cite": [
+      "tierra-del-vino-de-zamora-pliego:p15"
+     ]
+    },
+    {
+     "label": "Fuentesaúco and the Guareña",
+     "point": [
+      -5.496,
+      41.231
+     ],
+     "zoom": 10,
+     "caption": "In the 17th and 18th centuries the Guareña area around Fuentesaúco could produce a lot of wine, sold to Zamora and Salamanca.",
+     "cite": [
+      "tierra-del-vino-de-zamora-pliego:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry, cold and very sunny",
+   "paras": [
+    "The climate is Mediterranean with a strong continental streak. Only 350-400 mm of rain falls in a year. Summers are dry and winters are harsh and very long. Temperatures swing sharply, and frost often comes in spring.",
+    "The average winter temperature does not go above 3°C and the summer average is above 23°C. The frost-free period lasts 190 days, and the vines are active for about 210 days. The sun shines for more than 2,800 hours a year.",
+    "Most of the rain falls in winter and refills the groundwater. In the dry months the vine explores that ground with its deep roots. Spring also brings a good share of rain, above all in May, just as temperatures climb sharply, which favours the growth of the vine."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand over clay, left alone by phylloxera",
+   "paras": [
+    "Many rivers cross the zone, among them the Duero, so the soils are strongly alluvial. The Valdearaduey and the Guareña are two of the others. The soils are deep and poor in organic matter (under 1%). Deeper down they are very clayey. At the surface they vary, above all with height. Sand is common on the plains and gravel starts to appear on the slopes. Pebbles dominate the hilltops.",
+    "The typical soil is fine and sandy, with clay in every layer. With so little humus the surface stays loose. This texture suits vines and gives the wines their own character. The pH is mostly between 7.0 and 8.0.",
+    "Phylloxera, a vine plague, barely touched these fine sandy soils. Many plots are over 100 years old, and the average vine is 65 years old. In the 1970s land consolidation left out the vineyards of several municipalities, which helped very old vineyards survive to this day."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p11",
+    "tierra-del-vino-de-zamora-pliego:p12",
+    "tierra-del-vino-de-zamora-pliego:p17"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Ripe grapes, big reds and a rare white",
+   "paras": [
+    "Little rain, strong sun and old vines give grapes high in sugar with moderately low acidity. The grapes have great potential for primary aromas, with notes of ripe fruit. Red grapes also carry plenty of anthocyanins and tannins. The wines are high in alcohol and very aromatic, with a lot of ripe fruit and a long, broad finish. The reds also have deep colour. Their high tannin and firm structure suit them to ageing and make them very long-lived.",
+    "Tempranillo stands out among the red grapes for the quality it brings. Garnacha Tinta and Cabernet Sauvignon often complement it, but more and more of them are bottled alone. Tinto (red) must contain at least 75% red grapes and a minimum of 12.5% alcohol.",
+    "Clarete is made like a red wine, but with a share of white grape must. It must contain at least 30% red grapes. Its colour runs from raspberry pink to onion skin, or from violet red to chestnut red. That depends on how much white must is used and how long the must ferments with the skins. Rosado (rosé) needs at least 60% red grapes.",
+    "Among the whites, Malvasía Castellana (also called Doña Blanca) has one of its last strongholds on the Iberian Peninsula here. Moscatel de Grano Menudo has long led the tradition of semi-sweet and liqueur wines. Verdejo and Godello are widely planted in the south-east.",
+    "Yields are capped at 7,000 kg per hectare for red grapes and 10,000 kg for white. Pressing may give at most 72 litres of wine from every 100 kg of grapes. Since the zone won its quality status, some old multi-variety plots that made no money have been replanted as single-variety vineyards. These stand beside century-old vineyards that survived phylloxera, the true symbol of the zone."
+   ],
+   "cite": [
+    "tierra-del-vino-de-zamora-pliego:p4",
+    "tierra-del-vino-de-zamora-pliego:p7",
+    "tierra-del-vino-de-zamora-pliego:p8",
+    "tierra-del-vino-de-zamora-pliego:p9",
+    "tierra-del-vino-de-zamora-pliego:p12",
+    "tierra-del-vino-de-zamora-pliego:p13",
+    "tierra-del-vino-de-zamora-pliego:p14",
+    "tierra-del-vino-de-zamora-pliego:p18"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Pueblo",
+    "text": "The name of a municipality in the zone may appear on the label with the words \"Vino de Pueblo\" (\"village wine\") when at least 85% of the grapes come from plots in that municipality."
+   }
+  ],
+  "cite": [
+   "tierra-del-vino-de-zamora-pliego:p21"
+  ]
+ }
+}

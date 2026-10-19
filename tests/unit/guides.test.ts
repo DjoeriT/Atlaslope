@@ -13,10 +13,12 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones and the nine Green Spain places, each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places and the 16 Castilla y León places, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
-      'cangas', 'monterrei', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
-      'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras',
+      'abadia-retuerta', 'arlanza', 'arribes', 'bierzo', 'cangas', 'cebreros', 'cigales', 'dehesa-penalba', 'leon', 'monterrei',
+      'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
+      'rueda', 'sierra-de-salamanca', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria',
+      'uruena', 'valdeorras', 'valles-de-benavente', 'valtiendas',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

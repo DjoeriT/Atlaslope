@@ -1,0 +1,127 @@
+{
+ "id": "arlanza",
+ "title": "Why Arlanza tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Arlanza's vineyards sit between 750 and 1,200 m, where day and night temperatures differ sharply. The grapes ripen slowly for almost 60 days, and their skins thicken and load up with polyphenols and aroma.",
+  "cite": [
+   "arlanza-pliego:p12",
+   "arlanza-pliego:p15",
+   "arlanza-pliego:p16"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "High country between two provinces",
+   "paras": [
+    "The vineyards lie in the southwest of Burgos province and the southeast of Palencia. They stand at 750 to 1,200 m above sea level. Mountains isolate the zone and keep out the influence of the sea.",
+    "The east is steep and rugged, around Covarrubias and Santo Domingo de Silos. Going west, the land turns into rolling plains that reach the Arlanzón valley."
+   ],
+   "cite": [
+    "arlanza-pliego:p9",
+    "arlanza-pliego:p12",
+    "arlanza-pliego:p13"
+   ],
+   "fly": [
+    {
+     "label": "Covarrubias",
+     "point": [
+      -3.518,
+      42.06
+     ],
+     "zoom": 11,
+     "caption": "Covarrubias sits in the rugged east of the zone.",
+     "cite": [
+      "arlanza-pliego:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Long winters, cool nights, a dry summer",
+   "paras": [
+    "Winters are harsh and long. Summers are relatively mild and markedly arid, with scarce rain. Average rainfall is 450 to 500 mm a year, and the dry spell lasts about three months, from the second half of June to mid-September.",
+    "The continental climate brings big swings in temperature, both daily and through the seasons. Night cooling makes it harder for daytime highs to climb, above all in summer. The active growing period is 179 to 200 days, and about 20 of them carry a risk of frost.",
+    "Veraison comes in mid-August and the traditional harvest is the second week of October. The swings in temperature, above all while the grapes ripen, stretch ripening over two months, almost 60 days, so it is slow. The skins turn thick and load up with polyphenols (tannins and anthocyanins) and aroma compounds such as terpenes. Colour and aroma pass into the wine during maceration and fermentation.",
+    "Altitude also raises acidity: grapes from higher vineyards have more than grapes from lower ones. That acidity is essential if the wine is to age for a long time.",
+    "Cold winters and the risk of frost also allow sweet wines made from grapes left on the vine until they freeze."
+   ],
+   "cite": [
+    "arlanza-pliego:p12",
+    "arlanza-pliego:p13",
+    "arlanza-pliego:p15",
+    "arlanza-pliego:p16"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Sandy loam, chalky clay and the Cerrato plateaus",
+   "paras": [
+    "Soil analyses show a sandy loam texture with no salinity problems and rather low organic matter. Between the steep east and the plains of the west they have a basic pH and a lot of calcium, yet they suit vines.",
+    "Further west lies the Campiña, a broad area of rolling plains. Its soils hold more clay in the north and more carbonates in the southwest.",
+    "South of the Arlanza river, near where it meets the Pisuerga, lie the Páramos del Cerrato, high plateaus and valleys around Baltanás, Palenzuela and Villaviudas. They hold active limestone, which counts as a quality factor but calls for resistant rootstocks. In places they also hold clay and marly clay, which suit vines under moderate water stress. Across all these varied soils runs a common river influence, which to some degree gives the grapes a character of their own."
+   ],
+   "cite": [
+    "arlanza-pliego:p13",
+    "arlanza-pliego:p14"
+   ],
+   "fly": [
+    {
+     "label": "Páramos del Cerrato",
+     "point": [
+      -4.247,
+      41.937
+     ],
+     "zoom": 10,
+     "caption": "The Páramos del Cerrato around Baltanás, south of the Arlanza river: active limestone, clay and marly clay.",
+     "cite": [
+      "arlanza-pliego:p13",
+      "arlanza-pliego:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Few grapes, long ageing",
+   "paras": [
+    "Red wine takes at least 75% of its grapes from six listed varieties, with Tinta del País (the local name for Tempranillo) the main one. White wine comes only from Albillo Mayor and Viura. A count of the vineyard in 1991 to 1996 found Tempranillo on 55% of it.",
+    "Yields are capped at 7,000 kg per hectare for red grapes and 10,000 kg for white. Growers reach the red limit by thinning bunches, a costly practice that clearly improves ripening. Vines must be planted at no fewer than 2,000 per hectare.",
+    "The wines have a marked aroma, medium-high structure, fresh acidity that is not excessive and plenty of polyphenols. A pleasant bitterness at the end keeps them long in the mouth. They stand up well to long ageing in oak barrels.",
+    "Wines may also be made by carbonic maceration. Whole grapes stay unbroken in an atmosphere rich in carbon dioxide while fermentation takes place inside each berry. A Vino de Hielo (ice wine) is pressed from grapes picked frozen, at -2 to -7°C or colder, with no sugar or alcohol added."
+   ],
+   "cite": [
+    "arlanza-pliego:p7",
+    "arlanza-pliego:p8",
+    "arlanza-pliego:p9",
+    "arlanza-pliego:p11",
+    "arlanza-pliego:p12",
+    "arlanza-pliego:p14",
+    "arlanza-pliego:p15"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Pueblo",
+    "text": "The name of a municipality or local entity in the zone goes on the label when 85% of the grapes come from plots there, and yields are cut by 20%."
+   },
+   {
+    "term": "Vino de Villa",
+    "text": "All the grapes come from the named town (Lerma, Covarrubias or Santa María del Campo, with their hamlets), and yields are cut by 20%."
+   }
+  ],
+  "cite": [
+   "arlanza-pliego:p11",
+   "arlanza-pliego:p21",
+   "arlanza-pliego:p22"
+  ]
+ }
+}

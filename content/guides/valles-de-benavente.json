@@ -1,0 +1,116 @@
+{
+ "id": "valles-de-benavente",
+ "title": "Why Valles de Benavente tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Prieto Picudo grows here in an arid climate with very cold winters, on poor soil that drains well. Its wines show red fruit and a touch of aguja, a slight spritz.",
+  "cite": [
+   "valles-de-benavente-pliego:p9",
+   "valles-de-benavente-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Where the Esla meets the Órbigo",
+   "paras": [
+    "The zone lies in the north-east of Zamora province. It covers 1,520 km² across 62 municipalities, mostly in four river valleys: the Esla and the Tera, the Órbigo and the Eria.",
+    "Benavente sits at about 740 m, where the Órbigo meets the Esla. That altitude differs by around 80-100 m from the Prieto Picudo country of León, and it makes Benavente's climate 3 or 4 degrees less cold.",
+    "Wine here is old business. In 1338 King Alfonso XI confirmed a town rule that banned outside wine from Benavente. The town had a great stretch of vineyards and enough wine of its own for the whole year."
+   ],
+   "cite": [
+    "valles-de-benavente-pliego:p6",
+    "valles-de-benavente-pliego:p11",
+    "valles-de-benavente-pliego:p12",
+    "valles-de-benavente-pliego:p13"
+   ],
+   "fly": [
+    {
+     "label": "Valles de Benavente, the whole zone",
+     "place": "valles-de-benavente",
+     "caption": "62 municipalities over 1,520 km² in the north-east of Zamora.",
+     "cite": [
+      "valles-de-benavente-pliego:p6"
+     ]
+    },
+    {
+     "label": "Benavente",
+     "point": [
+      -5.674,
+      42.003
+     ],
+     "zoom": 10.5,
+     "caption": "At about 740 m, where the Órbigo meets the Esla. In 1338 the town banned outside wine.",
+     "cite": [
+      "valles-de-benavente-pliego:p11",
+      "valles-de-benavente-pliego:p12",
+      "valles-de-benavente-pliego:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Long cold winters, short dry summers",
+   "paras": [
+    "The climate is continental, extreme and arid, with 350-550 mm of rain a year. Winters are very cold, with a long frost season and fog that lingers.",
+    "Summers are hot and dry, and short. Nights cool down sharply, which softens the heat of the day. Little rain falls, but the vines still get the water they need. The wines have colour and freshness, with balanced acidity and alcohol.",
+    "Prieto Picudo buds early and is very sensitive to spring frost."
+   ],
+   "cite": [
+    "valles-de-benavente-pliego:p9",
+    "valles-de-benavente-pliego:p10",
+    "valles-de-benavente-pliego:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Poor soil that drains",
+   "paras": [
+    "The typical soils are brown limestone soils. They are sandy loam, with a pH between 7 and 8, and 50-60 cm deep. Fertility is low, but they drain and aerate so well that they suit the vine.",
+    "Rain soaks in easily. In places the land turns to clay plains where drainage is very slow.",
+    "Some Prieto Picudo vines are old, between 70 and 80 years. That age gives the grapes the quality for wines meant to be kept."
+   ],
+   "cite": [
+    "valles-de-benavente-pliego:p9",
+    "valles-de-benavente-pliego:p11",
+    "valles-de-benavente-pliego:p14"
+   ]
+  },
+  {
+   "id": "grape",
+   "beat": "rules",
+   "title": "Prieto Picudo sets the tone",
+   "paras": [
+    "Prieto Picudo is the signature grape. Its berries are small and its bunches very compact. Its thick skin gives the wines a great tannic structure. They also show red fruit and sweet, soft tannins, with very balanced acidity.",
+    "Old cellar practice here made wines with a little spritz, called aguja. It still marks the wines, and rosados may show it today.",
+    "Reds must hold at least 75% of the main red varieties: Prieto Picudo, Tempranillo or Mencía. Red grapes are limited to 7,000 kg per hectare and white grapes to 9,000 kg.",
+    "In nearby León, cellars use a technique called madreo. Benavente cellars do not, and so the wines of the two zones differ clearly.",
+    "Barrel-aged reds gain complexity on the nose, with wood notes and some fruit character on the finish. Ageing is counted from 1 November of the harvest year."
+   ],
+   "cite": [
+    "valles-de-benavente-pliego:p4",
+    "valles-de-benavente-pliego:p5",
+    "valles-de-benavente-pliego:p6",
+    "valles-de-benavente-pliego:p7",
+    "valles-de-benavente-pliego:p10",
+    "valles-de-benavente-pliego:p11",
+    "valles-de-benavente-pliego:p16"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Calidad",
+    "text": "A traditional term that may stand on the label in place of \"Denominación de Origen Protegida\"."
+   }
+  ],
+  "cite": [
+   "valles-de-benavente-pliego:p16"
+  ]
+ }
+}

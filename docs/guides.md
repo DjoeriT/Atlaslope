@@ -84,6 +84,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
 | 19 Oct 2026 | Read the label lists only terms not already in the famous styles; famous styles stay in the rules beat | Green Spain pilot PR |
 | 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Study | this file, "Two formats"; PR #105 |
 | 19 Oct 2026 | Shape C: four beats as the page, How it tastes, In short, extras; Terroir chapters get `beat`; `label`, `say`, `more`; named-place flights warned on | PR #107, Green Spain pilot PR |
@@ -119,6 +120,11 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
   term against its cited page and logs KEEP, FIX or CUT. Logs live in `Review/guides-check/`.
 - The check also looks for lines that talk about the source instead of the place, label terms that only point elsewhere, exam framing,
   named-place flights where they are possible, and agreement between the Terroir text and the fact sheet.
+- Per region, the cheap way (proven on Castilla y León, $1.48 a guide): one helper fetches the pliegos into
+  `Review/sources/fetched/`; `Tools/guides/extract.py` cuts each to sections 1 to 8 with page markers; a fresh Sonnet helper per place
+  writes from `Tools/guides/WRITER.md`; `Tools/guides/check_guide.py` checks cites, beats, framing and numbers; a fresh Opus helper per
+  guide runs `Tools/guides/CHECKER.md` on every sentence; the thread reads 3 guides end to end. Plan and figures:
+  `Review/guide-pipeline-plan.md`. Inputs per region in `Review/guides-pipeline/<region>/`.
 
 ## The rest of the guide
 - **Fact sheet** (`content/facts/<region>.json`): the why line, grapes, styles, climate, soil, altitude, tastes, famous styles and
@@ -132,6 +138,7 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 - **Study** writes its questions from the fact sheets and the map. Terroir text is not quizzed.
 
 ## State (keep current)
-- Terroir written: Rioja and its three zones (release 10). Nine Green Spain places are in the pilot PR.
+- Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
+  (release 38).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.
