@@ -80,6 +80,8 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 (`Review/fact-sheets-30-source-check.md`), ReviewBot copy check (`Review/pr-105-review.md`); handoff
 `docs/handoffs/2026-10-19-fact-sheets-30.md`.
 
+**Exception (owner OK, 19 Oct 2026):** the four Navarra Vinos de Pago (Otazu, Prado de Irache, Arinzano, Bolandín) have Terroir from the EU single document only; no pliego is on file.
+
 ## Format log
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
@@ -146,6 +148,6 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 
 ## State (keep current)
 - Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
-  (release 38), eight Andalucía places (release 39).
+  (release 38), eight Andalucía places (release 39), 11 Ebro places (PR #119).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.

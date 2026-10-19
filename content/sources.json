@@ -1106,7 +1106,7 @@
  "bolandin-doc2": {
   "kind": "official",
   "title": "Modificación normal PDO-ES-N1876-AM01 (EU Official Journal C/2026/713, Bolandin)",
-  "url": "http://publications.europa.eu/resource/cellar/d7065b83-fd7e-11f0-8da5-01aa75ed71a1",
+  "url": "http://data.europa.eu/eli/C/2026/713/oj",
   "date": "2026-01-30"
  },
  "chozas-carrascal-doc": {
@@ -1142,7 +1142,7 @@
  "otazu-doc2": {
   "kind": "official",
   "title": "Modificación normal PDO-ES-A0184-AM02 (EU Official Journal C/2026/3580, Pago de Otazu)",
-  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=OJ:C_202603580",
+  "url": "http://data.europa.eu/eli/C/2026/3580/oj",
   "date": "2026-07-13"
  },
  "rio-negro-doc": {
@@ -1480,5 +1480,89 @@
   "title": "Documento único DOP Jumilla as amended (drops the «Pie franco» label term), communication of an approved normal amendment (EU Official Journal C/2025/3208, PDO-ES-A0109)",
   "url": "http://data.europa.eu/eli/C/2025/3208/oj",
   "date": "2025-06-11"
+ },
+ "navarra-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Navarra (PDO-ES-A0127), text of 21 May 2026 hosted by INTIA, the control body",
+  "url": "https://www.intiasa.es/sites/default/files/assets/files/certificacion/DocumentoNormativo/NormativaDONavarraVino/2026%2005%2021%20Pliego%20de%20condiciones_DO_Navarra.pdf",
+  "date": "2026-05-21"
+ },
+ "somontano-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Somontano (PDO-ES-A0534), Orden de 2 de agosto de 2012, BOA 164 of 23 Aug 2012",
+  "url": "https://aragon.es/documents/d/guest/2012_pliego_condiciones_dop_somontano",
+  "date": "2012-08-23"
+ },
+ "campo-de-borja-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Campo de Borja (PDO-ES-A0180), Orden AGA/1497/2024, BOA 239 of 11 Dec 2024",
+  "url": "https://www.aragon.es/documents/d/guest/202412_pliego_condiciones_dop_campo_borja_vigente",
+  "date": "2024-12-11"
+ },
+ "carinena-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Cariñena (PDO-ES-A0043), Orden AGA/1228/2025, BOA 186 of 25 Sep 2025",
+  "url": "https://www.aragon.es/documents/d/guest/pliego_condiciones_dop_carinena",
+  "date": "2025-09-25"
+ },
+ "calatayud-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Calatayud (PDO-ES-A0247), Orden AGA/43/2024, BOA 15 of 22 Jan 2024",
+  "url": "https://www.aragon.es/documents/d/guest/pliego_condiciones_dop_calatayud",
+  "date": "2024-01-22"
+ },
+ "ayles-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Aylés (PDO-ES-A1522), Orden AGA/1399/2025, BOA 208 of 28 Oct 2025",
+  "url": "https://www.aragon.es/documents/d/guest/pliego_de_condiciones_dop_ayles_aprobado",
+  "date": "2025-10-28"
+ },
+ "prado-de-irache-doc2": {
+  "kind": "official",
+  "title": "Documento único Prado de Irache as amended, communication of an approved normal amendment (EU Official Journal C/2026/747, PDO-ES-A0182)",
+  "url": "http://data.europa.eu/eli/C/2026/747/oj",
+  "date": "2026-02-05"
+ },
+ "arinzano-doc3": {
+  "kind": "official",
+  "title": "Documento único Pago de Arínzano as amended, communication of an approved normal amendment (EU Official Journal C/2026/4824, PDO-ES-A0183)",
+  "url": "http://data.europa.eu/eli/C/2026/4824/oj",
+  "date": "2026-09-22"
+ },
+ "navarra-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Navarra as amended (EU Official Journal C/2025/297, PDO-ES-A0127)",
+  "url": "http://data.europa.eu/eli/C/2025/297/oj",
+  "date": "2025-01-10"
+ },
+ "campo-de-borja-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Campo de Borja as amended (EU Official Journal C/2025/1558, PDO-ES-A0180)",
+  "url": "http://data.europa.eu/eli/C/2025/1558/oj",
+  "date": "2025-03-06"
+ },
+ "carinena-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Cariñena as amended (EU Official Journal C/2025/6770, PDO-ES-A0043)",
+  "url": "http://data.europa.eu/eli/C/2025/6770/oj",
+  "date": "2025-12-22"
+ },
+ "calatayud-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Calatayud as amended (EU Official Journal C 179, 2.5.2022, p. 6, PDO-ES-A0247-AM02)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=uriserv:OJ.C_.2022.179.01.0006.01.SPA",
+  "date": "2022-05-02"
+ },
+ "ayles-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Aylés as amended (EU Official Journal C/2026/1818, PDO-ES-A1522)",
+  "url": "http://data.europa.eu/eli/C/2026/1818/oj",
+  "date": "2026-03-19"
+ },
+ "urbezo-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Urbezo, publication of the registration application (EU Official Journal C/2024/1738, PDO-ES-02585)",
+  "url": "http://data.europa.eu/eli/C/2024/1738/oj",
+  "date": "2024-02-26"
  }
 }

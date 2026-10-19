@@ -1,0 +1,112 @@
+{
+ "id": "ayles",
+ "title": "Why Aylés tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Most of the soils at Aylés are middling-low in organic matter and poor in nitrogen, and this gives wines rich in extract and in anthocyanins, the pigments of red wine. With so little in the topsoil the roots go deep, and that deep rooting gives the vine a more regular water supply.",
+  "cite": [
+   "ayles-pliego:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One estate on the river Huerva",
+   "paras": [
+    "Aylés is a single farming estate of 2,703 hectares in Mezalocha, in Zaragoza province. It lies inside the zone of the Cariñena Denominación de Origen. Only some listed plots of the estate may hold vines for this Vino de Pago, a protected name for one estate's wine.",
+    "It sits in the Ebro basin, in the catchment of the river Huerva, which crosses it from south to north.",
+    "Aylés was once a lordship. The Cistercian order owned it, and so did notable Aragonese such as the first Justicia de Aragón or the Marqués de Tosos. Its name appears in records from 1165.",
+    "Vines are known here from the start of the last century. The first document is a plot map from 1940. It shows a large, fully formed vineyard on the fields of Monte Blanco, where the estate's oldest vines grow today. Because the estate works as one unit, its wine has always been sold under the name Aylés."
+   ],
+   "cite": [
+    "ayles-pliego:p3",
+    "ayles-pliego:p4"
+   ],
+   "fly": [
+    {
+     "label": "Aylés",
+     "caption": "The estate in Mezalocha, Zaragoza province.",
+     "cite": [
+      "ayles-pliego:p4"
+     ],
+     "place": "ayles"
+    },
+    {
+     "label": "Cariñena",
+     "caption": "The Denominación de Origen whose zone takes in Aylés.",
+     "cite": [
+      "ayles-pliego:p4"
+     ],
+     "place": "carinena"
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Dry summers, wide swings",
+   "paras": [
+    "Rain is not plentiful here, between 350 and 550 mm a year. It peaks around the equinoxes, and summer is the driest season. Average temperatures run between 13 and 15 ºC.",
+    "Temperatures swing widely across the year and across the day. Frosts are frequent, though few months average below 6 ºC. One classification calls the climate Mediterranean continental. Another calls it cold temperate continental with a dry season.",
+    "The large gap between day and night temperatures slows ripening. It also boosts the making of aromas and polyphenols, the grape's colour and tannin compounds."
+   ],
+   "cite": [
+    "ayles-pliego:p5",
+    "ayles-pliego:p6"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Lime-rich soils on flat ground",
+   "paras": [
+    "Limestone dominates here, along with marls and conglomerates. The ground is nearly flat, with slopes of 1-4 % and low to medium erosion. Stones are not a notable problem. Fine earth dominates, and most of the larger bits are under 1-2 cm.",
+    "In the USDA soil system these soils are haploxeralfs, the group most interesting for vines. They have a clay-enriched layer in a fairly uniform profile, which favours the vine's feeding and water supply.",
+    "Calcium carbonate is very high, between 25 and 50 %, and it goes with good crumb structure in the upper layers. The level of lime is balanced, and this makes for strong wines of excellent quality.",
+    "Textures are notably even, mostly loam and clay-loam types, with no sharp contrasts down the profile. Clay in the topsoil is mostly 25 to 35 %. Soils with under 45 % clay give well-coloured, aromatic wines with correct acidity, and that is where the vines of Aylés grow.",
+    "Together these soil traits give balanced wines that are not acidic, with their fruit and floral aromas at their best."
+   ],
+   "cite": [
+    "ayles-pliego:p4",
+    "ayles-pliego:p5",
+    "ayles-pliego:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Cool picking, quick work",
+   "paras": [
+    "Aylés makes still wine only, in white, rosado and red. The six allowed grapes are Garnacha tinta, Tempranillo, Cabernet Sauvignon, Syrah, Merlot and Chardonnay.",
+    "Picking is by machine, always at the coolest time of day. Hand picking is kept for vintages and wines where a machine cannot sort the different qualities in the vineyard. The grapes go into the winery straight after picking.",
+    "White and rosado musts sit cold on their skins. The rosado is made from red grapes, with its juice bled off as free-run must. Reds get a cold soak before fermentation, then ferment on their skins at a controlled temperature.",
+    "Barrels are of French, American and Eastern European oak. Whites and rosados spend at least 30 days in them, and reds at least 60 days.",
+    "The red «Tres de 3000» comes from selected plots of Merlot, Cabernet Sauvignon and Garnacha tinta. It soaks on its skins again after fermentation and spends at least 12 months in oak.",
+    "All wine is bottled in the estate's own winery. Filtering and pumping are avoided as far as possible, because each of these steps slowly lowers quality.",
+    "University of Zaragoza research found that Aylés wines differ in make-up from others nearby. The young wines held more esters, which give young wines their fruity aroma. The crianzas showed their fruit more clearly."
+   ],
+   "cite": [
+    "ayles-pliego:p1",
+    "ayles-pliego:p3",
+    "ayles-pliego:p5",
+    "ayles-pliego:p6"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Viñas viejas",
+    "text": "From vines more than 20 years old."
+   },
+   {
+    "term": "Vendimia seleccionada or Selección",
+    "text": "From plots chosen before harvest, yielding under 7,000 kg per hectare."
+   }
+  ],
+  "cite": [
+   "ayles-pliego:p7"
+  ]
+ }
+}

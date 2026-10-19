@@ -1,5 +1,7 @@
 /* Guides landing, layout C "Editorial" (owner pick, 19 Oct 2026): a featured guide, then a row per region. Filled in at build time (src/home/guideCount.ts). */
 .gl .feat{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:3rem;align-items:center}
+.gl .hero-sat{margin:0}.gl .hero-sat img{display:block;width:100%;height:auto;border-radius:var(--r-img);background:var(--bg2)}
+.gl .ft .show{display:block;margin-bottom:.6rem;padding-bottom:.4rem;border-bottom:2px solid var(--foil);width:max-content;color:var(--foil-ink);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .gl .mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.5rem;aspect-ratio:4/3}
 .gl .mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r-img);background:var(--bg2)}
 .gl .mosaic img:first-child{grid-row:1/3}

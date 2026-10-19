@@ -1,0 +1,143 @@
+{
+ "id": "urbezo",
+ "title": "Why Urbezo tastes the way it does",
+ "minutes": 5,
+ "lede": {
+  "text": "Urbezo is a single cadastral polygon of land ringed by DO Cariñena, and its soil is richer in minerals and trace elements than the ground around it. Iron in that soil gives its red wines an intense colour, while magnesium regulates their balance and acidity.",
+  "cite": [
+   "urbezo-doc:p4",
+   "urbezo-doc:p8",
+   "urbezo-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A paraje full of vines since 1178",
+   "paras": [
+    "Urbezo sits in the Ebro basin, roughly in the middle of an imaginary rectangle drawn by four rivers: the Ebro, the Jalón, the Huerva and the Jiloca. It lies in the north-west of the municipality of Cariñena, in Aragón. The whole area is cadastral polygon 35 of Cariñena, and DO Cariñena surrounds it.",
+    "The río Frasno crosses it from south-east to north-west. La Pardina, a rambla or gully, cuts across it too. Its bed is normally dry, but in very wet spells it can carry a significant flow.",
+    "In 1178 the Anales de la Corona de Aragón describe the village of Lagunas, between Cariñena and Alfamén, as a paraje lleno de viñas, a spot full of vines. Those vines are today's Urbezo vineyards. The village's parish church is today's Santuario de Nuestra Señora de Lagunas.",
+    "In 1929 growers from Urbezo took their wines to the II Congreso Internacional de la Viña y el Vino in Barcelona. Two of them won a gold medal and a diploma of honour with a wine from the 1928 vintage.",
+    "The land is shared by 23 owners, Cariñena's town council among them. Bodegas Solar de Urbezo is the only winery that makes wine separately from the vineyards it farms here."
+   ],
+   "cite": [
+    "urbezo-doc:p4",
+    "urbezo-doc:p5",
+    "urbezo-doc:p6",
+    "urbezo-doc:p9",
+    "urbezo-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Urbezo",
+     "caption": "The paraje in the north-west of the municipality of Cariñena.",
+     "cite": [
+      "urbezo-doc:p5"
+     ],
+     "place": "urbezo"
+    },
+    {
+     "label": "Santuario de Lagunas",
+     "caption": "Once the parish church of Lagunas, the village among the vines in 1178.",
+     "cite": [
+      "urbezo-doc:p6"
+     ],
+     "point": [
+      -1.2294,
+      41.4019
+     ],
+     "zoom": 11
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "A dry place swept by the cierzo",
+   "paras": [
+    "Urbezo lies in the somontano, the foothills, of the Sierra de Algairén. That leaves it open to winds from the Moncayo, the highest mountain of the Aragonese Iberian range at 2,314 m.",
+    "The weather station at La Pardina is less than 1 km away, and its records run from 2005 to 2016. Rain averages 423.4 mm a year, falling on 66 days. Potential evaporation from soil and plants reaches 1,068.5 mm a year.",
+    "July and August are always dry. Without watering, the soil holds no water the vine can use from June to September, and into October.",
+    "Even so, the climate sets no limiting factor for vines. Frost risk runs mainly from mid-October to the end of April. The cierzo, the north-west wind, blows often here and helps protect the vines from fungal diseases."
+   ],
+   "cite": [
+    "urbezo-doc:p5",
+    "urbezo-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Moncayo",
+     "caption": "The highest mountain of the Aragonese Iberian range, where Urbezo's winds come from.",
+     "cite": [
+      "urbezo-doc:p5"
+     ],
+     "point": [
+      -1.8397,
+      41.7872
+     ],
+     "zoom": 9
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Pebbles, loam and a richer soil",
+   "paras": [
+    "The land is almost flat, at 460 to 495 m above sea level, with a slight slope to the north. That gentle slope helps water drain and gives the vines more sun. This favours the ripening of colour and tannin in the grapes, and so the colour and body of Urbezo's reds.",
+    "The soils formed on valley-floor material, probably from the Pleistocene, left by the breakdown of older deposits on the south-west edge of the basin. Most are loams. Sandy loams lead, alongside sandy clay loams and clay loams.",
+    "The ground is loose, deep and stony, and it drains well. That helps roots grow and find water. Humus is scarce and nitrogen is low. So few nutrients near the surface encourage roots to spread deep and give the vine a steadier water supply.",
+    "Pebbles are plentiful on the surface. In summer they heat up in the sun by day and throw back a lot of heat. At night they cool, thanks to the cierzo and short drip watering after dark. The grapes ripen slowly, with day-night swings of up to 40%. That raises berry weight and lets acids turn properly into sugars.",
+    "Next to the ground of DO Cariñena around it, Urbezo's soil holds more potassium, phosphorus and other elements. Its pH is lower, around 8, and it has less lime. Clay gives the wine body and tannin. Silicon heightens its aromas."
+   ],
+   "cite": [
+    "urbezo-doc:p5",
+    "urbezo-doc:p6",
+    "urbezo-doc:p8",
+    "urbezo-doc:p9"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Organic vines, one grape at a time",
+   "paras": [
+    "Every vineyard in Urbezo must be farmed organically, certified by the Comité Aragonés de Agricultura Ecológica. The wineries that make and bottle the wine must be certified organic too. Keeping insecticides, herbicides and pesticides off the grapes favours native yeasts on the skins. Organic winemaking keeps the character those yeasts give and avoids standardised aromas.",
+    "Six red grapes are allowed: Garnacha Tinta, Cabernet Sauvignon, Mazuela, Merlot, Syrah and Tempranillo. The white grapes are Chardonnay, Garnacha Blanca and Moscatel de Alejandría. Each variety is picked and fermented on its own.",
+    "Urbezo makes white, rosado and red wine, and its reds are dry. Whites get a cold soak on their skins. Rosados come from red grapes of a single variety. They also get a cold soak, and only the free-run juice is bled off to ferment.",
+    "Reds ferment on their skins at a controlled temperature. After the malolactic fermentation, the winery tastes each single-variety wine and blends them in balanced proportions.",
+    "Young reds are made by maceración carbónica, carbonic maceration. The grapes are picked by hand. Whole bunches go into the tank, and sugar starts turning into alcohol inside each grape through an enzyme process. Native yeast then carries on the fermentation, and the method shapes these wines' aromas.",
+    "Tinto barrica spends at least three months in oak barrels of up to 300 l. Vendimia seleccionada reds come from grapes chosen through the growing season for health and ripeness. They spend 4 to 12 months in oak, then rest at least five months in bottle before sale."
+   ],
+   "cite": [
+    "urbezo-doc:p1",
+    "urbezo-doc:p3",
+    "urbezo-doc:p4",
+    "urbezo-doc:p5",
+    "urbezo-doc:p7",
+    "urbezo-doc:p11"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "A red aged at least 24 months, with at least 6 of them in oak barrels of up to 300 litres."
+   },
+   {
+    "term": "Reserva",
+    "text": "A red aged at least 36 months, with at least 12 in oak barrels of up to 300 litres and the rest in bottle."
+   },
+   {
+    "term": "Gran Reserva",
+    "text": "A red aged at least 60 months, with at least 18 in oak barrels of up to 300 litres and the rest in bottle."
+   }
+  ],
+  "cite": [
+   "urbezo-doc:p4"
+  ]
+ }
+}

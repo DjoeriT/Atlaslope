@@ -1,0 +1,146 @@
+{
+ "id": "campo-de-borja",
+ "title": "Why Campo de Borja tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "In Campo de Borja the cierzo, a cold and dry wind, pulls so much moisture from the soil that the vines live under permanent water stress. With little water and a harsh climate, phenolic ripening (the ripening of skins and seeds) is very slow, and that boosts aroma and deep colour in the wines.",
+  "cite": [
+   "campo-de-borja-pliego:p7",
+   "campo-de-borja-pliego:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between Moncayo and the Ebro",
+   "paras": [
+    "Campo de Borja is a land of transition between the mountains of the Sistema Ibérico and the Ebro valley. It takes in the Somontano del Moncayo, the land at the foot of the Moncayo massif. From there it runs along the valley of the río Huecha and out onto the plains called the Llanos de Plasencia.",
+    "The land is a series of high plateaus with soft relief and very broad, gentle swells. The western side is rougher, because the buttresses of Moncayo push into it.",
+    "Monks had a very important hand in these vineyards. The oldest record of vines here is a gift of vineyards at Magallón in 1203, kept in the archives of the Monasterio de Veruela. It suggests vines grew here long before. In 1453 the abbots bought the town of Ainzón, above all to grow its vineyard.",
+    "Every village has countless private cellars, dug into nearby hills or even under the houses. Reds stood out. Whites and rosados were made too, along with vinos de licor and even sparkling wine."
+   ],
+   "cite": [
+    "campo-de-borja-pliego:p5",
+    "campo-de-borja-pliego:p6"
+   ],
+   "fly": [
+    {
+     "label": "Campo de Borja",
+     "caption": "In the north-west of Zaragoza province, 60 km from the city.",
+     "cite": [
+      "campo-de-borja-pliego:p6"
+     ],
+     "place": "campo-de-borja"
+    },
+    {
+     "label": "Monasterio de Veruela",
+     "caption": "Its monks ran local parishes and worked the land until 1835.",
+     "cite": [
+      "campo-de-borja-pliego:p5"
+     ],
+     "point": [
+      -1.6934,
+      41.8123
+     ],
+     "zoom": 11
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "A very continental climate",
+   "paras": [
+    "The climate is very continental. Atlantic influence reaches it in winter, and Mediterranean influence in summer. Its most striking feature is the cierzo, which blows from the north-west.",
+    "Temperatures swing hard between day and night. They swing hard between seasons too, and they reach extremes.",
+    "Rain is scarce. It averages 350 mm in the low zones and rises to 450 mm in the higher ones."
+   ],
+   "cite": [
+    "campo-de-borja-pliego:p7"
+   ],
+   "fly": [
+    {
+     "label": "Moncayo",
+     "caption": "The mountain sways the climate of the zone and gives its wines character.",
+     "cite": [
+      "campo-de-borja-pliego:p6"
+     ],
+     "point": [
+      -1.8397,
+      41.7872
+     ],
+     "zoom": 9
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Brown limy soils at three heights",
+   "paras": [
+    "Brown limy soils (pardo-calizos) and terrace soils lead here. They are moderately stony, drain well and are rich in nutrients. On the slopes closest to Moncayo the soils turn to clay and iron (arcillo-ferrosos), and the stones grow more plentiful.",
+    "Altitude splits the vineyards into three zones, and the wines change with it. The low zone lies between 350 and 450 m on brown limy soils. Garnacha, the most planted grape, grows here as bush vines (en vaso) and on wires (espaldera). This zone ripens earliest. Its wines are warm and powerful, with a lot of aroma.",
+    "The middle zone, from 450 to 550 m, has the largest and densest spread of vines. Gravelly soils and clay-iron soils sit here beside river terraces, on gentle slopes with good sun. Its wines are very complex and intense, with structure and flesh.",
+    "The high zone climbs from 550 to 700 m into the foothills of Moncayo. Here the wines turn fine and subtle, with elegance."
+   ],
+   "cite": [
+    "campo-de-borja-pliego:p6",
+    "campo-de-borja-pliego:p7",
+    "campo-de-borja-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "Río Huecha",
+     "caption": "This tributary of the Ebro laid the terrace soils of the middle zone.",
+     "cite": [
+      "campo-de-borja-pliego:p6"
+     ],
+     "point": [
+      -1.5522,
+      41.8263
+     ],
+     "zoom": 10
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "The empire of Garnacha",
+   "paras": [
+    "Garnacha, native to Aragón, is the main grape and has grown here for centuries. Its yields are low. It gives the wines intense fruity aromas and flavours. It also brings more glycerine, which leaves a pleasant sense of sweetness at the end. The zone calls itself “El Imperio de la Garnacha”, the empire of Garnacha.",
+    "The oldest Garnacha vineyards date from 1890. Of more than 3,000 hectares of Garnacha, more than 1,000 are between 30 and 50 years old.",
+    "Growers choose vineyards to suit each style. Younger, more productive vines ripen earlier. They go into young wines of every colour, full of fruit and flowers, and into sparkling wine. Older, less productive vines go into more complex reds for ageing, and into vinos de licor.",
+    "Garnacha Tinta shares the field with eight other reds, such as Mazuela and Tempranillo, and with eight whites, such as Macabeo.",
+    "Dry wines come white, rosado or red. Other wines run from semi-dry up to sweet. Naturalmente dulce takes all its alcohol from fermentation, with no artificial boost. Vendimia tardía is a late-harvest wine.",
+    "Vino de licor is a fortified wine, and its tradition here goes back several centuries. The geography and climate bring grapes to very high ripeness. With low-yield, late-picked vineyards, that gives aromas of very ripe or even overripe fruit.",
+    "Vino espumoso de calidad, the quality sparkling wine, may be white or rosado. It is made by the traditional method, with a second fermentation in the bottle. It then rests at least 9 months on its lees, the spent yeast, before disgorging. That second fermentation and time on the lees give a fine, lasting bubble and a fruity, elegant aroma."
+   ],
+   "cite": [
+    "campo-de-borja-pliego:p1",
+    "campo-de-borja-pliego:p2",
+    "campo-de-borja-pliego:p4",
+    "campo-de-borja-pliego:p5",
+    "campo-de-borja-pliego:p7",
+    "campo-de-borja-pliego:p8"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Roble",
+    "text": "A white spends more than 45 days in oak barrels of at most 600 litres, and a red more than 90 days."
+   },
+   {
+    "term": "Garnachas Históricas",
+    "text": "A single-variety Garnacha Tinta from vineyards 35 years old or more."
+   }
+  ],
+  "cite": [
+   "campo-de-borja-pliego:p4",
+   "campo-de-borja-pliego:p10"
+  ]
+ }
+}
