@@ -3,7 +3,7 @@
  "title": "Why Cigales tastes the way it does",
  "minutes": 3,
  "lede": {
-  "text": "The vines sit halfway down the Pisuerga, between its icy source and its mild mouth. That middle spot gives grapes with balanced acidity and sugar.",
+  "text": "The vines sit halfway down the Pisuerga, between the intense cold of its source and the mildness of its mouth. There soil and climate work together to give grapes with balanced acidity and sugar.",
   "cite": ["cigales-pliego:p18"]
  },
  "chapters": [
@@ -13,7 +13,7 @@
    "title": "Halfway down a river",
    "paras": [
     "The vineyards cover 574 km2 in the north of the Duero basin, on both banks of the Pisuerga. The river drains into the Duero. Here it is midway along its run, between the intense cold of its origins and the mildness of its mouth.",
-    "Most of the area is in Valladolid province. One municipality, Dueñas, lies in Palencia."
+    "One municipality, Dueñas, lies in Palencia province. The other eleven are in Valladolid province, along with the El Berrocal estate inside the city of Valladolid's bounds."
    ],
    "cite": ["cigales-pliego:p13", "cigales-pliego:p15", "cigales-pliego:p18"],
    "fly": [
@@ -27,7 +27,7 @@
      "label": "Dueñas",
      "point": [-4.5486, 41.8669],
      "zoom": 11,
-     "caption": "The one municipality in Palencia. A cellar here carries the date 1738 on its facade.",
+     "caption": "The one municipality in Palencia. An underground cellar here carries the date 1738 on its facade.",
      "cite": ["cigales-pliego:p13", "cigales-pliego:p22"]
     }
    ]
@@ -39,7 +39,7 @@
    "paras": [
     "The climate is continental, with sharp swings in temperature through the day and through the year. Winters are harsh and long, with frequent frost and fog. Temperatures run from 40ºC down to -6ºC.",
     "Rain is irregular and lowest in summer, which is dry. Between 344 and 468 mm fall in a year.",
-    "In the ripening weeks the gap between day and night helps sugars and colour compounds settle in the skins. That gives good colour and tannin in the wine, and low yields with balanced acidity."
+    "In the ripening weeks the gap between day and night helps sugars and phenolic compounds settle in the skins. That allows good extraction of colour and tannin. The climate as a whole keeps yields low, with balanced acidity."
    ],
    "cite": ["cigales-pliego:p15", "cigales-pliego:p16", "cigales-pliego:p19"]
   },
@@ -48,10 +48,10 @@
    "beat": "ground",
    "title": "Poor soil, small berries",
    "paras": [
-    "The soil is Tertiary and Quaternary sediment of sands, limestone and gypsum-rich chalk, resting on clays and marls. It is short of organic matter and its limestone content varies widely, from 1% at Santovenia to 35% at Valoria. Its pH is about 8.1.",
+    "The soil is Tertiary and Quaternary sediment resting on clays and marls. Sands and limestone mix with clay that holds gypsum. It is short of organic matter and its limestone content varies widely, from 1% at Santovenia to 35% at Valoria. Its pH is about 8.1.",
     "Poor soil limits water and nutrients, so the vines crop lightly. The berries stay small and rich in colour.",
-    "Sandy ground gives intense, more evolved aromas such as jam, raisins and dried figs. Clay keeps the primary aromas fresher, such as strawberry and liquorice. Limestone gives grapes with more sugar and thicker skins, so the wines are finer but paler.",
-    "Gravelly ground, called cascajo, drains well and reflects light. Roots go deeper, and the grapes ripen with more sweetness and more colour."
+    "Sandy ground gives intense aromas, mostly of the more evolved kind: jam and dried fruit like raisins and figs. Clay keeps the primary aromas fresher, such as strawberry and liquorice. Limestone gives grapes with more potential alcohol and thicker skins, and wines that are finer but paler.",
+    "Gravelly ground, called cascajo, drains well and reflects light. Roots go much deeper, and the grapes ripen well, giving wines that taste sweeter and carry more colour."
    ],
    "cite": ["cigales-pliego:p15", "cigales-pliego:p18", "cigales-pliego:p19"]
   },
@@ -60,19 +60,19 @@
    "beat": "rules",
    "title": "Old vines and a rosé tradition",
    "paras": [
-    "About 30% of the vineyard is over 60 years old, which shapes the aged reds. The cap on yield is 7,000 kg per hectare for reds and 9,000 kg for whites, rosés/claretes and sparkling wines. The choice rests on the dry climate, the sun and the poor soils.",
-    "Claretes began as a mix of many varieties planted together. Quality has since risen with chosen varieties, but the mixing tradition stays. Tempranillo and Garnacha lead among the reds, and Verdejo, Albillo and Sauvignon Blanc among the whites.",
-    "The wine has a long record. In 1592 an archer travelling with Philip II wrote that Cigales had \"excellent claretes\". When phylloxera hit France, wine from here went to Bordeaux by way of the port of Pasajes."
+    "About 30% of the vineyard is over 60 years old, which shapes the aged reds. Grapes for red wine are capped at 7,000 kg per hectare. Grapes for the other wines, sparkling included, may reach 9,000 kg. The limits answer to the climate, with its scant rain and long sunshine. They also answer to the poor soils and to past results in the winery.",
+    "Clarete is the local name for rosé. It began as a blend of the hundreds of varieties planted mixed together in the plots. Quality has since risen with recommended varieties, but the blending tradition stays. Among the reds, Tempranillo and Garnacha have done most to shape the wines. Among the whites, Verdejo and Albillo have, with Sauvignon Blanc.",
+    "In 1592 the royal archer Cock, travelling with Philip II to the Cortes of Tarazona, wrote that Cigales had \"excellent claretes\". When phylloxera hit France, wine from here went to Bordeaux by way of the port of Pasajes, to replace French wine."
    ],
    "cite": ["cigales-pliego:p13", "cigales-pliego:p16", "cigales-pliego:p20", "cigales-pliego:p22"]
   }
  ],
  "label": {
   "terms": [
-   {"term": "Roble", "text": "A red wine may use this word when it meets the legal requirements, and its aromas should include the toasted and spicy notes of wood."},
-   {"term": "Crianza", "text": "A red that has aged in oak barrels of at most 330 litres, counted from 1 November of the harvest year."},
-   {"term": "Reserva", "text": "An aged red, with the same barrel limit of at most 330 litres and the same 1 November start."},
-   {"term": "Gran Reserva", "text": "The longest-aged red, with the same barrel limit of at most 330 litres and the same 1 November start."}
+   {"term": "Roble", "text": "Oak. A red with this word must smell of fruit, with the toasted or spicy notes the wood brings."},
+   {"term": "Crianza", "text": "A red aged in oak barrels of at most 330 litres, its ageing counted from 1 November of the harvest year. It smells of toasted or spicy wood and of fruit."},
+   {"term": "Reserva", "text": "A red aged in the same barrels, counted from the same date. Its colour runs from red to amber, with at least one spicy, balsamic, fruity or mineral aroma."},
+   {"term": "Gran Reserva", "text": "A red aged under the same barrel and date rules. Its colour also runs from red to amber."}
   ],
   "cite": ["cigales-pliego:p7", "cigales-pliego:p8", "cigales-pliego:p12", "cigales-pliego:p25"]
  }
