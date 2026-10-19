@@ -8,7 +8,11 @@ export default defineConfig(({ mode }) => ({
   base: './',
   // Two pages (website slice 2): the home page at the root, the atlas at atlas/. Each is a real file, as GitHub Pages needs.
   build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', about: 'about/index.html' } } },
-  plugins: [{ name: 'guide-count', transformIndexHtml: (html) => fillGuideList(fillGuideCount(html, guideCount()), guideRows()) }],
+  plugins: [{ name: 'guide-count', transformIndexHtml: (html, ctx) => {
+    // Every page that shows the guide count gets it; only the Guides page gets the list.
+    const out = fillGuideCount(html, guideCount());
+    return ctx.filename.replace(/\\/g, '/').endsWith('guides/index.html') ? fillGuideList(out, guideRows()) : out;
+  } }],
   esbuild: { jsx: 'automatic' },
   define: { __DEBUG_FLAGS__: JSON.stringify(mode === 'development' || mode === 'uitest') },
   test: { include: ['tests/unit/**/*.test.ts'] },

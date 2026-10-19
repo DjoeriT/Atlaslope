@@ -46,7 +46,7 @@ export const fillGuideList = (html: string, list: ReturnType<typeof guideRows>):
   const pct = Math.max(1, Math.round((rows.length / places) * 100));
   const where = regions === 1 ? 'in one region so far' : `across ${regions} regions so far`;
   const items = rows
-    .map((r) => `              <li><a href="../atlas/#place=${r.id}&amp;page"><b>${esc(r.name)}</b><span>${esc(r.label)} · ${r.minutes}-minute read</span></a></li>`)
+    .map((r) => `              <li><a href="../atlas/#place=${esc(r.id)}&amp;page"><b>${esc(r.name)}</b><span>${esc(r.label)} · ${r.minutes}-minute read</span></a></li>`)
     .join('\n');
   const body = [
     `            <div class="progress"><span class="bar"><i style="width:${pct}%"></i></span><span>Terroir written for ${rows.length} of ${places} places, ${where}</span></div>`,
@@ -54,5 +54,7 @@ export const fillGuideList = (html: string, list: ReturnType<typeof guideRows>):
     items,
     '            </ul>',
   ].join('\n');
-  return html.replace(/(<!-- guide-list -->\n)[\s\S]*?(\n\s*<!-- \/guide-list -->)/, `$1${body}$2`);
+  const marked = /(<!-- guide-list -->\n)[\s\S]*?(\n\s*<!-- \/guide-list -->)/;
+  if (!marked.test(html)) throw new Error('guides/index.html: the <!-- guide-list --> markers are missing, so the list would ship empty');
+  return html.replace(marked, `$1${body}$2`);
 };

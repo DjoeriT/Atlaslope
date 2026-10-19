@@ -40,3 +40,9 @@ describe('the Guides page', () => {
     expect(ids.indexOf('rioja-alta')).toBe(ids.indexOf('rioja') + 1);
   });
 });
+
+describe('the Guides page markers', () => {
+  it('refuses to build a page without the list markers', () => {
+    expect(() => fillGuideList('<main></main>', guideRows())).toThrow(/markers are missing/);
+  });
+});
