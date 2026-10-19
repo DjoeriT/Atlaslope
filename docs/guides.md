@@ -42,6 +42,40 @@ own slice, and until it ships the live page keeps the release 10 order (Overview
 Later, and only on the owner's go: option D's cause-to-taste chain on top of C (issue #106), if the chains hold up against the
 pliegos for the thin places.
 
+## Two formats: with Terroir, and fact sheet only
+A guide comes in one of two formats (owner, 19 Oct 2026, "Missing fact sheets" thread: a separate format, logged here). Both use the
+shape C order above. Code: `src/pages/PlacePage.tsx` (PR #107).
+
+**With Terroir** (a written `content/guides/<id>.json`): everything above. The lede and chapters tell the beats, the reading time shows
+under the title, and a fact sheet line shows in a beat only when no chapter tells that beat (one fact, once).
+
+**Fact sheet only** (no Terroir written yet, or a place outside Study). The same four beats, built from the fact sheet alone:
+| Part | Shows | Comes from |
+|---|---|---|
+| Title, labels | always; no reading time | `data/places.json`, `content/curriculum.json` |
+| The place | level, zones, where it sits | places, zone list |
+| The weather | the sheet's climate line; the Köppen chart only for Study places | `climate`, measures |
+| The ground | soil line, written altitude; the measured altitude range only for Study places | `soil`, `altitude`, measures |
+| What the rules make | main grapes, also allowed, wine types, famous styles | `grapes`, `styles`, `famous` |
+| How it tastes | when the sheet has `tastes` | `tastes` |
+| In short | only with 3 or more lines; fewer lines when climate, soil or altitude are missing | sheet fields, measures |
+| Producers, extras | only when filled | sheet, `label` / `more` |
+| Sources | always | cites |
+
+What a place outside Study (`quiz: "none"`: the Vinos de Pago, Cava, Catalunya, Islas Canarias) never shows: photos, measured charts
+(climate share, altitude range), "Test me", "If you like this, try". Its sheet holds written rows only (`src/facts/check.ts`). No beat is
+filled with text to make the page look complete: a short page is the honest page.
+
+## Format log
+Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
+| Date | Change | Where |
+|---|---|---|
+| 19 Oct 2026 | Fact-sheet-only format recorded as its own format | this file, "Two formats" |
+| 19 Oct 2026 | Shape C: four beats as the page, How it tastes, In short, extras; Terroir chapters get `beat`; `label`, `say`, `more`; named-place flights warned on | PR #107, Green Spain pilot PR |
+| 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
+| 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
+| 17 Oct 2026 | Terroir is a section of the place page, not its own page (release 10) | PR #45 |
+
 ## Flights (fly-to)
 - Each beat may carry 1 or 2 flights (`fly`): a place id from `data/places.json`, or a point with a zoom. Each flight has a one-line
   caption with its own cite. Zone cards keep their own "Fly to".
