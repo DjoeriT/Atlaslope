@@ -48,19 +48,22 @@ A guide comes in one of two formats (owner, 19 Oct 2026, "Missing fact sheets" t
 shape C order above. Code: `src/pages/PlacePage.tsx` (PR #107).
 
 **With Terroir** (a written `content/guides/<id>.json`): everything above. The lede and chapters tell the beats, the reading time shows
-under the title, and a fact sheet line shows in a beat only when no chapter tells that beat (one fact, once).
+under the title, and the sheet's written climate or soil shows only when no chapter tells that beat, and the written altitude is hidden on any page with
+a guide (one fact, once).
 
 **Fact sheet only** (no Terroir written yet, or a place outside Study). The same four beats, built from the fact sheet alone:
 | Part | Shows | Comes from |
 |---|---|---|
 | Title, labels | always; no reading time | `data/places.json`, `content/curriculum.json` |
-| The place | level, zones, where it sits | places, zone list |
+| Spine | "Why X tastes the way it does", the sheet's why line as the lede | `why` |
+| The place | level, official name, also within, zone list | places, zone list |
 | The weather | the sheet's climate line; the Köppen chart only for Study places | `climate`, measures |
 | The ground | soil line, written altitude; the measured altitude range only for Study places | `soil`, `altitude`, measures |
-| What the rules make | main grapes, also allowed, wine types, famous styles | `grapes`, `styles`, `famous` |
+| What the rules make | famous styles, main grapes, also allowed, wine types | `famous`, `grapes`, `styles` |
 | How it tastes | when the sheet has `tastes` | `tastes` |
-| In short | only with 3 or more lines; fewer lines when climate, soil or altitude are missing | sheet fields, measures |
+| In short | only with 3 or more of: grapes, climate, soil, zones or altitude, style or wine types | sheet fields, measures |
 | Producers, extras | only when filled; producers never for places outside Study | sheet, `label` / `more` |
+| If you like this, try; Test me | Study places only | computed |
 | Sources | always | cites |
 
 What the 30 places outside Study (`quiz: "none"`: 27 Vinos de Pago, Cava, Catalunya, Islas Canarias; PR #105) never show: photos,
