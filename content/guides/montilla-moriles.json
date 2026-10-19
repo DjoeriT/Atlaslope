@@ -1,0 +1,143 @@
+{
+ "id": "montilla-moriles",
+ "title": "Why Montilla-Moriles tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "The vineyards lie in the part of central Andalucía that records the highest July and August temperatures in the Iberian Peninsula, with historic highs above 46 °C. That climate shapes the style of the wines, from the generosos, wines of high natural alcohol, to sweet wines made from grapes dried in the sun.",
+  "cite": [
+   "montilla-moriles-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Rolling farmland in southern Córdoba province",
+   "paras": [
+    "The vineyards sit in the south of Córdoba province, in the campiña, the open farmland of the Guadalquivir valley, at 125 to 600 m above sea level. The land is gently rolling, with few mountains. In the south-east it ends at the Cordillera de la Subbética.",
+    "Seven municipalities lie wholly inside the zone, Montilla and Moriles among them. Ten more lie partly inside it. The wines also age in Córdoba city."
+   ],
+   "cite": [
+    "montilla-moriles-pliego:p7",
+    "montilla-moriles-pliego:p8",
+    "montilla-moriles-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Montilla, in the campiña",
+     "point": [
+      -4.64,
+      37.59
+     ],
+     "zoom": 9,
+     "caption": "The vineyards cover gently rolling farmland in the Guadalquivir valley, at 125 to 600 m.",
+     "cite": [
+      "montilla-moriles-pliego:p9"
+     ]
+    },
+    {
+     "label": "Cordillera de la Subbética",
+     "point": [
+      -4.33,
+      37.43
+     ],
+     "zoom": 9.5,
+     "caption": "The mountain range that bounds the zone in the south-east.",
+     "cite": [
+      "montilla-moriles-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Among the hottest climates in the world for vines",
+   "paras": [
+    "The climate is generally semi-continental Mediterranean. Summers are long and warm, and they are dry. Winters are short and relatively mild. There are around 3,000 hours of effective sunshine a year. Rain falls between 500 and 1,000 mm a year, and it is irregular.",
+    "During the growing cycle this is one of the hottest climates in the world for wine. The fruit ripens quickly, which marks the make-up of the grapes and the character of all the wines."
+   ],
+   "cite": [
+    "montilla-moriles-pliego:p9",
+    "montilla-moriles-pliego:p10"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Lime-rich soil that holds water",
+   "paras": [
+    "Albarizas are soils rich in calcium carbonate, with soft marl in soil and subsoil. They are poor in organic matter and not very fertile. They hold moisture well. Most roots grow in the top 70 cm, but the main root can go down more than 4 m.",
+    "Albarizas are considered the best soils for the generosos and the liqueur wines, based on long experience. They are the soils of the Superior subzone.",
+    "Outside it, some vineyards grow on soils with a lot of silica. These reflect the sun's radiation and can bring ripeness forward by several days. From late August their musts usually already pass 15 degrees of potential alcohol."
+   ],
+   "cite": [
+    "montilla-moriles-pliego:p7",
+    "montilla-moriles-pliego:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Pedro Ximénez, flor and the solera",
+   "paras": [
+    "Pedro Ximénez leads the list of authorised grapes. Nine other grapes are allowed, two of them Moscatels, de grano menudo and de Alejandría. The protected wines fall into two categories, wines and liqueur wines. At most 13,714 kg of grapes per hectare may go into the protected white wines. The Consejo Regulador, the body that runs the denomination, may change that limit in some years, by no more than 25%.",
+    "The whites come as young, unaged and aged wines. A young white ferments at no more than 22 °C.",
+    "The generosos run from 14.5 to 22% alcohol. Adding wine alcohol is required only for those that do not reach their minimum strength naturally. A Fino usually reaches it without, but any generoso may have its strength adjusted with wine alcohol, so a generoso may or may not be fortified. Fino is aged under flor, a veil of yeast that grows by itself in the zone and is most active in spring and autumn. It spends at least 2 years in the solera system, and it is slightly bitter and salty. Amontillado starts as a fino, with at least 5 years under flor and then at least 3 years of ageing in contact with air. Oloroso is aged for at least 2 years, mainly in contact with air, and it is slightly unctuous and persistent. Palo Cortado ages first under flor and then in contact with air.",
+    "In the solera system, part of each cask is drawn off and topped up from a younger row of casks. All ageing happens in traditional oak vessels of 1,000 litres at most.",
+    "Sweet wines come from Pedro Ximénez, at least 95% of that grape, and Moscatel, at least 85%. Pedro Ximénez must be made by asoleo, and Moscatel may be. For asoleo, the grapes are picked by hand and laid out in the sun on slightly sloping ground, where they lose part of their water. The must reaches at least 450 g/L of sugars, and no more than 40 litres of wine may come from 100 kg of grapes. Wine alcohol is added to the Pedro Ximénez must to stop it fermenting. Moscatel must may be partly fermented and then fortified. Pedro Ximénez is very dense, with a raisiny smell.",
+    "Generoso de Licor, Pale Cream and Cream are generosos with raisined or concentrated grape must, or a naturally sweet wine, added."
+   ],
+   "cite": [
+    "montilla-moriles-pliego:p1",
+    "montilla-moriles-pliego:p2",
+    "montilla-moriles-pliego:p3",
+    "montilla-moriles-pliego:p4",
+    "montilla-moriles-pliego:p5",
+    "montilla-moriles-pliego:p6",
+    "montilla-moriles-pliego:p7",
+    "montilla-moriles-pliego:p8"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de tinaja",
+    "text": "An unaged wine may carry this name, or Vino nuevo de tinaja, if the traditional tinaja method was used at any stage of making it."
+   },
+   {
+    "term": "Vino de pasto",
+    "text": "An aged wine may carry this name."
+   },
+   {
+    "term": "Pasado",
+    "text": "A fino may use it if it can show an average age of 10 years or more."
+   },
+   {
+    "term": "Viejo",
+    "text": "Generosos and generosos de licor may use it for an average age of 15 years or more, as may sweet Pedro Ximénez and Moscatel. They must then be sold in bottle."
+   },
+   {
+    "term": "Viejísimo",
+    "text": "The same wines may use it for an average age of 25 years or more, and they too must be sold in bottle."
+   },
+   {
+    "term": "Flor and Yema",
+    "text": "A producer may use these words only if the batch yields no more than 60 litres per 100 kg of grapes."
+   },
+   {
+    "term": "En rama",
+    "text": "A bottled wine may carry it only if filtering was its only stabilising step, and its turbidity stays at 20 NTU or less."
+   },
+   {
+    "term": "Superior",
+    "text": "A sweet Pedro Ximénez may use it only if its making used nothing but raisined Pedro Ximénez must and alcohol."
+   }
+  ],
+  "cite": [
+   "montilla-moriles-pliego:p3",
+   "montilla-moriles-pliego:p13"
+  ]
+ }
+}
