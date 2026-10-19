@@ -170,19 +170,18 @@
 .pg-ch h3:focus{outline:none}
 .pg-ch h3:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:.3rem}
 .pg-ch p{margin:0 0 .8rem;color:var(--ink2);max-width:38rem}
-.pg-flies{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 .6rem}
-/* Fly-there buttons (owner, 19 Oct 2026: the underlined pin links looked "whacky" and did not read as moving the map): the site's outlined
-   button, a pin and a small "On the map" over the place, so it says what it does. Replaces the link style of owner point 14. */
-.pg .fly{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.45rem .9rem .45rem .75rem;border:1px solid var(--line2);border-radius:var(--rad);text-decoration:none;color:var(--ink);background:var(--paper);font-size:.95rem;line-height:1.2;text-align:left}
+.pg-flies{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;margin:1rem 0 .4rem}
+/* Fly-there links read as the guide's own links, not as buttons (owner point 14: one page, one style). */
+.pg .fly{display:inline-flex;align-items:center;gap:.45rem;min-height:2.75rem;padding:0;border:0;text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px;color:var(--ink);background:none;font-size:.95rem;line-height:1.2}
 .pg .fly .icon{width:1.2rem;height:1.2rem;color:var(--accent);flex:none}
-.pg .fly small{display:block;font-size:.72rem;letter-spacing:.02em;color:var(--ink3);margin-bottom:.1rem}
-.pg .fly:hover{border-color:var(--ink)}
+.pg .fly small{display:none}
+.pg .fly:hover{text-decoration-color:currentColor}
 .pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
 .pg-zguide > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
 .pg-zguide b{font:500 1.25rem var(--serif);margin-bottom:.4rem}
 .pg-zguide p{font-size:.9rem;margin:0 0 .6rem}
 .pg-zguide p.cl{color:var(--ink3)}
-.pg-zguide .fly{margin-top:auto;align-self:stretch}
+.pg-zguide .fly{margin-top:auto;align-self:flex-start}
 .pg-testme{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;margin-top:2.4rem;padding:1.3rem 1.5rem;border-radius:var(--rad-card);background:var(--paper2)}
 .pg-cols main > .pg-testme{margin:0 0 2rem}
 .pg-testme b{display:block;font:500 1.25rem var(--serif)}
