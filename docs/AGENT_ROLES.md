@@ -6,7 +6,7 @@ Status: in force; changes only on the owner's word. Names: LeadBot, BuilderBot, 
 | Role | Model | May edit | Never |
 |---|---|---|---|
 | **Owner** (Djoeri) | – | decides; no code | – |
-| **Coordinator** (project chat) | owner's pick | project memory, routines | the repo; outward actions |
+| **Coordinator** (hosted project chat; locally none: the owner and the local session cover it, `docs/env-local.md`) | owner's pick | project memory, routines | the repo; outward actions |
 | **LeadBot** (the thread doing the task) | owner's pick (Opus 5.5 since 16 Oct 2026) | `CLAUDE.md`, `docs/`, `Review/`; small app edits (wording, a layout tweak, a review fix) with the relevant tests run first; pushes its own `claude/...` branch, opens a pull request per slice and merges it after green CI (and ReviewBot's report where it runs), inside work the owner said go to; starts the `publish` workflow after "publish release N" (also for a rollback) | multi-step code work (goes to a builder); outward actions without the owner's say-so; pushing `main` directly; creating, moving or deleting tags by hand; force-pushes |
 | **BuilderBot** | Sonnet 5.5 for mechanical work, Opus 5.5 for tricky logic (the card says which) | only the files named on its task card, in its own worktree | `CLAUDE.md`, `docs/`, plan files; paid or networked calls |
 | **ReviewBot** | Sonnet by default; Opus at high effort for core logic. Read-only, fresh context | one report file named on its card | everything else |
@@ -33,7 +33,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 
 ## LeadBot
 - Is whichever thread is doing the task; the coordinator is never LeadBot. Closes with a handoff in `docs/handoffs/` (see `CLAUDE.md`).
-- Keeps `docs/PROJECT_CONTEXT.md`, `CLAUDE.md` and the plan current after every merge.
+- Keeps `docs/PROJECT.md` (state), `CLAUDE.md` and the plan current after every merge; `docs/PROJECT_CONTEXT.md` is history.
 - Writes a task card for each piece of work and picks the model.
 - Briefs ReviewBot with the facts, the plan and the thresholds, **not its own conclusions**.
 - Merges a slice's pull request only when CI (which runs the full UI suite) is green and, where ReviewBot runs, it has reported. The owner's
@@ -116,12 +116,12 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
   hour (the cache); after that write a fresh card.
 - **Reports:** 300 words at most in the reply; details in the report file; no pasted logs or diffs.
 
-**Spend log:** `Review/agent-spend-log.md` (one row per agent: date, agent and model, task, budget, actual). Ranges so far: none yet.
+**Spend log:** `Review/agent-spend-log.md` (one row per agent: date, agent and model, task, budget, actual). Measured ranges: the rows in the log.
 For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus builders 330k to 360k over four or five rounds, Sonnet reviewers 20k to 70k; the cards that ran over all had more than three steps.
 
 ## Working detail (moved from CLAUDE.md on 17 Oct 2026 so every step reads less)
 - **Mocks**: one HTML page per round with the before and after, or every option (A / B / C / D) side by side, published as an Artifact
-  with its link in the reply, never separate files (owner, 18 Oct 2026). A mock of an existing screen keeps every section it has today. Drafts live in project files; approved mocks are committed to
+  with its link in the reply, never separate files (owner, 18 Oct 2026). A mock of an existing screen keeps every section it has today. Drafts live in project files (hosted) or the session scratchpad (local); approved mocks are committed to
   `Review/mock-<topic>/`. Map mocks also go to the owner's Mac (`~/Developer/Atlaslope/mocks/`) as that same one page with a file:/// path, since previews block satellite tiles.
   Wording decisions in the decisions log stay unless he reopens them. Only a fix that would change one of his decisions goes to him as a question.
 - **The UX and UI check**: one obvious main action per item, the common case in one click and the rare case tucked away; no two controls that
@@ -144,13 +144,13 @@ For scale, Vintro measured [R]: Sonnet builders 45k to 125k per card, Opus build
 - **Data sources**: never add a map layer, photo or fact source without its `data/SOURCES.md` entry; facts are written from official sources.
 - **Releases**: one thread owns a release's numbering and tag at a time.
 - **Record**: project files are the workshop for drafts; memory is an index that points into the repo. When they disagree, the repo wins and memory is corrected.
-- **Rules retro**: every two weeks the coordinator proposes a keep, merge, move, drop table for `CLAUDE.md` and this file; the owner decides.
+- **Rules retro**: every two weeks the coordinator (or, when only local sessions ran, the first local session after the two weeks) proposes a keep, merge, move, drop table for `CLAUDE.md` and this file; the owner decides.
 
 ## Thread budget (owner card, 17 Oct 2026)
 Measured on 17 Oct [V]: 11 sessions, $143, 428 M cached re-read tokens, threads ending at 260K to 345K; agents 1.9 M tokens in total.
-Every tool call resends the whole conversation, so a thread's cost grows with its length times its steps. The rules are in `CLAUDE.md`, "Pace".
+Every tool call resends the whole conversation, so a thread's cost grows with its length times its steps. The rules are in `CLAUDE.md`, "Token budget".
 A helper's report is the failing test's name and the first error lines in full, nothing else.
-Plans: `/mnt/project-files/atlaslope/plans/2026-10-17-efficiency-plan.md`, `/mnt/project-files/atlaslope/plans/2026-10-18-shipping-speed-plan.md`.
+Plans: `docs/handoffs/2026-10-17-efficiency.md`, `docs/handoffs/2026-10-18-shipping-speed.md`.
 
 ## What this setup does not do
 No agent ships anything, spends money, decides priorities, or edits the rules. An agent that thinks a rule is wrong says so in its report; the owner decides.

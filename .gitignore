@@ -28,3 +28,7 @@ Tools/share/share.html
 
 # Screenshots from Tools/shots.mjs
 /shots/
+
+# Local-only: the Claude pointer file and the satellite map mocks folder (docs/env-local.md)
+CLAUDE.local.md
+/mocks/

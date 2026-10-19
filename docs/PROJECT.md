@@ -80,27 +80,35 @@ cards, sitemap) only on his go, pilot 2 guides first (`Review/website-plan.md`).
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region; 84/109 guides live). Next: fix the prep step first (one small capped prep agent per place), then run in two batches. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region; 84/109 guides live). Next: the local route in "Run a region locally" (sources by script, one headless run per place, 2-place pilot, batches of ~8); ~25M on the old route, target 12-15M [A]. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
 
 ## Where things live
-`README.md` layout and commands; `docs/scope.md`, `architecture-decisions.md`, `guides.md` (guide format), `glossary.md`, `operations.md`
+`README.md` layout and commands; `docs/env-local.md` and `docs/env-cloud.md` what differs by where a session runs; `docs/scope.md`, `architecture-decisions.md`, `guides.md` (guide format), `glossary.md`, `operations.md`
 (rollback, incidents, keys), `privacy.md`, `AGENT_ROLES.md`, `PROJECT_CONTEXT.md`; `docs/handoffs/README.md` index of what each session did;
 `Review/` briefs, mocks, tester notes, `visual-style.md`; `content/facts` fact sheets, `content/guides` guides; `data/SOURCES.md`;
 `Tools/guides/` guide pipeline (`WRITER.md`, `CHECKER.md`, `pack.py`, `check_guide.py`, `usage.py`, `region.workflow.js`); `.claude/skills/release`.
 
 ## Run a region locally
-1. Owner says "use a workflow for <region>". Pilot one or two places first and project cost from Ebro's ~1.0M/guide.
-2. Sources step: put each place's pliego extract in `Review/guides-pipeline/<region>/` with a `manifest.json` (see `Tools/guides/extract.py`).
-   EUR-Lex blocks scripts: use the Publications Office Cellar SPARQL on the CELEX number. Try hosts directly; refused ones via a GitHub Actions run.
-3. Run `Tools/guides/region.workflow.js` with args `{ region, facts, places: [{id, source}] }`: per place one writer (Sonnet) from a
-   packed brief, a machine check (`check_guide.py`), a per-sentence Opus check, then a ship step that applies the sure fact-sheet edits.
-   Without a workflow runner, do the same by hand with one subagent per place, using `pack.py write|check|sheet`.
-4. Watch `python3 Tools/guides/usage.py --budget`; stop at 1.5x. Swap "no guide" UI-test fixtures when a place gains a guide (Jumilla/Navarra
-   style) and add the region's satellite view for the Guides page.
-5. One PR on a `claude/guides-<region>` branch with the handoff and tester note; CI green; ReviewBot (new copy); merge; ask for release N.
+Route set 19 Oct 2026 (owner) for Meseta, to cut the session re-reads that dominated every region's cost (see "Cost lessons"). Steps 2 and 3
+are new and not yet measured: the pilot proves them before the rest runs.
+1. Owner says "use a workflow for <region>", in a fresh session. Estimate from Ebro's measured ~1.0M/guide; target ~0.5-0.6M/guide on this
+   route [A] until the pilot measures it.
+2. Sources step by script, not agent: a script reads the manifest, fetches each pliego (hosts load directly on the Mac,
+   `docs/env-local.md`), extracts it into `Review/guides-pipeline/<region>/` (`Tools/guides/extract.py`) and writes a one-line status per
+   place. EUR-Lex blocks scripts: use the Publications Office Cellar SPARQL on the CELEX number. Only places the script cannot do get an agent:
+   one small agent per place, with a step cap, stopping on a refused host.
+3. Write and check outside the chat: a script starts one fresh headless run per place (`claude -p` with that place's packed brief from
+   `pack.py write|check|sheet`): Sonnet writer, machine check (`check_guide.py`), per-sentence Opus check (stays, owner 19 Oct). Each run
+   writes its result to a file. The session starts the script and reads only a 10-20 line summary, never each place's output.
+   (`Tools/guides/region.workflow.js` is the cloud equivalent; it needs the workflow runner.)
+4. Pilot 2 places, measure with `python3 Tools/guides/usage.py --budget`, project the total and continue only if it fits; stop at 1.5x.
+   Then batches of ~8 places, each batch in a fresh session that starts from the last handoff.
+5. Per batch: swap "no guide" UI-test fixtures when a place gains a guide (Jumilla/Navarra style); the region's satellite view for the Guides
+   page goes in once. One PR per batch on a `claude/guides-<region>-<n>` branch, pushed once, with the handoff and tester note; CI green;
+   ReviewBot (new copy); merge; ask for release N.
 
 ## Run a release locally
 1. Slice PR merged on green CI (it carries `Review/release-N-what-to-test.md` and the handoff).

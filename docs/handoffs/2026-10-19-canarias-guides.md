@@ -1,6 +1,6 @@
 # Canarias guides (19 Oct 2026)
 
-- Shipped (branch `claude/guides-canarias`, release 50 note `Review/release-50-what-to-test.md`): 11 guides: Lanzarote, La Palma,
+- Shipped (branch `claude/guides-canarias`, release 49 note `Review/release-49-what-to-test.md`): 11 guides: Lanzarote, La Palma,
   Tacoronte-Acentejo, Valle de Güímar, Valle de la Orotava, Ycoden-Daute-Isora, Islas Canarias, Abona, La Gomera, Gran Canaria and
   El Hierro. Plus the Guides-page tile `public/guides/canarias.webp` (22 KB, `Tools/guides/region_tile.mjs` view -15.80,28.45,7.35),
   the roster in `tests/unit/guides.test.ts`, and the "not quizzed, no guide" UI fixture in `tests/ui/facts.spec.ts` moved from
