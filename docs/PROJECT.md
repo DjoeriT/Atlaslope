@@ -71,12 +71,15 @@ built yet (`docs/handoffs/2026-10-18-atlas-guide-page.md`). The owner remembers 
 Tracked in #127 (related #4).
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)
-#126 repetitive "If you like this, try" cards ("Tempranillo here too" x3, Navarra photo white band); #127 story guide above; Canarias guides
+Priority labels set by the owner 19 Oct 2026 (cleanup). Next: #127 Rioja map flyby missing; #126 repetitive "If you like this, try" cards
+("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
+outlines (Urbezo done, 12 left); #83 flaky Study tests; #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
+(React 19, MapLibre 6, Vite 8, TS 7, Vitest 5); #106 cause-to-taste chain; #103 enrich guides from more sources; #101 travel flags; #108
+Esri tile cost; #30 producers; #16 ready for friends; #15 mastery map and climate layer; #8, #7, #4, #3. Not in issues: Canarias guides
 need a polish pass (style lists "white, rosado and red", label terms read like regulation text); source quirks in the Mediterranean and
-Canarias handoffs. Older: #57, #42, #83 (flaky Study tests), #96 (alt texts), #101 (travel flags), #103 (enrich guides from more sources), #106 (later guide ideas),
-#108 (running/content costs, zoomed-out satellite), #29, #30, #18. Also: Cangas and Álava have no vineyard photos; Ribeira Sacra yield
-conflict; Getaria/Cangas pliego versions; Navarra pliego unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, share
-cards, sitemap) only on his go, pilot 2 guides first (`Review/website-plan.md`). Later: globe intro (needs MapLibre 5, with France), Cmd-K.
+Canarias handoffs; Cangas and Álava have no vineyard photos; Ribeira Sacra yield conflict; Getaria/Cangas pliego versions; Navarra pliego
+unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, share cards, sitemap) only on his go, pilot 2 guides first
+(`Review/website-plan.md`). Later: globe intro (needs MapLibre 5, with France), Cmd-K.
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
