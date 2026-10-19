@@ -23,3 +23,4 @@
 | Write | arlanza | Sonnet | 41,291 | 1.0 |
 | Write | abadia-retuerta | Sonnet | 38,973 | 1.0 |
 | Write | uruena | Sonnet | 34,559 | 0.9 |
+| Write | cebreros | Sonnet | 41,859 | 1.2 |

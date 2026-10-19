@@ -1,0 +1,139 @@
+{
+ "id": "cebreros",
+ "title": "Why Cebreros tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Some of Cebreros's vines grow above 1,000 m, on granite slopes that face south. Garnacha Tinta ripens to a high alcohol there, yet the wines still come out fresh.",
+  "cite": [
+   "cebreros-pliego:p12",
+   "cebreros-pliego:p13"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "sierra",
+   "beat": "place",
+   "title": "Between two rivers, under Gredos",
+   "paras": [
+    "The vineyards lie in the south-east of the province of Ávila, in an area of 1663.16 km2. They sit between the basins of the Alberche and the Tiétar, two tributaries of the Tajo. The eastern massif of the Sierra de Gredos runs between the two rivers.",
+    "The foothills of Gredos begin at Cerro Guisando, 1,303 m high, in El Tiemblo. Further west a line of peaks rises to around 2000 m. The land is rough but without sharp forms, with tall hills and steep slopes between flat-bottomed valleys called navas.",
+    "Vines grow mainly on the south-facing slopes of the hills on the left bank of the valley. The Tiétar valley is gentler than the Alberche, though its river still runs at 500 m, far below the peaks. Growers have picked south and south-east slopes for centuries, and some plots lie above 1,000 m."
+   ],
+   "cite": [
+    "cebreros-pliego:p7",
+    "cebreros-pliego:p9",
+    "cebreros-pliego:p10",
+    "cebreros-pliego:p12"
+   ],
+   "fly": [
+    {
+     "label": "Cerro Guisando, El Tiemblo",
+     "point": [
+      -4.48,
+      40.38
+     ],
+     "zoom": 10,
+     "caption": "Where the foothills of Gredos begin, at 1,303 m.",
+     "cite": [
+      "cebreros-pliego:p9"
+     ]
+    },
+    {
+     "label": "The Tiétar valley",
+     "point": [
+      -4.85,
+      40.2
+     ],
+     "zoom": 9,
+     "caption": "A gentler valley than the Alberche, with its river at 500 m below the peaks.",
+     "cite": [
+      "cebreros-pliego:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot and dry, but with altitude",
+   "paras": [
+    "The climate is Mediterranean with a continental touch. Summers are hot, long and dry, and winters are relatively short and not very cold. Rain falls mostly in autumn and winter, and June to September are the driest months. On the Gredos peaks the climate is mountain: very cold winters, cool summers and heavy rain all year.",
+    "The vineyards average 12 to 15 °C a year. July and August average 23.3 to 25.8 °C, and January and December 5.0 to 8.6 °C. The frost-free period runs from 215 days in the north to 275 in the south.",
+    "Yearly rainfall in the vineyards is 400 to 800 mm. In the south-west some areas pass 1000 mm.",
+    "The local microclimate is more moderate than the rest of Castilla y León and cooler than the lands to the south and east. The lack of rain in summer and early autumn assures healthy, high-quality harvests. The altitude gives the grapes very good acidity, and that brings freshness and liveliness to the wine."
+   ],
+   "cite": [
+    "cebreros-pliego:p11",
+    "cebreros-pliego:p13"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Granite, sand and old vines",
+   "paras": [
+    "Granite is the mark of the zone, and most of the vineyards stand on it. It is an acid rock, formed by the slow cooling of magma rich in silica in the Carboniferous. Some vines also grow on schist and on Quaternary deposits.",
+    "The soils are mostly sandy loam, slightly acid and low in organic matter. Granite with sandy loam gives the wines finesse and an elegant feel in the mouth.",
+    "Sandy soil also slowed phylloxera. It reached Ávila only in 1909, one of the last areas of the Iberian peninsula to be hit. Some vines stood on their own roots until the 1960s.",
+    "Today 94% of the vines are over 50 years old and 37% are over 80. Spacing is wide, generally more than 2.5 x 2.5 metres, at 1,600 vines per hectare. Together with low rain and poor soils, this gives very small crops of well-balanced grapes."
+   ],
+   "cite": [
+    "cebreros-pliego:p10",
+    "cebreros-pliego:p11",
+    "cebreros-pliego:p12",
+    "cebreros-pliego:p13",
+    "cebreros-pliego:p14"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Two grapes, and barrels of oak",
+   "paras": [
+    "Only two grapes lead the wines. Rosés and reds are at least 95% Garnacha Tinta, with Garnacha Tintorera and Tempranillo allowed as secondary reds. White wine is made only from Albillo Real. It is local to the area and different from Albillo Mayor, which is typical of other parts of Castilla y León. It makes complex, tasty, lively whites that age well in barrel.",
+    "Garnacha Tinta gives a high alcohol, yet altitude and climate keep the wine fresh. All the wines share a high alcohol and a high, balanced tartaric acidity. They live long, and the reds have the most potential for keeping. Whites, rosés and reds all come young or aged.",
+    "Barrel ageing changes the glass. Whites become more unctuous and fuller, with riper fruit and a memory of wood. Rosés and reds gain softness and persistence. Reds show toast and spice next to the fruit. Ageing is in oak barrels, and the clock starts on 1 November of the harvest year.",
+    "Yields are capped at 8,000 kg per hectare, or 56.00 hl per hectare. Pressing is gentle, and no more than 70 litres of wine may come from 100 kg of grapes."
+   ],
+   "cite": [
+    "cebreros-pliego:p4",
+    "cebreros-pliego:p5",
+    "cebreros-pliego:p6",
+    "cebreros-pliego:p7",
+    "cebreros-pliego:p8",
+    "cebreros-pliego:p12",
+    "cebreros-pliego:p13"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Fermentado en barrica",
+    "text": "The wine ferments and rests on its lees in oak barrels.",
+    "cite": [
+     "cebreros-pliego:p6"
+    ]
+   },
+   {
+    "term": "Vino de parcela",
+    "text": "All the grapes come from one plot or from neighbouring plots, with no herbicides and a soil analysis by the producer.",
+    "cite": [
+     "cebreros-pliego:p17"
+    ]
+   },
+   {
+    "term": "Vino de pueblo",
+    "text": "All the grapes come from one named municipality.",
+    "cite": [
+     "cebreros-pliego:p18"
+    ]
+   }
+  ],
+  "cite": [
+   "cebreros-pliego:p6",
+   "cebreros-pliego:p17",
+   "cebreros-pliego:p18"
+  ]
+ }
+}
