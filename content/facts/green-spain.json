@@ -4,9 +4,9 @@
   {
    "id": "txakoli-bizkaia",
    "why": {
-    "text": "Cool, humid Atlantic summers and southerly winds ripen Hondarrabi grapes slowly. The whites are high in acid, with citrus and herbal notes.",
+    "text": "Cool, humid summers with little sun ripen the grapes slowly. Acidity ends higher than in other zones.",
     "cite": [
-     "txakoli-bizkaia-doc:p5"
+     "txakoli-bizkaia-pliego:p10"
     ]
    },
    "grapes": {
@@ -16,22 +16,27 @@
      },
      {
       "local": "Hondarrabi Beltza"
+     },
+     {
+      "local": "Hondarrabi Zuri Zerratia",
+      "grape": "Petit Courbu"
      }
     ],
     "cite": [
-     "txakoli-bizkaia-wiki"
+     "txakoli-bizkaia-pliego:p5"
     ],
     "others": [
+     "Cabernet Franc",
      "Chardonnay",
      "Folle Blanche",
      "Gros Manseng",
-     "Petit Courbu",
      "Petit Manseng",
+     "Pinot Noir",
      "Riesling",
-     "Sauvignon Blanco"
+     "Sauvignon Blanc"
     ],
     "othersCite": [
-     "txakoli-bizkaia-doc:p8"
+     "txakoli-bizkaia-pliego:p5"
     ]
    },
    "styles": {
@@ -40,46 +45,45 @@
      "rose",
      "red"
     ],
-    "text": "Light, lightly acidic whites with citrus and herbal notes; also rosado, red and barrel-fermented white.",
+    "text": "Dry whites, rosados and reds. Berezia wines are aged for at least 5 months in tanks of cement, ceramic or wood.",
     "cite": [
-     "txakoli-bizkaia-doc:p1",
-     "txakoli-bizkaia-doc:p2",
-     "txakoli-bizkaia-doc:p3"
+     "txakoli-bizkaia-pliego:p1",
+     "txakoli-bizkaia-pliego:p4"
     ]
    },
    "climate": {
-    "text": "Atlantic, humid and mild, with cool summers and mostly southerly winds at ripening; wines reach 10.5 to 11.5 % alcohol.",
+    "text": "Atlantic, humid and mild, with cool summers. About 1,200 mm of rain and 1,710 hours of sun a year.",
     "cite": [
-     "txakoli-bizkaia-doc:p5"
+     "txakoli-bizkaia-pliego:p6",
+     "txakoli-bizkaia-pliego:p7"
     ]
    },
    "soil": {
     "text": "",
     "cite": []
    },
-   "altitude": {
-    "text": "Vineyard land at or below 400 m, anywhere in Bizkaia.",
-    "cite": [
-     "txakoli-bizkaia-doc:p4"
-    ]
-   },
    "tastes": {
-    "text": "Whites: pale to straw yellow, greenish; white and citrus fruit, herbs; lightly acidic, slightly bitter finish. Rosés: strawberry to raspberry; wild berries. Reds: picota to violet; lightly tannic. Barrel whites add balsamic notes.",
+    "text": "Whites: pale yellow to straw; balanced, fresh; white fruit, citrus, herbs; slightly bitter finish. Rosés: raspberry to salmon pink. Reds: violet red to picota; balanced, tannic. Berezia adds spice, balsamic and toast.",
     "cite": [
-     "txakoli-bizkaia-doc:p1",
-     "txakoli-bizkaia-doc:p2",
-     "txakoli-bizkaia-doc:p3"
+     "txakoli-bizkaia-pliego:p2",
+     "txakoli-bizkaia-pliego:p3",
+     "txakoli-bizkaia-pliego:p10"
     ]
    },
    "famous": {
     "styles": [
      {
-      "name": "Txacolí blanco fermentado en barrica",
-      "text": "White fermented in barrel; white and citrus fruit, herbs, balsamic notes."
+      "name": "Aparta Berezia",
+      "text": "Made by special methods such as skin contact; pale yellow to amber or orange."
+     },
+     {
+      "name": "Berezia",
+      "text": "Aged at least 5 months in tanks; spice, balsamic, nuts and toast."
      }
     ],
     "cite": [
-     "txakoli-bizkaia-doc:p3"
+     "txakoli-bizkaia-pliego:p3",
+     "txakoli-bizkaia-pliego:p4"
     ]
    },
    "producers": {
@@ -90,34 +94,45 @@
   {
    "id": "cangas",
    "why": {
-    "text": "Stony, slate-rich soils on steep slopes regulate rainwater. Cold winters and very hot summers shape the wines.",
+    "text": "Stony, slate-rich soils on steep slopes drain rainwater well. Winters are cold and summers very hot.",
     "cite": [
-     "cangas-doc:p6"
+     "cangas-pliego:p7"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Albarín Tinto"
+     },
+     {
+      "local": "Carrasquín"
+     },
+     {
+      "local": "Verdejo Negro"
+     },
+     {
+      "local": "Mencía"
+     },
+     {
+      "local": "Albarín Blanco"
+     }
+    ],
+    "cite": [
+     "cangas-pliego:p4"
+    ],
     "others": [
-     "Albarín Tinto",
-     "Albarín Blanco",
-     "Verdejo Negro",
-     "Mencía",
-     "Carrasquín",
-     "Albillo Mayor",
      "Garnacha Tintorera",
-     "Gewürztraminer",
-     "Godello",
      "Merlot",
-     "Moscatel de Grano Menudo",
-     "Picapoll Blanco",
      "Pinot Noir",
-     "Syrah"
+     "Syrah",
+     "Albillo Mayor",
+     "Godello",
+     "Gewürztraminer",
+     "Moscatel de Grano Menudo",
+     "Picapoll Blanco"
     ],
     "othersCite": [
-     "cangas-doc:p5",
-     "cangas-doc:p6",
-     "cangas-doc:p10"
+     "cangas-pliego:p4"
     ]
    },
    "styles": {
@@ -125,31 +140,32 @@
      "red",
      "white"
     ],
-    "text": "Young and oak-aged reds and whites; fruity, with floral notes and, when aged, spice and toast.",
+    "text": "Young reds and whites. Both can also be aged in oak.",
     "cite": [
-     "cangas-doc:p1",
-     "cangas-doc:p2",
-     "cangas-doc:p3"
+     "cangas-pliego:p1",
+     "cangas-pliego:p2",
+     "cangas-pliego:p9"
     ]
    },
    "climate": {
-    "text": "Low winter temperatures, very hot summers and a long frost period.",
+    "text": "Continental Mediterranean: winters down to -10 °C, summers above 30 °C, six months of frost, less rain than elsewhere in Asturias.",
     "cite": [
-     "cangas-doc:p6"
+     "cangas-pliego:p7"
     ]
    },
    "soil": {
-    "text": "Stony soils with abundant slate, on steep slopes.",
+    "text": "Stony soils on slate and schist, acidic but near neutral (pH 6), on steep slopes.",
     "cite": [
-     "cangas-doc:p6"
+     "cangas-pliego:p4",
+     "cangas-pliego:p7"
     ]
    },
    "tastes": {
-    "text": "Reds: ruby to cherry red; fruity and floral; aged reds add balsamic, spice and toast from oak. Whites: pale yellow to greenish; fruity with floral and mineral touches; aged whites are spiced and toasty.",
+    "text": "Reds: ruby to cherry red; wild red berries; fresh, light tannin. Aged reds add balsamic, spice and toast. Whites: pale yellow to greenish; stone fruit, white flowers, citrus, mineral. Aged whites add spice and toast.",
     "cite": [
-     "cangas-doc:p1",
-     "cangas-doc:p2",
-     "cangas-doc:p3"
+     "cangas-pliego:p1",
+     "cangas-pliego:p2",
+     "cangas-pliego:p7"
     ]
    },
    "famous": {
@@ -164,25 +180,34 @@
   {
    "id": "txakoli-getaria",
    "why": {
-    "text": "Vineyards lie mostly by the sea, in a mild Atlantic climate with 1,600 mm of rain. With neutral soils, they give high-acid txakoli.",
+    "text": "Vines by the sea, 1,600 mm of rain and dry southerly winds late in ripening give a fresh, light txakoli.",
     "cite": [
-     "txakoli-getaria-doc:p3"
+     "txakoli-getaria-pliego:p3",
+     "txakoli-getaria-pliego:p5"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Ondarrabi Zuri",
+      "grape": "Hondarrabi Zuri"
+     },
+     {
+      "local": "Ondarrabi Beltza",
+      "grape": "Hondarrabi Beltza"
+     }
+    ],
+    "cite": [
+     "txakoli-getaria-pliego:p2"
+    ],
     "others": [
-     "Hondarrabi Zuri",
-     "Hondarrabi Beltza",
-     "Chardonnay",
-     "Gros Manseng",
      "Petit Courbu",
-     "Riesling"
+     "Gros Manseng",
+     "Riesling",
+     "Chardonnay"
     ],
     "othersCite": [
-     "txakoli-getaria-doc:p3",
-     "txakoli-getaria-doc:p7"
+     "txakoli-getaria-pliego:p2"
     ]
    },
    "styles": {
@@ -191,28 +216,30 @@
      "rose",
      "red"
     ],
-    "text": "Fresh, light whites with a slight spritz; also rosado, red and barrel-fermented white.",
+    "text": "Almost all white, fresh and light with a slight fizz. Rosado and red are rare. Barrel-fermented white is also made.",
     "cite": [
-     "txakoli-getaria-doc:p1",
-     "txakoli-getaria-doc:p2"
+     "txakoli-getaria-pliego:p1",
+     "txakoli-getaria-pliego:p2",
+     "txakoli-getaria-pliego:p5"
     ]
    },
    "climate": {
-    "text": "Mild Atlantic: about 1,600 mm of rain, mean 18 to 20 °C during ripening, south and southwest winds late in ripening.",
+    "text": "Mild Atlantic with sea influence: 1,600 mm of rain, mean 13.4 °C, 1,800 hours of sun. No spring frost risk.",
     "cite": [
-     "txakoli-getaria-doc:p3"
+     "txakoli-getaria-pliego:p3"
     ]
    },
    "soil": {
-    "text": "Neutral soils, with most vineyards close to the sea.",
+    "text": "Hard limestone and sandstone alternate with soft marl and clay rock. Loam and clay-loam textures, usually neutral pH.",
     "cite": [
-     "txakoli-getaria-doc:p3"
+     "txakoli-getaria-pliego:p3"
     ]
    },
    "tastes": {
-    "text": "Whites: pale green-yellow to gold; fresh, with fine fizz and a slightly bitter finish. Rosés: pink to fuchsia; citrus, green fruit. Reds: red-garnet; wild berries, light acidity. Barrel-fermented whites: new wood notes.",
+    "text": "Whites: pale green-yellow to gold; fresh green fruit, herbs; fine fizz, slightly bitter finish. Rosés: pink to fuchsia; citrus, mint. Reds: garnet; black pepper, then blackberry, raspberry. Barrel whites: new wood.",
     "cite": [
-     "txakoli-getaria-doc:p1"
+     "txakoli-getaria-pliego:p1",
+     "txakoli-getaria-pliego:p2"
     ]
    },
    "famous": {
@@ -223,7 +250,7 @@
      }
     ],
     "cite": [
-     "txakoli-getaria-doc:p1"
+     "txakoli-getaria-pliego:p2"
     ]
    },
    "producers": {
@@ -234,23 +261,40 @@
   {
    "id": "txakoli-alava",
    "why": {
-    "text": "Slightly acid soil sits under an Atlantic climate with frequent south wind. The txakoli is round and low in acid, with citrus and herbal flavours.",
+    "text": "Atlantic climate, 170 days of south wind and a mean of 13.1 °C give round txakoli with citrus and herbal flavours.",
     "cite": [
-     "txakoli-alava-doc:p4"
+     "txakoli-alava-pliego:p5",
+     "txakoli-alava-pliego:p6"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Hondarrabi Zuri"
+     },
+     {
+      "local": "Hondarrabi Beltza"
+     },
+     {
+      "local": "Hondarrabi Zuri Zerratia",
+      "grape": "Petit Courbu"
+     }
+    ],
+    "cite": [
+     "txakoli-alava-pliego:p4"
+    ],
     "others": [
-     "Ondarrabi Zuri",
-     "Ondarrabi Beltza",
-     "Petit Courbu"
+     "Gros Manseng",
+     "Petit Manseng",
+     "Sauvignon Blanc",
+     "Riesling",
+     "Chardonnay",
+     "Pinot Noir",
+     "Cabernet Franc"
     ],
     "othersCite": [
-     "txakoli-alava-doc:p4"
-    ],
-    "othersPartial": true
+     "txakoli-alava-pliego:p4"
+    ]
    },
    "styles": {
     "kinds": [
@@ -258,38 +302,44 @@
      "rose",
      "red"
     ],
-    "text": "Whites, rosados and reds, plus barrel-fermented white; whites show green apple and citrus, with a slight bitter finish.",
+    "text": "Whites, rosados and reds, usually dry. Berezia versions are aged at least 5 months. Semi-dry and sweet styles are also allowed.",
     "cite": [
-     "txakoli-alava-doc:p2"
+     "txakoli-alava-pliego:p1",
+     "txakoli-alava-pliego:p2"
     ]
    },
    "climate": {
-    "text": "Atlantic; mean 13.1 °C (highs 18.7, lows 7.5) and south wind on about 170 days a year.",
+    "text": "Atlantic: mean 13.1 °C (highs 18.7, lows 7.5), about 899 mm of rain and south wind on 170 days a year.",
     "cite": [
-     "txakoli-alava-doc:p4"
+     "txakoli-alava-pliego:p4",
+     "txakoli-alava-pliego:p5",
+     "txakoli-alava-pliego:p6"
     ]
    },
    "soil": {
-    "text": "Slightly acid soil.",
+    "text": "Soil pH about 5.2 to 8.2, with active limestone.",
     "cite": [
-     "txakoli-alava-doc:p4"
+     "txakoli-alava-pliego:p5"
     ]
    },
    "tastes": {
-    "text": "Whites: pale yellow to straw; green apple, tropical fruit, citrus; lightly acidic. Rosés: pale to salmon; red fruit; slight fizz. Reds: black cherry, violet tints; slightly bitter finish. Barrel whites: toast and citrus.",
+    "text": "Whites: pale yellow to straw; green apple, tropical fruit, citrus; lightly acidic, slight prickle. Rosés: pale pink to salmon; red fruit. Reds: black cherry, violet tints; green pepper, berries. Berezia adds spice, nuts and toast.",
     "cite": [
-     "txakoli-alava-doc:p2"
+     "txakoli-alava-pliego:p2",
+     "txakoli-alava-pliego:p3"
     ]
    },
    "famous": {
     "styles": [
      {
-      "name": "Txakolis blancos fermentados en barrica",
-      "text": "White fermented in barrel; toasted barrel notes with citrus fruit."
+      "name": "Berezia",
+      "text": "Aged at least 5 months in wood, ceramic or cement; spice, nuts, toast."
      }
     ],
     "cite": [
-     "txakoli-alava-doc:p2"
+     "txakoli-alava-pliego:p2",
+     "txakoli-alava-pliego:p3",
+     "txakoli-alava-pliego:p4"
     ]
    },
    "producers": {
@@ -300,9 +350,10 @@
   {
    "id": "rias-baixas",
    "why": {
-    "text": "Pergola-trained vines grow in a humid Atlantic climate on poor, thin, acidic soils. Albariño dominates the zone and gives acid, aromatic wines.",
+    "text": "Mild, humid Atlantic climate and poor, thin, acidic soils, with vines on pergolas. Wines are known for their acidity and aroma.",
     "cite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-pliego:p12",
+     "rias-baixas-pliego:p13"
     ]
    },
    "grapes": {
@@ -312,26 +363,27 @@
      }
     ],
     "cite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-pliego:p4",
+     "rias-baixas-pliego:p13"
     ],
     "others": [
      "Treixadura",
-     "Loureiro Blanco",
+     "Loureira",
      "Caíño Blanco",
-     "Brancellao",
-     "Castañal",
      "Torrontés",
-     "Sousón",
-     "Pedral",
-     "Mencía",
-     "Loureiro Tinto",
      "Godello",
+     "Ratiño Gallega",
+     "Caíño Tinto",
      "Espadeiro",
-     "Caíño Tinto"
+     "Loureiro Tinto",
+     "Sousón",
+     "Mencía",
+     "Brancellao",
+     "Pedral",
+     "Castañal"
     ],
     "othersCite": [
-     "rias-baixas-doc:p5",
-     "rias-baixas-doc:p9"
+     "rias-baixas-pliego:p11"
     ]
    },
    "styles": {
@@ -340,52 +392,54 @@
      "red",
      "sparkling"
     ],
-    "text": "Albariño and other whites, some oak-aged; also red and quality sparkling wine.",
+    "text": "Mostly white, Albariño above all. Reds are less common. Oak-aged whites are sold as Barrica. Quality sparkling wine is also made.",
     "cite": [
-     "rias-baixas-doc:p1"
+     "rias-baixas-pliego:p4"
     ]
    },
    "climate": {
-    "text": "Atlantic, close to the sea and humid.",
+    "text": "Marked Atlantic and mild (10 to 25 °C), with about 1,300 mm of rain a year, much less in summer.",
     "cite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-pliego:p12"
     ]
    },
    "soil": {
-    "text": "Low pH, poor in minerals and nutrients, and thin.",
+    "text": "Mostly granite, with some schist and river sediments. Sandy, acidic, poor in nutrients and fairly thin.",
     "cite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-pliego:p12"
     ]
    },
    "altitude": {
-    "text": "Vineyards below 300 m.",
+    "text": "Rarely above 300 m.",
     "cite": [
-     "rias-baixas-doc:p5"
+     "rias-baixas-pliego:p12"
     ]
    },
    "tastes": {
-    "text": "Albariño: straw yellow with gold or green tones; citrus, floral and apple aromas; light acidity, good structure. Barrel whites: toast, smoke, vanilla. Reds: picota with violet tones; red fruit; lightly tannic.",
+    "text": "Albariño: straw yellow with gold or green tints; citrus, floral, apple; light acidity, good structure. Barrica: golden; toast, smoke, vanilla. Reds: picota with violet tints; red fruit; moderately tannic.",
     "cite": [
-     "rias-baixas-doc:p1"
+     "rias-baixas-pliego:p6",
+     "rias-baixas-pliego:p7"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Rías Baixas Albariño",
-      "text": "White with great aromatic complexity: citrus, floral and apple."
+      "text": "White of great aromatic complexity: citrus, floral and apple."
      },
      {
-      "name": "Barrica",
-      "text": "Barrel white: golden; toast, smoke, vanilla and dried fruit."
+      "name": "Rías Baixas Barrica",
+      "text": "Oak-aged white: golden; toast, smoke, vanilla and dried fruit."
      },
      {
-      "name": "Vino espumoso de calidad",
-      "text": "Quality sparkling wine: fine, persistent bubble, fresh and fruity."
+      "name": "Rías Baixas Espumoso",
+      "text": "Sparkling: fine, persistent bubble; fresh and lightly acidic."
      }
     ],
     "cite": [
-     "rias-baixas-doc:p1"
+     "rias-baixas-pliego:p6",
+     "rias-baixas-pliego:p7"
     ]
    },
    "producers": {
@@ -396,10 +450,10 @@
   {
    "id": "ribeira-sacra",
    "why": {
-    "text": "Steep terraces on slate and granite rise above the Miño and Sil canyons. Long, hot summers ripen Mencía and Godello.",
+    "text": "Steep terraces on slate and granite rise above the Miño and Sil canyons. The climate is more continental than Atlantic, with long hot summers.",
     "cite": [
-     "ribeira-sacra-doc:p11",
-     "ribeira-sacra-doc:p12"
+     "ribeira-sacra-pliego:p11",
+     "ribeira-sacra-pliego:p12"
     ]
    },
    "grapes": {
@@ -418,7 +472,7 @@
      }
     ],
     "cite": [
-     "ribeira-sacra-doc:p15"
+     "ribeira-sacra-pliego:p15"
     ],
     "others": [
      "Loureira",
@@ -438,7 +492,7 @@
      "Gran Negro"
     ],
     "othersCite": [
-     "ribeira-sacra-doc:p11"
+     "ribeira-sacra-pliego:p11"
     ]
    },
    "styles": {
@@ -449,35 +503,35 @@
     ],
     "text": "Reds, whites and rosados, usually young, some aged in barrel; Mencía leads the reds, Godello the whites.",
     "cite": [
-     "ribeira-sacra-doc:p4",
-     "ribeira-sacra-doc:p15"
+     "ribeira-sacra-pliego:p4",
+     "ribeira-sacra-pliego:p15"
     ]
    },
    "climate": {
     "text": "More continental than Atlantic: long hot summers, mild autumns, 700 to 800 mm rain, mean 11.3 °C, strong winds.",
     "cite": [
-     "ribeira-sacra-doc:p11",
-     "ribeira-sacra-doc:p12"
+     "ribeira-sacra-pliego:p11",
+     "ribeira-sacra-pliego:p12"
     ]
    },
    "soil": {
-    "text": "Alluvial soils over slate, with more granite in places.",
+    "text": "Alluvial soils over slate, with granite in places. Acidic, and riverbank soils hold little moisture.",
     "cite": [
-     "ribeira-sacra-doc:p12"
+     "ribeira-sacra-pliego:p12"
     ]
    },
    "tastes": {
     "text": "Reds: cherry to purple red; red berry or stone-fruit aromas; balanced. Whites: pale to golden yellow; white tree fruit. Rosés: pale pink to cherry; wild berries. Barrica wines: spice, wood or oak.",
     "cite": [
-     "ribeira-sacra-doc:p5",
-     "ribeira-sacra-doc:p6"
+     "ribeira-sacra-pliego:p5",
+     "ribeira-sacra-pliego:p6"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Súmmum",
-      "text": "Made with a higher share of the principal (preferred) grape varieties."
+      "text": "Made with at least 85% of the principal grape varieties."
      },
      {
       "name": "Barrica",
@@ -485,12 +539,13 @@
      },
      {
       "name": "Guarda",
-      "text": "Aged in wood barrels or other tanks."
+      "text": "Aged in wood, concrete or other non-steel tanks."
      }
     ],
     "cite": [
-     "ribeira-sacra-doc:p4",
-     "ribeira-sacra-doc:p6"
+     "ribeira-sacra-pliego:p4",
+     "ribeira-sacra-pliego:p6",
+     "ribeira-sacra-pliego:p7"
     ]
    },
    "producers": {
@@ -501,9 +556,11 @@
   {
    "id": "valdeorras",
    "why": {
-    "text": "Sloping, sometimes terraced vineyards sit in a Mediterranean-oceanic climate. Godello comes out structured and Mencía red-fruited.",
+    "text": "Slate and granite soils on sloping, often terraced vineyards meet a Mediterranean-oceanic climate. Godello comes out fresh and elegant.",
     "cite": [
-     "valdeorras-doc:p6"
+     "valdeorras-pliego:p11",
+     "valdeorras-pliego:p12",
+     "valdeorras-pliego:p14"
     ]
    },
    "grapes": {
@@ -516,15 +573,30 @@
      }
     ],
     "cite": [
-     "valdeorras-doc:p6"
+     "valdeorras-pliego:p14"
     ],
     "others": [
+     "Loureira",
+     "Treixadura",
+     "Dona Branca",
+     "Albariño",
+     "Torrontés",
+     "Lado",
+     "Palomino",
+     "Tempranillo",
+     "Brancellao",
+     "Merenzao",
+     "Sousón",
+     "Caíño Tinto",
+     "Espadeiro",
+     "Ferrón",
+     "Gran Negro",
+     "Garnacha Tintorera",
      "Mouratón"
     ],
     "othersCite": [
-     "valdeorras-doc:p6"
-    ],
-    "othersPartial": true
+     "valdeorras-pliego:p10"
+    ]
    },
    "styles": {
     "kinds": [
@@ -533,35 +605,43 @@
      "sparkling",
      "sweet"
     ],
-    "text": "Godello whites and Mencía reds; also quality sparkling wine and Tostado, made from raisined grapes.",
+    "text": "Godello whites and Mencía reds; also rosados, quality sparkling wine and Tostado, made from raisined grapes.",
     "cite": [
-     "valdeorras-doc:p2",
-     "valdeorras-doc:p3"
+     "valdeorras-pliego:p5",
+     "valdeorras-pliego:p6"
     ]
    },
    "climate": {
-    "text": "Mediterranean-oceanic climate; vines grow on slopes, sometimes steep terraces.",
+    "text": "Mediterranean-oceanic with Atlantic influence: cold winters, warm summers, mean 11 °C, 850 to 1,000 mm of rain.",
     "cite": [
-     "valdeorras-doc:p6"
+     "valdeorras-pliego:p12"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Five types: slate, limestone, granite, iron-rich clay and alluvial. Slate soils are shallow and stony.",
+    "cite": [
+     "valdeorras-pliego:p11"
+    ]
+   },
+   "altitude": {
+    "text": "The whole territory lies between 300 and 700 m.",
+    "cite": [
+     "valdeorras-pliego:p13"
+    ]
    },
    "tastes": {
-    "text": "Whites: pale yellow, greenish to amber; fresh, fruity, soft, light. Reds: violet-ruby picota; ripe red fruit; fleshy, dry, medium-high acidity. Tostado: intense, floral and honeyed, sweet.",
+    "text": "Whites: pale yellow with green to amber tints; fruity, persistent. Reds: picota to ruby; red fruit; medium acidity. Tostado: yellow-gold or deep red; fruit, honey, caramel, raisin; sweet.",
     "cite": [
-     "valdeorras-doc:p2",
-     "valdeorras-doc:p3",
-     "valdeorras-doc:p4"
+     "valdeorras-pliego:p7",
+     "valdeorras-pliego:p9",
+     "valdeorras-pliego:p14"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Tostado",
-      "text": "Wine from raisined grapes; floral, honeyed, intense and sweet."
+      "text": "Raisined grapes dried under cover for at least 30 days; naturally sweet."
      },
      {
       "name": "Producción controlada",
@@ -569,16 +649,17 @@
      },
      {
       "name": "Crianza",
-      "text": "Aged in wood; wood shapes its character."
+      "text": "Aged in oak barrels; fruit with barrel aromas."
      },
      {
       "name": "Gran Reserva",
-      "text": "Aged longer in wood; wood shapes its character."
+      "text": "Aged in oak barrels; spiced, with barrel aromas."
      }
     ],
     "cite": [
-     "valdeorras-doc:p2",
-     "valdeorras-doc:p4"
+     "valdeorras-pliego:p6",
+     "valdeorras-pliego:p8",
+     "valdeorras-pliego:p9"
     ]
    },
    "producers": {
@@ -589,77 +670,93 @@
   {
    "id": "ribeiro",
    "why": {
-    "text": "The climate is temperate Atlantic, with big day-night swings and little rain after fruit set. Rugged, thirsty soils give fresh, balanced wines.",
+    "text": "On the edge of where vines ripen. Big day-night swings slow ripening, so the grapes keep their natural freshness.",
     "cite": [
-     "ribeiro-doc:p4"
+     "ribeiro-pliego:p22"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Treixadura"
+     }
+    ],
+    "cite": [
+     "ribeiro-pliego:p23"
+    ],
     "others": [
-     "Brancellao",
      "Albariño",
-     "Treixadura",
-     "Torrontés",
-     "Sousón",
-     "Mencía",
-     "Loureiro Blanco",
+     "Albilla do Avia",
+     "Branco Lexítimo",
+     "Caíño Blanco",
      "Godello",
-     "Ferrón",
-     "Caíño Tinto",
-     "Caíño Longo",
+     "Lado",
+     "Loureira",
+     "Torrontés",
+     "Brancellao",
      "Caíño Bravo",
-     "Albillo",
+     "Caíño Longo",
+     "Caíño Tinto",
+     "Espadeiro",
+     "Ferrón",
+     "Mencía",
+     "Merenzao",
+     "Sousón",
+     "Garnacha Tintorera",
      "Tempranillo",
-     "Palomino",
-     "Macabeo",
-     "Garnacha Tintorera"
+     "Palomino"
     ],
     "othersCite": [
-     "ribeiro-doc:p4",
-     "ribeiro-doc:p8"
+     "ribeiro-pliego:p15"
     ]
    },
    "styles": {
     "kinds": [
      "white",
      "red",
+     "sparkling",
      "sweet"
     ],
-    "text": "Fresh whites and reds, plus Tostado, a naturally sweet wine from grapes dried indoors.",
+    "text": "Whites and reds, including Castes (Galician for grape varieties), made from the principal grapes. Also Barrica, quality sparkling wine and Tostado, a sweet wine from raisined grapes.",
     "cite": [
-     "ribeiro-doc:p1",
-     "ribeiro-doc:p4"
+     "ribeiro-pliego:p5"
     ]
    },
    "climate": {
-    "text": "Temperate Atlantic, with large day-night temperature differences and little rain from fruit set.",
+    "text": "Transition zone: temperate Mediterranean with Atlantic influence. Big day-night swings and little rain after fruit set.",
     "cite": [
-     "ribeiro-doc:p4"
+     "ribeiro-pliego:p22"
     ]
    },
    "soil": {
-    "text": "Rugged, harsh soils with low water-holding capacity.",
+    "text": "Rugged soils, mostly granite, with low water-holding capacity.",
     "cite": [
-     "ribeiro-doc:p4"
+     "ribeiro-pliego:p22"
     ]
    },
    "tastes": {
-    "text": "Whites: pale to golden yellow; ripe and fresh fruit, flowers, honey, herbs; fresh, light. Reds: violet to cherry red; fruit, flowers, spice; fresh, medium to high tannin. Tostado: amber to mahogany, sweet.",
+    "text": "Whites: pale to golden yellow; ripe and fresh fruit, flowers, honey, herbs; fresh, balanced. Reds: violet red to cherry; red and black fruit, flowers; fresh, medium to high tannin. Tostado: amber to mahogany; sweet, long.",
     "cite": [
-     "ribeiro-doc:p1"
+     "ribeiro-pliego:p8",
+     "ribeiro-pliego:p9",
+     "ribeiro-pliego:p11"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Ribeiro Tostado",
-      "text": "Wine from raisined grapes; amber to mahogany, honeyed, sweet and long."
+      "text": "Raisined-grape wine; amber to mahogany, honeyed, sweet and long."
+     },
+     {
+      "name": "Ribeiro Castes",
+      "text": "Made from principal grapes; more complexity, structure and length."
      }
     ],
     "cite": [
-     "ribeiro-doc:p1"
+     "ribeiro-pliego:p5",
+     "ribeiro-pliego:p9",
+     "ribeiro-pliego:p11"
     ]
    },
    "producers": {
@@ -670,84 +767,72 @@
   {
    "id": "monterrei",
    "why": {
-    "text": "Low rain and hot summers suit native grapes, with big day-night swings at ripening. They give balanced wines with floral and fruity notes.",
+    "text": "Hot, dry summers and day-night swings of up to 30 degrees at ripening. Native grapes give aromatic, fresh, full-bodied wines.",
     "cite": [
-     "monterrei-doc:p5"
+     "monterrei-pliego:p14"
     ]
    },
    "grapes": {
-    "main": [
-     {
-      "local": "Godello"
-     },
-     {
-      "local": "Doña Blanca"
-     },
-     {
-      "local": "Treixadura"
-     },
-     {
-      "local": "Mencía"
-     },
-     {
-      "local": "Merenzao"
-     }
-    ],
-    "cite": [
-     "monterrei-wiki"
-    ],
+    "main": [],
+    "cite": [],
     "others": [
      "Albariño",
      "Blanca de Monterrei",
      "Caíño Blanco",
+     "Dona Branca",
+     "Godello",
+     "Loureira",
+     "Treixadura",
      "Caíño Tinto",
-     "Loureiro Blanco",
+     "Mencía",
+     "Merenzao",
      "Sousón",
      "Tempranillo"
     ],
     "othersCite": [
-     "monterrei-doc:p8"
+     "monterrei-pliego:p12"
     ]
    },
    "styles": {
     "kinds": [
      "white",
-     "red"
+     "red",
+     "rose"
     ],
-    "text": "Whites and reds, young or aged in oak; whites floral and fruity, reds with red fruit and soft tannins.",
+    "text": "Whites, reds and rosados, usually drunk young. Barrica, crianza, reserva and gran reserva are aged versions.",
     "cite": [
-     "monterrei-doc:p1",
-     "monterrei-doc:p2"
+     "monterrei-pliego:p7"
     ]
    },
    "climate": {
-    "text": "Low rainfall, high summer temperatures and strong day-night temperature swings during ripening.",
+    "text": "Temperate Mediterranean with a continental lean and Atlantic influence: hot dry summers, cold winters, swings up to 30 degrees at ripening.",
     "cite": [
-     "monterrei-doc:p5"
+     "monterrei-pliego:p14"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Slate and schist, granite and sand with low pH, and mixed sedimentary soils.",
+    "cite": [
+     "monterrei-pliego:p13"
+    ]
    },
    "tastes": {
-    "text": "Whites: pale yellow with green tints; fruity and floral; fresh, balanced, persistent. Reds: cherry red with purple tints; red fruit and flowers; soft tannins. Oak-aged wines add spice and toast.",
+    "text": "Whites: pale yellow to gold; tree or tropical fruit. Reds: violet red to chestnut; red or black fruit. Rosés: pale pink to cherry; red or black fruit. All balanced in alcohol and acidity. Aged wines add spice or toast.",
     "cite": [
-     "monterrei-doc:p1",
-     "monterrei-doc:p2",
-     "monterrei-doc:p3"
+     "monterrei-pliego:p8",
+     "monterrei-pliego:p9"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Barrica, Crianza, Reserva, Gran Reserva",
-      "text": "Oak-aged white or red; spice and toast from the wood."
+      "text": "Aged white or red; fruit with spice or toast."
      }
     ],
     "cite": [
-     "monterrei-doc:p2",
-     "monterrei-doc:p3"
+     "monterrei-pliego:p7",
+     "monterrei-pliego:p9"
     ]
    },
    "producers": {

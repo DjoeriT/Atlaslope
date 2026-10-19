@@ -13,12 +13,13 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones and the 16 Castilla y León places, each for a place in the tree', () => {
-    expect(guides.map((g) => g.id)).toEqual(expect.arrayContaining([
-      'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
-      'abadia-retuerta', 'arlanza', 'arribes', 'bierzo', 'cebreros', 'cigales', 'dehesa-penalba', 'leon', 'ribera-del-duero', 'rueda',
-      'sierra-de-salamanca', 'tierra-del-vino-de-zamora', 'toro', 'uruena', 'valles-de-benavente', 'valtiendas',
-    ]));
+  it('exist for Rioja and its three zones, the nine Green Spain places and the 16 Castilla y León places, each for a place in the tree', () => {
+    expect(guides.map((g) => g.id).sort()).toEqual([
+      'abadia-retuerta', 'arlanza', 'arribes', 'bierzo', 'cangas', 'cebreros', 'cigales', 'dehesa-penalba', 'leon', 'monterrei',
+      'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
+      'rueda', 'sierra-de-salamanca', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria',
+      'uruena', 'valdeorras', 'valles-de-benavente', 'valtiendas',
+    ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });
 

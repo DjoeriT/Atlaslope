@@ -97,7 +97,7 @@ def main():
         kind = r["kind"]
         quiz = "none" if (kind == "VP" or r["euFile"] in NOT_QUIZZED) else ("core" if kind in ("DO", "DOCa") else "vc")
         place = {"id": pid, "name": hit["name"] if hit else name, "official": r["official"], "kind": kind, "level": "place",
-                 "parent": "spain", "region": (hit or miss)["region"], "community": r["community"].title(), "euFile": r["euFile"],
+                 "parent": "spain", "region": (hit or miss)["region"], "community": re.sub(r" (De|Del|Y) ", lambda m: f" {m.group(1).lower()} ", r["community"].title()), "euFile": r["euFile"],
                  "layerCode": hit["code"] if hit else None,
                  "boundary": "mapa-2014" if hit else "to-fetch", "centroid": hit["centroid"] if hit else None, "quiz": quiz}
         if not hit and pid in added: place["boundary"], place["centroid"] = "added", added[pid]

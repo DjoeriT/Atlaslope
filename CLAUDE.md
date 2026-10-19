@@ -51,6 +51,8 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Licence: code MIT; his writing all rights reserved (`NOTICE.md`); data keeps its own terms.
 - **Releases carry their own records**: the slice PR holds the handoff and tester note; no records PR after it (17 Oct: 6 records PRs in one day).
   Push when the PR can stand on its own, not in bursts (CI cancels the older run); confirm the branch moved on GitHub before saying CI runs.
+- **Guide format**: any change to the guide format (sections, order, fields, source rules, checks) updates `docs/guides.md` in the same
+  PR (owner, 19 Oct 2026, after the format had lived only in a mock and a thread).
 - Plans end with Context, Upside (measured), Risks, Effort. Never tune data or thresholds to make a test pass. A new rule names its incident.
 
 ## Backlog

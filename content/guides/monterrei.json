@@ -1,0 +1,131 @@
+{
+  "id": "monterrei",
+  "title": "Why Monterrei tastes the way it does",
+  "minutes": 2,
+  "lede": {
+    "text": "Summers are hot and dry, and winters are cold. Temperature swings reach 30 degrees during ripening.",
+    "cite": [
+      "monterrei-pliego:p14"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Rosado",
+        "text": "A rosé must be made with at least 85% red grapes."
+      }
+    ],
+    "cite": [
+      "monterrei-pliego:p10"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "The Támega basin",
+      "beat": "place",
+      "paras": [
+        "The Monterrei zone belongs to the basin of the river Duero, because the Támega flows into it. The Támega crosses the zone from north to south.",
+        "The zone has two subzones, the Monterrei valley and the Monterrei hillside.",
+        "The valley subzone takes in parishes of four municipalities: Castrelo do Val, Monterrei, Oímbra and Verín. The hillside subzone includes the municipality of Vilardevós and parishes of several others."
+      ],
+      "cite": [
+        "monterrei-pliego:p11",
+        "monterrei-pliego:p14"
+      ],
+      "fly": [
+        {
+          "label": "Monterrei",
+          "place": "monterrei",
+          "caption": "The zone has two subzones, the Monterrei valley and the Monterrei hillside.",
+          "cite": [
+            "monterrei-pliego:p11"
+          ]
+        },
+        {
+          "label": "The Támega",
+          "point": [
+            -7.4473,
+            41.965
+          ],
+          "zoom": 10.5,
+          "caption": "The Támega crosses the zone from north to south, into the Duero basin.",
+          "cite": [
+            "monterrei-pliego:p14"
+          ]
+        },
+        {
+          "label": "Monterrei castle hill",
+          "point": [
+            -7.4491,
+            41.9468
+          ],
+          "zoom": 11,
+          "caption": "Federico Justo Méndez wrote in Brotes de Raíces Históricas that the valley's wines stood alongside those of Porto.",
+          "cite": [
+            "monterrei-pliego:p12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Hot, dry summers, cold winters",
+      "beat": "weather",
+      "paras": [
+        "The climate is temperate Mediterranean, leaning continental, with an Atlantic influence.",
+        "Summers are hot and dry. Winters are cold.",
+        "Temperature swings are large, up to 30 degrees during ripening.",
+        "Low rain and high summer heat stand out. Both are quite different from other Galician wine zones."
+      ],
+      "cite": [
+        "monterrei-pliego:p14"
+      ],
+      "fly": [
+        {
+          "label": "Monterrei",
+          "place": "monterrei",
+          "caption": "Swings of up to 30 degrees during ripening.",
+          "cite": [
+            "monterrei-pliego:p14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Slate, granite and sediment",
+      "beat": "ground",
+      "paras": [
+        "Three kinds of soil are present.",
+        "Slate and schist soils suit dry spells. They give aromas to the red wines.",
+        "Granite and sandy soils come from weathered granite. Their pH is low, which suits white wines.",
+        "Sedimentary soils are complex, because several materials are mixed.",
+        "Growers sought well-oriented sites with suitable soils. They have corrected the soils over time to improve fertility."
+      ],
+      "cite": [
+        "monterrei-pliego:p13",
+        "monterrei-pliego:p14"
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Local grapes, fresh and full-bodied",
+      "beat": "rules",
+      "paras": [
+        "Seven white and five red grapes are allowed. The whites include Albariño, Godello and Blanca de Monterrei.",
+        "Yields are capped at 13,200 kg per hectare for white grapes and 10,000 kg for red. That gives at most 97.68 hl for white wine and 74 hl for red.",
+        "The grapes are native and well adapted to the place. The wines are rich in aroma, fresh and full-bodied. Alcohol and acidity are well balanced.",
+        "Grapes are picked by hand when the growers judge them ripe. Winemaking follows traditional methods, with low must extraction and modern technology added.",
+        "Many of the vines are trained as bush vines. New plantings are often on wires with two cordons, to ease work and harvest."
+      ],
+      "cite": [
+        "monterrei-pliego:p11",
+        "monterrei-pliego:p12",
+        "monterrei-pliego:p13",
+        "monterrei-pliego:p14",
+        "monterrei-pliego:p15"
+      ]
+    }
+  ]
+}

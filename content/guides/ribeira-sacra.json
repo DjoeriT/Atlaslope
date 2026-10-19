@@ -1,0 +1,158 @@
+{
+  "id": "ribeira-sacra",
+  "title": "Why Ribeira Sacra tastes the way it does",
+  "minutes": 3,
+  "lede": {
+    "text": "Vines grow on terraced canyon walls above the Miño and the Sil, on soils from granite to slate. The climate is more continental than Atlantic.",
+    "cite": [
+      "ribeira-sacra-pliego:p11",
+      "ribeira-sacra-pliego:p12"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Tinto",
+        "text": "A red Ribeira Sacra must contain at least 70% Mencía."
+      },
+      {
+        "term": "Rosado",
+        "text": "A rosé must contain at least 85% of principal red varieties, so it always meets the Súmmum rule of 85% principal grapes."
+      },
+      {
+        "term": "Subzone name",
+        "text": "A subzone may be named only if all the grapes come from it and the wine is made there."
+      }
+    ],
+    "cite": [
+      "ribeira-sacra-pliego:p6",
+      "ribeira-sacra-pliego:p7",
+      "ribeira-sacra-pliego:p19"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "Canyons and terraces",
+      "beat": "place",
+      "paras": [
+        "Ribeira Sacra lies inland, in the south of Lugo province and the north of Ourense.",
+        "It follows the banks of the Miño and the Sil, from Portomarín to A Peroxa and from Os Peares to Quiroga. The two rivers run to their meeting point through steep gorges or canyons.",
+        "The land forces the vines onto terraces. They go by the names bancales, muras and terrazas. The slopes are very steep, so this has been called \"heroic viticulture\"."
+      ],
+      "cite": [
+        "ribeira-sacra-pliego:p8",
+        "ribeira-sacra-pliego:p11"
+      ],
+      "fly": [
+        {
+          "label": "Ribeira Sacra",
+          "place": "ribeira-sacra",
+          "caption": "The vineyards follow the Miño and the Sil, where the rivers cut steep canyons.",
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
+        },
+        {
+          "label": "Canón do Sil",
+          "point": [
+            -7.5642,
+            42.3905
+          ],
+          "zoom": 11,
+          "caption": "The Miño and the Sil run through steep gorges to where they meet.",
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
+        },
+        {
+          "label": "Os Peares",
+          "point": [
+            -7.7311,
+            42.4548
+          ],
+          "zoom": 11,
+          "caption": "The zone runs along the Sil from Os Peares to Quiroga.",
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "More continental than Atlantic",
+      "beat": "weather",
+      "paras": [
+        "The climate is not uniform. It changes in each of the five subzones, and even from plot to plot, with aspect, altitude and slope.",
+        "In general it is more continental than Atlantic, with long, hot summers and mild autumns.",
+        "Rain averages 700 to 800 mm a year, on about 100 days of 1 mm or more. The Miño subzones get more rain than the Sil valley.",
+        "The average temperature is 11.3 °C. The average high is 17.1 °C and the average low is 6.9 °C.",
+        "Winds can blow hard, helped by the layout of the valleys. Average relative humidity is 70.6%. The sun shines about 166 hours a month."
+      ],
+      "cite": [
+        "ribeira-sacra-pliego:p11",
+        "ribeira-sacra-pliego:p12"
+      ],
+      "fly": [
+        {
+          "label": "Ribeira Sacra",
+          "place": "ribeira-sacra",
+          "caption": "Rain is 700 to 800 mm a year, with more in the Miño subzones than in the Sil valley.",
+          "cite": [
+            "ribeira-sacra-pliego:p12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Slate, granite and river wash",
+      "beat": "ground",
+      "paras": [
+        "The soils vary. Some have more granite and others mostly slate, in alternations that repeat without any pattern. In common, they are alluvial soils on a base of slate.",
+        "In Chantada and parts of Ribeiras do Miño and Ribeiras do Sil, the soils look more like the granite soils of western Galicia. In Amandi and the rest of the Ribeira do Sil, they follow the type of eastern Galicia.",
+        "Another shared trait is high soil acidity. The riverside land holds little moisture, so the vines need rootstocks suited to dry summers.",
+        "On the sunny bank the vineyards run down in terraces to the river. The shaded slopes are covered by deciduous trees, mostly oak and chestnut.",
+        "The soils set the wine's minerality. They also bring out different expressions and concentrations of fruit."
+      ],
+      "cite": [
+        "ribeira-sacra-pliego:p12",
+        "ribeira-sacra-pliego:p15"
+      ],
+      "fly": [
+        {
+          "label": "Amandi",
+          "point": [
+            -7.5159,
+            42.3992
+          ],
+          "zoom": 11,
+          "caption": "In Amandi the soils follow the type of eastern Galicia.",
+          "cite": [
+            "ribeira-sacra-pliego:p12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Mencía and Godello",
+      "beat": "rules",
+      "paras": [
+        "Only the listed grape varieties may be used. Eight whites and seven reds are principal. Four more are secondary.",
+        "White grapes are capped at 12,000 kg per hectare. Wine yield is capped at 69 litres per 100 kg.",
+        "Growers pick by hand when they judge the grapes ripe. They aim for a probable natural strength of at least 10%.",
+        "Mencía is the main red grape. The reds are medium-deep, cherry red to red with purple rims. They smell of red forest fruit and stone fruit, and they finish balanced and long.",
+        "Godello is the most common white grape, with Treixadura and Albariño. The whites run from pale yellow to gold. They smell of pome and stone fruit, with a good balance of acidity and alcohol.",
+        "Maturity depends on aspect to the sun and on altitude."
+      ],
+      "cite": [
+        "ribeira-sacra-pliego:p10",
+        "ribeira-sacra-pliego:p11",
+        "ribeira-sacra-pliego:p15",
+        "ribeira-sacra-pliego:p16"
+      ]
+    }
+  ]
+}

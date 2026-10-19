@@ -1,0 +1,46 @@
+# Check log: Valdeorras Terroir (source: pliego A1132, DOG 18.11.2024)
+
+Place
+- p11 "parte suroccidental de la provincia de Ourense, en la puerta natural de entrada a Galicia"
+- p11 "profundo valle fértil y luminoso por el que discurre el río Sil, dominando un paisaje de granito y pizarra ... tierras rojas y negras en las que crecen el castaño, la vid y el olivo"
+- p11 "el río Sil atraviesa la comarca de este a oeste ... valle con marcado carácter asimétrico: laderas con mucha pendiente en el margen izquierdo, y más suaves ... ondulado, en el derecho"
+- p11 "Otros ríos ... proporcionan laderas donde se cultiva el viñedo, en frecuentes ocasiones en forma de bancales"
+- p13 "entre los 300 m y los 700 m de altitud ... zona I de Winkler"
+- p10 eight municipalities (O Barco de Valdeorras, A Rúa, Vilamartín de Valdeorras, O Bolo, Carballeda de Valdeorras, Larouco, Petín, Rubiá), Ourense
+
+Weather
+- p12 "mediterráneo-oceánico (con influencia atlántica), con inviernos fríos, veranos cálidos y otoños y primaveras suaves, con temperaturas mínimas de 8 ºC y máximas de 33 ºC. La temperatura media es de 11 ºC ... entre los 850 y los 1.000 mm ... Winkler-Amerine ... entre 1.300 y 1.500"
+- p12 "un clima ideal para vinos secos de primera calidad"
+- p11 south slopes: "pendientes y laderas de exposición sur ... menos fertilidad y un buen drenaje, garantía de un rendimiento más moderado y una adecuada maduración"
+- Note: "minimum 8 / maximum 33" are the pliego's figures, kept as written.
+
+Ground (p11, p12)
+- five types: "pizarrosos, calizos, graníticos, arcillo-ferrosos y aluviales"
+- slate: "ordovícicas y silúricas con frecuentes bandas de arenisca ... poco profundos (30-50 cm), con abundantes piedras ... texturas en general limosas ... componentes aromáticos muy sutiles con marcado carácter mineral. Son suelos calientes"
+- limestone: "mitad norte ... O Barco y Rubiá. Los suelos arcillo-calcáreos se esponjan en el invierno para recibir el agua y se cierran en verano para retenerla ... potencial para el envejecimiento ... intensamente los caracteres propios de la variedad"
+- granite: "A Rúa, Petín y Larouco ... sueltos, con textura franco-arenosa ... irradian calor durante el día y se enfrían por la noche; ... incrementar los valores de azúcar y evitar importantes pérdidas de acidez por las noches ... vinos más florales"
+- clay-iron: "gran retención de agua ... suelos fríos. Los vinos de más calidad ... arcillas mezcladas con sílice o limo"
+- alluvial: "terrazas colgadas de 4 a 10 metros sobre el río Sil ... buen drenaje, calientes ... vinos de menor acidez al mantener la temperatura alta por las noches"; plains: "ricos en nutrientes, que provocan producciones importantes, disminuyendo la calidad del vino"
+
+Rules
+- p10 whites 8 (godello, loureira, treixadura, dona branca, albariño, torrontés, lado, palomino), reds 11; preferred whites 7, reds 7
+- p10 "15.000 kg ... preferentes ... 12.500 kg ... 90 hectolitros"
+- p14 godello "propia de la zona ... amarillos pálidos con matices verdosos ... aromas primarios limpios, afrutados de intensidad media ... perfectamente estructurados, con una acidez natural que los hace frescos y elegantes ... postgusto largo"
+- p14 mencía "rojo picota, morado ... intensos aromas a frutos rojos, con acidez media" (guide says "cherry-red to purple": picota = bigarreau cherry, source)
+- p14-15 "crianzas moderadas en envases de roble de calidad ... mencía, que aportan a los vinos estabilidad de color, acidez y capacidad de envejecimiento"
+
+Label
+- Godello (p5, p9): "elaboran exclusivamente con la variedad godello se comercializan como Valdeorras «godello»"
+- Mencía (p5): "al menos con un 85 % de la variedad mencía"
+- Variedades nobles (p5): "al menos un 85 % de las variedades ... «preferentes» ... «variedades nobles»/«castes nobres»"
+- Producción controlada (p6, p17, p6 note): "parcelas con limitaciones de producción ... «producción controlada»"; "reservado a los vinos tintos y a los blancos elaborados con la variedad godello"; "«producción controlada» ... graduación alcohólica adquirida y total mínima de 12,5 % vol."
+- Tostado (p9): "secado por pasificación natural bajo cubierta con un mínimo de 30 días ... naturalmente dulce, sin aumento artificial de su graduación"
+- Espumoso (p9): "espumosos blancos se elaborarán al menos con un 85 % de uva de la variedad blanca godello"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Place p0 s2: "It is the natural gateway into Galicia." p11. p1 s3: "It is a land of red and black earth. Chestnut, vine and olive grow there." p11. p4: "The zone covers eight municipalities of Ourense." p10 (eight listed).
+- Weather p0 s1: "The climate is Mediterranean-oceanic, with an Atlantic influence." p12. p3: "The climate is ideal for first-quality dry wines, best above 450 m." p12. Fly caption: "850 to 1,000 mm of rain a year." p12.
+- Ground p0: "There are five kinds of soil." p11. p1 s4, p2 s3, p5 s3 rewritten as plain statements (p11, p12).
+- Rules p0 s1: "Only the listed grape varieties may be used." Counts checked on p10: 8 whites and 11 reds are listed, 7 white and 8 red are preferred. The text said 7 reds; fixed to 8. p2, p3, p4 meta lines and "elegant" removed (p14 "frescos y elegantes" kept as "fresh").
+- Label Tostado: now says red grapes (p9 "uvas tintas"); "naturalmente dulce, sin aumento artificial de su graduación" is on p9, checked.
+- Flights added: The Sil (p11), O Barco de Valdeorras (p12 "Afloramentos calizos ... en los municipios de O Barco y Rubiá"), A Rúa (p12 "Suelos graníticos ... A Rúa, Petín y Larouco destacan unos suelos sueltos"). Bibei not used: its OSM point lies outside the zone.
