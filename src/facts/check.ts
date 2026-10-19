@@ -1,5 +1,6 @@
 import type { Place } from '../tree';
 import { STYLE_KINDS, type Cite, type SheetFile, type Sources } from './types';
+import { chapterFlies, type Guide } from './guides';
 
 const MAX_WHY_WORDS = 25;
 const MAX_TASTES_WORDS = 40;
@@ -83,4 +84,17 @@ export function checkSheets(files: SheetFile[], places: Place[], sources: Source
     }
   }
   return errors;
+}
+
+/** Warnings, not errors, for the guides' fly targets (owner, 19 Oct 2026: a guide flies to named places worth seeing from above, not only
+ *  to the whole appellation, where its source names such places). A guide with Terroir chapters but no fly target beyond its own place
+ *  gets one line; whether its source names a place worth the flight is a person's call, so it never fails. */
+export function guideFlyWarnings(guides: Guide[]): string[] {
+  const out: string[] = [];
+  for (const g of guides) {
+    if (g.chapters.length === 0) continue;
+    const named = g.chapters.flatMap(chapterFlies).filter((f) => f.point || (f.place && f.place !== g.id));
+    if (named.length === 0) out.push(`${g.id}: no fly target beyond ${g.id} itself; add a named place or point the sources describe.`);
+  }
+  return out;
 }

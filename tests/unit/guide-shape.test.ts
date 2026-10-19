@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { BEATS, EXTRAS, guides, measuresOf, sheetOf, sources } from '../../src/facts';
+import { guideFlyWarnings } from '../../src/facts/check';
 import { alikePlaces } from '../../src/pages/helpers';
 import { loadTree } from '../../src/tree';
 
@@ -54,5 +55,13 @@ describe('If you like this, try', () => {
     const alike = alikePlaces(tree, tree.getPlace('toro')!, sheetOf, measuresOf);
     const regions = alike.map((a) => a.place.region);
     expect(new Set(regions).size).toBe(regions.length);
+  });
+});
+
+describe('guide fly targets', () => {
+  it('warn, without failing, when a guide flies only to its own place (owner, 19 Oct 2026)', () => {
+    for (const w of guideFlyWarnings(guides)) console.warn(`guide warning: ${w}`);
+    expect(guideFlyWarnings([{ id: 'x', title: '', minutes: 1, lede: { text: '', cite: [] }, chapters: [{ id: 'a', title: '', paras: [], cite: [], fly: [{ label: 'X', caption: '', cite: [], place: 'x' }] }] }])).toHaveLength(1);
+    expect(guideFlyWarnings(guides.filter((g) => g.id === 'rioja'))).toEqual([]);
   });
 });
