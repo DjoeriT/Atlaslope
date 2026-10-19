@@ -4,7 +4,10 @@
  "minutes": 3,
  "lede": {
   "text": "Ribera del Duero sits high, with dry summers and cold nights. While the grapes ripen, day and night are often 15 to 20ºC apart. That long, slow ripening builds the compounds that matter by day and sweetens the tannin naturally.",
-  "cite": ["ribera-del-duero-pliego:p19", "ribera-del-duero-pliego:p23"]
+  "cite": [
+   "ribera-del-duero-pliego:p19",
+   "ribera-del-duero-pliego:p23"
+  ]
  },
  "chapters": [
   {
@@ -15,20 +18,30 @@
     "The vineyards sit on the northern Castilian meseta, the great northern plateau of the Iberian Peninsula. The Duero runs through them and links more than 100 villages in a belt about 115 km long and 35 km wide. Four provinces meet here: Burgos, Segovia, Soria and Valladolid.",
     "The valleys average between 750 and 850 m above sea level. The hills between the rivers rise to 1,014 m. Because the land sits so high, the climate has a marked influence on the grapes."
    ],
-   "cite": ["ribera-del-duero-pliego:p20", "ribera-del-duero-pliego:p23"],
+   "cite": [
+    "ribera-del-duero-pliego:p20",
+    "ribera-del-duero-pliego:p23"
+   ],
    "fly": [
     {
      "label": "The Duero belt",
      "place": "ribera-del-duero",
      "caption": "The Duero ties together more than 100 villages along a vine belt about 115 km long and 35 km wide.",
-     "cite": ["ribera-del-duero-pliego:p20"]
+     "cite": [
+      "ribera-del-duero-pliego:p20"
+     ]
     },
     {
      "label": "Pintia, where wine was drunk in the 4th century BC",
-     "point": [-4.167, 41.625],
+     "point": [
+      -4.167,
+      41.625
+     ],
      "zoom": 11,
      "caption": "Vessels from the Vaccaean-Roman site of Pintia show wine was served and drunk here as early as the 4th century BC.",
-     "cite": ["ribera-del-duero-pliego:p24"]
+     "cite": [
+      "ribera-del-duero-pliego:p24"
+     ]
     }
    ]
   },
@@ -55,7 +68,10 @@
     "The river basin took shape in the Miocene, on an old plateau partly covered by Tertiary sediment. Layers of silty or clayey sand alternate with limestone and marl. The usual soils are ochre and red sandy clays from the Tertiary, and the middle and lower terraces of the Duero.",
     "The soils are usually basic in pH and short of organic matter."
    ],
-   "cite": ["ribera-del-duero-pliego:p20", "ribera-del-duero-pliego:p21"]
+   "cite": [
+    "ribera-del-duero-pliego:p20",
+    "ribera-del-duero-pliego:p21"
+   ]
   },
   {
    "id": "rules",
@@ -78,11 +94,26 @@
  ],
  "label": {
   "terms": [
-   {"term": "Roble / Barrica", "text": "The wine spends at least 3 months in oak barrels of up to 600 litres, whether or not it fermented there."},
-   {"term": "Crianza", "text": "Reds age at least 24 months, with at least 12 in oak. Rosés and whites age at least 18 months, with at least 6 in oak."},
-   {"term": "Reserva", "text": "Reds age at least 36 months, with at least 12 in oak and the rest in bottle. Rosés and whites age at least 24 months, with at least 6 in oak and the rest in bottle."},
-   {"term": "Gran Reserva", "text": "Reds age at least 60 months, with at least 24 in oak and the rest in bottle. Rosés and whites age at least 48 months, with at least 6 in oak and the rest in bottle."}
+   {
+    "term": "Roble / Barrica",
+    "text": "The wine spends at least 3 months in oak barrels of up to 600 litres, whether or not it fermented there."
+   },
+   {
+    "term": "Crianza",
+    "text": "Reds age at least 24 months, with at least 12 in oak. Rosés and whites age at least 18 months, with at least 6 in oak."
+   },
+   {
+    "term": "Reserva",
+    "text": "Reds age at least 36 months, with at least 12 in oak and the rest in bottle. Rosés and whites age at least 24 months, with at least 6 in oak and the rest in bottle."
+   },
+   {
+    "term": "Gran Reserva",
+    "text": "Reds age at least 60 months, with at least 24 in oak and the rest in bottle. Rosés and whites age at least 48 months, with at least 6 in oak and the rest in bottle."
+   }
   ],
-  "cite": ["ribera-del-duero-pliego:p11", "ribera-del-duero-pliego:p12"]
+  "cite": [
+   "ribera-del-duero-pliego:p11",
+   "ribera-del-duero-pliego:p12"
+  ]
  }
 }

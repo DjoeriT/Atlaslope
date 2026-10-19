@@ -4,7 +4,11 @@
  "minutes": 3,
  "lede": {
   "text": "Bierzo sits in a basin ringed by mountains, with a climate that mixes the oceanic and the continental. It gets more rain than the so-called dry Spain, and more than 300 hours of sun on average in July and August.",
-  "cite": ["bierzo-pliego:p10", "bierzo-pliego:p11", "bierzo-pliego:p12"]
+  "cite": [
+   "bierzo-pliego:p10",
+   "bierzo-pliego:p11",
+   "bierzo-pliego:p12"
+  ]
  },
  "chapters": [
   {
@@ -15,13 +19,18 @@
     "Bierzo is one tectonic basin, a hoya, made by the Alpine mountain-building. A ring of blunt, flattened mountains surrounds it, with isolated quartzite crests poking out. Below them lie lowlands with sunken valleys that open into deep, narrow, steep gorges.",
     "The vines grow from 355 m to 1,200 m. Some sit on gently sloping terraces, others on half-terraced slopes or on steep ground. Most of the vineyard lies between 400 m and 800 m, and vines can face any direction. Vines above 1,000 m make wines that are very fresh and lively."
    ],
-   "cite": ["bierzo-pliego:p10", "bierzo-pliego:p14"],
+   "cite": [
+    "bierzo-pliego:p10",
+    "bierzo-pliego:p14"
+   ],
    "fly": [
     {
      "label": "The Bierzo basin",
      "place": "bierzo",
      "caption": "One tectonic basin ringed by mountains, with vines from 355 m to 1,200 m.",
-     "cite": ["bierzo-pliego:p10"]
+     "cite": [
+      "bierzo-pliego:p10"
+     ]
     }
    ]
   },
@@ -35,7 +44,12 @@
     "Rain is fairly plentiful, about 793 mm a year on average. It falls unevenly: October to December are the wettest months and June to August the driest.",
     "Sunshine is another key factor in ripening good grapes. July and August average more than 300 hours of sun, which is exceptional for Bierzo's latitude and longitude and for its Atlantic influence in northwest Spain. The wines owe their qualities above all to slow ripening, which raises the polyphenols and gives them an attractive colour. Aromatic substances in the grape skins make them very fresh, with a subtle acidity."
    ],
-   "cite": ["bierzo-pliego:p11", "bierzo-pliego:p12", "bierzo-pliego:p13", "bierzo-pliego:p14"]
+   "cite": [
+    "bierzo-pliego:p11",
+    "bierzo-pliego:p12",
+    "bierzo-pliego:p13",
+    "bierzo-pliego:p14"
+   ]
   },
   {
    "id": "soils",
@@ -46,7 +60,11 @@
     "They are acid, with no carbonates, and hold a lot of water. Their high humus content is inherited from the rich tree and shrub cover the area once had. They are low in organic matter, which favours quality over quantity.",
     "These clay loams carry more or less coarse slate and quartzite, and they bring elegance and fineness to the wines. That makes the wines easy to tell apart from those of other zones."
    ],
-   "cite": ["bierzo-pliego:p10", "bierzo-pliego:p11", "bierzo-pliego:p13"]
+   "cite": [
+    "bierzo-pliego:p10",
+    "bierzo-pliego:p11",
+    "bierzo-pliego:p13"
+   ]
   },
   {
    "id": "old-vines",
@@ -58,7 +76,13 @@
     "The old vineyards were planted narrow, shaped by the habit of ploughing with animals. Narrow planting and the soils keep yields from being very high. Mencía is capped at 11,000 kg per hectare, and no more than 81.40 hl per hectare of wine can be made from it. Irrigation is generally forbidden, except to keep vines alive or to secure or improve grape quality.",
     "Bierzo's red wines have great fruit expression and freshness, and a great capacity to age in barrel. Its white wines are fresh and tasty, with volume."
    ],
-   "cite": ["bierzo-pliego:p5", "bierzo-pliego:p8", "bierzo-pliego:p12", "bierzo-pliego:p13", "bierzo-pliego:p14"]
+   "cite": [
+    "bierzo-pliego:p5",
+    "bierzo-pliego:p8",
+    "bierzo-pliego:p12",
+    "bierzo-pliego:p13",
+    "bierzo-pliego:p14"
+   ]
   }
  ],
  "label": {
@@ -80,6 +104,12 @@
     "text": "A wine from one plot, or adjoining plots, in one mapped paraje that has used Viña Clasificada for at least five years. Yields are cut by 35%, and the Consejo Regulador assesses the wine before sale."
    }
   ],
-  "cite": ["bierzo-pliego:p8", "bierzo-pliego:p9", "bierzo-pliego:p16", "bierzo-pliego:p18", "bierzo-pliego:p29"]
+  "cite": [
+   "bierzo-pliego:p8",
+   "bierzo-pliego:p9",
+   "bierzo-pliego:p16",
+   "bierzo-pliego:p18",
+   "bierzo-pliego:p29"
+  ]
  }
 }

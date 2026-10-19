@@ -4,7 +4,10 @@
  "minutes": 4,
  "lede": {
   "text": "On a summer day in León the heat can turn torrid, and the night is much colder. That swing builds the natural acidity behind the fresh rosés of Prieto Picudo.",
-  "cite": ["leon-pliego:p15", "leon-pliego:p22"]
+  "cite": [
+   "leon-pliego:p15",
+   "leon-pliego:p22"
+  ]
  },
  "chapters": [
   {
@@ -15,14 +18,22 @@
     "León sits in the cold version of the Mediterranean climate. The Atlantic and the north should soften its temperatures and bring plenty of rain. But the plateau is high and lies at the edge of the Cordillera Cantábrica, so the climate turns continental instead.",
     "Vines for quality wine stop at 900 m. Above that, ripening can be irregular."
    ],
-   "cite": ["leon-pliego:p15", "leon-pliego:p18"],
+   "cite": [
+    "leon-pliego:p15",
+    "leon-pliego:p18"
+   ],
    "fly": [
     {
      "label": "Edge of the Cordillera Cantábrica",
-     "point": [-5.6, 42.95],
+     "point": [
+      -5.6,
+      42.95
+     ],
      "zoom": 8,
      "caption": "The mountain edge that, with the high plateau, makes León's climate continental.",
-     "cite": ["leon-pliego:p15"]
+     "cite": [
+      "leon-pliego:p15"
+     ]
     }
    ]
   },
@@ -35,7 +46,11 @@
     "About 500 mm of rain falls in a year, spread over summer and autumn. Vines need no irrigation except in a few isolated years. The sun shines about 2,700 hours a year.",
     "That light feeds the leaves and berries, so they gather sugars and polyphenols. The polyphenols give rosés and reds their intense, warm colours. The gap between torrid days and much colder nights lets the vine carry out the cell respiration that builds its natural acidity, about 5.5 g/l of tartaric acid in the must. That is the freshness of León's rosés. Hot days also help the skins build up the terpenes that carry Prieto Picudo's aroma."
    ],
-   "cite": ["leon-pliego:p15", "leon-pliego:p16", "leon-pliego:p22"]
+   "cite": [
+    "leon-pliego:p15",
+    "leon-pliego:p16",
+    "leon-pliego:p22"
+   ]
   },
   {
    "id": "terraces",
@@ -47,21 +62,37 @@
     "The third group is the campiña, a gently rolling land that covers Los Oteros and Tierra de Campos. Tierra de Campos has finer soils of marl, clay, sandstone and calcareous conglomerate. Los Oteros is coarser, with less clay.",
     "Every one of these soils is low in organic matter, and that matters most for the whites. The whites reach a great aromatic expression because the soils under them are especially light, with little clay and excellent drainage."
    ],
-   "cite": ["leon-pliego:p16", "leon-pliego:p17", "leon-pliego:p18", "leon-pliego:p23"],
+   "cite": [
+    "leon-pliego:p16",
+    "leon-pliego:p17",
+    "leon-pliego:p18",
+    "leon-pliego:p23"
+   ],
    "fly": [
     {
      "label": "Terraces of the Esla at Valdevimbre",
-     "point": [-5.62, 42.42],
+     "point": [
+      -5.62,
+      42.42
+     ],
      "zoom": 10,
      "caption": "The Esla terraces, where the vineyard has traditionally sat, include the whole Valdevimbre zone.",
-     "cite": ["leon-pliego:p17"]
+     "cite": [
+      "leon-pliego:p17"
+     ]
     },
     {
      "label": "Tierra de Campos",
-     "point": [-5.27, 42.17],
+     "point": [
+      -5.27,
+      42.17
+     ],
      "zoom": 9.5,
      "caption": "Gently rolling campiña, with finer soils of marl, clay and sandstone than Los Oteros.",
-     "cite": ["leon-pliego:p17", "leon-pliego:p18"]
+     "cite": [
+      "leon-pliego:p17",
+      "leon-pliego:p18"
+     ]
     }
    ]
   },
@@ -74,14 +105,30 @@
     "One rosé technique is found only in this zone. It is called madreo. The winemaker adds whole, perfectly healthy Prieto Picudo bunches, 5 to 10% of the tank's capacity, to rosé fermenting in the tank. When fermentation ends, the bunches are thrown away. The rosé gains deeper colour and more structure. A fine bubble of natural carbon dioxide, from the physical and chemical processes of the technique, adds more freshness. Many wineries make a classic rosé and also set aside some must for madreo.",
     "Young Prieto Picudo reds are intense in colour, aroma and taste. They have red and black fruit, above all red fruit such as strawberry and raspberry. They are fleshy and full-bodied, with some astringency and a long finish. Reds aged in oak barrels add wood and toast to the fruit. Whites of Albarín are more aromatic than those of Verdejo or Godello, but they have less complexity and structure. More and more wineries blend Albarín with Verdejo or age it in barrel to give it more."
    ],
-   "cite": ["leon-pliego:p10", "leon-pliego:p11", "leon-pliego:p19", "leon-pliego:p20", "leon-pliego:p21", "leon-pliego:p23"]
+   "cite": [
+    "leon-pliego:p10",
+    "leon-pliego:p11",
+    "leon-pliego:p19",
+    "leon-pliego:p20",
+    "leon-pliego:p21",
+    "leon-pliego:p23"
+   ]
   }
  ],
  "label": {
   "terms": [
-   {"term": "Crianza, Reserva, Gran Reserva", "text": "Wines that carry one of these words on the label have aged in oak barrels."},
-   {"term": "Vino de Pueblo", "text": "A wine may name a single municipality on the label only if 85% of its grapes come from vineyards in that municipality."}
+   {
+    "term": "Crianza, Reserva, Gran Reserva",
+    "text": "Wines that carry one of these words on the label have aged in oak barrels."
+   },
+   {
+    "term": "Vino de Pueblo",
+    "text": "A wine may name a single municipality on the label only if 85% of its grapes come from vineyards in that municipality."
+   }
   ],
-  "cite": ["leon-pliego:p11", "leon-pliego:p28"]
+  "cite": [
+   "leon-pliego:p11",
+   "leon-pliego:p28"
+  ]
  }
 }

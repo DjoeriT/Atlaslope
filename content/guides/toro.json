@@ -33,7 +33,10 @@
     },
     {
      "label": "The Duero valley",
-     "point": [-5.4, 41.51],
+     "point": [
+      -5.4,
+      41.51
+     ],
      "zoom": 10,
      "caption": "The Duero and the rivers around it shape the land into valleys and terraces.",
      "cite": [
@@ -79,11 +82,13 @@
    "paras": [
     "Tinta de Toro is close to Tempranillo in its genes. It yields less and is more tannic and less acidic. Its wines are more concentrated and more powerful.",
     "The rules cap its yield at 7,500 kg per hectare, against 9,000 kg for Garnacha Tinta and the white grapes. Vines are trained as vaso (bush) or on wires, with at least 500 vines per hectare.",
-    "Next to wines from neighbouring areas with similar grapes, Toro's are more structured. They carry more polyphenols and tannin. They are less acidic with a higher pH, and they taste of riper fruit."
+    "Next to wines from neighbouring areas with similar grapes, Toro's are more structured. They carry more polyphenols and tannin. They are less acidic with a higher pH, and they taste of riper fruit.",
+    "Toro is not only red. Its main white grapes are Malvasía Castellana and Verdejo. Its semi-sweet and sweet wines have a powerful floral or fruity taste."
    ],
    "cite": [
     "toro-pliego:p12",
     "toro-pliego:p15",
+    "toro-pliego:p16",
     "toro-pliego:p18"
    ]
   }
