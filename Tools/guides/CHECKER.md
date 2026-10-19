@@ -1,5 +1,8 @@
 # Guide sentence check brief (one guide per run)
 
+When the run hands you a pack (`Tools/guides/pack.py`), everything named below is in it: read nothing else, and use its
+OpenStreetMap points instead of new lookups.
+
 You check one Atlaslope guide against its pliego, sentence by sentence. You start fresh. Fact rule: a guide says only what the
 pliego says, on the page it cites. Every sentence, caption, label term and the lede is checked: nothing is sampled.
 
@@ -24,9 +27,16 @@ splices, "X, Y and Z" lists, and a cause-to-taste link the page does not make. T
   historic town worth seeing from above, add one flight for it (label, caption with cite, Nominatim point, zoom 8 to 11).
 - Numbers: every number the machine check warns about is confirmed against the page (words and roman numerals count) or fixed.
 - Label terms: the pliego defines the term, and the sentence carries its rule. A term whose rule the pliego leaves to other law
-  ("legislación vigente") is CUT, since it only points elsewhere. A famous style (fact sheet `famous.styles`, or a style
+  ("legislación vigente") is CUT, since it only points elsewhere, but first grep the whole pliego: if another page gives the term
+  its own rule, it stays with that rule and cite (Granada, 19 Oct 2026: «Naturalmente Dulce» was cut although p1 defines it). A famous style (fact sheet `famous.styles`, or a style
   the rules beat describes) is not repeated in `label`: keep it in the rules beat and drop it from `label`.
-- The fact sheet: list each field where it disagrees with the pliego (sheet says, pliego says, page). Do not edit the sheet.
+- Titles: every chapter title and the guide title make a claim too. CHECK them like sentences ("snowy wall", "hungry slate", "Hot"
+  where the page says warm were all missed in Andalucía).
+- Missing wine types: grep the whole pliego for every wine type, style and category it protects (still, sparkling, generoso,
+  vino de licor, dulce, named styles such as Pale Cream). The rules beat must name each one; add a sentence with its cite for any
+  that is missing, and say plainly whether a generoso is fortified. (Jerez lost Dulce, Pale Dry, Pale Cream and Medium.)
+- The fact sheet: list each field where it disagrees with the pliego (sheet says, pliego says, page). Include `famous.styles` and `styles.kinds` (Granada's sheet listed a
+  red sparkling the pliego does not allow). Do not edit the sheet.
 
 ## Output
 1. The guide file, edited in place with your FIX and CUT changes. Then run `python3 Tools/guides/check_guide.py <manifest> <guide>`

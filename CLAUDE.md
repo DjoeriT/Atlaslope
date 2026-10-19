@@ -9,13 +9,17 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 
 ## Pace (owner cards 17 and 18 Oct 2026: $143 a day, 60% of it threads re-reading history; a 12-finding fix took 63 minutes before its PR)
 - The coordinator (project chat) starts a thread per ask and keeps memory; it never edits the repo. The thread doing a task is LeadBot for it.
-- One slice per thread, then close; no follow-ups in a finished thread. Past about 150K of context, write the handoff and continue in a
-  fresh thread, before building or merging, not after (a thread at 350K compacted just before a merge). Aim under 300K tokens of spend for a
+- One slice per thread, then close; no follow-ups in a finished thread. Past about 80K of context, write the handoff and continue in a
+  fresh thread, before building or merging, not after (a thread at 350K compacted just before a merge; owner OK 19 Oct 2026 after
+  five live threads restarted together at a usage reset). At most two working threads at a time. Aim under 300K tokens of spend for a
   small slice; past that, say so and hand off.
 - First answer within 5 minutes: a rough result or first look, refined after. No silent measuring.
 - Never wait on your own tools. Test runs, CI logs, code searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet helper that
   reports back in 10 to 20 lines, while the thread keeps working. Wait for CI through PR notifications, never a polling loop.
 - Read with `grep -n` and line ranges, never whole files or logs. Batch independent tool calls.
+- Batch content work runs from a fixed script with few-step helpers: a script packs each helper's inputs into one file, the helper
+  reads it once and writes once, and the thread gets one report at the end, with no status replies in between (owner 19 Oct 2026:
+  Andalucía's checkers re-read about 1.1M cached tokens each to write 16K; every helper step re-reads its whole context).
 - Design: round 1 shows the whole range, subtle to bold, so his feedback rounds refine instead of searching.
 - A review thread fixes its small findings itself in one PR and asks him only about taste; no separate fix thread.
 - Two slices that touch separate files may run as parallel threads; one writer per file. The first to go green merges first; the other
