@@ -12,6 +12,7 @@
  "chapters": [
   {
    "id": "weather",
+   "beat": "weather",
    "title": "Two climates, one wall",
    "paras": [
     "Rioja Alavesa gets about as many hours of sun as Rioja Alta and a little less rain. The Sierra de Cantabria to the north matters even more here than in Rioja Alta. Its wines have slightly more alcohol and a little less acidity than Rioja Alta's, and they are versatile: good to drink young, good to age, and good for blending."
@@ -36,6 +37,7 @@
   },
   {
    "id": "soils",
+   "beat": "ground",
    "title": "Terraces of clay-limestone",
    "paras": [
     "Clay-limestone soils dominate, on terraces and in small plots. These are the soils the rules name as the main source of Rioja's wines for ageing. Laguardia and Elciego are among its villages."

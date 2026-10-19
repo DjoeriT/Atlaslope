@@ -7,13 +7,14 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, grapeLabel, guideOf, measuresOf, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Cite } from '../facts';
+import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
 import { quizToHash, selectionToHash, type Selection } from '../url';
 import { AltitudeRange, ClimateBar } from './Charts';
-import { glanceCells, mosaicPics, nextRegion, swatchOf } from './helpers';
+import { alikePlaces, mosaicPics, nextRegion, swatchOf } from './helpers';
+import { sentences } from './sentence';
 import { Mosaic } from './Mosaic';
 import '../styles/pages.css';
 import { Img } from '../cards/Img';
@@ -41,7 +42,10 @@ function Section({ id, title, children }: { id: string; title: string; children:
   );
 }
 
-/** The full page of a place (#place=<id>&page): photos, a jump bar, ruled sections whose facts carry short source tags, a Sources list, and an "at a glance" box. */
+/** The full page of a place (#place=<id>&page), guide shape C (owner, 19 Oct 2026): photos, a jump bar, then "Why X tastes the way it does"
+ *  told in four beats (the place, the weather, the ground, what the rules make), each holding its own facts once, How it tastes as the
+ *  answer, an In short box of five facts, plain browse sections, a small Test me door into Study, and the Sources. A place without a
+ *  written Terroir section gets the same beats from its fact sheet. */
 export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
   const pageRef = useRef<HTMLDivElement>(null);
@@ -92,7 +96,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
         <b>{t.testTitle(place.name)}</b>
         <span>{t.testText(place.name, testSet.length > 1)}</span>
       </div>
-      <a className="btn accent" href={quizToHash({ sub: 'test', set: testSet })} onClick={(e) => { e.preventDefault(); onTest(testSet); }}>
+      <a className="btn" href={quizToHash({ sub: 'test', set: testSet })} onClick={(e) => { e.preventDefault(); onTest(testSet); }}>
         <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="8.5" /><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.6" /><circle cx="12" cy="16.6" r=".6" fill="currentColor" /></svg>
         {t.testButton}
       </a>
@@ -108,33 +112,13 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     );
   };
 
+
   // Every fact carries a short source tag; the tags are gathered as the page draws, in reading order, and the Sources section at the
   // end lists each document once (owner card, 18 Oct 2026). The Sources section is drawn last, so it sees every tag above it.
   const cited: Cite[] = [];
   const src = (cites: Cite[]) => {
     cited.push(...cites);
     return <SourceLine cites={cites} short />;
-  };
-
-  const sections = [
-    { id: 'overview', label: t.sections.overview, present: !!sheet || !!official },
-    { id: 'terroir', label: t.sections.terroir, present: !!guide },
-    { id: 'taste', label: t.sections.taste, present: !!tastes },
-    { id: 'styles', label: t.sections.styles, present: famous.length > 0 },
-    { id: 'grapes', label: t.sections.grapes, present: main.length > 0 || others.length > 0 || !!wineTypes },
-    { id: 'land', label: t.sections.land, present: !!climate || koppen.length > 0 || !!soil || !!writtenAltitude || !!measures },
-    { id: 'producers', label: t.jump.producers, present: producers.length > 0 },
-    { id: 'zones', label: t.sections.zones, present: zones.length > 0 },
-    { id: 'where', label: t.sections.where, present: true },
-    { id: 'sources', label: t.sections.sources, present: !!sheet || !!guide },
-  ].filter((s) => s.present);
-
-  // The jump bar's marker follows the reading position, and a tab glides the page to its section (owner point 8, 18 Oct 2026).
-  const current = useSectionInView(sections.map((s) => s.id), pageRef, place.id);
-  useJumpMarker(jumpBar, current);
-  const jump = (id: string) => (e: MouseEvent) => {
-    e.preventDefault();
-    scrollToSection(id);
   };
 
   const parent = isZone && place.parent ? tree.getPlace(place.parent) : undefined;
@@ -149,16 +133,210 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
     ...(regionM && measures && JSON.stringify(regionM) !== JSON.stringify(measures) ? [{ label: t.regionRow(region!.name), m: regionM }] : []),
     { label: t.allSpain, m: spainMeasures() },
   ];
-  const altitudeCell = glanceCells(sheet, measures).find((c) => c.kind === 'altitude');
-  // Each glance row names the section that holds its source (release 9 review: a fact keeps a visible way to its source).
-  const glance: Array<[string, string, string]> = [
-    [t.level, level, 'where'],
-    ...(main.length > 0 ? [[t.mainGrapes, main.map((g) => g.grape ?? g.local).join(', '), 'grapes'] as [string, string, string]] : []),
-    ...(kinds.length > 0 ? [[t.wineTypes, kinds.map((k, i) => (i === 0 ? k : k.toLowerCase())).join(', '), 'grapes'] as [string, string, string]] : []),
-    ...(altitudeCell ? [[t.altitude, altitudeCell.big, 'land'] as [string, string, string]] : []),
-    ...(zones.length > 0 ? [[t.zoneCount, String(zones.length), 'zones'] as [string, string, string]] : []),
+
+  // Each written chapter sits in the beat it tells; a chapter without a beat follows the four beats as a section of its own.
+  const chaptersOf = (b: Beat): Chapter[] => guide?.chapters.filter((c) => c.beat === b) ?? [];
+  const loose = guide?.chapters.filter((c) => !c.beat || !BEATS.includes(c.beat)) ?? [];
+  // A guide's zone notes name the zones, so they link to the zone pages and the plain zone list is not drawn twice.
+  const zoneByName = new Map(zones.map((z) => [z.name, z]));
+  const zoneNotes = guide?.chapters.some((c) => c.cards?.length) ?? false;
+  // The fact sheet's own line for a beat shows only when no written chapter tells that beat (one fact, once).
+  const told = (b: Beat) => chaptersOf(b).length > 0;
+
+  const chapterBody = (ch: Chapter, heading: boolean) => {
+    const own = ch.fly ?? [];
+    return (
+      <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
+        {heading && <h4 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h4>}
+        {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
+        {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
+        {src(ch.cite)}
+        {ch.cards && (
+          <div className="pg-zguide">
+            {ch.cards.map((c, i) => {
+              const zone = zoneByName.get(c.title);
+              const photo = zone ? photosOf(zone.id)[0] : undefined;
+              return (
+                <div key={c.title}>
+                  {photo && <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy />}
+                  <b>{zone ? <Link to={{ kind: 'place', id: zone.id, page: true }} go={go}>{c.title}</Link> : c.title}</b>
+                  <dl>
+                    <dt>{t.beats.weather}</dt><dd>{c.climate}</dd>
+                    <dt>{t.short.wine}</dt><dd>{c.wine}</dd>
+                  </dl>
+                  {pill(ch.id, own.length + i, c.fly.label)}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // The facts each beat holds beside its prose.
+  const placeFacts = (
+    <>
+      <dl className="pg-rows">
+        <dt>{t.level}</dt>
+        <dd>{isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind] ?? level}{sheet && !isZone && src(['mapa-list'])}</dd>
+        {official && (<><dt>{t.officialName}</dt><dd>{official}</dd></>)}
+        {region && !isZone && (<><dt>{t.studyRegion}</dt><dd>{ownRegion ? region.name : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link>}</dd></>)}
+        {also.length > 0 && (
+          <>
+            <dt>{t.alsoWithin}</dt>
+            <dd><ul>{also.map((o) => <li key={o.id}><Link to={{ kind: 'place', id: o.id, page: true }} go={go}>{o.name}</Link></li>)}</ul></dd>
+          </>
+        )}
+      </dl>
+      {zones.length > 0 && !zoneNotes && (
+        <>
+          <h4 className="pg-h3">{t.zones}</h4>
+          <ul className="pg-zones">
+            {zones.map((z) => {
+              const photo = photosOf(z.id)[0];
+              const why = sheetOf(z.id)?.why;
+              return (
+                <li key={z.id}>
+                  <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
+                    {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
+                    <b>{z.name}</b>
+                  </Link>
+                  {why && <><p>{why.text}</p>{src(why.cite)}</>}
+                </li>
+              );
+            })}
+          </ul>
+        </>
+      )}
+    </>
+  );
+  const weatherFacts = (climate && !told('weather')) || koppen.length > 0 ? (
+    <>
+      {climate && !told('weather') && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.climateWritten}</h4>
+          <p>{climate}</p>
+          {src(sheet!.climate.cite)}
+        </div>
+      )}
+      {koppen.length > 0 && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.climateMeasured}</h4>
+          <ClimateBar name={place.name} shares={koppen} compare={compare.map((c) => ({ label: c.label, shares: c.m.koppen }))} />
+          {src(['koppen'])}
+          <p className="pg-note">{t.compareNote}</p>
+        </div>
+      )}
+    </>
+  ) : null;
+  const shownAltitude = writtenAltitude && !guide;
+  const groundFacts = (soil && !told('ground')) || shownAltitude || measures ? (
+    <>
+      {soil && !told('ground') && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.soil}</h4>
+          <p>{soil}</p>
+          {src(sheet!.soil.cite)}
+        </div>
+      )}
+      {(shownAltitude || measures) && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.altitude}</h4>
+          {measures && <AltitudeRange name={place.name} altitude={measures.altitude} compare={compare.map((c) => ({ label: c.label, altitude: c.m.altitude }))} />}
+          {shownAltitude && <p>{writtenAltitude}</p>}
+          {measures && <p>{altitudeText(measures.altitude)}</p>}
+          {src([...(shownAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])])}
+        </div>
+      )}
+    </>
+  ) : null;
+  const rulesFacts = famous.length > 0 || main.length > 0 || others.length > 0 || wineTypes ? (
+    <>
+      {famous.length > 0 && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.styles}</h4>
+          <ul className="pg-styles">
+            {famous.map((f) => <li key={f.name}><strong>{f.name}</strong>{f.text.trim() && <span>{f.text.trim()}</span>}</li>)}
+          </ul>
+          {src(sheet!.famous!.cite)}
+        </div>
+      )}
+      {main.length > 0 && (
+        <div className="pg-fact">
+          <h4 className="pg-h3">{t.mainGrapes}</h4>
+          <ul className="pg-grapes">{main.map((g) => <li key={g.local}>{grapeLabel(g)}</li>)}</ul>
+          {src(sheet!.grapes.cite)}
+        </div>
+      )}
+      {(others.length > 0 || wineTypes) && (
+        <dl className="pg-rows">
+          {others.length > 0 && (
+            <>
+              <dt>{sheet!.grapes.othersPartial ? t.otherGrapesPartial : t.otherGrapes}</dt>
+              <dd><OtherGrapes names={others} />{src(sheet!.grapes.othersCite)}</dd>
+            </>
+          )}
+          {wineTypes && (
+            <>
+              <dt>{t.wineTypes}</dt>
+              <dd>{wineTypes}{src(sheet!.styles.cite)}</dd>
+            </>
+          )}
+        </dl>
+      )}
+    </>
+  ) : null;
+  const factsOf: Record<Beat, ReactNode> = { place: placeFacts, weather: weatherFacts, ground: groundFacts, rules: rulesFacts };
+
+  // A beat shows when it has a chapter or facts of its own; the place beat always has its level. Beats are numbered as they show.
+  const beats = BEATS.filter((b) => told(b) || factsOf[b]).map((b, i) => ({ id: b, n: i + 1, chapters: chaptersOf(b) }));
+  const beatHeading = (b: (typeof beats)[number]) => (b.chapters[0] ? `terroir-${b.chapters[0].id}-h` : `${b.id}-h`);
+  const spine = !!guide || !!sheet;
+  const labelTerms = guide?.label?.terms ?? [];
+  const extraOf = (k: (typeof EXTRAS)[number]) => (k === 'label' ? undefined : guide?.more?.[k]);
+  const extras = EXTRAS.filter((k) => (k === 'label' ? labelTerms.length > 0 : !!extraOf(k)?.paras.length));
+  const alike = quizzed ? alikePlaces(tree, place, sheetOf, measuresOf) : [];
+
+  // In short: five facts from the fields the page already holds, one line each, each linked to the beat that tells it in full.
+  const firstLine = (text: string) => sentences(text, 110);
+  const grapeLine = main.length === 0 ? '' : main.length <= 2 ? main.map(grapeLabel).join(' and ') : `${grapeLabel(main[0])} and ${main.length - 1} more`;
+  const altitudeLine = measures ? altitudeText(measures.altitude) : '';
+  const short: Array<{ key: string; text: string; to: Beat; cite: Cite[] }> = [
+    ...(grapeLine ? [{ key: t.short.grapes, text: grapeLine, to: 'rules' as Beat, cite: sheet!.grapes.cite }] : []),
+    ...(climate ? [{ key: t.short.climate, text: firstLine(climate), to: 'weather' as Beat, cite: sheet!.climate.cite }] : []),
+    ...(soil ? [{ key: t.short.soil, text: firstLine(soil), to: 'ground' as Beat, cite: sheet!.soil.cite }] : []),
+    ...(zones.length > 0
+      ? [{ key: t.short.zones, text: t.zonesShort(zones.map((z) => z.name)), to: (zoneNotes ? 'weather' : 'place') as Beat, cite: [] }]
+      : altitudeLine ? [{ key: t.short.altitude, text: altitudeLine, to: 'ground' as Beat, cite: ['measures'] }] : []),
+    ...(famous[0]
+      ? [{ key: t.short.style, text: `${famous[0].name}. ${famous[0].text.trim()}`.trim(), to: 'rules' as Beat, cite: sheet!.famous!.cite }]
+      : kinds.length > 0 ? [{ key: t.short.wine, text: wineTypes, to: 'rules' as Beat, cite: sheet!.styles.cite }] : []),
+  ].slice(0, 5);
+
+  const sections = [
+    ...beats.map((b) => ({ id: b.id, label: t.jump[b.id], focus: beatHeading(b) })),
+    ...loose.map((c) => ({ id: `terroir-${c.id}`, label: c.title, focus: `terroir-${c.id}-h` })),
+    ...(tastes ? [{ id: 'taste', label: t.sections.taste, focus: 'heading' }] : []),
+    ...(short.length >= 3 ? [{ id: 'short', label: t.sections.short, focus: 'heading' }] : []),
+    ...(producers.length > 0 ? [{ id: 'producers', label: t.sections.producers, focus: 'heading' }] : []),
+    ...extras.map((k) => ({ id: k, label: t.sections[k], focus: 'heading' })),
+    ...(alike.length > 0 ? [{ id: 'alike', label: t.sections.alike, focus: 'heading' }] : []),
+    ...(sheet || guide ? [{ id: 'sources', label: t.sections.sources, focus: 'heading' }] : []),
   ];
-  const toSection = (id: string) => scrollToSection(id);
+
+  // The jump bar's marker follows the reading position, and a tab glides the page to its section (owner point 8, 18 Oct 2026).
+  const current = useSectionInView(sections.map((s) => s.id), pageRef, place.id);
+  useJumpMarker(jumpBar, current);
+  const jump = (id: string, focus = 'heading') => (e: MouseEvent) => {
+    e.preventDefault();
+    scrollToSection(id, focus);
+  };
+  const beatJump = (b: Beat) => {
+    const beat = beats.find((x) => x.id === b);
+    return beat ? jump(b, beatHeading(beat)) : undefined;
+  };
+  const pageHash = selectionToHash({ kind: 'place', id: place.id, page: true });
 
   return (
     <div ref={pageRef} className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
@@ -169,6 +347,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
           {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
         </nav>
         <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
+        {guide?.say && <p className="pg-say"><span>{t.say}</span> {guide.say}</p>}
         <ul className="pg-badges" aria-label={t.sections.where}>
           <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
           {region && <li title={t.swsTitle(region.chapter ?? region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
@@ -176,190 +355,136 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
           {meta && <li className="meta">{meta}</li>}
         </ul>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
+        <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>
 
         <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
-            <a key={s.id} href={selectionToHash({ kind: 'place', id: place.id, page: true })} aria-current={current === s.id ? 'true' : undefined} onClick={jump(s.id)}>{s.label}</a>
+            <a key={s.id} href={pageHash} aria-current={current === s.id ? 'true' : undefined} onClick={jump(s.id, s.focus)}>{s.label}</a>
           ))}
         </nav>
 
         <div className="pg-cols">
           <main>
-            {(sheet || official) && (
-              <Section id="overview" title={t.sections.overview}>
-                {sheet ? (
-                  <>
-                    <p className="pg-read">{sheet.why.text}</p>
-                    {src(sheet.why.cite)}
-                    {official && <p className="official">{official}</p>}
-                  </>
-                ) : <p className="pg-read">{official}</p>}
-              </Section>
+            {spine && (
+              <header className="pg-spine">
+                <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
+                {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
+              </header>
             )}
 
-            {guide && (
-              <Section id="terroir" title={guide.title}>
-                <p className="pg-read">{guide.lede.text}</p>
-                {src(guide.lede.cite)}
-                {guide.chapters.map((ch) => {
-                  const own = ch.fly ?? [];
-                  return (
-                    <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
-                      <h3 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h3>
-                      {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
-                      {ch.cards && (
-                        <div className="pg-zguide">
-                          {ch.cards.map((c, i) => (
-                            <div key={c.title}>
-                              <b>{c.title}</b>
-                              <p className="cl">{c.climate}</p>
-                              <p>{c.wine}</p>
-                              {pill(ch.id, own.length + i, c.fly.label)}
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                      {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
-                      {src(ch.cite)}
-                    </div>
-                  );
-                })}
-                {testMe}
-              </Section>
-            )}
+            {beats.map((b) => (
+              <section key={b.id} id={b.id} className="pg-beat" aria-labelledby={beatHeading(b)}>
+                <div className="pg-beat-h">
+                  <span className="n" aria-hidden="true">{b.n}</span>
+                  {b.chapters[0] ? (
+                    <>
+                      <span className="k">{t.beats[b.id]}</span>
+                      <h3 id={beatHeading(b)} tabIndex={-1}><span className="sr-only">{t.beats[b.id]}: </span>{b.chapters[0].title}</h3>
+                    </>
+                  ) : <h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3>}
+                </div>
+                <div className={b.chapters.length > 0 && factsOf[b.id] ? 'pg-beat-body two' : 'pg-beat-body'}>
+                  {b.chapters.length > 0 && <div className="pg-prose">{b.chapters.map((ch, i) => chapterBody(ch, i > 0))}</div>}
+                  {factsOf[b.id] && <div className="pg-facts">{factsOf[b.id]}</div>}
+                </div>
+              </section>
+            ))}
+
+            {loose.map((ch) => (
+              <section key={ch.id} id={`terroir-${ch.id}`} className="pg-beat" aria-labelledby={`terroir-${ch.id}-h`}>
+                <h3 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h3>
+                {chapterBody({ ...ch, id: `${ch.id}-body` }, false)}
+              </section>
+            ))}
 
             {tastes && (
-              <Section id="taste" title={t.sections.taste}>
+              <section id="taste" className="pg-answer" aria-labelledby="taste-h">
+                <h2 id="taste-h" tabIndex={-1}>{t.sections.taste}</h2>
                 <div className="pg-cards">
                   {tasteLines(tastes).map((l, i) => {
                     const sw = swatchOf(l.label);
                     return (
-                      <div key={i}>
-                        {sw && <i className={`pg-sw ${sw}`} aria-hidden="true" />}
-                        {l.label && <b>{l.label}</b>}
+                      <div key={i} className={sw ?? undefined}>
+                        {l.label && <b>{sw && <i className={`pg-sw ${sw}`} aria-hidden="true" />}{l.label}</b>}
                         <p>{l.text}</p>
                       </div>
                     );
                   })}
                 </div>
                 {src(sheet!.tastes!.cite)}
-              </Section>
+              </section>
             )}
 
-            {famous.length > 0 && (
-              <Section id="styles" title={t.sections.styles}>
-                <ul className="pg-styles">
-                  {famous.map((f) => <li key={f.name}><strong>{f.name}</strong>{f.text.trim() && <span>{f.text.trim()}</span>}</li>)}
-                </ul>
-                {src(sheet!.famous!.cite)}
-              </Section>
-            )}
-
-            {(main.length > 0 || others.length > 0 || wineTypes) && (
-              <Section id="grapes" title={t.sections.grapes}>
-                {main.length > 0 && (
-                  <>
-                    <h3 className="pg-h3">{t.mainGrapes}</h3>
-                    <ul className="pg-grapes">{main.map((g) => <li key={g.local}>{grapeLabel(g)}</li>)}</ul>
-                    {src(sheet!.grapes.cite)}
-                  </>
-                )}
-                <dl className="pg-rows">
-                  {others.length > 0 && (
-                    <>
-                      <dt>{sheet!.grapes.othersPartial ? t.otherGrapesPartial : t.otherGrapes}</dt>
-                      <dd><OtherGrapes names={others} />{src(sheet!.grapes.othersCite)}</dd>
-                    </>
-                  )}
-                  {wineTypes && (
-                    <>
-                      <dt>{t.wineTypes}</dt>
-                      <dd>{wineTypes}{src(sheet!.styles.cite)}</dd>
-                    </>
-                  )}
-                </dl>
-              </Section>
-            )}
-
-            {sections.some((s) => s.id === 'land') && (
-              <Section id="land" title={t.sections.land}>
-                <div className="pg-land">
-                  {climate && (
-                    <div>
-                      <h3 className="pg-h3">{t.climateWritten}</h3>
-                      <p>{climate}</p>
-                      {src(sheet!.climate.cite)}
-                    </div>
-                  )}
-                  {koppen.length > 0 && (
-                    <div>
-                      <h3 className="pg-h3">{t.climateMeasured}</h3>
-                      <ClimateBar name={place.name} shares={koppen} compare={compare.map((c) => ({ label: c.label, shares: c.m.koppen }))} />
-                      {src(['koppen'])}
-                      <p className="pg-note">{t.compareNote}</p>
-                    </div>
-                  )}
-                  {soil && (
-                    <div>
-                      <h3 className="pg-h3">{t.soil}</h3>
-                      <p>{soil}</p>
-                      {src(sheet!.soil.cite)}
-                    </div>
-                  )}
-                  {(writtenAltitude || measures) && (
-                    <div>
-                      <h3 className="pg-h3">{t.altitude}</h3>
-                      {measures && <AltitudeRange name={place.name} altitude={measures.altitude} compare={compare.map((c) => ({ label: c.label, altitude: c.m.altitude }))} />}
-                      {writtenAltitude && <p>{writtenAltitude}</p>}
-                      {measures && <p>{altitudeText(measures.altitude)}</p>}
-                      {src([...(writtenAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])])}
-                    </div>
-                  )}
-                </div>
-              </Section>
+            {short.length >= 3 && (
+              <section id="short" className="pg-short" aria-labelledby="short-h">
+                <h2 id="short-h" tabIndex={-1}>{t.sections.short}</h2>
+                <ol>
+                  {short.map((s) => (
+                    <li key={s.key}>
+                      <span className="k">{s.key}</span>
+                      <span className="f"><a href={pageHash} onClick={beatJump(s.to)}>{s.text}</a>{s.cite.length > 0 && src(s.cite)}</span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
             )}
 
             {producers.length > 0 && (
-              <Section id="producers" title={t.sections.producers}>
+              <section id="producers" aria-labelledby="producers-h">
+                <h2 id="producers-h" tabIndex={-1}>{t.sections.producers}</h2>
                 <ul className="pg-names">{producers.map((p) => <li key={p.name}>{p.wine ? `${p.name} (${p.wine})` : p.name}</li>)}</ul>
                 {src(sheet!.producers!.cite)}
-              </Section>
+              </section>
             )}
 
-            {zones.length > 0 && (
-              <Section id="zones" title={t.sections.zones}>
-                <ul className="pg-zones">
-                  {zones.map((z) => {
-                    const photo = photosOf(z.id)[0];
-                    const why = sheetOf(z.id)?.why;
+            {extras.map((k) => {
+              if (k === 'label') return (
+                <section key={k} id={k} aria-labelledby={`${k}-h`}>
+                  <h2 id={`${k}-h`} tabIndex={-1}>{t.sections.label}</h2>
+                  <dl className="pg-rows pg-terms">{labelTerms.map((x) => <div key={x.term}><dt>{x.term}</dt><dd>{x.text}</dd></div>)}</dl>
+                  {src(guide!.label!.cite)}
+                </section>
+              );
+              const x = extraOf(k)!;
+              return (
+                <section key={k} id={k} aria-labelledby={`${k}-h`}>
+                  <h2 id={`${k}-h`} tabIndex={-1}>{x.title ?? t.sections[k]}</h2>
+                  {x.paras.map((para, i) => <p key={i} className="pg-p">{para}</p>)}
+                  {src(x.cite)}
+                  {k === 'visit' && x.when && (
+                    <div className="pg-fact">
+                      <h3 className="pg-h3">{t.whenToGo}</h3>
+                      <p className="pg-p">{x.when.text}</p>
+                      {src(x.when.cite)}
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+
+            {alike.length > 0 && (
+              <section id="alike" aria-labelledby="alike-h">
+                <h2 id="alike-h" tabIndex={-1}>{t.sections.alike}</h2>
+                <ul className="pg-alike">
+                  {alike.map((a) => {
+                    const photo = photosOf(a.place.id)[0];
                     return (
-                      <li key={z.id}>
-                        <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
-                          {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
-                          <b>{z.name}</b>
+                      <li key={a.place.id}>
+                        <Link className="zlink" to={{ kind: 'place', id: a.place.id, page: true }} go={go}>
+                          {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 16rem" alt="" lazy /> : <span className="zblank" style={{ background: regionColor(a.place.region) }} aria-hidden="true" />}
+                          <b>{a.place.name}</b>
                         </Link>
-                        {why && <><p>{why.text}</p>{src(why.cite)}</>}
+                        <p>{a.why}</p>
                       </li>
                     );
                   })}
                 </ul>
-              </Section>
+              </section>
             )}
 
-            {!guide && testMe}
+            {testMe}
 
-            <Section id="where" title={t.sections.where}>
-              <dl className="pg-rows">
-                <dt>{t.level}</dt>
-                <dd>{level}{sheet && !isZone && src(['mapa-list'])}</dd>
-                {region && !isZone && (<><dt>{t.studyRegion}</dt><dd>{ownRegion ? region.name : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{region.name}</Link>}</dd></>)}
-                {also.length > 0 && (
-                  <>
-                    <dt>{t.alsoWithin}</dt>
-                    <dd><ul>{also.map((o) => <li key={o.id}><Link to={{ kind: 'place', id: o.id, page: true }} go={go}>{o.name}</Link></li>)}</ul></dd>
-                  </>
-                )}
-              </dl>
+            {(region && !ownRegion) || next ? (
               <div className="pg-next">
                 {region && !ownRegion && <Link className="btn" to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.allPlacesInRegion}</Link>}
                 {next && (
@@ -369,7 +494,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                   </Link>
                 )}
               </div>
-            </Section>
+            ) : null}
 
             {cited.length > 0 && (
               <Section id="sources" title={t.sections.sources}>
@@ -377,16 +502,6 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
               </Section>
             )}
           </main>
-
-          <aside aria-labelledby="pg-glance-h">
-            <div className="sticky">
-              <h2 id="pg-glance-h">{t.glanceTitle(place.name)}</h2>
-              <dl>{glance.map(([k, v, sec]) => (
-                <div key={k}><dt>{k}</dt><dd>{v} <button type="button" className="srcbtn" onClick={() => toSection(sec)}>{t.sourceLink}</button></dd></div>
-              ))}</dl>
-              <Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link>
-            </div>
-          </aside>
         </div>
       </div>
     </div>
