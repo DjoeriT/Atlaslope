@@ -26,3 +26,4 @@
 | Write | cebreros | Sonnet | 41,859 | 1.2 |
 | Write | dehesa-penalba | Sonnet | 41,296 | 1.0 |
 | Check | valtiendas | Opus | 81,891 | 2.7 |
+| Check | valles-de-benavente | Opus | 85,437 | 2.8 |
