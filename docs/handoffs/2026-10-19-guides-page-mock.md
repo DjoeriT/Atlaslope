@@ -18,7 +18,19 @@
 - Build in `src/home/guideCount.ts` (guides list ~lines 60-160): jump row under the page head, `.slice(0, 6)` per region, link to the
   region page (`../atlas/#region=<id>&page`), photos keep their own ratio (drop the 3:2 `object-fit: cover` in the `.gl .gcard-c .ct`
   CSS; owner photo rule), drop the "Vino de Pago" kicker on photo-less tiles, design-check CSS (lede 1rem, meta .9rem, 44 px links).
-- Replace `public/guides/<region>.webp` with the 10 new tiles (or re-shoot from the script); `data/SOURCES.md` line for the imagery stays.
+- Region tiles: the mock's 10 tiles are NOT good enough (owner 19 Oct: "not really great"; LeadBot checked all 10 [V]). Fix them in the
+  build, not the mock, then show the owner all 10 as one contact sheet before the PR. What is wrong, per the check:
+  1. Framing: views are hand-set centres, so most tiles are mostly neighbours. Rioja is half Navarra; Green Spain is mostly
+     Castilla y León places; Castilla y León cuts Bierzo into a corner and shows Meseta places; Andalucía shows Extremadura and
+     La Mancha at the top with Jerez tiny; Valencia-Murcia shows half La Mancha.
+  2. Weight: other regions' places are drawn as strongly as the region's own, so no tile says which region it is.
+  3. Labels: small serif names, unreadable at tile size, and they collide (Utiel-Requena/El Terrerazo, Guijoso/Finca Élez,
+     Priorat/Montsant/Tarragona, Campo de Calatrava/Valdepeñas, the Tenerife cluster). Baleares and Canarias are the best two.
+  Fix in `Tools/guides/region_tile_flags.mjs` (rename to `region_tile.mjs` and archive the old one): fit each frame to the bounds of
+  that region's own places (padding ~8%), not a hand-set view; draw places outside the region faint or not at all; label only the
+  region's own places, bigger, dropping a label that collides. First check whether the app's own region view (`#region=<id>`)
+  already fits and highlights a region, and reuse it if so [A, not checked]. Then replace `public/guides/<region>.webp` with the
+  10 new tiles; the imagery line in `data/SOURCES.md` stays. Pilot 2 regions (Rioja, Andalucía) before shooting all 10.
 - Tests: the home/guides unit test (`tests/unit/home.test.ts`) and the guides UI spec that the change touches; update `README`
   only if commands change. ReviewBot runs (new UI).
 - Known, accepted: some app labels overlap on tiles (Canarias, Valencia-Murcia, Andalucía "Manzanilla-Sanlúcar"); Green Spain
