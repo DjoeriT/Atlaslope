@@ -1,0 +1,162 @@
+{
+ "id": "valle-de-la-orotava",
+ "title": "Why Valle de la Orotava tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Mild, humid air bathes this valley all year. That gentle weather, with volcanic soil and long braided vines, is why its wines are fresh and persistent, with low acidity.",
+  "cite": [
+   "valle-de-la-orotava-pliego:p8",
+   "valle-de-la-orotava-pliego:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Shaped by a slide from Las Cañadas",
+   "paras": [
+    "The valley lies on the north side of the Cordillera Dorsal, the mountain ridge of Tenerife. It is a great hollow of about 150 km². It falls from about 2,000 m to the sea.",
+    "Two true walls flank it, the escarpments of Tigaiga and Santa Úrsula. They make it look like a sunken space, but it did not sink. Huge amounts of material slid down from Las Cañadas del Teide to shape it.",
+    "The vineyards lie on a gentle slope between 400 and 800 m above the sea. The zone takes in three municipalities of Tenerife. Los Realejos and Puerto de la Cruz join La Orotava in it.",
+    "Spanish conquerors brought the vine to Tenerife in the middle of the 16th century. The first vines went into the El Burgado estate, in Los Realejos.",
+    "From the 16th to the 18th century the valley's Malvasía wine boomed. Puerto de la Cruz, then the Puerto de La Orotava, became the first port of the Canary Islands and the hub of foreign trade. About 30,000 pipas, wine casks, of Malvasía are reckoned to have left it in one year.",
+    "An English colony settled in Puerto de la Cruz. At the 1674 harvest, 150 English ships lay at anchor waiting for the wine.",
+    "In the middle of the 18th century the Malvasía crisis began, and prices fell steeply."
+   ],
+   "cite": [
+    "valle-de-la-orotava-pliego:p6",
+    "valle-de-la-orotava-pliego:p7",
+    "valle-de-la-orotava-pliego:p8",
+    "valle-de-la-orotava-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Las Cañadas del Teide",
+     "point": [
+      -16.6423,
+      28.2727
+     ],
+     "zoom": 10,
+     "caption": "The valley's ground slid down from up here, not from a sinking of the land.",
+     "cite": [
+      "valle-de-la-orotava-pliego:p7"
+     ]
+    },
+    {
+     "label": "Puerto de la Cruz",
+     "point": [
+      -16.5533,
+      28.4159
+     ],
+     "zoom": 11,
+     "caption": "Once the first port of the Canaries, shipping the valley's Malvasía abroad.",
+     "cite": [
+      "valle-de-la-orotava-pliego:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Trade winds in a desert zone",
+   "paras": [
+    "The valley sits in the middle of a desert zone, yet its climate differs from that of continental Africa.",
+    "Trade winds loaded with moisture blow all year. They clean and cool the air and soften the temperatures.",
+    "The Atlantic adds the cold Canary Current. The territory is small, so the current reaches every corner. It softens temperatures on the coast and makes the air very humid.",
+    "In an average year the summer maximum is 37 °C and the winter minimum 7 °C. Rain averages 465 mm a year. The sun shines for 2,000 hours."
+   ],
+   "cite": [
+    "valle-de-la-orotava-pliego:p8",
+    "valle-de-la-orotava-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Volcanic ground, braided vines",
+   "paras": [
+    "70% of the soils are volcanic. Clay makes up 20%, and volcanic rock the remaining 10%.",
+    "The soils are light and permeable. They are rich in mineral nutrients. Their pH is slightly acid because they are volcanic.",
+    "The vines grow on slopes and in vaguadas, shallow hollows. They are trained on fixed parrales about 60 cm off the ground, as cordón trenzado, many cordons braided together. A braid runs from 3 or 4 m in narrow spots to 15 m on an old vine with enough vigour.",
+    "The vines are 50 years old on average.",
+    "The long braids lay more of the plant open to the sun. They also make it harder for sap to reach the far end of the vine. This way of growing is one of the marks of the valley's identity."
+   ],
+   "cite": [
+    "valle-de-la-orotava-pliego:p8",
+    "valle-de-la-orotava-pliego:p9"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Eight kinds of wine",
+   "paras": [
+    "The valley makes white, rosado and red wines. It also makes vino de licor, with at least 15% vol. of alcohol.",
+    "Vino dulce clásico comes from grapes overripened on the vine or dried in the sun, the asoleado method. It keeps at least 45 g/l of residual sugar.",
+    "There are three grades of sparkling wine. Above plain espumoso stand espumoso de calidad and espumoso aromático de calidad.",
+    "Malvasía volcánica and Malvasía aromática are among the preferred white grapes. Listán negro, also called Almuñeco, and Negramoll are among the preferred reds.",
+    "Six grapes, Tempranillo and Syrah among them, may make up no more than 30% of the grapes a winery takes in. None of them may make a single-variety wine.",
+    "How it tastes: a rosado may show strawberry and hints of blackberry. A red aged in wood joins its fruit to toasted, spicy notes, and cocoa may appear. Dulce clásico runs from light yellow to amber. It smells of raisined fruit with toasted and honeyed notes, and its sweetness is balanced by good acidity.",
+    "In short, mild weather and braided vines on volcanic ground give the valley wines in a wide range of colours."
+   ],
+   "cite": [
+    "valle-de-la-orotava-pliego:p1",
+    "valle-de-la-orotava-pliego:p4",
+    "valle-de-la-orotava-pliego:p5",
+    "valle-de-la-orotava-pliego:p6",
+    "valle-de-la-orotava-pliego:p7",
+    "valle-de-la-orotava-pliego:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, with none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "Cosecha, Añada or Vendimia",
+    "text": "At least 85% of the wine comes from grapes picked in the year named."
+   },
+   {
+    "term": "Tenerife",
+    "text": "Every label must show the island's name prominently, next to Valle de La Orotava."
+   }
+  ],
+  "cite": [
+   "valle-de-la-orotava-pliego:p2",
+   "valle-de-la-orotava-pliego:p3",
+   "valle-de-la-orotava-pliego:p12"
+  ]
+ }
+}

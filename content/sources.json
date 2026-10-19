@@ -1480,5 +1480,95 @@
   "title": "Documento único DOP Urbezo, publication of the registration application (EU Official Journal C/2024/1738, PDO-ES-02585)",
   "url": "http://data.europa.eu/eli/C/2024/1738/oj",
   "date": "2024-02-26"
+ },
+ "abona-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Abona (PDO-ES-A0975), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/abona_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "el-hierro-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP El Hierro (PDO-ES-A1250), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/el_hierro_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "gran-canaria-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Gran Canaria (PDO-ES-A0112), text in force from 2025-04-23 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/gran_canaria_2025_04_23.pdf",
+  "date": "2025-04-23"
+ },
+ "la-gomera-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP La Gomera (PDO-ES-A0111), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/la_gomera_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "la-palma-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP La Palma (PDO-ES-A0510), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/la_palma_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "lanzarote-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Lanzarote (PDO-ES-A0113), text in force from 2025-01-13 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/lanzarote_2025_01_13.pdf",
+  "date": "2025-01-13"
+ },
+ "tacoronte-acentejo-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Tacoronte-Acentejo (PDO-ES-A0115), text in force from 2024-12-30 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/tacoronte-acentejo_2024_12_30.pdf",
+  "date": "2024-12-30"
+ },
+ "valle-de-guimar-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Valle de Güímar (PDO-ES-A0980), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/valle_de_guimar_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "valle-de-la-orotava-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Valle de la Orotava (PDO-ES-A1040), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/valle_de_la_orotava_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "ycoden-daute-isora-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Ycoden-Daute-Isora (PDO-ES-A0114), text in force from 2011-01-01 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/ycoden-daute-isora_2011_01_01.pdf",
+  "date": "2011-01-01"
+ },
+ "islas-canarias-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Islas Canarias (PDO-ES-A1511), text in force from 2021-07-27 as listed by MAPA",
+  "url": "https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/calidad-agroalimentaria/2017-calidad-diferenciada/nuevo_denominaciones/pliegos-de-condiciones/pliego-condiciones-vinos/dops/islas_canarias_2021_07_27.pdf",
+  "date": "2021-07-27"
+ },
+ "lanzarote-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Lanzarote as amended (OJ C/2025/1678 (11 Mar 2025), PDO-ES-A0113-AM02)",
+  "url": "http://data.europa.eu/eli/C/2025/1678/oj",
+  "date": "2025-03-11"
+ },
+ "gran-canaria-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Gran Canaria as amended (OJ C/2025/4097 (21 Jul 2025), PDO-ES-A0112-AM02)",
+  "url": "http://data.europa.eu/eli/C/2025/4097/oj",
+  "date": "2025-07-21"
+ },
+ "tacoronte-acentejo-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Tacoronte-Acentejo as amended (OJ C/2025/1618 (19 Mar 2025), PDO-ES-A0115-AM04)",
+  "url": "http://data.europa.eu/eli/C/2025/1618/oj",
+  "date": "2025-03-19"
+ },
+ "islas-canarias-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Islas Canarias as amended (OJ C 88 of 24 Feb 2022, CELEX 52022XC0224(02), PDO-ES-A1511-AM02)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52022XC0224(02)",
+  "date": "2022-02-24"
  }
 }

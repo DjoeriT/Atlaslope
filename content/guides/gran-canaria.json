@@ -1,0 +1,162 @@
+{
+ "id": "gran-canaria",
+ "title": "Why Gran Canaria tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "On Gran Canaria the trade winds rule the climate, and the African coast adds its warmth. Together they favour a long season of growth and ripening, which gives the wines a persistent, balanced structure.",
+  "cite": [
+   "gran-canaria-pliego:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A continent in miniature",
+   "paras": [
+    "Gran Canaria is also called a \"continente en miniatura\", a continent in miniature, for its many microclimates and landscapes. The land climbs gradually from the coast to the centre of the island. It peaks at 1950 m on Pico de Las Nieves.",
+    "Craters carved by erosion ring the summit. From them the barrancos, the island's ravines, run down on every side. The steepest head west and southwest, where the coast ends in cliffs.",
+    "The whole island is one denomination. Vineyard plots run from 50 to 1300 m of altitude.",
+    "The vine arrived in the 15th century with the Castilian conquerors. Vines first filled the low lands of towns such as Las Palmas and Telde. They then spread up into the medianías, the middle heights, as land was cleared and roads improved.",
+    "Inside the denomination sits its own comarca, Monte Lentiscal, between the Monumento Natural de Bandama and the Paisaje Protegido de Tafira. In the early 19th century a rising bourgeoisie built countless lagares and bodegas here, the presses and wineries, among spreading parrales, the pergola vines. Together they make the most emblematic wine landscape on Gran Canaria.",
+    "The Barranco de Taguy is a remote spot at the bottom of the Caldera de Tejeda. It is perhaps where wine is still made in the oldest way, with methods no different from those of the first European settlers 500 years ago."
+   ],
+   "cite": [
+    "gran-canaria-pliego:p7",
+    "gran-canaria-pliego:p8",
+    "gran-canaria-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Monte Lentiscal",
+     "point": [
+      -15.4744,
+      28.0447
+     ],
+     "zoom": 11,
+     "caption": "Lagares, bodegas and parrales built in the 19th century make this the island's most emblematic wine landscape.",
+     "cite": [
+      "gran-canaria-pliego:p9"
+     ]
+    },
+    {
+     "label": "Caldera de Tejeda",
+     "point": [
+      -15.6144,
+      27.9911
+     ],
+     "zoom": 11,
+     "caption": "At its bottom lies the remote Barranco de Taguy, perhaps home to the oldest way of making wine on the island.",
+     "cite": [
+      "gran-canaria-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Trade winds and African warmth",
+   "paras": [
+    "The relief makes many climates and microclimates, so no single climate fits the whole island. Its Atlantic position and the nearby African coast still give it a climate dominated by the alisios, the trade winds. They blow under a warm influence from the Moroccan coast, only about 100 km away.",
+    "Sun does a lot of the work. The relief and the way vineyards face give the bunches high solar radiation, which concentrates sugars and aromas in grapes for vino de licor. Many hours of sun a year and constant temperatures favour grapes that overripen on the vine."
+   ],
+   "cite": [
+    "gran-canaria-pliego:p8",
+    "gran-canaria-pliego:p11"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Ash, picón and clay",
+   "paras": [
+    "The vineyards sit on very fertile volcanic soils. They formed in different geological periods, so they vary widely and are at different stages of evolution. Some are porous volcanic ash. Others are clay with low permeability and high fertility.",
+    "The range runs from arid, hard basalt left by old eruptions to very loose picón, or lapilli, and on to clays of volcanic origin. This variety directly shapes how the vines are grown, and so what they produce.",
+    "The volcanic soils, the relief and the weather together explain the wide range of colours and aromas. The intensity on the palate comes from the volcanic soil and from many red and white grapes adapted to the island. In the whites, the minerality of the volcanic soils brings complexity and depth."
+   ],
+   "cite": [
+    "gran-canaria-pliego:p8",
+    "gran-canaria-pliego:p10",
+    "gran-canaria-pliego:p11"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Old vines, four kinds of wine",
+   "paras": [
+    "The still wines are white or red, and there is rosado too. Malvasía volcánica and Moscatel de Alejandría are among the preferred white grapes. Listán Negro, also called Almuñeco, is a preferred red alongside Negramoll. Many growers still keep varieties from very old vines.",
+    "Parral bajo, the low pergola, and vaso, the bush vine, are the traditional ways to grow vines. Espaldera, the wire trellis, is spreading because it allows more machines.",
+    "Vino de licor is fortified with wine alcohol. That gives it pronounced aromas and a sweet but balanced character with notable length.",
+    "Vino espumoso is the sparkling wine. The long ripening gives grapes an excellent balance of acidity and sugar. The wines have a lively, persistent structure with fine bubbles.",
+    "Vino de uvas sobremaduras is made from overripe grapes. They concentrate sugar while keeping balanced acidity. The wine is sweet, with sweetness and freshness in balance. Made from the Malvasías or Moscatel with more than 45 g/l of residual sugar, it can be called Clásico."
+   ],
+   "cite": [
+    "gran-canaria-pliego:p1",
+    "gran-canaria-pliego:p7",
+    "gran-canaria-pliego:p9",
+    "gran-canaria-pliego:p11",
+    "gran-canaria-pliego:p16"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Monte Lentiscal",
+    "text": "Only when every grape comes from the comarca and the wine is made inside it."
+   },
+   {
+    "term": "Municipality",
+    "text": "Any municipality of the island, when 100% of the grapes come from it and the wine is made, aged if aged, and bottled there, in letters no bigger than Gran Canaria."
+   },
+   {
+    "term": "Cosecha, añada or vendimia",
+    "text": "At least 85% of the wine comes from the year named."
+   },
+   {
+    "term": "Grape variety",
+    "text": "Only when the wine is 100% that grape."
+   },
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "gran-canaria-pliego:p2",
+   "gran-canaria-pliego:p3",
+   "gran-canaria-pliego:p15",
+   "gran-canaria-pliego:p16"
+  ]
+ }
+}

@@ -1,0 +1,30 @@
+{
+  "sources": {
+    "abona-pliego": "Review/sources/fetched/pliego-PDO-ES-A0975-abona.txt",
+    "el-hierro-pliego": "Review/sources/fetched/pliego-PDO-ES-A1250-el-hierro.txt",
+    "gran-canaria-pliego": "Review/sources/fetched/pliego-PDO-ES-A0112-gran-canaria.txt",
+    "la-gomera-pliego": "Review/sources/fetched/pliego-PDO-ES-A0111-la-gomera.txt",
+    "la-palma-pliego": "Review/sources/fetched/pliego-PDO-ES-A0510-la-palma.txt",
+    "lanzarote-pliego": "Review/sources/fetched/pliego-PDO-ES-A0113-lanzarote.txt",
+    "tacoronte-acentejo-pliego": "Review/sources/fetched/pliego-PDO-ES-A0115-tacoronte-acentejo.txt",
+    "valle-de-guimar-pliego": "Review/sources/fetched/pliego-PDO-ES-A0980-valle-de-guimar.txt",
+    "valle-de-la-orotava-pliego": "Review/sources/fetched/pliego-PDO-ES-A1040-valle-de-la-orotava.txt",
+    "ycoden-daute-isora-pliego": "Review/sources/fetched/pliego-PDO-ES-A0114-ycoden-daute-isora.txt",
+    "islas-canarias-pliego": "Review/sources/fetched/pliego-PDO-ES-A1511-islas-canarias.txt",
+    "lanzarote-doc2": "Review/sources/fetched/oj-PDO-ES-A0113-C-2025-1678-lanzarote.txt",
+    "gran-canaria-doc2": "Review/sources/fetched/oj-PDO-ES-A0112-C-2025-4097-gran-canaria.txt",
+    "tacoronte-acentejo-doc2": "Review/sources/fetched/oj-PDO-ES-A0115-C-2025-1618-tacoronte-acentejo.txt",
+    "islas-canarias-doc2": "Review/sources/fetched/oj-PDO-ES-A1511-C-2022-088-islas-canarias.txt",
+    "abona-doc": "Review/sources/fetched/att-PDO-ES-A0975-27970.txt",
+    "el-hierro-doc": "Review/sources/fetched/att-PDO-ES-A1250-26949.txt",
+    "gran-canaria-doc": "Review/sources/fetched/att-PDO-ES-A0112-26958.txt",
+    "islas-canarias-doc": "Review/sources/fetched/att-PDO-ES-A1511-27631.txt",
+    "la-gomera-doc": "Review/sources/fetched/att-PDO-ES-A0111-27006.txt",
+    "la-palma-doc": "Review/sources/fetched/att-PDO-ES-A0510-27119.txt",
+    "lanzarote-doc": "Review/sources/fetched/att-PDO-ES-A0113-27060.txt",
+    "tacoronte-acentejo-doc": "Review/sources/fetched/att-PDO-ES-A0115-31318.txt",
+    "valle-de-guimar-doc": "Review/sources/fetched/att-PDO-ES-A0980-27156.txt",
+    "valle-de-la-orotava-doc": "Review/sources/fetched/att-PDO-ES-A1040-27296.txt",
+    "ycoden-daute-isora-doc": "Review/sources/fetched/att-PDO-ES-A0114-27335.txt"
+  }
+}

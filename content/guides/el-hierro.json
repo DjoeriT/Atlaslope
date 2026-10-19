@@ -1,0 +1,90 @@
+{
+ "id": "el-hierro",
+ "title": "Why El Hierro tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "On El Hierro the vines climb high, and higher up the growing cycle runs longer and the grapes ripen more slowly. That slow ripening is why the island's wine has long been famed as stronger and more acidic than that of the other islands, and as keeping better.",
+  "cite": ["el-hierro-pliego:p9"]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "The smallest island, farmed in steps",
+   "paras": [
+    "El Hierro is the most south-westerly of the Canary Islands. It is also the smallest of the seven main islands, at 278 km2. The whole cultivated area of the island makes up the zone.",
+    "Vines are believed to have arrived in the middle of the 16th century, with settlers who came first from Portugal and Castile. The first vineyard was at Guarazoca, in the spot called the \"Montaña de la Viña\". From there the vines spread into the valley of El Golfo, then on to Echedo. Later they took the high ground and the plains of El Pinar in the south. Sabinosa came last.",
+    "Today the vines grow in isolated patches. The largest is El Golfo, a hollow the island forms to the north-west of Frontera, at the foot of a huge wall of rock. Terraces save soil in very small spaces under heavy erosion. On such steep slopes machines are almost never used. Growing here is called \"viticultura heroica\", heroic viticulture, because the rugged land makes the work harder but gives the wines a character of their own."
+   ],
+   "cite": ["el-hierro-pliego:p6", "el-hierro-pliego:p7", "el-hierro-pliego:p8", "el-hierro-pliego:p9", "el-hierro-pliego:p10"],
+   "fly": [
+    {
+     "label": "Montaña de la Viña, Guarazoca",
+     "point": [-17.9802, 27.816],
+     "zoom": 11,
+     "caption": "Where the island's first vineyard was planted, before vines spread to El Golfo.",
+     "cite": ["el-hierro-pliego:p9"]
+    },
+    {
+     "label": "El Golfo",
+     "point": [-18.0042, 27.7735],
+     "zoom": 10.5,
+     "caption": "The largest patch of vines, in a hollow at the foot of a huge wall of rock.",
+     "cite": ["el-hierro-pliego:p10"]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Under the sea of clouds",
+   "paras": [
+    "No peak on El Hierro rises above 1,520 m. So the summits sit inside the band of the sea of clouds. The clouds spill over the ridge and fall like a cascade down the southern slopes, leaving their moisture on the plants.",
+    "The trade winds and the cool Canary Current keep the island from being arid like the Sahara at the same latitude. The sea stays at 18º in winter and 20º in summer, which softens the coast.",
+    "The south gets dry, cloudless winds, so it is hotter and drier. In summer the north coast averages 26 ºC and the south 30 ºC. El Pinar, on the south face, is the most extreme, with the biggest gap between seasons. The north face is the dampest.",
+    "Across the island the year averages 20.4 ºC, 170 mm of rain and 2,339 hours of sun. Higher up the growing cycle is longer and ripening is slower. That gives more alcohol and more total acidity, both once sought to help the wine keep."
+   ],
+   "cite": ["el-hierro-pliego:p7", "el-hierro-pliego:p8", "el-hierro-pliego:p9", "el-hierro-pliego:p10"]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "The youngest island's ground",
+   "paras": [
+    "El Hierro is volcanic and about 1.2 million years old, the youngest of the Canary Islands. Its surface is mostly alkaline olivine basalt. The soils are little weathered and poorly developed.",
+    "The vineyards run from 50 to 1000 m on very rugged, steep land, often terraced. The soil is poor in nutrients. It is light, loose and stony. In places it lies under a layer of lapilli, picón, the small volcanic gravel. Picón shields the ground from strong evaporation and soaks up the damp night air, but it yields little.",
+    "Salty, basic soil and low rainfall shape the grapes. They give wines with high alcohol, high acidity and a character of their own.",
+    "Phylloxera never reached the island. Its sandy volcanic soils do not suit the insect, and the island lay far from the wine trade routes. So Vijariego and Bermejuelo still grow ungrafted, and the island keeps a wide store of old varieties."
+   ],
+   "cite": ["el-hierro-pliego:p8", "el-hierro-pliego:p9", "el-hierro-pliego:p10"]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Island grapes and seven kinds of wine",
+   "paras": [
+    "Baboso Blanco, Bermejuela, Güal and Vijariego Blanco count as native whites, well adapted to the island. They are in almost every wine, and they give the white wines most of their character. Listán Negro is the main red grape. Baboso Negro, Vijariego Negro and Tintilla were disappearing and are now being planted again.",
+    "El Hierro makes white, rosado and red wine. There is also a red made by carbonic maceration, from whole red grapes in a CO2-rich space. Vino de licor needs at least 15% vol of actual alcohol and 17.5% vol in total. Vino espumoso, the sparkling wine, has at least 3.5 bar of pressure.",
+    "Vino dulce clásico comes from grapes overripened on the vine or dried in the sun. Its must reaches at least 289 g/l of sugar, and the finished wine keeps more than 45 g/l.",
+    "In the 17th century the island sold a wine called \"vidueño\" to Gran Canaria. It was a blend of every variety except Malvasía.",
+    "How it tastes: high in alcohol and acidity, with the native grapes in the glass. The reds are persistent, with tannins balanced against alcohol and acidity.",
+    "In short: slow ripening on high, steep ground gives El Hierro wines high in alcohol and acidity."
+   ],
+   "cite": ["el-hierro-pliego:p1", "el-hierro-pliego:p3", "el-hierro-pliego:p4", "el-hierro-pliego:p5", "el-hierro-pliego:p6", "el-hierro-pliego:p9", "el-hierro-pliego:p10", "el-hierro-pliego:p11"]
+  }
+ ],
+ "label": {
+  "terms": [
+   {"term": "Seco", "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."},
+   {"term": "Semiseco", "text": "Over 4 and up to 12 g/l of sugar, or up to 18 g/l if total acidity is no more than 10 g/l below it; 32 to 50 g/l on a sparkling semi seco."},
+   {"term": "Semidulce", "text": "Over 12 and up to 45 g/l of sugar."},
+   {"term": "Dulce", "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."},
+   {"term": "Brut Nature", "text": "Sparkling, under 3 g/l of sugar, none added after fermentation."},
+   {"term": "Extra Brut", "text": "Sparkling, 0 to 6 g/l of sugar."},
+   {"term": "Brut", "text": "Sparkling, under 12 g/l of sugar."},
+   {"term": "Extra Seco", "text": "Sparkling, 12 to 17 g/l of sugar."},
+   {"term": "Cosecha, Añada or Vendimia", "text": "At least 85% of the wine comes from grapes picked in the year named."}
+  ],
+  "cite": ["el-hierro-pliego:p2", "el-hierro-pliego:p13"]
+ }
+}

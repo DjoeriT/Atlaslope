@@ -1,0 +1,143 @@
+{
+ "id": "islas-canarias",
+ "title": "Why Islas Canarias tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "The Canary Islands are free of phylloxera, so their vines grow on their own roots. Volcanic soil gives the vines minerals, which is why the wines have a characteristic mineral-volcanic taste.",
+  "cite": [
+   "islas-canarias-pliego:p7",
+   "islas-canarias-pliego:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Continents in miniature",
+   "paras": [
+    "The archipelago lies off the northwest coast of Africa, between 27º 37' and 29º 25' north. It sits in the middle of the desert zone, yet the islands are true continents in miniature. Depending on aspect and altitude, they hold a great variety of climates, different from those of nearby Africa.",
+    "Vines came from Europe between the 15th and 18th centuries, before phylloxera devastated the continent's vineyards. That is why the islands have kept them with a high degree of purity.",
+    "Canary wine rose to fame in the first half of the 16th century, as sugar cane declined. Its star was malvasía, a grape that most likely came from Madeira. Ships on the ocean routes spread word of its quality.",
+    "The island wines, above all malvasía, were the first vinos generosos in the world to build an important sea trade. The wines improved on voyages because of their time in wood. In Europe's main courts malvasía went by the generic name \"Canary\", much as Port is known today."
+   ],
+   "cite": [
+    "islas-canarias-pliego:p6",
+    "islas-canarias-pliego:p7",
+    "islas-canarias-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "The whole archipelago",
+     "place": "islas-canarias",
+     "caption": "Islands off northwest Africa with a great variety of climates.",
+     "cite": [
+      "islas-canarias-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Trade winds and a cold current",
+   "paras": [
+    "Moist trade winds, the alisios, blow from the north and northwest almost all year, softening temperatures. The cold Canary Current softens temperatures on the coasts and makes the air very humid.",
+    "Average rain is low, about 350 litres per square metre a year. It swings widely, from under 100 l/m2 in some places to almost 1000 l/m2 in others. Lanzarote sometimes gets less than 150 litres per square metre a year.",
+    "Temperatures are very regular. There is no risk of frost and little difference between winter and summer. So the vine has a long growing season and ripens slowly. The trade winds also make a huge number of microclimates, with sharp contrasts you can notice within barely 100 metres."
+   ],
+   "cite": [
+    "islas-canarias-pliego:p7",
+    "islas-canarias-pliego:p8",
+    "islas-canarias-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Volcanic ground, old vines",
+   "paras": [
+    "All the islands are volcanic in origin and, in general, very fertile. They formed in different geological ages, so their soils vary a great deal. Vineyard ground is often light and permeable. It is rich in mineral nutrients, with a slightly acid pH, as a result of its volcanic origin.",
+    "On Lanzarote, traditional vineyards sit in a layer of volcanic sand of varying depth. Pits (hoyos), low stone walls or a mix of both shield the vines from the wind. There the minimum planting density is 400 vines per hectare, against 800 elsewhere.",
+    "The islands grow vines in more than twelve ways, many of them unique in the world.",
+    "Many vineyards are dry-farmed. In many districts vines are planted very wide apart. Some plantings are over eighty years old. These limits favour the quality of the harvest."
+   ],
+   "cite": [
+    "islas-canarias-pliego:p5",
+    "islas-canarias-pliego:p6",
+    "islas-canarias-pliego:p7",
+    "islas-canarias-pliego:p8",
+    "islas-canarias-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Lanzarote's sheltered vines",
+     "place": "lanzarote",
+     "caption": "Traditional vines in volcanic sand, shielded from the wind by hoyos and low stone walls.",
+     "cite": [
+      "islas-canarias-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Five kinds of wine",
+   "paras": [
+    "White grapes include Listán Blanco de Canarias and Malvasía Volcánica. Red grapes include Listán Negro and Negramoll.",
+    "The islands make white, rosado and red wine. Reds need at least 85% red grapes. Thanks to the long season, whites reach good aromatic intensity, with notes of white and tropical fruit. Reds bring black fruit such as blackberries, with a hint of black pepper. Rosados smell cleanly of red fruit such as strawberries and raspberries.",
+    "In the many microclimates, some varieties do not ripen enough for naturally sweet wine. So wine alcohol has traditionally been added to make vinos de licor, fortified liqueur wines with fresh aromas of the grape.",
+    "Vino de uvas sobremaduradas is made from overripe grapes. The way the vine is trained exposes it to the sun and evens out its temperature, so these wines balance sweetness and acidity in the mouth.",
+    "The quality sparkling wine, espumoso de calidad, owes its good aromatic intensity and fruity finish to the slow ripening. Regular temperatures and strong sunshine make vino de aguja gasificado, with its evident bubbles, soft and intensely fruity."
+   ],
+   "cite": [
+    "islas-canarias-pliego:p1",
+    "islas-canarias-pliego:p4",
+    "islas-canarias-pliego:p5",
+    "islas-canarias-pliego:p6",
+    "islas-canarias-pliego:p9",
+    "islas-canarias-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of sugar, or up to 9 g/l if total acidity is no more than 2 g/l below it; 17 to 32 g/l on a sparkling wine."
+   },
+   {
+    "term": "Semiseco",
+    "text": "Over 4 and up to 12 g/l of sugar, or up to 18 g/l if total acidity is no more than 10 g/l below it; 32 to 50 g/l on a sparkling semi seco."
+   },
+   {
+    "term": "Semidulce",
+    "text": "Over 12 and up to 45 g/l of sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "Over 45 g/l of sugar; over 50 g/l on a sparkling wine."
+   },
+   {
+    "term": "Brut Nature",
+    "text": "Sparkling, under 3 g/l of sugar, with none added after fermentation."
+   },
+   {
+    "term": "Extra Brut",
+    "text": "Sparkling, 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "Sparkling, under 12 g/l of sugar."
+   },
+   {
+    "term": "Extra Seco",
+    "text": "Sparkling, 12 to 17 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "islas-canarias-pliego:p2",
+   "islas-canarias-pliego:p3"
+  ]
+ }
+}
