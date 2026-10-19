@@ -1,0 +1,672 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guide Shape Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --paper:#FFFFFF;--paper2:#F7F5F0;
+  --black:#141414;--champ:#E9D8B4;--champ-muted:#BFAE8B;--champ-ink:#7D6540;
+  --ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;
+  --line:#E8E3D9;--line2:#D8CFBF;
+  --t1:#141414;--t2:#7D6540;--t3:#C9B48A;--t4:#EFE6D2;
+  --red:#6B1E2A;--white:#E4D9A6;--rose:#E7A9A0;
+  --focus:#141414;
+  --r:.3rem;--rc:.4rem;
+  --shadow:0 0 0 1px rgba(20,20,20,.06),0 2px 6px rgba(20,20,20,.06),0 14px 36px rgba(20,20,20,.10);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper2);color:var(--ink);font:400 1rem/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:var(--r)}
+.band :focus-visible,.chrome :focus-visible{outline-color:var(--champ)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;margin:0;color:var(--ink);letter-spacing:-.01em}
+p{margin:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- mock chrome (not part of the design) ---------- */
+.chrome{position:sticky;top:0;z-index:100;background:var(--black);border-bottom:1px solid var(--champ);color:var(--champ)}
+.chrome-in{max-width:1132px;margin:0 auto;padding:.5rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem}
+.chrome-title{font:500 1rem/1.2 var(--serif);color:var(--champ);margin-right:auto}
+.chrome-title span{display:block;font:400 .78rem/1.3 var(--sans);color:var(--champ-muted)}
+.seg{display:flex;gap:.25rem;background:#262421;padding:.25rem;border-radius:var(--rc)}
+.seg button{appearance:none;border:0;background:transparent;color:var(--champ-muted);font:600 .9rem/1 var(--sans);min-width:2.75rem;min-height:2.75rem;padding:0 .75rem;border-radius:var(--r);cursor:pointer;position:relative}
+.seg button[aria-pressed="true"]{background:var(--champ);color:var(--black)}
+.seg button .star{position:absolute;top:.2rem;right:.25rem;font-size:.6rem;line-height:1}
+.seg.w button{font-weight:500}
+@media (max-width:899px){.seg.w{display:none}}
+.notes{max-width:1132px;margin:0 auto;padding:1.5rem 1rem 1rem;display:grid;gap:.5rem;grid-template-columns:1fr}
+@media (min-width:700px){.notes{grid-template-columns:1fr 1fr}}
+@media (min-width:1100px){.notes{grid-template-columns:repeat(4,1fr)}}
+.note{appearance:none;text-align:left;font:inherit;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:var(--rc);padding:1rem;cursor:pointer;display:block}
+.note[aria-pressed="true"]{border-color:var(--black);box-shadow:inset 0 0 0 1px var(--black)}
+.note b{font:500 1.05rem/1.25 var(--serif);display:block;margin-bottom:.35rem}
+.note p{font-size:.9rem;line-height:1.5;color:var(--ink2)}
+.note p + p{margin-top:.35rem}
+.rec{display:inline-block;background:var(--black);color:var(--champ);font:600 .72rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:.3rem .45rem;border-radius:var(--r);margin-left:.4rem;vertical-align:.15em}
+.why-rec{color:var(--champ-ink)!important;font-weight:500}
+
+.stage{padding:0 1rem 4rem}
+.frame{container-type:inline-size;margin:0 auto;max-width:430px;background:var(--paper);box-shadow:var(--shadow);border-radius:var(--rc);overflow:clip}
+.stage.desk .frame{max-width:none;width:min(1100px,100%)}
+@media (max-width:420px){.stage{padding:0 0 3rem}.frame{border-radius:0;box-shadow:none}}
+.opt[hidden]{display:none}
+
+/* ---------- site bar ---------- */
+.band{background:var(--black);height:56px;border-bottom:1px solid var(--champ);display:flex;align-items:center;padding:0 16px;gap:.75rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--champ);min-height:44px}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font:500 1.25rem/1 var(--serif);letter-spacing:.01em}
+.band nav{margin-left:auto;display:flex}
+.band nav a{color:var(--champ-muted);text-decoration:none;font:600 .9rem/1 var(--sans);padding:0 .55rem;min-height:44px;display:flex;align-items:center}
+.band nav a[aria-current]{color:var(--champ);text-decoration:underline;text-underline-offset:.45rem;text-decoration-thickness:1px}
+@container (max-width:400px){.brand b{display:none}}
+@container (min-width:900px){.band{height:64px}.brand b{font-size:1.6rem}.band nav a{padding:0 .9rem}}
+
+/* ---------- page grid ---------- */
+.pg{padding:0 16px 3rem}
+@container (min-width:900px){.pg{padding:0 3rem 4rem}}
+.head{padding:1.5rem 0 1rem}
+.head h1{font:500 3.2rem/1 var(--serif);letter-spacing:-.02em}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:1rem 0 0}
+.badges li{font:500 .78rem/1 var(--sans);padding:.42rem .55rem;border-radius:var(--r);border:1px solid var(--line2);color:var(--ink2)}
+.badges li.solid{background:var(--black);border-color:var(--black);color:var(--champ);font-weight:600}
+.meta{font-size:.9rem;color:var(--ink3);margin-top:.75rem}
+
+/* photos */
+.mosaic{display:grid;gap:.5rem;grid-template-columns:1fr 1fr;border-radius:var(--rc);overflow:hidden}
+.mosaic .ph:first-child{grid-column:1 / -1;aspect-ratio:16/11}
+.mosaic .ph{aspect-ratio:1/1}
+@container (min-width:900px){
+  .mosaic{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;height:420px}
+  .mosaic .ph:first-child{grid-column:1;grid-row:1 / 3;aspect-ratio:auto}
+  .mosaic .ph{aspect-ratio:auto}
+}
+.ph{position:relative;background:
+   repeating-linear-gradient(115deg,rgba(125,101,64,.10) 0 2px,transparent 2px 22px),
+   linear-gradient(160deg,#F4EAD3 0%,#E9D8B4 55%,#D9C29A 100%);
+   display:flex;align-items:flex-start;padding:.75rem;min-height:0}
+.ph span{font:500 .78rem/1.3 var(--sans);color:var(--ink);background:rgba(255,255,255,.82);padding:.3rem .5rem;border-radius:var(--r);max-width:90%}
+.photo-wrap{position:relative;margin-top:.5rem}
+.allph{position:absolute;right:.75rem;bottom:2.4rem;appearance:none;border:0;background:var(--paper);color:var(--ink);font:600 .9rem/1 var(--sans);min-height:44px;padding:0 1rem;border-radius:var(--rc);box-shadow:var(--shadow);cursor:pointer}
+.credit{font-size:.7rem;line-height:1.45;color:var(--ink3);margin-top:.5rem}
+.credit a{color:var(--ink3)}
+.actions{display:flex;gap:1rem;align-items:center;margin-top:1.5rem;flex-wrap:wrap}
+.btn{appearance:none;border:0;background:var(--black);color:var(--champ);font:600 1rem/1 var(--sans);min-height:48px;padding:0 1.25rem;border-radius:var(--rc);display:inline-flex;align-items:center;gap:.6rem;cursor:pointer;text-decoration:none}
+.btn svg{width:18px;height:18px}
+.btn.quiet{background:transparent;color:var(--ink);border:1px solid var(--line2)}
+
+/* jump bar */
+.jump{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin:1.5rem -16px 0;padding:0 16px}
+@container (min-width:900px){.jump{margin:2rem -3rem 0;padding:0 3rem}}
+.jump ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;overflow-x:auto;scrollbar-width:none}
+.jump ul::-webkit-scrollbar{display:none}
+.jump a{display:flex;align-items:center;min-height:48px;white-space:nowrap;text-decoration:none;font:500 .9rem/1 var(--sans);color:var(--ink3);border-bottom:2px solid transparent}
+.jump a.on{color:var(--ink);border-bottom-color:var(--black)}
+
+/* sections */
+.sec{padding:2rem 0;border-top:1px solid var(--line)}
+.sec:first-child{border-top:0}
+.sec > h2{font-size:1.6rem;line-height:1.2;margin-bottom:1rem}
+.h3{font:600 .9rem/1.3 var(--sans);color:var(--ink);margin:1.5rem 0 .5rem;letter-spacing:0}
+.read{max-width:38rem}
+.read p + p{margin-top:1rem}
+.read p{color:var(--ink2)}
+.lede{font:400 1.25rem/1.5 var(--serif);color:var(--ink);max-width:36rem}
+.lede::first-letter{font-size:3.4em;float:left;line-height:.85;margin:.08em .1em 0 0;color:var(--champ-ink);font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:.25rem 1rem;margin-top:.5rem}
+.tag{font-size:.78rem;line-height:1.5;color:var(--ink3);text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:.2em}
+.tag:hover{color:var(--ink)}
+.flies{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.fly{appearance:none;font:500 .9rem/1.25 var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line2);border-radius:var(--rc);min-height:44px;padding:.5rem .8rem;display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;text-align:left}
+.fly svg{width:16px;height:16px;flex:none;color:var(--champ-ink)}
+.fly:hover{border-color:var(--black)}
+
+/* glance (A) */
+.glance{background:var(--paper);border-radius:var(--rc);box-shadow:var(--shadow);padding:1.25rem;margin-top:1.5rem}
+.glance h2{font-size:1.25rem;margin-bottom:.5rem}
+.glance dl{margin:0}
+.glance div{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-top:1px solid var(--line)}
+.glance dt{font-size:.9rem;color:var(--ink3)}
+.glance dd{margin:0;font-weight:500;text-align:right}
+.glance dd a{text-decoration:none}
+.cols{display:block}
+@container (min-width:900px){
+  .cols{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:3rem;align-items:start}
+  .cols aside{position:sticky;top:5rem}
+  .cols aside .glance{margin-top:2rem}
+}
+
+/* chips (rectangular, small radius) */
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.chips li{border:1px solid var(--line2);border-radius:var(--r);padding:.45rem .65rem;font-size:.9rem}
+.grape-main{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;list-style:none;margin:0;padding:0}
+.grape-main li{background:var(--paper2);border-radius:var(--rc);padding:1rem}
+.grape-main b{display:block;font:500 1.25rem/1.2 var(--serif)}
+.grape-main small{font-size:.78rem;color:var(--ink3)}
+.also{columns:2;column-gap:1.5rem;list-style:none;padding:0;margin:0;font-size:.9rem;color:var(--ink2)}
+.also li{padding:.3rem 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.plainlist{list-style:none;padding:0;margin:0}
+.plainlist li{padding:.75rem 0;border-top:1px solid var(--line)}
+.plainlist li:first-child{border-top:0;padding-top:0}
+.plainlist b{font:500 1.05rem/1.3 var(--serif);display:block}
+.plainlist span{color:var(--ink2);font-size:.95rem}
+
+/* zone cards */
+.zones{display:grid;gap:1rem;grid-template-columns:1fr;margin-top:1.5rem}
+@container (min-width:620px){.zones{grid-template-columns:repeat(3,1fr)}}
+.zcard{border:1px solid var(--line);border-radius:var(--rc);overflow:hidden;background:var(--paper);display:flex;flex-direction:column}
+.zcard .ph{aspect-ratio:4/3}
+@container (max-width:619px){.zcard:not(.noph){display:grid;grid-template-columns:7.5rem 1fr}.zcard .ph{aspect-ratio:auto;min-height:100%;padding:.5rem}.zcard .ph span{font-size:.7rem;padding:.2rem .35rem}.zcard .zb{padding:.85rem}}
+.zcard .zb{padding:1rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.zcard h4{font-size:1.25rem}
+.zcard dl{margin:0;display:grid;gap:.5rem}
+.zcard dt{font:600 .78rem/1.3 var(--sans);color:var(--champ-ink)}
+.zcard dd{margin:0;font-size:.95rem;color:var(--ink2)}
+.zcard .zfoot{margin-top:auto;padding-top:.5rem}
+.zrow{display:flex;gap:1rem;align-items:center;padding:.75rem 0;border-top:1px solid var(--line);text-decoration:none}
+.zrow:first-child{border-top:0}
+.zrow .ph{width:84px;height:63px;flex:none;border-radius:var(--r);padding:0}
+.zrow b{font:500 1.25rem/1.2 var(--serif);display:block}
+.zrow small{font-size:.9rem;color:var(--ink3)}
+.zrow .go{margin-left:auto;color:var(--ink3)}
+
+/* charts */
+.chart{margin-top:1rem}
+.crow{display:grid;grid-template-columns:6.5rem 1fr;gap:.75rem;align-items:center;margin-top:.5rem}
+.crow .lab{font-size:.9rem;color:var(--ink2)}
+.crow.ref .lab{color:var(--ink3)}
+.bar{display:flex;height:14px;border-radius:var(--r);overflow:hidden;gap:2px}
+.crow.ref .bar{height:8px;opacity:.75}
+.bar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:.35rem 1rem;list-style:none;padding:0;margin:.75rem 0 0;font-size:.78rem;color:var(--ink2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:.4rem;vertical-align:-1px}
+.cnote{font-size:.78rem;color:var(--ink3);margin-top:.5rem}
+.range{position:relative;height:14px;background:var(--paper2);border-radius:var(--r)}
+.crow.ref .range{height:8px}
+.range i{position:absolute;top:0;bottom:0;background:var(--t3);border-radius:2px}
+.crow:not(.ref) .range i{background:var(--t2)}
+.range b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--black)}
+.scale{display:grid;grid-template-columns:6.5rem 1fr;gap:.75rem;font-size:.7rem;color:var(--ink3);margin-top:.35rem}
+.scale div{display:flex;justify-content:space-between}
+.figure{display:flex;align-items:baseline;gap:.75rem;margin-top:1.5rem;padding:1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.figure .num{font:400 2.3rem/1 var(--serif);color:var(--ink)}
+.figure .what{font-size:.95rem;color:var(--ink2)}
+.figure-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.figure-row .figure{display:block}
+.figure-row .figure .what{display:block;margin-top:.35rem}
+
+/* soil bar */
+.soilbar{display:grid;grid-template-columns:1fr 1fr 2fr;gap:2px;margin-top:1rem;border-radius:var(--r);overflow:hidden}
+.soilbar div{padding:.75rem .6rem;min-height:5rem;display:flex;flex-direction:column;justify-content:space-between}
+.soilbar b{font:400 1.6rem/1 var(--serif)}
+.soilbar span{font-size:.78rem;line-height:1.3}
+.soilbar .s1{background:var(--t1);color:var(--champ)}
+.soilbar .s2{background:var(--t2);color:#fff}
+.soilbar .s3{background:var(--t4);color:var(--ink)}
+
+/* ageing ladder */
+.ladder{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:1rem}
+.ladder .top{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+.ladder b{font:500 1.25rem/1.2 var(--serif)}
+.ladder .m{font-size:.9rem;color:var(--ink3);white-space:nowrap}
+.lbar{display:flex;height:12px;margin-top:.4rem;gap:2px}
+.lbar .oak{background:var(--t2);border-radius:2px 0 0 2px}
+.lbar .bot{background:var(--t3);border-radius:0 2px 2px 0}
+.ladder p{font-size:.9rem;color:var(--ink2);margin-top:.35rem}
+
+/* wine types */
+.types{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.types li{display:flex;align-items:center;gap:.5rem;border:1px solid var(--line2);border-radius:var(--r);padding:.45rem .65rem;font-size:.9rem}
+.sw{width:12px;height:12px;border-radius:2px;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.sw.red{background:var(--red)}.sw.white{background:var(--white)}.sw.rose{background:var(--rose)}.sw.sweet{background:#C99A3E}
+
+/* beats */
+.spine{padding-top:2.5rem}
+.spine > h2{font:500 2.3rem/1.1 var(--serif);letter-spacing:-.015em;max-width:30rem}
+.spine .minutes{font-size:.9rem;color:var(--ink3);margin:.75rem 0 1.5rem}
+.beat{padding:2.5rem 0 0;margin-top:2.5rem;border-top:1px solid var(--line);scroll-margin-top:3.5rem}
+.beat-h{display:grid;grid-template-columns:auto 1fr;column-gap:1rem;align-items:start;margin-bottom:1rem}
+.beat-n{font:400 3.2rem/.9 var(--serif);color:var(--champ-ink);grid-row:1 / 3}
+.beat-k{font-size:.9rem;color:var(--ink3);line-height:1.3}
+.beat-h h3{font-size:1.6rem;line-height:1.15}
+.beat-body{display:block}
+@container (min-width:900px){
+  .wide .beat-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:start}
+  .wide .beat-body .zones,.wide .beat-body .full{grid-column:1 / -1}
+}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map{position:relative;aspect-ratio:8/5;max-height:24rem;width:100%;border-radius:var(--rc);overflow:hidden;background:
+   repeating-linear-gradient(0deg,rgba(125,101,64,.07) 0 1px,transparent 1px 24px),
+   repeating-linear-gradient(90deg,rgba(125,101,64,.07) 0 1px,transparent 1px 24px),
+   #EEE9DE;margin-top:1rem}
+.map .ml{z-index:1;position:absolute;left:.75rem;top:.75rem;font:600 .78rem/1 var(--sans);background:var(--paper);padding:.4rem .55rem;border-radius:var(--r);box-shadow:var(--shadow)}
+.map .zl{position:absolute;font:500 .7rem/1.2 var(--sans);color:var(--champ);text-align:center;transform:translate(-50%,-50%)}
+.map .riv{position:absolute;left:12%;right:10%;top:56%;height:1px;background:var(--champ);opacity:.7}
+.where{margin:1rem 0 0;display:grid;gap:0}
+.where div{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-top:1px solid var(--line);font-size:.95rem}
+.where dt{color:var(--ink3)}
+.where dd{margin:0;font-weight:500;text-align:right}
+
+/* taste cards */
+.taste{display:grid;gap:1rem;grid-template-columns:1fr}
+@container (min-width:620px){.taste{grid-template-columns:repeat(3,1fr)}}
+.tcard{border-radius:var(--rc);background:var(--paper2);padding:1.25rem;position:relative;overflow:hidden}
+.tcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+.tcard.red::before{background:var(--red)}.tcard.white::before{background:var(--white)}.tcard.rose::before{background:var(--rose)}
+.tcard h3{font-size:1.25rem;display:flex;align-items:center;gap:.5rem}
+.tcard dl{margin:.75rem 0 0;display:grid;gap:.6rem}
+.tcard dt{font:600 .78rem/1.3 var(--sans);color:var(--champ-ink)}
+.tcard dd{margin:0;color:var(--ink2);font-size:.95rem}
+.answer{background:var(--paper2);border-top:2px solid var(--black);border-radius:0 0 var(--rc) var(--rc);padding:2rem 1.25rem;margin-top:3rem}
+.answer h2{font-size:2.3rem;line-height:1.1}
+.answer > p{font:400 1.25rem/1.45 var(--serif);color:var(--ink2);margin:.75rem 0 1.5rem;max-width:34rem}
+.answer .tcard{background:var(--paper);box-shadow:0 0 0 1px var(--line)}
+@container (min-width:900px){.answer{padding:2.5rem}}
+
+/* in short */
+.short{border:1px solid var(--line2);border-radius:var(--rc);padding:1.25rem;margin-top:2rem;background:var(--paper)}
+.short h2{font-size:1.6rem;margin-bottom:.5rem}
+.short ol{list-style:none;padding:0;margin:0;counter-reset:s}
+.short li{padding:.85rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:5rem 1fr;gap:.25rem 1rem}
+.short li:first-child{border-top:0}
+.short .k{font:600 .78rem/1.5 var(--sans);color:var(--champ-ink);padding-top:.15rem}
+.short .f{font-size:1rem;line-height:1.45;color:var(--ink)}
+.short .f a{text-decoration:none}
+.short .f a:hover{text-decoration:underline}
+.short .tags{grid-column:2;margin-top:0}
+@container (max-width:360px){.short li{grid-template-columns:1fr}.short .tags{grid-column:1}}
+
+/* browse sections */
+.browse{margin-top:3rem}
+.prod{display:grid;grid-template-columns:1fr;gap:1rem}
+@container (min-width:620px){.prod{grid-template-columns:1fr 1fr}}
+.pcard{border:1px solid var(--line);border-radius:var(--rc);overflow:hidden}
+.pcard .ph{aspect-ratio:16/11}
+.pcard .pb{padding:1rem 1.25rem 1.25rem}
+.pcard h3{font-size:1.6rem}
+.more{border-radius:var(--rc);background:var(--paper2);padding:1.5rem 1.25rem;display:grid;gap:.75rem}
+.more h3{font-size:1.25rem}
+.more p{color:var(--ink2);font-size:.95rem}
+.slots{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem}
+.slot{border:1px dashed var(--line2);border-radius:var(--rc);padding:1rem;min-height:6rem;display:flex;flex-direction:column;justify-content:flex-end}
+.slot b{font:500 1.05rem/1.2 var(--serif);color:var(--ink2)}
+.slot small{font-size:.78rem;color:var(--ink3)}
+.testme{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.testme b{font:500 1.25rem/1.2 var(--serif);display:block}
+.testme small{font-size:.9rem;color:var(--ink3)}
+.testme .btn{flex:none}
+.testbox{background:var(--paper2);border-radius:var(--rc);padding:1.25rem;margin-top:2rem}
+.testbox b{font:500 1.25rem/1.2 var(--serif);display:block}
+.testbox p{font-size:.95rem;color:var(--ink2);margin:.4rem 0 1rem}
+
+.srcs{list-style:none;padding:0;margin:0}
+.srcs li{padding:.75rem 0;border-top:1px solid var(--line);font-size:.9rem;display:grid;grid-template-columns:8.5rem 1fr;gap:1rem}
+.srcs li:first-child{border-top:0}
+.srcs b{font-weight:600}
+.srcs a{color:var(--ink2)}
+.srcs small{color:var(--ink3);display:block}
+@container (max-width:400px){.srcs li{grid-template-columns:1fr;gap:.1rem}}
+.lede-s{font-size:.9rem;color:var(--ink3);margin-bottom:.75rem;max-width:38rem}
+
+/* cause chain (D) */
+.chain{list-style:none;padding:0;margin:1.5rem 0 0;counter-reset:c;position:relative}
+.chain li{position:relative}
+.chain a{display:grid;grid-template-columns:2.25rem 1fr auto;gap:.75rem;align-items:center;text-decoration:none;padding:.65rem 0;min-height:56px}
+.chain .dot{width:2.25rem;height:2.25rem;border-radius:var(--r);background:var(--paper2);border:1px solid var(--line2);font:500 1.05rem/1 var(--serif);display:flex;align-items:center;justify-content:center;color:var(--champ-ink);position:relative;z-index:1}
+.chain li:not(:last-child)::after{content:"";position:absolute;left:calc(1.125rem - .5px);top:calc(.65rem + 2.25rem);height:calc(100% - 2.25rem);width:1px;background:var(--line2)}
+.chain .lab{display:block;font-size:.78rem;color:var(--ink3);line-height:1.3}
+.chain .fact{display:block;font:500 1.05rem/1.3 var(--serif);color:var(--ink)}
+.chain .arr{color:var(--ink3);font-size:.9rem}
+.chain li.end .dot{background:var(--black);border-color:var(--black);color:var(--champ)}
+.chain a:hover .fact{text-decoration:underline;text-decoration-color:var(--line2)}
+.chainbox{background:var(--paper2);border-radius:var(--rc);padding:1.25rem 1.25rem .5rem;margin-top:2rem}
+.chainbox h2{font-size:1.25rem}
+.chainbox .sub{font-size:.9rem;color:var(--ink3);margin-top:.25rem}
+.rail-short{display:none}
+.dlayout{display:block}
+@container (min-width:900px){
+  .dlayout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:3.5rem;align-items:start}
+  .dlayout .rail{position:sticky;top:5.5rem;padding-top:2.5rem}
+  .dlayout .rail .chainbox{margin-top:0}
+  .rail-short{display:block}
+  .dlayout .main-short{display:none}
+  .rail-short.short{padding:1rem;margin-top:1rem}
+  .rail-short.short h2{font-size:1.25rem}
+  .rail-short.short li{grid-template-columns:1fr;gap:.15rem;padding:.6rem 0}
+  .rail-short.short .tags{grid-column:1}
+  .rail-short.short .f{font-size:.9rem}
+  .dlayout .rail{top:5.5rem;padding-top:1rem;max-height:calc(100vh - 6.5rem);overflow:auto}
+  .rail-short.short li{display:block}
+  .rail-short.short .tags{display:inline-flex;margin:0 0 0 .4rem}
+  .dlayout .chainbox{padding:1rem 1rem .25rem}
+  .dlayout .chainbox .sub{display:none}
+  .dlayout .chain{margin-top:.5rem}
+  .dlayout .chain a{padding:.35rem 0;min-height:48px;grid-template-columns:2rem 1fr}
+  .dlayout .chain .arr{display:none}
+  .dlayout .chain .dot{width:2rem;height:2rem;font-size:.95rem}
+  .dlayout .chain li:not(:last-child)::after{left:calc(1rem - .5px);top:calc(.35rem + 2rem);height:calc(100% - 2rem)}
+  .dlayout .chain .fact{font-size:.95rem}
+  .rail-short.short li{padding:.45rem 0}
+  .rail-short.short .k{display:none}
+  .rail-short.short .tags{margin-top:.1rem}
+
+  .dlayout .jump{display:none}
+}
+.center{max-width:46rem;margin:0 auto}
+@container (min-width:900px){.wide .center{max-width:none}}
+</style>
+</head>
+<body>
+
+<header class="chrome">
+  <div class="chrome-in">
+    <p class="chrome-title">The Rioja guide: four shapes<span>Round 1 · one place, real content, before the next nine are written</span></p>
+    <div class="seg" role="group" aria-label="Option">
+      <button type="button" data-opt="A" aria-pressed="false">A</button>
+      <button type="button" data-opt="B" aria-pressed="false">B</button>
+      <button type="button" data-opt="C" aria-pressed="true" aria-label="C, recommended">C<span class="star" aria-hidden="true">★</span></button>
+      <button type="button" data-opt="D" aria-pressed="false">D</button>
+    </div>
+    <div class="seg w" role="group" aria-label="Width">
+      <button type="button" data-w="phone" aria-pressed="true">Phone</button>
+      <button type="button" data-w="desk" aria-pressed="false">Desktop</button>
+    </div>
+  </div>
+</header>
+
+<section class="notes" aria-label="What each option changes">
+  <button type="button" class="note" data-opt="A" aria-pressed="false"><b>A · Today, as built</b>
+    <p>The page as it ships, for reference.</p>
+    <p>Climate, soil, grapes, styles and zones each appear twice. How it tastes sits apart from its causes. Test me lands mid-page.</p></button>
+  <button type="button" class="note" data-opt="B" aria-pressed="false"><b>B · The four beats are the page</b>
+    <p>One question heads the page. Place, weather, ground and rules each hold their own facts, once, beside the prose.</p>
+    <p>How it tastes closes the chain as the answer. Trade-off: no summary, so a reader after one fact uses the jump bar.</p></button>
+  <button type="button" class="note" data-opt="C" aria-pressed="true"><b>C · Beats plus In short<span class="rec">Recommended</span></b>
+    <p>B, with an In short card after How it tastes: five key facts, one line each, each linked to its beat.</p>
+    <p>Trade-off: those five facts show twice, short here and in full above.</p>
+    <p class="why-rec">Keeps the why as the spine and still gives a one-glance summary.</p></button>
+  <button type="button" class="note" data-opt="D" aria-pressed="false"><b>D · A cause-to-taste chain</b>
+    <p>A tappable chain opens the page: place, weather, ground, rules, taste. On a wide screen it stays in a left rail with In short.</p>
+    <p>Trade-off: the most distinctive, and the most to build and keep true across ten guides.</p></button>
+</section>
+
+<div class="stage" id="stage">
+  <div class="frame" id="frame"></div>
+</div>
+
+<script>
+/* ---------------- real Rioja content (content/guides/rioja.json, content/facts/rioja.json, data/place-measures.json, data/photos.json) ---------------- */
+const SRC = {
+  pliego:{short:'Pliego',full:'Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)',url:'https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf',date:'7 Jun 2023'},
+  doc:{short:'EU single document',full:'Documento único PDO-ES-A0117 (EU single document, Rioja)',url:'https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985',date:'26 Nov 2014'},
+  eswiki:{short:'Wikipedia',full:'Wikipedia (es), «Rioja (vino)», revision 174986857',url:'https://es.wikipedia.org/w/index.php?oldid=174986857',date:'23 Aug 2026'},
+  enwiki:{short:'Wikipedia',full:'Wikipedia (en), «Rioja DOCa», revision 1368867539',url:'https://en.wikipedia.org/w/index.php?oldid=1368867539',date:'11 Aug 2026'},
+  koppen:{short:'Köppen-Geiger',full:'Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020',url:'https://figshare.com/articles/dataset/21789074',date:'2023'},
+  measures:{short:'Measured',full:'Measured inside the boundary (Atlaslope, from Mapzen Terrarium elevation)',url:'https://github.com/DjoeriT/Atlaslope/blob/main/data/SOURCES.md',date:'16 Oct 2026'}
+};
+const G = {
+  title:'Why Rioja tastes the way it does', minutes:4,
+  lede:{text:"Two climates that rarely meet share one sheltered valley. That is where Rioja's wines get their body, their colour and their acidity.", cite:[['pliego','15','19']]},
+  valley:{title:'A valley with walls', paras:[
+    'The vineyards follow the Ebro for 100 km, from Haro in the west to Alfaro in the east, in a valley never more than about 40 km wide. They climb in terraces to about 700 m. The mountains around it make Rioja a natural region of its own, and the Sierra de Cantabria to the north protects the vines.',
+    'Three provinces share the vineyard: La Rioja, Álava and Navarra, 63,593 hectares across 144 municipalities.'],
+    cite:[['pliego','15','20']], fly:['Haro to Alfaro, the whole valley','Sierra de Cantabria']},
+  climate:{title:'Cool in the west, warm in the east', paras:[
+    'The whole valley sits where the Atlantic and the Mediterranean meet, so temperatures stay mild and about 400 mm of rain falls in a year. Moving east, the climate turns Mediterranean and the wine changes with it.'],
+    cite:[['pliego','15','20'],['doc','5']],
+    cards:[
+      {id:'alta',title:'Rioja Alta',photo:'Guardaviñas at La Dehesilla, Rodezno',climate:'Atlantic. More rain and fewer hours of sun than the south.',wine:'Wines of medium strength with body and high acidity, made for the barrel.'},
+      {id:'alavesa',title:'Rioja Alavesa',photo:'Vineyards on the loop to La Bastida',climate:'Both climates meet. As sunny as Rioja Alta, a little drier, and the most sheltered by the Sierra de Cantabria.',wine:'A touch more alcohol and less acidity. Good young or aged.'},
+      {id:'oriental',title:'Rioja Oriental',photo:'Vineyards in Rioja Oriental',climate:'Mediterranean. The least rain and the most sun. Older documents call it Rioja Baja.',wine:'More alcohol and extract. Used in blends for barrel ageing, and also drunk young.'}]},
+  soils:{title:'Three soils, three weights', paras:[
+    'Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa, the Sonsierra and parts of Rioja Alta. It is the main source of wines for ageing. Ferrous clay, red and rolling, covers another quarter. Alluvial soil near the rivers, flat, deep and full of stones, covers half. Both of these give wines with less body than the clay-limestone.',
+    "Most of Rioja's soil is balanced between sand, silt and clay, slightly alkaline, poor in organic matter, and holds a moderate amount of water through the summer."],
+    cite:[['pliego','15','16','20']], fly:['Clay-limestone terraces, Rioja Alavesa']},
+  barrel:{title:'Made for the barrel', paras:[
+    "Wine is about a fifth of the region's economy, and Rioja's long focus on ageing has built one of the largest concentrations of oak barrels in the world. Crianza, Reserva and Gran Reserva are the result.",
+    'Rioja makes sparkling wine too. Wines “made by the Champagne method” from Rioja Alta and Alavesa were shown in Madrid in 1857, and in 1890 a French firm in Haro’s station quarter hired a champagne maker from Reims. The cool end of the Winkler heat scale keeps the base wines fresh and acidic. Since 2017 the rules cover traditional-method sparkling whites and rosés.'],
+    cite:[['pliego','19','20']], fly:["Haro's station quarter"]}
+};
+const F = {
+  why:{text:'Atlantic and Mediterranean climates meet here, giving mild temperatures and about 400 mm of rain. That suits full-bodied reds made for ageing.',cite:[['doc','5']]},
+  main:[{local:'Tempranillo'},{local:'Viura',grape:'Macabeo'}], mainCite:[['eswiki']],
+  others:['Alarije','Subirat Parent','Malvasía Riojana','Turruntés','Verdejo','Tempranillo Blanco','Sauvignon Blanco','Mazuela','Maturana Tinta','Maturana Blanca','Graciano','Garnacha Tinta','Garnacha Blanca','Chardonnay'], othersCite:[['doc','5']],
+  kinds:[['white','White'],['rose','Rosé'],['red','Red'],['sweet','Sweet']],
+  stylesText:'Dry and semi-dry whites, rosados and reds, plus semi-sweet and sweet whites and rosados; reds sold young or aged.',
+  stylesLines:['Dry and semi-dry whites, rosados and reds.','Semi-sweet and sweet whites and rosados.','Reds sold young or aged.'], stylesCite:[['doc','1']],
+  climate:'Atlantic and Mediterranean influences meet; temperatures are mild and annual rainfall is about 400 mm.', climateCite:[['doc','5']],
+  soil:'Clay-limestone (a quarter), ferrous clay (a quarter) and alluvial soils near the rivers (half).', soilCite:[['pliego','15']],
+  altitude:'Terraced vineyards reach about 700 m.', altitudeCite:[['pliego','15']],
+  tastes:[
+    {k:'red',name:'Reds',look:'Purple when young, cherry-garnet as crianza, ruby-brick as gran reserva.',nose:'Intense fruit and toasted oak, then spice with age.'},
+    {k:'white',name:'Whites',look:'Pale straw with lemon-green rims.',nose:'Green fruit and flowers.'},
+    {k:'rose',name:'Rosés',look:'Strawberry.',nose:'Red fruit with floral notes.'}], tastesCite:[['doc','1']],
+  famous:[{name:'Crianza',text:'Reds aged at least two years, a year of it in oak barrel.',total:24,oak:12},
+          {name:'Reserva',text:'Reds aged 36 months in oak and bottle, at least 12 in barrel.',total:36,oak:12},
+          {name:'Gran Reserva',text:'Reds aged 60 months in oak and bottle, at least 24 in barrel.',total:60,oak:24}], famousCite:[['pliego','10','11']],
+  producers:['Marqués de Murrieta'], producersCite:[['enwiki']]
+};
+const M = {
+  koppen:{rioja:[['Csb','Temperate, dry summer, warm summer',40],['Cfb','Temperate, no dry season, warm summer',32],['Cfa','Temperate, no dry season, hot summer',24]],
+          spain:{Csb:21,Cfb:12,Cfa:6}},
+  alt:{rioja:[360,550,890], spain:[180,680,1190]}
+};
+const ZONES_A = [
+  {name:'Rioja Alta',photo:'Guardaviñas at La Dehesilla, Rodezno',line:'Mainly Atlantic: more rain and fewer sunshine hours.'},
+  {name:'Rioja Alavesa',photo:'Vineyards on the loop to La Bastida',line:'Atlantic meets Mediterranean; sheltered by the Sierra.'},
+  {name:'Rioja Oriental',photo:'Vineyards in Rioja Oriental',line:'Clearly Mediterranean: drier and warmer.'}];
+
+/* ---------------- helpers ---------------- */
+const pageText = p => p.length===0 ? '' : (p.length===1 ? ' · p. '+p[0] : ' · pp. '+p.join(', '));
+let PFX='c';
+const tags = cites => '<span class="tags">'+cites.map(([k,...p]) =>
+  `<a class="tag" href="#${PFX}-sources" title="${SRC[k].full}">${SRC[k].short}${pageText(p)}</a>`).join('')+'</span>';
+const pin = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+const fly = l => `<button type="button" class="fly" aria-label="See ${l} from above">${pin}${l}</button>`;
+const ph = (label, cls='') => `<div class="ph ${cls}" role="img" aria-label="Photo: ${label}"><span>${label}</span></div>`;
+const paras = ps => ps.map(p=>`<p>${p}</p>`).join('');
+
+const band = () => `<div class="band">
+  <a class="brand" href="#" aria-label="AtlaSlope home"><svg viewBox="0 0 34 34" aria-hidden="true"><rect x=".5" y=".5" width="33" height="33" rx="5" fill="none" stroke="#E9D8B4"/><path d="M6 25 L15 12 L20 18 L23 14 L28 25 Z" fill="#E9D8B4"/><path d="M6 25 H28" stroke="#141414" stroke-width="1.2"/></svg><b>AtlaSlope</b></a>
+  <nav aria-label="Site"><a href="#" aria-current="page">Atlas</a><a href="#">Study</a><a href="#">Guides</a><a href="#">About</a></nav></div>`;
+
+const head = () => `<div class="head">
+  <h1 tabindex="-1">Rioja</h1>
+  <ul class="badges" aria-label="Where it sits">
+    <li class="solid" title="Denominación de Origen Calificada">DOCa</li>
+    <li title="In the Spanish Wine Scholar course, study region Rioja">Wine Scholar · Rioja</li>
+    <li title="Named in the WSET Level 2 and 3 Award in Wines specifications">WSET Level 2 and 3</li>
+  </ul>
+  <p class="meta">3 zones · 4-minute read</p>
+</div>
+<div class="photo-wrap">
+  <div class="mosaic">${ph('Vineyards at Cuzcurritilla')}${ph('Vineyard below Laguardia')}${ph('Vines near Nájera')}</div>
+  <button type="button" class="allph">All 3 photos</button>
+  <p class="credit">Photos: Nicondarreta, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, resized; Basotxerri, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, resized; Manuel Velazquez, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, resized.</p>
+</div>
+<div class="actions"><button type="button" class="btn">${pin.replace('aria-hidden','aria-hidden')}Fly to Rioja</button></div>`;
+
+const jump = items => `<nav class="jump" aria-label="In this guide"><ul>${items.map(([id,l],i)=>`<li><a href="#${PFX}-${id}"${i===0?' class="on" aria-current="true"':''}>${l}</a></li>`).join('')}</ul></nav>`;
+
+const koppen = () => {
+  const tint=['var(--t1)','var(--t2)','var(--t3)'];
+  const r = M.koppen.rioja;
+  const rbar = r.map(([c,,s],i)=>`<i style="width:${s}%;background:${tint[i]}"></i>`).join('') + `<i style="width:4%;background:var(--t4)"></i>`;
+  const sp = M.koppen.spain; const other = 100-sp.Csb-sp.Cfb-sp.Cfa;
+  const sbar = r.map(([c],i)=>`<i style="width:${sp[c]}%;background:${tint[i]}"></i>`).join('') + `<i style="width:${other}%;background:var(--t4)"></i>`;
+  return `<div class="chart" role="img" aria-label="Measured climate. Rioja: 40% temperate with a dry, warm summer; 32% temperate, no dry season, warm summer; 24% temperate, no dry season, hot summer. All of Spain: 21%, 12% and 6% of the same classes, 61% other.">
+   <div class="crow"><span class="lab">Rioja</span><div class="bar">${rbar}</div></div>
+   <div class="crow ref"><span class="lab">All of Spain</span><div class="bar">${sbar}</div></div>
+   <ul class="legend" aria-hidden="true">${r.map(([c,n,s],i)=>`<li><i style="background:${tint[i]}"></i>${n} · ${s}%</li>`).join('')}<li><i style="background:var(--t4)"></i>Other</li></ul>
+   <p class="cnote">Measured the same way for each: the land inside the boundary.</p>${tags([['koppen']])}</div>`;
+};
+const altitude = () => {
+  const max=1300, pos=v=>(v/max*100).toFixed(1)+'%';
+  const row=(lab,[a,m,b],ref)=>`<div class="crow${ref?' ref':''}"><span class="lab">${lab}</span><div class="range"><i style="left:${pos(a)};width:calc(${pos(b)} - ${pos(a)})"></i><b style="left:${pos(m)}"></b></div></div>`;
+  return `<div class="chart" role="img" aria-label="Measured altitude. Rioja: most of the land between 360 and 890 m, median 550 m. All of Spain: 180 to 1190 m, median 680 m.">
+   ${row('Rioja',M.alt.rioja)}${row('All of Spain',M.alt.spain,true)}
+   <div class="scale" aria-hidden="true"><span></span><div><span>0</span><span>650 m</span><span>1,300 m</span></div></div>
+   <p class="cnote">Most of the land between 360 and 890 m, median 550 m. Measured the same way for each: the land inside the boundary.</p>${tags([['measures']])}</div>`;
+};
+const soilbar = () => `<div class="soilbar" role="img" aria-label="Soils: clay-limestone a quarter, ferrous clay a quarter, alluvial half.">
+  <div class="s1"><b>¼</b><span>Clay-limestone</span></div><div class="s2"><b>¼</b><span>Ferrous clay</span></div><div class="s3"><b>½</b><span>Alluvial, near the rivers</span></div></div>`;
+const ladder = () => `<ol class="ladder">${F.famous.map(s=>`<li><div class="top"><b>${s.name}</b><span class="m">${s.total} months · ${s.oak} in oak</span></div>
+  <div class="lbar" aria-hidden="true"><span class="oak" style="width:${s.oak/60*100}%"></span><span class="bot" style="width:${(s.total-s.oak)/60*100}%"></span></div><p>${s.text}</p></li>`).join('')}</ol>
+  <ul class="legend" aria-hidden="true"><li><i style="background:var(--t2)"></i>In barrel, at least</li><li><i style="background:var(--t3)"></i>Rest of the ageing</li></ul>${tags(F.famousCite)}`;
+const grapesMain = () => `<ul class="grape-main">${F.main.map(g=>`<li><b>${g.local}</b><small>${g.grape?'Also called '+g.grape:'Main grape'}</small></li>`).join('')}</ul>${tags(F.mainCite)}`;
+const alsoAllowed = () => `<ul class="also">${F.others.map(o=>`<li>${o}</li>`).join('')}</ul>${tags(F.othersCite)}`;
+const types = () => `<ul class="types">${F.kinds.map(([k,l])=>`<li><span class="sw ${k}" aria-hidden="true"></span>${l}</li>`).join('')}</ul>`;
+const mapBlock = () => `<div class="map" role="img" aria-label="Map placeholder: Rioja and its three zones along the Ebro, from Haro in the west to Alfaro in the east"><span class="ml">Map</span>
+  <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+   <path d="M40 112 C70 92 105 88 140 92 L150 150 C118 160 80 158 52 146 Z" fill="#141414" stroke="#E9D8B4" stroke-width="1.2"/>
+   <path d="M140 92 C165 84 192 82 214 92 L206 118 C188 126 168 132 150 150 Z" fill="#141414" stroke="#E9D8B4" stroke-width="1.2"/>
+   <path d="M214 92 C262 104 312 120 358 150 C340 178 300 190 262 188 C220 184 182 170 150 150 C168 132 188 126 206 118 Z" fill="#141414" stroke="#E9D8B4" stroke-width="1.2"/>
+   <path d="M30 124 C90 128 150 124 205 134 C260 144 310 160 372 172" fill="none" stroke="#C9B48A" stroke-width="1.6"/>
+   <text x="96" y="138" fill="#E9D8B4" font-family="IBM Plex Sans,sans-serif" font-size="10" font-weight="500" text-anchor="middle">Rioja Alta</text>
+   <text x="178" y="108" fill="#E9D8B4" font-family="IBM Plex Sans,sans-serif" font-size="10" font-weight="500" text-anchor="middle">Alavesa</text>
+   <text x="270" y="166" fill="#E9D8B4" font-family="IBM Plex Sans,sans-serif" font-size="10" font-weight="500" text-anchor="middle">Rioja Oriental</text>
+   <circle cx="58" cy="118" r="3" fill="#E9D8B4"/><text x="40" y="100" fill="#46403A" font-family="IBM Plex Sans,sans-serif" font-size="10" text-anchor="middle">Haro</text>
+   <circle cx="350" cy="166" r="3" fill="#E9D8B4"/><text x="352" y="206" fill="#46403A" font-family="IBM Plex Sans,sans-serif" font-size="10" text-anchor="middle">Alfaro</text>
+   <text x="300" y="138" fill="#6F6860" font-family="Newsreader,serif" font-style="italic" font-size="11">Ebro</text>
+  </svg></div>`;
+const zoneCards = () => `<div class="zones">${G.climate.cards.map(c=>`<article class="zcard">${ph(c.photo)}<div class="zb"><h4>${c.title}</h4>
+  <dl><div><dt>Weather</dt><dd>${c.climate}</dd></div><div><dt>Wine</dt><dd>${c.wine}</dd></div></dl>
+  <div class="zfoot">${fly(c.title)}</div></div></article>`).join('')}</div>`;
+const tasteCards = (h='h3') => `<div class="taste">${F.tastes.map(t=>`<article class="tcard ${t.k}"><${h}><span class="sw ${t.k}" aria-hidden="true"></span>${t.name}</${h}>
+  <dl><div><dt>Colour</dt><dd>${t.look}</dd></div><div><dt>Aromas</dt><dd>${t.nose}</dd></div></dl></article>`).join('')}</div>`;
+const sources = (sec='sec') => `<section class="${sec}" id="${PFX}-sources" aria-labelledby="${PFX}-sources-h"><h2 id="${PFX}-sources-h">Sources</h2>
+  <p class="lede-s">Every fact in this guide is tagged with its source. The full references, each a link to the document:</p>
+  <ul class="srcs">${['pliego','doc','eswiki','enwiki','koppen','measures'].map(k=>`<li><b>${SRC[k].short}</b><span><a href="${SRC[k].url}">${SRC[k].full}</a><small>${SRC[k].date}</small></span></li>`).join('')}</ul></section>`;
+const sec = (id,title,body) => `<section class="sec" id="${PFX}-${id}" aria-labelledby="${PFX}-${id}-h"><h2 id="${PFX}-${id}-h">${title}</h2>${body}</section>`;
+
+/* ---------------- A: today ---------------- */
+function optA(){
+  PFX='a';
+  const glance = `<section class="glance" aria-labelledby="a-glance-h"><h2 id="a-glance-h">Rioja at a glance</h2><dl>
+    <div><dt>Level</dt><dd><a href="#a-where">DOCa</a></dd></div>
+    <div><dt>Main grapes</dt><dd><a href="#a-grapes">Tempranillo, Macabeo</a></dd></div>
+    <div><dt>Wine types</dt><dd><a href="#a-grapes">White, rosé, red, sweet</a></dd></div>
+    <div><dt>Altitude</dt><dd><a href="#a-land">360–890 m</a></dd></div>
+    <div><dt>Zones</dt><dd><a href="#a-zones">3</a></dd></div></dl></section>`;
+  const ch = (c,extra='') => `<div id="a-terroir-${c.title}"><h3 class="h3" style="font:500 1.25rem/1.25 var(--serif);margin-top:2rem">${c.title}</h3><div class="read">${paras(c.paras)}</div>${extra}${c.fly?`<div class="flies">${c.fly.map(fly).join('')}</div>`:''}${tags(c.cite)}</div>`;
+  const zg = `<div class="zones">${G.climate.cards.map(c=>`<div class="zcard noph"><div class="zb"><b style="font:500 1.05rem var(--serif)">${c.title}</b><p style="font-size:.9rem;color:var(--ink3)">${c.climate}</p><p style="font-size:.95rem;color:var(--ink2)">${c.wine}</p><div class="zfoot">${fly(c.title)}</div></div></div>`).join('')}</div>`;
+  const testme = `<div class="testbox"><b>Test me on Rioja</b><p>A short round on Rioja and its zones: where they sit and what they are known for.</p><button type="button" class="btn">Test me</button></div>`;
+  const main = [
+    sec('overview','Overview',`<p class="read" style="color:var(--ink2)">${F.why.text}</p>${tags(F.why.cite)}<div class="a-glance-phone">${glance}</div>`),
+    sec('terroir',G.title,`<p class="read" style="color:var(--ink2)">${G.lede.text}</p>${tags(G.lede.cite)}${ch(G.valley)}${ch(G.climate,zg)}${ch(G.soils)}${ch(G.barrel)}${testme}`),
+    sec('taste','How it tastes',`<ul class="plainlist">${F.tastes.map(t=>`<li><b>${t.name}</b><span>${t.look} ${t.nose}</span></li>`).join('')}</ul>${tags(F.tastesCite)}`),
+    sec('styles','Famous styles',`<ul class="plainlist">${F.famous.map(s=>`<li><b>${s.name}</b><span>${s.text}</span></li>`).join('')}</ul>${tags(F.famousCite)}`),
+    sec('grapes','Grapes',`<h3 class="h3" style="margin-top:0">Main grapes</h3><ul class="chips">${F.main.map(g=>`<li>${g.local}${g.grape?' ('+g.grape+')':''}</li>`).join('')}</ul>${tags(F.mainCite)}
+      <h3 class="h3">Also allowed</h3><ul class="chips">${F.others.map(o=>`<li>${o}</li>`).join('')}</ul>${tags(F.othersCite)}
+      <h3 class="h3">Wine types</h3>${types()}<p style="margin-top:.75rem;color:var(--ink2)">${F.stylesText}</p>${tags(F.stylesCite)}`),
+    sec('land','The land',`<h3 class="h3" style="margin-top:0">Climate</h3><p style="color:var(--ink2)">${F.climate}</p>${tags(F.climateCite)}
+      <h3 class="h3">Measured climate</h3>${koppen()}
+      <h3 class="h3">Soil</h3><p style="color:var(--ink2)">${F.soil}</p>${tags(F.soilCite)}
+      <h3 class="h3">Altitude</h3><p style="color:var(--ink2)">${F.altitude}</p>${tags(F.altitudeCite)}${altitude()}`),
+    sec('producers','Famous producers',`<ul class="chips"><li>${F.producers[0]}</li></ul>${tags(F.producersCite)}`),
+    sec('zones','Zones',`<div>${ZONES_A.map(z=>`<a class="zrow" href="#">${ph(z.photo).replace(/<span>.*?<\/span>/,'')}<span><b>${z.name}</b><small>${z.line}</small></span><span class="go" aria-hidden="true">›</span></a>`).join('')}</div>${tags([['pliego','15','20']])}`),
+    sec('where','Where it sits',`${mapBlock()}<dl class="where"><div><dt>Level</dt><dd>Denominación de Origen Calificada</dd></div><div><dt>Study region</dt><dd>Rioja</dd></div><div><dt>Zones</dt><dd>3</dd></div></dl><div class="actions"><button type="button" class="btn quiet">Fly to Rioja</button></div>`),
+    sources()
+  ].join('');
+  return `${band()}<div class="pg">${head()}${jump([['overview','Overview'],['terroir','Terroir'],['taste','How it tastes'],['styles','Famous styles'],['grapes','Grapes'],['land','The land'],['producers','Producers'],['zones','Zones'],['where','Where it sits'],['sources','Sources']])}
+   <div class="cols"><main>${main}</main><aside class="a-glance-desk">${glance}</aside></div></div>`;
+}
+
+/* ---------------- B / C / D: the beats ---------------- */
+function beat(n,kind,id,c,body){
+  return `<section class="beat" id="${PFX}-${id}" aria-labelledby="${PFX}-${id}-h">
+   <div class="beat-h"><span class="beat-n" aria-hidden="true">${n}</span><span class="beat-k">${kind}</span><h3 id="${PFX}-${id}-h" tabindex="-1"><span class="sr">${n}. ${kind}: </span>${c.title}</h3></div>
+   <div class="beat-body">${body}</div></section>`;
+}
+function beats(){
+  const b1 = beat(1,'The place','place',G.valley,
+    `<div><div class="read">${paras(G.valley.paras)}</div>${tags(G.valley.cite)}<div class="flies">${G.valley.fly.map(fly).join('')}</div></div>
+     <div>${mapBlock()}<dl class="where"><div><dt>Level</dt><dd>DOCa</dd></div><div><dt>Provinces</dt><dd>3</dd></div><div><dt>Zones</dt><dd>3, below</dd></div></dl></div>`);
+  const b2 = beat(2,'The weather','weather',G.climate,
+    `<div><div class="read">${paras(G.climate.paras)}</div>${tags(G.climate.cite)}
+       <div class="figure-row"><div class="figure"><span class="num">400 mm</span><span class="what">of rain in a year</span>${tags(F.climateCite)}</div>
+       <div class="figure"><span class="num">2</span><span class="what">climates meet: Atlantic and Mediterranean</span>${tags(F.climateCite)}</div></div></div>
+     <div><h4 class="h3">Measured climate</h4>${koppen()}</div>${zoneCards()}`);
+  const b3 = beat(3,'The ground','ground',G.soils,
+    `<div><div class="read">${paras(G.soils.paras)}</div>${tags(G.soils.cite)}<div class="flies">${G.soils.fly.map(fly).join('')}</div></div>
+     <div><h4 class="h3">Soil</h4>${soilbar()}${tags(F.soilCite)}
+       <h4 class="h3">Altitude</h4><p style="color:var(--ink2)">${F.altitude}</p>${tags(F.altitudeCite)}${altitude()}</div>`);
+  const b4 = beat(4,'What the rules make','rules',G.barrel,
+    `<div><div class="read">${paras(G.barrel.paras)}</div>${tags(G.barrel.cite)}<div class="flies">${G.barrel.fly.map(fly).join('')}</div>
+       <h4 class="h3">Ageing</h4>${ladder()}</div>
+     <div><h4 class="h3" style="margin-top:1.5rem">Main grapes</h4>${grapesMain()}
+       <h4 class="h3">Also allowed</h4>${alsoAllowed()}
+       <h4 class="h3">Wine types</h4>${types()}<div style="margin-top:.75rem;color:var(--ink2);font-size:.95rem">${F.stylesLines.map(l=>`<p>${l}</p>`).join('')}</div>${tags(F.stylesCite)}</div>`);
+  const answer = `<section class="answer" id="${PFX}-taste" aria-labelledby="${PFX}-taste-h"><h2 id="${PFX}-taste-h">How it tastes</h2>
+     <p>Body, colour and acidity: what the valley, its weather and its ground give the glass.</p>${tasteCards()}<div style="margin-top:1rem">${tags(F.tastesCite)}</div></section>`;
+  return {b1,b2,b3,b4,answer};
+}
+const shortCard = (cls='') => `<section class="short ${cls}" aria-labelledby="${PFX}-short-h${cls?'-r':''}"><h2 id="${PFX}-short-h${cls?'-r':''}">In short</h2><ol>
+  <li><span class="k">Grapes</span><span class="f"><a href="#${PFX}-rules">Tempranillo and Viura, also called Macabeo.</a></span>${tags(F.mainCite)}</li>
+  <li><span class="k">Climate</span><span class="f"><a href="#${PFX}-weather">Atlantic meets Mediterranean, with about 400 mm of rain a year.</a></span>${tags(F.climateCite)}</li>
+  <li><span class="k">Zones</span><span class="f"><a href="#${PFX}-weather">Three, from Atlantic Rioja Alta to Mediterranean Rioja Oriental.</a></span>${tags([['pliego','20']])}</li>
+  <li><span class="k">Soil</span><span class="f"><a href="#${PFX}-ground">Clay-limestone covers a quarter and gives the wines for ageing.</a></span>${tags([['pliego','15']])}</li>
+  <li><span class="k">Ageing</span><span class="f"><a href="#${PFX}-rules">Gran Reserva reds age 60 months, at least 24 in barrel.</a></span>${tags([['pliego','11']])}</li>
+</ol></section>`;
+const browse = () => `<div class="browse">
+  ${sec('producers','Producers',`<div class="prod"><article class="pcard">${ph('Photo of Marqués de Murrieta to come')}<div class="pb"><h3>${F.producers[0]}</h3>${tags(F.producersCite)}</div></article></div>`)}
+  ${sec('more','More to explore',`<div class="more"><h3>More to come</h3><p>Rioja's history, places to visit and food to try will sit here, sourced like the rest.</p>
+     <div class="slots"><div class="slot"><b>History</b><small>Not written yet</small></div><div class="slot"><b>Places to visit</b><small>Not written yet</small></div><div class="slot"><b>Food to try</b><small>Not written yet</small></div></div></div>`)}
+  <div class="testme"><span><b>Test me on Rioja</b><small>A short round in Study: where it sits and what it is known for.</small></span><button type="button" class="btn quiet">Test me</button></div>
+  ${sources()}</div>`;
+const spineHead = () => `<h2 id="${PFX}-spine-h">${G.title}</h2><p class="minutes">4-minute read</p><p class="lede">${G.lede.text}</p>${tags(G.lede.cite)}`;
+const bJump = () => jump([['place','The place'],['weather','The weather'],['ground','The ground'],['rules','The rules'],['taste','How it tastes'],['producers','Producers'],['more','More to explore'],['sources','Sources']]);
+
+function optB(){ PFX='b'; const k=beats();
+  return `${band()}<div class="pg wide">${head()}${bJump()}<div class="center"><section class="spine" aria-labelledby="b-spine-h">${spineHead()}${k.b1}${k.b2}${k.b3}${k.b4}</section>${k.answer}${browse()}</div></div>`; }
+function optC(){ PFX='c'; const k=beats();
+  return `${band()}<div class="pg wide">${head()}${bJump()}<div class="center"><section class="spine" aria-labelledby="c-spine-h">${spineHead()}${k.b1}${k.b2}${k.b3}${k.b4}</section>${k.answer}${shortCard()}${browse()}</div></div>`; }
+function optD(){ PFX='d'; const k=beats();
+  const chain = `<section class="chainbox" aria-labelledby="d-chain-h"><h2 id="d-chain-h">From place to glass</h2><p class="sub">Tap a step to read why.</p><ol class="chain">
+    <li><a href="#d-place"><span class="dot">1</span><span><span class="lab">The place</span><span class="fact">A walled valley, 100 km along the Ebro</span></span><span class="arr" aria-hidden="true">↓</span></a></li>
+    <li><a href="#d-weather"><span class="dot">2</span><span><span class="lab">The weather</span><span class="fact">Atlantic in the west, Mediterranean in the east</span></span><span class="arr" aria-hidden="true">↓</span></a></li>
+    <li><a href="#d-ground"><span class="dot">3</span><span><span class="lab">The ground</span><span class="fact">Clay-limestone gives the wines for ageing</span></span><span class="arr" aria-hidden="true">↓</span></a></li>
+    <li><a href="#d-rules"><span class="dot">4</span><span><span class="lab">The rules</span><span class="fact">Aged in oak, from Crianza to Gran Reserva</span></span><span class="arr" aria-hidden="true">↓</span></a></li>
+    <li class="end"><a href="#d-taste"><span class="dot">5</span><span><span class="lab">The taste</span><span class="fact">Body, colour and acidity</span></span><span class="arr" aria-hidden="true">→</span></a></li>
+  </ol></section>`;
+  return `${band()}<div class="pg">${head()}
+   <div class="dlayout"><aside class="rail" aria-label="Rioja in brief">${chain}${shortCard('rail-short')}</aside>
+   <div class="dmain">${bJump()}<section class="spine" aria-labelledby="d-spine-h">${spineHead()}${k.b1}${k.b2}${k.b3}${k.b4}</section>${k.answer}<div class="main-short">${shortCard()}</div>${browse()}</div></div></div>`; }
+
+/* ---------------- switcher ---------------- */
+const frame = document.getElementById('frame'), stage = document.getElementById('stage');
+const built = {A:optA(),B:optB(),C:optC(),D:optD()};
+frame.innerHTML = Object.entries(built).map(([k,h])=>`<div class="opt" data-o="${k}" ${k==='C'?'':'hidden'}>${h}</div>`).join('');
+// A shows its glance box inline on a phone and in the aside on desktop
+const st=document.createElement('style');
+st.textContent='.a-glance-desk{display:none}@container (min-width:900px){.a-glance-desk{display:block}.a-glance-phone{display:none}}';
+document.head.appendChild(st);
+function show(o){
+  document.querySelectorAll('[data-opt]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.opt===o)));
+  document.querySelectorAll('.opt').forEach(d=>d.hidden=d.dataset.o!==o);
+  try{history.replaceState(null,'','#'+o+(stage.classList.contains('desk')?'-desk':''))}catch(e){}
+}
+function width(w){
+  stage.classList.toggle('desk',w==='desk');
+  document.querySelectorAll('[data-w]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.w===w)));
+}
+document.querySelectorAll('[data-opt]').forEach(b=>b.addEventListener('click',()=>{show(b.dataset.opt); if(b.classList.contains('note')) frame.scrollIntoView({behavior:'smooth'});}));
+document.querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{width(b.dataset.w); show(document.querySelector('.seg [aria-pressed="true"][data-opt]').dataset.opt);}));
+// in-page links scroll inside the current option
+frame.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]'); if(!a||a.getAttribute('href')==='#'){ if(a) e.preventDefault(); return;} const t=document.getElementById(a.getAttribute('href').slice(1)); if(t){e.preventDefault(); const y=t.getBoundingClientRect().top+scrollY-110; scrollTo({top:y,behavior:'smooth'});}});
+const m=(location.hash||'').match(/^#([ABCD])(-desk)?$/); if(m){ if(m[2]) width('desk'); show(m[1]); }
+</script>
+</body>
+</html>
+
+</body></html>

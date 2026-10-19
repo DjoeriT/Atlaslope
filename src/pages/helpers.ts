@@ -1,7 +1,7 @@
 // Pure helpers for the teaser card and the full place page: which photos, which glance cells, how the two charts are drawn.
 import { grapeLabel, STYLE_KINDS, type KoppenShare, type Measures, type ShownPhoto, type Sheet } from '../facts';
 import { strings } from '../strings';
-import type { Region, Tree } from '../tree';
+import type { Place, Region, Tree } from '../tree';
 
 const t = strings.place;
 const tf = strings.facts;
@@ -119,4 +119,35 @@ export function swatchOf(label?: string): 'red' | 'white' | 'rose' | undefined {
   if (l.startsWith('white')) return 'white';
   if (l.startsWith('ros')) return 'rose';
   return undefined;
+}
+
+export interface Alike { place: Place; why: string }
+
+/** "If you like this, try" (owner, 19 Oct 2026): up to three other places with the same main grape, then the same main measured climate,
+ *  from data the app already holds. Never the place's own zones or the place it is a zone of. */
+export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => Sheet | undefined, measuresOf: (id: string) => Measures | undefined): Alike[] {
+  const usual = (s?: Sheet) => (s?.grapes.main ?? []).map((g) => g.grape ?? g.local);
+  const own = usual(sheetOf(place.id));
+  const top = (id: string) => measuresOf(id)?.koppen[0];
+  const ownTop = top(place.id);
+  const scored = tree.places
+    .filter((p) => p.id !== place.id && p.quiz !== 'none' && p.parent !== place.id && place.parent !== p.id && sheetOf(p.id))
+    .map((p) => {
+      const theirs = usual(sheetOf(p.id));
+      const grape = own.find((g) => theirs.includes(g));
+      const first = !!grape && grape === own[0];
+      const climate = !!ownTop && top(p.id)?.code === ownTop.code;
+      const score = (first ? 4 : grape ? 2 : 0) + (climate ? 1 : 0);
+      const why = grape ? t.page.alsoGrape(grape) : climate ? t.page.sameClimate(ownTop!.name) : '';
+      // Ties break on a stable shuffle of the two ids, so places with the same score do not all suggest the first one in the tree.
+      return { place: p, why, score, order: [...(place.id + p.id)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || a.order - b.order);
+  // Prefer one place per study region, so the three suggestions travel.
+  const out: typeof scored = [];
+  const regions = new Set<string>([place.region]);
+  for (const x of scored) if (out.length < 3 && !regions.has(x.place.region)) { out.push(x); regions.add(x.place.region); }
+  for (const x of scored) if (out.length < 3 && !out.includes(x)) out.push(x);
+  return out.map(({ place: p, why }) => ({ place: p, why }));
 }

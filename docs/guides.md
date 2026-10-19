@@ -15,8 +15,8 @@ in the same PR. When this file and the code disagree, fix whichever is wrong.
   how the wine tastes.
 
 ## The page, top to bottom (shape C)
-Status: chosen by the owner 19 Oct 2026 (mock `https://claude.ai/artifact/P2utJJTSBoYS81CHyC1mR5`, option C). It is being built in its
-own slice, and until it ships the live page keeps the release 10 order (Overview, Terroir, then the fact sections).
+Status: chosen by the owner 19 Oct 2026 (mock `https://claude.ai/artifact/P2utJJTSBoYS81CHyC1mR5`, option C). Built in PR #107
+(release 36).
 
 1. **Title and labels.** Name, the legal level badge, "Wine Scholar · region", "WSET Level N" where WSET's spec names the place, and a
    "Say it" button with the pronunciation (`say`, only from a reliable source).
@@ -133,5 +133,5 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 
 ## State (keep current)
 - Terroir written: Rioja and its three zones (release 10). Nine Green Spain places are in the pilot PR.
-- Shape C: being built in its own slice.
+- Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.

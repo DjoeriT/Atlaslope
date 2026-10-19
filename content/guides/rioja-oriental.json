@@ -12,6 +12,7 @@
  "chapters": [
   {
    "id": "weather",
+   "beat": "weather",
    "title": "Mediterranean weather",
    "paras": [
     "Rioja Oriental has less rain and a clearly Mediterranean climate, with more sun in general than the rest of Rioja. Its wines have more alcohol and more extract. They are suited to blends meant for barrel ageing, and some are made to drink young. Older documents call this zone Rioja Baja."
@@ -34,6 +35,7 @@
   },
   {
    "id": "soils",
+   "beat": "ground",
    "title": "River land and red clay",
    "paras": [
     "Alluvial soils near the rivers and ferrous clay dominate. Both give wines with less body than the clay-limestone further north. Alfaro, the easternmost town of Rioja, lies here."

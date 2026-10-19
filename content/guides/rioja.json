@@ -12,6 +12,7 @@
  "chapters": [
   {
    "id": "valley",
+   "beat": "place",
    "title": "A valley with walls",
    "paras": [
     "The vineyards follow the Ebro for 100 km, from Haro in the west to Alfaro in the east, in a valley never more than about 40 km wide. They climb in terraces to about 700 m. The mountains around it make Rioja a natural region of its own, and the Sierra de Cantabria to the north protects the vines.",
@@ -46,6 +47,7 @@
   },
   {
    "id": "climate",
+   "beat": "weather",
    "title": "Cool in the west, warm in the east",
    "paras": [
     "The whole valley sits where the Atlantic and the Mediterranean meet, so temperatures stay mild and about 400 mm of rain falls in a year. Moving east, the climate turns Mediterranean and the wine changes with it."
@@ -99,6 +101,7 @@
   },
   {
    "id": "soils",
+   "beat": "ground",
    "title": "Three soils, three weights",
    "paras": [
     "Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa, the Sonsierra and parts of Rioja Alta. It is the main source of wines for ageing. Ferrous clay, red and rolling, covers another quarter. Alluvial soil near the rivers, flat, deep and full of stones, covers half. Both of these give wines with less body than the clay-limestone.",
@@ -123,6 +126,7 @@
   },
   {
    "id": "barrel",
+   "beat": "rules",
    "title": "Made for the barrel",
    "paras": [
     "Wine is about a fifth of the region's economy, and Rioja's long focus on ageing has built one of the largest concentrations of oak barrels in the world. Crianza, Reserva and Gran Reserva are the result.",

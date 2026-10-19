@@ -78,14 +78,14 @@ test('a link to the page opens it directly, and "Show on the map" goes to the ca
 test('the jump bar lists only the sections that exist and moves focus to the section', async ({ page }) => {
   await open(page, '#place=rioja&page');
   const jump = page.getByRole('navigation', { name: 'In this guide' });
-  await expect(jump.locator('a')).toHaveText(['Overview', 'Terroir', 'How it tastes', 'Famous styles', 'Grapes', 'The land', 'Producers', 'Zones', 'Where it sits', 'Sources']);
-  await jump.getByRole('link', { name: 'The land' }).click();
-  await expect(page.locator('#land-h')).toBeFocused();
+  await expect(jump.locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Producers', 'If you like this, try', 'Sources']);
+  await jump.getByRole('link', { name: 'The ground' }).click();
+  await expect(page.locator('#terroir-soils-h')).toBeFocused();
   await expect(page).toHaveURL(/#place=rioja&page/);
 
   // A place outside Study has its written sheet but no guide, producers or zones.
   await open(page, '#place=cava&page');
-  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['Overview', 'How it tastes', 'Famous styles', 'Grapes', 'The land', 'Where it sits', 'Sources']);
+  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Sources']);
 });
 
 for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {
@@ -115,15 +115,15 @@ test('a place without photos shows its name on a cover, never a broken image', a
     await open(page, hash);
     await expect(page.locator('.namecover')).toBeVisible();
     await expect(page.locator('.namecover')).toContainText('Aylés');
-    await expect(page.locator('.card img, .pg img')).toHaveCount(0);
+    await expect(page.locator('.card img, .pg img:not(.pg-alike img)')).toHaveCount(0);
   }
 });
 
 test('every section of the Rioja page keeps a source link', async ({ page }) => {
   await open(page, '#place=rioja&page');
   const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
-  expect(ids).toEqual(['overview', 'terroir', 'taste', 'styles', 'grapes', 'land', 'producers', 'zones', 'where', 'sources']);
-  for (const id of ids) {
+  expect(ids).toEqual(['place', 'weather', 'ground', 'rules', 'taste', 'short', 'producers', 'alike', 'sources']);
+  for (const id of ids.filter((i) => i !== 'alike' && i !== 'short')) { // alike and In short only link onward; their facts carry the source in the beats
     await expect(page.locator(id === 'sources' ? '#sources a[target="_blank"]' : `#${id} .src a[target="_blank"]`).first()).toBeVisible();
   }
 });
@@ -133,7 +133,7 @@ test('the charts have text equivalents', async ({ page }) => {
   await expect(page.locator('.pg-stack').first()).toHaveAttribute('aria-label', /Measured climate: Warm-summer Mediterranean 40%, Oceanic 32%, Humid subtropical 24%, Other 4%/);
   await expect(page.locator('.pg-range').first()).toHaveAttribute('aria-label', /Most of the land between 360 and 890 m, median 550 m/);
   await expect(page.locator('.pg-legend')).toContainText('Oceanic 32%');
-  await expect(page.locator('#land')).toContainText('Most of the land between 360 and 890 m');
+  await expect(page.locator('#ground')).toContainText('Most of the land between 360 and 890 m');
 });
 
 test('"Next in the course" leads to the next study region', async ({ page }) => {
@@ -162,8 +162,8 @@ test('the guide labels its level, its study region and WSET only where the speci
 
 test('measured charts read against all of Spain, and a zone against its appellation', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await expect(page.locator('#land .pg-compare').first().locator('dt')).toHaveText(['Rioja', 'All of Spain']);
-  await expect(page.locator('#land .pg-range').nth(1)).toHaveAttribute('aria-label', /median 680 m/);
+  await expect(page.locator('#weather .pg-compare').first().locator('dt')).toHaveText(['Rioja', 'All of Spain']);
+  await expect(page.locator('#ground .pg-range').nth(1)).toHaveAttribute('aria-label', /median 680 m/);
   await open(page, '#place=rioja-alta&page');
-  await expect(page.locator('#land .pg-compare').first().locator('dt')).toHaveText(['Rioja Alta', 'Rioja', 'All of Spain']);
+  await expect(page.locator('#weather .pg-compare').first().locator('dt')).toHaveText(['Rioja Alta', 'Rioja', 'All of Spain']);
 });
