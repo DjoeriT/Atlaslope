@@ -5,8 +5,9 @@
  "lede": {
   "text": "Cold air from the plateau meets the damp of the river in a narrow bend of the Duero. The wide swing between hot days and cold nights thickens the grape skins and gives the reds their deep colour and structure.",
   "cite": [
-   "abadia-retuerta-pliego:p9",
-   "abadia-retuerta-pliego:p12"
+   "abadia-retuerta-pliego:p10",
+   "abadia-retuerta-pliego:p12",
+   "abadia-retuerta-pliego:p13"
   ]
  },
  "chapters": [
@@ -16,20 +17,32 @@
    "title": "A bend in the Duero, one estate",
    "paras": [
     "The vines sit on a river terrace in a meander of the Duero, in the narrowest basin the river makes in the province of Valladolid. Two limestone-marl plateaus (páramos) about 880 m high close in on the north and the south. Woods of holm oak and Scots pine to the south, east and west act as a humidity regulator.",
-    "The whole area is 560.49 hectares in one continuous block, with the river to the north and the protected woodland of El Carrascal to the south. It has one producer, who is also the winemaker. That is why it can be a Vino de Pago, a single estate with its own rules.",
-    "The land was already a monastery's by 1143, and the Abbey of Santa María de Retuerta was founded in 1146. The abbey has always stood inside the vineyard."
+    "The whole area is 560.49 hectares in one continuous block, with the river to the north and the protected woodland of El Carrascal to the south. It has one producer, who is also the winemaker.",
+    "Gifts of land to the monastery are recorded from 1143, and the Abbey of Santa María de Retuerta was founded in 1146. The abbey has always stood inside the vineyard."
    ],
    "cite": [
     "abadia-retuerta-pliego:p6",
     "abadia-retuerta-pliego:p8",
-    "abadia-retuerta-pliego:p13",
-    "abadia-retuerta-pliego:p14"
+    "abadia-retuerta-pliego:p14",
+    "abadia-retuerta-pliego:p15"
    ],
    "fly": [
     {
      "label": "Abadía Retuerta",
      "place": "abadia-retuerta",
      "caption": "A river terrace in a Duero meander, between two plateaus about 880 m high.",
+     "cite": [
+      "abadia-retuerta-pliego:p8"
+     ]
+    },
+    {
+     "label": "The Duero valley",
+     "point": [
+      -4.434,
+      41.609
+     ],
+     "zoom": 11,
+     "caption": "The Duero runs through its narrowest basin in Valladolid province here, with plateaus close on both sides.",
      "cite": [
       "abadia-retuerta-pliego:p8"
      ]
@@ -41,17 +54,17 @@
    "beat": "weather",
    "title": "Hot days, cold nights, frost",
    "paras": [
-    "The climate is markedly continental, with some Atlantic cloud, moderate rain and dry summers. Temperatures of 42 °C and -20 °C have been recorded here.",
+    "The climate is markedly continental, with some Atlantic cloud. Rain is moderate and summers are dry. Temperatures of 42 °C and -20 °C have been recorded here.",
     "Cold air from the plateau, nearly 900 m up, meets the damp of the river at 725 m. The estate is cooler than nearby Tudela de Duero, by almost 1 °C. It has the shortest vine growing cycle of the stations compared and the highest risk of frost.",
     "About 490 mm of rain falls in a year, a little more than the neighbouring villages. Little of it comes in summer, and high evapotranspiration leaves marked water deficits.",
-    "At night the cold air and damp collect on the valley floor, and the sandy, gravelly soil loses heat faster. The day-night swing grows. Grape skins end up thicker than elsewhere nearby, with more anthocyanins, the colour pigments. The wines show high colour intensity and a higher total polyphenol index than other wines of the area. Their most notable trait is a high structure and a long finish.",
-    "The lower mean annual temperature also slows ripening, so the cycle is longer and acidity stays more balanced."
+    "At night the cold air and damp collect on the valley floor, and the sandy soil loses heat faster. The day-night swing grows. Grape skins end up thicker than elsewhere nearby, with more anthocyanins, the colour pigments. The wines show high colour intensity and a higher total polyphenol index than other wines of the area. The reds' most notable trait is a high structure and a long finish.",
+    "The mean annual temperature also differs from the land around, so ripening is slower, the cycle is longer and acidity stays more balanced."
    ],
    "cite": [
     "abadia-retuerta-pliego:p8",
     "abadia-retuerta-pliego:p9",
     "abadia-retuerta-pliego:p10",
-    "abadia-retuerta-pliego:p12"
+    "abadia-retuerta-pliego:p13"
    ]
   },
   {
@@ -59,7 +72,7 @@
    "beat": "ground",
    "title": "Sand over many soils",
    "paras": [
-    "The estate lies on the Meseta Septentrional, an old worn-down base partly covered by younger sediments. The rocks are varied: conglomerates, sands, marls, clays and limestones. A cover of sand, from a few centimetres to several metres thick, often hides that variety.",
+    "The estate lies on the Meseta Septentrional, an old worn-down base partly covered by younger sediments. The rocks vary widely, from conglomerates and sands to marls, clays and limestones. A cover of sand, from a few centimetres to several metres thick, often hides that variety.",
     "The soils are weakly alkaline and low in organic matter, from sandy to clay-loam. Sand dominates over almost all of the area, and clay rises toward the slopes. Carbonates are generally low and grow with altitude.",
     "White wine is unusual in this part of the Duero valley because of the altitude and the extreme climate. A few plots near the river, sheltered by vegetation and with looser, gravelly soils, ripen white grapes well."
    ],
@@ -74,16 +87,17 @@
    "beat": "rules",
    "title": "Many grapes, few kilos",
    "paras": [
-    "Ribera del Duero and the land around it are close to a monoculture of Tempranillo. Here the estate grows up to 9 red and 5 white varieties, so wines can be blends or single-variety wines of grapes other than Tempranillo.",
+    "Ribera del Duero and the land around it are close to a monoculture of Tempranillo. The estate's rules allow 14 red and 6 white varieties, so wines can be blends or single-variety wines of grapes other than Tempranillo.",
     "Yields are capped at 8,000 kg per hectare and 60 hl per hectare, for red and white alike. In practice they average no more than 40 hl per hectare, because of green pruning in the vineyard.",
-    "Grapes are handled by gravity, without pumps. The winery uses the estate's own native yeast, and for reds its native bacteria too. The wines are described as having a fresh, clean aroma of fruit and flowers, with notes of Mediterranean scrub such as thyme, lavender and jara (rock rose). Gravity is said to give a finer, less rustic tannin structure than the wines around.",
-    "Single-variety reds spend at least 12 months in oak, and blended reds at least 6 months. White blends go for at least 3 months into steel tank or oak.",
+    "Grapes are handled by gravity, without pumps. The winery uses the estate's own native yeast, and for reds its native bacteria too. The native yeast gives a clean, fresh aroma, both fruity and floral. It carries notes of Mediterranean scrub: aromatic herbs such as thyme and lavender, and jara (rock rose). Gravity gives a finer, less rustic tannin structure than the wines around.",
+    "Single-variety reds spend at least 12 months in oak, and blended reds at least 6 months. White blends mature in steel tank or spend at least 3 months in oak.",
     "Everything is made and aged in the winery inside the estate. The wines may say Vino de Pago on the label in place of Protected Designation of Origin."
    ],
    "cite": [
     "abadia-retuerta-pliego:p5",
     "abadia-retuerta-pliego:p6",
     "abadia-retuerta-pliego:p7",
+    "abadia-retuerta-pliego:p8",
     "abadia-retuerta-pliego:p11",
     "abadia-retuerta-pliego:p12",
     "abadia-retuerta-pliego:p15",
