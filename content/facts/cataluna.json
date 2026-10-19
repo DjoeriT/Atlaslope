@@ -4,43 +4,63 @@
   {
    "id": "emporda",
    "why": {
-    "text": "Poor, well-drained soils on the Empordà plain give light, fresh wines with good acidity. Old Garnacha is the classic liqueur wine.",
+    "text": "Most vines grow on poor, light, well-drained soils; on the alluvial plain they give light, silky, fresh wines. Old-vine Garnacha is the classic liqueur wine.",
     "cite": [
-     "emporda-doc:p7"
+     "emporda-pliego:p17",
+     "emporda-pliego:p18",
+     "emporda-pliego:p19",
+     "emporda-pliego:p20"
     ]
    },
    "grapes": {
     "main": [
      {
+      "local": "Garnacha Blanca"
+     },
+     {
+      "local": "Garnacha Roja"
+     },
+     {
       "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Cariñena Blanca"
+     },
+     {
+      "local": "Cariñena Roja"
+     },
+     {
+      "local": "Samsó",
+      "grape": "Cariñena"
+     },
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Moscatel de Alejandría"
      }
     ],
     "cite": [
-     "emporda-doc:p7"
+     "emporda-pliego:p13"
     ],
     "others": [
-     "Garnacha Roja",
-     "Moscatel de Alejandría",
-     "Cariñena",
-     "Macabeo",
-     "Garnacha Blanca",
-     "Cabernet Franc",
-     "Cabernet Sauvignon",
      "Chardonnay",
-     "Garnacha Peluda",
      "Gewürztraminer",
-     "Malvasía Aromática",
-     "Merlot",
-     "Monastrell",
+     "Malvasía",
      "Moscatel Grano Menudo",
      "Picapoll Blanco",
      "Sauvignon Blanco",
+     "Xarel·lo",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Merlot",
+     "Monastrell",
+     "Ull de Llebre",
      "Syrah",
-     "Tempranillo",
-     "Xarel·lo"
+     "Garnacha Peluda"
     ],
     "othersCite": [
-     "emporda-doc"
+     "emporda-pliego:p13"
     ]
    },
    "styles": {
@@ -52,20 +72,27 @@
      "fortified",
      "sweet"
     ],
-    "text": "Whites, rosados and reds; also needle and sparkling wines, liqueur wines from Garnacha and Moscatel, and wines from overripe grapes.",
+    "text": "Whites, rosados and reds, and rancio; also needle and sparkling wines; liqueur wines (Garnacha, Moscatel, white and black mistela, vino dulce and rancio); and wines from overripe grapes.",
     "cite": [
-     "emporda-doc:p1",
-     "emporda-doc:p7"
+     "emporda-pliego:p3",
+     "emporda-pliego:p4",
+     "emporda-pliego:p5",
+     "emporda-pliego:p6",
+     "emporda-pliego:p7"
     ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mediterranean, about 600 mm of rain and a mean of 14 to 16 °C a year. The strong, dry north wind, the Tramuntana, keeps the vines healthy.",
+    "cite": [
+     "emporda-pliego:p14",
+     "emporda-pliego:p16"
+    ]
    },
    "soil": {
-    "text": "Poor, light, acid to neutral soils from conglomerates and sandstones, with good drainage.",
+    "text": "Mostly poor, light, well-drained, acid to neutral soils. In the hills: granite, slate and schist, or gravel, sand and clay; on the alluvial plain: marls and clays, or conglomerates and sandstones.",
     "cite": [
-     "emporda-doc:p7"
+     "emporda-pliego:p16",
+     "emporda-pliego:p17"
     ]
    },
    "tastes": {
@@ -86,7 +113,7 @@
      },
      {
       "name": "Moscatel",
-      "text": "At least 90% overripe Muscat of Alexandria or Muscat Blanc; sweet, fleshy."
+      "text": "At least 90% overripe Muscat of Alexandria or Muscat Blanc; sweet, velvety, intense and long."
      },
      {
       "name": "Uvas sobremaduradas",
@@ -94,7 +121,8 @@
      }
     ],
     "cite": [
-     "emporda-doc:p1"
+     "emporda-doc:p1",
+     "emporda-pliego:p6"
     ]
    },
    "producers": {
@@ -105,38 +133,78 @@
   {
    "id": "costers-del-segre",
    "why": {
-    "text": "This inland zone has large temperature swings between day and night. They shape the alcohol and aromas of the wines.",
+    "text": "Day-night swings of up to 25 °C at ripening give aromatic, structured wines; cold nights give high acidity and intense flavours.",
     "cite": [
-     "costers-del-segre-doc:p6"
+     "costers-del-segre-pliego:p9",
+     "costers-del-segre-pliego:p11"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Xarel·lo"
+     },
+     {
+      "local": "Parellada"
+     },
+     {
+      "local": "Garnacha Blanca"
+     },
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Ull de Llebre",
+      "grape": "Tempranillo"
+     },
+     {
+      "local": "Carinyena",
+      "grape": "Cariñena"
+     },
+     {
+      "local": "Garnacha Tintorera"
+     }
+    ],
+    "cite": [
+     "costers-del-segre-pliego:p8"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Albariño",
-     "Alarije",
-     "Trepat",
-     "Tempranillo",
-     "Syrah",
-     "Sauvignon Blanco",
+     "Chardonnay",
      "Riesling",
-     "Pinot Noir",
-     "Parellada",
-     "Moscatel Grano Menudo",
+     "Sauvignon Blanc",
      "Moscatel de Alejandría",
-     "Monastrell",
-     "Merlot",
-     "Cariñena",
-     "Macabeo",
+     "Subirat Parent (Malvasía Riojana)",
      "Gewürztraminer",
-     "Garnacha Tinta",
-     "Garnacha Blanca",
-     "Chardonnay"
+     "Albariño",
+     "Chenin Blanc",
+     "Godello",
+     "Moscatel Grano Menudo",
+     "Verdejo",
+     "Viognier",
+     "Picapoll Blanco",
+     "Malvasía de Sitges",
+     "Incrocio Manzoni",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Merlot",
+     "Monastrell (Garrut)",
+     "Trepat",
+     "Pinot Noir",
+     "Syrah",
+     "Garnacha Peluda",
+     "Gonfaus",
+     "Malbec",
+     "Petit Verdot",
+     "Sumoll Tinto",
+     "Pirene",
+     "Marselan",
+     "Trobat"
     ],
     "othersCite": [
-     "costers-del-segre-doc:p5"
+     "costers-del-segre-pliego:p8"
     ]
    },
    "styles": {
@@ -147,42 +215,52 @@
      "sparkling",
      "fortified"
     ],
-    "text": "Whites, rosados and reds; also needle wines, sparkling wines and liqueur wines.",
+    "text": "Whites, rosados and reds; also needle wines, sparkling wines, liqueur wines, and wines from overripe or raisined grapes.",
     "cite": [
-     "costers-del-segre-doc:p1"
+     "costers-del-segre-pliego:p1",
+     "costers-del-segre-pliego:p2",
+     "costers-del-segre-pliego:p3",
+     "costers-del-segre-pliego:p4"
     ]
    },
    "climate": {
     "text": "Inland climate with a wide temperature range between day and night.",
     "cite": [
-     "costers-del-segre-doc:p6"
+     "costers-del-segre-pliego:p9"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Calcareous soils covered with sand and/or clay, poor in organic matter.",
+    "cite": [
+     "costers-del-segre-pliego:p9"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Cold nights during ripening give wines of high acidity and intense flavours.",
+    "cite": [
+     "costers-del-segre-pliego:p11"
+    ]
    },
    "famous": {
     "styles": [
      {
       "name": "Espumoso",
-      "text": "Traditional method, second fermentation in bottle, nine months from tirage to disgorging."
+      "text": "First or second fermentation, at least 3 bar; a traditional-method history from the early 1900s."
      },
      {
       "name": "Vino de licor",
-      "text": "Sweet whites in old-gold colour."
+      "text": "White, rosado or red; spirit added to reach 15 to 22% vol."
      },
      {
       "name": "Vino de aguja",
-      "text": "Visible carbon dioxide bubbles without foam; perceptible on the palate."
+      "text": "Visible carbon dioxide at 1 to 2.5 bar; fruit or floral aromas."
      }
     ],
     "cite": [
-     "costers-del-segre-doc:p1"
+     "costers-del-segre-pliego:p2",
+     "costers-del-segre-pliego:p3",
+     "costers-del-segre-pliego:p4",
+     "costers-del-segre-pliego:p11"
     ]
    },
    "producers": {
@@ -193,26 +271,48 @@
   {
    "id": "pla-de-bages",
    "why": {
-    "text": "Altitude and distance from the sea give the wines their acid core. Wild herbs and forest add aromas such as rosemary and thyme.",
+    "text": "A climate between Mediterranean and continental, with Pyrenean influence, gives light wines with a good acid core. Wild herbs add rosemary and thyme aromas.",
     "cite": [
-     "pla-de-bages-doc:p6"
+     "pla-de-bages-pliego:p11"
     ]
    },
    "grapes": {
     "main": [
      {
       "local": "Picapoll Blanco"
+     },
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Parellada"
+     },
+     {
+      "local": "Mandó",
+      "grape": "Garró"
+     },
+     {
+      "local": "Sumoll"
+     },
+     {
+      "local": "Garnacha"
+     },
+     {
+      "local": "Picapoll Negro"
+     },
+     {
+      "local": "Samsó",
+      "grape": "Cariñena"
      }
     ],
     "cite": [
-     "pla-de-bages-wiki"
+     "pla-de-bages-pliego:p9"
     ],
     "others": [
-     "Sumoll Tinto",
      "Ull de Llebre"
     ],
     "othersCite": [
-     "pla-de-bages-doc:p5"
+     "pla-de-bages-pliego:p9"
     ],
     "othersPartial": true
    },
@@ -222,11 +322,15 @@
      "rose",
      "red",
      "sparkling",
-     "fortified"
+     "fortified",
+     "sweet"
     ],
-    "text": "Whites, rosados and reds; also needle wines, sparkling wines (a long local tradition) and liqueur wines.",
+    "text": "Whites (also skin-fermented brisado), rosados and reds; also needle wines, sparkling wines (a long local tradition), liqueur wines (rancio, mistela, vino dulce natural) and naturally sweet wines.",
     "cite": [
-     "pla-de-bages-doc:p1",
+     "pla-de-bages-pliego:p1",
+     "pla-de-bages-pliego:p2",
+     "pla-de-bages-pliego:p3",
+     "pla-de-bages-pliego:p4",
      "pla-de-bages-doc:p6"
     ]
    },
@@ -237,32 +341,37 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Sedimentary sandstones, mudstones, limestones and conglomerates. On the Pla de Bages, moderately to very deep, medium-textured, well-drained soils; carbonate content is generally high.",
+    "cite": [
+     "pla-de-bages-pliego:p9",
+     "pla-de-bages-pliego:p10"
+    ]
    },
    "tastes": {
-    "text": "Whites: pale; fresh, floral, herbal, sharp fruit. Rosés: powerful, structured, unctuous. Reds: deep colour, very structured and powerful.",
+    "text": "Whites: pale to deep gold yellow; fruity; usually light. Rosés: pale pink or onion-skin to cherry red; fruity; usually light. Reds: violet to ochre; fruity; from light and fresh to more structured and concentrated.",
     "cite": [
-     "pla-de-bages-doc:p1"
+     "pla-de-bages-pliego:p4",
+     "pla-de-bages-pliego:p5"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Espumoso",
-      "text": "Fresh citrus and floral fruit; dried fruit and bread from lees; fine bubbles."
+      "text": "Fruity, sometimes ageing aromas; fresh from the carbon dioxide, which adds structure and breadth."
      },
      {
       "name": "Vino de aguja",
-      "text": "Higher acidity with carbon dioxide; fresh, broad."
+      "text": "Fruity aromas; fresh from the carbon dioxide, which adds structure and breadth."
      },
      {
       "name": "Vino de licor",
-      "text": "Overripe or noble-rot grapes; dried fruit, raisin, orange peel, honey."
+      "text": "Yellow, amber, gold, red or tawny; fresh or ripe fruit aromas; unctuous, long."
      }
     ],
     "cite": [
-     "pla-de-bages-doc:p1"
+     "pla-de-bages-pliego:p5",
+     "pla-de-bages-pliego:p6"
     ]
    },
    "producers": {
@@ -283,19 +392,42 @@
      {
       "local": "Pansa Blanca",
       "grape": "Xarel·lo"
+     },
+     {
+      "local": "Garnacha Blanca"
+     },
+     {
+      "local": "Garnacha Tinta"
      }
     ],
     "cite": [
-     "alella-wiki"
+     "alella-wiki",
+     "alella-pliego:p7",
+     "alella-pliego:p12"
     ],
     "others": [
+     "Chardonnay",
+     "Chenin Blanc",
+     "Macabeo",
+     "Malvasía",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Picapoll Blanco",
+     "Sauvignon Blanco",
+     "Cabernet Sauvignon",
+     "Garnacha Peluda",
+     "Merlot",
+     "Monastrell",
+     "Pinot Noir",
+     "Samsó (Mazuela)",
+     "Sumoll Tinto",
      "Syrah",
-     "Garnacha Tinta"
+     "Ull de Llebre"
     ],
     "othersCite": [
-     "alella-doc:p6"
-    ],
-    "othersPartial": true
+     "alella-pliego:p7",
+     "alella-pliego:p8"
+    ]
    },
    "styles": {
     "kinds": [
@@ -306,14 +438,17 @@
      "sweet",
      "sparkling"
     ],
-    "text": "Whites, rosados and reds; also liqueur wines (rancio, mistela), natural sweet wines and traditional-method sparkling.",
+    "text": "Whites, rosados and reds; also liqueur wines (rancio, mistela, natural sweet), traditional-method sparkling and needle wines.",
     "cite": [
-     "alella-doc:p1"
+     "alella-pliego:p1",
+     "alella-pliego:p2"
     ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mediterranean. On the coast, 550 to 800 mm of rain, mild winters and hot summers; the Coastal Range shelters the vines from cold inland winds and holds the summer sea breeze.",
+    "cite": [
+     "alella-pliego:p9"
+    ]
    },
    "soil": {
     "text": "Granite subsoil with marine remains, breaking into small grains at the surface; permeable.",
@@ -322,14 +457,18 @@
     ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites, mostly Pansa Blanca: fruity with fresh mineral notes and a bitter, citrus, green-almond finish; baked apple when oaked. Reds, mostly Garnacha Tinta: elegant, broad, long, fruity and mineral. Inland wines show more acidity.",
+    "cite": [
+     "alella-pliego:p11",
+     "alella-pliego:p12",
+     "alella-pliego:p13"
+    ]
    },
    "famous": {
     "styles": [
      {
       "name": "Rancio",
-      "text": "Oxidative liqueur wine from white Garnacha and Macabeo; a year in oak."
+      "text": "From white Garnacha and Macabeo or red Garnacha; sun-and-night, at least a year in oak."
      },
      {
       "name": "Mistela",
@@ -342,7 +481,8 @@
     ],
     "cite": [
      "alella-doc:p2",
-     "alella-doc:p3"
+     "alella-doc:p3",
+     "alella-pliego:p1"
     ]
    },
    "producers": {
@@ -360,31 +500,49 @@
   {
    "id": "conca-de-barbera",
    "why": {
-    "text": "Trepat, a grape native to Conca de Barberà, gives rosados and reds with their own character.",
+    "text": "Trepat, native to Conca de Barberà and nearly exclusive to it, gives rosados, reds and pink sparkling and needle wines of their own character.",
     "cite": [
-     "conca-de-barbera-doc:p8"
+     "conca-de-barbera-pliego:p13",
+     "conca-de-barbera-pliego:p14"
     ]
    },
    "grapes": {
     "main": [
      {
       "local": "Trepat"
-     },
-     {
-      "local": "Macabeo"
      }
     ],
     "cite": [
-     "conca-de-barbera-doc:p8",
-     "conca-de-barbera-wiki"
+     "conca-de-barbera-pliego:p13",
+     "conca-de-barbera-pliego:p14"
     ],
     "others": [
+     "Chardonnay",
+     "Chenin Blanc",
+     "Garnacha Blanca",
+     "Macabeo",
+     "Moscatel de Alejandría",
+     "Moscatel Grano Menudo",
+     "Parellada",
+     "Sauvignon Blanco",
+     "Sumoll Blanco",
+     "Viognier",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Garró (Mandó)",
+     "Garnacha Tinta",
+     "Merlot",
+     "Monastrell",
+     "Pinot Noir",
+     "Querol",
+     "Samsó",
+     "Sumoll Tinto",
+     "Syrah",
      "Ull de Llebre"
     ],
     "othersCite": [
-     "conca-de-barbera-doc:p8"
-    ],
-    "othersPartial": true
+     "conca-de-barbera-pliego:p10"
+    ]
    },
    "styles": {
     "kinds": [
@@ -394,30 +552,35 @@
      "fortified",
      "sparkling"
     ],
-    "text": "Whites, rosados and reds; also liqueur wines, sparkling wines and needle wines.",
+    "text": "Whites (also skin-macerated brisado), rosados and reds; also liqueur wines, sparkling wines and needle wines.",
     "cite": [
-     "conca-de-barbera-doc:p1"
+     "conca-de-barbera-pliego:p1"
     ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Transitional Mediterranean, between the mild coast and the continental inland; marked day-night swings, cold winters and summers not too hot. 450 to 550 mm of rain, mean 13 to 14 °C.",
+    "cite": [
+     "conca-de-barbera-pliego:p10",
+     "conca-de-barbera-pliego:p11"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Three kinds: clay-limestone soils of clay, marl and calcareous conglomerate, poor in organic matter, in the centre; pebbly river terraces; and slate («licorella») in the southeast.",
+    "cite": [
+     "conca-de-barbera-pliego:p11"
+    ]
    },
    "tastes": {
-    "text": "Whites: pale green-yellow to deep gold; primary aromas; light, fresh when young. Rosés: bright red-violet to onion-skin; floral, fruity. Reds: intense cherry to ruby; fruity when young, vanilla and toast with barrel ageing.",
+    "text": "Whites: pale green-yellow to deep gold; fruity and/or floral when young; light, fresh when young. Rosés: bright red-violet to onion-skin; floral, fruity. Reds: intense cherry to ruby; fruity when young, tertiary and even toasty notes after oak.",
     "cite": [
-     "conca-de-barbera-doc:p1"
+     "conca-de-barbera-pliego:p4"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Vino de licor",
-      "text": "Amber to opaque; nutty aldehyde notes when aged; warm, unctuous."
+      "text": "Up to amber with copper glints; rancio dry and intense, dulce natural and mistela unctuous."
      },
      {
       "name": "Espumoso",
@@ -425,11 +588,13 @@
      },
      {
       "name": "Vino de aguja",
-      "text": "White or rosé with carbon dioxide; fruity, floral, fresh, slight tickle."
+      "text": "White, rosado or red with carbon dioxide; fruity, floral, fresh, slight tickle."
      }
     ],
     "cite": [
-     "conca-de-barbera-doc:p1"
+     "conca-de-barbera-doc:p1",
+     "conca-de-barbera-pliego:p4",
+     "conca-de-barbera-pliego:p5"
     ]
    },
    "producers": {
@@ -442,24 +607,35 @@
    "why": {
     "text": "Long, hot, sunny summers ripen even late grapes well; cellars at about 13 to 15 °C suit the second fermentation in bottle.",
     "cite": [
-     "cava-doc:p6",
-     "cava-doc:p7"
+     "cava-pliego:p10"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Macabeo",
+      "grape": "Viura"
+     },
+     {
+      "local": "Xarel·lo"
+     },
+     {
+      "local": "Parellada"
+     }
+    ],
+    "cite": [
+     "cava-pliego:p10"
+    ],
     "others": [
-     "Viura (Macabeo)",
-     "Xarel·lo",
+     "Malvasía (Subirat Parent)",
      "Chardonnay",
-     "Parellada",
      "Garnacha Tinta",
-     "Trepat",
-     "Pinot Noir"
+     "Monastrell",
+     "Pinot Noir",
+     "Trepat"
     ],
     "othersCite": [
-     "cava-doc:p6"
+     "cava-pliego:p9"
     ]
    },
    "styles": {
@@ -468,28 +644,25 @@
     ],
     "text": "Sparkling white and rosé, made by a second fermentation in the bottle.",
     "cite": [
-     "cava-doc:p3",
-     "cava-doc:p7"
+     "cava-pliego:p1"
     ]
    },
    "climate": {
     "text": "Transitional Mediterranean, between the mild coast and harsher inland. About 500 mm of rain a year and about 2,500 hours of sun.",
     "cite": [
-     "cava-doc:p6",
-     "cava-doc:p7"
+     "cava-pliego:p10"
     ]
    },
    "soil": {
     "text": "Mostly chalky and fairly clayey, with little sand. Low in organic matter and not very fertile.",
     "cite": [
-     "cava-doc:p6"
+     "cava-pliego:p9"
     ]
    },
    "tastes": {
-    "text": "White: pale yellow to straw. Rosé: varied shades, never violet. Small, steady bubbles. Fruity, fresh, lightly acidic, with a yeast note. Gran Reserva: ripe fruit, nuts, toast.",
+    "text": "White: pale yellow to straw. Rosé: shades of pink. Small, steady bubbles. Fruity, fresh, clean aromas with a note of lees; fresh and balanced, with a yeast note. Gran Reserva: ripe fruit, nuts, toast.",
     "cite": [
-     "cava-doc:p3",
-     "cava-doc:p4"
+     "cava-pliego:p2"
     ]
    },
    "famous": {
@@ -500,51 +673,60 @@
      },
      {
       "name": "Paraje Calificado",
-      "text": "Mineral hints from the plot; nuts and toast; balanced structure, creaminess and acidity."
+      "text": "Complex aromas of nuts and toast; balanced structure, creaminess and acidity."
      }
     ],
     "cite": [
-     "cava-doc:p4"
+     "cava-pliego:p2"
     ]
    }
   },
   {
    "id": "penedes",
    "why": {
-    "text": "Soil and climate bring white grapes to ripeness here. The whites get freshness and fruit.",
+    "text": "Soil, climate and human work come together here to bring white grapes to their best ripeness. The whites get freshness, acidity and fruit.",
     "cite": [
-     "penedes-doc:p6"
+     "penedes-pliego:p15"
     ]
    },
    "grapes": {
     "main": [],
     "cite": [],
     "others": [
+     "Macabeo",
      "Xarel·lo",
      "Parellada",
-     "Merlot",
-     "Macabeo",
-     "Alarije",
-     "Cabernet Franc",
-     "Cabernet Sauvignon",
-     "Chardonnay",
-     "Chenin Blanc",
+     "Subirat Parent",
      "Garnacha Blanca",
-     "Garnacha Tinta",
-     "Gewürztraminer",
-     "Malvasía Aromática",
-     "Cariñena",
-     "Monastrell",
      "Moscatel de Alejandría",
      "Moscatel Grano Menudo",
-     "Pinot Noir",
-     "Riesling",
+     "Malvasía de Sitges",
+     "Chardonnay",
      "Sauvignon Blanco",
+     "Riesling",
+     "Gewürztraminer",
+     "Chenin Blanc",
+     "Sumoll Blanco",
+     "Viognier",
+     "Xarel·lo Rosado",
+     "Forcada",
+     "Marina Rión",
+     "Ull de Llebre",
+     "Garnacha Tinta",
+     "Samsó",
+     "Monastrell",
      "Sumoll Tinto",
-     "Syrah"
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Pinot Noir",
+     "Syrah",
+     "Cabernet Franc",
+     "Petit Verdot",
+     "Moneu",
+     "Belat"
     ],
     "othersCite": [
-     "penedes-doc"
+     "penedes-pliego:p12"
     ]
    },
    "styles": {
@@ -556,9 +738,12 @@
      "fortified",
      "sweet"
     ],
-    "text": "Whites, rosados and reds; also sparkling, needle and liqueur wines, and sweet wines from overripe grapes.",
+    "text": "Whites, rosados and reds, some sweet by the cold-stop «dulce de frío» method; also sparkling, needle and liqueur wines (vino dulce natural, Vino dulce de Malvasía de Sitges), and sweet wines from overripe grapes.",
     "cite": [
-     "penedes-doc:p1"
+     "penedes-doc:p1",
+     "penedes-pliego:p1",
+     "penedes-pliego:p2",
+     "penedes-pliego:p5"
     ]
    },
    "climate": {
@@ -568,8 +753,10 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Active lime 5 to 10%; rooting depth 40 to 120 cm or more, mostly 80 to 120 cm; generally well drained; loam and silt-loam texture.",
+    "cite": [
+     "penedes-pliego:p14"
+    ]
    },
    "tastes": {
     "text": "Whites: pale to dark yellow; white and tropical fruit, ripe fruit if oaked. Rosés: pale pink to cherry; red fruit, slightly acid, soft, fresh. Reds: garnet when young, tawny when aged.",
@@ -581,15 +768,15 @@
     "styles": [
      {
       "name": "Espumoso",
-      "text": "Traditional method; at least twelve months from tirage to disgorging."
+      "text": "Traditional or ancestral method; at least fifteen months from tirage to disgorging."
      },
      {
       "name": "Vino de aguja",
       "text": "Second fermentation; carbon dioxide pressure between 1 and 2.5 bar."
      },
      {
-      "name": "Vino de licor",
-      "text": "Spirit added to must of at least 240 g/l sugar; candied fruit."
+      "name": "Vino dulce natural",
+      "text": "Liqueur wine from overripe grapes of at least 240 g/l sugar, spirit added; candied fruit."
      },
      {
       "name": "Dulce de uvas sobremaduradas",
@@ -597,7 +784,9 @@
      }
     ],
     "cite": [
-     "penedes-doc:p1"
+     "penedes-doc:p1",
+     "penedes-pliego:p2",
+     "penedes-pliego:p5"
     ]
    },
    "producers": {
@@ -621,55 +810,107 @@
   {
    "id": "catalunya",
    "why": {
-    "text": "Strong sunshine gives the wines deep colours, especially the reds.",
+    "text": "Strong sunshine favours deep colours in the wines, especially the reds.",
     "cite": [
-     "catalunya-doc:p6"
+     "catalunya-pliego:p16",
+     "catalunya-pliego:p18"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Garnacha Blanca"
+     },
+     {
+      "local": "Macabeo",
+      "grape": "Viura"
+     },
+     {
+      "local": "Moscatel de Alejandría"
+     },
+     {
+      "local": "Parellada",
+      "grape": "Montonega"
+     },
+     {
+      "local": "Picapoll Blanco"
+     },
+     {
+      "local": "Riesling"
+     },
+     {
+      "local": "Sauvignon Blanc"
+     },
+     {
+      "local": "Xarel·lo"
+     },
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Garnacha Peluda"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Monastrell"
+     },
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Samsó",
+      "grape": "Cariñena"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Trepat"
+     },
+     {
+      "local": "Ull de Llebre",
+      "grape": "Tempranillo"
+     }
+    ],
+    "cite": [
+     "catalunya-pliego:p14",
+     "catalunya-pliego:p15"
+    ],
     "others": [
-     "Xarel·lo",
-     "Parellada (Montonega)",
-     "Garnacha Tinta",
-     "Alarije (Subirat Parent, Malvasía Riojana)",
      "Albariño",
-     "Malvasía Aromática (Malvasía de Sitges)",
-     "Mazuela (Cariñena)",
-     "Merlot",
-     "Monastrell",
-     "Moscatel de Alejandría",
-     "Moscatel Grano Menudo",
-     "Cabernet Franc",
-     "Cabernet Sauvignon",
-     "Chardonnay",
      "Chenin Blanc",
-     "Garnacha Blanca",
-     "Garnacha Peluda",
-     "Garnacha Roja",
-     "Garnacha Tintorera",
      "Gewürztraminer",
-     "Macabeo (Viura)",
+     "Malvasía de Sitges",
+     "Malvasía (Subirat Parent)",
+     "Moscatel Grano Menudo",
      "Pedro Ximénez",
-     "Petit Verdot",
-     "Picapoll Blanco",
-     "Picapoll Negro",
-     "Pinot Noir",
-     "Riesling",
-     "Sauvignon Blanco",
      "Sumoll Blanco",
-     "Sumoll Tinto",
-     "Syrah",
-     "Tempranillo (Cencibel, Tinto de Toro)",
-     "Trepat",
      "Vinyater",
-     "Viognier"
+     "Viognier",
+     "Caladoc",
+     "Garnacha Roja (Garnacha Gris)",
+     "Garnacha Tintorera",
+     "Mandó (Garró)",
+     "Marselán",
+     "Petit Verdot",
+     "Picapoll Tinto",
+     "Sumoll Tinto",
+     "Xarel·lo Rosado"
     ],
     "othersCite": [
-     "catalunya-doc:p6",
-     "catalunya-doc:p10",
-     "catalunya-doc:p11"
+     "catalunya-pliego:p14",
+     "catalunya-pliego:p15"
     ]
    },
    "styles": {
@@ -681,27 +922,30 @@
     ],
     "text": "Whites, rosados and reds; lightly sparkling aguja wines; liqueur wines.",
     "cite": [
-     "catalunya-doc:p1",
-     "catalunya-doc:p3",
-     "catalunya-doc:p4"
+     "catalunya-pliego:p1",
+     "catalunya-pliego:p2",
+     "catalunya-pliego:p3"
     ]
    },
    "climate": {
-    "text": "Strong sunshine, which deepens the colour of the wines.",
+    "text": "Mediterranean, with over 2,500 hours of sun a year, mild dry winters and summers not too hot; 350 to over 600 mm of rain, mean 14 to 15 °C. The strong sunshine favours deep colours in the wines.",
     "cite": [
-     "catalunya-doc:p6"
+     "catalunya-pliego:p15",
+     "catalunya-pliego:p16"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly Miocene sedimentary soils, calcareous and poor in organic matter; Quaternary alluvium near the rivers. Silt and clay dominate the texture.",
+    "cite": [
+     "catalunya-pliego:p16",
+     "catalunya-pliego:p17"
+    ]
    },
    "tastes": {
     "text": "White: pale greenish to deep gold; fruity or floral, with vanilla and toast if oaked. Rosé: bright red to onion-skin. Red: cherry to pale ruby; young ones light, oaked ones rounder.",
     "cite": [
-     "catalunya-doc:p1",
-     "catalunya-doc:p2",
-     "catalunya-doc:p3"
+     "catalunya-pliego:p3",
+     "catalunya-pliego:p4"
     ]
    },
    "famous": {
@@ -712,12 +956,12 @@
      },
      {
       "name": "Vino de licor",
-      "text": "Warm and rich; fruity if unoaked; nutty notes with ageing; colour up to amber."
+      "text": "Warm, unctuous and long; fruity if unoaked; nutty notes with ageing; colour up to amber."
      }
     ],
     "cite": [
-     "catalunya-doc:p3",
-     "catalunya-doc:p4"
+     "catalunya-pliego:p3",
+     "catalunya-pliego:p4"
     ]
    }
   },
@@ -726,7 +970,8 @@
    "why": {
     "text": "Steep slopes have shallow slate soils with bedrock near the surface. The wines are high in dry extract and deep red in colour.",
     "cite": [
-     "priorat-doc:p5"
+     "priorat-pliego:p22",
+     "priorat-pliego:p23"
     ]
    },
    "grapes": {
@@ -739,28 +984,29 @@
      }
     ],
     "cite": [
-     "priorat-wiki"
+     "priorat-pliego:p21"
     ],
     "others": [
-     "Garnacha Blanca",
-     "Macabeo",
+     "Garnacha Peluda",
      "Cabernet Sauvignon",
      "Cabernet Franc",
-     "Chenin Blanc",
-     "Garnacha Peluda",
+     "Ull de Llebre",
+     "Pinot Noir",
      "Merlot",
+     "Syrah",
+     "Picapoll Tinto",
+     "Garnacha Blanca",
+     "Macabeo",
+     "Pedro Ximénez",
+     "Chenin Blanc",
      "Moscatel de Alejandría",
      "Moscatel Grano Menudo",
-     "Pedro Ximénez",
+     "Pansal",
      "Picapoll Blanco",
-     "Picapoll Negro",
-     "Pinot Noir",
-     "Syrah",
-     "Tempranillo",
-     "Xarel·lo"
+     "Viognier"
     ],
     "othersCite": [
-     "priorat-doc"
+     "priorat-pliego:p21"
     ]
    },
    "styles": {
@@ -771,28 +1017,30 @@
      "fortified",
      "sweet"
     ],
-    "text": "Whites, rosados and reds, including single-estate (pago) wines; liqueur wines such as rancio, mistela and natural sweet.",
+    "text": "Whites, rosados and reds, including single-estate «vino de finca»; liqueur wines: rancio (no added spirit), vino de licor dulce, white and red mistela, and natural sweet; and wines from overripe grapes, among them Vimblanc.",
     "cite": [
-     "priorat-doc:p1",
-     "priorat-doc:p5"
+     "priorat-pliego:p1",
+     "priorat-pliego:p2"
     ]
    },
    "climate": {
-    "text": "Mild and dry; the mountains cut off sea influence and shelter the zone from cold north winds; northwest winds blow.",
+    "text": "Sheltered from the sea and, by the Montsant range, from cold north winds; marked day-night swings, cold winters and dry, hot summers; mean 14 to 15 °C, 400 to 500 mm of rain; northwest winds blow.",
     "cite": [
-     "priorat-doc:p5"
+     "priorat-pliego:p22",
+     "priorat-pliego:p23"
     ]
    },
    "soil": {
     "text": "Very steep, shallow soils from slate, low in organic matter, with bedrock close to the surface.",
     "cite": [
-     "priorat-doc:p5"
+     "priorat-pliego:p22"
     ]
    },
    "tastes": {
     "text": "Reds: fruity, floral or mineral aromas; balanced, structured, fresh; oak-aged ones show primary, secondary and tertiary aromas. Whites: fruity, floral or milky; fresh, soft. Rosés: fruity, floral.",
     "cite": [
-     "priorat-doc:p1"
+     "priorat-pliego:p4",
+     "priorat-pliego:p5"
     ]
    },
    "famous": {
@@ -807,36 +1055,42 @@
   {
    "id": "tarragona",
    "why": {
-    "text": "Camp de Tarragona, under direct sea influence, gives Mediterranean wines. Continental Ribera d'Ebre gives fuller reds from Cariñena and Garnacha.",
+    "text": "Camp de Tarragona, near the sea, gives soft, balanced whites and firm reds. Ribera d'Ebre reds join Cariñena's body and colour with Garnacha's richness.",
     "cite": [
-     "tarragona-doc:p6"
+     "tarragona-pliego:p22"
     ]
    },
    "grapes": {
     "main": [],
     "cite": [],
     "others": [
-     "Cariñena",
-     "Garnacha Tinta",
-     "Macabeo",
-     "Parellada",
-     "Xarel·lo",
-     "Garnacha Blanca",
-     "Tempranillo",
-     "Sumoll Tinto",
-     "Syrah",
-     "Alarije",
-     "Cabernet Sauvignon",
      "Chardonnay",
+     "Garnacha Blanca",
+     "Moscatel Grano Menudo",
+     "Moscatel de Alejandría",
+     "Parellada",
+     "Sauvignon Blanco",
+     "Subirat Parent (Malvasía)",
+     "Macabeo",
+     "Xarel·lo",
+     "Xarel·lo Rosado",
+     "Sumoll Blanco",
+     "Vinyater",
+     "Malvasía de Sitges",
+     "Cabernet Sauvignon",
+     "Garnacha Tinta",
      "Merlot",
      "Monastrell",
-     "Moscatel de Alejandría",
-     "Moscatel Grano Menudo",
      "Pinot Noir",
-     "Sauvignon Blanco"
+     "Samsó (Cariñena)",
+     "Sumoll Tinto",
+     "Syrah",
+     "Trepat",
+     "Ull de Llebre"
     ],
     "othersCite": [
-     "tarragona-doc"
+     "tarragona-pliego:p19",
+     "tarragona-pliego:p20"
     ]
    },
    "styles": {
@@ -845,11 +1099,16 @@
      "rose",
      "red",
      "sparkling",
-     "fortified"
+     "fortified",
+     "sweet"
     ],
-    "text": "Light whites, rosados and reds; also sparkling, needle and liqueur wines such as mistela, moscatel and rancio.",
+    "text": "Whites (also skin-macerated brisado), rosados and reds; also sparkling and needle wines; liqueur wines (mistela, moscatel, Garnacha, rancio, Clásico, Vino de Misa); and Vimblanc, a sweet wine from raisined grapes with no added spirit.",
     "cite": [
-     "tarragona-doc:p1"
+     "tarragona-pliego:p1",
+     "tarragona-pliego:p2",
+     "tarragona-pliego:p3",
+     "tarragona-pliego:p5",
+     "tarragona-pliego:p23"
     ]
    },
    "climate": {
@@ -859,28 +1118,32 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Low-fertility soils; in Camp de Tarragona clays with a chalky crust, in Ribera d'Ebre calcareous clays, marls, limestones, sandstones and conglomerates. Slightly basic (pH 7.1 to 8.6), low in organic matter, mostly loam.",
+    "cite": [
+     "tarragona-pliego:p20",
+     "tarragona-pliego:p21"
+    ]
    },
    "tastes": {
-    "text": "Clear, light, balanced wines. Sparkling: fresh, fruity, creamy. Liqueur wines: golden or glossy black, silky, warm, unctuous. Rancio: amber, toasted nuts, spice, dry.",
+    "text": "Clean, bright wines. Whites: greenish yellow to gold; fruity, lightly acidic. Rosés: pale pink to cherry; fresh, light. Reds: violet to tawny red. Sparkling: fruity, lightly acidic. Rancio: amber to tawny; nuts, toast, spice; dry.",
     "cite": [
-     "tarragona-doc:p1"
+     "tarragona-pliego:p7"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Rancio",
-      "text": "Amber with copper glints; toasted nuts, spice; dry, intense."
+      "text": "Amber, red or tawny, old gold as its typical colour; nuts, toast, spice; dry."
      },
      {
       "name": "Mistela, Vimblanc, Moscatel",
-      "text": "Golden for white grapes, glossy black for red; silky, warm, unctuous."
+      "text": "Yellow from white grapes, black-brown from red; alcohol well integrated; Vimblanc lightly sweet."
      }
     ],
     "cite": [
-     "tarragona-doc:p1"
+     "tarragona-pliego:p3",
+     "tarragona-pliego:p7"
     ]
    },
    "producers": {
@@ -891,9 +1154,10 @@
   {
    "id": "montsant",
    "why": {
-    "text": "Mountains shelter the vines from the sea, giving hot days and cool nights. Old Garnacha and Cariñena vines give full-bodied wines.",
+    "text": "Mountains partly shelter the vines from the sea, giving marked day-night swings at ripening. Garnacha, Cariñena and rugged ground give body; old vines give depth.",
     "cite": [
-     "montsant-doc:p7"
+     "montsant-pliego:p11",
+     "montsant-pliego:p13"
     ]
    },
    "grapes": {
@@ -937,10 +1201,10 @@
      "fortified",
      "sweet"
     ],
-    "text": "Mainly reds, with whites and rosados; traditional liqueur wines and natural sweet wines.",
+    "text": "Mainly reds, with whites (also skin-fermented brisado) and rosados; liqueur wines: rancio, white and black mistela, Garnacha, vino dulce natural and Vimblanc.",
     "cite": [
-     "montsant-doc:p1",
-     "montsant-doc:p7"
+     "montsant-pliego:p1",
+     "montsant-pliego:p13"
     ]
    },
    "climate": {
@@ -956,32 +1220,35 @@
     ]
    },
    "tastes": {
-    "text": "Reds: cherry to tile and amber with age; very ripe fruit, balsamic; broad, round, ripe, velvety tannin. Whites: lemon to straw; ripe fruit, honey; silky. Rosés: bright; cherry, strawberry.",
+    "text": "Reds: violet-red to brown; fresh or ripe fruit, dairy, floral, spice, balsamic. Whites: greenish to coppery yellow; fresh or ripe fruit, floral.",
     "cite": [
-     "montsant-doc:p1"
+     "montsant-pliego:p1",
+     "montsant-pliego:p2"
     ]
    },
    "famous": {
     "styles": [
      {
       "name": "Rancio",
-      "text": "Oxidative ageing in wood or sun-and-night; spice, nuts, toast; dry, full."
+      "text": "Oxidative ageing in wood or sun-and-night; spice, nuts, toast, honey; complex, more or less sweet."
      },
      {
       "name": "Mistela",
-      "text": "White: honey colour, citrus touch. Black: orange, nuts, lemon. Sweet."
+      "text": "White: pale yellow to amber, floral, nutty. Black: orange to red-violet, fruity, honey. Sweet."
      },
      {
       "name": "Garnacha",
-      "text": "Overripe grapes, fortified, aged in oak; orange; marmalade, quince; sweet, fresh."
+      "text": "Garnacha grapes, fortified; orange to ruby; floral, fruity, honey, nuts; sweet, balanced."
      },
      {
       "name": "Vimblanc",
-      "text": "From overripe Pansal grape; clean, intense; complex, good finish."
+      "text": "From authorised grapes without skin maceration; orange to ruby; floral, fruity, honey, nuts; sweet, balanced."
      }
     ],
     "cite": [
-     "montsant-doc:p1"
+     "montsant-pliego:p2",
+     "montsant-pliego:p3",
+     "montsant-pliego:p4"
     ]
    },
    "producers": {
@@ -994,7 +1261,7 @@
    "why": {
     "text": "Calcareous soils give the wines a salty note and a long finish. Garnacha Blanca has a long tradition here.",
     "cite": [
-     "terra-alta-doc:p6"
+     "terra-alta-pliego:p11"
     ]
    },
    "grapes": {
@@ -1006,7 +1273,11 @@
       "local": "Macabeo"
      },
      {
-      "local": "Cariñena"
+      "local": "Parellada"
+     },
+     {
+      "local": "Samsó",
+      "grape": "Cariñena"
      },
      {
       "local": "Garnacha Tinta"
@@ -1016,26 +1287,27 @@
      }
     ],
     "cite": [
-     "terra-alta-doc:p6",
-     "terra-alta-wiki"
+     "terra-alta-pliego:p7",
+     "terra-alta-pliego:p10"
     ],
     "others": [
      "Chardonnay",
      "Chenin Blanc",
-     "Garnacha Tintorera",
-     "Merlot",
      "Moscatel de Alejandría",
      "Moscatel Grano Menudo",
-     "Parellada",
      "Pedro Ximénez",
      "Sauvignon Blanco",
-     "Syrah",
-     "Tempranillo",
+     "Viognier",
      "Cabernet Franc",
-     "Cabernet Sauvignon"
+     "Cabernet Sauvignon",
+     "Garnacha Tintorera",
+     "Morenillo",
+     "Merlot",
+     "Syrah",
+     "Ull de Llebre"
     ],
     "othersCite": [
-     "terra-alta-doc"
+     "terra-alta-pliego:p7"
     ]
    },
    "styles": {
@@ -1048,26 +1320,29 @@
     ],
     "text": "Whites (including single-variety Garnacha Blanca), rosados and reds; also sparkling, needle and liqueur wines.",
     "cite": [
-     "terra-alta-doc:p1",
-     "terra-alta-doc:p6"
+     "terra-alta-pliego:p2",
+     "terra-alta-pliego:p3",
+     "terra-alta-pliego:p11"
     ]
    },
    "climate": {
     "text": "Mediterranean and southern in character, with harvests rich in sugar.",
     "cite": [
-     "terra-alta-doc:p6"
+     "terra-alta-pliego:p11"
     ]
    },
    "soil": {
     "text": "Calcareous (chalky) soils.",
     "cite": [
-     "terra-alta-doc:p6"
+     "terra-alta-pliego:p8",
+     "terra-alta-pliego:p11"
     ]
    },
    "tastes": {
     "text": "Whites: yellow with grey to gold hints; complex, rich aromas; salty on the palate.",
     "cite": [
-     "terra-alta-doc:p1"
+     "terra-alta-pliego:p5",
+     "terra-alta-pliego:p6"
     ]
    },
    "famous": {
@@ -1078,7 +1353,7 @@
      },
      {
       "name": "Mistela",
-      "text": "Spirit added to must, mostly Garnacha or Moscatel."
+      "text": "Spirit added to must of white or black grapes; at least 140 g/l of sugar."
      },
      {
       "name": "Garnacha",
@@ -1086,7 +1361,8 @@
      }
     ],
     "cite": [
-     "terra-alta-doc:p1"
+     "terra-alta-pliego:p2",
+     "terra-alta-pliego:p3"
     ]
    },
    "producers": {

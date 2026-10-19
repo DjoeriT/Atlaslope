@@ -1,0 +1,159 @@
+{
+ "id": "terra-alta",
+ "title": "Why Terra Alta tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chalky soils give Terra Alta's white wines a salty taste and a long finish. No wine region in the world has a higher concentration of Garnacha Blanca.",
+  "cite": [
+   "terra-alta-pliego:p10",
+   "terra-alta-pliego:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "highlands",
+   "beat": "place",
+   "title": "Hills between the Ebro and Aragon",
+   "paras": [
+    "Terra Alta lies in the south of Catalonia, between the river Ebro and the border with Aragon. It takes in the 12 municipalities of the comarca (county) of the same name, among them Gandesa and Horta de Sant Joan.",
+    "The land is inland but close to the Mediterranean. Pre-coastal limestone ranges rise here: the Puertos de Horta and the sierras of Pàndols and Cavalls. The small rivers are the Algars and the Canaletes. Forests of holm oak and white pine grow between the farms.",
+    "Above all, the fields are dyed with the three classic Mediterranean crops: almond, vine and olive. The land runs from 250 m to 1,000 m above the sea, and the vines grow at about 350 to 550 m. Three landscape units hold vines: the Llano (plain), the Meseta (plateau) and the Valles (valleys). The landscape is subject to strong erosion. The terrace is the most common growing unit, often set between dry-stone walls, and both help stop the soil washing away."
+   ],
+   "cite": [
+    "terra-alta-pliego:p7",
+    "terra-alta-pliego:p8",
+    "terra-alta-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "The whole comarca",
+     "place": "terra-alta",
+     "caption": "Twelve municipalities in the south of Catalonia, between the Ebro and the Aragon border.",
+     "cite": [
+      "terra-alta-pliego:p7"
+     ]
+    },
+    {
+     "label": "Puertos de Horta",
+     "point": [
+      0.3,
+      40.93
+     ],
+     "zoom": 10,
+     "caption": "One of the pre-coastal limestone ranges of the zone.",
+     "cite": [
+      "terra-alta-pliego:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dry-mediterranean",
+   "beat": "weather",
+   "title": "Dry Mediterranean, with two winds",
+   "paras": [
+    "The climate is dry Mediterranean. The yearly average is 14.6 ºC at both Batea and Horta de Sant Joan. Rain is 485 mm a year at Batea and 592 mm at Horta, with May the wettest month. July averages 23.8 to 23.9 ºC. Winters are cold, which points to some continental influence outside the vine's growing season.",
+    "Two winds shape the year. The Cierzo is a dry wind from the northwest that dominates from September to June. From June to August the Garbinada takes over: sea breezes from the south and southeast.",
+    "In general this microclimate is not favourable to the main vine pests, such as mildew and bunch rot. Growers use few synthetic pesticides.",
+    "The natural conditions make it possible to pick very ripe or overripe grapes. These harvests are very rich in sugar and well suited to sweet and liqueur wines."
+   ],
+   "cite": [
+    "terra-alta-pliego:p8",
+    "terra-alta-pliego:p9",
+    "terra-alta-pliego:p10",
+    "terra-alta-pliego:p11"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Chalk, slopes and salt",
+   "paras": [
+    "Slope and depth are the main factors behind the variety of soils. Vines grow on costeros (slopes of 10% or more), on the llano (under 10%) and on bancales (terraces, with little or no slope). The deepest soils are on the bancales.",
+    "In general the soils have loamy textures, hold a medium amount of water, and are poor in organic matter. They are rich in calcium carbonate and active limestone. Fertility runs from low to moderate. Among the soil profiles, those known locally as Panal stand out: they are very balanced and lower in limestone.",
+    "The salty taste and notable length of the white wines come from the chalky nature of the soils. The nature of the soils, together with moderate yields, gives the wines concentrated aromas and flavours."
+   ],
+   "cite": [
+    "terra-alta-pliego:p8",
+    "terra-alta-pliego:p11"
+   ]
+  },
+  {
+   "id": "garnacha-land",
+   "beat": "rules",
+   "title": "Garnacha, white and black",
+   "paras": [
+    "The Garnachas lead here. Garnacha Blanca, Garnacha Tinta and Garnacha Peluda are the oldest and most planted grapes. Together with Macabeo, Parellada and Samsó (Carignan), they cover three quarters of the vineyard. A record from 1647 already mentions a plantation of \"Vernatxa\" in Gandesa. Other grapes are allowed too, among them Chardonnay, Merlot, Syrah and the Cabernets.",
+    "The clearest witness to the local wine culture is white wine. Whites made only from Garnacha Blanca are yellow with grey to gold tints, with a complex, rich perfume, plenty of body and a long finish. Skin contact stands out in the making of modern whites. It is a legacy of the old \"brisats\", whites fermented from crushed whole grapes. Rosado and red are made too, and red became important only from the 1990s.",
+    "The very ripe grapes also make sweet wines and liqueur wines, which are fortified with wine alcohol. Mistela is white or black grape must or macerated grapes with wine alcohol added, with at least 140 g/l of sugar. Vino dulce natural is partly fermented, then stopped with alcohol, with at least 20 g/l. Vino garnacha comes from overripe grapes and is aged in oak barrels. Vino rancio is aged in a markedly oxidative way, out in the sun and the night air, in glass or wood. It must spend at least 1 year in oak, and it has an old-gold colour.",
+    "Sparkling wine is made by the traditional method, with a second fermentation in the bottle. Needle wine (vino de aguja) has a gentler fizz, at no more than 2.5 bar. Yields are capped at 10,000 kg per hectare for white grapes and 8,000 kg for red."
+   ],
+   "cite": [
+    "terra-alta-pliego:p2",
+    "terra-alta-pliego:p3",
+    "terra-alta-pliego:p5",
+    "terra-alta-pliego:p6",
+    "terra-alta-pliego:p7",
+    "terra-alta-pliego:p9",
+    "terra-alta-pliego:p10"
+   ],
+   "fly": [
+    {
+     "label": "Gandesa",
+     "point": [
+      0.43,
+      41.05
+     ],
+     "zoom": 11,
+     "caption": "The 1647 record of a \"Vernatxa\" plantation was in the municipality of Gandesa.",
+     "cite": [
+      "terra-alta-pliego:p10"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "Aged for 24 months for reds and 18 months for whites, with at least 6 months in oak barrels of up to 330 litres.",
+    "cite": [
+     "terra-alta-pliego:p3"
+    ]
+   },
+   {
+    "term": "Reserva",
+    "text": "Aged for 36 months for reds (at least 12 in barrel and 24 in bottle) and 24 months for whites (at least 6 in barrel and 18 in bottle).",
+    "cite": [
+     "terra-alta-pliego:p3"
+    ]
+   },
+   {
+    "term": "Gran Reserva",
+    "text": "Aged for 60 months for reds (at least 24 in barrel and 36 in bottle) and 48 months for whites (at least 6 in barrel and 42 in bottle).",
+    "cite": [
+     "terra-alta-pliego:p4"
+    ]
+   },
+   {
+    "term": "Barrica",
+    "text": "Aged in wood containers of up to 600 litres, with the time given in months and years.",
+    "cite": [
+     "terra-alta-pliego:p3"
+    ]
+   },
+   {
+    "term": "Roble",
+    "text": "Aged in oak containers of up to 600 litres, with the time given in months and years.",
+    "cite": [
+     "terra-alta-pliego:p3"
+    ]
+   }
+  ],
+  "cite": [
+   "terra-alta-pliego:p3",
+   "terra-alta-pliego:p4"
+  ]
+ }
+}

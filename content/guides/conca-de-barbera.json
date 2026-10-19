@@ -1,0 +1,162 @@
+{
+ "id": "conca-de-barbera",
+ "title": "Why Conca de Barberà tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Conca de Barberà sits between the mild coast and the continental inland, and its days and nights differ markedly in temperature. Its native grape, Trepat, is grown almost only here and gives rosados and reds a character all their own.",
+  "cite": [
+   "conca-de-barbera-pliego:p10",
+   "conca-de-barbera-pliego:p13",
+   "conca-de-barbera-pliego:p14"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "basin",
+   "beat": "place",
+   "title": "A basin ringed by mountains",
+   "paras": [
+    "Conca means basin. This one was dug into the soft rocks on the eastern edge of the Ebro depression. The Francolí and its tributary the Anguera carved it out.",
+    "Mountains close it in on every side. The Miramar and Cogulló ranges lie to the east, the Tallat and Vilobí ranges to the west, the Montclar, Codony and Comalats ranges to the north, and the Prades mountains to the south."
+   ],
+   "cite": [
+    "conca-de-barbera-pliego:p11"
+   ],
+   "fly": [
+    {
+     "label": "L'Espluga de Francolí",
+     "point": [
+      1.1023,
+      41.3965
+     ],
+     "zoom": 10,
+     "caption": "The Francolí and its tributary the Anguera carved out the basin.",
+     "cite": [
+      "conca-de-barbera-pliego:p11"
+     ]
+    },
+    {
+     "label": "Poblet monastery",
+     "point": [
+      1.0824,
+      41.3812
+     ],
+     "zoom": 11,
+     "caption": "From the 12th century the Cistercian monks of Poblet pushed vine growing and winemaking, and passed their lessons to the farmers.",
+     "cite": [
+      "conca-de-barbera-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Between the coast and the inland",
+   "paras": [
+    "The climate is Mediterranean, in transition between the mild coastal districts of Tarragona and the continental districts of Lleida. The low Miramar range and the Riba pass let some humid, mild coastal wind in.",
+    "Even so, sharp winter temperature inversions make frost worse in the low parts. As a result, temperatures differ markedly between day and night. Winters are cold and summers are not too hot.",
+    "Between 450 and 550 mm of rain falls a year. Most falls in autumn, then spring, then summer, and least in winter. The yearly average temperature is 13 to 14ºC, with summer highs up to 35ºC and winter lows below 0ºC. Relief and altitude make microclimates in places.",
+    "This climate favours light white wines with a fine fruity aroma and moderate alcohol. Rosados are light and fruity, and fresh from their moderate acidity. Young reds are soft, light and tasty. Crianza reds are fuller, with great aroma complexity and good persistence."
+   ],
+   "cite": [
+    "conca-de-barbera-pliego:p10",
+    "conca-de-barbera-pliego:p11",
+    "conca-de-barbera-pliego:p13",
+    "conca-de-barbera-pliego:p14"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, pebbles and slate",
+   "paras": [
+    "Three kinds of ground shape the wines. The most typical is clay, marl and limestone conglomerate, earth-coloured and poor in organic matter, in the centre of the basin. It gives body and structure to whites, rosados, reds, sparkling and needle wines.",
+    "River terraces full of pebbles lie on the floor of the basin and deep in the Francolí and Anguera valleys. They make whites, rosados, sparkling and needle wines softer.",
+    "In the far south-east, on the slopes of the Prades mountains, the soil is slate with plenty of licorella, the local name for this slate. It gives more colour and structure, above all to reds and liqueur wines."
+   ],
+   "cite": [
+    "conca-de-barbera-pliego:p11",
+    "conca-de-barbera-pliego:p14"
+   ],
+   "fly": [
+    {
+     "label": "Prades mountains",
+     "point": [
+      1.0042,
+      41.326
+     ],
+     "zoom": 9.5,
+     "caption": "Slate with licorella on the slopes of the Prades mountains gives more colour and structure to reds and liqueur wines.",
+     "cite": [
+      "conca-de-barbera-pliego:p11",
+      "conca-de-barbera-pliego:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trepat",
+   "beat": "rules",
+   "title": "Trepat and the wines of the Conca",
+   "paras": [
+    "Trepat is native to the Conca. It makes rosados and reds, sparkling wines and rosado needle wines with a character typical of the zone. It was grafted mostly here after phylloxera and vanished from the other districts where it once grew, which may partly explain why it is almost exclusive to the Conca.",
+    "Whites use Macabeo and Parellada among others. Reds also use Garnacha tinta and Ull de llebre.",
+    "The wines come as white, brisado (a white whose must is macerated and then fermented, wholly or partly, with its skins), rosado and red. There are also quality sparkling wines by the traditional or the ancestral method. Needle wines (vino de aguja) hold 1 to 2.5 bar of pressure from their own carbon dioxide.",
+    "Liqueur wines (vino de licor) reach 15 to 22% alcohol and come as sweet natural wine (vino dulce natural), rancio and mistela. Sweet natural wine is made from musts above 250 g/l of sugar, part-fermented and fortified. Rancio ages oxidatively in wooden vessels. Mistela is must from white and red grapes fortified with wine alcohol.",
+    "Yields are capped at 12,000 kg of grapes per hectare."
+   ],
+   "cite": [
+    "conca-de-barbera-pliego:p1",
+    "conca-de-barbera-pliego:p3",
+    "conca-de-barbera-pliego:p4",
+    "conca-de-barbera-pliego:p5",
+    "conca-de-barbera-pliego:p9",
+    "conca-de-barbera-pliego:p10",
+    "conca-de-barbera-pliego:p13"
+   ],
+   "fly": [
+    {
+     "label": "Barberà de la Conca",
+     "point": [
+      1.2288,
+      41.4111
+     ],
+     "zoom": 11,
+     "caption": "In 1903 the first purpose-built cooperative cellar in Spain went up here, after the farmers of Barberà founded a union to make wine together in 1894.",
+     "cite": [
+      "conca-de-barbera-pliego:p12"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "Reds age 24 months with at least 6 months in oak barrels of up to 330 litres. Whites and rosados age at least 18 months, also with at least 6 months in oak."
+   },
+   {
+    "term": "Reserva",
+    "text": "Reds age at least 36 months, with at least 12 months in oak barrels of up to 330 litres and 24 months in bottle. Whites and rosados age at least 24 months, with at least 6 months in oak and 18 months in bottle."
+   },
+   {
+    "term": "Gran reserva",
+    "text": "Reds age at least 60 months, with at least 24 months in oak barrels of up to 330 litres and at least 36 months in bottle."
+   },
+   {
+    "term": "Vino nuevo",
+    "text": "Sold only with the harvest year on the label, and bottled during the campaign or from 11 November of the harvest year."
+   },
+   {
+    "term": "Vino joven",
+    "text": "Sold only with the harvest year on the label, and bottled during the campaign or from 20 December of the harvest year."
+   }
+  ],
+  "cite": [
+   "conca-de-barbera-pliego:p6",
+   "conca-de-barbera-pliego:p7"
+  ]
+ }
+}

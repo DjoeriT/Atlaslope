@@ -1,0 +1,183 @@
+{
+ "id": "catalunya",
+ "title": "Why Catalunya tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Catalunya gets more than 2,500 hours of sun a year. That strong sunshine favours deep colours in its wines, especially the reds.",
+  "cite": [
+   "catalunya-pliego:p15",
+   "catalunya-pliego:p16"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "coast-and-ranges",
+   "beat": "place",
+   "title": "From the sea to almost 800 m",
+   "paras": [
+    "Catalunya has 580 km of Mediterranean coast and the Pyrenees to the north. Between them the land falls into three units. The Pyrenees are one. The Coastal Ranges, where heights and plains alternate parallel to the sea, are the second. The Central Depression, the eastern part of the Ebro valley, is the third.",
+    "Vines grow mainly in the last two. They run from sea level up to almost 800 m. The protected area is made up of the vineyard parcels in a listed set of municipalities and areas of Catalunya."
+   ],
+   "cite": [
+    "catalunya-pliego:p5",
+    "catalunya-pliego:p16"
+   ],
+   "fly": [
+    {
+     "label": "The Pyrenees",
+     "point": [
+      0.4203,
+      42.6687
+     ],
+     "zoom": 8,
+     "caption": "The mountain chain in the north of Catalunya, linking the Iberian Peninsula to the rest of Europe.",
+     "cite": [
+      "catalunya-pliego:p16"
+     ]
+    },
+    {
+     "label": "The Ebro valley",
+     "point": [
+      0.62,
+      41.62
+     ],
+     "zoom": 8,
+     "caption": "The Central Depression makes up the eastern part of the Ebro valley, one of the two units where vines mainly grow.",
+     "cite": [
+      "catalunya-pliego:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun-and-sea",
+   "beat": "weather",
+   "title": "Sunny, with a sea breeze on the coast",
+   "paras": [
+    "The climate is Mediterranean overall. Winters are dry and mild, and summers are not too hot. Spring and autumn are usually the unsettled, rainy seasons. The average temperature is about 14-15 ºC, and rain runs from 350 mm a year in the driest areas to over 600 mm in the wettest.",
+    "Near the coast, sea breezes (marinadas) temper the sun's heating. That heating grows stronger further inland. The coast is mild, with temperatures rising from north to south as rainfall falls. Inland, away from the sea, the climate is continental Mediterranean, with cold winters and very hot summers.",
+    "The vine's growing season lasts 245-260 days. It starts between 15 and 31 March and ends between 15 and 30 November. On the Winkler scale the zone scores 1854 ºC, which makes it region III.",
+    "The marked Mediterranean influence favours soft, dense wines with relatively low acidity and high alcohol. Their aromas, mainly in the reds, are heightened by ageing. The strong sun also favours deep colours, especially in reds.",
+    "Lightly sparkling wines are the exception. Growers often pick the grapes earlier to get less alcohol and more acidity."
+   ],
+   "cite": [
+    "catalunya-pliego:p15",
+    "catalunya-pliego:p16",
+    "catalunya-pliego:p18",
+    "catalunya-pliego:p19"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Calcareous ground, poor in organic matter",
+   "paras": [
+    "The soils come mainly from Miocene sediments. They are calcareous and low in organic matter. Near rivers the soil is Quaternary alluvium.",
+    "Vines usually take the least fertile land, because they cope with harsh conditions better than other crops. That lowers the potential yield but helps quality: the wines end up more concentrated in colour, in aroma and in flavour.",
+    "Silt and clay generally dominate the soil texture. They give body and structure to whites and reds alike, and more colour to the reds. For lightly sparkling wine (vino de aguja), the calcareous soils give bright, aromatic wines of great finesse."
+   ],
+   "cite": [
+    "catalunya-pliego:p16",
+    "catalunya-pliego:p17",
+    "catalunya-pliego:p19"
+   ]
+  },
+  {
+   "id": "styles",
+   "beat": "rules",
+   "title": "A wide range of grapes and styles",
+   "paras": [
+    "Catalunya allows a very long list of grapes. Xarel·lo and Parellada are among the recommended whites. Garnacha tinta and Trepat are among the recommended reds. A few reds, Trepat among them, are allowed the higher white-grape yield. That is 12,000 kg of grapes per hectare, against 10,000 kg for other reds.",
+    "The wines come as white, rosado (rosé) or red. A low-alcohol version can carry the word xispejant. Fermentation is stopped early for it, and the wine has at least 4.5% vol alcohol. Whites can run from pale greenish yellow to deep gold, and reds from cherry to pale ruby, with young ones light and oaked ones rounder.",
+    "By sugar, a dry wine has at most 4 g/l and a sweet one more than 45 g/l. Semi-dry and semi-sweet wines sit between, with the line at 12 g/l.",
+    "Vino de aguja is lightly sparkling, with 1 to 2.5 bar of pressure from its own carbon dioxide. It tingles on the tongue and tastes fresh and balanced. The history of sparkling wine here goes back to the first half of the 19th century.",
+    "Vino de licor is a liqueur wine of 15 to 22% vol. On the nose it is fruitier if unoaked and nutty with ageing. In the mouth it is warm and unctuous, with a long finish. Its colour can reach amber with age. Catalans have long served it after meals as \"postres de músic\" (musician's dessert), with nuts and dried fruit.",
+    "Modernista architects, backed by the Catalan regional body (Mancomunidad Catalana) created in 1913, built cooperative cellars in towns such as Pinell de Brai and Gandesa. The writer Àngel Guimerà called them \"cathedrals of wine\"."
+   ],
+   "cite": [
+    "catalunya-pliego:p1",
+    "catalunya-pliego:p2",
+    "catalunya-pliego:p3",
+    "catalunya-pliego:p4",
+    "catalunya-pliego:p14",
+    "catalunya-pliego:p15",
+    "catalunya-pliego:p17",
+    "catalunya-pliego:p18",
+    "catalunya-pliego:p19",
+    "catalunya-pliego:p20"
+   ],
+   "fly": [
+    {
+     "label": "Pinell de Brai",
+     "point": [
+      0.5152,
+      41.0171
+     ],
+     "zoom": 11,
+     "caption": "The village whose cooperative cellar is one of those Guimerà called \"cathedrals of wine\".",
+     "cite": [
+      "catalunya-pliego:p17",
+      "catalunya-pliego:p18"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "A red needs 2 years in all, with at least 6 months in oak barrels of up to 330 l. A white or rosado needs 18 months in all, with at least 6 months in the same barrels.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Reserva",
+    "text": "A red needs at least 3 years, with 12 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 2 years, with 6 months or more in barrel.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Gran reserva",
+    "text": "A red needs at least 5 years, with 24 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 4 years, with 6 months or more in barrel.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Vino nuevo",
+    "text": "It must show the vintage year and be bottled in the harvest year or from 11 November of that year.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Vino joven",
+    "text": "It must show the vintage year and be bottled in the harvest year or from 20 December of that year.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Barrica",
+    "text": "The label must give the time in months or years and the type of wooden container, which holds up to 600 l.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Catalunya Vinyeró",
+    "text": "A grower-winemaker can use it only when all the wines they make come only from grapes from their own vineyards.",
+    "cite": [
+     "catalunya-pliego:p20"
+    ]
+   }
+  ],
+  "cite": [
+   "catalunya-pliego:p1",
+   "catalunya-pliego:p20"
+  ]
+ }
+}

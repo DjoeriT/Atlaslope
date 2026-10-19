@@ -1,0 +1,153 @@
+{
+ "id": "costers-del-segre",
+ "title": "Why Costers del Segre tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Temperatures here can swing by up to 25ºC, especially while the grapes ripen. Cold nights in that season give wines of high acidity and intense flavour.",
+  "cite": [
+   "costers-del-segre-pliego:p9",
+   "costers-del-segre-pliego:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "segre",
+   "beat": "place",
+   "title": "A river between the Pyrenees and the Ebro",
+   "paras": [
+    "Costers del Segre lies in the far west of Catalonia, in the province of Lleida. It covers about 4,000 ha across 71 municipalities in 8 of the 14 comarcas of Lleida.",
+    "The zone takes in part of the central Catalan depression and the Pre-Pyrenees, and forms the basin of the river Segre. It skirts the Montsec range. The Pyrenees close it in to the north, and the sierra de Prades and the Ebro to the south.",
+    "The big central plain was a salt lake millions of years ago. Once it dried, rivers coming down from the Pyrenees dragged their sediments there and shaped slopes and plateaus. The Segre runs from north to south, from the Pyrenees to Lleida, and brings moderation to the continental climates of the central plain.",
+    "The zone's towns are grouped into 7 smaller geographic units. Artesa de Segre and Pallars are the most northern, with the highest vines and a Pyrenean influence. Raimat, in the far east, has gentle relief. Segrià, on the plain of Lleida, is dry-farming land. Les Garrigues and the Valls del Riucorb are arid. Urgell completes the seven."
+   ],
+   "cite": [
+    "costers-del-segre-pliego:p6",
+    "costers-del-segre-pliego:p8",
+    "costers-del-segre-pliego:p9"
+   ],
+   "fly": [
+    {
+     "label": "Sierra del Montsec",
+     "point": [
+      0.85,
+      42.0
+     ],
+     "zoom": 9.5,
+     "caption": "The range the Segre basin skirts, with the Pyrenees closing the zone in to the north.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    },
+    {
+     "label": "Raimat",
+     "point": [
+      0.4782,
+      41.6783
+     ],
+     "zoom": 10,
+     "caption": "Raimat, in the far east of the zone, has gentle relief and a continental climate.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry, sunny and cold at night",
+   "paras": [
+    "The interior climate is dry and far from the sea's influence. Sunshine is high, at an average of 2,800 hours a year. Rain is scarce: on average 240 mm a year in Lleida and 450 mm in the rest of the zone. Winter fogs leave a lasting humidity. Winters are cold and summers hot.",
+    "The gap between hot and cold can reach 25ºC, by season and by day, especially while the grapes ripen. It helps raise the polyphenols and gives very aromatic, structured wines.",
+    "Nights are unusually cool through ripening. Minimums of 15ºC are common throughout it, and 2 to 10ºC at the end. The wines come out high in acidity and intense in flavour.",
+    "The low rain puts the vines under some water stress, which favours concentrated colour, aroma and flavour. Dry winds and low humidity hold back fungal disease. The grapes can ripen gradually up to the best point for harvest."
+   ],
+   "cite": [
+    "costers-del-segre-pliego:p9",
+    "costers-del-segre-pliego:p10",
+    "costers-del-segre-pliego:p11"
+   ],
+   "fly": [
+    {
+     "label": "Lleida, the driest spot",
+     "point": [
+      0.62,
+      41.62
+     ],
+     "zoom": 9.5,
+     "caption": "Lleida gets about 240 mm of rain a year, against 450 mm in the rest of the zone.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Calcareous ground, poor in organic matter",
+   "paras": [
+    "The vineyards are planted between 200 and 1,100 m above sea level. The soils are calcareous, covered with sand and/or clay, and poor in organic matter.",
+    "These soils, together with the climate, favour ideal ripening. For wine from raisined grapes, dry winds and a water deficit work together with the good drainage of the calcareous soils. They give healthy grapes high in sugar and let them dry in low humidity."
+   ],
+   "cite": [
+    "costers-del-segre-pliego:p9",
+    "costers-del-segre-pliego:p10",
+    "costers-del-segre-pliego:p12"
+   ],
+   "fly": [
+    {
+     "label": "Pallars, the high Pyrenean vines",
+     "point": [
+      0.89,
+      42.17
+     ],
+     "zoom": 9.5,
+     "caption": "The northern units of Pallars and Artesa de Segre have the highest vines, with Pyrenean influence.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Many grapes, many kinds of wine",
+   "paras": [
+    "The recommended whites are Macabeo, Xarelo, Parellada and Garnacha Blanca. The recommended reds are Garnacha Tinta, Ull de Llebre (Tempranillo), Carinyena and Garnacha Tintorera. A long list of other grapes is allowed, from Chardonnay to Cabernet Sauvignon.",
+    "This was the first place in Catalonia to plant Cabernet Sauvignon, Merlot and Chardonnay, next to the native grapes. It also took up Californian winemaking techniques. The climate keeps the traditional grapes and also suits the foreign ones brought in after phylloxera.",
+    "Still wine may be white or red, and also rosado (rosé). Five more kinds are protected, each set out below.",
+    "Sparkling wine comes from a first or second fermentation and holds at least 3 bar of pressure. By the traditional method it has been made in some wineries since the early 20th century. The temperature swing keeps the grapes' acids, which is key for sparkling wine. White base wines from the units with gentler relief have fruity aromas. In the more mountainous areas, altitude gives a milder continental climate, with the aromatic freshness of cool ripening.",
+    "Vino de licor is a fortified wine: wine or grape must is blended with alcohol to reach between 15 and 22% vol. Hot days and little autumn rain allow late harvests of grapes very rich in sugar. Vino de aguja is a lightly sparkling wine, with 1 to 2.5 bar of pressure from its own carbon dioxide. Its high acidity and intense aromas come from the ripening swing, which can sometimes pass 25ºC.",
+    "For wine from overripe grapes, the large summer swing and low rain give grapes high in sugar. Dry westerly winds protect the vines from Botrytis, a fungus, so the harvest can wait. Wine from raisined grapes uses grapes dried in the sun or in the shade. Dry winds and a water deficit make that possible, helped by the well-drained calcareous soils.",
+    "Yields are capped at 16,000 kg per hectare, which is 120 hectolitres, for white and red alike. Pressing may give no more than 75 litres of wine per 100 kg of grapes."
+   ],
+   "cite": [
+    "costers-del-segre-pliego:p1",
+    "costers-del-segre-pliego:p2",
+    "costers-del-segre-pliego:p3",
+    "costers-del-segre-pliego:p4",
+    "costers-del-segre-pliego:p6",
+    "costers-del-segre-pliego:p8",
+    "costers-del-segre-pliego:p10",
+    "costers-del-segre-pliego:p11",
+    "costers-del-segre-pliego:p12"
+   ],
+   "fly": [
+    {
+     "label": "Poblet monastery",
+     "point": [
+      1.0833,
+      41.3828
+     ],
+     "zoom": 10,
+     "caption": "The monastery of Poblet, founded in 1151, played a key part in the history of vines in the lands of Lleida.",
+     "cite": [
+      "costers-del-segre-pliego:p10"
+     ]
+    }
+   ]
+  }
+ ]
+}

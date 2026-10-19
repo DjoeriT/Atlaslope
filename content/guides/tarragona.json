@@ -1,0 +1,145 @@
+{
+ "id": "tarragona",
+ "title": "Why Tarragona tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A coastal plain and an inland river valley share one denomination, and their wines are clearly different. Near the sea the whites are very soft and balanced, with great aromatic power. Inland, where water is scarcer, the grapes are rich in sugar and suit liqueur wines.",
+  "cite": [
+   "tarragona-pliego:p22",
+   "tarragona-pliego:p23",
+   "tarragona-pliego:p25"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A coast and a river",
+   "paras": [
+    "The denomination covers the Catalan vineyards of the Camp de Tarragona districts and part of the Ribera d'Ebre district. One municipality, Masllorenç, belongs to the Baix Penedès.",
+    "The coastal area is flat to gently rolling and open to the sea. It runs from the coast north to Valls and west to the fertile land around Reus and Mont-roig del Camp. Joan Miró painted it in 1919-22, inspired by his family's house in Mont-roig del Camp.",
+    "The other area is the Ribera d'Ebre. Vines grow in the valley between Vinebre and the Sierra de Cardó, on chalky, stony slopes or on alluvial land beside the river. That river carries more water than any other in the Iberian Peninsula."
+   ],
+   "cite": [
+    "tarragona-pliego:p20",
+    "tarragona-pliego:p25"
+   ],
+   "fly": [
+    {
+     "label": "Mont-roig del Camp, Miró's plain",
+     "point": [
+      0.96,
+      41.08
+     ],
+     "zoom": 10,
+     "caption": "The open plain near Mont-roig del Camp that Joan Miró painted in 1919-22.",
+     "cite": [
+      "tarragona-pliego:p25"
+     ]
+    },
+    {
+     "label": "Vinebre, the Ebro valley",
+     "point": [
+      0.59,
+      41.18
+     ],
+     "zoom": 10,
+     "caption": "Vines grow in the Ribera d'Ebre valley, between Vinebre and the Sierra de Cardó, on stony slopes or on alluvial land beside the river.",
+     "cite": [
+      "tarragona-pliego:p25"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "A mountain range splits the weather",
+   "paras": [
+    "The Cordillera Prelitoral, the range just inland of the coast, breaks up any uniform climate and creates many microclimates. The main split is between a coastal sector under maritime influence and an inland sector under continental influence.",
+    "The whole Camp de Tarragona has a Mediterranean climate. Even so, the relief and the distance from the sea change how the weather behaves from place to place.",
+    "On the northern and western side of the range, continental air currents make temperatures more extreme."
+   ],
+   "cite": [
+    "tarragona-pliego:p21",
+    "tarragona-pliego:p22"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Poor, chalky ground",
+   "paras": [
+    "In the Camp de Tarragona many vineyard soils have low fertility, limited by low phosphorus. Potassium is generally good, and it helps the vine's sugar metabolism and so the alcohol.",
+    "Clay parent material comes with a chalky crust. That crust stops planting in the areas most exposed to erosion, so vines sit in the hollows, which gather soil washed in from the sides.",
+    "In the Ribera d'Ebre the vines grow on terraces. The soils come from chalky materials, clays and marls among them. Water shortage is greater here, which would explain a smaller harvest per hectare and a higher alcohol level inland.",
+    "Across the denomination, active lime runs from 2.5% to 27.75% and the pH from 7.11 to 8.63, so the soils are slightly alkaline. Organic matter is relatively low, at 0.7% to 1.3%, and loam is the main texture."
+   ],
+   "cite": [
+    "tarragona-pliego:p20",
+    "tarragona-pliego:p21"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Tivissa",
+     "point": [
+      0.7,
+      41.03
+     ],
+     "zoom": 10,
+     "caption": "The slopes of the Sierra de Tivissa shed glacis, gentle sloping fans, that run mainly east to west.",
+     "cite": [
+      "tarragona-pliego:p21"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "From soft whites to liqueur wines",
+   "paras": [
+    "Tarragona makes white, rosado (rosé) and red wine. It also makes brisado, a wine from white grapes fermented on their skins, and quality sparkling wine. Needle wine, a lightly fizzy style, and the liqueur wines complete the range.",
+    "White grapes include Macabeo and Xarel·lo. Red grapes include Garnacha and Samsó, also called Cariñena. In the Ribera d'Ebre the reds join the body and colour of Cariñena with the richness of Garnacha.",
+    "Near the sea, the whites, whether dry, sparkling or needle, are very soft and balanced, with great aromatic power. The reds are firm and aromatic. The rosados are a very bright cherry colour. In the Ribera d'Ebre the whites are very brilliant.",
+    "Inland grapes especially suit the liqueur wines. Water shortage there gives grapes with a lot of sugar. Mistela is made by adding wine alcohol to must, and it ends with more than 100 g/l of sugar. Moscatel is made from Moscatel de Alejandría and Moscatel Frontignan. Rancio ages in contact with air, and its characteristic colour is old gold. These three finish between 15% and 22% alcohol.",
+    "Garnacha, from Garnacha grapes, and Clásico are liqueur wines in the same 15% to 22% range. Clásico has more than 50 g/l of residual sugar. Vino de Misa, the altar wine, finishes at 15% to 20%. Every liqueur wine has wine alcohol added, so all of them are fortified.",
+    "Vimblanc is a sweet wine from grapes dried in the sun and night air on tables. No alcohol is added. The sugar is so concentrated that the yeasts stop fermenting early.",
+    "Sparkling wine is made two ways. The traditional method ferments a second time in the bottle and spends at least nine months in the cellar. The ancestral method finishes its one fermentation in the bottle, and the pink version uses Trepat."
+   ],
+   "cite": [
+    "tarragona-pliego:p1",
+    "tarragona-pliego:p2",
+    "tarragona-pliego:p3",
+    "tarragona-pliego:p4",
+    "tarragona-pliego:p7",
+    "tarragona-pliego:p12",
+    "tarragona-pliego:p14",
+    "tarragona-pliego:p19",
+    "tarragona-pliego:p20",
+    "tarragona-pliego:p22",
+    "tarragona-pliego:p23"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza",
+    "text": "A red has 2 years of ageing in total, with at least 6 months in oak barrels of up to 330 l. A white or rosado has 18 months, with at least 6 in such barrels."
+   },
+   {
+    "term": "Reserva",
+    "text": "A red has at least 3 years of ageing, with at least 12 months in oak barrels of up to 330 l and the rest in bottle. A white or rosado has at least 2 years, with at least 6 months in such barrels."
+   },
+   {
+    "term": "Gran Reserva",
+    "text": "A red has at least 5 years of ageing, with at least 24 months in oak barrels of up to 330 l and the rest in bottle. A white or rosado has at least 4 years, with at least 6 months in such barrels."
+   }
+  ],
+  "cite": [
+   "tarragona-pliego:p13",
+   "tarragona-pliego:p14"
+  ]
+ }
+}
