@@ -106,6 +106,17 @@ describe('the Guides page', () => {
     expect(out).toContain('<h3>In short</h3>');
     expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · resized/);
   });
+  it('crops each card photo square around its focus, and only keeps focus for photos that exist', () => {
+    const focus = JSON.parse(readFileSync('src/home/photoFocus.json', 'utf8')) as Record<string, string>;
+    const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos as Record<string, unknown>;
+    expect(Object.keys(focus).filter((k) => !(k in photos))).toEqual([]);
+    const out = fillGuideList(guidesHtml, guideRows());
+    for (const [k, f] of Object.entries(focus)) {
+      const card = out.match(new RegExp(`<a class="gcard-c"[^>]*><span class="ct"><img src="[^"]*/${k}\\.webp"[^>]*>`));
+      if (card) expect(card[0]).toContain(`style="object-position:${f}"`);
+    }
+    expect(out).toContain('style="object-position:');
+  });
   it('gives a guide with no photo a typographic card, and a region with no tile no tile', () => {
     const empty = mkdtempSync(join(tmpdir(), 'public-'));
     const list = guideRows({ publicDir: empty });

@@ -63,9 +63,10 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   live-satellite map mock goes to his Mac (`~/Developer/Atlaslope/mocks/`, git-ignored) as that one page with its file:/// path.
 - **Mock language:** NO drawn illustrations, icons, diagrams or fake geography. Richer = more real product and photos, same calm. Prefer
   visuals over lines of text.
-- **Photos hard rule:** never force photos into fixed or square tiles (no `object-fit: cover`); each keeps its own aspect ratio, trim only
-  bystanders at edges, never cut a face, glass or bottle; check each tile against the original. Credits: no text on photos, no tooltips, one
-  always-visible "Photos: Name · licence · resized" line per set.
+- **Photos hard rule:** Guides page cards are square crops (owner 19 Oct 2026, release 54: mixed shapes "not great UX"); each crop
+  sets its own focus and is checked against the original: never cut a face, glass or bottle, trim only bystanders. Elsewhere photos keep
+  their own ratio unless a mock he approved says otherwise. Credits: no text on photos, no tooltips, one always-visible
+  "Photos: Name · licence · resized" line per set.
 - **Style:** NO dark mode; black band + champagne (#E9D8B4 family), white page, 6px corners, no pills. Copy: one idea per line, no
   "X, Y and Z" lists. Users see "AtlaSlope"; code and URLs "atlaslope".
 - **Vocabulary:** "Study" not "Quiz" (code folder `src/quiz` stays). The guide = the whole place page; "Terroir" = one section; never "Terroir

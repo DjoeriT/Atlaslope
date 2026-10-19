@@ -1,4 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import photoFocusFile from './photoFocus.json';
 import photoSizesFile from '../../data/photo-sizes.json';
 import { grapeLabel } from '../facts/format';
 import { sentences } from '../pages/sentence';
@@ -111,17 +112,20 @@ const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
 const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</figcaption>';
 
 // A photo no wider than 800 px has no 800 copy, only its full file (release 47: Binissalem's photo 404'd on the Guides page)
-const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean) => {
+// Square cards crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026)
+const photoFocus = photoFocusFile as Record<string, string>;
+
+const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean, square = false) => {
   const w = photoSizes.photos[key]?.w ?? 1200;
   const set: [string, number][] = [480, 800].filter((s) => s < w).map((s) => [`../photos/${s}/${key}.webp`, s]);
   if (w <= 800) set.push([`../photos/${key}.webp`, w]);
   const src = set[set.length - 1][0];
-  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}" loading="lazy" />`;
+  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && photoFocus[key] ? ` style="object-position:${photoFocus[key]}"` : ''} loading="lazy" />`;
 };
 
 const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
   const top = g.photo
-    ? `<span class="ct">${photoImg(g.photo, photos, '(max-width:700px) 90vw, 300px', false)}</span><span class="cb"><b>${esc(g.name)}</b>`
+    ? `<span class="ct">${photoImg(g.photo, photos, '(max-width:700px) 90vw, 300px', false, true)}</span><span class="cb"><b>${esc(g.name)}</b>`
     : `<span class="ct typo"><b>${esc(g.name)}</b></span><span class="cb"><b class="sr">${esc(g.name)}</b>`;
   return `<a class="gcard-c" href="../atlas/#place=${esc(g.id)}&amp;page">${top}<em>${esc(g.label)} · ${g.minutes}-minute read</em><span class="lede">${esc(g.lede)}</span></span></a>`;
 };
