@@ -15,13 +15,14 @@ const VIEWS = {
   mediterranean: '-1.00,38.78,7.6',
   canarias: '-15.80,28.45,7.35',
   meseta: '-3.75,39.45,7.05',
-  andalucia: '-6.10,36.85,9.2',
+  andalucia: '-5.10,37.30,6.9',
   'castilla-y-leon': '-5.60,41.35,7.15',
-  'green-spain': '-8.40,42.45,8.4',
-  rioja: '-2.35,42.38,8.85',
+  'green-spain': '-5.20,43.00,6.7',
+  rioja: '-2.40,42.35,8.3',
 };
 // the place whose flag set is shown (content/flags.json); none for a region without a set
-const FLAG_PLACE = { rioja: 'rioja', andalucia: 'jerez', 'green-spain': 'rias-baixas' };
+// Owner picked whole-region tiles without chips (19 Oct 2026): leave empty. e.g. { rioja: 'rioja' } would show Rioja's four flags.
+const FLAG_PLACE = {};
 
 // The frame is 1000 px wide (not 1300) at twice the pixels, so the flag chips are 1.3x as big on the tile and stay readable when it is shown
 // half size on the page; the zoom drops by log2(1300/1000) to keep the same ground in view.
