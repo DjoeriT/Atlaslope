@@ -27,3 +27,12 @@ Label
 - Rosado (p10): "rosados Monterrei estarán elaborados con un mínimo del 85 % de uvas de variedades tintas"
 - Crianza, Reserva, Gran Reserva (p10, p17): "deben haber sido sometidos a un proceso de envejecimiento de acuerdo con los requisitos recogidos en la base de datos electrónica E-Ambrosia de la Unión Europea"
 - Barrica (p10, p17): "deberá ajustarse a lo establecido en el anexo III del Real decreto 1363/2011"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede: "Summers are hot and dry, and winters are cold. Temperature swings reach 30 degrees during ripening. The climate and soils give the local grapes optimal conditions." p14.
+- Label terms "Crianza, Reserva, Gran Reserva" (E-Ambrosia, p10) and "Barrica" (Real Decreto 1363/2011, p17) cut; label cite p17 dropped.
+- Place p1: "The zone has two subzones, the Monterrei valley and the Monterrei hillside." p11. Fly caption now this line (cite p11).
+- Weather p0: "The climate is temperate Mediterranean, leaning continental, with an Atlantic influence." p14. p3 s2: "Both are quite different from other Galician wine zones." p14.
+- Ground p1 s2: "They give aromas to the red wines." p2 s2: "Their pH is low, which suits white wines." p13.
+- Rules p2 s2: "The wines are rich in aroma, fresh and full-bodied. Alcohol and acidity are well balanced." p14. Checked: 7 whites and 5 reds on p12; hand picking on p15 "se vendimia manualmente".
+- Flights added: The Támega (p14 "desemboca el río Támega"), Monterrei castle hill (p12, Federico Justo Méndez: "se codearon con los vinos de Oporto", worded as one writer's claim).

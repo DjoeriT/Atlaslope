@@ -3,7 +3,7 @@
   "title": "Why Rías Baixas tastes the way it does",
   "minutes": 3,
   "lede": {
-    "text": "Mild, wet Atlantic weather and poor granite soils. More than 96% of the grapes are Albariño, which makes sugar and keeps an unusual amount of acidity.",
+    "text": "Mild, wet Atlantic weather and poor granite soils. More than 96% of the grapes harvested are Albariño. It makes a lot of sugar and keeps an acidity that very few grapes in the world reach.",
     "cite": [
       "rias-baixas-pliego:p12",
       "rias-baixas-pliego:p14"
@@ -50,9 +50,9 @@
       "beat": "place",
       "paras": [
         "Rías Baixas lies at 42° north and 8° west, in the provinces of Pontevedra and A Coruña.",
-        "The land rarely rises above 300 m. It is close to the sea. It is tied to the lower stretches of the Ulla, Umia, Oitavén, Xabriña and Miño rivers.",
-        "The zone has five subzones: Condado do Tea, O Rosal, Ribeira do Ulla, Soutomaior and Val do Salnés.",
-        "Holdings are tiny. The 4,300 hectares are split into 22,800 plots, worked by more than 5,000 growers (2022 data)."
+        "The land rarely rises above 300 m. It is close to the sea. It follows the lower stretches of its rivers, from the Ulla in the north to the Miño in the south.",
+        "The zone has five subzones.",
+        "Holdings are tiny. More than 4,300 hectares are split into 22,800 plots, worked by more than 5,000 growers."
       ],
       "cite": [
         "rias-baixas-pliego:p10",
@@ -68,6 +68,18 @@
           "cite": [
             "rias-baixas-pliego:p12"
           ]
+        },
+        {
+          "label": "The Miño at its mouth",
+          "point": [
+            -8.8741,
+            41.9012
+          ],
+          "zoom": 10.5,
+          "caption": "The zone follows the lower stretches of the Miño and its tributaries, the Tea and the Louro.",
+          "cite": [
+            "rias-baixas-pliego:p12"
+          ]
         }
       ]
     },
@@ -76,8 +88,8 @@
       "title": "Mild, wet and Atlantic",
       "beat": "weather",
       "paras": [
-        "The pliego calls the climate markedly Atlantic. Temperatures are mild, between 10 °C and 25 °C. The four seasons are clearly different, and temperature swings are short.",
-        "Rain is plentiful all year, about 1,300 mm. It falls much less in summer.",
+        "The climate is markedly Atlantic. Temperatures are mild, between 10 °C and 25 °C. The four seasons are clearly different, and temperature swings are short.",
+        "Rain is plentiful all year, 1,300 mm. It falls much less in summer.",
         "Topography, aspect and nearness to the sea or the rivers shade the general climate. That gives differences between the five subzones.",
         "Spring and summer temperature and humidity make the vine very leafy.",
         "At ripening there is not much sun, and temperatures are middling. Rain falls less, and the vines feel a slight water stress."
@@ -89,7 +101,19 @@
         {
           "label": "Rías Baixas",
           "place": "rias-baixas",
-          "caption": "About 1,300 mm of rain a year, much less of it in summer.",
+          "caption": "1,300 mm of rain a year, much less of it in summer.",
+          "cite": [
+            "rias-baixas-pliego:p12"
+          ]
+        },
+        {
+          "label": "Val do Salnés",
+          "point": [
+            -8.7977,
+            42.5193
+          ],
+          "zoom": 11,
+          "caption": "One of the five subzones; nearness to the sea gives each subzone its own shade of the climate.",
           "cite": [
             "rias-baixas-pliego:p12"
           ]
@@ -101,7 +125,7 @@
       "title": "Granite, poor and sandy",
       "beat": "ground",
       "paras": [
-        "The land belongs to the Hercynian orogeny. Soils on granite stand out. There is also room for soils on schist and for river deposits from the Quaternary.",
+        "The land belongs to the Hercynian orogeny. Soils on granite stand out. There is also room for soils on schist and on continental alluvium from the Quaternary.",
         "Most soils are poor in minerals that weather. They are sandy to sandy loam. Rain has washed out much of the magnesium, calcium and potassium.",
         "They are acid, poor in nutrients and fairly shallow. They hold little water and tend to dry out in summer. Only depth limits the roots.",
         "Growers have long worked to limit erosion and soil damage. They fertilise sensibly, and the soils respond to it very well."
@@ -119,7 +143,7 @@
         "Reds are under 1% of the harvest.",
         "Yields are capped at 12,000 kg per hectare for Albariño, which gives 84 hl. Caíño Tinto is capped at 10,000 kg. Other varieties are capped at 12,500 kg.",
         "Albariño can make more than 13% alcohol in good years. At the same time it keeps an acidity that very few grapes in the world reach.",
-        "Its wines have many aromas: apple, citrus, rose, ripe fruit and herbs. The pliego says the wines are known more for the strength and range of their acidity and for aroma than for alcohol.",
+        "Its wines have many aromas. Apple stands out. The wines are known more for the concentration and range of their acidity, and for their aroma, than for alcohol.",
         "The traditional training is the pergola. It keeps the foliage away from the soil, which limits fungal disease in a humid place. It also uses sunlight better and helps manage vigour."
       ],
       "cite": [
@@ -128,6 +152,20 @@
         "rias-baixas-pliego:p13",
         "rias-baixas-pliego:p14",
         "rias-baixas-pliego:p15"
+      ],
+      "fly": [
+        {
+          "label": "Condado do Tea",
+          "point": [
+            -8.499,
+            42.0827
+          ],
+          "zoom": 11,
+          "caption": "Wine labelled Condado do Tea has at least 70% Albariño and Treixadura.",
+          "cite": [
+            "rias-baixas-pliego:p8"
+          ]
+        }
       ]
     }
   ]

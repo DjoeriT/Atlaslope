@@ -3,7 +3,7 @@
   "title": "Why Getariako Txakolina tastes the way it does",
   "minutes": 3,
   "lede": {
-    "text": "Almost every vineyard lies within 1 km of the sea. The pliego describes the wine as a fresh, light Txakoli.",
+    "text": "95% of the vineyards are less than 1 km from the sea. The wine is a fresh, light Txakoli, characteristic of this zone.",
     "cite": [
       "txakoli-getaria-pliego:p5"
     ]
@@ -42,9 +42,8 @@
       "title": "Vines by the sea",
       "beat": "place",
       "paras": [
-        "The zone is the province of Gipuzkoa. Until 2007 it covered only Aia, Getaria and Zarautz.",
-        "The pliego says 95% of the vineyards are less than 1 km from the sea.",
-        "In the 19th century the province's vines retreated to the coast. Getaria kept 35 hectares in sheltered spots, and Zarautz kept 4."
+        "The zone is the province of Gipuzkoa. Before 2007 the zone was only three municipalities.",
+        "In the 19th century nearly all of the province's vines retreated to the coast at Getaria and Zarautz. Getaria kept 35 hectares in sheltered spots, and Zarautz kept 4."
       ],
       "cite": [
         "txakoli-getaria-pliego:p2",
@@ -59,6 +58,42 @@
           "cite": [
             "txakoli-getaria-pliego:p5"
           ]
+        },
+        {
+          "label": "Getaria",
+          "point": [
+            -2.2037,
+            43.3045
+          ],
+          "zoom": 11,
+          "caption": "In the 19th century it kept 35 ha of vines in sheltered spots.",
+          "cite": [
+            "txakoli-getaria-pliego:p4"
+          ]
+        },
+        {
+          "label": "Zarautz",
+          "point": [
+            -2.1723,
+            43.2835
+          ],
+          "zoom": 11,
+          "caption": "It kept 4 ha of vines under Santa Bárbara.",
+          "cite": [
+            "txakoli-getaria-pliego:p4"
+          ]
+        },
+        {
+          "label": "Donostia / San Sebastián",
+          "point": [
+            -1.9839,
+            43.3224
+          ],
+          "zoom": 11,
+          "caption": "A charter of 1180 for the city already mentions vines.",
+          "cite": [
+            "txakoli-getaria-pliego:p3"
+          ]
         }
       ]
     },
@@ -67,10 +102,10 @@
       "title": "Mild, wet and maritime",
       "beat": "weather",
       "paras": [
-        "The pliego calls the climate mild Atlantic, with a maritime influence.",
+        "The climate is mild Atlantic, with a maritime influence.",
         "The average temperature is 13.4 °C. The average high is 16.4 °C and the average low is 10.5 °C.",
         "Rain averages 1,600 mm a year and falls on 185 days. Clear sun lasts 1,800 hours a year.",
-        "The pliego puts the risk of spring frost at none.",
+        "There is no risk of spring frost.",
         "Late summer and early autumn bring winds from the south and southwest. They make the air dry and warm."
       ],
       "cite": [
@@ -81,7 +116,7 @@
         {
           "label": "The coast at Getaria",
           "place": "txakoli-getaria",
-          "caption": "Rain averages 1,600 mm a year, and there is no risk of spring frost.",
+          "caption": "Rain averages 1,600 mm a year.",
           "cite": [
             "txakoli-getaria-pliego:p3"
           ]
@@ -95,7 +130,7 @@
       "paras": [
         "Hard layers of limestone and sandstone alternate with soft layers of marl and clay rock.",
         "Soil textures are mostly clay-loam or loam. The pH is usually neutral.",
-        "The wet climate grows thick vegetation. It protects the soil from erosion, and it feeds the soil with organic matter.",
+        "The wet climate grows thick vegetation. It protects the soil from erosion. It helps biological life, which enriches the soil with organic matter.",
         "Most vineyards are on slopes sheltered from the northwest winds. The average slope is 15 to 20%. Growers always look for the most sun, for the best ripening."
       ],
       "cite": [
@@ -112,7 +147,7 @@
         "Yields are capped at 13,000 kg of grapes per hectare. Extraction is capped at 0.72 litres per kilo, or 93 hl of wine per hectare.",
         "Vines are traditionally trained on pergolas, 80% of the registered vineyard. Ondarrabi Zuri is very vigorous, so it needs long pruning. On a pergola the bunches hang in the air, away from the damp of the soil.",
         "The wine is traditionally made on its lees, with temperature control. It keeps part of its natural CO2.",
-        "The result, in the pliego's words, is a fresh, light Txakoli. Strength is around 11.5% and acidity is above 7 g/l as tartaric."
+        "The result is a fresh, light Txakoli. Strength is around 11.5% and acidity is above 7 g/l as tartaric."
       ],
       "cite": [
         "txakoli-getaria-pliego:p1",

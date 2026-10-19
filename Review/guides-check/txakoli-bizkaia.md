@@ -37,3 +37,13 @@ Label
 - Single grape name (p4): "nombre de una única variedad ... recomendadas ... mínimo del 85 %"
 - Vendimia tardía (p13): "uva sobremadurada ... Graduación alcohólica adquirida (mínima): 12 % Vol. ... azúcares reductores comprendido entre 60 gr/l y 150 gr/l"
 - Espumoso (p13): "Presión en envases conservados a 20ºC igual o superior a 3 bar. Grado alcohólico adquirido igual o superior a 10"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede: "Bizkaia has an Atlantic, humid, temperate climate, with cool summers and little sun. The wines are lower in alcohol than in nearby zones, and higher in acidity." p7 "veranos frescos"; p10 "claramente inferiores a las de otras zonas próximas". "Dry" dropped (only on p1). p7 added to the cite.
+- Berezia: "...tanks of cement, ceramic, wood or other materials. Its certification starts on 1 May of the year after harvest." p4 "Su calificación se iniciará a partir del 1 de mayo del año siguiente".
+- Place p1 s2: "There are two main valleys, of the Ibaizabal and the Butrón." p7. Fly caption: "Mountain ranges of 100 to 1,000 m, with two main valleys." p7.
+- Weather p0 s1: "The climate is Atlantic, humid and temperate." p6. p2 s2: "The sun shines 1,710 hours a year." p7. p4 s3: "This decides the final ripening of the grapes." p7. Chapter cite: p7 added. Fly caption: "Rain averages 1,200 mm a year." p6.
+- Ground: p0 (two meta sentences) cut; chapter now opens on the south-facing slopes. p2 s1: "Rain on 157 days a year gives the vines a regular supply of water." p6.
+- Rules p0: "The main white grape is Hondarrabi Zuri. The main red is Hondarrabi Beltza. Hondarrabi Zuri Zerratia (Petit Courbu) is also recommended." p5. p1: "...must use a recommended grape for at least 85% of the blend." p4. p3 s3: "Average strength is usually 10.5% to 11.5%. That is clearly lower than in nearby zones, because of the humid Atlantic climate with cool summers." p10. p4 s2: "Notes of white fruit, citrus and herbs go with this acidity." p10.
+- Flights added: Ibaizabal valley, Butrón valley (p7 "dos valles principales, de los ríos Ibaizabal y Butrón"), Bakio (p8 "a mediados del siglo XX ... sobrevive ... Principalmente en Bakio"), Lekeitio (p7 "en 1338, las ordenanzas de Lekeitio ... exención de impuestos para las maderas que sirvieran para emparrar viñedos").
+- Not changed: chapter title "Hills between two valleys" (page says mountain ranges); LeadBot to reword.

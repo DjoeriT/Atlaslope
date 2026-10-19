@@ -3,7 +3,7 @@
   "title": "Why Monterrei tastes the way it does",
   "minutes": 2,
   "lede": {
-    "text": "Monterrei has hot, dry summers, cold winters and big swings in temperature. The pliego says the local grapes thrive in these conditions.",
+    "text": "Summers are hot and dry, and winters are cold. Temperature swings reach 30 degrees during ripening. The climate and soils give the local grapes optimal conditions.",
     "cite": [
       "monterrei-pliego:p14"
     ]
@@ -13,19 +13,10 @@
       {
         "term": "Rosado",
         "text": "A rosé must be made with at least 85% red grapes."
-      },
-      {
-        "term": "Crianza, Reserva, Gran Reserva",
-        "text": "These terms are allowed only after ageing that meets the EU E-Ambrosia requirements for them."
-      },
-      {
-        "term": "Barrica",
-        "text": "The term is allowed if the wine meets the conditions of the Spanish labelling decree (Real Decreto 1363/2011, Annex III)."
       }
     ],
     "cite": [
-      "monterrei-pliego:p10",
-      "monterrei-pliego:p17"
+      "monterrei-pliego:p10"
     ]
   },
   "chapters": [
@@ -35,7 +26,7 @@
       "beat": "place",
       "paras": [
         "The Monterrei zone belongs to the basin of the river Duero, because the Támega flows into it. The Támega crosses the zone from north to south.",
-        "The pliego splits the zone into two subzones: the Monterrei valley and the Monterrei hillside.",
+        "The zone has two subzones, the Monterrei valley and the Monterrei hillside.",
         "The valley subzone takes in parishes of four municipalities: Castrelo do Val, Monterrei, Oímbra and Verín. The hillside subzone includes the municipality of Vilardevós and parishes of several others."
       ],
       "cite": [
@@ -46,9 +37,33 @@
         {
           "label": "Monterrei",
           "place": "monterrei",
-          "caption": "The Támega crosses the zone from north to south.",
+          "caption": "The zone has two subzones, the Monterrei valley and the Monterrei hillside.",
+          "cite": [
+            "monterrei-pliego:p11"
+          ]
+        },
+        {
+          "label": "The Támega",
+          "point": [
+            -7.4473,
+            41.965
+          ],
+          "zoom": 10.5,
+          "caption": "The Támega crosses the zone from north to south, into the Duero basin.",
           "cite": [
             "monterrei-pliego:p14"
+          ]
+        },
+        {
+          "label": "Monterrei castle hill",
+          "point": [
+            -7.4491,
+            41.9468
+          ],
+          "zoom": 11,
+          "caption": "One writer said the valley's wines stood alongside those of Porto.",
+          "cite": [
+            "monterrei-pliego:p12"
           ]
         }
       ]
@@ -58,10 +73,10 @@
       "title": "Hot, dry summers, cold winters",
       "beat": "weather",
       "paras": [
-        "The pliego calls the climate temperate Mediterranean, leaning continental, with an influence from the Atlantic.",
+        "The climate is temperate Mediterranean, leaning continental, with an Atlantic influence.",
         "Summers are hot and dry. Winters are cold.",
         "Temperature swings are large, up to 30 degrees during ripening.",
-        "Low rain and high summer heat stand out. The pliego says both are quite different from other Galician wine zones."
+        "Low rain and high summer heat stand out. Both are quite different from other Galician wine zones."
       ],
       "cite": [
         "monterrei-pliego:p14"
@@ -83,8 +98,8 @@
       "beat": "ground",
       "paras": [
         "Three kinds of soil are present.",
-        "Slate and schist soils suit dry spells. The pliego says they give aromas to the red wines.",
-        "Granite and sandy soils come from weathered granite. Their pH is low, which the pliego says suits white wines.",
+        "Slate and schist soils suit dry spells. They give aromas to the red wines.",
+        "Granite and sandy soils come from weathered granite. Their pH is low, which suits white wines.",
         "Sedimentary soils are complex, because several materials are mixed.",
         "Growers sought well-oriented sites with suitable soils. They have corrected the soils over time to improve fertility."
       ],
@@ -100,7 +115,7 @@
       "paras": [
         "Seven white and five red grapes are allowed. The whites include Albariño, Godello and Blanca de Monterrei.",
         "Yields are capped at 13,200 kg per hectare for white grapes and 10,000 kg for red. That gives at most 97.68 hl for white wine and 74 hl for red.",
-        "The grapes are native and well adapted to the place. The pliego says the white, red and rosé wines are rich in aroma, fresh and full-bodied, with a good balance of alcohol and acidity.",
+        "The grapes are native and well adapted to the place. The wines are rich in aroma, fresh and full-bodied. Alcohol and acidity are well balanced.",
         "Grapes are picked by hand when the growers judge them ripe. Winemaking follows traditional methods, with low must extraction and modern technology added.",
         "Many of the vines are trained as bush vines. New plantings are often on wires with two cordons, to ease work and harvest."
       ],

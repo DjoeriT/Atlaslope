@@ -35,3 +35,12 @@ Label
 - Barrica (p12): "en algún momento de su elaboración hubiesen estado contenidos en barrica de un volumen máximo de seiscientos litros ... exclusivamente con variedades principales"
 - Espumoso (p12-13): "elaborados exclusivamente con variedades principales ... método tradicional, en sus tipos brut y brut nature"
 - Tostado (p13): "período de secado ... mínima de tres meses"; "maduración en cubas de madera de roble o de cerezo ... no sea inferior a seis meses"; "maduración en botella no inferior a tres meses"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede s2: "It is a limit zone for viticulture. The white wines are fresh and fruity." p22, p21.
+- Place p0 s1: "Ribeiro lies in the transition zone of Galicia." p16. p4: "In many cases the rough soils and terrain all but force the land into vines." p17.
+- Weather p0 s1: "The climate is temperate, with four clear seasons." p15. p2 s2: "That keeps the aroma and the natural freshness." p16. p4 s1: "Viticulture here is almost marginal." p16. p5: "The mildew index is well below its maximum. Even so, growing here depends on constant control of the disease." p16.
+- Ground p4 s2: "They can be called man-made soils (anthropic soils)." p18. Checked on p18: "fertilised heavily" is "la fertilización se practica de forma intensiva y desde hace mucho tiempo".
+- Rules p0 s1: "Only the listed grape varieties may be used." Checked on p14: 9 white and 9 red principal, 3 secondary (Garnacha tintorera, Tempranillo, Palomino).
+- Label terms checked on p12-p13: Castes, Barrica (600 l), Espumoso (traditional method, brut, brut nature) match. Tostado: "naturally sweet" is not on the page, so now "A wine from grapes dried indoors for at least three months, then aged at least six months in oak or cherry wood and three months in bottle." p13.
+- Flights added: The Miño valley (p16), Ribadavia (p20 "ya en 1579 las ordenanzas municipales de Ribadavia especificaban zonas de cultivo (parroquias)"), Avia valley (p1 "Albilla do Avia, variedad autóctona del valle del Avia").

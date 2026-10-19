@@ -3,7 +3,7 @@
   "title": "Why Cangas tastes the way it does",
   "minutes": 2,
   "lede": {
-    "text": "Vines grow on steep slate slopes in the southwest of Asturias. Winters are cold, summers are very hot, and Albarín Blanco is the preferred white grape.",
+    "text": "Vines grow on steep slate slopes in the southwest of Asturias. Winters are cold and summers are very hot. Albarín Blanco is the preferred white grape.",
     "cite": [
       "cangas-pliego:p4",
       "cangas-pliego:p5"
@@ -18,10 +18,6 @@
       {
         "term": "Crianza, Reserva, Gran Reserva, Añejo, Noble",
         "text": "These five traditional terms may be used on Cangas wines."
-      },
-      {
-        "term": "Barrica, Roble",
-        "text": "These two terms may be used if the wine meets the conditions of the Spanish labelling decree (Real Decreto 1363/2011, Annex III)."
       },
       {
         "term": "Harvest year",
@@ -39,7 +35,7 @@
       "beat": "place",
       "paras": [
         "The Cangas vineyards lie in the southwest of Asturias. The land is very rugged. Most slopes are steep to very steep, and some are sheer.",
-        "The only flat ground is alluvial land on the valley floors. The Narcea and the Navia are the main rivers.",
+        "There is hardly any flat ground apart from alluvial land on the valley floors. The Narcea and the Navia are the main rivers.",
         "The zone covers seven municipalities and nine parishes of Tineo."
       ],
       "cite": [
@@ -55,6 +51,42 @@
             "cangas-pliego:p3",
             "cangas-pliego:p4"
           ]
+        },
+        {
+          "label": "Narcea",
+          "point": [
+            -6.4536,
+            43.2653
+          ],
+          "zoom": 10.5,
+          "caption": "With the Navia, one of the two main rivers, with alluvial land on the valley floors.",
+          "cite": [
+            "cangas-pliego:p4"
+          ]
+        },
+        {
+          "label": "Navia",
+          "point": [
+            -6.8743,
+            43.1524
+          ],
+          "zoom": 10.5,
+          "caption": "The Navia is the other main river of the zone.",
+          "cite": [
+            "cangas-pliego:p4"
+          ]
+        },
+        {
+          "label": "Monasterio de Corias",
+          "point": [
+            -6.5435,
+            43.1947
+          ],
+          "zoom": 11,
+          "caption": "The vine spread widely after the monastery was founded in the early 11th century.",
+          "cite": [
+            "cangas-pliego:p5"
+          ]
         }
       ]
     },
@@ -64,7 +96,7 @@
       "beat": "weather",
       "paras": [
         "The Cantabrian range acts as a barrier. Clouds pile up on its northern slopes. A foehn effect brings dry, hot winds.",
-        "Mountains and deep, narrow valleys also bring a continental influence. The pliego calls the result a microclimate unique in Asturias.",
+        "Mountains and deep, narrow valleys also bring a continental influence.",
         "Winter lows fall to about 10 °C below zero. Summer highs pass 30 °C, and a few days come close to 40 °C.",
         "Rain is about 1,000 mm a year. That is 30% less than the rest of Asturias. Skies are clear more often, and some municipalities reach 2,000 hours of sun.",
         "Growers choose slopes with good aspect, to catch as many hours of sun as they can."
@@ -76,11 +108,11 @@
         {
           "label": "Cangas del Narcea",
           "point": [
-            -6.545,
-            43.176
+            -6.55,
+            43.1774
           ],
           "zoom": 10.5,
-          "caption": "Some municipalities in the zone reach 2,000 hours of sun, clearly more than the rest of Asturias.",
+          "caption": "Some municipalities in the zone reach 2,000 hours of sun.",
           "cite": [
             "cangas-pliego:p5"
           ]
@@ -97,7 +129,7 @@
         "They are not deeply developed, and they are stony. Their pH is about 6, which is acid but close to neutral.",
         "The humus layer is 20 to 25 cm thick and rich in organic matter. The mineral layers reach 60 to 80 cm.",
         "The texture is medium and water drains well. That stops waterlogging and erosion on the steep slopes.",
-        "The pliego says slate gives the wines their own character."
+        "The slate soils give the wines their own character."
       ],
       "cite": [
         "cangas-pliego:p4",
@@ -109,7 +141,7 @@
       "title": "Albarín and Mencía",
       "beat": "rules",
       "paras": [
-        "Cangas wines may be made only from the grapes the pliego lists.",
+        "Only the listed grape varieties may be used.",
         "The preferred reds are Albarín Tinto and Carrasquín. Verdejo Negro and Mencía are preferred too.",
         "Albarín Blanco is the preferred white.",
         "Yields are capped at 8,000 kg per hectare for red grapes and 10,000 kg for white. Wine yield is capped at 56 hl per hectare for red and 70 hl for white.",

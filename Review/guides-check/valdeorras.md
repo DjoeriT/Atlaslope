@@ -36,3 +36,11 @@ Label
 - Producción controlada (p6, p17, p6 note): "parcelas con limitaciones de producción ... «producción controlada»"; "reservado a los vinos tintos y a los blancos elaborados con la variedad godello"; "«producción controlada» ... graduación alcohólica adquirida y total mínima de 12,5 % vol."
 - Tostado (p9): "secado por pasificación natural bajo cubierta con un mínimo de 30 días ... naturalmente dulce, sin aumento artificial de su graduación"
 - Espumoso (p9): "espumosos blancos se elaborarán al menos con un 85 % de uva de la variedad blanca godello"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Place p0 s2: "It is the natural gateway into Galicia." p11. p1 s3: "It is a land of red and black earth. Chestnut, vine and olive grow there." p11. p4: "The zone covers eight municipalities of Ourense." p10 (eight listed).
+- Weather p0 s1: "The climate is Mediterranean-oceanic, with an Atlantic influence." p12. p3: "The climate is ideal for first-quality dry wines, best above 450 m." p12. Fly caption: "850 to 1,000 mm of rain a year." p12.
+- Ground p0: "There are five kinds of soil." p11. p1 s4, p2 s3, p5 s3 rewritten as plain statements (p11, p12).
+- Rules p0 s1: "Only the listed grape varieties may be used." Counts checked on p10: 8 whites and 11 reds are listed, 7 white and 8 red are preferred. The text said 7 reds; fixed to 8. p2, p3, p4 meta lines and "elegant" removed (p14 "frescos y elegantes" kept as "fresh").
+- Label Tostado: now says red grapes (p9 "uvas tintas"); "naturalmente dulce, sin aumento artificial de su graduación" is on p9, checked.
+- Flights added: The Sil (p11), O Barco de Valdeorras (p12 "Afloramentos calizos ... en los municipios de O Barco y Rubiá"), A Rúa (p12 "Suelos graníticos ... A Rúa, Petín y Larouco destacan unos suelos sueltos"). Bibei not used: its OSM point lies outside the zone.

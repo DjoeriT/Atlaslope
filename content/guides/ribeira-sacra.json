@@ -3,7 +3,7 @@
   "title": "Why Ribeira Sacra tastes the way it does",
   "minutes": 3,
   "lede": {
-    "text": "Vines grow on terraced canyon walls above the Miño and the Sil. The climate is more continental than Atlantic, and the soils are slate and granite.",
+    "text": "Vines grow on terraced canyon walls above the Miño and the Sil. The climate is more continental than Atlantic. The soils range from granite to slate.",
     "cite": [
       "ribeira-sacra-pliego:p11",
       "ribeira-sacra-pliego:p12"
@@ -50,7 +50,7 @@
       "paras": [
         "Ribeira Sacra lies inland, in the south of Lugo province and the north of Ourense.",
         "It follows the banks of the Miño and the Sil, from Portomarín to A Peroxa and from Os Peares to Quiroga. The two rivers run to their meeting point through steep gorges or canyons.",
-        "The land forces the vines onto terraces. They go by the names bancales, muras and terrazas. The slopes are very steep, so the pliego calls this \"heroic viticulture\"."
+        "The land forces the vines onto terraces. They go by the names bancales, muras and terrazas. The slopes are very steep, so this has been called \"heroic viticulture\"."
       ],
       "cite": [
         "ribeira-sacra-pliego:p8",
@@ -61,6 +61,30 @@
           "label": "Ribeira Sacra",
           "place": "ribeira-sacra",
           "caption": "The vineyards follow the Miño and the Sil, where the rivers cut steep canyons.",
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
+        },
+        {
+          "label": "Canón do Sil",
+          "point": [
+            -7.5642,
+            42.3905
+          ],
+          "zoom": 11,
+          "caption": "The Miño and the Sil run to their meeting through steep gorges or canyons.",
+          "cite": [
+            "ribeira-sacra-pliego:p11"
+          ]
+        },
+        {
+          "label": "Os Peares",
+          "point": [
+            -7.7311,
+            42.4548
+          ],
+          "zoom": 11,
+          "caption": "The zone runs along the Sil from Os Peares to Quiroga.",
           "cite": [
             "ribeira-sacra-pliego:p11"
           ]
@@ -102,11 +126,25 @@
         "In Chantada and parts of Ribeiras do Miño and Ribeiras do Sil, the soils look more like the granite soils of western Galicia. In Amandi and the rest of the Ribeira do Sil, they follow the type of eastern Galicia.",
         "Another shared trait is high soil acidity. The riverside land holds little moisture, so the vines need rootstocks suited to dry summers.",
         "On the sunny bank the vineyards run down in terraces to the river. The shaded slopes are covered by deciduous trees, mostly oak and chestnut.",
-        "The pliego says the soils set the wine's minerality. They also bring out different expressions and concentrations of fruit."
+        "The soils set the wine's minerality. They also bring out different expressions and concentrations of fruit."
       ],
       "cite": [
         "ribeira-sacra-pliego:p12",
         "ribeira-sacra-pliego:p15"
+      ],
+      "fly": [
+        {
+          "label": "Amandi",
+          "point": [
+            -7.5159,
+            42.3992
+          ],
+          "zoom": 11,
+          "caption": "In Amandi the soils follow the type of eastern Galicia.",
+          "cite": [
+            "ribeira-sacra-pliego:p12"
+          ]
+        }
       ]
     },
     {
@@ -114,8 +152,8 @@
       "title": "Mencía and Godello",
       "beat": "rules",
       "paras": [
-        "Wines may be made only from the listed grapes. Eight whites and seven reds are principal. Four more are secondary.",
-        "Yields are capped at 7,500 kg per hectare for red grapes and 12,000 kg for white. Wine yield is capped at 69 litres per 100 kg.",
+        "Only the listed grape varieties may be used. Eight whites and seven reds are principal. Four more are secondary.",
+        "White grapes are capped at 12,000 kg per hectare. Wine yield is capped at 69 litres per 100 kg.",
         "Growers pick by hand when they judge the grapes ripe. They aim for a probable natural strength of at least 10%.",
         "Mencía is the main red grape. The reds are medium-deep, cherry red to red with purple rims. They smell of red forest fruit and stone fruit, and they finish balanced and long.",
         "Godello is the most common white grape, with Treixadura and Albariño. The whites run from pale yellow to gold. They smell of pome and stone fruit, with a good balance of acidity and alcohol.",

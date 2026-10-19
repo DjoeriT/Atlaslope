@@ -3,7 +3,7 @@
   "title": "Why Arabako Txakolina tastes the way it does",
   "minutes": 2,
   "lede": {
-    "text": "A valley in northern Álava with an Atlantic climate. Its txakoli is high in acidity, with a slightly bitter aftertaste.",
+    "text": "A valley in northern Álava with an Atlantic climate. Its txakoli has a characteristic acidity, with light bitter tones in the aftertaste.",
     "cite": [
       "txakoli-alava-pliego:p4",
       "txakoli-alava-pliego:p5"
@@ -13,7 +13,7 @@
     "terms": [
       {
         "term": "Berezia",
-        "text": "An aged txakoli with at least 5 months of ageing, sold from 1 May of the year after harvest."
+        "text": "An aged txakoli with at least 5 months of ageing. Its certification starts on 1 May of the year after harvest."
       },
       {
         "term": "Single grape name",
@@ -42,8 +42,8 @@
       "beat": "place",
       "paras": [
         "Arabako Txakolina is made in the Ayala valley, in the north of Álava.",
-        "The zone covers five municipalities: Amurrio, Artziniega, Ayala/Aiara, Laudio/Llodio and Okondo.",
-        "Vineyards are always close to the wineries, within about 3 km."
+        "The zone covers five municipalities.",
+        "Vineyards are always close to the wineries, no more than 3 km away."
       ],
       "cite": [
         "txakoli-alava-pliego:p4",
@@ -57,6 +57,42 @@
           "cite": [
             "txakoli-alava-pliego:p4"
           ]
+        },
+        {
+          "label": "Tierra de Ayala",
+          "point": [
+            -3.0791,
+            43.0761
+          ],
+          "zoom": 11,
+          "caption": "Vines were grown for wine in the Tierra de Ayala in 964.",
+          "cite": [
+            "txakoli-alava-pliego:p5"
+          ]
+        },
+        {
+          "label": "Retes de Tudela, Artziniega",
+          "point": [
+            -3.1287,
+            43.1211
+          ],
+          "zoom": 11,
+          "caption": "Vines are recorded at Retes de Tudela in 864.",
+          "cite": [
+            "txakoli-alava-pliego:p5"
+          ]
+        },
+        {
+          "label": "Laudio / Llodio",
+          "point": [
+            -2.9622,
+            43.1418
+          ],
+          "zoom": 11,
+          "caption": "A gift of vineyards to the lost monastery of San Víctor.",
+          "cite": [
+            "txakoli-alava-pliego:p5"
+          ]
         }
       ]
     },
@@ -65,10 +101,10 @@
       "title": "Atlantic, with a southern wind",
       "beat": "weather",
       "paras": [
-        "The pliego calls the climate Atlantic. Rain averages 899 litres a year.",
-        "From April to October the average light is 12.11 hours a day. The south wind blows on 170 days a year, and it brings air to the leaves.",
+        "The climate is Atlantic. Rain averages 899 litres a year.",
+        "From April to October, average light is 12.11 hours. The south wind blows on 170 days a year. It brings oxygen to the growing leaves.",
         "The average temperature is 13.1 °C. The average high is 18.7 °C and the average low is 7.5 °C.",
-        "This microclimate lets the grapes be picked at about 12% potential strength."
+        "This microclimate means the grapes are picked at around 12°."
       ],
       "cite": [
         "txakoli-alava-pliego:p4",
@@ -92,8 +128,8 @@
       "title": "Soils from acid to alkaline",
       "beat": "ground",
       "paras": [
-        "The pliego says little about the soil. The average pH in the vineyards is between 5.2 and 8.2. Active limestone is between 6.2 and 9.2.",
-        "It links this to the wine's typical acidity. It also links it to a slightly bitter aftertaste."
+        "The average pH in the vineyards is between 5.2 and 8.2. Active limestone is between 6.2 and 9.2.",
+        "This gives the wine its characteristic acidity. It also brings light bitter tones in the aftertaste."
       ],
       "cite": [
         "txakoli-alava-pliego:p5"
@@ -104,11 +140,11 @@
       "title": "Hondarribi Zuri against mildew",
       "beat": "rules",
       "paras": [
-        "The main grapes are Hondarrabi Zuri, Hondarrabi Beltza and Hondarrabi Zuri Zerratia (Petit Courbu). Seven other varieties are authorised.",
+        "The main white grape is Hondarrabi Zuri. The main red is Hondarrabi Beltza. Hondarrabi Zuri Zerratia (Petit Courbu) is also a main grape. Seven other varieties are authorised.",
         "Yields are capped at 13,000 kg of grapes per hectare. The wine yield may not exceed 70 litres per 100 kg of grapes.",
         "The varieties have small, tight bunches with thick skins. They resist mildew, which is a high risk in this wet zone.",
-        "The pliego gives total acidity of 9 to 12 g/l as tartaric, volatile acidity under 1 g/l and a pH of about 3.",
-        "It describes the wine's acidity as neither too much nor too little, with a slight bitterness and citrus and herbal flavours. The colour runs from green to straw yellow."
+        "Total acidity is 9 to 12 g/l as tartaric. Volatile acidity is under 1 g/l. The pH is around 3.",
+        "The wines are round and low in acidity. They have citrus and herbal flavours. The colour runs from green to straw yellow."
       ],
       "cite": [
         "txakoli-alava-pliego:p4",

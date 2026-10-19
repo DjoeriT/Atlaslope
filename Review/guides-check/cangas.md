@@ -35,3 +35,11 @@ Label (all p9)
 - Crianza, Reserva, Gran Reserva, Añejo, Noble: "pueden utilizarse ... son: «Crianza», «Reserva», «Gran Reserva», «Añejo» y «Noble»"
 - Barrica, Roble: "podrán utilizarse como menciones ... «Barrica» y «Roble», siempre que cumplan las condiciones señaladas en el Anexo III del Real Decreto 1363/2011"
 - Harvest year: "Será obligatoria la indicación del año de cosecha en el etiquetado de todos los vinos protegidos aunque no hayan sido sometidos a envejecimiento"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede: "Winters are cold and summers are very hot. Albarín Blanco is the preferred white grape." p5, p4.
+- Label term "Barrica, Roble" cut: it only points to Real Decreto 1363/2011 (p9).
+- Place p1 s1: "There is hardly any flat ground apart from alluvial land on the valley floors." p4 "apenas más llanuras que las aluviales".
+- Weather p1 s2 (microclimate unique in Asturias) cut. Fly caption: "Some municipalities in the zone reach 2,000 hours of sun." p5. Fly point moved to the Cangas del Narcea town node.
+- Ground p5: "The slate soils give the wines their own character." p5. Rules p0: "Only the listed grape varieties may be used." p4.
+- Flights added: Narcea (p4 "siendo el Narcea y el Navia los más importantes"), Navia (p4), Monasterio de Corias (p5 "gran expansión ... fundación del Monasterio benedictino ... de Corias a comienzos del siglo XI").

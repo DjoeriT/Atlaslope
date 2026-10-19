@@ -33,3 +33,10 @@ Label
 - Barrica (p7): "tintos ... mínimo de 6 meses en barricas de hasta 500 litros; blancos ... mínimo de 3 meses en barricas de madera de hasta 600 litros"
 - Guarda (p7): "mínimo de 7 meses en tintos y 4 meses en blancos en depósitos de madera, hormigón u otros materiales ... distintos del acero y el poliéster"
 - Subzone name (p19): "mención a la subzona ... si toda la uva procede de dicha subzona y la elaboración se produce en ella"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede s2: "The climate is more continental than Atlantic. The soils range from granite to slate." p11, p12.
+- Place p2 s3: "The slopes are very steep, so this has been called "heroic viticulture"." p11.
+- Ground p4 s1: "The soils set the wine's minerality." p15.
+- Rules p0 s1: "Only the listed grape varieties may be used." p11. p1: the red-grape yield cap is left out, because p10 (7,500 kg) and p1 (amendment: 12,500 to 9,500 kg) differ. Kept: "White grapes are capped at 12,000 kg per hectare." p10, and the 69 litres per 100 kg. Owner or analyst to settle the red cap.
+- Flights added: Canón do Sil (p11 "gargantas o cañones de fuerte verticalidad"), Os Peares (p11 "desde Os Peares a Quiroga"), Amandi (p12 "en Amandi y resto de la Ribeira do Sil responden a la tipología de la Galicia oriental").

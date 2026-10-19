@@ -134,7 +134,7 @@
           "name": "Bakio",
           "at": [-2.8143, 43.423],
           "lines": [
-            "One of the places where txakoli survived into the 20th century."
+            "One of the main places where txakoli still survived in the mid-20th century."
           ],
           "cite": [
             "txakoli-bizkaia-pliego:p8"
@@ -145,7 +145,7 @@
           "name": "Bilbao",
           "at": [-2.935, 43.263],
           "lines": [
-            "A 15th-century visitor marvelled at the vines around the city."
+            "A 15th-century visitor was amazed by how many vines surrounded the city."
           ],
           "cite": [
             "txakoli-bizkaia-pliego:p8"
@@ -167,7 +167,7 @@
           "name": "Ibaizabal",
           "at": [-2.7116, 43.203],
           "lines": [
-            "With the Butrón, it gives its name to one of the two main valleys."
+            "With the Butrón, it has one of the two main valleys."
           ],
           "cite": [
             "txakoli-bizkaia-pliego:p7"
@@ -234,9 +234,9 @@
         {
           "id": "amurrio",
           "name": "Amurrio",
-          "at": [-2.9511, 43.0439],
+          "at": [-2.9998, 43.051],
           "lines": [
-            "One of the places where txakoli was common practice by the 9th century."
+            "One of the places where making txakoli was common practice in the 9th century."
           ],
           "cite": [
             "txakoli-alava-pliego:p5"
@@ -285,12 +285,12 @@
         {
           "id": "cangas-del-narcea",
           "name": "Cangas del Narcea",
-          "at": [-6.5647, 43.1161],
+          "at": [-6.55, 43.1774],
           "lines": [
-            "One of the seven municipalities of the area."
+            "The vineyards of Corias spread beyond this municipality into its neighbours."
           ],
           "cite": [
-            "cangas-pliego:p3"
+            "cangas-pliego:p5"
           ]
         },
         {
@@ -330,7 +330,7 @@
             "A municipality of the Val do Salnés subzone."
           ],
           "cite": [
-            "rias-baixas-pliego:p8"
+            "rias-baixas-pliego:p10"
           ]
         },
         {
@@ -341,7 +341,7 @@
             "A municipality of the Condado do Tea subzone."
           ],
           "cite": [
-            "rias-baixas-pliego:p8"
+            "rias-baixas-pliego:p10"
           ]
         },
         {
@@ -352,18 +352,18 @@
             "Its municipality forms the Soutomaior subzone."
           ],
           "cite": [
-            "rias-baixas-pliego:p8"
+            "rias-baixas-pliego:p10"
           ]
         },
         {
           "id": "padron",
           "name": "Padrón",
-          "at": [-8.6236, 42.7598],
+          "at": [-8.6603, 42.739],
           "lines": [
-            "A municipality of the Ribeira do Ulla subzone."
+            "Three of its parishes belong to the Ribeira do Ulla subzone."
           ],
           "cite": [
-            "rias-baixas-pliego:p8"
+            "rias-baixas-pliego:p10"
           ]
         }
       ]
@@ -398,7 +398,7 @@
         {
           "id": "quiroga",
           "name": "Quiroga",
-          "at": [-7.185, 42.4658],
+          "at": [-7.2738, 42.4771],
           "lines": [
             "The area runs from Os Peares to here."
           ],
@@ -409,10 +409,11 @@
         {
           "id": "canon-do-sil",
           "name": "Cañón del Sil",
-          "at": [-7.6291, 42.3185],
+          "at": [-7.5642, 42.3905],
           "lines": [
             "The Sil and the Miño flow through steep canyons towards their meeting.",
-            "The canyons and the religious buildings gave the area its name, which goes back to the 12th century."
+            "The canyons and the religious buildings gave the area its name.",
+            "The name is first recorded in 1124."
           ],
           "cite": [
             "ribeira-sacra-pliego:p11",
@@ -431,7 +432,7 @@
           "name": "O Barco de Valdeorras",
           "at": [-6.9801, 42.4301],
           "lines": [
-            "Clay-limestone soils lie in the north of the area, here and in Rubiá."
+            "Limestone outcrops lie in the northern half of the area, here and in Rubiá."
           ],
           "cite": [
             "valdeorras-pliego:p12"
@@ -472,32 +473,32 @@
           "name": "Ribadavia",
           "at": [-8.1427, 42.2876],
           "lines": [
-            "Its municipal ordinances of 1579 set out where vines could be grown."
+            "Its municipal ordinances of 1579 already named the growing areas, by parish."
           ],
           "cite": [
             "ribeiro-pliego:p20"
           ]
         },
         {
-          "id": "carballeda-de-avia",
-          "name": "Carballeda de Avia",
-          "at": [-8.1849, 42.3348],
+          "id": "avia",
+          "name": "Avia",
+          "at": [-8.1885, 42.3998],
           "lines": [
-            "One of the nine municipalities listed whole for the area."
+            "Albilla do Avia is a native grape of the Avia valley."
           ],
           "cite": [
-            "ribeiro-pliego:p13"
+            "ribeiro-pliego:p1"
           ]
         },
         {
-          "id": "pontevedra",
-          "name": "Pontevedra",
-          "at": [-8.6041, 42.4281],
+          "id": "mino",
+          "name": "Miño",
+          "at": [-8.0657, 42.2966],
           "lines": [
-            "The main port for shipping the wine by sea."
+            "Sea air reaches the area mainly up the Miño valley."
           ],
           "cite": [
-            "ribeiro-pliego:p19"
+            "ribeiro-pliego:p16"
           ]
         }
       ]
@@ -510,9 +511,9 @@
         {
           "id": "verin",
           "name": "Verín",
-          "at": [-7.4181, 41.8955],
+          "at": [-7.4406, 41.9406],
           "lines": [
-            "Its parishes of Verín and Vilamaior do Val belong to the Monterrei valley subzone."
+            "Fourteen of its parishes belong to the Monterrei valley subzone."
           ],
           "cite": [
             "monterrei-pliego:p11"
@@ -521,7 +522,7 @@
         {
           "id": "oimbra",
           "name": "Oímbra",
-          "at": [-7.5233, 41.8741],
+          "at": [-7.4716, 41.8858],
           "lines": [
             "Its parishes of Oímbra, Rabal and San Cibrao belong to the Monterrei valley subzone."
           ],
@@ -545,7 +546,7 @@
           "name": "Monterrei",
           "at": [-7.4491, 41.9468],
           "lines": [
-            "The wines of the Monterrei valley rivalled those of Porto."
+            "One writer said the valley's wines stood alongside those of Porto."
           ],
           "cite": [
             "monterrei-pliego:p12"

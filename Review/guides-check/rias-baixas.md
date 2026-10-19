@@ -35,3 +35,11 @@ Label
 - Rías Baixas barrica (p9): "estancia en envases de madera de un tamaño no superior a 600 litros, indicándose en todo caso en el etiquetado el tiempo, en meses o años"; vinos blancos
 - Espumoso (p9): "se producirán exclusivamente por segunda fermentación en botella"
 - Brut nature (p6): "brut nature (0 a 3 g/l), esta mención únicamente podrá utilizarse para el vino espumoso al que no se añada azúcar después del degüelle"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede: "More than 96% of the grapes harvested are Albariño. It makes a lot of sugar and keeps an acidity that very few grapes in the world reach." p14.
+- Place p1 s3: "It follows the lower stretches of its rivers, from the Ulla in the north to the Miño in the south." p12. p2: "The zone has five subzones." p12. p3 s2: "More than 4,300 hectares are split into 22,800 plots, worked by more than 5,000 growers." p13 ("2022 data" belongs to the plots per holding, so dropped).
+- Weather p0 s1: "The climate is markedly Atlantic." p12. p1 s1: "Rain is plentiful all year, 1,300 mm." Fly caption: "1,300 mm of rain a year, much less of it in summer." p12.
+- Ground p0 s3: "...on continental alluvium from the Quaternary." p12.
+- Rules p4: "Its wines have many aromas. Apple stands out. The wines are known more for the concentration and range of their acidity, and for their aroma, than for alcohol." p12, p15.
+- Flights added: the Miño at its mouth (p12 "tramos inferiores de los ríos ... Miño con sus afluentes Tea y Louro"), Val do Salnés (p12 "cinco subzonas"), Condado do Tea (p8 "≥ 70 % albariño y treixadura").

@@ -34,3 +34,13 @@ Label
 - Rosé (p2): "vinos rosados ... mínimo del 50% de la variedad tinta recomendada"
 - Vendimia tardía (p7): "región determinada Getaria podrá emplearse junto con la mención vendimia tardía ... uva sobremadura ... graduación alcohólica adquirida (mínima) de 12% vol."
 - Espumoso (p7): "podrá emplearse para designar los vinos espumosos obtenidos de uva procedente de viñedos inscritos y elaborados en las bodegas acogidas"
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede: "95% of the vineyards are less than 1 km from the sea. The wine is a fresh, light Txakoli, characteristic of this zone." p5 "el 95% de los viñedos a menos de 1 km. del mar", "un Txakoli fresco y ligero característico de esta zona".
+- Place p0 s2: "Before 2007 the zone was only three municipalities." p4 "En 2007 se amplia ... de los tres municipios iniciales ... a toda la provincia".
+- Place p1 (95% sea line) cut: it repeated the lede and the fly caption.
+- Place p2 s1: "nearly all of the province's vines retreated to the coast at Getaria and Zarautz". p4 "prácticamente se refugia en la zona costera de Getaria y Zarautz".
+- Weather p0: "The climate is mild Atlantic, with a maritime influence." p3. Weather p3: "There is no risk of spring frost." p3 "Riesgo de heladas primaverales: inexistente". Fly caption: "Rain averages 1,600 mm a year." p3.
+- Ground p2 s2: "It protects the soil from erosion. It helps biological life, which enriches the soil with organic matter." p3.
+- Rules p5 s1: "The result is a fresh, light Txakoli." p5.
+- Flights added (Place): Getaria, Zarautz (p4 "conservando la primera 35 has. ... la segunda 4 has. al amparo de Santa Bárbara"), Donostia (p3 "Fuero otorgado a San Sebastián ... en 1180").

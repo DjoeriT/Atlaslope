@@ -28,3 +28,12 @@ Label
 - Single grape name (p4): "nombre de una única variedad ... mínimo del 85%"
 - Vendimia tardía (p8): "uva sobremadura ... con un grado alcohólico natural superior a 15% Vol."
 - Espumoso (p9): "Presión en envases conservados a 20ºC igual o superior a 3 bar"; "Graduación alcohólica adquirida (mínima): 10 % Vol."
+
+Source-check changes (19 Oct 2026, report 2026-10-19-sentence-check.md)
+- Lede s2: "Its txakoli has a characteristic acidity, with light bitter tones in the aftertaste." Was "high in acidity", which contradicts p6 "de baja acidez" and p5 "niveles bajos de acidez".
+- Berezia: "...Its certification starts on 1 May of the year after harvest." p2.
+- Place p1: "The zone covers five municipalities." (names are on the map flags) p4. p2: "no more than 3 km away" p5 "en un radio de no más de 3 km".
+- Weather p0 s1: "The climate is Atlantic." p4. p1: "From April to October, average light is 12.11 hours. The south wind blows on 170 days a year. It brings oxygen to the growing leaves." p5, p6. p3: "...the grapes are picked at around 12°." p5.
+- Ground: p0 s1 (meta) cut. p1: "This gives the wine its characteristic acidity. It also brings light bitter tones in the aftertaste." p5.
+- Rules p0: "The main white grape is Hondarrabi Zuri. The main red is Hondarrabi Beltza. Hondarrabi Zuri Zerratia (Petit Courbu) is also a main grape." p4. p3: "Total acidity is 9 to 12 g/l as tartaric. Volatile acidity is under 1 g/l. The pH is around 3." p5. p4 s1: "The wines are round and low in acidity. They have citrus and herbal flavours." p6 "vinos redondos, de baja acidez, sabores cítricos y herbáceos".
+- Flights added: Tierra de Ayala (p5 964), Retes de Tudela (p5 864), Laudio/Llodio (p5 San Víctor).
