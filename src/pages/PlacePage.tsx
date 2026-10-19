@@ -57,8 +57,10 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
 
   useEffect(() => {
     if (!at) return;
-    document.getElementById(`terroir-${at}`)?.scrollIntoView({ block: 'start' });
-    document.getElementById(`terroir-${at}-h`)?.focus({ preventScroll: true });
+    // The chapter's heading, not its body: a beat's first chapter is titled in the beat's head, above the body.
+    const h = document.getElementById(`terroir-${at}-h`);
+    (h ?? document.getElementById(`terroir-${at}`))?.scrollIntoView({ block: 'start' });
+    h?.focus({ preventScroll: true });
   }, [place.id, at]);
 
   const trail = tree.breadcrumb(place.id, 'place');

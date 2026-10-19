@@ -297,3 +297,4 @@
 .pg-facts .pg-h3{font:600 .9rem var(--sans);text-transform:none;letter-spacing:0;color:var(--ink)}
 /* The jump bar fades at its right edge while more tabs sit beyond it. */
 .pg-jump{mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent);-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 3rem),transparent)}
+.pg-beat h3,.pg-ch h4{scroll-margin-top:8rem}
