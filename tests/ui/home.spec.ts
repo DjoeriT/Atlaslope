@@ -57,7 +57,7 @@ test('Guides and About are plain pages with the same bar, and the guides lead in
   await expect(nav.getByRole('link', { name: 'About' })).toHaveAttribute('aria-current', 'page');
   await nav.getByRole('link', { name: 'Guides' }).click();
   await expect(page).toHaveTitle('Guides · AtlaSlope');
-  await page.getByRole('link', { name: /Rioja Alta/ }).click();
+  await page.locator('a[href$="place=rioja-alta&page"]').click();
   await expect(page).toHaveURL(/\/atlas\/#place=rioja-alta/);
 });
 

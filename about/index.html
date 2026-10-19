@@ -19,6 +19,7 @@
       @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
     </style>
     <script type="module" src="/src/home/main.ts"></script>
+    <link rel="stylesheet" href="/src/home/about.css" />
   </head>
   <!-- About: structure and facts; positioning per owner 19 Oct 2026 (a general wine reference, not exam-centric), the owner writes the why (owner, 15:09Z, 18 Oct 2026). Plain HTML, the home page's styles. -->
   <body>
@@ -33,40 +34,47 @@
       </div>
     </header>
 
-    <main id="main">
+    <main id="main" class="ab">
       <header class="page-head">
-        <div class="wrap">
-          <h1>A wine atlas for anyone who loves wine.</h1>
-          <p class="sub">AtlaSlope shows Spain's wine places from above, and why each one tastes the way it does. It is free, in your browser, with no account.</p>
-        </div>
+        <div class="wrap"><h1>About</h1></div>
       </header>
-      <div class="page-body">
-        <div class="wrap">
-          <section>
-            <h2>How to use it</h2>
-            <ol>
-              <li><b>Find the place.</b> Open the atlas and fly from Spain down to a single appellation.</li>
-              <li><b>Read why.</b> Its guide explains how the land and the weather shape the wine. Every place it names is one tap away on the map.</li>
-              <li><b>Study it, if you like.</b> Short rounds on the map help it stick. What you miss comes back sooner.</li>
-            </ol>
-          </section>
-          <section>
-            <h2>Where the facts come from</h2>
-            <p>Boundaries and the list of appellations come from Spain's Ministry of Agriculture (MAPA).</p>
-            <p>Facts about each place come from its own rulebook: the pliego de condiciones and the EU single document. Each fact is cited to the page it comes from.</p>
-            <p>Imagery: Esri, Maxar, with PNOA © IGN for Spain. Photos are credited where they appear.</p>
-          </section>
-          <section>
-            <h2>Independent</h2>
-            <p>AtlaSlope is independent.</p>
-            <p>It is useful for WSET and Wine Scholar courses, but it is not affiliated with or endorsed by WSET or the Wine Scholar Guild. It uses none of their course text, maps or images.</p>
-          </section>
-          <section>
-            <h2>Who made it</h2>
-            <div class="soon"><p>The story behind AtlaSlope is coming soon.</p></div>
-          </section>
+      <section class="wrap letter">
+        <img class="me" src="/about/djoeri.webp" width="840" height="1217" alt="Djoeri Timessen with a glass of red wine" />
+        <div class="words">
+          <!-- owner's note, his own words (rewritten by him 19 Oct 2026 11:22Z) -->
+          <div class="note">
+            <p>I'm Djoeri, a passionate techie who also loves wine.</p>
+            <p>The more I studied wine, the more I wanted to know about the place behind each glass. So I built AtlaSlope: official data, wrapped in an experience that makes you want to keep exploring.</p>
+            <p>It starts with Spain. Over the next few months it will grow, and expand into other countries. Feedback is very welcome, from wherever in the world you are. I hope to build it out into something that helps wine lovers across the globe discover more about what's in their glass.</p>
+          </div>
+          <p class="sign">Cheers,<br />Djoeri Timessen</p>
+          <p class="cred">WSET Level 2 and Level 3. Now studying for the Spanish Wine Scholar.</p>
+          <!-- feedback link: owner to choose the address -->
         </div>
-      </div>
+      </section>
+      <!-- photos keep their own shape (owner, 19 Oct 2026, twice: never crop his photos into fixed tiles); one row of four, columns sized by each photo's own width/height ratio, so every photo is whole and the row shares one height (owner 11:23Z: eight was too much); phone: the castle full width, the three upright photos in a row -->
+      <section class="wrap photos" aria-label="Photos">
+        <img src="/about/glass.webp" width="800" height="1067" loading="lazy" alt="A glass of red wine on a wooden table, a lake and mountains behind it" />
+        <img class="wide" src="/about/castle.webp" width="1200" height="900" loading="lazy" alt="Autumn vineyard rows in yellow leaf below a ruined castle on a hill" />
+        <img src="/about/whites.webp" width="800" height="1067" loading="lazy" alt="Two glasses of white wine beside a bottle on a sunny garden table" />
+        <img src="/about/bottles.webp" width="800" height="1067" loading="lazy" alt="Three wine bottles on a balcony rail, green hills and mountains behind them" />
+      </section>
+      <section class="wrap" aria-labelledby="trace-h"><div class="trace">
+        <h2 id="trace-h">Where the facts come from</h2>
+        <p>Follow one sentence back to its source.</p>
+        <div class="chain">
+          <div class="step"><span class="lab">The guide says</span>
+            <div class="quote"><p class="sent">The whole valley sits where the Atlantic and the Mediterranean meet, so <mark>temperatures stay mild and about 400 mm of rain falls in a year.</mark></p><p class="cite"><a href="https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985">Documento único PDO-ES-A0117 (EU single document, Rioja) · 2014 · p. 5</a></p></div></div>
+          <div class="step"><span class="lab">The pliego says</span>
+            <figure><div class="pg"><img src="/about/sources-pliego-p15.webp" width="700" height="990" loading="lazy" alt="Page 15 of the Rioja pliego de condiciones. The marked passage: Atlantic and Mediterranean climates meet, giving mild temperatures and yearly rain of a little over 400 litres per square metre." /><i aria-hidden="true" style="left:18.98%;top:34.56%;width:72.06%;height:1.66%"></i><i aria-hidden="true" style="left:14.28%;top:36.23%;width:76.77%;height:1.66%"></i><i aria-hidden="true" style="left:14.28%;top:37.89%;width:76.77%;height:1.66%"></i><i aria-hidden="true" style="left:16.80%;top:39.55%;width:3.70%;height:1.66%"></i></div><figcaption><b><a href="https://riojawine.com/wp-content/uploads/2023/07/pliego-de-condiciones-de-la-doca-rioja-en-vigor.pdf">Pliego de condiciones, p. 15</a></b><span>The rulebook, from the Consejo Regulador DOCa Rioja.</span></figcaption></figure></div>
+          <div class="step"><span class="lab">The EU says</span>
+            <figure><div class="pg"><img src="/about/sources-doc-p5.webp" width="700" height="990" loading="lazy" alt="Page 5 of the Rioja EU single document. The marked passage: Atlantic and Mediterranean climates meet, mild temperatures and yearly rain of 400 litres per square metre." /><i aria-hidden="true" style="left:12.94%;top:72.49%;width:48.91%;height:1.19%"></i><i aria-hidden="true" style="left:12.94%;top:73.70%;width:29.41%;height:1.19%"></i></div><figcaption><b><a href="https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/30985">Documento único, p. 5</a></b><span>The EU single document, from the European Commission.</span></figcaption></figure></div>
+          <div class="step"><span class="lab">The map shows</span>
+            <figure><div class="pg"><img src="/about/sources-map.webp" width="960" height="600" loading="lazy" alt="Satellite view of the Rioja wine region with its boundary outlined" /></div><figcaption><b>The Rioja boundary</b><span>From Spain's Ministry of Agriculture (MAPA).</span></figcaption></figure></div>
+        </div>
+        <p class="credit">Imagery: Esri, Maxar, Earthstar Geographics, and the GIS User Community · Spain: PNOA © IGN. Photos are credited where they appear.</p>
+      </div></section>
+      <section class="wrap"><div class="fine"><p>AtlaSlope is independent. It is not affiliated with or endorsed by WSET or the Wine Scholar Guild, and uses none of their course text, maps or images. It is useful for WSET and Wine Scholar courses.</p></div></section>
     </main>
 
     <footer>
