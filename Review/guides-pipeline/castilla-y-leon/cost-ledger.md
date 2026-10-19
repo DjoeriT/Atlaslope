@@ -8,3 +8,4 @@
 | Write | ribera-del-duero | Sonnet | 48,859 | 1.3 |
 | Write | toro | Sonnet | 35,325 | 1.3 |
 | Write | cigales | Sonnet | 38,100 | 1.2 |
+| Write | leon | Sonnet | 39,087 | 1.7 |
