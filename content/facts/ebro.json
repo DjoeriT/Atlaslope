@@ -123,9 +123,9 @@
     ]
    },
    "tastes": {
-    "text": "Young: bright, deep colour, purple-red with violet tones to cherry. Nose fruity and intense, with complexity. Palate structured and fresh; clean, lasting finish. Aged: garnet red to tile-tinged ruby.",
+    "text": "Clear and bright, medium-high colour: purple to ruby young, purple-red to tile-edged red with wood. Fruity and/or oaky nose. Balanced, medium-high body, integrated fresh acidity.",
     "cite": [
-     "prado-de-irache-doc:p1"
+     "prado-de-irache-doc2:p3"
     ]
    },
    "famous": {
@@ -230,21 +230,23 @@
      "navarra-wiki"
     ],
     "others": [
-     "Moscatel Grano Menudo",
-     "Cabernet Sauvignon",
-     "Merlot",
-     "Macabeo",
      "Graciano",
-     "Garnacha Blanca",
-     "Chardonnay",
-     "Alarije",
-     "Mazuela",
+     "Mazuelo",
+     "Merlot",
+     "Cabernet Sauvignon",
+     "Syrah",
      "Pinot Noir",
-     "Sauvignon Blanco",
-     "Syrah"
+     "Garnacha Roja-Garnacha Roya",
+     "Chardonnay",
+     "Garnacha blanca",
+     "Viura",
+     "Malvasía",
+     "Moscatel de grano menudo",
+     "Sauvignon Blanc",
+     "Oneca"
     ],
     "othersCite": [
-     "navarra-doc"
+     "navarra-pliego:p6"
     ]
    },
    "styles": {
@@ -262,9 +264,9 @@
     ]
    },
    "climate": {
-    "text": "Mediterranean with Atlantic influence in the northwest; a cold, drying wind prevails; 400 to 500 mm of rain on average.",
+    "text": "Mediterranean with some Atlantic influence in the nor-northwest; the cold, drying cierzo wind prevails; 350 to 800 mm of rain on average.",
     "cite": [
-     "navarra-doc:p8"
+     "navarra-pliego:p8"
     ]
    },
    "soil": {
@@ -360,9 +362,10 @@
     ]
    },
    "soil": {
-    "text": "No soil type is named; the document says the soils give fruity, alcoholic, high-acid wines.",
+    "text": "Brown, generally loamy, alkaline soils rich in active lime; calcisols carry most traditional vines, gipsisols lie south-west of Barbastro.",
     "cite": [
-     "somontano-doc:p7"
+     "somontano-pliego:p7",
+     "somontano-pliego:p8"
     ]
    },
    "tastes": {
@@ -393,6 +396,12 @@
    "producers": {
     "items": [],
     "cite": []
+   },
+   "altitude": {
+    "text": "Between 350 and 1000 m.",
+    "cite": [
+     "somontano-pliego:p7"
+    ]
    }
   },
   {
@@ -420,10 +429,13 @@
      "Chardonnay",
      "Cabernet Sauvignon",
      "Merlot",
-     "Sauvignon Blanco"
+     "Sauvignon Blanc",
+     "Caladoc",
+     "Marselan",
+     "Viognier"
     ],
     "othersCite": [
-     "campo-de-borja-doc"
+     "campo-de-borja-pliego:p5"
     ]
    },
    "styles": {
@@ -447,8 +459,10 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly brown limy and terrace soils, well drained; clay-iron soils on slopes near Moncayo.",
+    "cite": [
+     "campo-de-borja-pliego:p6"
+    ]
    },
    "tastes": {
     "text": "Reds: clear cherry; ripe, floral fruit; long, smooth, structured, fleshy. Whites and rosés: floral, fruity; fresh, acidic.",
@@ -477,7 +491,8 @@
    "why": {
     "text": "Vines grow on flat ground at about 460 to 495 m, in deep, stony soils. A dry climate and the cierzo wind suit them.",
     "cite": [
-     "urbezo-doc:p5"
+     "urbezo-doc:p5",
+     "urbezo-doc:p6"
     ]
    },
    "grapes": {
@@ -506,19 +521,21 @@
     ],
     "text": "Whites, rosados and dry reds, including carbonic-maceration and barrel-aged reds.",
     "cite": [
-     "urbezo-doc:p1"
+     "urbezo-doc:p1",
+     "urbezo-doc:p2"
     ]
    },
    "climate": {
     "text": "Dry: about 423 mm of rain a year, dry summers, frost mid-October to April; the cierzo wind guards against fungal disease.",
     "cite": [
-     "urbezo-doc:p5"
+     "urbezo-doc:p6"
     ]
    },
    "soil": {
     "text": "Loam soils (sandy, sandy-clay and clay loams), deep, well drained and low in humus.",
     "cite": [
-     "urbezo-doc:p5"
+     "urbezo-doc:p5",
+     "urbezo-doc:p6"
     ]
    },
    "altitude": {
@@ -530,7 +547,8 @@
    "tastes": {
     "text": "Reds: ripe cherry, violet to ruby; floral, red and black fruit; soft, complex. Whites: pale green-straw; floral, orchard, stone and tropical fruit; lively. Rosés: pink with violet; floral, red fruit.",
     "cite": [
-     "urbezo-doc:p1"
+     "urbezo-doc:p1",
+     "urbezo-doc:p2"
     ]
    },
    "famous": {
@@ -549,7 +567,7 @@
      }
     ],
     "cite": [
-     "urbezo-doc:p1"
+     "urbezo-doc:p2"
     ]
    },
    "producers": {
@@ -571,16 +589,21 @@
     "others": [
      "Merlot",
      "Garnacha Tinta",
-     "Tempranillo"
+     "Tempranillo",
+     "Cabernet Sauvignon",
+     "Syrah",
+     "Chardonnay"
     ],
     "othersCite": [
-     "ayles-doc:p4"
+     "ayles-doc:p4",
+     "ayles-pliego:p4"
     ]
    },
    "styles": {
     "kinds": [
      "rose",
-     "red"
+     "red",
+     "white"
     ],
     "text": "Rosado; young and barrel-aged reds; crianza red; the red «Tres de 3000».",
     "cite": [
@@ -589,8 +612,10 @@
     ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Rain 350-550 mm a year, driest in summer; wide day-night and yearly swings; frequent frosts.",
+    "cite": [
+     "ayles-pliego:p5"
+    ]
    },
    "soil": {
     "text": "Rich in calcium carbonate and balanced in lime. Low in organic matter and nitrogen; under 45% clay.",
@@ -644,20 +669,23 @@
     ],
     "others": [
      "Cabernet Sauvignon",
-     "Tempranillo",
-     "Syrah",
-     "Merlot",
      "Mazuela",
+     "Merlot",
+     "Syrah",
+     "Tempranillo",
+     "Juan Ibáñez",
+     "Monastrell",
+     "Vidadillo",
      "Chardonnay",
      "Garnacha Blanca",
-     "Monastrell",
-     "Moristel",
+     "Cariñena Blanca",
      "Moscatel de Alejandría",
      "Parellada",
-     "Vidadillo"
+     "Sauvignon Blanc",
+     "Verdejo"
     ],
     "othersCite": [
-     "carinena-doc"
+     "carinena-pliego:p7"
     ]
    },
    "styles": {
@@ -681,8 +709,10 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Plain of Miocene clays; cascajo, a brown limy soil, most widespread; poor rocky foothills.",
+    "cite": [
+     "carinena-pliego:p9"
+    ]
    },
    "tastes": {
     "text": "Reds: deep purple-cherry with violet to ruby glints; intense ripe red fruit; fleshy, dry. Whites: pale yellow; fresh, fruity, soft, light. Rosés: pink with violet to salmon; fresh, fruity.",
@@ -743,7 +773,6 @@
      "Syrah",
      "Garnacha Blanca",
      "Chardonnay",
-     "Alarije",
      "Bobal",
      "Cabernet Sauvignon",
      "Gewürztraminer",
@@ -751,10 +780,11 @@
      "Merlot",
      "Monastrell",
      "Moscatel de Alejandría",
-     "Sauvignon Blanco"
+     "Sauvignon Blanc",
+     "Malvasía"
     ],
     "othersCite": [
-     "calatayud-doc"
+     "calatayud-pliego:p8"
     ]
    },
    "styles": {

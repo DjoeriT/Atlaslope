@@ -146,6 +146,6 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 
 ## State (keep current)
 - Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
-  (release 38), eight Andalucía places (release 39).
+  (release 38), eight Andalucía places (release 39), 11 Ebro places (PR #119).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.
