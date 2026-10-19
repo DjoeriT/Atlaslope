@@ -22,10 +22,10 @@ test('the Cebreros card shows its why line, a source and the three facts', async
 test('the Cebreros page shows grapes, measured rows and a source under each', async ({ page }) => {
   await open(page, '#place=cebreros&page');
   const pg = page.locator('.pg');
-  await expect(pg.locator('#grapes')).toContainText('Garnacha TintaAlbillo Real');
-  await expect(pg.locator('#land')).toContainText('Hot-summer Mediterranean 68%');
-  await expect(pg.locator('#land')).toContainText('Most of the land between 590 and 1,470 m');
-  for (const id of ['overview', 'grapes', 'land', 'where']) {
+  await expect(pg.locator('#rules')).toContainText('Garnacha TintaAlbillo Real');
+  await expect(pg.locator('#weather')).toContainText('Hot-summer Mediterranean 68%');
+  await expect(pg.locator('#ground')).toContainText('Most of the land between 590 and 1,470 m');
+  for (const id of ['place', 'weather', 'ground', 'rules']) {
     const link = pg.locator(`#${id} .src a`).first();
     await expect(link).toHaveAttribute('target', '_blank');
     await expect(link).toHaveAttribute('rel', /noopener/);
@@ -49,10 +49,10 @@ test('the report link is absent while no address is set', async ({ page }) => {
 
 test('a place whose sources name no main grape shows its other grapes instead', async ({ page }) => {
   await open(page, '#place=la-mancha&page');
-  const grapes = page.locator('#grapes');
+  const grapes = page.locator('#rules');
   await expect(grapes.getByText('Main grapes')).toHaveCount(0);
   await expect(grapes.locator('dt', { hasText: /^Also allowed/ })).toBeVisible();
-  await expect(page.locator('#land')).toContainText('%');
+  await expect(page.locator('#weather')).toContainText('%');
 });
 
 test('photos show with a credit that links to their Commons page', async ({ page }) => {
@@ -65,8 +65,9 @@ test('photos show with a credit that links to their Commons page', async ({ page
 
 test('a place that is not quizzed shows no measured rows', async ({ page }) => {
   await open(page, '#place=cava&page');
-  await expect(page.locator('#where dt', { hasText: 'Level' })).toBeVisible();
-  await expect(page.locator('#land')).toHaveCount(0);
+  await expect(page.locator('#place dt', { hasText: 'Level' })).toBeVisible();
+  await expect(page.locator('#weather')).toHaveCount(0);
+  await expect(page.locator('#ground')).toHaveCount(0);
 });
 
 test('the keyboard reaches every link on the Cebreros card', async ({ page }) => {
@@ -107,8 +108,8 @@ test('a long grape list opens and closes without losing focus', async ({ page })
 
 test('Rioja shows its famous styles and how it tastes, each with a source', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await expect(page.locator('#styles strong', { hasText: 'Gran Reserva' })).toBeVisible();
-  await expect(page.locator('#styles .src a').first()).toHaveAttribute('target', '_blank');
+  await expect(page.locator('#rules .pg-styles strong', { hasText: 'Gran Reserva' })).toBeVisible();
+  await expect(page.locator('#rules .src a').first()).toHaveAttribute('target', '_blank');
   await expect(page.locator('#taste b', { hasText: 'Reds' })).toBeVisible();
   await expect(page.locator('#taste .src a').first()).toHaveAttribute('target', '_blank');
 });
@@ -117,11 +118,11 @@ test('Rioja shows its famous styles and how it tastes, each with a source', asyn
 // each document once, in full, under Sources.
 test('the Rioja guide tags facts with short sources and lists each source once', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  const tag = page.locator('#overview .src.short a').first();
+  const tag = page.locator('.pg .src.short a', { hasText: 'EU single document' }).first();
   await expect(tag).toHaveText(/^EU single document · pp?\. \d+(–\d+)?$/);
   await expect(tag).toHaveAttribute('href', /^https:\/\//);
   await expect(tag).toHaveAttribute('title', /^Source: Documento único/);
-  await expect(page.locator('#terroir .src.short a').first()).toHaveText(/^Pliego · pp?\. \d+/);
+  await expect(page.locator('.pg-ch .src.short a').first()).toHaveText(/^Pliego · pp?\. \d+/);
   const list = page.locator('#sources li');
   const texts = await list.allTextContents();
   expect(texts.length).toBeGreaterThan(1);
