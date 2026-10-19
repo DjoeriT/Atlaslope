@@ -38,7 +38,7 @@ jobs:
           echo "publish started by $ACTOR for release-$RELEASE on $COMMIT"
           [[ "$RELEASE" =~ ^[1-9][0-9]*$ ]] || { echo "release must be a positive number"; exit 1; }
           [[ "$COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "commit must be a full 40-character hash"; exit 1; }
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.commit }}
           fetch-depth: 0
@@ -84,7 +84,7 @@ jobs:
           fi
           if passed "$COMMIT" push; then echo "reuse=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           echo "reuse=false" >> "$GITHUB_OUTPUT"; echo "Running the checks here."
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.reuse.outputs.reuse != 'true'
         with:
           node-version: 22
@@ -100,10 +100,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.commit }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -112,7 +112,7 @@ jobs:
         env:
           # Esri imagery key (owner's free ArcGIS account, repo secret). Empty until release 3.
           VITE_ESRI_API_KEY: ${{ secrets.VITE_ESRI_API_KEY }}
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
   deploy:
@@ -126,14 +126,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
   tag:
     needs: deploy
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.commit }}
       - name: Create release-N
