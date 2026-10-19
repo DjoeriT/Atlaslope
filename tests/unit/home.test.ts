@@ -37,6 +37,12 @@ describe('the Guides page', () => {
     const out = fillGuideList(guidesHtml, list);
     for (const r of list.rows) expect(out).toContain(link(r.id));
   });
+  it('points every photo at a file that exists (release 47: Binissalem has no 800 px copy)', () => {
+    const out = fillGuideList(guidesHtml, guideRows());
+    const files = [...out.matchAll(/\.\.\/(photos\/[^"\s]+\.webp)/g)].map((m) => m[1]);
+    expect(files.length).toBeGreaterThan(0);
+    for (const f of new Set(files)) expect(existsSync(`public/${f}`), f).toBe(true);
+  });
   it('puts zones after their place, in course order', () => {
     const ids = guideRows().rows.map((r) => r.id);
     expect(ids.indexOf('rioja-alta')).toBe(ids.indexOf('rioja') + 1);

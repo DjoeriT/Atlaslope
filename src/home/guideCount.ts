@@ -1,4 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import photoSizesFile from '../../data/photo-sizes.json';
 import { grapeLabel } from '../facts/format';
 import { sentences } from '../pages/sentence';
 import { loadTree } from '../tree';
@@ -95,10 +96,18 @@ const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string
   return parts.length ? `<p class="credit">Photos: ${parts.join('; ')}</p>` : '';
 };
 // the tile's own caption, so a reader ties the credit to the image (ReviewBot PR #114, P2 3)
+const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
+
 const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</figcaption>';
 
-const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean) =>
-  `<img src="../photos/800/${key}.webp" srcset="../photos/480/${key}.webp 480w, ../photos/800/${key}.webp 800w" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}" loading="lazy" />`;
+// A photo no wider than 800 px has no 800 copy, only its full file (release 47: Binissalem's photo 404'd on the Guides page)
+const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean) => {
+  const w = photoSizes.photos[key]?.w ?? 1200;
+  const set: [string, number][] = [480, 800].filter((s) => s < w).map((s) => [`../photos/${s}/${key}.webp`, s]);
+  if (w <= 800) set.push([`../photos/${key}.webp`, w]);
+  const src = set[set.length - 1][0];
+  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}" loading="lazy" />`;
+};
 
 const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
   const top = g.photo
