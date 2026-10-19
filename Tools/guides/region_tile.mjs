@@ -4,7 +4,7 @@
 // are dimmed as in the app) at that camera, flat, without the card and controls, and writes the region's own place names over it
 // (readable, largest place first, a name that would collide is dropped). Run it against a local debug-free build:
 //   VITE_ESRI_API_KEY=keyless npm run build && npx vite preview --port 4180 --strictPort &
-//   node Tools/guides/region_tile.mjs http://localhost:4180 cataluna [more ids] [--out Review/mock-guides-v2/tiles-pilot]
+//   node Tools/guides/region_tile.mjs http://localhost:4180 cataluna [more ids] [--out dir]
 // The Esri key only works on atlaslope.com, so Esri tiles go to the keyless World Imagery endpoint. Credit and paper trail: data/SOURCES.md.
 import { chromium } from '@playwright/test';
 import { execFileSync } from 'node:child_process';
@@ -24,16 +24,20 @@ const read = (f) => JSON.parse(readFileSync(f, 'utf8'));
 const places = read('data/places.json').places;
 const dops = read('data/dops.geojson').features;
 const added = read('data/added-boundaries.geojson').features;
+const zonesGeo = read('data/rioja-zones.geojson').features;
 const rings = (g) => (g.type === 'Polygon' ? [g.coordinates[0]] : g.coordinates.map((p) => p[0]));
 const shoelace = (r) => r.reduce((s, p, i) => { const q = r[(i + 1) % r.length]; return s + p[0] * q[1] - q[0] * p[1]; }, 0);
 // Web Mercator in world pixels at zoom 0 (512 px tiles, as MapLibre)
 const mx = (lo) => ((lo + 180) / 360) * 512;
 const my = (la) => (0.5 - Math.log(Math.tan(Math.PI / 4 + (la * Math.PI) / 360)) / (2 * Math.PI)) * 512;
 
-/** The region's places that have a boundary: name, centroid of the largest ring, and every ring (for the fit). */
-function placesOf(region) {
-  return places.filter((p) => p.region === region).flatMap((p) => {
-    const f = p.boundary === 'mapa-2014' ? dops.find((d) => d.properties.code === p.layerCode) : added.find((a) => a.properties.id === p.id);
+/** The region's places (kind zone: the zones of its own places) that have a boundary: name, centroid of the largest ring, and every ring (for the fit). */
+function placesOf(region, zones = false) {
+  const own = places.filter((p) => p.region === region);
+  const ids = new Set(own.map((p) => p.id));
+  return own.filter((p) => (p.kind === 'zone') === zones && (!zones || ids.has(p.parent))).flatMap((p) => {
+    const f = p.boundary === 'mapa-2014' ? dops.find((d) => d.properties.code === p.layerCode)
+      : p.boundary === 'rioja-zones' ? zonesGeo.find((z) => z.properties.zone === p.name) : added.find((a) => a.properties.id === p.id);
     if (!f) return [];
     const all = rings(f.geometry);
     const big = [...all].sort((a, b) => Math.abs(shoelace(b)) - Math.abs(shoelace(a)))[0];
@@ -55,8 +59,13 @@ await ctx.addInitScript(() => { try { localStorage.setItem('atlaslope-first-run'
 
 for (const id of regions) {
   const list = placesOf(id);
+  const zoneList = placesOf(id, true);   // labelled after the places, so they only get what is left
   if (!list.length) throw new Error(`${id}: no places with a boundary in data/places.json`);
-  const pts = list.flatMap((p) => p.rings.flat()).map(([lo, la]) => [mx(lo), my(la)]);
+  // A place that spreads over far more ground than the typical one (Cava is scattered over half of Spain) is drawn but does not set the frame.
+  const diag = (p) => { const q = p.rings.flat(); return Math.hypot(Math.max(...q.map((c) => c[0])) - Math.min(...q.map((c) => c[0])), Math.max(...q.map((c) => c[1])) - Math.min(...q.map((c) => c[1]))); };
+  const median = [...list].map(diag).sort((a, b) => a - b)[Math.floor(list.length / 2)];
+  const fit = list.filter((p) => diag(p) <= 8 * median);
+  const pts = (fit.length ? fit : list).flatMap((p) => p.rings.flat()).map(([lo, la]) => [mx(lo), my(la)]);
   const [x0, x1] = [Math.min(...pts.map((p) => p[0])), Math.max(...pts.map((p) => p[0]))];
   const [y0, y1] = [Math.min(...pts.map((p) => p[1])), Math.max(...pts.map((p) => p[1]))];
   const zoom = Math.min(10, Math.log2(Math.min((FW * (1 - 2 * AIR)) / (x1 - x0), (FH * (1 - 2 * AIR)) / (y1 - y0))));
@@ -73,7 +82,7 @@ for (const id of regions) {
   const clip = { x: Math.round(box.x + box.width / 2 - FW / 2), y: Math.round(box.y + box.height / 2 - FH / 2), width: FW, height: FH };
   const FONT = 26, PADX = 9, HEIGHT = 40;
   const placed = [];
-  for (const p of list) {
+  for (const p of [...list, ...zoneList]) {
     const x = clip.x + FW / 2 + (mx(p.lng) - cx) * S, y = clip.y + FH / 2 + (my(p.lat) - cy) * S;
     const w = p.name.length * FONT * 0.56 + PADX * 2;
     const b = { x: x - w / 2, y: y - HEIGHT / 2, w, h: HEIGHT };
