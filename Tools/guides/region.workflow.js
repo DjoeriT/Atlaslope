@@ -9,7 +9,9 @@ export const meta = {
   ],
 }
 
-// args: { region: 'andalucia', facts: 'content/facts/andalucia.json', places: [{ id, source }] }
+// args: { region: 'andalucia', facts: 'content/facts/andalucia.json', places: [{ id, source }], recheck?: true }
+// recheck: skip writing and run the sentence check again on the existing guides, after the thread's sample found a miss
+// and CHECKER.md gained that miss (plan step 6).
 // source is the content/sources.json id the guide cites, e.g. 'jerez-pliego'.
 // Run from the repo root. Each helper starts empty, writes only its own files and returns a short summary,
 // so no long context sits between helper runs (lesson of the Castilla y León run, Review/guide-pipeline-plan.md).
@@ -70,12 +72,15 @@ Write content/guides/${p.id}.json and nothing else. ${safety}`
 const checkPrompt = p => `Follow Tools/guides/CHECKER.md exactly for content/guides/${p.id}.json (source id "${p.source}").
 Pliego text: the file ${manifest} maps "${p.source}" to; read only cited pages with Tools/guides/pages.py.
 Fact sheet: the "${p.id}" entry of ${args.facts}.
-Edit only content/guides/${p.id}.json and write Review/guides-check/${p.id}.md. Do not edit the fact sheet; report its disagreements.
+Edit only content/guides/${p.id}.json and ${args.recheck
+  ? `add a "## Second check" section at the end of Review/guides-check/${p.id}.md (keep the first check). Count only this pass.`
+  : `write Review/guides-check/${p.id}.md.`} Do not edit the fact sheet; report its disagreements.
 ${safety}`
 
 const results = await pipeline(
   args.places,
-  p => agent(writePrompt(p), { label: `write ${p.id}`, phase: 'Write', model: 'sonnet', schema: WRITE }),
+  p => args.recheck ? { ok: true, words: 0, warnings: 0, note: 'recheck' }
+    : agent(writePrompt(p), { label: `write ${p.id}`, phase: 'Write', model: 'sonnet', schema: WRITE }),
   (w, p) => w && agent(checkPrompt(p), { label: `check ${p.id}`, phase: 'Check', model: 'opus', schema: CHECK })
     .then(c => ({ id: p.id, write: w, check: c })),
 )
@@ -93,7 +98,7 @@ ${JSON.stringify(disagreements, null, 1)}
 For each: open the cited page with Tools/guides/pages.py (the pliego file for a place is in ${manifest}) and confirm it.
 Apply only what the page plainly says, in the sheet's existing style, citing "<source id>:p<n>". Skip a correction that is a matter
 of wording or that the page does not settle, and say why. Keep the sheet's schema; run \`npm test -- tests/unit\` once at the end.
-Also write ${dir}/fact-sheet-fixes.md: one line per correction, applied or skipped, with the reason. ${safety}`,
+Also ${args.recheck ? 'append a "## Second check" section to' : 'write'} ${dir}/fact-sheet-fixes.md: one line per correction, applied or skipped, with the reason. ${safety}`,
   { label: 'fact sheets', phase: 'Sheets', model: 'opus', schema: SHEETS })
 }
 
