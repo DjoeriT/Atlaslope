@@ -3,7 +3,7 @@
   "title": "Why Ribeira Sacra tastes the way it does",
   "minutes": 3,
   "lede": {
-    "text": "Vines grow on terraced canyon walls above the Miño and the Sil. The climate is more continental than Atlantic. The soils range from granite to slate.",
+    "text": "Vines grow on terraced canyon walls above the Miño and the Sil, on soils from granite to slate. The climate is more continental than Atlantic.",
     "cite": [
       "ribeira-sacra-pliego:p11",
       "ribeira-sacra-pliego:p12"
@@ -17,7 +17,7 @@
       },
       {
         "term": "Rosado",
-        "text": "A rosé must contain at least 85% of principal red varieties, so it is always Súmmum."
+        "text": "A rosé must contain at least 85% of principal red varieties, so it always meets the Súmmum rule of 85% principal grapes."
       },
       {
         "term": "Subzone name",
@@ -60,7 +60,7 @@
             42.3905
           ],
           "zoom": 11,
-          "caption": "The Miño and the Sil run to their meeting through steep gorges or canyons.",
+          "caption": "The Miño and the Sil run through steep gorges to where they meet.",
           "cite": [
             "ribeira-sacra-pliego:p11"
           ]

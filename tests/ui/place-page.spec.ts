@@ -111,10 +111,10 @@ test('Rioja shows three frames of its five photos, and all five in the viewer', 
 });
 
 test('a place without photos shows its name on a cover, never a broken image', async ({ page }) => {
-  for (const hash of ['#place=txakoli-alava', '#place=txakoli-alava&page']) {
+  for (const hash of ['#place=ayles', '#place=ayles&page']) {
     await open(page, hash);
     await expect(page.locator('.namecover')).toBeVisible();
-    await expect(page.locator('.namecover')).toContainText('Txakol');
+    await expect(page.locator('.namecover')).toContainText('Aylés');
     await expect(page.locator('.card img, .pg img')).toHaveCount(0);
   }
 });

@@ -408,7 +408,7 @@
         },
         {
           "id": "canon-do-sil",
-          "name": "Cañón del Sil",
+          "name": "Canón do Sil",
           "at": [-7.5642, 42.3905],
           "lines": [
             "The Sil and the Miño flow through steep canyons towards their meeting.",
@@ -535,7 +535,7 @@
           "name": "Vilardevós",
           "at": [-7.2949, 41.9164],
           "lines": [
-            "The whole municipality is in the Monterrei slope subzone."
+            "The whole municipality is in the Monterrei hillside subzone."
           ],
           "cite": [
             "monterrei-pliego:p11"

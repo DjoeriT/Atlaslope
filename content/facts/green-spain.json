@@ -531,7 +531,7 @@
     "styles": [
      {
       "name": "Súmmum",
-      "text": "Made with at least 85 % of the principal grape varieties."
+      "text": "Made with at least 85% of the principal grape varieties."
      },
      {
       "name": "Barrica",
@@ -717,7 +717,7 @@
      "sparkling",
      "sweet"
     ],
-    "text": "Whites and reds, including Castes from the principal grapes. Also Barrica, quality sparkling wine and Tostado, a sweet wine from raisined grapes.",
+    "text": "Whites and reds, including Castes (Galician for grape varieties), made from the principal grapes. Also Barrica, quality sparkling wine and Tostado, a sweet wine from raisined grapes.",
     "cite": [
      "ribeiro-pliego:p5"
     ]
