@@ -3,9 +3,10 @@
  "title": "Why Urueña tastes the way it does",
  "minutes": 3,
  "lede": {
-  "text": "Urueña is a single estate of 78 ha on a flat plain, and 75% of its vines are Syrah, Cabernet Sauvignon and Merlot. Its neighbours grow mostly Tempranillo or Verdejo, so the wines have a very different profile.",
+  "text": "Urueña is one continuous block of 78 ha on a plain, and 75% of its vineyard is Syrah, Cabernet Sauvignon or Merlot. The nearest appellations grow almost only Tempranillo or the white Verdejo. Urueña's grape mix makes the profile of its wines very different.",
   "cite": [
    "uruena-pliego:p5",
+   "uruena-pliego:p7",
    "uruena-pliego:p12"
   ]
  },
@@ -16,8 +17,8 @@
    "title": "One estate between two streams",
    "paras": [
     "The whole appellation is one continuous block of 78 ha in the municipality of Urueña, in Valladolid province. The grapes must be made into wine in the winery inside the zone.",
-    "Three watercourses mark its edges: the river Sequillo, the arroyo de la Ermita and the regato del Veterinario. The land is a plain at 710 to 720 m above sea level. Only 1.8% of Castilla y León lies at that height.",
-    "Urueña is a pago, the traditional word for a plot of land with its own soil and microclimate that sets it apart from its neighbours. Toro is the closest and most similar of the surrounding appellations."
+    "Three streams mark its edges. The river Sequillo lies to the north. The arroyo (stream) de la Ermita bounds it on the east, and the regato (brook) del Veterinario on the west. The land is a plain at 710 to 720 m above sea level. Only 1.8% of Castilla y León lies at that height.",
+    "Urueña fits the traditional idea of a pago: a continuous piece of land whose own soil and microclimate set it apart from its neighbours, long given over to vines. Toro is the closest and most similar of the surrounding appellations."
    ],
    "cite": [
     "uruena-pliego:p5",
@@ -29,10 +30,23 @@
     {
      "label": "The Urueña estate",
      "place": "uruena",
-     "caption": "78 ha in one block, between the Sequillo, the arroyo de la Ermita and the regato del Veterinario.",
+     "caption": "78 ha in one block on a plain at 710 to 720 m, with the river Sequillo to the north.",
      "cite": [
       "uruena-pliego:p5",
       "uruena-pliego:p7"
+     ]
+    },
+    {
+     "label": "The river Sequillo",
+     "point": [
+      -5.221,
+      41.76
+     ],
+     "zoom": 10,
+     "caption": "The Sequillo, a tributary of the Valderaduey in the Duero basin, carries most of the zone's water away.",
+     "cite": [
+      "uruena-pliego:p7",
+      "uruena-pliego:p10"
      ]
     }
    ]
@@ -43,13 +57,14 @@
    "title": "Dry summers and cold nights",
    "paras": [
     "About 410 mm of rain falls in a year, mostly in autumn and least in summer. June to September are dry months. The yearly mean is about 11.4 °C, with 2,650 hours of sun.",
-    "With no mountains in the way, humid air from the Atlantic can come in. The páramo, the high limestone plateau nearby, shelters the zone from the east.",
-    "After veraison the grapes ripen over a long cycle, with large swings between day and night. This keeps the acidity naturally in balance and fixes aromas and colour. The wines hold their colour well and can be kept a long time after bottling.",
+    "With no mountains in the way, humid air from the ocean can come in. The páramo, the high limestone plateau nearby, shelters the zone from the east.",
+    "After veraison the grapes ripen over a long cycle, with large swings between day and night. The grapes keep a natural control of their acidity, which helps fix the aromas and makes them more complex. That acidity makes the colour much more stable, so the wines can keep for longer after bottling.",
     "Frost is a medium risk, usually from October to the end of April. In extreme years it can run from the end of September to the end of May. Pruning is done at the end of winter, and work on the green growth starts at the end of May, when frost risk is minimal."
    ],
    "cite": [
     "uruena-pliego:p8",
     "uruena-pliego:p10",
+    "uruena-pliego:p9",
     "uruena-pliego:p12"
    ]
   },
@@ -58,7 +73,7 @@
    "beat": "ground",
    "title": "Poor, stony and well drained",
    "paras": [
-    "The ground is made of Tertiary conglomerates and younger terrace and valley fill. It is stony, and more limestone spills down from the páramo. The stones are counted as a quality factor.",
+    "The rock is two Tertiary materials, the red Belver conglomerates and the Tierra de Campos beds, under younger fill from terraces and valley floors. It is stony, and limestone washing down from the páramo adds more stones at the surface. The stones are counted as a quality factor.",
     "Fertility is medium to low, with organic matter of 0.75 to 1.5% and little nitrogen. Soils are mostly sandy clay loam, even all the way down, which cuts run-off. Water drains away well, largely into the Sequillo.",
     "These poor, well-drained soils make wines rich in extract and in anthocyanins, the colour pigments."
    ],
@@ -80,8 +95,8 @@
     "Yields are capped at 8,000 kg of grapes per hectare, and no more than 56 hl per hectare. At most 70 litres of juice may be pressed from every 100 kg of grapes."
    ],
    "cite": [
-    "uruena-pliego:p3",
     "uruena-pliego:p4",
+    "uruena-pliego:p5",
     "uruena-pliego:p6",
     "uruena-pliego:p10",
     "uruena-pliego:p11",

@@ -34,3 +34,4 @@
 | Check | dehesa-penalba | Opus | 90,277 | 3.4 |
 | Check | cebreros | Opus | 88,051 | 3.5 |
 | Check | abadia-retuerta | Opus | 89,573 | 3.6 |
+| Check | uruena | Opus | 91,466 | 3.7 |
