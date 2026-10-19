@@ -31,6 +31,9 @@ A general, fun wine reference for anyone who loves wine. It is not exam prep: ne
   as late as May", not "The pliego notes that frost...". Keep the source's own hedges ("usually", "about").
 - Numbers as the source gives them: same value, same unit, no rounding or conversion. Write them in digits even where the source
   uses words or roman numerals ("6,500 kg", "the 15th century"); the check lists those for the sentence checker to confirm.
+- Only the causes the page itself gives. Never join two facts with "so", "which is why" or "that is what" unless the page links
+  them. Keep every hedge ("generally", "about", "in places"), and never widen a claim from one zone or one style to all. (The first
+  Rueda draft needed 27 fixes out of 52 sentences, mostly for these.)
 - No hype words the source doesn't use ("stunning", "world-class"). Fun comes from surprising true facts, not adjectives.
 - Local terms stay in Spanish, explained once ("páramo, the high limestone plateau").
 - Every fact once on the page. As long as the source allows and no longer, at most about 800 words.
