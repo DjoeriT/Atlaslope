@@ -30,14 +30,14 @@ test('the Rioja page tells why it tastes the way it does in four beats, with 7 p
 });
 
 test('a place with no guide has no guide chapters', async ({ page }) => {
-  await open(page, '#place=priorat&page');
+  await open(page, '#place=navarra&page');
   await expect(page.locator('.pg-ch')).toHaveCount(0);
   await expect(page.locator('.pg-zguide')).toHaveCount(0);
 });
 
 test('a place with no guide still answers "Why X tastes the way it does" in its four beats', async ({ page }) => {
-  await open(page, '#place=priorat&page');
-  await expect(page.locator('.pg-spine #why-h')).toHaveText('Why Priorat tastes the way it does');
+  await open(page, '#place=navarra&page');
+  await expect(page.locator('.pg-spine #why-h')).toHaveText('Why Navarra tastes the way it does');
   const ids = await page.locator('.pg main > section.pg-beat').evaluateAll((els) => els.map((e) => e.id));
   expect(ids).toEqual(['place', 'weather', 'ground', 'rules']);
   await expect(page.locator('#place-h')).toHaveText('The place');
