@@ -35,3 +35,5 @@
 | Check | cebreros | Opus | 88,051 | 3.5 |
 | Check | abadia-retuerta | Opus | 89,573 | 3.6 |
 | Check | uruena | Opus | 91,466 | 3.7 |
+| Fact sheets (16) | all | Opus | 200,154 | 7.8 |
+| Screenshots | 4 places | Sonnet | 65,069 | 4.5 |
