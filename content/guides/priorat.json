@@ -3,7 +3,7 @@
  "title": "Why Priorat tastes the way it does",
  "minutes": 4,
  "lede": {
-  "text": "Priorat's vines push their roots between sheets of slate, and bedrock lies only about 10-15 cm down. The vines suffer and give about 1 kg of grapes each on average. The wines have concentration, body and structure.",
+  "text": "Priorat's vines push their roots between sheets of slate, with bedrock only about 10-15 cm down, and give about 1 kg of grapes each on average. The wines have concentration, body and structure.",
   "cite": [
    "priorat-pliego:p22",
    "priorat-pliego:p24"
@@ -69,11 +69,11 @@
   {
    "id": "air",
    "beat": "weather",
-   "title": "Kept from the sea, sheltered from the north",
+   "title": "Set back from the sea, sheltered from the north",
    "paras": [
     "The zone is relatively cut off from the sea's influence, and the Montsant shelters it from cold north winds. This gives marked swings in temperature between day and night. The average annual temperature is between 14 and 15 degrees, and average annual rainfall is between 400 and 500 litres per m².",
-    "Northwest winds dry moisture off the surface quickly. Winters are cold and summers dry and hot. Hard ground and dry weather keep the vines small, which makes disease less likely.",
-    "With the steep slopes and the old, little-mechanised ways of growing, this brings low yields and small vines. Bunches are small and concentrated, and ripening is slow and long. The grapes ripen fully and can be picked at the best moment."
+    "Northwest winds dry moisture off the surface quickly. Winters are cold and summers dry and hot. Hard ground and dry weather favour small vines, which helps keep disease low.",
+    "With the steep slopes and the old, little-mechanised ways of growing, this favours low yields. Bunches are small and concentrated, and ripening is slow and long. The weather and the slate favour full ripening, so the grapes can be picked at the best moment."
    ],
    "cite": [
     "priorat-pliego:p22",
@@ -112,7 +112,7 @@
    "title": "Reds stand out, with liqueur and late-harvest wines too",
    "paras": [
     "Two red grapes are recommended: Garnacha tinta and Cariñena, also called Mazuela or Samsó. Eight more red grapes are authorised, such as Garnacha peluda and Syrah. Nine white grapes are authorised too, such as Garnacha blanca and Viognier.",
-    "Reds stand out, with a strong dark red colour. Whites, rosados (rosé) and reds have a high share of dry extract and a sound acidity that helps them age. The wines are marked by concentration, body and structure. Still wines must reach at least 13% vol. for white and rosado, and 13.5% vol. for red.",
+    "Reds stand out, with a strong dark red colour. Whites, rosados (rosé) and reds have a high share of dry extract and a sound acidity that helps them age. Still wines must reach at least 13% vol. for white and rosado, and 13.5% vol. for red.",
     "Yields are low: at most 6,000 kg/ha of red grapes and 8,000 kg/ha of white, or 39 hl/ha and 52 hl/ha of wine. Harvest is preferably by hand, and the traditional training is a free-standing bush (en vaso). Vino de finca comes from a single named estate whose owner also makes the wine, with yields 15% lower.",
     "Priorat also makes traditional liqueur wines (vinos de licor). Rancio ages oxidatively in wood for at least five years, in small barrels called carratells that let in a lot of oxygen. Reds lose their colour and whites darken. Rancio may not be fortified with wine spirit, and it counts as rancio dulce from 45 g/l of sugar.",
     "The other liqueur wines are fortified with wine spirit to at least 15% vol. Vino de licor dulce gets its spirit once 8 degrees of natural alcohol are reached. Mistela, white or red, is fresh unfermented must mixed with wine spirit. Vino dulce natural gets its spirit partway through fermentation.",
@@ -155,6 +155,14 @@
    {
     "term": "Barrica",
     "text": "The wine spent time in wooden containers of at most 600 litres. The time in them must be stated in months and years."
+   },
+   {
+    "term": "Roble",
+    "text": "The wine spent time in oak containers of at most 600 litres. The time in them must be stated in months or years."
+   },
+   {
+    "term": "Fermentado en barrica",
+    "text": "The wine fermented in wooden containers of at most 600 litres."
    }
   ],
   "cite": [

@@ -3,7 +3,7 @@
  "title": "Why Penedès tastes the way it does",
  "minutes": 3,
  "lede": {
-  "text": "Penedès sits in a young basin ringed by older mountains, under a Mediterranean climate. Its white grapes reach their best ripeness for these wines only here, and its whites are known for freshness, acidity and fruit.",
+  "text": "Penedès sits in a young basin ringed by older mountains, under a Mediterranean climate. Soil, climate and the people who work the vines come together only here to bring its white grapes to their best ripeness.",
   "cite": [
    "penedes-pliego:p13",
    "penedes-pliego:p14",
@@ -70,7 +70,7 @@
   {
    "id": "soils",
    "beat": "ground",
-   "title": "Deep, well-drained soils",
+   "title": "Loamy soils that mostly drain well",
    "paras": [
     "Active limestone runs between 5 and 10%. Soils are 40 cm to 120 cm or more deep, and most are between 80 and 120 cm. Drainage is generally good.",
     "The surface texture is loam and silty loam. Between 1% and 5% of the soil at root depth is coarse stones.",
@@ -85,17 +85,18 @@
    "beat": "rules",
    "title": "Fresh whites, sparkling and sweet wines",
    "paras": [
-    "Penedès whites are known for their freshness, acidity and fruit. Its white grape varieties reach their best ripeness for these wines only in Penedès, where soil, climate and work come together. The rules allow 18 white varieties, Xarel·lo and Parellada among them. Ull de Llebre and Monastrell are among the 13 red varieties.",
-    "Yields are capped at 12,000 kg per hectare for white varieties and sparkling wine, and 9,000 kg for red varieties.",
-    "Whites smell of white and tropical fruit, and of ripe fruit if they have been in barrel. Rosados (rosé wines) range from pale pink to cherry in colour and smell of red fruit. Reds are garnet when young, and turn tawny red with age.",
-    "Sparkling wine is made by the traditional method, with at least 15 months from tirage to disgorging and a pressure of over 3.5 bar. It may also be made by the ancestral method, where the first fermentation is slowed or stopped so the grapes' own sugar drives the second, with no sugar or must added. The grapes and wine must be organic. By sugar it is labelled from Brut natural, under 3 g/l, to Dulce, over 50 g/l. Vino de aguja is a lightly sparkling wine, with a pressure of 1 to 2.5 bar.",
+    "Penedès whites are known for their freshness, acidity and fruit, owed to the soil, the unique climate and the people who work the vines. The rules allow 18 white varieties, Xarel·lo and Parellada among them. Ull de Llebre and Monastrell are among the 13 red varieties.",
+    "From the 2025 harvest on, all grapes and wines must be certified organic. Yields are capped at 12,000 kg per hectare for white varieties and sparkling wine, and 9,000 kg for red varieties.",
+    "Still wines are white, rosado (rosé) or red, at 9.5% vol. or more for white and rosado and 11% vol. for red. Rosados owe their colour, aroma and fruit to their grapes, grown in this soil and climate.",
+    "Sparkling wine is made by the traditional method, with at least 15 months from tirage to disgorging and a pressure of over 3.5 bar. It may also be made by the ancestral method, where the first fermentation is slowed or stopped so the grapes' own sugar drives the second, with no sugar or must added. By sugar it is labelled in seven steps, from Brut natural, under 3 g/l, to Dulce, over 50 g/l. Vino de aguja is a lightly sparkling wine, with a pressure of 1 to 2.5 bar.",
     "Sweet wines come in four kinds. Vino dulce natural is a fortified wine made from overripe grapes of at least 240 g/l sugar, with alcohol added. Vino dulce de Malvasía de Sitges is also fortified, and is made only from the Malvasía de Sitges grape. Vino dulce de uva sobremadurada (overripe-grape sweet wine) is not fortified: it is made from overripe grapes with no artificial boost to strength. The fourth is the dulce de frío, in which cold stops fermentation and 70 to 150 g/l of sugar stays in the wine, with nothing added."
    ],
    "cite": [
+    "penedes-pliego:p1",
     "penedes-pliego:p2",
+    "penedes-pliego:p3",
     "penedes-pliego:p4",
     "penedes-pliego:p5",
-    "penedes-pliego:p7",
     "penedes-pliego:p12",
     "penedes-pliego:p15"
    ]
@@ -112,9 +113,10 @@
    },
    {
     "term": "Reserva",
-    "text": "A white needs 6 months in oak and 24 months in all, and a red 12 months in oak and 36 months in all.",
+    "text": "A white needs 6 months in oak and 24 months in all, and a red 12 months in oak and 36 months in all. A sparkling wine may also be called Reserva after at least 15 months from tirage to disgorging.",
     "cite": [
-     "penedes-pliego:p19"
+     "penedes-pliego:p19",
+     "penedes-pliego:p20"
     ]
    },
    {
@@ -127,19 +129,75 @@
    },
    {
     "term": "Vino de Mas",
-    "text": "A wine from a masía (a Catalan farmhouse) documented before 1900, from organic vines at least ten years old within 2 km of the farmhouse.",
+    "text": "A wine from a masía (a Catalan farmhouse) documented before 1900, from organic vines at least ten years old within 2 km of the farmhouse. Its grape yields are 15% below the general limit.",
     "cite": [
+     "penedes-pliego:p12",
      "penedes-pliego:p24",
      "penedes-pliego:p25",
      "penedes-pliego:p27"
     ]
+   },
+   {
+    "term": "Gran Vino de Mas",
+    "text": "The higher step of Vino de Mas: vines at least 25 years old, only the local varieties the rules list, such as Xarel·lo or Ull de Llebre, and at least ten years of acclaim in national or international publications.",
+    "cite": [
+     "penedes-pliego:p26",
+     "penedes-pliego:p27"
+    ]
+   },
+   {
+    "term": "Nuevo",
+    "text": "A wine with its vintage on the label, bottled between October of the harvest year and the following January.",
+    "cite": [
+     "penedes-pliego:p20"
+    ]
+   },
+   {
+    "term": "Joven",
+    "text": "A wine with its vintage on the label, bottled in the same year as its harvest.",
+    "cite": [
+     "penedes-pliego:p20"
+    ]
+   },
+   {
+    "term": "Roble",
+    "text": "The wine spent time in oak containers of at most 600 litres. The label must say for how many months or years.",
+    "cite": [
+     "penedes-pliego:p20"
+    ]
+   },
+   {
+    "term": "Barrica",
+    "text": "The wine spent time in wooden containers of at most 600 litres. The label must say for how many months or years.",
+    "cite": [
+     "penedes-pliego:p20"
+    ]
+   },
+   {
+    "term": "Fermentada en barrica",
+    "text": "The wine fermented in those same wooden containers. The time in them need not be given.",
+    "cite": [
+     "penedes-pliego:p20"
+    ]
+   },
+   {
+    "term": "No degollado",
+    "text": "An ancestral-method sparkling wine aged at least 4 years from tirage under a cork, sold without disgorging.",
+    "cite": [
+     "penedes-pliego:p3",
+     "penedes-pliego:p22"
+    ]
    }
   ],
   "cite": [
+   "penedes-pliego:p3",
+   "penedes-pliego:p12",
    "penedes-pliego:p19",
    "penedes-pliego:p20",
+   "penedes-pliego:p22",
    "penedes-pliego:p24",
    "penedes-pliego:p25",
+   "penedes-pliego:p26",
    "penedes-pliego:p27"
   ]
  }
