@@ -9,6 +9,6 @@
 - `npm test`: 308 of 308 pass [V].
 
 ## Open
-- Still marked unsure in the log, not in this slice: Valdepeñas `grapes.main`/`others` (pliego has p6 PRINCIPALES and p11 SECUNDARIAS,
-  so the batch-1 rule would allow it) and Vallegarcía `grapes.others`. Owner to say whether they go in a next small slice.
+- Valdepeñas and Vallegarcía grapes, also marked unsure higher up in the log, were already settled before this slice (sheets checked
+  19 Oct [V]); no unsure Meseta item is left.
 - Not checked in the app: the guide pages show the new lines (data-only change, covered by the facts check).
