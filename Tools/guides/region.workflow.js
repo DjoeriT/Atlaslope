@@ -63,19 +63,23 @@ const SHEETS = {
   required: ['applied', 'skipped', 'note'],
 }
 
-const writePrompt = p => `Follow Tools/guides/WRITER.md exactly for the place "${p.id}" (region ${args.region}).
-Pliego extract: ${dir}/${p.id}.extract.txt. Cite it as "${p.source}:p<n>".
-Fact sheet: the "${p.id}" entry of ${args.facts} (read it with grep or python, not the whole file).
-Manifest for the machine check: ${manifest}.
+const few = 'Work in as few steps as you can: every step re-reads all you have seen, so take one long step instead of many short ones. ' +
+  'Do not open other files or look anything up unless the pack lacks it.'
+
+const writePrompt = p => `Write the Terroir guide for "${p.id}" (region ${args.region}).
+Step 1: run \`python3 Tools/guides/pack.py write ${args.region} ${p.id} ${p.source}\`. It prints your brief, the format rules, the example,
+the fact sheet and the pliego. Step 2: write content/guides/${p.id}.json in one write. Step 3: run
+\`python3 Tools/guides/check_guide.py ${manifest} content/guides/${p.id}.json\` once and fix any ERROR in one edit.
+Flights: a "place" id must exist in data/places.json (one grep for all of them), otherwise use a point. ${few}
 Write content/guides/${p.id}.json and nothing else. ${safety}`
 
-const checkPrompt = p => `Follow Tools/guides/CHECKER.md exactly for content/guides/${p.id}.json (source id "${p.source}").
-Pliego text: the file ${manifest} maps "${p.source}" to; read only cited pages with Tools/guides/pages.py.
-Fact sheet: the "${p.id}" entry of ${args.facts}.
-Edit only content/guides/${p.id}.json and ${args.recheck
-  ? `add a "## Second check" section at the end of Review/guides-check/${p.id}.md (keep the first check). Count only this pass.`
-  : `write Review/guides-check/${p.id}.md.`} Do not edit the fact sheet; report its disagreements.
-${safety}`
+const checkPrompt = p => `Check content/guides/${p.id}.json sentence by sentence (source id "${p.source}").
+Step 1: run \`python3 Tools/guides/pack.py check ${args.region} ${p.id} ${p.source}\`. It prints your brief, the guide, every pliego page,
+the fact sheet and the OpenStreetMap points for the flights. Step 2: decide every verdict, then write the corrected guide in one write
+and ${args.recheck
+  ? `add a "## Second check" section at the end of Review/guides-check/${p.id}.md (keep the first check; count only this pass)`
+  : `write Review/guides-check/${p.id}.md`} in one write. Step 3: run \`python3 Tools/guides/check_guide.py ${manifest} content/guides/${p.id}.json\`
+once and fix any ERROR. Do not edit the fact sheet; report its disagreements. ${few} ${safety}`
 
 const results = await pipeline(
   args.places,

@@ -1,5 +1,8 @@
 # Guide sentence check brief (one guide per run)
 
+When the run hands you a pack (`Tools/guides/pack.py`), everything named below is in it: read nothing else, and use its
+OpenStreetMap points instead of new lookups.
+
 You check one Atlaslope guide against its pliego, sentence by sentence. You start fresh. Fact rule: a guide says only what the
 pliego says, on the page it cites. Every sentence, caption, label term and the lede is checked: nothing is sampled.
 

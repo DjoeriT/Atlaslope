@@ -129,7 +129,9 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 - Since Andalucía, one fixed workflow script runs the write and check helpers for a whole region, so no long thread sits between
   helper runs (owner card 19 Oct 2026): `Tools/guides/region.workflow.js`, args `{region, facts, places: [{id, source}]}`. It
   ends with one Opus run that applies the checkers' fact sheet disagreements (log `Review/guides-pipeline/<region>/fact-sheet-fixes.md`).
-  Sources are fetched first by one helper; the thread then samples 3 guides and opens the PR.
+  Sources are fetched first by one helper; the thread then samples 3 guides and opens the PR. Each helper starts from
+  `Tools/guides/pack.py`, which prints its brief, rules, guide, pliego pages, fact sheet and OpenStreetMap points in one go, so it
+  reads once and writes once (owner 19 Oct 2026: fewer steps, less re-reading). Cost per helper: `Tools/guides/usage.py`.
 
 ## The rest of the guide
 - **Fact sheet** (`content/facts/<region>.json`): the why line, grapes, styles, climate, soil, altitude, tastes, famous styles and

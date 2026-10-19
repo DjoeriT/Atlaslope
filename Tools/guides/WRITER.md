@@ -1,5 +1,8 @@
 # Guide writer brief (one place per run)
 
+When the run hands you a pack (`Tools/guides/pack.py`), everything named below is in it: read nothing else, and use its
+OpenStreetMap points instead of new lookups.
+
 You write the Terroir section of one Atlaslope guide, as `content/guides/<id>.json`, from that place's pliego. You start fresh and
 see only the files named here. Rules in full: `docs/guides.md` (read "What a guide is", "The page", "Flights", "Terroir").
 
