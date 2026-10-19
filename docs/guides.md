@@ -84,6 +84,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
 | 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
 | 19 Oct 2026 | Read the label lists only terms not already in the famous styles; famous styles stay in the rules beat | Green Spain pilot PR |
 | 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Study | this file, "Two formats"; PR #105 |
@@ -125,6 +126,10 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
   writes from `Tools/guides/WRITER.md`; `Tools/guides/check_guide.py` checks cites, beats, framing and numbers; a fresh Opus helper per
   guide runs `Tools/guides/CHECKER.md` on every sentence; the thread reads 3 guides end to end. Plan and figures:
   `Review/guide-pipeline-plan.md`. Inputs per region in `Review/guides-pipeline/<region>/`.
+- Since Andalucía, one fixed workflow script runs the write and check helpers for a whole region, so no long thread sits between
+  helper runs (owner card 19 Oct 2026): `Tools/guides/region.workflow.js`, args `{region, facts, places: [{id, source}]}`. It
+  ends with one Opus run that applies the checkers' fact sheet disagreements (log `Review/guides-pipeline/<region>/fact-sheet-fixes.md`).
+  Sources are fetched first by one helper; the thread then samples 3 guides and opens the PR.
 
 ## The rest of the guide
 - **Fact sheet** (`content/facts/<region>.json`): the why line, grapes, styles, climate, soil, altitude, tastes, famous styles and
@@ -139,6 +144,6 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 
 ## State (keep current)
 - Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
-  (release 38).
+  (release 38), eight Andalucía places (release 39).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.
