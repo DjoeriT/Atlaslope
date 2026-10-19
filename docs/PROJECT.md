@@ -1,7 +1,7 @@
 # AtlaSlope: project overview for a fresh session
 
 Written 19 Oct 2026 so a plain local Claude Code session in this repo has the context that lived in a hosted project. Tags: [V] verified,
-[O] owner said, [R] report, [A] assumed. Re-check numbers before relying on them. Rules are in `CLAUDE.md`; this file is the why and the state.
+[O] owner said, [R] report, [A] assumed. Re-check numbers before relying on them. Rules are in `CLAUDE.md` (the owner's verbatim standing rules: `docs/OWNER-RULES.md`); this file is the why and the state.
 
 ## What it is
 AtlaSlope is a free web app, "the wine study atlas": Spain's wine places seen from above on a satellite map, with a guide per place that
