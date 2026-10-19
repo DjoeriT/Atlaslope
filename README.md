@@ -24,7 +24,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
     src/tree/            the place tree (country to zone) and search
     src/facts/           fact sheets and guides: types, formatting, checks
     src/debug.ts         debug-only query flags (?fixture=, ?fresh=1), stripped from production builds
-    content/             fact sheets (content/facts), guides (content/guides), sources.json
+    content/             fact sheets (content/facts), guides (content/guides: Terroir chapters by beat, optional sections), sources.json
     data/                map layers and facts; SOURCES.md lists origin, date, licence and processing of every file
     tests/unit/          Vitest unit tests
     tests/ui/            Playwright UI tests against the built site with fixtures (tests/fixtures), no network

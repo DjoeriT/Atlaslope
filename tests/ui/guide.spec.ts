@@ -14,24 +14,34 @@ async function open(page: Page, hash: string) {
   await expect(page.locator('h1').first()).toBeVisible();
 }
 
-test('the Rioja page has a Terroir section after the overview, with 7 pills and a link in the title row', async ({ page }) => {
+test('the Rioja page tells why it tastes the way it does in four beats, with 7 pills and zone notes linking to the zone pages', async ({ page }) => {
   await open(page, '#place=rioja&page');
   expect(pills).toHaveLength(7);
   const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
-  expect(ids.slice(0, 2)).toEqual(['overview', 'terroir']);
-  await expect(page.locator('.pg-jump a').nth(1)).toHaveText('Terroir');
-  await expect(page.locator('#terroir .kicker')).toHaveCount(0); // one guide, one type: no kicker of its own (owner point 14)
-  await expect(page.locator('#terroir h2')).toHaveText('Why Rioja tastes the way it does');
-  await expect(page.locator('#terroir .fly')).toHaveCount(7);
-  await expect(page.locator('#terroir .pg-zguide > div')).toHaveCount(3);
-  await expect(page.locator('#terroir .pg-ch .src')).toHaveCount(4);
+  expect(ids.slice(0, 4)).toEqual(['place', 'weather', 'ground', 'rules']);
+  await expect(page.locator('.pg-jump a').first()).toHaveText('The place');
+  await expect(page.locator('.pg-spine .kicker')).toHaveCount(0); // one guide, one type: no kicker of its own (owner point 14)
+  await expect(page.locator('.pg-spine #why-h')).toHaveText('Why Rioja tastes the way it does');
+  await expect(page.locator('.pg main .fly')).toHaveCount(7);
+  await expect(page.locator('#weather .pg-zguide > div')).toHaveCount(3);
+  await expect(page.locator('#weather .pg-zguide a').first()).toHaveAttribute('href', /#place=rioja-/);
+  await expect(page.locator('.pg main .pg-ch .src')).toHaveCount(4);
   await expect(page.locator('.pg-badges')).toContainText('4-minute read');
 });
 
-test('a place with no guide has no Terroir section', async ({ page }) => {
+test('a place with no guide has no guide chapters', async ({ page }) => {
   await open(page, '#place=toro&page');
-  await expect(page.locator('#terroir')).toHaveCount(0);
-  await expect(page.locator('.pg-jump a', { hasText: 'Terroir' })).toHaveCount(0);
+  await expect(page.locator('.pg-ch')).toHaveCount(0);
+  await expect(page.locator('.pg-zguide')).toHaveCount(0);
+});
+
+test('a place with no guide still answers "Why X tastes the way it does" in its four beats', async ({ page }) => {
+  await open(page, '#place=toro&page');
+  await expect(page.locator('.pg-spine #why-h')).toHaveText('Why Toro tastes the way it does');
+  const ids = await page.locator('.pg main > section.pg-beat').evaluateAll((els) => els.map((e) => e.id));
+  expect(ids).toEqual(['place', 'weather', 'ground', 'rules']);
+  await expect(page.locator('#place-h')).toHaveText('The place');
+  expect((await page.locator('.pg-jump a').allTextContents()).slice(0, 4)).toEqual(['The place', 'The weather', 'The ground', 'The rules']);
 });
 
 for (const { chapter, index, fly } of pills) {
@@ -79,7 +89,7 @@ test('Test me on Rioja starts a review round on Rioja and its zones', async ({ p
   await open(page, '#place=rioja&page');
   const box = page.locator('.pg-testme');
   await expect(box).toContainText('Test me on Rioja');
-  await expect(box).toContainText('A short round on Rioja and its zones: where they sit and what they are known for.');
+  await expect(box).toContainText('A short round in Study on Rioja and its zones.');
   await box.getByRole('link', { name: 'Test me' }).click();
   await expect(page.locator('.q-num')).toContainText('Review');
   await expect(page).toHaveURL(/#study($|&view)/);
@@ -92,14 +102,14 @@ test('Test me opens by address too: #quiz=test&set=...', async ({ page }) => {
   await expect(page.locator('h1.intro-h')).toHaveText(/^Rioja (Alta|Alavesa)$/);
 });
 
-test('a place with no zones and no guide shows Test me without "and its zones", as the last box before "Where it sits"', async ({ page }) => {
+test('a place with no zones and no guide shows Test me without "and its zones", as the last box before Sources', async ({ page }) => {
   await open(page, '#place=jumilla&page');
   const box = page.locator('.pg-testme');
   await expect(box).toContainText('Test me on Jumilla');
-  await expect(box).toContainText('A short round on Jumilla: where they sit and what they are known for.');
+  await expect(box).toContainText('A short round in Study on Jumilla.');
   await expect(box).not.toContainText('zones');
   const order = await page.locator('.pg main > *').evaluateAll((els) => els.map((e) => e.id || e.className));
-  expect(order.slice(-3)).toEqual(['pg-testme', 'where', 'sources']);
+  expect(order.slice(-3)).toEqual(['pg-testme', 'pg-next', 'sources']);
 });
 
 test('the one-place Rioja region has no page of its own: its address opens the Rioja page', async ({ page }) => {

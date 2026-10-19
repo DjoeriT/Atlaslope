@@ -29,15 +29,15 @@ test('guide to guide steps forward to a narrower guide and back up to a wider on
 
 test('a jump bar tab glides to its section, the marker follows, and the charts there draw in once seen', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  const land = page.locator('#land');
+  const land = page.locator('#weather');
   await expect(land.locator('.pg-chart').first()).not.toHaveAttribute('data-seen', '');
-  await page.locator('.pg-jump a', { hasText: 'The land' }).click();
-  await expect(page.locator('#land-h')).toBeFocused();
-  await expect(page.locator('.pg-jump a', { hasText: 'The land' })).toHaveAttribute('aria-current', 'true');
+  await page.locator('.pg-jump a', { hasText: 'The weather' }).click();
+  await expect(page.locator('#terroir-climate-h')).toBeFocused();
+  await expect(page.locator('.pg-jump a', { hasText: 'The weather' })).toHaveAttribute('aria-current', 'true');
   await expect(page.locator('.pg-jump')).toHaveAttribute('data-mark', '');
   await expect(land.locator('.pg-chart').first()).toHaveAttribute('data-seen', '');
   // a hover names the class and lights it in every row (once the bars have finished growing, so the pointer meets a still target)
-  await page.waitForFunction(() => [...document.querySelectorAll('#land .pg-stack rect')].every((r) => r.getAnimations().every((a) => a.playState === 'finished')));
+  await page.waitForFunction(() => [...document.querySelectorAll('#weather .pg-stack rect')].every((r) => r.getAnimations().every((a) => a.playState === 'finished')));
   await land.locator('.pg-climate .pg-stack rect').first().hover();
   await expect(land.locator('.pg-climate')).toHaveAttribute('data-hover', '0');
 });
@@ -45,10 +45,10 @@ test('a jump bar tab glides to its section, the marker follows, and the charts t
 test('under reduced motion the charts are drawn at once and no move runs', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await open(page, '#place=rioja&page');
-  await expect(page.locator('#land .pg-chart').first()).toHaveAttribute('data-seen', '');
-  await page.locator('.pg-jump a', { hasText: 'The land' }).click();
-  await expect(page.locator('#land-h')).toBeFocused();
-  await expect(page.locator('#land')).not.toHaveAttribute('data-arrived', '');
+  await expect(page.locator('#weather .pg-chart').first()).toHaveAttribute('data-seen', '');
+  await page.locator('.pg-jump a', { hasText: 'The weather' }).click();
+  await expect(page.locator('#terroir-climate-h')).toBeFocused();
+  await expect(page.locator('#weather')).not.toHaveAttribute('data-arrived', '');
 });
 
 test('every guide has a Show map button that goes back to the place on the map', async ({ page }) => {

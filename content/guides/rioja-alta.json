@@ -11,6 +11,7 @@
  "chapters": [
   {
    "id": "weather",
+   "beat": "weather",
    "title": "Atlantic weather",
    "paras": [
     "Rioja Alta is mostly Atlantic in climate. Through the growing season it gets more rain and fewer hours of sun than the south of Rioja, and the Sierra de Cantabria protects it. Its wines have medium alcohol, full body and high acidity, which suits ageing in barrel, whether they are bottled alone or blended with wine from the other zones."
@@ -36,6 +37,7 @@
   },
   {
    "id": "soils",
+   "beat": "ground",
    "title": "Three soils",
    "paras": [
     "Its soils are split between clay-limestone, ferrous clay and alluvial land. The clay-limestone, which it shares with Rioja Alavesa, is the main source of wines for ageing. The ferrous clay and alluvial soils give wines with less body.",
