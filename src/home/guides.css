@@ -1,0 +1,39 @@
+/* Guides landing, layout C "Editorial" (owner pick, 19 Oct 2026): a featured guide, then a row per region. Filled in at build time (src/home/guideCount.ts). */
+.gl .feat{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:3rem;align-items:center}
+.gl .mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.5rem;aspect-ratio:4/3}
+.gl .mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r-img);background:var(--bg2)}
+.gl .mosaic img:first-child{grid-row:1/3}
+.gl .ft{display:flex;flex-direction:column;align-items:flex-start;gap:1rem}
+.gl .ft h2{font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.02;margin:0}
+.gl .ft .fl{font-family:var(--serif);font-size:1.45rem;line-height:1.35;color:var(--ink);margin:0}
+.gl .ft h3{font-size:1.6rem;margin:.5rem 0 0}
+.gl .facts{margin:0;width:100%;border-top:1px solid var(--line)}
+.gl .facts div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
+.gl .facts dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink);padding-top:.2rem}
+.gl .facts dd{margin:0;font-family:var(--serif);font-size:1.1rem;line-height:1.35}
+.gl .credit{font-size:.78rem;line-height:1.4;color:var(--ink3);margin:.6rem 0 0}
+.gl .credit a{color:inherit}
+.gl .region{max-width:none;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--ink)}
+.page-body .gl .region + .region{margin-top:3rem}
+.gl .rowh{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.25rem}
+.gl .rowh h2{font-size:1.6rem;margin:0}
+.gl .rowh span{font-size:.9rem;color:var(--ink3)}
+.gl .rowg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.75rem 1.25rem}
+.gl .sat{margin:0;grid-column:span 2}
+.gl .sat img{width:100%;height:100%;min-height:200px;object-fit:cover;border-radius:var(--r-img);background:var(--bg2)}
+.gl .gcard-c{display:flex;flex-direction:column;gap:.9rem;min-width:0;text-decoration:none}
+.gl .gcard-c .ct{display:block;aspect-ratio:3/2;border-radius:var(--r-img);overflow:hidden;background:var(--bg2)}
+.gl .gcard-c .ct img{width:100%;height:100%;object-fit:cover}
+.gl .gcard-c .typo{display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;padding:1.25rem;box-shadow:inset 0 0 0 1px var(--line)}
+.gl .gcard-c .typo b{font-family:var(--serif);font-weight:500;font-size:1.6rem;line-height:1.05;letter-spacing:-.025em}
+.gl .gcard-c .cb{display:flex;flex-direction:column;gap:.2rem}
+.gl .gcard-c .cb b{font-family:var(--serif);font-weight:500;font-size:1.25rem;line-height:1.1;letter-spacing:-.02em;color:var(--ink)}
+.gl .gcard-c:hover .cb b{text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.2em}
+.gl .gcard-c em{font-style:normal;font-size:.85rem;color:var(--ink3)}
+.gl .gcard-c .lede{font-size:.88rem;line-height:1.5;color:var(--ink2)}
+.gl .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.gl .gcard-c .lede{display:block}
+@media (max-width:1100px){.gl .rowg{grid-template-columns:repeat(2,minmax(0,1fr))}.gl .sat{grid-column:span 2}}
+@media (max-width:900px){.gl .feat{grid-template-columns:minmax(0,1fr);gap:1.5rem}}
+@media (max-width:700px){.gl .rowg{grid-template-columns:minmax(0,1fr)}.gl .sat{grid-column:auto}.gl .sat img{min-height:0;aspect-ratio:16/10}.gl .gcard-c .cb b{font-size:1.6rem}}
+
