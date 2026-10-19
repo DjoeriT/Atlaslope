@@ -10,18 +10,28 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Bobal"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Garnacha Tinta"
+     }
+    ],
+    "cite": [
+     "el-terrerazo-doc:p3"
+    ],
     "others": [
-     "Bobal",
-     "Syrah",
-     "Merlot",
-     "Garnacha Tinta",
      "Cabernet Sauvignon",
      "Tempranillo (Cencibel, Tinto de Toro)"
     ],
     "othersCite": [
-     "el-terrerazo-doc:p3",
      "el-terrerazo-doc:p6"
     ]
    },
@@ -66,54 +76,58 @@
   {
    "id": "valencia",
    "why": {
-    "text": "Mild average temperatures ripen grapes early. Water stress in the hot spring and summer gives the wines intense aroma.",
+    "text": "Spring and summer water stress, with high temperatures and evapotranspiration, gives intense aromas. The considerable temperature range gives marked colour intensity.",
     "cite": [
-     "valencia-doc:p8"
+     "valencia-pliego:p6",
+     "valencia-pliego:p7"
     ]
    },
    "grapes": {
     "main": [],
     "cite": [],
     "others": [
-     "Verdil",
-     "Moscatel de Alejandría",
-     "Monastrell",
-     "Merseguera",
-     "Macabeo",
-     "Garnacha Tintorera",
-     "Alarije",
-     "Bobal",
-     "Bonicaire",
-     "Cabernet Franc",
-     "Cabernet Sauvignon",
+     "Albariño",
      "Chardonnay",
-     "Forcallat Tinta",
-     "Garnacha Tinta",
+     "Garnacha Blanca",
      "Gewürztraminer",
-     "Graciano",
-     "Malbec",
-     "Mazuela",
-     "Mencía",
-     "Merlot",
+     "Macabeo",
+     "Alarije",
+     "Merseguera",
+     "Moscatel de Alejandría",
      "Moscatel Grano Menudo",
-     "Pedro Ximénez",
-     "Petit Verdot",
-     "Pinot Noir",
+     "Planta Fina de Pedralba",
      "Planta Nova",
-     "Plata Fina de Pedralba",
+     "Pedro Ximénez",
      "Riesling",
-     "Sauvignon Blanco",
+     "Sauvignon Blanc",
      "Sémillon",
-     "Syrah",
-     "Tempranillo",
      "Tortosi",
      "Verdejo",
-     "Viognier"
+     "Verdil",
+     "Viognier",
+     "Bobal",
+     "Bonicaire",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Forcallat Tinta",
+     "Garnacha Tinta",
+     "Graciano",
+     "Mandó",
+     "Marselán",
+     "Malbec",
+     "Mencía",
+     "Merlot",
+     "Miguel de Arco",
+     "Monastrell",
+     "Mazuelo",
+     "Petit Verdot",
+     "Pinot Noir",
+     "Syrah",
+     "Tempranillo",
+     "Garnacha Tintorera"
     ],
     "othersCite": [
-     "valencia-doc:p7",
-     "valencia-doc:p12",
-     "valencia-doc:p13"
+     "valencia-pliego:p6"
     ]
    },
    "styles": {
@@ -141,8 +155,10 @@
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Brown limy soils with poorly developed humus layers and a silty-sand texture.",
+    "cite": [
+     "valencia-pliego:p6"
+    ]
    },
    "tastes": {
     "text": "Whites: pale yellow to golden, fresh and fruity. Rosés: raspberry, strawberry, redcurrant or salmon pink. Reds: purple, garnet, cherry or ruby, good fruit. Aged wines: tile-red tones, fruit and wood in balance.",
@@ -168,13 +184,14 @@
      },
      {
       "name": "Crianza, Reserva y Gran Reserva",
-      "text": "More intense colour than the base wine; fruit and wood in balance."
+      "text": "Fruit and wood in balance on the nose; well structured, with good retronasal sensations."
      }
     ],
     "cite": [
      "valencia-doc:p3",
      "valencia-doc:p4",
-     "valencia-doc:p5"
+     "valencia-doc:p5",
+     "valencia-pliego:p4"
     ]
    },
    "producers": {
@@ -185,10 +202,9 @@
   {
    "id": "utiel-requena",
    "why": {
-    "text": "Bobal's strong polyphenols and high acidity give deep red, full-bodied wines. Chalky soils keep the whites floral and fresh.",
+    "text": "Bobal's polyphenol load and high natural acidity give intense red, full-bodied wines. The limy soils bring quite intense floral and white-fruit aromas to the whites.",
     "cite": [
-     "utiel-requena-doc:p9",
-     "utiel-requena-doc:p10"
+     "utiel-requena-pliego:p9"
     ]
    },
    "grapes": {
@@ -202,27 +218,35 @@
      "utiel-requena-doc:p10"
     ],
     "others": [
-     "Cabernet Sauvignon",
      "Tempranillo",
-     "Syrah",
-     "Sauvignon Blanco",
-     "Planta Nova",
-     "Merseguera",
-     "Merlot",
-     "Macabeo",
      "Garnacha Tinta",
-     "Chardonnay",
-     "Cabernet Franc",
      "Garnacha Tintorera",
-     "Moscatel Grano Menudo",
-     "Parellada",
-     "Petit Verdot",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Syrah",
      "Pinot Noir",
-     "Verdejo"
+     "Petit Verdot",
+     "Cabernet Franc",
+     "Graciano",
+     "Monastrell",
+     "Macabeo",
+     "Merseguera",
+     "Tardana (Planta Nova)",
+     "Chardonnay",
+     "Sauvignon Blanc",
+     "Parellada",
+     "Verdejo",
+     "Moscatel de grano menudo",
+     "Viognier",
+     "Xarel-lo",
+     "Godello",
+     "Garnacha Blanca",
+     "Albariño",
+     "Tortosí"
     ],
     "othersCite": [
-     "utiel-requena-doc:p9",
-     "utiel-requena-doc:p14"
+     "utiel-requena-pliego:p4",
+     "utiel-requena-pliego:p5"
     ]
    },
    "styles": {
@@ -247,9 +271,9 @@
     ]
    },
    "soil": {
-    "text": "Chalky (calcareous) soils across the zone, noted for the whites.",
+    "text": "Mostly loam, often stones and gravel on medium slopes; generally alkaline with high total and active lime, poor in organic matter.",
     "cite": [
-     "utiel-requena-doc:p9"
+     "utiel-requena-pliego:p6"
     ]
    },
    "tastes": {
@@ -276,14 +300,16 @@
      },
      {
       "name": "Vino de licor",
-      "text": "White or red; look and aroma as in the still wines."
+      "text": "White, rosado or red; unctuous, with very balanced acidity and sugar."
      }
     ],
     "cite": [
      "utiel-requena-doc:p4",
      "utiel-requena-doc:p5",
      "utiel-requena-doc:p6",
-     "utiel-requena-doc:p7"
+     "utiel-requena-doc:p7",
+     "utiel-requena-pliego:p2",
+     "utiel-requena-pliego:p4"
     ]
    },
    "producers": {
@@ -300,13 +326,36 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Garnacha Tintorera"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Bobal"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Sauvignon Blanc"
+     },
+     {
+      "local": "Tardana"
+     }
+    ],
+    "cite": [
+     "los-balagueses-pliego:p3"
+    ],
     "others": [
-     "Syrah",
-     "Garnacha Tintorera",
-     "Chardonnay",
-     "Merlot",
      "Sauvignon Blanco",
      "Tempranillo (Cencibel, Tinto de Toro)"
     ],
@@ -327,12 +376,16 @@
     ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Continental with a Mediterranean influence; 450 mm of rain a year.",
+    "cite": [
+     "los-balagueses-pliego:p3"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Cenozoic limy deposits and marls with high active lime; homogeneous sandy clay loam, basic pH, low organic matter; gentle 7 % slopes at about 700 m.",
+    "cite": [
+     "los-balagueses-pliego:p3"
+    ]
    },
    "tastes": {
     "text": "Red: deep cherry; ripe grape, blackberry, raspberry, plum, forest floor and oak; velvety, ripe tannins. White: straw yellow; white and exotic fruit, pineapple, mango; rich, fresh finish.",
@@ -349,17 +402,21 @@
   {
    "id": "yecla",
    "why": {
-    "text": "Monastrell grows on a high, dry plateau with deep, chalky soils. It gives fleshy, warm reds with good balance.",
+    "text": "Monastrell grows on a high, dry plateau with deep, limy soils. It gives fleshy, warm reds with good balance.",
     "cite": [
-     "yecla-doc:p3",
-     "yecla-doc:p6"
+     "yecla-pliego:p4"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Monastrell"
+     }
+    ],
+    "cite": [
+     "yecla-pliego:p4"
+    ],
     "others": [
-     "Monastrell",
      "Airén",
      "Cabernet Sauvignon",
      "Chardonnay",
@@ -374,11 +431,12 @@
      "Sauvignon Blanco",
      "Syrah",
      "Tempranillo",
-     "Verdejo"
+     "Verdejo",
+     "Viognier"
     ],
     "othersCite": [
-     "yecla-doc:p5",
-     "yecla-doc:p9"
+     "yecla-doc2:p1",
+     "yecla-pliego:p4"
     ]
    },
    "styles": {
@@ -404,15 +462,15 @@
     ]
    },
    "soil": {
-    "text": "Chalky, deep and well drained, very low in organic matter.",
+    "text": "Limy, deep and well drained, very low in organic matter.",
     "cite": [
-     "yecla-doc:p6"
+     "yecla-pliego:p4"
     ]
    },
    "altitude": {
-    "text": "The plateau lies between 535 and 700 m.",
+    "text": "The vineyards lie on rolling ground between 535 and 870 m.",
     "cite": [
-     "yecla-doc:p6"
+     "yecla-pliego:p4"
     ]
    },
    "tastes": {
@@ -496,21 +554,21 @@
     ]
    },
    "climate": {
-    "text": "Harsh: drought, strong summer heat and spring frosts. The document gives no figures.",
+    "text": "Clearly continental despite the nearby Mediterranean: dry, barely 300 l/m² of rain a year, summer highs at times well over 40 ºC, winter lows near -10 ºC, mean 16 ºC, about 3,000 hours of sun.",
     "cite": [
-     "jumilla-doc:p12"
+     "jumilla-pliego:p5"
     ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Brown and reddish-brown limy soils, loam to sandy loam, loose, stony, poor in organic matter, usually deep, with good water retention; vineyards at 320 to 900 m.",
+    "cite": [
+     "jumilla-pliego:p5"
+    ]
    },
    "tastes": {
-    "text": "Reds: violet to ruby, tile-red when aged; fresh or ripe fruit; aged ones more complex, ripe tannins. Rosés: violet pink to salmon, fruity. Whites: pale straw to golden, fruity. Sweet reds: ripe fruit, balsamic notes.",
+    "text": "Reds: blue-violet to tile red (ochre in sweet), red and black fruit, tannic, balanced acidity. Rosados: raspberry pink to onion skin, red fruit. Whites: steely to amber, white fruit. Sweet wines: dried-fruit notes, sweetness over acidity.",
     "cite": [
-     "jumilla-doc:p7",
-     "jumilla-doc:p8",
-     "jumilla-doc:p9"
+     "jumilla-pliego:p2"
     ]
    },
    "famous": {
@@ -521,17 +579,16 @@
      },
      {
       "name": "Jumilla dulce",
-      "text": "Sweet red, white or rosé; red cherry to brown if aged long."
+      "text": "Sweet red, white or rosado; sweetness dominates acidity, dried-fruit notes, reds may reach ochre."
      },
      {
       "name": "Vino de licor",
-      "text": "Monastrell red; aged ones show candied and dried fruit, balsamic and spice."
+      "text": "Fortified red, Monastrell only, 15 to 22% vol; black and dried fruit, tannic."
      }
     ],
     "cite": [
-     "jumilla-doc:p7",
-     "jumilla-doc:p8",
-     "jumilla-doc:p10"
+     "jumilla-pliego:p1",
+     "jumilla-pliego:p2"
     ]
    },
    "producers": {
@@ -568,7 +625,7 @@
      "Tempranillo",
      "Syrah",
      "Sauvignon Blanco",
-     "Plata Fina de Pedralba",
+     "Planta Fina de Pedralba",
      "Pinot Noir",
      "Petit Verdot",
      "Merseguera",
@@ -579,7 +636,8 @@
      "Chardonnay"
     ],
     "othersCite": [
-     "alicante-doc:p11"
+     "alicante-doc:p11",
+     "alicante-pliego:p6"
     ]
    },
    "styles": {
@@ -630,11 +688,12 @@
      },
      {
       "name": "Vino de licor",
-      "text": "Rosé or red; intense, flowers, ripe fruit, raisins."
+      "text": "White, rosado or red; ripe fruit, raisins, white flowers; sweet."
      }
     ],
     "cite": [
-     "alicante-doc:p1"
+     "alicante-doc:p1",
+     "alicante-pliego:p1"
     ]
    },
    "producers": {
@@ -645,23 +704,25 @@
   {
    "id": "bullas",
    "why": {
-    "text": "Monastrell makes up 80% of plantings, on chalky soil in a dry climate at altitude. It gives broad, deeply coloured reds.",
+    "text": "Monastrell makes up 80% of plantings, on soil where limestone predominates, in a dry climate at altitude. It gives broad, fleshy, deeply coloured reds.",
     "cite": [
-     "bullas-doc:p7"
+     "bullas-pliego:p6"
     ]
    },
    "grapes": {
     "main": [
      {
       "local": "Monastrell"
+     },
+     {
+      "local": "Macabeo"
      }
     ],
     "cite": [
-     "bullas-doc:p7"
+     "bullas-pliego:p4",
+     "bullas-pliego:p6"
     ],
-    "others": [
-     "Macabeo"
-    ],
+    "others": [],
     "othersCite": [
      "bullas-doc:p7"
     ],
@@ -673,12 +734,14 @@
      "white",
      "rose",
      "sparkling",
-     "fortified"
+     "fortified",
+     "sweet"
     ],
     "text": "Mostly Monastrell reds, young or oak-aged; dry whites, rosados, sparkling and liqueur wines.",
     "cite": [
      "bullas-doc:p4",
-     "bullas-doc:p5"
+     "bullas-doc:p5",
+     "bullas-pliego:p1"
     ]
    },
    "climate": {
@@ -688,9 +751,9 @@
     ]
    },
    "soil": {
-    "text": "Predominantly calcareous (chalky) soil.",
+    "text": "Soil where limestone predominates.",
     "cite": [
-     "bullas-doc:p7"
+     "bullas-pliego:p6"
     ]
    },
    "tastes": {
@@ -895,17 +958,29 @@
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [
-     "Cabernet Sauvignon",
-     "Bobal",
-     "Tempranillo",
-     "Merlot",
-     "Chardonnay"
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Bobal"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Chardonnay"
+     }
     ],
-    "othersCite": [
+    "cite": [
      "vera-de-estenas-doc"
+    ],
+    "others": [],
+    "othersCite": [
+     "vera-de-estenas-doc:p4"
     ]
    },
    "styles": {
