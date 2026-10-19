@@ -98,3 +98,103 @@ Counts: KEEP 40, FIX 31 (4 of them added sentences), CUT 1.
 - famous.styles Moscatel: sheet says "sweet, fleshy"; p6 says "dulce, aterciopelado, gusto intenso y persistente".
 - famous.styles: no Rancio entry, though p3-p7 protect Vino Rancio del Empordà in two categories.
 - All sheet cites point to "emporda-doc", not this pliego.
+
+## Second check
+
+Source emporda-pliego (tracked-changes text; where old and new figures sit side by side and the order is unclear, the figure is left out). Counts for this pass only: KEEP 64, FIX 16, CUT 0; label terms added 14.
+
+### Title and lede
+- KEEP title "Why Empordà tastes the way it does" (template).
+- KEEP p14 "fuerte viento del norte denominado Tramuntana, que sopla con rachas que a menudo superan los 120 kilómetros por hora"; p18 "extraordinariamente frío y seco".
+- KEEP p18 "estado sanitario excelente hasta su recolección"; "escoger variedades de uva con tallos más resistentes".
+
+### corner (place)
+- KEEP title p13 "situada en el extremo nordoriental de Cataluña".
+- KEEP p13 "extremo nordoriental de Cataluña".
+- KEEP p13 "55 municipios distribuidos en dos comarcas: 35 municipios del Alt Empordà y 20 ... dos zonas separadas geográficamente".
+- KEEP p14 "abrigada en la falda de las sierras de Rodes y de las Alberes, en un arco que va desde el Cap de Creus a la denominada Garrotxa d'Empordà".
+- KEEP p14 "con los Pirineos en el norte".
+- KEEP p14 "el Mediterráneo por levante y la plana propiamente dicha al mediodía".
+- KEEP p14 "delimitada en el norte por el macizo del Montgrí, en el suroeste por el macizo de las Gabarras".
+- KEEP p14 "al este, por el Mediterráneo".
+- KEEP p14 "altitudes que se acercan a los 1500 m ... llegan al punto más alto a 535 m".
+- KEEP p14 "desde nivel del mar hasta un máximo de 260 m. de altitud".
+- FIX fly Cap de Creus p14 "en un arco que va desde el Cap de Creus": the arc is the production zone, not "the vineyards". Point within 0.3 km of OSM.
+- KEEP fly Montgrí p14 "macizo del Montgrí" (OSM no result; point sits on the Montgrí castle hill, within 3 km of the massif).
+
+### tramuntana (weather)
+- KEEP title p18 "La Tramuntana ha marcado la orientación de los viñedos desde hace siglos".
+- KEEP p16 "clima mediterráneo ... 600 mm anuales ... entre los 14ºC y los 16ºC".
+- KEEP p14 "inviernos son suaves con pocas heladas".
+- KEEP p14 "veranos calurosos, templados por las brisas marinas".
+- KEEP p14 "El rasgo climático más característico".
+- KEEP p18 "frío y seco ... neutraliza los excesos de humedad que se pueden dar de manera puntual en las estaciones más lluviosas".
+- KEEP p18 "evitando que se desarrollen problemas fitosanitarios ... estado sanitario excelente hasta su recolección".
+- KEEP p18 "Desde antiguo el viticultor se ha adaptado ... tallos más resistentes, como son la garnacha y cariñena, en sus distintas variantes (blanca, tinta y rosada)".
+- KEEP p18 "aún hoy en día predominan en el viñedo".
+- KEEP p18 "altos cipreses, muchos de ellos centenarios, en el extremo norte de los campos, a modo de barrera".
+- FIX p18 "notas herbáceas y balsámicas": "herbal" -> "herbaceous" (source's taste word).
+- KEEP p18 "terrazas de piedra seca que recorren los montes del litoral".
+- KEEP p18 "La Carte de Cassini de 1747".
+- KEEP p18 "se eviten las bajadas de temperatura excesivas en invierno ... se evita una subida pronunciada".
+- FIX p18 "Este hecho propicia una maduración lenta": hedge restored, "brings" -> "favours".
+- FIX p18 "favorece la acumulación ... de polifenoles y compuestos volátiles": hedge restored, "builds" -> "favours the build-up of", "volatile (aroma) compounds".
+- KEEP p18 "vinos de color profundo, carácter y alto potencial de envejecimiento".
+- FIX p14 "Con respecto a la temperatura y a la insolación ... región III de la clasificación Winkler i Amerine": "Winkler scale" -> "Winkler and Amerine classification", basis named.
+- KEEP p14 "idónea para el cultivo de variedades de ciclo medio y largo, y extraordinaria para la elaboración de vinos dulces naturales".
+- KEEP fly caption p16 "Las viñas reciben la fuerte influencia del régimen de vientos".
+- KEEP fly caption p18 "cipreses ... en el extremo norte de los campos".
+
+### soils (ground)
+- KEEP title p16 "en un área tan pequeña ... se concentra una gran tipología de suelos".
+- KEEP p16 "hecho que sucede en muy pocos lugares".
+- KEEP p16 "suelos pobres y ligeros, los cuales permiten un buen drenaje y son de naturaleza ácida o neutra".
+- KEEP p14 "mayoritariamente son de textura arenosa y pobres en materia orgánica".
+- FIX p14 "zonas de montaña y las planas de montaña ... con algunos núcleos calcáreos": "pockets of limestone" -> "limy (calcareous) patches"; "plateaus" -> "plains".
+- KEEP p17 "grupos 1 i 3 expresan una mayor tensión, mayor acidez, y menor intensidad polifenólica"; p19 "intensidad polifenólica moderada".
+- KEEP p19 group 2 (contrast sentence).
+- KEEP p19 "contenido de alcohol alto, son estructurados y de alta intensidad polifenólica".
+- FIX p19 "vinos blancos de larga duración que son de graduación media y golosos": "medium strength" -> "medium alcohol".
+- KEEP p19 "vinos de licor de uvas ligeramente sobremaduradas, como la Garnacha y el Moscatel del Empordà".
+- KEEP p14 "predominan los suelos de naturaleza aluvial"; p20 "margas, lutites y arcillas" / "conglomerados y areniscas".
+- KEEP p20 "ligeros, balsámicos y sedosos".
+- KEEP p20 "excelentes blancos, rosados y tintos jóvenes, con una buena relación acidez y equilibrio, son afrutados y frescos".
+- KEEP p20 "han aprendido a complementar sus vinos procedentes de uva de parcelas situadas en los diferentes tipos de suelos".
+
+### range (rules)
+- KEEP title p18 "soleras fechadas con más de un siglo"; p1 "fresco".
+- KEEP p16 "Lledoner negre para referirse a la Garnacha tinta" (local name).
+- KEEP p16 "Lledoner roig para designar una Garnacha rojiza propia del Empordà".
+- KEEP p13 recommended list (Garnacha blanca/roja/tinta, Cariñena blanca/roja/tinta, Macabeo, Moscatel de Alejandría).
+- KEEP p13 authorised list.
+- KEEP "The range is wide" (p1 to p7 categories).
+- FIX p2/p3 "fermentado y/o envejecido, total o parcialmente en recipientes de madera ... como mínimo, un 25%": the wood options apply to whites, rosados and reds alike, not only whites and rosados; "oak" -> "wood"; 25% rule added; cite p3 added.
+- KEEP p2 brisado "totalidad de sus hollejos, pulpas y pepitas y, eventualmente, los escobajos, hasta como mínimo el fin de la fermentación alcohólica".
+- KEEP p4 "sobrepresión no inferior a 1 bar ni superior en 2,5 bar".
+- KEEP p4 "método Tradicional ... mínimo de nueve meses en la bodega en contacto con sus lías y en la misma botella".
+- KEEP p17 "productos muy arraigados en la zona".
+- KEEP p5 to p7 "alcohol vínico" added in every liqueur wine.
+- KEEP p5 "uvas sobremaduradas, como mínimo en un 90% de las variedades garnacha ... mínimo 15% vol, máximo 20% vol".
+- KEEP p11 "ámbar ... garnacha blanca y/o garnacha roja ... rubí ... garnacha tinta".
+- FIX p18 "se suele criar por el sistema de soleras"; p7 "la media de las diferentes fracciones": solera explained.
+- FIX p6 Moscatel "uvas sobremaduradas ... moscatel de Alejandría y/o moscatel de grano menudo ... 15% vol. y máximo de 18%": overripe grapes, both Moscatels and strength added.
+- KEEP p11 "vino dulce natural cuando procedan de mostos de elevada riqueza en azúcar" (term glossed; figure left out, p24 shows 270 and 252 side by side).
+- FIX p5 mistela "añadir acto seguido alcohol vínico" / negra "sin que se haya iniciado la fermentación, se añade alcohol vinico": method stated, Spanish term explained.
+- KEEP p6 "fermentado parcialmente y encabezado con alcohol vínico".
+- KEEP p7 "sobremaduradaos hasta alcanzar un grado alcohólico volumétrico natural mínimo de 18% vol".
+- FIX p3/p4, p6/p7 rancio: missing type, Rancio del Empordà is both a still wine (category 1) and a liqueur wine with "alcohol vínico" (category 4); both "tiempo mínimo de 2 años".
+- KEEP p20 "fundado en la cima del cabo de Creus a finales de siglo IX".
+- KEEP p20 "promotor decidido de la viticultura en la costa ampurdanesa".
+- KEEP p21 "cabrevación del monje bodeguero de 1420 ... moscatel ... los más apreciados".
+- FIX p21 "deja constancia de la exquisitez de sus vinos dulces ... lo describe como un vino generoso a medio camino entre el Jerez y el Frontignan": he praised the sweet wines and described the wine of Empordà (not "the local sweet wine").
+- KEEP fly Sant Pere de Rodes p20/p21 (point 0.4 km from OSM).
+
+### label
+- FIX Vino joven p22 "únicamente podrán comercializarse con la indicación en la etiqueta del año de la cosecha. Se embotellarán durante el año de la campaña y/o a partir del 20 de diciembre": "sold with only its harvest year" misread the rule.
+- FIX Vino de guarda p22 "periodo mínimo de doce meses en barricas de madera de roble ... inferior o igual a 330 litros": barrel size added.
+- FIX Crianza p22 (24/6 reds, 18/6 whites and rosados, 330 litres): barrel size added.
+- Added from a full sweep of menciones and indicaciones: Vino nuevo/novell p22; Reserva p22/p23; Gran reserva p22/p23 (reds from the clean 60/18 paragraph); Garnacha del Empordà crianza, reserva, gran reserva, vieja reserva p23; Solera p23; Fermentado en barrica p23 (600 l); Barrica and roble p23/p24 (capacity left out, 330 and 600 shown side by side); Vino dulce natural p24; Rancio and rancio dulce p24; sparkling and needle sweetness scale p8 (all seven steps); other wines' sweetness p8; Lledoner p25; grape and vintage 85% p24/p25; Embotellado en la propiedad p24. Ámbar and Rubí stay in the rules beat only (famous style Garnacha).
+- Cite now p8, p10, p22, p23, p24, p25.
+
+### Fact sheet
+No field disagrees with the pliego. Notes: `styles.text` leaves out the brisado white (p2); `soil.text` leaves out the limy patches (p14). Both are omissions, not errors.

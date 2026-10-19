@@ -83,3 +83,110 @@
 - styles.kinds / styles.text: no vino de aguja (semi-sparkling); pliego p2 "2.1.4. Vino de aguja".
 - famous.styles Rancio: sheet "from white Garnacha and Macabeo; a year in oak"; pliego p1 "garnacha blanca y macabeo o garnacha tinta ... un mínimo de un año en envase de roble" (red Garnacha allowed; a year is the minimum).
 - climate and tastes are empty although pliego p9 (climate) and p11-p15 (taste) cover them.
+
+## Second check
+
+Source alella-pliego (PDO-ES-A1423, Març 2020). Counts for this pass only: KEEP 69, FIX 11, CUT 0, plus 7 label terms added from the mención sweep.
+
+### Title and lede
+- KEEP title "Why Alella tastes the way it does" (no claim beyond the guide).
+- FIX p11 "subsuelo granítico ... que en la superficie se transforma en pequeños granos, los cuales de denominan sauló": the lede called sauló the granite subsoil; sauló is the grains at the surface. Rewritten.
+- FIX p11 "buena permeabilidad lo que redunda en que la cepa necesite profundizar sus raíces para buscar el agua": merged into sentence one, since the lede had three sentences (limit two).
+- KEEP p12 "por su carácter afrutado y las notas minerales frescas" / "final amargo/cítrico".
+
+### place
+- KEEP title p11 "su carácter de viña urbana", p9 "situada entre el mar y la montaña".
+- KEEP p10 "Situada en el norte de Barcelona y ocupando una superficie de unas 320 hectáreas".
+- KEEP p10 "una de las más pequeñas y también de las más antiguas de la Península Ibérica".
+- KEEP p10 "la configuran dos comarcas".
+- KEEP p10 "el Maresme cerca del mar y, al otro lado de la Cordillera Litoral, el Vallés Oriental".
+- KEEP p9 "desde hace muchos años luchan por su supervivencia ... contra la expansión de la gran área urbana".
+- KEEP p9 "los citan Plinio y Marcial como vinos layetanos".
+- KEEP fly Alella p10.
+- FIX fly Montseny p10 "El Parque del Montseny fue declarado reserva de la biosfera el año 1978": caption kept; point [2.43, 41.77] moved to OSM [2.3952, 41.7594] (about 3 km off).
+- KEEP fly Maresme coast p9 "corredor paralelo al Mediterráneo amparado por la Cordillera Litoral ... retiene la marinada" (no OSM result; point sits on the coast by Mataró).
+
+### weather
+- KEEP title p9/p16 "la marinada ... tiene su paso natural por los tres corredores naturales".
+- KEEP p9 "Mediterráneo de tipo Litoral Central".
+- KEEP p9 "La estación lluviosa se corresponde con el otoño y la seca con el verano".
+- KEEP p9 "oscila entre los 550 mm. y 800 mm.".
+- KEEP p9 "inviernos son moderados, con medias de 8 ºC a 10 ºC, y los veranos calurosos, entre 22 ºC y 23 ºC".
+- KEEP p9 "Sólo puede helar de noviembre en marzo".
+- KEEP p9 "corredor ... amparado por la Cordillera Litoral, el cual protege de los vientos fríos del interior y retiene la marinada".
+- KEEP p9 "especialmente durante los meses de verano cuando las temperaturas acostumbran a ser bastante elevadas".
+- KEEP p9 "El clima es diferente según la zona debido a la orografía del terreno".
+- KEEP p9 "irregular, de los 1200 mm. a los 600 mm., resultando un total anual escaso, a excepción de las partes más elevadas".
+- KEEP p9 "El periodo libre de heladas abarca tan sólo cinco meses, de mayo a septiembre".
+- KEEP p9 "neblinas matinales que quedan recogidas en la cordillera por la vertiente de poniente".
+- KEEP p9 "en verano la marinada refresca las viñas ... tres corredores naturales, que comunican los dos lados".
+- KEEP p16 "el Coll de Parpes, Font de Cera y La Conreria".
+- KEEP p12 "La pequeña diferencia gustativa ... los vinos de interior tienen la acidez más presente".
+
+### ground
+- KEEP title p8 "sauló, llamado también terreno de areniscas cuaternario", "estructura arenosa".
+- KEEP p8 "la Cordillera Litoral constituida por granito".
+- KEEP p8 "en climas templados y en contacto con el aire y el agua ... tomando las rocas apariencia redondeada. Los resultados ... el sauló".
+- KEEP p8 "por las aguas de las típicas tormentas ... depositado en las zonas bajas, dando lugar a los actuales suelos de cultivo litorales".
+- KEEP p8 "la mayoría de los suelos dedicados al cultivo de la viña tienen como en base el sauló".
+- KEEP p8 "no les proporciona gran fertilidad".
+- FIX p8 "arenosa o franco-arenosa ... aireados, color claro (prácticamente blanco), buen drenaje ... poca capacidad de retención de agua y elementos nutritivos": four-item list split into two sentences, "almost white" added.
+- FIX p8 "buena capacidad de retención de la irradiación solar": "heat" was not the page's word; now "retains the sun's radiation".
+- FIX p8 "ausencia de acumulación de agua ... ni aún en momentos de fuertes tormentas (importando por la sanidad de las raíces)": the page says this matters for root health, not that roots stay healthy.
+- KEEP p11 "un subsuelo granítico y con restos marinos".
+- KEEP p11 "la cepa necesite profundizar sus raíces para buscar el agua y los diferentes alimentos" ("so well" softened to "well").
+- FIX p11 "se puede afirmar que ... le crea un pequeño estrés que, bien controlado, nos ayuda a regular la producción de uva por cepa": hedge restored, "keep in check" now "regulate".
+
+### rules
+- KEEP title (p11 Pansa Blanca, p12 Garnacha tinta, p1-p2 styles).
+- KEEP p11 "en su gran mayoría, para estar elaborados con la variedad de uva Pansa Blanca".
+- KEEP p12 "Preferentes: Pansa Blanca y Garnacha Blanca"; p7 "Blancas: Garnacha blanca, Moscatel o Pansa blanca".
+- KEEP p7 "Tintas: Garnacha tinta"; p12 "en su gran mayoría por estar elaborados con la variedad de uva Garnacha tinta".
+- KEEP p7-p8 "Variedades autorizadas ... Chardonay ... Macabeo ... Parellada, Picapoll blanco ... Merlot ... Syrah".
+- KEEP p11 "elaborados en acero inoxidable, maceración pelicular, o bien fermentados y envejecidos en barrica".
+- KEEP p11 "La elaboración con inoxidable nos dará aromas de frutas blancas como la manzana fresca y pera muy madura".
+- KEEP p11 "la manzana al horno en los vinos criados en barrica".
+- KEEP p11 "maceración pelicular adquieren un color amarillo brillante ... melocotón de viña y albaricoque".
+- KEEP p12 "final amargo/cítrico, que lo identificamos con el almendruco verde".
+- FIX p12 "dependiendo del tiempo de crianza ... la confitura de cereza, el aroma de cacao, la regaliz, el tostado": hedge on ageing time restored, toast added.
+- KEEP p12 "cereza muy madura, fresa del Maresme".
+- KEEP p13 "final amargo/mineral, que lo identificamos con la ciruela negra".
+- KEEP p4 "Los vinos rosados tendrán aromas de intensidad media, con recuerdos de frutos rojos".
+- KEEP p4 "Los vinos rosados, frescos en boca, melosos y potentes".
+- KEEP p2 "método tradicional con segunda fermentación en la botella".
+- KEEP p13 "vinos blancos, rosados y blanco de noirs".
+- KEEP p2 "nueve meses de envejecimiento, a contar desde la fecha del tiraje hasta el degüelle".
+- KEEP p2 "se conserva parte del carbónico de su propia fermentación".
+- KEEP p1 "2.1.2. Vinos de Licor".
+- KEEP p1 "garnacha blanca y macabeo o garnacha tinta".
+- KEEP p1 "envejecimiento oxidativo en sol y serena, y un mínimo de un año en envase de roble".
+- FIX (added) p1 "para ser comercializados con la mención de crianza, deberán tener cuatro años de envejecimiento, de los cuales un mínimo de tres en envase de roble": rancio crianza was missing; Rancio is a famous style, so it sits here, not in label.
+- KEEP p1 "se podrá adicionar, si es necesario, alcohol vínico".
+- KEEP p1 "El color característico del vino es de oro viejo"; p15 "final mineral/marino /salino".
+- FIX p1 "separándose en su elaboración el mosto flor y seguidamente se filtra el vino, con un grado alcohólico volumétrico natural mínimo de 12% vol., para añadir acto seguido alcohol vínico"; p15 "su gran mayoría se elabora con Pansa Blanca": the guide skipped the fermentation to 12% before the spirit; split into three sentences.
+- KEEP p1 "mostos de alta riqueza en azúcares, superior a 250 gr/l, fermentado parcialmente".
+- KEEP p1 "mínimo de 15% vol. y máximo de 20% vol." (all three).
+- KEEP p7 "12.000 Kg. de uva ... variedades blancas ... 10.000 Kg." 
+- Wine types sweep: blanco, rosado, tinto, rancio, mistela, vino dulce natural, espumoso de calidad, vino de aguja all named. Vino de licor is fortified for mistela (alcohol added); rancio only "si es necesario".
+
+### label
+- KEEP Crianza p2 "veinticuatro meses con una permanencia mínima en barrica de madera de roble de seis meses"; "no será inferior a dieciocho meses ... seis meses".
+- FIX Crianza p3 "En todos los procesos de envejecimiento descritos, las barricas de madera de roble tendrán una capacidad inferior o igual a 1000 litros": added.
+- KEEP Reserva p2 "treinta y seis meses ... doce meses ... botella de veinticuatro meses"; "veinticuatro meses ... seis meses ... dieciocho meses".
+- KEEP Gran reserva p2 "veinticuatro meses, como mínimo, y ... treinta y seis meses"; "cuarenta y ocho meses ... seis meses ... cuarenta y dos meses".
+- KEEP Barrica p3 "el periodo de tiempo en meses y años, el tipo de recipiente de madera ... capacidad máxima de 600 litros".
+- Added Roble p3 "en meses o años ... capacidad máxima deberá ser de 330 litros".
+- Added Fermentado en barrica p3 "recipientes de madera con capacidad máxima de 600 litros".
+- Added Vino nuevo p3 "indicación del año de la cosecha ... durante la campaña y/o a partir del 11 de noviembre".
+- Added Vino joven p3 "durante el año de la campaña y/o a partir del 20 de diciembre".
+- Added Seco to dulce p5 "un máximo de 4 gr/l ... semisecos ... 12 gr/l ... semidulces ... 45 gr/l ... superior a los 45 gr/l para los vinos dulces" (all four steps shown).
+- Added Grape variety p17 "en un 85% o más de esta variedad"; "hasta tres variedades ... en su totalidad ... orden decreciente".
+- Added Vintage p17 "El año de la vendimia, si el vino procede en un 85% o más de la uva de ese año".
+- Numbers the checker warned about (24, 6, 18, 36, 48, 42) are all written in words on p2: confirmed.
+
+### Fact sheet (second check)
+- grapes.main: "Pansa Blanca" = "Xarel·lo"; pliego never equates them, p13 contrasts Pansa Blanca with "la variedad Xarel·lo ... en la DOP Penedès".
+- grapes.main: no Moscatel, which p7 lists as recommended ("Blancas: Garnacha blanca, Moscatel o Pansa blanca").
+- grapes.others: no Tempranillo; p13 and p14 list it as authorised ("Sumoll tinto, Syrah, Tempranillo o Ull de liebre"), though the p8 list leaves it out.
+- grapes.others: "Sumoll Tinto"; p8 says "Sumoll Negre" (p13 "Sumoll tinto").
+- famous.styles Mistela: "free-run must, filtered, wine spirit added" leaves out the 12% natural minimum before the spirit (p1).

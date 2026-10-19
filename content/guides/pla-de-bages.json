@@ -1,9 +1,9 @@
 {
  "id": "pla-de-bages",
  "title": "Why Pla de Bages tastes the way it does",
- "minutes": 4,
+ "minutes": 6,
  "lede": {
-  "text": "Pla de Bages has a climate halfway between Mediterranean and inland continental, and forest and aromatic herbs surround most of its vines. The wines come out light with a good acid core, and the smell of those herbs gets into their primary aromas.",
+  "text": "Pla de Bages has a climate halfway between Mediterranean and inland continental, and forest and aromatic herbs surround most of its vines. The climate allows light wines with a good acid core, and the smell of those herbs gets into their primary aromas.",
   "cite": [
    "pla-de-bages-pliego:p11"
   ]
@@ -12,9 +12,9 @@
   {
    "id": "basin",
    "beat": "place",
-   "title": "A plain in the eastern Ebro Basin",
+   "title": "In the eastern Ebro Basin",
    "paras": [
-    "The Bages lies in the eastern part of the Ebro Basin, between the Catalan coastal ranges (the Catalánides) and the Pyrenees. Its rivers have cut a drainage network into the land, leaving folded relief in the north and conglomerates and flat-topped relief in the south. The Pla de Bages sits in the centre.",
+    "The Bages lies in the eastern part of the Ebro Basin, between the Catalan coastal ranges (the Catalánides) and the Pyrenees. The shape of the land is tied to the way its drainage network has cut into these rocks. Massive conglomerates mark the south and south-east, and flat-topped relief the south and south-west. The north has folded relief. The Pla de Bages sits in the centre.",
     "Altitudes run from about 200 m in the south of the drainage network up to 1,200 m on Montserrat. Manresa is the main town and, with the monastery of Sant Benet de Bages, was an important centre for vines from early on."
    ],
    "cite": [
@@ -37,7 +37,7 @@
     {
      "label": "Manresa",
      "point": [
-      1.8266,
+      1.8287,
       41.7289
      ],
      "zoom": 10,
@@ -51,12 +51,12 @@
   {
    "id": "climate",
    "beat": "weather",
-   "title": "Halfway between coast and interior",
+   "title": "Halfway between Mediterranean and inland",
    "paras": [
-    "The climate is Mediterranean continental, subhumid in most of the comarca (the local county) and humid around the Moianès. Average temperatures mostly run between 12 and 14 °C. Rain is 500 to 550 mm a year in the centre and 650 to 700 mm at the edges.",
+    "The climate is Mediterranean continental, subhumid in most of the comarca (the local county) and humid in the Moianès area. Average temperatures in most of the comarca run between 12 and 14 °C. Rain is 500 to 550 mm a year in the centre and 650 to 700 mm at the edges.",
     "Winters are cold and moderately wet. Summers are dry and warm. The difference between day and night temperatures is large. Summer rain is scarce and irregular, falling in heavy bursts that sometimes bring hail.",
-    "Distance from the sea and the pre-coastal range put the climate halfway between Mediterranean and inland continental. The average altitude of the comarca favours the wines too. Cold weather brings slow ripening in autumn, and that helps colour build up in all varieties, although the local Mandó, Sumoll and Picapoll negro can by nature have less colour.",
-    "Ripening is late compared with the Spanish average, and the primary aromas of the grapes tend to stay. The influence of the Pyrenees keeps white wines on the fresher side of each grape's aromas, most of all Picapoll. This climate gives light wines marked by a good acid core."
+    "Distance from the sea and the pre-coastal range put the climate halfway between Mediterranean and inland continental. The average altitude of the comarca favours the wines too. The cold climate favours slow ripening in autumn, which helps good colour build up in all varieties. Even so, the native Mandó, Sumoll and Picapoll negro can by nature have less colour potential.",
+    "Ripening is late compared with the Spanish average, so the primary aromas tend to be kept. The strong Pyrenean influence marks the aromas of white wines with the fresher side of each grape's descriptors, above all in wines made from Picapoll. Cellar work such as ageing on lees or in barrel adds volume in the mouth."
    ],
    "cite": [
     "pla-de-bages-pliego:p10",
@@ -69,8 +69,8 @@
    "beat": "ground",
    "title": "Sandstone and mudstone",
    "paras": [
-    "Sedimentary rocks of the Eocene and Oligocene (conglomerates, sandstones, limestones and mudstones) make up the comarca. Smaller amounts of younger gravels and sediments lie mainly along the terraces of the Cardener and Llobregat rivers.",
-    "On the Pla de Bages the soils are usually moderately to very deep, medium in texture and well drained, formed from sandstones and mudstones. Along the rivers they are moderately to very deep and well drained, with a variable share of stones. Elsewhere slopes are generally steep and soils vary in depth.",
+    "Sedimentary rocks of the Eocene and Oligocene (conglomerates, sandstones, limestones and mudstones) make up the comarca. Smaller amounts of Quaternary gravels and sediments lie mainly along the terraces of the Cardener and Llobregat rivers.",
+    "On the Pla de Bages the soils are usually moderately to very deep, medium in texture and well drained, formed from sandstones and mudstones. Along the drainage network they are moderately to very deep and well drained, with a variable share of stones. Elsewhere slopes are generally steep and soils vary in depth.",
     "Carbonate levels are generally high. Most soils of the comarca suit vines, but the low floodplain soils hold a lot of water and should be avoided."
    ],
    "cite": [
@@ -84,12 +84,12 @@
    "title": "From brisado whites to rancio",
    "paras": [
     "Picapoll blanco, Macabeo and Parellada are the recommended white grapes. The recommended reds are Mandó (also called Garró), Sumoll, Garnacha, Picapoll negro and Samsó (also called Carinyena). The authorised whites are Sauvignon blanco, Chardonnay, Malvasía aromática (also called Malvasía de Sitges), Gewürztraminer and Malvasía blanca roja. Ull de llebre is also authorised, as are Merlot, Cabernet sauvignon, Cabernet franc and Syrah.",
-    "Pla de Bages makes white, rosado (rosé) and red wines. A white can be made brisado, fermented with all or part of its skins, and its colour can range from yellow to orange. A white, rosado or red fermented with all or part of the stalks is called fermentado con rapa (fermented with the stalks). A brisado may carry the words \"orange wine\" on the label.",
-    "Forest and aromatic herbs surround most of the vines, and rosemary, lavender and thyme are present in the primary aromas of the wines. In some reds the forest adds balsamic notes that make them feel fresher.",
-    "Bages also has a long tradition of sparkling wine. Artés is covered by DOP Cava, because its producers began experimenting with sparkling wine in the early 20th century. Quality sparkling wine can be made by the traditional method, with at least 15 months from bottling to disgorging, or by the ancestral method, with at least 9 months. Macabeo, Parellada and Picapoll blanc are recommended for it.",
-    "Wines with a light fizz, called vino de aguja, are fresh because of their carbon dioxide, which adds to the feel of structure and breadth in the mouth.",
-    "The comarca has made liqueur wines since time immemorial: vino rancio, mistela and vino dulce natural. A rancio is aged oxidatively, at least a year in wood, and has an old-gold colour. It may be fortified with wine alcohol if needed, to reach 17 to 21% vol.",
-    "A mistela is fortified: wine alcohol is added to filtered free-run must. A vino dulce natural comes from partly fermented, very sugar-rich must of Garnacha, Macabeo or Malvasía aromática. A vino naturalmente dulce (naturally sweet wine) is not fortified, since all its alcohol comes from fermentation."
+    "Pla de Bages makes white, rosado (rosé) and red wines. A white can be made brisado, fermented with all or part of its skins, pulp and pips. Its colour can range from yellow to orange. A white, rosado or red fermented with all or part of the stalks is called fermentado con rapa (fermented with the stalks). Both must say so on the DO's quality seal, and naming them on the label is recommended. A brisado may also carry the words \"orange wine\" on the label.",
+    "Among the herbs whose smell gets into the primary aromas are rosemary, lavender and thyme. In some reds the surrounding forest brings balsamic notes that heighten the sense of freshness.",
+    "Bages also has a long tradition of sparkling wine. Artés is covered by DOP Cava, because its producers began experimenting with sparkling wine in the early 20th century. Quality sparkling wine can be made by the traditional method, with at least 15 months from tirage to disgorging, or by the ancestral method, with at least 9 months. Macabeo, Parellada and Picapoll blanc are recommended for it.",
+    "Vino de aguja is a lightly sparkling wine of 10.5 to 12.5% vol, with a pressure of 1 to 2.5 bar. Its carbon dioxide makes it fresh and adds to the feel of structure and breadth in the mouth.",
+    "The comarca has made liqueur wines since time immemorial: vino rancio, mistela and vino dulce natural. A rancio is aged oxidatively, at least a year in wood, and has an old-gold colour. It may be fortified with wine alcohol if needed, to reach 17 to 21% vol. To carry the word crianza, a rancio needs four years of ageing, at least three of them in oak.",
+    "A mistela is fortified: wine alcohol is added to filtered free-run must. A vino dulce natural comes from partly fermented must of Garnacha, Macabeo or Malvasía aromática with more than 255 g/l of sugar. It is classed as a liqueur wine, with at least 12% vol of natural alcohol and 15 to 20% vol in the bottle. A vino naturalmente dulce (naturally sweet wine) is not fortified, since all its alcohol comes from fermentation."
    ],
    "cite": [
     "pla-de-bages-pliego:p1",
@@ -100,14 +100,15 @@
     "pla-de-bages-pliego:p9",
     "pla-de-bages-pliego:p11",
     "pla-de-bages-pliego:p12",
+    "pla-de-bages-pliego:p13",
     "pla-de-bages-pliego:p14"
    ],
    "fly": [
     {
      "label": "Artés",
      "point": [
-      1.9561,
-      41.7975
+      1.9552,
+      41.7973
      ],
      "zoom": 11,
      "caption": "Artés is covered by DOP Cava and began making sparkling wine in the early 20th century.",
@@ -122,15 +123,19 @@
   "terms": [
    {
     "term": "Crianza",
-    "text": "A red needs two years of ageing with at least 6 months in oak barrel, and a white or rosado needs at least 18 months with at least 6 months in oak barrel."
+    "text": "A red needs two years of ageing with at least 6 months in oak barrel, and a white or rosado needs at least 18 months with at least 6 months in oak barrel. Time counts from 1 December after the harvest."
    },
    {
     "term": "Reserva",
-    "text": "A red needs at least 36 months with at least 12 months in oak, and a white or rosado needs at least 24 months with at least 6 months in oak and 18 months in bottle."
+    "text": "A red needs at least 36 months with at least 12 months in oak and the rest in bottle, and a white or rosado needs at least 24 months with at least 6 months in oak and 18 months in bottle. Time counts from 1 December after the harvest."
    },
    {
     "term": "Gran reserva",
-    "text": "A red needs at least 60 months with at least 24 months in oak, and a white or rosado needs at least 48 months with at least 6 months in oak."
+    "text": "A red needs at least 60 months with at least 24 months in oak and the rest in bottle, and a white or rosado needs at least 48 months with at least 6 months in oak and the rest in bottle. Time counts from 1 December after the harvest."
+   },
+   {
+    "term": "Vino nuevo",
+    "text": "Sold only with the harvest year on the label, and bottled during the harvest season or from 11 November of that year."
    },
    {
     "term": "Vino joven",
@@ -142,16 +147,56 @@
    },
    {
     "term": "Barrica",
-    "text": "Allowed when the label gives the time in months or years and the type of wooden container, which holds at most 600 litres."
+    "text": "Allowed when the label gives the time in months and years and the type of wooden container, which holds at most 600 litres."
    },
    {
     "term": "Roble",
     "text": "Allowed when the label gives the time in months or years the wine spent in oak containers of at most 600 litres."
+   },
+   {
+    "term": "No filtrado",
+    "text": "A cloudy wine must say this on the DO's quality seal, and saying it on the label is recommended."
+   },
+   {
+    "term": "Brut natural",
+    "text": "A sparkling wine with less than 3 g/l of sugar and no sugar added after disgorging."
+   },
+   {
+    "term": "Extra brut",
+    "text": "A sparkling wine with 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "Brut",
+    "text": "A sparkling wine with less than 15 g/l of sugar."
+   },
+   {
+    "term": "Extra seco",
+    "text": "A sparkling wine with 12 to 20 g/l of sugar."
+   },
+   {
+    "term": "Seco",
+    "text": "At most 4 g/l of total sugar, but a sparkling wine called seco has 17 to 35 g/l."
+   },
+   {
+    "term": "Semi seco",
+    "text": "From 4.01 to 12 g/l of total sugar, but a sparkling wine called semi seco has 33 to 50 g/l."
+   },
+   {
+    "term": "Semi dulce",
+    "text": "More than 12 and less than 45 g/l of total sugar."
+   },
+   {
+    "term": "Dulce",
+    "text": "More than 45 g/l of total sugar, and more than 50 g/l for a sparkling wine."
    }
   ],
   "cite": [
+   "pla-de-bages-pliego:p3",
+   "pla-de-bages-pliego:p4",
    "pla-de-bages-pliego:p6",
-   "pla-de-bages-pliego:p7"
+   "pla-de-bages-pliego:p7",
+   "pla-de-bages-pliego:p13",
+   "pla-de-bages-pliego:p14"
   ]
  }
 }

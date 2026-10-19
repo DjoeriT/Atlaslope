@@ -133,7 +133,7 @@
   {
    "id": "costers-del-segre",
    "why": {
-    "text": "Day-night swings of up to 25 °C at ripening give aromatic, structured wines; cold nights give high acidity and intense flavours.",
+    "text": "Seasonal and day-night swings of up to 25 °C, strongest at ripening, give aromatic, structured wines; cold nights give high acidity and intense flavours.",
     "cite": [
      "costers-del-segre-pliego:p9",
      "costers-del-segre-pliego:p11"
@@ -184,7 +184,7 @@
      "Moscatel Grano Menudo",
      "Verdejo",
      "Viognier",
-     "Picapoll Blanco",
+     "Picapoll Blanc",
      "Malvasía de Sitges",
      "Incrocio Manzoni",
      "Cabernet Sauvignon",
@@ -224,7 +224,7 @@
     ]
    },
    "climate": {
-    "text": "Inland climate with a wide temperature range between day and night.",
+    "text": "Dry continental climate with a wide temperature range, both seasonal and between day and night.",
     "cite": [
      "costers-del-segre-pliego:p9"
     ]
@@ -271,7 +271,7 @@
   {
    "id": "pla-de-bages",
    "why": {
-    "text": "A climate between Mediterranean and continental, with Pyrenean influence, gives light wines with a good acid core. Wild herbs add rosemary and thyme aromas.",
+    "text": "A climate between Mediterranean and continental gives light wines with a good acid core; Pyrenean influence freshens white aromas. Herbs add rosemary, lavender and thyme.",
     "cite": [
      "pla-de-bages-pliego:p11"
     ]
@@ -325,19 +325,18 @@
      "fortified",
      "sweet"
     ],
-    "text": "Whites (also skin-fermented brisado), rosados and reds; also needle wines, sparkling wines (a long local tradition), liqueur wines (rancio, mistela, vino dulce natural) and naturally sweet wines.",
+    "text": "Whites (also skin-fermented brisado), rosados and reds; also needle wines, sparkling wines, liqueur wines (rancio, mistela, vino dulce natural) and naturally sweet wines.",
     "cite": [
      "pla-de-bages-pliego:p1",
      "pla-de-bages-pliego:p2",
      "pla-de-bages-pliego:p3",
-     "pla-de-bages-pliego:p4",
-     "pla-de-bages-doc:p6"
+     "pla-de-bages-pliego:p4"
     ]
    },
    "climate": {
-    "text": "Temperature and rainfall differ from neighbouring areas; altitude, distance from the sea and the pre-coastal range give the wines acidity.",
+    "text": "Temperature and rainfall differ markedly from neighbouring areas, and the average altitude favours the wines. Distance from the sea and the pre-coastal range put the climate midway between Mediterranean and inland continental, which gives light wines with a good acid core.",
     "cite": [
-     "pla-de-bages-doc:p6"
+     "pla-de-bages-pliego:p11"
     ]
    },
    "soil": {
@@ -397,6 +396,9 @@
       "local": "Garnacha Blanca"
      },
      {
+      "local": "Moscatel"
+     },
+     {
       "local": "Garnacha Tinta"
      }
     ],
@@ -422,11 +424,14 @@
      "Samsó (Mazuela)",
      "Sumoll Tinto",
      "Syrah",
+     "Tempranillo",
      "Ull de Llebre"
     ],
     "othersCite": [
      "alella-pliego:p7",
-     "alella-pliego:p8"
+     "alella-pliego:p8",
+     "alella-pliego:p13",
+     "alella-pliego:p14"
     ]
    },
    "styles": {
@@ -472,7 +477,7 @@
      },
      {
       "name": "Mistela",
-      "text": "White-grape free-run must, filtered, wine spirit added."
+      "text": "White-grape free-run must; the wine is filtered at 12% natural alcohol or more, then wine spirit added."
      },
      {
       "name": "Espumoso",
@@ -565,7 +570,7 @@
     ]
    },
    "soil": {
-    "text": "Three kinds: clay-limestone soils of clay, marl and calcareous conglomerate, poor in organic matter, in the centre; pebbly river terraces; and slate («licorella») in the southeast.",
+    "text": "Three kinds: clay-limestone soils of clay, marl and calcareous conglomerate, poor in organic matter, in the centre; pebbly river terraces; and slate soils with abundant «licorella» in the southeast.",
     "cite": [
      "conca-de-barbera-pliego:p11"
     ]
@@ -592,7 +597,6 @@
      }
     ],
     "cite": [
-     "conca-de-barbera-doc:p1",
      "conca-de-barbera-pliego:p4",
      "conca-de-barbera-pliego:p5"
     ]
@@ -1170,7 +1174,7 @@
      }
     ],
     "cite": [
-     "montsant-doc:p7"
+     "montsant-pliego:p10"
     ],
     "others": [
      "Garnacha Blanca",
@@ -1190,7 +1194,7 @@
      "Monastrell"
     ],
     "othersCite": [
-     "montsant-doc:p7"
+     "montsant-pliego:p10"
     ]
    },
    "styles": {
@@ -1210,13 +1214,13 @@
    "climate": {
     "text": "Mediterranean with some continentality: cold winters, hot dry summers, 500 to 600 mm of rain, mostly spring and autumn; strong day-night contrast.",
     "cite": [
-     "montsant-doc:p7"
+     "montsant-pliego:p11"
     ]
    },
    "soil": {
     "text": "Three kinds: calcareous sedimentary soils, granitic sands (Falset) and slate «llicorella» that adds minerality.",
     "cite": [
-     "montsant-doc:p7"
+     "montsant-pliego:p11"
     ]
    },
    "tastes": {

@@ -95,3 +95,101 @@ check_guide.py: 0 errors, 2 warnings ("5" confirmed above; minutes 3 against 942
 - styles.kinds: sheet "fortified"; pliego p1-2 "vino de licor" with no word on added alcohol. Sheet lacks a sparkling kind for vino de aguja (p1, p3).
 - soil: sheet empty; pliego p16-17 describes Miocene calcareous soils with silt and clay.
 - famous.styles Vino de licor: sheet "Warm and rich"; pliego p4 "cálido, untuoso y persistente".
+
+## Second check
+Source catalunya-pliego, Versión abril 2026, 19 Oct 2026. Counts this pass only: KEEP 57, FIX 17, CUT 2.
+
+### Title and lede
+- KEEP title (no fact claim).
+- KEEP p15 "muchas horas de sol (>2.500 h/año)"
+- KEEP p16/p18 "la fuerte insolación recibida también favorece la obtención de colores profundos ... especialmente los tintos" (body repeat cut below)
+
+### place: From the sea to almost 800 m
+- KEEP title p16 "desde el mismo nivel del mar hasta elevaciones de casi 800 m"
+- KEEP p16 "580 kilómetros de costa y la cadena montañosa de los Pirineos en el norte"
+- FIX p16 "a grandes rasgos, tres unidades morfo-estructurales": "Between them" was wrong (the Pyrenees are one of the three); now "Broadly, the relief falls into three units."
+- KEEP p16 "Los Pirineos"
+- KEEP p16 "una alternancia de elevaciones y llanos paralelos en la costa mediterránea"
+- KEEP p16 "configura el sector oriental del Valle del Ebro"
+- KEEP p16 "La viña se extiende principalmente a lo largo de estas dos últimas unidades"
+- KEEP p16 "desde el mismo nivel del mar hasta elevaciones de casi 800 m"
+- KEEP p5 "parcelas de viña situadas en los términos municipales o áreas geográficas ... que se indican"
+- KEEP fly Pyrenees p16 "conecta la Península Ibérica con el territorio continental europeo, situados en el norte"; point equals OSM.
+- KEEP fly Ebro valley p16 "sector oriental del Valle del Ebro"; OSM had no result for the valley or "Depresión Central Catalana"; the point sits near Lleida in the Central Depression, kept.
+- KEEP fly Pinell de Brai p17/p18 "bodegas cooperativas de Pinell de Brai ... Catedrales del Vino"; point 0.7 km from OSM, kept.
+
+### weather: Sunny, with a sea breeze on the coast
+- KEEP title p15 "muchas horas de sol"; "las marinadas regulan el calentamiento solar"
+- KEEP p15 "globalmente un clima mediterráneo"
+- KEEP p15 "inviernos secos y templados y veranos no demasiado calurosos"
+- FIX p15 "acostumbran a ser las estaciones más inestables y lluviosas": superlative restored ("the most unsettled and rainiest").
+- FIX p15 "La temperatura media anual está entorno a los 14-15 ºC ... 350 mm/año ... más de 600 mm/año": "annual" added.
+- KEEP p15 "En el prelitoral y litoral, las marinadas regulan el calentamiento solar"
+- KEEP p15 "que es más intenso a medida que nos adentramos hacia el interior"
+- KEEP p16 "temperaturas que aumentan de norte en sur, inversamente a la pluviosidad"
+- KEEP p16 "clima continental mediterráneo, con inviernos fríos y veranos muy calurosos"
+- KEEP p16 "una duración de 245-260 días"
+- KEEP p16 "entre el 15 y el 31 de marzo, y el final entre el 15 y el 30 de noviembre"
+- FIX p16 "índice térmico eficaz de Winkler y Amerine ... 1854º C ... región tipo III": named as the Winkler and Amerine index.
+- KEEP p18 "propicia la obtención de vinos suaves y densos, de relativa baja acidez, elevada graduación alcohólica" (hedge kept as "favours")
+- KEEP p18 "principalmente en el caso de los vinos tintos, se exaltan con el envejecimiento"
+- CUT "The strong sun also favours deep colours, especially in reds.": repeats the lede word for word.
+- FIX p16 "Pero con respecto a los vinos de aguja": vino de aguja named.
+- KEEP p16 "se suele recurrir a avanzar la fecha de recolección ... graduación alcohólica menor y una mayor acidez"
+- FIX added p19 "unidas a la presencia de dióxido de carbono endógeno, aportan la sensación refrescante que lo caracteriza" (completes the cause the page gives).
+
+### ground: Calcareous ground, poor in organic matter
+- KEEP title p16 "de naturaleza calcárea y pobres en contenido de materia orgánica" (calcareous, not chalky)
+- KEEP p16 "depósitos sedimentarios de datación miocena"
+- KEEP p16 "naturaleza calcárea y pobres en contenido de materia orgánica"
+- KEEP p16 "Cerca de las cuencas fluviales ... aluviones cuaternarios"
+- KEEP p17 "suele ocupar los terrenos menos fértiles, dada su rusticidad y mayor adaptabilidad a condiciones extremas"
+- KEEP p17 "reduce su potencial productivo, contribuye a conseguir una mejor calidad ... más concentrados en color, aromas y sabores"
+- KEEP p17 "los limos y las arcillas suelen dominar la textura"
+- KEEP p17 "confiere cuerpo y estructura tanto a los vinos blancos como a los tintos, y más color también a éstos últimos"
+- KEEP p19 "Los suelos calcáreos dan lugar a vinos brillantes, aromáticos y de gran finura"
+
+### rules: A wide range of grapes and styles
+- KEEP title p18 "El amplio abanico de variedades"; p1 "vino, vino de aguja y vino de licor"
+- FIX p18 "El amplio abanico de variedades de uva autorizadas": "very long list" back to "wide range".
+- KEEP p15 "Parellada ... (R)", "Xarel.lo ... (R)"
+- KEEP p15 "Garnacha tinta ... (R)", "Trepat (R)"
+- FIX p14 "Xarel·lo rosado, Trepat y Garnatxa roja o gris, clasificadas como tintas": "A few reds" made exact ("Three grapes classed as red").
+- KEEP p14 "12.000 kg de uva ... blancas y 10.000 kg ... tintas"
+- KEEP p1 "con las variantes de color blanco, rosado o tinto"
+- KEEP p2/p20 "derecho a la indicación “xispejant”"
+- KEEP p20 "parada provocada de la fermentación alcohólica"; p2 "adquirido mínimo 4,5% vol"
+- CUT "Whites can run from pale greenish yellow to deep gold, and reds from cherry to pale ruby, with young ones light and oaked ones rounder.": repeats the fact sheet `tastes`, shows the colour scales by two ends only, and "cherry" drops p4 "cereza intenso".
+- FIX p3 "máximo de 4 gr/l ... secos; más de 4 ... hasta 12 ... semisecos; más de 12 ... hasta 45 ... semidulces; superior a los 45 ... dulces": all four steps now given with both bounds.
+- KEEP p3 "sobrepresión a 20 ºC debida al dióxido de carbono endógeno ... entre 1 y 2,5 bares"
+- KEEP p4 "equilibrado, fresco y provocante de un ligero cosquilleo"
+- KEEP p19 "elaboración de vinos espumosos ... cuyos inicios se remontan a la primera mitad del siglo XIX"
+- KEEP p2 "adquirido mínimo 15% vol, máximo 22% vol" (the pliego never calls it fortified; the guide does not either)
+- FIX added p19 "les aporta gran intensidad de color y aroma, corpulencia y una acidez media-baja" (liqueur-wine link from the page, was missing).
+- KEEP p4 "aromas más afrutados si no han pasado por madera, y con notas aldehídas y de frutos secos"
+- KEEP p4 "cálido, untuoso y persistente"
+- KEEP p4 "hasta llegar al ámbar, atendiendo a su nivel de envejecimiento"
+- KEEP p18/p19 "postres de músic ... frutos secos ... fruta desecada"
+- FIX p17 "En las postrimerías del siglo XIX ... construyeron bodegas apoyadas por el espíritu innovador de la Mancomunidad Catalana (creada en el año 1913)": "backed by the innovative spirit" and the date restored; split into two sentences.
+- KEEP p17/p18 "bodegas cooperativas de Pinell de Brai, Falset, Gandesa"
+- KEEP p18 "Àngel Guimerà llegó a bautizar con el nombre de 'Catedrales del Vino'"
+- Wine types sweep: vino, vino de aguja, vino de licor (p1), white/rosado/red, xispejant, four sugar levels: all named. Espumosos (p19) are history only, not protected.
+
+### label
+- KEEP Crianza p1 "envejecimiento total de dos años ... 6 meses en barricas de roble ... 330 l ... 18 meses"
+- FIX Reserva p1 "6 meses como mínimo ... de la misma capacidad máxima anterior, y el resto en botella": white/rosado oak size and bottle rest added.
+- FIX Gran reserva p1, same words: white/rosado oak size and bottle rest added.
+- KEEP Vino nuevo p1 "indicación del año de la cosecha ... a partir del 11 de noviembre"
+- KEEP Vino joven p1 "a partir del 20 de diciembre"
+- KEEP Barrica p1 "concretar el periodo de tiempo en meses o años y el tipo de recipiente de madera ... 600 litros"
+- KEEP Catalunya Vinyeró p20 "cuya totalidad de los vinos que elaboren provenga exclusivamente de las uvas producidas por sus propios viñedos"
+- FIX added Fermentado en barrica p1 "La fermentación deberá tener lugar en recipientes de madera con una capacidad máxima de 600 litros"
+- FIX added Roble p2 "periodo de tiempo en meses o años en que ha estado en recipientes de madera de roble ... 600 litros"
+- FIX added Xispejant p2/p20 (indicación with its own rule)
+- FIX added Denominación de origen p21 "posibilidad de sustituir en la etiqueta <denominación de origen protegida> ... por la mención tradicional" (mención tradicional, p21)
+- Not a term: the CO2 footprint logo (p20, a logo, not words).
+
+### Fact sheet (second check, not edited)
+- styles.kinds: sheet "white, rose, red, fortified"; pliego p1 "vino, vino de aguja y vino de licor": no kind for vino de aguja, and the pliego never says fortified (p2 gives vino de licor 15 to 22% vol only).
+- tastes: sheet "Red: cherry to pale ruby"; pliego p4 "desde el cereza intenso con ribete violáceo al rubí tenue con ribete ocre".
+- grapes.others: sheet lists Mandó and Marselán as others; pliego p15 gives them no A/R mark; Xarel·lo rosado is marked "(T)", not "(A)".

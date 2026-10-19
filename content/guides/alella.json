@@ -3,7 +3,7 @@
  "title": "Why Alella tastes the way it does",
  "minutes": 4,
  "lede": {
-  "text": "Alella's vines grow in sauló, a granite subsoil that breaks into small grains at the surface. It drains so well that the vine has to root deep for water. The white wines show fruit and fresh mineral notes, and they end on a bitter, citrus finish.",
+  "text": "Alella's vines grow on sauló, the small grains that granite breaks into at the surface, and it drains so well that the vine has to root deep for water. The white wines show fruit and fresh mineral notes, and they end on a bitter, citrus finish.",
   "cite": [
    "alella-pliego:p11",
    "alella-pliego:p12"
@@ -35,8 +35,8 @@
     {
      "label": "Montseny",
      "point": [
-      2.43,
-      41.77
+      2.3952,
+      41.7594
      ],
      "zoom": 9.5,
      "caption": "The Montseny park, in the Vallès Oriental, was declared a biosphere reserve in 1978.",
@@ -82,8 +82,8 @@
    "title": "Granite that turns to sand",
    "paras": [
     "The Cordillera Litoral is granite. In a mild climate, air and water break it down into rounded rocks and then into sauló, a pale sandy soil. Storms have washed sauló down to the low ground, where it forms the coastal farmland.",
-    "Most Maresme vineyard soils are built on sauló. It is not very fertile. It is sandy, light in colour, airy and well drained, and it holds little water or nutrients. It also holds the sun's heat well and is slightly alkaline. Water does not pool, even in heavy storms, and the roots stay healthy.",
-    "Under the surface, the granite carries marine remains. Because the soil drains so well, the vine has to root deep for water and food. That puts it under a little stress that, well managed, helps keep the yield per vine in check."
+    "Most Maresme vineyard soils are built on sauló. It is not very fertile. The soil is sandy and light in colour, almost white. It is airy and drains well, but it holds little water or nutrients. It also retains the sun's radiation well and is slightly alkaline. Water does not pool, even in heavy storms, which matters for the health of the roots.",
+    "Under the surface, the granite carries marine remains. Because the soil drains well, the vine has to root deep for water and food. That can be said to put it under a little stress that, well managed, helps regulate the yield per vine."
    ],
    "cite": [
     "alella-pliego:p8",
@@ -97,9 +97,9 @@
    "title": "Pansa Blanca, Garnacha and a long list of styles",
    "paras": [
     "Most white wine is made from Pansa Blanca, the main white grape here. Pansa Blanca and Garnacha Blanca are the preferred whites, and Moscatel is also recommended. The recommended red is Garnacha tinta, and most red wine is made from it. Many others are allowed, including Chardonnay, Macabeo, Parellada, Picapoll blanco, Syrah and Merlot.",
-    "Whites can be made in stainless steel, with skin contact, or fermented and aged in barrel. Stainless steel gives fresh apple and very ripe pear. Barrel ageing gives baked apple. Skin contact gives a bright yellow colour with peach and apricot. The bitter, citrus finish recalls green almond. Barrel-aged reds from Garnacha tinta smell of cherry jam and cocoa, with liquorice typical too. Young reds from stainless steel smell of very ripe cherry and Maresme strawberry. Both end bitter and mineral, recalling black plum. Rosados smell of red fruit. In the mouth they are fresh, yet mellow and powerful.",
+    "Whites can be made in stainless steel, with skin contact, or fermented and aged in barrel. Stainless steel gives fresh apple and very ripe pear. Barrel ageing gives baked apple. Skin contact gives a bright yellow colour with peach and apricot. The bitter, citrus finish recalls green almond. Barrel-aged reds from Garnacha tinta smell of cherry jam and cocoa, with liquorice and toast as well, depending on how long they age. Young reds from stainless steel smell of very ripe cherry and Maresme strawberry. Both end bitter and mineral, recalling black plum. Rosados smell of red fruit. In the mouth they are fresh, yet mellow and powerful.",
     "Alella also makes sparkling wine by the traditional method, with a second fermentation in the bottle. It can be white, rosado or blanc de noirs. Sparkling wine ages nine months, counted from the tirage, the bottling for the second fermentation, to disgorging. Vino de aguja, a lightly sparkling wine, keeps part of the carbon dioxide from its own fermentation.",
-    "It also makes liqueur wines. Rancio comes from Garnacha Blanca and Macabeo or from Garnacha tinta. It ages oxidatively out in the sun and night air, called sol y serena, and spends at least a year in oak. Grape spirit may be added if needed. Its colour is old gold, and it ends on mineral, marine, salty notes. Mistela is fortified: it is made from the free-run must of white grapes, mostly Pansa Blanca, with grape spirit added. Vino dulce natural comes from must with more than 250 g/l of sugar, partly fermented. All three hold 15% to 20% alcohol by volume.",
+    "It also makes liqueur wines. Rancio comes from Garnacha Blanca and Macabeo or from Garnacha tinta. It ages oxidatively out in the sun and night air, called sol y serena, and spends at least a year in oak. Rancio sold as crianza needs four years of ageing, at least three of them in oak. Grape spirit may be added if needed. Its colour is old gold, and it ends on mineral, marine, salty notes. Mistela is fortified. It is made from the free-run must of white grapes, mostly Pansa Blanca. The wine is filtered at 12% natural alcohol or more, and then grape spirit is added. Vino dulce natural comes from must with more than 250 g/l of sugar, partly fermented. All three hold 15% to 20% alcohol by volume.",
     "Yields are capped at 12,000 kg of grapes per hectare for white varieties and 10,000 kg for red."
    ],
    "cite": [
@@ -120,7 +120,7 @@
   "terms": [
    {
     "term": "Crianza",
-    "text": "Red wine ages 24 months with at least 6 months in oak barrel. White and rosado wines age at least 18 months, also with at least 6 months in oak."
+    "text": "Red wine ages 24 months with at least 6 months in oak barrel. White and rosado wines age at least 18 months, also with at least 6 months in oak. For Crianza, Reserva and Gran reserva the oak barrels hold at most 1,000 litres."
    },
    {
     "term": "Reserva",
@@ -133,11 +133,41 @@
    {
     "term": "Barrica",
     "text": "The word barrica, barrel, may appear when the label gives the time in months and years and the type of wooden container, which can hold at most 600 litres."
+   },
+   {
+    "term": "Roble",
+    "text": "The word roble, oak, may appear when the label gives the months or years the wine spent in oak containers of at most 330 litres."
+   },
+   {
+    "term": "Fermentado en barrica",
+    "text": "Fermented in oak barrel. It may appear when the wine fermented in wooden containers of at most 600 litres."
+   },
+   {
+    "term": "Vino nuevo",
+    "text": "New wine. It is sold only with the vintage on the label, and it is bottled during the season and/or from 11 November of the harvest year."
+   },
+   {
+    "term": "Vino joven",
+    "text": "Young wine. It is sold only with the vintage on the label, and it is bottled during the season and/or from 20 December of the harvest year."
+   },
+   {
+    "term": "Seco to dulce",
+    "text": "Seco, dry, has at most 4 g/l of sugar. Semiseco has more than 4 g/l and up to 12 g/l. Semidulce has more than 12 g/l and up to 45 g/l. Dulce, sweet, has more than 45 g/l."
+   },
+   {
+    "term": "Grape variety",
+    "text": "One variety may be named if it makes up 85% or more of the wine. Up to three may be named if the wine is made only from them, in decreasing order of their share."
+   },
+   {
+    "term": "Vintage",
+    "text": "The harvest year may be named if 85% or more of the grapes come from that year."
    }
   ],
   "cite": [
    "alella-pliego:p2",
-   "alella-pliego:p3"
+   "alella-pliego:p3",
+   "alella-pliego:p5",
+   "alella-pliego:p17"
   ]
  }
 }

@@ -15,7 +15,7 @@
    "beat": "place",
    "title": "From the sea to almost 800 m",
    "paras": [
-    "Catalunya has 580 km of Mediterranean coast and the Pyrenees to the north. Between them the land falls into three units. The Pyrenees are one. The Coastal Ranges, where heights and plains alternate parallel to the sea, are the second. The Central Depression, the eastern part of the Ebro valley, is the third.",
+    "Catalunya has 580 km of Mediterranean coast and the Pyrenees to the north. Broadly, the relief falls into three units. The Pyrenees are one. The Coastal Ranges, where heights and plains alternate parallel to the sea, are the second. The Central Depression, the eastern part of the Ebro valley, is the third.",
     "Vines grow mainly in the last two. They run from sea level up to almost 800 m. The protected area is made up of the vineyard parcels in a listed set of municipalities and areas of Catalunya."
    ],
    "cite": [
@@ -54,11 +54,11 @@
    "beat": "weather",
    "title": "Sunny, with a sea breeze on the coast",
    "paras": [
-    "The climate is Mediterranean overall. Winters are dry and mild, and summers are not too hot. Spring and autumn are usually the unsettled, rainy seasons. The average temperature is about 14-15 ºC, and rain runs from 350 mm a year in the driest areas to over 600 mm in the wettest.",
+    "The climate is Mediterranean overall. Winters are dry and mild, and summers are not too hot. Spring and autumn are usually the most unsettled and rainiest seasons. The average annual temperature is about 14-15 ºC, and rain runs from 350 mm a year in the driest areas to over 600 mm in the wettest.",
     "Near the coast, sea breezes (marinadas) temper the sun's heating. That heating grows stronger further inland. The coast is mild, with temperatures rising from north to south as rainfall falls. Inland, away from the sea, the climate is continental Mediterranean, with cold winters and very hot summers.",
-    "The vine's growing season lasts 245-260 days. It starts between 15 and 31 March and ends between 15 and 30 November. On the Winkler scale the zone scores 1854 ºC, which makes it region III.",
-    "The marked Mediterranean influence favours soft, dense wines with relatively low acidity and high alcohol. Their aromas, mainly in the reds, are heightened by ageing. The strong sun also favours deep colours, especially in reds.",
-    "Lightly sparkling wines are the exception. Growers often pick the grapes earlier to get less alcohol and more acidity."
+    "The vine's growing season lasts 245-260 days. It starts between 15 and 31 March and ends between 15 and 30 November. On the Winkler and Amerine index the zone scores 1854 ºC, which makes it region III.",
+    "The marked Mediterranean influence favours soft, dense wines with relatively low acidity and high alcohol. Their aromas, mainly in the reds, are heightened by ageing.",
+    "Lightly sparkling wines (vino de aguja) are the exception. Growers often pick the grapes earlier to get less alcohol and more acidity. With the wine's own carbon dioxide, that gives the refreshing feel these wines are known for."
    ],
    "cite": [
     "catalunya-pliego:p15",
@@ -87,12 +87,12 @@
    "beat": "rules",
    "title": "A wide range of grapes and styles",
    "paras": [
-    "Catalunya allows a very long list of grapes. Xarel·lo and Parellada are among the recommended whites. Garnacha tinta and Trepat are among the recommended reds. A few reds, Trepat among them, are allowed the higher white-grape yield. That is 12,000 kg of grapes per hectare, against 10,000 kg for other reds.",
-    "The wines come as white, rosado (rosé) or red. A low-alcohol version can carry the word xispejant. Fermentation is stopped early for it, and the wine has at least 4.5% vol alcohol. Whites can run from pale greenish yellow to deep gold, and reds from cherry to pale ruby, with young ones light and oaked ones rounder.",
-    "By sugar, a dry wine has at most 4 g/l and a sweet one more than 45 g/l. Semi-dry and semi-sweet wines sit between, with the line at 12 g/l.",
+    "Catalunya allows a wide range of grapes. Xarel·lo and Parellada are among the recommended whites. Garnacha tinta and Trepat are among the recommended reds. Three grapes classed as red, Trepat among them, are allowed the higher white-grape yield. That is 12,000 kg of grapes per hectare, against 10,000 kg for other reds.",
+    "The wines come as white, rosado (rosé) or red. A low-alcohol version can carry the word xispejant. Fermentation is stopped early for it, and the wine has at least 4.5% vol alcohol.",
+    "By sugar, a dry wine has at most 4 g/l. A semi-dry wine has more than 4 and up to 12 g/l. A semi-sweet wine has more than 12 and up to 45 g/l. A sweet wine has more than 45 g/l.",
     "Vino de aguja is lightly sparkling, with 1 to 2.5 bar of pressure from its own carbon dioxide. It tingles on the tongue and tastes fresh and balanced. The history of sparkling wine here goes back to the first half of the 19th century.",
-    "Vino de licor is a liqueur wine of 15 to 22% vol. On the nose it is fruitier if unoaked and nutty with ageing. In the mouth it is warm and unctuous, with a long finish. Its colour can reach amber with age. Catalans have long served it after meals as \"postres de músic\" (musician's dessert), with nuts and dried fruit.",
-    "Modernista architects, backed by the Catalan regional body (Mancomunidad Catalana) created in 1913, built cooperative cellars in towns such as Pinell de Brai and Gandesa. The writer Àngel Guimerà called them \"cathedrals of wine\"."
+    "Vino de licor is a liqueur wine of 15 to 22% vol. The Mediterranean influence and the soils give it great depth of colour and aroma, body and medium-low acidity. On the nose it is fruitier if unoaked and nutty with ageing. In the mouth it is warm and unctuous, with a long finish. Its colour can reach amber with age. Catalans have long served it after meals as \"postres de músic\" (musician's dessert), with nuts and dried fruit.",
+    "Late in the 19th century, Modernista architects built cellars backed by the innovative spirit of the Mancomunidad Catalana, a Catalan regional body created in 1913. Among them are the cooperative cellars of towns such as Pinell de Brai and Gandesa. The writer Àngel Guimerà called them \"cathedrals of wine\"."
    ],
    "cite": [
     "catalunya-pliego:p1",
@@ -134,14 +134,14 @@
    },
    {
     "term": "Reserva",
-    "text": "A red needs at least 3 years, with 12 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 2 years, with 6 months or more in barrel.",
+    "text": "A red needs at least 3 years, with 12 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 2 years, with 6 months or more in the same barrels and the rest in bottle.",
     "cite": [
      "catalunya-pliego:p1"
     ]
    },
    {
     "term": "Gran reserva",
-    "text": "A red needs at least 5 years, with 24 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 4 years, with 6 months or more in barrel.",
+    "text": "A red needs at least 5 years, with 24 months or more in oak barrels of up to 330 l and the rest in bottle. A white or rosado needs at least 4 years, with 6 months or more in the same barrels and the rest in bottle.",
     "cite": [
      "catalunya-pliego:p1"
     ]
@@ -161,10 +161,24 @@
     ]
    },
    {
+    "term": "Fermentado en barrica",
+    "text": "Fermented in barrel: the fermentation must take place in wooden containers of up to 600 l.",
+    "cite": [
+     "catalunya-pliego:p1"
+    ]
+   },
+   {
     "term": "Barrica",
     "text": "The label must give the time in months or years and the type of wooden container, which holds up to 600 l.",
     "cite": [
      "catalunya-pliego:p1"
+    ]
+   },
+   {
+    "term": "Roble",
+    "text": "Oak: the label must give the time in months or years spent in oak containers, which hold up to 600 l.",
+    "cite": [
+     "catalunya-pliego:p2"
     ]
    },
    {
@@ -173,11 +187,28 @@
     "cite": [
      "catalunya-pliego:p20"
     ]
+   },
+   {
+    "term": "Xispejant",
+    "text": "An optional word for low-alcohol white, rosado or red wines made by stopping the fermentation early. They have at least 4.5% vol alcohol.",
+    "cite": [
+     "catalunya-pliego:p2",
+     "catalunya-pliego:p20"
+    ]
+   },
+   {
+    "term": "Denominación de origen",
+    "text": "A traditional term that may stand on the label in place of \"denominación de origen protegida\".",
+    "cite": [
+     "catalunya-pliego:p21"
+    ]
    }
   ],
   "cite": [
    "catalunya-pliego:p1",
-   "catalunya-pliego:p20"
+   "catalunya-pliego:p2",
+   "catalunya-pliego:p20",
+   "catalunya-pliego:p21"
   ]
  }
 }
