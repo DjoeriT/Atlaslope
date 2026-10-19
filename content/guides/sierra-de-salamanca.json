@@ -1,0 +1,80 @@
+{
+ "id": "sierra-de-salamanca",
+ "title": "Why Sierra de Salamanca tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Most of Castilla y León has alkaline soil, but these terraces sit on acid slate and granite. That ground, plus a damp Mediterranean climate, gives wines with a mineral edge and a long life.",
+  "cite": ["sierra-de-salamanca-pliego:p10", "sierra-de-salamanca-pliego:p12"]
+ },
+ "chapters": [
+  {
+   "id": "terraces",
+   "beat": "place",
+   "title": "Terraces above the Alagón",
+   "paras": [
+    "The vineyards lie in the south of Salamanca province and cover 482.10 km2. The land is twisting, and the vines grow on bancales, terraces cut into the slopes above the Alagón river and its tributaries. The slopes are steeper to the northwest and gentler in the south.",
+    "Growers have looked for the best-facing slopes for centuries, and these are often the steepest. The sun reaches the vines well, the air moves through them and the terraces stop erosion. The area is traditionally called Sierra de Francia, after the mountains whose foothills it covers."
+   ],
+   "cite": ["sierra-de-salamanca-pliego:p8", "sierra-de-salamanca-pliego:p10", "sierra-de-salamanca-pliego:p11", "sierra-de-salamanca-pliego:p14"],
+   "fly": [
+    {
+     "label": "Sierra de Francia",
+     "point": [-6.1, 40.5],
+     "zoom": 9.5,
+     "caption": "The mountains whose foothills the vineyards cover, on the banks of the Alagón.",
+     "cite": ["sierra-de-salamanca-pliego:p14"]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Wet springs, dry harvests",
+   "paras": [
+    "The climate is Mediterranean, with fairly short winters that are not very cold and long, hot, dry summers. Autumn and spring bring more than 1,000 mm of rain a year. That makes up for soils that hold little water.",
+    "Little rain falls in summer or at harvest, so fungal disease stays away and the grapes come in healthy. Sunny terraces and cold summer nights ripen the grapes with high tartaric acid (over 7 g/l) and plenty of sugar (a potential of 14.5º). That balance is why the wines keep so well."
+   ],
+   "cite": ["sierra-de-salamanca-pliego:p10", "sierra-de-salamanca-pliego:p11", "sierra-de-salamanca-pliego:p12", "sierra-de-salamanca-pliego:p13"]
+  },
+  {
+   "id": "slate",
+   "beat": "ground",
+   "title": "Acid slate and granite",
+   "paras": [
+    "The rock is metamorphic in the west and plutonic in the east. Greenish-grey clay slates from the Cambrian stand out. The soils are acid, unlike most wine areas of Castilla y León, and mostly sandy loam.",
+    "Slate and granite make different wines. Grapes from slate lean mineral, with a very marked structure. Grapes from granite usually give more length and softness on the palate."
+   ],
+   "cite": ["sierra-de-salamanca-pliego:p10", "sierra-de-salamanca-pliego:p12"]
+  },
+  {
+   "id": "old-vines",
+   "beat": "rules",
+   "title": "Rufete and very old vines",
+   "paras": [
+    "Rufete is the grape native to the area. It suits the acid soils and gives red fruit, spice and scrub herbs, with elegant, spicy tannins. Tempranillo turns out balsamic here, and Garnacha Tinta shows tart wild strawberry and a lot of minerality. These three are the only red grapes allowed.",
+    "The vines are very old: half the plots are over 80 years old and many are centenarian. They are planted at 4,400 vines per hectare, 1.5 m by 1.5 m, so they compete and crops stay small. The rules cap yields at 7,000 kg per hectare for red grapes and 9,000 kg for white.",
+    "Reds aged in barrel must reach at least 12.0% alcohol. The wines overall show medium-high alcohol, high tartaric acidity and a long life. Fennel and thyme notes often show in the glass."
+   ],
+   "cite": ["sierra-de-salamanca-pliego:p5", "sierra-de-salamanca-pliego:p9", "sierra-de-salamanca-pliego:p11", "sierra-de-salamanca-pliego:p12", "sierra-de-salamanca-pliego:p13"],
+   "fly": [
+    {
+     "label": "San Esteban de la Sierra",
+     "point": [-5.99, 40.5],
+     "zoom": 11,
+     "caption": "The cooperative here was refitted, and the area began to revive around it.",
+     "cite": ["sierra-de-salamanca-pliego:p14", "sierra-de-salamanca-pliego:p15"]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vino de Pueblo",
+    "text": "A village name can go on the label only if at least 85% of the grapes come from plots in that municipality.",
+    "cite": ["sierra-de-salamanca-pliego:p17"]
+   }
+  ],
+  "cite": ["sierra-de-salamanca-pliego:p17"]
+ }
+}

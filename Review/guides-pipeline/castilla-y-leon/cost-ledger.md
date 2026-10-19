@@ -13,3 +13,4 @@
 | Check | rueda | Opus | 87,340 | 3.6 |
 | Write | valles-de-benavente | Sonnet | 38,903 | 1.1 |
 | Write | tierra-del-vino-de-zamora | Sonnet | 44,219 | 1.0 |
+| Write | sierra-de-salamanca | Sonnet | 35,156 | 0.9 |
