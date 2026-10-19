@@ -79,7 +79,7 @@ ${safety}`
 
 const results = await pipeline(
   args.places,
-  p => args.recheck ? { ok: true, words: 0, warnings: 0, note: 'recheck' }
+  p => args.recheck ? Promise.resolve({ ok: true, words: 0, warnings: 0, note: 'recheck' })
     : agent(writePrompt(p), { label: `write ${p.id}`, phase: 'Write', model: 'sonnet', schema: WRITE }),
   (w, p) => w && agent(checkPrompt(p), { label: `check ${p.id}`, phase: 'Check', model: 'opus', schema: CHECK })
     .then(c => ({ id: p.id, write: w, check: c })),
