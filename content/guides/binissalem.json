@@ -3,7 +3,7 @@
  "title": "Why Binissalem tastes the way it does",
  "minutes": 2,
  "lede": {
-  "text": "On Mallorca, climate and ground, with the local grapes, favour full ripening. Binissalem makes still and sparkling wine from that fruit.",
+  "text": "On Mallorca, climate and ground help the local grapes ripen fully. Binissalem makes still and sparkling wine from that fruit.",
   "cite": [
    "binissalem-doc-2026:p3",
    "binissalem-doc-2026:p9",
@@ -16,8 +16,8 @@
    "beat": "place",
    "title": "Five municipalities on Mallorca",
    "paras": [
-    "The zone covers 5 municipalities on the island of Mallorca: Binissalem, Consell, Santa María del Camí, Sencelles and Santa Eugenia. Binissalem, one of them, shares its name with the wine. The name of each municipality can appear on a label as a smaller geographic unit, if certain requirements are met.",
-    "Every bottle must be filled inside this zone, in cellars on the bottlers' register. Wine moved in bulk can lose quality, and here the bottling is watched by people who know this wine."
+    "The zone covers 5 municipalities on Mallorca: Binissalem, Consell, Santa María del Camí, Sencelles and Santa Eugenia. Binissalem is one of them and gives the wine its name. Each municipality's name can also appear on a label, under set conditions.",
+    "Every bottle must be filled inside the zone, in registered cellars. Moving wine in bulk can hurt its quality."
    ],
    "cite": [
     "binissalem-doc-2026:p1",
@@ -29,7 +29,7 @@
     {
      "label": "The Binissalem zone",
      "place": "binissalem",
-     "caption": "The zone covers 5 municipalities on Mallorca, Binissalem among them.",
+     "caption": "Binissalem and its four neighbouring municipalities on Mallorca.",
      "cite": [
       "binissalem-doc-2026:p9"
      ]
@@ -41,7 +41,7 @@
    "beat": "weather",
    "title": "Ripe all the way",
    "paras": [
-    "Climate and ground, along with the local grapes, are decisive for the wines' character and quality. They favour full ripening, with more sugar. They also favour a fuller build-up of the compounds that set quality, from acids to aroma compounds and phenolics.",
+    "Full ripening brings more sugar. It also builds up more of what makes a wine good: acids, aroma compounds and phenolics.",
     "This allows fruity, structured and lasting reds. Rosados carry aroma and persistence. Whites are fresh, with intense smell and taste."
    ],
    "cite": [
@@ -53,10 +53,12 @@
    "beat": "rules",
    "title": "Local grapes lead",
    "paras": [
-    "Nineteen grape varieties are allowed. Among them are Manto Negro and Moll, also called Prensal. Moscatel de Alejandría and Moscatel de Grano Menudo, Callet, Parellada and Macabeo are on the list too, along with Cabernet Sauvignon, Merlot and Syrah. Three red varieties joined the list in 2026: Giró Negre, Esperó de Gall and Fogoneu.",
-    "A red must be at least 30% Manto Negro and no more than 30% Gorgollassa. A white must be at least 50% Moll or the Moscatel varieties. A rosado or a sparkling rosado may hold no more than 30% Gorgollassa.",
-    "The zone makes red, rosado and white wine, and sparkling white and rosé. A white sparkling wine must be at least 50% Moll, with no Moscatel. Sparkling whites are fresh, fine and lively, with intensity. Sparkling rosés are aromatic, fine and persistent.",
-    "Each still colour can also be made sweeter, with more than 12 g/l of residual sugar. Reds then usually show aromas of ripe, raisined or candied fruit. Rosés and whites usually show ripe fruit. All of them have a good balance between acid and sweet. Still wines aged in barrel show aromas of wood or spice."
+    "Nineteen grape varieties are allowed. The local pair is Manto Negro and Moll, also called Prensal.",
+    "Two Moscatels are allowed, with Callet, Parellada and Macabeo. So are Cabernet Sauvignon, Merlot and Syrah.",
+    "Three red varieties joined the list in 2026: Giró Negre, Esperó de Gall and Fogoneu.",
+    "A red must be at least 30% Manto Negro. A white must be at least 50% Moll or the Moscatels. Gorgollassa, another grape on the list, may make up no more than 30% of a red, a rosado or a sparkling rosado.",
+    "Reds, rosados and whites are all made. Whites and rosados also come sparkling. A sparkling white must be at least 50% Moll, with no Moscatel. Sparkling whites are fresh, fine and lively. Sparkling rosados are aromatic, fine and persistent.",
+    "Each still colour can also be made sweeter, with more than 12 g/l of residual sugar. Reds then usually show aromas of ripe, raisined or candied fruit. Rosados and whites usually show ripe fruit. All of them have a good balance between acid and sweet. Still wines aged in barrel show aromas of wood or spice."
    ],
    "cite": [
     "binissalem-doc-2026:p1",
@@ -76,7 +78,7 @@
   "terms": [
    {
     "term": "Vinyet",
-    "text": "A label mention for wines with lower sulphur limits, made from grapes with a lower yield per hectare: 6,750 kg instead of 9,000 kg for most varieties, and 7,500 kg instead of 10,000 kg for Parellada."
+    "text": "A label mention for wines with lower sulphur limits. Their grapes come from lower yields: 6,750 kg a hectare instead of 9,000 for most varieties, and 7,500 instead of 10,000 for Parellada."
    }
   ],
   "cite": [
