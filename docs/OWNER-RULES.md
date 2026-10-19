@@ -1,4 +1,5 @@
 These were the hosted project's instructions (the owner's standing rules) as of 2026-10-19, verbatim.
+Changed since (owner, 19 Oct 2026, local session): hand off at about 150K context, not 80K. CLAUDE.md holds the current rule.
 
 # Atlaslope: project instructions
 
