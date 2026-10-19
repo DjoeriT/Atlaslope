@@ -1,0 +1,117 @@
+{
+  "id": "manzanilla",
+  "title": "Why Manzanilla tastes the way it does",
+  "minutes": 4,
+  "lede": {
+    "text": "Manzanilla ages in cellars in Sanlúcar de Barrameda, where humidity stays higher all year than in the rest of the vineyard zone. The wine is dry and leaves a salty feel in the mouth.",
+    "cite": [
+      "manzanilla-pliego:p5",
+      "manzanilla-pliego:p1"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "beat": "place",
+      "title": "Between a river and the ocean",
+      "paras": [
+        "The vineyards lie in the north-west of Cádiz province, the southernmost province of mainland Spain. The Guadalquivir river marks the north. The Atlantic Ocean marks the west and the south. The foothills of the Sierra de Cádiz mark the east.",
+        "The land is open, flat or gently rolling. Hills usually have a slope of 10 to 15%. Near the Guadalquivir lie many marismas, marshes that can flood, the remains of the ancient Lacus Ligustinus. In the south, salt pans and tidal flats (esteros), partly flooded by the tides, cover much of El Puerto de Santa María and Puerto Real.",
+        "Grapes can come from ten municipalities. The cellars that age the wine stand only in Sanlúcar de Barrameda. Vines and wine have shaped the area since Phoenician times."
+      ],
+      "cite": [
+        "manzanilla-pliego:p3",
+        "manzanilla-pliego:p4",
+        "manzanilla-pliego:p5"
+      ],
+      "fly": [
+        {
+          "label": "The Guadalquivir marshes",
+          "point": [
+            -6.326,
+            36.956
+          ],
+          "zoom": 9,
+          "caption": "The Guadalquivir marks the northern edge. Near it lie marshes that can flood, the remains of the ancient Lacus Ligustinus.",
+          "cite": [
+            "manzanilla-pliego:p4"
+          ]
+        },
+        {
+          "label": "Sanlúcar de Barrameda",
+          "point": [
+            -6.352,
+            36.778
+          ],
+          "zoom": 10,
+          "caption": "The only town where the cellars may age Manzanilla.",
+          "cite": [
+            "manzanilla-pliego:p3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "beat": "weather",
+      "title": "Sun, sea mist and two winds",
+      "paras": [
+        "The climate is warm. Winter lows average around 5 °C and summer highs around 35 °C. Frost risk is minimal. The regulating effect of the sea means that vines inland reach somewhat more extreme values.",
+        "The zone has more than 300 sunny days a year. Even so, about 600 litres of rain fall per square metre in an average year. Dew from the nearby coast is intense and lowers the vines' transpiration.",
+        "Two winds dominate. The levante comes from the interior, dry and hot. The poniente comes from the ocean and brings a lot of humidity. It is an important moderating factor, especially in summer.",
+        "The marshes, the salt pans and frequent night breezes from the nearby ocean help keep humidity levels up. In Sanlúcar de Barrameda, where the cellars stand, humidity stays higher all year than in the rest of the zone, and temperatures stay more moderate in both winter and summer."
+      ],
+      "cite": [
+        "manzanilla-pliego:p4",
+        "manzanilla-pliego:p5"
+      ]
+    },
+    {
+      "id": "ground",
+      "beat": "ground",
+      "title": "White chalky soil that holds water",
+      "paras": [
+        "Most vineyards grow on albariza, a soft white marl. It is easy to work. It holds moisture very well and lets the roots develop excellently. Calcium carbonate usually makes up at least 25% of it and up to 40%. The rest includes clay and silica from the shells of diatoms and radiolarians, which lived in the sea that covered the area in the Oligocene.",
+        "Vines also grow on barros, usually found in hollows and low parts of the hills. Besides limestone, these soils hold a large share of clay and sand. They also have more organic matter, which makes them darker and more fertile. Arenas, sandy soils, predominate in the coastal vineyards. They have less than 20% limestone and are mostly sand and clay.",
+        "Generally, almost no rain falls during most of the vines' active cycle. With the dry levante winds prevailing and the albariza holding moisture, this ensures healthy, high-quality harvests that ripen very well. The chalky soils that dominate the zone produce elegant wines with body and sapidity. Their acidity is moderate, and they have a great capacity to evolve over the long term."
+      ],
+      "cite": [
+        "manzanilla-pliego:p4",
+        "manzanilla-pliego:p6"
+      ]
+    },
+    {
+      "id": "rules",
+      "beat": "rules",
+      "title": "Aged under a veil of yeast",
+      "paras": [
+        "Two grapes are allowed: Listán Blanco, also called Palomino Fino, and Palomino. Growers have selected the best-adapted variety over the centuries. Both give a high expression of the terroir and a great capacity for ageing.",
+        "The protected wines fall into two legal categories: wine and liqueur wine. They differ only in whether the wine is fortified. Fortification adds alcohol and is allowed only for liqueur wines. The added alcohol may come from outside the production area.",
+        "Either way, Manzanilla is a vino generoso, a wine whose character comes from biological ageing. It is dry, with 14 to 17% alcohol and under 4 g/L of sugar. Its colour runs from straw yellow to amber. It must show at least two aromas of biological ageing: white flowers, nuts or yeast, like fresh bread dough. It may also hint at fine oak that once held wine. In the mouth it leaves a salty feel, and it can be slightly acidic and bitter.",
+        "Biological ageing, crianza biológica, takes at least two years in Sanlúcar cellars. The wine rests under the flor, a film of yeast on its surface, in oak botas, the local name for barrels, of up to 1,000 litres. Biological ageing benefits greatly from the high humidity that Sanlúcar's traditional cellar buildings draw from the frequent night breezes off the Atlantic.",
+        "One way to age the wine is the criaderas y solera system. Part of the wine in each row of barrels is drawn off and topped up from a younger row. The last row, the solera, supplies the bottles. Its origin goes back to the 18th century and to the demand for wine of steady quality whatever the harvest. The alternative is añada ageing, where each harvest ages apart and is never blended.",
+        "Fortification once protected wines on long sea voyages to the Americas and northern Europe. It also played a decisive part in the appearance, by natural selection, of the flor yeasts.",
+        "Yields are capped at 11,428 kg of grapes per hectare. The wine may come to at most 70 litres per 100 kg of grapes. Growers developed the traditional vara y pulgar (rod and spur) pruning, one of the zone's most singular contributions to viticulture."
+      ],
+      "cite": [
+        "manzanilla-pliego:p1",
+        "manzanilla-pliego:p2",
+        "manzanilla-pliego:p3",
+        "manzanilla-pliego:p4",
+        "manzanilla-pliego:p5",
+        "manzanilla-pliego:p6"
+      ]
+    }
+  ],
+  "label": {
+    "terms": [
+      {
+        "term": "Manzanilla Pasada",
+        "text": "A wine can use this name when its average ageing is at least 7 years and its long ageing leaves slight signs of oxidation."
+      }
+    ],
+    "cite": [
+      "manzanilla-pliego:p3"
+    ]
+  }
+}

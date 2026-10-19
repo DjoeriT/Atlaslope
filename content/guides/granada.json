@@ -1,0 +1,155 @@
+{
+  "id": "granada",
+  "title": "Why Granada tastes the way it does",
+  "minutes": 4,
+  "lede": {
+    "text": "Vines in Granada bud late and ripen slowly between late August and early October. The gap between the day's highs and lows helps the skins and seeds ripen, and polyphenols, the molecules behind a wine's colour and structure, build up in both.",
+    "cite": [
+      "granada-pliego:p11"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "beat": "place",
+      "title": "A province with a snowy wall",
+      "paras": [
+        "The vineyards lie in Granada, a province in eastern Andalucía. Grapes must be grown inside the province, and the wine must be made and aged there too.",
+        "Three subzones each have a uniform geography. Geoparque-Norte takes in Baza and Guadix. Poniente takes in Granada city itself, along with Almuñécar and Motril. Contraviesa-Alpujarra has just 13 municipalities.",
+        "Vines have grown here since time out of mind. A Roman villa at Molvízar had a wine press, and wine was made there in the first centuries of our era. A Muslim writer of the time tells how, while a Christian army camped on the farmland plain around the city, a great load of supplies crossed Sierra Nevada from the Alpujarra. Raisins were among them, and they eased the shortage. The city fell on 2 January 1492."
+      ],
+      "cite": [
+        "granada-pliego:p8",
+        "granada-pliego:p9",
+        "granada-pliego:p10"
+      ],
+      "fly": [
+        {
+          "label": "Sierra Nevada",
+          "point": [
+            -3.1425,
+            37.0955
+          ],
+          "zoom": 9,
+          "caption": "Supplies, raisins among them, crossed this range from the Alpujarra to reach Granada before the city fell in 1492.",
+          "cite": [
+            "granada-pliego:p10"
+          ]
+        },
+        {
+          "label": "Molvízar's Roman wine villa",
+          "point": [
+            -3.5949,
+            36.791
+          ],
+          "zoom": 11,
+          "caption": "Remains of a Roman villa with a wine press were found at Molvízar.",
+          "cite": [
+            "granada-pliego:p10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "beat": "weather",
+      "title": "Half the province above 1,000 m",
+      "paras": [
+        "About 50% of the province lies above 1,000 m, which gives low average temperatures over the year. Annual averages run 15 to 16 ºC. The mean absolute highs reach 39 ºC and the mean absolute lows -4 ºC.",
+        "The low average temperatures delay budding, and that delays the whole growing cycle. Ripening runs from late August to early October. It is slower and more even. That goes for sugars and polyphenols as well as the compounds behind varietal aroma (terpenes and their precursors).",
+        "The gap between the day's highs and lows helps the skins and seeds ripen. Polyphenols, the molecules behind a wine's colour and structure, build up in both.",
+        "Altitude also means the vine burns little tartaric acid. Wines reach a correct total acidity without added tartaric acid. The area also has low pH, which suits wines given long bottle ageing.",
+        "Rain averages about 450 mm a year over about 70 rainy days, inside the 350 to 600 mm range considered right for quality wine. Moderate, temporary water stress in summer shrinks the berries and builds polyphenols in red varieties."
+      ],
+      "cite": [
+        "granada-pliego:p11"
+      ]
+    },
+    {
+      "id": "ground",
+      "beat": "ground",
+      "title": "Thin, hungry slate",
+      "paras": [
+        "Most vineyards stand on Palaeozoic land, where brown soil sits on siliceous metamorphic rock. It erodes easily. The breakdown of slates and clayey schists sometimes makes up for what erosion takes away.",
+        "The soil is not deep, but it holds moisture well. It is very poor in organic matter, as it is in phosphorus and nitrogen. In general those traits favour quality wine.",
+        "Other vineyards sit on brown limy soil over loose material, with very little humus. How well those soils suit vines depends on the lie of the land and the geology beneath."
+      ],
+      "cite": [
+        "granada-pliego:p11"
+      ]
+    },
+    {
+      "id": "rules",
+      "beat": "rules",
+      "title": "Still, sparkling and late-harvest wines",
+      "paras": [
+        "Granada makes white and red wines as well as rosado (rosé), from dry to sweet. A rosado needs at least 25% red grapes. The province allows 12 white and 10 red varieties. Vigiriego (also spelled Vigiriega) opens the white list, and Tempranillo opens the red one.",
+        "Sparkling wine follows the traditional method, with a second fermentation in the bottle and at least 9 months between bottling and disgorging. Wines from overripe grapes must start above 15% natural alcohol and finish at no less than 13%.",
+        "Contraviesa-Alpujarra has stricter rules. Its whites need at least 11% alcohol, its rosados 12% and its reds 13%. Its limit is 65 litres of wine per 100 kg of grapes, against 70 elsewhere. Its grapes may not be carried in sacks, only in rigid, waterproof open crates that weigh at most 30 kg when full. Oak chips are banned in making or ageing any of its wines. Its sparkling wine uses only Vigiriego, Chardonnay or Pinot Noir, with at least 70% Vigiriego.",
+        "Yields are capped at 8,000 kg per hectare for red grapes, 9,000 kg for white and 12,000 kg for grapes meant only for sparkling wine. In Contraviesa-Alpujarra the caps are 6,000 kg for red (7,000 kg for Tempranillo) and 8,000 kg for white."
+      ],
+      "cite": [
+        "granada-pliego:p1",
+        "granada-pliego:p3",
+        "granada-pliego:p6",
+        "granada-pliego:p7",
+        "granada-pliego:p9"
+      ],
+      "fly": [
+        {
+          "label": "Contraviesa-Alpujarra",
+          "point": [
+            -3.2456,
+            36.8662
+          ],
+          "zoom": 10,
+          "caption": "This subzone caps yields lower than the rest of the province and bans oak chips.",
+          "cite": [
+            "granada-pliego:p6",
+            "granada-pliego:p9"
+          ]
+        }
+      ]
+    }
+  ],
+  "label": {
+    "terms": [
+      {
+        "term": "Crianza",
+        "text": "Red wines age at least 2 years and whites and rosados at least 18 months, counted from 1 November of the harvest year, with at least 6 months in oak barrels of up to 330 litres."
+      },
+      {
+        "term": "Reserva",
+        "text": "Whites and rosados age at least 24 months in all and reds at least 36 months, counted from 1 November of the harvest year, with at least 6 months (whites and rosados) or 12 months (reds) in oak barrels of up to 330 litres."
+      },
+      {
+        "term": "Gran Reserva",
+        "text": "Whites and rosados age at least 48 months in all and reds at least 60 months, with at least 6 months (whites and rosados) or 18 months (reds) in oak barrels of up to 330 litres and the rest in bottle."
+      },
+      {
+        "term": "Fermentado en Barrica",
+        "text": "The wine fermented in oak barrels of up to 600 litres and stayed in them for at least 3 months."
+      },
+      {
+        "term": "Barrica or Roble",
+        "text": "The wine aged at least 3 months in oak barrels of up to 600 litres."
+      },
+      {
+        "term": "Premium",
+        "text": "A sparkling wine aged at least 12 months from bottling to disgorging."
+      },
+      {
+        "term": "Nuevo",
+        "text": "A still wine of the latest harvest, bottled and labelled before 1 March of the following year."
+      },
+      {
+        "term": "Joven",
+        "text": "A still wine made in the same season in which it is labelled."
+      }
+    ],
+    "cite": [
+      "granada-pliego:p4",
+      "granada-pliego:p5"
+    ]
+  }
+}
