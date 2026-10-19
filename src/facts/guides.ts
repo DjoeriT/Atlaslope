@@ -53,7 +53,8 @@ export interface Guide {
   chapters: Chapter[];
   /** How to say the place's name, written out ("chah-koh-LEE"); shown beside the title. */
   say?: string;
-  /** Read the label: the bottle terms and what they mean here, from the pliego (today's fact rule allows it). */
+  /** Read the label: the bottle terms and what they mean here, from the pliego (today's fact rule allows it). Only terms the fact sheet's
+   *  famous styles do not already hold (owner, 19 Oct 2026). */
   label?: { terms: LabelTerm[]; cite: Cite[] };
   /** Sections beyond the beats, each shown only when written. History, Places to visit, Food to try there and the one surprising fact
    *  wait on which sources count (issue #103). */

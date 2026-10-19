@@ -101,6 +101,7 @@ Approved mock: `Review/mock-guide-shape-c/index.html` (option C). The guide is t
 - How it tastes closes the chain as a toned panel; then In short: five facts, one line each, each a link to its beat.
 - The rest are plain sections a wine lover browses, with plain titles: Producers, Read the label, Did you know, History, Places to visit
   (When to go inside it), Food to try there, If you like this, try. Each shows only when it has sourced text.
+- Read the label lists only bottle terms the fact sheet's Famous styles does not already hold; those stay in the rules beat (owner card, 19 Oct 2026: "Keep both").
 - A guide is a fun reference, not exam-centric: no "Remember" cards, no "Beyond the exam". Test me is a small door into Study.
 - Later (issue #106): D's tappable cause chain on top of C, only where every step holds against the sources.
 
