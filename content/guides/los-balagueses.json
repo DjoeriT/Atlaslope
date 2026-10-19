@@ -1,0 +1,87 @@
+{
+ "id": "los-balagueses",
+ "title": "Why Los Balagueses tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The vineyard sits on a slope that drains water and makes the most of the vines' exposure to the sun. That favours ripening and a high output of polyphenols, which then go into the colour and body of the wines.",
+  "cite": [
+   "los-balagueses-pliego:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One estate among pine woods",
+   "paras": [
+    "Los Balagueses carries the traditional term vino de pago. The finca, or estate, lies in the south-west of the Utiel-Requena comarca, 20 km from Requena. All of its plots are in the municipality of Requena.",
+    "Pine woods surround the estate. Almond and olive groves grow around it too. So does garriga, a scrub of plants such as thyme and rosemary.",
+    "This setting helps the vines be farmed organically. The woods are home to a varied microfauna that helps with pollination and favours air in the soil. These small creatures also help keep the pests of vine and grape in check without pesticides. The plants around the plots are also a natural barrier against the spread of fungal diseases.",
+    "Vines have grown on the finca for several decades. The growers work each plot in its own way, according to the wine it will make. They mix traditional viticulture with the newest methods. They also try new ways of training the vines to get even ripening and bunches of small, separate berries."
+   ],
+   "cite": [
+    "los-balagueses-pliego:p2",
+    "los-balagueses-pliego:p3",
+    "los-balagueses-pliego:p4",
+    "los-balagueses-pliego:p5"
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Continental, with a Mediterranean touch",
+   "paras": [
+    "The climate is continental with a Mediterranean influence. Rain comes to 450 mm a year."
+   ],
+   "cite": [
+    "los-balagueses-pliego:p3"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limestone below, roots that go deep",
+   "paras": [
+    "The estate stands at about 700 m. Its vineyard lies on gentle slopes of 7 %.",
+    "Underneath are Cenozoic limy deposits and marls. The limestone rock in the subsoil shows up in soil tests as a high share of active lime.",
+    "This rock lets the roots reach deep. The vine then has a steady supply of water, even in a drought. No halt in ripening is seen here. Ripening can stall, for example, on alluvial terraces near the Río Cabriel in the south of the comarca.",
+    "The soil is a sandy clay loam, much the same across the vineyard. It has a basic pH and little organic matter. Its nutrients are at normal levels, which keeps the vine working well."
+   ],
+   "cite": [
+    "los-balagueses-pliego:p3",
+    "los-balagueses-pliego:p4"
+   ],
+   "fly": [
+    {
+     "label": "Río Cabriel",
+     "point": [
+      -1.4983,
+      39.4156
+     ],
+     "zoom": 10,
+     "caption": "In the south of the comarca, vines on alluvial terraces near this river can stop ripening. On the estate's limestone they do not.",
+     "cite": [
+      "los-balagueses-pliego:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Red and white from eight grapes",
+   "paras": [
+    "The estate makes red wines and white wines.",
+    "The reds come from five grapes: Merlot, Syrah, Garnacha Tintorera, Tempranillo and Bobal. The whites come from three: Chardonnay, Sauvignon Blanc and Tardana.",
+    "A red from Bobal has an intense red colour with violet glints. It smells of red fruit and black pepper. It is powerful and silky, with the wood very well integrated.",
+    "A red of Merlot with Garnacha Tintorera and Tempranillo has a powerful nose of ripe fruit and prunes with toasty notes. It has body and some power, with sweet tannins well balanced by correct acidity.",
+    "A white from Tardana shows the same profile as one from Sauvignon Blanc and Chardonnay."
+   ],
+   "cite": [
+    "los-balagueses-pliego:p1",
+    "los-balagueses-pliego:p2",
+    "los-balagueses-pliego:p3"
+   ]
+  }
+ ]
+}

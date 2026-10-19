@@ -1,0 +1,49 @@
+{
+ "id": "el-terrerazo",
+ "title": "Why El Terrerazo tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "The temperature swing in this vineyard gives the wine its typical colour. It also sets how well its acidity is balanced.",
+  "cite": ["el-terrerazo-doc:p3"]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A vineyard in Utiel",
+   "paras": [
+    "El Terrerazo's vineyard lies in the municipality of Utiel, in Valencia. It has a protected designation of origin of its own.",
+    "It was recognised as a vino de pago on 17 September 2010."
+   ],
+   "cite": ["el-terrerazo-doc:p1", "el-terrerazo-doc:p2", "el-terrerazo-doc:p6"]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Sun all day, slow ripening",
+   "paras": [
+    "The land here barely falls away, so the vineyard is in sunlight for the whole day. Together with the altitude of 870 m, this gives a very high heat sum. In other words, days and nights differ a lot in temperature. The grapes ripen very slowly as a result."
+   ],
+   "cite": ["el-terrerazo-doc:p3"]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limy sandy loam",
+   "paras": [
+    "The soil is a sandy loam. It is limy, with a basic pH. The wine owes its finesse to this soil."
+   ],
+   "cite": ["el-terrerazo-doc:p3"]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A red from four main grapes",
+   "paras": [
+    "El Terrerazo makes a red wine. Four grapes lead. Bobal and Syrah are two of them. Merlot and Garnacha Tinta are the other two.",
+    "A red can also be made from Bobal alone. Cabernet Sauvignon is allowed as a secondary grape. So is Tempranillo, also called Cencibel or Tinto de Toro."
+   ],
+   "cite": ["el-terrerazo-doc:p1", "el-terrerazo-doc:p2", "el-terrerazo-doc:p3", "el-terrerazo-doc:p6"]
+  }
+ ]
+}

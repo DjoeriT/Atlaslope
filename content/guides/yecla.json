@@ -1,0 +1,117 @@
+{
+ "id": "yecla",
+ "title": "Why Yecla tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Yecla's link to its wine comes mainly from a very dry climate, very arid soils and the mountains that cut it off from the coast and the north. Add strong sunshine and Monastrell gives wines of good colour and plenty of alcohol.",
+  "cite": [
+   "yecla-pliego:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One town, one wine zone",
+   "paras": [
+    "Yecla is the only wine zone in Spain made of a single municipality. Its vineyards are the registered plots inside the municipality of Yecla, in the Región de Murcia. The wine is made and aged inside the same zone.",
+    "The municipality covers 607.7 km². It belongs to the Altiplano, a comarca at the northern tip of Murcia in the southeast of the Iberian Peninsula. Its mean height is 597 m above sea level.",
+    "Much of the municipality drains into basins with no outlet to the sea. Small ramblas, gullies that run after rain, feed them. The biggest rambla curves around the north side of the town.",
+    "The vineyard here has deep roots. The remains of a winery at Fuente del Pinar date from the 1st century BC to the 3rd century AD, with its treading floor linked to its vat. It was used again between the 14th and 16th centuries.",
+    "The real spread of the vineyard came from the middle of the 19th century. It peaked between 1870 and 1890, helped by French demand for wine while phylloxera spread in France. Then phylloxera reached Yecla too. The Denominación de Origen was set up in the mid-1970s."
+   ],
+   "cite": [
+    "yecla-pliego:p3",
+    "yecla-pliego:p4",
+    "yecla-pliego:p5"
+   ],
+   "fly": [
+    {
+     "label": "Yecla",
+     "point": [
+      -1.1158,
+      38.6136
+     ],
+     "zoom": 10,
+     "caption": "The only wine zone in Spain made of a single municipality.",
+     "cite": [
+      "yecla-pliego:p5"
+     ]
+    },
+    {
+     "label": "The Altiplano",
+     "point": [
+      -1.2575,
+      38.5188
+     ],
+     "zoom": 9,
+     "caption": "The comarca at the northern tip of Murcia that Yecla belongs to.",
+     "cite": [
+      "yecla-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Dry, with warm summers and hard winters",
+   "paras": [
+    "The climate is dry continental. Summers are warm and can reach 39 ºC. Winters are fairly harsh, and on the worst days it can fall to -10 ºC.",
+    "Rain is scarce, about 300 mm a year, mostly in spring and autumn. It generally comes as downpours and storms. In summer these can bring hail.",
+    "The sun is strong, with more than 3,000 hours of clear sunshine a year."
+   ],
+   "cite": [
+    "yecla-pliego:p4"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "A high plateau cut by ridges",
+   "paras": [
+    "The plateau stands notably high. Many mountain ridges rise from it, most of them running northeast to southwest. Between them lie corridor valleys and closed hollows, with a big drop from the peaks to the valley floors.",
+    "The vines sit on rolling ground between 535 and 870 m above sea level.",
+    "In general the soils are limy, among other types, deep and well drained. They are poor in organic matter and rich in limestone. Together these sometimes form a crust on the surface."
+   ],
+   "cite": [
+    "yecla-pliego:p4"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Monastrell first",
+   "paras": [
+    "Monastrell is the main grape. It is one of 8 red grapes allowed, with Tempranillo and Syrah among the others. Macabeo and Verdejo are among the white grapes. Viognier is a newer white grape, added after research found it well suited to the area.",
+    "Yecla makes mainly red wines. Traditionally they come from Monastrell, usually from old vines very rich in tannin. For more complexity, winemakers blend in smaller shares of grapes such as Tempranillo or Garnacha.",
+    "Reds made the traditional way and reds made in a modern way can be very different. Today the trend is modern winemaking for wines lower in alcohol, with more balance between alcohol, acidity and extract. It often uses an early harvest and temperature-controlled winemaking.",
+    "Besides reds, Yecla protects whites, rosados and sparkling wines. By sugar the wines can be dry, semi-dry, semi-sweet or sweet. Sparkling wines can be made from a white, rosado or red base wine.",
+    "Yecla also makes vino de licor, a fortified wine of 15 to 22% alcohol. It is balanced between sweetness and bitterness, full-bodied and unctuous, with a long finish. Its aromas are very intense when it comes from Monastrell.",
+    "Vines may be dry-farmed or irrigated. They are trained as traditional bush vines or on wires."
+   ],
+   "cite": [
+    "yecla-pliego:p1",
+    "yecla-pliego:p2",
+    "yecla-pliego:p3",
+    "yecla-pliego:p4",
+    "yecla-pliego:p5",
+    "yecla-doc2:p1"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Denominación de Origen",
+    "text": "This traditional term may replace \"Denominación de origen protegida\" on the label.",
+    "cite": [
+     "yecla-pliego:p7"
+    ]
+   }
+  ],
+  "cite": [
+   "yecla-pliego:p7"
+  ]
+ }
+}

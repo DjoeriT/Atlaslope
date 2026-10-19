@@ -1,0 +1,145 @@
+{
+ "id": "utiel-requena",
+ "title": "Why Utiel-Requena tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Utiel-Requena makes its rosados by tipping a new load of crushed, undrained grapes onto the solids left after the first must runs off. The result is a rosado of a colour intensity not reached in other regions, and a high total acidity that gives it freshness and protects it in storage.",
+  "cite": [
+   "utiel-requena-pliego:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A high terrace leaning toward the sea",
+   "paras": [
+    "Utiel-Requena is a plateau of transition between the Mediterranean coast and the Meseta Castellana, inland in the Comunidad Valenciana. It forms a terrace that tilts toward the Mediterranean, about 65 km away in a straight line. Its relief is the eastern fall of the Cordillera Ibérica, ringed by sierras. The great arc of the río Cabriel bounds it to the south and west. The Cabriel and the Magro water it, and both flow into the Júcar.",
+    "Archaeological finds take vines and wine here back to the 5th and 6th centuries BC. An Iberian rock-cut wine press at the Solana de las Pilillas, in Requena, has been on UNESCO's Tentative List since February 2018. In 1265 the Fuero de Requena already named “Binaderos”, the guardians of the vines. The vineyard grew most at the end of the 19th century, when the railway arrived and demand came mainly from France."
+   ],
+   "cite": [
+    "utiel-requena-pliego:p5",
+    "utiel-requena-pliego:p6",
+    "utiel-requena-pliego:p7"
+   ],
+   "fly": [
+    {
+     "label": "Requena",
+     "point": [
+      -1.1002,
+      39.4881
+     ],
+     "zoom": 10,
+     "caption": "The town whose Fuero of 1265 named the “Binaderos”, guardians of the vines. An Iberian rock-cut wine press lies in its lands.",
+     "cite": [
+      "utiel-requena-pliego:p6",
+      "utiel-requena-pliego:p7"
+     ]
+    },
+    {
+     "label": "The arc of the río Cabriel",
+     "point": [
+      -1.4983,
+      39.4156
+     ],
+     "zoom": 9,
+     "caption": "The river that bends round the south and west of Utiel-Requena on its way to the Júcar.",
+     "cite": [
+      "utiel-requena-pliego:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mediterranean, with a continental bite",
+   "paras": [
+    "The climate is generally Mediterranean, with strong continental traits sharpened by the altitude. Temperatures swing hard in both the hottest and the coldest season, and between day and night from veraison. These swings give the wines an important acidity. It brings freshness and liveliness to whites and rosados, and reds gain a greater polyphenol concentration.",
+    "Rain is scarce and irregular, 400 mm a year on average and as little as 150 mm in the driest years. The sun shines about 2,700 hours a year. Little rain during ripening means very little risk of fungal disease, and the vineyards usually need no treatments.",
+    "Research still under way finds more resveratrol in Bobal wines from here than in other varieties and zones. It is put down to the stress of strong temperature swings together with water stress."
+   ],
+   "cite": [
+    "utiel-requena-pliego:p6",
+    "utiel-requena-pliego:p8",
+    "utiel-requena-pliego:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limy ground that holds little water",
+   "paras": [
+    "The terrace runs from about 650 m to about 905 m, with an average of 720 m. Despite the nearby sea, it can be considered mountain country. The land slopes all the time into small valleys called “vallejos” and low hillocks called “cerritos”. Many vineyards there hardly flood and hold very little water, which raises their potential for quality grapes.",
+    "Most soils are loam, often stones and gravel on medium slopes. In general they are alkaline and high in lime, and poor in organic matter. In the whites, the widespread limy character of the soils brings quite intense floral and white-fruit aromas. In the reds, the ground brings red and black fruit with balsamic hints."
+   ],
+   "cite": [
+    "utiel-requena-pliego:p5",
+    "utiel-requena-pliego:p6",
+    "utiel-requena-pliego:p9"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Bobal country",
+   "paras": [
+    "Bobal is the native grape and covers 75% of the registered vineyard. On lower ground further from the sea it gives poorer fruit and a wine totally different from typical Utiel-Requena. The polyphenol load of the zone, and of Bobal in particular, works with the high acidity to give the reds intense red tones. Thanks to that acidity the red tones last longer here than elsewhere.",
+    "White grapes are a minority. The native white is Tardana, also called Planta Nova, and its whites can show more tropical aromas. Macabeo is the most planted white.",
+    "Besides white, rosado and red wine, Utiel-Requena protects quality sparkling wine and aromatic quality sparkling wine. It also makes vino de aguja, a lightly fizzy wine that is not a sparkling wine, and low-alcohol wines. Largely thanks to the many hours of sun, these wines can reach aromatic potential and a sugar-acidity balance at technical ripeness.",
+    "Vino de licor is a fortified wine. The low risk of fungal disease allows very late harvests of healthy grapes that reach very high sugar and keep a very high acidity. In the mouth these wines are unctuous, with a very balanced acidity and sugar."
+   ],
+   "cite": [
+    "utiel-requena-pliego:p1",
+    "utiel-requena-pliego:p2",
+    "utiel-requena-pliego:p3",
+    "utiel-requena-pliego:p4",
+    "utiel-requena-pliego:p7",
+    "utiel-requena-pliego:p8",
+    "utiel-requena-pliego:p9",
+    "utiel-requena-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vendimia Inicial",
+    "text": "Wines from grapes picked in the first 10 days of harvest, whose youth may show as a slight prickle of gas."
+   },
+   {
+    "term": "Superior",
+    "text": "At least 85% preferred local varieties, with more intense aromas and a longer finish."
+   },
+   {
+    "term": "Bobal con mención específica",
+    "text": "Single-variety Bobal rosados and reds."
+   },
+   {
+    "term": "Madurado or Madurado en barrica",
+    "text": "Reds or whites given up to 6 months in oak of at most 600 l, long enough for the wood to show."
+   },
+   {
+    "term": "Crianza",
+    "text": "Reds age at least 24 months and whites and rosados 18, with at least 6 in oak of at most 330 l."
+   },
+   {
+    "term": "Reserva",
+    "text": "Reds age at least 36 months with 12 in oak, whites and rosados 24 with 6 in oak, the rest in bottle."
+   },
+   {
+    "term": "Gran Reserva",
+    "text": "Reds age at least 60 months with 18 in oak, whites and rosados 48 with 6 in oak, the rest in bottle."
+   },
+   {
+    "term": "Bobal Alta Expresión",
+    "text": "Single-variety Bobal from vines over 50 years old yielding under 4,000 kg/ha."
+   }
+  ],
+  "cite": [
+   "utiel-requena-pliego:p2",
+   "utiel-requena-pliego:p12",
+   "utiel-requena-pliego:p13"
+  ]
+ }
+}

@@ -1396,5 +1396,89 @@
   "title": "Documento único DOP Pla i Llevant, current text with the 2025 normal amendment (OJ C/2026/1686, 17 Mar 2026, EU PDO-ES-A1038)",
   "url": "http://data.europa.eu/eli/C/2026/1686/oj",
   "date": "2026-03-17"
+ },
+ "valencia-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Valencia (PDO-ES-A0872), revision with AM05 (vino de pueblo and vino de parcela, Alto Turia boundary, must for vinos de licor), control-de-cambios text from the Generalitat Valenciana Portal Agrari, struck words dropped",
+  "url": "https://portalagrari.gva.es/documents/366567370/379794783/PC+DOP+Valencia+2024+Modif+control+cambios.pdf/9c98d31d-bff4-51cf-376e-741843627fa7?t=1709118588357",
+  "date": "2024-02-28"
+ },
+ "utiel-requena-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Utiel-Requena (PDO-ES-A0874), definitive text of the 2023 normal amendment, Generalitat Valenciana Portal Agrari",
+  "url": "https://portalagrari.gva.es/documents/366567370/0/00001D+PC+DO+UTIEL-REQUENA+DEFINITIVO.pdf/76ec7286-6eef-f866-3b5f-ab88734cbbed?t=1682418183136",
+  "date": "2023-02-17"
+ },
+ "alicante-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Alicante (PDO-ES-A1526), 2024 text, Generalitat Valenciana Portal Agrari",
+  "url": "https://portalagrari.gva.es/documents/366567370/376757722/Pliego+DOP+ALICANTE+2024.pdf/9e3e6c04-b601-3a2d-0f7a-6c4b2731b0bc?t=1706699742663",
+  "date": "2024-01-31"
+ },
+ "los-balagueses-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones Vino de Pago Los Balagueses (PDO-ES-A0941), consolidated text of the 2024 amendment, Generalitat Valenciana Portal Agrari",
+  "url": "https://portalagrari.gva.es/documents/366567370/385383126/Balagueses+MAPA+PC+consolidado+.pdf/06dc27ab-a902-4a89-7377-d268bd9301a1?t=1723189925581",
+  "date": "2024-08-09"
+ },
+ "tharsys-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Pago de Tharsys (PDO-ES-02086), text of the EU application (en tramitación), Generalitat Valenciana Portal Agrari",
+  "url": "https://portalagrari.gva.es/documents/366567370/366661129/Pliego+de+Condiciones+Pago+de+Tharsys.pdf/0aa67a54-a564-3413-4d8d-55f88e80b038?t=1680528657903",
+  "date": "2024-02-20"
+ },
+ "yecla-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Yecla (PDO-ES-A0606), revisión 23 of 3 Mar 2023, Región de Murcia (CARM)",
+  "url": "https://www.carm.es/web/integra.servlets.Blob?ARCHIVO=Pliego_Condiciones_DOP_Yecla__definitivo%5B1%5D.pdf&TABLA=ARCHIVOS&CAMPOCLAVE=IDARCHIVO&CAMPOIMAGEN=ARCHIVO&IDTIPO=60&VALORCLAVE=77958",
+  "date": "2023-03-03"
+ },
+ "jumilla-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Jumilla (PDO-ES-A0109), last amended by Resolución de 24 de febrero de 2025 (BOE 5 Mar 2025), hosted by the Consejo Regulador",
+  "url": "https://jumilla.wine/wp-content/uploads/2025/03/PLIEGO-DE-CONDICIONES.pdf",
+  "date": "2025-03-05"
+ },
+ "bullas-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Bullas (PDO-ES-A0536), revisión 3 of July 2019, Región de Murcia (CARM)",
+  "url": "https://www.carm.es/web/integra.servlets.Blob?ARCHIVO=PLIEGO%20DE%20CONDICIONES%20OCTUBRE%202014%20DEFINITIVO.pdf&TABLA=ARCHIVOS&CAMPOCLAVE=IDARCHIVO&CAMPOIMAGEN=ARCHIVO&IDTIPO=60&VALORCLAVE=108432",
+  "date": "2019-07-01"
+ },
+ "valencia-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Valencia as amended, communication of an approved normal amendment (EU Official Journal C/2024/7448, PDO-ES-A0872)",
+  "url": "http://data.europa.eu/eli/C/2024/7448/oj",
+  "date": "2024-12-18"
+ },
+ "utiel-requena-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Utiel-Requena as amended, communication of an approved normal amendment (EU Official Journal C 280, 9.8.2023, p. 13, PDO-ES-A0874)",
+  "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=uriserv:OJ.C_.2023.280.01.0013.01.SPA",
+  "date": "2023-08-09"
+ },
+ "alicante-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Alicante as amended, communication of an approved normal amendment (EU Official Journal C/2024/4680, PDO-ES-A1526)",
+  "url": "http://data.europa.eu/eli/C/2024/4680/oj",
+  "date": "2024-07-25"
+ },
+ "los-balagueses-doc2": {
+  "kind": "official",
+  "title": "Documento único Los Balagueses as amended, communication of an approved normal amendment (EU Official Journal C/2025/510, PDO-ES-A0941)",
+  "url": "http://data.europa.eu/eli/C/2025/510/oj",
+  "date": "2025-01-28"
+ },
+ "yecla-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Yecla as amended (AM03, adds Viognier), communication of an approved normal amendment (EU Official Journal C/2024/3268, PDO-ES-A0606)",
+  "url": "http://data.europa.eu/eli/C/2024/3268/oj",
+  "date": "2024-05-27"
+ },
+ "jumilla-doc2": {
+  "kind": "official",
+  "title": "Documento único DOP Jumilla as amended (drops the «Pie franco» label term), communication of an approved normal amendment (EU Official Journal C/2025/3208, PDO-ES-A0109)",
+  "url": "http://data.europa.eu/eli/C/2025/3208/oj",
+  "date": "2025-06-11"
  }
 }
