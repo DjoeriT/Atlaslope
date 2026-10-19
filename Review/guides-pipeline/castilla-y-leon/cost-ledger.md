@@ -11,3 +11,4 @@
 | Write | leon | Sonnet | 39,087 | 1.7 |
 | Write | valtiendas | Sonnet | 33,725 | 0.8 |
 | Check | rueda | Opus | 87,340 | 3.6 |
+| Write | valles-de-benavente | Sonnet | 38,903 | 1.1 |
