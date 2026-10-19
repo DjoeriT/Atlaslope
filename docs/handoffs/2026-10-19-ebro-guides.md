@@ -4,7 +4,7 @@
   Navarra Vinos de Pago Otazu, Prado de Irache, Arinzano and Bolandín. Plus the Guides-page tile `public/guides/ebro.webp` (138 KB,
   re-encoded with Pillow because the ImageMagick build ignores `-quality` for WebP) and the roster in `tests/unit/guides.test.ts`.
 - Sources: the Aragón and Navarra pliegos (EU PDO documents on file in `Review/sources/fetched/`); Urbezo cites its existing pliego text.
-- Owner decision needed: the four Navarra Vinos de Pago are written from the current EU single documents only. navarra.es refused every
+- Owner decided (19 Oct 2026, 13:34Z, "Yes"): keep the four pagos on EU single documents only; recorded in `docs/guides.md`. Original question: the four Navarra Vinos de Pago are written from the current EU single documents only. navarra.es refused every
   fetch and INTIA does not host their pliegos. `docs/guides.md` requires a pliego for Terroir, so these four need the owner's OK, or a
   pliego fetch through a GitHub Actions run.
 - Navarra's pliego (INTIA file 2026-05-21) carries no approval stamp; the 2024 BON text returned 404, so versions were not compared.

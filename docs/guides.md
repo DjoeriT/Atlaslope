@@ -80,6 +80,8 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 (`Review/fact-sheets-30-source-check.md`), ReviewBot copy check (`Review/pr-105-review.md`); handoff
 `docs/handoffs/2026-10-19-fact-sheets-30.md`.
 
+**Exception (owner OK, 19 Oct 2026):** the four Navarra Vinos de Pago (Otazu, Prado de Irache, Arinzano, Bolandín) have Terroir from the EU single document only; no pliego is on file.
+
 ## Format log
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
