@@ -29,3 +29,4 @@
 | Check | valles-de-benavente | Opus | 85,437 | 2.8 |
 | Check | arribes | Opus | 84,497 | 2.9 |
 | Check | sierra-de-salamanca | Opus | 84,205 | 3.0 |
+| Check | tierra-del-vino-de-zamora | Opus | 97,893 | 3.6 |
