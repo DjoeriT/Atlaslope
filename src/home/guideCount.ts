@@ -94,7 +94,8 @@ const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string
   }
   return parts.length ? `<p class="credit">Photos: ${parts.join('; ')}</p>` : '';
 };
-const SAT_CREDIT = '<p class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</p>';
+// the tile's own caption, so a reader ties the credit to the image (ReviewBot PR #114, P2 3)
+const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</figcaption>';
 
 const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean) =>
   `<img src="../photos/800/${key}.webp" srcset="../photos/480/${key}.webp 480w, ../photos/800/${key}.webp 800w" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}" loading="lazy" />`;
@@ -127,11 +128,10 @@ export const fillGuideList = (html: string, list: GuideList): string => {
     out.push(
       `<section class="region" aria-labelledby="r-${esc(r.id)}"><div class="rowh"><h2 id="r-${esc(r.id)}">${esc(r.name)}</h2><span>${n} ${n === 1 ? 'guide' : 'guides'}</span></div>`,
       '<div class="rowg">',
-      r.tile ? `<figure class="sat"><img src="../guides/${esc(r.tile)}" alt="Satellite view of ${esc(r.name)}" width="1200" height="750" loading="lazy" /></figure>` : '',
+      r.tile ? `<figure class="sat"><img src="../guides/${esc(r.tile)}" alt="Satellite view of ${esc(r.name)}" width="1200" height="750" loading="lazy" />${SAT_CREDIT}</figure>` : '',
       ...r.guides.map((g) => card(g, photos)),
       '</div>',
       creditLine(r.guides.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
-      r.tile ? SAT_CREDIT : '',
       '</section>',
     );
   }

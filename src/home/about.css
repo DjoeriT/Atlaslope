@@ -1,12 +1,13 @@
 /* About page (mock about-v3, owner pick 19 Oct 2026): a short letter, one traced fact, quiet small print. */
-.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .ab h1,.ab h2{font-family:var(--serif);font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
+.ab .page-head h1{font-weight:400}
 .ab p{margin:0}
-.letter{display:grid;grid-template-columns:420px minmax(0,40rem);gap:5rem;align-items:center;padding-block:5rem 5.5rem}
-.mosaic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;border-radius:6px;overflow:hidden;align-self:center}
-.mosaic img{display:block;width:100%;height:100%;object-fit:cover;background:var(--bg2);aspect-ratio:1/1}
-.mosaic .t-castle{grid-column:1/-1;aspect-ratio:4/3}
-.t-bottles{object-position:50% 50%}.t-me{object-position:50% 30%}.t-glass{object-position:40% 50%}.t-vines{object-position:50% 75%}
+.letter{display:grid;grid-template-columns:minmax(0,360px) minmax(0,40rem);gap:5rem;align-items:center;padding-block:4rem 4rem}
+/* his photos keep their own shape (owner, 19 Oct 2026): no object-fit crops, no fixed tiles; each column's fr = that photo's width/height, so the row shares one height */
+.ab img{display:block;width:100%;height:auto;background:var(--bg2)}
+.ab .me{border-radius:6px}
+.photos{display:grid;grid-template-columns:1.3333fr .728fr .75fr .75fr;gap:2px;padding-block:0 4.5rem}
+.photos img:first-child{border-radius:6px 0 0 6px}.photos img:last-child{border-radius:0 6px 6px 0}
 .note{display:grid;gap:.7rem}
 .note p{font-family:var(--serif);font-size:1.55rem;line-height:1.45;color:var(--ink);letter-spacing:-.01em}
 .ab .sign{margin-top:2.25rem;padding-top:1.25rem;border-top:2px solid var(--foil);width:max-content;font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--ink)}
@@ -17,7 +18,11 @@
 .fine{padding-block:2rem 3rem;border-top:1px solid var(--line)}
 .ab .fine p{font-size:.82rem;line-height:1.55;color:var(--ink3);max-width:44rem}
 @media (max-width:900px){
-  .letter{grid-template-columns:minmax(0,1fr);gap:2rem;padding-block:1.5rem 3rem}
+  .letter{grid-template-columns:minmax(0,1fr);gap:2rem;padding-block:2rem 3rem}
+  .ab .me{max-width:420px}
+  .photos{grid-template-columns:.728fr .75fr .75fr;padding-bottom:3rem}
+  .photos .p-castle{grid-column:1/-1;border-radius:6px 6px 0 0}
+  .photos img:nth-child(2){border-radius:0 0 0 6px}.photos img:last-child{border-radius:0 0 6px 0}
   .note p{font-size:1.3rem}
   .trace{padding-block:3rem}
   .trace h2{font-size:1.6rem}
