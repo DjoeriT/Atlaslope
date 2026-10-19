@@ -1,0 +1,116 @@
+{
+ "id": "bullas",
+ "title": "Why Bullas tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "In old Bullas the harvest never began before the October fiestas, and in some years the town council issued orders banning any earlier picking. The grapes came in very ripe and high in sugar, and that is why the wines had a lot of alcohol.",
+  "cite": [
+   "bullas-pliego:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A high town in the northwest of Murcia",
+   "paras": [
+    "Bullas lies in the Comarca del Noroeste, the northwest district of the Región de Murcia, between Cehegín and Mula. The town stands at 653 metres above sea level. It is one of the highest towns in the Región de Murcia.",
+    "The zone centres on five municipalities: Bullas, Cehegín, Mula, Pliego and Ricote. Parts of Calasparra between the río Segura and the Cehegín and Mula boundaries belong to it. So do parts of five more municipalities.",
+    "People have farmed here since the Neolithic, about 5,000 years ago. There was no town in Roman times, but many villae, or country estates, used the area's many springs to grow crops and make wine. Los Cantos, from the 1st century AD, stands out above all. It gave up the \"Niño de las Uvas\", a sculpture of a little seasonal spirit of autumn that is now an important local symbol.",
+    "Some country houses and houses in the old town still keep small family cellars in their basements. So much wine was made that the surplus went to other towns of the region, above all Lorca and Totana. The vineyard truly grew in the second half of the 19th century, when phylloxera left all of Europe needing wines with colour and strength. Bullas has been a Denominación de Origen since 1994."
+   ],
+   "cite": [
+    "bullas-pliego:p3",
+    "bullas-pliego:p4",
+    "bullas-pliego:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Bullas vineyards",
+     "place": "bullas",
+     "caption": "Vineyards in Bullas, Cehegín, Mula, Pliego and Ricote, with parts of six more municipalities.",
+     "cite": [
+      "bullas-pliego:p3"
+     ]
+    },
+    {
+     "label": "Bullas, the old town",
+     "point": [
+      -1.6706,
+      38.0497
+     ],
+     "zoom": 11,
+     "caption": "At 653 metres, one of the highest towns in Murcia. Some houses in the old town still keep small family cellars in their basements.",
+     "cite": [
+      "bullas-pliego:p4",
+      "bullas-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mediterranean, turned continental",
+   "paras": [
+    "By latitude and by the warm Mediterranean nearby, Bullas should have a typical Mediterranean climate. But it sits at a notable height, about 70 km in a straight line from the nearest coast. Moderately strong hills also hold back the sea's influence. Its climate can be described as a continental Mediterranean one.",
+    "The height helps bring the mean temperature down to 15ºC. Winters are cool and summers are hot. January averages around 7º C, falling with height to an average of 4º C in the highest parts of the municipality. July reaches 24,3º C.",
+    "That makes Bullas the municipality in the Región de Murcia with the mildest summers. Its relative height plays a part. Above all, the sierras of Cambrón, Pedro Ponce and Lavia shelter the town from the south winds.",
+    "Rain averages 365 mm, more than in the lowest parts of the Región de Murcia. It comes unevenly, with peaks in autumn and spring and a very marked summer drought. Frost and snow are not frequent."
+   ],
+   "cite": [
+    "bullas-pliego:p4",
+    "bullas-pliego:p5"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limestone and old Monastrell",
+   "paras": [
+    "Four factors shape the quality of the wine. One is the setting. Another is the altitude of the vineyards. The soil is mostly limestone, and the climate is dry with little rain.",
+    "What sets the vineyards apart from any other zone is above all the many old Monastrell vines. There is also almost no need for plant treatments.",
+    "Vines grow both dry-farmed and irrigated. Dry-farmed vines are trained in the traditional way as bush vines, called vaso. Irrigation is decided every year and may be allowed to keep the vine's vigour in balance with its climate and soil.",
+    "The natural conditions leave no room for other crops. Quality wine is the area's main aim."
+   ],
+   "cite": [
+    "bullas-pliego:p3",
+    "bullas-pliego:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Monastrell first",
+   "paras": [
+    "Monastrell is the main red grape and Macabeo the main white. Monastrell covers 80% of the vineyard and is very well suited to the conditions. Since 1998 new varieties have been allowed to add quality and complexity. Monastrell stays the main grape.",
+    "The reds are broad and fleshy, and deep in colour. They are high in alcohol with balanced acidity. They have a very particular fruity aroma, with body and well-integrated tannin. Moderate ageing in oak barrels gives very attractive wines, above all when small amounts of the newer varieties go in.",
+    "Bullas also makes whites, rosados (rosés) and sparkling wines. Today the trend is to make them with modern methods, for less alcohol and a better balance between alcohol, acidity and extract. Winemakers usually pick early and ferment at controlled temperatures for this. Sparkling wines spend at least 9 months in bottle, second fermentation included.",
+    "Wines can be dry, semi-dry, semi-sweet or sweet. In the semi-dry, semi-sweet and sweet wines the sweetness must be well balanced by acidity.",
+    "Vino de licor is a fortified wine made only from Monastrell, with wine alcohol added. After oak ageing its bouquet is intense, with cocoa, coffee and oriental spices."
+   ],
+   "cite": [
+    "bullas-pliego:p1",
+    "bullas-pliego:p2",
+    "bullas-pliego:p3",
+    "bullas-pliego:p4",
+    "bullas-pliego:p6"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Denominación de Origen",
+    "text": "This traditional term may replace \"Denominación de origen protegida\" on the label."
+   },
+   {
+    "term": "Añada",
+    "text": "The vintage, which every sparkling wine must show on its label."
+   }
+  ],
+  "cite": [
+   "bullas-pliego:p8"
+  ]
+ }
+}

@@ -22,11 +22,14 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   ratio. Detail: `Review/visual-style.md`.
 
 ## Current state (19 Oct 2026)
-- Release 48 is live (tag `release-48`; `git tag -l 'release-*'` for the latest). Guides: 62 of 109 places [R]: Andalucía, Cataluña,
-  Baleares, Ebro (11, PR #119) plus earlier ones (Rioja, Green Spain).
-- In progress: Mediterranean guides PR (11 places) and Canarias guides PR (11 places), each in its own clone/branch; check `gh api
-  repos/DjoeriT/Atlaslope/pulls` for their state. Left after those: Meseta, 25 places. Each region runs only on the owner's "use a workflow
-  for X" (the sources step, then `region.workflow.js`).
+- Release 49 (tag `release-49`; `git tag -l 'release-*'` for the latest): Mediterranean (11, PR #123) and Canarias (11, PR #124) guides,
+  home study line (PR #125). Guides: 84 of 109 places [V, unit test roster]: Rioja, Green Spain, Castilla y León, Andalucía, Cataluña,
+  Baleares, Ebro, Mediterranean, Canarias. Left: Meseta, 25 places (run in two halves, prep fixed first). Each region runs only on the
+  owner's "use a workflow for X" (the sources step, then `region.workflow.js`).
+- Source quirks: mapa.gob.es, navarra.es refuse; portalagrari.gva.es pliego links 404. Use the Consejo Regulador copy (Jumilla:
+  jumilla.wine; Ebro: INTIA) or EU Cellar SPARQL (works; Canarias newer single documents as `<id>-doc2`). EU single document only is OK
+  for Navarra pagos, Chozas Carrascal, Vera de Estenas, El Terrerazo (owner). Tharsys is only applied for (OJ C/2025/3093). Detail in
+  the region handoffs.
 - Not verified anywhere: Safari, iPad, real phones. Photos, flags and Study for new regions are out of scope unless asked. A new region
   needs a satellite view for the Guides page (a test enforces it since release 44).
 - Running cost [V]: GitHub Pages free; domain ~EUR 10-15/yr [A]; Esri 2M tiles/month free then $0.15/1k, sessions 1k free then $4/1k;
@@ -52,7 +55,10 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Guide cost per place [V]: Andalucía 2.6M; Cataluña ~3.1M all-in (12 guides ~37M, write step 20.1M vs 5-8M estimated); packs ~25K.
   Baleares workflow 0.42M per guide, but the session around it cost 14.7M re-read. Ebro (11 guides) ~10.4M re-read + 0.9M new, ~1.0M per
   guide all-in, one third of Cataluña. Use ~1.0M/guide for estimates, split re-read vs new.
-- Four estimate overruns on 19 Oct: Cataluña write 20.1M vs 5-8M; re-check 8.5M vs 4-6M (a step was left out); copy fixes 7.9M vs 1.2-2M
+- Mediterranean (11) 21.2M re-read + 1.0M new: the prep agent alone took 14.5M over 107 calls (one agent fetching every source while
+  hosts refused); writers ~0.4M/guide; ship 3.2M. Canarias (11) 12.1M re-read + 1.0M new, same prep. Fix: one small prep agent per
+  place with a call cap, stop on a refused host.
+- Four further estimate overruns on 19 Oct: Cataluña write 20.1M vs 5-8M; re-check 8.5M vs 4-6M (a step was left out); copy fixes 7.9M vs 1.2-2M
   (~100 calls x ~70K); Guides-page fix 5.8M vs 1-1.5M (~45 calls x ~130K). Rule: estimate = calls x ~100K + work, count every step.
 - A second Opus check finds ~7 misses per guide (patterns in `Tools/guides/CHECKER.md`). Pair agents ran long: re-read per guide 3x Baleares.
 
@@ -64,7 +70,7 @@ cards, sitemap) only on his go, pilot 2 guides first (`Review/website-plan.md`).
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Next region order after Mediterranean and Canarias (Meseta 25), and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region) timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

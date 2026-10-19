@@ -1,0 +1,154 @@
+{
+ "id": "alicante",
+ "title": "Why Alicante tastes the way it does",
+ "minutes": 5,
+ "lede": {
+  "text": "Intense summer sun beats on the grapes right as they ripen, and it gives Alicante's wines their ripe-fruit notes and intense colour, above all in the reds. Limestone soils that hold little water are behind the wines' dryness, their good acidity and their mineral touches.",
+  "cite": [
+   "alicante-pliego:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between the sea and the meseta",
+   "paras": [
+    "The Mediterranean forms Alicante's eastern edge and is one of its biggest influences. To the west the Sierra de la Oliva, 1,153 m high, marks the line with the Castilian meseta in Albacete. To the south lie the semi-desert lands of Abanilla.",
+    "The vineyard is split into eight subzones, from La Marina Alta to El Comtat, the mountain of Alicante. A few hamlets of Caudete in Albacete belong too. They sit on the plain that forms around the Vinalopó river at Villena, before the Sierra de la Oliva brings a clear change of temperature and landscape.",
+    "Vines have grown here for millennia, and an archaeological site at Benimaquía in Dénia dates from the 6th century BC. In the 16th and 17th centuries the city created its Junta de Inhibición del Vino de Alicante, for many the seed of one of Spain's first DOs. As early as 1241 an \"Alicante\" is mentioned at a wine competition in Paris. Wines called Alicante sailed with Magellan on his first voyage round the world."
+   ],
+   "cite": [
+    "alicante-pliego:p5",
+    "alicante-pliego:p6",
+    "alicante-pliego:p7",
+    "alicante-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Vinalopó plain at Villena",
+     "point": [
+      -0.8043,
+      38.468
+     ],
+     "zoom": 9,
+     "caption": "The plain around the Vinalopó river at Villena reaches into Albacete, up to the Sierra de la Oliva.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Sea breezes through mountain corridors",
+   "paras": [
+    "The land rises into sharply defined districts where the sea's influence is strong. Its breezes travel inland through corridors between the mountains. They bring more freshness to the leaves, which also get intense sun, about 2,900 hours a year.",
+    "In La Marina Alta, air from the Cabo de la Nao runs into high, dense mountains. It creates a special microclimate with constant humidity as breeze or rain, more than 500 mm a year.",
+    "In the Vinalopó and L'Alcoià the Sierras de Carrasqueta and Maigmó turn the sea breezes inland. Moving inland, the ground gets long hours of sun and big temperature swings, from -5º in winter to 45º in summer.",
+    "El Comtat, in the mountains, is the highest part of the zone, with a microclimate of its own. Rich soils and thermal contrast allow many grape varieties there and bring mineral and Mediterranean-forest touches. This works better than anywhere else in the zone because the high peaks hold more water for most of the year, with snow even in winter.",
+    "Scarce water and a dry, breezy climate have favoured farming with little intervention and little trouble from pests. That gives very healthy vineyards."
+   ],
+   "cite": [
+    "alicante-pliego:p6",
+    "alicante-pliego:p7",
+    "alicante-pliego:p8"
+   ],
+   "fly": [
+    {
+     "label": "Cabo de la Nao",
+     "point": [
+      0.2311,
+      38.7319
+     ],
+     "zoom": 10,
+     "caption": "Sea air from this cape runs into the mountains of La Marina Alta and brings constant humidity.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    },
+    {
+     "label": "Serra de la Carrasqueta",
+     "point": [
+      -0.4872,
+      38.6033
+     ],
+     "zoom": 10,
+     "caption": "This range, with the Maigmó, turns sea breezes inland into the Vinalopó.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Limestone that makes roots dig",
+   "paras": [
+    "La Marina Alta has fertile clay soils that drain very fast, since they are sandy loams. The steep land led growers to Moscatel. These soils mix with Cretaceous limestone, which gives the Moscatel its particular finesse.",
+    "Towards the west the soil of the Vinalopó and L'Alcoià turns much more limy, with plenty of gypsum and limy stones. With active lime and little water held, the vine must stretch its roots deep into the subsoil. That gives small berries and concentrated components.",
+    "Near Abanilla and Jumilla the land forms one zone of limy, very dry soil on the north side of the Sierra del Carche."
+   ],
+   "cite": [
+    "alicante-pliego:p7"
+   ],
+   "fly": [
+    {
+     "label": "Sierra del Carche",
+     "point": [
+      -1.17,
+      38.4262
+     ],
+     "zoom": 10,
+     "caption": "North of this range, the lands of Abanilla and Jumilla share one zone of limy, very dry soil.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Monastrell, Moscatel and a ten-year Fondillón",
+   "paras": [
+    "Water use here led to dry farming, and Monastrell has adapted to it best. This main red grape grows in some almost desert areas, where limestone soils give it its characteristic minerality and a marked fruity touch. Garnacha Tintorera, also called Alicante Bouschet, is a main red grape too. Moscatel de Alejandría is a main white grape.",
+    "Still wine comes in all three colours. Vino Noble and Vino Añejo are two aged categories in white, rosado or red.",
+    "Long hours of sun ripen the grapes to medium-high natural sugar levels. That makes very good conditions for sweet wines and for vino de licor, a fortified wine. Moscatel is well suited to them, as are Garnacha and Monastrell. A long local tradition adds white or red mistelas to stress the sweet side.",
+    "Sparkling wine and quality aromatic sparkling wine show off the fruity, fresh character of aromatic grapes such as Moscatel or Malvasía. Their acidity plays against the bubbles.",
+    "Fondillón is a wine from overripe Monastrell grown in the zone. The grapes overripen on the vine and also dry in the sun. Only native yeasts ferment it, and all its alcohol, at least 16%, must be natural. It ages at least 10 years in oak barrels, either by vintage or in criaderas y solera. Summer here is very long and dry, so the grapes stay healthy and can overripen without trouble. Foreign travellers have written about Fondillón for centuries."
+   ],
+   "cite": [
+    "alicante-pliego:p1",
+    "alicante-pliego:p2",
+    "alicante-pliego:p3",
+    "alicante-pliego:p4",
+    "alicante-pliego:p6",
+    "alicante-pliego:p8",
+    "alicante-pliego:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Moscatel Alicante",
+    "text": "A white wine or vino de licor made only from Moscatel de Alejandría."
+   },
+   {
+    "term": "Alicante Singular",
+    "text": "Wine from a defined site with proven differences of soil or climate, from bush vines at least 25 years old when main grapes are used, picked by hand at lower yields and sold only in glass."
+   },
+   {
+    "term": "Rancio",
+    "text": "Wine aged in a markedly oxidative way, with sudden changes of temperature in the presence of air, in wood or in glass."
+   }
+  ],
+  "cite": [
+   "alicante-pliego:p11",
+   "alicante-pliego:p12"
+  ]
+ }
+}

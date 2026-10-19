@@ -1,0 +1,124 @@
+{
+ "id": "valencia",
+ "title": "Why Valencia tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Valencia's wines have high aromatic intensity because the vines suffer water stress in spring and summer, when temperatures are high and evapotranspiration is most marked. Their marked depth of colour comes from the considerable swing in temperature.",
+  "cite": [
+   "valencia-pliego:p6",
+   "valencia-pliego:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Inland Valencia, in four subzones",
+   "paras": [
+    "The vineyards lie in the interior of the province of Valencia, in the east of the Iberian Peninsula. They are split into four subzones.",
+    "Alto Turia is the first. Valentino is the second, with towns such as Llíria and Chiva. Moscatel de Valencia shares some of Valentino's towns, Buñol and Cheste among them. Clariano takes in towns such as Ontinyent and Xàtiva.",
+    "A few plots outside the province belong too. These are named sites in Almansa and Caudete, in the province of Albacete, long given over to Valencia wine. Plots of members of one cooperative in Villena also count."
+   ],
+   "cite": [
+    "valencia-pliego:p5",
+    "valencia-pliego:p6"
+   ],
+   "fly": [
+    {
+     "label": "Inland Valencia",
+     "place": "valencia",
+     "caption": "The vineyards lie in the interior of the province of Valencia, split into four subzones.",
+     "cite": [
+      "valencia-pliego:p5",
+      "valencia-pliego:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mild and humid, close to the sea",
+   "paras": [
+    "The climate is mild and humid because the sea is close. The average temperature over the year is about 15ºC. Winters are mild, while summers are long, dry and hot.",
+    "Evapotranspiration is high from May to September. The frost-free period runs from mid-April to the end of October. Rain falls mostly in spring and autumn, 520 mm a year on average over 55 days. Sunny days are many.",
+    "Vino de licor is a fortified wine. Valencia's vino de licor owes its high aromatic intensity to mild average temperatures all year, along with the water stress of spring and summer. The quality aromatic sparkling wines are fruity, light and balanced, a result of the Mediterranean climate with its mild temperatures all year. Vino de aguja, a lightly fizzy wine, is fruity, light and balanced too, thanks to the mild average temperatures."
+   ],
+   "cite": [
+    "valencia-pliego:p6",
+    "valencia-pliego:p7",
+    "valencia-pliego:p8"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Brown limy soil, thin in humus",
+   "paras": [
+    "The soils are brown and limy, with poorly developed humus layers. Their texture is silty sand."
+   ],
+   "cite": [
+    "valencia-pliego:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Moscatel steeped in spirit, and a light Petit Valencia",
+   "paras": [
+    "Vine growing aims to control how the fruit develops without losing its quality, and yields are limited for that reason. There are 19 white grapes and 20 red grapes allowed. They range from Merseguera and Planta Fina de Pedralba to Riesling and Pinot Noir.",
+    "Still wine comes white, rosado or red. Wines other than sparkling count as dulce, sweet, from 45 g of sugar a litre.",
+    "The traditional vino de licor is made from Moscatel de Alejandría. Wine spirit is added to the must, the two macerate for a set time, and the solids are then settled out and filtered off. Labelled Moscatel de Valencia, it must be made wholly from Moscatel de Alejandría, from grape must alone or with wine. If must with lees and skins is used, the label must add Tradicional. Valencia's vinos de licor have aromas of Mediterranean plants such as orange blossom or white flower.",
+    "Petit Valencia is another traditional wine. The grapes are fully destemmed and crushed, then left on their skins before the tanks are bled. Fermentation runs at a controlled temperature and stays incomplete, leaving a low-alcohol wine with natural residual sugar. It has at least 4.5% alcohol and is meant to be drunk young.",
+    "The quality aromatic sparkling wine has at least 3 bar of pressure. Only seven grapes may go into it, among them Albariño, Gewürztraminer and Verdejo. Vino de aguja has 1 to 2.5 bar."
+   ],
+   "cite": [
+    "valencia-pliego:p3",
+    "valencia-pliego:p5",
+    "valencia-pliego:p7",
+    "valencia-pliego:p9",
+    "valencia-pliego:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Crianza, Reserva and Gran Reserva",
+    "text": "White, rosado and red wines with these terms need at least 12% alcohol."
+   },
+   {
+    "term": "Primero de cosecha",
+    "text": "A white, rosado or red picked in the first 10 days of the harvest and bottled within 30 days of its end, with the vintage on the label."
+   },
+   {
+    "term": "Vino dulce",
+    "text": "A vino de licor made with grape must, alone or combined with wine, may carry this term."
+   },
+   {
+    "term": "Vino de pueblo or Vi de poble",
+    "text": "With a municipality's name, 85% of the grapes come from that municipality, up to 15% may come from bordering ones in the zone, and the yield is 10% lower."
+   },
+   {
+    "term": "Vino de parcela or Vi de parcel·la",
+    "text": "All the grapes come from one plot, or from contiguous plots with one owner and the same planting year, rootstock and grape; the yield is 40% lower, at most 65 litres come from each 100 kg of grapes, and no alcohol may be added except in vino de licor."
+   },
+   {
+    "term": "Subzone names",
+    "text": "Alto Turia, Valentino, Clariano or Moscatel on a label means grapes only from that subzone, and a blend across subzones can only be called Valencia."
+   },
+   {
+    "term": "Grape name",
+    "text": "A grape can be named when it makes at least 85% of the wine, but Moscatel de Valencia must be Moscatel de Alejandría alone."
+   }
+  ],
+  "cite": [
+   "valencia-pliego:p2",
+   "valencia-pliego:p4",
+   "valencia-pliego:p5",
+   "valencia-pliego:p6",
+   "valencia-pliego:p9",
+   "valencia-pliego:p10"
+  ]
+ }
+}
