@@ -24,7 +24,7 @@ an addition and the owner decides.
 
 ## Type
 - Newsreader for names, headings and the opening sentence. IBM Plex Sans for everything people read in bulk: body, facts, labels, buttons.
-- Scale (rem): 0.7 credit tags on photos, 0.78 small print (source tags, credit lines), 0.9 labels, 1.0 body, 1.25 opening sentence,
+- Scale (rem): 0.7 credit tags on photos (0.65 for the one-line credit on the home hero map, owner 19 Oct 2026: "too prominent"), 0.78 small print (source tags, credit lines), 0.9 labels, 1.0 body, 1.25 opening sentence,
   1.6 section heading, 2.3 card title, 3.2 page title, 5 to 8.5 cover title. Uppercase only for kickers (0.72, letter-spacing 0.14em).
   A kicker only where it carries a fact (legal level "RIOJA · DOCA", quiz progress "STUDY · 3 OF 10"); never one that repeats the
   heading or the button (premium feel review, 18 Oct 2026: kickers on every home block read as a template). Counts and labels are sentence case.

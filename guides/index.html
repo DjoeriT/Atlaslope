@@ -19,8 +19,9 @@
       @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
     </style>
     <script type="module" src="/src/home/main.ts"></script>
+    <link rel="stylesheet" href="/src/home/guides.css" />
   </head>
-  <!-- Guides, a placeholder until slice 3 builds a page per guide (owner, 15:09Z, 18 Oct 2026). Plain HTML, the home page's styles. -->
+  <!-- Guides, until slice 3 builds a page per guide (owner, 15:09Z, 18 Oct 2026). Plain HTML, the home page's styles; the list is filled in at build time. -->
   <body>
     <a class="skip" href="#main">Skip to the content</a>
     <header class="sitebar">
@@ -36,22 +37,18 @@
     <main id="main">
       <header class="page-head">
         <div class="wrap">
-          <h1>Why each place tastes the way it does.</h1>
-          <p class="sub">Every place you study gets a guide: the land, the climate and the rules behind its wine, taken from the official documents, with every place it names one tap away on the map.</p>
+          <h1>Guides explain why each place tastes the way it does.</h1>
+          <p class="sub">All facts and references come from official documents (the pliego de condiciones, the EU single document, MAPA).<br />Every place a guide names is one tap away on the map.</p>
         </div>
       </header>
       <div class="page-body">
         <div class="wrap">
-          <section>
-            <div class="progress"><span class="bar"><i style="width:5%"></i></span><span>Terroir written for 4 of 79 places, all in Rioja so far</span></div>
-            <ul class="guide-list">
-              <li><a href="../atlas/#place=rioja&amp;page"><b>Rioja</b><span>DOCa · 4-minute read</span></a></li>
-              <li><a href="../atlas/#place=rioja-alta&amp;page"><b>Rioja Alta</b><span>Zone of Rioja · 1-minute read</span></a></li>
-              <li><a href="../atlas/#place=rioja-alavesa&amp;page"><b>Rioja Alavesa</b><span>Zone of Rioja · 1-minute read</span></a></li>
-              <li><a href="../atlas/#place=rioja-oriental&amp;page"><b>Rioja Oriental</b><span>Zone of Rioja · 1-minute read</span></a></li>
-            </ul>
+          <div class="gl">
+            <!-- guide-list -->
+            <!-- Filled in at build time from content/guides/ (src/home/guideCount.ts). -->
+            <!-- /guide-list -->
             <div class="soon"><p>More regions are being written. Until then, every place in the atlas already has its own page, with its facts and their sources.</p></div>
-          </section>
+          </div>
         </div>
       </div>
     </main>
