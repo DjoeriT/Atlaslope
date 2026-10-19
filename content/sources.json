@@ -1384,5 +1384,17 @@
   "title": "Pliego de condiciones DOP Terra Alta, March 2020 (INCAVI)",
   "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-terra-alta/dop-terra-alta-modificacio-plec-condicions.pdf",
   "date": "2020-03-01"
+ },
+ "binissalem-doc-2026": {
+  "kind": "official",
+  "title": "Documento único DOP Binissalem, current text with the 2026 normal amendment (OJ C/2026/4121, 27 Jul 2026, EU PDO-ES-A1056)",
+  "url": "http://data.europa.eu/eli/C/2026/4121/oj",
+  "date": "2026-07-27"
+ },
+ "pla-i-llevant-doc-2026": {
+  "kind": "official",
+  "title": "Documento único DOP Pla i Llevant, current text with the 2025 normal amendment (OJ C/2026/1686, 17 Mar 2026, EU PDO-ES-A1038)",
+  "url": "http://data.europa.eu/eli/C/2026/1686/oj",
+  "date": "2026-03-17"
  }
 }
