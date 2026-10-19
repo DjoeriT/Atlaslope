@@ -20,7 +20,7 @@ have their own). Branch `claude/guides-meseta-3`, one PR, with the home page cop
   count now counts place guides only (`placeGuideCount`, `src/home/guideCount.ts`), so it says 106, not 109. A unit test backs
   "each with its own guide": place guides equal places.
 - "No guide" UI fixtures: test-only flag `?noguide=<id>` (`src/debug.ts`, debug builds only) makes a place show as having no guide;
-  `guide.spec.ts` Valdepeñas tests use it. `facts.spec.ts` Vallegarcía test is about "not quizzed", left as is [A: CI confirms].
+  `guide.spec.ts` Valdepeñas tests use it. `facts.spec.ts` Vallegarcía "not quizzed" test uses it too (CI failed without it: the guide replaces the sheet-only Climate heading).
 - Roster in `tests/unit/guides.test.ts` (109 guides). Tests [V]: `npm test` 307 passed. UI specs and the atlas do not run locally (below).
 - Home preview checked in the dev server [V]: two tiles, "Deep guides to 106 places,".
 
