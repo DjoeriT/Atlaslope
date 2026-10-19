@@ -1,0 +1,58 @@
+{
+ "id": "ucles",
+ "title": "Why Uclés tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Uclés vineyards climb to 1,200 m, on soil rich in potassium. Both help give very balanced wines suited to a longer life in bottle.",
+  "cite": [
+   "ucles-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "highland",
+   "beat": "place",
+   "title": "Cuenca and Toledo, 500 to 1,200 m",
+   "paras": [
+    "The vineyards lie in the provinces of Cuenca and Toledo. Most of the municipalities are in Cuenca. Uclés itself is one of them. Toledo adds Santa Cruz de la Zarza. Parts of Cabezamesada and Corral de Almaguer are in too.",
+    "The western half sits at 500 to 800 m. The eastern half sits at 600 to 1,200 m."
+   ],
+   "cite": [
+    "ucles-doc:p5",
+    "ucles-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep soil rich in potassium",
+   "paras": [
+    "The soil holds a large amount of potassium. That gives balance and good ripening to the fruit.",
+    "The soils are deep and fairly fine in texture. They lean towards lime, ranging from clay-loam to sandy-loam.",
+    "Altitude and potassium-rich soil work together with low planting density. Most vines are free-standing bush vines (vaso). Together they give grapes balanced in acids. The wines are very balanced, with a low pH that raises their acidity and suits a longer life in bottle."
+   ],
+   "cite": [
+    "ucles-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Mostly red, with whites and bubbles",
+   "paras": [
+    "85% of the wines are made from red grapes, above all Tempranillo (called Cencibel here). The reds have medium-high colour and aroma, led by intense fruity and floral notes. They are powerful, with body and good harmony. Those that pass through barrel are persistent, with a long, complex finish.",
+    "Verdejo and Macabeo (also called Viura) are the other main white grapes. Syrah and Cabernet Sauvignon are the other main reds. For whites, Verdejo matters most, along with Sauvignon Blanc and Chardonnay. Airén is planted in the zone and counts as secondary.",
+    "Young whites are pale yellow, fruity and fresh. They can be dry or keep some sugar, up to sweet. Barrel-fermented and aged whites are straw to golden, with toasty notes from the barrel and a soft feel on the palate. Rosados (rosés) are strawberry or raspberry pink and fruity.",
+    "Quality sparkling wine is white, pale and bright, with small persistent bubbles. It smells fruity and tastes fresh and balanced.",
+    "Red vineyards under 6 years old cannot make Uclés wine. White wines can come from a vine's first year of production. Red bush vines over 40 years old are held to 5,000 kg of grapes per hectare."
+   ],
+   "cite": [
+    "ucles-doc:p1",
+    "ucles-doc:p2",
+    "ucles-doc:p3",
+    "ucles-doc:p4",
+    "ucles-doc:p6"
+   ]
+  }
+ ]
+}

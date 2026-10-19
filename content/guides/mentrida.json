@@ -1,0 +1,72 @@
+{
+ "id": "mentrida",
+ "title": "Why Méntrida tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "An extreme continental climate meets sandy, acidic soil with very little lime. Together they give warm wines, high in alcohol.",
+  "cite": [
+   "mentrida-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "north-of-toledo",
+   "beat": "place",
+   "title": "North of Toledo",
+   "paras": [
+    "Méntrida lies in the north of the province of Toledo. The zone takes in a long list of municipalities. The town of Méntrida and the city of Toledo are among them."
+   ],
+   "cite": [
+    "mentrida-doc:p6"
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, hot summers, hardly any rain",
+   "paras": [
+    "The climate is continental and extreme. Winters are long and cold. Summers are hot, and rain is very scarce.",
+    "The dryness and the hours of sun give the grapes a natural alcohol high enough to make the wines at the strengths the rules set."
+   ],
+   "cite": [
+    "mentrida-doc:p6",
+    "mentrida-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand with little lime",
+   "paras": [
+    "The soil is sandy and acidic, with very little lime. With the climate it gives wines with high dry extract. They are fleshy, with body."
+   ],
+   "cite": [
+    "mentrida-doc:p6"
+   ]
+  },
+  {
+   "id": "garnacha",
+   "beat": "rules",
+   "title": "Garnacha Tinta leads",
+   "paras": [
+    "Garnacha Tinta is the main grape. Thirteen secondary grapes are also allowed. Tempranillo and Verdejo are two of them.",
+    "Whites are pale straw yellow. Fruit leads on the nose, with floral or fresh herbal touches. Whites labelled Roble (Spanish for oak) show pastry notes such as cream over a toasty base. Young rosados (rosés) are strawberry pink. They are fresh and fruity.",
+    "Young reds are cherry or dark garnet. Red fruit leads on the nose, and they feel fleshy and soft. Dry reds, young or aged as Crianza, Reserva or Gran Reserva, are high in alcohol. They show fruit such as blackberry and redcurrant, or floral notes, and at times spice or wood. Their tannins are well integrated. The finish is long and intense, and slightly bitter. Time in oak brings power on entry, with noticeable structure and body.",
+    "Whites and rosados can also be made semi-dry up to sweet. So can young reds. These sweeter wines are balanced between alcohol, acidity and leftover sugar.",
+    "Sparkling wines are made in all three colours. The bubble is fine and lasting, with clean, fruity aromas. Reservas have intense aromas. The base wines are the still wines above.",
+    "Aged wines rest in oak barrels of at most 330 litres. White must ferments below 20 ºC without the solid parts of the bunch. Reds macerate on their skins for at least 48 hours. Pressing may yield at most 70 litres of must or wine from 100 kg of grapes.",
+    "Yields are capped at 7,150 kg of grapes per hectare for bush vines and 12,850 kg per hectare for trellised vines."
+   ],
+   "cite": [
+    "mentrida-doc:p1",
+    "mentrida-doc:p2",
+    "mentrida-doc:p3",
+    "mentrida-doc:p4",
+    "mentrida-doc:p5",
+    "mentrida-doc:p6",
+    "mentrida-doc:p7",
+    "mentrida-doc:p11"
+   ]
+  }
+ ]
+}

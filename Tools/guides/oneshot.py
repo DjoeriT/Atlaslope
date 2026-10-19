@@ -47,10 +47,15 @@ def results(wf: Path) -> dict:
 def set_path(entry: dict, path: str, value, cite):
     keys = path.split('.')
     node = entry
+    # A numeric key indexes a list ("famous.styles.2.text"; Meseta batch 1, 19 Oct 2026: a list in the path crashed the run).
     for k in keys[:-1]:
-        node = node.setdefault(k, {})
-    node[keys[-1]] = value
-    if cite and isinstance(node, dict) and keys[-1] != 'cite':
+        node = node[int(k)] if isinstance(node, list) else node.setdefault(k, {})
+    last = keys[-1]
+    if isinstance(node, list):
+        node[int(last)] = value
+        return
+    node[last] = value
+    if cite and last != 'cite':
         node['cite'] = cite
 
 

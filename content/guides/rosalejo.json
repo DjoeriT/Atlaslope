@@ -1,0 +1,96 @@
+{
+ "id": "rosalejo",
+ "title": "Why Rosalejo tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Rosalejo sits at a fairly southern latitude with a warm climate, yet its reds taste fresh and young. Its acid soils are poor in calcium and potassium, so the wine keeps a superb natural acidity.",
+  "cite": [
+   "rosalejo-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "sierra",
+   "beat": "place",
+   "title": "A stony plain under the Sierra de Sevilleja",
+   "paras": [
+    "Rosalejo lies in the sierra de Sevilleja, part of the Montes de Toledo. The zone covers 1,338.70 ha in two municipalities: Anchuras in Ciudad Real and Sevilleja de la Jara in Toledo.",
+    "The Montes de Toledo were not glaciated in the Quaternary, so their relief is less rugged than other ranges of the Meseta Ibérica, such as the Sistema Central. They are a run of ridges and basins from the north-west to the south-east.",
+    "Two landforms mark these mountains. The «pedrizas» or «canchales» are large, bare heaps of angular quartzite blocks, broken up by frost. The rañas are stony plains at the foot of the mountains. Rosalejo sits on one of them, the raña of Rosalejo."
+   ],
+   "cite": [
+    "rosalejo-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "Sierra de Sevilleja",
+     "point": [
+      -4.87,
+      39.4
+     ],
+     "zoom": 10,
+     "caption": "The sierra de Sevilleja in the Montes de Toledo. Rosalejo lies at its foot.",
+     "cite": [
+      "rosalejo-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Atlantic storms and a big reservoir",
+   "paras": [
+    "Rosalejo lies at the foot of the sierra, on its south-west face. The sierra is the first mountain barrier that Atlantic storms meet after crossing southern Portugal and Extremadura.",
+    "Three things make the climate more temperate in both winter and summer. One is the Atlantic influence. Another is the altitude of 650 m. The third is the sierra above, which reaches 1,279 m at Cumbre Alta. The swing between night and day is large.",
+    "On average 650 litres of rain fall in a year, mostly in autumn and spring. Summer is practically dry, apart from the odd storm. The north-west to south-east line of the sierra explains the heavy autumn and spring rain.",
+    "The Cijara reservoir also shapes the weather. It is one of the largest in Spain, holding 1,505 cubic hectometres over 6,556 ha. It lies 2.9 km from the Rosalejo zone and makes winters less cold and summers less hot."
+   ],
+   "cite": [
+    "rosalejo-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "Cijara reservoir",
+     "point": [
+      -4.9,
+      39.3
+     ],
+     "zoom": 10,
+     "caption": "The Cijara reservoir, 2.9 km from the zone, makes winters less cold and summers less hot.",
+     "cite": [
+      "rosalejo-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raña",
+   "beat": "ground",
+   "title": "One of Europe's oldest soils",
+   "paras": [
+    "The raña of Rosalejo is spared the erosion of rivers and glaciers. That leaves one of the oldest soils in Europe. It formed in the Pliocene, a very dry and cold period, 5 million years ago, on silica and granite rocks 350 million years old.",
+    "Half of the surface layer is stone, which gives good drainage. The soil is made of silica sand and very weathered slate. Quartzite stones of many sizes lie in it, heavily charged with iron. There are also half-round iron pisolites more than 2 mm across.",
+    "The iron turns the quartzite orange-red and the topsoil red. The deeper layer is yellowish.",
+    "The soil is acid, with a pH below 6, and has barely any calcium carbonate. It holds little calcium or potassium, and little magnesium. It is rich in iron and silicon, and also in aluminium and manganese. Clay grows with depth."
+   ],
+   "cite": [
+    "rosalejo-doc:p1"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "A dry red that stays ruby",
+   "paras": [
+    "Rosalejo makes only red wine, and only dry, with at most 3 g/l of sugar. Three grapes are allowed. Syrah may yield up to 6,000 kg per hectare. Tempranillo and Garnacha Tinta may yield up to 8,000 kg.",
+    "The wine spends at least six months in oak barrels and one month in bottle before sale. It must be bottled in the zone, because it has a second ageing period in bottle.",
+    "Poor, acid soils low in calcium and potassium leave the tartaric acid free, because it cannot form salts with them. Natural acidity stays high and the pH fairly low. That gives a freshness typical of latitudes much further north.",
+    "The same low pH keeps the ruby colour almost unchanged over the years and makes the wine age slowly. Tannins stay round even after years."
+   ],
+   "cite": [
+    "rosalejo-doc:p1"
+   ]
+  }
+ ]
+}

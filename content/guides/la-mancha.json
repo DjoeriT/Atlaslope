@@ -1,0 +1,85 @@
+{
+ "id": "la-mancha",
+ "title": "Why La Mancha tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "A dry, bright plain in the centre of Spain. Little rain and long sunshine give wines of deep colour and strong aroma.",
+  "cite": [
+   "la-mancha-doc:p6",
+   "la-mancha-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "The plain at the heart of Spain",
+   "paras": [
+    "La Mancha is a natural and historic region in Castilla-La Mancha, in the centre of Spain. The vineyard covers the north of Albacete province and the south and south-west of Ciudad Real. It also takes in the east of Toledo and the south-west of Cuenca."
+   ],
+   "cite": [
+    "la-mancha-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The La Mancha plain",
+     "place": "la-mancha",
+     "caption": "A natural and historic region in the centre of Spain, spread over four provinces.",
+     "cite": [
+      "la-mancha-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry, hot and bright",
+   "paras": [
+    "The climate is extremely continental, with high temperatures. Rain is scarce at 300 to 350 mm a year, and the sun shines for about 3,000 hours.",
+    "That dryness and sunshine give wines with intense colour, and their aroma is clearly stronger.",
+    "For sparkling wine, the dryness and hours of sun give a natural alcohol level that lets the wines reach the strengths the rules set. For vino de aguja, the lightly sparkling wine, the extreme climate and the red-brown soil shape its fruity aromas and its colour. The high temperatures play their part too."
+   ],
+   "cite": [
+    "la-mancha-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone laid down in the Miocene",
+   "paras": [
+    "The plain's soils come from Miocene sediments of limestone, marl and sand. They are brown or reddish-brown.",
+    "Limy soils are plentiful, which makes La Mancha well suited to reds with a lot of body that are good for ageing. Sandy limestone gives the wine a good alcohol level. Average yields in the vineyard are low, which also favours good balance in the wines."
+   ],
+   "cite": [
+    "la-mancha-doc:p7"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Every colour, and some bubbles",
+   "paras": [
+    "Eight grapes lead: Airén, Verdejo, Macabeo (or Viura), Tempranillo (or Cencibel, or Tinto de Toro), Bobal, Garnacha Tinta, Syrah and Cabernet Sauvignon. Eighteen more are allowed as secondary grapes, among them Merlot, Monastrell, Riesling and Viognier.",
+    "Whites and rosados (rosés) come young or traditional. Whites can also be roble, meaning they have passed through oak barrels. Reds come young, traditional or roble.",
+    "Both whites and reds can be aged further as crianza, reserva or gran reserva. A naturally sweet traditional wine is made as a white.",
+    "Sparkling wine comes white or rosé. Quality sparkling wines may carry Premium or Reserva on the label. Vino de aguja comes white, rosé or red.",
+    "The sweet wine is glyceric, with high aromatic intensity. It recalls raisins and stone fruit, and arrope, a cooked grape syrup. It is velvety with a long finish. Aged whites run from straw yellow to gold and feel balanced and unctuous. The sparkling wines have a fine, persistent bubble.",
+    "White and red grapes cannot be mixed. A single grape variety can go on the label only if at least 86% of the grapes come from it. Yields are capped at 10,000 kg per hectare for bush vines, and at 13,000 kg per hectare for trellised vines. The most that can be made is 74 litres of wine per 100 kg of grapes.",
+    "Whites and rosados ferment at no more than 22º C. Reds ferment on their skins for at least 3 days, at no more than 30º C."
+   ],
+   "cite": [
+    "la-mancha-doc:p1",
+    "la-mancha-doc:p2",
+    "la-mancha-doc:p3",
+    "la-mancha-doc:p4",
+    "la-mancha-doc:p5",
+    "la-mancha-doc:p6",
+    "la-mancha-doc:p7",
+    "la-mancha-doc:p11",
+    "la-mancha-doc:p12"
+   ]
+  }
+ ]
+}

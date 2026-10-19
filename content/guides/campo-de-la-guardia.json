@@ -1,0 +1,83 @@
+{
+ "id": "campo-de-la-guardia",
+ "title": "Why Campo de la Guardia tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The vines grow on a salty plateau above the Tagus valley, where the air holds little moisture. The grapes tend to stay small, and the wine comes out concentrated.",
+  "cite": [
+   "campo-de-la-guardia-doc:p4",
+   "campo-de-la-guardia-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A plateau above the Tagus",
+   "paras": [
+    "Campo de la Guardia is a single estate wine, a vino de pago, in the municipality of La Guardia in the province of Toledo. The vines sit on a páramo, a high plateau, that hangs more than 100 m above the Tagus valley."
+   ],
+   "cite": [
+    "campo-de-la-guardia-doc:p4",
+    "campo-de-la-guardia-doc:p5",
+    "campo-de-la-guardia-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The plateau of La Guardia",
+     "point": [
+      -3.477,
+      39.789
+     ],
+     "zoom": 10,
+     "caption": "The vineyards stand on a páramo more than 100 m above the Tagus valley.",
+     "cite": [
+      "campo-de-la-guardia-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Low humidity",
+   "paras": [
+    "Relative humidity is low, averaging 15% over the whole growing season."
+   ],
+   "cite": [
+    "campo-de-la-guardia-doc:p5"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Salty, poor soil",
+   "paras": [
+    "The soil is alkaline and limy. It is very salty and very poor in nutrients.",
+    "Very salty soil high in potassium, together with low humidity, means the grapes swell less. This tends to keep them smaller, with more skin in relation to pulp. The wine that results has a greater concentration of aromas and polyphenols. It has volume and structure, with high alcohol."
+   ],
+   "cite": [
+    "campo-de-la-guardia-doc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Estate blends and a barrel white",
+   "paras": [
+    "The main grapes are Cabernet Sauvignon, Tempranillo (also called Cencibel or Tinto de Toro), Syrah, Merlot and Chardonnay. Malbec and Petit Verdot are secondary grapes.",
+    "Most wines are red. They blend the estate's grapes in varying proportions. The best grape of the year gets its own wine, or in excellent years the two best grapes do.",
+    "Reds ferment at 22 to 32 ºC, normally with the grapes' own yeasts. They are filtered little or not at all.",
+    "For the white, between 10% and 30% of the must ferments and rests on its lees in new oak barrels for 1 to 3 months. The barrel gives toasty and nutty aromas, with hints of butter and light smoke. The lees give a note of pastry. The rest ferments in stainless steel below 17 ºC. The result is round, with volume, and the fruit should dominate.",
+    "Yields are capped by grape. Cabernet Sauvignon is held lowest, at 7,500 kg per hectare. Syrah and Malbec may give 9,000 kg. Merlot and Petit Verdot may give 10,000 kg. Tempranillo may give 11,000 kg. Chardonnay is allowed the most, 12,000 kg."
+   ],
+   "cite": [
+    "campo-de-la-guardia-doc:p1",
+    "campo-de-la-guardia-doc:p2",
+    "campo-de-la-guardia-doc:p3",
+    "campo-de-la-guardia-doc:p4",
+    "campo-de-la-guardia-doc:p8"
+   ]
+  }
+ ]
+}

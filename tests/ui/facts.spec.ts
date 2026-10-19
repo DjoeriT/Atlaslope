@@ -48,7 +48,7 @@ test('the report link is absent while no address is set', async ({ page }) => {
 });
 
 test('a place whose sources name no main grape shows its other grapes instead', async ({ page }) => {
-  await open(page, '#place=la-mancha&page');
+  await open(page, '#place=somontano&page');
   const grapes = page.locator('#rules');
   await expect(grapes.getByText('Main grapes')).toHaveCount(0);
   await expect(grapes.locator('dt', { hasText: /^Also allowed/ })).toBeVisible();
@@ -64,7 +64,7 @@ test('photos show with a credit that links to their Commons page', async ({ page
 });
 
 test('a place that is not quizzed shows its sheet but no measured rows', async ({ page }) => {
-  await open(page, '#place=dominio-de-valdepusa&page');
+  await open(page, '#place=vallegarcia&page');
   await expect(page.locator('#place dt', { hasText: 'Level' })).toBeVisible();
   await expect(page.locator('#weather .pg-h3', { hasText: 'Climate' }).first()).toBeVisible();
   await expect(page.locator('#weather .pg-h3', { hasText: 'Measured climate' })).toHaveCount(0);

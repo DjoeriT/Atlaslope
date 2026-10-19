@@ -40,6 +40,12 @@ export function checkSheets(files: SheetFile[], places: Place[], sources: Source
       checkCites(at('the why line'), sheet.why.cite, why !== '');
 
       checkCites(at('main grapes'), sheet.grapes.cite, sheet.grapes.main.length > 0);
+      // Meseta batch 1, 19 Oct 2026: a script edit wrote main grapes as plain strings, and search lost them.
+      for (const g of sheet.grapes.main as unknown[]) {
+        if (typeof g !== 'object' || g === null || typeof (g as { local?: unknown }).local !== 'string') {
+          errors.push(at('main grapes') + `: ${JSON.stringify(g)} is not { local, grape? }.`);
+        }
+      }
       checkCites(at('other grapes'), sheet.grapes.othersCite, sheet.grapes.others.length > 0);
       for (const kind of sheet.styles.kinds) {
         if (!(STYLE_KINDS as readonly string[]).includes(kind)) errors.push(at('styles') + `: "${kind}" is not a style kind.`);

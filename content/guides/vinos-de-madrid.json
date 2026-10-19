@@ -1,0 +1,72 @@
+{
+ "id": "vinos-de-madrid",
+ "title": "Why Vinos de Madrid tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Yields here are normally low, about 3,000 kg per hectare on average against 8,000 kg allowed. The same land gives deep colour in the reds and aromas of ripe or very ripe fruit.",
+  "cite": [
+   "vinos-de-madrid-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "subzones",
+   "beat": "place",
+   "title": "Three subzones in the province of Madrid",
+   "paras": [
+    "The vineyards lie in the province of Madrid, in three subzones. One is Arganda. Navalcarnero and San Martín de Valdeiglesias are the other two.",
+    "Every municipality of those three subzones is inside the area."
+   ],
+   "cite": [
+    "vinos-de-madrid-doc:p5"
+   ]
+  },
+  {
+   "id": "sierra-and-chalk",
+   "beat": "ground",
+   "title": "Sierra scrub and limestone",
+   "paras": [
+    "In the zones of the sierra, the wines taste mineral and recall the aromas of monte bajo, low scrubland.",
+    "In the limestone zones of the south-east, the wines show ripe fruit on the palate and the nose."
+   ],
+   "cite": [
+    "vinos-de-madrid-doc:p5",
+    "vinos-de-madrid-doc:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Low yields, four kinds of wine",
+   "paras": [
+    "The limit is 8,000 kg of grapes per hectare, or 56 hl per hectare.",
+    "Vines are planted at 900 to 4,000 per hectare. They are trained as bush vines or on wires.",
+    "Four grapes are the main ones. Albillo Real and Malvar are white. Tempranillo, also called Cencibel or Tinto de Toro, is red, as is Garnacha Tinta.",
+    "Twelve secondary grapes are allowed too. They are Airén, Cabernet Sauvignon, Garnacha Tintorera, Graciano, Macabeo, Merlot, Moscatel Grano Menudo, Parellada, Petit Verdot, Sauvignon Blanco, Syrah and Torrontés.",
+    "The whites are pale straw yellow and mainly fruity. They often recall pear and apple. Aged whites turn golden yellow or old gold.",
+    "The rosados, or rosé wines, are strawberry, raspberry or salmon pink. They smell of red fruit and taste fresh and lightly acidic. Some are semi-sweet or sweet.",
+    "The reds are violet to cherry when young. With age they can turn ruby to tile. On the palate they are tannic and warm, with a long finish. They smell of red and black fruit.",
+    "Sparkling wine is made too, by the traditional method, from white and rosé base wines. Its bubbles are fine and abundant, and they last. It tastes fresh and prickly. It is sweet when it holds more than 10 g of sugar."
+   ],
+   "cite": [
+    "vinos-de-madrid-doc:p1",
+    "vinos-de-madrid-doc:p2",
+    "vinos-de-madrid-doc:p3",
+    "vinos-de-madrid-doc:p4",
+    "vinos-de-madrid-doc:p5",
+    "vinos-de-madrid-doc:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Sobremadre",
+    "text": "A white or red wine that holds carbon dioxide from its own fermentation, made by fermenting the must on its lees."
+   }
+  ],
+  "cite": [
+   "vinos-de-madrid-doc:p4"
+  ]
+ }
+}

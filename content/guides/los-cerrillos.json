@@ -1,0 +1,90 @@
+{
+ "id": "los-cerrillos",
+ "title": "Why Los Cerrillos tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hills ring a vineyard on the upper Guadiana and make it a cool site, with La Mancha all around it. Only oak-aged reds are made there.",
+  "cite": [
+   "los-cerrillos-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A river valley inside La Mancha",
+   "paras": [
+    "Los Cerrillos covers the whole upper stretch of the Guadiana valley, an area of more than 60 km2. It starts where the river rises, 3 km upstream of the Peñarroya dam. It runs more than 7 km below the dam towards Argamasilla de Alba.",
+    "The Guadiana crosses the vineyard beside the Peñarroya reservoir, at 695 m. Hills ring the site.",
+    "The delimited zone is 1,570 hectares, with the La Mancha wine zone all around it. Only one winery makes wine there, and no other vines are planted."
+   ],
+   "cite": [
+    "los-cerrillos-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "The vineyard beside the reservoir",
+     "place": "los-cerrillos",
+     "caption": "The Guadiana crosses the vineyard beside the Peñarroya reservoir, at 695 m and ringed by hills.",
+     "cite": [
+      "los-cerrillos-doc:p1"
+     ]
+    },
+    {
+     "label": "Peñarroya reservoir",
+     "point": [
+      -3.03,
+      39.04
+     ],
+     "zoom": 11,
+     "caption": "The zone starts 3 km upstream of the Peñarroya dam and runs more than 7 km below it.",
+     "cite": [
+      "los-cerrillos-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sun, frost and a late harvest",
+   "paras": [
+    "The climate is continental Mediterranean, with warm summers and cold winters. Skies are clear 80% of the year, and the sun usually shines more than 2,500 hours a year. Temperature swings can reach 45 °C at times, and the gap between day and night is large through the year.",
+    "The river sets Los Cerrillos apart from the land around it. Rain is much higher than in the rest of La Mancha, and temperatures are not as extreme as in the surrounding land to the south and west. Harvest comes about fifteen to twenty days later than in the rest of the area.",
+    "The hills delay the vines' growing cycle and keep off high night temperatures. They also bring strong ventilation. The cool site lowers pH and raises acidity and phenolic compounds.",
+    "Late frosts come in spring. The vineyard uses inversion anti-frost systems, among the few in Spain and the only ones in Castilla-La Mancha. In harvest season they also help dry the morning dew from the vines.",
+    "Picking runs only from 5 am to 11 am, to keep the grapes from being picked hot."
+   ],
+   "cite": [
+    "los-cerrillos-doc:p1"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Marl and limestone",
+   "paras": [
+    "The ground is mostly limestone. The main rock is marl, an unconsolidated mix of clay and limestone. The texture is loam and the pH is about 8.",
+    "The zone lies on loose Plio-Quaternary deposits. Hard limestone and marl sit among them, with ochre clay. This ground allows well-coloured wines with a mineral character, reaching up to 18 colour points."
+   ],
+   "cite": [
+    "los-cerrillos-doc:p1"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Only oak-aged reds",
+   "paras": [
+    "Cabernet Sauvignon and Syrah are main grapes here. So are Petit Verdot and Tempranillo, also called Cencibel. The only wines made are aged reds.",
+    "The grapes are not pressed. The free-run wine only drains off by gravity, and the rest of the pomace gets a gentle drain. Juice yields are very low, 62% to 68% against 74% in La Mancha. Through fermentation the winery uses délestage (rack-and-return), to help draw colour and phenolic compounds from the cap of skins. The wines are cleared naturally by racking, with no chemical treatment.",
+    "Wines then age in 225-litre oak barrels used for 6 years at most. Time in barrel runs from at least 30 days for a straight Tempranillo to at least 24 months for the Cabernet Sauvignon de Familia, which adds 18 months in bottle. Syrah gets at least 6 months in oak, as does a Tempranillo and Cabernet Sauvignon blend. Colección Privada, the same blend, spends at least 13 months in oak. Petit Verdot comes in two versions, with at least 6 or at least 12 months in oak.",
+    "The winemaking shapes the taste. Délestage, unpressed grapes and natural clearing give aromas more floral than fruity. The aged wines add toasty and spicy notes, with touches of liquorice and balsam.",
+    "Alcohol can pass 14%, and good acidity keeps it in balance. Bottling must happen in the zone, because every wine ends with a spell of bottle ageing that rounds it out."
+   ],
+   "cite": [
+    "los-cerrillos-doc:p1"
+   ]
+  }
+ ]
+}
