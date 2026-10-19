@@ -86,6 +86,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 19 Oct 2026 | Photo crops: every photo the Guides page shows as a square card has a checked crop in `src/home/photoCrops.json`; a unit test enforces it (no guide format change) | "Photo crops" below |
 | 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
 | 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
 | 19 Oct 2026 | Read the label lists only terms not already in the famous styles; famous styles stay in the rules beat | Green Spain pilot PR |
@@ -94,6 +95,14 @@ Each change to the guide format, newest first. Add a row in the same PR as the c
 | 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
 | 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
 | 17 Oct 2026 | Terroir is a section of the place page, not its own page (release 10) | PR #45 |
+
+## Photo crops
+The Guides page shows each card photo as a square crop. Each shown photo has an entry in `src/home/photoCrops.json`: its `focus` and the
+first 12 hex of the sha256 of `public/photos/480/<key>.webp`, the file that was looked at. A unit test (`tests/unit/home.test.ts`) fails CI
+for a shown photo with no entry, with a changed file, or an entry for a photo no longer shown. Never cut a face, glass or bottle.
+1. `node Tools/guides/crop_sheet.mjs [key...]`: writes `shots/crops/sheet.jpg` (original with the crop box, and the square) for the keys, or all missing or stale ones. Look at it.
+2. `node Tools/guides/crop_sheet.mjs --write [key...] --focus "<key>=<x>% <y>%"`: records them with the fresh hash (focus as given, else kept, else centre).
+3. `npx vitest run tests/unit/home.test.ts`.
 
 ## Flights (fly-to)
 - Each beat may carry 1 or 2 flights (`fly`): a place id from `data/places.json`, or a point with a zoom. Each flight has a one-line

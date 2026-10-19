@@ -1,9 +1,10 @@
+import { createHash } from 'node:crypto';
 import { copyFileSync, existsSync, mkdtempSync, readdirSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
-import { fillGuideCount, fillGuideList, guideCount, guideRows, placeGuideCount } from '../../src/home/guideCount';
+import { fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
 const html = readFileSync('index.html', 'utf8');
@@ -106,16 +107,37 @@ describe('the Guides page', () => {
     expect(out).toContain('<h3>In short</h3>');
     expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · resized/);
   });
-  it('crops each card photo square around its focus, and only keeps focus for photos that exist', () => {
-    const focus = JSON.parse(readFileSync('src/home/photoFocus.json', 'utf8')) as Record<string, string>;
-    const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos as Record<string, unknown>;
-    expect(Object.keys(focus).filter((k) => !(k in photos))).toEqual([]);
+  it('crops each card photo square around its focus, writing a style only for an off-centre focus', () => {
     const out = fillGuideList(guidesHtml, guideRows());
-    for (const [k, f] of Object.entries(focus)) {
+    for (const [k, { focus }] of Object.entries(photoCrops)) {
       const card = out.match(new RegExp(`<a class="gcard-c"[^>]*><span class="ct"><img src="[^"]*/${k}\\.webp"[^>]*>`));
-      if (card) expect(card[0]).toContain(`style="object-position:${f}"`);
+      if (!card) continue;
+      if (focus === '50% 50%') expect(card[0]).not.toContain('object-position');
+      else expect(card[0]).toContain(`style="object-position:${focus}"`);
     }
     expect(out).toContain('style="object-position:');
+  });
+  // Owner 19 Oct 2026: "We need a check for this structurally". A crop is checked by eye; the hash ties the check to the file that was seen.
+  describe('checked square crops (src/home/photoCrops.json)', () => {
+    const shown = squarePhotoKeys(guideRows());
+    const hashOf = (k: string) => createHash('sha256').update(readFileSync(`public/photos/480/${k}.webp`)).digest('hex').slice(0, 12);
+    const fix = (k: string) => `run node Tools/guides/crop_sheet.mjs ${k}, look at the sheet, then add it to src/home/photoCrops.json (see docs/guides.md "Photo crops").`;
+    it('has an entry for every photo the Guides page shows', () => {
+      expect(shown.length).toBeGreaterThan(0);
+      const missing = shown.filter((k) => !photoCrops[k]).map((k) => `Guides page photo ${k} has no checked square crop: ${fix(k)}`);
+      expect(missing, missing.join('\n')).toEqual([]);
+    });
+    it('matches the current file of each checked photo', () => {
+      const stale = shown.filter((k) => photoCrops[k] && photoCrops[k].file !== hashOf(k))
+        .map((k) => `Guides page photo ${k} changed since its square crop was checked: ${fix(k)}`);
+      expect(stale, stale.join('\n')).toEqual([]);
+    });
+    it('has no entry for a photo that is not shown or not shipped', () => {
+      const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos as Record<string, unknown>;
+      const extra = Object.keys(photoCrops).filter((k) => !shown.includes(k) || !(k in photos))
+        .map((k) => `src/home/photoCrops.json has an entry for ${k}, which the Guides page does not show (or data/photos.json lacks): delete the entry.`);
+      expect(extra, extra.join('\n')).toEqual([]);
+    });
   });
   it('gives a guide with no photo a typographic card, and a region with no tile no tile', () => {
     const empty = mkdtempSync(join(tmpdir(), 'public-'));
