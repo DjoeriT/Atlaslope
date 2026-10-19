@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { fillGuideCount, fillGuideList, guideCount, guideRows } from './src/home/guideCount';
+import { fillGuideCount, fillGuideList, guideRows, placeGuideCount } from './src/home/guideCount';
 
 // GitHub Pages serves the site under /Atlaslope/ (the repo name) until atlaslope.com is pointed at it. A relative base works at any subpath and in any case,
 // so dev, tests and the published site all use the same build.
@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
   build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', about: 'about/index.html' } } },
   plugins: [{ name: 'guide-count', transformIndexHtml: (html, ctx) => {
     // Every page that shows the guide count gets it; only the Guides page gets the list.
-    const out = fillGuideCount(html, guideCount());
+    const out = fillGuideCount(html, placeGuideCount());
     return ctx.filename.replace(/\\/g, '/').endsWith('guides/index.html') ? fillGuideList(out, guideRows()) : out;
   } }],
   esbuild: { jsx: 'automatic' },

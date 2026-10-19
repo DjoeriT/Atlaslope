@@ -109,3 +109,43 @@
 - applied `grapes.main`: sheet says main grapes [], pliego says 'Principales variedades de uva de vinificación: MERLOT, TEMPRANILLO — CENCIBEL', p1
 - applied `grapes.others`: sheet lists Tempranillo and Merlot as others, pliego names them the main varieties, p1
 - applied `why.text`: sheet says the soils 'give' the wines, pliego says the strontium 'contribuye a producir unos vinos intensos, con marcadas notas minerales', p1
+
+## ribera-del-guadiana
+- applied `grapes.main`: sheet main is empty; pliego p6 '6. PRINCIPALES UVAS DE VINIFICACIÓN' lists these eight
+- applied `grapes.others`: sheet mixes the eight principal grapes into others; pliego p11-p12 'UVAS DE VINIFICACIÓN SECUNDARIAS' lists these 18
+- applied `grapes.othersCite`: once main grapes move out, secondary grapes are only on p11-p12
+- applied `styles.text`: sheet says reds rich in tannin and '(crianza, reserva)'; pliego p7 gives tannin to rosados and reds, p2/p4 add Gran Reserva
+- applied `climate.text`: sheet says 'so little fungal disease'; pliego p6 says 'reduce el riesgo de enfermedades criptogámicas'
+- applied `why.text`: sheet says rain 'cuts disease' and only reds rich in tannin; pliego p6 'reduce el riesgo', p7 covers rosados and reds
+
+## ribera-del-jucar
+- applied `grapes.main`: sheet has main empty; pliego p5 lists these seven under PRINCIPALES UVAS DE VINIFICACIÓN
+- applied `grapes.cite`: main grapes come from p5
+- applied `grapes.others`: sheet puts all 12 in others; pliego p9 lists only these five as UVAS DE VINIFICACIÓN SECUNDARIAS
+- applied `grapes.othersCite`: secondary grapes come from p9 only
+- applied `soil.text`: sheet says rounded dolomitic limestone; pliego p5 says cantos poligénicos poco rodados (barely rounded)
+- applied `why.text`: sheet links lake soils to soft wines with good acidity; pliego p5 makes no soil-to-taste link and says nothing of good acidity, only equilibrio acidez-tanicidad
+- applied `styles.cite`: sheet cites p1-p2; the Tradición, Crianza and Reserva reds it names are on p3
+
+## rio-negro
+- applied `why.text`: Sheet says "cooler days" and that the ripening "keeps the acidity". Pliego p1 says "temperatura diurna más suave" (milder) and the ripening "favorece la conservación de acidez" (helps keep).
+
+## valdepenas
+- applied `soil.text`: sheet says Chalky; pliego says "terrenos calizos" (limy), p6
+- applied `why.text`: sheet says chalky soil and low yields give; pliego says "calizos" and "favorecen", p6
+- applied `climate.text`: sheet says slowing; pliego says "propician un final de la maduración más lento" (hedge), p7
+- applied `tastes.text`: sheet says golden after barrel; pliego says "tonalidades ambarinas y reflejos dorados si han pasado por barricas", p1
+- NOT applied (unsure) `grapes.main`: sheet says no main grapes; pliego lists six under "PRINCIPALES UVAS DE VINIFICACIÓN", p6 -> ["Cabernet Sauvignon","Airén","Verdejo","Tempranillo","Syrah","Macabeo"]
+- NOT applied (unsure) `grapes.others`: sheet puts all twelve in others; pliego lists these six as "UVAS DE VINIFICACIÓN SECUNDARIAS", p11 (othersCite should become ["valdepenas-doc:p11"]) -> ["Chardonnay","Garnacha Tinta","Merlot","Moscatel Grano Menudo","Petit Verdot","Sauvignon Blanco"]
+
+## vallegarcia
+- applied `grapes.main`: sheet has main [] with these three under others; pliego section 7 'Principales variedades' names Cabernet Sauvignon, Syrah, Viognier, p1
+- NOT applied (unsure) `grapes.others`: sheet lists the three main grapes as others; pliego names Merlot, Cabernet Franc, Petit Verdot only in the 'Rendimientos máximos' table, p1 -> ["Merlot", "Cabernet Franc", "Petit Verdot"]
+- applied `why.text`: sheet says the swings 'give' the tannic structure; pliego says 'favorece', p1
+
+## Batch 3, by hand (LeadBot, 19 Oct 2026)
+- valdepenas `grapes.main` and `grapes.others` (checker marked unsure): pliego p6 "PRINCIPALES UVAS DE VINIFICACIÓN" lists six, p11
+  "UVAS DE VINIFICACIÓN SECUNDARIAS" lists six more. Applied as listed; synonyms kept as in the La Jaraba sheet style.
+- vallegarcia `grapes.others` (checker marked unsure): the sheet repeated the three main grapes. Merlot, Cabernet Franc and Petit Verdot are
+  the other varieties with a maximum yield on p1; applied, cite p1.
+- ribera-del-guadiana `why.text`: 30 words after the script edit, over the 25-word limit (`src/facts/check.ts`); cut to 24, same facts.

@@ -1,0 +1,78 @@
+{
+ "id": "vallegarcia",
+ "title": "Why Vallegarcía tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Vallegarcía grows its vines on acid soil low in calcium, which is unusual in Castilla-La Mancha. Big swings between day and night and more rain than the rest of the region favour an outstanding tannic structure in the grapes.",
+  "cite": [
+   "vallegarcia-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "One winery, one valley",
+   "paras": [
+    "Vallegarcía is the name of a valley. The protected area is a single plot of 1,521 hectares in Retuerta del Bullaque, in the province of Ciudad Real.",
+    "Only one producer has vines and a winery there. Other producers could use the name later, if they follow the same rules."
+   ],
+   "cite": [
+    "vallegarcia-doc:p1"
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A river and a sierra temper the extremes",
+   "paras": [
+    "The Bullaque river and the streams that feed it surround the area. The valleys stay fresh, and the sierra shields the vines from northerly winds. Together they soften the extremes of both winter and summer and help the grapes ripen fully.",
+    "The land lies high, and that gives a big gap between day and night temperatures. Rainfall is also higher than in the rest of the region. Both favour a standout tannic structure, which suits ageing in barrel and in bottle."
+   ],
+   "cite": [
+    "vallegarcia-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "The Bullaque river",
+     "point": [
+      -4.33,
+      39.35
+     ],
+     "zoom": 9,
+     "caption": "The Bullaque river and its streams surround the vineyard and moderate the extremes of winter and summer.",
+     "cite": [
+      "vallegarcia-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Acid raña, not limestone",
+   "paras": [
+    "The vines grow on the Raña del Fresno, a geological substrate with its own kind of soil. Among the vineyard soils of Castilla-La Mancha examined by the regional university, only Vallegarcía's were classed as Ultisol. The soil has high acidity and a low pH.",
+    "Calcium is low at 10.4 g/kg, against 230 g/kg in the region's limestone vineyard soils. Silica is far higher, at 345.9 g/kg against 127.5 g/kg. Iron reaches 26.5 g/kg against 16.65 g/kg. Aluminium is 57.8 g/kg against about 33.4 g/kg. Rare earth elements are also high compared with regional and world averages.",
+    "The low calcium sets these wines apart from the rest of Castilla-La Mancha. The acid soil shows in the wines' pH and in their balance in the mouth. It also leaves a touch of bitterness at the end of the palate that lengthens the taste."
+   ],
+   "cite": [
+    "vallegarcia-doc:p1"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "A white and a red, picked by hand",
+   "paras": [
+    "The main grapes are Cabernet Sauvignon and Syrah. Viognier is the third. Merlot and Cabernet Franc also have yield limits. So does Petit Verdot. Viognier is capped at 11,500 kg per hectare and Cabernet Sauvignon at 8,500 kg.",
+    "The white is intense yellow. Stone and tropical fruit meet white flowers, over a background of lavender and rosemary. It is fresh and round, with a toasty finish that is slightly bitter. A varying share of the must ferments in new French oak and rests on its lees for 4 to 6 months.",
+    "The red is intense red with garnet rims. It smells of red fruit and scrub, with minerals or balsamic hints of lavender. Toasty notes come from the wood. It is round, with slightly firm tannin. The red is aged in French oak barrels.",
+    "All grapes are picked by hand into boxes. Every wine then spends a variable time ageing in bottle, and the bottling must take place in the production zone."
+   ],
+   "cite": [
+    "vallegarcia-doc:p1"
+   ]
+  }
+ ]
+}

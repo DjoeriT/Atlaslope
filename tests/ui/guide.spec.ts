@@ -30,13 +30,13 @@ test('the Rioja page tells why it tastes the way it does in four beats, with 7 p
 });
 
 test('a place with no guide has no guide chapters', async ({ page }) => {
-  await open(page, '#place=valdepenas&page');
+  await open(page, '?noguide=valdepenas#place=valdepenas&page');
   await expect(page.locator('.pg-ch')).toHaveCount(0);
   await expect(page.locator('.pg-zguide')).toHaveCount(0);
 });
 
 test('a place with no guide still answers "Why X tastes the way it does" in its four beats', async ({ page }) => {
-  await open(page, '#place=valdepenas&page');
+  await open(page, '?noguide=valdepenas#place=valdepenas&page');
   await expect(page.locator('.pg-spine #why-h')).toHaveText('Why Valdepeñas tastes the way it does');
   const ids = await page.locator('.pg main > section.pg-beat').evaluateAll((els) => els.map((e) => e.id));
   expect(ids).toEqual(['place', 'weather', 'ground', 'rules']);
@@ -103,7 +103,7 @@ test('Test me opens by address too: #quiz=test&set=...', async ({ page }) => {
 });
 
 test('a place with no zones and no guide shows Test me without "and its zones", as the last box before Sources', async ({ page }) => {
-  await open(page, '#place=valdepenas&page');
+  await open(page, '?noguide=valdepenas#place=valdepenas&page');
   const box = page.locator('.pg-testme');
   await expect(box).toContainText('Test me on Valdepeñas');
   await expect(box).toContainText('A short round in Study on Valdepeñas.');

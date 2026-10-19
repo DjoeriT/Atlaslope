@@ -83,7 +83,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region; 104/109 guides after batch 2, 0.56M a place measured). Next: batch 3 (last 5 places plus the home page copy, see `docs/handoffs/2026-10-19-meseta-batch-2.md`) on the local route in "Run a region locally" (sources by script, one headless run per place, 2-place pilot, batches of ~8); ~25M on the old route, target 12-15M [A]. Timing, and whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
+- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Open: whether to approve a next country (France core ~2.5-3.5M [A], then re-measure).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

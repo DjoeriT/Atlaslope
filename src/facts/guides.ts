@@ -1,4 +1,5 @@
 // The Terroir sections of the guides (a guide is the whole place page), under content/guides/<place id>.json: chapters of plain text, each with its sources and "fly there" targets.
+import { debugNoGuide } from '../debug';
 import type { Cite } from './types';
 
 export interface FlyTarget {
@@ -66,7 +67,7 @@ const modules = import.meta.glob<Guide>('../../content/guides/*.json', { eager: 
 export const guides: Guide[] = Object.values(modules);
 const byPlace = new Map(guides.map((g) => [g.id, g]));
 
-export const guideOf = (placeId: string): Guide | undefined => byPlace.get(placeId);
+export const guideOf = (placeId: string): Guide | undefined => (debugNoGuide() === placeId ? undefined : byPlace.get(placeId));
 
 /** The pills of a chapter in page order: its own, then one per zone note. A pill's index in this list is the `fly=` number in the address. */
 export const chapterFlies = (chapter: Chapter): FlyTarget[] => [...(chapter.fly ?? []), ...(chapter.cards ?? []).map((c) => c.fly)];

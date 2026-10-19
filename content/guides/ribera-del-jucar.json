@@ -1,0 +1,87 @@
+{
+ "id": "ribera-del-jucar",
+ "title": "Why Ribera del Júcar tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The Júcar has cut a canyon into flat land, and the canyon brings more rain than the country around it. The soils are lake deposits laid over drained marsh.",
+  "cite": [
+   "ribera-del-jucar-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A small corner of Cuenca",
+   "paras": [
+    "The zone lies in the south-west of the province of Cuenca. It covers seven municipalities: Casas de Benítez, Casas de Fernando Alonso, Casas de Guijarro, Casas de Haro, El Picazo, Pozoamargo and Sisante.",
+    "The land is horizontal. The Júcar river breaks that monotony by digging a canyon through it.",
+    "The producers' association has 10 wineries and 950 growers, and its office is in Pozoamargo."
+   ],
+   "cite": [
+    "ribera-del-jucar-doc:p5",
+    "ribera-del-jucar-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Júcar canyon",
+     "point": [
+      -2.1,
+      39.44
+     ],
+     "zoom": 10,
+     "caption": "The Júcar has dug a canyon that breaks the flatness of the plain here.",
+     "cite": [
+      "ribera-del-jucar-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Rain from the canyon",
+   "paras": [
+    "The canyon brings a rainfall regime higher than that of the surrounding area."
+   ],
+   "cite": [
+    "ribera-del-jucar-doc:p5"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Drained marsh and old lake beds",
+   "paras": [
+    "The zone has lake deposits laid over marshy ground that has since been drained. They hold silty sands and salt-bearing clays with organic matter.",
+    "Fine gravel and barely rounded stones of mixed origin sit in them, cemented by clay. Most of the stones are dolomitic limestone."
+   ],
+   "cite": [
+    "ribera-del-jucar-doc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Soft reds, fruity whites",
+   "paras": [
+    "Seven main grapes are named, from Cabernet Sauvignon to Macabeo, which is also called Viura. Tempranillo goes by Cencibel and Tinto de Toro here. Five more grapes are allowed as secondary varieties.",
+    "The reds are low in astringency, soft and deep. Acidity and tannin sit in balance. The colour runs from cherry red to ruby red, with blue and violet tones.",
+    "Young reds are cherry-red with red fruit. They are powerful on entry and leave an impression of roundness.",
+    "Tradición, Crianza and Reserva reds share one description. Their aromas are intense and frank. Medium tannin comes with a soft, velvety feel, and the finish is long.",
+    "Crianza and Reserva reds run from ruby to cherry with tile tones. Aged wines show ripe red fruit. Time in wood brings toast and vanilla, with hints of pepper and cocoa.",
+    "The whites are pale yellow, sometimes with green or amber tones. They are fruity and soft, with a balance of acidity. Rosados, the rosé wines, are pink and moderate in body.",
+    "Whites and rosados come both dry and sweet. The sweet ones look and smell like the dry wines of the same grape. On the palate they balance alcohol and acidity against residual sugar.",
+    "Reds can age in wooden vats called tinas, for at least 4 months, or in oak barrels for at least 2 months."
+   ],
+   "cite": [
+    "ribera-del-jucar-doc:p1",
+    "ribera-del-jucar-doc:p2",
+    "ribera-del-jucar-doc:p3",
+    "ribera-del-jucar-doc:p4",
+    "ribera-del-jucar-doc:p5",
+    "ribera-del-jucar-doc:p9"
+   ]
+  }
+ ]
+}

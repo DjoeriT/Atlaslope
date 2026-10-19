@@ -61,10 +61,9 @@
           <!-- the Spain tag, dropped by accident in the release 40 refresh and back on the owner's ask (19 Oct 2026 10:39Z) -->
           <p class="reach"><span>Spain</span> Live now. More countries coming soon.</p>
           <dl class="nums">
-            <div><dt data-count="places">106</dt><dd>wine places in Spain</dd></div>
-            <div><dt data-count="guides">29</dt><dd>guides to read</dd></div>
+            <!-- one tile for places and guides once every place had one, and no "Free" tile (owner, option A, 19 Oct 2026) -->
+            <div><dt data-count="places">106</dt><dd>wine places, each with its own guide</dd></div>
             <div><dt data-count="regions">10</dt><dd>regions, coast to coast</dd></div>
-            <div><dt>Free</dt><dd>to use, no account</dd></div>
           </dl>
         </div>
         <figure class="map">
@@ -89,8 +88,8 @@
         <div class="wrap">
           <div class="head">
             <h2>Understand the wine.</h2>
-            <!-- the guide count is filled in at build time from content/guides/ (vite.config.ts) -->
-            <p>Deep guides to <span data-count="guides">29</span> places so far, from Rioja and Ribera del Duero to Rías Baixas. Each one is built on the wine's own rulebook, the pliego de condiciones and the EU single document.</p>
+            <!-- the guide count is filled in at build time from content/guides/, places only, not the Rioja zones (vite.config.ts) -->
+            <p>Deep guides to <span data-count="guides">29</span> places, from Rioja and Ribera del Duero to Rías Baixas. Each one is built on the wine's own rulebook, the pliego de condiciones and the EU single document.</p>
           </div>
           <!-- how a guide answers it, with Rioja; every line traces to the Rioja pliego or EU single document (content/guides/rioja.json,
                content/facts/rioja.json). Line icons in the app's own style (src/cards/Glance.tsx: 24 px box, 1.6 stroke, round caps). -->

@@ -778,22 +778,39 @@
   {
    "id": "ribera-del-jucar",
    "why": {
-    "text": "The Júcar canyon brings more rain than the surrounding flatland. Lake-deposit soils give soft, balanced wines with good acidity.",
+    "text": "The Júcar canyon brings more rain than the surrounding flatland. Reds are soft and deep, with acidity and tannin in balance.",
     "cite": [
      "ribera-del-jucar-doc:p5"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Bobal"
+     },
+     {
+      "local": "Airén"
+     },
+     {
+      "local": "Verdejo"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Macabeo"
+     }
+    ],
+    "cite": [
+     "ribera-del-jucar-doc:p5"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Bobal",
-     "Airén",
-     "Verdejo",
-     "Tempranillo",
-     "Syrah",
-     "Macabeo",
      "Cabernet Franc",
      "Merlot",
      "Moscatel Grano Menudo",
@@ -801,7 +818,6 @@
      "Sauvignon Blanco"
     ],
     "othersCite": [
-     "ribera-del-jucar-doc:p5",
      "ribera-del-jucar-doc:p9"
     ]
    },
@@ -815,7 +831,8 @@
     "text": "Dry and sweet whites and rosados; young, traditional, crianza and reserva reds.",
     "cite": [
      "ribera-del-jucar-doc:p1",
-     "ribera-del-jucar-doc:p2"
+     "ribera-del-jucar-doc:p2",
+     "ribera-del-jucar-doc:p3"
     ]
    },
    "climate": {
@@ -825,7 +842,7 @@
     ]
    },
    "soil": {
-    "text": "Lake deposits: silty sands, salty clays, gravel and rounded dolomitic limestone cemented by clay.",
+    "text": "Lake deposits on drained marsh: silty sands, salty clays, fine gravel and barely rounded stones, mostly dolomitic limestone, cemented by clay.",
     "cite": [
      "ribera-del-jucar-doc:p5"
     ]
@@ -1400,24 +1417,43 @@
   {
    "id": "ribera-del-guadiana",
    "why": {
-    "text": "A Mediterranean climate with low rain in key months cuts disease. Reds are rich in tannin and colour, while whites are fruity with medium-high acidity.",
+    "text": "Low rain in key months lowers the risk of disease. Reds and rosados are rich in tannin and colour; whites are fruity, with medium-high acidity.",
     "cite": [
      "ribera-del-guadiana-doc:p6",
      "ribera-del-guadiana-doc:p7"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Tempranillo"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Pardina"
+     },
+     {
+      "local": "Macabeo"
+     },
+     {
+      "local": "Garnacha Tintorera"
+     },
+     {
+      "local": "Garnacha Tinta"
+     },
+     {
+      "local": "Cayetana Blanca"
+     }
+    ],
+    "cite": [
+     "ribera-del-guadiana-doc:p6"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Tempranillo",
-     "Syrah",
-     "Pardina",
-     "Macabeo",
-     "Garnacha Tintorera",
-     "Garnacha Tinta",
-     "Cayetana Blanca",
      "Beba",
      "Bobal",
      "Graciano",
@@ -1438,7 +1474,6 @@
      "Verdejo"
     ],
     "othersCite": [
-     "ribera-del-guadiana-doc:p6",
      "ribera-del-guadiana-doc:p11",
      "ribera-del-guadiana-doc:p12"
     ]
@@ -1449,15 +1484,17 @@
      "rose",
      "red"
     ],
-    "text": "Fruity whites, rosados and reds rich in tannin and colour; whites and reds also aged (crianza, reserva).",
+    "text": "Fruity whites, rosados and reds; rosados and reds rich in tannin and colour. Whites and reds also come as Crianza, Reserva and Gran Reserva.",
     "cite": [
      "ribera-del-guadiana-doc:p1",
      "ribera-del-guadiana-doc:p2",
-     "ribera-del-guadiana-doc:p3"
+     "ribera-del-guadiana-doc:p3",
+     "ribera-del-guadiana-doc:p4",
+     "ribera-del-guadiana-doc:p7"
     ]
    },
    "climate": {
-    "text": "Mediterranean, with low rainfall in the decisive months of the growing season, so little fungal disease.",
+    "text": "Mediterranean, with low rainfall in the decisive months of the growing season, which lowers the risk of fungal disease.",
     "cite": [
      "ribera-del-guadiana-doc:p6",
      "ribera-del-guadiana-doc:p7"
@@ -1597,21 +1634,36 @@
   {
    "id": "valdepenas",
    "why": {
-    "text": "A dry continental climate and chalky, humus-poor soil stress the vines. Low yields give well-structured, complex reds.",
+    "text": "A dry continental climate and limy soils poor in organic matter stress the vines. Low yields favour well-structured, complex reds.",
     "cite": [
      "valdepenas-doc:p6"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Airén"
+     },
+     {
+      "local": "Verdejo"
+     },
+     {
+      "local": "Tempranillo (Cencibel)"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Macabeo (Viura)"
+     }
+    ],
+    "cite": [
+     "valdepenas-doc:p6"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Airén",
-     "Verdejo",
-     "Tempranillo",
-     "Syrah",
-     "Macabeo",
      "Chardonnay",
      "Garnacha Tinta",
      "Merlot",
@@ -1620,7 +1672,6 @@
      "Sauvignon Blanco"
     ],
     "othersCite": [
-     "valdepenas-doc:p6",
      "valdepenas-doc:p11"
     ]
    },
@@ -1639,20 +1690,20 @@
     ]
    },
    "climate": {
-    "text": "Dry continental; high summer temperatures ease off late, slowing the end of ripening and keeping aromas.",
+    "text": "Dry continental; high summer temperatures ease off late, favouring a slower end of ripening and keeping aromas.",
     "cite": [
      "valdepenas-doc:p6",
      "valdepenas-doc:p7"
     ]
    },
    "soil": {
-    "text": "Chalky, poor in organic matter, pH 7.5 to 8.5, easy for roots to penetrate; reflects sunlight, stores heat.",
+    "text": "Limy, poor in organic matter, pH 7.5 to 8.5, easy for roots to penetrate; reflects sunlight, stores heat.",
     "cite": [
      "valdepenas-doc:p6"
     ]
    },
    "tastes": {
-    "text": "Whites: pale yellow, golden after barrel; fine, clean, discreetly fruity. Rosés: pink with red and violet; fresh, fruity. Reds: picota to violet cherry or ruby; subtle aroma growing with time; soft, warm, long finish.",
+    "text": "Whites: pale yellow, amber with golden glints after barrel; fine, clean, discreetly fruity. Rosés: pink with red and violet; fresh, fruity. Reds: picota to violet cherry or ruby; subtle aroma growing with time; soft, warm, long finish.",
     "cite": [
      "valdepenas-doc:p1",
      "valdepenas-doc:p2"
@@ -1990,7 +2041,7 @@
   {
    "id": "rio-negro",
    "why": {
-    "text": "The high plateau (940 to 1,000 m) gives cooler days and a slow, balanced ripening that keeps the acidity.",
+    "text": "The high plateau (940 to 1,000 m) gives milder days and a slow, balanced ripening that helps keep the acidity.",
     "cite": [
      "rio-negro-doc"
     ]
@@ -2063,21 +2114,33 @@
   {
    "id": "vallegarcia",
    "why": {
-    "text": "Big day-night swings and more rain than the rest of the region give grapes a strong tannic structure for barrel and bottle ageing.",
+    "text": "Big day-night swings and more rain than the rest of the region favour a strong tannic structure for barrel and bottle ageing.",
     "cite": [
      "vallegarcia-doc"
     ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Viognier"
+     }
+    ],
+    "cite": [
+     "vallegarcia-doc:p1"
+    ],
     "others": [
-     "Cabernet Sauvignon",
-     "Syrah",
-     "Viognier"
+     "Merlot",
+     "Cabernet Franc",
+     "Petit Verdot"
     ],
     "othersCite": [
-     "vallegarcia-doc"
+     "vallegarcia-doc:p1"
     ]
    },
    "styles": {

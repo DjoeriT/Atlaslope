@@ -8,6 +8,12 @@ import { loadTree } from '../tree';
 // (one JSON file per place), and new guides change it without touching the page (handoff 2026-10-19-home-refresh-build.md).
 export const guideCount = (dir = 'content/guides'): number => readdirSync(dir).filter((f) => f.endsWith('.json')).length;
 
+// The home page counts places, so the three Rioja zones' guides stay out of its number (109 files, 106 places; Meseta batch 3, 19 Oct 2026).
+export const placeGuideCount = (dir = 'content/guides', placesFile = 'data/places.json'): number => {
+  const places = new Set(JSON.parse(readFileSync(placesFile, 'utf8')).places.filter((p: { level: string }) => p.level === 'place').map((p: { id: string }) => p.id));
+  return readdirSync(dir).filter((f) => f.endsWith('.json') && places.has(f.slice(0, -5))).length;
+};
+
 export const fillGuideCount = (html: string, n: number): string => html.replace(/(data-count="guides">)\d+(<)/g, `$1${n}$2`);
 
 // The Guides page lists every guide the same way, so each release brings it up to date with no extra step (owner, 19 Oct 2026: it still said
