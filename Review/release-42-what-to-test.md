@@ -12,4 +12,5 @@ Open https://atlaslope.com/ in Chrome or Safari on a Mac or iPad. Reload once wi
 
 ## For you
 PR #114 from `claude/guides-landing-1fy69k`. The Guides cards and both counts are filled in at build time from `content/guides/`, so a release that adds guides updates them with no extra step. A new region shows without a satellite view until one is added to `public/guides/`. Handoff `docs/handoffs/2026-10-19-guides-landing.md`. ReviewBot `Review/pr-114-review.md` and `Review/pr-114-review-2.md`.
+Checks: CI (check, scope, UI tests in four parts) green on the PR head; the publish run reuses it for the merge commit. Earlier head 97e22e9 was green on all six.
 Not verified: Safari, iPad, real phones.
