@@ -2,6 +2,68 @@
  "region": "mediterranean",
  "sheets": [
   {
+   "id": "el-terrerazo",
+   "why": {
+    "text": "The vineyard is sunlit all day at 870 m, and its big day-night temperature contrast makes ripening very slow.",
+    "cite": [
+     "el-terrerazo-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bobal",
+     "Syrah",
+     "Merlot",
+     "Garnacha Tinta",
+     "Cabernet Sauvignon",
+     "Tempranillo (Cencibel, Tinto de Toro)"
+    ],
+    "othersCite": [
+     "el-terrerazo-doc:p3",
+     "el-terrerazo-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wine only.",
+    "cite": [
+     "el-terrerazo-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Sun all day on the vineyard. A very high heat sum, with a big day-night contrast, makes ripening very slow.",
+    "cite": [
+     "el-terrerazo-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "Sandy loam with limestone and a basic pH.",
+    "cite": [
+     "el-terrerazo-doc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "The vineyard site is at 870 m.",
+    "cite": [
+     "el-terrerazo-doc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Picota red, no signs of age. Red and black fruit (plum, blackberry, blueberry), thyme and Mediterranean scrub. Fleshy, full body; ripe, sweet-tasting tannins.",
+    "cite": [
+     "el-terrerazo-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
    "id": "valencia",
    "why": {
     "text": "Mild average temperatures ripen grapes early. Water stress in the hot spring and summer gives the wines intense aroma.",
@@ -226,6 +288,61 @@
    },
    "producers": {
     "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "los-balagueses",
+   "why": {
+    "text": "The sloping vineyard drains well and gives the vines better sun exposure, which helps ripening and the polyphenols behind colour and body.",
+    "cite": [
+     "los-balagueses-doc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Syrah",
+     "Garnacha Tintorera",
+     "Chardonnay",
+     "Merlot",
+     "Sauvignon Blanco",
+     "Tempranillo (Cencibel, Tinto de Toro)"
+    ],
+    "othersCite": [
+     "los-balagueses-doc:p4",
+     "los-balagueses-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines.",
+    "cite": [
+     "los-balagueses-doc:p1",
+     "los-balagueses-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Red: deep cherry; ripe grape, blackberry, raspberry, plum, forest floor and oak; velvety, ripe tannins. White: straw yellow; white and exotic fruit, pineapple, mango; rich, fresh finish.",
+    "cite": [
+     "los-balagueses-doc:p1",
+     "los-balagueses-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [],
     "cite": []
    }
   },
@@ -601,6 +718,247 @@
    "producers": {
     "items": [],
     "cite": []
+   }
+  },
+  {
+   "id": "chozas-carrascal",
+   "why": {
+    "text": "At 720 m and open to cold north winds, this is one of the coolest sites in its district.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Cabernet Franc",
+     "Macabeo (Viura)",
+     "Garnacha Tinta (Gironet)",
+     "Syrah",
+     "Bobal"
+    ],
+    "othersCite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Reds (blends, or Cabernet Franc alone): at least 5 months in oak. White: barrel-fermented. Rosado: macerated in oak barrels.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "climate": {
+    "text": "Continental with Mediterranean influence. Rain is 350 to 400 mm, mostly in September. There are about 3,000 sun hours a year. Big day-night swings at ripening.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "soil": {
+    "text": "Alkaline loam (pH 8 to 9), about 1% organic matter. Active limestone 7 to 21%. Limestone layer at 30 cm.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyard at 720 m, among the coldest sites in the district.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: intense red; fruity, balsamic, ripe tannins, chocolate, mineral. Cabernet Franc: violet red; black fruit, herbs. White: straw; floral, fruity, oak. Rosado: deep pink; red fruit, oak; fresh.",
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Tinto multivarietal",
+      "text": "Grapes made apart; at least 14 days on skins and 5 months in oak."
+     },
+     {
+      "name": "Tinto monovarietal (Cabernet Franc)",
+      "text": "Single-grape red; black fruit and herbs, with fruit ahead of oak notes."
+     },
+     {
+      "name": "Blanco",
+      "text": "White fermented in oak barrels after skin contact; stored in steel or concrete."
+     },
+     {
+      "name": "Rosado",
+      "text": "Rosé from four grapes; at least three weeks of maceration in oak barrels."
+     }
+    ],
+    "cite": [
+     "chozas-carrascal-doc"
+    ]
+   }
+  },
+  {
+   "id": "tharsys",
+   "why": {
+    "text": "An airy microclimate with moderated extremes and loose, permeable limestone soils give healthy, slowly ripened grapes and long-lived wines.",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Albariño",
+     "Bobal",
+     "Cabernet Franc",
+     "Chardonnay",
+     "Red Grenache",
+     "Merlot",
+     "Xarel·lo"
+    ],
+    "othersCite": [
+     "tharsys-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Reds, young or oak-aged. Whites and rosados. Quality sparkling wines, white and rosado.",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "climate": {
+    "text": "Continental, slightly Mediterranean. About 430 mm of rain and over 3,000 sun hours a year. Summer days reach 33 °C, nights 12 °C.",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "soil": {
+    "text": "Sandy to sandy-loam, loose and shallow, over porous limestone 2 to 4 m down. High in carbonates; pH 8.2 to 8.3.",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "altitude": {
+    "text": "At 690 m, sheltered to the north by the Juan Navarro range (1,200 m).",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: purple-red to cherry when young, garnet to ruby when aged; red fruit, balsamic herbs; soft tannins. Whites: lemon yellow with gold glints; stone fruit, citrus, herbs. Sparkling: fine bubbles; toast, butter.",
+    "cite": [
+     "tharsys-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino espumoso de calidad blanco",
+      "text": "Old-gold sparkling white; white flowers, stone fruit, citrus, toast, butter; fine bubbles."
+     },
+     {
+      "name": "Vino espumoso de calidad rosado",
+      "text": "Pale pink sparkling rosé; cherry, raspberry, citrus, bread; delicate bubbles."
+     },
+     {
+      "name": "Vino tinto",
+      "text": "Red, young or oak-aged; aged ones show toast, spice, smoke and dairy notes."
+     },
+     {
+      "name": "Vino rosado",
+      "text": "Pale pink with orange glints; red and stone fruit; smoke and spice after oak."
+     }
+    ],
+    "cite": [
+     "tharsys-doc"
+    ]
+   }
+  },
+  {
+   "id": "vera-de-estenas",
+   "why": {
+    "text": "A shallow water table softens day-night swings and raises humidity, which keeps the acidity balanced.",
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Bobal",
+     "Tempranillo",
+     "Merlot",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Oak-aged reds in four ageing grades; white Chardonnay fermented in new oak; rosado mostly from Bobal.",
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "climate": {
+    "text": "About 430 mm of rain on 52 rainy days and 2,600 hours of sun. A shallow water table softens day-night swings.",
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "soil": {
+    "text": "Mainly brown limestone soils on mostly Miocene ground; 38% total limestone, pH about 8.5.",
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Crianza: cherry red; fruit and spice, Mediterranean scrub; sweet tannins. Reserva: sour-cherry red with tile hints; vanilla; big volume, dry finish. Gran Reserva: garnet; very ripe fruit, toasted oak. Rosado: strawberry red; fruity, floral. White: straw; fruity.",
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino tinto madurado en barrica",
+      "text": "Red kept in oak under 6 months; red-fruit and woodland aromas."
+     },
+     {
+      "name": "Vino tinto Crianza",
+      "text": "Red aged at least 6 months in oak; fruit and spice with sweet tannins."
+     },
+     {
+      "name": "Vino tinto Reserva",
+      "text": "Red aged at least 12 months in oak; soft and full, with a dry finish."
+     },
+     {
+      "name": "Vino tinto Gran Reserva",
+      "text": "Red aged at least 18 months in oak; very ripe fruit and toasted oak."
+     }
+    ],
+    "cite": [
+     "vera-de-estenas-doc"
+    ]
    }
   }
  ]
