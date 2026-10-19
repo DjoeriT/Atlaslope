@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
-import { focusablePlaces } from './doors';
+import { focusablePlaces } from './doorsModel';
 import type { QuizApi } from './useQuiz';
 
 const t = strings.quiz.focus;
