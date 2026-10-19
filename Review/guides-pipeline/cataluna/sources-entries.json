@@ -1,0 +1,74 @@
+{
+ "emporda-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Empordà (INCAVI, file \"Plec Condicions DO Empordà 2022\", PDF made 20 Jun 2024; EU amendment OJ C/2025/4117 of 24 Jul 2025 may be newer, see index)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/DOP_Emporda_Pliego_Condiciones_2022.pdf",
+  "date": "2024-06-20"
+ },
+ "costers-del-segre-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones consolidado DOP Costers del Segre, version April 2026 (INCAVI; national favourable decision 16 Jul 2026, BOE-A-2026-17001)",
+  "url": "https://gencat.cat/agricultura/incavi/plecs/costers-segre/modificacio-05.pdf",
+  "date": "2026-07-16"
+ },
+ "pla-de-bages-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Pla de Bages, version July 2026 (INCAVI; national favourable decision 21 Sep 2026, BOE-A-2026-20821)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-pla-de-bages/Plec%20de%20condicions%20DO%20Pla%20de%20Bages%20amb%20control%20de%20canvis%20juny%202026_c.pdf",
+  "date": "2026-09-21"
+ },
+ "alella-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Alella, March 2020 (INCAVI)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-alella/plec-condicions-dop-alella-marc-2020-pdo-es-a1423.pdf",
+  "date": "2020-03-01"
+ },
+ "conca-de-barbera-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Conca de Barberà, version 2024 (AM05; INCAVI; EU OJ C/2025/458 of 22 Jan 2025)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-conca-barbera/Conca-de-Barbera-modificacio-PC-AM05-2024.pdf",
+  "date": "2024-11-11"
+ },
+ "cava-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Cava (Consejo Regulador copy, with AM14: BOE 20 Jan 2026, OJ C/2026/241)",
+  "url": "https://www.cava.wine/documents/615/Pliego_de-CondicionesDOPCAVA.pdf",
+  "date": "2026-01-09"
+ },
+ "penedes-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Penedès, modification 7, version July 2026 (INCAVI; national decision 10 Aug 2026, BOE-A-2026-18110)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-pened%C3%A8s/Modificacio_normal_7a_del%20_plec%20_condicions_DO_Penedes_copiaok.pdf",
+  "date": "2026-08-10"
+ },
+ "catalunya-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Cataluña / Catalunya, version April 2026 (INCAVI; national favourable decision 31 Jul 2026, BOE-A-2026-17831)",
+  "url": "https://gencat.cat/agricultura/incavi/plecs/do-catalunya/plec-condicions-do-catalunya.pdf",
+  "date": "2026-07-31"
+ },
+ "priorat-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP/DOQ Priorat, version November 2021 (INCAVI)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-priorat/PC-Priorat-DOQ-nov-21-control-de-canvis.pdf",
+  "date": "2021-11-01"
+ },
+ "tarragona-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Tarragona, AM07 February 2023 (INCAVI)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-tarragona/Plec-de-condicions-DO-Tarragona-amb-control-de-canvis-23.pdf",
+  "date": "2023-02-01"
+ },
+ "montsant-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Montsant, version May 2026 (INCAVI; national favourable decision 15 Sep 2026, BOE-A-2026-20820)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-montsant/1_AM06-PC-DO-Montsant-version%20modificacio%CC%81n%20normal.pdf",
+  "date": "2026-09-15"
+ },
+ "terra-alta-pliego": {
+  "kind": "official",
+  "title": "Pliego de condiciones DOP Terra Alta, March 2020 (INCAVI)",
+  "url": "https://incavi.gencat.cat/content/dam/incavi/home/normativa/plecs-de-condicions-de-les-do-catalanes/do-terra-alta/dop-terra-alta-modificacio-plec-condicions.pdf",
+  "date": "2020-03-01"
+ }
+}

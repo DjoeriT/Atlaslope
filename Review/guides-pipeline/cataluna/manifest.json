@@ -1,0 +1,16 @@
+{
+  "sources": {
+    "emporda-pliego": "Review/sources/fetched/pliego-PDO-ES-A1548-emporda.txt",
+    "costers-del-segre-pliego": "Review/sources/fetched/pliego-PDO-ES-A1523-costers-del-segre.txt",
+    "pla-de-bages-pliego": "Review/sources/fetched/pliego-PDO-ES-A1557-pla-de-bages.txt",
+    "alella-pliego": "Review/sources/fetched/pliego-PDO-ES-A1423-alella.txt",
+    "conca-de-barbera-pliego": "Review/sources/fetched/pliego-PDO-ES-A1422-conca-de-barbera.txt",
+    "cava-pliego": "Review/sources/fetched/pliego-PDO-ES-A0735-cava.txt",
+    "penedes-pliego": "Review/sources/fetched/pliego-PDO-ES-A1551-penedes.txt",
+    "catalunya-pliego": "Review/sources/fetched/pliego-PDO-ES-A1549-catalunya.txt",
+    "priorat-pliego": "Review/sources/fetched/pliego-PDO-ES-A1560-priorat.txt",
+    "tarragona-pliego": "Review/sources/fetched/pliego-PDO-ES-A1555-tarragona.txt",
+    "montsant-pliego": "Review/sources/fetched/pliego-PDO-ES-A1550-montsant-incavi-current.txt",
+    "terra-alta-pliego": "Review/sources/fetched/pliego-PDO-ES-A1556-terra-alta.txt"
+  }
+}
