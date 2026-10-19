@@ -157,3 +157,10 @@ sheet limits (why 25 words, tastes 40, four famous styles of 15 words each). `np
 - why.text: applied. p11 ties the light wines with "un buen núcleo ácido" to "esta climatología" (midway between Mediterranean and continental), while the Pyrenean influence marks white aromas with "la parte más fresca" of each variety; the herbs are "hierbas aromáticas" (not wild), naming "el romero, el espliego, el tomillo", so lavender is added and "wild" dropped; the line is kept within the 25-word why limit (p11).
 - climate.text: applied. p11 says altitude "es un aspecto favorecedor" and that distance from the sea and the "barrera prelitoral" put the climate "a medio camino" between Mediterranean and inland continental, and it is that climate that gives "vinos ligeros, marcados por un buen núcleo ácido"; cite moved from pla-de-bages-doc:p6 to pla-de-bages-pliego:p11.
 - styles.cite: applied. pla-de-bages-doc:p6 removed; p1-p4 define every style listed (blanco incl. brisado, rosado, tinto, aguja, espumoso de calidad, rancio, mistela, vino dulce natural, vino naturalmente dulce). "(a long local tradition)" after sparkling wines was dropped with it, as p1-p4 do not say it.
+
+## Thread, by hand from the re-check notes (19 Oct 2026, run wf_b19ff338-e23 stopped before the tarragona and terra-alta sheet helpers finished)
+- tarragona: climate now cites the pliego (p21-22, maritime and continental sectors); soil "chalky crust" to "limy crust" (corteza calcárea, p21); famous Vimblanc line dropped (p7 lightly sweet against p23 very sweet). Grape name notes (Subirat Parent, Garnacha) skipped, kept as the region's grape names.
+- terra-alta: salty note only for whites (p11); soil "limy, rich in calcium carbonate and active lime" (p8, p11); tastes colour and aroma only for Garnacha Blanca whites (p5-6); climate "dry Mediterranean" (p8, p11). Needle wine is in the styles text already.
+- penedes: climate cites penedes-pliego:p15, "temperature gap", no "wide" (sample note).
+- cava: soil "chalky" to "limy" (calcárea, sample note).
+- alella: Mistela line cut to 15 words (facts test limit), same facts.

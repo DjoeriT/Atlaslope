@@ -4,6 +4,7 @@
 Usage:
   pack.py write <region> <id> <source id>   rules + example + fact sheet + pliego extract, for the writer
   pack.py check <region> <id> <source id>   rules + guide + every pliego page in the extract + fact sheet + OSM lookups, for the checker
+  pack.py sheet <region> <id> <source id> <page>...   fact sheet + only the pliego pages the checker's sheet notes cite
 
 <region> is the folder in Review/guides-pipeline/ (with manifest.json and <id>.extract.txt) and the name of content/facts/<region>.json
 (cataluna, andalucia...). Why: every helper step re-reads its whole context, so Andalucía's checkers re-read about 1.1M cached tokens
@@ -60,9 +61,21 @@ def osm(guide: dict) -> str:
 def main() -> None:
     mode, region, pid, source = sys.argv[1:5]
     gp = ROOT / 'Review/guides-pipeline' / region
-    extract = (gp / f'{pid}.extract.txt').read_text(encoding='utf-8')
     tools = ROOT / 'Tools/guides'
     parts = []
+    if mode == 'sheet':
+        # Cataluña re-check, 19 Oct 2026: sheet helpers loaded the whole pliego and re-read it each step, about 600K tokens per place
+        # for 3 or 4 edits. The checker already names the page of each note, so the pack carries only those pages.
+        pdf = ROOT / json.loads((gp / 'manifest.json').read_text(encoding='utf-8'))['sources'][source]
+        pages = (pdf.read_text(encoding='utf-8')).lstrip('\f').split('\f')
+        wanted = sorted({int(n) for n in sys.argv[5:] if 0 < int(n) <= len(pages)})
+        parts += [(f'Fact sheet entry "{pid}" (content/facts/{region}.json)', sheet(region, pid))]
+        parts += [(f'Pliego page {n}. Cite as "{source}:p{n}"', re.sub(r'[ \t]{2,}', '  ', pages[n - 1]).strip()) for n in wanted]
+        print(f'# SHEET PACK: {pid} ({region})\n')
+        for title, body in parts:
+            print(f'\n\n######## {title}\n\n{body}')
+        return
+    extract = (gp / f'{pid}.extract.txt').read_text(encoding='utf-8')
     if mode == 'write':
         parts += [('Brief', (tools / 'WRITER.md').read_text(encoding='utf-8')),
                   ('docs/guides.md (the parts a writer needs)', doc_sections(ROOT / 'docs/guides.md', GUIDE_SECTIONS)),

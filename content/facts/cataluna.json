@@ -477,7 +477,7 @@
      },
      {
       "name": "Mistela",
-      "text": "White-grape free-run must; the wine is filtered at 12% natural alcohol or more, then wine spirit added."
+      "text": "Free-run white must, filtered at 12% natural alcohol or more, then fortified with wine spirit."
      },
      {
       "name": "Espumoso",
@@ -658,7 +658,7 @@
     ]
    },
    "soil": {
-    "text": "Mostly chalky and fairly clayey, with little sand. Low in organic matter and not very fertile.",
+    "text": "Mostly limy and fairly clayey, with little sand. Low in organic matter and not very fertile.",
     "cite": [
      "cava-pliego:p9"
     ]
@@ -751,9 +751,9 @@
     ]
    },
    "climate": {
-    "text": "A wide temperature gap between day and night in July and August helps red grapes ripen.",
+    "text": "A temperature gap between night and day in July and August helps red grapes ripen.",
     "cite": [
-     "penedes-doc:p6"
+     "penedes-pliego:p15"
     ]
    },
    "soil": {
@@ -1116,13 +1116,14 @@
     ]
    },
    "climate": {
-    "text": "Direct sea influence in Camp de Tarragona; a continental influence in Ribera d'Ebre.",
+    "text": "Near the sea, with a maritime influence, in Camp de Tarragona; inland, with a continental influence, in Ribera d'Ebre.",
     "cite": [
-     "tarragona-doc:p6"
+     "tarragona-pliego:p21",
+     "tarragona-pliego:p22"
     ]
    },
    "soil": {
-    "text": "Low-fertility soils; in Camp de Tarragona clays with a chalky crust, in Ribera d'Ebre calcareous clays, marls, limestones, sandstones and conglomerates. Slightly basic (pH 7.1 to 8.6), low in organic matter, mostly loam.",
+    "text": "Low-fertility soils; in Camp de Tarragona clays with a limy crust, in Ribera d'Ebre calcareous clays, marls, limestones, sandstones and conglomerates. Slightly basic (pH 7.1 to 8.6), low in organic matter, mostly loam.",
     "cite": [
      "tarragona-pliego:p20",
      "tarragona-pliego:p21"
@@ -1141,8 +1142,8 @@
       "text": "Amber, red or tawny, old gold as its typical colour; nuts, toast, spice; dry."
      },
      {
-      "name": "Mistela, Vimblanc, Moscatel",
-      "text": "Yellow from white grapes, black-brown from red; alcohol well integrated; Vimblanc lightly sweet."
+      "name": "Mistela, Moscatel",
+      "text": "Yellow from white grapes, black-brown from red; alcohol well integrated."
      }
     ],
     "cite": [
@@ -1263,7 +1264,7 @@
   {
    "id": "terra-alta",
    "why": {
-    "text": "Calcareous soils give the wines a salty note and a long finish. Garnacha Blanca has a long tradition here.",
+    "text": "Limy soils give the white wines a salty note and a long finish. Garnacha Blanca has a long tradition here.",
     "cite": [
      "terra-alta-pliego:p11"
     ]
@@ -1330,20 +1331,21 @@
     ]
    },
    "climate": {
-    "text": "Mediterranean and southern in character, with harvests rich in sugar.",
+    "text": "A dry Mediterranean climate.",
     "cite": [
+     "terra-alta-pliego:p8",
      "terra-alta-pliego:p11"
     ]
    },
    "soil": {
-    "text": "Calcareous (chalky) soils.",
+    "text": "Limy soils, rich in calcium carbonate and active lime.",
     "cite": [
      "terra-alta-pliego:p8",
      "terra-alta-pliego:p11"
     ]
    },
    "tastes": {
-    "text": "Whites: yellow with grey to gold hints; complex, rich aromas; salty on the palate.",
+    "text": "Whites from Garnacha Blanca alone: yellow with grey to gold hints; complex, rich aromas. All whites: a more or less intense salty note.",
     "cite": [
      "terra-alta-pliego:p5",
      "terra-alta-pliego:p6"

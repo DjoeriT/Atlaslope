@@ -114,12 +114,17 @@ const disagreements = done.flatMap(r => r.check.sheet.map(s => ({ id: r.id, ...s
 let sheets = null
 for (const id of [...new Set(disagreements.map(d => d.id))]) {
   const ds = disagreements.filter(d => d.id === id)
-  const r = await guarded(`Apply these fact sheet corrections for ${id} to ${args.facts}. Each says what the sheet says, what the pliego says, and the page.
+  const source = places.find(p => p.id === id).source
+  const pages = [...new Set(ds.flatMap(d => String(d.page).match(/\d+/g) || []))].join(' ')
+  // Few steps (Cataluña re-check, 19 Oct 2026: 3.9M tokens for 7 places, about 600K each to make 3 or 4 edits): one pack, one edit,
+  // no test run (the thread and CI run the facts test).
+  const r = await guarded(`Apply the checker's fact sheet notes for ${id} to ${args.facts}.
 ${JSON.stringify(ds, null, 1)}
-For each: open the cited page with Tools/guides/pages.py (the pliego file for a place is in ${manifest}) and confirm it.
-Apply only what the page plainly says, in the sheet's existing style, citing "<source id>:p<n>". Skip a correction that is a matter
-of wording or that the page does not settle, and say why. Keep the sheet's schema; run \`npm test -- tests/unit/facts.test.ts\` once at the end.
-Also append a "## ${id}" section to ${dir}/fact-sheet-fixes.md: one line per correction, applied or skipped, with the reason. ${safety}`,
+Step 1: run \`python3 Tools/guides/pack.py sheet ${args.region} ${id} ${source} ${pages}\`. It prints the sheet entry and the cited
+pliego pages. Read nothing else. Step 2: make all edits to ${args.facts} in one go, then append a "## ${id}" section to
+${dir}/fact-sheet-fixes.md, one line per note, applied or skipped with the reason. That is all; no other reads, no tests.
+Apply only what the page plainly says, in the sheet's existing style, citing "${source}:p<n>". Skip a note that is a matter
+of wording or that the page does not settle. Keep the schema; a famous-style text stays at 15 words or fewer. ${safety}`,
     { label: `fact sheet ${id}`, phase: 'Sheets', model: 'opus', schema: SHEETS })
   sheets = { applied: (sheets?.applied || 0) + (r?.applied || 0), skipped: (sheets?.skipped || 0) + (r?.skipped || 0),
     note: [sheets?.note, r && `${id}: ${r.note}`].filter(Boolean).join('\n') }
