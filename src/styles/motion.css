@@ -33,7 +33,7 @@ html[data-motion="page-up"]::view-transition-new(page){animation:m-enter-l var(-
 
   /* ---- Sections ease up into place as they scroll into view (scroll-driven, so it costs no script and never runs ahead of the reader). */
   @supports (animation-timeline:view()){
-    .pg-cols main > section > *,.pg-cols aside > *,.rgrid > li{animation:m-reveal linear both;animation-timeline:view();animation-range:var(--m-reveal)}
+    .pg-cols main > section > *,.rgrid > li{animation:m-reveal linear both;animation-timeline:view();animation-range:var(--m-reveal)}
   }
   @keyframes m-reveal{from{opacity:0;transform:translateY(var(--m-rise))}}
 
