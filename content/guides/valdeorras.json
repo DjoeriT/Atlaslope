@@ -24,14 +24,6 @@
         "text": "A white or red wine with at least 85% of the preferred grape varieties."
       },
       {
-        "term": "Producción controlada",
-        "text": "A wine from vineyards with limited yields, with at least 12.5% alcohol."
-      },
-      {
-        "term": "Tostado",
-        "text": "A naturally sweet wine from red grapes dried under cover for at least 30 days, with no added strength."
-      },
-      {
         "term": "Espumoso",
         "text": "A sparkling wine; the white version has at least 85% Godello."
       }

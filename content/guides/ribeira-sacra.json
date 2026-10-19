@@ -12,24 +12,12 @@
   "label": {
     "terms": [
       {
-        "term": "Súmmum",
-        "text": "A wine made with at least 85% of the principal grape varieties."
-      },
-      {
         "term": "Tinto",
         "text": "A red Ribeira Sacra must contain at least 70% Mencía."
       },
       {
         "term": "Rosado",
         "text": "A rosé must contain at least 85% of principal red varieties, so it is always Súmmum."
-      },
-      {
-        "term": "Barrica",
-        "text": "A wine aged at least 6 months (red, in barrels up to 500 litres) or 3 months (white, in wooden barrels up to 600 litres)."
-      },
-      {
-        "term": "Guarda",
-        "text": "A wine aged at least 7 months (red) or 4 months (white) in tanks of wood, concrete or other permitted materials, but not steel or polyester."
       },
       {
         "term": "Subzone name",

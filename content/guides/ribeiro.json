@@ -13,20 +13,12 @@
   "label": {
     "terms": [
       {
-        "term": "Castes",
-        "text": "A wine made only from principal grape varieties."
-      },
-      {
         "term": "Barrica",
         "text": "A wine that was held in a barrel of up to 600 litres at some point, made only from principal varieties."
       },
       {
         "term": "Espumoso",
         "text": "A sparkling wine made only from principal varieties by the traditional method, as brut or brut nature."
-      },
-      {
-        "term": "Tostado",
-        "text": "A wine from grapes dried indoors for at least three months, then aged at least six months in oak or cherry wood and three months in bottle."
       }
     ],
     "cite": [

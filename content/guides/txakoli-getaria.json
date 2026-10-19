@@ -11,10 +11,6 @@
   "label": {
     "terms": [
       {
-        "term": "Fermentado en Barrica",
-        "text": "The wine must have fermented, and turned from must to wine, in barrels."
-      },
-      {
         "term": "Single grape name",
         "text": "A wine sold under one grape's name must contain at least 85% of a recommended variety."
       },

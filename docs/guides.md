@@ -32,7 +32,8 @@ own slice, and until it ships the live page keeps the release 10 order (Overview
 5. **How it tastes.** One card per wine colour. It answers the question in the heading.
 6. **In short.** Five key facts, each one line with its source tag, built from the fact sheet.
 7. **Read the label** (`label`). What the words on a bottle mean here (Crianza, Barrica, Berezia, Tostado). Only what the pliego
-   defines, and each term is one sentence with its rule.
+   defines, and each term is one sentence with its rule. It lists only terms that aren't already a famous style on the fact sheet:
+   famous styles stay in What the rules make, so each term shows once (owner, 19 Oct 2026, "Keep both").
 8. **Producers.** Up to three, from a Wikipedia article on the place.
 9. **More to explore** (`more`): History, Places to visit (with When to go: harvest and festivals), Food to try, Did you know (one
    surprising sourced fact). Shown only when filled. Content waits for the owner's go on outside sources (issue #103).
@@ -80,6 +81,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 19 Oct 2026 | Read the label lists only terms not already in the famous styles; famous styles stay in the rules beat | Green Spain pilot PR |
 | 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Study | this file, "Two formats"; PR #105 |
 | 19 Oct 2026 | Shape C: four beats as the page, How it tastes, In short, extras; Terroir chapters get `beat`; `label`, `say`, `more`; named-place flights warned on | PR #107, Green Spain pilot PR |
 | 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
