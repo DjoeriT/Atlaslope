@@ -1,0 +1,163 @@
+{
+  "id": "ribeiro",
+  "title": "Why Ribeiro tastes the way it does",
+  "minutes": 3,
+  "lede": {
+    "text": "Ribeiro sits where Galicia's Atlantic and Mediterranean climates meet, shielded from the ocean by mountains. This limit zone for vines makes fresh, fruity white wines.",
+    "cite": [
+      "ribeiro-pliego:p16",
+      "ribeiro-pliego:p21",
+      "ribeiro-pliego:p22"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Barrica",
+        "text": "A wine that was held in a barrel of up to 600 litres at some point, made only from principal varieties."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine made only from principal varieties by the traditional method, as brut or brut nature."
+      }
+    ],
+    "cite": [
+      "ribeiro-pliego:p12",
+      "ribeiro-pliego:p13"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "Terraces behind the mountains",
+      "beat": "place",
+      "paras": [
+        "Ribeiro lies in the transition zone of Galicia. The Atlantic is only 45 km to the west.",
+        "Mountain chains close the zone off on the west. They protect it from the storms that come in from the ocean.",
+        "Sea influence comes mainly along the Miño basin. It grows stronger higher up the slopes, so planting stops at about 450 m.",
+        "The zone covers nine municipalities in full, and parishes and places in others.",
+        "The terrain is rough. In many cases the rough soils and terrain all but force the land into vines."
+      ],
+      "cite": [
+        "ribeiro-pliego:p13",
+        "ribeiro-pliego:p16",
+        "ribeiro-pliego:p17",
+        "ribeiro-pliego:p22"
+      ],
+      "fly": [
+        {
+          "label": "Ribeiro",
+          "place": "ribeiro",
+          "caption": "Mountains on the west shield the zone from Atlantic storms, 45 km from the ocean.",
+          "cite": [
+            "ribeiro-pliego:p16",
+            "ribeiro-pliego:p22"
+          ]
+        },
+        {
+          "label": "The Miño valley",
+          "point": [
+            -8.0657,
+            42.2966
+          ],
+          "zoom": 10.5,
+          "caption": "Sea influence comes in mainly along the Miño basin.",
+          "cite": [
+            "ribeiro-pliego:p16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Mediterranean, softened by the Atlantic",
+      "beat": "weather",
+      "paras": [
+        "The climate is temperate, with four clear seasons. It is Mediterranean in character, with an Atlantic influence. Each softens the other.",
+        "Rain is scarce from fruit set onward. Day and night differ strongly in temperature, because the climate is slightly continental.",
+        "That slows ripening. That keeps the aroma and the natural freshness.",
+        "On the Winkler scale most of Ribeiro is zone II. Cooler, less sunny sites are zone I. The lowest, sunniest sites come close to zone III.",
+        "Viticulture here is almost marginal. The fruit has some trouble ripening. Alcohol and phenolic ripeness arrive together, and the acidity stays fresh, with tartaric acid ahead of malic.",
+        "The mildew index is well below its maximum. Even so, growing here depends on constant control of the disease."
+      ],
+      "cite": [
+        "ribeiro-pliego:p15",
+        "ribeiro-pliego:p16",
+        "ribeiro-pliego:p22"
+      ],
+      "fly": [
+        {
+          "label": "Ribeiro",
+          "place": "ribeiro",
+          "caption": "A big gap between day and night temperatures slows ripening.",
+          "cite": [
+            "ribeiro-pliego:p16",
+            "ribeiro-pliego:p22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Granite, made into terraces",
+      "beat": "ground",
+      "paras": [
+        "Most soils form on granite. Fewer form on metamorphic rock, and fewer still on sediments such as river terraces.",
+        "Soils on granite are sandier. Soils on metamorphic rock are loam to silt.",
+        "Chemically, the soils are strongly acid and poor in bases. They fix little phosphorus. In wide areas they are little developed, and they hold little water.",
+        "Nearly all the vineyard soil is terraced. The terraces add depth, ease the slope and help with work and sun.",
+        "Growers have farmed and improved these soils for generations, and have fertilised them heavily for a long time. They can be called man-made soils (anthropic soils)."
+      ],
+      "cite": [
+        "ribeiro-pliego:p17",
+        "ribeiro-pliego:p18",
+        "ribeiro-pliego:p22"
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Treixadura and fresh whites",
+      "beat": "rules",
+      "paras": [
+        "Only the listed grape varieties may be used. Nine white and nine red grapes are principal. Three more are secondary.",
+        "Yields are capped at 13,000 kg per hectare for the principal whites, which gives 93.6 hl. The principal reds are capped at 12,000 kg. Secondary varieties may yield more.",
+        "Wines based on principal varieties identify the zone best. The rules mark them apart from the others in production and on the label.",
+        "White grapes are the most common, and Treixadura stands out. The whites are fresh and fruity, pale yellow to golden. Most are drunk in their first or second year.",
+        "The reds run from violet red to cherry red. They are fresh, intense and balanced, and are also drunk young.",
+        "Sparkling wine has been made since the early 1980s, by the traditional method. Tostado is a sweet wine from the best grapes, dried in naturally ventilated rooms."
+      ],
+      "cite": [
+        "ribeiro-pliego:p14",
+        "ribeiro-pliego:p15",
+        "ribeiro-pliego:p20",
+        "ribeiro-pliego:p21"
+      ],
+      "fly": [
+        {
+          "label": "Ribadavia",
+          "point": [
+            -8.1427,
+            42.2876
+          ],
+          "zoom": 11,
+          "caption": "Its municipal ordinances of 1579 already named the growing areas, by parish.",
+          "cite": [
+            "ribeiro-pliego:p20"
+          ]
+        },
+        {
+          "label": "Avia valley",
+          "point": [
+            -8.1885,
+            42.3998
+          ],
+          "zoom": 10.5,
+          "caption": "Albilla do Avia is a native grape of the Avia valley.",
+          "cite": [
+            "ribeiro-pliego:p1"
+          ]
+        }
+      ]
+    }
+  ]
+}

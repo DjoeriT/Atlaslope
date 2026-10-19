@@ -13,8 +13,11 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, each for a place in the tree', () => {
-    expect(guides.map((g) => g.id).sort()).toEqual(['rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental']);
+  it('exist for Rioja and its three zones and the nine Green Spain places, each for a place in the tree', () => {
+    expect(guides.map((g) => g.id).sort()).toEqual([
+      'cangas', 'monterrei', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
+      'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras',
+    ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });
 

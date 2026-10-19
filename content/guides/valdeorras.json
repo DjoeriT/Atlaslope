@@ -1,0 +1,168 @@
+{
+  "id": "valdeorras",
+  "title": "Why Valdeorras tastes the way it does",
+  "minutes": 4,
+  "lede": {
+    "text": "A deep, bright valley of granite and slate along the river Sil, with five kinds of soil. The white grape Godello gives wines with a fresh natural acidity.",
+    "cite": [
+      "valdeorras-pliego:p11",
+      "valdeorras-pliego:p14"
+    ]
+  },
+  "label": {
+    "terms": [
+      {
+        "term": "Godello",
+        "text": "A white wine made only from Godello."
+      },
+      {
+        "term": "Mencía",
+        "text": "A red wine with at least 85% Mencía."
+      },
+      {
+        "term": "Variedades nobles",
+        "text": "A white or red wine with at least 85% of the preferred grape varieties."
+      },
+      {
+        "term": "Espumoso",
+        "text": "A sparkling wine; the white version has at least 85% Godello."
+      }
+    ],
+    "cite": [
+      "valdeorras-pliego:p5",
+      "valdeorras-pliego:p6",
+      "valdeorras-pliego:p9",
+      "valdeorras-pliego:p17"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "place",
+      "title": "A valley with a steep side",
+      "beat": "place",
+      "paras": [
+        "Valdeorras lies in the southwest of Ourense province. It is the natural gateway into Galicia.",
+        "A deep valley, fertile and bright, is shaped by the river Sil. Granite and slate dominate the landscape. It is a land of red and black earth. Chestnut, vine and olive grow there.",
+        "The Sil crosses the area from east to west. That makes an asymmetric valley. The left bank has steep slopes. The right bank is softer and rolling.",
+        "Other rivers cut slopes where vines grow, often on terraces. The whole zone lies between 300 m and 700 m.",
+        "The zone covers eight municipalities of Ourense."
+      ],
+      "cite": [
+        "valdeorras-pliego:p10",
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p13"
+      ],
+      "fly": [
+        {
+          "label": "Valdeorras",
+          "place": "valdeorras",
+          "caption": "A valley shaped by the Sil, between 300 m and 700 m.",
+          "cite": [
+            "valdeorras-pliego:p11",
+            "valdeorras-pliego:p13"
+          ]
+        },
+        {
+          "label": "The Sil",
+          "point": [
+            -6.9782,
+            42.4138
+          ],
+          "zoom": 10.5,
+          "caption": "The Sil crosses the area from east to west, with a steep left bank.",
+          "cite": [
+            "valdeorras-pliego:p11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Cold winters, warm summers",
+      "beat": "weather",
+      "paras": [
+        "The climate is Mediterranean-oceanic, with an Atlantic influence. Winters are cold and summers are warm. Spring and autumn are mild.",
+        "Temperatures run from lows of 8 °C to highs of 33 °C. The mean is 11 °C.",
+        "Rain is 850 to 1,000 mm a year. The Winkler heat sum is between 1,300 and 1,500, and the whole zone sits in Winkler zone I.",
+        "Dry wines of the first quality come from sites above 450 m.",
+        "Slopes that face south were always seen as right for vines. They give less fertility and good drainage. That means a more moderate yield and proper ripening."
+      ],
+      "cite": [
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p12",
+        "valdeorras-pliego:p13"
+      ],
+      "fly": [
+        {
+          "label": "Valdeorras",
+          "place": "valdeorras",
+          "caption": "850 to 1,000 mm of rain a year.",
+          "cite": [
+            "valdeorras-pliego:p12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ground",
+      "title": "Five soils",
+      "beat": "ground",
+      "paras": [
+        "There are five kinds of soil.",
+        "Slate soils sit on Ordovician and Silurian rock with bands of sandstone. They are shallow, 30 to 50 cm, and stony. The texture is mostly silty. Vineyards on these soils give wines with very subtle aromas and a marked mineral character. They are warm soils.",
+        "Limestone appears in the north, in O Barco and Rubiá. The clay-limestone soils open in winter to take in water and close in summer to hold it. They give wines with ageing potential that show the grape's character strongly.",
+        "Granite soils are in A Rúa, Petín and Larouco. They are loose and sandy loam. They give off heat by day and cool at night. The swing raises sugar and avoids big losses of acidity at night. The wines are more floral.",
+        "Clay-iron soils hold a lot of water and are cold. The best wines come from clay mixed with silica or silt.",
+        "Alluvial soils are either terraces 4 to 10 m above the Sil or valley plains. The terraces drain well and stay warm at night, so the wines have less acidity. The plains are rich in nutrients and give big yields, which lowers the wine's quality."
+      ],
+      "cite": [
+        "valdeorras-pliego:p11",
+        "valdeorras-pliego:p12"
+      ],
+      "fly": [
+        {
+          "label": "O Barco de Valdeorras",
+          "point": [
+            -6.9801,
+            42.4301
+          ],
+          "zoom": 11,
+          "caption": "Limestone outcrops appear in the north, here and in Rubiá.",
+          "cite": [
+            "valdeorras-pliego:p12"
+          ]
+        },
+        {
+          "label": "A Rúa",
+          "point": [
+            -7.1209,
+            42.4165
+          ],
+          "zoom": 11,
+          "caption": "Loose granite soils give more floral wines.",
+          "cite": [
+            "valdeorras-pliego:p12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "Godello and Mencía",
+      "beat": "rules",
+      "paras": [
+        "Only the listed grape varieties may be used. Eight whites and eleven reds are allowed. Seven whites and eight reds are called preferred.",
+        "Yields are capped at 15,000 kg per hectare. For preferred varieties the cap is 12,500 kg, or 90 hl of wine.",
+        "Among the whites, Godello stands out. It belongs to the zone. Its wines are pale yellow with green tints. They have clean, fruity primary aromas of medium intensity.",
+        "In the mouth they are well structured. Their natural acidity makes them fresh. The aftertaste is long.",
+        "Among the reds, Mencía stands out. The reds are cherry-red to purple, with intense red-fruit aromas and medium acidity.",
+        "Wineries use moderate ageing in quality oak. Mencía adds colour stability, acidity and ageing ability."
+      ],
+      "cite": [
+        "valdeorras-pliego:p10",
+        "valdeorras-pliego:p14",
+        "valdeorras-pliego:p15"
+      ]
+    }
+  ]
+}

@@ -123,8 +123,8 @@
   },
   "cangas-1": {
    "w": 1200,
-   "h": 900,
-   "blur": "UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoQAAwAAsBMJYwAAuZoCgAA/u182yF9mBC+4KE+6e+7yI2uJBlnssN/wnQOAA=="
+   "h": 800,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsAAsBMJQBOgCP/OdpkUAD+563MnU+lxTcrZk2rJQOccdH9CqUiMcfB/8g8NFWS03G1iE8q5PjjORdcurakFkcFAHkSAAA="
   },
   "cangas-2": {
    "w": 1200,
@@ -423,8 +423,8 @@
   },
   "monterrei-3": {
    "w": 1200,
-   "h": 798,
-   "blur": "UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAsAAsBMJZACdAEeg7PkQ55qAAD2rB3F6nSc6ByggZ/bCM6CJdJ8s0pEdrmIo/SHK1gH++T8T3CbvfY+mVQicLBBL+DRYSzB+d3H4UDUr/s4bxYy+smwMv3iFDiR6AA="
+   "h": 796,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAAsBMJYgCdAENX1DjiIAA/dXTZ2+C9okMy/tb0ai/r1ctZgfEeo6BaMDjP/uQFNrX1e2EEbsgJcwvVEAA"
   },
   "montilla-moriles-1": {
    "w": 1200,
@@ -528,13 +528,13 @@
   },
   "rias-baixas-2": {
    "w": 1200,
-   "h": 900,
-   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAwAAsBMJZQAAughciqOAAD+9nHf9Eko0w+MKTSdzeOzBmH99R7qIdOFIlsghRUSis8/Gz/Ylxw3jusAAA=="
+   "h": 800,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQAAsAAsBMJbACdAEf/21Zy/MJHAAA/vmDQn1mX8Xtv645g9Hp5PV81WPcnjVBhbFjCV0eXkoD7eDxPbwg+v/34uOAXQoAAAA="
   },
   "rias-baixas-3": {
    "w": 1200,
-   "h": 900,
-   "blur": "UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwAAsBMJZACdAEIWUoAgAD+z22ysGL5TicBbxYkeUbtZ9eLIxvBSVuFUJSNGdHFwf9Cm7Sbp0Fd2kxhk3/DvQTh0RhoyIgLcAAA"
+   "h": 800,
+   "blur": "UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoQAAsAAsBMJbACdACJ5XYYkwAA/kzB65X4BXvF3e9ndi8Cykg7rmgy/9yAbYRsX0NdJPkR4cWKzLzix/Bd8/AJcOIqzxrguwFo5GfUdBRpY72Fp9rze+Q3XcqOmnTUfY4AAA=="
   },
   "ribeira-sacra-1": {
    "w": 1200,
@@ -544,7 +544,7 @@
   "ribeira-sacra-2": {
    "w": 1200,
    "h": 800,
-   "blur": "UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAAsBMJZAC7ADplj5SxAAA/t21EJyirZTCOLM334HecQ5XUfeNpRoNfGMT8N1iZJWsR3N2HPgl22j787bpUwlrf8AA"
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAsAAsBMJQBdgCHuufH1HGC2AAD9tA7y4laR7qYz/904Vs3TSoHex5Ewgg7lzKImSgbSmHd6NPzm3Sg3lKvAAAA="
   },
   "ribeiro-1": {
    "w": 1200,
@@ -746,6 +746,16 @@
    "h": 900,
    "blur": "UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAwAAsBMJYgCdAEPgbfIUAD+xVp4UwyddfHzTnF4HwMDHPP64tANLggEsmt5IdFq9rQo1GuggDBewAA="
   },
+  "txakoli-alava-1": {
+   "w": 1200,
+   "h": 360,
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAUAAsBMJbACdAEOPB2+AAD8tPuBNr6lqkzzrIvvUjoWR+N9XhNDRBAkl8TrVR25PUMO4AA="
+  },
+  "txakoli-alava-2": {
+   "w": 800,
+   "h": 1200,
+   "blur": "UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoQABgAPtFWo0uoJKMhsAgBABoJYwDCgYuG3FHW/JxKR7EeYxRRcAD+8rl+cN1hrDcIgRT7M3+GPVxnfjd7hF2YKarr6M54Qkr2nL2zz0x30DFdsyo5Ekslx7lkVRU1fu97mhFf+klS6SUKDK9hml3ZzU+4Dz7HviaDi3bEe0MqSnRspbQCzvp4AIp+pKO+dyUkFp3+RQGCANRUklOzgAAA"
+  },
   "txakoli-bizkaia-1": {
    "w": 1200,
    "h": 753,
@@ -753,8 +763,8 @@
   },
   "txakoli-bizkaia-2": {
    "w": 1200,
-   "h": 550,
-   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAcAAsBMJQBOgCPQFTFlYAD+SiUngeeKWKl/BE1E8riBf7GuAcKKX9DJqFjcBN8tRwvtiieCSQHH8xjBFVhrdLWsFqknoPoMHeHEAAA="
+   "h": 600,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAsBMJbACdAEO9Zaf5AD9nVqhEuHyOiayqWidT3rWLWNHFZdDlm5CAOhV++LttS6/1bYq+TmQCwAAAA=="
   },
   "txakoli-getaria-1": {
    "w": 1200,
@@ -799,7 +809,7 @@
   "valdeorras-2": {
    "w": 1200,
    "h": 800,
-   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAAsBMJZQCdAEO/Hl/hYAA/tD/V4brQOlDFKebXkS0GHmq2MadSg/SC/pWDumOAfJQ3J4u3wo4AAA="
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAsAAsBMJQBOgCG/yx/tdaAAAPwjCaM7PTEQotZCsb1JfDI01TX57EOcM6vSrXAdZwJkcAA="
   },
   "valdepenas-1": {
    "w": 1200,
