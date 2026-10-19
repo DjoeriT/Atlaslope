@@ -27,3 +27,4 @@
 | Write | dehesa-penalba | Sonnet | 41,296 | 1.0 |
 | Check | valtiendas | Opus | 81,891 | 2.7 |
 | Check | valles-de-benavente | Opus | 85,437 | 2.8 |
+| Check | arribes | Opus | 84,497 | 2.9 |
