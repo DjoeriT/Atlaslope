@@ -1,83 +1,82 @@
 # Atlaslope: working rules
 
-Start with `README.md` (current state, layout, commands). Detail behind these rules: `docs/AGENT_ROLES.md`, section "Working detail" (read
-only that section). State and history: `docs/PROJECT_CONTEXT.md` (only the section you need). Atlaslope is a web app (static site, React, MapLibre).
-Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.md`, `Review/builder-brief.md`, the approved mocks in
-`Review/mock-*/`, then these rules. A gap goes to the owner; builders do not invent behaviour.
+Start with `docs/PROJECT.md` (what this is, state, decisions, costs, open questions, how to run a region and a release), then `README.md`
+(layout, commands). Detail behind these rules: `docs/AGENT_ROLES.md` section "Working detail" (read only that). History: `docs/handoffs/README.md`
+(index) and `docs/PROJECT_CONTEXT.md` (only the section you need). Atlaslope is a static web app (React, MapLibre) for Spain's wine places.
+Sources of truth, highest first: `docs/scope.md`, `docs/architecture-decisions.md`, `Review/builder-brief.md`, approved mocks in `Review/mock-*/`,
+then these rules. A gap goes to the owner; do not invent behaviour. Repo wins over any memory or chat.
 
 A **small slice** is a fix or tweak with no new screen, data or content. Everything else is a big slice.
 
-## Pace (owner cards 17 and 18 Oct 2026: $143 a day, 60% of it threads re-reading history; a 12-finding fix took 63 minutes before its PR)
-- The coordinator (project chat) starts a thread per ask and keeps memory; it never edits the repo. The thread doing a task is LeadBot for it.
-- One slice per thread, then close; no follow-ups in a finished thread. Past about 80K of context, write the handoff and continue in a
-  fresh thread, before building or merging, not after (a thread at 350K compacted just before a merge; owner OK 19 Oct 2026 after
-  five live threads restarted together at a usage reset). At most two working threads at a time. Aim under 300K tokens of spend for a
-  small slice; past that, say so and hand off.
-- First answer within 5 minutes: a rough result or first look, refined after. No silent measuring.
-- Never wait on your own tools. Test runs, CI logs, code searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet helper that
-  reports back in 10 to 20 lines, while the thread keeps working. Wait for CI through PR notifications, never a polling loop.
-- Read with `grep -n` and line ranges, never whole files or logs. Batch independent tool calls.
-- Batch content work runs from a fixed script with few-step helpers: a script packs each helper's inputs into one file, the helper
-  reads it once and writes once, and the thread gets one report at the end, with no status replies in between (owner 19 Oct 2026:
-  Andalucía's checkers re-read about 1.1M cached tokens each to write 16K; every helper step re-reads its whole context).
-- Budget guard (owner 19 Oct 2026, after Cataluña cost about 20M tokens against a 5-8M estimate, 8M of it one agent looping over
-  93 corrections): estimates come only from measured per-place numbers (guides: 1.7M a place, packs about 25K). A new or changed
-  route pilots one or two places first and scales only if the projection fits the budget. One helper per place with a fixed
-  number of steps; no agent loops over many items. A run past 1.5x its budget stops and reports instead of continuing
-  (`Tools/guides/usage.py --budget`, the output guard in `region.workflow.js`).
-- Design: round 1 shows the whole range, subtle to bold, so his feedback rounds refine instead of searching.
-- A review thread fixes its small findings itself in one PR and asks him only about taste; no separate fix thread.
-- Two slices that touch separate files may run as parallel threads; one writer per file. The first to go green merges first; the other
-  merges `main` in and lets CI rerun.
-- **Done** means: merged, ready-to-publish line sent (or published after his words) and live check green, handoff in `docs/handoffs/<date>-<topic>.md` (done, decided, open,
-  where), memory updated, thread resolved. An open question keeps it open.
-- Hosts: try directly first (the network was opened 18 Oct); only a refused host goes through a GitHub Actions run or a session on his Mac.
+## Owner and style of work
+- The owner (Djoeri) decides and does not code. Brutal honesty, plain words, answer first, progress in 2-3 sentences. Something failed: say
+  what, show the output, wait. He writes English or Dutch: answer in his language. He rewrites personal copy himself (About letter).
+- Impatient: a rough first look within 5 minutes, refined after. Show previews before a PR. Verify his "Done" claims. He often sees a stale
+  cached build: tell him to hard-reload (Cmd+Shift+R).
+- Full uptake: every point he raises is done in full or listed plainly as not done, with where it will be done. Apply an approved principle everywhere.
+- Decisions as short option lists, one recommended, batched up front. Reversible work starts on the recommended option at once; outward or
+  hard-to-undo work waits. Do not start big token work on an unanswered recommendation.
+- Vague UI asks ("map navigation looks whacky"): screenshot the candidates and ask in one line first (a guess cost a revert, 19 Oct).
+- Tag claims [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
 
-## Working agreements (owner; every session and agent)
-- **Outward actions only on his say-so, each time:** publishing, deploying, paid or networked services, anything outsiders see.
-  Standing exceptions inside work he said go to: push the thread's own `claude/...` branch, one PR per slice, merge on green CI, plus
-  ReviewBot where it runs. ReviewBot runs only on PRs with a new screen, new or changed user-facing copy, or a licence or legal question;
-  fixes, tweaks and docs merge on green CI alone (18 Oct 2026, owner asked "Do we need ReviewBot if we have CI?"; it stays where tests
-  can't look: PR #92's tap-to-reveal credit hid the CC attribution with CI green). Then one line asks him to say "publish release N";
-  only those words in the thread start the `publish` workflow, also for
-  a rollback (18 Oct 2026: the cloud safety check refused a thread starting publish without his words; he chose to say the words over tapping or a permission rule). A refused push means stop and tell him; never push `main`.
-  Never force-push, rewrite pushed history, push to someone else's branch, or move or delete a tag.
-- **Decisions** as tap-to-pick cards, batched up front, one recommended. Posting a card never ends the work: reversible work starts on the
-  recommended option in the same turn; outward or hard-to-undo work waits (18 Oct: a review thread sat 32 minutes on a card).
-- **New UI**: a rough first look goes to him early. A big slice's mock then gets a UX, UI and visual check against `Review/visual-style.md`
-  before the polished version, with the findings fixed, not listed; new screens and redesigns use a ReviewBot design run. A small slice:
-  LeadBot's own check, plus ReviewBot alongside CI only if it changes user-facing copy.
-- **Mockups are one page** (owner, 18 Oct 2026: "in 1 before and after HTML or with options"): every mock, before and after, or
-  set of options (A / B / C / D) is one HTML page with all of them on it, published as an Artifact with its link in the reply, never
-  separate files. A map mock whose tiles fail in the Artifact also goes to his Mac as that same one page, with its file:/// path.
-- **Talking to him:** plain words, answer first, progress in two or three sentences. Something failed: say what, show the output, wait.
-- **Tag claims** [V] verified, [O] owner said, [R] report or memory, [A] assumed. Re-run a number before relying on it.
-- **Never print keys or secrets.** Keys live in repo secrets or `.env.local` (check with `grep -c`); a value he needs goes to him only
-  through a session on his Mac, never in chat.
-- **Git is the record**: decisions, scope, plans, cards, mocks, reviews, handoffs. `main` is the only long-lived branch; `release-N` tags
-  mark what is live, so no "live on release-N" line is kept anywhere (it went stale twice). The repo wins over memory. Archive, never delete (`Review/archive/`).
-- **Data has a paper trail**: every file under `data/`, and every layer, photo or fact source, is in `data/SOURCES.md`; facts from official sources. WSG and WSET course structure is fine; never their text, maps or images.
-- Licence: code MIT; his writing all rights reserved (`NOTICE.md`); data keeps its own terms.
-- **Releases carry their own records**: the slice PR holds the handoff and tester note; no records PR after it (17 Oct: 6 records PRs in one day).
-  Push when the PR can stand on its own, not in bursts (CI cancels the older run); confirm the branch moved on GitHub before saying CI runs.
-- **Guide format**: any change to the guide format (sections, order, fields, source rules, checks) updates `docs/guides.md` in the same
-  PR (owner, 19 Oct 2026, after the format had lived only in a mock and a thread).
+## Token budget (owner 19 Oct 2026, after a 5h limit and weekly warning; audit: 485M tokens in 10 sessions, 97% re-reads)
+- Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 80K context,
+  before building or merging, not after. Aim under 300K spend for a small slice. Subagents are one-shot from a fixed script with packed inputs
+  and reply only with result, blocker or question (10-20 lines).
+- Proactive: before big work give a one-line token estimate and flag cheaper routes first. Above ~20M estimated tokens, wait for his word.
+- Always split every estimate and result into re-read vs new tokens (re-reads ~1/10 price on the API; plan weighting unknown [A]).
+- Overrun guards: estimates only from measured per-unit numbers (calls x ~100K context + work; count every step, a fresh session is not cheap).
+  Pilot 1-2 units first; one helper per unit with a fixed step count, no agent loops over many items; hard stop at 1.5x budget and report at
+  once (`Tools/guides/usage.py --budget`, output guard in `region.workflow.js`). Measured numbers: `docs/PROJECT.md`.
+- Few, big tool calls. Read with `grep -n` and line ranges, never whole files or logs. Batch independent calls. Never wait on your own tools:
+  tests, CI logs, searches, screenshots (`npm run shots`) and flake bisects go to a Sonnet subagent that reports in 10-20 lines.
+- Batch small asks into one session unless he says urgent. Past ~60K before a long wait, write the handoff first.
+
+## Working agreements
+- **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
+  your own `claude/...` branch, one PR per slice, merge on green CI. Never push `main`, force-push, rebase pushed history, push to someone
+  else's branch, or move or delete a tag. A refused push means stop and tell him.
+- **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
+  rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
+- **Git:** PR per slice on a `claude/` branch; merge `main` in, never rebase. The slice PR holds the handoff and tester note (no records
+  PR after it). Push when the PR can stand alone, not in bursts. `gh pr create` fails (GraphQL blocked): use `gh api` REST. Archive, never
+  delete (`Review/archive/`). `release-N` tags mark what is live; keep no "live on release-N" line anywhere. Backlog = GitHub Issues
+  (`DjoeriT/Atlaslope`, `#n` in commits; he sets priority).
+- **ReviewBot scope:** only PRs with a new screen, new or changed user-facing copy, or a licence/legal question. Fixes, tweaks and docs merge
+  on green CI alone (it stays where tests cannot look, e.g. a hidden CC credit).
+- **New UI:** rough first look early; a big slice's mock gets a UX/UI/visual check against `Review/visual-style.md` before polish, findings
+  fixed not listed. Design round 1 shows the whole range, subtle to bold, and must be designed, not CSS deletions.
+- **Mockups are ONE HTML page** (before/after or options A-D, recommendation marked), shared as an Artifact/link, never separate files. A
+  live-satellite map mock goes to his Mac as that one page with its file:/// path.
+- **Mock language:** NO drawn illustrations, icons, diagrams or fake geography. Richer = more real product and photos, same calm. Prefer
+  visuals over lines of text.
+- **Photos hard rule:** never force photos into fixed or square tiles (no `object-fit: cover`); each keeps its own aspect ratio, trim only
+  bystanders at edges, never cut a face, glass or bottle; check each tile against the original. Credits: no text on photos, no tooltips, one
+  always-visible "Photos: Name · licence · resized" line per set.
+- **Style:** NO dark mode; black band + champagne (#E9D8B4 family), white page, 6px corners, no pills. Copy: one idea per line, no
+  "X, Y and Z" lists. Users see "AtlaSlope"; code and URLs "atlaslope".
+- **Vocabulary:** "Study" not "Quiz" (code folder `src/quiz` stays). The guide = the whole place page; "Terroir" = one section; never "Terroir
+  guide". Keep "Green Spain". Home headline stays "Know the land behind the glass." See `docs/glossary.md`.
+- **Positioning (in every guide brief):** guides are a general, fun wine reference for anyone who loves wine, not exam-centric. "Why it
+  tastes the way it does" is the spine; only a small "Test me" link leads into Study.
+- **Data has a paper trail:** every file under `data/` and every layer, photo or fact source is in `data/SOURCES.md`; facts from official
+  sources. WSG and WSET course structure is fine, never their text, maps or images. Licence: code MIT; his writing all rights reserved
+  (`NOTICE.md`); data keeps its own terms.
+- **Never print keys or secrets** and never put his email or personal details in the repo, lookups or User-Agents. Keys live in repo
+  secrets or `.env.local` (check with `grep -c`).
+- **Guide format:** any change (sections, order, fields, source rules, checks) updates `docs/guides.md` and its Format log in the same PR.
 - Plans end with Context, Upside (measured), Risks, Effort. Never tune data or thresholds to make a test pass. A new rule names its incident.
+- **Done** means: merged, ready-to-publish line sent (or published after his words), live check green, handoff written, open questions listed.
 
-## Backlog
-GitHub Issues in `DjoeriT/Atlaslope`, one per piece of work, labels for kind, who acts next and priority (he sets priority). `#n` in commits.
-
-## Agents
-`builder`, `reviewer`, `analyst` types; his go on a plan covers the agents it names. Sonnet 5.5 by default, Opus for the tree model and
-Study engine. Builders and reviewers run in their own worktree, never the thread's checkout; builders never push.
-Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never open `data.js`, `maplibre-gl.js`, `data/*.geojson`, `*.tif`.
+## Models and agents
+Opus 5.5 for the main session and for the tree model and Study engine; Sonnet 5.5 for helpers, builders, checkers. Agent types `builder`,
+`reviewer`, `analyst` (`.claude/agents`); his go on a plan covers the agents it names. Builders and reviewers use their own worktree and
+never push. Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never open `data.js`, `maplibre-gl.js`,
+`data/*.geojson`, `*.tif`.
 
 ## Commands
-`npm test` (Vitest), `npm run build`, `npm run shots` (standard screenshots into `shots/`), `Tools/check.sh` (`quick` without UI tests
-and build, `ui` with Playwright UI tests). CI runs the checks and the UI tests in four parallel parts.
-Locally run only the specs your change touches, once; never the full UI suite, CI runs that (18 Oct: "Site visual fixes" spent 25 of 63
-minutes on local runs CI repeats). Don't rerun a passing check on unchanged code.
-**Flaky tests**: a test that fails then passes on the same code gets an issue and is made deterministic in its own slice, never skipped or left
-(17-18 Oct: 4 Study test flakes, each a 4.5-minute rerun, one a 15-minute hand bisect).
-UI tests use fixtures, no network; debug flags live in `src/debug.ts` and `check.sh` keeps them out of `dist/`. Playwright stays pinned to the container's Chromium.
-Releases: the `release` skill.
+`npm test` (Vitest), `npm run build`, `npm run shots`, `Tools/check.sh` (`quick` skips UI tests and build; `ui` adds Playwright). CI runs the
+UI tests in four parts: locally run only the specs your change touches, once; don't rerun a passing check on unchanged code.
+**Flaky tests** get an issue and are made deterministic in their own slice, never skipped. UI tests use fixtures, no network; debug flags are
+in `src/debug.ts` (kept out of `dist/`). Playwright stays pinned to the container's Chromium. Hosts: try directly first; a refused host goes
+through a GitHub Actions run or the owner's Mac. Regions: `Tools/guides/` (see `docs/PROJECT.md`).
