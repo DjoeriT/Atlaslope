@@ -1,0 +1,86 @@
+{
+ "id": "valtiendas",
+ "title": "Why Valtiendas tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Valtiendas sits on a plateau more than 800 m above sea level, where days and nights differ sharply in temperature. That swing keeps the acidity high, so the wines taste fresher and livelier than those of nearby areas.",
+  "cite": [
+   "valtiendas-pliego:p9",
+   "valtiendas-pliego:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "north-segovia",
+   "beat": "place",
+   "title": "The high north of Segovia",
+   "paras": [
+    "The vineyards lie in the north of Segovia province and cover 433.4 km². They belong to 16 municipalities, all in Segovia. Wine must be aged inside the same zone.",
+    "Vines here go back a long way. Traces of vineyards in northern Segovia date from the 12th century, and the strongest evidence is from the 15th century. In 1751 the Fuentidueña area had 710 hectares of vines, mostly for local drinking.",
+    "The area took off after the nearby Ribera del Duero grew in the early 1990s. New plantings, modern growing methods and new wineries followed. The wines were recognised as a Vino de Calidad in 2007."
+   ],
+   "cite": [
+    "valtiendas-pliego:p7",
+    "valtiendas-pliego:p12",
+    "valtiendas-pliego:p13"
+   ],
+   "fly": [
+    {
+     "label": "The Valtiendas vineyards",
+     "place": "valtiendas",
+     "caption": "A zone of 433.4 km² in the north of Segovia province.",
+     "cite": [
+      "valtiendas-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Long winters, big swings",
+   "paras": [
+    "The climate is Mediterranean with continental influences. The average altitude is above 800 m, so winters are long and harsh and summers are mild.",
+    "Temperatures swing widely between day and night, mostly between August and September. Sun is strong at this height, and winds keep the grapes healthy.",
+    "Rain is not plentiful, at 400 to 500 mm a year. The soils hold water well, which makes up for it.",
+    "Ripening is slow and steady. The grapes build up plenty of anthocyanins and tannins, which show in the colour and structure of the wine. Aroma compounds build up too, and the cool nights add acidity."
+   ],
+   "cite": [
+    "valtiendas-pliego:p9",
+    "valtiendas-pliego:p12"
+   ]
+  },
+  {
+   "id": "paramo",
+   "beat": "ground",
+   "title": "Clay and pebbles on the páramo",
+   "paras": [
+    "Most of the vineyard stands on the páramo, the high flat plateau. The soils there have a medium texture and a lot of clay. The clay holds water and nutrients such as potassium.",
+    "A true carpet of rounded stones and pebbles covers the ground. It helps drainage, helps the bunches ripen and forms a natural mulch. It also gives the wines a mineral aroma that sets them apart."
+   ],
+   "cite": [
+    "valtiendas-pliego:p9"
+   ]
+  },
+  {
+   "id": "vines",
+   "beat": "rules",
+   "title": "Tempranillo first, in small yields",
+   "paras": [
+    "Tempranillo, known locally as Tinta del País, leads. Reds and rosés both need at least 50% of it. Garnacha Tinta, Cabernet Sauvignon, Merlot and Syrah are also allowed. Rosé may add the white Albillo Mayor.",
+    "Albillo is more productive than the reds and is picked for its higher acidity. It gives the rosés freshness.",
+    "Red yields are capped at 7,000 kg per hectare, and growers get about that from trellised vines. Albillo may reach 10,000 kg. Vines must be planted at 2,000 to 4,000 per hectare.",
+    "The reds are intense in colour and well structured, which suits ageing. They can be sold as Crianza, Reserva or Gran Reserva. Rosés show fruit such as raspberry and blackberry, with floral notes."
+   ],
+   "cite": [
+    "valtiendas-pliego:p5",
+    "valtiendas-pliego:p6",
+    "valtiendas-pliego:p7",
+    "valtiendas-pliego:p8",
+    "valtiendas-pliego:p10",
+    "valtiendas-pliego:p11",
+    "valtiendas-pliego:p16"
+   ]
+  }
+ ]
+}
