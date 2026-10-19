@@ -11,6 +11,7 @@ import { mkdirSync } from 'node:fs';
 // lng,lat,zoom of the map's centre (the frame is its top 812 of 900 - bar px); a new region adds its line; a new region adds its line.
 const VIEWS = {
   cataluna: '1.45,41.62,7.45',
+  baleares: '2.98,39.60,8.9',
 };
 
 const [base, ...regions] = process.argv.slice(2);
