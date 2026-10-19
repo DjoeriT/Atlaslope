@@ -20,7 +20,8 @@ A general, fun wine reference for anyone who loves wine. It is not exam prep: ne
   the source says nothing about it. Each has a `title` in our own words for this place ("A plateau above the Duero"), `paras`
   (short paragraphs), `cite` (every page the paragraphs use) and optional `fly`.
 - `label`: only bottle terms the pliego itself defines (Roble, Crianza, Reserva, Dorado, Espumoso...), each one sentence with its
-  rule, plus `cite`. Leave it out if there are none.
+  rule, plus `cite`. Leave it out if there are none. A famous style (the fact sheet's `famous.styles`, or a style the rules beat
+  already describes) stays in the rules beat and is not repeated in `label` (owner, 19 Oct 2026, "New guide page shape").
 - No `say`, no `more`: they need other sources.
 
 ## Copy rules
