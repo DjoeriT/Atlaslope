@@ -8,5 +8,6 @@ rules and every child turn woke its parent for a full re-read of its history. Th
 
 **State:** pilot, batch 1 and cleanup sessions archived. Release 50 (Meseta, 12 of 25 guides) is tagged on 06326d1.
 
-**Open:** Meseta batch 2 (13 places), to run from the main thread with `Tools/guides/headless.py`. `Review/release-49-what-to-test.md`
-still to move to `Review/archive/` (batch 1 left it for the next slice).
+**Open:** Meseta batch 2 (13 places), to run from the main thread with `Tools/guides/headless.py`.
+
+**Also:** `Review/release-49-what-to-test.md` moved to `Review/archive/`.
