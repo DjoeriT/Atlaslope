@@ -1,0 +1,81 @@
+{
+ "id": "prado-de-irache",
+ "title": "Why Prado de Irache tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Prado de Irache lies in a Mediterranean climate, yet the Atlantic reaches it strongly enough to set its wine apart from its neighbours. That cooler, damper weather, together with loose ground, explains the acidity that marks its red.",
+  "cite": [
+   "prado-de-irache-doc2:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One estate on the Camino de Santiago",
+   "paras": [
+    "Prado de Irache is a Vino de Pago, a protected name that belongs to a single estate rather than a wide region. Its vineyards lie in the municipality of Ayegui, in the Tierra Estella district of Navarra.",
+    "The Camino de Santiago, the pilgrim road to Santiago de Compostela, marks its edges. On the south the estate meets the Camino. On the west the Camino runs side by side with the Cañada Real de Imas, an old drove road for moving flocks.",
+    "The vines sit in a relatively closed valley."
+   ],
+   "cite": [
+    "prado-de-irache-doc2:p5",
+    "prado-de-irache-doc2:p6"
+   ],
+   "fly": [
+    {
+     "label": "Prado de Irache",
+     "caption": "The estate's vineyards in Ayegui, in Tierra Estella.",
+     "cite": [
+      "prado-de-irache-doc2:p5"
+     ],
+     "place": "prado-de-irache"
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mediterranean, with a strong Atlantic pull",
+   "paras": [
+    "On paper the climate here is Mediterranean. Because of where the estate lies, though, Atlantic influence reaches it strongly.",
+    "The Atlantic is one force. Altitude and latitude add to it. So does that relatively closed valley.",
+    "Together they move the weather, to some degree, away from the typical Mediterranean pattern. The air holds more humidity. Temperatures are cooler and there is more rain. The swing between day and night temperatures is sharper."
+   ],
+   "cite": [
+    "prado-de-irache-doc2:p6"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Loose ground of modest fertility",
+   "paras": [
+    "The soils are loose. Their fertility runs from medium to low.",
+    "They contain carbonates. They hold little organic matter."
+   ],
+   "cite": [
+    "prado-de-irache-doc2:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "One wine: a dry red",
+   "paras": [
+    "Only one wine carries the name, and it is a dry red. Young bottles and bottles that have seen wood are both made.",
+    "Six grape varieties go into it. Tempranillo and Garnacha Tinta are two of them. Graciano and Mazuelo are two more. Cabernet Sauvignon and Merlot complete the six.",
+    "The climate and soils of the estate's plots let all six develop fully. They are well adapted to the area.",
+    "The red ferments wholly or partly on the skins of the red grapes. Taking the stems off first is optional. Continuous presses, which squeeze the grapes without a break, are not allowed.",
+    "Ageing can never be counted from before 1 October of the harvest year.",
+    "Every bottle shows the words vino de pago Prado de Irache plainly on its label."
+   ],
+   "cite": [
+    "prado-de-irache-doc2:p3",
+    "prado-de-irache-doc2:p4",
+    "prado-de-irache-doc2:p5",
+    "prado-de-irache-doc2:p6"
+   ]
+  }
+ ]
+}

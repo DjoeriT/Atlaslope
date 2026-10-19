@@ -13,13 +13,15 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
-      'abadia-retuerta', 'alella', 'arlanza', 'arribes', 'bierzo', 'binissalem', 'cangas', 'catalunya', 'cava', 'cebreros', 'cigales',
-      'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dehesa-penalba', 'emporda', 'granada', 'jerez', 'lebrija', 'leon', 'malaga', 'manzanilla', 'monterrei', 'montilla-moriles', 'montsant', 'penedes', 'pla-de-bages', 'pla-i-llevant', 'priorat', 'rias-baixas',
+      'abadia-retuerta', 'alella', 'arinzano', 'arlanza', 'arribes', 'ayles', 'bierzo', 'binissalem', 'bolandin', 'calatayud', 'campo-de-borja',
+      'cangas', 'carinena', 'catalunya', 'cava', 'cebreros', 'cigales',
+      'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dehesa-penalba', 'emporda', 'granada', 'jerez', 'lebrija', 'leon', 'malaga', 'manzanilla', 'monterrei', 'montilla-moriles', 'montsant',
+      'navarra', 'otazu', 'penedes', 'pla-de-bages', 'pla-i-llevant', 'prado-de-irache', 'priorat', 'rias-baixas',
       'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rueda',
-      'sierra-de-salamanca', 'sierras-de-malaga', 'tarragona', 'terra-alta', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
-      'txakoli-getaria', 'uruena', 'valdeorras', 'valles-de-benavente', 'valtiendas',
+      'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tarragona', 'terra-alta', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
+      'txakoli-getaria', 'urbezo', 'uruena', 'valdeorras', 'valles-de-benavente', 'valtiendas',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

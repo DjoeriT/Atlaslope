@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "navarra-pliego": "Review/sources/fetched/pliego-PDO-ES-A0127-navarra.txt",
+    "somontano-pliego": "Review/sources/fetched/pliego-PDO-ES-A0534-somontano.txt",
+    "campo-de-borja-pliego": "Review/sources/fetched/pliego-PDO-ES-A0180-campo-de-borja.txt",
+    "carinena-pliego": "Review/sources/fetched/pliego-PDO-ES-A0043-carinena.txt",
+    "calatayud-pliego": "Review/sources/fetched/pliego-PDO-ES-A0247-calatayud.txt",
+    "ayles-pliego": "Review/sources/fetched/pliego-PDO-ES-A1522-ayles.txt",
+    "urbezo-doc": "Review/sources/fetched/pliego-PDO-ES-02585-urbezo.txt",
+    "otazu-doc2": "Review/sources/fetched/oj-PDO-ES-A0184-C-2026-3580-otazu.txt",
+    "prado-de-irache-doc2": "Review/sources/fetched/oj-PDO-ES-A0182-C-2026-747-prado-de-irache.txt",
+    "arinzano-doc3": "Review/sources/fetched/oj-PDO-ES-A0183-C-2026-4824-arinzano.txt",
+    "bolandin-doc2": "Review/sources/fetched/oj-PDO-ES-N1876-C-2026-713-bolandin.txt",
+    "navarra-doc2": "Review/sources/fetched/oj-PDO-ES-A0127-C-2025-297-navarra.txt",
+    "campo-de-borja-doc2": "Review/sources/fetched/oj-PDO-ES-A0180-C-2025-1558-campo-de-borja.txt",
+    "carinena-doc2": "Review/sources/fetched/oj-PDO-ES-A0043-C-2025-6770-carinena.txt",
+    "calatayud-doc2": "Review/sources/fetched/oj-PDO-ES-A0247-C-2022-179-calatayud.txt",
+    "ayles-doc2": "Review/sources/fetched/oj-PDO-ES-A1522-C-2026-1818-ayles.txt",
+    "urbezo-doc2": "Review/sources/fetched/oj-PDO-ES-02585-C-2024-1738-urbezo.txt",
+    "somontano-doc": "Review/sources/fetched/att-PDO-ES-A0534-29230.txt",
+    "otazu-doc": "Review/sources/fetched/att-PDO-ES-A0184-27356.txt",
+    "prado-de-irache-doc": "Review/sources/fetched/att-PDO-ES-A0182-27380.txt"
+  }
+}
