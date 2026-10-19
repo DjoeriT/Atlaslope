@@ -31,6 +31,16 @@ Sample helper 0.2M (output-side count). Coordinator warned; owner told.
   Fix in this PR: `pack.py sheet` packs only the cited pliego pages and the workflow tells the sheet helper two steps, no tests.
   Measure it at the next region's pilot.
 
+## Next (second thread stopped here at ~85K context, 11:35Z)
+1. CI on PR #115: ui (3/4) failed because Cava now has a label section; `tests/ui/place-page.spec.ts:88` expectation updated (content
+   changed, not tuned). Watch the rerun.
+2. Copy review `Review/reviews/2026-10-19-cataluna-guides-copy-review.md`: 6 should-fix (glosses, lists, hype, source talk, repeats,
+   two unclear sentences). Fix in this PR: one Sonnet helper per guide with the guide, the review lines for it and its pliego pages
+   packed in (few steps), facts unchanged; Opus spot check of the changed sentences only. Estimate from the review's size [A]:
+   about 0.1-0.2M per guide, 1.5-2.5M total; pilot 2 guides first and measure.
+3. Merge after tag `release-42` (PR #114), merge `main` in, ask "publish release 43".
+4. Memory: atlaslope-guides.md Cataluña line (sheet step was 3.9M of 8.5M; pack.py sheet is the fix); MEMORY.md state.
+
 ## Open (as of the first thread; 1 and the sheet notes are done)
 1. Owner card "Re-check the other 9 Cataluña guides" (recommended: all 9, 4-6M). On "all 9": run the workflow with
    `recheck: true, full: true` and the 9 places other than priorat, penedes, cava. Then apply the two sheet notes above.
