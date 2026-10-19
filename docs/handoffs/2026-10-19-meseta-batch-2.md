@@ -48,3 +48,6 @@ Projection for the last 5 [A]: 5 x 0.56M = ~2.8M helpers, plus the batch 3 sessi
   all places; C a filter box on the page. Owner picked A [O, 19 Oct].
   - Also [O]: each region row shows a cut-off number of places next to its map tile, then a link on to that region's page
     (`src/pages/RegionPage.tsx` exists). The mock shows the cut-off; its size (e.g. 4 vs 6 places) is for the owner to pick from it.
+  - Also [O, 19 Oct]: the region tiles on the Guides page become home-hero style: an app screenshot of the region with the app's own
+    place flags on it (like `public/home/hero.webp`), not a plain satellite crop (`public/guides/<region>.webp`, `region_tile.mjs`).
+    All 10 tiles. One mock round covers all three (table of contents, cut-off, flagged tiles).
