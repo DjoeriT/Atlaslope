@@ -1,0 +1,89 @@
+{
+ "id": "binissalem",
+ "title": "Why Binissalem tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "On Mallorca, climate and ground, with the local grapes, favour full ripening. Binissalem makes still and sparkling wine from that fruit.",
+  "cite": [
+   "binissalem-doc-2026:p3",
+   "binissalem-doc-2026:p9",
+   "binissalem-doc-2026:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Five municipalities on Mallorca",
+   "paras": [
+    "The zone covers 5 municipalities on the island of Mallorca: Binissalem, Consell, Santa María del Camí, Sencelles and Santa Eugenia. Binissalem, one of them, shares its name with the wine. The name of each municipality can appear on a label as a smaller geographic unit, if certain requirements are met.",
+    "Every bottle must be filled inside this zone, in cellars on the bottlers' register. Wine moved in bulk can lose quality, and here the bottling is watched by people who know this wine."
+   ],
+   "cite": [
+    "binissalem-doc-2026:p1",
+    "binissalem-doc-2026:p9",
+    "binissalem-doc-2026:p10",
+    "binissalem-doc-2026:p11"
+   ],
+   "fly": [
+    {
+     "label": "The Binissalem zone",
+     "place": "binissalem",
+     "caption": "The zone covers 5 municipalities on Mallorca, Binissalem among them.",
+     "cite": [
+      "binissalem-doc-2026:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Ripe all the way",
+   "paras": [
+    "Climate and ground, along with the local grapes, are decisive for the wines' character and quality. They favour full ripening, with more sugar. They also favour a fuller build-up of the compounds that set quality, from acids to aroma compounds and phenolics.",
+    "This allows fruity, structured and lasting reds. Rosados carry aroma and persistence. Whites are fresh, with intense smell and taste."
+   ],
+   "cite": [
+    "binissalem-doc-2026:p10"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Local grapes lead",
+   "paras": [
+    "Nineteen grape varieties are allowed. Among them are Manto Negro and Moll, also called Prensal. Moscatel de Alejandría and Moscatel de Grano Menudo, Callet, Parellada and Macabeo are on the list too, along with Cabernet Sauvignon, Merlot and Syrah. Three red varieties joined the list in 2026: Giró Negre, Esperó de Gall and Fogoneu.",
+    "A red must be at least 30% Manto Negro and no more than 30% Gorgollassa. A white must be at least 50% Moll or the Moscatel varieties. A rosado or a sparkling rosado may hold no more than 30% Gorgollassa.",
+    "The zone makes red, rosado and white wine, and sparkling white and rosé. A white sparkling wine must be at least 50% Moll, with no Moscatel. Sparkling whites are fresh, fine and lively, with intensity. Sparkling rosés are aromatic, fine and persistent.",
+    "Each still colour can also be made sweeter, with more than 12 g/l of residual sugar. Reds then usually show aromas of ripe, raisined or candied fruit. Rosés and whites usually show ripe fruit. All of them have a good balance between acid and sweet. Still wines aged in barrel show aromas of wood or spice."
+   ],
+   "cite": [
+    "binissalem-doc-2026:p1",
+    "binissalem-doc-2026:p2",
+    "binissalem-doc-2026:p3",
+    "binissalem-doc-2026:p4",
+    "binissalem-doc-2026:p5",
+    "binissalem-doc-2026:p6",
+    "binissalem-doc-2026:p7",
+    "binissalem-doc-2026:p8",
+    "binissalem-doc-2026:p9",
+    "binissalem-doc-2026:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vinyet",
+    "text": "A label mention for wines with lower sulphur limits, made from grapes with a lower yield per hectare: 6,750 kg instead of 9,000 kg for most varieties, and 7,500 kg instead of 10,000 kg for Parellada."
+   }
+  ],
+  "cite": [
+   "binissalem-doc-2026:p2",
+   "binissalem-doc-2026:p4",
+   "binissalem-doc-2026:p8",
+   "binissalem-doc-2026:p9"
+  ]
+ }
+}

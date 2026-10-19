@@ -1,0 +1,76 @@
+{
+ "id": "pla-i-llevant",
+ "title": "Why Pla i Llevant tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "On the island of Mallorca the vines grow practically at sea level, and the Embat wind brings them freshness, humidity and salt. High sunshine brings concentrated aromas and high alcohol, and an integrated acidity gives the wines their structure and vigour.",
+  "cite": [
+   "pla-i-llevant-doc-2026:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "island",
+   "beat": "place",
+   "title": "Island vines near sea level",
+   "paras": [
+    "The vineyards lie on the island of Mallorca, in 19 municipalities, among them Felanitx and Manacor. The vines sit practically at sea level. Only land that the Consejo Regulador, the body that runs the DO, has rated fit for the listed grape varieties counts."
+   ],
+   "cite": [
+    "pla-i-llevant-doc-2026:p7"
+   ],
+   "fly": [
+    {
+     "label": "Pla i Llevant, Mallorca",
+     "place": "pla-i-llevant",
+     "caption": "Island vineyards, practically at sea level, across 19 municipalities of Mallorca.",
+     "cite": [
+      "pla-i-llevant-doc-2026:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "embat",
+   "beat": "weather",
+   "title": "A salty wind and a lot of sun",
+   "paras": [
+    "The Embat wind brings freshness, humidity and salt. It shapes how the vines are grown. Growers use green pruning to leave the fruit exposed to the air, and the wind adds a significant amount of salts.",
+    "The high sunshine favours phenolic compounds and brings a great concentration of aromas and a high alcohol level. Reds have medium-high colour. Whites stay light in tone."
+   ],
+   "cite": [
+    "pla-i-llevant-doc-2026:p7"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Limy soils for aroma",
+   "paras": [
+    "The soils are limy (calizos). They boost the presence of aromatic compounds in the wine."
+   ],
+   "cite": [
+    "pla-i-llevant-doc-2026:p7"
+   ]
+  },
+  {
+   "id": "styles",
+   "beat": "rules",
+   "title": "From fresh whites to sparkling",
+   "paras": [
+    "Nineteen grape varieties are allowed. The list runs from Callet and Manto Negro to Cabernet Sauvignon and Chardonnay. Yields are capped at 11,000 kg of grapes per hectare, or 77 hl per hectare.",
+    "Liqueur wines need at least 15% alcohol. The whites smell of flowers and fruit in syrup. The reds smell of jams, raisins and nuts.",
+    "Sparkling wines have tiny bubbles that form long chains, and aromas of ageing on the lees. Their alcohol is at least 11%. Vino de aguja is the lightly sparkling style, fresh and fruity with aromas from the second fermentation, and needs at least 10% alcohol. Bottling must happen inside the production zone."
+   ],
+   "cite": [
+    "pla-i-llevant-doc-2026:p2",
+    "pla-i-llevant-doc-2026:p3",
+    "pla-i-llevant-doc-2026:p4",
+    "pla-i-llevant-doc-2026:p5",
+    "pla-i-llevant-doc-2026:p6",
+    "pla-i-llevant-doc-2026:p7",
+    "pla-i-llevant-doc-2026:p9"
+   ]
+  }
+ ]
+}
