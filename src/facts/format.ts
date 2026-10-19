@@ -40,6 +40,7 @@ export interface SourceRef {
 export function shortTitle(title: string): string {
   if (/^Pliego\b/.test(title)) return t.shortSource.pliego;
   if (/^Documento único\b/.test(title)) return t.shortSource.singleDocument;
+  if (/^Modificación normal\b/.test(title)) return t.shortSource.amendment;
   if (/^Wikipedia\b/.test(title)) return t.shortSource.wikipedia;
   if (/^Measured inside\b/.test(title)) return t.shortSource.measured;
   if (/^Köppen/.test(title)) return t.shortSource.koppen;

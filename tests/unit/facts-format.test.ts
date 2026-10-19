@@ -36,6 +36,7 @@ describe('fact formatting', () => {
   it('gives each kind of source a short tag', () => {
     expect(shortTitle('Pliego de condiciones DOCa Rioja (Consejo Regulador copy, amendments to AM10)')).toBe('Pliego');
     expect(shortTitle('Documento único PDO-ES-A0975 (EU single document, Abona)')).toBe('EU single document');
+    expect(shortTitle('Modificación normal PDO-ES-N1876-AM01 (EU Official Journal C/2026/713, Bolandin)')).toBe('EU amendment');
     expect(shortTitle('Wikipedia (es), «Abona», revision 1')).toBe('Wikipedia');
     expect(shortTitle('Köppen-Geiger: Beck et al. 2023, CC BY 4.0, 1991–2020')).toBe('Köppen-Geiger');
     expect(shortTitle('MAPA, list of protected wine names')).toBe('MAPA list');

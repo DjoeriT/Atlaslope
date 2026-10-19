@@ -2,6 +2,214 @@
  "region": "ebro",
  "sheets": [
   {
+   "id": "otazu",
+   "why": {
+    "text": "The Atlantic influence and the valley-floor site lengthen the growing cycle, so acidity and colour stay in balance.",
+    "cite": [
+     "otazu-doc:p3",
+     "otazu-doc2"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Merlot",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "otazu-doc2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry reds and whites. Whites are young or barrel-fermented; reds young or barrel-aged.",
+    "cite": [
+     "otazu-doc2"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean with strong Atlantic influence, in a valley floor between the Sierra de Sarbil and the Sierra del Perdón.",
+    "cite": [
+     "otazu-doc:p3",
+     "otazu-doc2"
+    ]
+   },
+   "soil": {
+    "text": "Deep, stony loam, high in carbonates with a basic pH. Low in organic matter and natural nutrients.",
+    "cite": [
+     "otazu-doc:p3",
+     "otazu-doc2"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: cherry red, violet when young, garnet to tile when barrel-aged; red and black fruit with some spice; fresh, silky. Whites: green-yellow to straw or gold; white fruit or citrus; ample and balanced.",
+    "cite": [
+     "otazu-doc2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino blanco joven",
+      "text": "Green-yellow to straw, with white fruit or citrus; ample and fruity on the palate."
+     },
+     {
+      "name": "Vino blanco fermentado en barrica",
+      "text": "Yellow to golden, with wood notes; medium-high body, round and complex."
+     },
+     {
+      "name": "Vinos tintos jóvenes",
+      "text": "Cherry red with violet hints; fresh red and black fruit; silky."
+     },
+     {
+      "name": "Vinos tintos con envejecimiento en barrica",
+      "text": "Cherry red with garnet glints; a fruit-led nose with wood; medium-high body."
+     }
+    ],
+    "cite": [
+     "otazu-doc2"
+    ]
+   }
+  },
+  {
+   "id": "prado-de-irache",
+   "why": {
+    "text": "A cold, dry north wind and a big day-night swing late in the cycle give aromatic reds with good acidity and deep colour.",
+    "cite": [
+     "prado-de-irache-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Tempranillo (Cencibel, Tinto de Toro)",
+     "Merlot",
+     "Garnacha Tinta",
+     "Graciano",
+     "Mazuela (Cariñena)"
+    ],
+    "othersCite": [
+     "prado-de-irache-doc:p3",
+     "prado-de-irache-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry reds, young and aged.",
+    "cite": [
+     "prado-de-irache-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "About 600 mm of rain and about 2,200 hours of sun a year. Cold, dry north wind; big day-night temperature swing late in the cycle.",
+    "cite": [
+     "prado-de-irache-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "Loose and permeable; stony and medium-deep. Low in organic matter, high in carbonates. Loam to sandy clay loam.",
+    "cite": [
+     "prado-de-irache-doc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Young: bright, deep colour, purple-red with violet tones to cherry. Nose fruity and intense, with complexity. Palate structured and fresh; clean, lasting finish. Aged: garnet red to tile-tinged ruby.",
+    "cite": [
+     "prado-de-irache-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "arinzano",
+   "why": {
+    "text": "Dry, hot summers and a big day-night temperature swing ripen the grapes slowly and well.",
+    "cite": [
+     "arinzano-doc:p4",
+     "arinzano-doc2"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Merlot",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "arinzano-doc2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Reds, some single-variety, and Chardonnay whites; both young or aged.",
+    "cite": [
+     "arinzano-doc2"
+    ]
+   },
+   "climate": {
+    "text": "Dry, hot summers, with a large temperature swing between night and day at summer's end. Atlantic orientation gives a long growing season.",
+    "cite": [
+     "arinzano-doc:p4",
+     "arinzano-doc2"
+    ]
+   },
+   "soil": {
+    "text": "Stony, medium in carbonates, low in clay; loam to sandy clay loam texture.",
+    "cite": [
+     "arinzano-doc:p4",
+     "arinzano-doc2"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: violet-red to ruby, tile when aged; red or black fruit, then spice or toast; balanced, with good tannins. Whites: pale to golden yellow; fruit or flowers, some citrus; ample, toasty after ageing.",
+    "cite": [
+     "arinzano-doc2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Varietal Chardonnay",
+      "text": "Pale to golden yellow; fruit or flowers, some citrus; balanced and ample."
+     },
+     {
+      "name": "Varietal Merlot",
+      "text": "Garnet to tile red; red and black fruit, sometimes balsamic; medium-high body."
+     },
+     {
+      "name": "Varietal Cabernet Sauvignon",
+      "text": "Violet-red to ruby; fruity or spicy, with liquorice or mineral notes possible."
+     },
+     {
+      "name": "Varietal Tempranillo",
+      "text": "Violet to tile red; red or black fruit; spicy and toasty after ageing."
+     }
+    ],
+    "cite": [
+     "arinzano-doc2"
+    ]
+   }
+  },
+  {
    "id": "navarra",
    "why": {
     "text": "Limestone soils sit under a Mediterranean climate with a cold, drying wind. The wines are fresh, with medium-high acidity and a mineral touch.",
@@ -350,6 +558,70 @@
    }
   },
   {
+   "id": "ayles",
+   "why": {
+    "text": "Calcareous soils low in organic matter and nitrogen give well-coloured, aromatic wines with plenty of alcohol and correct acidity.",
+    "cite": [
+     "ayles-doc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Merlot",
+     "Garnacha Tinta",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "ayles-doc:p4"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "rose",
+     "red"
+    ],
+    "text": "Rosado; young and barrel-aged reds; crianza red; the red «Tres de 3000».",
+    "cite": [
+     "ayles-doc:p1",
+     "ayles-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Rich in calcium carbonate and balanced in lime. Low in organic matter and nitrogen; under 45% clay.",
+    "cite": [
+     "ayles-doc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Rosé: pink to violet. Young and oaked reds: red to violet; fruit and flower aromas, with red fruit when oaked; long, round finish. Crianza: toast and smoke. Tres de 3000: deep violet-red; mineral.",
+    "cite": [
+     "ayles-doc:p1",
+     "ayles-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crianza",
+      "text": "Red fruit with spice. Mineral notes. Toast and smoke from ageing. Elegant, subtle finish."
+     },
+     {
+      "name": "Tres de 3000",
+      "text": "Very deep colour; new-oak toast and smoke; mineral; very powerful with a very long finish."
+     }
+    ],
+    "cite": [
+     "ayles-doc:p2"
+    ]
+   }
+  },
+  {
    "id": "carinena",
    "why": {
     "text": "Little rain and extreme temperatures, with the cierzo wind, make a harsh setting. Only hardy vineyards have kept going.",
@@ -539,6 +811,88 @@
    "producers": {
     "items": [],
     "cite": []
+   }
+  },
+  {
+   "id": "bolandin",
+   "why": {
+    "text": "A south-facing slope at the hot, dry southern end of Navarra gives reds with deep colour and high polyphenols.",
+    "cite": [
+     "bolandin-doc",
+     "bolandin-doc2"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet Sauvignon",
+     "Chardonnay",
+     "Merlot",
+     "Moscatel de Grano Menudo",
+     "Sauvignon Blanc",
+     "Syrah",
+     "Tempranillo"
+    ],
+    "othersCite": [
+     "bolandin-doc2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sweet"
+    ],
+    "text": "Reds and whites, young or aged. Also sweet whites from overripe grapes, with at least 60 g/l of sugar.",
+    "cite": [
+     "bolandin-doc",
+     "bolandin-doc2"
+    ]
+   },
+   "climate": {
+    "text": "Extreme continental. Summer highs over 35 °C; winter lows -6 to -8 °C. Rain 354 to 379 mm. Dry cierzo wind on 70% of days.",
+    "cite": [
+     "bolandin-doc"
+    ]
+   },
+   "soil": {
+    "text": "Red clays on the plateau top. Most vines grow on a gentle 5% slope of gravel and sand with clay.",
+    "cite": [
+     "bolandin-doc"
+    ]
+   },
+   "altitude": {
+    "text": "Between 324 and 369 m; the Navarra PDO is at 400 to 500 m.",
+    "cite": [
+     "bolandin-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: violet to tile red; black and red fruit; spice and roast notes when aged; full body. Whites: straw to gold; tropical fruit; fresh. Overripe whites: ripe fruit such as honey, quince, fig; balanced.",
+    "cite": [
+     "bolandin-doc2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vinos tintos",
+      "text": "Full-bodied reds of medium-high colour; young or aged, with barrel notes."
+     },
+     {
+      "name": "Vinos blancos",
+      "text": "Fresh, fruity whites with tropical fruit; golden when barrel-fermented or aged."
+     },
+     {
+      "name": "Vinos blancos de uva sobremadurada",
+      "text": "Deep-gold whites from overripe grapes; honey, quince, fig; sugars 60 g/l or more."
+     }
+    ],
+    "cite": [
+     "bolandin-doc",
+     "bolandin-doc2"
+    ]
    }
   }
  ]
