@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-20-credit-cropped-esri-terms](2026-10-20-credit-cropped-esri-terms.md): "cropped and resized" credit, Esri terms for saved screenshots (20 Oct 2026)
 - [2026-10-19-guides-square-photos](2026-10-19-guides-square-photos.md): Guides page square photo cards, each crop checked (19 Oct 2026)
 - [2026-10-19-guides-page-build](2026-10-19-guides-page-build.md): Guides page build, jump row, 6 per region, 10 new region tiles (19 Oct 2026)
 - [2026-10-19-meseta-unsure-facts](2026-10-19-meseta-unsure-facts.md): Meseta unsure fact-sheet edits settled, five applied, Uclés kept (19 Oct 2026)

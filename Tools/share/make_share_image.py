@@ -37,7 +37,7 @@ h1 {{ font: 400 70px/1 Newsreader, serif; letter-spacing: -2px; color: {INK}; ma
 .credit {{ position: absolute; right: 14px; bottom: 12px; font: 400 13px/1 'IBM Plex Sans', sans-serif; color: #fff;
   background: rgba(20,20,20,.75); padding: 6px 9px; border-radius: 4px; }}
 </style></head><body>
-<div class="map"><div class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</div></div>
+<div class="map"><div class="credit">Imagery: Esri, Vantor · Spain: PNOA © IGN</div></div>
 <div class="text"><div class="brand">{logo}AtlaSlope</div><h1>Know the land behind the glass.</h1>
 <div class="tag">The wine study atlas for WSET and<br>Wine Scholar students</div></div>
 </body></html>"""

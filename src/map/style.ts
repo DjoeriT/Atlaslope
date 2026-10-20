@@ -7,7 +7,7 @@ import { GLYPHS_URL } from './mapNames';
 // The patterns .github/workflows/live-map-check.yml matches on.
 export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
 export const TERRAIN_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
-export const ESRI_ATTRIBUTION = 'Imagery: Esri, Maxar, Earthstar Geographics, and the GIS User Community';
+export const ESRI_ATTRIBUTION = 'Imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community';
 export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
 /** The selected place: black with a champagne edge, so it stands off both the atlas and the photo (Review/visual-style.md "Colour"). */
 export const SELECTED = { fill: '#141414', line: '#E9D8B4' };

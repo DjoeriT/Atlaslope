@@ -105,7 +105,7 @@ describe('the Guides page', () => {
     expect(list.featured?.facts.map((f) => f.key)).toEqual(['Grapes', 'Climate', 'Soil']);
     const out = fillGuideList(guidesHtml, list);
     expect(out).toContain('<h3>In short</h3>');
-    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · resized/);
+    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · cropped and resized/);
   });
   it('crops each card photo square around its focus, writing a style only for an off-centre focus', () => {
     const out = fillGuideList(guidesHtml, guideRows());
@@ -159,7 +159,7 @@ describe('the Guides page', () => {
     const out = fillGuideList(guidesHtml, guideRows());
     expect(out.match(/<figure class="sat">/g)).toHaveLength(regions.filter((r) => r.tile).length);
     // plus one for the featured guide's satellite view (the home hero image)
-    expect(out.match(/Imagery: Esri, Maxar · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
+    expect(out.match(/Imagery: Esri, Vantor · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
   });
   it('gives every region with guides its satellite tile, so a new region cannot ship without one', () => {
     // Cataluña went live in release 43 with no tile; the tiles are rendered by Tools/guides/region_tile.mjs.
