@@ -11,8 +11,9 @@ hosted coordinator never see this file; their part is `docs/env-cloud.md`. Check
   (`Tools/guides/headless.py`) the main thread starts. Before editing shared files, check open PRs and `gh run list` for other branches.
 
 ## Access
-- `gh` is the owner's own login, with admin rights; `main` has no branch protection. Only `CLAUDE.md` stops a push to `main`, a self-publish
-  or a tag move here (the cloud's safety check does not run locally). Keep to the release route word for word.
+- `gh` is the owner's own login, with admin rights. `main` is protected (owner, 20 Oct 2026): PR only, `scope` and `check` must pass,
+  no force-push or delete, admins included. The four `ui (n/4)` checks are not required yet: a docs-only PR reports one skipped `ui`.
+  Only `CLAUDE.md` stops a self-publish or a tag move here (the cloud's safety check does not run locally). Keep to the release route word for word.
 - Hosts load directly, including the ones the cloud is refused (mapa.gob.es, navarra.es, portalagrari.gva.es, INTIA, jumilla.wine, EU Cellar,
   Esri, IGN). The data workflows on GitHub Actions are no longer needed as a detour. Fetching stays limited to sources in `data/SOURCES.md`.
 

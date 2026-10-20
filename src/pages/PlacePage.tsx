@@ -1,5 +1,5 @@
 import { PageTop } from './PageTop';
-import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
+import { useEffect, useRef, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -13,6 +13,7 @@ import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
 import { quizToHash, selectionToHash, type Selection } from '../url';
 import { AltitudeRange, ClimateBar } from './Charts';
+import cardCrops from './cardCrops.json';
 import { alikePlaces, mosaicPics, nextRegion, swatchOf } from './helpers';
 import { sentences } from './sentence';
 import { Mosaic } from './Mosaic';
@@ -470,10 +471,11 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
                 <ul className="pg-alike">
                   {alike.map((a) => {
                     const photo = photosOf(a.place.id)[0];
+                    const trim = photo && (cardCrops as Record<string, { trimTop: number }>)[photo.src.replace(/^.*\/|\.webp$/g, '')]?.trimTop;
                     return (
                       <li key={a.place.id}>
                         <Link className="zlink" to={{ kind: 'place', id: a.place.id, page: true }} go={go}>
-                          {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 16rem" alt="" lazy /> : <span className="zblank" style={{ background: regionColor(a.place.region) }} aria-hidden="true" />}
+                          {photo ? <span className="ph" style={trim ? ({ '--trim': trim } as CSSProperties) : undefined}><Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 16rem" alt="" lazy /></span> : <span className="zblank" style={{ background: regionColor(a.place.region) }} aria-hidden="true" />}
                           <b>{a.place.name}</b>
                         </Link>
                         <p>{a.why}</p>
