@@ -159,7 +159,7 @@ describe('the Guides page', () => {
     const out = fillGuideList(guidesHtml, guideRows());
     expect(out.match(/<figure class="sat">/g)).toHaveLength(regions.filter((r) => r.tile).length);
     // plus one for the featured guide's satellite view (the home hero image)
-    expect(out.match(/Imagery: Esri, Maxar · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
+    expect(out.match(/Imagery: Esri, Vantor · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
   });
   it('gives every region with guides its satellite tile, so a new region cannot ship without one', () => {
     // Cataluña went live in release 43 with no tile; the tiles are rendered by Tools/guides/region_tile.mjs.

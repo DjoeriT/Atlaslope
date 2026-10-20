@@ -9,10 +9,11 @@
 - #155: Esri terms read and recorded in `data/SOURCES.md`, section "Esri terms for the saved satellite screenshots".
   Screen captures of Esri maps on your own product's site are allowed with a credit near the image [V, Esri FAQ and Static maps page].
 
-## Open (owner decisions)
-1. Capture route: tiles were shot from the keyless public endpoint, while Esri's FAQ makes use conditional on Esri software or an account.
-   A (recommended): allow localhost on the Esri key (or a second, local-only key) in his ArcGIS account, then retake the 10 tiles, hero,
-   share image and About map once with the key. B: PNOA-only static images (Spain only). C: leave as is.
-2. Credit wording: Esri's item now credits «Vantor» (formerly Maxar) and suggests an IP line. Options: «Imagery: Esri, Vantor · Spain:
-   PNOA © IGN» (recommended, smallest change) or the full Esri sentence.
+## Decided (owner, 20 Oct 2026)
+1. Capture route: C, leave the keyless screenshots as they are (recorded in `data/SOURCES.md`).
+2. Credit: «Esri, Vantor» replaces «Esri, Maxar» in `src/map/style.ts` (map), `src/home/guideCount.ts` (Guides tiles), `index.html`,
+   `about/index.html` and `Tools/share/make_share_image.py`; `public/share.jpg` rebuilt (sips at quality 60, 162 KB; Pillow is not
+   installed on the Mac). Mocks and old reviews under `Review/` keep "Maxar" (history).
+
+## Open
 - Esri's full terms page (`links.esri.com/agol_tou`) returned 403; not read [A].

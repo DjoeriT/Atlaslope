@@ -110,7 +110,7 @@ const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string
 // the tile's own caption, so a reader ties the credit to the image (ReviewBot PR #114, P2 3)
 const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
 
-const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Maxar · Spain: PNOA © IGN</figcaption>';
+const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Vantor · Spain: PNOA © IGN</figcaption>';
 
 // A photo no wider than 800 px has no 800 copy, only its full file (release 47: Binissalem's photo 404'd on the Guides page)
 // Square cards crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026).
