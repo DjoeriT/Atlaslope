@@ -62,7 +62,13 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   const heading = useRef<HTMLElement>(null);
   const result = useRef<HTMLDivElement>(null);
 
-  function next() {
+  // A step is left once: a second tap before the move has landed (a double tap, a busy phone) is on the step being left, and
+  // recorded it twice (#83). `before` runs only for the tap that moves on.
+  const leaving = useRef(-1);
+  function next(before?: () => void) {
+    if (leaving.current === index) return;
+    leaving.current = index;
+    before?.();
     if (index + 1 >= round.items.length) return onExit({ kind, round, outcomes });
     withMotion(() => {
       setIndex(index + 1);
@@ -155,7 +161,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
           <p className="note">{t.introNote}</p>
         </div>
         <div className="foot intro-foot">
-          <button className="btn primary" onClick={() => { seen(); next(); }}>{t.gotIt}</button>
+          <button className="btn primary" onClick={() => next(seen)}>{t.gotIt}</button>
           <button className="btn quiet" onClick={() => { seen(); onOpenPlace(place.id); }}>{t.moreAbout(place.name)}</button>
         </div>
       </section>
@@ -241,7 +247,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
       </div>
       <div className="foot">
         {question.type === 'find-it' && !outcome && <button className="btn primary" disabled={!tentative} onClick={() => tentative && answer(tentative, tentative === place.id)}>{t.confirm}</button>}
-        {outcome && (!outcome.right || !auto) && <button className="btn primary" onClick={next}>{last ? t.finish : t.next}</button>}
+        {outcome && (!outcome.right || !auto) && <button className="btn primary" onClick={() => next()}>{last ? t.finish : t.next}</button>}
         {outcome && !outcome.right && !outcome.slip && !outcome.skipped && <button className="btn" onClick={slip}>{t.slip}</button>}
         {!outcome && <button className="btn quiet" onClick={() => answer(null, false)}>{t.dontKnow}</button>}
       </div>
