@@ -91,8 +91,9 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   return { rows, regions, featured, photos };
 };
 
-// One credit line per photo set, always visible, the same words as the place pages: author, licence, "resized" for the CC BY licences
-// (src/cards/Credit.tsx). One entry per author and licence.
+// One credit line per photo set, always visible, the same parts as the place pages (src/cards/Credit.tsx): author, licence, and the change
+// made for the CC BY licences. Every photo here is cropped (square cards, the featured mosaic), so it says "cropped and resized" (#154).
+// One entry per author and licence.
 const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
   const seen = new Set<string>();
   const parts: string[] = [];
@@ -102,7 +103,7 @@ const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string
     if (seen.has(`${name}|${c.licence}`)) continue;
     seen.add(`${name}|${c.licence}`);
     const link = (href: string, text: string) => (href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text));
-    parts.push(`${link(c.page, name)} · ${link(c.licenceUrl, c.licence)}${/^CC BY\b/.test(c.licence) ? ' · resized' : ''}`);
+    parts.push(`${link(c.page, name)} · ${link(c.licenceUrl, c.licence)}${/^CC BY\b/.test(c.licence) ? ' · cropped and resized' : ''}`);
   }
   return parts.length ? `<p class="credit">Photos: ${parts.join('; ')}</p>` : '';
 };

@@ -111,6 +111,32 @@ One entry per file in `data/`. `Tools/check.sh` fails if a committed data file h
 | `Review/sources/fetched/oj-PDO-ES-02880-C_2023_1053_21_11_23.txt` | Documento único DOP Rosalejo, OJ C/2023/1053 (21 Nov 2023), `http://data.europa.eu/eli/C/2023/1053/oj`. Source id `rosalejo-doc` | 2026-10-19 | EU Official Journal (reuse allowed, Decision 2011/833/EU) | EUR-Lex/Cellar HTML converted to .txt once by `Tools/guides/sources.py meseta`, cut with extract.py. Used for the Rosalejo guide and fact sheet. |
 | `Review/sources/fetched/oj-PDO-ES-03003-C_C_2024_7000_21_11_2024.txt` | Documento único DOP Río Negro, OJ C/2024/7000 (21 Nov 2024), `http://data.europa.eu/eli/C/2024/7000/oj`. Source id `rio-negro-doc` | 2026-10-19 | EU Official Journal (reuse allowed, Decision 2011/833/EU) | EUR-Lex/Cellar HTML converted to .txt once by `Tools/guides/sources.py meseta`, cut with extract.py. Used for the Río Negro guide and fact sheet. |
 
+## Esri terms for the saved satellite screenshots (checked 2026-10-20, #155)
+
+Covers the Guides page region tiles (`public/guides/*.webp`), the home hero (`public/home/hero.webp`), `public/share.jpg` and the About map
+(`public/about/sources-map.webp`): all screenshots of the app's own map over Esri World Imagery (and PNOA in Spain), served as static images.
+
+- World Imagery item (`arcgis.com` item `10df2279f9684e4a9f6a7f08febac2a9`, REST `?f=json`, read 2026-10-20) [V]: licensed under the Esri
+  Master License Agreement; credit «Esri, Vantor, Earthstar Geographics, and the GIS User Community» (Maxar's imagery business is now named
+  Vantor); "not intended to be used to export tiles for offline".
+- Esri, "Frequently asked questions about items owned by Esri in ArcGIS Online" (`goto.arcgis.com/termsofuse/viewsummary`, last updated
+  21 Apr 2025) [V]: you may "Include screen captures or a printed or plotted map"; you may not systematically harvest basemap tiles,
+  redistribute them, or "Download, redistribute or self-host" Esri content; conditions: attribution to Esri and its data providers, and use
+  with Esri software or an ArcGIS subscription.
+- Esri, "Static maps" (`doc.arcgis.com/en/arcgis-online/reference/static-maps.htm`, read 2026-10-20) [V]: images of Esri maps are allowed
+  "on a company website to promote your own products and services"; other uses (for example monetization or resale) need Esri's permission.
+  Attribution "on or near your map or image"; suggested wording «Map image is the intellectual property of Esri and is used herein under
+  license. Copyright © <year> Esri and its licensors. All rights reserved.»
+- The full terms page (`links.esri.com/agol_tou`) refused the fetch (403); not read [A].
+
+Outcome:
+- Allowed in kind [A, our reading of the two pages]: our files are screen captures of the app's own map with its own layers, not stored or re-served basemap tiles, and
+  they show the product on its own site. Each carries a visible credit next to the image.
+- Open [A]: the screenshots were taken from the keyless public endpoint (`Tools/guides/region_tile.mjs`), not through the Location Platform
+  account the live app uses, and the account's terms page was not reachable. The credit says «Esri, Maxar», not Esri's current «Vantor» and
+  not the suggested IP line. Follow-up decisions are with the owner (handoff 2026-10-20).
+- PNOA © IGN (CC BY 4.0, row above in "App layers"): storing and serving screenshots is allowed with the credit [V, licence text].
+
 ## Licence texts (quoted; fetched 2026-10-15)
 
 **MAPA, download page** `https://www.mapa.gob.es/es/cartografia-y-sig/ide/descargas/alimentacion/vinos`, "Condiciones":

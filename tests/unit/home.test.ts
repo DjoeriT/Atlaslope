@@ -105,7 +105,7 @@ describe('the Guides page', () => {
     expect(list.featured?.facts.map((f) => f.key)).toEqual(['Grapes', 'Climate', 'Soil']);
     const out = fillGuideList(guidesHtml, list);
     expect(out).toContain('<h3>In short</h3>');
-    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · resized/);
+    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · cropped and resized/);
   });
   it('crops each card photo square around its focus, writing a style only for an off-centre focus', () => {
     const out = fillGuideList(guidesHtml, guideRows());
