@@ -20,3 +20,9 @@
 - Some lines still end in "here too" where nothing else differs (46 of 229 cards, at most one per page by design).
 - Card trims are a list by hand; only Navarra has one. Other pale-sky card photos were not reviewed.
 - Not verified: Safari, phones.
+
+## ReviewBot (PR 166): merge, 0 blockers, 1 should-fix, 4 nits [R]
+- Fixed: stub tests for each reason (height sign and 150 m threshold, climate, climate-only lead, dropped repeat); height rounds the same
+  up and down (+125 and -125 m both read 150 m); the trim test fails on an entry that is not its place's card photo.
+- Kept: the region article list matches display names (checked correct); the trim hash uses the 480 file, like the Guides crops.
+- Owner copy call: "on cold, dry steppe" (Köppen BSk) means a cool yearly average, not cold winters. Alternative: "on cool, dry steppe".

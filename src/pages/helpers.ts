@@ -158,7 +158,8 @@ export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => S
   return out.map(({ place: p, grape }) => {
     const lead = grape ?? (ownTop && words.climateLead[ownTop.code]) ?? words.sameClimate;
     const theirUp = measuresOf(p.id)?.altitude.median;
-    const rise = ownUp === undefined || theirUp === undefined ? 0 : Math.round((theirUp - ownUp) / 50) * 50;
+    const gap = ownUp === undefined || theirUp === undefined ? 0 : theirUp - ownUp;
+    const rise = Math.sign(gap) * Math.round(Math.abs(gap) / 50) * 50; // same rounding up and down
     const theirTop = top(p.id);
     const summers = grape && theirTop && theirTop.code !== ownTop?.code ? words.climate[theirTop.code] : undefined;
     const regionName = p.region !== place.region ? tree.getRegion(p.region)?.name : undefined;
