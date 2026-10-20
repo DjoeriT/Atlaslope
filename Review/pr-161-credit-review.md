@@ -7,3 +7,12 @@ Verdict: MERGE. Blockers 0, should fix 0, notes 3.
 2. SOURCES section [R]: [V] tags rest on fetched pages with quotes; the 403 terms page is tagged [A]; Outcome is tagged [A, our reading] and lists the open points (keyless endpoint, "Maxar" vs "Vantor", no IP line). Follows from the quotes. The PNOA line is tagged [V, licence text] but cites a row not in this diff (not re-checked).
  - Note C: the credit string SAT_CREDIT (guideCount.ts:113) says "Esri, Maxar", which SOURCES itself calls outdated; owner decision recorded in the handoff. [R]
 3. Nothing wrong found about CC BY-SA, CC0/PD or hero. Counts in data/photos.json: CC BY 28, CC BY-SA 137, CC0 8, PD 3. Unit test updated to the new wording [R, not run].
+
+## Round 2 (HEAD a7473d9, Esri, Vantor)
+
+Verdict: merge. Blockers 0, should fix 0, notes 0 (one observation below).
+
+1. No live "Maxar" left [V, ran git grep on index.html, about, src, Tools, tests, guides]: zero hits. Remaining Maxar mentions are only the intentional history lines in data/SOURCES.md (Esri terms section) [V].
+2. Forms kept [V, read diff]: short «Imagery: Esri, Vantor · Spain: PNOA © IGN» in index.html (2 places), guideCount.ts SAT_CREDIT, make_share_image.py, unit test; long «Esri, Vantor, Earthstar Geographics, and the GIS User Community» in style.ts ESRI_ATTRIBUTION and about/index.html. Test regex updated to match. Unit test not run [A].
+3. SOURCES.md [V, read]: rows 25-27, 170, 180 and the Esri terms section use Vantor consistently; item credit tagged [V], 403 page and capture route [A], owner credit decision [O 2026-10-20].
+4. public/share.jpg [V, viewed]: bottom-right reads «Imagery: Esri, Vantor · Spain: PNOA © IGN», legible on dark chip.
