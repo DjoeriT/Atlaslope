@@ -68,3 +68,18 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - name: UI tests
         run: npx playwright test --shard=${{ matrix.shard }} --reporter=line
+  # The one required check on main (owner, 20 Oct 2026): fails when any part above failed or was cancelled, passes when a docs-only PR
+  # skipped them. Branch protection cannot require the four "ui (n/4)" checks by name: a docs-only PR reports one skipped "ui" instead.
+  gate:
+    name: all checks
+    needs: [scope, check, ui]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Every part passed or was skipped
+        env:
+          RESULTS: ${{ join(needs.*.result, ' ') }}
+        run: |
+          echo "$RESULTS"
+          if printf '%s\n' $RESULTS | grep -qvE '^(success|skipped)$'; then exit 1; fi
