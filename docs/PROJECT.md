@@ -21,7 +21,10 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations, owner's photos at their own aspect
   ratio, except Guides page cards: square crops, each checked (release 55). Detail: `Review/visual-style.md`.
 
-## Current state (19 Oct 2026)
+## Current state (20 Oct 2026)
+- Release 56 (PR #161): photo credits say "cropped and resized" on the Guides page and place pages (#154; place-page frames crop
+  too, `object-fit:cover`); imagery credit «Esri, Vantor» everywhere, share image rebuilt; Esri terms for the saved screenshots in
+  `data/SOURCES.md` (#155).
 - Release 55 (`git tag -l 'release-*'` for the latest): Guides page v2 (release 54, PR #143: region jump row, 6 guides per region then
   "All <Region> guides", 10 region tiles from `Tools/guides/region_tile.mjs`) and square photo cards (PR #144). Since PR #145 a unit
   test fails while a shown Guides photo has no checked crop (`src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`). Release 52 had
@@ -52,6 +55,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   satellite deferred (#108). Per-sentence Opus check stays (Sonnet drafts need fixes on 36% of sentences). Later on 19 Oct the owner
   reopened the photo rule for the Guides page only: cards are square crops, each checked against the original (release 55). Guide
   enrichment (travel tips, wineries, history) goes in its own clearly labelled section with its own source rules (#150).
+- 20 Oct: Esri screenshots taken from the keyless endpoint stay as they are (option C); imagery credit «Esri, Vantor» (Maxar renamed),
+  not Esri's longer IP sentence. #127 (Rioja flyby) is a big slice, done together with #148 (which other guides get a fly-over).
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
@@ -78,7 +83,8 @@ Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his:
 selected guides; #149 more countries (Portugal or France first); #150 guide enrichment; #151 code and backend setup; #152 performance
 (#149, #151, #152 hang together). Guides page leftovers (handoff `2026-10-19-guides-page-build.md`): Canarias tile mostly sea, Rioja
 tile dark fill, Green Spain neighbour outlines, long phone page.
-Priority labels set by the owner 19 Oct 2026 (cleanup). Next: #127 Rioja map flyby missing; #126 repetitive "If you like this, try" cards
+Order set by the owner 20 Oct 2026: #83 flaky Study tests, then #126, then #127 with #148 as one big slice (Rioja first, then
+the selection). Priority labels set 19 Oct 2026 (cleanup). Next: #127 Rioja map flyby missing; #126 repetitive "If you like this, try" cards
 ("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
 outlines (Urbezo done, 12 left); #83 flaky Study tests; #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
 (React 19, MapLibre 6, Vite 8, TS 7, Vitest 5); #106 cause-to-taste chain; #103 enrich guides from more sources; #101 travel flags; #108
@@ -92,6 +98,10 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
+- Photo ratio outside the Guides page: the 19 Oct rule says photos keep their own ratio, but place-page frames (cover, mosaic, 4:3
+  cards) crop with `object-fit:cover` [V, 20 Oct]. Keep 4:3 with checked crops, or let photos keep their ratio? Decide in #126.
+- `.claude/hooks/context-after-release.sh` asks for a "live: release-N on <hash>" line, which CLAUDE.md forbids (18 Oct). Update or
+  remove the hook? (seen 20 Oct, release 56)
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
 
