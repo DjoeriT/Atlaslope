@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-20-alike-cards](2026-10-20-alike-cards.md): "If you like this, try" cards say what differs; Navarra card photo trimmed (#126, 20 Oct 2026)
 - [2026-10-20-flaky-study-tests](2026-10-20-flaky-study-tests.md): Study double tap on "Got it" fixed, flaky Study tests #83 (20 Oct 2026)
 - [2026-10-20-credit-cropped-esri-terms](2026-10-20-credit-cropped-esri-terms.md): "cropped and resized" credit, Esri terms for saved screenshots (20 Oct 2026)
 - [2026-10-19-guides-square-photos](2026-10-19-guides-square-photos.md): Guides page square photo cards, each crop checked (19 Oct 2026)

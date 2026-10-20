@@ -124,7 +124,8 @@ export function swatchOf(label?: string): 'red' | 'white' | 'rose' | undefined {
 export interface Alike { place: Place; why: string }
 
 /** "If you like this, try" (owner, 19 Oct 2026): up to three other places with the same main grape, then the same main measured climate,
- *  from data the app already holds. Never the place's own zones or the place it is a zone of. */
+ *  from data the app already holds. Never the place's own zones or the place it is a zone of. Each card says what differs (#126: three
+ *  identical "Tempranillo here too" lines): the height, then the climate, then the study region, and no two cards say the same thing. */
 export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => Sheet | undefined, measuresOf: (id: string) => Measures | undefined): Alike[] {
   const usual = (s?: Sheet) => (s?.grapes.main ?? []).map((g) => g.grape ?? g.local);
   const own = usual(sheetOf(place.id));
@@ -138,9 +139,8 @@ export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => S
       const first = !!grape && grape === own[0];
       const climate = !!ownTop && top(p.id)?.code === ownTop.code;
       const score = (first ? 4 : grape ? 2 : 0) + (climate ? 1 : 0);
-      const why = grape ? t.page.alsoGrape(grape) : climate ? t.page.sameClimate(ownTop!.name) : '';
       // Ties break on a stable shuffle of the two ids, so places with the same score do not all suggest the first one in the tree.
-      return { place: p, why, score, order: [...(place.id + p.id)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) };
+      return { place: p, grape, score, order: [...(place.id + p.id)].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) };
     })
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score || a.order - b.order);
@@ -149,5 +149,30 @@ export function alikePlaces(tree: Tree, place: Place, sheetOf: (id: string) => S
   const regions = new Set<string>([place.region]);
   for (const x of scored) if (out.length < 3 && !regions.has(x.place.region)) { out.push(x); regions.add(x.place.region); }
   for (const x of scored) if (out.length < 3 && !out.includes(x)) out.push(x);
-  return out.map(({ place: p, why }) => ({ place: p, why }));
+  // Each card takes a kind of reason no earlier card took, so the three lines read differently, not just with other numbers; a card
+  // that could only repeat an earlier line is left out.
+  const used = new Set<string>();
+  const said = new Set<string>();
+  const ownUp = measuresOf(place.id)?.altitude.median;
+  const words = t.page.alike;
+  return out.map(({ place: p, grape }) => {
+    const lead = grape ?? (ownTop && words.climateLead[ownTop.code]) ?? words.sameClimate;
+    const theirUp = measuresOf(p.id)?.altitude.median;
+    const rise = ownUp === undefined || theirUp === undefined ? 0 : Math.round((theirUp - ownUp) / 50) * 50;
+    const theirTop = top(p.id);
+    const summers = grape && theirTop && theirTop.code !== ownTop?.code ? words.climate[theirTop.code] : undefined;
+    const regionName = p.region !== place.region ? tree.getRegion(p.region)?.name : undefined;
+    const kinds: Array<[string, string]> = [
+      ['height', Math.abs(rise) >= 150 ? words.height(lead, rise) : ''],
+      ['climate', summers ? `${lead} ${summers}` : ''],
+      ['region', regionName ? words.inRegion(lead, regionName) : ''],
+    ].filter((k): k is [string, string] => !!k[1]);
+    kinds.push(['height', Math.abs(rise) >= 50 ? words.height(lead, rise) : ''], ['too', words.too(lead)]);
+    const fresh = kinds.filter(([, w]) => w && !said.has(w));
+    const pick = fresh.find(([k]) => !used.has(k)) ?? fresh[0];
+    if (!pick) return undefined;
+    used.add(pick[0]);
+    said.add(pick[1]);
+    return { place: p, why: pick[1] };
+  }).filter((a): a is Alike => !!a);
 }

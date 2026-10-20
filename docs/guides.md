@@ -104,6 +104,10 @@ for a shown photo with no entry, with a changed file, or an entry for a photo no
 2. `node Tools/guides/crop_sheet.mjs --write [key...] --focus "<key>=<x>% <y>%"`: records them with the fresh hash (focus as given, else kept, else centre).
 3. `npx vitest run tests/unit/home.test.ts`.
 
+Place page "If you like this, try" cards (4:3) may trim a hazy band off the top of a photo: `src/pages/cardCrops.json` holds `trimTop`
+(percent, at most 33) and the same 12-hex file hash, recorded after looking at the card on the page. `tests/unit/guide-shape.test.ts` fails
+when the file changes (#126, Navarra's white sky).
+
 ## Flights (fly-to)
 - Each beat may carry 1 or 2 flights (`fly`): a place id from `data/places.json`, or a point with a zoom. Each flight has a one-line
   caption with its own cite. Zone cards keep their own "Fly to".

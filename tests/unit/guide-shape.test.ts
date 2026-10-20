@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { BEATS, EXTRAS, guides, measuresOf, sheetOf, sources } from '../../src/facts';
@@ -45,8 +46,10 @@ describe('If you like this, try', () => {
       expect(a.place.id).not.toBe('rioja');
       expect(a.place.parent).not.toBe('rioja');
       expect(a.place.quiz).not.toBe('none');
-      expect(a.why).toMatch(/ here too$/);
+      expect(a.why).toMatch(/^Tempranillo\b/);
     }
+    // #126: no two cards carry the same line.
+    expect(new Set(alike.map((a) => a.why)).size).toBe(alike.length);
     const alta = alikePlaces(tree, tree.getPlace('rioja-alta')!, sheetOf, measuresOf);
     expect(alta.map((a) => a.place.id)).not.toContain('rioja');
   });
@@ -63,5 +66,17 @@ describe('guide fly targets', () => {
     for (const w of guideFlyWarnings(guides)) console.warn(`guide warning: ${w}`);
     expect(guideFlyWarnings([{ id: 'x', title: '', minutes: 1, lede: { text: '', cite: [] }, chapters: [{ id: 'a', title: '', paras: [], cite: [], fly: [{ label: 'X', caption: '', cite: [], place: 'x' }] }] }])).toHaveLength(1);
     expect(guideFlyWarnings(guides.filter((g) => g.id === 'rioja'))).toEqual([]);
+  });
+});
+
+describe('checked card trims (src/pages/cardCrops.json)', () => {
+  // #126: a trim off the top of a card photo was looked at on this exact file; a changed photo needs a fresh look.
+  const crops = JSON.parse(readFileSync('src/pages/cardCrops.json', 'utf8')) as Record<string, { trimTop: number; file: string }>;
+  it('trims a shown file by at most a third and matches the file that was checked', () => {
+    for (const [k, { trimTop, file }] of Object.entries(crops)) {
+      expect(trimTop, k).toBeGreaterThan(0);
+      expect(trimTop, k).toBeLessThanOrEqual(33);
+      expect(createHash('sha256').update(readFileSync(`public/photos/480/${k}.webp`)).digest('hex').slice(0, 12), `${k}: look at the trim again, then update its file hash`).toBe(file);
+    }
   });
 });
