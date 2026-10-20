@@ -64,9 +64,9 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Mock language:** NO drawn illustrations, icons, diagrams or fake geography. Richer = more real product and photos, same calm. Prefer
   visuals over lines of text.
 - **Photos hard rule:** Guides page cards are square crops (owner 19 Oct 2026, release 54: mixed shapes "not great UX"); each crop
-  sets its own focus and is checked against the original: never cut a face, glass or bottle, trim only bystanders. Elsewhere photos keep
-  their own ratio unless a mock he approved says otherwise. Credits: no text on photos, no tooltips, one always-visible
-  "Photos: Name · licence · resized" line per set. A unit test fails while a shown photo has no checked crop (`src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`).
+  sets its own focus and is checked against the original: never cut a face, glass or bottle, trim only bystanders. Elsewhere photos may be
+  cropped to their frames too (owner 20 Oct 2026, own-ratio rule dropped), with the same care. Credits: no text on photos, no tooltips,
+  one always-visible "Photos: Name · licence · cropped and resized" line per set. A unit test fails while a shown photo has no checked crop (`src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`).
 - **Style:** NO dark mode; black band + champagne (#E9D8B4 family), white page, 6px corners, no pills. Copy: one idea per line, no
   "X, Y and Z" lists. Users see "AtlaSlope"; code and URLs "atlaslope".
 - **Vocabulary:** "Study" not "Quiz" (code folder `src/quiz` stays). The guide = the whole place page; "Terroir" = one section; never "Terroir

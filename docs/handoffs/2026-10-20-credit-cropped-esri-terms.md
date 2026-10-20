@@ -20,10 +20,9 @@
   came late, in the docs PR (missed in PR 161).
 
 ## Next (owner order, 20 Oct 2026)
-#83 flaky Study tests, then #126 "If you like this, try" cards (decide the place-page photo ratio there), then #127 + #148 as one big
+#83 flaky Study tests, then #126 "If you like this, try" cards (photos may be cropped: check the crops), then #127 + #148 as one big
 slice: find why the Rioja flyby is gone, mock for Rioja, then a shortlist of other guides.
 
 ## Open
-- A PostToolUse hook after `gh workflow run publish` asks for a "live: release-N on <hash>" line in memory and PROJECT_CONTEXT.md; CLAUDE.md
-  forbids such lines (18 Oct). Not followed; the hook needs updating or removing (owner's call).
+- Owner 20 Oct: the release hook no longer asks for a "live" line (updated); photos may be cropped everywhere (own-ratio rule dropped).
 - Esri's full terms page (`links.esri.com/agol_tou`) returned 403; not read [A].

@@ -18,8 +18,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Guides are a general, fun wine reference for anyone who loves wine, not exam prep [O, 19 Oct]. "Why it tastes the way it does" is the spine.
 - Share card keeps "The wine study atlas for WSET and Wine Scholar students"; home subline (owner chose, 19 Oct 14:44Z, same paragraph) "Spain's wine places from above, and why each one
   tastes the way it does. The wine study atlas for WSET and Wine Scholar students."; headline "Know the land behind the glass." About must not repeat the home page.
-- Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations, owner's photos at their own aspect
-  ratio, except Guides page cards: square crops, each checked (release 55). Detail: `Review/visual-style.md`.
+- Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations; photos may be cropped to their
+  frames, never cutting a face, glass or bottle (Guides page cards: square crops, each checked, release 55). Detail: `Review/visual-style.md`.
 
 ## Current state (20 Oct 2026)
 - Release 56 (PR #161): photo credits say "cropped and resized" on the Guides page and place pages (#154; place-page frames crop
@@ -56,7 +56,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   reopened the photo rule for the Guides page only: cards are square crops, each checked against the original (release 55). Guide
   enrichment (travel tips, wineries, history) goes in its own clearly labelled section with its own source rules (#150).
 - 20 Oct: Esri screenshots taken from the keyless endpoint stay as they are (option C); imagery credit «Esri, Vantor» (Maxar renamed),
-  not Esri's longer IP sentence. #127 (Rioja flyby) is a big slice, done together with #148 (which other guides get a fly-over).
+  not Esri's longer IP sentence. Photos no longer keep their own ratio: they may be cropped
+  to their frames everywhere, with the same care as the Guides page (the 4:3 place-page frames stay). #127 (Rioja flyby) is a big slice, done together with #148 (which other guides get a fly-over).
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
@@ -98,10 +99,6 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
-- Photo ratio outside the Guides page: the 19 Oct rule says photos keep their own ratio, but place-page frames (cover, mosaic, 4:3
-  cards) crop with `object-fit:cover` [V, 20 Oct]. Keep 4:3 with checked crops, or let photos keep their ratio? Decide in #126.
-- `.claude/hooks/context-after-release.sh` asks for a "live: release-N on <hash>" line, which CLAUDE.md forbids (18 Oct). Update or
-  remove the hook? (seen 20 Oct, release 56)
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.
 
