@@ -84,10 +84,10 @@ Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his:
 selected guides; #149 more countries (Portugal or France first); #150 guide enrichment; #151 code and backend setup; #152 performance
 (#149, #151, #152 hang together). Guides page leftovers (handoff `2026-10-19-guides-page-build.md`): Canarias tile mostly sea, Rioja
 tile dark fill, Green Spain neighbour outlines, long phone page.
-Order set by the owner 20 Oct 2026: #83 flaky Study tests, then #126, then #127 with #148 as one big slice (Rioja first, then
+Order set by the owner 20 Oct 2026: #83 flaky Study tests (done 20 Oct), then #126, then #127 with #148 as one big slice (Rioja first, then
 the selection). Priority labels set 19 Oct 2026 (cleanup). Next: #127 Rioja map flyby missing; #126 repetitive "If you like this, try" cards
 ("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
-outlines (Urbezo done, 12 left); #83 flaky Study tests; #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
+outlines (Urbezo done, 12 left); #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
 (React 19, MapLibre 6, Vite 8, TS 7, Vitest 5); #106 cause-to-taste chain; #103 enrich guides from more sources; #101 travel flags; #108
 Esri tile cost; #30 producers; #16 ready for friends; #15 mastery map and climate layer; #8, #7, #4, #3. Not in issues: Canarias guides
 need a polish pass (style lists "white, rosado and red", label terms read like regulation text); source quirks in the Mediterranean and

@@ -152,10 +152,15 @@ test('keyboard only: Confirm and the four choices are reachable and the result i
   // It moves on by itself to the five new places in a row (the first by keyboard), then on to the first what-is-this, skipping any find it before it.
   const plan = plannedRound(NOW, seedLog as never);
   expect(plan.slice(0, 6).map((i) => i.kind)).toEqual(['question', 'intro', 'intro', 'intro', 'intro', 'intro']);
-  await expect(page.locator('h1.intro-h')).toBeVisible();
+  // Each "Got it" only once its intro is on screen, as in quiz-doors (#83): a click before the step has changed lands on the step just left.
+  const intros = plan.slice(1, 6);
+  await expect(page.locator('h1.intro-h')).toHaveText(intros[0].name);
   await page.getByRole('button', { name: 'Got it' }).focus();
   await page.keyboard.press('Enter');
-  for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Got it' }).click();
+  for (const intro of intros.slice(1)) {
+    await expect(page.locator('h1.intro-h')).toHaveText(intro.name);
+    await page.getByRole('button', { name: 'Got it' }).click();
+  }
   for (const step of plan.slice(6, plan.findIndex((i) => i.kind === 'question' && i.type === 'what-is-this'))) {
     await expect(page.locator('.q em')).toHaveText(step.name);
     await page.getByRole('button', { name: "I don't know" }).click();
@@ -163,11 +168,23 @@ test('keyboard only: Confirm and the four choices are reachable and the result i
   }
 
   // The four choices: Tab reaches A, B, C and D in turn.
+  // Tab only once the new step has put the keyboard on its question.
   await expect(page.locator('.q')).toHaveText('What is this?');
+  await expect(page.locator('.q')).toBeFocused();
   for (const letter of 'ABCD') {
     await page.keyboard.press('Tab');
     await expect(page.locator('.choice:focus')).toHaveText(new RegExp(`^${letter}`));
   }
   await page.keyboard.press('Enter');
   await expect(page.locator('#result .feedback')).toBeVisible();
+});
+
+test('a double tap on "Got it" moves on one step and records the intro once', async ({ page }) => {
+  // The second tap lands while the step change is still on its way, on the step being left (#83).
+  await start(page);
+  const intros = plannedRound(NOW).filter((i) => i.kind === 'intro');
+  await expect(page.locator('h1.intro-h')).toHaveText(intros[0].name);
+  await page.getByRole('button', { name: 'Got it' }).evaluate((b: HTMLElement) => { b.click(); b.click(); });
+  await expect(page.locator('h1.intro-h')).toHaveText(intros[1].name);
+  expect((await log(page)).filter((e) => e.kind === 'intro' && e.place === idOf(intros[0].name))).toHaveLength(1);
 });
