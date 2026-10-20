@@ -2,8 +2,10 @@
 
 ## Done
 - #154: Guides page photo credit now says "cropped and resized" for CC BY files (`creditLine`, `src/home/guideCount.ts`). Every photo
-  there is cropped: square cards and the featured mosaic both use `object-fit:cover` (`src/home/guides.css`). Place pages keep "resized"
-  (`src/cards/Credit.tsx`), their photos keep their ratio. Unit test updated (`tests/unit/home.test.ts`).
+  there is cropped: square cards and the featured mosaic both use `object-fit:cover` (`src/home/guides.css`). Place pages too
+  (`src/cards/Credit.tsx`): ReviewBot (Review/pr-161-credit-review.md, note B) found they also crop (cover, mosaic and 4:3 cards use
+  `object-fit:cover`, `src/styles/app.css`, `pages.css`), so the issue's "other pages keep resized" did not hold. One wording everywhere;
+  it slightly over-states in the lightbox (`object-fit:contain`). Tests updated (`tests/unit/home.test.ts`, `tests/ui/place-page.spec.ts`).
 - #155: Esri terms read and recorded in `data/SOURCES.md`, section "Esri terms for the saved satellite screenshots".
   Screen captures of Esri maps on your own product's site are allowed with a credit near the image [V, Esri FAQ and Static maps page].
 

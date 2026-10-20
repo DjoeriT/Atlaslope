@@ -92,7 +92,7 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
 };
 
 // One credit line per photo set, always visible, the same parts as the place pages (src/cards/Credit.tsx): author, licence, and the change
-// made for the CC BY licences. Every photo here is cropped (square cards, the featured mosaic), so it says "cropped and resized" (#154).
+// made for the CC BY licences: "cropped and resized", as every frame crops (square cards, the featured mosaic) (#154).
 // One entry per author and licence.
 const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
   const seen = new Set<string>();

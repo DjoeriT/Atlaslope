@@ -1,8 +1,9 @@
 import type { Photo } from '../facts/types';
 
-// One photo credit, the same everywhere, its parts split by a dot, not commas (owner, 18 Oct 2026: "What's with the commas"): the author linked to the Commons page, the licence linked to its text, and "resized" for
-// CC BY and CC BY-SA files, whose licences ask for any change to be indicated (we ship smaller WebP copies; owner card, 18 Oct 2026).
-const RESIZED = 'resized';
+// One photo credit, the same everywhere, its parts split by a dot, not commas (owner, 18 Oct 2026: "What's with the commas"): the author linked to the Commons page, the licence linked to its text, and the change
+// for CC BY and CC BY-SA files, whose licences ask for any change to be indicated (owner card, 18 Oct 2026): we ship smaller WebP copies and
+// every frame crops them with object-fit:cover (cover, mosaic, 4:3 cards), so "cropped and resized" (#154).
+const RESIZED = 'cropped and resized';
 const changed = (licence: string) => /^CC BY\b/.test(licence);
 // Commons names no author for a few files: CC asks for the creator only when one is supplied, so the credit names where the photo is from.
 const byline = (artist: string) => (/^unknown\b/i.test(artist) ? 'Wikimedia Commons' : artist);
