@@ -44,6 +44,9 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Screenshots: `npm run shots` builds the UI-test build and writes `shots/<view>-<size>.png` (home, atlas, rioja, study, question at desktop, ipad, phone; ignored by git).
   Filter with `--only home,study` and `--sizes desktop,phone`; `--no-build` reuses `dist/uitest`; `--url <base>` uses a running server.
   Needs the Chromium Playwright already has; a failed view logs one line and the run goes on (15 s per view, 3 min overall).
+- Tour screenshots: `npm run shots:tour -- <id> [--sizes phone,desktop]` makes a normal build with map tiles on (network needed; the Esri key comes from `.env.local`),
+  opens the guide with the tour open and shoots every stop in order. It writes `shots/tour-<id>-<n>-<size>.png` and a labelled contact sheet `shots/tour-<id>-<size>.png`.
+  A stop whose imagery does not load in 30 s is flagged in the log and the sheet. About 1.5 min per size for Rioja; 6 min cap.
 - Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the full UI suite, which CI runs in four parts on every PR; locally run only the specs you touched).
 
 ## Data
