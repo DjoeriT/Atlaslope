@@ -31,6 +31,7 @@ export function GuideMap({ place, guide, story, fly, onHide }: Props) {
   const smap = useRef<StoryMap | null>(null);
   const [active, setActive] = useState(0);
   const [moved, setMoved] = useState(false);
+  const [creditOpen, setCreditOpen] = useState(false);
   const [credit, setCredit] = useState<{ shown: Credited[]; imagery: boolean }>({ shown: [], imagery: true });
   const [named, setNamed] = useState<Record<string, LngLat>>({});
   const shownStep = useRef(0);
@@ -68,9 +69,13 @@ export function GuideMap({ place, guide, story, fly, onHide }: Props) {
     smap.current = m;
     m.show(views[0], true);
     // The column appears beside text that reflows; MapLibre needs its new size.
+    // On a phone and a tablet the credit line is folded behind the map's own "i" button.
+    const iBtn = mapEl.current?.querySelector('.maplibregl-ctrl-attrib-button');
+    const toggleCredit = () => setCreditOpen((o) => !o);
+    iBtn?.addEventListener('click', toggleCredit);
     const ro = new ResizeObserver(() => m.map.resize());
     ro.observe(mapEl.current as HTMLDivElement);
-    return () => { ro.disconnect(); m.remove(); smap.current = null; };
+    return () => { iBtn?.removeEventListener('click', toggleCredit); ro.disconnect(); m.remove(); smap.current = null; };
   }, [story]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Scrolling: the step whose anchor (its fly link, or its chapter for an overview) is nearest above the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
@@ -137,7 +142,7 @@ export function GuideMap({ place, guide, story, fly, onHide }: Props) {
         </p>
         <div className="story-map" ref={mapEl} />
         {moved && <button type="button" className="story-recentre" onClick={recentre}>{t.recentre}</button>}
-        <p className="story-credit">
+        <p className={creditOpen ? 'story-credit open' : 'story-credit'}>
           {parts.map((p, i) => <span key={i}>{i > 0 && ' · '}<span className="long">{p.long}</span><span className="short">{p.short}</span></span>)}
         </p>
       </div>

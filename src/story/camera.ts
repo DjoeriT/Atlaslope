@@ -54,6 +54,16 @@ export function flyLegs(from: Cam, to: Cam): Leg[] {
 /** Each map move gets this long to land before the next starts, when the reader scrolls past several steps. */
 export const DWELL_MS = 2200;
 
+/** The map shape the fixed views were tuned for: the desktop column (46% of 1440 wide, window height less the bar). Design choice. */
+const REF = { w: 640, h: 760 };
+
+/** How far a fixed view backs off on a smaller map (the phone strip, a narrow column) so it still shows the same ground: 0 on the
+ * desktop shape, about -0.8 on a 390 x 300 strip. It backs off by 0.6 of the shortfall, so close views keep their detail. */
+export function stripZoomShift(width: number, height: number): number {
+  const ratio = Math.max(REF.w / Math.max(width, 1), REF.h / Math.max(height, 1));
+  return ratio <= 1 ? 0 : -0.6 * Math.log2(ratio);
+}
+
 /** The reading line: a little below the top of the reading area (under the band on a laptop, under the map on a phone). */
 export function readingLine(areaTop: number, viewHeight: number, narrow: boolean): number {
   return areaTop + (viewHeight - areaTop) * (narrow ? 0.3 : 0.45);

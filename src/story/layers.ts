@@ -4,11 +4,11 @@
 import type { ExpressionSpecification, FilterSpecification, GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import slopeTints from '../../data/story/slope-tints.json';
-import { CLIMATE_GROUPS, NO_CLIMATE_COLOR } from '../map/climate';
+import { CLIMATE_GROUPS } from '../map/climate';
 import { strings } from '../strings';
 import { storyFiles } from './files';
 import type { Cam } from './camera';
-import { legendClasses, nearNames, type NamePoint } from './layerRules';
+import { legendClasses, nearNames, rockKey, SLOPE_KEY_COLOR, type NamePoint } from './layerRules';
 import type { LngLat, Story } from './format';
 import type { StopView } from './storyMap';
 import type { Credited } from './view';
@@ -62,8 +62,9 @@ export function storyLayers(): StoryLayers {
       map.addLayer({
         id: 'story-koppen', type: 'fill', source: 'story-koppen', filter: ['==', ['get', 'box'], 'main'], layout: { visibility: 'none' },
         paint: {
-          'fill-color': ['match', ['get', 'code'], ...CLIMATE_GROUPS.flatMap((g) => g.codes.flatMap((c) => [c, g.color])), NO_CLIMATE_COLOR] as unknown as ExpressionSpecification,
-          'fill-opacity': 0.36, 'fill-antialias': false,
+          // Lighter, so the land shows through (owner picks 21 Oct 2026); the small "Other" classes are left untinted, as the chart's "Other" is.
+          'fill-color': ['match', ['get', 'code'], ...CLIMATE_GROUPS.flatMap((g) => g.codes.flatMap((c) => [c, g.color])), 'rgba(0,0,0,0)'] as unknown as ExpressionSpecification,
+          'fill-opacity': 0.24, 'fill-antialias': false,
         },
       }, 'story-fade');
     } else {
@@ -72,22 +73,38 @@ export function storyLayers(): StoryLayers {
     }
   }
 
+  function swatch(color: string, label: string) {
+    const item = document.createElement('span');
+    const i = document.createElement('i');
+    i.style.background = color;
+    const b = document.createElement('b');
+    b.textContent = label;
+    item.append(i, b);
+    return item;
+  }
+
   function showLegend(view: StopView, climate: boolean, geology: boolean) {
     if (!legend) return;
     const l = strings.story.legend;
+    // The slope tint is always on; its key shows where the stop's own line is about steepness.
+    const slope = view.step.measure?.kind === 'steep' && !!story && !!storyFiles(story.id).slope;
     legend.replaceChildren();
-    legend.hidden = !(climate || geology);
-    if (geology) { legend.textContent = l.geology; return; } // the service's own legend lists about 230 numbered colours and no names
+    legend.hidden = !(climate || geology || slope);
+    if (geology && story) {
+      legend.append(l.geology);
+      for (const r of rockKey(story.id)) legend.append(swatch(r.color, r.label));
+    }
+    if (slope) legend.append(swatch(SLOPE_KEY_COLOR, l.slope));
     if (!climate) return;
     legend.append(l.climate);
     for (const c of legendClasses(view.step.focus)) {
       const item = document.createElement('span');
-      const swatch = document.createElement('i');
-      swatch.style.background = c.color;
+      const sw = document.createElement('i');
+      sw.style.background = c.color;
       const long = document.createElement('b'), short = document.createElement('b');
       long.className = 'lg'; long.textContent = c.label;
       short.className = 'sh'; short.textContent = c.short;
-      item.append(swatch, long, short);
+      item.append(sw, long, short);
       legend.append(item);
     }
   }
@@ -171,6 +188,11 @@ export function storyLayers(): StoryLayers {
       vis(map, 'story-koppen', koppen);
       vis(map, 'story-geology', geology);
       vis(map, 'story-zonelabels', on.includes('zonelabels'));
+      // The stop's own zone is named by the stop bar and holds the stop's pin: its label would sit under the pin, so it is left off.
+      if (map.getLayer('story-zonelabels')) {
+        const own = view.step.focus.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
+        map.setFilter('story-zonelabels', ['!=', ['get', 'zone'], own]);
+      }
       showLegend(view, koppen, geology);
       if (map.getLayer('story-names-town')) showNames(map, view, cam);
       return hasRivers ? ['rivers', ...on] : on;

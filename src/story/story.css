@@ -13,7 +13,7 @@
 .story-open:hover{background:#fff}
 .story-open:focus-visible{outline:3px solid #E9D8B4;outline-offset:3px}
 
-/* Layout A: the same page in two columns, the guide left and a sticky map right; on a phone a 240 px map strip under the bar. */
+/* Layout A: the same page in two columns, the guide left and a sticky map right; on a phone a 300 px map strip under the bar. */
 .pg-body{display:block}
 .pg.tour .pg-body{display:flex;align-items:flex-start}
 .pg.tour .pg-listing{flex:1 1 0;min-width:0;max-width:none;padding-left:2rem;padding-right:2rem}
@@ -35,8 +35,8 @@
   .pg-tour-pic{height:160px;min-height:160px}
   .pg.tour .pg-body{flex-direction:column;align-items:stretch}
   .pg.tour .pg-listing{padding-left:1rem;padding-right:1rem}
-  .pg-tourmap{order:-1;flex:0 0 240px;height:240px;z-index:16}
-  .pg.tour .pg-jump{top:calc(var(--bar) + 241px)}
+  .pg-tourmap{order:-1;flex:0 0 300px;height:300px;z-index:16}
+  .pg.tour .pg-jump{top:calc(var(--bar) + 301px)}
   .pg-tourcap{flex-wrap:wrap;gap:.1rem .6rem;padding:.4rem .75rem}
   .pg-tourcap b{font-size:.95rem}
 }
@@ -72,7 +72,8 @@
   .story-legend{top:3.1rem;left:.75rem;right:.75rem;max-width:none;white-space:nowrap;overflow-x:auto;scrollbar-width:none;font-size:.66rem}
   .story-legend span{margin-left:0;margin-right:.55rem}
 }
-@media (max-width:61rem){.story-credit{font-size:.6rem;white-space:nowrap;overflow:hidden;padding:.3rem .5rem}.story-credit .long{display:none}.story-credit .short{display:inline}}
+/* Phone and iPad width: the credit folds behind the map's "i" button (GuideMap toggles .open on it). */
+@media (max-width:61rem){.story-credit{display:none;font-size:.7rem;padding:.35rem .5rem;right:2.6rem}.story-credit.open{display:block}.story-credit .long{display:none}.story-credit .short{display:inline}}
 
 /* Phone and tablet strip: the legend wraps and stops short of the zoom control (top right) instead of running under it. */
 @media (max-width:61rem){

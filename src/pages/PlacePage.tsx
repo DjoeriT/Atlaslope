@@ -371,7 +371,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} extra={story && !tour && (
-        <a className="pg-back pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}>{strings.story.jumpToTour}</a>
+        <a className="pg-back pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}><TourIcon /> {strings.story.jumpToTour}</a>
       )} />
       <div className="pg-body">
       <div className="pg-listing">
@@ -551,3 +551,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     </div>
   );
 }
+
+/** A route with two stops, drawn like the "Show map" icon (same stroke, size and rounding), for the Map tour link beside it. */
+const TourIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="18" r="2" /><circle cx="18" cy="6" r="2" /><path d="M8 18h6a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h6" /></svg>
+);

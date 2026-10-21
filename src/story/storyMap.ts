@@ -5,7 +5,7 @@ import { createMap } from '../map/createMap';
 import { DEFAULT_MENU } from '../map/layers';
 import { boundsOf } from '../map/focus';
 import type { Collection } from '../map/boundaries';
-import { flyLegs, type Cam, type Target } from './camera';
+import { flyLegs, stripZoomShift, type Cam, type Target } from './camera';
 import type { LngLat, Story, StoryStep } from './format';
 import { createFacts, type FactView } from './factMarkers';
 import { storyLayers } from './layers';
@@ -123,7 +123,11 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
 
   /** The target as a camera; null for a place's bounds before the shapes are in. */
   function camOf(t: Target): Cam | null {
-    if (t.kind === 'view') return t;
+    if (t.kind === 'view') {
+      // The fixed views are tuned for the desktop column; a smaller map (the phone strip) backs off to show the same ground.
+      const r = container.getBoundingClientRect();
+      return { ...t, zoom: t.zoom + stripZoomShift(r.width, r.height) };
+    }
     const box = boundsOf(featuresOf([t.place]));
     if (!box) return null;
     const fit = map.cameraForBounds([[box[0], box[1]], [box[2], box[3]]], { padding: padding() });
