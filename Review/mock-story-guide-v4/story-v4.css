@@ -1,0 +1,88 @@
+/* v4: Close the map, the rest of the guide page. Rules for the app's own markup (.pg-*) are copied from src/styles/pages.css, with the mock's tokens. */
+:root{--tint2:#7D6540;--tint3:#C9B48A;--accent:#141414;--wine-red:#8C2340;--wine-white:#EBDD9E;--wine-rose:#F2A7A7}
+
+/* the button in the black band */
+.mapbtn{min-height:2.75rem;padding:0 1rem;border:1px solid var(--champ-d);border-radius:var(--r);background:transparent;color:var(--champ);font:500 .9rem var(--sans);cursor:pointer;white-space:nowrap}
+.mapbtn:hover{background:rgba(233,216,180,.12)}
+.where{margin-right:0}
+.step-in>.main,.step-in>.aside{display:block}
+.main:empty{display:none}
+
+/* the guide's fly link on a stop card */
+.fly-link{color:inherit;text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+.fly-link:hover{text-decoration-color:currentColor}
+
+/* rest of the guide page */
+.facts-b{margin-top:1.5rem;display:grid;gap:1.6rem}
+.facts-b .pg-facts{display:grid;gap:1.6rem}
+.pg-h3{font:600 .78rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 .5rem}
+.pg-fact p{margin:0 0 .3rem;color:var(--ink2)}
+.pg-rows{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:.7rem 1rem;margin:0}
+.pg-rows dt{color:var(--ink3)}.pg-rows dd{margin:0}
+.pg-rows ul,.pg-styles,.pg-grapes,.pg-names{list-style:none;margin:0;padding:0}
+.pg-styles li{padding:.4rem 0}.pg-styles strong{display:block;font:500 1.25rem var(--serif)}.pg-styles span{color:var(--ink2)}
+.pg-grapes li,.pg-names li{display:inline-block;margin:0 .5rem .5rem 0;border:1px solid var(--line);border-radius:var(--r);padding:.5rem .9rem;font:500 1.1rem var(--serif)}
+.rest .src{display:block;margin:.4rem 0 0;font-size:.78rem;color:var(--ink3)}
+.rest .src a,.facts-b .src a{color:var(--ink3);text-decoration-color:var(--line2)}
+.rest .src a:hover,.facts-b .src a:hover{text-decoration-color:currentColor}
+.pg-rows .src{display:inline;margin-left:.4rem}
+.pg-cards{display:grid;grid-template-columns:1fr;gap:.8rem}
+.pg-cards>div{border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.1rem;background:var(--paper)}
+.pg-cards b{display:block;font:500 1.25rem var(--serif);margin-bottom:.3rem}
+.pg-cards p{margin:0!important;color:var(--ink2)}.pg-cards p::first-letter{text-transform:uppercase}
+.pg-sw{display:block;width:2rem;height:2rem;border-radius:50%;margin-bottom:.6rem;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
+.pg-sw.red{background:var(--wine-red)}.pg-sw.white{background:var(--wine-white)}.pg-sw.rose{background:var(--wine-rose)}
+.pg-short{border:1px solid var(--line2);border-radius:var(--r);padding:1.2rem 1.4rem}
+.pg-short h2{margin-bottom:.8rem}
+.pg-short ol{list-style:none;margin:0;padding:0}
+.pg-short li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:.2rem 1rem;padding:.8rem 0;border-top:1px solid var(--line)}
+.pg-short li:first-child{border-top:0;padding-top:0}
+.pg-short .k{font:600 .78rem/1.6 var(--sans);color:var(--champ-d)}
+.pg-short .f a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+.pg-short .f a:hover{text-decoration-color:currentColor}
+.pg-short .f .src a{color:var(--ink3)}
+.pg-stack{display:block;width:100%;height:.8rem;border-radius:.25rem;overflow:hidden;margin:.7rem 0 .5rem}
+.pg-legend{display:flex;gap:.4rem 1.2rem;flex-wrap:wrap;list-style:none;margin:0 0 .3rem;padding:0;font-size:.9rem;color:var(--ink2)}
+.pg-legend li{display:inline-flex;align-items:center;gap:.4rem}
+.pg-legend i{width:.8rem;height:.8rem;border-radius:.2rem;display:inline-block;box-shadow:inset 0 0 0 1px rgba(26,23,20,.25)}
+.pg-compare{margin:.6rem 0 .4rem;display:grid;gap:.15rem}
+.pg-compare>div{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:.8rem;align-items:center}
+.pg-compare dt{font-size:.82rem;color:var(--ink3);line-height:1.2}
+.pg-compare .own dt{color:var(--ink);font-weight:600}
+.pg-compare dd{margin:0}
+.pg-compare .pg-stack{margin:.35rem 0}
+.pg-compare>div:not(.own) .pg-stack{height:.5rem;opacity:.8}
+.pg-compare>div:not(.own) .pg-range .fill{fill:var(--tint3)}
+.pg-compare>div:not(.own) .pg-range .mid{color:var(--ink2);font-weight:500}
+.pg-note{font-size:.78rem;color:var(--ink3);margin:.3rem 0 0}
+.pg-range{position:relative;height:3.6rem;margin:.4rem 0 .3rem}
+.pg-range svg{position:absolute;left:0;right:0;top:1.4rem;width:100%;height:.5rem;overflow:visible;border-radius:.25rem}
+.pg-range .track{fill:var(--paper2)}.pg-range .fill{fill:var(--tint2)}
+.pg-range .tick{stroke:var(--accent);stroke-width:2}
+.pg-range span{position:absolute;font-size:.78rem;white-space:nowrap}
+.pg-range .mid{top:0;transform:translateX(-50%);color:var(--accent);font-weight:600}
+.pg-range .lo,.pg-range .hi{top:2.2rem;color:var(--ink2)}
+.pg-range .lo{padding-right:.35rem}.pg-range .hi{padding-left:.35rem}
+.step-rest{min-height:auto}
+
+/* map closed: the text takes the guide page's width (.pg-listing: 76rem, 2rem sides; running text keeps its 38rem measure) */
+body.map-off .sg{display:block}
+body.map-off .mapwrap{display:none}
+body.map-off .text{max-width:76rem;margin:0 auto;padding:0 2rem}
+body.map-off .step{min-height:0;padding:2rem 0 2rem 1.25rem}
+body.map-off .step-in{max-width:none}
+@media (min-width:48rem){
+  body.map-off .step-in{display:grid;grid-template-columns:minmax(0,38rem) minmax(0,1fr);column-gap:3rem;align-items:start}
+  body.map-off .step-in>.main{grid-column:1}
+  body.map-off .step-in>.aside{grid-column:2}
+  body.map-off .step-in>.main:empty+.aside{grid-column:1}
+  body.map-off .step-in>.main:empty+.aside .stop{margin-top:0}
+  body.map-off .aside>:first-child{margin-top:0}
+  body.map-off .step-intro .step-in,body.map-off .step-end .step-in{display:block}
+}
+body.map-off .step-intro{padding-top:2rem}
+body.map-off .step-end{min-height:0}
+@media (max-width:48rem){body.map-off .text{padding:0 1.25rem}body.map-off .step{padding:1.5rem 0 1.5rem 1rem}}
+body.map-off .step-intro .step-in{max-width:46rem}
+body.map-off .hint{display:none}
+.stop-lab a{display:inline-block;margin-top:.15rem}
