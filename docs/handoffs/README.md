@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-21-story-guide-build](2026-10-21-story-guide-build.md): "Read with the map" build part 1, Rioja + Priorat data, format, view, layers (#127, #148, 21 Oct 2026)
 - [2026-10-21-story-guide-mock](2026-10-21-story-guide-mock.md): "Read with the map" mock rounds 2-3, Rioja + Priorat, 13-guide rule (#127, #148, 21 Oct 2026)
 - [2026-10-20-alike-cards](2026-10-20-alike-cards.md): "If you like this, try" cards say what differs; Navarra card photo trimmed (#126, 20 Oct 2026)
 - [2026-10-20-flaky-study-tests](2026-10-20-flaky-study-tests.md): Study double tap on "Got it" fixed, flaky Study tests #83 (20 Oct 2026)
