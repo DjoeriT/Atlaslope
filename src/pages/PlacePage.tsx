@@ -371,7 +371,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} extra={story && !tour && (
-        <a className="pg-back pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}><TourIcon /> {strings.story.jumpToTour}</a>
+        <a className="pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}><TourIcon /> {strings.story.jumpToTour}</a>
       )} />
       <div className="pg-body">
       <div className="pg-listing">
