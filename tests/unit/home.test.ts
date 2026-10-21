@@ -191,4 +191,15 @@ describe('map tours on the Guides page', () => {
     expect(html).toContain('<p class="showall"><a href="#">Show all guides</a></p>');
     expect(html.match(/class="tour">Map tour</g)!.length).toBeGreaterThanOrEqual(tours.length);
   });
+  it('says "cropped and resized" in the hero card credit (QA S3)', () => {
+    expect(html).toMatch(/Card photos:[^<]*(<[^>]+>[^<]*)*cropped and resized<\/figcaption>/);
+  });
+
+  it('ships a 404 page with the band, the one line and links Home, Atlas, Guides (QA S1)', () => {
+    const nf = readFileSync('public/404.html', 'utf8');
+    expect(nf).toContain('noindex');
+    expect(nf).toContain("This page isn't here.");
+    for (const href of ['./', 'atlas/', 'guides/']) expect(nf).toContain(`<a href="${href}">`);
+    expect(nf).toContain('class="sitebar"');
+  });
 });

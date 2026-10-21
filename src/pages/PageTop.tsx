@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { SiteBar } from '../app/TopBar';
 import { selectionToHash } from '../url';
 import { strings } from '../strings';
@@ -10,7 +10,7 @@ import type { Selection } from '../url';
  * since a guide is part of the atlas. Atlas goes back to the page's place on the map (site visual review, 18 Oct 2026: one bar on every
  * page, no "Back to map" beside Atlas, two controls that meant the same).
  * `title` is the page's name, which slides into the bar once the big title has scrolled away (pages.css, scroll-linked motion). */
-export function PageTop({ tree, go, back, title }: { tree: Tree; go: Go; back: Selection; title?: string }) {
+export function PageTop({ tree, go, back, title, extra }: { tree: Tree; go: Go; back: Selection; title?: string; extra?: ReactNode }) {
   return (
     <>
       <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title} />
@@ -20,6 +20,7 @@ export function PageTop({ tree, go, back, title }: { tree: Tree; go: Go; back: S
         onClick={(e) => { e.preventDefault(); go(back); }}>
         <MapIcon /> {strings.topBar.showMap}
       </a>
+      {extra}
       <ShowMap go={go} back={back} name={title} />
     </>
   );

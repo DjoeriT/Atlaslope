@@ -5,13 +5,15 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Guide } from '../facts';
 import { strings } from '../strings';
 import type { Place } from '../tree';
-import { DWELL_MS, pickStep, readingLine, stopOf, targetOf, type Cam } from './camera';
+import { DWELL_MS, holdSteps, pickStep, readingLine, spreadRows, stopOf, targetOf, type Cam } from './camera';
 import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
-import { loadStory } from './load';
-import { sectionSelector, sectionSteps, stepOfLink } from './steps';
+import { anchorOf, stepOfLink } from './steps';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, type Credited } from './view';
+
+/** Each step holds at least this much scroll, so a normal flick cannot skip one whose link sits close to the next (card 3, 21 Oct 2026). */
+const HOLD_PX = 120;
 
 const t = strings.story;
 
@@ -21,17 +23,18 @@ export interface FlyAsk { chapter: string; index: number; n: number }
 interface Props {
   place: Place;
   guide: Guide;
+  story: Story;
   fly?: FlyAsk;
   onHide(): void;
 }
 
-export function GuideMap({ place, guide, fly, onHide }: Props) {
-  const story = loadStory(place.id) as Story;
+export function GuideMap({ place, guide, story, fly, onHide }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const mapEl = useRef<HTMLDivElement>(null);
   const smap = useRef<StoryMap | null>(null);
   const [active, setActive] = useState(0);
   const [moved, setMoved] = useState(false);
+  const [creditOpen, setCreditOpen] = useState(false);
   const [credit, setCredit] = useState<{ shown: Credited[]; imagery: boolean }>({ shown: [], imagery: true });
   const [named, setNamed] = useState<Record<string, LngLat>>({});
   const shownStep = useRef(0);
@@ -69,32 +72,40 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
     smap.current = m;
     m.show(views[0], true);
     // The column appears beside text that reflows; MapLibre needs its new size.
+    // On a phone and a tablet the credit line is folded behind the map's own "i" button.
+    const iBtn = mapEl.current?.querySelector('.maplibregl-ctrl-attrib-button');
+    const toggleCredit = () => setCreditOpen((o) => !o);
+    iBtn?.addEventListener('click', toggleCredit);
     const ro = new ResizeObserver(() => m.map.resize());
     ro.observe(mapEl.current as HTMLDivElement);
-    return () => { ro.disconnect(); m.remove(); smap.current = null; };
+    return () => { iBtn?.removeEventListener('click', toggleCredit); ro.disconnect(); m.remove(); smap.current = null; };
   }, [story]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Scrolling: the chapter whose top has passed the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
+  // Scrolling: the step whose anchor (its fly link, or its chapter for an overview) is nearest above the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
   useEffect(() => {
     const page = wrap.current?.closest<HTMLElement>('.pg');
     if (!page) return;
     const narrow = matchMedia('(max-width: 47.5em)');
-    const sections = sectionSteps(story);
+    const anchors = story.steps.map((st) => anchorOf(guide, st));
     let last = -1;
     const pick = () => {
       const bar = page.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
       const areaTop = narrow.matches ? wrap.current?.getBoundingClientRect().bottom ?? bar : bar;
-      const tops = sections.map((s) => page.querySelector(sectionSelector(s.chapter))?.getBoundingClientRect().top ?? Infinity);
+      const tops = holdSteps(spreadRows(anchors.map((a) => page.querySelector(a)?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
       const i = pickStep(tops, readingLine(areaTop, innerHeight, narrow.matches));
-      if (i !== last) { last = i; setActive(sections[i].step); }
+      if (i !== last) { last = i; setActive(i); }
     };
     let raf = 0;
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; pick(); }); };
     page.addEventListener('scroll', onScroll, { passive: true });
     addEventListener('resize', onScroll);
+    // Lazy photos load as they near the screen and shift the links by a few pixels without a scroll: look again whenever the guide's height changes.
+    const grow = new ResizeObserver(onScroll);
+    const listing = page.querySelector('.pg-listing');
+    if (listing) grow.observe(listing);
     pick();
-    return () => { page.removeEventListener('scroll', onScroll); removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
-  }, [story]);
+    return () => { grow.disconnect(); page.removeEventListener('scroll', onScroll); removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
+  }, [story, guide]);
 
   // Map moves wait for the last one to land (DWELL_MS), so a fast scroll does not queue flights.
   useEffect(() => {
@@ -138,7 +149,7 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
         </p>
         <div className="story-map" ref={mapEl} />
         {moved && <button type="button" className="story-recentre" onClick={recentre}>{t.recentre}</button>}
-        <p className="story-credit">
+        <p className={creditOpen ? 'story-credit open' : 'story-credit'}>
           {parts.map((p, i) => <span key={i}>{i > 0 && ' · '}<span className="long">{p.long}</span><span className="short">{p.short}</span></span>)}
         </p>
       </div>

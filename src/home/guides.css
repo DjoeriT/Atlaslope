@@ -20,7 +20,7 @@
 .gl .jump{display:flex;flex-wrap:wrap;gap:0 1.5rem;margin-bottom:2rem}
 .gl .jump a,.gl .more a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.25em}
 .gl .more{margin:1.25rem 0 0}.gl .more a{font-weight:500}
-.gl .region{max-width:none;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--ink)}
+.gl .region{scroll-margin-top:calc(var(--bar) + 1rem);max-width:none;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--ink)}
 .page-body .gl .region + .region{margin-top:3rem}
 .gl .rowh{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.25rem}
 .gl .rowh h2{font-size:1.6rem;margin:0}

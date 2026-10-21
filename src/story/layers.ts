@@ -3,12 +3,13 @@
 // Colours, widths and opacities are design choices from the approved mock (Review/mock-story-guide-v3/README.md, "Fact or design choice").
 import type { ExpressionSpecification, FilterSpecification, GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
+import { loadJson } from '../map/dataFile';
 import slopeTints from '../../data/story/slope-tints.json';
-import { CLIMATE_GROUPS, NO_CLIMATE_COLOR } from '../map/climate';
+import { CLIMATE_GROUPS } from '../map/climate';
 import { strings } from '../strings';
 import { storyFiles } from './files';
 import type { Cam } from './camera';
-import { legendClasses, nearNames, type NamePoint } from './layerRules';
+import { GEOLOGY_MINZOOM, legendClasses, nearNames, rockKey, SLOPE_KEY_COLOR, type NamePoint } from './layerRules';
 import type { LngLat, Story } from './format';
 import type { StopView } from './storyMap';
 import type { Credited } from './view';
@@ -62,32 +63,49 @@ export function storyLayers(): StoryLayers {
       map.addLayer({
         id: 'story-koppen', type: 'fill', source: 'story-koppen', filter: ['==', ['get', 'box'], 'main'], layout: { visibility: 'none' },
         paint: {
-          'fill-color': ['match', ['get', 'code'], ...CLIMATE_GROUPS.flatMap((g) => g.codes.flatMap((c) => [c, g.color])), NO_CLIMATE_COLOR] as unknown as ExpressionSpecification,
-          'fill-opacity': 0.36, 'fill-antialias': false,
+          // Lighter, so the land shows through (owner picks 21 Oct 2026); the small "Other" classes are left untinted, as the chart's "Other" is.
+          'fill-color': ['match', ['get', 'code'], ...CLIMATE_GROUPS.flatMap((g) => g.codes.flatMap((c) => [c, g.color])), 'rgba(0,0,0,0)'] as unknown as ExpressionSpecification,
+          'fill-opacity': 0.24, 'fill-antialias': false,
         },
       }, 'story-fade');
     } else {
-      map.addSource('story-geology', { type: 'raster', tiles: [GEOLOGY], tileSize: 512, minzoom: 10 });
+      map.addSource('story-geology', { type: 'raster', tiles: [GEOLOGY], tileSize: 512, minzoom: GEOLOGY_MINZOOM });
       map.addLayer({ id: 'story-geology', type: 'raster', source: 'story-geology', layout: { visibility: 'none' }, paint: { 'raster-opacity': 0.55, 'raster-fade-duration': 150 } }, 'story-fade');
     }
+  }
+
+  function swatch(color: string, label: string) {
+    const item = document.createElement('span');
+    const i = document.createElement('i');
+    i.style.background = color;
+    const b = document.createElement('b');
+    b.textContent = label;
+    item.append(i, b);
+    return item;
   }
 
   function showLegend(view: StopView, climate: boolean, geology: boolean) {
     if (!legend) return;
     const l = strings.story.legend;
+    // The slope tint is always on; its key shows where the stop's own line is about steepness.
+    const slope = view.step.measure?.kind === 'steep' && !!story && !!storyFiles(story.id).slope;
     legend.replaceChildren();
-    legend.hidden = !(climate || geology);
-    if (geology) { legend.textContent = l.geology; return; } // the service's own legend lists about 230 numbered colours and no names
+    legend.hidden = !(climate || geology || slope);
+    if (geology && story) {
+      legend.append(l.geology);
+      for (const r of rockKey(story.id)) legend.append(swatch(r.color, r.label));
+    }
+    if (slope) legend.append(swatch(SLOPE_KEY_COLOR, l.slope));
     if (!climate) return;
     legend.append(l.climate);
     for (const c of legendClasses(view.step.focus)) {
       const item = document.createElement('span');
-      const swatch = document.createElement('i');
-      swatch.style.background = c.color;
+      const sw = document.createElement('i');
+      sw.style.background = c.color;
       const long = document.createElement('b'), short = document.createElement('b');
       long.className = 'lg'; long.textContent = c.label;
       short.className = 'sh'; short.textContent = c.short;
-      item.append(swatch, long, short);
+      item.append(sw, long, short);
       legend.append(item);
     }
   }
@@ -133,18 +151,18 @@ export function storyLayers(): StoryLayers {
         map.addLayer({ id: 'story-names-dot', type: 'circle', source: 'story-names', filter: of('town'),
           paint: { 'circle-radius': 2.6, 'circle-color': '#FFFFFF', 'circle-stroke-color': 'rgba(20,20,20,.9)', 'circle-stroke-width': 1 } });
         map.addLayer({ id: 'story-names-town', type: 'symbol', source: 'story-names', filter: of('town'),
-          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 13, 'text-anchor': 'left', 'text-offset': [0.6, 0], 'symbol-sort-key': 1 }, paint: HALO });
+          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 13, 'text-anchor': 'left', 'text-offset': [1.3, 0], 'symbol-sort-key': 1 }, paint: HALO });
         map.addLayer({ id: 'story-names-range', type: 'symbol', source: 'story-names', filter: of('range'),
-          layout: { 'text-field': ['upcase', ['get', 'name']], 'text-font': FONT, 'text-size': 11, 'text-letter-spacing': 0.14, 'text-max-width': 8, 'symbol-sort-key': 0 }, paint: HALO });
+          layout: { 'text-field': ['upcase', ['get', 'name']], 'text-font': FONT, 'text-size': 11, 'text-letter-spacing': 0.14, 'text-max-width': 8, 'text-anchor': 'left', 'text-justify': 'left', 'text-offset': [1.6, 0], 'symbol-sort-key': 0 }, paint: HALO });
         map.addLayer({ id: 'story-names-peak', type: 'symbol', source: 'story-names', minzoom: 10, filter: of('peak'),
-          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 11, 'text-max-width': 7, 'symbol-sort-key': 2 }, paint: HALO });
+          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 11, 'text-max-width': 7, 'text-anchor': 'left', 'text-justify': 'left', 'text-offset': [1.6, 0], 'symbol-sort-key': 2 }, paint: HALO });
       }
 
       // The three Rioja zone names (step layer "zonelabels", the climate and zone steps); the polygon source puts each name inside its zone.
       if (s.id === 'rioja') {
         // One label point per zone: the centroid of its largest part (a MultiPolygon would be named once per part).
         map.addSource('story-zones', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-        void fetch(zonesUrl).then((r) => r.json()).then((fc: GeoJSON.FeatureCollection) => {
+        void loadJson<GeoJSON.FeatureCollection>(zonesUrl).then((fc) => {
           (map.getSource('story-zones') as GeoJSONSource | undefined)?.setData(zoneLabelPoints(fc));
         }).catch(() => {});
         map.addLayer({ id: 'story-zonelabels', type: 'symbol', source: 'story-zones', layout: { visibility: 'none', 'text-field': ['upcase', ['get', 'zone']], 'text-font': FONT, 'text-size': 13, 'text-letter-spacing': 0.14, 'text-max-width': 6 }, paint: HALO });
@@ -170,7 +188,14 @@ export function storyLayers(): StoryLayers {
       if (geology) ensure(map, 'geology');
       vis(map, 'story-koppen', koppen);
       vis(map, 'story-geology', geology);
+      // The geology tiles stop at map-sheet edges (a hard rectangle): a deeper fade outside the place hides it and keeps the eye on the place.
+      if (map.getLayer('story-fade')) map.setPaintProperty('story-fade', 'fill-opacity', geology ? 0.6 : 0.25);
       vis(map, 'story-zonelabels', on.includes('zonelabels'));
+      // The stop's own zone is named by the stop bar and holds the stop's pin: its label would sit under the pin, so it is left off.
+      if (map.getLayer('story-zonelabels')) {
+        const own = view.step.focus.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
+        map.setFilter('story-zonelabels', ['!=', ['get', 'zone'], own]);
+      }
       showLegend(view, koppen, geology);
       if (map.getLayer('story-names-town')) showNames(map, view, cam);
       return hasRivers ? ['rivers', ...on] : on;

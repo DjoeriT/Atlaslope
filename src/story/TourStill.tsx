@@ -4,13 +4,11 @@
 import { useEffect, useRef } from 'react';
 import { createMap } from '../map/createMap';
 import { DEFAULT_MENU } from '../map/layers';
-import { loadStory } from './load';
 import type { Story } from './format';
 
-export function TourStill({ id }: { id: string }) {
+export function TourStill({ story }: { story: Story }) {
   const el = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const story = loadStory(id) as Story;
     // The first stop with a fixed camera (the opening view when none has one).
     const cam = story.steps.slice(1).find((s) => s.camera.center)?.camera ?? story.steps[0].camera;
     const [lng, lat] = cam.center ?? [-3.7, 40.4];
@@ -34,6 +32,6 @@ export function TourStill({ id }: { id: string }) {
     });
     m.once('load', () => io.observe(el.current as HTMLDivElement));
     return () => { io.disconnect(); cancelAnimationFrame(raf); ctl.remove(); };
-  }, [id]);
+  }, [story]);
   return <div className="pg-tour-still" ref={el} aria-hidden="true" {...{ inert: '' }} />;
 }

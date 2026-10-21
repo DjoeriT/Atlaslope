@@ -1,6 +1,7 @@
 // Where each step of a map tour sits on the guide page (owner, 21 Oct 2026: the tour is folded into the guide, layout A).
-// Scrolling follows chapters: while a chapter is in view the map shows that chapter's first step (the lede shows the opening view).
-// The guide's own fly links and zone cards fly to their exact step. A link's index is the guide page's numbering: the chapter's
+// Scrolling follows the steps in reading order: a step with a guide fly link (or zone card) comes up when that link crosses the
+// reading line; an overview keeps its chapter's top, and the opening view the lede, as anchor. Every step is reached, and "Stop n of N"
+// counts 1, 2, 3 as the reader goes down. A click on a link still flies to its exact step. A link's index is the guide page's numbering: the chapter's
 // fly[] first, then its cards[] (PlacePage, `pill`).
 import type { Guide } from '../facts';
 import type { Story, StoryStep } from './format';
@@ -19,12 +20,12 @@ export function stepOfLink(guide: Guide, story: Story, chapter: string, index: n
   return story.steps.findIndex((s) => s.chapter === chapter && linkIndex(guide, s) === index);
 }
 
-/** The sections the map follows, in reading order: the lede (chapter null) and each chapter the tour visits, with the step it shows. */
-export function sectionSteps(story: Story): Array<{ chapter: string | null; step: number }> {
-  const out: Array<{ chapter: string | null; step: number }> = [];
-  story.steps.forEach((s, i) => { if (!out.some((o) => o.chapter === s.chapter)) out.push({ chapter: s.chapter, step: i }); });
-  return out;
-}
+/** The attribute value the guide page puts on a fly link or zone card pill (PlacePage, `pill`). */
+export const flyKey = (chapter: string, index: number): string => `${chapter}.${index}`;
 
-/** The page element a section's map step starts at: the guide's lede, or the chapter's block. */
-export const sectionSelector = (chapter: string | null): string => (chapter === null ? '.pg-spine' : `#terroir-${chapter}`);
+/** The page element a step comes up at: its own fly link, else its chapter's block (an overview), else the guide's lede. */
+export function anchorOf(guide: Guide, step: StoryStep): string {
+  if (step.chapter === null) return '.pg-spine';
+  const i = linkIndex(guide, step);
+  return i === undefined ? `#terroir-${step.chapter}` : `[data-fly="${flyKey(step.chapter, i)}"]`;
+}

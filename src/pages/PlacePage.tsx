@@ -21,7 +21,9 @@ import '../styles/pages.css';
 import '../story/story.css';
 import { Img } from '../cards/Img';
 import type { FlyAsk } from '../story/GuideMap';
-import { hasStory, storyStops } from '../story/ids';
+import { hasStory, storyOf } from '../story/ids';
+import type { Story } from '../story/format';
+import { flyKey } from '../story/steps';
 import { TourBand } from '../story/TourBand';
 
 // The map tour's column and engine load only when it opens (dist/story/, Tools/check.sh).
@@ -103,8 +105,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const next = nextRegion(tree, place.region);
   const guide = guideOf(place.id);
   // "Map tour" shows only where a story file exists; the stop count loads lazily so the atlas bundle holds no tour content.
-  const [stops, setStops] = useState<number>();
-  useEffect(() => { if (hasStory(place.id)) storyStops(place.id).then(setStops); }, [place.id]);
+  const [story, setStory] = useState<Story>();
+  useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
   // Focus follows the map: to its Hide map control on open (done in GuideMap), back to "Open the map" on hide. A pending fly is dropped on hide.
@@ -136,7 +138,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       </>
     );
     return tour ? (
-      <a key={`${chapter}.${index}`} className="fly" href={selectionToHash(to)} aria-label={t.flyLabel(label)} title={t.flyLabel(label)}
+      <a key={`${chapter}.${index}`} className="fly" data-fly={flyKey(chapter, index)} href={selectionToHash(to)} aria-label={t.flyLabel(label)} title={t.flyLabel(label)}
         onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); setFlyAsk({ chapter, index, n: (flyAsk?.n ?? 0) + 1 }); }}>{body}</a>
     ) : <Link key={`${chapter}.${index}`} className="fly" to={to} go={go} label={t.flyLabel(label)}>{body}</Link>;
   };
@@ -368,7 +370,9 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} extra={story && !tour && (
+        <a className="pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}><TourIcon /> {strings.story.jumpToTour}</a>
+      )} />
       <div className="pg-body">
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
@@ -401,7 +405,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
                 {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
               </header>
               {/* Outside the header, which is a reading measure: the band spans the whole guide column (mock b3). */}
-              {guide && stops !== undefined && !tour && <TourBand id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
+              {guide && story && !tour && <TourBand id={place.id} story={story} minutes={guide.minutes} go={go} />}
               </>
             )}
 
@@ -538,12 +542,17 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
           </main>
         </div>
       </div>
-      {tour && guide && (
+      {tour && guide && story && (
         <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} fly={flyAsk} onHide={hideMap} />
+          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onHide={hideMap} />
         </Suspense>
       )}
       </div>
     </div>
   );
 }
+
+/** A route with two stops, drawn like the "Show map" icon (same stroke, size and rounding), for the Map tour link beside it. */
+const TourIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="18" r="2" /><circle cx="18" cy="6" r="2" /><path d="M8 18h6a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h6" /></svg>
+);

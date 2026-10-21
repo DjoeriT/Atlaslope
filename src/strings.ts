@@ -433,6 +433,8 @@ export const strings = {
   // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
     open: 'Map tour',
+    /** The one-line link at the top of a guide that has a tour; it scrolls to the band. */
+    jumpToTour: 'Map tour',
     // The band under the guide's lede (B3, owner 21 Oct 2026) and the bar over the map column.
     kickerMap: 'AtlaSlope map',
     bandTitle: (stops: number) => `Map tour · ${stops} places to fly to`,
@@ -453,7 +455,10 @@ export const strings = {
     // The one-line legend on the map: the climate classes (names from the app's climate view, short forms for a phone) or the rock colours.
     legend: {
       climate: 'Climate:',
-      geology: 'Colours: rock types, IGME MAGNA 50',
+      geology: 'Rock beneath the soil:',
+      /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), in English (IGME's Spanish unit names, rendered faithfully), per story (colours: src/story/layerRules.ts). */
+      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvium and floodplain' }, priorat: { slate: 'Hornfelsed slates' } } as Record<string, Record<string, string>>,
+      slope: 'Steeper than 30% (about 17°)',
       short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
     },
     factLabel: (where: string) => `Fact: ${where}`,
