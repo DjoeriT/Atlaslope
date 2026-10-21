@@ -25,4 +25,4 @@
 - Fixed: stub tests for each reason (height sign and 150 m threshold, climate, climate-only lead, dropped repeat); height rounds the same
   up and down (+125 and -125 m both read 150 m); the trim test fails on an entry that is not its place's card photo.
 - Kept: the region article list matches display names (checked correct); the trim hash uses the 480 file, like the Guides crops.
-- Owner copy call: "on cold, dry steppe" (Köppen BSk) means a cool yearly average, not cold winters. Alternative: "on cool, dry steppe".
+- Owner copy call (21 Oct 2026): Köppen BSk reads "cool, dry steppe" on the cards (was "cold"; it means a cool yearly average, not cold winters).
