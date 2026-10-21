@@ -30,7 +30,7 @@ Long LeadBot session (far past 150K; builders here were capped at 60 turns, a fr
   register script runs locally only.
 
 ## Open
-1. **Release 63** ready on main (404 page, credit fix, speed wins, register script): needs his "publish release 63".
+1. Release 63: started on his word, 21 Oct (tester note PR #181; the tag is the record).
 2. **Learn build** on `claude/study-course` (pushed, no PR): 31 of 75 places need checked square crops (crop test must cover Learn
    photos); UI specs that assert "Study"; new specs (intro vs returning, course filter, `#learn`); glossary; CLAUDE.md vocabulary;
    tidy `Doors.tsx` indent; build, `Tools/check.sh`, shots; ReviewBot on copy; show him; PR. Report: `Review/learn-start/card.md`.
