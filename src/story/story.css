@@ -69,7 +69,7 @@
 .story-factpop .maplibregl-popup-close-button:focus-visible{outline:2px solid #fff}
 @media (max-width:61rem){
   /* Under the chip, clear of the locator and the credit; full class names, wrapping to a second line. */
-  .story-legend{top:3.1rem;left:.75rem;right:3rem;max-width:none;white-space:normal;font-size:.66rem}
+  .story-legend{top:3.1rem;left:.75rem;right:.75rem;max-width:none;white-space:nowrap;overflow-x:auto;scrollbar-width:none;font-size:.66rem}
   .story-legend span{margin-left:0;margin-right:.55rem}
 }
-@media (max-width:61rem){.story-credit{font-size:.66rem}.story-credit .long{display:none}.story-credit .short{display:inline}}
+@media (max-width:61rem){.story-credit{font-size:.6rem;white-space:nowrap;overflow:hidden;padding:.3rem .5rem}.story-credit .long{display:none}.story-credit .short{display:inline}}
