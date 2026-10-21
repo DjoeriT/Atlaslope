@@ -1,0 +1,209 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (transcribed from Review/mock-story-guide-v3/build.py, 21 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points marked [A] in the mock are approximate.",
+ "id": "priorat",
+ "cover": {
+  "photo": "priorat-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     1.05,
+     41.55
+    ],
+    "zoom": 7.6,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "priorat",
+   "chip": "Priorat in Catalonia"
+  },
+  {
+   "id": "montsant",
+   "chapter": "bowl",
+   "fly": 0,
+   "camera": {
+    "center": [
+     0.8,
+     41.235
+    ],
+    "zoom": 10.4,
+    "pitch": 68,
+    "bearing": 0
+   },
+   "focus": "priorat",
+   "photo": "catalunya-2",
+   "measure": {
+    "place": "priorat",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": [
+      0.8155,
+      41.2756
+     ],
+     "label": "Sierra de Montsant",
+     "text": "The Sierra de Montsant closes Priorat to the north.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22"
+     ]
+    },
+    {
+     "at": "El Lloar",
+     "label": "El Lloar",
+     "text": "The crests of El Lloar and La Figuera lie to the west.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22",
+      "priorat-pliego:p23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "siurana",
+   "chapter": "bowl",
+   "fly": 1,
+   "camera": {
+    "center": [
+     0.78752,
+     41.18187
+    ],
+    "zoom": 11.2,
+    "pitch": 45,
+    "bearing": 0
+   },
+   "focus": "priorat",
+   "dot": false,
+   "markers": [
+    {
+     "at": [
+      0.78752,
+      41.18187
+     ],
+     "label": "Riu de Siurana"
+    }
+   ],
+   "photo": "priorat-siurana-1",
+   "measure": {
+    "place": "priorat",
+    "kind": "low"
+   },
+   "facts": [
+    {
+     "at": [
+      0.78752,
+      41.18187
+     ],
+     "label": "Riu de Siurana",
+     "text": "The Siurana river crosses the zone from northeast to southwest.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "scala",
+   "chapter": "bowl",
+   "fly": 2,
+   "camera": {
+    "center": [
+     0.8104,
+     41.2565
+    ],
+    "zoom": 12.4,
+    "pitch": 64,
+    "bearing": 0
+   },
+   "focus": "priorat",
+   "photo": "priorat-scala-dei-1",
+   "facts": [
+    {
+     "at": [
+      0.8104,
+      41.2565
+     ],
+     "label": "Scala Dei",
+     "text": "The charterhouse at the foot of the Montsant put seven villages under the Prior.",
+     "cite": [
+      "priorat-pliego:p22"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "chapter": "air",
+   "camera": {
+    "place": "priorat",
+    "pitch": 50,
+    "bearing": 0,
+    "zoomShift": -0.3
+   },
+   "focus": "priorat",
+   "chip": "Priorat, looking north to the Montsant"
+  },
+  {
+   "id": "licorella",
+   "chapter": "licorella",
+   "fly": 0,
+   "camera": {
+    "pitch": 72,
+    "bearing": 330,
+    "zoomShift": 0.5
+   },
+   "focus": "priorat",
+   "layers": [
+    "geology"
+   ],
+   "photo": "priorat-porrera-1",
+   "measure": {
+    "place": "priorat",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Porrera",
+     "label": "Porrera",
+     "text": "The hills are made of ancient slate, formed between 416 and 318 million years ago.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22",
+      "priorat-pliego:p23"
+     ]
+    },
+    {
+     "at": "Gratallops",
+     "label": "Gratallops",
+     "text": "Licorella: flaky, brittle stones the colour of darkened copper.",
+     "cite": [
+      "priorat-pliego:p21",
+      "priorat-pliego:p22",
+      "priorat-pliego:p23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "chapter": "wines",
+   "camera": {
+    "place": "priorat",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "priorat",
+   "chip": "Priorat"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Priorat."
+ }
+}
