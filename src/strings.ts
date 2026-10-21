@@ -470,11 +470,11 @@ export const strings = {
       dem: 'Terrain Mapzen',
       demShort: 'Mapzen',
       rivers: 'Rivers, names: IGN/SCNE CC BY 4.0',
-      riversShort: 'Rivers, names IGN',
+      riversShort: 'Rivers, names: IGN CC BY 4.0',
       geology: 'Source: IGME, MAGNA 50',
       geologyShort: 'Source: IGME, MAGNA 50',
       koppen: 'Climate: Beck et al. 2023 CC BY',
-      koppenShort: 'Beck 2023',
+      koppenShort: 'Beck et al. 2023 CC BY',
     },
   },
 } as const;
