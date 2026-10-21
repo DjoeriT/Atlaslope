@@ -86,6 +86,7 @@
 .pg.tour .pg-jump{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none;mask-image:none;-webkit-mask-image:none}
 .pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 4.5rem)}
 @media (max-width:47.5em){.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 241px + 4rem)}}
-/* The rock key has long IGME names: it wraps beside the zoom control on a column, and stays one scrolling line on a phone strip. */
-.pg-tourmap .story-legend{white-space:normal;right:3.6rem;max-width:none}
-@media (max-width:47.5em){.pg-tourmap .story-legend{white-space:nowrap;overflow-x:auto}}
+/* The rock key has long unit names: it wraps beside the zoom control, on a column and on a phone strip (never cut off). */
+.pg-tourmap .story-legend{white-space:normal;overflow:visible;right:3.6rem;max-width:none}
+/* The floating "Show map" button is for the guide alone: while the tour map is open it only covers the text (owner card 3, 21 Oct 2026). */
+.pg.tour .showmap{display:none}

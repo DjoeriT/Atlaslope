@@ -5,12 +5,15 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Guide } from '../facts';
 import { strings } from '../strings';
 import type { Place } from '../tree';
-import { DWELL_MS, pickStep, readingLine, spreadRows, stopOf, targetOf, type Cam } from './camera';
+import { DWELL_MS, holdSteps, pickStep, readingLine, spreadRows, stopOf, targetOf, type Cam } from './camera';
 import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
 import { anchorOf, stepOfLink } from './steps';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, type Credited } from './view';
+
+/** Each step holds at least this much scroll, so a normal flick cannot skip one whose link sits close to the next (card 3, 21 Oct 2026). */
+const HOLD_PX = 120;
 
 const t = strings.story;
 
@@ -88,7 +91,7 @@ export function GuideMap({ place, guide, story, fly, onHide }: Props) {
     const pick = () => {
       const bar = page.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
       const areaTop = narrow.matches ? wrap.current?.getBoundingClientRect().bottom ?? bar : bar;
-      const tops = spreadRows(anchors.map((a) => page.querySelector(a)?.getBoundingClientRect().top ?? Infinity));
+      const tops = holdSteps(spreadRows(anchors.map((a) => page.querySelector(a)?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
       const i = pickStep(tops, readingLine(areaTop, innerHeight, narrow.matches));
       if (i !== last) { last = i; setActive(i); }
     };

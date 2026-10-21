@@ -8,7 +8,7 @@ import { CLIMATE_GROUPS } from '../map/climate';
 import { strings } from '../strings';
 import { storyFiles } from './files';
 import type { Cam } from './camera';
-import { legendClasses, nearNames, rockKey, SLOPE_KEY_COLOR, type NamePoint } from './layerRules';
+import { GEOLOGY_MINZOOM, legendClasses, nearNames, rockKey, SLOPE_KEY_COLOR, type NamePoint } from './layerRules';
 import type { LngLat, Story } from './format';
 import type { StopView } from './storyMap';
 import type { Credited } from './view';
@@ -68,7 +68,7 @@ export function storyLayers(): StoryLayers {
         },
       }, 'story-fade');
     } else {
-      map.addSource('story-geology', { type: 'raster', tiles: [GEOLOGY], tileSize: 512, minzoom: 10 });
+      map.addSource('story-geology', { type: 'raster', tiles: [GEOLOGY], tileSize: 512, minzoom: GEOLOGY_MINZOOM });
       map.addLayer({ id: 'story-geology', type: 'raster', source: 'story-geology', layout: { visibility: 'none' }, paint: { 'raster-opacity': 0.55, 'raster-fade-duration': 150 } }, 'story-fade');
     }
   }

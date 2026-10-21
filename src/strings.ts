@@ -456,8 +456,8 @@ export const strings = {
     legend: {
       climate: 'Climate:',
       geology: 'Rock beneath the soil:',
-      /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), per story (colours: src/story/layerRules.ts). */
-      rocks: { rioja: { clayLimestone: 'Arenas, areniscas calcáreas y arcillas ocres (facies de Haro)', ferrousClay: 'Limolitas y arcillas rojas', alluvial: 'Aluviales y llanura de inundación' }, priorat: { slate: 'Pizarras corneanas' } } as Record<string, Record<string, string>>,
+      /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), in English (IGME's Spanish unit names, rendered faithfully), per story (colours: src/story/layerRules.ts). */
+      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvial deposits and floodplain' }, priorat: { slate: 'Hornfelsed slates' } } as Record<string, Record<string, string>>,
       slope: 'Steeper than 30% (about 17°)',
       short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
     },

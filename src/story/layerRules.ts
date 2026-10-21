@@ -51,3 +51,6 @@ export function rockKey(storyId: string): Array<{ label: string; color: string }
 
 /** The slope tint's own colour (Tools/story/slope_tint.py, #8C2340) for its one-line key. */
 export const SLOPE_KEY_COLOR = '#8C2340';
+
+/** The MAGNA 50 service draws nothing at map zoom 9 and below (blank tiles, checked 21 Oct 2026): its layer starts here, and so does a geology stop's view. */
+export const GEOLOGY_MINZOOM = 10;

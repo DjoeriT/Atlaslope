@@ -18,7 +18,7 @@ async function scrollToLine(page: Page, anchor: string, rank = 0) {
     const map = pg.querySelector('.pg-tourmap')?.getBoundingClientRect().bottom ?? bar;
     const areaTop = narrow ? map : bar;
     const line = areaTop + (innerHeight - areaTop) * (narrow ? 0.3 : 0.45);
-    pg.scrollTop += (pg.querySelector(a) as HTMLElement).getBoundingClientRect().top - (line - 3 - 12 * k);
+    pg.scrollTop += (pg.querySelector(a) as HTMLElement).getBoundingClientRect().top - (line - 3 - 120 * k);
   }, [anchor, rank] as const);
 }
 
@@ -54,7 +54,7 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await scrollToLine(page, '[data-fly="soils.0"]');
   await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
   const key = page.locator('.pg-tourmap .story-legend');
-  await expect(key).toContainText('Aluviales y llanura de inundación');
+  await expect(key).toContainText('Alluvial deposits and floodplain');
   await expect(key).toContainText('Steeper than 30%');
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
 });
@@ -123,7 +123,7 @@ test('the map column comes after the guide in reading order, and the band still 
 });
 
 // Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
-// [step, anchor, place in its row]: links sharing a row are spread 12 px apart in reading order (spreadRows), so the k-th sits k x 12 px lower.
+// [step, anchor, place in its row]: links sharing a row are held 120 px apart in reading order (holdSteps), so the k-th is placed k x 120 px above the line.
 const ORDER: Array<[string, string, number]> = [
   ['intro', '.pg-spine', 0], ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
   ['z-rioja-alta', '[data-fly="climate.0"]', 0], ['z-rioja-alavesa', '[data-fly="climate.1"]', 1], ['z-rioja-oriental', '[data-fly="climate.2"]', 2],
@@ -151,4 +151,41 @@ test('a "Map tour" link at the top of the guide scrolls to the band and gives it
   await open(page, '#place=valdepenas&page');
   await expect(page.locator('h1').first()).toBeVisible();
   await expect(page.locator('.pg-tourjump')).toHaveCount(0);
+});
+
+// Card 3, 21 Oct 2026 (LeadBot's phone preview at 375 px).
+test.describe('phone 375 px', () => {
+  test.use({ viewport: { width: 375, height: 812 } });
+
+  test('stop 1 holds for 120 px of scroll before stop 2 takes over', async ({ page }) => {
+    await open(page, '#place=rioja&page&story');
+    await expect(mapCol(page)).toBeVisible();
+    await scrollToLine(page, '[data-fly="valley.0"]');
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
+    await page.locator('.pg').evaluate((pg) => { pg.scrollTop += 100; });
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
+    await page.locator('.pg').evaluate((pg) => { pg.scrollTop += 40; });
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'sierra');
+  });
+
+  test('the geology layer asks for its tiles whenever its key shows, and the key wraps', async ({ page }) => {
+    const igme: string[] = [];
+    page.on('request', (r) => { if (r.url().includes('mapas.igme.es')) igme.push(r.url()); });
+    await open(page, '#place=rioja&page&story');
+    await scrollToLine(page, '[data-fly="soils.0"]');
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
+    const key = page.locator('.pg-tourmap .story-legend');
+    await expect(key).toContainText('Sands, calcareous sandstones and ochre clays');
+    await expect.poll(() => igme.length, { timeout: 15000 }).toBeGreaterThan(0);
+    // wrapped, not cut off: nothing of the key is hidden sideways
+    expect(await key.evaluate((e) => e.scrollWidth <= e.clientWidth + 1)).toBe(true);
+  });
+
+  test('no floating Show map button while the tour map is open', async ({ page }) => {
+    await open(page, '#place=rioja&page');
+    await expect(page.locator('.showmap')).toBeVisible();
+    await open(page, '#place=rioja&page&story');
+    await expect(mapCol(page)).toBeVisible();
+    await expect(page.locator('.showmap')).toBeHidden();
+  });
 });

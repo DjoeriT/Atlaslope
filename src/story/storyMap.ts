@@ -5,10 +5,11 @@ import { createMap } from '../map/createMap';
 import { DEFAULT_MENU } from '../map/layers';
 import { boundsOf } from '../map/focus';
 import type { Collection } from '../map/boundaries';
-import { flyLegs, stripZoomShift, type Cam, type Target } from './camera';
+import { fitView, flyLegs, stripZoomShift, type Cam, type Target } from './camera';
 import type { LngLat, Story, StoryStep } from './format';
 import { createFacts, type FactView } from './factMarkers';
 import { storyLayers } from './layers';
+import { GEOLOGY_MINZOOM } from './layerRules';
 import { faded, outlined, outside, type Credited } from './view';
 
 /** Terrain height in the story (design choice, stated in the credit line). The app map's own height follows the zoom instead. */
@@ -40,6 +41,18 @@ export interface StoryMap {
   map: MapLibreMap;
   show(view: StopView, instant: boolean): void;
   remove(): void;
+}
+
+/** Up to about 300 points along the features' outlines (for fitting a view to a place's shape, not its box). */
+function outlinePoints(features: Collection['features']): LngLat[] {
+  const all: LngLat[] = [];
+  const walk = (c: unknown) => {
+    if (Array.isArray(c) && typeof c[0] === 'number') all.push([c[0], c[1] as number]);
+    else if (Array.isArray(c)) c.forEach(walk);
+  };
+  features.forEach((f) => walk((f.geometry as { coordinates: unknown }).coordinates));
+  const step = Math.max(1, Math.ceil(all.length / 300));
+  return all.filter((_, i) => i % step === 0);
 }
 
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -124,11 +137,20 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   }
 
   /** The target as a camera; null for a place's bounds before the shapes are in. */
-  function camOf(t: Target): Cam | null {
+  function camOf(t: Target, geology: boolean): Cam | null {
+    const cam = frameOf(t);
+    // The MAGNA service draws nothing below its own scale (blank tiles under zoom 10): a geology stop never looks from further out.
+    return cam && geology ? { ...cam, zoom: Math.max(cam.zoom, GEOLOGY_MINZOOM) } : cam;
+  }
+
+  function frameOf(t: Target): Cam | null {
     if (t.kind === 'view') {
       // The fixed views are tuned for the desktop column; a smaller map (the phone strip) backs off to show the same ground.
       const r = container.getBoundingClientRect();
-      return { ...t, zoom: t.zoom + stripZoomShift(r.width, r.height) };
+      const cam = { ...t, zoom: t.zoom + stripZoomShift(r.width, r.height) };
+      const pts = t.fit ? outlinePoints(featuresOf([t.fit])) : [];
+      // A view that is to show a whole place (the valley overview) backs off, tilt and strip counted, until the place is in.
+      return pts.length ? fitView(cam, pts, r.width, r.height, padding()) : cam;
     }
     const box = boundsOf(featuresOf([t.place]));
     if (!box) return null;
@@ -148,7 +170,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label), anchor: 'left', offset: [16, 0] }).setLngLat(m.at).addTo(map));
     if (v.dot) marks.push(new maplibregl.Marker({ element: el('story-dot') }).setLngLat(v.dot).addTo(map));
     facts.show(v.facts);
-    const cam = camOf(v.target);
+    const cam = camOf(v.target, !!v.step.layers?.includes('geology'));
     lastShown = layers.show(map, v, cam);
     events.onLayers(lastShown, imagery);
     if (!cam) return; // framed once the shapes arrive
