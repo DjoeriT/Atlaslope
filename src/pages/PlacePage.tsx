@@ -395,11 +395,14 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
         <div className="pg-cols">
           <main>
             {spine && (
+              <>
               <header className="pg-spine">
                 <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
                 {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-                {guide && stops !== undefined && !tour && <TourBand id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
               </header>
+              {/* Outside the header, which is a reading measure: the band spans the whole guide column (mock b3). */}
+              {guide && stops !== undefined && !tour && <TourBand id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
+              </>
             )}
 
             {beats.map((b) => (

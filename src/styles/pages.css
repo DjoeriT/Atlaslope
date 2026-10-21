@@ -54,7 +54,7 @@
 .pg-namecover span{font-size:clamp(3rem,8vw,5.5rem)}
 
 /* jump bar */
-.pg-jump{position:sticky;top:calc(var(--bar) + 1px);z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem 0 0;padding:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.pg-jump{position:sticky;top:calc(var(--bar) + 1px);z-index:15;display:flex;gap:.2rem;overflow-x:auto;margin:1.4rem 0 0;padding:0;background:var(--paper);border-bottom:1px solid var(--line)}
 .pg-jump a{flex:none;display:inline-flex;align-items:center;min-height:3rem;padding:0 .8rem;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--ink2);border-bottom:2px solid transparent}
 .pg-jump a:first-child{padding-left:0}
 .pg-jump a:hover{color:var(--ink)}

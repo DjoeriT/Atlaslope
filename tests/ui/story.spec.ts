@@ -30,6 +30,8 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await page.locator('a.story-open').click();
   await expect(page).toHaveURL(/#place=rioja&page&story(&view=.*)?$/);
   await expect(mapCol(page)).toBeVisible();
+  // Opening from the band leaves the reader where the band was, so the step is the chapter in view; at the lede it is the opening view.
+  await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
   await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
   await expect(page.locator('.pg-climate')).toBeVisible(); // the guide's own charts stay
   await expect(page.locator('#taste')).toBeAttached();
