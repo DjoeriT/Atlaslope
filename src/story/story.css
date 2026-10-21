@@ -10,7 +10,8 @@
 .story-grid{display:grid;grid-template-columns:minmax(0,34rem) minmax(0,1fr);border-top:1px solid #D8CFBF}
 .story-text{grid-column:1;grid-row:1;padding:0 2rem}
 .story-mapwrap{grid-column:2;grid-row:1;position:sticky;top:var(--band);height:calc(100dvh - var(--band));background:#1b1b1b}
-.story-map{position:absolute;inset:0}
+/* MapLibre styles its container position:relative; the wrap selector wins over it. */
+.story-mapwrap .story-map{position:absolute;inset:0}
 .story-chip{position:absolute;left:.75rem;top:.75rem;z-index:2;margin:0;padding:.4rem .75rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.9rem;max-width:calc(100% - 6rem)}
 .story-recentre{position:absolute;right:.75rem;bottom:2.25rem;z-index:2;min-height:2.75rem;padding:0 1rem;border:0;border-radius:6px;background:#141414;color:#E9D8B4;font:inherit;font-weight:500;font-size:.9rem;cursor:pointer}
 .story-recentre:focus-visible{outline:3px solid #E9D8B4;outline-offset:2px}

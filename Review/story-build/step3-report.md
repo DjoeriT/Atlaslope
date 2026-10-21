@@ -1,6 +1,6 @@
 # Step 3: story view (BuilderBot, Opus), 21 Oct 2026
 
-State: partly done (see end)
+State: done (card 3), see end
 
 ## Commits
 | Step | Commit | Tests |
@@ -17,8 +17,8 @@ State: partly done (see end)
 ## Timings
 - vitest story-view: 0.4 s; url tests: 0.15 s; tsc: 2 s. No build or full suite run yet.
 
-## State at hand-back (turn 40 cap)
-Partly done. Left: App.tsx route (render StoryView over PlacePage when sel.story, go() equality on story, Escape back to page), button C on PlacePage, full vitest + build, shots. No Esri key in .env.local here: local map is the atlas base.
+## State
+Done. Full vitest 37 files / 353 tests pass (1 s); npm run build ok (2 s, existing chunk-size warning). Shots at the Haro step: shots/story-rioja-haro-desktop.png (1400x850), shots/story-rioja-haro-phone.png (390x844). No Esri key on this Mac: plain base map, as expected. Shots took about 30 s.
 
 ## What differs from the mock
 - MapLibre compact attribution kept (moved above the credit line); mock had it off.
@@ -26,3 +26,4 @@ Partly done. Left: App.tsx route (render StoryView over PlacePage when sel.story
 | 3 route: StoryView over PlacePage on #place=<id>&page&story; Escape and Back return to the page (history.back) | (this commit) | tsc clean |
 | 4 button C under the guide lede, only for ids with a story file | (this commit) | tsc clean |
 | 5 barrel chapter: its last paragraph moves to the Haro stop, as in the mock (rule: an overview step followed by a fly stop of the same chapter) | (this commit) | tsc clean |
+| 6 map container height fix (MapLibre position:relative beat .story-map); full suite, build, shots | (this commit) | vitest 353/353, build ok |
