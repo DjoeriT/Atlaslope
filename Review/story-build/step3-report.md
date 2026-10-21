@@ -25,3 +25,4 @@ Partly done. Left: App.tsx route (render StoryView over PlacePage when sel.story
 - MapLibre compact attribution kept (moved above the credit line); mock had it off.
 - Photos without a photo-focus.json entry use their square-crop focus from src/home/photoCrops.json [A].
 | 3 route: StoryView over PlacePage on #place=<id>&page&story; Escape and Back return to the page (history.back) | (this commit) | tsc clean |
+| 4 button C under the guide lede, only for ids with a story file | (this commit) | tsc clean |

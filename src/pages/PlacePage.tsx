@@ -18,7 +18,10 @@ import { alikePlaces, mosaicPics, nextRegion, swatchOf } from './helpers';
 import { sentences } from './sentence';
 import { Mosaic } from './Mosaic';
 import '../styles/pages.css';
+import '../story/story.css';
 import { Img } from '../cards/Img';
+import { StoryButton } from '../story/StoryButton';
+import { loadStory } from '../story/load';
 
 const t = strings.place.page;
 const tf = strings.facts;
@@ -93,6 +96,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const producers = sheet?.producers?.items ?? [];
   const next = nextRegion(tree, place.region);
   const guide = guideOf(place.id);
+  const story = loadStory(place.id); // "Read with the map" shows only where a story file exists
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
@@ -372,6 +376,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
               <header className="pg-spine">
                 <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
                 {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
+                {guide && story && <StoryButton id={place.id} minutes={guide.minutes} stops={story.steps.length - 1} go={go} />}
               </header>
             )}
 

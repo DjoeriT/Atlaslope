@@ -63,3 +63,11 @@
   .story-chip{font-size:.78rem}
 }
 @media (prefers-reduced-motion:reduce){.story-step{transition:none}}
+
+/* Button C on the guide page */
+.story-open{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:1.25rem 0 .5rem;padding:.9rem 1.5rem;border-radius:6px;background:#141414;color:#E9D8B4;text-decoration:none}
+.story-open .tx{display:flex;flex-direction:column;gap:.1rem}
+.story-open .t{font:400 1.3rem/1.2 var(--serif,Georgia,serif)}
+.story-open .s{font-size:.78rem;color:#C9B48A}
+.story-open svg{flex:none}
+.story-open:focus-visible{outline:3px solid #141414;outline-offset:2px}
