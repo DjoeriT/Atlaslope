@@ -2,7 +2,6 @@
 // storyMap.ts calls `setup` once the map has loaded and `show` on every step; `show` returns what is on the map now, for the credit line.
 // Colours, widths and opacities are design choices from the approved mock (Review/mock-story-guide-v3/README.md, "Fact or design choice").
 import type { ExpressionSpecification, FilterSpecification, GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
-import koppenUrl from '../../data/koppen-spain.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import slopeTints from '../../data/story/slope-tints.json';
 import { CLIMATE_GROUPS, NO_CLIMATE_COLOR } from '../map/climate';
@@ -50,6 +49,7 @@ export function storyLayers(): StoryLayers {
   let last: { map: MapLibreMap; view: StopView; cam: Pick<Cam, 'center' | 'zoom' | 'pitch'> | null } | null = null;
   const added = new Set<string>();
   let hasRivers = false;
+  let koppenUrl: string | undefined;
 
   const vis = (map: MapLibreMap, id: string, on: boolean) => { if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none'); };
 
@@ -58,7 +58,7 @@ export function storyLayers(): StoryLayers {
     if (added.has(what)) return;
     added.add(what);
     if (what === 'koppen') {
-      map.addSource('story-koppen', { type: 'geojson', data: koppenUrl });
+      map.addSource('story-koppen', { type: 'geojson', data: koppenUrl! });
       map.addLayer({
         id: 'story-koppen', type: 'fill', source: 'story-koppen', filter: ['==', ['get', 'box'], 'main'], layout: { visibility: 'none' },
         paint: {
@@ -106,6 +106,7 @@ export function storyLayers(): StoryLayers {
       story = s;
       const f = storyFiles(s.id);
       hasRivers = !!f.rivers;
+      koppenUrl = f.koppen;
       const t = (slopeTints as Record<string, { coordinates: number[][] }>)[s.id];
       if (f.slope && t) {
         map.addSource('story-slope', { type: 'image', url: f.slope, coordinates: t.coordinates as [LngLat, LngLat, LngLat, LngLat] });
@@ -165,7 +166,7 @@ export function storyLayers(): StoryLayers {
       last = { map, view, cam };
       const on = view.step.layers ?? [];
       const koppen = on.includes('koppen'), geology = on.includes('geology');
-      if (koppen) ensure(map, 'koppen');
+      if (koppen && koppenUrl) ensure(map, 'koppen');
       if (geology) ensure(map, 'geology');
       vis(map, 'story-koppen', koppen);
       vis(map, 'story-geology', geology);

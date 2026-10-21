@@ -15,7 +15,9 @@ BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41
 HYDRO = "https://servicios.idee.es/wfs-inspire/hidrografia"
 NGBE = "https://www.ign.es/wfs-inspire/ngbe"
 MAIN = ("Río Ebro", "L'Ebre", "Río Oja", "Río Tirón", "Río Najerilla", "Río Iregua", "Riu de Siurana", "Riu de Montsant")
-SIMPLIFY_DEG = 0.0002  # ~20 m
+SIMPLIFY_DEG = 0.0002  # ~20 m, main rivers
+SIMPLIFY_MINOR_DEG = 0.0012  # ~120 m, other rivers (download budget, 21 Oct 2026)
+MIN_MINOR_DEG = 0.06  # other rivers spanning less than this (about 6 km) are left out
 NS = {"wfs": "http://www.opengis.net/wfs/2.0", "gml": "http://www.opengis.net/gml/3.2",
       "hy-p": "http://inspire.ec.europa.eu/schemas/hy-p/4.0", "gn": "http://inspire.ec.europa.eu/schemas/gn/4.0"}
 
@@ -93,8 +95,12 @@ def rivers(guide):
     for name, lines in sorted(byname.items()):
         if not (name.startswith(("Río ", "Riu ")) or name == "L'Ebre/Río Ebro"):
             continue
-        ls = [[[round(x, 5), round(y, 5)] for x, y in dp(p, SIMPLIFY_DEG)] for p in lines]
-        feats.append({"type": "Feature", "properties": dict({"name": name}, **({"main": True} if name.startswith(MAIN) else {})),
+        main = name.startswith(MAIN)
+        pts = [q for l in lines for q in l]
+        if not main and max(max(q[0] for q in pts) - min(q[0] for q in pts), max(q[1] for q in pts) - min(q[1] for q in pts)) < MIN_MINOR_DEG:
+            continue  # a short creek is invisible at story zoom
+        ls = [[[round(x, 4), round(y, 4)] for x, y in dp(p, SIMPLIFY_DEG if main else SIMPLIFY_MINOR_DEG)] for p in lines]
+        feats.append({"type": "Feature", "properties": dict({"name": name}, **({"main": True} if main else {})),
                       "geometry": {"type": "MultiLineString", "coordinates": ls}})
     path = os.path.join(OUT, "rivers-%s.geojson" % guide)
     json.dump({"type": "FeatureCollection", "features": feats}, open(path, "w"), separators=(",", ":"), ensure_ascii=False)
