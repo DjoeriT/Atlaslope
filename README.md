@@ -44,6 +44,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 - Screenshots: `npm run shots` builds the UI-test build and writes `shots/<view>-<size>.png` (home, atlas, rioja, study, question at desktop, ipad, phone; ignored by git).
   Filter with `--only home,study` and `--sizes desktop,phone`; `--no-build` reuses `dist/uitest`; `--url <base>` uses a running server.
   Needs the Chromium Playwright already has; a failed view logs one line and the run goes on (15 s per view, 3 min overall).
+- Register watch: `python3 Tools/guides/watch_register.py` fetches the EU register list, updates `data/register-snapshot.json` and prints which places changed (`--json`, `--oj <place id>`, `--self-test`); no tokens, opens no issue.
 - Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the full UI suite, which CI runs in four parts on every PR; locally run only the specs you touched).
 
 ## Data
