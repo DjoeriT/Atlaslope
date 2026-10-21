@@ -79,7 +79,7 @@ Accepted mock `Review/mock-story-guide-v1/` (PR #75): text left, sticky map righ
 built yet (`docs/handoffs/2026-10-18-atlas-guide-page.md`). The owner remembers it as a feature, so build it as its own slice on his word.
 Tracked in #127 (related #4).
 Owner 21 Oct 2026: a prominent "Read with the map" button; map stops only from the guide text; first PR Rioja plus Priorat. Which guides
-get it (#148, rule proposed, list pending his approval): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
+get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
 report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)

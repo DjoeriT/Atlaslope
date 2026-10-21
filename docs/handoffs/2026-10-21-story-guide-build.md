@@ -37,7 +37,19 @@ step in `Review/story-build/stepN-report.md`; shots in `Review/story-build/shots
 - MapLibre's "i" credit stays (OSM credit on the plain base); the mock hid it.
 
 ## Next
-Owner looks at the satellite preview, then merge on green CI; then ask "publish release 59".
+Owner saw the satellite preview and said merge on green CI (auto-merge on); then ask "publish release 59".
+
+## Plan for the next guides: a download limit of its own for story data (owner, 21 Oct 2026)
+Incident: PR #171 failed "Download size under 2 MB" (2.24 MB; main 1.93 MB). Fixed by clipping the climate file to Rioja and dropping
+132 of 196 minor Rioja rivers, leaving 2.9 KB of room. Owner decision: keep 2 MB for the main site; story data gets its own limit and
+loads only when a story opens. First card of the next-guides PR, before any new story file:
+1. Story code in its own chunk: `StoryView` loaded with a dynamic `import()` from the guide page, so the atlas bundle carries only the button.
+2. Story data in one place: emit everything a story loads under `dist/story/` (layers per `data/story/<layer>-<id>.*`, content/stories files),
+   so the build can count it apart.
+3. `Tools/check.sh`: "Download size under 2 MB" skips `dist/story/` (rest unchanged); a new check "Story data under 150 KB per story
+   (gzipped, imagery excluded)" sums each story's files. 150 KB is a proposal [A]: Rioja is about 45 KB today, with full rivers about 100 KB.
+4. Optional, on the owner's word: restore the full Rioja river detail (87 KB gzipped) once it no longer counts against the main site.
+Effort: one Sonnet builder card, about 60-80K helper tokens (step 6 measured 42K, the size fix 59K).
 
 ## Cost [V, subagent usage; main thread from the session meter]
 Step 1 57K, step 2 69K, step 3 158K (Opus, one resume), step 4 118K (one resume). Helpers 402K so far against 555K planned for steps 1-4. Step 5 72K, step 6 42K, reviews 36K + 72K, fixes 77K. Helpers about 777K in all against 885K planned. Main thread over 200K context (past the 150K hand-off point at the owner's choice to stay).
