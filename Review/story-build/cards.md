@@ -7,8 +7,8 @@ Branch `claude/story-guide-mock`. One builder at a time. Reports in this folder.
 | Step | Card | Model | Budget | State |
 |---|---|---|---|---|
 | 1 | Data: rivers, names, photos, SOURCES | Sonnet | 120K | done, 57K |
-| 2 | Story format, loader, checks, guides.md | Sonnet | 100K | running |
-| 3 | Story view on the app map, button C | Opus | 250K | ready |
+| 2 | Story format, loader, checks, guides.md | Sonnet | 100K | done, 69K |
+| 3 | Story view on the app map, button C | Opus | 250K | running |
 | 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | ready |
 | 5 | Listing page and home count | Sonnet | 100K | ready |
 | 6 | Unit tests, one Playwright spec (fixtures) | Sonnet | 80K | ready |
@@ -40,6 +40,9 @@ May edit: `src/story/`, `src/url.ts`, `src/pages/PlacePage.tsx`, `src/app/App.ts
 Must not: change the main map's behaviour; no new deps.
 
 ## Card 4: layers
+First: checked 3:2 story crops for rioja-2, rioja-3, rioja-alavesa-2, catalunya-2, priorat-1 in `data/story/photo-focus.json`
+(crop sheet against the original), then delete the "known gaps" allowance in `tests/unit/story-format.test.ts` (rule: a shown photo
+without a checked crop fails a test; an allowlist is tuning the test). Step 2 note: three mock facts are tightened guide sentences, as approved in the mock.
 Rivers and names from `data/story/` (widths by zoom, main rivers labelled along the line, names within the visible half-width of
 the stop, the app's own glyphs in `public/glyphs/`), Köppen at 36% with a one-line legend (colours from `src/map/climate.ts`), IGME
 MAGNA 50 WMS layer 0 at 55%, tileSize 512, minzoom 10, only at steps with `geology`; light tint over 30% slope (see mock `tint.py`);
