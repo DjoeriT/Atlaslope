@@ -11,6 +11,8 @@ export interface Selection {
   fly?: { chapter: string; index: number };
   /** The guide chapter the page opens scrolled to (#place=rioja&page&at=valley), after "Back to the guide". */
   at?: string;
+  /** The guide read with the map (#place=rioja&page&story): the story view over the page. */
+  story?: boolean;
 }
 
 export interface View {
@@ -30,9 +32,10 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   if (sel.fly && sel.kind === 'place') p.set('fly', `${sel.fly.chapter}.${sel.fly.index}`);
   if (sel.page && sel.kind !== 'country') p.set('page', '');
   if (sel.at && sel.page && sel.kind === 'place') p.set('at', sel.at);
+  if (sel.story && sel.page && sel.kind === 'place') p.set('story', '');
   if (view) p.set('view', viewToText(view));
-  // `page` is a flag, written bare rather than as page=
-  const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)page=(?=&|$)/, '$1page');
+  // `page` and `story` are flags, written bare rather than as page=
+  const text = p.toString().replace(/%2C/g, ',').replace(/(^|&)(page|story)=(?=&|$)/g, '$1$2');
   return text ? `#${text}` : '';
 }
 
@@ -49,6 +52,7 @@ export function parseSelection(hash: string): Selection {
     if (page) sel.page = page;
     const at = p.get('at');
     if (page && at) sel.at = at;
+    if (page && p.has('story')) sel.story = true;
     return sel;
   }
   if (region) return page ? { kind: 'region', id: region, page } : { kind: 'region', id: region };
