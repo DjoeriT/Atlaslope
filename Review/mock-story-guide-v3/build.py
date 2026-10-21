@@ -255,6 +255,7 @@ def measure(pid, kind):
     m = MEAS[pid]; a = m['altitude']
     txt = {'median': f'Half the land lies above {a["median"]} m.', 'top': f'Half the land lies above {a["median"]} m. The highest tenth lies above {a["p90"]} m.',
            'low': f'The lowest tenth of the land lies below {a["p10"]} m.', 'steep': f'{round(m["slope"]["steepShare"] * 100)}% of the land is steeper than 30%.'}[kind]
+    if pid == 'rioja-alta': txt = 'In Rioja Alta, ' + txt[0].lower() + txt[1:]
     return f'<p class="measure">{txt}<small>Measured by AtlaSlope · Terrain: Mapzen</small></p>'
 
 
