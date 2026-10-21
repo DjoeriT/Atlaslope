@@ -9,7 +9,7 @@ Branch `claude/story-guide-mock`. One builder at a time. Reports in this folder.
 | 1 | Data: rivers, names, photos, SOURCES | Sonnet | 120K | done, 57K |
 | 2 | Story format, loader, checks, guides.md | Sonnet | 100K | done, 69K |
 | 3 | Story view on the app map, button C | Opus | 250K | done, 158K (one resume) |
-| 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | running |
+| 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | done, 118K (one resume) |
 | 5 | Listing page and home count | Sonnet | 100K | ready |
 | 6 | Unit tests, one Playwright spec (fixtures) | Sonnet | 80K | ready |
 | 7 | ReviewBot design + Opus diff | Sonnet/Opus | 50K + 100K | after 6 |
@@ -52,6 +52,7 @@ Shots after: Rioja soils (geology on), Rioja climate (Köppen), Priorat Siurana,
 May edit: `src/story/`, `data/story/photo-focus.json`, `tests/unit/story-*.test.ts`.
 
 ## Card 5: listing page and home count
+Also: draw the `zonelabels` layer (Rioja climate step: the three zone names on the map, as mock shot `rioja-climate.png`); step 4 left it out.
 `read-with-the-map/` page (built like `guides/`, one row per story guide with its photo and lede line), linked from the home
 stats and footer; home tile `<n> guides to read with the map`, filled at build time like `data-count="guides"`
 (`src/home/guideCount.ts`, `vite.config.ts`). Copy one idea per line. May edit: `index.html`, a new `read-with-the-map/index.html`,
