@@ -1,4 +1,4 @@
-// Search on the plain pages (home, guides/, about/, map-tours/): the atlas's own matching (src/tree/search.ts) over a small index of
+// Search on the plain pages (home, guides/, about/): the atlas's own matching (src/tree/search.ts) over a small index of
 // names and ids, loaded on first focus. A pick goes to the atlas. Kept free of the DOM so a unit test can run it.
 import { makeSearch, type Entry } from '../tree/search';
 import type { Crumb } from '../tree/types';

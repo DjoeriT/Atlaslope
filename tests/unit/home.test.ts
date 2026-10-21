@@ -168,7 +168,7 @@ describe('the Guides page', () => {
   });
   it('credits each photo set, never prints text on a photo', () => {
     const out = fillGuideList(guidesHtml, guideRows());
-    expect(out.match(/<p class="credit">Photos:/g)!.length).toBe(guideRows().regions.length);
+    expect(out.match(/<p class="credit">Photos:/g)!.length).toBe(guideRows().regions.length + 1); // + the map-tour section's set
     expect(out).not.toContain('title="');
   });
 });
@@ -176,5 +176,17 @@ describe('the Guides page', () => {
 describe('the Guides page markers', () => {
   it('refuses to build a page without the list markers', () => {
     expect(() => fillGuideList('<main></main>', guideRows())).toThrow(/markers are missing/);
+  });
+});
+
+describe('map tours on the Guides page', () => {
+  it('marks guides that have a story file and links to the map-tours section', () => {
+    const list = guideRows();
+    const tours = list.rows.filter((r) => r.tour).map((r) => r.id).sort();
+    expect(tours).toEqual(['priorat', 'rioja']);
+    const html = fillGuideList(guidesHtml, list);
+    expect(html).toContain('<a href="#map-tours">Show only guides with a map tour</a>');
+    expect(html).toContain('id="map-tours"');
+    expect(html.match(/class="tour">Map tour</g)).toHaveLength(tours.length * 2);
   });
 });

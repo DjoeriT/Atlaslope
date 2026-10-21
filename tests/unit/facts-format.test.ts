@@ -12,7 +12,7 @@ describe('fact formatting', () => {
     expect(grapeLabel({ local: 'Albillo Real' })).toBe('Albillo Real');
   });
   it('writes Köppen shares in plain names', () => {
-    expect(koppenText([{ code: 'BSk', name: '', share: 0.67 }, { code: 'Csa', name: '', share: 0.33 }])).toBe('Cold semi-arid 67%, hot-summer Mediterranean 33%');
+    expect(koppenText([{ code: 'BSk', name: '', share: 0.67 }, { code: 'Csa', name: '', share: 0.33 }])).toBe('Cold semi-arid 67%, hot Mediterranean 33%');
   });
   it('rounds the measured altitude to 10 m', () => {
     expect(altitudeText({ p10: 652, median: 700, p90: 778, samples: 9 })).toBe('Most of the land between 650 and 780 m');

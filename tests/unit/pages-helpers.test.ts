@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { measuresOf, sheetOf } from '../../src/facts';
+import { CLIMATE_GROUPS } from '../../src/map/climate';
 import { altitudeBar, climateSegments, compareShares, glanceCells, mosaicPics, swatchOf, type Pic } from '../../src/pages/helpers';
 
 const pic = (n: string): Pic => ({ src: `photos/${n}.webp`, alt: n, artist: 'A', licence: 'CC', page: 'https://commons.wikimedia.org/' });
@@ -28,11 +29,11 @@ describe('glance cells', () => {
 describe('climate segments', () => {
   it('names the three biggest shares and rounds what is left into Other', () => {
     const segs = climateSegments(measuresOf('rioja')!.koppen);
-    expect(segs.map((s) => s.label)).toEqual(['Warm-summer Mediterranean 40%', 'Oceanic 32%', 'Humid subtropical 24%', 'Other 4%']);
+    expect(segs.map((s) => s.label)).toEqual(['Mild Mediterranean 40%', 'Oceanic 32%', 'Humid subtropical 24%', 'Other 4%']);
     expect(segs.reduce((n, s) => n + s.pct, 0)).toBeCloseTo(100, 5);
   });
   it('has no Other when the shares fill the bar', () => {
-    expect(climateSegments([{ code: 'Csa', name: '', share: 1 }]).map((s) => s.label)).toEqual(['Hot-summer Mediterranean 100%']);
+    expect(climateSegments([{ code: 'Csa', name: '', share: 1 }]).map((s) => s.label)).toEqual(['Hot Mediterranean 100%']);
   });
 });
 
@@ -54,12 +55,21 @@ describe('climate comparison rows', () => {
   it('reads the other row in the place\'s own classes, the rest as Other', () => {
     const own = [{ code: 'Csb', name: '', share: 0.6 }, { code: 'Cfb', name: '', share: 0.4 }];
     const spain = [{ code: 'Csa', name: '', share: 0.5 }, { code: 'Csb', name: '', share: 0.2 }];
-    expect(compareShares(own, spain).map((r) => r.label)).toEqual(['Warm-summer Mediterranean 20%', 'Oceanic 0%', 'Other 80%']);
+    expect(compareShares(own, spain).map((r) => r.label)).toEqual(['Mild Mediterranean 20%', 'Oceanic 0%', 'Other 80%']);
   });
 });
 
 describe('swatches', () => {
   it('colours reds, whites and rosés only', () => {
     expect([swatchOf('Reds'), swatchOf('Whites'), swatchOf('Rosés'), swatchOf('Sparkling'), swatchOf()]).toEqual(['red', 'white', 'rose', undefined, undefined]);
+  });
+});
+
+describe('climate names', () => {
+  it('the guide chart names each class as the map legend does', () => {
+    for (const g of CLIMATE_GROUPS) for (const code of g.codes) {
+      const [seg] = climateSegments([{ code, name: '', share: 1 }]);
+      expect(seg.label).toBe(`${g.label} 100%`);
+    }
   });
 });

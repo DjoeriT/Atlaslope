@@ -44,3 +44,6 @@
 @media (max-width:900px){.gl .feat{grid-template-columns:minmax(0,1fr);gap:1.5rem}}
 @media (max-width:700px){.gl .rowg{grid-template-columns:minmax(0,1fr)}.gl .sat{grid-column:auto}.gl .gcard-c .cb b{font-size:1.6rem}}
 
+.gl .tour{font-size:.9rem;color:var(--ink);font-weight:500}
+.gl .tourlink{margin-bottom:1rem}
+.gl .tourlink a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.25em}
