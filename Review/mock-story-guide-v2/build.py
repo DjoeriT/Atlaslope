@@ -76,7 +76,7 @@ for f in zones['features']:
     LABELS[f['properties']['id']] = label_point(f['geometry'])
 
 # ---------- slope tint (decision 4): one calm wine colour, low opacity, land steeper than 30% ----------
-TINT_RGB, TINT_ALPHA = (140, 35, 64), 70  # #8C2340 at about 27% at most; soft edge 27 to 33%
+TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most (LeadBot 21 Oct: 27% hid the land); soft edge 27 to 33%
 TINTS = {}
 for gid in ('rioja', 'priorat'):
     # padding 0.06 degrees so every stop (Sierra de Cantabria, Montsant) lies inside the overlay
