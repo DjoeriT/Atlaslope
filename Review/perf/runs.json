@@ -1,0 +1,2029 @@
+{
+ "note": "Playwright chromium headless (swiftshader GL), cold cache (Network.setCacheDisabled), atlaslope.com live 21 Oct 2026; hosts allowed: atlaslope.com, ign.es, arcgis.com, amazonaws.com, openfreemap.org. Phone = 390px, 4x CPU, 200000 B/s down, 150 ms RTT. Desktop cap 20 s, phone cap 50 s per run. 2 runs each. Times in ms; bytes are transfer sizes (gzip where served).",
+ "runs": [
+  {
+   "profile": "desktop",
+   "page": "home",
+   "run": 1,
+   "fcp": 144,
+   "canvasAt": null,
+   "firstTileMs": null,
+   "firstImageryMs": null,
+   "settledMs": 328,
+   "capped": false,
+   "inputLagMs": 0.3999999985098839,
+   "lastLongTaskEnd": 0,
+   "tbt": 0,
+   "nLong": 0,
+   "dcl": 103.70000000298023,
+   "load": 128.60000000149012,
+   "requests": 17,
+   "totalBytes": 1024736,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 5465
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203923
+    },
+    "js": {
+     "n": 2,
+     "bytes": 2860
+    },
+    "css": {
+     "n": 1,
+     "bytes": 4295
+    },
+    "photos": {
+     "n": 9,
+     "bytes": 808193
+    }
+   },
+   "terrainByZoom": {},
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/home/hero.webp",
+     332390
+    ],
+    [
+     "/home/atlas.webp",
+     135397
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132223
+    ],
+    [
+     "/home/atlas-zoom.webp",
+     109723
+    ],
+    [
+     "/home/guide-top.webp",
+     60976
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "home",
+   "run": 2,
+   "fcp": 132,
+   "canvasAt": null,
+   "firstTileMs": null,
+   "firstImageryMs": null,
+   "settledMs": 321,
+   "capped": false,
+   "inputLagMs": 0.19999999552965164,
+   "lastLongTaskEnd": 0,
+   "tbt": 0,
+   "nLong": 0,
+   "dcl": 102.70000000298023,
+   "load": 126.10000000149012,
+   "requests": 17,
+   "totalBytes": 1025016,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 5466
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203942
+    },
+    "js": {
+     "n": 2,
+     "bytes": 2849
+    },
+    "css": {
+     "n": 1,
+     "bytes": 4303
+    },
+    "photos": {
+     "n": 9,
+     "bytes": 808456
+    }
+   },
+   "terrainByZoom": {},
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/home/hero.webp",
+     332431
+    ],
+    [
+     "/home/atlas.webp",
+     135432
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132272
+    ],
+    [
+     "/home/atlas-zoom.webp",
+     109870
+    ],
+    [
+     "/home/guide-top.webp",
+     60994
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "atlas_spain",
+   "run": 1,
+   "fcp": 328,
+   "canvasAt": 338.8999999985099,
+   "firstTileMs": 739.9759999971138,
+   "firstImageryMs": 739.9759999971138,
+   "settledMs": 20152,
+   "capped": true,
+   "inputLagMs": 0.5,
+   "lastLongTaskEnd": 8123.19999999553,
+   "tbt": 4001,
+   "nLong": 43,
+   "dcl": 287.79999999701977,
+   "load": 689.1999999955297,
+   "requests": 218,
+   "totalBytes": 10924997,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 3,
+     "bytes": 179590
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619412
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 24,
+     "bytes": 588286
+    },
+    "imagery": {
+     "n": 83,
+     "bytes": 1092427
+    },
+    "terrain": {
+     "n": 99,
+     "bytes": 7615192
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2443
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801311
+    }
+   },
+   "terrainByZoom": {
+    "3": 8,
+    "4": 8,
+    "5": 3,
+    "6": 12,
+    "7": 68
+   },
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617650
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501261
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276545
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132269
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/7/66/45.png",
+     103760
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "atlas_spain",
+   "run": 2,
+   "fcp": 548,
+   "canvasAt": 552.5,
+   "firstTileMs": 814.2979999975068,
+   "firstImageryMs": 814.2979999975068,
+   "settledMs": 20242,
+   "capped": true,
+   "inputLagMs": 0.7000000029802322,
+   "lastLongTaskEnd": 10231,
+   "tbt": 6206,
+   "nLong": 40,
+   "dcl": 513.2000000029802,
+   "load": 788,
+   "requests": 219,
+   "totalBytes": 10970144,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 3,
+     "bytes": 179612
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619246
+    },
+    "css": {
+     "n": 1,
+     "bytes": 25037
+    },
+    "photos": {
+     "n": 25,
+     "bytes": 633389
+    },
+    "imagery": {
+     "n": 83,
+     "bytes": 1092443
+    },
+    "terrain": {
+     "n": 99,
+     "bytes": 7615192
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2437
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801288
+    }
+   },
+   "terrainByZoom": {
+    "3": 8,
+    "4": 8,
+    "5": 3,
+    "6": 12,
+    "7": 68
+   },
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617646
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501251
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276672
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132224
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/7/66/45.png",
+     103760
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "place_zoom",
+   "run": 1,
+   "fcp": 244,
+   "canvasAt": 244.89999999850988,
+   "firstTileMs": 499.60299999656854,
+   "firstImageryMs": 499.60299999656854,
+   "settledMs": 20143,
+   "capped": true,
+   "inputLagMs": 0.10000000149011612,
+   "lastLongTaskEnd": 17574.29999999702,
+   "tbt": 12312,
+   "nLong": 72,
+   "dcl": 211.29999999701977,
+   "load": 281.79999999701977,
+   "requests": 257,
+   "totalBytes": 15046058,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 264022
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619245
+    },
+    "css": {
+     "n": 1,
+     "bytes": 25046
+    },
+    "photos": {
+     "n": 2,
+     "bytes": 56308
+    },
+    "imagery": {
+     "n": 119,
+     "bytes": 1592694
+    },
+    "terrain": {
+     "n": 121,
+     "bytes": 11683484
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2438
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801321
+    }
+   },
+   "terrainByZoom": {
+    "4": 4,
+    "5": 2,
+    "7": 69,
+    "8": 4,
+    "10": 12,
+    "11": 30
+   },
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617658
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501270
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276577
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1007/758.png",
+     146130
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1007/759.png",
+     144675
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "place_zoom",
+   "run": 2,
+   "fcp": 464,
+   "canvasAt": 469.70000000298023,
+   "firstTileMs": 724.5289999991655,
+   "firstImageryMs": 724.5289999991655,
+   "settledMs": 20078,
+   "capped": true,
+   "inputLagMs": 458.80000000447035,
+   "lastLongTaskEnd": 21271.39999999851,
+   "tbt": 16575,
+   "nLong": 63,
+   "dcl": 434.1000000014901,
+   "load": 702.7000000029802,
+   "requests": 257,
+   "totalBytes": 15048430,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 263890
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619192
+    },
+    "css": {
+     "n": 1,
+     "bytes": 25044
+    },
+    "photos": {
+     "n": 2,
+     "bytes": 56507
+    },
+    "imagery": {
+     "n": 119,
+     "bytes": 1592661
+    },
+    "terrain": {
+     "n": 121,
+     "bytes": 11685904
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2436
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801296
+    }
+   },
+   "terrainByZoom": {
+    "4": 4,
+    "5": 2,
+    "7": 69,
+    "8": 4,
+    "10": 12,
+    "11": 30
+   },
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617629
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501435
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276558
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1007/758.png",
+     146150
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/11/1007/759.png",
+     144695
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "rioja_guide",
+   "run": 1,
+   "fcp": 264,
+   "canvasAt": 267.1000000014901,
+   "firstTileMs": 583.572000003187,
+   "firstImageryMs": 583.572000003187,
+   "settledMs": 20231,
+   "capped": true,
+   "inputLagMs": 381.5,
+   "lastLongTaskEnd": 21108.39999999851,
+   "tbt": 16092,
+   "nLong": 75,
+   "dcl": 206.19999999552965,
+   "load": 509.3999999985099,
+   "requests": 270,
+   "totalBytes": 12750868,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259362
+    },
+    "js": {
+     "n": 6,
+     "bytes": 623877
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 12,
+     "bytes": 443374
+    },
+    "imagery": {
+     "n": 129,
+     "bytes": 1723895
+    },
+    "terrain": {
+     "n": 105,
+     "bytes": 8066519
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4878
+    },
+    "data": {
+     "n": 8,
+     "bytes": 1602627
+    }
+   },
+   "terrainByZoom": {
+    "5": 1,
+    "6": 1,
+    "7": 69,
+    "10": 34
+   },
+   "failed": 0,
+   "notDone": 14,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617832
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501265
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501259
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276730
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276624
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "rioja_guide",
+   "run": 2,
+   "fcp": 268,
+   "canvasAt": 274,
+   "firstTileMs": 554.8730000009527,
+   "firstImageryMs": 554.8730000009527,
+   "settledMs": 20183,
+   "capped": true,
+   "inputLagMs": 286.70000000298023,
+   "lastLongTaskEnd": 20942,
+   "tbt": 15658,
+   "nLong": 68,
+   "dcl": 205.69999999552965,
+   "load": 481.69999999552965,
+   "requests": 256,
+   "totalBytes": 12387612,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1498
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259636
+    },
+    "js": {
+     "n": 6,
+     "bytes": 623652
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24835
+    },
+    "photos": {
+     "n": 12,
+     "bytes": 443463
+    },
+    "imagery": {
+     "n": 129,
+     "bytes": 1723814
+    },
+    "terrain": {
+     "n": 91,
+     "bytes": 7703185
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4883
+    },
+    "data": {
+     "n": 8,
+     "bytes": 1602646
+    }
+   },
+   "terrainByZoom": {
+    "5": 1,
+    "6": 1,
+    "7": 69,
+    "10": 20
+   },
+   "failed": 0,
+   "notDone": 3,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617664
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501255
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501235
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276826
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276636
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "rioja_tour",
+   "run": 1,
+   "fcp": 220,
+   "canvasAt": 222.80000000447035,
+   "firstTileMs": 429.2930000083288,
+   "firstImageryMs": 429.2930000083288,
+   "settledMs": 20112,
+   "capped": true,
+   "inputLagMs": 403.20000000298023,
+   "lastLongTaskEnd": 21229.10000000149,
+   "tbt": 15842,
+   "nLong": 65,
+   "dcl": 172.30000000447035,
+   "load": 388.70000000298023,
+   "requests": 285,
+   "totalBytes": 12735624,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1498
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259459
+    },
+    "js": {
+     "n": 6,
+     "bytes": 630564
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 12,
+     "bytes": 443412
+    },
+    "imagery": {
+     "n": 148,
+     "bytes": 2045858
+    },
+    "data": {
+     "n": 11,
+     "bytes": 1620669
+    },
+    "terrain": {
+     "n": 98,
+     "bytes": 7704445
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4883
+    }
+   },
+   "terrainByZoom": {
+    "5": 1,
+    "6": 1,
+    "7": 69,
+    "8": 20,
+    "10": 7
+   },
+   "failed": 0,
+   "notDone": 3,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617776
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501264
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501244
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276661
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276571
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "rioja_tour",
+   "run": 2,
+   "fcp": 356,
+   "canvasAt": 358.3999999985099,
+   "firstTileMs": 692.0649999956368,
+   "firstImageryMs": 692.0649999956368,
+   "settledMs": 20009,
+   "capped": true,
+   "inputLagMs": 339.70000000298023,
+   "lastLongTaskEnd": 20974.80000000447,
+   "tbt": 14469,
+   "nLong": 78,
+   "dcl": 298.1000000014901,
+   "load": 650.8999999985099,
+   "requests": 295,
+   "totalBytes": 13698203,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1499
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259534
+    },
+    "js": {
+     "n": 6,
+     "bytes": 630618
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 12,
+     "bytes": 443163
+    },
+    "imagery": {
+     "n": 148,
+     "bytes": 2045474
+    },
+    "data": {
+     "n": 11,
+     "bytes": 1620833
+    },
+    "terrain": {
+     "n": 108,
+     "bytes": 8667368
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4878
+    }
+   },
+   "terrainByZoom": {
+    "5": 1,
+    "6": 1,
+    "7": 69,
+    "8": 20,
+    "10": 17
+   },
+   "failed": 0,
+   "notDone": 6,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617624
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501246
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501236
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276591
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276570
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "study_round",
+   "run": 1,
+   "fcp": 352,
+   "canvasAt": 294,
+   "firstTileMs": 689.6190000115894,
+   "firstImageryMs": 689.6190000115894,
+   "settledMs": 20119,
+   "capped": true,
+   "inputLagMs": 0.30000000447034836,
+   "lastLongTaskEnd": 10072.79999999702,
+   "tbt": 5859,
+   "nLong": 43,
+   "dcl": 267.59999999403954,
+   "load": 274,
+   "requests": 199,
+   "totalBytes": 13827474,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203949
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619387
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24862
+    },
+    "imagery": {
+     "n": 86,
+     "bytes": 1490793
+    },
+    "terrain": {
+     "n": 100,
+     "bytes": 10683231
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2441
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801311
+    }
+   },
+   "terrainByZoom": {
+    "3": 4,
+    "4": 8,
+    "5": 1,
+    "6": 2,
+    "7": 40,
+    "9": 45
+   },
+   "failed": 1,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617797
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501272
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276593
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/9/255/188.png",
+     159122
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/9/247/187.png",
+     153066
+    ]
+   ]
+  },
+  {
+   "profile": "desktop",
+   "page": "study_round",
+   "run": 2,
+   "fcp": 376,
+   "canvasAt": 326.5,
+   "firstTileMs": 641.8160000030184,
+   "firstImageryMs": 641.8160000030184,
+   "settledMs": 20222,
+   "capped": true,
+   "inputLagMs": 0.7000000029802322,
+   "lastLongTaskEnd": 9120.5,
+   "tbt": 4536,
+   "nLong": 53,
+   "dcl": 300.1000000014901,
+   "load": 306.8999999985099,
+   "requests": 202,
+   "totalBytes": 13470226,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203951
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619374
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24875
+    },
+    "imagery": {
+     "n": 93,
+     "bytes": 1490819
+    },
+    "terrain": {
+     "n": 96,
+     "bytes": 10325892
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2443
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801372
+    }
+   },
+   "terrainByZoom": {
+    "3": 4,
+    "4": 4,
+    "5": 1,
+    "6": 2,
+    "7": 40,
+    "9": 45
+   },
+   "failed": 8,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617780
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501272
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276561
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/9/255/188.png",
+     159122
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/9/247/187.png",
+     153066
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "home",
+   "run": 1,
+   "fcp": 592,
+   "canvasAt": null,
+   "firstTileMs": null,
+   "firstImageryMs": null,
+   "settledMs": 3970,
+   "capped": false,
+   "inputLagMs": 1.1000000014901161,
+   "lastLongTaskEnd": 0,
+   "tbt": 0,
+   "nLong": 0,
+   "dcl": 440.20000000298023,
+   "load": 3844.2000000029802,
+   "requests": 12,
+   "totalBytes": 691062,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 5465
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203955
+    },
+    "js": {
+     "n": 2,
+     "bytes": 2860
+    },
+    "css": {
+     "n": 1,
+     "bytes": 4295
+    },
+    "photos": {
+     "n": 4,
+     "bytes": 474487
+    }
+   },
+   "terrainByZoom": {},
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/home/hero.webp",
+     332389
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132224
+    ],
+    [
+     "/photos/800/rioja-alavesa-2.webp",
+     63242
+    ],
+    [
+     "/photos/480/rioja-2.webp",
+     44224
+    ],
+    [
+     "/photos/480/rioja-3.webp",
+     34632
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "home",
+   "run": 2,
+   "fcp": 572,
+   "canvasAt": null,
+   "firstTileMs": null,
+   "firstImageryMs": null,
+   "settledMs": 3958,
+   "capped": false,
+   "inputLagMs": 1.1999999955296516,
+   "lastLongTaskEnd": 0,
+   "tbt": 0,
+   "nLong": 0,
+   "dcl": 433.20000000298023,
+   "load": 3831.10000000149,
+   "requests": 12,
+   "totalBytes": 691030,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 5465
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203915
+    },
+    "js": {
+     "n": 2,
+     "bytes": 2651
+    },
+    "css": {
+     "n": 1,
+     "bytes": 4298
+    },
+    "photos": {
+     "n": 4,
+     "bytes": 474701
+    }
+   },
+   "terrainByZoom": {},
+   "failed": 0,
+   "notDone": 0,
+   "top": [
+    [
+     "/home/hero.webp",
+     332595
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132224
+    ],
+    [
+     "/photos/800/rioja-alavesa-2.webp",
+     63236
+    ],
+    [
+     "/photos/480/rioja-2.webp",
+     44224
+    ],
+    [
+     "/photos/480/rioja-3.webp",
+     34646
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "atlas_spain",
+   "run": 1,
+   "fcp": 4584,
+   "canvasAt": 4627.5999999940395,
+   "firstTileMs": 6243.899000000965,
+   "firstImageryMs": 6243.899000000965,
+   "settledMs": 50151,
+   "capped": true,
+   "inputLagMs": 1.2000000029802322,
+   "lastLongTaskEnd": 31243.29999999702,
+   "tbt": 11136,
+   "nLong": 117,
+   "dcl": 4462.0999999940395,
+   "load": 15003.89999999851,
+   "requests": 108,
+   "totalBytes": 5605376,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 3,
+     "bytes": 179453
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619404
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24835
+    },
+    "photos": {
+     "n": 14,
+     "bytes": 940925
+    },
+    "imagery": {
+     "n": 53,
+     "bytes": 612615
+    },
+    "terrain": {
+     "n": 29,
+     "bytes": 2422871
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2444
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801329
+    }
+   },
+   "terrainByZoom": {
+    "2": 4,
+    "3": 8,
+    "4": 2,
+    "5": 15
+   },
+   "failed": 1,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617841
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501397
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276561
+    ],
+    [
+     "/photos/800/emporda-1.webp",
+     142514
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132267
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "atlas_spain",
+   "run": 2,
+   "fcp": 4612,
+   "canvasAt": 4658.80000000447,
+   "firstTileMs": 6477.805000002263,
+   "firstImageryMs": 6477.805000002263,
+   "settledMs": 50009,
+   "capped": true,
+   "inputLagMs": 2.100000001490116,
+   "lastLongTaskEnd": 32530.10000000149,
+   "tbt": 18220,
+   "nLong": 84,
+   "dcl": 4488.89999999851,
+   "load": 14698.5,
+   "requests": 108,
+   "totalBytes": 5605494,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 3,
+     "bytes": 179596
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619270
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24843
+    },
+    "photos": {
+     "n": 14,
+     "bytes": 940921
+    },
+    "imagery": {
+     "n": 53,
+     "bytes": 612722
+    },
+    "terrain": {
+     "n": 29,
+     "bytes": 2422871
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2441
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801330
+    }
+   },
+   "terrainByZoom": {
+    "2": 4,
+    "3": 8,
+    "4": 2,
+    "5": 15
+   },
+   "failed": 1,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617690
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501258
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276621
+    ],
+    [
+     "/photos/800/emporda-1.webp",
+     142642
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132411
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "place_zoom",
+   "run": 1,
+   "fcp": 4608,
+   "canvasAt": 4648.5,
+   "firstTileMs": 5754.64600000123,
+   "firstImageryMs": 5754.64600000123,
+   "settledMs": 50190,
+   "capped": true,
+   "inputLagMs": 0.3999999985098839,
+   "lastLongTaskEnd": 46929.5,
+   "tbt": 25462,
+   "nLong": 121,
+   "dcl": 4504.29999999702,
+   "load": 8945.10000000149,
+   "requests": 154,
+   "totalBytes": 7599421,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 5,
+     "bytes": 232096
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619393
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 2,
+     "bytes": 433128
+    },
+    "imagery": {
+     "n": 92,
+     "bytes": 1099758
+    },
+    "terrain": {
+     "n": 46,
+     "bytes": 4384914
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2443
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801353
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 5,
+    "4": 2,
+    "5": 15,
+    "6": 2,
+    "7": 8,
+    "8": 2,
+    "9": 10
+   },
+   "failed": 1,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617806
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501246
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276568
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216672
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216456
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "place_zoom",
+   "run": 2,
+   "fcp": 4696,
+   "canvasAt": 4747.5,
+   "firstTileMs": 5810.136999993119,
+   "firstImageryMs": 5810.136999993119,
+   "settledMs": 50011,
+   "capped": true,
+   "inputLagMs": 1,
+   "lastLongTaskEnd": 44634.89999999851,
+   "tbt": 20894,
+   "nLong": 152,
+   "dcl": 4581,
+   "load": 9307.10000000149,
+   "requests": 154,
+   "totalBytes": 7599912,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1499
+    },
+    "fonts": {
+     "n": 5,
+     "bytes": 232008
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619351
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24911
+    },
+    "photos": {
+     "n": 2,
+     "bytes": 432860
+    },
+    "imagery": {
+     "n": 92,
+     "bytes": 1099711
+    },
+    "terrain": {
+     "n": 46,
+     "bytes": 4385814
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2437
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801321
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 5,
+    "4": 2,
+    "5": 15,
+    "6": 2,
+    "7": 8,
+    "8": 2,
+    "9": 10
+   },
+   "failed": 1,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617738
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501278
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276561
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216462
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216398
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "rioja_guide",
+   "run": 1,
+   "fcp": 4620,
+   "canvasAt": 4661.10000000149,
+   "firstTileMs": 5816.713000007439,
+   "firstImageryMs": 5816.713000007439,
+   "settledMs": 50093,
+   "capped": true,
+   "inputLagMs": 266.3999999985099,
+   "lastLongTaskEnd": 50683.29999999702,
+   "tbt": 13708,
+   "nLong": 141,
+   "dcl": 4451.89999999851,
+   "load": 14989.5,
+   "requests": 192,
+   "totalBytes": 7745078,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259405
+    },
+    "js": {
+     "n": 6,
+     "bytes": 623897
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24862
+    },
+    "photos": {
+     "n": 3,
+     "bytes": 344877
+    },
+    "imagery": {
+     "n": 109,
+     "bytes": 1530055
+    },
+    "terrain": {
+     "n": 56,
+     "bytes": 4130740
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4883
+    },
+    "data": {
+     "n": 8,
+     "bytes": 824859
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 6,
+    "4": 2,
+    "5": 18,
+    "6": 5,
+    "7": 4,
+    "8": 8,
+    "10": 11
+   },
+   "failed": 3,
+   "notDone": 17,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617806
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501251
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276562
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216598
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/10/503/379.png",
+     151216
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "rioja_guide",
+   "run": 2,
+   "fcp": 4624,
+   "canvasAt": 4662.30000000447,
+   "firstTileMs": 5839.8919999890495,
+   "firstImageryMs": 5839.8919999890495,
+   "settledMs": 50082,
+   "capped": true,
+   "inputLagMs": 334.70000000298023,
+   "lastLongTaskEnd": 51007.20000000298,
+   "tbt": 12054,
+   "nLong": 145,
+   "dcl": 4457.80000000447,
+   "load": 15715,
+   "requests": 192,
+   "totalBytes": 7732141,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1500
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259187
+    },
+    "js": {
+     "n": 6,
+     "bytes": 623847
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "photos": {
+     "n": 3,
+     "bytes": 344750
+    },
+    "imagery": {
+     "n": 109,
+     "bytes": 1518766
+    },
+    "terrain": {
+     "n": 56,
+     "bytes": 4129900
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4566
+    },
+    "data": {
+     "n": 8,
+     "bytes": 824789
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 6,
+    "4": 2,
+    "5": 18,
+    "6": 5,
+    "7": 4,
+    "8": 8,
+    "10": 11
+   },
+   "failed": 2,
+   "notDone": 19,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617624
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501396
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276556
+    ],
+    [
+     "/photos/rioja-alta-1.webp",
+     216449
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/10/503/379.png",
+     151196
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "rioja_tour",
+   "run": 1,
+   "fcp": 4628,
+   "canvasAt": 4667.60000000149,
+   "firstTileMs": 5824.029999988852,
+   "firstImageryMs": 5824.029999988852,
+   "settledMs": 50075,
+   "capped": true,
+   "inputLagMs": 1.6000000014901161,
+   "lastLongTaskEnd": 49487.10000000149,
+   "tbt": 14431,
+   "nLong": 154,
+   "dcl": 4461.60000000149,
+   "load": 15452.5,
+   "requests": 172,
+   "totalBytes": 7744054,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1499
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259342
+    },
+    "js": {
+     "n": 6,
+     "bytes": 630805
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24860
+    },
+    "photos": {
+     "n": 4,
+     "bytes": 344740
+    },
+    "imagery": {
+     "n": 90,
+     "bytes": 1449790
+    },
+    "data": {
+     "n": 11,
+     "bytes": 1620989
+    },
+    "terrain": {
+     "n": 51,
+     "bytes": 3407470
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4559
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 6,
+    "4": 4,
+    "5": 19,
+    "6": 4,
+    "7": 2,
+    "8": 14
+   },
+   "failed": 3,
+   "notDone": 9,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617658
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501439
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501307
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276576
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276561
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "rioja_tour",
+   "run": 2,
+   "fcp": 4608,
+   "canvasAt": 4647.89999999851,
+   "firstTileMs": 5765.458000008948,
+   "firstImageryMs": 5765.458000008948,
+   "settledMs": 50056,
+   "capped": true,
+   "inputLagMs": 8.899999998509884,
+   "lastLongTaskEnd": 49603.39999999851,
+   "tbt": 10898,
+   "nLong": 170,
+   "dcl": 4443.0999999940395,
+   "load": 15270.19999999553,
+   "requests": 172,
+   "totalBytes": 7752974,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1498
+    },
+    "fonts": {
+     "n": 6,
+     "bytes": 259119
+    },
+    "js": {
+     "n": 6,
+     "bytes": 630502
+    },
+    "css": {
+     "n": 1,
+     "bytes": 25022
+    },
+    "photos": {
+     "n": 4,
+     "bytes": 344863
+    },
+    "imagery": {
+     "n": 90,
+     "bytes": 1449674
+    },
+    "data": {
+     "n": 11,
+     "bytes": 1620592
+    },
+    "terrain": {
+     "n": 51,
+     "bytes": 3417132
+    },
+    "vector-base": {
+     "n": 2,
+     "bytes": 4572
+    }
+   },
+   "terrainByZoom": {
+    "2": 2,
+    "3": 6,
+    "4": 4,
+    "5": 19,
+    "6": 4,
+    "7": 2,
+    "8": 14
+   },
+   "failed": 3,
+   "notDone": 9,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617646
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501299
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501260
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276594
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276570
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "study_round",
+   "run": 1,
+   "fcp": 4524,
+   "canvasAt": 4564,
+   "firstTileMs": 5420.404999997118,
+   "firstImageryMs": 5420.404999997118,
+   "settledMs": 50063,
+   "capped": true,
+   "inputLagMs": 0.7000000029802322,
+   "lastLongTaskEnd": 31740.39999999851,
+   "tbt": 6079,
+   "nLong": 141,
+   "dcl": 4462.29999999702,
+   "load": 5160,
+   "requests": 122,
+   "totalBytes": 5817902,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1498
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203803
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619401
+    },
+    "css": {
+     "n": 1,
+     "bytes": 24836
+    },
+    "imagery": {
+     "n": 70,
+     "bytes": 1017275
+    },
+    "terrain": {
+     "n": 39,
+     "bytes": 3147310
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2441
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801338
+    }
+   },
+   "terrainByZoom": {
+    "2": 4,
+    "3": 8,
+    "4": 4,
+    "5": 8,
+    "7": 15
+   },
+   "failed": 6,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617815
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501264
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276570
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132268
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/2/1/1.png",
+     101567
+    ]
+   ]
+  },
+  {
+   "profile": "phone",
+   "page": "study_round",
+   "run": 2,
+   "fcp": 4500,
+   "canvasAt": 4538.19999999553,
+   "firstTileMs": 5396.6939999954775,
+   "firstImageryMs": 5396.6939999954775,
+   "settledMs": 50068,
+   "capped": true,
+   "inputLagMs": 1.2999999970197678,
+   "lastLongTaskEnd": 32251.60000000149,
+   "tbt": 8567,
+   "nLong": 122,
+   "dcl": 4442.10000000149,
+   "load": 5255.69999999553,
+   "requests": 122,
+   "totalBytes": 5817937,
+   "byType": {
+    "html": {
+     "n": 1,
+     "bytes": 1499
+    },
+    "fonts": {
+     "n": 4,
+     "bytes": 203959
+    },
+    "js": {
+     "n": 2,
+     "bytes": 619235
+    },
+    "css": {
+     "n": 1,
+     "bytes": 25045
+    },
+    "imagery": {
+     "n": 70,
+     "bytes": 1017126
+    },
+    "terrain": {
+     "n": 39,
+     "bytes": 3147310
+    },
+    "vector-base": {
+     "n": 1,
+     "bytes": 2442
+    },
+    "data": {
+     "n": 4,
+     "bytes": 801321
+    }
+   },
+   "terrainByZoom": {
+    "2": 4,
+    "3": 8,
+    "4": 4,
+    "5": 8,
+    "7": 15
+   },
+   "failed": 6,
+   "notDone": 0,
+   "top": [
+    [
+     "/assets/atlas-C2Uv-6UP.js",
+     617645
+    ],
+    [
+     "/assets/dops-CLdLaBd-.geojson",
+     501253
+    ],
+    [
+     "/assets/natural-earth-world-Ch1SrKaj.geojson",
+     276641
+    ],
+    [
+     "/fonts/newsreader-latin-opsz-normal.woff2",
+     132224
+    ],
+    [
+     "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/2/1/1.png",
+     101567
+    ]
+   ]
+  }
+ ]
+}
