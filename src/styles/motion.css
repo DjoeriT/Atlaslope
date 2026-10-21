@@ -96,16 +96,16 @@ html[data-motion="page-close"]::view-transition-new(card){animation:vt-fade-in .
 
 /* ---- One way back per screen size (owner, 18 Oct 2026): a "‹ Map" back control top left on a wide screen, where people look for
    back; the floating Show map button only on a phone, in thumb reach. */
-.pg-back{display:flex;align-items:center;gap:.45rem;width:fit-content;min-height:2.5rem;margin:.9rem 0 0 max(2rem,calc((100% - 76rem) / 2 + 2rem));padding:0 .9rem 0 .75rem;
+.pg-back,.pg-tourjump{display:flex;align-items:center;gap:.45rem;width:fit-content;min-height:2.5rem;margin:.9rem 0 0 max(2rem,calc((100% - 76rem) / 2 + 2rem));padding:0 .9rem 0 .75rem;
   box-sizing:border-box;border:1px solid var(--line2);border-radius:var(--rad);background:var(--paper);font-size:.9rem;font-weight:600;color:var(--ink);text-decoration:none}
-.pg-back svg{width:1.1rem;height:1.1rem;flex:none}
-.pg-back:hover{border-color:var(--ink)}
-.pg-back:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.pg-back svg,.pg-tourjump svg{width:1.1rem;height:1.1rem;flex:none}
+.pg-back:hover,.pg-tourjump:hover{border-color:var(--ink)}
+.pg-back:focus-visible,.pg-tourjump:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .rpage > .pg-back{position:absolute;z-index:2;top:calc(var(--bar,3.5rem) + .8rem);left:max(2rem,calc((100% - 76rem) / 2 + 2rem));margin:0;
   padding:0 .9rem 0 .75rem;border-color:transparent;border-radius:var(--rad);background:rgba(20,20,20,.72);color:#fff}
 .rpage > .pg-back:focus-visible{outline-color:var(--foil)}
 @media (min-width:47.51em){.showmap{display:none}.pg > .pg-back + .showmap + .pg-listing{padding-top:.4rem}}
 /* "Map tour" beside "Show map" on a guide that has a tour (card 1 of the map-tour fixes, F3): the two sit in one row, and on a phone only this one shows. */
-.pg > .pg-back{display:inline-flex;vertical-align:top}
-.pg-back.pg-tourjump{margin-left:.6rem}
-@media (max-width:47.5em){.pg-back,.pg > .pg-back{display:none}.pg > .pg-back.pg-tourjump{display:inline-flex;margin-left:1rem}}
+.pg > .pg-back,.pg > .pg-tourjump{display:inline-flex;vertical-align:top}
+.pg-tourjump{margin-left:.6rem}
+@media (max-width:47.5em){.pg-back,.pg > .pg-back{display:none}.pg > .pg-tourjump{display:inline-flex;margin-left:1rem}}
