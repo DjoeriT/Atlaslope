@@ -6,7 +6,8 @@
 // Writes shots/tour-<id>-<n>-<size>.png per stop and shots/tour-<id>-<size>.png, a labelled contact sheet. Whole run capped at 6 minutes.
 import { chromium } from '@playwright/test';
 import { spawn, spawnSync } from 'node:child_process';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
 import { createServer } from 'node:net';
 
 const SIZES = { phone: { width: 390, height: 844 }, desktop: { width: 1440, height: 900 } };
@@ -31,6 +32,14 @@ const freePort = () => new Promise((res, rej) => {
   s.listen(0, () => { const { port } = s.address(); s.close(() => res(port)); });
 });
 
+// Imagery needs the Esri key from .env.local (git-ignored: a builder worktree has none). Without one the map silently shows only the base
+// map and relief (the 21 Oct 2026 sheet), so look here, then in the main checkout and copy the file in (git-ignored; never read or printed here).
+if (!existsSync('.env.local')) {
+  const common = spawnSync('git', ['rev-parse', '--git-common-dir'], { encoding: 'utf8' }).stdout.trim();
+  const main = common ? dirname(resolve(common)) : '';
+  if (main && existsSync(`${main}/.env.local`)) copyFileSync(`${main}/.env.local`, '.env.local');
+  else { console.error('shots:tour: no .env.local (Esri key) here or in the main checkout: no imagery would load'); process.exit(2); }
+}
 if (!args.includes('--no-build')) {
   const b = spawnSync('npx', ['vite', 'build', '--outDir', 'dist/tour', '--logLevel', 'error'], { stdio: 'inherit', timeout: 150_000 });
   if (b.status !== 0) { console.error('shots:tour: build failed'); finish(1); }
@@ -104,13 +113,17 @@ for (const size of sizes) {
   const shots = [];
   try {
     await page.goto(`${base}atlas/#place=${id}&page&story`);
+    let tiles = 0; // successful imagery tile responses (IGN PNOA, Esri World Imagery) since the stop began
+    page.on('response', (r) => { if (r.ok() && /ign\.es\/wmts|arcgis\.com\/arcgis\/rest\/services\/World_Imagery/.test(r.url())) tiles++; });
     const map = page.locator('.pg.tour .pg-tourmap .story-map');
     await map.waitFor({ state: 'visible', timeout: 30_000 });
     for (const [i, step] of story.steps.entries()) {
       const start = Date.now();
+      tiles = 0;
       await goTo(page, step);
       await page.waitForTimeout(FLIGHT_MS);
-      const ok = await settled(page, map);
+      // Pass needs pixel detail AND at least one imagery tile response during the stop: relief alone has detail but is not imagery.
+      const ok = (await settled(page, map)) && tiles > 0;
       const n = i + 1;
       const file = `shots/tour-${id}-${n}-${size}.png`;
       await page.screenshot({ path: file });
@@ -118,7 +131,7 @@ for (const size of sizes) {
       const wrong = seen !== step.id;
       if (!ok || wrong) flagged++;
       shots.push({ file, label: `${n}. ${step.id}${ok ? '' : ' (IMAGERY NOT LOADED)'}${wrong ? ` (map shows ${seen})` : ''}` });
-      console.log(`${file}  ${step.id}  ${ok ? 'ok' : 'FLAG: imagery did not load'}${wrong ? `  FLAG: map shows ${seen}` : ''}  ${((Date.now() - start) / 1000).toFixed(1)} s`);
+      console.log(`${file}  ${step.id}  ${ok ? 'ok' : 'FLAG: imagery did not load'} (${tiles} imagery tiles)${wrong ? `  FLAG: map shows ${seen}` : ''}  ${((Date.now() - start) / 1000).toFixed(1)} s`);
     }
   } catch (e) {
     flagged++;

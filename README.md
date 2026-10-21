@@ -46,7 +46,8 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
   Needs the Chromium Playwright already has; a failed view logs one line and the run goes on (15 s per view, 3 min overall).
 - Tour screenshots: `npm run shots:tour -- <id> [--sizes phone,desktop]` makes a normal build with map tiles on (network needed; the Esri key comes from `.env.local`),
   opens the guide with the tour open and shoots every stop in order. It writes `shots/tour-<id>-<n>-<size>.png` and a labelled contact sheet `shots/tour-<id>-<size>.png`.
-  A stop whose imagery does not load in 30 s is flagged in the log and the sheet. About 1.5 min per size for Rioja; 6 min cap.
+  A stop passes only with a still, detailed map and at least one imagery tile response (IGN or Esri) during the stop; otherwise it is flagged in the log and the sheet (30 s cap per stop).
+  A worktree has no `.env.local`: the script copies it from the main checkout (git-ignored). About 1.7 min per size for Rioja; 6 min cap.
 - Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the full UI suite, which CI runs in four parts on every PR; locally run only the specs you touched).
 
 ## Data
