@@ -187,6 +187,8 @@ export function storyLayers(): StoryLayers {
       if (geology) ensure(map, 'geology');
       vis(map, 'story-koppen', koppen);
       vis(map, 'story-geology', geology);
+      // The geology tiles stop at map-sheet edges (a hard rectangle): a deeper fade outside the place hides it and keeps the eye on the place.
+      if (map.getLayer('story-fade')) map.setPaintProperty('story-fade', 'fill-opacity', geology ? 0.6 : 0.25);
       vis(map, 'story-zonelabels', on.includes('zonelabels'));
       // The stop's own zone is named by the stop bar and holds the stop's pin: its label would sit under the pin, so it is left off.
       if (map.getLayer('story-zonelabels')) {

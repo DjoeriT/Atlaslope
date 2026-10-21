@@ -49,6 +49,31 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await expect(page.locator('.pg-tourmap .story-credit')).toContainText('Source: IGME, MAGNA 50');
 });
 
+test('the soils stop shows the IGME rock key and the slope key; the top buttons share a height', async ({ page }) => {
+  await open(page, '#place=rioja&page&story');
+  await scrollToLine(page, '[data-fly="soils.0"]');
+  await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
+  const key = page.locator('.pg-tourmap .story-legend');
+  await expect(key).toContainText('Aluviales y llanura de inundación');
+  await expect(key).toContainText('Steeper than 30%');
+  await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
+});
+
+test('the top Map tour link matches Show map in height', async ({ page }) => {
+  await open(page, '#place=rioja&page');
+  const a = await page.locator('.pg > .pg-back').first().boundingBox();
+  const b = await page.locator('.pg-tourjump').boundingBox();
+  expect(a && b && Math.abs(a.height - b.height) < 1 && Math.abs(a.y - b.y) < 1).toBe(true);
+});
+
+test('on a phone the map strip is 300 px and the credit is folded', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await open(page, '#place=rioja&page&story');
+  await expect(mapCol(page)).toBeVisible();
+  expect((await mapCol(page).boundingBox())?.height).toBe(300);
+  await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
+});
+
 test('a fly link flies the map to its stop, without leaving the guide', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
