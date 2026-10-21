@@ -1,3 +1,4 @@
+// Every story at once, for tests and tools only: the app loads one file at a time (ids.ts).
 import type { Story } from './format';
 
 // One file per story in content/stories/, found at build time like the guides are (src/home/guideCount.ts).

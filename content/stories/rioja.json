@@ -73,11 +73,11 @@
    "fly": 1,
    "camera": {
     "center": [
-     -2.7,
-     42.6
+     -2.72,
+     42.56
     ],
-    "zoom": 11.7,
-    "pitch": 70,
+    "zoom": 10.4,
+    "pitch": 62,
     "bearing": 180
    },
    "focus": "rioja",
@@ -274,11 +274,12 @@
    "id": "barrel",
    "chapter": "barrel",
    "camera": {
-    "place": "rioja",
-    "pitch": 0,
-    "bearing": 0
+    "place": "rioja-alavesa",
+    "pitch": 62,
+    "bearing": 15,
+    "zoomShift": 0.4
    },
-   "focus": "rioja",
+   "focus": "rioja-alavesa",
    "markers": [
     {
      "at": "Haro"
@@ -291,9 +292,13 @@
    "chapter": "barrel",
    "fly": 0,
    "camera": {
-    "pitch": 60,
+    "pitch": 55,
     "bearing": 20,
-    "zoom": 14.2
+    "zoom": 13.2,
+    "center": [
+     -2.848,
+     42.58
+    ]
    },
    "focus": "rioja",
    "photo": "rioja-haro-1",

@@ -3,14 +3,16 @@
 import { lazy, Suspense } from 'react';
 import { Link, type Go } from '../cards/Link';
 import { strings } from '../strings';
+import type { Story } from './format';
 
 const t = strings.story;
 const TourStill = lazy(() => import('./TourStill').then((m) => ({ default: m.TourStill })));
 
-export function TourBand({ id, minutes, stops, go }: { id: string; minutes: number; stops: number; go: Go }) {
+export function TourBand({ id, story, minutes, go }: { id: string; story: Story; minutes: number; go: Go }) {
+  const stops = story.steps.length - 1;
   return (
-    <div className="pg-tour">
-      <div className="pg-tour-pic"><Suspense fallback={null}><TourStill id={id} /></Suspense></div>
+    <div className="pg-tour" id="map-tour" tabIndex={-1}>
+      <div className="pg-tour-pic"><Suspense fallback={null}><TourStill story={story} /></Suspense></div>
       <div className="pg-tour-tx">
         <span className="k">{t.kickerMap}</span>
         <span className="t">{t.bandTitle(stops)}</span>

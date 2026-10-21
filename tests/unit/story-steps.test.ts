@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { guideOf, type Guide } from '../../src/facts';
 import { loadStory, storyIds } from '../../src/story/load';
-import { linkIndex, sectionSteps, stepOfLink } from '../../src/story/steps';
+import { pickStep, spreadRows } from '../../src/story/camera';
+import { anchorOf, linkIndex, stepOfLink } from '../../src/story/steps';
 import type { Story } from '../../src/story/format';
 
 const rioja = loadStory('rioja') as Story;
@@ -9,9 +10,35 @@ const guide = guideOf('rioja') as Guide;
 const stepId = (id: string) => rioja.steps.findIndex((s) => s.id === id);
 
 describe('tour steps on the guide page', () => {
-  it('scrolling follows the lede and each chapter, showing the chapter’s first step', () => {
-    expect(sectionSteps(rioja).map((s) => `${s.chapter}:${rioja.steps[s.step].id}`))
-      .toEqual(['null:intro', 'valley:valley', 'climate:climate', 'soils:soils', 'barrel:barrel']);
+  it('every step has its own anchor: the lede, its chapter (an overview) or its own fly link', () => {
+    expect(rioja.steps.map((st) => anchorOf(guide, st))).toEqual([
+      '.pg-spine', '[data-fly="valley.0"]', '[data-fly="valley.1"]', '#terroir-climate',
+      '[data-fly="climate.0"]', '[data-fly="climate.1"]', '[data-fly="climate.2"]', '[data-fly="soils.0"]', '#terroir-barrel', '[data-fly="barrel.0"]',
+    ]);
+  });
+
+  it('scrolling down the page shows every step once, in order (Stop 1, 2, 3 ...)', () => {
+    // Anchors laid down the page in reading order, 300 px apart; the reading line moves down through them.
+    const tops = (y: number) => rioja.steps.map((_, i) => i * 300 - y);
+    const seen: number[] = [];
+    for (let y = 0; y <= 9 * 300; y += 30) {
+      const i = pickStep(tops(y), 100);
+      if (seen[seen.length - 1] !== i) seen.push(i);
+    }
+    expect(seen).toEqual(rioja.steps.map((_, i) => i));
+  });
+
+  it('links sharing a row of the page are spread in reading order, so each is reached on its own', () => {
+    // Rioja on a laptop: the two valley links share a row, the three zone cards share another.
+    const raw = [-900, 400, 400, 900, 1300, 1300, 1300, 1700, 2300, 2500];
+    const tops = spreadRows(raw);
+    expect(tops).toEqual([-900, 400, 412, 900, 1300, 1312, 1324, 1700, 2300, 2500]);
+    expect(spreadRows([5, Infinity, 5.5])).toEqual([5, Infinity, 17]);
+  });
+
+  it('an overview keeps its chapter top until the chapter’s first link crosses the line; above everything shows the lede', () => {
+    expect(pickStep([-500, -200, 150, 600], 100)).toBe(1);
+    expect(pickStep([300, 600], 100)).toBe(0);
   });
 
   it('a fly link flies to its own step; zone cards count after the chapter’s fly links', () => {
