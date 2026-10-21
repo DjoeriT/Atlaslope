@@ -82,3 +82,7 @@ body.map-off #closed .pg-facts>.stop:first-child{margin-top:0}
 body.map-off #closed .stops2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1.4rem}
 body.map-off #closed .stops2 .stop{margin:0}
 @media (max-width:48rem){body.map-off #closed .stops2{grid-template-columns:1fr}}
+/* one card on its own: photo beside the text, so it is about as tall as the prose next to it (ReviewBot, 21 Oct 2026) */
+@media (min-width:48.01rem){body.map-off #closed .pg-facts>.stop{display:grid;grid-template-columns:42% 1fr;column-gap:1.1rem;align-items:start}
+body.map-off #closed .pg-facts>.stop>.stop-img{grid-column:1;grid-row:1 / span 8;margin:0}
+body.map-off #closed .pg-facts>.stop>:not(.stop-img){grid-column:2}}

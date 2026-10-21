@@ -382,7 +382,8 @@ def build_rioja():
                           f'<h3 id="h-{vid}">{esc(card["title"])}</h3><p class="lab">Climate</p><p>{esc(card["climate"])}</p>'
                           f'<p class="lab">Wine</p><p>{esc(card["wine"])}</p>{measure(fl["place"], "top")}{cite_html(fl["cite"])}</article>'))
         used.append(zphoto[card['title']])
-    S[-1] = (S[-1][0], 2, S[-1][2] + facts_html('weather'))
+    # The measured climate is about all of Rioja, so it gets its own step on the three-zone view, not the last zone's (ReviewBot, 21 Oct 2026).
+    S.append(('climate', 2, facts_html('weather')))
     # 3 Soils: the Alavesa terraces seen low from the Ebro side, looking up at the steps.
     c = ch['soils']; fs = c['fly'][0]
     V['soils'] = fly_view(fs, fs['place'], pitch=62, bearing=15, zadj=0.4, geo=True)
