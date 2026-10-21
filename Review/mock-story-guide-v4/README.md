@@ -10,25 +10,24 @@ Output: `mocks/story-guide-v4/index.html` (git-ignored, one page, tiles and WMS 
 4. **Map**: v3 stage unchanged (terrain x1.5, slope tint, climate and geology layers, rivers, names, locator, focus, flights, two legs, 2.2 s dwell). Added view `rest`: one still, tilted (pitch 50, north up) view of the whole of Rioja for How it tastes, In short, Producers and the end. The map moves only when a new stop starts.
 5. **Phone below 768 px (48rem)**: map pinned to the top 42%. v3 used 61rem; between 768 and 976 px the text column is now at most 50% of the width.
 6. **Stop cards**: each stop keeps its photo card (v3 part B). Its label is the guide's fly link: map on, it flies the map back to the stop; map closed, it is a plain link to the app's map (`#place=rioja&fly=valley.0`, the app's own href).
-7. **"Close the map" / "Show the map"** in the black band, map on by default.
-   - Closed: the map is hidden, the text takes the guide page's width (`.pg-listing` in `src/styles/pages.css`: 76rem, 2rem sides; running text keeps its 38rem measure), prose left, stop card and fact blocks right (one column on phone). The reader stays on the same block at the same height on the screen.
-   - Reopen: the map jumps (no flight) to the stop of the block being read, then flies from the next stop.
-   - The choice is kept in `localStorage` (`atlaslope.story.mapClosed`); every read and write is in try/catch, so without storage the map is simply on.
+7. **"Close the map" / "Show the map"** in the black band, map on by default. **Closed = the live guide page plus the stop photo cards** (rebuilt 21 Oct after the owner rejected the stretched story column):
+   - `capture-page.mjs` opens the built app at `#place=rioja&page` and saves its rendered page body (`guide-page-rioja.html`: header, badges, photo mosaic and credits line, jump bar, every section in order including "If you like this, try" and Sources; photos inlined) and the app's stylesheet (`app-page.css`). `scope-css.mjs` prefixes every rule with `#closed` (`app-page.scoped.css`), so nothing leaks into map mode; `html`/`body` rules become `#closed`, `@font-face` is dropped (the same faces are embedded).
+   - Stop cards (v3 part B style) sit in the prose column, right after the paragraph their fly link belongs to: Haro to Alfaro and Sierra de Cantabria after paragraph 1 of "A valley with walls" [A: both names are in it], soils after paragraph 1, Haro's station quarter after paragraph 2. The three zone stops have no extra card: the page's zone cards already carry their photo and their fly link [A]. Fly links stay plain links (the app's own hrefs, they do nothing here).
+   - Dropped as not working standalone: the sitebar, "Show map" and the "Map tour" band (opens the app map), "All 5 photos" (lightbox), the "and 8 more" toggle (list saved open). The mosaic photo buttons stay but do nothing. The jump bar scrolls and its marker follows the reading position; the charts are drawn at once.
+   - Closing keeps the reader on the same paragraph at the same screen height (blocks matched by their words; where there is no match, the stop's section). Reopening jumps (no flight) to the stop of the paragraph being read, then flies from the next stop. The choice is kept in `localStorage` (`atlaslope.story.mapClosed`) in try/catch.
 8. Dropped from v3: the four-option entry block and the Rioja/Priorat switch.
 
-## Checks [V] (shoot-v4.mjs, Playwright Chromium, 1440x900 and 390x844)
-- Toggle: body class and button text switch, storage holds `1`; after a reload it is still closed; reopen sets `0`.
-- Same block, same screen height across the switch (277 px before, 277 px after).
-- Reopen at the Haro paragraph: map at Haro (zoom 14.2, pitch 60) 0.4 s after the click, so a jump; scrolling on to In short then starts a flight (moving), ends pitch 50 on the whole of Rioja.
-- Phone closed: no sideways scroll (scrollWidth 390).
-- Shots in `shots/`: `desktop-map-on.png`, `desktop-map-closed.png`, `desktop-no-stop-in-short.png`, `phone-map-on.png`, `phone-map-closed.png`.
-- Design check against `Review/visual-style.md` by eye on the shots: black band, champagne, white page, 6px corners, no pills, no dark mode, no new drawn icons. Fixed on the way: cover too big when closed (capped to 46rem), hint "The map follows the text" hidden when closed.
+## Checks [V]
+- `check-toggle.mjs` (1440x900): toggle and storage; paragraph at 317 px before and 317 px after the switch; reload stays closed; reopen from the Haro card lands on Haro (zoom 14.2, pitch 60) 0.5 s after the click (a jump), the next stop flies; reopen from In short gives the whole-Rioja tilt; from a weather paragraph the three-zones view.
+- `shoot-closed.mjs`: the live page is the local preview of the built app (atlaslope.com was not fetched: no networked calls). Boxes of every part compared at 1440 and 390: x and width are the same for all parts; heights are the same for the header, mosaic, credits, jump bar, weather, taste, In short, Producers, If you like this and Sources. Only place (+1157 at 1440, two cards), ground (+601) and rules (+341, the facts column is the taller one) are longer, by the cards. Phone: place +966, ground +471, rules +540. The page starts 218 px higher (390: 396 px) because the Map tour band is gone.
+- Shots in `shots/`: `closed-1440-NN.png`, `closed-390-NN.png`, `live-1440-NN.png`, `live-390-NN.png` (viewport steps down the page, lazy images loaded first), plus the map-on shots `desktop-map-on.png`, `desktop-no-stop-in-short.png`, `phone-map-on.png` (`shoot-v4.mjs`).
+- Design check by eye against `Review/visual-style.md`: the closed view is the live page as is; the cards use the mock's champagne and 6px style.
 
 ## Open points
 - **Photos per stop [V]**: every stop already has its own photo (valley, Sierra, three zones, soils, Haro), so no section photo had to stand in and nothing was invented. How it tastes, In short and Producers have no photo (the app has none there either).
 - **Crops [A]**: all photo cards are 3:2 CSS crops (`object-fit:cover`; v3's own `focus` for the photos found for the mock). The checked crops come in the build, as before.
-- **Not in the reading column**: "If you like this, try" and the page's Sources list (the page has the per-paragraph source lines, as v3). Say so if the whole page must include them.
-- **Stop link target [A]**: the closed-mode link goes to the app's `#place=rioja&fly=...` hash; in this standalone mock it goes nowhere.
-- **Closing on phone [A]**: the reading line differs (30% under the pinned map when open, 45% of the page when closed); the reopened map uses the block's own stop and the page nudges that block onto the open reading line.
-- The measured-climate chart is attached to the last zone (Rioja Oriental); the map is on that zone while it is read. A separate step would add a flight.
+- Map on: "If you like this, try" and Sources are not in the story column (the closed view has them).
+- **Class clash [A]**: the story's `.step` also names the page's crumb items; undone with one rule under `#closed`. Other shared names (`.btn`, `.kicker`, `.ph`, `.src`) showed no difference in the box comparison.
+- **Phone [A]**: the reading line differs (30% under the pinned map when open, 45% of the page when closed); on reopening the page nudges the block onto the open reading line.
+- Map on: the measured-climate chart is attached to the last zone (Rioja Oriental).
 - Source links keep the app's hover titles (the app's own markup); the photo credits stay one visible line at the end, no tooltips.

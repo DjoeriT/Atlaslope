@@ -299,12 +299,17 @@ def fly_view(fly, base, **over):
     return v
 
 
+STOPCARDS = {}  # vid -> card html, reused in the closed (live page) view
+
+
 def stop_html(fly, solo=False, pic=None, meas='', href='', vid=''):
     img = figure(pic, 'stop-img') if pic else ''
     # The label is the guide's fly link: map open = flies the map here again; map closed = a plain link to the place page's map (the app's own href).
     lab = f'<a class="fly-link" href="{href}" data-fly="{vid}">{esc(fly["label"])}</a>'
-    return (f'<div class="stop{" solo" if solo else ""}">{img}<p class="stop-lab"><small>On the map</small>{lab}</p>'
+    html = (f'<div class="stop{" solo" if solo else ""}">{img}<p class="stop-lab"><small>On the map</small>{lab}</p>'
             f'<p class="cap">{esc(fly["caption"])}</p>{meas}{cite_html(fly["cite"])}</div>')
+    if vid: STOPCARDS[vid] = html
+    return html
 
 
 def river_near(gid, name, ll):
@@ -475,12 +480,26 @@ FONT_CSS = f'''
 '''
 ML_JS = (NM / 'maplibre-gl/dist/maplibre-gl.js').read_text()
 ML_CSS = (NM / 'maplibre-gl/dist/maplibre-gl.css').read_text()
-CSS = ''.join((HERE / f).read_text() for f in ('story.css', 'story-b.css', 'story-v4.css'))
+CSS = ''.join((HERE / f).read_text() for f in ('story.css', 'story-b.css', 'story-v4.css', 'app-page.scoped.css'))
 JS = (HERE / 'story.js').read_text()
 DATA = json.dumps({'views': VIEWS, 'focus': FOCUS, 'labels': LABELS, 'chapters': CHAPTERS, 'nch': len(GUIDES['rioja']['chapters']), 'tints': TINTS, 'rivers': RIVERS, 'names': NAMES, 'koppen': KOPPEN, 'koppenLegend': KOP_LEGEND, 'inverse': INVERSE, 'loc': LOC,
                    'back': {k: f'#place={k}&page=1' for k in GUIDES}}, ensure_ascii=False, separators=(',', ':'))
 used = sorted(set(BUILT['rioja'][2]))
 
+page = (HERE / 'guide-page-rioja.html').read_text()
+# controls that cannot work standalone: the "All 5 photos" button (opens the app's lightbox). The mosaic photo buttons stay but do nothing.
+page = re.sub(r'<button[^>]*class="all"[^>]*>.*?</button>', '', page, count=1, flags=re.S)
+def after_para(chapter, n, cards):
+    """Insert the stop cards after the n-th paragraph of the chapter (the paragraph its fly link belongs to)."""
+    global page
+    m = re.search(r'<div class="pg-ch" id="terroir-%s">' % chapter + r'(?:<p>.*?</p>){%d}' % n, page, flags=re.S)
+    assert m, chapter
+    page = page[:m.end()] + ''.join(STOPCARDS[c].replace('<div class="stop', f'<div data-view="{c}" class="stop', 1) for c in cards) + page[m.end():]
+after_para('valley', 1, ['valley', 'sierra'])  # both names appear in the first paragraph
+after_para('soils', 1, ['soils'])
+after_para('barrel', 2, ['haro'])  # the paragraph about Haro's station quarter
+page = re.sub(r' (id|aria-labelledby)="([^"]+)"', r' \1="c-\2"', page)  # the story column has the same ids
+closed = f'<div id="closed" aria-label="The guide page"><div class="pg">{page}</div></div>'
 texts = f'<div class="text" id="story-text" data-guide="rioja">\n{steps_html("rioja")}\n{credits_line(BUILT["rioja"][2])}\n</div>'
 
 html = f'''<!doctype html>
@@ -509,6 +528,7 @@ html = f'''<!doctype html>
   </div>
 {texts}
 </main>
+{closed}
 <p class="foot">Photos in this page: {len(used)}, each with its credit line. Rivers and names: IGN (Hidrografía INSPIRE WFS, Nomenclátor Geográfico Básico), CC BY 4.0 scne.es. Geology: IGME, Mapa Geológico de España 1:50.000 (MAGNA), WMS; the service asks to contact IGME before any paid product. Climate: Köppen-Geiger 1991-2020, Beck et al. 2023, CC BY 4.0. Outlines: DOCa Rioja and DO Priorat © MAPA; Rioja zones CC-BY 4.0 ign.es. No photo has a recorded location, so none is pinned on the map.</p>
 <script>{ML_JS}</script>
 <script>window.SG={DATA};</script>

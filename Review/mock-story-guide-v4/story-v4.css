@@ -12,7 +12,8 @@
 .fly-link{color:inherit;text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
 .fly-link:hover{text-decoration-color:currentColor}
 
-/* rest of the guide page */
+/* rest of the guide page: the app's markup in the story column. Nested under .text so that it cannot reach the closed view */
+.text{
 .facts-b{margin-top:1.5rem;display:grid;gap:1.6rem}
 .facts-b .pg-facts{display:grid;gap:1.6rem}
 .pg-h3{font:600 .78rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 .5rem}
@@ -63,26 +64,17 @@
 .pg-range .mid{top:0;transform:translateX(-50%);color:var(--accent);font-weight:600}
 .pg-range .lo,.pg-range .hi{top:2.2rem;color:var(--ink2)}
 .pg-range .lo{padding-right:.35rem}.pg-range .hi{padding-left:.35rem}
+}
 .step-rest{min-height:auto}
 
-/* map closed: the text takes the guide page's width (.pg-listing: 76rem, 2rem sides; running text keeps its 38rem measure) */
-body.map-off .sg{display:block}
-body.map-off .mapwrap{display:none}
-body.map-off .text{max-width:76rem;margin:0 auto;padding:0 2rem}
-body.map-off .step{min-height:0;padding:2rem 0 2rem 1.25rem}
-body.map-off .step-in{max-width:none}
-@media (min-width:48rem){
-  body.map-off .step-in{display:grid;grid-template-columns:minmax(0,38rem) minmax(0,1fr);column-gap:3rem;align-items:start}
-  body.map-off .step-in>.main{grid-column:1}
-  body.map-off .step-in>.aside{grid-column:2}
-  body.map-off .step-in>.main:empty+.aside{grid-column:1}
-  body.map-off .step-in>.main:empty+.aside .stop{margin-top:0}
-  body.map-off .aside>:first-child{margin-top:0}
-  body.map-off .step-intro .step-in,body.map-off .step-end .step-in{display:block}
-}
-body.map-off .step-intro{padding-top:2rem}
-body.map-off .step-end{min-height:0}
-@media (max-width:48rem){body.map-off .text{padding:0 1.25rem}body.map-off .step{padding:1.5rem 0 1.5rem 1rem}}
-body.map-off .step-intro .step-in{max-width:46rem}
-body.map-off .hint{display:none}
+/* map closed: the live guide page (captured, its CSS scoped under #closed) plus the stop cards */
+#closed{display:none}
+body.map-off #closed{display:block;--bar:var(--top);height:auto;overflow:visible;background:#fff}
+body.map-off .sg,body.map-off .foot{display:none}
+body.map-off #closed .pg{position:static;inset:auto;overflow:visible;z-index:auto;height:auto}
+body.map-off #closed .pg-prose .stop{margin:1.2rem 0 1.4rem;max-width:38rem}
+body.map-off #closed .pg-prose .stop-img{margin:0 0 .8rem}
 .stop-lab a{display:inline-block;margin-top:.15rem}
+/* the story column's class names that the page also uses (.step in the crumb): undo the story rules */
+body.map-off #closed .step{min-height:0;padding:0;margin:0;border:0;display:inline-flex}
+body.map-off #closed .kicker{margin:0}

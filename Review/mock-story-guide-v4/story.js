@@ -263,6 +263,15 @@
     return top + (innerHeight - top) * (narrow.matches && open ? 0.3 : 0.45);
   }
   function pick() {
+    if (closed) {
+      // jump bar marker, as the app does: the last section whose top is above the bar
+      const band = document.querySelector('.top').getBoundingClientRect().bottom;
+      let cur = -1; JUMP.forEach((id, i) => { const e = document.getElementById(id); if (e && e.getBoundingClientRect().top <= band + 130) cur = i; });
+      [...closedEl.querySelectorAll('.pg-jump a')].forEach((l, i) => { if (i === cur) l.setAttribute('aria-current', 'true'); else l.removeAttribute('aria-current'); });
+      const nav = closedEl.querySelector('.pg-jump'), cl = nav && nav.children[cur]; // the sliding marker under the bar
+      if (nav) { nav.style.setProperty('--mark-x', (cl ? cl.offsetLeft : 0) + 'px'); nav.style.setProperty('--mark-w', (cl ? cl.offsetWidth : 0) + 'px'); }
+    }
+    if (closed) { const m = document.documentElement.scrollHeight - innerHeight; document.querySelector('.progress i').style.setProperty('--p', (m > 0 ? Math.min(1, scrollY / m) : 0).toFixed(4)); return; }
     if (!steps.length) return;
     const sg = document.getElementById('story').getBoundingClientRect();
     const mid = midLine();
@@ -277,40 +286,74 @@
   addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; pick(); }); }, { passive: true });
   addEventListener('resize', () => { map.resize(); pick(); });
 
-  // the block being read: the first piece of text that ends below the reading line. It keeps its place on the screen across the switch.
-  function readingBlock() {
-    const mid = midLine();
-    const blocks = [...document.querySelectorAll('.step-in .main > *, .step-in .aside > *')];
-    return blocks.find((b) => { const r = b.getBoundingClientRect(); return r.height > 0 && r.bottom > mid; });
+  // ---- the two layouts hold the same text. Blocks are matched by their words, so the reader stays on the same paragraph across the switch.
+  const closedEl = document.getElementById('closed');
+  const key = (el) => el.textContent.replace(/\s+/g, ' ').trim().replace(/^\d+(?=\D)/, '').slice(0, 70);
+  const SECTION_VIEW = { 'c-place': 'valley', 'c-weather': 'climate', 'c-ground': 'soils', 'c-rules': 'barrel', 'c-taste': 'rest', 'c-short': 'rest', 'c-producers': 'rest', 'c-alike': 'rest', 'c-sources': 'rest' };
+  Object.entries(SECTION_VIEW).forEach(([id, v]) => { const e = document.getElementById(id); if (e) e.dataset.view = v; });
+  closedEl.querySelectorAll('.pg-zguide > div').forEach((d, i) => { d.dataset.view = ['z-rioja-alta', 'z-rioja-alavesa', 'z-rioja-oriental'][i]; });
+  closedEl.querySelectorAll('.pg-chart').forEach((c) => c.setAttribute('data-seen', '')); // the app draws its charts when they scroll into view; here they are drawn at once
+  const openBlocks = () => [...document.querySelectorAll('.step-in .main > *, .step-in .aside > *')];
+  const closedBlocks = () => [...closedEl.querySelectorAll('h1,h2,h3,p,.stop,.pg-zguide > div,.pg-short li,.pg-cards > div,.pg-fact,.pg-rows dt')];
+  // the first piece of text that ends below the reading line
+  const blockAt = (list, mid) => list.find((b) => { const r = b.getBoundingClientRect(); return r.height > 0 && r.bottom > mid; });
+  const sameBlock = (list, b) => { const k = key(b); return k.length > 20 ? list.find((x) => key(x) === k) : null; };
+  // closed layout: the stop last passed (the card or section marker before the block)
+  function closedView(b) {
+    let v = 'intro';
+    closedEl.querySelectorAll('[data-view]').forEach((m) => { if (m === b || (m.compareDocumentPosition(b) & 4)) v = m.dataset.view; });
+    return v;
   }
-  function setClosed(c, save) {
-    const block = readingBlock(), before = block ? block.getBoundingClientRect().top : 0;
+  function setClosed(c, save, init) {
+    if (!init) {
+      // measure in the layout on show, before the swap
+      const from = c ? blockAt(openBlocks(), midLine(true)) : blockAt(closedBlocks(), midLine(false));
+      const before = from ? from.getBoundingClientRect().top : 0;
+      const fromView = from ? (c ? from.closest('.step').dataset.view : closedView(from)) : 'intro';
+      swap(c, save);
+      clearTimeout(timer);
+      if (c) { // closing: the same paragraph in the guide page, at the same height on the screen
+        const to = from && (sameBlock(closedBlocks(), from) || closedEl.querySelector(`[data-view="${fromView}"]`));
+        if (to) scrollBy(0, to.getBoundingClientRect().top - before);
+        closed = true;
+      } else { // reopening: the stop of that paragraph, no flight; the next stop flies
+        const to = from && sameBlock(openBlocks(), from);
+        const step = to ? to.closest('.step') : (steps.find((s) => s.dataset.view === fromView) || steps[0]);
+        const mid = midLine(true), r = (to || step).getBoundingClientRect();
+        if (!(r.top <= mid && r.bottom > mid)) scrollBy(0, r.top - (to ? mid - 4 : document.querySelector('.top').getBoundingClientRect().bottom + 16));
+        closed = true; setActive(step); closed = false; // no flight from setActive
+        map.resize();
+        current = null; lastGo = performance.now(); go(step.dataset.view, true);
+      }
+      return;
+    }
+    swap(c, save); closed = c;
+  }
+  function swap(c, save) {
     document.body.classList.toggle('map-off', c);
     mapbtn.textContent = c ? 'Show the map' : 'Close the map';
     mapbtn.setAttribute('aria-pressed', String(c));
     if (save) { try { localStorage.setItem(KEY, c ? '1' : '0'); } catch (e) { /* not remembered */ } }
-    clearTimeout(timer);
-    if (block) scrollBy(0, block.getBoundingClientRect().top - before); // same paragraph, same place on the screen
-    closed = true; // still true while the step is re-picked in the new layout, so that no flight starts
-    if (block) {
-      if (!c) { const r = block.getBoundingClientRect(), mid = midLine(true); if (!(r.top <= mid && r.bottom > mid)) scrollBy(0, r.top - mid + 4); } // on the open map's reading line
-      setActive(block.closest('.step'));
-    } else pick();
-    closed = c;
-    if (!c) {
-      map.resize();
-      if (inStep) { current = null; lastGo = performance.now(); go(inStep.dataset.view, true); } // reopen: jump to this stop, no flight; the next stop flies
-    }
   }
+  // the page's own controls cannot work standalone: its links keep the page, the jump bar scrolls
+  const JUMP = ['c-place', 'c-weather', 'c-ground', 'c-rules', 'c-taste', 'c-short', 'c-producers', 'c-alike', 'c-sources'];
+  closedEl.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    e.preventDefault();
+    const j = a.closest('.pg-jump');
+    const t = j && document.getElementById(JUMP[[...j.children].indexOf(a)]);
+    if (t) t.scrollIntoView({ behavior: reduce.matches ? 'auto' : 'smooth' });
+  });
   mapbtn.addEventListener('click', () => setClosed(!closed, true));
   // the guide's fly links: map open = fly there; map closed = the plain link (the app's own href)
   document.querySelectorAll('.fly-link').forEach((a) => a.addEventListener('click', (e) => {
-    if (closed) return;
     e.preventDefault();
+    if (closed) return;
     lastGo = performance.now(); go(a.dataset.fly);
   }));
 
   steps = [...document.querySelectorAll('.text .step')];
-  if (closed) setClosed(true, false);
+  if (closed) setClosed(true, false, true);
   pick();
 })();
