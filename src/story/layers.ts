@@ -3,6 +3,7 @@
 // Colours, widths and opacities are design choices from the approved mock (Review/mock-story-guide-v3/README.md, "Fact or design choice").
 import type { ExpressionSpecification, FilterSpecification, GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
+import { loadJson } from '../map/dataFile';
 import slopeTints from '../../data/story/slope-tints.json';
 import { CLIMATE_GROUPS } from '../map/climate';
 import { strings } from '../strings';
@@ -161,7 +162,7 @@ export function storyLayers(): StoryLayers {
       if (s.id === 'rioja') {
         // One label point per zone: the centroid of its largest part (a MultiPolygon would be named once per part).
         map.addSource('story-zones', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-        void fetch(zonesUrl).then((r) => r.json()).then((fc: GeoJSON.FeatureCollection) => {
+        void loadJson<GeoJSON.FeatureCollection>(zonesUrl).then((fc) => {
           (map.getSource('story-zones') as GeoJSONSource | undefined)?.setData(zoneLabelPoints(fc));
         }).catch(() => {});
         map.addLayer({ id: 'story-zonelabels', type: 'symbol', source: 'story-zones', layout: { visibility: 'none', 'text-field': ['upcase', ['get', 'zone']], 'text-font': FONT, 'text-size': 13, 'text-letter-spacing': 0.14, 'text-max-width': 6 }, paint: HALO });

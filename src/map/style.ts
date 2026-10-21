@@ -6,6 +6,8 @@ import { GLYPHS_URL } from './mapNames';
 
 // The patterns .github/workflows/live-map-check.yml matches on.
 export const ESRI_TILES = 'https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+/** The map zoom the relief (3D height and shading) starts at; below it the map is flat and no elevation tiles are fetched. */
+export const RELIEF_MIN_ZOOM = 7;
 export const TERRAIN_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
 export const ESRI_ATTRIBUTION = 'Imagery: Esri, Vantor, Earthstar Geographics, and the GIS User Community';
 export const TERRAIN_ATTRIBUTION = 'Terrain: Mapzen, AWS Open Data';
@@ -21,6 +23,8 @@ export interface StyleOptions {
   /** Tests: no tile source of any kind, so no tile request. */
   tiles: boolean;
   menu: MenuState;
+  /** The map zoom the relief starts at (RELIEF_MIN_ZOOM unless a view opens lower, as the map tours do). */
+  reliefFrom?: number;
   /** Screen pixel ratio; 2x screens get the next zoom of imagery. */
   dpr?: number;
 }
@@ -28,7 +32,7 @@ export interface StyleOptions {
 const empty = { type: 'FeatureCollection', features: [] } as const;
 
 /** Sources start empty; the app fills the geojson ones once the data files arrive. */
-export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSpecification {
+export function buildStyle({ esriKey, tiles, menu, dpr, reliefFrom = RELIEF_MIN_ZOOM }: StyleOptions): StyleSpecification {
   const imagery = tiles && !!esriKey;
   const sat = menu.satellite && imagery;
   const paint = basemapPaint(sat);
@@ -45,10 +49,12 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
     sources.pnoa = { type: 'raster', tiles: [PNOA_PROTOCOL_TILES], tileSize, minzoom: PNOA_MIN_ZOOM, maxzoom: PNOA_MAX_ZOOM, attribution: PNOA_ATTRIBUTION };
   }
   if (tiles) {
-    sources.terrain = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 13, attribution: TERRAIN_ATTRIBUTION };
+    // Relief only shows from zoom 7 (owner 21 Oct 2026): the DEM is not asked for below it. tileSize 512 makes MapLibre ask one zoom
+    // coarser than 256 would, about a quarter of the tiles for the same view.
+    sources.terrain = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 512, encoding: 'terrarium', minzoom: reliefFrom, maxzoom: 13, attribution: TERRAIN_ATTRIBUTION };
     // The shading has its own copy of the same tiles (MapLibre draws hillshade badly from the 3D relief's source) and one zoom
     // finer, so slopes stay crisp close in instead of blurring.
-    sources.shade = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 256, encoding: 'terrarium', maxzoom: 14 };
+    sources.shade = { type: 'raster-dem', tiles: [TERRAIN_TILES], tileSize: 512, encoding: 'terrarium', minzoom: reliefFrom, maxzoom: 14 };
   }
   const isLand = ['==', ['get', 'layer'], 'land'] as never;
   const isBorder = ['==', ['get', 'layer'], 'border'] as never;
@@ -67,7 +73,7 @@ export function buildStyle({ esriKey, tiles, menu, dpr }: StyleOptions): StyleSp
   }
   if (tiles) {
     layers.push({
-      id: 'hillshade', type: 'hillshade', source: 'shade', layout: { visibility: vis.hillshade },
+      id: 'hillshade', type: 'hillshade', source: 'shade', minzoom: reliefFrom, layout: { visibility: vis.hillshade },
       paint: { 'hillshade-exaggeration': paint.hillshadeExaggeration, 'hillshade-shadow-color': '#5A4A3A', 'hillshade-highlight-color': '#FFFFFF', 'hillshade-accent-color': '#8A7A66' },
     });
   }
