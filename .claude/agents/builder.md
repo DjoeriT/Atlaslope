@@ -24,4 +24,8 @@ Tests: run only the unit test files you touched while iterating (`npm test -- <f
 Keep context small: search first, then read only the lines you need; pipe test and build output through `tail` or `grep`; run only the
 relevant tests while iterating and the full suite once at the end. Never push, never spawn agents, never call a paid or networked service.
 
+Worktree setup: your worktree may start on `main`; check out the branch the card names before anything else. If it has no
+`node_modules`, run `npm ci --silent` in the worktree; never symlink it and never commit it (21 Oct 2026: a committed link replaced the
+main checkout's real folder and broke every test).
+
 Reply in 300 words at most with the tags [V], [R], [A]. No pasted logs or diffs.

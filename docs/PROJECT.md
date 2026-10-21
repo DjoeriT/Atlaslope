@@ -25,8 +25,9 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Release 59 (PR #171): map tours for Rioja and Priorat (#127, first part of #148): scroll the guide, the app map flies to each stop
   named in its text; IGN rivers and names, Köppen climate, IGME geology, slope tint, fact markers; listing page and home tile. Also in it:
   #169 BSk "cool, dry steppe", #170 slope measure for every place. Release 60 (PR #172): renamed "Map tours", search in the top bar of every page, tour code and data load on demand with their own
-  150 KB per-tour check. Next PR (`claude/map-tour-guide`): the tour folded into the guide page (B3 band, layout A), "Map tours" out of the
-  top bar, Guides page "Map tour" line and guides/#map-tours, one set of climate colours and names for chart and map.
+  150 KB per-tour check. Release 61 (PR #173, `git tag -l 'release-*'` for the latest): the tour folded into the guide page (B3 band, layout A), "Map tours" out of the top bar,
+  Guides page "Map tour" line and guides/#map-tours, one set of climate colours and names for chart and map. Next: the other 11 map
+  tours (brief in `docs/handoffs/2026-10-21-map-tours.md`).
 - Release 56 (PR #161): photo credits say "cropped and resized" on the Guides page and place pages (#154; place-page frames crop
   too, `object-fit:cover`); imagery credit «Esri, Vantor» everywhere, share image rebuilt; Esri terms for the saved screenshots in
   `data/SOURCES.md` (#155).
