@@ -16,6 +16,7 @@ Long LeadBot session (far past 150K; builders here were capped at 60 turns, a fr
 ## Decided (owner, 21 Oct 2026)
 - Tours stay hand-made; no default-tour generator ("I want them to feel special"). Replaces the generator line in
   `2026-10-21-map-tours.md`'s brief.
+- Superseded the same evening by `2026-10-21-tour-v3-restore.md` (B dropped; v3 journey back).
 - Map tour direction **B** (`Review/mock-tour-wow/README.md`): calm guide map (one view per section, read stop lights up, photo card
   in a map corner, flies only on a tapped link) plus "Fly the tour" restoring the release 59 full-screen tour (StoryView). The guide
   stays the default; a big "Fly the tour" entry with a photo sits at the top of the guide, plus the small one in the map band.

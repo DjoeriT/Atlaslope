@@ -2,7 +2,10 @@
 
 Page: `index.html` (Artifact https://claude.ai/artifact/Mi2PNUfEFojLA2v9WWqHxB). Options A-D on the live Rioja tour.
 
-## Decided (owner, 21 Oct 2026)
+## Superseded (owner, 21 Oct 2026, evening)
+B is dropped: the v3 journey comes back (`docs/handoffs/2026-10-21-tour-v3-restore.md`).
+
+## Decided earlier (owner, 21 Oct 2026)
 - **B**: the guide keeps a calm map (A: one camera view per section, the stop being read lights up, its photo card in a map corner,
   the map flies only on a tapped stop link) plus a "Fly the tour" button in the map band that reopens the approved release 59
   full-screen tour (StoryView: one chapter at a time, pitched map, photo in every stop card, slow flights).
