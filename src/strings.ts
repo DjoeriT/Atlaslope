@@ -455,7 +455,7 @@ export const strings = {
     // The one-line legend on the map: the climate classes (names from the app's climate view, short forms for a phone) or the rock colours.
     legend: {
       climate: 'Climate:',
-      geology: 'Rock colours, IGME MAGNA 50:',
+      geology: 'Rock beneath the soil:',
       /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), per story (colours: src/story/layerRules.ts). */
       rocks: { rioja: { clayLimestone: 'Arenas, areniscas calcáreas y arcillas ocres (facies de Haro)', ferrousClay: 'Limolitas y arcillas rojas', alluvial: 'Aluviales y llanura de inundación' }, priorat: { slate: 'Pizarras corneanas' } } as Record<string, Record<string, string>>,
       slope: 'Steeper than 30% (about 17°)',

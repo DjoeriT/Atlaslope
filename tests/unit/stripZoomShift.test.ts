@@ -8,7 +8,7 @@ describe('stripZoomShift', () => {
 });
 
 describe('rockKey', () => {
-  it('names the rock types the soils stops describe, in IGME's own unit names', () => {
+  it("names the rock types the soils stops describe, in IGME's own unit names", () => {
     expect(rockKey('rioja').map((r) => r.label)).toEqual(['Arenas, areniscas calcáreas y arcillas ocres (facies de Haro)', 'Limolitas y arcillas rojas', 'Aluviales y llanura de inundación']);
     expect(rockKey('priorat').map((r) => r.label)).toEqual(['Pizarras corneanas']);
     expect(rockKey('nowhere')).toEqual([]);

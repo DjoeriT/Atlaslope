@@ -47,10 +47,12 @@ const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matche
 export function createStoryMap(container: HTMLElement, story: Story, start: Cam, events: StoryMapEvents): StoryMap {
   let imagery = true;
   let lastShown: Credited[] | null = null; // re-sent when the imagery fails, so its credit goes
-  const ctl = createMap(container, { ...DEFAULT_MENU, boundaries: false }, { onImageryFailed: () => { imagery = false; if (lastShown) events.onLayers(lastShown, false); } },
+  const ctl = createMap(container, { ...DEFAULT_MENU, boundaries: false, relief: false }, { onImageryFailed: () => { imagery = false; if (lastShown) events.onLayers(lastShown, false); } },
     { lng: start.center[0], lat: start.center[1], zoom: start.zoom, bearing: start.bearing, pitch: start.pitch });
   const map = ctl.map;
   map.setMaxPitch(80);
+  // Speed on a slow link: the relief (terrain and hillshade, about 60 tile requests for the first view) starts after the first picture is drawn.
+  map.once('idle', () => ctl.apply({ ...DEFAULT_MENU, boundaries: false }, imagery));
   map.scrollZoom.disable(); // the page scrolls over the map; zoom stays on the buttons and pinch
   map.keyboard.disable();
   map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: true }), 'top-right');

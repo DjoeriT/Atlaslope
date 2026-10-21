@@ -70,7 +70,7 @@ test('on a phone the map strip is 300 px and the credit is folded', async ({ pag
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  expect((await mapCol(page).boundingBox())?.height).toBe(300);
+  await expect(mapCol(page)).toHaveCSS('height', '300px');
   await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
 });
 
