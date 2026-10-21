@@ -120,9 +120,9 @@ export const strings = {
     // Köppen-Geiger codes in plain words (Beck et al. 2023). The six classes on the map's legend (src/map/climate.ts) use the same words here
     // (owner, 21 Oct 2026; a unit test holds them together). Only the codes that appear in the measured data need a name.
     koppenNames: {
-      BSh: 'hot semi-arid and desert',
+      BSh: 'hot semi-arid',
       BSk: 'cold semi-arid',
-      BWh: 'hot semi-arid and desert',
+      BWh: 'hot desert',
       BWk: 'cold desert',
       Cfa: 'humid subtropical',
       Cfb: 'oceanic',
