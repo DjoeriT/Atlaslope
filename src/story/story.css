@@ -1,4 +1,4 @@
-/* "Read with the map": from Review/mock-story-guide-v3/story.css and story-b.css. White page, black band + champagne, 6px corners, no pills. */
+/* "Map tour": from Review/mock-story-guide-v3/story.css and story-b.css. White page, black band + champagne, 6px corners, no pills. */
 .story{--band:3.5rem;position:fixed;inset:0;z-index:31;overflow:auto;background:var(--paper,#fff);color:var(--ink,#1A1714)}
 .story-top{position:sticky;top:0;z-index:20;height:var(--band);display:flex;align-items:center;gap:1rem;padding:0 1rem;background:#141414;color:#E9D8B4;border-bottom:1px solid #7D6540}
 .story-brand{display:inline-flex;align-items:center;gap:.5rem;font:400 1.35rem/1 var(--serif,Georgia,serif)}

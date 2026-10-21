@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-// "Read with the map" (the story view): the button, the step that follows the scroll, the geology credit, the fact marker keys, Escape.
+// "Map tour" (the story view): the button, the step that follows the scroll, the geology credit, the fact marker keys, Escape.
 // Real content; outside hosts (tiles, the IGME geology service) are blocked, so only the page's own state is asserted (active step, credit text, focus, address).
 
 async function open(page: Page, hash: string) {

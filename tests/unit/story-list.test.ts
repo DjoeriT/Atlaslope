@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { fillStoryCount, fillStoryList, squareFocus, storyCount, storyRows } from '../../src/home/storyList';
 
-const page = readFileSync('read-with-the-map/index.html', 'utf8');
+const page = readFileSync('map-tours/index.html', 'utf8');
 const home = readFileSync('index.html', 'utf8');
 
 describe('the home story tile', () => {
@@ -13,9 +13,9 @@ describe('the home story tile', () => {
     expect(fillStoryCount('<dt data-count="stories">2</dt><dt data-count="places">106</dt>', 7)).toBe('<dt data-count="stories">7</dt><dt data-count="places">106</dt>');
     expect(storyCount()).toBeGreaterThan(0);
   });
-  it('links to the page, which the footer links to as well', () => {
-    expect(home).toMatch(/data-count="stories">\d+<\/dt><dd><a href="read-with-the-map\/">guides to read with the map<\/a>/);
-    expect(home.match(/href="read-with-the-map\/"/g)?.length).toBe(2);
+  it('links to the page, which the top bar and footer link to as well', () => {
+    expect(home).toMatch(/data-count="stories">\d+<\/dt><dd><a href="map-tours\/">map tours<\/a>/);
+    expect(home.match(/href="map-tours\/"/g)?.length).toBe(3);
   });
   it('counts a new story file with no page edit', () => {
     const dir = mkdtempSync(join(tmpdir(), 'stories-'));
@@ -26,7 +26,7 @@ describe('the home story tile', () => {
   });
 });
 
-describe('the Read with the map page', () => {
+describe('the Map tours page', () => {
   const list = storyRows();
   const out = fillStoryList(page, list);
   it('has a row per story file, opening the guide with its story', () => {

@@ -42,6 +42,7 @@ export const strings = {
     explore: 'Atlas',
     quiz: 'Study',
     guides: 'Guides',
+    mapTours: 'Map tours',
     about: 'About',
     showMap: 'Show map',
     showMapLabel: (name: string) => `Show map: ${name}`,
@@ -429,9 +430,9 @@ export const strings = {
       saveCopy: 'Save a copy to a file',
     },
   },
-  // "Read with the map" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
+  // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
-    open: 'Read with the map',
+    open: 'Map tour',
     openSub: (minutes: number, stops: number) => `${minutes} minutes · ${stops} places to fly to`,
     back: (name: string) => `Back to ${name}`,
     kicker: (minutes: number) => `Terroir · ${minutes}-minute read`,

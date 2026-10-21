@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <title>Read with the map · AtlaSlope</title>
-    <meta name="description" content="Guides to read with the map: the page scrolls and the map flies to each place it names." />
+    <title>Map tours · AtlaSlope</title>
+    <meta name="description" content="Map tours: the page scrolls and the map flies to each place it names." />
     <meta name="theme-color" content="#141414" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
@@ -21,7 +21,7 @@
     <script type="module" src="/src/home/main.ts"></script>
     <link rel="stylesheet" href="/src/home/guides.css" />
   </head>
-  <!-- Read with the map: one row per story in content/stories/, filled in at build time (src/home/storyList.ts). Same bar and layout as guides/. -->
+  <!-- Map tours: one row per story in content/stories/, filled in at build time (src/home/storyList.ts). Same bar and layout as guides/. -->
   <body>
     <a class="skip" href="#main">Skip to the content</a>
     <header class="sitebar">
@@ -30,14 +30,15 @@
           <svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><defs><clipPath id="mt"><rect width="64" height="64" rx="14" /></clipPath><clipPath id="mh"><path d="M-2 52 C 14 50 30 40 44 26 C 50 20 56 17 66 16 L66 66 L-2 66 Z" /></clipPath></defs><g clip-path="url(#mt)"><rect width="64" height="64" fill="#E9D8B4" /><g clip-path="url(#mh)"><rect width="64" height="64" fill="#141414" /><g fill="none" stroke="#E9D8B4" stroke-width="3.6" stroke-linecap="round"><path d="M8 66 L20 49" /><path d="M22 66 L31 40.5" /><path d="M36 66 L41 30.5" /><path d="M50 66 L51 22.5" /><path d="M64 66 L61 17" /></g></g></g></svg>
           <b>AtlaSlope</b>
         </a>
-        <nav aria-label="Site"><a href="../atlas/">Atlas</a><a href="../atlas/#study">Study</a><a href="../guides/">Guides</a><a href="../about/">About</a></nav>
+        <div class="search" role="search" data-atlas="../atlas/" data-none="No place or region matches." data-results="Search results"><input type="search" placeholder="Search places and regions" aria-label="Search places and regions" autocomplete="off" /></div>
+        <nav aria-label="Site"><a href="../atlas/">Atlas</a><a href="../atlas/#study">Study</a><a href="../guides/">Guides</a><a href="../map-tours/">Map tours</a><a href="../about/">About</a></nav>
       </div>
     </header>
 
     <main id="main">
       <header class="page-head">
         <div class="wrap">
-          <h1>Read with the map.</h1>
+          <h1>Map tours.</h1>
           <p class="sub">The page scrolls and the map flies to each place it names.<br />Every guide here is a walk through one place.</p>
         </div>
       </header>
@@ -56,7 +57,7 @@
       <div class="wrap">
         <div><p class="h">The wine atlas</p><small>Spain's wine places from above, and why each one tastes the way it does. Free, in your browser, no account.</small></div>
         <div><p class="h">Atlas</p><a href="../atlas/">Spain</a><a href="../atlas/#study">Study</a></div>
-        <div><p class="h">Guides</p><a href="../guides/">All guides</a><a href="../read-with-the-map/">Read with the map</a><a href="../atlas/#place=rioja&amp;page">The Rioja guide</a></div>
+        <div><p class="h">Guides</p><a href="../guides/">All guides</a><a href="../map-tours/">Map tours</a><a href="../atlas/#place=rioja&amp;page">The Rioja guide</a></div>
         <div><p class="h">AtlaSlope</p><a href="../about/">About</a></div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-// A story ("Read with the map") is one JSON file per guide in content/stories/<id>.json. It adds a map walk to a guide and never carries
+// A story ("Map tour") is one JSON file per guide in content/stories/<id>.json. It adds a map walk to a guide and never carries
 // guide text of its own: each step points into content/guides/<id>.json, and a fact marker repeats a sentence of that guide with its cite.
 // Camera values are design choices (see the file's $comment); the format is described in docs/guides.md ("Story files").
 
