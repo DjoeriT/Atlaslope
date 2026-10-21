@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+"""Add the five stop photos of the Rioja and Priorat story to the app's photo set.
+
+Same steps as Tools/data/photo_ship.py (Commons' 1200 px rendition, WebP quality 72, entry in data/photos.json), for photos that are
+not a place's Guides photo. Then run Tools/data/photo_sizes.py for the 160/480/800 copies and blur previews.
+Needs Pillow (.venv/bin/python3). Focus points (checked on the 3:2 frame) are in data/story/photo-focus.json, not in
+src/home/photoCrops.json: that file is for the square Guides cards only, and a test rejects entries for photos the Guides page does not show.
+"""
+import importlib.util, io, json, sys
+from pathlib import Path
+
+from PIL import Image
+
+ROOT = Path(__file__).resolve().parents[2]
+spec = importlib.util.spec_from_file_location("photo_ship", ROOT / "Tools/data/photo_ship.py")
+ship = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(ship)
+
+PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
+    "rioja-sierra-1": ("File:Sierra de Cantabria.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Cantabria.jpg", "Deivid",
+                       "Public domain", None, "The limestone crests of the Sierra de Cantabria seen across the vineyard terraces", "50% 40%"),
+    "rioja-haro-1": ("File:Estación de Ferrocarril de Haro - La Rioja.jpg", "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Ferrocarril_de_Haro_-_La_Rioja.jpg",
+                     "BigSus", "CC BY 2.5", "https://creativecommons.org/licenses/by/2.5", "Haro railway station, a red-brick building beside the tracks", "50% 45%"),
+    "priorat-siurana-1": ("File:Siurana - Pantà i església.JPG", "https://commons.wikimedia.org/wiki/File:Siurana_-_Pant%C3%A0_i_esgl%C3%A9sia.JPG",
+                          "Lohen11 - Josep Renalias", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The church of Siurana on its cliff above the Siurana reservoir", "50% 45%"),
+    "priorat-porrera-1": ("File:Vinyes del Priorat, Porrera.jpg", "https://commons.wikimedia.org/wiki/File:Vinyes_del_Priorat,_Porrera.jpg",
+                          "Àngela Llop", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Vines on steep terraced slopes at Porrera, Priorat", "50% 50%"),
+    "priorat-scala-dei-1": ("File:Cartoixa d'Escaladei - Vista.jpg", "https://commons.wikimedia.org/wiki/File:Cartoixa_d%27Escaladei_-_Vista.jpg",
+                            "joan ggk", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "The village at Scala Dei below the cliffs of the Montsant", "50% 40%"),
+}
+
+
+def main():
+    path = ROOT / "data/photos.json"
+    doc = json.loads(path.read_text())
+    for key, (title, page, artist, licence, lurl, alt, _) in PHOTOS.items():
+        out = ship.OUT / f"{key}.webp"
+        if not out.exists():
+            img = Image.open(io.BytesIO(ship.fetch(ship.rendition(title)))).convert("RGB")
+            img.thumbnail((1200, 1200))
+            img.save(out, "WEBP", quality=72, method=6)
+        doc["photos"][key] = {"alt": alt, "artist": artist, "licence": licence, "licenceUrl": lurl, "page": page, "title": title}
+        print(key, out.stat().st_size // 1024, "KB")
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
+    (ROOT / "data/story/photo-focus.json").write_text(json.dumps({k: v[-1] for k, v in PHOTOS.items()}, indent=1) + "\n")
+
+
+if __name__ == "__main__":
+    sys.exit(main())
