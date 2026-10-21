@@ -10,14 +10,53 @@
 - What went wrong [V]: release 59 built v3 as a full-screen view; release 61 folded it into the guide as a 46%-wide side map without
   stop cards or photos; release 62 then flew the map on the reading line. B and round 1 all started from the folded version.
 
+## Decided later the same evening (owner, 21 Oct 2026)
+- v3 is a stepping stone to a better version: the whole guide lives inside the v3 layout. Map on by default (desktop and phone),
+  remembered once closed. "Close the map" leaves the same content on the page without the map.
+- So a **v4 mock** comes first (brief below); the restore build brief further down waits until v4 is approved and then builds v4.
+- "Wait with building" (owner): no app code until he says so.
+
 ## Open
-1. **Tour v3 restore build** (brief below).
+1. **v4 mock round** (brief below), then the build (restore brief, updated to v4).
 2. Stops with no photo of their own today (Rioja: intro, climate, barrel; Priorat: check): "a photo in every stop card" means new
    Commons photos with checked crops, or the section photo. Ask him with candidates, never invent.
-3. Satellite colour jumps and tile reloads: #182, measured and fixed in the same session as this hand-off (see its PR).
+3. Satellite colour jumps and tile reloads: #182, measured (`Review/sat-flicker/report.md`), fix waits for his word (brief below).
 4. Agenda items 2, 4, 5 in `2026-10-21-agenda-after-62.md` stand (Learn finish, next country, later).
 
-## Brief: tour v3 restore (paste into a fresh session)
+## Brief: v4 mock, the guide inside the journey (paste into a fresh session)
+```
+You are LeadBot for the map tour v4 mock (#148, #127). Mock only, no app code. Read docs/handoffs/2026-10-21-tour-v3-restore.md,
+Review/mock-story-guide-v3/README.md (grep) and look at Review/mock-story-guide-v3/shots/*.png. The owner opened the live v3
+page (mocks/story-guide-v3/index.html) and wants it as the base: keep every animation and layer exactly, extend it.
+Build mocks/story-guide-v4/index.html (git-ignored, live tiles) from a copy of Review/mock-story-guide-v3/ into
+Review/mock-story-guide-v4/ (build.py etc.; v3 stays untouched). Rioja first, Priorat if cheap.
+1. The whole guide in the reading column: every section of content/guides/rioja.json in the guide's order (the place, the
+   weather, the ground, the rules, how it tastes, in short, extras), guide text unchanged. Stops stay the guide's fly entries.
+2. The map stage exactly as v3 (terrain x1.5, slope tint, climate and geology, rivers and names, locator, focus, 2.5-4 s
+   flights, two legs, 2.2 s dwell). It only moves when a new stop starts. Sections with no stop hold a still, tilted view of the
+   whole place. Phone: map pinned to the top 42%.
+3. A photo card in the text for each stop (v3 part B style, checked crops are for the build; mark CSS crops [A]).
+4. "Close the map" / "Show the map" in the black band. Closed: the text widens to the normal guide page width, same content,
+   photo cards stay, fly links become plain links; the reader stays on the paragraph they were on. Reopen: jumps (no flight) to
+   that paragraph's stop, flies again from the next stop. Map on by default; the closed choice is remembered (localStorage, try/catch).
+5. Design check against Review/visual-style.md; fix findings. Desktop 1440 and phone 390 shots, map on and closed, to him with
+   the file:/// path. Ask him to approve or list changes. Then update the restore brief below to build v4.
+One helper (one-shot, fixed steps) for the page. Estimate [A]: 0.3-0.5M tokens, mostly new. Hand off around 150K.
+```
+
+## Brief: #182 satellite fix (paste into a fresh session, on his word)
+```
+You are LeadBot for #182 (satellite colour jumps and tile reloads). Read Review/sat-flicker/report.md (measured 21 Oct 2026):
+Esri to PNOA switch at map zoom 8 on 2x screens (+40 red step), hillshade brightness step at zoom 7, 3-6x tile churn at
+tileSize 128 with a 600 ms fade on every re-created tile, cancelled Esri downloads refetched; HTTP cache works.
+Small slice in src/map/style.ts and src/map/imagery.ts: blend PNOA in over two zoom levels (raster-opacity by zoom) and/or a light
+colour match; shorter raster fade; larger tile cache (maxTileCacheSize); relief fading in over zooms 7-9. Measure before and
+after with Review/sat-flicker/measure.mjs (needs a build exposing window.__map, debug-only via src/debug.ts, kept out of dist/).
+Never tune a test to pass. Before/after video and colour table to him, PR, merge on green CI, then ask about the release.
+Estimate [A]: 0.3-0.6M, mostly re-reads.
+```
+
+## Brief: tour restore build (after v4 is approved; update to v4 first)
 ```
 You are LeadBot for the map tour restore (#148, #127). Read docs/handoffs/2026-10-21-tour-v3-restore.md, then
 Review/mock-story-guide-v3/README.md and LAYERS.md (grep), and look at Review/mock-story-guide-v3/shots/*.png: that is the

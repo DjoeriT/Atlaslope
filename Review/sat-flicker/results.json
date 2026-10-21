@@ -1,0 +1,1027 @@
+{
+ "when": "2026-10-21T18:54:04.831Z",
+ "centre": [
+  -2.6,
+  42.5
+ ],
+ "colourDPR2": [
+  {
+   "zoom": 5.63,
+   "variant": "default",
+   "meanRGB": [
+    142.4,
+    121.5,
+    88.3
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 6,
+   "variant": "noRelief",
+   "meanRGB": [
+    91.8,
+    95.8,
+    71.5
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 7,
+   "variant": "default",
+   "meanRGB": [
+    107,
+    111.9,
+    81.6
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 7,
+   "variant": "noRelief",
+   "meanRGB": [
+    92.8,
+    99,
+    65
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 8,
+   "variant": "default",
+   "meanRGB": [
+    143.8,
+    144.7,
+    100.4
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 8,
+   "variant": "noRelief",
+   "meanRGB": [
+    132.7,
+    137.3,
+    87.2
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 8,
+   "variant": "esriOnly(noRelief)",
+   "meanRGB": [
+    227.6,
+    222.7,
+    194.3
+   ],
+   "satellite": "visible",
+   "pnoa": "none",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 8,
+   "variant": "pnoaOnly(noRelief)",
+   "meanRGB": [
+    132.7,
+    137.3,
+    87.2
+   ],
+   "satellite": "none",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 9,
+   "variant": "default",
+   "meanRGB": [
+    154.1,
+    147.5,
+    97.8
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 9,
+   "variant": "noRelief",
+   "meanRGB": [
+    147.1,
+    142.6,
+    88.8
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 9,
+   "variant": "esriOnly(noRelief)",
+   "meanRGB": [
+    230.2,
+    219.7,
+    186.4
+   ],
+   "satellite": "visible",
+   "pnoa": "none",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 9,
+   "variant": "pnoaOnly(noRelief)",
+   "meanRGB": [
+    147.1,
+    142.6,
+    88.8
+   ],
+   "satellite": "none",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 10,
+   "variant": "default",
+   "meanRGB": [
+    162.7,
+    152.7,
+    101.4
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 10,
+   "variant": "noRelief",
+   "meanRGB": [
+    158.8,
+    150.4,
+    95.4
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 10,
+   "variant": "esriOnly(noRelief)",
+   "meanRGB": [
+    231.8,
+    222,
+    187.2
+   ],
+   "satellite": "visible",
+   "pnoa": "none",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 10,
+   "variant": "pnoaOnly(noRelief)",
+   "meanRGB": [
+    158.8,
+    150.4,
+    95.4
+   ],
+   "satellite": "none",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 11,
+   "variant": "default",
+   "meanRGB": [
+    163.1,
+    152.8,
+    105.7
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 11,
+   "variant": "noRelief",
+   "meanRGB": [
+    161.7,
+    151.7,
+    101.9
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 11,
+   "variant": "esriOnly(noRelief)",
+   "meanRGB": [
+    232,
+    222.8,
+    194.4
+   ],
+   "satellite": "visible",
+   "pnoa": "none",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 11,
+   "variant": "pnoaOnly(noRelief)",
+   "meanRGB": [
+    161.7,
+    151.7,
+    101.9
+   ],
+   "satellite": "none",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 12,
+   "variant": "default",
+   "meanRGB": [
+    157,
+    149.9,
+    128.9
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "visible"
+  },
+  {
+   "zoom": 12,
+   "variant": "noRelief",
+   "meanRGB": [
+    155.4,
+    148.7,
+    127.5
+   ],
+   "satellite": "visible",
+   "pnoa": "visible",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 12,
+   "variant": "esriOnly(noRelief)",
+   "meanRGB": [
+    234.5,
+    227.2,
+    205.5
+   ],
+   "satellite": "visible",
+   "pnoa": "none",
+   "hillshade": "none"
+  },
+  {
+   "zoom": 12,
+   "variant": "pnoaOnly(noRelief)",
+   "meanRGB": [
+    155.4,
+    148.7,
+    127.5
+   ],
+   "satellite": "none",
+   "pnoa": "visible",
+   "hillshade": "none"
+  }
+ ],
+ "passesDPR2": {
+  "p1-up": {
+   "esri": {
+    "total": 24,
+    "fromCache": 0,
+    "network": 24,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 24
+    },
+    "bytesNet": 515733
+   },
+   "ign": {
+    "total": 124,
+    "fromCache": 0,
+    "network": 124,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 16,
+     "12": 12,
+     "13": 12,
+     "14": 84
+    },
+    "bytesNet": 1880128
+   },
+   "dem": {
+    "total": 18,
+    "fromCache": 0,
+    "network": 18,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 2,
+     "8": 2,
+     "9": 4,
+     "10": 2,
+     "11": 2,
+     "12": 6
+    },
+    "bytesNet": 2148718
+   },
+   "maplibreTileLoads": {
+    "land": 70,
+    "ocean": 70,
+    "dos": 70,
+    "satellite": 895,
+    "shade": 84,
+    "osm": 62,
+    "pnoa": 725,
+    "terrain": 20
+   }
+  },
+  "p1-down": {
+   "esri": {
+    "total": 3,
+    "fromCache": 0,
+    "network": 3,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 3
+    },
+    "bytesNet": 54890
+   },
+   "ign": {
+    "total": 60,
+    "fromCache": 0,
+    "network": 60,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 13,
+     "11": 16,
+     "12": 4,
+     "13": 12,
+     "14": 15
+    },
+    "bytesNet": 864292
+   },
+   "dem": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 828,
+    "pnoa": 666,
+    "terrain": 11,
+    "shade": 78,
+    "osm": 32,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-up": {
+   "esri": {
+    "total": 24,
+    "fromCache": 14,
+    "network": 10,
+    "repeatUrls": 14,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 24
+    },
+    "bytesNet": 141404
+   },
+   "ign": {
+    "total": 35,
+    "fromCache": 0,
+    "network": 35,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 7,
+     "11": 8,
+     "12": 12,
+     "13": 8
+    },
+    "bytesNet": 465022
+   },
+   "dem": {
+    "total": 3,
+    "fromCache": 3,
+    "network": 0,
+    "repeatUrls": 3,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 2,
+     "10": 1
+    },
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 780,
+    "shade": 81,
+    "osm": 62,
+    "pnoa": 670,
+    "terrain": 11,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-down": {
+   "esri": {
+    "total": 3,
+    "fromCache": 0,
+    "network": 3,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 3
+    },
+    "bytesNet": 54563
+   },
+   "ign": {
+    "total": 36,
+    "fromCache": 0,
+    "network": 36,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 6,
+     "11": 4,
+     "12": 12,
+     "13": 6,
+     "14": 8
+    },
+    "bytesNet": 502366
+   },
+   "dem": {
+    "total": 1,
+    "fromCache": 1,
+    "network": 0,
+    "repeatUrls": 1,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 1
+    },
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 663,
+    "pnoa": 640,
+    "terrain": 11,
+    "shade": 78,
+    "osm": 28,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "load": {
+   "esri": {
+    "total": 160,
+    "fromCache": 4,
+    "network": 156,
+    "repeatUrls": 4,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 160
+    },
+    "bytesNet": 1734322
+   },
+   "ign": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "dem": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {}
+  },
+  "maplibreOpts": {
+   "tileSizeSat": 128,
+   "fade": 600,
+   "dpr": 2,
+   "maxTileCacheSize": null,
+   "maxTileCacheZoomLevels": 5,
+   "pitchStart": 0
+  }
+ },
+ "passesDPR1": {
+  "p1-up": {
+   "esri": {
+    "total": 49,
+    "fromCache": 0,
+    "network": 49,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 25,
+     "9": 24
+    },
+    "bytesNet": 945084
+   },
+   "ign": {
+    "total": 70,
+    "fromCache": 0,
+    "network": 70,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 14,
+     "11": 14,
+     "12": 18,
+     "13": 24
+    },
+    "bytesNet": 1011901
+   },
+   "dem": {
+    "total": 18,
+    "fromCache": 0,
+    "network": 18,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 2,
+     "8": 2,
+     "9": 4,
+     "10": 2,
+     "11": 2,
+     "12": 6
+    },
+    "bytesNet": 2117762
+   },
+   "maplibreTileLoads": {
+    "land": 68,
+    "ocean": 68,
+    "dos": 68,
+    "satellite": 273,
+    "shade": 87,
+    "osm": 62,
+    "terrain": 20,
+    "pnoa": 179
+   }
+  },
+  "p1-down": {
+   "esri": {
+    "total": 11,
+    "fromCache": 9,
+    "network": 2,
+    "repeatUrls": 9,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 9,
+     "9": 2
+    },
+    "bytesNet": 29091
+   },
+   "ign": {
+    "total": 31,
+    "fromCache": 0,
+    "network": 31,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 8,
+     "11": 6,
+     "12": 10,
+     "13": 7
+    },
+    "bytesNet": 469426
+   },
+   "dem": {
+    "total": 10,
+    "fromCache": 5,
+    "network": 5,
+    "repeatUrls": 5,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 5,
+     "9": 2,
+     "10": 3
+    },
+    "bytesNet": 516536
+   },
+   "maplibreTileLoads": {
+    "satellite": 204,
+    "pnoa": 152,
+    "terrain": 11,
+    "shade": 78,
+    "osm": 29,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-up": {
+   "esri": {
+    "total": 37,
+    "fromCache": 25,
+    "network": 12,
+    "repeatUrls": 24,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 16,
+     "9": 20,
+     "10": 1
+    },
+    "bytesNet": 207009
+   },
+   "ign": {
+    "total": 28,
+    "fromCache": 0,
+    "network": 28,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 9,
+     "11": 15,
+     "12": 3,
+     "13": 1
+    },
+    "bytesNet": 385728
+   },
+   "dem": {
+    "total": 25,
+    "fromCache": 13,
+    "network": 12,
+    "repeatUrls": 13,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 12,
+     "8": 4,
+     "9": 2,
+     "10": 2,
+     "11": 5
+    },
+    "bytesNet": 1182484
+   },
+   "maplibreTileLoads": {
+    "satellite": 170,
+    "shade": 78,
+    "osm": 62,
+    "terrain": 11,
+    "pnoa": 123,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-down": {
+   "esri": {
+    "total": 11,
+    "fromCache": 11,
+    "network": 0,
+    "repeatUrls": 11,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 3,
+     "9": 8
+    },
+    "bytesNet": 0
+   },
+   "ign": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "dem": {
+    "total": 44,
+    "fromCache": 32,
+    "network": 12,
+    "repeatUrls": 30,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 10,
+     "8": 9,
+     "9": 6,
+     "10": 10,
+     "11": 9
+    },
+    "bytesNet": 1408624
+   },
+   "maplibreTileLoads": {
+    "satellite": 120,
+    "pnoa": 104,
+    "terrain": 10,
+    "shade": 81,
+    "osm": 27,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "load": {
+   "esri": {
+    "total": 52,
+    "fromCache": 6,
+    "network": 46,
+    "repeatUrls": 6,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 52
+    },
+    "bytesNet": 583551
+   },
+   "ign": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "dem": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {}
+  },
+  "maplibreOpts": {
+   "tileSizeSat": 256,
+   "fade": 600,
+   "dpr": 1,
+   "maxTileCacheSize": null,
+   "maxTileCacheZoomLevels": 5,
+   "pitchStart": 0
+  }
+ },
+ "passesDPR2_video": {
+  "p1-up": {
+   "esri": {
+    "total": 24,
+    "fromCache": 0,
+    "network": 24,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 24
+    },
+    "bytesNet": 515749
+   },
+   "ign": {
+    "total": 124,
+    "fromCache": 0,
+    "network": 124,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 16,
+     "12": 12,
+     "13": 12,
+     "14": 84
+    },
+    "bytesNet": 1880172
+   },
+   "dem": {
+    "total": 17,
+    "fromCache": 0,
+    "network": 17,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "7": 2,
+     "8": 2,
+     "9": 4,
+     "10": 1,
+     "11": 2,
+     "12": 6
+    },
+    "bytesNet": 2007838
+   },
+   "maplibreTileLoads": {
+    "land": 68,
+    "ocean": 68,
+    "dos": 68,
+    "satellite": 900,
+    "shade": 81,
+    "osm": 62,
+    "pnoa": 730,
+    "terrain": 20
+   }
+  },
+  "p1-down": {
+   "esri": {
+    "total": 1,
+    "fromCache": 0,
+    "network": 1,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 1
+    },
+    "bytesNet": 18104
+   },
+   "ign": {
+    "total": 61,
+    "fromCache": 0,
+    "network": 61,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 14,
+     "11": 16,
+     "12": 4,
+     "13": 12,
+     "14": 15
+    },
+    "bytesNet": 878770
+   },
+   "dem": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 829,
+    "pnoa": 667,
+    "terrain": 11,
+    "shade": 78,
+    "osm": 32,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-up": {
+   "esri": {
+    "total": 26,
+    "fromCache": 16,
+    "network": 10,
+    "repeatUrls": 14,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 24,
+     "10": 2
+    },
+    "bytesNet": 141406
+   },
+   "ign": {
+    "total": 44,
+    "fromCache": 0,
+    "network": 44,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 8,
+     "11": 12,
+     "12": 16,
+     "13": 8
+    },
+    "bytesNet": 584550
+   },
+   "dem": {
+    "total": 3,
+    "fromCache": 3,
+    "network": 0,
+    "repeatUrls": 2,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "9": 2,
+     "10": 1
+    },
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 751,
+    "shade": 81,
+    "osm": 62,
+    "pnoa": 660,
+    "terrain": 11,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "p2-down": {
+   "esri": {
+    "total": 2,
+    "fromCache": 0,
+    "network": 2,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 2
+    },
+    "bytesNet": 36749
+   },
+   "ign": {
+    "total": 39,
+    "fromCache": 0,
+    "network": 39,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 6,
+     "11": 7,
+     "12": 10,
+     "13": 8,
+     "14": 8
+    },
+    "bytesNet": 550330
+   },
+   "dem": {
+    "total": 1,
+    "fromCache": 1,
+    "network": 0,
+    "repeatUrls": 1,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "10": 1
+    },
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {
+    "satellite": 683,
+    "pnoa": 607,
+    "terrain": 11,
+    "shade": 78,
+    "osm": 26,
+    "land": 9,
+    "ocean": 9,
+    "dos": 9
+   }
+  },
+  "load": {
+   "esri": {
+    "total": 160,
+    "fromCache": 4,
+    "network": 156,
+    "repeatUrls": 4,
+    "repeatNetwork": 0,
+    "byTileZoom": {
+     "8": 160
+    },
+    "bytesNet": 1734452
+   },
+   "ign": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "dem": {
+    "total": 0,
+    "fromCache": 0,
+    "network": 0,
+    "repeatUrls": 0,
+    "repeatNetwork": 0,
+    "byTileZoom": {},
+    "bytesNet": 0
+   },
+   "maplibreTileLoads": {}
+  },
+  "maplibreOpts": {
+   "tileSizeSat": 128,
+   "fade": 600,
+   "dpr": 2,
+   "maxTileCacheSize": null,
+   "maxTileCacheZoomLevels": 5,
+   "pitchStart": 0
+  }
+ }
+}
