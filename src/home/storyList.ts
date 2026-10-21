@@ -1,8 +1,8 @@
 import { readdirSync, readFileSync } from 'node:fs';
-import storyFocusFile from '../../data/story/photo-focus.json';
+import squareFile from '../../data/story/photo-focus-square.json';
 import { sentences } from '../pages/sentence';
 import { loadTree } from '../tree';
-import { creditLine, photoImg, type PhotoCredit } from './guideCount';
+import { creditLine, photoCrops, photoImg, type PhotoCredit } from './guideCount';
 
 // The "Read with the map" page and the home tile list the stories the way the Guides page lists guides: from the files in
 // content/stories/ at build time, so a new story file adds a row and bumps the count with no page edit (build card 5, 21 Oct 2026).
@@ -13,7 +13,9 @@ export const STORY_SOURCES: StorySources = { dir: 'content/stories', guidesDir: 
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const json = <T>(f: string) => JSON.parse(readFileSync(f, 'utf8')) as T;
-const storyFocus = storyFocusFile as Record<string, string>;
+/** Checked square focus for the listing's square frames (Tools/guides/crop_sheet.mjs sheet, Review/story-build/shots/crops-square.png). */
+export const squareFocus = squareFile as Record<string, { focus: string; file: string }>;
+const focusOf = (photo: string): string | null => (squareFocus[photo] ?? photoCrops[photo])?.focus ?? null;
 const storyFiles = (dir: string) => readdirSync(dir).filter((f) => f.endsWith('.json')).sort();
 
 export const storyCount = (dir = STORY_SOURCES.dir): number => storyFiles(dir).length;
@@ -29,7 +31,7 @@ export const storyRows = (src: Partial<StorySources> = {}): StoryList => {
     const place = tree.getPlace(story.id);
     if (!place) throw new Error(`content/stories/${f}: no place in data/places.json for ${story.id}`);
     const guide = json<{ minutes: number; lede: { text: string } }>(`${guidesDir}/${story.id}.json`);
-    return { id: story.id, name: place.name.split(' / ')[0], lede: sentences(guide.lede.text, 120), minutes: guide.minutes, photo: story.cover.photo, focus: storyFocus[story.cover.photo] ?? null };
+    return { id: story.id, name: place.name.split(' / ')[0], lede: sentences(guide.lede.text, 120), minutes: guide.minutes, photo: story.cover.photo, focus: focusOf(story.cover.photo) };
   });
   return { rows, photos };
 };

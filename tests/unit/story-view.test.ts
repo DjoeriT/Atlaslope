@@ -96,7 +96,7 @@ describe('story map parts', () => {
     const plain = creditParts([], true).map((p) => p.long).join(' · ');
     expect(plain).toContain('Terrain ×1.5');
     expect(plain).not.toContain('IGME');
-    expect(creditParts(['geology'], true).map((p) => p.long)).toContain('Geology: IGME MAGNA 50');
+    expect(creditParts(['geology'], true).map((p) => p.long)).toContain('Source: IGME, MAGNA 50');
     expect(creditParts([], false).map((p) => p.long).join()).not.toContain('Esri');
   });
 

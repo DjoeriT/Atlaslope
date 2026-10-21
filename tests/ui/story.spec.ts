@@ -28,13 +28,14 @@ test('opening it lands on the story address; the soils step becomes active and t
   await expect(active(page)).toHaveAttribute('data-step', 'intro');
   await scrollToStep(page, 'soils');
   await expect(active(page)).toHaveAttribute('data-step', 'soils');
-  await expect(page.locator('.story-credit')).toContainText('IGME');
+  await expect(page.locator('.story-credit')).toContainText('Source: IGME, MAGNA 50');
 });
 
 test('a fact marker opens with Enter, Escape closes it and focus returns to the marker', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await scrollToStep(page, 'valley');
   await expect(active(page)).toHaveAttribute('data-step', 'valley');
+  await expect(page.getByRole('button', { name: /^Fact: / }).first()).toBeVisible(); // MapLibre must not rename it "Map marker"
   const marker = page.locator('.story-fk').first();
   await marker.focus();
   await page.keyboard.press('Enter');

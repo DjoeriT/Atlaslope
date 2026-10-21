@@ -60,9 +60,10 @@ export function createFacts(map: MapLibreMap): Facts {
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'story-fk';
-        b.setAttribute('aria-label', strings.story.factLabel(f.label));
         b.addEventListener('click', (e) => { e.stopPropagation(); open(f, b); });
-        return new maplibregl.Marker({ element: b }).setLngLat(f.at).addTo(map);
+        const mk = new maplibregl.Marker({ element: b }).setLngLat(f.at).addTo(map);
+        b.setAttribute('aria-label', strings.story.factLabel(f.label)); // after addTo: MapLibre sets "Map marker" there
+        return mk;
       });
     },
     remove() {

@@ -1,8 +1,9 @@
+import { createHash } from 'node:crypto';
 import { mkdtempSync, writeFileSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { fillStoryCount, fillStoryList, storyCount, storyRows } from '../../src/home/storyList';
+import { fillStoryCount, fillStoryList, squareFocus, storyCount, storyRows } from '../../src/home/storyList';
 
 const page = readFileSync('read-with-the-map/index.html', 'utf8');
 const home = readFileSync('index.html', 'utf8');
@@ -40,8 +41,16 @@ describe('the Read with the map page', () => {
       expect(out).toContain(`<b>${r.name}</b>`);
       expect(r.lede.split(/(?<=[.!?])\s/).length).toBe(1);
     }
-    expect(out).toContain('object-position:40% 50%'); // rioja-2's checked focus
+    expect(out).toContain('object-position:40% 50%'); // rioja-2's checked square focus
+    expect(out).toContain('object-position:10% 30%'); // priorat-1's
     expect(out).toMatch(/Photos: .*cropped and resized/);
+  });
+  it('has a checked square crop, still fresh, for every listed photo (square frames, photo hard rule)', () => {
+    for (const r of list.rows) {
+      const hash = createHash('sha256').update(readFileSync(`public/photos/480/${r.photo}.webp`)).digest('hex').slice(0, 12);
+      expect(squareFocus[r.photo]?.file, `${r.photo}: run node Tools/guides/crop_sheet.mjs, then add it to data/story/photo-focus-square.json`).toBe(hash);
+      expect(r.focus).toBe(squareFocus[r.photo].focus);
+    }
   });
   it('fills the list again to the same result, and refuses a page without markers', () => {
     expect(fillStoryList(out, list)).toBe(out);
