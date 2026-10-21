@@ -72,3 +72,26 @@
 .story-open .s{font-size:.78rem;color:#C9B48A}
 .story-open svg{flex:none}
 .story-open:focus-visible{outline:3px solid #141414;outline-offset:2px}
+
+/* Layers (build card 4): the legend line, fact markers and their card. From the mock's story.css and story-b.css. */
+.story-legend{position:absolute;left:.75rem;top:3.4rem;z-index:2;margin:0;padding:.3rem .6rem;border-radius:6px;background:rgba(20,20,20,.82);color:#EFE6D2;font:400 .74rem/1.35 var(--sans,sans-serif);max-width:calc(100% - 4rem);white-space:nowrap;overflow:hidden}
+.story-legend[hidden]{display:none}
+.story-legend span{display:inline-block;margin-left:.7rem}
+.story-legend i{display:inline-block;width:.7rem;height:.7rem;margin-right:.3rem;border-radius:2px;vertical-align:-1px;border:1px solid rgba(233,216,180,.6)}
+.story-legend b{font-weight:400}.story-legend .sh{display:none}
+.story-fk{width:1.35rem;height:1.35rem;padding:0;border-radius:50%;background:#E9D8B4;border:3px solid #141414;box-shadow:0 0 0 1px #E9D8B4;cursor:pointer}
+.story-fk:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.story-factpop .maplibregl-popup-content{max-width:15rem;padding:.7rem .85rem .6rem;border-radius:6px;background:#141414;color:#E9D8B4;font:400 .86rem/1.4 var(--sans,sans-serif)}
+.story-factpop.maplibregl-popup-anchor-bottom .maplibregl-popup-tip{border-top-color:#141414}
+.story-factpop.maplibregl-popup-anchor-top .maplibregl-popup-tip{border-bottom-color:#141414}
+.story-factpop.maplibregl-popup-anchor-left .maplibregl-popup-tip{border-right-color:#141414}
+.story-factpop.maplibregl-popup-anchor-right .maplibregl-popup-tip{border-left-color:#141414}
+.story-factpop .fw{margin:0 1rem .15rem 0;font:500 .7rem var(--sans,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#C9B48A}
+.story-factpop .ft{margin:0 0 .4rem}
+.story-factpop .fs{margin:0;font-size:.72rem;color:#EFE6D2}.story-factpop .fs a{color:#EFE6D2}
+.story-factpop .maplibregl-popup-close-button{color:#E9D8B4;font-size:1.1rem;padding:.1rem .45rem}
+.story-factpop .maplibregl-popup-close-button:focus-visible{outline:2px solid #fff}
+@media (max-width:61rem){
+  .story-legend{top:auto;bottom:1.7rem;left:6.4rem;right:.5rem;max-width:none;white-space:normal;font-size:.66rem}
+  .story-legend .lg{display:none}.story-legend .sh{display:inline}.story-legend span{margin-left:0;margin-right:.55rem}
+}
