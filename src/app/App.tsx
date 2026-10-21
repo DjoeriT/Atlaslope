@@ -21,6 +21,8 @@ import { FirstRun } from './FirstRun';
 import { SiteBar } from './TopBar';
 import { withMotion, type Move } from './motion';
 import { Sheet } from './Sheet';
+import { StoryView } from '../story/StoryView';
+import { loadStory } from '../story/load';
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
@@ -46,13 +48,15 @@ export function App() {
   const go = useCallback((wanted: Selection) => {
     const to = validSelection(tree, wanted);
     const cur = selRef.current;
-    if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page && flyKey(to) === flyKey(cur) && to.at === cur.at) return;
+    if (to.kind === cur.kind && to.id === cur.id && !to.page === !cur.page && flyKey(to) === flyKey(cur) && to.at === cur.at && !to.story === !cur.story) return;
     // The card and the page of one place share the camera, so the link keeps it (a fly-there moves it, so it keeps nothing).
     const same = to.kind === cur.kind && to.id === cur.id;
     // "Back to map" from a page opened from its own card steps back, so the phone's back gesture doesn't reopen the page just closed.
     if (same && cur.page && !to.page && !to.fly && (history.state as { fromCard?: boolean } | null)?.fromCard) { history.back(); return; }
+    // "Back to <place>" from the story steps back too, so the back gesture after it does not reopen the story.
+    if (same && cur.story && to.page && !to.story && (history.state as { fromPage?: boolean } | null)?.fromPage) { history.back(); return; }
     const view = same && !to.fly ? parseView(location.hash) : null;
-    history.pushState(same && to.page && !cur.page ? { fromCard: true } : null, '', here() + selectionToHash(to, view));
+    history.pushState(same && to.page && !cur.page ? { fromCard: true } : same && to.story && cur.page && !cur.story ? { fromPage: true } : null, '', here() + selectionToHash(to, view));
     const move = quizRef.current ? 'card' : moveOf(cur, to);
     withMotion(() => {
       setQuiz(null);
@@ -148,7 +152,7 @@ export function App() {
       if (document.querySelector('.flycap, [role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden] *)')) return;
       const cur = selRef.current;
       if (cur.kind === 'country') return;
-      go(cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));
+      go(cur.story ? { kind: cur.kind, id: cur.id, page: true } : cur.page ? { kind: cur.kind, id: cur.id } : parentOf(tree, cur));
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
@@ -181,6 +185,8 @@ export function App() {
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
       {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
+      {/* "Read with the map" opens over the guide page, which stays mounted so "Back to <place>" returns to where the reader was. */}
+      {!quiz && place && sel.page && sel.story && loadStory(place.id) && <StoryView key={place.id} tree={tree} go={go} place={place} onTest={(set) => openQuiz('test', set)} />}
       {!quiz && region && sel.page && <RegionPage key={region.id} tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (
         <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>

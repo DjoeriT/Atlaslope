@@ -74,10 +74,11 @@ p{text-wrap:pretty}
 .gcard:hover .fb{background:#2A2722}
 .gcard:focus-visible{outline-offset:-3px} /* the card clips its corners, so the ring sits inside */
 .hero .map figcaption a{color:inherit}
-.nums{display:grid;grid-template-columns:repeat(2,auto);justify-content:start;gap:1.5rem 3.5rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
+.nums{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:1.5rem 3rem;margin:2.75rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line)}
 .nums div{margin:0}
 .nums dt{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1}
 .nums dd{margin:.45rem 0 0;font-size:.85rem;line-height:1.35;color:var(--ink2);max-width:11rem}
+.nums dd a{color:inherit;text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.2em}
 
 /* sources line: names set in type */
 .sources{padding-block:2.25rem;border-bottom:1px solid var(--line)}

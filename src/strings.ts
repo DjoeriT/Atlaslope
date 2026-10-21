@@ -429,4 +429,52 @@ export const strings = {
       saveCopy: 'Save a copy to a file',
     },
   },
+  // "Read with the map" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
+  story: {
+    open: 'Read with the map',
+    openSub: (minutes: number, stops: number) => `${minutes} minutes · ${stops} places to fly to`,
+    back: (name: string) => `Back to ${name}`,
+    kicker: (minutes: number) => `Terroir · ${minutes}-minute read`,
+    chapters: 'Chapters',
+    hint: 'Scroll to read. The map follows the text.',
+    chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
+    onTheMap: 'On the map',
+    climate: 'Climate',
+    wine: 'Wine',
+    mapLabel: 'Map that follows the text',
+    recentre: 'Back to the story view',
+    locator: 'Where the map is in Spain',
+    measured: 'Measured by AtlaSlope · Terrain: Mapzen',
+    /** A measure of a zone shown at a stop framed on the whole region ("In Rioja Alta, half the land..."). */
+    measureIn: (name: string, text: string) => `In ${name}, ${text[0].toLowerCase()}${text.slice(1)}`,
+    measures: {
+      median: (m: number) => `Half the land lies above ${m} m.`,
+      top: (m: number, p90: number) => `Half the land lies above ${m} m. The highest tenth lies above ${p90} m.`,
+      low: (p10: number) => `The lowest tenth of the land lies below ${p10} m.`,
+      steep: (pct: number) => `${pct}% of the land is steeper than 30%.`,
+    },
+    photos: 'Photos:',
+    resized: 'cropped and resized',
+    // The one-line legend on the map: the climate classes (names from the app's climate view, short forms for a phone) or the rock colours.
+    legend: {
+      climate: 'Climate:',
+      geology: 'Colours: rock types, IGME MAGNA 50',
+      short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
+    },
+    factLabel: (where: string) => `Fact: ${where}`,
+    // The credit line under the map names what is on it now; short forms on a phone keep it to one line.
+    credit: {
+      terrain: (k: string) => `Terrain ×${k}`,
+      imagery: 'Imagery PNOA © IGN, Esri',
+      imageryShort: 'PNOA © IGN, Esri',
+      dem: 'Terrain Mapzen',
+      demShort: 'Mapzen',
+      rivers: 'Rivers, names: IGN/SCNE CC BY 4.0',
+      riversShort: 'Rivers, names: IGN CC BY 4.0',
+      geology: 'Source: IGME, MAGNA 50',
+      geologyShort: 'Source: IGME, MAGNA 50',
+      koppen: 'Climate: Beck et al. 2023 CC BY',
+      koppenShort: 'Beck et al. 2023 CC BY',
+    },
+  },
 } as const;

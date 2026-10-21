@@ -2292,6 +2292,55 @@
     "description": "Arabako Txakolina glass at Amurrio Txakolin eguna",
     "coords": null
    }
+  ],
+  "rioja-sierra": [
+   {
+    "title": "File:Sierra de Cantabria.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sierra_de_Cantabria.jpg",
+    "licence": "Public domain",
+    "artist": "Deivid",
+    "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
+  ],
+  "rioja-haro": [
+   {
+    "title": "File:Estación de Ferrocarril de Haro - La Rioja.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Ferrocarril_de_Haro_-_La_Rioja.jpg",
+    "licence": "CC BY 2.5",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+    "artist": "BigSus",
+    "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
+  ],
+  "priorat-siurana": [
+   {
+    "title": "File:Siurana - Pantà i església.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Siurana_-_Pant%C3%A0_i_esgl%C3%A9sia.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Lohen11 - Josep Renalias",
+    "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
+  ],
+  "priorat-porrera": [
+   {
+    "title": "File:Vinyes del Priorat, Porrera.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vinyes_del_Priorat,_Porrera.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Àngela Llop",
+    "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
+  ],
+  "priorat-scala-dei": [
+   {
+    "title": "File:Cartoixa d'Escaladei - Vista.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cartoixa_d%27Escaladei_-_Vista.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "joan ggk",
+    "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
   ]
  }
 }

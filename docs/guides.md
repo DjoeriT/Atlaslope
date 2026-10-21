@@ -86,6 +86,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 21 Oct 2026 | Story files ("Read with the map"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
 | 19 Oct 2026 | Photo crops: every photo the Guides page shows as a square card has a checked crop in `src/home/photoCrops.json`; a unit test enforces it (no guide format change) | "Photo crops" below |
 | 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
 | 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
@@ -95,6 +96,20 @@ Each change to the guide format, newest first. Add a row in the same PR as the c
 | 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
 | 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
 | 17 Oct 2026 | Terroir is a section of the place page, not its own page (release 10) | PR #45 |
+
+## Story files ("Read with the map")
+A story is a map walk through one guide: `content/stories/<id>.json` (types in `src/story/format.ts`, loader and `storyIds()` / `storyCount()` in
+`src/story/load.ts`). It holds no guide text of its own. Only Rioja and Priorat have one so far.
+- `steps[]`, in order. Each names its `chapter` (a guide chapter id; `null` for the opening view) and either `fly` (index into that chapter's `fly[]`)
+  or `card` (index into its `cards[]`), or neither for a step the guide has no stop for.
+- `camera`: `center` + `zoom`, or `place` (the place's bounds), plus `pitch`, `bearing`, `zoomShift`. All camera values and layers are design choices;
+  the file's `$comment` says so. `focus`: the outline drawn, a place id or `zones`. `layers`: `koppen`, `geology`, `zonelabels`.
+- `photo`: an id from `data/photos.json`, with a checked crop (`src/home/photoCrops.json` or `data/story/photo-focus.json`).
+- `measure`: `{place, kind}` from `data/place-measures.json`; `kind` is `median`, `top`, `low` or `steep`.
+- `facts[]` (0-3): `at` (a name in `data/story/names-<id>.geojson`, or `[lng, lat]`), `label`, `text` (a sentence of the guide, or a tightened
+  form of one, using only words of the same chapter) and `cite` (from the cite list of that chapter or stop). Never a claim the guide does not make.
+- Checked by `tests/unit/story-format.test.ts`: chapter, fly and card exist; cites and words come from the guide; photos exist and have crops;
+  measures and named markers exist. Any change to this format goes in the Format log above.
 
 ## Photo crops
 The Guides page shows each card photo as a square crop. Each shown photo has an entry in `src/home/photoCrops.json`: its `focus` and the

@@ -1,0 +1,331 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (transcribed from Review/mock-story-guide-v3/build.py, 21 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points marked [A] in the mock are approximate.",
+ "id": "rioja",
+ "cover": {
+  "photo": "rioja-2"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -2.5,
+     42.3
+    ],
+    "zoom": 6.7,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "rioja",
+   "chip": "Rioja in northern Spain"
+  },
+  {
+   "id": "valley",
+   "chapter": "valley",
+   "fly": 0,
+   "camera": {
+    "center": [
+     -2.3,
+     42.37
+    ],
+    "zoom": 8.6,
+    "pitch": 55,
+    "bearing": -65
+   },
+   "focus": "rioja",
+   "dot": false,
+   "markers": [
+    {
+     "at": "Haro"
+    },
+    {
+     "at": "Alfaro"
+    }
+   ],
+   "photo": "rioja-3",
+   "measure": {
+    "place": "rioja",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": "Haro",
+     "label": "Haro",
+     "text": "The vineyards run 100 km along the Ebro, from Haro in the west to Alfaro in the east.",
+     "cite": [
+      "rioja-pliego:p15"
+     ]
+    },
+    {
+     "at": "Alfaro",
+     "label": "Alfaro",
+     "text": "The valley is never more than about 40 km wide.",
+     "cite": [
+      "rioja-pliego:p15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sierra",
+   "chapter": "valley",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -2.7,
+     42.6
+    ],
+    "zoom": 11.7,
+    "pitch": 70,
+    "bearing": 180
+   },
+   "focus": "rioja",
+   "photo": "rioja-sierra-1",
+   "facts": [
+    {
+     "at": "Sierra de Cantabria",
+     "label": "Sierra de Cantabria",
+     "text": "The Sierra de Cantabria to the north protects the vines.",
+     "cite": [
+      "rioja-pliego:p15",
+      "rioja-pliego:p20"
+     ]
+    },
+    {
+     "at": "Laguardia",
+     "label": "Laguardia",
+     "text": "The mountains protect Rioja Alta, and Rioja Alavesa even more.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "chapter": "climate",
+   "camera": {
+    "place": "rioja",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "zones",
+   "layers": [
+    "zonelabels",
+    "koppen"
+   ],
+   "chip": "Rioja’s three zones"
+  },
+  {
+   "id": "z-rioja-alta",
+   "chapter": "climate",
+   "card": 0,
+   "camera": {
+    "pitch": 45,
+    "bearing": 270,
+    "zoomShift": -0.2
+   },
+   "focus": "rioja-alta",
+   "layers": [
+    "zonelabels",
+    "koppen"
+   ],
+   "photo": "rioja-alta-1",
+   "measure": {
+    "place": "rioja-alta",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": [
+      -2.7717,
+      42.4681
+     ],
+     "label": "Rioja Alta",
+     "text": "Atlantic. More rain and fewer hours of sun than the south.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "z-rioja-alavesa",
+   "chapter": "climate",
+   "card": 1,
+   "camera": {
+    "pitch": 50,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "rioja-alavesa",
+   "layers": [
+    "zonelabels",
+    "koppen"
+   ],
+   "photo": "rioja-alavesa-1",
+   "measure": {
+    "place": "rioja-alavesa",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": [
+      -2.5445,
+      42.547
+     ],
+     "label": "Rioja Alavesa",
+     "text": "Both climates meet. The most sheltered by the Sierra de Cantabria.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "z-rioja-oriental",
+   "chapter": "climate",
+   "card": 2,
+   "camera": {
+    "pitch": 45,
+    "bearing": 90,
+    "zoomShift": -0.2
+   },
+   "focus": "rioja-oriental",
+   "layers": [
+    "zonelabels",
+    "koppen"
+   ],
+   "photo": "rioja-oriental-1",
+   "measure": {
+    "place": "rioja-oriental",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": [
+      -2.1039,
+      42.2543
+     ],
+     "label": "Rioja Oriental",
+     "text": "Mediterranean. The least rain and the most sun.",
+     "cite": [
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "chapter": "soils",
+   "fly": 0,
+   "camera": {
+    "pitch": 62,
+    "bearing": 15,
+    "zoomShift": 0.4
+   },
+   "focus": "rioja-alavesa",
+   "layers": [
+    "geology"
+   ],
+   "photo": "rioja-alavesa-2",
+   "measure": {
+    "place": "rioja-alavesa",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Laguardia",
+     "label": "Laguardia",
+     "text": "Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa.",
+     "cite": [
+      "rioja-pliego:p15",
+      "rioja-pliego:p16",
+      "rioja-pliego:p20"
+     ]
+    },
+    {
+     "at": "San Vicente de la Sonsierra",
+     "label": "San Vicente de la Sonsierra",
+     "text": "Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa, the Sonsierra and parts of Rioja Alta.",
+     "cite": [
+      "rioja-pliego:p15",
+      "rioja-pliego:p16",
+      "rioja-pliego:p20"
+     ]
+    },
+    {
+     "at": [
+      -2.6065,
+      42.50289
+     ],
+     "label": "Ebro",
+     "text": "Alluvial soil near the rivers is flat, deep and full of stones.",
+     "cite": [
+      "rioja-pliego:p15",
+      "rioja-pliego:p16",
+      "rioja-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "barrel",
+   "chapter": "barrel",
+   "camera": {
+    "place": "rioja",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "rioja",
+   "markers": [
+    {
+     "at": "Haro"
+    }
+   ],
+   "chip": "Rioja"
+  },
+  {
+   "id": "haro",
+   "chapter": "barrel",
+   "fly": 0,
+   "camera": {
+    "pitch": 60,
+    "bearing": 20,
+    "zoom": 14.2
+   },
+   "focus": "rioja",
+   "photo": "rioja-haro-1",
+   "measure": {
+    "place": "rioja-alta",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": [
+      -2.851,
+      42.585
+     ],
+     "label": "Haro’s station quarter",
+     "text": "In 1890 a French firm in Haro’s station quarter hired a champagne maker from Reims.",
+     "cite": [
+      "rioja-pliego:p19"
+     ]
+    }
+   ]
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "Can you place the three zones?",
+  "test": {
+   "label": "Test me on Rioja’s zones",
+   "set": [
+    "rioja-alta",
+    "rioja-alavesa",
+    "rioja-oriental"
+   ]
+  }
+ }
+}
