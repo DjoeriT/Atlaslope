@@ -24,3 +24,4 @@ Partly done. Left: App.tsx route (render StoryView over PlacePage when sel.story
 - Rioja barrel chapter: both paragraphs sit at the barrel step; the mock moved the second to the Haro step.
 - MapLibre compact attribution kept (moved above the credit line); mock had it off.
 - Photos without a photo-focus.json entry use their square-crop focus from src/home/photoCrops.json [A].
+| 3 route: StoryView over PlacePage on #place=<id>&page&story; Escape and Back return to the page (history.back) | (this commit) | tsc clean |
