@@ -22,6 +22,17 @@ async function scrollToLine(page: Page, anchor: string, rank = 0) {
   }, [anchor, rank] as const);
 }
 
+test('the Rioja guide with the tour open fetches each map data file once', async ({ page }) => {
+  const seen = new Map<string, number>();
+  page.on('request', (r) => { const m = r.url().match(/\/(dops|natural-earth-world|added-boundaries|rioja-zones)[^/]*\.geojson$/); if (m) seen.set(m[1], (seen.get(m[1]) ?? 0) + 1); });
+  await open(page, '#place=rioja&page');
+  await page.locator('a.story-open').click();
+  await expect(mapCol(page)).toBeVisible();
+  await page.waitForLoadState('networkidle');
+  expect([...seen.keys()].sort()).toEqual(['added-boundaries', 'dops', 'natural-earth-world', 'rioja-zones']);
+  expect([...seen.values()]).toEqual([1, 1, 1, 1]);
+});
+
 test('the band shows on the Rioja guide in place of "Show on map", and not on a guide without a tour', async ({ page }) => {
   await open(page, '#place=rioja&page');
   await expect(page.locator('.pg-tour')).toContainText('Map tour · 9 places to fly to');

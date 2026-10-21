@@ -14,6 +14,8 @@ import { faded, outlined, outside, type Credited } from './view';
 
 /** Terrain height in the story (design choice, stated in the credit line). The app map's own height follows the zoom instead. */
 export const STORY_EXAGGERATION = 1.5;
+/** The tours open around zoom 6.7, so their relief starts a zoom lower than the atlas's (RELIEF_MIN_ZOOM) and shows at every stop. */
+const STORY_RELIEF_FROM = 6;
 const CHAMP = '#E9D8B4';
 const EMPTY: Collection = { type: 'FeatureCollection', features: [] };
 
@@ -61,7 +63,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   let imagery = true;
   let lastShown: Credited[] | null = null; // re-sent when the imagery fails, so its credit goes
   const ctl = createMap(container, { ...DEFAULT_MENU, boundaries: false, relief: false }, { onImageryFailed: () => { imagery = false; if (lastShown) events.onLayers(lastShown, false); } },
-    { lng: start.center[0], lat: start.center[1], zoom: start.zoom, bearing: start.bearing, pitch: start.pitch });
+    { lng: start.center[0], lat: start.center[1], zoom: start.zoom, bearing: start.bearing, pitch: start.pitch }, STORY_RELIEF_FROM);
   const map = ctl.map;
   map.setMaxPitch(80);
   // Speed on a slow link: the relief (terrain and hillshade, about 60 tile requests for the first view) starts after the first picture is drawn.
