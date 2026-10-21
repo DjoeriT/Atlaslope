@@ -56,11 +56,11 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   await expect(page.locator('.feedback')).toContainText(`Right, that's ${first}`);
   await expect(page.locator('.q-num')).toContainText('Question 2 of 5 · Study'); // moved on by itself
 
-  // 2. A miss waits: the why line, Next, "That was a slip", the place's card.
+  // 2. A miss waits: the why line, Next, "That was a slip", the Read the guide link.
   await wrongChoice(page, second);
   await expect(page.locator('.feedback.bad')).toBeVisible();
-  await expect(page.locator('dl.reveal dt', { hasText: 'Why' })).toBeVisible();
-  await expect(page.getByRole('button', { name: `Open ${second}'s card` })).toBeVisible();
+  await expect(page.locator('dl.reveal dt', { hasText: 'From the guide' })).toBeVisible();
+  await expect(page.getByRole('button', { name: `Read the ${second} guide` })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Next question' })).toBeVisible();
   expect((await dots(page))[1]).toBe('bad');
 

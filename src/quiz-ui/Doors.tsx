@@ -64,7 +64,7 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
             </>
           )}
           <details className="course">
-            <summary className="focusline">{c.line(c.names[quiz.course])} <span className="change">{c.change}</span></summary>
+            <summary>{c.line(c.names[quiz.course])} <span className="change">{c.change}</span></summary>
             <fieldset>
               <legend className="sr-only">{c.legend}</legend>
               {COURSES.map((id) => (
@@ -73,7 +73,7 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
                   <span><b>{c.names[id]}</b> {c.hints[id]}</span>
                 </label>
               ))}
-              <p className="sub">{c.note}</p>
+              <p className="course-note">{c.note}</p>
             </fieldset>
           </details>
           <p className="focusline">

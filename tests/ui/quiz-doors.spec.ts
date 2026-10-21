@@ -30,9 +30,10 @@ test('the Quiz screen has two doors with the due and new counts; nothing due off
   await expect(page.getByRole('link', { name: 'Practise any mix' })).toBeVisible();
 });
 
-test('with nothing due the Study door offers five new places', async ({ page }) => {
+test('a first visit leads with where to start, not "Nothing due", and offers five new places', async ({ page }) => {
   await open(page, '#quiz');
-  await expect(page.locator('.door').first()).toContainText('Nothing due today');
+  await expect(page.locator('.door').first().locator('.big')).toHaveText(/^Start with 5 places in .+\.$/);
+  await expect(page.locator('.door').first()).not.toContainText('Nothing due');
   await expect(page.getByRole('button', { name: 'Learn 5 new places' })).toBeVisible();
   await expect(page.locator('.focusline')).toContainText('Following the course order.');
 });
@@ -201,7 +202,7 @@ test('a place card opened from the quiz comes back to the same question', async 
   await expect(page.locator('.feedback.bad')).toBeVisible();
   const question = await page.locator('.q-num').textContent();
   const feedback = await page.locator('.feedback').textContent();
-  await page.getByRole('button', { name: `Open ${target}'s card` }).click();
+  await page.getByRole('button', { name: `Read the ${target} guide` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(target);
   await page.getByRole('button', { name: /Back to Study/ }).click();
   await expect(page.locator('.q-num')).toHaveText(question!);

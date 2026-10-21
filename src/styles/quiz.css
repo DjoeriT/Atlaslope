@@ -90,11 +90,12 @@ h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--in
 @media (max-width:68.75em){.back-quiz{left:24rem}}
 @media (max-width:51.25em) and (orientation:portrait){.back-quiz{left:1rem;top:auto;bottom:calc(52% + .6rem)}}
 /* "My course": one quiet line that opens to four choices (Study step 1). */
-.course summary{cursor:pointer;list-style:none}
+.course summary{cursor:pointer;list-style:none;font-size:.9rem;color:var(--ink2);margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
 .course summary::-webkit-details-marker{display:none}
-.course .change{color:var(--accent);font-weight:500;min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .3rem}
+.course .change{color:var(--accent);font-weight:500;text-decoration:underline;min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .3rem}
 .course fieldset{border:1px solid var(--line);border-radius:6px;margin:.25rem 0 0;padding:.4rem .8rem .6rem}
 .course label{display:flex;gap:.6rem;align-items:baseline;min-height:2.75rem;padding:.35rem 0;cursor:pointer}
 .course label+label{border-top:1px solid var(--line)}
 .course label span{color:var(--ink2);font-size:.9rem}
 .course label b{color:var(--ink);font-weight:500;margin-right:.3rem}
+.course .course-note{font-size:.9rem;margin:.4rem 0 0}

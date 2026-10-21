@@ -1,5 +1,5 @@
 // The learner's course ("My course" on the Study screen): which places Study asks. One setting over one memory per place (owner, 21 Oct 2026).
-import curriculumFile from '../../content/curriculum.json';
+import curriculumFile from '../../content/curriculum.json' with { type: 'json' };
 import type { Place } from '../tree';
 
 /** No course (the default): every Study place. WSET levels: the places each published specification names. Wine Scholar: every core place. */
