@@ -42,7 +42,6 @@ export const strings = {
     explore: 'Atlas',
     quiz: 'Study',
     guides: 'Guides',
-    mapTours: 'Map tours',
     about: 'About',
     showMap: 'Show map',
     showMapLabel: (name: string) => `Show map: ${name}`,
@@ -118,7 +117,8 @@ export const strings = {
     reportSubject: (place: string) => `AtlaSlope: mistake on ${place}`,
     reportBody: (place: string, id: string) => `Place: ${place} (${id})\nWhich row is wrong:\nWhat it should say:\n`,
     styleKinds: { red: 'Red', white: 'White', rose: 'Rosé', sparkling: 'Sparkling', fortified: 'Fortified', sweet: 'Sweet' },
-    // Köppen-Geiger codes in plain words (Beck et al. 2023). Only the codes that appear in the measured data need a name.
+    // Köppen-Geiger codes in plain words (Beck et al. 2023). The six classes on the map's legend (src/map/climate.ts) use the same words here
+    // (owner, 21 Oct 2026; a unit test holds them together). Only the codes that appear in the measured data need a name.
     koppenNames: {
       BSh: 'hot semi-arid',
       BSk: 'cold semi-arid',
@@ -126,8 +126,8 @@ export const strings = {
       BWk: 'cold desert',
       Cfa: 'humid subtropical',
       Cfb: 'oceanic',
-      Csa: 'hot-summer Mediterranean',
-      Csb: 'warm-summer Mediterranean',
+      Csa: 'hot Mediterranean',
+      Csb: 'mild Mediterranean',
       Dfb: 'warm-summer continental',
       Dfc: 'cold-summer continental',
       Dsb: 'warm-summer continental',
@@ -433,19 +433,15 @@ export const strings = {
   // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
     open: 'Map tour',
-    openSub: (minutes: number, stops: number) => `${minutes} minutes · ${stops} places to fly to`,
-    back: (name: string) => `Back to ${name}`,
-    kicker: (minutes: number) => `Terroir · ${minutes}-minute read`,
-    chapters: 'Chapters',
-    hint: 'Scroll to read. The map follows the text.',
-    chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
-    onTheMap: 'On the map',
-    climate: 'Climate',
-    wine: 'Wine',
+    // The band under the guide's lede (B3, owner 21 Oct 2026) and the bar over the map column.
+    kickerMap: 'AtlaSlope map',
+    bandTitle: (stops: number) => `Map tour · ${stops} places to fly to`,
+    bandSub: (minutes: number) => `${minutes} minutes. The map follows the guide as you read.`,
+    openMap: 'Open the map',
+    stopOf: (k: number, n: number) => `Stop ${k} of ${n}`,
+    hide: 'Hide map',
     mapLabel: 'Map that follows the text',
-    recentre: 'Back to the story view',
-    locator: 'Where the map is in Spain',
-    measured: 'Measured by AtlaSlope · Terrain: Mapzen',
+    recentre: 'Back to this stop',
     /** A measure of a zone shown at a stop framed on the whole region ("In Rioja Alta, half the land..."). */
     measureIn: (name: string, text: string) => `In ${name}, ${text[0].toLowerCase()}${text.slice(1)}`,
     measures: {
@@ -454,8 +450,6 @@ export const strings = {
       low: (p10: number) => `The lowest tenth of the land lies below ${p10} m.`,
       steep: (pct: number) => `${pct}% of the land is steeper than 30%.`,
     },
-    photos: 'Photos:',
-    resized: 'cropped and resized',
     // The one-line legend on the map: the climate classes (names from the app's climate view, short forms for a phone) or the rock colours.
     legend: {
       climate: 'Climate:',

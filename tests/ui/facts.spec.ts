@@ -23,7 +23,7 @@ test('the Cebreros page shows grapes, measured rows and a source under each', as
   await open(page, '#place=cebreros&page');
   const pg = page.locator('.pg');
   await expect(pg.locator('#rules')).toContainText('Garnacha TintaAlbillo Real');
-  await expect(pg.locator('#weather')).toContainText('Hot-summer Mediterranean 68%');
+  await expect(pg.locator('#weather')).toContainText('Hot Mediterranean 68%');
   await expect(pg.locator('#ground')).toContainText('Most of the land between 590 and 1,470 m');
   for (const id of ['place', 'weather', 'ground', 'rules']) {
     const link = pg.locator(`#${id} .src a`).first();

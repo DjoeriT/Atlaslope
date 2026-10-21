@@ -6,7 +6,7 @@ const t = strings.facts;
 /** "Tinta de Toro (Tempranillo), Albillo Real" */
 export const grapeLabel = (g: MainGrape) => (g.grape && g.grape !== g.local ? `${g.local} (${g.grape})` : g.local);
 
-/** "Cold semi-arid 67%, hot-summer Mediterranean 33%". A code with no plain name keeps its code. */
+/** "Cold semi-arid 67%, hot Mediterranean 33%". A code with no plain name keeps its code. */
 export function koppenText(shares: KoppenShare[]): string {
   return shares
     .map((s, i) => {

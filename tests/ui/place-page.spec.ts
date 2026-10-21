@@ -69,10 +69,11 @@ test('back and forward move between the card and the page', async ({ page }) => 
 });
 
 test('a link to the page opens it directly, and "Show on the map" goes to the card', async ({ page }) => {
-  await open(page, '#place=rioja&page');
-  await page.getByRole('link', { name: 'Fly to Rioja' }).click();
-  await expect(page).toHaveURL(/#place=rioja(&view=.*)?$/);
-  await expect(page.locator('.card h1')).toHaveText('Rioja');
+  // A guide with a map tour has no "Fly to" link (the tour's map is beside it), so this uses one without.
+  await open(page, '#place=alella&page');
+  await page.getByRole('link', { name: 'Fly to Alella' }).click();
+  await expect(page).toHaveURL(/#place=alella(&view=.*)?$/);
+  await expect(page.locator('.card h1')).toHaveText('Alella');
 });
 
 test('the jump bar lists only the sections that exist and moves focus to the section', async ({ page }) => {
@@ -130,7 +131,7 @@ test('every section of the Rioja page keeps a source link', async ({ page }) => 
 
 test('the charts have text equivalents', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await expect(page.locator('.pg-stack').first()).toHaveAttribute('aria-label', /Measured climate: Warm-summer Mediterranean 40%, Oceanic 32%, Humid subtropical 24%, Other 4%/);
+  await expect(page.locator('.pg-stack').first()).toHaveAttribute('aria-label', /Measured climate: Mild Mediterranean 40%, Oceanic 32%, Humid subtropical 24%, Other 4%/);
   await expect(page.locator('.pg-range').first()).toHaveAttribute('aria-label', /Most of the land between 360 and 890 m, median 550 m/);
   await expect(page.locator('.pg-legend')).toContainText('Oceanic 32%');
   await expect(page.locator('#ground')).toContainText('Most of the land between 360 and 890 m');

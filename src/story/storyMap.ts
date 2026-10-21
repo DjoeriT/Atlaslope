@@ -116,10 +116,9 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   function padding() {
     const r = container.getBoundingClientRect();
     const p = Math.round(Math.min(r.width, r.height) * 0.1);
-    // The credit bar (and on a phone the legend line above it) covers the foot of the map: keep the stop's dot clear of them.
+    // The credit bar covers the foot of the map and the legend line sits at the top, under the stop bar: keep the stop's dot clear of both.
     const bar = (cls: string) => { const e = container.parentElement?.querySelector<HTMLElement>(cls); return e && !e.hidden ? e.offsetHeight : 0; };
-    const foot = bar('.story-credit') + bar('.story-legend');
-    return { top: p + 40, bottom: p + Math.max(30, foot + 12), left: p, right: p + 30 };
+    return { top: p + 40 + bar('.story-legend'), bottom: p + Math.max(30, bar('.story-credit') + 12), left: p, right: p + 30 };
   }
 
   /** The target as a camera; null for a place's bounds before the shapes are in. */

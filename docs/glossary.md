@@ -8,7 +8,7 @@ Study, and guide and Terroir (docs gap audit, 18 Oct 2026). A new term goes here
 |------|-------|-----|
 | **AtlaSlope** | The product name users see. Code, URLs and the repo use `atlaslope`. | Paraje (old name, until 16 Oct 2026) |
 | **Atlas** | The map screen (`/atlas/`): explore every place on the map. | |
-| **Map tour(s)** | The scroll-along map view of a guide: the page scrolls and the map flies to each place it names. Button "Map tour" on a guide; page and top-bar item "Map tours" (`/map-tours/`). Owner, 21 Oct 2026. Code keeps `story`. | fly-over, Read with the map |
+| **Map tour(s)** | The scroll-along map view of a guide: the page scrolls and the map flies to each place it names. Button "Map tour" on a guide; listed on the Guides page ("Show only guides with a map tour", `guides/#map-tours`); `/map-tours/` and `/read-with-the-map/` redirect there. Owner, 21 Oct 2026. Code keeps `story`. | fly-over, Read with the map |
 | **Study** | Rounds of questions with spaced memory (find it on the map, what is this, the fact question). Owner, 18 Oct 2026: "Quiz" is "Study" everywhere users look. | Quiz (still the code name: `src/quiz/`, `src/quiz-ui/`; don't rename code just for this) |
 | **Round** | One Study session, from "Start" to the results. | |
 | **Shade** | How well a place is known in spaced memory: new, learning, known, solid (`SHADES`, `src/quiz/memory.ts`). Older docs call these boxes. Harder questions come with higher shades. | Level, streak |

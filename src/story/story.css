@@ -1,78 +1,54 @@
-/* "Map tour": from Review/mock-story-guide-v3/story.css and story-b.css. White page, black band + champagne, 6px corners, no pills. */
-.story{--band:3.5rem;position:fixed;inset:0;z-index:31;overflow:auto;background:var(--paper,#fff);color:var(--ink,#1A1714)}
-.story-top{position:sticky;top:0;z-index:20;height:var(--band);display:flex;align-items:center;gap:1rem;padding:0 1rem;background:#141414;color:#E9D8B4;border-bottom:1px solid #7D6540}
-.story-brand{display:inline-flex;align-items:center;gap:.5rem;font:400 1.35rem/1 var(--serif,Georgia,serif)}
-.story-brand .mark{width:1.6rem;height:1.6rem}
-.story-where{flex:1;margin:0;font-size:.9rem;color:#C9B48A;text-align:right;white-space:nowrap;overflow:hidden}
-.story-back{display:inline-flex;align-items:center;min-height:2.75rem;font-size:.9rem;font-weight:500;color:#E9D8B4;text-underline-offset:.2em;text-decoration-color:#7D6540}
-.story-progress{position:absolute;left:0;right:0;bottom:-1px;height:2px}
-.story-progress i{display:block;height:100%;background:#E9D8B4;transform-origin:left;transform:scaleX(var(--p,0))}
-.story-grid{display:grid;grid-template-columns:minmax(0,34rem) minmax(0,1fr);border-top:1px solid #D8CFBF}
-.story-text{grid-column:1;grid-row:1;padding:0 2rem}
-.story-mapwrap{grid-column:2;grid-row:1;position:sticky;top:var(--band);height:calc(100dvh - var(--band));background:#1b1b1b}
-/* MapLibre styles its container position:relative; the wrap selector wins over it. */
-.story-mapwrap .story-map{position:absolute;inset:0}
-.story-chip{position:absolute;left:.75rem;top:.75rem;z-index:2;margin:0;padding:.4rem .75rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.9rem;max-width:calc(100% - 6rem)}
+/* "Map tour" folded into the guide page (owner 21 Oct 2026, approved mock Review/mock-tour-in-guide/: band B3, layout A). White page,
+   black band + champagne, 6px corners, no pills. */
+
+/* B3: the band under the lede, a drifting satellite still beside the line and the button. */
+.pg-tour{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);min-height:190px;margin:1.25rem 0 .5rem;border-radius:6px;overflow:hidden;background:#141414;color:#E9D8B4}
+.pg-tour-pic{position:relative;min-height:190px;background:#1b1b1b}
+.pg-tour-pic .pg-tour-still{position:absolute;inset:0}
+.pg-tour-tx{display:flex;flex-direction:column;justify-content:center;gap:.5rem;padding:1.4rem 1.6rem}
+.pg-tour-tx .k{font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:#C9B48A}
+.pg-tour-tx .t{font:400 1.7rem/1.15 var(--serif,Georgia,serif)}
+.pg-tour-tx .s{font-size:.88rem;color:#C9B48A}
+.story-open{align-self:flex-start;display:inline-flex;align-items:center;min-height:2.75rem;margin-top:.3rem;padding:0 1.2rem;border-radius:6px;background:#E9D8B4;color:#141414;font-weight:600;text-decoration:none}
+.story-open:hover{background:#fff}
+.story-open:focus-visible{outline:3px solid #E9D8B4;outline-offset:3px}
+
+/* Layout A: the same page in two columns, the guide left and a sticky map right; on a phone a 240 px map strip under the bar. */
+.pg-body{display:block}
+.pg.tour .pg-body{display:flex;align-items:flex-start}
+.pg.tour .pg-listing{flex:1 1 0;min-width:0;max-width:none;padding-left:2rem;padding-right:2rem}
+.pg.tour .pg-beat-body.two{grid-template-columns:minmax(0,1fr);gap:1.5rem}
+.pg.tour .pg-mosaic{height:min(22rem,34vw)}
+.pg-tourmap{order:2;flex:0 0 46%;position:sticky;top:calc(var(--bar) + 1px);height:calc(100dvh - var(--bar) - 1px);background:#1b1b1b}
+.pg-tourmap-in{position:absolute;inset:0}
+/* MapLibre styles its container position:relative; this selector wins over it. */
+.pg-tourmap .story-map{position:absolute;inset:0}
+.pg-tourcap{position:absolute;left:0;right:0;top:0;z-index:3;display:flex;gap:.8rem;align-items:baseline;margin:0;padding:.55rem .9rem;background:rgba(20,20,20,.88);color:#E9D8B4;border-bottom:1px solid #E9D8B4;font-size:.85rem}
+.pg-tourcap .k{color:#C9B48A;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.pg-tourcap b{flex:1;min-width:0;font:500 1.05rem var(--serif,Georgia,serif)}
+.pg-tourcap button{border:0;background:none;padding:.2rem 0;color:#E9D8B4;font:inherit;text-decoration:underline;text-underline-offset:.2em;cursor:pointer;white-space:nowrap}
+.pg-tourcap button:focus-visible{outline:2px solid #E9D8B4;outline-offset:2px}
+.pg-tourmap .maplibregl-ctrl-top-right{top:2.6rem}
+.pg-tourmap .maplibregl-ctrl-bottom-right{bottom:2rem}
+@media (max-width:47.5em){
+  .pg-tour{grid-template-columns:1fr;min-height:0}
+  .pg-tour-pic{height:160px;min-height:160px}
+  .pg.tour .pg-body{flex-direction:column;align-items:stretch}
+  .pg.tour .pg-listing{padding-left:1rem;padding-right:1rem}
+  .pg-tourmap{order:-1;flex:0 0 240px;height:240px;z-index:16}
+  .pg.tour .pg-jump{top:calc(var(--bar) + 241px)}
+  .pg-tourcap{flex-wrap:wrap;gap:.1rem .6rem;padding:.4rem .75rem}
+  .pg-tourcap b{font-size:.95rem}
+}
+
+/* On the map: stop markers, the credit line and the recentre button. */
 .story-recentre{position:absolute;right:.75rem;bottom:2.6rem;z-index:2;min-height:2.75rem;padding:0 1rem;border:0;border-radius:6px;background:#141414;color:#E9D8B4;font:inherit;font-weight:500;font-size:.9rem;cursor:pointer}
 .story-recentre:focus-visible{outline:3px solid #E9D8B4;outline-offset:2px}
 .story-credit{position:absolute;left:0;right:0;bottom:0;z-index:2;margin:0;padding:.35rem .75rem;background:rgba(20,20,20,.88);color:#EFE6D2;font-size:.78rem;line-height:1.3}
 .story-credit .short{display:none}
-.story-mapwrap .maplibregl-ctrl-bottom-right{bottom:5.25rem}
-.story-loc{position:absolute;left:.75rem;bottom:2.4rem;z-index:2;width:120px;height:auto;padding:4px;border-radius:6px;background:#141414;border:1px solid #7D6540}
-.story-loc path{fill:#E9D8B4}
-.story-loc .lbox{fill:rgba(20,20,20,.15);stroke:#141414;stroke-width:1.4}
-.story-loc .ldot{fill:#141414;stroke:#fff;stroke-width:1}
+
 .story-mk{padding:.2rem .5rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.78rem;white-space:nowrap}
 .story-dot{width:.9rem;height:.9rem;border-radius:50%;background:#E9D8B4;border:2px solid #141414}
-
-.story-step{min-height:62vh;border-left:3px solid transparent;padding:3rem 0 3rem 1.25rem;margin-left:-1.25rem;transition:border-color .3s}
-.story-step[aria-current]{border-left-color:#7D6540}
-.story-step.intro{min-height:auto;padding-top:2rem}
-.story-step.end{min-height:60vh}
-.story-step-in{max-width:34rem}
-.story h1,.story h2,.story h3{font-family:var(--serif,Georgia,serif);font-weight:500;line-height:1.15;margin:0}
-.story h1{font-size:2.3rem;margin:.25rem 0 1rem}
-.story h2{font-size:1.6rem;margin:0 0 1rem}.story h2 .n{margin-right:.6rem;color:#7D6540;font-weight:400}
-.story h3{font-size:1.6rem;margin:1rem 0}
-.story-step p{margin:0 0 1rem}
-.story-kicker,.story-lab{margin:0 0 .5rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7D6540;font-weight:500}
-.story-lab{margin:1rem 0 .25rem!important}
-.story-lede{font:400 1.25rem/1.45 var(--serif,Georgia,serif)}
-.story-src,.story-src a,.story-hint,.story-photocredit,.story-photocredit a{font-size:.78rem;color:#6F6860}
-.story-toc ol{margin:1.5rem 0;padding-left:1.25rem}
-.story figure{margin:0 0 1.25rem}
-.story figure img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px}
-.story-cover img{aspect-ratio:16/10!important}
-.story-stop{margin-top:1.5rem;padding:1rem 1.1rem;border:1px solid #D8CFBF;border-left:3px solid #141414;border-radius:6px;background:#F7F5F0}
-.story-stop-lab{margin:0 0 .4rem!important;font:500 1.1rem var(--serif,Georgia,serif)}
-.story-stop-lab small{display:block;font:500 .72rem var(--sans,sans-serif);letter-spacing:.14em;text-transform:uppercase;color:#7D6540}
-.story-measure{margin:.5rem 0 0!important;font-size:.92rem}
-.story-measure small{display:block;font-size:.72rem;color:#6F6860}
-.story-endq{font:400 1.6rem/1.2 var(--serif,Georgia,serif)}
-.story-btn{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 1.25rem;border:0;border-radius:6px;background:#141414;color:#E9D8B4;font:inherit;font-weight:600;cursor:pointer}
-.story-photocredit{margin:2rem 0 1rem}
-
-@media (max-width:61rem){
-  .story-grid{display:block}
-  .story-mapwrap{position:sticky;top:var(--band);z-index:10;height:42dvh}
-  .story-text{padding:0 1.25rem}
-  .story-step{padding:2.5rem 0 1.5rem 1rem;margin-left:-1rem}
-  .story h1{font-size:2rem}
-  .story-credit{font-size:.66rem}
-  .story-credit .long{display:none}.story-credit .short{display:inline}
-  .story-loc{width:84px;bottom:3.1rem}
-  .story-chip{font-size:.78rem}
-}
-@media (prefers-reduced-motion:reduce){.story-step{transition:none}}
-
-/* Button C on the guide page */
-.story-open{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:1.25rem 0 .5rem;padding:.9rem 1.5rem;border-radius:6px;background:#141414;color:#E9D8B4;text-decoration:none}
-.story-open .tx{display:flex;flex-direction:column;gap:.1rem}
-.story-open .t{font:400 1.3rem/1.2 var(--serif,Georgia,serif)}
-.story-open .s{font-size:.78rem;color:#C9B48A}
-.story-open svg{flex:none}
-.story-open:focus-visible{outline:3px solid #141414;outline-offset:2px}
-
 /* Layers (build card 4): the legend line, fact markers and their card. From the mock's story.css and story-b.css. */
 .story-legend{position:absolute;left:.75rem;top:3.4rem;z-index:2;margin:0;padding:.3rem .6rem;border-radius:6px;background:rgba(20,20,20,.82);color:#EFE6D2;font:400 .74rem/1.35 var(--sans,sans-serif);max-width:calc(100% - 4rem);white-space:nowrap;overflow:hidden}
 .story-legend[hidden]{display:none}
@@ -93,6 +69,19 @@
 .story-factpop .maplibregl-popup-close-button:focus-visible{outline:2px solid #fff}
 @media (max-width:61rem){
   /* Under the chip, clear of the locator and the credit; full class names, wrapping to a second line. */
-  .story-legend{top:3.1rem;left:.75rem;right:3rem;max-width:none;white-space:normal;font-size:.66rem}
+  .story-legend{top:3.1rem;left:.75rem;right:.75rem;max-width:none;white-space:nowrap;overflow-x:auto;scrollbar-width:none;font-size:.66rem}
   .story-legend span{margin-left:0;margin-right:.55rem}
 }
+@media (max-width:61rem){.story-credit{font-size:.6rem;white-space:nowrap;overflow:hidden;padding:.3rem .5rem}.story-credit .long{display:none}.story-credit .short{display:inline}}
+
+/* Phone and tablet strip: the legend wraps and stops short of the zoom control (top right) instead of running under it. */
+@media (max-width:61rem){
+  .pg-tourmap .story-legend{right:3.6rem;white-space:normal;overflow:visible}
+  .pg-tourmap .story-legend span{display:inline-block}
+}
+/* The guide column never grows past the screen (the page's auto side margins let it size to its widest child), and the chip bar sits opaque
+   above the text with every heading scrolled clear of it. */
+.pg.tour .pg-listing{width:100%;margin:0}
+.pg.tour .pg-jump{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none;mask-image:none;-webkit-mask-image:none}
+.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 4.5rem)}
+@media (max-width:47.5em){.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 241px + 4rem)}}

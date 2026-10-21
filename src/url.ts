@@ -11,7 +11,7 @@ export interface Selection {
   fly?: { chapter: string; index: number };
   /** The guide chapter the page opens scrolled to (#place=rioja&page&at=valley), after "Back to the guide". */
   at?: string;
-  /** The guide read with the map (#place=rioja&page&story): the story view over the page. */
+  /** The guide read with the map (#place=rioja&page&story): the guide page with its map tour column open. */
   story?: boolean;
 }
 

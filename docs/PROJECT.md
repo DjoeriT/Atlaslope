@@ -24,8 +24,9 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 ## Current state (21 Oct 2026)
 - Release 59 (PR #171): map tours for Rioja and Priorat (#127, first part of #148): scroll the guide, the app map flies to each stop
   named in its text; IGN rivers and names, Köppen climate, IGME geology, slope tint, fact markers; listing page and home tile. Also in it:
-  #169 BSk "cool, dry steppe", #170 slope measure for every place. Next PR (`claude/map-tours`): rename to "Map tours", top-bar item and
-  top-bar search on every page, tour code and data load on demand with their own 150 KB per-tour check.
+  #169 BSk "cool, dry steppe", #170 slope measure for every place. Release 60 (PR #172): renamed "Map tours", search in the top bar of every page, tour code and data load on demand with their own
+  150 KB per-tour check. Next PR (`claude/map-tour-guide`): the tour folded into the guide page (B3 band, layout A), "Map tours" out of the
+  top bar, Guides page "Map tour" line and guides/#map-tours, one set of climate colours and names for chart and map.
 - Release 56 (PR #161): photo credits say "cropped and resized" on the Guides page and place pages (#154; place-page frames crop
   too, `object-fit:cover`); imagery credit «Esri, Vantor» everywhere, share image rebuilt; Esri terms for the saved screenshots in
   `data/SOURCES.md` (#155).
@@ -63,7 +64,9 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   not Esri's longer IP sentence. Photos no longer keep their own ratio: they may be cropped
   to their frames everywhere, with the same care as the Guides page (the 4:3 place-page frames stay). #127 (Rioja flyby) is a big slice, done together with #148 (which other guides get a fly-over).
 - 21 Oct: map tours (owner): round 3 mock approved; IGME geology shipped with credit "Source: IGME, MAGNA 50"; name "Map tours"
-  everywhere (guide button "Map tour"), page `map-tours/`; tour data has its own download limit (150 KB per tour) and the main site
+  everywhere (guide button "Map tour"); same day folded into the guide page (mock `Review/mock-tour-in-guide/`, button B3 with a
+  drifting satellite still, layout A: the same guide page with a map column; "Show on map" stays on guides without a tour), out of the
+  top bar, listed at guides/#map-tours (map-tours/ and read-with-the-map/ redirect there); tour data has its own download limit (150 KB per tour) and the main site
   keeps 2 MB (incident: PR #171 went to 2.24 MB); search in the top bar of every page at all times.
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
@@ -81,10 +84,10 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   (~100 calls x ~70K); Guides-page fix 5.8M vs 1-1.5M (~45 calls x ~130K). Rule: estimate = calls x ~100K + work, count every step.
 - A second Opus check finds ~7 misses per guide (patterns in `Tools/guides/CHECKER.md`). Pair agents ran long: re-read per guide 3x Baleares.
 
-## Map tours (renamed from "Read with the map" 21 Oct 2026, page map-tours/, old address redirects)
+## Map tours (renamed from "Read with the map" 21 Oct 2026; part of the guide page, listed at guides/#map-tours)
 Live for Rioja and Priorat since release 59 (built from `Review/mock-story-guide-v3/`; hand-off `docs/handoffs/2026-10-21-story-guide-build.md`,
 format in `docs/guides.md` "Story files"). 11 guides of the 13 left; brief for that session is in the hand-off `2026-10-21-map-tours.md`.
-Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", page and top bar "Map tours", same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
+Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", then folded into the guide page, same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
 get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
 report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
 
@@ -108,7 +111,6 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
 - A first-principles review of the live Rioja and Priorat map tours before the other 11 (recommended 21 Oct 2026, not yet answered);
-  a Map tours element on the home page beyond the stats tile (asked, form not chosen).
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

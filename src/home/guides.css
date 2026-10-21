@@ -13,7 +13,7 @@
 .gl .facts div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--line)}
 .gl .facts dt{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--foil-ink);padding-top:.2rem}
 .gl .facts dd{margin:0;font-family:var(--serif);font-size:1.1rem;line-height:1.35}
-.gl .credit{font-size:.78rem;line-height:1.4;color:var(--ink3);margin:.6rem 0 0}
+.gl .credit{font-size:.78rem;line-height:1.4;color:var(--ink3);margin:1rem 0 0}
 .gl .credit a{color:inherit}
 .page-head:has(+ .page-body .gl){border-bottom:0;padding-bottom:1.5rem}
 .page-body:has(.gl){padding-top:0}
@@ -44,3 +44,12 @@
 @media (max-width:900px){.gl .feat{grid-template-columns:minmax(0,1fr);gap:1.5rem}}
 @media (max-width:700px){.gl .rowg{grid-template-columns:minmax(0,1fr)}.gl .sat{grid-column:auto}.gl .gcard-c .cb b{font-size:1.6rem}}
 
+.gl .tour{font-size:.9rem;color:var(--ink);font-weight:500}
+.gl .tourlink{margin-bottom:1rem}
+.gl .tourlink a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.25em}
+
+/* "Show only guides with a map tour": while #map-tours is the target, the other regions step aside; "Show all guides" clears the target. */
+.gl .showall{display:none;margin:0 0 1rem}
+.gl .showall a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--foil-ink);text-underline-offset:.25em}
+.gl:has(#map-tours:target) .showall{display:block}
+.gl:has(#map-tours:target) :is(.feat,.jump,.tourlink,.region:not(#map-tours)),.gl:has(#map-tours:target) > .credit{display:none}

@@ -23,7 +23,6 @@ import { withMotion, type Move } from './motion';
 import { Sheet } from './Sheet';
 import { hasStory } from '../story/ids';
 // The tour (map, layers, story files) is its own chunk under dist/story/, fetched only when a tour opens.
-const StoryView = lazy(() => import('../story/StoryView').then((m) => ({ default: m.StoryView })));
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
 const here = () => location.pathname + location.search;
@@ -185,9 +184,8 @@ export function App() {
       {!quiz && !pageOpen && place && place.id === backTo && (
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
-      {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
+      {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} tour={!!sel.story && hasStory(place.id)} onTest={(set) => openQuiz('test', set)} />}
       {/* "Map tour" opens over the guide page, which stays mounted so "Back to <place>" returns to where the reader was. */}
-      {!quiz && place && sel.page && sel.story && hasStory(place.id) && <Suspense fallback={null}><StoryView key={place.id} tree={tree} go={go} place={place} onTest={(set) => openQuiz('test', set)} /></Suspense>}
       {!quiz && region && sel.page && <RegionPage key={region.id} tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (
         <Sheet explore resetKey={`${sel.kind}:${sel.id}:${flyKey(sel)}`}>

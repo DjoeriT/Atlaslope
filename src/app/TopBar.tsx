@@ -26,7 +26,7 @@ const inApp = (run: () => void) => (e: MouseEvent) => {
 };
 
 /** The site's top bar, the black band (website slice 2; approved mock Review/mock-home-v1/): the logo goes home, Atlas and Study are
- *  the atlas's two modes, Guides, Map tours and About are pages of their own, then search. The home and other plain pages (index.html, guides/,
+ *  the atlas's two modes, Guides and About are pages of their own, then search. The home and other plain pages (index.html, guides/,
  *  about/) draw the same bar in plain HTML without search: there it could only throw you into the atlas (owner, 18 Oct 2026). Study is a
  *  plain # link: the app follows the address on its own (popstate). */
 export function SiteBar({ tree, onOpen, current, onAtlas, className, title, children }: Props) {
@@ -40,7 +40,6 @@ export function SiteBar({ tree, onOpen, current, onAtlas, className, title, chil
           <a href="./" aria-current={current === 'atlas' ? 'page' : undefined} onClick={inApp(onAtlas)}>{t.explore}</a>
           <a href="#study" aria-current={current === 'study' ? 'page' : undefined}>{t.quiz}</a>
           <a className="more" href="../guides/">{t.guides}</a>
-          <a className="more" href="../map-tours/">{t.mapTours}</a>
           <a className="more" href="../about/">{t.about}</a>
         </nav>
         <SearchBox tree={tree} open={onOpen} />

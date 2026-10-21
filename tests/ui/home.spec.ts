@@ -13,7 +13,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await expect(page.locator('.closer')).toContainText('More countries are on their way.');
   await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
-  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'Map tours', 'About']);
+  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'About']);
   await expect(page.locator('.sitebar .search input')).toHaveCount(1); // search is in the bar on every page (owner, 21 Oct)
   await expect(page.getByRole('link', { name: 'Open the atlas' }).first()).toHaveAttribute('href', 'atlas/');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
@@ -87,4 +87,18 @@ test('Study and back to Atlas returns to the card that was open', async ({ page 
   await nav.getByRole('link', { name: 'Atlas' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Toro' })).toBeVisible();
   await expect(page).toHaveURL(/#place=toro/);
+});
+
+test('the home tile links to the map tours on the Guides page, which lists every tour guide and can hide the rest', async ({ page }) => {
+  await page.goto('../');
+  const tile = page.locator('.hero a[href="guides/#map-tours"], a[href="guides/#map-tours"]').first();
+  await expect(tile).toHaveText('map tours');
+  await tile.click();
+  await expect(page).toHaveURL(/\/guides\/#map-tours$/);
+  const names = await page.locator('#map-tours .gcard-c .cb b').allTextContents();
+  expect(names.sort()).toEqual(['Priorat', 'Rioja']);
+  await expect(page.locator('.gl .region').nth(1)).toBeHidden(); // while #map-tours is the target the other regions step aside
+  await expect(page.locator('.gl .feat')).toBeHidden();
+  await page.getByRole('link', { name: 'Show all guides' }).click();
+  await expect(page.locator('.gl .region').nth(1)).toBeVisible();
 });

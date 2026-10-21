@@ -41,7 +41,7 @@ describe('plain-page search', () => {
 });
 
 describe('the field in the HTML', () => {
-  it.each(['index.html', 'guides/index.html', 'about/index.html', 'map-tours/index.html'])('%s has the atlas search field, same words', (file) => {
+  it.each(['index.html', 'guides/index.html', 'about/index.html'])('%s has the atlas search field, same words', (file) => {
     const html = readFileSync(file, 'utf8');
     expect(html).toContain(`placeholder="${strings.topBar.searchPlaceholder}"`);
     expect(html).toContain(`aria-label="${strings.topBar.searchLabel}"`);
