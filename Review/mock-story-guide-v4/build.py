@@ -494,9 +494,17 @@ page = re.sub(r'<button[^>]*class="all"[^>]*>.*?</button>', '', page, count=1, f
 def after_para(chapter, n, cards):
     """Insert the stop cards after the n-th paragraph of the chapter (the paragraph its fly link belongs to)."""
     global page
+    # The cards go at the top of the beat's side column, beside the text, so the column next to the prose is not left empty
+    # (owner, 21 Oct 2026: "massive white space next to all the boxes of text"). On phone the side column follows the prose.
     m = re.search(r'<div class="pg-ch" id="terroir-%s">' % chapter + r'(?:<p>.*?</p>){%d}' % n, page, flags=re.S)
     assert m, chapter
-    page = page[:m.end()] + ''.join(STOPCARDS[c].replace('<div class="stop', f'<div data-view="{c}" class="stop', 1) for c in cards) + page[m.end():]
+    k = page.find('<div class="pg-facts', m.end())
+    assert k > 0, chapter
+    k = page.find('>', k) + 1
+    html = ''.join(STOPCARDS[c].replace('<div class="stop', f'<div data-view="{c}" class="stop', 1) for c in cards)
+    if len(cards) > 1:  # two cards side by side, so the side column stays near the prose's height
+        html = f'<div class="stops2">{html}</div>'
+    page = page[:k] + html + page[k:]
 after_para('valley', 1, ['valley', 'sierra'])  # both names appear in the first paragraph
 after_para('soils', 1, ['soils'])
 after_para('barrel', 2, ['haro'])  # the paragraph about Haro's station quarter

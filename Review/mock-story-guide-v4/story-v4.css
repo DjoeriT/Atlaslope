@@ -72,9 +72,13 @@
 body.map-off #closed{display:block;--bar:var(--top);height:auto;overflow:visible;background:#fff}
 body.map-off .sg,body.map-off .foot{display:none}
 body.map-off #closed .pg{position:static;inset:auto;overflow:visible;z-index:auto;height:auto}
-body.map-off #closed .pg-prose .stop{margin:1.2rem 0 1.4rem;max-width:38rem}
-body.map-off #closed .pg-prose .stop-img{margin:0 0 .8rem}
+body.map-off #closed .pg-facts .stop{margin:1.2rem 0 1.4rem;max-width:38rem}
+body.map-off #closed .pg-facts .stop-img{margin:0 0 .8rem}
 .stop-lab a{display:inline-block;margin-top:.15rem}
 /* the story column's class names that the page also uses (.step in the crumb): undo the story rules */
 body.map-off #closed .step{min-height:0;padding:0;margin:0;border:0;display:inline-flex}
 body.map-off #closed .kicker{margin:0}
+body.map-off #closed .pg-facts>.stop:first-child{margin-top:0}
+body.map-off #closed .stops2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 1.4rem}
+body.map-off #closed .stops2 .stop{margin:0}
+@media (max-width:48rem){body.map-off #closed .stops2{grid-template-columns:1fr}}
