@@ -3,6 +3,7 @@
 // Colours, widths and opacities are design choices from the approved mock (Review/mock-story-guide-v3/README.md, "Fact or design choice").
 import type { ExpressionSpecification, FilterSpecification, Map as MapLibreMap } from 'maplibre-gl';
 import koppenUrl from '../../data/koppen-spain.geojson?url';
+import zonesUrl from '../../data/rioja-zones.geojson?url';
 import namesRioja from '../../data/story/names-rioja.geojson?url';
 import namesPriorat from '../../data/story/names-priorat.geojson?url';
 import riversRioja from '../../data/story/rivers-rioja.geojson?url';
@@ -124,6 +125,12 @@ export function storyLayers(): StoryLayers {
       map.addLayer({ id: 'story-names-peak', type: 'symbol', source: 'story-names', minzoom: 10, filter: of('peak'),
         layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 11, 'text-max-width': 7, 'symbol-sort-key': 2 }, paint: HALO });
 
+      // The three Rioja zone names (step layer "zonelabels", the climate and zone steps); the polygon source puts each name inside its zone.
+      if (s.id === 'rioja') {
+        map.addSource('story-zones', { type: 'geojson', data: zonesUrl });
+        map.addLayer({ id: 'story-zonelabels', type: 'symbol', source: 'story-zones', layout: { visibility: 'none', 'text-field': ['upcase', ['get', 'zone']], 'text-font': FONT, 'text-size': 13, 'text-letter-spacing': 0.14, 'text-max-width': 6 }, paint: HALO });
+      }
+
       legend = document.createElement('p');
       legend.className = 'story-legend';
       legend.hidden = true;
@@ -144,6 +151,7 @@ export function storyLayers(): StoryLayers {
       if (geology) ensure(map, 'geology');
       vis(map, 'story-koppen', koppen);
       vis(map, 'story-geology', geology);
+      vis(map, 'story-zonelabels', on.includes('zonelabels'));
       showLegend(view, koppen, geology);
       if (map.getLayer('story-names-town')) showNames(map, view, cam);
       return ['rivers', ...on];

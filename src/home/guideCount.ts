@@ -94,7 +94,7 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
 // One credit line per photo set, always visible, the same parts as the place pages (src/cards/Credit.tsx): author, licence, and the change
 // made for the CC BY licences: "cropped and resized", as every frame crops (square cards, the featured mosaic) (#154).
 // One entry per author and licence.
-const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
+export const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
   const seen = new Set<string>();
   const parts: string[] = [];
   for (const k of keys) {
@@ -118,12 +118,12 @@ const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Vantor · Spain: P
 export const photoCrops = photoCropsFile as Record<string, { focus: string; file: string }>;
 const focusOf = (key: string) => { const f = photoCrops[key]?.focus; return f && f !== '50% 50%' ? f : null; };
 
-const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean, square = false) => {
+export const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes: string, alt: boolean, square = false, focus: string | null = square ? focusOf(key) : null) => {
   const w = photoSizes.photos[key]?.w ?? 1200;
   const set: [string, number][] = [480, 800].filter((s) => s < w).map((s) => [`../photos/${s}/${key}.webp`, s]);
   if (w <= 800) set.push([`../photos/${key}.webp`, w]);
   const src = set[set.length - 1][0];
-  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && focusOf(key) ? ` style="object-position:${focusOf(key)}"` : ''} loading="lazy" />`;
+  return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && focus ? ` style="object-position:${focus}"` : ''} loading="lazy" />`;
 };
 
 const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
