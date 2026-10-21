@@ -370,7 +370,9 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} extra={story && !tour && (
+        <a className="pg-back pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}>{strings.story.jumpToTour}</a>
+      )} />
       <div className="pg-body">
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
@@ -387,10 +389,6 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
         </ul>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
         {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
-
-        {story && !tour && (
-          <p className="pg-tourlink"><a href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}>{strings.story.jumpToTour}</a></p>
-        )}
 
         <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (

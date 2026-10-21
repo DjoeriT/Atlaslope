@@ -120,10 +120,10 @@ for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { wi
 test('a "Map tour" link at the top of the guide scrolls to the band and gives it focus', async ({ page }) => {
   await open(page, '#place=rioja&page');
   await expect(page.locator('a.story-open')).toBeAttached();
-  await page.locator('.pg-tourlink a').click();
+  await page.locator('.pg-tourjump').click();
   await expect(page.locator('#map-tour')).toBeFocused();
   await expect(page.locator('#map-tour')).toBeInViewport();
   await open(page, '#place=valdepenas&page');
   await expect(page.locator('h1').first()).toBeVisible();
-  await expect(page.locator('.pg-tourlink')).toHaveCount(0);
+  await expect(page.locator('.pg-tourjump')).toHaveCount(0);
 });

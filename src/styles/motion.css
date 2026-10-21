@@ -105,4 +105,7 @@ html[data-motion="page-close"]::view-transition-new(card){animation:vt-fade-in .
   padding:0 .9rem 0 .75rem;border-color:transparent;border-radius:var(--rad);background:rgba(20,20,20,.72);color:#fff}
 .rpage > .pg-back:focus-visible{outline-color:var(--foil)}
 @media (min-width:47.51em){.showmap{display:none}.pg > .pg-back + .showmap + .pg-listing{padding-top:.4rem}}
-@media (max-width:47.5em){.pg-back{display:none}}
+/* "Map tour" beside "Show map" on a guide that has a tour (card 1 of the map-tour fixes, F3): the two sit in one row, and on a phone only this one shows. */
+.pg > .pg-back{display:inline-flex;vertical-align:top}
+.pg-back.pg-tourjump{margin-left:.6rem}
+@media (max-width:47.5em){.pg-back,.pg > .pg-back{display:none}.pg > .pg-back.pg-tourjump{display:inline-flex;margin-left:1rem}}
