@@ -89,13 +89,32 @@ h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--in
 .back-quiz{position:absolute;left:27rem;top:1rem;z-index:6;min-height:2.75rem;padding:0 1rem;border-radius:var(--rad);font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
 @media (max-width:68.75em){.back-quiz{left:24rem}}
 @media (max-width:51.25em) and (orientation:portrait){.back-quiz{left:1rem;top:auto;bottom:calc(52% + .6rem)}}
-/* "My course": one quiet line that opens to four choices (Study step 1). */
-.course summary{cursor:pointer;list-style:none;font-size:.9rem;color:var(--ink2);margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.35rem;align-items:center}
-.course summary::-webkit-details-marker{display:none}
-.course .change{color:var(--accent);font-weight:500;text-decoration:underline;min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .3rem}
-.course fieldset{border:1px solid var(--line);border-radius:6px;margin:.25rem 0 0;padding:.4rem .8rem .6rem}
-.course label{display:flex;gap:.6rem;align-items:baseline;min-height:2.75rem;padding:.35rem 0;cursor:pointer}
-.course label+label{border-top:1px solid var(--line)}
-.course label span{color:var(--ink2);font-size:.9rem}
-.course label b{color:var(--ink);font-weight:500;margin-right:.3rem}
-.course .course-note{font-size:.9rem;margin:.4rem 0 0}
+/* The Learn start card, mock round 2 option D (Review/mock-study-start, 21 Oct 2026): "Learning for", the scope line, places as square
+   photos with names, a sticky start button on a phone, the credit line last. 12 px minimum text. */
+.learn h1{font-family:var(--serif);font-weight:500;font-size:2rem;line-height:1.1;letter-spacing:-.01em;margin:0 0 .5rem}
+.learn .body > p{color:var(--ink2)}
+.learn .sub{font-size:.95rem;margin:0}
+.learn .big{font-size:1.15rem;color:var(--ink);margin:.25rem 0}
+.for{position:relative;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:1rem 0 .5rem}
+.learn .body > .for:first-child{margin-top:0}
+.for-label{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);font-weight:600}
+.for-btn{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:0 .85rem;background:var(--paper);color:var(--ink);border:1px solid var(--band);border-radius:6px;font:600 .95rem var(--sans);cursor:pointer}
+.for-btn .caret{font-size:.8rem;color:var(--foil-ink)}
+.course-menu{position:absolute;left:0;right:0;top:100%;z-index:5;list-style:none;margin:.25rem 0 0;padding:.35rem;border:1px solid var(--line2);border-radius:6px;background:var(--paper);box-shadow:0 8px 24px rgba(20,20,20,.12)}
+.course-menu button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1rem;min-height:2.75rem;padding:0 .6rem;border:0;border-radius:6px;background:transparent;font:500 .95rem var(--sans);color:var(--ink);text-align:left;cursor:pointer}
+.course-menu button:hover{background:var(--paper2)}
+.course-menu button[aria-pressed="true"]{background:var(--paper2);box-shadow:inset 3px 0 0 var(--foil)}
+.course-menu small{font-size:.8rem;color:var(--ink3);white-space:nowrap}
+.learn .scope{font-size:.9rem;margin:0 0 1.25rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.learn-photos{list-style:none;margin:.5rem 0 1rem;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem}
+.learn-photos li{min-width:0}
+.learn-photos img,.learn-photos .nophoto{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;background:var(--fill)}
+.learn-photos span:not(.nophoto){display:block;font-size:.75rem;line-height:1.3;margin-top:.3rem;color:var(--ink);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}
+.learn .stick{margin:1rem 0 .25rem}
+.learn .credit{font-size:.75rem;line-height:1.4;color:var(--ink3);margin:1.5rem 0 0;padding-top:.75rem;border-top:1px solid var(--line)}
+.learn .credit a{color:inherit}
+/* On a phone the start button stays at the bottom of the sheet while the rest scrolls (design check, should fix 1). */
+@media (max-width:51.25em){
+  .learn .stick{position:sticky;bottom:0;z-index:2;margin:.5rem -.25rem 0;padding:.5rem .25rem calc(.25rem + env(safe-area-inset-bottom));background:linear-gradient(rgba(255,255,255,0),var(--paper) 1rem)}
+  .learn h1{font-size:1.75rem}
+}

@@ -1,5 +1,5 @@
 // Progress storage: one versioned record behind one interface, so sync can plug in later. No React, no map.
-import { isCourse, type Course } from './course';
+import { NO_COURSE, readCourse, type Course } from './course';
 import type { LogEntry, MemoryName, QuestionType } from './types';
 
 export const RECORD_VERSION = 1;
@@ -13,7 +13,7 @@ export interface QuizRecord {
   version: number;
   log: LogEntry[];
   focus: string[];
-  /** "My course". Added within version 1: a record without it (every save before 21 Oct 2026) reads as no course, so no bump that would stop an open older tab from saving. */
+  /** "My course". Added within version 1: a record without it (every save before 21 Oct 2026) reads as no course (old ids map, src/quiz/course.ts), so no bump that would stop an open older tab from saving. */
   course: Course;
   /** ISO time of the last save; empty for a record never saved. */
   savedAt: string;
@@ -47,7 +47,7 @@ export interface QuizStore {
   hasBackup(): boolean;
 }
 
-export const emptyRecord = (): QuizRecord => ({ version: RECORD_VERSION, log: [], focus: [], course: 'none', savedAt: '' });
+export const emptyRecord = (): QuizRecord => ({ version: RECORD_VERSION, log: [], focus: [], course: NO_COURSE, savedAt: '' });
 
 const isObject = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null && !Array.isArray(x);
 const isIso = (x: unknown): x is string => typeof x === 'string' && !Number.isNaN(Date.parse(x));
@@ -76,7 +76,7 @@ export function migrate(raw: unknown): Migrated {
   const bad = log.findIndex((e) => !validEntry(e));
   if (bad >= 0) return { ok: false, newer: null, message: `Entry ${bad + 1} of the progress is damaged.` };
   const focus = Array.isArray(raw.focus) && raw.focus.every((f) => typeof f === 'string') ? (raw.focus as string[]) : [];
-  const course = isCourse(raw.course) ? raw.course : 'none';
+  const course = readCourse(raw.course);
   return { ok: true, record: { version: RECORD_VERSION, log: log as LogEntry[], focus, course, savedAt: typeof raw.savedAt === 'string' ? raw.savedAt : '' } };
 }
 

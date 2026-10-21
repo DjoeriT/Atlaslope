@@ -1,6 +1,6 @@
 // What to ask: memories due, and the Study intake of new places (focus first, then course order; zones after their parent).
 import type { Place, Tree } from '../tree';
-import { inCourse, type Course } from './course';
+import { inCourse, NO_COURSE, type Course } from './course';
 import { DAY_MS, findsIt, placeKnown, questionType } from './memory';
 import type { MemoryName, MemoryRef, QuizState } from './types';
 
@@ -71,7 +71,7 @@ export function dueNow(tree: Tree, placeIds: readonly string[], state: QuizState
 }
 
 /** The Study curriculum: every core place and zone the course asks (all of them with no course), in course order. */
-export function studySet(tree: Tree, course: Course = 'none'): Place[] {
+export function studySet(tree: Tree, course: Course = NO_COURSE): Place[] {
   return inCourseOrder(tree, tree.places.filter((p) => STUDY_KINDS.includes(p.quiz) && inCourse(course, p)));
 }
 

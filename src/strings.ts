@@ -1,4 +1,12 @@
 // All interface text lives here (decision #5).
+// Learn's running text: small counts as words ("five places"), study regions in double quotes (owner, 21 Oct 2026).
+const WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+const word = (n: number) => WORDS[n] ?? String(n);
+const cap = (x: string) => x.charAt(0).toUpperCase() + x.slice(1);
+/** A study region the places sit in: all of them (`shared`), or the first of them. */
+type Where = { name: string; shared: boolean } | null;
+const where = (r: Where) => (!r ? '' : r.shared ? ` in "${r.name}"` : `, starting in "${r.name}"`);
+
 export const strings = {
   appName: 'AtlaSlope',
   // Browser tab title: the place first, so it stays readable when many tabs are open (owner, 17 Oct 2026).
@@ -40,7 +48,7 @@ export const strings = {
     searchLabel: 'Search places and regions',
     modeNav: 'Site',
     explore: 'Atlas',
-    quiz: 'Study',
+    quiz: 'Learn',
     guides: 'Guides',
     about: 'About',
     showMap: 'Show map',
@@ -78,7 +86,7 @@ export const strings = {
     credits: 'Photos:',
     showOnMap: (name: string) => `Fly to ${name}`,
     alsoHere: 'Also here',
-    alsoHereNote: 'On the map, not in the study rounds.',
+    alsoHereNote: 'On the map, not in Learn.',
     grid: 'Places to learn',
   },
   facts: {
@@ -173,7 +181,7 @@ export const strings = {
       regionRow: (name: string) => `${name} region`,
       compareNote: 'Measured the same way for each: the land inside the boundary.',
       // Guide shape C (owner, 19 Oct 2026): the page answers one question in four beats, then How it tastes and In short; the rest are
-      // plain sections a wine lover browses. Exam framing stays in Study.
+      // plain sections a wine lover browses. Exam framing stays in Learn.
       whyTitle: (name: string) => `Why ${name} tastes the way it does`,
       beats: { place: 'The place', weather: 'The weather', ground: 'The ground', rules: 'What the rules make' } as Record<string, string>,
       sections: {
@@ -248,7 +256,7 @@ export const strings = {
       onTheMap: 'On the map',
       flyLabel: (label: string) => `See ${label} from above`,
       testTitle: (name: string) => `Test me on ${name}`,
-      testText: (name: string, withZones: boolean) => `A short round in Study on ${name}${withZones ? ' and its zones' : ''}.`,
+      testText: (name: string, withZones: boolean) => `A short round in Learn on ${name}${withZones ? ' and its zones' : ''}.`,
       testButton: 'Test me',
     },
     fly: {
@@ -272,55 +280,58 @@ export const strings = {
     close: 'Got it, hide this note',
   },
   quiz: {
-    heading: 'Study or review',
-    cardLabel: 'Study',
-    backToQuiz: 'Back to Study',
-    backToQuizLabel: 'Back to Study, where you left off',
-    storageDamaged: "The progress stored in this browser could not be read, so Study started afresh. A copy was kept; if you saved a file, load it with Save or load progress on the Study screen.",
+    heading: 'Learn',
+    cardLabel: 'Learn',
+    backToQuiz: 'Back to Learn',
+    backToQuizLabel: 'Back to Learn, where you left off',
+    storageDamaged: "The progress stored in this browser could not be read, so Learn started afresh. A copy was kept; if you saved a file, load it with Save or load progress on the Learn screen.",
     storageBlocked: "Progress can't be kept in this browser, so it will be lost when you close the page. Save a copy to a file to keep it.",
+    // The Learn start card, mock round 2 option D (Review/mock-study-start, owner "Build it", 21 Oct 2026). Study regions show in double quotes.
     doors: {
-      study: 'Study',
-      studyLede: 'The course, a little each day. Spaced so it sticks.',
+      introHeading: "Learn Spain's wine places, a few at a time.",
+      intro: [
+        'For each place you learn where it is and what it makes. You also learn why its wine tastes the way it does.',
+        'Learn asks about each place again just before you would forget it. When you miss one, it takes you to that place\'s guide so you can read why.',
+        'If you are taking a course, you can choose it here, and everything in Learn will keep to the places that course covers.',
+      ],
+      begin: (n: number, region: Where) => `Begin with ${word(n)} ${n === 1 ? 'place' : 'places'}${where(region)}`,
+      upNext: 'Up next',
+      upNextCourse: 'Up next in your course',
+      newPlaces: (n: number, region: Where) => `${cap(word(n))} new ${n === 1 ? 'place' : 'places'}${where(region)}`,
+      startThese: (n: number) => (n === 1 ? 'Start with this place' : `Start with these ${word(n)} places`),
+      photosLabel: 'The places up next',
       nothingDue: "Nothing due today. Everything you've learned is on schedule.",
       due: (n: number) => `${n} due`,
       newCount: (n: number) => `${n} new`,
       and: ' and ',
       today: ' today',
-      // A first visit has nothing due yet, so it leads with where to start, not "Nothing due" (QA sweep S2, 21 Oct 2026). [proposal]
-      startWith: (n: number, region: string | null) => `Start with ${n} ${n === 1 ? 'place' : 'places'}${region ? ` in ${region}` : ''}.`,
-      upNext: (n: number, region: string | null, focused: boolean) =>
-        `Up next${focused ? ' from your focus' : ''}: ${n} ${region ? '' : 'new '}${n === 1 ? 'place' : 'places'}${region ? ` in ${region}` : ''}.`,
       start: (n: number) => `Start today's round · ${n} ${n === 1 ? 'question' : 'questions'}`,
-      learnNew: (n: number) => `Learn ${n} new ${n === 1 ? 'place' : 'places'}`,
       learnExtra: 'Learn 5 extra places',
       focusOn: (names: string) => `Focus: ${names}.`,
       focusNone: 'Following the course order.',
       change: 'Change',
       setFocus: 'Set a focus',
-      review: 'Review',
-      reviewLede: "Practise any regions or places, any time, 10 or 20 questions. Places that aren't due keep their schedule; a miss brings a place back sooner.",
-      practise: 'Practise any mix',
+      practiseAll: 'Practise any of Spain\u2019s places',
+      practiseCourse: (label: string) => `Practise ${label} places`,
+      // Mock line "It does not change your schedule" is not quite true (a miss in practice brings a place back sooner): the old line's first half.
+      practiseLedeAll: "Pick a region or a few places for a round of 10 or 20 questions. Places that aren't due keep their schedule.",
+      practiseLedeCourse: "Pick a region or a few of the course\u2019s places for a round of 10 or 20 questions. Places that aren't due keep their schedule.",
+      practise: 'Choose places to practise',
       nextDue: (day: string, n: number) => `Next due: ${day}, ${n} ${n === 1 ? 'place' : 'places'}.`,
       orExplore: 'Or explore the map.',
       nothingScheduled: 'Nothing is scheduled yet.',
     },
-    // "My course" on the Study screen (Study step 1, 21 Oct 2026). [proposal]
+    // "Learning for": the course filter over everything in Learn. Course names come from content/curriculum.json.
     course: {
-      line: (name: string) => `My course: ${name}.`,
-      change: 'Change',
-      legend: 'My course',
-      names: { none: 'No course', 'wset-2': 'WSET Level 2', 'wset-3': 'WSET Level 3', 'wine-scholar': 'Wine Scholar' },
-      hints: {
-        none: 'Every place, in course order.',
-        'wset-2': 'The places the Level 2 specification names.',
-        'wset-3': 'The places the Level 3 specification names.',
-        'wine-scholar': 'Every place except the three Rioja zones.',
-      },
-      note: "Places you've started keep their schedule.",
+      learningFor: 'Learning for',
+      menuLabel: 'Choose what you are learning for',
+      places: (n: number) => `${n} ${n === 1 ? 'place' : 'places'}`,
+      scopeAll: (n: number) => `Your rounds and your practice ask all ${n} places Learn covers in Spain. Taking a course? Choose it above and Learn keeps to its places.`,
+      scopeCourse: (n: number) => `Your rounds and your practice only ask the ${n} places this course covers, so nothing outside it comes up.`,
     },
     focus: {
       heading: 'Focus',
-      crumbQuiz: 'Study',
+      crumbQuiz: 'Learn',
       crumbLabel: 'Where this sits',
       close: 'Close without saving',
       lede: "New places come from your focus first. When they're all in, the course order carries on.",
@@ -341,10 +352,11 @@ export const strings = {
     practiseScreen: {
       heading: 'Practise any mix',
       crumbReview: 'Review',
-      close: 'Close, back to Study',
+      close: 'Close, back to Learn',
       quick: 'Quick picks',
       missed: (n: number) => `Missed today (${n})`,
       allOfSpain: 'All of Spain',
+      allOfCourse: (label: string) => `All ${label} places`,
       regionsAndPlaces: 'Regions and places',
       howMany: 'How many questions',
       note: "Places repeat when you pick fewer places than questions. Vinos de Calidad and Rioja's zones are asked only when you tick them.",
@@ -357,7 +369,7 @@ export const strings = {
     file: {
       kicker: 'Your progress',
       heading: 'Save or load',
-      close: 'Close, back to Study',
+      close: 'Close, back to Learn',
       lede: 'Progress lives in this browser only. A file is your backup, and how you move it to another device.',
       inBrowser: 'In this browser',
       inBrowserValue: (answers: number, since: string, known: number) => (answers ? `${answers} ${answers === 1 ? 'answer' : 'answers'} since ${since} · ${known} ${known === 1 ? 'place' : 'places'} known` : 'No answers yet'),
@@ -380,8 +392,9 @@ export const strings = {
     answerTag: 'Answer',
     pickTag: 'Your pick',
     nothingToAsk: 'Nothing to ask right now.',
+    photosCredit: 'Photos:',
     round: {
-      kindStudy: 'Study',
+      kindStudy: 'Learn',
       kindReview: 'Review',
       newPlace: (n: number, of: number, kind: string) => `New place · ${n} of ${of} today · ${kind}`,
       questionOf: (n: number, of: number, kind: string) => `Question ${n} of ${of} · ${kind}`,

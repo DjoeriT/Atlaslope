@@ -13,4 +13,4 @@ export {
 export {
   askableFacts, FACT_KINDS, makeQuestion, revealFact, revealWhy, seededRandom, type FactKind, type FactSource, type Question, type QuestionContext,
 } from './questions';
-export { COURSES, inCourse, isCourse, type Course } from './course';
+export { COURSES, courseOf, inCourse, isCourse, NO_COURSE, readCourse, type Course, type CourseInfo } from './course';

@@ -60,7 +60,7 @@ export function parseSelection(hash: string): Selection {
 }
 
 /** The Study route (the code keeps the name quiz): #study, with #study=practise, #study=focus and #study=progress-file for the screens, and
- *  #study=test&set=a,b which starts a review round of 10 on those places at once. Links from before the rename (#quiz=...) still open it. */
+ *  #study=test&set=a,b which starts a review round of 10 on those places at once. Links from before the rename (#quiz=...) still open it, and so does #learn (the name users see since 21 Oct 2026). */
 export type QuizSub = 'practise' | 'focus' | 'progress-file' | 'test' | null;
 export interface QuizRoute { sub: QuizSub; /** The places of a `test` round. */ set?: string[] }
 const QUIZ_SUBS = ['practise', 'focus', 'progress-file', 'test'] as const;
@@ -68,7 +68,7 @@ const QUIZ_SUBS = ['practise', 'focus', 'progress-file', 'test'] as const;
 /** The Study route a hash names, or null when it names the atlas. An unknown sub-route means plain #study. */
 export function parseQuizRoute(hash: string): QuizRoute | null {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
-  const key = p.has('study') ? 'study' : p.has('quiz') ? 'quiz' : null;
+  const key = ['study', 'learn', 'quiz'].find((k) => p.has(k));
   if (!key) return null;
   const sub = p.get(key);
   const found = QUIZ_SUBS.find((s) => s === sub) ?? null;
