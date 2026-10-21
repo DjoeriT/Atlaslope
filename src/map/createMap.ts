@@ -23,6 +23,7 @@ import { addBaseMap, applyBaseMap } from './osmBase';
 import { SELECTED, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
+import { loadJson } from './dataFile';
 import { cameraEase, flightMs, type Cam } from './flight';
 import { motionScale } from '../app/motion';
 
@@ -59,7 +60,7 @@ export interface MapEvents {
 }
 
 const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
-const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
+const asCollection = (u: string): Promise<Collection> => loadJson<Collection>(u);
 
 /** The tilt the map opens with, and goes back to on "Reset view". */
 const START_PITCH = 45;
