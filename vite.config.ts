@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { fillStoryCount, fillStoryList, storyCount, storyRows } from './src/home/storyList';
+import { searchIndex } from './src/home/searchIndex';
 import { fillGuideCount, fillGuideList, guideRows, placeGuideCount } from './src/home/guideCount';
 
 // GitHub Pages serves the site under /Atlaslope/ (the repo name) until atlaslope.com is pointed at it. A relative base works at any subpath and in any case,
@@ -16,7 +17,12 @@ export default defineConfig(({ mode }) => ({
       assetFileNames: (a) => ((a.originalFileNames ?? []).some((n) => n.startsWith('data/story/')) ? 'story/[name]-[hash][extname]' : 'assets/[name]-[hash][extname]'),
     },
   } },
-  plugins: [{ name: 'guide-count', transformIndexHtml: (html, ctx) => {
+  plugins: [{
+    // The plain pages' search index, loaded on first focus (src/home/search.ts): names and ids only, a chunk of its own.
+    name: 'search-index',
+    resolveId: (id) => (id === 'virtual:search-index' ? '\0virtual:search-index' : undefined),
+    load: (id) => (id === '\0virtual:search-index' ? `export default ${JSON.stringify(searchIndex())};` : undefined),
+  }, { name: 'guide-count', transformIndexHtml: (html, ctx) => {
     // Every page that shows the guide count gets it; the Guides and Map tours pages get their lists.
     const out = fillStoryCount(fillGuideCount(html, placeGuideCount()), storyCount());
     const file = ctx.filename.replace(/\\/g, '/');

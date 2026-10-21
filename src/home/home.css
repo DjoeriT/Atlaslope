@@ -197,3 +197,26 @@ footer small{display:block;color:var(--ink3);font-size:.78rem;margin-top:.5rem;m
   footer .wrap > div:first-child{grid-column:1 / -1}
 }
 @media (max-width:480px){.sitebar nav a{padding:0 .4rem;font-size:.9rem}.sitebar nav a[aria-current="page"]::after{left:.4rem;right:.4rem}}
+
+/* The search field (owner, 21 Oct 2026: in the bar at all times). Desktop: between the logo and the nav, the atlas's look (src/styles/site.css):
+   a champagne-edged field on the band, 6 px corners, no icon. Phone: its own row just under the band, full width between 16 px gutters. */
+.sitebar .search{position:relative;flex:0 1 15rem;min-width:7rem;margin-left:.5rem}
+.sitebar .search input{width:100%;min-height:2.75rem;padding:0 .8rem;border-radius:var(--r-btn);border:1px solid color-mix(in srgb,var(--foil) 30%,transparent);background:color-mix(in srgb,var(--foil) 8%,var(--band));color:var(--foil);font:inherit;font-size:1rem;-webkit-appearance:none;appearance:none}
+.sitebar .search input::placeholder{color:color-mix(in srgb,var(--foil) 70%,transparent)}
+.sitebar .search input::-webkit-search-cancel-button{display:none}
+.sitebar .search input:focus-visible{outline:2px solid var(--foil);outline-offset:1px}
+.sitebar .results{position:absolute;left:0;top:calc(100% + .4rem);z-index:30;min-width:min(20rem,calc(100vw - 2rem));margin:0;padding:.3rem;list-style:none;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:var(--r-btn);box-shadow:0 8px 24px rgb(0 0 0 / .18)}
+.sitebar .results[hidden]{display:none}
+.sitebar .results a,.sitebar .results p{display:flex;justify-content:space-between;align-items:center;gap:.6rem;min-height:2.75rem;padding:.5rem .7rem;border-radius:var(--r-btn);text-decoration:none;font-size:1rem;color:var(--ink)}
+.sitebar .results p{margin:0;color:var(--ink3)}
+.sitebar .results a:hover{background:var(--bg2)}
+.sitebar .results a:focus-visible{outline-color:#2F5F9E}
+.sitebar .results small{color:var(--ink3);font-size:.78rem}
+@media (pointer:coarse){.sitebar .search input{font-size:max(1rem,16px)}}
+@media (max-width:900px){
+  .sitebar{height:auto;min-height:calc(var(--bar) + 1px)}
+  .sitebar .in{height:auto;flex-wrap:wrap;row-gap:0;padding:0 max(16px,env(safe-area-inset-right,0px)) .7rem max(16px,env(safe-area-inset-left,0px))}
+  .sitebar .brand,.sitebar nav{min-height:calc(var(--bar) - .35rem)}
+  .sitebar .search{order:3;flex:0 0 100%;margin:0}
+  .sitebar .results{right:0;min-width:0}
+}

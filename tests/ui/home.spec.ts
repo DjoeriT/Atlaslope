@@ -14,12 +14,27 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
   await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'Map tours', 'About']);
-  await expect(page.locator('.sitebar .search')).toHaveCount(0); // no search here: it could only throw you into the atlas (owner, 18 Oct)
+  await expect(page.locator('.sitebar .search input')).toHaveCount(1); // search is in the bar on every page (owner, 21 Oct)
   await expect(page.getByRole('link', { name: 'Open the atlas' }).first()).toHaveAttribute('href', 'atlas/');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
   await expect(page.locator('#map')).toHaveCount(0);
   expect(scripts.some((u) => /atlas-[\w-]+\.js/.test(u))).toBe(false);
+});
+
+test('search in the home page bar finds Rioja, loads its index only on focus, and opens the place in the atlas', async ({ page }) => {
+  const indexLoads: string[] = [];
+  page.on('request', (r) => { if (/search-index/.test(r.url())) indexLoads.push(r.url()); });
+  await page.goto('../');
+  await page.waitForLoadState('networkidle');
+  expect(indexLoads).toHaveLength(0);
+  const box = page.getByRole('searchbox', { name: 'Search places and regions' });
+  await box.fill('rioja');
+  const first = page.locator('.sitebar .results a').first();
+  await expect(first).toContainText('Rioja');
+  await expect(first).toHaveAttribute('href', 'atlas/#place=rioja');
+  await box.press('Enter');
+  await expect(page).toHaveURL(/\/atlas\/#place=rioja/);
 });
 
 test('Open the atlas leads to the atlas, and its logo comes back home', async ({ page }) => {

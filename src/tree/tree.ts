@@ -22,6 +22,8 @@ export interface Tree {
   levelName(place: Place): string;
   /** Regions and places by name or official name, accents and case folded; regions first on an equal match. Main-grape matches come after all name matches. */
   search(query: string, limit?: number): Crumb[];
+  /** What search matches against; the plain pages ship these (names and ids only) as their small search index. */
+  searchEntries: Entry[];
 }
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -182,5 +184,6 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
     alsoWithin: (id) => (byId.get(id)?.alsoWithin ?? []).map((o) => byId.get(o)!),
     levelName: (place) => countryOf.get(place.id)?.levels[depthOf.get(place.id)!] ?? place.level,
     search: makeSearch(entries),
+    searchEntries: entries,
   };
 }
