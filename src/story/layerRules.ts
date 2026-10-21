@@ -35,3 +35,22 @@ export function legendClasses(focus: string): LegendClass[] {
     .sort((a, b) => (share.get(b.id) ?? 0) - (share.get(a.id) ?? 0))
     .map((g) => ({ id: g.id, label: g.label, short: short[g.id] ?? g.label, color: g.color }));
 }
+
+/** The rock types the soils stop names, with the MAGNA 50 colour each has on the map (sampled from the service's own render at the
+ * units the guide describes, 21 Oct 2026; data/SOURCES.md "Story data"). The service's legend lists numbered colours and no names. */
+export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
+  rioja: [{ id: 'clayLimestone', color: '#FFFF80' }, { id: 'ferrousClay', color: '#FFD9D9' }, { id: 'alluvial', color: '#B2D9D9' }],
+  priorat: [{ id: 'slate', color: '#B2B2B2' }],
+};
+
+/** The key items for a story's rock colours: the guide's own word and the colour. */
+export function rockKey(storyId: string): Array<{ label: string; color: string }> {
+  const names = (strings.story.legend.rocks as Record<string, Record<string, string>>)[storyId] ?? {};
+  return (ROCK_KEY[storyId] ?? []).map((r) => ({ label: names[r.id] ?? r.id, color: r.color }));
+}
+
+/** The slope tint's own colour (Tools/story/slope_tint.py, #8C2340) for its one-line key. */
+export const SLOPE_KEY_COLOR = '#8C2340';
+
+/** The MAGNA 50 service draws nothing at map zoom 9 and below (blank tiles, checked 21 Oct 2026): its layer starts here, and so does a geology stop's view. */
+export const GEOLOGY_MINZOOM = 10;

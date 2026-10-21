@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:ui": "playwright test",
-    "shots": "node Tools/shots.mjs"
+    "shots": "node Tools/shots.mjs",
+    "shots:tour": "node Tools/shots-tour.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1",

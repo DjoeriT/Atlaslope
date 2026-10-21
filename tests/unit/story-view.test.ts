@@ -62,11 +62,13 @@ describe('story camera targets', () => {
   });
 
   it('takes the stop\'s point when the step gives only a zoom', () => {
-    const s = step('haro');
-    const fly = stopOf(guide, s)!;
-    const target = targetOf(s, fly);
-    if (fly.point) expect(target).toMatchObject({ kind: 'view', center: fly.point, zoom: 14.2 });
-    else expect(target).toMatchObject({ kind: 'bounds', place: fly.place });
+    const fly = stopOf(guide, step('sierra'))!;
+    const s = { ...step('haro'), camera: { zoom: 12 } };
+    expect(targetOf(s, fly)).toMatchObject({ kind: 'view', center: fly.point, zoom: 12 });
+  });
+
+  it('Haro\'s station quarter is centred on Haro and stays at a zoom the imagery shows sharply', () => {
+    expect(targetOf(step('haro'))).toMatchObject({ kind: 'view', center: [-2.848, 42.58], zoom: 13.2 });
   });
 
   it('gives every step of both stories a camera', () => {

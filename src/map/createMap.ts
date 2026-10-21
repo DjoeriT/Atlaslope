@@ -23,6 +23,7 @@ import { addBaseMap, applyBaseMap } from './osmBase';
 import { SELECTED, buildStyle, esriTemplate } from './style';
 import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
+import { loadJson } from './dataFile';
 import { cameraEase, flightMs, type Cam } from './flight';
 import { motionScale } from '../app/motion';
 
@@ -59,13 +60,13 @@ export interface MapEvents {
 }
 
 const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
-const asCollection = (u: string): Promise<Collection> => fetch(u).then((r) => { if (!r.ok) throw new Error(`${u}: ${r.status}`); return r.json(); });
+const asCollection = (u: string): Promise<Collection> => loadJson<Collection>(u);
 
 /** The tilt the map opens with, and goes back to on "Reset view". */
 const START_PITCH = 45;
 
 
-export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null): MapController {
+export function createMap(container: HTMLElement, menu: MenuState, events: MapEvents, restored?: View | null, reliefFrom?: number): MapController {
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
   const tiles = tilesEnabled();
   const hasImagery = tiles && !!esriKey;
@@ -74,7 +75,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   if (tiles) registerGlyphs(ROOT);
   const map = new maplibregl.Map({
     container,
-    style: buildStyle({ esriKey, tiles, menu }),
+    style: buildStyle({ esriKey, tiles, menu, reliefFrom }),
     ...(restored ? { center: [restored.lng, restored.lat] as [number, number], zoom: restored.zoom, bearing: restored.bearing } : { bounds: SPAIN_BOUNDS, fitBoundsOptions: { padding: 40 } }),
     pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
