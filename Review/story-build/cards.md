@@ -8,8 +8,8 @@ Branch `claude/story-guide-mock`. One builder at a time. Reports in this folder.
 |---|---|---|---|---|
 | 1 | Data: rivers, names, photos, SOURCES | Sonnet | 120K | done, 57K |
 | 2 | Story format, loader, checks, guides.md | Sonnet | 100K | done, 69K |
-| 3 | Story view on the app map, button C | Opus | 250K | running |
-| 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | ready |
+| 3 | Story view on the app map, button C | Opus | 250K | done, 158K (one resume) |
+| 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | running |
 | 5 | Listing page and home count | Sonnet | 100K | ready |
 | 6 | Unit tests, one Playwright spec (fixtures) | Sonnet | 80K | ready |
 | 7 | ReviewBot design + Opus diff | Sonnet/Opus | 50K + 100K | after 6 |
@@ -47,7 +47,9 @@ Rivers and names from `data/story/` (widths by zoom, main rivers labelled along 
 the stop, the app's own glyphs in `public/glyphs/`), Köppen at 36% with a one-line legend (colours from `src/map/climate.ts`), IGME
 MAGNA 50 WMS layer 0 at 55%, tileSize 512, minzoom 10, only at steps with `geology`; light tint over 30% slope (see mock `tint.py`);
 fact markers (champagne dot, black ring; click/Enter/Space opens a black card with the sentence and source; Escape returns focus).
-May edit: `src/story/`.
+Also: on phone the stop dot sits under the credit bar (shot `shots/story-rioja-haro-phone.png`): pad the camera by the bars' heights.
+Shots after: Rioja soils (geology on), Rioja climate (Köppen), Priorat Siurana, phone climate, into `Review/story-build/shots/`.
+May edit: `src/story/`, `data/story/photo-focus.json`, `tests/unit/story-*.test.ts`.
 
 ## Card 5: listing page and home count
 `read-with-the-map/` page (built like `guides/`, one row per story guide with its photo and lede line), linked from the home
