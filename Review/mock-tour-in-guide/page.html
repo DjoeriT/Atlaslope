@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Map tour inside the guide: mock round 1</title>
+<style>
+:root{--ink:#1A1714;--ink2:#46403A;--gold:#7D6540;--line:#E8E3D9;--band:#141414;--foil:#E9D8B4}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 'IBM Plex Sans',system-ui,sans-serif;color:var(--ink);background:#fff}
+header.top{background:var(--band);color:var(--foil);border-bottom:1px solid var(--foil);padding:.9rem 1.5rem;position:sticky;top:0;z-index:5;display:flex;gap:1.5rem;align-items:baseline;flex-wrap:wrap}
+header.top b{font:500 1.4rem Georgia,serif}
+header.top a{color:var(--foil);font-size:.9rem}
+main{max-width:1480px;margin:0 auto;padding:1.5rem}
+h1{font:500 2.2rem/1.1 Georgia,serif;margin:.5rem 0}
+h2{font:500 1.6rem/1.2 Georgia,serif;margin:3rem 0 .4rem;padding-top:1rem;border-top:1px solid var(--line)}
+h3{font:600 1rem 'IBM Plex Sans',sans-serif;margin:0 0 .2rem}
+p{max-width:62rem;margin:.4rem 0}
+.rec{background:#F7F5F0;border-left:4px solid var(--foil);padding:.8rem 1rem;margin:1rem 0;max-width:62rem;border-radius:6px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem 1.5rem;margin-top:1rem}
+.cell h3 span{color:var(--gold);font-weight:500}
+.cell p{font-size:.9rem;color:var(--ink2)}
+.dev{position:relative;border:1px solid #D8CFBF;border-radius:6px;overflow:hidden;background:#fff;margin-top:.5rem}
+.dev iframe{border:0;display:block;transform-origin:0 0}
+.phones{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;margin-top:1rem}
+.phones .cell{flex:none}
+.phones .dev{width:392px}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;background:var(--band);color:var(--foil);padding:.1rem .5rem;border-radius:6px;margin-left:.4rem}
+.full .dev{margin-bottom:1.5rem}
+@media (max-width:1000px){.grid{grid-template-columns:1fr}}
+body.solo header.top,body.solo .intro,body.solo h2,body.solo .cell>h3,body.solo .cell>p,body.solo footer{display:none}
+body.solo main{padding:0;max-width:none}
+body.solo .grid,body.solo .phones,body.solo .full{display:block;margin:0}body.solo .cell{width:auto}body.solo .phones .dev{width:auto}
+body.solo .dev{border:0;border-radius:0;margin:0}
+</style></head>
+<body>
+<header class="top"><b>AtlaSlope · mock</b><a href="#s1">1 Button</a><a href="#s2">2 Desktop layout</a><a href="#s3">3 Phone</a><a href="#s4">4 Guides page</a><a href="#facts">Fact or design</a></header>
+<main>
+<div class="intro">
+<h1>The map tour inside the Rioja guide</h1>
+<p>Mock round 1, 21 Oct 2026. The guide text, charts, fact panels and photos are the real Rioja guide page from the built app. The map, the buttons and the Guides card line are design proposals. Every frame is live: tap the Map tour band in any frame of section 1, scroll in the frames of section 2, tap the filter link in section 4.</p>
+<div class="rec"><b>Recommended: B3.</b> A black band under the lede with a live satellite still of the first stop that drifts slowly. It moves, so it reads as a doorway, but it keeps the lede and the first section in view. B4 pushes the guide down by a hero; B2 is the same band without the motion; B1 is what exists now and is easy to miss.</div>
+</div>
+
+<h2 id="s1">1 The "Map tour" button on the guide page</h2>
+<p>Each frame is the top of the real guide page, 1400 px wide, before tapping. Tapping any of them opens layout A (section 2). The camera drift in B3 and B4 and the pulse on the B4 button stop when the reader's system asks for reduced motion.</p>
+<div class="grid" id="g1"></div>
+
+<h2 id="s2">2 Layout A on desktop, after tapping (1400 px)</h2>
+<p>The guide column keeps every section, chart and panel. The map is sticky on the right and flies as the reader reaches each section. The main top bar with search stays on top and has no "Map tours" link. The map caption names the stop (Stop n of 9) and has a "Hide map" link.</p>
+<div class="full" id="g2"></div>
+
+<h2 id="s3">3 Layout A on a phone (390 px)</h2>
+<p>A map strip of 240 px sits under the top bar and does not scroll; the guide scrolls below it. The strip is 240 of 844 px, about 28% of the screen.</p>
+<div class="phones" id="g3"></div>
+
+<h2 id="s4">4 The Guides page: "Map tour" line and filter link</h2>
+<p>Cards of guides with a tour (Rioja, Priorat) get a plain "Map tour" line under the reading time. A link above the region list shows only those. The tour guides are two today [V: content/stories has rioja and priorat].</p>
+<div class="grid" id="g4"></div>
+<div class="phones" id="g4p"></div>
+
+<h2 id="facts">Fact or design choice</h2>
+<p>See README.md in Review/mock-tour-in-guide/. Not shown on this page: rivers and place names on the map (the earlier mock had them from a local data folder), the slope tint, the mini photo that goes with each stop, and the Study handoff from the tour. Zone cards in the climate section fly the map to that zone.</p>
+</main>
+<script>
+const S=/*SHARED*/null;
+const SOLO=new URLSearchParams(location.search).get('solo');
+if(SOLO)document.body.classList.add('solo');
+
+/* ---------- the code that runs inside each frame ---------- */
+const FRAME_JS=`
+const D=DATA, S0=STATE, RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const ESRI='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+const PNOA='https://www.ign.es/wmts/pnoa-ma?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=OI.OrthoimageCoverage&STYLE=default&FORMAT=image/jpeg&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}';
+const DEM='https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
+const GEO='https://mapas.igme.es/gis/services/Cartografia_Geologica/IGME_MAGNA_50/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetMap&layers=0&styles=&format=image/png&transparent=true&crs=EPSG:3857&width=512&height=512&bbox={bbox-epsg-3857}';
+const STOPCAM={}; D.stops.forEach(s=>STOPCAM[s.id]=s.camera);
+function mk(el,interactive){
+  const m=new maplibregl.Map({container:el,interactive,attributionControl:false,fadeDuration:0,center:[-2.3,42.37],zoom:8.6,pitch:55,bearing:-65,
+    style:{version:8,sources:{
+      esri:{type:'raster',tiles:[ESRI],tileSize:256,maxzoom:18},
+      pnoa:{type:'raster',tiles:[PNOA],tileSize:256,minzoom:8,maxzoom:19,bounds:[-9.5,35.8,4.4,43.9]},
+      dem:{type:'raster-dem',tiles:[DEM],tileSize:256,maxzoom:14,encoding:'terrarium'},
+      rioja:{type:'geojson',data:D.rioja},zones:{type:'geojson',data:D.zones},koppen:{type:'geojson',data:D.koppen},
+      geo:{type:'raster',tiles:[GEO],tileSize:512,minzoom:10,maxzoom:14,bounds:[-3.4,40.9,1.1,42.9]}},
+    layers:[{id:'esri',type:'raster',source:'esri'},{id:'pnoa',type:'raster',source:'pnoa'},
+      {id:'koppen',type:'fill',source:'koppen',layout:{visibility:'none'},paint:{'fill-color':['get','color'],'fill-opacity':.32,'fill-antialias':false}},
+      {id:'geo',type:'raster',source:'geo',layout:{visibility:'none'},paint:{'raster-opacity':.7}},
+      {id:'zones',type:'line',source:'zones',paint:{'line-color':'#E9D8B4','line-width':1.2,'line-opacity':.8}},
+      {id:'rioja',type:'line',source:'rioja',paint:{'line-color':'#E9D8B4','line-width':2.6}}]}});
+  m.on('style.load',()=>m.setTerrain({source:'dem',exaggeration:1.5}));
+  return m;
+}
+function camFor(map,key){
+  if(key==='intro')return D.intro;
+  if(key==='rioja'){const c=map.cameraForBounds(D.bounds.rioja,{padding:28});return {center:c.center,zoom:c.zoom,pitch:0,bearing:0};}
+  const s=STOPCAM[key];
+  if(s.place==='rioja'){const c=map.cameraForBounds(D.bounds.rioja,{padding:28});return {center:c.center,zoom:c.zoom,pitch:0,bearing:0};}
+  if(s.center)return s;
+  if(key==='haro')return {center:[-2.851,42.585],zoom:s.zoom,pitch:s.pitch,bearing:s.bearing};
+  const zone={soils:'rioja-alavesa','z-rioja-alta':'rioja-alta','z-rioja-alavesa':'rioja-alavesa','z-rioja-oriental':'rioja-oriental'}[key];
+  const c=map.cameraForBounds(D.bounds[zone],{padding:30});
+  return {center:c.center,zoom:c.zoom+(s.zoomShift||0),pitch:s.pitch,bearing:s.bearing};
+}
+const CAP={intro:['Rioja in northern Spain',0],valley:['Haro to Alfaro, the whole valley',1],sierra:['Sierra de Cantabria',2],climate:['Rioja’s three zones',3],
+  'z-rioja-alta':['Rioja Alta',4],'z-rioja-alavesa':['Rioja Alavesa',5],'z-rioja-oriental':['Rioja Oriental',6],soils:['Clay-limestone terraces, Rioja Alavesa',7],
+  barrel:['Rioja',8],haro:['Haro’s station quarter',9],rioja:['Rioja',0]};
+const KOP=['climate','z-rioja-alta','z-rioja-alavesa','z-rioja-oriental'];
+let big=null, cur='intro', follow=true;
+function go(key,fast){
+  cur=key; if(!big)return;
+  const c=camFor(big,key);
+  fast?big.jumpTo(c):big.flyTo({...c,duration:2200,essential:true});
+  big.setLayoutProperty('koppen','visibility',KOP.includes(key)?'visible':'none');
+  big.setLayoutProperty('geo','visibility',key==='soils'?'visible':'none');
+  const [t,n]=CAP[key];
+  document.getElementById('cap').innerHTML=(n?'<span>Stop '+n+' of 9</span>':'<span>Map tour</span>')+'<b>'+t+'</b><a href="#" id="hide">Hide map</a>';
+  document.getElementById('hide').onclick=e=>{e.preventDefault();document.body.classList.remove('tour');};
+  const lg=document.getElementById('lg');
+  if(KOP.includes(key)){lg.hidden=false;lg.innerHTML=D.legend.map(l=>'<span><i style="background:'+l[1]+'"></i>'+l[0]+'</span>').join('');}
+  else if(key==='soils'){lg.hidden=false;lg.textContent='Colours: rock types, IGME MAGNA 50';}
+  else lg.hidden=true;
+}
+function tap(){
+  document.body.classList.add('tour');
+  if(!big){big=mk(document.getElementById('tmap'),true);big.addControl(new maplibregl.NavigationControl({showCompass:true}),'top-right');}
+  requestAnimationFrame(()=>{big.resize();go(cur,!big.loaded());});
+}
+const SEC={place:'valley',weather:'climate',ground:'soils',rules:'haro',taste:'rioja',short:'rioja'};
+const FLY=[['Sierra','sierra'],['Haro to Alfaro','valley'],['Clay-limestone','soils'],['station','haro'],['Rioja Alta','z-rioja-alta'],['Rioja Alavesa','z-rioja-alavesa'],['Rioja Oriental','z-rioja-oriental']];
+const gcol=document.getElementById('gcol');
+if(gcol){
+  document.querySelectorAll('.fly').forEach(a=>a.addEventListener('click',e=>{
+    const f=FLY.find(x=>a.textContent.includes(x[0]));
+    if(f){e.preventDefault();if(!document.body.classList.contains('tour'))tap();go(f[1]);}
+  }));
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting&&document.body.classList.contains('tour')){
+    const id=en.target.id; go(id==='lede'?'intro':SEC[id]);}})},{root:gcol,rootMargin:'-25% 0px -65% 0px'});
+  ['lede','place','weather','ground','rules','taste','short'].forEach(id=>{const e=id==='lede'?document.querySelector('.pg-spine'):document.getElementById(id);if(e){if(id==='lede')e.id='lede';io.observe(e);}});
+  document.querySelectorAll('.tb').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();tap();}));
+  document.querySelectorAll('a.story-open').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();tap();}));
+  const st=document.getElementById('still');
+  if(st){
+    const m=mk(st,false), base=STOPCAM.valley; let t0=performance.now();
+    m.once('load',()=>{ if(S0.drift&&!RM){(function f(t){m.jumpTo({bearing:base.bearing+16*Math.sin((t-t0)/9000),center:[base.center[0]+.05*Math.sin((t-t0)/13000),base.center[1]]});requestAnimationFrame(f);})(t0);} });
+    if(S0.variant==='B4')m.setZoom(8.2);
+  }
+  function scrollTo(){ if(S0.sel){let e=null;if(S0.sel.startsWith('text:')){e=[...document.querySelectorAll('h4,h3')].find(h=>h.textContent.trim()===S0.sel.slice(5));}else e=document.querySelector(S0.sel);
+      if(e){gcol.style.scrollBehavior='auto';gcol.scrollTop=e.getBoundingClientRect().top-gcol.getBoundingClientRect().top+gcol.scrollTop-S0.off;}} }
+  if(S0.tapped){tap();setTimeout(()=>{scrollTo();if(S0.sec)go(S0.sec);},700);}
+  else setTimeout(scrollTo,100);
+}else{
+  const tf=document.getElementById('tf');
+  if(S0.card)setTimeout(()=>{const e=document.querySelector('.region .has-tour');scrollTo(0,e.getBoundingClientRect().top+scrollY-S0.card);},400);
+  tf.onclick=e=>{e.preventDefault();const on=document.body.classList.toggle('filtered');tf.textContent=on?'Show all guides':'Guides with a map tour (2)';};
+  if(S0.filter)tf.click();
+}
+`;
+
+const FRAME_CSS=`
+html,body{margin:0;height:100%;overflow:hidden;background:#fff}
+body{font-family:'IBM Plex Sans',sans-serif}
+.sitebar{position:relative!important;top:auto!important;flex:none}
+.cols{display:flex;height:calc(100% - var(--bar,56px) - 1px)}
+#gcol{flex:1 1 0;min-width:0;overflow:auto}
+.pg{position:static!important;overflow:visible!important;inset:auto!important;z-index:auto!important;height:auto!important}
+.pg-top,.pg-back,.showmap{display:none!important}
+.pg-jump{position:static!important}
+#mapcol{display:none;position:relative;flex:0 0 46%;background:#141414}
+#tmap{position:absolute;inset:0}
+body.tour #mapcol{display:block}
+body.tour .tb,body.tour .story-open{display:none}
+body.tour .pg-listing{padding-left:2rem;padding-right:2rem}
+body.tour .pg-beat-body.two{grid-template-columns:minmax(0,1fr)!important;gap:1.5rem!important}
+body.tour .pg-mosaic{height:min(22rem,34vw)}
+#cap{position:absolute;left:0;right:0;top:0;display:flex;gap:.8rem;align-items:baseline;background:rgba(20,20,20,.88);color:#E9D8B4;padding:.55rem .9rem;font-size:.85rem;border-bottom:1px solid #E9D8B4;z-index:3;padding-right:60px}
+#cap b{font:500 1.05rem Newsreader,Georgia,serif;flex:1}
+#cap span{color:#C9B48A;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+#cap a{color:#E9D8B4;white-space:nowrap}
+#lg{position:absolute;left:.6rem;bottom:1.7rem;z-index:3;background:rgba(20,20,20,.88);color:#E9D8B4;font-size:.72rem;padding:.4rem .6rem;border-radius:6px;display:flex;flex-wrap:wrap;gap:.2rem .8rem;max-width:calc(100% - 1.2rem)}
+#lg i{display:inline-block;width:.7rem;height:.7rem;border-radius:2px;margin-right:.3rem;vertical-align:-1px}
+#lg[hidden]{display:none}
+#crd{position:absolute;left:.6rem;bottom:.35rem;z-index:3;font-size:.68rem;color:#fff;text-shadow:0 0 3px #000}
+.maplibregl-ctrl-top-right{top:44px}
+.pg-spine{max-width:none!important}.pg-lede{max-width:46rem}
+.tb{display:block;margin:1.25rem 0 .5rem;border-radius:6px;overflow:hidden;background:#141414;color:#E9D8B4;position:relative;cursor:pointer;text-decoration:none}
+.tb .still{position:relative;min-height:170px}
+.tb .txt{padding:1.4rem 1.6rem;display:flex;flex-direction:column;justify-content:center;gap:.5rem}
+.tb .k{letter-spacing:.08em;font-size:.76rem;color:#C9B48A;text-transform:uppercase}
+.tb .t{font:400 1.7rem/1.15 Newsreader,Georgia,serif}
+.tb .s{font-size:.88rem;color:#C9B48A}
+.tb .go{align-self:flex-start;background:#E9D8B4;color:#141414;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;margin-top:.3rem}
+.tb2{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);min-height:190px}
+.tb2 .still,.tb2 .still .maplibregl-map{position:absolute;inset:0;width:auto}
+.tb2 .still{position:relative;min-height:190px}
+.tb2 .still .maplibregl-map{position:absolute}
+.tb4{min-height:380px;display:flex;flex-direction:column;justify-content:flex-end}
+.tb4 .still{position:absolute;inset:0}
+.tb4 .txt{position:relative;background:linear-gradient(rgba(20,20,20,0),rgba(20,20,20,.9) 60%);padding:5rem 2rem 1.8rem}
+.tb4 .t{font-size:2.5rem}
+.tb4 .go{font-size:1.1rem;padding:.9rem 1.8rem;animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(233,216,180,.6)}70%{box-shadow:0 0 0 16px rgba(233,216,180,0)}100%{box-shadow:0 0 0 0 rgba(233,216,180,0)}}
+@media (prefers-reduced-motion:reduce){.tb4 .go{animation:none}}
+.tb:hover .go{background:#fff}
+@media (max-width:700px){
+  .cols{flex-direction:column}
+  #mapcol{order:-1;flex:0 0 240px;width:100%}
+  .tb2{grid-template-columns:1fr;min-height:0}.tb2 .still{height:160px;min-height:160px}
+  .tb4{min-height:340px}.tb4 .t{font-size:1.9rem}.tb4 .txt{padding:4rem 1.2rem 1.4rem}
+  #cap{padding-right:50px;flex-wrap:wrap;gap:.1rem .6rem}
+  #lg{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;bottom:1.3rem;font-size:.66rem;padding:.25rem .5rem}#lg span{flex:none}
+  body.tour .pg-listing{padding-left:1rem;padding-right:1rem}
+}
+.tl{display:block;font-size:.85rem;font-weight:600;color:#1A1714;letter-spacing:.01em;margin-top:.15rem}
+.feat .tl{margin:.4rem 0}
+.tourlink{margin:.2rem 0 1rem;font-size:.95rem}
+.tourlink a{color:#1A1714;font-weight:600;text-underline-offset:3px}
+body.gpage,body.gpage html{overflow:auto!important}
+.filtered .gcard-c:not(.has-tour){display:none}
+.filtered .region:not(:has(.has-tour)){display:none}
+.filtered .region .sat,.filtered .jump,.filtered .feat,.filtered .rowh span{display:none}
+`;
+
+const VARIANT={
+ B1:'',
+ B2:'<a href="#" class="tb tb2"><div class="still" id="still"></div><div class="txt"><span class="k">AtlaSlope map</span><span class="t">Map tour · 9 places to fly to</span><span class="s">4 minutes. The map follows the guide as you read.</span><span class="go">Open the map</span></div></a>',
+ B4:'<a href="#" class="tb tb4"><div class="still" id="still"></div><div class="txt"><span class="k">AtlaSlope map</span><span class="t">Map tour · 9 places to fly to</span><span class="s">4 minutes. Haro, the Sierra, the three zones and the soils, on satellite.</span><span class="go">Fly the valley</span></div></a>'};
+VARIANT.B3=VARIANT.B2;
+
+function docFor(st){
+  const head='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>'+S.fonts+'</style>';
+  if(st.kind==='guides'){
+    return head+'<style>'+S.appcss+S.guidescss+FRAME_CSS+'html{overflow:auto!important;height:auto}body{overflow:auto!important;height:auto}</style></head><body>'+S.sitebar+'<main id="main">'+S.guidesPage+'</main>'
+      +'<script>const DATA='+S.data+';'+FRAME_JS.replace('STATE',JSON.stringify(st))+'<\/script></body></html>';
+  }
+  let g=S.guide;
+  const v=st.variant||'B1';
+  g=g.replace('<!--TOURBTN-->',v==='B1'?'<a class="story-open" href="#"><span class="tx"><span class="t">Map tour</span><span class="s">4 minutes · 9 places to fly to</span></span></a>':VARIANT[v]);
+  return head+'<style>'+S.appcss+S.pagecss+S.mlcss+FRAME_CSS+'</style></head><body>'+S.sitebar
+   +'<div class="cols"><div id="gcol">'+g+'</div><aside id="mapcol"><div id="tmap"></div><div id="cap"></div><div id="lg" hidden></div><div id="crd">Imagery: PNOA © IGN, Esri · Terrain: Mapzen · Geology: IGME</div></aside></div>'
+   +'<script>'+S.mljs.replace(/<\/script/g,'<\\/script')+'<\/script><script>const DATA='+S.data+';'+FRAME_JS.replace('=DATA,','=DATA,').replace('STATE',JSON.stringify(st))+'<\/script></body></html>';
+}
+const FRAMES={};
+function add(into,id,title,note,st,w,h,tag){
+  FRAMES[id]={st,w,h};
+  const c=document.createElement('div');c.className='cell';
+  c.innerHTML='<h3>'+title+(tag?'<span class="tag">'+tag+'</span>':'')+'</h3>'+(note?'<p>'+note+'</p>':'')+'<div class="dev" data-id="'+id+'"></div>';
+  document.getElementById(into).appendChild(c);
+}
+const T=(o)=>Object.assign({kind:'guide'},o);
+add('g1','b1','B1 · The current black button','Today’s button under the lede: a slim black bar. Easy to read past.',T({variant:'B1',sel:'.pg-spine',off:40}),1400,760);
+add('g1','b2','B2 · Black band with a live satellite still','The first stop (the valley, seen from above) as a still, and the line “Map tour · 9 places to fly to”.',T({variant:'B2',sel:'.pg-spine',off:40}),1400,760);
+add('g1','b3','B3 · B2 with a slow camera drift','The still turns a few degrees and back over about a minute. Still when reduced motion is on.',T({variant:'B3',drift:true,sel:'.pg-spine',off:40}),1400,760,'recommended');
+add('g1','b4','B4 · Full-width hero, moving map, pulsing button','Boldest: the hero takes the first screen. The button gently pulses (off under reduced motion).',T({variant:'B4',drift:true,sel:'.pg-spine',off:40}),1400,760);
+add('g2','a1','A1 · Lede: the whole region','Tapped. The map starts on Rioja in northern Spain. Guide column left, sticky map right.',T({variant:'B3',tapped:true,sel:'.pg-spine',off:20,sec:'intro'}),1400,820);
+add('g2','a2','A2 · The weather: climate chart beside the climate map','The map shows the three zones and the Köppen climate colours. The climate chart sits in the guide column.',T({variant:'B3',tapped:true,sel:'text:Measured climate',off:330,sec:'climate'}),1400,820);
+add('g2','a3','A3 · The ground: soils with geology','Geology colours appear for this section only; the camera tilts over Rioja Alavesa.',T({variant:'B3',tapped:true,sel:'#ground',off:10,sec:'soils'}),1400,820);
+add('g3','p1','Phone · before tapping (B3)','',T({variant:'B3',drift:true,sel:'.pg-spine',off:10}),390,760,'recommended');
+add('g3','p2','Phone · the weather, with the map strip on top','Strip height 240 px.',T({variant:'B3',tapped:true,sel:'text:Measured climate',off:20,sec:'climate'}),390,844);
+add('g3','p3','Phone · the ground','Same strip, geology on.',T({variant:'B3',tapped:true,sel:'#ground',off:10,sec:'soils'}),390,844);
+add('g4','gd1','Guides page · desktop','',{kind:'guides',card:150},1400,760);
+add('g4','gd2','Guides page · desktop, filter on','After tapping “Guides with a map tour (2)”.',{kind:'guides',filter:true,card:150},1400,1100);
+add('g4p','gp1','Guides page · phone','',{kind:'guides',card:120},390,844);
+add('g4p','gp2','Guides page · phone, filter on','',{kind:'guides',filter:true,card:120},390,844);
+
+const PH=Object.keys(FRAMES);
+function mount(el){
+  const f=FRAMES[el.dataset.id];
+  const fr=document.createElement('iframe');fr.width=f.w;fr.height=f.h;fr.title=el.dataset.id;
+  fr.srcdoc=docFor(f.st);el.appendChild(fr);
+  fit(el);
+}
+function fit(el){
+  const f=FRAMES[el.dataset.id],fr=el.querySelector('iframe');
+  const s=SOLO?1:Math.min(1,el.clientWidth/f.w);
+  if(fr){fr.style.transform='scale('+s+')';}
+  el.style.height=(f.h*s)+'px';
+}
+const devs=[...document.querySelectorAll('.dev')];
+devs.forEach(fit);
+addEventListener('resize',()=>devs.forEach(fit));
+if(SOLO){devs.forEach(d=>{if(d.dataset.id!==SOLO)d.closest('.cell').style.display='none';else mount(d);});
+  document.querySelectorAll('h2,p,.rec').forEach(e=>e.style.display='none');}
+else{
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&!en.target.querySelector('iframe')){mount(en.target);}}),{rootMargin:'300px'});
+  devs.forEach(d=>io.observe(d));
+}
+</script>
+</body></html>
