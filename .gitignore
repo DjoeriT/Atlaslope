@@ -3,7 +3,7 @@
 !.env.example
 
 # Dependencies and build output
-node_modules/
+node_modules
 dist/
 playwright-report/
 test-results/
