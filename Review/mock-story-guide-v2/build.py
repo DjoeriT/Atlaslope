@@ -157,7 +157,7 @@ def build_rioja():
     # 1 Valley: looking up the valley from Alfaro towards Haro; the Sierra seen from the north as a wall.
     c = ch['valley']; f0, f1 = c['fly']
     V['valley'] = fly_view(f0, 'rioja', bounds=None, center=[-2.30, 42.37], zoom=8.6, pitch=55, bearing=-65, dot=None, markers=[['Haro', HARO], ['Alfaro', ALFARO]])
-    V['sierra'] = fly_view(f1, 'rioja', center=[-2.62, 42.60], zoom=10.7, pitch=72, bearing=180)
+    V['sierra'] = fly_view(f1, 'rioja', center=[-2.62, 42.60], zoom=11.7, pitch=70, bearing=180)
     S.append(('valley', 1, chapter_head('rioja', c, 1) + cite_html(c['cite']) + stop_html(f0)))
     S.append(('sierra', 1, stop_html(f1, True)))
     # 2 Climate: west to east, flat and north-up so the west-east change reads; then one tilted view per zone.
@@ -203,7 +203,7 @@ def build_priorat():
     # 1 Bowl: from the south, Montsant closes the north as a wall; along the Siurana depression; Scala Dei at the foot of Montsant.
     c = ch['bowl']; f0, f1, f2 = c['fly']
     V['montsant'] = fly_view(f0, 'priorat', center=[0.80, 41.235], zoom=10.4, pitch=68, bearing=0)
-    V['siurana'] = fly_view(f1, 'priorat', center=[0.786, 41.20], zoom=10.7, pitch=62, bearing=45)
+    V['siurana'] = fly_view(f1, 'priorat', center=[0.7863, 41.1994], zoom=10.7, pitch=55, bearing=45)
     V['scala'] = fly_view(f2, 'priorat', center=[0.8104, 41.2565], zoom=12.4, pitch=64, bearing=0)
     S.append(('montsant', 1, chapter_head('priorat', c, 1) + cite_html(c['cite']) + stop_html(f0)))
     S.append(('siurana', 1, stop_html(f1, True)))
@@ -265,7 +265,7 @@ def options_html(gid):
               f'<span class="s">{mins} minutes · {n} places to fly to</span></a>'),
         'D': (f'{sec}<a class="opt-d" href="#story" {go}><img src="{THUMB[gid]}" alt="Satellite view of {nm}" width="96" height="96" loading="lazy">'
               f'<span class="body"><span class="t">Read with the map</span>'
-              f'<span class="s">Fly over {nm} as you read. {n} places, {mins} minutes.</span></span><span class="go">Start</span></a>'),
+              f'<span class="s">Fly over {nm} as you read. {n} places, {mins} minutes.</span></span></a>'),
     }
 
 
@@ -278,7 +278,7 @@ cards = ''
 for k in 'ABCD':
     rec = '<span class="rec">Recommended</span>' if k == RECOMMENDED else ''
     inner = ''.join(f'<div class="opt-body" data-guide="{g}"{" hidden" if g != "rioja" else ""}>{opts[g][k]}</div>' for g in GUIDES)
-    cards += (f'<article class="opt{" is-rec" if k == RECOMMENDED else ""}" aria-labelledby="opt-{k}"><header><h3 id="opt-{k}">'
+    cards += (f'<article class="opt opt-{k}{" is-rec" if k == RECOMMENDED else ""}" aria-labelledby="opt-{k}"><header><h3 id="opt-{k}">'
               f'<span class="k">{k}</span>{OPTION_NAMES[k]}</h3>{rec}</header>{inner}</article>')
 
 # ---------- assets ----------
@@ -326,7 +326,7 @@ html = f'''<!doctype html>
     <p class="chip"></p>
     <div class="exag" role="group" aria-label="Terrain height"><span>Terrain height</span><button type="button" data-k="1.5" aria-pressed="true">×1.5</button><button type="button" data-k="1.3" aria-pressed="false">×1.3</button></div>
     <button class="recentre" type="button" hidden>Back to the story view</button>
-    <p class="mapcredit"><i class="sw" aria-hidden="true"></i>Tint: slopes over 30% · terrain height ×<span class="kx">1.5</span> · Imagery PNOA © IGN, Esri · Terrain Mapzen</p>
+    <p class="mapcredit"><i class="sw" aria-hidden="true"></i><span class="more">Tint: slopes over 30% · terrain height </span><span class="short">Slopes &gt;30% · height </span>×<span class="kx">1.5</span><span class="more"> · Imagery PNOA © IGN, Esri · Terrain Mapzen</span><span class="short"> · PNOA © IGN, Esri, Mapzen</span></p>
   </div>
 {texts}
 </main>

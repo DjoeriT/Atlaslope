@@ -41,7 +41,7 @@
     scrollZoom: false, keyboard: false, dragRotate: true, touchPitch: false, attributionControl: false, maxPitch: 80,
   });
   window.__map = map;
-  map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: true }), 'top-right');
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: true }), 'top-right');
 
   let ready = false, current = null, userMoved = false, markers = [];
   const el = (cls, text) => { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; return d; };
