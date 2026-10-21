@@ -455,6 +455,13 @@ export const strings = {
     },
     photos: 'Photos:',
     resized: 'cropped and resized',
+    // The one-line legend on the map: the climate classes (names from the app's climate view, short forms for a phone) or the rock colours.
+    legend: {
+      climate: 'Climate:',
+      geology: 'Colours: rock types, IGME MAGNA 50',
+      short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
+    },
+    factLabel: (where: string) => `Fact: ${where}`,
     // The credit line under the map names what is on it now; short forms on a phone keep it to one line.
     credit: {
       terrain: (k: string) => `Terrain ×${k}`,

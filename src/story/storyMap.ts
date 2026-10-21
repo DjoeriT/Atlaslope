@@ -7,6 +7,7 @@ import { boundsOf } from '../map/focus';
 import type { Collection } from '../map/boundaries';
 import { flyLegs, type Cam, type Target } from './camera';
 import type { LngLat, Story, StoryStep } from './format';
+import { createFacts, type FactView } from './factMarkers';
 import { storyLayers } from './layers';
 import { faded, outlined, outside, type Credited } from './view';
 
@@ -22,6 +23,8 @@ export interface StopView {
   /** A dot at the stop's point (fly stops with a point, unless the step says dot: false). */
   dot?: LngLat;
   markers: Array<{ at: LngLat; label: string }>;
+  /** Fact markers: a dot that opens a card with a sentence of the guide and its source. */
+  facts: FactView[];
 }
 
 export interface StoryMapEvents {
@@ -57,6 +60,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   map.on('terrain', holdHeight);
 
   const layers = storyLayers();
+  const facts = createFacts(map);
   const marks: maplibregl.Marker[] = [];
   let loaded = false;
   let shapes: { places: Collection; zones: Collection } | null = null;
@@ -111,7 +115,10 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   function padding() {
     const r = container.getBoundingClientRect();
     const p = Math.round(Math.min(r.width, r.height) * 0.1);
-    return { top: p + 40, bottom: p + 30, left: p, right: p + 30 };
+    // The credit bar (and on a phone the legend line above it) covers the foot of the map: keep the stop's dot clear of them.
+    const bar = (cls: string) => { const e = container.parentElement?.querySelector<HTMLElement>(cls); return e && !e.hidden ? e.offsetHeight : 0; };
+    const foot = bar('.story-credit') + bar('.story-legend');
+    return { top: p + 40, bottom: p + Math.max(30, foot + 12), left: p, right: p + 30 };
   }
 
   /** The target as a camera; null for a place's bounds before the shapes are in. */
@@ -134,9 +141,9 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     const el = (cls: string, text?: string) => { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; return d; };
     for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label) }).setLngLat(m.at).addTo(map));
     if (v.dot) marks.push(new maplibregl.Marker({ element: el('story-dot') }).setLngLat(v.dot).addTo(map));
-    events.onLayers(layers.show(map, v.step), imagery);
-
+    facts.show(v.facts);
     const cam = camOf(v.target);
+    events.onLayers(layers.show(map, v, cam), imagery);
     if (!cam) return; // framed once the shapes arrive
     framed = true;
     const token = ++flight;
@@ -158,7 +165,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   return {
     map,
     show,
-    remove() { marks.forEach((m) => m.remove()); layers.remove(); ctl.remove(); },
+    remove() { marks.forEach((m) => m.remove()); facts.remove(); layers.remove(); ctl.remove(); },
   };
 }
 
@@ -169,5 +176,9 @@ export function stopView(step: StoryStep, target: Target, stopPoint: LngLat | un
     const label = m.label ?? (typeof m.at === 'string' ? m.at : '');
     return at ? [{ at, label }] : [];
   });
-  return { step, target, markers, dot: step.dot === false ? undefined : stopPoint };
+  const facts = (step.facts ?? []).flatMap((f) => {
+    const at = typeof f.at === 'string' ? named(f.at) : f.at;
+    return at ? [{ at, label: f.label, text: f.text, cite: f.cite }] : [];
+  });
+  return { step, target, markers, facts, dot: step.dot === false ? undefined : stopPoint };
 }
