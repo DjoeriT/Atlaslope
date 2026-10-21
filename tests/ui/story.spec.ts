@@ -54,7 +54,7 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await scrollToLine(page, '[data-fly="soils.0"]');
   await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
   const key = page.locator('.pg-tourmap .story-legend');
-  await expect(key).toContainText('Alluvial deposits and floodplain');
+  await expect(key).toContainText('Alluvium and floodplain');
   await expect(key).toContainText('Steeper than 30%');
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
 });

@@ -9,7 +9,7 @@ Hard-reload first (Cmd+Shift+R).
 1. Open the Rioja guide. At the top, next to "Show map", a "Map tour" button jumps to the black tour band.
 2. Open the map and scroll slowly. The bar counts Stop 1 of 9, then 2, 3 and on, in order. No stop is skipped.
 3. Stop 1 shows the whole valley, Haro to Alfaro.
-4. At the soils stop, the map shows rock colours with a key "Rock beneath the soil". The names are the geological survey's (IGME), in English.
+4. At the soils stop, the map shows rock colours with a key "Rock beneath the soil". The names come from the Spanish geological survey, in English.
 5. At a steep stop, a small key explains the slope tint. The climate colours are lighter, so the land shows through.
 6. Place names sit beside the pins, never under them.
 7. On a phone the map strip is taller (about 300 px). The credit is behind the "i" button. No "Show map" button floats over the page while the map is open.

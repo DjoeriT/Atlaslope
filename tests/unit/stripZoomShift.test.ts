@@ -9,7 +9,7 @@ describe('stripZoomShift', () => {
 
 describe('rockKey', () => {
   it("names the rock types the soils stops describe, in IGME's own unit names", () => {
-    expect(rockKey('rioja').map((r) => r.label)).toEqual(['Sands, calcareous sandstones and ochre clays (Haro facies)', 'Siltstones and red clays', 'Alluvial deposits and floodplain']);
+    expect(rockKey('rioja').map((r) => r.label)).toEqual(['Sands, calcareous sandstones and ochre clays (Haro facies)', 'Siltstones and red clays', 'Alluvium and floodplain']);
     expect(rockKey('priorat').map((r) => r.label)).toEqual(['Hornfelsed slates']);
     expect(rockKey('nowhere')).toEqual([]);
   });
