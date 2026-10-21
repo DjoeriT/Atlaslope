@@ -487,6 +487,8 @@ DATA = json.dumps({'views': VIEWS, 'focus': FOCUS, 'labels': LABELS, 'chapters':
 used = sorted(set(BUILT['rioja'][2]))
 
 page = (HERE / 'guide-page-rioja.html').read_text()
+# The capture points its photos at the local preview server; inline them so the page stands alone.
+page = re.sub(r'http://localhost:\d+/(photos/\d+/[\w.-]+\.webp)', lambda m: b64(ROOT / 'public' / m.group(1), 'image/webp'), page)
 # controls that cannot work standalone: the "All 5 photos" button (opens the app's lightbox). The mosaic photo buttons stay but do nothing.
 page = re.sub(r'<button[^>]*class="all"[^>]*>.*?</button>', '', page, count=1, flags=re.S)
 def after_para(chapter, n, cards):
