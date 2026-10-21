@@ -16,9 +16,6 @@ const places = new Set(json<{ places: Array<{ id: string }> }>('data/places.json
 const LAYERS = ['koppen', 'geology', 'zonelabels'];
 const KINDS = ['median', 'top', 'low', 'steep'];
 
-// Photos the stories show that have no checked crop yet (open in the step 2 report, 21 Oct 2026). A new photo must not join this list.
-const CROP_NOT_YET_CHECKED = ['rioja-2', 'rioja-3', 'rioja-alavesa-2', 'catalunya-2', 'priorat-1'];
-
 // Verbs that link a tightened fact ("a valley at most 40 km wide" becomes "The valley is never more than 40 km wide").
 const LINKING = ['is', 'are'];
 const words =(s: string): string[] => s.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
@@ -96,7 +93,7 @@ describe('story files', () => {
 
       it('has a checked crop for every photo (square-card crops or the story focus file)', () => {
         const missing = shownPhotos.filter((p) => !(p in squareCrops) && !(p in storyFocus));
-        expect(missing.filter((p) => !CROP_NOT_YET_CHECKED.includes(p)), 'run Tools/guides/crop_sheet.mjs and add the crop').toEqual([]);
+        expect(missing, 'run Tools/guides/crop_sheet.mjs and add the crop').toEqual([]);
       });
 
       it('measures only places data/place-measures.json has', () => {
