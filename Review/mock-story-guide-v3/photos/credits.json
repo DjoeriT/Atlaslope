@@ -1,0 +1,52 @@
+{
+ "sierra": {
+  "title": "File:Sierra de Cantabria.jpg",
+  "artist": "Deivid",
+  "licence": "Public domain",
+  "licenceUrl": "",
+  "page": "https://commons.wikimedia.org/wiki/File:Sierra_de_Cantabria.jpg",
+  "alt": "The limestone crests of the Sierra de Cantabria seen across the vineyard terraces",
+  "focus": "50% 40%",
+  "crop": "3:2 card frame (CSS object-fit cover); no faces, glasses or bottles; subject kept"
+ },
+ "haro": {
+  "title": "File:Estación de Ferrocarril de Haro - La Rioja.jpg",
+  "artist": "BigSus",
+  "licence": "CC BY 2.5",
+  "licenceUrl": "https://creativecommons.org/licenses/by/2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_de_Ferrocarril_de_Haro_-_La_Rioja.jpg",
+  "alt": "Haro railway station, a red-brick building beside the tracks",
+  "focus": "50% 45%",
+  "crop": "3:2 card frame (CSS object-fit cover); no faces, glasses or bottles; subject kept"
+ },
+ "siurana": {
+  "title": "File:Siurana - Pantà i església.JPG",
+  "artist": "Lohen11 - Josep Renalias",
+  "licence": "CC BY-SA 3.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Siurana_-_Pant%C3%A0_i_esgl%C3%A9sia.JPG",
+  "alt": "The church of Siurana on its cliff above the Siurana reservoir",
+  "focus": "50% 45%",
+  "crop": "3:2 card frame (CSS object-fit cover); no faces, glasses or bottles; subject kept"
+ },
+ "porrera": {
+  "title": "File:Vinyes del Priorat, Porrera.jpg",
+  "artist": "Àngela Llop",
+  "licence": "CC BY-SA 4.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Vinyes_del_Priorat,_Porrera.jpg",
+  "alt": "Vines on steep terraced slopes at Porrera, Priorat",
+  "focus": "50% 50%",
+  "crop": "3:2 card frame (CSS object-fit cover); no faces, glasses or bottles; subject kept"
+ },
+ "scala": {
+  "title": "File:Cartoixa d'Escaladei - Vista.jpg",
+  "artist": "joan ggk",
+  "licence": "CC BY 2.0",
+  "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cartoixa_d%27Escaladei_-_Vista.jpg",
+  "alt": "The village at Scala Dei below the cliffs of the Montsant",
+  "focus": "50% 40%",
+  "crop": "3:2 card frame (CSS object-fit cover); no faces, glasses or bottles; subject kept"
+ }
+}

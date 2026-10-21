@@ -202,7 +202,7 @@ LOC = {'ox': LX0, 'oy': LY0, 's': LOC_S, 'cosk': COSK, 'w': 100.0, 'h': round((L
 
 
 # ---------- sources and photos ----------
-def cite_html(cites):
+def src_inner(cites):
     by = {}
     for c in cites:
         sid, page = c.split(':p')
@@ -211,22 +211,55 @@ def cite_html(cites):
     for sid, pages in by.items():
         s = sources[sid]
         parts.append(f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}, p. {", ".join(pages)}</a>')
-    return '<p class="src">Source: ' + '; '.join(parts) + '</p>'
+    return 'Source: ' + '; '.join(parts)
+
+
+def cite_html(cites):
+    return '<p class="src">' + src_inner(cites) + '</p>'
+
+
+# photos: the app's own (data/photos.json, public/photos/800) plus the ones found for this mock (photos/credits.json)
+NEWPH = json.loads((HERE / 'photos/credits.json').read_text())
+
+
+def PH(pid):
+    return NEWPH.get(pid) or photos[pid]
 
 
 def photo(pid, cls):
-    p = photos[pid]
-    return f'<img class="{cls}" src="{b64(ROOT / f"public/photos/800/{pid}.webp", "image/webp")}" alt="{esc(p["alt"])}" loading="lazy" decoding="async">'
+    p = PH(pid)
+    if pid in NEWPH:
+        src = b64(HERE / f'photos/{pid}.jpg', 'image/jpeg'); style = f' style="object-position:{p["focus"]}"'
+    else:
+        src = b64(ROOT / f'public/photos/800/{pid}.webp', 'image/webp'); style = ''
+    return f'<img class="{cls}" src="{src}" alt="{esc(p["alt"])}"{style} loading="lazy" decoding="async">'
 
 
-def credit_line(pid):
-    p = photos[pid]
-    return (f'<figcaption class="credit">Photos: <a href="{esc(p["page"])}" target="_blank" rel="noopener">{esc(p["artist"])}</a>'
-            f' · {esc(p["licence"])} · cropped and resized</figcaption>')
+def credits_line(pids):
+    seen = []
+    for p in pids:
+        if p not in seen: seen.append(p)
+    ent = '; '.join(f'<a href="{esc(PH(p)["page"])}" target="_blank" rel="noopener">{esc(PH(p)["artist"])}</a> · {esc(PH(p)["licence"])}' for p in seen)
+    return f'<p class="photocredit">Photos: {ent} · cropped and resized</p>'
 
 
 def figure(pid, cls):
-    return f'<figure class="{cls}">{photo(pid, "ph")}{credit_line(pid)}</figure>'
+    return f'<figure class="{cls}">{photo(pid, "ph")}</figure>'
+
+
+# ---------- measured heights (data/place-measures.json, Mapzen Terrarium) ----------
+MEAS = json.loads((ROOT / 'data/place-measures.json').read_text())['places']
+
+
+def measure(pid, kind):
+    m = MEAS[pid]; a = m['altitude']
+    txt = {'median': f'Half the land lies above {a["median"]} m.', 'top': f'Half the land lies above {a["median"]} m. The highest tenth lies above {a["p90"]} m.',
+           'low': f'The lowest tenth of the land lies below {a["p10"]} m.', 'steep': f'{round(m["slope"]["steepShare"] * 100)}% of the land is steeper than 30%.'}[kind]
+    return f'<p class="measure">{txt}<small>Measured by AtlaSlope · Terrain: Mapzen</small></p>'
+
+
+def fact(ll, text, cites, where):
+    return {'ll': ll, 'where': where, 'text': text, 'src': src_inner(cites)}
 
 
 # ---------- views: what the map shows for each step ----------
@@ -247,9 +280,26 @@ def fly_view(fly, base, **over):
     return v
 
 
-def stop_html(fly, solo=False):
-    return (f'<div class="stop{" solo" if solo else ""}"><p class="stop-lab"><small>On the map</small>{esc(fly["label"])}</p>'
-            f'<p class="cap">{esc(fly["caption"])}</p>{cite_html(fly["cite"])}</div>')
+def stop_html(fly, solo=False, pic=None, meas=''):
+    img = figure(pic, 'stop-img') if pic else ''
+    return (f'<div class="stop{" solo" if solo else ""}">{img}<p class="stop-lab"><small>On the map</small>{esc(fly["label"])}</p>'
+            f'<p class="cap">{esc(fly["caption"])}</p>{meas}{cite_html(fly["cite"])}</div>')
+
+
+def river_near(gid, name, ll):
+    best = None
+    for f in RIVERS[gid]['features']:
+        if f['properties']['name'] != name: continue
+        for line in f['geometry']['coordinates']:
+            for p in line:
+                d = (p[0] - ll[0]) ** 2 + (p[1] - ll[1]) ** 2
+                if best is None or d < best[0]: best = (d, p)
+    return best[1]
+
+
+def town(gid, name):
+    for f in NAMES[gid]['features']:
+        if f['properties']['name'] == name: return f['geometry']['coordinates']
 
 
 def chapter_head(gid, c, n):
@@ -264,6 +314,11 @@ def cover_html(gid, g, pid):
 
 
 # ---- Rioja ----
+ZFACT = {'rioja-alta': 'Atlantic. More rain and fewer hours of sun than the south.',
+         'rioja-alavesa': 'Both climates meet. The most sheltered by the Sierra de Cantabria.',
+         'rioja-oriental': 'Mediterranean. The least rain and the most sun.'}
+
+
 def build_rioja():
     g = GUIDES['rioja']
     V, S, used = {}, [], []
@@ -274,8 +329,15 @@ def build_rioja():
     c = ch['valley']; f0, f1 = c['fly']
     V['valley'] = fly_view(f0, 'rioja', bounds=None, center=[-2.30, 42.37], zoom=8.6, pitch=55, bearing=-65, dot=None, markers=[['Haro', HARO], ['Alfaro', ALFARO]])
     V['sierra'] = fly_view(f1, 'rioja', center=[-2.70, 42.60], zoom=11.7, pitch=70, bearing=180)
-    S.append(('valley', 1, chapter_head('rioja', c, 1) + cite_html(c['cite']) + stop_html(f0)))
-    S.append(('sierra', 1, stop_html(f1, True)))
+    V['valley']['facts'] = [
+        fact(town('rioja', 'Haro'), 'The vineyards run 100 km along the Ebro, from Haro in the west to Alfaro in the east.', f0['cite'], 'Haro'),
+        fact(town('rioja', 'Alfaro'), 'The valley is never more than about 40 km wide.', f0['cite'], 'Alfaro')]
+    V['sierra']['facts'] = [
+        fact(town('rioja', 'Sierra de Cantabria'), 'The Sierra de Cantabria to the north protects the vines.', c['cite'], 'Sierra de Cantabria'),
+        fact(town('rioja', 'Laguardia'), 'The mountains protect Rioja Alta, and Rioja Alavesa even more.', f1['cite'], 'Laguardia')]
+    S.append(('valley', 1, chapter_head('rioja', c, 1) + cite_html(c['cite']) + stop_html(f0, pic='rioja-3', meas=measure('rioja', 'top'))))
+    S.append(('sierra', 1, stop_html(f1, True, pic='sierra')))
+    used += ['rioja-3', 'sierra']
     # 2 Climate: west to east, flat and north-up so the west-east change reads; then one tilted view per zone.
     c = ch['climate']
     V['climate'] = {'bounds': BOUNDS['rioja'], 'focus': 'zones', 'pitch': 0, 'bearing': 0, 'chip': 'Rioja’s three zones', 'zonelabels': True, 'koppen': True}
@@ -288,21 +350,29 @@ def build_rioja():
         fl = card['fly']; vid = 'z-' + fl['place']
         V[vid] = fly_view(fl, fl['place'], zonelabels=True, koppen=True, **zcam[fl['place']])
         V[vid].pop('dot', None)
+        V[vid]['facts'] = [fact(LABELS[fl['place']], ZFACT[fl['place']], fl['cite'], card['title'])]
         S.append((vid, 2, f'<article class="zone" aria-labelledby="h-{vid}">{figure(zphoto[card["title"]], "zone-img")}'
                           f'<h3 id="h-{vid}">{esc(card["title"])}</h3><p class="lab">Climate</p><p>{esc(card["climate"])}</p>'
-                          f'<p class="lab">Wine</p><p>{esc(card["wine"])}</p>{cite_html(fl["cite"])}</article>'))
+                          f'<p class="lab">Wine</p><p>{esc(card["wine"])}</p>{measure(fl["place"], "top")}{cite_html(fl["cite"])}</article>'))
         used.append(zphoto[card['title']])
     # 3 Soils: the Alavesa terraces seen low from the Ebro side, looking up at the steps.
     c = ch['soils']; fs = c['fly'][0]
     V['soils'] = fly_view(fs, fs['place'], pitch=62, bearing=15, zadj=0.4, geo=True)
-    S.append(('soils', 3, chapter_head('rioja', c, 3) + cite_html(c['cite']) + stop_html(fs)))
+    V['soils']['facts'] = [
+        fact(town('rioja', 'Laguardia'), 'Clay-limestone covers a quarter of the vineyard, on terraces and small plots in Rioja Alavesa.', c['cite'], 'Laguardia'),
+        fact(town('rioja', 'San Vicente de la Sonsierra'), 'Clay-limestone also lies in the Sonsierra.', c['cite'], 'San Vicente de la Sonsierra'),
+        fact(river_near('rioja', 'Río Ebro', town('rioja', 'Elciego')), 'Alluvial soil near the rivers is flat, deep and full of stones.', c['cite'], 'Ebro')]
+    S.append(('soils', 3, chapter_head('rioja', c, 3) + cite_html(c['cite']) + stop_html(fs, pic='rioja-alavesa-2', meas=measure('rioja-alavesa', 'steep'))))
+    used.append('rioja-alavesa-2')
     # 4 Barrel: back out to Rioja, then in to Haro's station quarter.
     c = ch['barrel']; fb = c['fly'][0]
     V['barrel'] = {'bounds': BOUNDS['rioja'], 'focus': 'rioja', 'pitch': 0, 'bearing': 0, 'chip': 'Rioja', 'markers': [['Haro', HARO]]}
     V['haro'] = fly_view(fb, 'rioja', pitch=60, bearing=20, zoom=14.2)
     p1, p2 = c['paras']
     S.append(('barrel', 4, f'<h2 id="rioja-ch-barrel"><span class="n">4</span>{esc(c["title"])}</h2><p>{esc(p1)}</p>'))
-    S.append(('haro', 4, f'<p>{esc(p2)}</p>{cite_html(c["cite"])}{stop_html(fb)}'))
+    V['haro']['facts'] = [fact([-2.851, 42.585], 'In 1890 a French firm in Haro’s station quarter hired a champagne maker from Reims.', fb['cite'], 'Haro’s station quarter')]
+    S.append(('haro', 4, f'<p>{esc(p2)}</p>{cite_html(c["cite"])}{stop_html(fb, pic="haro", meas=measure("rioja-alta", "median"))}'))
+    used.append('haro')
     end = ('<div class="end"><p class="kicker">You reached the end</p><p class="endq">Can you place the three zones?</p>'
            '<a class="btn" href="#quiz=test&amp;set=rioja-alta,rioja-alavesa,rioja-oriental">Test me on Rioja’s zones</a></div>')
     S.append(('haro', 0, end))
@@ -322,9 +392,14 @@ def build_priorat():
     SIU = siurana_centre()  # mid-point of the river line itself, so the river is in view (v2 centred on a point beside it)
     V['siurana'] = fly_view(f1, 'priorat', center=SIU, zoom=11.2, pitch=45, bearing=0, dot=None, markers=[['Riu de Siurana', SIU]])
     V['scala'] = fly_view(f2, 'priorat', center=[0.8104, 41.2565], zoom=12.4, pitch=64, bearing=0)
-    S.append(('montsant', 1, chapter_head('priorat', c, 1) + cite_html(c['cite']) + stop_html(f0)))
-    S.append(('siurana', 1, stop_html(f1, True)))
-    S.append(('scala', 1, stop_html(f2, True)))
+    V['montsant']['facts'] = [
+        fact(f0['point'], 'The Sierra de Montsant closes Priorat to the north.', f0['cite'], 'Sierra de Montsant'),
+        fact(town('priorat', 'El Lloar'), 'The crests of El Lloar and La Figuera lie to the west.', c['cite'], 'El Lloar')]
+    V['siurana']['facts'] = [fact(SIU, 'The Siurana river crosses the zone from northeast to southwest.', f1['cite'], 'Riu de Siurana')]
+    V['scala']['facts'] = [fact(f2['point'], 'The charterhouse at the foot of the Montsant put seven villages under the Prior.', f2['cite'], 'Scala Dei')]
+    S.append(('montsant', 1, chapter_head('priorat', c, 1) + cite_html(c['cite']) + stop_html(f0, pic='catalunya-2', meas=measure('priorat', 'top'))))
+    S.append(('siurana', 1, stop_html(f1, True, pic='siurana', meas=measure('priorat', 'low'))))
+    S.append(('scala', 1, stop_html(f2, True, pic='scala')))
     # 2 Air: no map stop in the guide; an overview looking north (Montsant behind) is added as in Rioja's chapter 2 and 4 overviews.
     c = ch['air']
     V['air'] = {'bounds': BOUNDS['priorat'], 'focus': 'priorat', 'pitch': 50, 'bearing': 0, 'zadj': -0.3, 'chip': 'Priorat, looking north to the Montsant'}
@@ -332,15 +407,17 @@ def build_priorat():
     # 3 Licorella: slate slopes seen low and from the valley, looking up.
     c = ch['licorella']; fl = c['fly'][0]
     V['licorella'] = fly_view(fl, 'priorat', pitch=72, bearing=330, zadj=0.5, geo=True)
-    S.append(('licorella', 3, chapter_head('priorat', c, 3) + cite_html(c['cite']) + stop_html(fl)
-              + figure('priorat-2', 'zone-img')))
+    V['licorella']['facts'] = [
+        fact(town('priorat', 'Porrera'), 'The hills are made of ancient slate, formed between 416 and 318 million years ago.', c['cite'], 'Porrera'),
+        fact(town('priorat', 'Gratallops'), 'Licorella: flaky, brittle stones the colour of darkened copper.', c['cite'], 'Gratallops')]
+    S.append(('licorella', 3, chapter_head('priorat', c, 3) + cite_html(c['cite']) + stop_html(fl, pic='porrera', meas=measure('priorat', 'steep'))))
     # 4 Wines
     c = ch['wines']
     V['wines'] = {'bounds': BOUNDS['priorat'], 'focus': 'priorat', 'pitch': 0, 'bearing': 0, 'chip': 'Priorat'}
     terms = ''.join(f'<dt>{esc(t["term"])}</dt><dd>{esc(t["text"])}</dd>' for t in c.get('terms', []))
     S.append(('wines', 4, chapter_head('priorat', c, 4) + (f'<dl class="terms">{terms}</dl>' if terms else '') + cite_html(c['cite'])))
     S.append(('wines', 0, '<div class="end"><p class="kicker">You reached the end</p><p class="endq">That is Priorat.</p></div>'))
-    return V, S, ['priorat-1', 'priorat-2']
+    return V, S, ['priorat-1', 'catalunya-2', 'siurana', 'scala', 'porrera']
 
 
 BUILT = {'rioja': build_rioja(), 'priorat': build_priorat()}
@@ -378,8 +455,10 @@ def options_html(gid):
         'A': (f'{sec}<p class="opt-a-row"><a class="opt-a" href="#story" {go}>Read with the map</a><span class="sub">{mins} min</span></p>'),
         'B': (f'{sec}<a class="opt-b" href="#story" {go}><span class="t">Read with the map</span>'
               f'<span class="s">Text on the left, the land on the right</span></a>'),
-        'C': (f'{sec}<a class="opt-c" href="#story" {go}><span class="t">Read with the map</span>'
-              f'<span class="s">{mins} minutes · {n} places to fly to</span></a>'),
+        'C': (f'{sec}<a class="opt-c" href="#story" {go}><span class="tx"><span class="t">Read with the map</span>'
+              f'<span class="s">{mins} minutes · {n} places to fly to</span></span>'
+              f'<svg class="mapmark" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#E9D8B4" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">'
+              f'<path d="M1.5 3.5 6.5 2v12.5l-5 1.5zM6.5 2l5 1.5v12.5l-5-1.5zM11.5 3.5 16.5 2v12.5l-5 1.5z"/></svg></a>'),
         'D': (f'{sec}<a class="opt-d" href="#story" {go}><img src="{THUMB[gid]}" alt="Satellite view of {nm}" width="96" height="96" loading="lazy">'
               f'<span class="body"><span class="t">Read with the map</span>'
               f'<span class="s">Fly over {nm} as you read. {n} places, {mins} minutes.</span></span></a>'),
@@ -393,7 +472,7 @@ WHY = ('C is the app’s own main-button style (black with champagne text), so i
 opts = {g: options_html(g) for g in GUIDES}
 cards = ''
 for k in 'ABCD':
-    rec = '<span class="rec">Recommended</span>' if k == RECOMMENDED else ''
+    rec = '<span class="rec">Chosen</span>' if k == RECOMMENDED else ''
     inner = ''.join(f'<div class="opt-body" data-guide="{g}"{" hidden" if g != "rioja" else ""}>{opts[g][k]}</div>' for g in GUIDES)
     cards += (f'<article class="opt opt-{k}{" is-rec" if k == RECOMMENDED else ""}" aria-labelledby="opt-{k}"><header><h3 id="opt-{k}">'
               f'<span class="k">{k}</span>{OPTION_NAMES[k]}</h3>{rec}</header>{inner}</article>')
@@ -408,13 +487,13 @@ FONT_CSS = f'''
 '''
 ML_JS = (NM / 'maplibre-gl/dist/maplibre-gl.js').read_text()
 ML_CSS = (NM / 'maplibre-gl/dist/maplibre-gl.css').read_text()
-CSS = (HERE / 'story.css').read_text()
+CSS = (HERE / 'story.css').read_text() + (HERE / 'story-b.css').read_text()
 JS = (HERE / 'story.js').read_text()
 DATA = json.dumps({'views': VIEWS, 'focus': FOCUS, 'labels': LABELS, 'chapters': CHAPTERS, 'tints': TINTS, 'rivers': RIVERS, 'names': NAMES, 'koppen': KOPPEN, 'koppenLegend': KOP_LEGEND, 'inverse': INVERSE, 'loc': LOC,
                    'back': {k: f'#place={k}&page=1' for k in GUIDES}}, ensure_ascii=False, separators=(',', ':'))
 used = sorted(set(BUILT['rioja'][2] + BUILT['priorat'][2]))
 
-texts = ''.join(f'<div class="text" data-guide="{g}"{" hidden" if g != "rioja" else ""}>\n{steps_html(g)}\n</div>' for g in GUIDES)
+texts = ''.join(f'<div class="text" data-guide="{g}"{" hidden" if g != "rioja" else ""}>\n{steps_html(g)}\n{credits_line(BUILT[g][2])}\n</div>' for g in GUIDES)
 
 html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -435,7 +514,7 @@ html = f'''<!doctype html>
   <h2 id="opt-h">How the story opens, in four strengths</h2>
   <p class="opt-note">This sits in the guide’s Terroir section. The plain text stays. Pick one.</p>
   <div class="opt-grid">{cards}</div>
-  <p class="opt-why"><strong>Recommended: {RECOMMENDED}.</strong> {esc(WHY)}</p>
+  <p class="opt-why"><strong>Chosen by the owner: {RECOMMENDED}.</strong> {esc(WHY)}</p>
 </section>
 <main id="story" class="sg">
   <div class="mapwrap" aria-label="Map that follows the text" role="region">

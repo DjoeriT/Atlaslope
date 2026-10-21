@@ -95,7 +95,8 @@
   const recentre = document.querySelector('.recentre');
   const credit = document.querySelector('.mapcredit');
   const legend = document.querySelector('.legend');
-  legend.innerHTML = 'Climate: ' + SG.koppenLegend.map(([n, c, sh]) => `<span><i style="background:${c}"></i><b class="lg">${n}</b><b class="sh">${sh}</b></span>`).join('');
+  const koppenHTML = 'Climate: ' + SG.koppenLegend.map(([n, c, sh]) => `<span><i style="background:${c}"></i><b class="lg">${n}</b><b class="sh">${sh}</b></span>`).join('');
+  legend.innerHTML = koppenHTML;
 
   // Locator inset: the camera centre and the visible box on the outline of Spain.
   const L = SG.loc, lsvg = document.querySelector('.loc'), lbox = lsvg.querySelector('.lbox'), ldot = lsvg.querySelector('.ldot');
@@ -151,6 +152,24 @@
     return { top: p + 40, bottom: p + 30, left: p, right: p + 30 };
   }
 
+  // fact markers: a small black card with one sentence from the guide and its source; Escape closes and returns focus
+  let pop = null, popFrom = null;
+  function closeFact(refocus) {
+    if (pop) { const p = pop; pop = null; p.remove(); if (refocus && popFrom) popFrom.focus(); }
+  }
+  function openFact(f, btn) {
+    closeFact(false);
+    const root = document.createElement('div');
+    const w = document.createElement('p'); w.className = 'fw'; w.textContent = f.where;
+    const t = document.createElement('p'); t.className = 'ft'; t.textContent = f.text;
+    const s = document.createElement('p'); s.className = 'fs'; s.innerHTML = f.src;
+    root.append(w, t, s);
+    popFrom = btn;
+    pop = new maplibregl.Popup({ className: 'factpop', offset: 16, maxWidth: '15rem', closeButton: true, closeOnClick: true, focusAfterOpen: true }).setLngLat(f.ll).setDOMContent(root).addTo(map);
+    pop.on('close', () => { if (pop) pop = null; });
+  }
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeFact(true); });
+
   function go(id, instant) {
     const v = SG.views[guide][id];
     if (!v) return;
@@ -180,6 +199,15 @@
     markers.forEach((m) => m.remove()); markers = [];
     (v.markers || []).forEach(([name, ll]) => markers.push(new maplibregl.Marker({ element: el('mk', name) }).setLngLat(ll).addTo(map)));
     if (v.dot) markers.push(new maplibregl.Marker({ element: el('dot') }).setLngLat(v.dot).addTo(map));
+    closeFact(false);
+    (v.facts || []).forEach((f) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'fk'; b.setAttribute('aria-label', 'Fact: ' + f.where);
+      b.addEventListener('click', (e) => { e.stopPropagation(); openFact(f, b); });
+      markers.push(new maplibregl.Marker({ element: b }).setLngLat(f.ll).addTo(map));
+    });
+    // the legend line doubles for geology: the service's own legend lists about 230 numbered colours and no names
+    if (v.geo) { legend.textContent = 'Colours: rock types, IGME MAGNA 50'; legend.hidden = false; } else legend.innerHTML = koppenHTML;
 
     const pitch = v.pitch || 0, bearing = v.bearing || 0;
     let target;
