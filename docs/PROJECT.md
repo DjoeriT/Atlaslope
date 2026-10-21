@@ -97,7 +97,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 
 ## Map tours (renamed from "Read with the map" 21 Oct 2026; part of the guide page, listed at guides/#map-tours)
 Live for Rioja and Priorat since release 59 (built from `Review/mock-story-guide-v3/`; hand-off `docs/handoffs/2026-10-21-story-guide-build.md`,
-format in `docs/guides.md` "Story files"). Next: restore the v3 journey on Rioja and Priorat (brief in `2026-10-21-tour-v3-restore.md`), then the other 11, hand-made.
+format in `docs/guides.md` "Story files"). Next: v4 mock, the whole guide inside the v3 journey, map on by default with a close option, then the build (briefs in `2026-10-21-tour-v3-restore.md`), then the other 11, hand-made.
 Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", then folded into the guide page, same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
 get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
 report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
