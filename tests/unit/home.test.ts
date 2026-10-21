@@ -188,6 +188,7 @@ describe('map tours on the Guides page', () => {
     const html = fillGuideList(guidesHtml, list);
     expect(html).toContain('<a href="#map-tours">Show only guides with a map tour</a>');
     expect(html).toContain('id="map-tours"');
+    expect(html).toContain('<p class="showall"><a href="#">Show all guides</a></p>');
     expect(html.match(/class="tour">Map tour</g)!.length).toBeGreaterThanOrEqual(tours.length);
   });
 });

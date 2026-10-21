@@ -70,7 +70,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const tiles = tilesEnabled();
   const hasImagery = tiles && !!esriKey;
   // If IGN keeps failing, Esri stops skipping Spain and its tiles reload with a new URL.
-  if (hasImagery) registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) });
+  const releaseImagery = hasImagery ? registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) }) : () => {};
   if (tiles) registerGlyphs(ROOT);
   const map = new maplibregl.Map({
     container,
@@ -492,7 +492,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       if (!q && was) { if (ready) leaveQuiz(); return; }
       if (q) { syncNames(); applyQuiz(); }
     },
-    remove() { pin?.remove(); flags.remove(); labels?.remove(); map.remove(); },
+    remove() { releaseImagery(); pin?.remove(); flags.remove(); labels?.remove(); map.remove(); },
   };
 }
 

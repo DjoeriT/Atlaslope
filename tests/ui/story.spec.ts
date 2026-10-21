@@ -65,8 +65,20 @@ test('a fact marker opens with Enter, Escape closes it and focus returns to the 
 test('Hide map returns to the plain guide', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Hide map' })).toBeFocused(); // focus follows the map open
   await page.getByRole('button', { name: 'Hide map' }).click();
   await expect(page).toHaveURL(/#place=rioja&page(&view=.*)?$/);
   await expect(page.locator('.pg-tourmap')).toHaveCount(0);
   await expect(page.locator('a.story-open')).toBeVisible();
+  await expect(page.locator('a.story-open')).toBeFocused(); // and back to "Open the map" on hide
+});
+
+test('the map column comes after the guide in reading order, and the band still is out of reach of keyboard and screen readers', async ({ page }) => {
+  await open(page, '#place=rioja&page&story');
+  await expect(mapCol(page)).toBeVisible();
+  const after = await page.locator('.pg-listing').evaluate((el) => !!(el.compareDocumentPosition(document.querySelector('.pg-tourmap')!) & Node.DOCUMENT_POSITION_FOLLOWING));
+  expect(after).toBe(true);
+  await open(page, '#place=rioja&page');
+  await expect(page.locator('.pg-tour-still')).toHaveAttribute('aria-hidden', 'true');
+  await expect(page.locator('.pg-tour-still')).toHaveAttribute('inert', '');
 });

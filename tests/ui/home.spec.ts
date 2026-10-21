@@ -88,3 +88,17 @@ test('Study and back to Atlas returns to the card that was open', async ({ page 
   await expect(page.getByRole('heading', { level: 1, name: 'Toro' })).toBeVisible();
   await expect(page).toHaveURL(/#place=toro/);
 });
+
+test('the home tile links to the map tours on the Guides page, which lists every tour guide and can hide the rest', async ({ page }) => {
+  await page.goto('../');
+  const tile = page.locator('.hero a[href="guides/#map-tours"], a[href="guides/#map-tours"]').first();
+  await expect(tile).toHaveText('map tours');
+  await tile.click();
+  await expect(page).toHaveURL(/\/guides\/#map-tours$/);
+  const names = await page.locator('#map-tours .gcard-c .cb b').allTextContents();
+  expect(names.sort()).toEqual(['Priorat', 'Rioja']);
+  await expect(page.locator('.gl .region').nth(1)).toBeHidden(); // while #map-tours is the target the other regions step aside
+  await expect(page.locator('.gl .feat')).toBeHidden();
+  await page.getByRole('link', { name: 'Show all guides' }).click();
+  await expect(page.locator('.gl .region').nth(1)).toBeVisible();
+});

@@ -176,11 +176,19 @@ function pnoaTile(z: number, x: number, y: number, health: ImageryHealth): Promi
   return tile;
 }
 
+const live = new Set<ImageryHealth>();
+let registered = false;
 /**
- * Registers the `pnoa://` and `esri://` tile protocols. Call once, before the map is made.
+ * Registers the `pnoa://` and `esri://` tile protocols the first time, then only adds this map's health listener: several maps (the atlas,
+ * a tour's map or still) share the protocols, and a PNOA outage reaches the maps still alive. Returns the release for the map's `remove()`.
  * `esriTemplate` is the Esri URL with its key; its tiles keep their own URL so the live map check still sees them.
  */
-export function registerImagery(esriTemplate: string | null, health: ImageryHealth): void {
+export function registerImagery(esriTemplate: string | null, mapHealth: ImageryHealth): () => void {
+  live.add(mapHealth);
+  const release = () => { live.delete(mapHealth); };
+  if (registered) return release;
+  registered = true;
+  const health: ImageryHealth = { onPnoaDown: () => live.forEach((h) => h.onPnoaDown()) };
   maplibregl.addProtocol('pnoa', async (params) => {
     const [z, x, y] = tileXYZ(params.url);
     const { some, whole } = tileCoverage(z, x, y);
@@ -209,6 +217,7 @@ export function registerImagery(esriTemplate: string | null, health: ImageryHeal
       return { data: await fetchTile(fill(esriTemplate, z, x, y), abort.signal) };
     });
   }
+  return release;
 }
 
 /** Tile URL templates for the style; `bust` changes the Esri URLs so the map reloads tiles it had skipped. */

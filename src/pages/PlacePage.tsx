@@ -107,6 +107,13 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyStops(place.id).then(setStops); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
+  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to "Open the map" on hide. A pending fly is dropped on hide.
+  const hadTour = useRef(tour);
+  useEffect(() => {
+    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.pg-tour .story-open')?.focus({ preventScroll: true });
+    hadTour.current = tour;
+  }, [tour]);
+  const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
@@ -130,7 +137,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     );
     return tour ? (
       <a key={`${chapter}.${index}`} className="fly" href={selectionToHash(to)} aria-label={t.flyLabel(label)} title={t.flyLabel(label)}
-        onClick={(e) => { e.preventDefault(); setFlyAsk({ chapter, index, n: (flyAsk?.n ?? 0) + 1 }); }}>{body}</a>
+        onClick={(e) => { if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return; e.preventDefault(); setFlyAsk({ chapter, index, n: (flyAsk?.n ?? 0) + 1 }); }}>{body}</a>
     ) : <Link key={`${chapter}.${index}`} className="fly" to={to} go={go} label={t.flyLabel(label)}>{body}</Link>;
   };
 
@@ -363,11 +370,6 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
       <div className="pg-body">
-      {tour && guide && (
-        <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} fly={flyAsk} onHide={() => go({ kind: 'place', id: place.id, page: true })} />
-        </Suspense>
-      )}
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
           {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
@@ -533,6 +535,11 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
           </main>
         </div>
       </div>
+      {tour && guide && (
+        <Suspense fallback={<aside className="pg-tourmap" />}>
+          <GuideMap place={place} guide={guide} fly={flyAsk} onHide={hideMap} />
+        </Suspense>
+      )}
       </div>
     </div>
   );

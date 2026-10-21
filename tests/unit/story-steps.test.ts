@@ -39,4 +39,15 @@ describe('tour steps on the guide page', () => {
       }
     }
   });
+
+  it('every fly link of a tour guide has a tour step, so a click in tour mode always flies the map', () => {
+    for (const id of storyIds()) {
+      const story = loadStory(id) as Story;
+      const g = guideOf(id) as Guide;
+      for (const ch of g.chapters) {
+        const n = (ch.fly?.length ?? 0) + (ch.cards?.length ?? 0);
+        for (let k = 0; k < n; k++) expect(stepOfLink(g, story, ch.id, k), `${id}/${ch.id}#${k}`).toBeGreaterThanOrEqual(0);
+      }
+    }
+  });
 });

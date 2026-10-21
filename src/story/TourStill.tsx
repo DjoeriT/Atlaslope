@@ -17,6 +17,9 @@ export function TourStill({ id }: { id: string }) {
     const base = { lng, lat, zoom: cam.zoom ?? 8, bearing: cam.bearing ?? 0, pitch: cam.pitch ?? 0 };
     const ctl = createMap(el.current as HTMLDivElement, { ...DEFAULT_MENU, boundaries: false }, { onImageryFailed: () => {} }, base);
     const m = ctl.map;
+    // Decoration: out of the tab order and away from screen readers (the wrapper is inert and aria-hidden).
+    m.getCanvas().tabIndex = -1;
+    m.getCanvasContainer().tabIndex = -1;
     for (const h of [m.dragPan, m.scrollZoom, m.boxZoom, m.dragRotate, m.keyboard, m.doubleClickZoom, m.touchZoomRotate, m.touchPitch]) h.disable();
 
     let raf = 0, seen = false;
@@ -32,5 +35,5 @@ export function TourStill({ id }: { id: string }) {
     m.once('load', () => io.observe(el.current as HTMLDivElement));
     return () => { io.disconnect(); cancelAnimationFrame(raf); ctl.remove(); };
   }, [id]);
-  return <div className="pg-tour-still" ref={el} />;
+  return <div className="pg-tour-still" ref={el} aria-hidden="true" {...{ inert: '' }} />;
 }

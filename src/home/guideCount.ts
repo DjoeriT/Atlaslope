@@ -170,6 +170,7 @@ export const fillGuideList = (html: string, list: GuideList): string => {
   if (tours.length) {
     out.push(
       `<section class="region" id="map-tours" aria-labelledby="map-tours-h"><div class="rowh"><h2 id="map-tours-h">Guides with a map tour</h2><span>${tours.length}</span></div>`,
+      '<p class="showall"><a href="#">Show all guides</a></p>',
       `<div class="rowg">${tours.map((g) => card(g, photos)).join('')}</div>`,
       creditLine(tours.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
       '</section>',

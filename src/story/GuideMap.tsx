@@ -37,6 +37,9 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
   const shownStep = useRef(0);
   const lastGo = useRef(0);
   const timer = useRef(0);
+  const hideBtn = useRef<HTMLButtonElement>(null);
+  // Focus lands on Hide map when the map opens, so keyboard and screen-reader users arrive in the map column.
+  useEffect(() => { hideBtn.current?.focus({ preventScroll: true }); return () => clearTimeout(timer.current); }, []);
 
   // Named points (towns, ranges) for the markers a step names, from the story's names file.
   useEffect(() => {
@@ -131,7 +134,7 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
         <p className="pg-tourcap">
           <span className="k">{active > 0 ? t.stopOf(active, story.steps.length - 1) : t.open}</span>
           <b>{label}</b>
-          <button type="button" onClick={onHide}>{t.hide}</button>
+          <button type="button" ref={hideBtn} onClick={onHide}>{t.hide}</button>
         </p>
         <div className="story-map" ref={mapEl} />
         {moved && <button type="button" className="story-recentre" onClick={recentre}>{t.recentre}</button>}
