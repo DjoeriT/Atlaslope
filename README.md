@@ -48,6 +48,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
   opens the guide with the tour open and shoots every stop in order. It writes `shots/tour-<id>-<n>-<size>.png` and a labelled contact sheet `shots/tour-<id>-<size>.png`.
   A stop passes only with a still, detailed map and at least one imagery tile response (IGN or Esri) during the stop; otherwise it is flagged in the log and the sheet (30 s cap per stop).
   A worktree has no `.env.local`: the script copies it from the main checkout (git-ignored). About 1.7 min per size for Rioja; 6 min cap.
+- Register watch: `python3 Tools/guides/watch_register.py` fetches the EU register list, updates `data/register-snapshot.json` and prints which places changed (`--json`, `--oj <place id>`, `--self-test`); no tokens, opens no issue.
 - Every check: `Tools/check.sh` (`quick` skips the UI tests and the build; `ui` adds the full UI suite, which CI runs in four parts on every PR; locally run only the specs you touched).
 
 ## Data
