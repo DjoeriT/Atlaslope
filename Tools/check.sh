@@ -28,6 +28,7 @@ if [ "${1:-}" != "quick" ]; then
   run "Build" "built in|error" npx vite build
   run "Production build has no debug flags" "." bash -c '
     [ -d dist ] || { echo "no dist/"; exit 1; }
+    [ -f dist/404.html ] || { echo "dist/404.html missing (GitHub Pages 404 page)"; exit 1; }
     if grep -rEl "\?fixture|fixture=|fresh=1" dist --exclude-dir=uitest 2>/dev/null; then echo "debug flags found in dist/"; exit 1; fi
     echo "clean"'
   run "Download size under 2 MB (gzipped, imagery excluded)" "." bash -c '
