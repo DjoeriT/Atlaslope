@@ -1,0 +1,18 @@
+/* round 3 part B: stop photos, measures, one photo credit line, fact markers */
+.stop-img{margin:0 0 .8rem}
+.stop-img .ph{aspect-ratio:3/2}
+.measure{margin:.5rem 0 0!important;font-size:.92rem}
+.measure small{display:block;font-size:.72rem;color:var(--ink3)}
+.photocredit{margin:2rem 0 1rem;font-size:.78rem;color:var(--ink3)}.photocredit a{color:var(--ink3)}
+.fk{width:1.35rem;height:1.35rem;padding:0;border-radius:50%;background:var(--champ);border:3px solid var(--black);box-shadow:0 0 0 1px var(--champ);cursor:pointer}
+.fk:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.factpop .maplibregl-popup-content{max-width:15rem;padding:.7rem .85rem .6rem;border-radius:var(--r);background:var(--black);color:var(--champ);font:400 .86rem/1.4 var(--sans)}
+.factpop.maplibregl-popup-anchor-bottom .maplibregl-popup-tip{border-top-color:var(--black)}
+.factpop.maplibregl-popup-anchor-top .maplibregl-popup-tip{border-bottom-color:var(--black)}
+.factpop.maplibregl-popup-anchor-left .maplibregl-popup-tip{border-right-color:var(--black)}
+.factpop.maplibregl-popup-anchor-right .maplibregl-popup-tip{border-left-color:var(--black)}
+.factpop .fw{margin:0 1rem .15rem 0;font:500 .7rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--champ-d)}
+.factpop .ft{margin:0 0 .4rem}
+.factpop .fs{margin:0;font-size:.72rem;color:var(--champ-l)}.factpop .fs a{color:var(--champ-l)}
+.factpop .maplibregl-popup-close-button{color:var(--champ);font-size:1.1rem;padding:.1rem .45rem}
+.factpop .maplibregl-popup-close-button:focus-visible{outline:2px solid #fff}
