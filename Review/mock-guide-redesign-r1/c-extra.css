@@ -1,0 +1,8 @@
+/* Option C as a document: the band shows the site links when the map is closed and the map controls when it is open; the photo that grows into the map. */
+body.map-off .top .on-map{display:none}
+body:not(.map-off) .top .off-map{display:none}
+.top .topnav{margin-left:auto}
+body:not(.map-off) .top .where{margin-left:auto}
+#closed{background:#fff}
+.grow{position:fixed;z-index:100;overflow:hidden;background:#141414;pointer-events:none}
+.grow img{display:block;width:100%;height:100%;object-fit:cover}

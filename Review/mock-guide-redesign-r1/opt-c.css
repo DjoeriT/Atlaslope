@@ -1,0 +1,66 @@
+/* Option C (photo-led, recommended): a big photo hero, every beat opens with its stop photo, the facts are a strip under the beat, How it tastes is a toned band. */
+.c-hero,.c-beat,.c-in{max-width:84rem;margin:0 auto;padding-left:2rem;padding-right:2rem}
+.c-hero{padding-top:1.6rem}
+.bb-c{display:grid;grid-template-columns:minmax(0,1fr) 20rem;align-items:stretch}
+.bb-c .bb-ph{height:clamp(22rem,42vw,35rem)}
+.bb-c .bb-lab{flex-direction:column;align-items:flex-start;justify-content:space-between;padding:1.8rem 1.8rem 1.6rem}
+.bb-c .bb-t{font-size:2.4rem}
+.c-title{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:3.5rem;align-items:end;padding:2.4rem 0 1.8rem}
+.c-kick{margin:0;font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--champ-d)}
+.c-title h1{font:500 clamp(3.6rem,7vw,6rem)/1 var(--serif);letter-spacing:-.03em;margin:.3rem 0 .8rem}
+.c-badges{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;color:var(--ink2);font-size:.95rem}
+.c-badges li+li::before{content:"·";margin:0 .7rem;color:var(--champ-m)}
+.c-why h2{font-size:1.1rem;font-weight:400;color:var(--ink3);margin-bottom:.5rem}
+.c-why .lede{font-size:clamp(1.5rem,2.3vw,2rem);line-height:1.35;color:var(--ink)}
+.c-beat{padding-top:3.4rem;padding-bottom:.6rem;border-top:0}
+.c-photos{display:grid;gap:1.2rem}
+.c-photos.n2{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr)}
+.c-fig .g-ph{height:clamp(15rem,31vw,27rem)}
+.c-fig .g-cap{max-width:34rem}
+.c-zph{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.c-zph .g-ph{height:clamp(14rem,26vw,23rem)}
+.c-bh{display:flex;align-items:baseline;gap:1.3rem;margin:2.6rem 0 1.2rem}
+.c-bh .n{font:400 5rem/.85 var(--serif)}
+.c-bh h3{font-size:clamp(2.2rem,3.6vw,3.2rem);letter-spacing:-.015em}
+.c-bh .k{display:block;margin-bottom:.4rem}
+.c-prose{columns:2;column-gap:3.6rem;font-size:1.2rem;line-height:1.72}
+.c-prose:has(>p:only-child){columns:1;max-width:56rem}
+.c-prose p{break-inside:avoid-column}
+.c-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 2.2rem;margin:.2rem 0 1.4rem}
+.c-meta .g-flies{margin:0}.c-meta .src-line{margin:0}
+.c-ztx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;margin:1rem 0 1.6rem}
+.c-ztx h4{font-size:1.7rem}.c-ztx p{font-size:1.05rem}
+.c-strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:3rem;padding:1.8rem 2rem;background:var(--paper2);border-radius:var(--r);margin-top:1rem}
+.c-strip:empty{display:none}
+.c-cell .pg-fact:last-child{margin-bottom:.4rem}
+.c-cell .pg-rows{margin:0}
+.c-strip .pg-compare>div{grid-template-columns:7.5rem minmax(0,1fr)}
+.c-taste{background:var(--champ-l);margin-top:3.5rem;padding:4.2rem 0 4rem}
+.c-taste .c-in{padding-top:0}
+.o-c h2{font-size:clamp(1.9rem,3vw,2.6rem);margin-bottom:1.6rem}
+.c-tcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3.2rem}
+.c-t b{display:flex;align-items:center;font:500 1.7rem var(--serif);margin-bottom:.3rem}.c-t p{font-size:1.2rem;line-height:1.6;margin:0}
+.c-t .sw{width:1.1rem;height:1.1rem;border-radius:50%}
+.c-short{padding:3.6rem 0 1rem}
+.c-short .pg-short .f a{font-size:1.5rem}
+.c-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:4rem;padding:2.4rem 0 2.4rem}
+.c-names{list-style:none;margin:0;padding:0}.c-names li{font:500 2.6rem/1.1 var(--serif)}
+.c-alike{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem}
+.c-al a{display:block;text-decoration:none}.c-al .g-ph{aspect-ratio:4/3;height:auto;margin-bottom:.6rem}.c-al b{font:500 1.35rem var(--serif)}.c-al p{margin:.1rem 0 0;color:var(--ink3);font-size:.92rem}
+.c-end{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;padding:1.6rem 0;border-top:1px solid var(--line)}
+.c-sources{padding:2rem 0 0;border-top:1px solid var(--line)}.c-sources h2{font-size:1.5rem}.o-c .pg-sources{columns:2;column-gap:3rem}
+@media (max-width:64rem){.bb-c{grid-template-columns:minmax(0,1fr) 15rem}.c-title{gap:2rem}.c-strip{gap:2rem}}
+@media (max-width:48rem){
+  .c-hero,.c-beat,.c-in{padding-left:1rem;padding-right:1rem}
+  .bb-c{grid-template-columns:1fr}.bb-c .bb-ph{height:66vw}.bb-c .bb-lab{flex-direction:row;align-items:center;padding:1.1rem 1.2rem}.bb-c .bb-t{font-size:1.7rem}
+  .c-title{grid-template-columns:1fr;gap:1rem;padding:1.6rem 0 1rem}
+  .c-photos.n2{grid-template-columns:1fr}.c-fig .g-ph{height:62vw}
+  .c-zph{grid-template-columns:1fr 1fr 1fr;gap:.4rem}.c-zph .g-ph{height:44vw}
+  .c-ztx{grid-template-columns:1fr;gap:1.6rem}
+  .c-bh{gap:.8rem;margin-top:1.8rem}.c-bh .n{font-size:3.6rem}
+  .c-prose{columns:1;font-size:1.1rem}.c-strip{grid-auto-flow:row;padding:1.3rem 1.1rem;gap:1.2rem}
+  .c-tcols,.c-two,.c-alike{grid-template-columns:1fr;gap:1.8rem}
+  .o-c .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}.pg-short li{grid-template-columns:1fr}.c-taste{padding:2.6rem 0}
+  .c-names li{font-size:2.1rem}
+  .o-c .g-jump{padding:0 1rem}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
+}

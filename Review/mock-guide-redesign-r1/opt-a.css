@@ -1,0 +1,58 @@
+/* Option A (subtle): today's order kept. The white beside the text is filled: each beat gets a photo and its facts in a second column, the boxes are gone, type and photos are bigger. */
+.o-a .a-wrap{max-width:84rem;margin:0 auto;padding:2.2rem 2rem 3rem}
+.a-head{margin-bottom:1.4rem}
+.a-kick{margin:0;font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--champ-d)}
+.a-head h1{font:500 clamp(3.2rem,6vw,5.2rem)/1 var(--serif);letter-spacing:-.025em;margin:.3rem 0 .6rem}
+.a-badges{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.2rem 0;color:var(--ink2);font-size:.95rem}
+.a-badges li+li::before{content:"·";margin:0 .7rem;color:var(--champ-m)}
+.bb-a{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}
+.bb-a .bb-ph{height:clamp(14rem,22vw,19rem)}
+.bb-a .bb-lab{flex-direction:column;align-items:flex-start;justify-content:space-between;padding:1.6rem 1.8rem}
+.a-mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.5rem;height:clamp(17rem,32vw,30rem);margin:.5rem 0 0}
+.a-mosaic .m1{grid-row:1/3}
+.a-mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.o-a .g-jump{margin:1.2rem -2rem 0;padding:0 2rem}
+.a-why{padding:2.8rem 0 1.2rem;max-width:60rem}
+.a-why h2{font-size:clamp(2.1rem,3.4vw,2.9rem);margin-bottom:.8rem}
+.a-why .lede{font-size:1.55rem}
+.a-beat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:4.5rem;row-gap:1.5rem;padding:3.6rem 0;border-top:1px solid var(--line)}
+.a-bh{display:grid;grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:baseline;margin-bottom:1.4rem}
+.a-bh .n{grid-row:1/3;font:400 5rem/.9 var(--serif)}
+.a-bh h3{font-size:clamp(2rem,3vw,2.7rem)}
+.a-prose{font-size:1.22rem;line-height:1.72;color:var(--ink)}
+.a-side .g-fig{margin:0 0 1.8rem}
+.a-side .g-fig .g-ph{aspect-ratio:3/2;height:auto}
+.a-figs2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.a-figs2 .g-cap{font-size:.92rem}
+.a-level .pg-rows{margin:0}
+.a-zones{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2rem;margin-top:.6rem}
+.a-zone .g-ph{aspect-ratio:4/3;height:auto;margin-bottom:.8rem}
+.a-zone h4{font-size:1.6rem}
+.a-zone p{font-size:1.02rem}
+.a-rulefacts{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:4rem;border-top:1px solid var(--line);padding-top:2.2rem}
+.a-taste,.a-short,.a-two,.a-end,.o-a .a-sources{border-top:1px solid var(--line);padding:3.2rem 0}
+.o-a h2{font-size:clamp(1.9rem,2.8vw,2.5rem);margin-bottom:1.4rem}
+.a-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem}
+.a-card b{display:flex;align-items:center;font:500 1.6rem var(--serif);margin-bottom:.4rem}
+.a-card p{font-size:1.18rem;line-height:1.6;margin:0}
+.a-short .pg-short .f a{font-size:1.45rem}
+.a-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:4rem}
+.a-names{list-style:none;margin:0;padding:0}.a-names li{font:500 2.4rem/1.15 var(--serif)}
+.a-alike{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.a-al a{display:block;text-decoration:none}
+.a-al .g-ph{aspect-ratio:4/3;height:auto;margin-bottom:.6rem}
+.a-al b{font:500 1.35rem var(--serif)}
+.a-al p{margin:.1rem 0 0;color:var(--ink3);font-size:.92rem}
+.a-end{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.o-a .pg-sources{columns:2;column-gap:3rem}
+@media (max-width:64rem){.a-beat{column-gap:2.5rem}.a-rulefacts,.a-two{gap:2.5rem}}
+@media (max-width:48rem){
+  .o-a .a-wrap{padding:1.2rem 1rem 2rem}.o-a .g-jump{margin:1rem -1rem 0;padding:0 1rem}
+  .bb-a{grid-template-columns:1fr}.bb-a .bb-ph{height:56vw}.bb-a .bb-lab{flex-direction:row;align-items:center;padding:1.1rem 1.2rem}
+  .a-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto auto;height:auto}.a-mosaic .m1{grid-column:1/3;grid-row:1;height:58vw}.a-mosaic .m2,.a-mosaic .m3{height:36vw}
+  .a-beat{grid-template-columns:1fr;padding:2.4rem 0}.a-bh .n{font-size:3.6rem}
+  .a-prose{font-size:1.1rem}.a-figs2{grid-template-columns:1fr}
+  .a-zones,.a-cards,.a-alike,.a-rulefacts,.a-two{grid-template-columns:1fr;gap:1.8rem}
+  .o-a .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}
+  .pg-short li{grid-template-columns:1fr}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
+}
