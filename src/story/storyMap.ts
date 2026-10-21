@@ -46,7 +46,8 @@ const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matche
 
 export function createStoryMap(container: HTMLElement, story: Story, start: Cam, events: StoryMapEvents): StoryMap {
   let imagery = true;
-  const ctl = createMap(container, { ...DEFAULT_MENU, boundaries: false }, { onImageryFailed: () => { imagery = false; } },
+  let lastShown: Credited[] | null = null; // re-sent when the imagery fails, so its credit goes
+  const ctl = createMap(container, { ...DEFAULT_MENU, boundaries: false }, { onImageryFailed: () => { imagery = false; if (lastShown) events.onLayers(lastShown, false); } },
     { lng: start.center[0], lat: start.center[1], zoom: start.zoom, bearing: start.bearing, pitch: start.pitch });
   const map = ctl.map;
   map.setMaxPitch(80);
@@ -139,11 +140,12 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     drawFocus(v);
     marks.splice(0).forEach((m) => m.remove());
     const el = (cls: string, text?: string) => { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; d.setAttribute('aria-hidden', 'true'); return d; };
-    for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label) }).setLngLat(m.at).addTo(map));
+    for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label), anchor: 'left', offset: [12, 0] }).setLngLat(m.at).addTo(map));
     if (v.dot) marks.push(new maplibregl.Marker({ element: el('story-dot') }).setLngLat(v.dot).addTo(map));
     facts.show(v.facts);
     const cam = camOf(v.target);
-    events.onLayers(layers.show(map, v, cam), imagery);
+    lastShown = layers.show(map, v, cam);
+    events.onLayers(lastShown, imagery);
     if (!cam) return; // framed once the shapes arrive
     framed = true;
     const token = ++flight;
@@ -159,7 +161,8 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     fly(0);
   }
 
-  map.on('movestart', (e) => { if ((e as { originalEvent?: unknown }).originalEvent) events.onUserMove(); });
+  // The reader took the map: drop the pending second leg of a flight so it does not take it back.
+  map.on('movestart', (e) => { if ((e as { originalEvent?: unknown }).originalEvent) { flight++; events.onUserMove(); } });
   map.on('move', () => events.onMove(map));
 
   return {

@@ -14,17 +14,15 @@ import { ROOT } from '../site';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
 import { selectionToHash } from '../url';
-import namesRioja from '../../data/story/names-rioja.geojson?url';
-import namesPriorat from '../../data/story/names-priorat.geojson?url';
 import { DWELL_MS, pickStep, readingLine, stopOf, targetOf, type Cam } from './camera';
 import type { LngLat, Story, StoryStep } from './format';
+import { storyFiles } from './files';
 import { loadStory } from './load';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, locator, locatorBox, measureText, type Credited, type Measured } from './view';
 import './story.css';
 
 const t = strings.story;
-const NAMES: Record<string, string> = { rioja: namesRioja, priorat: namesPriorat };
 const photos = (photosFile as unknown as { photos: Record<string, { alt: string; artist: string; licence: string; licenceUrl?: string | null; page: string }> }).photos;
 const focusOf = (key: string) => (storyFocus as Record<string, string>)[key] ?? (squareCrops as Record<string, { focus: string }>)[key]?.focus ?? '50% 50%';
 
@@ -162,7 +160,7 @@ export function StoryView({ tree, go, place, onTest }: Props) {
 
   // Named points (towns, ranges) for the markers a step names, from the story's names file.
   useEffect(() => {
-    const url = NAMES[story.id];
+    const url = storyFiles(story.id).names;
     if (!url) return;
     let live = true;
     fetch(url).then((r) => r.json()).then((fc: { features: Array<{ properties: { name: string }; geometry: { coordinates: LngLat } }> }) => {
@@ -170,6 +168,18 @@ export function StoryView({ tree, go, place, onTest }: Props) {
     }).catch(() => {});
     return () => { live = false; };
   }, [story.id]);
+
+  // The guide page stays mounted under the story: keep keyboard and screen reader on the story, and hand focus back to the button on close.
+  useEffect(() => {
+    const root = scroller.current;
+    const held = [...(root?.parentElement?.children ?? [])].filter((n): n is HTMLElement => n instanceof HTMLElement && n !== root && !n.hasAttribute('inert'));
+    held.forEach((n) => n.setAttribute('inert', ''));
+    root?.querySelector<HTMLElement>('.story-back')?.focus({ preventScroll: true });
+    return () => {
+      held.forEach((n) => n.removeAttribute('inert'));
+      document.querySelector<HTMLElement>('a.story-open')?.focus({ preventScroll: true });
+    };
+  }, []);
 
   const views = useMemo(() => story.steps.map((s) => {
     const stop = stopOf(guide, s);
@@ -268,7 +278,7 @@ export function StoryView({ tree, go, place, onTest }: Props) {
         <a className="story-back" href={pageHash} onClick={back}>{t.back(place.name)}</a>
         <div className="story-progress" aria-hidden="true"><i ref={progress} /></div>
       </header>
-      <main className="story-grid">
+      <div className="story-grid" role="region" aria-label={place.name}>
         <div className="story-mapwrap" ref={mapWrap} role="region" aria-label={t.mapLabel}>
           <div className="story-map" ref={mapEl} />
           {chip && <p className="story-chip">{chip}</p>}
@@ -296,7 +306,7 @@ export function StoryView({ tree, go, place, onTest }: Props) {
             </div>
           </section>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
