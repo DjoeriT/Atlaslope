@@ -15,6 +15,11 @@ export const CLIMATE_GROUPS: ClimateGroup[] = [
   { id: 'arid', label: 'Hot semi-arid and desert', note: 'dry and hot', codes: ['BSh', 'BWh'], color: '#9E2A1B' },
 ];
 export const NO_CLIMATE_COLOR = '#9A948A';
+/** "Other" in the guide's climate chart: several small classes together, so none of the group colours. */
+export const OTHER_CLIMATE_COLOR = '#D9D3C7';
+
+/** A Köppen code's colour: the same on the map's climate layer, its legend and the guide's climate chart (owner, 21 Oct 2026). */
+export const codeColor = (code: string): string => CLIMATE_GROUPS.find((g) => g.codes.includes(code))?.color ?? NO_CLIMATE_COLOR;
 
 export function climateGroupOf(placeId: string): ClimateGroup | undefined {
   const shares = measuresOf(placeId)?.koppen ?? [];

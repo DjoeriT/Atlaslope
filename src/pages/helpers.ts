@@ -2,6 +2,7 @@
 import { grapeLabel, STYLE_KINDS, type KoppenShare, type Measures, type ShownPhoto, type Sheet } from '../facts';
 import { strings } from '../strings';
 import type { Place, Region, Tree } from '../tree';
+import { codeColor, OTHER_CLIMATE_COLOR } from '../map/climate';
 
 const t = strings.place;
 const tf = strings.facts;
@@ -57,6 +58,8 @@ export interface ClimateSegment {
   label: string;
   /** 0 to 100, exact; the label carries the rounded number. */
   pct: number;
+  /** The class's colour, the map's own (src/map/climate.ts). */
+  color: string;
 }
 
 /** The measured Köppen shares as bar segments: the three biggest, then "Other" for what is left (when it rounds to 1% or more). */
@@ -66,9 +69,9 @@ export function climateSegments(shares: KoppenShare[]): ClimateSegment[] {
     const n = tf.koppenNames[s.code] ?? s.code;
     return n.charAt(0).toUpperCase() + n.slice(1);
   };
-  const top = sorted.slice(0, 3).map((s) => ({ label: name(s), pct: s.share * 100 }));
+  const top = sorted.slice(0, 3).map((s) => ({ label: name(s), pct: s.share * 100, color: codeColor(s.code) }));
   const rest = Math.max(0, 1 - top.reduce((sum, s) => sum + s.pct / 100, 0)) * 100;
-  if (Math.round(rest) >= 1) top.push({ label: t.page.otherClimate, pct: rest });
+  if (Math.round(rest) >= 1) top.push({ label: t.page.otherClimate, pct: rest, color: OTHER_CLIMATE_COLOR });
   return top.map((s) => ({ ...s, label: `${s.label} ${Math.round(s.pct)}%` }));
 }
 
@@ -79,10 +82,10 @@ export function compareShares(own: KoppenShare[], other: KoppenShare[]): Climate
   const rows = codes.map((c) => {
     const s = other.find((o) => o.code === c);
     const n = tf.koppenNames[c] ?? c;
-    return { label: `${n.charAt(0).toUpperCase() + n.slice(1)} ${Math.round((s?.share ?? 0) * 100)}%`, pct: (s?.share ?? 0) * 100 };
+    return { label: `${n.charAt(0).toUpperCase() + n.slice(1)} ${Math.round((s?.share ?? 0) * 100)}%`, pct: (s?.share ?? 0) * 100, color: codeColor(c) };
   });
   const rest = Math.max(0, 100 - rows.reduce((sum, r) => sum + r.pct, 0));
-  if (Math.round(rest) >= 1) rows.push({ label: `${t.page.otherClimate} ${Math.round(rest)}%`, pct: rest });
+  if (Math.round(rest) >= 1) rows.push({ label: `${t.page.otherClimate} ${Math.round(rest)}%`, pct: rest, color: OTHER_CLIMATE_COLOR });
   return rows;
 }
 
