@@ -1,5 +1,5 @@
 import { PageTop } from './PageTop';
-import { useEffect, useRef, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -21,7 +21,7 @@ import '../styles/pages.css';
 import '../story/story.css';
 import { Img } from '../cards/Img';
 import { StoryButton } from '../story/StoryButton';
-import { loadStory } from '../story/load';
+import { hasStory, storyStops } from '../story/ids';
 
 const t = strings.place.page;
 const tf = strings.facts;
@@ -96,7 +96,9 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const producers = sheet?.producers?.items ?? [];
   const next = nextRegion(tree, place.region);
   const guide = guideOf(place.id);
-  const story = loadStory(place.id); // "Map tour" shows only where a story file exists
+  // "Map tour" shows only where a story file exists; the stop count loads lazily so the atlas bundle holds no tour content.
+  const [stops, setStops] = useState<number>();
+  useEffect(() => { if (hasStory(place.id)) storyStops(place.id).then(setStops); }, [place.id]);
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
@@ -376,7 +378,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
               <header className="pg-spine">
                 <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
                 {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-                {guide && story && <StoryButton id={place.id} minutes={guide.minutes} stops={story.steps.length - 1} go={go} />}
+                {guide && stops !== undefined && <StoryButton id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
               </header>
             )}
 

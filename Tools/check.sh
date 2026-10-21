@@ -32,9 +32,26 @@ if [ "${1:-}" != "quick" ]; then
     echo "clean"'
   run "Download size under 2 MB (gzipped, imagery excluded)" "." bash -c '
     total=0
-    while IFS= read -r f; do total=$(( total + $(gzip -9 -c "$f" | wc -c) )); done < <(find dist -path dist/uitest -prune -o -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif" -print)
+    while IFS= read -r f; do total=$(( total + $(gzip -9 -c "$f" | wc -c) )); done < <(find dist -path dist/uitest -prune -o -path dist/story -prune -o -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif" -print)
     echo "gzipped download: $total bytes (limit 2000000)"
     [ "$total" -le 2000000 ]'
+  run "Story data under 150 KB per map tour (gzipped, imagery excluded)" "." bash -c '
+    # dist/story/ holds everything a tour loads. A file belongs to a tour when its name carries -<id>- (or starts <id>-); the rest (the tour code) is shared and added to each tour.
+    files=$(find dist/story -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif")
+    shared=0
+    for f in $files; do
+      b=$(basename "$f"); mine=""
+      for j in content/stories/*.json; do id=$(basename "$j" .json); case "$b" in *-"$id"-*|"$id"-*) mine=1;; esac; done
+      [ -n "$mine" ] || shared=$(( shared + $(gzip -9 -c "$f" | wc -c) ))
+    done
+    bad=0
+    for j in content/stories/*.json; do
+      id=$(basename "$j" .json); own=0
+      for f in $files; do case "$(basename "$f")" in *-"$id"-*|"$id"-*) own=$(( own + $(gzip -9 -c "$f" | wc -c) ));; esac; done
+      t=$(( own + shared )); echo "$id: $t bytes (own $own + shared tour code $shared, limit 150000)"
+      [ "$t" -le 150000 ] || bad=1
+    done
+    [ "$bad" -eq 0 ]'
   if [ "${1:-}" = "ui" ]; then
     run "UI tests" "passed|failed|flaky" npx playwright test
   fi
