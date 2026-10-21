@@ -85,15 +85,15 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
     May edit:    <exact files or folders>
     Must not:    <files, behaviour, decisions>
     Tests:       <tests that must exist or pass; Tools/check.sh green>
-    Done when:   <measurable criteria>
+    Done when:   <measurable criteria; for a map or UI change include `npm run shots:tour -- <id>` (or `npm run shots`) at phone and desktop with imagery, and the builder looks at the contact sheet before reporting (21 Oct 2026: builder shots without imagery missed three phone defects, costing a third card)>
     Report:      <file path; opens with the verdict and the count per severity; tags [V]/[R]/[A]>
     Stop and ask if: <conflicts with a decision, a failing old test, anything outward>
 
 ## Token budget
 | Agent | Default budget | Turn cap |
 |---|---|---|
-| BuilderBot, Sonnet, mechanical | 150k | 60 |
-| BuilderBot, Opus, tricky logic | 250k | 60 |
+| BuilderBot, Sonnet, mechanical | 150k | 120 |
+| BuilderBot, Opus, tricky logic | 250k | 120 |
 | ReviewBot, Sonnet, small diff | 60k | 40 |
 | ReviewBot, Opus, core logic | 100k | 40 |
 | ReviewBot, Sonnet, design (a new screen) | 50k | 30 |
@@ -101,7 +101,7 @@ A card's **Goal** line is written as an outcome too ("a tester can switch colour
 | Explore / one-off search | 40k | (built-in) |
 
 - **Stop rule:** at ~70% of the budget, or after two failed tries at the same problem, stop and report what is done, what is left, what blocks it.
-- **Turn checkpoint:** agents can't see tokens but can count turns: stop and hand back at two-thirds of the turn cap (40 of 60; 27 of 40).
+- **Turn checkpoint:** agents can't see tokens but can count turns: stop and hand back at two-thirds of the turn cap (80 of 120; 27 of 40).
 - **Report as you go:** create the report file in the first 5 turns; after each step's commit append one line (step, commit, tests).
   An agent that hits the cap without a report wastes the whole run.
 - **LeadBot judges every stop:** it may continue without asking the owner when there was real progress, what's left is inside the card's

@@ -8,7 +8,7 @@ concurrency:
   group: ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 jobs:
-  # Docs-only changes (docs/, Review/, top-level .md files) skip the build and tests; the jobs still report, so the PR can merge.
+  # Docs-only changes (docs/, Review/, .claude/, top-level .md files) skip the build and tests; the jobs still report, so the PR can merge.
   # Anything else runs everything; publish.yml reuses a green run for the same files, or runs the checks itself. Owner's yes, 16 Oct 20:17Z.
   scope:
     runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
         run: |
           files=$(git diff --no-renames --name-only "$BASE...$HEAD" 2>/dev/null) || { echo "docs=false" >> "$GITHUB_OUTPUT"; exit 0; }
           echo "$files"
-          if [ -n "$files" ] && ! printf '%s\n' "$files" | grep -qvE '^(docs/|Review/)|^[^/]+\.md$'; then
+          if [ -n "$files" ] && ! printf '%s\n' "$files" | grep -qvE '^(docs/|Review/|\.claude/)|^[^/]+\.md$'; then
             echo "docs=true" >> "$GITHUB_OUTPUT"; echo "Docs only: skipping the build and tests."
           else
             echo "docs=false" >> "$GITHUB_OUTPUT"
