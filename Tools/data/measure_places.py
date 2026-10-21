@@ -8,6 +8,10 @@ Writes data/place-measures.json. Needs shapely and Pillow, and network access to
 Altitude: the land inside the boundary, sampled on a grid (about 1 km apart, at most 6000 points), elevation read from Terrarium
 zoom 10 (about 115 m pixels at 40° N). We keep the 10th, 50th and 90th percentiles, rounded to 10 m. The boundary is the whole DO,
 not only its vineyards, so the range describes the land, and the sheet says so.
+Slope: at the same sample points, from the neighbouring Terrarium pixels (central differences, pixel size from the Mercator scale).
+We keep the median slope in degrees and the share of land steeper than 30% (about 16.7°), the slope at which CERVIM counts
+viticulture as "heroic" (steep-slope). Pixels are about 115 m, so narrow canyon walls read gentler than they are: compare places
+with each other, not with a field survey.
 Climate: the share of the boundary's area in each Köppen-Geiger class (Beck et al. 2023, 1991-2020), largest first, classes under
 5% dropped.
 
@@ -117,6 +121,30 @@ def elevation(img, fx, fy):
     return r * 256 + g + b / 256 - 32768
 
 
+def elevation_at(tiles, gx, gy):
+    """Elevation at global pixel (gx, gy) of zoom Z; None if that tile is not loaded."""
+    img = tiles.get((gx // 256, gy // 256))
+    if img is None:
+        return None
+    r, g, b = img.getpixel((gx % 256, gy % 256))
+    return r * 256 + g + b / 256 - 32768
+
+
+def slope_pct(tiles, x, y, lat):
+    """Slope in percent at tile coordinates (x, y), from the four neighbouring pixels."""
+    gx, gy = int(x * 256), int(y * 256)
+    e = [elevation_at(tiles, gx + dx, gy + dy) for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))]
+    if None in e:
+        return None
+    px = 40075016.686 * math.cos(math.radians(lat)) / (256 * 2 ** Z)  # metres per pixel
+    return 100 * math.hypot((e[0] - e[1]) / (2 * px), (e[2] - e[3]) / (2 * px))
+
+
+def neighbours(x, y):
+    gx, gy = int(x * 256), int(y * 256)
+    return {((gx + dx) // 256, (gy + dy) // 256) for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1), (0, 0))}
+
+
 def pct(vals, q):
     s = sorted(vals)
     return s[min(len(s) - 1, max(0, round(q * (len(s) - 1))))]
@@ -142,18 +170,22 @@ def main():
     targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
     targets["country:spain"] = spain_land()
     samples = {tid: points_in(g) for tid, g in targets.items()}
-    need = {(int(x), int(y)) for pts in samples.values() for lon, lat in pts for x, y in [tile_xy(lon, lat)]}
+    need = {t for pts in samples.values() for lon, lat in pts for t in neighbours(*tile_xy(lon, lat))}
     print(f"{len(need)} tiles", file=sys.stderr)
     with ThreadPoolExecutor(8) as ex:
         tiles = dict(ex.map(fetch, sorted(need)))
     koppen = [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in load("koppen-spain.geojson")["features"]]
     rows = {}
     for tid, geom in targets.items():
-        elev = []
+        elev, slopes = [], []
         for lon, lat in samples[tid]:
             x, y = tile_xy(lon, lat)
-            elev.append(elevation(tiles[(int(x), int(y))], x - int(x), y - int(y)))
+            e = elevation(tiles[(int(x), int(y))], x - int(x), y - int(y))
+            elev.append(e)
+            if e > 0:
+                slopes.append(slope_pct(tiles, x, y, lat))
         land = [e for e in elev if e > 0] or elev
+        slopes = [v for v in slopes if v is not None] or [0.0]
         shares = {}
         for code, name, kg in koppen:
             if kg.intersects(geom):
@@ -164,12 +196,15 @@ def main():
         climate = sorted(({"code": c, "name": n, "share": round(a / total, 2)} for c, (n, a) in shares.items()), key=lambda d: -d["share"])
         rows[tid] = {
             "altitude": {"p10": r10(pct(land, .1)), "median": r10(pct(land, .5)), "p90": r10(pct(land, .9)), "samples": len(land)},
+            "slope": {"medianDeg": round(math.degrees(math.atan(pct(slopes, .5) / 100)), 1),
+                      "steepShare": round(sum(v > 30 for v in slopes) / len(slopes), 2)},
             "koppen": [c for c in climate if c["share"] >= .05],
         }
     out = {pid: rows[pid] for pid in geoms}
     doc = {
         "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside "
-                    "the boundary (Mapzen Terrarium zoom 10). koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
+                    "the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's "
+                    "steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
                     "1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land "
                     "(spain-mask.json). regions: the same measures over the union of a study region's appellation-level places (parent spain; "
                     "zones excluded), for comparisons. See data/SOURCES.md.",
