@@ -1,5 +1,5 @@
 // What the guide page needs before a tour opens: which guides have a story, and how many stops. Lazy, so the atlas bundle holds no tour
-// content; the full file loads with StoryView (src/story/load.ts), in the story chunk.
+// content; the full file loads with the map column (GuideMap, src/story/load.ts), in the story chunk.
 import type { Story } from './format';
 
 const loaders = import.meta.glob<Story>('../../content/stories/*.json', { import: 'default' });

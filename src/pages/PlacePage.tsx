@@ -1,5 +1,5 @@
 import { PageTop } from './PageTop';
-import { useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -20,8 +20,12 @@ import { Mosaic } from './Mosaic';
 import '../styles/pages.css';
 import '../story/story.css';
 import { Img } from '../cards/Img';
-import { StoryButton } from '../story/StoryButton';
+import type { FlyAsk } from '../story/GuideMap';
 import { hasStory, storyStops } from '../story/ids';
+import { TourBand } from '../story/TourBand';
+
+// The map tour's column and engine load only when it opens (dist/story/, Tools/check.sh).
+const GuideMap = lazy(() => import('../story/GuideMap').then((m) => ({ default: m.GuideMap })));
 
 const t = strings.place.page;
 const tf = strings.facts;
@@ -33,6 +37,8 @@ interface Props {
   place: Place;
   /** The guide chapter to scroll to on opening ("Back to the guide"). */
   at?: string;
+  /** The map tour is open (#place=rioja&page&story): the same page in two columns, guide and map (layout A, owner 21 Oct 2026). */
+  tour?: boolean;
   /** Starts a review round of 10 on these places ("Test me"). */
   onTest(set: string[]): void;
 }
@@ -50,7 +56,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
  *  told in four beats (the place, the weather, the ground, what the rules make), each holding its own facts once, How it tastes as the
  *  answer, an In short box of five facts, plain browse sections, a small Test me door into Study, and the Sources. A place without a
  *  written Terroir section gets the same beats from its fact sheet. */
-export function PlacePage({ tree, go, place, at, onTest }: Props) {
+export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
   const pageRef = useRef<HTMLDivElement>(null);
   const jumpBar = useRef<HTMLElement>(null);
@@ -99,6 +105,8 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   // "Map tour" shows only where a story file exists; the stop count loads lazily so the atlas bundle holds no tour content.
   const [stops, setStops] = useState<number>();
   useEffect(() => { if (hasStory(place.id)) storyStops(place.id).then(setStops); }, [place.id]);
+  // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
+  const [flyAsk, setFlyAsk] = useState<FlyAsk>();
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
@@ -114,12 +122,16 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   );
   const pill = (chapter: string, index: number, label: string) => {
     const to: Selection = { kind: 'place', id: place.id, fly: { chapter, index } };
-    return (
-      <Link key={`${chapter}.${index}`} className="fly" to={to} go={go} label={t.flyLabel(label)}>
+    const body = (
+      <>
         <svg className="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" /><circle cx="12" cy="10" r="2.3" /></svg>
         <span><small>{t.onTheMap}</small>{label}</span>
-      </Link>
+      </>
     );
+    return tour ? (
+      <a key={`${chapter}.${index}`} className="fly" href={selectionToHash(to)} aria-label={t.flyLabel(label)} title={t.flyLabel(label)}
+        onClick={(e) => { e.preventDefault(); setFlyAsk({ chapter, index, n: (flyAsk?.n ?? 0) + 1 }); }}>{body}</a>
+    ) : <Link key={`${chapter}.${index}`} className="fly" to={to} go={go} label={t.flyLabel(label)}>{body}</Link>;
   };
 
 
@@ -348,8 +360,14 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const pageHash = selectionToHash({ kind: 'place', id: place.id, page: true });
 
   return (
-    <div ref={pageRef} className="pg" role="region" aria-label={strings.place.page.pageLabel(place.name)}>
+    <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      <div className="pg-body">
+      {tour && guide && (
+        <Suspense fallback={<aside className="pg-tourmap" />}>
+          <GuideMap place={place} guide={guide} fly={flyAsk} onHide={() => go({ kind: 'place', id: place.id, page: true })} />
+        </Suspense>
+      )}
       <div className="pg-listing">
         <nav className="kicker crumb" aria-label={tc.whereThisSits}>
           {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
@@ -364,7 +382,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
           {meta && <li className="meta">{meta}</li>}
         </ul>
         <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
-        <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>
+        {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
 
         <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
@@ -378,7 +396,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
               <header className="pg-spine">
                 <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
                 {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-                {guide && stops !== undefined && <StoryButton id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
+                {guide && stops !== undefined && !tour && <TourBand id={place.id} minutes={guide.minutes} stops={stops} go={go} />}
               </header>
             )}
 
@@ -514,6 +532,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
             )}
           </main>
         </div>
+      </div>
       </div>
     </div>
   );
