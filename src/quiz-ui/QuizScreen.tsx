@@ -54,7 +54,7 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, onView, onOpenPlac
     setEmpty(!round.items.length);
     if (round.items.length) setMode({ at: 'playing', round, id: ++ids.current, kind, review });
   };
-  const study = (learnMore: boolean) => studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, learnMore, focus: quiz.focus, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
+  const study = (learnMore: boolean) => studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, learnMore, focus: quiz.focus, course: quiz.course, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
   const startStudy = (learnMore: boolean) => { asked.current.clear(); play(study(learnMore)); };
   const startReview = (set: string[], size: 10 | 20) => {
     asked.current.clear();
@@ -64,12 +64,12 @@ export function QuizScreen({ route, tree, quiz, pick, hidden, onView, onOpenPlac
     play(reviewRound(tree, set, quiz.log, quiz.now(), { size, seed: roundSeed(quiz.now(), quiz.log.length) }), 'review', { set, size });
   };
 
-  const today = useMemo(() => studyRound(tree, quiz.log, quiz.now(), { focus: quiz.focus, ...localDay(quiz.now()) }), [tree, quiz.log, quiz.focus]);
+  const today = useMemo(() => studyRound(tree, quiz.log, quiz.now(), { focus: quiz.focus, course: quiz.course, ...localDay(quiz.now()) }), [tree, quiz.log, quiz.focus, quiz.course]);
   const keepGoing = useMemo(() => {
     if (mode.at !== 'ended' || !mode.result.round.more) return null;
     return mode.review
       ? reviewRound(tree, mode.review.set, quiz.log, quiz.now(), { size: mode.review.size, asked: asked.current, seed: roundSeed(quiz.now(), quiz.log.length) })
-      : studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, focus: quiz.focus, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
+      : studyRound(tree, quiz.log, quiz.now(), { asked: asked.current, focus: quiz.focus, course: quiz.course, seed: roundSeed(quiz.now(), quiz.log.length), ...localDay(quiz.now()) });
   }, [mode, quiz.log]);
 
   // Coming back from a place card puts the keyboard on the question again.

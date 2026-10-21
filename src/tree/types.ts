@@ -34,6 +34,8 @@ export interface Place {
   region: string;
   alsoWithin?: string[];
   quiz: 'core' | 'vc' | 'zone' | 'none';
+  /** False: the quiz never asks "find it" of this place, only what is this and facts (its outline lies over other DOs; owner, 21 Oct 2026). */
+  quizFindIt?: boolean;
   courseOrder?: number;
   northSouth?: number;
   community?: string;

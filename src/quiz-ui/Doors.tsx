@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import type { Round } from '../quiz';
+import { COURSES, type Round } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
@@ -8,6 +8,7 @@ import type { QuizApi } from './useQuiz';
 
 const t = strings.quiz;
 const d = t.doors;
+const c = t.course;
 
 export const dayName = (date: Date, withDate = true) =>
   date.toLocaleDateString('en-GB', { weekday: 'long', ...(withDate ? { day: 'numeric', month: 'long' } : {}) });
@@ -34,6 +35,8 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
   const upNext = d.upNext(fresh.length, sharedRegion(tree, fresh), focus.length > 0);
   const next = nextDue(tree, quiz.state, quiz.now());
   const questions = questionCount(round);
+  // A first visit has nothing due because nothing is learned yet: lead with where to start (QA sweep S2).
+  const firstVisit = !quiz.hasProgress;
   return (
     <section className="card glass" aria-labelledby="qh" data-sub="">
       <div className="body">
@@ -52,13 +55,27 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
             </>
           ) : (
             <>
-              <p>{d.nothingDue}</p>
-              {fresh.length > 0 && <p className="sub">{upNext}</p>}
+              {firstVisit && fresh.length > 0
+                ? <p className="big">{d.startWith(fresh.length, sharedRegion(tree, fresh))}</p>
+                : <><p>{d.nothingDue}</p>{fresh.length > 0 && <p className="sub">{upNext}</p>}</>}
               {fresh.length > 0
                 ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.learnNew(fresh.length)}</button>
                 : <button className="btn primary wide" onClick={() => onStudy(true)}>{d.learnExtra}</button>}
             </>
           )}
+          <details className="course">
+            <summary className="focusline">{c.line(c.names[quiz.course])} <span className="change">{c.change}</span></summary>
+            <fieldset>
+              <legend className="sr-only">{c.legend}</legend>
+              {COURSES.map((id) => (
+                <label key={id}>
+                  <input type="radio" name="course" value={id} checked={quiz.course === id} onChange={() => quiz.setCourse(id)} />
+                  <span><b>{c.names[id]}</b> {c.hints[id]}</span>
+                </label>
+              ))}
+              <p className="sub">{c.note}</p>
+            </fieldset>
+          </details>
           <p className="focusline">
             {focus.length ? d.focusOn(listOf(focusNames(tree, focus))) : d.focusNone}{' '}
             <a href={quizToHash({ sub: 'focus' })}>{focus.length ? d.change : d.setFocus}</a>

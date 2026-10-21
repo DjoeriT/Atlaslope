@@ -27,7 +27,9 @@
 @media (prefers-reduced-motion:reduce){.autonext i::after{animation-duration:2.5s}}
 .undo{font-size:.9rem;background:var(--fill);border-radius:var(--rad);padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
 .linkbtn{appearance:none;border:0;background:transparent;font:inherit;color:var(--accent);font-weight:600;cursor:pointer;min-height:2.75rem;padding:0 .4rem;text-decoration:underline}
-.linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:.2em}
+/* The miss link reads and looks like a link (QA sweep S5). */
+.linkish-open:hover{text-decoration-thickness:2px}
 .score{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3rem 0 .2rem}
 .score small{font-size:1.6rem;color:var(--ink3)}
 .row{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--ink2);margin-top:.5rem}
@@ -87,3 +89,12 @@ h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--in
 .back-quiz{position:absolute;left:27rem;top:1rem;z-index:6;min-height:2.75rem;padding:0 1rem;border-radius:var(--rad);font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
 @media (max-width:68.75em){.back-quiz{left:24rem}}
 @media (max-width:51.25em) and (orientation:portrait){.back-quiz{left:1rem;top:auto;bottom:calc(52% + .6rem)}}
+/* "My course": one quiet line that opens to four choices (Study step 1). */
+.course summary{cursor:pointer;list-style:none}
+.course summary::-webkit-details-marker{display:none}
+.course .change{color:var(--accent);font-weight:500;min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .3rem}
+.course fieldset{border:1px solid var(--line);border-radius:6px;margin:.25rem 0 0;padding:.4rem .8rem .6rem}
+.course label{display:flex;gap:.6rem;align-items:baseline;min-height:2.75rem;padding:.35rem 0;cursor:pointer}
+.course label+label{border-top:1px solid var(--line)}
+.course label span{color:var(--ink2);font-size:.9rem}
+.course label b{color:var(--ink);font-weight:500;margin-right:.3rem}

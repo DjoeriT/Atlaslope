@@ -28,7 +28,7 @@ describe('progress store', () => {
     const s = new MemStorage();
     createStore(asStorage(s), NOW).save({ log: log('a', 'b'), focus: ['rioja'] });
     const back = createStore(asStorage(s), NOW).load();
-    expect(back).toEqual({ version: 1, log: log('a', 'b'), focus: ['rioja'], savedAt: '2026-10-17T10:00:00.000Z' });
+    expect(back).toEqual({ version: 1, log: log('a', 'b'), focus: ['rioja'], course: 'none', savedAt: '2026-10-17T10:00:00.000Z' });
   });
 
   it('migrates a version 0 record and keeps every answer', () => {
@@ -137,3 +137,26 @@ describe('progress store', () => {
   });
 });
 
+describe('progress store: the course setting', () => {
+  it('loads a save from before the setting with every answer, as no course', () => {
+    const s = new MemStorage();
+    s.setItem('atlaslope.quiz', JSON.stringify({ version: 1, log: log('a', 'b'), focus: ['rioja'], savedAt: '2026-10-10T10:00:00.000Z' }));
+    const rec = createStore(asStorage(s), NOW).load();
+    expect(rec).toMatchObject({ version: 1, log: log('a', 'b'), focus: ['rioja'], course: 'none' });
+    const v0 = migrate({ answers: [{ place: 'a', memory: 'where', type: 'find-it', right: true, at: '2026-10-01T09:00:00.000Z', seconds: 3 }] });
+    expect(v0.ok && v0.record.course).toBe('none');
+  });
+
+  it('keeps the course across saves that do not name it, and across store instances', () => {
+    const s = new MemStorage();
+    const store = createStore(asStorage(s), NOW);
+    store.save({ log: [], focus: [], course: 'wset-2' });
+    store.save({ log: log('a'), focus: [] });
+    expect(createStore(asStorage(s), NOW).load()).toMatchObject({ log: log('a'), course: 'wset-2' });
+  });
+
+  it('reads an unknown course as no course and keeps the log', () => {
+    const m = migrate({ version: 1, log: log('a'), focus: [], course: 'wset-9' });
+    expect(m.ok && m.record).toMatchObject({ log: log('a'), course: 'none' });
+  });
+});

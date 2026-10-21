@@ -286,6 +286,8 @@ export const strings = {
       newCount: (n: number) => `${n} new`,
       and: ' and ',
       today: ' today',
+      // A first visit has nothing due yet, so it leads with where to start, not "Nothing due" (QA sweep S2, 21 Oct 2026). [proposal]
+      startWith: (n: number, region: string | null) => `Start with ${n} ${n === 1 ? 'place' : 'places'}${region ? ` in ${region}` : ''}.`,
       upNext: (n: number, region: string | null, focused: boolean) =>
         `Up next${focused ? ' from your focus' : ''}: ${n} ${region ? '' : 'new '}${n === 1 ? 'place' : 'places'}${region ? ` in ${region}` : ''}.`,
       start: (n: number) => `Start today's round · ${n} ${n === 1 ? 'question' : 'questions'}`,
@@ -301,6 +303,20 @@ export const strings = {
       nextDue: (day: string, n: number) => `Next due: ${day}, ${n} ${n === 1 ? 'place' : 'places'}.`,
       orExplore: 'Or explore the map.',
       nothingScheduled: 'Nothing is scheduled yet.',
+    },
+    // "My course" on the Study screen (Study step 1, 21 Oct 2026). [proposal]
+    course: {
+      line: (name: string) => `My course: ${name}.`,
+      change: 'Change',
+      legend: 'My course',
+      names: { none: 'No course', 'wset-2': 'WSET Level 2', 'wset-3': 'WSET Level 3', 'wine-scholar': 'Wine Scholar' },
+      hints: {
+        none: 'Every place, in course order.',
+        'wset-2': 'The places the Level 2 specification names.',
+        'wset-3': 'The places the Level 3 specification names.',
+        'wine-scholar': 'Every place except the three Rioja zones.',
+      },
+      note: "Places you've started keep their schedule.",
     },
     focus: {
       heading: 'Focus',
@@ -379,6 +395,8 @@ export const strings = {
       where: 'Where',
       mainGrape: 'Main grape',
       why: 'Why',
+      // The guide's own why line (its lede), shown after every answer and cited as the guide. [proposal]
+      whyFromGuide: 'From the guide',
       find: (name: string) => `Find ${name}`,
       findHint: 'Tap it on the map, then press Confirm.',
       picked: (name: string) => `You picked ${name}. Press Confirm, or tap another.`,
@@ -402,7 +420,8 @@ export const strings = {
       slipped: 'Counted as right.',
       slippedFeedback: 'Counted as right: you knew it, the tap slipped.',
       undo: 'Undo',
-      openCard: (name: string) => `Open ${name}'s card`,
+      // "The guide" is the whole place page (glossary); was "Open X's card" (QA sweep S5). [proposal]
+      readGuide: (name: string) => `Read the ${name} guide`,
     },
     end: {
       kicker: (kind: string) => `Round done · ${kind}`,
