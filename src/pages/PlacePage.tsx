@@ -96,7 +96,7 @@ export function PlacePage({ tree, go, place, at, onTest }: Props) {
   const producers = sheet?.producers?.items ?? [];
   const next = nextRegion(tree, place.region);
   const guide = guideOf(place.id);
-  const story = loadStory(place.id); // "Read with the map" shows only where a story file exists
+  const story = loadStory(place.id); // "Map tour" shows only where a story file exists
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">

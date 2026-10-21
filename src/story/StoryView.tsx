@@ -1,4 +1,4 @@
-// "Read with the map" (#127, #148): the guide's text on the left, the app's map on the right following it as the reader scrolls
+// "Map tour" (#127, #148): the guide's text on the left, the app's map on the right following it as the reader scrolls
 // (phone: map on top). No autoplay, no scroll-jacking. Approved mock: Review/mock-story-guide-v3/ (README "Changed from v2").
 import { useEffect, useMemo, useRef, useState, type MouseEvent, type ReactNode } from 'react';
 import type { Map as MapLibreMap } from 'maplibre-gl';

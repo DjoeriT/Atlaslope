@@ -29,7 +29,7 @@ p{text-wrap:pretty}
 .sitebar .brand b{font-family:var(--serif);font-weight:500;font-size:1.6rem;letter-spacing:-.01em}
 .sitebar .mark{width:2.15rem;height:2.15rem}
 .sitebar nav{display:flex;gap:.5rem;margin-left:auto}
-.sitebar nav a{position:relative;display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .85rem;color:#D8CDB4;text-decoration:none;font-size:1rem;font-weight:600;letter-spacing:.01em}
+.sitebar nav a{white-space:nowrap;position:relative;display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .85rem;color:#D8CDB4;text-decoration:none;font-size:1rem;font-weight:600;letter-spacing:.01em}
 .sitebar nav a:hover,.sitebar nav a[aria-current="page"]{color:var(--foil)}
 .sitebar nav a[aria-current="page"]::after{content:"";position:absolute;left:.85rem;right:.85rem;bottom:.45rem;height:2px;background:var(--foil)}
 /* buttons */
@@ -196,3 +196,4 @@ footer small{display:block;color:var(--ink3);font-size:.78rem;margin-top:.5rem;m
   footer .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
   footer .wrap > div:first-child{grid-column:1 / -1}
 }
+@media (max-width:480px){.sitebar nav a{padding:0 .4rem;font-size:.9rem}.sitebar nav a[aria-current="page"]::after{left:.4rem;right:.4rem}}

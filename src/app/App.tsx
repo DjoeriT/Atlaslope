@@ -185,7 +185,7 @@ export function App() {
         <button className="back-quiz glass" onClick={backToQuiz} aria-label={strings.quiz.backToQuizLabel}>‹ {strings.quiz.backToQuiz}</button>
       )}
       {!quiz && place && sel.page && <PlacePage key={place.id} tree={tree} go={go} place={place} at={sel.at} onTest={(set) => openQuiz('test', set)} />}
-      {/* "Read with the map" opens over the guide page, which stays mounted so "Back to <place>" returns to where the reader was. */}
+      {/* "Map tour" opens over the guide page, which stays mounted so "Back to <place>" returns to where the reader was. */}
       {!quiz && place && sel.page && sel.story && loadStory(place.id) && <StoryView key={place.id} tree={tree} go={go} place={place} onTest={(set) => openQuiz('test', set)} />}
       {!quiz && region && sel.page && <RegionPage key={region.id} tree={tree} go={go} region={region} />}
       {!quiz && !pageOpen && (

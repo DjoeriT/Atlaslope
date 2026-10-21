@@ -86,7 +86,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
-| 21 Oct 2026 | Story files ("Read with the map"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
+| 21 Oct 2026 | Story files ("Map tours"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
 | 19 Oct 2026 | Photo crops: every photo the Guides page shows as a square card has a checked crop in `src/home/photoCrops.json`; a unit test enforces it (no guide format change) | "Photo crops" below |
 | 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
 | 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
@@ -97,7 +97,7 @@ Each change to the guide format, newest first. Add a row in the same PR as the c
 | 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
 | 17 Oct 2026 | Terroir is a section of the place page, not its own page (release 10) | PR #45 |
 
-## Story files ("Read with the map")
+## Story files ("Map tours")
 A story is a map walk through one guide: `content/stories/<id>.json` (types in `src/story/format.ts`, loader and `storyIds()` / `storyCount()` in
 `src/story/load.ts`). It holds no guide text of its own. Only Rioja and Priorat have one so far.
 - `steps[]`, in order. Each names its `chapter` (a guide chapter id; `null` for the opening view) and either `fly` (index into that chapter's `fly[]`)

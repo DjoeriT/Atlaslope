@@ -4,7 +4,7 @@ import { sentences } from '../pages/sentence';
 import { loadTree } from '../tree';
 import { creditLine, photoCrops, photoImg, type PhotoCredit } from './guideCount';
 
-// The "Read with the map" page and the home tile list the stories the way the Guides page lists guides: from the files in
+// The "Map tours" page and the home tile list the stories the way the Guides page lists guides: from the files in
 // content/stories/ at build time, so a new story file adds a row and bumps the count with no page edit (build card 5, 21 Oct 2026).
 export interface StoryRow { id: string; name: string; lede: string; minutes: number; photo: string; focus: string | null }
 export interface StoryList { rows: StoryRow[]; photos: Record<string, PhotoCredit> }
@@ -42,7 +42,7 @@ const card = (g: StoryRow, photos: Record<string, PhotoCredit>): string =>
 
 export const fillStoryList = (html: string, list: StoryList): string => {
   const marked = /(<!-- story-list -->\n)[\s\S]*?(\n\s*<!-- \/story-list -->)/;
-  if (!marked.test(html)) throw new Error('read-with-the-map/index.html: the <!-- story-list --> markers are missing, so the list would ship empty');
+  if (!marked.test(html)) throw new Error('map-tours/index.html: the <!-- story-list --> markers are missing, so the list would ship empty');
   const body = `<div class="rowg">${list.rows.map((r) => card(r, list.photos)).join('')}</div>${creditLine(list.rows.map((r) => r.photo), list.photos)}`;
   return html.replace(marked, (_m, open: string, close: string) => open + body + close);
 };

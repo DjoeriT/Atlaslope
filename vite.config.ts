@@ -8,12 +8,12 @@ import { fillGuideCount, fillGuideList, guideRows, placeGuideCount } from './src
 export default defineConfig(({ mode }) => ({
   base: './',
   // Two pages (website slice 2): the home page at the root, the atlas at atlas/. Each is a real file, as GitHub Pages needs.
-  build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', stories: 'read-with-the-map/index.html', about: 'about/index.html' } } },
+  build: { rollupOptions: { input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', stories: 'map-tours/index.html', about: 'about/index.html' } } },
   plugins: [{ name: 'guide-count', transformIndexHtml: (html, ctx) => {
-    // Every page that shows the guide count gets it; the Guides and Read with the map pages get their lists.
+    // Every page that shows the guide count gets it; the Guides and Map tours pages get their lists.
     const out = fillStoryCount(fillGuideCount(html, placeGuideCount()), storyCount());
     const file = ctx.filename.replace(/\\/g, '/');
-    if (file.endsWith('read-with-the-map/index.html')) return fillStoryList(out, storyRows());
+    if (file.endsWith('map-tours/index.html')) return fillStoryList(out, storyRows());
     return file.endsWith('guides/index.html') ? fillGuideList(out, guideRows()) : out;
   } }],
   esbuild: { jsx: 'automatic' },
