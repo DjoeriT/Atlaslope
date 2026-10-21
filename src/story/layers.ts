@@ -1,7 +1,7 @@
 // The story's own map layers: the slope tint, climate (Köppen), geology, rivers and names, with the one-line legend (build card 4).
 // storyMap.ts calls `setup` once the map has loaded and `show` on every step; `show` returns what is on the map now, for the credit line.
 // Colours, widths and opacities are design choices from the approved mock (Review/mock-story-guide-v3/README.md, "Fact or design choice").
-import type { ExpressionSpecification, FilterSpecification, Map as MapLibreMap } from 'maplibre-gl';
+import type { ExpressionSpecification, FilterSpecification, GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import koppenUrl from '../../data/koppen-spain.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import namesRioja from '../../data/story/names-rioja.geojson?url';
@@ -35,6 +35,22 @@ const GEOLOGY = 'https://mapas.igme.es/gis/services/Cartografia_Geologica/IGME_M
 const KINDS = ['dot', 'town', 'range', 'peak'] as const;
 const HALO = { 'text-color': '#FFFFFF', 'text-halo-color': 'rgba(20,20,20,.9)', 'text-halo-width': 1.4 };
 const NONE: never[] = [];
+
+type Ring = number[][];
+const ringArea = (r: Ring) => r.reduce((a, p, i) => { const q = r[(i + 1) % r.length]; return a + (p[0] * q[1] - q[0] * p[1]); }, 0) / 2;
+
+/** One point per zone feature, at the centroid of its largest polygon part. */
+export function zoneLabelPoints(fc: GeoJSON.FeatureCollection): GeoJSON.FeatureCollection {
+  return { type: 'FeatureCollection', features: fc.features.map((f) => {
+    const g = f.geometry as GeoJSON.Polygon | GeoJSON.MultiPolygon;
+    const parts = (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).map((c) => c[0]);
+    const ring = parts.reduce((best, r) => (Math.abs(ringArea(r)) > Math.abs(ringArea(best)) ? r : best));
+    const a = ringArea(ring);
+    let x = 0, y = 0;
+    ring.forEach((p, i) => { const q = ring[(i + 1) % ring.length]; const w = p[0] * q[1] - q[0] * p[1]; x += (p[0] + q[0]) * w; y += (p[1] + q[1]) * w; });
+    return { type: 'Feature' as const, properties: f.properties, geometry: { type: 'Point' as const, coordinates: [x / (6 * a), y / (6 * a)] } };
+  }) };
+}
 
 export function storyLayers(): StoryLayers {
   let story: Story | null = null;
@@ -127,7 +143,11 @@ export function storyLayers(): StoryLayers {
 
       // The three Rioja zone names (step layer "zonelabels", the climate and zone steps); the polygon source puts each name inside its zone.
       if (s.id === 'rioja') {
-        map.addSource('story-zones', { type: 'geojson', data: zonesUrl });
+        // One label point per zone: the centroid of its largest part (a MultiPolygon would be named once per part).
+        map.addSource('story-zones', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+        void fetch(zonesUrl).then((r) => r.json()).then((fc: GeoJSON.FeatureCollection) => {
+          (map.getSource('story-zones') as GeoJSONSource | undefined)?.setData(zoneLabelPoints(fc));
+        }).catch(() => {});
         map.addLayer({ id: 'story-zonelabels', type: 'symbol', source: 'story-zones', layout: { visibility: 'none', 'text-field': ['upcase', ['get', 'zone']], 'text-font': FONT, 'text-size': 13, 'text-letter-spacing': 0.14, 'text-max-width': 6 }, paint: HALO });
       }
 

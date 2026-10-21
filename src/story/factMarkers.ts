@@ -38,7 +38,7 @@ export function createFacts(map: MapLibreMap): Facts {
     p?.remove();
     if (p && refocus) from?.focus();
   };
-  const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close(true); };
+  const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape' && pop) { e.preventDefault(); close(true); } }; // handled: the app's own Escape (leave the story) then stays out
 
   function open(f: FactView, button: HTMLElement) {
     close(false);
