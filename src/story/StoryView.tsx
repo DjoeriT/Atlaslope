@@ -84,10 +84,22 @@ function stepText(tree: Tree, guide: Guide, story: Story, step: StoryStep, i: nu
       </>
     );
   }
-  const opening = prev?.chapter !== step.chapter && (
+  // A chapter that opens on an overview and then flies to a stop keeps its last paragraph for that stop, so the text read beside the
+  // flight is the one it proves (Rioja's barrel chapter: the overview, then Haro's station quarter; as in the mock).
+  const handsOn = (s: StoryStep | undefined, next: StoryStep | undefined) =>
+    !!s && s.fly === undefined && s.card === undefined && next?.chapter === s.chapter && next.fly !== undefined && ch.paras.length > 1;
+  const first = prev?.chapter !== step.chapter;
+  const kept = first && handsOn(step, story.steps[i + 1]);
+  const handed = !first && handsOn(prev, step) && story.steps[i - 2]?.chapter !== step.chapter;
+  const opening = first ? (
     <>
       <h2 id={`story-${ch.id}`} tabIndex={-1}><span className="n">{chIndex + 1}</span>{ch.title}</h2>
-      {ch.paras.map((p, k) => <p key={k}>{p}</p>)}
+      {(kept ? ch.paras.slice(0, -1) : ch.paras).map((p, k) => <p key={k}>{p}</p>)}
+      {!kept && <Src cites={ch.cite} />}
+    </>
+  ) : handed && (
+    <>
+      <p>{ch.paras[ch.paras.length - 1]}</p>
       <Src cites={ch.cite} />
     </>
   );
@@ -111,7 +123,7 @@ function stepText(tree: Tree, guide: Guide, story: Story, step: StoryStep, i: nu
     <>
       {opening}
       {stop && (
-        <div className={opening ? 'story-stop' : 'story-stop solo'}>
+        <div className={first ? 'story-stop' : 'story-stop solo'}>
           {step.photo && <Photo id={step.photo} cls="story-img" />}
           <p className="story-stop-lab"><small>{t.onTheMap}</small>{stop.label}</p>
           <p className="story-cap">{stop.caption}</p>

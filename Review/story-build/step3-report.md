@@ -21,8 +21,8 @@ State: partly done (see end)
 Partly done. Left: App.tsx route (render StoryView over PlacePage when sel.story, go() equality on story, Escape back to page), button C on PlacePage, full vitest + build, shots. No Esri key in .env.local here: local map is the atlas base.
 
 ## What differs from the mock
-- Rioja barrel chapter: both paragraphs sit at the barrel step; the mock moved the second to the Haro step.
 - MapLibre compact attribution kept (moved above the credit line); mock had it off.
 - Photos without a photo-focus.json entry use their square-crop focus from src/home/photoCrops.json [A].
 | 3 route: StoryView over PlacePage on #place=<id>&page&story; Escape and Back return to the page (history.back) | (this commit) | tsc clean |
 | 4 button C under the guide lede, only for ids with a story file | (this commit) | tsc clean |
+| 5 barrel chapter: its last paragraph moves to the Haro stop, as in the mock (rule: an overview step followed by a fly stop of the same chapter) | (this commit) | tsc clean |
