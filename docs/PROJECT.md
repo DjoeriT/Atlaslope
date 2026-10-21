@@ -74,8 +74,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   top bar, listed at guides/#map-tours (map-tours/ and read-with-the-map/ redirect there); tour data has its own download limit (150 KB per tour) and the main site
   keeps 2 MB (incident: PR #171 went to 2.24 MB); search in the top bar of every page at all times.
 - 21 Oct, later (owner; detail in `docs/handoffs/2026-10-21-agenda-after-62.md`): tours stay hand-made, no default-tour generator.
-  Map tour direction B (`Review/mock-tour-wow/`): calm guide map plus "Fly the tour" restoring the release 59 full-screen tour, big
-  entry with a photo at the top of the guide; the guide stays the default. "Study" becomes "Learn" (lands with the Learn PR). Learn:
+  Map tour: B and a clean-slate round 1 (`Review/mock-tour-clean/`) dropped the same evening; the v3 journey comes back exactly,
+  full-screen, opened from a big photo button at the top of the guide, a photo in every stop card (`docs/handoffs/2026-10-21-tour-v3-restore.md`). "Study" becomes "Learn" (lands with the Learn PR). Learn:
   one course setting that filters everything, default all of Spain, Cava and Catalunya in without the map question, WSET Level 2 ·
   Spain pilot next. Launch: wine lovers first (reverses 17 Oct), quiet launch, then testers, noindex until the public step, tip link.
   Speed: page shell, then a service worker; no CDN. Guides current: "Checked on" plus source dates, pilot on 3 places.
@@ -97,7 +97,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 
 ## Map tours (renamed from "Read with the map" 21 Oct 2026; part of the guide page, listed at guides/#map-tours)
 Live for Rioja and Priorat since release 59 (built from `Review/mock-story-guide-v3/`; hand-off `docs/handoffs/2026-10-21-story-guide-build.md`,
-format in `docs/guides.md` "Story files"). Next: direction B on Rioja and Priorat (brief in `2026-10-21-agenda-after-62.md`), then the other 11, hand-made.
+format in `docs/guides.md` "Story files"). Next: restore the v3 journey on Rioja and Priorat (brief in `2026-10-21-tour-v3-restore.md`), then the other 11, hand-made.
 Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", then folded into the guide page, same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
 get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
 report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
@@ -122,7 +122,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
 - Next country order (reports in `Review/countries/compare.md`; recommended Portugal first), asked 21 Oct 2026.
-- Learn: rename "Study region" and "The wine study atlas"? Tour B: stops with no photo of their own, no card or the section photo?
+- Learn: rename "Study region" and "The wine study atlas"? Tour restore: stops with no photo of their own, a new photo or the section photo?
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-21-tour-v3-restore](2026-10-21-tour-v3-restore.md): map tour round 1 and B dropped; back to the v3 journey, restore brief (#148, #127, 21 Oct 2026)
 - [2026-10-21-agenda-after-62](2026-10-21-agenda-after-62.md): after release 62: reports, owner decisions, Learn status, map tour B and Learn briefs, next country (21 Oct 2026)
 - [2026-10-21-map-tours](2026-10-21-map-tours.md): rename to Map tours, top-bar item and search, own tour download limit; brief for the other 11 tours (#148, 21 Oct 2026)
 - [2026-10-21-story-guide-build](2026-10-21-story-guide-build.md): "Read with the map" build part 1, Rioja + Priorat data, format, view, layers (#127, #148, 21 Oct 2026)
