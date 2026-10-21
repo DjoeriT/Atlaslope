@@ -14,7 +14,7 @@ describe('the home story tile', () => {
     expect(storyCount()).toBeGreaterThan(0);
   });
   it('links to the page, which the top bar and footer link to as well', () => {
-    expect(home).toMatch(/data-count="stories">\d+<\/dt><dd><a href="map-tours\/">map tours, the map follows the text<\/a>/);
+    expect(home).toMatch(/data-count="stories">\d+<\/dt><dd><a href="map-tours\/">map tours<\/a>/);
     expect(home.match(/href="map-tours\/"/g)?.length).toBe(3);
   });
   it('counts a new story file with no page edit', () => {
