@@ -99,8 +99,12 @@ export function GuideMap({ place, guide, story, fly, onHide }: Props) {
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; pick(); }); };
     page.addEventListener('scroll', onScroll, { passive: true });
     addEventListener('resize', onScroll);
+    // Lazy photos load as they near the screen and shift the links by a few pixels without a scroll: look again whenever the guide's height changes.
+    const grow = new ResizeObserver(onScroll);
+    const listing = page.querySelector('.pg-listing');
+    if (listing) grow.observe(listing);
     pick();
-    return () => { page.removeEventListener('scroll', onScroll); removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
+    return () => { grow.disconnect(); page.removeEventListener('scroll', onScroll); removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
   }, [story, guide]);
 
   // Map moves wait for the last one to land (DWELL_MS), so a fast scroll does not queue flights.

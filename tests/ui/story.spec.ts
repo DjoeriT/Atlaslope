@@ -133,7 +133,8 @@ for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { wi
   test(`scrolling the Rioja guide at ${name} shows stops 1 to 9 in order`, async ({ page }) => {
     await page.setViewportSize(size);
     await open(page, '#place=rioja&page&story');
-    await expect(mapCol(page)).toBeVisible();
+    // The map chunk loads lazily and its empty placeholder has no data-step: scroll only once the real column (step 1) is mounted.
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
     for (const [id, anchor, rank] of ORDER) {
       await scrollToLine(page, anchor, rank);
       await expect(mapCol(page)).toHaveAttribute('data-step', id);
