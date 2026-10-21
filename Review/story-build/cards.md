@@ -10,9 +10,9 @@ Branch `claude/story-guide-mock`. One builder at a time. Reports in this folder.
 | 2 | Story format, loader, checks, guides.md | Sonnet | 100K | done, 69K |
 | 3 | Story view on the app map, button C | Opus | 250K | done, 158K (one resume) |
 | 4 | Layers: rivers, names, climate, geology, tint, fact markers | Sonnet | 125K | done, 118K (one resume) |
-| 5 | Listing page and home count | Sonnet | 100K | ready |
-| 6 | Unit tests, one Playwright spec (fixtures) | Sonnet | 80K | ready |
-| 7 | ReviewBot design + Opus diff | Sonnet/Opus | 50K + 100K | after 6 |
+| 5 | Listing page and home count | Sonnet | 100K | done, 72K |
+| 6 | Unit tests, one Playwright spec (fixtures) | Sonnet | 80K | done, 42K |
+| 7 | ReviewBot design + Opus diff | Sonnet/Opus | 50K + 100K | running |
 
 ## Card 2: story format
 Goal: each story guide is one data file the app reads, its map stops drawn only from the guide's own text.
