@@ -228,6 +228,7 @@
 .pg-say{margin:.35rem 0 0;font:400 1.05rem var(--serif);font-style:italic;color:var(--ink2)}
 .pg-say span{font:500 .78rem var(--sans);font-style:normal;color:var(--ink3);margin-right:.35rem}
 .pg-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.2rem}
+.pg-tourlink{margin-top:1.2rem}
 .pg-cols main > header.pg-spine{padding:0 0 .5rem;max-width:46rem}
 .pg-spine h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,3.2vw,2.4rem)!important;line-height:1.1!important;letter-spacing:-.015em}
 .pg-lede{font:400 1.25rem/1.55 var(--serif);color:var(--ink);margin:0 0 .3rem;max-width:38rem}

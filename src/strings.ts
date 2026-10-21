@@ -433,6 +433,8 @@ export const strings = {
   // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
     open: 'Map tour',
+    /** The one-line link at the top of a guide that has a tour; it scrolls to the band. */
+    jumpToTour: 'Map tour',
     // The band under the guide's lede (B3, owner 21 Oct 2026) and the bar over the map column.
     kickerMap: 'AtlaSlope map',
     bandTitle: (stops: number) => `Map tour · ${stops} places to fly to`,

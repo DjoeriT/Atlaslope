@@ -133,11 +133,11 @@ export function storyLayers(): StoryLayers {
         map.addLayer({ id: 'story-names-dot', type: 'circle', source: 'story-names', filter: of('town'),
           paint: { 'circle-radius': 2.6, 'circle-color': '#FFFFFF', 'circle-stroke-color': 'rgba(20,20,20,.9)', 'circle-stroke-width': 1 } });
         map.addLayer({ id: 'story-names-town', type: 'symbol', source: 'story-names', filter: of('town'),
-          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 13, 'text-anchor': 'left', 'text-offset': [0.6, 0], 'symbol-sort-key': 1 }, paint: HALO });
+          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 13, 'text-anchor': 'left', 'text-offset': [1.3, 0], 'symbol-sort-key': 1 }, paint: HALO });
         map.addLayer({ id: 'story-names-range', type: 'symbol', source: 'story-names', filter: of('range'),
-          layout: { 'text-field': ['upcase', ['get', 'name']], 'text-font': FONT, 'text-size': 11, 'text-letter-spacing': 0.14, 'text-max-width': 8, 'symbol-sort-key': 0 }, paint: HALO });
+          layout: { 'text-field': ['upcase', ['get', 'name']], 'text-font': FONT, 'text-size': 11, 'text-letter-spacing': 0.14, 'text-max-width': 8, 'text-anchor': 'left', 'text-justify': 'left', 'text-offset': [1.6, 0], 'symbol-sort-key': 0 }, paint: HALO });
         map.addLayer({ id: 'story-names-peak', type: 'symbol', source: 'story-names', minzoom: 10, filter: of('peak'),
-          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 11, 'text-max-width': 7, 'symbol-sort-key': 2 }, paint: HALO });
+          layout: { 'text-field': ['get', 'name'], 'text-font': FONT, 'text-size': 11, 'text-max-width': 7, 'text-anchor': 'left', 'text-justify': 'left', 'text-offset': [1.6, 0], 'symbol-sort-key': 2 }, paint: HALO });
       }
 
       // The three Rioja zone names (step layer "zonelabels", the climate and zone steps); the polygon source puts each name inside its zone.

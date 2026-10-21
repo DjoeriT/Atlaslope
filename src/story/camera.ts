@@ -59,9 +59,21 @@ export function readingLine(areaTop: number, viewHeight: number, narrow: boolean
   return areaTop + (viewHeight - areaTop) * (narrow ? 0.3 : 0.45);
 }
 
-/** The step on show: the last one whose top has passed the reading line; the first before any has. */
+/** Links in one row of the page (two pills side by side, three zone cards in a grid) share a top. Spread them 12 px apart in reading
+ *  order, so the reader scrolls through them one at a time instead of the last one taking the whole row. */
+export function spreadRows(tops: readonly number[]): number[] {
+  const out = [...tops];
+  let base = NaN, rank = 0;
+  tops.forEach((t, i) => {
+    if (!Number.isFinite(t)) return;
+    if (Math.abs(t - base) < 6) { rank++; out[i] = base + rank * 12; } else { base = t; rank = 0; }
+  });
+  return out;
+}
+
+/** The step on show: the one whose anchor is nearest above the reading line (the later step when two share a place); the first before any has passed. */
 export function pickStep(tops: readonly number[], line: number): number {
-  let best = 0;
-  tops.forEach((t, i) => { if (t <= line) best = i; });
+  let best = 0, at = -Infinity;
+  tops.forEach((t, i) => { if (t <= line && t >= at) { best = i; at = t; } });
   return best;
 }

@@ -10,8 +10,16 @@ async function open(page: Page, hash: string) {
   await page.goto(`./${hash}`);
 }
 const mapCol = (page: Page) => page.locator('.pg.tour .pg-tourmap');
-async function scrollTo(page: Page, selector: string) {
-  await page.locator(selector).first().evaluate((el) => el.scrollIntoView({ block: 'start' }));
+// Scrolls so the anchor sits just above the reading line, as a reader's scroll does (the page's own rule is in src/story/camera.ts).
+async function scrollToLine(page: Page, anchor: string, rank = 0) {
+  await page.locator('.pg').evaluate((pg, [a, k]) => {
+    const narrow = matchMedia('(max-width: 47.5em)').matches;
+    const bar = pg.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
+    const map = pg.querySelector('.pg-tourmap')?.getBoundingClientRect().bottom ?? bar;
+    const areaTop = narrow ? map : bar;
+    const line = areaTop + (innerHeight - areaTop) * (narrow ? 0.3 : 0.45);
+    pg.scrollTop += (pg.querySelector(a) as HTMLElement).getBoundingClientRect().top - (line - 3 - 12 * k);
+  }, [anchor, rank] as const);
 }
 
 test('the band shows on the Rioja guide in place of "Show on map", and not on a guide without a tour', async ({ page }) => {
@@ -35,7 +43,7 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
   await expect(page.locator('.pg-climate')).toBeVisible(); // the guide's own charts stay
   await expect(page.locator('#taste')).toBeAttached();
-  await scrollTo(page, '#terroir-soils');
+  await scrollToLine(page, '[data-fly="soils.0"]');
   await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
   await expect(page.locator('.pg-tourcap')).toContainText('Stop 7 of 9');
   await expect(page.locator('.pg-tourmap .story-credit')).toContainText('Source: IGME, MAGNA 50');
@@ -51,8 +59,12 @@ test('a fly link flies the map to its stop, without leaving the guide', async ({
 
 test('a fact marker opens with Enter, Escape closes it and focus returns to the marker', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
-  await scrollTo(page, '#terroir-valley');
-  await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
+  await expect(mapCol(page)).toBeVisible();
+  // The page settles as images load: scroll again until the stop holds.
+  await expect(async () => {
+    await scrollToLine(page, '[data-fly="valley.0"]');
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'valley', { timeout: 1000 });
+  }).toPass();
   await expect(page.getByRole('button', { name: /^Fact: / }).first()).toBeVisible(); // MapLibre must not rename it "Map marker"
   const marker = page.locator('.story-fk').first();
   await marker.focus();
@@ -83,4 +95,35 @@ test('the map column comes after the guide in reading order, and the band still 
   await open(page, '#place=rioja&page');
   await expect(page.locator('.pg-tour-still')).toHaveAttribute('aria-hidden', 'true');
   await expect(page.locator('.pg-tour-still')).toHaveAttribute('inert', '');
+});
+
+// Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
+// [step, anchor, place in its row]: links sharing a row are spread 12 px apart in reading order (spreadRows), so the k-th sits k x 12 px lower.
+const ORDER: Array<[string, string, number]> = [
+  ['intro', '.pg-spine', 0], ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
+  ['z-rioja-alta', '[data-fly="climate.0"]', 0], ['z-rioja-alavesa', '[data-fly="climate.1"]', 1], ['z-rioja-oriental', '[data-fly="climate.2"]', 2],
+  ['soils', '[data-fly="soils.0"]', 0], ['barrel', '#terroir-barrel', 0], ['haro', '[data-fly="barrel.0"]', 0],
+];
+for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { width: 390, height: 844 }]] as const) {
+  test(`scrolling the Rioja guide at ${name} shows stops 1 to 9 in order`, async ({ page }) => {
+    await page.setViewportSize(size);
+    await open(page, '#place=rioja&page&story');
+    await expect(mapCol(page)).toBeVisible();
+    for (const [id, anchor, rank] of ORDER) {
+      await scrollToLine(page, anchor, rank);
+      await expect(mapCol(page)).toHaveAttribute('data-step', id);
+    }
+    await expect(page.locator('.pg-tourcap')).toContainText('Stop 9 of 9');
+  });
+}
+
+test('a "Map tour" link at the top of the guide scrolls to the band and gives it focus', async ({ page }) => {
+  await open(page, '#place=rioja&page');
+  await expect(page.locator('a.story-open')).toBeAttached();
+  await page.locator('.pg-tourlink a').click();
+  await expect(page.locator('#map-tour')).toBeFocused();
+  await expect(page.locator('#map-tour')).toBeInViewport();
+  await open(page, '#place=valdepenas&page');
+  await expect(page.locator('h1').first()).toBeVisible();
+  await expect(page.locator('.pg-tourlink')).toHaveCount(0);
 });

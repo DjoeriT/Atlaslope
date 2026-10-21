@@ -5,11 +5,10 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Guide } from '../facts';
 import { strings } from '../strings';
 import type { Place } from '../tree';
-import { DWELL_MS, pickStep, readingLine, stopOf, targetOf, type Cam } from './camera';
+import { DWELL_MS, pickStep, readingLine, spreadRows, stopOf, targetOf, type Cam } from './camera';
 import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
-import { loadStory } from './load';
-import { sectionSelector, sectionSteps, stepOfLink } from './steps';
+import { anchorOf, stepOfLink } from './steps';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, type Credited } from './view';
 
@@ -21,12 +20,12 @@ export interface FlyAsk { chapter: string; index: number; n: number }
 interface Props {
   place: Place;
   guide: Guide;
+  story: Story;
   fly?: FlyAsk;
   onHide(): void;
 }
 
-export function GuideMap({ place, guide, fly, onHide }: Props) {
-  const story = loadStory(place.id) as Story;
+export function GuideMap({ place, guide, story, fly, onHide }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const mapEl = useRef<HTMLDivElement>(null);
   const smap = useRef<StoryMap | null>(null);
@@ -74,19 +73,19 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
     return () => { ro.disconnect(); m.remove(); smap.current = null; };
   }, [story]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Scrolling: the chapter whose top has passed the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
+  // Scrolling: the step whose anchor (its fly link, or its chapter for an overview) is nearest above the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
   useEffect(() => {
     const page = wrap.current?.closest<HTMLElement>('.pg');
     if (!page) return;
     const narrow = matchMedia('(max-width: 47.5em)');
-    const sections = sectionSteps(story);
+    const anchors = story.steps.map((st) => anchorOf(guide, st));
     let last = -1;
     const pick = () => {
       const bar = page.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
       const areaTop = narrow.matches ? wrap.current?.getBoundingClientRect().bottom ?? bar : bar;
-      const tops = sections.map((s) => page.querySelector(sectionSelector(s.chapter))?.getBoundingClientRect().top ?? Infinity);
+      const tops = spreadRows(anchors.map((a) => page.querySelector(a)?.getBoundingClientRect().top ?? Infinity));
       const i = pickStep(tops, readingLine(areaTop, innerHeight, narrow.matches));
-      if (i !== last) { last = i; setActive(sections[i].step); }
+      if (i !== last) { last = i; setActive(i); }
     };
     let raf = 0;
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; pick(); }); };
@@ -94,7 +93,7 @@ export function GuideMap({ place, guide, fly, onHide }: Props) {
     addEventListener('resize', onScroll);
     pick();
     return () => { page.removeEventListener('scroll', onScroll); removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
-  }, [story]);
+  }, [story, guide]);
 
   // Map moves wait for the last one to land (DWELL_MS), so a fast scroll does not queue flights.
   useEffect(() => {

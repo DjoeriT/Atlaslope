@@ -139,7 +139,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     drawFocus(v);
     marks.splice(0).forEach((m) => m.remove());
     const el = (cls: string, text?: string) => { const d = document.createElement('div'); d.className = cls; if (text) d.textContent = text; d.setAttribute('aria-hidden', 'true'); return d; };
-    for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label), anchor: 'left', offset: [12, 0] }).setLngLat(m.at).addTo(map));
+    for (const m of v.markers) marks.push(new maplibregl.Marker({ element: el('story-mk', m.label), anchor: 'left', offset: [16, 0] }).setLngLat(m.at).addTo(map));
     if (v.dot) marks.push(new maplibregl.Marker({ element: el('story-dot') }).setLngLat(v.dot).addTo(map));
     facts.show(v.facts);
     const cam = camOf(v.target);
