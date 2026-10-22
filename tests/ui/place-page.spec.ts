@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 // The place card as a teaser and the full place page (#place=<id>&page). Real places and photos, no tiles.
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('h1').first()).toBeVisible();

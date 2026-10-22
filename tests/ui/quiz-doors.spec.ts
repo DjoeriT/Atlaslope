@@ -146,14 +146,14 @@ test('blocked storage: the quiz still opens and says progress will not be kept',
 });
 
 test('Home has no Today card before there is progress', async ({ page }) => {
-  await open(page, '');
+  await open(page, '#country=spain');
   await expect(page.locator('.card h1')).toHaveText('Spain');
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
 });
 
 test('the Atlas has no Today card with progress either; the Study door carries what is due', async ({ page }) => {
   // Atlas and Study apart (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
-  await open(page, '', SEED);
+  await open(page, '#country=spain', SEED);
   await expect(page.locator('.card h1')).toHaveText('Spain');
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();

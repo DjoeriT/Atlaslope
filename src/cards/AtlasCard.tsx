@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useCallback, useRef } from 'react';
 import { photoByKey } from '../facts';
 import photoCrops from '../home/photoCrops.json';
 import { ROOT } from '../site';
@@ -20,18 +20,38 @@ const media = (file: string) => `${ROOT}atlas/${file}`;
 /** A short muted loop of the real map. It plays only while on screen and never under reduced motion (the poster stays); the file is not
  *  fetched until it first scrolls near (preload none), so the map's own first load is not slowed. */
 function Clip({ name, alt }: { name: string; alt: string }) {
-  const video = useRef<HTMLVideoElement>(null);
+  const stop = useRef<(() => void) | null>(null);
   const still = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  useEffect(() => {
-    const v = video.current;
-    if (!v || still || typeof IntersectionObserver === 'undefined') return;
-    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) void v.play().catch(() => {}); else v.pause(); }, { threshold: 0.4 });
-    io.observe(v);
-    return () => io.disconnect();
-  }, [still]);
+  // A callback ref and a plain visibility check on scroll and resize. An IntersectionObserver made while the card swap's view transition
+  // runs never reported, so the clips never played (LeadBot's preview check, 22 Oct 2026). React calls the ref with null on unmount.
+  const watch = useCallback((v: HTMLVideoElement | null) => {
+    stop.current?.();
+    stop.current = null;
+    if (!v) return;
+    // React sets muted as a property only; iOS Safari wants the attribute before it plays a video inline without a tap.
+    v.setAttribute('muted', '');
+    const scroller = v.closest('.scroll') ?? null;
+    const check = () => {
+      const r = v.getBoundingClientRect();
+      const box = scroller?.getBoundingClientRect() ?? { top: 0, bottom: innerHeight };
+      const shown = Math.min(r.bottom, box.bottom, innerHeight) - Math.max(r.top, box.top, 0);
+      if (r.height > 0 && shown >= r.height * 0.4 && document.visibilityState === 'visible') { if (v.paused) void v.play().catch(() => {}); }
+      else if (!v.paused) v.pause();
+    };
+    const timers = [0, 400, 1200].map((ms) => setTimeout(check, ms));
+    scroller?.addEventListener('scroll', check, { passive: true });
+    addEventListener('resize', check);
+    document.addEventListener('visibilitychange', check);
+    stop.current = () => {
+      timers.forEach(clearTimeout);
+      scroller?.removeEventListener('scroll', check);
+      removeEventListener('resize', check);
+      document.removeEventListener('visibilitychange', check);
+    };
+  }, []);
   if (still) return <img src={media(`${name}-poster.webp`)} alt={alt} />;
   return (
-    <video ref={video} muted loop playsInline preload="none" poster={media(`${name}-poster.webp`)} aria-label={alt}>
+    <video ref={watch} muted loop playsInline preload="none" poster={media(`${name}-poster.webp`)} aria-label={alt}>
       <source src={media(`${name}.webm`)} type="video/webm" />
     </video>
   );

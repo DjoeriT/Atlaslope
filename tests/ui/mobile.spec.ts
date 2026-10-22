@@ -7,7 +7,7 @@ import { plannedRound } from './round-plan';
 const PHONE = { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true };
 const PHONE_LANDSCAPE = { viewport: { width: 844, height: 390 }, isMobile: true, hasTouch: true };
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('.card h1')).toBeVisible();

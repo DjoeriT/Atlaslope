@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
 // The card walk: Spain, region, place, zone and back, the address bar, search and the keyboard.
 // The UI-test build makes no tile requests; places and boundaries are the real data files.
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('.card h1')).toBeVisible();
