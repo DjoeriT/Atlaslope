@@ -94,7 +94,9 @@ for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] a
     await open(page, `#place=${id}&page`);
     const figures = page.locator('.pg-mosaic figure');
     await expect(figures).toHaveCount(n);
+    // C3 hero: one 3:2 photo shows, the rest wait behind "All N photos" in the viewer.
     for (let i = 0; i < n; i++) {
+      if (i > 0) { await expect(figures.nth(i)).toBeHidden(); continue; }
       const box = (await figures.nth(i).boundingBox())!;
       expect(box.width).toBeGreaterThan(50);
       expect(box.height).toBeGreaterThan(50);
@@ -123,7 +125,7 @@ test('a place without photos shows its name on a cover, never a broken image', a
 
 test('every section of the Rioja page keeps a source link', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
+  const ids = await page.locator('.pg main > section, .pg main > .pg-two > section').evaluateAll((els) => els.map((e) => e.id));
   expect(ids).toEqual(['place', 'weather', 'ground', 'rules', 'taste', 'short', 'producers', 'alike', 'sources']);
   for (const id of ids.filter((i) => i !== 'alike' && i !== 'short')) { // alike and In short only link onward; their facts carry the source in the beats
     await expect(page.locator(id === 'sources' ? '#sources a[target="_blank"]' : `#${id} .src a[target="_blank"]`).first()).toBeVisible();
