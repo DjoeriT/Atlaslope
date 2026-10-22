@@ -124,3 +124,13 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#56 Bordeaux classifications**: a text list in the guide, no map layer (they rank châteaux, not land). [O]
 - **#57 France licences**: INAO re-use terms read and a BRGM email drafted for the owner to send, before the pilot ships. [O]
 - **#58 France outlines "for information"**: said in the credits line; INAO's plans portal is the only binding map. [O]
+
+## Fourth country: Italy (owner, 22 Oct 2026, issue #149; plan `Review/countries/italy-plan.md`)
+- **#59 Italy timing**: the Italy pilot runs right after the France pilot is merged, before France's regions; then both scale. [O]
+- **#60 Italy scope**: the WSET L3 list, about 40 places, region by region; not all DOCG, not all 411. [O]
+- **#61 Italy pilot**: Barolo and Chianti Classico, pages at `/it/<place>/` (#48). [O]
+- **#62 Italy outlines**: official where a region publishes one (Piemonte, maybe Bolzano); else the disciplinare's municipality list plus ISTAT, marked "approximate" in the credits line. [O]
+- **#63 Italian sub-zones**: Barolo MGA, Chianti Classico UGA and the like are zones inside their appellation where an outline exists (as #55); else a text list. [O]
+- **#64 Umbrella names**: Toscana, Sicilia, Puglia, Terre Siciliane, Delle Venezie are named in their region's text, with no place of their own. [O]
+- **#65 Cross-region appellations**: home parent is the region with most of the area, "also within" the other (#42). [O]
+- **#66 Italy map layers**: Esri imagery, TINITALY terrain, no geology in the pilot; LeadBot drafts an ISPRA licence email the owner sends. [O]

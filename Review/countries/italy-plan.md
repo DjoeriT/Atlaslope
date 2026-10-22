@@ -1,7 +1,7 @@
-# Italy plan (draft for the owner, 22 Oct 2026, issue #149)
+# Italy plan (owner approved, 22 Oct 2026, issue #149)
 
 Source report: `Review/countries/italy.md` (21 Oct 2026). Data pulled: `Review/countries/coverage.md` (22 Oct 2026).
-Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58). Decisions below are open until the owner answers.
+Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58). Decisions: `docs/architecture-decisions.md` #59-#66, all on the recommended option [O].
 
 ## Context
 - Order decided: Portugal, then France, then Italy [O, `docs/PROJECT.md`].
@@ -30,31 +30,31 @@ Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58).
 4. Later: Italian Wine Scholar filter (North, Centre-South); Guides page grouping for Italy (region first);
    map tours for the DOCG tier under the #148 rule.
 
-## Decisions for the owner (one recommended each)
+## Decisions (owner, 22 Oct 2026, all on the recommended option A)
 1. Timing.
-   A (recommended): Italy pilot right after the France pilot, before France's regions. Two pilots first, then scale both.
+   A (chosen): Italy pilot right after the France pilot, before France's regions. Two pilots first, then scale both.
    B: Italy waits until all ~60 French places are done.
 2. Scope.
-   A (recommended): the WSET L3 list, about 40 places, region by region.
+   A (chosen): the WSET L3 list, about 40 places, region by region.
    B: all DOCG, about 77. C: all 411 (not affordable).
 3. Pilot pair.
-   A (recommended): Barolo (official outline) and Chianti Classico (municipality outline). Tests both outline routes.
+   A (chosen): Barolo (official outline) and Chianti Classico (municipality outline). Tests both outline routes.
    B: Barolo and Prosecco (tests the cross-region case instead).
 4. Outlines.
-   A (recommended): official where a region publishes one (Piemonte, maybe Bolzano); else the municipality list plus ISTAT,
+   A (chosen): official where a region publishes one (Piemonte, maybe Bolzano); else the municipality list plus ISTAT,
    with "approximate" in the credits line (same idea as #58).
    B: municipalities everywhere (loses Barolo's precision). C: official only (Piemonte alone).
 5. Sub-zones (Barolo MGA, Chianti Classico UGA).
-   A (recommended): zones inside the appellation, like France's climats (#55), where an outline exists; else a text list.
+   A (chosen): zones inside the appellation, like France's climats (#55), where an outline exists; else a text list.
    B: a text list in the guide only.
 6. Umbrella names on the L3 list (Toscana, Sicilia, Puglia, Terre Siciliane, Delle Venezie IGT/DOC).
-   A (recommended): named in their region's text, no place of their own (as Castilla y León VdlT in Spain).
+   A (chosen): named in their region's text, no place of their own (as Castilla y León VdlT in Spain).
    B: full places with outlines.
 7. Cross-region appellations (Prosecco, Delle Venezie, Lugana).
-   A (recommended): home parent is the region with most of the area; "also within" the other (#42).
+   A (chosen): home parent is the region with most of the area; "also within" the other (#42).
    B: a "multi-region" parent.
 8. Map layers.
-   A (recommended): Esri imagery only; TINITALY terrain; geology off in the pilot;
+   A (chosen): Esri imagery only; TINITALY terrain; geology off in the pilot;
    LeadBot drafts an ISPRA licence email the owner sends (as the BRGM email, #57).
    B: also probe the AGEA 2012 orthophotos first (old, licence unclear).
 
