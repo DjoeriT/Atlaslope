@@ -1694,5 +1694,21 @@
    "The spec refers to the map annex of Decreto-Lei 296/90 of 22 Sept; only the three municipalities it names are mapped"
   ],
   "aliases": {}
+ },
+ "madeira": {
+  "source": "madeira-doc: section 5, the Região Demarcada da Madeira is the islands of Madeira and Porto Santo",
+  "file": "data/raw/countries/pt/caop2025-ram-islands.geojson",
+  "municipalities": 11,
+  "notMapped": [
+   "Desertas and Selvagens islands (uninhabited, outside the area) left out; the outline is DGT CAOP RAM 2025 ram_distritos for Ilha da Madeira and Ilha de Porto Santo"
+  ]
+ },
+ "madeirense": {
+  "source": "madeirense-doc: section 5, the Região Demarcada da Madeira is the islands of Madeira and Porto Santo",
+  "file": "data/raw/countries/pt/caop2025-ram-islands.geojson",
+  "municipalities": 11,
+  "notMapped": [
+   "Desertas and Selvagens islands (uninhabited, outside the area) left out; the outline is DGT CAOP RAM 2025 ram_distritos for Ilha da Madeira and Ilha de Porto Santo"
+  ]
  }
 }

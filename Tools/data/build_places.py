@@ -85,7 +85,7 @@ def centroid(geom):
 # register (data/countries/pt/register.json). Study groups follow the WSET Level 3 spec's Portugal list [A: grouped by the
 # north-to-south order of the CVR regions]; Study for Portugal waits for its course, so the places are not quizzed yet.
 PT_GROUPS = [("pt-north", "North"), ("pt-centre", "Centre"), ("pt-lisboa", "Lisboa"), ("pt-tejo", "Tejo"),
-             ("pt-setubal", "Setúbal Peninsula"), ("pt-alentejo", "Alentejo"), ("pt-algarve", "Algarve")]
+             ("pt-setubal", "Setúbal Peninsula"), ("pt-alentejo", "Alentejo"), ("pt-algarve", "Algarve"), ("pt-madeira", "Madeira")]
 PT_PLACES = [  # mainland PDOs plus Lisboa, a PGI (Vinho Regional) that WSET names; batch 1, owner option B, 22 Oct 2026
     ("douro", "PDO-PT-A1539", "pt-north"),
     ("vinho-verde", "PDO-PT-A1545", "pt-north"),
@@ -113,6 +113,8 @@ PT_PLACES = [  # mainland PDOs plus Lisboa, a PGI (Vinho Regional) that WSET nam
     ("portimao", "PDO-PT-A1452", "pt-algarve"),
     ("lagoa", "PDO-PT-A1450", "pt-algarve"),
     ("tavira", "PDO-PT-A1449", "pt-algarve"),
+    ("madeira", "PDO-PT-A0038", "pt-madeira"),  # owner, 22 Oct 2026: add Madeira and Madeirense
+    ("madeirense", "PDO-PT-A0039", "pt-madeira"),
 ]
 PT_QUIZ_NOTE = "Study covers Spain for now; Portugal joins when its WSET course is in Study."
 

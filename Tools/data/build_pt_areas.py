@@ -36,6 +36,12 @@ def main():
     feats = json.loads(CAOP.read_text())["features"]
     out = []
     for place, s in spec.items():
+        if "file" in s:  # an area that is whole islands (Madeira, owner 22 Oct 2026): the outline comes ready-made from CAOP RAM, no parish list
+            g = json.loads((ROOT / s["file"]).read_text())["features"][0]
+            print(f"{place}: whole islands from {s['file']}, {g['properties']['km2']} km2")
+            out.append({"type": "Feature", "properties": {"id": place, "place": place, "municipalities": s["municipalities"],
+                                                          "km2": g["properties"]["km2"]}, "geometry": g["geometry"]})
+            continue
         aliases = {norm(m): {norm(a): b for a, b in al.items()} for m, al in s.get("aliases", {}).items()}
         picked, over = {}, set()
         for zone, z in s["zones"].items():

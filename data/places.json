@@ -123,6 +123,11 @@
      "id": "pt-algarve",
      "name": "Algarve",
      "order": 7
+    },
+    {
+     "id": "pt-madeira",
+     "name": "Madeira",
+     "order": 8
     }
    ]
   }
@@ -2788,6 +2793,46 @@
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
    "northSouth": 26,
    "courseOrder": 26
+  },
+  {
+   "id": "madeira",
+   "name": "Madeira",
+   "official": "Madeira",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-madeira",
+   "euFile": "PDO-PT-A0038",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -16.999,
+    32.7465
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 27,
+   "courseOrder": 27
+  },
+  {
+   "id": "madeirense",
+   "name": "Madeirense",
+   "official": "Madeirense",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-madeira",
+   "euFile": "PDO-PT-A0039",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -16.999,
+    32.7465
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 28,
+   "courseOrder": 28
   }
  ]
 }

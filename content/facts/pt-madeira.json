@@ -1,0 +1,152 @@
+{
+ "region": "pt-madeira",
+ "sheets": [
+  {
+   "id": "madeira",
+   "why": {
+    "text": "Basaltic, acidic soils on steep terraces and mild Atlantic temperatures, plus fortification and long ageing, give high-acid, long-lived wines.",
+    "cite": [
+     "madeira-doc:p8",
+     "madeira-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Sercial",
+     "Bastardo",
+     "Malvasia Fina",
+     "Malvasia Candida",
+     "Verdelho",
+     "Carao de Moça",
+     "Caracol",
+     "Malvasia Branca de Sao Jorge",
+     "Verdelho Tinto",
+     "Folgasao",
+     "Listrao",
+     "Triunfo",
+     "Tinta",
+     "Tinta Negra",
+     "Valveirinho",
+     "Rio Grande",
+     "Complexa",
+     "Malvasia Candida Roxa",
+     "Deliciosa",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "madeira-doc:p8",
+     "madeira-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "fortified",
+     "sweet"
+    ],
+    "text": "Fortified wine, from extra-dry to sweet, made by canteiro or estufagem.",
+    "cite": [
+     "madeira-doc:p3",
+     "madeira-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Low temperature ranges through the growing cycle; ripening temperatures are normally mild.",
+    "cite": [
+     "madeira-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Mostly basaltic with low pH, giving high acidity; high organic matter; vines on hand-built terraces (poios).",
+    "cite": [
+     "madeira-doc:p9",
+     "madeira-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Altitude and exposure of the plots create microclimates; the spec gives no figures.",
+    "cite": [
+     "madeira-doc:p10"
+    ]
+   },
+   "tastes": {
+    "text": "Fortified wine with high, fresh acidity and dried-fruit and wood notes. Drier types are light and balanced; sweeter ones fuller, with caramel. Long finish, richer with age.",
+    "cite": [
+     "madeira-doc:p4",
+     "madeira-doc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Canteiro",
+      "text": "Aged in wood at least 2 years; sold 36 months after last fortification."
+     },
+     {
+      "name": "Estufagem",
+      "text": "Heated in tanks up to 50 °C for at least 90 days."
+     },
+     {
+      "name": "Garrafeira / Frasqueira",
+      "text": "Exceptional quality, wood-aged, from one harvest year; complex, structured and elegant."
+     },
+     {
+      "name": "Colheita",
+      "text": "Good-quality single-harvest wine, with dried fruit, caramel and honey notes."
+     }
+    ],
+    "cite": [
+     "madeira-doc:p5",
+     "madeira-doc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "madeirense",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

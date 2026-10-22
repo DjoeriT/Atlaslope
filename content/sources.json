@@ -1810,5 +1810,17 @@
   "title": "Tavira PDO-PT-A1449: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10909)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10909",
   "date": "2018-06-08"
+ },
+ "madeira-doc": {
+  "kind": "official",
+  "title": "Madeira PDO-PT-A0038: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11114)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11114",
+  "date": "2018-06-08"
+ },
+ "madeirense-doc": {
+  "kind": "official",
+  "title": "Madeirense PDO-PT-A0039: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11115)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11115",
+  "date": "2018-06-08"
  }
 }
