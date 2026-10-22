@@ -1,0 +1,150 @@
+{
+ "a": {
+  "390": {
+   "height": 9095,
+   "hscroll": false,
+   "imgs": 84,
+   "broken": [],
+   "rows": 83,
+   "minRow": 999,
+   "minTap": 44,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 4568,
+   "tourItems": 15
+  },
+  "1440": {
+   "height": 4770,
+   "hscroll": false,
+   "imgs": 84,
+   "broken": [],
+   "rows": 83,
+   "minRow": 999,
+   "minTap": 44,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 3244,
+   "tourItems": 15
+  }
+ },
+ "b": {
+  "390": {
+   "height": 7391,
+   "hscroll": false,
+   "imgs": 21,
+   "broken": [],
+   "rows": 109,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 2347,
+   "tourItems": 15
+  },
+  "1440": {
+   "height": 4607,
+   "hscroll": false,
+   "imgs": 21,
+   "broken": [],
+   "rows": 109,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 2408,
+   "tourItems": 15
+  }
+ },
+ "c": {
+  "390": {
+   "height": 1425,
+   "hscroll": false,
+   "imgs": 12,
+   "broken": [],
+   "rows": 109,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "mapOnAfterOpen": "green-spain",
+   "heightOpen": 1873,
+   "tourHeight": 1548,
+   "tourItems": 15
+  },
+  "1440": {
+   "height": 1087,
+   "hscroll": false,
+   "imgs": 12,
+   "broken": [],
+   "rows": 109,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "mapOnAfterOpen": "green-spain",
+   "heightOpen": 1445,
+   "tourHeight": 1117,
+   "tourItems": 15
+  }
+ },
+ "d": {
+  "390": {
+   "height": 7975,
+   "hscroll": false,
+   "imgs": 25,
+   "broken": [],
+   "rows": 113,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 2931,
+   "tourItems": 19
+  },
+  "1440": {
+   "height": 5087,
+   "hscroll": false,
+   "imgs": 25,
+   "broken": [],
+   "rows": 113,
+   "minRow": 48,
+   "minTap": 999,
+   "blankTiles": 0,
+   "markInk": "rgb(90, 69, 36)",
+   "tourHeight": 2888,
+   "tourItems": 19
+  }
+ },
+ "e": {
+  "390": {
+   "height": 8955,
+   "hscroll": false,
+   "imgs": 99,
+   "broken": [],
+   "rows": 83,
+   "minRow": 999,
+   "minTap": 44,
+   "blankTiles": 0,
+   "markInk": "rgb(26, 23, 20)",
+   "heightUnfolded": 10252,
+   "expanded": "true",
+   "tourHeight": 4371,
+   "tourItems": 15
+  },
+  "1440": {
+   "height": 5628,
+   "hscroll": false,
+   "imgs": 99,
+   "broken": [],
+   "rows": 83,
+   "minRow": 999,
+   "minTap": 44,
+   "blankTiles": 0,
+   "markInk": "rgb(26, 23, 20)",
+   "heightUnfolded": 6430,
+   "expanded": "true",
+   "tourHeight": 3300,
+   "tourItems": 15
+  }
+ }
+}
