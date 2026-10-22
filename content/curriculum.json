@@ -1,5 +1,5 @@
 {
- "$comment": "Where each place sits in the WSET course: only the place names each published specification lists (names and structure, never their text). Zones are not listed and get no badge. See data/SOURCES.md.",
+ "$comment": "Where each place sits in the WSET course: only the place names each published specification lists (names and structure, never their text). Zones are not listed and get no badge. See data/SOURCES.md. \"courses\": what the \"Learning for\" filter in Learn offers, one entry per course and country. rule \"all\": every place Learn asks; \"core\": every core place; \"wset\": the wset.levels list of its level. Old setting ids map in src/quiz/course.ts.",
  "wset": {
   "sources": {
    "3": {
@@ -46,5 +46,61 @@
     "jerez"
    ]
   }
- }
+ },
+ "courses": [
+  {
+   "id": "all-es",
+   "provider": null,
+   "name": "All of Spain",
+   "country": "es",
+   "label": "All of Spain",
+   "onFile": "Every place Learn asks.",
+   "source": null,
+   "rule": "all"
+  },
+  {
+   "id": "wine-scholar-es",
+   "provider": "Wine Scholar Guild",
+   "name": "Spanish Wine Scholar",
+   "country": "es",
+   "label": "Spanish Wine Scholar",
+   "onFile": "Every appellation, in the course's study regions.",
+   "source": {
+    "title": "Spanish Wine Scholar study regions, as recorded per place in data/places.json (see data/SOURCES.md)",
+    "url": null,
+    "date": null
+   },
+   "rule": "core"
+  },
+  {
+   "id": "wset-3-es",
+   "provider": "WSET",
+   "name": "WSET Level 3",
+   "country": "es",
+   "label": "WSET Level 3 · Spain",
+   "onFile": "Only the Spain chapter of the Level 3 specification.",
+   "source": {
+    "title": "WSET Level 3 Award in Wines, Specification, Issue 2",
+    "url": "https://www.wsetglobal.com/media/11731/wset_l3wines_specification_en_highres_may2022_issue2.pdf",
+    "date": "2022-05"
+   },
+   "rule": "wset",
+   "level": "3"
+  },
+  {
+   "id": "wset-2-es",
+   "provider": "WSET",
+   "name": "WSET Level 2",
+   "country": "es",
+   "label": "WSET Level 2 · Spain",
+   "onFile": "Only the Spanish wines the Level 2 specification names.",
+   "source": {
+    "title": "WSET Level 2 Award in Wines, Specification, Issue 2.1",
+    "url": "https://www.wsetglobal.com/media/19132/wset_l2wines_specification_en_april2026_issue21.pdf",
+    "date": "2026-04"
+   },
+   "rule": "wset",
+   "level": "2"
+  }
+ ]
 }

@@ -12,7 +12,7 @@ async function open(page: Page, hash: string) {
 
 async function startRound(page: Page) {
   await open(page, '#quiz');
-  await page.getByRole('button', { name: 'Learn 5 new places' }).click();
+  await page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ }).click();
   return (await page.locator('h1.intro-h').textContent())!;
 }
 
@@ -20,22 +20,22 @@ test('Back to the quiz shows only on the card opened from the quiz, not once the
   const name = await startRound(page);
   await page.getByRole('button', { name: `More about ${name}` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
-  await expect(page.getByRole('button', { name: /Back to Study/ })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Back to Learn/ })).toBeVisible();
 
   // Escape steps up to the region: that is exploring, so the quiz prompt goes.
   await page.keyboard.press('Escape');
   await expect(page.locator('.card:visible h1:not(.intro-h)')).not.toHaveText(name);
-  await expect(page.getByRole('button', { name: /Back to Study/ })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /Back to Learn/ })).toHaveCount(0);
 
   // Opening the same place again from search is exploring too: no quiz prompt on it.
   const box = page.getByRole('searchbox', { name: /Search/ });
   await box.fill(name.split(' ')[0]);
   await page.getByRole('list', { name: 'Search results' }).getByRole('link', { name: new RegExp(`^${name.split(' ')[0]}`) }).first().click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
-  await expect(page.getByRole('button', { name: /Back to Study/ })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /Back to Learn/ })).toHaveCount(0);
 
   // The round waited: the Quiz tab comes back to the same intro.
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
 });
 
@@ -49,8 +49,8 @@ test('the Explore tab mid-round leaves the quiz behind, and the Quiz tab picks t
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' })).toHaveAttribute('aria-current', 'page');
   await expect(page.locator('h1.intro-h')).toBeHidden();
-  await expect(page.getByRole('button', { name: /Back to Study/ })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: /Back to Learn/ })).toHaveCount(0);
 
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(second!);
 });

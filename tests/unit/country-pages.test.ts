@@ -14,7 +14,7 @@ const line = (s: { regions: unknown[]; guides: number }) => `${s.regions.length}
 const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
 describe('country structure', () => {
-  it('has both countries, each with config for its card, page and Study note', () => {
+  it('has both countries, each with config for its card, page and Learn note', () => {
     expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal']);
     for (const s of stats) {
       expect(COUNTRIES[s.id].code).toBe(s.code);
@@ -81,10 +81,10 @@ describe('country pages', () => {
       expect(count(p, /<p class="credit">Photos /g)).toBe(1);
     }
   });
-  it('gives Spain a Study link and Portugal an honest "not yet"', () => {
-    expect(pages.spain).toContain('href="../atlas/#study">Open Study</a>');
+  it('gives Spain a Learn link and Portugal an honest "not yet"', () => {
+    expect(pages.spain).toContain('href="../atlas/#learn">Open Learn</a>');
     expect(pages.portugal).toContain('Not yet for Portugal.');
-    expect(pages.portugal).not.toContain('Open Study');
+    expect(pages.portugal).not.toContain('Open Learn');
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);

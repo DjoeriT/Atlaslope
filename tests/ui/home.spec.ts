@@ -14,7 +14,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await expect(page.locator('.closer')).toContainText('More countries are on their way.');
   await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
-  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Study', 'Guides', 'About']);
+  await expect(nav.getByRole('link')).toHaveText(['Atlas', 'Learn', 'Guides', 'About']);
   await expect(page.locator('.sitebar .search input')).toHaveCount(1); // search is in the bar on every page (owner, 21 Oct)
   await expect(page.getByRole('link', { name: 'Open the atlas' }).first()).toHaveAttribute('href', 'atlas/');
   await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://atlaslope.com/share.jpg');
@@ -56,14 +56,14 @@ test('a link from before the website opens the same place in the atlas', async (
   await expect(page.locator('.card h1')).toHaveText('Toro');
 });
 
-test('an old #quiz link opens Study, and the address says #study', async ({ page }) => {
+test('an old #quiz link opens Learn', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto('../#quiz=focus');
   await expect(page).toHaveURL(/\/atlas\/#(quiz|study)=focus/);
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
-  await expect(page).toHaveURL(/#study($|&)/);
-  await expect(page).toHaveTitle('Study · AtlaSlope');
-  await expect(page.getByRole('heading', { name: 'Study or review' })).toBeVisible();
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
+  await expect(page).toHaveURL(/#learn($|&)/);
+  await expect(page).toHaveTitle('Learn · AtlaSlope');
+  await expect(page.getByRole('heading', { name: 'Learn' })).toBeVisible();
 });
 
 test('Guides and About are plain pages with the same bar, and the guides lead into the atlas', async ({ page }) => {
@@ -79,13 +79,13 @@ test('Guides and About are plain pages with the same bar, and the guides lead in
   await expect(page).toHaveURL(/\/atlas\/#place=rioja-alta/);
 });
 
-test('Study and back to Atlas returns to the card that was open', async ({ page }) => {
+test('Learn and back to Atlas returns to the card that was open', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto('./#place=toro');
   await expect(page.locator('.card h1')).toHaveText('Toro');
   const nav = page.getByRole('navigation', { name: 'Site' });
-  await nav.getByRole('link', { name: 'Study' }).click();
-  await expect(page.getByRole('heading', { name: 'Study or review' })).toBeVisible();
+  await nav.getByRole('link', { name: 'Learn' }).click();
+  await expect(page.getByRole('heading', { name: 'Learn' })).toBeVisible();
   await nav.getByRole('link', { name: 'Atlas' }).click();
   await expect(page.getByRole('heading', { level: 1, name: 'Toro' })).toBeVisible();
   await expect(page).toHaveURL(/#place=toro/);

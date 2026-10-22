@@ -1,4 +1,5 @@
 // Memories from the answer log: boxes, due dates and shades. Rules tagged [A] in the release 7 digest are each one constant or one function here.
+import type { Place } from '../tree';
 import type { Answer, LogEntry, MemoryName, MemoryState, PlaceMemory, QuestionType, QuizState, Shade } from './types';
 
 export const DAY_MS = 86_400_000;
@@ -87,9 +88,12 @@ export function placeKnown(p: PlaceMemory | undefined): boolean {
   return p !== undefined && isKnown(p.where.shade) && isKnown(p.what.shade);
 }
 
-/** The question for a memory: `where` new is what is this, `where` asked is find it; `what` is the fact question, asked only once `where` is known. Null when the memory cannot be asked yet. */
-export function questionType(p: PlaceMemory | undefined, memory: MemoryName): QuestionType | null {
-  if (memory === 'where') return !p || p.where.shade === 'new' ? 'what-is-this' : 'find-it';
+/** Whether the map can ask "find it" of a place: false where the place says so (`quizFindIt: false`, an outline over other DOs). */
+export const findsIt = (place: Pick<Place, 'quizFindIt'> | undefined): boolean => place?.quizFindIt !== false;
+
+/** The question for a memory: `where` new is what is this, `where` asked is find it (what is this again where `findIt` is false); `what` is the fact question, asked only once `where` is known. Null when the memory cannot be asked yet. */
+export function questionType(p: PlaceMemory | undefined, memory: MemoryName, findIt = true): QuestionType | null {
+  if (memory === 'where') return !p || p.where.shade === 'new' || !findIt ? 'what-is-this' : 'find-it';
   return p && isKnown(p.where.shade) ? 'fact' : null;
 }
 

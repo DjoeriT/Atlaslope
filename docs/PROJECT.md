@@ -28,8 +28,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   session; also grouped photo credits #196); 68 map bar B: only the stop name on top, keys at the foot, terrain height behind the "i" (#199).
 - Release 62 (PR #175): map tour fixes (each stop by its own link, phone strip 300 px, geology at zoom 10+, English rock key).
   Release 63: 404 page and credit fix (#177), speed wins (#179: terrain at 512 px tiles, relief from zoom 7, tours from 6, one fetch
-  per data file); also merged: faster builder loop (#176), register watch script (#178, local only). Learn start card is on
-  `claude/study-course` (not merged). Agenda and briefs: `docs/handoffs/2026-10-21-agenda-after-62.md`.
+  per data file); also merged: faster builder loop (#176), register watch script (#178, local only). Learn start card: merged with the Learn PR (#147,
+  `docs/handoffs/2026-10-22-learn-finish.md`). Agenda and briefs: `docs/handoffs/2026-10-21-agenda-after-62.md`.
 - Release 59 (PR #171): map tours for Rioja and Priorat (#127, first part of #148): scroll the guide, the app map flies to each stop
   named in its text; IGN rivers and names, Köppen climate, IGME geology, slope tint, fact markers; listing page and home tile. Also in it:
   #169 BSk "cool, dry steppe", #170 slope measure for every place. Release 60 (PR #172): renamed "Map tours", search in the top bar of every page, tour code and data load on demand with their own
@@ -79,7 +79,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   keeps 2 MB (incident: PR #171 went to 2.24 MB); search in the top bar of every page at all times.
 - 21 Oct, later (owner; detail in `docs/handoffs/2026-10-21-agenda-after-62.md`): tours stay hand-made, no default-tour generator.
   Map tour: B and a clean-slate round 1 (`Review/mock-tour-clean/`) dropped the same evening; the v3 journey comes back exactly,
-  full-screen, opened from a big photo button at the top of the guide, a photo in every stop card (`docs/handoffs/2026-10-21-tour-v3-restore.md`). "Study" becomes "Learn" (lands with the Learn PR). Learn:
+  full-screen, opened from a big photo button at the top of the guide, a photo in every stop card (`docs/handoffs/2026-10-21-tour-v3-restore.md`). "Study" becomes "Learn" (lands with the Learn PR; "Study region" and the "wine study atlas" tagline stay, owner 22 Oct 2026). Learn:
   one course setting that filters everything, default all of Spain, Cava and Catalunya in without the map question, WSET Level 2 ·
   Spain pilot next. Launch: wine lovers first (reverses 17 Oct), quiet launch, then testers, noindex until the public step, tip link.
   Speed: page shell, then a service worker; no CDN. Guides current: "Checked on" plus source dates, pilot on 3 places.
@@ -138,7 +138,6 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Next countries: Portugal, then France (owner, 22 Oct 2026; France plan `Review/countries/france-plan.md`, decisions #52-#58, pilot waits for Portugal's mainland and #205); Italy pilot right after the France pilot (owner, 22 Oct 2026; plan `Review/countries/italy-plan.md`, decisions #59-#66).; Germany fifth: prep slice now, pilot (Mosel, Rheingau) after the Italy pilot (owner, 22 Oct 2026; plan `Review/countries/germany-plan.md`, decisions #71-#78).
 - Portugal pilot (22 Oct 2026): Douro and Vinho Verde have outlines, sheets and guides at `/pt/<id>/`; Home and Guides stay Spain-only until the owner picks a mock option (`docs/handoffs/2026-10-22-portugal-pilot.md`). Guides 0.75M each [V]; the session around them 18.9M re-read, mostly building the tooling.
-- Learn: rename "Study region" and "The wine study atlas"?
 - From 22 Oct: Raimat (Costers del Segre) "far east" per the pliego while the map shows west, add a note? Cangas rock key shows "Sandstones and
   slates" twice (two colours, one unit). Guides page: bring back "More regions are being written"? Map tour chip text is about 10.5 px on a phone.
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { reviewRound } from '../quiz';
+import { courseOf, NO_COURSE, reviewRound } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { quizToHash } from '../url';
@@ -34,7 +34,8 @@ export function PractiseScreen({ tree, quiz, onStart, onLeave }: Props) {
   const [size, setSize] = useState<10 | 20>(20);
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => heading.current?.focus(), []);
-  const groups = useMemo(() => practiseTree(tree), [tree]);
+  // The picker offers only the course's places (owner, 21 Oct 2026: the course is a filter on everything in Learn).
+  const groups = useMemo(() => practiseTree(tree, quiz.course), [tree, quiz.course]);
   const missed = useMemo(() => missedToday(quiz.log, quiz.now()), [quiz.log]);
   const all = useMemo(() => groups.flatMap((g) => g.places.map((p) => p.id)), [groups]);
   const set = useMemo(() => all.filter((id) => picked.has(id)), [all, picked]);
@@ -56,7 +57,7 @@ export function PractiseScreen({ tree, quiz, onStart, onLeave }: Props) {
         <h3>{t.quick}</h3>
         <div className="chips" role="group" aria-label={t.quick}>
           <button className="chip" disabled={!missed.length} onClick={() => setPicked(new Set(missed.filter((id) => all.includes(id))))}>{t.missed(missed.length)}</button>
-          <button className="chip" onClick={() => setPicked(new Set(all))}>{t.allOfSpain}</button>
+          <button className="chip" onClick={() => setPicked(new Set(all))}>{quiz.course === NO_COURSE ? t.allOfSpain : t.allOfCourse(courseOf(quiz.course).label)}</button>
         </div>
         <h3 id="rp">{t.regionsAndPlaces}</h3>
         <ul className="tree" aria-labelledby="rp">

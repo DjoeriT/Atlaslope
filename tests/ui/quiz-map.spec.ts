@@ -14,11 +14,11 @@ test('Quiz in the top bar opens the quiz card, hides place names, and Back retur
   await open(page);
   await expect.poll(() => visibleNames(page)).toBeGreaterThan(0);
 
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
-  await expect(page.locator('.card h1')).toHaveText('Study or review');
-  await expect(page).toHaveURL(/#study/);
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
+  await expect(page.locator('.card.learn #qh')).toBeVisible();
+  await expect(page).toHaveURL(/#learn/);
   await expect.poll(() => visibleNames(page)).toBe(0);
-  await expect.poll(() => page.url()).toMatch(/#study&view=[^&]*,0,0$/); // flat and north up
+  await expect.poll(() => page.url()).toMatch(/#learn&view=[^&]*,0,0$/); // flat and north up
 
   await page.goBack();
   await expect(page.locator('.card:visible h1')).toHaveText('See where your wine comes from'); // back to the card it had: the cover (PR #202)
@@ -27,8 +27,8 @@ test('Quiz in the top bar opens the quiz card, hides place names, and Back retur
 
 test('a #quiz link opens the quiz, and Explore in the top bar leaves it', async ({ page }) => {
   await open(page, '#quiz');
-  await expect(page.locator('.card h1')).toHaveText('Study or review');
-  await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' })).toHaveAttribute('aria-current', 'page');
+  await expect(page.locator('.card.learn #qh')).toBeVisible();
+  await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' })).toHaveAttribute('aria-current', 'page');
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
   await expect(page.locator('.card:visible h1')).toHaveText('See where your wine comes from'); // no card before: the cover (PR #202)
   await expect(page).not.toHaveURL(/quiz/);
@@ -36,5 +36,5 @@ test('a #quiz link opens the quiz, and Explore in the top bar leaves it', async 
 
 test('an unknown quiz sub-route is plain #quiz', async ({ page }) => {
   await open(page, '#quiz=nonsense');
-  await expect(page.locator('.card h1')).toHaveText('Study or review');
+  await expect(page.locator('.card.learn #qh')).toBeVisible();
 });

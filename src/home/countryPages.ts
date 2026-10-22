@@ -13,7 +13,7 @@ export interface CountryPage {
   cardPhotos: string[];
   /** The photo blocks on the country page, each a lead square and four small ones. */
   blocks: { title?: string; keys: string[] }[];
-  /** The Study note: Spain has a Study link, Portugal says what is missing. */
+  /** The Learn note: Spain has a Learn link, Portugal says what is missing. */
   study: { note: string; link: boolean };
 }
 
@@ -94,7 +94,7 @@ export const countryPage = (list: GuideList, id: string): string => {
   const s = countryStats(list).find((c) => c.id === id);
   if (!s) throw new Error(`no country ${id} in data/places.json`);
   const page = COUNTRY_PAGES[id];
-  const study = `<div class="study"><b>Study</b><span>${page.study.note}${page.study.link ? '<br /><a href="../atlas/#study">Open Study</a>' : ''}</span></div>`;
+  const study = `<div class="study"><b>Learn</b><span>${page.study.note}${page.study.link ? '<br /><a href="../atlas/#learn">Open Learn</a>' : ''}</span></div>`;
   const blocks = page.blocks.map((b) => `<figure class="ld">${b.title ? `<figcaption><b>${esc(b.title)}</b></figcaption>` : ''}${mosaic(b.keys, list, '../', 'mosaic')}</figure>`).join('');
   return [
     '<!-- draft copy, owner rewrites -->',

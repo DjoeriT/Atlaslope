@@ -13,7 +13,7 @@ async function open(page: Page, hash = '') {
 
 test('End round asks first; Keep going stays, and ending early says the round stopped', async ({ page }) => {
   await open(page, '#quiz');
-  await page.getByRole('button', { name: 'Learn 5 new places' }).click();
+  await page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ }).click();
   await page.getByRole('button', { name: 'End round' }).click();
   const ask = page.getByRole('alertdialog', { name: /End this round\?/ });
   await expect(ask).toBeVisible();
@@ -24,7 +24,7 @@ test('End round asks first; Keep going stays, and ending early says the round st
 
   await page.getByRole('button', { name: 'End round' }).click();
   await ask.getByRole('button', { name: 'End round' }).click();
-  await expect(page.locator('.card .kicker').first()).toHaveText(/^Round stopped · Study$/);
+  await expect(page.locator('.card .kicker').first()).toHaveText(/^Round stopped · Learn$/);
   await expect(page.locator('.card .lede')).toContainText('You stopped after 0 of');
   await expect(page.locator('.card')).not.toContainText('All done for today');
   await expect(page.getByRole('button', { name: 'Start a new round' })).toBeVisible();
