@@ -240,14 +240,25 @@
   },
   {
    "path": "countries/it/disc/",
-   "kind": "command",
+   "kind": "files",
    "licence": "MASAF disciplinari, official legal texts, no licence stated",
-   "note": "page https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625 links four 7z archives (DOP A-D, E-N, O-Z, IGT); fetched: dop_A-D.7z, barolo.pdf, chianti-classico.pdf with pdftotext -layout text",
-   "command": [
-    "open that page, save the links in its HTML (dop_A-D.7z) into countries/it/disc/, then: bsdtar -xf dop_A-D.7z and pdftotext -layout on the PDFs you need"
-   ],
+   "files": {
+    "dop_A-D.7z": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fa%252Fe%252FD.8495fb8195fb9f88e44b/P/BLOB%3AID%3D4625/E/7z?mode=download",
+    "dop_E-N.7z": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F1%252F3%252FD.f18c8d53342c05dcc620/P/BLOB%3AID%3D4625/E/7z?mode=download",
+    "dop_O-Z.7z": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252F3%252FD.8ccd09a077f2ec35dc9b/P/BLOB%3AID%3D4625/E/7z?mode=download"
+   },
+   "note": "the three DOP archives linked from https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625 (410 rulebooks); then for each: mkdir -p x/<name> && bsdtar -xf <name>.7z -C x/<name> (Tools/countries/it_wset.py reads x/). The hashes change when MASAF updates an archive.",
    "bytes": 202157601,
    "sha256": "66f361c92188b7affc6a0edcdd19c3c0c833bf0af0bd369eb03f946a00eb4b99"
+  },
+  {
+   "path": "countries/it/candiago/EU_PDO.gpkg",
+   "kind": "url",
+   "licence": "Candiago et al. 2022, CC0 1.0",
+   "url": "https://ndownloader.figshare.com/files/35955185",
+   "note": "EU wine PDO polygons, figshare doi 10.6084/m9.figshare.c.5877659.v1 (decision #79)",
+   "bytes": 44580864,
+   "sha256": "8df0dc759f9c1bc17fff12d653b224282382d6a10f4a15c2cf937d5ab13f0356"
   }
  ]
 }
