@@ -17,9 +17,39 @@ Follows `2026-10-21-guide-redesign.md`. Mock only, no app code. Branch `claude/g
   white space at 1440 (the cost of smaller photos; C3 is the answer to that); C3's left column still ends before the charts in some beats.
 - Spend [V]: builder r1 261K, r2 118K; ReviewBot 35K + 34K; LeadBot about 220K, mostly re-reads.
 
+## Decided (owner, 22 Oct 2026)
+- "C3 it is. Next: the build brief for C3 plus the map unfold." The build brief below replaces the restore brief in
+  `2026-10-21-tour-v3-restore.md`. "Wait with building" (21 Oct) still holds: the build starts on his word.
+
 ## Open
-1. Owner picks C1, C2 or C3 (or lists changes). Photos bigger than 528 px need larger source files (from the photos' own pages, in
-   `data/SOURCES.md`); the app ships 800 px only.
-2. Then rewrite the build brief in `2026-10-21-tour-v3-restore.md` for the chosen page plus the v4 map mode and the unfold.
-3. Shots are heavy (r1 44 MB, r2 38 MB in git): before the PR, keep the sheets and key frames and drop the singles, or say why not.
-4. Unchanged from earlier: stops without their own photo, satellite fix #182, the agenda items.
+1. Questions for the owner before the build (recommended first):
+   a. Places without a map tour: the same C3 page with no map button (rec.), or a plain "Open the map" button.
+   b. Photos: keep them at most 528 px wide (rec., no new data), or add larger sizes from the photos' source pages.
+   c. Stops without their own photo (Rioja: intro, climate, barrel; Priorat: check): candidates shown to him first.
+2. Merge this branch as a records/mock PR (handoff, both mock folders) before the build starts.
+3. Shots are heavy (r1 44 MB, r2 38 MB, already pushed, so they stay in history): next rounds commit only sheets and key frames.
+4. Unchanged from earlier: satellite fix #182, the agenda items.
+
+## Brief: guide page C3 and the map unfold, build (paste into a fresh session, on his word)
+```
+You are LeadBot for the guide page C3 build with the map unfold (#148, #127). Read docs/handoffs/2026-10-22-guide-redesign-r2.md,
+Review/mock-guide-redesign-r2/README.md and review-design.md (grep), Review/mock-story-guide-v4/README.md (map mode), and look at
+Review/mock-guide-redesign-r2/shots/sheet-c3.png, button-c3-*.png, unfold-c3-*.png. The target is option C3 of
+mocks/guide-redesign-r2/index.html#solo=c3 (local, git-ignored), exactly. Answers to Open 1a-1c in the handoff first.
+Two slices, one PR each, one builder card per step:
+1. Guide page C3 for every place (src/pages/PlacePage.tsx and its parts, src/styles): A's two-column order with no boxes (prose
+   left, photos and facts right, side column 33rem), C's hero with the map card button (photo + champagne bar, folded-map glyph,
+   "Read with the map", "N minutes · N places to fly to", black arrow square; hover, focus, active), stop photos in the beats,
+   How it tastes as the champagne band, jump bar at the text edge. Every section, fact, source and the credit line stay. Photos
+   never shown wider than 528 px (unit test on the rendered ratio >= 1.45 at 1440, from measure.mjs). Checked crops for every shown
+   photo (src/home/photoCrops.json, Tools/guides/crop_sheet.mjs). npm run shots at 1440, 834 and 390 next to the C3 mock shots.
+2. Map unfold (src/story): the map card photo grows to full screen (FLIP), cross-fades into the v4 map mode (whole guide in the
+   reading column, v3 stage: terrain x1.5, slope tint, climate and geology layers, rivers and names, locator, flights, 2.2 s
+   dwell), flies to the first stop. "Close the map" folds back to the same paragraph (v4 matching; phone falls back to the
+   chapter). Reduced motion: fade and jump. Start from release-59 src/story (git show release-59:src/story/...) and the v4 mock
+   story.js; keep from 60-63 only the per-tour data limit, lazy loading, geology from zoom 10, English rock key, stop links.
+   Rioja and Priorat first; npm run shots:tour each stop at 1440 and 390 next to the mock; send him the pairs before the PR.
+ReviewBot (new screen and copy) on both PRs. Merge on green CI, then ask about the release.
+Estimate [A]: slice 1 builder 300-500K, slice 2 0.6-1.2M (old restore estimate), ReviewBot 2 x 60K, LeadBot 150K each;
+mostly re-reads. Pilot Rioja first; hard stop at 1.5x. Hand off around 250K.
+```
