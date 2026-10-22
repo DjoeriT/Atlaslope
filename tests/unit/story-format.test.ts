@@ -27,11 +27,11 @@ const strings = (o: unknown): string[] =>
 
 describe('story files', () => {
   it('lists every story', () => {
-    expect(storyIds()).toEqual(['navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano']);
-    expect(storyCount()).toBe(6);
+    expect(storyIds()).toEqual(['campo-de-borja', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano']);
+    expect(storyCount()).toBe(7);
   });
 
-  for (const id of ['navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano']) {
+  for (const id of ['campo-de-borja', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano']) {
     const story = loadStory(id) as Story;
     const guide = json<Guide>(`content/guides/${id}.json`);
     const names = new Set(json<{ features: Array<{ properties: { name: string } }> }>(`data/story/names-${id}.geojson`).features.map((f) => f.properties.name));

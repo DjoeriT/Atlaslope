@@ -1,0 +1,77 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tours batch 3, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-campo-de-borja.geojson or the river's own line.",
+ "id": "campo-de-borja",
+ "cover": {
+  "photo": "campo-de-borja-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {"center": [-1.6, 41.82], "zoom": 8.8, "pitch": 0, "bearing": 0},
+   "focus": "campo-de-borja",
+   "chip": "Campo de Borja in Aragón"
+  },
+  {
+   "id": "transition",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {"place": "campo-de-borja", "pitch": 45, "bearing": 0, "zoomShift": 0.2},
+   "focus": "campo-de-borja",
+   "photo": "campo-de-borja-1",
+   "facts": [
+    {"at": "Vera de Moncayo", "label": "Somontano del Moncayo", "text": "It takes in the Somontano del Moncayo, the land at the foot of the Moncayo massif.", "cite": ["campo-de-borja-pliego:p5", "campo-de-borja-pliego:p6"]}
+   ]
+  },
+  {
+   "id": "veruela",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {"center": [-1.6934, 41.8123], "zoom": 11.6, "pitch": 55, "bearing": 30},
+   "focus": "campo-de-borja",
+   "dot": false,
+   "photo": "borja-veruela-1",
+   "facts": [
+    {"at": "Magallón", "label": "Magallón", "text": "The oldest record of vines here is a gift of vineyards at Magallón in 1203, kept in the archives of the Monasterio de Veruela.", "cite": ["campo-de-borja-pliego:p5"]},
+    {"at": "Ainzón", "label": "Ainzón", "text": "In 1453 the abbots bought the town of Ainzón, above all to grow its vineyard.", "cite": ["campo-de-borja-pliego:p5"]}
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {"center": [-1.64, 41.8], "zoom": 9.8, "pitch": 50, "bearing": 60},
+   "focus": "campo-de-borja",
+   "layers": ["koppen"],
+   "photo": "borja-moncayo-1",
+   "facts": [
+    {"at": [-1.8397, 41.7872], "label": "Moncayo", "text": "The mountain sways the climate of the zone and gives its wines character.", "cite": ["campo-de-borja-pliego:p6"]},
+    {"at": "Borja", "label": "Borja", "text": "Rain is scarce. It averages 350 mm in the low zones and rises to 450 mm in the higher ones.", "cite": ["campo-de-borja-pliego:p7"]}
+   ]
+  },
+  {
+   "id": "huecha",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {"center": [-1.5522, 41.8263], "zoom": 11.2, "pitch": 60, "bearing": 340},
+   "focus": "campo-de-borja",
+   "layers": ["geology"],
+   "measure": {"place": "campo-de-borja", "kind": "top"},
+   "facts": [
+    {"at": [-1.5522, 41.8263], "label": "Río Huecha", "text": "This tributary of the Ebro laid the terrace soils of the middle zone.", "cite": ["campo-de-borja-pliego:p6"]}
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {"place": "campo-de-borja", "pitch": 0, "bearing": 0},
+   "focus": "campo-de-borja",
+   "photo": "campo-de-borja-2",
+   "chip": "The empire of Garnacha"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Campo de Borja."
+ }
+}

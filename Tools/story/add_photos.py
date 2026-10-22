@@ -72,6 +72,15 @@ PHOTOS.update({
 })
 
 
+# Campo de Borja map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "borja-veruela-1": ("File:Monasterio de Veruela, Vera de Moncayo, España, 2012-09-03, DD 01.JPG", "https://commons.wikimedia.org/wiki/File:Monasterio_de_Veruela,_Vera_de_Moncayo,_Espa%C3%B1a,_2012-09-03,_DD_01.JPG",
+                      "Diego Delso", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The walled entrance arch and church tower of the Monasterio de Veruela under a blue sky", "50% 50%"),
+    "borja-moncayo-1": ("File:Moncayo urrutitik 2.JPG", "https://commons.wikimedia.org/wiki/File:Moncayo_urrutitik_2.JPG",
+                      "Namiac", "CC BY-SA 3.0 es", "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en", "The snow-capped Moncayo rising over dry scrub and green fields of the plain below", "50% 50%"),
+})
+
+
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())
