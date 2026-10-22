@@ -14,9 +14,8 @@
   addEventListener('scroll', pick, { passive: true });
   pick();
   document.querySelectorAll('.g-bigbtn').forEach((b) => b.addEventListener('click', () => {
-    if (parent !== window) { parent.postMessage({ sg: 'unfold-in-c' }, '*'); return; }
     let n = document.querySelector('.g-note');
     if (!n) { n = document.createElement('p'); n.className = 'g-note'; b.after(n); }
-    n.textContent = 'The unfold is shown in option C.';
+    n.textContent = 'The unfold is built in option C. Try it there.';
   }));
 })();

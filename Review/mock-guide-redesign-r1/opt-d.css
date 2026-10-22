@@ -72,5 +72,4 @@
   .o-d .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}.pg-short li{grid-template-columns:1fr}
   .o-d .g-jump{padding:0 1rem}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
 }
-.d-nums b{white-space:nowrap;font-size:clamp(3rem,6vw,5.4rem)}
-body.o-d{overflow-x:clip}
+@media (min-width:48rem){.d-nums{grid-template-columns:repeat(auto-fit,minmax(19rem,1fr))}.d-nums b{white-space:nowrap;font-size:clamp(2.6rem,4vw,4rem)}}

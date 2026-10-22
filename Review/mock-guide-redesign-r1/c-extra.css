@@ -6,3 +6,5 @@ body:not(.map-off) .top .where{margin-left:auto}
 #closed{background:#fff}
 .grow{position:fixed;z-index:100;overflow:hidden;background:#141414;pointer-events:none}
 .grow img{display:block;width:100%;height:100%;object-fit:cover}
+
+.back{white-space:nowrap}

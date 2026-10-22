@@ -571,7 +571,7 @@ NPLACES = 9  # "9 places to fly to", as in the live page's map card and the v3 b
 def bigbtn(variant, rec=False):
     """The big photo button: the Rioja valley photo and the black label part with the folded-map glyph (v3 part B, option C style)."""
     cls = 'c-bigbtn' if rec else 'g-bigbtn'
-    return (f'<button type="button" class="{cls} bb bb-{variant}"><span class="bb-ph">{ph("rioja-sierra-1", "bb-img", "The Sierra de Cantabria above the Rioja vineyards")}</span>'
+    return (f'<button type="button" class="{cls} bb bb-{variant}"><span class="bb-ph">{ph("rioja-2" if variant in ("a", "c") else "rioja-1", "bb-img", "Vineyards in Rioja")}</span>'
             f'<span class="bb-lab"><span class="bb-txt"><span class="bb-t">Read with the map</span><span class="bb-s">{G["minutes"]} minutes · {NPLACES} places to fly to</span></span>{GLYPH}</span></button>')
 
 
@@ -677,7 +677,7 @@ def opt_a():
     return (
         f'<div class="a-wrap"><header class="a-head"><p class="a-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("a-badges")}</header>'
         f'{bigbtn("a")}'
-        f'<div class="a-mosaic">{ph("rioja-2", "m1")}{ph("rioja-1", "m2")}{ph("rioja-oriental-2", "m3")}</div>'
+        f'<div class="a-mosaic">{ph("rioja-1", "m1")}{ph("rioja-oriental-1", "m2")}{ph("rioja-oriental-2", "m3")}</div>'
         f'{jump()}{why("a-why")}'
         f'{beat("place", p_side)}{beat("weather", w_side, w_below)}{beat("ground", g_side)}{beat("rules", r_side, r_below)}'
         f'<section id="c-taste" class="a-taste" aria-labelledby="taste-h"><h2 id="taste-h">How it tastes</h2><div class="a-cards">{taste_items("a-card")}</div><p class="src-line">{TASTE_CITE}</p></section>'
