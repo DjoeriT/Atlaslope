@@ -12,6 +12,17 @@
     "place",
     "zone"
    ]
+  },
+  {
+   "id": "portugal",
+   "name": "Portugal",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -70,6 +81,18 @@
      "id": "canarias",
      "name": "Canary Islands",
      "order": 10
+    }
+   ]
+  },
+  {
+   "id": "wset-pt",
+   "name": "WSET",
+   "country": "portugal",
+   "groups": [
+    {
+     "id": "pt-north",
+     "name": "North",
+     "order": 1
     }
    ]
   }
@@ -2215,6 +2238,46 @@
    "boundary": "rioja-zones",
    "centroid": null,
    "quiz": "zone"
+  },
+  {
+   "id": "douro",
+   "name": "Douro",
+   "official": "Douro",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-north",
+   "euFile": "PDO-PT-A1539",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.3232,
+    41.1676
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "vinho-verde",
+   "name": "Vinho Verde",
+   "official": "Vinho Verde",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-north",
+   "euFile": "PDO-PT-A1545",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.3331,
+    41.4889
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 1,
+   "courseOrder": 1
   }
  ]
 }

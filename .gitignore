@@ -32,3 +32,6 @@ Tools/share/share.html
 # Local-only: the Claude pointer file and the satellite map mocks folder (docs/env-local.md)
 CLAUDE.local.md
 /mocks/
+
+# Headless run transcripts (Tools/guides/headless.py): they hold local paths and account details; usage.py reads them locally.
+Review/guides-pipeline/*/run*/
