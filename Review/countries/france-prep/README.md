@@ -14,7 +14,7 @@ Data only, while Portugal builds (plan `Review/countries/france-plan.md`, decisi
 ## Findings for the pilot
 - Only 10 Premier Cru climats have their own INAO outline; the other Premier Cru names fall under the plain "Chablis premier cru" area [V, INAO file]. The guide names them from the cahier (p.1-2).
 - `extract.py` needs French markers: start at "I. - Nom de l'appellation", stop at "CHAPITRE II". A pilot change, not done here (shared tool).
-- WSET spec on disk is Issue 1 (Aug 2016), not the May 2022 Issue 2 the URL names [V]; `curriculum.json` cites Issue 2. Check the France list against Issue 2 before Burgundy runs.
+- WSET spec on disk is Issue 2 (2022), the current one [V]: its cover still prints "Issue No. 1, August 2016", the copyright page and footers say Issue 2. Checked byte for byte against the qualification page's only spec link (`wset-l3-issue2.md`): no names added, removed or moved.
 - Scope: the WSET list holds 108 names, not about 60. At 0.75M a guide [V rate] that is ~80M, not ~45M [A scope]; 6 Burgundy and Beaujolais names and the 5 Champagne sub-zones are not AOCs.
 - BRGM licence open: owner sends the drafted email (`licences.md`) before the pilot ships (#57).
 - In a worktree, run the builder with `ATLASLOPE_RAW=<main checkout>/data/raw` (raw files live in the main folder).

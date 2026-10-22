@@ -1,6 +1,6 @@
 # WSET Level 3 Wines: France place names matched to EU register
 
-Source [V]: `data/raw/countries/fr/wset-l3-spec.pdf` (git-ignored). Doubt: the URL given served the **Issue 1, August 2016** spec (6 pages by `file`, but 1475 text lines), not the May 2022 Issue 2 named in the URL [V]. France names: Range 1 of Still (Learning Outcome 2), Sparkling and Fortified. Names only, no WSET text. Register: `data/countries/fr/register.json` (442 entries) [V].
+Source [V]: `data/raw/countries/fr/wset-l3-spec.pdf` (git-ignored), WSET L3 specification Issue 2 (2022); the cover still prints Issue 1, August 2016, the copyright page and footers say Issue 2 (checked in `wset-l3-issue2.md`).
 
 | WSET heading | Name | Kind | Register fileNumber | Register name | Note | Batch |
 |---|---|---|---|---|---|---|

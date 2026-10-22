@@ -13,7 +13,7 @@
 - Owner: send the BRGM email in `Review/countries/france-prep/licences.md` (#57).
 - Owner: France scope is 108 WSET names, not ~60 (~80M at 0.75M a guide): keep the whole list, or trim (decision #53).
 - Pilot slice: French markers in `extract.py`; IGN layer and BRGM layer in the app; `/fr/` pages; Chablis and Pauillac guide runs.
-- WSET spec Issue 2 (May 2022) not on disk; the fetched file is Issue 1 (2016).
+- (Closed) WSET spec on disk is Issue 2 (2022); its cover still says Issue 1 (`Review/countries/france-prep/wset-l3-issue2.md`).
 
 ## Next session: France pilot (owner's go, 22 Oct 2026: "start the France pilot (Chablis, Pauillac, ~6-10M) in a fresh session")
 - Start only when Portugal batch 1 (#214) is merged: it finishes Portugal's mainland (#52) and adds the country template the
