@@ -85,7 +85,7 @@ jobs:
         run: |
           bin=$(find ~/.cache/ms-playwright -type f \( -name chrome-headless-shell -o -name chrome \) | head -1)
           missing=$(ldd "$bin" | grep -c "not found" || true)
-          if [ "$missing" = "0" ]; then echo "all libraries present ($bin); apt skipped"; else npx playwright install-deps chromium; fi
+          if [ -n "$bin" ] && [ "$missing" = "0" ]; then echo "all libraries present ($bin); apt skipped"; else npx playwright install-deps chromium; fi
       - name: UI tests
         run: npx playwright test --shard=${{ matrix.shard }} --reporter=line
   # The one required check on main (owner, 20 Oct 2026): fails when any part above failed or was cancelled, passes when a docs-only PR
