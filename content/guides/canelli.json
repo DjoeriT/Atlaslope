@@ -1,0 +1,121 @@
+{
+ "id": "canelli",
+ "title": "Why Canelli tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A sweet Moscato from the hills where the Langhe meet the Monferrato. Day-night swings and pale marl build the grape's aromas, and cold stops the fermentation to keep them in the wine.",
+  "cite": [
+   "canelli-disc:p7",
+   "canelli-disc:p8",
+   "canelli-disc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills between the Tanaro and the Bormida",
+   "paras": [
+    "The vineyards sit in 17 communes around Canelli, partly in the province of Asti and partly in Cuneo. They lie between the Tanaro and the Bormida, across the Belbo valley, at 165 to 500 m above sea level.",
+    "This hill country lies on the border between the Langhe and the Monferrato. Records of Moscato here go back to 1344, when the reordered statutes of Canelli show the vine as the main crop."
+   ],
+   "cite": [
+    "canelli-disc:p7",
+    "canelli-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Canelli",
+     "point": [
+      8.2951,
+      44.7237
+     ],
+     "zoom": 11,
+     "caption": "The town at the heart of the zone, whose producers have worked out their own Moscato methods since the end of the 19th century.",
+     "cite": [
+      "canelli-disc:p7",
+      "canelli-disc:p9"
+     ]
+    },
+    {
+     "label": "The Belbo valley",
+     "point": [
+      8.25,
+      44.72
+     ],
+     "zoom": 10,
+     "caption": "The vineyards stretch across the Belbo valley, between the Tanaro and the Bormida.",
+     "cite": [
+      "canelli-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers, airy hilltops",
+   "paras": [
+    "The climate is typical of the Po Valley: temperate continental, with very hot, muggy summers and cold, foggy winters. About 900 mm of rain falls in a year over 120 rainy days, and the sum of active temperatures above 10 °C is 2200 degree-days.",
+    "Rain falls mostly in spring and autumn. It is scarce and below the national average.",
+    "The hilly relief, with tops at 300 to 500 m, keeps the air moving and lets excess water drain away. It also keeps relative humidity lower than lower down.",
+    "This mix of hills and climate lets Moscato Bianco ripen properly."
+   ],
+   "cite": [
+    "canelli-disc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Pale marl from an ancient sea",
+   "paras": [
+    "The soils come from marine sediment and hold no rocks. Some deposits are sandstone and marl, others marl or clay. They are limy and poor in organic matter. They date to the Tertiary.",
+    "In some communes the marl-clay soils lie on gentle slopes, at 150 to 400 m. In others the sandstone-marl lies in layers on very steep slopes, at 180 to 600 m.",
+    "The pale, layered, limy marls are hard to work and not fertile enough for cereals. That gives the vine the right vigour and boosts the aromatic compounds (terpenols) that build up before harvest.",
+    "On clay soils those aromas cannot be reached, and the grape shows less aromatic finesse."
+   ],
+   "cite": [
+    "canelli-disc:p7",
+    "canelli-disc:p8"
+   ]
+  },
+  {
+   "id": "moscato",
+   "beat": "rules",
+   "title": "A sweet Moscato stopped by cold",
+   "paras": [
+    "Canelli is a white wine made only from Moscato Bianco. It comes in two types: Canelli (or Canelli Moscato) and Riserva.",
+    "The local know-how lies in the winemaking. Cold and other physical means stop the fermentation, which holds the actual alcohol down. That leaves sugar in the wine. It builds a light pressure that gives liveliness and fine foam. It also keeps the grape's own aromas. The wine has at least 12% total alcohol, of which 4.5 to 6.5% is actual. It can show up to 2.5 bar of pressure when opened.",
+    "Carlo Gancia worked out controlled fermentation in bottle for sweet Moscato wines, first in Santo Stefano Belbo and then in Canelli. In the early 1900s Carlo Mensio refined how the wine was prepared for that fermentation, by lowering the assimilable nitrogen in the must.",
+    "In tastings, wines from different vintages kept their balance between acidity and sweetness. Structure and a savoury edge carry the length. Their aroma and taste last longer than most wines on the market, and the Riserva was added to show that.",
+    "Riserva is released after 30 months of ageing and refining, at least 20 of them in bottle, counted from 1 October of the harvest year.",
+    "The vineyard rules come from generations of seeing how height and exposure shape the grape's sugars and aromas. Vineyards must be on sunny hillside slopes, knolls or uplands. Valley floors and shaded, flat or damp land are excluded. Picking is by hand only. Yields are capped at 9.5 t/ha, or 8.5 t/ha for a wine labelled Vigna with the vineyard's name, which needs vines at least 7 years old."
+   ],
+   "cite": [
+    "canelli-disc:p1",
+    "canelli-disc:p2",
+    "canelli-disc:p3",
+    "canelli-disc:p5",
+    "canelli-disc:p6",
+    "canelli-disc:p8",
+    "canelli-disc:p9",
+    "canelli-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Santo Stefano Belbo",
+     "point": [
+      8.2,
+      44.71
+     ],
+     "zoom": 11,
+     "caption": "Where Carlo Gancia first developed controlled fermentation in bottle for sweet Moscato wines, before moving to Canelli.",
+     "cite": [
+      "canelli-disc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

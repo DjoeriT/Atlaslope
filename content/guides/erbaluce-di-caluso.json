@@ -1,0 +1,88 @@
+{
+ "id": "erbaluce-di-caluso",
+ "title": "Why Erbaluce di Caluso tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Erbaluce is a native grape, at home on the sandy, pebbly moraine hills of the Canavese. Every wine here is made from it alone, in three different kinds.",
+  "cite": [
+   "erbaluce-di-caluso-disc:p1",
+   "erbaluce-di-caluso-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "basin",
+   "beat": "place",
+   "title": "A basin between two ridges",
+   "paras": [
+    "The area takes in 37 municipalities between two ridges, the serre of Ivrea and of Caluso. The ridges close it in, in the moraine basin of the Canavese.",
+    "The vineyards are set on the south side of the ridges. Vineyards must have good exposure."
+   ],
+   "cite": [
+    "erbaluce-di-caluso-disc:p2",
+    "erbaluce-di-caluso-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Caluso and its hills",
+     "point": [
+      7.8885,
+      45.3098
+     ],
+     "zoom": 10,
+     "caption": "Caluso, in the province of Torino, gives the wine its name.",
+     "cite": [
+      "erbaluce-di-caluso-disc:p1",
+      "erbaluce-di-caluso-disc:p2"
+     ]
+    },
+    {
+     "label": "Serra d'Ivrea",
+     "point": [
+      7.97,
+      45.48
+     ],
+     "zoom": 9.5,
+     "caption": "The ridges of Ivrea and of Caluso close in the moraine basin where the vineyards lie.",
+     "cite": [
+      "erbaluce-di-caluso-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moraine",
+   "beat": "ground",
+   "title": "Sand and pebbles left by ice",
+   "paras": [
+    "Vineyards must stand on land of moraine origin, between 200 m and 500 m above sea level.",
+    "The soil of the moraine hills is sandy and pebbly. Erbaluce has adapted particularly well to it.",
+    "The hills have a good base of acidity. It leaves a fine freshness in the wine."
+   ],
+   "cite": [
+    "erbaluce-di-caluso-disc:p2",
+    "erbaluce-di-caluso-disc:p6"
+   ]
+  },
+  {
+   "id": "one-grape",
+   "beat": "rules",
+   "title": "One grape, three wines",
+   "paras": [
+    "Erbaluce is a native grape, brought here by the Romans and probably descended from Greco di Fiano. Every wine is made from Erbaluce alone.",
+    "It is a versatile grape, unique among whites because it can be made into three kinds of wine. The dry white is straw yellow, dry and fresh. The sparkling is made by the traditional method, with a second fermentation in the bottle and at least 15 months on the lees. Its bubbles are fine and persistent, and it tastes fresh and fruity.",
+    "The sweet passito comes from carefully sorted grapes, laid on racks in special rooms to dry naturally until they reach at least 29% sugar. It is aged 36 months from 1 November after the harvest, and the riserva 48 months. The wine runs from gold to dark amber. It tastes sweet and harmonious, full and velvety.",
+    "Every kind must have at least 5.0 g/l of total acidity. Every bottle states the vintage, except a sparkling sold without one.",
+    "The dry white and the passito may add the word vigna, meaning vineyard, with the vineyard's name. Its vines must be at least 3 years old, and its wine is made and kept apart.",
+    "The vines are trained on the Caluso pergola, with more than 5 m between rows and about 1,000 vines per hectare. They are pruned with long canes because Erbaluce is not productive on its first three or four basal buds."
+   ],
+   "cite": [
+    "erbaluce-di-caluso-disc:p1",
+    "erbaluce-di-caluso-disc:p2",
+    "erbaluce-di-caluso-disc:p4",
+    "erbaluce-di-caluso-disc:p5",
+    "erbaluce-di-caluso-disc:p6"
+   ]
+  }
+ ]
+}
