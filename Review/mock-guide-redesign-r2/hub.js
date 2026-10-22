@@ -1,7 +1,7 @@
-// Hub: loads each option into its own frame (lazily), toggles desktop / phone, opens one option full screen (#solo=a..d).
+// Hub: loads each option into its own frame (lazily), toggles desktop / phone, opens one option full screen (#solo=c1..c3).
 (function () {
   const doc = (k) => window.OPT[k].replace('/*FONTS*/', () => window.FONTS).replace(/data-p="([\w-]+)"/g, (m, id) => 'src="' + window.IMG[id] + '"');
-  const solo = /^#solo=([abcd])$/.exec(location.hash);
+  const solo = /^#solo=(c[123])$/.exec(location.hash);
   if (solo) { // after parsing, so that document.open() really replaces the hub
     document.documentElement.style.visibility = 'hidden';
     setTimeout(() => { document.open(); document.write(doc(solo[1])); document.close(); }, 0);
@@ -21,11 +21,5 @@
       s.querySelectorAll('.seg button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
       s.querySelector('.frame').className = 'frame ' + b.dataset.m + (s.querySelector('.frame').classList.contains('on') ? ' on' : '');
     }));
-  });
-  addEventListener('message', async (e) => {
-    if (!e.data || e.data.sg !== 'unfold-in-c') return;
-    document.getElementById('opt-c').scrollIntoView({ behavior: 'smooth' });
-    const f = await load('c');
-    setTimeout(() => f.contentWindow.postMessage({ sg: 'unfold' }, '*'), 900);
   });
 })();

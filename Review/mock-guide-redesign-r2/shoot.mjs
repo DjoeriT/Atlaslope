@@ -1,13 +1,13 @@
-// Shots of the four options (viewport clips at scroll steps) and a contact sheet per option: node Review/mock-guide-redesign-r1/shoot.mjs [a b c d]
-import { chromium } from '../../node_modules/playwright/index.mjs';
+// Shots of the four options (viewport clips at scroll steps) and a contact sheet per option: node Review/mock-guide-redesign-r2/shoot.mjs [c1 c2 c3]
+import { chromium } from './pw.mjs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import fs from 'fs';
 const here = path.dirname(fileURLToPath(import.meta.url));
-const URL = 'file:///Users/djoeri/Developer/Atlaslope/mocks/guide-redesign-r1/index.html';
+const URL = 'file:///Users/djoeri/Developer/Atlaslope/mocks/guide-redesign-r2/index.html';
 const shots = path.join(here, 'shots');
 fs.mkdirSync(shots, { recursive: true });
-const which = process.argv.slice(2).length ? process.argv.slice(2) : ['a', 'b', 'c', 'd'];
+const which = process.argv.slice(2).length ? process.argv.slice(2) : ['c1', 'c2', 'c3'];
 const browser = await chromium.launch({ args: ['--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 const report = {};
 for (const k of which) {

@@ -6,7 +6,7 @@ Builds ONE self-contained index.html (CSS, JS, fonts, photos, slope tint inline;
 guide text from content/guides/{rioja,priorat}.json (unchanged), sources from content/sources.json, photos from public/photos/800,
 outlines from data/dops.geojson (DO23 Rioja, DO70 Priorat) and data/rioja-zones.geojson, slope tint from Mapzen Terrarium tiles.
 Run: python3 Review/mock-guide-redesign-r1/build.py [out_file]
-Default out: <main checkout>/mocks/guide-redesign-r1/index.html (git-ignored folder).
+Default out: <main checkout>/mocks/guide-redesign-r2/index.html (git-ignored folder).
 """
 import base64, json, math, pathlib, re, sys
 
@@ -15,7 +15,7 @@ ROOT = HERE.parents[1]
 # A worktree has no node_modules or mocks folder of its own: fall back to the main checkout (.claude/worktrees/<name>).
 MAIN = ROOT.parents[2] if ROOT.parent.name == 'worktrees' else ROOT
 NM = next(p for p in (ROOT / 'node_modules', MAIN / 'node_modules') if p.exists())
-OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else MAIN / 'mocks/guide-redesign-r1/index.html'
+OUT = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else MAIN / 'mocks/guide-redesign-r2/index.html'
 OUT.parent.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(HERE))
 import tint
@@ -568,11 +568,13 @@ GLYPH = ('<svg class="glyph" width="26" height="26" viewBox="0 0 18 18" fill="no
 NPLACES = 9  # "9 places to fly to", as in the live page's map card and the v3 button
 
 
-def bigbtn(variant, rec=False):
-    """The big photo button: the Rioja valley photo and the black label part with the folded-map glyph (v3 part B, option C style)."""
-    cls = 'c-bigbtn' if rec else 'g-bigbtn'
-    return (f'<button type="button" class="{cls} bb bb-{variant}"><span class="bb-ph">{ph("rioja-2" if variant in ("a", "c") else "rioja-1", "bb-img", "Vineyards in Rioja")}</span>'
-            f'<span class="bb-lab"><span class="bb-txt"><span class="bb-t">Read with the map</span><span class="bb-s">{G["minutes"]} minutes · {NPLACES} places to fly to</span></span>{GLYPH}</span></button>')
+def mapcard():
+    """The "Read with the map" card: the Rioja valley photo (never wider than 33rem) with a solid champagne bar under it that reads as a button.
+    One <button>, so the whole photo is clickable; class c-bigbtn is what the unfold script looks for."""
+    glyph = GLYPH.replace('stroke="#E9D8B4"', 'stroke="currentColor"').replace('width="26" height="26"', 'width="30" height="30"').replace('class="glyph"', 'class="mc-glyph"')
+    return (f'<button type="button" class="c-bigbtn mapcard"><span class="mc-ph">{ph("rioja-2", "mc-img", "Vineyards in Rioja")}</span>'
+            f'<span class="mc-bar">{glyph}<span class="mc-txt"><span class="mc-t">Read with the map</span><span class="mc-s">{G["minutes"]} minutes · {NPLACES} places to fly to</span></span>'
+            f'<span class="mc-go" aria-hidden="true">→</span></span></button>')
 
 
 def badges(cls):
@@ -662,64 +664,35 @@ def end_blocks(cls_prod='g-prod'):
     return prods
 
 
-def opt_a():
-    b = BEAT
-    def beat(k, side, below='', prose_extra=''):
-        x = b[k]
-        return (f'<section id="{x["id"]}" class="a-beat" aria-labelledby="h-{k}"><div class="a-main">{sec_head(x, "a-bh")}<div class="a-prose">{paras(x)}{flies(x)}<p class="src-line">{x["cite"]}</p></div></div>'
-                f'<aside class="a-side">{side}</aside>{below}</section>')
-    p_side = f'<div class="a-figs2">{stopfig(STOP["sierra"])}{stopfig(STOP["valley"])}</div>' + fx('level', cls='a-level')
-    w_side = fx('climate')
-    w_below = f'<div class="a-zones">{zone_items("a-zone", "g-ph")}</div>'
-    g_side = stopfig(STOP['soils']) + fx('altitude')
-    r_side = stopfig(STOP['haro'])
-    r_below = f'<div class="a-rulefacts">{fx("styles")}<div>{fx("grapes", "rows")}</div></div>'
-    return (
-        f'<div class="a-wrap"><header class="a-head"><p class="a-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("a-badges")}</header>'
-        f'{bigbtn("a")}'
-        f'<div class="a-mosaic">{ph("rioja-1", "m1")}{ph("rioja-oriental-1", "m2")}{ph("rioja-oriental-2", "m3")}</div>'
-        f'{jump()}{why("a-why")}'
-        f'{beat("place", p_side)}{beat("weather", w_side, w_below)}{beat("ground", g_side)}{beat("rules", r_side, r_below)}'
-        f'<section id="c-taste" class="a-taste" aria-labelledby="taste-h"><h2 id="taste-h">How it tastes</h2><div class="a-cards">{taste_items("a-card")}</div><p class="src-line">{TASTE_CITE}</p></section>'
-        f'<section id="c-short" class="a-short" aria-labelledby="short-h"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></section>'
-        f'<div class="a-two"><section id="c-producers" aria-labelledby="prod-h"><h2 id="prod-h">Producers</h2><ul class="a-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></section>'
-        f'<section id="c-alike" aria-labelledby="alike-h"><h2 id="alike-h">If you like this, try</h2><ul class="a-alike">{alike_items("a-al", "g-ph")}</ul></section></div>'
-        f'<div class="a-end">{testme()}{NEXT}</div>'
-        f'{sources("a-sources")}'
-        f'@@CREDITS@@</div>')
+def hero():
+    """Shared by all three: title and lede left, the "Read with the map" card right (under the title on a phone)."""
+    return (f'<section class="c-hero"><div class="c-tt"><p class="c-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("c-badges")}</div>'
+            f'<div class="c-hbtn">{mapcard()}</div>{why("c-why")}</section>')
 
 
-def opt_b():
-    b = BEAT
-    def beat(k, photo, rail, after=''):
-        x = b[k]
-        return (f'<section id="{x["id"]}" class="b-beat" aria-labelledby="h-{k}">{photo}'
-                f'<div class="b-grid"><div class="b-bh"><span class="n" aria-hidden="true">{x["n"]}</span><span class="k">{x["kick"]}</span><h3 id="h-{k}"><span class="sr-only">{x["kick"]}: </span>{esc(x["title"])}</h3></div>'
-                f'<div class="b-prose">{paras(x)}{flies(x)}<p class="src-line">{x["cite"]}</p></div><aside class="b-rail">{rail}</aside></div>{after}</section>')
-    def bleed(*figs):
-        return f'<div class="b-bleed n{len(figs)}">{"".join(figs)}</div>'
-    def capline(s):  # caption in the calm column under the photo
-        return f'<div class="b-grid b-capline">{stopcap(s, "b-cap")}</div>'
-    p_photo = bleed(f'<figure data-view="valley">{ph("rioja-3", "g-ph")}</figure>', f'<figure data-view="sierra">{ph("rioja-sierra-1", "g-ph")}</figure>') + \
-        f'<div class="b-grid b-capline b-two">{stopcap(STOP["valley"], "b-cap")}{stopcap(STOP["sierra"], "b-cap")}</div>'
-    w_photo = bleed(*[f'<figure data-view="{z["zid"]}">{ph(z["pic"], "g-ph")}</figure>' for z in ZONES])
-    w_after = ('<div class="b-grid b-zones">' + ''.join(f'<article data-view="{z["zid"]}"><h4><a href="{z["href"]}">{esc(z["name"])}</a></h4><p class="z-k">The weather</p><p>{esc(z["climate"])}</p>'
-                                                       f'<p class="z-k">Wine</p><p>{esc(z["wine"])}</p><p class="src">Source: {z["cite"][8:]}</p></article>' for z in ZONES) + '</div>')
-    g_photo = bleed(f'<figure data-view="soils">{ph("rioja-alavesa-2", "g-ph")}</figure>') + capline(STOP['soils'])
-    r_photo = bleed(f'<figure data-view="haro">{ph("rioja-haro-1", "g-ph")}</figure>') + capline(STOP['haro'])
-    return (
-        f'<header class="b-open">{bigbtn("b")}<div class="b-title"><p class="b-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("b-badges")}{why("b-why")}</div></header>'
-        f'{jump()}'
-        f'{beat("place", p_photo, fx("level"))}{beat("weather", w_photo, fx("climate"), w_after)}{beat("ground", g_photo, fx("altitude"))}'
-        f'{beat("rules", r_photo, fx("styles", "grapes"), f"<div class=\"b-grid b-more\">{fx("rows")}</div>")}'
-        f'<section id="c-taste" class="b-taste" aria-labelledby="taste-h"><div class="b-tasteph">{ph("rioja-2", "g-ph")}</div><div class="b-tastetx"><h2 id="taste-h">How it tastes</h2>{taste_items("b-t")}<p class="src-line">{TASTE_CITE}</p></div></section>'
-        f'<section id="c-short" class="b-short" aria-labelledby="short-h"><div class="b-grid"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></div></section>'
-        f'<section id="c-producers" class="b-prod" aria-labelledby="prod-h"><div class="b-grid"><h2 id="prod-h">Producers</h2><ul class="b-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></div></section>'
-        f'<section id="c-alike" class="b-alike" aria-labelledby="alike-h"><h2 id="alike-h">If you like this, try</h2><ul>{alike_items("b-al", "g-ph")}</ul></section>'
-        f'<div class="b-grid b-end">{testme()}{NEXT}</div>{sources("b-sources")}@@CREDITS@@')
+def zone_text():
+    return '<div class="c-ztx">' + ''.join(f'<article><h4><a href="{z["href"]}">{esc(z["name"])}</a></h4><p class="z-k">The weather</p><p>{esc(z["climate"])}</p>'
+                                           f'<p class="z-k">Wine</p><p>{esc(z["wine"])}</p><p class="src">Source: {z["cite"][8:]}</p></article>' for z in ZONES) + '</div>'
 
 
-def opt_c():
+def zone_photos():
+    return '<div class="c-zph">' + ''.join(f'<div data-view="{z["zid"]}">{ph(z["pic"], "g-ph")}</div>' for z in ZONES) + '</div>'
+
+
+def end_c():
+    return (f'<div class="c-in"><section id="c-short" class="c-short" aria-labelledby="short-h"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></section>'
+            f'<div class="c-two"><section id="c-producers" aria-labelledby="prod-h"><h2 id="prod-h">Producers</h2><ul class="c-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></section>'
+            f'<section id="c-alike" aria-labelledby="alike-h"><h2 id="alike-h">If you like this, try</h2><ul class="c-alike">{alike_items("c-al", "g-ph")}</ul></section></div>'
+            f'<div class="c-end">{testme()}{NEXT}</div>{sources("c-sources")}@@CREDITS@@</div>')
+
+
+def taste_band():
+    return (f'<section id="c-taste" class="c-taste" aria-labelledby="taste-h"><div class="c-in"><h2 id="taste-h">How it tastes</h2>'
+            f'<div class="c-tcols">{taste_items("c-t")}</div><p class="src-line">{TASTE_CITE}</p></div></section>')
+
+
+def opt_c1():
+    """C, refined: round 1's C, with the hero card and photos no wider than 33rem."""
     b = BEAT
     def beat(k, open_html, strip, after_prose=''):
         x = b[k]
@@ -728,62 +701,61 @@ def opt_c():
                 f'<div class="c-prose">{paras(x)}</div><div class="c-meta">{flies(x)}<p class="src-line">{x["cite"]}</p></div>{after_prose}<div class="c-strip g-fx">{strip}</div></section>')
     def photos(*stops):
         return f'<div class="c-photos n{len(stops)}">{"".join(stopfig(s, "c-fig", "g-ph") for s in stops)}</div>'
-    z_open = '<div class="c-zph">' + ''.join(f'<div data-view="{z["zid"]}">{ph(z["pic"], "g-ph")}</div>' for z in ZONES) + '</div>'
-    z_tx = '<div class="c-ztx">' + ''.join(f'<article><h4><a href="{z["href"]}">{esc(z["name"])}</a></h4><p class="z-k">The weather</p><p>{esc(z["climate"])}</p>'
-                                              f'<p class="z-k">Wine</p><p>{esc(z["wine"])}</p><p class="src">Source: {z["cite"][8:]}</p></article>' for z in ZONES) + '</div>'
     r_strip = f'<div class="c-cell">{FX["styles"]}</div><div class="c-cell">{FX["grapes"]}{FX["rows"]}</div>'
     return (
-        f'<section class="c-hero">{bigbtn("c", True)}<div class="c-title"><div><p class="c-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("c-badges")}</div>{why("c-why")}</div></section>'
-        f'{jump()}'
-        f'{beat("place", photos(STOP["sierra"], STOP["valley"]), f"<div class=\"c-cell\">{fx("level")}</div>")}'
-        f'{beat("weather", z_open, f"<div class=\"c-cell wide\">{FX["climate"]}</div>", z_tx)}'
-        f'{beat("ground", photos(STOP["soils"]), f"<div class=\"c-cell wide\">{FX["altitude"]}</div>")}'
-        f'{beat("rules", photos(STOP["haro"]), r_strip)}'
-        f'<section id="c-taste" class="c-taste" aria-labelledby="taste-h"><div class="c-in"><h2 id="taste-h">How it tastes</h2><div class="c-tcols">{taste_items("c-t")}</div><p class="src-line">{TASTE_CITE}</p></div></section>'
-        f'<div class="c-in"><section id="c-short" class="c-short" aria-labelledby="short-h"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></section>'
-        f'<div class="c-two"><section id="c-producers" aria-labelledby="prod-h"><h2 id="prod-h">Producers</h2><ul class="c-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></section>'
-        f'<section id="c-alike" aria-labelledby="alike-h"><h2 id="alike-h">If you like this, try</h2><ul class="c-alike">{alike_items("c-al", "g-ph")}</ul></section></div>'
-        f'<div class="c-end">{testme()}{NEXT}</div>{sources("c-sources")}@@CREDITS@@</div>')
+        hero() + jump()
+        + beat('place', photos(STOP['sierra'], STOP['valley']), f'<div class="c-cell">{fx("level")}</div>')
+        + beat('weather', zone_photos(), f'<div class="c-cell wide">{FX["climate"]}</div>', zone_text())
+        + beat('ground', photos(STOP['soils']), f'<div class="c-cell wide">{FX["altitude"]}</div>')
+        + beat('rules', photos(STOP['haro']), r_strip)
+        + taste_band() + end_c())
 
 
-def opt_d():
+def opt_c2():
+    """C, calmer: one smaller photo opens every beat, prose in one column, the facts a quiet strip without a box, quieter type. The sierra photo sits in the facts strip."""
     b = BEAT
-    def nums(items):
-        return '<div class="d-nums">' + ''.join(f'<div><b>{n}</b><span>{t}</span></div>' for n, t in items) + '</div>'
-    def beat(k, tone, photo, numbers, extra='', facts=''):
+    def beat(k, open_html, strip, after_prose=''):
         x = b[k]
-        return (f'<section id="{x["id"]}" class="d-beat d-{tone}" aria-labelledby="h-{k}"><div class="d-in"><div class="d-bh"><span class="n" aria-hidden="true">{x["n"]}</span><span class="k">{x["kick"]}</span>'
-                f'<h3 id="h-{k}"><span class="sr-only">{x["kick"]}: </span>{esc(x["title"])}</h3></div></div>{photo}'
-                f'<div class="d-in"><div class="d-prose">{paras(x)}</div>{flies(x)}<p class="src-line">{x["cite"]}</p>{numbers}{extra}{facts}</div></section>')
-    def bleed(*figs):
-        return f'<div class="d-bleed n{len(figs)}">{"".join(figs)}</div>'
-    def caps(*stops):
-        return '<div class="d-in d-caps">' + ''.join(stopcap(s, 'd-cap') for s in stops) + '</div>'
-    pair = bleed(f'<figure data-view="valley">{ph("rioja-3", "g-ph")}</figure>', f'<figure data-view="sierra">{ph("rioja-sierra-1", "g-ph")}</figure>') + caps(STOP['valley'], STOP['sierra'])
-    trio = bleed(*[f'<figure data-view="{z["zid"]}">{ph(z["pic"], "g-ph")}</figure>' for z in ZONES])
-    z_tx = '<div class="d-ztx">' + ''.join(f'<article><h4><a href="{z["href"]}">{esc(z["name"])}</a></h4><p class="z-k">The weather</p><p>{esc(z["climate"])}</p>'
-                                              f'<p class="z-k">Wine</p><p>{esc(z["wine"])}</p><p class="src">Source: {z["cite"][8:]}</p></article>' for z in ZONES) + '</div>'
+        return (f'<section id="{x["id"]}" class="c-beat" aria-labelledby="h-{k}">{open_html}'
+                f'<div class="c-bh"><span class="n" aria-hidden="true">{x["n"]}</span><div><span class="k">{x["kick"]}</span><h3 id="h-{k}"><span class="sr-only">{x["kick"]}: </span>{esc(x["title"])}</h3></div></div>'
+                f'<div class="c-prose">{paras(x)}</div><div class="c-meta">{flies(x)}<p class="src-line">{x["cite"]}</p></div>{after_prose}<div class="c-strip g-fx">{strip}</div></section>')
+    def photo(s):
+        return f'<div class="c-photos n1">{stopfig(s, "c-fig", "g-ph")}</div>'
+    r_strip = f'<div class="c-cell">{FX["styles"]}</div><div class="c-cell">{FX["grapes"]}{FX["rows"]}</div>'
     return (
-        f'<section class="d-hero"><div class="d-in"><p class="d-kick">Terroir · {G["minutes"]}-minute read</p><h1>Rioja</h1>{badges("d-badges")}</div>{bigbtn("d")}</section>'
-        f'<section class="d-lede"><div class="d-in">{why("d-why")}</div></section>{jump("g-jump pg-jump d-jump")}'
-        + beat('place', 'white', pair, nums([('100 km', 'along the Ebro, from Haro to Alfaro'), ('40 km', 'across, at the widest'), ('700 m', 'where the terraces end'), ('63,593 ha', 'in La Rioja, Álava and Navarra')]), '', fx('level'))
-        + beat('weather', 'champ', trio, nums([('400 mm', 'of rain in a year'), ('3', 'zones, Atlantic in the west, Mediterranean in the east')]), z_tx, fx('climate'))
-        + beat('ground', 'white', bleed(f'<figure data-view="soils">{ph("rioja-alavesa-2", "g-ph")}</figure>') + caps(STOP['soils']),
-               nums([('¼', 'clay-limestone, the main source of wines for ageing'), ('¼', 'ferrous clay'), ('½', 'alluvial soil near the rivers')]), '', fx('altitude'))
-        + beat('rules', 'black', bleed(f'<figure data-view="haro">{ph("rioja-haro-1", "g-ph")}</figure>') + caps(STOP['haro']),
-               nums([('1857', 'Champagne-method wines shown in Madrid'), ('1890', 'a champagne maker from Reims hired in Haro'), ('60 months', 'for Gran Reserva, 24 of them in barrel'), ('2017', 'the rules cover traditional-method sparkling')]), '',
-               f'<div class="d-rules">{fx("styles")}<div>{fx("grapes", "rows")}</div></div>')
-        + f'<section id="c-taste" class="d-taste d-champ" aria-labelledby="taste-h"><div class="d-in d-split"><div class="d-tph">{ph("rioja-2", "g-ph")}</div><div><h2 id="taste-h">How it tastes</h2>{taste_items("d-t")}<p class="src-line">{TASTE_CITE}</p></div></div></section>'
-        f'<section id="c-short" class="d-short d-white" aria-labelledby="short-h"><div class="d-in"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></div></section>'
-        f'<section id="c-producers" class="d-prod d-black" aria-labelledby="prod-h"><div class="d-in"><h2 id="prod-h">Producers</h2><ul class="d-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></div></section>'
-        f'<section id="c-alike" class="d-alike d-white" aria-labelledby="alike-h"><div class="d-in"><h2 id="alike-h">If you like this, try</h2><ul>{alike_items("d-al", "g-ph")}</ul>'
-        f'<div class="d-end">{testme()}{NEXT}</div></div></section>'
-        f'<div class="d-champl">{sources("d-sources")}</div><div class="d-in">@@CREDITS@@</div>')
+        hero() + jump()
+        + beat('place', photo(STOP['valley']), f'<div class="c-cell">{fx("level")}</div><div class="c-cell">{stopfig(STOP["sierra"], "c-fig c-small", "g-ph")}</div>')
+        + beat('weather', zone_photos(), f'<div class="c-cell wide">{FX["climate"]}</div>', zone_text())
+        + beat('ground', photo(STOP['soils']), f'<div class="c-cell wide">{FX["altitude"]}</div>')
+        + beat('rules', photo(STOP['haro']), r_strip)
+        + taste_band() + end_c())
+
+
+def opt_c3():
+    """C + A blend: A's calm page and order (prose left, a second column with photos and facts, no boxes), C's hero, stop photos and the How it tastes band."""
+    b = BEAT
+    def beat(k, side, below=''):
+        x = b[k]
+        return (f'<section id="{x["id"]}" class="a-beat" aria-labelledby="h-{k}"><div class="a-main">{sec_head(x, "a-bh")}<div class="a-prose">{paras(x)}{flies(x)}<p class="src-line">{x["cite"]}</p></div></div>'
+                f'<aside class="a-side">{side}</aside>{below}</section>')
+    p_side = f'<div class="a-figs2">{stopfig(STOP["sierra"])}{stopfig(STOP["valley"])}</div>' + fx('level', cls='a-level')
+    w_below = f'<div class="a-zones">{zone_items("a-zone", "g-ph")}</div>'
+    r_below = f'<div class="a-rulefacts">{fx("styles")}<div>{fx("grapes", "rows")}</div></div>'
+    return (
+        hero() + jump()
+        + '<div class="a-wrap">'
+        + beat('place', p_side) + beat('weather', fx('climate'), w_below) + beat('ground', stopfig(STOP['soils']) + fx('altitude')) + beat('rules', stopfig(STOP['haro']), r_below)
+        + '</div>' + taste_band()
+        + '<div class="a-wrap">'
+        f'<section id="c-short" class="a-short" aria-labelledby="short-h"><h2 id="short-h">In short</h2><ol class="pg-short">{short_items()}</ol></section>'
+        f'<div class="a-two"><section id="c-producers" aria-labelledby="prod-h"><h2 id="prod-h">Producers</h2><ul class="a-names">{end_blocks()}</ul><p class="src-line">{PROD_CITE}</p></section>'
+        f'<section id="c-alike" aria-labelledby="alike-h"><h2 id="alike-h">If you like this, try</h2><ul class="a-alike">{alike_items("a-al", "g-ph")}</ul></section></div>'
+        f'<div class="a-end">{testme()}{NEXT}</div>{sources("a-sources")}@@CREDITS@@</div>')
 
 
 OPTS = {}
 USED_BY = {}
-for k, fn in (('a', opt_a), ('b', opt_b), ('c', opt_c), ('d', opt_d)):
+for k, fn in (('c1', opt_c1), ('c2', opt_c2), ('c3', opt_c3)):
     USED.clear()
     h = fn()
     USED_BY[k] = list(USED)
@@ -805,23 +777,15 @@ ML_JS = (NM / 'maplibre-gl/dist/maplibre-gl.js').read_text()
 ML_CSS = (NM / 'maplibre-gl/dist/maplibre-gl.css').read_text()
 CHARTS_CSS = (HERE / 'charts.css').read_text()
 BASE_CSS = (HERE / 'base.css').read_text() + CHARTS_CSS
-NR_JS = (HERE / 'nr.js').read_text()
 CEXTRA_CSS = (HERE / 'c-extra.css').read_text()
-TITLES = {'a': 'A · Subtle', 'b': 'B · Magazine', 'c': 'C · Photo-led', 'd': 'D · Bold'}
+TITLES = {'c1': 'C1 · C, refined', 'c2': 'C2 · C, calmer', 'c3': 'C3 · C + A blend'}
 HEAD = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<title>Rioja guide, option {t} · AtlaSlope</title><style>/*FONTS*/</style>{css}</head>')
 
 
-def simple_doc(k):
-    css = f'<style>{BASE_CSS}{(HERE / f"opt-{k}.css").read_text()}</style>'
-    top = ('<header class="top g-band"><p class="brand">AtlaSlope</p><p class="where-r">Rioja</p><nav class="topnav" aria-label="Site"><a href="#atlas">Atlas</a><a href="#study">Study</a>'
-           '<a href="#guides" aria-current="page">Guides</a><a href="#about">About</a></nav></header>')
-    return HEAD.format(t=TITLES[k], css=css) + f'<body class="o-{k} nr">{top}<main>{OPTS[k]}</main><script>{NR_JS}</script></body></html>'
-
-
 story_used = sorted(set(BUILT['rioja'][2]))
 texts = f'<div class="text" id="story-text" data-guide="rioja">\n{steps_html("rioja")}\n{credits_line(BUILT["rioja"][2])}\n</div>'
-C_CSS = ''.join((HERE / f).read_text() for f in ('story.css', 'story-b.css', 'story-v4.css')) + BASE_CSS + (HERE / 'opt-c.css').read_text() + CEXTRA_CSS
+C_CSS = ''.join((HERE / f).read_text() for f in ('story.css', 'story-b.css', 'story-v4.css')) + BASE_CSS + (HERE / 'opt-c.css').read_text() + (HERE / 'hero.css').read_text() + (HERE / 'c2.css').read_text() + (HERE / 'opt-c3.css').read_text() + CEXTRA_CSS
 DATA = json.dumps({'views': VIEWS, 'focus': FOCUS, 'labels': LABELS, 'chapters': CHAPTERS, 'nch': len(GUIDES['rioja']['chapters']), 'tints': TINTS, 'rivers': RIVERS, 'names': NAMES, 'koppen': KOPPEN,
                    'koppenLegend': KOP_LEGEND, 'inverse': INVERSE, 'loc': LOC, 'back': {k: f'#place={k}&page=1' for k in GUIDES}}, ensure_ascii=False, separators=(',', ':'))
 C_JS = (HERE / 'story.js').read_text()
@@ -839,10 +803,10 @@ MAPBLOCK = f'''<main id="story" class="sg">
 </main>'''
 FOOT = (f'<p class="foot">Photos in this page: {len(story_used)}, each with its credit line. Rivers and names: IGN (Hidrografía INSPIRE WFS, Nomenclátor Geográfico Básico), CC BY 4.0 scne.es. Geology: IGME, Mapa Geológico de España 1:50.000 (MAGNA), WMS. '
         'Climate: Köppen-Geiger 1991-2020, Beck et al. 2023, CC BY 4.0. Outlines: DOCa Rioja © MAPA; Rioja zones CC-BY 4.0 ign.es.</p>')
-DOC_C = (HEAD.format(t=TITLES['c'], css=f'<style>{ML_CSS}</style><style>{C_CSS}</style>') +
-         f'<body class="map-off o-c-doc"><a class="skip" href="#closed">Skip to the guide</a>{band()}{MAPBLOCK}'
-         f'<div id="closed" class="o-c" aria-label="The guide page">{OPTS["c"]}</div>{FOOT}<script>{ML_JS}</script><script>window.SG={DATA};</script><script>{C_JS}</script></body></html>')
-DOCS = {'a': simple_doc('a'), 'b': simple_doc('b'), 'c': DOC_C, 'd': simple_doc('d')}
+WRAP = {'c1': 'o-c v1', 'c2': 'o-c v2', 'c3': 'o-c3 v3'}
+DOCS = {k: (HEAD.format(t=TITLES[k], css=f'<style>{ML_CSS}</style><style>{C_CSS}</style>') +
+            f'<body class="map-off o-c-doc"><a class="skip" href="#closed">Skip to the guide</a>{band()}{MAPBLOCK}'
+            f'<div id="closed" class="{WRAP[k]}" aria-label="The guide page">{OPTS[k]}</div>{FOOT}<script>{ML_JS}</script><script>window.SG={DATA};</script><script>{C_JS}</script></body></html>') for k in OPTS}
 
 # ---------- the hub page ----------
 IMG = {}
@@ -855,16 +819,19 @@ def js_str(s):
     return json.dumps(s).replace('</', '<\\/').replace('<!--', '<\\!--')
 
 
+REC = 'c3'
 HUB_DESC = {
-    'a': ('Subtle', 'Today’s page and order, filled in.', 'The facts and the photos move into a second column beside each beat. The boxes are gone. Type and photos are larger.'),
-    'b': ('Magazine', 'A full-width photo opens every beat.', 'The text sits in one calm column. The facts are a quiet rail at its side. No boxes at all.'),
-    'c': ('Photo-led', 'A big photo hero. Every beat opens with its photo.', 'The facts are one strip under each beat. How it tastes is a toned band. This is the one that unfolds into the map.'),
-    'd': ('Bold', 'Black, champagne and white bands.', 'Very large photos and type. The facts are a few big numbers. The most dramatic, and the longest page.'),
+    'c1': ('C, refined', 'Round 1’s C, with sharp, smaller photos.', 'The photo hero shrinks to a card with the button. Every beat still opens with its photo, the facts strip and the How it tastes band stay.'),
+    'c2': ('C, calmer', 'C moved halfway to A’s calm.', 'One smaller photo opens every beat, the same size each time. Prose in one column, a quiet facts strip without a box, a quieter type scale.'),
+    'c3': ('C + A blend', 'A’s calm page with C’s hero, stop photos and tasting band.', 'Prose on the left, photos and facts in a second column, no boxes. The hero card and the champagne How it tastes band come from C.'),
 }
+REC_WHY = 'It is the page you described: A’s calm and order, with C’s hero, map button and tasting band.'
+NAV_N = {'c1': 'Refined', 'c2': 'Calmer', 'c3': 'Blend'}
+NAV = ''.join('<a href="#opt-%s"%s>%s<span> %s</span></a>' % (k, ' class="rec"' if k == REC else '', k.upper(), NAV_N[k]) for k in HUB_DESC)
 opts_html = ''
-for k in 'abcd':
+for k in HUB_DESC:
     name, line, more = HUB_DESC[k]
-    rec = k == 'c'
+    rec = k == REC
     opts_html += (f'<section class="opt{" rec" if rec else ""}" id="opt-{k}" data-k="{k}"><div class="oh"><span class="ol">{k.upper()}</span><div class="ot"><h2>{name}{" <em>Recommended</em>" if rec else ""}</h2>'
                   f'<p class="od">{line} {more}</p></div><div class="octl"><div class="seg" role="group" aria-label="Screen size for option {k.upper()}"><button type="button" data-m="desktop" aria-pressed="true">Desktop</button>'
                   f'<button type="button" data-m="phone" aria-pressed="false">Phone</button></div><a class="full" href="#solo={k}" target="_blank" rel="noopener">Open full screen</a></div></div>'
@@ -872,12 +839,12 @@ for k in 'abcd':
 HUB_CSS = (HERE / 'hub.css').read_text()
 HUB_JS = (HERE / 'hub.js').read_text()
 HUB = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mock · round 1 · The Rioja guide page · AtlaSlope</title><style>{FONT_CSS}</style><style>{HUB_CSS}</style></head>
-<body><header class="hb"><p class="brand">AtlaSlope</p><nav class="sw" aria-label="Options"><a href="#opt-a">A<span> Subtle</span></a><a href="#opt-b">B<span> Magazine</span></a><a href="#opt-c" class="rec">C<span> Photo-led</span></a><a href="#opt-d">D<span> Bold</span></a></nav></header>
-<main class="hm"><section class="intro"><p class="kick">Mock · round 1</p><h1>Pick one</h1>
-<p class="lead">Four designs for the whole Rioja guide page, from subtle to bold. Each is the real page with the map closed: the same text, charts and sources. Each starts with the big photo button.</p>
-<p>Use the switch above to jump between them. Each one shows as a desktop and as a phone: pick “Phone” on an option to see it at 390 px. Scroll inside the frame to read it, or open it full screen.</p>
-<p><b>Recommended: C.</b> It answers all three complaints at once: photos fill the space beside the text, one facts strip replaces the boxes, and a photo opens every beat. In C, press the button at the top to watch the photo grow into the map. “Close the map” folds back to the same paragraph. The other options show the same button, and pressing it takes you to C.</p></section>
+<title>Mock · round 2 · The Rioja guide page · AtlaSlope</title><style>{FONT_CSS}</style><style>{HUB_CSS}</style></head>
+<body><header class="hb"><p class="brand">AtlaSlope</p><nav class="sw" aria-label="Options">{NAV}</nav></header>
+<main class="hm"><section class="intro"><p class="kick">Mock · round 2</p><h1>Pick the final page</h1>
+<p class="lead">Three versions of option C. The photos are smaller and sharp, and “Read with the map” is now a button you cannot miss. The map tour is unchanged.</p>
+<p>Use the switch above to jump between them. Each shows as a desktop and as a phone: pick “Phone” on an option to see it at 390 px. Scroll inside the frame to read it, or open it full screen.</p>
+<p><b>Recommended: {REC.upper()}.</b> {REC_WHY} In every option the button does the full unfold: the photo grows to the full screen, fades into the map and flies to the first stop. “Close the map” folds back to the same paragraph.</p></section>
 {opts_html}
 <p class="foot">Photos are from the app’s own set (Wikimedia Commons), each with its licence in the credit line under every page. Mock only: nothing here is in the app.</p></main>
 <script>window.OPT={{{",".join(k + ":" + js_str(DOCS[k]) for k in DOCS)}}};window.IMG={json.dumps(IMG)};window.FONTS={js_str(FONT_CSS)};</script>
