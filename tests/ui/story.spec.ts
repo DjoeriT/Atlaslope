@@ -102,7 +102,7 @@ test('a fact marker opens with Enter, Escape closes it and focus returns to the 
   await expect(mapCol(page)).toBeVisible();
   // The page settles as images load: scroll again until the stop holds.
   await expect(async () => {
-    await scrollToLine(page, '[data-fly="valley.0"]');
+    await scrollToLine(page, '#terroir-valley'); // stops come up at their paragraph (owner 22 Oct 2026), the valley at its chapter start
     await expect(mapCol(page)).toHaveAttribute('data-step', 'valley', { timeout: 1000 });
   }).toPass();
   await expect(page.getByRole('button', { name: /^Fact: / }).first()).toBeVisible(); // MapLibre must not rename it "Map marker"

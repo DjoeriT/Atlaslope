@@ -34,6 +34,10 @@ const moveOf = (from: Selection, to: Selection): Move => (
       : from.page && to.page && (from.kind !== to.kind || from.id !== to.id) ? (depth(to) < depth(from) ? 'page-up' : 'page-step')
         : 'card');
 
+/** The same guide with its map mode opened or closed: the unfold or fold-back is the move, so no page transition runs. */
+const isTourToggle = (from: Selection, to: Selection): boolean =>
+  !!from.page && !!to.page && from.kind === to.kind && from.id === to.id && !from.story !== !to.story;
+
 export function App() {
   const tree = useMemo(() => loadTree(places, grapeNames()), []);
   const [sel, setSel] = useState<Selection>(() => validSelection(tree, parseSelection(location.hash)));
@@ -58,12 +62,15 @@ export function App() {
     const view = same && !to.fly ? parseView(location.hash) : null;
     history.pushState(same && to.page && !cur.page ? { fromCard: true } : same && to.story && cur.page && !cur.story ? { fromPage: true } : null, '', here() + selectionToHash(to, view));
     const move = quizRef.current ? 'card' : moveOf(cur, to);
-    withMotion(() => {
+    const apply = () => {
       setQuiz(null);
       setStay(null);
       setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
-    }, move);
+    };
+    // A guide and its own map mode move by the unfold and fold-back (src/story/unfold.ts): the page transition on top of them made
+    // the page vanish and the grown photo come back before the map (owner, 22 Oct 2026: "it's a bug").
+    if (isTourToggle(cur, to)) apply(); else withMotion(apply, move);
     // Back on the map from a guide, the camera flies in once the guide has gone (owner, 18 Oct 2026: "Fly to Rueda" did not fly).
     if (move === 'page-close') swoopIn();
   }, [tree]);
@@ -102,12 +109,13 @@ export function App() {
       const to = validSelection(tree, parseSelection(location.hash));
       const q = parseQuizRoute(location.hash);
       const move = q || quizRef.current ? 'card' : moveOf(selRef.current, to);
-      withMotion(() => {
+      const apply = () => {
         setQuiz(q);
         // A Study address names no card: the atlas keeps the one it had, so Atlas comes back to it (review of website slice 2).
         if (!q) setSel(to);
         setStay(null);
-      }, move);
+      };
+      if (!q && isTourToggle(selRef.current, to)) apply(); else withMotion(apply, move);
       if (move === 'page-close') swoopIn();
     };
     window.addEventListener('popstate', onPop);
