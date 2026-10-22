@@ -9,7 +9,10 @@
    "id": "intro",
    "chapter": null,
    "camera": {
-    "center": [0.8, 41.8],
+    "center": [
+     0.8,
+     41.8
+    ],
     "zoom": 8.6,
     "pitch": 0,
     "bearing": 0
@@ -22,7 +25,10 @@
    "chapter": "segre",
    "fly": 0,
    "camera": {
-    "center": [0.78, 41.9],
+    "center": [
+     0.78,
+     41.9
+    ],
     "zoom": 9.9,
     "pitch": 62,
     "bearing": 0
@@ -35,7 +41,10 @@
    },
    "facts": [
     {
-     "at": [0.78, 42.04],
+     "at": [
+      0.78,
+      42.04
+     ],
      "label": "Serra del Montsec",
      "text": "The zone skirts the Montsec range.",
      "cite": [
@@ -49,7 +58,10 @@
    "chapter": "segre",
    "fly": 1,
    "camera": {
-    "center": [0.4782, 41.6783],
+    "center": [
+     0.4782,
+     41.6783
+    ],
     "zoom": 11.2,
     "pitch": 50,
     "bearing": 30
@@ -73,7 +85,10 @@
    "chapter": "climate",
    "fly": 0,
    "camera": {
-    "center": [0.62, 41.62],
+    "center": [
+     0.62,
+     41.62
+    ],
     "zoom": 9.4,
     "pitch": 0,
     "bearing": 0
@@ -99,7 +114,10 @@
    "chapter": "soils",
    "fly": 0,
    "camera": {
-    "center": [0.93, 42.03],
+    "center": [
+     0.93,
+     42.03
+    ],
     "zoom": 10.2,
     "pitch": 60,
     "bearing": 200
@@ -111,7 +129,10 @@
    "photo": "costers-pallars-1",
    "facts": [
     {
-     "at": [0.89, 42.17],
+     "at": [
+      0.89,
+      42.17
+     ],
      "label": "Pallars",
      "text": "The northern units of Pallars and Artesa de Segre have the highest vines, with Pyrenean influence.",
      "cite": [
@@ -135,7 +156,10 @@
    "chapter": "wines",
    "fly": 0,
    "camera": {
-    "center": [1.0833, 41.3828],
+    "center": [
+     1.0833,
+     41.3828
+    ],
     "zoom": 11.4,
     "pitch": 55,
     "bearing": 330
@@ -145,7 +169,10 @@
    "photo": "costers-poblet-1",
    "facts": [
     {
-     "at": [1.0833, 41.3828],
+     "at": [
+      1.0833,
+      41.3828
+     ],
      "label": "Poblet",
      "text": "The monastery of Poblet, founded in 1151, played a key part in the history of vines in the lands of Lleida.",
      "cite": [
@@ -153,17 +180,6 @@
      ]
     }
    ]
-  },
-  {
-   "id": "wines",
-   "chapter": "wines",
-   "camera": {
-    "place": "costers-del-segre",
-    "pitch": 0,
-    "bearing": 0
-   },
-   "focus": "costers-del-segre",
-   "chip": "Costers del Segre"
   }
  ],
  "end": {
