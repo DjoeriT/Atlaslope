@@ -222,3 +222,14 @@ test('reduced motion opens the map mode with no growing photo', async ({ page })
   await expect(mapCol(page)).toBeVisible();
   await expect(page.locator('.grow')).toHaveCount(0);
 });
+
+// Phones show "Back" alone in the band; the link keeps the full name for screen readers (owner 22 Oct 2026: long names were cut off).
+test('on a phone the band link reads Back and keeps the full name as its label', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await open(page, '#place=txakoli-bizkaia&page&story');
+  const back = page.locator('.pg-top a.story-back');
+  await expect(back).toHaveText('Back', { useInnerText: true });
+  await expect(back).toHaveAttribute('aria-label', /^Back to .+/);
+  const top = await page.locator('.pg-top').evaluate((el) => el.scrollWidth <= el.clientWidth);
+  expect(top).toBe(true);
+});

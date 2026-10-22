@@ -445,6 +445,8 @@ export const strings = {
     /** The map mode's own black band (v3 stage, restored 22 Oct 2026): where in the guide the reader is, and the way back to the page. */
     chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
     back: (name: string) => `Back to ${name}`,
+    /** Phones: the band has no room for long names (Bizkaiko Txakolina); the full name stays the link's label (owner 22 Oct 2026). */
+    backShort: 'Back',
     locator: 'Where the map is in Spain',
     terrainHeight: 'Terrain height',
     slopeKey: 'Slopes >30%',
