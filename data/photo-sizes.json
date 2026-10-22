@@ -91,6 +91,31 @@
    "h": 900,
    "blur": "UklGRkoAAABXRUJQVlA4ID4AAACQAQCdASoQAAwAAsBMJQBOgB5KpaAA/vLjv3cNfTFUb9lqUEi018gxNDAdAIbFq9r+zlLb+wsCWbzUjxzAAA=="
   },
+  "barolo-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAAsBMJQBOgCBhJiCoAAAA/b3YQMLOij0bastQvtAUXCQ3y432qmHHLOVxiU0ihTR14YpaEEARIse03B23AAA="
+  },
+  "barolo-2": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAAsBMJZACdAEPNK/oeQAA/rIIxMiQi2KQuvv2XeZ05B6v8Uy2nt0a0yczBSxyD6Sc4k5kKM9gAAA="
+  },
+  "barolo-3": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAAsBMJYgCdAEPAciOdwYAAP6atsD4Q9ZHkX4LI8pzNbiuH3u/vYF2o6P7xa1DQ8bPVHMSo/jmyA9v9skhUdyE2YO0V5SATUYaAAA="
+  },
+  "barolo-4": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAwAAsBMJQBOgB6ujKVVtb4gAP6RqS8EjHuNpcGxufml0CMGIiQeYy4SPPnzInaw1aPqwO2MLF0i5PBnxCVN9qKQY40OJJs5n3C5mWCqzZ1adTf6AAAA"
+  },
+  "barolo-5": {
+   "w": 900,
+   "h": 1200,
+   "blur": "UklGRrgAAABXRUJQVlA4IKwAAACQBACdASoQABUAPtFUo0uoJKMhsAgBABoJbACdH8Aguhi6AIzJph1IeH0w8AAA4d/sfD59X1E/wcUe3WoAoQRcQL/APDHuGBliDIHiAvHVwYjwNu/sAVwiBUZRZuwFjNaxutf0OlR1UtghAiY7JahpMym7lfRPxxEae52DIb+Jp2/08qsYixr394itqDKVIxa/38Qgq8LY768NCkL/iZzKgPtKSWvgoNZ5aQAA"
+  },
   "bierzo-1": {
    "w": 1200,
    "h": 385,
@@ -255,6 +280,31 @@
    "w": 1200,
    "h": 800,
    "blur": "UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAAsBMJQBOgCHiAyfZ5GAAAM3z2bPp1BIDk+oBukbKDSiHCP6M4iEsUznyRt1TiT1LMIMWAJR4GW8AAA=="
+  },
+  "chianti-classico-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsAAsBMJbACdAEUn6/6JYPDkAD+trlH+TJnRGfKVlH3Ww3WcR8bS9JinRz1zdGbILVGWgXY/VtW1/ciEF7T6F/1qd6QC3uYbk+qVia+jgdH2nNFDJXAAAA="
+  },
+  "chianti-classico-2": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoQAAsAAsBMJZACdAEfa+3Jnsh8AP7ka6gUpakgDIX+iC8WTXvJwWJFQ9Ip+KJ9yNfN0gAA"
+  },
+  "chianti-classico-3": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAsAAsBMJZACdGuAt/8Dz93dcAD+7irbBAbxA1jUsrH2uri297kaGyP+wnVgngeuSlXF55j6yYWwOQrVPsDHnkiS0AAA"
+  },
+  "chianti-classico-4": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAABQAgCdASoQAAsAAsBMJagCdGuAAs3cL9aatbAA/urtmiZEe9qjgGvSs9P0+BQabTuFUY43117v1Bljw0pWvawBM125SbKOz9dAAA=="
+  },
+  "chianti-classico-5": {
+   "w": 1200,
+   "h": 899,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwAAsBMJZgCdADcSsomaAD+8+5+dJDXortKOjD4jiHt1mh8Ztu9gMk73aflC4bTKRO6ptXwG1Zqa47egLeQAd9fhPWFIdk/KooAAAA="
   },
   "cigales-1": {
    "w": 1200,

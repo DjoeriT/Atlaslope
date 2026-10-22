@@ -42,11 +42,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     ],
     study: { note: 'Not yet for France.', link: false },
   },
-  // No photos yet: the mosaics render nothing until Barolo's and Chianti Classico's land.
   italy: {
     intro: 'From the Alps to Sicily.',
-    cardPhotos: [],
-    blocks: [],
+    cardPhotos: ['barolo-1', 'chianti-classico-1', 'barolo-3', 'chianti-classico-3', 'barolo-2'],
+    blocks: [
+      { title: 'Barolo', keys: ['barolo-1', 'barolo-2', 'barolo-3', 'barolo-4', 'barolo-5'] },
+      { title: 'Chianti Classico', keys: ['chianti-classico-1', 'chianti-classico-2', 'chianti-classico-3', 'chianti-classico-4', 'chianti-classico-5'] },
+    ],
     study: { note: 'Not yet for Italy.', link: false },
   },
 };
