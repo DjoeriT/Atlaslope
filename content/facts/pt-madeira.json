@@ -4,7 +4,7 @@
   {
    "id": "madeira",
    "why": {
-    "text": "Basaltic, acidic soils on steep terraces and mild Atlantic temperatures, plus fortification and long ageing, give high-acid, long-lived wines.",
+    "text": "Basaltic, low-pH soils on steep terraces and mild ripening temperatures, plus fortification and ageing, give high-acid, long-lived wines.",
     "cite": [
      "madeira-doc:p8",
      "madeira-doc:p9"
@@ -109,35 +109,85 @@
   {
    "id": "madeirense",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Mostly basalt soils with low pH give high acidity, and mild temperatures with small swings mean slow ripening on terraced slopes.",
+    "cite": [
+     "madeirense-doc:p6"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Sercial",
+     "Bastardo",
+     "Malvasia Fina",
+     "Mario Feld",
+     "Malvasia Candida",
+     "Arns Burguer",
+     "Syrah",
+     "Verdelho",
+     "Talia",
+     "Carao de Moça",
+     "Cabernet-Sauvignon",
+     "Malvasia Bianca",
+     "Malvasia Branca de Sao Jorge",
+     "Merlot",
+     "Folgasao",
+     "Lilas",
+     "Sauvignon",
+     "Aragonez",
+     "Chenin",
+     "Tinta Negra",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Rio Grande",
+     "Complexa",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Malvasia Candida Roxa",
+     "Deliciosa"
+    ],
+    "othersCite": [
+     "madeirense-doc:p5",
+     "madeirense-doc:p6"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Wines in three colours: whites, rosados and reds.",
+    "cite": [
+     "madeirense-doc:p2",
+     "madeirense-doc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Temperature swings are small through the growing cycle and ripening temperatures are mild, so ripening takes longer. Altitude and exposure create microclimates that strongly mark the wine.",
+    "cite": [
+     "madeirense-doc:p6"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly basalt with low pH, giving high acidity and freshness, most marked in whites and rosados. Added organic matter keeps soils high in it.",
+    "cite": [
+     "madeirense-doc:p6"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Altitude and sun exposure create microclimates; recent practice favours lower elevations with better sun exposure. No heights are given.",
+    "cite": [
+     "madeirense-doc:p6"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites: fresh, light to medium body, tropical fruit, floral notes, lasting minerality. Rosados: red fruit, jam, fresh, balanced acidity. Reds: red and candied fruit, spice, present but well-integrated tannins.",
+    "cite": [
+     "madeirense-doc:p2",
+     "madeirense-doc:p3"
+    ]
    },
    "famous": {
     "styles": [],

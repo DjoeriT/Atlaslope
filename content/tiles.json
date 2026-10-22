@@ -230,6 +230,19 @@
     "tavira-doc:p5",
     "tavira-doc:p6"
    ]
+  },
+  "pt-madeira": {
+   "title": "Volcanic islands in the Atlantic",
+   "lede": "Steep terraces on basalt, with mild temperatures while the grapes ripen.",
+   "from": [
+    "madeira",
+    "madeirense"
+   ],
+   "cite": [
+    "madeira-doc:p8",
+    "madeira-doc:p9",
+    "madeirense-doc:p6"
+   ]
   }
  },
  "places": {
@@ -943,7 +956,7 @@
    ]
   },
   "dao": {
-   "title": "A granite basin ringed by mountains",
+   "title": "Granite ringed by mountains",
    "cite": [
     "dao-doc:p7",
     "dao-doc:p8"
@@ -1083,6 +1096,19 @@
    "cite": [
     "tavira-doc:p5",
     "tavira-doc:p6"
+   ]
+  },
+  "madeira": {
+   "title": "Fortified on volcanic terraces",
+   "cite": [
+    "madeira-doc:p8",
+    "madeira-doc:p9"
+   ]
+  },
+  "madeirense": {
+   "title": "Basalt slopes keep the acid high",
+   "cite": [
+    "madeirense-doc:p6"
    ]
   }
  }

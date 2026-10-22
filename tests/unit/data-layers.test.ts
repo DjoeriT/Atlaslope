@@ -93,7 +93,7 @@ describe('added boundaries', () => {
 
 describe('Portugal outlines', () => {
   const areas = read('countries/pt/areas.geojson').features;
-  it('has Douro and its three subregions, which add up to the whole, and the 26 Portugal places (batch 1, owner option B, 22 Oct 2026)', () => {
+  it('has Douro and its three subregions, which add up to the whole, and the 28 Portugal places (batch 1, owner option B, 22 Oct 2026)', () => {
     const km2 = (id: string) => areas.find((f: any) => f.properties.id === id)?.properties.km2;
     for (const id of ['baixo-corgo', 'cima-corgo', 'douro', 'douro-superior', 'vinho-verde']) expect(areas.some((f: any) => f.properties.id === id), id).toBe(true);
     expect(km2('baixo-corgo') + km2('cima-corgo') + km2('douro-superior')).toBeCloseTo(km2('douro'), 0);
@@ -101,7 +101,7 @@ describe('Portugal outlines', () => {
   it('gives every Portuguese place in data/places.json an outline in added-boundaries.geojson', () => {
     const places = read('places.json').places.filter((p: any) => p.parent === 'portugal');
     const outlined = new Set(read('added-boundaries.geojson').features.map((f: any) => f.properties.id));
-    expect(places).toHaveLength(26);
+    expect(places).toHaveLength(28);
     for (const p of places) expect(outlined.has(p.id), p.id).toBe(true);
   });
 });

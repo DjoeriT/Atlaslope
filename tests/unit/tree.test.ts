@@ -9,8 +9,8 @@ const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
   it('loads every place, Spain and the 26 Portugal places (batch 1, owner option B, 22 Oct 2026), with a unique slug id', () => {
-    expect(tree.places).toHaveLength(135);
-    expect(new Set(ids(tree.places)).size).toBe(135);
+    expect(tree.places).toHaveLength(137);
+    expect(new Set(ids(tree.places)).size).toBe(137);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
@@ -24,7 +24,7 @@ describe('tree model over data/places.json', () => {
 
   it('counts 70 core, 6 vc, 56 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 56, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 58, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3);
   });
 

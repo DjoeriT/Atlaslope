@@ -21,7 +21,7 @@ describe('the Terroir sections', () => {
       'chozas-carrascal', 'cigales', 'colares', 'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dao', 'dehesa-del-carrizal',
       'dehesa-penalba', 'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'emporda', 'encostas-daire',
       'finca-elez', 'gran-canaria', 'granada', 'guijoso', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba', 'la-mancha', 'la-palma',
-      'lafoes', 'lagoa', 'lagos', 'lanzarote', 'lebrija', 'leon', 'lisboa', 'los-balagueses', 'los-cerrillos', 'malaga', 'manchuela', 'manzanilla',
+      'lafoes', 'lagoa', 'lagos', 'lanzarote', 'lebrija', 'leon', 'lisboa', 'los-balagueses', 'los-cerrillos', 'madeira', 'madeirense', 'malaga', 'manchuela', 'manzanilla',
       'mentrida', 'mondejar', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'penedes',
       'pla-de-bages', 'pla-i-llevant', 'portimao', 'porto', 'prado-de-irache', 'priorat', 'rias-baixas', 'ribeira-sacra', 'ribeiro',
       'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',

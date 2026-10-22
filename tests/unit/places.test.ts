@@ -49,7 +49,7 @@ describe('place tree', () => {
     expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
     expect(places.filter((p) => p.boundary === 'added').map((p) => p.id).sort()).toEqual([
       'alenquer', 'alentejo', 'arruda', 'bairrada', 'beira-interior', 'bucelas', 'campo-de-calatrava', 'carcavelos', 'cebreros', 'colares', 'dao',
-      'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',
+      'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'madeira', 'madeirense', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',
       'tavora-varosa', 'torres-vedras', 'tras-os-montes', 'urbezo', 'vinho-verde',
     ]);
     expect(places.filter((p) => p.boundary === 'mapa-2014').every((p) => p.layerCode)).toBe(true);
