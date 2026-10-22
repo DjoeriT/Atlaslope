@@ -38,22 +38,22 @@ test('search results show above the open card', async ({ page }) => {
   await expect(page.locator('.card h1')).toHaveText('Ribera del Duero');
 });
 
-test('the Explore tab goes back to Spain without reloading the page', async ({ page }) => {
+test('the Explore tab goes back to the Atlas cover without reloading the page', async ({ page }) => {
   await open(page, '#place=rioja-alta');
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas', exact: true }).click();
-  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.locator('.card h1')).toHaveText('See where your wine comes from');
   expect(await page.evaluate(() => (window as unknown as { marker?: number }).marker)).toBe(1);
   await page.goBack();
   await expect(page.locator('.card h1')).toHaveText('Rioja Alta');
 });
 
-test('the Explore tab on the Spain card stays put without a reload', async ({ page }) => {
-  await open(page);
+test('the Explore tab on the Atlas cover stays put without a reload', async ({ page }) => {
+  await open(page, '');
   await page.evaluate(() => { (window as unknown as { marker: number }).marker = 1; });
   const before = await page.evaluate(() => history.length);
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas', exact: true }).click();
-  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.locator('.card h1')).toHaveText('See where your wine comes from');
   expect(await page.evaluate(() => [(window as unknown as { marker?: number }).marker, history.length])).toEqual([1, before]);
 });
 
