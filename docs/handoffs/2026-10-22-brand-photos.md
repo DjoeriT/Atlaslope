@@ -46,3 +46,12 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   Priorat and caption copy checked against the guides; check the 400 px view yourself.
 - Carry it to more surfaces: logo and favicon on dark, Guides page (square crops rule), Study, share image.
 - One Artifact page, one helper build, link to the owner.
+
+## Refine round, done here (owner: "Just here")
+- Same Artifact, version 2: eight surfaces (home, featured, Rioja guide, atlas card, logo and favicon, Guides page with square crops, Study, share image).
+  One Sonnet builder, 111K tokens [V]. No photo repeats (29 ids, asserted in build.py). Copy lines are guide chapter titles or sentences from
+  `content/guides/<id>.json` and `content/facts/rioja.json`; "DOCa since 1991" and "Three zones" were dropped (no guide sentence found).
+- The builder's write to `mocks/brand-dark-gallery/` in the main folder was refused, so the source sits in the session scratchpad only
+  (`.../scratchpad/bdg/`: build.py, template.html, img/, shots/), not copied into the main folder. Scratchpad is temporary: copy it to `mocks/` on the owner's word.
+- LeadBot looked at the 1440 and 400 shots [V]. Weak spots [A]: empty space in the atlas card and favicon panels; the Rioja Guides card shows hills, not vines.
+- Open: rewrite "NO dark mode" and the white page in CLAUDE.md and visual-style.md now, or when the direction is final.
