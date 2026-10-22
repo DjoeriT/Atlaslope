@@ -117,7 +117,7 @@ One entry per file in `data/`. `Tools/check.sh` fails if a committed data file h
 
 ## Esri terms for the saved satellite screenshots (checked 2026-10-20, #155)
 
-Covers the Guides page region tiles (`public/guides/*.webp`), the Atlas cover's clips and stills (`public/atlas/*`; the clips are video, a new kind of screen capture, flagged for ReviewBot), the home hero (`public/home/hero.webp`), `public/share.jpg` and the About map
+Covers the Guides page region tiles (`public/guides/*.webp`), the Atlas cover's clips and stills (`public/atlas/*`; the clips are video, a new kind of screen capture: ReviewBot, PR #202, read short muted loops of the app's own map on its own site as screen captures promoting it, with the credit under the first clip [A, not a legal opinion]), the home hero (`public/home/hero.webp`), `public/share.jpg` and the About map
 (`public/about/sources-map.webp`): all screenshots of the app's own map over Esri World Imagery (and PNOA in Spain), served as static images.
 
 - World Imagery item (`arcgis.com` item `10df2279f9684e4a9f6a7f08febac2a9`, REST `?f=json`, read 2026-10-20) [V]: licensed under the Esri

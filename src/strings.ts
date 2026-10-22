@@ -61,7 +61,7 @@ export const strings = {
     tourLine: 'A guide flies you across the map, stop by stop.',
     tourAlt: 'A Priorat map tour: the map at a stop, the slopes shaded',
     tourButton: 'Map tour',
-    live: (n: number) => `Live in ${n} places`,
+    live: (n: number) => `Tours in ${n} places`,
     bordersTitle: 'See where it grows',
     bordersLine: 'Each place is drawn where the law puts it, over satellite imagery.',
     bordersAlt: 'Official borders of Rioja over satellite imagery',

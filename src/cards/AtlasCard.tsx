@@ -89,11 +89,12 @@ export function AtlasCard({ tree, go }: { tree: Tree; go: Go }) {
         <Link className="btn primary" to={{ kind: 'place', id: TOUR_PLACE, page: true, story: true }} go={go}>{t.tourButton}</Link>
         <span className="atlas-quiet">{t.live(tours)}</span>
       </p>
+      {/* Right under the first map clip: Esri asks for the credit on or near the image (ReviewBot, PR #202). */}
+      <p className="atlas-imagery">{t.imagery}</p>
       <Panel title={t.bordersTitle} line={t.bordersLine}><img src={media('atlas-borders.webp')} alt={t.bordersAlt} loading="lazy" /></Panel>
       <Panel title={t.climateTitle} line={t.climateLine}><img src={media('atlas-climate.webp')} alt={t.climateAlt} loading="lazy" /></Panel>
       <Panel title={t.slopesTitle} line={t.slopesLine}><Clip name="atlas-tilt" alt={t.slopesAlt} /></Panel>
       <Panel title={t.guideTitle} line={t.guideLine}><img src={media('atlas-guide.webp')} alt={t.guideAlt} loading="lazy" /></Panel>
-      <p className="atlas-imagery">{t.imagery}</p>
       <h2>{t.countries}</h2>
       <ul className="atlas-countries">
         {tiles.map(({ c, photo }) => (
