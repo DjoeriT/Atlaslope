@@ -103,15 +103,16 @@ def main():
 
 def put_added(features, ids):
     """Puts outlines into data/added-boundaries.geojson, the map's file for outlines outside the 2014 Spain layer, replacing any with
-    the same id in `ids`. One feature per line, as ogr2ogr wrote the file, so a rebuild only touches its own lines (also France's,
-    Tools/data/build_fr_areas.py)."""
+    the same id in `ids`. One feature per line, as ogr2ogr wrote the file, so a rebuild only touches its own lines (also France's and
+    Italy's, Tools/data/build_fr_areas.py and build_it_areas.py). Keeps id, municipalities, km2 and approximate where a feature has them."""
     added_path = ROOT / "data/added-boundaries.geojson"
     lines = [l for l in added_path.read_text().splitlines()
              if not any(l.startswith(f'{{ "type": "Feature", "properties": {{ "id": "{pid}"') for pid in ids)]
     end = len(lines) - 1 - lines[::-1].index("]")
     body = [l.rstrip(",") for l in lines[:end] if l.startswith('{ "type": "Feature"')]
     for f in features:
-        props = ", ".join(f'"{k}": {json.dumps(f["properties"][k])}' for k in ("id", "municipalities", "km2"))
+        props = ", ".join(f'"{k}": {json.dumps(f["properties"][k])}' for k in ("id", "municipalities", "km2", "approximate")
+                          if k in f["properties"])
         body.append(f'{{ "type": "Feature", "properties": {{ {props} }}, "geometry": {json.dumps(f["geometry"], separators=(", ", ": "))} }}')
     head = [l for l in lines[:end] if not l.startswith('{ "type": "Feature"')]
     added_path.write_text("\n".join(head + [",\n".join(body)] + lines[end:]) + "\n")

@@ -42,6 +42,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     ],
     study: { note: 'Not yet for France.', link: false },
   },
+  // No photos yet: the mosaics render nothing until Barolo's and Chianti Classico's land.
+  italy: {
+    intro: 'From the Alps to Sicily.',
+    cardPhotos: [],
+    blocks: [],
+    study: { note: 'Not yet for Italy.', link: false },
+  },
 };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

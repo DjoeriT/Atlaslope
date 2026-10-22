@@ -72,8 +72,9 @@ describe('added boundaries', () => {
   const parcels = read('added-parcels.json').places;
   // Portugal's outlines come from the parish lists in its specs (Tools/data/build_pt_areas.py), checked by their own test.
   const pt = Object.keys(read('countries/pt/areas-spec.json')).filter((k) => !k.startsWith('$'));
-  // France's shipped places and their zones come from INAO (data/countries/fr/areas.geojson, Tools/data/build_fr_areas.py --map).
-  const fr = read('places.json').places.filter((p: { region: string }) => p.region.startsWith('fr-')).map((p: { id: string }) => p.id);
+  // France's shipped places and their zones come from INAO (data/countries/fr/areas.geojson, Tools/data/build_fr_areas.py --map),
+  // Italy's from Regione Piemonte or ISTAT (data/countries/it/areas.geojson, Tools/data/build_it_areas.py --map).
+  const fr = read('places.json').places.filter((p: { region: string }) => /^(fr|it)-/.test(p.region)).map((p: { id: string }) => p.id);
   it('has one polygon per listed place, built from every listed municipality or parcel', () => {
     expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels), ...pt, ...fr].sort());
     for (const f of added.features) {
@@ -105,5 +106,22 @@ describe('Portugal outlines', () => {
     const outlined = new Set(read('added-boundaries.geojson').features.map((f: any) => f.properties.id));
     expect(places).toHaveLength(28);
     for (const p of places) expect(outlined.has(p.id), p.id).toBe(true);
+  });
+});
+
+describe('Italy outlines (pilot, decision #62)', () => {
+  it('copies each shipped Italian place from countries/it/areas.geojson, flagging the ISTAT ones as approximate', () => {
+    const areas = new Map(read('countries/it/areas.geojson').features.map((f: any) => [f.properties.id, f]));
+    const added = new Map(read('added-boundaries.geojson').features.map((f: any) => [f.properties.id, f]));
+    const places = read('places.json').places.filter((p: any) => p.parent === 'italy');
+    expect(places.map((p: any) => p.id)).toEqual(['barolo', 'chianti-classico']);
+    for (const p of places) {
+      const src: any = areas.get(p.id), out: any = added.get(p.id);
+      expect(out?.geometry, p.id).toEqual(src.geometry);
+      expect(out.properties.km2, p.id).toBe(src.properties.km2);
+      expect(out.properties.approximate === true, p.id).toBe(src.properties.route === 'istat');
+    }
+    expect((added.get('barolo') as any).properties.approximate).toBeUndefined(); // Regione Piemonte's official area
+    expect((added.get('chianti-classico') as any).properties.approximate).toBe(true); // whole ISTAT municipalities
   });
 });

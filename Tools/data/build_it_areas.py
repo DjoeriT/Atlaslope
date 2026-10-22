@@ -5,17 +5,16 @@ Two routes: 'piemonte' takes the region's official DOC/DOCG polygon (its sub-zon
 and whole provinces the spec names from ISTAT's generalised limits. Partial municipalities are taken whole, so an 'istat' outline is
 marked approximate and carries the official area next to its own. 'candiago' takes the PDO polygon traced from the rulebook's boundary
 text by Candiago et al. 2022 (CC0), for zones the rulebook draws along roads and streams instead of naming municipalities. A municipality name shared by two provinces takes the province's
-two-letter code in brackets, e.g. "Castro (LE)". Raw inputs (git-ignored, data/raw/countries/it/) are the two zips listed in data/SOURCES.md.
-Writes data/countries/it/areas.geojson. Run: python3 -I Tools/data/build_it_areas.py
+two-letter code in brackets, e.g. "Castro (LE)". Raw inputs (git-ignored, in the raw store's countries/it/) are the two zips listed in data/SOURCES.md.
+Writes data/countries/it/areas.geojson. The shipped places (IT_SHIP) are copied into data/added-boundaries.geojson for the map.
+Run: python3 -I Tools/data/build_it_areas.py   (the raw store is $ATLASLOPE_RAW, default ~/Developer/Atlaslope-raw)
+     python3 -I Tools/data/build_it_areas.py --map   (only the copy into the map's file; no raw files needed)
 """
-import json, re, subprocess, tempfile, unicodedata, zipfile
+import json, os, re, subprocess, sys, tempfile, unicodedata, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = ROOT / "data/raw/countries/it"
-if not RAW.exists():  # a worktree has no raw store; it lives in the main checkout
-    RAW = Path(subprocess.run(["git", "-C", str(ROOT), "worktree", "list", "--porcelain"], capture_output=True, text=True,
-                              check=True).stdout.split("\n")[0].split(" ", 1)[1]) / "data/raw/countries/it"
+RAW = Path(os.environ.get("ATLASLOPE_RAW", Path.home() / "Developer/Atlaslope-raw")) / "countries/it"
 SPEC = ROOT / "data/countries/it/areas-spec.json"
 OUT = ROOT / "data/countries/it/areas.geojson"
 SIMPLIFY = 40  # metres in the source's UTM 32N, as Portugal's ~40 m: the outline is read at region zoom (decision #38)
@@ -105,7 +104,22 @@ def main():
                   f"{props['wholeKm2']})" if s["route"] == "istat" else ""))
     OUT.write_text(json.dumps({"type": "FeatureCollection", "features": out}, ensure_ascii=False, separators=(",", ":")) + "\n")
     print(f"wrote {OUT.relative_to(ROOT)}, {OUT.stat().st_size // 1024} KB")
+    to_map()
+
+
+def to_map():
+    """The shipped places (IT_SHIP in Tools/data/build_places.py) go into the map's outline file, as France's do. An ISTAT outline
+    keeps its approximate flag, so the map can say so."""
+    sys.path.insert(0, str(Path(__file__).parent))  # -I leaves the script's folder off the path
+    from build_places import IT_SHIP
+    from build_pt_areas import put_added
+    feats = json.loads(OUT.read_text())["features"]
+    shipped = [{**f, "properties": {k: f["properties"][k] for k in ("id", "municipalities", "km2", "approximate") if k in f["properties"]}}
+               for f in feats if f["properties"]["place"] in IT_SHIP]
+    put_added(shipped, {f["properties"]["id"] for f in shipped})
+    print("data/added-boundaries.geojson:", len(shipped), "Italy outlines")
 
 
 if __name__ == "__main__":
-    main()
+    # --map: only copy the shipped outlines from areas.geojson into the map's file (no raw download needed).
+    to_map() if "--map" in sys.argv else main()

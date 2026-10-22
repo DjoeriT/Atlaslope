@@ -16,11 +16,11 @@ const line = (s: { regions: unknown[]; guides: number }) => `${s.regions.length}
 const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
 describe('country structure', () => {
-  it('has the three countries, each with config for its card, page and Learn note', () => {
-    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france']);
+  it('has the four countries, each with config for its card, page and Learn note', () => {
+    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france', 'italy']);
     for (const s of stats) {
       expect(COUNTRIES[s.id].code).toBe(s.code);
-      if (s.id === 'france') continue; // its photos and guides land with the pilot's guides (#149)
+      if (s.id === 'france' || s.id === 'italy') continue; // their photos and guides land with the pilots' guides (#149)
       expect(COUNTRY_PAGES[s.id].cardPhotos).toHaveLength(5);
       expect(s.guides).toBeGreaterThan(0);
     }
@@ -92,7 +92,7 @@ describe('country pages', () => {
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);
-    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g)).toBe(bare.length);
+    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g)).toBe(bare.length);
     expect(pages.portugal).toContain('href="../pt/douro/"');
   });
 });
@@ -118,5 +118,29 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(count(page, /<p class="credit">Photos /g)).toBe(1);
     expect(page).toContain('<h2 id="r-fr-burgundy">Burgundy</h2>');
     expect(page).toContain('<h2 id="r-fr-bordeaux">Bordeaux</h2>');
+  });
+});
+
+describe('Italy (pilot, decisions #59-#66)', () => {
+  // As France: two stand-ins show what /it/ draws once the pilot's guides land. No photos yet, so each tile says "Photos soon".
+  const dir = mkdtempSync(join(tmpdir(), 'guides-'));
+  for (const f of readdirSync('content/guides')) copyFileSync(`content/guides/${f}`, join(dir, f));
+  for (const id of ['barolo', 'chianti-classico']) writeFileSync(join(dir, `${id}.json`), JSON.stringify({ id, minutes: 2 }));
+  const page = fillCountryPage(template, guideRows({ dir }), 'italy');
+  it('is a country with real place paths, Esri imagery and no photos yet', () => {
+    expect(COUNTRIES.italy).toMatchObject({ code: 'it', paths: true, imagery: 'esri' });
+    expect(COUNTRY_PAGES.italy.intro).toBe('From the Alps to Sicily.');
+    expect(COUNTRY_PAGES.italy.cardPhotos).toEqual([]);
+  });
+  it('renders /it/ with two place tiles and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(2);
+    expect(count(page, /Photos soon/g)).toBe(2);
+    expect(page).toContain('href="../it/barolo/"');
+    expect(page).toContain('href="../it/chianti-classico/"');
+    expect(page).toContain('Not yet for Italy.');
+    expect(page).not.toContain('Open Study');
+    expect(count(page, /<p class="credit">Photos /g)).toBe(0);
+    expect(page).toContain('<h2 id="r-it-piemonte">Piemonte</h2>');
+    expect(page).toContain('<h2 id="r-it-tuscany">Tuscany</h2>');
   });
 });

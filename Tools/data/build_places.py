@@ -174,6 +174,31 @@ def france_places():
     return out
 
 
+# Italy (issue #149, pilot; decisions #59-#66, #79, #80): WSET L3 regions as Study groups, outlines from Regione Piemonte or ISTAT
+# municipal limits (data/countries/it/areas.geojson, Tools/data/build_it_areas.py). Only shipped places enter the tree; each later
+# batch extends IT_SHIP. No zones in the pilot (no MGA or UGA outlines). Not in Study yet.
+IT_GROUPS = [("it-piemonte", "Piemonte"), ("it-lombardia", "Lombardia"), ("it-north-east", "Alto Adige, Trentino and Friuli"),
+             ("it-veneto", "Veneto"), ("it-emilia-romagna", "Emilia-Romagna"), ("it-tuscany", "Tuscany"), ("it-centre", "Centre"),
+             ("it-south", "South"), ("it-islands", "Sicily and Sardinia")]
+IT_SHIP = ["barolo", "chianti-classico"]
+IT_QUIZ_NOTE = "Study covers Spain for now; Italy joins when its WSET course is in Study."
+# Per shipped place: its name, the EU register's name and file number (data/countries/it/register.json), and its group.
+IT_PLACES = {"barolo": ("Barolo", "Barolo", "PDO-IT-A1389", "it-piemonte"),
+             "chianti-classico": ("Chianti Classico", "Chianti Classico", "PDO-IT-A1235", "it-tuscany")}
+
+
+def italy_places():
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/it/areas.geojson").read_text())["features"]}
+    out = []
+    for pid in IT_SHIP:
+        name, official, eu, region = IT_PLACES[pid]
+        out.append({"id": pid, "name": name, "official": official, "kind": "DOCG", "level": "place", "parent": "italy",
+                    "region": region, "euFile": eu, "layerCode": None, "boundary": "added",
+                    "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": IT_QUIZ_NOTE})
+    for i, p in enumerate(sorted(out, key=lambda p: -p["centroid"][1]), 1): p["northSouth"], p["courseOrder"] = i, i
+    return out
+
+
 def main():
     layer =json.loads((ROOT / "data/dops.geojson").read_text())
     over = json.loads((ROOT / "data/dop-overrides.json").read_text())
@@ -222,6 +247,7 @@ def main():
 
     places += portugal_places()
     places += france_places()
+    places += italy_places()
 
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
@@ -231,7 +257,8 @@ def main():
         "countries": [{"id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"]},
                       {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]},
                       # Two zone depths: Chablis Premier Cru, then its climats (#55).
-                      {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]}],
+                      {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]},
+                      {"id": "italy", "name": "Italy", "level": "country", "levels": ["country", "region", "place", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
                      "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
                                 for i, g in enumerate(COURSE)]},
@@ -240,6 +267,9 @@ def main():
                     {"id": "wset-fr", "name": "WSET", "country": "france",
                      # A group joins with its first shipped place (an empty one would show as a region with no guides).
                      "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(FR_GROUPS)
+                                if any(p["region"] == g for p in places)]},
+                    {"id": "wset-it", "name": "WSET", "country": "italy",
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(IT_GROUPS)
                                 if any(p["region"] == g for p in places)]}],
         "places": places,
     }
