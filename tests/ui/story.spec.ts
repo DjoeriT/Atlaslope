@@ -143,6 +143,10 @@ const ORDER: Array<[string, string, number]> = [
 ];
 for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { width: 390, height: 844 }]] as const) {
   test(`scrolling the Rioja guide at ${name} shows stops 1 to 9 in order`, async ({ page }) => {
+    // Nine scrolls, each followed by a map flight that the software-rendered WebGL of a shared CI runner draws on the main thread, so `evaluate`
+    // waits behind it. Measured (#190): 6 s alone, 28-30 s with the CPU saturated (about 5 s a stop), against the 30 s default. The test asserts all
+    // nine stops as before; it only gets three times the time. A signal cannot shorten it: data-step follows the scroll at once, the cost is the flights.
+    test.slow();
     await page.setViewportSize(size);
     await open(page, '#place=rioja&page&story');
     // The map chunk loads lazily and its empty placeholder has no data-step: scroll only once the real column (step 1) is mounted.
