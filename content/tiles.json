@@ -135,7 +135,7 @@
   },
   "pt-north": {
    "title": "Granite by the sea, schist inland",
-   "lede": "Vinho Verde takes the Atlantic rain on granite. Behind the Marão, the Douro is hot and dry on schist.",
+   "lede": "Vinho Verde takes the Atlantic rain on granite. Behind the Marão, the Douro sits on schist, out of the wet west winds.",
    "from": [
     "vinho-verde",
     "douro"
@@ -825,7 +825,7 @@
    ]
   },
   "douro": {
-   "title": "Schist terraces, sheltered from the sea",
+   "title": "Schist terraces, sheltered from the west winds",
    "cite": [
     "douro-doc:p10",
     "douro-doc:p11"
