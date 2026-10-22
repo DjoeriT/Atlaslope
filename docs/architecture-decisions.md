@@ -134,3 +134,5 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#64 Umbrella names**: Toscana, Sicilia, Puglia, Terre Siciliane, Delle Venezie are named in their region's text, with no place of their own. [O]
 - **#65 Cross-region appellations**: home parent is the region with most of the area, "also within" the other (#42). [O]
 - **#66 Italy map layers**: Esri imagery, TINITALY terrain, no geology in the pilot; LeadBot drafts an ISPRA licence email the owner sends. [O]
+- **#67 Chianti Classico outline**: traced in the pilot from the disciplinare's UGA annex (Allegato 3), which names the places inside the five partial municipalities; the same work gives the UGA zones (#63). The municipality outline (+33%) is not shipped. [O]
+- **#68 Italian families**: Valpolicella (with Classico, Ripasso, Amarone, Recioto) and Soave (with Classico, Recioto di Soave) are one place each, their styles inside the guide; 30 Italian places. [O]

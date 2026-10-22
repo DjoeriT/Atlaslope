@@ -21,10 +21,11 @@ Plan: `Review/countries/italy-plan.md` (decisions #59-#66). This slice is data a
    shared tools. `pack.py` needs `content/facts/<region>.json`, which Italy does not have yet: untested [A].
 6. **ISPRA email**: draft in `Review/countries/italy-prep/README.md`, for the owner to send (#66). Nothing sent.
 
+## Decided (owner, 22 Oct 2026)
+- #67: Chianti Classico is traced from the UGA annex in the pilot; the +33% municipality outline is not shipped.
+- #68: Valpolicella and Soave are one place each, with styles: 30 Italian places.
+
 ## Open (owner)
-- Chianti Classico outline: approximate at +33% (decision #62 allows it), or trace the 1932 boundary from the UGA annex
-  (Allegato 3 names places inside municipalities) in the pilot. Recommended: the annex, in the pilot; it also gives the UGA zones (#63).
-- Families: Valpolicella and Soave as one place each with styles (30 places), or every name its own place (36).
 - Franciacorta and Primitivo di Manduria are not in the L3 spec text; Recioto di Soave was kept though the helper did not find it there.
 
 ## Open (next session, the pilot)
