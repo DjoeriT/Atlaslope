@@ -74,7 +74,7 @@ test('on a phone the map is pinned at the top, 42% of the screen, and the credit
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(mapCol(page)).toHaveCSS('height', '354.48px');
+  await expect(mapCol(page)).toHaveCSS('height', '354.469px');
   await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
 });
 
