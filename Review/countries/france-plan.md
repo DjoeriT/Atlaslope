@@ -23,7 +23,7 @@ Start gate: the France pilot waits until Portugal's mainland is done and #205 (P
 
 ## Decisions (owner, 22 Oct 2026, all on the recommended option)
 1. Timing: after Portugal's mainland and #205.
-2. Scope: WSET L3 list, about 60 places (not all 386, not Burgundy alone).
+2. Scope: WSET L3 list first (108 names, about 96 appellations), region by region; the other PDOs later (owner, kept 22 Oct 2026).
 3. Pilot pair: Chablis and Pauillac.
 4. Grand and Premier Cru climats drawn as zones inside the village AOP, in the pilot.
 5. Bordeaux classifications: a text list in the guide, no map layer.
@@ -45,5 +45,5 @@ Start gate: the France pilot waits until Portugal's mainland is done and #205 (P
 - Pilot guides: 2 x 0.75M = ~1.5M, about 90 percent re-read (Ebro split [V]).
 - Pilot engineering (INAO cut, nesting, layers): ~5-10M [A]; the Portugal pilot session spent 18.9M re-read, mostly tooling [V],
   and the country model is now paid, so France should be lower. Hard stop at 1.5x and report.
-- WSET L3 list: 60 x 0.75M = ~45M [V rate, A scope], region by region. Prep (22 Oct) counted 108 WSET names: ~80M,
-  scope back to the owner (`Review/countries/france-prep/README.md`).
+- WSET L3 list: about 96 appellations x 0.75M = ~72M [V rate, A scope], region by region (Burgundy first, 28 names).
+- All PDOs later: 368 guides ~276M, or ~286 ~215M with Grand Crus as zones [V counts, A scope]; each region asked first.

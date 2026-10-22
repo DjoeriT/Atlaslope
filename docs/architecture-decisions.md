@@ -118,7 +118,9 @@ Defaults set because they are costly or impossible to change once progress, link
 
 ## Third country: France (owner, 22 Oct 2026, issue #149; plan `Review/countries/france-plan.md`)
 - **#52 France timing**: the France pilot starts after Portugal's mainland is done and #205 is merged. [O]
-- **#53 France scope**: the WSET L3 list, about 60 places, region by region; not all 386 AOPs. [O]
+- **#53 France scope**: the WSET L3 list first, region by region; the other PDOs later, each region on its own word. [O] Kept 22 Oct 2026
+  after the prep count: 108 WSET names, about 96 of them appellations (~72M at 0.75M a guide); all 366 PDOs plus 2 WSET-named PGIs under
+  Portugal's per-country rule would be 368 guides (~276M), or ~286 (~215M) with Grand Crus as zones (`Review/countries/france-prep/`). [O]
 - **#54 France pilot**: Chablis and Pauillac, pages at `/fr/<place>/` (#48). [O]
 - **#55 Climats as zones**: Grand and Premier Cru climats are drawn as zones inside their village AOP, from the pilot on. [O]
 - **#56 Bordeaux classifications**: a text list in the guide, no map layer (they rank châteaux, not land). [O]
@@ -134,3 +136,5 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#64 Umbrella names**: Toscana, Sicilia, Puglia, Terre Siciliane, Delle Venezie are named in their region's text, with no place of their own. [O]
 - **#65 Cross-region appellations**: home parent is the region with most of the area, "also within" the other (#42). [O]
 - **#66 Italy map layers**: Esri imagery, TINITALY terrain, no geology in the pilot; LeadBot drafts an ISPRA licence email the owner sends. [O]
+- **#67 Chianti Classico outline**: traced in the pilot from the disciplinare's UGA annex (Allegato 3), which names the places inside the five partial municipalities; the same work gives the UGA zones (#63). The municipality outline (+33%) is not shipped. [O]
+- **#68 Italian families**: Valpolicella (with Classico, Ripasso, Amarone, Recioto) and Soave (with Classico, Recioto di Soave) are one place each, their styles inside the guide; 30 Italian places. [O]
