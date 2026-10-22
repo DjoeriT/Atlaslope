@@ -191,3 +191,30 @@ test.describe('phone 375 px', () => {
     await expect(page.locator('.showmap')).toBeHidden();
   });
 });
+
+test('the card unfolds into the map mode and Close the map returns the same paragraph', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await open(page, '#place=rioja&page');
+  const para = page.locator('p[data-b]').nth(2);
+  await page.locator('.pg').evaluate((pg, i) => { const el = pg.querySelectorAll('p[data-b]')[i]; pg.scrollTop += el.getBoundingClientRect().top - 200; }, 2);
+  const key = await para.getAttribute('data-b');
+  const before = await para.evaluate((el) => el.getBoundingClientRect().top);
+  await page.locator('a.mapcard').dispatchEvent('click', { button: 0 }); // a real click would first scroll the card into view
+  await expect(page.locator('.grow')).toHaveCount(1); // the photo grows from the card
+  await expect(mapCol(page)).toBeVisible();
+  await expect(page.locator('.grow')).toHaveCount(0, { timeout: 8000 });
+  await page.locator('.pg-close').click();
+  await expect(page.locator('.pg.tour')).toHaveCount(0);
+  const mine = page.locator(`[data-b="${key}"]`);
+  await expect(mine).toBeVisible();
+  const top = await mine.evaluate((el) => el.getBoundingClientRect().top);
+  expect(Math.abs(top - before)).toBeLessThanOrEqual(2);
+});
+
+test('reduced motion opens the map mode with no growing photo', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await open(page, '#place=rioja&page');
+  await page.locator('a.mapcard').click();
+  await expect(mapCol(page)).toBeVisible();
+  await expect(page.locator('.grow')).toHaveCount(0);
+});

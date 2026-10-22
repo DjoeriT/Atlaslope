@@ -28,6 +28,7 @@ import type { Story } from '../story/format';
 import { flyKey } from '../story/steps';
 import type { Measures } from '../facts';
 import type { MeasureKind, StoryStep } from '../story/format';
+import { crossFade } from '../story/unfold';
 import { MapCard } from './MapCard';
 import { PHOTO_MAX_REM, Pic, sizesFor } from './Pic';
 
@@ -151,6 +152,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     const k = kept.current;
     const el = k && page?.querySelector<HTMLElement>(`[data-b="${k.key}"]`);
     if (page && k && el) page.scrollTop += el.getBoundingClientRect().top - (areaTop(page) + k.off);
+    // Folding back fades the page in (450 ms); opening with reduced motion is a plain cross-fade. The growing photo covers the normal opening.
+    if (page && !(tour && document.querySelector('.grow'))) crossFade(page, tour ? 250 : 450);
   }, [tour]);
   const [chapterNo, setChapterNo] = useState(0);
   const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };

@@ -126,3 +126,7 @@
 }
 .pg.tour .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
 .pg.tour .pg-beat-below .pg-zguide,.pg.tour .pg-answer .pg-cards,.pg.tour .pg-alike,.pg.tour .pg-below-facts,.pg.tour .pg-two{grid-template-columns:1fr;gap:1.8rem}
+
+/* The photo that grows from the card into the map mode (src/story/unfold.ts) */
+.grow{position:fixed;z-index:100;overflow:hidden;background:#141414;pointer-events:none}
+.grow img{display:block;width:100%;height:100%;object-fit:cover}

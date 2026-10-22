@@ -9,6 +9,7 @@ import { DWELL_MS, holdSteps, pickStep, readingLine, spreadRows, stopOf, targetO
 import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
 import { anchorOf, stepOfLink } from './steps';
+import { MAP_IDLE_EVENT } from './unfold';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, locator, locatorBox, type Credited } from './view';
 
@@ -105,6 +106,7 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
     m.show(views[at], true);
     shownStep.current = at;
     setActive(at);
+    m.map.once('idle', () => window.dispatchEvent(new Event(MAP_IDLE_EVENT)));
     // The column appears beside text that reflows; MapLibre needs its new size.
     // On a phone and a tablet the credit line is folded behind the map's own "i" button.
     const iBtn = mapEl.current?.querySelector('.maplibregl-ctrl-attrib-button');
