@@ -78,3 +78,13 @@
 - Honest limit: from the air Spain's wine land is ochre, olive and green, so idea 3 reads earthy, not bright. Idea 2 is the more alive of the two.
   A next step for more colour that stays true: add each place's wine colour (red, white, rosé), already allowed in `Review/visual-style.md`, as the accent.
 - LeadBot context is well past 250K. The next round must start in a fresh session from this handoff.
+
+## After round 4: the real gap (owner, 22 Oct 2026) [O]
+- "This is all not good enough. Way too white." Then: "Not enough pictures that make it come alive."
+- Read: the missing ingredient across all four rounds is photography. Every mock rested on type, lines or data, with photos as small proof.
+  The next round is **photo-led**: big, immersive, full-bleed pictures of vineyards, people, cellars, light and seasons, with the real-data
+  pieces (slope line, cut-out, palette) as quiet supporting detail.
+- The bottleneck is the photo library: 222 Commons photos, shipped at 800 px max (`public/photos/800/`), 9 for all of Rioja. A photo-led brand needs
+  more and larger pictures per place. First step in the fresh session: a script pulls the full-size originals of the photos already picked
+  (licences already checked in `data/photos.json`), then adds 15 to 25 strong candidates per hero place from Wikimedia Commons, with the owner picking from a contact sheet.
+  Only then a mock.
