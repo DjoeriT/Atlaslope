@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
 - [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
 - [2026-10-22-portugal-photos](2026-10-22-portugal-photos.md): 27 Commons photos shipped for Douro and Vinho Verde, crops parked until Portugal is on Guides, photos no longer hidden on guides without Study; mock round 2 of option C next (#149, 22 Oct 2026)
 - [2026-10-22-atlas-cover](2026-10-22-atlas-cover.md): Atlas cover card E1 (map tour and slopes loops, countries), #country=spain, video out of the 2 MB check; clip polish open (PR #202, 22 Oct 2026)
