@@ -35,6 +35,17 @@
     "zone",
     "zone"
    ]
+  },
+  {
+   "id": "italy",
+   "name": "Italy",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -157,6 +168,23 @@
      "id": "fr-burgundy",
      "name": "Burgundy",
      "order": 3
+    }
+   ]
+  },
+  {
+   "id": "wset-it",
+   "name": "WSET",
+   "country": "italy",
+   "groups": [
+    {
+     "id": "it-piemonte",
+     "name": "Piemonte",
+     "order": 1
+    },
+    {
+     "id": "it-tuscany",
+     "name": "Tuscany",
+     "order": 6
     }
    ]
   }
@@ -3225,6 +3253,46 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "barolo",
+   "name": "Barolo",
+   "official": "Barolo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1389",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    7.9566,
+    44.6253
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 1,
+   "courseOrder": 1
+  },
+  {
+   "id": "chianti-classico",
+   "name": "Chianti Classico",
+   "official": "Chianti Classico",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1235",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3194,
+    43.4985
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
    "northSouth": 2,
    "courseOrder": 2
   }
