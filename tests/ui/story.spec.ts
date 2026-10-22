@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 
 // "Map tour" folded into the guide page (owner 21 Oct 2026, layout A): the band, the map column beside the guide, the stop that follows
-// the scroll, the geology credit, the fact marker keys, Hide map, and the old story address.
+// the scroll, the geology credit, the fact marker keys, Close the map, and the old story address.
 // Real content; outside hosts (tiles, the IGME geology service) are blocked, so only the page's own state is asserted (active step, credit text, focus, address).
 
 async function open(page: Page, hash: string) {
@@ -70,11 +70,11 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
 });
 
-test('on a phone the map strip is 300 px and the credit is folded', async ({ page }) => {
+test('on a phone the map is pinned at the top, 42% of the screen, and the credit is folded', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(mapCol(page)).toHaveCSS('height', '300px');
+  await expect(mapCol(page)).toHaveCSS('height', '354.469px');
   await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
 });
 
@@ -105,11 +105,11 @@ test('a fact marker opens with Enter, Escape closes it and focus returns to the 
   await expect(page).toHaveURL(/#place=rioja&page&story(&view=.*)?$/); // the first Escape only closed the card
 });
 
-test('Hide map returns to the plain guide', async ({ page }) => {
+test('Close the map returns to the plain guide', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Hide map' })).toBeFocused(); // focus follows the map open
-  await page.getByRole('button', { name: 'Hide map' }).click();
+  await expect(page.getByRole('button', { name: 'Close the map' })).toBeFocused(); // focus follows the map open
+  await page.getByRole('button', { name: 'Close the map' }).click();
   await expect(page).toHaveURL(/#place=rioja&page(&view=.*)?$/);
   await expect(page.locator('.pg-tourmap')).toHaveCount(0);
   await expect(page.locator('a.mapcard')).toBeVisible();

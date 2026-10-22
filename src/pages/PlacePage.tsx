@@ -1,5 +1,5 @@
 import { PageTop } from './PageTop';
-import { lazy, Suspense, useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -115,11 +115,42 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
-  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to the "Read with the map" card on hide. A pending fly is dropped on hide.
+  // Focus follows the map: to "Close the map" in the band on open, back to the "Read with the map" card on hide. A pending fly is dropped on hide.
   const hadTour = useRef(tour);
+  const closeBtn = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
+    if (tour) closeBtn.current?.focus({ preventScroll: true });
+    else if (hadTour.current) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
     hadTour.current = tour;
+  }, [tour]);
+  // Opening or closing the map keeps the reader on the same paragraph at the same height under the bar (or under the pinned map on a phone):
+  // the paragraph (data-b) at the top of the reading area is noted as the page scrolls, and put back after the layout changes.
+  const kept = useRef<{ key: string; off: number }>();
+  const areaTop = (page: HTMLElement) => {
+    const edge = page.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
+    return matchMedia('(max-width: 47.5em)').matches ? page.querySelector('.pg-tourmap')?.getBoundingClientRect().bottom ?? edge : edge;
+  };
+  useEffect(() => {
+    const page = pageRef.current;
+    if (!page) return;
+    const note = () => {
+      const top = areaTop(page);
+      const el = Array.from(page.querySelectorAll<HTMLElement>('[data-b]')).find((b) => b.getBoundingClientRect().bottom > top + 4);
+      kept.current = el && el.getBoundingClientRect().top < innerHeight ? { key: el.dataset.b!, off: el.getBoundingClientRect().top - top } : undefined;
+    };
+    note();
+    let raf = 0;
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; note(); }); };
+    page.addEventListener('scroll', onScroll, { passive: true });
+    return () => { page.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf); };
+  }, [place.id, tour]);
+  const firstRun = useRef(true);
+  useLayoutEffect(() => {
+    if (firstRun.current) { firstRun.current = false; return; }
+    const page = pageRef.current;
+    const k = kept.current;
+    const el = k && page?.querySelector<HTMLElement>(`[data-b="${k.key}"]`);
+    if (page && k && el) page.scrollTop += el.getBoundingClientRect().top - (areaTop(page) + k.off);
   }, [tour]);
   const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
@@ -243,7 +274,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     return (
       <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
         {heading && <h4 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h4>}
-        {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
+        {ch.paras.map((para, i) => <p key={i} data-b={`${ch.id}.${i}`}>{para}</p>)}
         {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
         {src(ch.cite)}
         {withCards && zoneCards(ch)}
@@ -420,7 +451,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name}
+        bar={tour && <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>} />
       <div className="pg-body">
       <div className="pg-listing">
         <div className="pg-hero">
@@ -630,7 +662,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       </div>
       {tour && guide && story && (
         <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onHide={hideMap} />
+          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} />
         </Suspense>
       )}
       </div>
