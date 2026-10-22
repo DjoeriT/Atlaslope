@@ -53,7 +53,7 @@
 .pg-beat-main{min-width:0}
 .pg-beat-h{grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:baseline;margin-bottom:1.4rem}
 .pg-beat-h .n{font:400 5rem/.9 var(--serif);color:var(--foil-ink)}
-.pg-beat-h .k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink)}
+.pg-beat-h .k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);margin-bottom:.4rem}
 .pg-beat h3{font-size:clamp(2rem,3vw,2.7rem);line-height:1.1}
 .pg-prose{font-size:1.22rem;line-height:1.72;color:var(--ink)}
 .pg-prose p{margin:0 0 1rem}
