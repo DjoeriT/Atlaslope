@@ -978,5 +978,988 @@
     "route": "piemonte",
     "codice": "DOC_57",
     "source": "EU register PDO-IT-A1241 (eAmbrosia attachment 28856)"
+  },
+  "torgiano-rosso-riserva": {
+    "route": "istat",
+    "whole": [
+      "Torgiano"
+    ],
+    "source": "MASAF disciplinare torgiano-rosso-riserva, art. 3",
+    "partial": [],
+    "officialKm2": null
+  },
+  "carmignano": {
+    "route": "istat",
+    "partial": [
+      "Carmignano",
+      "Poggio a Caiano"
+    ],
+    "source": "MASAF disciplinare carmignano, art. 3",
+    "notes": "only terreni collinari of both comuni",
+    "whole": [],
+    "officialKm2": null
+  },
+  "terre-tollesi": {
+    "route": "istat",
+    "whole": [
+      "Tollo"
+    ],
+    "source": "MASAF disciplinare terre-tollesi, art. 3",
+    "partial": [],
+    "officialKm2": null
+  },
+  "elba-aleatico-passito": {
+    "route": "istat",
+    "whole": [
+      "Campo nell'Elba",
+      "Capoliveri",
+      "Marciana",
+      "Marciana Marina",
+      "Porto Azzurro",
+      "Portoferraio",
+      "Rio"
+    ],
+    "source": "MASAF disciplinare elba-aleatico-passito, art. 3",
+    "notes": "text says only 'comuni dell isola d'Elba', none named; the seven Elba comuni are my inference from the island [R]; Rio = merged Rio nell'Elba + Rio Marina [R]",
+    "partial": [],
+    "officialKm2": null
+  },
+  "suvereto": {
+    "route": "istat",
+    "whole": [
+      "Suvereto"
+    ],
+    "source": "MASAF disciplinare suvereto, art. 3",
+    "partial": [],
+    "officialKm2": null
+  },
+  "vernaccia-di-san-gimignano": {
+    "route": "istat",
+    "partial": [
+      "San Gimignano"
+    ],
+    "source": "MASAF disciplinare vernaccia-di-san-gimignano, art. 3",
+    "notes": "only terreni collinari",
+    "whole": [],
+    "officialKm2": null
+  },
+  "vermentino-di-gallura": {
+    "route": "istat",
+    "whole": [
+      "Aggius",
+      "Aglientu",
+      "Arzachena",
+      "Badesi",
+      "Berchidda",
+      "Bortigiadas",
+      "Budoni",
+      "Calangianus",
+      "Golfo Aranci",
+      "Loiri Porto San Paolo",
+      "Luogosanto",
+      "Luras",
+      "Monti",
+      "Olbia",
+      "Oschiri",
+      "Palau",
+      "S. Antonio di Gallura",
+      "S. Teodoro",
+      "S. Teresa di Gallura",
+      "Telti",
+      "Tempio Pausania",
+      "Trinità d'Agultu",
+      "Viddalba"
+    ],
+    "renamed": {
+      "S. Antonio di Gallura": "Sant'Antonio di Gallura",
+      "S. Teodoro": "San Teodoro (SS)",
+      "S. Teresa di Gallura": "Santa Teresa Gallura",
+      "Trinità d'Agultu": "Trinità d'Agultu e Vignola"
+    },
+    "source": "MASAF disciplinare vermentino-di-gallura, art. 3",
+    "notes": "whole territories (Gallura)",
+    "partial": [],
+    "officialKm2": null
+  },
+  "bagnoli-friularo": {
+    "route": "istat",
+    "whole": [
+      "Agna",
+      "Arre",
+      "Bagnoli di Sopra",
+      "Battaglia Terme",
+      "Bovolenta",
+      "Candiana",
+      "Due Carrare",
+      "Cartura",
+      "Conselve",
+      "Monselice",
+      "Pernumia",
+      "S. Pietro Viminario",
+      "Terrassa",
+      "Tribano"
+    ],
+    "renamed": {
+      "S. Pietro Viminario": "San Pietro Viminario",
+      "Terrassa": "Terrassa Padovana"
+    },
+    "source": "MASAF disciplinare bagnoli-friularo, art. 3",
+    "notes": "Classico sub-zone = all of Bagnoli di Sopra",
+    "partial": [],
+    "officialKm2": null
+  },
+  "scanzo": {
+    "route": "istat",
+    "partial": [
+      "Scanzorosciate"
+    ],
+    "source": "MASAF disciplinare scanzo, art. 3",
+    "notes": "hill part only, street boundary; flat land excluded",
+    "whole": [],
+    "officialKm2": null
+  },
+  "sforzato-di-valtellina": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A1035",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare sforzato-di-valtellina, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
+  },
+  "conero": {
+    "route": "istat",
+    "whole": [
+      "Ancona",
+      "Offagna",
+      "Camerano",
+      "Sirolo",
+      "Numana"
+    ],
+    "partial": [
+      "Castelfidardo",
+      "Osimo"
+    ],
+    "source": "MASAF disciplinare conero, art. 3",
+    "notes": "Loreto, Recanati only appear as boundary; not included",
+    "officialKm2": null
+  },
+  "recioto-di-gambellara": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A0470",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare recioto-di-gambellara, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
+  },
+  "primitivo-di-manduria-dolce-naturale": {
+    "route": "istat",
+    "whole": [
+      "Manduria",
+      "Carosino",
+      "Monteparano",
+      "Leporano",
+      "Pulsano",
+      "Faggiano",
+      "Roccaforzata",
+      "San Giorgio Jonico",
+      "San Marzano di San Giuseppe",
+      "Fragagnano",
+      "Lizzano",
+      "Sava",
+      "Torricella",
+      "Maruggio",
+      "Avetrana",
+      "Erchie",
+      "Oria",
+      "Torre S. Susanna"
+    ],
+    "partial": [
+      "Taranto"
+    ],
+    "renamed": {
+      "San Giorgio Jonico": "San Giorgio Ionico",
+      "Torre S. Susanna": "Torre Santa Susanna"
+    },
+    "source": "MASAF disciplinare primitivo-di-manduria-dolce-naturale, art. 3",
+    "notes": "intro says 'tutto o parte' but list reads 'i territori dei comuni': treated whole; Taranto only frazione Talsano + administrative islands inside Fragagnano and Lizzano",
+    "officialKm2": null
+  },
+  "castel-del-monte-nero-di-troia-riserva": {
+    "route": "istat",
+    "whole": [
+      "Minervino Murge"
+    ],
+    "partial": [
+      "Andria",
+      "Corato",
+      "Trani",
+      "Ruvo",
+      "Terlizzi",
+      "Bitonto",
+      "Palo del Colle",
+      "Toritto",
+      "Binetto"
+    ],
+    "renamed": {
+      "Ruvo": "Ruvo di Puglia"
+    },
+    "source": "MASAF disciplinare castel-del-monte-nero-di-troia-riserva, art. 3",
+    "notes": "Binetto: only administrative island D'Ameli (counted partial); Canosa di Puglia, Grumo only boundary, not included",
+    "officialKm2": null
+  },
+  "castel-del-monte-rosso-riserva": {
+    "route": "istat",
+    "whole": [
+      "Minervino Murge"
+    ],
+    "partial": [
+      "Andria",
+      "Corato",
+      "Trani",
+      "Ruvo",
+      "Terlizzi",
+      "Bitonto",
+      "Palo del Colle",
+      "Toritto",
+      "Binetto"
+    ],
+    "renamed": {
+      "Ruvo": "Ruvo di Puglia"
+    },
+    "source": "MASAF disciplinare castel-del-monte-rosso-riserva, art. 3",
+    "notes": "Binetto: only administrative island D'Ameli (counted partial); Canosa di Puglia, Grumo only boundary, not included",
+    "officialKm2": null
+  },
+  "castel-del-monte-bombino-nero": {
+    "route": "istat",
+    "whole": [
+      "Minervino Murge"
+    ],
+    "partial": [
+      "Andria",
+      "Corato",
+      "Trani",
+      "Ruvo",
+      "Terlizzi",
+      "Bitonto",
+      "Palo del Colle",
+      "Toritto",
+      "Binetto"
+    ],
+    "renamed": {
+      "Ruvo": "Ruvo di Puglia"
+    },
+    "source": "MASAF disciplinare castel-del-monte-bombino-nero, art. 3",
+    "notes": "Binetto: only administrative island D'Ameli (counted partial); Canosa di Puglia, Grumo only boundary, not included",
+    "officialKm2": null
+  },
+  "ramandolo": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A0939",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare ramandolo, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
+  },
+  "vernaccia-di-serrapetrona": {
+    "route": "istat",
+    "whole": [
+      "Serrapetrona"
+    ],
+    "partial": [
+      "Belforte del Chienti",
+      "San Severino Marche"
+    ],
+    "source": "MASAF disciplinare vernaccia-di-serrapetrona, art. 3",
+    "notes": "Tolentino only boundary",
+    "officialKm2": null
+  },
+  "oltrepo-pavese-metodo-classico": {
+    "route": "istat",
+    "whole": [
+      "Borgo Priolo",
+      "Borgoratto Mormorolo",
+      "Bosnasco",
+      "Calvignano",
+      "Canevino",
+      "Canneto Pavese",
+      "Castana",
+      "Cecima",
+      "Godiasco",
+      "Golferenzo",
+      "Lirio",
+      "Montalto Pavese",
+      "Montecalvo Versiggia",
+      "Montescano",
+      "Montù Beccaria",
+      "Mornico Losana",
+      "Oliva Gessi",
+      "Pietra de Giorgi",
+      "Rocca de Giorgi",
+      "Rocca Susella",
+      "Rovescala",
+      "Ruino",
+      "San Damiano al Colle",
+      "Santa Maria della Versa",
+      "Torrazza Coste",
+      "Volpara",
+      "Zenevredo"
+    ],
+    "partial": [
+      "Broni",
+      "Casteggio",
+      "Cigognola",
+      "Codevilla",
+      "Corvino San Quirico",
+      "Fortunago",
+      "Montebello della Battaglia",
+      "Montesegale",
+      "Ponte Nizza",
+      "Redavalle",
+      "Retorbido",
+      "Rivanazzano",
+      "Santa Giuletta",
+      "Stradella",
+      "Torricella Verzate"
+    ],
+    "renamed": {
+      "Canevino": "Colli Verdi",
+      "Ruino": "Colli Verdi",
+      "Godiasco": "Godiasco Salice Terme",
+      "Pietra de Giorgi": "Pietra de' Giorgi",
+      "Rocca de Giorgi": "Rocca de' Giorgi",
+      "Rivanazzano": "Rivanazzano Terme"
+    },
+    "source": "MASAF disciplinare oltrepo-pavese-metodo-classico, art. 3",
+    "notes": "Canevino and Ruino now merged into Colli Verdi [R]; Godiasco, Rivanazzano renamed with Terme (in comuni.csv); hill belt of Oltrepo; San Ponzo Semola (frazione of Ponte Nizza) mentioned, not a comune",
+    "officialKm2": null
+  },
+  "rosazzo": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A0367",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare rosazzo, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
+  },
+  "morellino-di-scansano": {
+    "route": "istat",
+    "whole": [
+      "Scansano"
+    ],
+    "partial": [
+      "Manciano",
+      "Magliano in Toscana",
+      "Grosseto",
+      "Campagnatico",
+      "Semproniano",
+      "Roccalbegna"
+    ],
+    "source": "MASAF disciplinare morellino-di-scansano, art. 3",
+    "notes": "hill belt between Ombrone and Albegna",
+    "officialKm2": null
+  },
+  "colli-orientali-del-friuli-picolit": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A0938",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare colli-orientali-del-friuli-picolit, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
+  },
+  "montello-rosso": {
+    "route": "istat",
+    "whole": [
+      "Castelcucco",
+      "Cornuda",
+      "Monfumo"
+    ],
+    "partial": [
+      "Asolo",
+      "Borso del Grappa",
+      "Caerano S. Marco",
+      "Cavaso del Tomba",
+      "Crespano del Grappa",
+      "Crocetta del Montello",
+      "Fonte",
+      "Giavera del Montello",
+      "Maser",
+      "Montebelluna",
+      "Nervesa della Battaglia",
+      "Paderno del Grappa",
+      "Pederobba",
+      "Possagno",
+      "S. Zenone degli Ezzelini",
+      "Volpago del Montello"
+    ],
+    "renamed": {
+      "Caerano S. Marco": "Caerano di San Marco",
+      "S. Zenone degli Ezzelini": "San Zenone degli Ezzelini",
+      "Crespano del Grappa": "Pieve del Grappa",
+      "Paderno del Grappa": "Pieve del Grappa"
+    },
+    "source": "MASAF disciplinare montello-rosso, art. 3",
+    "notes": "Crespano del Grappa + Paderno del Grappa merged into Pieve del Grappa 2019 [R]",
+    "officialKm2": null
+  },
+  "asolo-prosecco": {
+    "route": "istat",
+    "whole": [
+      "Castelcucco",
+      "Cornuda",
+      "Monfumo"
+    ],
+    "partial": [
+      "Asolo",
+      "Borso del Grappa",
+      "Caerano S. Marco",
+      "Cavaso del Tomba",
+      "Crespano del Grappa",
+      "Crocetta del Montello",
+      "Fonte",
+      "Giavera del Montello",
+      "Maser",
+      "Montebelluna",
+      "Nervesa della Battaglia",
+      "Paderno del Grappa",
+      "Pederobba",
+      "Possagno",
+      "S. Zenone degli Ezzelini",
+      "Volpago del Montello"
+    ],
+    "renamed": {
+      "Caerano S. Marco": "Caerano di San Marco",
+      "S. Zenone degli Ezzelini": "San Zenone degli Ezzelini",
+      "Crespano del Grappa": "Pieve del Grappa",
+      "Paderno del Grappa": "Pieve del Grappa"
+    },
+    "source": "MASAF disciplinare asolo-prosecco, art. 3",
+    "notes": "same zone as Montello Rosso (identical list); Crespano del Grappa + Paderno del Grappa merged into Pieve del Grappa 2019 [R]",
+    "officialKm2": null
+  },
+  "colline-teramane-montepulciano-dabruzzo": {
+    "route": "istat",
+    "partial": [
+      "Ancarano",
+      "Atri",
+      "Basciano",
+      "Bellante",
+      "Campli",
+      "Canzano",
+      "Castellalto",
+      "Castiglione Messer Raimondo",
+      "Castilenti",
+      "Celino Attanasio",
+      "Cermignano",
+      "Civitella del Tronto",
+      "Colonnella",
+      "Controguerra",
+      "Corropoli",
+      "Giulianova",
+      "Martinsicuro",
+      "Montorio al Vomano",
+      "Morro d'Oro",
+      "Mosciano Sant'Angelo",
+      "Nereto",
+      "Notaresco",
+      "Penna Sant'Andrea",
+      "Pineto",
+      "Roseto degli Abruzzi",
+      "Sant'Egidio alla Vibrata",
+      "Sant'Omero",
+      "Silvi",
+      "Teramo",
+      "Torano Nuovo",
+      "Tortoreto"
+    ],
+    "renamed": {
+      "Celino Attanasio": "Cellino Attanasio"
+    },
+    "source": "MASAF disciplinare colline-teramane-montepulciano-dabruzzo, art. 3",
+    "notes": "text lists comuni then draws a boundary that excludes the west of the province; whole/partial not stated, so all partial; 'Celino Attanasio' is a typo in the text",
+    "whole": [],
+    "officialKm2": null
+  },
+  "montecucco-sangiovese": {
+    "route": "istat",
+    "partial": [
+      "Cinigiano",
+      "Civitella Paganico",
+      "Campagnatico",
+      "Castel del Piano",
+      "Roccalbegna",
+      "Arcidosso",
+      "Seggiano"
+    ],
+    "source": "MASAF disciplinare montecucco-sangiovese, art. 3",
+    "notes": "terreni vocati within listed comuni plus boundary; all partial",
+    "whole": [],
+    "officialKm2": null
+  },
+  "val-di-cornia-rosso": {
+    "route": "istat",
+    "whole": [
+      "Suvereto",
+      "Sassetta",
+      "Monteverdi Marittimo"
+    ],
+    "partial": [
+      "Piombino",
+      "San Vincenzo",
+      "Campiglia Marittima"
+    ],
+    "source": "MASAF disciplinare val-di-cornia-rosso, art. 3",
+    "notes": "two parts: south-west and north-east",
+    "officialKm2": null
+  },
+  "romagna-albana": {
+    "route": "istat",
+    "partial": [
+      "Castrocaro Terme e Terra del Sole",
+      "Forlì",
+      "Forlimpopoli",
+      "Meldola",
+      "Bertinoro",
+      "Cesena",
+      "Montiano",
+      "Roncofreddo",
+      "Savignano sul Rubicone",
+      "Longiano",
+      "Castelbolognese",
+      "Riolo Terme",
+      "Faenza",
+      "Casola Valsenio",
+      "Brisighella",
+      "Borgo Tossignano",
+      "Casalfiumanese",
+      "Castel San Pietro Terme",
+      "Dozza Imolese",
+      "Fontanelice",
+      "Imola",
+      "Ozzano Emilia"
+    ],
+    "renamed": {
+      "Dozza Imolese": "Dozza",
+      "Ozzano Emilia": "Ozzano dell'Emilia",
+      "Castelbolognese": "Castel Bolognese"
+    },
+    "source": "MASAF disciplinare romagna-albana, art. 3",
+    "notes": "'in tutto o in parte': all partial; lower limit on valley side (SS 9 Emilia, railway) for Savignano, Cesena, Forlimpopoli, Forli, Faenza, Castelbolognese, Imola, Ozzano",
+    "whole": [],
+    "officialKm2": null
+  },
+  "franciacorta": {
+    "route": "istat",
+    "whole": [
+      "Paratico",
+      "Capriolo",
+      "Adro",
+      "Erbusco",
+      "Corte Franca",
+      "Iseo",
+      "Ome",
+      "Monticelli Brusati",
+      "Rodengo Saiano",
+      "Paderno Franciacorta",
+      "Passirano",
+      "Provaglio d'Iseo",
+      "Cellatica",
+      "Gussago"
+    ],
+    "partial": [
+      "Cologne",
+      "Coccaglio",
+      "Rovato",
+      "Cazzago S. Martino",
+      "Brescia"
+    ],
+    "renamed": {
+      "Cazzago S. Martino": "Cazzago San Martino"
+    },
+    "source": "MASAF disciplinare franciacorta, art. 3",
+    "notes": "Cologne, Coccaglio, Rovato, Cazzago only north of ex SS 573 and SS 11; text also excludes one area in the west (not parsed)",
+    "officialKm2": null
+  },
+  "aglianico-del-taburno": {
+    "route": "istat",
+    "whole": [
+      "Apollosa",
+      "Bonea",
+      "Campoli del Monte Taburno",
+      "Castelpoto",
+      "Foglianise",
+      "Montesarchio",
+      "Paupisi",
+      "Torrecuso",
+      "Ponte"
+    ],
+    "partial": [
+      "Benevento",
+      "Cautano",
+      "Vitulano",
+      "Tocco Caudio"
+    ],
+    "source": "MASAF disciplinare aglianico-del-taburno, art. 3",
+    "officialKm2": null
+  },
+  "cesanese-del-piglio": {
+    "route": "istat",
+    "whole": [
+      "Piglio",
+      "Serrone"
+    ],
+    "partial": [
+      "Acuto",
+      "Anagni",
+      "Paliano"
+    ],
+    "source": "MASAF disciplinare cesanese-del-piglio, art. 3",
+    "notes": "Roiate only as boundary",
+    "officialKm2": null
+  },
+  "verdicchio-di-matelica-riserva": {
+    "route": "istat",
+    "partial": [
+      "Matelica",
+      "Esanatoglia",
+      "Gagliole",
+      "Castelraimondo",
+      "Camerino",
+      "Pioraco",
+      "Cerreto d'Esi",
+      "Fabriano"
+    ],
+    "source": "MASAF disciplinare verdicchio-di-matelica-riserva, art. 3",
+    "whole": [],
+    "officialKm2": null
+  },
+  "offida": {
+    "route": "istat",
+    "whole": [
+      "Acquaviva Picena",
+      "Appignano del Tronto",
+      "Casteldilama",
+      "Castorano",
+      "Castignano",
+      "Cossignano",
+      "Montefiore dell'Aso",
+      "Offida",
+      "Ripatransone"
+    ],
+    "partial": [
+      "Ascoli Piceno",
+      "Colli del Tronto",
+      "Campofilone",
+      "Carassai",
+      "Cupramarittima",
+      "Grottammare",
+      "Montalto Marche",
+      "Massignano",
+      "Monsampolo del Tronto",
+      "Montedinove",
+      "Monteprandone",
+      "Pedaso",
+      "Petritoli",
+      "Rotella",
+      "San Benedetto del Tronto",
+      "Spinetoli"
+    ],
+    "renamed": {
+      "Casteldilama": "Castel di Lama",
+      "Cupramarittima": "Cupra Marittima",
+      "Montalto Marche": "Montalto delle Marche"
+    },
+    "source": "MASAF disciplinare offida, art. 3",
+    "officialKm2": null
+  },
+  "colli-euganei-fior-darancio": {
+    "route": "istat",
+    "whole": [
+      "Arquà Petrarca",
+      "Galzignano Terme",
+      "Torreglia"
+    ],
+    "partial": [
+      "Abano Terme",
+      "Montegrotto Terme",
+      "Battaglia Terme",
+      "Due Carrare",
+      "Monselice",
+      "Baone",
+      "Este",
+      "Cinto Euganeo",
+      "Lozzo Atestino",
+      "Vò",
+      "Rovolon",
+      "Cervarese S. Croce",
+      "Teolo",
+      "Selvazzano Dentro"
+    ],
+    "renamed": {
+      "Cervarese S. Croce": "Cervarese Santa Croce",
+      "Vò": "Vo'"
+    },
+    "source": "MASAF disciplinare colli-euganei-fior-darancio, art. 3",
+    "officialKm2": null
+  },
+  "casauria": {
+    "route": "istat",
+    "whole": [
+      "Bolognano",
+      "Castiglione a Casauria",
+      "Cugnoli",
+      "Pietranico",
+      "Scafa",
+      "San Valentino in Abruzzo Citeriore",
+      "Torre de' Passeri",
+      "Turrivalignani"
+    ],
+    "partial": [
+      "Alanno",
+      "Bussi sul Tirino",
+      "Brittoli",
+      "Corvara",
+      "Lettomanoppello",
+      "Manoppello",
+      "Pescosansonesco",
+      "Popoli",
+      "Serramonacesca",
+      "Tocco da Casauria"
+    ],
+    "renamed": {
+      "Popoli": "Popoli Terme"
+    },
+    "source": "MASAF disciplinare casauria, art. 3",
+    "notes": "all Pescara province; Popoli renamed Popoli Terme (in comuni.csv) [R]",
+    "officialKm2": null
+  },
+  "bardolino-superiore": {
+    "route": "istat",
+    "partial": [
+      "Bardolino",
+      "Garda",
+      "Lazise",
+      "Affi",
+      "Costermano",
+      "Cavaion",
+      "Torri del Benaco",
+      "Caprino",
+      "Rivoli Veronese",
+      "Pastrengo",
+      "Bussolengo",
+      "Sona",
+      "Sommacampagna",
+      "Castelnuovo",
+      "Peschiera",
+      "Valeggio"
+    ],
+    "renamed": {
+      "Costermano": "Costermano sul Garda",
+      "Cavaion": "Cavaion Veronese",
+      "Caprino": "Caprino Veronese",
+      "Castelnuovo": "Castelnuovo del Garda",
+      "Peschiera": "Peschiera del Garda",
+      "Valeggio": "Valeggio sul Mincio"
+    },
+    "source": "MASAF disciplinare bardolino-superiore, art. 3",
+    "notes": "'in tutto o in parte': all partial; short names expanded by me from province Verona (Castelnuovo, Peschiera, Valeggio, Cavaion, Caprino, Costermano) [R]",
+    "whole": [],
+    "officialKm2": null
+  },
+  "colli-bolognesi-pignoletto": {
+    "route": "istat",
+    "whole": [
+      "Monte San Pietro",
+      "Sasso Marconi",
+      "Marzabotto",
+      "Pianoro"
+    ],
+    "partial": [
+      "Bologna",
+      "Casalecchio di Reno",
+      "Monterenzio",
+      "S. Lazzaro di Savena",
+      "Valsamoggia",
+      "Zola Predosa",
+      "Savignano sul Panaro"
+    ],
+    "renamed": {
+      "S. Lazzaro di Savena": "San Lazzaro di Savena"
+    },
+    "source": "MASAF disciplinare colli-bolognesi-pignoletto, art. 3",
+    "notes": "Savignano sul Panaro is in Modena province",
+    "officialKm2": null
+  },
+  "colli-di-conegliano": {
+    "route": "istat",
+    "partial": [
+      "Conegliano",
+      "Susegana",
+      "Pieve di Soligo",
+      "Farra di Soligo",
+      "Refrontolo",
+      "San Pietro di Feletto",
+      "Miane",
+      "Follina",
+      "Cison di Valmarino",
+      "Revine Lago",
+      "Tarzo",
+      "Vittorio Veneto",
+      "Fregona",
+      "Sarmede",
+      "Cappella Maggiore",
+      "Cordignano",
+      "Colle Umberto",
+      "San Fior",
+      "San Vendemiano",
+      "Vidor"
+    ],
+    "source": "MASAF disciplinare colli-di-conegliano, art. 3",
+    "notes": "'in tutto o in parte': all partial; zone A (bianco, rosso), later zones B/C (Refrontolo passito, Torchiato di Fregona) in the file not read",
+    "whole": [],
+    "officialKm2": null
+  },
+  "montefalco-sagrantino": {
+    "route": "istat",
+    "whole": [
+      "Montefalco"
+    ],
+    "partial": [
+      "Bevagna",
+      "Gualdo Cattaneo",
+      "Castel Ritaldi",
+      "Giano dell'Umbria"
+    ],
+    "source": "MASAF disciplinare montefalco-sagrantino, art. 3",
+    "notes": "Montefalco: terreni vocati within entire comune, counted whole",
+    "officialKm2": null
+  },
+  "cerasuolo-di-vittoria": {
+    "route": "istat",
+    "whole": [
+      "Vittoria",
+      "Comiso",
+      "Acate",
+      "Chiaramonte Gulfi",
+      "Santa Croce Camerina"
+    ],
+    "partial": [
+      "Ragusa",
+      "Niscemi",
+      "Gela",
+      "Riesi",
+      "Butera",
+      "Mazzarino",
+      "Caltagirone",
+      "Licodia Eubea",
+      "Mazzarrone"
+    ],
+    "source": "MASAF disciplinare cerasuolo-di-vittoria, art. 3",
+    "notes": "Ragusa, Caltanissetta (Niscemi, Gela, Riesi, Butera, Mazzarino) and Catania (Caltagirone, Licodia Eubea, Mazzarrone) provinces; Mazzarrone is a newer comune split from Caltagirone",
+    "officialKm2": null
+  },
+  "piave-malanotte": {
+    "route": "istat",
+    "whole": [
+      "Arcade",
+      "Breda di Piave",
+      "Casale sul Sile",
+      "Cessalto",
+      "Chiarano",
+      "Cimadolmo",
+      "Codognè",
+      "Fontanelle",
+      "Godega Sant'Urbano",
+      "Gorgo al Monticano",
+      "Mareno di Piave",
+      "Maserada sul Piave",
+      "Monastier",
+      "Oderzo",
+      "Ormelle",
+      "Ponte di Piave",
+      "Ponzano Veneto",
+      "Portobuffolè",
+      "Povegliano",
+      "Roncade",
+      "Salgareda",
+      "San Biagio di Callalta",
+      "San Fior",
+      "San Polo di Piave",
+      "Santa Lucia di Piave",
+      "Spresiano",
+      "Vazzola",
+      "Zenson di Piave",
+      "Fossalta di Piave",
+      "Marcon",
+      "Meolo",
+      "Noventa di Piave",
+      "Quarto d'Altino",
+      "San Donà di Piave"
+    ],
+    "partial": [
+      "Carbonera",
+      "Casier",
+      "Gaiarine",
+      "Mansuè",
+      "Mogliano Veneto",
+      "Orsago",
+      "Preganziol",
+      "Silea",
+      "Villorba",
+      "Colle Umberto",
+      "Conegliano",
+      "Cordignano",
+      "Giavera del Montello",
+      "Montebelluna",
+      "Motta di Livenza",
+      "Nervesa della Battaglia",
+      "Paese",
+      "San Vendemiano",
+      "Susegana",
+      "Trevignano",
+      "Vittorio Veneto",
+      "Volpago del Montello",
+      "Venezia",
+      "Ceggia",
+      "Eraclea",
+      "Jesolo",
+      "Musile di Piave",
+      "Torre di Mosto"
+    ],
+    "renamed": {
+      "Godega Sant'Urbano": "Godega di Sant'Urbano",
+      "Monastier": "Monastier di Treviso"
+    },
+    "source": "MASAF disciplinare piave-malanotte, art. 3",
+    "notes": "Treviso and Venezia provinces; \"bacino del Piave\" excluding unsuitable areas",
+    "officialKm2": null
+  },
+  "lison": {
+    "route": "istat",
+    "whole": [
+      "Annone Veneto",
+      "Cinto Caomaggiore",
+      "Gruaro",
+      "Fossalta di Portogruaro",
+      "Pramaggiore",
+      "Teglio Veneto",
+      "Meduna di Livenza",
+      "Chions",
+      "Cordovado",
+      "Pravisdomini"
+    ],
+    "partial": [
+      "Caorle",
+      "Concordia Sagittaria",
+      "Portogruaro",
+      "San Michele al Tagliamento",
+      "Santo Stino di Livenza",
+      "Motta di Livenza",
+      "Azzano Decimo",
+      "Morsano al Tagliamento",
+      "Sesto al Reghena"
+    ],
+    "renamed": {
+      "Santo Stino di Livenza": "San Stino di Livenza"
+    },
+    "source": "MASAF disciplinare lison, art. 3",
+    "notes": "Santo Stino di Livenza = San Stino di Livenza in ISTAT 2025 (renamed); Classico sub-zone (art. 3 B): frazioni Lison, Pradipozzo, Summaga (Portogruaro), Belfiore, Blessaglia, Salvarolo (Pramaggiore), more not read",
+    "officialKm2": null
+  },
+  "valtellina-superiore": {
+    "route": "candiago",
+    "pdo": "PDO-IT-A1036",
+    "source": "Candiago et al. 2022 (CC0), traced from MASAF disciplinare valtellina-superiore, art. 3",
+    "notes": "rulebook draws the zone along a boundary; its municipality list is incomplete or absent (#71)"
   }
 }
