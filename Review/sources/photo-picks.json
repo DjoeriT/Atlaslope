@@ -1,5 +1,5 @@
 {
- "$comment": "Photos LeadBot picked from Review/sources/contact-sheets/ (release 4). Keys are place ids; values are the chosen candidates in display order. Tools/data/photo_ship.py turns them into public/photos/ and data/photos.json.",
+ "$comment": "Photos LeadBot picked from Review/sources/contact-sheets/ (release 4). Keys are place ids; values are the chosen candidates in display order. Tools/data/photo_ship.py turns them into public/photos/ and data/photos.json. trimBottomPx (Portugal round, 22 Oct 2026): pixels cut from the bottom of the 1200 px file to remove overlay text.",
  "picks": {
   "jumilla": [
    {
@@ -2340,6 +2340,229 @@
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
     "artist": "joan ggk",
     "note": "Read with the map stop photo (#127); alt and focus kept from data/photos.json, data/story/photo-focus.json"
+   }
+  ],
+  "douro": [
+   {
+    "title": "File:Quinta de São Luíz - Vale do Rio Douro - Portugal (6781947894).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Quinta_de_S%C3%A3o_Lu%C3%ADz_-_Vale_do_Rio_Douro_-_Portugal_(6781947894).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Quinta_de_S%C3%A3o_Lu%C3%ADz_-_Vale_do_Rio_Douro_-_Portugal_%286781947894%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Alto Douro Vinhateiro DSC00256 (36492349124).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Alto_Douro_Vinhateiro_DSC00256_(36492349124).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "nborges from Portugal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Alto_Douro_Vinhateiro_DSC00256_%2836492349124%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Rio Douro em Portugal DSC01110 (15525224057).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rio_Douro_em_Portugal_DSC01110_(15525224057).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Gerry Labrijn from London, UK",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Rio_Douro_em_Portugal_DSC01110_%2815525224057%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Quinta dos Cavalos, Numão. Vila Nova de Foz Côa.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Quinta_dos_Cavalos,_Num%C3%A3o._Vila_Nova_de_Foz_C%C3%B4a.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "TurismoenPortugal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Quinta_dos_Cavalos%2C_Num%C3%A3o._Vila_Nova_de_Foz_C%C3%B4a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "trimBottomPx": 85
+   },
+   {
+    "title": "File:Douro Valley, Portugal (53975129950).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Douro_Valley,_Portugal_(53975129950).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "flowcomm",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Douro_Valley%2C_Portugal_%2853975129950%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Quinta dos Frades - Vale do Douro - Portugal (3892909772).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Quinta_dos_Frades_-_Vale_do_Douro_-_Portugal_(3892909772).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Quinta_dos_Frades_-_Vale_do_Douro_-_Portugal_%283892909772%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Porto, Portugal (54563005147).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Porto,_Portugal_(54563005147).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "Bit Boy from san francisco, usa",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Porto%2C_Portugal_%2854563005147%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Douro Valley, Portugal (53973810202).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Douro_Valley,_Portugal_(53973810202).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "flowcomm",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Douro_Valley%2C_Portugal_%2853973810202%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Douro Valley, Portugal (53975017899).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Douro_Valley,_Portugal_(53975017899).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "flowcomm",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Douro_Valley%2C_Portugal_%2853975017899%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Douro Valley, Portugal (53973810162).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Douro_Valley,_Portugal_(53973810162).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "flowcomm",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Douro_Valley%2C_Portugal_%2853973810162%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Espelho no rio.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Espelho_no_rio.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Miguel Proença",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Espelho_no_rio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Vinha Quinta dos Murças VV47.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vinha_Quinta_dos_Mur%C3%A7as_VV47.jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "artist": "EsporaoWorld",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Vinha_Quinta_dos_Mur%C3%A7as_VV47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:InterRegional Miradouro Porto - Pocinho (51710879111).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:InterRegional_Miradouro_Porto_-_Pocinho_(51710879111).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "André Marques 432 from Madrid",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/InterRegional_Miradouro_Porto_-_Pocinho_%2851710879111%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Rio Douro em Portugal DSC01115 (15525175097).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rio_Douro_em_Portugal_DSC01115_(15525175097).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Gerry Labrijn from London, UK",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Rio_Douro_em_Portugal_DSC01115_%2815525175097%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Rio Douro em Portugal DSC01174 (15095727944).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rio_Douro_em_Portugal_DSC01174_(15095727944).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Gerry Labrijn from London, UK",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Rio_Douro_em_Portugal_DSC01174_%2815095727944%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Rio Douro em Portugal DSC01327 (15531872150).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Rio_Douro_em_Portugal_DSC01327_(15531872150).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Gerry Labrijn from London, UK",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Rio_Douro_em_Portugal_DSC01327_%2815531872150%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Quinta do Tedo - Vale do Rio Douro - Portugal (6112771821).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Quinta_do_Tedo_-_Vale_do_Rio_Douro_-_Portugal_(6112771821).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Quinta_do_Tedo_-_Vale_do_Rio_Douro_-_Portugal_%286112771821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "trimBottomPx": 55
+   },
+   {
+    "title": "File:Quinta dos Frades - Vale do Rio Douro - Portugal (6780739846).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Quinta_dos_Frades_-_Vale_do_Rio_Douro_-_Portugal_(6780739846).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Quinta_dos_Frades_-_Vale_do_Rio_Douro_-_Portugal_%286780739846%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "trimBottomPx": 60
+   }
+  ],
+  "vinho-verde": [
+   {
+    "title": "File:Beira, vinho verde.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Beira,_vinho_verde.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "https://www.flickr.com/photos/fotos_dos_ornelas/582218357/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Beira%2C_vinho_verde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Vinhas Tibaes.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Vinhas_Tibaes.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Joseolgon",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Vinhas_Tibaes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:ArcozeloPTL Stone fence.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:ArcozeloPTL_Stone_fence.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Xauxa Håkan Svensson",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/ArcozeloPTL_Stone_fence.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Pessoas com os cestos das vindimas do vinho verde.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Pessoas_com_os_cestos_das_vindimas_do_vinho_verde.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "Feliciano Guimarães",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Pessoas_com_os_cestos_das_vindimas_do_vinho_verde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Tamega Vineyards (30013411800).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamega_Vineyards_(30013411800).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "FF Mira",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Tamega_Vineyards_%2830013411800%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Pálacio de Brejoeira - Vinhedo (48704326493).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:P%C3%A1lacio_de_Brejoeira_-_Vinhedo_(48704326493).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "Halley Oliveira from Guimarães, Portugal",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/P%C3%A1lacio_de_Brejoeira_-_Vinhedo_%2848704326493%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Tamega Vineyards (30013413250).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamega_Vineyards_(30013413250).jpg",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "artist": "FF Mira",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Tamega_Vineyards_%2830013413250%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Viñedos y viñas (6424736595).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_y_vi%C3%B1as_(6424736595).jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "José Antonio Gil Martínez from Vigo, Spain",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Vi%C3%B1edos_y_vi%C3%B1as_%286424736595%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+   },
+   {
+    "title": "File:Cestos das vindimas do vinho verde.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Cestos_das_vindimas_do_vinho_verde.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "Feliciano Guimarães",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Cestos_das_vindimas_do_vinho_verde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
    }
   ]
  }
