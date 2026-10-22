@@ -1,0 +1,24 @@
+# Germany prep (22 Oct 2026, issue #149, decisions #71-#78)
+
+Data and research only: no `src/`, `content/`, shared tools or guide runs. Two Sonnet one-shot helpers (~0.11M and ~0.10M [V, task usage]).
+Detail: `l3-table.md` (WSET names, eAmbrosia), `licences.md`, `specs-outlines.md` (Mosel and Rheingau).
+
+## Findings
+- WSET L3 names 32 German terms [V]: 7 Anbaugebiete (no Ahr, Mittelrhein, Württemberg, Hessische Bergstraße, Saale-Unstrut, Sachsen),
+  9 villages, law terms, grapes. No Bereich or Einzellage. #72 (all 13) stands: the other 6 are text-light places.
+- eAmbrosia: 19 German wine PDOs [V]; the 6 beyond the 13 are single-vineyard PDOs (Bürgstadter Berg, Monzinger Niederberg,
+  Uhlen Blaufüsser Lay, Uhlen Laubach, Uhlen Roth Lay, Würzburger Stein-Berg). Plan: zones inside their Anbaugebiet (#74) [A, owner to confirm].
+- Mosel: spec BLE AM04 (approved 5 Dec 2025, OJ C/2026/1628), 12 pp, delimited by 199 Gemarkungen [V]. Outline: LWK RLP WFS
+  (geodaten.lwk-rlp.de, dl-de/by-2-0) layer `gu`, 118.8 km2 dissolved, 48 invalid polygons to repair; `weinlagen_recht` 462 Einzellagen [V].
+  Raw 12.7 MB; simplified 40 m = 610 KB and -8% area: too heavy and too lossy, needs a per-place file or a better simplify.
+- RLP Einzellagen also as LGB-RLP dataset BFD5W, dl-de/by-2-0 per its metadata (open.rlp.de says CC0: take the stricter) [V].
+- Rheingau: 2019 spec (12 towns), first amendment BAnz 9 Jun 2026 lists 32 Gemarkungen [V]. No official outline found; Hessen and
+  BKG hosts refused the helpers (403) [V]. Route: the 32 Gemarkungen from Hessen's ALKIS or BKG once reachable.
+- `extract.py` keeps every page of all German texts [V]; Rheingau amended spec could STOP at "11. Namen und Anschrift der Behörde" (p18).
+- Licences: Hessen DGM/DOP open by law [V, family]; BKG VG250 dl-de/by-2-0 [R credit]; BGR GÜK250 GeoNutzV [V metadata]; BW blocked; Bayern no Lagen layer.
+
+## Open
+- Owner: `data/raw` is missing in the main checkout and the worktree links point to it; downloads sit in `/private/tmp/claude-501/de/`
+  (lost on reboot). Make `data/raw` a real folder in the main checkout (git-ignored) and move them to `data/raw/countries/de/`.
+- Owner: confirm the 6 single-vineyard PDOs as zones (#74), not places.
+- Pilot: Rheingau outline source; Mosel outline size; Hessen and BKG hosts from a browser.
