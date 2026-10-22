@@ -37,6 +37,7 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
   const [active, setActive] = useState(0);
   const [moved, setMoved] = useState(false);
   const [creditOpen, setCreditOpen] = useState(false);
+  const [fullKey, setFullKey] = useState('');
   const [height, setHeight] = useState(STORY_EXAGGERATION);
   const locBox = useRef<SVGRectElement>(null);
   const locDot = useRef<SVGCircleElement>(null);
@@ -176,25 +177,34 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
   const label = isRest ? place.name : step.chip ?? stopOf(guide, step)?.label ?? place.name;
   const parts = creditParts(credit.shown, credit.imagery, height);
 
-  const slopeOn = !!storyFiles(story.id).slope;
+  // The slope key is in the credit line only where the key strip does not show it (steep stops show it in the strip).
+  const slopeOn = !!storyFiles(story.id).slope && !(!isRest && step.measure?.kind === 'steep');
+  // Phone: the strip carries short names; the open panel gives the full ones (read back from the strip's own items).
+  useEffect(() => {
+    const items = [...(mapEl.current?.querySelectorAll<HTMLElement>('.story-legend > span') ?? [])];
+    setFullKey(items.map((e) => e.dataset.full ?? e.textContent ?? '').filter(Boolean).join(' · '));
+  }, [credit, active]);
 
   return (
     <aside className="pg-tourmap" ref={wrap} aria-label={t.mapLabel} data-step={isRest ? 'rest' : step.id}>
       <div className="pg-tourmap-in">
         <div className="story-map" ref={mapEl} />
         <p className="story-chip">{label}</p>
-        <div className="story-exag" role="group" aria-label={t.terrainHeight}>
-          <span>{t.terrainHeight}</span>
-          {[STORY_EXAGGERATION, 1.3].map((k) => <button key={k} type="button" aria-pressed={height === k} onClick={() => setHeightK(k)}>×{k.toFixed(1)}</button>)}
-        </div>
         {moved && <button type="button" className="story-recentre" onClick={recentre}>{t.recentre}</button>}
         <svg className="story-loc" viewBox={`-3 -3 ${locator.width + 6} ${locator.height + 6}`} role="img" aria-label={t.locator}>
           <path d={locator.path} /><rect ref={locBox} className="lbox" width="4" height="4" /><circle ref={locDot} className="ldot" r="3" />
         </svg>
-        <p className={creditOpen ? 'story-credit open' : 'story-credit'}>
+        <div className={creditOpen ? 'story-panel open' : 'story-panel'}>
+          <div className="story-info" role="group" aria-label={t.terrainHeight} hidden={!creditOpen}>
+            <span>{t.terrainHeight}</span>
+            {[STORY_EXAGGERATION, 1.3].map((k) => <button key={k} type="button" aria-pressed={height === k} onClick={() => setHeightK(k)}>×{k.toFixed(1)}</button>)}
+          </div>
+          {fullKey && <p className="story-keyfull">{fullKey}</p>}
+          <p className={creditOpen ? 'story-credit open' : 'story-credit'}>
           {slopeOn && <><i className="sw" aria-hidden="true" />{t.slopeKey} · </>}
           {parts.map((p, i) => <span key={i}>{i > 0 && ' · '}<span className="long">{p.long}</span><span className="short">{p.short}</span></span>)}
         </p>
+        </div>
       </div>
     </aside>
   );
