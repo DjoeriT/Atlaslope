@@ -79,3 +79,48 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   Builder total for this mock thread ~125K [V].
 - Version 7 (owner: "Remove the credit line, or make it way smaller"): not removed (CC BY-SA and the standing photo-credit rule need it visible);
   made one short line at 8px: "Esri, Vantor · PNOA © IGN · Photos: Colsandsol, Mentxuwiki CC BY-SA 4.0, Bea.miau CC0, cropped". Edited by LeadBot directly.
+
+## Build brief (owner asked for it here, 22 Oct 2026)
+Mock source copied out of the scratchpad to `mocks/brand-photo-merge/` in the main folder (git-ignored: `index.html`, `build.py`, `prep.py`, `shots/`).
+The approved state is version 7 of https://claude.ai/artifact/S7cF1j6x58zExZB7t5RZFg, option B3 [O].
+
+**What to build (one slice, home hero only).**
+- Three framed prints over the lower part of the home map hero: rioja-c18, rioja-c06, rioja-c14 from `mocks/brand-photos/picks.json`.
+  4:3 crops, champagne mat, soft shadow, 6px corners, no text on the photos.
+- The baked-in Rioja guide card on the hero map is hidden while the prints show.
+- The map's own credit line names the three print photos in place of the card photos. Keep it one short line: author, licence and "cropped".
+- Phone (400 px): check the prints are still readable (they were ~110 px each in the mock [A]). If they are not, show fewer, not smaller.
+- Not in this slice: the Rioja guide opening and the Priorat atlas card from the mock. The dark gallery is parked, so "NO dark mode" stays.
+
+**Changes that land before or during the build. Check these first, in this order.**
+1. `git fetch -q` and `git merge origin/main` into the new branch. Re-read only what changed in `src/home/`, `src/map/createMap.ts`,
+   `data/photos.json` and `src/home/photoCrops.json` (`git diff --stat <base> origin/main -- <paths>`).
+2. Open PR #214 (Portugal batch 1: country pages /es/ and /pt/, Guides as a country index) touches `src/home/guideCount.ts`, `home.css`,
+   `guides.ts`, `photoCrops.json` and `src/map/createMap.ts` [V]. Those are the same files this slice touches.
+   Wait until #214 is merged, then merge main. If it is still open, ask the owner one line: wait, or build on top of `origin/claude/guides-pt-1`.
+3. New countries (Portugal now; France and Italy prep merged on main [V]). With them:
+   - Is the home hero still Spain's map with the Rioja card? `SHOWN_COUNTRIES` and `BAND_FEATURED` in `guideCount.ts` decide it.
+     If home now opens on a country choice or on another place, the three Rioja prints no longer match the map under them. Stop and show the owner a screenshot.
+   - The Atlas cover (option E1, on main) is a separate screen: no prints there.
+   - Keep the print code place-agnostic: the hero place id picks its prints from data, so Portugal or France can get theirs later without a code change.
+     Only Rioja's three are filled now. Other places show no prints rather than borrowed ones.
+4. Other open PRs at the time of this brief: #211 (auto-merge rule, docs) and #210 (France WSET names). Neither touches home [A]. Run `gh pr list` again before the first edit.
+
+**Photo route (rules in CLAUDE.md, "Photos hard rule").**
+- Add the three photos to `data/photos.json` (author, licence, Commons page, "cropped and resized") and to `public/photos/` at a hero size (about 1200 px wide;
+  the current 800 px is too small). Originals are in `mocks/brand-photos/originals/` (main folder) on the owner's Mac.
+- Check each crop against its original with `Tools/guides/crop_sheet.mjs` and record it in `src/home/photoCrops.json`. The unit test fails without it.
+- Commons is already in `data/SOURCES.md`. Nothing new there unless the build adds a source.
+
+**Checks and route.**
+- A new screen element with photo credits, so ReviewBot runs (credit visibility is a licence question).
+- `npm test`, the home UI specs only, `npm run build`. Screenshots at 1440 and 400 go to the owner before the PR. Remind him to hard-reload (Cmd+Shift+R).
+- PR on a new `claude/home-photo-prints` branch off `origin/main`, not on `claude/brand-photos`. This branch holds the tools and handoffs only.
+  Bring `Tools/brand/` and this handoff along by merging `claude/brand-photos` in, or open a small docs PR for it first.
+
+**Estimate [A, from measured numbers in PROJECT.md: ~140K base context per call].** About 25-35 calls in the main session (~4-5M re-read, ~0.3M new)
+plus one Sonnet builder (~150K) and ReviewBot (~100K). Pilot nothing: it is one slice.
+
+**Still open for the owner.**
+- Priorat c02, c11, c14, c16 and c17 may show DO Montsant vines. This does not block this slice (Rioja only).
+- The dark gallery direction is parked. It would reopen "NO dark mode" if it comes back.
