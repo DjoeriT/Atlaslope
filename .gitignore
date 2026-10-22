@@ -9,8 +9,10 @@ playwright-report/
 test-results/
 .DS_Store
 
-# Raw downloads stay out; only processed files in data/ are committed
-data/raw/
+# Raw downloads stay out; only processed files in data/ are committed. No trailing slash: "data/raw/" matched only a folder, so a
+# worktree's symlink named data/raw was committed (Portugal batch 1, #214) and a checkout of main then replaced the owner's raw
+# folder with it (22 Oct 2026). tests/unit/file-names.test.ts guards it.
+data/raw
 
 # Claude: share agents, settings, skills and hooks; keep personal state out
 .claude/*
