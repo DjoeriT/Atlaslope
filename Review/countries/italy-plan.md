@@ -75,5 +75,6 @@ Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58).
 - Pilot guides: 2 x 0.75M = ~1.5M, about 90 percent re-read (Ebro split [V]).
 - Pilot engineering (disciplinari source, outlines, regions level, layers): ~5-10M [A]; the Portugal pilot spent 18.9M re-read,
   mostly tooling [V]; the country model is paid, so Italy should be lower. Hard stop at 1.5x and report.
-- WSET L3 list: 40 x 0.75M = ~30M [V rate, A scope], region by region, about 90 percent re-read.
+- WSET L3 list: 30 places (36 if the Valpolicella and Soave names are split) x 0.75M = ~23-27M [V count 22 Oct 2026 prep, A rate],
+  region by region, about 90 percent re-read. Prep findings: `docs/handoffs/2026-10-22-italy-prep.md`.
 - This plan: one session, ~0.3M so far, almost all re-read [A, no meter read].

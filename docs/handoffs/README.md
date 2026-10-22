@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-22-italy-prep](2026-10-22-italy-prep.md): Italy rulebook source (MASAF 7z), licences, WSET L3 table (30 places), Barolo and Chianti Classico outlines, Italian text test, ISPRA email draft (#149, 22 Oct 2026)
 - [2026-10-22-atlas-cover](2026-10-22-atlas-cover.md): Atlas cover card E1 (map tour and slopes loops, countries), #country=spain, video out of the 2 MB check; clip polish open (PR #202, 22 Oct 2026)
 - [2026-10-22-portugal-pilot](2026-10-22-portugal-pilot.md): Douro and Vinho Verde outlines, sheets, guides at /pt/; Home/Guides mock A-D (C recommended); Portugal kept off Home/Guides until picked (#149, 22 Oct 2026)
 - [2026-10-22-guide-c3-build](2026-10-22-guide-c3-build.md): guide page C3, the map unfold, rule A and 13 more tours, Guides page E, map bar B; releases 64-68; one worktree per session (#148, #127, 22 Oct 2026)
