@@ -65,7 +65,22 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      # Issue #218 (22 Oct 2026, PR #210): a slow apt mirror stalled this install for ~12 of the job's 15 minutes. The browser is cached
+      # per Playwright version; the system packages still come from apt, capped at 5 minutes so a stall fails fast and can be re-run.
+      - id: pw
+        run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
+      - id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}-chromium
+      - name: Install Chromium
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        timeout-minutes: 5
+        run: npx playwright install chromium
+      - name: Install Chromium system packages
+        timeout-minutes: 5
+        run: npx playwright install-deps chromium
       - name: UI tests
         run: npx playwright test --shard=${{ matrix.shard }} --reporter=line
   # The one required check on main (owner, 20 Oct 2026): fails when any part above failed or was cancelled, passes when a docs-only PR
