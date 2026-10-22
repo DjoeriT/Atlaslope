@@ -115,3 +115,12 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#50 Imagery per country**: Portugal close-in uses DGT OrtoSat 30 cm with Esri as fallback, if a speed test passes; otherwise Esri only. Spain keeps PNOA. [O]
 - **#51 Port and Madeira**: each is its own place, using the overlap rule (#42) over Douro and Madeirense. [O]
 - Taken on the report's recommendation, reversible [A]: zones built from CAOP parish lists in each spec (as for Rioja); writers read Portuguese sources and write English; Madeira and Açores after the mainland. Source: `Review/portugal/report-first-principles.md` section 6.
+
+## Third country: France (owner, 22 Oct 2026, issue #149; plan `Review/countries/france-plan.md`)
+- **#52 France timing**: the France pilot starts after Portugal's mainland is done and #205 is merged. [O]
+- **#53 France scope**: the WSET L3 list, about 60 places, region by region; not all 386 AOPs. [O]
+- **#54 France pilot**: Chablis and Pauillac, pages at `/fr/<place>/` (#48). [O]
+- **#55 Climats as zones**: Grand and Premier Cru climats are drawn as zones inside their village AOP, from the pilot on. [O]
+- **#56 Bordeaux classifications**: a text list in the guide, no map layer (they rank châteaux, not land). [O]
+- **#57 France licences**: INAO re-use terms read and a BRGM email drafted for the owner to send, before the pilot ships. [O]
+- **#58 France outlines "for information"**: said in the credits line; INAO's plans portal is the only binding map. [O]
