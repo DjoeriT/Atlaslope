@@ -33,6 +33,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     ],
     study: { note: 'Not yet for Portugal.', link: false },
   },
+  // No photos yet: the card and page show no mosaic until they are added (France photo pass, #149).
+  france: {
+    intro: 'From Champagne to the Mediterranean.',
+    cardPhotos: [],
+    blocks: [],
+    study: { note: 'Not yet for France.', link: false },
+  },
 };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -52,6 +59,7 @@ export const countryPhotoKeys = (list: GuideList): string[] => [...new Set(list.
 
 /** One lead square and four small ones, as in the mock. */
 const mosaic = (keys: string[], list: GuideList, root: string, cls = 'mosaic') => {
+  if (!keys.length) return ''; // a country whose photos have not landed yet (France)
   const sq = (k: string, sizes: string, big = false) => `<span class="sqbox${big ? ' big' : ''}">${photoImg(k, list.photos, sizes, true, true, undefined, root)}</span>`;
   return `<div class="${cls}">${sq(keys[0], '(max-width:700px) 50vw, 320px', true)}${keys.slice(1, 5).map((k) => sq(k, '(max-width:700px) 25vw, 160px')).join('')}</div>`;
 };

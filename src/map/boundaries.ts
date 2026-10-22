@@ -20,7 +20,7 @@ export function buildBoundaries(places: PlaceRow[], dops: Collection, overrides:
   }
   for (const f of added.features) {
     const p = byId.get(String(f.properties.id));
-    if (p) features.push(shape(p, f.geometry));
+    if (p && p.kind !== 'zone') features.push(shape(p, f.geometry)); // zones (France's climats) go to the zones source, zonesOf in focus.ts
   }
   return { type: 'FeatureCollection', features };
 }

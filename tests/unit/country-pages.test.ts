@@ -1,7 +1,9 @@
-import { readFileSync } from 'node:fs';
+import { copyFileSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { COUNTRIES } from '../../src/countries';
-import { COUNTRY_PAGES, countryStats, fillCountryPage, fillGuidesIndex, fillHome } from '../../src/home/countryPages';
+import { COUNTRY_PAGES, countryPageKeys, countryStats, fillCountryPage, fillGuidesIndex, fillHome } from '../../src/home/countryPages';
 import { guideRows, storyCount } from '../../src/home/guideCount';
 
 // Option A of mocks/countries-structure.html (owner 22 Oct 2026): country cards on Home, a page per country, Guides as the country index.
@@ -14,10 +16,11 @@ const line = (s: { regions: unknown[]; guides: number }) => `${s.regions.length}
 const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
 describe('country structure', () => {
-  it('has both countries, each with config for its card, page and Study note', () => {
-    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal']);
+  it('has the three countries, each with config for its card, page and Study note', () => {
+    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france']);
     for (const s of stats) {
       expect(COUNTRIES[s.id].code).toBe(s.code);
+      if (s.id === 'france') continue; // its photos and guides land with the pilot's guides (#149)
       expect(COUNTRY_PAGES[s.id].cardPhotos).toHaveLength(5);
       expect(s.guides).toBeGreaterThan(0);
     }
@@ -37,8 +40,9 @@ describe('Home: two equal country cards', () => {
       const card = home.split('<div class="cc">').find((c) => c.includes(`<h3>${s.name}</h3>`))!.split('</div><div class="cc">')[0];
       expect(card).toContain(`<p class="cnt">${line(s)}</p>`);
       expect(card).toContain(`<a class="btn a" href="${s.code}/">Open ${s.name}</a>`);
-      expect(count(card, /<span class="sqbox/g)).toBe(5);
-      expect(count(card, /<span class="sqbox big">/g)).toBe(1);
+      const photos = COUNTRY_PAGES[s.id].cardPhotos.length ? 1 : 0; // France has none yet: no mosaic, no broken tiles
+      expect(count(card, /<span class="sqbox/g)).toBe(5 * photos);
+      expect(count(card, /<span class="sqbox big">/g)).toBe(photos);
     }
   });
   it('counts the places of all countries', () => {
@@ -78,7 +82,7 @@ describe('country pages', () => {
       expect(p).toContain(line(s));
       expect(p).toContain(`href="../atlas/#country=${s.id}">See ${s.name} on the atlas</a>`);
       expect(count(p, /<section class="region"/g)).toBe(s.regions.length);
-      expect(count(p, /<p class="credit">Photos /g)).toBe(1);
+      expect(count(p, /<p class="credit">Photos /g)).toBe(countryPageKeys(list, s.id).length ? 1 : 0);
     }
   });
   it('gives Spain a Study link and Portugal an honest "not yet"', () => {
@@ -88,7 +92,31 @@ describe('country pages', () => {
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);
-    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g)).toBe(bare.length);
+    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g)).toBe(bare.length);
     expect(pages.portugal).toContain('href="../pt/douro/"');
+  });
+});
+
+describe('France (pilot, decisions #52-#58)', () => {
+  // The pilot's two guides are written apart from this wiring: two stand-ins show what /fr/ draws once they land.
+  const dir = mkdtempSync(join(tmpdir(), 'guides-'));
+  for (const f of readdirSync('content/guides')) copyFileSync(`content/guides/${f}`, join(dir, f));
+  for (const id of ['chablis', 'pauillac']) writeFileSync(join(dir, `${id}.json`), JSON.stringify({ id, minutes: 2 }));
+  const withFr = guideRows({ dir });
+  const page = fillCountryPage(template, withFr, 'france');
+  it('is a country with real place paths and its own WSET course', () => {
+    expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
+    expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
+  });
+  it('renders /fr/ with two place tiles, no photos yet, and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(2);
+    expect(count(page, /Photos soon/g)).toBe(2);
+    expect(page).toContain('href="../fr/chablis/"');
+    expect(page).toContain('href="../fr/pauillac/"');
+    expect(page).toContain('Not yet for France.');
+    expect(page).not.toContain('Open Study');
+    expect(page).not.toContain('<p class="credit">');
+    expect(page).toContain('<h2 id="r-fr-burgundy">Burgundy</h2>');
+    expect(page).toContain('<h2 id="r-fr-bordeaux">Bordeaux</h2>');
   });
 });
