@@ -170,3 +170,11 @@ test('measured charts read against all of Spain, and a zone against its appellat
   await open(page, '#place=rioja-alta&page');
   await expect(page.locator('#weather .pg-compare').first().locator('dt')).toHaveText(['Rioja Alta', 'Rioja', 'All of Spain']);
 });
+
+// The viewer behind "All N photos" on a guide without a tour (the coverage Rioja's hero gave before the map card, owner 22 Oct 2026).
+test('Cebreros shows one frame of its three photos, and all three in the viewer', async ({ page }) => {
+  await open(page, '#place=cebreros&page');
+  await page.getByRole('button', { name: 'All 3 photos' }).click();
+  await expect(page.getByRole('dialog', { name: 'Photos of Cebreros' }).locator('.count')).toHaveText('1 / 3');
+  await expect(page.locator('.pg-hero .pg-credits')).toContainText('Photos:');
+});
