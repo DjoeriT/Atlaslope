@@ -441,7 +441,7 @@ export const strings = {
     /** Under a stop's measured line in the guide (what the figure is and where the terrain comes from). */
     measuredBy: 'Measured by AtlaSlope · Terrain: Mapzen',
     stopOf: (k: number, n: number) => `Stop ${k} of ${n}`,
-    hide: 'Hide map',
+    close: 'Close the map',
     mapLabel: 'Map that follows the text',
     recentre: 'Back to this stop',
     /** A measure of a zone shown at a stop framed on the whole region ("In Rioja Alta, half the land..."). */

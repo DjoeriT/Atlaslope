@@ -115,10 +115,12 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
-  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to the "Read with the map" card on hide. A pending fly is dropped on hide.
+  // Focus follows the map: to "Close the map" in the band on open, back to the "Read with the map" card on hide. A pending fly is dropped on hide.
   const hadTour = useRef(tour);
+  const closeBtn = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
+    if (tour) closeBtn.current?.focus({ preventScroll: true });
+    else if (hadTour.current) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
     hadTour.current = tour;
   }, [tour]);
   const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
@@ -420,7 +422,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name}
+        bar={tour && <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>} />
       <div className="pg-body">
       <div className="pg-listing">
         <div className="pg-hero">
@@ -630,7 +633,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       </div>
       {tour && guide && story && (
         <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onHide={hideMap} />
+          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} />
         </Suspense>
       )}
       </div>
