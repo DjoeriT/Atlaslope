@@ -157,6 +157,11 @@
      "id": "fr-burgundy",
      "name": "Burgundy",
      "order": 3
+    },
+    {
+     "id": "fr-loire",
+     "name": "Loire",
+     "order": 6
     }
    ]
   }
@@ -3230,8 +3235,8 @@
     "medoc",
     "bordeaux"
    ],
-   "northSouth": 26,
-   "courseOrder": 26
+   "northSouth": 44,
+   "courseOrder": 44
   },
   {
    "id": "bordeaux",
@@ -3250,8 +3255,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 33,
-   "courseOrder": 33
+   "northSouth": 51,
+   "courseOrder": 51
   },
   {
    "id": "bordeaux-superieur",
@@ -3270,8 +3275,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 34,
-   "courseOrder": 34
+   "northSouth": 52,
+   "courseOrder": 52
   },
   {
    "id": "cotes-de-bordeaux",
@@ -3293,8 +3298,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 38,
-   "courseOrder": 38
+   "northSouth": 56,
+   "courseOrder": 56
   },
   {
    "id": "entre-deux-mers",
@@ -3316,8 +3321,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 35,
-   "courseOrder": 35
+   "northSouth": 53,
+   "courseOrder": 53
   },
   {
    "id": "medoc",
@@ -3339,8 +3344,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 24,
-   "courseOrder": 24
+   "northSouth": 42,
+   "courseOrder": 42
   },
   {
    "id": "haut-medoc",
@@ -3363,8 +3368,8 @@
     "medoc",
     "bordeaux"
    ],
-   "northSouth": 28,
-   "courseOrder": 28
+   "northSouth": 46,
+   "courseOrder": 46
   },
   {
    "id": "saint-estephe",
@@ -3388,8 +3393,8 @@
     "medoc",
     "bordeaux"
    ],
-   "northSouth": 25,
-   "courseOrder": 25
+   "northSouth": 43,
+   "courseOrder": 43
   },
   {
    "id": "margaux",
@@ -3413,8 +3418,8 @@
     "medoc",
     "bordeaux"
    ],
-   "northSouth": 29,
-   "courseOrder": 29
+   "northSouth": 47,
+   "courseOrder": 47
   },
   {
    "id": "saint-julien",
@@ -3438,8 +3443,8 @@
     "medoc",
     "bordeaux"
    ],
-   "northSouth": 27,
-   "courseOrder": 27
+   "northSouth": 45,
+   "courseOrder": 45
   },
   {
    "id": "graves",
@@ -3461,8 +3466,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 37,
-   "courseOrder": 37
+   "northSouth": 55,
+   "courseOrder": 55
   },
   {
    "id": "pessac-leognan",
@@ -3485,8 +3490,8 @@
     "graves",
     "bordeaux"
    ],
-   "northSouth": 36,
-   "courseOrder": 36
+   "northSouth": 54,
+   "courseOrder": 54
   },
   {
    "id": "saint-emilion",
@@ -3508,8 +3513,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 31,
-   "courseOrder": 31
+   "northSouth": 49,
+   "courseOrder": 49
   },
   {
    "id": "saint-emilion-grand-cru",
@@ -3531,8 +3536,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 32,
-   "courseOrder": 32
+   "northSouth": 50,
+   "courseOrder": 50
   },
   {
    "id": "pomerol",
@@ -3554,8 +3559,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 30,
-   "courseOrder": 30
+   "northSouth": 48,
+   "courseOrder": 48
   },
   {
    "id": "sauternes",
@@ -3577,8 +3582,8 @@
    "alsoWithin": [
     "bordeaux"
    ],
-   "northSouth": 40,
-   "courseOrder": 40
+   "northSouth": 58,
+   "courseOrder": 58
   },
   {
    "id": "barsac",
@@ -3601,8 +3606,8 @@
     "sauternes",
     "bordeaux"
    ],
-   "northSouth": 39,
-   "courseOrder": 39
+   "northSouth": 57,
+   "courseOrder": 57
   },
   {
    "id": "bourgogne",
@@ -3621,8 +3626,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 10,
-   "courseOrder": 10
+   "northSouth": 28,
+   "courseOrder": 28
   },
   {
    "id": "cote-de-nuits-villages",
@@ -3644,8 +3649,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 2,
-   "courseOrder": 2
+   "northSouth": 14,
+   "courseOrder": 14
   },
   {
    "id": "gevrey-chambertin",
@@ -3667,8 +3672,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 3,
-   "courseOrder": 3
+   "northSouth": 17,
+   "courseOrder": 17
   },
   {
    "id": "vougeot",
@@ -3690,8 +3695,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 4,
-   "courseOrder": 4
+   "northSouth": 19,
+   "courseOrder": 19
   },
   {
    "id": "vosne-romanee",
@@ -3713,8 +3718,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 5,
-   "courseOrder": 5
+   "northSouth": 21,
+   "courseOrder": 21
   },
   {
    "id": "nuits-saint-georges",
@@ -3736,8 +3741,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 6,
-   "courseOrder": 6
+   "northSouth": 24,
+   "courseOrder": 24
   },
   {
    "id": "cote-de-beaune-villages",
@@ -3759,8 +3764,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 14,
-   "courseOrder": 14
+   "northSouth": 32,
+   "courseOrder": 32
   },
   {
    "id": "aloxe-corton",
@@ -3782,8 +3787,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 7,
-   "courseOrder": 7
+   "northSouth": 25,
+   "courseOrder": 25
   },
   {
    "id": "beaune",
@@ -3805,8 +3810,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 8,
-   "courseOrder": 8
+   "northSouth": 26,
+   "courseOrder": 26
   },
   {
    "id": "pommard",
@@ -3828,8 +3833,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 9,
-   "courseOrder": 9
+   "northSouth": 27,
+   "courseOrder": 27
   },
   {
    "id": "volnay",
@@ -3851,8 +3856,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 11,
-   "courseOrder": 11
+   "northSouth": 29,
+   "courseOrder": 29
   },
   {
    "id": "meursault",
@@ -3875,8 +3880,8 @@
     "cote-de-beaune-villages",
     "bourgogne"
    ],
-   "northSouth": 12,
-   "courseOrder": 12
+   "northSouth": 30,
+   "courseOrder": 30
   },
   {
    "id": "puligny-montrachet",
@@ -3899,8 +3904,8 @@
     "cote-de-beaune-villages",
     "bourgogne"
    ],
-   "northSouth": 13,
-   "courseOrder": 13
+   "northSouth": 31,
+   "courseOrder": 31
   },
   {
    "id": "chassagne-montrachet",
@@ -3923,8 +3928,8 @@
     "cote-de-beaune-villages",
     "bourgogne"
    ],
-   "northSouth": 15,
-   "courseOrder": 15
+   "northSouth": 33,
+   "courseOrder": 33
   },
   {
    "id": "rully",
@@ -3946,8 +3951,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 16,
-   "courseOrder": 16
+   "northSouth": 34,
+   "courseOrder": 34
   },
   {
    "id": "mercurey",
@@ -3969,8 +3974,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 17,
-   "courseOrder": 17
+   "northSouth": 35,
+   "courseOrder": 35
   },
   {
    "id": "givry",
@@ -3992,8 +3997,8 @@
    "alsoWithin": [
     "bourgogne"
    ],
-   "northSouth": 18,
-   "courseOrder": 18
+   "northSouth": 36,
+   "courseOrder": 36
   },
   {
    "id": "montagny",
@@ -4012,8 +4017,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 19,
-   "courseOrder": 19
+   "northSouth": 37,
+   "courseOrder": 37
   },
   {
    "id": "macon",
@@ -4032,8 +4037,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 20,
-   "courseOrder": 20
+   "northSouth": 38,
+   "courseOrder": 38
   },
   {
    "id": "pouilly-fuisse",
@@ -4056,8 +4061,8 @@
     "macon",
     "bourgogne"
    ],
-   "northSouth": 22,
-   "courseOrder": 22
+   "northSouth": 40,
+   "courseOrder": 40
   },
   {
    "id": "saint-veran",
@@ -4080,8 +4085,8 @@
     "macon",
     "bourgogne"
    ],
-   "northSouth": 21,
-   "courseOrder": 21
+   "northSouth": 39,
+   "courseOrder": 39
   },
   {
    "id": "cremant-de-bourgogne",
@@ -4100,8 +4105,393 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 41,
+   "courseOrder": 41
+  },
+  {
+   "id": "muscadet",
+   "name": "Muscadet",
+   "official": "Muscadet",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0497",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -1.3364,
+    47.161
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 22,
+   "courseOrder": 22
+  },
+  {
+   "id": "muscadet-sevre-et-maine",
+   "name": "Muscadet Sèvre et Maine",
+   "official": "Muscadet Sèvre et Maine",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0494",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -1.3374,
+    47.16
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "muscadet"
+   ],
    "northSouth": 23,
    "courseOrder": 23
+  },
+  {
+   "id": "anjou",
+   "name": "Anjou",
+   "official": "Anjou",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0820",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5344,
+    47.2959
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 9,
+   "courseOrder": 9
+  },
+  {
+   "id": "coteaux-du-layon",
+   "name": "Coteaux du Layon",
+   "official": "Coteaux du Layon",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0826",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.6129,
+    47.3107
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "anjou"
+   ],
+   "northSouth": 5,
+   "courseOrder": 5
+  },
+  {
+   "id": "savennieres",
+   "name": "Savennières",
+   "official": "Savennières",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0158",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.6544,
+    47.3901
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "anjou"
+   ],
+   "northSouth": 3,
+   "courseOrder": 3
+  },
+  {
+   "id": "saumur",
+   "name": "Saumur",
+   "official": "Saumur",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0260",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.4336,
+    47.2147
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "anjou"
+   ],
+   "northSouth": 18,
+   "courseOrder": 18
+  },
+  {
+   "id": "saumur-champigny",
+   "name": "Saumur-Champigny",
+   "official": "Saumur-Champigny",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0147",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.0251,
+    47.2248
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "saumur",
+    "anjou"
+   ],
+   "northSouth": 16,
+   "courseOrder": 16
+  },
+  {
+   "id": "vouvray",
+   "name": "Vouvray",
+   "official": "Vouvray",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0146",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    0.8182,
+    47.4351
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "touraine"
+   ],
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "touraine",
+   "name": "Touraine",
+   "official": "Touraine",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0501",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    1.1954,
+    47.3102
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 6,
+   "courseOrder": 6
+  },
+  {
+   "id": "bourgueil",
+   "name": "Bourgueil",
+   "official": "Bourgueil",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0729",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    0.1388,
+    47.2918
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "touraine"
+   ],
+   "northSouth": 13,
+   "courseOrder": 13
+  },
+  {
+   "id": "chinon",
+   "name": "Chinon",
+   "official": "Chinon",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0395",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    0.2753,
+    47.1729
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "touraine"
+   ],
+   "northSouth": 20,
+   "courseOrder": 20
+  },
+  {
+   "id": "sancerre",
+   "name": "Sancerre",
+   "official": "Sancerre",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0194",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    2.8101,
+    47.3299
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 4,
+   "courseOrder": 4
+  },
+  {
+   "id": "pouilly-fume",
+   "name": "Pouilly-Fumé",
+   "official": "Pouilly-Fumé",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0824",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    2.953,
+    47.3077
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 7,
+   "courseOrder": 7
+  },
+  {
+   "id": "menetou-salon",
+   "name": "Menetou-Salon",
+   "official": "Menetou-Salon",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0300",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    2.5279,
+    47.2271
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 15,
+   "courseOrder": 15
+  },
+  {
+   "id": "rose-danjou",
+   "name": "Rosé d’Anjou",
+   "official": "Rosé d'Anjou",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A1007",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5344,
+    47.2959
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 10,
+   "courseOrder": 10
+  },
+  {
+   "id": "cabernet-danjou",
+   "name": "Cabernet d’Anjou",
+   "official": "Cabernet d'Anjou",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A1005",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5344,
+    47.2959
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 11,
+   "courseOrder": 11
+  },
+  {
+   "id": "rose-de-loire",
+   "name": "Rosé de Loire",
+   "official": "Rosé de Loire",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0150",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5345,
+    47.2958
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 12,
+   "courseOrder": 12
+  },
+  {
+   "id": "cremant-de-loire",
+   "name": "Crémant de Loire",
+   "official": "Crémant de Loire",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-loire",
+   "euFile": "PDO-FR-A0391",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5375,
+    47.2969
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 8,
+   "courseOrder": 8
   }
  ]
 }

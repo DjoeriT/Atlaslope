@@ -265,6 +265,21 @@
     "pauillac-doc:p6",
     "pauillac-doc:p8"
    ]
+  },
+  "fr-loire": {
+   "title": "Schist, chalk and flint along the river",
+   "lede": "Anjou has schist in the west and tuffeau chalk in the east. Sancerre's steep hills carry marl, limestone and flint.",
+   "from": [
+    "anjou",
+    "sancerre"
+   ],
+   "cite": [
+    "anjou-doc:p8",
+    "anjou-doc:p9",
+    "anjou-doc:p10",
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ]
   }
  },
  "places": {
@@ -1432,6 +1447,144 @@
    "cite": [
     "cremant-de-bourgogne-doc:p9",
     "cremant-de-bourgogne-doc:p11"
+   ]
+  },
+  "muscadet": {
+   "title": "Stony soils, sea breezes, one grape",
+   "cite": [
+    "muscadet-doc:p6",
+    "muscadet-doc:p7",
+    "muscadet-doc:p8"
+   ]
+  },
+  "muscadet-sevre-et-maine": {
+   "title": "Quick-warming soils on ancient rock",
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p5",
+    "muscadet-sevre-et-maine-doc:p6",
+    "muscadet-sevre-et-maine-doc:p8"
+   ]
+  },
+  "anjou": {
+   "title": "Schist in the west, chalk in the east",
+   "cite": [
+    "anjou-doc:p8",
+    "anjou-doc:p9",
+    "anjou-doc:p10"
+   ]
+  },
+  "coteaux-du-layon": {
+   "title": "Morning mists bring noble rot",
+   "cite": [
+    "coteaux-du-layon-doc:p3",
+    "coteaux-du-layon-doc:p4"
+   ]
+  },
+  "savennieres": {
+   "title": "South-facing schist above the Loire",
+   "cite": [
+    "savennieres-doc:p5",
+    "savennieres-doc:p6",
+    "savennieres-doc:p8"
+   ]
+  },
+  "saumur": {
+   "title": "Tuffeau chalk hills and cool cellars",
+   "cite": [
+    "saumur-doc:p6",
+    "saumur-doc:p8",
+    "saumur-doc:p9"
+   ]
+  },
+  "saumur-champigny": {
+   "title": "Chalky slopes, a warm dry corner",
+   "cite": [
+    "saumur-champigny-doc:p6",
+    "saumur-champigny-doc:p7"
+   ]
+  },
+  "vouvray": {
+   "title": "Chenin at its climatic limit",
+   "cite": [
+    "vouvray-doc:p6",
+    "vouvray-doc:p8"
+   ]
+  },
+  "touraine": {
+   "title": "Flint-clay and limestone by the rivers",
+   "cite": [
+    "touraine-doc:p7",
+    "touraine-doc:p8",
+    "touraine-doc:p10"
+   ]
+  },
+  "bourgueil": {
+   "title": "A south-facing chalk slope",
+   "cite": [
+    "bourgueil-doc:p5",
+    "bourgueil-doc:p6",
+    "bourgueil-doc:p7"
+   ]
+  },
+  "chinon": {
+   "title": "Tuffeau and gravel in a warm corner",
+   "cite": [
+    "chinon-doc:p6",
+    "chinon-doc:p7",
+    "chinon-doc:p8"
+   ]
+  },
+  "sancerre": {
+   "title": "Steep marl, limestone and flint",
+   "cite": [
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ]
+  },
+  "pouilly-fume": {
+   "title": "Sauvignon on marl, limestone and flint",
+   "cite": [
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p7"
+   ]
+  },
+  "menetou-salon": {
+   "title": "Marl on limestone, drying winds",
+   "cite": [
+    "menetou-salon-doc:p7",
+    "menetou-salon-doc:p8",
+    "menetou-salon-doc:p9"
+   ]
+  },
+  "rose-danjou": {
+   "title": "Poor schist and chalk, fresh rosés",
+   "cite": [
+    "rose-danjou-doc:p6",
+    "rose-danjou-doc:p7",
+    "rose-danjou-doc:p8"
+   ]
+  },
+  "cabernet-danjou": {
+   "title": "Steady schist and chalk soils",
+   "cite": [
+    "cabernet-danjou-doc:p6",
+    "cabernet-danjou-doc:p8"
+   ]
+  },
+  "rose-de-loire": {
+   "title": "A climate tempered by the Loire",
+   "cite": [
+    "rose-de-loire-doc:p7",
+    "rose-de-loire-doc:p8",
+    "rose-de-loire-doc:p9"
+   ]
+  },
+  "cremant-de-loire": {
+   "title": "Tuffeau cellars for long ageing",
+   "cite": [
+    "cremant-de-loire-doc:p8",
+    "cremant-de-loire-doc:p9",
+    "cremant-de-loire-doc:p10"
    ]
   }
  }

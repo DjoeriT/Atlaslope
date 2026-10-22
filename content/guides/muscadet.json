@@ -1,0 +1,103 @@
+{
+ "id": "muscadet",
+ "title": "Why Muscadet tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Muscadet is made from one grape, Melon, and many of its wines rest on their fine lees through at least one winter. That rest gives roundness, while mild summers near the ocean help keep the wine fresh.",
+  "cite": [
+   "muscadet-doc:p7",
+   "muscadet-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "nantes",
+   "beat": "place",
+   "title": "Slopes and meadows around Nantes",
+   "paras": [
+    "The vineyard lies south and east of the city of Nantes, close to the Atlantic coast. It spreads over 81 communes in Loire-Atlantique, Maine-et-Loire and Vendée.",
+    "Vines grow mainly on the valley slopes, from the Loire to the Sèvre and the Maine. They also ring the Goulaine marsh and Lake Grandlieu. In the valleys the vines give way to hedged meadows. The area belongs to Brittany by its history and to the Val de Loire by its position.",
+    "Nantes is an ocean port at the mouth of the Loire. Early on it became an important hub for shipping wine to the British Isles and northern Europe."
+   ],
+   "cite": [
+    "muscadet-doc:p5",
+    "muscadet-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Lake Grandlieu",
+     "point": [
+      -1.67,
+      47.09
+     ],
+     "zoom": 10,
+     "caption": "One of the large bodies of water that keep temperatures steady through the year.",
+     "cite": [
+      "muscadet-doc:p6"
+     ]
+    },
+    {
+     "label": "Goulaine marsh",
+     "point": [
+      -1.38,
+      47.2
+     ],
+     "zoom": 10,
+     "caption": "Vines sit on the slopes around the Goulaine marsh, south and east of Nantes.",
+     "cite": [
+      "muscadet-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea-air",
+   "beat": "weather",
+   "title": "Mild winters, cool summers",
+   "paras": [
+    "The climate is oceanic, with little change in temperature through the year. That comes from large bodies of water close by: the ocean and the Loire estuary, Lake Grandlieu and the Goulaine marsh.",
+    "Winters are particularly mild and summers stay cool, with sea breezes. Rain is slightly below normal while the vines grow, so sunshine is high for this latitude. Big autumn tides sometimes bring heavy showers.",
+    "Mild winters make the vine's early start even earlier. Summer sun and sea winds help protect the vines from disease. Moderate summer warmth is ideal for keeping the freshness and delicate aromas of Melon wines."
+   ],
+   "cite": [
+    "muscadet-doc:p6",
+    "muscadet-doc:p8"
+   ]
+  },
+  {
+   "id": "stony-soils",
+   "beat": "ground",
+   "title": "Stony ground over old rock",
+   "paras": [
+    "The geology is complex. Ancient mountain building laid down granite and gabbro. It also left metamorphic rocks such as gneiss and mica-schist. In places, clays and sands with pebbles cover this base.",
+    "Despite that variety, the soils are most often brown, sandy and full of stones. The vineyard map keeps strictly to open slopes long planted with vines. Its plots have free-draining soils that warm up well, hold limited water and have moderate fertility.",
+    "The coarse texture brings an early start to the vine's cycle and limits its vigour. The ground holds little water but is fractured, so roots reach deep. The vine gets moderate, steady water, which helps ripeness."
+   ],
+   "cite": [
+    "muscadet-doc:p6",
+    "muscadet-doc:p8"
+   ]
+  },
+  {
+   "id": "melon-lees",
+   "beat": "rules",
+   "title": "One grape, one white wine, a winter on the lees",
+   "paras": [
+    "Muscadet is white, dry and still. Only Melon is grown. The first written records of Melon planted under the name Muscadet date from the middle of the 17th century. After the hard winter of 1709 destroyed much of the vineyard, the frost-hardier Melon was replanted in the best sites.",
+    "Vines are planted at least 6,500 per hectare. Yields are set at 65 hl/ha. The wines show delicate aromas, mostly fruity or floral, and freshness leads the balance overall.",
+    "Sur lie is a traditional label term. The \"Nantes method\" keeps the wine on its fine lees through at least one winter, with no racking. It adds roundness and richness. With no handling and kept under carbon dioxide, the wine is shielded from oxidation. It keeps its fermentation aromas into spring and beyond. Sur lie wines are bottled in the winery where they were made, between 1 March and 30 November of the year after harvest. They may show a slight spritz from leftover carbon dioxide.",
+    "Primeur or nouveau may also appear on the label. Wines with sur lie, primeur or nouveau must show the vintage. The name Val de Loire may be added too, in letters no bigger than the appellation name."
+   ],
+   "cite": [
+    "muscadet-doc:p2",
+    "muscadet-doc:p3",
+    "muscadet-doc:p4",
+    "muscadet-doc:p5",
+    "muscadet-doc:p6",
+    "muscadet-doc:p7",
+    "muscadet-doc:p9",
+    "muscadet-doc:p10"
+   ]
+  }
+ ]
+}

@@ -108,9 +108,9 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
     expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
   });
-  it('renders /fr/ with 40 place tiles, photos where they have shipped, and an honest Study note', () => {
-    expect(count(page, /<a class="ecard"/g)).toBe(40);
-    expect(count(page, /Photos soon/g)).toBe(0); // every France place has photos now (Bordeaux and Burgundy batches shipped)
+  it('renders /fr/ with 58 place tiles, photos where they have shipped, and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(58);
+    expect(count(page, /Photos soon/g)).toBe(18); // Loire batch: photos in the next commit
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
@@ -118,5 +118,6 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(count(page, /<p class="credit">Photos /g)).toBe(1);
     expect(page).toContain('<h2 id="r-fr-burgundy">Burgundy</h2>');
     expect(page).toContain('<h2 id="r-fr-bordeaux">Bordeaux</h2>');
+    expect(page).toContain('<h2 id="r-fr-loire">Loire</h2>');
   });
 });

@@ -150,7 +150,11 @@ FR_SHIP = ["chablis", "pauillac",
            "bourgogne", "cote-de-nuits-villages", "gevrey-chambertin", "vougeot", "vosne-romanee", "nuits-saint-georges",
            "cote-de-beaune-villages", "aloxe-corton", "beaune", "pommard", "volnay", "meursault", "puligny-montrachet",
            "chassagne-montrachet", "rully", "mercurey", "givry", "montagny", "macon", "pouilly-fuisse", "saint-veran",
-           "cremant-de-bourgogne"]
+           "cremant-de-bourgogne",
+           # Loire batch (22 Oct 2026)
+           "muscadet", "muscadet-sevre-et-maine", "anjou", "coteaux-du-layon", "savennieres", "saumur", "saumur-champigny", "vouvray",
+           "touraine", "bourgueil", "chinon", "sancerre", "pouilly-fume", "menetou-salon", "rose-danjou", "cabernet-danjou",
+           "rose-de-loire", "cremant-de-loire"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 

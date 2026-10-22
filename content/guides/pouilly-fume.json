@@ -1,0 +1,121 @@
+{
+ "id": "pouilly-fume",
+ "title": "Why Pouilly-Fumé tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On the Loire, hot days and cool nights through ripening keep the wines fresh and develop their aromas. Sauvignon's local name, blanc fumé, comes from the grey bloom on its ripe berries.",
+  "cite": [
+   "pouilly-fume-doc:p6",
+   "pouilly-fume-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills above the Loire",
+   "paras": [
+    "The area stretches about 20 km along the right bank of the Loire, on the south-east edge of the Paris Basin. The land peaks at 270 m, more than 100 m above the valley floor.",
+    "Deep, branching little valleys run mostly north-east to south-west and open onto the lower Loire valley. The vines gather in 7 communes around the butte of Saint-Andelain, the highest point of the area."
+   ],
+   "cite": [
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Butte of Saint-Andelain",
+     "point": [
+      2.93,
+      47.31
+     ],
+     "zoom": 10,
+     "caption": "The highest point of the area, with the vines gathered around it.",
+     "cite": [
+      "pouilly-fume-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A river that evens things out",
+   "paras": [
+    "The climate is a degraded oceanic one, with an average of 600 mm of rain a year. The area sits sheltered from the west winds.",
+    "The Loire plays a leading role as a thermal regulator. It drains the cold air from the valleys that meet it at right angles.",
+    "Together these give the area excellent conditions for growing Sauvignon. The milder temperatures through the growing cycle bring the grapes to steady ripeness."
+   ],
+   "cite": [
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Loire at Pouilly",
+     "point": [
+      2.95,
+      47.28
+     ],
+     "zoom": 10,
+     "caption": "The river that drains the cold air from the side valleys.",
+     "cite": [
+      "pouilly-fume-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Four favoured soils",
+   "paras": [
+    "The vineyard spreads over varied rock. Four soils are favoured in particular.",
+    "Kimmeridgian marls, called terres blanches (\"white earth\"), lie in the middle of the area, in the communes of Pouilly-sur-Loire and Saint-Andelain. They are the most widespread vineyard soil, and they give powerful wines with accents of citrus.",
+    "Oxfordian limestone gives very stony soils that locals call caillottes. They are common in the north-east, and the wines are elegant with notes of white flowers.",
+    "Silex is flint residue, more or less clayey, left by a strong erosion phase in the Cretaceous. It is found mostly in the commune of Saint-Andelain. The wines are fresh, with mineral and fresh finishes.",
+    "Siliceous soils, more or less clayey, sit mainly at the western end of the area, in the commune of Tracy-sur-Loire.",
+    "Only shallow soils on often steep slopes are classed for the appellation."
+   ],
+   "cite": [
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p7"
+   ]
+  },
+  {
+   "id": "sauvignon",
+   "beat": "rules",
+   "title": "Sauvignon, and only white",
+   "paras": [
+    "Sauvignon is the only grape. The wines are dry, still whites, pale yellow to gold. They reach at least 10.5% natural alcohol and keep no more than 4 g/l of sugar.",
+    "Sauvignon quickly became the main grape early in the 20th century. In 1923 a court ruling confirmed the name Pouilly-Fumé for wines made from it. The wine may also be called Blanc Fumé de Pouilly.",
+    "Shallow, often steep plots call for close management of the vine. Vines are planted at least 6,000 per hectare, with rows up to 1.30 m apart. Yield is set at 65 hl/ha, and the upper limit is 75 hl/ha.",
+    "Pruning is Guyot simple, or short pruning on a Royat cordon. Wood chips are banned, and wines may not go above 13% total alcohol after enrichment.",
+    "A label may name a smaller place if it is a lieu-dit (a registered named plot) listed on the harvest declaration."
+   ],
+   "cite": [
+    "pouilly-fume-doc:p2",
+    "pouilly-fume-doc:p3",
+    "pouilly-fume-doc:p4",
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p6",
+    "pouilly-fume-doc:p7",
+    "pouilly-fume-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Briare, start of the canal to Paris",
+     "point": [
+      2.74,
+      47.64
+     ],
+     "zoom": 10,
+     "caption": "The Briare canal opened in 1642 and joined the Loire to the Seine, pointing the trade of Pouilly wine towards Paris.",
+     "cite": [
+      "pouilly-fume-doc:p6"
+     ]
+    }
+   ]
+  }
+ ]
+}

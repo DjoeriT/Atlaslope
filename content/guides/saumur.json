@@ -1,0 +1,123 @@
+{
+ "id": "saumur",
+ "title": "Why Saumur tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Saumur's vines grow above huge cellars dug out of tuffeau chalk. Wines are made and aged gently in such cellars, where conditions stay constant.",
+  "cite": [
+   "saumur-doc:p6",
+   "saumur-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "anjou-blanc",
+   "beat": "place",
+   "title": "White Anjou, beside the Loire",
+   "paras": [
+    "Saumur lies at the far south-west of the Paris Basin, where younger rock covers the old Armorican Massif. The area is marked by tuffeau chalk, and locals call it \"Anjou blanc\" (white Anjou). To the west, around Angers, schists mark the land, slate among them. Locals call that area \"Anjou noir\" (black Anjou).",
+    "The Loire bounds the area on the north. The Thouet valley and its tributary the Dive cross it from south to north. These rivers carved a landscape of slopes facing different ways, between 40 m and 110 m high.",
+    "Vines took the favourable exposures. Forest of oak and chestnut stays on the tops of the hills.",
+    "Ventilation chimneys rise from the middle of the vineyards. Below them are huge caves, first quarried for building stone and later used for mushrooms. Now they are used to age and store the wines."
+   ],
+   "cite": [
+    "saumur-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Saumur and the Loire",
+     "point": [
+      -0.077,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "The Loire marks the northern edge of the area. The vineyard lies on the Coteaux de Saumur, south of the town.",
+     "cite": [
+      "saumur-doc:p6",
+      "saumur-doc:p7"
+     ]
+    },
+    {
+     "label": "Puy-Notre-Dame",
+     "point": [
+      -0.2347,
+      47.1258
+     ],
+     "zoom": 11,
+     "caption": "One of the outlier hills left standing in the south-west, where the Cretaceous rock is largely worn away.",
+     "cite": [
+      "saumur-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mild-and-sheltered",
+   "beat": "weather",
+   "title": "An ocean climate with a rain shadow",
+   "paras": [
+    "The climate is oceanic. The Mauges hills to the west temper it with a foehn effect. Rain falls at 550 to 600 mm a year around Saumur, and over 800 mm on the Mauges hills. The area is sheltered from wet winds. The gap is even wider in the growing season, notably from June until harvest.",
+    "To the south the Seuil du Poitou, a low pass between hills, brings a few southern touches. Plants that surprise on the Loire grow here, holm oaks and olive trees among them.",
+    "Mean annual temperatures are fairly high, at about 12 °C. The Loire and its tributaries act as thermal regulators."
+   ],
+   "cite": [
+    "saumur-doc:p6",
+    "saumur-doc:p7"
+   ]
+  },
+  {
+   "id": "tuffeau",
+   "beat": "ground",
+   "title": "Shallow soils that warm faster",
+   "paras": [
+    "The soils formed on the different Turonian formations. They are rendzinas and brown limy soils, thicker or thinner. In places sands and clays from younger formations cover them at the tops of the slopes. They warm well and keep a moderate reserve of water. None shows signs of waterlogging.",
+    "Sitting above 40 m, these formations give the vines moderate water and moderate vigour. Under the Saumur climate, that brings the grapes to perfect ripeness and gives red and white wines with varied fruity aromas.",
+    "Growers favour shallow soils that warm faster. This gives excellent phenolic ripeness and aromatic wines."
+   ],
+   "cite": [
+    "saumur-doc:p6",
+    "saumur-doc:p8",
+    "saumur-doc:p9"
+   ]
+  },
+  {
+   "id": "chenin-and-franc",
+   "beat": "rules",
+   "title": "Two key grapes, still and sparkling",
+   "paras": [
+    "Chenin and cabernet franc are the key grapes here, for wines of every colour. The main grape list holds eight more, cabernet sauvignon and chardonnay among them. Locally, cabernet franc is called \"Breton\".",
+    "Still wines are white and red. The whites are dry and delicate, often pale yellow with green glints. Their fruit and white-flower scents are often flattering, and they feel fresh. The reds are often ruby. Their fresh nose can show red fruit such as strawberry or cherry, wrapped in spicy or lightly smoky notes. Their tannins are generally silky and supple. They are pleasant young and can age a few years to gain complexity.",
+    "Sparkling wines are white or rosé. They are made only by second fermentation in the bottle, and they rest on their lees for at least 9 months. The bubbles are fine and form long chains. The aromas very often hint at fruit and white flowers, with a note of pastry. Chenin, a late grape, has a proven aptitude here for fresh sparkling wine with fine bubbles. The same method was later applied to black grapes for a smaller output of rosé. Underground cellars help, since the work needs large spaces for storage and handling in ideal conditions.",
+    "Puy-Notre-Dame is an extra geographic name that can follow Saumur on the label. It is for red wine only, made mostly from cabernet franc. Its plots all sit on slopes with clay-limestone soils. Pruning is shorter, and double shoots must be removed. The grapes are rich enough in sugar that no enrichment is needed. The wines age until at least 1 June after the harvest to round the tannins. They are deep in colour and very structured, made to keep, with very ripe red or even black fruit. The label must show the vintage.",
+    "In the 16th century Dutch brokers, who valued how well the wines travelled by sea, made chenin's qualities known beyond the region. By 1827 the vineyard covered 10,500 hectares."
+   ],
+   "cite": [
+    "saumur-doc:p1",
+    "saumur-doc:p2",
+    "saumur-doc:p4",
+    "saumur-doc:p5",
+    "saumur-doc:p7",
+    "saumur-doc:p8",
+    "saumur-doc:p9",
+    "saumur-doc:p10",
+    "saumur-doc:p12",
+    "saumur-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Turquant",
+     "point": [
+      0.03,
+      47.22
+     ],
+     "zoom": 13,
+     "caption": "A commune of the area, where the vineyard overlooks the Loire. Caves dug in the tuffeau chalk let wines be kept and aged at a low, constant temperature.",
+     "cite": [
+      "saumur-doc:p4",
+      "saumur-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

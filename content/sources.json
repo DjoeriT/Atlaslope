@@ -2062,5 +2062,113 @@
   "title": "Crémant de Bourgogne PDO-FR-A0676: EU single document / technical file (PDO, French, eAmbrosia attachment 11636)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11636",
   "date": "2025-06-23"
+ },
+ "muscadet-doc": {
+  "kind": "official",
+  "title": "Muscadet PDO-FR-A0497: EU single document / technical file (PDO, French, eAmbrosia attachment 10745)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10745",
+  "date": "2026-04-20"
+ },
+ "muscadet-sevre-et-maine-doc": {
+  "kind": "official",
+  "title": "Muscadet Sèvre et Maine PDO-FR-A0494: EU single document / technical file (PDO, French, eAmbrosia attachment 11598)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11598",
+  "date": "2026-04-07"
+ },
+ "anjou-doc": {
+  "kind": "official",
+  "title": "Anjou PDO-FR-A0820: EU single document / technical file (PDO, French, eAmbrosia attachment 10559)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10559",
+  "date": "2024-04-15"
+ },
+ "coteaux-du-layon-doc": {
+  "kind": "official",
+  "title": "Coteaux du Layon PDO-FR-A0826: EU single document / technical file (PDO, French, eAmbrosia attachment 25261)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/25261",
+  "date": "2026-05-12"
+ },
+ "savennieres-doc": {
+  "kind": "official",
+  "title": "Savennières PDO-FR-A0158: EU single document / technical file (PDO, French, eAmbrosia attachment 10477)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10477",
+  "date": "2024-02-06"
+ },
+ "saumur-doc": {
+  "kind": "official",
+  "title": "Saumur PDO-FR-A0260: EU single document / technical file (PDO, French, eAmbrosia attachment 21718)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/21718",
+  "date": "2024-02-02"
+ },
+ "saumur-champigny-doc": {
+  "kind": "official",
+  "title": "Saumur-Champigny PDO-FR-A0147: EU single document / technical file (PDO, French, eAmbrosia attachment 10407)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10407",
+  "date": "2026-04-24"
+ },
+ "vouvray-doc": {
+  "kind": "official",
+  "title": "Vouvray PDO-FR-A0146: EU single document / technical file (PDO, French, eAmbrosia attachment 10561)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10561",
+  "date": "2023-12-13"
+ },
+ "touraine-doc": {
+  "kind": "official",
+  "title": "Touraine PDO-FR-A0501: EU single document / technical file (PDO, French, eAmbrosia attachment 10812)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10812",
+  "date": "2025-09-26"
+ },
+ "bourgueil-doc": {
+  "kind": "official",
+  "title": "Bourgueil PDO-FR-A0729: EU single document / technical file (PDO, French, eAmbrosia attachment 10629)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10629",
+  "date": "2024-01-25"
+ },
+ "chinon-doc": {
+  "kind": "official",
+  "title": "Chinon PDO-FR-A0395: EU single document / technical file (PDO, French, eAmbrosia attachment 11137)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11137",
+  "date": "2019-07-19"
+ },
+ "sancerre-doc": {
+  "kind": "official",
+  "title": "Sancerre PDO-FR-A0194: EU single document / technical file (PDO, French, eAmbrosia attachment 10626)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10626",
+  "date": "2018-06-08"
+ },
+ "pouilly-fume-doc": {
+  "kind": "official",
+  "title": "Pouilly-Fumé PDO-FR-A0824: EU single document / technical file (PDO, French, eAmbrosia attachment 10628)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10628",
+  "date": "2025-01-09"
+ },
+ "menetou-salon-doc": {
+  "kind": "official",
+  "title": "Menetou-Salon PDO-FR-A0300: EU single document / technical file (PDO, French, eAmbrosia attachment 19852)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19852",
+  "date": "2018-06-08"
+ },
+ "rose-danjou-doc": {
+  "kind": "official",
+  "title": "Rosé d'Anjou PDO-FR-A1007: EU single document / technical file (PDO, French, eAmbrosia attachment 10706)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10706",
+  "date": "2024-02-02"
+ },
+ "cabernet-danjou-doc": {
+  "kind": "official",
+  "title": "Cabernet d'Anjou PDO-FR-A1005: EU single document / technical file (PDO, French, eAmbrosia attachment 11133)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11133",
+  "date": "2024-02-02"
+ },
+ "rose-de-loire-doc": {
+  "kind": "official",
+  "title": "Rosé de Loire PDO-FR-A0150: EU single document / technical file (PDO, French, eAmbrosia attachment 10402)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10402",
+  "date": "2024-02-06"
+ },
+ "cremant-de-loire-doc": {
+  "kind": "official",
+  "title": "Crémant de Loire PDO-FR-A0391: EU single document / technical file (PDO, French, eAmbrosia attachment 11131)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11131",
+  "date": "2024-02-06"
  }
 }

@@ -1,0 +1,144 @@
+{
+ "id": "anjou",
+ "title": "Why Anjou tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Anjou sits on two kinds of rock, schist in the west and tuffeau chalk in the east. A gentle climate and its own rocks and soils give the wines a taste identity that shows in their freshness.",
+  "cite": [
+   "anjou-doc:p8",
+   "anjou-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Two rocks, one river country",
+   "paras": [
+    "The vineyard lies mostly on the slopes above rivers, with a few plateaus. It covers mainly the southern half of Maine-et-Loire, with 129 communes. The northern fringes of Deux-Sèvres (15 communes) and Vienne (9 communes) belong to it too.",
+    "A few islands of vines survive in the north of Maine-et-Loire. They date from a time when vines grew across the whole département."
+   ],
+   "cite": [
+    "anjou-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Angers",
+     "point": [
+      -0.553,
+      47.47
+     ],
+     "zoom": 10,
+     "caption": "Angers lies inside the zone. In the Middle Ages, monasteries planted vines on the Loire banks and around the city.",
+     "cite": [
+      "anjou-doc:p6",
+      "anjou-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mildness",
+   "beat": "weather",
+   "title": "The softness of Anjou",
+   "paras": [
+    "The climate is temperate oceanic, with fairly small swings in temperature. The Atlantic is relatively close. The Loire and its tributaries act as a thermal regulator. The vines also stand on hillsides.",
+    "Locals speak of \"douceur angevine\", the gentleness of Anjou. It shows most in winter, the long spring and autumn, while strong heat is frequent in summer.",
+    "Hills running north-west to south-east shelter the vines from the often humid west winds. The higher Choletais and Mauges keep off the ocean moisture, so the zone gets little rain. It gets about 585 mm a year, against nearly 800 mm in the Choletais."
+   ],
+   "cite": [
+    "anjou-doc:p8"
+   ]
+  },
+  {
+   "id": "schist-chalk",
+   "beat": "ground",
+   "title": "Anjou noir and Anjou blanc",
+   "paras": [
+    "In the west, the old Precambrian and Palaeozoic base belongs to the Armorican Massif. Schist, notably slate, marks it, and locals call it \"Anjou noir\" (black Anjou).",
+    "In the east, Mesozoic and Cenozoic rock of the Paris Basin covers the old base. Tuffeau chalk marks it around Saumur, and locals call it \"Anjou blanc\" (white Anjou).",
+    "The soils differ a lot but are generally poor, with a moderate water reserve. They also behave well thermally.",
+    "Large cellars are dug into the tuffeau, notably in the heart of the Anjou blanc. Wines can age there at a low, steady temperature."
+   ],
+   "cite": [
+    "anjou-doc:p8",
+    "anjou-doc:p9",
+    "anjou-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Tuffeau country around Saumur",
+     "point": [
+      -0.077,
+      47.26
+     ],
+     "zoom": 11,
+     "caption": "Cellars dug into the tuffeau chalk keep wines at a low, steady temperature.",
+     "cite": [
+      "anjou-doc:p8",
+      "anjou-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chenin-and-more",
+   "beat": "rules",
+   "title": "Chenin first, with reds and bubbles beside it",
+   "paras": [
+    "Anjou owes its fame mainly to white wine from chenin. The white is generally dry. Its aromas are generally intense, floral with fruitier notes of citrus or pear. It is round and ample and ends with freshness and finesse.",
+    "Sometimes the white keeps some sugar and is called demi-sec (off-dry), moelleux or doux (sweet). The label must then carry that mention. Sunny south-facing slopes let chenin ripen further. In a good late season it can make moelleux or doux wines.",
+    "Cabernet franc and then cabernet-sauvignon spread after phylloxera. The early 20th century made mostly a light \"rouget\" for cafés. Red wine production grew from the 1960s, as growers matched each grape to its sites. The reds have good tannic structure and red-fruit aromas, stay light, and are best drunk within three years of the harvest.",
+    "Gamay is planted only in the \"Anjou noir\", on soils from Precambrian rock. A red labelled \"Gamay\" has at most 2 g/l of sugar. Only Anjou Gamay may add \"primeur\" or \"nouveau\", and it must then show its vintage.",
+    "The sparkling wine (mousseux) is white or rosé, made by a second fermentation in the bottle, with at least 9 months on the lees. Chenin is a late grape with freshness and subtle aromas, which make it especially suited to sparkling wine. The rosé from black grapes is a smaller output.",
+    "Chardonnay and sauvignon are allowed too. So are pineau d'Aunis and both grolleaus, black and grey."
+   ],
+   "cite": [
+    "anjou-doc:p2",
+    "anjou-doc:p3",
+    "anjou-doc:p7",
+    "anjou-doc:p9",
+    "anjou-doc:p10",
+    "anjou-doc:p11",
+    "anjou-doc:p12",
+    "anjou-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Layon valley",
+     "point": [
+      -0.5,
+      47.27
+     ],
+     "zoom": 10,
+     "caption": "The Layon crosses the zone and was canalised in the 18th century to carry wine for Dutch buyers.",
+     "cite": [
+      "anjou-doc:p9"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Lieu-dit",
+    "text": "A named cadastral plot on the harvest declaration may appear on the label, in letters at most half the size of the appellation name.",
+    "cite": [
+     "anjou-doc:p13"
+    ]
+   },
+   {
+    "term": "Val de Loire",
+    "text": "The wider region name may appear, in letters at most two thirds the size of the appellation name.",
+    "cite": [
+     "anjou-doc:p12"
+    ]
+   }
+  ],
+  "cite": [
+   "anjou-doc:p12",
+   "anjou-doc:p13"
+  ]
+ }
+}

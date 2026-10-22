@@ -1,0 +1,117 @@
+{
+ "id": "chinon",
+ "title": "Why Chinon tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cabernet Franc grows here close to the edge of its range. The particular climate where the Loire meets the Vienne gives it conditions that are particularly favourable for authentic, elegant wines.",
+  "cite": [
+   "chinon-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rivers",
+   "beat": "place",
+   "title": "Where the Vienne meets the Loire",
+   "paras": [
+    "The vines follow the Vienne valley and the left banks of the Indre and the Loire. On either side of the Vienne they sit on slopes and plateau edges. In the Véron, where the Vienne joins the Loire, they sit in a more open landscape.",
+    "The area lies at the western end of Touraine and covers 18 communes of Indre-et-Loire. The vineyard grew from 550 hectares in 1937 to 2,400 hectares in 2009."
+   ],
+   "cite": [
+    "chinon-doc:p5",
+    "chinon-doc:p6",
+    "chinon-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The town of Chinon",
+     "point": [
+      0.2403,
+      47.1675
+     ],
+     "zoom": 11,
+     "caption": "Chinon was already an important road and river crossroads in Gallo-Roman times, where the Vienne meets the Loire.",
+     "cite": [
+      "chinon-doc:p6"
+     ]
+    },
+    {
+     "label": "The Véron",
+     "point": [
+      0.15,
+      47.2
+     ],
+     "zoom": 10,
+     "caption": "The Véron is the area where the Vienne joins the Loire. Here the vines sit in a more open landscape.",
+     "cite": [
+      "chinon-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Warmer than the rest of Touraine",
+   "paras": [
+    "The climate runs from oceanic to semi-continental. It is particularly warmer and drier than the rest of Touraine, and mild spring temperatures let the vines start growing early.",
+    "Southern and even subtropical plants grow here, palms among them. The two rivers create air currents that drain cold air away naturally."
+   ],
+   "cite": [
+    "chinon-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Soft chalk and river gravel",
+   "paras": [
+    "Two kinds of ground are typical. One comes from Upper Cretaceous layers: soft Turonian chalk and clay-silica Senonian formations. The other is the filtering sandy-gravelly bed of the Vienne.",
+    "Only brown soils and shallow soils are kept in the vineyard area: shallow soils on glauconitic Turonian chalk, or shallow sandy-clay and sandy-gravelly soils. They behave well for water and warmth.",
+    "Vines on the Turonian base suit reds with good tannic structure. Vines on sandy-clay or sandy-gravelly soils suit fruity aromas. Winemakers then blend wines from the different sites.",
+    "Erosion by the rivers laid bare slopes and plateau edges with lean soils. The rivers also left filtering alluvium that suits vines. The soft tuffeau rock was quarried for building stone. The underground quarries at the foot of the slopes now serve to make wine and sometimes to store it."
+   ],
+   "cite": [
+    "chinon-doc:p6",
+    "chinon-doc:p7",
+    "chinon-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Rabelais' country near Seuilly",
+     "point": [
+      0.1853,
+      47.1553
+     ],
+     "zoom": 11,
+     "caption": "Rabelais was born around 1490 at La Devinière, a house at Seuilly a few kilometres from Chinon, and praised the region's wine in Gargantua.",
+     "cite": [
+      "chinon-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Cabernet Franc, mostly red",
+   "paras": [
+    "Three grapes are allowed. Cabernet Franc and Cabernet Sauvignon are red grapes, and Chenin is white. Cabernet Franc is the one growers hold on to, even after phylloxera. It came up the Loire from Nantes, so locally it was called \"breton\". Rabelais wrote of this good wine of \"breton\" that grows not in Brittany but in the Véron.",
+    "All the wines are still and dry. Reds make up 90% of the volume. Rosés (8%) and whites (2%) are rarer.",
+    "Reds run from dark ruby to deep garnet. They are elegant, with tannins that are often well present but melted, and aromas led by small red and black fruits. Some, more opulent, gain from a few years in the cellar and can then show more complex notes, lightly smoky, of cocoa or spice.",
+    "Rosés are usually medium in colour. They often have fresh and fairly intense red and white fruit, sometimes with a note of citrus or pepper.",
+    "Whites have a certain natural acidity, which lets their aromas grow richer with time. Fruity and floral when young, they can age towards honey, toasted almond or quince.",
+    "Pruning keeps each vine to at most 11 buds, and Chenin may only be pruned short. Yields are set at 55 hl/ha."
+   ],
+   "cite": [
+    "chinon-doc:p2",
+    "chinon-doc:p3",
+    "chinon-doc:p4",
+    "chinon-doc:p5",
+    "chinon-doc:p6",
+    "chinon-doc:p7",
+    "chinon-doc:p8"
+   ]
+  }
+ ]
+}

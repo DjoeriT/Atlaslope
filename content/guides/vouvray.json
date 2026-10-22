@@ -1,0 +1,114 @@
+{
+ "id": "vouvray",
+ "title": "Why Vouvray tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Vouvray grows chenin blanc at the climatic limit for the grape, on a soft chalk plateau above the Loire. The wines run from dry to sweet, plus sparkling wines whose making grew up in caves dug into that chalk.",
+  "cite": [
+   "vouvray-doc:p2",
+   "vouvray-doc:p5",
+   "vouvray-doc:p6",
+   "vouvray-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A plateau cut by dry valleys",
+   "paras": [
+    "Just upstream of the city of Tours, the area spreads over a plateau. Many dry valleys and small vales cut into it. It ends in a cliff, often steep, that drops to the Loire valley. The plateau lies between 85 and 110 metres.",
+    "The area covers 8 communes, along the river or close to the valley and its side vales. About 2200 hectares of vines were planted in 2009, worked by 165 operators.",
+    "Tuffeau is the local soft, chalky stone. In the yellow tuffeau cliffs of the valleys, visitors can find caves and homes dug into the rock."
+   ],
+   "cite": [
+    "vouvray-doc:p5",
+    "vouvray-doc:p6",
+    "vouvray-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The tuffeau cliffs above the Loire",
+     "point": [
+      0.8,
+      47.41
+     ],
+     "zoom": 10,
+     "caption": "The plateau ends in a cliff, often steep, above the Loire valley. Caves and homes are dug into the yellow tuffeau.",
+     "cite": [
+      "vouvray-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A river that steadies the temperature",
+   "paras": [
+    "The climate is a degraded oceanic one, at the crossroads of oceanic and continental influences. The Loire acts as a thermal regulator. So do the valleys, which drain cold air from the slopes.",
+    "Summers usually bring at least one heatwave of a few days. Rainfall is about 680 mm a year.",
+    "Vouvray lies at the climatic limit for growing chenin blanc, a late-ripening grape. Vintages differ a lot here, and over generations growers have learned to handle the changing ripeness of the grapes.",
+    "Depending on the site and the year's weather, the grapes come in more or less rich in sugar. Respecting that natural richness leads to different types of wine."
+   ],
+   "cite": [
+    "vouvray-doc:p6",
+    "vouvray-doc:p8"
+   ]
+  },
+  {
+   "id": "tuffeau",
+   "beat": "ground",
+   "title": "Soft chalk under clay and silt",
+   "paras": [
+    "The plateau rests on soft chalk, the tuffeau of the Turonian. Clay and silica layers sit on top of it. Windblown silt from the Quaternary crowns the whole.",
+    "The plots marked out for harvest lie on the slopes, in clay-limestone soils. Others lie on the plateau edges, in clay-silica soils. Only plots with soils that handle water and heat well are classed.",
+    "From Roman times until the 20th century, people dug vast caves into the tuffeau. They served as cellars to make and age wine, sparkling wine included. Making sparkling wine needs vast, temperate spaces for storage and handling."
+   ],
+   "cite": [
+    "vouvray-doc:p6",
+    "vouvray-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Marmoutier, Tours",
+     "point": [
+      0.7205,
+      47.4105
+     ],
+     "zoom": 11,
+     "caption": "Legend says Saint Martin brought the grape varieties and their pruning methods when he founded the Marmoutier monastery in 372.",
+     "cite": [
+      "vouvray-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chenin",
+   "beat": "rules",
+   "title": "Chenin blanc, many wines",
+   "paras": [
+    "Old texts name chenin blanc as the noble grape of the vineyard. Locally it is called \"pineau de la Loire\". Orbois is the only other variety listed. All the wines are white.",
+    "Dry still wines are usually fruity and floral when young. With age they can turn to honey or linden. A dry wine has at most 8 g/l of fermentable sugar, and the label must say \"sec\".",
+    "Wines with sugar tend to be more complex and to keep better. Bolder exotic fruit, or softer dried fruit, is not rare in them. Toasted almonds, honey or quince often appear with time.",
+    "When the harvest weather is especially favourable, the richest grapes are picked after drying on the vine or after noble rot from Botrytis cinerea. They make wines high in fermentable sugar.",
+    "Sparkling (mousseux) and pétillant wines are both made only by a second fermentation in the bottle. Both age at least 12 months from tirage, the bottling for that second fermentation, before they are sold.",
+    "The mousseux has a fine, light mousse, often with notes of fruit or citrus. A brioche note grows with time.",
+    "Pétillant wines have less carbon dioxide and gentler bubbles. They are usually more winey in character than the mousseux.",
+    "Vines are planted at a minimum of 6000 per hectare and pruned short. Yields are set at 52 hl/ha for still wines and 65 hl/ha for sparkling and pétillant wines.",
+    "A label may name a smaller place if it is a lieu-dit, a named spot in the land register, and appears on the harvest declaration."
+   ],
+   "cite": [
+    "vouvray-doc:p2",
+    "vouvray-doc:p3",
+    "vouvray-doc:p4",
+    "vouvray-doc:p5",
+    "vouvray-doc:p6",
+    "vouvray-doc:p8",
+    "vouvray-doc:p9",
+    "vouvray-doc:p10"
+   ]
+  }
+ ]
+}

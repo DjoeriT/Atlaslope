@@ -1,0 +1,119 @@
+{
+ "id": "bourgueil",
+ "title": "Why Bourgueil tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cabernet franc grows here on a broad slope facing generally south, with sandy gravel terraces at its foot. The sandy soils favour fruity wines with fine, supple tannins, and the Turonian chalk suits more opulent reds.",
+  "cite": [
+   "bourgueil-doc:p5",
+   "bourgueil-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A slope between forest and river",
+   "paras": [
+    "The vineyard lies north of the Loire, a few kilometres upstream of where it meets the Vienne, at the north-western end of the Touraine vineyard. The forest of Gâtine borders it on the north and the Loire on the south.",
+    "One third of the area sits on a large slope that faces generally south, with forest on its crown. The other two thirds lie on terraces and low rises at its foot, locally called \"montilles\". The valley of the Changeon runs north to south through the slope and marks the line between the villages of Bourgueil and Benais.",
+    "Eight villages in Indre-et-Loire share the appellation. The vineyard's origin seems tied to the founding of the abbey of Bourgueil in 990, which left its first written traces."
+   ],
+   "cite": [
+    "bourgueil-doc:p4",
+    "bourgueil-doc:p5",
+    "bourgueil-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Changeon valley",
+     "point": [
+      0.19,
+      47.29
+     ],
+     "zoom": 11,
+     "caption": "The Changeon cuts through the slope and marks the line between Bourgueil and Benais.",
+     "cite": [
+      "bourgueil-doc:p5"
+     ]
+    },
+    {
+     "label": "Bourgueil abbey",
+     "point": [
+      0.1717,
+      47.2822
+     ],
+     "zoom": 11,
+     "caption": "The vineyard's first written traces go back to the founding of the abbey of Bourgueil in 990.",
+     "cite": [
+      "bourgueil-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mild",
+   "beat": "weather",
+   "title": "Milder and drier than Touraine",
+   "paras": [
+    "The climate is noticeably milder and drier than in Touraine as a whole. Minimum, average and maximum temperatures are all one degree higher, and about 75 mm less rain falls in a year.",
+    "A densely wooded plateau caps the slope and shelters the vines from cold winds out of the north."
+   ],
+   "cite": [
+    "bourgueil-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Chalk above, gravel below",
+   "paras": [
+    "The lower slope has brown limy soils on the Turonian chalk or on yellow tuffeau chalk. Halfway up, clay-silica soils formed from the sandy clays of the Senonian.",
+    "At the foot, the old river terraces and the montilles have free-draining soils of sand and gravel, more or less stony. The Loire carved the big slope by erosion, and it also laid down the alluvium that forms most of the ground under the vines.",
+    "The sandy-clay and sandy-gravel soils favour fruity wines with fine, supple tannins. That explains their success from the year of the harvest. The Turonian chalk suits more opulent reds with good tannic structure.",
+    "Phylloxera spread more slowly in sand, so the vines on the old terraces held out for a long time. They were quickly replanted with grafted cabernet franc alone."
+   ],
+   "cite": [
+    "bourgueil-doc:p5",
+    "bourgueil-doc:p6",
+    "bourgueil-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Loire at the foot of the slope",
+     "point": [
+      0.15,
+      47.27
+     ],
+     "zoom": 10,
+     "caption": "The Loire cut the great slope by erosion and laid down the alluvium under the vines.",
+     "cite": [
+      "bourgueil-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "franc",
+   "beat": "rules",
+   "title": "Cabernet franc, red and rosé",
+   "paras": [
+    "Cabernet franc is the main grape, locally called \"breton\". Cabernet sauvignon is the other grape listed. The wines are still reds and rosés only, and reds are close to 95% of volume.",
+    "Reds hold at most 2 g/l of sugar. Rosés hold at most 4 g/l.",
+    "Some more opulent reds gain from a few years of keeping. They can then show cocoa, light smoke or spice.",
+    "The rules keep yields to 55 hl/ha, with a ceiling of 67 hl/ha. Pruning is short and must be done before 1 May. Some clones are banned.",
+    "A label may name a smaller place if it is a registered lieu-dit named on the harvest declaration.",
+    "In 2009 the vineyard covered 1,400 hectares and 180 growers worked it."
+   ],
+   "cite": [
+    "bourgueil-doc:p2",
+    "bourgueil-doc:p3",
+    "bourgueil-doc:p4",
+    "bourgueil-doc:p5",
+    "bourgueil-doc:p6",
+    "bourgueil-doc:p7",
+    "bourgueil-doc:p8"
+   ]
+  }
+ ]
+}

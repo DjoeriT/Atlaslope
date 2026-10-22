@@ -1,0 +1,104 @@
+{
+ "id": "rose-de-loire",
+ "title": "Why Rosé de Loire tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Rosé de Loire grows on well-draining soils along the Loire and its tributaries, which act as a thermal regulator. It is a dry rosé, fresh and thirst-quenching, to enjoy young.",
+  "cite": [
+   "rose-de-loire-doc:p7",
+   "rose-de-loire-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "river",
+   "beat": "place",
+   "title": "Some 200 kilometres of river",
+   "paras": [
+    "The vineyards run along the Loire and its tributaries, the Vienne, the Indre and the Cher, for about 200 kilometres. They sit on a rolling plateau across 294 communes, some of them famous for their château.",
+    "The plateau joins hard Primary rock from the foothills of the Armorican Massif to softer rock of the Secondary, and to a lesser extent the Tertiary, from the edge of the Paris Basin. Over time the rivers have largely shaped it."
+   ],
+   "cite": [
+    "rose-de-loire-doc:p7",
+    "rose-de-loire-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Loire in Touraine",
+     "point": [
+      0.69,
+      47.39
+     ],
+     "zoom": 8,
+     "caption": "The vineyards follow the Loire and its tributaries for about 200 kilometres.",
+     "cite": [
+      "rose-de-loire-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean in the west, a continental touch in the east",
+   "paras": [
+    "The climate is oceanic. In the west, where the ocean's influence is strongest, temperatures are regular. Winters there are mild. Summer heat stays moderate.",
+    "In the east, the Sologne part of the vineyard, the influence is more continental. Rain there is slightly higher than in the rest of the area, between 550 and 650 mm. Towards the east the temperature range tends to widen.",
+    "Across the whole area the Loire and its tributaries act as a thermal regulator."
+   ],
+   "cite": [
+    "rose-de-loire-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Schist in the west, clay-limestone in the east",
+   "paras": [
+    "The soils are schist or clay-schist in the west, and clay-limestone in the east. All of them hold moderate water reserves and drain well.",
+    "The Turonian layer is essential. It gave the tuffeau stone that built the Loire châteaux and, more broadly, the region's buildings. The quarries left countless cavities, which became cellars with constant temperature and humidity. They store wine and grow mushrooms.",
+    "Only plots with draining soils on clay-limestone or on schist are kept inside the delimited area."
+   ],
+   "cite": [
+    "rose-de-loire-doc:p7",
+    "rose-de-loire-doc:p9"
+   ]
+  },
+  {
+   "id": "dry-rose",
+   "beat": "rules",
+   "title": "A dry rosé, only ever rosé",
+   "paras": [
+    "Rosé de Loire is a still, dry rosé and nothing else. It needs at least 9.5% natural alcohol and under 3 grams of fermentable sugar per litre. After enrichment it cannot pass 12.5% alcohol. Yields are set at 60 hl/ha.",
+    "On the palate it gives the impression of biting into ripe fruit.",
+    "Seven grapes are allowed. Over time growers favoured Cabernet Franc and Grolleau in the west. In the east they mostly planted Gamay and Pineau d'Aunis. The lie of the land and the oceanic climate explain these choices.",
+    "In the 15th century Cabernet Franc arrived from Bordeaux under the name Breton. With it, growers made a new rosé called clairet, with red-fruit aromas. In the early 20th century, large volumes of rosé were made under the names rouget in Anjou and vin gris in Touraine. They were fresh and low in alcohol. The appellation was recognised in 1974.",
+    "The label may name a lieu-dit cadastré, a named plot on the land register, if it appears on the harvest declaration."
+   ],
+   "cite": [
+    "rose-de-loire-doc:p2",
+    "rose-de-loire-doc:p3",
+    "rose-de-loire-doc:p4",
+    "rose-de-loire-doc:p6",
+    "rose-de-loire-doc:p7",
+    "rose-de-loire-doc:p8",
+    "rose-de-loire-doc:p9",
+    "rose-de-loire-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Saumur",
+     "point": [
+      -0.08,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "The people of Saumur once offered two busses of clairet, 536 litres, to Jean V, Duke of Brittany.",
+     "cite": [
+      "rose-de-loire-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}
