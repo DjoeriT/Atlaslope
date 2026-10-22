@@ -99,3 +99,5 @@ p{margin:0 0 1rem}
 .g-fx .src.short{display:block;margin-top:.3rem}
 .g-fx .pg-rows .src{display:block}
 @media (max-width:30rem){.g-fx .pg-rows{grid-template-columns:1fr;gap:.1rem}.g-fx .pg-rows dd{margin-bottom:.7rem}}
+/* r2 review fix: a pressed state on touch */
+.bb:active .bb-lab,.mapcard:active{filter:brightness(.9)}

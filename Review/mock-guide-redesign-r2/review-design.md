@@ -1,22 +1,20 @@
-# Design review: guide redesign r1 (22 Oct 2026, ReviewBot)
+# Design review, guide redesign r2 (C1, C2, C3), 22 Oct 2026
 
-Verdict: fix first. 0 blocker, 4 major, 5 minor. Read the 4 contact sheets, ran two small Playwright scripts (hub toggles, button clicks, D measurements). No re-shoot.
+Verdict: ready after one fix pass. Blockers 0, should fix 4, notes 4. Read from shots (3 sheets, button shots, 7 singles); nothing re-shot, mock not opened live.
 
-## Major
-1. D, 1440, big-number rows: "63,593 ha" (x 1084-1376, scrollWidth > clientWidth) and "60 months" (x 744-1036, scrollWidth > clientWidth) are wider than their 292 px column at 86 px type; "60 months" runs into "2017" (starts x 1084). Fix: size numbers to the column (clamp, or unit on a second line). [V]
-2. D, 1440, sideways overflow: document scrollWidth 1455 vs 1440 (solo); 1417 vs 1390 inside the hub frame. Hidden by `overflow-x:clip` on body, so the cause (the big-number rows) remains. 390: 390, no overflow. Fix: remove the cause, keep the clip as a backstop. [V]
-3. B, C, D, 1440, photos: every image is the app's 800 px file shown at 1440 wide (full-bleed hero, beat photos 1440 and 720 wide; D 12 images 800/1440, 800/720 ...). Soft at desktop. Fix: use larger sources for hero and full-bleed photos, or cap full-bleed photos at about 800 px wide. [V for D, read for B/C]
-4. A, B, D, photo button: it does not open that option's map. It scrolls the hub to option C (C top at y 72) and opens C's map: the viewer leaves the option being judged. Tested A, B, D: all three land on C with the map open (after 4.5 s). Fix: say so on the button in the mock ("works in C only"), or keep the viewer in place and show a note. [V]
+## Should fix
+1. C1, C2 (1440), "empty right side" (owner's round-1 complaint): C1 section 1 puts two 528 px photos left and leaves ~200 px empty on the right (opt-c1-1440-01); C2 section 1 prose sits in a ~700 px column with the whole right half of the viewport blank (opt-c2-1440-02). Smaller photos do bring the white space back. Fix: drop C1 and C2 as final; if kept, centre the content block or fill the right column as C3 does. [V]
+2. C3 (1440), uneven columns: left prose column ends well before the right chart/photo column, leaving a blank left block of ~250-420 px (opt-c3-1440-02 after the Climate chart; opt-c3-1440-04 under "On the map" next to the Altitude chart). Same effect on the left of the Level row (opt-c2-1440-02 pattern). Fix: top-align and accept, or let the chart/facts flow under the prose when the prose is shorter (single column below the photo). [V]
+3. C3 (1440), mixed widths: photo column is 528 px in a ~604 px column (right edge ragged against the 1360 px text edge, opt-c3-1440-04), while the 3-province row is full width at 403 px each (opt-c3-1440-03). Fix: let the single photo fill its column (cap at the column, not 33rem) so right edges align; check natural/rendered stays above 1.45 (604 px of 800 gives 1.32: use 33rem on the image only if it left-aligns with the chart edge, otherwise keep and accept). [A]
+4. All, button at 390: clickable read is good (solid champagne bar, glyph, black arrow square, shot button-c3-390), but the bar is the only cue: the photo above carries no hint and the card sits under the lede on the phone, near the fold (sheet phone row 1: card is below title, above lede, fine). No fault found; remaining risk is the hover state that does not exist on touch. Fix: none needed unless the owner wants a visible pressed state; add `:active` darken so the touch tap shows. [A]
 
-## Minor
-5. Sierra de Cantabria photo twice in A, B and C (button/hero and the beat 1 stop photo). Fix: use a different hero or drop the repeat. [V from sheets]
-6. Phone fold-back (C) lands on a stop card, not the paragraph. Fix: add a text twin or document the fallback. [A, from the builder, not re-run]
-7. C phone, map mode: the top band wraps "Back to Rioja" over two lines next to "Close the map". Fix: shorten or stack. [V, screenshot after-a]
-8. D, Marqués de Murrieta heading is 144 px; the text fits (no overflow measured) but is very large next to everything else; at 390 it wraps to two lines at 51 px. Check taste only. [V]
-9. D and B, 1440 start of page: the title ("Rioja" in B) sits below the hero photo and is cut at the fold. Fix: title above the fold. [read, sheet-b]
+## Notes
+5. All: jump bar starts at the page edge (x 24), not the text edge (x 80), while text and cards align at 80. Fix: align to the text edge. Known from r1. [V]
+6. All (1440 hero): the card has a drop shadow and the page has no other boxes. It reads as the one clickable thing, which is right; keep. [V]
+7. C3 (1440): the Level row (label left, value, MAPA link) sits in a half-empty row between the "On the map" links and the Sierra photo (opt-c3-1440-01/c2-02). Fix: put Level into the hero meta line or the facts strip. [V]
+8. C3 section 3 photo is a saturated blue sky (opt-c3-1440-03 and 04 region): next to the muted others it is the loudest element. Fix: swap or crop for more vine, less sky (crop is the owner's check). [V]
 
-## Confirmed with numbers
-- Hub toggle: all four options, Desktop and Phone: frame resizes (1392 desktop, 410 phone), iframe 1390 or 390 wide, no sideways scroll at phone (docScrollW 390), hub scrollWidth 1440 = no hub scroll. Only D desktop has docScrollW 1417 > 1390 (finding 2). [V]
-- Pages hold every section in all four sheets (read). No drawn icons, no text on photos, one credit line per set seen (read, sheets too small to read credit text).
-## Not checked
-Credit wording, photo crops at face level, large-text and reduced-motion beyond the README claims.
+## Questions asked
+- Does shrinking the photos bring back white space? Yes in C1 and C2 (finding 1); C3 avoids it by using the second column. [V]
+- Button obvious at 390? Yes: solid bar, glyph, arrow square, full-width card. [V]
+- Is C3 sound against the owner's words? Yes: "C" hero card and map tour plus A's calm; photos capped at 528 px (ratio 1.52 min) answers "blurry"; second column fills the width. Fix findings 2 and 3 first. Not checked: unfold animation (stills only), blur judged from measured ratios not at 100% view. [V/A]

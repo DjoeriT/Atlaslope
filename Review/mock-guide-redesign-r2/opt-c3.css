@@ -44,3 +44,6 @@
   .o-c3 .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}
   .pg-short li{grid-template-columns:1fr}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
 }
+/* r2 review fixes: photo column as wide as its photos so photo and chart edges line up; jump bar starts at the text edge */
+@media (min-width:48.01rem){.o-c3 .a-beat{grid-template-columns:minmax(0,1fr) 33rem}.o-c3 .a-side .g-fig{max-width:none}}
+.o-c3 .g-jump{padding:0 max(1.5rem,calc((100% - 84rem)/2 + 2rem))}
