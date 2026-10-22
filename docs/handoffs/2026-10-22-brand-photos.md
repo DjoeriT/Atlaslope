@@ -34,3 +34,15 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   `template.html`, `img/`, `shots/`). One Sonnet builder, 60K tokens [V]. LeadBot looked at the 1440 shot [V]; the 400 shot was checked by the builder only.
 - Weak spots: rioja-c18 and the Getaria aerial each appear twice; the Priorat card lines and the featured captions are builder wording,
   not checked against the guides; the map panel is an empty stand-in.
+
+## Owner verdict (22 Oct 2026) [O]
+- "The dark gallery holds. Refine it in a fresh session."
+- Not yet changed: `CLAUDE.md` Style ("NO dark mode", white page, black band + champagne) and `Review/visual-style.md`. The refine session asks
+  the owner once whether to rewrite them now or when the refined direction is approved.
+
+## Next session: refine the dark gallery
+- Start from the mock source (`mocks/brand-dark-gallery/build.py`, `template.html`) and the picks (`mocks/brand-photos/picks.json`, contact sheet).
+- Fix the known weak spots: no photo twice on a page; more real golden light outside Rioja (new Commons searches if needed: `Tools/brand/commons_photos.py`);
+  Priorat and caption copy checked against the guides; check the 400 px view yourself.
+- Carry it to more surfaces: logo and favicon on dark, Guides page (square crops rule), Study, share image.
+- One Artifact page, one helper build, link to the owner.
