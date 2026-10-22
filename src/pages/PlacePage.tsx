@@ -518,14 +518,14 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
               return (
                 <section key={b.id} id={b.id} className={figs.length > 0 || side ? 'pg-beat' : 'pg-beat solo'} aria-labelledby={beatHeading(b)}>
                   <div className="pg-beat-main">
+                    {/* The number lives in the kicker: one left edge for kicker, title and prose (owner picked B, 22 Oct 2026). */}
                     <div className="pg-beat-h">
-                      <span className="n" aria-hidden="true">{b.n}</span>
                       {b.chapters[0] ? (
                         <>
-                          <span className="k">{t.beats[b.id]}</span>
+                          <span className="k"><span className="n" aria-hidden="true">{b.n}<span className="dot"> · </span></span>{t.beats[b.id]}</span>
                           <h3 id={beatHeading(b)} tabIndex={-1}><span className="sr-only">{t.beats[b.id]}: </span>{b.chapters[0].title}</h3>
                         </>
-                      ) : <h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3>}
+                      ) : <><span className="k"><span className="n" aria-hidden="true">{b.n}</span></span><h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3></>}
                     </div>
                     {b.chapters.length > 0 && <div className="pg-prose">{b.chapters.map((ch, i) => chapterBody(ch, i > 0, false))}</div>}
                   </div>
