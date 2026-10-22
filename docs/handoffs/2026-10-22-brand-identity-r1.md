@@ -1,4 +1,4 @@
-# Brand identity rounds 1 to 3 (22 Oct 2026)
+# Brand identity rounds 1 to 4 (22 Oct 2026)
 
 ## Done
 - Owner interview [O]: AtlaSlope is a digital field guide. Direction is cartographic precision. The identity is **fully open**, so the
@@ -64,3 +64,17 @@
 - Checked [V]: shots of each treatment viewed; no JS errors; Newsreader and Plex load.
 - Spend [V]: builder 94K new tokens. LeadBot context is past 250K: round 4 belongs in a fresh session from this handoff.
 - Open: fingerprints share a height scale but not a length scale (fitted per cell). Phone width is not designed yet. The owner picks a treatment.
+
+## Round 4: colour from the land
+- Owner on round 3 [O]: "too black and white". He asked for the two other big ideas first.
+- Data: `Tools/brand/make_cutouts.py` fetched IGN PNOA aerial photos (WMS twin of the atlas's own WMTS) for all 90 DOs: 8 heroes at 1,400 px, the
+  rest at 320 px. Each has its legal outline as an SVG path and a six-colour palette from k-means on the pixels inside it. The `vivid` variant keeps the hue
+  and raises saturation, and is labelled "brightened" wherever shown.
+- Mock: `mocks/brand-identity-r4/index.html`, Artifact https://claude.ai/artifact/WofFHofVdPeoSYCanTCwnt.
+  - **Idea 2 Cut from the land:** each DO is its aerial photo cut to its outline on white. The Rioja cut-out is the home hero with a slow zoom.
+    The system grid shows all 90. The 16 px mark falls back to the outline in Rioja's ochre.
+  - **Idea 3 The colour atlas:** each place's measured palette. The home is a mosaic of 90 palette tiles, and the guide opens with Rioja's palette as a field.
+- Checked [V]: both ideas shot and viewed. Spend [V]: builders 41K (cut) and 26K (col).
+- Honest limit: from the air Spain's wine land is ochre, olive and green, so idea 3 reads earthy, not bright. Idea 2 is the more alive of the two.
+  A next step for more colour that stays true: add each place's wine colour (red, white, rosé), already allowed in `Review/visual-style.md`, as the accent.
+- LeadBot context is well past 250K. The next round must start in a fresh session from this handoff.
