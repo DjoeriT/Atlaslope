@@ -55,7 +55,18 @@ this thread no matter what", 22 Oct 2026).
   `claude/guides-e`; heights 1440 5,915 folded (live was 16,697), 390 9,556 (live about 47,000). Rioja's band photo: rioja-2.
 - Spend [V]: Guides mock builder about 209K over its rounds, design ReviewBot 26K, build 109K.
 
+## Releases 66-68 and the map bar (22 Oct 2026, later) [V]
+- Release 66 (14b1b11): Guides page E (#195), Show map in the crumb line (#192), no view transition on the unfold (#194).
+- Release 67 (7649d07) by the countries session: country data (#197, #198), plus the grouped photo credits (#196: one line, each
+  licence once, every photo linked to its page; ReviewBot found the one-link-per-author gap, fixed).
+- Release 68 (0e15b91): map bar B (#199): only the stop name on top, keys at the foot, terrain height behind the "i", phone key one
+  line, Koppen tint fades at the edges (a land cut of the data is still open). Live check: chip on top, no terrain box on the map.
+- Incident: two sessions shared the main checkout; the countries session committed onto claude/map-bar. Fixed by a fresh branch
+  (#199 reverted the stray decisions commit; #198 holds it). Rule and local pre-commit guard: #201 (CLAUDE.md "One worktree per session").
+- Tester notes slipped out of the slice PR three times (65, 68, and 64 earlier): write the note in the slice PR before asking about
+  the release. Publish waits for main's own green run after a merge (release 68 re-ran the full suite, about 15 min).
+
 ## Open
-1. Release 66 (Guides E, #192, #194): only on the owner's words "publish release 66".
+1. Next release: only on the owner's words. Flaky tests open: #190, #193; #188 Priorat stop 6.
 2. Batch 2's builder worktree (agent-a13c0db72cb2d9b09) was locked by a running process; remove it with its .env.local copy.
 3. Raimat note in the guide (owner's call); Cangas rock key labels; shots-tour "imagery did not load" false flags.
