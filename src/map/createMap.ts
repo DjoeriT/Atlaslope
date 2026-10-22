@@ -70,8 +70,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
   const tiles = tilesEnabled();
   const hasImagery = tiles && !!esriKey;
-  // If IGN keeps failing, Esri stops skipping Spain and its tiles reload with a new URL.
-  const releaseImagery = hasImagery ? registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) }) : () => {};
+  // If an orthophoto (IGN's PNOA or BD ORTHO) keeps failing, Esri stops skipping its country and its tiles reload with a new URL.
+  const releaseImagery = hasImagery ? registerImagery(esriTemplate(esriKey as string), { onOrthophotoDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) }) : () => {};
   if (tiles) registerGlyphs(ROOT);
   const map = new maplibregl.Map({
     container,

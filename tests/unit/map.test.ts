@@ -4,7 +4,8 @@ import { buildBoundaries, labelMinZoom, oceanFromLand, spanOf, type Collection }
 import { IMAGERY_ERROR_LIMIT, RELIEF_STOPS, basemapPaint, imageryFailed, layerVisibility, reliefExaggeration } from '../../src/map/layers';
 import { NO_REGION_COLOR, REGION_COLORS, regionColor } from '../../src/map/regionColors';
 import { buildStyle, esriTemplate } from '../../src/map/style';
-import { rasterTileSize, tileXYZ } from '../../src/map/imagery';
+import { ACTIVE_ORTHOPHOTOS, ORTHOPHOTOS, orthophotoNear, rasterTileSize, tileXYZ } from '../../src/map/imagery';
+import { COUNTRIES } from '../../src/countries';
 import { addedZones } from '../../src/map/focus';
 
 const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
@@ -108,6 +109,68 @@ describe('style and tile requests', () => {
   it('reads tile numbers from a protocol URL, with or without a reload marker', () => {
     expect(tileXYZ('esri://12/2010/1490?r=5')).toEqual([12, 2010, 1490]);
     expect(tileXYZ('pnoa://15/16150/12005')).toEqual([15, 16150, 12005]);
+    expect(tileXYZ('ign-fr://14/8364/5814')).toEqual([14, 8364, 5814]);
+  });
+  it('draws France\'s BD ORTHO over Esri after Spain\'s PNOA, with the same tile size', () => {
+    const s = buildStyle({ esriKey: 'abc', tiles: true, menu: on, dpr: 2 });
+    const ids = s.layers.map((l) => l.id);
+    expect(ids.indexOf('ign-fr')).toBe(ids.indexOf('pnoa') + 1);
+    expect(s.sources['ign-fr']).toMatchObject({ type: 'raster', tiles: ['ign-fr://{z}/{x}/{y}'], tileSize: 128, minzoom: 10, maxzoom: 19, attribution: 'France: BD ORTHO © IGN, Licence Ouverte 2.0' });
+    expect(layerVisibility(on, true)['ign-fr']).toBe('visible');
+    expect(layerVisibility(on, false)['ign-fr']).toBe('none');
+  });
+});
+
+/** Tile numbers holding a point at zoom z. */
+function tileAt(lon: number, lat: number, z: number): [number, number, number] {
+  const n = 2 ** z;
+  const r = (lat * Math.PI) / 180;
+  return [z, Math.floor(((lon + 180) / 360) * n), Math.floor(((1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2) * n)];
+}
+/** Even-odd point in polygon (first ring and holes). */
+function inside(poly: number[][][], [x, y]: [number, number]): boolean {
+  let hit = false;
+  for (const ring of poly) for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) hit = !hit;
+  }
+  return hit;
+}
+
+describe('orthophotos per country (#50)', () => {
+  const chablis: [number, number] = [3.8, 47.81];
+  const madrid: [number, number] = [-3.7, 40.42];
+  it('gives each country its photo: PNOA in Spain, BD ORTHO in France, Esri alone in Portugal', () => {
+    expect(COUNTRIES.spain.imagery).toBe('pnoa');
+    expect(COUNTRIES.france.imagery).toBe('ign-fr');
+    expect(COUNTRIES.portugal.imagery).toBe('esri');
+    expect(ACTIVE_ORTHOPHOTOS.map((o) => o.id)).toEqual(['pnoa', 'ign-fr']);
+  });
+  it('keeps Spain\'s PNOA as it was', () => {
+    expect(ORTHOPHOTOS.pnoa).toMatchObject({
+      tiles: 'https://www.ign.es/wmts/pnoa-ma?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=OI.OrthoimageCoverage&STYLE=default&FORMAT=image/jpeg&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}',
+      attribution: 'Spain: PNOA © IGN, CC BY 4.0 scne.es', minzoom: 10, maxzoom: 19,
+    });
+  });
+  it('asks IGN\'s Géoplateforme for France\'s BD ORTHO, no key, zoom 10 to 19', () => {
+    const o = ORTHOPHOTOS['ign-fr'];
+    expect(o.tiles).toBe('https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&STYLE=normal&FORMAT=image/jpeg&TILEMATRIXSET=PM&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}');
+    expect(o.tiles).not.toMatch(/key|token/i);
+    expect(o).toMatchObject({ attribution: 'France: BD ORTHO © IGN, Licence Ouverte 2.0', minzoom: 10, maxzoom: 19 });
+  });
+  it('has a France mask with Chablis on its land and Spain among the neighbours cut out', () => {
+    const { mask } = ORTHOPHOTOS['ign-fr'];
+    expect(mask.land.some((p) => inside(p, chablis))).toBe(true);
+    expect(mask.land.some((p) => inside(p, [-1.8, 42.9]))).toBe(false); // Navarra, Spain
+    expect(mask.neighbours.some((p) => inside(p, [-1.8, 42.9]))).toBe(true);
+    expect(ORTHOPHOTOS.pnoa.mask.land.some((p) => inside(p, chablis))).toBe(false);
+  });
+  it('asks only the country\'s own photo near its land', () => {
+    expect(orthophotoNear(ORTHOPHOTOS['ign-fr'], ...tileAt(...chablis, 14))).toBe(true);
+    expect(orthophotoNear(ORTHOPHOTOS.pnoa, ...tileAt(...chablis, 14))).toBe(false);
+    expect(orthophotoNear(ORTHOPHOTOS.pnoa, ...tileAt(...madrid, 14))).toBe(true);
+    expect(orthophotoNear(ORTHOPHOTOS['ign-fr'], ...tileAt(...madrid, 14))).toBe(false);
   });
 });
 
