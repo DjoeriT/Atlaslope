@@ -131,6 +131,21 @@
    "h": 675,
    "blur": "UklGRl4AAABXRUJQVlA4IFIAAABQAgCdASoQAAkAAsBMJZACdH8IwABSjcec3gAA+pyg2uPWxlOs/UvFIZ7c/oq35AnXSgytD46wCN5OpIpvJHCw/lgMmhv64nSlFJ1+ZuzNfAAA"
   },
+  "cangas-corias-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRoIAAABXRUJQVlA4IHYAAAAQAgCdASoQAAwAAsBMJQBYdhnjIhpTgmAAAP7tKEPQfzy96zK4xLotO9Vixs6hEuFJs/im8lwJfZ9fg9Dkg9PPnJ5LbSjhybb8yBv2upGQiNg3fXQTvVzBIHwvlBGquJTuVyhMsFNJ/8/oqbTDth3KLniIAAAA"
+  },
+  "cangas-leitariegos-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAAsBMJbACdAD1cUe4rgAA/u5RqxoqnV5mLX4SILOTCPeJsZEfXl/rZSp39ZE5AlRqVB/aRl7EYb83AE4fu9cAMeLIKG1NjoigAAA="
+  },
+  "cangas-narcea-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAAsBMJYwC7AEVnLdzD1gA/qofHPPshlXaEmv/TqAvZDQqJN6/CLY+H3Jw7OnUk39XrgKHCR02obtNgToywPlStK7qr+MAAA=="
+  },
   "carinena-1": {
    "w": 1200,
    "h": 800,
@@ -425,6 +440,16 @@
    "w": 1200,
    "h": 796,
    "blur": "UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAAsBMJYgCdAENX1DjiIAA/dXTZ2+C9okMy/tb0ai/r1ctZgfEeo6BaMDjP/uQFNrX1e2EEbsgJcwvVEAA"
+  },
+  "monterrei-castle-1": {
+   "w": 1200,
+   "h": 379,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAUAAsBMJbACdAEWOahiegD2QSOaO//Ln8yKlC0/eZFSdwc5Dlb9Fqx0JSPkYS3DsW3429ys5d/Bo/IsZviQvJLzDlKJlqRuzI5rwAA="
+  },
+  "monterrei-verin-1": {
+   "w": 1200,
+   "h": 803,
+   "blur": "UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsAAsBMJZgCdAEQJkd+5IAA/mFvARiY8BVjGYHaSJkP6vEQ12C0/L6rrzQJ40QPpWs2aeFQDwdLFt5TAB+mHP7SFPAvKyOng6TdE6yYAA=="
   },
   "montilla-moriles-1": {
    "w": 1200,
@@ -920,6 +945,16 @@
    "w": 1200,
    "h": 800,
    "blur": "UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAsAAsBMJQBOgCG/yx/tdaAAAPwjCaM7PTEQotZCsb1JfDI01TX57EOcM6vSrXAdZwJkcAA="
+  },
+  "valdeorras-barco-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAsAAsBMJZgC7AERBfDN7N9oAP71AhJICs2rxUaHiZ/foLSQo+b9TOeVye6UbEnJlMZC77r8e1AA"
+  },
+  "valdeorras-sil-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAAsBMJZQCdAEO/Hl/hYAA/tD/V4brQOlDFKebXkS0GHmq2MadSg/SC/pWDumOAfJQ3J4u3wo4AAA="
   },
   "valdepenas-1": {
    "w": 1200,
