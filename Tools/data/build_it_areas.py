@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Builds Italy's pilot place outlines (decision #62) from data/countries/it/areas-spec.json.
 
-Two routes: 'piemonte' takes the region's official DOC/DOCG polygon; 'istat' unions the municipalities the spec names from ISTAT's
-generalised limits. Partial municipalities are taken whole, so an 'istat' outline is marked approximate and carries the official
-area next to its own. Raw inputs (<raw folder>/countries/it/) are the two zips listed in data/SOURCES.md.
+Two routes: 'piemonte' takes the region's official DOC/DOCG polygon (its sub-zone rows unioned); 'istat' unions the municipalities
+and whole provinces the spec names from ISTAT's generalised limits. Partial municipalities are taken whole, so an 'istat' outline is
+marked approximate and carries the official area next to its own. 'candiago' takes the PDO polygon traced from the rulebook's boundary
+text by Candiago et al. 2022 (CC0), for zones the rulebook draws along roads and streams instead of naming municipalities. A municipality name shared by two provinces takes the province's
+two-letter code in brackets, e.g. "Castro (LE)". Raw inputs (outside the repo, <raw folder>/countries/it/, Tools/rawdir.py) are the two zips listed in data/SOURCES.md.
 Writes data/countries/it/areas.geojson. Run: python3 -I Tools/data/build_it_areas.py
 """
 import json, re, subprocess, tempfile, unicodedata, zipfile
@@ -12,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from rawdir import RAW  # noqa: E402
+from rawdir import RAW  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
 RAW = RAW / "countries/it"
 SPEC = ROOT / "data/countries/it/areas-spec.json"
 OUT = ROOT / "data/countries/it/areas.geojson"
@@ -27,6 +29,11 @@ def ogr(*args):
     subprocess.run(["ogr2ogr", *args], check=True, capture_output=True)
 
 
+def rows(shp, fields):
+    return json.loads(subprocess.run(["ogr2ogr", "-f", "GeoJSON", "/vsistdout/", str(shp), "-select", fields, "-nlt", "NONE"],
+                                     capture_output=True, text=True, check=True).stdout)["features"]
+
+
 def main():
     spec = {k: v for k, v in json.loads(SPEC.read_text()).items() if not k.startswith("$")}
     out = []
@@ -36,35 +43,56 @@ def main():
         zipfile.ZipFile(RAW / "istat-limiti-01012025-g.zip").extractall(tmp / "istat")
         pie = next((tmp / "pie").rglob("*.shp"))
         com = next((tmp / "istat").rglob("Com*_WGS84.shp"))
-        names = {norm(f["properties"]["COMUNE"]): f["properties"]["COMUNE"] for f in json.loads(subprocess.run(
-            ["ogr2ogr", "-f", "GeoJSON", "/vsistdout/", str(com), "-select", "COMUNE", "-nlt", "NONE"],
-            capture_output=True, text=True, check=True).stdout)["features"]}
+        prov = next((tmp / "istat").rglob("ProvCM*_WGS84.shp"))
+        sigla = {f["properties"]["COD_PROV"]: f["properties"]["SIGLA"] for f in rows(prov, "COD_PROV,SIGLA")}
+        provcode = {norm(f["properties"]["DEN_UTS"]): f["properties"]["COD_PROV"] for f in rows(prov, "COD_PROV,DEN_UTS")}
+        names = {}  # normalised name -> [(PRO_COM, COMUNE, province code)]
+        for f in rows(com, "PRO_COM,COMUNE,COD_PROV"):
+            q = f["properties"]
+            names.setdefault(norm(q["COMUNE"]), []).append((q["PRO_COM"], q["COMUNE"], sigla[q["COD_PROV"]]))
+
+        def code(m):
+            m = s.get("renamed", {}).get(m, m)
+            hint = re.match(r"(.*) \(([A-Z]{2})\)$", m)
+            hits = names.get(norm(hint[1] if hint else m), [])
+            hits = [h for h in hits if not hint or h[2] == hint[2]]
+            if len(hits) != 1:
+                print(f"{'NOT FOUND' if not hits else 'AMBIGUOUS'} {place}: municipality {m}")
+                return None
+            return hits[0][0]
         for place, s in spec.items():
             union = tmp / f"{place}-utm.geojson"
             props = {"id": place, "place": place, "route": s["route"]}
-            if s["route"] == "piemonte":
+            if s["route"] == "candiago":
+                ogr("-f", "GeoJSON", str(union), str(RAW / "candiago/EU_PDO.gpkg"), "-t_srs", "EPSG:32632", "-dialect", "sqlite", "-sql",
+                    f"SELECT ST_Area(ST_Transform(Shape, 32632)) AS m2, Shape FROM EU_PDO WHERE PDOid = '{s['pdo']}'")
+            elif s["route"] == "piemonte":
                 ogr("-f", "GeoJSON", str(union), str(pie), "-dialect", "sqlite", "-sql",
-                    f"SELECT ST_Area(geometry) AS m2, geometry FROM \"{pie.stem}\" WHERE codice = '{s['codice']}'")
+                    f"SELECT ST_Area(ST_Union(geometry)) AS m2, ST_Union(geometry) AS geometry FROM \"{pie.stem}\" "
+                    f"WHERE codice = '{s['codice']}'")
             else:
-                want = s["whole"] + s["partial"]
-                istat = []
-                for m in want:
-                    n = names.get(norm(s.get("renamed", {}).get(m, m)))
-                    if not n:
-                        print(f"NOT FOUND {place}: municipality {m}")
-                    elif n not in istat:
-                        istat.append(n)
-                part = {s.get("renamed", {}).get(m, m) for m in s["partial"]}
-                inlist = ", ".join("'" + n.replace("'", "''") + "'" for n in istat)
+                whole = {c for c in map(code, s["whole"]) if c}
+                part = {c for c in map(code, s["partial"]) if c} - whole
+                provs = []
+                for pn in s.get("wholeProvinces", []):
+                    if norm(pn) not in provcode:
+                        print(f"NOT FOUND {place}: province {pn}")
+                    else:
+                        provs.append(provcode[norm(pn)])
+                inprov = f"COD_PROV IN ({', '.join(map(str, provs)) or 'NULL'})"
+                where = lambda codes: f"(PRO_COM IN ({', '.join(map(str, sorted(codes))) or 'NULL'}) OR {inprov})"
                 ogr("-f", "GeoJSON", str(union), str(com), "-dialect", "sqlite", "-sql",
-                    f"SELECT ST_Area(ST_Union(geometry)) AS m2, ST_Union(geometry) AS geometry FROM \"{com.stem}\" WHERE COMUNE IN ({inlist})")
+                    f"SELECT ST_Area(ST_Union(geometry)) AS m2, ST_Union(geometry) AS geometry FROM \"{com.stem}\" WHERE {where(whole | part)}")
                 core = tmp / f"{place}-core.geojson"
-                whole = ", ".join("'" + names[norm(m)].replace("'", "''") + "'" for m in s["whole"])
                 ogr("-f", "GeoJSON", str(core), str(com), "-dialect", "sqlite", "-sql",
-                    f"SELECT ST_Area(ST_Union(geometry)) AS m2 FROM \"{com.stem}\" WHERE COMUNE IN ({whole})")
-                props |= {"approximate": True, "municipalities": len(istat), "partial": sorted(part),
-                          "wholeKm2": round(json.loads(core.read_text())["features"][0]["properties"]["m2"] / 1e6, 1),
-                          "officialKm2": s["officialKm2"]}
+                    f"SELECT ST_Area(ST_Union(geometry)) AS m2 FROM \"{com.stem}\" WHERE {where(whole)}")
+                n = json.loads(subprocess.run(["ogrinfo", "-q", "-ro", "-dialect", "sqlite", "-sql",
+                    f"SELECT COUNT(*) AS n FROM \"{com.stem}\" WHERE {where(whole | part)}", str(com)],
+                    capture_output=True, text=True, check=True).stdout.split("n (Integer) = ")[1].split()[0])
+                props |= {"approximate": True, "municipalities": n,
+                          "partial": sorted({s.get("renamed", {}).get(m, m) for m in s["partial"]}),
+                          "wholeKm2": round((json.loads(core.read_text())["features"][0]["properties"]["m2"] or 0) / 1e6, 1),
+                          "officialKm2": s.get("officialKm2")}
             feats = json.loads(union.read_text())["features"]
             if len(feats) != 1:
                 raise SystemExit(f"{place}: expected one outline, got {len(feats)}")
