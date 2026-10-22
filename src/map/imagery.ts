@@ -28,6 +28,8 @@ export interface Orthophoto {
   mask: Mask;
   /** Latitude the sea strip is measured at, roughly the country's middle. */
   lat: number;
+  /** The service paints ground it has no photo for white; in border tiles white is cleared so Esri shows there instead. */
+  whiteNoData?: boolean;
 }
 
 export const ORTHOPHOTOS: Record<OrthophotoId, Orthophoto> = {
@@ -50,6 +52,9 @@ export const ORTHOPHOTOS: Record<OrthophotoId, Orthophoto> = {
     maxzoom: 19,
     mask: franceMask as Mask,
     lat: 46,
+    // BD ORTHO stops at the real border, which Natural Earth's simplified line misses by up to a kilometre (Irun, Bidasoa):
+    // without this, slivers of Spain went white.
+    whiteNoData: true,
   },
 };
 
@@ -228,6 +233,14 @@ class OrthoSource {
   }
 }
 
+/** Near-white pixels made transparent (JPEG blurs the service's pure white, so not only 255). */
+function clearWhite(ctx: OffscreenCanvasRenderingContext2D) {
+  const img = ctx.getImageData(0, 0, 256, 256);
+  const a = img.data;
+  for (let i = 0; i < a.length; i += 4) if (a[i] >= 245 && a[i + 1] >= 245 && a[i + 2] >= 245) a[i + 3] = 0;
+  ctx.putImageData(img, 0, 0);
+}
+
 const sources = new Map<OrthophotoId, OrthoSource>();
 const sourceFor = (photo: Orthophoto) => {
   let s = sources.get(photo.id);
@@ -269,6 +282,7 @@ export function registerImagery(esriTemplate: string | null, mapHealth: ImageryH
       photo.close();
       ctx.globalCompositeOperation = 'destination-in';
       ctx.drawImage(mask, 0, 0);
+      if (src.photo.whiteNoData) clearWhite(ctx);
       return { data: await (await out.convertToBlob({ type: 'image/png' })).arrayBuffer() };
     });
   }
