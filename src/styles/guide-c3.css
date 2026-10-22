@@ -51,9 +51,9 @@
 .pg-cols main > section.pg-beat{display:grid;grid-template-columns:minmax(0,1fr) 33rem;column-gap:4.5rem;row-gap:1.5rem;padding:3.6rem 0}
 .pg-cols main > section.pg-beat.solo{grid-template-columns:minmax(0,1fr)}
 .pg-beat-main{min-width:0}
-.pg-beat-h{grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:baseline;margin-bottom:1.4rem}
-.pg-beat-h .n{font:400 5rem/.9 var(--serif);color:var(--foil-ink)}
-.pg-beat-h .k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink)}
+.pg-beat-h{display:block;margin-bottom:1.4rem}
+.pg-beat-h .k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);display:block;margin-bottom:.4rem}
+.pg-beat-h .n{font:inherit;color:inherit;grid-row:auto}
 .pg-beat h3{font-size:clamp(2rem,3vw,2.7rem);line-height:1.1}
 .pg-prose{font-size:1.22rem;line-height:1.72;color:var(--ink)}
 .pg-prose p{margin:0 0 1rem}
@@ -117,14 +117,15 @@
   .mapcard .mc-t{font-size:1.4rem}
   .pg-hero .pg-spine h2{margin-top:1.8rem}
   .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
-  .pg-beat-h .n{font-size:3.6rem}
   .pg-prose{font-size:1.1rem}
   .pg-figs.two{grid-template-columns:1fr}
   .pg-beat-below .pg-zguide,.pg-answer .pg-cards,.pg-alike,.pg-below-facts,.pg-two{grid-template-columns:1fr;gap:1.8rem}
   .pg-short li{grid-template-columns:1fr}
   .pg-cols main > section.pg-answer{margin-left:0;margin-right:0;padding:2.6rem 0}
 }
-.pg.tour .pg-hero{grid-template-columns:1fr;grid-template-areas:"t" "pic" "w"}
-.pg.tour .pg-hero .pg-mosaic{margin-top:1.2rem}
 .pg.tour .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
 .pg.tour .pg-beat-below .pg-zguide,.pg.tour .pg-answer .pg-cards,.pg.tour .pg-alike,.pg.tour .pg-below-facts,.pg.tour .pg-two{grid-template-columns:1fr;gap:1.8rem}
+
+/* The photo that grows from the card into the map mode (src/story/unfold.ts) */
+.grow{position:fixed;z-index:100;overflow:hidden;background:#141414;pointer-events:none}
+.grow img{display:block;width:100%;height:100%;object-fit:cover}

@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 
 // "Map tour" folded into the guide page (owner 21 Oct 2026, layout A): the band, the map column beside the guide, the stop that follows
-// the scroll, the geology credit, the fact marker keys, Hide map, and the old story address.
+// the scroll, the geology credit, the fact marker keys, Close the map, and the old story address.
 // Real content; outside hosts (tiles, the IGME geology service) are blocked, so only the page's own state is asserted (active step, credit text, focus, address).
 
 async function open(page: Page, hash: string) {
@@ -51,12 +51,23 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await expect(mapCol(page)).toBeVisible();
   // Opening from the band leaves the reader where the band was, so the step is the chapter in view; at the lede it is the opening view.
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
-  await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
+  // The map mode opens on beat 1's first stop (no page hero, so no cover step), with its own band: no site nav, no search, no jump bar.
+  await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
+  await expect(page.locator('.pg-top .story-brand')).toHaveText('AtlaSlope');
+  await expect(page.locator('.pg-top').getByRole('link', { name: 'Back to Rioja' })).toBeVisible();
+  await expect(page.locator('.pg-top nav, .pg-top input, .pg-hero, .pg-jump')).toHaveCount(0);
+  await expect(page.locator('.story-where')).toHaveText('Chapter 1 of 4');
+  await expect(page.locator('.story-chip')).toHaveText('Haro to Alfaro, the whole valley');
+  await expect(page.locator('.story-loc')).toBeVisible();
+  // The terrain height toggle states its choice in the credit line.
+  await expect(page.getByRole('button', { name: '×1.5' })).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: '×1.3' }).click();
+  await expect(page.locator('.pg-tourmap .story-credit')).toContainText('×1.3');
   await expect(page.locator('.pg-climate')).toBeVisible(); // the guide's own charts stay
   await expect(page.locator('#taste')).toBeAttached();
   await scrollToLine(page, '[data-fly="soils.0"]');
   await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
-  await expect(page.locator('.pg-tourcap')).toContainText('Stop 7 of 9');
+  await expect(page.locator('.story-where')).toHaveText('Chapter 3 of 4');
   await expect(page.locator('.pg-tourmap .story-credit')).toContainText('Source: IGME, MAGNA 50');
 });
 
@@ -70,11 +81,11 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
 });
 
-test('on a phone the map strip is 300 px and the credit is folded', async ({ page }) => {
+test('on a phone the map is pinned at the top, 42% of the screen, and the credit is folded', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(mapCol(page)).toHaveCSS('height', '300px');
+  await expect(mapCol(page)).toHaveCSS('height', '354.469px');
   await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
 });
 
@@ -105,11 +116,11 @@ test('a fact marker opens with Enter, Escape closes it and focus returns to the 
   await expect(page).toHaveURL(/#place=rioja&page&story(&view=.*)?$/); // the first Escape only closed the card
 });
 
-test('Hide map returns to the plain guide', async ({ page }) => {
+test('Close the map returns to the plain guide', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Hide map' })).toBeFocused(); // focus follows the map open
-  await page.getByRole('button', { name: 'Hide map' }).click();
+  await expect(page.getByRole('button', { name: 'Close the map' })).toBeFocused(); // focus follows the map open
+  await page.getByRole('button', { name: 'Close the map' }).click();
   await expect(page).toHaveURL(/#place=rioja&page(&view=.*)?$/);
   await expect(page.locator('.pg-tourmap')).toHaveCount(0);
   await expect(page.locator('a.mapcard')).toBeVisible();
@@ -126,21 +137,25 @@ test('the map column comes after the guide in reading order', async ({ page }) =
 // Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
 // [step, anchor, place in its row]: links sharing a row are held 120 px apart in reading order (holdSteps), so the k-th is placed k x 120 px above the line.
 const ORDER: Array<[string, string, number]> = [
-  ['intro', '.pg-spine', 0], ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
+  ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
   ['z-rioja-alta', '[data-fly="climate.0"]', 0], ['z-rioja-alavesa', '[data-fly="climate.1"]', 1], ['z-rioja-oriental', '[data-fly="climate.2"]', 2],
   ['soils', '[data-fly="soils.0"]', 0], ['barrel', '#terroir-barrel', 0], ['haro', '[data-fly="barrel.0"]', 0],
 ];
 for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { width: 390, height: 844 }]] as const) {
   test(`scrolling the Rioja guide at ${name} shows stops 1 to 9 in order`, async ({ page }) => {
+    // Nine scrolls, each followed by a map flight that the software-rendered WebGL of a shared CI runner draws on the main thread, so `evaluate`
+    // waits behind it. Measured (#190): 6 s alone, 28-30 s with the CPU saturated (about 5 s a stop), against the 30 s default. The test asserts all
+    // nine stops as before; it only gets three times the time. A signal cannot shorten it: data-step follows the scroll at once, the cost is the flights.
+    test.slow();
     await page.setViewportSize(size);
     await open(page, '#place=rioja&page&story');
     // The map chunk loads lazily and its empty placeholder has no data-step: scroll only once the real column (step 1) is mounted.
-    await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
     for (const [id, anchor, rank] of ORDER) {
       await scrollToLine(page, anchor, rank);
       await expect(mapCol(page)).toHaveAttribute('data-step', id);
     }
-    await expect(page.locator('.pg-tourcap')).toContainText('Stop 9 of 9');
+    await expect(page.locator('.story-chip')).toHaveText("Haro's station quarter");
   });
 }
 
@@ -179,4 +194,31 @@ test.describe('phone 375 px', () => {
     await expect(mapCol(page)).toBeVisible();
     await expect(page.locator('.showmap')).toBeHidden();
   });
+});
+
+test('the card unfolds into the map mode and Close the map returns the same paragraph', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await open(page, '#place=rioja&page');
+  const para = page.locator('p[data-b]').nth(2);
+  await page.locator('.pg').evaluate((pg, i) => { const el = pg.querySelectorAll('p[data-b]')[i]; pg.scrollTop += el.getBoundingClientRect().top - 200; }, 2);
+  const key = await para.getAttribute('data-b');
+  const before = await para.evaluate((el) => el.getBoundingClientRect().top);
+  await page.locator('a.mapcard').dispatchEvent('click', { button: 0 }); // a real click would first scroll the card into view
+  await expect(page.locator('.grow')).toHaveCount(1); // the photo grows from the card
+  await expect(mapCol(page)).toBeVisible();
+  await expect(page.locator('.grow')).toHaveCount(0, { timeout: 8000 });
+  await page.locator('.pg-close').click();
+  await expect(page.locator('.pg.tour')).toHaveCount(0);
+  const mine = page.locator(`[data-b="${key}"]`);
+  await expect(mine).toBeVisible();
+  const top = await mine.evaluate((el) => el.getBoundingClientRect().top);
+  expect(Math.abs(top - before)).toBeLessThanOrEqual(2);
+});
+
+test('reduced motion opens the map mode with no growing photo', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await open(page, '#place=rioja&page');
+  await page.locator('a.mapcard').click();
+  await expect(mapCol(page)).toBeVisible();
+  await expect(page.locator('.grow')).toHaveCount(0);
 });

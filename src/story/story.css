@@ -1,30 +1,52 @@
 /* "Map tour" folded into the guide page (owner 21 Oct 2026, approved mock Review/mock-tour-in-guide/: band B3, layout A). White page,
    black band + champagne, 6px corners, no pills. */
 
-/* Layout A: the same page in two columns, the guide left and a sticky map right; on a phone a 300 px map strip under the bar. */
+/* Map mode (owner 21 Oct 2026: the v3 journey, full screen; mock Review/mock-guide-redesign-r2/): the page is a fixed overlay (.pg), with its
+   own black band, a narrow reading column (544 px at 1440) and the map stage on the rest. Phone: the map pinned under the band at 42%. */
 .pg-body{display:block}
+.pg.tour{--sb:3.5rem}
+.story-top{position:sticky;top:0;z-index:20;height:calc(var(--sb) + 1px);display:flex;align-items:center;gap:1rem;padding:0 1.5rem;background:#141414;color:#E9D8B4;border-bottom:1px solid #7D6540}
+.story-brand{font:400 1.6rem/1 var(--serif,Georgia,serif);margin-right:auto}
+.story-where{margin:0;font-size:.9rem;color:#C9B48A;white-space:nowrap}
+.story-back{display:inline-flex;align-items:center;min-height:2.75rem;font-size:.95rem;font-weight:500;color:#E9D8B4;text-underline-offset:.2em;text-decoration-color:#7D6540;white-space:nowrap}
+.pg.tour .pg-close{margin-left:0}
 .pg.tour .pg-body{display:flex;align-items:flex-start}
-.pg.tour .pg-listing{flex:1 1 0;min-width:0;max-width:none;padding-left:2rem;padding-right:2rem}
+.pg.tour .pg-listing{flex:0 0 clamp(26rem,37.8vw,44rem);min-width:0;max-width:none;width:auto;margin:0;padding:0 2rem 0 2.2rem;border-left:3px solid #A8895A}
 .pg.tour .pg-beat-body.two{grid-template-columns:minmax(0,1fr);gap:1.5rem}
-.pg.tour .pg-mosaic{height:min(22rem,34vw)}
-.pg-tourmap{order:2;flex:0 0 46%;position:sticky;top:calc(var(--bar) + 1px);height:calc(100dvh - var(--bar) - 1px);background:#1b1b1b}
+.pg-tourmap{order:2;flex:1 1 0;min-width:0;position:sticky;top:calc(var(--sb) + 1px);height:calc(100dvh - var(--sb) - 1px);background:#1b1b1b}
 .pg-tourmap-in{position:absolute;inset:0}
 /* MapLibre styles its container position:relative; this selector wins over it. */
 .pg-tourmap .story-map{position:absolute;inset:0}
-.pg-tourcap{position:absolute;left:0;right:0;top:0;z-index:3;display:flex;gap:.8rem;align-items:baseline;margin:0;padding:.55rem .9rem;background:rgba(20,20,20,.88);color:#E9D8B4;border-bottom:1px solid #E9D8B4;font-size:.85rem}
-.pg-tourcap .k{color:#C9B48A;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
-.pg-tourcap b{flex:1;min-width:0;font:500 1.05rem var(--serif,Georgia,serif)}
-.pg-tourcap button{border:0;background:none;padding:.2rem 0;color:#E9D8B4;font:inherit;text-decoration:underline;text-underline-offset:.2em;cursor:pointer;white-space:nowrap}
-.pg-tourcap button:focus-visible{outline:2px solid #E9D8B4;outline-offset:2px}
-.pg-tourmap .maplibregl-ctrl-top-right{top:2.6rem}
+.story-chip{position:absolute;left:.75rem;top:.75rem;z-index:2;margin:0;padding:.4rem .75rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.9rem;max-width:calc(100% - 17rem)}
+.story-exag{position:absolute;right:3.5rem;top:.75rem;z-index:2;display:flex;align-items:center;gap:.25rem;padding:.2rem .2rem .2rem .6rem;border-radius:6px;background:#141414;color:#C9B48A;font-size:.78rem}
+.story-exag button{min-height:2.75rem;min-width:2.75rem;border:1px solid transparent;border-radius:6px;background:transparent;color:#E9D8B4;font:500 .9rem var(--sans,sans-serif);cursor:pointer}
+.story-exag button[aria-pressed="true"]{background:#E9D8B4;color:#141414}
+.story-exag button:focus-visible{outline:2px solid #E9D8B4;outline-offset:1px}
+.story-loc{position:absolute;left:.75rem;bottom:2.4rem;z-index:2;width:120px;height:auto;padding:4px;border-radius:6px;background:#141414;border:1px solid #7D6540}
+.story-loc path{fill:#E9D8B4}
+.story-loc .lbox{fill:rgba(20,20,20,.15);stroke:#141414;stroke-width:1.4}
+.story-loc .ldot{fill:#141414;stroke:#fff;stroke-width:1}
+.pg .story-credit{max-width:none}
+.story-credit .sw{display:inline-block;width:.7rem;height:.7rem;margin-right:.45rem;border-radius:2px;background:#8C2340;border:1px solid #E9D8B4;vertical-align:-1px}
+.pg.tour .pg-beat-h h3{font-size:1.9rem}
+.pg.tour .pg-figs.two{grid-template-columns:1fr}
+/* A stop's card in the column (mock): bordered, with the photo, the "On the map" label, the stop's name, its line and its measure. */
+.pg.tour .pg-fig{padding:1rem;border:1px solid #E3DCCB;border-left:3px solid #141414;border-radius:6px;background:var(--paper2,#F7F4EC)}
+.pg.tour .pg-fig img{max-width:none}
+.pg.tour .pg-fig .cap-k{display:block;font:500 .7rem var(--sans,sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#7A6238}
+.pg.tour .pg-fig .cap-t{margin-top:.15rem;text-decoration:underline;text-underline-offset:.2em;text-decoration-color:#B9AE96}
+.pg-tourmap .maplibregl-ctrl-top-right{top:.75rem}
 .pg-tourmap .maplibregl-ctrl-bottom-right{bottom:2rem}
 @media (max-width:47.5em){
+  .story-top{padding:0 .9rem;gap:.6rem}
+  .story-brand{font-size:1.35rem}
+  .story-where{display:none}
   .pg.tour .pg-body{flex-direction:column;align-items:stretch}
-  .pg.tour .pg-listing{padding-left:1rem;padding-right:1rem}
-  .pg-tourmap{order:-1;flex:0 0 300px;height:300px;z-index:16}
-  .pg.tour .pg-jump{top:calc(var(--bar) + 301px)}
-  .pg-tourcap{flex-wrap:wrap;gap:.1rem .6rem;padding:.4rem .75rem}
-  .pg-tourcap b{font-size:.95rem}
+  .pg.tour .pg-listing{flex:none;padding-left:1rem;padding-right:1rem}
+  .pg-tourmap{order:-1;flex:0 0 42dvh;height:42dvh;z-index:16}
+  .story-chip{font-size:.78rem;max-width:calc(100% - 12rem)}
+  .story-exag{right:3rem;padding-left:.4rem}.story-exag span{display:none}
+  .story-loc{width:84px;bottom:3.1rem}
 }
 
 /* On the map: stop markers, the credit line and the recentre button. */
@@ -63,16 +85,24 @@
 
 /* Phone and tablet strip: the legend wraps and stops short of the zoom control (top right) instead of running under it. */
 @media (max-width:61rem){
-  .pg-tourmap .story-legend{right:3.6rem;white-space:normal;overflow:visible}
-  .pg-tourmap .story-legend span{display:inline-block}
+  
 }
 /* The guide column never grows past the screen (the page's auto side margins let it size to its widest child), and the chip bar sits opaque
    above the text with every heading scrolled clear of it. */
-.pg.tour .pg-listing{width:100%;margin:0}
-.pg.tour .pg-jump{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none;mask-image:none;-webkit-mask-image:none}
-.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 4.5rem)}
-@media (max-width:47.5em){.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--bar) + 241px + 4rem)}}
+.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--sb) + 1.5rem)}
+@media (max-width:47.5em){.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--sb) + 42dvh + 1.5rem)}}
 /* The rock key has long unit names: it wraps beside the zoom control, on a column and on a phone strip (never cut off). */
 .pg-tourmap .story-legend{white-space:normal;overflow:visible;right:3.6rem;max-width:none}
 /* The floating "Show map" button is for the guide alone: while the tour map is open it only covers the text (owner card 3, 21 Oct 2026). */
 .pg.tour .showmap{display:none}
+
+/* "Close the map" in the black band (map mode, card A of slice 2, 22 Oct 2026): champagne outline, 6px corners, no pill. */
+.pg-close{flex:none;margin-left:auto;min-height:2.5rem;padding:0 1rem;border:1px solid #E9D8B4;border-radius:6px;background:none;color:#E9D8B4;font:500 .95rem var(--sans,sans-serif);cursor:pointer}
+.pg-close:hover{background:rgba(233,216,180,.12)}
+.pg-close:focus-visible{outline:2px solid #E9D8B4;outline-offset:2px}
+/* Map mode: the place and its lede above beat 1 (owner 22 Oct 2026). */
+.pg.tour .pg-cover{padding:0 0 1.6rem;margin-bottom:1.8rem;border-bottom:1px solid var(--line)}
+.pg.tour .pg-cover h1{font:500 2.6rem/1 var(--serif);letter-spacing:-.02em;margin:0 0 .9rem}
+.pg.tour .pg-cover .pg-spine{padding:0;max-width:none}
+.pg.tour .pg-cover .pg-spine h2{margin:0 0 .3rem;font:400 .95rem var(--serif)!important;color:var(--ink3)}
+.pg.tour .pg-cover .pg-lede{font-size:1.35rem;line-height:1.38;max-width:none}

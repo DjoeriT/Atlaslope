@@ -441,7 +441,13 @@ export const strings = {
     /** Under a stop's measured line in the guide (what the figure is and where the terrain comes from). */
     measuredBy: 'Measured by AtlaSlope · Terrain: Mapzen',
     stopOf: (k: number, n: number) => `Stop ${k} of ${n}`,
-    hide: 'Hide map',
+    close: 'Close the map',
+    /** The map mode's own black band (v3 stage, restored 22 Oct 2026): where in the guide the reader is, and the way back to the page. */
+    chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
+    back: (name: string) => `Back to ${name}`,
+    locator: 'Where the map is in Spain',
+    terrainHeight: 'Terrain height',
+    slopeKey: 'Slopes >30%',
     mapLabel: 'Map that follows the text',
     recentre: 'Back to this stop',
     /** A measure of a zone shown at a stop framed on the whole region ("In Rioja Alta, half the land..."). */

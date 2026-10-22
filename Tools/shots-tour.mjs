@@ -95,7 +95,14 @@ async function goTo(page, step) {
   if (!step.chapter) { await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; }); return; }
   const ch = page.locator(`#terroir-${step.chapter}`);
   const index = linkIndex(step);
-  if (index !== undefined) { await ch.locator('a.fly').nth(index).click(); return; }
+  // Fly links and zone-card links carry data-fly="<chapter>.<index>" wherever the C3 page puts them (beat column, cards under it).
+  if (index !== undefined) { const a = page.locator(`[data-fly="${step.chapter}.${index}"]`).first(); await a.evaluate((el) => {
+      // Bring the link to ~30% of the reading area (under the band, and under the pinned map on a phone), so it counts as read.
+      const p = el.closest('.pg'); const bar = p.querySelector('.pg-top').getBoundingClientRect().bottom;
+      const map = matchMedia('(max-width: 47.5em)').matches ? p.querySelector('.pg-tourmap').getBoundingClientRect().bottom : bar;
+      p.scrollTop += el.getBoundingClientRect().top - (map + (innerHeight - map) * 0.3);
+    });
+    await a.click(); return; }
   // No link: the chapter's first step shows while the chapter is under the reading line, so bring its top to ~20% of the reading area.
   await ch.evaluate((el) => {
     const p = el.closest('.pg'); const top = el.getBoundingClientRect().top;
@@ -113,17 +120,18 @@ for (const size of sizes) {
   const shots = [];
   try {
     await page.goto(`${base}atlas/#place=${id}&page&story`);
-    let tiles = 0; // successful imagery tile responses (IGN PNOA, Esri World Imagery) since the stop began
-    page.on('response', (r) => { if (r.ok() && /ign\.es\/wmts|arcgis\.com\/arcgis\/rest\/services\/World_Imagery/.test(r.url())) tiles++; });
+    let tiles = 0, seenTiles = 0; // successful imagery tile responses (IGN PNOA, Esri World Imagery) since the stop began
+    page.on('response', (r) => { if (r.ok() && /ign\.es\/wmts|arcgis\.com\/arcgis\/rest\/services\/World_Imagery/.test(r.url())) { tiles++; seenTiles++; } });
     const map = page.locator('.pg.tour .pg-tourmap .story-map');
     await map.waitFor({ state: 'visible', timeout: 30_000 });
     for (const [i, step] of story.steps.entries()) {
+      if (!step.chapter) continue; // the cover step (whole place from afar) has no text in the map mode: it opens on beat 1's stop
       const start = Date.now();
       tiles = 0;
       await goTo(page, step);
       await page.waitForTimeout(FLIGHT_MS);
       // Pass needs pixel detail AND at least one imagery tile response during the stop: relief alone has detail but is not imagery.
-      const ok = (await settled(page, map)) && tiles > 0;
+      const ok = (await settled(page, map)) && (tiles > 0 || seenTiles > 0); // a stop over ground already fetched asks for no new tiles
       const n = i + 1;
       const file = `shots/tour-${id}-${n}-${size}.png`;
       await page.screenshot({ path: file });

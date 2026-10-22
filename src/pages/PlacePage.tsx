@@ -1,5 +1,5 @@
 import { PageTop } from './PageTop';
-import { lazy, Suspense, useEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
 import { cardShownBefore, noteCardKey } from '../cards/CardShell';
@@ -28,6 +28,7 @@ import type { Story } from '../story/format';
 import { flyKey } from '../story/steps';
 import type { Measures } from '../facts';
 import type { MeasureKind, StoryStep } from '../story/format';
+import { crossFade, dropGrow } from '../story/unfold';
 import { MapCard } from './MapCard';
 import { PHOTO_MAX_REM, Pic, sizesFor } from './Pic';
 
@@ -115,13 +116,47 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
-  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to the "Read with the map" card on hide. A pending fly is dropped on hide.
+  // Focus follows the map: to "Close the map" in the band on open, back to the "Read with the map" card on hide. A pending fly is dropped on hide.
   const hadTour = useRef(tour);
+  const closeBtn = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
+    if (tour) closeBtn.current?.focus({ preventScroll: true });
+    else if (hadTour.current) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
     hadTour.current = tour;
   }, [tour]);
-  const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
+  // Opening or closing the map keeps the reader on the same paragraph at the same height under the bar (or under the pinned map on a phone):
+  // the paragraph (data-b) at the top of the reading area is noted as the page scrolls, and put back after the layout changes.
+  const kept = useRef<{ key: string; off: number }>();
+  const areaTop = (page: HTMLElement) => {
+    const edge = page.querySelector('.pg-top')?.getBoundingClientRect().bottom ?? 0;
+    return matchMedia('(max-width: 47.5em)').matches ? page.querySelector('.pg-tourmap')?.getBoundingClientRect().bottom ?? edge : edge;
+  };
+  useEffect(() => {
+    const page = pageRef.current;
+    if (!page) return;
+    const note = () => {
+      const top = areaTop(page);
+      const el = Array.from(page.querySelectorAll<HTMLElement>('[data-b]')).find((b) => b.getBoundingClientRect().bottom > top + 4);
+      kept.current = el && el.getBoundingClientRect().top < innerHeight ? { key: el.dataset.b!, off: el.getBoundingClientRect().top - top } : undefined;
+    };
+    note();
+    let raf = 0;
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; note(); }); };
+    page.addEventListener('scroll', onScroll, { passive: true });
+    return () => { page.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf); };
+  }, [place.id, tour]);
+  const firstRun = useRef(true);
+  useLayoutEffect(() => {
+    if (firstRun.current) { firstRun.current = false; return; }
+    const page = pageRef.current;
+    const k = kept.current;
+    const el = k && page?.querySelector<HTMLElement>(`[data-b="${k.key}"]`);
+    if (page && k && el) page.scrollTop += el.getBoundingClientRect().top - (areaTop(page) + k.off);
+    // Folding back fades the page in (450 ms); opening with reduced motion is a plain cross-fade. The growing photo covers the normal opening.
+    if (page && !(tour && document.querySelector('.grow'))) crossFade(page, tour ? 250 : 450);
+  }, [tour]);
+  const [chapterNo, setChapterNo] = useState(0);
+  const hideMap = () => { dropGrow(); setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
@@ -206,6 +241,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       <figure key={`${id}.${step.fly ?? step.photo}`} className="pg-fig">
         <Pic photo={photo} slot={stops.length > 1 ? 16 : PHOTO_MAX_REM} alt={photo.alt} />
         {fly && <figcaption>
+          {tour && <span className="cap-k">{t.onTheMap}</span>}
           <span className="cap-t">{fly.label}</span>
           <span className="cap-p">{fly.caption}</span>
           {line && <span className="cap-m">{line}<small>{ts.measuredBy}</small></span>}
@@ -243,7 +279,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     return (
       <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
         {heading && <h4 id={`terroir-${ch.id}-h`} tabIndex={-1}>{ch.title}</h4>}
-        {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
+        {ch.paras.map((para, i) => <p key={i} data-b={`${ch.id}.${i}`}>{para}</p>)}
         {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
         {src(ch.cite)}
         {withCards && zoneCards(ch)}
@@ -418,12 +454,27 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   if (cardPhoto && !tour) pics.push(cardPhoto);
   const pageHash = selectionToHash({ kind: 'place', id: place.id, page: true });
 
+  const spineHead = spine && (
+    <header className="pg-spine">
+      <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
+      {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
+    </header>
+  );
+
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
+      {tour ? (
+        // The map mode has its own black band, no site nav or search (the v3 stage, restored 22 Oct 2026).
+        <header className="pg-top story-top">
+          <span className="story-brand">AtlaSlope</span>
+          <p className="story-where">{chapterNo > 0 ? ts.chapterOf(chapterNo, guide?.chapters.length ?? 0) : ''}</p>
+          <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>
+          <a className="story-back" href={pageHash} onClick={(e) => { e.preventDefault(); hideMap(); }}>{ts.back(place.name)}</a>
+        </header>
+      ) : <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />}
       <div className="pg-body">
       <div className="pg-listing">
-        <div className="pg-hero">
+        {!tour && <div className="pg-hero">
           <div className="pg-hero-tt">
             <nav className="kicker crumb" aria-label={tc.whereThisSits}>
               {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
@@ -447,24 +498,21 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
             ) : <Mosaic key={place.id} photos={photos} name={place.name} color={color} />}
           </div>
           <div className="pg-hero-why">
-            {spine && (
-              <header className="pg-spine">
-                <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
-                {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-              </header>
-            )}
+            {spineHead}
             {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
           </div>
-        </div>
+        </div>}
 
-        <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
+        {!tour && <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
             <a key={s.id} href={pageHash} aria-current={current === s.id ? 'true' : undefined} onClick={jump(s.id, s.focus)}>{s.label}</a>
           ))}
-        </nav>
+        </nav>}
 
         <div className="pg-cols">
           <main>
+            {/* Map mode keeps the spine on top: the place and why it tastes the way it does (owner 22 Oct 2026, picture 2). */}
+            {tour && <header className="pg-cover"><h1>{place.name}</h1>{spineHead}</header>}
             {beats.map((b) => {
               const stops = b.chapters.flatMap(stopsOf);
               const figs = stopFigures(stops);
@@ -474,14 +522,14 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
               return (
                 <section key={b.id} id={b.id} className={figs.length > 0 || side ? 'pg-beat' : 'pg-beat solo'} aria-labelledby={beatHeading(b)}>
                   <div className="pg-beat-main">
+                    {/* The number lives in the kicker: one left edge for kicker, title and prose (owner picked B, 22 Oct 2026). */}
                     <div className="pg-beat-h">
-                      <span className="n" aria-hidden="true">{b.n}</span>
                       {b.chapters[0] ? (
                         <>
-                          <span className="k">{t.beats[b.id]}</span>
+                          <span className="k"><span className="n" aria-hidden="true">{b.n}<span className="dot"> · </span></span>{t.beats[b.id]}</span>
                           <h3 id={beatHeading(b)} tabIndex={-1}><span className="sr-only">{t.beats[b.id]}: </span>{b.chapters[0].title}</h3>
                         </>
-                      ) : <h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3>}
+                      ) : <><span className="k"><span className="n" aria-hidden="true">{b.n}</span></span><h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3></>}
                     </div>
                     {b.chapters.length > 0 && <div className="pg-prose">{b.chapters.map((ch, i) => chapterBody(ch, i > 0, false))}</div>}
                   </div>
@@ -630,7 +678,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       </div>
       {tour && guide && story && (
         <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onHide={hideMap} />
+          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onChapter={setChapterNo} />
         </Suspense>
       )}
       </div>
