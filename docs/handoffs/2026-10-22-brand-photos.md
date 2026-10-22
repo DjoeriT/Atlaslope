@@ -61,3 +61,5 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
 - After keeps band, champagne, fonts, headline, nav; photos become framed print mosaics on home, Rioja guide opening and Priorat atlas card. 12 photos, none repeated.
 - Open choice for the owner: home trades the live map hero for photos (visual-style.md says "product, not stock photo"). Alternative: keep the map hero and use the mosaic below it.
 - Shipping needs: picks into `data/photos.json` and `public/photos/` (larger sizes than 800 px), crop checks, and Priorat photos' place checked (Montsant vs Priorat).
+- Version 2 (owner: "keep the map and add the photos as well"): home keeps the live map hero, the five-print mosaic sits under it on pure white,
+  one credit line. Rioja guide and Priorat card unchanged. The builder's invented heading over the mosaic was removed by LeadBot. Builder 75K more tokens [V].
