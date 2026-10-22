@@ -1,29 +1,6 @@
-{
- "torres-vedras": {
-  "source": "torres-vedras-doc:p5",
-  "zones": {
-   "torres-vedras": {
-    "parishes": {
-     "Torres Vedras": [
-      "Dois Portos",
-      "Runa",
-      "São Domingos de Carmões"
-     ],
-     "Mafra": [
-      "Azueira"
-     ]
-    },
-    "districts": [],
-    "municipalities": [],
-    "except": {}
-   }
-  },
-  "notMapped": [
-   "Torres Vedras, part of: Carvoeira, Freiria, Matacães, São Mamede da Ventosa, São Pedro e Santiago, Santa Maria do Castelo, Turcifal (red and white)",
-   "Mafra, part of (white wine only): Encarnação, Enxara do Bispo, Gradil, Santo Isidoro, Sobral da Abelheira, Vila Franca do Rosário",
-   "Sobral de Monte Agraço, part of: Sapataria, São Salvador, Santo Quintino",
-   "Torres Vedras, part of: A dos Cunhados, Campelos, Freiria, Maxial, Monte Redondo, Ponte do Rol, Ramalhal, São Mamede, São Miguel, São Pedro da Cadeira, São Pedro e Santiago, Santa Maria do Castelo, Silveira, Turcifal"
-  ],
-  "aliases": {"Torres Vedras": {"São Domingos de Carmões": "União das freguesias de Carvoeira e Carmões"}}
- }
-}
+{"torres-vedras":{"source":"torres-vedras-doc:p5","zones":{"torres-vedras":{"districts":[],"municipalities":[],"except":{},"parishes":{
+"Torres Vedras":["Dois Portos","Runa","São Domingos de Carmões","Carvoeira","Freiria","Matacães","São Mamede da Ventosa","São Pedro e Santiago","Santa Maria do Castelo","Turcifal","A dos Cunhados","Campelos","Maxial","Monte Redondo","Ponte do Rol","Ramalhal","São Mamede","São Miguel","São Pedro da Cadeira","Silveira"],
+"Mafra":["Azueira","Encarnação","Enxara do Bispo","Gradil","Santo Isidoro","Sobral da Abelheira","Vila Franca do Rosário"],
+"Sobral de Monte Agraço":["Sapataria","São Salvador","Santo Quintino"]}}},
+"notMapped":["Torres Vedras: Carvoeira, Freiria, Matacães, São Mamede da Ventosa, São Pedro e Santiago, Santa Maria do Castelo, Turcifal, A dos Cunhados, Campelos, Maxial, Monte Redondo, Ponte do Rol, Ramalhal, São Mamede, São Miguel, São Pedro da Cadeira, Silveira: partly in the spec, taken whole","Mafra (white wine only): Encarnação, Enxara do Bispo, Gradil, Santo Isidoro, Sobral da Abelheira, Vila Franca do Rosário: partly in the spec, taken whole","Sobral de Monte Agraço: Sapataria, São Salvador, Santo Quintino: partly in the spec, taken whole"],
+"aliases":{"Torres Vedras":{"São Domingos de Carmões":"União das freguesias de Carvoeira e Carmões","São Mamede da Ventosa":"Ventosa","São Mamede":"Ventosa","São Pedro e Santiago":"Santa Maria, São Pedro e Matacães","Santa Maria do Castelo":"Santa Maria, São Pedro e Matacães","São Miguel":"Santa Maria, São Pedro e Matacães"},"Sobral de Monte Agraço":{"São Salvador":"Sobral de Monte Agraço"}}}}
