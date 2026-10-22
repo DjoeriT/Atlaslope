@@ -63,3 +63,6 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
 - Shipping needs: picks into `data/photos.json` and `public/photos/` (larger sizes than 800 px), crop checks, and Priorat photos' place checked (Montsant vs Priorat).
 - Version 2 (owner: "keep the map and add the photos as well"): home keeps the live map hero, the five-print mosaic sits under it on pure white,
   one credit line. Rioja guide and Priorat card unchanged. The builder's invented heading over the mosaic was removed by LeadBot. Builder 75K more tokens [V].
+- Version 3 (owner: "the mosaic in the bottom half of the map"): home hero options. A splits the map column (map top 55%, 3 prints below on white);
+  B lays 3 prints in a white frame over the map's lower half, replacing the Rioja card. Builder 94K more tokens [V]. Weak spots [V]: the prints are tall crops
+  of wide landscapes, and A's screenshot-crop map loses the Rioja outline (a real build would recentre the map).
