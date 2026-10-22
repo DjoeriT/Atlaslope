@@ -243,6 +243,28 @@
     "madeira-doc:p9",
     "madeirense-doc:p6"
    ]
+  },
+  "fr-burgundy": {
+   "title": "Limestone slopes, frost in spring",
+   "lede": "Chablis sits on limestone and marl. Frost in winter and spring is a fairly serious risk.",
+   "from": [
+    "chablis"
+   ],
+   "cite": [
+    "chablis-doc:p6",
+    "chablis-doc:p7"
+   ]
+  },
+  "fr-bordeaux": {
+   "title": "Gravel terraces by the estuary",
+   "lede": "Pauillac's gravel drains well. The Atlantic and the Gironde soften the climate.",
+   "from": [
+    "pauillac"
+   ],
+   "cite": [
+    "pauillac-doc:p6",
+    "pauillac-doc:p8"
+   ]
   }
  },
  "places": {
@@ -1109,6 +1131,20 @@
    "title": "Basalt slopes keep the acid high",
    "cite": [
     "madeirense-doc:p6"
+   ]
+  },
+  "chablis": {
+   "title": "Chardonnay on limestone and marl",
+   "cite": [
+    "chablis-doc:p6",
+    "chablis-doc:p9"
+   ]
+  },
+  "pauillac": {
+   "title": "Deep gravel beside the Gironde",
+   "cite": [
+    "pauillac-doc:p6",
+    "pauillac-doc:p8"
    ]
   }
  }

@@ -13,7 +13,7 @@ import type { Overrides } from '../dops';
 import { strings } from '../strings';
 import type { View } from '../url';
 import { buildBoundaries, labelMinZoom, oceanFromLand, type Collection, type PlaceRow } from './boundaries';
-import { boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
+import { addedZones, boundsOf, framedFeatures, withZoneIds, type Focus } from './focus';
 import { addFlags } from './flags';
 import { addLabels, mapName, type Labels } from './labels';
 import { TAP_RADIUS_PX, frameBox, nearestPlace, revealBox, revealPadding, zoneVisibility, type Pt, type QuizView, type Shape } from './quiz';
@@ -70,8 +70,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const esriKey = import.meta.env.VITE_ESRI_API_KEY || undefined;
   const tiles = tilesEnabled();
   const hasImagery = tiles && !!esriKey;
-  // If IGN keeps failing, Esri stops skipping Spain and its tiles reload with a new URL.
-  const releaseImagery = hasImagery ? registerImagery(esriTemplate(esriKey as string), { onPnoaDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) }) : () => {};
+  // If an orthophoto (IGN's PNOA or BD ORTHO) keeps failing, Esri stops skipping its country and its tiles reload with a new URL.
+  const releaseImagery = hasImagery ? registerImagery(esriTemplate(esriKey as string), { onOrthophotoDown: () => (map.getSource('satellite') as maplibregl.RasterTileSource | undefined)?.setTiles([ESRI_PROTOCOL_TILES(Date.now())]) }) : () => {};
   if (tiles) registerGlyphs(ROOT);
   const map = new maplibregl.Map({
     container,
@@ -80,7 +80,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
     // Portugal's outlines are built from DGT's CAOP 2025 (CC BY 4.0 asks for the credit; PR #214 review, 22 Oct 2026)
-    attributionControl: { compact: true, customAttribution: 'Portugal outlines: DGT, CAOP 2025' },
+    // France's from INAO's parcel delimitation, which only INAO's own plans bind (decision #58).
+    attributionControl: { compact: true, customAttribution: ['Portugal outlines: DGT, CAOP 2025', 'France outlines: INAO, for information'] },
     antialias: true,
   });
   // The credits start folded to their small "i" on every screen (site visual review, 18 Oct 2026): MapLibre only folds them on narrow
@@ -169,8 +170,11 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
     Promise.all([asCollection(dopsUrl), asCollection(addedUrl), asCollection(landUrl), asCollection(zonesUrl)]).then(([dops, added, land, zoneFile]) => {
       boundaries = buildBoundaries(places.places as PlaceRow[], dops, overrides as unknown as Overrides, added);
-      const zoneIds = new Map((places.places as PlaceRow[]).filter((p) => p.kind === 'zone').map((p) => [p.name, p.id]));
-      zones = withZoneIds(zoneFile, (name) => zoneIds.get(name));
+      const zoneRows = (places.places as PlaceRow[]).filter((p) => p.kind === 'zone');
+      const zoneIds = new Map(zoneRows.map((p) => [p.name, p.id]));
+      const zoneNames = new Map(zoneRows.map((p) => [p.id, p.name]));
+      const rioja = withZoneIds(zoneFile, (name) => zoneIds.get(name));
+      zones = { ...rioja, features: [...rioja.features, ...addedZones(added, (id) => zoneNames.get(id))] };
       dos.setData(boundaries as never);
       (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
       hovered = []; // new data has no feature state

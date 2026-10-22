@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """France WSET L3 place list (decision #53, owner 22 Oct 2026: the WSET list first, region by region). Costs no tokens.
 
-Usage: fr_wset.py [--sources]   (in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
+Usage: fr_wset.py [--sources] [--content <id> ...]   (in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
 
 Reads the name table in Review/countries/france-prep/wset-l3-names.md (rows with an EU register file number), joins each to
 data/countries/fr/register.json (current single document = last summary sheet) and to the INAO parcel shapefile's names, and
@@ -10,6 +10,9 @@ outline cut. Prints one line per place that lacks a single document text or an I
 --sources also copies each single document text to Review/sources/fetched/att-<fileNumber>-<attachment>.txt and cuts it with
 Tools/guides/extract.py into Review/guides-pipeline/fr-<batch>/<id>.extract.txt with that batch's manifest.json (the route in
 docs/PROJECT.md "Run a region locally", step 2). A place without a single document is listed for its INAO cahier des charges.
+--content <id> ...: for the places a batch ships, adds "<id>-doc" to content/sources.json and an empty fact sheet to
+content/facts/fr-<batch>.json (as Tools/data/pt_batch.py does for Portugal), so `headless.py --sheets` can fill it.
+Cahier sources (cdc-*.txt) take their URL and date from CDC below (Review/countries/france-prep/wset-sources.md).
 """
 import csv
 import io
@@ -26,6 +29,18 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW = Path(os.environ.get("ATLASLOPE_RAW", ROOT / "data/raw")) / "countries/fr"
 TABLE = ROOT / "Review/countries/france-prep/wset-l3-names.md"
 OUT = ROOT / "data/countries/fr/wset-places.json"
+BO = "https://info.agriculture.gouv.fr/"
+CDC = {  # INAO cahiers des charges for the places with no single document on eAmbrosia (fetched 22 Oct 2026)
+    "crozes-hermitage": (BO + "boagri/document_administratif-7496da98-e980-4e30-8de0-2cc072fbb0fe/telechargement", "2024-12-10"),
+    "muscat-de-beaumes-de-venise": (BO + "gedei/site/bo-agri/document_administratif-0e5fc2bb-dd75-432d-acc8-26ee8927d62a/telechargement", "2021-03-11"),
+    "languedoc": (BO + "gedei/site/bo-agri/document_administratif-0b3e8099-c716-4fba-aa3a-bf1572cf9fab/telechargement", "2026-08-11"),
+    "minervois": (BO + "gedei/site/bo-agri/document_administratif-cc1cf391-d666-49f9-81cc-7ca4a90414cd/telechargement", "2020-12-07"),
+    "picpoul-de-pinet": (BO + "boagri/document_administratif-dc09ed16-3b99-45bc-b1f4-9a5fceebd3ec/telechargement", "2024-12-09"),
+}
+STUB = {"why": {"text": "", "cite": []}, "grapes": {"main": [], "cite": [], "others": [], "othersCite": []},
+        "styles": {"kinds": [], "text": "", "cite": []}, "climate": {"text": "", "cite": []}, "soil": {"text": "", "cite": []},
+        "altitude": {"text": "", "cite": []}, "tastes": {"text": "", "cite": []}, "famous": {"styles": [], "cite": []},
+        "producers": {"items": [], "cite": []}}
 
 
 def norm(s: str) -> str:
@@ -51,6 +66,9 @@ def inao_names() -> dict:
 
 def main() -> None:
     reg = {e["fileNumber"]: e for e in json.loads((ROOT / "data/countries/fr/register.json").read_text())["entries"]}
+    if "--content" in sys.argv and "--sources" not in sys.argv:  # needs only the committed list, not the raw shapefile
+        content(json.loads(OUT.read_text(encoding="utf-8"))["places"], reg, sys.argv[sys.argv.index("--content") + 1:])
+        return
     inao = inao_names()
     places, seen = [], set()
     for line in TABLE.read_text(encoding="utf-8").splitlines():
@@ -77,6 +95,8 @@ def main() -> None:
     print(f"no INAO outline: {len(no_inao)} {' '.join(no_inao)}")
     if "--sources" in sys.argv:
         sources(places)
+    if "--content" in sys.argv:
+        content(places, reg, sys.argv[sys.argv.index("--content") + 1:])
     by = {}
     for p in places:
         by[p["batch"]] = by.get(p["batch"], 0) + 1
@@ -102,6 +122,35 @@ def sources(places: list) -> None:
     for gp, m in manifests.items():
         (gp / "manifest.json").write_text(json.dumps({"sources": m}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"sources: {gp.relative_to(ROOT)}: {len(m)} places")
+
+
+def dump(path: Path, doc) -> None:
+    path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def content(places: list, reg: dict, ids: list) -> None:
+    by_id = {p["id"]: p for p in places}
+    src_path = ROOT / "content/sources.json"
+    known = json.loads(src_path.read_text(encoding="utf-8"))
+    for pid in ids:
+        p = by_id[pid]
+        e = reg[p["fileNumber"]]
+        if pid in CDC:
+            url, date = CDC[pid]
+            title = f"{p['registerName']} {p['fileNumber']}: INAO cahier des charges (French, BO Agri)"
+        else:
+            url = f"https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/{p['singleDocument']}"
+            date = (e.get("modificationDate") or e.get("euProtectionDate") or "")[:10]
+            title = (f"{p['registerName']} {p['fileNumber']}: EU single document / technical file ({p['type']}, French, "
+                     f"eAmbrosia attachment {p['singleDocument']})")
+        known.setdefault(f"{pid}-doc", {"kind": "official", "title": title, "url": url, "date": date})
+        fp = ROOT / f"content/facts/fr-{slug(p['batch'])}.json"
+        doc = json.loads(fp.read_text(encoding="utf-8")) if fp.exists() else {"region": fp.stem, "sheets": []}
+        if pid not in {s["id"] for s in doc["sheets"]}:
+            doc["sheets"].append({"id": pid, **json.loads(json.dumps(STUB))})
+        dump(fp, doc)
+        print(f"content: {pid} -> {fp.relative_to(ROOT)}, {pid}-doc")
+    dump(src_path, known)
 
 
 if __name__ == "__main__":

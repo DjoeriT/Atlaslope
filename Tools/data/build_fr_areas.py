@@ -3,15 +3,15 @@
 
 INAO's shapefile holds one polygon per denomination and commune (Lambert-93, EPSG:2154). For each place and zone in the spec the
 script dissolves the rows of its 'app' and 'denom', measures km2 in Lambert-93, simplifies (places 40 m, zones 10 m: climats are
-small) and writes data/countries/fr/areas.geojson in WGS84: one feature per place and zone (id, place, zone, parent, app, denom,
-communes, km2). Data only: nothing here feeds the app yet (France pilot waits, decision #52).
+small) and writes data/countries/fr/areas.geojson in WGS84: one feature per place and zone (id, place, kind, parent, app, denom,
+communes, km2). The shipped places (FR_SHIP) and their zones are copied into data/added-boundaries.geojson for the map.
 Every place in data/countries/fr/wset-places.json (Tools/countries/fr_wset.py, decision #53) that the spec does not name is
 added as a plain place with its INAO app/denom; the spec's own entries (zones, notes) win.
 
 Run: python3 Tools/data/build_fr_areas.py   (needs data/raw/countries/fr/inao-delim-parcellaire-aoc-shp.zip from
 Tools/countries/pull.py, and ogr2ogr; in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
 """
-import json, os, subprocess, tempfile, zipfile
+import json, os, subprocess, sys, tempfile, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -84,7 +84,20 @@ def main():
             print(f"{uid:22} {kind:5} {pr['km2']:8.2f} km2  {len(f['properties']['communes'])} communes")
     OUT.write_text(json.dumps({"type": "FeatureCollection", "features": out}, ensure_ascii=False, separators=(",", ":")))
     print(f"{OUT.relative_to(ROOT)}: {len(out)} features, {OUT.stat().st_size // 1024} KB")
+    to_map()
+
+
+def to_map():
+    """The shipped places (FR_SHIP in Tools/data/build_places.py) and their zones go into the map's outline file, as Portugal's do."""
+    from build_places import FR_SHIP
+    from build_pt_areas import put_added
+    feats = json.loads(OUT.read_text())["features"]
+    shipped = [{**f, "properties": {"id": f["properties"]["id"], "municipalities": f["properties"]["communes"], "km2": f["properties"]["km2"]}}
+               for f in feats if f["properties"]["place"] in FR_SHIP]
+    put_added(shipped, {f["properties"]["id"] for f in shipped})
+    print("data/added-boundaries.geojson:", len(shipped), "France outlines")
 
 
 if __name__ == "__main__":
-    main()
+    # --map: only copy the shipped outlines from areas.geojson into the map's file (no INAO download needed).
+    to_map() if "--map" in sys.argv else main()

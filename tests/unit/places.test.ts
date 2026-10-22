@@ -15,7 +15,7 @@ const groups = new Set<string>(tree.courses.flatMap((c: { groups: { id: string }
 describe('place tree', () => {
   it('lists all 106 wine DOPs of the ministry list, plus the three Rioja zones', () => {
     expect(places.filter((p) => p.level === 'place' && p.parent === 'spain')).toHaveLength(106);
-    expect(places.filter((p) => p.level === 'zone').map((p) => p.id)).toEqual(['rioja-alta', 'rioja-alavesa', 'rioja-oriental']);
+    expect(places.filter((p) => p.level === 'zone' && p.region === 'rioja').map((p) => p.id)).toEqual(['rioja-alta', 'rioja-alavesa', 'rioja-oriental']);
   });
 
   it('pools 72 core places (Cava and Catalunya in since 21 Oct 2026) and 6 Vinos de Calidad for the quiz', () => {
@@ -38,7 +38,7 @@ describe('place tree', () => {
 
   it('links every place to a real parent, region and overlap', () => {
     for (const p of places) {
-      expect(['spain', 'portugal'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
+      expect(['spain', 'portugal', 'france'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
       expect(groups.has(p.region), p.id).toBe(true);
       for (const o of p.alsoWithin ?? []) expect(byId.has(o), `${p.id} within ${o}`).toBe(true);
     }
@@ -49,7 +49,7 @@ describe('place tree', () => {
     expect(toFetch).toHaveLength(13);
     expect(toFetch.filter((p) => p.quiz !== 'none')).toEqual([]);
     expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
-    expect(places.filter((p) => p.boundary === 'added').map((p) => p.id).sort()).toEqual([
+    expect(places.filter((p) => p.boundary === 'added' && !p.region.startsWith('fr-')).map((p) => p.id).sort()).toEqual([
       'alenquer', 'alentejo', 'arruda', 'bairrada', 'beira-interior', 'bucelas', 'campo-de-calatrava', 'carcavelos', 'cebreros', 'colares', 'dao',
       'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'madeira', 'madeirense', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',
       'tavora-varosa', 'torres-vedras', 'tras-os-montes', 'urbezo', 'vinho-verde',

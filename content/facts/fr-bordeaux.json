@@ -1,0 +1,90 @@
+{
+ "region": "fr-bordeaux",
+ "sheets": [
+  {
+   "id": "pauillac",
+   "why": {
+    "text": "Deep gravel terraces beside the Gironde estuary drain well, and the ocean and estuary soften the climate, favouring Cabernet Sauvignon.",
+    "cite": [
+     "pauillac-doc:p6",
+     "pauillac-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cot",
+     "Carmenere",
+     "Cabernet-Sauvignon",
+     "Merlot",
+     "Cabernet Franc",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "pauillac-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only.",
+    "cite": [
+     "pauillac-doc:p2",
+     "pauillac-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Temperate oceanic climate; the Atlantic and the Gironde regulate temperatures. Rainy autumn spells or hot, sunny late seasons give a marked vintage effect.",
+    "cite": [
+     "pauillac-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Gravel or sandy-gravel terraces of Quaternary age, about ten metres thick, over Eocene and Oligocene marl and limestone. Plots on modern alluvium, thick wind-blown sand or poorly drained ground are excluded.",
+    "cite": [
+     "pauillac-doc:p6",
+     "pauillac-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Gravel terraces lie at 3 to 30 metres.",
+    "cite": [
+     "pauillac-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Very deeply coloured, powerful and structured reds, Cabernet Sauvignon-led. Merlot adds roundness and fruit. Tannic structure gives remarkable ageing ability and a complex bouquet.",
+    "cite": [
+     "pauillac-doc:p3",
+     "pauillac-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru classé",
+      "text": "Traditional label for classified estates; Pauillac has 18 of them."
+     },
+     {
+      "name": "Cru bourgeois",
+      "text": "Traditional mention allowed on labels."
+     },
+     {
+      "name": "Château",
+      "text": "Traditional mention allowed on labels."
+     }
+    ],
+    "cite": [
+     "pauillac-doc:p3",
+     "pauillac-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

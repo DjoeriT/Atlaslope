@@ -4,13 +4,14 @@ Input: Natural Earth 10 m admin 0 countries, v5.1.2 (data/raw/ne/ne_10m_admin_0_
 Output: Spain's polygons ('spain') and the neighbours' land near Spain ('neighbours'), simplified to about 200 m,
 3 decimals. The app fills Spain plus a strip of sea, then cuts the neighbours out (src/map/imagery.ts).
 
-Run: python3 Tools/data/build_spain_mask.py
+Run: python3 Tools/data/build_masks.py   (in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
 """
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / 'data/raw/ne/ne_10m_admin_0_countries.geojson'
+SRC = Path(os.environ.get('ATLASLOPE_RAW', ROOT / 'data/raw')) / 'ne/ne_10m_admin_0_countries.geojson'
 # Per country: its Natural Earth code, the box its polygons must touch, and the neighbours' land near it. Only that land matters
 # (the strip of sea around the country must not spill onto it), so each neighbour is clipped to a box.
 COUNTRIES = {
@@ -21,6 +22,12 @@ COUNTRIES = {
     'portugal': {'code': 'PRT', 'out': 'data/countries/pt/mask.json',
                  'box': (-10.0, 36.5, -6.0, 42.5),  # the mainland; Madeira and the Azores come after it (decision #51 notes)
                  'neighbours': {'ESP': (-9.5, 36.5, -5.5, 43.0)}},
+    # The mainland and Corsica; the overseas departments come later (France pilot, #149). Its photo is IGN's BD ORTHO.
+    'france': {'code': 'FRA', 'out': 'data/countries/fr/mask.json',
+               'box': (-5.5, 41.0, 10.0, 51.5),
+               'neighbours': {'ESP': (-2.0, 42.0, 3.6, 43.6), 'AND': (1.3, 42.3, 1.9, 42.7), 'BEL': (2.4, 49.4, 6.5, 51.2),
+                              'LUX': (5.7, 49.4, 6.6, 50.2), 'DEU': (6.0, 47.5, 8.4, 49.6), 'CHE': (5.9, 45.8, 7.7, 47.9),
+                              'ITA': (6.5, 43.7, 7.7, 46.0), 'MCO': (7.3, 43.7, 7.5, 43.8)}},
 }
 TOLERANCE = 0.002  # degrees, about 200 m
 

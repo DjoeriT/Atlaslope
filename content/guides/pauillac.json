@@ -1,0 +1,113 @@
+{
+ "id": "pauillac",
+ "title": "Why Pauillac tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Draining gravel mounds sit close to an estuary that shields the vines from the excesses of the climate. Cabernet Sauvignon dominates the blend and helps make the wines powerful and structured.",
+  "cite": [
+   "pauillac-doc:p6",
+   "pauillac-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "estuary",
+   "beat": "place",
+   "title": "Mounds above the estuary",
+   "paras": [
+    "Pauillac lies in the middle of the Médoc peninsula, 50 km north of Bordeaux on the left bank of the Gironde estuary. The appellation covers the commune of Pauillac and some plots in four other communes. Those plots historically belonged to the classified estates of Pauillac.",
+    "The land rolls in gravel mounds called croupes. Three main systems of them carry the vines. The largest is in the south, around the hamlets of Saint-Lambert and Bages. The smallest sits in the middle, around Artigues. The northern one is built around Pouyalet. The town and its port lie below the mounds, on the edge of the estuary.",
+    "The vineyard covers close to 1,250 hectares. Large estates work 90% of it, and about sixty small growers share the rest. A cooperative has united the small growers since 1933."
+   ],
+   "cite": [
+    "pauillac-doc:p4",
+    "pauillac-doc:p5",
+    "pauillac-doc:p6",
+    "pauillac-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Pauillac and its port",
+     "place": "pauillac",
+     "caption": "The town and port sit below the gravel mounds, on the edge of the Gironde estuary.",
+     "cite": [
+      "pauillac-doc:p6"
+     ]
+    },
+    {
+     "label": "The Gironde estuary",
+     "point": [
+      -0.7,
+      45.24
+     ],
+     "zoom": 9.5,
+     "caption": "The estuary lies close to the vines. It protects the vineyard from the excesses of the climate.",
+     "cite": [
+      "pauillac-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "Water that evens out the temperature",
+   "paras": [
+    "The climate is temperate and oceanic. The Atlantic and the Gironde both have a regulating effect on temperature.",
+    "Some years bring rainy spells in autumn. Others bring warm, very sunny late seasons. This gives a marked vintage effect."
+   ],
+   "cite": [
+    "pauillac-doc:p6"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Gravel on marl and limestone",
+   "paras": [
+    "The gravel terraces run parallel to the estuary at 3 to 30 m. They date from the Quaternary and are about ten metres thick on average. They cover almost all of the Eocene and Oligocene marl and limestone beneath.",
+    "A dense network of streams flowing into the Gironde, the esteys and jalles, has cut the terraces at right angles to the estuary. Hollows are often filled with wind-blown sand. Along the estuary, recent alluvium called palus adds grey and black clay.",
+    "The appellation's plots have gravelly or sandy-gravel soils. They must have fairly little fine sand and sound permeability. Plots on modern alluvium are left out. So are plots on thick wind-blown sand, and plots poorly drained over an impermeable subsoil.",
+    "The rolling mounds favour very high-quality vineyards. Their exposures play a part. So do the nearby estuary and the draining soils. Pauillac's soils are among the favourite ground of Cabernet Sauvignon, though Merlot also does very well there."
+   ],
+   "cite": [
+    "pauillac-doc:p6",
+    "pauillac-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Saint-Lambert and Bages",
+     "point": [
+      -0.757,
+      45.18
+     ],
+     "zoom": 11,
+     "caption": "The largest system of gravel mounds lies in the south of the commune, around Saint-Lambert and Bages.",
+     "cite": [
+      "pauillac-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "claret",
+   "beat": "rules",
+   "title": "Cabernet in the lead",
+   "paras": [
+    "Pauillac makes still red wine only. The blend is led by Cabernet Sauvignon. Merlot adds roundness and fruit. Cabernet Franc, and more rarely Petit Verdot, strengthen structure and complexity. Cot and Carmenère are also allowed.",
+    "Vines are planted at a minimum of 7,000 per hectare, and growers go well beyond it. With controlled yields, this gives very ripe, healthy and very concentrated grapes. That allows very long macerations and strong extraction, for the structure the wine needs to age.",
+    "The wine then spends at least six months ageing before release. This helps tannins bind with the colour pigments. The colour steadies and the tannins lose their hardness.",
+    "The set yield is 57 hl/ha, with an absolute ceiling of 63 hl/ha. The vineyard produces on average 55,000 hl of red a year.",
+    "Pauillac was among the best-known wines on the London market when \"New French Clarets\" first sold there in the 18th century. It has 18 classified estates (crus classés), the most of any commune. Three are first growths: Lafite-Rothschild and Latour since 1855, Mouton-Rothschild since 1973."
+   ],
+   "cite": [
+    "pauillac-doc:p2",
+    "pauillac-doc:p3",
+    "pauillac-doc:p4",
+    "pauillac-doc:p5",
+    "pauillac-doc:p7",
+    "pauillac-doc:p8"
+   ]
+  }
+ ]
+}

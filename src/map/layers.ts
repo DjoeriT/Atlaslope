@@ -11,8 +11,8 @@ export const DEFAULT_MENU: MenuState = { satellite: true, relief: true, boundari
 
 type Visibility = 'visible' | 'none';
 
-/** Layer ids in draw order. `satellite` and `pnoa` are absent from the style when the build has no key. */
-export const LAYER_IDS = ['land', 'satellite', 'pnoa', 'hillshade', 'ocean', 'coast', 'borders', 'dos-casing', 'dos-fill', 'dos-line'] as const;
+/** Layer ids in draw order. `satellite` and the orthophotos (`pnoa`, `ign-fr`) are absent from the style when the build has no key. */
+export const LAYER_IDS = ['land', 'satellite', 'pnoa', 'ign-fr', 'hillshade', 'ocean', 'coast', 'borders', 'dos-casing', 'dos-fill', 'dos-line'] as const;
 export type LayerId = (typeof LAYER_IDS)[number];
 
 /** `imagery` is false when satellite is missing or has failed: the atlas base shows whatever the menu says. */
@@ -23,6 +23,7 @@ export function layerVisibility(menu: MenuState, imagery: boolean): Record<Layer
     land: 'visible',
     satellite: v(sat),
     pnoa: v(sat),
+    'ign-fr': v(sat),
     hillshade: v(menu.relief),
     ocean: 'visible',
     coast: 'visible',
