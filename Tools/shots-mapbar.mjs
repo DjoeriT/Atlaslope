@@ -18,7 +18,7 @@ const port = await new Promise((res) => { const s = createServer(); s.listen(0, 
 const server = spawn('npx', ['vite', 'preview', '--outDir', dist, '--port', String(port), '--strictPort', '--base', '/Atlaslope/'], { stdio: 'ignore' });
 for (let i = 0; !(await fetch(`http://localhost:${port}/Atlaslope/`).then((r) => r.ok, () => false)); i++) { if (i > 100) process.exit(1); await new Promise((r) => setTimeout(r, 200)); }
 const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
-const SEL = { chip: '.story-chip', keys: '.story-legend', loc: '.story-loc', zoomIn: '.maplibregl-ctrl-zoom-in', zoomOut: '.maplibregl-ctrl-zoom-out', pitch: '.maplibregl-ctrl-compass', i: '.maplibregl-ctrl-attrib-button', credit: '.story-credit', exag: '.story-exag', recentre: '.story-recentre', panel: '.story-info' };
+const SEL = { chip: '.story-chip', keys: '.story-legend', loc: '.story-loc', zoomIn: '.maplibregl-ctrl-zoom-in', zoomOut: '.maplibregl-ctrl-zoom-out', pitch: '.maplibregl-ctrl-compass', i: '.maplibregl-ctrl-attrib-button', credit: '.story-credit', exag: '.story-exag', recentre: '.story-recentre', info: '.story-info', panel: '.story-panel' };
 const results = {};
 for (const [size, vp] of Object.entries(SIZES).filter(([k]) => only.includes(k))) {
   const ctx = await browser.newContext({ viewport: vp });

@@ -74,13 +74,16 @@ export function storyLayers(): StoryLayers {
     }
   }
 
+  /** A key item; `full` is the whole name, the phone strip shows the words before the first comma, "and" or bracket. */
   function swatch(color: string, label: string) {
     const item = document.createElement('span');
     const i = document.createElement('i');
     i.style.background = color;
-    const b = document.createElement('b');
-    b.textContent = label;
-    item.append(i, b);
+    const long = document.createElement('b'), short = document.createElement('b');
+    long.className = 'lg'; long.textContent = label;
+    short.className = 'sh'; short.textContent = label.split(/,| and | \(/)[0];
+    item.dataset.full = label;
+    item.append(i, long, short);
     return item;
   }
 
@@ -105,6 +108,7 @@ export function storyLayers(): StoryLayers {
       const long = document.createElement('b'), short = document.createElement('b');
       long.className = 'lg'; long.textContent = c.label;
       short.className = 'sh'; short.textContent = c.short;
+      item.dataset.full = c.label;
       item.append(sw, long, short);
       legend.append(item);
     }

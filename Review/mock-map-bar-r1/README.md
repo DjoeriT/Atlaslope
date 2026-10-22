@@ -25,3 +25,10 @@ The Köppen file is cut to a box; two zoom levels out it shows as a rectangle. F
 - [A] On a phone with the credit closed the strip floats 3 rem above the bottom (room for the credit when open).
 - [A] With the "i" open the MapLibre button turns dark on the dark map (low contrast); not fixed.
 - [A] Fade: one zoom level out the tint is gone, so zooming out loses the climate tint; the rectangle never shows.
+
+## Phone round 2 (22 Oct 2026, below 48rem only; desktop unchanged apart from item 4)
+1. Key strip: one line, scrolls sideways, 22 px tall (about 1.4 rem). Climate uses the existing short names; rock and slope names shorten to the words before the first comma, "and" or bracket (Sands, Siltstones, Alluvium, Steeper than 30%). The full names are in the open panel. Strip and locator sit at the foot (0.75 rem up), right of the locator, left of the "i".
+2. Terrain height is a row in the panel the "i" opens: panel = terrain row, full key names, credits. While open it hides the strip and the locator (it covers the foot of the map).
+3. "i": champagne on black, champagne focus ring (phone).
+4. The credit line drops "Slopes >30%" where the strip shows the slope key (steep stops); everywhere, so desktop soils lost it too. At other stops the swatch stays, as the only key.
+Overlaps re-measured after the last change on every shot (phone and desktop, closed and open, Rioja three stops and Ribeira slope): none. Phone controls all at least 44 px (fact pins aside).
