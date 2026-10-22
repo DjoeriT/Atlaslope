@@ -4,7 +4,10 @@
 - Pilot Douro first, then Vinho Verde in the same session while he was away ("double check and review everything and keep going").
 - Home and Guides page: he asked for proposals instead of writing the copy himself first. Mock built (below); not yet picked.
 
-## Done (PR on `claude/portugal-douro`)
+- Owner on the mock (22 Oct 2026, verbatim): "I like it. However we need a lot of pictures in there!" Taken as: option C
+  (recommended) with many more real photos. Which option he meant is not confirmed [A]: ask in one line first.
+
+## Done (PR on `claude/portugal-pilot`; the empty remote branch `claude/portugal-douro` was pushed by mistake, nothing on it)
 - Outlines: `Tools/data/build_pt_areas.py` joins DGT CAOP 2025 parishes into each place from the lists in its spec
   (`data/countries/pt/areas-spec.json`), writes `data/countries/pt/areas.geojson` (Douro, its three subregions, Vinho Verde) and puts
   each place's line into `data/added-boundaries.geojson`. Douro 2,618 km² (the spec says 250,000 ha); 8 small unlisted parishes come in
@@ -40,6 +43,14 @@
 - Per further place, now that the tooling exists [A]: ~0.75M helpers + session; estimate the batch as calls x 140K.
 
 ## Next session (fresh, start here)
-Read this file. Ask him for the Home/Guides option (mock above). Then either build that option, or run the next Portugal batch
+Read this file. Confirm option C in one line. Then the photo round, his ask "a lot of pictures":
+1. Script, not chat: list Wikimedia Commons candidates for Douro and Vinho Verde (vineyards, terraces, quintas, river, granite pergolas,
+   harvest), CC BY / CC BY-SA / CC0 only, 15-20 per place, into a contact sheet (`Tools/data/photo_candidates.py` pattern). He picks or
+   approves; then `photo_ship.py`, square crops checked against the original (`Tools/guides/crop_sheet.mjs`, `src/home/photoCrops.json`),
+   credits in `data/photos.json` and `data/SOURCES.md`.
+2. Mock round 2 of option C in a one-shot helper: photo-rich Portugal row on Home and Guides (several photos per place, not one strip),
+   same calm; one page; link back.
+3. Then build the picked layout: country heading on Guides, `/pt/` links, home copy (his words), drop `SHOWN_COUNTRIES` gate.
+Estimate: photos script + sheet ~1.5M, mock helper ~1.5M, build ~3-5M [A, calls x 140K]. After that, run the next Portugal batch
 (Dão, Bairrada, Alentejo, Lisboa from the WSET list) with the same scripts: spec lists -> `build_pt_areas.py` -> `build_places.py`
 (`PT_PLACES`, `PT_GROUPS`) -> stub sheet -> `sources.py <region>` -> headless sheet run -> `headless.py`.
