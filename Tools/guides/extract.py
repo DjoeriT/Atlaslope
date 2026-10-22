@@ -6,12 +6,16 @@ Usage: extract.py <pliego.txt> <out.txt>
 Pages are split on form feeds (pdftotext); page n is the PDF page. Each kept page starts with "=== PAGE n ===" so a writer can
 cite "<source>:p<n>". Kept: from section 1 (NOMBRE) up to section 9 (VERIFICACIÓN), the control-body part a guide never uses.
 Gazette preambles before section 1 are dropped. If no section 1 is found, every page is kept.
+France (issue #149, 22 Oct 2026): an EU single document ("fiche technique") is kept from "V. DOCUMENT UNIQUE" up to
+"9. PIÈCES JUSTIFICATIVES"; an INAO cahier des charges from "I. - Nom de l'appellation" up to "CHAPITRE II" (controls).
 """
 import re
 import sys
 
-START = re.compile(r'^\s*(?:1|A)[.)]?\s*(?:NOMBRE|DENOMINACI[ÓO]N)', re.I | re.M)
-STOP = re.compile(r'^\s*(?:9|I)[.)]?\s*-?\s*(?:VERIFICACI[ÓO]N|COMPROBACI[ÓO]N|COMPROBACIONES|CONTROLES)', re.I | re.M)
+START = re.compile(r'^\s*(?:(?:1|A)[.)]?\s*(?:NOMBRE|DENOMINACI[ÓO]N)|V\.\s*DOCUMENT UNIQUE|I\.\s*-\s*Nom de l.appellation)',
+                   re.I | re.M)
+STOP = re.compile(r'^\s*(?:(?:9|I)[.)]?\s*-?\s*(?:VERIFICACI[ÓO]N|COMPROBACI[ÓO]N|COMPROBACIONES|CONTROLES|PI[ÈE]CES JUSTIFICATIVES)'
+                  r'|CHAPITRE II\b)', re.I | re.M)
 
 
 def pages(text: str) -> list[str]:

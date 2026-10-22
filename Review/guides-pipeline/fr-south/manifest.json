@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "fitou-doc": "Review/sources/fetched/att-PDO-FR-A0195-10401.txt",
+    "corbieres-doc": "Review/sources/fetched/att-PDO-FR-A0671-19792.txt",
+    "cotes-du-roussillon-doc": "Review/sources/fetched/att-PDO-FR-A0919-10403.txt",
+    "cotes-du-roussillon-villages-doc": "Review/sources/fetched/att-PDO-FR-A0999-10622.txt",
+    "bandol-doc": "Review/sources/fetched/att-PDO-FR-A0485-10478.txt",
+    "cotes-de-provence-doc": "Review/sources/fetched/att-PDO-FR-A0392-10618.txt",
+    "languedoc-doc": "Review/sources/fetched/cdc-PDO-FR-A0922.txt",
+    "minervois-doc": "Review/sources/fetched/cdc-PDO-FR-A0330.txt",
+    "picpoul-de-pinet-doc": "Review/sources/fetched/cdc-PDO-FR-N1672.txt"
+  }
+}

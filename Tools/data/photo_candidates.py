@@ -18,6 +18,13 @@ Portugal pass (photo round, 22 Oct 2026, owner: "we need a lot of pictures"): `p
 `pt-` region with Portuguese vine words, a denser disc cover, the name search and a category walk (PT_CATS), keeps 20 per place
 (at most 2 per photographer; all kept files under "all") and writes Review/sources/photo-candidates-pt.json and contact-sheets/pt-<place>.jpg (5 across).
 
+France pass (photo round, 22 Oct 2026, issue #149): `photo_candidates.py fr [<id> ...]` runs for the France WSET places in
+data/countries/fr/wset-places.json (or the ids given; FR_PLACES overrides the file) with French vine words (vigne, vignoble, vendange,
+domaine, château, coteau, cave, grand cru, premier cru), the disc cover, name search and licence/size filters as the Portugal pass.
+Outlines come from data/countries/fr/areas.geojson (kind "place"); a place without one is searched by name plus a vine word, as in the
+fill pass. FR_CATS holds Commons categories for the pilot places. Keeps 20 per place (at most 2 per photographer) and writes
+Review/sources/photo-candidates-fr.json and contact-sheets/fr-<place>.jpg (5 across).
+
 Second version (release 4). The first one searched by name and within 10 km of the centroid, which returned wine bottles from
 other regions, a Chilean winery and space-station photos. This one:
 - searches only files with coordinates **inside the place's boundary** (geosearch discs of 10 km laid over the boundary, then a
@@ -28,7 +35,7 @@ other regions, a Chilean winery and space-station photos. This one:
 - keeps public domain, CC0, CC BY and CC BY-SA only, at least 1600 px wide, JPEG or PNG;
 - ranks vineyard words first, then Commons quality flags, then landscape shape and size; keeps the top 12, at most 3 per photographer.
 """
-import io, json, math, re, sys, time, urllib.parse, urllib.request
+import io, json, math, os, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -133,7 +140,7 @@ def titles_for(place, geom, fill=False):
     return found
 
 
-def info(found, geom, name):
+def info(found, geom, name, vine=VINE):
     g = prep(geom) if geom is not None else None  # no boundary yet: a file must name the place and a vineyard word
     titles = [t for t in found if not DROP.search(t)]
     out = []
@@ -152,7 +159,7 @@ def info(found, geom, name):
             if DROP.search(p["title"] + " " + desc[:80]): continue
             xy = found.get(p["title"]) or ((p["coordinates"][0]["lon"], p["coordinates"][0]["lat"]) if p.get("coordinates") else None)
             inside = bool(xy) and g is not None and g.contains(Point(xy))
-            named = name.lower() in text.lower() and bool(VINE.search(text))
+            named = name.lower() in text.lower() and bool(vine.search(text))
             if g is None:
                 if not named: continue
             elif xy and not inside: continue
@@ -162,7 +169,7 @@ def info(found, geom, name):
                         "artist": re.sub("<[^>]+>", "", m.get("Artist", {}).get("value", "")).strip()[:120],
                         "credit": re.sub("<[^>]+>", "", m.get("Credit", {}).get("value", "")).strip()[:200], "description": desc,
                         "coords": xy, "inside": inside, "quality": max([FLAGS.get(c, 0) for c in cats] or [0]),
-                        "vine": bool(VINE.search(text)), "wine": bool(WINE.search(text))})
+                        "vine": bool(vine.search(text)), "wine": bool(WINE.search(text))})
         time.sleep(.5)
     return out
 
@@ -377,8 +384,62 @@ def pt():
         print("sheet", p["id"], flush=True)
 
 
+FR_OUT = ROOT / "Review/sources/photo-candidates-fr.json"
+VINE_FR = re.compile(VINE.pattern + r"|vignobles?|vignes?\b|vendanges?|domaine|ch[âa]teau|coteau|coteaux|\bcave\b|grand cru|premier cru", re.I)
+FR_VINE_Q = "(vigne OR vignes OR vignoble OR vendange OR domaine OR château OR coteau OR cave OR \"grand cru\" OR \"premier cru\")"
+# Place: (name searches, categories to walk). Only categories checked to exist on Commons (22 Oct 2026); "Chablis (wine)" and
+# "Vineyards in Chablis" do not exist. Files without coordinates must still name the place and a vine word (info() rule).
+FR_CATS = {
+    "chablis": (['"Chablis" (vigne OR vignes OR vignoble OR vendange OR domaine OR "grand cru" OR "premier cru")'],
+                ["Chablis (Yonne)", "Vineyards in Yonne"]),
+    "pauillac": (['"Pauillac" (vigne OR vignes OR vignoble OR vendange OR château OR domaine OR "grand cru")'],
+                 ["Pauillac", "Vineyards in Pauillac", "Vineyards in Gironde"]),
+}
+
+
+def fr_outlines():
+    f = ROOT / "data/countries/fr/areas.geojson"
+    if not f.exists(): return {}
+    return {x["properties"]["id"]: shape(x["geometry"]) for x in json.loads(f.read_text())["features"] if x["properties"].get("kind") == "place"}
+
+
+def fr(ids):
+    src = Path(os.environ.get("FR_PLACES") or ROOT / "data/countries/fr/wset-places.json")
+    places = [p for p in json.loads(src.read_text())["places"] if not ids or p["id"] in ids]
+    geoms = fr_outlines()
+    done = json.loads(FR_OUT.read_text()) if FR_OUT.exists() else {}
+    for p in places:
+        if p["id"] in done: continue
+        g = geoms.get(p["id"])
+        searches, cat_list = FR_CATS.get(p["id"], ([f'"{p["name"]}" ' + FR_VINE_Q], []))
+        found = {}
+        try:
+            for lon, lat in (discs(g, max_n=40) if g is not None else []):
+                r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 500, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
+                for x in r["query"]["geosearch"]: found[x["title"]] = (x["lon"], x["lat"])
+                time.sleep(.5)
+            for q in searches:
+                r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 100, "srsearch": q})
+                for x in r["query"]["search"]: found.setdefault(x["title"], None)
+                time.sleep(.5)
+            for c in cat_list:
+                for t in members(c): found.setdefault(t, None)
+                time.sleep(.5)
+            cands = [c for c in info(found, g, p["name"], VINE_FR) if c["vine"] or c["wine"]]
+        except Exception as e:  # keep what is done; a rerun retries this place
+            print(p["id"], "error:", e, flush=True); continue
+        done[p["id"]] = {"name": p["name"], "batch": p.get("batch"), "outline": g is not None, "seen": len(found), "kept": len(cands),
+                         "candidates": rank(list(cands), 20, 2), "all": cands}
+        print(p["id"], len(found), len(cands), len(done[p["id"]]["candidates"]), flush=True)
+        FR_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for p in [p for p in places if p["id"] in done]:
+        sheet(p["id"], [p], done, "fr-", cols=5)
+        print("sheet", p["id"], flush=True)
+
+
 def main():
     if sys.argv[1:] == ["pt"]: return pt()
+    if sys.argv[1:2] == ["fr"]: return fr(sys.argv[2:])
     if sys.argv[1:] == ["fill"]: return fill()
     if sys.argv[1:] == ["cats"]: return cats()
     tree = json.loads((ROOT / "data/places.json").read_text())
