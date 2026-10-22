@@ -1,0 +1,16 @@
+{
+  "$comment": "Italy's pilot outlines (decision #62), read by Tools/data/build_it_areas.py. 'piemonte': the region's official DOC/DOCG area by its 'codice' (Regione Piemonte, aree di produzione vini DOC e DOCG, CC BY 4.0). 'istat': the municipalities the spec names, ISTAT generalised limits at 1 Jan 2025; 'partial' municipalities are taken whole, so the outline is approximate and larger than the real area. 'renamed': names in the spec that ISTAT now holds under a merged municipality.",
+  "barolo": {
+    "route": "piemonte",
+    "codice": "DOC_07",
+    "source": "EU technical file PDO-IT-A1389 (eAmbrosia attachment 32340)"
+  },
+  "chianti-classico": {
+    "route": "istat",
+    "whole": ["Greve in Chianti", "Castellina in Chianti", "Radda in Chianti", "Gaiole in Chianti"],
+    "partial": ["San Casciano in Val di Pesa", "Tavarnelle Val di Pesa", "Barberino Val d'Elsa", "Castelnuovo Berardenga", "Poggibonsi"],
+    "renamed": {"Tavarnelle Val di Pesa": "Barberino Tavarnelle", "Barberino Val d'Elsa": "Barberino Tavarnelle"},
+    "officialKm2": 718,
+    "source": "EU technical file PDO-IT-A1235-AM01 (eAmbrosia attachment 24072), section 5, page 4: 71,800 ha"
+  }
+}
