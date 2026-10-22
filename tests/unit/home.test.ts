@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
+import { COVER_PHOTO } from '../../src/cards/atlasCover';
 import { BAND_FEATURED, PHOTO_PICK, bandTours, fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
@@ -182,8 +183,8 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
     });
     it('has no entry for a photo that is not shown or not shipped', () => {
       const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos as Record<string, unknown>;
-      const extra = Object.keys(photoCrops).filter((k) => !shown.includes(k) || !(k in photos))
-        .map((k) => `src/home/photoCrops.json has an entry for ${k}, which the Guides page does not show (or data/photos.json lacks): delete the entry.`);
+      const extra = Object.keys(photoCrops).filter((k) => !(shown.includes(k) || k === COVER_PHOTO) || !(k in photos))
+        .map((k) => `src/home/photoCrops.json has an entry for ${k}, which neither the Guides page nor the atlas cover shows (or data/photos.json lacks): delete the entry.`);
       expect(extra, extra.join('\n')).toEqual([]);
     });
   });

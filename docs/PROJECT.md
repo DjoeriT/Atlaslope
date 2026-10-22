@@ -79,6 +79,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   one course setting that filters everything, default all of Spain, Cava and Catalunya in without the map question, WSET Level 2 ·
   Spain pilot next. Launch: wine lovers first (reverses 17 Oct), quiet launch, then testers, noindex until the public step, tip link.
   Speed: page shell, then a service worker; no CDN. Guides current: "Checked on" plus source dates, pilot on 3 places.
+- Atlas cover (owner 22 Oct 2026, option E1): clicking Atlas opens a cover card ("See where your wine comes from": map-tour and slopes loops, borders, climate and guide stills, the countries) before any country. The empty hash is the cover; Spain's card is `#country=spain`. Media: `Tools/atlas/cover_media.mjs` into `public/atlas/`.
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
