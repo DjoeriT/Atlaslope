@@ -75,21 +75,25 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   return { rows, regions, photos };
 };
 
-// One credit line per photo set, always visible, the same parts as the place pages (src/cards/Credit.tsx): author, licence, and the change
-// made for the CC BY licences: "cropped and resized", as every frame crops (square tiles) (#154).
-// One entry per author and licence.
+/** One always-visible credit line for the page's photo set, grouped by licence: the licence and "cropped and resized" said once, every
+ *  author still named and linked (owner, 22 Oct 2026: the per-photo line was 3,846 characters, "crazy"). */
 export const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
-  const seen = new Set<string>();
-  const parts: string[] = [];
+  const link = (href: string, text: string) => (href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text));
+  const groups = new Map<string, { url: string; names: Map<string, string[]> }>();
   for (const k of keys) {
     const c = photos[k];
     const name = /^unknown\b/i.test(c.artist) ? 'Wikimedia Commons' : c.artist;
-    if (seen.has(`${name}|${c.licence}`)) continue;
-    seen.add(`${name}|${c.licence}`);
-    const link = (href: string, text: string) => (href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text));
-    parts.push(`${link(c.page, name)} · ${link(c.licenceUrl, c.licence)}${/^CC BY\b/.test(c.licence) ? ' · cropped and resized' : ''}`);
+    const g = groups.get(c.licence) ?? { url: c.licenceUrl, names: new Map() };
+    const pages = g.names.get(name) ?? [];
+    if (!pages.includes(c.page)) pages.push(c.page);
+    g.names.set(name, pages);
+    groups.set(c.licence, g);
   }
-  return parts.length ? `<p class="credit">Photos: ${parts.join('; ')}</p>` : '';
+  if (!groups.size) return '';
+  const parts = [...groups].sort((a, b) => b[1].names.size - a[1].names.size || a[0].localeCompare(b[0]))
+        // Every photo keeps a link to its own page: the name links the first, numbered links the others (ReviewBot, #196).
+    .map(([lic, g]) => `${link(g.url, lic)}: ${[...g.names].map(([n, pages]) => link(pages[0], n) + (pages.length > 1 ? ` (${pages.slice(1).map((pg, i) => link(pg, String(i + 2))).join(', ')})` : '')).join(', ')}`);
+  return `<p class="credit">Photos from Wikimedia Commons, cropped and resized. ${parts.join(' · ')}</p>`;
 };
 const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
 

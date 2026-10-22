@@ -189,10 +189,17 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
   });
 
   it('has one always-visible credit line for the page photo set, and never prints text on a photo but the chip', () => {
-    expect(count(out, /<p class="credit">Photos:/g)).toBe(1);
-    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · cropped and resized/);
+    expect(count(out, /<p class="credit">Photos /g)).toBe(1);
+    // Grouped by licence (owner 22 Oct 2026): the changes said once, each licence once and linked, then its authors, each linked.
+    expect(out).toMatch(/<p class="credit">Photos from Wikimedia Commons, cropped and resized\. <a [^>]*>CC BY[^<]*<\/a>: <a [^>]*>[^<]+<\/a>/);
+    const credit = out.match(/<p class="credit">[\s\S]*?<\/p>/)![0];
+    for (const lic of new Set(squarePhotoKeys(list).map((k) => list.photos[k].licence))) expect(count(credit, new RegExp(`>${lic.replace(/[.]/g, '\\.')}</a>:`, 'g')), lic).toBe(1);
     expect(out).not.toContain('title="');
-    for (const k of squarePhotoKeys(list)) expect(out, k).toContain(list.photos[k].artist.replace(/^unknown.*/i, 'Wikimedia Commons').replace(/&/g, '&amp;'));
+    // Every shown photo: its author named in the credit, and a link to its own Commons page (licence attribution, #196 review).
+    for (const k of squarePhotoKeys(list)) {
+      expect(credit, k).toContain(list.photos[k].artist.replace(/^unknown.*/i, 'Wikimedia Commons').replace(/&/g, '&amp;'));
+      expect(credit, `${k}: link to its page`).toContain(`href="${list.photos[k].page.replace(/&/g, '&amp;')}"`);
+    }
   });
   it('has dropped the showcase, the repeated tours section, the satellite maps and the card summaries', () => {
     for (const gone of ['Showcased guide', 'hero-sat', 'class="sat"', 'Imagery: Esri', 'gcard-c', 'class="lede"', 'Show all guides', 'In short']) expect(out, gone).not.toContain(gone);
