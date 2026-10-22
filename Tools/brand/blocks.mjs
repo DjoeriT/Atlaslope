@@ -5,7 +5,7 @@ const b = await chromium.launch();
 const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
 await p.goto(url, { waitUntil: 'networkidle' });
 await p.waitForTimeout(1500);
-for (const x of ['a', 'b', 'c']) {
+for (const x of await p.$$eval('section.dir', (els) => els.map((e) => e.id.replace('dir-', '')))) {
   const box = await p.locator('#dir-' + x).boundingBox();
   let n = 0;
   for (let y = box.y; y < box.y + box.height; y += 3200, n++) {

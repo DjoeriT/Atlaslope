@@ -1,4 +1,4 @@
-# Brand identity round 1 (22 Oct 2026)
+# Brand identity rounds 1 and 2 (22 Oct 2026)
 
 ## Done
 - Owner interview [O]: AtlaSlope is a digital field guide. Direction is cartographic precision. The identity is **fully open**, so the
@@ -28,3 +28,24 @@
 ## Open (owner)
 - Pick a flavour and route, or a blend. Round 2 then refines one direction across more surfaces: Study, Guides page, share image.
 - Does "no dark mode" still hold under the new identity?
+
+## Round 2
+- Owner on round 1 [O]: A1/Swiss "feels too much like a Democratic Party website"; the rest "too modern to match against the world of wine".
+  Wanted: a clean, colourful look blended with wine's traditions.
+- Mock: `mocks/brand-identity-r2/index.html`, Artifact https://claude.ai/artifact/EKJ842b4ya38NxABcxtpPB. Four concepts, each with the same
+  four screens, real data and photos together:
+  - **D Geological sheet (lead, owner's pick to lead):** IGME rock colours deepened into terracotta, olive ink and ochre. Cormorant Garamond + Source Serif 4.
+    The mark is an "AS" sheet cartouche.
+  - **E The bodega label:** garnacha, oxblood and flat gold. Playfair Display SC + EB Garamond. The mark is an oval "AS" seal with Haro's coordinates.
+  - **F Land register:** ink with translucent viridian, madder and gamboge washes. Spectral + Literata. The mark is "Nº 1 / AS" in a ruled box.
+  - **G Colour of the ground:** each place takes its ground colour (Rioja ochre, Alta terracotta, Ebro blue-green). Fraunces + Figtree.
+    The mark is the real Rioja outline.
+- New layer: IGME MAGNA 50 geology for the Rioja frame (`assets/rioja-geology.png`, one WMS GetMap; source already in `data/SOURCES.md`).
+  Sheet seams are in the source.
+- LeadBot fixes after the build: the Rioja Alta map cards said "DOCa · 3 zones" (my brief's error), now "Zone of DOCa Rioja · 76 municipalities".
+  F drew Portugal and France in cerulean, which read as sea, now a quiet land wash.
+- Checked [V]: every concept was shot and looked at. The guide sentences match `content/guides/rioja.json` word for word.
+- Spend [V]: builders D 36K, E 40K, F 51K, G 42K, 169K new in all. The re-read share is not measured.
+- Weak spots: the loud geology fights the palettes in E and G (muted to 50% in G). D's Rioja Alta highlight is faint.
+  Every concept's map screen is the least "wine" one.
+- Open: the owner picks a concept or a blend for round 3, which takes it across more surfaces (Guides page, Study, share image, favicon set).

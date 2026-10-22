@@ -1,18 +1,25 @@
 """Merge the brand round's parts (parts/a.html, b.html, c.html) into ONE page, index.html.
 
-    python3 Tools/brand/assemble.py <round folder> [recommended block id, e.g. a1]
+    python3 Tools/brand/assemble.py <round folder> [recommended id, e.g. a1 or dir-d] [round.json]
+
+round.json (optional) sets the page: {"parts": {"d": "D · Geological sheet", ...}, "title": "...", "h1": "...", "lines": ["..."]}.
 
 Each part follows the contract in the round's BRIEF.md: Google Fonts links in the head, one <style>, maps.js plus one inline script,
 one <section class="dir dir-x">. Inline scripts are wrapped in their own function so their names cannot clash.
 """
-import html, os, re, sys
+import html, json, os, re, sys
 
 ROOT = sys.argv[1]
 REC = sys.argv[2] if len(sys.argv) > 2 else ''
-NAMES = {'a': 'A · Swiss topographic', 'b': 'B · Survey', 'c': 'C · Nautical chart'}
+CFG = json.load(open(sys.argv[3])) if len(sys.argv) > 3 else {}
+NAMES = CFG.get('parts', {'a': 'A · Swiss topographic', 'b': 'B · Survey', 'c': 'C · Nautical chart'})
+TITLE = CFG.get('title', 'AtlaSlope Identity R1')
+H1 = CFG.get('h1', 'Three map flavours. Three ways to show the land.')
+LINES = CFG.get('lines', ['Nine blocks, each with the same four screens: logo, home, field guide entry, map.',
+                          'Every map is real data: IGN terrain, MAPA boundaries. Every photo is a credited Rioja vineyard.'])
 
 links, styles, sections, scripts = [], [], [], []
-for x in 'abc':
+for x in NAMES:
     p = os.path.join(ROOT, 'parts', x + '.html')
     if not os.path.exists(p):
         print('missing', p)
@@ -29,7 +36,7 @@ for x in 'abc':
 nav = ''.join(f'<a href="#dir-{x}">{html.escape(n)}</a>' for x, n in NAMES.items())
 page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AtlaSlope Identity R1</title>
+<title>{html.escape(TITLE)}</title>
 {chr(10).join(links)}
 <style>
 :root {{ --page: #EDEDEA; --ink: #1A1A1A; --muted: #555; --line: #CFCFCA; }}
@@ -47,11 +54,10 @@ html, body {{ margin: 0; background: var(--page); color: var(--ink); font-family
 </style>
 {''.join('<style>' + s + '</style>' for s in styles)}
 </head><body>
-<nav class="r1-top"><strong>AtlaSlope · identity round 1</strong>{nav}</nav>
+<nav class="r1-top"><strong>{html.escape(TITLE)}</strong>{nav}</nav>
 <header class="r1-intro">
-<h1>Three map flavours. Three ways to show the land.</h1>
-<p>Nine blocks, each with the same four screens: logo, home, field guide entry, map.</p>
-<p>Every map is real data: IGN terrain, MAPA boundaries. Every photo is a credited Rioja vineyard.</p>
+<h1>{html.escape(H1)}</h1>
+{''.join('<p>' + html.escape(l) + '</p>' for l in LINES)}
 <p id="r1-rec-line"></p>
 </header>
 {chr(10).join(sections)}
@@ -67,7 +73,7 @@ html, body {{ margin: 0; background: var(--page); color: var(--ink); font-family
   var t = document.createElement('div'); t.className = 'r1-rec-tag'; t.textContent = 'Recommended';
   el.insertBefore(t, el.firstChild);
   var line = document.getElementById('r1-rec-line');
-  line.innerHTML = 'Recommended: <a href="#' + el.id + '">block ' + rec.toUpperCase() + '</a>.';
+  line.innerHTML = 'Recommended: <a href="#' + el.id + '">' + rec.replace('dir-', '').toUpperCase() + '</a>.';
 }})();
 </script>
 </body></html>

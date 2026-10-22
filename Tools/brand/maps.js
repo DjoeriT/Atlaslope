@@ -6,6 +6,7 @@
 //   bg: '#fff'                  paper colour behind everything
 //   relief: { opacity: .5, blend: 'multiply' }   hillshade image; omit or false for none
 //   tint: { opacity: .3, blend: 'multiply' }     grey elevation image (dark = low, light = high); omit for none
+//   geology: { opacity: .8, blend: 'normal' }    IGME MAGNA 50 rock colours, rioja only (credit 'Geology: IGME, MAGNA 50')
 //   contours: { step: 100, stroke: '#000', width: .6, index: 500, indexStroke: '#000', indexWidth: 1.2, opacity: 1 }   rioja only
 //   zones: { stroke, width, fill, opacity, highlight: 'Rioja Alta', highlightFill, highlightStroke, highlightWidth }      rioja only
 //   land: { fill, stroke, width }                spain only
@@ -35,6 +36,7 @@
     const clip = which === 'spain' ? ` clip-path="url(#${uid})"` : '';
     if (which === 'spain') s.push(`<defs><clipPath id="${uid}"><path d="${d.land}"/></clipPath></defs>`);
     if (o.tint) s.push(`<image href="${base}${which}-dem.png" width="${W}" height="${H}"${clip} opacity="${o.tint.opacity ?? .3}" style="mix-blend-mode:${o.tint.blend || 'multiply'}"/>`);
+    if (which === 'rioja' && o.geology) s.push(`<image href="${base}rioja-geology.png" width="${W}" height="${H}" opacity="${o.geology.opacity ?? .8}" style="mix-blend-mode:${o.geology.blend || 'normal'}"/>`);
     if (o.relief) s.push(`<image href="${base}${which}-relief.png" width="${W}" height="${H}"${clip} opacity="${o.relief.opacity ?? .5}" style="mix-blend-mode:${o.relief.blend || 'multiply'}"/>`);
     if (o.grid) {
       const g = o.grid, e = g.every || 100;
