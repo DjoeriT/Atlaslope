@@ -826,6 +826,21 @@
    "h": 1200,
    "blur": "UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoQABgAPtFWo0uoJKMhsAgBABoJYwDCgYuG3FHW/JxKR7EeYxRRcAD+8rl+cN1hrDcIgRT7M3+GPVxnfjd7hF2YKarr6M54Qkr2nL2zz0x30DFdsyo5Ekslx7lkVRU1fu97mhFf+klS6SUKDK9hml3ZzU+4Dz7HviaDi3bEe0MqSnRspbQCzvp4AIp+pKO+dyUkFp3+RQGCANRUklOzgAAA"
   },
+  "txakoli-amurrio-1": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAkAAsBMJZACdAEOnNVTwAD+7+W+QRixJuSR9Lxu5IHCM2H9vguRu5oohxfO0axC6CUsRIwgAA=="
+  },
+  "txakoli-ayala-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwAAsBMJbACdAELXEXdGD9AAP1T/VE74hlHjtJllqTpxbv4AI0WnfUu/JyVlcZF7hi76hu7OBc8V5pw9p6aaexOg/blAqLFYQAA"
+  },
+  "txakoli-bakio-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsAAsBMJbACdAEQ0uWwf/M+AAD+rDCOXl5/ezTmDUX7vvuHktqTBhB1KHoSeIvrpSzqhGTZkufH1DrYO2kv76KDM5rWBjVLUgLcoDRtgmfbLS8ZrZ65WAA="
+  },
   "txakoli-bizkaia-1": {
    "w": 1200,
    "h": 753,
@@ -835,6 +850,11 @@
    "w": 1200,
    "h": 600,
    "blur": "UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAsBMJbACdAEO9Zaf5AD9nVqhEuHyOiayqWidT3rWLWNHFZdDlm5CAOhV++LttS6/1bYq+TmQCwAAAA=="
+  },
+  "txakoli-donostia-1": {
+   "w": 1200,
+   "h": 674,
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkAAsBMJZwCsAEOV32gAP7zr/fiX+61B9hl1yxE0WZOYoTM25XEqYoUHpGcsuAFPq6cAAA="
   },
   "txakoli-getaria-1": {
    "w": 1200,
@@ -850,6 +870,26 @@
    "w": 1200,
    "h": 805,
    "blur": "UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAAsBMJbAC7AEO5MoPoYAA/tgBaIjUfEj7Br6TeYGmtxUAm0B2Dimx4eegZNaglFRP573TDhyvFOdoiQgAAAA="
+  },
+  "txakoli-getaria-harbour-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAwAAsBMJZACdAYvrqeDPkpgAAD+yc1YYXmAftdcHm0TNZ1QALNyD1CGJRgZ+pb9B/5U9IcfxP69izK5tmhVQg5Z/A989XfUcEfkdK8NZMGuTSt0FbBjVQmoAA=="
+  },
+  "txakoli-ibaizabal-1": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAkAAsBMJYgC7AEPhz5iWm03gAD+idzbx5w6kbC1oGTB/dXnGvI0X179sfkr5hEmUR39uF4Tco43YTU/tZkhp8NktSsD9jXA7sI2kmtQm5vsAAA="
+  },
+  "txakoli-lekeitio-1": {
+   "w": 1200,
+   "h": 805,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAAsBMJagCdAEVFd7GjAAA4f5h44XWEkEyh3M0kfJfN2eLyOT87a/eOgPEJH0bd+V/6Es13zBeyWyD7E88VVFJZaZ5YVEiAA=="
+  },
+  "txakoli-zarautz-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwAAsBMJYgCdAEeZlgu0GAA/f0/b+wXefX8FDu4XBs1jTRudjs1zcQstqMO3sqzq0esfJlQkLuttkZw7pJ8oUjEvK2AAAA="
   },
   "ucles-1": {
    "w": 1200,

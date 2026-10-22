@@ -45,6 +45,23 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                         "Miguel Alan Córdova Silva", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Standing stones of the Las Ruedas necropolis at Pintia, with the Duero hills behind", "50% 40%"),
     "ribera-soils-1": ("File:Clear cultivation in Viñedos en la Ribera del Duero.jpg", "https://commons.wikimedia.org/wiki/File:Clear_cultivation_in_Vi%C3%B1edos_en_la_Ribera_del_Duero.jpg",
                        "Raúl Hernández González", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Vine rows on ochre sandy clay in the Ribera del Duero", "50% 60%"),
+    # Txakoli tours batch 1 (22 Oct 2026)
+    "txakoli-getaria-harbour-1": ("File:Getaria - Puerto 1.JPG", "https://commons.wikimedia.org/wiki/File:Getaria_-_Puerto_1.JPG",
+                                  "Zarateman", "CC0", "https://creativecommons.org/publicdomain/zero/1.0", "The harbour of Getaria below the church and the green hill of the Mouro, seen from above", "50% 50%"),
+    "txakoli-zarautz-1": ("File:Playa de Zarautz (1).jpg", "https://commons.wikimedia.org/wiki/File:Playa_de_Zarautz_(1).jpg",
+                          "Alberto-g-rovi", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Waves on the long sandy beach of Zarautz under a green headland", "50% 50%"),
+    "txakoli-donostia-1": ("File:Bahia de la Concha Donostia San Sebastian - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Bahia_de_la_Concha_Donostia_San_Sebastian_-_panoramio.jpg",
+                           "Carlos Cunha", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The seafront buildings of Donostia / San Sebastian across the water of La Concha bay", "50% 50%"),
+    "txakoli-lekeitio-1": ("File:Lekeitio 015.jpg", "https://commons.wikimedia.org/wiki/File:Lekeitio_015.jpg",
+                           "Jean Michel Etchecolonea", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The town and harbour of Lekeitio below a wooded hill, seen from the coast road", "50% 50%"),
+    "txakoli-ibaizabal-1": ("File:Ibaizabal Etxebarrin.jpg", "https://commons.wikimedia.org/wiki/File:Ibaizabal_Etxebarrin.jpg",
+                            "Ksarasola", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The calm Ibaizabal river between green banks with a wooded hill beyond", "50% 50%"),
+    "txakoli-ayala-1": ("File:Kexaa herria.jpg", "https://commons.wikimedia.org/wiki/File:Kexaa_herria.jpg",
+                        "Aiaraldea Komunikazio Leihoa", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Green meadows behind a dry-stone wall and the stone houses of Quejana in the Ayala valley", "50% 50%"),
+    "txakoli-amurrio-1": ("File:Amurrio, Araba, Euskal Herria.jpg", "https://commons.wikimedia.org/wiki/File:Amurrio,_Araba,_Euskal_Herria.jpg",
+                          "Bhgh543bgf", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Amurrio in the Ayala valley seen from the air, with green meadows and mountains behind", "50% 50%"),
+    "txakoli-bakio-1": ("File:Playa de Baquio, País Vasco, España, 2019-08-13, DD 35.jpg", "https://commons.wikimedia.org/wiki/File:Playa_de_Baquio,_Pa%C3%ADs_Vasco,_Espa%C3%B1a,_2019-08-13,_DD_35.jpg",
+                        "Diego Delso", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The long sandy beach of Bakio and its town below a wooded headland, with blue sea breaking on the sand", "50% 50%"),
 }
 
 

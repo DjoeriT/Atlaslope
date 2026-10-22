@@ -95,7 +95,7 @@ def rivers(guide):
         start += count
     feats = []
     for name, lines in sorted(byname.items()):
-        if not (name.startswith(("Río ", "Riu ")) or name == "L'Ebre/Río Ebro"):
+        if not (name.startswith(("Río ", "Riu ")) or name == "L'Ebre/Río Ebro" or (guide.startswith("txakoli") and name.endswith(" Ibaia"))):  # Basque rivers are "<name> Ibaia"
             continue
         main = name.startswith(MAIN)
         pts = [q for l in lines for q in l]
@@ -130,6 +130,16 @@ BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)
 MAIN += ("Río Miño", "Río Sil")
 CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos", "Sober", "Pantón", "Quiroga", "Amandi", "Os Peares",
                                   "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
+
+
+# Txakoli tours batch 1 (22 Oct 2026): Getariako Txakolina, Bizkaiko Txakolina, Arabako Txakolina
+BBOX["txakoli-getaria"] = (-2.40, 43.18, -1.85, 43.42)
+BBOX["txakoli-bizkaia"] = (-3.20, 43.05, -2.40, 43.50)
+BBOX["txakoli-alava"] = (-3.30, 42.95, -2.80, 43.25)
+MAIN += ("Urola Ibaia", "Oria Ibaia", "Urumea Ibaia", "Ibaizabal Ibaia", "Río Nervión", "Butron Ibaia", "Lea Ibaia", "Artibai Ibaia", "Deba Ibaia", "Izalde o Zaldu Ibaia", "Arratia Ibaia")
+CONTENT_TOWNS["txakoli-getaria"] = ["Getaria", "Zarautz", "Aia", "Orio", "Zumaia", "Donostia/San Sebastián", "Donostia-San Sebastián", "Usurbil", "Zestoa", "Azpeitia"]
+CONTENT_TOWNS["txakoli-bizkaia"] = ["Bakio", "Lekeitio", "Bilbao", "Mungia", "Gernika-Lumo", "Markina-Xemein", "Durango", "Plentzia", "Gorliz", "Sopelana", "Berango", "Bermeo", "Ondarroa", "Mundaka"]
+CONTENT_TOWNS["txakoli-alava"] = ["Laudio/Llodio", "Artziniega", "Amurrio", "Okondo", "Ayala/Aiara", "Respaldiza", "Retes de Tudela", "Luiaondo", "Quejana", "Orduña", "Urduña/Orduña", "Zuia"]
 
 
 # ranges named in the guides, kept even if NGBE files them under another local type

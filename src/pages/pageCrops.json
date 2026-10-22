@@ -24,5 +24,11 @@
  "rioja-alta-1": {"focus":"50% 35%","file":"25d0f807e993"},
  "rioja-haro-1": {"focus":"50% 45%","file":"4c1f02762822"},
  "rioja-oriental-1": {"focus":"50% 50%","file":"98e1adfa9952"},
- "rioja-sierra-1": {"focus":"50% 40%","file":"c418ca095959"}
+ "rioja-sierra-1": {"focus":"50% 40%","file":"c418ca095959"},
+ "txakoli-donostia-1": {"focus":"35% 50%","file":"c92f3e31e32a"},
+ "txakoli-getaria-1": {"focus":"50% 50%","file":"fc253e037503"},
+ "txakoli-getaria-2": {"focus":"50% 50%","file":"22ca92528c91"},
+ "txakoli-getaria-3": {"focus":"50% 50%","file":"cfdd70332a27"},
+ "txakoli-getaria-harbour-1": {"focus":"50% 50%","file":"04f733946f23"},
+ "txakoli-zarautz-1": {"focus":"50% 50%","file":"bbd0ba2ee81d"}
 }

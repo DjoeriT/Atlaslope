@@ -8,6 +8,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41.35)}  # same as fetch_layers.py
 BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)  # as fetch_layers.py
 BBOX["ribera-del-duero"] = (-4.5, 41.35, -2.85, 41.95)
+BBOX["txakoli-getaria"] = (-2.40, 43.18, -1.85, 43.42)  # as fetch_layers.py
+BBOX["txakoli-bizkaia"] = (-3.20, 43.05, -2.40, 43.50)
+BBOX["txakoli-alava"] = (-3.30, 42.95, -2.80, 43.25)
 MARGIN = 0.4  # 0.2 left bare bands at the top and bottom of a 1400x850 view
 
 

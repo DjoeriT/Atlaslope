@@ -1,0 +1,5 @@
+# Tours batch 1 report (txakoli-getaria, txakoli-bizkaia, txakoli-alava; #148)
+Branch agent/builder/tours-b1, not pushed. In progress.
+
+- txakoli-getaria: done. 8 steps (intro, coast, getaria, zarautz, donostia, weather, ground, rules): 4 from the guide's place flies, weather, ground, rules. Photos new (4): getaria-harbour-1 (Zarateman, CC0), zarautz-1 (Alberto-g-rovi, CC BY 3.0), donostia-1 (Carlos Cunha, CC BY-SA 3.0), plus bakio-1 (Diego Delso, CC BY-SA 4.0, used by Bizkaia); reused txakoli-getaria-1/-2/-3. Rock key for the ground stop (3 colours sampled from IGME at the vineyards). Tour data about 6.6 KB gz own (+ about 9.5 KB shared) of 150 KB. npm test 3.4 s (428 pass), build 2.3 s, check.sh quick 5.2 s. shots:tour phone and desktop all 7 stops ok (182 s desktop). Crops checked (Review/tours-batch/shots/txakoli-getaria-crops.jpg): none cut a face/glass/bottle; donostia-1 trimmed left at 35% 50%. Turns about 45.
+  - Note: Basque rivers are named "<name> Ibaia" at IGN; fetch_layers.py keeps those for txakoli guides only.
