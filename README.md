@@ -31,6 +31,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
     docs/                scope, architecture decisions, PROJECT_CONTEXT (state and history), AGENT_ROLES, handoffs/
     Review/              builder brief, digests, task cards, reviews, approved mocks (Review/mock-<topic>/), tester notes; Review/archive/
     Tools/check.sh       every check, one command
+    Tools/rawdir.py      where the raw downloads live (outside the repo)
     .github/workflows/   ci.yml (pull requests and main), publish.yml (checks unless main already passed, deploys, tags release-N),
                          live-map-check.yml, data-*.yml (fetches the container cannot reach), deploy.yml (fallback)
     .claude/             agents, release skill, hooks, settings
@@ -53,7 +54,7 @@ Renamed from Paraje on 16 Oct 2026; the repository is DjoeriT/Atlaslope (renamed
 
 ## Data
 Every file in `data/` has an entry in `data/SOURCES.md`: source, URL, date fetched, licence, and the processing steps. Raw downloads stay
-out of the repo (`data/raw/` is git-ignored); only processed, simplified files are committed. Attribution for each layer is shown in the app.
+out of the repo (`~/Developer/Atlaslope-raw/` or `ATLASLOPE_RAW`; `python3 Tools/data/refetch_raw.py` fetches what is missing); only processed, simplified files are committed. Attribution for each layer is shown in the app.
 
 ## Releasing (GitHub Pages)
 Releases start only with the owner's words "publish release N" in the thread; the thread then starts `publish` (`.claude/skills/release/SKILL.md`).

@@ -3,13 +3,16 @@
 
 Runs in GitHub Actions (data-build workflow; the Catastro does not answer the cloud container). For each place it looks up the
 Catastro's own municipality code, fetches every listed parcel from the Catastro's INSPIRE parcel service in ETRS89 / UTM 30N
-(EPSG:25830), and fails loudly on a parcel it cannot fetch. Writes data/raw/build/parcels-<id>.geojson (EPSG:25830);
+(EPSG:25830), and fails loudly on a parcel it cannot fetch. Writes <raw folder>/build/parcels-<id>.geojson (EPSG:25830);
 remote_build.sh dissolves them and reprojects.
 """
 import json, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
 CALLEJERO = "https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx/ConsultaMunicipio"
 WFS = "https://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx"
 UA = "AtlaslopeDataBot/0.1 (https://github.com/DjoeriT/Atlaslope)"
@@ -43,7 +46,7 @@ def rings(gml):
 
 def main():
     cfg = json.loads((ROOT / "data/added-parcels.json").read_text())["places"]
-    out = ROOT / "data/raw/build"; out.mkdir(parents=True, exist_ok=True)
+    out = RAW / "build"; out.mkdir(parents=True, exist_ok=True)
     for pid, c in cfg.items():
         code = catastro_code(c["province_name"], c["municipality"])
         feats = []

@@ -3,7 +3,7 @@
 
 Usage: coverage.py [--json]
 
-Reads data/countries/<cc>/register.json and data/raw/countries/<cc>/ (from Tools/countries/pull.py) and prints, per country:
+Reads data/countries/<cc>/register.json and <raw folder>/countries/<cc>/ (from Tools/countries/pull.py) and prints, per country:
 names by type; single documents fetched and how many are scans with no text layer; how many entries have
 Official Journal items after the single document (later amendments); and which register names an official outline file
 names (France: INAO parcel delimitation, field `denom`; Italy: Regione Piemonte DOC/DOCG areas, field `denominazi`).
@@ -19,7 +19,10 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = ROOT / "data" / "raw" / "countries"
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
+RAW = RAW / "countries"
 OUTLINES = {
     "fr": ("/vsizip/fr/inao-delim-parcellaire-aoc-shp.zip/2026-10-19_delim-parcellaire-aoc-shp.shp", "denom",
            "type_prod = 'Vins'"),

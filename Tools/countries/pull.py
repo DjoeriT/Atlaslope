@@ -6,8 +6,8 @@ Usage: pull.py [--country pt|fr|it ...] [--step register|docs|outlines ...] [--l
 register  one GET of the eAmbrosia list; keeps the country's wine entries (PDO and PGI) and writes
           data/countries/<cc>/register.json (facts only: file number, names, type, status, dates, attachment ids).
 docs      downloads each entry's summary sheet (the EU single document) as PDF from the eAmbrosia attachments endpoint,
-          and its text with `pdftotext -layout`, into data/raw/countries/<cc>/att/ (git-ignored). Skips files already there.
-outlines  official area and admin outlines into data/raw/countries/<cc>/ (git-ignored): France INAO parcel delimitation
+          and its text with `pdftotext -layout`, into <raw folder>/countries/<cc>/att/ (outside the repo, Tools/rawdir.py). Skips files already there.
+outlines  official area and admin outlines into <raw folder>/countries/<cc>/ (outside the repo): France INAO parcel delimitation
           (shapefile zip); Portugal CAOP2025 parishes and municipalities (OGC API, paged GeoJSON); Italy ISTAT
           municipality limits (generalised) and Piemonte DOC/DOCG areas.
 
@@ -26,6 +26,9 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
 UA = "Atlaslope data check"
 LIST = "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications"
 ATT = "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/"
@@ -55,7 +58,7 @@ def out_dir(cc: str) -> Path:
 
 
 def raw_dir(cc: str) -> Path:
-    return ROOT / "data" / "raw" / "countries" / cc
+    return RAW / "countries" / cc
 
 
 class Manifest:
@@ -68,7 +71,7 @@ class Manifest:
 
     def save(self) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        body = {"$comment": "Files fetched by Tools/countries/pull.py into data/raw/countries/ (git-ignored). "
+        body = {"$comment": "Files fetched by Tools/countries/pull.py into the raw folder (Tools/rawdir.py), countries/. "
                             "Sources in data/SOURCES.md.", "files": dict(sorted(self.files.items()))}
         self.path.write_text(json.dumps(body, ensure_ascii=False, indent=1) + "\n")
 
