@@ -86,6 +86,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 22 Oct 2026 | Portugal sources: writers read Portuguese official texts and write English; the newest EU text wins (Vinho Verde: the 2024 amendment in the Official Journal, fetched through the Publications Office, cited without page numbers as it has none). Fact sheets for a second country live in `content/facts/<cc>-<region>.json` with region id `<cc>-<region>` (`pt-north`). | `Tools/guides/sources.py`, `content/facts/pt-north.json` |
 | 22 Oct 2026 | Page crops: every photo a guide page with a map tour draws in a fixed frame (map card, stops, zone cards) has a checked focus and file hash in `src/pages/pageCrops.json` (replaces `data/story/photo-focus.json`); a unit test enforces it (no guide format change) | "Photo crops" below |
 | 21 Oct 2026 | Story files ("Map tours"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
 | 19 Oct 2026 | Photo crops: every photo the Guides page shows as a square card has a checked crop in `src/home/photoCrops.json`; a unit test enforces it (no guide format change) | "Photo crops" below |

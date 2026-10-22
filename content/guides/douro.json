@@ -1,0 +1,190 @@
+{
+ "id": "douro",
+ "title": "Why Douro tastes the way it does",
+ "minutes": 5,
+ "lede": {
+  "text": "The Douro sits in deep valleys that mountains shelter from the wet west. Its vines climb terraces on stony slopes, and most of its reds are blends of native grapes.",
+  "cite": [
+   "douro-doc:p11",
+   "douro-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Terraces cut into the river valley",
+   "paras": [
+    "The Douro lies in the north-east of Portugal, in the basin of the Douro river. Mountains surround it, and they give it its own climate and surroundings. The region covers 250,000 ha and splits into three naturally distinct sub-regions.",
+    "Baixo Corgo takes in the municipalities of Mesão Frio and Peso da Régua. Cima Corgo takes in parishes of Alijó and Sabrosa, among others. Douro Superior takes in Torre de Moncorvo and the whole municipality of Vila Nova de Foz Côa. The same area is demarcated for Port.",
+    "Vines needed terraces (socalcos) wherever the slopes are steep. Before phylloxera reached the region in 1862, growers built small irregular terraces (geios) with 1 to 2 rows of vines, held up by stone walls. The stones came out of the ground itself. Those terraces were later abandoned and are now called mortórios.",
+    "After phylloxera came wider, more sloping terraces, with or without walls, planted at about 6,000 plants/ha. In the late 1960s and early 1970s came horizontal terraces with earth banks (patamares), at 3,000 to 3,500 plants/ha. Newer still is \"vinha ao alto\", with rows planted straight up the slope at 4,500 to 5,000 plants/ha. Winches can work it. Tracked tractors can too, on slopes up to about 40%."
+   ],
+   "cite": [
+    "douro-doc:p5",
+    "douro-doc:p6",
+    "douro-doc:p10",
+    "douro-doc:p11",
+    "douro-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Pinhão, Cima Corgo",
+     "point": [
+      -7.55,
+      41.19
+     ],
+     "zoom": 11,
+     "caption": "Pinhão lies in Cima Corgo, where terraces climb the slopes above the river.",
+     "cite": [
+      "douro-doc:p6",
+      "douro-doc:p11"
+     ]
+    },
+    {
+     "label": "Vila Nova de Foz Côa, Douro Superior",
+     "point": [
+      -7.14,
+      41.08
+     ],
+     "zoom": 10,
+     "caption": "The whole municipality of Vila Nova de Foz Côa belongs to Douro Superior.",
+     "cite": [
+      "douro-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered from the wet west",
+   "paras": [
+    "The Marão and Montemuro mountains block the humid winds from the west. Set in deep valleys protected by mountains, the region has very cold winters and very hot, dry summers. Rain falls unevenly across the year. December and January are the wettest months, or March in some places. July or August is the driest.",
+    "Sun exposure matters a great deal here. The north bank of the river feels dry winds from the south. The south bank is open to colder, damper winds from the north and gets less sun. Air is warmer on south-facing sites than on north-facing ones.",
+    "Mean annual temperatures run from 11.8 to 16.5 °C. The highest of them are along the Douro and the valleys of its tributaries, especially those on the right bank. Day and year temperature swings are widest at Barca d'Alva and smallest at Fontelo, a difference explained by distance from the sea."
+   ],
+   "cite": [
+    "douro-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Serra do Marão",
+     "point": [
+      -7.88,
+      41.26
+     ],
+     "zoom": 9.5,
+     "caption": "The Marão range is one of the two mountain barriers that hold back the humid western winds.",
+     "cite": [
+      "douro-doc:p11"
+     ]
+    },
+    {
+     "label": "Barca d'Alva",
+     "point": [
+      -6.95,
+      41.03
+     ],
+     "zoom": 11,
+     "caption": "Barca d'Alva has the widest day and year temperature swings in the region.",
+     "cite": [
+      "douro-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Schist reshaped by people",
+   "paras": [
+    "Vineyards for Douro wine must stand on soils that are mostly schist, though patches of granite are not excluded. The ground is stony and has no other use. Vines mostly grow on their own, with almond and olive trees along the edges of the plots.",
+    "Two kinds of soil stand out. In the first, people have changed the ground a great deal. Before planting, deep ploughing breaks up the rock. That deepens the soil and changes the lie of the land, and fertilizer is worked in. In the second, people have been gentler. The soil keeps its original profile, with changes only in the top layer."
+   ],
+   "cite": [
+    "douro-doc:p10",
+    "douro-doc:p11"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Blends of native grapes",
+   "paras": [
+    "Still Douro wine comes as red, white or rosado (rosé). The Douro also makes sparkling wine and a fortified sweet wine, Moscatel do Douro. More than 100 grapes are on the list, and the region's native grapes have been kept. That diversity has done much to make Douro wines distinctive. Touriga Nacional and Touriga Franca are on the list.",
+    "Most reds are blends of several native grapes, with an unmatched complexity and richness that mark them as Douro. Some good single-grape wines exist too. Whites are blends as well. They usually have good aroma and complexity, and they usually ferment or age in wood. Rosados come from a light maceration of red grapes. They have a pink colour and an exuberant aroma, and they are soft and sweet with light acidity.",
+    "Sparkling Douro starts as a base wine that could pass as Douro wine in every way. The second fermentation must happen in the bottle. Some sparkling wines marked with a harvest year need 9 months in bottle from that fermentation.",
+    "Moscatel do Douro must be made from Moscatel Galego Branco. Grape spirit stops the fermentation, and the wine must end up between 16.5 and 22% alcohol.",
+    "A late-harvest wine, Colheita tardia, comes from a single harvest. Tasting must show that the grapes were overripe.",
+    "Yields are capped at 55 hl/ha for red and rosado wines and at 65 hl/ha for white. Vines must be planted at no fewer than 4,000 per hectare, with a 10% tolerance. Terraced vineyards may go down to 3,000, with a 20% tolerance. Douro wine must be bottled inside the region or in the warehouses at Vila Nova de Gaia."
+   ],
+   "cite": [
+    "douro-doc:p2",
+    "douro-doc:p4",
+    "douro-doc:p5",
+    "douro-doc:p9",
+    "douro-doc:p10",
+    "douro-doc:p12",
+    "douro-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Vila Nova de Gaia",
+     "point": [
+      -8.61,
+      41.13
+     ],
+     "zoom": 11,
+     "caption": "Douro wine may leave only if it was bottled inside the region or at the warehouses of Vila Nova de Gaia.",
+     "cite": [
+      "douro-doc:p13"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vinho de missa or Novo",
+    "text": "Altar wine or new wine: a still Douro wine that passes the tasting at the good-quality level.",
+    "cite": [
+     "douro-doc:p2"
+    ]
+   },
+   {
+    "term": "Reserva",
+    "text": "A single-harvest white, red or rosado of very good quality, with fine aroma and taste. A sparkling Reserva needs at least 12 months in bottle after the second fermentation.",
+    "cite": [
+     "douro-doc:p2"
+    ]
+   },
+   {
+    "term": "Grande Reserva",
+    "text": "A single-harvest white or red of high quality, with very fine aroma and taste and strong ageing potential. Colheita Seleccionada and Reserva Especial follow the same rule.",
+    "cite": [
+     "douro-doc:p2"
+    ]
+   },
+   {
+    "term": "10, 20, 30 or over 40 years old",
+    "text": "On Moscatel do Douro, a very good wine blended from several years that aged in wood.",
+    "cite": [
+     "douro-doc:p3"
+    ]
+   },
+   {
+    "term": "Harvest year on Moscatel do Douro",
+    "text": "A good wine from one harvest, aged at least 6 months in wood after the harvest.",
+    "cite": [
+     "douro-doc:p3"
+    ]
+   }
+  ],
+  "cite": [
+   "douro-doc:p2",
+   "douro-doc:p3"
+  ]
+ }
+}

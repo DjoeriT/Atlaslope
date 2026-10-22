@@ -9,14 +9,14 @@ const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
   it('loads every place with a unique slug id', () => {
-    expect(tree.places).toHaveLength(109);
-    expect(new Set(ids(tree.places)).size).toBe(109);
+    expect(tree.places).toHaveLength(111);
+    expect(new Set(ids(tree.places)).size).toBe(111);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
   it('gives every place a real parent and a level name from its country', () => {
     for (const p of tree.places) {
-      expect(p.parent === 'spain' || tree.getPlace(p.parent) !== undefined, p.id).toBe(true);
+      expect(['spain', 'portugal'].includes(p.parent) || tree.getPlace(p.parent) !== undefined, p.id).toBe(true);
       expect(['place', 'zone']).toContain(tree.levelName(p));
       expect(tree.levelName(p), p.id).toBe(p.level);
     }
@@ -24,7 +24,7 @@ describe('tree model over data/places.json', () => {
 
   it('counts 70 core, 6 vc, 30 none and 3 zones', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 30, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 32, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3);
   });
 

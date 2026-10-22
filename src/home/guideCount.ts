@@ -8,8 +8,12 @@ import { loadTree } from '../tree';
 export const guideCount = (dir = 'content/guides'): number => readdirSync(dir).filter((f) => f.endsWith('.json')).length;
 
 // The home page counts places, so the three Rioja zones' guides stay out of its number (109 files, 106 places; Meseta batch 3, 19 Oct 2026).
+// Home and the Guides page show Spain only until the owner picks how Portugal appears there (Portugal pilot, 22 Oct 2026; mock
+// mocks/portugal-home-guides.html): its guides open from the map and their /pt/ pages meanwhile.
+export const SHOWN_COUNTRIES = ['spain'];
 export const placeGuideCount = (dir = 'content/guides', placesFile = 'data/places.json'): number => {
-  const places = new Set(JSON.parse(readFileSync(placesFile, 'utf8')).places.filter((p: { level: string }) => p.level === 'place').map((p: { id: string }) => p.id));
+  const places = new Set(JSON.parse(readFileSync(placesFile, 'utf8')).places
+    .filter((p: { level: string; parent: string }) => p.level === 'place' && SHOWN_COUNTRIES.includes(p.parent)).map((p: { id: string }) => p.id));
   return readdirSync(dir).filter((f) => f.endsWith('.json') && places.has(f.slice(0, -5))).length;
 };
 
@@ -53,7 +57,7 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   const photoOf = (id: string) => [PHOTO_PICK[id], `${id}-1`].find((k) => k && hasPhoto(k)) ?? null;
   const rows: GuideRow[] = [];
   const regions: RegionGroup[] = [];
-  for (const country of tree.countries) {
+  for (const country of tree.countries.filter((c) => SHOWN_COUNTRIES.includes(c.id))) {
     for (const region of tree.regionsOf(country.id)) {
       const group: RegionGroup = { id: region.id, name: region.name, guides: [] };
       for (const place of tree.placesInRegion(region.id)) {
@@ -70,7 +74,8 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
       if (group.guides.length) regions.push(group);
     }
   }
-  const missing = [...guides.keys()].filter((id) => !rows.some((r) => r.id === id));
+  const hidden = new Set(tree.places.filter((p) => !SHOWN_COUNTRIES.includes(tree.countryOf(p.id)?.id ?? '')).map((p) => p.id));
+  const missing = [...guides.keys()].filter((id) => !hidden.has(id) && !rows.some((r) => r.id === id));
   if (missing.length) throw new Error(`content/guides: no place in data/places.json for ${missing.join(', ')}`);
   return { rows, regions, photos };
 };

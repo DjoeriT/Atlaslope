@@ -4263,5 +4263,14 @@
   "status": 200,
   "type": "application/pdf;charset=UTF-8",
   "url": "https://web.archive.org/web/2025id_/https://www.mapa.gob.es/es/dam/jcr:2a49b727-24c9-4d11-aec6-3a6f44dc3b9e/Informe%20DOPs%202023_2024.pdf"
+ },
+ "oj-vinho-verde-doc-C_202403412": {
+  "bytes": 55360,
+  "fetched": "2026-10-22T00:00:00+00:00",
+  "final_url": "http://publications.europa.eu/resource/oj/C_202403412",
+  "sha256": "af1d1667c75c5a6de55481c5d8887bad0e5cf662ba5b3639d87472f34a578dfa",
+  "status": 200,
+  "type": "text/html",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202403412"
  }
 }
