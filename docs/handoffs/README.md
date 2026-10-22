@@ -4,11 +4,8 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 
 - [2026-10-22-learn-finish](2026-10-22-learn-finish.md): Study becomes Learn: start card, course filter, #learn, specs, crops checked; naming kept (#147, 22 Oct 2026)
 - [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
-<<<<<<< HEAD
 - [2026-10-22-germany-prep](2026-10-22-germany-prep.md): Germany prep: 32 WSET terms, 19 PDOs (6 single vineyards), Mosel outline from LWK RLP, Rheingau outline open, licences
-=======
 - [2026-10-22-germany-plan](2026-10-22-germany-plan.md): Germany plan and decisions #71-#78 (all A): 13 Anbaugebiete, Mosel and Rheingau pilot after Italy, Lagen as zones
->>>>>>> b9a157a50633dfda6f5b3e462e6c1629dff31ab4
 - [2026-10-22-italy-prep](2026-10-22-italy-prep.md): Italy rulebook source (MASAF 7z), licences, WSET L3 table (30 places), Barolo and Chianti Classico outlines, Italian text test, ISPRA email draft (#149, 22 Oct 2026)
 - [2026-10-22-italy-outlines](2026-10-22-italy-outlines.md): 87 Italy first-wave outlines, decisions #79, #80.
 - [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
