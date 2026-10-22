@@ -120,6 +120,12 @@ CONTENT_TOWNS = {
                 "Ulldemolins", "Marçà", "El Molar"],
 }
 
+# Ribeira Sacra (map tour pilot, 22 Oct 2026): Portomarin to Quiroga, Os Peares to A Peroxa, with the Sil and Mino canyons
+BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)
+MAIN += ("Río Miño", "Río Sil")
+CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos", "Sober", "Pantón", "Quiroga", "Amandi", "Os Peares",
+                                  "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
+
 
 # ranges named in the guides, kept even if NGBE files them under another local type
 FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serra de Montsant", "Sierra de Moncalvillo"}

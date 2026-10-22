@@ -31,6 +31,14 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                           "Angela Llop", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Vines on bare reddish soil in the foreground, wooded hills beyond and the limestone crests of the Serra del Montsant under a blue sky", "50% 50%"),
     "priorat-rules-1": ("File:Bodegas, vinos del Priorat, Scala Dei, La Morera de Montsant.jpg", "https://commons.wikimedia.org/wiki/File:Bodegas,_vinos_del_Priorat,_Scala_Dei,_La_Morera_de_Montsant.jpg",
                         "Juan Emilio Prades Bel", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "The stone front of the Cellers de Scala Dei winery, with two wooden doors under its name board", "50% 50%"),
+    "ribeira-sacra-canon-1": ("File:Cañón del Sil, Ribeira Sacra.jpg", "https://commons.wikimedia.org/wiki/File:Ca%C3%B1%C3%B3n_del_Sil,_Ribeira_Sacra.jpg",
+                              "Jl FilpoC", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sil flowing between steep rocky walls in the Sil canyon on an overcast day", "50% 50%"),
+    "ribeira-sacra-peares-1": ("File:Os Peares - Viaducto - 01.jpg", "https://commons.wikimedia.org/wiki/File:Os_Peares_-_Viaducto_-_01.jpg",
+                               "Xosema", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A road viaduct and an iron railway bridge crossing the valley at Os Peares, with wooded hills and the village roofs below", "50% 50%"),
+    "ribeira-sacra-amandi-1": ("File:Doade, Sober. Ribeira Sacra, Lugo. Galiza.jpg", "https://commons.wikimedia.org/wiki/File:Doade,_Sober._Ribeira_Sacra,_Lugo._Galiza.jpg",
+                               "Ramon Piñeiro", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Terraced vineyards on a steep slope above the Sil at Doade, with the river below", "50% 50%"),
+    "ribeira-sacra-weather-1": ("File:Viñedos cerca del Canón del Sil en la Ribeira Sacra.jpg", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_cerca_del_Can%C3%B3n_del_Sil_en_la_Ribeira_Sacra.jpg",
+                                "Tanja Freibott", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Old vines in autumn colour behind a dry-stone wall, with villages on the hills under a grey sky near the Sil canyon", "50% 50%"),
 }
 
 
