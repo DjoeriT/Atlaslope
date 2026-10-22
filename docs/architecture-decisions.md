@@ -152,4 +152,19 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#76 VDP**: named in the guide text as a private ranking; no map layer, no copied lists. [O]
 - **#77 Germany map layers**: Esri imagery; state 1 m terrain for slope in the pilot areas only; no geology in the pilot. [O]
 - **#78 Germany climate**: Köppen as elsewhere; no DWD layer. [O]
-- **#91 German single-vineyard PDOs**: Bürgstadter Berg, Monzinger Niederberg, Uhlen Blaufüsser Lay, Uhlen Laubach, Uhlen Roth Lay and Würzburger Stein-Berg are zones inside their Anbaugebiet (#74), not places of their own. [O, 22 Oct 2026]
+- **#93 German single-vineyard PDOs**: Bürgstadter Berg, Monzinger Niederberg, Uhlen Blaufüsser Lay, Uhlen Laubach, Uhlen Roth Lay and Würzburger Stein-Berg are zones inside their Anbaugebiet (#74), not places of their own. [O, 22 Oct 2026]
+
+## Sixth and seventh countries: Austria and Greece (owner, 22 Oct 2026, issue #149; plans `Review/countries/austria-plan.md`, `greece-plan.md`) — renumbered from #79-#90, which clashed with Italy's #79-#80 (22 Oct 2026)
+Drafted before a country report [A]; a desk report comes first and re-asks only a decision whose assumption it contradicts [O].
+- **#81 Austria timing**: desk report and prep after the Germany pilot is merged; the Austria pilot after the rest of Germany. [O]
+- **#82 Austria scope**: all DAC areas (about 18 [A]) as places; Niederösterreich, Burgenland, Steiermark and Wien named in text only. [O]
+- **#83 Austria pilot**: Wachau and Südsteiermark, pages at `/at/<place>/` (#48). [O]
+- **#84 Rieden**: zones inside their place where an official layer exists (as #74); no guide each. [O]
+- **#85 Austrian private tiers**: Vinea Wachau (Steinfeder, Federspiel, Smaragd) and ÖTW named in guide text only. [O]
+- **#86 Austria map layers**: Esri imagery, the national 10 m terrain [A], no geology in the pilot. [O]
+- **#87 Greece timing**: right after Austria. [O]
+- **#88 Greece scope**: the WSET L3 names first (about 4-6 [A]); the other PDOs (about 33 in all [A]) a second wave, each on the owner's word. [O]
+- **#89 Greece pilot**: Santorini and Naoussa, pages at `/gr/<place>/` (#48). [O]
+- **#90 Greek outlines**: the spec's municipality or community list plus ELSTAT limits, "approximate" in the credits (as #62). [O]
+- **#91 Greek names**: English spelling from the EU document; the Greek name also found by search. [O]
+- **#92 Greece map layers**: Esri imagery, Copernicus 30 m terrain, no geology in the pilot. [O]
