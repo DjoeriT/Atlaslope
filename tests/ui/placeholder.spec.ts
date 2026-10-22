@@ -40,7 +40,7 @@ test('the note on moving the map shows once, goes when the map is touched, and ?
   await page.goto('./?fresh=1');
   const welcome = page.getByRole('complementary', { name: 'Moving the map' });
   await expect(welcome).toBeVisible();
-  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.locator('.card h1')).toHaveText('See where your wine comes from'); // the bare atlas opens the cover (PR #202)
   expect(await page.evaluate(() => !!document.activeElement?.closest('.gesture-hint'))).toBe(false);
   await page.locator('.maplibregl-canvas').click({ position: { x: 700, y: 400 } });
   await expect(welcome).toBeHidden();

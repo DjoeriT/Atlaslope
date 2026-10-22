@@ -17,7 +17,7 @@
   replaced by a plain visibility check, checked in a production build (tour plays on load, pauses off screen, slopes clip plays on scroll).
 - ReviewBot (`Review/mock-atlas-cover/review.md`): OK with a change. The imagery credit moved under the first clip; "Tours in N places".
   Licence read [A, not a legal opinion]: short loops of the app's own map on its own site count as screen captures (`data/SOURCES.md`).
-- Older UI specs in 8 files that opened the bare atlas now open `#country=spain`, or expect the cover.
+- Older UI specs in 10 files that opened the bare atlas now open `#country=spain`, or expect the cover.
 
 ## Open
 - Clip polish: the slopes clip has grey tile gaps in the top corners and a dark sky band (software GL); the tour clip's first frame is

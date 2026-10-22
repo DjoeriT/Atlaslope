@@ -21,7 +21,7 @@ test('Quiz in the top bar opens the quiz card, hides place names, and Back retur
   await expect.poll(() => page.url()).toMatch(/#study&view=[^&]*,0,0$/); // flat and north up
 
   await page.goBack();
-  await expect(page.locator('.card:visible h1')).toHaveText('Spain');
+  await expect(page.locator('.card:visible h1')).toHaveText('See where your wine comes from'); // back to the card it had: the cover (PR #202)
   await expect.poll(() => visibleNames(page)).toBeGreaterThan(0);
 });
 
@@ -30,7 +30,7 @@ test('a #quiz link opens the quiz, and Explore in the top bar leaves it', async 
   await expect(page.locator('.card h1')).toHaveText('Study or review');
   await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' })).toHaveAttribute('aria-current', 'page');
   await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' }).click();
-  await expect(page.locator('.card:visible h1')).toHaveText('Spain');
+  await expect(page.locator('.card:visible h1')).toHaveText('See where your wine comes from'); // no card before: the cover (PR #202)
   await expect(page).not.toHaveURL(/quiz/);
 });
 
