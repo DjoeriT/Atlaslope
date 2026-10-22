@@ -6,14 +6,18 @@
    "kind": "ogc-features",
    "licence": "MAPA open data, see data/SOURCES.md",
    "url": "https://wmts.mapama.gob.es/sig-api/ogc/features/v1/collections/alimentacion:CDZ_Vinos/items?f=application%2Fgeo%2Bjson&limit=1000",
-   "note": "the MAPA layer as served (16.7 MB); paging by the 'next' link is [A], the original fetch was not scripted"
+   "note": "the MAPA layer as served (16.7 MB); paging by the 'next' link is [A], the original fetch was not scripted",
+   "bytes": 18035410,
+   "sha256": "13836d5dda575880ff515ccfe2b67f75c39784a41bc14679c3c681cb4b804d7e"
   },
   {
    "path": "ign/au_administrativeunit.geojson",
    "kind": "ogc-features",
    "licence": "IGN / CNIG, CC BY 4.0",
    "url": "https://api-features.ign.es/collections/administrativeunit/items?f=json&limit=1000",
-   "note": "all IGN administrative units for Spain, about 261 MB and many pages: slow; paging is [A], the original fetch was not scripted"
+   "note": "all IGN administrative units for Spain, about 261 MB and many pages: slow; paging is [A], the original fetch was not scripted",
+   "bytes": 260772576,
+   "sha256": "7d34621ddf6f5e016acd2762b9dd678555b94e65283fa4de48d9700ecf7c305b"
   },
   {
    "path": "dem/mdt25_rioja/",
@@ -23,7 +27,9 @@
    "command": [
     "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt25_rioja\" && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt25_rioja\"",
     "for x in 485000 505000 525000 545000 565000 585000 605000; do for y in 4640000 4660000 4680000 4700000 4720000; do curl -sSfL -o \"mdt25_${x}_${y}.tif\" \"https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion25830_25&FORMAT=image/tiff&SUBSET=x($x,$((x+20000)))&SUBSET=y($y,$((y+20000)))\"; done; done"
-   ]
+   ],
+   "bytes": 44860760,
+   "sha256": "d811a7da780e46c347f24a770cb306864e21c306309a4ec43991a5e905038456"
   },
   {
    "path": "dem/mdt05_rioja/",
@@ -33,7 +39,9 @@
    "command": [
     "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt05_rioja\" && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt05_rioja\"",
     "for x in $(seq -f %.0f 485000 10000 605000); do for y in $(seq -f %.0f 4640000 10000 4720000); do curl -sSfL -o \"mdt05_${x}_${y}.tif\" \"https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion25830_5&FORMAT=image/tiff&SUBSET=x($x,$((x+10000)))&SUBSET=y($y,$((y+10000)))\"; done; done"
-   ]
+   ],
+   "bytes": 936989352,
+   "sha256": "eb0ccb80dbabd5e70c089bc72ff33a3e6fef9375b1596e26f84870b115108716"
   },
   {
    "path": "dem/mdt200_spain/",
@@ -43,7 +51,9 @@
    "command": [
     "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt200_spain\" && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt200_spain\"",
     "for x in -80000 530000; do for y in 3980000 4425000; do curl -sSfL -o \"mdt200_${x}_${y}.tif\" \"https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion25830_200&FORMAT=image/tiff&SUBSET=x($x,$((x+610000)))&SUBSET=y($y,$((y+445000)))\"; done; done"
-   ]
+   ],
+   "bytes": 51431372,
+   "sha256": "592224f9cedbeed6df8fcc5e4f3627ab4001da6102f193c2138bebc57761ad28"
   },
   {
    "path": "boe/",
@@ -52,14 +62,18 @@
    "files": {
     "orden-apa-3465-2004.pdf": "https://www.boe.es/boe/dias/2004/10/27/pdfs/A35560-35568.pdf",
     "pliego-doca-rioja.pdf": "https://www.mapa.gob.es/es/alimentacion/temas/calidad-diferenciada/pliegodecondicionesdocarioja_tcm30-552276.pdf"
-   }
+   },
+   "bytes": 98339,
+   "sha256": "c03053c5ba0f7f58d0c85b7ae9b51dc57ba2627d63b5605eb582543f51f6b200"
   },
   {
    "path": "ne/ne_10m_admin_0_countries.geojson",
    "kind": "url",
    "licence": "Natural Earth, public domain",
    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_0_countries.geojson",
-   "note": "input of Tools/data/build_masks.py"
+   "note": "input of Tools/data/build_masks.py",
+   "bytes": 13287234,
+   "sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255"
   },
   {
    "path": "world/",
@@ -90,7 +104,9 @@
     ]
    },
    "licence": "eAmbrosia, see data/SOURCES.md",
-   "note": "about 1,000 PDFs over the three countries, each with pdftotext -layout text; needs pdftotext"
+   "note": "about 1,000 PDFs over the three countries, each with pdftotext -layout text; needs pdftotext",
+   "bytes": 4310926,
+   "sha256": "5a8450feae81110efb89232b2a181ec14e548361c94a859e4f7f60de56ab4f2c"
   },
   {
    "path": "countries/fr/att/",
@@ -102,7 +118,9 @@
      "docs"
     ]
    },
-   "licence": "eAmbrosia, see data/SOURCES.md"
+   "licence": "eAmbrosia, see data/SOURCES.md",
+   "bytes": 50692313,
+   "sha256": "34e5bc2fe491d9dad87d1fcf24da27c6c03c9afd6752a83390c23a4d97590f24"
   },
   {
    "path": "countries/it/att/",
@@ -114,7 +132,9 @@
      "docs"
     ]
    },
-   "licence": "eAmbrosia, see data/SOURCES.md"
+   "licence": "eAmbrosia, see data/SOURCES.md",
+   "bytes": 52255906,
+   "sha256": "fce65aac3f07e1d215e1a69a1f9b912f837e1742bb339abb1fb64f966edcc6b4"
   },
   {
    "path": "countries/pt/caop2025-freguesias.geojson",
@@ -127,7 +147,9 @@
     ]
    },
    "licence": "DGT, CAOP2025, CC BY 4.0",
-   "note": "pull.py pages the OGC API at 500; it writes the municipios file too"
+   "note": "pull.py pages the OGC API at 500; it writes the municipios file too",
+   "bytes": 134217003,
+   "sha256": "575f1b20bf0a7880cf7594764f15a095d273db9333ad611dc116148237ec3fca"
   },
   {
    "path": "countries/pt/caop2025-municipios.geojson",
@@ -139,7 +161,9 @@
      "outlines"
     ]
    },
-   "licence": "DGT, CAOP2025, CC BY 4.0"
+   "licence": "DGT, CAOP2025, CC BY 4.0",
+   "bytes": 51395246,
+   "sha256": "42243951c91a6ad50d2aaf55b1323b4df70f54cddcede9d23bac56feee18b0bf"
   },
   {
    "path": "countries/pt/caop2025-ram-islands.geojson",
@@ -149,7 +173,9 @@
    "command": [
     "cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/pt\" && curl -sSfL -o CAOP_RAM_2025-gpkg.zip https://geo2.dgterritorio.gov.pt/caop/CAOP_RAM_2025-gpkg.zip && unzip -oq CAOP_RAM_2025-gpkg.zip -d ram",
     "ogr2ogr -f GeoJSON caop2025-ram-islands.geojson ram/*.gpkg ram_distritos -t_srs EPSG:4326 -where \"distrito IN ('Ilha da Madeira','Ilha de Porto Santo')\" -simplify 0.00036 -makevalid"
-   ]
+   ],
+   "bytes": 5813099,
+   "sha256": "2798ff82d1c3e2409534b108c8fb68d6ed7ed175785b12f6711b654bd9946400"
   },
   {
    "path": "countries/fr/inao-delim-parcellaire-aoc-shp.zip",
@@ -162,7 +188,9 @@
     ]
    },
    "licence": "Licence Ouverte (Etalab), credit INAO",
-   "note": "267 MB, file of 2026-10-19; dataset https://www.data.gouv.fr/datasets/5aaf6b7ec751df67b0d7a87f"
+   "note": "267 MB, file of 2026-10-19; dataset https://www.data.gouv.fr/datasets/5aaf6b7ec751df67b0d7a87f",
+   "bytes": 267292631,
+   "sha256": "086658ceae50015a7dd7281dc6165278a0ad0343b79e81b398d6fced4c152775"
   },
   {
    "path": "countries/fr/cdc/",
@@ -177,7 +205,9 @@
    "path": "countries/fr/wset-l3-spec.pdf",
    "kind": "url",
    "licence": "WSET, place names only (course structure, never their text)",
-   "url": "https://www.wsetglobal.com/media/11731/wset_l3wines_specification_en_highres_may2022_issue2.pdf"
+   "url": "https://www.wsetglobal.com/media/11731/wset_l3wines_specification_en_highres_may2022_issue2.pdf",
+   "bytes": 281118,
+   "sha256": "1cd76b4b4029c3fba1d60dd45be0aad90b3eb323e935c27d087aaad57600a55d"
   },
   {
    "path": "countries/it/istat-limiti-01012025-g.zip",
@@ -190,7 +220,9 @@
     ]
    },
    "licence": "ISTAT, CC BY 4.0",
-   "note": "https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2025/Limiti01012025_g.zip"
+   "note": "https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2025/Limiti01012025_g.zip",
+   "bytes": 10410520,
+   "sha256": "d3bbf80b316a801405f6b2f6b0cb6f27daf10b070e83f99e6545acca878eca39"
   },
   {
    "path": "countries/it/piemonte-aree-vini-doc-docg.zip",
@@ -202,7 +234,9 @@
      "outlines"
     ]
    },
-   "licence": "Regione Piemonte, CC BY 4.0"
+   "licence": "Regione Piemonte, CC BY 4.0",
+   "bytes": 8172133,
+   "sha256": "1289c6e2b3508b59496ea97c5bc2d02d1110ba8a4afd99012e652757b974ed5a"
   },
   {
    "path": "countries/it/disc/",
@@ -211,7 +245,9 @@
    "note": "page https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625 links four 7z archives (DOP A-D, E-N, O-Z, IGT); fetched: dop_A-D.7z, barolo.pdf, chianti-classico.pdf with pdftotext -layout text",
    "command": [
     "open that page, save the links in its HTML (dop_A-D.7z) into countries/it/disc/, then: bsdtar -xf dop_A-D.7z and pdftotext -layout on the PDFs you need"
-   ]
+   ],
+   "bytes": 202157601,
+   "sha256": "66f361c92188b7affc6a0edcdd19c3c0c833bf0af0bd369eb03f946a00eb4b99"
   }
  ]
 }
