@@ -231,6 +231,31 @@
    "h": 554,
    "blur": "UklGRk4AAABXRUJQVlA4IEIAAABQAgCdASoQAAcAAsBMJZgCdH8IwABQUVWEZAAA/lt1q+pcmVu6E/6a3aSnFiqcbYlt21QiO4o/bVHkNW/TF8AAAAA="
   },
+  "chablis-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwAAsBMJaACdAEPEJd4j+AAAP7uJ9p2U+Y3hzUjpt8TyIT8VMkL89cmqn9QTJrGjXjo26vpCznFLXm3AWNTMtoEUeHdWyHGYAAA"
+  },
+  "chablis-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsAAsBMJZACdAEOtfjjQAD+6uiVbARR8w6okO7O4lepVLDS48sJKNHuI1Le+lwKrwOwUXe4ZI5aARBKDSZBV5pU+y2kFIGAAA=="
+  },
+  "chablis-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAwAAsBMJbACdAEDyAfRdOoKAAD8jJugF55n3yI+1EMWRp+fVvzTPb60PpoTLmQo9oo01qjBJzvIHbx2IN05wmUTJ+728R11xM+MhZHEw1xY3dEAAA=="
+  },
+  "chablis-4": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAAsBMJZACdAEOV4FMAAD+86/36he4cvRmey3WsW1GtQu4hX4MLOzyEHZC5RChbR1Am+R73paQwPbn0TVBUlR+LyKkWzczZqUJlRWAAA=="
+  },
+  "chablis-5": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAAsBMJQBOgCHiAyfZ5GAAAM3z2bPp1BIDk+oBukbKDSiHCP6M4iEsUznyRt1TiT1LMIMWAJR4GW8AAA=="
+  },
   "cigales-1": {
    "w": 1200,
    "h": 900,
@@ -655,6 +680,31 @@
    "w": 1200,
    "h": 898,
    "blur": "UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwAAsBMJZgCdAEIlzpyAAD+4Aqle1OyiEbFymSH7D57jW04xWGilQVwEwaSoA1+lFFm77DKiMT6pd9GqZgA"
+  },
+  "pauillac-1": {
+   "w": 790,
+   "h": 1200,
+   "blur": "UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoQABgAPtFUo0uoJKMhsAgBABoJYgCADCcgdyNbhd5Imugs8OMAcAD+YWS+h/tqnocxt0atFjVU/6VaFDrxYD5ZQYWqWVGKXfQs+9i/EzRrpjzG4DtcEDL1qAw/dfApaWdQeP6FUgtLq4d2UISdXSP+42tRwFSiXwUCmEh5ysQlKGQ3OWeIPMuYGP3qfO8iUAA="
+  },
+  "pauillac-2": {
+   "w": 900,
+   "h": 1200,
+   "blur": "UklGRnYAAABXRUJQVlA4IGoAAACwAwCdASoQABUAPtFUo0uoJKMhsAgBABoJZQDE2B3goBXoNWJfgAD+1/PjBeT32NxLlza3+6Vhj4mlHfsy5TklpItj0hPUZSSvyV6os1izq9MaPqz909k3/SeSgczznq4xm+8cJAyAYAAA"
+  },
+  "pauillac-3": {
+   "w": 803,
+   "h": 1200,
+   "blur": "UklGRpYAAABXRUJQVlA4IIoAAACwBACdASoQABgAPtFUo0uoJKMhsAgBABoJaACdIEy4AB7QznjuflKhS4qPlfsAAP6unonejM1ocKrgC6Jb6fkUvSzfrjZAoMHDtny0QQ8gvF2MYaipFe7i7rzgBdLM3mt60UuVuE+qpN6QqSnsJ2ItbBGgNksoJBnf+lZZfH+cK5WPd3L44kfgAAA="
+  },
+  "pauillac-4": {
+   "w": 1200,
+   "h": 791,
+   "blur": "UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsAAsBMJZwAApyaS3ewAAD++EPIh5M4CefrIGuBoD9krwBtBvJtwFEq8iJ4/hVeEdx6sakrozX7OoD8ZuyJrPOOaFp31mLqSEAA"
+  },
+  "pauillac-5": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAwAAsBMJaACdAEQFIv2AfgAAP5m30d/8izNuugHBBqWBU21N/FueUQ52fDVHeVbCIoOtQhumC23i/o8xhd62dybH9etMIojXemEtsAmkYfVAAA="
   },
   "penedes-1": {
    "w": 1200,

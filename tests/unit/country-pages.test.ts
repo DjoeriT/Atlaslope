@@ -108,14 +108,14 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
     expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
   });
-  it('renders /fr/ with two place tiles, no photos yet, and an honest Study note', () => {
+  it('renders /fr/ with two place tiles, their photos, and an honest Study note', () => {
     expect(count(page, /<a class="ecard"/g)).toBe(2);
-    expect(count(page, /Photos soon/g)).toBe(2);
+    expect(count(page, /Photos soon/g)).toBe(0);
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
     expect(page).not.toContain('Open Study');
-    expect(page).not.toContain('<p class="credit">');
+    expect(count(page, /<p class="credit">Photos /g)).toBe(1);
     expect(page).toContain('<h2 id="r-fr-burgundy">Burgundy</h2>');
     expect(page).toContain('<h2 id="r-fr-bordeaux">Bordeaux</h2>');
   });
