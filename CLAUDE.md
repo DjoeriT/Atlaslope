@@ -51,6 +51,9 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   else's branch, or move or delete a tag. A refused push means stop and tell him.
 - **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
   rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
+- **One worktree per session** (22 Oct 2026: two sessions shared the main checkout; the country-model session committed onto the
+  map-bar branch, and a push carried its commit into the wrong PR): every session, the main one too, works in its own git worktree
+  from its first step; nobody commits in the main folder, which stays on `main` for reading and previews. A local hook refuses it.
 - **Git:** PR per slice on a `claude/` branch; merge `main` in, never rebase. The slice PR holds the handoff and tester note (no records
   PR after it). Push when the PR can stand alone, not in bursts. A handoff is pushed before the session ends (19 Oct: the Guides
   mock handoff sat on an unpushed local branch). Archive, never delete (`Review/archive/`). `release-N` tags mark what is live; keep no "live on release-N" line anywhere. Backlog = GitHub Issues
