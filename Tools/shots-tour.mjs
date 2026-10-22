@@ -95,7 +95,8 @@ async function goTo(page, step) {
   if (!step.chapter) { await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; }); return; }
   const ch = page.locator(`#terroir-${step.chapter}`);
   const index = linkIndex(step);
-  if (index !== undefined) { await ch.locator('a.fly').nth(index).click(); return; }
+  // Fly links and zone-card links carry data-fly="<chapter>.<index>" wherever the C3 page puts them (beat column, cards under it).
+  if (index !== undefined) { const a = page.locator(`[data-fly="${step.chapter}.${index}"]`).first(); await a.scrollIntoViewIfNeeded(); await a.click(); return; }
   // No link: the chapter's first step shows while the chapter is under the reading line, so bring its top to ~20% of the reading area.
   await ch.evaluate((el) => {
     const p = el.closest('.pg'); const top = el.getBoundingClientRect().top;
@@ -118,6 +119,7 @@ for (const size of sizes) {
     const map = page.locator('.pg.tour .pg-tourmap .story-map');
     await map.waitFor({ state: 'visible', timeout: 30_000 });
     for (const [i, step] of story.steps.entries()) {
+      if (!step.chapter) continue; // the cover step (whole place from afar) has no text in the map mode: it opens on beat 1's stop
       const start = Date.now();
       tiles = 0;
       await goTo(page, step);

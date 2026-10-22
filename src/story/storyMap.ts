@@ -42,6 +42,8 @@ export interface StoryMapEvents {
 export interface StoryMap {
   map: MapLibreMap;
   show(view: StopView, instant: boolean): void;
+  /** The terrain height the reader chose (the mock's x1.5 / x1.3 toggle). */
+  setHeight(k: number): void;
   remove(): void;
 }
 
@@ -73,7 +75,8 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: true }), 'top-right');
 
   // createMap sets the height by zoom on every zoom and terrain change; these run after its handlers and hold the story's fixed height.
-  const holdHeight = () => { if (map.terrain && map.terrain.exaggeration !== STORY_EXAGGERATION) map.terrain.exaggeration = STORY_EXAGGERATION; };
+  let height = STORY_EXAGGERATION;
+  const holdHeight = () => { if (map.terrain && map.terrain.exaggeration !== height) map.terrain.exaggeration = height; };
   map.on('zoom', holdHeight);
   map.on('terrain', holdHeight);
 
@@ -197,6 +200,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   return {
     map,
     show,
+    setHeight(k) { height = k; holdHeight(); },
     remove() { marks.forEach((m) => m.remove()); facts.remove(); layers.remove(); ctl.remove(); },
   };
 }

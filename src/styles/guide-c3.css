@@ -124,7 +124,5 @@
   .pg-short li{grid-template-columns:1fr}
   .pg-cols main > section.pg-answer{margin-left:0;margin-right:0;padding:2.6rem 0}
 }
-.pg.tour .pg-hero{grid-template-columns:1fr;grid-template-areas:"t" "pic" "w"}
-.pg.tour .pg-hero .pg-mosaic{margin-top:1.2rem}
 .pg.tour .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
 .pg.tour .pg-beat-below .pg-zguide,.pg.tour .pg-answer .pg-cards,.pg.tour .pg-alike,.pg.tour .pg-below-facts,.pg.tour .pg-two{grid-template-columns:1fr;gap:1.8rem}

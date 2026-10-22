@@ -10,7 +10,7 @@ import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
 import { anchorOf, stepOfLink } from './steps';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
-import { creditParts, type Credited } from './view';
+import { creditParts, locator, locatorBox, type Credited } from './view';
 
 /** Each step holds at least this much scroll, so a normal flick cannot skip one whose link sits close to the next (card 3, 21 Oct 2026). */
 const HOLD_PX = 120;
@@ -25,15 +25,20 @@ interface Props {
   guide: Guide;
   story: Story;
   fly?: FlyAsk;
+  /** The chapter (1-based, 0 for the overview and the rest) the reader is in, for "Chapter n of 4" in the mode's band. */
+  onChapter?(n: number): void;
 }
 
-export function GuideMap({ place, guide, story, fly }: Props) {
+export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
   const wrap = useRef<HTMLElement>(null);
   const mapEl = useRef<HTMLDivElement>(null);
   const smap = useRef<StoryMap | null>(null);
   const [active, setActive] = useState(0);
   const [moved, setMoved] = useState(false);
   const [creditOpen, setCreditOpen] = useState(false);
+  const [height, setHeight] = useState(STORY_EXAGGERATION);
+  const locBox = useRef<SVGRectElement>(null);
+  const locDot = useRef<SVGCircleElement>(null);
   const [credit, setCredit] = useState<{ shown: Credited[]; imagery: boolean }>({ shown: [], imagery: true });
   const [named, setNamed] = useState<Record<string, LngLat>>({});
   const shownStep = useRef(0);
@@ -73,8 +78,9 @@ export function GuideMap({ place, guide, story, fly }: Props) {
     const line = readingLine(areaTop, innerHeight, narrow.matches);
     const restTop = page.querySelector('#taste, #short, #producers')?.getBoundingClientRect().top;
     if (restTop !== undefined && restTop <= line) return rest;
-    const tops = holdSteps(spreadRows(story.steps.map((st) => page.querySelector(anchorOf(guide, st))?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
-    return pickStep(tops, line);
+    // The map mode has no page hero, so the cover step (the whole place from afar) has no text: the column opens on beat 1 and its first stop.
+    const tops = holdSteps(spreadRows(story.steps.slice(1).map((st) => page.querySelector(anchorOf(guide, st))?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
+    return 1 + pickStep(tops, line);
   }, [story, guide, rest]);
 
   // The map: made once, then each step's view is shown on it (jump on first load, flights after).
@@ -85,7 +91,14 @@ export function GuideMap({ place, guide, story, fly }: Props) {
     const start: Cam = first.kind === 'view' ? first : { center: [-3.7, 40.4], zoom: 5, pitch: 0, bearing: 0 };
     const m = createStoryMap(mapEl.current as HTMLDivElement, story, start, {
       onUserMove: () => setMoved(true),
-      onMove: () => {},
+      onMove: (map) => {
+        const c = map.getCenter(), b = map.getBounds();
+        const [x, y] = locator.at([c.lng, c.lat]);
+        locDot.current?.setAttribute('cx', x.toFixed(1)); locDot.current?.setAttribute('cy', y.toFixed(1));
+        const box = locatorBox(b.getWest(), b.getSouth(), b.getEast(), b.getNorth());
+        const r = locBox.current;
+        if (r) { r.setAttribute('x', box.x.toFixed(1)); r.setAttribute('y', box.y.toFixed(1)); r.setAttribute('width', box.w.toFixed(1)); r.setAttribute('height', box.h.toFixed(1)); }
+      },
       onLayers: (shown, imagery) => setCredit({ shown, imagery }),
     });
     smap.current = m;
@@ -147,22 +160,32 @@ export function GuideMap({ place, guide, story, fly }: Props) {
     smap.current?.show(views[i], false);
   }, [fly]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const chapterNo = active >= rest ? 0 : guide.chapters.findIndex((c) => c.id === story.steps[active].chapter) + 1;
+  useEffect(() => { onChapter?.(chapterNo); }, [chapterNo]); // eslint-disable-line react-hooks/exhaustive-deps
+  const setHeightK = (k: number) => { setHeight(k); smap.current?.setHeight(k); };
   const recentre = () => { setMoved(false); smap.current?.show(views[shownStep.current], false); };
   const step = story.steps[Math.min(active, rest - 1)];
   const isRest = active === rest;
   const label = isRest ? place.name : step.chip ?? stopOf(guide, step)?.label ?? place.name;
-  const parts = creditParts(credit.shown, credit.imagery, STORY_EXAGGERATION);
+  const parts = creditParts(credit.shown, credit.imagery, height);
+
+  const slopeOn = !!storyFiles(story.id).slope;
 
   return (
     <aside className="pg-tourmap" ref={wrap} aria-label={t.mapLabel} data-step={isRest ? 'rest' : step.id}>
       <div className="pg-tourmap-in">
-        <p className="pg-tourcap">
-          <span className="k">{isRest ? '' : active > 0 ? t.stopOf(active, story.steps.length - 1) : t.open}</span>
-          <b>{label}</b>
-        </p>
         <div className="story-map" ref={mapEl} />
+        <p className="story-chip">{label}</p>
+        <div className="story-exag" role="group" aria-label={t.terrainHeight}>
+          <span>{t.terrainHeight}</span>
+          {[STORY_EXAGGERATION, 1.3].map((k) => <button key={k} type="button" aria-pressed={height === k} onClick={() => setHeightK(k)}>×{k.toFixed(1)}</button>)}
+        </div>
         {moved && <button type="button" className="story-recentre" onClick={recentre}>{t.recentre}</button>}
+        <svg className="story-loc" viewBox={`-3 -3 ${locator.width + 6} ${locator.height + 6}`} role="img" aria-label={t.locator}>
+          <path d={locator.path} /><rect ref={locBox} className="lbox" width="4" height="4" /><circle ref={locDot} className="ldot" r="3" />
+        </svg>
         <p className={creditOpen ? 'story-credit open' : 'story-credit'}>
+          {slopeOn && <><i className="sw" aria-hidden="true" />{t.slopeKey} · </>}
           {parts.map((p, i) => <span key={i}>{i > 0 && ' · '}<span className="long">{p.long}</span><span className="short">{p.short}</span></span>)}
         </p>
       </div>

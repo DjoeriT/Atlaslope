@@ -152,6 +152,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     const el = k && page?.querySelector<HTMLElement>(`[data-b="${k.key}"]`);
     if (page && k && el) page.scrollTop += el.getBoundingClientRect().top - (areaTop(page) + k.off);
   }, [tour]);
+  const [chapterNo, setChapterNo] = useState(0);
   const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
@@ -237,6 +238,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       <figure key={`${id}.${step.fly ?? step.photo}`} className="pg-fig">
         <Pic photo={photo} slot={stops.length > 1 ? 16 : PHOTO_MAX_REM} alt={photo.alt} />
         {fly && <figcaption>
+          {tour && <span className="cap-k">{t.onTheMap}</span>}
           <span className="cap-t">{fly.label}</span>
           <span className="cap-p">{fly.caption}</span>
           {line && <span className="cap-m">{line}<small>{ts.measuredBy}</small></span>}
@@ -451,11 +453,18 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name}
-        bar={tour && <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>} />
+      {tour ? (
+        // The map mode has its own black band, no site nav or search (the v3 stage, restored 22 Oct 2026).
+        <header className="pg-top story-top">
+          <span className="story-brand">AtlaSlope</span>
+          <p className="story-where">{chapterNo > 0 ? ts.chapterOf(chapterNo, guide?.chapters.length ?? 0) : ''}</p>
+          <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>
+          <a className="story-back" href={pageHash} onClick={(e) => { e.preventDefault(); hideMap(); }}>{ts.back(place.name)}</a>
+        </header>
+      ) : <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />}
       <div className="pg-body">
       <div className="pg-listing">
-        <div className="pg-hero">
+        {!tour && <div className="pg-hero">
           <div className="pg-hero-tt">
             <nav className="kicker crumb" aria-label={tc.whereThisSits}>
               {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
@@ -487,13 +496,13 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
             )}
             {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
           </div>
-        </div>
+        </div>}
 
-        <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
+        {!tour && <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
             <a key={s.id} href={pageHash} aria-current={current === s.id ? 'true' : undefined} onClick={jump(s.id, s.focus)}>{s.label}</a>
           ))}
-        </nav>
+        </nav>}
 
         <div className="pg-cols">
           <main>
@@ -662,7 +671,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       </div>
       {tour && guide && story && (
         <Suspense fallback={<aside className="pg-tourmap" />}>
-          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} />
+          <GuideMap place={place} guide={guide} story={story} fly={flyAsk} onChapter={setChapterNo} />
         </Suspense>
       )}
       </div>
