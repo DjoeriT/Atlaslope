@@ -5,6 +5,8 @@ INAO's shapefile holds one polygon per denomination and commune (Lambert-93, EPS
 script dissolves the rows of its 'app' and 'denom', measures km2 in Lambert-93, simplifies (places 40 m, zones 10 m: climats are
 small) and writes data/countries/fr/areas.geojson in WGS84: one feature per place and zone (id, place, zone, parent, app, denom,
 communes, km2). Data only: nothing here feeds the app yet (France pilot waits, decision #52).
+Every place in data/countries/fr/wset-places.json (Tools/countries/fr_wset.py, decision #53) that the spec does not name is
+added as a plain place with its INAO app/denom; the spec's own entries (zones, notes) win.
 
 Run: python3 Tools/data/build_fr_areas.py   (needs data/raw/countries/fr/inao-delim-parcellaire-aoc-shp.zip from
 Tools/countries/pull.py, and ogr2ogr; in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
@@ -17,7 +19,22 @@ RAW = Path(os.environ.get("ATLASLOPE_RAW", ROOT / "data/raw")) / "countries/fr" 
 ZIP = RAW / "inao-delim-parcellaire-aoc-shp.zip"
 SPEC = ROOT / "data/countries/fr/areas-spec.json"
 OUT = ROOT / "data/countries/fr/areas.geojson"
-SIMPLIFY = {"place": 40, "zone": 10}  # metres in Lambert-93
+SIMPLIFY = {"place": 80, "zone": 10}  # metres in Lambert-93
+# 22 Oct 2026, all WSET places: parcel-level unions came to 37 MB (Spain's dops.geojson is 1.6 MB). A place outline is closed
+# with a buffer out and back in, which fills the lanes between parcels, then simplified; both grow with the place's size
+# (4 m per square root of km2: Pauillac 16 km2 -> 150/80 m, Bordeaux 2,353 km2 -> 400/300 m). Zones (climats) stay exact.
+CLOSE = {"place": 150, "zone": 0}
+
+
+def scaled(shp, app, denom, kind):
+    if kind == "zone":
+        return SIMPLIFY[kind], CLOSE[kind]
+    q = lambda s: s.replace("'", "''")
+    sql = f"SELECT SUM(ST_Area(geometry)) / 1e6 AS km2 FROM \"{shp.stem}\" WHERE app = '{q(app)}' AND denom = '{q(denom)}'"
+    out = subprocess.run(["ogr2ogr", "-f", "CSV", "/vsistdout/", str(shp), "-dialect", "sqlite", "-sql", sql],
+                         check=True, capture_output=True, text=True).stdout.split()
+    k = 4 * float(out[-1] or 0) ** 0.5
+    return min(max(k, SIMPLIFY[kind]), 300), min(max(k, CLOSE[kind]), 400)
 
 
 def shapefile():
@@ -29,9 +46,10 @@ def shapefile():
     return shp
 
 
-def cut(shp, app, denom, simplify):
+def cut(shp, app, denom, simplify, close=0):
     q = lambda s: s.replace("'", "''")
-    sql = (f"SELECT ST_Union(geometry) AS geometry, ST_Area(ST_Union(geometry)) / 1e6 AS km2, "
+    geom = f"ST_Buffer(ST_Buffer(ST_Union(geometry), {close}), -{close})" if close else "ST_Union(geometry)"
+    sql = (f"SELECT {geom} AS geometry, ST_Area(ST_Union(geometry)) / 1e6 AS km2, "
            f"group_concat(DISTINCT nomcom) AS communes FROM \"{shp.stem}\" "
            f"WHERE app = '{q(app)}' AND denom = '{q(denom)}'")
     with tempfile.TemporaryDirectory() as tmp:
@@ -47,13 +65,17 @@ def cut(shp, app, denom, simplify):
 
 def main():
     shp, spec, out = shapefile(), json.loads(SPEC.read_text()), []
+    wset = ROOT / "data/countries/fr/wset-places.json"
+    for w in json.loads(wset.read_text())["places"] if wset.exists() else []:
+        if w["id"] not in spec and w["inao"]:
+            spec[w["id"]] = dict(w["inao"])
     for place, p in spec.items():
         if place.startswith("$"):
             continue
         units = [(place, None, p)] + [(z, place, zs) for z, zs in p.get("zones", {}).items()]
         for uid, parent_place, u in units:
             kind = "zone" if parent_place else "place"
-            f = cut(shp, u["app"], u["denom"], SIMPLIFY[kind])
+            f = cut(shp, u["app"], u["denom"], *scaled(shp, u["app"], u["denom"], kind))
             pr = f["properties"]
             f["properties"] = {"id": uid, "place": place, "kind": kind, "parent": u.get("parent", parent_place),
                                "app": u["app"], "denom": u["denom"], "km2": round(pr["km2"], 2),

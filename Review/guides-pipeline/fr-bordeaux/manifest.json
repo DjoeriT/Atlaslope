@@ -1,0 +1,21 @@
+{
+  "sources": {
+    "bordeaux-doc": "Review/sources/fetched/att-PDO-FR-A0821-19750.txt",
+    "bordeaux-superieur-doc": "Review/sources/fetched/att-PDO-FR-A0306-11593.txt",
+    "cotes-de-bordeaux-doc": "Review/sources/fetched/att-PDO-FR-A0987-25267.txt",
+    "entre-deux-mers-doc": "Review/sources/fetched/att-PDO-FR-A0406-19813.txt",
+    "medoc-doc": "Review/sources/fetched/att-PDO-FR-A0730-10321.txt",
+    "haut-medoc-doc": "Review/sources/fetched/att-PDO-FR-A0710-10414.txt",
+    "saint-estephe-doc": "Review/sources/fetched/att-PDO-FR-A0178-11336.txt",
+    "pauillac-doc": "Review/sources/fetched/att-PDO-FR-A0713-11335.txt",
+    "margaux-doc": "Review/sources/fetched/att-PDO-FR-A0329-10732.txt",
+    "saint-julien-doc": "Review/sources/fetched/att-PDO-FR-A0500-10324.txt",
+    "graves-doc": "Review/sources/fetched/att-PDO-FR-A1012-10319.txt",
+    "pessac-leognan-doc": "Review/sources/fetched/att-PDO-FR-A0162-10551.txt",
+    "saint-emilion-doc": "Review/sources/fetched/att-PDO-FR-A0988-10774.txt",
+    "saint-emilion-grand-cru-doc": "Review/sources/fetched/att-PDO-FR-A0993-10563.txt",
+    "pomerol-doc": "Review/sources/fetched/att-PDO-FR-A0273-10737.txt",
+    "sauternes-doc": "Review/sources/fetched/att-PDO-FR-A0819-25433.txt",
+    "barsac-doc": "Review/sources/fetched/att-PDO-FR-A0186-24526.txt"
+  }
+}

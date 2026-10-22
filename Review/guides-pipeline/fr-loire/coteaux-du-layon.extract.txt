@@ -1,0 +1,439 @@
+=== PAGE 1 ===
+FICHE TECHNIQUE  1 /10  Numéro de dossier:Ref.
+  PDO-FR-A0826-AM01
+  Ares(2014)2128930 - 27/06/2014
+
+
+  Demande d'une nouvelle modification
+
+I. DOCUMENT UNIQUE:
+  1. DÉNOMINATION ET TYPE
+  a. Dénomination(s) à enregistrer:
+
+  Coteaux du Layon (fr)
+
+
+  b. Type d'indication géographique:
+
+  AOP – Appellation d'origine protégée
+
+
+  2. CATÉGORIES DE PRODUITS DE LA VIGNE
+
+  1. Vin
+
+
+  3. DESCRIPTION DU OU DES VINS
+
+  Description textuelle concise
+  Vins tranquilles blancs avec sucres résiduels, élaborés à partir du
+  chenin B et issus de raisins présentant une concentration naturelle sur
+  pied. Ils sont racés, élégants, aux arômes complexes et aptes au
+  vieillissement. En bouche, ils allient suavité et fraicheur, puissance et
+  finesse.
+  TAVNM 14 %;Teneur en sucres fermentescibles>ou=34g/l
+
+
+
+  Caractéristiques analytiques générales
+  Titre alcoométrique total  18
+  maximal (en % du
+  volume)
+  Titre alcoométrique  10
+  acquis minimal (en % du
+  volume)
+  Acidité totale minimale
+  Acidité volatile maximale 25
+  (en milliéquivalents par
+  litre)
+  Teneur maximale en
+  anhydride sulfureux total
+
+=== PAGE 2 ===
+FICHE TECHNIQUE  2 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  (en milligrammes par
+  litre)
+
+
+4. PRATIQUES VITIVINICOLES
+  a. Pratiques œnologiques essentielles
+  Utilisation des morceaux de bois
+
+  Type de pratique  Pratique œnologique spécifique
+  œnologique:
+  Description de la pratique:
+  - L’utilisation de morceaux de bois est
+  interdite.
+
+
+  Enrichissement
+
+  Type de pratique  Pratique œnologique spécifique
+  œnologique:
+  Description de la pratique:
+  L'enrichissement est autorisé selon les règles définies par le cahier
+  des charges.
+
+
+  Densité
+
+  Type de pratique  Pratique culturale
+  œnologique:
+  Description de la pratique:
+  - Les vignes présentent une densité minimale à la plantation de 4000
+  pieds /ha. Ces vignes ne peuvent présenter un écartement entre les
+  rangs supérieur à 2,50 m et un écartement entre les pieds sur un
+  même rang inférieur à 1m. Les parcelles de vigne présentant une
+  densité à la plantation inférieure à 4000 pieds /ha mais supérieure ou
+  égale à 3300 pieds/ha bénéficient, pour leur récolte, du droit à l'AOC
+  sous réserve du respect des dispositions relatives aux règles de
+  palissage et de hauteur de feuillage fixées dans le cahier des charges.
+  Ces parcelles de vigne ne peuvent présenter un écartement entre les
+  rangs supérieur à 3m et un écartement entre les pieds sur un même
+  rang inférieur à 1m.
+
+
+  Taille
+
+  Type de pratique  Pratique culturale
+  œnologique:
+
+=== PAGE 3 ===
+FICHE TECHNIQUE  3 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  Description de la pratique:
+  Les vignes sont taillées au plus tard le 30 avril, en taille mixte, avec un
+  maximum de 12 yeux francs par pied et 4 yeux francs maximum sur le
+  long bois.
+
+
+  Récolte
+
+  Type de pratique  Pratique culturale
+  œnologique:
+  Description de la pratique:
+  Les raisins sont récoltés manuellement par tries successives.
+
+
+  b. Rendements maximaux:
+
+  Rendement maximal:
+  40 hectolitre par hectare
+
+
+5. ZONE DÉLIMITÉE
+
+  La récolte des raisins, la vinification, l’élaboration et l’élevage des vins
+  sont assurés sur le territoire des communes suivantes du département
+  de Maine-et-Loire : Aubigné-sur-Layon, Beaulieu-sur-Layon, Brigné,
+  Chalonnes-sur-Loire, Champ-sur-Layon, Chanzeaux, Chaudefonds-
+  sur-Layon, Chavagnes, Cléré-sur-Layon, Concourson-sur-Layon,
+  Faveraye-Mâchelles, Faye-d’Anjou, La Fosse-de-Tigné, La Jumellière,
+  Martigné-Briand, Nueil-sur-Layon, Passavant-sur-Layon, Rablay-sur-
+  Layon, Rochefort-sur-Loire, Saint-Aubin-de-Luigné, Saint-Lambert-du-
+  Lattay, Saint-Georges-sur-Layon, Tancoigné, Thouarcé, Tigné,
+  Trémont, Les Verchers-sur-Layon.
+
+
+6. CÉPAGES PRINCIPAUX
+
+  Chenin B
+
+
+7. DESCRIPTION DU OU DES LIENS
+
+  label.newWineName.singleDocument.linkWithArea.conciseDetails
+  C’est grâce à une situation géographique particulière, à proximité
+  immédiate du Layon et à flanc de coteau, sur des sols superficiels
+  développés sur schistes que le cépage chenin B s’est implanté.
+  Bénéficiant d’un mésoclimat idéal, les baies profitent successivement
+  des brumes matinales, du soleil et du vent, éléments indispensables
+
+=== PAGE 4 ===
+FICHE TECHNIQUE  4 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  au développement de la pourriture noble. Les hommes ont su tirer
+  profit de cette aptitude du raisin à surmaturer en maitrisant la charge
+  des ceps et en adoptant une récolte tardive en plusieurs passages.
+  Cette conjonction entre milieu naturel singulier et pratiques spécifiques
+  permet d’obtenir des baies surmuries donnant un vin alliant suavité et
+  fraicheur.
+
+
+8. AUTRES CONDITIONS ESSENTIELLES
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Dérogation à la production dans la zone
+  supplémentaire  géographique délimitée
+  Description de la condition
+  L'aire de proximité immédiate, définie par dérogation pour la
+  vinification, l'élaboration et l’élevage des vins est constituée par le
+  territoire de 14 communes du département des Deux-Sèvres,1
+  commune du département d’Indre-et-Loire, 6 communes du
+  département de Loire-Atlantique, 101 communes du département de
+  Maine-et-Loire et 10 commune du département de la Vienne (liste
+  complète des communes disponible dans le cahier des charges).
+
+
+  Etiquetage: mentions complémentaires- commune de provenance des raisins
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  Le nom de l’appellation d’origine contrôlée peut être suivi du nom de la
+  commune de provenance des raisins selon les dispositions fixées dans
+  le cahier des charges.
+
+
+  Etiquetage: mention "sélection de grains nobles"
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  Le nom de l’appellation d’origine contrôlée, suivi ou non du nom de la
+  commune de provenance des raisins, peut être complété par la
+  mention « sélection de grains nobles », selon les dispositions fixées
+  dans le cahier des charges.
+  Les vins bénéficiant de la mention « sélection de grains nobles » sont
+  présentés obligatoirement avec l’indication du millésime.
+
+=== PAGE 5 ===
+FICHE TECHNIQUE  5 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  Etiquetage: mention "premier cru"
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  La mention «premier cru» est réservée aux vins de l'AOC complétée
+  de la dénomination géographique complémentaire« Chaume » selon
+  les dispositions fixées dans le cahier des charges.
+
+
+  Etiquetage; Dénomination géographique "Chaume"
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  Le nom de la dénomination géographique complémentaire «Chaume»
+  ne figure pas sur la même ligne que la mention « premier cru ».
+  Le nom de la commune de provenance des raisins ou de la
+  dénomination géographique complémentaire «Chaume» est inscrit en
+  caractères dont les dimensions, aussi bien en hauteur qu’en largeur,
+  ne dépassent pas celles des caractères composant le nom de l’AOC.
+
+
+  Etiquetage: dénomination géographique "Val de loire"
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  Le nom de l’appellation d’origine contrôlée peut être complété par la
+  dénomination géographique « Val de Loire » selon les règles fixées
+  dans le cahier des charges pour l’utilisation de cette dénomination
+  géographique. Les dimensions des caractères de la dénomination
+  géographique « Val de Loire » ne sont pas supérieures, aussi bien en
+  hauteur qu’en largeur, aux deux tiers de celles des caractères
+  composant le nom de l’appellation d’origine contrôlée.
+
+  -
+
+
+  Etiquetage: précision d'une géographique plus petite et mention facultative
+
+  Cadre juridique  Dans la législation nationale
+
+=== PAGE 6 ===
+FICHE TECHNIQUE  6 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  L’étiquetage des vins bénéficiant de l’appellation d’origine contrôlée
+  peut préciser le nom d’une unité géographique plus petite sous
+  réserve :
+  - qu’il s’agisse d’un lieu-dit cadastré ;
+  - que celui-ci figure sur la déclaration de récolte
+  Le nom du lieu-dit cadastré est imprimé en caractères dont les
+  dimensions ne sont pas supérieures, aussi bien en hauteur qu’en
+  largeur, à la moitié de celles des caractères composant le nom de
+  l’appellation d’origine contrôlée.
+
+
+  Etiquetage: taille des caractères
+
+  Cadre juridique  Dans la législation nationale
+  Type de condition  Disposition complémentaire à l'étiquetage
+  supplémentaire
+  Description de la condition
+  Toutes les mentions facultatives dont l'utilisation, en vertu des
+  dispositions communautaires, peut être réglementée par les Etats
+  membres, sont inscrites, sur les étiquettes, en caractères dont les
+  dimensions, aussi bien en hauteur qu’en largeur, ne sont pas
+  supérieures au double de celles des caractères composant le nom de
+  l’appellation d’origine contrôlée.
+
+=== PAGE 7 ===
+FICHE TECHNIQUE  7 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+II. AUTRES INFORMATIONS
+  1. INFORMATIONS GÉNÉRALES
+
+  Terme(s) équivalent(s):
+  Dénomination  Non
+  traditionnellement
+  utilisée:
+  Langue de la demande:  français
+  Base juridique pour la  Mis en conformité avec les règles UE (Article
+  transmission:  73, paragraphe 2 du R.(CE) 607/2009)
+  Le présent dossier
+  technique contient des
+  modifications adoptées
+  conformément à:
+  Type de modification  Mis en conformité avec les règles UE (Article
+  73, paragraphe 2 du R.(CE) 607/2009)
+
+
+  Reasons for amendment
+
+  Titre:  Réponse au courrier de la Commission du 22
+  avril 2013
+  Reasons  Réponse au courrier de la Commission du 22
+  avril 2013
+
+
+  2. COORDONNÉES
+  a. Coordonnées du demandeur:
+
+  Nom et titre du  Fédération viticole de l'Anjou et de Saumur
+  demandeur:
+  Statut juridique, taille et  Le groupement est un syndicat professionnel
+  composition (dans le cas  régi par le code du travail. Il est composé
+  de personnes morales):  d'opérateurs, déclarants de récolte, impliqués
+  dans le cahier des charges.
+  Nationalité:  France
+  Adresse:  73 Rue Plantagenêt - B.P. 62444
+  49024 ANGERS CEDEX 02
+  France
+  Téléphone:  +33 02 41 88 60 57
+  Télécopieur:  +33 02 41 20 97 63
+  Adresse(s)  fva.anjousaumur@wanadoo.fr
+  électronique(s):
+
+=== PAGE 8 ===
+FICHE TECHNIQUE  8 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  b. Coordonnées de l'intermédiaire:
+
+  Nom de l'intermédiaire:  Ministère de l’agriculture, de l'agroalimentaire
+  et de la forêt
+  Direction Générale des Politiques Agricole,
+  Agroalimentaire et des Territoires
+  Adresse:  3 rue Barbet de Jouy
+  75349 Paris cedex 07 SP
+  France
+  Téléphone:  +33 01 49 55 49 55
+  Télécopieur:
+  Adresse(s)  liste-cdc-vin-aop-
+  électronique(s):  DGPAAT@agriculture.gouv.fr
+
+
+  c. Coordonnées des parties intéressées:
+
+
+
+
+  d. Coordonnées des autorités de contrôle compétentes
+
+  Nom de l'autorité de  Institut national de l'origine et de la qualité
+  contrôle compétente
+  Adresse:  12 rue Henri Rol-Tanguy
+  93555 Montreuil-sous-Bois
+  France
+  Téléphone:  0173303800
+  Télécopieur:
+  Adresse(s)  info@inao.gouv.fr
+  électronique(s):
+
+
+  e. Coordonnées des organismes de contrôle
+
+
+
+
+3. MENTIONS TRADITIONNELLES:
+  a. Point a)
+
+  Appellation […] contrôlée
+  Appellation d'origine contrôlée
+
+=== PAGE 9 ===
+FICHE TECHNIQUE  9 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  b. Point b)
+
+  Sélection de grains nobles
+  Premier Cru
+  Clos
+  Château
+
+
+4. Zone NUTS
+
+  FR512  Maine-et-Loire
+  FR51  Pays de la Loire
+  FR  FRANCE
+
+
+5. CÉPAGES SECONDAIRES
+
+
+
+
+6. PIÈCES JUSTIFICATIVES:
+  a. Cahier des charges du produit
+
+  Statut:  Joint
+  Nom du dossier:  CDC coteaux du layon modifie.pdf
+
+
+  b. Décision nationale d'approbation:
+
+  Nom du dossier:  Décret 2011-1619 du 23112011 AOC
+  Coteaux du Layon.pdf
+  Référence légale:  Décret 2011-1619 du 23 novembre 2011
+  relatif à l'AOC Coteaux du Layon publié au
+  Journal officiel de la République française du
+  24 novembre 2011
+  Nom du dossier:  coteaux-du-layon_decret.pdf
+  Référence légale:  Décret n°2014-683 du 24/06/2014 publié au
+  JORF du 26/06/2014
+
+
+  c. Autre(s) document(s):
+
+=== PAGE 10 ===
+FICHE TECHNIQUE  10 /10  Numéro de dossier: PDO-FR-A0826-AM01
+
+  d. Cartes de la zone délimitée
+
+
+
+
+  e. Note pour la Commission européenne
+
+  Nom du dossier:  20140623_NAF_CDC-TAVT15.pdf
+  Description  note explicative
+
+
+7. LIEN VERS LE CAHIER DES CHARGES DU PRODUIT
+
+  Lien:  https://info.agriculture.gouv.fr/gedei/site/bo-
+  agri/document_administratif-cd02193e-eda4-
+  4b68-88c8-2055632ec873

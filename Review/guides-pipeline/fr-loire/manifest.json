@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "muscadet-doc": "Review/sources/fetched/att-PDO-FR-A0497-10745.txt",
+    "muscadet-sevre-et-maine-doc": "Review/sources/fetched/att-PDO-FR-A0494-11598.txt",
+    "anjou-doc": "Review/sources/fetched/att-PDO-FR-A0820-10559.txt",
+    "coteaux-du-layon-doc": "Review/sources/fetched/att-PDO-FR-A0826-25261.txt",
+    "savennieres-doc": "Review/sources/fetched/att-PDO-FR-A0158-10477.txt",
+    "saumur-doc": "Review/sources/fetched/att-PDO-FR-A0260-21718.txt",
+    "saumur-champigny-doc": "Review/sources/fetched/att-PDO-FR-A0147-10407.txt",
+    "vouvray-doc": "Review/sources/fetched/att-PDO-FR-A0146-10561.txt",
+    "touraine-doc": "Review/sources/fetched/att-PDO-FR-A0501-10812.txt",
+    "bourgueil-doc": "Review/sources/fetched/att-PDO-FR-A0729-10629.txt",
+    "chinon-doc": "Review/sources/fetched/att-PDO-FR-A0395-11137.txt",
+    "sancerre-doc": "Review/sources/fetched/att-PDO-FR-A0194-10626.txt",
+    "pouilly-fume-doc": "Review/sources/fetched/att-PDO-FR-A0824-10628.txt",
+    "menetou-salon-doc": "Review/sources/fetched/att-PDO-FR-A0300-19852.txt",
+    "rose-danjou-doc": "Review/sources/fetched/att-PDO-FR-A1007-10706.txt",
+    "cabernet-danjou-doc": "Review/sources/fetched/att-PDO-FR-A1005-11133.txt",
+    "rose-de-loire-doc": "Review/sources/fetched/att-PDO-FR-A0150-10402.txt",
+    "cremant-de-loire-doc": "Review/sources/fetched/att-PDO-FR-A0391-11131.txt"
+  }
+}
