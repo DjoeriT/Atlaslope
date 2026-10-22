@@ -69,3 +69,7 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
 - Version 4, owner picked B (22 Oct 2026) [O]: "B, however can we make the photos slightly less high". Three 4:3 prints (rioja-c18, priorat-c14,
   priorat-1) in a white frame over the map's lower part, credit line inside the frame; option A removed. Builder total for this mock thread ~98K [V].
 - Build notes for the slice: the map's own credit still names the Rioja card photos, which B hides; update that credit. The phone prints are small (~110 px each) [A].
+- Version 5 (owner: "Any idea how to blend them better? The colours curse"): B1 champagne mats + shadow straight on the map, dark credit strip;
+  B2 near-black see-through band; B3 (recommended) B1 framing with three Rioja photos (rioja-c18, c06, c14) on the Rioja map.
+  Map is a real live screenshot with the Rioja card hidden by CSS (a builder's fake terrain patch was caught and removed: no fake geography).
+  Builder total for this mock thread ~118K [V].
