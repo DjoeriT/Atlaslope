@@ -132,6 +132,19 @@
     "la-palma-doc:p7",
     "lanzarote-doc:p6"
    ]
+  },
+  "pt-north": {
+   "title": "Granite by the sea, schist inland",
+   "lede": "Vinho Verde takes the Atlantic rain on granite. Behind the Marão, the Douro sits on schist, out of the wet west winds.",
+   "from": [
+    "vinho-verde",
+    "douro"
+   ],
+   "cite": [
+    "vinho-verde-doc",
+    "douro-doc:p10",
+    "douro-doc:p11"
+   ]
   }
  },
  "places": {
@@ -809,6 +822,19 @@
    "title": "Shallow water table keeps acidity balanced",
    "cite": [
     "vera-de-estenas-doc"
+   ]
+  },
+  "douro": {
+   "title": "Schist terraces, sheltered from the west winds",
+   "cite": [
+    "douro-doc:p10",
+    "douro-doc:p11"
+   ]
+  },
+  "vinho-verde": {
+   "title": "Granite and Atlantic rain",
+   "cite": [
+    "vinho-verde-doc"
    ]
   }
  }

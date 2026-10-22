@@ -17,8 +17,13 @@ export interface CoverCountry {
 }
 
 /** The countries that have places in the tree, with their counts. Zones are not places here (106 for Spain, not 109). */
+// The cover shows Spain only until the owner picks how Portugal appears, as Home and the Guides page do (SHOWN_COUNTRIES in
+// src/home/guideCount.ts, which reads files and so cannot be imported here; Portugal pilot, 22 Oct 2026). Change both together.
+export const COVER_COUNTRIES = ['spain'];
+
 export function liveCountries(tree: Tree): CoverCountry[] {
   return tree.countries
+    .filter((c) => COVER_COUNTRIES.includes(c.id))
     .map((c) => {
       const regions = tree.regionsOf(c.id);
       const places = regions.reduce((n, r) => n + tree.placesInRegion(r.id).length, 0);

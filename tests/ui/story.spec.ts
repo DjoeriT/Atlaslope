@@ -59,7 +59,9 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await expect(page.locator('.story-where')).toHaveText('Chapter 1 of 4');
   await expect(page.locator('.story-chip')).toHaveText('Haro to Alfaro, the whole valley');
   await expect(page.locator('.story-loc')).toBeVisible();
-  // The terrain height toggle states its choice in the credit line.
+  // The terrain height setting lives behind the map's "i" and states its choice in the credit line.
+  await expect(page.getByRole('button', { name: '×1.3' })).toBeHidden();
+  await page.locator('.pg-tourmap .maplibregl-ctrl-attrib-button').click();
   await expect(page.getByRole('button', { name: '×1.5' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: '×1.3' }).click();
   await expect(page.locator('.pg-tourmap .story-credit')).toContainText('×1.3');
@@ -176,7 +178,7 @@ test.describe('phone 375 px', () => {
     await expect(mapCol(page)).toHaveAttribute('data-step', 'sierra');
   });
 
-  test('the geology layer asks for its tiles whenever its key shows, and the key wraps', async ({ page }) => {
+  test('the geology layer asks for its tiles whenever its key shows; the phone key is one line and the open panel names the rocks in full', async ({ page }) => {
     const igme: string[] = [];
     page.on('request', (r) => { if (r.url().includes('mapas.igme.es')) igme.push(r.url()); });
     await open(page, '#place=rioja&page&story');
@@ -185,8 +187,14 @@ test.describe('phone 375 px', () => {
     const key = page.locator('.pg-tourmap .story-legend');
     await expect(key).toContainText('Sands, calcareous sandstones and ochre clays');
     await expect.poll(() => igme.length, { timeout: 15000 }).toBeGreaterThan(0);
-    // wrapped, not cut off: nothing of the key is hidden sideways
-    expect(await key.evaluate((e) => e.scrollWidth <= e.clientWidth + 1)).toBe(true);
+    // one line (it scrolls sideways, short names), under 2 rem tall
+    expect(await key.evaluate((e) => e.getBoundingClientRect().height <= 32 && getComputedStyle(e).whiteSpace === 'nowrap' && getComputedStyle(e).overflowX === 'auto')).toBe(true);
+    // the full rock names are in the open "i" panel
+    await page.locator('.pg-tourmap .maplibregl-ctrl-attrib-button').click();
+    const panel = page.locator('.pg-tourmap .story-keyfull');
+    await expect(panel).toBeVisible();
+    await expect(panel).toContainText('Sands, calcareous sandstones and ochre clays');
+    await expect(panel).toContainText('Alluvium and floodplain');
   });
 
   test('no floating Show map button while the tour map is open', async ({ page }) => {

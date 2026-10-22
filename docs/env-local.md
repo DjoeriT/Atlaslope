@@ -9,6 +9,10 @@ hosted coordinator never see this file; their part is `docs/env-cloud.md`. Check
 - Helpers are the `builder`, `reviewer` and `analyst` agent types; builders run with worktree isolation and never push.
 - One main thread does the work; follow-ups are listed in plain text, not started as side sessions. Long per-place runs are a script
   (`Tools/guides/headless.py`) the main thread starts. Before editing shared files, check open PRs and `gh run list` for other branches.
+- Every session works in its own worktree (`git worktree add .claude/worktrees/<name> -b claude/<slice> origin/main`, or the app's
+  worktree option) before its first edit (owner, 22 Oct 2026, after two sessions committed on one branch in the shared checkout).
+  The main folder stays on `main` for reading and the dev server preview. `Tools/hooks/pre-commit` (installed with
+  `Tools/hooks/install.sh`) refuses a commit there; `ATLASLOPE_MAIN_COMMIT=1 git commit ...` overrides it, on the owner's word only.
 
 ## Access
 - `gh` is the owner's own login, with admin rights. `main` is protected (owner, 20 Oct 2026): PR only, `scope`, `check` and `all checks`

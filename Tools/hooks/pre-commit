@@ -1,0 +1,11 @@
+#!/bin/sh
+# Refuses commits in the main checkout: every session works in its own worktree (CLAUDE.md "One worktree per session",
+# 22 Oct 2026: two sessions shared the main folder and one committed onto the other's branch). Worktrees commit as usual.
+# Override on the owner's word only: ATLASLOPE_MAIN_COMMIT=1 git commit ...
+[ "$ATLASLOPE_MAIN_COMMIT" = "1" ] && exit 0
+if [ "$(git rev-parse --git-dir)" = "$(git rev-parse --git-common-dir)" ]; then
+  echo "Refused: this is the main checkout. Work in your own worktree:" >&2
+  echo "  git worktree add .claude/worktrees/<name> -b claude/<slice> origin/main" >&2
+  exit 1
+fi
+exit 0

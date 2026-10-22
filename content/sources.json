@@ -1654,5 +1654,17 @@
   "title": "Documento único DOP Islas Canarias as amended (OJ C 88 of 24 Feb 2022, CELEX 52022XC0224(02), PDO-ES-A1511-AM02)",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52022XC0224(02)",
   "date": "2022-02-24"
+ },
+ "douro-doc": {
+  "kind": "official",
+  "title": "Ficheiro técnico PDO-PT-A1539-AM01 (EU technical file with the caderno de especificações, Douro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19506",
+  "date": "2013-11-19"
+ },
+ "vinho-verde-doc": {
+  "kind": "official",
+  "title": "Vinho Verde PDO-PT-A1545: application for a Union amendment with the single document, OJ C/2024/3412 (approved by Implementing Regulation (EU) 2024/2583, OJ L 1.10.2024, as the eAmbrosia register lists it)",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202403412",
+  "date": "2024-05-29"
  }
 }

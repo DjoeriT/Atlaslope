@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
 import { COVER_PHOTO } from '../../src/cards/atlasCover';
-import { BAND_FEATURED, PHOTO_PICK, bandTours, fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
+import { BAND_FEATURED, PHOTO_PICK, SHOWN_COUNTRIES, bandTours, fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
 const html = readFileSync('index.html', 'utf8');
@@ -44,7 +44,10 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
   const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
   it('lists every guide file, filled in at build time', () => {
-    expect(list.rows).toHaveLength(guideCount());
+    // Portugal's guides stay off the page until the owner picks how Portugal shows there (SHOWN_COUNTRIES).
+    const hidden = tree.places.filter((p) => !SHOWN_COUNTRIES.includes(tree.countryOf(p.id)?.id ?? '') && existsSync(`content/guides/${p.id}.json`));
+    expect(hidden.map((p) => p.id).sort()).toEqual(['douro', 'vinho-verde'].filter((id) => existsSync(`content/guides/${id}.json`)));
+    expect(list.rows).toHaveLength(guideCount() - hidden.length);
     for (const r of list.rows) expect(out, r.id).toContain(link(r.id));
   });
   it('shows all guides of a region, none cut off, with the count in the heading', () => {

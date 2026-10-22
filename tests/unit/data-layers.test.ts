@@ -70,10 +70,13 @@ describe('added boundaries', () => {
   const added = read('added-boundaries.geojson');
   const lists = read('added-municipalities.json').places;
   const parcels = read('added-parcels.json').places;
+  // Portugal's outlines come from the parish lists in its specs (Tools/data/build_pt_areas.py), checked by their own test.
+  const pt = Object.keys(read('countries/pt/areas-spec.json')).filter((k) => !k.startsWith('$'));
   it('has one polygon per listed place, built from every listed municipality or parcel', () => {
-    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels)].sort());
+    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels), ...pt].sort());
     for (const f of added.features) {
       const id = f.properties.id;
+      if (pt.includes(id)) continue;
       if (lists[id]) expect(f.properties.municipalities, id).toBe(lists[id].municipalities.length);
       else expect(f.properties.parcels, id).toBe(parcels[id].parcels.length);
     }
@@ -85,5 +88,14 @@ describe('added boundaries', () => {
   it('matches the area the Cebreros pliego states (1,663.16 km²) within 2%', () => {
     const c = added.features.find((f: any) => f.properties.id === 'cebreros');
     expect(Math.abs(c.properties.km2 - 1663.16) / 1663.16).toBeLessThan(0.02);
+  });
+});
+
+describe('Portugal outlines', () => {
+  const areas = read('countries/pt/areas.geojson').features;
+  it('has Douro and its three subregions, which add up to the whole', () => {
+    const km2 = (id: string) => areas.find((f: any) => f.properties.id === id)?.properties.km2;
+    expect(areas.map((f: any) => f.properties.id).sort()).toEqual(['baixo-corgo', 'cima-corgo', 'douro', 'douro-superior', 'vinho-verde']);
+    expect(km2('baixo-corgo') + km2('cima-corgo') + km2('douro-superior')).toBeCloseTo(km2('douro'), 0);
   });
 });

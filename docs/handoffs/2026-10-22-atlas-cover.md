@@ -27,3 +27,6 @@
 - Review minors not taken: panel corners .3rem (matches visual-style.md); claims "Every place has a short guide" [R] and "drawn where the
   law puts it" kept.
 - Cost [R, agent usage]: mocks 95K + 130K + 156K; builder 160K + 183K (past its 250K card: it hit the turn cap and was resumed); ReviewBot 29K.
+- Portugal: main gained Portugal's first two places while this slice ran. The cover shows Spain only (`COVER_COUNTRIES` in
+  `src/cards/atlasCover.ts`, the same gate as `SHOWN_COUNTRIES` for Home and Guides) until the owner picks how Portugal appears. When he
+  does: drop both gates together, and rewrite the lede "Spain's wine places on a real map." (owner's words).

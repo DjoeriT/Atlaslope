@@ -1,0 +1,117 @@
+{
+ "id": "vinho-verde",
+ "title": "Why Vinho Verde tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "North-west Portugal opens like an amphitheatre onto the Atlantic. Mild, wet weather helps keep its wines fresh, and granite gives the whites their minerality.",
+  "cite": [
+   "vinho-verde-doc:p1"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "An amphitheatre facing the Atlantic",
+   "paras": [
+    "The region lies in the north-west of Portugal, at an altitude below 700 m. About 16 000 hectares are under vines.",
+    "Nature draws the borders. The river Minho lies to the north and the Atlantic Ocean to the west. To the south are the river Douro and the Freita, Arada and Montemuro mountains. To the east are the Peneda, Gerês, Cabreira and Marão mountains.",
+    "The land forms a natural amphitheatre, from the coast inland and facing the Atlantic. A dense network of river valleys crosses it. The vineyards are laid out along those valleys.",
+    "Nine subregions share the area: Amarante, Ave, Baião, Basto, Cávado, Lima, Monção e Melgaço, Paiva and Sousa. Each has its own soils and microclimates. Grapes and growing traditions vary between them too.",
+    "The area was first demarcated in 1908. Its wines were the first from Portugal to become known on European markets."
+   ],
+   "cite": [
+    "vinho-verde-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "The river Minho",
+     "point": [
+      -8.49,
+      42.07
+     ],
+     "zoom": 9,
+     "caption": "The river Minho marks the northern edge of the region.",
+     "cite": [
+      "vinho-verde-doc:p1"
+     ]
+    },
+    {
+     "label": "The Gerês mountains",
+     "point": [
+      -8.15,
+      41.75
+     ],
+     "zoom": 9,
+     "caption": "The Gerês mountains are among the ranges that close the region to the east.",
+     "cite": [
+      "vinho-verde-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "atlantic",
+   "beat": "weather",
+   "title": "Atlantic winds, slow ripening",
+   "paras": [
+    "The terrain and the river system make for a mild climate, without extremely high or low temperatures. The river valleys let the Atlantic winds in.",
+    "Rain is quite high, 1 200 mm on average a year, and irregular over the course of the year.",
+    "Mild weather and high rainfall, with the strong influence of the Atlantic, are conducive to slow ripening. That contributes to the acidity and the freshness of the wines. It also adds to the intensity of their fruity and floral aromas.",
+    "The vines grow with great leafy vigour, so the grapes ripen late."
+   ],
+   "cite": [
+    "vinho-verde-doc:p1"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Shallow granite",
+   "paras": [
+    "The soils are shallow and mostly of granitic origin. Two narrow strips of schist cross the region from the south-east to the north-west.",
+    "These mostly granitic soils are crucial to the minerality of the white wines.",
+    "Growers plant the vines on the most suitable soils: of average depth, with good internal drainage and moderate acidity.",
+    "The vines must be trained medium or high. In the traditional uveiras, vines grow up into trees. Ramadas are horizontal frames of iron or wood and wire, set on posts that are generally granite."
+   ],
+   "cite": [
+    "vinho-verde-doc:p1"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fresh, fruity, floral",
+   "paras": [
+    "Most of the grapes are native and adapted to the local soil and climate. They add to the intensity of the fruity and floral aromas. Alvarinho and Loureiro are among the main grapes, with Trajadura, also called Treixadura. Among the reds is Vinhão, also called Sousão.",
+    "White wines run from pale citrine to slightly golden. They go from light and fresh, with fruity or floral aromas, to more structured and persistent, mineral, with honeyed aromas of ripe or dried fruits.",
+    "Rosés range from pale pink to pale ruby or deep pink. The lighter ones have aromas of red fruits. Reds range from ruby to dark red. They go from vinous, with aromas of wild fruits, to structured, with aromas of ripe or dried fruits.",
+    "White wine comes only from white grapes, and rosé only from red grapes. Red wine may include up to 15 % of white grapes. If it does, the label must say Palhete or Palheto, and the colour runs from pale ruby to ruby.",
+    "Late-harvest wines may be labelled Vindima Tardia or Colheita Tardia. They come from overripe grapes. They have aromas of honey and dried fruits, with good structure, acidity and sweetness.",
+    "Sparkling wine also carries the name, as white, rosé or red. It is called Espumante de Vinho Verde, or Espumante de Qualidade de Vinho Verde for quality sparkling wine. Base wine made from red grapes may be used to make a white sparkling wine.",
+    "Alvarinho has its own rules. Named on its own, the wine must come only from Alvarinho. Named with other grapes, Alvarinho must be at least 30 % of the wine. Only the subregion of Monção e Melgaço may name Alvarinho on a subregion wine, and it may add the optional term Origem do Alvarinho.",
+    "Must for a wine named Alvarinho needs a natural strength of at least 11,5 % by volume, against 8,5 % for the rest. Pressing may draw at most 65 litres of must from 100 kg of Alvarinho grapes, against 75 litres for others.",
+    "The basic maximum yield is 10 666 kg of grapes per hectare. It may rise to 13 500 kg for Alvarinho and 15 000 kg for other varieties, as long as the productivity and quality requirements are met.",
+    "Vinho Verde may be sold in metal cans of up to 0,25 litres. A wine that names a subregion or a grape may not: it goes in glass bottles of 0,75 litres or multiples of that."
+   ],
+   "cite": [
+    "vinho-verde-doc:p1"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Sujeito a depósito",
+    "text": "Wines liable to sedimentation after certification and bottling may be sold only with this term, or an equivalent, on the label."
+   },
+   {
+    "term": "Sub-região",
+    "text": "A subregion name on the label must come with the harvest year. The word sub-região may or may not be added."
+   }
+  ],
+  "cite": [
+   "vinho-verde-doc:p1"
+  ]
+ }
+}

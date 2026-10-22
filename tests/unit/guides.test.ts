@@ -18,7 +18,7 @@ describe('the Terroir sections', () => {
       'abadia-retuerta', 'abona', 'alella', 'alicante', 'almansa', 'arinzano', 'arlanza', 'arribes', 'ayles', 'bierzo', 'binissalem',
       'bolandin', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja', 'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carinena',
       'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chozas-carrascal', 'cigales', 'conca-de-barbera', 'condado-de-huelva',
-      'costers-del-segre', 'dehesa-del-carrizal', 'dehesa-penalba', 'dominio-de-valdepusa', 'el-hierro', 'el-terrerazo', 'el-vicario',
+      'costers-del-segre', 'dehesa-del-carrizal', 'dehesa-penalba', 'dominio-de-valdepusa', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario',
       'emporda', 'finca-elez', 'gran-canaria', 'granada', 'guijoso', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba',
       'la-mancha', 'la-palma', 'lanzarote', 'lebrija', 'leon', 'los-balagueses', 'los-cerrillos', 'malaga', 'manchuela', 'manzanilla',
       'mentrida', 'mondejar', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'otazu', 'pago-florentino', 'penedes', 'pla-de-bages',
@@ -26,7 +26,7 @@ describe('the Terroir sections', () => {
       'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rosalejo', 'rueda', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano',
       'tacoronte-acentejo', 'tarragona', 'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'txakoli-alava', 'txakoli-bizkaia',
       'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valdepenas', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava',
-      'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinos-de-madrid', 'ycoden-daute-isora', 'yecla',
+      'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinho-verde', 'vinos-de-madrid', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });
