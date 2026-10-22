@@ -7,7 +7,7 @@ Branch `agent/builder/it-country`, from `origin/main` (42e7b8a).
 ## Steps
 (step, commit, tests, wall time)
 - Report started: a2c4f24.
-- Tree, outlines, mask, config, page, credits, tests: see the commit after a2c4f24. Unit 579/582 [V] (vitest 1.9 s); the 3 failures wait on content, below. Build once [V] (1.7 s): `dist/it/` with barolo, chianti-classico and the country page.
+- Tree, outlines, mask, config, page, credits, tests: 3347b29. Unit 579/582 [V] (vitest 1.9 s); the 3 failures wait on content, below. Build once [V] (1.7 s): `dist/it/` with barolo, chianti-classico and the country page.
 - Shots: not run (no Italy guides, so /it/ has no real tiles yet).
 
 ## What is in [V]
