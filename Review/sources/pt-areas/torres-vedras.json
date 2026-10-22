@@ -1,0 +1,29 @@
+{
+ "torres-vedras": {
+  "source": "torres-vedras-doc:p5",
+  "zones": {
+   "torres-vedras": {
+    "parishes": {
+     "Torres Vedras": [
+      "Dois Portos",
+      "Runa",
+      "São Domingos de Carmões"
+     ],
+     "Mafra": [
+      "Azueira"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "Torres Vedras, part of: Carvoeira, Freiria, Matacães, São Mamede da Ventosa, São Pedro e Santiago, Santa Maria do Castelo, Turcifal (red and white)",
+   "Mafra, part of (white wine only): Encarnação, Enxara do Bispo, Gradil, Santo Isidoro, Sobral da Abelheira, Vila Franca do Rosário",
+   "Sobral de Monte Agraço, part of: Sapataria, São Salvador, Santo Quintino",
+   "Torres Vedras, part of: A dos Cunhados, Campelos, Freiria, Maxial, Monte Redondo, Ponte do Rol, Ramalhal, São Mamede, São Miguel, São Pedro da Cadeira, São Pedro e Santiago, Santa Maria do Castelo, Silveira, Turcifal"
+  ],
+  "aliases": {"Torres Vedras": {"São Domingos de Carmões": "União das freguesias de Carvoeira e Carmões"}}
+ }
+}

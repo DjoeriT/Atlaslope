@@ -1,242 +1,1262 @@
 {
-  "$comment": "Portugal's delimited areas as the specs list them, read by Tools/data/build_pt_areas.py against DGT CAOP 2025 parishes. Single estates and quintas inside a parish are not mappable and are listed in 'notMapped'. Douro: technical file PDO-PT-A1539-AM01 (eAmbrosia attachment 19506), section 5, pages 6-7.",
-  "douro": {
-    "source": "douro-doc:p6",
-    "zones": {
-      "baixo-corgo": {
-        "municipalities": [
-          "Mesão Frio",
-          "Peso da Régua",
-          "Santa Marta de Penaguião"
-        ],
-        "parishes": {
-          "Vila Real": [
-            "Abaças",
-            "Ermida",
-            "Folhadela",
-            "Guiães",
-            "Mateus",
-            "Nogueira",
-            "Nossa Senhora da Conceição",
-            "Parada de Cunhos",
-            "São Dinis",
-            "São Pedro"
-          ],
-          "Armamar": [
-            "Aldeias",
-            "Armamar",
-            "Folgosa",
-            "Fontelo",
-            "Santo Adrião",
-            "Vacalar",
-            "Vila Seca"
-          ],
-          "Lamego": [
-            "Cambres",
-            "Ferreiros de Avões",
-            "Figueira",
-            "Parada do Bispo",
-            "Penajóia",
-            "Samodães",
-            "Sande",
-            "Almacave",
-            "Sé",
-            "Valdigem"
-          ],
-          "Resende": [
-            "Barrô"
-          ]
-        }
-      },
-      "cima-corgo": {
-        "municipalities": [],
-        "parishes": {
-          "Alijó": [
-            "Alijó",
-            "Amieiro",
-            "Carlão",
-            "Casal de Loivos",
-            "Castedo",
-            "Cotas",
-            "Favaios",
-            "Pegarinhos",
-            "Pinhão",
-            "Sanfins do Douro",
-            "Santa Eugénia",
-            "São Mamede de Ribatua",
-            "Vale de Mendiz",
-            "Vilar de Maçada",
-            "Vilarinho de Cotas"
-          ],
-          "Murça": [
-            "Candedo",
-            "Murça",
-            "Noura"
-          ],
-          "Sabrosa": [
-            "Celeirós",
-            "Covas do Douro",
-            "Gouvães do Douro",
-            "Gouvinhas",
-            "Paços",
-            "Paradela de Guiães",
-            "Provesende",
-            "Sabrosa",
-            "São Cristóvão do Douro",
-            "São Martinho de Antas",
-            "Souto Maior",
-            "Vilarinho de São Romão"
-          ],
-          "São João da Pesqueira": [
-            "Castanheiro do Sul",
-            "Espinhosa",
-            "Ervedosa do Douro",
-            "Nagozelo do Douro",
-            "Paredes da Beira",
-            "São João da Pesqueira",
-            "Soutelo do Douro",
-            "Trevões",
-            "Vale de Figueira",
-            "Valongo dos Azeites",
-            "Várzea de Trevões",
-            "Vilarouco"
-          ],
-          "Tabuaço": [
-            "Adorigo",
-            "Barcos",
-            "Desejosa",
-            "Granjinha",
-            "Pereiro",
-            "Santa Leocádia",
-            "Sendim",
-            "Tabuaço",
-            "Távora",
-            "Valença do Douro"
-          ],
-          "Carrazeda de Ansiães": [
-            "Beira Grande",
-            "Castanheiro do Norte",
-            "Carrazeda de Ansiães",
-            "Lavandeira",
-            "Linhares",
-            "Parambos",
-            "Pereiros",
-            "Pinhal do Norte",
-            "Pombal",
-            "Ribalonga",
-            "Seixo de Ansiães",
-            "Vilarinho da Castanheira"
-          ]
-        }
-      },
-      "douro-superior": {
-        "municipalities": [
-          "Vila Nova de Foz Côa"
-        ],
-        "parishes": {
-          "Alfândega da Fé": [
-            "Vilarelhos"
-          ],
-          "Freixo de Espada à Cinta": [
-            "Freixo de Espada à Cinta",
-            "Ligares",
-            "Mazouco",
-            "Poiares"
-          ],
-          "Torre de Moncorvo": [
-            "Açoreira",
-            "Adeganha",
-            "Cabeça Boa",
-            "Horta da Vilariça",
-            "Lousa",
-            "Peredo dos Castelhanos",
-            "Torre de Moncorvo",
-            "Urros"
-          ],
-          "Vila Flor": [
-            "Assares",
-            "Freixiel",
-            "Lodões",
-            "Roios",
-            "Sampaio",
-            "Santa Comba de Vilariça",
-            "Seixo de Manhoses",
-            "Vale Frechoso",
-            "Vilarinho das Azenhas",
-            "Vila Flor"
-          ],
-          "Figueira de Castelo Rodrigo": [
-            "Escalhão"
-          ],
-          "Mêda": [
-            "Fonte Longa",
-            "Longroiva",
-            "Mêda",
-            "Poço do Canto"
-          ]
-        }
-      }
-    },
-    "notMapped": [
-      "Nossa Senhora da Conceição (Vila Real): the spec includes only part of it; mapped whole.",
-      "Vila Real city: the spec's Nossa Senhora da Conceição (part), São Dinis and São Pedro are one parish since 2013, 'Vila Real'; mapped whole.",
-      "Quintas de Foutoura, do Prado and das Várzeas in Várzea de Abrunhais (Lamego): single estates.",
-      "Estates in Frechas, Avantos, Carvalhais and Romeu (Mirandela): single estates.",
-      "Quintas da Peça and das Trigueiras and the Vimieiro estates in Vilas Boas (Vila Flor): single estates."
+ "$comment": "Portugal's delimited areas as the specs list them, read by Tools/data/build_pt_areas.py against DGT CAOP 2025 parishes. Single estates and quintas inside a parish are not mappable and are listed in 'notMapped'. Douro: technical file PDO-PT-A1539-AM01 (eAmbrosia attachment 19506), section 5, pages 6-7.",
+ "douro": {
+  "source": "douro-doc:p6",
+  "zones": {
+   "baixo-corgo": {
+    "municipalities": [
+     "Mesão Frio",
+     "Peso da Régua",
+     "Santa Marta de Penaguião"
     ],
-    "aliases": {
-      "Vila Real": {
-        "Nossa Senhora da Conceição": "Vila Real",
-        "São Dinis": "Vila Real",
-        "São Pedro": "Vila Real"
-      }
+    "parishes": {
+     "Vila Real": [
+      "Abaças",
+      "Ermida",
+      "Folhadela",
+      "Guiães",
+      "Mateus",
+      "Nogueira",
+      "Nossa Senhora da Conceição",
+      "Parada de Cunhos",
+      "São Dinis",
+      "São Pedro"
+     ],
+     "Armamar": [
+      "Aldeias",
+      "Armamar",
+      "Folgosa",
+      "Fontelo",
+      "Santo Adrião",
+      "Vacalar",
+      "Vila Seca"
+     ],
+     "Lamego": [
+      "Cambres",
+      "Ferreiros de Avões",
+      "Figueira",
+      "Parada do Bispo",
+      "Penajóia",
+      "Samodães",
+      "Sande",
+      "Almacave",
+      "Sé",
+      "Valdigem"
+     ],
+     "Resende": [
+      "Barrô"
+     ]
     }
+   },
+   "cima-corgo": {
+    "municipalities": [],
+    "parishes": {
+     "Alijó": [
+      "Alijó",
+      "Amieiro",
+      "Carlão",
+      "Casal de Loivos",
+      "Castedo",
+      "Cotas",
+      "Favaios",
+      "Pegarinhos",
+      "Pinhão",
+      "Sanfins do Douro",
+      "Santa Eugénia",
+      "São Mamede de Ribatua",
+      "Vale de Mendiz",
+      "Vilar de Maçada",
+      "Vilarinho de Cotas"
+     ],
+     "Murça": [
+      "Candedo",
+      "Murça",
+      "Noura"
+     ],
+     "Sabrosa": [
+      "Celeirós",
+      "Covas do Douro",
+      "Gouvães do Douro",
+      "Gouvinhas",
+      "Paços",
+      "Paradela de Guiães",
+      "Provesende",
+      "Sabrosa",
+      "São Cristóvão do Douro",
+      "São Martinho de Antas",
+      "Souto Maior",
+      "Vilarinho de São Romão"
+     ],
+     "São João da Pesqueira": [
+      "Castanheiro do Sul",
+      "Espinhosa",
+      "Ervedosa do Douro",
+      "Nagozelo do Douro",
+      "Paredes da Beira",
+      "São João da Pesqueira",
+      "Soutelo do Douro",
+      "Trevões",
+      "Vale de Figueira",
+      "Valongo dos Azeites",
+      "Várzea de Trevões",
+      "Vilarouco"
+     ],
+     "Tabuaço": [
+      "Adorigo",
+      "Barcos",
+      "Desejosa",
+      "Granjinha",
+      "Pereiro",
+      "Santa Leocádia",
+      "Sendim",
+      "Tabuaço",
+      "Távora",
+      "Valença do Douro"
+     ],
+     "Carrazeda de Ansiães": [
+      "Beira Grande",
+      "Castanheiro do Norte",
+      "Carrazeda de Ansiães",
+      "Lavandeira",
+      "Linhares",
+      "Parambos",
+      "Pereiros",
+      "Pinhal do Norte",
+      "Pombal",
+      "Ribalonga",
+      "Seixo de Ansiães",
+      "Vilarinho da Castanheira"
+     ]
+    }
+   },
+   "douro-superior": {
+    "municipalities": [
+     "Vila Nova de Foz Côa"
+    ],
+    "parishes": {
+     "Alfândega da Fé": [
+      "Vilarelhos"
+     ],
+     "Freixo de Espada à Cinta": [
+      "Freixo de Espada à Cinta",
+      "Ligares",
+      "Mazouco",
+      "Poiares"
+     ],
+     "Torre de Moncorvo": [
+      "Açoreira",
+      "Adeganha",
+      "Cabeça Boa",
+      "Horta da Vilariça",
+      "Lousa",
+      "Peredo dos Castelhanos",
+      "Torre de Moncorvo",
+      "Urros"
+     ],
+     "Vila Flor": [
+      "Assares",
+      "Freixiel",
+      "Lodões",
+      "Roios",
+      "Sampaio",
+      "Santa Comba de Vilariça",
+      "Seixo de Manhoses",
+      "Vale Frechoso",
+      "Vilarinho das Azenhas",
+      "Vila Flor"
+     ],
+     "Figueira de Castelo Rodrigo": [
+      "Escalhão"
+     ],
+     "Mêda": [
+      "Fonte Longa",
+      "Longroiva",
+      "Mêda",
+      "Poço do Canto"
+     ]
+    }
+   }
   },
-  "vinho-verde": {
-    "source": "vinho-verde-doc (and the 2013 technical file PDO-PT-A1545, eAmbrosia attachment 16925, section 5)",
-    "zones": {
-      "vinho-verde": {
-        "districts": [
-          "Braga",
-          "Viana do Castelo"
-        ],
-        "municipalities": [
-          "Arouca",
-          "Castelo de Paiva",
-          "Vale de Cambra",
-          "Amarante",
-          "Baião",
-          "Felgueiras",
-          "Gondomar",
-          "Lousada",
-          "Maia",
-          "Marco de Canaveses",
-          "Matosinhos",
-          "Paços de Ferreira",
-          "Paredes",
-          "Penafiel",
-          "Póvoa de Varzim",
-          "Santo Tirso",
-          "Trofa",
-          "Valongo",
-          "Vila do Conde",
-          "Mondim de Basto",
-          "Ribeira de Pena",
-          "Cinfães",
-          "Resende"
-        ],
-        "parishes": {
-          "Oliveira de Azeméis": [
-            "Ossela"
-          ]
-        },
-        "except": {
-          "Resende": [
-            "Barrô"
-          ]
-        }
-      }
-    },
-    "notMapped": []
+  "notMapped": [
+   "Nossa Senhora da Conceição (Vila Real): the spec includes only part of it; mapped whole.",
+   "Vila Real city: the spec's Nossa Senhora da Conceição (part), São Dinis and São Pedro are one parish since 2013, 'Vila Real'; mapped whole.",
+   "Quintas de Foutoura, do Prado and das Várzeas in Várzea de Abrunhais (Lamego): single estates.",
+   "Estates in Frechas, Avantos, Carvalhais and Romeu (Mirandela): single estates.",
+   "Quintas da Peça and das Trigueiras and the Vimieiro estates in Vilas Boas (Vila Flor): single estates."
+  ],
+  "aliases": {
+   "Vila Real": {
+    "Nossa Senhora da Conceição": "Vila Real",
+    "São Dinis": "Vila Real",
+    "São Pedro": "Vila Real"
+   }
   }
+ },
+ "vinho-verde": {
+  "source": "vinho-verde-doc (and the 2013 technical file PDO-PT-A1545, eAmbrosia attachment 16925, section 5)",
+  "zones": {
+   "vinho-verde": {
+    "districts": [
+     "Braga",
+     "Viana do Castelo"
+    ],
+    "municipalities": [
+     "Arouca",
+     "Castelo de Paiva",
+     "Vale de Cambra",
+     "Amarante",
+     "Baião",
+     "Felgueiras",
+     "Gondomar",
+     "Lousada",
+     "Maia",
+     "Marco de Canaveses",
+     "Matosinhos",
+     "Paços de Ferreira",
+     "Paredes",
+     "Penafiel",
+     "Póvoa de Varzim",
+     "Santo Tirso",
+     "Trofa",
+     "Valongo",
+     "Vila do Conde",
+     "Mondim de Basto",
+     "Ribeira de Pena",
+     "Cinfães",
+     "Resende"
+    ],
+    "parishes": {
+     "Oliveira de Azeméis": [
+      "Ossela"
+     ]
+    },
+    "except": {
+     "Resende": [
+      "Barrô"
+     ]
+    }
+   }
+  },
+  "notMapped": []
+ },
+ "dao": {
+  "source": "dao-doc:p6",
+  "zones": {
+   "dao": {
+    "municipalities": [
+     "Arganil",
+     "Oliveira do Hospital",
+     "Tábua",
+     "Aguiar da Beira",
+     "Fornos de Algodres",
+     "Gouveia",
+     "Seia",
+     "Carregal do Sal",
+     "Mangualde",
+     "Mortágua",
+     "Nelas",
+     "Penalva do Castelo",
+     "Santa Comba Dão",
+     "Sátão",
+     "Tondela"
+    ],
+    "parishes": {
+     "Viseu": [
+      "Abraveses",
+      "Barreiros",
+      "Boaldeia",
+      "Cavernães",
+      "Cepões",
+      "Coração de Jesus",
+      "Côta",
+      "Couto de Baixo",
+      "Couto de Cima",
+      "Fail",
+      "Farminhão",
+      "Fragosela",
+      "Mundão",
+      "Orgens",
+      "Povolide",
+      "Ranhados",
+      "Repeses",
+      "Rio de Loba",
+      "Santa Maria de Viseu",
+      "Santos Evos",
+      "São Cipriano",
+      "São João de Lourosa",
+      "São José",
+      "São Pedro de France",
+      "São Salvador",
+      "Silgueiros",
+      "Torredeita",
+      "Vil de Soito",
+      "Vila Chã de Sá"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Decreto-Lei 376/93 map annex is the legal boundary; the municipality and parish list is mapped",
+   "Spec spellings fixed: orgens=Orgens, Santso Evos=Santos Evos, Vil de Soito=Vil de Souto"
+  ],
+  "aliases": {
+   "Viseu": {
+    "Santa Maria de Viseu": "Viseu",
+    "Coração de Jesus": "Viseu",
+    "São José": "Viseu",
+    "Boaldeia": "União das freguesias de Boa Aldeia, Farminhão e Torredeita",
+    "Couto de Baixo": "Coutos de Viseu",
+    "Couto de Cima": "Coutos de Viseu",
+    "Fail": "Freguesia de Fail e Vila Chã de Sá",
+    "Vil de Soito": "São Cipriano e Vil de Souto"
+   }
+  }
+ },
+ "bairrada": {
+  "source": "bairrada-doc:p5",
+  "zones": {
+   "bairrada": {
+    "municipalities": [
+     "Anadia",
+     "Mealhada",
+     "Oliveira do Bairro"
+    ],
+    "parishes": {
+     "Águeda": [
+      "Aguada de Baixo",
+      "Aguada de Cima",
+      "Águeda",
+      "Barrô",
+      "Belazaima do Chão",
+      "Borralha",
+      "Espinhel",
+      "Fermentelos",
+      "Óis da Ribeira",
+      "Recardães",
+      "Valongo do Vouga"
+     ],
+     "Aveiro": [
+      "Nariz"
+     ],
+     "Cantanhede": [
+      "Ançã",
+      "Bolho",
+      "Cadima",
+      "Camarneira",
+      "Cantanhede",
+      "Cordinhã",
+      "Corticeiro de Cima",
+      "Covões",
+      "Febres",
+      "Murtede",
+      "Ourentã",
+      "Outil",
+      "Pocariça",
+      "Portunhos",
+      "Sanguinheira",
+      "São Caetano",
+      "Sepins",
+      "Vilamar"
+     ],
+     "Coimbra": [
+      "Botão",
+      "Souselas",
+      "Torre de Vilela",
+      "Trouxemil",
+      "Vil de Matos"
+     ],
+     "Vagos": [
+      "Covão do Lobo",
+      "Ouca",
+      "Santa Catarina",
+      "Sosa"
+     ]
+    }
+   }
+  },
+  "notMapped": [],
+  "aliases": {}
+ },
+ "encostas-daire": {
+  "source": "encostas-daire-doc:p5",
+  "zones": {
+   "encostas-daire": {
+    "municipalities": [
+     "Batalha",
+     "Porto de Mós",
+     "Ourém"
+    ],
+    "parishes": {
+     "Alcobaça": [
+      "Alcobaça",
+      "Alfeizerão",
+      "Alpedriz",
+      "Bárrio",
+      "Benedita",
+      "Cela",
+      "Coz",
+      "Évora de Alcobaça",
+      "Maiorga",
+      "Nossa Senhora dos Prazeres de Aljubarrota",
+      "São Vicente de Aljubarrota",
+      "Turquel",
+      "Vestiaria",
+      "Vimeiro"
+     ],
+     "Caldas da Rainha": [
+      "Carvalhal Benfeito",
+      "Salir de Matos",
+      "Santa Catarina"
+     ],
+     "Leiria": [
+      "Amor",
+      "Arrabal",
+      "Azóia",
+      "Barosa",
+      "Barreira",
+      "Boa Vista",
+      "Caranguejeira",
+      "Colmeias",
+      "Cortes",
+      "Leiria",
+      "Maceira",
+      "Marrazes",
+      "Milagres",
+      "Ortigosa",
+      "Parceiros",
+      "Pousos",
+      "Regueira de Pontes",
+      "Santa Catarina da Serra",
+      "Santa Eufémia",
+      "Souto da Carpalhosa"
+     ],
+     "Pombal": [
+      "Albergaria dos Doze",
+      "Meirinhas",
+      "Pelariga",
+      "Pombal",
+      "São Simão de Litém",
+      "Santiago de Litém",
+      "Vermoil",
+      "Vila Cã"
+     ]
+    }
+   },
+   "alcobaca": {
+    "parishes": {
+     "Alcobaça": [
+      "Alcobaça",
+      "Alfeizerão",
+      "Alpedriz",
+      "Bárrio",
+      "Benedita",
+      "Cela",
+      "Coz",
+      "Évora de Alcobaça",
+      "Maiorga",
+      "Nossa Senhora dos Prazeres de Aljubarrota",
+      "São Vicente de Aljubarrota",
+      "Turquel",
+      "Vestiaria",
+      "Vimeiro"
+     ],
+     "Caldas da Rainha": [
+      "Carvalhal Benfeito",
+      "Salir de Matos",
+      "Santa Catarina"
+     ],
+     "Porto de Mós": [
+      "Juncal"
+     ]
+    },
+    "municipalities": []
+   },
+   "ourem": {
+    "municipalities": [
+     "Ourém"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "Sub-regions alcobaca and ourem are subsets of the whole area zone encostas-daire"
+  ],
+  "aliases": {
+   "Alcobaça": {
+    "Nossa Senhora dos Prazeres de Aljubarrota": "Aljubarrota",
+    "São Vicente de Aljubarrota": "Aljubarrota"
+   }
+  }
+ },
+ "lisboa": {
+  "source": "lisboa-doc:p4",
+  "zones": {
+   "lisboa": {
+    "municipalities": [
+     "Alenquer",
+     "Amadora",
+     "Arruda dos Vinhos",
+     "Cadaval",
+     "Cascais",
+     "Lisboa",
+     "Loures",
+     "Lourinhã",
+     "Mafra",
+     "Odivelas",
+     "Oeiras",
+     "Sintra",
+     "Sobral de Monte Agraço",
+     "Torres Vedras",
+     "Vila Franca de Xira",
+     "Alcobaça",
+     "Batalha",
+     "Bombarral",
+     "Caldas da Rainha",
+     "Leiria",
+     "Marinha Grande",
+     "Nazaré",
+     "Óbidos",
+     "Peniche",
+     "Pombal",
+     "Porto de Mós",
+     "Ourém"
+    ],
+    "parishes": {},
+    "except": {
+     "Pombal": [
+      "Abiul",
+      "Pelariga",
+      "Redinha",
+      "Vila Cã"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Sub-region Estremadura (district of Lisboa except Azambuja; Bombarral, Peniche, Obidos; Caldas da Rainha except Carvalhal Benfeito, Santa Catarina, Salir de Matos)",
+   "Sub-region Alta-Estremadura (Alcobaca, Batalha, Leiria, Marinha Grande, Nazare, Pombal, Porto de Mos, Ourem, plus Carvalhal Benfeito, Santa Catarina, Salir de Matos of Caldas da Rainha)",
+   "Azambuja (excluded: the district of Lisboa is listed municipality by municipality)"
+  ],
+  "aliases": {}
+ },
+ "colares": {
+  "source": "colares-doc:p4",
+  "zones": {
+   "colares": {
+    "municipalities": [],
+    "parishes": {
+     "Sintra": [
+      "Colares",
+      "São Martinho",
+      "São João das Lampas"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Sao Martinho (Sintra) sits inside the CAOP 2025 union Sintra (Santa Maria e Sao Miguel, Sao Martinho e Sao Pedro de Penaferrim); the union is mapped, so the outline overstates the area"
+  ],
+  "aliases": {
+   "Sintra": {
+    "São Martinho": "União das freguesias de Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)"
+   }
+  }
+ },
+ "carcavelos": {
+  "source": "carcavelos-doc:p4",
+  "zones": {
+   "carcavelos": {
+    "municipalities": [],
+    "parishes": {
+     "Cascais": [
+      "Carcavelos",
+      "Parede",
+      "São Domingos de Rana",
+      "Alcabideche",
+      "Estoril"
+     ],
+     "Oeiras": [
+      "Oeiras",
+      "São Julião da Barra",
+      "Paço de Arcos"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Alcabideche: partly in the spec, taken whole",
+   "Estoril: partly in the spec, taken whole",
+   "Oeiras e São Julião da Barra: partly in the spec, taken whole",
+   "Paço de Arcos: partly in the spec, taken whole",
+   "Boundary lines: north Cascais/Sintra limit, south Atlantic, east Ribeira de Porto Salvo and Barcarena/Oeiras parish limit"
+  ],
+  "aliases": {
+   "Cascais": {
+    "Estoril": "União das freguesias de Cascais e Estoril"
+   }
+  }
+ },
+ "bucelas": {
+  "source": "bucelas-doc:p4",
+  "zones": {
+   "bucelas": {
+    "municipalities": [],
+    "parishes": {
+     "Loures": [
+      "Bucelas",
+      "Fanhões",
+      "Santo Antão do Tojal"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Fanhões: partly in the spec, taken whole",
+   "Santo Antão do Tojal: partly in the spec, taken whole"
+  ],
+  "aliases": {
+   "Loures": {
+    "Santo Antão do Tojal": "União das freguesias de Santo Antão e São Julião do Tojal"
+   }
+  }
+ },
+ "torres-vedras": {
+  "source": "torres-vedras-doc:p5",
+  "zones": {
+   "torres-vedras": {
+    "parishes": {
+     "Torres Vedras": [
+      "Dois Portos",
+      "Runa",
+      "São Domingos de Carmões"
+     ],
+     "Mafra": [
+      "Azueira"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "Torres Vedras, part of: Carvoeira, Freiria, Matacães, São Mamede da Ventosa, São Pedro e Santiago, Santa Maria do Castelo, Turcifal (red and white)",
+   "Mafra, part of (white wine only): Encarnação, Enxara do Bispo, Gradil, Santo Isidoro, Sobral da Abelheira, Vila Franca do Rosário",
+   "Sobral de Monte Agraço, part of: Sapataria, São Salvador, Santo Quintino",
+   "Torres Vedras, part of: A dos Cunhados, Campelos, Freiria, Maxial, Monte Redondo, Ponte do Rol, Ramalhal, São Mamede, São Miguel, São Pedro da Cadeira, São Pedro e Santiago, Santa Maria do Castelo, Silveira, Turcifal"
+  ],
+  "aliases": {
+   "Torres Vedras": {
+    "São Domingos de Carmões": "União das freguesias de Carvoeira e Carmões"
+   }
+  }
+ },
+ "alenquer": {
+  "source": "alenquer-doc:p5",
+  "zones": {
+   "alenquer": {
+    "parishes": {
+     "Alenquer": [
+      "Aldeia Gavinha",
+      "Abrigada",
+      "Meca",
+      "Ota",
+      "Olhalvo",
+      "Pereiro de Palhacana",
+      "Ribafria",
+      "Ventosa"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "Alenquer, part of: Aldeia Galega, Cabanas de Torres, Cadafais, Santo Estevão, Santana da Carnota, Triana",
+   "Alenquer, part of (white wine only): Aldeia Galega, Cabanas de Torres, Vila Verde dos Francos"
+  ],
+  "aliases": {}
+ },
+ "obidos": {
+  "source": "obidos-doc:p5",
+  "zones": {
+   "obidos": {
+    "parishes": {
+     "Bombarral": [
+      "Bombarral",
+      "Carvalhal",
+      "Roliça",
+      "Vale Covo"
+     ],
+     "Cadaval": [
+      "Alguber",
+      "Cadaval",
+      "Figueiros",
+      "Lamas",
+      "Painho",
+      "Peral",
+      "Pêro Moniz",
+      "Vermelha",
+      "Vilar"
+     ],
+     "Caldas da Rainha": [
+      "A dos Francos",
+      "Alvorninha",
+      "Landal",
+      "São Gregório",
+      "Vidais"
+     ],
+     "Óbidos": [
+      "A dos Negros",
+      "Gaeiras",
+      "Óbidos (São Pedro)"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [],
+  "aliases": {
+   "Bombarral": {
+    "Bombarral": "União das freguesias do Bombarral e Vale Covo"
+   },
+   "Cadaval": {
+    "Cadaval": "União das freguesias do Cadaval e Pêro Moniz"
+   },
+   "Óbidos": {
+    "Óbidos (São Pedro)": "Santa Maria, São Pedro e Sobral da Lagoa"
+   }
+  }
+ },
+ "arruda": {
+  "source": "arruda-doc:p5",
+  "zones": {
+   "arruda": {
+    "municipalities": [
+     "Arruda dos Vinhos"
+    ],
+    "districts": [],
+    "parishes": {},
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "Sobral de Monte Agraço, part of: Santo Quintino",
+   "Vila Franca de Xira, part of: Cachoeiras, Calhandriz, São João dos Montes"
+  ],
+  "aliases": {}
+ },
+ "dotejo": {
+  "source": "dotejo-doc:p5",
+  "zones": {
+   "almeirim": {
+    "municipalities": [
+     "Almeirim",
+     "Alpiarça",
+     "Salvaterra de Magos"
+    ],
+    "parishes": {}
+   },
+   "cartaxo": {
+    "municipalities": [
+     "Azambuja",
+     "Cartaxo"
+    ],
+    "parishes": {}
+   },
+   "chamusca": {
+    "municipalities": [
+     "Chamusca",
+     "Golegã",
+     "Abrantes",
+     "Constância",
+     "Sardoal",
+     "Mação"
+    ],
+    "parishes": {}
+   },
+   "coruche": {
+    "municipalities": [
+     "Benavente",
+     "Coruche"
+    ],
+    "parishes": {}
+   },
+   "santarem": {
+    "municipalities": [
+     "Rio Maior",
+     "Santarém"
+    ],
+    "parishes": {}
+   },
+   "tomar": {
+    "municipalities": [
+     "Tomar",
+     "Torres Novas",
+     "Alcanena",
+     "Entroncamento",
+     "Vila Nova da Barquinha",
+     "Ferreira do Zêzere"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "River Tejo is the natural limit between Almeirim and Cartaxo/Santarém sub-regions"
+  ],
+  "aliases": {}
+ },
+ "setubal": {
+  "source": "setubal-doc:p6",
+  "zones": {
+   "setubal": {
+    "municipalities": [
+     "Montijo",
+     "Palmela",
+     "Setúbal"
+    ],
+    "parishes": {
+     "Sesimbra": [
+      "Castelo"
+     ]
+    }
+   }
+  },
+  "notMapped": [],
+  "aliases": {}
+ },
+ "palmela": {
+  "source": "palmela-doc:p6",
+  "zones": {
+   "palmela": {
+    "municipalities": [
+     "Montijo",
+     "Palmela",
+     "Setúbal"
+    ],
+    "parishes": {
+     "Sesimbra": [
+      "Castelo"
+     ]
+    }
+   }
+  },
+  "notMapped": [],
+  "aliases": {}
+ },
+ "alentejo": {
+  "source": "alentejo-doc:p6-7",
+  "zones": {
+   "borba": {
+    "municipalities": [
+     "Borba",
+     "Vila Viçosa"
+    ],
+    "parishes": {}
+   },
+   "evora": {
+    "municipalities": [
+     "Évora"
+    ],
+    "parishes": {
+     "Montemor-o-Novo": [
+      "Nossa Senhora da Vila"
+     ]
+    }
+   },
+   "granja-amareleja": {
+    "municipalities": [
+     "Mourão"
+    ],
+    "parishes": {
+     "Moura": [
+      "Póvoa de São Miguel",
+      "Amareleja"
+     ]
+    }
+   },
+   "moura": {
+    "parishes": {
+     "Moura": [
+      "Santo Amador",
+      "Sobral da Adiça"
+     ]
+    },
+    "municipalities": []
+   },
+   "portalegre": {
+    "municipalities": [
+     "Portalegre"
+    ],
+    "parishes": {
+     "Sousel": [
+      "Casa Branca"
+     ]
+    }
+   },
+   "redondo": {
+    "municipalities": [
+     "Redondo"
+    ],
+    "parishes": {}
+   },
+   "reguengos": {
+    "municipalities": [
+     "Reguengos de Monsaraz"
+    ],
+    "parishes": {}
+   },
+   "vidigueira": {
+    "municipalities": [
+     "Alvito",
+     "Cuba",
+     "Vidigueira"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "Borba: partial, described by roads, ribeiras and the Serra d'Ossa; whole municipalities Borba and Vila Viçosa taken, the line also touches Estremoz, Sousel and Alandroal (Bencatel, Pardais, São Bartolomeu parishes)",
+   "Évora: partial, limit by Herdade das Cortiçadas, the Évora-Montemor road, ribeira de São Matias, rio Degebe, rio Xarrama and public paths; whole Évora municipality taken plus Montemor-o-Novo, Nossa Senhora da Vila",
+   "Granja-Amareleja: small strip between the Póvoa de São Miguel parish limit and the rio Ardila mouth",
+   "Moura: partial, described by rio Guadiana, rio Ardila, ribeira de Toutalga, the Serpa-Vila Nova and Brinches-Moura roads; Santo Agostinho, São João Baptista and Santo Amador come as one CAOP union, Sobral da Adiça whole; Pias and São Salvador are named as limits but are Serpa parishes, left out",
+   "Portalegre: partial, limit by the Elvas-Torres das Vargens railway, ribeira de Seda, ribeira das Perdigoas and the granite massif; areas above 700 m excluded; Sousel/Casa Branca only rustic plots 15, 16, 21, 22 of section N (whole parish taken, overstated)",
+   "Redondo: partial, limit by Serra d'Ossa, ribeira de Vale Figueira, Vale de Vasco, Montoito, Machede parish line and ribeira da Pardiela; whole Redondo municipality taken",
+   "Reguengos: partial, limit by albufeira da Vigia, rio Degebe, rio Guadiana and the clay band Vendinha-Montoito; whole Reguengos de Monsaraz municipality taken"
+  ],
+  "aliases": {
+   "Moura": {
+    "Santo Agostinho": "União das freguesias de Moura (Santo Agostinho e São João Baptista) e Santo Amador",
+    "São João Baptista": "União das freguesias de Moura (Santo Agostinho e São João Baptista) e Santo Amador"
+   }
+  }
+ },
+ "lagos": {
+  "source": "lagos-doc:att10988",
+  "zones": {
+   "lagos": {
+    "municipalities": [],
+    "parishes": {
+     "Aljezur": [
+      "Aljezur",
+      "Bordeira",
+      "Odeceixe"
+     ],
+     "Vila do Bispo": [
+      "Raposeira",
+      "Sagres",
+      "Vila do Bispo",
+      "Barão de São Miguel",
+      "Budens"
+     ],
+     "Lagos": [
+      "Luz",
+      "Santa Maria",
+      "São Sebastião",
+      "Barão de São João",
+      "Bensafrim",
+      "Odiáxere"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Aljezur, Bordeira, Odeceixe, Barão de São Miguel, Budens, Barão de São João, Bensafrim, Odiáxere",
+   "CAOP 2025 merged Santa Maria and São Sebastião (Lagos) into São Gonçalo de Lagos"
+  ],
+  "aliases": {
+   "Lagos": {
+    "Santa Maria": "São Gonçalo de Lagos",
+    "São Sebastião": "São Gonçalo de Lagos"
+   }
+  }
+ },
+ "portimao": {
+  "source": "portimao-doc:att11458",
+  "zones": {
+   "portimao": {
+    "municipalities": [],
+    "parishes": {
+     "Portimão": [
+      "Alvor",
+      "Mexilhoeira Grande",
+      "Portimão"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Mexilhoeira Grande, Portimão"
+  ],
+  "aliases": {
+   "Portimão": {
+    "Alvar": "Alvor"
+   }
+  }
+ },
+ "lagoa": {
+  "source": "lagoa-doc:att10986",
+  "zones": {
+   "lagoa": {
+    "municipalities": [
+     "Albufeira",
+     "Lagoa"
+    ],
+    "parishes": {
+     "Loulé": [
+      "Almansil",
+      "Boliqueime",
+      "Quarteira",
+      "São Clemente",
+      "São Sebastião",
+      "Alte",
+      "Querença",
+      "Salir"
+     ],
+     "Silves": [
+      "Alcantarilha",
+      "Armação de Pêra",
+      "São Bartolomeu de Messines",
+      "Silves"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Alte, Querença, Salir, São Bartolomeu de Messines, Silves"
+  ],
+  "aliases": {
+   "Loulé": {
+    "Almansil": "Almancil",
+    "São Clemente": "Loulé (São Clemente)",
+    "São Sebastião": "Loulé (São Sebastião)"
+   }
+  }
+ },
+ "tavira": {
+  "source": "tavira-doc:att10909",
+  "zones": {
+   "tavira": {
+    "municipalities": [
+     "Faro",
+     "Olhão"
+    ],
+    "parishes": {
+     "São Brás de Alportel": [
+      "São Brás de Alportel"
+     ],
+     "Castro Marim": [
+      "Castro Marim"
+     ],
+     "Tavira": [
+      "Luz",
+      "Santiago",
+      "Conceição",
+      "Santa Catarina",
+      "Santa Marta",
+      "Santo Estêvão"
+     ],
+     "Vila Real de Santo António": [
+      "Vila Nova de Cacela"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: São Brás de Alportel, Castro Marim, Conceição, Santa Catarina, Santa Marta, Santo Estêvão",
+   "Santiago and Santa Marta both fall in the CAOP union Tavira (Santa Maria e Santiago), which also takes in Santa Maria"
+  ],
+  "aliases": {
+   "Tavira": {
+    "Luz": "Luz de Tavira",
+    "Santa Catarina": "Santa Catarina da Fonte do Bispo",
+    "Santiago": "União das freguesias de Tavira (Santa Maria e Santiago)",
+    "Santa Marta": "União das freguesias de Tavira (Santa Maria e Santiago)"
+   }
+  }
+ },
+ "porto": {
+  "source": "porto-doc; the same Região Demarcada do Douro as douro (Decreto 7934 of 1921), one zone",
+  "zones": {
+   "porto": {
+    "municipalities": [
+     "Mesão Frio",
+     "Peso da Régua",
+     "Santa Marta de Penaguião",
+     "Vila Nova de Foz Côa"
+    ],
+    "parishes": {
+     "Vila Real": [
+      "Abaças",
+      "Ermida",
+      "Folhadela",
+      "Guiães",
+      "Mateus",
+      "Nogueira",
+      "Nossa Senhora da Conceição",
+      "Parada de Cunhos",
+      "São Dinis",
+      "São Pedro"
+     ],
+     "Armamar": [
+      "Aldeias",
+      "Armamar",
+      "Folgosa",
+      "Fontelo",
+      "Santo Adrião",
+      "Vacalar",
+      "Vila Seca"
+     ],
+     "Lamego": [
+      "Cambres",
+      "Ferreiros de Avões",
+      "Figueira",
+      "Parada do Bispo",
+      "Penajóia",
+      "Samodães",
+      "Sande",
+      "Almacave",
+      "Sé",
+      "Valdigem"
+     ],
+     "Resende": [
+      "Barrô"
+     ],
+     "Alijó": [
+      "Alijó",
+      "Amieiro",
+      "Carlão",
+      "Casal de Loivos",
+      "Castedo",
+      "Cotas",
+      "Favaios",
+      "Pegarinhos",
+      "Pinhão",
+      "Sanfins do Douro",
+      "Santa Eugénia",
+      "São Mamede de Ribatua",
+      "Vale de Mendiz",
+      "Vilar de Maçada",
+      "Vilarinho de Cotas"
+     ],
+     "Murça": [
+      "Candedo",
+      "Murça",
+      "Noura"
+     ],
+     "Sabrosa": [
+      "Celeirós",
+      "Covas do Douro",
+      "Gouvães do Douro",
+      "Gouvinhas",
+      "Paços",
+      "Paradela de Guiães",
+      "Provesende",
+      "Sabrosa",
+      "São Cristóvão do Douro",
+      "São Martinho de Antas",
+      "Souto Maior",
+      "Vilarinho de São Romão"
+     ],
+     "São João da Pesqueira": [
+      "Castanheiro do Sul",
+      "Espinhosa",
+      "Ervedosa do Douro",
+      "Nagozelo do Douro",
+      "Paredes da Beira",
+      "São João da Pesqueira",
+      "Soutelo do Douro",
+      "Trevões",
+      "Vale de Figueira",
+      "Valongo dos Azeites",
+      "Várzea de Trevões",
+      "Vilarouco"
+     ],
+     "Tabuaço": [
+      "Adorigo",
+      "Barcos",
+      "Desejosa",
+      "Granjinha",
+      "Pereiro",
+      "Santa Leocádia",
+      "Sendim",
+      "Tabuaço",
+      "Távora",
+      "Valença do Douro"
+     ],
+     "Carrazeda de Ansiães": [
+      "Beira Grande",
+      "Castanheiro do Norte",
+      "Carrazeda de Ansiães",
+      "Lavandeira",
+      "Linhares",
+      "Parambos",
+      "Pereiros",
+      "Pinhal do Norte",
+      "Pombal",
+      "Ribalonga",
+      "Seixo de Ansiães",
+      "Vilarinho da Castanheira"
+     ],
+     "Alfândega da Fé": [
+      "Vilarelhos"
+     ],
+     "Freixo de Espada à Cinta": [
+      "Freixo de Espada à Cinta",
+      "Ligares",
+      "Mazouco",
+      "Poiares"
+     ],
+     "Torre de Moncorvo": [
+      "Açoreira",
+      "Adeganha",
+      "Cabeça Boa",
+      "Horta da Vilariça",
+      "Lousa",
+      "Peredo dos Castelhanos",
+      "Torre de Moncorvo",
+      "Urros"
+     ],
+     "Vila Flor": [
+      "Assares",
+      "Freixiel",
+      "Lodões",
+      "Roios",
+      "Sampaio",
+      "Santa Comba de Vilariça",
+      "Seixo de Manhoses",
+      "Vale Frechoso",
+      "Vilarinho das Azenhas",
+      "Vila Flor"
+     ],
+     "Figueira de Castelo Rodrigo": [
+      "Escalhão"
+     ],
+     "Mêda": [
+      "Fonte Longa",
+      "Longroiva",
+      "Mêda",
+      "Poço do Canto"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Nossa Senhora da Conceição (Vila Real): the spec includes only part of it; mapped whole.",
+   "Vila Real city: the spec's Nossa Senhora da Conceição (part), São Dinis and São Pedro are one parish since 2013, 'Vila Real'; mapped whole.",
+   "Quintas de Foutoura, do Prado and das Várzeas in Várzea de Abrunhais (Lamego): single estates.",
+   "Estates in Frechas, Avantos, Carvalhais and Romeu (Mirandela): single estates.",
+   "Quintas da Peça and das Trigueiras and the Vimieiro estates in Vilas Boas (Vila Flor): single estates."
+  ],
+  "aliases": {
+   "Vila Real": {
+    "Nossa Senhora da Conceição": "Vila Real",
+    "São Dinis": "Vila Real",
+    "São Pedro": "Vila Real"
+   }
+  }
+ }
 }

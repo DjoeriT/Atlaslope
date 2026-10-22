@@ -84,8 +84,36 @@ def centroid(geom):
 # Portugal (issue #149, pilot): places are added one by one as their outline lands (Tools/data/build_pt_areas.py), from the EU
 # register (data/countries/pt/register.json). Study groups follow the WSET Level 3 spec's Portugal list [A: grouped by the
 # north-to-south order of the CVR regions]; Study for Portugal waits for its course, so the places are not quizzed yet.
-PT_GROUPS = [("pt-north", "North")]
-PT_PLACES = [("douro", "PDO-PT-A1539", "pt-north"), ("vinho-verde", "PDO-PT-A1545", "pt-north")]
+PT_GROUPS = [("pt-north", "North"), ("pt-centre", "Centre"), ("pt-lisboa", "Lisboa"), ("pt-tejo", "Tejo"),
+             ("pt-setubal", "Setúbal Peninsula"), ("pt-alentejo", "Alentejo"), ("pt-algarve", "Algarve")]
+PT_PLACES = [  # mainland PDOs plus Lisboa, a PGI (Vinho Regional) that WSET names; batch 1, owner option B, 22 Oct 2026
+    ("douro", "PDO-PT-A1539", "pt-north"),
+    ("vinho-verde", "PDO-PT-A1545", "pt-north"),
+    ("porto", "PDO-PT-A1540", "pt-north"),
+    ("tras-os-montes", "PDO-PT-A1466", "pt-north"),
+    ("tavora-varosa", "PDO-PT-A1541", "pt-north"),
+    ("dao", "PDO-PT-A1534", "pt-centre"),
+    ("bairrada", "PDO-PT-A1537", "pt-centre"),
+    ("beira-interior", "PDO-PT-A1546", "pt-centre"),
+    ("lafoes", "PDO-PT-A1455", "pt-centre"),
+    ("encostas-daire", "PDO-PT-A1470", "pt-centre"),
+    ("lisboa", "PGI-PT-A1535", "pt-lisboa"),
+    ("colares", "PDO-PT-A1461", "pt-lisboa"),
+    ("carcavelos", "PDO-PT-A1462", "pt-lisboa"),
+    ("bucelas", "PDO-PT-A1463", "pt-lisboa"),
+    ("torres-vedras", "PDO-PT-A1465", "pt-lisboa"),
+    ("alenquer", "PDO-PT-A1468", "pt-lisboa"),
+    ("obidos", "PDO-PT-A1469", "pt-lisboa"),
+    ("arruda", "PDO-PT-A1471", "pt-lisboa"),
+    ("dotejo", "PDO-PT-A1544", "pt-tejo"),
+    ("setubal", "PDO-PT-A1457", "pt-setubal"),
+    ("palmela", "PDO-PT-A1460", "pt-setubal"),
+    ("alentejo", "PDO-PT-A1542", "pt-alentejo"),
+    ("lagos", "PDO-PT-A1454", "pt-algarve"),
+    ("portimao", "PDO-PT-A1452", "pt-algarve"),
+    ("lagoa", "PDO-PT-A1450", "pt-algarve"),
+    ("tavira", "PDO-PT-A1449", "pt-algarve"),
+]
 PT_QUIZ_NOTE = "Study covers Spain for now; Portugal joins when its WSET course is in Study."
 
 
@@ -95,7 +123,7 @@ def portugal_places():
     out = []
     for pid, file, region in PT_PLACES:
         name = reg[file]["names"][0]
-        out.append({"id": pid, "name": name, "official": name, "kind": "DOC", "level": "place", "parent": "portugal",
+        out.append({"id": pid, "name": name, "official": name, "kind": "VR" if file.startswith("PGI") else "DOC", "level": "place", "parent": "portugal",
                     "region": region, "euFile": file, "layerCode": None, "boundary": "added",
                     "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": PT_QUIZ_NOTE})
     located = sorted(out, key=lambda p: -p["centroid"][1])

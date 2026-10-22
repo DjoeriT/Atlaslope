@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Write and check guides outside the chat: one fresh headless `claude -p` run per helper (route "Run a region locally", step 3).
 
-Usage: headless.py <region> <run dir> <id> [<id> ...]
+Usage: headless.py [--budget <M>] [--sheets] <region> <run dir> <id> [<id> ...]   (--sheets: a Sonnet run fills each empty fact sheet first)
 
 Per place, one after another: a Sonnet writer (pack.py write, check_guide.py) and an Opus sentence checker (pack.py check) that
 returns fact sheet disagreements as ready edits; the script applies the sure ones (oneshot.py's set_path) and logs all of them in
@@ -39,6 +39,29 @@ CHECK = {'type': 'object', 'required': ['keep', 'fix', 'cut', 'ok', 'serious', '
             'cite': {'type': 'string', 'description': 'JSON array of cites for the sibling "cite" field, e.g. ["<source>:p6"], or "" to leave it'},
             'why': {'type': 'string', 'description': 'sheet says X, pliego says Y, page'},
             'sure': {'type': 'boolean', 'description': 'false when the page does not plainly settle it'}}}}}}
+FACTS = {'type': 'object', 'required': ['sheet', 'note'], 'properties': {
+    'sheet': {'type': 'string', 'description': 'the whole fact sheet entry as JSON text, with "id" and every field of the example'},
+    'note': {'type': 'string', 'description': 'one line: anything the spec left unclear'}}}
+
+
+def facts_prompt(region, pid, src):
+    return f'''Fill the fact sheet for "{pid}" (region {region}).
+Step 1: run `python3 Tools/guides/pack.py facts {region} {pid} {src}`. It prints your brief, an example sheet and every page of the spec.
+Step 2: return the sheet entry as JSON text in "sheet". Do not write any file. {FEW} {SAFETY}'''
+
+
+def put_sheet(region: str, pid: str, text: str) -> None:
+    """Puts a filled sheet in place of the empty one (Tools/data/pt_batch.py makes those); keys outside the example are refused."""
+    fp = ROOT / f'content/facts/{region}.json'
+    facts = json.loads(fp.read_text(encoding='utf-8'))
+    new = json.loads(text)
+    old = next(e for e in facts['sheets'] if e['id'] == pid)
+    if new.get('id') != pid or set(new) - set(old):
+        raise ValueError(f'sheet for {pid} has id {new.get("id")} or unknown keys {set(new) - set(old)}')
+    facts['sheets'] = [new if e['id'] == pid else e for e in facts['sheets']]
+    fp.write_text(json.dumps(facts, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+
+
 def write_prompt(region, pid, src, manifest):
     return f'''Write the Terroir guide for "{pid}" (region {region}).
 Step 1: run `python3 Tools/guides/pack.py write {region} {pid} {src}`. It prints your brief, the format rules, the example,
@@ -117,6 +140,9 @@ def main() -> None:
     budget = 0.8
     if args[:1] == ['--budget']:
         budget, args = float(args[1]), args[2:]
+    sheets = args[:1] == ['--sheets']  # fill empty fact sheets first (a new country's places, Portugal batch 1)
+    if sheets:
+        args = args[1:]
     region, run_dir, ids = args[0], Path(args[1]), args[2:]
     run_dir.mkdir(parents=True, exist_ok=True)
     gp = f'Review/guides-pipeline/{region}'
@@ -125,6 +151,14 @@ def main() -> None:
     n = len(list(run_dir.glob('agent-*.jsonl')))
     for pid in ids:
         src = next(s for s in sources if s.rsplit('-', 1)[0] == pid)
+        if sheets:
+            n += 1
+            f = run(run_dir, n, f'sheet {pid}', 'sonnet', facts_prompt(region, pid, src), FACTS)
+            try:
+                put_sheet(region, pid, f['sheet'])
+            except (TypeError, ValueError, KeyError) as err:
+                print(f'STOP {pid}: sheet not usable ({err})')
+                sys.exit(1)
         n += 1
         w = run(run_dir, n, f'write {pid}', 'sonnet', write_prompt(region, pid, src, manifest), WRITE)
         if not w:

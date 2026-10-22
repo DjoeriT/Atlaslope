@@ -1,0 +1,29 @@
+{
+ "alenquer": {
+  "source": "alenquer-doc:p5",
+  "zones": {
+   "alenquer": {
+    "parishes": {
+     "Alenquer": [
+      "Aldeia Gavinha",
+      "Abrigada",
+      "Meca",
+      "Ota",
+      "Olhalvo",
+      "Pereiro de Palhacana",
+      "Ribafria",
+      "Ventosa"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "Alenquer, part of: Aldeia Galega, Cabanas de Torres, Cadafais, Santo Estevão, Santana da Carnota, Triana",
+   "Alenquer, part of (white wine only): Aldeia Galega, Cabanas de Torres, Vila Verde dos Francos"
+  ],
+  "aliases": {}
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "dotejo": {
+  "source": "dotejo-doc:p5",
+  "zones": {
+   "almeirim": {
+    "municipalities": [
+     "Almeirim",
+     "Alpiarça",
+     "Salvaterra de Magos"
+    ],
+    "parishes": {}
+   },
+   "cartaxo": {
+    "municipalities": [
+     "Azambuja",
+     "Cartaxo"
+    ],
+    "parishes": {}
+   },
+   "chamusca": {
+    "municipalities": [
+     "Chamusca",
+     "Golegã",
+     "Abrantes",
+     "Constância",
+     "Sardoal",
+     "Mação"
+    ],
+    "parishes": {}
+   },
+   "coruche": {
+    "municipalities": [
+     "Benavente",
+     "Coruche"
+    ],
+    "parishes": {}
+   },
+   "santarem": {
+    "municipalities": [
+     "Rio Maior",
+     "Santarém"
+    ],
+    "parishes": {}
+   },
+   "tomar": {
+    "municipalities": [
+     "Tomar",
+     "Torres Novas",
+     "Alcanena",
+     "Entroncamento",
+     "Vila Nova da Barquinha",
+     "Ferreira do Zêzere"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "River Tejo is the natural limit between Almeirim and Cartaxo/Santarém sub-regions"
+  ],
+  "aliases": {}
+ }
+}

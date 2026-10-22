@@ -1,0 +1,89 @@
+{
+ "alentejo": {
+  "source": "alentejo-doc:p6-7",
+  "zones": {
+   "borba": {
+    "municipalities": [
+     "Borba",
+     "Vila Viçosa"
+    ],
+    "parishes": {}
+   },
+   "evora": {
+    "municipalities": [
+     "Évora"
+    ],
+    "parishes": {
+     "Montemor-o-Novo": [
+      "Nossa Senhora da Vila"
+     ]
+    }
+   },
+   "granja-amareleja": {
+    "municipalities": [
+     "Mourão"
+    ],
+    "parishes": {
+     "Moura": [
+      "Póvoa de São Miguel",
+      "Amareleja"
+     ]
+    }
+   },
+   "moura": {
+    "parishes": {
+     "Moura": [
+      "Santo Amador",
+      "Sobral da Adiça"
+     ]
+    },
+    "municipalities": []
+   },
+   "portalegre": {
+    "municipalities": [
+     "Portalegre"
+    ],
+    "parishes": {
+     "Sousel": [
+      "Casa Branca"
+     ]
+    }
+   },
+   "redondo": {
+    "municipalities": [
+     "Redondo"
+    ],
+    "parishes": {}
+   },
+   "reguengos": {
+    "municipalities": [
+     "Reguengos de Monsaraz"
+    ],
+    "parishes": {}
+   },
+   "vidigueira": {
+    "municipalities": [
+     "Alvito",
+     "Cuba",
+     "Vidigueira"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "Borba: partial, described by roads, ribeiras and the Serra d'Ossa; whole municipalities Borba and Vila Viçosa taken, the line also touches Estremoz, Sousel and Alandroal (Bencatel, Pardais, São Bartolomeu parishes)",
+   "Évora: partial, limit by Herdade das Cortiçadas, the Évora-Montemor road, ribeira de São Matias, rio Degebe, rio Xarrama and public paths; whole Évora municipality taken plus Montemor-o-Novo, Nossa Senhora da Vila",
+   "Granja-Amareleja: small strip between the Póvoa de São Miguel parish limit and the rio Ardila mouth",
+   "Moura: partial, described by rio Guadiana, rio Ardila, ribeira de Toutalga, the Serpa-Vila Nova and Brinches-Moura roads; Santo Agostinho, São João Baptista and Santo Amador come as one CAOP union, Sobral da Adiça whole; Pias and São Salvador are named as limits but are Serpa parishes, left out",
+   "Portalegre: partial, limit by the Elvas-Torres das Vargens railway, ribeira de Seda, ribeira das Perdigoas and the granite massif; areas above 700 m excluded; Sousel/Casa Branca only rustic plots 15, 16, 21, 22 of section N (whole parish taken, overstated)",
+   "Redondo: partial, limit by Serra d'Ossa, ribeira de Vale Figueira, Vale de Vasco, Montoito, Machede parish line and ribeira da Pardiela; whole Redondo municipality taken",
+   "Reguengos: partial, limit by albufeira da Vigia, rio Degebe, rio Guadiana and the clay band Vendinha-Montoito; whole Reguengos de Monsaraz municipality taken"
+  ],
+  "aliases": {
+   "Moura": {
+    "Santo Agostinho": "União das freguesias de Moura (Santo Agostinho e São João Baptista) e Santo Amador",
+    "São João Baptista": "União das freguesias de Moura (Santo Agostinho e São João Baptista) e Santo Amador"
+   }
+  }
+ }
+}

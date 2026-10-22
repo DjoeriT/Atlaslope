@@ -1,0 +1,41 @@
+{
+ "lagoa": {
+  "source": "lagoa-doc:att10986",
+  "zones": {
+   "lagoa": {
+    "municipalities": [
+     "Albufeira",
+     "Lagoa"
+    ],
+    "parishes": {
+     "Loulé": [
+      "Almansil",
+      "Boliqueime",
+      "Quarteira",
+      "São Clemente",
+      "São Sebastião",
+      "Alte",
+      "Querença",
+      "Salir"
+     ],
+     "Silves": [
+      "Alcantarilha",
+      "Armação de Pêra",
+      "São Bartolomeu de Messines",
+      "Silves"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Alte, Querença, Salir, São Bartolomeu de Messines, Silves"
+  ],
+  "aliases": {
+   "Loulé": {
+    "Almansil": "Almancil",
+    "São Clemente": "Loulé (São Clemente)",
+    "São Sebastião": "Loulé (São Sebastião)"
+   }
+  }
+ }
+}
