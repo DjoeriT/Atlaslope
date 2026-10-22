@@ -1,2 +1,3 @@
 # Batch 4 report (in progress)
 - Rock keys (ribeira-sacra: slate, 2 granites; ribera-del-duero: ochre clays, terraces, limestone): ROCK_KEY + strings + SOURCES row; sampled from IGME render at the stop view. Tests: pending.
+- alicante: 6 stops (intro, villena, nao, carrasqueta, ground geology, rules), 4 new photos (CC BY-SA 4.0 x2, CC BY 2.0, CC BY-SA 3.0) + alicante-1/-2, tour data 22 KB own + 9.5 shared of 150 KB gz; npm test 3 s, build 3.7 s, check.sh quick 7 s pass; shots:tour phone+desktop 221 s, desktop villena flagged imagery (172 tiles, picture shows imagery, same as pilot flake); crops looked at (nao and poblet focus moved to keep lighthouse and tower); rock key limestone/lime-marl/dolomite. Commit: this one.

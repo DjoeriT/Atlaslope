@@ -1,0 +1,144 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour batch 4, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-alicante.geojson or the guide's own fly point.",
+ "id": "alicante",
+ "cover": {
+  "photo": "alicante-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [-0.5, 38.5],
+    "zoom": 8.4,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "alicante",
+   "chip": "Alicante in the Valencian Community"
+  },
+  {
+   "id": "villena",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "center": [-0.86, 38.56],
+    "zoom": 10,
+    "pitch": 55,
+    "bearing": 20
+   },
+   "focus": "alicante",
+   "photo": "alicante-villena-1",
+   "measure": {
+    "place": "alicante",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": "Villena",
+     "label": "Villena",
+     "text": "The plain around the Vinalopó river at Villena reaches into Albacete, up to the Sierra de la Oliva.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nao",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "center": [0.1, 38.72],
+    "zoom": 10.4,
+    "pitch": 62,
+    "bearing": 250
+   },
+   "focus": "alicante",
+   "dot": false,
+   "photo": "alicante-nao-1",
+   "measure": {
+    "place": "alicante",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": [0.2311, 38.7319],
+     "label": "Cabo de la Nao",
+     "text": "In La Marina Alta, air from the Cabo de la Nao runs into high, dense mountains.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "carrasqueta",
+   "chapter": "weather",
+   "fly": 1,
+   "camera": {
+    "center": [-0.49, 38.6],
+    "zoom": 10.2,
+    "pitch": 58,
+    "bearing": 320
+   },
+   "focus": "alicante",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "alicante-carrasqueta-1",
+   "facts": [
+    {
+     "at": "Serra de la Carrasqueta",
+     "label": "Serra de la Carrasqueta",
+     "text": "The Sierras de Carrasqueta and Maigmó turn the sea breezes inland.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {
+    "center": [-1.14, 38.36],
+    "zoom": 10.3,
+    "pitch": 60,
+    "bearing": 15
+   },
+   "focus": "alicante",
+   "layers": [
+    "geology"
+   ],
+   "photo": "alicante-carche-1",
+   "facts": [
+    {
+     "at": "Sierra del Carche",
+     "label": "Sierra del Carche",
+     "text": "Near Abanilla and Jumilla the land forms one zone of limy, very dry soil on the north side of the Sierra del Carche.",
+     "cite": [
+      "alicante-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "alicante",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "alicante",
+   "photo": "alicante-2",
+   "chip": "Monastrell and Moscatel, dry-farmed"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Alicante."
+ }
+}

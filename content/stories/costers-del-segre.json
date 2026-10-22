@@ -1,0 +1,173 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour batch 4, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the guide's own fly points or the IGN place names of data/story/names-costers-del-segre.geojson.",
+ "id": "costers-del-segre",
+ "cover": {
+  "photo": "costers-del-segre-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [0.8, 41.8],
+    "zoom": 8.6,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "costers-del-segre",
+   "chip": "Costers del Segre in Catalonia"
+  },
+  {
+   "id": "montsec",
+   "chapter": "segre",
+   "fly": 0,
+   "camera": {
+    "center": [0.78, 41.9],
+    "zoom": 9.9,
+    "pitch": 62,
+    "bearing": 0
+   },
+   "focus": "costers-del-segre",
+   "photo": "costers-montsec-1",
+   "measure": {
+    "place": "costers-del-segre",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": [0.78, 42.04],
+     "label": "Serra del Montsec",
+     "text": "The zone skirts the Montsec range.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "raimat",
+   "chapter": "segre",
+   "fly": 1,
+   "camera": {
+    "center": [0.4782, 41.6783],
+    "zoom": 11.2,
+    "pitch": 50,
+    "bearing": 30
+   },
+   "focus": "costers-del-segre",
+   "dot": false,
+   "photo": "costers-del-segre-1",
+   "facts": [
+    {
+     "at": "Raimat",
+     "label": "Raimat",
+     "text": "Raimat has gentle relief and a continental climate.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lleida",
+   "chapter": "climate",
+   "fly": 0,
+   "camera": {
+    "center": [0.62, 41.62],
+    "zoom": 9.4,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "costers-del-segre",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "costers-guimera-1",
+   "facts": [
+    {
+     "at": "Lleida",
+     "label": "Lleida",
+     "text": "Rain is scarce: on average 240 mm a year in Lleida and 450 mm in the rest of the zone.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pallars",
+   "chapter": "soils",
+   "fly": 0,
+   "camera": {
+    "center": [0.93, 42.03],
+    "zoom": 10.2,
+    "pitch": 60,
+    "bearing": 200
+   },
+   "focus": "costers-del-segre",
+   "layers": [
+    "geology"
+   ],
+   "photo": "costers-pallars-1",
+   "facts": [
+    {
+     "at": [0.89, 42.17],
+     "label": "Pallars",
+     "text": "The northern units of Pallars and Artesa de Segre have the highest vines, with Pyrenean influence.",
+     "cite": [
+      "costers-del-segre-pliego:p9"
+     ]
+    },
+    {
+     "at": "Artesa de Segre",
+     "label": "Artesa de Segre",
+     "text": "The soils are calcareous, covered with sand and/or clay, and poor in organic matter.",
+     "cite": [
+      "costers-del-segre-pliego:p9",
+      "costers-del-segre-pliego:p10",
+      "costers-del-segre-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "poblet",
+   "chapter": "wines",
+   "fly": 0,
+   "camera": {
+    "center": [1.0833, 41.3828],
+    "zoom": 11.4,
+    "pitch": 55,
+    "bearing": 330
+   },
+   "focus": "costers-del-segre",
+   "dot": false,
+   "photo": "costers-poblet-1",
+   "facts": [
+    {
+     "at": [1.0833, 41.3828],
+     "label": "Poblet",
+     "text": "The monastery of Poblet, founded in 1151, played a key part in the history of vines in the lands of Lleida.",
+     "cite": [
+      "costers-del-segre-pliego:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "chapter": "wines",
+   "camera": {
+    "place": "costers-del-segre",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "costers-del-segre",
+   "chip": "Costers del Segre"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Costers del Segre."
+ }
+}

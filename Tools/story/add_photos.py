@@ -6,7 +6,7 @@ not a place's Guides photo. Then run Tools/data/photo_sizes.py for the 160/480/8
 Needs Pillow (.venv/bin/python3). Focus points (checked on the 3:2 frame) go in src/pages/pageCrops.json with
 Tools/guides/crop_sheet.mjs --page, not in src/home/photoCrops.json (square Guides cards only).
 """
-import importlib.util, io, json, sys
+import importlib.util, io, json, os, sys
 from pathlib import Path
 
 from PIL import Image
@@ -46,12 +46,34 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
     "ribera-soils-1": ("File:Clear cultivation in Viñedos en la Ribera del Duero.jpg", "https://commons.wikimedia.org/wiki/File:Clear_cultivation_in_Vi%C3%B1edos_en_la_Ribera_del_Duero.jpg",
                        "Raúl Hernández González", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Vine rows on ochre sandy clay in the Ribera del Duero", "50% 60%"),
 }
+# Batch 4 (22 Oct 2026): Alicante and Costers del Segre stop photos
+PHOTOS.update({
+    "alicante-villena-1": ("File:Viñedo de Terlinques hacia Las Virtudes.jpg", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_de_Terlinques_hacia_Las_Virtudes.jpg",
+                           "Enrique Íñiguez Rodríguez (Qoan)", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Bare young vines on the flat Vinalopó plain at Villena, with the mountains behind", "50% 50%"),
+    "alicante-nao-1": ("File:Cabo de la Nao - 52471880126.jpg", "https://commons.wikimedia.org/wiki/File:Cabo_de_la_Nao_-_52471880126.jpg",
+                       "Werner Wilmes", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "The Cabo de la Nao, a high orange cliff with a lighthouse above the sea", "35% 40%"),
+    "alicante-carrasqueta-1": ("File:Alacant desde la Carrasqueta - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Alacant_desde_la_Carrasqueta_-_panoramio.jpg",
+                               "bladimiro", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "Wooded ridges falling to the coast, seen from the Carrasqueta pass", "50% 50%"),
+    "alicante-carche-1": ("File:El Carche.jpg", "https://commons.wikimedia.org/wiki/File:El_Carche.jpg",
+                          "Wadim", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sierra del Carche under storm cloud, with a dusting of snow on the crest", "50% 55%"),
+    "costers-montsec-1": ("File:View from Serra del Montsec.jpg", "https://commons.wikimedia.org/wiki/File:View_from_Serra_del_Montsec.jpg",
+                          "TheFurther21", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A pale limestone crest of the Serra del Montsec with ridges fading beyond", "55% 55%"),
+    "costers-pallars-1": ("File:Serra del Montsec - 1.jpg", "https://commons.wikimedia.org/wiki/File:Serra_del_Montsec_-_1.jpg",
+                          "MARIA ROSA FERRE", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Vine rows in autumn colour at Castell d'Encus, Talarn, with the Pyrenean foothills behind", "50% 50%"),
+    "costers-poblet-1": ("File:Vista del Reial Monestir de Poblet IMG 20190626 110533.jpg", "https://commons.wikimedia.org/wiki/File:Vista_del_Reial_Monestir_de_Poblet_IMG_20190626_110533.jpg",
+                         "Aniol", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The walls and towers of the Poblet monastery behind a row of vines", "50% 50%"),
+    "costers-guimera-1": ("File:Granyena - 67.jpg", "https://commons.wikimedia.org/wiki/File:Granyena_-_67.jpg",
+                          "Angela Llop", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Young vines on dry open ground at Guimerà, with a long mountain range on the horizon", "50% 50%"),
+})
 
 
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())
+    only = os.environ.get("STORY_ONLY")  # e.g. STORY_ONLY=alicante-,costers-: only photo ids starting with one of these
     for key, (title, page, artist, licence, lurl, alt, _) in PHOTOS.items():
+        if only and not key.startswith(tuple(only.split(","))):
+            continue
         out = ship.OUT / f"{key}.webp"
         if not out.exists():
             img = Image.open(io.BytesIO(ship.fetch(ship.rendition(title)))).convert("RGB")

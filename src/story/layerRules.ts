@@ -43,6 +43,8 @@ export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
   priorat: [{ id: 'slate', color: '#B2B2B2' }],
   'ribeira-sacra': [{ id: 'slate', color: '#80804D' }, { id: 'granite', color: '#FF4D80' }, { id: 'granite2', color: '#FF80FF' }],
   'ribera-del-duero': [{ id: 'ochreClay', color: '#FFFF80' }, { id: 'terraces', color: '#D9D9B2' }, { id: 'limestone', color: '#FFFFB2' }],
+  alicante: [{ id: 'limestone', color: '#FF804D' }, { id: 'limeMarl', color: '#FFD9B2' }, { id: 'dolomite', color: '#B2FFFF' }],
+  'costers-del-segre': [{ id: 'montsec', color: '#B2FF00' }, { id: 'limestone', color: '#FFEDB2' }, { id: 'sandClay', color: '#D9D9D9' }],
 };
 
 /** The key items for a story's rock colours: the guide's own word and the colour. */
