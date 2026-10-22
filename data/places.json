@@ -23,6 +23,18 @@
     "place",
     "zone"
    ]
+  },
+  {
+   "id": "france",
+   "name": "France",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -128,6 +140,23 @@
      "id": "pt-madeira",
      "name": "Madeira",
      "order": 8
+    }
+   ]
+  },
+  {
+   "id": "wset-fr",
+   "name": "WSET",
+   "country": "france",
+   "groups": [
+    {
+     "id": "fr-bordeaux",
+     "name": "Bordeaux",
+     "order": 1
+    },
+    {
+     "id": "fr-burgundy",
+     "name": "Burgundy",
+     "order": 3
     }
    ]
   }
@@ -2307,7 +2336,7 @@
    "boundary": "added",
    "centroid": [
     -8.3331,
-    41.4889
+    41.4888
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2367,7 +2396,7 @@
    "boundary": "added",
    "centroid": [
     -7.5386,
-    40.9775
+    40.9777
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2386,8 +2415,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -7.8522,
-    40.5053
+    -7.8523,
+    40.5054
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2407,7 +2436,7 @@
    "boundary": "added",
    "centroid": [
     -8.5097,
-    40.4365
+    40.4364
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2446,8 +2475,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -8.1376,
-    40.7528
+    -8.1375,
+    40.7529
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2467,7 +2496,7 @@
    "boundary": "added",
    "centroid": [
     -8.7577,
-    39.6721
+    39.672
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2486,8 +2515,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.0118,
-    39.3527
+    -9.012,
+    39.3526
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2506,8 +2535,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.4144,
-    38.8263
+    -9.4145,
+    38.8262
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2526,8 +2555,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.3884,
-    38.7219
+    -9.3882,
+    38.7218
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2546,8 +2575,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.1377,
-    38.8894
+    -9.1378,
+    38.8893
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2586,8 +2615,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.0391,
-    39.0981
+    -9.039,
+    39.0982
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2626,7 +2655,7 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -9.0769,
+    -9.077,
     38.9778
    ],
    "quiz": "none",
@@ -2666,7 +2695,7 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -8.8362,
+    -8.8363,
     38.6121
    ],
    "quiz": "none",
@@ -2686,7 +2715,7 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -8.8362,
+    -8.8363,
     38.6121
    ],
    "quiz": "none",
@@ -2706,7 +2735,7 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -7.6587,
+    -7.6586,
     38.4195
    ],
    "quiz": "none",
@@ -2727,7 +2756,7 @@
    "boundary": "added",
    "centroid": [
     -8.8001,
-    37.1922
+    37.1921
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2747,7 +2776,7 @@
    "boundary": "added",
    "centroid": [
     -8.5831,
-    37.1916
+    37.1914
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2767,7 +2796,7 @@
    "boundary": "added",
    "centroid": [
     -8.2054,
-    37.2047
+    37.2046
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2786,7 +2815,7 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -7.7599,
+    -7.7601,
     37.1478
    ],
    "quiz": "none",
@@ -2806,8 +2835,8 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -16.999,
-    32.7465
+    -16.9988,
+    32.7464
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
@@ -2826,13 +2855,376 @@
    "layerCode": null,
    "boundary": "added",
    "centroid": [
-    -16.999,
-    32.7465
+    -16.9988,
+    32.7464
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
    "northSouth": 28,
    "courseOrder": 28
+  },
+  {
+   "id": "chablis",
+   "name": "Chablis",
+   "official": "Chablis",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-burgundy",
+   "euFile": "PDO-FR-A0736",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    3.7557,
+    47.8087
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 1,
+   "courseOrder": 1
+  },
+  {
+   "id": "chablis-premier-cru",
+   "name": "Chablis Premier Cru",
+   "official": "Chablis premier cru",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7747,
+    47.8026
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 1
+  },
+  {
+   "id": "chaume-de-talvat",
+   "name": "Chaume de Talvat",
+   "official": "Chablis premier cru Chaume de Talvat",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7489,
+    47.7784
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 2
+  },
+  {
+   "id": "cote-de-jouan",
+   "name": "Côte de Jouan",
+   "official": "Chablis premier cru Côte de Jouan",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7501,
+    47.7772
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 3
+  },
+  {
+   "id": "fourchaume",
+   "name": "Fourchaume",
+   "official": "Chablis premier cru Fourchaume",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7772,
+    47.8507
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 4
+  },
+  {
+   "id": "les-beauregards",
+   "name": "Les Beauregards",
+   "official": "Chablis premier cru Les Beauregards",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7471,
+    47.7676
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 5
+  },
+  {
+   "id": "les-fourneaux",
+   "name": "Les Fourneaux",
+   "official": "Chablis premier cru Les Fourneaux",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8662,
+    47.8175
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 6
+  },
+  {
+   "id": "mont-de-milieu",
+   "name": "Mont de Milieu",
+   "official": "Chablis premier cru Mont de Milieu",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8377,
+    47.8123
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 7
+  },
+  {
+   "id": "vaucoupin",
+   "name": "Vaucoupin",
+   "official": "Chablis premier cru Vaucoupin",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8497,
+    47.8023
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 8
+  },
+  {
+   "id": "vaugiraut",
+   "name": "Vaugiraut",
+   "official": "Chablis premier cru Vaugiraut",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8098,
+    47.7938
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 9
+  },
+  {
+   "id": "vaupulent",
+   "name": "Vaupulent",
+   "official": "Chablis premier cru Vaupulent",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7876,
+    47.8373
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 10
+  },
+  {
+   "id": "vosgros",
+   "name": "Vosgros",
+   "official": "Chablis premier cru Vosgros",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-premier-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8135,
+    47.7923
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 11
+  },
+  {
+   "id": "chablis-grand-cru",
+   "name": "Chablis Grand Cru",
+   "official": "Chablis Grand Cru",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7993,
+    47.8258
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 12
+  },
+  {
+   "id": "blanchot",
+   "name": "Blanchot",
+   "official": "Chablis Grand Cru Blanchot",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8151,
+    47.8192
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 13
+  },
+  {
+   "id": "bougros",
+   "name": "Bougros",
+   "official": "Chablis Grand Cru Bougros",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7928,
+    47.8247
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 14
+  },
+  {
+   "id": "grenouilles",
+   "name": "Grenouilles",
+   "official": "Chablis Grand Cru Grenouilles",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8025,
+    47.8225
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 15
+  },
+  {
+   "id": "les-clos",
+   "name": "Les Clos",
+   "official": "Chablis Grand Cru Les Clos",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8078,
+    47.8189
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 16
+  },
+  {
+   "id": "preuses",
+   "name": "Preuses",
+   "official": "Chablis Grand Cru Preuses",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.7968,
+    47.8267
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 17
+  },
+  {
+   "id": "valmur",
+   "name": "Valmur",
+   "official": "Chablis Grand Cru Valmur",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8066,
+    47.8235
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 18
+  },
+  {
+   "id": "vaudesir",
+   "name": "Vaudésir",
+   "official": "Chablis Grand Cru Vaudésir",
+   "kind": "zone",
+   "level": "zone",
+   "parent": "chablis-grand-cru",
+   "region": "fr-burgundy",
+   "boundary": "added",
+   "centroid": [
+    3.8018,
+    47.8254
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "courseOrder": 19
+  },
+  {
+   "id": "pauillac",
+   "name": "Pauillac",
+   "official": "Pauillac",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0713",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.7686,
+    45.1954
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 2,
+   "courseOrder": 2
   }
  ]
 }

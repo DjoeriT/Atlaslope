@@ -5,6 +5,7 @@ import { IMAGERY_ERROR_LIMIT, RELIEF_STOPS, basemapPaint, imageryFailed, layerVi
 import { NO_REGION_COLOR, REGION_COLORS, regionColor } from '../../src/map/regionColors';
 import { buildStyle, esriTemplate } from '../../src/map/style';
 import { rasterTileSize, tileXYZ } from '../../src/map/imagery';
+import { addedZones } from '../../src/map/focus';
 
 const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
 const on = { satellite: true, relief: true, boundaries: true, colourBy: 'climate' } as const;
@@ -128,7 +129,8 @@ describe('boundaries joined to places', () => {
   it('draws a coloured polygon for every place with a boundary file', () => {
     const drawn = new Set(result.features.map((f) => f.properties.id));
     for (const p of places) {
-      if (p.boundary === 'mapa-2014' || p.boundary === 'added') expect(drawn.has(p.id), p.id).toBe(true);
+      // Zones with an added outline (France's climats) are drawn by the zones source instead (addedZones, src/map/focus.ts).
+      if (p.boundary === 'mapa-2014' || p.boundary === 'added') expect(drawn.has(p.id), p.id).toBe(p.kind !== 'zone');
     }
     for (const f of result.features) expect(f.properties.color).toMatch(/^#[0-9A-F]{6}$/);
   });
@@ -157,5 +159,16 @@ describe('labels and sea', () => {
     expect(sea.features).toHaveLength(1);
     expect((sea.features[0].geometry.coordinates as unknown[][])[0]).toEqual([[-180, -90], [180, -90], [180, 90], [-180, 90], [-180, -90]]);
     expect((sea.features[0].geometry.coordinates as unknown[]).length).toBe(3);
+  });
+});
+
+describe('France zones on the map (#55)', () => {
+  it('draws Chablis Premier and Grand Cru and every climat as zones, not as places', () => {
+    const places = read('places.json').places as Array<{ id: string; name: string; kind: string }>;
+    const names = new Map(places.filter((p) => p.kind === 'zone').map((p) => [p.id, p.name]));
+    const zones = addedZones(read('added-boundaries.geojson'), (id) => names.get(id));
+    expect(zones).toHaveLength(19);
+    expect(zones.find((f) => f.properties.id === 'les-clos')?.properties.name).toBe('Les Clos');
+    expect(zones.every((f) => f.properties.zone === f.properties.name)).toBe(true);
   });
 });

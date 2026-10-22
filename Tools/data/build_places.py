@@ -133,8 +133,46 @@ def portugal_places():
     return out
 
 
+# France (issue #149, pilot; decisions #52-#58): the WSET L3 list (data/countries/fr/wset-places.json, Tools/countries/fr_wset.py),
+# its batches as Study groups, outlines from INAO (data/countries/fr/areas.geojson, Tools/data/build_fr_areas.py). Only shipped
+# places enter the tree; each later batch extends FR_SHIP. Climats are zones inside their Premier or Grand Cru zone (#55), so
+# France names two zone depths. Not in Study yet.
+FR_GROUPS = [("fr-bordeaux", "Bordeaux"), ("fr-south-west", "South-West"), ("fr-burgundy", "Burgundy"), ("fr-beaujolais", "Beaujolais"),
+             ("fr-alsace", "Alsace"), ("fr-loire", "Loire"), ("fr-rhone", "Rhône"), ("fr-south", "South"), ("fr-champagne", "Champagne")]
+FR_SHIP = ["chablis", "pauillac"]
+FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
+FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
+
+
+def france_places():
+    wset = {p["id"]: p for p in json.loads((ROOT / "data/countries/fr/wset-places.json").read_text())["places"]}
+    spec = json.loads((ROOT / "data/countries/fr/areas-spec.json").read_text())
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/fr/areas.geojson").read_text())["features"]}
+    group = {name: gid for gid, name in FR_GROUPS}
+    shipped = set(FR_SHIP)
+    out = []
+    for pid in FR_SHIP:
+        w, s = wset[pid], spec.get(pid, {})
+        region = group[w["batch"]]
+        place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "AOC", "level": "place", "parent": "france",
+                 "region": region, "euFile": w["fileNumber"], "layerCode": None, "boundary": "added",
+                 "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE}
+        # alsoWithin holds tree ids only: a wider AOC joins it once that AOC is shipped.
+        also = [wid for wid in (next((i for i, x in wset.items() if x["name"] == n), None) for n in s.get("alsoWithin", [])) if wid in shipped]
+        if also: place["alsoWithin"] = also
+        out.append(place)
+        for i, (zid, z) in enumerate(s.get("zones", {}).items(), 1):
+            parent = z.get("parent", pid)
+            name = FR_ZONE_NAMES.get(z["denom"]) or z["denom"].removeprefix(s["zones"][parent]["denom"] + " ")
+            out.append({"id": zid, "name": name, "official": z["denom"], "kind": "zone", "level": "zone", "parent": parent, "region": region,
+                        "boundary": "added", "centroid": centroid(areas[zid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE, "courseOrder": i})
+    located = sorted((p for p in out if p["level"] == "place"), key=lambda p: -p["centroid"][1])
+    for i, p in enumerate(located, 1): p["northSouth"], p["courseOrder"] = i, i
+    return out
+
+
 def main():
-    layer = json.loads((ROOT / "data/dops.geojson").read_text())
+    layer =json.loads((ROOT / "data/dops.geojson").read_text())
     over = json.loads((ROOT / "data/dop-overrides.json").read_text())
     by_name = {}
     for f in layer["features"]:
@@ -179,6 +217,7 @@ def main():
     for i, p in enumerate(sorted((p for p in places if p["level"] == "place"), key=key), 1): p["courseOrder"] = i
 
     places += portugal_places()
+    places += france_places()
 
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
@@ -186,12 +225,18 @@ def main():
         "$comment": "The place tree. Ids are stable (decision #41); home parent plus alsoWithin overlaps (#42). Study regions are a course grouping over the tree. Built by Tools/data/build_places.py; sources in data/SOURCES.md.",
         "version": 1,
         "countries": [{"id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"]},
-                      {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]}],
+                      {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]},
+                      # Two zone depths: Chablis Premier Cru, then its climats (#55).
+                      {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
                      "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
                                 for i, g in enumerate(COURSE)]},
                     {"id": "wset-pt", "name": "WSET", "country": "portugal",
-                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(PT_GROUPS)]}],
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(PT_GROUPS)]},
+                    {"id": "wset-fr", "name": "WSET", "country": "france",
+                     # A group joins with its first shipped place (an empty one would show as a region with no guides).
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(FR_GROUPS)
+                                if any(p["region"] == g for p in places)]}],
         "places": places,
     }
     out = ROOT / "data/places.json"

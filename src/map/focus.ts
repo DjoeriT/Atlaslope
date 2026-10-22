@@ -52,3 +52,11 @@ export function withZoneIds(zones: Collection, idOf: (name: string) => string | 
   });
   return { type: 'FeatureCollection', features };
 }
+
+/** Zone features from the added outlines (France's Premier and Grand Cru and their climats, #55): that file ids them already. */
+export function addedZones(added: Collection, nameOf: (id: string) => string | undefined): Collection['features'] {
+  return added.features.flatMap((f) => {
+    const name = nameOf(String(f.properties.id));
+    return name ? [{ ...f, properties: { ...f.properties, zone: name, name } }] : [];
+  });
+}

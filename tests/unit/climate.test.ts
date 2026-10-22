@@ -18,7 +18,8 @@ describe('climate colours', () => {
   it('has a group for every top class measured, so no place on the map is grey', () => {
     const codes = CLIMATE_GROUPS.flatMap((g) => g.codes);
     // Portugal (pilot, 22 Oct 2026): its places have no measures yet; Köppen for Portugal needs the Beck et al. raster, not on this Mac.
-    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary) && p.parent !== 'portugal');
+    // France (pilot, #149): the same, its places are not measured yet.
+    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary) && p.parent !== 'portugal' && !p.region.startsWith('fr-'));
     for (const p of onMap) expect(codes, p.id).toContain(measures[p.id]?.koppen[0]?.code);
   });
   it('uses six distinct colours, none of them the selection wine', () => {
