@@ -59,6 +59,19 @@ PHOTOS.update({
 })
 
 
+# Somontano map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "somontano-vero-1": ("File:PPA2143 Alquézar y cañones del Vero.jpg", "https://commons.wikimedia.org/wiki/File:PPA2143_Alqu%C3%A9zar_y_ca%C3%B1ones_del_Vero.jpg",
+                      "Pedro José Ponce Asensio", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "Still green water of the Vero beneath limestone cliffs and riverside trees in the canyons near Alquézar", "50% 50%"),
+    "somontano-guara-1": ("File:Sierra de Guara.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Guara.jpg",
+                      "Bert Heymans", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "A valley with a small village below the pale limestone ridges of the Sierra de Guara, seen through pines", "50% 50%"),
+    "somontano-weather-1": ("File:Somontano de Barbastro, Lagunarrota (Huesca, Aragón).jpg", "https://commons.wikimedia.org/wiki/File:Somontano_de_Barbastro,_Lagunarrota_(Huesca,_Arag%C3%B3n).jpg",
+                      "Malkav", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Green fields and patches of vines under a deep blue sky with streaks of cloud in the Somontano de Barbastro", "50% 50%"),
+    "somontano-barbastro-1": ("File:Vista de Barbastro desde el Monasterio de El Pueyo . - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Vista_de_Barbastro_desde_el_Monasterio_de_El_Pueyo_._-_panoramio.jpg",
+                      "McBodes", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Barbastro on the plain far below, seen over farmland and woods from the Monasterio de El Pueyo, with sierras on the horizon", "50% 50%"),
+})
+
+
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())

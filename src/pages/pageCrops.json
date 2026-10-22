@@ -30,5 +30,11 @@
  "rioja-alta-1": {"focus":"50% 35%","file":"25d0f807e993"},
  "rioja-haro-1": {"focus":"50% 45%","file":"4c1f02762822"},
  "rioja-oriental-1": {"focus":"50% 50%","file":"98e1adfa9952"},
- "rioja-sierra-1": {"focus":"50% 40%","file":"c418ca095959"}
+ "rioja-sierra-1": {"focus":"50% 40%","file":"c418ca095959"},
+ "somontano-1": {"focus":"35% 50%","file":"bbc64c21c414"},
+ "somontano-2": {"focus":"50% 50%","file":"2f5385b5cf4c"},
+ "somontano-barbastro-1": {"focus":"50% 40%","file":"66cb21403114"},
+ "somontano-guara-1": {"focus":"50% 50%","file":"720b0f1f9649"},
+ "somontano-vero-1": {"focus":"40% 50%","file":"a62bc6de8b8c"},
+ "somontano-weather-1": {"focus":"50% 75%","file":"f86e1ed7d21c"}
 }

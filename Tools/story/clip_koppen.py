@@ -9,6 +9,8 @@ BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41
 BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)  # as fetch_layers.py
 BBOX["ribera-del-duero"] = (-4.5, 41.35, -2.85, 41.95)
 BBOX["navarra"] = (-2.65, 41.90, -1.35, 42.90)  # as fetch_layers.py
+BBOX["somontano"] = (-0.50, 41.85, 0.55, 42.40)  # as fetch_layers.py
+BBOX["campo-de-borja"] = (-2.05, 41.60, -1.20, 42.00)  # as fetch_layers.py
 MARGIN = 0.4  # 0.2 left bare bands at the top and bottom of a 1400x850 view
 
 

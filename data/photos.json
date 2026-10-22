@@ -1544,6 +1544,38 @@
    "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
    "page": "https://commons.wikimedia.org/wiki/File:Estella_-_rio_Ega_1.jpg",
    "title": "File:Estella - rio Ega 1.jpg"
+  },
+  "somontano-vero-1": {
+   "alt": "Still green water of the Vero beneath limestone cliffs and riverside trees in the canyons near Alquézar",
+   "artist": "Pedro José Ponce Asensio",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:PPA2143_Alqu%C3%A9zar_y_ca%C3%B1ones_del_Vero.jpg",
+   "title": "File:PPA2143 Alquézar y cañones del Vero.jpg"
+  },
+  "somontano-guara-1": {
+   "alt": "A valley with a small village below the pale limestone ridges of the Sierra de Guara, seen through pines",
+   "artist": "Bert Heymans",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sierra_de_Guara.jpg",
+   "title": "File:Sierra de Guara.jpg"
+  },
+  "somontano-weather-1": {
+   "alt": "Green fields and patches of vines under a deep blue sky with streaks of cloud in the Somontano de Barbastro",
+   "artist": "Malkav",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Somontano_de_Barbastro,_Lagunarrota_(Huesca,_Arag%C3%B3n).jpg",
+   "title": "File:Somontano de Barbastro, Lagunarrota (Huesca, Aragón).jpg"
+  },
+  "somontano-barbastro-1": {
+   "alt": "Barbastro on the plain far below, seen over farmland and woods from the Monasterio de El Pueyo, with sierras on the horizon",
+   "artist": "McBodes",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Barbastro_desde_el_Monasterio_de_El_Pueyo_._-_panoramio.jpg",
+   "title": "File:Vista de Barbastro desde el Monasterio de El Pueyo . - panoramio.jpg"
   }
  }
 }

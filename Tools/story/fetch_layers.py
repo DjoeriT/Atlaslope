@@ -138,9 +138,23 @@ MAIN += ("Río Ebro", "Río Ega", "Río Arga", "Río Aragón")
 CONTENT_TOWNS["navarra"] = ["Tudela", "Estella", "Lizarra", "Olite", "Pamplona", "Funes", "Cascante", "Puente la Reina", "Tafalla", "Corella",
                             "Cintruénigo", "Ablitas", "Los Arcos", "Viana", "Villatuerta", "Artajona", "Mendigorría", "Ujué", "Valtierra", "Cadreita"]
 
+# Somontano (map tours batch 3, 22 Oct 2026): sierras of Guara, Balces and Salinas down to the plains, the Alcanadre, Vero and Cinca
+BBOX["somontano"] = (-0.50, 41.85, 0.55, 42.40)
+MAIN += ("Río Alcanadre", "Río Vero", "Río Cinca", "Río Flumen")
+CONTENT_TOWNS["somontano"] = ["Barbastro", "Huesca", "Alquézar", "Bierge", "Salas Bajas", "Adahuesca", "Colungo", "Naval", "Berbegal",
+                              "Peraltilla", "Pozán de Vero", "Azlor", "Castillazuelo", "Lascellas", "Abiego", "Cregenzán", "Estada", "Monzón"]
+
+# Campo de Borja (map tours batch 3, 22 Oct 2026): between Moncayo and the Ebro, the Huecha valley and its three height zones
+BBOX["campo-de-borja"] = (-2.05, 41.60, -1.20, 42.00)
+MAIN += ("Río Huecha",)
+CONTENT_TOWNS["campo-de-borja"] = ["Borja", "Ainzón", "Magallón", "Fuendejalón", "Bulbuente", "Maleján", "Pozuelo de Aragón", "Tabuenca",
+                                   "Vera de Moncayo", "Alberite de San Juan", "Bureta", "Agón", "Mallén", "Albeta", "Ambel", "Talamantes", "Vera de Moncayo"]
+
 # ranges named in the guides, kept even if NGBE files them under another local type
 FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serra de Montsant", "Sierra de Moncalvillo"}
 FORCE_RANGES |= {"Sierra de Urbasa", "Sierra de Andía"}  # Navarra (batch 3)
+FORCE_RANGES |= {"Sierra de Guara", "Sierra de Balcés", "Sierra de Salinas"}  # Somontano (batch 3)
+FORCE_RANGES |= {"Moncayo", "Sierra del Moncayo"}  # Campo de Borja (batch 3)
 
 
 def spread(items, n, first=()):
