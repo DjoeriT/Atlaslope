@@ -79,7 +79,7 @@
 .pg p{max-width:38rem} /* one measure for running text, about 70 characters (site visual review, 18 Oct 2026) */
 
 .pg-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem}
-.pg-cards > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper)}
+.pg-cards > div{min-width:0}
 .pg-cards b{display:block;font:500 1.25rem var(--serif);margin-bottom:.3rem}
 .pg-cards p{margin:0;color:var(--ink2);font-size:1rem}
 .pg-cards p::first-letter{text-transform:uppercase}
@@ -91,7 +91,7 @@
 .pg-styles span{color:var(--ink2)}
 
 .pg-grapes{display:flex;gap:.8rem;flex-wrap:wrap;list-style:none;margin:0 0 .4rem;padding:0}
-.pg-grapes li{border:1px solid var(--line);border-radius:var(--rad-card);padding:.7rem 1.1rem;font:500 1.25rem var(--serif)}
+.pg-grapes li{padding:0 .8rem 0 0;font:500 1.25rem var(--serif)}
 .pg-rows{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.7rem 1rem;margin:1.2rem 0 0}
 .pg-rows dt{color:var(--ink3)}
 .pg-rows dd{margin:0}
@@ -177,7 +177,7 @@
 .pg .fly small{display:none}
 .pg .fly:hover{text-decoration-color:currentColor}
 .pg-zguide{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 .4rem}
-.pg-zguide > div{border:1px solid var(--line);border-radius:var(--rad-card);padding:1.1rem;background:var(--paper);display:flex;flex-direction:column}
+.pg-zguide > div{display:flex;flex-direction:column}
 .pg-zguide b{font:500 1.25rem var(--serif);margin-bottom:.4rem}
 .pg-zguide p{font-size:.9rem;margin:0 0 .6rem}
 .pg-zguide p.cl{color:var(--ink3)}
@@ -250,21 +250,15 @@
 .pg-beat-body:not(.two) .pg-facts > .pg-zones,.pg-beat-body:not(.two) .pg-facts > .pg-h3{grid-column:1 / -1}
 .pg-beat-body:not(.two) .pg-facts > .pg-h3{margin-bottom:-1.2rem}
 .pg-zguide{grid-column:1 / -1}
-.pg-zguide img{display:block;width:calc(100% + 2.2rem);aspect-ratio:4/3;object-fit:cover;margin:-1.1rem -1.1rem .9rem;border-radius:var(--rad-card) var(--rad-card) 0 0}
-.pg-zguide > div{overflow:hidden}
+.pg-zguide img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;margin:0 0 .8rem;border-radius:var(--rad-card)}
 .pg-zguide b a{color:inherit;text-decoration:none}
 .pg-zguide b a:hover{text-decoration:underline;text-underline-offset:3px}
 .pg-zguide dl{margin:0 0 .6rem;font-size:.9rem}
 .pg-zguide dt{font:600 .78rem var(--sans);color:var(--ink3);margin-top:.5rem}
 .pg-zguide dd{margin:0;color:var(--ink2)}
 /* How it tastes closes the chain: a toned panel with a black rule on top, the taste cards inside. */
-.pg-cols main > section.pg-answer{background:var(--paper2);border-top:2px solid var(--ink);border-radius:0 0 var(--rad-card) var(--rad-card);padding:2rem 1.5rem;margin-top:1rem}
+.pg-cols main > section.pg-answer{background:var(--tint4);border:0;border-radius:0;margin:3.5rem 0 0;padding:4.2rem 0 4rem;box-shadow:0 0 0 100vmax var(--tint4);clip-path:inset(0 -100vmax)}
 .pg-answer h2{font-size:2rem!important}
-.pg-answer .pg-cards > div{position:relative;overflow:hidden;padding-left:1.4rem}
-.pg-answer .pg-cards > div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--line2)}
-.pg-answer .pg-cards > div.red::before{background:var(--wine-red)}
-.pg-answer .pg-cards > div.white::before{background:var(--wine-white)}
-.pg-answer .pg-cards > div.rose::before{background:var(--wine-rose)}
 .pg-answer .pg-sw{display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin:0 .5rem 0 0;vertical-align:.05em}
 /* In short: five facts, one line each, each a link to its beat. */
 .pg-cols main > section.pg-short{border:1px solid var(--line2);border-radius:var(--rad-card);padding:1.4rem 1.5rem;margin-top:2rem;max-width:46rem}
@@ -293,7 +287,6 @@
 @media (max-width:68.75em){.pg-beat-body.two{grid-template-columns:1fr;gap:1.6rem}}
 @media (max-width:47.5em){
   .pg-short li{grid-template-columns:1fr}
-  .pg-cols main > section.pg-answer{padding:1.5rem 1rem;margin-left:-1rem;margin-right:-1rem;border-radius:0}
   .pg-beat-h .n{font-size:2.4rem}
 }
 .pg-facts .pg-h3{font:600 .9rem var(--sans);text-transform:none;letter-spacing:0;color:var(--ink)}

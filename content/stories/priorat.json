@@ -140,6 +140,7 @@
   {
    "id": "air",
    "chapter": "air",
+   "photo": "priorat-weather-1",
    "camera": {
     "place": "priorat",
     "pitch": 50,
@@ -193,6 +194,7 @@
   {
    "id": "wines",
    "chapter": "wines",
+   "photo": "priorat-rules-1",
    "camera": {
     "place": "priorat",
     "pitch": 0,

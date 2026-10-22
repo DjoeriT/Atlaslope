@@ -26,27 +26,27 @@ test('the Rioja guide with the tour open fetches each map data file once', async
   const seen = new Map<string, number>();
   page.on('request', (r) => { const m = r.url().match(/\/(dops|natural-earth-world|added-boundaries|rioja-zones)[^/]*\.geojson$/); if (m) seen.set(m[1], (seen.get(m[1]) ?? 0) + 1); });
   await open(page, '#place=rioja&page');
-  await page.locator('a.story-open').click();
+  await page.locator('a.mapcard').click();
   await expect(mapCol(page)).toBeVisible();
   await page.waitForLoadState('networkidle');
   expect([...seen.keys()].sort()).toEqual(['added-boundaries', 'dops', 'natural-earth-world', 'rioja-zones']);
   expect([...seen.values()]).toEqual([1, 1, 1, 1]);
 });
 
-test('the band shows on the Rioja guide in place of "Show on map", and not on a guide without a tour', async ({ page }) => {
+test('the map card shows on the Rioja guide in place of "Show on map", and not on a guide without a tour', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await expect(page.locator('.pg-tour')).toContainText('Map tour · 9 places to fly to');
-  await expect(page.locator('a.story-open')).toHaveText('Open the map');
+  await expect(page.locator('a.mapcard')).toContainText('Read with the map');
+  await expect(page.locator('a.mapcard')).toContainText('9 places to fly to');
   await expect(page.locator('.pg-actions')).toHaveCount(0);
   await open(page, '#place=valdepenas&page');
   await expect(page.locator('h1').first()).toBeVisible();
-  await expect(page.locator('a.story-open')).toHaveCount(0);
+  await expect(page.locator('a.mapcard')).toHaveCount(0);
   await expect(page.locator('.pg-actions .btn')).toBeVisible();
 });
 
 test('opening the map keeps the guide beside it; scrolling to the soils makes that the stop and credits the IGME geology', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await page.locator('a.story-open').click();
+  await page.locator('a.mapcard').click();
   await expect(page).toHaveURL(/#place=rioja&page&story(&view=.*)?$/);
   await expect(mapCol(page)).toBeVisible();
   // Opening from the band leaves the reader where the band was, so the step is the chapter in view; at the lede it is the opening view.
@@ -68,13 +68,6 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await expect(key).toContainText('Alluvium and floodplain');
   await expect(key).toContainText('Steeper than 30%');
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
-});
-
-test('the top Map tour link matches Show map in height', async ({ page }) => {
-  await open(page, '#place=rioja&page');
-  const a = await page.locator('.pg > .pg-back').first().boundingBox();
-  const b = await page.locator('.pg-tourjump').boundingBox();
-  expect(a && b && Math.abs(a.height - b.height) < 1 && Math.abs(a.y - b.y) < 1).toBe(true);
 });
 
 test('on a phone the map strip is 300 px and the credit is folded', async ({ page }) => {
@@ -119,18 +112,15 @@ test('Hide map returns to the plain guide', async ({ page }) => {
   await page.getByRole('button', { name: 'Hide map' }).click();
   await expect(page).toHaveURL(/#place=rioja&page(&view=.*)?$/);
   await expect(page.locator('.pg-tourmap')).toHaveCount(0);
-  await expect(page.locator('a.story-open')).toBeVisible();
-  await expect(page.locator('a.story-open')).toBeFocused(); // and back to "Open the map" on hide
+  await expect(page.locator('a.mapcard')).toBeVisible();
+  await expect(page.locator('a.mapcard')).toBeFocused(); // and back to the map card on hide
 });
 
-test('the map column comes after the guide in reading order, and the band still is out of reach of keyboard and screen readers', async ({ page }) => {
+test('the map column comes after the guide in reading order', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
   const after = await page.locator('.pg-listing').evaluate((el) => !!(el.compareDocumentPosition(document.querySelector('.pg-tourmap')!) & Node.DOCUMENT_POSITION_FOLLOWING));
   expect(after).toBe(true);
-  await open(page, '#place=rioja&page');
-  await expect(page.locator('.pg-tour-still')).toHaveAttribute('aria-hidden', 'true');
-  await expect(page.locator('.pg-tour-still')).toHaveAttribute('inert', '');
 });
 
 // Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
@@ -153,17 +143,6 @@ for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { wi
     await expect(page.locator('.pg-tourcap')).toContainText('Stop 9 of 9');
   });
 }
-
-test('a "Map tour" link at the top of the guide scrolls to the band and gives it focus', async ({ page }) => {
-  await open(page, '#place=rioja&page');
-  await expect(page.locator('a.story-open')).toBeAttached();
-  await page.locator('.pg-tourjump').click();
-  await expect(page.locator('#map-tour')).toBeFocused();
-  await expect(page.locator('#map-tour')).toBeInViewport();
-  await open(page, '#place=valdepenas&page');
-  await expect(page.locator('h1').first()).toBeVisible();
-  await expect(page.locator('.pg-tourjump')).toHaveCount(0);
-});
 
 // Card 3, 21 Oct 2026 (LeadBot's phone preview at 375 px).
 test.describe('phone 375 px', () => {

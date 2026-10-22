@@ -1,0 +1,130 @@
+/* The guide page, option C3 (owner 22 Oct 2026; mock Review/mock-guide-redesign-r2/, opt-c3.css and hero.css): a hero with the map card on the
+   right, A's two-column beats with no boxes (prose left, stop photos and facts in a 33rem column), How it tastes as a champagne band.
+   Photos are never drawn wider than 33rem (528 px): the shipped 800 px files stay sharp at about 1.5x.
+   Loaded after pages.css and story.css. With the map open (.pg.tour) the page is one narrow column, so the two-column rules are off. */
+.pg-listing{max-width:84rem;padding:2.4rem 2rem 6rem}
+
+/* hero */
+.pg-hero{display:grid;grid-template-columns:minmax(0,1fr) 33rem;grid-template-areas:"t pic" "w pic";column-gap:4rem;align-items:start}
+.pg-hero-tt{grid-area:t;padding-top:.6rem}
+.pg-hero-pic{grid-area:pic;align-self:start;min-width:0}
+.pg-hero-why{grid-area:w;align-self:start;max-width:40rem;min-width:0}
+.pg-hero .pg-hero-tt h1{font-size:clamp(3.6rem,7vw,6rem);line-height:1;letter-spacing:-.03em;margin:.3rem 0 .8rem}
+.pg-hero .pg-badges li{border:0;padding:0;min-height:0;background:none;color:var(--ink2)}
+.pg-hero .pg-badges{gap:.35rem 1.2rem;clip-path:inset(-.6rem -.6rem -.6rem 0)}  /* the dot hangs in the gap before an item; at a wrapped line's start it falls outside the clip */
+.pg-hero .pg-badges li{position:relative}
+.pg-hero .pg-badges li + li::before{content:"·";position:absolute;left:-.72rem;color:var(--ink3)}
+.pg-hero .pg-badges .lvl{color:var(--ink);letter-spacing:0}
+.pg-hero .pg-badges .meta{padding:0}
+.pg-hero .pg-spine{padding:0;max-width:none}
+.pg-hero .pg-spine h2{margin:1.6rem 0 .5rem;font:400 1.1rem var(--serif)!important;color:var(--ink3)}
+.pg-hero .pg-lede{font-size:clamp(1.4rem,2vw,1.75rem);line-height:1.38;max-width:none}
+.pg-hero .pg-mosaic{height:auto;aspect-ratio:3/2;max-width:33rem;margin-top:0}
+/* the column is 33rem: one 3:2 photo and the "All N photos" button; a 2:1 split made the second tile a sliver (card 2, ribera-del-duero) */
+.pg-hero .pg-mosaic[data-n]{grid-template-columns:1fr;grid-template-rows:1fr}
+.pg-hero .pg-mosaic figure{grid-row:auto;grid-column:auto}
+.pg-hero .pg-mosaic figure:nth-child(n+2){display:none}
+.pg-hero .pg-namecover{max-width:33rem;margin-top:0}
+.pg-hero .pg-credits{max-width:33rem}
+
+/* the map card: a photo, and under it a solid champagne bar that reads as a button */
+.mapcard{display:block;width:100%;max-width:33rem;border-radius:var(--rad-card);overflow:hidden;background:var(--foil);color:var(--ink);text-decoration:none;cursor:pointer;
+  box-shadow:0 1px 2px rgba(20,20,20,.12),0 14px 30px -14px rgba(20,20,20,.45);transition:transform .25s ease,box-shadow .25s ease}
+.mapcard-wait{aspect-ratio:3/2;max-width:33rem;border-radius:var(--rad-card);background:var(--paper2)}
+.mapcard .mc-ph{display:block;overflow:hidden;aspect-ratio:3/2;background:var(--band)}
+.mapcard .mc-img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.mapcard .mc-bar{display:flex;align-items:center;gap:.95rem;padding:1.05rem 1.1rem 1.1rem 1.25rem;transition:background .2s ease,color .2s ease}
+.mapcard .mc-glyph{flex:none;display:block;width:1.9rem;height:1.9rem}
+.mapcard .mc-txt{flex:1;min-width:0;display:block}
+.mapcard .mc-t{display:block;font:500 1.55rem/1.1 var(--serif);letter-spacing:-.005em}
+.mapcard .mc-s{display:block;margin-top:.25rem;font:500 .9rem var(--sans);opacity:.8}
+.mapcard .mc-go{flex:none;display:flex;align-items:center;justify-content:center;width:2.9rem;height:2.9rem;border-radius:var(--rad-card);background:var(--band);color:var(--foil);font:400 1.5rem/1 var(--sans);transition:transform .25s ease,background .2s ease,color .2s ease}
+.mapcard:hover{transform:translateY(-2px);box-shadow:0 1px 2px rgba(20,20,20,.12),0 20px 36px -14px rgba(20,20,20,.55)}
+.mapcard:hover .mc-img{transform:scale(1.035)}
+.mapcard:hover .mc-bar,.mapcard:focus-visible .mc-bar{background:var(--band);color:var(--foil)}
+.mapcard:hover .mc-go,.mapcard:focus-visible .mc-go{background:var(--foil);color:var(--band);transform:translateX(3px)}
+.mapcard:active{transform:translateY(0)}
+.mapcard:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.mapcard,.mapcard .mc-img,.mapcard .mc-go{transition:none}.mapcard:hover{transform:none}.mapcard:hover .mc-img{transform:none}}
+
+/* beats: prose left, a 33rem side column with the stop photos and the facts; hairlines between beats, no boxes */
+.pg-cols main > section.pg-beat{display:grid;grid-template-columns:minmax(0,1fr) 33rem;column-gap:4.5rem;row-gap:1.5rem;padding:3.6rem 0}
+.pg-cols main > section.pg-beat.solo{grid-template-columns:minmax(0,1fr)}
+.pg-beat-main{min-width:0}
+.pg-beat-h{grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:baseline;margin-bottom:1.4rem}
+.pg-beat-h .n{font:400 5rem/.9 var(--serif);color:var(--foil-ink)}
+.pg-beat-h .k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink)}
+.pg-beat h3{font-size:clamp(2rem,3vw,2.7rem);line-height:1.1}
+.pg-prose{font-size:1.22rem;line-height:1.72;color:var(--ink)}
+.pg-prose p{margin:0 0 1rem}
+.pg-beat-side{min-width:0}
+.pg-figs{display:grid;gap:1.2rem;margin-bottom:1.8rem}
+.pg-figs.two{grid-template-columns:1fr 1fr}
+.pg-fig{margin:0}
+.pg-fig img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--rad-card)}
+.pg-fig figcaption{display:block;margin-top:.7rem}
+.pg-fig figcaption > span{display:block}
+.pg-fig .cap-t{font:500 1.08rem/1.25 var(--serif)}
+.pg-fig .cap-p{margin-top:.2rem;font-size:.95rem;color:var(--ink2)}
+.pg-figs.two .cap-p{font-size:.92rem}
+.pg-fig .cap-m{margin-top:.4rem;font-size:.9rem}
+.pg-fig .cap-m small{display:block;font-size:.72rem;color:var(--ink3)}
+.pg-fig .src{margin-top:.3rem}
+.pg-beat-below{grid-column:1/-1;min-width:0}
+.pg-beat-below .pg-zguide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2rem;margin-top:.6rem}
+.pg-beat-below .pg-zguide b{font:500 1.6rem var(--serif)}
+.pg-beat-below .pg-zguide dl{font-size:1.02rem}
+.pg-below-facts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:2rem 4rem;border-top:1px solid var(--line);padding-top:2.2rem}
+.pg-below-facts > .pg-rows{grid-column:1/-1}
+
+/* How it tastes: a champagne band across the whole page (pages.css draws the band; the cards are plain columns) */
+.pg-answer h2{font-size:clamp(1.9rem,2.8vw,2.5rem)!important}
+.pg-answer .pg-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem}
+.pg-answer .pg-cards b{display:flex;align-items:center;font:500 1.6rem var(--serif);margin-bottom:.4rem}
+.pg-answer .pg-cards p{font-size:1.18rem;line-height:1.6;margin:0}
+
+/* in short, producers and alike, test me and next, sources: a hairline and air, no boxes */
+.pg-cols main > section.pg-short{border:0;border-top:1px solid var(--line);border-radius:0;padding:3.2rem 0;margin:0;max-width:none}
+.pg-short li{grid-template-columns:8rem minmax(0,1fr)}
+.pg-cols main > section.pg-short + section,.pg-cols main > section.pg-short + .pg-two{border-top:0}
+.pg-short .f > a{font-size:1.45rem}
+.pg-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:4rem;border-top:1px solid var(--line);padding:3.2rem 0}
+.pg-two.solo{grid-template-columns:minmax(0,1fr)}
+.pg-cols main > .pg-two > section{padding:0;border:0}
+.pg-cols main h2{font-size:clamp(1.9rem,2.8vw,2.5rem);margin-bottom:1.4rem}
+.pg-names li{font:500 2.4rem/1.15 var(--serif)}
+.pg-alike{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.pg-end{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;border-top:1px solid var(--line);padding:3.2rem 0}
+.pg-cols main > .pg-end .pg-testme{margin:0;padding:0;border:0;background:none;flex:1 1 20rem}
+.pg-end .pg-next{margin:0;padding:0;border:0;flex:0 1 auto}
+.pg-cols main > section#sources{border-top:1px solid var(--line);padding:3.2rem 0}
+.pg-credits-end{margin:1rem 0 0}
+
+/* a phone, and the page beside the open map: one column */
+@media (max-width:64rem){
+  .pg-hero{grid-template-columns:minmax(0,1fr) 26rem;column-gap:2rem}
+  .pg-cols main > section.pg-beat{column-gap:2.5rem;grid-template-columns:minmax(0,1fr) 26rem}
+  .pg-two{gap:2.5rem}
+  .pg-below-facts{gap:2rem 2.5rem}
+}
+@media (max-width:47.5em){
+  .pg-listing{padding:1.4rem 1rem 6rem}
+  .pg-hero{grid-template-columns:1fr;grid-template-areas:"t" "pic" "w"}
+  .pg-hero-tt{padding-top:0;margin-bottom:1.2rem}
+  .pg-hero .pg-hero-tt h1{font-size:3.4rem}
+  .pg-hero .pg-mosaic{margin:0}
+  .mapcard,.mapcard-wait{max-width:none}
+  .mapcard .mc-t{font-size:1.4rem}
+  .pg-hero .pg-spine h2{margin-top:1.8rem}
+  .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
+  .pg-beat-h .n{font-size:3.6rem}
+  .pg-prose{font-size:1.1rem}
+  .pg-figs.two{grid-template-columns:1fr}
+  .pg-beat-below .pg-zguide,.pg-answer .pg-cards,.pg-alike,.pg-below-facts,.pg-two{grid-template-columns:1fr;gap:1.8rem}
+  .pg-short li{grid-template-columns:1fr}
+  .pg-cols main > section.pg-answer{margin-left:0;margin-right:0;padding:2.6rem 0}
+}
+.pg.tour .pg-hero{grid-template-columns:1fr;grid-template-areas:"t" "pic" "w"}
+.pg.tour .pg-hero .pg-mosaic{margin-top:1.2rem}
+.pg.tour .pg-cols main > section.pg-beat{grid-template-columns:1fr;padding:2.4rem 0}
+.pg.tour .pg-beat-below .pg-zguide,.pg.tour .pg-answer .pg-cards,.pg.tour .pg-alike,.pg.tour .pg-below-facts,.pg.tour .pg-two{grid-template-columns:1fr;gap:1.8rem}

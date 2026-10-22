@@ -11,7 +11,7 @@ interface Guide { chapters: Chapter[] }
 const photos = json<{ photos: Record<string, unknown> }>('data/photos.json').photos;
 const measures = json<{ places: Record<string, unknown> }>('data/place-measures.json').places;
 const squareCrops = json<Record<string, unknown>>('src/home/photoCrops.json');
-const storyFocus = json<Record<string, string>>('data/story/photo-focus.json');
+const pageCrops = json<Record<string, unknown>>('src/pages/pageCrops.json');
 const places = new Set(json<{ places: Array<{ id: string }> }>('data/places.json').places.map((p) => p.id));
 const LAYERS = ['koppen', 'geology', 'zonelabels'];
 const KINDS = ['median', 'top', 'low', 'steep'];
@@ -91,8 +91,8 @@ describe('story files', () => {
         for (const p of shownPhotos) expect(photos[p], `photo ${p}`).toBeDefined();
       });
 
-      it('has a checked crop for every photo (square-card crops or the story focus file)', () => {
-        const missing = shownPhotos.filter((p) => !(p in squareCrops) && !(p in storyFocus));
+      it('has a checked crop for every photo (square-card crops or the page crops)', () => {
+        const missing = shownPhotos.filter((p) => !(p in squareCrops) && !(p in pageCrops));
         expect(missing, 'run Tools/guides/crop_sheet.mjs and add the crop').toEqual([]);
       });
 
