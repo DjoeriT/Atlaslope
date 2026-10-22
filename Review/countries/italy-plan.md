@@ -24,7 +24,7 @@ Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58).
    every source in `data/SOURCES.md`.
    Done 22 Oct 2026 for all 30 WSET places (`data/countries/it/areas.geojson`, `Tools/data/build_it_areas.py`): 6 Piemonte official,
    20 municipality lists from the MASAF rulebooks (art. 3), 4 from Candiago 2022 where the rulebook draws the zone along roads
-   (Collio, Friuli Colli Orientali, Verdicchio dei Castelli di Jesi, Chianti; owner to confirm). Frascati and Alto Adige are inflated by
+   (Collio, Friuli Colli Orientali, Verdicchio dei Castelli di Jesi, Chianti; #71). Frascati and Alto Adige are inflated by
    partial municipalities taken whole (Rome; Bolzano's valleys). Terrain, Köppen and photos still to do.
 2. Pilot: Barolo and Chianti Classico guides on the local route, from the disciplinari (Italian sources, English text).
    Pages at `/it/<place>/` (#48). Rough map screenshots to the owner, then one PR. Tokens per guide logged (re-read and new).
