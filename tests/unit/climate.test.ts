@@ -4,7 +4,7 @@ import { CLIMATE_GROUPS, NO_CLIMATE_COLOR, climateColor, climateGroupOf } from '
 import { buildStyle } from '../../src/map/style';
 import { mainGrapes } from '../../src/cards/Cards';
 
-const places = JSON.parse(readFileSync('data/places.json', 'utf8')).places as { id: string; boundary: string; parent: string }[];
+const places = JSON.parse(readFileSync('data/places.json', 'utf8')).places as { id: string; boundary: string; parent: string; region: string }[];
 const measures = JSON.parse(readFileSync('data/place-measures.json', 'utf8')).places as Record<string, { koppen: { code: string }[] }>;
 
 describe('climate colours', () => {
