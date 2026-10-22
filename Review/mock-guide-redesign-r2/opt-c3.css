@@ -1,0 +1,49 @@
+/* Option C3 (C + A blend): A's calm page and order (prose left, photos and facts in a second column, no boxes), C's hero, stop photos and How it tastes band. Derived from round 1 option A. */
+.o-c3 .a-wrap{max-width:84rem;margin:0 auto;padding:0 2rem 3rem}
+
+.a-why{padding:2.8rem 0 1.2rem;max-width:60rem}
+.a-why h2{font-size:clamp(2.1rem,3.4vw,2.9rem);margin-bottom:.8rem}
+.a-why .lede{font-size:1.55rem}
+.a-beat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:4.5rem;row-gap:1.5rem;padding:3.6rem 0;border-top:1px solid var(--line)}
+.a-bh{display:grid;grid-template-columns:auto 1fr;column-gap:1.1rem;align-items:baseline;margin-bottom:1.4rem}
+.a-bh .n{grid-row:1/3;font:400 5rem/.9 var(--serif)}
+.a-bh h3{font-size:clamp(2rem,3vw,2.7rem)}
+.a-prose{font-size:1.22rem;line-height:1.72;color:var(--ink)}
+.a-side .g-fig{margin:0 0 1.8rem}
+.a-side .g-fig .g-ph{aspect-ratio:3/2;height:auto}
+.a-side .g-fig{max-width:33rem}
+.a-figs2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.a-figs2 .g-cap{font-size:.92rem}
+.a-level .pg-rows{margin:0}
+.a-zones{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2rem;margin-top:.6rem}
+.a-zone .g-ph{aspect-ratio:4/3;height:auto;margin-bottom:.8rem}
+.a-zone h4{font-size:1.6rem}
+.a-zone p{font-size:1.02rem}
+.a-rulefacts{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:4rem;border-top:1px solid var(--line);padding-top:2.2rem}
+.a-taste,.a-short,.a-two,.a-end,.o-c3 .a-sources{border-top:1px solid var(--line);padding:3.2rem 0}
+.o-c3 h2{font-size:clamp(1.9rem,2.8vw,2.5rem);margin-bottom:1.4rem}
+.a-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3rem}
+.a-card b{display:flex;align-items:center;font:500 1.6rem var(--serif);margin-bottom:.4rem}
+.a-card p{font-size:1.18rem;line-height:1.6;margin:0}
+.a-short .pg-short .f a{font-size:1.45rem}
+.a-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:4rem}
+.a-names{list-style:none;margin:0;padding:0}.a-names li{font:500 2.4rem/1.15 var(--serif)}
+.a-alike{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.a-al a{display:block;text-decoration:none}
+.a-al .g-ph{aspect-ratio:4/3;height:auto;margin-bottom:.6rem}
+.a-al b{font:500 1.35rem var(--serif)}
+.a-al p{margin:.1rem 0 0;color:var(--ink3);font-size:.92rem}
+.a-end{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.o-c3 .pg-sources{columns:2;column-gap:3rem}
+@media (max-width:64rem){.a-beat{column-gap:2.5rem}.a-rulefacts,.a-two{gap:2.5rem}}
+@media (max-width:48rem){
+  .o-c3 .a-wrap{padding:0 1rem 2rem}
+  .a-beat{grid-template-columns:1fr;padding:2.4rem 0}.a-bh .n{font-size:3.6rem}
+  .a-prose{font-size:1.1rem}.a-figs2{grid-template-columns:1fr}
+  .a-zones,.a-cards,.a-alike,.a-rulefacts,.a-two{grid-template-columns:1fr;gap:1.8rem}
+  .o-c3 .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}
+  .pg-short li{grid-template-columns:1fr}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
+}
+/* r2 review fixes: photo column as wide as its photos so photo and chart edges line up; jump bar starts at the text edge */
+@media (min-width:48.01rem){.o-c3 .a-beat{grid-template-columns:minmax(0,1fr) 33rem}.o-c3 .a-side .g-fig{max-width:none}}
+.o-c3 .g-jump{padding:0 max(1.5rem,calc((100% - 84rem)/2 + 2rem))}

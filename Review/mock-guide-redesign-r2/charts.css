@@ -1,0 +1,25 @@
+/* chart rules of the app (copied from the captured page css, re-scoped to .g-fx) */
+.g-fx .pg-stack { display: block; width: 100%; height: 0.8rem; border-radius: 0.25rem; overflow: hidden; margin: 0.7rem 0px 0.5rem; }
+.g-fx .pg-legend { display: flex; gap: 0.4rem 1.2rem; flex-wrap: wrap; list-style: none; margin: 0px 0px 0.3rem; padding: 0px; font-size: 0.9rem; color: var(--ink2); }
+.g-fx .pg-legend li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.g-fx .pg-legend i { width: 0.8rem; height: 0.8rem; border-radius: 0.2rem; display: inline-block; box-shadow: rgba(26, 23, 20, 0.25) 0px 0px 0px 1px inset; }
+.g-fx .pg-compare { margin: 0.6rem 0px 0.4rem; display: grid; gap: 0.15rem; }
+.g-fx .pg-compare > div { display: grid; grid-template-columns: 7.5rem minmax(0px, 1fr); gap: 0.8rem; align-items: center; }
+.g-fx .pg-compare dt { font-size: 0.82rem; color: var(--ink3); line-height: 1.2; }
+.g-fx .pg-compare .own dt { color: var(--ink); font-weight: 600; }
+.g-fx .pg-compare dd { margin: 0px; }
+.g-fx .pg-compare .pg-stack { margin: 0.35rem 0px; }
+.g-fx .pg-compare > div:not(.own) .pg-stack { height: 0.5rem; opacity: 0.8; }
+.g-fx .pg-compare > div:not(.own) .pg-range .fill { fill: var(--tint3); }
+.g-fx .pg-compare > div:not(.own) .pg-range .mid { color: var(--ink2); font-weight: 500; }
+.g-fx .pg-note { font-size: 0.78rem; color: var(--ink3); margin: 0.3rem 0px 0px; }
+.g-fx .pg-range { position: relative; height: 3.6rem; margin: 0.4rem 0px 0.3rem; }
+.g-fx .pg-range svg { position: absolute; left: 0px; right: 0px; top: 1.4rem; width: 100%; height: 0.5rem; overflow: visible; border-radius: 0.25rem; }
+.g-fx .pg-range .track { fill: var(--paper2); }
+.g-fx .pg-range .fill { fill: var(--tint2); }
+.g-fx .pg-range .tick { stroke: var(--accent); stroke-width: 2; }
+.g-fx .pg-range span { position: absolute; font-size: 0.78rem; white-space: nowrap; }
+.g-fx .pg-range .mid { top: 0px; transform: translate(-50%); color: var(--accent); font-weight: 600; }
+.g-fx .pg-range .lo,#closed .pg-range .hi { top: 2.2rem; color: var(--ink2); }
+.g-fx .pg-range .lo { padding-right: 0.35rem; }
+.g-fx .pg-range .hi { padding-left: 0.35rem; }

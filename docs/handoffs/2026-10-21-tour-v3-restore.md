@@ -17,7 +17,7 @@
 - "Wait with building" (owner): no app code until he says so.
 
 ## Open
-1. **v4 mock round**: built and reviewed 21 Oct; the owner then turned to a guide page redesign with the map unfolding from a photo button. See `2026-10-21-guide-redesign.md` (decisions and the next brief). The restore brief below is rewritten after that round.
+1. **v4 mock round**: done; the guide page redesign followed. The build brief now lives in `2026-10-22-guide-redesign-r2.md` (C3 plus the unfold); the restore brief below is replaced by it.
 2. Stops with no photo of their own today (Rioja: intro, climate, barrel; Priorat: check): "a photo in every stop card" means new
    Commons photos with checked crops, or the section photo. Ask him with candidates, never invent.
 3. Satellite colour jumps and tile reloads: #182, measured (`Review/sat-flicker/report.md`), fix waits for his word (brief below).
