@@ -27,6 +27,9 @@ Follows `2026-10-21-guide-redesign.md`. Mock only, no app code. Branch `claude/g
    intro, climate and barrel steps]. Priorat's weather and rules/wines beats have no photo [V, v4 build.py]. Commons shortlist
    (six, licences checked, credits in `Review/photo-candidates-priorat/shortlist.json`, sheet `shortlist.png`) sent to him; his
    pick goes into data/photos.json with a checked crop in the build.
+   Picked (owner, 22 Oct 2026): weather = "Serra del Montsant - 14.jpg" (Angela Llop, CC BY-SA 2.0, https://commons.wikimedia.org/wiki/File:Serra_del_Montsant_-_14.jpg);
+   rules and wines = "Bodegas, vinos del Priorat, Scala Dei, La Morera de Montsant.jpg" (Juan Emilio Prades Bel, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Bodegas,_vinos_del_Priorat,_Scala_Dei,_La_Morera_de_Montsant.jpg). Slice 1 adds them
+   (photos.json, public/photos 160/480/800, photoCrops.json, SOURCES.md).
 2. Merge this branch as a records/mock PR (handoff, both mock folders) before the build starts.
 3. Shots are heavy (r1 44 MB, r2 38 MB, already pushed, so they stay in history): next rounds commit only sheets and key frames.
 4. Unchanged from earlier: satellite fix #182, the agenda items.
