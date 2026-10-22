@@ -1,4 +1,5 @@
 // What the map shows for the open card: where to look, what to dim and what to highlight. Pure; createMap.ts applies it.
+import type { Bounds } from '../countries';
 import type { Box, Collection } from './boundaries';
 
 export interface Focus {
@@ -6,6 +7,8 @@ export interface Focus {
   frame: { region: string } | { place: string } | { zone: string } | { point: [number, number]; zoom: number } | null;
   /** The country a null frame shows (src/countries.ts); Spain when unset. */
   country?: string;
+  /** Where a null frame looks instead of at one country: the atlas cover fits every live country. */
+  bounds?: Bounds;
   /** A labelled pin at the framed point. */
   pin?: string;
   /** Places outside this study region are dimmed (null: nothing dimmed). */

@@ -1,5 +1,5 @@
 // What the address bar says: which card is open and where the map is looking. It lives in the hash, so the page is static-host
-// friendly and the debug query flags stay out of the way.  #place=toro   #region=rioja   #place=rioja-alta&view=-2.4,42.3,9.1,0,45
+// friendly and the debug query flags stay out of the way.  #place=toro   #region=rioja   #country=spain (no card at all: the atlas cover)   #place=rioja-alta&view=-2.4,42.3,9.1,0,45
 import type { NodeKind } from './tree';
 
 export interface Selection {
@@ -25,10 +25,17 @@ export interface View {
 
 export const SPAIN: Selection = { kind: 'country', id: 'spain' };
 
+/** The atlas cover: no card chosen yet, so the address bar says nothing about a card (the empty hash). It rides on the country kind, with an
+ *  id no country has, so every place that already handles "a country card" keeps one case. A country's own card is #country=spain. */
+export const ATLAS_ID = 'atlas';
+export const ATLAS: Selection = { kind: 'country', id: ATLAS_ID };
+export const isAtlas = (sel: Selection): boolean => sel.kind === 'country' && sel.id === ATLAS_ID;
+
 export function selectionToHash(sel: Selection, view?: View | null): string {
   const p = new URLSearchParams();
   if (sel.kind === 'place') p.set('place', sel.id);
   else if (sel.kind === 'region') p.set('region', sel.id);
+  else if (!isAtlas(sel)) p.set('country', sel.id);
   if (sel.fly && sel.kind === 'place') p.set('fly', `${sel.fly.chapter}.${sel.fly.index}`);
   if (sel.page && sel.kind !== 'country') p.set('page', '');
   if (sel.at && sel.page && sel.kind === 'place') p.set('at', sel.at);
@@ -39,11 +46,12 @@ export function selectionToHash(sel: Selection, view?: View | null): string {
   return text ? `#${text}` : '';
 }
 
-/** The selection a hash names, as written; the caller checks the id exists (an unknown one means Spain). */
+/** The selection a hash names, as written; the caller checks the id exists (an unknown one means Spain; none at all means the atlas cover). */
 export function parseSelection(hash: string): Selection {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
   const place = p.get('place');
   const region = p.get('region');
+  const country = p.get('country');
   const page = p.has('page') || undefined;
   if (place) {
     const sel: Selection = { kind: 'place', id: place };
@@ -56,7 +64,7 @@ export function parseSelection(hash: string): Selection {
     return sel;
   }
   if (region) return page ? { kind: 'region', id: region, page } : { kind: 'region', id: region };
-  return SPAIN;
+  return country ? { kind: 'country', id: country } : ATLAS;
 }
 
 /** The Study route (the code keeps the name quiz): #study, with #study=practise, #study=focus and #study=progress-file for the screens, and
