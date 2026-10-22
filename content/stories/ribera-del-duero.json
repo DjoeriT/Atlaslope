@@ -26,9 +26,9 @@
    "fly": 0,
    "camera": {
     "place": "ribera-del-duero",
-    "pitch": 50,
+    "pitch": 45,
     "bearing": 0,
-    "zoomShift": -0.2
+    "zoomShift": 0.3
    },
    "focus": "ribera-del-duero",
    "markers": [
