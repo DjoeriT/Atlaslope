@@ -8,11 +8,11 @@ import { parseSelection, selectionToHash } from '../../src/url';
 const cam = (lng: number, lat: number, zoom: number, pitch = 0, bearing = 0): Cam => ({ center: [lng, lat], zoom, pitch, bearing });
 
 describe('story fly legs', () => {
-  it('flies a near stop in one leg of 2.5 to 4 s', () => {
+  it('flies a near stop in one leg of 1.5 to 2.5 s', () => {
     const legs = flyLegs(cam(-2.5, 42.3, 8), cam(-2.4, 42.35, 9, 45, 20));
     expect(legs).toHaveLength(1);
-    expect(legs[0].duration).toBeGreaterThanOrEqual(2500);
-    expect(legs[0].duration).toBeLessThanOrEqual(4000);
+    expect(legs[0].duration).toBeGreaterThanOrEqual(1500);
+    expect(legs[0].duration).toBeLessThanOrEqual(2500);
     expect(legs[0]).toMatchObject({ zoom: 9, pitch: 45, bearing: 20 });
   });
 

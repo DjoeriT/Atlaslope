@@ -8,7 +8,7 @@ import type { Place } from '../tree';
 import { DWELL_MS, holdSteps, pickStep, readingLine, spreadRows, stopOf, targetOf, type Cam } from './camera';
 import type { LngLat, Story } from './format';
 import { storyFiles } from './files';
-import { anchorOf, stepOfLink } from './steps';
+import { anchorsOf, stepOfLink } from './steps';
 import { MAP_IDLE_EVENT } from './unfold';
 import { createStoryMap, STORY_EXAGGERATION, stopView, type StoryMap } from './storyMap';
 import { creditParts, locator, locatorBox, type Credited } from './view';
@@ -80,7 +80,7 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
     const restTop = page.querySelector('#taste, #short, #producers')?.getBoundingClientRect().top;
     if (restTop !== undefined && restTop <= line) return rest;
     // The map mode has no page hero, so the cover step (the whole place from afar) has no text: the column opens on beat 1 and its first stop.
-    const tops = holdSteps(spreadRows(story.steps.slice(1).map((st) => page.querySelector(anchorOf(guide, st))?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
+    const tops = holdSteps(spreadRows(anchorsOf(guide, story).slice(1).map((a) => page.querySelector(a)?.getBoundingClientRect().top ?? Infinity)), HOLD_PX);
     return 1 + pickStep(tops, line);
   }, [story, guide, rest]);
 
