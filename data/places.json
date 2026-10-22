@@ -3657,6 +3657,26 @@
    "courseOrder": 7
   },
   {
+   "id": "chianti",
+   "name": "Chianti",
+   "official": "Chianti",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1228",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3416,
+    43.4839
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 23,
+   "courseOrder": 23
+  },
+  {
    "id": "chianti-classico",
    "name": "Chianti Classico",
    "official": "Chianti Classico",
@@ -3673,8 +3693,208 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 22,
+   "courseOrder": 22
+  },
+  {
+   "id": "bolgheri",
+   "name": "Bolgheri",
+   "official": "Bolgheri",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1348",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.5978,
+    43.1791
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 25,
+   "courseOrder": 25
+  },
+  {
+   "id": "brunello-di-montalcino",
+   "name": "Brunello di Montalcino",
+   "official": "Brunello di Montalcino",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1199",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.4879,
+    43.0593
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 29,
+   "courseOrder": 29
+  },
+  {
+   "id": "vino-nobile-di-montepulciano",
+   "name": "Vino Nobile di Montepulciano",
+   "official": "Vino Nobile di Montepulciano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1308",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.8402,
+    43.1126
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 26,
+   "courseOrder": 26
+  },
+  {
+   "id": "carmignano",
+   "name": "Carmignano",
+   "official": "Carmignano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1220",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0222,
+    43.8019
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
    "northSouth": 21,
    "courseOrder": 21
+  },
+  {
+   "id": "elba-aleatico-passito",
+   "name": "Elba Aleatico Passito",
+   "official": "Elba Aleatico Passito",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1237",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.2875,
+    42.7787
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 31,
+   "courseOrder": 31
+  },
+  {
+   "id": "montecucco-sangiovese",
+   "name": "Montecucco Sangiovese",
+   "official": "Montecucco Sangiovese",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1246",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3805,
+    42.8959
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 30,
+   "courseOrder": 30
+  },
+  {
+   "id": "morellino-di-scansano",
+   "name": "Morellino di Scansano",
+   "official": "Morellino di Scansano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1260",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3048,
+    42.7038
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 32,
+   "courseOrder": 32
+  },
+  {
+   "id": "suvereto",
+   "name": "Suvereto",
+   "official": "Suvereto",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1266",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.7055,
+    43.0594
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 28,
+   "courseOrder": 28
+  },
+  {
+   "id": "val-di-cornia-rosso",
+   "name": "Val di Cornia Rosso",
+   "official": "Val di Cornia Rosso",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1262",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.65,
+    43.0625
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 27,
+   "courseOrder": 27
+  },
+  {
+   "id": "vernaccia-di-san-gimignano",
+   "name": "Vernaccia di San Gimignano",
+   "official": "Vernaccia di San Gimignano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1292",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0269,
+    43.4716
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 24,
+   "courseOrder": 24
   }
  ]
 }

@@ -326,39 +326,93 @@
   {
    "id": "bolgheri",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A coastal plain sheltered by hills, cooled by Tyrrhenian sea breezes, with very varied soils and mostly Bordeaux grapes ripening evenly.",
+    "cite": [
+     "bolgheri-disc:p2",
+     "bolgheri-disc:p6",
+     "bolgheri-disc:p7"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Vermentino",
+     "Sauvignon",
+     "Viognier",
+     "Cabernet Sauvignon",
+     "Merlot",
+     "Cabernet Franc",
+     "Syrah",
+     "Sangiovese"
+    ],
+    "othersCite": [
+     "bolgheri-disc:p1",
+     "bolgheri-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry reds (including a Superiore), whites (Vermentino, Sauvignon and blends) and dry rosato.",
+    "cite": [
+     "bolgheri-disc:p1",
+     "bolgheri-disc:p4"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Hills shelter vines from winter cold; sea and rivers temper summer heat. Mean temperature 14.5 °C (min 9.6, max 19.4), rainfall 584 mm, water deficit 205 mm. Huglin index 2444, Winkler 1747.",
+    "cite": [
+     "bolgheri-disc:p6"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Very varied: sandy to sandy-loam-clay and sandy-clay, up to clay or clay-silt; weakly alkaline to alkaline, negligible salinity. Zoning found 27 soil units in 16 landscape units.",
+    "cite": [
+     "bolgheri-disc:p6",
+     "bolgheri-disc:p7"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "A north-south line of hills at 250 to 400 m above sea level; vineyards sit on the foothill belt below.",
+    "cite": [
+     "bolgheri-disc:p6"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Reds: ruby to garnet, intensely vinous, dry; Superiore full, robust, elegant. Whites: straw to golden, delicate, dry and savoury. Rosé: delicate, dry, harmonious.",
+    "cite": [
+     "bolgheri-disc:p4"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Rosso Superiore",
+      "text": "Aged at least 2 years, one in oak; at least 12.5% alcohol."
+     },
+     {
+      "name": "Vigna",
+      "text": "Red labelled with a registered vineyard name; same standards as Superiore."
+     },
+     {
+      "name": "Bolgheri Vermentino",
+      "text": "At least 85% Vermentino; dry, delicate, soft white."
+     },
+     {
+      "name": "Bolgheri Sauvignon",
+      "text": "At least 85% Sauvignon; dry, delicate, lightly aromatic white."
+     }
+    ],
+    "cite": [
+     "bolgheri-disc:p2",
+     "bolgheri-disc:p3",
+     "bolgheri-disc:p4",
+     "bolgheri-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -368,39 +422,84 @@
   {
    "id": "brunello-di-montalcino",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Poor, calcareous, water-short soils on hills of 120 to 650 m hold Sangiovese to modest vigour; with steady wind and sun, its grapes ripen fully and healthy.",
+    "cite": [
+     "brunello-di-montalcino-disc:p5",
+     "brunello-di-montalcino-disc:p7"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "brunello-di-montalcino-disc:p2"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, aged at least 24 months in oak; Riserva is a longer-aged version.",
+    "cite": [
+     "brunello-di-montalcino-disc:p1",
+     "brunello-di-montalcino-disc:p3",
+     "brunello-di-montalcino-disc:p4"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mediterranean but fairly dry, with some continental traits; about 700 mm of rain a year, mostly in spring and autumn. Summers are mild and sunny, with frequent wind and big day-night swings at ripening. Snow is possible above 400 m in winter.",
+    "cite": [
+     "brunello-di-montalcino-disc:p5",
+     "brunello-di-montalcino-disc:p6",
+     "brunello-di-montalcino-disc:p7"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Varied: sandstone (sometimes mixed with limestone), alberese and galestro, sandy to clayey. Soils are poor in organic matter, calcareous and short of water.",
+    "cite": [
+     "brunello-di-montalcino-disc:p5",
+     "brunello-di-montalcino-disc:p7"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "From about 120 m along the rivers up to about 650 m at Poggio Civitella.",
+    "cite": [
+     "brunello-di-montalcino-disc:p5"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Intense ruby turning garnet with age. Intense, lasting aroma of undergrowth, aromatic wood, small fruits and light vanilla. Dry, elegant, harmonious, with lasting finish.",
+    "cite": [
+     "brunello-di-montalcino-disc:p4",
+     "brunello-di-montalcino-disc:p6"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Brunello di Montalcino",
+      "text": "100% Sangiovese; 24 months in oak, 4 in bottle, sold from January of year six."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged 6 months in bottle; sold from January of year seven after harvest."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named single-vineyard wine: max 7 t/ha, 12.5% natural alcohol, no enrichment."
+     }
+    ],
+    "cite": [
+     "brunello-di-montalcino-disc:p2",
+     "brunello-di-montalcino-disc:p3",
+     "brunello-di-montalcino-disc:p4",
+     "brunello-di-montalcino-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -410,39 +509,92 @@
   {
    "id": "vino-nobile-di-montepulciano",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Sandy marine Pliocene hills at 250 to 600 metres, with a Mediterranean climate, dry summers and big day-night swings in autumn, give structured Sangiovese.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p9",
+     "vino-nobile-di-montepulciano-disc:p10",
+     "vino-nobile-di-montepulciano-disc:p12"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Sangiovese (Prugnolo gentile)"
+     }
+    ],
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p1"
+    ],
+    "others": [
+     "Canaiolo nero",
+     "Ciliegiolo nero",
+     "Mammolo nero",
+     "Colorino nero",
+     "Malvasia Bianca Lunga"
+    ],
+    "othersCite": [
+     "vino-nobile-di-montepulciano-disc:p1",
+     "vino-nobile-di-montepulciano-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, in a base version and a Riserva.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p1",
+     "vino-nobile-di-montepulciano-disc:p12"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mediterranean; Winkler index about 1900, and 1750 at the highest altitude. Rain averages 690 mm, up to 740 mm in the south, with dry summers and wet October and November.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p10"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly marine Pliocene sands and clays, sandier at height; some soils on early Pleistocene continental sediments, with conglomerates in the east.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p9",
+     "vino-nobile-di-montepulciano-disc:p10"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards sit between 250 and 600 metres above sea level; the Valdichiana valley floor is excluded.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p2",
+     "vino-nobile-di-montepulciano-disc:p9"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red turning garnet with age. Intense, ethereal nose of sour cherry, violet and spice. Dry, balanced, persistent and very structured, with evident tannins that give good ageing.",
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p7",
+     "vino-nobile-di-montepulciano-disc:p12"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "At least 3 years' ageing including 6 months in bottle; 12.5% natural alcohol."
+     },
+     {
+      "name": "Pieve",
+      "text": "Names one of 12 sub-zones; 85% Sangiovese, vines 15+ years old, 3 years' ageing."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named vineyard on the label, vinified and stored separately."
+     }
+    ],
+    "cite": [
+     "vino-nobile-di-montepulciano-disc:p2",
+     "vino-nobile-di-montepulciano-disc:p4",
+     "vino-nobile-di-montepulciano-disc:p5",
+     "vino-nobile-di-montepulciano-disc:p8"
+    ]
    },
    "producers": {
     "items": [],
@@ -452,39 +604,133 @@
   {
    "id": "carmignano",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Sunny, ventilated Montalbano hillsides that rarely pass 300 m, with free-draining soils and cool-night temperature swings, ripen Sangiovese blended with Cabernet.",
+    "cite": [
+     "carmignano-disc:p4",
+     "carmignano-disc:p5",
+     "carmignano-disc:p6"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Sangiovese"
+     },
+     {
+      "local": "Canaiolo nero"
+     },
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     }
+    ],
+    "cite": [
+     "carmignano-disc:p1"
+    ],
+    "others": [
+     "Trebbiano toscano",
+     "Canaiolo bianco",
+     "Malvasia del Chianti",
+     "Abrusco",
+     "Aleatico",
+     "Alicante",
+     "Alicante Bouchet",
+     "Ancellotta",
+     "Barbera",
+     "Barsaglina",
+     "Bonamico",
+     "Bracciola Nera",
+     "Calabrese",
+     "Caloria",
+     "Canina Nera",
+     "Carignano",
+     "Carmenere",
+     "Cesanese d'Affile",
+     "Ciliegiolo",
+     "Colombana Nera",
+     "Colorino",
+     "Fogliatonda",
+     "Gamay",
+     "Groppello di Santo Stefano",
+     "Groppello Gentile",
+     "Lambrusco Maestri",
+     "Malbech",
+     "Malvasia",
+     "Malvasia Nera di Brindisi",
+     "Malvasia Nera di Lecce",
+     "Mammolo",
+     "Mazzese",
+     "Merlot",
+     "Mondeuse",
+     "Montepulciano",
+     "Petit Verdot",
+     "Pinot Nero"
+    ],
+    "othersCite": [
+     "carmignano-disc:p1",
+     "carmignano-disc:p6",
+     "carmignano-disc:p7"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wine only, made for ageing, with a Riserva tier.",
+    "cite": [
+     "carmignano-disc:p1",
+     "carmignano-disc:p6"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Open to the Florence-Pistoia plain, so sunny and ventilated, with cool Apennine winds easing summer nights. Average rainfall is under 1,000 mm, mostly autumn and winter, but summer usually brings good rain, more than in nearby areas.",
+    "cite": [
+     "carmignano-disc:p4",
+     "carmignano-disc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Free-draining soils from sandstone (sandy loam), clayey schist and marly limestone (alberese); the clay and limestone soils hold water through droughts.",
+    "cite": [
+     "carmignano-disc:p2",
+     "carmignano-disc:p4"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards may not go above 400 m; most slopes rarely pass 300 m. The plain below lies at 40-50 m.",
+    "cite": [
+     "carmignano-disc:p2",
+     "carmignano-disc:p4"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Lively ruby turning garnet with age. Intense, winey nose with violet. Dry, savoury, full, harmonious, soft and velvety.",
+    "cite": [
+     "carmignano-disc:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Carmignano",
+      "text": "At least 50% Sangiovese, 10-20% Cabernet; oak or chestnut at least 8 months."
+     },
+     {
+      "name": "Riserva",
+      "text": "Released from 29 September of the third year after harvest; 12 months in wood."
+     },
+     {
+      "name": "Vigna",
+      "text": "Allowed with a place or traditional name; vinified and stored separately."
+     }
+    ],
+    "cite": [
+     "carmignano-disc:p1",
+     "carmignano-disc:p3",
+     "carmignano-disc:p4"
+    ]
    },
    "producers": {
     "items": [],
@@ -494,39 +740,76 @@
   {
    "id": "elba-aleatico-passito",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A warm, dry Mediterranean island with poor granite, limy and metamorphic soils, where Aleatico grapes are dried before pressing into a sweet red.",
+    "cite": [
+     "elba-aleatico-passito-disc:p4",
+     "elba-aleatico-passito-disc:p5",
+     "elba-aleatico-passito-disc:p2"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Aleatico"
+     }
+    ],
+    "cite": [
+     "elba-aleatico-passito-disc:p1"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "Only a sweet red passito, made from dried Aleatico grapes.",
+    "cite": [
+     "elba-aleatico-passito-disc:p1",
+     "elba-aleatico-passito-disc:p2",
+     "elba-aleatico-passito-disc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mediterranean: mean annual temperature about 17 °C, winters 10 °C, summers 24 °C. Rain falls mostly from late autumn to spring, about 700 mm a year, up to 900 mm on the north slopes of Monte Capanne.",
+    "cite": [
+     "elba-aleatico-passito-disc:p4"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "West: loose, very permeable granite soils. Centre: limy, pebbly, medium-clay soils. East: shallow metamorphic soils with coarse stones and minerals. All are poor in organic matter.",
+    "cite": [
+     "elba-aleatico-passito-disc:p4"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vines grow from sea level up to 450 m. The island's western massif rises above 1,000 m.",
+    "cite": [
+     "elba-aleatico-passito-disc:p4"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Deep ruby red, sometimes with violet tints, turning garnet with age. Intense, characteristic aroma. Sweet, full-bodied and harmonious.",
+    "cite": [
+     "elba-aleatico-passito-disc:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Passito",
+      "text": "Grapes dried at least 10 days, to at least 30% sugar."
+     },
+     {
+      "name": "Vigna",
+      "text": "Allowed if followed by the vineyard name, with that wine made and kept apart."
+     }
+    ],
+    "cite": [
+     "elba-aleatico-passito-disc:p2",
+     "elba-aleatico-passito-disc:p3"
+    ]
    },
    "producers": {
     "items": [],
@@ -536,19 +819,31 @@
   {
    "id": "montecucco-sangiovese",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Sangiovese-led red from vineyards in seven communes of Grosseto province, at least 90% Sangiovese.",
+    "cite": [
+     "montecucco-sangiovese-disc:p2"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "montecucco-sangiovese-disc:p2"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wine only, at least 90% Sangiovese, also with the riserva mention.",
+    "cite": [
+     "montecucco-sangiovese-disc:p2"
+    ]
    },
    "climate": {
     "text": "",
@@ -567,8 +862,15 @@
     "cite": []
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Mention allowed on the name; still at least 90% Sangiovese."
+     }
+    ],
+    "cite": [
+     "montecucco-sangiovese-disc:p2"
+    ]
    },
    "producers": {
     "items": [],
@@ -578,39 +880,81 @@
   {
    "id": "morellino-di-scansano",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Warm, dry hills between the Ombrone and Albegna rivers, with shallow soils, well-exposed slopes and Sangiovese as the main grape.",
+    "cite": [
+     "morellino-di-scansano-disc:p7",
+     "morellino-di-scansano-disc:p9"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "morellino-di-scansano-disc:p1",
+     "morellino-di-scansano-disc:p2"
+    ],
     "others": [],
-    "othersCite": []
+    "othersCite": [
+     "morellino-di-scansano-disc:p1",
+     "morellino-di-scansano-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, in base, Superiore and Riserva versions.",
+    "cite": [
+     "morellino-di-scansano-disc:p1",
+     "morellino-di-scansano-disc:p5"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Hot, dry climate with recurring drought; mean temperature about 15 °C (7 °C winter, 24 °C summer). Rain is about 620 mm a year, mostly November to April.",
+    "cite": [
+     "morellino-di-scansano-disc:p7"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly shallow soils with rock showing in places. West: silt loam or sandy loam from sandstone. East: clay loam to silt loam from limestone and clay-schist.",
+    "cite": [
+     "morellino-di-scansano-disc:p7"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Average about 250 m, with some low areas at 30 to 40 m. Highest point is 566 m.",
+    "cite": [
+     "morellino-di-scansano-disc:p7"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red turning garnet with age. Intense, fine aroma with red forest fruit. Dry, warm and lightly tannic, with modest acidity. Riserva adds wood, spice and longer persistence.",
+    "cite": [
+     "morellino-di-scansano-disc:p5",
+     "morellino-di-scansano-disc:p9"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "At least 90% Sangiovese; aged two years minimum, at least one in wood."
+     },
+     {
+      "name": "Superiore",
+      "text": "Lower yield (8 t/ha) and 13% alcohol minimum; released from 1 January of the second year after harvest."
+     }
+    ],
+    "cite": [
+     "morellino-di-scansano-disc:p1",
+     "morellino-di-scansano-disc:p2",
+     "morellino-di-scansano-disc:p3",
+     "morellino-di-scansano-disc:p4",
+     "morellino-di-scansano-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -620,39 +964,93 @@
   {
    "id": "suvereto",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Warm, sunny hills with a mean temperature around 14 °C, under 650 mm of rain, and good day-night swings that lift aromas.",
+    "cite": [
+     "suvereto-disc:p6"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Sangiovese"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "suvereto-disc:p1",
+     "suvereto-disc:p2"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wines only, as a blend or as a single-grape wine, with a Riserva tier.",
+    "cite": [
+     "suvereto-disc:p1",
+     "suvereto-disc:p2",
+     "suvereto-disc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mild springs, ripening summers, rare frost or drought. Mean temperature about 14 °C, rain under 650 mm a year, mostly in March-April and October-November.",
+    "cite": [
+     "suvereto-disc:p6"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly deep, fresh alluvial soils, sandy-silty or silty-clayey, with limestone in places; subalkaline, low in organic matter, sometimes very rich in potassium and calcium.",
+    "cite": [
+     "suvereto-disc:p5",
+     "suvereto-disc:p6"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Only hillside vineyards qualify; plains of alluvial soil are excluded. No heights are given.",
+    "cite": [
+     "suvereto-disc:p2"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red, intense and deep, turning garnet with age. Intense, elegant aroma. Warm, dry, fairly tannic and spicy, with oak notes in aged wines; modest acidity.",
+    "cite": [
+     "suvereto-disc:p7",
+     "suvereto-disc:p4"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "At least 24 months ageing: 12 in wood, 6 in bottle; 13% natural alcohol."
+     },
+     {
+      "name": "Single-grape wines",
+      "text": "Sangiovese, Merlot, Cabernet Sauvignon, Cabernet Franc or Syrah, each 100%."
+     },
+     {
+      "name": "Vigna",
+      "text": "Label mention followed by a place name; wine made and kept separately."
+     }
+    ],
+    "cite": [
+     "suvereto-disc:p2",
+     "suvereto-disc:p3",
+     "suvereto-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -662,39 +1060,121 @@
   {
    "id": "val-di-cornia-rosso",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Mild, sunny Tuscan coast with under 650 mm of rain, on deep alluvial and limestone soils, giving even ripening of Sangiovese, Cabernet and Merlot.",
+    "cite": [
+     "val-di-cornia-rosso-disc:p1",
+     "val-di-cornia-rosso-disc:p5",
+     "val-di-cornia-rosso-disc:p6"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Sangiovese"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Merlot"
+     }
+    ],
+    "cite": [
+     "val-di-cornia-rosso-disc:p1"
+    ],
+    "others": [
+     "Abrusco",
+     "Alicante Bouschet",
+     "Alicante",
+     "Ancellotta",
+     "Barbera",
+     "Barsaglina",
+     "Bonamico",
+     "Bracciola Nera",
+     "Cabernet Franc",
+     "Calabrese",
+     "Caloria",
+     "Canaiolo Nero",
+     "Canina Nera",
+     "Carignano",
+     "Carmenere",
+     "Cesanese d'Affile",
+     "Ciliegiolo",
+     "Colombana Nera",
+     "Colorino",
+     "Foglia Tonda",
+     "Gamay",
+     "Groppello di Santo Stefano",
+     "Groppello Gentile",
+     "Lambrusco Maestri",
+     "Malbech",
+     "Malvasia",
+     "Malvasia Nera di Brindisi",
+     "Malvasia Nera di Lecce",
+     "Mammolo",
+     "Mazzese",
+     "Mondeuse",
+     "Montepulciano",
+     "Petit Verdot",
+     "Pinot Nero",
+     "Pollera Nera",
+     "Prugnolo Gentile",
+     "Pugnitello"
+    ],
+    "othersCite": [
+     "val-di-cornia-rosso-disc:p1",
+     "val-di-cornia-rosso-disc:p7"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine, made as a base wine and as a riserva.",
+    "cite": [
+     "val-di-cornia-rosso-disc:p1",
+     "val-di-cornia-rosso-disc:p4"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mild springs, good summer sun and ripening; frost and drought are rare. Mean temperature is about 14 °C and rainfall stays under 650 mm a year, mostly in March-April and October-November. Inland areas have a fair day-night range.",
+    "cite": [
+     "val-di-cornia-rosso-disc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Cavernous and black limestone, with intrusive magmatic rock. Much of the zone is deep, fresh alluvial soil, light sandy-silty or heavy silty-clay; medium texture, mostly slightly alkaline.",
+    "cite": [
+     "val-di-cornia-rosso-disc:p4",
+     "val-di-cornia-rosso-disc:p5"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Intense ruby turning garnet, with red forest fruit and jam in older wines. Dry, warm, velvety and fairly tannic, with spice notes and a hint of wood in aged wines. Modest acidity.",
+    "cite": [
+     "val-di-cornia-rosso-disc:p4",
+     "val-di-cornia-rosso-disc:p6"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Released from 1 January of the third year; at least 18 months wood, 6 bottle."
+     },
+     {
+      "name": "Vigna",
+      "text": "Label may add a vineyard name if that wine is made and kept separately."
+     }
+    ],
+    "cite": [
+     "val-di-cornia-rosso-disc:p3",
+     "val-di-cornia-rosso-disc:p4"
+    ]
    },
    "producers": {
     "items": [],
@@ -704,39 +1184,82 @@
   {
    "id": "vernaccia-di-san-gimignano",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Pliocene yellow sands and clays on hills up to 500 m, with a sub-Mediterranean climate, dry summers and good ventilation, give sapid, fresh, ageworthy whites.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p5",
+     "vernaccia-di-san-gimignano-disc:p6"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Vernaccia di San Gimignano"
+     }
+    ],
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p1"
+    ],
+    "others": [
+     "Other non-aromatic white grapes suited to Tuscany, up to 15%",
+     "Sauvignon blanc and Riesling, alone or together at most 10%"
+    ],
+    "othersCite": [
+     "vernaccia-di-san-gimignano-disc:p1"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry still white wine, also made as a Riserva.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p1",
+     "vernaccia-di-san-gimignano-disc:p7"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Sub-Mediterranean: fairly dry summers, fairly cold winters, rain in late autumn and late winter. About 700 mm of rain a year over 83 days. Good ventilation, rare fog.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p6"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Pliocene marine deposits: yellow sands (tufo) and yellow and grey clays, often layered over compact clay. Sandy, with skeleton and clayey schists; they bring sapidity, freshness and ageing ability.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p2",
+     "vernaccia-di-san-gimignano-disc:p5",
+     "vernaccia-di-san-gimignano-disc:p6"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards lie between 70 and 500 m above sea level; the rules allow no higher than 500 m.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p2",
+     "vernaccia-di-san-gimignano-disc:p6"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Straw yellow with golden hints. Delicate, fine, fruity aromas; mineral notes can follow with ageing. Dry, harmonious, sapid, sometimes with an almond aftertaste.",
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p4"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "At least 11 months ageing plus three months in bottle; minimum 12.5% alcohol."
+     },
+     {
+      "name": "Vigna",
+      "text": "Allowed with the vineyard place name; wine kept and vinified separately."
+     }
+    ],
+    "cite": [
+     "vernaccia-di-san-gimignano-disc:p3",
+     "vernaccia-di-san-gimignano-disc:p4",
+     "vernaccia-di-san-gimignano-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
