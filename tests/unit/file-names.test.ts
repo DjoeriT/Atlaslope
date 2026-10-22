@@ -17,4 +17,11 @@ describe('file names', () => {
     }
     expect(clashes).toEqual([]);
   });
+
+  // A symlink named data/raw was committed with Portugal batch 1 (#214); checking out main then swapped the owner's git-ignored raw
+  // downloads (INAO, eAmbrosia, CAOP, IGN) for that link (22 Oct 2026). Nothing under data/raw may be tracked.
+  it('never track data/raw', () => {
+    const files = execSync('git ls-files data/raw', { encoding: 'utf8' }).split('\n').filter(Boolean);
+    expect(files).toEqual([]);
+  });
 });

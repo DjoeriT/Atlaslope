@@ -1,8 +1,8 @@
 import { withMotion } from '../app/motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { measuresOf, sheetOf } from '../facts';
+import { guideOf, loadGuide, measuresOf, sheetOf } from '../facts';
 import type { QuizView } from '../map/quiz';
-import { afterAnswer, makeQuestion, revealFact as grapeOf, seededRandom, type Answer, type Question, type Round } from '../quiz';
+import { afterAnswer, makeQuestion, revealFact as grapeOf, revealWhy, seededRandom, type Answer, type Question, type Round } from '../quiz';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 import { progressOf, viewFor, withoutReask, type Outcome, type Outcomes } from './helpers';
@@ -119,6 +119,12 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
     }));
   }, [index, tentative, !!outcome, round.items.length]);
 
+  // Guides load one at a time (decision #38): fetch this step's guide so a miss can show its why line; the re-render picks it up.
+  const [, setGuidesIn] = useState(0);
+  useEffect(() => {
+    if (place && !guideOf(place.id)) loadGuide(place.id).then((g) => { if (g) setGuidesIn((n) => n + 1); }, () => undefined);
+  }, [place?.id]);
+
   if (!item || !place) return null;
   const name = (id: string) => tree.getPlace(id)?.name ?? id;
   const progress = progressOf(round, outcomes, index);
@@ -126,6 +132,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
   const introNumber = round.items.slice(0, index + 1).filter((i) => i.kind === 'intro').length;
   const sheet = sheetOf(place.id);
   const grape = grapeOf(place.id, { sheetOf, measuresOf });
+  const why = revealWhy(place.id, guideOf);
 
   const exit = () => onExit({ kind, round, outcomes, early: true });
   const top = (label: string) => (
@@ -176,7 +183,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
     const entry: Answer = { kind: 'answer', place: item.place, memory: item.memory, type: item.type, right, at: quiz.now().toISOString(), seconds: seconds() };
     const log = quiz.record(entry);
     setOutcomes({ ...outcomes, [index]: { place: item.place, memory: item.memory, type: item.type, reask: !!item.reask, right, slip: false, skipped: picked === null, ...(picked !== null ? { picked } : {}) } });
-    setRound(afterAnswer(round, index, right, log));
+    setRound(afterAnswer(round, index, right, log, tree));
   }
 
   function slip() {
@@ -189,7 +196,7 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
     if (!outcome || item?.kind !== 'question') return;
     const log = quiz.unslip();
     setOutcomes({ ...outcomes, [index]: { ...outcome, slip: false } });
-    setRound(afterAnswer(round, index, false, log));
+    setRound(afterAnswer(round, index, false, log, tree));
   }
 
   const counts = outcome ? outcome.right || outcome.slip : false;
@@ -234,9 +241,9 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
               <dl className="facts reveal">
                 <dt>{place.name}</dt><dd>{[place.community, place.kind].filter(Boolean).join(' · ')}</dd>
                 {grape && <><dt>{t.mainGrape}</dt><dd>{grape}</dd></>}
-                {!counts && sheet && <><dt>{t.why}</dt><dd>{sheet.why.text}</dd></>}
+                {why ? <><dt>{t.whyFromGuide}</dt><dd className="why">{why}</dd></> : !counts && sheet && <><dt>{t.why}</dt><dd>{sheet.why.text}</dd></>}
               </dl>
-              {!counts && <button className="linkish-open" onClick={() => onOpenPlace(place.id)}>{t.openCard(place.name)}</button>}
+              {!counts && <button className="linkish-open" onClick={() => onOpenPlace(place.id)}>{t.readGuide(place.name)}</button>}
               {outcome.right && auto && (
                 <div className="autonext"><i /><span>{t.nextSoon}</span> <button className="linkbtn" onClick={() => setAuto(false)}>{t.stay}</button></div>
               )}

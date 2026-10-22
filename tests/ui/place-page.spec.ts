@@ -84,9 +84,9 @@ test('the jump bar lists only the sections that exist and moves focus to the sec
   await expect(page.locator('#terroir-soils-h')).toBeFocused();
   await expect(page).toHaveURL(/#place=rioja&page/);
 
-  // A place outside Study has its guide and a label section (Cava, release 43), but no producers or zones.
+  // Cava has its guide and a label section (release 43), but no producers or zones; in Learn since 21 Oct 2026, so it has alike cards too.
   await open(page, '#place=cava&page');
-  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Read the label', 'Sources']);
+  await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'If you like this, try', 'Read the label', 'Sources']);
 });
 
 for (const [id, n] of [['yecla', 1], ['jumilla', 2], ['cebreros', 3]] as const) {

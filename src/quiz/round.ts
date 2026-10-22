@@ -1,6 +1,6 @@
 // Rounds for the Study and Review doors: up to 20 questions, due memories first, new places shown in a batch and asked later in the round.
 import type { Place, Tree } from '../tree';
-import { questionType, replay } from './memory';
+import { findsIt, questionType, replay } from './memory';
 import { askable, dueNow, inCourseOrder, REVIEW_KINDS, studyPlan, type PlanOptions } from './plan';
 import { seededRandom, shuffled } from './questions';
 import type { LogEntry, MemoryName, MemoryRef, QuizState, Round, RoundItem } from './types';
@@ -37,7 +37,7 @@ export function roundKeys(round: Round): string[] {
 }
 
 /** Picks what a round asks, in priority order: due memories, then new places, then any other memories; then `arrange` orders it. [A: priority] */
-function fill(state: QuizState, due: MemoryRef[], fresh: string[], rest: MemoryRef[], opts: RoundOptions): Round {
+function fill(tree: Tree, state: QuizState, due: MemoryRef[], fresh: string[], rest: MemoryRef[], opts: RoundOptions): Round {
   const size = opts.size ?? ROUND_SIZE;
   const asked = new Set(opts.asked);
   const left = (r: MemoryRef) => !asked.has(memoryKey(r.place, r.memory));
@@ -48,7 +48,7 @@ function fill(state: QuizState, due: MemoryRef[], fresh: string[], rest: MemoryR
   ];
   const picked = queue.slice(0, size);
   const reviews: RoundItem[] = picked.flatMap((q) =>
-    'ref' in q ? [{ kind: 'question' as const, place: q.ref.place, memory: q.ref.memory, type: questionType(state.places[q.ref.place], q.ref.memory)! }] : []);
+    'ref' in q ? [{ kind: 'question' as const, place: q.ref.place, memory: q.ref.memory, type: questionType(state.places[q.ref.place], q.ref.memory, findsIt(tree.getPlace(q.ref.place)))! }] : []);
   const news = picked.flatMap((q) => ('fresh' in q ? [q.fresh] : []));
   return { items: arrange(reviews, news, seededRandom(opts.seed ?? 1)), more: queue.length > size };
 }
@@ -129,7 +129,7 @@ function spread(plan: RoundItem[], fresh: Set<string>): RoundItem[] {
 export function studyRound(tree: Tree, log: readonly LogEntry[], now: Date, opts: RoundOptions & PlanOptions = {}): Round {
   const state = replay(log);
   const plan = studyPlan(tree, state, now, opts);
-  return fill(state, plan.due, plan.intake, [], opts);
+  return fill(tree, state, plan.due, plan.intake, [], opts);
 }
 
 /** A Review round over a set of place ids (places with `quiz: "none"` are dropped): due first, then new places with their intro, then the set's other memories, soonest due first. A right answer before due moves nothing (see applyAnswer). */
@@ -141,16 +141,16 @@ export function reviewRound(tree: Tree, set: readonly string[], log: readonly Lo
   const dueKeys = new Set(due.map((r) => memoryKey(r.place, r.memory)));
   const rest = askable(tree, ids, state).filter((r) => !dueKeys.has(memoryKey(r.place, r.memory)));
   const fresh = inCourseOrder(tree, places).filter((p) => !state.places[p.id]).map((p) => p.id);
-  return fill(state, due, fresh, rest, opts);
+  return fill(tree, state, due, fresh, rest, opts);
 }
 
-/** After an answer to item `index`: a miss is asked once more at the end of the round, typed for the memory as it is now (`log` ends with the miss), unless that would be the very next screen about its place (a miss on the last question waits for its next review). A slip counts as right: pass `right: true`. */
-export function afterAnswer(round: Round, index: number, right: boolean, log: readonly LogEntry[]): Round {
+/** After an answer to item `index`: a miss is asked once more at the end of the round, typed for the memory as it is now (`log` ends with the miss), unless that would be the very next screen about its place (a miss on the last question waits for its next review). A slip counts as right: pass `right: true`. Pass `tree` so a place without "find it" is re-asked as what is this. */
+export function afterAnswer(round: Round, index: number, right: boolean, log: readonly LogEntry[], tree?: Tree): Round {
   const item = round.items[index];
   if (right || !item || item.kind !== 'question' || item.reask) return round;
   let last = index;
   round.items.forEach((i, at) => { if (at > index && i.place === item.place) last = at; });
   if (round.items.length - last < 2) return round;
-  const type = questionType(replay(log).places[item.place], item.memory) ?? item.type;
+  const type = questionType(replay(log).places[item.place], item.memory, findsIt(tree?.getPlace(item.place))) ?? item.type;
   return { ...round, items: [...round.items, { ...item, type, reask: true }] };
 }

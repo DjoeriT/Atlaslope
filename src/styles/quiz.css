@@ -27,7 +27,9 @@
 @media (prefers-reduced-motion:reduce){.autonext i::after{animation-duration:2.5s}}
 .undo{font-size:.9rem;background:var(--fill);border-radius:var(--rad);padding:.3rem .8rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;margin:.6rem 0 0}
 .linkbtn{appearance:none;border:0;background:transparent;font:inherit;color:var(--accent);font-weight:600;cursor:pointer;min-height:2.75rem;padding:0 .4rem;text-decoration:underline}
-.linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.linkish-open{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--accent);font-weight:500;background:none;border:0;padding:0;font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:.2em}
+/* The miss link reads and looks like a link (QA sweep S5). */
+.linkish-open:hover{text-decoration-thickness:2px}
 .score{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:.3rem 0 .2rem}
 .score small{font-size:1.6rem;color:var(--ink3)}
 .row{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--ink2);margin-top:.5rem}
@@ -87,3 +89,32 @@ h3{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--in
 .back-quiz{position:absolute;left:27rem;top:1rem;z-index:6;min-height:2.75rem;padding:0 1rem;border-radius:var(--rad);font:inherit;font-weight:600;color:var(--ink);cursor:pointer}
 @media (max-width:68.75em){.back-quiz{left:24rem}}
 @media (max-width:51.25em) and (orientation:portrait){.back-quiz{left:1rem;top:auto;bottom:calc(52% + .6rem)}}
+/* The Learn start card, mock round 2 option D (Review/mock-study-start, 21 Oct 2026): "Learning for", the scope line, places as square
+   photos with names, a sticky start button on a phone, the credit line last. 12 px minimum text. */
+.learn h1{font-family:var(--serif);font-weight:500;font-size:2rem;line-height:1.1;letter-spacing:-.01em;margin:0 0 .5rem}
+.learn .body > p{color:var(--ink2)}
+.learn .sub{font-size:.95rem;margin:0}
+.learn .big{font-size:1.15rem;color:var(--ink);margin:.25rem 0}
+.for{position:relative;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin:1rem 0 .5rem}
+.learn .body > .for:first-child{margin-top:0}
+.for-label{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink);font-weight:600}
+.for-btn{display:inline-flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:0 .85rem;background:var(--paper);color:var(--ink);border:1px solid var(--band);border-radius:6px;font:600 .95rem var(--sans);cursor:pointer}
+.for-btn .caret{font-size:.8rem;color:var(--foil-ink)}
+.course-menu{position:absolute;left:0;right:0;top:100%;z-index:5;list-style:none;margin:.25rem 0 0;padding:.35rem;border:1px solid var(--line2);border-radius:6px;background:var(--paper);box-shadow:0 8px 24px rgba(20,20,20,.12)}
+.course-menu button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1rem;min-height:2.75rem;padding:0 .6rem;border:0;border-radius:6px;background:transparent;font:500 .95rem var(--sans);color:var(--ink);text-align:left;cursor:pointer}
+.course-menu button:hover{background:var(--paper2)}
+.course-menu button[aria-pressed="true"]{background:var(--paper2);box-shadow:inset 3px 0 0 var(--foil)}
+.course-menu small{font-size:.8rem;color:var(--ink3);white-space:nowrap}
+.learn .scope{font-size:.9rem;margin:0 0 1.25rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.learn-photos{list-style:none;margin:.5rem 0 1rem;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem}
+.learn-photos li{min-width:0}
+.learn-photos img,.learn-photos .nophoto{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;background:var(--fill)}
+.learn-photos span:not(.nophoto){display:block;font-size:.75rem;line-height:1.3;margin-top:.3rem;color:var(--ink);hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}
+.learn .stick{margin:1rem 0 .25rem}
+.learn .credit{font-size:.75rem;line-height:1.4;color:var(--ink3);margin:1.5rem 0 0;padding-top:.75rem;border-top:1px solid var(--line)}
+.learn .credit a{color:inherit}
+/* On a phone the start button stays at the bottom of the sheet while the rest scrolls (design check, should fix 1). */
+@media (max-width:51.25em){
+  .learn .stick{position:sticky;bottom:0;z-index:2;margin:.5rem -.25rem 0;padding:.5rem .25rem calc(.25rem + env(safe-area-inset-bottom));background:linear-gradient(rgba(255,255,255,0),var(--paper) 1rem)}
+  .learn h1{font-size:1.75rem}
+}

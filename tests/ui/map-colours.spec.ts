@@ -45,7 +45,7 @@ test('the legend is not shown in the quiz', async ({ page }) => {
   await expect(page.locator('.legend')).toHaveCount(0);
 });
 
-test('Spain and region cards show photo tiles with headlines, main grapes on the region card, and no Study counts even with progress', async ({ page }) => {
+test('Spain and region cards show photo tiles with headlines, main grapes on the region card, and no Learn counts even with progress', async ({ page }) => {
   await open(page, '#country=spain', SEED);
   const card = page.locator('.card');
   // The Atlas shows no Study items (owner, 18 Oct 2026): the Spain card, not the Today card, and no due counts.

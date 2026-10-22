@@ -7,7 +7,7 @@ Detail: `l3-table.md` (WSET names, eAmbrosia), `licences.md`, `specs-outlines.md
 - WSET L3 names 32 German terms [V]: 7 Anbaugebiete (no Ahr, Mittelrhein, Württemberg, Hessische Bergstraße, Saale-Unstrut, Sachsen),
   9 villages, law terms, grapes. No Bereich or Einzellage. #72 (all 13) stands: the other 6 are text-light places.
 - eAmbrosia: 19 German wine PDOs [V]; the 6 beyond the 13 are single-vineyard PDOs (Bürgstadter Berg, Monzinger Niederberg,
-  Uhlen Blaufüsser Lay, Uhlen Laubach, Uhlen Roth Lay, Würzburger Stein-Berg). Plan: zones inside their Anbaugebiet (#74) [A, owner to confirm].
+  Uhlen Blaufüsser Lay, Uhlen Laubach, Uhlen Roth Lay, Würzburger Stein-Berg). Zones inside their Anbaugebiet (#91) [O].
 - Mosel: spec BLE AM04 (approved 5 Dec 2025, OJ C/2026/1628), 12 pp, delimited by 199 Gemarkungen [V]. Outline: LWK RLP WFS
   (geodaten.lwk-rlp.de, dl-de/by-2-0) layer `gu`, 118.8 km2 dissolved, 48 invalid polygons to repair; `weinlagen_recht` 462 Einzellagen [V].
   Raw 12.7 MB; simplified 40 m = 610 KB and -8% area: too heavy and too lossy, needs a per-place file or a better simplify.
@@ -20,7 +20,6 @@ Detail: `l3-table.md` (WSET names, eAmbrosia), `licences.md`, `specs-outlines.md
 ## Open
 - Raw downloads (93 MB, 54 files) copied to `~/Developer/Atlaslope-raw/countries/de/`, the out-of-repo store from #229;
   add them to its re-download manifest in the pilot, once #229 is merged.
-- Owner: confirm the 6 single-vineyard PDOs as zones (#74), not places.
 - Pilot: Rheingau outline source; Mosel outline size; Hessen and BKG hosts from a browser.
 
 ## Mosel outline: size options (LeadBot, 22 Oct 2026, measured on the LWK `gu` layer, EPSG:3035) [V]
