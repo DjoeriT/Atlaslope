@@ -164,7 +164,7 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
       const none = guideRows({ publicDir: mkdtempSync(join(tmpdir(), 'public-')) });
       expect(none.rows.every((g) => g.photo === null)).toBe(true);
       const html = fillCountryPage(countryHtml, none, 'spain');
-      expect(count(html, /<span class="sqbox soon"><i>Photos soon<\/i><\/span>/g)).toBe(none.rows.filter((g) => g.country === 'spain').length);
+      expect(count(html, /<span class="sqbox nophoto"><i>Photos soon<\/i><\/span>/g)).toBe(none.rows.filter((g) => g.country === 'spain').length);
       for (const g of none.rows.filter((r) => r.country === 'spain')) expect(html).toContain(link(g.id));
     });
     it('do not fail the crop check: only photos that are shown need a crop', () => {

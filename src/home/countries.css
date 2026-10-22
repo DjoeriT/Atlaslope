@@ -2,8 +2,8 @@
    mocks/countries-structure.html). Squares reuse .sqbox from guides.css where the page loads it; the rules here stand alone. */
 .sqbox{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;border-radius:6px;background:var(--bg2)}
 .sqbox img{display:block;width:100%;height:100%;object-fit:cover}
-.sqbox.soon{display:grid;place-items:center;text-align:center;background:#F5EFE0;border:1px solid #E6DAB8}
-.sqbox.soon i{font:normal .75rem/1.35 var(--sans);color:var(--foil-ink)}
+.sqbox.nophoto{display:grid;place-items:center;text-align:center;background:#F5EFE0;border:1px solid #E6DAB8} /* not .soon: home.css gives .soon a margin and padding (PR #214 shots, 22 Oct 2026) */
+.sqbox.nophoto i{font:normal .75rem/1.35 var(--sans);color:var(--foil-ink)}
 
 /* one lead square and four small ones */
 .mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}

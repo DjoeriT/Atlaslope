@@ -39,7 +39,7 @@ export const BAND_FEATURED = ['rioja', 'priorat', 'ribeira-sacra', 'txakoli-geta
 /** A guide's tile photo is `<id>-1` unless picked here: Rioja's -1 has a grey sky, -2 (Laguardia, autumn vines) is the stronger one (22 Oct 2026). */
 export const PHOTO_PICK: Record<string, string> = { rioja: 'rioja-2' };
 
-const KIND: Record<string, string> = { DO: 'DO', DOCa: 'DOCa', VP: 'Vino de Pago', VC: 'Vino de Calidad' };
+const KIND: Record<string, string> = { DO: 'DO', DOCa: 'DOCa', VP: 'Vino de Pago', VC: 'Vino de Calidad', DOC: 'DOC', VR: 'Vinho Regional' };
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const json = <T>(f: string) => JSON.parse(readFileSync(f, 'utf8')) as T;
 
@@ -122,7 +122,7 @@ export const href = (g: GuideRow) => (COUNTRIES[g.country]?.paths ? `../${COUNTR
 
 /** The square photo; a map tour carries the champagne "Map tour" chip on it (the owner's one exception to "no text on photos"). */
 const tile = (g: GuideRow, photos: Record<string, PhotoCredit>, sizes: string): string =>
-  !g.photo ? '<span class="sqbox soon"><i>Photos soon</i></span>' : `<span class="sqbox">${photoImg(g.photo, photos, sizes, false, true)}${g.tour ? `<span class="chip">${GLYPH}<span>Map tour</span></span>` : ''}</span>`;
+  !g.photo ? '<span class="sqbox nophoto"><i>Photos soon</i></span>' : `<span class="sqbox">${photoImg(g.photo, photos, sizes, false, true)}${g.tour ? `<span class="chip">${GLYPH}<span>Map tour</span></span>` : ''}</span>`;
 
 /** The tour guides in band order: the four featured first, then the rest in list order. Only guides with a photo get a tile. */
 export const bandTours = (list: GuideList, country?: string): { featured: GuideRow[]; rest: GuideRow[]; count: number } => {

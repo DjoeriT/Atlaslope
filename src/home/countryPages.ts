@@ -25,13 +25,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     study: { note: 'Test yourself on the regions and places of Spain.', link: true },
   },
   portugal: {
-    intro: 'From the green north to the Algarve.',
+    intro: 'From the green north to the Algarve and Madeira.',
     cardPhotos: ['douro-2', 'vinho-verde-3', 'douro-1', 'vinho-verde-1', 'douro-4'],
     blocks: [
       { title: 'Douro', keys: ['douro-2', 'douro-1', 'douro-6', 'douro-3', 'douro-4'] },
       { title: 'Vinho Verde', keys: ['vinho-verde-3', 'vinho-verde-1', 'vinho-verde-5', 'vinho-verde-8', 'vinho-verde-7'] },
     ],
-    study: { note: 'Not yet for Portugal.<br />Study follows the WSET course.', link: false },
+    study: { note: 'Not yet for Portugal.', link: false },
   },
 };
 
