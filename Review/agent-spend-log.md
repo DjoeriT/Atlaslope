@@ -69,3 +69,10 @@ One row per agent run. "Actual" comes from session usage, not the agent's own es
 | 2026-10-21 | BuilderBot, Sonnet | Map tour v4 mock, whole Rioja guide in the v3 journey (`Review/mock-story-guide-v4/`) | 250k | 160,401 tokens, 98 tool uses, 18 min | Done; closed view then rejected by the owner |
 | 2026-10-21 | BuilderBot, Sonnet (resume) | v4 closed view as the live guide page plus stop cards | 120k | 244,075 tokens, 62 tool uses, 16 min | Done but 2x budget (past the 1.5x stop): full-page measuring in helper turns; next time a script |
 | 2026-10-21 | ReviewBot, Sonnet | v4 mock design review (`Review/mock-story-guide-v4/review-design.md`) | 50k | 55,406 tokens, 27 tool uses, 3 min | Fix first: 0 blockers, 3 major (2 fixed, 1 owner choice), 5 minor |
+| 2026-10-22 | ReviewBot, Sonnet | ReviewBot on PR #205 (Portugal photo round) | 60k | ~29,500 tokens | Reported; merged on green |
+| 2026-10-22 | BuilderBot, Sonnet | Lazy-load guides to fit 2 MB (PR #214) | 150k | not recorded | Blocked by design: lazy chunks raise the whole-dist total; led to the owner's "count the first load" (decision #38) |
+| 2026-10-22 | general-purpose, Sonnet | UI specs for on-demand guides (9 specs) | 40k | 67,313 tokens, 5 tool uses, 1.5 min | 93/93 passed |
+| 2026-10-22 | general-purpose, Sonnet x3 | Portugal photo picks round 1 (Commons sheets, 26 places) | 3 x 80k | 75,767 + 76,693 + 81,570 tokens | 7 places shipped (30 photos); 19 thin or empty |
+| 2026-10-22 | BuilderBot, Sonnet | Raw downloads outside the repo, symlink check, re-download script (PR #229) | 250k | 70,651 tokens, 48 tool uses, 5 min | Done, but its worktree carried stale Italy files (build script, data, SOURCES rows): LeadBot restored them from main before the PR |
+| 2026-10-23 | general-purpose, Sonnet x3 | Portugal photo picks round 2 (Commons pass 2 and Openverse sheets) | 3 x 80k | 81,639 + 77,485 + 96,892 tokens | Flickr tiles were blank (403 on a "Bot" User-Agent), so round 3 |
+| 2026-10-23 | general-purpose, Sonnet | Portugal photo picks round 3 (Openverse sheets, fixed thumbnails) | 100k | 100,689 tokens, 20 tool uses | 19 places merged; LeadBot cut 6 weak picks |
