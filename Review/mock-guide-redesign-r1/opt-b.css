@@ -57,3 +57,4 @@
   .o-b .pg-sources{columns:1}.pg-sources li{grid-template-columns:1fr}.pg-short li{grid-template-columns:1fr}
   .o-b .g-jump{padding:0 1rem}.g-band .topnav{gap:1rem}.g-band .topnav a{font-size:.85rem}.g-band .where-r{display:none}
 }
+.b-short .b-grid,.b-prod .b-grid{grid-template-columns:minmax(0,52rem)}

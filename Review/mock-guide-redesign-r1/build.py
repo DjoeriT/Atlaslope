@@ -725,7 +725,7 @@ def opt_c():
         x = b[k]
         return (f'<section id="{x["id"]}" class="c-beat" aria-labelledby="h-{k}">{open_html}'
                 f'<div class="c-bh"><span class="n" aria-hidden="true">{x["n"]}</span><div><span class="k">{x["kick"]}</span><h3 id="h-{k}"><span class="sr-only">{x["kick"]}: </span>{esc(x["title"])}</h3></div></div>'
-                f'<div class="c-prose">{paras(x)}</div><div class="c-meta">{flies(x)}<p class="src-line">{x["cite"]}</p></div>{after_prose}<div class="c-strip">{strip}</div></section>')
+                f'<div class="c-prose">{paras(x)}</div><div class="c-meta">{flies(x)}<p class="src-line">{x["cite"]}</p></div>{after_prose}<div class="c-strip g-fx">{strip}</div></section>')
     def photos(*stops):
         return f'<div class="c-photos n{len(stops)}">{"".join(stopfig(s, "c-fig", "g-ph") for s in stops)}</div>'
     z_open = '<div class="c-zph">' + ''.join(f'<div data-view="{z["zid"]}">{ph(z["pic"], "g-ph")}</div>' for z in ZONES) + '</div>'

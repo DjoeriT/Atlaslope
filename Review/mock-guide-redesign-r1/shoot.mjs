@@ -23,7 +23,7 @@ for (const k of which) {
       ids: ['c-place', 'c-weather', 'c-ground', 'c-rules', 'c-taste', 'c-short', 'c-producers', 'c-alike', 'c-sources'].filter((i) => !document.getElementById(i)) }));
     report[`${k}-${w}`] = info;
     const step = h - 60;
-    const n = Math.min(16, Math.ceil(info.H / step));
+    const n = Math.min(20, Math.ceil(info.H / step));
     for (let i = 0; i < n; i++) {
       await p.evaluate((y) => scrollTo(0, y), i * step);
       await p.waitForTimeout(250);
