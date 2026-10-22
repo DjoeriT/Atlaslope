@@ -22,10 +22,11 @@ Follows `2026-10-21-guide-redesign.md`. Mock only, no app code. Branch `claude/g
   `2026-10-21-tour-v3-restore.md`. "Wait with building" (21 Oct) still holds: the build starts on his word.
 
 ## Open
-1. Questions for the owner before the build (recommended first):
-   a. Places without a map tour: the same C3 page with no map button (rec.), or a plain "Open the map" button.
-   b. Photos: keep them at most 528 px wide (rec., no new data), or add larger sizes from the photos' source pages.
-   c. Stops without their own photo (Rioja: intro, climate, barrel; Priorat: check): candidates shown to him first.
+1. Owner answered (22 Oct 2026): "no map button where there is no tour, photos stay at most 528 px."
+   Stops without their own photo: Rioja has none left in C3 [R, v4 README: hero, three zone photos and Haro stand in for the old
+   intro, climate and barrel steps]. Priorat's weather and rules/wines beats have no photo [V, v4 build.py]. Commons shortlist
+   (six, licences checked, credits in `Review/photo-candidates-priorat/shortlist.json`, sheet `shortlist.png`) sent to him; his
+   pick goes into data/photos.json with a checked crop in the build.
 2. Merge this branch as a records/mock PR (handoff, both mock folders) before the build starts.
 3. Shots are heavy (r1 44 MB, r2 38 MB, already pushed, so they stay in history): next rounds commit only sheets and key frames.
 4. Unchanged from earlier: satellite fix #182, the agenda items.
