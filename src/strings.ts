@@ -78,7 +78,7 @@ export const strings = {
     countryCount: (places: number, regions: number) => `${places} places · ${regions} regions`,
     openCountry: (name: string) => `Open ${name}`,
     totals: (places: number, regions: number, tours: number) => `${places} wine places · ${regions} regions · ${tours} map tours`,
-    imagery: 'Imagery: Esri, Vantor · Spain: PNOA © IGN',
+    imagery: 'Imagery: Esri, Vantor · Spain: PNOA © IGN · France: BD ORTHO © IGN',
   },
   cards: {
     whereThisSits: 'Where this sits',
