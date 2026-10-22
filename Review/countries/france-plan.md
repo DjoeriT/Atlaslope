@@ -45,4 +45,5 @@ Start gate: the France pilot waits until Portugal's mainland is done and #205 (P
 - Pilot guides: 2 x 0.75M = ~1.5M, about 90 percent re-read (Ebro split [V]).
 - Pilot engineering (INAO cut, nesting, layers): ~5-10M [A]; the Portugal pilot session spent 18.9M re-read, mostly tooling [V],
   and the country model is now paid, so France should be lower. Hard stop at 1.5x and report.
-- WSET L3 list: 60 x 0.75M = ~45M [V rate, A scope], region by region.
+- WSET L3 list: 60 x 0.75M = ~45M [V rate, A scope], region by region. Prep (22 Oct) counted 108 WSET names: ~80M,
+  scope back to the owner (`Review/countries/france-prep/README.md`).
