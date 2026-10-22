@@ -1,0 +1,192 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (22 Oct 2026, map tour batch 2). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from.",
+ "id": "valdeorras",
+ "cover": {
+  "photo": "valdeorras-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -6.97,
+     42.37
+    ],
+    "zoom": 9.4,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "valdeorras",
+   "chip": "Valdeorras in Galicia"
+  },
+  {
+   "id": "place",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "valdeorras",
+    "pitch": 58,
+    "bearing": 20,
+    "zoomShift": -0.1
+   },
+   "focus": "valdeorras",
+   "photo": "valdeorras-1",
+   "facts": [
+    {
+     "at": [
+      -6.97,
+      42.37
+     ],
+     "label": "Valdeorras",
+     "text": "The zone covers eight municipalities of Ourense.",
+     "cite": [
+      "valdeorras-pliego:p10",
+      "valdeorras-pliego:p11",
+      "valdeorras-pliego:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sil",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -6.9782,
+     42.4138
+    ],
+    "zoom": 10.5,
+    "pitch": 62,
+    "bearing": 0
+   },
+   "focus": "valdeorras",
+   "photo": "valdeorras-sil-1",
+   "measure": {
+    "place": "valdeorras",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": [
+      -6.9782,
+      42.4138
+     ],
+     "label": "The Sil",
+     "text": "The left bank has steep slopes. The right bank is softer and rolling.",
+     "cite": [
+      "valdeorras-pliego:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "valdeorras",
+    "pitch": 45,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "valdeorras",
+   "layers": [
+    "koppen"
+   ],
+   "facts": [
+    {
+     "at": [
+      -6.97,
+      42.37
+     ],
+     "label": "Valdeorras",
+     "text": "Rain is 850 to 1,000 mm a year.",
+     "cite": [
+      "valdeorras-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "barco",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {
+    "center": [
+     -6.9801,
+     42.4301
+    ],
+    "zoom": 11,
+    "pitch": 62,
+    "bearing": 20
+   },
+   "focus": "valdeorras",
+   "layers": [
+    "geology"
+   ],
+   "photo": "valdeorras-barco-1",
+   "facts": [
+    {
+     "at": [
+      -6.9801,
+      42.4301
+     ],
+     "label": "O Barco de Valdeorras",
+     "text": "Limestone appears in the north, in O Barco and Rubiá.",
+     "cite": [
+      "valdeorras-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rua",
+   "chapter": "ground",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -7.1209,
+     42.4165
+    ],
+    "zoom": 11,
+    "pitch": 62,
+    "bearing": 340
+   },
+   "focus": "valdeorras",
+   "layers": [
+    "geology"
+   ],
+   "photo": "valdeorras-2",
+   "facts": [
+    {
+     "at": [
+      -7.1209,
+      42.4165
+     ],
+     "label": "A Rúa",
+     "text": "Granite soils are in A Rúa, Petín and Larouco.",
+     "cite": [
+      "valdeorras-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "valdeorras",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "valdeorras",
+   "chip": "Valdeorras"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Valdeorras."
+ }
+}

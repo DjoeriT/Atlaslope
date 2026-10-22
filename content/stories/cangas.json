@@ -1,0 +1,232 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (22 Oct 2026, map tour batch 2). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from.",
+ "id": "cangas",
+ "cover": {
+  "photo": "cangas-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -6.65,
+     43.17
+    ],
+    "zoom": 8.6,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "cangas",
+   "chip": "Cangas in Asturias"
+  },
+  {
+   "id": "place",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "cangas",
+    "pitch": 58,
+    "bearing": 20,
+    "zoomShift": -0.1
+   },
+   "focus": "cangas",
+   "photo": "cangas-2",
+   "measure": {
+    "place": "cangas",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": [
+      -6.7,
+      43.1
+     ],
+     "label": "Steep slopes",
+     "text": "Most slopes are steep to very steep, and some are sheer.",
+     "cite": [
+      "cangas-pliego:p3",
+      "cangas-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "narcea",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -6.4536,
+     43.2653
+    ],
+    "zoom": 10.5,
+    "pitch": 62,
+    "bearing": 330
+   },
+   "focus": "cangas",
+   "photo": "cangas-narcea-1",
+   "facts": [
+    {
+     "at": [
+      -6.4536,
+      43.2653
+     ],
+     "label": "Narcea",
+     "text": "There is hardly any flat ground apart from alluvial land on the valley floors.",
+     "cite": [
+      "cangas-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "navia",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -6.8743,
+     43.1524
+    ],
+    "zoom": 10.5,
+    "pitch": 60,
+    "bearing": 40
+   },
+   "focus": "cangas",
+   "facts": [
+    {
+     "at": [
+      -6.8743,
+      43.1524
+     ],
+     "label": "Navia",
+     "text": "The Navia is the other main river of the zone.",
+     "cite": [
+      "cangas-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "corias",
+   "chapter": "place",
+   "fly": 3,
+   "camera": {
+    "center": [
+     -6.5435,
+     43.1947
+    ],
+    "zoom": 11,
+    "pitch": 62,
+    "bearing": 20
+   },
+   "focus": "cangas",
+   "photo": "cangas-corias-1",
+   "facts": [
+    {
+     "at": [
+      -6.5435,
+      43.1947
+     ],
+     "label": "Monasterio de Corias",
+     "text": "The vine spread widely after the monastery was founded in the early 11th century.",
+     "cite": [
+      "cangas-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "cangas",
+    "pitch": 45,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "cangas",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "cangas-1",
+   "measure": {
+    "place": "cangas",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": [
+      -6.55,
+      43.1774
+     ],
+     "label": "Cangas del Narcea",
+     "text": "Some municipalities in the zone reach 2,000 hours of sun.",
+     "cite": [
+      "cangas-pliego:p5"
+     ]
+    },
+    {
+     "at": [
+      -6.8,
+      43.05
+     ],
+     "label": "Rain",
+     "text": "Rain is about 1,000 mm a year.",
+     "cite": [
+      "cangas-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "camera": {
+    "center": [
+     -6.55,
+     43.17
+    ],
+    "zoom": 11.2,
+    "pitch": 62,
+    "bearing": 340
+   },
+   "focus": "cangas",
+   "layers": [
+    "geology"
+   ],
+   "photo": "cangas-leitariegos-1",
+   "facts": [
+    {
+     "at": [
+      -6.55,
+      43.17
+     ],
+     "label": "Slate and schist",
+     "text": "The soils form on slate and schist.",
+     "cite": [
+      "cangas-pliego:p4",
+      "cangas-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "cangas",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "cangas",
+   "chip": "Cangas"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Cangas."
+ }
+}

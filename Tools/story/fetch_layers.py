@@ -132,6 +132,17 @@ CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos"
                                   "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
 
 
+# Batch 2 map tours (22 Oct 2026): Cangas, Valdeorras, Monterrei
+BBOX["cangas"] = (-7.05, 42.85, -6.25, 43.50)
+MAIN += ("Río Narcea", "Río Navia")
+CONTENT_TOWNS["cangas"] = ["Cangas del Narcea", "Tineo", "Allande", "Ibias", "Degaña", "Corias", "Limés", "Pola de Allande", "San Antolín de Ibias",
+                           "Besullo", "Larón", "Rengos", "Ponticiella"]
+BBOX["valdeorras"] = (-7.30, 42.15, -6.65, 42.60)
+CONTENT_TOWNS["valdeorras"] = ["O Barco de Valdeorras", "A Rúa", "Petín", "Larouco", "Rubiá", "Vilamartín de Valdeorras", "Carballeda de Valdeorras", "O Bolo", "Sobradelo"]
+BBOX["monterrei"] = (-7.70, 41.75, -7.10, 42.15)
+MAIN += ("Río Támega",)
+CONTENT_TOWNS["monterrei"] = ["Verín", "Oímbra", "Castrelo do Val", "Monterrei", "Vilardevós", "Cualedro", "Albarellos", "Laza", "Riós", "Tamagos"]
+
 # ranges named in the guides, kept even if NGBE files them under another local type
 FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serra de Montsant", "Sierra de Moncalvillo"}
 

@@ -119,6 +119,9 @@ def slope_overlay(cache, bbox, pad, colour, alpha, threshold=30.0):
 BOUNDS = {'rioja': [-3.15, 42.05, -1.65, 42.70], 'priorat': [0.65, 41.05, 1.00, 41.35]}
 BOUNDS['ribeira-sacra'] = [-7.95, 42.20, -7.05, 42.90]  # as fetch_layers.py
 BOUNDS['ribera-del-duero'] = [-4.5, 41.35, -2.85, 41.95]
+BOUNDS['cangas'] = [-7.05, 42.85, -6.25, 43.50]  # as fetch_layers.py
+BOUNDS['valdeorras'] = [-7.30, 42.15, -6.65, 42.60]
+BOUNDS['monterrei'] = [-7.70, 41.75, -7.10, 42.15]
 TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most; soft edge between 27% and 33% slope
 
 if __name__ == '__main__':

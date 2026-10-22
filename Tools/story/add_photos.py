@@ -45,6 +45,21 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                         "Miguel Alan Córdova Silva", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Standing stones of the Las Ruedas necropolis at Pintia, with the Duero hills behind", "50% 40%"),
     "ribera-soils-1": ("File:Clear cultivation in Viñedos en la Ribera del Duero.jpg", "https://commons.wikimedia.org/wiki/File:Clear_cultivation_in_Vi%C3%B1edos_en_la_Ribera_del_Duero.jpg",
                        "Raúl Hernández González", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Vine rows on ochre sandy clay in the Ribera del Duero", "50% 60%"),
+    # Batch 2 map tours (22 Oct 2026): Cangas, Valdeorras, Monterrei
+    "cangas-narcea-1": ("File:ES1200030-Rio Narcea a su paso por Corias AGA3206.jpg", "https://commons.wikimedia.org/wiki/File:ES1200030-Rio_Narcea_a_su_paso_por_Corias_AGA3206.jpg",
+        "Armando Gonzalez Alameda", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A stone bridge over the Narcea at Corias, with village houses and green hills above", "50% 50%"),
+    "cangas-corias-1": ("File:Monasterio Corias-fachada norte.jpg", "https://commons.wikimedia.org/wiki/File:Monasterio_Corias-fachada_norte.jpg",
+        "Adolfobrigido", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The long stone north front of the Monastery of Corias under a blue sky", "50% 50%"),
+    "cangas-leitariegos-1": ("File:Leitariegos, Cangas del Narcea, Asturias.jpg", "https://commons.wikimedia.org/wiki/File:Leitariegos,_Cangas_del_Narcea,_Asturias.jpg",
+        "Carmenmoran", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "Slate-roofed farm buildings at Leitariegos in a high green valley under a blue sky", "50% 50%"),
+    "valdeorras-sil-1": ("File:Río Sil dende Santa María.jpg", "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Sil_dende_Santa_Mar%C3%ADa.jpg",
+        "Mayte Ríos", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sil winding through its broad valley floor between wooded mountain slopes", "50% 50%"),
+    "valdeorras-barco-1": ("File:O Barco de Valdeorras desde O Castro.jpg", "https://commons.wikimedia.org/wiki/File:O_Barco_de_Valdeorras_desde_O_Castro.jpg",
+        "Estevoaei", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The town of O Barco de Valdeorras in the valley floor below cloud-capped hills", "50% 50%"),
+    "monterrei-castle-1": ("File:Castelo de Monterrei, Monterrei, Ourense, vista sur.jpg", "https://commons.wikimedia.org/wiki/File:Castelo_de_Monterrei,_Monterrei,_Ourense,_vista_sur.jpg",
+        "Ramon Piñeiro", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "The stone keep and walls of the castle of Monterrei on its hill under a blue sky", "50% 50%"),
+    "monterrei-verin-1": ("File:Verín dende Monterrei.JPG", "https://commons.wikimedia.org/wiki/File:Ver%C3%ADn_dende_Monterrei.JPG",
+        "HombreDHojalata", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The town of Verín in the Támega valley seen from the castle hill of Monterrei, with mountains behind", "50% 50%"),
 }
 
 
