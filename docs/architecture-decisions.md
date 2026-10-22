@@ -140,4 +140,14 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#68 Italian families**: Valpolicella (with Classico, Ripasso, Amarone, Recioto) and Soave (with Classico, Recioto di Soave) are one place each, their styles inside the guide; 30 Italian places. [O]
 - **#69 Italy first wave** (amends #60): the 30 WSET L3 places (#68) plus every other DOCG, about 55-65 more [A], region by region, each region on the owner's word. The DOCG count comes from MASAF's official DOCG list, not the EU texts (a script on those, 22 Oct 2026, mislabels some DOCs and misses some DOCGs). A DOCG "Superiore" or "Riserva" of a DOC folds into one place with styles (as #68). The other DOCs and the IGTs come later, each on his word. [O]
 - **#70 Italy order** (amends #69, same day): the 30 WSET L3 places first, region by region; the other DOCGs (about 55-65 [A]) are a second wave after them, each region on the owner's word. [O]
-- **#71 Italy boundary-only outlines** (amends #62): where a rulebook draws the zone along roads and streams and names no municipalities (Collio, Friuli Colli Orientali, Verdicchio dei Castelli di Jesi, Chianti), the outline is Candiago et al. 2022's polygon (CC0), not a hand trace. [O]
+- **#79 Italy boundary-only outlines** (amends #62): where a rulebook draws the zone along roads and streams and names no municipalities (Collio, Friuli Colli Orientali, Verdicchio dei Castelli di Jesi, Chianti), the outline is Candiago et al. 2022's polygon (CC0), not a hand trace. [O]
+
+## Fifth country: Germany (owner, 22 Oct 2026, issue #149; plan `Review/countries/germany-plan.md`)
+- **#71 Germany timing**: a data-only prep slice may run now (licences, WSET L3 names, pilot specs and outlines); the pilot runs after the Italy pilot is merged. [O]
+- **#72 Germany scope**: all 13 Anbaugebiete as places; no Landwein (PGI) areas. [O]
+- **#73 Germany pilot**: Mosel and Rheingau, pages at `/de/<place>/` (#48). [O]
+- **#74 Einzellagen**: zones inside their Anbaugebiet where an official layer exists (as #55, #63); famous Lagen named in the guide; no guide or card each. [O]
+- **#75 Bereiche and Großlagen**: Bereiche named in the guide text; Großlagen explained once as marketing names, never drawn. [O]
+- **#76 VDP**: named in the guide text as a private ranking; no map layer, no copied lists. [O]
+- **#77 Germany map layers**: Esri imagery; state 1 m terrain for slope in the pilot areas only; no geology in the pilot. [O]
+- **#78 Germany climate**: Köppen as elsewhere; no DWD layer. [O]

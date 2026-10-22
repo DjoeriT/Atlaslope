@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "bourgogne-doc": "Review/sources/fetched/att-PDO-FR-A0650-11623.txt",
+    "chablis-doc": "Review/sources/fetched/att-PDO-FR-A0736-10322.txt",
+    "cote-de-nuits-villages-doc": "Review/sources/fetched/att-PDO-FR-A0409-11592.txt",
+    "gevrey-chambertin-doc": "Review/sources/fetched/att-PDO-FR-A0168-10492.txt",
+    "vougeot-doc": "Review/sources/fetched/att-PDO-FR-A0176-10325.txt",
+    "vosne-romanee-doc": "Review/sources/fetched/att-PDO-FR-A0504-10749.txt",
+    "nuits-saint-georges-doc": "Review/sources/fetched/att-PDO-FR-A0579-19868.txt",
+    "cote-de-beaune-villages-doc": "Review/sources/fetched/att-PDO-FR-A0401-10412.txt",
+    "aloxe-corton-doc": "Review/sources/fetched/att-PDO-FR-A0932-11573.txt",
+    "beaune-doc": "Review/sources/fetched/att-PDO-FR-A1022-10314.txt",
+    "pommard-doc": "Review/sources/fetched/att-PDO-FR-A0193-11585.txt",
+    "volnay-doc": "Review/sources/fetched/att-PDO-FR-A0198-11587.txt",
+    "meursault-doc": "Review/sources/fetched/att-PDO-FR-A1017-10771.txt",
+    "puligny-montrachet-doc": "Review/sources/fetched/att-PDO-FR-A0308-11591.txt",
+    "chassagne-montrachet-doc": "Review/sources/fetched/att-PDO-FR-A1021-11332.txt",
+    "rully-doc": "Review/sources/fetched/att-PDO-FR-A0937-10794.txt",
+    "mercurey-doc": "Review/sources/fetched/att-PDO-FR-A0404-10686.txt",
+    "givry-doc": "Review/sources/fetched/att-PDO-FR-A0578-10498.txt",
+    "montagny-doc": "Review/sources/fetched/att-PDO-FR-A0403-10798.txt",
+    "macon-doc": "Review/sources/fetched/att-PDO-FR-A0649-10803.txt",
+    "pouilly-fuisse-doc": "Review/sources/fetched/att-PDO-FR-A0653-10773.txt",
+    "saint-veran-doc": "Review/sources/fetched/att-PDO-FR-A0577-10782.txt",
+    "cremant-de-bourgogne-doc": "Review/sources/fetched/att-PDO-FR-A0676-11636.txt"
+  }
+}

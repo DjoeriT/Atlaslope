@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "cotes-du-rhone-doc": "Review/sources/fetched/att-PDO-FR-A0325-19806.txt",
+    "cotes-du-rhone-villages-doc": "Review/sources/fetched/att-PDO-FR-A0664-10545.txt",
+    "cote-rotie-doc": "Review/sources/fetched/att-PDO-FR-A0199-10548.txt",
+    "condrieu-doc": "Review/sources/fetched/att-PDO-FR-A0685-15440.txt",
+    "saint-joseph-doc": "Review/sources/fetched/att-PDO-FR-A0200-10397.txt",
+    "hermitage-doc": "Review/sources/fetched/att-PDO-FR-A1002-19836.txt",
+    "cornas-doc": "Review/sources/fetched/att-PDO-FR-A0697-10395.txt",
+    "chateauneuf-du-pape-doc": "Review/sources/fetched/att-PDO-FR-A0144-10488.txt",
+    "gigondas-doc": "Review/sources/fetched/att-PDO-FR-A0143-10307.txt",
+    "vacqueyras-doc": "Review/sources/fetched/att-PDO-FR-A0151-10547.txt",
+    "lirac-doc": "Review/sources/fetched/att-PDO-FR-A0331-10554.txt",
+    "tavel-doc": "Review/sources/fetched/att-PDO-FR-A0328-10546.txt",
+    "crozes-hermitage-doc": "Review/sources/fetched/cdc-PDO-FR-A0389.txt",
+    "muscat-de-beaumes-de-venise-doc": "Review/sources/fetched/cdc-PDO-FR-A0716.txt"
+  }
+}
