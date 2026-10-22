@@ -6,7 +6,7 @@ import { RegionPage } from '../pages/RegionPage';
 import { PlacePage } from '../pages/PlacePage';
 import { FlyCaption } from '../cards/FlyCaption';
 import { flyOf, focusFor, parentOf, validSelection } from '../cards/nav';
-import { grapeNames } from '../facts';
+import { grapeNames, guideOf, hasGuide, loadGuide } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
 import { MapView, swoopIn } from '../map/MapView';
 import type { Focus } from '../map/focus';
@@ -140,9 +140,14 @@ export function App() {
   useEffect(() => { if (!quiz) setMapPick(null); }, [quiz]);
   const progress = useQuiz(tree, clock);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
+  // Guides load on demand: a place whose guide is not here yet renders again once it is, so its fly-there and page can use it.
+  const [guidesIn, setGuidesIn] = useState(0);
+  useEffect(() => {
+    if (sel.kind === 'place' && hasGuide(sel.id) && !guideOf(sel.id)) loadGuide(sel.id).then(() => setGuidesIn((n) => n + 1), () => undefined);
+  }, [sel.kind, sel.id]);
   const flown = flyOf(sel);
   const fly = sel.kind === 'place' ? sel.fly : undefined;
-  const focus = useMemo(() => stay ?? focusFor(tree, sel), [tree, sel.kind, sel.id, flyKey(sel), stay]);
+  const focus = useMemo(() => stay ?? focusFor(tree, sel), [tree, sel.kind, sel.id, flyKey(sel), stay, guidesIn]);
   const closeFly = useCallback(() => {
     setStay(focus);
     history.pushState(null, '', addressOf(tree, { kind: 'place', id: selRef.current.id }, selectionToHash({ kind: 'place', id: selRef.current.id }, parseView(location.hash))));

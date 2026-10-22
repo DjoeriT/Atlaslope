@@ -85,6 +85,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   Speed: page shell, then a service worker; no CDN. Guides current: "Checked on" plus source dates, pilot on 3 places.
 - Atlas cover (owner 22 Oct 2026, option E1): clicking Atlas opens a cover card ("See where your wine comes from": map-tour and slopes loops, borders, climate and guide stills, the countries) before any country. The empty hash is the cover; Spain's card is `#country=spain`. Media: `Tools/atlas/cover_media.mjs` into `public/atlas/`.
   Size check (owner, 22 Oct 2026, option A): video (.webm, .mp4) is left out of the 2 MB download check like photos; the cover's two clips are ~1 MB and load only with the cover. Without them the atlas is 1.96 MB: about 40 KB of room left.
+  Guides on demand (owner, 22 Oct 2026, PR #214): each guide is its own chunk under `dist/guide-data/`, loaded with its page or fly-there, and left out of the check like `dist/story/`. Incident: Portugal took the whole site to 2.13 MB. First load after: 1.93 MB; the 137 guides are 0.29 MB more, fetched one at a time.
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)

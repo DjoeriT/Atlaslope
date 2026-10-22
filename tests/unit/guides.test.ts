@@ -1,7 +1,9 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { chapterFlies, flyTargetOf, guideOf, guides, sources, type Chapter, type FlyTarget } from '../../src/facts';
+import { chapterFlies, flyTargetOf, guideOf, loadAllGuides, sources, type Chapter, type FlyTarget } from '../../src/facts';
 import type { Place } from '../../src/tree';
+
+const guides = await loadAllGuides(); // guides load on demand in the app (decision #38)
 
 const real: Place[] = JSON.parse(readFileSync('data/places.json', 'utf8')).places;
 const ids = new Set(real.map((p) => p.id));

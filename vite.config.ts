@@ -20,7 +20,10 @@ export default defineConfig(({ mode }) => ({
   build: { rollupOptions: {
     input: { home: 'index.html', atlas: 'atlas/index.html', guides: 'guides/index.html', country: 'country/index.html', about: 'about/index.html' },
     output: {
-      chunkFileNames: (c) => (!c.isEntry && c.moduleIds.some((m) => /\/(src\/story|content\/stories|data\/story)\//.test(m)) ? 'story/[name]-[hash].js' : 'assets/[name]-[hash].js'),
+      // Each guide loads with its own page under dist/guide-data/, which the download check leaves out like dist/story/ (owner 22 Oct 2026).
+      chunkFileNames: (c) => (c.isEntry ? 'assets/[name]-[hash].js'
+        : c.moduleIds.some((m) => /\/(src\/story|content\/stories|data\/story)\//.test(m)) ? 'story/[name]-[hash].js'
+        : c.moduleIds.every((m) => /\/content\/guides\//.test(m)) ? 'guide-data/[name]-[hash].js' : 'assets/[name]-[hash].js'),
       assetFileNames: (a) => ((a.originalFileNames ?? []).some((n) => n.startsWith('data/story/')) ? 'story/[name]-[hash][extname]' : 'assets/[name]-[hash][extname]'),
     },
   } },
@@ -86,5 +89,5 @@ export default defineConfig(({ mode }) => ({
   }],
   esbuild: { jsx: 'automatic' },
   define: { __DEBUG_FLAGS__: JSON.stringify(mode === 'development' || mode === 'uitest') },
-  test: { include: ['tests/unit/**/*.test.ts'] },
+  test: { include: ['tests/unit/**/*.test.ts'], setupFiles: ['tests/unit/setup.ts'] },
 }));
