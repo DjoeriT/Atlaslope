@@ -1834,5 +1834,17 @@
   "title": "Pauillac PDO-FR-A0713: EU single document / technical file (PDO, French, eAmbrosia attachment 11335)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11335",
   "date": "2019-11-29"
+ },
+ "barolo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Barolo PDO-IT-A1389: disciplinare di produzione (MASAF, Italian, file \"Barolo\" in the DOP archive)"
+ },
+ "chianti-classico-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Chianti Classico PDO-IT-A1235: disciplinare di produzione (MASAF, Italian, file \"Chianti Classico\" in the DOP archive)"
  }
 }

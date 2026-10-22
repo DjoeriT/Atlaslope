@@ -1,0 +1,875 @@
+{
+ "$comment": "Italy first-wave places (decisions #68, #70, #80): the 30 WSET L3 places and the 57 other DOCGs, by map group. rulebook = MASAF disciplinare file name in the DOP archives (data/SOURCES.md). Read by Tools/countries/it_wset.py.",
+ "places": [
+  {
+   "id": "barolo",
+   "name": "Barolo",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1389",
+   "type": "PDO",
+   "singleDocument": "32340",
+   "rulebook": "Barolo"
+  },
+  {
+   "id": "barbaresco",
+   "name": "Barbaresco",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1399",
+   "type": "PDO",
+   "singleDocument": "32331",
+   "rulebook": "Barbaresco"
+  },
+  {
+   "id": "barbera-d-asti",
+   "name": "Barbera d'Asti",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1398",
+   "type": "PDO",
+   "singleDocument": "29094",
+   "rulebook": "Barbera d'Asti"
+  },
+  {
+   "id": "dolcetto-d-alba",
+   "name": "Dolcetto d'Alba",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1142",
+   "type": "PDO",
+   "singleDocument": "28215",
+   "rulebook": "Dolcetto d'Alba"
+  },
+  {
+   "id": "gavi",
+   "name": "Gavi",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1310",
+   "type": "PDO",
+   "singleDocument": "29427",
+   "rulebook": "Gavi o Cortese di Gavi"
+  },
+  {
+   "id": "asti",
+   "name": "Asti",
+   "group": "it-piemonte",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1396",
+   "type": "PDO",
+   "singleDocument": "29328",
+   "rulebook": "Asti"
+  },
+  {
+   "id": "alta-langa",
+   "name": "Alta Langa",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1252",
+   "type": "PDO",
+   "singleDocument": "30948",
+   "rulebook": "Alta Langa"
+  },
+  {
+   "id": "barbera-del-monferrato-superiore",
+   "name": "Barbera del Monferrato Superiore",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1397",
+   "type": "PDO",
+   "singleDocument": "29145",
+   "rulebook": "Barbera del Monferrato Superiore"
+  },
+  {
+   "id": "brachetto-dacqui",
+   "name": "Brachetto d'Acqui",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1382",
+   "type": "PDO",
+   "singleDocument": "29251",
+   "rulebook": "Brachetto d'Acqui o Acqui"
+  },
+  {
+   "id": "canelli",
+   "name": "Canelli",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-02810",
+   "type": "PDO",
+   "singleDocument": null,
+   "rulebook": "Canelli"
+  },
+  {
+   "id": "dogliani",
+   "name": "Dogliani",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1330",
+   "type": "PDO",
+   "singleDocument": "29196",
+   "rulebook": "Dogliani"
+  },
+  {
+   "id": "dolcetto-di-diano-dalba",
+   "name": "Dolcetto di Diano d'Alba",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1324",
+   "type": "PDO",
+   "singleDocument": "32380",
+   "rulebook": "Dolcetto di Diano d'Alba o Diano d'Alba"
+  },
+  {
+   "id": "dolcetto-di-ovada-superiore",
+   "name": "Dolcetto di Ovada Superiore",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1319",
+   "type": "PDO",
+   "singleDocument": "29370",
+   "rulebook": "Dolcetto di Ovada Superiore"
+  },
+  {
+   "id": "erbaluce-di-caluso",
+   "name": "Erbaluce di Caluso",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1315",
+   "type": "PDO",
+   "singleDocument": "29396",
+   "rulebook": "Erbaluce di Caluso o Caluso"
+  },
+  {
+   "id": "gattinara",
+   "name": "Gattinara",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1311",
+   "type": "PDO",
+   "singleDocument": "29219",
+   "rulebook": "Gattinara"
+  },
+  {
+   "id": "ghemme",
+   "name": "Ghemme",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1263",
+   "type": "PDO",
+   "singleDocument": "29259",
+   "rulebook": "Ghemme"
+  },
+  {
+   "id": "nizza",
+   "name": "Nizza",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-01896",
+   "type": "PDO",
+   "singleDocument": null,
+   "rulebook": "Nizza"
+  },
+  {
+   "id": "roero",
+   "name": "Roero",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1261",
+   "type": "PDO",
+   "singleDocument": "29438",
+   "rulebook": "Roero"
+  },
+  {
+   "id": "ruche-di-castagnole-monferrato",
+   "name": "Ruchè di Castagnole Monferrato",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1258",
+   "type": "PDO",
+   "singleDocument": "29267",
+   "rulebook": "Ruchè di Castagnole MonferratoDOCG disciplinare di produzione"
+  },
+  {
+   "id": "terre-alfieri",
+   "name": "Terre Alfieri",
+   "group": "it-piemonte",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1241",
+   "type": "PDO",
+   "singleDocument": "28856",
+   "rulebook": "Terre Alfieri"
+  },
+  {
+   "id": "franciacorta",
+   "name": "Franciacorta",
+   "group": "it-lombardia",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1034",
+   "type": "PDO",
+   "singleDocument": "25921",
+   "rulebook": "Franciacorta"
+  },
+  {
+   "id": "oltrepo-pavese-metodo-classico",
+   "name": "Oltrepò Pavese metodo classico",
+   "group": "it-lombardia",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0958",
+   "type": "PDO",
+   "singleDocument": "25931",
+   "rulebook": "Oltrepò Pavese metodo classico"
+  },
+  {
+   "id": "scanzo",
+   "name": "Scanzo",
+   "group": "it-lombardia",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0949",
+   "type": "PDO",
+   "singleDocument": "25952",
+   "rulebook": "Scanzo o Moscato di Scanzo"
+  },
+  {
+   "id": "sforzato-di-valtellina",
+   "name": "Sforzato di Valtellina",
+   "group": "it-lombardia",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1035",
+   "type": "PDO",
+   "singleDocument": "25970",
+   "rulebook": "Sforzato di Valtellina o Sfursat di Valtellina"
+  },
+  {
+   "id": "valtellina-superiore",
+   "name": "Valtellina Superiore",
+   "group": "it-lombardia",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1036",
+   "type": "PDO",
+   "singleDocument": "26122",
+   "rulebook": "Valtellina superiore"
+  },
+  {
+   "id": "alto-adige",
+   "name": "Alto Adige",
+   "group": "it-north-east",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0293",
+   "type": "PDO",
+   "singleDocument": "21873",
+   "rulebook": "Alto Adige o dell'Alto Adige"
+  },
+  {
+   "id": "trentino",
+   "name": "Trentino",
+   "group": "it-north-east",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0754",
+   "type": "PDO",
+   "singleDocument": "22715",
+   "rulebook": "Trentino"
+  },
+  {
+   "id": "collio",
+   "name": "Collio",
+   "group": "it-north-east",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0908",
+   "type": "PDO",
+   "singleDocument": "28455",
+   "rulebook": "Collio Goriziano o Collio"
+  },
+  {
+   "id": "friuli-colli-orientali",
+   "name": "Friuli Colli Orientali",
+   "group": "it-north-east",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0953",
+   "type": "PDO",
+   "singleDocument": "28896",
+   "rulebook": "Friuli Colli Orientali"
+  },
+  {
+   "id": "friuli-grave",
+   "name": "Friuli Grave",
+   "group": "it-north-east",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0954",
+   "type": "PDO",
+   "singleDocument": "28918",
+   "rulebook": "Friuli Grave"
+  },
+  {
+   "id": "colli-orientali-del-friuli-picolit",
+   "name": "Colli Orientali del Friuli Picolit",
+   "group": "it-north-east",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0938",
+   "type": "PDO",
+   "singleDocument": "28428",
+   "rulebook": "Colli Orientali del Friuli Picolit"
+  },
+  {
+   "id": "ramandolo",
+   "name": "Ramandolo",
+   "group": "it-north-east",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0939",
+   "type": "PDO",
+   "singleDocument": "29003",
+   "rulebook": "Ramandolo"
+  },
+  {
+   "id": "rosazzo",
+   "name": "Rosazzo",
+   "group": "it-north-east",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0367",
+   "type": "PDO",
+   "singleDocument": "28941",
+   "rulebook": "Rosazzo"
+  },
+  {
+   "id": "valpolicella",
+   "name": "Valpolicella",
+   "group": "it-veneto",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0442",
+   "type": "PDO",
+   "singleDocument": "21823",
+   "rulebook": "Valpolicella"
+  },
+  {
+   "id": "soave",
+   "name": "Soave",
+   "group": "it-veneto",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0472",
+   "type": "PDO",
+   "singleDocument": "22723",
+   "rulebook": "Soave"
+  },
+  {
+   "id": "prosecco",
+   "name": "Prosecco",
+   "group": "it-veneto",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0516",
+   "type": "PDO",
+   "singleDocument": "21912",
+   "rulebook": "Prosecco"
+  },
+  {
+   "id": "conegliano-valdobbiadene",
+   "name": "Conegliano Valdobbiadene Prosecco",
+   "group": "it-veneto",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0515",
+   "type": "PDO",
+   "singleDocument": "21924",
+   "rulebook": "Conegliano Valdobbiadene - Prosecco"
+  },
+  {
+   "id": "asolo-prosecco",
+   "name": "Asolo Prosecco",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0514",
+   "type": "PDO",
+   "singleDocument": "21935",
+   "rulebook": "Asolo Prosecco o Asolo"
+  },
+  {
+   "id": "bagnoli-friularo",
+   "name": "Bagnoli Friularo",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0467",
+   "type": "PDO",
+   "singleDocument": "22220",
+   "rulebook": "Bagnoli Friularo o Friularo di Bagnoli"
+  },
+  {
+   "id": "bardolino-superiore",
+   "name": "Bardolino Superiore",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0437",
+   "type": "PDO",
+   "singleDocument": "22141",
+   "rulebook": "Bardolino Superiore"
+  },
+  {
+   "id": "colli-di-conegliano",
+   "name": "Colli di Conegliano",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0453",
+   "type": "PDO",
+   "singleDocument": "22201",
+   "rulebook": "Colli di Conegliano"
+  },
+  {
+   "id": "colli-euganei-fior-darancio",
+   "name": "Colli Euganei Fior d'Arancio",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0455",
+   "type": "PDO",
+   "singleDocument": "22376",
+   "rulebook": "Colli Euganei Fior d'Arancio o Fior d'Arancio Colli Euganei"
+  },
+  {
+   "id": "lison",
+   "name": "Lison",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0457",
+   "type": "PDO",
+   "singleDocument": "22042",
+   "rulebook": "Lison"
+  },
+  {
+   "id": "montello-rosso",
+   "name": "Montello Rosso",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0461",
+   "type": "PDO",
+   "singleDocument": "22179",
+   "rulebook": "Montello Rosso o Montello"
+  },
+  {
+   "id": "piave-malanotte",
+   "name": "Piave Malanotte",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0463",
+   "type": "PDO",
+   "singleDocument": "22086",
+   "rulebook": "Piave Malanotte Malanotte del Piave disciplinare"
+  },
+  {
+   "id": "recioto-di-gambellara",
+   "name": "Recioto di Gambellara",
+   "group": "it-veneto",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0470",
+   "type": "PDO",
+   "singleDocument": "22400",
+   "rulebook": "Recioto di Gambellara"
+  },
+  {
+   "id": "colli-bolognesi-pignoletto",
+   "name": "Colli Bolognesi Pignoletto",
+   "group": "it-emilia-romagna",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0284",
+   "type": "PDO",
+   "singleDocument": "23746",
+   "rulebook": "Colli Bolognesi Pignoletto"
+  },
+  {
+   "id": "romagna-albana",
+   "name": "Romagna Albana",
+   "group": "it-emilia-romagna",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0285",
+   "type": "PDO",
+   "singleDocument": "23853",
+   "rulebook": "Romagna Albana"
+  },
+  {
+   "id": "chianti",
+   "name": "Chianti",
+   "group": "it-tuscany",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1228",
+   "type": "PDO",
+   "singleDocument": "28773",
+   "rulebook": "Chianti"
+  },
+  {
+   "id": "chianti-classico",
+   "name": "Chianti Classico",
+   "group": "it-tuscany",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1235",
+   "type": "PDO",
+   "singleDocument": "24072",
+   "rulebook": "Chianti Classico"
+  },
+  {
+   "id": "bolgheri",
+   "name": "Bolgheri",
+   "group": "it-tuscany",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1348",
+   "type": "PDO",
+   "singleDocument": "27707",
+   "rulebook": "Bolgheri"
+  },
+  {
+   "id": "brunello-di-montalcino",
+   "name": "Brunello di Montalcino",
+   "group": "it-tuscany",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1199",
+   "type": "PDO",
+   "singleDocument": "25790",
+   "rulebook": "Brunello di Montalcino"
+  },
+  {
+   "id": "vino-nobile-di-montepulciano",
+   "name": "Vino Nobile di Montepulciano",
+   "group": "it-tuscany",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A1308",
+   "type": "PDO",
+   "singleDocument": "27791",
+   "rulebook": "Vino Nobile di Montepulciano"
+  },
+  {
+   "id": "carmignano",
+   "name": "Carmignano",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1220",
+   "type": "PDO",
+   "singleDocument": "26686",
+   "rulebook": "Carmignano"
+  },
+  {
+   "id": "elba-aleatico-passito",
+   "name": "Elba Aleatico Passito",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1237",
+   "type": "PDO",
+   "singleDocument": "26700",
+   "rulebook": "Elba Aleatico Passito o Aleatico Passito dell'Elba"
+  },
+  {
+   "id": "montecucco-sangiovese",
+   "name": "Montecucco Sangiovese",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1246",
+   "type": "PDO",
+   "singleDocument": "26277",
+   "rulebook": "Montecucco Sangiovese"
+  },
+  {
+   "id": "morellino-di-scansano",
+   "name": "Morellino di Scansano",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1260",
+   "type": "PDO",
+   "singleDocument": "26303",
+   "rulebook": "Morellino di Scansano"
+  },
+  {
+   "id": "suvereto",
+   "name": "Suvereto",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1266",
+   "type": "PDO",
+   "singleDocument": "27747",
+   "rulebook": "Suvereto"
+  },
+  {
+   "id": "val-di-cornia-rosso",
+   "name": "Val di Cornia Rosso",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1262",
+   "type": "PDO",
+   "singleDocument": "27732",
+   "rulebook": "Val di Cornia Rosso o Rosso della Val di Cornia"
+  },
+  {
+   "id": "vernaccia-di-san-gimignano",
+   "name": "Vernaccia di San Gimignano",
+   "group": "it-tuscany",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A1292",
+   "type": "PDO",
+   "singleDocument": "27776",
+   "rulebook": "Vernaccia di San Gimignano"
+  },
+  {
+   "id": "verdicchio-dei-castelli-di-jesi",
+   "name": "Verdicchio dei Castelli di Jesi",
+   "group": "it-centre",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0482",
+   "type": "PDO",
+   "singleDocument": "31075",
+   "rulebook": "Verdicchio dei Castelli di Jesi"
+  },
+  {
+   "id": "orvieto",
+   "name": "Orvieto",
+   "group": "it-centre",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0846",
+   "type": "PDO",
+   "singleDocument": "23372",
+   "rulebook": "Orvieto"
+  },
+  {
+   "id": "frascati",
+   "name": "Frascati",
+   "group": "it-centre",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0750",
+   "type": "PDO",
+   "singleDocument": "25364",
+   "rulebook": "Frascati"
+  },
+  {
+   "id": "montepulciano-d-abruzzo",
+   "name": "Montepulciano d'Abruzzo",
+   "group": "it-centre",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0723",
+   "type": "PDO",
+   "singleDocument": "23162",
+   "rulebook": "Montepulciano d'Abruzzo"
+  },
+  {
+   "id": "casauria",
+   "name": "Casauria",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-02972",
+   "type": "PDO",
+   "singleDocument": null,
+   "rulebook": "Casauria"
+  },
+  {
+   "id": "cesanese-del-piglio",
+   "name": "Cesanese del Piglio",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0680",
+   "type": "PDO",
+   "singleDocument": "25655",
+   "rulebook": "Cesanese del Piglio o Piglio"
+  },
+  {
+   "id": "colline-teramane-montepulciano-dabruzzo",
+   "name": "Colline Teramane Montepulciano d'Abruzzo",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0876",
+   "type": "PDO",
+   "singleDocument": "25664",
+   "rulebook": "Colline Teramane Montepulciano d'Abruzzo"
+  },
+  {
+   "id": "conero",
+   "name": "Cònero",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0449",
+   "type": "PDO",
+   "singleDocument": "23597",
+   "rulebook": "Cònero"
+  },
+  {
+   "id": "montefalco-sagrantino",
+   "name": "Montefalco Sagrantino",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0833",
+   "type": "PDO",
+   "singleDocument": "23454",
+   "rulebook": "Montefalco Sagrantino"
+  },
+  {
+   "id": "offida",
+   "name": "Offida",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0477",
+   "type": "PDO",
+   "singleDocument": "22170",
+   "rulebook": "Offida"
+  },
+  {
+   "id": "terre-tollesi",
+   "name": "Terre Tollesi",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0742",
+   "type": "PDO",
+   "singleDocument": "23233",
+   "rulebook": "Terre Tollesi o Tullum"
+  },
+  {
+   "id": "torgiano-rosso-riserva",
+   "name": "Torgiano Rosso Riserva",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0834",
+   "type": "PDO",
+   "singleDocument": "23478",
+   "rulebook": "Torgiano Rosso Riserva"
+  },
+  {
+   "id": "verdicchio-di-matelica-riserva",
+   "name": "Verdicchio di Matelica Riserva",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0480",
+   "type": "PDO",
+   "singleDocument": "23660",
+   "rulebook": "Verdicchio di Matelica Riserva"
+  },
+  {
+   "id": "vernaccia-di-serrapetrona",
+   "name": "Vernaccia di Serrapetrona",
+   "group": "it-centre",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0445",
+   "type": "PDO",
+   "singleDocument": "23652",
+   "rulebook": "Vernaccia di Serrapetrona"
+  },
+  {
+   "id": "taurasi",
+   "name": "Taurasi",
+   "group": "it-south",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0237",
+   "type": "PDO",
+   "singleDocument": "26840",
+   "rulebook": "Taurasi"
+  },
+  {
+   "id": "fiano-di-avellino",
+   "name": "Fiano di Avellino",
+   "group": "it-south",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0232",
+   "type": "PDO",
+   "singleDocument": "26867",
+   "rulebook": "Fiano di Avellino"
+  },
+  {
+   "id": "greco-di-tufo",
+   "name": "Greco di Tufo",
+   "group": "it-south",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0236",
+   "type": "PDO",
+   "singleDocument": "26858",
+   "rulebook": "Greco di Tufo"
+  },
+  {
+   "id": "salice-salentino",
+   "name": "Salice Salentino",
+   "group": "it-south",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0567",
+   "type": "PDO",
+   "singleDocument": "27025",
+   "rulebook": "Salice Salentino"
+  },
+  {
+   "id": "aglianico-del-vulture",
+   "name": "Aglianico del Vulture",
+   "group": "it-south",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0222",
+   "type": "PDO",
+   "singleDocument": "25980",
+   "rulebook": "Aglianico del Vulture"
+  },
+  {
+   "id": "aglianico-del-taburno",
+   "name": "Aglianico del Taburno",
+   "group": "it-south",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0277",
+   "type": "PDO",
+   "singleDocument": "26877",
+   "rulebook": "Aglianico del Taburno"
+  },
+  {
+   "id": "castel-del-monte-bombino-nero",
+   "name": "Castel del Monte Bombino Nero",
+   "group": "it-south",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0537",
+   "type": "PDO",
+   "singleDocument": "24620",
+   "rulebook": "Castel del Monte Bombino Nero"
+  },
+  {
+   "id": "castel-del-monte-nero-di-troia-riserva",
+   "name": "Castel del Monte Nero di Troia Riserva",
+   "group": "it-south",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0538",
+   "type": "PDO",
+   "singleDocument": "24633",
+   "rulebook": "Castel del Monte Nero di Troia Riserva"
+  },
+  {
+   "id": "castel-del-monte-rosso-riserva",
+   "name": "Castel del Monte Rosso Riserva",
+   "group": "it-south",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0539",
+   "type": "PDO",
+   "singleDocument": "24647",
+   "rulebook": "Castel del Monte Rosso Riserva"
+  },
+  {
+   "id": "primitivo-di-manduria-dolce-naturale",
+   "name": "Primitivo di Manduria Dolce Naturale",
+   "group": "it-south",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0535",
+   "type": "PDO",
+   "singleDocument": "24662",
+   "rulebook": "Primitivo di Manduria Dolce Naturale"
+  },
+  {
+   "id": "etna",
+   "name": "Etna",
+   "group": "it-islands",
+   "wave": "wset",
+   "fileNumber": "PDO-IT-A0780",
+   "type": "PDO",
+   "singleDocument": "24586",
+   "rulebook": "Etna"
+  },
+  {
+   "id": "cerasuolo-di-vittoria",
+   "name": "Cerasuolo di Vittoria",
+   "group": "it-islands",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0773",
+   "type": "PDO",
+   "singleDocument": "26083",
+   "rulebook": "Cerasuolo di Vittoria"
+  },
+  {
+   "id": "vermentino-di-gallura",
+   "name": "Vermentino di Gallura",
+   "group": "it-islands",
+   "wave": "docg",
+   "fileNumber": "PDO-IT-A0903",
+   "type": "PDO",
+   "singleDocument": "25254",
+   "rulebook": "Vermentino di Gallura"
+  }
+ ]
+}

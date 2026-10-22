@@ -1,0 +1,14 @@
+{
+ "sources": {
+  "taurasi-disc": "Review/sources/fetched/disc-taurasi.txt",
+  "fiano-di-avellino-disc": "Review/sources/fetched/disc-fiano-di-avellino.txt",
+  "greco-di-tufo-disc": "Review/sources/fetched/disc-greco-di-tufo.txt",
+  "salice-salentino-disc": "Review/sources/fetched/disc-salice-salentino.txt",
+  "aglianico-del-vulture-disc": "Review/sources/fetched/disc-aglianico-del-vulture.txt",
+  "aglianico-del-taburno-disc": "Review/sources/fetched/disc-aglianico-del-taburno.txt",
+  "castel-del-monte-bombino-nero-disc": "Review/sources/fetched/disc-castel-del-monte-bombino-nero.txt",
+  "castel-del-monte-nero-di-troia-riserva-disc": "Review/sources/fetched/disc-castel-del-monte-nero-di-troia-riserva.txt",
+  "castel-del-monte-rosso-riserva-disc": "Review/sources/fetched/disc-castel-del-monte-rosso-riserva.txt",
+  "primitivo-di-manduria-dolce-naturale-disc": "Review/sources/fetched/disc-primitivo-di-manduria-dolce-naturale.txt"
+ }
+}
