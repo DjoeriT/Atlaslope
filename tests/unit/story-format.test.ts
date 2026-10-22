@@ -27,11 +27,11 @@ const strings = (o: unknown): string[] =>
 
 describe('story files', () => {
   it('lists every story', () => {
-    expect(storyIds()).toEqual(['campo-de-borja', 'cangas', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
-    expect(storyCount()).toBe(13);
+    expect(storyIds()).toEqual(['alicante', 'campo-de-borja', 'cangas', 'costers-del-segre', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
+    expect(storyCount()).toBe(15);
   });
 
-  for (const id of ['campo-de-borja', 'cangas', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']) {
+  for (const id of ['alicante', 'campo-de-borja', 'cangas', 'costers-del-segre', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']) {
     const story = loadStory(id) as Story;
     const guide = json<Guide>(`content/guides/${id}.json`);
     const names = new Set(json<{ features: Array<{ properties: { name: string } }> }>(`data/story/names-${id}.geojson`).features.map((f) => f.properties.name));

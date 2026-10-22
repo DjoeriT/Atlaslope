@@ -128,6 +128,8 @@ BOUNDS['monterrei'] = [-7.70, 41.75, -7.10, 42.15]
 BOUNDS['navarra'] = [-2.65, 41.90, -1.35, 42.90]  # as fetch_layers.py
 BOUNDS['somontano'] = [-0.50, 41.85, 0.55, 42.40]  # as fetch_layers.py
 BOUNDS['campo-de-borja'] = [-2.05, 41.60, -1.20, 42.00]  # as fetch_layers.py
+BOUNDS['alicante'] = [-1.4, 38.1, 0.35, 38.9]  # as fetch_layers.py
+BOUNDS['costers-del-segre'] = [0.2, 41.3, 1.4, 42.3]
 TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most; soft edge between 27% and 33% slope
 
 if __name__ == '__main__':

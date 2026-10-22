@@ -131,6 +131,15 @@ MAIN += ("Río Miño", "Río Sil")
 CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos", "Sober", "Pantón", "Quiroga", "Amandi", "Os Peares",
                                   "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
 
+# Alicante and Costers del Segre (map tours batch 4, 22 Oct 2026)
+BBOX["alicante"] = (-1.4, 38.1, 0.35, 38.9)  # Sierra del Carche to Cabo de la Nao, Villena to Alicante
+BBOX["costers-del-segre"] = (0.2, 41.3, 1.4, 42.3)  # Poblet to the Montsec, Raimat to Pallars
+MAIN += ("Río Vinalopó", "Riu Segre", "Río Segre")
+CONTENT_TOWNS["alicante"] = ["Villena", "Alicante", "Dénia", "Caudete", "Abanilla", "Jumilla", "Xàbia", "Alcoy", "Cocentaina", "Benissa", "Pinoso",
+                             "Monóvar", "Novelda", "Elda", "Teulada", "Pedreguer", "Muro de Alcoy"]
+CONTENT_TOWNS["costers-del-segre"] = ["Lleida", "Raimat", "Artesa de Segre", "Balaguer", "Tàrrega", "Les Borges Blanques", "Tremp", "Vallbona de les Monges",
+                                      "Vimbodí i Poblet", "Cervera", "Agramunt", "Almenar", "Albesa", "Juneda", "Alfarràs", "Vilosell"]
+
 
 # Txakoli tours batch 1 (22 Oct 2026): Getariako Txakolina, Bizkaiko Txakolina, Arabako Txakolina
 BBOX["txakoli-getaria"] = (-2.40, 43.18, -1.85, 43.42)
@@ -174,6 +183,7 @@ FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serr
 FORCE_RANGES |= {"Sierra de Urbasa", "Sierra de Andía"}  # Navarra (batch 3)
 FORCE_RANGES |= {"Sierra de Guara", "Sierra de Balcés", "Sierra de Salinas"}  # Somontano (batch 3)
 FORCE_RANGES |= {"Moncayo", "Sierra del Moncayo"}  # Campo de Borja (batch 3)
+FORCE_RANGES |= {"Sierra de la Oliva", "Serra de la Carrasqueta", "Sierra de Carrasqueta", "Sierra del Maigmó", "Sierra del Carche", "Serra del Montsec", "Montsec", "Serra de Prades"}
 
 
 def spread(items, n, first=()):

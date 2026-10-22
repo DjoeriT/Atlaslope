@@ -49,6 +49,10 @@ export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
   navarra: [{ id: 'marlSandstone', color: '#00FF00' }, { id: 'alluvial', color: '#B2D9D9' }],
   somontano: [{ id: 'limestone', color: '#80FFFF' }, { id: 'gypsum', color: '#FFD9D9' }, { id: 'sandstoneMudstone', color: '#FFCC4D' }, { id: 'terraces', color: '#B2D9D9' }],
   'campo-de-borja': [{ id: 'limestone', color: '#FFFFD9' }, { id: 'redClay', color: '#FFFF4D' }, { id: 'terraces', color: '#D9D9D9' }],
+  'ribeira-sacra': [{ id: 'slate', color: '#80804D' }, { id: 'granite', color: '#FF4D80' }, { id: 'granite2', color: '#FF80FF' }],
+  'ribera-del-duero': [{ id: 'ochreClay', color: '#FFFF80' }, { id: 'terraces', color: '#D9D9B2' }, { id: 'limestone', color: '#FFFFB2' }],
+  alicante: [{ id: 'limestone', color: '#FF804D' }, { id: 'limeMarl', color: '#FFD9B2' }, { id: 'dolomite', color: '#B2FFFF' }],
+  'costers-del-segre': [{ id: 'montsec', color: '#B2FF00' }, { id: 'limestone', color: '#FFEDB2' }, { id: 'sandClay', color: '#D9D9D9' }],
 };
 
 /** The key items for a story's rock colours: the guide's own word and the colour. */

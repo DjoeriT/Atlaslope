@@ -17,6 +17,8 @@ BBOX["monterrei"] = (-7.70, 41.75, -7.10, 42.15)
 BBOX["navarra"] = (-2.65, 41.90, -1.35, 42.90)  # as fetch_layers.py
 BBOX["somontano"] = (-0.50, 41.85, 0.55, 42.40)  # as fetch_layers.py
 BBOX["campo-de-borja"] = (-2.05, 41.60, -1.20, 42.00)  # as fetch_layers.py
+BBOX["alicante"] = (-1.4, 38.1, 0.35, 38.9)  # as fetch_layers.py
+BBOX["costers-del-segre"] = (0.2, 41.3, 1.4, 42.3)
 MARGIN = 0.4  # 0.2 left bare bands at the top and bottom of a 1400x850 view
 
 
