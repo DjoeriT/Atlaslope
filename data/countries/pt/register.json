@@ -1,0 +1,1030 @@
+{
+ "$comment": "EU register (eAmbrosia) wine entries for PT, written by Tools/countries/pull.py. Source in data/SOURCES.md.",
+ "fetched": "2026-10-22",
+ "entries": [
+  {
+   "fileNumber": "PDO-PT-A0038",
+   "giIdentifier": "EUGI00000007659",
+   "names": [
+    "Madeira",
+    "Vinho da Madeira",
+    "Madère",
+    "Vin de Madère",
+    "Madera",
+    "Madeira Wein",
+    "Madeira Wine",
+    "Vino di Madera",
+    "Madeira Wijn"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11114"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A0039",
+   "giIdentifier": "EUGI00000007660",
+   "names": [
+    "Madeirense"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "2007-05-10",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11115"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1444",
+   "giIdentifier": "EUGI00000005044",
+   "names": [
+    "Biscoitos"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2024-08-08T11:38:07.986Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "22319"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L 2024/1817, 1.7.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/1817/oj"
+    },
+    {
+     "text": "Official Journal C 2024/1740, 26.2.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/1740/oj"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1445",
+   "giIdentifier": "EUGI00000005045",
+   "names": [
+    "Pico"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2024-10-31T10:42:53.319Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "22328"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L, 2024/2792, 31.10.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/2792/oj"
+    },
+    {
+     "text": "Official Journal C, C/2024/2366, 27.3.2024",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202402366"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1446",
+   "giIdentifier": "EUGI00000005124",
+   "names": [
+    "Graciosa"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2023-10-16T13:16:21.643Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16876"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2136, 13.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302136"
+    },
+    {
+     "text": "Official Journal C 222, 26.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.222.01.0057.01.ENG&toc=OJ%3AC%3A2023%3A222%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1449",
+   "giIdentifier": "EUGI00000005011",
+   "names": [
+    "Tavira"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10909"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1450",
+   "giIdentifier": "EUGI00000005184",
+   "names": [
+    "Lagoa"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10986"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1452",
+   "giIdentifier": "EUGI00000005188",
+   "names": [
+    "Portimão"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11458"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1454",
+   "giIdentifier": "EUGI00000005202",
+   "names": [
+    "Lagos"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10988"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1455",
+   "giIdentifier": "EUGI00000005261",
+   "names": [
+    "Lafões"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16896"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1457",
+   "giIdentifier": "EUGI00000005241",
+   "names": [
+    "Setúbal"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16889"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)885447",
+     "uri": "40449"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1460",
+   "giIdentifier": "EUGI00000005761",
+   "names": [
+    "Palmela"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-12-19T09:20:09.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11428"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)867796",
+     "uri": "40434"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1461",
+   "giIdentifier": "EUGI00000005568",
+   "names": [
+    "Colares"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11498"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1462",
+   "giIdentifier": "EUGI00000005567",
+   "names": [
+    "Carcavelos"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11497"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1463",
+   "giIdentifier": "EUGI00000005565",
+   "names": [
+    "Bucelas"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11495"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1465",
+   "giIdentifier": "EUGI00000005564",
+   "names": [
+    "Torres Vedras"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "17600"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1466",
+   "giIdentifier": "EUGI00000006341",
+   "names": [
+    "Trás-os-Montes"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11822"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1468",
+   "giIdentifier": "EUGI00000005561",
+   "names": [
+    "Alenquer"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10586"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1469",
+   "giIdentifier": "EUGI00000005560",
+   "names": [
+    "Óbidos"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11491"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1470",
+   "giIdentifier": "EUGI00000005558",
+   "names": [
+    "Encostas d'Aire"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16766"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1471",
+   "giIdentifier": "EUGI00000005556",
+   "names": [
+    "Arruda"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11490"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1534",
+   "giIdentifier": "EUGI00000003963",
+   "names": [
+    "Dão"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16845"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1294554",
+     "uri": "40629"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1537",
+   "giIdentifier": "EUGI00000004201",
+   "names": [
+    "Bairrada"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2023-10-16T13:15:14.473Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11155"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal C 224, 27.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.224.01.0043.01.ENG&toc=OJ%3AC%3A2023%3A224%3ATOC"
+    },
+    {
+     "text": "Official Journal L 2023/2146, 13.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302146"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1539",
+   "giIdentifier": "EUGI00000004965",
+   "names": [
+    "Douro"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2026-07-16T10:17:45.241Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "19506"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1540",
+   "giIdentifier": "EUGI00000006172",
+   "names": [
+    "Porto",
+    "Port",
+    "vinho do Porto",
+    "Port Wine",
+    "vin de Porto",
+    "Oporto",
+    "Portvin",
+    "Portwein",
+    "Portwijn"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "79580",
+    "11232"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2013)3519517",
+     "uri": "19492"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1541",
+   "giIdentifier": "EUGI00000006445",
+   "names": [
+    "Távora-Varosa"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "2004-04-14",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11535"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1591434",
+     "uri": "41201"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1542",
+   "giIdentifier": "EUGI00000003742",
+   "names": [
+    "Alentejo"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1996-11-15",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10849"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1148940",
+     "uri": "38319"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1544",
+   "giIdentifier": "EUGI00000004262",
+   "names": [
+    "DoTejo"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "2011-12-23",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11154"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PDO-PT-A1545",
+   "giIdentifier": "EUGI00000003864",
+   "names": [
+    "Vinho Verde"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "1991-12-24",
+   "modificationDate": "2024-11-13T15:37:14.869Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16925"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L, 2024/2583, 1.10.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/2583/oj"
+    },
+    {
+     "text": "Corrigendum, Official Journal C, C/2024/90057, 14.8.2024 (PT version)",
+     "uri": "http://data.europa.eu/eli/C/2024/3412/corrigendum/2024-08-14/oj"
+    },
+    {
+     "text": "Official Journal C, C/2024/3412, 29.5.2024",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202403412"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PDO-PT-A1546",
+   "giIdentifier": "EUGI00000005482",
+   "names": [
+    "Beira Interior"
+   ],
+   "type": "PDO",
+   "status": "registered",
+   "euProtectionDate": "2004-04-14",
+   "modificationDate": "2023-10-18T12:13:44.542Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11475"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal C 208, 15.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.208.01.0080.01.ENG&toc=OJ%3AC%3A2023%3A208%3ATOC"
+    },
+    {
+     "text": "Official Journal L 2023/2179, 17.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302179"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-02350",
+   "giIdentifier": "EUGI00000015118",
+   "names": [
+    "Beira Atlântico"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2017-03-02",
+   "modificationDate": "2024-02-26T16:34:02.845Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [],
+   "publications": [
+    {
+     "text": "Official Journal L, 2024/698, 26.02.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/698/oj"
+    },
+    {
+     "text": "Official Journal C 344, 29.9.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.344.01.0242.01.ENG&toc=OJ%3AC%3A2023%3A344%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-02351",
+   "giIdentifier": "EUGI00000015124",
+   "names": [
+    "Terras de Cister"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2017-03-02",
+   "modificationDate": "2023-10-18T12:11:36.478Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2173, 17.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302173"
+    },
+    {
+     "text": "Official Journal C 137, 20.4.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.137.01.0012.01.ENG&toc=OJ%3AC%3A2023%3A137%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-02352",
+   "giIdentifier": "EUGI00000015119",
+   "names": [
+    "Terras do Dão"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2017-03-02",
+   "modificationDate": "2023-10-18T12:14:49.474Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2182, 17.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302182"
+    },
+    {
+     "text": "Official Journal C 109, 24.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.109.01.0073.01.ENG&toc=OJ%3AC%3A2023%3A109%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-02355",
+   "giIdentifier": "EUGI00000015120",
+   "names": [
+    "Terras da Beira"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2017-03-10",
+   "modificationDate": "2023-10-16T11:45:39.573Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2148 13.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302148"
+    },
+    {
+     "text": "Official Journal C 116, 31.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.116.01.0034.01.ENG&toc=OJ%3AC%3A2023%3A116%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A0040",
+   "giIdentifier": "EUGI00000007662",
+   "names": [
+    "Terras Madeirenses"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2007-04-28",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11116"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PGI-PT-A0124",
+   "giIdentifier": "EUGI00000004926",
+   "names": [
+    "Duriense"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2007-04-28",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10645"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PGI-PT-A1447",
+   "giIdentifier": "EUGI00000005125",
+   "names": [
+    "Açores"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2006-01-26",
+   "modificationDate": "2023-10-16T12:35:29.803Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16882"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2139, 13.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302139"
+    },
+    {
+     "text": "Official Journal C 200, 8.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.200.01.0010.01.ENG&toc=OJ%3AC%3A2023%3A200%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1448",
+   "giIdentifier": "EUGI00000005001",
+   "names": [
+    "Algarve"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "1999-02-19",
+   "modificationDate": "2023-12-19T10:16:32.230Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10902"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L 2023/2813, 18.12.23",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302813"
+    },
+    {
+     "text": "Official Journal C 274, 3.8.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.274.01.0027.01.ENG&toc=OJ%3AC%3A2023%3A274%3ATOC"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1459",
+   "giIdentifier": "EUGI00000005402",
+   "names": [
+    "Península de Setúbal"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2009-08-01",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10998"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1204445",
+     "uri": "40528"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1467",
+   "giIdentifier": "EUGI00000006342",
+   "names": [
+    "Transmontano"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2007-04-28",
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "11052"
+   ],
+   "publications": []
+  },
+  {
+   "fileNumber": "PGI-PT-A1535",
+   "giIdentifier": "EUGI00000004659",
+   "names": [
+    "Lisboa"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2009-08-08",
+   "modificationDate": "2024-07-26T18:23:14.573Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "22310"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal L, 2024/1863, 5.7.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/1863/oj"
+    },
+    {
+     "text": "Official Journal C/2024/1215, 31.01.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/1215/oj"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1536",
+   "giIdentifier": "EUGI00000003622",
+   "names": [
+    "Minho"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "1999-02-19",
+   "modificationDate": "2019-07-19T10:11:30.000Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "16913"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1608995",
+     "uri": "38307"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1543",
+   "giIdentifier": "EUGI00000004834",
+   "names": [
+    "Alentejano"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2004-04-16",
+   "modificationDate": "2026-07-24T10:28:53.685Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "10963"
+   ],
+   "publications": [
+    {
+     "text": "Ares(2017)1294500",
+     "uri": "40795"
+    }
+   ]
+  },
+  {
+   "fileNumber": "PGI-PT-A1547",
+   "giIdentifier": "EUGI00000005421",
+   "names": [
+    "Tejo"
+   ],
+   "type": "PGI",
+   "status": "registered",
+   "euProtectionDate": "2009-08-08",
+   "modificationDate": "2026-04-14T13:55:05.425Z",
+   "amendmentInProgress": false,
+   "productCategories": [
+    1
+   ],
+   "summarySheets": [
+    "22337"
+   ],
+   "publications": [
+    {
+     "text": "Official Journal C, C/2026/2136, 14.04.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/2136/oj"
+    },
+    {
+     "text": "Official Journal L, 2023/2814, 18.12.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302814"
+    },
+    {
+     "text": "Official Journal C 255, 20.7.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.255.01.0013.01.ENG&toc=OJ%3AC%3A2023%3A255%3ATOC"
+    }
+   ]
+  }
+ ]
+}
