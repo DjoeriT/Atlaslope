@@ -43,6 +43,8 @@ Fields, all in plain English, short, one idea per sentence:
 - tastes.text: the spec's own description of the wines, short.
 - famous.styles: up to 4 named styles or labels the spec defines (e.g. Reserva, Garrafeira, Espumante, Colheita Tardia), each
   {"name", "text"} with text at most 15 words giving its rule. producers.items: [] (the spec names none; leave it).
+Limits (src/facts/check.ts; batch 1 broke 19 of them): why.text at most 25 words, tastes.text at most 40, at most 4 famous styles,
+each famous text at most 15 words.
 Every cite is "<source>:p<n>" for a page you read it on. Never invent a number. Translate from Portuguese faithfully.
 """
 
