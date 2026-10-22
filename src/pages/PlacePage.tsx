@@ -97,7 +97,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const official = place.official && place.official !== place.name ? place.official : undefined;
   const level = isZone ? tc.zoneLevel : place.kind;
 
-  const photos = mosaicPics(quizzed ? photosOf(place.id) : [], zones.flatMap((z) => photosOf(z.id).slice(0, 1)));
+  const photos = mosaicPics(photosOf(place.id), zones.flatMap((z) => photosOf(z.id).slice(0, 1)));
   const main = sheet?.grapes.main ?? [];
   const others = sheet?.grapes.others ?? [];
   const kinds = (sheet?.styles.kinds ?? []).map((k) => tf.styleKinds[k]);
