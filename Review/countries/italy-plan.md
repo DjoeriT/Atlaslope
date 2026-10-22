@@ -1,7 +1,7 @@
 # Italy plan (owner approved, 22 Oct 2026, issue #149)
 
 Source report: `Review/countries/italy.md` (21 Oct 2026). Data pulled: `Review/countries/coverage.md` (22 Oct 2026).
-Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58). Decisions: `docs/architecture-decisions.md` #59-#66 (and #67-#68 after the prep), all on the recommended option [O].
+Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58). Decisions: `docs/architecture-decisions.md` #59-#66 (and #67-#70 after the prep; #70: WSET places first, other DOCGs second), all on the recommended option [O].
 
 ## Context
 - Order decided: Portugal, then France, then Italy [O, `docs/PROJECT.md`].
@@ -24,7 +24,7 @@ Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58).
    every source in `data/SOURCES.md`.
 2. Pilot: Barolo and Chianti Classico guides on the local route, from the disciplinari (Italian sources, English text).
    Pages at `/it/<place>/` (#48). Rough map screenshots to the owner, then one PR. Tokens per guide logged (re-read and new).
-3. Scale, one region per session, each on the owner's word:
+3. Scale, one region per session, each on the owner's word; the 30 WSET places first (#70):
    Piemonte; Tuscany; Veneto; Alto Adige, Trentino and Friuli; Centre (Marche, Umbria, Lazio, Abruzzo);
    South (Campania, Puglia, Basilicata); Sicily. About 7 sessions.
 4. Later: Italian Wine Scholar filter (North, Centre-South); Guides page grouping for Italy (region first);
@@ -75,6 +75,7 @@ Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58).
 - Pilot guides: 2 x 0.75M = ~1.5M, about 90 percent re-read (Ebro split [V]).
 - Pilot engineering (disciplinari source, outlines, regions level, layers): ~5-10M [A]; the Portugal pilot spent 18.9M re-read,
   mostly tooling [V]; the country model is paid, so Italy should be lower. Hard stop at 1.5x and report.
-- WSET L3 list: 30 places (#68: Valpolicella and Soave one place each) x 0.75M = ~23M [V count 22 Oct 2026 prep, A rate],
+- First wave (#70): 30 WSET places x 0.75M = ~23M, plus outlines at ~0.1-0.2M a place [A] = ~3-6M; about 90 percent re-read.
+- Second wave: about 55-65 other DOCGs [A] = ~41-49M plus ~6-13M outlines, each region on the owner's word [V count 22 Oct 2026 prep, A rate],
   region by region, about 90 percent re-read. Prep findings: `docs/handoffs/2026-10-22-italy-prep.md`.
 - This plan: one session, ~0.3M so far, almost all re-read [A, no meter read].

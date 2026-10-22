@@ -49,6 +49,10 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
   your own `claude/...` branch, one PR per slice, merge on green CI (and after ReviewBot has reported, where it runs). Never push `main`, force-push, rebase pushed history, push to someone
   else's branch, or move or delete a tag. A refused push means stop and tell him.
+- **Auto-merge and Auto-fix on every slice PR** (owner, 22 Oct 2026, after he pressed "check and merge" six times for #209 and #210):
+  right after opening your own `claude/...` PR, turn on GitHub auto-merge (merge commit, never squash or rebase) and the app's Auto-fix,
+  so green CI merges it and a failure, conflict or comment wakes you; no "check CI" buttons. Where ReviewBot runs, turn auto-merge on
+  only after it has reported. A run that hangs (no failure) is reported to him; a second hang on the same step gets an issue.
 - **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
   rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
 - **One worktree per session** (22 Oct 2026: two sessions shared the main checkout; the country-model session committed onto the
