@@ -22,3 +22,15 @@ Detail: `l3-table.md` (WSET names, eAmbrosia), `licences.md`, `specs-outlines.md
   (lost on reboot). Make `data/raw` a real folder in the main checkout (git-ignored) and move them to `data/raw/countries/de/`.
 - Owner: confirm the 6 single-vineyard PDOs as zones (#74), not places.
 - Pilot: Rheingau outline source; Mosel outline size; Hessen and BKG hosts from a browser.
+
+## Mosel outline: size options (LeadBot, 22 Oct 2026, measured on the LWK `gu` layer, EPSG:3035) [V]
+The `gu` layer is the vineyard land itself (118.8 km2 in 5,304 bits), not a municipal envelope like Portugal's or Italy's outlines.
+It also holds Mittelrhein, Nahe and Pfalz (not Ahr or Rheinhessen). Ways to make it app-sized (Portugal's whole file is 368 KB):
+| Route | km2 | Parts | Size |
+|---|---|---|---|
+| Union, simplify 40 m (helper) | ~109 (-8%) | 5,304 | 610 KB |
+| Close gaps 50 m, simplify 20 m | 173.7 | 528 | 216 KB |
+| Close gaps 150 m, simplify 40 m | 215.7 | 208 | 86 KB |
+| Close gaps 300 m, simplify 40 m | 276.5 | 83 | 54 KB |
+Recommended for the pilot [A]: 150 m (86 KB) as the place outline, marked "approximate" (as #62), with the Einzellagen as zones (#74)
+carrying the precise shapes per place. To decide in the pilot, with screenshots.
