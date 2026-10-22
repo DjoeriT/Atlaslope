@@ -1,0 +1,710 @@
+{
+ "aglianico-del-taburno": [
+  {
+   "n": 3,
+   "alt": "Hills and a village seen over olive trees near Tocco Caudio"
+  }
+ ],
+ "aglianico-del-vulture": [
+  {
+   "n": 4,
+   "alt": "Vineyard in front of Monte Vulture under a cloudy sky"
+  },
+  {
+   "n": 3,
+   "alt": "Green rolling hills near Monte Vulture"
+  }
+ ],
+ "alta-langa": [
+  {
+   "n": 6,
+   "alt": "Vineyard hills in the Langhe with a path between the rows"
+  },
+  {
+   "n": 4,
+   "alt": "Langhe village among vineyards with the Alps behind"
+  },
+  {
+   "n": 13,
+   "alt": "Langhe vineyards and houses below the snowy Alps"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard slopes with sunflowers in the foreground"
+  },
+  {
+   "n": 8,
+   "alt": "Vineyard rows on a Langhe hillside with wooden posts"
+  }
+ ],
+ "alto-adige": [
+  {
+   "n": 17,
+   "alt": "Terraced vineyard seen from above in South Tyrol"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyards and a winding road above a lake in the mountains"
+  },
+  {
+   "n": 3,
+   "alt": "Vineyard in a mountain valley with a road behind"
+  },
+  {
+   "n": 14,
+   "alt": "Terraced vineyard slopes with cypress trees above the valley"
+  },
+  {
+   "n": 6,
+   "alt": "Valley and vineyards seen past a wooden fence"
+  }
+ ],
+ "asti": [
+  {
+   "n": 6,
+   "alt": "Castle village on a hill among vineyards"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard hills with a path between the rows"
+  },
+  {
+   "n": 16,
+   "alt": "Piedmont vineyards and farms below the snowy Alps"
+  },
+  {
+   "n": 4,
+   "alt": "Village and vineyards in the Piedmont hills with the Alps behind"
+  },
+  {
+   "n": 9,
+   "alt": "Vineyard rows seen through tall grass"
+  }
+ ],
+ "barbaresco": [
+  {
+   "n": 1,
+   "alt": "Vineyard slopes and village seen from a hill near Barbaresco"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard rows on a green hillside near Barbaresco"
+  }
+ ],
+ "barbera-d-asti": [
+  {
+   "n": 1,
+   "alt": "Village and vineyards in the Piedmont hills with the Alps behind"
+  },
+  {
+   "n": 12,
+   "alt": "Vineyards on rolling hills under a blue sky"
+  },
+  {
+   "n": 13,
+   "alt": "Piedmont vineyards and farms below the snowy Alps"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard rows on a hillside with wooden posts"
+  },
+  {
+   "n": 14,
+   "alt": "Vine rows with wooden posts under a blue sky"
+  }
+ ],
+ "barbera-del-monferrato-superiore": [
+  {
+   "n": 2,
+   "alt": "Village and vineyards in the Piedmont hills with the Alps behind"
+  },
+  {
+   "n": 3,
+   "alt": "Young vineyard on a hilltop under a blue sky"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard rows on a hillside with wooden posts"
+  },
+  {
+   "n": 12,
+   "alt": "Green meadow and vineyard on a hillside"
+  },
+  {
+   "n": 13,
+   "alt": "Piedmont vineyards and farms below the snowy Alps"
+  }
+ ],
+ "bolgheri": [
+  {
+   "n": 3,
+   "alt": "Vineyard rows with olive trees and a hill behind"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard rows at dusk with a pink sky"
+  }
+ ],
+ "brachetto-dacqui": [
+  {
+   "n": 1,
+   "alt": "Bare vineyard rows on hills in winter"
+  },
+  {
+   "n": 3,
+   "alt": "Vineyard rows on a hillside in winter"
+  },
+  {
+   "n": 2,
+   "alt": "Green hills under a big cloudy sky"
+  }
+ ],
+ "brunello-di-montalcino": [
+  {
+   "n": 5,
+   "alt": "Vineyard rows on a green slope with hills behind"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard rows seen over a stone wall in the Tuscan hills"
+  },
+  {
+   "n": 1,
+   "alt": "Vineyard and olive trees on a Tuscan slope"
+  },
+  {
+   "n": 4,
+   "alt": "Farmhouse on a wooded hill with mountains behind"
+  },
+  {
+   "n": 3,
+   "alt": "Wide view over fields and hills under a clear sky"
+  }
+ ],
+ "canelli": [
+  {
+   "n": 2,
+   "alt": "Village and vineyards in the Piedmont hills with the Alps behind"
+  },
+  {
+   "n": 3,
+   "alt": "Vineyard rows on a hillside with wooden posts"
+  },
+  {
+   "n": 6,
+   "alt": "Piedmont vineyards and farms below the snowy Alps"
+  }
+ ],
+ "carmignano": [
+  {
+   "n": 1,
+   "alt": "Bunch of dark grapes hanging among vine leaves"
+  },
+  {
+   "n": 2,
+   "alt": "Ripening grapes on the vine"
+  }
+ ],
+ "casauria": [
+  {
+   "n": 1,
+   "alt": "Olive trees and hills in Abruzzo"
+  },
+  {
+   "n": 2,
+   "alt": "Olive grove and hills with mountains far behind"
+  }
+ ],
+ "castel-del-monte-bombino-nero": [
+  {
+   "n": 7,
+   "alt": "View from Minervino Murge over the plain below"
+  }
+ ],
+ "castel-del-monte-nero-di-troia-riserva": [
+  {
+   "n": 7,
+   "alt": "View from Minervino Murge over the plain below"
+  }
+ ],
+ "castel-del-monte-rosso-riserva": [
+  {
+   "n": 7,
+   "alt": "View from Minervino Murge over the plain below"
+  }
+ ],
+ "chianti": [
+  {
+   "n": 10,
+   "alt": "Villa on a hilltop above vineyard rows in Chianti"
+  },
+  {
+   "n": 16,
+   "alt": "Vineyard rows in autumn colour in Chianti"
+  },
+  {
+   "n": 3,
+   "alt": "Bunches of dark grapes on the vine"
+  },
+  {
+   "n": 6,
+   "alt": "Vineyard with cypress trees and wooded hills in Chianti"
+  },
+  {
+   "n": 15,
+   "alt": "Terraced vineyard slope in Chianti"
+  }
+ ],
+ "colli-di-conegliano": [
+  {
+   "n": 3,
+   "alt": "Vineyard above the plain near Conegliano"
+  }
+ ],
+ "colli-euganei-fior-darancio": [
+  {
+   "n": 3,
+   "alt": "Villa among vineyard rows in the Euganean Hills"
+  }
+ ],
+ "collio": [
+  {
+   "n": 2,
+   "alt": "Vineyard rows in the Collio hills near Oslavia"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard path between bare vines near Cormons"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard terraces on a hillside near Cormons"
+  }
+ ],
+ "colline-teramane-montepulciano-dabruzzo": [
+  {
+   "n": 1,
+   "alt": "Vineyards on the Teramo hills under a dramatic sky"
+  },
+  {
+   "n": 3,
+   "alt": "Hills and village roofs in Abruzzo under a blue sky"
+  }
+ ],
+ "conegliano-valdobbiadene": [
+  {
+   "n": 4,
+   "alt": "Vineyard slopes with mountains behind"
+  },
+  {
+   "n": 5,
+   "alt": "Vines in front of hills near Valdobbiadene"
+  },
+  {
+   "n": 6,
+   "alt": "Vineyard in front of the plain and a town"
+  },
+  {
+   "n": 7,
+   "alt": "Grape bunch hanging over a grassy vineyard path"
+  }
+ ],
+ "conero": [
+  {
+   "n": 1,
+   "alt": "Fields and a hilltop town seen across the countryside"
+  }
+ ],
+ "dolcetto-d-alba": [
+  {
+   "n": 6,
+   "alt": "Castle and village among vineyards in the Langhe"
+  },
+  {
+   "n": 7,
+   "alt": "Langhe vineyard hills with a path between the rows"
+  },
+  {
+   "n": 12,
+   "alt": "Langhe hills in autumn colours"
+  },
+  {
+   "n": 13,
+   "alt": "Vineyard slopes in the Langhe"
+  },
+  {
+   "n": 16,
+   "alt": "Winding road and vineyards seen from a hill"
+  }
+ ],
+ "etna": [
+  {
+   "n": 2,
+   "alt": "Vineyard rows with a small church and hills behind"
+  },
+  {
+   "n": 1,
+   "alt": "Vineyard in autumn colour below Mount Etna"
+  }
+ ],
+ "franciacorta": [
+  {
+   "n": 1,
+   "alt": "Villa above vineyards in Franciacorta"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard rows with a hill behind"
+  },
+  {
+   "n": 8,
+   "alt": "Vineyard slope with a hilltop village"
+  },
+  {
+   "n": 3,
+   "alt": "Vineyard path between autumn-coloured vines"
+  },
+  {
+   "n": 5,
+   "alt": "Farmhouse behind a vineyard"
+  }
+ ],
+ "friuli-grave": [
+  {
+   "n": 3,
+   "alt": "Vineyard with snowy mountains behind"
+  }
+ ],
+ "gattinara": [
+  {
+   "n": 3,
+   "alt": "Hills seen from Gattinara"
+  }
+ ],
+ "gavi": [
+  {
+   "n": 1,
+   "alt": "Vineyard in front of a wooded hill near Gavi"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard rows with a hill and farm behind"
+  }
+ ],
+ "ghemme": [
+  {
+   "n": 1,
+   "alt": "Vineyard slope in autumn colours near Ghemme"
+  }
+ ],
+ "greco-di-tufo": [
+  {
+   "n": 1,
+   "alt": "Vineyard rows beside woodland in autumn near Tufo"
+  }
+ ],
+ "montecucco-sangiovese": [
+  {
+   "n": 2,
+   "alt": "Tuscan hills under a golden evening sky"
+  },
+  {
+   "n": 1,
+   "alt": "Winery building beside vineyard rows in the Tuscan hills"
+  }
+ ],
+ "montepulciano-d-abruzzo": [
+  {
+   "n": 5,
+   "alt": "Vineyard in autumn colour with a small chapel behind"
+  },
+  {
+   "n": 6,
+   "alt": "Vineyard path in autumn leading to a white house"
+  },
+  {
+   "n": 1,
+   "alt": "Vineyard and hills under a dramatic sky in Abruzzo"
+  },
+  {
+   "n": 13,
+   "alt": "Vineyard rows in red autumn colour"
+  },
+  {
+   "n": 9,
+   "alt": "Hills and eroded slopes in Abruzzo"
+  }
+ ],
+ "nizza": [
+  {
+   "n": 1,
+   "alt": "Village and vineyards in the Piedmont hills with the Alps behind"
+  },
+  {
+   "n": 3,
+   "alt": "Piedmont vineyards and farms below the snowy Alps"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard slope with a village on the hill behind"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard rows climbing a hillside"
+  }
+ ],
+ "offida": [
+  {
+   "n": 1,
+   "alt": "Vineyard in front of the hilltop town of Offida"
+  },
+  {
+   "n": 2,
+   "alt": "Marche hills with olive trees and a hill town"
+  }
+ ],
+ "oltrepo-pavese-metodo-classico": [
+  {
+   "n": 2,
+   "alt": "Green hill with a church tower in the Oltrepo Pavese"
+  }
+ ],
+ "orvieto": [
+  {
+   "n": 2,
+   "alt": "Vineyard rows with a lake behind near Baschi"
+  },
+  {
+   "n": 3,
+   "alt": "Orvieto on its hill above the valley"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard slope near Corbara"
+  }
+ ],
+ "piave-malanotte": [
+  {
+   "n": 2,
+   "alt": "Vineyard with a town on the plain behind"
+  }
+ ],
+ "prosecco": [
+  {
+   "n": 3,
+   "alt": "Vineyard hills in the Prosecco area"
+  },
+  {
+   "n": 5,
+   "alt": "Hillside vineyard with a village on the ridge"
+  },
+  {
+   "n": 6,
+   "alt": "Vineyard slope with a village and hills behind"
+  },
+  {
+   "n": 20,
+   "alt": "Vineyard slopes and hills in the Prosecco area"
+  },
+  {
+   "n": 16,
+   "alt": "Vineyard terraces on a hillside with a building on top"
+  }
+ ],
+ "roero": [
+  {
+   "n": 9,
+   "alt": "Vineyards in the Langhe seen from above"
+  },
+  {
+   "n": 11,
+   "alt": "Vine rows beside a grass track under a blue sky"
+  },
+  {
+   "n": 3,
+   "alt": "Autumn vineyard slope with the Alps behind"
+  },
+  {
+   "n": 10,
+   "alt": "Vineyard hills with a hilltop village"
+  },
+  {
+   "n": 8,
+   "alt": "Green hills and wildflowers in the Langhe"
+  }
+ ],
+ "romagna-albana": [
+  {
+   "n": 1,
+   "alt": "Fields and a hilltop tower in the Romagna hills"
+  },
+  {
+   "n": 3,
+   "alt": "Green meadow among Romagna hills"
+  },
+  {
+   "n": 4,
+   "alt": "Romagna hills with a ridge in the distance"
+  }
+ ],
+ "ruche-di-castagnole-monferrato": [
+  {
+   "n": 1,
+   "alt": "Hills and fields at sunset in the Monferrato"
+  }
+ ],
+ "scanzo": [
+  {
+   "n": 2,
+   "alt": "Vineyards on green hills near Scanzorosciate"
+  },
+  {
+   "n": 3,
+   "alt": "Vine rows on a hillside with wooded hills behind"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard with houses on a hill behind"
+  }
+ ],
+ "soave": [
+  {
+   "n": 7,
+   "alt": "Soave castle above vineyards"
+  },
+  {
+   "n": 8,
+   "alt": "Vineyard hill above Soave with a ploughed field in front"
+  },
+  {
+   "n": 2,
+   "alt": "Green vineyard hills near Soave"
+  },
+  {
+   "n": 1,
+   "alt": "Soave castle and town at sunset"
+  }
+ ],
+ "suvereto": [
+  {
+   "n": 1,
+   "alt": "Wooded hills with a village near Suvereto"
+  }
+ ],
+ "trentino": [
+  {
+   "n": 17,
+   "alt": "Vineyard slope in autumn with cypress trees"
+  },
+  {
+   "n": 12,
+   "alt": "Village among vineyard terraces in the Trentino valley"
+  },
+  {
+   "n": 18,
+   "alt": "Vineyard rows below cliffs in the Dolomites"
+  },
+  {
+   "n": 16,
+   "alt": "Valley and mountains seen through trees"
+  },
+  {
+   "n": 10,
+   "alt": "Vineyard in autumn colour in a mountain valley"
+  }
+ ],
+ "val-di-cornia-rosso": [
+  {
+   "n": 2,
+   "alt": "Wooded hills with a village in the Val di Cornia"
+  }
+ ],
+ "valpolicella": [
+  {
+   "n": 3,
+   "alt": "Vineyard slope with winding paths in Valpolicella"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard rows in golden light with hills behind"
+  },
+  {
+   "n": 10,
+   "alt": "Vineyard with cypress trees and a green ridge"
+  },
+  {
+   "n": 13,
+   "alt": "Vineyard in front of a hill above a village"
+  },
+  {
+   "n": 1,
+   "alt": "Vineyard and a winding track on a Valpolicella ridge"
+  }
+ ],
+ "valtellina-superiore": [
+  {
+   "n": 1,
+   "alt": "Cable car over steep vineyard terraces in Valtellina"
+  }
+ ],
+ "verdicchio-dei-castelli-di-jesi": [
+  {
+   "n": 2,
+   "alt": "Green vineyard with Marche hills behind"
+  },
+  {
+   "n": 1,
+   "alt": "Farmland and farmhouses in the Marche hills"
+  }
+ ],
+ "vernaccia-di-san-gimignano": [
+  {
+   "n": 3,
+   "alt": "Towers of San Gimignano above vineyard rows"
+  },
+  {
+   "n": 1,
+   "alt": "Vineyard with cypress trees and a green hill"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard rows with hills behind"
+  },
+  {
+   "n": 2,
+   "alt": "Vineyard path with San Gimignano on the horizon"
+  },
+  {
+   "n": 4,
+   "alt": "Vineyard with bare vines and a wide view"
+  }
+ ],
+ "vernaccia-di-serrapetrona": [
+  {
+   "n": 1,
+   "alt": "Vineyard rows on a steep slope below woodland"
+  }
+ ],
+ "vino-nobile-di-montepulciano": [
+  {
+   "n": 4,
+   "alt": "Vineyard rows and cypress trees in Tuscany"
+  },
+  {
+   "n": 5,
+   "alt": "Vineyard with a small pond and hills behind"
+  },
+  {
+   "n": 1,
+   "alt": "Young vineyard rows with green hills behind"
+  },
+  {
+   "n": 3,
+   "alt": "Autumn-coloured slope with a farmhouse among trees"
+  },
+  {
+   "n": 6,
+   "alt": "Montepulciano on its hill above green fields"
+  }
+ ]
+}
