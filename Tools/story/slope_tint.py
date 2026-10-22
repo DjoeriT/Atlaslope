@@ -118,14 +118,19 @@ def slope_overlay(cache, bbox, pad, colour, alpha, threshold=30.0):
 # Fetch boxes of data/story (lon/lat); padded 0.06 degrees so every stop lies inside the overlay.
 BOUNDS = {'rioja': [-3.15, 42.05, -1.65, 42.70], 'priorat': [0.65, 41.05, 1.00, 41.35]}
 BOUNDS['ribeira-sacra'] = [-7.95, 42.20, -7.05, 42.90]  # as fetch_layers.py
+BOUNDS['ribera-del-duero'] = [-4.5, 41.35, -2.85, 41.95]
 TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most; soft edge between 27% and 33% slope
 
 if __name__ == '__main__':
     import json, pathlib, sys
     root = pathlib.Path(__file__).resolve().parents[2]
     cache = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else root / '.cache/terrarium'
-    out = {}
+    import os
+    only = os.environ.get('STORY_ONLY')  # e.g. STORY_ONLY=ribera-del-duero: tint just that guide, keep the other entries
+    out = json.loads((root / 'data/story/slope-tints.json').read_text()) if only else {}
     for gid, box in BOUNDS.items():
+        if only and gid not in only.split(','):
+            continue
         url, corners, st = slope_overlay(cache, box, 0.06, TINT_RGB, TINT_ALPHA)
         (root / f'data/story/slope-{gid}.png').write_bytes(base64.b64decode(url.split(',', 1)[1]))
         out[gid] = {'coordinates': corners, 'steepShare': st['steep_share']}

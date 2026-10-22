@@ -39,6 +39,12 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                                "Ramon Piñeiro", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Terraced vineyards on a steep slope above the Sil at Doade, with the river below", "50% 50%"),
     "ribeira-sacra-weather-1": ("File:Viñedos cerca del Canón del Sil en la Ribeira Sacra.jpg", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_cerca_del_Can%C3%B3n_del_Sil_en_la_Ribeira_Sacra.jpg",
                                 "Tanja Freibott", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Old vines in autumn colour behind a dry-stone wall, with villages on the hills under a grey sky near the Sil canyon", "50% 50%"),
+    "ribera-belt-1": ("File:Viñedos Bodega Viña Sastre - Hermanos Sastre Ribera del Duero.JPG", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_Bodega_Vi%C3%B1a_Sastre_-_Hermanos_Sastre_Ribera_del_Duero.JPG",
+                      "Pravdaverita", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Bare winter vines in front of a winery in the Ribera del Duero", "50% 50%"),
+    "ribera-pintia-1": ("File:Necrópolis de Las Ruedas.jpg", "https://commons.wikimedia.org/wiki/File:Necr%C3%B3polis_de_Las_Ruedas.jpg",
+                        "Miguel Alan Córdova Silva", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Standing stones of the Las Ruedas necropolis at Pintia, with the Duero hills behind", "50% 40%"),
+    "ribera-soils-1": ("File:Clear cultivation in Viñedos en la Ribera del Duero.jpg", "https://commons.wikimedia.org/wiki/File:Clear_cultivation_in_Vi%C3%B1edos_en_la_Ribera_del_Duero.jpg",
+                       "Raúl Hernández González", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Vine rows on ochre sandy clay in the Ribera del Duero", "50% 60%"),
 }
 
 
