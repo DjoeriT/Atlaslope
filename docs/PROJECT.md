@@ -82,6 +82,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
+- Countries data pull (22 Oct 2026, #149) [V]: 10.1M re-read + 0.3M new against 3-6M estimated; ~70 calls at ~140K context. A local session's base context is ~140K, not 100K: estimate calls x 140K, and run probes and checks in one script, not one call each.
 - 17 Oct: 11 sessions cost $143 for releases 6-15; ~60% was sessions re-reading their own history (428M cached reads); agents were under 1% [V].
 - 19 Oct audit: 485M tokens over 10 sessions, 97% re-reads [V].
 - Guide cost per place [V]: Andalucía 2.6M; Cataluña ~3.1M all-in (12 guides ~37M, write step 20.1M vs 5-8M estimated); packs ~25K.

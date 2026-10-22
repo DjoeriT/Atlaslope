@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-22-countries-data](2026-10-22-countries-data.md): data layer for Portugal, France, Italy pulled by script; coverage per country; brief for the country-model slice and the Douro + Vinho Verde pilot (#149, 22 Oct 2026)
 - [2026-10-22-guide-redesign-r2](2026-10-22-guide-redesign-r2.md): guide page rounds 1 and 2; owner leans C with A's calm; r2 has C1, C2, C3 (blend, recommended), sharp smaller photos, a clear map button (#148, #127, 22 Oct 2026)
 - [2026-10-21-guide-redesign](2026-10-21-guide-redesign.md): v4 mock built and reviewed; owner wants a nicer guide page that opens first, with the map unfolding from a big photo button; design round 1 brief (#148, #127, 21 Oct 2026)
 - [2026-10-21-tour-v3-restore](2026-10-21-tour-v3-restore.md): map tour round 1 and B dropped; v3 journey back, v4 mock (guide inside the journey), #182 fix and restore briefs (#148, #127, #182, 21 Oct 2026)
