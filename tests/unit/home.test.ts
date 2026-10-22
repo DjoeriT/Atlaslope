@@ -123,17 +123,19 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
       expect(n).toBe(stories.length);
       expect(list.rows.filter((r) => r.tour).map((r) => r.id).sort()).toEqual([...stories].sort());
       expect(band).toContain(`<span class="n">${n} guides</span>`);
-      expect(band).toContain(`Show all ${n} map tours`);
+      expect(band).not.toContain('morebtn'); // every tour is open, no fold (owner 22 Oct 2026)
     });
-    it('features four tours and folds the rest behind a real button', () => {
+    it('features four tours first and shows every other tour open, each with its label line and country', () => {
       expect(featured.map((g) => g.id)).toEqual(BAND_FEATURED);
-      expect(featured).toHaveLength(4);
       expect(featured.length + rest.length).toBe(n); // every tour guide has a photo, so none is left out of the band
-      expect(band).toContain('<button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="more-tours"');
-      const [feat, more] = band.split('<div class="stills more" id="more-tours" hidden>');
+      expect(band).not.toContain(' hidden>');
+      const [feat, more] = band.split('<div class="stills more" id="more-tours">');
       expect(count(feat, /class="sqbox"/g)).toBe(4);
       expect(count(more, /class="sqbox"/g)).toBe(n - 4);
-      for (const g of [...featured, ...rest]) expect(band, g.id).toContain(link(g.id));
+      for (const g of [...featured, ...rest]) {
+        expect(band, g.id).toContain(link(g.id));
+        expect(band, g.id).toContain(`<span class="meta">${g.label} · ${g.country === 'spain' ? 'Spain' : 'Portugal'}</span>`);
+      }
     });
     it('is the target of guides/#map-tours', () => {
       expect(band).toContain('id="map-tours"');
@@ -153,7 +155,7 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
         const row = list.rows.find((r) => r.photo === id)!;
         expect(t.split('</span></span>')[0].includes('class="chip"'), id).toBe(row.tour);
       }
-      expect(count(out, /class="chip"/g)).toBe(list.rows.filter((r) => r.tour && r.photo && r.country === 'spain').length); // the Spain page: region grid only
+      expect(count(out, /class="chip"/g)).toBe(2 * list.rows.filter((r) => r.tour && r.photo && r.country === 'spain').length); // the Spain page: its band and its region grid
     });
   });
 
@@ -220,7 +222,8 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
   it('has dropped the showcase, the repeated tours section, the satellite maps and the card summaries', () => {
     for (const gone of ['Showcased guide', 'hero-sat', 'class="sat"', 'Imagery: Esri', 'gcard-c', 'class="lede"', 'Show all guides', 'In short']) expect(out, gone).not.toContain(gone);
     expect(count(index, /id="map-tours"/g)).toBe(1);
-    expect(out).not.toContain('class="band"');
+    expect(count(out, /id="map-tours"/g)).toBe(1); // the Spain page has its own band
+    expect(fillCountryPage(countryHtml, list, 'portugal')).not.toContain('class="band"'); // no tours, no band, no empty state
   });
 });
 

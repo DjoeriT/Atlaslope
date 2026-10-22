@@ -24,6 +24,8 @@
 .ix{padding:1.75rem 0 2rem;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr);gap:1.5rem 2.5rem;align-items:start}
 .ix h2{font-size:2.4rem;line-height:1.05;font-weight:400}
 .ix .cnt{margin:.5rem 0 1.25rem}
+.tourlink{display:flex;align-items:center;min-height:44px;margin-top:.5rem;font-size:.95rem;color:var(--ink2)}
+.tourlink:hover{color:var(--ink)}
 .ix .reg{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
 .ix .reg a{font-size:.95rem;color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line);padding:.65rem 0 .15rem;line-height:1.2}
 .ix .reg a:hover{color:var(--ink);border-color:var(--ink)}

@@ -58,6 +58,7 @@ describe('Guides: the country index', () => {
     expect(index).toContain('id="map-tours"');
     for (const s of stats) {
       expect(index).toContain(`<a class="btn a" href="../${s.code}/">Open ${s.name}</a>`);
+      expect(index.includes(`href="../${s.code}/?tours"`), s.id).toBe(s.tours > 0); // the filter line only where the country has tours
       expect(index).toContain(line(s));
       for (const r of s.regions) expect(index, r.id).toContain(`<a href="../${s.code}/#r-${r.id}">${r.name}</a>`);
     }
