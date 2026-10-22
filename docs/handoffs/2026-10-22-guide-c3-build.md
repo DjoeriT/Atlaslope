@@ -43,7 +43,19 @@ this thread no matter what", 22 Oct 2026).
   Cangas rock key repeats "Sandstones and slates" (two colours, one unit); some stops without a photo (Commons had none usable).
 - Issues: #188 Priorat stop 6 never settles in shots-tour; #190 flaky 9-stop test (made slow, not fixed at the root).
 
+## After release 65 (owner, 22 Oct 2026) [V]
+- Release 65 live (tag release-65 on 8337e96): the 13 tours, faster map, phone "Back". Its tester note was written after publish
+  (now in Review/archive/); release notes keep slipping out of the slice PR: write the note before the publish words, every time.
+- #192 merged: "Show map" is a small link at the end of a guide's crumb line (owner option A).
+- #194: opening and closing map mode skip the view transition (owner: the page vanished and the photo came back); fact-marker test
+  fixed to the new anchors.
+- Guides page redesign: first-principles review, mock round 1 (`Review/mock-guides-r1/`, options A-E), owner picked E round 3:
+  "Explore with the map" band with 4 featured tours and a fold-out for the rest, small squares for every guide, champagne "Map tour"
+  chip on the photo (owner's one exception to "no text on photos"). Build brief `Review/mock-guides-r1/build-brief.md`; built on
+  `claude/guides-e`; heights 1440 5,915 folded (live was 16,697), 390 9,556 (live about 47,000). Rioja's band photo: rioja-2.
+- Spend [V]: Guides mock builder about 209K over its rounds, design ReviewBot 26K, build 109K.
+
 ## Open
-1. Release 65 for the tours: only on the owner's words "publish release 65".
+1. Release 66 (Guides E, #192, #194): only on the owner's words "publish release 66".
 2. Batch 2's builder worktree (agent-a13c0db72cb2d9b09) was locked by a running process; remove it with its .env.local copy.
 3. Raimat note in the guide (owner's call); Cangas rock key labels; shots-tour "imagery did not load" false flags.
