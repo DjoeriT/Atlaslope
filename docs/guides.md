@@ -54,6 +54,7 @@ a guide (one fact, once).
 **Fact sheet only** (no Terroir written yet, or a place outside Study). The same four beats, built from the fact sheet alone:
 | Part | Shows | Comes from |
 |---|---|---|
+| 22 Oct 2026 | New place sheets can be filled by `headless.py --sheets` (`pack.py facts`), first used for Portugal batch 1; no change to the guide format. | `Tools/guides/headless.py`, `Tools/guides/pack.py` |
 | Title, labels | always; no reading time | `data/places.json`, `content/curriculum.json` |
 | Spine | "Why X tastes the way it does", the sheet's why line as the lede | `why` |
 | The place | level, official name, also within, zone list | places, zone list |

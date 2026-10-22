@@ -1,5 +1,5 @@
 {
- "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it.",
+ "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it. Batch 1 Portugal tile lines (24 places, 6 regions, 22 Oct 2026) are draft, drafted from each sheet's why row; owner rewrites.",
  "spain": {
   "lede": "From Atlantic rain in the north to volcanic ash in the Canaries. Pick a region and fly in.",
   "from": [
@@ -144,6 +144,91 @@
     "vinho-verde-doc",
     "douro-doc:p10",
     "douro-doc:p11"
+   ]
+  },
+  "pt-centre": {
+   "title": "Granite, clay and a nearby sea",
+   "lede": "Dão sits in a granite basin sheltered by mountains. Bairrada is clay hills with a strong Atlantic influence.",
+   "from": [
+    "dao",
+    "bairrada",
+    "beira-interior"
+   ],
+   "cite": [
+    "dao-doc:p7",
+    "dao-doc:p8",
+    "bairrada-doc:p6",
+    "beira-interior-doc:p2",
+    "beira-interior-doc:p7"
+   ]
+  },
+  "pt-lisboa": {
+   "title": "The Atlantic coast north of the Tejo",
+   "lede": "A coastal strip with humid west winds and dry summers. Colares grows its vines in sand close to the sea.",
+   "from": [
+    "lisboa",
+    "colares",
+    "torres-vedras"
+   ],
+   "cite": [
+    "lisboa-doc:p6",
+    "lisboa-doc:p7",
+    "colares-doc:p5",
+    "colares-doc:p6",
+    "torres-vedras-doc:p6",
+    "torres-vedras-doc:p7"
+   ]
+  },
+  "pt-tejo": {
+   "title": "Plains and heath beside the Tagus",
+   "lede": "Flat alluvial plains, clay-limestone hills and sandy heath soils. About 2,800 hours of sun a year.",
+   "from": [
+    "dotejo"
+   ],
+   "cite": [
+    "dotejo-doc:p9",
+    "dotejo-doc:p10"
+   ]
+  },
+  "pt-setubal": {
+   "title": "Sand between two estuaries",
+   "lede": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with little rain.",
+   "from": [
+    "setubal",
+    "palmela"
+   ],
+   "cite": [
+    "setubal-doc:p7",
+    "setubal-doc:p9",
+    "palmela-doc:p7",
+    "palmela-doc:p8",
+    "palmela-doc:p9"
+   ]
+  },
+  "pt-alentejo": {
+   "title": "Flat, sunny and hot",
+   "lede": "About 3000 sun hours a year and hot, dry summers, on soils from limestone to granite.",
+   "from": [
+    "alentejo"
+   ],
+   "cite": [
+    "alentejo-doc:p9",
+    "alentejo-doc:p10"
+   ]
+  },
+  "pt-algarve": {
+   "title": "A hot south coast behind mountains",
+   "lede": "A dry, sunny Mediterranean coast, sheltered from cold northern winds by mountains, on poor sandy soils.",
+   "from": [
+    "lagos",
+    "portimao",
+    "tavira"
+   ],
+   "cite": [
+    "lagos-doc:p5",
+    "portimao-doc:p5",
+    "tavira-doc:p5",
+    "tavira-doc:p6"
    ]
   }
  },
@@ -835,6 +920,169 @@
    "title": "Granite and Atlantic rain",
    "cite": [
     "vinho-verde-doc"
+   ]
+  },
+  "tras-os-montes": {
+   "title": "Granite and very hot summers",
+   "cite": [
+    "tras-os-montes-doc:p7"
+   ]
+  },
+  "porto": {
+   "title": "Douro terraces, then spirit stops the ferment",
+   "cite": [
+    "porto-doc:p7",
+    "porto-doc:p11",
+    "porto-doc:p12"
+   ]
+  },
+  "tavora-varosa": {
+   "title": "High granite slopes, fresh whites",
+   "cite": [
+    "tavora-varosa-doc:p7"
+   ]
+  },
+  "dao": {
+   "title": "A granite basin ringed by mountains",
+   "cite": [
+    "dao-doc:p7",
+    "dao-doc:p8"
+   ]
+  },
+  "bairrada": {
+   "title": "Clay hills with Atlantic freshness",
+   "cite": [
+    "bairrada-doc:p6"
+   ]
+  },
+  "beira-interior": {
+   "title": "Schist and granite at 300 to 700 m",
+   "cite": [
+    "beira-interior-doc:p2",
+    "beira-interior-doc:p7"
+   ]
+  },
+  "lafoes": {
+   "title": "Terraces on the Vouga valley",
+   "cite": [
+    "lafoes-doc:p3",
+    "lafoes-doc:p5"
+   ]
+  },
+  "encostas-daire": {
+   "title": "Slopes of the Serra de Aire",
+   "cite": [
+    "encostas-daire-doc:p7",
+    "encostas-daire-doc:p8"
+   ]
+  },
+  "lisboa": {
+   "title": "An Atlantic strip north of the Tejo",
+   "cite": [
+    "lisboa-doc:p6",
+    "lisboa-doc:p7"
+   ]
+  },
+  "colares": {
+   "title": "Vines in sand close to the Atlantic",
+   "cite": [
+    "colares-doc:p5",
+    "colares-doc:p6"
+   ]
+  },
+  "carcavelos": {
+   "title": "A tiny coastal area near the Tagus mouth",
+   "cite": [
+    "carcavelos-doc:p6"
+   ]
+  },
+  "bucelas": {
+   "title": "Poor marl and limestone on the Trancão slopes",
+   "cite": [
+    "bucelas-doc:p5",
+    "bucelas-doc:p6"
+   ]
+  },
+  "torres-vedras": {
+   "title": "Atlantic climate, clay-limestone soils",
+   "cite": [
+    "torres-vedras-doc:p6",
+    "torres-vedras-doc:p7"
+   ]
+  },
+  "alenquer": {
+   "title": "Hills that hold back the Atlantic",
+   "cite": [
+    "alenquer-doc:p6"
+   ]
+  },
+  "obidos": {
+   "title": "Hills and knolls from Montejunto to Óbidos",
+   "cite": [
+    "obidos-doc:p6",
+    "obidos-doc:p7"
+   ]
+  },
+  "arruda": {
+   "title": "Hillsides under an Atlantic maritime climate",
+   "cite": [
+    "arruda-doc:p5",
+    "arruda-doc:p6"
+   ]
+  },
+  "dotejo": {
+   "title": "Flat plains beside the Tagus",
+   "cite": [
+    "dotejo-doc:p9",
+    "dotejo-doc:p10"
+   ]
+  },
+  "setubal": {
+   "title": "Sandy soils between the Tejo and Sado",
+   "cite": [
+    "setubal-doc:p7",
+    "setubal-doc:p9"
+   ]
+  },
+  "palmela": {
+   "title": "Light sandy soils and little rain",
+   "cite": [
+    "palmela-doc:p7",
+    "palmela-doc:p8",
+    "palmela-doc:p9"
+   ]
+  },
+  "alentejo": {
+   "title": "A flat, sunny land with about 3000 sun hours",
+   "cite": [
+    "alentejo-doc:p9",
+    "alentejo-doc:p10"
+   ]
+  },
+  "lagos": {
+   "title": "A hot, dry south coast behind mountains",
+   "cite": [
+    "lagos-doc:p5"
+   ]
+  },
+  "portimao": {
+   "title": "Sandy soils and sea influence",
+   "cite": [
+    "portimao-doc:p5"
+   ]
+  },
+  "lagoa": {
+   "title": "A sunny amphitheatre facing south",
+   "cite": [
+    "lagoa-doc:p5",
+    "lagoa-doc:p6"
+   ]
+  },
+  "tavira": {
+   "title": "Low sandy vineyards with even temperatures",
+   "cite": [
+    "tavira-doc:p5",
+    "tavira-doc:p6"
    ]
   }
  }
