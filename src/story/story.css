@@ -21,8 +21,8 @@
 @media (max-width:47.5em){
   .pg.tour .pg-body{flex-direction:column;align-items:stretch}
   .pg.tour .pg-listing{padding-left:1rem;padding-right:1rem}
-  .pg-tourmap{order:-1;flex:0 0 300px;height:300px;z-index:16}
-  .pg.tour .pg-jump{top:calc(var(--bar) + 301px)}
+  .pg-tourmap{order:-1;flex:0 0 42dvh;height:42dvh;z-index:16}
+  .pg.tour .pg-jump{top:calc(var(--bar) + 42dvh + 1px)}
   .pg-tourcap{flex-wrap:wrap;gap:.1rem .6rem;padding:.4rem .75rem}
   .pg-tourcap b{font-size:.95rem}
 }
