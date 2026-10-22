@@ -105,13 +105,12 @@ for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] a
   });
 }
 
-// Beside the open map the hero shows the photo frames; without it Rioja's hero is the map card.
-test('Rioja shows three frames of its five photos, and all five in the viewer', async ({ page }) => {
+// Map mode (owner 22 Oct 2026) hides the page hero: the cover with the name leads the column, the photo frames are not shown.
+test('Rioja in map mode has a cover with its name and no hero photo frames', async ({ page }) => {
   await open(page, '#place=rioja&page&story');
-  await expect(page.locator('.pg-mosaic figure')).toHaveCount(3);
-  await page.getByRole('button', { name: 'All 5 photos' }).click();
-  await expect(page.getByRole('dialog', { name: 'Photos of Rioja' }).locator('.count')).toHaveText('1 / 5');
-  await expect(page.locator('.pg-hero .pg-credits')).toContainText('Photos:');
+  await expect(page.locator('.pg-cover h1')).toHaveText('Rioja');
+  await expect(page.locator('.pg-hero')).toHaveCount(0);
+  await expect(page.locator('.pg-mosaic')).toHaveCount(0);
 });
 
 test('a place without photos shows its name on a cover, never a broken image', async ({ page }) => {
