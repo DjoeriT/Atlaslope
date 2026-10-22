@@ -6,7 +6,7 @@ import { SPAIN, type Selection } from '../url';
 
 /** Which kind of node a crumb or search hit is, from the country's own level names (country, region, place, zone, ...). */
 export function selectionOf(tree: Tree, crumb: Crumb): Selection {
-  const levels = tree.countries[0]?.levels ?? [];
+  const levels = tree.countries.find((c) => c.levels.includes(crumb.level))?.levels ?? tree.countries[0]?.levels ?? [];
   const depth = levels.indexOf(crumb.level);
   const kind: NodeKind = depth === 0 ? 'country' : depth === 1 ? 'region' : 'place';
   return { kind, id: crumb.id };
@@ -51,7 +51,7 @@ export function focusFor(tree: Tree, sel: Selection): Focus {
   }
   if (sel.kind === 'region') return { frame: { region: sel.id }, dimRegion: sel.id, select: null, showZones: false };
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
-  if (!place) return { frame: null, dimRegion: null, select: null, showZones: false };
+  if (!place) return { frame: null, country: sel.kind === 'country' ? sel.id : undefined, dimRegion: null, select: null, showZones: false };
   const isZone = tree.levelName(place) === 'zone';
   const hasZones = tree.children(place.id, 'place').length > 0;
   return {

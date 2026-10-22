@@ -6,6 +6,7 @@ import addedUrl from '../../data/added-boundaries.geojson?url';
 import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import { ROOT } from '../site';
+import { countryConfig } from '../countries';
 import overrides from '../../data/dop-overrides.json';
 import places from '../../data/places.json';
 import type { Overrides } from '../dops';
@@ -59,7 +60,6 @@ export interface MapEvents {
   onView?(view: View): void;
 }
 
-const SPAIN_BOUNDS: [[number, number], [number, number]] = [[-9.4, 35.9], [3.4, 43.9]];
 const asCollection = (u: string): Promise<Collection> => loadJson<Collection>(u);
 
 /** The tilt the map opens with, and goes back to on "Reset view". */
@@ -76,7 +76,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   const map = new maplibregl.Map({
     container,
     style: buildStyle({ esriKey, tiles, menu, reliefFrom }),
-    ...(restored ? { center: [restored.lng, restored.lat] as [number, number], zoom: restored.zoom, bearing: restored.bearing } : { bounds: SPAIN_BOUNDS, fitBoundsOptions: { padding: 40 } }),
+    ...(restored ? { center: [restored.lng, restored.lat] as [number, number], zoom: restored.zoom, bearing: restored.bearing } : { bounds: countryConfig(undefined).bounds, fitBoundsOptions: { padding: 40 } }),
     pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
     attributionControl: { compact: true },
@@ -276,7 +276,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     };
     if (!want.frame) {
       framePending = false;
-      fit(SPAIN_BOUNDS);
+      fit(countryConfig(want.country).bounds);
     } else if ('point' in want.frame) {
       framePending = false;
       const to = { center: want.frame.point, zoom: want.frame.zoom };
@@ -402,7 +402,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     const card = [...document.querySelectorAll('.card')].find((c) => c.getClientRects().length > 0)?.getBoundingClientRect();
     const box = q.frame ? frameBox(places, q.frame) : q.reveal ? revealBox(places, q.reveal) : null;
     if (box) map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { ...flat, padding: revealPadding(view, card), maxZoom: 8.5 });
-    else map.fitBounds(SPAIN_BOUNDS, { ...flat, padding: padding() });
+    else map.fitBounds(countryConfig(undefined).bounds, { ...flat, padding: padding() }); // Study covers Spain's course only, so far
   }
 
   function leaveQuiz() {

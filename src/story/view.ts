@@ -30,7 +30,7 @@ export const faded = (focus: string): string => (focus === 'zones' ? 'rioja' : f
 
 // Locator inset: the peninsula and the Balearics from data/spain-mask.json (Canarias left out), x scaled by cos 40 degrees, 100 units wide.
 const COSK = Math.cos((40 * Math.PI) / 180);
-const RINGS = (maskData as unknown as { spain: Polygon[] }).spain.map((p) => p[0]).filter((r) => Math.min(...r.map((q) => q[1])) > 35.5);
+const RINGS = (maskData as unknown as { land: Polygon[] }).land.map((p) => p[0]).filter((r) => Math.min(...r.map((q) => q[1])) > 35.5);
 const all = RINGS.flat();
 const X0 = Math.min(...all.map((q) => q[0])) * COSK, X1 = Math.max(...all.map((q) => q[0])) * COSK;
 const Y0 = -Math.max(...all.map((q) => q[1])), Y1 = -Math.min(...all.map((q) => q[1]));

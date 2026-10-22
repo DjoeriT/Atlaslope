@@ -45,7 +45,7 @@ describe('card navigation', () => {
     expect(parentOf(tree, { kind: 'region', id: 'castilla-y-leon' })).toEqual(SPAIN);
   });
   it('tells the map what to show', () => {
-    expect(focusFor(tree, SPAIN)).toEqual({ frame: null, dimRegion: null, select: null, showZones: false });
+    expect(focusFor(tree, SPAIN)).toEqual({ frame: null, country: 'spain', dimRegion: null, select: null, showZones: false });
     expect(focusFor(tree, { kind: 'region', id: 'rioja' })).toMatchObject({ frame: { region: 'rioja' }, dimRegion: 'rioja', select: null });
     expect(focusFor(tree, { kind: 'place', id: 'toro' })).toMatchObject({ frame: { place: 'toro' }, select: 'toro', showZones: false });
     expect(focusFor(tree, { kind: 'place', id: 'rioja' })).toMatchObject({ select: 'rioja', showZones: true });

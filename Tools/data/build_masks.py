@@ -11,11 +11,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / 'data/raw/ne/ne_10m_admin_0_countries.geojson'
-OUT = ROOT / 'data/spain-mask.json'
-# Only the neighbours' land near Spain matters (the strip of sea around Spain must not spill onto it), so each is clipped to a box.
-NEIGHBOURS = {'PRT': (-10.0, 36.5, -6.0, 42.5), 'FRA': (-2.0, 42.0, 3.6, 43.6), 'AND': (1.3, 42.3, 1.9, 42.7),
-              'MAR': (-6.5, 34.8, -2.0, 36.2), 'GIB': (-5.5, 36.0, -5.2, 36.3)}
-BOX = (-19.0, 27.0, 5.5, 44.5)  # Spain with the Canaries, and a margin
+# Per country: its Natural Earth code, the box its polygons must touch, and the neighbours' land near it. Only that land matters
+# (the strip of sea around the country must not spill onto it), so each neighbour is clipped to a box.
+COUNTRIES = {
+    'spain': {'code': 'ESP', 'out': 'data/spain-mask.json',
+              'box': (-19.0, 27.0, 5.5, 44.5),  # Spain with the Canaries, and a margin
+              'neighbours': {'PRT': (-10.0, 36.5, -6.0, 42.5), 'FRA': (-2.0, 42.0, 3.6, 43.6), 'AND': (1.3, 42.3, 1.9, 42.7),
+                             'MAR': (-6.5, 34.8, -2.0, 36.2), 'GIB': (-5.5, 36.0, -5.2, 36.3)}},
+    'portugal': {'code': 'PRT', 'out': 'data/countries/pt/mask.json',
+                 'box': (-10.0, 36.5, -6.0, 42.5),  # the mainland; Madeira and the Azores come after it (decision #51 notes)
+                 'neighbours': {'ESP': (-9.5, 36.5, -5.5, 43.0)}},
+}
 TOLERANCE = 0.002  # degrees, about 200 m
 
 
@@ -67,10 +73,10 @@ def clip(ring, box):
     return out + [out[0]]
 
 
-def in_box(ring):
+def in_box(ring, box):
     xs = [p[0] for p in ring]
     ys = [p[1] for p in ring]
-    return max(xs) >= BOX[0] and min(xs) <= BOX[2] and max(ys) >= BOX[1] and min(ys) <= BOX[3]
+    return max(xs) >= box[0] and min(xs) <= box[2] and max(ys) >= box[1] and min(ys) <= box[3]
 
 
 def polygons(geom):
@@ -86,27 +92,34 @@ def clean(poly):
     return rings
 
 
-def main():
-    data = json.loads(SRC.read_text())
-    spain, neighbours = [], []
+def build(data, cfg):
+    own, near = cfg['code'], cfg['neighbours']
+    land, neighbours = [], []
     for f in data['features']:
         code = f['properties']['ADM0_A3']
-        if code != 'ESP' and code not in NEIGHBOURS:
+        if code != own and code not in near:
             continue
         for poly in polygons(f['geometry']):
-            if not in_box(poly[0]):
+            if not in_box(poly[0], cfg['box']):
                 continue
-            if code != 'ESP':
-                poly = [r for r in (clip(ring, NEIGHBOURS[code]) for ring in poly) if len(r) >= 4]
+            if code != own:
+                poly = [r for r in (clip(ring, near[code]) for ring in poly) if len(r) >= 4]
                 if not poly:
                     continue
             rings = clean(poly)
             if rings:
-                (spain if code == 'ESP' else neighbours).append(rings)
-    OUT.write_text(json.dumps({'spain': spain, 'neighbours': neighbours}, separators=(',', ':')) + '\n')
+                (land if code == own else neighbours).append(rings)
+    out = ROOT / cfg['out']
+    out.write_text(json.dumps({'land': land, 'neighbours': neighbours}, separators=(',', ':')) + '\n')
     n = lambda ps: sum(len(r) for p in ps for r in p)
-    print(f'spain: {len(spain)} polygons, {n(spain)} points; neighbours: {len(neighbours)} polygons, {n(neighbours)} points')
-    print(f'{OUT.relative_to(ROOT)}: {OUT.stat().st_size} bytes')
+    print(f'land: {len(land)} polygons, {n(land)} points; neighbours: {len(neighbours)} polygons, {n(neighbours)} points')
+    print(f'{out.relative_to(ROOT)}: {out.stat().st_size} bytes')
+
+
+def main():
+    data = json.loads(SRC.read_text())
+    for cfg in COUNTRIES.values():
+        build(data, cfg)
 
 
 if __name__ == '__main__':
