@@ -5,20 +5,28 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
 import { COVER_PHOTO } from '../../src/cards/atlasCover';
-import { BAND_FEATURED, PHOTO_PICK, SHOWN_COUNTRIES, bandTours, fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
+import { BAND_FEATURED, PHOTO_PICK, bandTours, fillGuideCount, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys, storyCount } from '../../src/home/guideCount';
+import { countryPageKeys, countryPhotoKeys, fillCountryPage, fillGuidesIndex, fillHome } from '../../src/home/countryPages';
 
-// The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
+// The home page (index.html) is plain HTML; its numbers and country cards are filled in at build time, and must say what the atlas's country cards count.
 const html = readFileSync('index.html', 'utf8');
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
-const spain = tree.countries[0];
-const regions = tree.regionsOf(spain.id);
+const regions = tree.countries.flatMap((c) => tree.regionsOf(c.id));
 const places = regions.flatMap((r) => tree.placesInRegion(r.id));
-const count = (name: string) => Number(new RegExp(`data-count="${name}">(\\d+)<`).exec(html)?.[1]);
 
 describe('the home page', () => {
-  it('counts the places and study regions the atlas has', () => {
+  it('counts the places and study regions of every country the atlas has, filled in at build time', () => {
+    const filled = fillHome(html, guideRows(), storyCount());
+    const count = (name: string) => Number(new RegExp(`data-count="${name}">(\\d+)<`).exec(filled)?.[1]);
     expect(count('places')).toBe(places.length);
     expect(count('regions')).toBe(regions.length);
+    expect(count('stories')).toBe(storyCount());
+  });
+  it('shows no Spain-only reach line and says Spain and Portugal in its descriptions (owner 22 Oct 2026, option A)', () => {
+    expect(html).not.toContain('class="reach"');
+    expect(html).not.toContain('More countries coming soon');
+    expect(html).toMatch(/<meta name="description" content="[^"]*Spain and Portugal/);
+    expect(html).toContain('<h1>Know the land behind the glass.</h1>');
   });
   it('fills in the number of places with a guide at build time', () => {
     expect(guideCount()).toBeGreaterThan(0);
@@ -34,36 +42,46 @@ describe('the home page', () => {
   });
 });
 
-describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
+describe('the Guides page and the country pages (option E round 3 and option A, owner 22 Oct 2026)', () => {
   const guidesHtml = readFileSync('guides/index.html', 'utf8');
+  const countryHtml = readFileSync('country/index.html', 'utf8');
   const link = (id: string) => `href="../atlas/#place=${id}&amp;page"`;
   const stories = readdirSync('content/stories').filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, ''));
   const list = guideRows();
-  const out = fillGuideList(guidesHtml, list);
+  // `out` is the Spain page (its region blocks); `index` is the Guides page (the band and the country index).
+  const out = fillCountryPage(countryHtml, list, 'spain');
+  const index = fillGuidesIndex(guidesHtml, list);
   const section = (id: string) => out.split('<section class="region"').find((x) => x.includes(`id="r-${id}"`))!.split('</section>')[0];
   const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
   it('lists every guide file, filled in at build time', () => {
-    // Portugal's guides stay off the page until the owner picks how Portugal shows there (SHOWN_COUNTRIES).
-    const hidden = tree.places.filter((p) => !SHOWN_COUNTRIES.includes(tree.countryOf(p.id)?.id ?? '') && existsSync(`content/guides/${p.id}.json`));
-    expect(hidden.map((p) => p.id).sort()).toEqual(['douro', 'vinho-verde'].filter((id) => existsSync(`content/guides/${id}.json`)));
-    expect(list.rows).toHaveLength(guideCount() - hidden.length);
-    for (const r of list.rows) expect(out, r.id).toContain(link(r.id));
+    // Both countries: every guide is on its own country's page, and none is on the other's.
+    expect(list.rows).toHaveLength(guideCount());
+    const portugal = fillCountryPage(countryHtml, list, 'portugal');
+    for (const r of list.rows) {
+      const main = (h: string) => h.split('<footer>')[0];
+      const own = main(r.country === 'spain' ? out : portugal);
+      const other = main(r.country === 'spain' ? portugal : out);
+      expect(own, r.id).toContain(r.country === 'spain' ? link(r.id) : `href="../pt/${r.id}/"`);
+      expect(other, r.id).not.toContain(`/${r.id}/"`);
+      expect(other, r.id).not.toContain(link(r.id));
+    }
   });
   it('shows all guides of a region, none cut off, with the count in the heading', () => {
     expect(list.regions.some((r) => r.guides.length > 6)).toBe(true);
-    for (const r of list.regions) {
+    for (const r of list.regions.filter((x) => x.country === 'spain')) {
       const sec = section(r.id);
       const n = r.guides.length;
       expect(sec).toContain(`<span class="n">${n} ${n === 1 ? 'guide' : 'guides'}</span>`);
-      expect(count(sec, /class="ecard"/g) + count(sec, /<a href="\.\.\/atlas\/#place=/g)).toBe(n);
+      expect(count(sec, /class="ecard"/g)).toBe(n);
     }
     expect(out).not.toContain('All Rioja guides');
   });
   it('has a jump row with one link per region, to its section', () => {
     const nav = out.match(/<nav class="jump"[^>]*>(.*?)<\/nav>/)![1];
-    expect([...nav.matchAll(/<a href="(#r-[^"]+)"/g)].map((m) => m[1])).toEqual(list.regions.map((r) => `#r-${r.id}`));
-    for (const r of list.regions) expect(out).toContain(`<h2 id="r-${r.id}">`);
+    const spainRegions = list.regions.filter((r) => r.country === 'spain');
+    expect([...nav.matchAll(/<a href="(#r-[^"]+)"/g)].map((m) => m[1])).toEqual(spainRegions.map((r) => `#r-${r.id}`));
+    for (const r of spainRegions) expect(out).toContain(`<h2 id="r-${r.id}">`);
   });
   it('puts zones after their place, in course order', () => {
     const ids = list.rows.map((r) => r.id);
@@ -71,7 +89,7 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
   });
   it('groups guides by study region, in course order', () => {
     expect(list.regions.flatMap((r) => r.guides)).toEqual(list.rows);
-    expect(list.regions.map((r) => r.id).slice(0, 2)).toEqual(['green-spain', 'castilla-y-leon']);
+    expect(list.regions.filter((r) => r.country === 'spain').map((r) => r.id).slice(0, 2)).toEqual(['green-spain', 'castilla-y-leon']);
     for (const r of list.regions) for (const g of r.guides) expect(g.region).toBe(r.id);
   });
   it('shows a new guide in its region with no extra step', () => {
@@ -82,7 +100,7 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
     copyFileSync('content/guides/toro.json', `${dir}/toro.json`);
     const after = guideRows({ dir });
     expect(after.regions.find((r) => r.guides.some((g) => g.id === 'toro'))?.id).toBe('castilla-y-leon');
-    expect(fillGuideList(guidesHtml, before)).not.toContain(link('toro'));
+    expect(fillCountryPage(countryHtml, before, 'spain')).not.toContain(link('toro'));
   });
   it('points every photo at a file that exists (release 47: Binissalem has no 800 px copy)', () => {
     const files = [...out.matchAll(/\.\.\/(photos\/[^"\s]+\.webp)/g)].map((m) => m[1]);
@@ -90,7 +108,7 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
     for (const f of new Set(files)) expect(existsSync(`public/${f}`), f).toBe(true);
   });
   it('shows the kind under the name only when it is not plain DO', () => {
-    for (const r of list.regions) {
+    for (const r of list.regions.filter((x) => x.country === 'spain')) {
       for (const g of r.guides.filter((x) => x.photo)) {
         const card = section(r.id).split('<a class="ecard"').find((x) => x.includes(link(g.id)))!.split('</a>')[0];
         expect(card.includes('class="meta"'), g.id).toBe(g.label !== 'DO');
@@ -100,7 +118,7 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
 
   describe('the map-tour band', () => {
     const { featured, rest, count: n } = bandTours(list);
-    const band = out.match(/<section class="band"[\s\S]*?<\/section>/)![0];
+    const band = index.match(/<section class="band"[\s\S]*?<\/section>/)![0];
     it('counts the tours from the story files', () => {
       expect(n).toBe(stories.length);
       expect(list.rows.filter((r) => r.tour).map((r) => r.id).sort()).toEqual([...stories].sort());
@@ -128,35 +146,28 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
 
   describe('the Map tour chip', () => {
     it('sits on every tour tile and on no other', () => {
-      const tiles = out.split('<span class="sqbox">').slice(1);
+      const tiles = out.split('<div class="ecards">').slice(1).flatMap((g) => g.split('</section>')[0].split('<span class="sqbox">').slice(1)).filter((t) => t.startsWith('<img'));
       expect(tiles.length).toBeGreaterThan(0);
       for (const t of tiles) {
         const id = t.match(/\/photos\/\d+\/([^"/]+)\.webp/)![1];
         const row = list.rows.find((r) => r.photo === id)!;
         expect(t.split('</span></span>')[0].includes('class="chip"'), id).toBe(row.tour);
       }
-      expect(count(out, /class="chip"/g)).toBe(2 * list.rows.filter((r) => r.tour && r.photo).length); // band + region grid
+      expect(count(out, /class="chip"/g)).toBe(list.rows.filter((r) => r.tour && r.photo && r.country === 'spain').length); // the Spain page: region grid only
     });
   });
 
   describe('guides without a photo', () => {
-    it('get no tile, only a name in the Also line after the grid', () => {
-      const bare = list.rows.filter((g) => !g.photo);
-      expect(bare.length).toBeGreaterThan(0);
-      for (const g of bare) {
-        const sec = section(g.region);
-        expect(sec).toContain(`<a href="../atlas/#place=${g.id}&amp;page">`);
-        expect(sec.split('<div class="also">')[1], g.id).toContain(link(g.id));
-        expect(sec.split('<div class="also">')[0], g.id).not.toContain(link(g.id));
-      }
-    });
-    it('are all named in Also when no photo exists, with no empty tile', () => {
+    it('get the quiet "Photos soon" tile on the country page, nothing faked', () => {
       const none = guideRows({ publicDir: mkdtempSync(join(tmpdir(), 'public-')) });
       expect(none.rows.every((g) => g.photo === null)).toBe(true);
-      const html = fillGuideList(guidesHtml, none);
-      expect(html).not.toContain('class="sqbox"');
-      expect(html).not.toContain('class="credit"');
-      for (const g of none.rows) expect(html).toContain(link(g.id));
+      const html = fillCountryPage(countryHtml, none, 'spain');
+      expect(count(html, /<span class="sqbox soon"><i>Photos soon<\/i><\/span>/g)).toBe(none.rows.filter((g) => g.country === 'spain').length);
+      for (const g of none.rows.filter((r) => r.country === 'spain')) expect(html).toContain(link(g.id));
+    });
+    it('do not fail the crop check: only photos that are shown need a crop', () => {
+      const bare = list.rows.filter((g) => !g.photo);
+      for (const g of bare) expect(squarePhotoKeys(list), g.id).not.toContain(g.id);
     });
   });
 
@@ -171,7 +182,8 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
   });
   // Owner 19 Oct 2026: "We need a check for this structurally". A crop is checked by eye; the hash ties the check to the file that was seen.
   describe('checked square crops (src/home/photoCrops.json)', () => {
-    const shown = squarePhotoKeys(list);
+    // Every photo any page shows as a square: guide tiles, Home's country cards, the country pages' photo blocks.
+    const shown = [...new Set([...squarePhotoKeys(list), ...countryPhotoKeys(list)])];
     const hashOf = (k: string) => createHash('sha256').update(readFileSync(`public/photos/480/${k}.webp`)).digest('hex').slice(0, 12);
     const fix = (k: string) => `run node Tools/guides/crop_sheet.mjs ${k}, look at the sheet, then add it to src/home/photoCrops.json (see docs/guides.md "Photo crops").`;
     it('has an entry for every photo the Guides page shows', () => {
@@ -197,23 +209,26 @@ describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
     // Grouped by licence (owner 22 Oct 2026): the changes said once, each licence once and linked, then its authors, each linked.
     expect(out).toMatch(/<p class="credit">Photos from Wikimedia Commons, cropped and resized\. <a [^>]*>CC BY[^<]*<\/a>: <a [^>]*>[^<]+<\/a>/);
     const credit = out.match(/<p class="credit">[\s\S]*?<\/p>/)![0];
-    for (const lic of new Set(squarePhotoKeys(list).map((k) => list.photos[k].licence))) expect(count(credit, new RegExp(`>${lic.replace(/[.]/g, '\\.')}</a>:`, 'g')), lic).toBe(1);
+    for (const lic of new Set(countryPageKeys(list, 'spain').map((k) => list.photos[k].licence))) expect(count(credit, new RegExp(`>${lic.replace(/[.]/g, '\\.')}</a>:`, 'g')), lic).toBe(1);
     expect(out).not.toContain('title="');
     // Every shown photo: its author named in the credit, and a link to its own Commons page (licence attribution, #196 review).
-    for (const k of squarePhotoKeys(list)) {
+    for (const k of countryPageKeys(list, 'spain')) {
       expect(credit, k).toContain(list.photos[k].artist.replace(/^unknown.*/i, 'Wikimedia Commons').replace(/&/g, '&amp;'));
       expect(credit, `${k}: link to its page`).toContain(`href="${list.photos[k].page.replace(/&/g, '&amp;')}"`);
     }
   });
   it('has dropped the showcase, the repeated tours section, the satellite maps and the card summaries', () => {
     for (const gone of ['Showcased guide', 'hero-sat', 'class="sat"', 'Imagery: Esri', 'gcard-c', 'class="lede"', 'Show all guides', 'In short']) expect(out, gone).not.toContain(gone);
-    expect(count(out, /id="map-tours"/g)).toBe(1);
+    expect(count(index, /id="map-tours"/g)).toBe(1);
+    expect(out).not.toContain('class="band"');
   });
 });
 
 describe('the Guides page markers', () => {
   it('refuses to build a page without the list markers', () => {
-    expect(() => fillGuideList('<main></main>', guideRows())).toThrow(/markers are missing/);
+    expect(() => fillGuidesIndex('<main></main>', guideRows())).toThrow(/markers are missing/);
+    expect(() => fillCountryPage('<main></main>', guideRows(), 'spain')).toThrow(/markers are missing/);
+    expect(() => fillHome('<main></main>', guideRows(), 1)).toThrow(/markers are missing/);
   });
 });
 
