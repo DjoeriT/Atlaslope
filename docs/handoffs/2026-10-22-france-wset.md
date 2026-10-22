@@ -55,6 +55,24 @@ Decisions: #52-#58 (`docs/architecture-decisions.md`), plan `Review/countries/fr
   he decides; France batch PRs wait, content keeps being written.
 - After #229 merges: add France's raw files (INAO zip, att/, cdc/ with the 9 direct URLs) to the raw manifest.
 
+## Overnight 22-23 Oct: all 94 guides written (PR #232, draft)
+- Guides [V usage.py, re-read + new]: pilot 1.5M (#228, merged); Bordeaux 16: 14.7M; Burgundy 22: 21.1M; Loire 18: 17.0M;
+  Rhône 14: 13.8M; South-West 5: 4.7M; Beaujolais 5: 4.9M; Alsace 2: 2.1M; South 9: 8.0M; Champagne 1: 0.8M. Batches 87M for 92
+  places = 0.95M a place (about 83% re-read), above the pilot's 0.75M; total with the pilot ~88M against the ~70M estimate (1.26x).
+- Every unsure checker edit was read against its quoted page, then applied (`Tools/guides/apply_unsure.py`, from results.jsonl:
+  the fixes log cuts values at 200 characters). Lines over the sheet limits shortened by hand.
+- Grape colour codes ("Merlot N", "Melon B") came from the rule books into sheets and four guides: `Tools/guides/fr_clean.py`.
+- Nesting from outlines: `Tools/data/fr_within.py` -> `data/countries/fr/within.json` (90% inside; tiers and Crémant/Rosé de Loire
+  not parents [A]).
+- Champagne outline: 635 whole communes from INAO's commune CSV and IGN ADMIN EXPRESS (`Tools/data/build_fr_champagne.py`; run it
+  after build_fr_areas.py, which rewrites the file).
+- Photos: Commons is thin for many places even with category walks; shipped what passes the rules (Bordeaux 62, Burgundy 91,
+  Loire+Rhône 91; last 22 in progress). None: Muscat de Beaumes-de-Venise. Under 3: listed in the PR.
+- Incident: the data-build workflow (on a push touching `Tools/data/remote_build.sh`, which came in with main) rebuilt
+  `data/added-boundaries.geojson` without France and committed it to the PR branch; restored in 4712165a. remote_build.sh does
+  not run `build_fr_areas.py --map`: fix in its own slice before anyone runs it on a France branch.
+- 2 MB check: PR builds to more than the limit (Bordeaux alone was 2,166,619); waits on the owner's A/B.
+
 ## Numbers
 - Estimate: 94 x 0.75M = ~70M guides [V rate Portugal, A France], about 90% re-read; photos ~0.1M a place [A]; pilot engineering
   ~5-10M [A]. Owner's goal is the go above 20M; region by region, report each batch's measured number.
