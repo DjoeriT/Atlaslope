@@ -41,6 +41,8 @@ export function legendClasses(focus: string): LegendClass[] {
 export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
   rioja: [{ id: 'clayLimestone', color: '#FFFF80' }, { id: 'ferrousClay', color: '#FFD9D9' }, { id: 'alluvial', color: '#B2D9D9' }],
   priorat: [{ id: 'slate', color: '#B2B2B2' }],
+  'ribeira-sacra': [{ id: 'slate', color: '#80804D' }, { id: 'granite', color: '#FF4D80' }, { id: 'granite2', color: '#FF80FF' }],
+  'ribera-del-duero': [{ id: 'ochreClay', color: '#FFFF80' }, { id: 'terraces', color: '#D9D9B2' }, { id: 'limestone', color: '#FFFFB2' }],
 };
 
 /** The key items for a story's rock colours: the guide's own word and the colour. */
