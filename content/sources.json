@@ -2152,5 +2152,35 @@
   "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
   "date": "2026-10-22",
   "title": "Rosazzo PDO-IT-A0367: disciplinare di produzione (MASAF, Italian, file \"Rosazzo\" in the DOP archive)"
+ },
+ "franciacorta-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Franciacorta PDO-IT-A1034: disciplinare di produzione (MASAF, Italian, file \"Franciacorta\" in the DOP archive)"
+ },
+ "oltrepo-pavese-metodo-classico-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Oltrepò Pavese metodo classico PDO-IT-A0958: disciplinare di produzione (MASAF, Italian, file \"Oltrepò Pavese metodo classico\" in the DOP archive)"
+ },
+ "scanzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Scanzo PDO-IT-A0949: disciplinare di produzione (MASAF, Italian, file \"Scanzo o Moscato di Scanzo\" in the DOP archive)"
+ },
+ "sforzato-di-valtellina-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Sforzato di Valtellina PDO-IT-A1035: disciplinare di produzione (MASAF, Italian, file \"Sforzato di Valtellina o Sfursat di Valtellina\" in the DOP archive)"
+ },
+ "valtellina-superiore-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Valtellina Superiore PDO-IT-A1036: disciplinare di produzione (MASAF, Italian, file \"Valtellina superiore\" in the DOP archive)"
  }
 }

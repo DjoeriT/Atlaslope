@@ -30,7 +30,9 @@ def main():
     if not ids:
         return
     step("Tools/countries/it_wset.py", "--content", *ids)
-    step("Tools/guides/headless.py", "--sheets", group, run_dir, *ids)
+    # Budget 1.0M a guide: Italy's measured rate (pilot, Piemonte, Tuscany, Veneto, North-East: 0.87-0.94M a guide over 50 guides,
+    # 23 Oct 2026), not Portugal's 0.8M; the guard still stops a run past 1.5x of it.
+    step("Tools/guides/headless.py", "--budget", "1.0", "--sheets", group, run_dir, *ids)
     step("Tools/data/build_places.py")
     step("-I", "Tools/data/build_it_areas.py", "--map")
 

@@ -1,0 +1,268 @@
+{
+ "region": "it-lombardia",
+ "sheets": [
+  {
+   "id": "franciacorta",
+   "why": {
+    "text": "Glacial moraine soils with good drainage, a mild climate eased by Lake Iseo, and long ageing on the lees after bottle fermentation.",
+    "cite": [
+     "franciacorta-disc:p11",
+     "franciacorta-disc:p12",
+     "franciacorta-disc:p13"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot nero"
+     }
+    ],
+    "cite": [
+     "franciacorta-disc:p2"
+    ],
+    "others": [
+     "Pinot bianco",
+     "Erbamat"
+    ],
+    "othersCite": [
+     "franciacorta-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "rose"
+    ],
+    "text": "Only bottle-fermented sparkling wine: Franciacorta, Satèn and Rosé, with vintage and Riserva versions.",
+    "cite": [
+     "franciacorta-disc:p2",
+     "franciacorta-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Insubrian mesoclimate with some Mediterranean traits, relatively mild in winter and not too hot in summer, with Lake Iseo easing temperatures. Rain is about 1000 mm a year, 500 to 600 mm in the growing season. Winkler index is 1800 to 2300 degree days.",
+    "cite": [
+     "franciacorta-disc:p12",
+     "franciacorta-disc:p13"
+    ]
+   },
+   "soil": {
+    "text": "Mostly glacial moraine, fairly deep, well drained, with good or high water reserve. Six vocational units are named, from thin moraine to deep colluvium.",
+    "cite": [
+     "franciacorta-disc:p11",
+     "franciacorta-disc:p13"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Straw yellow with green or gold glints, fine lasting bubbles, bread crust and yeast, citrus and dried nuts. Savoury, fresh, fine and harmonious.",
+    "cite": [
+     "franciacorta-disc:p13"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Satèn",
+      "text": "Creamy, only brut, at least 50% Chardonnay, max 5 atm, 24 months on lees."
+     },
+     {
+      "name": "Rosé",
+      "text": "At least 35% Pinot nero, pink colour before bottling, 24 months on lees."
+     },
+     {
+      "name": "Millesimato",
+      "text": "Vintage wine, at least 85% from that year, 30 months on lees."
+     },
+     {
+      "name": "Riserva",
+      "text": "Vintage wine aged at least 60 months on the lees."
+     }
+    ],
+    "cite": [
+     "franciacorta-disc:p2",
+     "franciacorta-disc:p7",
+     "franciacorta-disc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "oltrepo-pavese-metodo-classico",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "scanzo",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "sforzato-di-valtellina",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "valtellina-superiore",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}
