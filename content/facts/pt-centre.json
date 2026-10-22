@@ -4,7 +4,7 @@
   {
    "id": "dao",
    "why": {
-    "text": "Granite soils in a basin ringed by mountains that shelter it from wet coastal air and harsh continental winds, with cold, rainy winters and very hot, dry summers.",
+    "text": "Granite soils in a region ringed by mountains that shelter it from wet coastal air and harsh continental winds, with cold, rainy winters and very hot, dry summers.",
     "cite": [
      "dao-doc:p7",
      "dao-doc:p8"
@@ -326,7 +326,7 @@
     ]
    },
    "soil": {
-    "text": "Brown or red Mediterranean soils on schist and gneiss, brown soils on schist or greywacke, and non-humic soils on granite.",
+    "text": "Brown or red Mediterranean soils on schist and gneiss, brown soils on schist or greywacke, and stony non-humic soils on granite and migmatite.",
     "cite": [
      "beira-interior-doc:p7"
     ]
@@ -375,7 +375,7 @@
   {
    "id": "lafoes",
    "why": {
-    "text": "Terraced vineyards along the Vouga valley on schist, gneiss, granite and migmatite soils, giving low-alcohol, fruity, high-acid wines.",
+    "text": "Terraced vineyards along the Vouga valley on schist, gneiss, granite and migmatite soils; the whites are low-alcohol, fruity and rich in malic acid.",
     "cite": [
      "lafoes-doc:p3",
      "lafoes-doc:p5"
@@ -527,7 +527,7 @@
     ]
    },
    "climate": {
-    "text": "Mild climate with microclimates, in the transition between the wet western winds and dry summers.",
+    "text": "Mild climate with microclimates, seen as a transition between the wet western winds and dry summers.",
     "cite": [
      "encostas-daire-doc:p7",
      "encostas-daire-doc:p8"

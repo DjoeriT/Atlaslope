@@ -534,7 +534,7 @@
   {
    "id": "tras-os-montes",
    "why": {
-    "text": "Mostly granite soils with patches of schist, and very hot, dry summers that ripen grapes fully into structured, concentrated wines.",
+    "text": "Very hot, dry summers ripen grapes fully into deeply coloured wines; mostly granite soils with schist patches and the grapes add structure.",
     "cite": [
      "tras-os-montes-doc:p7"
     ]
@@ -741,22 +741,9 @@
      {
       "name": "Espumante",
       "text": "Sparkling wine, second fermentation in bottle, at least nine months' ageing from bottling."
-     },
-     {
-      "name": "Reserva",
-      "text": "Traditional label term allowed for the appellation."
-     },
-     {
-      "name": "Garrafeira",
-      "text": "Traditional label term allowed for the appellation."
-     },
-     {
-      "name": "Colheita Seleccionada",
-      "text": "Traditional label term allowed for the appellation."
      }
     ],
     "cite": [
-     "tavora-varosa-doc:p3",
      "tavora-varosa-doc:p4"
     ]
    },

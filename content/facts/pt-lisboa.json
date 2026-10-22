@@ -133,7 +133,7 @@
     ]
    },
    "soil": {
-    "text": "Very varied: limestone and marl, sandstone, Mediterranean clays, podzols, sands, alluvium and basalt clays. Mostly clay-limestone and clay-sand formations.",
+    "text": "Very varied: limestone and marl, sandstone, Mediterranean clays, podzols, sands, alluvium and basalt clays. The region rests on clay-limestone and clay-sand formations.",
     "cite": [
      "lisboa-doc:p3",
      "lisboa-doc:p6",
@@ -326,7 +326,7 @@
     "cite": []
    },
    "tastes": {
-    "text": "Delicate and velvety, with a slightly almond aroma. Whites run straw-yellow to deep gold, reds ruby to topaz. Ageing makes the perfume stronger and the colour paler.",
+    "text": "Delicate and velvety, with a certain almond aroma. Whites run straw-yellow to deep gold, reds ruby to topaz. Ageing makes the perfume stronger and the colour paler.",
     "cite": [
      "carcavelos-doc:p2",
      "carcavelos-doc:p6"
@@ -364,7 +364,7 @@
   {
    "id": "bucelas",
    "why": {
-    "text": "Poor marl and hard limestone soils on the slopes of the Trancão river valley, with cold winters and mild summers, shape fresh, acidic whites made mostly from Arinto.",
+    "text": "Poor marl and hard limestone soils on the slopes of the Trancão river valley, with cold winters and mild summers, combine with few grape varieties, mostly Arinto, to give light, tart whites.",
     "cite": [
      "bucelas-doc:p5",
      "bucelas-doc:p6"
@@ -393,7 +393,7 @@
      "red",
      "sparkling"
     ],
-    "text": "Mostly dry to soft whites, with reds allowed and sparkling wine made by the bottle-fermentation method.",
+    "text": "Mostly dry, soft whites, with reds allowed and sparkling wine made by the bottle-fermentation method.",
     "cite": [
      "bucelas-doc:p2",
      "bucelas-doc:p5"
@@ -416,7 +416,7 @@
     "cite": []
    },
    "tastes": {
-    "text": "Whites are citrus-coloured, fruity and lightly acidic, dry to soft; with age they turn golden with complex tertiary aromas. Sparkling wines are very fruity and fresh, with a fine, persistent bubble.",
+    "text": "Whites are citrus-coloured, fruity and tart, dry and soft; with age they turn golden with complex tertiary aromas. Sparkling wines are quite fruity, with marked freshness and a very fine, persistent bubble.",
     "cite": [
      "bucelas-doc:p5"
     ]
@@ -822,7 +822,7 @@
      "red",
      "white"
     ],
-    "text": "Red and white table wines only.",
+    "text": "Red and white wines only.",
     "cite": [
      "arruda-doc:p2"
     ]

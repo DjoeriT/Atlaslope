@@ -66,24 +66,7 @@
     ]
    },
    "famous": {
-    "styles": [
-     {
-      "name": "Superior",
-      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
-     },
-     {
-      "name": "Reserva",
-      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
-     },
-     {
-      "name": "Garrafeira",
-      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
-     },
-     {
-      "name": "Colheita Seleccionada",
-      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
-     }
-    ],
+    "styles": [],
     "cite": [
      "lagos-doc:p3",
      "lagos-doc:p5"
@@ -164,23 +147,24 @@
     "styles": [
      {
       "name": "Reserva",
-      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+      "text": "Traditional label; quality-term wines must score at least 70 in tasting."
      },
      {
       "name": "Garrafeira",
-      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+      "text": "Traditional label; quality-term wines must score at least 70 in tasting."
      },
      {
       "name": "Superior",
-      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+      "text": "Traditional label; quality-term wines must score at least 70 in tasting."
      },
      {
       "name": "Colheita Seleccionada",
-      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+      "text": "Traditional label; quality-term wines must score at least 70 in tasting."
      }
     ],
     "cite": [
-     "portimao-doc:p3"
+     "portimao-doc:p3",
+     "portimao-doc:p6"
     ]
    },
    "producers": {
@@ -270,7 +254,7 @@
      },
      {
       "name": "Superior",
-      "text": "Traditional label allowed; needs a tasting score of 70 or more."
+      "text": "Traditional label allowed; quality terms need a tasting score of 70 or more."
      },
      {
       "name": "Colheita Seleccionada",
@@ -355,32 +339,7 @@
     ]
    },
    "famous": {
-    "styles": [
-     {
-      "name": "Reserva",
-      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
-      "cite": [
-       "tavira-doc:p3",
-       "tavira-doc:p6"
-      ]
-     },
-     {
-      "name": "Garrafeira",
-      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
-      "cite": [
-       "tavira-doc:p3",
-       "tavira-doc:p6"
-      ]
-     },
-     {
-      "name": "Superior",
-      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
-      "cite": [
-       "tavira-doc:p3",
-       "tavira-doc:p6"
-      ]
-     }
-    ],
+    "styles": [],
     "cite": [
      "tavira-doc:p3",
      "tavira-doc:p6"

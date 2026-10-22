@@ -153,11 +153,11 @@
     "styles": [
      {
       "name": "Reserva",
-      "text": "Traditional label; quality wines must score at least 65 in the tasting."
+      "text": "Traditional term; wines with a quality term must score at least 65."
      },
      {
       "name": "Garrafeira",
-      "text": "Traditional label for selected wines with outstanding structure and aromatic balance."
+      "text": "Traditional term; quality-term wines need outstanding structure and balance."
      },
      {
       "name": "Espumante",
@@ -165,7 +165,7 @@
      },
      {
       "name": "Vinho licoroso",
-      "text": "Fortified wine from fermenting must with neutral wine spirit added; at least 17.5% alcohol."
+      "text": "Fortified wine; neutral wine spirit may be added to fermenting must; at least 17.5%."
      }
     ],
     "cite": [
