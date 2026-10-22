@@ -1,0 +1,135 @@
+{
+ "id": "chablis",
+ "title": "Why Chablis tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chablis is lively and fruity, marked by minerality. It owes that lively, mineral character to a cool oceanic climate.",
+  "cite": [
+   "chablis-doc:p3",
+   "chablis-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "serein",
+   "beat": "place",
+   "title": "Slopes along the Serein",
+   "paras": [
+    "The area spreads over hillsides tucked into the plateaux of the Auxerrois, in the Paris Basin. This small, well-defined area is called the Chablisien. It follows the reliefs along the Serein, a tributary of the Yonne, where it runs through the heart of the Côte des Bars.",
+    "It covers 17 communes of the Yonne department, east of Auxerre. In 2008 the vineyard covered about 4,000 hectares and made an average of 233,000 hectolitres a year.",
+    "The landscape is very distinctive. Large, slightly concave slopes of vines are topped by a wooded limestone ridge. Many small valleys, often dry, cut the slopes into many different aspects. The steepest sides of these valleys are generally wooded, so vines grow only on the best-exposed sides."
+   ],
+   "cite": [
+    "chablis-doc:p6",
+    "chablis-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Serein valley at Chablis",
+     "point": [
+      3.8,
+      47.814
+     ],
+     "zoom": 10,
+     "caption": "The vineyards fill the sides of the Serein valley and its side valleys.",
+     "cite": [
+      "chablis-doc:p6"
+     ]
+    },
+    {
+     "label": "Pontigny Abbey",
+     "point": [
+      3.7108,
+      47.8997
+     ],
+     "zoom": 11,
+     "caption": "The Cistercians founded Pontigny Abbey near Chablis in 1114 and gradually developed a vineyard.",
+     "cite": [
+      "chablis-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "frost",
+   "beat": "weather",
+   "title": "Cool, with a real risk of frost",
+   "paras": [
+    "The climate is oceanic, lightly changed by continental influences. Rain is moderate and regular, only 650 mm a year at Auxerre, with no marked summer drought. Temperatures are rather cool, with a mean of 10.8 °C a year.",
+    "Winter and spring frosts are a fairly serious risk and can be catastrophic for the vines. The fairly enclosed relief adds to the risk.",
+    "The risk is greater here than in most vineyards. Growers invented ways to fight it, such as sprinkling water and heating the plots. These need people to work together and a warning system for when the temperature drops dangerously.",
+    "The local climate of each slope marks what its vines can give. The way the wines taste is especially sensitive to the conditions of each vintage."
+   ],
+   "cite": [
+    "chablis-doc:p6",
+    "chablis-doc:p7",
+    "chablis-doc:p8",
+    "chablis-doc:p9"
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Limestone, marl and scree",
+   "paras": [
+    "The Côte des Bars is a cuesta, a ridge with a steep face. It exposes sediments from the Upper Jurassic. Hard limestone, the Calcaire du Barrois, forms a ledge above a long slope of compact, impermeable marl, which is clayey limestone. This marl is full of small comma-shaped oysters, and they gave the formation its name, Marnes à exogyra virgula. Below the marl, another limestone, the Calcaire à Astartes, makes a small step near the valley floor.",
+    "The face of the ridge drops 120 to 130 metres, and the altitudes stay moderate. The highest point of the plateau is no higher than 320 metres.",
+    "The soils are always limestone. On the limestone they are lean, very stony and well drained. On the marl slope they hold more clay. A cover of scree over the impermeable marl varies in thickness and adds nuance. It drains well and warms up well.",
+    "The vineyard area favours plots on the slopes, for good drainage and early warming of the soil. In places the vineyard reaches the Calcaire du Barrois or the Calcaire à Astartes, where the slopes are steep enough."
+   ],
+   "cite": [
+    "chablis-doc:p6",
+    "chablis-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Slopes of the Côte des Bars",
+     "point": [
+      3.74,
+      47.8
+     ],
+     "zoom": 11,
+     "caption": "A long slope of marl sits under a limestone ridge, and the front of the ridge drops 120 to 130 metres.",
+     "cite": [
+      "chablis-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "one-grape",
+   "beat": "rules",
+   "title": "One grape, one wine, many crus",
+   "paras": [
+    "Chablis is made only from Chardonnay. It reigns alone here, and it gives a whole hierarchy of crus that reflect very varied climate and topography. The wine is always still, dry and white. With age it gains aromatic complexity and finesse, and acidity and minerality keep it fresh.",
+    "This gives Chablis a special place in Burgundy. The territory looks simple, with a simple geology, one grape and one type of wine. Yet a complex topography and a difficult climate create a great diversity of conditions. That diversity shows in the wines, which range from fruity to mineral.",
+    "Wines from the best situations can carry the words Premier Cru. The Premier Cru climats, named vineyard sites, lie on the best-exposed slopes. There are 40 of them, which can be grouped under 17 names. On the right bank of the Serein are the historic climats, known since the Middle Ages. On the left bank are climats revealed more recently. Premier Cru wines can be fruitier or more mineral, depending on where the grapes grow. They are wines for keeping, at their best when kept 8 to 10 years.",
+    "A label may also name a smaller place, a registered lieu-dit, in letters no taller than 2 millimetres. Premier Cru labels may add the wider name Vin de Bourgogne or Grand Vin de Bourgogne.",
+    "Yields are set at 60 hectolitres per hectare. Irrigation is forbidden, and so are pieces of wood in winemaking. Vines are planted at a minimum of 5,500 vines per hectare. Traditionally they are pruned long, in the style called taille Chablis. This pruning suits the difficult climate and gives a steady, moderate crop. Exports take 60 % of sales."
+   ],
+   "cite": [
+    "chablis-doc:p2",
+    "chablis-doc:p3",
+    "chablis-doc:p4",
+    "chablis-doc:p8",
+    "chablis-doc:p9",
+    "chablis-doc:p10",
+    "chablis-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Chablis town",
+     "point": [
+      3.8,
+      47.814
+     ],
+     "zoom": 14,
+     "caption": "The Cistercians built a cellar here, the Petit Pontigny, and its buildings still stand.",
+     "cite": [
+      "chablis-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

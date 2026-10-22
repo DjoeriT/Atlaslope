@@ -15,16 +15,16 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac, 22 Oct 2026), each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
       'abadia-retuerta', 'abona', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa', 'arinzano', 'arlanza', 'arribes', 'arruda', 'ayles',
       'bairrada', 'beira-interior', 'bierzo', 'binissalem', 'bolandin', 'bucelas', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja',
-      'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros',
+      'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis',
       'chozas-carrascal', 'cigales', 'colares', 'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dao', 'dehesa-del-carrizal',
       'dehesa-penalba', 'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'emporda', 'encostas-daire',
       'finca-elez', 'gran-canaria', 'granada', 'guijoso', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba', 'la-mancha', 'la-palma',
       'lafoes', 'lagoa', 'lagos', 'lanzarote', 'lebrija', 'leon', 'lisboa', 'los-balagueses', 'los-cerrillos', 'madeira', 'madeirense', 'malaga', 'manchuela', 'manzanilla',
-      'mentrida', 'mondejar', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'penedes',
+      'mentrida', 'mondejar', 'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'pauillac', 'penedes',
       'pla-de-bages', 'pla-i-llevant', 'portimao', 'porto', 'prado-de-irache', 'priorat', 'rias-baixas', 'ribeira-sacra', 'ribeiro',
       'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
       'rosalejo', 'rueda', 'setubal', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tacoronte-acentejo', 'tarragona', 'tavira',
