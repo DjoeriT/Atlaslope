@@ -66,6 +66,9 @@ def inao_names() -> dict:
 
 def main() -> None:
     reg = {e["fileNumber"]: e for e in json.loads((ROOT / "data/countries/fr/register.json").read_text())["entries"]}
+    if "--content" in sys.argv and "--sources" not in sys.argv:  # needs only the committed list, not the raw shapefile
+        content(json.loads(OUT.read_text(encoding="utf-8"))["places"], reg, sys.argv[sys.argv.index("--content") + 1:])
+        return
     inao = inao_names()
     places, seen = [], set()
     for line in TABLE.read_text(encoding="utf-8").splitlines():
