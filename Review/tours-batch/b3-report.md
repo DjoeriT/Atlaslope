@@ -1,0 +1,2 @@
+# b3 report (in progress)
+- navarra: done, 6 stops (intro, zones, tudela, weather, ground, rules); 3 new photos (Vasyatka1 CC BY-SA 4.0, Misharania CC BY-SA 4.0, Zarateman CC0 1.0) plus navarra-1/2/3 reused; tour 54.7 KB gz of 150 KB (own 44.9 + shared 9.8); rock key added (marl and sandstone #00FF00, alluvial #B2D9D9, from IGME layer 11 identify); npm test 4 s, build 2 s, check.sh 13 s, shots 184 s (desktop zones and ground flagged 'imagery did not load': geology/outline overlay, picture shows imagery); about 45 turns (fetch took 14 min wall).

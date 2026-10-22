@@ -48,6 +48,17 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
 }
 
 
+# Navarra map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "navarra-tudela-1": ("File:Ebro River near Tudela municipality (2).jpg", "https://commons.wikimedia.org/wiki/File:Ebro_River_near_Tudela_municipality_(2).jpg",
+                         "Vasyatka1", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Ebro running wide and calm below a low ridge, seen from the Puente del Eje near Tudela", "50% 50%"),
+    "navarra-urbasa-1": ("File:Sierra de Urbasa.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Urbasa.jpg",
+                         "Misharania", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A lone wind-shaped tree on stony ground in the Sierra de Urbasa, with forested ridges behind", "50% 50%"),
+    "navarra-ega-1": ("File:Estella - rio Ega 1.jpg", "https://commons.wikimedia.org/wiki/File:Estella_-_rio_Ega_1.jpg",
+                      "Zarateman", "CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/", "The Ega running over pale gravel through Estella, with houses and trees on the bank", "50% 50%"),
+})
+
+
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())

@@ -132,8 +132,15 @@ CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos"
                                   "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
 
 
+# Navarra (map tours batch 3, 22 Oct 2026): the five zones from Baja Montana to the Ebro at Tudela, with Urbasa and the Ega
+BBOX["navarra"] = (-2.65, 41.90, -1.35, 42.90)
+MAIN += ("Río Ebro", "Río Ega", "Río Arga", "Río Aragón")
+CONTENT_TOWNS["navarra"] = ["Tudela", "Estella", "Lizarra", "Olite", "Pamplona", "Funes", "Cascante", "Puente la Reina", "Tafalla", "Corella",
+                            "Cintruénigo", "Ablitas", "Los Arcos", "Viana", "Villatuerta", "Artajona", "Mendigorría", "Ujué", "Valtierra", "Cadreita"]
+
 # ranges named in the guides, kept even if NGBE files them under another local type
 FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serra de Montsant", "Sierra de Moncalvillo"}
+FORCE_RANGES |= {"Sierra de Urbasa", "Sierra de Andía"}  # Navarra (batch 3)
 
 
 def spread(items, n, first=()):
