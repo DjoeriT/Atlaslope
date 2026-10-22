@@ -88,3 +88,27 @@
   more and larger pictures per place. First step in the fresh session: a script pulls the full-size originals of the photos already picked
   (licences already checked in `data/photos.json`), then adds 15 to 25 strong candidates per hero place from Wikimedia Commons, with the owner picking from a contact sheet.
   Only then a mock.
+
+## This-or-that test (owner, 22 Oct 2026) [O]
+Page: `mocks/this-or-that/index.html`, Artifact https://claude.ai/artifact/9sgF9eaU5Xk1DWiJZAYEdX. The owner's code: `1B 2B 3B 4B 5B 6A 7B 8A 9A 10B 11A 12A`.
+| # | Picked | Over |
+|---|---|---|
+| 1 | Photo framed on the page | full-bleed |
+| 2 | Mosaic of several photos | one hero |
+| 3 | **Dark page** | light page |
+| 4 | Warm cream | pure white |
+| 5 | Headline beside the photo | on the photo (so the no-text-on-photos rule stands) |
+| 6 | Wide landscape views | close-ups |
+| 7 | **Modern sans headline (Plex Sans)** | Newsreader serif |
+| 8 | Calm and sparse | rich editorial |
+| 9 | Wine-red accent | vine green |
+| 10 | **Golden hour, moody** | bright midday |
+| 11 | Land only | towns and people |
+| 12 | Colour only from the photos | bold colour blocks |
+
+Direction this gives, "the dark gallery": a warm near-black page; golden-hour wide landscapes framed as a calm mosaic, like prints on a gallery
+wall; headlines beside the photos in a modern sans; one wine-red accent; all other colour from the photos.
+Reopened by these picks (owner to confirm): "NO dark mode" and the white page (`CLAUDE.md` Style, `Review/visual-style.md`), and Newsreader for headings.
+Photo gap: the library has few golden-hour wide views, and all are 800 px. Next session, step 1: source full-size golden-hour vineyard
+landscapes (Commons originals of the picked photos plus new candidates per hero place, contact sheet for the owner). Step 2: one "dark gallery" mock
+on home, guide and atlas card.
