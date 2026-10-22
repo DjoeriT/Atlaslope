@@ -410,31 +410,8 @@ titolo alcolometrico volumico totale minimo: 10,50%, 11,50% per il “superiore�
 acidità totale minima: 4,0 g/l;
 estratto non riduttore minimo: 18,0 g/l.
 
-“Friuli” Grave Refosco dal peduncolo rosso anche nella tipologia superiore:
-colore: rosso rubino, tendente al granato se invecchiato;
-odore: caratteristico;
-sapore: asciutto o abboccato, di corpo;
-titolo alcolometrico volumico totale minimo: 10,50%, 11,50% per il “superiore”;
-acidità totale minima: 4,0 g/l;
-estratto non riduttore minimo: 18,0 g/l.
-
-
-
-  9
-
 === PAGE 10 ===
-“Friuli” Grave Spumante
-spuma: fine, persistente;
-colore: giallo paglierino più o meno intenso;
-odore: caratteristico;
-sapore: sapido, armonico, extra brut, brut, extra dry, dry, demi-sec;
-titolo alcolometrico volumico totale minimo: 11,00%;
-acidità totale minima: 4,0 g/l;
-estratto non riduttore minimo: 14,0 g/l.
-
-  E’ facoltà del Ministero per le politiche agricole alimentari e forestali di modificare con
-proprio decreto, i limiti sopra indicati per l’acidità totale e per l’estratto non riduttore minimo.
-
+[25 lines of article 6 cut by it_wset.py; see the rulebook]
   Articolo 7
   Etichettatura, designazione e presentazione
 
@@ -651,102 +628,9 @@ B) Informazioni sulla qualità o sulle caratteristiche del prodotto essenzialmen
   La DOC “Friuli Grave” è riferita esclusivamente alle tipologie ammesse dall’art. 2 e che
   presentino le caratteristiche analitiche ed organolettiche previste dall’art. 6 del presente disciplinare.
   All’art. 6 non sono indicati i valori analitici degli zuccheri totali, dell’acidità volatile,
-  dell’anidride solforosa totale e dell’anidride carbonica così come previsto dall’art. 26 del Reg. CE
-  607/2009 poiché tali valori devono rientrare nei limiti previsti dalla normativa nazionale e
-  comunitaria. In ogni caso l’acidità totale, espressa in acido tartarico, in base al Reg. CE n. 479 all. 4
-  sez. 1 non può essere inferiore a 3,5 g/l ed effettivamente tutti i vini a DOC “Friuli Grave”
-  prevedono un minimo di 4 g/l. L’anidride solforosa totale deve rimanere nei limiti fissati dal Reg.
-  CE 606/2009 allorché le tipologie di vino di cui all’art. 2 presentino una quantità di zuccheri
-  inferiore a 4 g/l e quindi, come da art. 6, con caratteristiche di sapore secco o asciutto. Tuttavia,
-  come previsto al punto 2 dell’allegato I B dello stesso Regolamento, il limite di anidride solforosa
-  totale viene elevato rispettivamente a 200 mg/l per i vini rossi e a 250 mg/l per i vini bianchi delle
-  tipologie di cui all’articolo 2 in presenza di una quantità di zuccheri superiore a 5 g/l e quindi, come
-  da art. 6 con caratteristiche di sapore abboccato, amabile o dolce. L’anidride solforosa totale della
-  tipologia spumante deve rimanere nel limite fissato dal Reg. CE 606/2009 all. I B sez. C punto 1
-  lett. A. di 185 mg/l. Pure per l’acidità volatile i parametri sono quelli fissati dalla normativa
-  (Reg.CE 606/2009 all. I C). Per i vini spumanti i parametri di anidride carbonica in soluzione sono
-  quelli contemplati dall’all. IV, punto 5, let.C del Reg. CE 479/2008 per cui devono presentare una
-  sovrapressione non inferiore a 3.5 bar. Lo stesso per i vini frizzanti in cui i parametri di anidride
-  carbonica endogena in soluzione vengono fissati dall’all.IV, punto 8 let.C del Reg.CE 479/2008 in
-  minimo 1 bar e massimo 2,5.
-  In particolare i vini fermi da varietà a bacca bianca si presentano freschi, fruttati e sapidi, di
-  colore giallo paglierino più o meno intenso, con buona acidità; i vini fermi da varietà a bacca nera si
-  presentano armonici e profumati da giovani, pieni e strutturati se invecchiati, di colore rosso rubino
-  più o meno inteso, tendenti al granato se invecchiati. I vini frizzanti presentano un perlage sottile e
-  persistente, profumi freschi, equilibrati e fruttati, di buona acidità, di medio corpo e con un con
-  gusto leggermente acido in alcuni casi attenuati da un piacevole quanto equilibrato residuo
-  zuccherino. Gli spumanti hanno caratteristiche ben delineate. Il colore è giallo paglierino più o
-  meno carico con un perlage fine e molto persistente. I profumi sono molto complessi e di ottima
-  intensità, fruttati e minerali. Al gusto si presentano eleganti, fini, di ottima struttura ed alle volte con
-  un piacevole residuo zuccherino. La tipologia superiore si identifica con prodotti di struttura più
-  elevata mentre quella riserva con profumi e corposità più complesse che vengono donate, il più
-  delle volte, da mirati affinamenti in legno.
-
-C) Descrizione dell’interazione causale fra gli elementi di cui alla lettera A) e quelli di cui alla
-  lettera B).
-  Le caratteristiche climatiche riferibili alla DOC “Friuli Grave” sono determinate
-  principalmente da due fattori: la conformazione orografica dei rilievi e la relativa vicinanza del
-  Mare Adriatico.
-  Le Prealpi e le Alpi Carniche esercitano sulla circolazione meteorologica una rilevante
-  influenza che consiste principalmente nella protezione della pianura dai venti freddi provenienti da
-  Nord, in tal senso operano un’azione mitigatrice di grande entità specie sulle minime invernali. La
-  barriera costituita dai rilievi prealpini a ridosso della pianura porta anche al brusco innalzamento
-  13
-
 === PAGE 15 ===
-dell’aria spinta dai venti umidi provenienti da sud; il conseguente raffreddamento provoca spesso
-fenomeni piovosi con un notevole gradiente di temperatura in uno spazio breve. Le Alpi, infatti,
-costituiscono anche una barriera notevole ai flussi umidi provenienti da sud-ovest e sud-est tipici
-della meteorologia del Friuli, determinando un incremento notevole delle piogge, sia in termini di
-quantitativi sia di frequenza, rispetto ad altre zone del Nord Italia.
-  Il secondo elemento geografico importante è rappresentato dalla vicinanza del Mare
-Adriatico. Il mare tende a mitigare le temperature, gli estremi si smorzano, per cui le aree litoranee
-rispetto a quelle della pianura interna presentano temperature medie più elevate in inverno e più
-basse in estate. Tuttavia, l’Alto Adriatico è un bacino relativamente poco profondo e questo
-elemento fa sì che durante l’inverno la massa d’acqua si raffreddi parecchio, mentre d’estate si
-riscaldi notevolmente, di conseguenza gli effetti sulla mitigazione degli estremi termici invernali ed
-estivi sono contenuti. Molto importante è invece il contributo all’incremento delle piogge, sia quelle
-temporalesche estive sia quelle di flusso autunnali e primaverili, determinato dalla cessione di
-umidità dal mare ai flussi d’aria che transitano sull’Adriatico e poi investono la zona.
-  Le piogge medie annue nella zona variano dai circa 1.100 mm della parte meridionale del
-comprensorio (con 96 giorni di pioggia) ai circa 2.000 mm (con 114 giorni di pioggia) che si
-registrano nella zona settentrionale, secondo un andamento che vede crescere la pluviometria
-partendo dalla pianura e andando a nord verso le montagne. La natura e l’origine delle piogge
-variano nel corso dell’anno: durante i mesi tardo autunnali, invernali e primaverili le piogge sono in
-genere legate alla circolazione dell’aria a grande scala ed ai flussi umidi meridionali; durante i mesi
-estivi e nei primi mesi autunnali diventa invece rilevante anche il contributo di piogge di origine
-convettiva o comunque legate a dinamiche alla mesoscala.
-  Pertanto, nella zona DOC le eventuali carenze idriche estive sono da imputare alla scarsa
-capacità di ritenzione idrica dei terreni piuttosto che alla scarsità delle piogge.
-  La viticoltura locale vanta una storia antica e ricca, le sue origini risalgono quanto meno alla
-colonizzazione romana. Dall’Impero Romano ad oggi queste terre non sono mai state avare di vino,
-anche se tra alterne vicende storiche e umane. Infatti, la viticoltura locale è passata attraverso due
-millenni di storia senza grossi mutamenti fino all’inizio del secolo quando ha subito un grosso
-cambiamento. Le ragioni di ciò non sono tanto riconducibili ad un generico impulso rinnovatore,
-quanto a un complesso insieme di cause e situazioni. Infatti, dalla metà del XIX° secolo fino ai
-primi del XX° l’oidio, la peronospora, la fillossera e non ultimi i conflitti bellici, provocarono
-distruzioni tali da costringere l’intera viticoltura a cambiare volto. Altro fattore di forte espansione
-fu la conquista alla coltivazione della vite di nuovi terreni grazie alle opere di irrigazione realizzate
-in vaste aree. La chiara vocazione viticola dei terreni ubicati a cavallo del fiume Tagliamento,
-riconosciuta con la creazione nel 1970 della Denominazione “Friuli Grave” e la professionalità dei
-viticoltori hanno consentito alla zona di crescere in modo inequivocabile, ponendosi al vertice della
-produzione regionale con oltre il 50% di prodotto.
-  Questo risultato è stato reso possibile grazie alla concomitanza di vari fattori: la razionalità
-dei nuovi impianti secondo le più moderne tecniche colturali, la selezione dei vitigni più adatti
-all’ambiente di coltivazione ma soprattutto la lungimiranza di molti produttori che, interpretando
-correttamente lo spirito del disciplinare, hanno puntato principalmente sulla qualità, valorizzando la
-loro produzione e contribuendo a diffonderne la conoscenza.
-  Il Consorzio dal 1972 ha iniziato la sua opera istituzionale di tutela, promozione,
-valorizzazione e assistenza tecnica alle aziende associate. Il costante aggiornamento del
-disciplinare, strumento principe della regolamentazione della produzione, ha permesso ai viticoltori
-di operare secondo i principi di una viticoltura moderna.
-
-
-
-
-  14
-
 === PAGE 16 ===
+[96 lines of article 9 cut by it_wset.py; see the rulebook]
 Articolo 10
   Riferimenti alla struttura di controllo
 

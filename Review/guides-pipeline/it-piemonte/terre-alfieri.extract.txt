@@ -232,16 +232,8 @@ dalla Regione Piemonte, ma non superiore a quella fissata dal precedente punto 3
 tempestivamente, e comunque almeno 5 giorni prima della data d’inizio della propria vendemmia,
 segnalare, indicando tale data, la stima della maggiore resa, mediante lettera raccomandata agli
 organi competenti per territorio preposti al controllo, per consentire gli opportuni accertamenti da
-parte degli stessi.
-
-  4
-
 === PAGE 5 ===
-6. Nell’ambito della resa massima fissata in questo articolo, la Regione Piemonte, su proposta del
-consorzio di tutela, può fissare i limiti massimi di uva rivendicabile per ettaro inferiore a quello
-previsto del presente disciplinare in rapporto alle necessità di conseguire un miglior equilibrio di
-mercato. In questo caso non si applicano le disposizioni di cui al comma 5.
-
+[10 lines of article 4 cut by it_wset.py; see the rulebook]
   Articolo 5 - Norme per la vinificazione
 
 1. Le operazioni di vinificazione e imbottigliamento dei vini a denominazione di origine controllata

@@ -111,4 +111,4 @@ Articolo 1
 === PAGE 14 ===
 === PAGE 15 ===
 === PAGE 16 ===
-[688 lines of annexes after the main text cut by it_wset.py; see the rulebook]
+[666 lines of annexes after the main text cut by it_wset.py; see the rulebook]

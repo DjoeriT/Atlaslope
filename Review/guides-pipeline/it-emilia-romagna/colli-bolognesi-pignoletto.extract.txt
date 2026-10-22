@@ -543,66 +543,8 @@ pignola prodotta nelle colline poste a sud dell’urbe di Bologna, la cui assomi
 produzione è stupefacente, e non lascia più adito ad altri dubbi di sorti.
 Lo statuto di Bologna del 1250 ordina la costruzione della “Strada dei vini” per trasportare con
 sicurezza verso Bologna i vini ottenuti nelle colline a sud della città.
-A partire dal 1250 risalgono i primi estimi del comprensorio vitivinicolo.
-
-In relazione al disciplinare si può affermare che:
-
-- base ampelografica dei vigneti: i vitigni idonei alla produzione del vino in questione sono quelli
-tradizionalmente coltivati nell’area di produzione.
-
-- le forme di allevamento, i sesti d’impianto e i sistemi di potatura che, anche per i nuovi impianti,
-sono quelli tradizionali e tali da perseguire la migliore e razionale disposizione sulla superficie delle
-viti, sia per agevolare l’esecuzione delle operazioni colturali, sia per consentire la razionale gestione
-della chioma.
-
-- le pratiche relative all’elaborazione dei vini sono quelle tradizionalmente consolidate in zona per
-la produzione di vini bianchi, fermi, frizzanti o spumanti nelle le tipologie previste dal disciplinare.
-
-B) Informazioni sulla qualità o sulle caratteristiche del prodotto essenzialmente o esclusivamente
-attribuibili all'ambiente geografico
-I vini di cui al presente disciplinare di produzione presentano, dal punto di vista analitico ed
-organolettico, caratteristiche molto evidenti e peculiari, descritte all’articolo 6, che ne permettono una
-  11
-
 === PAGE 12 ===
-chiara individuazione e tipicizzazione legata all’ambiente geografico.
-Tutti i vini presentano caratteristiche chimico-fisiche equilibrate in tutte le tipologie, mentre al sapore
-e all’odore si riscontrano aromi prevalenti tipici dei vitigni.
-
-- Colli Bolognesi Pignoletto nella versione superiore e Classico superiore: si presenta di colore giallo
-paglierino talvolta con riflessi verdognoli. All’olfatto i vini si caratterizzano per la finezza dei
-profumi, con note floreali di fiori bianchi (biancospino, mughetto, gelsomino) e fruttate di frutta gialla
-matura (pera e mela, ananas) che rispecchiano le proprietà del vitigno principale Grechetto gentile.
-Al sapore secco o abboccato, i vini risultano armonici, ben strutturati, con sentori di mandorla ed
-agrumi e talvolta presentano una nota amarognola, tutti fattori fortemente legati alle caratteristiche
-del territorio ricco di argille e arenarie.
-
-- Colli Bolognesi Pignoletto nella versione frizzante: l’Emilia-Romagna è la patria dei vini frizzanti,
-frutto di una lunga tradizione locale, caratteristica che accomuna i vini di pianura e di collina, da est
-a ovest della Regione. Il Pignoletto frizzante, della zona colli bolognesi, propone sentori più freschi
-e fruttati e un acidità più sostenuta, mentre conferma un gusto mediamente aromatico con note floreali
-di fiori bianchi (biancospino, mughetto, gelsomino) e spesso un finale agrumato, talvolta amarognolo
-che rivela la stretta relazione con il territorio. Nei fondo valle e nei terreni più freschi, infatti, si
-possono ottenere vini bianchi leggeri, magari frizzanti, che puntano sostanzialmente sulla freschezza
-dei sentori floreali e di frutta gialla poco matura (mela verde, ad esempio).
-
-- Colli Bolognesi Pignoletto nella versione spumante: si tratta della naturale evoluzione della
-versione frizzante verso un prodotto che esalta le caratteristiche di freschezza e aromaticità del vitigno
-Grechetto gentile mantenendone integre le caratteristiche peculiari all’olfatto e al gusto con note
-floreali di fiori bianchi (biancospino, mughetto, gelsomino) e fruttate di frutta gialla poco matura
-(pera e mela) e finale agrumato, che derivano dai terreni presenti nell’area di produzione e dal vitigno.
-
-C) Descrizione dell'interazione causale fra gli elementi di cui alla lettera A) e quelli di cui alla lettera
-B).
-
-L’orografia collinare del territorio di produzione, la disposizione delle valli poste in direzione nord-
-sud che favoriscono lo scorrimento dei venti e l’esposizione prevalente dei vigneti, orientati a ad est
-sud est, e localizzati in zone particolarmente vocate alla coltivazione della vite, concorrono a
-determinare un ambiente adeguatamente ventilato, luminoso, con notevoli sbalzi termici notte/giorno
-e pertanto favorevole all’espletamento di tutte le funzioni vegeto-produttive della pianta.
-La tradizione millenaria della produzione di vino, insieme alle caratteristiche uniche del territorio,
-garantisce la qualità del vino a DOCG Colli Bolognesi Pignoletto.
-
+[60 lines of article 9 cut by it_wset.py; see the rulebook]
   Articolo 10
   Riferimenti alla struttura di controllo
 

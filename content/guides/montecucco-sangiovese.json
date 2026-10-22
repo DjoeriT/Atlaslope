@@ -1,0 +1,39 @@
+{
+ "id": "montecucco-sangiovese",
+ "title": "Why Montecucco Sangiovese tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "Montecucco Sangiovese comes from vineyards of at least 90% Sangiovese in seven communes of Grosseto province.",
+  "cite": [
+   "montecucco-sangiovese-disc:p2"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "grosseto",
+   "beat": "place",
+   "title": "Seven communes in Grosseto",
+   "paras": [
+    "The grapes come from vineyards in seven communes of the province of Grosseto. The zone covers land suited to quality and to growing vines."
+   ],
+   "cite": [
+    "montecucco-sangiovese-disc:p2"
+   ]
+  },
+  {
+   "id": "sangiovese",
+   "beat": "rules",
+   "title": "Sangiovese, with a little room",
+   "paras": [
+    "Montecucco Sangiovese is made from red grapes only. Each estate's vineyards must hold at least 90% Sangiovese.",
+    "Up to 10% can be other red grapes that are suited to growing in Tuscany. Three are excluded: both Malvasia Nera types and Aleatico.",
+    "The name can carry the word riserva. The Sangiovese minimum stays at 90%.",
+    "The wine was approved as a DOC in 1998 and became a DOCG in 2011."
+   ],
+   "cite": [
+    "montecucco-sangiovese-disc:p1",
+    "montecucco-sangiovese-disc:p2"
+   ]
+  }
+ ]
+}

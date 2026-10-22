@@ -315,28 +315,7 @@ permettendo di ottenere una adeguata superficie fogliare ben esposta e di conten
 
   B) Informazioni sulla qualità o sulle caratteristiche del prodotto essenzialmente o esclusivamente
   attribuibili all’ambiente geografico.
-  La DOCG “Primitivo di Manduria Dolce Naturale” dal punto di vista analitico ed organolettico
-  presenta caratteristiche molto evidenti e peculiari, descritte all’articolo 6 del presente disciplinare, che
-  ne permettono una chiara individuazione e tipicizzazione legata all’ambiente geografico.
-  In particolare i vini presentano un colore intenso (rosso tendente al granato), di media acidità, con
-  odore ampio e complesso, talvolta con sentore di prugna e sapore dolce, vellutato, caratteristico.
-
-  C) Descrizione dell’interazione causale fra gli elementi di cui alla lettera A) e quelli di cui alla lettera
-  B).
-  L’orografia del territorio di produzione e l’esposizione prevalente dei vigneti, e localizzati in zone
-  particolarmente vocate alla coltivazione della vite, concorrono a determinare un ambiente
-  adeguatamente ventilato, luminoso, favorevole all’espletamento di tutte le funzioni vegeto-produttive
-  della pianta.
-  Nella scelta delle aree di produzione vengono privilegiati i terreni con buona esposizione adatti ad una
-  viticoltura di qualità.
-  La millenaria storia vitivinicola della regione, dalla Magna Grecia, al medioevo, fino ai giorni nostri,
-  attestata da numerosi documenti, è la fondamentale prova della stretta connessione ed interazione
-  esistente tra i fattori umani e la qualità e le peculiari caratteristiche del vino “Primitivo di Manduria
-  Dolce Naturale”; ovvero è la testimonianza di come l’intervento dell’uomo nel particolare territorio
-  abbia, nel corso dei secoli, tramandato le tradizionali tecniche di coltivazione della vite ed enologiche,
-  le quali nell’epoca moderna e contemporanea sono state migliorate ed affinate, grazie all’indiscusso
-  progresso scientifico e tecnologico, fino ad ottenere gli attuali rinomati vini.
-
+[22 lines of article 9 cut by it_wset.py; see the rulebook]
   Articolo 10
   Riferimenti alla struttura di controllo
 

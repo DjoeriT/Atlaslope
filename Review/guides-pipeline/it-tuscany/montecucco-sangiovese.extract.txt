@@ -97,4 +97,4 @@ il torrente Zancona in direzione sud fino ad incontrare il confine amministrativ
 === PAGE 9 ===
 === PAGE 10 ===
 === PAGE 11 ===
-[476 lines of annexes after the main text cut by it_wset.py; see the rulebook]
+[426 lines of annexes after the main text cut by it_wset.py; see the rulebook]

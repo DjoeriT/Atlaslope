@@ -300,25 +300,8 @@ del presente articolo, soltanto alle seguenti condizioni:
  devono darne comunicazione all’Organismo di controllo, almeno 2 giorni lavorativi prima del
  trasferimento. Il vino non potrà essere trasferito prima del ricevimento del risultato di prova
  analitico;
-
- c)  partite di vino in possesso dei requisiti per essere imbottigliate: devono essere provviste del
- certificato di idoneità chimico-fisica ed organolettica rilasciato dal competente Organismo di
- controllo.
-
 === PAGE 7 ===
-Ministero dell'agricoltura, della sovranità alimentare e delle foreste
-  DIPARTIMENTO DELLA SOVRANITA’ ALIMENTARE E DELL’IPPICA
-  DIREZIONE GENERALE PER LA PROMOZIONE DELLA QUALITÀ AGROALIMENTARE
-  UFFICIO PQA I
-
-
-La disposizione di cui alla lettera c) è applicabile anche nei riguardi delle partite di vino destinate ad
-essere trasferite al di fuori della zona di produzione, conformemente alla deroga per l’imbottiglia-
-mento nell’ambito della Regione Toscana di cui al comma 10.
-Tali partite di vino, oggetto di commercializzazione o imbottigliamento fuori zona, devono rispondere
-alle caratteristiche chimico-fisiche previste dal successivo articolo 6 e comunque ai valori analitici
-del certificato di analisi.
-
+[19 lines of article 5 cut by it_wset.py; see the rulebook]
   Art.6
   Caratteristiche del vino al consumo
 
@@ -588,74 +571,8 @@ dagli studi sul territorio e dalle indagini di zonazione svolte fino dal 1989 (C
 1996), le quali hanno evidenziato come i suoli presenti nel territorio di produzione del Vino Nobile
 conferiscono in particolare al Sangiovese note sensoriali caratteristiche di amarena, viola e speziato.
 Pur in presenza di diverse tipologie di suolo, la produttività e la qualità dell’uva nelle diverse
-situazioni viene modulata attraverso opportuni interventi antropici di tecnica colturale e di gestione
-del suolo, che vanno dalle lavorazioni meccaniche nei suoli meno fertili fino all’inerbimento in quelli
-che imprimono maggiore produttività. Tali interventi, sulla base di esperienze pluriennali, vengono
-eseguiti in modo da ricondurre la qualità delle uve vendemmiate a parametri uniformi ed idonei di
-maturazione.
-L’orografia collinare e l’esposizione dei vigneti contribuiscono a determinare un mesoclima
-particolarmente favorevole alla coltivazione della vite.
-Le piogge invernali e primaverili favoriscono il formarsi di una buona riserva idrica nei campi, mentre
-successivamente le scarse piogge estive (media di luglio inferiore a 30 mm) determinano in genere
-una moderata carenza di acqua, la quale favorisce la fase di maturazione a discapito
-dell’accrescimento vegetativo delle piante.
-L’elevata insolazione ed il livello termico raggiunto in luglio ed agosto favoriscono una regolare
-invaiatura dell’uva ed una predisposizione ottimale alla maturazione, mentre in settembre ed inizio
-ottobre l’elevata escursione termica tra giorno e notte, in particolare alle quote maggiori, favorisce la
-complessità aromatica e fenolica delle uve.
-La secolare storia del vino di Montepulciano dall’epoca etrusca ai giorni nostri, attestata da numerosi
-documenti bibliografici e reperti archeologici, è alla basa del fattore umano di esperienze e coltura
-che nel tempo, in interazione con l’ambiente, hanno individuato, sviluppato e selezionato le pratiche
-più consone per la produzione enologica di qualità.
-Fino dalle sue origini remotissime Montepulciano fonde con il vino la sua storia come testimonia una
-kylix (tazza da vino) rinvenuta nel 1868 in una tomba etrusca nei pressi della città.
-Il documento più antico riferibile al vino di Montepulciano è del 789: il chierico Arnipert offre alla
-chiesa di San Silvestro sull’Amiata un pezzo di terra coltivata a vigna posta nel castello di Policiano.
-
 === PAGE 13 ===
-Ministero dell'agricoltura, della sovranità alimentare e delle foreste
-  DIPARTIMENTO DELLA SOVRANITA’ ALIMENTARE E DELL’IPPICA
-  DIREZIONE GENERALE PER LA PROMOZIONE DELLA QUALITÀ AGROALIMENTARE
-  UFFICIO PQA I
-
-
-In seguito il Ripetti nel suo “Dizionario storico e geografico della Toscana” cita un documento che
-risale al 1350, nel quale si stabiliscono le clausole per il commercio e l’esportazione del vino di
-Montepulciano.
-È comunque documentato fin dall’alto Medioevo che i vigneti di Mons Pulitianus producevano vini
-eccellenti, e alla metà del 1500 Sante Lancerio, cantiniere di Papa Paolo III Farnese, celebrava il
-Montepulciano “perfettissimo tanto il verno quanto la state odorifero, polputo, non agrestino, né
-carico di colore, sicché è vino da Signori” per le tavole dei nobili, appunto, anche se le etichette più
-remote indicavano semplicemente Rosso Scelto di Montepulciano.
-Passando al XVII secolo, ricordiamo come Francesco Redi, insigne come medico, naturalista e poeta,
-esaltasse nel suo ditirambo “Bacco in Toscana” del 1685, con tanta efficacia il vino. Il Redi immagina
-che Bacco e Arianna elogino i migliori vini della Toscana: “Bella Arianna con bianca mano versa la
-manna di Montepulciano...”, e conclude “Montepulciano d’ogni vino è Re!”. Il poemetto ebbe un
-grande successo ed arrivò, di corte in corte, nelle mani di Guglielmo III re d’Inghilterra. Forse è
-proprio al Redi e alla celebrità che procurò ai vini toscani con il suo scritto che si deve la predilezione
-del re Guglielmo per questi vini. Ne è testimonianza il viaggio compiuto nel 1669 da una delegazione
-inglese nel Granducato di Toscana per procurare alla corte inglese il Moscadello di Montalcino ed il
-Vino Nobile di Montepulciano.
-Alla fine del XIX secolo è sentita l’esigenza di istruire le maestranze per la gestione dei vigneti e
-delle cantine: nel 1882 viene istituita una scuola pratica di agricoltura e tuttora al confine con il vicino
-Comune di Cortona è attivo un Istituto tecnico agrario.
-Più recentemente, nel 1933, nella pubblicazione “Vini tipici senesi” a cura di Montanari e Musiani,
-si trova una dettagliata descrizione delle tecniche di produzione del Vino Nobile di Montepulciano,
-molto simile agli odierni disciplinari delle denominazioni.
-Nel 1937 viene fondata una cantina sociale con l’intento di creare una struttura per la
-commercializzazione del vino prodotto anche dai piccoli coltivatori e nel 1965 nasce il Consorzio dei
-produttori del Vino Nobile.
-La storia più recente del Vino Nobile di Montepulciano è contraddistinta da un’evoluzione, in linea
-con i più moderni orientamenti produttivi, delle tecniche di gestione dei vigneti e della vinificazione.
-Le densità d’impianto sono quindi andate ad aumentare, in modo da ridurre la produzione unitaria di
-uva per pianta, e le forme di allevamento e potatura sono state orientate verso sistemi che favoriscono
-l’ottimale sviluppo vegeto-produttivo ed un idoneo stato sanitario dell’uva. Allo stesso tempo, in
-cantina si sono ottimizzate le fermentazioni, il periodo di maturazione in legno e l’impiego dei diversi
-contenitori, allo scopo di ottenere un vino di grande struttura, dotato di longevità e stabilità nel tempo.
-La menzione Pieve, prodotta esclusivamente con uve come descritto all’articolo 2, è in grado di
-esaltare le peculiarità del Vino Nobile di Montepulciano prodotto nelle rispettive Unità Geografiche
-Aggiuntive.
-
+[68 lines of article 9 cut by it_wset.py; see the rulebook]
   Art. 10
   Riferimenti alla struttura di controllo
 

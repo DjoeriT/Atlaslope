@@ -387,11 +387,7 @@ a), c), d) ed e)
 -sapore: fresco, armonico;da extrabrut a extradry;
 -titolo alcolometrico volumico totale minimo: 11,50% vol;
 -acidità totale minima: 5,0 g/l;
--estratto non riduttore minimo: 14,0 g/l.
-
-E' facoltà del Ministero delle politiche agricole alimentari e forestali modificare, con proprio
-decreto, i limiti minimi indicati per l' acidità totale nell'estratto non riduttore minimo.
-
+[5 lines of article 6 cut by it_wset.py; see the rulebook]
   Articolo 7
   Designazione e presentazione
 

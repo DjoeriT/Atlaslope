@@ -1,0 +1,413 @@
+{
+ "region": "it-north-east",
+ "sheets": [
+  {
+   "id": "alto-adige",
+   "why": {
+    "text": "Sunny south-Alpine valleys with big day-night swings, vineyards from 220 to over 1,000 m, varied soils and a very wide range of grapes.",
+    "cite": [
+     "alto-adige-disc:p30",
+     "alto-adige-disc:p31",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Kerner",
+     "Moscato Giallo",
+     "Müller Thurgau",
+     "Pinot Bianco",
+     "Pinot Grigio",
+     "Riesling",
+     "Riesling Italico",
+     "Sauvignon",
+     "Sylvaner",
+     "Traminer Aromatico",
+     "Veltliner",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Lagrein",
+     "Malvasia",
+     "Merlot",
+     "Moscato Rosa",
+     "Pinot Nero",
+     "Schiava",
+     "Schiava Grossa",
+     "Schiava Gentile",
+     "Schiava Grigia",
+     "Portoghese"
+    ],
+    "othersCite": [
+     "alto-adige-disc:p2",
+     "alto-adige-disc:p3",
+     "alto-adige-disc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Mostly dry still whites and reds, often single-grape; also bottle-fermented sparkling, rosé, and sweet passito and late-harvest wines.",
+    "cite": [
+     "alto-adige-disc:p2",
+     "alto-adige-disc:p20",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "climate": {
+    "text": "Continental, on the sunny south side of the Alps. Mean temperatures run 9.5 to 13 °C with 1,800 to 2,300 sun hours a year. Rain is 450 to 600 mm in the north and about 860 mm in the far south. Day-night swings average up to 15 °C, peaking at 20 °C in September and October.",
+    "cite": [
+     "alto-adige-disc:p31"
+    ]
+   },
+   "soil": {
+    "text": "Valley floors are fertile alluvial. Hill vineyards are mostly glacial moraine gravel. Between Merano and Bolzano the soil is often quartz porphyry; in the north quartz and mica; in the south limy soil from dolomite. About 60% of soils are light, sandy to gravelly.",
+    "cite": [
+     "alto-adige-disc:p31"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards run from 220 to over 1,000 m: 29% at 220 to 300 m, 57% at 300 to 500 m, 14% above 500 m. Only 15% is flat; 30% is steep, over 30% slope.",
+    "cite": [
+     "alto-adige-disc:p30",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "tastes": {
+    "text": "Strong primary aromas: elderflower in Sauvignon, rose in Traminer, wild berries in Pinot Nero and Lagrein, cherry and violet in Schiava. High-altitude whites are fresh; lower reds are full with soft tannins.",
+    "cite": [
+     "alto-adige-disc:p32"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least two years from 1 October of harvest year; min 11.5% natural alcohol."
+     },
+     {
+      "name": "Passito",
+      "text": "Semi-dried grapes, min 16% alcohol, max 40 hl/ha, sold from 1 June after harvest."
+     },
+     {
+      "name": "Vendemmia tardiva",
+      "text": "Partly raisined on the vine, at least 13.5% natural alcohol, max 50 hl/ha."
+     },
+     {
+      "name": "Spumante",
+      "text": "Bottle-fermented (metodo classico), at least 15 months in bottle."
+     }
+    ],
+    "cite": [
+     "alto-adige-disc:p20",
+     "alto-adige-disc:p21"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "trentino",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "collio",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "friuli-colli-orientali",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "friuli-grave",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colli-orientali-del-friuli-picolit",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "ramandolo",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rosazzo",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

@@ -32,7 +32,7 @@ ART = re.compile(r"^\s*art(icolo|\.)\s*(\d+)\b", re.I)
 TAIL = re.compile(r"^\s*allegato\b", re.I)
 
 
-def trim(text: str, art3=60, tail=40) -> str:
+def trim(text: str, art3=60, tail=40, art=150) -> str:
     """Cuts what the guide does not need and every step would re-read (Tuscany batch, 22 Oct 2026: Chianti's 146 KB extract
     cost 1.7M tokens, past the 1.5x guard): article 3 after its first lines (long boundary descriptions; the outline is built
     elsewhere), and whatever follows the main text (annexes, a second rulebook) after its first lines. Page markers stay, so
@@ -46,6 +46,14 @@ def trim(text: str, art3=60, tail=40) -> str:
     if a3 is not None and a4 is not None and a4 - a3 > art3:
         lines = lines[:a3] + keep(lines[a3:a4], art3, "article 3 (zone boundaries)") + lines[a4:]
         heads = [(i, int(m[2])) for i, l in enumerate(lines) if (m := ART.match(l))]
+    for n in sorted({n for _, n in heads if n != 3}, reverse=True):  # any other article past `art` lines (North-East batch, 23 Oct 2026:
+        # Alto Adige's per-type tasting notes in article 6 kept its extract at 69 KB and the guide at 2.1M tokens)
+        heads = [(i, int(m[2])) for i, l in enumerate(lines) if (m := ART.match(l))]
+        s = next((i for i, k in heads if k == n), None)
+        e = next((i for i, k in heads if s is not None and i > s and k != n), None)
+        if s is not None and e is not None and e - s > art:
+            lines = lines[:s] + keep(lines[s:e], art, f"article {n}") + lines[e:]
+    heads = [(i, int(m[2])) for i, l in enumerate(lines) if (m := ART.match(l))]
     last = max((n for _, n in heads), default=0)
     end_main = next((i for i, n in heads if n == last), None)
     after = next((i for i, l in enumerate(lines) if end_main is not None and i > end_main and

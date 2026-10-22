@@ -1,0 +1,98 @@
+{
+ "id": "val-di-cornia-rosso",
+ "title": "Why Val di Cornia Rosso tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Mild springs and good summer sun ripen every grape grown in this corner of Tuscany. The reds come out warm and dry, with an intense ruby colour.",
+  "cite": [
+   "val-di-cornia-rosso-disc:p5",
+   "val-di-cornia-rosso-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Two parts in the Cornia valley",
+   "paras": [
+    "The vineyards lie in the provinces of Livorno and Pisa. Suvereto and Sassetta lie wholly inside the zone. Monteverdi Marittimo, in Pisa, does too. Parts of Piombino, San Vincenzo and Campiglia Marittima are in as well.",
+    "The zone splits into two parts, a south-west and a north-east one. The south-west boundary starts at Piombino and reaches the sea. The north-east boundary runs along the railway and, for a stretch, the river Cornia."
+   ],
+   "cite": [
+    "val-di-cornia-rosso-disc:p1",
+    "val-di-cornia-rosso-disc:p2"
+   ],
+   "fly": [
+    {
+     "label": "The Cornia valley near Venturina",
+     "point": [
+      10.6,
+      43.03
+     ],
+     "zoom": 10,
+     "caption": "For a stretch, the north-east boundary of the zone follows the river Cornia.",
+     "cite": [
+      "val-di-cornia-rosso-disc:p2"
+     ]
+    },
+    {
+     "label": "Populonia",
+     "point": [
+      10.495,
+      42.989
+     ],
+     "zoom": 11,
+     "caption": "Pliny the Elder wrote of a vine at Populonia so big that a face of Jupiter was carved in it.",
+     "cite": [
+      "val-di-cornia-rosso-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Mild springs, good ripening",
+   "paras": [
+    "Spring is mild, which helps the vines grow evenly and flower and set fruit well. Summer temperatures and sunshine bring good ripening for every variety grown here.",
+    "Spring frost and long drought come only rarely. The mean temperature is about 14 °C. Rain stays under 650 mm a year and falls mostly in March and April, then in October and November.",
+    "The inland parts have a fair range between day and night temperatures. That helps bring out the aromas of the wine."
+   ],
+   "cite": [
+    "val-di-cornia-rosso-disc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone rock, deep alluvial soils",
+   "paras": [
+    "The bedrock includes cavernous limestone and layered black limestone. Large intrusions of magmatic rock run through the area too. They carry metal sulphide ores.",
+    "Much of the zone is deep, fresh alluvial soil. Some is light and sandy-silty. Some is heavy, silty and clayey. The texture is a medium loam, sometimes sandier or more clayey. The soil is mostly slightly alkaline.",
+    "Organic matter and total nitrogen are generally below average. Phosphorus is good, and potassium is sometimes very high."
+   ],
+   "cite": [
+    "val-di-cornia-rosso-disc:p4",
+    "val-di-cornia-rosso-disc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A Sangiovese base with Bordeaux partners",
+   "paras": [
+    "Val di Cornia Rosso is a red only. Sangiovese must make up at least 40% of the vineyard. Cabernet Sauvignon and Merlot, alone or together, can make up to 60%. Other black grapes suited to Tuscany can add up to 20%, but never Aleatico.",
+    "At release the wine must be a bright ruby of good intensity, tending to garnet. It smells vinous and delicate. It tastes dry, velvety and full-bodied, sometimes with a hint of wood.",
+    "Every bottle shows the harvest year. The wine cannot be sold before 1 May of the second year after harvest.",
+    "A riserva waits until 1 January of the third year after harvest. It spends at least 18 months in wood and 6 months in bottle. It needs at least 13.00% alcohol.",
+    "A label may add \"vigna\" and a vineyard name. That plot must be listed on its own in the vineyard register. Its wine must be made and kept apart from the rest."
+   ],
+   "cite": [
+    "val-di-cornia-rosso-disc:p1",
+    "val-di-cornia-rosso-disc:p3",
+    "val-di-cornia-rosso-disc:p4",
+    "val-di-cornia-rosso-disc:p6"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "id": "colli-euganei-fior-darancio",
+ "title": "Why Colli Euganei Fior d'Arancio tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Volcanic cones rise out of the Po plain, where a temperate climate and day-night swings build aromatic precursors. Growers pick the slope that suits each wine best.",
+  "cite": [
+   "colli-euganei-fior-darancio-disc:p5",
+   "colli-euganei-fior-darancio-disc:p6",
+   "colli-euganei-fior-darancio-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Cones above the plain",
+   "paras": [
+    "The Colli Euganei are hills of volcanic origin with a typically conical shape. They rise as a group out of the Po plain, near the spa towns of Abano Terme and Montegrotto Terme in Padova province.",
+    "They sit inside the Colli Euganei Park, a nature area of almost 19,000 ha recognised by the Veneto Region. Most vineyards lie at 50 to 300 m above sea level, reaching almost 400 m."
+   ],
+   "cite": [
+    "colli-euganei-fior-darancio-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Euganean Hills",
+     "point": [
+      11.69,
+      45.3
+     ],
+     "zoom": 10,
+     "caption": "Volcanic hills rising as a group out of the Po plain, inside a park of almost 19,000 ha.",
+     "cite": [
+      "colli-euganei-fior-darancio-disc:p5"
+     ]
+    },
+    {
+     "label": "Abano and Montegrotto Terme",
+     "point": [
+      11.79,
+      45.35
+     ],
+     "zoom": 11,
+     "caption": "The spa towns beside which the volcanic hills rise.",
+     "cite": [
+      "colli-euganei-fior-darancio-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild winters, good day-night swings",
+   "paras": [
+    "The climate is temperate, with nearly Mediterranean temperatures. Winters are mild and summers are hot and dry. The swings between day and night are good.",
+    "On clear days and in the early morning, a temperature inversion often makes the hills warmer than the plain. Rain averages 700 to 900 mm a year, with peaks in spring and autumn. Humidity is much lower on the hills than on the plain. Prevailing winds come from the NNE, NE and N, at low speeds and frequencies.",
+    "The temperate climate and the day-night swings produce significant amounts of aromatic precursors. These lift the typical floral and fruity notes."
+   ],
+   "cite": [
+    "colli-euganei-fior-darancio-disc:p5",
+    "colli-euganei-fior-darancio-disc:p6",
+    "colli-euganei-fior-darancio-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Weathered volcanic rock and alluvial fans",
+   "paras": [
+    "The soils come from the breakdown of volcanic rock. They have a good skeleton, drain well and are rich in minerals and trace elements. The volcanic rocks are rhyolite and trachyte. Basalt and basaltic tuff occur too.",
+    "Depending on how far the volcanic rock has broken down over the millennia, other soils appear. Sedimentary rocks such as biancone and scaglia rossa are one kind, along with marl. Alluvial soils on fans and valley floors are another. Vineyards mostly stand on slopes, where water runs off instead of pooling.",
+    "On sedimentary rock yields are medium to modest, with high sugar levels and a good acid balance. The wines smell of flowers and fruit. Alluvial fans and valley floors have good fertility, which gives high yields with lower sugar levels and high acidity. These soils are preferred for wines to drink young."
+   ],
+   "cite": [
+    "colli-euganei-fior-darancio-disc:p6",
+    "colli-euganei-fior-darancio-disc:p7"
+   ]
+  },
+  {
+   "id": "moscato",
+   "beat": "rules",
+   "title": "One grape, three styles",
+   "paras": [
+    "Wines must be at least 95% Moscato giallo. Up to 5% can be other aromatic grapes of similar colour, grown on the same estate and suited to Padova province.",
+    "The DOCG makes a still white wine. It also makes spumante, the sparkling wine, and passito, made from dried grapes. The still wine runs from dry to sweet and is straw yellow, aromatic and intense. In its sweet version it keeps at least 50 g/l sugar. Depending on soil and aspect, Moscato here can show citrus and peach through to rose and honey.",
+    "Spumante is always sweet, with at least 50 g/l sugar and at least 6.00% actual alcohol. For passito the grapes dry naturally to at least 15.50% natural alcohol. Climate-controlled rooms may help, as long as they run at the temperatures of traditional drying. Passito is sweet, aromatic and lasting, from straw yellow to golden and sometimes amber. It cannot be sold before at least a year of ageing from 1 November of the harvest year.",
+    "Every bottle except spumante must show the vintage.",
+    "Growers match aspect to style. Cooler, mostly north-facing slopes give grapes for still or sparkling base wine. Sunnier, warmer slopes give grapes for passito."
+   ],
+   "cite": [
+    "colli-euganei-fior-darancio-disc:p1",
+    "colli-euganei-fior-darancio-disc:p2",
+    "colli-euganei-fior-darancio-disc:p4",
+    "colli-euganei-fior-darancio-disc:p5",
+    "colli-euganei-fior-darancio-disc:p6",
+    "colli-euganei-fior-darancio-disc:p7"
+   ]
+  }
+ ]
+}

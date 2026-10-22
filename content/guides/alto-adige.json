@@ -1,0 +1,161 @@
+{
+ "id": "alto-adige",
+ "title": "Why Alto Adige tastes the way it does",
+ "minutes": 5,
+ "lede": {
+  "text": "Vineyards here run from 220 to over 1,000 m on the south side of the Alps. Big swings between day and night, up to 15 °C on average in the growing season, heighten what makes the wines special.",
+  "cite": [
+   "alto-adige-disc:p30",
+   "alto-adige-disc:p31",
+   "alto-adige-disc:p32"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valleys",
+   "beat": "place",
+   "title": "A small strip of vines in a mountain province",
+   "paras": [
+    "The vineyards follow the upper valley of the Adige and the lower Valle Isarco. The zone is only a modest part of the province of Bolzano. About 86% of the province lies above 1,000 m.",
+    "Vines grow from 220 to over 1,000 m. Of the vineyard area, 29% lies at 220 to 300 m. Most of it, 57%, lies at 300 to 500 m. The other 14% is above 500 m.",
+    "Only 15% of the vineyard is flat. Another 55% sits on gentle to medium slopes. The last 30% is steep, with slopes over 30%, and gets direct, long sun. Vineyards generally face between east and south-west."
+   ],
+   "cite": [
+    "alto-adige-disc:p30"
+   ],
+   "fly": [
+    {
+     "label": "Bolzano, a renowned wine town",
+     "point": [
+      11.35,
+      46.5
+     ],
+     "zoom": 10,
+     "caption": "Bolzano is one of the renowned production places named in the earliest writing about the wine.",
+     "cite": [
+      "alto-adige-disc:p32"
+     ]
+    },
+    {
+     "label": "Valle Isarco, the northern valley",
+     "point": [
+      11.57,
+      46.64
+     ],
+     "zoom": 10,
+     "caption": "The Valle Isarco is a subzone of its own, and the lower part of the area the vineyards follow.",
+     "cite": [
+      "alto-adige-disc:p30",
+      "alto-adige-disc:p31",
+      "alto-adige-disc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Alpine shelter, big day-night swings",
+   "paras": [
+    "The province lies on the south side of the Alps and enjoys the warm climate found there. The mountains shield it from icy winds and northern storms. To the south, the Adige valley opens to warm winds from Lake Garda and the Mediterranean, which also bring needed moisture.",
+    "The climate is continental. Mean temperatures in the vineyards run from 9.5 to 13 °C, with 1,800 to 2,300 hours of sun a year.",
+    "Rain averages about 860 mm a year in the far south and 450 to 600 mm further north. Winters are dry. Summers often bring 4 to 6 weeks without significant rain.",
+    "Day and night differ by up to 15 °C on average in the growing season. In September and October, as the grapes finish ripening, the gap peaks at 20 °C.",
+    "The strong sun makes the wines fruity and well structured at the same time. Whites from vineyards above 300 to 400 m stand out for their freshness, from acidity of 5.5 to 7 g/l. Reds, mostly from below 400 m, gain from the warmer conditions there and turn out full-bodied with soft tannins."
+   ],
+   "cite": [
+    "alto-adige-disc:p31",
+    "alto-adige-disc:p32"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "From glacial gravel to porphyry",
+   "paras": [
+    "Valley floors have fertile, permeable alluvial soil. On hill and mountain slopes, where most of the vines grow, gravel prevails. It was left by glacial moraines and their later erosion.",
+    "Between Merano and Bolzano the soil often comes from volcanic quartz porphyry, often mixed with clay and sand. It is dry and poor in humus, so the vine must root deep to feed well and find water.",
+    "In the north, mostly in the Valle Isarco and partly in the Val Venosta, vines root in soil from quartz and mica. It holds more water than porphyry soil. That matters because the north gets much less rain. In the south the soil is limy, from broken-down dolomite rock.",
+    "Most soils (60%) are light, from sandy and gravelly to silty. Another 30% are silty and limy. The last 10% are clayey and limy."
+   ],
+   "cite": [
+    "alto-adige-disc:p31"
+   ],
+   "fly": [
+    {
+     "label": "Merano, porphyry country",
+     "point": [
+      11.16,
+      46.67
+     ],
+     "zoom": 10,
+     "caption": "Between Merano and Bolzano the soil often comes from quartz porphyry.",
+     "cite": [
+      "alto-adige-disc:p31"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "A wide range of grapes, mostly dry",
+   "paras": [
+    "Alto Adige is one of the smallest wine areas in Europe, yet it grows a wide range of grapes. The traditional ones, still grown, are Lagrein, Schiava and Moscato Giallo. Bordeaux grapes came in the 19th century: Cabernet, Merlot and Sauvignon. So did several Pinots from Burgundy. Riesling, Silvaner and Traminer Aromatico came from the Rhine. Müller Thurgau and Kerner arrived about 50 years ago.",
+    "By tradition, wines are made and sold as single-grape wines, apart from a few Bordeaux-style blends. A single-grape wine needs at least 85% of that grape. Whites include Chardonnay, Pinot Bianco, Pinot Grigio, Sauvignon, Riesling, Riesling Italico, Kerner, Sylvaner, Müller Thurgau, Moscato Giallo and Traminer Aromatico. Veltliner is a white of the Valle Isarco only.",
+    "Reds include Lagrein, Pinot Nero, Merlot, Cabernet, Malvasia, Schiava and Schiava Grigia. Moscato Rosa is a sweet red. Lagrein, Merlot and Pinot Nero also come as rosé, called Kretzer in German.",
+    "There are blends too. A Bianco (Weiss) and a Rosso (Rot) name no grape. Two-grape wines such as Cabernet-Merlot or Chardonnay-Pinot Bianco need over 15% of each grape.",
+    "Apart from passito and sparkling wines, winemaking aims at dry still wine. Riserva reds and all riserva whites age at least two years from 1 October of the harvest year.",
+    "Sparkling wine is fermented in the bottle from Pinot Bianco, Pinot Nero and Chardonnay, in white and rosé. It spends at least 15 months in bottle and runs from brut nature to brut.",
+    "Passito comes from grapes partly dried on the vine or after picking, to at least 16% alcohol. Late-harvest wine (vendemmia tardiva) comes from grapes partly dried on the vine, with at least 13.5% natural alcohol. Both taste off-dry to sweet.",
+    "The subzones each have their own grapes. Terlano is for whites led by Pinot Bianco and Chardonnay. The Valle Isarco and the Val Venosta are mostly white. Santa Maddalena, the Meranese and Colli di Bolzano are Schiava reds. Klausner Laitacher is a Valle Isarco red from four villages around Chiusa."
+   ],
+   "cite": [
+    "alto-adige-disc:p2",
+    "alto-adige-disc:p3",
+    "alto-adige-disc:p4",
+    "alto-adige-disc:p5",
+    "alto-adige-disc:p20",
+    "alto-adige-disc:p21",
+    "alto-adige-disc:p22",
+    "alto-adige-disc:p25",
+    "alto-adige-disc:p31",
+    "alto-adige-disc:p32"
+   ],
+   "fly": [
+    {
+     "label": "Termeno, with its Traminer vineyards",
+     "point": [
+      11.24,
+      46.33
+     ],
+     "zoom": 11,
+     "caption": "Termeno is one of the renowned production places named in the earliest writing about the wine. Four of its named vineyard areas may add \"Tramin\" when the wine is Traminer Aromatico alone.",
+     "cite": [
+      "alto-adige-disc:p32",
+      "alto-adige-disc:p29"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "A named vineyard: the place name or traditional name must follow it, and the wine is made and kept in separate vessels."
+   },
+   {
+    "term": "Unità geografica aggiuntiva",
+    "text": "A named vineyard area such as Gries or Söll: each allows only certain grapes, the wine must come 100% from grapes picked inside it, and the label carries a pictogram."
+   }
+  ],
+  "cite": [
+   "alto-adige-disc:p5",
+   "alto-adige-disc:p8",
+   "alto-adige-disc:p19",
+   "alto-adige-disc:p29",
+   "alto-adige-disc:p30"
+  ]
+ }
+}

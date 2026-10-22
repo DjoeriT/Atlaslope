@@ -1,0 +1,104 @@
+{
+ "id": "colli-di-conegliano",
+ "title": "Why Colli di Conegliano tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Gentle hills between the Dolomites and Venice, sheltered by the Alps and softened by the sea. Cool currents keep acidity in the grapes, and cold winter air dries them for two prized dried-grape wines.",
+  "cite": [
+   "colli-di-conegliano-disc:p8",
+   "colli-di-conegliano-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Soft hills between the Dolomites and Venice",
+   "paras": [
+    "The vineyards sit on gentle hills in eastern Veneto. The Dolomiti Bellunesi lie a few kilometres to the north and Venice only a few tens of kilometres to the south.",
+    "Ridges run east to west across the top of Treviso province and enclose an area suited to both white and black grapes. The white and red grapes come from all or part of 20 communes, from Conegliano itself to Vidor.",
+    "Torchiato di Fregona and Refrontolo each have their own grape zone. Their grapes must be dried and made into wine in that zone or in the communes next to it."
+   ],
+   "cite": [
+    "colli-di-conegliano-disc:p2",
+    "colli-di-conegliano-disc:p5",
+    "colli-di-conegliano-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Abbazia di Follina",
+     "point": [
+      12.1155,
+      45.9535
+     ],
+     "zoom": 11,
+     "caption": "The Abbey of Santa Maria in Follina is one of the finest traces of the Benedictine monks who developed vine growing in these hills.",
+     "cite": [
+      "colli-di-conegliano-disc:p9"
+     ]
+    },
+    {
+     "label": "Fregona and the Cansiglio",
+     "point": [
+      12.3383,
+      46.0047
+     ],
+     "zoom": 10,
+     "caption": "Torchiato di Fregona is said to have been born at the foot of the Cansiglio.",
+     "cite": [
+      "colli-di-conegliano-disc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Alps behind, sea in front",
+   "paras": [
+    "The Alps and Prealps are a natural barrier against cold air. The sea is close enough to soften the climate, which is called temperate.",
+    "The hills face the sun well and the temperature swings are wide. Fresh air currents blow during ripening. Together they keep acidity in the grapes, and the wines stay balanced against their alcohol and sugar. That is mainly why certain wines here can age.",
+    "Winds, above all in the northern part, favour a thermal inversion. That is very good for grape quality. It also helps dry the vines, which defend themselves naturally against fungal disease.",
+    "In winter the northern vineyards get cold, dry currents. Refrontolo and Fregona use them to dry their grapes naturally in drying rooms."
+   ],
+   "cite": [
+    "colli-di-conegliano-disc:p8",
+    "colli-di-conegliano-disc:p9",
+    "colli-di-conegliano-disc:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A lifted sea floor, shaped by ice",
+   "paras": [
+    "In the Cretaceous this ground was a marine platform. The rise of the Alps lifted it, and weather and a series of glaciations eroded it into the hills seen today.",
+    "The soils are mostly alluvial deposits laid down by rivers or lakes. They are very stony, largely thanks to the glacial moraine. This structure drains the rain, which falls abundantly here. The rain lets the vines withstand hot summers.",
+    "The soil is limy and morainic. Its stony, gravelly nature gives the wines a winey character. It keeps the light aromatic quality of grapes like Incrocio Manzoni and Marzemino, which show such a wide range only here."
+   ],
+   "cite": [
+    "colli-di-conegliano-disc:p9",
+    "colli-di-conegliano-disc:p11"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Four wines, two of them from dried grapes",
+   "paras": [
+    "The still white is built on Manzoni bianco, at least 30%, with at least 30% Pinot Bianco and/or Chardonnay. Sauvignon and Riesling may add up to 10%. Manzoni bianco is a cross of Riesling renano and Pinot bianco, suited to stony, dry, poor ground. The white is elegant, with good body. It can be enjoyed young or after some months of ageing.",
+    "The red uses Cabernet franc, Cabernet sauvignon, Marzemino and Merlot, at least 10% each. Merlot is capped at 40%. Incrocio Manzoni 2.15 and/or Refosco may add up to 20%. It has a decided character and fine structure, and turns sumptuous and austere with age. It goes on sale 24 months after the 1 November following harvest, with 6 months in cask. The riserva waits 36 months, 12 of them in cask.",
+    "Refrontolo is a red from at least 95% Marzemino. Its grapes are dried too, to at least 14.5% potential alcohol. The dry version spends up to 12 months in oak casks and goes on sale after 24 months. The sweet passito comes from grapes dried to 16% potential alcohol. The grapes dry on racks until the week before Christmas. The wine is velvety, with intense wild berry aromas.",
+    "Torchiato di Fregona is a white passito, a wine from dried grapes. It needs at least 30% Glera, 20% Verdiso and 25% Boschera. Boschera is grown in Fregona and found nowhere else in Treviso province or Italy. Its loose bunches let the grapes dry for a long time. The grapes dry for at least 150 days, to at least 18% potential alcohol, and cannot be pressed before 1 February. They are pressed after drying on racks. The wine ferments in wooden vats of oak, acacia or chestnut. It is deep golden, from dry to sweet, with notes of honey and dried fruit."
+   ],
+   "cite": [
+    "colli-di-conegliano-disc:p1",
+    "colli-di-conegliano-disc:p2",
+    "colli-di-conegliano-disc:p6",
+    "colli-di-conegliano-disc:p7",
+    "colli-di-conegliano-disc:p10",
+    "colli-di-conegliano-disc:p11"
+   ]
+  }
+ ]
+}

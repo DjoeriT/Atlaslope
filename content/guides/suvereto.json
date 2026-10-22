@@ -1,0 +1,101 @@
+{
+ "id": "suvereto",
+ "title": "Why Suvereto tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Suvereto makes only red wine, from the hillside vineyards of a single town. Its temperatures are never particularly hostile.",
+  "cite": [
+   "suvereto-disc:p1",
+   "suvereto-disc:p2",
+   "suvereto-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One town, one hillside zone",
+   "paras": [
+    "The zone lies in the province of Livorno. It takes in the land suited to quality across the whole municipality of Suvereto. Only hillside vineyards can be registered, with a suitable lie and aspect and land well laid out to manage water.",
+    "Overly wet or poorly sunned ground is ruled out, and so is the alluvial plain. Suvereto's wine history can be likened to that of the Val di Cornia. The DOC Val di Cornia was recognised in 1989 and the Suvereto subzone in 2000. Suvereto was approved as a DOCG of its own in 2011."
+   ],
+   "cite": [
+    "suvereto-disc:p1",
+    "suvereto-disc:p2",
+    "suvereto-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Suvereto and its hills",
+     "point": [
+      10.68,
+      43.07
+     ],
+     "zoom": 10,
+     "caption": "The whole municipality of Suvereto, in the province of Livorno, is the production zone.",
+     "cite": [
+      "suvereto-disc:p2"
+     ]
+    },
+    {
+     "label": "The plain of Campiglia",
+     "point": [
+      10.6,
+      43.05
+     ],
+     "zoom": 10,
+     "caption": "A dictionary of 1843 found the plain of Campiglia and the slopes of its hill covered in vines and olive groves. The first land reclamation had come around 1830.",
+     "cite": [
+      "suvereto-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild springs, sure ripening",
+   "paras": [
+    "Springs are mild. That mildness favours balanced growth of the vine. It also favours excellent flowering and fruit set. Summer heat and sunshine always bring the grapes to perfect ripeness, for every variety grown.",
+    "Spring frost and long drought only rarely strike. The mean temperature is around 14 °, and the rain is no more than 650 mm a year. It falls mostly in early spring (March and April) and in autumn (October and November).",
+    "The zone has a good swing in temperature, which favours the scents and aromas of the wine."
+   ],
+   "cite": [
+    "suvereto-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep, fresh alluvial soils",
+   "paras": [
+    "The zone has cavernous limestones and black layered limestones from the Middle to Upper Triassic. The hills bordering the valley mix rocks from several geological domains. Much of the zone has deep, fresh alluvial soils. The light ones are sandy-silty or silty-sandy. The heavy ones are silty and clayey.",
+    "The soil is mostly slightly alkaline, with some neutral and a little alkaline. It is generally below average in organic matter and in nitrogen. Phosphorus is good, and potassium and calcium are sometimes very high."
+   ],
+   "cite": [
+    "suvereto-disc:p5",
+    "suvereto-disc:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Red only, from five main grapes",
+   "paras": [
+    "Every Suvereto is a dry red. The plain Suvereto blends five grapes in any mix: Sangiovese and Syrah, with Merlot and the two Cabernets. Up to 15% of other non-aromatic red grapes suited to Tuscany may join them.",
+    "Each of the five can also be bottled alone as a single-grape wine, with 100% of that variety.",
+    "Yields top out at 9 tonnes a hectare. New and replanted vineyards need at least 4,000 vines a hectare. No Suvereto may be sold before 1 May of the second year after the harvest.",
+    "A Riserva needs at least 24 months of ageing, at least 12 of them in wood and 6 in bottle. Its grapes come from a yield of 8 tonnes a hectare, with at least 13.00% natural alcohol. It waits until 1 May of the third year after the harvest. The word vigna on a label must be followed by a place name, and that wine is made and kept apart. Every label shows the vintage and the wider name Toscana.",
+    "The plain Suvereto is ruby red, sometimes intense, tending to garnet. Its smell is vinous and delicate. Its taste is dry and velvety, of good body, with perhaps a hint of wood. Wines made for ageing grow richer with time, in scents and flavours that are more intense and lasting."
+   ],
+   "cite": [
+    "suvereto-disc:p1",
+    "suvereto-disc:p2",
+    "suvereto-disc:p3",
+    "suvereto-disc:p4",
+    "suvereto-disc:p5",
+    "suvereto-disc:p7"
+   ]
+  }
+ ]
+}

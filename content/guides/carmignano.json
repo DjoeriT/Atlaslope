@@ -1,0 +1,122 @@
+{
+ "id": "carmignano",
+ "title": "Why Carmignano tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Sunny hillsides open to a wide plain, with cool winds that often temper summer nights, ripen grapes early and keep quality steady from year to year. Over the centuries this has shaped a red made for ageing, structured yet elegant, with a fine and intense bouquet.",
+  "cite": [
+   "carmignano-disc:p4",
+   "carmignano-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "montalbano",
+   "beat": "place",
+   "title": "A small ridge above the plain",
+   "paras": [
+    "The area lies within the Montalbano, a small chain that runs from Serravalle Pistoiese to a steep drop over the Arno, south of Artimino. It is a stretch of Apennine fold, running north-west to south-east. The highest point, Poggio al Ciliegio, reaches only 611 m.",
+    "Deep stream cuts have left long spurs with wide, open slopes. They separate the small valleys that run down to the Pistoia-Florence plain, which lies at 40-50 m and is crossed by the Ombrone Pistoiese.",
+    "Grapes must come from the hill land of two municipalities, Carmignano and Poggio a Caiano, in the province of Prato. Winemaking, the required ageing and bottling must happen within these two municipalities too."
+   ],
+   "cite": [
+    "carmignano-disc:p2",
+    "carmignano-disc:p4"
+   ],
+   "fly": [
+    {
+     "label": "The Montalbano ridge",
+     "point": [
+      10.95,
+      43.83
+     ],
+     "zoom": 10,
+     "caption": "A small Apennine chain that ends in a steep drop over the Arno, south of Artimino.",
+     "cite": [
+      "carmignano-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun-and-wind",
+   "beat": "weather",
+   "title": "Open to the plain, cooled by the Apennines",
+   "paras": [
+    "The hill of Carmignano opens onto the great Florence-Pistoia plain. That favours sun and ventilation. Cool winds from the nearby Apennines often temper the summer nights, which gives a strong swing between day and night temperatures.",
+    "Average rainfall is under 1,000 mm a year. Most falls in autumn and winter, but summer usually brings a good supply of water too, and this helps the grapes ripen well. Summer rain is more plentiful here than in the neighbouring areas.",
+    "Most slopes are well placed and sunny, at relatively modest heights that rarely pass 300 m. This favours a long growing season for the vine. It lets the ground store heat and allows regular, complete ripening in the less favourable years."
+   ],
+   "cite": [
+    "carmignano-disc:p4",
+    "carmignano-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Florence-Pistoia plain",
+     "point": [
+      11.05,
+      43.84
+     ],
+     "zoom": 9,
+     "caption": "The wide plain the hill opens onto. It favours sun and ventilation on the slopes.",
+     "cite": [
+      "carmignano-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "three-soils",
+   "beat": "ground",
+   "title": "Different rocks, all free-draining",
+   "paras": [
+    "The core of the Montalbano is macigno, a sandstone of Oligocene age. Over a wide stretch of the north-east-facing side, a chaotic mass of scaly clays lies on top of it. These are clayey schists of many colours that enclose blocks of limestone and sandstone. Whitish marly limestone called alberese surfaces in wide patches north and south of Carmignano.",
+    "Vineyards may not be planted above 400 m. Their soils must come from alberese and clayey schist of the Eocene, or from Oligocene sandstone.",
+    "The soils differ with their bedrock, but all drain freely, with no waterlogging. They are airy and warm, and the vine restarts quickly in spring.",
+    "Sandstone soils are loose, sandy loam, slightly acid and well supplied with potassium. Soils from the clays and marly limestone are fine-textured, clay loam or clay, and neutral to slightly alkaline. Calcium and iron oxides help them hold together. They hold water well and resist long droughts.",
+    "Where sandstone dominates, the landscape is rougher and rockier. It turns softer and more rolling where schist and marly limestone prevail."
+   ],
+   "cite": [
+    "carmignano-disc:p2",
+    "carmignano-disc:p4"
+   ]
+  },
+  {
+   "id": "cabernet-in-tuscany",
+   "beat": "rules",
+   "title": "Sangiovese with Cabernet, made to age",
+   "paras": [
+    "Carmignano is red only. Sangiovese must make up at least 50% of an estate's vineyards. Canaiolo nero can add up to 20%. Cabernet Franc and Cabernet Sauvignon, alone or together, make up 10 to 20%.",
+    "Trebbiano toscano and Canaiolo bianco may join the blend, with Malvasia del Chianti. Alone or together they can add up to 10%. Other red grapes suited to Tuscany can add up to 10% of the total.",
+    "Its chemistry is balanced. On the nose and palate, the main aromas come from the meeting of grape and place.",
+    "It cannot be sold before 1 June of the second year after the harvest. Within that time it spends at least 8 months in oak or chestnut casks.",
+    "A Riserva can be sold from 29 September of the third year after the harvest. That is the day of San Michele, the feast of Carmignano. A Riserva spends at least 12 months in wood.",
+    "A label can add vigna (vineyard), followed by the vineyard's place name or traditional name. That wine must be made and kept in separate containers.",
+    "The vintage must appear on every label. Words of praise such as superiore (superior) are not allowed. A label may name a place within the zone, if the grapes truly come from there.",
+    "The area's winemaking history goes back to the Etruscans. In 1716 the Grand Duke of Tuscany, Cosimo III de' Medici, issued an edict that fixed the borders of the Carmignano area. Carmignano became a DOC (controlled designation of origin) in 1975. In 1990 it became a DOCG, the guaranteed tier, as one of the first wines in Italy."
+   ],
+   "cite": [
+    "carmignano-disc:p1",
+    "carmignano-disc:p3",
+    "carmignano-disc:p4",
+    "carmignano-disc:p5",
+    "carmignano-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Artimino",
+     "point": [
+      11.03,
+      43.78
+     ],
+     "zoom": 11,
+     "caption": "A chronicler of the 1300s called the wines of Carmignano and Artimino excellent.",
+     "cite": [
+      "carmignano-disc:p5"
+     ]
+    }
+   ]
+  }
+ ]
+}

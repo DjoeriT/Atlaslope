@@ -453,40 +453,8 @@ I vini di cui al presente disciplinare presentano, dal punto di vista analitico 
 caratteristiche molto evidenti e peculiari, descritte all’articolo 6, che ne permettono una chiara
 individuazione e tipicizzazione legata all’ambiente geografico.
 In particolare tutti i vini presentano caratteristiche chimico-fisiche equilibrate che contribuiscono al
-loro equilibrio gustativo tra la componente aromatica e quella gustativa; in tutte le tipologie si
-riscontrano aromi gradevoli, armonici, caratteristici ed eleganti.
-
-C) descrizione dell'interazione causale fra gli elementi di cui alla lettera A) e quelli di cui alla
-lettera B).
-Le particolari condizioni climatico-ambientali, la tessitura e la struttura chimico-fisica dei terreni
-interagiscono in maniera determinante con la coltura della vite, contribuendo all’ottenimento delle
-peculiari caratteristiche fisico-chimiche ed organolettiche dei vini della DOC “Etna”. Si tratta infatti
-di ambienti particolarmente vocati ad una vitivinicoltura di qualità.
-La composizione dei suoli vulcanici conferisce ai vini una particolare e gradevole sensazione di
-mineralità, contribuendo, specialmente nei bianchi, a migliorarne la longevità.
-Nella “Storia dei vini d’ Italia”, scritta dal Bacci nel 1596, venivano citati i vini prodotti sui colli
-che circondano Catania , la cui bontà era attribuita alle ceneri dell’Etna.
-Inoltre le temperature massime dei mesi di luglio ed agosto, che non raggiungono mai punte
-eccessive, e le forti escursioni termiche giornaliere, sono determinanti per uno svolgimento regolare
-della maturazione delle uve, con una ottimale sintesi ed accumulo del patrimonio aromatico delle
-uve.
-La zona dell’Etna è la zona più tardiva in Sicilia per la maturazione delle uve; la raccolta viene
-effettuata a partire da settembre per le uve utilizzate per le basi spumante e si protrae fino alla fine
-di ottobre qualche volta a novembre per le quote più alte; generalmente la raccolta di quelle del
-Carricante inizia da circa fine settembre a metà di ottobre, quelle del Nerello Cappuccio del Nerello
-Mascalese dalla prima decade di ottobre.
-La millenaria storia vitivinicola di questo territorio, dall’epoca greco-romana fino ai giorni nostri,
-attestata da numerosi documenti, è la generale e fondamentale prova della stretta connessione ed
-  9
-
 === PAGE 10 ===
-interazione esistente tra i fattori umani e la qualità e le peculiari caratteristiche dei vini della DOC
-“Etna”. Ovvero è la testimonianza di come l’intervento dell’uomo nel particolare territorio abbia, nel
-corso dei secoli, tramandato le tradizionali tecniche di coltivazione della vite ed enologiche, le quali
-nell’epoca moderna e contemporanea sono state migliorate ed affinate, grazie all’indiscusso progresso
-scientifico e tecnologico, fino ad ottenere i rinomati vini “Etna”, le cui peculiari caratteristiche sono
-descritte all’articolo 6 del disciplinare.
-
+[34 lines of article 9 cut by it_wset.py; see the rulebook]
   Articolo 10
   Riferimenti alla struttura di controllo
 

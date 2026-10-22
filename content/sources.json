@@ -2104,5 +2104,53 @@
   "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
   "date": "2026-10-22",
   "title": "Recioto di Gambellara PDO-IT-A0470: disciplinare di produzione (MASAF, Italian, file \"Recioto di Gambellara\" in the DOP archive)"
+ },
+ "alto-adige-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Alto Adige PDO-IT-A0293: disciplinare di produzione (MASAF, Italian, file \"Alto Adige o dell'Alto Adige\" in the DOP archive)"
+ },
+ "trentino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Trentino PDO-IT-A0754: disciplinare di produzione (MASAF, Italian, file \"Trentino\" in the DOP archive)"
+ },
+ "collio-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Collio PDO-IT-A0908: disciplinare di produzione (MASAF, Italian, file \"Collio Goriziano o Collio\" in the DOP archive)"
+ },
+ "friuli-colli-orientali-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Friuli Colli Orientali PDO-IT-A0953: disciplinare di produzione (MASAF, Italian, file \"Friuli Colli Orientali\" in the DOP archive)"
+ },
+ "friuli-grave-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Friuli Grave PDO-IT-A0954: disciplinare di produzione (MASAF, Italian, file \"Friuli Grave\" in the DOP archive)"
+ },
+ "colli-orientali-del-friuli-picolit-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colli Orientali del Friuli Picolit PDO-IT-A0938: disciplinare di produzione (MASAF, Italian, file \"Colli Orientali del Friuli Picolit\" in the DOP archive)"
+ },
+ "ramandolo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Ramandolo PDO-IT-A0939: disciplinare di produzione (MASAF, Italian, file \"Ramandolo\" in the DOP archive)"
+ },
+ "rosazzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Rosazzo PDO-IT-A0367: disciplinare di produzione (MASAF, Italian, file \"Rosazzo\" in the DOP archive)"
  }
 }
