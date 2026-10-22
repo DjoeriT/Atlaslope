@@ -73,3 +73,7 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   B2 near-black see-through band; B3 (recommended) B1 framing with three Rioja photos (rioja-c18, c06, c14) on the Rioja map.
   Map is a real live screenshot with the Rioja card hidden by CSS (a builder's fake terrain patch was caught and removed: no fake geography).
   Builder total for this mock thread ~118K [V].
+- Version 6, owner picked B3 (22 Oct 2026) [O]: "B3 indeed, but then without the rights reference. We should fix that in a creative way."
+  The separate credit strip is gone; the three photo credits replace the "Card photos" part of the map's own credit line at the map's foot
+  (the card is hidden, so its credits had to go anyway). One visible line still credits every photo (licence rule kept). On desktop the line wraps to two lines.
+  Builder total for this mock thread ~125K [V].
