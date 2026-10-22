@@ -321,7 +321,7 @@ export const strings = {
       introHeading: "Learn Spain's wine places, a few at a time.",
       intro: [
         'For each place you learn where it is and what it makes. You also learn why its wine tastes the way it does.',
-        'Learn asks about each place again just before you would forget it. When you miss one, it takes you to that place\'s guide so you can read why.',
+        'Learn asks about each place again just before you would forget it. When you miss one, it shows you why and links to that place\'s guide.',
         'If you are taking a course, you can choose it here, and everything in Learn will keep to the places that course covers.',
       ],
       begin: (n: number, region: Where) => `Begin with ${word(n)} ${n === 1 ? 'place' : 'places'}${where(region)}`,
@@ -342,7 +342,7 @@ export const strings = {
       change: 'Change',
       setFocus: 'Set a focus',
       practiseAll: 'Practise any of Spain\u2019s places',
-      practiseCourse: (label: string) => `Practise ${label} places`,
+      practiseCourse: (label: string) => `Practise the ${label} places`,
       // Mock line "It does not change your schedule" is not quite true (a miss in practice brings a place back sooner): the old line's first half.
       practiseLedeAll: "Pick a region or a few places for a round of 10 or 20 questions. Places that aren't due keep their schedule.",
       practiseLedeCourse: "Pick a region or a few of the course\u2019s places for a round of 10 or 20 questions. Places that aren't due keep their schedule.",
