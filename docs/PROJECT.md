@@ -100,7 +100,12 @@ Live for Rioja and Priorat since release 59 (built from `Review/mock-story-guide
 format in `docs/guides.md` "Story files"). Next: v4 mock, the whole guide inside the v3 journey, map on by default with a close option, then the build (briefs in `2026-10-21-tour-v3-restore.md`), then the other 11, hand-made.
 Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", then folded into the guide page, same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
 get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
-report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
+report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides (list never written down).
+**Rule A (owner 22 Oct 2026, replaces the above):** at least 4 fly stops in the guide's own text, and the land shows from above: steep (top quarter by
+share over 30%), or at least 500 m between p10 and p90 altitude, or two Köppen classes of at least 20% each, or big (DOCa or top 8 by area: La Mancha,
+Rioja, Ribera del Guadiana, Cava, Catalunya, Utiel-Requena, Ribera del Duero, Jumilla, MAPA 2023/24 p. 15). Result 14: Rioja, Priorat, Ribeira Sacra,
+Alicante, Campo de Borja, Cangas, Costers del Segre, Monterrei, Navarra, Somontano, Txakoli Getaria, Txakoli Bizkaia, Txakoli Álava, Valdeorras;
+plus Ribera del Duero as the owner's own pick (2 fly stops). Pilots measured 22 Oct 2026: Ribeira Sacra 97K, Ribera del Duero 117K helper tokens.
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)
 Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his: #146 full QA sweep; #147 Study plan; #148 fly-over for
