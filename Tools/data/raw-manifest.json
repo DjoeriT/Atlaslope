@@ -32,7 +32,7 @@
    "note": "MDT05 (5 m) over the same box in 10 km tiles; same WCS, coverage Elevacion25830_5",
    "command": [
     "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt05_rioja\" && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/dem/mdt05_rioja\"",
-    "for x in $(seq 485000 10000 605000); do for y in $(seq 4640000 10000 4720000); do curl -sSfL -o \"mdt05_${x}_${y}.tif\" \"https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion25830_5&FORMAT=image/tiff&SUBSET=x($x,$((x+10000)))&SUBSET=y($y,$((y+10000)))\"; done; done"
+    "for x in $(seq -f %.0f 485000 10000 605000); do for y in $(seq -f %.0f 4640000 10000 4720000); do curl -sSfL -o \"mdt05_${x}_${y}.tif\" \"https://servicios.idee.es/wcs-inspire/mdt?SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=Elevacion25830_5&FORMAT=image/tiff&SUBSET=x($x,$((x+10000)))&SUBSET=y($y,$((y+10000)))\"; done; done"
    ]
   },
   {
@@ -145,10 +145,10 @@
    "path": "countries/pt/caop2025-ram-islands.geojson",
    "kind": "command",
    "licence": "DGT, CAOP 2025 (CC BY 4.0, taken to cover it [A])",
-   "note": "Madeira: CAOP RAM GeoPackage, layer ram_distritos, only Ilha da Madeira and Ilha de Porto Santo (Desertas and Selvagens dropped), simplified to about 40 m (781.7 km2). The name field in -where is [A]: check it with ogrinfo first",
+   "note": "Madeira: CAOP RAM GeoPackage, layer ram_distritos, only Ilha da Madeira and Ilha de Porto Santo (Desertas and Selvagens dropped), simplified to about 40 m (781.7 km2). Field values checked with ogrinfo 22 Oct 2026 [V]",
    "command": [
     "cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/pt\" && curl -sSfL -o CAOP_RAM_2025-gpkg.zip https://geo2.dgterritorio.gov.pt/caop/CAOP_RAM_2025-gpkg.zip && unzip -oq CAOP_RAM_2025-gpkg.zip -d ram",
-    "ogr2ogr -f GeoJSON caop2025-ram-islands.geojson ram/*.gpkg ram_distritos -t_srs EPSG:4326 -where \"distrito IN ('ILHA DA MADEIRA','ILHA DE PORTO SANTO')\" -simplify 0.00036 -makevalid"
+    "ogr2ogr -f GeoJSON caop2025-ram-islands.geojson ram/*.gpkg ram_distritos -t_srs EPSG:4326 -where \"distrito IN ('Ilha da Madeira','Ilha de Porto Santo')\" -simplify 0.00036 -makevalid"
    ]
   },
   {
