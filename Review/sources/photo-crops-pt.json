@@ -1,10 +1,6 @@
 {
- "$comment": "Square crops for the Portugal photos, checked by eye on the crop sheet 22 Oct 2026 (Tools/guides/crop_sheet.mjs). Parked here because the unit test allows entries in src/home/photoCrops.json only for photos the Guides page shows, and Portugal is still behind SHOWN_COUNTRIES. The build that shows Portugal moves these in with crop_sheet.mjs --write and the same --focus values.",
+ "$comment": "The other Portuguese square crops, checked by eye on the crop sheet 22 Oct 2026 (Tools/guides/crop_sheet.mjs). The ten the country cards and pages show moved into src/home/photoCrops.json (country pages build, 22 Oct 2026); the unit test allows entries there only for photos a page shows, so these wait for the guides that show them. Move them in with crop_sheet.mjs --write and the same --focus values.",
  "crops": {
-  "douro-1": {
-   "focus": "50% 50%",
-   "file": "8b9e749ab4b4"
-  },
   "douro-10": {
    "focus": "50% 50%",
    "file": "649cb786cad7"
@@ -41,25 +37,9 @@
    "focus": "72% 50%",
    "file": "cd5b5042f44e"
   },
-  "douro-2": {
-   "focus": "50% 50%",
-   "file": "e77bff7a435a"
-  },
-  "douro-3": {
-   "focus": "50% 50%",
-   "file": "d0358715a06c"
-  },
-  "douro-4": {
-   "focus": "50% 50%",
-   "file": "13ca30850754"
-  },
   "douro-5": {
    "focus": "50% 50%",
    "file": "01641db310f2"
-  },
-  "douro-6": {
-   "focus": "50% 50%",
-   "file": "9695530d1478"
   },
   "douro-7": {
    "focus": "50% 50%",
@@ -73,37 +53,17 @@
    "focus": "50% 50%",
    "file": "7dc077cdae8c"
   },
-  "vinho-verde-1": {
-   "focus": "50% 50%",
-   "file": "148384fd7ed9"
-  },
   "vinho-verde-2": {
    "focus": "50% 30%",
    "file": "e36dd0020680"
-  },
-  "vinho-verde-3": {
-   "focus": "50% 50%",
-   "file": "b5f88bf4b897"
   },
   "vinho-verde-4": {
    "focus": "50% 50%",
    "file": "661595b5baf3"
   },
-  "vinho-verde-5": {
-   "focus": "50% 50%",
-   "file": "566b4024168a"
-  },
   "vinho-verde-6": {
    "focus": "50% 50%",
    "file": "e92465f9ce44"
-  },
-  "vinho-verde-7": {
-   "focus": "50% 50%",
-   "file": "2e039584cbea"
-  },
-  "vinho-verde-8": {
-   "focus": "50% 50%",
-   "file": "08003ea92480"
   },
   "vinho-verde-9": {
    "focus": "50% 50%",
