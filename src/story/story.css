@@ -106,3 +106,6 @@
 .pg.tour .pg-cover .pg-spine{padding:0;max-width:none}
 .pg.tour .pg-cover .pg-spine h2{margin:0 0 .3rem;font:400 .95rem var(--serif)!important;color:var(--ink3)}
 .pg.tour .pg-cover .pg-lede{font-size:1.35rem;line-height:1.38;max-width:none}
+/* Phones: "Back" alone in the band (owner 22 Oct 2026: long names were cut off). */
+.story-back .short{display:none}
+@media (max-width:47.5em){.story-back .long{display:none}.story-back .short{display:inline}}

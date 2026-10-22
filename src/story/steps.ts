@@ -29,3 +29,30 @@ export function anchorOf(guide: Guide, step: StoryStep): string {
   const i = linkIndex(guide, step);
   return i === undefined ? `#terroir-${step.chapter}` : `[data-fly="${flyKey(step.chapter, i)}"]`;
 }
+
+/** The names a fly label gives a stop ("Haro to Alfaro, the whole valley": Haro, Alfaro), without the place's own name. */
+function stopNames(label: string, placeId: string): string[] {
+  const own = new Set(placeId.split('-'));
+  return (label.match(/\p{Lu}[\p{L}-]{2,}/gu) ?? []).map((w) => w.replace(/'s$/, '')).filter((w) => !own.has(w.toLowerCase()));
+}
+
+/** Where each step comes up while reading (owner 22 Oct 2026: the map was late, it moved only when the link row under the text
+ *  passed). A fly stop comes up at the paragraph that names it; its chapter's first stop at the chapter's start. Paragraphs only
+ *  move forward within a chapter, so the steps stay in reading order. Zone cards, overviews and the lede keep anchorOf. */
+export function anchorsOf(guide: Guide, story: Story): string[] {
+  const at = new Map<string, number>();
+  return story.steps.map((st) => {
+    const ch = guide.chapters.find((c) => c.id === st.chapter);
+    // A zone card names its stop at its top: the card, not the link at its foot.
+    if (ch && st.card !== undefined) return `.pg-zguide > :has(${anchorOf(guide, st)})`;
+    const fly = ch && st.fly !== undefined ? ch.fly?.[st.fly] : undefined;
+    if (!ch || !fly) return anchorOf(guide, st);
+    const from = at.get(ch.id);
+    const names = stopNames(fly.label, guide.id);
+    const start = from ?? 0;
+    const hit = ch.paras.findIndex((p, i) => i >= start && names.some((n) => p.includes(n)));
+    const i = hit < 0 ? start : hit;
+    at.set(ch.id, i);
+    return from === undefined && i === 0 ? `#terroir-${ch.id}` : `[data-b="${ch.id}.${i}"]`;
+  });
+}

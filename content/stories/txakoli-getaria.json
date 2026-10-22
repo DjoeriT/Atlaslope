@@ -1,0 +1,215 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour batch 1, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-txakoli-getaria.geojson or the river's own line.",
+ "id": "txakoli-getaria",
+ "cover": {
+  "photo": "txakoli-getaria-2"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [-2.12, 43.3],
+    "zoom": 9.6,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-getaria",
+   "chip": "Getariako Txakolina in Gipuzkoa"
+  },
+  {
+   "id": "coast",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-getaria",
+    "pitch": 50,
+    "bearing": 340,
+    "zoomShift": -0.2
+   },
+   "focus": "txakoli-getaria",
+   "photo": "txakoli-getaria-2",
+   "measure": {
+    "place": "txakoli-getaria",
+    "kind": "low"
+   },
+   "facts": [
+    {
+     "at": "Getaria",
+     "label": "Close to the sea",
+     "text": "95% of the vineyards are less than 1 km from the sea.",
+     "cite": [
+      "txakoli-getaria-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "getaria",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -2.2037,
+     43.3045
+    ],
+    "zoom": 12.2,
+    "pitch": 60,
+    "bearing": 20
+   },
+   "focus": "txakoli-getaria",
+   "dot": false,
+   "photo": "txakoli-getaria-harbour-1",
+   "facts": [
+    {
+     "at": "Getaria",
+     "label": "Getaria",
+     "text": "Getaria kept 35 hectares in sheltered spots.",
+     "cite": [
+      "txakoli-getaria-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zarautz",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -2.1723,
+     43.2835
+    ],
+    "zoom": 12.2,
+    "pitch": 60,
+    "bearing": 340
+   },
+   "focus": "txakoli-getaria",
+   "dot": false,
+   "photo": "txakoli-zarautz-1",
+   "facts": [
+    {
+     "at": "Zarautz",
+     "label": "Zarautz",
+     "text": "Zarautz kept 4 hectares.",
+     "cite": [
+      "txakoli-getaria-pliego:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "donostia",
+   "chapter": "place",
+   "fly": 3,
+   "camera": {
+    "center": [
+     -1.9839,
+     43.3224
+    ],
+    "zoom": 11.4,
+    "pitch": 55,
+    "bearing": 300
+   },
+   "focus": "txakoli-getaria",
+   "dot": false,
+   "photo": "txakoli-donostia-1",
+   "facts": [
+    {
+     "at": "Donostia",
+     "label": "Donostia / San Sebastián",
+     "text": "A charter of 1180 for the city already mentions vines.",
+     "cite": [
+      "txakoli-getaria-pliego:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-getaria",
+    "pitch": 0,
+    "bearing": 0,
+    "zoomShift": -0.3
+   },
+   "focus": "txakoli-getaria",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "txakoli-getaria-3",
+   "facts": [
+    {
+     "at": "Getaria",
+     "label": "The coast at Getaria",
+     "text": "Rain averages 1,600 mm a year.",
+     "cite": [
+      "txakoli-getaria-pliego:p3"
+     ]
+    },
+    {
+     "at": "Zarautz",
+     "label": "No spring frost",
+     "text": "There is no risk of spring frost.",
+     "cite": [
+      "txakoli-getaria-pliego:p3",
+      "txakoli-getaria-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "camera": {
+    "center": [
+     -2.2,
+     43.28
+    ],
+    "zoom": 12,
+    "pitch": 62,
+    "bearing": 20
+   },
+   "focus": "txakoli-getaria",
+   "layers": [
+    "geology"
+   ],
+   "photo": "txakoli-getaria-1",
+   "measure": {
+    "place": "txakoli-getaria",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": [
+      -2.23,
+      43.265
+     ],
+     "label": "Hard and soft layers",
+     "text": "Hard layers of limestone and sandstone alternate with soft layers of marl and clay rock.",
+     "cite": [
+      "txakoli-getaria-pliego:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "txakoli-getaria",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-getaria",
+   "photo": "txakoli-getaria-1",
+   "chip": "Ondarrabi Zuri on a pergola"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Getariako Txakolina."
+ }
+}

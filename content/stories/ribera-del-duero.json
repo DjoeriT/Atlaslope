@@ -1,0 +1,157 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour pilot, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-ribera-del-duero.geojson or the river's own line.",
+ "id": "ribera-del-duero",
+ "cover": {
+  "photo": "ribera-belt-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -3.65,
+     41.65
+    ],
+    "zoom": 8.2,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "ribera-del-duero",
+   "chip": "Ribera del Duero in Castilla y León"
+  },
+  {
+   "id": "belt",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "ribera-del-duero",
+    "pitch": 45,
+    "bearing": 0,
+    "zoomShift": 0.3
+   },
+   "focus": "ribera-del-duero",
+   "markers": [
+    {
+     "at": "Aranda de Duero"
+    }
+   ],
+   "photo": "ribera-belt-1",
+   "measure": {
+    "place": "ribera-del-duero",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": "Aranda de Duero",
+     "label": "The Duero belt",
+     "text": "The Duero links more than 100 villages in a belt about 115 km long and 35 km wide.",
+     "cite": [
+      "ribera-del-duero-pliego:p20"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pintia",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -4.167,
+     41.625
+    ],
+    "zoom": 11.6,
+    "pitch": 55,
+    "bearing": 20
+   },
+   "focus": "ribera-del-duero",
+   "dot": false,
+   "photo": "ribera-pintia-1",
+   "facts": [
+    {
+     "at": [
+      -4.167,
+      41.625
+     ],
+     "label": "Pintia",
+     "text": "Vessels from the Vaccaean-Roman site of Pintia show wine was served and drunk here as early as the 4th century BC.",
+     "cite": [
+      "ribera-del-duero-pliego:p24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "chapter": "climate",
+   "camera": {
+    "place": "ribera-del-duero",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "ribera-del-duero",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "ribera-del-duero-2",
+   "facts": [
+    {
+     "at": "Aranda de Duero",
+     "label": "Aranda de Duero",
+     "text": "Aranda de Duero averages 435 mm of rain.",
+     "cite": [
+      "ribera-del-duero-pliego:p18",
+      "ribera-del-duero-pliego:p19",
+      "ribera-del-duero-pliego:p23"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "chapter": "soils",
+   "camera": {
+    "place": "ribera-del-duero",
+    "pitch": 55,
+    "bearing": 15,
+    "zoomShift": 0.3
+   },
+   "focus": "ribera-del-duero",
+   "layers": [
+    "geology"
+   ],
+   "photo": "ribera-soils-1",
+   "facts": [
+    {
+     "at": [
+      -3.9292,
+      41.6898
+     ],
+     "label": "Duero",
+     "text": "The usual soils are ochre and red sandy clays, and the middle and lower terraces of the Duero.",
+     "cite": [
+      "ribera-del-duero-pliego:p20",
+      "ribera-del-duero-pliego:p21"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "ribera-del-duero",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "ribera-del-duero",
+   "photo": "ribera-del-duero-1",
+   "chip": "Tinto Fino, kept in check"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Ribera del Duero."
+ }
+}

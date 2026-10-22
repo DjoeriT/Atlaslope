@@ -445,6 +445,8 @@ export const strings = {
     /** The map mode's own black band (v3 stage, restored 22 Oct 2026): where in the guide the reader is, and the way back to the page. */
     chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
     back: (name: string) => `Back to ${name}`,
+    /** Phones: the band has no room for long names (Bizkaiko Txakolina); the full name stays the link's label (owner 22 Oct 2026). */
+    backShort: 'Back',
     locator: 'Where the map is in Spain',
     terrainHeight: 'Terrain height',
     slopeKey: 'Slopes >30%',
@@ -463,7 +465,7 @@ export const strings = {
       climate: 'Climate:',
       geology: 'Rock beneath the soil:',
       /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), in English (IGME's Spanish unit names, rendered faithfully), per story (colours: src/story/layerRules.ts). */
-      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvium and floodplain' }, priorat: { slate: 'Hornfelsed slates' } } as Record<string, Record<string, string>>,
+      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvium and floodplain' }, priorat: { slate: 'Hornfelsed slates' }, 'txakoli-getaria': { alternation: 'Limestones, sandy limestones, marls and sandstone beds', sandyMarl: 'Limestones and sandy marls', sandstone: 'Massive calcareous sandstones' }, 'txakoli-alava': { marlLimestone: 'Marls and limestones (flysch)', clayLimestone: 'Marls and clayey limestones', sandstoneClay: 'Sandstones and clays' }, cangas: { sandstoneSlate: 'Sandstones and slates', sandstoneSlateLight: 'Sandstones and slates', narceaSlate: 'Slates, feldspathic sandstones and porphyroids (Narcea slates)', quartziteSlate: 'Quartzites and slates (Cabos series)' }, valdeorras: { slate: 'Slates and schists with sandstone levels (Luarca series)', schist: 'Bluish quartz-muscovite schists', granite: 'Adamellite granite' }, monterrei: { greenSeries: 'Green series: phyllites, sandy slates, greywackes', granite: 'Porphyritic granite' }, navarra: { marlSandstone: 'Grey marls and sandy marls with beds of sandstone', alluvial: 'Gravels, sands and clays of river valleys' }, somontano: { limestone: 'Limestones with nummulites (Guara Fm.)', gypsum: 'Clays and gypsum (Barbastro)', sandstoneMudstone: 'Sandstones between mudstones', terraces: 'Terraces and glacis' }, 'campo-de-borja': { limestone: 'Lacustrine limestones and marls', redClay: 'Red-brown clays and silts with sandstone', terraces: 'River terraces and alluvium' }, 'ribeira-sacra': { slate: 'Slates, schists and quartzites', granite: 'Two-mica granite, foliated', granite2: 'Two-mica granite' }, 'ribera-del-duero': { ochreClay: 'Silts and red-ochre clays with sandstones', terraces: 'Gravels and sands of the Duero terraces', limestone: 'Grey limestones and dolomites' }, alicante: { limestone: 'White limestones', limeMarl: 'Limestones and marls', dolomite: 'Dolomitic limestones' }, 'costers-del-segre': { montsec: 'Limestones and calcarenites of the Montsec', limestone: 'Dark grey limestones', sandClay: 'Conglomerates, sands and clays of the slopes' } } as Record<string, Record<string, string>>,
       slope: 'Steeper than 30% (about 17°)',
       short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
     },

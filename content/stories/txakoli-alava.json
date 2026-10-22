@@ -1,0 +1,207 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour batch 1, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-txakoli-alava.geojson or the river's own line.",
+ "id": "txakoli-alava",
+ "cover": {
+  "photo": "txakoli-alava-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [-3.0, 43.1],
+    "zoom": 9.8,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-alava",
+   "chip": "Arabako Txakolina in Álava"
+  },
+  {
+   "id": "valley",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-alava",
+    "pitch": 55,
+    "bearing": 330,
+    "zoomShift": 0
+   },
+   "focus": "txakoli-alava",
+   "photo": "txakoli-alava-1",
+   "measure": {
+    "place": "txakoli-alava",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": "Amurrio",
+     "label": "The Ayala valley",
+     "text": "Arabako Txakolina is made in the Ayala valley, in the north of Álava.",
+     "cite": [
+      "txakoli-alava-pliego:p4",
+      "txakoli-alava-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ayala",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -3.0791,
+     43.0761
+    ],
+    "zoom": 12,
+    "pitch": 60,
+    "bearing": 20
+   },
+   "focus": "txakoli-alava",
+   "dot": false,
+   "photo": "txakoli-ayala-1",
+   "facts": [
+    {
+     "at": [
+      -3.0791,
+      43.0761
+     ],
+     "label": "Tierra de Ayala",
+     "text": "Vines were grown for wine in the Tierra de Ayala in 964.",
+     "cite": [
+      "txakoli-alava-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "retes",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -3.1287,
+     43.1211
+    ],
+    "zoom": 12,
+    "pitch": 60,
+    "bearing": 300
+   },
+   "focus": "txakoli-alava",
+   "dot": false,
+   "facts": [
+    {
+     "at": "Retes de Tudela",
+     "label": "Retes de Tudela",
+     "text": "Vines are recorded at Retes de Tudela in 864.",
+     "cite": [
+      "txakoli-alava-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "laudio",
+   "chapter": "place",
+   "fly": 3,
+   "camera": {
+    "center": [
+     -2.9622,
+     43.1418
+    ],
+    "zoom": 12,
+    "pitch": 60,
+    "bearing": 60
+   },
+   "focus": "txakoli-alava",
+   "dot": false,
+   "facts": [
+    {
+     "at": [
+      -2.9622,
+      43.1418
+     ],
+     "label": "Laudio / Llodio",
+     "text": "A gift of vineyards to the lost monastery of San Víctor.",
+     "cite": [
+      "txakoli-alava-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-alava",
+    "pitch": 0,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "txakoli-alava",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "txakoli-amurrio-1",
+   "facts": [
+    {
+     "at": "Amurrio",
+     "label": "The Ayala valley",
+     "text": "The south wind blows on 170 days a year.",
+     "cite": [
+      "txakoli-alava-pliego:p5",
+      "txakoli-alava-pliego:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "camera": {
+    "center": [
+     -3.06,
+     43.1
+    ],
+    "zoom": 11.6,
+    "pitch": 62,
+    "bearing": 20
+   },
+   "focus": "txakoli-alava",
+   "layers": [
+    "geology"
+   ],
+   "measure": {
+    "place": "txakoli-alava",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Luiaondo",
+     "label": "Acid to alkaline",
+     "text": "The average pH in the vineyards is between 5.2 and 8.2.",
+     "cite": [
+      "txakoli-alava-pliego:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "txakoli-alava",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-alava",
+   "chip": "Hondarrabi Zuri against mildew"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Arabako Txakolina."
+ }
+}

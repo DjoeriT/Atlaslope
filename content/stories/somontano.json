@@ -1,0 +1,88 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tours batch 3, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-somontano.geojson or the river's own line.",
+ "id": "somontano",
+ "cover": {
+  "photo": "somontano-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {"center": [0.05, 42.1], "zoom": 8.4, "pitch": 0, "bearing": 0},
+   "focus": "somontano",
+   "chip": "Somontano in Aragón"
+  },
+  {
+   "id": "split",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {"place": "somontano", "pitch": 45, "bearing": 0, "zoomShift": 0.2},
+   "focus": "somontano",
+   "photo": "somontano-1",
+   "facts": [
+    {"at": "Barbastro", "label": "Somontano de Barbastro", "text": "The Somontano de Barbastro lies to the east.", "cite": ["somontano-pliego:p6"]}
+   ]
+  },
+  {
+   "id": "vero",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {"center": [0.1487, 42.0157], "zoom": 11.2, "pitch": 55, "bearing": 20},
+   "focus": "somontano",
+   "dot": false,
+   "photo": "somontano-vero-1",
+   "facts": [
+    {"at": [0.1487, 42.0157], "label": "River Vero", "text": "A string of rivers crosses the area, among them the Alcanadre, the Vero and the Cinca.", "cite": ["somontano-pliego:p7"]}
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "camera": {"place": "somontano", "pitch": 45, "bearing": 0, "zoomShift": 0},
+   "focus": "somontano",
+   "layers": ["koppen"],
+   "photo": "somontano-weather-1",
+   "facts": [
+    {"at": [-0.1, 42.28], "label": "Wetter north", "text": "It turns wetter and colder to the north, and drier and warmer to the south and east.", "cite": ["somontano-pliego:p8"]},
+    {"at": [0.05, 42.1], "label": "Somontano", "text": "The climate can be called Mediterranean continental.", "cite": ["somontano-pliego:p8"]}
+   ]
+  },
+  {
+   "id": "guara",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {"center": [-0.2094, 42.2883], "zoom": 10.6, "pitch": 60, "bearing": 340},
+   "focus": "somontano",
+   "layers": ["geology"],
+   "photo": "somontano-guara-1",
+   "measure": {"place": "somontano", "kind": "top"},
+   "facts": [
+    {"at": [-0.2094, 42.2883], "label": "Sierra de Guara", "text": "On the northern edge rise sierras such as Guara, Balcés and Salinas.", "cite": ["somontano-pliego:p7"]}
+   ]
+  },
+  {
+   "id": "barbastro",
+   "chapter": "ground",
+   "fly": 1,
+   "camera": {"center": [0.1272, 42.0367], "zoom": 11, "pitch": 60, "bearing": 350},
+   "focus": "somontano",
+   "layers": ["geology"],
+   "photo": "somontano-barbastro-1",
+   "facts": [
+    {"at": "Barbastro", "label": "Barbastro", "text": "Near Barbastro a narrow band, also running roughly east to west, brings gypsum to the surface.", "cite": ["somontano-pliego:p7", "somontano-pliego:p8"]}
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {"place": "somontano", "pitch": 0, "bearing": 0},
+   "focus": "somontano",
+   "photo": "somontano-2",
+   "chip": "Still to fortified"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Somontano."
+ }
+}

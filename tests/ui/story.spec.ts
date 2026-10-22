@@ -137,9 +137,11 @@ test('the map column comes after the guide in reading order', async ({ page }) =
 // Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
 // [step, anchor, place in its row]: links sharing a row are held 120 px apart in reading order (holdSteps), so the k-th is placed k x 120 px above the line.
 const ORDER: Array<[string, string, number]> = [
-  ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
-  ['z-rioja-alta', '[data-fly="climate.0"]', 0], ['z-rioja-alavesa', '[data-fly="climate.1"]', 1], ['z-rioja-oriental', '[data-fly="climate.2"]', 2],
-  ['soils', '[data-fly="soils.0"]', 0], ['barrel', '#terroir-barrel', 0], ['haro', '[data-fly="barrel.0"]', 0],
+  // Stops come up at the paragraph that names them, a chapter's first stop at its start (owner 22 Oct 2026: the map was late).
+  ['valley', '#terroir-valley', 0], ['sierra', '#terroir-valley', 1], ['climate', '#terroir-climate', 0],
+  ['z-rioja-alta', '.pg-zguide > :has([data-fly="climate.0"])', 0], ['z-rioja-alavesa', '.pg-zguide > :has([data-fly="climate.1"])', 0],
+  ['z-rioja-oriental', '.pg-zguide > :has([data-fly="climate.2"])', 0],
+  ['soils', '#terroir-soils', 0], ['barrel', '#terroir-barrel', 0], ['haro', '[data-b="barrel.1"]', 0],
 ];
 for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { width: 390, height: 844 }]] as const) {
   test(`scrolling the Rioja guide at ${name} shows stops 1 to 9 in order`, async ({ page }) => {
@@ -166,7 +168,7 @@ test.describe('phone 375 px', () => {
   test('stop 1 holds for 120 px of scroll before stop 2 takes over', async ({ page }) => {
     await open(page, '#place=rioja&page&story');
     await expect(mapCol(page)).toBeVisible();
-    await scrollToLine(page, '[data-fly="valley.0"]');
+    await scrollToLine(page, '#terroir-valley');
     await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
     await page.locator('.pg').evaluate((pg) => { pg.scrollTop += 100; });
     await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
@@ -221,4 +223,15 @@ test('reduced motion opens the map mode with no growing photo', async ({ page })
   await page.locator('a.mapcard').click();
   await expect(mapCol(page)).toBeVisible();
   await expect(page.locator('.grow')).toHaveCount(0);
+});
+
+// Phones show "Back" alone in the band; the link keeps the full name for screen readers (owner 22 Oct 2026: long names were cut off).
+test('on a phone the band link reads Back and keeps the full name as its label', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await open(page, '#place=txakoli-bizkaia&page&story');
+  const back = page.locator('.pg-top a.story-back');
+  await expect(back).toHaveText('Back', { useInnerText: true });
+  await expect(back).toHaveAttribute('aria-label', /^Back to .+/);
+  const top = await page.locator('.pg-top').evaluate((el) => el.scrollWidth <= el.clientWidth);
+  expect(top).toBe(true);
 });

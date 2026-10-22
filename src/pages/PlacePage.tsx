@@ -469,7 +469,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
           <span className="story-brand">AtlaSlope</span>
           <p className="story-where">{chapterNo > 0 ? ts.chapterOf(chapterNo, guide?.chapters.length ?? 0) : ''}</p>
           <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>
-          <a className="story-back" href={pageHash} onClick={(e) => { e.preventDefault(); hideMap(); }}>{ts.back(place.name)}</a>
+          <a className="story-back" href={pageHash} aria-label={ts.back(place.name)} onClick={(e) => { e.preventDefault(); hideMap(); }}><span className="long">{ts.back(place.name)}</span><span className="short" aria-hidden="true">{ts.backShort}</span></a>
         </header>
       ) : <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />}
       <div className="pg-body">

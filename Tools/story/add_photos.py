@@ -6,7 +6,7 @@ not a place's Guides photo. Then run Tools/data/photo_sizes.py for the 160/480/8
 Needs Pillow (.venv/bin/python3). Focus points (checked on the 3:2 frame) go in src/pages/pageCrops.json with
 Tools/guides/crop_sheet.mjs --page, not in src/home/photoCrops.json (square Guides cards only).
 """
-import importlib.util, io, json, sys
+import importlib.util, io, json, os, sys
 from pathlib import Path
 
 from PIL import Image
@@ -31,13 +31,114 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                           "Angela Llop", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Vines on bare reddish soil in the foreground, wooded hills beyond and the limestone crests of the Serra del Montsant under a blue sky", "50% 50%"),
     "priorat-rules-1": ("File:Bodegas, vinos del Priorat, Scala Dei, La Morera de Montsant.jpg", "https://commons.wikimedia.org/wiki/File:Bodegas,_vinos_del_Priorat,_Scala_Dei,_La_Morera_de_Montsant.jpg",
                         "Juan Emilio Prades Bel", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "The stone front of the Cellers de Scala Dei winery, with two wooden doors under its name board", "50% 50%"),
+    "ribeira-sacra-canon-1": ("File:Cañón del Sil, Ribeira Sacra.jpg", "https://commons.wikimedia.org/wiki/File:Ca%C3%B1%C3%B3n_del_Sil,_Ribeira_Sacra.jpg",
+                              "Jl FilpoC", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sil flowing between steep rocky walls in the Sil canyon on an overcast day", "50% 50%"),
+    "ribeira-sacra-peares-1": ("File:Os Peares - Viaducto - 01.jpg", "https://commons.wikimedia.org/wiki/File:Os_Peares_-_Viaducto_-_01.jpg",
+                               "Xosema", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A road viaduct and an iron railway bridge crossing the valley at Os Peares, with wooded hills and the village roofs below", "50% 50%"),
+    "ribeira-sacra-amandi-1": ("File:Doade, Sober. Ribeira Sacra, Lugo. Galiza.jpg", "https://commons.wikimedia.org/wiki/File:Doade,_Sober._Ribeira_Sacra,_Lugo._Galiza.jpg",
+                               "Ramon Piñeiro", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Terraced vineyards on a steep slope above the Sil at Doade, with the river below", "50% 50%"),
+    "ribeira-sacra-weather-1": ("File:Viñedos cerca del Canón del Sil en la Ribeira Sacra.jpg", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_cerca_del_Can%C3%B3n_del_Sil_en_la_Ribeira_Sacra.jpg",
+                                "Tanja Freibott", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Old vines in autumn colour behind a dry-stone wall, with villages on the hills under a grey sky near the Sil canyon", "50% 50%"),
+    "ribera-belt-1": ("File:Viñedos Bodega Viña Sastre - Hermanos Sastre Ribera del Duero.JPG", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edos_Bodega_Vi%C3%B1a_Sastre_-_Hermanos_Sastre_Ribera_del_Duero.JPG",
+                      "Pravdaverita", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Bare winter vines in front of a winery in the Ribera del Duero", "50% 50%"),
+    "ribera-pintia-1": ("File:Necrópolis de Las Ruedas.jpg", "https://commons.wikimedia.org/wiki/File:Necr%C3%B3polis_de_Las_Ruedas.jpg",
+                        "Miguel Alan Córdova Silva", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Standing stones of the Las Ruedas necropolis at Pintia, with the Duero hills behind", "50% 40%"),
+    "ribera-soils-1": ("File:Clear cultivation in Viñedos en la Ribera del Duero.jpg", "https://commons.wikimedia.org/wiki/File:Clear_cultivation_in_Vi%C3%B1edos_en_la_Ribera_del_Duero.jpg",
+                       "Raúl Hernández González", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Vine rows on ochre sandy clay in the Ribera del Duero", "50% 60%"),
+    # Txakoli tours batch 1 (22 Oct 2026)
+    "txakoli-getaria-harbour-1": ("File:Getaria - Puerto 1.JPG", "https://commons.wikimedia.org/wiki/File:Getaria_-_Puerto_1.JPG",
+                                  "Zarateman", "CC0", "https://creativecommons.org/publicdomain/zero/1.0", "The harbour of Getaria below the church and the green hill of the Mouro, seen from above", "50% 50%"),
+    "txakoli-zarautz-1": ("File:Playa de Zarautz (1).jpg", "https://commons.wikimedia.org/wiki/File:Playa_de_Zarautz_(1).jpg",
+                          "Alberto-g-rovi", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Waves on the long sandy beach of Zarautz under a green headland", "50% 50%"),
+    "txakoli-donostia-1": ("File:Bahia de la Concha Donostia San Sebastian - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Bahia_de_la_Concha_Donostia_San_Sebastian_-_panoramio.jpg",
+                           "Carlos Cunha", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The seafront buildings of Donostia / San Sebastian across the water of La Concha bay", "50% 50%"),
+    "txakoli-lekeitio-1": ("File:Lekeitio 015.jpg", "https://commons.wikimedia.org/wiki/File:Lekeitio_015.jpg",
+                           "Jean Michel Etchecolonea", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The town and harbour of Lekeitio below a wooded hill, seen from the coast road", "50% 50%"),
+    "txakoli-ibaizabal-1": ("File:Ibaizabal Etxebarrin.jpg", "https://commons.wikimedia.org/wiki/File:Ibaizabal_Etxebarrin.jpg",
+                            "Ksarasola", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The calm Ibaizabal river between green banks with a wooded hill beyond", "50% 50%"),
+    "txakoli-ayala-1": ("File:Kexaa herria.jpg", "https://commons.wikimedia.org/wiki/File:Kexaa_herria.jpg",
+                        "Aiaraldea Komunikazio Leihoa", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Green meadows behind a dry-stone wall and the stone houses of Quejana in the Ayala valley", "50% 50%"),
+    "txakoli-amurrio-1": ("File:Amurrio, Araba, Euskal Herria.jpg", "https://commons.wikimedia.org/wiki/File:Amurrio,_Araba,_Euskal_Herria.jpg",
+                          "Bhgh543bgf", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Amurrio in the Ayala valley seen from the air, with green meadows and mountains behind", "50% 50%"),
+    "txakoli-bakio-1": ("File:Playa de Baquio, País Vasco, España, 2019-08-13, DD 35.jpg", "https://commons.wikimedia.org/wiki/File:Playa_de_Baquio,_Pa%C3%ADs_Vasco,_Espa%C3%B1a,_2019-08-13,_DD_35.jpg",
+                        "Diego Delso", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The long sandy beach of Bakio and its town below a wooded headland, with blue sea breaking on the sand", "50% 50%"),
+    # Batch 2 map tours (22 Oct 2026): Cangas, Valdeorras, Monterrei
+    "cangas-narcea-1": ("File:ES1200030-Rio Narcea a su paso por Corias AGA3206.jpg", "https://commons.wikimedia.org/wiki/File:ES1200030-Rio_Narcea_a_su_paso_por_Corias_AGA3206.jpg",
+        "Armando Gonzalez Alameda", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A stone bridge over the Narcea at Corias, with village houses and green hills above", "50% 50%"),
+    "cangas-corias-1": ("File:Monasterio Corias-fachada norte.jpg", "https://commons.wikimedia.org/wiki/File:Monasterio_Corias-fachada_norte.jpg",
+        "Adolfobrigido", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The long stone north front of the Monastery of Corias under a blue sky", "50% 50%"),
+    "cangas-leitariegos-1": ("File:Leitariegos, Cangas del Narcea, Asturias.jpg", "https://commons.wikimedia.org/wiki/File:Leitariegos,_Cangas_del_Narcea,_Asturias.jpg",
+        "Carmenmoran", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "Slate-roofed farm buildings at Leitariegos in a high green valley under a blue sky", "50% 50%"),
+    "valdeorras-sil-1": ("File:Río Sil dende Santa María.jpg", "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Sil_dende_Santa_Mar%C3%ADa.jpg",
+        "Mayte Ríos", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sil winding through its broad valley floor between wooded mountain slopes", "50% 50%"),
+    "valdeorras-barco-1": ("File:O Barco de Valdeorras desde O Castro.jpg", "https://commons.wikimedia.org/wiki/File:O_Barco_de_Valdeorras_desde_O_Castro.jpg",
+        "Estevoaei", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The town of O Barco de Valdeorras in the valley floor below cloud-capped hills", "50% 50%"),
+    "monterrei-castle-1": ("File:Castelo de Monterrei, Monterrei, Ourense, vista sur.jpg", "https://commons.wikimedia.org/wiki/File:Castelo_de_Monterrei,_Monterrei,_Ourense,_vista_sur.jpg",
+        "Ramon Piñeiro", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "The stone keep and walls of the castle of Monterrei on its hill under a blue sky", "50% 50%"),
+    "monterrei-verin-1": ("File:Verín dende Monterrei.JPG", "https://commons.wikimedia.org/wiki/File:Ver%C3%ADn_dende_Monterrei.JPG",
+        "HombreDHojalata", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The town of Verín in the Támega valley seen from the castle hill of Monterrei, with mountains behind", "50% 50%"),
 }
+# Batch 4 (22 Oct 2026): Alicante and Costers del Segre stop photos
+PHOTOS.update({
+    "alicante-villena-1": ("File:Viñedo de Terlinques hacia Las Virtudes.jpg", "https://commons.wikimedia.org/wiki/File:Vi%C3%B1edo_de_Terlinques_hacia_Las_Virtudes.jpg",
+                           "Enrique Íñiguez Rodríguez (Qoan)", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Bare young vines on the flat Vinalopó plain at Villena, with the mountains behind", "50% 50%"),
+    "alicante-nao-1": ("File:Cabo de la Nao - 52471880126.jpg", "https://commons.wikimedia.org/wiki/File:Cabo_de_la_Nao_-_52471880126.jpg",
+                       "Werner Wilmes", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "The Cabo de la Nao, a high orange cliff with a lighthouse above the sea", "35% 40%"),
+    "alicante-carrasqueta-1": ("File:Alacant desde la Carrasqueta - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Alacant_desde_la_Carrasqueta_-_panoramio.jpg",
+                               "bladimiro", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "Wooded ridges falling to the coast, seen from the Carrasqueta pass", "50% 50%"),
+    "alicante-carche-1": ("File:El Carche.jpg", "https://commons.wikimedia.org/wiki/File:El_Carche.jpg",
+                          "Wadim", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Sierra del Carche under storm cloud, with a dusting of snow on the crest", "50% 55%"),
+    "costers-montsec-1": ("File:View from Serra del Montsec.jpg", "https://commons.wikimedia.org/wiki/File:View_from_Serra_del_Montsec.jpg",
+                          "TheFurther21", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A pale limestone crest of the Serra del Montsec with ridges fading beyond", "55% 55%"),
+    "costers-pallars-1": ("File:Serra del Montsec - 1.jpg", "https://commons.wikimedia.org/wiki/File:Serra_del_Montsec_-_1.jpg",
+                          "MARIA ROSA FERRE", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Vine rows in autumn colour at Castell d'Encus, Talarn, with the Pyrenean foothills behind", "50% 50%"),
+    "costers-poblet-1": ("File:Vista del Reial Monestir de Poblet IMG 20190626 110533.jpg", "https://commons.wikimedia.org/wiki/File:Vista_del_Reial_Monestir_de_Poblet_IMG_20190626_110533.jpg",
+                         "Aniol", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The walls and towers of the Poblet monastery behind a row of vines", "50% 50%"),
+    "costers-guimera-1": ("File:Granyena - 67.jpg", "https://commons.wikimedia.org/wiki/File:Granyena_-_67.jpg",
+                          "Angela Llop", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Young vines on dry open ground at Guimerà, with a long mountain range on the horizon", "50% 50%"),
+})
+
+
+# Navarra map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "navarra-tudela-1": ("File:Ebro River near Tudela municipality (2).jpg", "https://commons.wikimedia.org/wiki/File:Ebro_River_near_Tudela_municipality_(2).jpg",
+                         "Vasyatka1", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Ebro running wide and calm below a low ridge, seen from the Puente del Eje near Tudela", "50% 50%"),
+    "navarra-urbasa-1": ("File:Sierra de Urbasa.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Urbasa.jpg",
+                         "Misharania", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A lone wind-shaped tree on stony ground in the Sierra de Urbasa, with forested ridges behind", "50% 50%"),
+    "navarra-ega-1": ("File:Estella - rio Ega 1.jpg", "https://commons.wikimedia.org/wiki/File:Estella_-_rio_Ega_1.jpg",
+                      "Zarateman", "CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/", "The Ega running over pale gravel through Estella, with houses and trees on the bank", "50% 50%"),
+})
+
+
+# Somontano map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "somontano-vero-1": ("File:PPA2143 Alquézar y cañones del Vero.jpg", "https://commons.wikimedia.org/wiki/File:PPA2143_Alqu%C3%A9zar_y_ca%C3%B1ones_del_Vero.jpg",
+                      "Pedro José Ponce Asensio", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "Still green water of the Vero beneath limestone cliffs and riverside trees in the canyons near Alquézar", "50% 50%"),
+    "somontano-guara-1": ("File:Sierra de Guara.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Guara.jpg",
+                      "Bert Heymans", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "A valley with a small village below the pale limestone ridges of the Sierra de Guara, seen through pines", "50% 50%"),
+    "somontano-weather-1": ("File:Somontano de Barbastro, Lagunarrota (Huesca, Aragón).jpg", "https://commons.wikimedia.org/wiki/File:Somontano_de_Barbastro,_Lagunarrota_(Huesca,_Arag%C3%B3n).jpg",
+                      "Malkav", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Green fields and patches of vines under a deep blue sky with streaks of cloud in the Somontano de Barbastro", "50% 50%"),
+    "somontano-barbastro-1": ("File:Vista de Barbastro desde el Monasterio de El Pueyo . - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Vista_de_Barbastro_desde_el_Monasterio_de_El_Pueyo_._-_panoramio.jpg",
+                      "McBodes", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Barbastro on the plain far below, seen over farmland and woods from the Monasterio de El Pueyo, with sierras on the horizon", "50% 50%"),
+})
+
+
+# Campo de Borja map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "borja-veruela-1": ("File:Monasterio de Veruela, Vera de Moncayo, España, 2012-09-03, DD 01.JPG", "https://commons.wikimedia.org/wiki/File:Monasterio_de_Veruela,_Vera_de_Moncayo,_Espa%C3%B1a,_2012-09-03,_DD_01.JPG",
+                      "Diego Delso", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The walled entrance arch and church tower of the Monasterio de Veruela under a blue sky", "50% 50%"),
+    "borja-moncayo-1": ("File:Moncayo urrutitik 2.JPG", "https://commons.wikimedia.org/wiki/File:Moncayo_urrutitik_2.JPG",
+                      "Namiac", "CC BY-SA 3.0 es", "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en", "The snow-capped Moncayo rising over dry scrub and green fields of the plain below", "50% 50%"),
+})
 
 
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())
+    only = os.environ.get("STORY_ONLY")  # e.g. STORY_ONLY=alicante-,costers-: only photo ids starting with one of these
     for key, (title, page, artist, licence, lurl, alt, _) in PHOTOS.items():
+        if only and not key.startswith(tuple(only.split(","))):
+            continue
         out = ship.OUT / f"{key}.webp"
         if not out.exists():
             img = Image.open(io.BytesIO(ship.fetch(ship.rendition(title)))).convert("RGB")
