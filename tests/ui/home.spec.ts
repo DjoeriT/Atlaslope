@@ -1,3 +1,4 @@
+import { readdirSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
 // The website (slice 2, 18 Oct 2026): the home page one level above the atlas, the site's bar, links from before the website, and Study's
@@ -9,7 +10,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await page.goto('../');
   await expect(page).toHaveTitle('AtlaSlope · Know the land behind the glass');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');
-  await expect(page.locator('.hero .sub')).toHaveText("Spain's wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.");
+  await expect(page.locator('.hero .sub')).toHaveText('Wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.'); // no longer Spain's only (option A, 22 Oct 2026)
   await expect(page.locator('.closer')).toContainText('More countries are on their way.');
   await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
@@ -42,7 +43,7 @@ test('Open the atlas leads to the atlas, and its logo comes back home', async ({
   await page.goto('../');
   await page.getByRole('link', { name: 'Open the atlas' }).first().click();
   await expect(page).toHaveURL(/\/atlas\/(#.*)?$/);
-  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.locator('.card h1')).toHaveText('See where your wine comes from'); // the Atlas cover (PR #202)
   await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' })).toHaveAttribute('aria-current', 'page');
   await page.getByRole('link', { name: 'AtlaSlope home' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');
@@ -73,6 +74,7 @@ test('Guides and About are plain pages with the same bar, and the guides lead in
   await expect(nav.getByRole('link', { name: 'About' })).toHaveAttribute('aria-current', 'page');
   await nav.getByRole('link', { name: 'Guides' }).click();
   await expect(page).toHaveTitle('Guides · AtlaSlope');
+  await page.getByRole('link', { name: 'Open Spain' }).click(); // the guide squares live on the country pages (option A, 22 Oct 2026)
   await page.locator('a[href$="place=rioja-alta&page"]').click();
   await expect(page).toHaveURL(/\/atlas\/#place=rioja-alta/);
 });
@@ -89,16 +91,27 @@ test('Study and back to Atlas returns to the card that was open', async ({ page 
   await expect(page).toHaveURL(/#place=toro/);
 });
 
-test('the home tile links to the map tours on the Guides page, which lists every tour guide and can hide the rest', async ({ page }) => {
+test('the home tile links to the map tours band on the Guides page, which shows every tour guide open with its labels; the filter works on the country page', async ({ page }) => {
   await page.goto('../');
   const tile = page.locator('.hero a[href="guides/#map-tours"], a[href="guides/#map-tours"]').first();
   await expect(tile).toHaveText('map tours');
   await tile.click();
   await expect(page).toHaveURL(/\/guides\/#map-tours$/);
-  const names = await page.locator('#map-tours .gcard-c .cb b').allTextContents();
-  expect(names.sort()).toEqual(['Priorat', 'Rioja']);
-  await expect(page.locator('.gl .region').nth(1)).toBeHidden(); // while #map-tours is the target the other regions step aside
-  await expect(page.locator('.gl .feat')).toBeHidden();
-  await page.getByRole('link', { name: 'Show all guides' }).click();
-  await expect(page.locator('.gl .region').nth(1)).toBeVisible();
+  const tours = readdirSync('content/stories').filter((f) => f.endsWith('.json'));
+  const band = page.locator('#map-tours');
+  await expect(band.getByRole('heading', { name: 'Explore with the map' })).toBeVisible();
+  await expect(band.locator('.stills.feat a')).toHaveCount(4);
+  // every tour open with its labels, no fold (owner, 22 Oct 2026: "the whole map tour setup ... with the labels")
+  await expect(band.locator('.stills a')).toHaveCount(tours.length);
+  await expect(band.locator('button.morebtn')).toHaveCount(0);
+  await expect(band.locator('.stills a .nm')).toContainText(['Rioja', 'Priorat', 'Ribeira Sacra']);
+  await page.goto('../es/'); // the region list and tour filter live on the country pages (option A)
+  const regions = page.locator('.gl .region');
+  const all = await regions.count();
+  await page.getByLabel('Show only guides with a map tour').check();
+  await expect(page.locator('.gl .ecard:visible:not([data-tour])')).toHaveCount(0);
+  expect(await regions.locator('visible=true').count()).toBeLessThan(all);
+  await page.getByLabel('Show only guides with a map tour').uncheck();
+  expect(await regions.locator('visible=true').count()).toBe(all);
+  await expect(page.locator('p.credit')).toHaveCount(1);
 });

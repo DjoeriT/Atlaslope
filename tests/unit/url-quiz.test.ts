@@ -6,7 +6,7 @@ describe('the Study route', () => {
     expect(parseQuizRoute('#study')).toEqual({ sub: null });
     expect(parseQuizRoute('#study=focus')).toEqual({ sub: 'focus' });
     expect(parseQuizRoute('#study=test&set=rioja')).toEqual({ sub: 'test', set: ['rioja'] });
-    expect(parseSelection('#study').id).toBe('spain');
+    expect(parseSelection('#study').id).toBe('atlas');
   });
   it('reads #quiz and its reserved sub-routes', () => {
     expect(parseQuizRoute('#quiz')).toEqual({ sub: null });
@@ -20,7 +20,7 @@ describe('the Study route', () => {
   it('is not the quiz for Explore hashes', () => {
     expect(parseQuizRoute('')).toBeNull();
     expect(parseQuizRoute('#place=toro')).toBeNull();
-    expect(parseSelection('#quiz').id).toBe('spain');
+    expect(parseSelection('#quiz').id).toBe('atlas');
   });
   it('writes the route, with the view when given', () => {
     expect(quizToHash({ sub: null })).toBe('#study');

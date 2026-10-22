@@ -41,6 +41,18 @@ export function legendClasses(focus: string): LegendClass[] {
 export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
   rioja: [{ id: 'clayLimestone', color: '#FFFF80' }, { id: 'ferrousClay', color: '#FFD9D9' }, { id: 'alluvial', color: '#B2D9D9' }],
   priorat: [{ id: 'slate', color: '#B2B2B2' }],
+  'txakoli-getaria': [{ id: 'alternation', color: '#D9FFD9' }, { id: 'sandyMarl', color: '#EDFFD9' }, { id: 'sandstone', color: '#FFD980' }],
+  'txakoli-alava': [{ id: 'marlLimestone', color: '#D9FF00' }, { id: 'clayLimestone', color: '#D9FF80' }, { id: 'sandstoneClay', color: '#B2FF80' }],
+  cangas: [{ id: 'sandstoneSlate', color: '#FF4D4D' }, { id: 'sandstoneSlateLight', color: '#FFB2D9' }, { id: 'narceaSlate', color: '#FF80FF' }, { id: 'quartziteSlate', color: '#B2FFD9' }],
+  valdeorras: [{ id: 'slate', color: '#80804D' }, { id: 'schist', color: '#4D8080' }, { id: 'granite', color: '#80B2D9' }],
+  monterrei: [{ id: 'greenSeries', color: '#B2D94D' }, { id: 'granite', color: '#FFB2B2' }],
+  navarra: [{ id: 'marlSandstone', color: '#00FF00' }, { id: 'alluvial', color: '#B2D9D9' }],
+  somontano: [{ id: 'limestone', color: '#80FFFF' }, { id: 'gypsum', color: '#FFD9D9' }, { id: 'sandstoneMudstone', color: '#FFCC4D' }, { id: 'terraces', color: '#B2D9D9' }],
+  'campo-de-borja': [{ id: 'limestone', color: '#FFFFD9' }, { id: 'redClay', color: '#FFFF4D' }, { id: 'terraces', color: '#D9D9D9' }],
+  'ribeira-sacra': [{ id: 'slate', color: '#80804D' }, { id: 'granite', color: '#FF4D80' }, { id: 'granite2', color: '#FF80FF' }],
+  'ribera-del-duero': [{ id: 'ochreClay', color: '#FFFF80' }, { id: 'terraces', color: '#D9D9B2' }, { id: 'limestone', color: '#FFFFB2' }],
+  alicante: [{ id: 'limestone', color: '#FF804D' }, { id: 'limeMarl', color: '#FFD9B2' }, { id: 'dolomite', color: '#B2FFFF' }],
+  'costers-del-segre': [{ id: 'montsec', color: '#B2FF00' }, { id: 'limestone', color: '#FFEDB2' }, { id: 'sandClay', color: '#D9D9D9' }],
 };
 
 /** The key items for a story's rock colours: the guide's own word and the colour. */

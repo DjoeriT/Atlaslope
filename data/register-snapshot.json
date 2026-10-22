@@ -1,0 +1,3185 @@
+{
+ "$comment": "EU register (eAmbrosia) snapshot of Spanish wine entries, written by Tools/guides/watch_register.py. Source in data/SOURCES.md.",
+ "source": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/geographical-indications",
+ "fetched": "2026-10-21",
+ "entries": [
+  {
+   "fileNumber": "PDO-ES-01895",
+   "name": "La Jaraba",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-02-26T10:41:37.351Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-02-13",
+     "text": "Official Journal C 57, 13.2.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.057.01.0005.01.ENG&toc=OJ:C:2019:057:FULL"
+    },
+    {
+     "date": "2019-06-12",
+     "text": "Official Journal L 154 12.6.2019 ",
+     "uri": "https://eur-lex.europa.eu/eli/reg_impl/2019/954/oj"
+    },
+    {
+     "date": "2021-02-26",
+     "text": "Official Journal C 66, 26.02.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.066.01.0058.01.ENG&toc=OJ%3AC%3A2021%3A066%3ATOC"
+    }
+   ],
+   "placeId": "la-jaraba",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02085",
+   "name": "Vallegarcía",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-04-22T17:09:46.497Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-02-13",
+     "text": "Official Journal C 57, 13.2.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.057.01.0010.01.ENG&toc=OJ:C:2019:057:FULL"
+    },
+    {
+     "date": "2019-06-12",
+     "text": "Official Journal L 154 12.6.2019",
+     "uri": "https://eur-lex.europa.eu/eli/reg_impl/2019/955/oj"
+    },
+    {
+     "date": "2022-04-21",
+     "text": "Official Journal C 167, 21.4.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.167.01.0037.01.ENG&toc=OJ%3AC%3A2022%3A167%3ATOC"
+    }
+   ],
+   "placeId": "vallegarcia",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02086",
+   "name": "Tharsys",
+   "giType": "PDO",
+   "status": "applied",
+   "removed": true,
+   "modificationDate": "2023-01-30T11:06:25.309Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PDO-ES-02228",
+   "name": "Los Cerrillos",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-02-26T10:44:55.773Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-02-13",
+     "text": "Official Journal C 57, 13.2.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.057.01.0016.01.ENG&toc=OJ:C:2019:057:FULL"
+    },
+    {
+     "date": "2019-06-12",
+     "text": "Official Journal L 154 12.6.2019",
+     "uri": "https://eur-lex.europa.eu/eli/reg_impl/2019/956/oj"
+    },
+    {
+     "date": "2021-02-25",
+     "text": "Official Journal C 65, 25.02.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.065.01.0028.01.ENG&toc=OJ%3AC%3A2021%3A065%3ATOC"
+    }
+   ],
+   "placeId": "los-cerrillos",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02348",
+   "name": "Cebreros",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-09T14:31:13.682Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C 12, 12.1.2021, ",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.012.01.0006.01.ENG&toc=OJ%3AC%3A2021%3A012%3ATOC"
+    },
+    {
+     "date": "2018-12-05",
+     "text": "Official Journal C 438, 5.12.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.438.01.0002.01.ENG&toc=OJ:C:2018:438:FULL"
+    },
+    {
+     "date": "2019-04-11",
+     "text": "Official Journal L100, 11.4.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.100.01.0006.01.ENG&toc=OJ:L:2019:100:FULL"
+    },
+    {
+     "date": "2025-01-09",
+     "text": "Official Journal C, C/2025/296, 9.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/296/oj"
+    }
+   ],
+   "placeId": "cebreros",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02481",
+   "name": "Abadía Retuerta",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-01-09T09:16:08.216Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C 4, 6.1.2023, ",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.004.01.0012.01.ENG&toc=OJ%3AC%3A2023%3A004%3ATOC"
+    },
+    {
+     "date": "2021-12-15",
+     "text": "Official Journal C 505, 15.12.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.505.01.0008.01.ENG&toc=OJ%3AC%3A2021%3A505%3ATOC"
+    },
+    {
+     "date": "2022-05-31",
+     "text": "Official Journal L 148, 31.5.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.148.01.0022.01.ENG&toc=OJ%3AL%3A2022%3A148%3ATOC"
+    }
+   ],
+   "placeId": "abadia-retuerta",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02485",
+   "name": "Urueña",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-05-25T15:46:03.735Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-04-20",
+     "text": "Official Journal C 139, 20.4.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.139.01.0021.01.ENG&toc=OJ%3AC%3A2021%3A139%3ATOC"
+    },
+    {
+     "date": "2021-11-04",
+     "text": "Official Journal L 389, 4.11.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.389.01.0010.01.ENG&toc=OJ%3AL%3A2021%3A389%3ATOC"
+    },
+    {
+     "date": "2022-05-24",
+     "text": "Official Journal C 208, 24.5.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.208.01.0011.01.ENG&toc=OJ%3AC%3A2022%3A208%3ATOC"
+    }
+   ],
+   "placeId": "uruena",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02585",
+   "name": "Urbezo",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-10-29T15:07:39.368Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2024-02-26",
+     "text": "Official Journal C, C/2024/1738, 26.02.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/1738/oj"
+    },
+    {
+     "date": "2024-10-25",
+     "text": "Official Journal L, 2024/2742, 25.10.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/2742/oj"
+    }
+   ],
+   "placeId": "urbezo",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02592",
+   "name": "Dehesa Peñalba",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-11-25T15:36:54.909Z",
+   "ojCount": 2,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2021-10-01",
+     "text": "Official Journal C 398, 1.10.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.398.01.0028.01.ENG&toc=OJ%3AC%3A2021%3A398%3ATOC"
+    },
+    {
+     "date": "2022-02-28",
+     "text": "Official Journal L 55, 28.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.055.01.0038.01.ENG&toc=OJ%3AL%3A2022%3A055%3ATOC"
+    }
+   ],
+   "placeId": "dehesa-penalba",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02842",
+   "name": "Viñedos de Álava",
+   "giType": "PDO",
+   "status": "applied",
+   "removed": true,
+   "modificationDate": "2025-07-15T16:40:54.437Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PDO-ES-02870",
+   "name": "Campo de Calatrava",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-01-20T19:00:17.885Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2023-10-30",
+     "text": "Official Journal C 2023/597, 30.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202300597"
+    },
+    {
+     "date": "2024-02-21",
+     "text": "Official Journal L 2024/625, 21.02.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/625/oj"
+    },
+    {
+     "date": "2026-01-19",
+     "text": "Official Journal C, C/2026/371, 19.1.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/371/oj"
+    }
+   ],
+   "placeId": "campo-de-calatrava",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02880",
+   "name": "Rosalejo",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-05-02T16:57:00.317Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C 2023/1053, 21.11.23",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202301053"
+    },
+    {
+     "date": "2024-03-22",
+     "text": "Official Journal L, 2024/905, 22.3.2024",
+     "uri": "https://eur-lex.europa.eu/eli/reg_impl/2024/905/oj"
+    }
+   ],
+   "placeId": "rosalejo",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-02980",
+   "name": "Tharsys",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-10-06T16:32:21.017Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-06-06",
+     "text": "Official Journal C, C/2025/3093, 6.6.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/3093/oj"
+    },
+    {
+     "date": "2025-10-02",
+     "text": "Official Journal L, 2025/1994, 2.10.2025",
+     "uri": "http://data.europa.eu/eli/reg_impl/2025/1994/oj"
+    }
+   ],
+   "placeId": "tharsys",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-03003",
+   "name": "Río Negro",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-03-20T12:27:08.428Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2024-11-21",
+     "text": "Official Journal C, C/2024/7000, 21.11.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/7000/oj"
+    },
+    {
+     "date": "2025-03-20",
+     "text": "Official Journal L, 2025/522, 20.3.2025",
+     "uri": "http://data.europa.eu/eli/reg_impl/2025/522/oj"
+    }
+   ],
+   "placeId": "rio-negro",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0043",
+   "name": "Cariñena",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-22T10:15:48.511Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-08-03",
+     "text": "Official Journal C 254, 3.8.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.254.01.0006.01.ENG&toc=OJ:C:2020:254:TOC"
+    },
+    {
+     "date": "2023-05-05",
+     "text": "Official Journal C 160, 5.5.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.160.01.0089.01.ENG&toc=OJ%3AC%3A2023%3A160%3ATOC"
+    },
+    {
+     "date": "2025-12-22",
+     "text": "Official Journal C, C/2025/6770, 22.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6770/oj"
+    }
+   ],
+   "placeId": "carinena",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0044",
+   "name": "Almansa",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-07-17T12:24:17.494Z",
+   "ojCount": 7,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2017-06-17",
+     "text": "Official Journal C194 17.06.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2017.194.01.0033.01.ENG&toc=OJ:C:2017:194:TOC"
+    },
+    {
+     "date": "2017-10-17",
+     "text": "Official Journal L266 17.10.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.266.01.0003.01.ENG&toc=OJ:L:2017:266:TOC"
+    },
+    {
+     "date": "2022-01-26",
+     "text": "Official Journal C 40, 26.1.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.040.01.0020.01.ENG&toc=OJ%3AC%3A2022%3A040%3ATOC"
+    },
+    {
+     "date": "2022-09-27",
+     "text": "Official Journal C 369, 27.9.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.369.01.0007.01.ENG&toc=OJ%3AC%3A2022%3A369%3ATOC"
+    },
+    {
+     "date": "2023-02-13",
+     "text": "Official Journal L 43, 13.2.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2023.043.01.0009.01.ENG&toc=OJ%3AL%3A2023%3A043%3ATOC"
+    },
+    {
+     "date": "2025-03-03",
+     "text": "Official Journal C, C/2025/1285, 3.3.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1384/oj"
+    },
+    {
+     "date": "2026-07-17",
+     "text": "Official Journal C, C/2026/3796, 17.7.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/3796/oj"
+    }
+   ],
+   "placeId": "almansa",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0045",
+   "name": "La Mancha",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-10-16T16:51:58.043Z",
+   "ojCount": 6,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2021-02-25",
+     "text": "Official Journal C 65, 25.02.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.065.01.0020.01.ENG&toc=OJ%3AC%3A2021%3A065%3ATOC"
+    },
+    {
+     "date": "2022-04-25",
+     "text": "Official Journal  C 170, 25.4.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.170.01.0015.01.ENG&toc=OJ%3AC%3A2022%3A170%3ATOC"
+    },
+    {
+     "date": "2023-06-19",
+     "text": "Official Journal C 215, 19.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.215.01.0032.01.ENG&toc=OJ%3AC%3A2023%3A215%3ATOC"
+    },
+    {
+     "date": "2023-10-25",
+     "text": "Official Journal L 2023/2298, 25.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302298"
+    },
+    {
+     "date": "2025-04-10",
+     "text": "Official Journal C, C/2025/2240, 10.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2240/oj"
+    },
+    {
+     "date": "2026-02-19",
+     "text": "Official Journal C, C/2026/1048, 19.2.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/1048/oj"
+    }
+   ],
+   "placeId": "la-mancha",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0046",
+   "name": "Manchuela",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-07-03T09:41:32.997Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-02-10",
+     "text": "Official Journal C 69, 10.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.069.01.0020.01.ENG&toc=OJ%3AC%3A2022%3A069%3ATOC"
+    },
+    {
+     "date": "2025-04-02",
+     "text": "Official Journal C, C/2025/2023, 2.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2023/oj"
+    },
+    {
+     "date": "2026-07-03",
+     "text": "Official Journal C, C/2026/3565, 3.7.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/3565/oj"
+    }
+   ],
+   "placeId": "manchuela",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0047",
+   "name": "Méntrida",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-03-15T16:02:27.242Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2017-06-17",
+     "text": "Official Journal C194 17.06.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2017.194.01.0041.01.ENG&toc=OJ:C:2017:194:TOC"
+    },
+    {
+     "date": "2017-10-21",
+     "text": "Official Journal L272 21.10.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2017.272.01.0014.01.ENG&toc=OJ:L:2017:272:TOC"
+    },
+    {
+     "date": "2023-03-15",
+     "text": "Official Journal C 96, 15.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.096.01.0010.01.ENG&toc=OJ%3AC%3A2023%3A096%3ATOC"
+    }
+   ],
+   "placeId": "mentrida",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0048",
+   "name": "Mondéjar",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-11-30T09:55:43.984Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "mondejar",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0049",
+   "name": "Ribera del Júcar",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-11-09T10:03:40.522Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-11-09",
+     "text": "Official Journal C 453, 9.11.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.453.01.0013.01.ENG&toc=OJ%3AC%3A2021%3A453%3ATOC"
+    }
+   ],
+   "placeId": "ribera-del-jucar",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0050",
+   "name": "Uclés",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-02-09T15:29:39.208Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-02-09",
+     "text": "Official Journal C, C/2026/897, 09.02.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/897/oj"
+    }
+   ],
+   "placeId": "ucles",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0051",
+   "name": "Valdepeñas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2020-03-12T16:43:20.485Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-09-30",
+     "text": "Official Journal C 325, 30.09.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.325.01.0023.01.FRA&toc=OJ:C:2019:325:TOC"
+    },
+    {
+     "date": "2020-01-09",
+     "text": "Official Journal C 5, 9.01.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.005.01.0007.01.ENG&toc=OJ:C:2020:005:TOC"
+    }
+   ],
+   "placeId": "valdepenas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0052",
+   "name": "Dominio de Valdepusa",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "dominio-de-valdepusa",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0053",
+   "name": "Finca Élez",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-07-13T16:09:30.783Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-02-25",
+     "text": "Official Journal C 65, 25.02.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.065.01.0036.01.ENG&toc=OJ%3AC%3A2021%3A065%3ATOC"
+    },
+    {
+     "date": "2023-07-13",
+     "text": "Official Journal C 246, 13.7.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.246.01.0014.01.ENG&toc=OJ%3AC%3A2023%3A246%3ATOC"
+    }
+   ],
+   "placeId": "finca-elez",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0054",
+   "name": "Dehesa del Carrizal",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-11-14T16:55:10.090Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-02-27",
+     "text": "Official Journal C 74 27.2.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.074.01.0003.01.ENG&toc=OJ:C:2019:074:FULL"
+    }
+   ],
+   "placeId": "dehesa-del-carrizal",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0055",
+   "name": "Campo de La Guardia",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "campo-de-la-guardia",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0056",
+   "name": "Calzadilla",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "calzadilla",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0057",
+   "name": "Pago Florentino",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "pago-florentino",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0058",
+   "name": "Guijoso",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "guijoso",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0060",
+   "name": "Casa del Blanco",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-02-26T10:46:48.144Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-02-25",
+     "text": "Official Journal C 65, 25.02.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.065.01.0042.01.ENG&toc=OJ%3AC%3A2021%3A065%3ATOC"
+    }
+   ],
+   "placeId": "casa-del-blanco",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0109",
+   "name": "Jumilla",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-06-11T17:39:41.205Z",
+   "ojCount": 6,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-03-17",
+     "text": "Official Journal C 90, 17.3.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.090.01.0035.01.ENG&toc=OJ%3AC%3A2021%3A090%3ATOC"
+    },
+    {
+     "date": "2022-02-15",
+     "text": "Official Journal C 74, 15.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.074.01.0040.01.ENG&toc=OJ%3AC%3A2022%3A074%3ATOC"
+    },
+    {
+     "date": "2022-06-14",
+     "text": "Official Journal L 159, 14.6.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.159.01.0001.01.ENG&toc=OJ%3AL%3A2022%3A159%3ATOC"
+    },
+    {
+     "date": "2023-06-30",
+     "text": "Official Journal C 230, 30.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.230.01.0194.01.ENG&toc=OJ%3AC%3A2023%3A230%3ATOC"
+    },
+    {
+     "date": "2025-03-10",
+     "text": "Official Journal C, C/2025/1605, 10.3.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1605/oj"
+    },
+    {
+     "date": "2025-06-11",
+     "text": "Official Journal C, C/2025/3208, 11.6.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/3208/oj"
+    }
+   ],
+   "placeId": "jumilla",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0111",
+   "name": "La Gomera",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "la-gomera",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0112",
+   "name": "Gran Canaria",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-08-01T13:50:47.813Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-07-21",
+     "text": "Official Journal C, C/2025/4097, 21.7.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/4097/oj"
+    }
+   ],
+   "placeId": "gran-canaria",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0113",
+   "name": "Lanzarote",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-03-11T15:02:28.794Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-03-11",
+     "text": "Official Journal C, C/2025/1678, 11.3.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1678/oj"
+    }
+   ],
+   "placeId": "lanzarote",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0114",
+   "name": "Ycoden-Daute-Isora",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "ycoden-daute-isora",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0115",
+   "name": "Tacoronte-Acentejo",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-03-20T12:14:00.657Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2018-08-03",
+     "text": "Official Journal C272 03.08.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.272.01.0003.01.ENG&toc=OJ:C:2018:272:TOC"
+    },
+    {
+     "date": "2018-11-12",
+     "text": "Official Journal L 282, 12.11.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.282.01.0001.01.ENG&toc=OJ:L:2018:282:FULL"
+    },
+    {
+     "date": "2025-03-19",
+     "text": "Official Journal  C, C/2025/1618, 19.3.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1618/oj"
+    }
+   ],
+   "placeId": "tacoronte-acentejo",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0117",
+   "name": "Rioja",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-01-29T15:14:56.440Z",
+   "ojCount": 7,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2020-05-07",
+     "text": "Official Journal C 152, 07.05.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.152.01.0006.01.ENG&toc=OJ:C:2020:152:TOC"
+    },
+    {
+     "date": "2020-11-13",
+     "text": "Official Journal L 379, 13.11.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2020.379.01.0024.01.ENG&toc=OJ%3AL%3A2020%3A379%3ATOC"
+    },
+    {
+     "date": "2021-05-05",
+     "text": "Official Journal C 168, 5.5.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.168.01.0012.01.ENG&toc=OJ%3AC%3A2021%3A168%3ATOC"
+    },
+    {
+     "date": "2022-02-24",
+     "text": "Official Journal C 88, 24.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.088.01.0046.01.ENG&toc=OJ%3AC%3A2022%3A088%3ATOC"
+    },
+    {
+     "date": "2023-09-20",
+     "text": "Official Journal C 331, 20.9.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.331.01.0002.01.ENG&toc=OJ%3AC%3A2023%3A331%3ATOC"
+    },
+    {
+     "date": "2024-10-30",
+     "text": "Official Journal C, C/2024/6466, 30.10.2024",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202406466"
+    },
+    {
+     "date": "2026-01-29",
+     "text": "Official Journal C, C/2026/565, 29.1.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/565/oj"
+    }
+   ],
+   "placeId": "rioja",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0119",
+   "name": "Cangas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "cangas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0127",
+   "name": "Navarra",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-09-09T17:57:06.346Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2020-09-16",
+     "text": "Official Journal C 307, 16.9.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.307.01.0004.01.ENG&toc=OJ:C:2020:307:TOC"
+    },
+    {
+     "date": "2022-09-05",
+     "text": "Official Journal C 339, 5.9.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.339.01.0005.01.ENG&toc=OJ%3AC%3A2022%3A339%3ATOC"
+    },
+    {
+     "date": "2025-01-10",
+     "text": "Official Journal C, C/2025/297, 10.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/297/oj"
+    }
+   ],
+   "placeId": "navarra",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0180",
+   "name": "Campo de Borja",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-03-12T17:05:29.296Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-07-10",
+     "text": "Official Journal C 227, 10.7.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.227.01.0021.01.ENG&toc=OJ:C:2020:227:TOC"
+    },
+    {
+     "date": "2023-09-28",
+     "text": "Official Journal C 342, 28.9.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.342.01.0015.01.ENG&toc=OJ%3AC%3A2023%3A342%3ATOC"
+    },
+    {
+     "date": "2025-03-06",
+     "text": "Official Journal C, C/2025/1558, 6.3.2025",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52025XC01558&qid=1741795341521"
+    }
+   ],
+   "placeId": "campo-de-borja",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0182",
+   "name": "Prado de Irache",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-03-02T16:06:55.121Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-02-05",
+     "text": "Official Journal C, C/2026/747, 5.2.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/747/oj"
+    }
+   ],
+   "placeId": "prado-de-irache",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0183",
+   "name": "Pago de Arínzano",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-09-22T13:17:57.589Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-02-05",
+     "text": "Official Journal C, C/2026/771, 5.2.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/771/oj"
+    },
+    {
+     "date": "2026-09-22",
+     "text": "Official Journal C, C/2026/4824, 22.9.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4824/oj"
+    }
+   ],
+   "placeId": "arinzano",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0184",
+   "name": "Pago de Otazu",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-07-13T14:06:41.668Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-07-13",
+     "text": "Official Journal C, C/2026/3580, 13.7.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/3580/oj"
+    }
+   ],
+   "placeId": "otazu",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0247",
+   "name": "Calatayud",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-02-26T09:37:25.971Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-05-02",
+     "text": "Official Journal C 179, 2.5.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.179.01.0006.01.ENG&toc=OJ%3AC%3A2022%3A179%3ATOC"
+    }
+   ],
+   "placeId": "calatayud",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0510",
+   "name": "La Palma",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "la-palma",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0534",
+   "name": "Somontano",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "somontano",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0536",
+   "name": "Bullas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2019-07-19T10:11:29.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "bullas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0606",
+   "name": "Yecla",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-05-27T11:20:03.699Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-10-07",
+     "text": "Official Journal C 386, 7.10.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.386.01.0078.01.ENG&toc=OJ%3AC%3A2022%3A386%3ATOC"
+    },
+    {
+     "date": "2024-05-27",
+     "text": "Official Journal C, C/2024/3268, 27.5.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/3268/oj"
+    }
+   ],
+   "placeId": "yecla",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0613",
+   "name": "Arlanza",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-10-02T17:34:32.524Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2020-12-18",
+     "text": "Official Journal C 437, 18.12.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2020.437.01.0026.01.ENG&toc=OJ%3AC%3A2020%3A437%3ATOC"
+    },
+    {
+     "date": "2025-01-27",
+     "text": "Official Journal C, C/2025/601, 27.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/601/oj"
+    },
+    {
+     "date": "2026-08-31",
+     "text": "Official Journal C, C/2026/4630, 31.8.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4630/oj"
+    }
+   ],
+   "placeId": "arlanza",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0614",
+   "name": "Arribes",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-06-17T12:39:09.365Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-07-08",
+     "text": "Official Journal C 263, 8.7.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.263.01.0032.01.ENG&toc=OJ%3AC%3A2022%3A263%3ATOC"
+    },
+    {
+     "date": "2026-02-05",
+     "text": "Official Journal C, C/2026/743, 5.2.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/743/oj"
+    }
+   ],
+   "placeId": "arribes",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0615",
+   "name": "Bierzo",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-09-03T12:52:22.078Z",
+   "ojCount": 1,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2020-05-05",
+     "text": "Official Journal C 148, 05.05.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.148.01.0006.01.ENG&toc=OJ:C:2020:148:TOC"
+    }
+   ],
+   "placeId": "bierzo",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0622",
+   "name": "Cigales",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-07-11T16:25:42.137Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-03-04",
+     "text": "Official Journal C70 04.03.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.070.01.0003.01.ENG&toc=OJ:C:2020:070:TOC"
+    },
+    {
+     "date": "2022-07-08",
+     "text": "Official Journal C 263, 8.7.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.263.01.0041.01.ENG&toc=OJ%3AC%3A2022%3A263%3ATOC"
+    }
+   ],
+   "placeId": "cigales",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0626",
+   "name": "Ribera del Duero",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-07-31T13:24:06.360Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-03-06",
+     "text": "Official Journal C 73, 6.3.2020 ",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.073.01.0016.01.ENG&toc=OJ:C:2020:073:TOC"
+    },
+    {
+     "date": "2023-07-31",
+     "text": "Official Journal C 268, 31.7.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.268.01.0010.01.ENG&toc=OJ%3AC%3A2023%3A268%3ATOC"
+    }
+   ],
+   "placeId": "ribera-del-duero",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0631",
+   "name": "Sierra de Salamanca",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-09-29T14:55:25.193Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-09-29",
+     "text": "Official Journal C, C/2026/4984, 29.9.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4984/oj"
+    }
+   ],
+   "placeId": "sierra-de-salamanca",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0634",
+   "name": "Tierra del Vino de Zamora",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-09-30T16:54:55.596Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-09-23",
+     "text": "Official Journal C, C/2026/4917, 23.9.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4917/oj"
+    }
+   ],
+   "placeId": "tierra-del-vino-de-zamora",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0646",
+   "name": "Valles de Benavente",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "valles-de-benavente",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0732",
+   "name": "Arabako Txakolina",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-23T12:00:49.266Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-12-23",
+     "text": "Official Journal C, C/2025/6777, 23.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6777/oj"
+    }
+   ],
+   "placeId": "txakoli-alava",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0735",
+   "name": "Cava",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-04-01T10:45:11.642Z",
+   "ojCount": 5,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C 307, 11/9/2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.307.01.0012.01.FRA&toc=OJ:C:2019:307:TOC"
+    },
+    {
+     "date": "2021-09-14",
+     "text": "Official Journal C 369, 14.9.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.369.01.0002.01.ENG&toc=OJ%3AC%3A2021%3A369%3ATOC"
+    },
+    {
+     "date": "2024-05-17",
+     "text": "Official Journal C/2024/3122, 17.5.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/3122/oj"
+    },
+    {
+     "date": "2024-10-30",
+     "text": "Official Journal C, C/2024/6465, 30.10.2024",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202406465"
+    },
+    {
+     "date": "2026-01-13",
+     "text": "Official Journal C, C/2026/241, 13.1.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/241/oj"
+    }
+   ],
+   "placeId": "cava",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0741",
+   "name": "Getariako Txakolina",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-11-28T12:07:12.350Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "txakoli-getaria",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0746",
+   "name": "Bizkaiko Txakolina",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-08T14:38:37.228Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-12-08",
+     "text": "Official Journal C, C/2025/6563, 8.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6563/oj"
+    }
+   ],
+   "placeId": "txakoli-bizkaia",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0747",
+   "name": "Valtiendas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "valtiendas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0872",
+   "name": "Valencia",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-11-27T17:00:13.701Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2023-03-20",
+     "text": "Official Journal C 103, 20.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.103.01.0009.01.ENG&toc=OJ%3AC%3A2023%3A103%3ATOC"
+    },
+    {
+     "date": "2023-06-27",
+     "text": "Official Journal C 224, 27.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.224.01.0015.01.ENG&toc=OJ%3AC%3A2023%3A224%3ATOC"
+    },
+    {
+     "date": "2024-12-18",
+     "text": "Official Journal C, C/2024/7448, 18.12.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/7448/oj"
+    }
+   ],
+   "placeId": "valencia",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0874",
+   "name": "Utiel-Requena",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-08-09T15:37:23.400Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2023-08-09",
+     "text": "Official Journal C 280, 9.8.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.280.01.0013.01.ENG&toc=OJ%3AC%3A2023%3A280%3ATOC"
+    }
+   ],
+   "placeId": "utiel-requena",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0882",
+   "name": "León",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-03-13T17:50:58.155Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2018-12-06",
+     "text": "Official Journal C 439, 6.12.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.439.01.0004.01.ENG&toc=OJ:C:2018:439:FULL"
+    },
+    {
+     "date": "2019-04-05",
+     "text": "Official Journal L 96, 5.4.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.096.01.0004.01.ENG&toc=OJ:L:2019:096:FULL"
+    },
+    {
+     "date": "2021-01-15",
+     "text": "Official Journal C 16, 15.1.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.016.01.0019.01.ENG&toc=OJ%3AC%3A2021%3A016%3ATOC"
+    },
+    {
+     "date": "2024-02-16",
+     "text": "Official Journal C, C/2024/1620, 16.2.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/1620/oj"
+    }
+   ],
+   "placeId": "leon",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0886",
+   "name": "Toro",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-03T14:48:41.421Z",
+   "ojCount": 6,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-03-18",
+     "text": "Official Journal C 89, 18.03.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.089.01.0026.01.ENG&toc=OJ:C:2020:089:TOC"
+    },
+    {
+     "date": "2021-04-07",
+     "text": "Official Journal C 118, 7.4.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.118.01.0074.01.ENG&toc=OJ%3AC%3A2021%3A118%3ATOC"
+    },
+    {
+     "date": "2023-04-24",
+     "text": "Official Journal C 138, 24.4.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.138.01.0009.01.ENG&toc=OJ%3AC%3A2023%3A138%3ATOC"
+    },
+    {
+     "date": "2024-07-12",
+     "text": "Official Journal C, C/2024/4493, 12.7.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/4493/oj"
+    },
+    {
+     "date": "2024-11-21",
+     "text": "Official Journal L, 2024/2913, 21.11.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/2913/oj"
+    },
+    {
+     "date": "2025-01-03",
+     "text": "Official Journal C, C/2025/125, 3.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/125/oj"
+    }
+   ],
+   "placeId": "toro",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0889",
+   "name": "Rueda",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-06-12T17:37:23.199Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-03-03",
+     "text": "Official Journal C69 03.03.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.069.01.0017.01.ENG&toc=OJ:C:2020:069:TOC"
+    },
+    {
+     "date": "2024-03-05",
+     "text": "Official Journal C/2024/1949, 05.03.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/1949/oj"
+    },
+    {
+     "date": "2025-06-12",
+     "text": "Official Journal C, C/2025/3217,  12.6.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/3217/oj"
+    }
+   ],
+   "placeId": "rueda",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0940",
+   "name": "El Terrerazo",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "el-terrerazo",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0941",
+   "name": "Los Balagueses",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-28T12:31:12.561Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-01-28",
+     "text": "Official Journal C, C/2025/510, 28.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/510/oj"
+    }
+   ],
+   "placeId": "los-balagueses",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0975",
+   "name": "Abona",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "abona",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A0980",
+   "name": "Valle de Güímar",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "valle-de-guimar",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1038",
+   "name": "Pla i Llevant",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-03-18T09:30:55.206Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2017-08-29",
+     "text": "Official Journal C284 29.08.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2017.284.01.0005.01.ENG&toc=OJ:C:2017:284:TOC"
+    },
+    {
+     "date": "2018-02-14",
+     "text": "Official Journal L41 14.02.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.041.01.0013.01.ENG&toc=OJ:L:2018:041:TOC"
+    },
+    {
+     "date": "2026-03-17",
+     "text": "Official Journal C, C/2026/1686, 17.3.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/1686/oj"
+    }
+   ],
+   "placeId": "pla-i-llevant",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1040",
+   "name": "Valle de la Orotava",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "valle-de-la-orotava",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1056",
+   "name": "Binissalem",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-07-27T10:14:42.471Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-06-16",
+     "text": "Official Journal C, C/2025/3321, 16.6.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/3321/oj"
+    }
+   ],
+   "placeId": "binissalem",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1114",
+   "name": "Monterrei",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-08T14:36:10.216Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-11-08",
+     "text": "Official Journal C379, 08.11.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.379.01.0008.01.ENG&toc=OJ:C:2019:379:TOC"
+    },
+    {
+     "date": "2025-12-08",
+     "text": "Official Journal C, C/2025/6565, 8.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6565/oj"
+    }
+   ],
+   "placeId": "monterrei",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1119",
+   "name": "Rías Baixas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-31T15:09:53.403Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2024-12-13",
+     "text": "Official Journal C, C/2024/7432, 13.12.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/7432/oj"
+    }
+   ],
+   "placeId": "rias-baixas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1123",
+   "name": "Ribeiro",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-04T17:50:40.434Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-06-11",
+     "text": "Official Journal C 196, 11.06.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.196.01.0033.01.ENG&toc=OJ:C:2020:196:TOC"
+    },
+    {
+     "date": "2020-11-25",
+     "text": "Official Journal L 395, 25.11.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2020.395.01.0002.01.ENG&toc=OJ%3AL%3A2020%3A395%3ATOC"
+    },
+    {
+     "date": "2025-12-04",
+     "text": "Official Journal C, C/2025/6457, 4.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6457/oj"
+    }
+   ],
+   "placeId": "ribeiro",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1128",
+   "name": "Ribeira Sacra",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-05-28T11:17:09.322Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-12-16",
+     "text": "Official Journal C 435, 16.12.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2020.435.01.0007.01.ENG&toc=OJ%3AC%3A2020%3A435%3ATOC"
+    },
+    {
+     "date": "2024-09-11",
+     "text": "Official Journal C, C/2024/5456, 11.9.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/5456/oj"
+    },
+    {
+     "date": "2025-05-28",
+     "text": "Official Journal C, C/2025/2949, 28.5.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2949/oj"
+    }
+   ],
+   "placeId": "ribeira-sacra",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1132",
+   "name": "Valdeorras",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-02-28T10:13:39.504Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-02-28",
+     "text": "Official Journal C, C/2025/1383, 28.2.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1383/oj"
+    }
+   ],
+   "placeId": "valdeorras",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1250",
+   "name": "El Hierro",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "el-hierro",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1295",
+   "name": "Ribera del Guadiana",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-09-20T10:41:42.019Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal L 231, 20.9.2023, p. 112",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2023.231.01.0112.01.ENG&toc=OJ%3AL%3A2023%3A231%3ATOC"
+    },
+    {
+     "date": "2020-12-18",
+     "text": "Official Journal C 437, 18.12.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2020.437.01.0034.01.ENG&toc=OJ%3AC%3A2020%3A437%3ATOC"
+    },
+    {
+     "date": "2023-06-19",
+     "text": "Official Journal C 215, 19.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.215.01.0025.01.ENG&toc=OJ%3AC%3A2023%3A215%3ATOC"
+    }
+   ],
+   "placeId": "ribera-del-guadiana",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1422",
+   "name": "Conca de Barberà",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-08-25T10:18:27.063Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-05-10",
+     "text": "Official Journal C 178, 10.5.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.178.01.0002.01.ENG&toc=OJ%3AC%3A2021%3A178%3ATOC"
+    },
+    {
+     "date": "2023-03-17",
+     "text": "Official Journal C 101, 17.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.101.01.0051.01.ENG&toc=OJ%3AC%3A2023%3A101%3ATOC"
+    },
+    {
+     "date": "2025-01-22",
+     "text": "Official Journal C, C/2025/458, 22.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/458/oj"
+    }
+   ],
+   "placeId": "conca-de-barbera",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1423",
+   "name": "Alella",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-02-17T12:35:16.035Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-07-01",
+     "text": "Official Journal C 217, 1.7.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.217.01.0021.01.ENG&toc=OJ:C:2020:217:TOC"
+    }
+   ],
+   "placeId": "alella",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1475",
+   "name": "Granada",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-02-10T09:43:39.082Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2023-10-16",
+     "text": "Official Journal C 2023/287, 16.10.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202300287"
+    },
+    {
+     "date": "2025-02-07",
+     "text": "Official Journal C, C/2025/954, 7.2.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/954/oj"
+    }
+   ],
+   "placeId": "granada",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1478",
+   "name": "Lebrija",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-12-14T21:24:53.848Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "lebrija",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1479",
+   "name": "Montilla-Moriles",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2021-05-03T12:53:44.287Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-05-03",
+     "text": "Official Journal C 161, 3.5.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.161.01.0007.01.ENG&toc=OJ%3AC%3A2021%3A161%3ATOC"
+    }
+   ],
+   "placeId": "montilla-moriles",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1480",
+   "name": "Sierras de Málaga",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-28T12:30:12.082Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-04-20",
+     "text": "Official Journal C 139, 20.4.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.139.01.0011.01.ENG&toc=OJ%3AC%3A2021%3A139%3ATOC"
+    },
+    {
+     "date": "2025-01-28",
+     "text": "Official Journal C, C/2025/509, 28.1.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/509/oj"
+    }
+   ],
+   "placeId": "sierras-de-malaga",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1481",
+   "name": "Málaga",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "malaga",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1482",
+   "name": "Manzanilla de Sanlúcar",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-08-24T08:00:15.601Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2023-03-10",
+     "text": "Official Journal C 89, 10.3.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.089.01.0023.01.ENG&toc=OJ%3AC%3A2023%3A089%3ATOC"
+    },
+    {
+     "date": "2025-04-08",
+     "text": "Official Journal C, C/2025/2130, 8.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2130/oj"
+    },
+    {
+     "date": "2025-08-04",
+     "text": "Official Journal L, 2025/1714, 4.8.2025",
+     "uri": "http://data.europa.eu/eli/reg_impl/2025/1714/oj"
+    },
+    {
+     "date": "2026-08-24",
+     "text": "Official Journal C, C/2026/4513, 24.8.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4513/oj"
+    }
+   ],
+   "placeId": "manzanilla",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1483",
+   "name": "Jerez-Xérès-Sherry",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-08-26T15:19:49.563Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C 98, 16.3.2023, ",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.098.01.0036.01.ENG&toc=OJ%3AC%3A2023%3A098%3ATOC"
+    },
+    {
+     "date": "2025-04-08",
+     "text": "Official Journal C, C/2025/2129, 8.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2129/oj"
+    },
+    {
+     "date": "2025-08-04",
+     "text": "Official Journal L, 2025/1713, 4.8.2025",
+     "uri": "http://data.europa.eu/eli/reg_impl/2025/1713/oj"
+    },
+    {
+     "date": "2026-08-26",
+     "text": "Official Journal C, C/2026/4549, 26.8.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4549/oj"
+    }
+   ],
+   "placeId": "jerez",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1485",
+   "name": "Condado de Huelva",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-07-31T10:22:16.370Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-11-08",
+     "text": "Official Journal C379, 08.11.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.379.01.0013.01.ENG&toc=OJ:C:2019:379:TOC"
+    },
+    {
+     "date": "2021-06-25",
+     "text": "Official Journal C 248, 25.6.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.248.01.0008.01.ENG&toc=OJ%3AC%3A2021%3A248%3ATOC"
+    },
+    {
+     "date": "2026-07-31",
+     "text": "Official Journal C, C/2026/4233, 31.7.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/4233/oj"
+    }
+   ],
+   "placeId": "condado-de-huelva",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1511",
+   "name": "Islas Canarias",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2022-02-24T10:20:16.258Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-02-24",
+     "text": "Official Journal C 88, 24.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.088.01.0032.01.ENG&toc=OJ%3AC%3A2022%3A088%3ATOC"
+    }
+   ],
+   "placeId": "islas-canarias",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1522",
+   "name": "Aylés",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-03-24T15:19:07.720Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2026-03-19",
+     "text": "Official Journal C, C/2026/1818, 19.3.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/1818/oj"
+    }
+   ],
+   "placeId": "ayles",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1523",
+   "name": "Costers del Segre",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-04-25T11:36:43.174Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-01-31",
+     "text": "Official Journal C 38 31.1.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.038.01.0006.01.ENG&toc=OJ:C:2019:038:FULL"
+    },
+    {
+     "date": "2019-06-05",
+     "text": "Official Journal L 146 05.06.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.146.01.0001.01.ENG&toc=OJ:L:2019:146:TOC"
+    },
+    {
+     "date": "2022-04-22",
+     "text": "Official Journal C 168, 22.4.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.168.01.0018.01.ENG&toc=OJ%3AC%3A2022%3A168%3ATOC"
+    },
+    {
+     "date": "2025-04-25",
+     "text": "Official Journal C, C/2025/2465, 25.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2465/oj"
+    }
+   ],
+   "placeId": "costers-del-segre",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1525",
+   "name": "Vinos de Madrid",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-04-25T14:18:48.106Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2018-11-05",
+     "text": "Official Journal C 398 5.11.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.398.01.0008.01.ENG&toc=OJ:C:2018:398:TOC"
+    },
+    {
+     "date": "2019-02-06",
+     "text": "Official Journal L 34, 06.02.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.034.01.0008.01.ENG&toc=OJ:L:2019:034:FULL"
+    },
+    {
+     "date": "2025-04-25",
+     "text": "Official Journal C, C/2025/2458, 25.4.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/2458/oj"
+    }
+   ],
+   "placeId": "vinos-de-madrid",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1526",
+   "name": "Alicante",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-07-25T12:12:07.544Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2024-07-25",
+     "text": "Official Journal C, C/2024/4680, 25.7.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/4680/oj"
+    }
+   ],
+   "placeId": "alicante",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1548",
+   "name": "Empordà",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-07-24T10:16:58.015Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-07-24",
+     "text": "Official Journal C, C/2025/4117, 24.7.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/4117/oj"
+    }
+   ],
+   "placeId": "emporda",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1549",
+   "name": "Cataluña",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-06-14T11:32:33.088Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2018-12-04",
+     "text": "Official Journal C 437 4.12.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2018.437.01.0005.01.ENG&toc=OJ:C:2018:437:FULL"
+    },
+    {
+     "date": "2019-04-05",
+     "text": "Official Journal L 96, 5.4.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.096.01.0003.01.ENG&toc=OJ:L:2019:096:FULL"
+    },
+    {
+     "date": "2022-09-15",
+     "text": "Official Journal C 353, 15.9.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.353.01.0003.01.ENG&toc=OJ%3AC%3A2022%3A353%3ATOC"
+    },
+    {
+     "date": "2024-06-14",
+     "text": "Official Journal C, C/2024/3814, 14.6.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/3814/oj"
+    }
+   ],
+   "placeId": "catalunya",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1550",
+   "name": "Montsant",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-02-17T12:34:27.087Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-02-16",
+     "text": "Official Journal C 75, 16.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.075.01.0008.01.ENG&toc=OJ%3AC%3A2022%3A075%3ATOC"
+    },
+    {
+     "date": "2022-09-14",
+     "text": "Official Journal C 351, 14.9.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.351.01.0020.01.ENG&toc=OJ%3AC%3A2022%3A351%3ATOC"
+    }
+   ],
+   "placeId": "montsant",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1551",
+   "name": "Penedès",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-05-20T18:02:34.257Z",
+   "ojCount": 3,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2019-07-10",
+     "text": "Official Journal C232 10.7.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.232.01.0013.01.FRA&toc=OJ:C:2019:232:TOC"
+    },
+    {
+     "date": "2022-05-17",
+     "text": "Official Journal C 199, 17.5.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.199.01.0012.01.ENG&toc=OJ%3AC%3A2022%3A199%3ATOC"
+    },
+    {
+     "date": "2026-05-19",
+     "text": "Official Journal C, C/2026/2777, 19.5.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/2777/oj"
+    }
+   ],
+   "placeId": "penedes",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1555",
+   "name": "Tarragona",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-11-10T14:59:15.582Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-10-05",
+     "text": "Official Journal C 402, 5.10.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.402.01.0014.01.ENG&toc=OJ%3AC%3A2021%3A402%3ATOC"
+    },
+    {
+     "date": "2022-02-28",
+     "text": "Official Journal L 55, 28.2.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.055.01.0037.01.ENG&toc=OJ%3AL%3A2022%3A055%3ATOC"
+    },
+    {
+     "date": "2023-11-10",
+     "text": "Official Journal C 2023/892, 10.11.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202300892"
+    }
+   ],
+   "placeId": "tarragona",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1556",
+   "name": "Terra Alta",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-02-17T12:32:54.058Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": "terra-alta",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1557",
+   "name": "Pla de Bages",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-02-17T12:33:52.087Z",
+   "ojCount": 4,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-11-30",
+     "text": "Official Journal C 412, 30.11.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2020.412.01.0034.01.ENG&toc=OJ%3AC%3A2020%3A412%3ATOC"
+    },
+    {
+     "date": "2022-01-21",
+     "text": "Official Journal C 31, 21.1.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.031.01.0025.01.ENG&toc=OJ%3AC%3A2022%3A031%3ATOC"
+    },
+    {
+     "date": "2022-08-09",
+     "text": "Official Journal C 304, 9.8.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.304.01.0015.01.ENG&toc=OJ%3AC%3A2022%3A304%3ATOC"
+    },
+    {
+     "date": "2024-12-06",
+     "text": "Official Journal C, C/2024/7385, 6.12.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/7385/oj"
+    }
+   ],
+   "placeId": "pla-de-bages",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-A1560",
+   "name": "Priorat",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-08-25T10:21:49.502Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-09-20",
+     "text": "Official Journal C316, 20.09.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.316.01.0010.01.ENG&toc=OJ:C:2019:316:TOC"
+    },
+    {
+     "date": "2020-03-06",
+     "text": "Official Journal L69 06.03.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2020.069.01.0001.01.ENG&toc=OJ:L:2020:069:TOC"
+    },
+    {
+     "date": "2022-09-06",
+     "text": "Official Journal C 341, 6.9.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.341.01.0012.01.ENG&toc=OJ%3AC%3A2022%3A341%3ATOC"
+    }
+   ],
+   "placeId": "priorat",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-N1634",
+   "name": "El Vicario",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2020-12-04T10:39:02.809Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-03-20",
+     "text": "Official Journal C 106 20.03.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.106.01.0012.01.ENG&toc=OJ:C:2019:106:FULL"
+    },
+    {
+     "date": "2019-08-06",
+     "text": "Official Journal  L 206, 6.8.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.206.01.0011.01.ENG&toc=OJ:L:2019:206:FULL"
+    }
+   ],
+   "placeId": "el-vicario",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-N1637",
+   "name": "Chozas Carrascal",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2020-05-11T10:46:42.000Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2020-02-03",
+     "text": "Official Journal C 35, 03.02.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2020.035.01.0011.01.ENG&toc=OJ:C:2020:035:TOC"
+    },
+    {
+     "date": "2020-05-11",
+     "text": "Official Journal L 148, 11.05.2020",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2020.148.01.0003.01.ENG&toc=OJ:L:2020:148:TOC"
+    }
+   ],
+   "placeId": "chozas-carrascal",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-N1665",
+   "name": "Vera de Estenas",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2019-11-11T12:45:19.000Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-07-12",
+     "text": "Official Journal C235 12.7.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.C_.2019.235.01.0024.01.FRA&toc=OJ:C:2019:235:TOC"
+    },
+    {
+     "date": "2019-11-11",
+     "text": "Official Journal L 290, 11.11.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=uriserv:OJ.L_.2019.290.01.0007.01.FRA&toc=OJ:L:2019:290:TOC"
+    }
+   ],
+   "placeId": "vera-de-estenas",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PDO-ES-N1875",
+   "name": "Cercado de la Huerta Nueva",
+   "giType": "PDO",
+   "status": "applied",
+   "removed": false,
+   "modificationDate": "2022-11-21T11:44:48.881Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PDO-ES-N1876",
+   "name": "Bolandin",
+   "giType": "PDO",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-01-30T09:56:27.992Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2021-12-14",
+     "text": "Official Journal C 504, 14.12.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.504.01.0048.01.ENG&toc=OJ%3AC%3A2021%3A504%3ATOC"
+    },
+    {
+     "date": "2022-05-31",
+     "text": "Official Journal L 148, 31.5.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.148.01.0021.01.ENG&toc=OJ%3AL%3A2022%3A148%3ATOC"
+    },
+    {
+     "date": "2026-01-30",
+     "text": "Official Journal C, C/2026/713, 30.01.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/713/oj"
+    }
+   ],
+   "placeId": "bolandin",
+   "mappedBy": "fileNumber"
+  },
+  {
+   "fileNumber": "PGI-ES-02238",
+   "name": "Ribeiras do Morrazo",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-12-10T10:49:28.137Z",
+   "ojCount": 3,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2017-08-05",
+     "text": "Official Journal C255 05.08.2017",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32017D0805%2802%29"
+    },
+    {
+     "date": "2018-01-10",
+     "text": "Official Journal L5 10.01.2018",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1534154597073&uri=CELEX:32018R0027"
+    },
+    {
+     "date": "2025-12-10",
+     "text": "Official Journal C, C/2025/6581, 10.12.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/6581/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-02787",
+   "name": "Terras do Navia",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-02-15T16:55:42.618Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2022-10-17",
+     "text": "Official Journal C 397, 17.10.2022",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.397.01.0034.01.ENG&toc=OJ%3AC%3A2022%3A397%3ATOC"
+    },
+    {
+     "date": "2023-02-15",
+     "text": "Official Journal L 47, 15.2.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2023.047.01.0049.01.ENG&toc=OJ%3AL%3A2023%3A047%3ATOC"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0059",
+   "name": "Castilla",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-01-12T10:36:09.540Z",
+   "ojCount": 1,
+   "amendmentInProgress": true,
+   "ojItems": [
+    {
+     "date": "2021-11-09",
+     "text": "Official Journal C 453, 9.11.2021",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.453.01.0007.01.ENG&toc=OJ%3AC%3A2021%3A453%3ATOC"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0083",
+   "name": "Ribera del Queiles",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0103",
+   "name": "Serra de Tramuntana-Costa Nord",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0110",
+   "name": "Ibiza",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0128",
+   "name": "3 Riberas",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-06-12T10:19:36.206Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": null,
+     "text": "Official Journal C, C/2026/3089",
+     "uri": "http://data.europa.eu/eli/C/2026/3089/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0129",
+   "name": "Costa de Cantabria",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0130",
+   "name": "Liébana",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0181",
+   "name": "Valle del Cinca",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0244",
+   "name": "Ribera del Jiloca",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0245",
+   "name": "Ribera del Gállego - Cinco Villas",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0246",
+   "name": "Valdejalón",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0511",
+   "name": "Valles de Sadacia",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0607",
+   "name": "Campo de Cartagena",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0608",
+   "name": "Murcia",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0870",
+   "name": "Isla de Menorca",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-06-05T17:50:56.377Z",
+   "ojCount": 1,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-06-05",
+     "text": "Official Journal C, C/2025/3137, 5.6.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/3137/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0875",
+   "name": "Formentera",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2024-07-10T15:40:13.606Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2024-01-05",
+     "text": "Official Journal C/2024/574, 05.01.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/574/oj"
+    },
+    {
+     "date": "2024-07-10",
+     "text": "Official Journal C, C/2024/4385, 10.7.2024",
+     "uri": "http://data.europa.eu/eli/reg_impl/2024/1894/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0947",
+   "name": "Illes Balears",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0948",
+   "name": "Castilla y León",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2020-11-25T19:11:46.338Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A0960",
+   "name": "Mallorca",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2026-04-10T17:31:58.360Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2025-02-14",
+     "text": "Official Journal C, C/2025/1048, 14.02.2025",
+     "uri": "http://data.europa.eu/eli/C/2025/1048/oj"
+    },
+    {
+     "date": "2026-04-10",
+     "text": "Official Journal C, C/2026/2070, 10.4.2026",
+     "uri": "http://data.europa.eu/eli/C/2026/2070/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1173",
+   "name": "Castelló",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2019-07-19T10:11:29.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1255",
+   "name": "Barbanza e Iria",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2025-01-31T14:54:16.845Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2019-12-20",
+     "text": "Official Journal C 428, 20.12.2019",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.C_.2019.428.01.0044.01.ENG&toc=OJ:C:2019:428:TOC"
+    },
+    {
+     "date": "2024-12-13",
+     "text": "Official Journal C, C/2024/7433, 13.12.2024",
+     "uri": "http://data.europa.eu/eli/C/2024/7433/oj"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1257",
+   "name": "Betanzos",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2019-07-19T10:11:29.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1259",
+   "name": "Valle del Miño-Ourense",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1300",
+   "name": "Extremadura",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2023-06-30T10:27:22.421Z",
+   "ojCount": 2,
+   "amendmentInProgress": false,
+   "ojItems": [
+    {
+     "date": "2023-02-02",
+     "text": "Official Journal C 40, 2.2.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.040.01.0008.01.ENG&toc=OJ%3AC%3A2023%3A040%3ATOC"
+    },
+    {
+     "date": "2023-06-30",
+     "text": "Official Journal L 166, 30.6.2023",
+     "uri": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2023.166.01.0058.01.ENG&toc=OJ%3AL%3A2023%3A166%3ATOC"
+    }
+   ],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1362",
+   "name": "Bajo Aragón",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-12-19T09:20:07.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1402",
+   "name": "Altiplano de Sierra Nevada",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1404",
+   "name": "Bailén",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1405",
+   "name": "Cádiz",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1406",
+   "name": "Córdoba",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1407",
+   "name": "Cumbres del Guadalfeo",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1408",
+   "name": "Desierto de Almería",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1409",
+   "name": "Laderas del Genil",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1410",
+   "name": "Laujar-Alpujarra",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1411",
+   "name": "Los Palacios",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1412",
+   "name": "Norte de Almería",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1414",
+   "name": "Ribera del Andarax",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1415",
+   "name": "Sierra Norte de Sevilla",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1416",
+   "name": "Sierra Sur de Jaén",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1417",
+   "name": "Sierras de Las Estancias y Los Filabres",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1418",
+   "name": "Torreperogil",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  },
+  {
+   "fileNumber": "PGI-ES-A1419",
+   "name": "Villaviciosa de Córdoba",
+   "giType": "PGI",
+   "status": "registered",
+   "removed": false,
+   "modificationDate": "2018-06-08T09:58:12.000Z",
+   "ojCount": 0,
+   "amendmentInProgress": false,
+   "ojItems": [],
+   "placeId": null,
+   "mappedBy": null
+  }
+ ]
+}

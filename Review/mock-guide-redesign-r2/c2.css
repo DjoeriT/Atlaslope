@@ -1,0 +1,34 @@
+/* Option C2 (C, calmer): C's structure, moved halfway to A's calm. One smaller photo opens each beat (same size every time), prose in one column,
+   the facts as a quiet strip without a box, a quieter type scale, hairlines between beats. The second stop photo moves into the facts strip. */
+.v2 .c-beat{padding-top:3rem;padding-bottom:1.2rem;border-top:1px solid var(--line);margin-top:.4rem}
+.v2 #c-place{border-top:0}
+.v2 .c-photos.n1 .c-fig{--pw:28rem;gap:2rem}
+.v2 .c-photos.n1 .g-cap{max-width:26rem}
+.v2 .c-zph{gap:1rem}
+.v2 .c-zph .g-ph{aspect-ratio:auto;height:clamp(9rem,15vw,12rem)}
+.v2 .c-bh{margin:2rem 0 1rem;gap:1rem}
+.v2 .c-bh .n{font-size:3.4rem}
+.v2 .c-bh h3{font-size:clamp(1.9rem,2.7vw,2.5rem)}
+.v2 .c-prose{columns:1;max-width:44rem;font-size:1.15rem;line-height:1.7}
+.v2 .c-meta{margin:.4rem 0 1.2rem}
+.v2 .c-ztx{margin:1rem 0 1.2rem;gap:2rem}
+.v2 .c-ztx h4{font-size:1.45rem}.v2 .c-ztx p{font-size:1rem}
+.v2 .c-strip{background:none;border-radius:0;border-top:1px solid var(--line);padding:1.6rem 0 .6rem;margin-top:.8rem;gap:3rem;align-items:start}
+.v2 .c-small{max-width:17rem}
+.v2 .c-small .g-ph{aspect-ratio:3/2;height:auto}
+.v2 .c-small .g-cap{font-size:.9rem}
+.v2 .c-taste{margin-top:2.6rem;padding:3.2rem 0 3rem}
+.v2 h2{font-size:clamp(1.7rem,2.5vw,2.2rem);margin-bottom:1.2rem}
+.v2 .c-tcols{gap:2.4rem}
+.v2 .c-t b{font-size:1.45rem}.v2 .c-t p{font-size:1.1rem}
+.v2 .c-short{padding:3rem 0 .6rem}.v2 .c-short .pg-short .f a{font-size:1.3rem}
+.v2 .c-names li{font-size:2.1rem}
+.v2 .c-two{padding:2rem 0}
+@media (max-width:48rem){
+  .v2 .c-photos.n1 .c-fig{gap:0}
+  .v2 .c-zph .g-ph{height:26vw}
+  .v2 .c-bh .n{font-size:3rem}
+  .v2 .c-small{max-width:none}
+  .v2 .c-strip{padding:1.2rem 0 .4rem}
+  .v2 .c-names li{font-size:1.8rem}
+}

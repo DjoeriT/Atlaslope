@@ -15,6 +15,8 @@ BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41
 HYDRO = "https://servicios.idee.es/wfs-inspire/hidrografia"
 NGBE = "https://www.ign.es/wfs-inspire/ngbe"
 MAIN = ("Río Ebro", "L'Ebre", "Río Oja", "Río Tirón", "Río Najerilla", "Río Iregua", "Riu de Siurana", "Riu de Montsant")
+BBOX["ribera-del-duero"] = (-4.5, 41.35, -2.85, 41.95)
+MAIN += ("Río Duero",)
 SIMPLIFY_DEG = 0.0002  # ~20 m, main rivers
 SIMPLIFY_MINOR_DEG = 0.0012  # ~120 m, other rivers (download budget, 21 Oct 2026)
 MIN_MINOR_DEG = 0.06  # other rivers spanning less than this (about 6 km) are left out
@@ -93,7 +95,7 @@ def rivers(guide):
         start += count
     feats = []
     for name, lines in sorted(byname.items()):
-        if not (name.startswith(("Río ", "Riu ")) or name == "L'Ebre/Río Ebro"):
+        if not (name.startswith(("Río ", "Riu ")) or name == "L'Ebre/Río Ebro" or (guide.startswith("txakoli") and name.endswith(" Ibaia"))):  # Basque rivers are "<name> Ibaia"
             continue
         main = name.startswith(MAIN)
         pts = [q for l in lines for q in l]
@@ -119,10 +121,69 @@ CONTENT_TOWNS = {
                 "Escaladei", "Bellmunt del Priorat", "La Vilella Baixa", "La Vilella Alta", "Siurana", "Cornudella de Montsant",
                 "Ulldemolins", "Marçà", "El Molar"],
 }
+CONTENT_TOWNS["ribera-del-duero"] = ["Aranda de Duero", "Peñafiel", "Roa", "La Horra", "Pesquera de Duero", "Padilla de Duero",
+                                     "San Esteban de Gormaz", "Gumiel de Izán", "Sotillo de la Ribera", "Quintanilla de Onésimo",
+                                     "Valbuena de Duero", "Berlangas de Roa", "Anguix", "Fuentelcésped", "Castrillo de la Vega"]
 
+# Ribeira Sacra (map tour pilot, 22 Oct 2026): Portomarin to Quiroga, Os Peares to A Peroxa, with the Sil and Mino canyons
+BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)
+MAIN += ("Río Miño", "Río Sil")
+CONTENT_TOWNS["ribeira-sacra"] = ["Portomarín", "Chantada", "Monforte de Lemos", "Sober", "Pantón", "Quiroga", "Amandi", "Os Peares",
+                                  "Castro Caldelas", "Parada de Sil", "Nogueira de Ramuín", "A Peroxa", "Doade", "Ferreira de Pantón", "Taboada"]
+
+# Alicante and Costers del Segre (map tours batch 4, 22 Oct 2026)
+BBOX["alicante"] = (-1.4, 38.1, 0.35, 38.9)  # Sierra del Carche to Cabo de la Nao, Villena to Alicante
+BBOX["costers-del-segre"] = (0.2, 41.3, 1.4, 42.3)  # Poblet to the Montsec, Raimat to Pallars
+MAIN += ("Río Vinalopó", "Riu Segre", "Río Segre")
+CONTENT_TOWNS["alicante"] = ["Villena", "Alicante", "Dénia", "Caudete", "Abanilla", "Jumilla", "Xàbia", "Alcoy", "Cocentaina", "Benissa", "Pinoso",
+                             "Monóvar", "Novelda", "Elda", "Teulada", "Pedreguer", "Muro de Alcoy"]
+CONTENT_TOWNS["costers-del-segre"] = ["Lleida", "Raimat", "Artesa de Segre", "Balaguer", "Tàrrega", "Les Borges Blanques", "Tremp", "Vallbona de les Monges",
+                                      "Vimbodí i Poblet", "Cervera", "Agramunt", "Almenar", "Albesa", "Juneda", "Alfarràs", "Vilosell"]
+
+
+# Txakoli tours batch 1 (22 Oct 2026): Getariako Txakolina, Bizkaiko Txakolina, Arabako Txakolina
+BBOX["txakoli-getaria"] = (-2.40, 43.18, -1.85, 43.42)
+BBOX["txakoli-bizkaia"] = (-3.20, 43.05, -2.40, 43.50)
+BBOX["txakoli-alava"] = (-3.30, 42.95, -2.80, 43.25)
+MAIN += ("Urola Ibaia", "Oria Ibaia", "Urumea Ibaia", "Ibaizabal Ibaia", "Río Nervión", "Butron Ibaia", "Lea Ibaia", "Artibai Ibaia", "Deba Ibaia", "Izalde o Zaldu Ibaia", "Arratia Ibaia")
+CONTENT_TOWNS["txakoli-getaria"] = ["Getaria", "Zarautz", "Aia", "Orio", "Zumaia", "Donostia/San Sebastián", "Donostia-San Sebastián", "Usurbil", "Zestoa", "Azpeitia"]
+CONTENT_TOWNS["txakoli-bizkaia"] = ["Bakio", "Lekeitio", "Bilbao", "Mungia", "Gernika-Lumo", "Markina-Xemein", "Durango", "Plentzia", "Gorliz", "Sopelana", "Berango", "Bermeo", "Ondarroa", "Mundaka"]
+CONTENT_TOWNS["txakoli-alava"] = ["Laudio/Llodio", "Artziniega", "Amurrio", "Okondo", "Ayala/Aiara", "Respaldiza", "Retes de Tudela", "Luiaondo", "Quejana", "Orduña", "Urduña/Orduña", "Zuia"]
+
+# Batch 2 map tours (22 Oct 2026): Cangas, Valdeorras, Monterrei
+BBOX["cangas"] = (-7.05, 42.85, -6.25, 43.50)
+MAIN += ("Río Narcea", "Río Navia")
+CONTENT_TOWNS["cangas"] = ["Cangas del Narcea", "Tineo", "Allande", "Ibias", "Degaña", "Corias", "Limés", "Pola de Allande", "San Antolín de Ibias",
+                           "Besullo", "Larón", "Rengos", "Ponticiella"]
+BBOX["valdeorras"] = (-7.30, 42.15, -6.65, 42.60)
+CONTENT_TOWNS["valdeorras"] = ["O Barco de Valdeorras", "A Rúa", "Petín", "Larouco", "Rubiá", "Vilamartín de Valdeorras", "Carballeda de Valdeorras", "O Bolo", "Sobradelo"]
+BBOX["monterrei"] = (-7.70, 41.75, -7.10, 42.15)
+MAIN += ("Río Támega",)
+CONTENT_TOWNS["monterrei"] = ["Verín", "Oímbra", "Castrelo do Val", "Monterrei", "Vilardevós", "Cualedro", "Albarellos", "Laza", "Riós", "Tamagos"]
+# Navarra (map tours batch 3, 22 Oct 2026): the five zones from Baja Montana to the Ebro at Tudela, with Urbasa and the Ega
+BBOX["navarra"] = (-2.65, 41.90, -1.35, 42.90)
+MAIN += ("Río Ebro", "Río Ega", "Río Arga", "Río Aragón")
+CONTENT_TOWNS["navarra"] = ["Tudela", "Estella", "Lizarra", "Olite", "Pamplona", "Funes", "Cascante", "Puente la Reina", "Tafalla", "Corella",
+                            "Cintruénigo", "Ablitas", "Los Arcos", "Viana", "Villatuerta", "Artajona", "Mendigorría", "Ujué", "Valtierra", "Cadreita"]
+
+# Somontano (map tours batch 3, 22 Oct 2026): sierras of Guara, Balces and Salinas down to the plains, the Alcanadre, Vero and Cinca
+BBOX["somontano"] = (-0.50, 41.85, 0.55, 42.40)
+MAIN += ("Río Alcanadre", "Río Vero", "Río Cinca", "Río Flumen")
+CONTENT_TOWNS["somontano"] = ["Barbastro", "Huesca", "Alquézar", "Bierge", "Salas Bajas", "Adahuesca", "Colungo", "Naval", "Berbegal",
+                              "Peraltilla", "Pozán de Vero", "Azlor", "Castillazuelo", "Lascellas", "Abiego", "Cregenzán", "Estada", "Monzón"]
+
+# Campo de Borja (map tours batch 3, 22 Oct 2026): between Moncayo and the Ebro, the Huecha valley and its three height zones
+BBOX["campo-de-borja"] = (-2.05, 41.60, -1.20, 42.00)
+MAIN += ("Río Huecha",)
+CONTENT_TOWNS["campo-de-borja"] = ["Borja", "Ainzón", "Magallón", "Fuendejalón", "Bulbuente", "Maleján", "Pozuelo de Aragón", "Tabuenca",
+                                   "Vera de Moncayo", "Alberite de San Juan", "Bureta", "Agón", "Mallén", "Albeta", "Ambel", "Talamantes", "Vera de Moncayo"]
 
 # ranges named in the guides, kept even if NGBE files them under another local type
 FORCE_RANGES = {"Sierra de Cantabria", "Sierra de la Demanda", "Montsant", "Serra de Montsant", "Sierra de Moncalvillo"}
+FORCE_RANGES |= {"Sierra de Urbasa", "Sierra de Andía"}  # Navarra (batch 3)
+FORCE_RANGES |= {"Sierra de Guara", "Sierra de Balcés", "Sierra de Salinas"}  # Somontano (batch 3)
+FORCE_RANGES |= {"Moncayo", "Sierra del Moncayo"}  # Campo de Borja (batch 3)
+FORCE_RANGES |= {"Sierra de la Oliva", "Serra de la Carrasqueta", "Sierra de Carrasqueta", "Sierra del Maigmó", "Sierra del Carche", "Serra del Montsec", "Montsec", "Serra de Prades"}
 
 
 def spread(items, n, first=()):
@@ -203,7 +264,8 @@ def names(guide):
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     os.makedirs(OUT, exist_ok=True)
-    for g in BBOX:
+    only = os.environ.get("STORY_ONLY")  # e.g. STORY_ONLY=ribera-del-duero: fetch just that guide
+    for g in (only.split(",") if only else BBOX):
         if what in ("rivers", "all"):
             rivers(g)
         if what in ("names", "all"):

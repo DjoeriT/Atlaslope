@@ -1,0 +1,130 @@
+{
+ "tiles": [
+  {
+   "z": 9,
+   "x": 252,
+   "y": 189,
+   "esri": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=86400",
+    "bytes": 19945,
+    "meanRGB": [
+     93.2,
+     84.9,
+     42.2
+    ]
+   },
+   "pnoa": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=31536000",
+    "bytes": 12320,
+    "meanRGB": [
+     124.3,
+     126.3,
+     83.8
+    ]
+   }
+  },
+  {
+   "z": 10,
+   "x": 504,
+   "y": 378,
+   "esri": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=86400",
+    "bytes": 20550,
+    "meanRGB": [
+     118.2,
+     100.1,
+     53.8
+    ]
+   },
+   "pnoa": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=31536000",
+    "bytes": 13370,
+    "meanRGB": [
+     136.6,
+     134.8,
+     90.9
+    ]
+   }
+  },
+  {
+   "z": 11,
+   "x": 1009,
+   "y": 756,
+   "esri": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=86400",
+    "bytes": 22809,
+    "meanRGB": [
+     141.2,
+     118.2,
+     73.8
+    ]
+   },
+   "pnoa": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=31536000",
+    "bytes": 16267,
+    "meanRGB": [
+     151.9,
+     143.5,
+     101.2
+    ]
+   }
+  },
+  {
+   "z": 12,
+   "x": 2018,
+   "y": 1512,
+   "esri": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=86400",
+    "bytes": 23516,
+    "meanRGB": [
+     121.2,
+     123.4,
+     93.3
+    ]
+   },
+   "pnoa": {
+    "status": 200,
+    "type": "image/jpeg",
+    "cacheControl": "max-age=31536000",
+    "bytes": 16953,
+    "meanRGB": [
+     158,
+     150.8,
+     105.3
+    ]
+   }
+  }
+ ],
+ "reload": {
+  "visit1/esri": {
+   "total": 160,
+   "fromCache": 16
+  },
+  "visit1/ign": {
+   "total": 104,
+   "fromCache": 0
+  },
+  "visit2-reload/esri": {
+   "total": 160,
+   "fromCache": 160
+  },
+  "visit2-reload/ign": {
+   "total": 104,
+   "fromCache": 104
+  }
+ }
+}

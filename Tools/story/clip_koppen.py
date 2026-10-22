@@ -6,6 +6,19 @@ import json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41.35)}  # same as fetch_layers.py
+BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)  # as fetch_layers.py
+BBOX["ribera-del-duero"] = (-4.5, 41.35, -2.85, 41.95)
+BBOX["txakoli-getaria"] = (-2.40, 43.18, -1.85, 43.42)  # as fetch_layers.py
+BBOX["txakoli-bizkaia"] = (-3.20, 43.05, -2.40, 43.50)
+BBOX["txakoli-alava"] = (-3.30, 42.95, -2.80, 43.25)
+BBOX["cangas"] = (-7.05, 42.85, -6.25, 43.50)  # as fetch_layers.py
+BBOX["valdeorras"] = (-7.30, 42.15, -6.65, 42.60)
+BBOX["monterrei"] = (-7.70, 41.75, -7.10, 42.15)
+BBOX["navarra"] = (-2.65, 41.90, -1.35, 42.90)  # as fetch_layers.py
+BBOX["somontano"] = (-0.50, 41.85, 0.55, 42.40)  # as fetch_layers.py
+BBOX["campo-de-borja"] = (-2.05, 41.60, -1.20, 42.00)  # as fetch_layers.py
+BBOX["alicante"] = (-1.4, 38.1, 0.35, 38.9)  # as fetch_layers.py
+BBOX["costers-del-segre"] = (0.2, 41.3, 1.4, 42.3)
 MARGIN = 0.4  # 0.2 left bare bands at the top and bottom of a 1400x850 view
 
 

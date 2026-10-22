@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>Guides · AtlaSlope</title>
-    <meta name="description" content="Why each place tastes the way it does: guides to Spain's wine appellations, from the official documents." />
+    <meta name="description" content="Why each place tastes the way it does: guides to the wine places of Spain and Portugal, from the official documents." />
     <meta name="theme-color" content="#141414" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
@@ -20,6 +20,7 @@
     </style>
     <script type="module" src="/src/home/main.ts"></script>
     <link rel="stylesheet" href="/src/home/guides.css" />
+    <link rel="stylesheet" href="/src/home/countries.css" />
   </head>
   <!-- Guides, until slice 3 builds a page per guide (owner, 15:09Z, 18 Oct 2026). Plain HTML, the home page's styles; the list is filled in at build time. -->
   <body>
@@ -38,26 +39,19 @@
     <main id="main">
       <header class="page-head">
         <div class="wrap">
-          <h1>Guides explain why each place tastes the way it does.</h1>
-          <p class="sub">All facts and references come from official documents (the pliego de condiciones, the EU single document, MAPA).<br />Every place a guide names is one tap away on the map.</p>
+          <h1>Guides explain why each place tastes the way it does.</h1><!-- draft copy, owner rewrites: the line below now points to the country pages -->
+          <p class="sub">All facts and references come from official documents (the pliego de condiciones, the EU single document, MAPA).<br />Choose a country below for its guides.</p>
         </div>
       </header>
-      <div class="page-body">
-        <div class="wrap">
-          <div class="gl">
-            <!-- guide-list -->
-            <!-- Filled in at build time from content/guides/ (src/home/guideCount.ts). -->
-            <!-- /guide-list -->
-            <div class="soon"><p>More regions are being written. Until then, every place in the atlas already has its own page, with its facts and their sources.</p></div>
-          </div>
-        </div>
-      </div>
+      <!-- guide-list -->
+      <!-- Filled in at build time from content/guides/ and content/stories/ (src/home/guideCount.ts). -->
+      <!-- /guide-list -->
     </main>
 
     <footer>
       <div class="wrap">
-        <div><p class="h">The wine atlas</p><small>Spain's wine places from above, and why each one tastes the way it does. Free, in your browser, no account.</small></div>
-        <div><p class="h">Atlas</p><a href="../atlas/">Spain</a><a href="../atlas/#learn">Learn</a></div>
+        <div><p class="h">The wine atlas</p><small>The wine places of Spain and Portugal from above, and why each one tastes the way it does. Free, in your browser, no account.</small><!-- draft copy, owner rewrites --></div>
+        <div><p class="h">Atlas</p><a href="../atlas/">Open the atlas</a><a href="../atlas/#learn">Learn</a></div>
         <div><p class="h">Guides</p><a href="../guides/">All guides</a><a href="../atlas/#place=rioja&amp;page">The Rioja guide</a></div>
         <div><p class="h">AtlaSlope</p><a href="../about/">About</a></div>
       </div>

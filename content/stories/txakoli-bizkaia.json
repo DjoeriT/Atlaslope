@@ -1,0 +1,249 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tour batch 1, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-txakoli-bizkaia.geojson or the river's own line.",
+ "id": "txakoli-bizkaia",
+ "cover": {
+  "photo": "txakoli-bizkaia-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -2.8,
+     43.25
+    ],
+    "zoom": 8.9,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-bizkaia",
+   "chip": "Bizkaiko Txakolina in the Basque Country"
+  },
+  {
+   "id": "ranges",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-bizkaia",
+    "pitch": 55,
+    "bearing": 40,
+    "zoomShift": 0.1
+   },
+   "focus": "txakoli-bizkaia",
+   "photo": "txakoli-bizkaia-1",
+   "measure": {
+    "place": "txakoli-bizkaia",
+    "kind": "top"
+   },
+   "facts": [
+    {
+     "at": "Durango",
+     "label": "Mountain ranges",
+     "text": "Mountain ranges of medium height, 100 to 1,000 m, run mostly northwest to southeast.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p6",
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ibaizabal",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -2.7116,
+     43.203
+    ],
+    "zoom": 11.4,
+    "pitch": 60,
+    "bearing": 320
+   },
+   "focus": "txakoli-bizkaia",
+   "dot": false,
+   "photo": "txakoli-ibaizabal-1",
+   "facts": [
+    {
+     "at": [
+      -2.7116,
+      43.203
+     ],
+     "label": "Ibaizabal valley",
+     "text": "The Ibaizabal is one of the two main valleys.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "butron",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -2.85,
+     43.3548
+    ],
+    "zoom": 11.4,
+    "pitch": 60,
+    "bearing": 20
+   },
+   "focus": "txakoli-bizkaia",
+   "dot": false,
+   "photo": "txakoli-bizkaia-2",
+   "facts": [
+    {
+     "at": [
+      -2.85,
+      43.3548
+     ],
+     "label": "Butrón valley",
+     "text": "The Butrón is the other main valley.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bakio",
+   "chapter": "place",
+   "fly": 3,
+   "camera": {
+    "center": [
+     -2.8143,
+     43.423
+    ],
+    "zoom": 12.2,
+    "pitch": 60,
+    "bearing": 350
+   },
+   "focus": "txakoli-bizkaia",
+   "dot": false,
+   "photo": "txakoli-bakio-1",
+   "facts": [
+    {
+     "at": [
+      -2.8143,
+      43.423
+     ],
+     "label": "Bakio",
+     "text": "One of the main places where txakoli still survived in the mid-20th century.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "txakoli-bizkaia",
+    "pitch": 0,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "txakoli-bizkaia",
+   "layers": [
+    "koppen"
+   ],
+   "facts": [
+    {
+     "at": "Bilbao",
+     "label": "The Bizkaia vineyards",
+     "text": "Rain averages 1,200 mm a year and falls on 157 days.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p6"
+     ]
+    },
+    {
+     "at": "Bermeo",
+     "label": "Winds off the sea",
+     "text": "The main winds blow from the north and northwest, 39% of the time.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p6",
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "camera": {
+    "center": [
+     -2.78,
+     43.3
+    ],
+    "zoom": 11.4,
+    "pitch": 62,
+    "bearing": 200
+   },
+   "focus": "txakoli-bizkaia",
+   "photo": "txakoli-bizkaia-2",
+   "measure": {
+    "place": "txakoli-bizkaia",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Mungia",
+     "label": "Facing south",
+     "text": "Vineyards are usually on slopes that face south. The slopes are moderate, so machines can work them.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p6",
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "txakoli-bizkaia",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "txakoli-bizkaia",
+   "photo": "txakoli-bizkaia-2",
+   "chip": "Hondarrabi Zuri and a bitter finish"
+  },
+  {
+   "id": "lekeitio",
+   "chapter": "rules",
+   "fly": 0,
+   "camera": {
+    "center": [
+     -2.506,
+     43.3637
+    ],
+    "zoom": 12,
+    "pitch": 60,
+    "bearing": 10
+   },
+   "focus": "txakoli-bizkaia",
+   "dot": false,
+   "photo": "txakoli-lekeitio-1",
+   "facts": [
+    {
+     "at": "Lekeitio",
+     "label": "Lekeitio",
+     "text": "Its ordinances of 1338 exempted from tax the timber used to train vines.",
+     "cite": [
+      "txakoli-bizkaia-pliego:p7"
+     ]
+    }
+   ]
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Bizkaiko Txakolina."
+ }
+}

@@ -108,8 +108,10 @@ test('a place with no zones and no guide shows Test me without "and its zones", 
   await expect(box).toContainText('Test me on Valdepeñas');
   await expect(box).toContainText('A short round in Study on Valdepeñas.');
   await expect(box).not.toContainText('zones');
+  // C3: Test me and Next in the course share one closing row, then Sources.
   const order = await page.locator('.pg main > *').evaluateAll((els) => els.map((e) => e.id || e.className));
-  expect(order.slice(-3)).toEqual(['pg-testme', 'pg-next', 'sources']);
+  expect(order.slice(-2)).toEqual(['pg-end', 'sources']);
+  await expect(page.locator('.pg-end > .pg-testme + .pg-next')).toHaveCount(1);
 });
 
 test('the one-place Rioja region has no page of its own: its address opens the Rioja page', async ({ page }) => {

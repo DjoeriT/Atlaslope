@@ -7,6 +7,7 @@ const byId: Record<string, () => Promise<Story>> = {};
 for (const [path, load] of Object.entries(loaders)) byId[path.replace(/^.*\/(.+)\.json$/, '$1')] = load;
 
 export const hasStory = (id: string): boolean => id in byId;
-/** Number of stops after the opening step. */
+/** How many guides have a map tour. */
+export const storyCount = (): number => Object.keys(byId).length;
 /** The one story file of a guide; no other guide's tour loads with it. */
 export const storyOf = (id: string): Promise<Story> => byId[id]();

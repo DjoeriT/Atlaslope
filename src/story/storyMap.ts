@@ -42,6 +42,8 @@ export interface StoryMapEvents {
 export interface StoryMap {
   map: MapLibreMap;
   show(view: StopView, instant: boolean): void;
+  /** The terrain height the reader chose (the mock's x1.5 / x1.3 toggle). */
+  setHeight(k: number): void;
   remove(): void;
 }
 
@@ -73,7 +75,8 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   map.addControl(new maplibregl.NavigationControl({ showCompass: false, visualizePitch: true }), 'top-right');
 
   // createMap sets the height by zoom on every zoom and terrain change; these run after its handlers and hold the story's fixed height.
-  const holdHeight = () => { if (map.terrain && map.terrain.exaggeration !== STORY_EXAGGERATION) map.terrain.exaggeration = STORY_EXAGGERATION; };
+  let height = STORY_EXAGGERATION;
+  const holdHeight = () => { if (map.terrain && map.terrain.exaggeration !== height) map.terrain.exaggeration = height; };
   map.on('zoom', holdHeight);
   map.on('terrain', holdHeight);
 
@@ -134,8 +137,9 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
     const r = container.getBoundingClientRect();
     const p = Math.round(Math.min(r.width, r.height) * 0.1);
     // The credit bar covers the foot of the map and the legend line sits at the top, under the stop bar: keep the stop's dot clear of both.
+    // Map-bar B: the key strip now sits at the foot, above the credit bar and beside the locator, so the dot keeps clear of that, not of the top.
     const bar = (cls: string) => { const e = container.parentElement?.querySelector<HTMLElement>(cls); return e && !e.hidden ? e.offsetHeight : 0; };
-    return { top: p + 40 + bar('.story-legend'), bottom: p + Math.max(30, bar('.story-credit') + 12), left: p, right: p + 30 };
+    return { top: p + 40, bottom: p + Math.max(30, bar('.story-credit') + 12, bar('.story-legend') ? container.clientHeight - (container.parentElement?.querySelector<HTMLElement>('.story-legend')?.offsetTop ?? container.clientHeight) + 8 : 0), left: p, right: p + 30 };
   }
 
   /** The target as a camera; null for a place's bounds before the shapes are in. */
@@ -197,6 +201,7 @@ export function createStoryMap(container: HTMLElement, story: Story, start: Cam,
   return {
     map,
     show,
+    setHeight(k) { height = k; holdHeight(); },
     remove() { marks.forEach((m) => m.remove()); facts.remove(); layers.remove(); ctl.remove(); },
   };
 }

@@ -1,0 +1,129 @@
+{
+ "id": "encostas-daire",
+ "title": "Why Encostas d'Aire tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Encostas d'Aire can be seen as the meeting point of wet western winds and dry summers. Its soils vary widely, and that mix of factors helps give its wines their own character.",
+  "cite": [
+   "encostas-daire-doc:p7",
+   "encostas-daire-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Slopes between the coast and the limestone",
+   "paras": [
+    "The region lies on the slopes of the Serra de Aire. It stretches between the coast and the limestone massif of Estremadura, south of the foothills of the Serra de Sicó. It follows part of the Rio Lis, with Leiria at its centre.",
+    "It has two sub-regions, Alcobaça and Ourém. The area takes in three whole municipalities, Ourém among them. It also takes in parishes of four more, Leiria included.",
+    "History shows in the buildings here. Peoples from the Romans to the Christians passed through and left their mark. Afonso Henriques founded Leiria's castle. The monastery of Santa Maria da Vitória in Batalha bears witness to an iron will for independence."
+   ],
+   "cite": [
+    "encostas-daire-doc:p5",
+    "encostas-daire-doc:p7",
+    "encostas-daire-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Leiria castle",
+     "point": [
+      -8.807,
+      39.7447
+     ],
+     "zoom": 11,
+     "caption": "Leiria, the centre of the region, has a castle founded by Afonso Henriques.",
+     "cite": [
+      "encostas-daire-doc:p7",
+      "encostas-daire-doc:p8"
+     ]
+    },
+    {
+     "label": "Mosteiro da Batalha",
+     "point": [
+      -8.826,
+      39.6597
+     ],
+     "zoom": 11,
+     "caption": "The monastery of Santa Maria da Vitória in Batalha bears witness to an iron will for independence.",
+     "cite": [
+      "encostas-daire-doc:p8"
+     ]
+    },
+    {
+     "label": "Serra de Aire",
+     "point": [
+      -8.66,
+      39.55
+     ],
+     "zoom": 10,
+     "caption": "The region lies on the slopes of the Serra de Aire.",
+     "cite": [
+      "encostas-daire-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Where the wet west meets the dry summer",
+   "paras": [
+    "The climate is mild, with microclimates. It can be seen as a transition between the zone of wet, steady western winds and the zone of dry summers.",
+    "The plant life changes from north to south. In the north it comes close to a central European type. At the southern tip it already turns Mediterranean."
+   ],
+   "cite": [
+    "encostas-daire-doc:p7",
+    "encostas-daire-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A region of paradoxes",
+   "paras": [
+    "The region is sometimes called a land where paradoxes abound. Rocks of every age are found here. Alluvial land contrasts with slopes rich in secondary limestone. Lowland plains face the mountain massifs of the eastern border.",
+    "The vine adapts to many soils, but it has its favourites. It likes brown or red limestone soils of marl and fine sandstone. It also likes brown or red Mediterranean soils. In the far north it likes non-humic lithosols, soils formed from the rock below.",
+    "Ourém changes from north to south. The north has non-humic lithosols and light alluvial soils. The centre adds limestone soils. The south and east have red Mediterranean soils on limestone, usually thin and very stony."
+   ],
+   "cite": [
+    "encostas-daire-doc:p7",
+    "encostas-daire-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Light wines, and a monks' method",
+   "paras": [
+    "The region makes still wine in all three colours. The list of 31 allowed grapes runs from Arinto and Baga to Syrah and Chardonnay.",
+    "Reds are light, with an open ruby colour. They sometimes show fruity, jammy aromas. A little astringency fades with age, and their soft tannins help them develop well in bottle. Rosés are balanced, with fruity aromas and some freshness. Whites are light and soft, full of yellow colour. Their fruit lasts a while, and they develop well.",
+    "Yields are capped at 70 hl per hectare for reds and rosés and 80 hl for whites. Vines must be at least four years from grafting and trained low.",
+    "Medieval de Ourém is the odd one out. These whites and reds come from the municipality of Ourém. They are made by methods rooted in medieval practice, following the method the Cistercian monks spread. Yields are capped at 40 hl per hectare. Planting is advised at 6,000 plants per hectare, never under 4,000.",
+    "White grapes are crushed and the must goes into wooden vessels under 3,000 litres within 24 hours. Destemmed red grapes ferment on their skins for 4 to 10 days. The red must is not pressed and goes straight into the white must, at 80% white to 20% red. Adding tartaric acid is limited to half the legal maximum."
+   ],
+   "cite": [
+    "encostas-daire-doc:p3",
+    "encostas-daire-doc:p4",
+    "encostas-daire-doc:p5",
+    "encostas-daire-doc:p6",
+    "encostas-daire-doc:p7",
+    "encostas-daire-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Ourém",
+     "point": [
+      -8.5877,
+      39.6616
+     ],
+     "zoom": 10,
+     "caption": "Ourém is home to Medieval de Ourém, made by the method the Cistercian monks spread.",
+     "cite": [
+      "encostas-daire-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}

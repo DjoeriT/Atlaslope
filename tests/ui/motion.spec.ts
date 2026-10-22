@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 // Motion inside and between guides (owner points 8 and 9, 18 Oct 2026; Review/motion-spec.md).
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./?now=2026-10-18T10:00:00Z${hash}`);
 }
@@ -73,12 +73,14 @@ test('card to guide and back run as one move: only one photo carries the shared 
   expect(dup).toEqual([]);
 });
 
-test('one way back per screen: top-left Map on a wide screen, the floating Show map button on a phone', async ({ page }) => {
+test('one way back per screen: Show map in the crumb line on a wide screen, the floating Show map button on a phone', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  await expect(page.locator('.pg-back')).toBeVisible();
+  // Guides: a small link at the end of the crumb line, no button row above the hero (owner 22 Oct 2026).
+  await expect(page.locator('.crumb .crumb-map')).toBeVisible();
+  await expect(page.locator('.pg > .pg-back')).toHaveCount(0);
   await expect(page.locator('.showmap')).toBeHidden();
   await page.setViewportSize({ width: 390, height: 844 });
-  await expect(page.locator('.pg-back')).toBeHidden();
+  await expect(page.locator('.crumb .crumb-map')).toBeHidden();
   await expect(page.locator('.showmap')).toBeVisible();
   await page.locator('.showmap').click();
   await expect(page.locator('.card h1')).toHaveText('Rioja');

@@ -19,7 +19,7 @@ export const sources = sourcesFile as Sources;
 const sheets = new Map<string, Sheet>(sheetFiles.flatMap((f) => f.sheets.map((s) => [s.id, s] as const)));
 const measuresDoc = measuresFile as unknown as {
   places: Record<string, Measures>;
-  country: { spain: Measures };
+  country: Record<string, Measures>;
   regions: Record<string, Measures>;
 };
 const measures = measuresDoc.places;
@@ -28,8 +28,8 @@ const photoSizes = photoSizesFile as { sizes: number[]; photos: Record<string, {
 
 export const sheetOf = (placeId: string): Sheet | undefined => sheets.get(placeId);
 export const measuresOf = (placeId: string): Measures | undefined => measures[placeId];
-/** All of Spain's land, measured the same way as a place, for comparisons. */
-export const spainMeasures = (): Measures => measuresDoc.country.spain;
+/** A country's land, measured the same way as a place, for comparisons. */
+export const countryMeasures = (countryId: string): Measures | undefined => measuresDoc.country[countryId];
 /** A study region's appellation-level land, measured the same way as a place, for comparisons. */
 export const regionMeasuresOf = (regionId: string): Measures | undefined => measuresDoc.regions[regionId];
 
@@ -44,6 +44,12 @@ export function photosOf(placeId: string): ShownPhoto[] {
     .sort(([a], [b]) => a.localeCompare(b, 'en', { numeric: true }))
     .slice(0, 3)
     .map(([key, p]) => ({ ...p, src: `${ROOT}photos/${key}.webp`, ...sizesOf(key) }));
+}
+
+/** One photo by its key ("rioja-3"), for a map tour stop whose photo the story file names; undefined for an unknown key. */
+export function photoByKey(key: string): ShownPhoto | undefined {
+  const p = photos[key];
+  return p ? { ...p, src: `${ROOT}photos/${key}.webp`, ...sizesOf(key) } : undefined;
 }
 
 /** The smaller copies and the blur preview Tools/data/photo_sizes.py made for one photo; none for a photo it has not seen yet. */

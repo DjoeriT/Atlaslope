@@ -1654,5 +1654,173 @@
   "title": "Documento único DOP Islas Canarias as amended (OJ C 88 of 24 Feb 2022, CELEX 52022XC0224(02), PDO-ES-A1511-AM02)",
   "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52022XC0224(02)",
   "date": "2022-02-24"
+ },
+ "douro-doc": {
+  "kind": "official",
+  "title": "Ficheiro técnico PDO-PT-A1539-AM01 (EU technical file with the caderno de especificações, Douro)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19506",
+  "date": "2013-11-19"
+ },
+ "vinho-verde-doc": {
+  "kind": "official",
+  "title": "Vinho Verde PDO-PT-A1545: application for a Union amendment with the single document, OJ C/2024/3412 (approved by Implementing Regulation (EU) 2024/2583, OJ L 1.10.2024, as the eAmbrosia register lists it)",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202403412",
+  "date": "2024-05-29"
+ },
+ "porto-doc": {
+  "kind": "official",
+  "title": "Porto PDO-PT-A1540: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11232)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11232",
+  "date": "2019-07-19"
+ },
+ "tras-os-montes-doc": {
+  "kind": "official",
+  "title": "Trás-os-Montes PDO-PT-A1466: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11822)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11822",
+  "date": "2018-06-08"
+ },
+ "tavora-varosa-doc": {
+  "kind": "official",
+  "title": "Távora-Varosa PDO-PT-A1541: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11535)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11535",
+  "date": "2019-07-19"
+ },
+ "dao-doc": {
+  "kind": "official",
+  "title": "Dão PDO-PT-A1534: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 16845)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/16845",
+  "date": "2019-07-19"
+ },
+ "bairrada-doc": {
+  "kind": "official",
+  "title": "Bairrada PDO-PT-A1537: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11155)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11155",
+  "date": "2023-10-16"
+ },
+ "beira-interior-doc": {
+  "kind": "official",
+  "title": "Beira Interior PDO-PT-A1546: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11475)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11475",
+  "date": "2023-10-18"
+ },
+ "lafoes-doc": {
+  "kind": "official",
+  "title": "Lafões PDO-PT-A1455: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 16896)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/16896",
+  "date": "2018-06-08"
+ },
+ "encostas-daire-doc": {
+  "kind": "official",
+  "title": "Encostas d'Aire PDO-PT-A1470: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 16766)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/16766",
+  "date": "2018-06-08"
+ },
+ "lisboa-doc": {
+  "kind": "official",
+  "title": "Lisboa PGI-PT-A1535: EU single document / technical file (PGI, Portuguese, eAmbrosia attachment 22310)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/22310",
+  "date": "2024-07-26"
+ },
+ "colares-doc": {
+  "kind": "official",
+  "title": "Colares PDO-PT-A1461: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11498)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11498",
+  "date": "2018-06-08"
+ },
+ "carcavelos-doc": {
+  "kind": "official",
+  "title": "Carcavelos PDO-PT-A1462: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11497)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11497",
+  "date": "2018-06-08"
+ },
+ "bucelas-doc": {
+  "kind": "official",
+  "title": "Bucelas PDO-PT-A1463: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11495)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11495",
+  "date": "2018-06-08"
+ },
+ "torres-vedras-doc": {
+  "kind": "official",
+  "title": "Torres Vedras PDO-PT-A1465: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 17600)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/17600",
+  "date": "2018-06-08"
+ },
+ "alenquer-doc": {
+  "kind": "official",
+  "title": "Alenquer PDO-PT-A1468: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10586)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10586",
+  "date": "2018-06-08"
+ },
+ "obidos-doc": {
+  "kind": "official",
+  "title": "Óbidos PDO-PT-A1469: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11491)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11491",
+  "date": "2018-06-08"
+ },
+ "arruda-doc": {
+  "kind": "official",
+  "title": "Arruda PDO-PT-A1471: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11490)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11490",
+  "date": "2018-06-08"
+ },
+ "dotejo-doc": {
+  "kind": "official",
+  "title": "DoTejo PDO-PT-A1544: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11154)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11154",
+  "date": "2018-06-08"
+ },
+ "setubal-doc": {
+  "kind": "official",
+  "title": "Setúbal PDO-PT-A1457: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 16889)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/16889",
+  "date": "2019-07-19"
+ },
+ "palmela-doc": {
+  "kind": "official",
+  "title": "Palmela PDO-PT-A1460: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11428)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11428",
+  "date": "2018-12-19"
+ },
+ "alentejo-doc": {
+  "kind": "official",
+  "title": "Alentejo PDO-PT-A1542: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10849)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10849",
+  "date": "2019-07-19"
+ },
+ "lagos-doc": {
+  "kind": "official",
+  "title": "Lagos PDO-PT-A1454: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10988)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10988",
+  "date": "2018-06-08"
+ },
+ "portimao-doc": {
+  "kind": "official",
+  "title": "Portimão PDO-PT-A1452: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11458)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11458",
+  "date": "2018-06-08"
+ },
+ "lagoa-doc": {
+  "kind": "official",
+  "title": "Lagoa PDO-PT-A1450: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10986)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10986",
+  "date": "2018-06-08"
+ },
+ "tavira-doc": {
+  "kind": "official",
+  "title": "Tavira PDO-PT-A1449: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 10909)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10909",
+  "date": "2018-06-08"
+ },
+ "madeira-doc": {
+  "kind": "official",
+  "title": "Madeira PDO-PT-A0038: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11114)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11114",
+  "date": "2018-06-08"
+ },
+ "madeirense-doc": {
+  "kind": "official",
+  "title": "Madeirense PDO-PT-A0039: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11115)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11115",
+  "date": "2018-06-08"
  }
 }

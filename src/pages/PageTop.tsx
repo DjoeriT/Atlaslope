@@ -10,19 +10,27 @@ import type { Selection } from '../url';
  * since a guide is part of the atlas. Atlas goes back to the page's place on the map (site visual review, 18 Oct 2026: one bar on every
  * page, no "Back to map" beside Atlas, two controls that meant the same).
  * `title` is the page's name, which slides into the bar once the big title has scrolled away (pages.css, scroll-linked motion). */
-export function PageTop({ tree, go, back, title, extra }: { tree: Tree; go: Go; back: Selection; title?: string; extra?: ReactNode }) {
+export function PageTop({ tree, go, back, title, extra, bar, crumbBack = false }: { tree: Tree; go: Go; back: Selection; title?: string; extra?: ReactNode; bar?: ReactNode; crumbBack?: boolean }) {
   return (
     <>
-      <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title} />
+      <SiteBar tree={tree} onOpen={go} current="atlas" onAtlas={() => go(back)} className="pg-top" title={title}>{bar}</SiteBar>
       {/* Where people look for "back" (owner, 18 Oct 2026: "is the show map placement the best place?"): top left on a wide screen,
           the floating button in thumb reach on a phone. On a wide screen it is a button with the map icon, not a bare "‹ Map" (owner, 19 Oct 2026: "looks whacky"). CSS shows one or the other (motion.css). */}
-      <a className="pg-back" href={selectionToHash(back)} aria-label={title ? strings.topBar.showMapLabel(title) : undefined}
-        onClick={(e) => { e.preventDefault(); go(back); }}>
-        <MapIcon /> {strings.topBar.showMap}
-      </a>
+      {!crumbBack && <BackLink go={go} back={back} title={title} className="pg-back" />}
       {extra}
       <ShowMap go={go} back={back} name={title} />
     </>
+  );
+}
+
+/** "Show map" with the map icon: a button under the bar (region pages), or a small link at the end of a guide's crumb line
+ *  (crumbBack; owner 22 Oct 2026: the button sat indented on a row of its own above the C3 hero). */
+export function BackLink({ go, back, title, className }: { go: Go; back: Selection; title?: string; className: string }) {
+  return (
+    <a className={className} href={selectionToHash(back)} aria-label={title ? strings.topBar.showMapLabel(title) : undefined}
+      onClick={(e) => { e.preventDefault(); go(back); }}>
+      <MapIcon /> {strings.topBar.showMap}
+    </a>
   );
 }
 

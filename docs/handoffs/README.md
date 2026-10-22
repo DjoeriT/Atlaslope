@@ -2,6 +2,19 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
+- [2026-10-22-italy-prep](2026-10-22-italy-prep.md): Italy rulebook source (MASAF 7z), licences, WSET L3 table (30 places), Barolo and Chianti Classico outlines, Italian text test, ISPRA email draft (#149, 22 Oct 2026)
+- [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
+- [2026-10-22-portugal-photos](2026-10-22-portugal-photos.md): 27 Commons photos shipped for Douro and Vinho Verde, crops parked until Portugal is on Guides, photos no longer hidden on guides without Study; mock round 2 of option C next (#149, 22 Oct 2026)
+- [2026-10-22-atlas-cover](2026-10-22-atlas-cover.md): Atlas cover card E1 (map tour and slopes loops, countries), #country=spain, video out of the 2 MB check; clip polish open (PR #202, 22 Oct 2026)
+- [2026-10-22-portugal-pilot](2026-10-22-portugal-pilot.md): Douro and Vinho Verde outlines, sheets, guides at /pt/; Home/Guides mock A-D (C recommended); Portugal kept off Home/Guides until picked (#149, 22 Oct 2026)
+- [2026-10-22-guide-c3-build](2026-10-22-guide-c3-build.md): guide page C3, the map unfold, rule A and 13 more tours, Guides page E, map bar B; releases 64-68; one worktree per session (#148, #127, 22 Oct 2026)
+- [2026-10-22-country-model](2026-10-22-country-model.md): country config, real /pt/<place>/ pages, Portugal mask; decisions #48-#51; brief for the Douro + Vinho Verde pilot (#149, 22 Oct 2026)
+- [2026-10-22-countries-data](2026-10-22-countries-data.md): data layer for Portugal, France, Italy pulled by script; coverage per country; brief for the country-model slice and the Douro + Vinho Verde pilot (#149, 22 Oct 2026)
+- [2026-10-22-guide-redesign-r2](2026-10-22-guide-redesign-r2.md): guide page rounds 1 and 2; owner leans C with A's calm; r2 has C1, C2, C3 (blend, recommended), sharp smaller photos, a clear map button (#148, #127, 22 Oct 2026)
+- [2026-10-21-guide-redesign](2026-10-21-guide-redesign.md): v4 mock built and reviewed; owner wants a nicer guide page that opens first, with the map unfolding from a big photo button; design round 1 brief (#148, #127, 21 Oct 2026)
+- [2026-10-21-tour-v3-restore](2026-10-21-tour-v3-restore.md): map tour round 1 and B dropped; v3 journey back, v4 mock (guide inside the journey), #182 fix and restore briefs (#148, #127, #182, 21 Oct 2026)
+- [2026-10-21-agenda-after-62](2026-10-21-agenda-after-62.md): after release 62: reports, owner decisions, Learn status, map tour B and Learn briefs, next country (21 Oct 2026)
 - [2026-10-21-map-tours](2026-10-21-map-tours.md): rename to Map tours, top-bar item and search, own tour download limit; brief for the other 11 tours (#148, 21 Oct 2026)
 - [2026-10-21-story-guide-build](2026-10-21-story-guide-build.md): "Read with the map" build part 1, Rioja + Priorat data, format, view, layers (#127, #148, 21 Oct 2026)
 - [2026-10-21-story-guide-mock](2026-10-21-story-guide-mock.md): "Read with the map" mock rounds 2-3, Rioja + Priorat, 13-guide rule (#127, #148, 21 Oct 2026)

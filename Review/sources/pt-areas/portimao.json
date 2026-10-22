@@ -1,0 +1,25 @@
+{
+ "portimao": {
+  "source": "portimao-doc:att11458",
+  "zones": {
+   "portimao": {
+    "municipalities": [],
+    "parishes": {
+     "Portimão": [
+      "Alvor",
+      "Mexilhoeira Grande",
+      "Portimão"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Mexilhoeira Grande, Portimão"
+  ],
+  "aliases": {
+   "Portimão": {
+    "Alvar": "Alvor"
+   }
+  }
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (22 Oct 2026, map tour batch 2). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from.",
+ "id": "monterrei",
+ "cover": {
+  "photo": "monterrei-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -7.42,
+     41.95
+    ],
+    "zoom": 9.8,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "monterrei",
+   "chip": "Monterrei in Galicia"
+  },
+  {
+   "id": "place",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "monterrei",
+    "pitch": 55,
+    "bearing": 20,
+    "zoomShift": -0.1
+   },
+   "focus": "monterrei",
+   "photo": "monterrei-1",
+   "facts": [
+    {
+     "at": [
+      -7.42,
+      41.95
+     ],
+     "label": "Monterrei",
+     "text": "The zone has two subzones, the Monterrei valley and the Monterrei hillside.",
+     "cite": [
+      "monterrei-pliego:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tamega",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -7.4473,
+     41.965
+    ],
+    "zoom": 10.5,
+    "pitch": 60,
+    "bearing": 0
+   },
+   "focus": "monterrei",
+   "photo": "monterrei-verin-1",
+   "facts": [
+    {
+     "at": [
+      -7.4473,
+      41.965
+     ],
+     "label": "Támega",
+     "text": "The Támega crosses the zone from north to south.",
+     "cite": [
+      "monterrei-pliego:p11",
+      "monterrei-pliego:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "castle",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -7.4491,
+     41.9468
+    ],
+    "zoom": 11,
+    "pitch": 62,
+    "bearing": 200
+   },
+   "focus": "monterrei",
+   "photo": "monterrei-castle-1",
+   "facts": [
+    {
+     "at": [
+      -7.4491,
+      41.9468
+     ],
+     "label": "Monterrei castle hill",
+     "text": "Federico Justo Méndez wrote that the valley's wines stood alongside those of Porto.",
+     "cite": [
+      "monterrei-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "monterrei",
+    "pitch": 45,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "monterrei",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "monterrei-2",
+   "measure": {
+    "place": "monterrei",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": [
+      -7.42,
+      41.95
+     ],
+     "label": "Monterrei",
+     "text": "Temperature swings are large, up to 30 degrees during ripening.",
+     "cite": [
+      "monterrei-pliego:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "camera": {
+    "center": [
+     -7.42,
+     41.95
+    ],
+    "zoom": 11.2,
+    "pitch": 62,
+    "bearing": 340
+   },
+   "focus": "monterrei",
+   "layers": [
+    "geology"
+   ],
+   "photo": "monterrei-3",
+   "facts": [
+    {
+     "at": [
+      -7.42,
+      41.95
+     ],
+     "label": "Soils",
+     "text": "Three kinds of soil are present.",
+     "cite": [
+      "monterrei-pliego:p13",
+      "monterrei-pliego:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "monterrei",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "monterrei",
+   "chip": "Monterrei"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Monterrei."
+ }
+}

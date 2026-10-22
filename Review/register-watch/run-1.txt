@@ -1,0 +1,124 @@
+152 Spanish wine entries, 106 mapped to a place id (0 by name).
+
+First snapshot: nothing to compare.
+
+Covered places: 106; register changed after our newest official source date: 83.
+place                      source      register    after?  OJ after  amending
+-------------------------  ----------  ----------  ------  --------  --------
+abadia-retuerta            2026-08-06  2023-01-09  no      0         yes     
+abona                      2014-06-30  2018-06-08  yes     0         no      
+alella                     2020-03-01  2026-02-17  yes     1         no      
+alicante                   2024-07-25  2024-07-25  no      0         no      
+almansa                    2014-06-27  2026-07-17  yes     7         no      
+arinzano                   2026-09-22  2026-09-22  no      0         no      
+arlanza                    2026-06-03  2026-10-02  yes     1         yes     
+arribes                    2026-06-10  2026-06-17  yes     0         no      
+ayles                      2026-03-19  2026-03-24  yes     0         no      
+bierzo                     2026-08-17  2021-09-03  no      0         yes     
+binissalem                 2014-06-25  2026-07-27  yes     1         no      
+bolandin                   2026-01-30  2026-01-30  no      0         no      
+bullas                     2019-07-01  2019-07-19  yes     0         no      
+calatayud                  2024-01-22  2024-02-26  yes     0         no      
+calzadilla                 2014-06-27  2018-06-08  yes     0         no      
+campo-de-borja             2025-03-06  2025-03-12  yes     0         no      
+campo-de-calatrava         2025-08-31  2026-01-20  yes     1         no      
+campo-de-la-guardia        2014-06-27  2018-06-08  yes     0         no      
+cangas                     2018-02-23  2018-12-19  yes     0         no      
+carinena                   2025-12-22  2025-12-22  no      0         no      
+casa-del-blanco            2014-06-27  2021-02-26  yes     1         no      
+catalunya                  2026-07-31  2024-06-14  no      0         no      
+cava                       2026-01-09  2026-04-01  yes     1         no      
+cebreros                   2025-01-03  2025-01-09  yes     1         no      
+chozas-carrascal           2020-02-03  2020-05-11  yes     1         no      
+cigales                    2022-07-08  2022-07-11  yes     0         no      
+conca-de-barbera           2024-11-11  2026-08-25  yes     1         no      
+condado-de-huelva          2026-03-06  2026-07-31  yes     1         no      
+costers-del-segre          2026-07-16  2025-04-25  no      0         no      
+dehesa-del-carrizal        2013-08-07  2024-11-14  yes     1         no      
+dehesa-penalba             2026-08-26  2022-11-25  no      0         yes     
+dominio-de-valdepusa       2016-11-29  2018-12-19  yes     0         no      
+el-hierro                  2014-06-30  2018-06-08  yes     0         no      
+el-terrerazo               2014-06-30  2018-06-08  yes     0         no      
+el-vicario                 2020-10-19  2020-12-04  yes     0         no      
+emporda                    2024-06-20  2025-07-24  yes     1         no      
+finca-elez                 2014-06-27  2023-07-13  yes     2         no      
+gran-canaria               2025-07-21  2025-08-01  yes     0         no      
+granada                    2024-10-18  2025-02-10  yes     1         no      
+guijoso                    2014-06-27  2018-06-08  yes     0         no      
+islas-canarias             2022-02-24  2022-02-24  no      0         no      
+jerez                      2026-05-21  2026-08-26  yes     1         no      
+jumilla                    2025-06-11  2025-06-11  no      0         no      
+la-gomera                  2014-06-30  2018-06-08  yes     0         no      
+la-jaraba                  2021-02-26  2021-02-26  no      0         no      
+la-mancha                  2014-06-27  2026-10-16  yes     6         yes     
+la-palma                   2014-06-30  2018-06-08  yes     0         no      
+lanzarote                  2025-03-11  2025-03-11  no      0         no      
+lebrija                    2021-09-14  2021-12-14  yes     0         no      
+leon                       2024-02-16  2024-03-13  yes     0         no      
+los-balagueses             2025-01-28  2025-01-28  no      0         no      
+los-cerrillos              2021-02-25  2021-02-26  yes     0         no      
+malaga                     2014-06-27  2018-06-08  yes     0         no      
+manchuela                  2014-06-27  2026-07-03  yes     3         no      
+manzanilla                 2026-05-21  2026-08-24  yes     1         no      
+mentrida                   2014-06-27  2023-03-15  yes     3         no      
+mondejar                   2014-06-27  2022-11-30  yes     0         no      
+monterrei                  2025-07-22  2025-12-08  yes     1         no      
+montilla-moriles           2020-12-03  2021-05-03  yes     1         no      
+montsant                   2026-09-15  2026-02-17  no      0         no      
+navarra                    2026-05-21  2026-09-09  yes     0         yes     
+otazu                      2026-07-13  2026-07-13  no      0         no      
+pago-florentino            2014-06-27  2018-06-08  yes     0         no      
+penedes                    2026-08-10  2026-05-20  no      0         yes     
+pla-de-bages               2026-09-21  2026-02-17  no      0         no      
+pla-i-llevant              2014-06-25  2026-03-18  yes     3         no      
+prado-de-irache            2026-02-05  2026-03-02  yes     0         no      
+priorat                    2021-11-01  2026-08-25  yes     1         no      
+rias-baixas                2024-08-13  2025-01-31  yes     1         no      
+ribeira-sacra              2025-02-18  2025-05-28  yes     1         no      
+ribeiro                    2025-06-04  2025-12-04  yes     1         no      
+ribera-del-duero           2023-07-31  2023-07-31  no      0         no      
+ribera-del-guadiana        2014-06-30  2023-09-20  yes     2         yes     
+ribera-del-jucar           2014-06-27  2021-11-09  yes     1         no      
+rio-negro                  2024-11-21  2025-03-20  yes     1         no      
+rioja                      2023-06-07  2026-01-29  yes     3         yes     
+rosalejo                   2023-11-21  2024-05-02  yes     1         no      
+rueda                      2019-10-29  2025-06-12  yes     3         no      
+sierra-de-salamanca        2026-09-29  2026-09-29  no      0         no      
+sierras-de-malaga          2024-08-28  2025-01-28  yes     1         no      
+somontano                  2014-06-30  2018-06-08  yes     0         no      
+tacoronte-acentejo         2025-03-19  2025-03-20  yes     0         no      
+tarragona                  2023-02-01  2023-11-10  yes     1         no      
+terra-alta                 2020-03-01  2026-02-17  yes     0         no      
+tharsys                    2025-06-06  2025-10-06  yes     1         no      
+tierra-del-vino-de-zamora  2026-09-23  2026-09-30  yes     0         no      
+toro                       2024-12-11  2025-01-03  yes     1         no      
+txakoli-alava              2024-12-19  2025-12-23  yes     1         no      
+txakoli-bizkaia            2024-11-28  2025-12-08  yes     1         no      
+txakoli-getaria            2011-06-29  2025-11-28  yes     0         no      
+ucles                      2016-01-27  2026-02-09  yes     1         no      
+urbezo                     2024-10-25  2024-10-29  yes     0         no      
+uruena                     2022-05-24  2022-05-25  yes     0         no      
+utiel-requena              2023-08-09  2023-08-09  no      0         no      
+valdeorras                 2024-11-18  2025-02-28  yes     1         no      
+valdepenas                 2014-06-27  2020-03-12  yes     2         no      
+valencia                   2024-12-18  2025-11-27  yes     0         yes     
+valle-de-guimar            2014-06-30  2018-06-08  yes     0         no      
+valle-de-la-orotava        2014-06-30  2018-06-08  yes     0         no      
+vallegarcia                2019-02-13  2022-04-22  yes     2         no      
+valles-de-benavente        2014-06-27  2018-06-08  yes     0         no      
+valtiendas                 2019-07-05  2018-12-19  no      0         no      
+vera-de-estenas            2019-07-12  2019-11-11  yes     1         no      
+vinos-de-madrid            2014-06-30  2025-04-25  yes     3         no      
+ycoden-daute-isora         2014-06-30  2018-06-08  yes     0         no      
+yecla                      2024-05-27  2024-05-27  no      0         no      
+
+Register entries with no place of ours: 46
+
+--- issue text (not opened) ---
+Title: Source changes: 2026-10-21
+
+0 covered place(s) changed in the EU register since the last snapshot.
+
+83 of 106 covered places: register changed after the newest source date we cite (upper bound: a contact edit also moves the date).
+
+Not covered by this check: photo credits and licences, link rot, MAPA/IGN boundaries, Koppen, Terrarium.

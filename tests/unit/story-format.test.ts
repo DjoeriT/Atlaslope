@@ -11,7 +11,7 @@ interface Guide { chapters: Chapter[] }
 const photos = json<{ photos: Record<string, unknown> }>('data/photos.json').photos;
 const measures = json<{ places: Record<string, unknown> }>('data/place-measures.json').places;
 const squareCrops = json<Record<string, unknown>>('src/home/photoCrops.json');
-const storyFocus = json<Record<string, string>>('data/story/photo-focus.json');
+const pageCrops = json<Record<string, unknown>>('src/pages/pageCrops.json');
 const places = new Set(json<{ places: Array<{ id: string }> }>('data/places.json').places.map((p) => p.id));
 const LAYERS = ['koppen', 'geology', 'zonelabels'];
 const KINDS = ['median', 'top', 'low', 'steep'];
@@ -26,12 +26,12 @@ const strings = (o: unknown): string[] =>
         : [];
 
 describe('story files', () => {
-  it('lists both stories', () => {
-    expect(storyIds()).toEqual(['priorat', 'rioja']);
-    expect(storyCount()).toBe(2);
+  it('lists every story', () => {
+    expect(storyIds()).toEqual(['alicante', 'campo-de-borja', 'cangas', 'costers-del-segre', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
+    expect(storyCount()).toBe(15);
   });
 
-  for (const id of ['priorat', 'rioja']) {
+  for (const id of ['alicante', 'campo-de-borja', 'cangas', 'costers-del-segre', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']) {
     const story = loadStory(id) as Story;
     const guide = json<Guide>(`content/guides/${id}.json`);
     const names = new Set(json<{ features: Array<{ properties: { name: string } }> }>(`data/story/names-${id}.geojson`).features.map((f) => f.properties.name));
@@ -91,8 +91,8 @@ describe('story files', () => {
         for (const p of shownPhotos) expect(photos[p], `photo ${p}`).toBeDefined();
       });
 
-      it('has a checked crop for every photo (square-card crops or the story focus file)', () => {
-        const missing = shownPhotos.filter((p) => !(p in squareCrops) && !(p in storyFocus));
+      it('has a checked crop for every photo (square-card crops or the page crops)', () => {
+        const missing = shownPhotos.filter((p) => !(p in squareCrops) && !(p in pageCrops));
         expect(missing, 'run Tools/guides/crop_sheet.mjs and add the crop').toEqual([]);
       });
 

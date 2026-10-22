@@ -1,0 +1,88 @@
+{
+ "id": "torres-vedras",
+ "title": "Why Torres Vedras tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The white wine area lies nearer the coast on lower ground, which gives the wines freshness and some tartness. The reds come from the inland hills, where the red grapes ripen well and make full-bodied wines with the acidity and tannin to age.",
+  "cite": [
+   "torres-vedras-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Two zones, coast and hills",
+   "paras": [
+    "The land is rugged in places. It eases into gentle relief and then into várzeas, the low floodplains beside the nearby streams. Farming here is mostly mixed, and the vine holds a leading place on the slopes.",
+    "The area for white wine is the wider one. It lies closer to the coast and on lower ground. The area for red wine is smaller and covers the hills of the more inland zone.",
+    "The red wine area lies wholly in the municipality of Torres Vedras. The white wine area reaches further, into parts of Mafra and Sobral de Monte Agraço."
+   ],
+   "cite": [
+    "torres-vedras-doc:p4",
+    "torres-vedras-doc:p6",
+    "torres-vedras-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Torres Vedras, the old Turres Veteras",
+     "point": [
+      -9.2685,
+      39.0915
+     ],
+     "zoom": 11,
+     "caption": "The wine zone gathered around this town, then called Turres Veteras, as the centre for trade.",
+     "cite": [
+      "torres-vedras-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild, under Atlantic influence",
+   "paras": [
+    "The climate is mild, without big swings in temperature. It is Mediterranean in character with an Atlantic influence. About 700 mm of rain falls in an average year.",
+    "That Atlantic influence is felt while the grapes ripen. In the whites it shows as freshness."
+   ],
+   "cite": [
+    "torres-vedras-doc:p6",
+    "torres-vedras-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay-limestone, mostly shallow",
+   "paras": [
+    "The soils are mostly clay-limestone, brown and red. Their texture runs from clayey to sandy-clay to loam.",
+    "The vineyards generally sit on shallow soils of low fertility. Along with the mild climate, these soils help make the region's wines unique."
+   ],
+   "cite": [
+    "torres-vedras-doc:p4",
+    "torres-vedras-doc:p6",
+    "torres-vedras-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fresh whites, ageworthy reds",
+   "paras": [
+    "Torres Vedras makes still white and red wines. Twenty-five grape varieties are allowed, red and white, and none is named as the main one. Arinto and Fernão Pires are among the whites. Touriga Nacional is among the reds.",
+    "The whites are fruity and aromatic, with a fresh, slightly tart taste.",
+    "The reds are garnet and brownish garnet, with an intense winey aroma. They are a little astringent when young. With age they turn soft and elegant. They also become velvety.",
+    "Vines must be at least three years grafted, save exceptions the regional wine body allows. They are kept low, in the bush (taça) or cordon style. Yields are capped at 80 hl per hectare for reds and 90 hl for whites.",
+    "Reds must be at least 11.5% alcohol and whites 11%. Reds can be bottled only after 8 months, and whites after 3 months."
+   ],
+   "cite": [
+    "torres-vedras-doc:p2",
+    "torres-vedras-doc:p3",
+    "torres-vedras-doc:p4",
+    "torres-vedras-doc:p5",
+    "torres-vedras-doc:p6"
+   ]
+  }
+ ]
+}

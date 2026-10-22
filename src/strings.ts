@@ -59,9 +59,38 @@ export const strings = {
     saveLoad: 'Save or load progress',
     mainGrape: (name: string) => `main grape: ${name}`,
   },
+  // The atlas cover: what opens first (owner, 22 Oct 2026, option E1). Titles say what the panel shows, one idea per line.
+  atlas: {
+    crumb: 'Atlas',
+    title: 'See where your wine comes from',
+    lede: "Spain's wine places on a real map.",
+    heroAlt: 'Vines along a track in Rioja, with a village behind',
+    tourTitle: 'Follow a map tour',
+    tourLine: 'A guide flies you across the map, stop by stop.',
+    tourAlt: 'A Priorat map tour: the map at a stop, the slopes shaded',
+    tourButton: 'Map tour',
+    live: (n: number) => `Tours in ${n} places`,
+    bordersTitle: 'See where it grows',
+    bordersLine: 'Each place is drawn where the law puts it, over satellite imagery.',
+    bordersAlt: 'Official borders of Rioja over satellite imagery',
+    climateTitle: 'See its climate',
+    climateLine: 'One colour for each climate, on every wine place.',
+    climateAlt: 'Spain coloured by climate',
+    slopesTitle: 'Tilt to see the slopes',
+    slopesLine: 'Tilt the map to see how the land rises.',
+    slopesAlt: 'Ribeira Sacra, the map tilted over a steep valley',
+    guideTitle: 'Read why it tastes that way',
+    guideLine: 'Every place has a short guide.',
+    guideAlt: 'The Rioja guide page',
+    countries: 'Countries',
+    countryCount: (places: number, regions: number) => `${places} places · ${regions} regions`,
+    openCountry: (name: string) => `Open ${name}`,
+    totals: (places: number, regions: number, tours: number) => `${places} wine places · ${regions} regions · ${tours} map tours`,
+    imagery: 'Imagery: Esri, Vantor · Spain: PNOA © IGN',
+  },
   cards: {
     whereThisSits: 'Where this sits',
-    spainLedeRich: (places: number, regions: number) => `${places} places in ${regions} study regions, north to south.`,
+    countryLedeRich: (places: number, regions: number) => `${places} places in ${regions} study regions, north to south.`,
     regionLedeRich: (n: number) => (n === 1 ? 'One place, with its zones.' : `${n} places, in course order.`),
     ledeSources: (n: number) => (n === 1 ? 'Source:' : 'Sources:'),
     tilePhotos: 'Photos:',
@@ -172,12 +201,13 @@ export const strings = {
         VC: 'Vino de Calidad con Indicación Geográfica',
       } as Record<string, string>,
       zoneOf: (name: string) => `A zone of ${name}`,
-      swsBadge: (region: string) => `Wine Scholar · ${region}`,
-      swsTitle: (region: string) => `In the Spanish Wine Scholar course, study region ${region}`,
+      // The study region's badge names its course (decision #49: Portugal's course is WSET); a course not listed shows the region alone.
+      courseBadge: (course: string, region: string) => (course === 'sws' ? `Wine Scholar · ${region}` : course.startsWith('wset') ? `WSET · ${region}` : region),
+      courseTitle: (course: string, region: string) => (course === 'sws' ? `In the Spanish Wine Scholar course, study region ${region}` : `Study region ${region}`),
       wsetBadge: (levels: string[]) => `WSET Level ${levels.join(' and ')}`,
       wsetTitle: (levels: string[]) => `Named in the WSET Level ${levels.join(' and ')} Award in Wines ${levels.length > 1 ? 'specifications' : 'specification'}`,
       readMinutes: (n: number) => `${n}-minute read`,
-      allSpain: 'All of Spain',
+      allOf: (country: string) => `All of ${country}`,
       regionRow: (name: string) => `${name} region`,
       compareNote: 'Measured the same way for each: the land inside the boundary.',
       // Guide shape C (owner, 19 Oct 2026): the page answers one question in four beats, then How it tastes and In short; the rest are
@@ -465,15 +495,23 @@ export const strings = {
   // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
     open: 'Map tour',
-    /** The one-line link at the top of a guide that has a tour; it scrolls to the band. */
-    jumpToTour: 'Map tour',
-    // The band under the guide's lede (B3, owner 21 Oct 2026) and the bar over the map column.
-    kickerMap: 'AtlaSlope map',
-    bandTitle: (stops: number) => `Map tour · ${stops} places to fly to`,
-    bandSub: (minutes: number) => `${minutes} minutes. The map follows the guide as you read.`,
-    openMap: 'Open the map',
+    // The "Read with the map" card in the guide's hero (C3, owner 22 Oct 2026); its two lines.
+    card: {
+      title: 'Read with the map',
+      sub: (minutes: number, stops: number) => `${minutes} minutes · ${stops} places to fly to`,
+    },
+    /** Under a stop's measured line in the guide (what the figure is and where the terrain comes from). */
+    measuredBy: 'Measured by AtlaSlope · Terrain: Mapzen',
     stopOf: (k: number, n: number) => `Stop ${k} of ${n}`,
-    hide: 'Hide map',
+    close: 'Close the map',
+    /** The map mode's own black band (v3 stage, restored 22 Oct 2026): where in the guide the reader is, and the way back to the page. */
+    chapterOf: (n: number, of: number) => `Chapter ${n} of ${of}`,
+    back: (name: string) => `Back to ${name}`,
+    /** Phones: the band has no room for long names (Bizkaiko Txakolina); the full name stays the link's label (owner 22 Oct 2026). */
+    backShort: 'Back',
+    locator: 'Where the map is in Spain',
+    terrainHeight: 'Terrain height',
+    slopeKey: 'Slopes >30%',
     mapLabel: 'Map that follows the text',
     recentre: 'Back to this stop',
     /** A measure of a zone shown at a stop framed on the whole region ("In Rioja Alta, half the land..."). */
@@ -489,7 +527,7 @@ export const strings = {
       climate: 'Climate:',
       geology: 'Rock beneath the soil:',
       /** Rock types at the soils stop, named as IGME names the unit that carries the colour (MAGNA 50), in English (IGME's Spanish unit names, rendered faithfully), per story (colours: src/story/layerRules.ts). */
-      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvium and floodplain' }, priorat: { slate: 'Hornfelsed slates' } } as Record<string, Record<string, string>>,
+      rocks: { rioja: { clayLimestone: 'Sands, calcareous sandstones and ochre clays (Haro facies)', ferrousClay: 'Siltstones and red clays', alluvial: 'Alluvium and floodplain' }, priorat: { slate: 'Hornfelsed slates' }, 'txakoli-getaria': { alternation: 'Limestones, sandy limestones, marls and sandstone beds', sandyMarl: 'Limestones and sandy marls', sandstone: 'Massive calcareous sandstones' }, 'txakoli-alava': { marlLimestone: 'Marls and limestones (flysch)', clayLimestone: 'Marls and clayey limestones', sandstoneClay: 'Sandstones and clays' }, cangas: { sandstoneSlate: 'Sandstones and slates', sandstoneSlateLight: 'Sandstones and slates', narceaSlate: 'Slates, feldspathic sandstones and porphyroids (Narcea slates)', quartziteSlate: 'Quartzites and slates (Cabos series)' }, valdeorras: { slate: 'Slates and schists with sandstone levels (Luarca series)', schist: 'Bluish quartz-muscovite schists', granite: 'Adamellite granite' }, monterrei: { greenSeries: 'Green series: phyllites, sandy slates, greywackes', granite: 'Porphyritic granite' }, navarra: { marlSandstone: 'Grey marls and sandy marls with beds of sandstone', alluvial: 'Gravels, sands and clays of river valleys' }, somontano: { limestone: 'Limestones with nummulites (Guara Fm.)', gypsum: 'Clays and gypsum (Barbastro)', sandstoneMudstone: 'Sandstones between mudstones', terraces: 'Terraces and glacis' }, 'campo-de-borja': { limestone: 'Lacustrine limestones and marls', redClay: 'Red-brown clays and silts with sandstone', terraces: 'River terraces and alluvium' }, 'ribeira-sacra': { slate: 'Slates, schists and quartzites', granite: 'Two-mica granite, foliated', granite2: 'Two-mica granite' }, 'ribera-del-duero': { ochreClay: 'Silts and red-ochre clays with sandstones', terraces: 'Gravels and sands of the Duero terraces', limestone: 'Grey limestones and dolomites' }, alicante: { limestone: 'White limestones', limeMarl: 'Limestones and marls', dolomite: 'Dolomitic limestones' }, 'costers-del-segre': { montsec: 'Limestones and calcarenites of the Montsec', limestone: 'Dark grey limestones', sandClay: 'Conglomerates, sands and clays of the slopes' } } as Record<string, Record<string, string>>,
       slope: 'Steeper than 30% (about 17°)',
       short: { oceanic: 'Oceanic', humid: 'Humid', 'med-warm': 'Mild Med.', 'med-hot': 'Hot Med.', steppe: 'Steppe', arid: 'Semi-arid' } as Record<string, string>,
     },

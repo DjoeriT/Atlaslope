@@ -4,7 +4,7 @@ import { expect, test, type Page } from '@playwright/test';
 // The card walk: Spain, region, place, zone and back, the address bar, search and the keyboard.
 // The UI-test build makes no tile requests; places and boundaries are the real data files.
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('.card h1')).toBeVisible();
@@ -44,7 +44,8 @@ test('walk Spain, Rioja, Rioja Alta and back by breadcrumb (the one-place Rioja 
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
   await card.getByRole('navigation', { name: 'Where this sits' }).getByRole('link', { name: 'Spain' }).click();
   await expect(card.locator('h1')).toHaveText('Spain');
-  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveCount(0);
+  // The Spain card's only step up is the Atlas cover (Atlas cover card, PR #202).
+  await expect(card.getByRole('navigation', { name: 'Where this sits' })).toHaveText(/^Atlas$/);
   await page.goBack();
   await expect(page).toHaveURL(/#place=rioja(&|$)/);
   // an old link to the region still works and lands on the place

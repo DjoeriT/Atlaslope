@@ -1,0 +1,115 @@
+{
+ "id": "tavora-varosa",
+ "title": "Why Távora-Varosa tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "High vineyards on granite and schist, in a dry climate with very cold winters, make this small region one that matters a lot for sparkling wine. Its whites show a natural acidity and a citrus character.",
+  "cite": [
+   "tavora-varosa-doc:p6",
+   "tavora-varosa-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Under the Serra da Nave",
+   "paras": [
+    "The region lies at the foot of the slopes of the Serra da Nave, between the rivers Paiva and Távora. In some places it borders the Douro lands.",
+    "People have left traces here since proto-history. Romans, Suebi and Visigoths passed through. Cistercian monks chose the region to build some of their finest buildings. One is the monastery of S. João de Tarouca, built in the 12th century and the first in the Iberian Peninsula."
+   ],
+   "cite": [
+    "tavora-varosa-doc:p6",
+    "tavora-varosa-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Mosteiro de S. João de Tarouca",
+     "point": [
+      -7.7667,
+      40.9833
+     ],
+     "zoom": 11,
+     "caption": "The Cistercian monastery built in the 12th century, the first in the Iberian Peninsula.",
+     "cite": [
+      "tavora-varosa-doc:p7"
+     ]
+    },
+    {
+     "label": "Serra da Nave",
+     "point": [
+      -7.88,
+      40.93
+     ],
+     "zoom": 10,
+     "caption": "The region sits at the foot of the slopes of this range.",
+     "cite": [
+      "tavora-varosa-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry climate, hard winters",
+   "paras": [
+    "The climate is temperate continental and dry. Winters are harsh, very cold and wet.",
+    "Work in the vineyard is done by hand, in extreme conditions. Pruning usually happens between December and January, and later where the vines are exposed to frost. Harvest usually starts in the Varosa zone, and about 15 days later in Távora."
+   ],
+   "cite": [
+    "tavora-varosa-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Tarouca, in the Varosa zone",
+     "point": [
+      -7.78,
+      41.0
+     ],
+     "zoom": 10,
+     "caption": "Harvest usually starts in the Varosa zone, about 15 days before Távora.",
+     "cite": [
+      "tavora-varosa-doc:p5",
+      "tavora-varosa-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Granite, schist and height",
+   "paras": [
+    "The soils are mostly primary granite and poor in limestone. In places they are schist, strongly eroded and acidic. They are quite poor in organic matter.",
+    "Vineyards usually stand high, between 500 and 800 metres, and face south."
+   ],
+   "cite": [
+    "tavora-varosa-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fresh whites and bottle-fermented sparkling",
+   "paras": [
+    "The mix of climate and soil makes this one of the best-suited places in Portugal for wine, and for sparkling wine above all.",
+    "Sparkling wine gets its second fermentation in the bottle. It then ages at least 9 months, counted from the day of bottling.",
+    "Whites show a natural acidity and an intense aroma. Their citrus character is bright and fresh.",
+    "Reds take a delicate aroma and a noble body, and gain fine aromas with time. In the northern parishes, close to the Douro, they gain a special character and structure.",
+    "Wines from the Távora zone are fresher than those from the Varosa zone, but naturally acidic.",
+    "Rosé is made too.",
+    "Vines must be at least four years past grafting. They are trained low, at about 80 cm, as a cordon or a goblet.",
+    "Many grape varieties are allowed, white and red. Many are local and give a strong regional character. Others are relatively recent arrivals."
+   ],
+   "cite": [
+    "tavora-varosa-doc:p2",
+    "tavora-varosa-doc:p3",
+    "tavora-varosa-doc:p4",
+    "tavora-varosa-doc:p5",
+    "tavora-varosa-doc:p6",
+    "tavora-varosa-doc:p7"
+   ]
+  }
+ ]
+}

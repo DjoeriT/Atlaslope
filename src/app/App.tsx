@@ -1,11 +1,12 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import places from '../../data/places.json';
-import { PlaceCard, RegionCard, SpainCard } from '../cards/Cards';
+import { CountryCard, PlaceCard, RegionCard } from '../cards/Cards';
+import { AtlasCard } from '../cards/AtlasCard';
 import { RegionPage } from '../pages/RegionPage';
 import { PlacePage } from '../pages/PlacePage';
 import { FlyCaption } from '../cards/FlyCaption';
 import { flyOf, focusFor, parentOf, validSelection } from '../cards/nav';
-import { grapeNames } from '../facts';
+import { grapeNames, guideOf, hasGuide, loadGuide } from '../facts';
 import { debugNow, exposeQuizPick } from '../debug';
 import { MapView, swoopIn } from '../map/MapView';
 import type { Focus } from '../map/focus';
@@ -16,12 +17,13 @@ import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
-import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
+import { ATLAS, isAtlas, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { SiteBar } from './TopBar';
 import { withMotion, type Move } from './motion';
 import { Sheet } from './Sheet';
 import { hasStory } from '../story/ids';
+import { addressOf, hashAt } from '../paths';
 // The tour (map, layers, story files) is its own chunk under dist/story/, fetched only when a tour opens.
 
 const flyKey = (s: Selection) => (s.kind === 'place' && s.fly ? `${s.fly.chapter}.${s.fly.index}` : '');
@@ -34,9 +36,13 @@ const moveOf = (from: Selection, to: Selection): Move => (
       : from.page && to.page && (from.kind !== to.kind || from.id !== to.id) ? (depth(to) < depth(from) ? 'page-up' : 'page-step')
         : 'card');
 
+/** The same guide with its map mode opened or closed: the unfold or fold-back is the move, so no page transition runs. */
+const isTourToggle = (from: Selection, to: Selection): boolean =>
+  !!from.page && !!to.page && from.kind === to.kind && from.id === to.id && !from.story !== !to.story;
+
 export function App() {
   const tree = useMemo(() => loadTree(places, grapeNames()), []);
-  const [sel, setSel] = useState<Selection>(() => validSelection(tree, parseSelection(location.hash)));
+  const [sel, setSel] = useState<Selection>(() => validSelection(tree, parseSelection(hashAt(location.pathname, location.hash))));
   const selRef = useRef(sel);
   selRef.current = sel;
   const [quiz, setQuiz] = useState<QuizRoute | null>(() => parseQuizRoute(location.hash));
@@ -56,14 +62,17 @@ export function App() {
     // "Back to <place>" from the story steps back too, so the back gesture after it does not reopen the story.
     if (same && cur.story && to.page && !to.story && (history.state as { fromPage?: boolean } | null)?.fromPage) { history.back(); return; }
     const view = same && !to.fly ? parseView(location.hash) : null;
-    history.pushState(same && to.page && !cur.page ? { fromCard: true } : same && to.story && cur.page && !cur.story ? { fromPage: true } : null, '', here() + selectionToHash(to, view));
+    history.pushState(same && to.page && !cur.page ? { fromCard: true } : same && to.story && cur.page && !cur.story ? { fromPage: true } : null, '', addressOf(tree, to, selectionToHash(to, view)));
     const move = quizRef.current ? 'card' : moveOf(cur, to);
-    withMotion(() => {
+    const apply = () => {
       setQuiz(null);
       setStay(null);
       setBackTo((b) => (to.kind === 'place' && to.id === b ? b : null)); // exploring anywhere else ends "Back to the quiz"
       setSel(to);
-    }, move);
+    };
+    // A guide and its own map mode move by the unfold and fold-back (src/story/unfold.ts): the page transition on top of them made
+    // the page vanish and the grown photo come back before the map (owner, 22 Oct 2026: "it's a bug").
+    if (isTourToggle(cur, to)) apply(); else withMotion(apply, move);
     // Back on the map from a guide, the camera flies in once the guide has gone (owner, 18 Oct 2026: "Fly to Rueda" did not fly).
     if (move === 'page-close') swoopIn();
   }, [tree]);
@@ -80,34 +89,35 @@ export function App() {
   const openQuiz = useCallback((sub: QuizRoute['sub'] = null, set?: string[]) => {
     if (quizRef.current && quizRef.current.sub === sub && !set) return;
     const route: QuizRoute = set ? { sub, set } : { sub };
-    history.pushState(null, '', here() + quizToHash(route));
+    history.pushState(null, '', addressOf(tree, null, quizToHash(route)));
     withMotion(() => setQuiz(route));
-  }, []);
+  }, [tree]);
   const openExplore = useCallback(() => {
-    history.pushState(null, '', here() + selectionToHash(selRef.current));
+    history.pushState(null, '', addressOf(tree, selRef.current, selectionToHash(selRef.current)));
     withMotion(() => {
       setQuiz(null);
       setBackTo(null);
     });
-  }, []);
+  }, [tree]);
   const openPlaceFromQuiz = useCallback((id: string) => {
-    history.pushState(null, '', here() + selectionToHash({ kind: 'place', id }));
+    history.pushState(null, '', addressOf(tree, { kind: 'place', id }, selectionToHash({ kind: 'place', id })));
     setBackTo(id);
     setQuiz(null);
     setSel({ kind: 'place', id });
-  }, []);
+  }, [tree]);
   const backToQuiz = useCallback(() => openQuiz(lastQuiz.current.sub), [openQuiz]);
   useEffect(() => {
     const onPop = () => {
-      const to = validSelection(tree, parseSelection(location.hash));
+      const to = validSelection(tree, parseSelection(hashAt(location.pathname, location.hash)));
       const q = parseQuizRoute(location.hash);
       const move = q || quizRef.current ? 'card' : moveOf(selRef.current, to);
-      withMotion(() => {
+      const apply = () => {
         setQuiz(q);
         // A Study address names no card: the atlas keeps the one it had, so Atlas comes back to it (review of website slice 2).
         if (!q) setSel(to);
         setStay(null);
-      }, move);
+      };
+      if (!q && isTourToggle(selRef.current, to)) apply(); else withMotion(apply, move);
       if (move === 'page-close') swoopIn();
     };
     window.addEventListener('popstate', onPop);
@@ -130,12 +140,17 @@ export function App() {
   useEffect(() => { if (!quiz) setMapPick(null); }, [quiz]);
   const progress = useQuiz(tree, clock);
   // Keyed on what is selected, not on the card or page showing it, so opening the page and coming back leaves the map's camera alone.
+  // Guides load on demand: a place whose guide is not here yet renders again once it is, so its fly-there and page can use it.
+  const [guidesIn, setGuidesIn] = useState(0);
+  useEffect(() => {
+    if (sel.kind === 'place' && hasGuide(sel.id) && !guideOf(sel.id)) loadGuide(sel.id).then(() => setGuidesIn((n) => n + 1), () => undefined);
+  }, [sel.kind, sel.id]);
   const flown = flyOf(sel);
   const fly = sel.kind === 'place' ? sel.fly : undefined;
-  const focus = useMemo(() => stay ?? focusFor(tree, sel), [tree, sel.kind, sel.id, flyKey(sel), stay]);
+  const focus = useMemo(() => stay ?? focusFor(tree, sel), [tree, sel.kind, sel.id, flyKey(sel), stay, guidesIn]);
   const closeFly = useCallback(() => {
     setStay(focus);
-    history.pushState(null, '', here() + selectionToHash({ kind: 'place', id: selRef.current.id }, parseView(location.hash)));
+    history.pushState(null, '', addressOf(tree, { kind: 'place', id: selRef.current.id }, selectionToHash({ kind: 'place', id: selRef.current.id }, parseView(location.hash))));
     setSel({ kind: 'place', id: selRef.current.id });
   }, [focus]);
   const pageOpen = !quiz && sel.kind !== 'country' && !!sel.page;
@@ -171,7 +186,7 @@ export function App() {
   }, []);
   return (
     <>
-      {!pageOpen && <SiteBar tree={tree} onOpen={go} current={quiz ? 'study' : 'atlas'} onAtlas={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} />}
+      {!pageOpen && <SiteBar tree={tree} onOpen={go} current={quiz ? 'study' : 'atlas'} onAtlas={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(ATLAS); } }} />}
       {/* Everything under the bar: the map and what floats on it are placed against this box, not the window. */}
       <div className="stage">
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
@@ -192,7 +207,7 @@ export function App() {
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
             : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
             // The Atlas shows no Study items: no Today card, no due counts (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
-            : <SpainCard tree={tree} go={go} />}
+            : isAtlas(sel) ? <AtlasCard tree={tree} go={go} /> : <CountryCard tree={tree} go={go} countryId={sel.id} />}
         </Sheet>
       )}
       {!pageOpen && <FirstRun />}

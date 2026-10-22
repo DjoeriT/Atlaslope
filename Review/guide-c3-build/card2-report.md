@@ -1,0 +1,6 @@
+# Card 2 report: C3 photos
+Status: partly done (photos linked to Priorat stops: see hand-back)
+- Step 1: shipped priorat-weather-1 and priorat-rules-1 (add_photos.py + photo_sizes.py; 1 size set 160/480/800 like others), SOURCES row, photo keys on story steps air and wines. GAP: those two chapters have no fly target, PlacePage stopsOf needs one, so the photos do not show on the page yet (needs fly label/caption = guide text, or a code change; asked in hand-back).
+- Step 2: src/pages/pageCrops.json (15 photos, focus + hash), tourPhotos.ts, crop_sheet.mjs --page, tests/unit/page-crops.test.ts (4 tests), Pic.tsx reads it, data/story/photo-focus.json folded in and removed; docs/guides.md updated. Sheet: Review/guide-c3-build/crop-sheet-page.jpg. npm test 46 files/401 tests green, 2.1 s. Not covered: alike and zone-list tiles use the shared Img (centred).
+- Step 3: hero Mosaic one 3:2 photo + All N button in the 33rem column (CSS, guide-c3.css); badge dots hang in the gap and clip at line start; removed pg-tour rules, .pg-tourjump, .story-open, TourStill.tsx. build 2 s, tests green. Shots: Review/guide-c3-build/shots/c2-*. Priorat weather/rules beats show no photo yet (see step 1 gap).
+- check-guide-photos.mjs now measures layout width (offsetWidth, skips hidden): the scroll-drift scale made ribera read 607 px; all three places ratio 1.52 ok.

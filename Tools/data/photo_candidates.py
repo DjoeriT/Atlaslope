@@ -14,6 +14,10 @@ subcategories) for the quizzed places the fill pass left empty, because their fi
 A file is kept when its coordinates fall inside the boundary (2 km margin) or, without coordinates, when it names one of the place's
 towns and a vine or wine word. Writes Review/sources/photo-candidates-cats.json and contact-sheets/cats-<place>.jpg.
 
+Portugal pass (photo round, 22 Oct 2026, owner: "we need a lot of pictures"): `photo_candidates.py pt` runs for the places in a
+`pt-` region with Portuguese vine words, a denser disc cover, the name search and a category walk (PT_CATS), keeps 20 per place
+(at most 2 per photographer; all kept files under "all") and writes Review/sources/photo-candidates-pt.json and contact-sheets/pt-<place>.jpg (5 across).
+
 Second version (release 4). The first one searched by name and within 10 km of the centroid, which returned wine bottles from
 other regions, a Chilean winery and space-station photos. This one:
 - searches only files with coordinates **inside the place's boundary** (geosearch discs of 10 km laid over the boundary, then a
@@ -38,8 +42,8 @@ UA = "AtlaslopeDataBot/0.2 (https://github.com/DjoeriT/Atlaslope)"
 OUT = ROOT / "Review/sources/photo-candidates.json"
 SHEETS = ROOT / "Review/sources/contact-sheets"
 OK = re.compile(r"^(public domain|pd\b|cc0|cc by(-sa)? ?\d)", re.I)
-VINE = re.compile(r"vi[ñn]edo|vi[ñn]a\b|vi[ñn]as|vineyard|vinya|vinyes|vides|cepa|parra|vendimia|verema|mahasti|vigne|wineyard|viñedos|terraza|bancal", re.I)
-WINE = re.compile(r"vino|wine|bodega|celler|adega|txakol|uva|grape", re.I)
+VINE = re.compile(r"vi[ñn]edo|vi[ñn]a\b|vi[ñn]as|vineyard|vinya|vinyes|vides|cepas?\b|parra|vendimia|verema|mahasti|vigne|wineyard|viñedos|terraza|bancal|vinhas?\b|vinhedos?|socalcos?|vindimas?|latadas?|ramadas?\b", re.I)
+WINE = re.compile(r"vino|wine|bodega|celler|adega|txakol|uva|grape|vinho|quinta|alvarinho|loureiro", re.I)
 DROP = re.compile(r"ISS\d|View of Earth|Mapillary|etiqueta|label|bottle|botella|logo|escudo|coat of arms|mapa\b|\bmap\b|plano|interior|retablo|altar|"
                   r"capitel|portada|arquivolta|modill|lápida|placa|cartel|sign\b|señal|\btren\b|train|autobús|bus\b|estación|station|aeropuerto|"
                   r"retrato|portrait|concierto|fiesta|feria|futbol|fútbol|plaza de toros|colegio|instituto|hospital|cementerio|cemetery|"
@@ -59,7 +63,12 @@ def get(params):
     for attempt in range(8):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30) as r:
-                return json.load(r)
+                out = json.load(r)
+            # Commons sometimes answers 200 with an error body (seen in the Portugal pass): retry, then fail loudly
+            if "error" not in out: return out
+            print("api error:", str(out["error"])[:200], flush=True)
+            if attempt == 7: raise RuntimeError(out["error"].get("code"))
+            time.sleep(4 + 4 * attempt)
         except urllib.error.HTTPError as e:
             if e.code != 429 or attempt == 7: raise
             time.sleep(4 + 4 * attempt)
@@ -158,14 +167,14 @@ def info(found, geom, name):
     return out
 
 
-def rank(cands):
+def rank(cands, n=12, per_artist=3):
     cands.sort(key=lambda c: (-c["vine"], -c["quality"], -c["wine"], -(c["width"] >= c["height"]), -c["width"] * c["height"]))
     per, kept = {}, []
     for c in cands:
-        if per.get(c["artist"], 0) >= 3: continue
+        if per.get(c["artist"], 0) >= per_artist: continue
         per[c["artist"]] = per.get(c["artist"], 0) + 1
         kept.append(c)
-        if len(kept) == 12: break
+        if len(kept) == n: break
     return kept
 
 
@@ -179,21 +188,22 @@ def thumb(url):
     return None
 
 
-def sheet(region, places, done, prefix=""):
-    """One JPEG per study region: a row per place, up to 12 thumbnails, each labelled place-number."""
+def sheet(region, places, done, prefix="", cols=12):
+    """One JPEG per study region: a row per place (wrapped at cols), thumbnails labelled place-number."""
     W, H, PAD, LABEL = 240, 160, 6, 26
     rows = [p for p in places if done.get(p["id"], {}).get("candidates")]
     if not rows: return
-    img = Image.new("RGB", (PAD + 12 * (W + PAD) + 160, PAD + len(rows) * (H + LABEL + PAD)), "white")
+    lines = [math.ceil(len(done[p["id"]]["candidates"]) / cols) for p in rows]
+    img = Image.new("RGB", (PAD + cols * (W + PAD) + 160, PAD + sum(lines) * (H + LABEL + PAD)), "white")
     d = ImageDraw.Draw(img)
     try: font = ImageFont.truetype("DejaVuSans-Bold.ttf", 15)
     except OSError: font = ImageFont.load_default()
     for r, p in enumerate(rows):
-        y = PAD + r * (H + LABEL + PAD)
-        d.text((PAD, y + H // 2), p["id"][:18], fill="black", font=font)
+        y0 = PAD + sum(lines[:r]) * (H + LABEL + PAD)
+        d.text((PAD, y0 + H // 2), p["id"][:18], fill="black", font=font)
         for i, c in enumerate(done[p["id"]]["candidates"]):
             t = thumb(c["thumb"]) if c.get("thumb") else None
-            x = 160 + PAD + i * (W + PAD)
+            x, y = 160 + PAD + (i % cols) * (W + PAD), y0 + (i // cols) * (H + LABEL + PAD)
             if t:
                 t.thumbnail((W, H)); img.paste(t, (x + (W - t.width) // 2, y + (H - t.height) // 2))
             d.text((x, y + H + 4), f"{p['id'][:14]}-{i + 1}{' Q' if c['quality'] else ''}", fill="black", font=font)
@@ -314,7 +324,61 @@ def cats():
         print("sheet", pid, flush=True)
 
 
+PT_OUT = ROOT / "Review/sources/photo-candidates-pt.json"
+# Place: (name searches, categories to walk). Category names are guesses; missing ones are skipped.
+PT_CATS = {
+    "douro": (['"Douro" (vinha OR vinhas OR vinhedo OR socalcos OR vineyard OR vineyards OR quinta OR vindima)',
+               '"Alto Douro" (wine OR vinho OR terraces OR socalcos)'],
+              ["Alto Douro Wine Region", "Douro Wine Region", "Vineyards in the Douro", "Vineyards in Douro", "Douro wine",
+               "Quintas in the Douro Valley", "Port wine vineyards", "Socalcos do Douro", "Vineyards in Vila Real District",
+               "Pinhão", "Peso da Régua", "Vineyards in Portugal"]),
+    "vinho-verde": (['"Vinho Verde" (vinha OR vinhas OR vinhedo OR vineyard OR quinta OR uvas)',
+                     '(Minho OR Monção OR Melgaço OR Lima) (vinha OR vinhas OR ramada OR alvarinho OR loureiro)'],
+                    ["Vinho Verde", "Vinho Verde wine region", "Alvarinho", "Loureiro (grape)", "Vineyards in Minho",
+                     "Vineyards in Braga District", "Vineyards in Viana do Castelo District", "Vineyards in Porto District",
+                     "Vineyards in Monção", "Vineyards in Melgaço", "Ramadas", "Vineyards in Portugal"]),
+}
+
+
+def pt():
+    places = [p for p in json.loads((ROOT / "data/places.json").read_text())["places"] if p["region"].startswith("pt-")]
+    geoms = boundaries(places)
+    done = json.loads(PT_OUT.read_text()) if PT_OUT.exists() else {}
+    for p in places:
+        if p["id"] in done or p["id"] == "porto": continue  # Porto is Douro's land: its photos are picked from Douro's candidates
+        g = geoms[p["id"]]
+        searches, cat_list = PT_CATS.get(p["id"], ([], []))
+        found = {}
+        try:
+            for lon, lat in discs(g, max_n=40):
+                r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 500, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
+                for x in r["query"]["geosearch"]: found[x["title"]] = (x["lon"], x["lat"])
+                time.sleep(.5)
+            for q in searches:
+                r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 100, "srsearch": q})
+                for x in r["query"]["search"]: found.setdefault(x["title"], None)
+                time.sleep(.5)
+            for c in cat_list:
+                for t in members(c): found.setdefault(t, None)
+                time.sleep(.5)
+            # files from a category or a search without coordinates must name the place and a vine word (info() rule)
+            cands = [c for c in info(found, g, p["name"]) if c["vine"] or c["wine"]]
+            # a file that names a neighbouring Portuguese place is that place's photo (Douro panoramas fell inside Vinho Verde)
+            # (batch 1, 22 Oct 2026: only places whose outline does not touch this one; Lisboa holds Colares, Setúbal and Palmela share one)
+            other = [q["name"].lower() for q in places if q["id"] != p["id"] and not geoms[q["id"]].intersects(g)]
+            cands = [c for c in cands if not any(o in (c["title"] + " " + c["description"]).lower() for o in other)]
+        except Exception as e:  # keep what is done; a rerun retries this place
+            print(p["id"], "error:", e, flush=True); continue
+        done[p["id"]] = {"name": p["name"], "region": p["region"], "seen": len(found), "kept": len(cands), "candidates": rank(list(cands), 20, 2), "all": cands}
+        print(p["id"], len(found), len(cands), flush=True)
+        PT_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for p in [p for p in places if p["id"] in done]:
+        sheet(p["id"], [p], done, "pt-", cols=5)
+        print("sheet", p["id"], flush=True)
+
+
 def main():
+    if sys.argv[1:] == ["pt"]: return pt()
     if sys.argv[1:] == ["fill"]: return fill()
     if sys.argv[1:] == ["cats"]: return cats()
     tree = json.loads((ROOT / "data/places.json").read_text())

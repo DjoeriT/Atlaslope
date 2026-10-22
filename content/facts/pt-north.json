@@ -1,0 +1,756 @@
+{
+ "region": "pt-north",
+ "sheets": [
+  {
+   "id": "douro",
+   "why": {
+    "text": "Schist terraces in mountain-sheltered valleys, with very cold winters and hot, dry summers, and many native grapes blended together.",
+    "cite": [
+     "douro-doc:p10",
+     "douro-doc:p11",
+     "douro-doc:p13"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Barca",
+     "Patorra",
+     "Pé Comprido",
+     "Viosinho",
+     "Vital",
+     "Petit Bouschet",
+     "Sevilhao",
+     "Sercial",
+     "Pinheira Branca",
+     "Bical",
+     "Nevoeira",
+     "Siria",
+     "Barreto",
+     "Pinot Noir",
+     "Bastardo",
+     "Sémillon",
+     "Batoca",
+     "Cornifesto",
+     "Branco Guimaraes",
+     "Branco Especial",
+     "Bragao",
+     "Malvasia Parda",
+     "Malvasia Preta",
+     "Malvasia Rei",
+     "Tamarez",
+     "Malvasia Fina",
+     "Ratinho",
+     "Marufo",
+     "Melra",
+     "Verdelho",
+     "Caramela",
+     "Malandra",
+     "Arinto",
+     "Rabigato Moreno",
+     "Rabigato",
+     "Rabo de Ovelha",
+     "Verdial Branco",
+     "Folgasao",
+     "Trincadeira",
+     "Sarigo",
+     "Carrega Branco",
+     "Carignan",
+     "Alvarinho",
+     "Cerceal Branco",
+     "Fernao Pires",
+     "Carrega Tinto",
+     "Varejoa",
+     "Castelao",
+     "Santareno",
+     "Aramon",
+     "Castela",
+     "Aragonez",
+     "Samarrinho",
+     "Casculho",
+     "Tinto Sem Nome",
+     "Grangeal",
+     "Alicante Bouschet",
+     "Grand Noir",
+     "Tinta Mesquita",
+     "S. Saul",
+     "Tinta Martins",
+     "Tinta Lameira",
+     "Côdega do Larinho",
+     "Gouveio Real",
+     "Gouveio Estimado",
+     "Tinto Cao",
+     "Cidadelhe",
+     "Tinta Penajoia",
+     "Tinta Tabuaço",
+     "Tinta Pomar",
+     "Tinta Pereira",
+     "Chasselas",
+     "Alvarelhao Branco",
+     "Concieira",
+     "Gouveio",
+     "Jampal",
+     "Touriga Branca",
+     "Touriga Fêmea",
+     "Alvarelhao Ceitao",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Tinta Aguiar",
+     "Tinta Francisca",
+     "Tinta Fontes",
+     "Tinta Carvalha",
+     "Rufete",
+     "Valdosa",
+     "Valente",
+     "Tinta Bastardinha",
+     "Tinta Barroca",
+     "Jaen",
+     "Roseira",
+     "Gonçalo Pires",
+     "Mourisco de Trevoes",
+     "Mourisco",
+     "Lourela",
+     "Portugues Azul",
+     "Donzelinho Tinto",
+     "Donzelinho Branco",
+     "Avesso",
+     "Dona Branca",
+     "Sousao",
+     "Baga",
+     "Diagalves",
+     "Estreito Macio",
+     "Espadeiro",
+     "Mondet",
+     "Engomada",
+     "Mourisco de Semente",
+     "Mourisco Branco",
+     "Moreto",
+     "Preto Martinho",
+     "Moscadet",
+     "Moscatel Galego Branco",
+     "Praça"
+    ],
+    "othersCite": [
+     "douro-doc:p7",
+     "douro-doc:p8",
+     "douro-doc:p9",
+     "douro-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Reds, whites and rosados, mostly blends; also sparkling wine and fortified Moscatel do Douro.",
+    "cite": [
+     "douro-doc:p2",
+     "douro-doc:p12"
+    ]
+   },
+   "climate": {
+    "text": "Very cold winters, very hot dry summers; the Marão and Montemuro mountains block wet western winds. Mean annual temperatures run 11.8 to 16.5 °C.",
+    "cite": [
+     "douro-doc:p11"
+    ]
+   },
+   "soil": {
+    "text": "Mostly schist, with patches of granite; terracing and deep ploughing reshape many soils.",
+    "cite": [
+     "douro-doc:p10",
+     "douro-doc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: mostly blends of native grapes, complex and rich. Whites: good aroma and complexity, often fermented or aged in wood. Rosés: pink, aromatic, soft and sweet, lightly acidic.",
+    "cite": [
+     "douro-doc:p12"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Moscatel do Douro",
+      "text": "Fortified white made only from Moscatel Galego Branco, 16.5 to 22% alcohol."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine with second fermentation in bottle, some vintage ones need nine months in bottle."
+     },
+     {
+      "name": "Colheita tardia",
+      "text": "Single-harvest wine where overripe grapes can be tasted."
+     }
+    ],
+    "cite": [
+     "douro-doc:p2",
+     "douro-doc:p3",
+     "douro-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vinho-verde",
+   "why": {
+    "text": "Mild, wet Atlantic weather favours slow ripening, which helps acidity; granite soils add a mineral edge to the whites.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Alicante-Bouschet",
+     "Alvarelhão",
+     "Alvarinho",
+     "Amaral",
+     "Aragonez",
+     "Arinto",
+     "Avesso",
+     "Azal",
+     "Baga",
+     "Batoca",
+     "Borraçal",
+     "Cainho",
+     "Cascal",
+     "Diagalves",
+     "Doce",
+     "Doçal",
+     "Esganinho",
+     "Esganoso",
+     "Espadeiro",
+     "Espadeiro-Mole",
+     "Fernão-Pires",
+     "Folgasão",
+     "Gouveio",
+     "Grand-Noir",
+     "Labrusco",
+     "Lameiro",
+     "Loureiro",
+     "Malvasia-Fina",
+     "Malvasia-Rei",
+     "Mourisco",
+     "Padeiro",
+     "Pedral",
+     "Pical",
+     "Pintosa",
+     "Rabo-de-Anho",
+     "Semillon",
+     "Sercial",
+     "Sezão",
+     "São-Mamede",
+     "Tinta-Barroca",
+     "Touriga-Nacional",
+     "Trajadura",
+     "Trincadeira",
+     "Tália",
+     "Verdelho-Tinto",
+     "Verdial-Tinto",
+     "Vinhão"
+    ],
+    "othersCite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "sparkling"
+    ],
+    "text": "White, rosé and red wines, plus sparkling and quality sparkling; late-harvest wines from overripe grapes.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "climate": {
+    "text": "Mild, without extreme heat or cold; about 1,200 mm of rain a year, irregular, with Atlantic winds through the river valleys.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "soil": {
+    "text": "Shallow soils, mostly granite; two narrow strips of schist cross the region.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "altitude": {
+    "text": "The region lies below 700 metres.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: pale citrine, light and fruity or floral, to mineral and honeyed. Rosés: pale pink, red fruit. Reds: ruby to dark, wild fruits. Fresh, high acidity.",
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Alvarinho (Monção e Melgaço)",
+      "text": "Subregion wines may name Alvarinho only here; optional term «Origem do Alvarinho»."
+     },
+     {
+      "name": "Espumante de Vinho Verde",
+      "text": "Sparkling wine, white, rosé or red, made from Vinho Verde base wine."
+     },
+     {
+      "name": "Palhete / Palheto",
+      "text": "Red wine with up to 15% white grapes; the term is mandatory."
+     },
+     {
+      "name": "Vindima Tardia",
+      "text": "Late-harvest wine from overripe grapes; honey and dried fruit aromas, sweet."
+     }
+    ],
+    "cite": [
+     "vinho-verde-doc"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "porto",
+   "why": {
+    "text": "Stony, terraced soils in the mountain-sheltered Douro valley, with very cold winters and hot dry summers; spirit stops fermentation to keep sweetness.",
+    "cite": [
+     "porto-doc:p7",
+     "porto-doc:p11",
+     "porto-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Barca",
+     "Patorra",
+     "Pé Comprido",
+     "Viosinho",
+     "Vital",
+     "Petit Bouschet",
+     "Sevilhao",
+     "Sercial",
+     "Pinheira Branca",
+     "Bical",
+     "Nevoeira",
+     "Siria",
+     "Barreto",
+     "Bastardo",
+     "Sémillon",
+     "Batoca",
+     "Cornifesto",
+     "Branco Guimaraes",
+     "Branco Especial",
+     "Bragao",
+     "Malvasia Parda",
+     "Malvasia Preta",
+     "Malvasia Rei",
+     "Tamarez",
+     "Malvasia Fina",
+     "Ratinho",
+     "Marufo",
+     "Melra",
+     "Verdelho",
+     "Caramela",
+     "Malandra",
+     "Arinto",
+     "Rabigato Moreno",
+     "Rabigato",
+     "Rabo de Ovelha",
+     "Verdial Branco",
+     "Folgasao",
+     "Trincadeira",
+     "Sarigo",
+     "Carrega Branco",
+     "Carignan",
+     "Fernao Pires",
+     "Carrega Tinto",
+     "Varejoa",
+     "Cercial",
+     "Castelao",
+     "Santareno",
+     "Aramon",
+     "Castela",
+     "Aragonez",
+     "Samarrinho",
+     "Casculho",
+     "Tinto Sem Nome",
+     "Grangeal",
+     "Alicante Bouschet",
+     "Grand Noir",
+     "Tinta Mesquita",
+     "S. Saul",
+     "Tinta Martins",
+     "Tinta Lameira",
+     "Côdega do Larinho",
+     "Gouveio Real",
+     "Gouveio Estimado",
+     "Tinto Cao",
+     "Cidadelhe",
+     "Tinta Penajoia",
+     "Tinta Tabuaço",
+     "Tinta Pomar",
+     "Tinta Pereira",
+     "Chasselas",
+     "Alvarelhao Branco",
+     "Concieira",
+     "Gouveio",
+     "Jampal",
+     "Touriga Branca",
+     "Touriga Fêmea",
+     "Alvarelhao Ceitao",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Tinta Aguiar",
+     "Alvarelhao",
+     "Tinta Francisca",
+     "Tinta Fontes",
+     "Tinta Carvalha",
+     "Rufete",
+     "Valdosa",
+     "Valente",
+     "Tinta Bastardinha",
+     "Tinta Barroca",
+     "Jaen",
+     "Roseira",
+     "Gonçalo Pires",
+     "Mourisco de Trevoes",
+     "Mourisco",
+     "Lourela",
+     "Portugues Azul",
+     "Donzelinho Tinto",
+     "Donzelinho Branco",
+     "Avesso",
+     "Dona Branca",
+     "Sousao",
+     "Baga",
+     "Diagalves",
+     "Estreito Macio",
+     "Espadeiro",
+     "Mondet",
+     "Engomada",
+     "Mourisco de Semente",
+     "Mourisco Branco",
+     "Moreto",
+     "Preto Martinho",
+     "Moscadet",
+     "Moscatel Galego Branco",
+     "Praça"
+    ],
+    "othersCite": [
+     "porto-doc:p8",
+     "porto-doc:p9",
+     "porto-doc:p10",
+     "porto-doc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "fortified"
+    ],
+    "text": "Fortified wine (vinho licoroso) in red, white and rosé, from Extra-Seco to Muito doce, with 19 to 22% alcohol (Branco Leve Seco from 16.5%).",
+    "cite": [
+     "porto-doc:p3",
+     "porto-doc:p4",
+     "porto-doc:p11",
+     "porto-doc:p12"
+    ]
+   },
+   "climate": {
+    "text": "Very cold winters, very hot dry summers; the Marão and Montemuro mountains block wet western winds. Mean annual temperatures run 11.8 to 16.5 °C.",
+    "cite": [
+     "porto-doc:p12"
+    ]
+   },
+   "soil": {
+    "text": "Stony soils with no other use; steep slopes are cut into terraces.",
+    "cite": [
+     "porto-doc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Very rich, intense aroma and very long aroma and flavour, high alcohol, a wide range of sweetness and many colours.",
+    "cite": [
+     "porto-doc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vintage",
+      "text": "Exceptional single-harvest wine, deep in colour, full-bodied, with very fine aroma and taste."
+     },
+     {
+      "name": "Tawny",
+      "text": "Blend aged in wood or other vessels, tawny in colour, soft, with medium persistence."
+     },
+     {
+      "name": "Ruby",
+      "text": "Blend of young wines, fruity, red in colour, with some body."
+     },
+     {
+      "name": "Colheita",
+      "text": "Single-harvest red or white, aged in wood at least 7 years after the harvest."
+     }
+    ],
+    "cite": [
+     "porto-doc:p11",
+     "porto-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "tras-os-montes",
+   "why": {
+    "text": "Very hot, dry summers ripen grapes fully into deeply coloured wines; mostly granite soils with schist patches and the grapes add structure.",
+    "cite": [
+     "tras-os-montes-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Boal Branco",
+     "Viosinho",
+     "Bical",
+     "Siria",
+     "Bastardo",
+     "Cornifesto",
+     "Malvasia Preta",
+     "Malvasia Fina",
+     "Marufo",
+     "Arinto",
+     "Rabigato",
+     "Trincadeira",
+     "Carrega Branco",
+     "Alvarinho",
+     "Fernao Pires",
+     "Castelao",
+     "Aragonez",
+     "Samarrinho",
+     "Alicante Bouschet",
+     "Côdega do Larinho",
+     "Tinto Cao",
+     "Gouveio",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Tinta Carvalha",
+     "Rufete",
+     "Gorda",
+     "Tinta Barroca",
+     "Donzelinho Branco",
+     "Sousao",
+     "Baga",
+     "Moscatel Galego Branco",
+     "Moscatel Galego Roxo"
+    ],
+    "othersCite": [
+     "tras-os-montes-doc:p5",
+     "tras-os-montes-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Reds, whites and rosados, plus sparkling wine and fortified (licoroso) wine.",
+    "cite": [
+     "tras-os-montes-doc:p2",
+     "tras-os-montes-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Very hot summers with high temperatures and low rainfall, giving full ripeness; the spec also stresses several microclimates.",
+    "cite": [
+     "tras-os-montes-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mainly granite with some schist patches. Chaves: granite and clayey or gneiss-type soils. Planalto Mirandês: granite, schist and gneiss. Valpaços: granite and schist.",
+    "cite": [
+     "tras-os-montes-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: full-bodied, ruby to garnet, red fruit and vanilla, soft tannins. Whites: citrus to straw-gold, fresh tropical fruit, long finish. Sparkling: fine bubbles, fresh, fruity and light.",
+    "cite": [
+     "tras-os-montes-doc:p2",
+     "tras-os-montes-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumante Reserva",
+      "text": "Sparkling wine with 12 to 24 months in bottle before disgorging."
+     },
+     {
+      "name": "Espumante Super-reserva",
+      "text": "Sparkling wine with 24 to 36 months in bottle before disgorging; also called extra-reserva."
+     },
+     {
+      "name": "Espumante Velha reserva",
+      "text": "Sparkling wine with over 36 months in bottle before disgorging; also called grande reserva."
+     },
+     {
+      "name": "Rosé",
+      "text": "Made by the open-run (bica aberta) method or with light skin contact."
+     }
+    ],
+    "cite": [
+     "tras-os-montes-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "tavora-varosa",
+   "why": {
+    "text": "High granite and schist slopes at 500 to 800 metres facing south, with a dry continental climate, give fresh, acidic whites and sparkling wines.",
+    "cite": [
+     "tavora-varosa-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Barca",
+     "Viosinho",
+     "Pinot Blanc",
+     "Bical",
+     "Siria",
+     "Pinot Noir",
+     "Bastardo",
+     "Vinhao",
+     "Malvasia Preta",
+     "Malvasia Rei",
+     "Malvasia Fina",
+     "Marufo",
+     "Verdelho",
+     "Talia",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Folgasao",
+     "Trincadeira",
+     "Fernao Pires",
+     "Cercial",
+     "Castelao",
+     "Aragonez",
+     "Gouveio",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Alvarelhao",
+     "Rufete",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Dona Branca"
+    ],
+    "othersCite": [
+     "tavora-varosa-doc:p5",
+     "tavora-varosa-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Fresh whites, soft reds and rosados, and a small region that is very important for sparkling wine.",
+    "cite": [
+     "tavora-varosa-doc:p2",
+     "tavora-varosa-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Temperate continental and dry, with harsh winters that are very cold and wet.",
+    "cite": [
+     "tavora-varosa-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly primary granite, poor in limestone, sometimes eroded and acidic schist, and low in organic matter.",
+    "cite": [
+     "tavora-varosa-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards usually sit at 500 to 800 metres and face south.",
+    "cite": [
+     "tavora-varosa-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: soft, very fresh and fruity, with citrus aroma and natural acidity. Reds: open, fresh, lighter in body and low in acidity. Sparkling: easy to drink, ageing well.",
+    "cite": [
+     "tavora-varosa-doc:p2",
+     "tavora-varosa-doc:p3",
+     "tavora-varosa-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine, second fermentation in bottle, at least nine months' ageing from bottling."
+     }
+    ],
+    "cite": [
+     "tavora-varosa-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 // The place card as a teaser and the full place page (#place=<id>&page). Real places and photos, no tiles.
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('h1').first()).toBeVisible();
@@ -89,12 +89,14 @@ test('the jump bar lists only the sections that exist and moves focus to the sec
   await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Read the label', 'Sources']);
 });
 
-for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {
+for (const [id, n] of [['yecla', 1], ['jumilla', 2], ['cebreros', 3]] as const) {
   test(`the mosaic of ${id} has ${n} photo${n > 1 ? 's' : ''} and no empty frame`, async ({ page }) => {
     await open(page, `#place=${id}&page`);
     const figures = page.locator('.pg-mosaic figure');
     await expect(figures).toHaveCount(n);
+    // C3 hero: one 3:2 photo shows, the rest wait behind "All N photos" in the viewer.
     for (let i = 0; i < n; i++) {
+      if (i > 0) { await expect(figures.nth(i)).toBeHidden(); continue; }
       const box = (await figures.nth(i).boundingBox())!;
       expect(box.width).toBeGreaterThan(50);
       expect(box.height).toBeGreaterThan(50);
@@ -103,12 +105,12 @@ for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] a
   });
 }
 
-test('Rioja shows three frames of its five photos, and all five in the viewer', async ({ page }) => {
-  await open(page, '#place=rioja&page');
-  await expect(page.locator('.pg-mosaic figure')).toHaveCount(3);
-  await page.getByRole('button', { name: 'All 5 photos' }).click();
-  await expect(page.getByRole('dialog', { name: 'Photos of Rioja' }).locator('.count')).toHaveText('1 / 5');
-  await expect(page.locator('.pg-credits')).toContainText('Photos:');
+// Map mode (owner 22 Oct 2026) hides the page hero: the cover with the name leads the column, the photo frames are not shown.
+test('Rioja in map mode has a cover with its name and no hero photo frames', async ({ page }) => {
+  await open(page, '#place=rioja&page&story');
+  await expect(page.locator('.pg-cover h1')).toHaveText('Rioja');
+  await expect(page.locator('.pg-hero')).toHaveCount(0);
+  await expect(page.locator('.pg-mosaic')).toHaveCount(0);
 });
 
 test('a place without photos shows its name on a cover, never a broken image', async ({ page }) => {
@@ -122,7 +124,7 @@ test('a place without photos shows its name on a cover, never a broken image', a
 
 test('every section of the Rioja page keeps a source link', async ({ page }) => {
   await open(page, '#place=rioja&page');
-  const ids = await page.locator('.pg main > section').evaluateAll((els) => els.map((e) => e.id));
+  const ids = await page.locator('.pg main > section, .pg main > .pg-two > section').evaluateAll((els) => els.map((e) => e.id));
   expect(ids).toEqual(['place', 'weather', 'ground', 'rules', 'taste', 'short', 'producers', 'alike', 'sources']);
   for (const id of ids.filter((i) => i !== 'alike' && i !== 'short')) { // alike and In short only link onward; their facts carry the source in the beats
     await expect(page.locator(id === 'sources' ? '#sources a[target="_blank"]' : `#${id} .src a[target="_blank"]`).first()).toBeVisible();
@@ -167,4 +169,12 @@ test('measured charts read against all of Spain, and a zone against its appellat
   await expect(page.locator('#ground .pg-range').nth(1)).toHaveAttribute('aria-label', /median 680 m/);
   await open(page, '#place=rioja-alta&page');
   await expect(page.locator('#weather .pg-compare').first().locator('dt')).toHaveText(['Rioja Alta', 'Rioja', 'All of Spain']);
+});
+
+// The viewer behind "All N photos" on a guide without a tour (the coverage Rioja's hero gave before the map card, owner 22 Oct 2026).
+test('Cebreros shows one frame of its three photos, and all three in the viewer', async ({ page }) => {
+  await open(page, '#place=cebreros&page');
+  await page.getByRole('button', { name: 'All 3 photos' }).click();
+  await expect(page.getByRole('dialog', { name: 'Photos of Cebreros' }).locator('.count')).toHaveText('1 / 3');
+  await expect(page.locator('.pg-hero .pg-credits')).toContainText('Photos:');
 });

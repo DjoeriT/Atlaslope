@@ -1,0 +1,73 @@
+{
+ "$comment": "The other Portuguese square crops, checked by eye on the crop sheet 22 Oct 2026 (Tools/guides/crop_sheet.mjs). The ten the country cards and pages show moved into src/home/photoCrops.json (country pages build, 22 Oct 2026); the unit test allows entries there only for photos a page shows, so these wait for the guides that show them. Move them in with crop_sheet.mjs --write and the same --focus values.",
+ "crops": {
+  "douro-10": {
+   "focus": "50% 50%",
+   "file": "649cb786cad7"
+  },
+  "douro-11": {
+   "focus": "50% 50%",
+   "file": "fa6f0a8900f1"
+  },
+  "douro-12": {
+   "focus": "50% 50%",
+   "file": "17e753e85161"
+  },
+  "douro-13": {
+   "focus": "50% 50%",
+   "file": "f6558c4262f8"
+  },
+  "douro-14": {
+   "focus": "50% 50%",
+   "file": "bd8c67efffbc"
+  },
+  "douro-15": {
+   "focus": "50% 50%",
+   "file": "6ead01f13b8e"
+  },
+  "douro-16": {
+   "focus": "72% 50%",
+   "file": "862a6358c5b1"
+  },
+  "douro-17": {
+   "focus": "50% 50%",
+   "file": "1a905169a738"
+  },
+  "douro-18": {
+   "focus": "72% 50%",
+   "file": "cd5b5042f44e"
+  },
+  "douro-5": {
+   "focus": "50% 50%",
+   "file": "01641db310f2"
+  },
+  "douro-7": {
+   "focus": "50% 50%",
+   "file": "4a57d196f376"
+  },
+  "douro-8": {
+   "focus": "50% 50%",
+   "file": "186af7a67415"
+  },
+  "douro-9": {
+   "focus": "50% 50%",
+   "file": "7dc077cdae8c"
+  },
+  "vinho-verde-2": {
+   "focus": "50% 30%",
+   "file": "e36dd0020680"
+  },
+  "vinho-verde-4": {
+   "focus": "50% 50%",
+   "file": "661595b5baf3"
+  },
+  "vinho-verde-6": {
+   "focus": "50% 50%",
+   "file": "e92465f9ce44"
+  },
+  "vinho-verde-9": {
+   "focus": "50% 50%",
+   "file": "10c536ce9ad0"
+  }
+ }
+}

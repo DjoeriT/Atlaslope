@@ -1,0 +1,16 @@
+
+rioja: Official Journal items after our newest official source (2023-06-07)
+  2023-09-20  Official Journal C 331, 20.9.2023  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.331.01.0002.01.ENG&toc=OJ%3AC%3A2023%3A331%3ATOC
+  2024-10-30  Official Journal C, C/2024/6466, 30.10.2024  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202406466
+  2026-01-29  Official Journal C, C/2026/565, 29.1.2026  http://data.europa.eu/eli/C/2026/565/oj
+
+la-mancha: Official Journal items after our newest official source (2014-06-27)
+  2021-02-25  Official Journal C 65, 25.02.2021  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2021.065.01.0020.01.ENG&toc=OJ%3AC%3A2021%3A065%3ATOC
+  2022-04-25  Official Journal  C 170, 25.4.2022  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.170.01.0015.01.ENG&toc=OJ%3AC%3A2022%3A170%3ATOC
+  2023-06-19  Official Journal C 215, 19.6.2023  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2023.215.01.0032.01.ENG&toc=OJ%3AC%3A2023%3A215%3ATOC
+  2023-10-25  Official Journal L 2023/2298, 25.10.2023  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202302298
+  2025-04-10  Official Journal C, C/2025/2240, 10.4.2025  http://data.europa.eu/eli/C/2025/2240/oj
+  2026-02-19  Official Journal C, C/2026/1048, 19.2.2026  http://data.europa.eu/eli/C/2026/1048/oj
+
+priorat: Official Journal items after our newest official source (2021-11-01)
+  2022-09-06  Official Journal C 341, 6.9.2022  https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.341.01.0012.01.ENG&toc=OJ%3AC%3A2022%3A341%3ATOC

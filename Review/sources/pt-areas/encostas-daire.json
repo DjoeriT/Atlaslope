@@ -1,0 +1,113 @@
+{
+ "encostas-daire": {
+  "source": "encostas-daire-doc:p5",
+  "zones": {
+   "encostas-daire": {
+    "municipalities": [
+     "Batalha",
+     "Porto de Mós",
+     "Ourém"
+    ],
+    "parishes": {
+     "Alcobaça": [
+      "Alcobaça",
+      "Alfeizerão",
+      "Alpedriz",
+      "Bárrio",
+      "Benedita",
+      "Cela",
+      "Coz",
+      "Évora de Alcobaça",
+      "Maiorga",
+      "Nossa Senhora dos Prazeres de Aljubarrota",
+      "São Vicente de Aljubarrota",
+      "Turquel",
+      "Vestiaria",
+      "Vimeiro"
+     ],
+     "Caldas da Rainha": [
+      "Carvalhal Benfeito",
+      "Salir de Matos",
+      "Santa Catarina"
+     ],
+     "Leiria": [
+      "Amor",
+      "Arrabal",
+      "Azóia",
+      "Barosa",
+      "Barreira",
+      "Boa Vista",
+      "Caranguejeira",
+      "Colmeias",
+      "Cortes",
+      "Leiria",
+      "Maceira",
+      "Marrazes",
+      "Milagres",
+      "Ortigosa",
+      "Parceiros",
+      "Pousos",
+      "Regueira de Pontes",
+      "Santa Catarina da Serra",
+      "Santa Eufémia",
+      "Souto da Carpalhosa"
+     ],
+     "Pombal": [
+      "Albergaria dos Doze",
+      "Meirinhas",
+      "Pelariga",
+      "Pombal",
+      "São Simão de Litém",
+      "Santiago de Litém",
+      "Vermoil",
+      "Vila Cã"
+     ]
+    }
+   },
+   "alcobaca": {
+    "parishes": {
+     "Alcobaça": [
+      "Alcobaça",
+      "Alfeizerão",
+      "Alpedriz",
+      "Bárrio",
+      "Benedita",
+      "Cela",
+      "Coz",
+      "Évora de Alcobaça",
+      "Maiorga",
+      "Nossa Senhora dos Prazeres de Aljubarrota",
+      "São Vicente de Aljubarrota",
+      "Turquel",
+      "Vestiaria",
+      "Vimeiro"
+     ],
+     "Caldas da Rainha": [
+      "Carvalhal Benfeito",
+      "Salir de Matos",
+      "Santa Catarina"
+     ],
+     "Porto de Mós": [
+      "Juncal"
+     ]
+    },
+    "municipalities": []
+   },
+   "ourem": {
+    "municipalities": [
+     "Ourém"
+    ],
+    "parishes": {}
+   }
+  },
+  "notMapped": [
+   "Sub-regions alcobaca and ourem are subsets of the whole area zone encostas-daire"
+  ],
+  "aliases": {
+   "Alcobaça": {
+    "Nossa Senhora dos Prazeres de Aljubarrota": "Aljubarrota",
+    "São Vicente de Aljubarrota": "Aljubarrota"
+   }
+  }
+ }
+}

@@ -38,22 +38,22 @@ export function targetOf(step: StoryStep, stop?: FlyTarget): Target | null {
 export const kmBetween = (a: LngLat, b: LngLat) => Math.hypot((a[0] - b[0]) * 80, (a[1] - b[1]) * 111);
 
 /** Every stop flies. A gap of more than 3.5 zoom levels or 150 km flies in two legs: over to the target at a mid zoom, then in (or
- *  out) to the final frame. Otherwise one flight of 2.5 to 4 s. */
+ *  out) to the final frame, 1.5 s each. Otherwise one flight of 1.5 to 2.5 s (owner 22 Oct 2026: shorter, the map was late). */
 export function flyLegs(from: Cam, to: Cam): Leg[] {
   const dz = Math.abs(to.zoom - from.zoom);
   const km = kmBetween(from.center, to.center);
   if (dz > 3.5 || km > 150) {
     const mid = to.zoom > from.zoom ? Math.max(from.zoom, to.zoom - 3.2) : Math.min(from.zoom, to.zoom + 3.2);
     return [
-      { center: to.center, zoom: mid, pitch: (to.pitch + from.pitch) / 2, bearing: to.bearing, duration: 2400, curve: 1.5 },
-      { ...to, duration: 2600, curve: 1.3 },
+      { center: to.center, zoom: mid, pitch: (to.pitch + from.pitch) / 2, bearing: to.bearing, duration: 1500, curve: 1.5 },
+      { ...to, duration: 1500, curve: 1.3 },
     ];
   }
-  return [{ ...to, duration: Math.round(Math.min(4000, 2500 + dz * 250 + km * 6)), curve: 1.4 }];
+  return [{ ...to, duration: Math.round(Math.min(2500, 1500 + dz * 150 + km * 4)), curve: 1.4 }];
 }
 
 /** Each map move gets this long to land before the next starts, when the reader scrolls past several steps. */
-export const DWELL_MS = 2200;
+export const DWELL_MS = 1200;
 
 /** The map shape the fixed views were tuned for: the desktop column (46% of 1440 wide, window height less the bar). Design choice. */
 const REF = { w: 640, h: 760 };

@@ -1,18 +1,20 @@
 // How the open card, the breadcrumb and the map fit together. Pure: no React, no map.
 import type { Crumb, NodeKind, Tree } from '../tree';
 import type { Focus } from '../map/focus';
-import { flyTargetOf, guideOf, type FlyTarget } from '../facts/guides';
-import { SPAIN, type Selection } from '../url';
+import { flyTargetOf, guideOf, hasGuide, type FlyTarget } from '../facts/guides';
+import { ATLAS, ATLAS_ID, SPAIN, isAtlas, type Selection } from '../url';
+import { liveBounds } from './atlasCover';
 
 /** Which kind of node a crumb or search hit is, from the country's own level names (country, region, place, zone, ...). */
 export function selectionOf(tree: Tree, crumb: Crumb): Selection {
-  const levels = tree.countries[0]?.levels ?? [];
+  if (crumb.id === ATLAS_ID) return ATLAS; // the "Atlas" step a country card puts above its title
+  const levels = tree.countries.find((c) => c.levels.includes(crumb.level))?.levels ?? tree.countries[0]?.levels ?? [];
   const depth = levels.indexOf(crumb.level);
   const kind: NodeKind = depth === 0 ? 'country' : depth === 1 ? 'region' : 'place';
   return { kind, id: crumb.id };
 }
 
-/** The selection a hash named, or Spain when the id is not in the tree. */
+/** The selection a hash named, or Spain when the id is not in the tree. The atlas cover and a country the tree holds stay as they are. */
 export function validSelection(tree: Tree, sel: Selection): Selection {
   if (sel.kind === 'region') {
     if (!tree.getRegion(sel.id)) return SPAIN;
@@ -21,11 +23,11 @@ export function validSelection(tree: Tree, sel: Selection): Selection {
   }
   if (sel.kind === 'place') {
     if (!tree.getPlace(sel.id)) return SPAIN;
-    if (!sel.fly || flyOf(sel)) return sel;
+    if (!sel.fly || flyOf(sel) || (hasGuide(sel.id) && !guideOf(sel.id))) return sel; // a guide still loading keeps its fly-there; App checks it again once loaded
     const { fly: _dropped, ...plain } = sel; // a fly-there the guide does not have is just the place
     return plain;
   }
-  return SPAIN;
+  return isAtlas(sel) || tree.countries.some((c) => c.id === sel.id) ? sel : SPAIN;
 }
 
 /** The fly-there a selection names (#place=rioja&fly=valley.1), or undefined when it names none or the guide has no such pill. */
@@ -51,7 +53,8 @@ export function focusFor(tree: Tree, sel: Selection): Focus {
   }
   if (sel.kind === 'region') return { frame: { region: sel.id }, dimRegion: sel.id, select: null, showZones: false };
   const place = sel.kind === 'place' ? tree.getPlace(sel.id) : undefined;
-  if (!place) return { frame: null, dimRegion: null, select: null, showZones: false };
+  if (isAtlas(sel)) return { frame: null, bounds: liveBounds(tree), dimRegion: null, select: null, showZones: false }; // every live country in view
+  if (!place) return { frame: null, country: sel.kind === 'country' ? sel.id : undefined, dimRegion: null, select: null, showZones: false };
   const isZone = tree.levelName(place) === 'zone';
   const hasZones = tree.children(place.id, 'place').length > 0;
   return {

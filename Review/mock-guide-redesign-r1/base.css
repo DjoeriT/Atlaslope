@@ -1,0 +1,101 @@
+/* Guide redesign, round 1: shared parts of the four options. Tokens from Review/visual-style.md: white page, black band, champagne, 6px corners, no pills, one light theme. */
+:root{--serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",-apple-system,"Segoe UI",sans-serif;--paper:#fff;--paper2:#F7F5F0;--black:#141414;--champ:#E9D8B4;--champ-d:#7D6540;--champ-m:#C9B48A;--champ-l:#EFE6D2;
+  --ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;--line:#E8E3D9;--line2:#D8CFBF;--tint2:#7D6540;--tint3:#C9B48A;--accent:#141414;--wine-red:#8C2340;--wine-white:#EBDD9E;--wine-rose:#F2A7A7;--r:.4rem;--top:3.5rem;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-padding-top:7rem}
+body{margin:0;background:#fff;color:var(--ink);font:400 1rem/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body.nr{overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+figure{margin:0}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.12;margin:0}
+p{margin:0 0 1rem}
+:focus-visible{outline:3px solid var(--black);outline-offset:3px}
+.top :focus-visible,.bb:focus-visible{outline-color:var(--champ)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* black band */
+.g-band{position:sticky;top:0;z-index:30;height:var(--top);display:flex;align-items:center;gap:1rem;padding:0 1.5rem;background:var(--black);color:var(--champ);border-bottom:1px solid var(--champ-d)}
+.g-band .brand{margin:0;font:400 1.5rem/1 var(--serif);letter-spacing:.01em}
+.g-band .where-r{margin:0 0 0 .4rem;padding-left:1rem;border-left:1px solid var(--champ-d);font:500 1.1rem/1 var(--serif);color:var(--champ-m)}
+.g-band .topnav{margin-left:auto;display:flex;gap:1.8rem}
+.g-band .topnav a{padding:.4rem 0;border-bottom:2px solid transparent;color:var(--champ);text-decoration:none;font-weight:500;font-size:.95rem}
+.g-band .topnav a[aria-current]{border-color:var(--champ)}
+.nr .on-map{display:none}
+
+/* the big photo button: the Rioja valley photo and a black label with the folded-map glyph */
+.bb{display:block;width:100%;padding:0;border:0;border-radius:var(--r);overflow:hidden;background:var(--black);color:var(--champ);font:inherit;text-align:left;cursor:pointer}
+.bb-ph{display:block;overflow:hidden;position:relative}
+.bb-img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.bb:hover .bb-img{transform:scale(1.035)}
+.bb-lab{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 1.5rem}
+.bb-t{display:block;font:400 clamp(1.7rem,2.6vw,2.3rem)/1.08 var(--serif);color:var(--champ)}
+.bb-s{display:block;margin-top:.4rem;font:500 .92rem var(--sans);color:var(--champ-m)}
+.glyph{flex:none}
+.g-note{margin:.6rem 0 0;font-size:.9rem;color:var(--ink3)}
+
+/* sticky jump bar */
+.g-jump{position:sticky;top:var(--top);z-index:20;display:flex;gap:1.6rem;overflow-x:auto;scrollbar-width:none;background:#fff;border-bottom:1px solid var(--line);padding:0 1.5rem}
+.g-jump::-webkit-scrollbar{display:none}
+.g-jump a{flex:none;padding:.95rem 0;color:var(--ink2);font-weight:600;font-size:.9rem;text-decoration:none;white-space:nowrap}
+.g-jump a[aria-current]{color:var(--black)}
+.g-jump::after{content:"";position:absolute;left:var(--mark-x,0);bottom:0;width:var(--mark-w,0);height:2px;background:var(--black);transition:left .25s,width .25s}
+
+/* text bits */
+.src,.src a,.src-line,.src-line a,.g-credit,.g-credit a{font-size:.78rem;color:var(--ink3)}
+.src.short{display:inline}
+.src-line{margin:.7rem 0 0}
+.lede{font:400 1.45rem/1.45 var(--serif);color:var(--ink2);margin:0 0 .6rem}
+.z-k{margin:.9rem 0 .1rem;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--champ-d)}
+.n,.k{color:var(--champ-d)}
+.k{font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.sw{display:inline-block;width:.85rem;height:.85rem;margin-right:.55rem;border-radius:2px;vertical-align:.05em;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.sw.red{background:var(--wine-red)}.sw.white{background:var(--wine-white)}.sw.rose{background:var(--wine-rose)}
+.g-ph{display:block;width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
+.g-flies{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;margin:1.2rem 0 0}
+.g-flies a{display:inline-flex;align-items:baseline;gap:.5rem;min-height:2.2rem;font-weight:500;text-decoration:underline;text-underline-offset:.22em;text-decoration-color:var(--champ-m)}
+.g-flies small{font:600 .68rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--champ-d);text-decoration:none;display:inline-block}
+/* photo caption of a stop */
+.g-cap{display:block;margin-top:.7rem}
+.g-cap>span{display:block}
+.cap-t{font:500 1.08rem/1.25 var(--serif)}
+.cap-p{margin-top:.2rem;font-size:.95rem;color:var(--ink2)}
+.cap-m{margin:.4rem 0 0;font-size:.9rem}
+.cap-m small{display:block;font-size:.72rem;color:var(--ink3)}
+.g-cap .src{margin-top:.3rem}
+/* the little Test me link and the next link */
+.g-test{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:.3rem 1rem;font-size:.95rem}
+.g-test a{font-weight:600;text-decoration:underline;text-underline-offset:.22em}
+.g-test span{color:var(--ink3)}
+.g-next{display:block;text-decoration:none;text-align:right}
+.g-next small{display:block;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--champ-d)}
+.g-next b{font:500 1.35rem var(--serif)}
+.g-next:hover b{text-decoration:underline;text-underline-offset:.2em}
+.g-credit{margin:2.4rem 0 1.4rem}
+/* In short */
+.pg-short{list-style:none;margin:0;padding:0}
+.pg-short li{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:.3rem 1.5rem;padding:.9rem 0;border-top:1px solid var(--line)}
+.pg-short .k{color:var(--ink3);padding-top:.25rem}
+.pg-short .f a{font:400 1.3rem/1.35 var(--serif);text-decoration:none}
+.pg-short .f a:hover{text-decoration:underline;text-underline-offset:.2em}
+.pg-short .src{display:block;margin-top:.2rem}
+/* sources */
+.pg-sources{list-style:none;margin:0;padding:0;font-size:.9rem}
+.pg-sources li{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:.2rem 1rem;padding:.55rem 0;border-top:1px solid var(--line);break-inside:avoid}
+.pg-sources a{color:var(--ink2)}
+
+/* fact blocks (the app's own markup) */
+.g-fx .pg-fact{margin:0 0 1.8rem}
+.g-fx .pg-h3{margin:0 0 .6rem;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--champ-d)}
+.g-fx .pg-styles{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.g-fx .pg-styles strong{display:block;font:500 1.3rem var(--serif)}
+.g-fx .pg-styles span{color:var(--ink2)}
+.g-fx .pg-grapes{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;list-style:none;margin:0 0 .5rem;padding:0}
+.g-fx .pg-grapes li{font:500 1.5rem var(--serif)}
+.g-fx .pg-rows{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:.6rem 1.2rem;margin:0 0 1rem}
+.g-fx .pg-rows dt{color:var(--ink3)}
+.g-fx .pg-rows dd{margin:0;overflow-wrap:anywhere}
+.g-fx .pg-chart~p,.g-fx .pg-fact>p{margin:.2rem 0 .3rem;color:var(--ink2)}
+.g-fx .src.short{display:block;margin-top:.3rem}
+.g-fx .pg-rows .src{display:block}
+@media (max-width:30rem){.g-fx .pg-rows{grid-template-columns:1fr;gap:.1rem}.g-fx .pg-rows dd{margin-bottom:.7rem}}

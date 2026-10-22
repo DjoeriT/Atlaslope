@@ -72,7 +72,10 @@ def main():
             photos_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
             time.sleep(1)
     wanted = {f"{pid}-{n}" for pid, items in picks.items() for n in range(1, len(items) + 1)}
-    for key in [k for k in doc["photos"] if k not in wanted]:  # a place that now has fewer picks
+    # only a picked place's own numbered keys beyond its picks: story and tour photos (rioja-sierra-1) are not in the picks file
+    # (22 Oct 2026, PR #205: the old "not wanted" rule deleted 163 of them on a branch push)
+    numbered = re.compile("^(" + "|".join(re.escape(pid) for pid in picks) + r")-\d+$")
+    for key in [k for k in doc["photos"] if numbered.match(k) and k not in wanted]:  # a place that now has fewer picks
         (OUT / f"{key}.webp").unlink(missing_ok=True)
         del doc["photos"][key]
     photos_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")

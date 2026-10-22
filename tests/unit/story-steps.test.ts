@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { guideOf, type Guide } from '../../src/facts';
 import { loadStory, storyIds } from '../../src/story/load';
 import { pickStep, spreadRows } from '../../src/story/camera';
-import { anchorOf, linkIndex, stepOfLink } from '../../src/story/steps';
+import { anchorOf, anchorsOf, linkIndex, stepOfLink } from '../../src/story/steps';
 import type { Story } from '../../src/story/format';
 
 const rioja = loadStory('rioja') as Story;
@@ -14,6 +14,14 @@ describe('tour steps on the guide page', () => {
     expect(rioja.steps.map((st) => anchorOf(guide, st))).toEqual([
       '.pg-spine', '[data-fly="valley.0"]', '[data-fly="valley.1"]', '#terroir-climate',
       '[data-fly="climate.0"]', '[data-fly="climate.1"]', '[data-fly="climate.2"]', '[data-fly="soils.0"]', '#terroir-barrel', '[data-fly="barrel.0"]',
+    ]);
+  });
+
+  it('while reading, a stop comes up at the paragraph that names it, a chapter\u2019s first stop at the chapter start (owner 22 Oct 2026)', () => {
+    expect(anchorsOf(guide, rioja)).toEqual([
+      '.pg-spine', '#terroir-valley', '[data-b="valley.0"]', '#terroir-climate',
+      '.pg-zguide > :has([data-fly="climate.0"])', '.pg-zguide > :has([data-fly="climate.1"])', '.pg-zguide > :has([data-fly="climate.2"])',
+      '#terroir-soils', '#terroir-barrel', '[data-b="barrel.1"]',
     ]);
   });
 

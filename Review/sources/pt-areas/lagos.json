@@ -1,0 +1,42 @@
+{
+ "lagos": {
+  "source": "lagos-doc:att10988",
+  "zones": {
+   "lagos": {
+    "municipalities": [],
+    "parishes": {
+     "Aljezur": [
+      "Aljezur",
+      "Bordeira",
+      "Odeceixe"
+     ],
+     "Vila do Bispo": [
+      "Raposeira",
+      "Sagres",
+      "Vila do Bispo",
+      "Barão de São Miguel",
+      "Budens"
+     ],
+     "Lagos": [
+      "Luz",
+      "Santa Maria",
+      "São Sebastião",
+      "Barão de São João",
+      "Bensafrim",
+      "Odiáxere"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: Aljezur, Bordeira, Odeceixe, Barão de São Miguel, Budens, Barão de São João, Bensafrim, Odiáxere",
+   "CAOP 2025 merged Santa Maria and São Sebastião (Lagos) into São Gonçalo de Lagos"
+  ],
+  "aliases": {
+   "Lagos": {
+    "Santa Maria": "São Gonçalo de Lagos",
+    "São Sebastião": "São Gonçalo de Lagos"
+   }
+  }
+ }
+}

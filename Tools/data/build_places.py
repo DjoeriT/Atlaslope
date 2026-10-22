@@ -13,6 +13,12 @@ LIST = ROOT / "Review/sources/mapa-listado-vinos-2026-07-02.txt"
 # Spanish Wine Scholar chapters, in course order (Review/reviews/2026-10-16-taxonomy-check.md); islands split in two for the legend.
 COURSE = ["green-spain", "castilla-y-leon", "rioja", "ebro", "cataluna", "mediterranean", "meseta", "andalucia", "baleares", "canarias"]
 
+# Full chapter names where the short one shows (owner, 18 Oct 2026, "What's with the commas"); search still finds the full one.
+CHAPTERS = {"meseta": "Meseta: Castilla-La Mancha, Madrid, Extremadura"}
+
+# EU file numbers the ministry list gets wrong, corrected by hand when the guide was written (Mediterranean guides, 79ac795).
+EU_FILES = {"tharsys": "PDO-ES-02980"}
+
 # Study region for places that have no polygon in the 2014 layer (from dop-overrides.json "missing"), by EU file number.
 # Kept out of the quiz pool (taxonomy check, finding 6 of the plan review): Cava and the generic Catalunya DO (they overlap
 # other DOs), the all-islands Islas Canarias VC and every Vino de Pago. Urbezo, a single estate the ministry lists as DO, is quizzed (owner, 16 Oct 2026).
@@ -75,6 +81,58 @@ def centroid(geom):
     return best
 
 
+# Portugal (issue #149, pilot): places are added one by one as their outline lands (Tools/data/build_pt_areas.py), from the EU
+# register (data/countries/pt/register.json). Study groups follow the WSET Level 3 spec's Portugal list [A: grouped by the
+# north-to-south order of the CVR regions]; Study for Portugal waits for its course, so the places are not quizzed yet.
+PT_GROUPS = [("pt-north", "North"), ("pt-centre", "Centre"), ("pt-lisboa", "Lisboa"), ("pt-tejo", "Tejo"),
+             ("pt-setubal", "Setúbal Peninsula"), ("pt-alentejo", "Alentejo"), ("pt-algarve", "Algarve"), ("pt-madeira", "Madeira")]
+PT_PLACES = [  # mainland PDOs plus Lisboa, a PGI (Vinho Regional) that WSET names; batch 1, owner option B, 22 Oct 2026
+    ("douro", "PDO-PT-A1539", "pt-north"),
+    ("vinho-verde", "PDO-PT-A1545", "pt-north"),
+    ("porto", "PDO-PT-A1540", "pt-north"),
+    ("tras-os-montes", "PDO-PT-A1466", "pt-north"),
+    ("tavora-varosa", "PDO-PT-A1541", "pt-north"),
+    ("dao", "PDO-PT-A1534", "pt-centre"),
+    ("bairrada", "PDO-PT-A1537", "pt-centre"),
+    ("beira-interior", "PDO-PT-A1546", "pt-centre"),
+    ("lafoes", "PDO-PT-A1455", "pt-centre"),
+    ("encostas-daire", "PDO-PT-A1470", "pt-centre"),
+    ("lisboa", "PGI-PT-A1535", "pt-lisboa"),
+    ("colares", "PDO-PT-A1461", "pt-lisboa"),
+    ("carcavelos", "PDO-PT-A1462", "pt-lisboa"),
+    ("bucelas", "PDO-PT-A1463", "pt-lisboa"),
+    ("torres-vedras", "PDO-PT-A1465", "pt-lisboa"),
+    ("alenquer", "PDO-PT-A1468", "pt-lisboa"),
+    ("obidos", "PDO-PT-A1469", "pt-lisboa"),
+    ("arruda", "PDO-PT-A1471", "pt-lisboa"),
+    ("dotejo", "PDO-PT-A1544", "pt-tejo"),
+    ("setubal", "PDO-PT-A1457", "pt-setubal"),
+    ("palmela", "PDO-PT-A1460", "pt-setubal"),
+    ("alentejo", "PDO-PT-A1542", "pt-alentejo"),
+    ("lagos", "PDO-PT-A1454", "pt-algarve"),
+    ("portimao", "PDO-PT-A1452", "pt-algarve"),
+    ("lagoa", "PDO-PT-A1450", "pt-algarve"),
+    ("tavira", "PDO-PT-A1449", "pt-algarve"),
+    ("madeira", "PDO-PT-A0038", "pt-madeira"),  # owner, 22 Oct 2026: add Madeira and Madeirense
+    ("madeirense", "PDO-PT-A0039", "pt-madeira"),
+]
+PT_QUIZ_NOTE = "Study covers Spain for now; Portugal joins when its WSET course is in Study."
+
+
+def portugal_places():
+    reg = {e["fileNumber"]: e for e in json.loads((ROOT / "data/countries/pt/register.json").read_text())["entries"]}
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/pt/areas.geojson").read_text())["features"]}
+    out = []
+    for pid, file, region in PT_PLACES:
+        name = reg[file]["names"][0]
+        out.append({"id": pid, "name": name, "official": name, "kind": "VR" if file.startswith("PGI") else "DOC", "level": "place", "parent": "portugal",
+                    "region": region, "euFile": file, "layerCode": None, "boundary": "added",
+                    "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": PT_QUIZ_NOTE})
+    located = sorted(out, key=lambda p: -p["centroid"][1])
+    for i, p in enumerate(located, 1): p["northSouth"], p["courseOrder"] = i, i
+    return out
+
+
 def main():
     layer = json.loads((ROOT / "data/dops.geojson").read_text())
     over = json.loads((ROOT / "data/dop-overrides.json").read_text())
@@ -101,6 +159,7 @@ def main():
                  "layerCode": hit["code"] if hit else None,
                  "boundary": "mapa-2014" if hit else "to-fetch", "centroid": hit["centroid"] if hit else None, "quiz": quiz}
         if not hit and pid in added: place["boundary"], place["centroid"] = "added", added[pid]
+        if pid in EU_FILES: place["euFile"] = EU_FILES[pid]
         if pid in ALSO_WITHIN: place["alsoWithin"] = ALSO_WITHIN[pid]
         if r["euFile"] in NOT_QUIZZED: place["quizNote"] = NOT_QUIZZED[r["euFile"]]
         if r["euFile"] in QUIZ_NOTES: place["quizNote"] = QUIZ_NOTES[r["euFile"]]
@@ -119,14 +178,20 @@ def main():
     def key(p): return (COURSE.index(p["region"]), p.get("northSouth", 10_000), p["name"])
     for i, p in enumerate(sorted((p for p in places if p["level"] == "place"), key=key), 1): p["courseOrder"] = i
 
+    places += portugal_places()
+
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
     doc = {
         "$comment": "The place tree. Ids are stable (decision #41); home parent plus alsoWithin overlaps (#42). Study regions are a course grouping over the tree. Built by Tools/data/build_places.py; sources in data/SOURCES.md.",
         "version": 1,
-        "countries": [{"id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"]}],
+        "countries": [{"id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"]},
+                      {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
-                     "groups": [{"id": g, "name": over["regions"][g], "order": i + 1} for i, g in enumerate(COURSE)]}],
+                     "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
+                                for i, g in enumerate(COURSE)]},
+                    {"id": "wset-pt", "name": "WSET", "country": "portugal",
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(PT_GROUPS)]}],
         "places": places,
     }
     out = ROOT / "data/places.json"

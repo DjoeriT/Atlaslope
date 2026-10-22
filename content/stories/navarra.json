@@ -1,0 +1,79 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (map tours batch 3, 22 Oct 2026). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from. Points are the IGN place names of data/story/names-navarra.geojson or the river's own line.",
+ "id": "navarra",
+ "cover": {
+  "photo": "navarra-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {"center": [-1.75, 42.4], "zoom": 8.2, "pitch": 0, "bearing": 0},
+   "focus": "navarra",
+   "chip": "Navarra in the north of Spain"
+  },
+  {
+   "id": "zones",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {"place": "navarra", "pitch": 45, "bearing": 0, "zoomShift": 0.1},
+   "focus": "navarra",
+   "photo": "navarra-2",
+   "facts": [
+    {"at": [-1.7, 42.8], "label": "Baja Montaña", "text": "Baja Montaña lies in the north.", "cite": ["navarra-pliego:p5", "navarra-pliego:p9"]},
+    {"at": [-1.6, 42.1], "label": "Ribera Baja", "text": "Ribera Baja takes the far south.", "cite": ["navarra-pliego:p5", "navarra-pliego:p9"]}
+   ]
+  },
+  {
+   "id": "tudela",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {"center": [-1.5954, 42.1321], "zoom": 11.6, "pitch": 55, "bearing": 20},
+   "focus": "navarra",
+   "dot": false,
+   "photo": "navarra-tudela-1",
+   "facts": [
+    {"at": "Tudela", "label": "The Ebro", "text": "Ribera Baja takes the far south. Most of it lies on the right bank of the Ebro.", "cite": ["navarra-pliego:p9"]},
+    {"at": "Cascante", "label": "Cascante", "text": "Finds at places such as Funes and Cascante show that the Romans made wine on an industrial scale between the 1st and 5th centuries AD.", "cite": ["navarra-pliego:p6", "navarra-pliego:p9", "navarra-pliego:p10"]}
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {"place": "navarra", "pitch": 45, "bearing": 0, "zoomShift": -0.1},
+   "focus": "navarra",
+   "layers": ["koppen"],
+   "photo": "navarra-urbasa-1",
+   "facts": [
+    {"at": [-2.1267, 42.8314], "label": "Sierra de Urbasa", "text": "With Andía, it filters the Atlantic air before it reaches Tierra Estella.", "cite": ["navarra-pliego:p9"]},
+    {"at": "Tudela", "label": "Ribera Baja", "text": "Ribera Baja has the most arid climate of all.", "cite": ["navarra-pliego:p8", "navarra-pliego:p9"]}
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {"center": [-2.1691, 42.6497], "zoom": 11.8, "pitch": 60, "bearing": 340},
+   "focus": "navarra",
+   "layers": ["geology"],
+   "photo": "navarra-ega-1",
+   "measure": {"place": "navarra", "kind": "median"},
+   "facts": [
+    {"at": [-2.1691, 42.6497], "label": "The Ega", "text": "In Tierra Estella the rocks are mostly marls with layers of sandstone, plus river terraces along the Ega and the Odrón.", "cite": ["navarra-pliego:p7", "navarra-pliego:p8", "navarra-pliego:p9", "navarra-pliego:p11"]}
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {"place": "navarra", "pitch": 0, "bearing": 0},
+   "focus": "navarra",
+   "photo": "navarra-3",
+   "chip": "From rosado to Moscatel de licor"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Navarra."
+ }
+}

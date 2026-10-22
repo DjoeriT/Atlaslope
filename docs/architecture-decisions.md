@@ -86,7 +86,7 @@ Nothing paid. Any new service is a question to the owner first (repo rule).
 - **#35 [O] 10:41-10:46Z, product and usability**: link-only visibility before v1 (noindex, robots.txt); shareable URLs that carry the place and map view; English only; friends at v1. Quiz: right answers move on after one second, misses wait with the why line; find-it counts a tap within about 44 px outside the boundary; one "That was a slip" undo per miss; quiz map flat and north up, Explore tilted 3D.
 - **#36 [O] 10:46Z Offline**: a service worker caches the app shell, bundled data, fonts and atlas base so everything but satellite and terrain works offline. Playwright runs one offline test.
 - **#37 [O] 10:47-10:51Z, content**: zones in v1 = Rioja's three only; the fact question asks main grapes, styles, level and climate only; grape names shown "local (main)" with search on both; guides 600 to 800 words in the Rioja mock's voice; up to three open-licence photos per place (Wikimedia, credited, in SOURCES.md, online only, Claude picks, owner swaps); "Report a mistake" opens a prefilled email to an address the owner names; a yearly data check issue.
-- **#38 [O] 10:50-10:51Z, platform**: browsers from the last two years, iPadOS 17+, tested on Safari and Chrome; map usable in 3 s on home Wi-Fi, build check fails above about 2 MB download (satellite and photos excluded); Dependabot monthly grouped PRs, security at once, merged by a thread on green CI. House rules [A]: strict TypeScript, format and lint in CI, PR per change with ReviewBot.
+- **#38 [O] 10:50-10:51Z, platform**: browsers from the last two years, iPadOS 17+, tested on Safari and Chrome; map usable in 3 s on home Wi-Fi, build check fails above about 2 MB download (satellite and photos excluded; owner 22 Oct 2026: it counts the first load, so each guide loads with its own page from `dist/guide-data/` and is left out like the map tours, after Portugal took the whole-site total to 2.13 MB, PR #214); Dependabot monthly grouped PRs, security at once, merged by a thread on green CI. House rules [A]: strict TypeScript, format and lint in CI, PR per change with ReviewBot.
 - **#39 [O] 10:53Z**: the interface is built with React on Vite and TypeScript; MapLibre is driven directly, not through a wrapper; the quiz engine and place tree stay plain TypeScript with no React in them.
 - **#40 [O] 10:52-10:54Z, operations**: Sentry (EU, free, no personal data, no replay) for errors from release 3; PostHog EU cloud (free, cookieless) for usage from release 4; privacy note in About. Running cost up to €100 a year including the domain; a release 50% over its token estimate pauses and asks. Next country: decided later (France is Claude's pick).
 
@@ -108,3 +108,35 @@ Defaults set because they are costly or impossible to change once progress, link
 - **#40 timing**: superseded by #46; Sentry and PostHog arrive in release 8.
 - **#46 status (18 Oct 2026)**: release 8 shipped the new look instead; Sentry, PostHog and the privacy note are still not built [V]. Owner cards, 18 Oct 15:30Z: neither Sentry nor PostHog yet, revisit just before friends get the link; the privacy note stays internal (`docs/privacy.md`) until then; photo credits link their licence and say "resized", and the owner's writing stays all rights reserved.
 - **Still open, domain**: closed. atlaslope.com is bought (owner, 12:19Z).
+
+## Second country: Portugal (owner, 22 Oct 2026, issue #149, option B)
+- **#48 Country in the URL**: Portugal places get real pages at `/pt/<place>/` (e.g. `/pt/douro/`), built as files for GitHub Pages; home gets a country choice. Spain keeps `atlas/#place=<id>` for now and moves to `/es/<place>/` in its own slice, with redirects from the old hash links. Owner chose this over "hash now, paths later" (22 Oct 2026). [O]
+- **#49 Courses per country**: Portugal shows the WSET filter only; Wine Scholar Guild has no Portugal course, so its filter is hidden there. [O]
+- **#50 Imagery per country**: Portugal close-in uses DGT OrtoSat 30 cm with Esri as fallback, if a speed test passes; otherwise Esri only. Spain keeps PNOA. [O]
+- **#51 Port and Madeira**: each is its own place, using the overlap rule (#42) over Douro and Madeirense. [O]
+- Taken on the report's recommendation, reversible [A]: zones built from CAOP parish lists in each spec (as for Rioja); writers read Portuguese sources and write English; Madeira and Açores after the mainland. Source: `Review/portugal/report-first-principles.md` section 6.
+
+## Third country: France (owner, 22 Oct 2026, issue #149; plan `Review/countries/france-plan.md`)
+- **#52 France timing**: the France pilot starts after Portugal's mainland is done and #205 is merged. [O]
+- **#53 France scope**: the WSET L3 list first, region by region; the other PDOs later, each region on its own word. [O] Kept 22 Oct 2026
+  after the prep count: 108 WSET names, about 96 of them appellations (~72M at 0.75M a guide); all 366 PDOs plus 2 WSET-named PGIs under
+  Portugal's per-country rule would be 368 guides (~276M), or ~286 (~215M) with Grand Crus as zones (`Review/countries/france-prep/`). [O]
+- **#54 France pilot**: Chablis and Pauillac, pages at `/fr/<place>/` (#48). [O]
+- **#55 Climats as zones**: Grand and Premier Cru climats are drawn as zones inside their village AOP, from the pilot on. [O]
+- **#56 Bordeaux classifications**: a text list in the guide, no map layer (they rank châteaux, not land). [O]
+- **#57 France licences**: INAO re-use terms read and a BRGM email drafted for the owner to send, before the pilot ships. [O]
+- **#58 France outlines "for information"**: said in the credits line; INAO's plans portal is the only binding map. [O]
+
+## Fourth country: Italy (owner, 22 Oct 2026, issue #149; plan `Review/countries/italy-plan.md`)
+- **#59 Italy timing**: the Italy pilot runs right after the France pilot is merged, before France's regions; then both scale. [O]
+- **#60 Italy scope**: the WSET L3 list, about 40 places, region by region; not all DOCG, not all 411. [O]
+- **#61 Italy pilot**: Barolo and Chianti Classico, pages at `/it/<place>/` (#48). [O]
+- **#62 Italy outlines**: official where a region publishes one (Piemonte, maybe Bolzano); else the disciplinare's municipality list plus ISTAT, marked "approximate" in the credits line. [O]
+- **#63 Italian sub-zones**: Barolo MGA, Chianti Classico UGA and the like are zones inside their appellation where an outline exists (as #55); else a text list. [O]
+- **#64 Umbrella names**: Toscana, Sicilia, Puglia, Terre Siciliane, Delle Venezie are named in their region's text, with no place of their own. [O]
+- **#65 Cross-region appellations**: home parent is the region with most of the area, "also within" the other (#42). [O]
+- **#66 Italy map layers**: Esri imagery, TINITALY terrain, no geology in the pilot; LeadBot drafts an ISPRA licence email the owner sends. [O]
+- **#67 Chianti Classico outline**: traced in the pilot from the disciplinare's UGA annex (Allegato 3), which names the places inside the five partial municipalities; the same work gives the UGA zones (#63). The municipality outline (+33%) is not shipped. [O]
+- **#68 Italian families**: Valpolicella (with Classico, Ripasso, Amarone, Recioto) and Soave (with Classico, Recioto di Soave) are one place each, their styles inside the guide; 30 Italian places. [O]
+- **#69 Italy first wave** (amends #60): the 30 WSET L3 places (#68) plus every other DOCG, about 55-65 more [A], region by region, each region on the owner's word. The DOCG count comes from MASAF's official DOCG list, not the EU texts (a script on those, 22 Oct 2026, mislabels some DOCs and misses some DOCGs). A DOCG "Superiore" or "Riserva" of a DOC folds into one place with styles (as #68). The other DOCs and the IGTs come later, each on his word. [O]
+- **#70 Italy order** (amends #69, same day): the 30 WSET L3 places first, region by region; the other DOCGs (about 55-65 [A]) are a second wave after them, each region on the owner's word. [O]

@@ -27,7 +27,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   went unanswered three times).
 
 ## Token budget (owner 19 Oct 2026, after a 5h limit and weekly warning; audit: 485M tokens in 10 sessions, 97% re-reads)
-- Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 150K context (owner 19 Oct 2026, raised from 80K),
+- Keep sessions short: one slice, mock round or region per session; hand off (write `docs/handoffs/<date>-<topic>.md`) around 250K context (owner 21 Oct 2026, raised from 150K; 19 Oct from 80K),
   before building or merging, not after. Aim under 300K spend for a small slice. Subagents are one-shot from a fixed script with packed inputs
   and reply only with result, blocker or question (10-20 lines).
 - Proactive: before big work give a one-line token estimate and flag cheaper routes first. Above ~20M estimated tokens, wait for his word.
@@ -43,14 +43,21 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - Batch small asks into the main thread unless he says urgent. Past ~60K before a long wait, write the handoff first.
 - Loops are scripts, not chat (19 Oct, Mediterranean prep agent: 14.5M over 107 calls): fetching and per-unit runs happen in a script that
   writes results to files; the session reads a short summary. Quiet commands (`git pull -q`, no full logs): a plain pull put 244 KB in context.
-- Say when the session passes ~150K and what is left, so the owner can move the rest to a fresh session.
+- Say when the session passes ~250K and what is left, so the owner can move the rest to a fresh session.
 
 ## Working agreements
 - **Outward actions only on his say-so:** publishing, deploying, paid or networked services, anything outsiders see. Standing exceptions: push
   your own `claude/...` branch, one PR per slice, merge on green CI (and after ReviewBot has reported, where it runs). Never push `main`, force-push, rebase pushed history, push to someone
   else's branch, or move or delete a tag. A refused push means stop and tell him.
+- **Auto-merge and Auto-fix on every slice PR** (owner, 22 Oct 2026, after he pressed "check and merge" six times for #209 and #210):
+  right after opening your own `claude/...` PR, turn on GitHub auto-merge (merge commit, never squash or rebase) and the app's Auto-fix,
+  so green CI merges it and a failure, conflict or comment wakes you; no "check CI" buttons. Where ReviewBot runs, turn auto-merge on
+  only after it has reported. A run that hangs (no failure) is reported to him; a second hang on the same step gets an issue.
 - **Release route:** after merge, ask in one line. Only his typed words "publish release N" start the `publish` workflow, also for a
   rollback. N is the next whole number only; hold other merges until it is tagged. Skill: `.claude/skills/release/SKILL.md`.
+- **One worktree per session** (22 Oct 2026: two sessions shared the main checkout; the country-model session committed onto the
+  map-bar branch, and a push carried its commit into the wrong PR): every session, the main one too, works in its own git worktree
+  from its first step; nobody commits in the main folder, which stays on `main` for reading and previews. A local hook refuses it.
 - **Git:** PR per slice on a `claude/` branch; merge `main` in, never rebase. The slice PR holds the handoff and tester note (no records
   PR after it). Push when the PR can stand alone, not in bursts. A handoff is pushed before the session ends (19 Oct: the Guides
   mock handoff sat on an unpushed local branch). Archive, never delete (`Review/archive/`). `release-N` tags mark what is live; keep no "live on release-N" line anywhere. Backlog = GitHub Issues

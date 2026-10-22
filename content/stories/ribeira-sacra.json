@@ -1,0 +1,222 @@
+{
+ "$comment": "Design choice, not fact: every camera value (center, zoom, pitch, bearing, zoomShift) and every layer was picked to prove the sentence the stop sits by (22 Oct 2026, map tour pilot). Facts: text is a sentence of the guide, or a tightened form of one; cite is from the cite list of the guide chapter or fly it comes from.",
+ "id": "ribeira-sacra",
+ "cover": {
+  "photo": "ribeira-sacra-1"
+ },
+ "steps": [
+  {
+   "id": "intro",
+   "chapter": null,
+   "camera": {
+    "center": [
+     -7.5,
+     42.52
+    ],
+    "zoom": 8.2,
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "ribeira-sacra",
+   "chip": "Ribeira Sacra in Galicia"
+  },
+  {
+   "id": "canyons",
+   "chapter": "place",
+   "fly": 0,
+   "camera": {
+    "place": "ribeira-sacra",
+    "pitch": 58,
+    "bearing": 20,
+    "zoomShift": -0.1
+   },
+   "focus": "ribeira-sacra",
+   "photo": "ribeira-sacra-2",
+   "measure": {
+    "place": "ribeira-sacra",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Portomarín",
+     "label": "Portomarín",
+     "text": "It follows the banks of the Miño and the Sil, from Portomarín to A Peroxa and from Os Peares to Quiroga.",
+     "cite": [
+      "ribeira-sacra-pliego:p8",
+      "ribeira-sacra-pliego:p11"
+     ]
+    },
+    {
+     "at": "Chantada",
+     "label": "Chantada",
+     "text": "The land forces the vines onto terraces.",
+     "cite": [
+      "ribeira-sacra-pliego:p8",
+      "ribeira-sacra-pliego:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canon",
+   "chapter": "place",
+   "fly": 1,
+   "camera": {
+    "center": [
+     -7.5642,
+     42.3905
+    ],
+    "zoom": 11.6,
+    "pitch": 66,
+    "bearing": 300
+   },
+   "focus": "ribeira-sacra",
+   "dot": false,
+   "photo": "ribeira-sacra-canon-1",
+   "measure": {
+    "place": "ribeira-sacra",
+    "kind": "low"
+   },
+   "facts": [
+    {
+     "at": [
+      -7.5642,
+      42.3905
+     ],
+     "label": "Canón do Sil",
+     "text": "The Miño and the Sil run through steep gorges to where they meet.",
+     "cite": [
+      "ribeira-sacra-pliego:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "peares",
+   "chapter": "place",
+   "fly": 2,
+   "camera": {
+    "center": [
+     -7.7311,
+     42.4548
+    ],
+    "zoom": 11.6,
+    "pitch": 60,
+    "bearing": 60
+   },
+   "focus": "ribeira-sacra",
+   "photo": "ribeira-sacra-peares-1",
+   "facts": [
+    {
+     "at": "Os Peares",
+     "label": "Os Peares",
+     "text": "The zone runs along the Sil from Os Peares to Quiroga.",
+     "cite": [
+      "ribeira-sacra-pliego:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "chapter": "weather",
+   "fly": 0,
+   "camera": {
+    "place": "ribeira-sacra",
+    "pitch": 45,
+    "bearing": 0,
+    "zoomShift": -0.2
+   },
+   "focus": "ribeira-sacra",
+   "layers": [
+    "koppen"
+   ],
+   "photo": "ribeira-sacra-weather-1",
+   "measure": {
+    "place": "ribeira-sacra",
+    "kind": "median"
+   },
+   "facts": [
+    {
+     "at": [
+      -7.5226,
+      42.5257
+     ],
+     "label": "Ribeira Sacra",
+     "text": "In general it is more continental than Atlantic, with long, hot summers and mild autumns.",
+     "cite": [
+      "ribeira-sacra-pliego:p11",
+      "ribeira-sacra-pliego:p12"
+     ]
+    },
+    {
+     "at": "Chantada",
+     "label": "Miño subzones",
+     "text": "The Miño subzones get more rain than the Sil valley.",
+     "cite": [
+      "ribeira-sacra-pliego:p11",
+      "ribeira-sacra-pliego:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "chapter": "ground",
+   "fly": 0,
+   "camera": {
+    "center": [
+     -7.5159,
+     42.3992
+    ],
+    "zoom": 11.8,
+    "pitch": 68,
+    "bearing": 340
+   },
+   "focus": "ribeira-sacra",
+   "layers": [
+    "geology"
+   ],
+   "photo": "ribeira-sacra-amandi-1",
+   "measure": {
+    "place": "ribeira-sacra",
+    "kind": "steep"
+   },
+   "facts": [
+    {
+     "at": "Amandi",
+     "label": "Amandi",
+     "text": "In Amandi and the rest of the Ribeira do Sil, they follow the type of eastern Galicia.",
+     "cite": [
+      "ribeira-sacra-pliego:p12",
+      "ribeira-sacra-pliego:p15"
+     ]
+    },
+    {
+     "at": "Chantada",
+     "label": "Chantada",
+     "text": "In Chantada the soils look more like the granite soils of western Galicia.",
+     "cite": [
+      "ribeira-sacra-pliego:p12",
+      "ribeira-sacra-pliego:p15"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "chapter": "rules",
+   "camera": {
+    "place": "ribeira-sacra",
+    "pitch": 0,
+    "bearing": 0
+   },
+   "focus": "ribeira-sacra",
+   "chip": "Ribeira Sacra"
+  }
+ ],
+ "end": {
+  "kicker": "You reached the end",
+  "text": "That is Ribeira Sacra."
+ }
+}

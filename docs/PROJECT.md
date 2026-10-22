@@ -21,7 +21,15 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations; photos may be cropped to their
   frames, never cutting a face, glass or bottle (Guides page cards: square crops, each checked, release 55). Detail: `Review/visual-style.md`.
 
-## Current state (21 Oct 2026)
+## Current state (22 Oct 2026)
+- Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
+  (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
+  the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries
+  session; also grouped photo credits #196); 68 map bar B: only the stop name on top, keys at the foot, terrain height behind the "i" (#199).
+- Release 62 (PR #175): map tour fixes (each stop by its own link, phone strip 300 px, geology at zoom 10+, English rock key).
+  Release 63: 404 page and credit fix (#177), speed wins (#179: terrain at 512 px tiles, relief from zoom 7, tours from 6, one fetch
+  per data file); also merged: faster builder loop (#176), register watch script (#178, local only). Learn start card is on
+  `claude/study-course` (not merged). Agenda and briefs: `docs/handoffs/2026-10-21-agenda-after-62.md`.
 - Release 59 (PR #171): map tours for Rioja and Priorat (#127, first part of #148): scroll the guide, the app map flies to each stop
   named in its text; IGN rivers and names, Köppen climate, IGME geology, slope tint, fact markers; listing page and home tile. Also in it:
   #169 BSk "cool, dry steppe", #170 slope measure for every place. Release 60 (PR #172): renamed "Map tours", search in the top bar of every page, tour code and data load on demand with their own
@@ -69,9 +77,19 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   drifting satellite still, layout A: the same guide page with a map column; "Show on map" stays on guides without a tour), out of the
   top bar, listed at guides/#map-tours (map-tours/ and read-with-the-map/ redirect there); tour data has its own download limit (150 KB per tour) and the main site
   keeps 2 MB (incident: PR #171 went to 2.24 MB); search in the top bar of every page at all times.
+- 21 Oct, later (owner; detail in `docs/handoffs/2026-10-21-agenda-after-62.md`): tours stay hand-made, no default-tour generator.
+  Map tour: B and a clean-slate round 1 (`Review/mock-tour-clean/`) dropped the same evening; the v3 journey comes back exactly,
+  full-screen, opened from a big photo button at the top of the guide, a photo in every stop card (`docs/handoffs/2026-10-21-tour-v3-restore.md`). "Study" becomes "Learn" (lands with the Learn PR). Learn:
+  one course setting that filters everything, default all of Spain, Cava and Catalunya in without the map question, WSET Level 2 ·
+  Spain pilot next. Launch: wine lovers first (reverses 17 Oct), quiet launch, then testers, noindex until the public step, tip link.
+  Speed: page shell, then a service worker; no CDN. Guides current: "Checked on" plus source dates, pilot on 3 places.
+- Atlas cover (owner 22 Oct 2026, option E1): clicking Atlas opens a cover card ("See where your wine comes from": map-tour and slopes loops, borders, climate and guide stills, the countries) before any country. The empty hash is the cover; Spain's card is `#country=spain`. Media: `Tools/atlas/cover_media.mjs` into `public/atlas/`.
+  Size check (owner, 22 Oct 2026, option A): video (.webm, .mp4) is left out of the 2 MB download check like photos; the cover's two clips are ~1 MB and load only with the cover. Without them the atlas is 1.96 MB: about 40 KB of room left.
+  Guides on demand (owner, 22 Oct 2026, PR #214): each guide is its own chunk under `dist/guide-data/`, loaded with its page or fly-there, and left out of the check like `dist/story/`. Incident: Portugal took the whole site to 2.13 MB. First load after: 1.93 MB; the 137 guides are 0.29 MB more, fetched one at a time.
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
+- Countries data pull (22 Oct 2026, #149) [V]: 10.1M re-read + 0.3M new against 3-6M estimated; ~70 calls at ~140K context. A local session's base context is ~140K, not 100K: estimate calls x 140K, and run probes and checks in one script, not one call each.
 - 17 Oct: 11 sessions cost $143 for releases 6-15; ~60% was sessions re-reading their own history (428M cached reads); agents were under 1% [V].
 - 19 Oct audit: 485M tokens over 10 sessions, 97% re-reads [V].
 - Guide cost per place [V]: Andalucía 2.6M; Cataluña ~3.1M all-in (12 guides ~37M, write step 20.1M vs 5-8M estimated); packs ~25K.
@@ -86,19 +104,27 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - A second Opus check finds ~7 misses per guide (patterns in `Tools/guides/CHECKER.md`). Pair agents ran long: re-read per guide 3x Baleares.
 
 ## Map tours (renamed from "Read with the map" 21 Oct 2026; part of the guide page, listed at guides/#map-tours)
-Live for Rioja and Priorat since release 59 (built from `Review/mock-story-guide-v3/`; hand-off `docs/handoffs/2026-10-21-story-guide-build.md`,
-format in `docs/guides.md` "Story files"). 11 guides of the 13 left; brief for that session is in the hand-off `2026-10-21-map-tours.md`.
+Live for 15 guides since release 65 (Rioja and Priorat since 59), opened from the guide's "Read with the map" card, which unfolds into the
+full-screen v3/v4 map mode (release 64). Format in `docs/guides.md` "Story files". A stop comes up at the paragraph that names it; flights 1.5-2.5 s (owner 22 Oct).
 Owner 21 Oct 2026: a prominent "Read with the map" button (renamed: guide button "Map tour", then folded into the guide page, same day); map stops only from the guide text; first PR Rioja plus Priorat. Which guides
 get it (#148; story data has its own download limit, owner 21 Oct 2026, plan in `docs/handoffs/2026-10-21-story-guide-build.md`): at least 4 map stops, and either big (a DOCa or top 8 by vineyard area, MAPA DOP
-report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides.
+report 2023/2024) or steep (top quarter of the 96 places by share of land over 30% slope, `place-measures.json`). Result 13 guides (list never written down).
+**Rule A (owner 22 Oct 2026, replaces the above):** at least 4 fly stops in the guide's own text, and the land shows from above: steep (top quarter by
+share over 30%), or at least 500 m between p10 and p90 altitude, or two Köppen classes of at least 20% each, or big (DOCa or top 8 by area: La Mancha,
+Rioja, Ribera del Guadiana, Cava, Catalunya, Utiel-Requena, Ribera del Duero, Jumilla, MAPA 2023/24 p. 15). Result 14: Rioja, Priorat, Ribeira Sacra,
+Alicante, Campo de Borja, Cangas, Costers del Segre, Monterrei, Navarra, Somontano, Txakoli Getaria, Txakoli Bizkaia, Txakoli Álava, Valdeorras;
+plus Ribera del Duero as the owner's own pick (2 fly stops). The rule is meant for every country (owner, 22 Oct 2026): "big" = the country's top
+tier (Spain DOCa; e.g. Italy DOCG, Portugal its top DOCs [A]) or its top 8 by vineyard area from the national official register; steep, altitude and
+climate come from `place-measures.json` and rank within that country's places. Pilots measured 22 Oct 2026: Ribeira Sacra 97K, Ribera del Duero 117K helper tokens.
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)
 Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his: #146 full QA sweep; #147 Study plan; #148 fly-over for
 selected guides; #149 more countries (Portugal or France first); #150 guide enrichment; #151 code and backend setup; #152 performance
 (#149, #151, #152 hang together). Guides page leftovers (handoff `2026-10-19-guides-page-build.md`): Canarias tile mostly sea, Rioja
-tile dark fill, Green Spain neighbour outlines, long phone page.
-Order set by the owner 20 Oct 2026: #83 flaky Study tests (done 20 Oct), then #126, then #127 with #148 as one big slice (Rioja and Priorat
-live in release 59; the other 11 map tours next). Priority labels set 19 Oct 2026 (cleanup). Next: the other 11 map tours (#148); #126 repetitive "If you like this, try" cards
+tile dark fill, Green Spain neighbour outlines, long phone page (all gone with Guides page E, release 66).
+Order set by the owner 20 Oct 2026: #83 flaky Study tests (done 20 Oct), then #126, then #127 with #148 (done 22 Oct: 15 map tours, releases
+64-65). Open from 22 Oct: #188 Priorat stop 6 never settles in shots-tour; flaky tests #190 (9-stop story test, made slow) and #193 (cards
+zoom poll); Koppen tint needs a land cut (it only fades). Priority labels set 19 Oct 2026 (cleanup). Next: #126 repetitive "If you like this, try" cards
 ("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
 outlines (Urbezo done, 12 left); #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
 (React 19, MapLibre 6, Vite 8, TS 7, Vitest 5); #106 cause-to-taste chain; #103 enrich guides from more sources; #101 travel flags; #108
@@ -110,8 +136,11 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
-- A first-principles review of the live Rioja and Priorat map tours before the other 11 (recommended 21 Oct 2026, not yet answered);
+- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Next countries: Portugal, then France (owner, 22 Oct 2026; France plan `Review/countries/france-plan.md`, decisions #52-#58, pilot waits for Portugal's mainland and #205); Italy pilot right after the France pilot (owner, 22 Oct 2026; plan `Review/countries/italy-plan.md`, decisions #59-#66).
+- Portugal pilot (22 Oct 2026): Douro and Vinho Verde have outlines, sheets and guides at `/pt/<id>/`; Home and Guides stay Spain-only until the owner picks a mock option (`docs/handoffs/2026-10-22-portugal-pilot.md`). Guides 0.75M each [V]; the session around them 18.9M re-read, mostly building the tooling.
+- Learn: rename "Study region" and "The wine study atlas"?
+- From 22 Oct: Raimat (Costers del Segre) "far east" per the pliego while the map shows west, add a note? Cangas rock key shows "Sandstones and
+  slates" twice (two colours, one unit). Guides page: bring back "More regions are being written"? Map tour chip text is about 10.5 px on a phone.
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
 - Offered, unanswered: "no handoff when 5 or fewer turns remain".
 - Website slice 3 and Google indexing: go or wait.

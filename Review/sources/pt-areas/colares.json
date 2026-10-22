@@ -1,0 +1,25 @@
+{
+ "colares": {
+  "source": "colares-doc:p4",
+  "zones": {
+   "colares": {
+    "municipalities": [],
+    "parishes": {
+     "Sintra": [
+      "Colares",
+      "São Martinho",
+      "São João das Lampas"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Sao Martinho (Sintra) sits inside the CAOP 2025 union Sintra (Santa Maria e Sao Miguel, Sao Martinho e Sao Pedro de Penaferrim); the union is mapped, so the outline overstates the area"
+  ],
+  "aliases": {
+   "Sintra": {
+    "São Martinho": "União das freguesias de Sintra (Santa Maria e São Miguel, São Martinho e São Pedro de Penaferrim)"
+   }
+  }
+ }
+}

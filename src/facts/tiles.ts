@@ -12,7 +12,8 @@ interface TilesFile {
 
 const tiles = tilesFile as unknown as TilesFile;
 
-export const spainLine = (): TileLine => tiles.spain;
+/** A country's line sits at the top level of the file under its id ("spain"). */
+export const countryLine = (id: string): TileLine | undefined => (tiles as unknown as Record<string, TileLine | undefined>)[id];
 export const regionLine = (id: string): TileLine | undefined => tiles.regions[id];
 export const placeLine = (id: string): TileLine | undefined => tiles.places[id];
 export const tilesContent = tiles;
