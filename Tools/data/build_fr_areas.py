@@ -8,14 +8,17 @@ communes, km2). The shipped places (FR_SHIP) and their zones are copied into dat
 Every place in data/countries/fr/wset-places.json (Tools/countries/fr_wset.py, decision #53) that the spec does not name is
 added as a plain place with its INAO app/denom; the spec's own entries (zones, notes) win.
 
-Run: python3 Tools/data/build_fr_areas.py   (needs data/raw/countries/fr/inao-delim-parcellaire-aoc-shp.zip from
-Tools/countries/pull.py, and ogr2ogr; in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
+Run: python3 Tools/data/build_fr_areas.py   (needs <raw folder>/countries/fr/inao-delim-parcellaire-aoc-shp.zip from
+Tools/countries/pull.py, and ogr2ogr; raw folder: Tools/rawdir.py)
 """
 import json, os, subprocess, sys, tempfile, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = Path(os.environ.get("ATLASLOPE_RAW", ROOT / "data/raw")) / "countries/fr"  # a worktree points this at the main checkout
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
+RAW = RAW / "countries/fr"
 ZIP = RAW / "inao-delim-parcellaire-aoc-shp.zip"
 SPEC = ROOT / "data/countries/fr/areas-spec.json"
 OUT = ROOT / "data/countries/fr/areas.geojson"

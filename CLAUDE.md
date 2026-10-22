@@ -82,7 +82,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   tastes the way it does" is the spine; only a small "Test me" link leads into Study.
 - **Data has a paper trail:** every file under `data/` and every layer, photo or fact source is in `data/SOURCES.md`; facts from official
   sources. WSG and WSET course structure is fine, never their text, maps or images. Licence: code MIT; his writing all rights reserved
-  (`NOTICE.md`); data keeps its own terms.
+  (`NOTICE.md`); data keeps its own terms. Raw downloads live outside the repo (`~/Developer/Atlaslope-raw`, `ATLASLOPE_RAW`); nothing in the repo is a symlink (22 Oct 2026: a committed data/raw link wiped the raw folder on checkout).
 - **Never print keys or secrets** and never put his email or personal details in the repo, lookups or User-Agents. Keys live in repo
   secrets or `.env.local` (check with `grep -c`).
 - **Guide format:** any change (sections, order, fields, source rules, checks) updates `docs/guides.md` and its Format log in the same PR.

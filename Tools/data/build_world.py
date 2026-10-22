@@ -3,11 +3,12 @@
 
 Inside Spain's two clip boxes it keeps the 10 m detail of data/natural-earth-spain.geojson; outside them it uses Natural Earth 50 m.
 Land is one feature, so there are no seams or box edges on the map. Needs shapely (pip install shapely) and network
-access to raw.githubusercontent.com. Rerunnable: downloads land in data/raw/world/ (git-ignored).
+access to raw.githubusercontent.com. Rerunnable: downloads land in <raw folder>/world/ (Tools/rawdir.py).
 Usage: python3 Tools/data/build_world.py
 """
 import json
 import os
+import sys
 import urllib.request
 
 from shapely import set_precision
@@ -15,7 +16,9 @@ from shapely.geometry import MultiPolygon, Polygon, box, mapping, shape
 from shapely.ops import unary_union
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
-RAW = os.path.join(ROOT, 'data', 'raw', 'world')
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+from rawdir import RAW as RAW_ROOT  # noqa: E402
+RAW = str(RAW_ROOT / 'world')
 NE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/'
 # Same boxes as Tools/data/remote_build.sh and LAND_BOXES in src/map/boundaries.ts.
 BOXES = unary_union([box(-10.0, 35.0, 5.0, 44.5), box(-18.4, 27.5, -13.2, 29.5)])

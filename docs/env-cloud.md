@@ -15,3 +15,4 @@ For cloud Claude Code threads and the hosted coordinator. A local session on the
 - Playwright stays pinned to the version that matches the container's preinstalled Chromium.
 - The cloud safety check refuses self-publishing; only the owner's typed "publish release N" starts the `publish` workflow anyway.
 - Anything needing the owner's keychain or clipboard goes to a session on his Mac.
+- Raw downloads live outside the repo, in `~/Developer/Atlaslope-raw/` (`ATLASLOPE_RAW` overrides it). A fresh container has none: `python3 Tools/data/refetch_raw.py --check`, then fetch only what the task needs (`--only`); hosts the cloud refuses are fetched on the owner's Mac.

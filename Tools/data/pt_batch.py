@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sets up a Portugal batch from build_places.PT_PLACES (batch 1, owner option B, 22 Oct 2026), so no agent does it by hand.
 
-Per new place: copies its EU spec (eAmbrosia summary sheet, the last listed) from data/raw/countries/pt/att/ (Tools/countries/pull.py)
+Per new place: copies its EU spec (eAmbrosia summary sheet, the last listed) from <raw folder>/countries/pt/att/ (Tools/countries/pull.py)
 to Review/sources/fetched/att-<file>-<n>.{pdf,txt}, where sources.py finds it; adds "<id>-doc" to content/sources.json; adds an empty
 sheet to content/facts/<group>.json; merges Review/sources/pt-areas/<id>.json (one spec fragment per place, read by helpers from
 the spec's area section) into data/countries/pt/areas-spec.json. Porto takes Douro's area as one zone (same demarcated region).
@@ -15,8 +15,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "Tools/data"))
 from build_places import PT_PLACES  # noqa: E402
+from rawdir import RAW  # noqa: E402
 
-RAW = ROOT / "data/raw/countries/pt/att"
+RAW = RAW / "countries/pt/att"
 FETCHED = ROOT / "Review/sources/fetched"
 STUB = {"why": {"text": "", "cite": []}, "grapes": {"main": [], "cite": [], "others": [], "othersCite": []},
         "styles": {"kinds": [], "text": "", "cite": []}, "climate": {"text": "", "cite": []}, "soil": {"text": "", "cite": []},

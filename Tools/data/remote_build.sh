@@ -1,11 +1,11 @@
 #!/bin/bash
 # Builds the data files that need GDAL and large downloads. Runs in GitHub Actions (.github/workflows/data-build.yml), not in the cloud
-# container (no GDAL, no package registries). Rerunnable: downloads land in data/raw/ (git-ignored); outputs are committed.
+# container (no GDAL, no package registries). Rerunnable: downloads land in $ATLASLOPE_RAW (default ~/Developer/Atlaslope-raw), under build/; outputs are committed.
 #   data/natural-earth-spain.geojson   Natural Earth 10 m land, minor islands and land borders, clipped to Spain's two boxes
 #   data/koppen-spain.geojson          Köppen-Geiger 1991-2020 at 1 km (Beck et al. 2023), Spain only, one feature per class and box
 set -euo pipefail
 cd "$(dirname "$0")/../.."
-RAW=data/raw/build; mkdir -p "$RAW/ne" "$RAW/kg" "$RAW/tmp"
+RAW=${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/build; mkdir -p "$RAW/ne" "$RAW/kg" "$RAW/tmp"
 MAIN="-10.0 35.0 5.0 44.5"; CANA="-18.4 27.5 -13.2 29.5"
 NE=https://naciscdn.org/naturalearth/10m
 

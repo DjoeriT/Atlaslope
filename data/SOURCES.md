@@ -1,6 +1,6 @@
 # Data sources
 
-One entry per file in `data/`. `Tools/check.sh` fails if a committed data file has no entry here. Raw downloads live in `data/raw/` (git-ignored).
+One entry per file in `data/`. `Tools/check.sh` fails if a committed data file has no entry here. Raw downloads live outside the repo, in `~/Developer/Atlaslope-raw/` (or the folder in `ATLASLOPE_RAW`; `Tools/rawdir.py`), so no git operation can delete them (22 Oct 2026: a committed `data/raw` link wiped the raw folder on checkout). `python3 Tools/data/refetch_raw.py` fetches what is missing, from `Tools/data/raw-manifest.json`.
 
 | File | Source and URL | Fetched | Licence | Processing |
 |---|---|---|---|---|
@@ -162,7 +162,7 @@ The two MAPA texts disagree. Atlaslope is a free study tool, which fits both. We
 
 **IGN / CNIG**, `https://www.ign.es/resources/licencia/Condiciones_licenciaUso_IGN.pdf` (linked as `license` from the IGN OGC API): "el uso de los productos y servicios de información geográfica del IGN ... conlleva la aceptación por el usuario de una licencia CC-BY 4.0", with attribution in the form «<identificador del producto> <fecha> CC-BY 4.0 <atribución de productores>», shown "a pie de mapa". The municipality metadata record (`spaignLLM`) says "BDLJE CC-BY 4.0 ign.es".
 
-## Raw downloads (not committed, in `data/raw/`)
+## Raw downloads (outside the repo, in `~/Developer/Atlaslope-raw/` or `$ATLASLOPE_RAW`; paths below are under it)
 - `mapa/cdz_vinos.geojson` (16.7 MB): the MAPA layer as served.
 - `ign/au_administrativeunit.geojson` (261 MB): all IGN administrative units for Spain.
 - `dem/mdt25_rioja/` (35 tiles, 43 MB): MDT25 over the Rioja box.
