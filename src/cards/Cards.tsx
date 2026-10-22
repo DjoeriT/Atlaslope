@@ -14,7 +14,7 @@ import { Glance } from './Glance';
 import { Img } from './Img';
 import { Credit, oneEach } from './Credit';
 import type { ShownPhoto } from '../facts';
-import { placeLine, regionLine, spainLine, type TileLine } from '../facts/tiles';
+import { countryLine, placeLine, regionLine, type TileLine } from '../facts/tiles';
 
 
 const t = strings.cards;
@@ -94,18 +94,21 @@ function Lede({ tree, go, line, fallback }: { tree: Tree; go: Go; line?: TileLin
   );
 }
 
-export function SpainCard({ tree, go }: Props) {
-  const country = tree.countries[0];
+/** A country's own covers; a country without a list shows its name alone. */
+const COUNTRY_COVERS: Record<string, string[]> = { spain: ['jerez', 'rias-baixas', 'rioja'] };
+
+export function CountryCard({ tree, go, countryId }: Props & { countryId: string }) {
+  const country = tree.countries.find((c) => c.id === countryId) ?? tree.countries[0];
   const regions = tree.regionsOf(country.id);
   const all = regions.flatMap((r) => tree.placesInRegion(r.id));
   // Spain leads with its own cover, not the Rioja card's (site visual review, 18 Oct 2026).
-  const covers = ['jerez', 'rias-baixas', 'rioja'].map((id) => photosOf(id)[0]).filter(Boolean);
+  const covers = (COUNTRY_COVERS[country.id] ?? []).map((id) => photosOf(id)[0]).filter(Boolean);
   return (
     <CardShell
       tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
       cover={<div className="cover-short"><CoverPhoto name={country.name} color="#141414" photos={covers} /></div>}
     >
-      <Lede tree={tree} go={go} line={spainLine()} fallback={t.spainLedeRich(all.length, regions.length)} />
+      <Lede tree={tree} go={go} line={countryLine(country.id)} fallback={t.countryLedeRich(all.length, regions.length)} />
       <h2>{t.regions}</h2>
       <ul className={tileClass(regions.length)}>
         {regions.map((r) => {

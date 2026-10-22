@@ -53,7 +53,7 @@ export const strings = {
   },
   cards: {
     whereThisSits: 'Where this sits',
-    spainLedeRich: (places: number, regions: number) => `${places} places in ${regions} study regions, north to south.`,
+    countryLedeRich: (places: number, regions: number) => `${places} places in ${regions} study regions, north to south.`,
     regionLedeRich: (n: number) => (n === 1 ? 'One place, with its zones.' : `${n} places, in course order.`),
     ledeSources: (n: number) => (n === 1 ? 'Source:' : 'Sources:'),
     tilePhotos: 'Photos:',
@@ -164,12 +164,13 @@ export const strings = {
         VC: 'Vino de Calidad con Indicación Geográfica',
       } as Record<string, string>,
       zoneOf: (name: string) => `A zone of ${name}`,
-      swsBadge: (region: string) => `Wine Scholar · ${region}`,
-      swsTitle: (region: string) => `In the Spanish Wine Scholar course, study region ${region}`,
+      // The study region's badge names its course (decision #49: Portugal's course is WSET); a course not listed shows the region alone.
+      courseBadge: (course: string, region: string) => (course === 'sws' ? `Wine Scholar · ${region}` : course.startsWith('wset') ? `WSET · ${region}` : region),
+      courseTitle: (course: string, region: string) => (course === 'sws' ? `In the Spanish Wine Scholar course, study region ${region}` : `Study region ${region}`),
       wsetBadge: (levels: string[]) => `WSET Level ${levels.join(' and ')}`,
       wsetTitle: (levels: string[]) => `Named in the WSET Level ${levels.join(' and ')} Award in Wines ${levels.length > 1 ? 'specifications' : 'specification'}`,
       readMinutes: (n: number) => `${n}-minute read`,
-      allSpain: 'All of Spain',
+      allOf: (country: string) => `All of ${country}`,
       regionRow: (name: string) => `${name} region`,
       compareNote: 'Measured the same way for each: the land inside the boundary.',
       // Guide shape C (owner, 19 Oct 2026): the page answers one question in four beats, then How it tastes and In short; the rest are

@@ -22,7 +22,7 @@ export function rasterTileSize(dpr: number = typeof window === 'undefined' ? 1 :
 
 type Ring = number[][];
 type Polygon = Ring[];
-interface Mask { spain: Polygon[]; neighbours: Polygon[] }
+interface Mask { land: Polygon[]; neighbours: Polygon[] }
 
 /** Web Mercator, 0..1 across the world. */
 function merc([lon, lat]: number[]): [number, number] {
@@ -41,7 +41,7 @@ function project(polys: Polygon[]): Projected[] {
 }
 
 const mask = maskData as Mask;
-const SPAIN = project(mask.spain);
+const SPAIN = project(mask.land);
 const NEIGHBOURS = project(mask.neighbours);
 
 /** Tile edges in Mercator units, widened by `pad` (also Mercator). */

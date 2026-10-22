@@ -7,7 +7,7 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photoByKey, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite, type ShownPhoto } from '../facts';
+import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photoByKey, photosOf, countryMeasures, regionMeasuresOf, sheetOf, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite, type ShownPhoto } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
@@ -199,13 +199,15 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const wsetLevels = wsetLevelsOf(place.id);
   const meta = [zones.length > 0 ? t.subZones(zones.length) : '', guide ? t.readMinutes(guide.minutes) : ''].filter(Boolean).join(' · ');
   // The comparison rows for the measured charts (owner point 10, 18 Oct 2026): a zone's appellation, the study region when it is more than
-  // this one place, then Spain.
+  // this one place, then the country.
   const regionM = region && !isZone ? regionMeasuresOf(region.id) : undefined;
   const parentM = parent ? measuresOf(parent.id) : undefined;
+  const country = tree.countryOf(place.id);
+  const countryM = country ? countryMeasures(country.id) : undefined;
   const compare = [
     ...(parent && parentM ? [{ label: parent.name, m: parentM }] : []),
     ...(regionM && measures && JSON.stringify(regionM) !== JSON.stringify(measures) ? [{ label: t.regionRow(region!.name), m: regionM }] : []),
-    { label: t.allSpain, m: spainMeasures() },
+    ...(country && countryM ? [{ label: t.allOf(country.name), m: countryM }] : []),
   ];
 
   // Each written chapter sits in the beat it tells; a chapter without a beat follows the four beats as a section of its own.
@@ -485,7 +487,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
             {guide?.say && <p className="pg-say"><span>{t.say}</span> {guide.say}</p>}
             <ul className="pg-badges" aria-label={t.sections.where}>
               <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
-              {region && <li title={t.swsTitle(region.chapter ?? region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
+              {region && <li title={t.courseTitle(region.course, region.chapter ?? region.name)}>{ownRegion ? t.courseBadge(region.course, region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.courseBadge(region.course, region.name)}</Link>}</li>}
               {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
               {meta && <li className="meta">{meta}</li>}
             </ul>

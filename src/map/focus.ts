@@ -2,8 +2,10 @@
 import type { Box, Collection } from './boundaries';
 
 export interface Focus {
-  /** Where to look: a study region, a place or a Rioja zone by id, or a point at a zoom (a guide's named spot). Null means all of Spain. */
+  /** Where to look: a study region, a place or a Rioja zone by id, or a point at a zoom (a guide's named spot). Null means the whole country. */
   frame: { region: string } | { place: string } | { zone: string } | { point: [number, number]; zoom: number } | null;
+  /** The country a null frame shows (src/countries.ts); Spain when unset. */
+  country?: string;
   /** A labelled pin at the framed point. */
   pin?: string;
   /** Places outside this study region are dimmed (null: nothing dimmed). */
