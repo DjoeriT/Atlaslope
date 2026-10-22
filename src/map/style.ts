@@ -1,6 +1,6 @@
 // The MapLibre style: tile sources (imagery, terrain), the atlas base and the place boundaries. Sources and terms: data/SOURCES.md.
 import type { StyleSpecification } from 'maplibre-gl';
-import { ESRI_PROTOCOL_TILES, PNOA_ATTRIBUTION, PNOA_MAX_ZOOM, PNOA_MIN_ZOOM, PNOA_PROTOCOL_TILES, rasterTileSize } from './imagery';
+import { ACTIVE_ORTHOPHOTOS, ESRI_PROTOCOL_TILES, orthophotoProtocolTiles, rasterTileSize } from './imagery';
 import { basemapPaint, layerVisibility, type MenuState } from './layers';
 import { GLYPHS_URL } from './mapNames';
 
@@ -46,7 +46,7 @@ export function buildStyle({ esriKey, tiles, menu, dpr, reliefFrom = RELIEF_MIN_
   if (imagery) {
     const tileSize = rasterTileSize(dpr);
     sources.satellite = { type: 'raster', tiles: [ESRI_PROTOCOL_TILES()], tileSize, maxzoom: 18, attribution: ESRI_ATTRIBUTION };
-    sources.pnoa = { type: 'raster', tiles: [PNOA_PROTOCOL_TILES], tileSize, minzoom: PNOA_MIN_ZOOM, maxzoom: PNOA_MAX_ZOOM, attribution: PNOA_ATTRIBUTION };
+    for (const o of ACTIVE_ORTHOPHOTOS) sources[o.id] = { type: 'raster', tiles: [orthophotoProtocolTiles(o)], tileSize, minzoom: o.minzoom, maxzoom: o.maxzoom, attribution: o.attribution };
   }
   if (tiles) {
     // Relief only shows from zoom 7 (owner 21 Oct 2026): the DEM is not asked for below it. tileSize 512 makes MapLibre ask one zoom
@@ -67,8 +67,8 @@ export function buildStyle({ esriKey, tiles, menu, dpr, reliefFrom = RELIEF_MIN_
     const photo = { 'raster-saturation': -0.15, 'raster-contrast': 0.05, 'raster-fade-duration': 600 };
     layers.push(
       { id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: vis.satellite }, paint: photo },
-      // Spain's own photo over Esri; its tiles are cut to Spain, so Esri shows around it.
-      { id: 'pnoa', type: 'raster', source: 'pnoa', layout: { visibility: vis.pnoa }, paint: photo },
+      // Each country's own photo over Esri (Spain's PNOA, France's BD ORTHO); its tiles are cut to the country, so Esri shows around it.
+      ...ACTIVE_ORTHOPHOTOS.map((o) => ({ id: o.id, type: 'raster' as const, source: o.id, layout: { visibility: vis[o.id] }, paint: photo })),
     );
   }
   if (tiles) {

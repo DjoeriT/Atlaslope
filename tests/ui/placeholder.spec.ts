@@ -19,9 +19,9 @@ test('the frame renders with the mode bar and no failed requests', async ({ page
 });
 
 // UX sweep (17 Oct 2026): a tab that does nothing is hidden until the mastery map brings Progress.
-test('the bar offers Atlas and Study, and no Progress tab yet', async ({ page }) => {
+test('the bar offers Atlas and Learn, and no Progress tab yet', async ({ page }) => {
   await page.goto('./?fresh=1');
-  await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' })).toBeVisible();
+  await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' })).toBeVisible();
   await expect(page.getByRole('navigation', { name: 'Site' }).getByText('Progress')).toHaveCount(0);
 });
 

@@ -60,6 +60,11 @@ export function revealFact(placeId: string, facts: FactSource): string | undefin
   return main.length ? main.map(grapeText).join(', ') : undefined;
 }
 
+/** The why shown after every answer: the place guide's own why line (its lede, "why it tastes the way it does"), cited as the guide. Undefined when the place has no guide. */
+export function revealWhy(placeId: string, guideOf: (id: string) => { lede: { text: string } } | undefined): string | undefined {
+  return guideOf(placeId)?.lede.text;
+}
+
 /** Every text of this kind that is true of the place (empty: the place has nothing to ask). Climate: the class with the largest share only. */
 function truths(kind: FactKind, place: Place, ctx: QuestionContext): { asked: string | undefined; all: string[] } {
   if (kind === 'grape') {

@@ -4,6 +4,8 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
+import { COUNTRIES } from '../../src/countries';
+import { learnPhotoKeys } from '../../src/quiz-ui/doorsModel';
 import { COVER_PHOTO } from '../../src/cards/atlasCover';
 import { BAND_FEATURED, PHOTO_PICK, bandTours, fillGuideCount, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys, storyCount } from '../../src/home/guideCount';
 import { countryPageKeys, countryPhotoKeys, fillCountryPage, fillGuidesIndex, fillHome } from '../../src/home/countryPages';
@@ -55,16 +57,18 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
   const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
   it('lists every guide file, filled in at build time', () => {
-    // Both countries: every guide is on its own country's page, and none is on the other's.
+    // Every country: each guide is on its own country's page, and on no other's (France joined 22 Oct 2026, #149).
     expect(list.rows).toHaveLength(guideCount());
-    const portugal = fillCountryPage(countryHtml, list, 'portugal');
+    const main = (h: string) => h.split('<footer>')[0];
+    const pages: Record<string, string> = { spain: main(out) };
+    for (const c of Object.keys(COUNTRIES)) if (c !== 'spain') pages[c] = main(fillCountryPage(countryHtml, list, c));
     for (const r of list.rows) {
-      const main = (h: string) => h.split('<footer>')[0];
-      const own = main(r.country === 'spain' ? out : portugal);
-      const other = main(r.country === 'spain' ? portugal : out);
-      expect(own, r.id).toContain(r.country === 'spain' ? link(r.id) : `href="../pt/${r.id}/"`);
-      expect(other, r.id).not.toContain(`/${r.id}/"`);
-      expect(other, r.id).not.toContain(link(r.id));
+      expect(pages[r.country], r.id).toContain(r.country === 'spain' ? link(r.id) : `href="../${COUNTRIES[r.country].code}/${r.id}/"`);
+      for (const [c, other] of Object.entries(pages)) {
+        if (c === r.country) continue;
+        expect(other, `${r.id} on ${c}`).not.toContain(`/${r.id}/"`);
+        expect(other, `${r.id} on ${c}`).not.toContain(link(r.id));
+      }
     }
   });
   it('shows all guides of a region, none cut off, with the count in the heading', () => {
@@ -184,8 +188,9 @@ describe('the Guides page and the country pages (option E round 3 and option A, 
   });
   // Owner 19 Oct 2026: "We need a check for this structurally". A crop is checked by eye; the hash ties the check to the file that was seen.
   describe('checked square crops (src/home/photoCrops.json)', () => {
-    // Every photo any page shows as a square: guide tiles, Home's country cards, the country pages' photo blocks.
-    const shown = [...new Set([...squarePhotoKeys(list), ...countryPhotoKeys(list)])];
+    // Every photo any page shows as a square: guide tiles, Home's country cards, the country pages' photo blocks, Learn's place photos.
+    const learn = learnPhotoKeys(loadTree(JSON.parse(readFileSync('data/places.json', 'utf8'))));
+    const shown = [...new Set([...squarePhotoKeys(list), ...countryPhotoKeys(list), ...learn])];
     const hashOf = (k: string) => createHash('sha256').update(readFileSync(`public/photos/480/${k}.webp`)).digest('hex').slice(0, 12);
     const fix = (k: string) => `run node Tools/guides/crop_sheet.mjs ${k}, look at the sheet, then add it to src/home/photoCrops.json (see docs/guides.md "Photo crops").`;
     it('has an entry for every photo the Guides page shows', () => {

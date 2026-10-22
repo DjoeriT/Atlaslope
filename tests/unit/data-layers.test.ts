@@ -72,11 +72,13 @@ describe('added boundaries', () => {
   const parcels = read('added-parcels.json').places;
   // Portugal's outlines come from the parish lists in its specs (Tools/data/build_pt_areas.py), checked by their own test.
   const pt = Object.keys(read('countries/pt/areas-spec.json')).filter((k) => !k.startsWith('$'));
+  // France's shipped places and their zones come from INAO (data/countries/fr/areas.geojson, Tools/data/build_fr_areas.py --map).
+  const fr = read('places.json').places.filter((p: { region: string }) => p.region.startsWith('fr-')).map((p: { id: string }) => p.id);
   it('has one polygon per listed place, built from every listed municipality or parcel', () => {
-    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels), ...pt].sort());
+    expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels), ...pt, ...fr].sort());
     for (const f of added.features) {
       const id = f.properties.id;
-      if (pt.includes(id)) continue;
+      if (pt.includes(id) || fr.includes(id)) continue;
       if (lists[id]) expect(f.properties.municipalities, id).toBe(lists[id].municipalities.length);
       else expect(f.properties.parcels, id).toBe(parcels[id].parcels.length);
     }

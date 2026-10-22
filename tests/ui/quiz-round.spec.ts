@@ -18,7 +18,7 @@ async function start(page: Page, seed?: unknown) {
     if (s && !sessionStorage.getItem('seeded')) { localStorage.setItem('atlaslope.quiz', JSON.stringify(s)); sessionStorage.setItem('seeded', '1'); }
   }, [seed]);
   await page.goto(`./?now=${NOW}#quiz`);
-  await page.getByRole('button', { name: /Start today's round|Learn 5 new places/ }).click();
+  await page.getByRole('button', { name: /^(Start today's round|Begin with five places|Start with these five places)/ }).click();
 }
 
 /** Through the five intros of day one: each "Got it" shows the next new place, not a question about the one just shown. */
@@ -47,20 +47,20 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
 
   // 1. Five new places shown in a row; intros are not numbered questions. Then the first question; a right answer moves on after about a second.
   expect(dayOne.map((i) => i.kind)).toEqual(['intro', 'intro', 'intro', 'intro', 'intro', 'question', 'question', 'question', 'question', 'question']);
-  await expect(page.locator('.q-num')).toContainText('New place · 1 of 5 today · Study');
+  await expect(page.locator('.q-num')).toContainText('New place · 1 of 5 today · Learn');
   expect(await dots(page)).toHaveLength(5);
   await pastIntros(page, introNames);
   const [first, second] = asked;
-  await expect(page.locator('.q-num')).toContainText('Question 1 of 5 · Study');
+  await expect(page.locator('.q-num')).toContainText('Question 1 of 5 · Learn');
   await choice(page, first).click();
   await expect(page.locator('.feedback')).toContainText(`Right, that's ${first}`);
-  await expect(page.locator('.q-num')).toContainText('Question 2 of 5 · Study'); // moved on by itself
+  await expect(page.locator('.q-num')).toContainText('Question 2 of 5 · Learn'); // moved on by itself
 
-  // 2. A miss waits: the why line, Next, "That was a slip", the place's card.
+  // 2. A miss waits: the why line, Next, "That was a slip", the Read the guide link.
   await wrongChoice(page, second);
   await expect(page.locator('.feedback.bad')).toBeVisible();
-  await expect(page.locator('dl.reveal dt', { hasText: 'Why' })).toBeVisible();
-  await expect(page.getByRole('button', { name: `Open ${second}'s card` })).toBeVisible();
+  await expect(page.locator('dl.reveal dt', { hasText: 'From the guide' })).toBeVisible();
+  await expect(page.getByRole('button', { name: `Read the ${second} guide` })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Next question' })).toBeVisible();
   expect((await dots(page))[1]).toBe('bad');
 
@@ -76,7 +76,7 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   // 3. The other three, right.
   // Each answer waits for its own question number: the step before still reads "What is this?" until the next one is in.
   for (const [i, name] of asked.slice(2).entries()) {
-    await expect(page.locator('.q-num')).toContainText(`Question ${i + 3} of 6 · Study`);
+    await expect(page.locator('.q-num')).toContainText(`Question ${i + 3} of 6 · Learn`);
     await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
     await expect(page.locator('.feedback')).toContainText('Right');
@@ -84,7 +84,7 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
 
   // 4. The missed place comes back at the end: now a find it, six questions in all.
   await expect(page.locator('.q')).toContainText(`Find ${second}`);
-  await expect(page.locator('.q-num')).toContainText('Question 6 of 6 · Study');
+  await expect(page.locator('.q-num')).toContainText('Question 6 of 6 · Learn');
   await expect(page.getByRole('button', { name: 'Confirm' })).toBeDisabled();
   await page.evaluate((id) => (window as unknown as { __quizPick: (id: string) => void }).__quizPick(id), idOf(second));
   await page.getByRole('button', { name: 'Confirm' }).click();
@@ -94,7 +94,7 @@ test('a round: intros, a right answer moves on by itself, a miss waits, slip and
   // 5. The round end: score over first asks, the miss linking to its card, Today, then Done for today.
   await expect(page.locator('h1.score')).toContainText('4 / 5');
   await expect(page.getByRole('link', { name: second })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Save a copy to a file' })).toHaveAttribute('href', '#study=progress-file');
+  await expect(page.getByRole('link', { name: 'Save a copy to a file' })).toHaveAttribute('href', '#learn=progress-file');
   await expect(page.getByRole('button', { name: 'Done for today' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Learn 5 extra places' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Practise any mix' })).toBeVisible();
@@ -121,7 +121,7 @@ test('a slip is kept in the log, and the miss is not asked again', async ({ page
   expect((await log(page)).filter((e) => e.kind === 'answer')).toMatchObject([{ place: idOf(asked[0]), right: false, slip: true }]);
   await page.getByRole('button', { name: 'Next question' }).click();
   for (const [i, name] of asked.slice(1).entries()) {
-    await expect(page.locator('.q-num')).toContainText(`Question ${i + 2} of 5 · Study`); // its own step, not the one just answered
+    await expect(page.locator('.q-num')).toContainText(`Question ${i + 2} of 5 · Learn`); // its own step, not the one just answered
     await expect(page.locator('.q')).toHaveText('What is this?');
     await choice(page, name).click();
     await expect(page.locator('.feedback')).toContainText('Right');

@@ -1,0 +1,83 @@
+{
+ "region": "fr-burgundy",
+ "sheets": [
+  {
+   "id": "chablis",
+   "why": {
+    "text": "A cool oceanic climate with frost risk, limestone and marl slopes, and Chardonnay alone give vivid, mineral dry whites.",
+    "cite": [
+     "chablis-doc:p6",
+     "chablis-doc:p7",
+     "chablis-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "chablis-doc:p5",
+     "chablis-doc:p8"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Only still, dry white wine, with Premier Cru labels for the best slopes.",
+    "cite": [
+     "chablis-doc:p2",
+     "chablis-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate lightly shaped by continental influences. Rainfall is moderate at 650 mm a year in Auxerre, with a mean temperature of 10.8 °C. Winter and spring frosts are a fairly serious risk.",
+    "cite": [
+     "chablis-doc:p6",
+     "chablis-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Always limestone: lean, stony and well drained on the hard limestone, richer in clay on the marl slopes. Scree over the marl drains well and warms well.",
+    "cite": [
+     "chablis-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The ridge face drops 120 to 130 metres and altitudes stay moderate. The highest plateau point is no higher than 320 metres.",
+    "cite": [
+     "chablis-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Dry white, lively and fruity, marked by minerality. With age it gains aromatic complexity and finesse. Premier Cru can be fruitier or more mineral and peaks after 8 to 10 years.",
+    "cite": [
+     "chablis-doc:p3",
+     "chablis-doc:p8",
+     "chablis-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "From the best-exposed slopes, in 40 climats; best after 8 to 10 years."
+     }
+    ],
+    "cite": [
+     "chablis-doc:p8",
+     "chablis-doc:p9",
+     "chablis-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

@@ -108,7 +108,7 @@ test.describe('on a phone', () => {
   test('each quiz step starts at the top of the card', async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
     await page.goto('./?now=2026-10-17T10:00:00Z#quiz');
-    await page.getByRole('button', { name: /Learn 5 new places/ }).click();
+    await page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ }).click();
     for (let i = 0; i < 5; i++) await page.getByRole('button', { name: 'Got it' }).click();
     await expect(page.locator('.q')).toHaveText('What is this?');
     const name = plannedRound('2026-10-17T10:00:00Z').find((i) => i.kind === 'question')!.name;

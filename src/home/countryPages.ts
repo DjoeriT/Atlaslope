@@ -13,7 +13,7 @@ export interface CountryPage {
   cardPhotos: string[];
   /** The photo blocks on the country page, each a lead square and four small ones. */
   blocks: { title?: string; keys: string[] }[];
-  /** The Study note: Spain has a Study link, Portugal says what is missing. */
+  /** The Learn note: Spain has a Learn link, Portugal says what is missing. */
   study: { note: string; link: boolean };
 }
 
@@ -32,6 +32,15 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
       { title: 'Vinho Verde', keys: ['vinho-verde-3', 'vinho-verde-1', 'vinho-verde-5', 'vinho-verde-8', 'vinho-verde-7'] },
     ],
     study: { note: 'Not yet for Portugal.', link: false },
+  },
+  france: {
+    intro: 'From Champagne to the Mediterranean.',
+    cardPhotos: ['chablis-1', 'pauillac-1', 'chablis-2', 'pauillac-2', 'chablis-4'],
+    blocks: [
+      { title: 'Chablis', keys: ['chablis-1', 'chablis-2', 'chablis-3', 'chablis-4', 'chablis-5'] },
+      { title: 'Pauillac', keys: ['pauillac-1', 'pauillac-2', 'pauillac-3', 'pauillac-4', 'pauillac-5'] },
+    ],
+    study: { note: 'Not yet for France.', link: false },
   },
 };
 
@@ -52,6 +61,7 @@ export const countryPhotoKeys = (list: GuideList): string[] => [...new Set(list.
 
 /** One lead square and four small ones, as in the mock. */
 const mosaic = (keys: string[], list: GuideList, root: string, cls = 'mosaic') => {
+  if (!keys.length) return ''; // a country whose photos have not landed yet (France)
   const sq = (k: string, sizes: string, big = false) => `<span class="sqbox${big ? ' big' : ''}">${photoImg(k, list.photos, sizes, true, true, undefined, root)}</span>`;
   return `<div class="${cls}">${sq(keys[0], '(max-width:700px) 50vw, 320px', true)}${keys.slice(1, 5).map((k) => sq(k, '(max-width:700px) 25vw, 160px')).join('')}</div>`;
 };
@@ -94,7 +104,7 @@ export const countryPage = (list: GuideList, id: string): string => {
   const s = countryStats(list).find((c) => c.id === id);
   if (!s) throw new Error(`no country ${id} in data/places.json`);
   const page = COUNTRY_PAGES[id];
-  const study = `<div class="study"><b>Study</b><span>${page.study.note}${page.study.link ? '<br /><a href="../atlas/#study">Open Study</a>' : ''}</span></div>`;
+  const study = `<div class="study"><b>Learn</b><span>${page.study.note}${page.study.link ? '<br /><a href="../atlas/#learn">Open Learn</a>' : ''}</span></div>`;
   const blocks = page.blocks.map((b) => `<figure class="ld">${b.title ? `<figcaption><b>${esc(b.title)}</b></figcaption>` : ''}${mosaic(b.keys, list, '../', 'mosaic')}</figure>`).join('');
   return [
     '<!-- draft copy, owner rewrites -->',

@@ -31,14 +31,14 @@ test('Rioja shows its four key places; a tap opens the line, its source and Fly 
   await expect(haro).toHaveAttribute('aria-expanded', 'false');
 });
 
-test('a place without flags shows none, and Study hides them', async ({ page }) => {
+test('a place without flags shows none, and Learn hides them', async ({ page }) => {
   await page.goto('./#place=toro');
   await expect(page.locator('.card h1')).toHaveText('Toro');
   await expect(page.locator('.mapflag')).toHaveCount(0);
 
   await page.goto('./#place=jerez');
   await expect(page.locator('.mapflag')).toHaveCount(5);
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
-  await expect(page.locator('.card h1')).toHaveText('Study or review');
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
+  await expect(page.locator('.card.learn #qh')).toBeVisible();
   await expect(page.locator('.mapflag')).toHaveCount(0);
 });

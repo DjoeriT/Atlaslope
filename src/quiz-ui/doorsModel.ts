@@ -1,5 +1,6 @@
 // The pure parts of the doors, Today and the pickers: counts, names and ticks. No React.
-import { askable, inCourseOrder, REVIEW_KINDS, type LogEntry, type MemoryRef, type QuizState, type Round } from '../quiz';
+import { askable, inCourse, inCourseOrder, NO_COURSE, REVIEW_KINDS, STUDY_KINDS, type Course, type LogEntry, type MemoryRef, type QuizState, type Round } from '../quiz';
+import { photosOf } from '../facts';
 import type { Place, Tree } from '../tree';
 
 /** Questions in a round (intros are not questions). */
@@ -15,9 +16,10 @@ export function missedToday(log: readonly LogEntry[], now: Date): string[] {
   return ids;
 }
 
-/** The first day after now with something due, and how many places are due that day; null when nothing is scheduled. */
-export function nextDue(tree: Tree, state: QuizState, now: Date): { day: Date; places: number } | null {
-  const later = askable(tree, Object.keys(state.places), state).filter((r) => Date.parse(r.due) > now.getTime());
+/** The first day after now with something of the course due, and how many places are due that day; null when nothing is scheduled. */
+export function nextDue(tree: Tree, state: QuizState, now: Date, course: Course = NO_COURSE): { day: Date; places: number } | null {
+  const ids = Object.keys(state.places).filter((id) => { const p = tree.getPlace(id); return p !== undefined && inCourse(course, p); });
+  const later = askable(tree, ids, state).filter((r) => Date.parse(r.due) > now.getTime());
   if (!later.length) return null;
   const first = later.map((r) => dayOf(r.due)).sort()[0];
   const places = new Set(later.filter((r) => dayOf(r.due) === first).map((r) => r.place));
@@ -40,6 +42,12 @@ export function dueByRegion(tree: Tree, due: readonly MemoryRef[]): Array<{ name
 /** The names a focus list stands for (regions and places), for the focus line. */
 export const focusNames = (tree: Tree, focus: readonly string[]): string[] => focus.map((id) => tree.getRegion(id)?.name ?? tree.getPlace(id)?.name ?? id);
 
+/** The study region of the first of the given places, and whether they all share it: "in "Green Spain"" or "starting in "Green Spain"". */
+export function startRegion(tree: Tree, placeIds: readonly string[]): { name: string; shared: boolean } | null {
+  const first = tree.getRegion(tree.getPlace(placeIds[0] ?? '')?.region ?? '');
+  return first ? { name: first.name, shared: sharedRegion(tree, placeIds) !== null } : null;
+}
+
 /** The study region all the given places share, or null when they come from more than one: "Up next: 5 places in Green Spain." */
 export function sharedRegion(tree: Tree, placeIds: readonly string[]): string | null {
   const ids = new Set(placeIds.map((id) => tree.getPlace(id)?.region ?? ''));
@@ -52,10 +60,10 @@ export function listOf(names: readonly string[]): string {
   return names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
 }
 
-/** Places a Review can ask, grouped under their study region, in course order. */
-export function practiseTree(tree: Tree): Array<{ region: { id: string; name: string }; places: Place[] }> {
+/** Places a Review can ask within the course, grouped under their study region, in course order. */
+export function practiseTree(tree: Tree, course: Course = NO_COURSE): Array<{ region: { id: string; name: string }; places: Place[] }> {
   return tree.regionsOf(tree.countries[0].id)
-    .map((region) => ({ region, places: inCourseOrder(tree, tree.placesInRegion(region.id).filter((p) => REVIEW_KINDS.includes(p.quiz))) }))
+    .map((region) => ({ region, places: inCourseOrder(tree, tree.placesInRegion(region.id).filter((p) => REVIEW_KINDS.includes(p.quiz) && inCourse(course, p))) }))
     .filter((g) => g.places.length > 0);
 }
 
@@ -67,3 +75,10 @@ export function tickOf(placeIds: readonly string[], picked: ReadonlySet<string>)
 
 /** Places a learner can put in a focus (Study kinds), by name for the "Add a place" box. */
 export const focusablePlaces = (tree: Tree): Place[] => tree.places.filter((p) => p.quiz === 'core');
+
+/** The photo keys Learn can show as squares (PlacePhotos: each place's first photo, for every place Learn asks); each needs a checked crop. */
+export const learnPhotoKeys = (tree: Tree): string[] =>
+  tree.places.filter((p) => STUDY_KINDS.includes(p.quiz)).flatMap((p) => photosOf(p.id).slice(0, 1).map(photoKey));
+
+/** "rioja-1" from a shown photo's src. */
+export const photoKey = (photo: { src: string }): string => photo.src.slice(photo.src.lastIndexOf('/') + 1).replace(/\.webp$/, '');

@@ -89,10 +89,10 @@ test('Test me on Rioja starts a review round on Rioja and its zones', async ({ p
   await open(page, '#place=rioja&page');
   const box = page.locator('.pg-testme');
   await expect(box).toContainText('Test me on Rioja');
-  await expect(box).toContainText('A short round in Study on Rioja and its zones.');
+  await expect(box).toContainText('A short round in Learn on Rioja and its zones.');
   await box.getByRole('link', { name: 'Test me' }).click();
   await expect(page.locator('.q-num')).toContainText('Review');
-  await expect(page).toHaveURL(/#study($|&view)/);
+  await expect(page).toHaveURL(/#learn($|&view)/);
   await expect(page.locator('h1.intro-h')).toHaveText('Rioja');
 });
 
@@ -106,7 +106,7 @@ test('a place with no zones and no guide shows Test me without "and its zones", 
   await open(page, '?noguide=valdepenas#place=valdepenas&page');
   const box = page.locator('.pg-testme');
   await expect(box).toContainText('Test me on Valdepeñas');
-  await expect(box).toContainText('A short round in Study on Valdepeñas.');
+  await expect(box).toContainText('A short round in Learn on Valdepeñas.');
   await expect(box).not.toContainText('zones');
   // C3: Test me and Next in the course share one closing row, then Sources.
   const order = await page.locator('.pg main > *').evaluateAll((els) => els.map((e) => e.id || e.className));

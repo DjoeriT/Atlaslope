@@ -1,19 +1,20 @@
 """Build data/spain-mask.json: where the map uses IGN's PNOA photo instead of Esri.
 
-Input: Natural Earth 10 m admin 0 countries, v5.1.2 (<raw folder>/ne/ne_10m_admin_0_countries.geojson, see data/SOURCES.md).
+Input: Natural Earth 10 m admin 0 countries, v5.1.2 (<raw folder>/ne/ne_10m_admin_0_countries.geojson, Tools/rawdir.py, see data/SOURCES.md).
 Output: Spain's polygons ('spain') and the neighbours' land near Spain ('neighbours'), simplified to about 200 m,
 3 decimals. The app fills Spain plus a strip of sea, then cuts the neighbours out (src/map/imagery.ts).
 
-Run: python3 Tools/data/build_spain_mask.py
+Run: python3 Tools/data/build_masks.py
 """
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from rawdir import RAW  # noqa: E402
-SRC = RAW / 'ne/ne_10m_admin_0_countries.geojson'
+from rawdir import RAW as RAW_ROOT  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
+SRC = RAW_ROOT / 'ne/ne_10m_admin_0_countries.geojson'
 # Per country: its Natural Earth code, the box its polygons must touch, and the neighbours' land near it. Only that land matters
 # (the strip of sea around the country must not spill onto it), so each neighbour is clipped to a box.
 COUNTRIES = {
@@ -24,6 +25,12 @@ COUNTRIES = {
     'portugal': {'code': 'PRT', 'out': 'data/countries/pt/mask.json',
                  'box': (-10.0, 36.5, -6.0, 42.5),  # the mainland; Madeira and the Azores come after it (decision #51 notes)
                  'neighbours': {'ESP': (-9.5, 36.5, -5.5, 43.0)}},
+    # The mainland and Corsica; the overseas departments come later (France pilot, #149). Its photo is IGN's BD ORTHO.
+    'france': {'code': 'FRA', 'out': 'data/countries/fr/mask.json',
+               'box': (-5.5, 41.0, 10.0, 51.5),
+               'neighbours': {'ESP': (-2.0, 42.0, 3.6, 43.6), 'AND': (1.3, 42.3, 1.9, 42.7), 'BEL': (2.4, 49.4, 6.5, 51.2),
+                              'LUX': (5.7, 49.4, 6.6, 50.2), 'DEU': (6.0, 47.5, 8.4, 49.6), 'CHE': (5.9, 45.8, 7.7, 47.9),
+                              'ITA': (6.5, 43.7, 7.7, 46.0), 'MCO': (7.3, 43.7, 7.5, 43.8)}},
 }
 TOLERANCE = 0.002  # degrees, about 200 m
 

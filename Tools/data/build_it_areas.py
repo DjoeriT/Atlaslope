@@ -14,8 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from rawdir import RAW  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
-RAW = RAW / "countries/it"
+from rawdir import RAW as RAW_ROOT  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
+RAW = RAW_ROOT / "countries/it"
 SPEC = ROOT / "data/countries/it/areas-spec.json"
 OUT = ROOT / "data/countries/it/areas.geojson"
 SIMPLIFY = 40  # metres in the source's UTM 32N, as Portugal's ~40 m: the outline is read at region zoom (decision #38)

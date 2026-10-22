@@ -1,6 +1,7 @@
 # Italy plan (owner approved, 22 Oct 2026, issue #149)
 
 Source report: `Review/countries/italy.md` (21 Oct 2026). Data pulled: `Review/countries/coverage.md` (22 Oct 2026).
+Scope now (#80): the 30 WSET places plus the 57 other DOCGs, 87 places, after the France pilot.
 Built on the France plan (`Review/countries/france-plan.md`, decisions #52-#58). Decisions: `docs/architecture-decisions.md` #59-#66 (and #67-#70 after the prep; #70: WSET places first, other DOCGs second), all on the recommended option [O].
 
 ## Context

@@ -100,19 +100,24 @@ def main():
     if check:
         return
     OUT.write_text(json.dumps({"type": "FeatureCollection", "features": out}, ensure_ascii=False, separators=(",", ":")) + "\n")
-    # One feature per line, as ogr2ogr wrote the file, so a rebuild only touches Portugal's lines.
+    put_added([f for f in out if f["properties"]["id"] in spec], spec)
+    print(OUT.relative_to(ROOT), f"{OUT.stat().st_size // 1024} KB", [(f["properties"]["id"], f["properties"]["km2"]) for f in out])
+
+
+def put_added(features, ids):
+    """Puts outlines into data/added-boundaries.geojson, the map's file for outlines outside the 2014 Spain layer, replacing any with
+    the same id in `ids`. One feature per line, as ogr2ogr wrote the file, so a rebuild only touches its own lines (also France's,
+    Tools/data/build_fr_areas.py)."""
     added_path = ROOT / "data/added-boundaries.geojson"
     lines = [l for l in added_path.read_text().splitlines()
-             if not any(l.startswith(f'{{ "type": "Feature", "properties": {{ "id": "{pid}"') for pid in spec)]
+             if not any(l.startswith(f'{{ "type": "Feature", "properties": {{ "id": "{pid}"') for pid in ids)]
     end = len(lines) - 1 - lines[::-1].index("]")
     body = [l.rstrip(",") for l in lines[:end] if l.startswith('{ "type": "Feature"')]
-    for f in out:
-        if f["properties"]["id"] in spec:
-            props = ", ".join(f'"{k}": {json.dumps(f["properties"][k])}' for k in ("id", "municipalities", "km2"))
-            body.append(f'{{ "type": "Feature", "properties": {{ {props} }}, "geometry": {json.dumps(f["geometry"], separators=(", ", ": "))} }}')
+    for f in features:
+        props = ", ".join(f'"{k}": {json.dumps(f["properties"][k])}' for k in ("id", "municipalities", "km2"))
+        body.append(f'{{ "type": "Feature", "properties": {{ {props} }}, "geometry": {json.dumps(f["geometry"], separators=(", ", ": "))} }}')
     head = [l for l in lines[:end] if not l.startswith('{ "type": "Feature"')]
     added_path.write_text("\n".join(head + [",\n".join(body)] + lines[end:]) + "\n")
-    print(OUT.relative_to(ROOT), f"{OUT.stat().st_size // 1024} KB", [(f["properties"]["id"], f["properties"]["km2"]) for f in out])
 
 
 if __name__ == "__main__":
