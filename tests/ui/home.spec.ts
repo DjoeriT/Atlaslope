@@ -10,7 +10,7 @@ test('the home page is plain HTML with the bar, the tagline and no map', async (
   await page.goto('../');
   await expect(page).toHaveTitle('AtlaSlope · Know the land behind the glass');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');
-  await expect(page.locator('.hero .sub')).toHaveText("Spain's wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.");
+  await expect(page.locator('.hero .sub')).toHaveText('Wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.'); // no longer Spain's only (option A, 22 Oct 2026)
   await expect(page.locator('.closer')).toContainText('More countries are on their way.');
   await expect(page.getByRole('link', { name: /Why Rioja tastes the way it does/ }).first()).toHaveAttribute('href', 'atlas/#place=rioja&page');
   const nav = page.getByRole('navigation', { name: 'Site' });
@@ -74,6 +74,7 @@ test('Guides and About are plain pages with the same bar, and the guides lead in
   await expect(nav.getByRole('link', { name: 'About' })).toHaveAttribute('aria-current', 'page');
   await nav.getByRole('link', { name: 'Guides' }).click();
   await expect(page).toHaveTitle('Guides · AtlaSlope');
+  await page.getByRole('link', { name: 'Open Spain' }).click(); // the guide squares live on the country pages (option A, 22 Oct 2026)
   await page.locator('a[href$="place=rioja-alta&page"]').click();
   await expect(page).toHaveURL(/\/atlas\/#place=rioja-alta/);
 });
@@ -90,7 +91,7 @@ test('Study and back to Atlas returns to the card that was open', async ({ page 
   await expect(page).toHaveURL(/#place=toro/);
 });
 
-test('the home tile links to the map tours band on the Guides page, which folds out every tour guide; the filter works in place', async ({ page }) => {
+test('the home tile links to the map tours band on the Guides page, which shows every tour guide open with its labels; the filter works on the country page', async ({ page }) => {
   await page.goto('../');
   const tile = page.locator('.hero a[href="guides/#map-tours"], a[href="guides/#map-tours"]').first();
   await expect(tile).toHaveText('map tours');
@@ -100,17 +101,10 @@ test('the home tile links to the map tours band on the Guides page, which folds 
   const band = page.locator('#map-tours');
   await expect(band.getByRole('heading', { name: 'Explore with the map' })).toBeVisible();
   await expect(band.locator('.stills.feat a')).toHaveCount(4);
-  await expect(band.locator('#more-tours')).toBeHidden();
-  await expect(band.getByRole('button', { name: `Show all ${tours.length} map tours` })).toBeVisible();
-  const btn = band.locator('button.morebtn'); // its name changes with its state
-  await expect(btn).toHaveAttribute('aria-expanded', 'false');
-  await btn.click();
-  await expect(btn).toHaveAttribute('aria-expanded', 'true');
-  await expect(btn).toHaveText('Show fewer');
-  await expect(band.locator('.stills a')).toHaveCount(tours.length); // every guide with a story file is listed (15 since the rule A tours)
+  // every tour open with its labels, no fold (owner, 22 Oct 2026: "the whole map tour setup ... with the labels")
+  await expect(band.locator('.stills a')).toHaveCount(tours.length);
+  await expect(band.locator('button.morebtn')).toHaveCount(0);
   await expect(band.locator('.stills a .nm')).toContainText(['Rioja', 'Priorat', 'Ribeira Sacra']);
-  await btn.click();
-  await expect(band.locator('#more-tours')).toBeHidden();
   await page.goto('../es/'); // the region list and tour filter live on the country pages (option A)
   const regions = page.locator('.gl .region');
   const all = await regions.count();

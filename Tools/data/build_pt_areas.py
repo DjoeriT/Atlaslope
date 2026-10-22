@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CAOP = ROOT / "data/raw/countries/pt/caop2025-freguesias.geojson"
 SPEC = ROOT / "data/countries/pt/areas-spec.json"
 OUT = ROOT / "data/countries/pt/areas.geojson"
-SIMPLIFY = 0.0004  # degrees, about 40 m: the outline is read at region zoom, the 2 MB download limit counts it (decision #38)
+SIMPLIFY = 0.0012  # degrees, about 120 m (was 40 m until Portugal batch 1 put the build over 2 MB, PR #214): the outline is read at region zoom, the 2 MB download limit counts it (decision #38)
 
 
 def norm(s):
