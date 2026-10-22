@@ -99,7 +99,7 @@
    "grapes": {
     "main": [
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      }
     ],
     "cite": [
@@ -107,18 +107,18 @@
      "bordeaux-doc:p13"
     ],
     "others": [
-     "Muscadelle B",
-     "Cot N",
-     "Carmenere N",
-     "Sauvignon Gris G",
-     "Sauvignon B",
-     "Ugni Blanc B",
-     "Colombard B",
-     "Cabernet-Sauvignon N",
-     "Merlot Blanc B",
-     "Sémillon B",
-     "Cabernet Franc N",
-     "Petit Verdot N"
+     "Muscadelle",
+     "Cot",
+     "Carmenere",
+     "Sauvignon Gris",
+     "Sauvignon",
+     "Ugni Blanc",
+     "Colombard",
+     "Cabernet-Sauvignon",
+     "Merlot Blanc",
+     "Sémillon",
+     "Cabernet Franc",
+     "Petit Verdot"
     ],
     "othersCite": [
      "bordeaux-doc:p9",
@@ -202,16 +202,16 @@
    "grapes": {
     "main": [
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      },
      {
-      "local": "Cabernet-Sauvignon N"
+      "local": "Cabernet-Sauvignon"
      },
      {
-      "local": "Cabernet Franc N"
+      "local": "Cabernet Franc"
      },
      {
-      "local": "Sémillon B"
+      "local": "Sémillon"
      }
     ],
     "cite": [
@@ -219,15 +219,15 @@
      "bordeaux-superieur-doc:p11"
     ],
     "others": [
-     "Muscadelle B",
-     "Cot N",
-     "Carmenere N",
-     "Sauvignon Gris G",
-     "Sauvignon B",
-     "Ugni Blanc B",
-     "Colombard B",
-     "Merlot Blanc B",
-     "Petit Verdot N"
+     "Muscadelle",
+     "Cot",
+     "Carmenere",
+     "Sauvignon Gris",
+     "Sauvignon",
+     "Ugni Blanc",
+     "Colombard",
+     "Merlot Blanc",
+     "Petit Verdot"
     ],
     "othersCite": [
      "bordeaux-superieur-doc:p8"
@@ -308,38 +308,38 @@
    "grapes": {
     "main": [
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      },
      {
-      "local": "Cabernet-Sauvignon N"
+      "local": "Cabernet-Sauvignon"
      },
      {
-      "local": "Cabernet franc N"
+      "local": "Cabernet Franc"
      },
      {
-      "local": "Cot N"
+      "local": "Cot"
      },
      {
-      "local": "Sauvignon B"
+      "local": "Sauvignon"
      },
      {
-      "local": "Sauvignon gris G"
+      "local": "Sauvignon Gris"
      },
      {
-      "local": "Semillon B"
+      "local": "Semillon"
      },
      {
-      "local": "Muscadelle B"
+      "local": "Muscadelle"
      }
     ],
     "cite": [
      "cotes-de-bordeaux-doc:p5"
     ],
     "others": [
-     "Carmenère N",
-     "Colombard B",
-     "Petit Verdot N",
-     "Ugni blanc B"
+     "Carmenère",
+     "Colombard",
+     "Petit Verdot",
+     "Ugni Blanc"
     ],
     "othersCite": [
      "cotes-de-bordeaux-doc:p9"
@@ -523,10 +523,10 @@
    "grapes": {
     "main": [
      {
-      "local": "Cabernet-Sauvignon N"
+      "local": "Cabernet-Sauvignon"
      },
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      }
     ],
     "cite": [
@@ -534,10 +534,10 @@
      "medoc-doc:p8"
     ],
     "others": [
-     "Cabernet Franc N",
-     "Petit Verdot N",
-     "Cot N",
-     "Carmenère N"
+     "Cabernet Franc",
+     "Petit Verdot",
+     "Cot",
+     "Carmenère"
     ],
     "othersCite": [
      "medoc-doc:p3",
@@ -591,7 +591,7 @@
      },
      {
       "name": "Bordeaux - Médoc",
-      "text": "Optional label wording that names the wider unit, in smaller letters."
+      "text": "Optional label wording naming the larger unit, in characters no bigger than two thirds of the appellation name."
      }
     ],
     "cite": [
@@ -704,18 +704,18 @@
    "grapes": {
     "main": [
      {
-      "local": "Cabernet-Sauvignon N"
+      "local": "Cabernet-Sauvignon"
      }
     ],
     "cite": [
      "saint-estephe-doc:p3"
     ],
     "others": [
-     "Cot N",
-     "Carmenere N",
-     "Merlot N",
-     "Cabernet Franc N",
-     "Petit Verdot N"
+     "Cot",
+     "Carmenere",
+     "Merlot",
+     "Cabernet Franc",
+     "Petit Verdot"
     ],
     "othersCite": [
      "saint-estephe-doc:p5"
@@ -793,10 +793,10 @@
    "grapes": {
     "main": [
      {
-      "local": "Cabernet-Sauvignon N"
+      "local": "Cabernet-Sauvignon"
      },
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      }
     ],
     "cite": [
@@ -804,10 +804,10 @@
      "margaux-doc:p5"
     ],
     "others": [
-     "Cot N",
-     "Carmenere N",
-     "Cabernet Franc N",
-     "Petit Verdot N"
+     "Cot",
+     "Carmenere",
+     "Cabernet Franc",
+     "Petit Verdot"
     ],
     "othersCite": [
      "margaux-doc:p5"
@@ -1123,7 +1123,7 @@
      },
      {
       "name": "Vin de Graves",
-      "text": "Wider unit a label may name, in smaller letters."
+      "text": "Larger geographic unit allowed on labels, at most two thirds the size of the appellation name."
      }
     ],
     "cite": [
@@ -1149,13 +1149,13 @@
    "grapes": {
     "main": [
      {
-      "local": "merlot N"
+      "local": "Merlot"
      },
      {
-      "local": "cabernet franc N"
+      "local": "Cabernet Franc"
      },
      {
-      "local": "cabernet-sauvignon N"
+      "local": "Cabernet-sauvignon"
      }
     ],
     "cite": [
@@ -1230,13 +1230,13 @@
    "grapes": {
     "main": [
      {
-      "local": "merlot N"
+      "local": "Merlot"
      },
      {
-      "local": "cabernet franc N"
+      "local": "Cabernet Franc"
      },
      {
-      "local": "cabernet-sauvignon N"
+      "local": "Cabernet-sauvignon"
      }
     ],
     "cite": [
@@ -1244,9 +1244,9 @@
      "saint-emilion-grand-cru-doc:p7"
     ],
     "others": [
-     "Cot N",
-     "Carmenere N",
-     "Petit Verdot N"
+     "Cot",
+     "Carmenere",
+     "Petit Verdot"
     ],
     "othersCite": [
      "saint-emilion-grand-cru-doc:p5",
@@ -1324,7 +1324,7 @@
    "grapes": {
     "main": [
      {
-      "local": "Merlot N"
+      "local": "Merlot"
      }
     ],
     "cite": [
@@ -1332,10 +1332,10 @@
      "pomerol-doc:p7"
     ],
     "others": [
-     "Cabernet Franc N",
-     "Cabernet-Sauvignon N",
-     "Cot N",
-     "Petit Verdot N"
+     "Cabernet Franc",
+     "Cabernet-Sauvignon",
+     "Cot",
+     "Petit Verdot"
     ],
     "othersCite": [
      "pomerol-doc:p3",
@@ -1399,16 +1399,16 @@
    "grapes": {
     "main": [
      {
-      "local": "Semillon B"
+      "local": "Semillon"
      },
      {
-      "local": "Sauvignon gris G"
+      "local": "Sauvignon Gris"
      },
      {
-      "local": "Sauvignon B"
+      "local": "Sauvignon"
      },
      {
-      "local": "Muscadelle B"
+      "local": "Muscadelle"
      }
     ],
     "cite": [
@@ -1469,16 +1469,16 @@
    "grapes": {
     "main": [
      {
-      "local": "Semillon B"
+      "local": "Semillon"
      },
      {
-      "local": "Savagnin blanc B"
+      "local": "Savagnin Blanc"
      },
      {
-      "local": "Sauvignon gris G"
+      "local": "Sauvignon Gris"
      },
      {
-      "local": "Muscadelle B"
+      "local": "Muscadelle"
      }
     ],
     "cite": [
