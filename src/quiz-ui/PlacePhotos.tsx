@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import photoCropsFile from '../home/photoCrops.json';
 import { Credit, oneEach } from '../cards/Credit';
 import { photosOf } from '../facts';
+import { photoKey } from './doorsModel';
 import { strings } from '../strings';
 import type { Tree } from '../tree';
 
@@ -22,7 +23,7 @@ export function PlacePhotos({ tree, ids, label }: { tree: Tree; ids: readonly st
       {shown(tree, ids).map(({ id, name, photo }) => (
         <li key={id}>
           {photo
-            ? <img src={photo.src} srcSet={photo.srcSet} sizes="80px" alt="" loading="lazy" style={{ objectPosition: crops[`${id}-1`]?.focus }} />
+            ? <img src={photo.src} srcSet={photo.srcSet} sizes="80px" alt="" loading="lazy" style={{ objectPosition: crops[photoKey(photo)]?.focus }} />
             : <span className="nophoto" aria-hidden="true" />}
           <span>{name}</span>
         </li>

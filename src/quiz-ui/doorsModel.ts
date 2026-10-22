@@ -1,5 +1,6 @@
 // The pure parts of the doors, Today and the pickers: counts, names and ticks. No React.
-import { askable, inCourse, inCourseOrder, NO_COURSE, REVIEW_KINDS, type Course, type LogEntry, type MemoryRef, type QuizState, type Round } from '../quiz';
+import { askable, inCourse, inCourseOrder, NO_COURSE, REVIEW_KINDS, STUDY_KINDS, type Course, type LogEntry, type MemoryRef, type QuizState, type Round } from '../quiz';
+import { photosOf } from '../facts';
 import type { Place, Tree } from '../tree';
 
 /** Questions in a round (intros are not questions). */
@@ -74,3 +75,10 @@ export function tickOf(placeIds: readonly string[], picked: ReadonlySet<string>)
 
 /** Places a learner can put in a focus (Study kinds), by name for the "Add a place" box. */
 export const focusablePlaces = (tree: Tree): Place[] => tree.places.filter((p) => p.quiz === 'core');
+
+/** The photo keys Learn can show as squares (PlacePhotos: each place's first photo, for every place Learn asks); each needs a checked crop. */
+export const learnPhotoKeys = (tree: Tree): string[] =>
+  tree.places.filter((p) => STUDY_KINDS.includes(p.quiz)).flatMap((p) => photosOf(p.id).slice(0, 1).map(photoKey));
+
+/** "rioja-1" from a shown photo's src. */
+export const photoKey = (photo: { src: string }): string => photo.src.slice(photo.src.lastIndexOf('/') + 1).replace(/\.webp$/, '');

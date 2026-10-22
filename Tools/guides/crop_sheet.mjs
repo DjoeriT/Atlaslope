@@ -43,7 +43,10 @@ if (PAGE) {
   shown = tourPageKeys(loadTree(JSON.parse(readFileSync('data/places.json', 'utf8'))));
 } else {
   const { guideRows, squarePhotoKeys } = await server.ssrLoadModule('/src/home/guideCount.ts');
-  shown = squarePhotoKeys(guideRows());
+  const { learnPhotoKeys } = await server.ssrLoadModule('/src/quiz-ui/doorsModel.ts');
+  const { loadTree: load } = await server.ssrLoadModule('/src/tree/index.ts');
+  // Learn's place photos are squares too (owner 21 Oct 2026, Learn start card).
+  shown = [...new Set([...squarePhotoKeys(guideRows()), ...learnPhotoKeys(load(JSON.parse(readFileSync('data/places.json', 'utf8'))))])];
 }
 await server.close();
 
