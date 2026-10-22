@@ -4,6 +4,7 @@ import type { MouseEvent } from 'react';
 import type { Go } from '../cards/Link';
 import type { ShownPhoto } from '../facts';
 import { growFrom, reducedMotion } from '../story/unfold';
+import { useRef } from 'react';
 import { strings } from '../strings';
 import { selectionToHash, type Selection } from '../url';
 import { PHOTO_MAX_REM, Pic } from './Pic';
@@ -16,14 +17,19 @@ const Glyph = () => (
 
 export function MapCard({ id, photo, minutes, stops, go }: { id: string; photo?: ShownPhoto; minutes: number; stops: number; go: Go }) {
   const to: Selection = { kind: 'place', id, page: true, story: true };
+  const busy = useRef(false);
   const open = async (e: MouseEvent<HTMLAnchorElement>) => {
     if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
+    if (busy.current) return; // a second click while the photo grows does nothing (ReviewBot #189)
+    busy.current = true;
     const img = e.currentTarget.querySelector<HTMLImageElement>('.mc-img');
-    if (reducedMotion() || !img) { go(to); return; }
-    const release = await growFrom(img); // the photo grows to the full screen, then the map mode opens under it
-    go(to);
-    await release();
+    try {
+      if (reducedMotion() || !img) { go(to); return; }
+      const release = await growFrom(img); // the photo grows to the full screen, then the map mode opens under it
+      go(to);
+      await release();
+    } finally { busy.current = false; }
   };
   return (
     <a className="mapcard" href={selectionToHash(to)} onClick={open}>

@@ -30,10 +30,12 @@ export async function growFrom(img: HTMLImageElement): Promise<() => Promise<voi
       const t = setTimeout(res, 2500);
       addEventListener(MAP_IDLE_EVENT, () => { clearTimeout(t); setTimeout(res, 150); }, { once: true });
     });
-    await fade(g, 1, 0, 700);
-    g.remove();
+    try { if (g.isConnected) await fade(g, 1, 0, 700); } finally { g.remove(); }
   };
 }
+
+/** Drops a growing photo still on screen (the map closed before it faded, ReviewBot #189). */
+export const dropGrow = () => document.querySelectorAll('.grow').forEach((g) => g.remove());
 
 /** A plain cross-fade of an element (the map mode opening with reduced motion, the page returning on fold-back). */
 export const crossFade = (el: Element, ms: number) => fade(el, 0, 1, ms);

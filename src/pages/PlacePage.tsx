@@ -28,7 +28,7 @@ import type { Story } from '../story/format';
 import { flyKey } from '../story/steps';
 import type { Measures } from '../facts';
 import type { MeasureKind, StoryStep } from '../story/format';
-import { crossFade } from '../story/unfold';
+import { crossFade, dropGrow } from '../story/unfold';
 import { MapCard } from './MapCard';
 import { PHOTO_MAX_REM, Pic, sizesFor } from './Pic';
 
@@ -156,7 +156,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     if (page && !(tour && document.querySelector('.grow'))) crossFade(page, tour ? 250 : 450);
   }, [tour]);
   const [chapterNo, setChapterNo] = useState(0);
-  const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
+  const hideMap = () => { dropGrow(); setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
   const testSet = [place.id, ...zones.filter((z) => z.quiz !== 'none').map((z) => z.id)];
   const testMe = quizzed && (
     <div className="pg-testme">
