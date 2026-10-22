@@ -5,7 +5,7 @@ import { hoverProps } from '../map/hover';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Region, Tree } from '../tree';
-import { SPAIN, type Selection } from '../url';
+import { ATLAS_ID, SPAIN, type Selection } from '../url';
 import { CardShell } from './CardShell';
 import { Link, type Go } from './Link';
 import { SourceLine } from './PlaceFacts';
@@ -105,7 +105,7 @@ export function CountryCard({ tree, go, countryId }: Props & { countryId: string
   const covers = (COUNTRY_COVERS[country.id] ?? []).map((id) => photosOf(id)[0]).filter(Boolean);
   return (
     <CardShell
-      tree={tree} go={go} trail={tree.breadcrumb(country.id, 'country')} title={country.name}
+      tree={tree} go={go} trail={[{ level: 'atlas', id: ATLAS_ID, name: strings.atlas.crumb }, ...tree.breadcrumb(country.id, 'country')]} title={country.name}
       cover={<div className="cover-short"><CoverPhoto name={country.name} color="#141414" photos={covers} /></div>}
     >
       <Lede tree={tree} go={go} line={countryLine(country.id)} fallback={t.countryLedeRich(all.length, regions.length)} />

@@ -2,7 +2,7 @@ import { expect, test, type Page } from '@playwright/test';
 
 // Motion inside and between guides (owner points 8 and 9, 18 Oct 2026; Review/motion-spec.md).
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./?now=2026-10-18T10:00:00Z${hash}`);
 }

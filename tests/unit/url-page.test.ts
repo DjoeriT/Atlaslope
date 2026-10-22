@@ -20,7 +20,7 @@ describe('the place page route', () => {
   it('keeps page on regions (the region page) and ignores it on Spain', () => {
     expect(selectionToHash({ kind: 'region', id: 'rioja', page: true })).toBe('#region=rioja&page');
     expect(parseSelection('#region=rioja&page')).toEqual({ kind: 'region', id: 'rioja', page: true });
-    expect(parseSelection('#page').id).toBe('spain');
+    expect(parseSelection('#page').id).toBe('atlas');
   });
 });
 

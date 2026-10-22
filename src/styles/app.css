@@ -228,3 +228,23 @@ img.ph-fade{animation:ph-in .5s ease-out}
 :root{font-optical-sizing:auto}
 h1,h2,h3,.namecover span,.tiles b,.rtile .meta b{text-wrap:balance}
 p,figcaption,.why{text-wrap:pretty}
+
+/* The atlas cover card (E1, owner 22 Oct 2026; Review/mock-atlas-cover): real map stills and loops, a title under each, no text on them. */
+.cover-atlas .cover img{object-position:var(--crop,50% 50%)}
+.atlas-pn{margin:0 0 1.3rem}
+.atlas-pn img,.atlas-pn video{width:100%;aspect-ratio:8/5;object-fit:cover;display:block;border-radius:.3rem;box-shadow:0 0 0 1px var(--line2);background:var(--paper2)}
+.atlas-pn figcaption{margin-top:.5rem}
+.atlas-pn b{display:block;font:500 1.25rem/1.2 var(--serif)}
+.atlas-pn.lead b{font-size:1.6rem}
+.atlas-pn span{display:block;font-size:.9rem;color:var(--ink3);line-height:1.35;margin-top:.15rem}
+.atlas-tour-row{display:flex;align-items:center;gap:.8rem;margin:-.5rem 0 1.5rem}
+.atlas-quiet{font-size:.78rem;color:var(--ink3)}
+.atlas-imagery{margin:-.6rem 0 0;font-size:.66rem;line-height:1.35;color:var(--ink3)}
+.atlas-countries{list-style:none;margin:.3rem 0 0;padding:0}
+.atlas-countries li{border-radius:var(--rad);overflow:hidden;box-shadow:0 0 0 1px var(--line2)}
+.atlas-countries .ph{display:block;height:8.25rem;overflow:hidden}
+.atlas-countries .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.atlas-countries .row{display:flex;justify-content:space-between;align-items:center;gap:.8rem;padding:.7rem .9rem .8rem}
+.atlas-countries h3{font:500 1.6rem/1.1 var(--serif);margin:0;text-transform:none;letter-spacing:0;color:var(--ink)}
+.atlas-countries small{display:block;font-size:.85rem;color:var(--ink3);margin-top:.15rem}
+.atlas-totals{margin:.8rem 0 0}

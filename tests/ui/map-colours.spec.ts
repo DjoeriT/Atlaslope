@@ -9,7 +9,7 @@ const NOW = '2026-10-17T10:00:00Z';
 const answer = (place: string, memory: string, i: number) => ({ kind: 'answer', place, memory, type: 'find-it', right: true, at: `2026-10-10T10:0${i}:00Z`, seconds: 3 });
 const SEED = { version: 1, focus: [], savedAt: '', log: [answer('rioja', 'where', 0), answer('rioja-alta', 'where', 1)] };
 
-async function open(page: Page, hash = '', seed?: unknown) {
+async function open(page: Page, hash = '#country=spain', seed?: unknown) {
   await page.addInitScript(([s]) => {
     localStorage.setItem('atlaslope-first-run', 'seen');
     if (s && !sessionStorage.getItem('seeded')) { localStorage.setItem('atlaslope.quiz', JSON.stringify(s)); sessionStorage.setItem('seeded', '1'); }
@@ -46,7 +46,7 @@ test('the legend is not shown in the quiz', async ({ page }) => {
 });
 
 test('Spain and region cards show photo tiles with headlines, main grapes on the region card, and no Study counts even with progress', async ({ page }) => {
-  await open(page, '', SEED);
+  await open(page, '#country=spain', SEED);
   const card = page.locator('.card');
   // The Atlas shows no Study items (owner, 18 Oct 2026): the Spain card, not the Today card, and no due counts.
   await expect(card.locator('h1')).toHaveText('Spain');

@@ -1,6 +1,7 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import places from '../../data/places.json';
 import { CountryCard, PlaceCard, RegionCard } from '../cards/Cards';
+import { AtlasCard } from '../cards/AtlasCard';
 import { RegionPage } from '../pages/RegionPage';
 import { PlacePage } from '../pages/PlacePage';
 import { FlyCaption } from '../cards/FlyCaption';
@@ -16,7 +17,7 @@ import { useQuiz } from '../quiz-ui/useQuiz';
 import { strings } from '../strings';
 import type { MapPick } from '../quiz-ui/RoundPlayer';
 import { loadTree } from '../tree';
-import { SPAIN, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
+import { ATLAS, isAtlas, parseQuizRoute, parseSelection, parseView, quizToHash, selectionToHash, withView, type QuizRoute, type Selection, type View } from '../url';
 import { FirstRun } from './FirstRun';
 import { SiteBar } from './TopBar';
 import { withMotion, type Move } from './motion';
@@ -180,7 +181,7 @@ export function App() {
   }, []);
   return (
     <>
-      {!pageOpen && <SiteBar tree={tree} onOpen={go} current={quiz ? 'study' : 'atlas'} onAtlas={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(SPAIN); } }} />}
+      {!pageOpen && <SiteBar tree={tree} onOpen={go} current={quiz ? 'study' : 'atlas'} onAtlas={() => { if (quiz) openExplore(); else { setBackTo(null); setStay(null); go(ATLAS); } }} />}
       {/* Everything under the bar: the map and what floats on it are placed against this box, not the window. */}
       <div className="stage">
       <MapView focus={focus} restored={restored.current} quiz={quizView} onPick={(id) => { if (quizRef.current) pickOnMap(id); else go({ kind: 'place', id }); }} onView={onView} regions={tree.regionsOf(tree.countries[0].id)} />
@@ -201,7 +202,7 @@ export function App() {
           {place && flown && fly ? <FlyCaption place={place} chapter={fly.chapter} target={flown} go={go} onClose={closeFly} />
             : place ? <PlaceCard tree={tree} go={go} place={place} /> : region ? <RegionCard tree={tree} go={go} region={region} />
             // The Atlas shows no Study items: no Today card, no due counts (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
-            : <CountryCard tree={tree} go={go} countryId={sel.id} />}
+            : isAtlas(sel) ? <AtlasCard tree={tree} go={go} /> : <CountryCard tree={tree} go={go} countryId={sel.id} />}
         </Sheet>
       )}
       {!pageOpen && <FirstRun />}

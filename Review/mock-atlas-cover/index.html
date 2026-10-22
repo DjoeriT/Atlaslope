@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas First Card 3</title>
+<style>@font-face{font-family:Newsreader;font-weight:400;src:url(../../public/fonts/newsreader-latin-400-normal.woff2)}
+@font-face{font-family:Newsreader;font-weight:500;src:url(../../public/fonts/newsreader-latin-500-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(../../public/fonts/ibm-plex-sans-latin-400-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:500;src:url(../../public/fonts/ibm-plex-sans-latin-500-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(../../public/fonts/ibm-plex-sans-latin-600-normal.woff2)}
+:root{--serif:Newsreader,Georgia,serif;--sans:"IBM Plex Sans",sans-serif;--ink:#1A1714;--ink2:#46403A;--ink3:#6F6860;--line:#E8E3D9;--line2:#D8CFBF;--paper2:#F7F5F0;--band:#141414;--foil:#E9D8B4;--foil-ink:#7D6540;--rad:.4rem;--shadow:0 0 0 1px rgba(20,20,20,.06),0 18px 44px rgba(0,0,0,.16)}
+*{box-sizing:border-box}
+body{margin:0;font:1rem/1.45 var(--sans);color:var(--ink);background:#fff}
+a{color:inherit}
+.page{max-width:1240px;margin:0 auto;padding:0 1.5rem 4rem}
+.page>header{padding:2rem 0 1rem;border-bottom:1px solid var(--line)}
+.page h1{font:500 2.3rem/1.15 var(--serif);margin:0 0 .5rem}
+.page header p{margin:.25rem 0;color:var(--ink2);max-width:75ch}
+.opt{padding:2.5rem 0;border-bottom:1px solid var(--line)}
+.opt h2{font:500 1.6rem/1.2 var(--serif);margin:0 0 .5rem;display:flex;align-items:center;gap:.75rem}
+.rec{font:600 .72rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;background:var(--band);color:var(--foil);padding:.4rem .6rem;border-radius:.3rem}
+.opt ul.why{margin:.25rem 0 .75rem;padding-left:1.1rem;color:var(--ink2);max-width:90ch;font-size:.9rem}
+.opt ul.why li{margin:.2rem 0}
+.row{display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap}
+.cap{font-size:.78rem;color:var(--ink3);margin:.4rem 0 0;max-width:60ch}
+.wrap{zoom:.62;width:max-content;border-radius:.4rem;box-shadow:0 0 0 1px var(--line2);overflow:hidden}
+.note{margin-top:2rem;background:var(--paper2);border-radius:var(--rad);padding:1.25rem 1.5rem}
+.note h2{font:500 1.25rem var(--serif);margin:0 0 .5rem}
+.note p{margin:.4rem 0;font-size:.9rem;color:var(--ink2);max-width:90ch}
+.small-note{font-size:.78rem!important;color:var(--ink3)!important}
+.fr{position:relative;width:1280px;height:800px;overflow:hidden;background:#0b1016;font-size:16px}
+.fr.m{width:375px;height:812px}
+.fr>.map{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left}
+.dim{position:absolute;inset:64px 0 0 0;background:rgba(20,20,20,.58)}
+.m .dim{inset:56px 0 0 0}
+.card{position:absolute;left:16px;top:81px;bottom:26px;width:400px;background:#fff;border-radius:var(--rad);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden}
+.m .card{left:0;right:0;width:auto;top:auto;bottom:0;border-radius:var(--rad) var(--rad) 0 0}
+.card .scroll{overflow:hidden;flex:1;min-height:0}
+.card .body{padding:1rem 1.4rem 1.4rem}
+.m .card .body{padding:.9rem 1rem 1rem}
+.herop{width:100%;height:230px;object-fit:cover;object-position:50% 82%;display:block}
+.m .herop{height:130px}
+.credit{font-size:.66rem;line-height:1.35;color:var(--ink3);margin:.4rem 1.4rem 0}
+.m .credit{margin:.3rem 1rem 0}
+.credit.nm{margin:.4rem 0 0}
+.card h1{font:500 2.3rem/1.1 var(--serif);margin:.7rem 0 .45rem;padding:0}
+.m .card h1{font-size:1.6rem;margin:.5rem 0 .3rem}
+.card h2{font:500 1.25rem/1.2 var(--serif);margin:1.4rem 0 .6rem}
+.lede{font:400 1.25rem/1.35 var(--serif);margin:0 0 1.1rem;color:var(--ink2)}
+.m .lede{font-size:1.05rem;margin-bottom:.8rem}
+.q{font-size:.78rem;color:var(--ink3)}
+/* feature panels: a big real screenshot, the benefit under it */
+.pn{margin:0 0 1.3rem}
+.pn img{width:100%;aspect-ratio:8/5;object-fit:cover;object-position:top;display:block;border-radius:.3rem;box-shadow:0 0 0 1px var(--line2)}
+.pn figcaption{margin-top:.5rem}
+.pn b{display:block;font:500 1.25rem/1.2 var(--serif)}
+.pn span{display:block;font-size:.9rem;color:var(--ink3);line-height:1.35;margin-top:.15rem}
+.pn.lead img{aspect-ratio:8/5}
+.pn.lead b{font-size:1.6rem}
+.m .pn.lead b{font-size:1.25rem}
+.map-tour{display:flex;align-items:center;gap:.8rem;margin:-.5rem 0 1.5rem}
+.btn{display:inline-block;background:var(--band);color:var(--foil);font:600 .95rem/1 var(--sans);padding:.8rem 1.1rem;border-radius:var(--rad);white-space:nowrap}
+.btn.sm{padding:.7rem .9rem}
+.link{color:var(--foil-ink);font-weight:500;font-size:.9rem;text-decoration:underline}
+.tile{display:block;border-radius:var(--rad);overflow:hidden;box-shadow:0 0 0 1px var(--line2);background:#fff}
+.tile img{width:100%;height:132px;object-fit:cover;display:block}
+.tile .t{padding:.7rem .9rem .8rem;display:flex;justify-content:space-between;align-items:center}
+.tile h3{font:500 1.6rem/1.1 var(--serif);margin:0}
+.tile small{display:block;font-size:.85rem;color:var(--ink3);margin-top:.15rem}
+.tallcol{height:auto;width:400px;background:#fff}
+.tallcol .card{position:relative;left:0;top:0;bottom:auto;box-shadow:none;width:100%;border-radius:0}
+.tallcol .scroll{overflow:visible}
+.about{position:absolute;left:296px;top:337px}
+/* F */
+.modal{position:absolute;background:#fff;border-radius:var(--rad);box-shadow:var(--shadow);overflow:hidden}
+.modal.wide{left:50%;top:76px;transform:translateX(-50%);width:1060px}
+.m .modal{left:0;right:0;bottom:0;top:56px;border-radius:var(--rad) var(--rad) 0 0}
+.scrollm{height:100%;overflow:hidden}
+.modal .hero{width:100%;height:105px;object-fit:cover;object-position:50% 45%;display:block}
+.m .modal .hero{height:96px}
+.modal .in{padding:1.1rem 2rem 1.4rem}
+.m .modal .in{padding:.8rem 1rem 1rem}
+.modal h1{font:400 3.2rem/1.05 var(--serif);margin:0 0 .4rem}
+.m .modal h1{font-size:2rem}
+.modal .sub{font:400 1.25rem/1.35 var(--serif);color:var(--ink2);margin:0 0 1rem}
+.fgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:1.5rem;align-items:start}
+.fgrid .pn.lead{margin-bottom:.8rem}
+.fgrid .map-tour{margin:0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.g2 .pn{margin:0}
+.g2 .pn img{aspect-ratio:3/2}
+.g2 .pn b{font-size:1rem}
+.g2 .pn span{font-size:.8rem}
+.m .g2{gap:.6rem}
+.m .g2 .pn span{display:none}
+.m .g2 .pn b{font-size:.95rem}
+.cta{display:flex;align-items:center;gap:1.4rem;margin-top:1.2rem}
+.m .cta{flex-direction:column;align-items:stretch;margin-top:.9rem}
+.m .cta .btn{text-align:center;padding:1rem}
+/* G */
+.band{position:absolute;left:0;right:0;top:64px;height:560px;overflow:hidden}
+.m .band{top:56px;height:600px}
+.band .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .shade{position:absolute;inset:0;background:linear-gradient(rgba(20,20,20,.72),rgba(20,20,20,.5) 40%,rgba(20,20,20,.78))}
+.bin{position:relative;padding:1.8rem 2rem;color:#fff}
+.m .bin{padding:1.2rem 1rem}
+.bin .top{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem}
+.bin h1{font:400 3.2rem/1.05 var(--serif);margin:0 0 .4rem;color:var(--foil)}
+.m .bin h1{font-size:2.3rem;margin-bottom:1rem}
+.bin .sub{font:400 1.25rem/1.35 var(--serif);margin:0;color:#fff}
+.bin .act{display:flex;flex-direction:column;align-items:flex-end;gap:.5rem}
+.bin .btn{background:var(--foil);color:var(--band)}
+.q2{font-size:.78rem;color:#E8E3D9}
+.hrow{display:flex;gap:.9rem;margin-top:1.3rem;align-items:stretch}
+.m .hrow{overflow:hidden;margin-top:0}
+.hrow .pn{margin:0;flex:0 0 200px;background:#fff;color:var(--ink);border-radius:var(--rad);overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.hrow .pn.lead{flex:0 0 380px}
+.m .hrow .pn{flex:0 0 250px}
+.m .hrow .pn.lead{flex:0 0 285px}
+.hrow .pn img{border-radius:0;box-shadow:none;aspect-ratio:3/2}
+.hrow .pn.lead img{aspect-ratio:8/5}
+.hrow .pn figcaption{padding:.6rem .8rem .8rem;margin:0}
+.hrow .pn b{font-size:1.1rem}
+.hrow .pn.lead b{font-size:1.4rem}
+.hrow .pn span{font-size:.8rem}
+.m .bin .cta{position:absolute;left:1rem;right:1rem;bottom:1.2rem;margin:0}
+.m .bin .cta .btn{width:100%}
+.m .modal .cta{position:absolute;left:0;right:0;bottom:0;margin:0;background:#fff;padding:.8rem 1rem;box-shadow:0 -10px 14px -10px rgba(0,0,0,.3)}
+.m .modal .hero{height:84px}
+.m .modal h1{font-size:1.7rem}
+.fgrid .pn.lead img{aspect-ratio:2/1}
+.pn video{width:100%;aspect-ratio:8/5;object-fit:cover;display:block;border-radius:.3rem;box-shadow:0 0 0 1px var(--line2);background:#222}
+.pn img{object-position:center}
+.pn.lead{margin-bottom:.9rem}
+.pn.lead+.map-tour{margin-top:0}
+.pn+.credit.nm{margin:-.8rem 0 1.2rem}
+/* E2: full-bleed panels, title on a gradient along the bottom edge */
+.pf{position:relative;margin:0 0 1rem;border-radius:.3rem;overflow:hidden;background:#222}
+.pf img{width:100%;aspect-ratio:8/5;object-fit:cover;display:block}
+.pf.lead img{aspect-ratio:4/3}
+.pf figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.8rem 1rem .8rem;background:linear-gradient(transparent,rgba(20,20,20,.82));color:#fff;display:flex;justify-content:space-between;align-items:flex-end;gap:.6rem}
+.pf b{display:block;font:500 1.25rem/1.2 var(--serif)}
+.pf.lead b{font-size:1.6rem}
+.m .pf.lead b{font-size:1.25rem}
+.pf span{display:block;font-size:.85rem;line-height:1.3;margin-top:.15rem;color:#F0EBE0}
+.pf .btn{background:var(--foil);color:var(--band);flex:none}
+</style></head>
+<body><div class="page">
+<header>
+<h1>Atlas first card: round 3, option E</h1>
+<p>Same card as E in round 2, with plainer claims and two ways to make it livelier. Titles are literal: Follow a map tour, See where it grows, See its climate, Tilt to see the slopes, Read why it tastes that way.</p>
+<p><b>Headlines:</b> 1. "See where your wine comes from"  2. "Wine places on the real map"  3. "Find the place behind the glass"</p>
+<p>Everything on the map is the real app: the clips are screen recordings of it, trimmed to 6 seconds and cropped to the map, no interface. Numbers sit in one quiet line (106 places, 10 regions, 15 map tours, read from the tree).</p>
+</header>
+<section class="opt" id="e1">
+<h2>E1. Motion <span class="rec">Recommended</span></h2>
+<ul class="why"><li>The map tour and the slopes panels are short muted loops of the real app: a Priorat tour moving between stops, and a slow turn over the Ribeira Sacra slopes (autoplay, muted, loop, playsinline, with a still poster).</li><li>With reduced motion set, the clips stay as their still poster and do not play. The three other panels are tight stills, with titles under them.</li><li>Clips: tour.webm 0.49 MB, tilt.webm 0.66 MB (VP8 webm, 800 x 500). No ffmpeg on this Mac, so I used the encoder that ships with Playwright. For production an mp4 (H.264) copy would be added for older Safari.</li></ul>
+<div class="row">
+<div><div class="wrap"><div class="fr"><img class="map" src="img/map_d.jpg" alt="The atlas map"><div class="card"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pn lead"><video muted loop playsinline autoplay preload="auto" poster="img/poster_tour.jpg" aria-label="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><source src="video/tour.webm" type="video/webm"></video><figcaption><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></figcaption></figure><p class="map-tour"><span class="btn sm">Map tour</span><span class="q">Live in 15 places</span></p><figure class="pn "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></figcaption></figure><figure class="pn "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><b>See its climate</b><span>One colour for each climate, on every wine place.</span></figcaption></figure><figure class="pn "><video muted loop playsinline autoplay preload="auto" poster="img/poster_tilt.jpg" aria-label="Ribeira Sacra tilted into 3D"><source src="video/tilt.webm" type="video/webm"></video><figcaption><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></figcaption></figure><figure class="pn "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><b>Read why it tastes that way</b><span>Every place has a short guide.</span></figcaption></figure><p class="credit nm">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">Desktop: the card at the top; it scrolls.</p></div>
+<div><div class="wrap"><div class="fr m"><img class="map" src="img/map_m.jpg" alt="The atlas map"><div class="card" style="height:64%"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pn lead"><video muted loop playsinline autoplay preload="auto" poster="img/poster_tour.jpg" aria-label="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><source src="video/tour.webm" type="video/webm"></video><figcaption><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></figcaption></figure><p class="map-tour"><span class="btn sm">Map tour</span><span class="q">Live in 15 places</span></p><figure class="pn "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></figcaption></figure><figure class="pn "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><b>See its climate</b><span>One colour for each climate, on every wine place.</span></figcaption></figure><figure class="pn "><video muted loop playsinline autoplay preload="auto" poster="img/poster_tilt.jpg" aria-label="Ribeira Sacra tilted into 3D"><source src="video/tilt.webm" type="video/webm"></video><figcaption><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></figcaption></figure><figure class="pn "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><b>Read why it tastes that way</b><span>Every place has a short guide.</span></figcaption></figure><p class="credit nm">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">Phone: sheet at 64%.</p></div>
+<div><div class="wrap unroll"><div class="fr tallcol"><div class="card" style="height:auto;top:0;position:relative;left:0;bottom:auto"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pn lead"><video muted loop playsinline autoplay preload="auto" poster="img/poster_tour.jpg" aria-label="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><source src="video/tour.webm" type="video/webm"></video><figcaption><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></figcaption></figure><p class="map-tour"><span class="btn sm">Map tour</span><span class="q">Live in 15 places</span></p><figure class="pn "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></figcaption></figure><figure class="pn "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><b>See its climate</b><span>One colour for each climate, on every wine place.</span></figcaption></figure><figure class="pn "><video muted loop playsinline autoplay preload="auto" poster="img/poster_tilt.jpg" aria-label="Ribeira Sacra tilted into 3D"><source src="video/tilt.webm" type="video/webm"></video><figcaption><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></figcaption></figure><figure class="pn "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><b>Read why it tastes that way</b><span>Every place has a short guide.</span></figcaption></figure><p class="credit nm">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">The whole card unrolled (clips play in this view too).</p></div>
+</div></section>
+<section class="opt" id="e2">
+<h2>E2. Stills, done better</h2>
+<ul class="why"><li>Every panel is a full-bleed tight crop of the real map, no interface, with its title on a dark gradient along the bottom edge. Only satellite and map images carry text.</li><li>The guide panel is a real vineyard photo, with its credit line under it. The Map tour button sits in the lead panel.</li><li>Honest limit: the imagery is a satellite mosaic, so there is no golden light to find. The crops are chosen for relief and colour instead (the red slope shading in the tour, the steep valley in the 3D crop).</li></ul>
+<div class="row">
+<div><div class="wrap"><div class="fr"><img class="map" src="img/map_d.jpg" alt="The atlas map"><div class="card"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pf lead"><img src="img/c_tour.jpg" alt="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><figcaption><div><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></div><span class="btn sm">Map tour</span></figcaption></figure><figure class="pf "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><div><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></div></figcaption></figure><figure class="pf "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><div><b>See its climate</b><span>One colour for each climate, on every wine place.</span></div></figcaption></figure><figure class="pf "><img src="img/c_steep.jpg" alt="Ribeira Sacra tilted into 3D"><figcaption><div><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></div></figcaption></figure><figure class="pf "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><div><b>Read why it tastes that way</b><span>Every place has a short guide.</span></div></figcaption></figure><p class="credit nm" style="margin:-.9rem 0 1.2rem">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">Desktop: the card at the top; it scrolls.</p></div>
+<div><div class="wrap"><div class="fr m"><img class="map" src="img/map_m.jpg" alt="The atlas map"><div class="card" style="height:64%"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pf lead"><img src="img/c_tour.jpg" alt="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><figcaption><div><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></div><span class="btn sm">Map tour</span></figcaption></figure><figure class="pf "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><div><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></div></figcaption></figure><figure class="pf "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><div><b>See its climate</b><span>One colour for each climate, on every wine place.</span></div></figcaption></figure><figure class="pf "><img src="img/c_steep.jpg" alt="Ribeira Sacra tilted into 3D"><figcaption><div><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></div></figcaption></figure><figure class="pf "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><div><b>Read why it tastes that way</b><span>Every place has a short guide.</span></div></figcaption></figure><p class="credit nm" style="margin:-.9rem 0 1.2rem">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">Phone: sheet at 64%.</p></div>
+<div><div class="wrap unroll"><div class="fr tallcol"><div class="card" style="height:auto;top:0;position:relative;left:0;bottom:auto"><div class="scroll">
+<img class="herop" src="img/rioja-1.webp" alt="Autumn vines along a track in Rioja">
+<p class="credit">Photo: Nicondarreta · CC BY-SA 4.0 · cropped and resized</p>
+<div class="body">
+<h1>See where your wine comes from</h1>
+<p class="lede">Spain's wine places on a real map.</p>
+<figure class="pf lead"><img src="img/c_tour.jpg" alt="A Priorat map tour: the map at a stop on the Siurana river, slopes shaded"><figcaption><div><b>Follow a map tour</b><span>A guide flies you across the map, stop by stop.</span></div><span class="btn sm">Map tour</span></figcaption></figure><figure class="pf "><img src="img/c_borders.jpg" alt="Rioja official borders over satellite imagery"><figcaption><div><b>See where it grows</b><span>Each place is drawn where the law puts it, over satellite imagery.</span></div></figcaption></figure><figure class="pf "><img src="img/c_climate.jpg" alt="Iberia coloured by climate"><figcaption><div><b>See its climate</b><span>One colour for each climate, on every wine place.</span></div></figcaption></figure><figure class="pf "><img src="img/c_steep.jpg" alt="Ribeira Sacra tilted into 3D"><figcaption><div><b>Tilt to see the slopes</b><span>Tilt the map to see how the land rises.</span></div></figcaption></figure><figure class="pf "><img src="img/rias-baixas-1.webp" alt="Granite posts holding a pergola of vines in Rias Baixas"><figcaption><div><b>Read why it tastes that way</b><span>Every place has a short guide.</span></div></figcaption></figure><p class="credit nm" style="margin:-.9rem 0 1.2rem">Photo: jacilluch · CC BY-SA 2.0 · cropped and resized</p>
+<h2>Countries</h2>
+<a class="tile"><img src="img/priorat-1.webp" alt="Terraced vineyards in Priorat"><div class="t"><div><h3>Spain</h3><small>106 places · 10 regions</small></div><span class="btn sm">Open Spain</span></div></a><p class="credit nm">Photo: Angela Llop · CC BY-SA 2.0 · cropped and resized</p>
+<p class="q" style="margin:.8rem 0 0">106 wine places · 10 regions · 15 map tours</p>
+</div></div></div></div></div><p class="cap">The whole card unrolled.</p></div>
+</div></section>
+<div class="note">
+<h2>How a second country fits</h2>
+<p>The card stays the Atlas front door. "Countries" gets a second tile and the quiet numbers line becomes totals. The hero, the panels and the clips are about the product and stay as they are.</p>
+<p class="small-note">Frames show the card at its top; the real card scrolls. Nothing here is built in the app yet.</p>
+</div>
+</div>
+<script>
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+</script>
+</body></html>

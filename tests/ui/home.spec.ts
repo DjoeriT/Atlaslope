@@ -43,7 +43,7 @@ test('Open the atlas leads to the atlas, and its logo comes back home', async ({
   await page.goto('../');
   await page.getByRole('link', { name: 'Open the atlas' }).first().click();
   await expect(page).toHaveURL(/\/atlas\/(#.*)?$/);
-  await expect(page.locator('.card h1')).toHaveText('Spain');
+  await expect(page.locator('.card h1')).toHaveText('See where your wine comes from'); // the Atlas cover (PR #202)
   await expect(page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Atlas' })).toHaveAttribute('aria-current', 'page');
   await page.getByRole('link', { name: 'AtlaSlope home' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Know the land behind the glass.');

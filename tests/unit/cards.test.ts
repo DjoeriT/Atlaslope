@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { focusFor, parentOf, selectionOf, validSelection } from '../../src/cards/nav';
 import { boundsOf } from '../../src/map/focus';
 import { loadTree } from '../../src/tree';
-import { SPAIN, parseSelection, parseView, selectionToHash } from '../../src/url';
+import { ATLAS, SPAIN, parseSelection, parseView, selectionToHash } from '../../src/url';
 
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
 
@@ -19,9 +19,15 @@ describe('url state', () => {
     expect(parseSelection('#region=rioja')).toEqual({ kind: 'region', id: 'rioja' });
     expect(parseSelection('#place=rioja')).toEqual({ kind: 'place', id: 'rioja' });
   });
-  it('treats an empty or broken hash as Spain with no view', () => {
-    expect(selectionToHash(SPAIN)).toBe('');
-    expect(parseSelection('')).toEqual(SPAIN);
+  it('treats an empty hash as the atlas cover, and gives Spain its own address', () => {
+    expect(selectionToHash(ATLAS)).toBe('');
+    expect(parseSelection('')).toEqual(ATLAS);
+    expect(selectionToHash(SPAIN)).toBe('#country=spain');
+    expect(parseSelection('#country=spain')).toEqual(SPAIN);
+    expect(parseSelection(selectionToHash(SPAIN, { lng: -3, lat: 40, zoom: 5, bearing: 0, pitch: 0 }))).toEqual(SPAIN);
+    expect(validSelection(tree, ATLAS)).toEqual(ATLAS);
+    expect(validSelection(tree, SPAIN)).toEqual(SPAIN);
+    expect(validSelection(tree, { kind: 'country', id: 'atlantis' })).toEqual(SPAIN);
     expect(parseView('#view=1,2,3')).toBeNull();
     expect(parseView('#view=1,99,3,0,0')).toBeNull();
   });

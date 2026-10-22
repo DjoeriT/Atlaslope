@@ -3,7 +3,7 @@ import { expect, test, type Page } from '@playwright/test';
 // The fact sheet, now on the full place page (#place=<id>&page): written sections with sources, measured charts, photos with credits.
 // The teaser card keeps the opening sentence, three facts and the photo credit.
 
-async function open(page: Page, hash = '') {
+async function open(page: Page, hash = '#country=spain') {
   await page.addInitScript(() => localStorage.setItem('atlaslope-first-run', 'seen'));
   await page.goto(`./${hash}`);
   await expect(page.locator('h1').first()).toBeVisible();

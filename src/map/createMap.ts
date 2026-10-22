@@ -276,7 +276,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     };
     if (!want.frame) {
       framePending = false;
-      fit(countryConfig(want.country).bounds);
+      fit(want.bounds ?? countryConfig(want.country).bounds);
     } else if ('point' in want.frame) {
       framePending = false;
       const to = { center: want.frame.point, zoom: want.frame.zoom };
