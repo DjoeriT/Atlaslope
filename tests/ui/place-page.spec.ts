@@ -89,7 +89,7 @@ test('the jump bar lists only the sections that exist and moves focus to the sec
   await expect(page.getByRole('navigation', { name: 'In this guide' }).locator('a')).toHaveText(['The place', 'The weather', 'The ground', 'The rules', 'How it tastes', 'In short', 'Read the label', 'Sources']);
 });
 
-for (const [id, n] of [['yecla', 1], ['ribera-del-duero', 2], ['cebreros', 3]] as const) {
+for (const [id, n] of [['yecla', 1], ['jumilla', 2], ['cebreros', 3]] as const) {
   test(`the mosaic of ${id} has ${n} photo${n > 1 ? 's' : ''} and no empty frame`, async ({ page }) => {
     await open(page, `#place=${id}&page`);
     const figures = page.locator('.pg-mosaic figure');
