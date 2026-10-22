@@ -24,9 +24,26 @@ this thread no matter what", 22 Oct 2026).
 - Next tours: pilot 2, one big and one steep: Ribera del Duero and Ribeira Sacra [A: check both are in the 13 by the rule in
   `docs/PROJECT.md` "Map tours"]. Then 3-4 guides per PR if under about 100K a guide. Brief: `2026-10-21-map-tours.md` "Next".
 
-## Slice 2: the map unfold (branch `claude/map-unfold`)
-- Card A (full-screen v4 map mode from release-59 src/story, whole guide in the reading column, Close the map to the same paragraph).
-- Card B (FLIP grow from the card, cross-fade, fold-back, reduced motion). Card C (Priorat, shots next to the mock, ReviewBot).
+## Slice 2: the map unfold, PR #189 [V]
+- "Read with the map" grows the photo to full screen, then the v3 full-screen map mode (own band, narrow column, stop cards, terrain
+  toggle, locator, slope key). Close the map returns to the same paragraph. Owner fixes: heading B (number in the kicker), lede on top of
+  the map column. ReviewBot: 0 blockers; double-click guard and overlay cleanup fixed. Flaky 9-stop test: #190, test.slow() with numbers.
+- Release 64 published from 5320413 (tag release-64), live check green in headless Chromium at 1440 and 390. The tester note slipped
+  out of #189 and ships in #191.
+
+## Map tours: rule A and 13 new tours, PR #191
+- Rule A (owner, in docs/PROJECT.md "Map tours", for every country): at least 4 fly stops in the guide's own text, and steep, 500 m
+  altitude spread, two climates, or big (top tier or top 8 by area). 14 guides plus Ribera del Duero as the owner's pick.
+- Built by 2 pilot builders and 4 parallel builders (owner allowed parallel for data-only work, 22 Oct 2026); LeadBot union-merged the
+  shared lists. Measured: pilots 97K and 117K; batches 171K, 135K, 185K, 141K (about 57K a guide).
+- Owner fixes: phone band says "Back"; the map answers sooner: a stop comes up at the paragraph or zone card that names it, flights
+  1.5-2.5 s, 1.2 s wait (Rioja: 250-550 px sooner).
+- Raimat (Costers del Segre): the pliego says "en el extremo oriental"; the map shows west. Marker keeps the guide's sentence.
+- ReviewBot: 0 blockers; duplicate crop key fixed. Notes: 28 of 39 new crops keep the centre focus (builders say checked by eye);
+  Cangas rock key repeats "Sandstones and slates" (two colours, one unit); some stops without a photo (Commons had none usable).
+- Issues: #188 Priorat stop 6 never settles in shots-tour; #190 flaky 9-stop test (made slow, not fixed at the root).
 
 ## Open
-1. Release after #187: ask the owner ("publish release N" only on his words).
+1. Release 65 for the tours: only on the owner's words "publish release 65".
+2. Batch 2's builder worktree (agent-a13c0db72cb2d9b09) was locked by a running process; remove it with its .env.local copy.
+3. Raimat note in the guide (owner's call); Cangas rock key labels; shots-tour "imagery did not load" false flags.
