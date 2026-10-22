@@ -70,11 +70,11 @@ test('the soils stop shows the IGME rock key and the slope key; the top buttons 
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
 });
 
-test('on a phone the map strip is 300 px and the credit is folded', async ({ page }) => {
+test('on a phone the map is pinned at the top, 42% of the screen, and the credit is folded', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await open(page, '#place=rioja&page&story');
   await expect(mapCol(page)).toBeVisible();
-  await expect(mapCol(page)).toHaveCSS('height', '300px');
+  await expect(mapCol(page)).toHaveCSS('height', '354.48px');
   await expect(page.locator('.pg-tourmap .story-credit')).toBeHidden();
 });
 
