@@ -26,7 +26,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/natural-earth-spain.geojson data/koppen-spain.geojson data/added-boundaries.geojson
-          cp data/raw/build/munis-report.json Review/sources/added-municipalities-matched.json && git add Review/sources/added-municipalities-matched.json
+          cp "${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/build/munis-report.json" Review/sources/added-municipalities-matched.json && git add Review/sources/added-municipalities-matched.json
           git diff --cached --quiet && exit 0
           git commit -q -m "Data build: results of run ${{ github.run_id }}"
           git pull -q --no-rebase origin "$BRANCH"

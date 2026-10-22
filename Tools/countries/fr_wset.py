@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """France WSET L3 place list (decision #53, owner 22 Oct 2026: the WSET list first, region by region). Costs no tokens.
 
-Usage: fr_wset.py [--sources]   (in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
+Usage: fr_wset.py [--sources]   (raw folder: Tools/rawdir.py)
 
 Reads the name table in Review/countries/france-prep/wset-l3-names.md (rows with an EU register file number), joins each to
 data/countries/fr/register.json (current single document = last summary sheet) and to the INAO parcel shapefile's names, and
@@ -23,7 +23,10 @@ import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = Path(os.environ.get("ATLASLOPE_RAW", ROOT / "data/raw")) / "countries/fr"
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
+RAW = RAW / "countries/fr"
 TABLE = ROOT / "Review/countries/france-prep/wset-l3-names.md"
 OUT = ROOT / "data/countries/fr/wset-places.json"
 

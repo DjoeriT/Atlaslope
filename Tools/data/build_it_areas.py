@@ -3,17 +3,17 @@
 
 Two routes: 'piemonte' takes the region's official DOC/DOCG polygon; 'istat' unions the municipalities the spec names from ISTAT's
 generalised limits. Partial municipalities are taken whole, so an 'istat' outline is marked approximate and carries the official
-area next to its own. Raw inputs (git-ignored, data/raw/countries/it/) are the two zips listed in data/SOURCES.md.
+area next to its own. Raw inputs (<raw folder>/countries/it/) are the two zips listed in data/SOURCES.md.
 Writes data/countries/it/areas.geojson. Run: python3 -I Tools/data/build_it_areas.py
 """
 import json, re, subprocess, tempfile, unicodedata, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = ROOT / "data/raw/countries/it"
-if not RAW.exists():  # a worktree has no raw store; it lives in the main checkout
-    RAW = Path(subprocess.run(["git", "-C", str(ROOT), "worktree", "list", "--porcelain"], capture_output=True, text=True,
-                              check=True).stdout.split("\n")[0].split(" ", 1)[1]) / "data/raw/countries/it"
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
+RAW = RAW / "countries/it"
 SPEC = ROOT / "data/countries/it/areas-spec.json"
 OUT = ROOT / "data/countries/it/areas.geojson"
 SIMPLIFY = 40  # metres in the source's UTM 32N, as Portugal's ~40 m: the outline is read at region zoom (decision #38)

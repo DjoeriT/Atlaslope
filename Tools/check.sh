@@ -16,6 +16,11 @@ run() {   # run "name" "summary grep pattern" command...
 }
 
 run "Typecheck" "error|Found [0-9]+ error" npx tsc --noEmit
+run "No symlinks in the repo" "." bash -c '
+  # 22 Oct 2026: a committed data/raw link replaced the raw folder on checkout and wiped it. Raw downloads live outside the repo (Tools/rawdir.py).
+  links=$(git ls-files -s | awk "\$1 == \"120000\" { sub(/^[^\t]*\t/, \"\"); print }")
+  [ -z "$links" ] || { echo "symlinks are committed (never commit a link):"; echo "$links"; exit 1; }
+  echo "no committed symlinks"'
 run "Unit tests" "Tests +[0-9]+|passed|failed" npx vitest run --reporter=dot
 run "Data ledger" "." bash -c '
   missing=0
