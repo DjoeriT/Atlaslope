@@ -6,6 +6,7 @@ import json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41.35)}  # same as fetch_layers.py
+BBOX["ribeira-sacra"] = (-7.95, 42.20, -7.05, 42.90)  # as fetch_layers.py
 MARGIN = 0.4  # 0.2 left bare bands at the top and bottom of a 1400x850 view
 
 

@@ -117,6 +117,7 @@ def slope_overlay(cache, bbox, pad, colour, alpha, threshold=30.0):
 
 # Fetch boxes of data/story (lon/lat); padded 0.06 degrees so every stop lies inside the overlay.
 BOUNDS = {'rioja': [-3.15, 42.05, -1.65, 42.70], 'priorat': [0.65, 41.05, 1.00, 41.35]}
+BOUNDS['ribeira-sacra'] = [-7.95, 42.20, -7.05, 42.90]  # as fetch_layers.py
 TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most; soft edge between 27% and 33% slope
 
 if __name__ == '__main__':
