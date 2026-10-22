@@ -1146,6 +1146,123 @@
     "pauillac-doc:p6",
     "pauillac-doc:p8"
    ]
+  },
+  "bordeaux": {
+   "title": "Gravel and clay-limestone, tempered by water",
+   "cite": [
+    "bordeaux-doc:p10",
+    "bordeaux-doc:p11",
+    "bordeaux-doc:p13"
+   ]
+  },
+  "bordeaux-superieur": {
+   "title": "Gravel terraces, blends meant for ageing",
+   "cite": [
+    "bordeaux-superieur-doc:p9",
+    "bordeaux-superieur-doc:p10",
+    "bordeaux-superieur-doc:p12"
+   ]
+  },
+  "cotes-de-bordeaux": {
+   "title": "Clay-limestone hills on the right banks",
+   "cite": [
+    "cotes-de-bordeaux-doc:p5"
+   ]
+  },
+  "entre-deux-mers": {
+   "title": "A plateau between two rivers",
+   "cite": [
+    "entre-deux-mers-doc:p4",
+    "entre-deux-mers-doc:p6"
+   ]
+  },
+  "medoc": {
+   "title": "Gravel ridges by the estuary",
+   "cite": [
+    "medoc-doc:p6",
+    "medoc-doc:p8"
+   ]
+  },
+  "haut-medoc": {
+   "title": "Gravel rises on the Gironde",
+   "cite": [
+    "haut-medoc-doc:p6",
+    "haut-medoc-doc:p3"
+   ]
+  },
+  "saint-estephe": {
+   "title": "Gravel ridges sheltered by the estuary",
+   "cite": [
+    "saint-estephe-doc:p6",
+    "saint-estephe-doc:p7",
+    "saint-estephe-doc:p8"
+   ]
+  },
+  "margaux": {
+   "title": "Gravel terraces on the estuary",
+   "cite": [
+    "margaux-doc:p3",
+    "margaux-doc:p5",
+    "margaux-doc:p6"
+   ]
+  },
+  "saint-julien": {
+   "title": "Gravel ridges, reds for long ageing",
+   "cite": [
+    "saint-julien-doc:p6",
+    "saint-julien-doc:p8"
+   ]
+  },
+  "graves": {
+   "title": "Gravel and sand, softened by forest",
+   "cite": [
+    "graves-doc:p7",
+    "graves-doc:p8",
+    "graves-doc:p9"
+   ]
+  },
+  "pessac-leognan": {
+   "title": "Gravel over fissured limestone",
+   "cite": [
+    "pessac-leognan-doc:p6",
+    "pessac-leognan-doc:p8"
+   ]
+  },
+  "saint-emilion": {
+   "title": "A limestone plateau above the Dordogne",
+   "cite": [
+    "saint-emilion-doc:p6",
+    "saint-emilion-doc:p8"
+   ]
+  },
+  "saint-emilion-grand-cru": {
+   "title": "Limestone plateau, rich Merlot",
+   "cite": [
+    "saint-emilion-grand-cru-doc:p5",
+    "saint-emilion-grand-cru-doc:p6",
+    "saint-emilion-grand-cru-doc:p8"
+   ]
+  },
+  "pomerol": {
+   "title": "Gravel over cool clay and iron",
+   "cite": [
+    "pomerol-doc:p6",
+    "pomerol-doc:p8"
+   ]
+  },
+  "sauternes": {
+   "title": "Noble rot in a particular microclimate",
+   "cite": [
+    "sauternes-doc:p3"
+   ]
+  },
+  "barsac": {
+   "title": "Noble rot on limestone",
+   "cite": [
+    "barsac-doc:p1",
+    "barsac-doc:p2",
+    "barsac-doc:p3"
+   ]
   }
  }
 }

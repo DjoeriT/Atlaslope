@@ -1,0 +1,121 @@
+{
+ "id": "haut-medoc",
+ "title": "Why Haut-Médoc tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Haut-Médoc sits on river gravel beside water that partly evens out the seasons. Its red wines are intense in colour and tannic, and they age very well.",
+  "cite": [
+   "haut-medoc-doc:p6",
+   "haut-medoc-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "upstream",
+   "beat": "place",
+   "title": "The upstream bank, from Bordeaux northwards",
+   "paras": [
+    "Haut-Médoc runs along the left bank of the Garonne and then of the Gironde, right on from the city of Bordeaux. It stretches nearly 50 km from Le Taillan-Médoc in the south to Saint-Seurin-de-Cadourne in the north, and barely more than ten kilometres from east to west.",
+    "Its 29 communes lie upstream on the Gironde estuary, which explains the name. The zone is one part of the wider Médoc. The land is gentle, between 3 m and 50 m above sea level. Forest closes it in to the west, the Garonne or the estuary to the east and the Bordeaux suburbs to the south.",
+    "From south to north, ridges of gravel vineyard alternate with marshier ground where there are no vines."
+   ],
+   "cite": [
+    "haut-medoc-doc:p6",
+    "haut-medoc-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The 50 km zone",
+     "point": [
+      -0.78,
+      45.08
+     ],
+     "zoom": 9,
+     "caption": "The appellation stretches nearly 50 km, from Le Taillan-Médoc to Saint-Seurin-de-Cadourne.",
+     "cite": [
+      "haut-medoc-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "beat": "weather",
+   "title": "An Atlantic climate evened out by water",
+   "paras": [
+    "The climate is mostly Atlantic. Yet the river front sets Haut-Médoc apart from the communes further north in the Médoc. Its seasonal swings are somewhat evened out and its rainfall is moderate. The water of the Atlantic and of the Gironde acts as a thermal regulator.",
+    "Some years bring a few rainy autumn depressions. Others bring a hot, very sunny late season. This ocean climate gives a marked vintage effect.",
+    "Even so, the wines owe their main character above all to the ground."
+   ],
+   "cite": [
+    "haut-medoc-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary",
+     "point": [
+      -0.68,
+      45.22
+     ],
+     "zoom": 9.5,
+     "caption": "The waters of the Gironde and the Atlantic act as a thermal regulator for Haut-Médoc's river front.",
+     "cite": [
+      "haut-medoc-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Gravel crests cut by streams",
+   "paras": [
+    "Under the vines lie two kinds of ground. One is sandy and clayey gravel carried by the Garonne and the Dordogne in the Quaternary. The other is Tertiary clay-limestone, pushed up by an anticline.",
+    "Erosion and the glacial-era digging of the Garonne and its tributaries cut the land into rounded crests, the croupes (\"cos\"). Streams called esteys and jalles run between them. The stones range from small pebbles to large cobbles, laid in successive terraces.",
+    "Médoc growers gave certain grapes to certain soils. Merlot goes on colluvium and Carmenère on poor, dry gravel. Cabernet Franc takes limestone outcrops or dry sandy soils. Those sandy soils suit Cot too. Petit Verdot goes in well-browned soils. Cabernet Sauvignon, the pivot of the blend, shows itself on deep gravel."
+   ],
+   "cite": [
+    "haut-medoc-doc:p6",
+    "haut-medoc-doc:p7",
+    "haut-medoc-doc:p8",
+    "haut-medoc-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Gravel crests near Margaux",
+     "point": [
+      -0.67,
+      45.04
+     ],
+     "zoom": 11,
+     "caption": "Gravel crests (croupes) cut by streams run from south to north along the river.",
+     "cite": [
+      "haut-medoc-doc:p6",
+      "haut-medoc-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Red wines built to keep",
+   "paras": [
+    "Haut-Médoc makes still red wine only, about 250,000 hl a year on average. Natural alcohol must reach at least 11%. The colour is intense and the wines are tannic.",
+    "Most are blends in which Cabernet Sauvignon is often the majority. Merlot plays a smaller part here than in Médoc. Cabernet Franc and Petit Verdot add richness, and more rarely Cot and Carmenère do the same.",
+    "Cabernet Sauvignon gives spicy notes that blend with vanilla notes when the wine is aged in barrel. Barrel ageing is more common here than in Médoc. Merlot brings roundness and softness. It also gives red-fruit aromas. Cabernet Franc or Petit Verdot can add structure and complexity. Petit Verdot also brings freshness in very ripe years.",
+    "The vines are managed for very ripe, healthy grapes with controlled yields. They are planted at a minimum of 6,500 per hectare, and the yield is set at 55 hl per hectare. That makes long macerations possible, for concentrated wines. They need at least six months of ageing to soften, and they age very well.",
+    "Reputation here rests mainly on classifications. The 1855 Bordeaux classification set the idea of ranked crus. Five crus classés lie within the zone. The 1932 list of crus bourgeois du Médoc named 444 crus, and 153 of them are in Haut-Médoc.",
+    "Labels may also name the wider area as \"Bordeaux - Médoc\". Its letters can be at most two thirds the size of the appellation name."
+   ],
+   "cite": [
+    "haut-medoc-doc:p2",
+    "haut-medoc-doc:p3",
+    "haut-medoc-doc:p4",
+    "haut-medoc-doc:p8",
+    "haut-medoc-doc:p9",
+    "haut-medoc-doc:p12"
+   ]
+  }
+ ]
+}

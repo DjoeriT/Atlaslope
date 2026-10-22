@@ -85,6 +85,1449 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "bordeaux",
+   "why": {
+    "text": "Atlantic and river waters temper the climate, on gravel terraces and clay-limestone slopes, with merlot and cabernet blends.",
+    "cite": [
+     "bordeaux-doc:p10",
+     "bordeaux-doc:p11",
+     "bordeaux-doc:p13"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Merlot N"
+     }
+    ],
+    "cite": [
+     "bordeaux-doc:p11",
+     "bordeaux-doc:p13"
+    ],
+    "others": [
+     "Muscadelle B",
+     "Cot N",
+     "Carmenere N",
+     "Sauvignon Gris G",
+     "Sauvignon B",
+     "Ugni Blanc B",
+     "Colombard B",
+     "Cabernet-Sauvignon N",
+     "Merlot Blanc B",
+     "Sémillon B",
+     "Cabernet Franc N",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "bordeaux-doc:p9",
+     "bordeaux-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sweet"
+    ],
+    "text": "Still wines: mostly reds, plus dry and sweeter whites and rosés, including darker clairet.",
+    "cite": [
+     "bordeaux-doc:p2",
+     "bordeaux-doc:p12"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate, tempered by the Atlantic, the Gironde estuary and the Garonne and Dordogne valleys. Rain is spread through the year, 700 to 800 mm on average. Vintages vary strongly.",
+    "cite": [
+     "bordeaux-doc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Tertiary and Quaternary marls, molasse, limestone and gravel; clay-limestone soils dominate. Gravel terraces by the rivers are well drained and warm; recent clay alluvium forms the palus soils.",
+    "cite": [
+     "bordeaux-doc:p11",
+     "bordeaux-doc:p13"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: soft, fruity, low in acidity, with aromatic complexity and tannic power. Dry whites: aromatic, fresh, citrus. Rosés: best young; clairets very perfumed. Sweeter whites: round, golden, candied fruit.",
+    "cite": [
+     "bordeaux-doc:p4",
+     "bordeaux-doc:p5",
+     "bordeaux-doc:p13"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Claret",
+      "text": "Label mention allowed for red Bordeaux wines."
+     },
+     {
+      "name": "Clairet",
+      "text": "Label mention for darker rosé, made after a few hours of maceration."
+     },
+     {
+      "name": "Haut-Benauge",
+      "text": "Geographic name for white wines, with its own area, grape, yield and analysis rules."
+     }
+    ],
+    "cite": [
+     "bordeaux-doc:p13",
+     "bordeaux-doc:p14",
+     "bordeaux-doc:p15"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bordeaux-superieur",
+   "why": {
+    "text": "Gravel terraces, clay-limestone slopes and an Atlantic climate moderated by sea and rivers give rounded, structured blends meant for ageing.",
+    "cite": [
+     "bordeaux-superieur-doc:p9",
+     "bordeaux-superieur-doc:p10",
+     "bordeaux-superieur-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Merlot N"
+     },
+     {
+      "local": "Cabernet-Sauvignon N"
+     },
+     {
+      "local": "Cabernet Franc N"
+     },
+     {
+      "local": "Sémillon B"
+     }
+    ],
+    "cite": [
+     "bordeaux-superieur-doc:p3",
+     "bordeaux-superieur-doc:p11"
+    ],
+    "others": [
+     "Muscadelle B",
+     "Cot N",
+     "Carmenere N",
+     "Sauvignon Gris G",
+     "Sauvignon B",
+     "Ugni Blanc B",
+     "Colombard B",
+     "Merlot Blanc B",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "bordeaux-superieur-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sweet"
+    ],
+    "text": "Still red and white wines; the whites keep more than 17 g/l of sugar, and most output is red.",
+    "cite": [
+     "bordeaux-superieur-doc:p2",
+     "bordeaux-superieur-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate, moderated by the Atlantic, the Gironde estuary and the Garonne and Dordogne valleys. Rain is spread through the year, 700 to 800 mm on average, and vintages vary strongly.",
+    "cite": [
+     "bordeaux-superieur-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Mostly clay-limestone, marl and limestone soils, plus well-drained, warm gravel terraces along the rivers. Light silty boulbènes suit whites; recent clay alluvium forms the palus soils.",
+    "cite": [
+     "bordeaux-superieur-doc:p9",
+     "bordeaux-superieur-doc:p10",
+     "bordeaux-superieur-doc:p12"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: round, ample, structured; young, fresh and candied red fruit, later spice and cooked fruit. Whites with residual sugar: round, golden, candied fruit, then flowers, honey, spice; age 4 to 8 years.",
+    "cite": [
+     "bordeaux-superieur-doc:p3",
+     "bordeaux-superieur-doc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Château",
+      "text": "Traditional term for a wine estate, tied to the 1855 classification of Gironde wines."
+     },
+     {
+      "name": "Clos",
+      "text": "Traditional term allowed on the label, alongside Château."
+     },
+     {
+      "name": "Grand Vin de Bordeaux",
+      "text": "Optional larger-area label; letters at most two thirds the size of the appellation name."
+     }
+    ],
+    "cite": [
+     "bordeaux-superieur-doc:p4",
+     "bordeaux-superieur-doc:p10",
+     "bordeaux-superieur-doc:p13",
+     "bordeaux-superieur-doc:p14"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cotes-de-bordeaux",
+   "why": {
+    "text": "Hilly clay-limestone land on the right banks of the Garonne, Dordogne and Gironde; plots picked for drainage and position favour ripeness and round, fruity wines.",
+    "cite": [
+     "cotes-de-bordeaux-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Merlot N"
+     },
+     {
+      "local": "Cabernet-Sauvignon N"
+     },
+     {
+      "local": "Cabernet franc N"
+     },
+     {
+      "local": "Cot N"
+     },
+     {
+      "local": "Sauvignon B"
+     },
+     {
+      "local": "Sauvignon gris G"
+     },
+     {
+      "local": "Semillon B"
+     },
+     {
+      "local": "Muscadelle B"
+     }
+    ],
+    "cite": [
+     "cotes-de-bordeaux-doc:p5"
+    ],
+    "others": [
+     "Carmenère N",
+     "Colombard B",
+     "Petit Verdot N",
+     "Ugni blanc B"
+    ],
+    "othersCite": [
+     "cotes-de-bordeaux-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sweet"
+    ],
+    "text": "Reds, dry whites and sweet 'liquoreux' whites.",
+    "cite": [
+     "cotes-de-bordeaux-doc:p1",
+     "cotes-de-bordeaux-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Hilly terrain, mostly clay-limestone; plots chosen on slope bases, hillsides and plateaus for drainage.",
+    "cite": [
+     "cotes-de-bordeaux-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: fruity and supple, often Merlot-led. Dry whites: round and fruity, keep three to ten years. Sweet whites: honey and citrus aromas.",
+    "cite": [
+     "cotes-de-bordeaux-doc:p1",
+     "cotes-de-bordeaux-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Blaye",
+      "text": "Complementary geographic name allowed on the label; its rules are in the full specification."
+     },
+     {
+      "name": "Cadillac",
+      "text": "Complementary geographic name allowed on the label; its rules are in the full specification."
+     },
+     {
+      "name": "Castillon",
+      "text": "Complementary geographic name allowed on the label; its rules are in the full specification."
+     },
+     {
+      "name": "Francs",
+      "text": "Complementary geographic name allowed on the label; its rules are in the full specification."
+     }
+    ],
+    "cite": [
+     "cotes-de-bordeaux-doc:p5",
+     "cotes-de-bordeaux-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "entre-deux-mers",
+   "why": {
+    "text": "A clay-limestone plateau between the Garonne and Dordogne with an oceanic, moderately rainy climate, giving lively dry whites mostly from Sauvignon.",
+    "cite": [
+     "entre-deux-mers-doc:p4",
+     "entre-deux-mers-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Colombard"
+     },
+     {
+      "local": "Muscadelle"
+     },
+     {
+      "local": "Merlot Blanc"
+     },
+     {
+      "local": "Mauzac"
+     },
+     {
+      "local": "Sémillon"
+     },
+     {
+      "local": "Sauvignon Gris"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Ugni Blanc"
+     }
+    ],
+    "cite": [
+     "entre-deux-mers-doc:p4",
+     "entre-deux-mers-doc:p6"
+    ],
+    "others": [],
+    "othersCite": [
+     "entre-deux-mers-doc:p12"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Only dry still white wines, made to be drunk young.",
+    "cite": [
+     "entre-deux-mers-doc:p1",
+     "entre-deux-mers-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with moderate rainfall and less humid south-east winds; the position between the tides of the two rivers somewhat levels out seasonal swings.",
+    "cite": [
+     "entre-deux-mers-doc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Clay-limestone plateau with silty wind-blown boulbène topsoils; clay-rich soils suit white grapes. Slopes facing south and west are stonier, and the river valleys are gravel in a sandy-clay matrix.",
+    "cite": [
+     "entre-deux-mers-doc:p4",
+     "entre-deux-mers-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "The clay-limestone plateau lies on average between 60 and 100 metres.",
+    "cite": [
+     "entre-deux-mers-doc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Straw-yellow with green-yellow glints, lively on the attack, then ample and round. Aromas of white flowers such as acacia, with citrus and exotic fruit.",
+    "cite": [
+     "entre-deux-mers-doc:p1",
+     "entre-deux-mers-doc:p5",
+     "entre-deux-mers-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Haut-Benauge",
+      "text": "Geographic name that may follow the appellation name on the label."
+     },
+     {
+      "name": "Vin de Bordeaux",
+      "text": "Larger geographic unit that may also be stated on the label."
+     }
+    ],
+    "cite": [
+     "entre-deux-mers-doc:p5",
+     "entre-deux-mers-doc:p8",
+     "entre-deux-mers-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "medoc",
+   "why": {
+    "text": "Gravel ridges on the Garonne and Gironde estuary, with an Atlantic climate that is moderate and low in rain, suit Cabernet Sauvignon.",
+    "cite": [
+     "medoc-doc:p6",
+     "medoc-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon N"
+     },
+     {
+      "local": "Merlot N"
+     }
+    ],
+    "cite": [
+     "medoc-doc:p3",
+     "medoc-doc:p8"
+    ],
+    "others": [
+     "Cabernet Franc N",
+     "Petit Verdot N",
+     "Cot N",
+     "Carmenère N"
+    ],
+    "othersCite": [
+     "medoc-doc:p3",
+     "medoc-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only, tannic and made for ageing.",
+    "cite": [
+     "medoc-doc:p2",
+     "medoc-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Atlantic climate moderated by the ocean to the west and the Gironde estuary to the east, with very low rainfall for an Atlantic climate. Autumn rain or warm late seasons give a marked vintage effect.",
+    "cite": [
+     "medoc-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Sandy and clayey gravels laid down by the Garonne and Dordogne, plus Tertiary clay-limestone soils pushed up by an anticline.",
+    "cite": [
+     "medoc-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Low relief, between 3 and 50 metres above sea level.",
+    "cite": [
+     "medoc-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Tannic, deeply coloured reds. Cabernet Sauvignon gives spicy notes, Merlot roundness and red fruit, Petit Verdot freshness. Excellent ageing ability.",
+    "cite": [
+     "medoc-doc:p3",
+     "medoc-doc:p7",
+     "medoc-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru Bourgeois du Médoc",
+      "text": "Classification of Médoc properties, published in 1932.",
+      "cite": [
+       "medoc-doc:p8"
+      ]
+     },
+     {
+      "name": "Bordeaux - Médoc",
+      "text": "Optional label wording that names the wider unit, in smaller letters."
+     }
+    ],
+    "cite": [
+     "medoc-doc:p8",
+     "medoc-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "haut-medoc",
+   "why": {
+    "text": "Gravel rises on a gentle Gironde riverbank, with an ocean climate tempered by the estuary, give deep, tannic Cabernet-led reds built to age.",
+    "cite": [
+     "haut-medoc-doc:p6",
+     "haut-medoc-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     }
+    ],
+    "cite": [
+     "haut-medoc-doc:p3"
+    ],
+    "others": [
+     "Merlot",
+     "Cabernet Franc",
+     "Petit Verdot",
+     "Cot",
+     "Carmenère"
+    ],
+    "othersCite": [
+     "haut-medoc-doc:p3",
+     "haut-medoc-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only, about 250,000 hl a year, usually blends often led by Cabernet Sauvignon.",
+    "cite": [
+     "haut-medoc-doc:p2",
+     "haut-medoc-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Mostly Atlantic, but the Gironde and the ocean partly even out seasonal swings and keep rainfall moderate. Rainy autumns in some years, hot sunny late seasons in others, give a marked vintage effect.",
+    "cite": [
+     "haut-medoc-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Sandy and clayey gravel terraces left by the Garonne and Dordogne, plus Tertiary clay-limestone soils pushed up by an anticline. Gravel crests are split by streams.",
+    "cite": [
+     "haut-medoc-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Gentle relief, between 3 and 50 metres above sea level.",
+    "cite": [
+     "haut-medoc-doc:p6",
+     "haut-medoc-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Intense colour and tannic. Cabernet Sauvignon gives spice and vanilla from barrel. Merlot adds roundness and red fruit. Age-worthy.",
+    "cite": [
+     "haut-medoc-doc:p3",
+     "haut-medoc-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru classé",
+      "text": "Classified growth; five lie within the appellation's zone."
+     },
+     {
+      "name": "Cru bourgeois",
+      "text": "From the 1932 Médoc list of 444 crus, 153 in Haut-Médoc."
+     }
+    ],
+    "cite": [
+     "haut-medoc-doc:p3",
+     "haut-medoc-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-estephe",
+   "why": {
+    "text": "Well-drained gravel ridges beside the Gironde estuary, which shelters the vines from climate extremes, suit Cabernet Sauvignon.",
+    "cite": [
+     "saint-estephe-doc:p6",
+     "saint-estephe-doc:p7",
+     "saint-estephe-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon N"
+     }
+    ],
+    "cite": [
+     "saint-estephe-doc:p3"
+    ],
+    "others": [
+     "Cot N",
+     "Carmenere N",
+     "Merlot N",
+     "Cabernet Franc N",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "saint-estephe-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only, mostly Cabernet Sauvignon blends, aged at least six months.",
+    "cite": [
+     "saint-estephe-doc:p2",
+     "saint-estephe-doc:p3",
+     "saint-estephe-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "The nearby Gironde estuary protects the vineyards from the excesses of the climate.",
+    "cite": [
+     "saint-estephe-doc:p7",
+     "saint-estephe-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Quaternary gravel terraces over Eocene and Oligocene marl and limestone; sandy or clay gravel on the ridges, thin limestone soils in the west. Modern alluvium, sand-filled hollows, deep-waterlogged clay, marsh and peat are excluded.",
+    "cite": [
+     "saint-estephe-doc:p6",
+     "saint-estephe-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The gravel terraces lie between 4 and 40 metres above sea level.",
+    "cite": [
+     "saint-estephe-doc:p5",
+     "saint-estephe-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Deep red, full-bodied and powerful. Firm, ample tannins from Cabernet Sauvignon, red-fruit and spice notes from Merlot. Needs several years of ageing for roundness and finesse.",
+    "cite": [
+     "saint-estephe-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru classé",
+      "text": "Five Saint-Estèphe estates are recognised in the 1855 Bordeaux classification."
+     },
+     {
+      "name": "Cru bourgeois",
+      "text": "About forty estates were rewarded in the 1932 Crus Bourgeois classification."
+     }
+    ],
+    "cite": [
+     "saint-estephe-doc:p3",
+     "saint-estephe-doc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "margaux",
+   "why": {
+    "text": "Gravelly river-terrace soils on the Gironde estuary, with a mild ocean climate, and Cabernet Sauvignon leading the blend.",
+    "cite": [
+     "margaux-doc:p3",
+     "margaux-doc:p5",
+     "margaux-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon N"
+     },
+     {
+      "local": "Merlot N"
+     }
+    ],
+    "cite": [
+     "margaux-doc:p3",
+     "margaux-doc:p5"
+    ],
+    "others": [
+     "Cot N",
+     "Carmenere N",
+     "Cabernet Franc N",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "margaux-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only.",
+    "cite": [
+     "margaux-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Temperate ocean climate; the Atlantic and the Gironde regulate temperature. Rainy autumn depressions explain much of the vintage effect.",
+    "cite": [
+     "margaux-doc:p5",
+     "margaux-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Gravelly Garonne river terraces, with sandy wind-blown sands to the west and silty-clay palus plains by the estuary, on clay, limestone and marl bedrock.",
+    "cite": [
+     "margaux-doc:p5",
+     "margaux-doc:p6",
+     "margaux-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Terrace hills lie between 6 and 33 m; the western plateau is at 30 to 40 m; the palus are below 5 m.",
+    "cite": [
+     "margaux-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Intense red colour, excellent ageing ability, a certain finesse underlined by fruity aromas. Cabernet gives structure; Merlot gives roundness.",
+    "cite": [
+     "margaux-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-julien",
+   "why": {
+    "text": "Well-drained gravel ridges beside the Gironde estuary, with a mild ocean climate, suit Cabernet Sauvignon-led reds built for long ageing.",
+    "cite": [
+     "saint-julien-doc:p6",
+     "saint-julien-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon"
+     }
+    ],
+    "cite": [
+     "saint-julien-doc:p3",
+     "saint-julien-doc:p5"
+    ],
+    "others": [
+     "Merlot",
+     "Cabernet Franc",
+     "Petit Verdot",
+     "Cot",
+     "Carmenere"
+    ],
+    "othersCite": [
+     "saint-julien-doc:p3",
+     "saint-julien-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only.",
+    "cite": [
+     "saint-julien-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Temperate ocean climate; the Atlantic and the Gironde estuary regulate temperatures. Rainy autumns or hot sunny late seasons give a marked vintage effect.",
+    "cite": [
+     "saint-julien-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Coarse gravel, sand and pebbles over Oligocene limestone, marl and clay; well-drained. Clay and silt in the estuary marshes and valley slopes.",
+    "cite": [
+     "saint-julien-doc:p6",
+     "saint-julien-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Terraces lie between 10 and 30 metres above sea level.",
+    "cite": [
+     "saint-julien-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Very deep colour, finesse and power, with a tannic structure for remarkable ageing. Merlot adds roundness and fruit. Long-aged wines gain a very elegant, recognisable bouquet.",
+    "cite": [
+     "saint-julien-doc:p3",
+     "saint-julien-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru classé",
+      "text": "Estates ranked in the 1855 Bordeaux classification: nine then, eleven today."
+     }
+    ],
+    "cite": [
+     "saint-julien-doc:p3",
+     "saint-julien-doc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "graves",
+   "why": {
+    "text": "Gravel, pebble and sand soils drain well, while the Garonne and pine forest soften the climate for Cabernet, Merlot, Sémillon and Sauvignon.",
+    "cite": [
+     "graves-doc:p7",
+     "graves-doc:p8",
+     "graves-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Sémillon"
+     },
+     {
+      "local": "Sauvignon"
+     }
+    ],
+    "cite": [
+     "graves-doc:p4",
+     "graves-doc:p9",
+     "graves-doc:p10"
+    ],
+    "others": [
+     "Cabernet Franc",
+     "Petit Verdot",
+     "Cot",
+     "Carmenère",
+     "Muscadelle",
+     "Sauvignon Gris"
+    ],
+    "othersCite": [
+     "graves-doc:p6",
+     "graves-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Still reds and dry whites only; whites with residual sugar are sold as Graves Supérieures.",
+    "cite": [
+     "graves-doc:p2",
+     "graves-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate. Pine forest to the west shelters the vines; Garonne airflow keeps off heavy heat and damp, and oceanic influences temper spring frost.",
+    "cite": [
+     "graves-doc:p8",
+     "graves-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Pebbles, stones and gravel of varying coarseness, with sand mixed with silt and clay, over pure sand, iron-rich alios, clay or sometimes limestone. Very permeable and well drained.",
+    "cite": [
+     "graves-doc:p7",
+     "graves-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: red fruit, spice and toast, elegant and structured, with fine smoky notes as they age; peak at 5 to 10 years. Whites: elegant and full, floral, fresh, with citrus.",
+    "cite": [
+     "graves-doc:p4",
+     "graves-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Graves Supérieures",
+      "text": "White wines with residual sugar, mainly Sauvignon and Sémillon."
+     },
+     {
+      "name": "Vin de Graves",
+      "text": "Larger geographic unit that labels may state, in smaller letters than the appellation."
+     }
+    ],
+    "cite": [
+     "graves-doc:p9",
+     "graves-doc:p10",
+     "graves-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "pessac-leognan",
+   "why": {
+    "text": "Gravel ridges over fissured limestone drain well, and the Landes forest and Atlantic temper a mild climate.",
+    "cite": [
+     "pessac-leognan-doc:p6",
+     "pessac-leognan-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Sémillon"
+     }
+    ],
+    "cite": [
+     "pessac-leognan-doc:p3",
+     "pessac-leognan-doc:p7"
+    ],
+    "others": [
+     "Merlot",
+     "Cabernet Franc",
+     "Cot",
+     "Petit Verdot",
+     "Carmenère",
+     "Sauvignon Gris",
+     "Muscadelle"
+    ],
+    "othersCite": [
+     "pessac-leognan-doc:p3",
+     "pessac-leognan-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites; over 80% of the wine is red.",
+    "cite": [
+     "pessac-leognan-doc:p2",
+     "pessac-leognan-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mild, temperate and evenly humid, with warmth regulated by the Landes forest to the south and the Atlantic to the west.",
+    "cite": [
+     "pessac-leognan-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Gravel and rolled pebbles up to three metres deep, or clay-limestone, sand and shell sands, over fissured, permeable limestone.",
+    "cite": [
+     "pessac-leognan-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: deeply coloured, firmly tannic, long-lived; cassis turning smoky, spicy, leathery. Dry whites: pale straw, fruity, lively; with age floral, like lime blossom and broom.",
+    "cite": [
+     "pessac-leognan-doc:p3",
+     "pessac-leognan-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru Classé de Graves",
+      "text": "Label mention for the classified châteaux; all 16 lie in the zone."
+     },
+     {
+      "name": "Vin de Graves",
+      "text": "Wider unit a label may name, in smaller letters."
+     }
+    ],
+    "cite": [
+     "pessac-leognan-doc:p8",
+     "pessac-leognan-doc:p9",
+     "pessac-leognan-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-emilion",
+   "why": {
+    "text": "A limestone plateau and clay-limestone slopes above the Dordogne, with a mild but more continental ocean climate, suit Merlot best.",
+    "cite": [
+     "saint-emilion-doc:p6",
+     "saint-emilion-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "merlot N"
+     },
+     {
+      "local": "cabernet franc N"
+     },
+     {
+      "local": "cabernet-sauvignon N"
+     }
+    ],
+    "cite": [
+     "saint-emilion-doc:p7",
+     "saint-emilion-doc:p8"
+    ],
+    "others": [
+     "Carmenère",
+     "Cot",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "saint-emilion-doc:p5",
+     "saint-emilion-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wine only.",
+    "cite": [
+     "saint-emilion-doc:p2",
+     "saint-emilion-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mild ocean climate of Bordeaux, but more continental and warmer, with Mediterranean touches such as holm oaks. Unpredictable: some years have rainy autumn depressions, others warm, sunny late seasons.",
+    "cite": [
+     "saint-emilion-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone and clay-limestone on a plateau, with Fronsadais molasse on the slopes, gravel and sand in the south and north-west. Quarried galleries about 100 km long stay at 12 to 16 °C.",
+    "cite": [
+     "saint-emilion-doc:p6",
+     "saint-emilion-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The ridge edge peaks at 100 metres.",
+    "cite": [
+     "saint-emilion-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Deep red, rich and complex, with red and black fruit, supple roundness and silky tannins. Cabernet Franc adds slight spice and freshness. Cabernet Sauvignon adds spice and long keeping.",
+    "cite": [
+     "saint-emilion-doc:p3",
+     "saint-emilion-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-emilion-grand-cru",
+   "why": {
+    "text": "A limestone plateau and clay-limestone slopes above the Dordogne, with a warmer, more continental climate, give rich, complex Merlot-led reds.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p5",
+     "saint-emilion-grand-cru-doc:p6",
+     "saint-emilion-grand-cru-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "merlot N"
+     },
+     {
+      "local": "cabernet franc N"
+     },
+     {
+      "local": "cabernet-sauvignon N"
+     }
+    ],
+    "cite": [
+     "saint-emilion-grand-cru-doc:p2",
+     "saint-emilion-grand-cru-doc:p7"
+    ],
+    "others": [
+     "Cot N",
+     "Carmenere N",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "saint-emilion-grand-cru-doc:p5",
+     "saint-emilion-grand-cru-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wine only, often aged in barrels.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p2",
+     "saint-emilion-grand-cru-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Temperate oceanic Bordeaux climate, but more continental because it lies in the east of the Gironde. Temperatures are higher, with Mediterranean touches, shown by holm oaks. Some years bring rainy autumn depressions, others warm, very sunny late seasons.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p6",
+     "saint-emilion-grand-cru-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "A Tertiary limestone plateau with thin limestone, clay-limestone and silty-clay soils. Slopes of Fronsadais molasse carry limestone soils. The northwest has sandy Quaternary alluvium, and the Dordogne valley has gravel, sand and silt.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p6",
+     "saint-emilion-grand-cru-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The ridge above the town of Saint-Emilion peaks at 100 metres.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Intense colour, aromatic, concentrated and rich. Merlot gives ripe red and black fruit and silky tannins. Cabernet Franc adds spice and freshness. The wines age for a long time.",
+    "cite": [
+     "saint-emilion-grand-cru-doc:p2",
+     "saint-emilion-grand-cru-doc:p3",
+     "saint-emilion-grand-cru-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Grand cru classé",
+      "text": "Reserved for estates in the official classification, valid for ten years."
+     },
+     {
+      "name": "Premier grand cru classé",
+      "text": "Top classified tier; distinctions A and B may be awarded."
+     }
+    ],
+    "cite": [
+     "saint-emilion-grand-cru-doc:p10",
+     "saint-emilion-grand-cru-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "pomerol",
+   "why": {
+    "text": "Gravel and sand terraces over cool Tertiary clay, with iron oxides below and a kind climate, give slow-ripening Merlot its personality.",
+    "cite": [
+     "pomerol-doc:p6",
+     "pomerol-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Merlot N"
+     }
+    ],
+    "cite": [
+     "pomerol-doc:p3",
+     "pomerol-doc:p7"
+    ],
+    "others": [
+     "Cabernet Franc N",
+     "Cabernet-Sauvignon N",
+     "Cot N",
+     "Petit Verdot N"
+    ],
+    "othersCite": [
+     "pomerol-doc:p3",
+     "pomerol-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only.",
+    "cite": [
+     "pomerol-doc:p2",
+     "pomerol-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Temperate ocean climate with moderate temperature swings; the Isle and Dordogne rivers regulate temperatures. The north-east position adds continental touches, with warmer summers and autumns that help ripening.",
+    "cite": [
+     "pomerol-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Gravel, sand and pebble terraces over Tertiary clay rich in smectites, with iron oxides in the subsoil. Clay keeps the vines cool and water supply even; gravel drains and reflects light.",
+    "cite": [
+     "pomerol-doc:p6",
+     "pomerol-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Fairly flat relief. The high Günz terrace lies at 30 to 40 m, the middle Riss terraces at 20 to 25 m.",
+    "cite": [
+     "pomerol-doc:p5",
+     "pomerol-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Intense colour and powerful black-fruit aromas, sometimes violet and truffle. Ample, long and without harshness, elegant and balanced, and able to age for a long time in bottle.",
+    "cite": [
+     "pomerol-doc:p3",
+     "pomerol-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "sauternes",
+   "why": {
+    "text": "Grapes suited to noble rot, a particular microclimate and very concentrated, low-yielding vines give rich sweet wines, fermented slowly and aged long.",
+    "cite": [
+     "sauternes-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Semillon B"
+     },
+     {
+      "local": "Sauvignon gris G"
+     },
+     {
+      "local": "Sauvignon B"
+     },
+     {
+      "local": "Muscadelle B"
+     }
+    ],
+    "cite": [
+     "sauternes-doc:p3"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wine with at least 45 g/l residual sugar, made from botrytised grapes.",
+    "cite": [
+     "sauternes-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "The spec cites a particular microclimate, without giving numbers.",
+    "cite": [
+     "sauternes-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Golden, with flower and fruit scents when young. With age, powerful toasted, candied fruit, citrus and honey aromas, and amber colour. Fat, unctuous, long-lived.",
+    "cite": [
+     "sauternes-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "barsac",
+   "why": {
+    "text": "Special microclimate that grows noble rot, limestone soils, severe pruning and hand harvests in successive passes give concentrated, sweet, mineral white wines.",
+    "cite": [
+     "barsac-doc:p1",
+     "barsac-doc:p2",
+     "barsac-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Semillon B"
+     },
+     {
+      "local": "Savagnin blanc B"
+     },
+     {
+      "local": "Sauvignon gris G"
+     },
+     {
+      "local": "Muscadelle B"
+     }
+    ],
+    "cite": [
+     "barsac-doc:p3"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wine with residual sugar of at least 45 g/l, made from botrytised grapes.",
+    "cite": [
+     "barsac-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Particular microclimatic conditions allow the Botrytis cinerea fungus to develop, which gives the wines their character.",
+    "cite": [
+     "barsac-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "Barsac is distinguished by the particular character of its soils; the wines' mineral texture is linked to limestone elements in the soil.",
+    "cite": [
+     "barsac-doc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Very rich and unctuous in the mouth, with powerful, balanced, very fruity and lively aromas and a mineral texture. Fairly nervy, with persistent fruity aromas.",
+    "cite": [
+     "barsac-doc:p1",
+     "barsac-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
   }
  ]
 }

@@ -1,0 +1,84 @@
+{
+ "id": "medoc",
+ "title": "Why Médoc tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Médoc's vines grow on gravel ridges, with the Atlantic on one side and the Gironde estuary on the other. Those two bodies of water temper the climate, and Cabernet Sauvignon, the traditional grape, gives the reds their spicy notes.",
+  "cite": [
+   "medoc-doc:p3",
+   "medoc-doc:p6",
+   "medoc-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "peninsula",
+   "beat": "place",
+   "title": "A long, thin strip on the left bank",
+   "paras": [
+    "The vineyard lies in the Gironde, on the left bank of the Garonne and then of the Gironde, north of Bordeaux. It stretches almost 80 km from north to south and barely more than ten km from east to west, across 52 communes.",
+    "The land is low, between 3 m and 50 m above sea level. Forest closes it in on the west and the Gironde estuary on the east."
+   ],
+   "cite": [
+    "medoc-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary shore",
+     "point": [
+      -0.75,
+      45.2
+     ],
+     "zoom": 9,
+     "caption": "The vineyard runs along the left bank, with forest to the west and the Gironde estuary to the east.",
+     "cite": [
+      "medoc-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "Water on both sides",
+   "paras": [
+    "The Atlantic to the west and the Gironde estuary to the east have a regulating effect on temperature. Along the river front, seasonal swings are moderated. Rainfall there is very modest for an Atlantic climate.",
+    "Its northern position makes the zone less warm than the south of the peninsula. Yet it gets less rain.",
+    "Some years bring a few rainy autumn depressions. Others bring warm, very sunny late seasons. This ocean climate gives a marked vintage effect."
+   ],
+   "cite": [
+    "medoc-doc:p6"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Gravel ridges between the streams",
+   "paras": [
+    "During the Quaternary, the Garonne and the Dordogne carried down gravel and sand. Moraine and silt came with them. After erosion turned the relief upside down, what was left became mounds of gravel. The stones range from small pebbles to large cobbles.",
+    "Erosion cut the land into rises called cos. So did the Garonne and its side streams, digging their beds in the ice ages. The vines grow on these gravel rises, bounded by streams called jalles. From south to north, the rises alternate with marshier ground that carries no vines.",
+    "Older clay-limestone layers from the Tertiary also appear, pushed up by an anticline."
+   ],
+   "cite": [
+    "medoc-doc:p6"
+   ]
+  },
+  {
+   "id": "cabernet",
+   "beat": "rules",
+   "title": "Tannic reds built on Cabernet",
+   "paras": [
+    "Médoc makes only still red wine.",
+    "Cabernet Sauvignon leads and gives spicy notes. It is the favoured grape of the gravel soils. Merlot is grown for its fruit. Cabernet Franc goes on soils that are mainly limestone. Petit Verdot goes on warm, free-draining ground. Blending in Cabernet Franc or Petit Verdot adds structure and complexity. Cot and Carmenère play a rarer part.",
+    "Selective vine growing gives very ripe, healthy grapes from controlled yields. That makes possible the macerations behind the concentrated wines sought. They then need at least six months of ageing to soften them.",
+    "The 1855 Classification of Bordeaux wines singled out Médoc's wines. The Cru Bourgeois du Médoc classification followed in 1932. The label may also name the wider Bordeaux area, as in \"Bordeaux - Médoc\". Those words are no bigger than two thirds of the appellation name."
+   ],
+   "cite": [
+    "medoc-doc:p2",
+    "medoc-doc:p3",
+    "medoc-doc:p8",
+    "medoc-doc:p11"
+   ]
+  }
+ ]
+}

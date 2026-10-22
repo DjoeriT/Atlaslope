@@ -1,0 +1,122 @@
+{
+ "id": "pessac-leognan",
+ "title": "Why Pessac-Léognan tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Gravel ridges left by an ancient Garonne sit on fissured limestone at the edge of Bordeaux. Long-lived reds and dry whites are made here, in a balance that has held for centuries.",
+  "cite": [
+   "pessac-leognan-doc:p6",
+   "pessac-leognan-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "edge-of-city",
+   "beat": "place",
+   "title": "Vines at the edge of Bordeaux",
+   "paras": [
+    "Pessac-Léognan lies on the left bank of the Garonne, west and south of the city of Bordeaux. It is the northern part of the Graves appellation and covers 10 communes of the Gironde.",
+    "The vineyards sit on the edge of the city, and sometimes inside the built-up area. A few of the best-known estates form green havens in the middle of dense housing.",
+    "In the Middle Ages the Graves around Bordeaux were called \"Las Grabas de Bourdeus\". Vines grew around the port 2,000 years ago."
+   ],
+   "cite": [
+    "pessac-leognan-doc:p5",
+    "pessac-leognan-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Haut-Brion, vines in the suburbs",
+     "point": [
+      -0.6,
+      44.811
+     ],
+     "zoom": 11,
+     "caption": "From 1531 to 1551 Jean de Pontac built up Haut-Brion plot by plot, an estate that foreshadowed the great Bordeaux château.",
+     "cite": [
+      "pessac-leognan-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mild-ocean",
+   "beat": "weather",
+   "title": "Forest and ocean as a buffer",
+   "paras": [
+    "The climate is typical of the Gironde: temperate and mild, with regular humidity. Its mildness and steady humidity suit the vine.",
+    "The Landes forest of the Gironde to the south and the Atlantic Ocean to the west shield the vineyards and regulate the warmth."
+   ],
+   "cite": [
+    "pessac-leognan-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Landes forest of the Gironde",
+     "point": [
+      -0.7,
+      44.55
+     ],
+     "zoom": 9,
+     "caption": "The forest of the Landes girondines, south of the vineyards, helps regulate the warmth.",
+     "cite": [
+      "pessac-leognan-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gravel-ridges",
+   "beat": "ground",
+   "title": "Gravel left by the Garonne",
+   "paras": [
+    "The soils are witnesses to the old courses of the Garonne. At the end of the Tertiary and through the Quaternary, melting Pyrenean glaciers sent great loads of material down the river. It settled on old sea floors of limestone and shelly sands called faluns.",
+    "Some soils are gravel or river-rolled pebbles, up to three metres deep or more. Others are limy clay, sand and faluns. All of it rests on fissured, permeable limestone.",
+    "The gravel forms ridges, well drawn in the gently rolling landscape. Soft slopes and a network of small streams that feed the Garonne give remarkable natural drainage.",
+    "Plots on modern alluvium, on sands or on impermeable subsoil are left out of the appellation."
+   ],
+   "cite": [
+    "pessac-leognan-doc:p6",
+    "pessac-leognan-doc:p8"
+   ]
+  },
+  {
+   "id": "red-and-white",
+   "beat": "rules",
+   "title": "Reds for ageing, dry whites with finesse",
+   "paras": [
+    "Only still, dry wines are made, red or white. More than 80% of the wine is red.",
+    "Reds are mostly Cabernet Sauvignon, the old grape of Bordeaux appellations, called perfectly suited to these gravelly soils to ripen fully. The wines are deeply coloured and firmly tannic, and can age for many years. With time their frequent cassis notes often move towards smoke and spice, leather and prunes. Cabernet Sauvignon is often blended with Merlot and Cabernet Franc, which bring suppleness and add to its elegance. Sometimes old Bordeaux grapes join them for complexity: Cot (Malbec), Petit Verdot or Carmenère. Reds are most often aged in oak barrels.",
+    "Dry whites are mostly Sauvignon and Sémillon. When young they are generally a fairly pale straw colour, fruity and lively. Blended in varying proportions with Sauvignon Gris or Muscadelle, their scent is complex. With age the whites turn gently golden and develop fine floral notes that sometimes recall lime blossom and broom. In very ripe years they are fleshier and rounder, with a longer finish. White wines express great finesse on the sandier soils or those with a clay base.",
+    "The vineyard has to be planted with at least 6,500 vines per hectare. The yield is set at 54 hl/ha, with a ceiling of 60 hl/ha. Close planting is meant to stop the vines carrying too much fruit.",
+    "Reds are aged at least until 15 September of the year after the harvest. Whites are aged at least until 15 March.",
+    "Between the start of the 20th century and the 1970s, the city's growth destroyed more than 3,000 hectares and several hundred crus in this zone. By the 1970s only 550 hectares were left, 100 of them doomed in the short term. A group of young growers set out to win it back and asked for a ranking within Graves.",
+    "Pessac-Léognan was recognised by decree on 9 September 1987. All 16 châteaux of the 1959 Graves classification lie in the zone, about a third of its estates. Château Haut-Brion is the most famous, a Premier Grand Cru in the 1855 Bordeaux classification.",
+    "Labels may also name the wider \"Vin de Graves\" or \"Grand Vin de Graves\", in letters at most two thirds the size of the appellation name. A classified château may put \"Cru Classé de Graves\" in its place, under the same size rule.",
+    "Almost all producers sell \"en primeur\", before bottling, to merchants through Bordeaux's brokers. The sale takes place in the spring after the harvest. The grower then keeps and ages the wine until it is bottled."
+   ],
+   "cite": [
+    "pessac-leognan-doc:p2",
+    "pessac-leognan-doc:p3",
+    "pessac-leognan-doc:p4",
+    "pessac-leognan-doc:p7",
+    "pessac-leognan-doc:p8",
+    "pessac-leognan-doc:p9",
+    "pessac-leognan-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Pessac and Léognan, the heart of the appellation",
+     "point": [
+      -0.62,
+      44.76
+     ],
+     "zoom": 10,
+     "caption": "The vineyard is 1,640 hectares (2010) run by 61 producers, making on average 70,000 hl.",
+     "cite": [
+      "pessac-leognan-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

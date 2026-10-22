@@ -1,0 +1,125 @@
+{
+ "id": "saint-emilion-grand-cru",
+ "title": "Why Saint-Émilion Grand Cru tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Saint-Émilion's vines grow on a limestone plateau and its slopes above the Dordogne. Mostly limestone and clay-limestone soils, with a very favourable local climate, give its Merlot-led reds richness and complexity.",
+  "cite": [
+   "saint-emilion-grand-cru-doc:p5",
+   "saint-emilion-grand-cru-doc:p6",
+   "saint-emilion-grand-cru-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A limestone town above the Dordogne",
+   "paras": [
+    "The area lies east of Libourne, around the town of Saint-Émilion. A limestone plateau overlooks the Dordogne to the south and ends at the Barbanne stream to the north. The area covers eight communes and part of Libourne.",
+    "Parallel to the Dordogne, a first line of steep, straight slopes rises. They form \"combes\", valleys shaped like amphitheatres. Saint-Émilion itself, a walled medieval town of limestone with russet or grey tile roofs, was built in one of them, facing south. The ridge peaks at 100 metres.",
+    "In 1999 UNESCO put the landscape on its World Heritage list as a cultural landscape. It was the first wine landscape to be listed."
+   ],
+   "cite": [
+    "saint-emilion-grand-cru-doc:p4",
+    "saint-emilion-grand-cru-doc:p5",
+    "saint-emilion-grand-cru-doc:p6",
+    "saint-emilion-grand-cru-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Saint-Émilion and its combes",
+     "point": [
+      -0.1553,
+      44.8934
+     ],
+     "zoom": 11,
+     "caption": "The walled limestone town sits in a south-facing combe on the first line of slopes above the Dordogne.",
+     "cite": [
+      "saint-emilion-grand-cru-doc:p6"
+     ]
+    },
+    {
+     "label": "The Dordogne valley",
+     "point": [
+      -0.19,
+      44.86
+     ],
+     "zoom": 10,
+     "caption": "The Dordogne runs along the southern edge of the plateau, and its valley is covered with vines.",
+     "cite": [
+      "saint-emilion-grand-cru-doc:p5",
+      "saint-emilion-grand-cru-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Warmer and more continental",
+   "paras": [
+    "The area has the temperate ocean climate of Bordeaux, but it is more continental because it lies in the east of the Gironde. Temperatures are higher, with Mediterranean touches. Holm oaks growing along the ridge show it.",
+    "The ocean climate is unpredictable. Some years bring rainy autumn depressions. Others end with warm, very sunny late seasons. These swings from year to year show as marked differences between vintages."
+   ],
+   "cite": [
+    "saint-emilion-grand-cru-doc:p6",
+    "saint-emilion-grand-cru-doc:p7",
+    "saint-emilion-grand-cru-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone, clay and some hundred kilometres of galleries",
+   "paras": [
+    "A plateau of Tertiary limestone sits at the centre of the vineyard. West of the town the limestone soils are thin and light in texture, most often sandy-silty. To the east they are mostly clay-limestone, fairly light and thin. In the middle of the plateau lies a fairly thick cover of silt and clay.",
+    "Around the plateau, Fronsadais molasse comes to the surface on slopes that are generally steeper to the south and west than to the north. It most often carries limestone soils, frequently clay and silt in texture.",
+    "The northwest has a sheet of sandy Quaternary alluvium. Near Pomerol, on the Figeac terrace, gravelly rises appear. In the Dordogne valley to the south, the Quaternary alluvium varies from place to place. It holds gravel in some spots and sand or silt in others.",
+    "Merlot likes the cool, damp clay soils, where it ripens well. Cabernet Franc is used more on limestone or on slightly warmer sand and gravel. Cabernet Sauvignon is a late grape that suits warm, dry soils: gravelly sand or well-exposed clay-limestone.",
+    "Stone has always been quarried here. It left an estimated hundred kilometres of galleries under Saint-Émilion and the plateaux around it. They are often used as cellars, because the constant 12 °C to 16 °C and the humidity suit the keeping of wine."
+   ],
+   "cite": [
+    "saint-emilion-grand-cru-doc:p6",
+    "saint-emilion-grand-cru-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Figeac terrace, near Pomerol",
+     "point": [
+      -0.2,
+      44.915
+     ],
+     "zoom": 11,
+     "caption": "Near Pomerol, on the Figeac terrace, a series of gravelly rises appears.",
+     "cite": [
+      "saint-emilion-grand-cru-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Merlot first, then a long wait",
+   "paras": [
+    "Saint-Émilion Grand Cru makes dry still red wine only. Merlot is by far the main grape. It gives intense red colour, alcoholic richness and complex aromas of ripe red and black fruit. In the mouth it brings suppleness and roundness with silky tannins.",
+    "Cabernet Franc gives a slightly spicy aromatic finesse and freshness. Its tannic structure is firmer. Cabernet Sauvignon is present to a lesser degree. It brings spicy, complex notes. Its rich tannins favour long keeping and give harmonious wines. Cot (Malbec) and Carmenère, used more rarely, can be added. Petit Verdot is used only as a minor part.",
+    "The wines have intense colour and are aromatic. They are concentrated and rich, and they stand up to long ageing. They must be aged until at least 1 February of the second year after the harvest. Ageing is very often in barrels, which helps steady colour and structure and enriches the aromas.",
+    "Grand Cru has stricter production rules than plain Saint-Émilion. Crop load and yield are lower, the grapes riper and the ageing long. The yield is 46 hl/ha, with a ceiling of 55 hl/ha. Vines are planted at least 5,500 per hectare and are pruned to limit the number of bunches. The wine must be bottled in glass by the estate that harvested and made it, or in a shared winery whose members harvest the grapes.",
+    "Only estates in an official classification may use \"grand cru classé\" or \"premier grand cru classé\" on the label. The classification is valid for ten years. Premier grand cru classé wines may receive a distinction, A or B, for their reputation and ageing potential.",
+    "In 2010, about 650 producers made on average 150,000 hl of this wine."
+   ],
+   "cite": [
+    "saint-emilion-grand-cru-doc:p2",
+    "saint-emilion-grand-cru-doc:p3",
+    "saint-emilion-grand-cru-doc:p4",
+    "saint-emilion-grand-cru-doc:p7",
+    "saint-emilion-grand-cru-doc:p8",
+    "saint-emilion-grand-cru-doc:p9",
+    "saint-emilion-grand-cru-doc:p10",
+    "saint-emilion-grand-cru-doc:p11"
+   ]
+  }
+ ]
+}

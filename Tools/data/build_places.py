@@ -142,7 +142,10 @@ def portugal_places():
 # France names two zone depths. Not in Study yet.
 FR_GROUPS = [("fr-bordeaux", "Bordeaux"), ("fr-south-west", "South-West"), ("fr-burgundy", "Burgundy"), ("fr-beaujolais", "Beaujolais"),
              ("fr-alsace", "Alsace"), ("fr-loire", "Loire"), ("fr-rhone", "Rhône"), ("fr-south", "South"), ("fr-champagne", "Champagne")]
-FR_SHIP = ["chablis", "pauillac"]
+FR_SHIP = ["chablis", "pauillac",
+           # Bordeaux batch (22 Oct 2026)
+           "bordeaux", "bordeaux-superieur", "cotes-de-bordeaux", "entre-deux-mers", "medoc", "haut-medoc", "saint-estephe", "margaux",
+           "saint-julien", "graves", "pessac-leognan", "saint-emilion", "saint-emilion-grand-cru", "pomerol", "sauternes", "barsac"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 
@@ -151,6 +154,7 @@ def france_places():
     wset = {p["id"]: p for p in json.loads((ROOT / "data/countries/fr/wset-places.json").read_text())["places"]}
     spec = json.loads((ROOT / "data/countries/fr/areas-spec.json").read_text())
     areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/fr/areas.geojson").read_text())["features"]}
+    within = json.loads((ROOT / "data/countries/fr/within.json").read_text())["within"]
     group = {name: gid for gid, name in FR_GROUPS}
     shipped = set(FR_SHIP)
     out = []
@@ -160,8 +164,9 @@ def france_places():
         place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "AOC", "level": "place", "parent": "france",
                  "region": region, "euFile": w["fileNumber"], "layerCode": None, "boundary": "added",
                  "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE}
-        # alsoWithin holds tree ids only: a wider AOC joins it once that AOC is shipped.
-        also = [wid for wid in (next((i for i, x in wset.items() if x["name"] == n), None) for n in s.get("alsoWithin", [])) if wid in shipped]
+        # alsoWithin holds tree ids only: a wider AOC joins it once that AOC is shipped. Nesting is measured on the INAO outlines
+        # (data/countries/fr/within.json, Tools/data/fr_within.py), nearest first.
+        also = [wid for wid in within.get(pid, []) if wid in shipped]
         if also: place["alsoWithin"] = also
         out.append(place)
         for i, (zid, z) in enumerate(s.get("zones", {}).items(), 1):

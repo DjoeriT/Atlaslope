@@ -3225,8 +3225,384 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "haut-medoc",
+    "medoc",
+    "bordeaux"
+   ],
+   "northSouth": 4,
+   "courseOrder": 4
+  },
+  {
+   "id": "bordeaux",
+   "name": "Bordeaux",
+   "official": "Bordeaux",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0821",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.2272,
+    44.8301
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 11,
+   "courseOrder": 11
+  },
+  {
+   "id": "bordeaux-superieur",
+   "name": "Bordeaux Supérieur",
+   "official": "Bordeaux supérieur",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0306",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.2272,
+    44.8301
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 12,
+   "courseOrder": 12
+  },
+  {
+   "id": "cotes-de-bordeaux",
+   "name": "Côtes de Bordeaux",
+   "official": "Côtes de Bordeaux",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0987",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.3441,
+    44.6903
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 16,
+   "courseOrder": 16
+  },
+  {
+   "id": "entre-deux-mers",
+   "name": "Entre-Deux-Mers",
+   "official": "Entre-deux-Mers",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0406",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.1733,
+    44.7595
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 13,
+   "courseOrder": 13
+  },
+  {
+   "id": "medoc",
+   "name": "Médoc",
+   "official": "Médoc",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0730",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.8719,
+    45.3302
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
    "northSouth": 2,
    "courseOrder": 2
+  },
+  {
+   "id": "haut-medoc",
+   "name": "Haut Médoc",
+   "official": "Haut-Médoc",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0710",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.7579,
+    45.0836
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "medoc",
+    "bordeaux"
+   ],
+   "northSouth": 6,
+   "courseOrder": 6
+  },
+  {
+   "id": "saint-estephe",
+   "name": "Saint-Estèphe",
+   "official": "Saint-Estèphe",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0178",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.7829,
+    45.2501
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "haut-medoc",
+    "medoc",
+    "bordeaux"
+   ],
+   "northSouth": 3,
+   "courseOrder": 3
+  },
+  {
+   "id": "margaux",
+   "name": "Margaux",
+   "official": "Margaux",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0329",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.6833,
+    45.0343
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "haut-medoc",
+    "medoc",
+    "bordeaux"
+   ],
+   "northSouth": 7,
+   "courseOrder": 7
+  },
+  {
+   "id": "saint-julien",
+   "name": "Saint-Julien",
+   "official": "Saint-Julien",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0500",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.7572,
+    45.1569
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "haut-medoc",
+    "medoc",
+    "bordeaux"
+   ],
+   "northSouth": 5,
+   "courseOrder": 5
+  },
+  {
+   "id": "graves",
+   "name": "Graves",
+   "official": "Graves",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A1012",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.5587,
+    44.7117
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 15,
+   "courseOrder": 15
+  },
+  {
+   "id": "pessac-leognan",
+   "name": "Pessac-Léognan",
+   "official": "Pessac-Léognan",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0162",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.571,
+    44.7278
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "graves",
+    "bordeaux"
+   ],
+   "northSouth": 14,
+   "courseOrder": 14
+  },
+  {
+   "id": "saint-emilion",
+   "name": "Saint Émilion",
+   "official": "Saint-Emilion",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0988",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.1542,
+    44.8852
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 9,
+   "courseOrder": 9
+  },
+  {
+   "id": "saint-emilion-grand-cru",
+   "name": "Saint-Émilion Grand Cru",
+   "official": "Saint-Emilion Grand Cru",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0993",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.1542,
+    44.8852
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 10,
+   "courseOrder": 10
+  },
+  {
+   "id": "pomerol",
+   "name": "Pomerol",
+   "official": "Pomerol",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0273",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.2111,
+    44.9294
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 8,
+   "courseOrder": 8
+  },
+  {
+   "id": "sauternes",
+   "name": "Sauternes",
+   "official": "Sauternes",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0819",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.3228,
+    44.5624
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "bordeaux"
+   ],
+   "northSouth": 18,
+   "courseOrder": 18
+  },
+  {
+   "id": "barsac",
+   "name": "Barsac",
+   "official": "Barsac",
+   "kind": "AOC",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-bordeaux",
+   "euFile": "PDO-FR-A0186",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -0.3285,
+    44.5971
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "alsoWithin": [
+    "sauternes",
+    "bordeaux"
+   ],
+   "northSouth": 17,
+   "courseOrder": 17
   }
  ]
 }

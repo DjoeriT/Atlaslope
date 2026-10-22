@@ -39,6 +39,22 @@ Decisions: #52-#58 (`docs/architecture-decisions.md`), plan `Review/countries/fr
 - Pauillac: pauillac-17 (Latour tower over vines), -16 (gravel soil), -15, -11 (Pichon), -2 (barrels). Not: -6 (a person), -5,
   -13/-14 (book pages), -1, -9. Candidates: `Review/sources/photo-candidates-fr.json` (keys = sheet labels).
 
+## Pilot PR #228 (ReviewBot: ship, 0 blockers)
+- Measured [V usage.py]: Chablis 0.80M (0.57 re-read, 0.22 new), Pauillac 0.70M (0.56, 0.13). Helpers: builders ~155K + 82K + 52K,
+  photo pass 36K, rule books 83K, ReviewBot 52K.
+- For the owner: footer copy still says "Spain and Portugal" (draft copy, his rewrite); the France intro and the tile lines are draft.
+- Not fixed, pre-existing: on mobile guide pages the floating "Show map" button covers the section tabs (check Spain too); in dev,
+  vite.config.ts country-page transform answers every /xx/... URL, so /fr/chablis/ and /pt/douro/ give 500 in `npm run dev` (build fine).
+- By design: guide pages show at most 3 photos per place (`photosOf`), so "All 3 photos" though 5 ship.
+- Raw data lost from the main folder (data/raw symlink, fixed by #223); Natural Earth re-fetched to the scratchpad for the mask only.
+
+## Blocker for the batches: the 2 MB download check (Italy session, 22 Oct night)
+- Main sits at 1,995,742 of 2,000,000 bytes gzipped [R, Italy session]; each new place adds ~3.6 KB (its page, its outline in
+  added-boundaries, its atlas.js row). France's 92 places (~330 KB) cannot pass as the check stands. Owner decision asked by Italy:
+  A) count only the real first load and lazy-load each country's outlines, or B) raise the limit. Nobody edits Tools/check.sh until
+  he decides; France batch PRs wait, content keeps being written.
+- After #229 merges: add France's raw files (INAO zip, att/, cdc/ with the 9 direct URLs) to the raw manifest.
+
 ## Numbers
 - Estimate: 94 x 0.75M = ~70M guides [V rate Portugal, A France], about 90% re-read; photos ~0.1M a place [A]; pilot engineering
   ~5-10M [A]. Owner's goal is the go above 20M; region by region, report each batch's measured number.

@@ -8,9 +8,9 @@ const tree: Tree = loadTree(raw);
 const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
-  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones), with a unique slug id', () => {
-    expect(tree.places).toHaveLength(158);
-    expect(new Set(ids(tree.places)).size).toBe(158);
+  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) and Bordeaux batch (16 places, 22 Oct 2026), with a unique slug id', () => {
+    expect(tree.places).toHaveLength(174);
+    expect(new Set(ids(tree.places)).size).toBe(174);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 72 core, 6 vc, 77 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot with its 19 Chablis zones (not in Learn yet) among the none', () => {
+  it('counts 72 core, 6 vc, 93 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s 18 places and 19 Chablis zones (not in Learn yet) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 77, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 93, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3 + 19);
   });
 
@@ -156,7 +156,9 @@ describe('France pilot in the tree (decisions #52-#55)', () => {
     expect(ids(tree.regionsOf('france'))).toEqual(['fr-bordeaux', 'fr-burgundy']);
     expect(tree.regionsOf('france').every((r) => r.course === 'wset-fr')).toBe(true);
     expect(ids(tree.placesInRegion('fr-burgundy'))).toEqual(['chablis']);
-    expect(ids(tree.placesInRegion('fr-bordeaux'))).toEqual(['pauillac']);
+    expect(ids(tree.placesInRegion('fr-bordeaux'))).toEqual(['medoc', 'saint-estephe', 'pauillac', 'saint-julien', 'haut-medoc', 'margaux', 'pomerol',
+      'saint-emilion', 'saint-emilion-grand-cru', 'bordeaux', 'bordeaux-superieur', 'entre-deux-mers', 'pessac-leognan', 'graves', 'cotes-de-bordeaux',
+      'barsac', 'sauternes']);
   });
   it('puts the climats as zones inside Chablis Premier Cru and Grand Cru, with the full breadcrumb', () => {
     expect(ids(tree.children('chablis', 'place'))).toEqual(['chablis-premier-cru', 'chablis-grand-cru']);
@@ -166,7 +168,9 @@ describe('France pilot in the tree (decisions #52-#55)', () => {
     expect(tree.levelName(clos)).toBe('zone');
     expect(tree.breadcrumb('les-clos', 'place').map((c) => c.name)).toEqual(['France', 'Burgundy', 'Chablis', 'Chablis Grand Cru', 'Les Clos']);
   });
-  it('leaves Pauillac\'s wider AOCs out until they are in the tree', () => {
-    expect(tree.alsoWithin('pauillac')).toEqual([]);
+  // Measured on the INAO outlines (Tools/data/fr_within.py): nearest first; Bordeaux Supérieur is a tier on Bordeaux's ground, not wider.
+  it('puts Pauillac inside Haut-Médoc, Médoc and Bordeaux, and Barsac inside Sauternes, once those are in the tree', () => {
+    expect(ids(tree.alsoWithin('pauillac'))).toEqual(['haut-medoc', 'medoc', 'bordeaux']);
+    expect(ids(tree.alsoWithin('barsac'))).toEqual(['sauternes', 'bordeaux']);
   });
 });
