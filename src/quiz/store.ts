@@ -1,4 +1,5 @@
 // Progress storage: one versioned record behind one interface, so sync can plug in later. No React, no map.
+import { NO_COURSE, readCourse, type Course } from './course';
 import type { LogEntry, MemoryName, QuestionType } from './types';
 
 export const RECORD_VERSION = 1;
@@ -7,11 +8,13 @@ const BACKUP_KEY = 'atlaslope.quiz.backup';
 /** A stored record that could not be read is copied here as text before anything overwrites it. */
 const DAMAGED_KEY = 'atlaslope.quiz.damaged';
 
-/** Everything a learner has: the answer log (boxes, shades and due dates are replayed from it) and the focus (study region or place ids). */
+/** Everything a learner has: the answer log (boxes, shades and due dates are replayed from it), the focus (study region or place ids) and the course. */
 export interface QuizRecord {
   version: number;
   log: LogEntry[];
   focus: string[];
+  /** "My course". Added within version 1: a record without it (every save before 21 Oct 2026) reads as no course (old ids map, src/quiz/course.ts), so no bump that would stop an open older tab from saving. */
+  course: Course;
   /** ISO time of the last save; empty for a record never saved. */
   savedAt: string;
 }
@@ -34,7 +37,7 @@ export interface QuizStore {
   /** The current record: the stored one, migrated; an empty version-1 record when there is none. */
   load(): QuizRecord;
   /** Stamps `savedAt` and keeps the record (in storage when possible, else in memory), merged with any entries another tab saved meanwhile. Never overwrites a newer-version record in storage. */
-  save(record: { log: LogEntry[]; focus: string[] }): QuizRecord;
+  save(record: { log: LogEntry[]; focus: string[]; course?: Course }): QuizRecord;
   /** The record as the text of a file to save. */
   exportFile(): string;
   /** Replaces the record with a file's; the previous record is kept as a backup. A bad file is refused and changes nothing. */
@@ -44,7 +47,7 @@ export interface QuizStore {
   hasBackup(): boolean;
 }
 
-export const emptyRecord = (): QuizRecord => ({ version: RECORD_VERSION, log: [], focus: [], savedAt: '' });
+export const emptyRecord = (): QuizRecord => ({ version: RECORD_VERSION, log: [], focus: [], course: NO_COURSE, savedAt: '' });
 
 const isObject = (x: unknown): x is Record<string, unknown> => typeof x === 'object' && x !== null && !Array.isArray(x);
 const isIso = (x: unknown): x is string => typeof x === 'string' && !Number.isNaN(Date.parse(x));
@@ -73,7 +76,8 @@ export function migrate(raw: unknown): Migrated {
   const bad = log.findIndex((e) => !validEntry(e));
   if (bad >= 0) return { ok: false, newer: null, message: `Entry ${bad + 1} of the progress is damaged.` };
   const focus = Array.isArray(raw.focus) && raw.focus.every((f) => typeof f === 'string') ? (raw.focus as string[]) : [];
-  return { ok: true, record: { version: RECORD_VERSION, log: log as LogEntry[], focus, savedAt: typeof raw.savedAt === 'string' ? raw.savedAt : '' } };
+  const course = readCourse(raw.course);
+  return { ok: true, record: { version: RECORD_VERSION, log: log as LogEntry[], focus, course, savedAt: typeof raw.savedAt === 'string' ? raw.savedAt : '' } };
 }
 
 /** Identifies a log entry across copies of the log (two tabs, a reload): entries are appended, never removed or reordered. */
@@ -147,8 +151,8 @@ export function createStore(storage: Storage | null, now: () => Date = () => new
   };
 
   /** Writes a record as given, replacing what is stored (a loaded file, an undo). */
-  const put = (input: { log: readonly LogEntry[]; focus: readonly string[] }): QuizRecord => {
-    current = { version: RECORD_VERSION, log: structuredClone([...input.log]), focus: [...input.focus], savedAt: now().toISOString() };
+  const put = (input: { log: readonly LogEntry[]; focus: readonly string[]; course: Course }): QuizRecord => {
+    current = { version: RECORD_VERSION, log: structuredClone([...input.log]), focus: [...input.focus], course: input.course, savedAt: now().toISOString() };
     if (newerVersion === null) write(KEY, current);
     return structuredClone(current);
   };
@@ -159,7 +163,7 @@ export function createStore(storage: Storage | null, now: () => Date = () => new
     save(input) {
       // Another tab may have saved since this one read: keep its answers too.
       const stored = fresh();
-      return put({ log: mergeLogs(stored.log, input.log), focus: input.focus });
+      return put({ log: mergeLogs(stored.log, input.log), focus: input.focus, course: input.course ?? stored.course });
     },
     exportFile: () => JSON.stringify({ ...fresh(), savedAt: now().toISOString() }, null, 1),
     importFile(text) {

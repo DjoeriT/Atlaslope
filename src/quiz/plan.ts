@@ -1,6 +1,7 @@
 // What to ask: memories due, and the Study intake of new places (focus first, then course order; zones after their parent).
 import type { Place, Tree } from '../tree';
-import { DAY_MS, placeKnown, questionType } from './memory';
+import { inCourse, NO_COURSE, type Course } from './course';
+import { DAY_MS, findsIt, placeKnown, questionType } from './memory';
 import type { MemoryName, MemoryRef, QuizState } from './types';
 
 /** New places a day in Study; "Learn 5 more" takes this many again. [O] */
@@ -15,6 +16,8 @@ export interface PlanOptions {
   focus?: readonly string[];
   /** "Learn 5 more": take the next five new places, whatever today's count. */
   learnMore?: boolean;
+  /** The learner's course: Study asks only its places. Default: no course, every Study place. */
+  course?: Course;
   /** The learner's offset from UTC, for where a day starts. Default 0. */
   utcOffsetMinutes?: number;
 }
@@ -57,7 +60,7 @@ export function askable(tree: Tree, placeIds: readonly string[], state: QuizStat
   for (const place of order) {
     const p = state.places[place.id];
     if (!p) continue;
-    for (const memory of MEMORIES) if (questionType(p, memory)) refs.push({ place: place.id, memory, due: p[memory].due });
+    for (const memory of MEMORIES) if (questionType(p, memory, findsIt(place))) refs.push({ place: place.id, memory, due: p[memory].due });
   }
   return refs.sort((a, b) => Date.parse(a.due) - Date.parse(b.due));
 }
@@ -67,16 +70,16 @@ export function dueNow(tree: Tree, placeIds: readonly string[], state: QuizState
   return askable(tree, placeIds, state).filter((r) => Date.parse(r.due) <= now.getTime());
 }
 
-/** The Study curriculum: every core place and zone, in course order. */
-export function studySet(tree: Tree): Place[] {
-  return inCourseOrder(tree, tree.places.filter((p) => STUDY_KINDS.includes(p.quiz)));
+/** The Study curriculum: every core place and zone the course asks (all of them with no course), in course order. */
+export function studySet(tree: Tree, course: Course = NO_COURSE): Place[] {
+  return inCourseOrder(tree, tree.places.filter((p) => STUDY_KINDS.includes(p.quiz) && inCourse(course, p)));
 }
 
 const dayOf = (t: number, offsetMinutes: number) => Math.floor((t + offsetMinutes * 60_000) / DAY_MS);
 
 /** The Study plan at `now`: what is due, and today's intake (five new places a day, focus first, then course order; a zone only once its parent is known). */
 export function studyPlan(tree: Tree, state: QuizState, now: Date, opts: PlanOptions = {}): StudyPlan {
-  const curriculum = studySet(tree);
+  const curriculum = studySet(tree, opts.course);
   const offset = opts.utcOffsetMinutes ?? 0;
   const today = dayOf(now.getTime(), offset);
   const seenToday = Object.values(state.places).filter((p) => dayOf(Date.parse(p.seenAt), offset) === today).length;

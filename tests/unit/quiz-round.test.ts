@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
 import {
-  afterAnswer, MIN_DISTANCE, replay, reviewRound, roundKeys, roundSeed, studyPlan, studyRound, studySet, withSlip,
+  afterAnswer, findsIt, MIN_DISTANCE, replay, reviewRound, roundKeys, roundSeed, studyPlan, studyRound, studySet, withSlip,
   type Answer, type LogEntry, type MemoryName, type Round, type RoundItem,
 } from '../../src/quiz';
 
@@ -74,7 +74,8 @@ describe('Study intake', () => {
 
   it('never takes a Vino de Calidad or a never-asked place into Study', () => {
     expect(studySet(fixture).map((p) => p.id)).toEqual(['north-a', 'north-a-z1', 'north-a-z2', 'north-c', 'north-b', 'south-a', 'south-b', 'south-c']);
-    expect(studySet(spain)).toHaveLength(73);
+    // 72 core places (Cava and Catalunya in since 21 Oct 2026, owner) and 3 zones.
+    expect(studySet(spain)).toHaveLength(75);
     expect(studySet(spain).some((p) => p.quiz === 'vc' || p.quiz === 'none')).toBe(false);
   });
 });
@@ -117,7 +118,8 @@ describe('Study rounds over data/places.json', () => {
     const places = r.items.map((i) => i.place);
     expect([...places].sort()).toEqual(seen.slice(15).map((p) => p.id).sort());
     expect(places).not.toEqual(seen.slice(15).reverse().map((p) => p.id));
-    expect(r.items.every((i) => i.kind === 'question' && i.type === 'find-it')).toBe(true);
+    // Cava and Catalunya are never asked "find it" (quizFindIt: false): what is this instead.
+    expect(r.items.every((i) => i.kind === 'question' && i.type === (findsIt(spain.getPlace(i.place)) ? 'find-it' : 'what-is-this'))).toBe(true);
     expect(r.more).toBe(true);
   });
 

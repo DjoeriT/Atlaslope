@@ -18,12 +18,14 @@ describe('place tree', () => {
     expect(places.filter((p) => p.level === 'zone' && p.region === 'rioja').map((p) => p.id)).toEqual(['rioja-alta', 'rioja-alavesa', 'rioja-oriental']);
   });
 
-  it('pools 70 core places and 6 Vinos de Calidad for the quiz', () => {
-    expect(places.filter((p) => p.quiz === 'core')).toHaveLength(70);
+  it('pools 72 core places (Cava and Catalunya in since 21 Oct 2026) and 6 Vinos de Calidad for the quiz', () => {
+    expect(places.filter((p) => p.quiz === 'core')).toHaveLength(72);
     expect(byId.get('urbezo')?.quiz).toBe('core');
     expect(places.filter((p) => p.quiz === 'vc').map((p) => p.id).sort()).toEqual(
       ['cangas', 'cebreros', 'lebrija', 'sierra-de-salamanca', 'valles-de-benavente', 'valtiendas']);
-    for (const id of ['cava', 'catalunya', 'islas-canarias']) expect(byId.get(id)?.quiz, id).toBe('none');
+    expect(byId.get('islas-canarias')?.quiz).toBe('none');
+    // Over other DOs, so asked without the map question (owner, 21 Oct 2026).
+    for (const id of ['cava', 'catalunya']) expect(byId.get(id), id).toMatchObject({ quiz: 'core', quizFindIt: false });
     expect(places.filter((p) => p.kind === 'VP').every((p) => p.quiz === 'none')).toBe(true);
   });
 

@@ -2,11 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { parseQuizRoute, parseSelection, quizToHash } from '../../src/url';
 
 describe('the Study route', () => {
-  it('reads #study, and #quiz from links made before the rename', () => {
+  it('reads #learn, and #study and #quiz from links made before the renames', () => {
     expect(parseQuizRoute('#study')).toEqual({ sub: null });
     expect(parseQuizRoute('#study=focus')).toEqual({ sub: 'focus' });
     expect(parseQuizRoute('#study=test&set=rioja')).toEqual({ sub: 'test', set: ['rioja'] });
     expect(parseSelection('#study').id).toBe('atlas');
+    expect(parseQuizRoute('#learn=practise')).toEqual({ sub: 'practise' });
   });
   it('reads #quiz and its reserved sub-routes', () => {
     expect(parseQuizRoute('#quiz')).toEqual({ sub: null });
@@ -23,17 +24,17 @@ describe('the Study route', () => {
     expect(parseSelection('#quiz').id).toBe('atlas');
   });
   it('writes the route, with the view when given', () => {
-    expect(quizToHash({ sub: null })).toBe('#study');
-    expect(quizToHash({ sub: 'practise' })).toBe('#study=practise');
+    expect(quizToHash({ sub: null })).toBe('#learn');
+    expect(quizToHash({ sub: 'practise' })).toBe('#learn=practise');
     const view = { lng: -3, lat: 40, zoom: 5, bearing: 0, pitch: 0 };
-    expect(quizToHash({ sub: null }, view)).toBe('#study&view=-3.0000,40.0000,5.00,0,0');
+    expect(quizToHash({ sub: null }, view)).toBe('#learn&view=-3.0000,40.0000,5.00,0,0');
     expect(parseQuizRoute(quizToHash({ sub: 'focus' }, view))).toEqual({ sub: 'focus' });
   });
 });
 
 describe('the test-me route', () => {
   it('writes and reads #quiz=test&set=a,b', () => {
-    expect(quizToHash({ sub: 'test', set: ['rioja', 'rioja-alta'] })).toBe('#study=test&set=rioja,rioja-alta');
+    expect(quizToHash({ sub: 'test', set: ['rioja', 'rioja-alta'] })).toBe('#learn=test&set=rioja,rioja-alta');
     expect(parseQuizRoute('#quiz=test&set=rioja,rioja-alta')).toEqual({ sub: 'test', set: ['rioja', 'rioja-alta'] });
   });
   it('falls back to plain #quiz when the set is missing', () => {

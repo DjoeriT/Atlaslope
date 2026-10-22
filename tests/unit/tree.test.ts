@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 70 core, 6 vc, 79 none and 3 zones, with the Portugal places and France\'s pilot (not in Study yet) among the none', () => {
+  it('counts 72 core, 6 vc, 77 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot with its 19 Chablis zones (not in Learn yet) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([70, 6, 79, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 77, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3 + 19);
   });
 

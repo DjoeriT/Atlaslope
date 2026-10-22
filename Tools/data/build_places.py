@@ -22,8 +22,11 @@ EU_FILES = {"tharsys": "PDO-ES-02980"}
 # Study region for places that have no polygon in the 2014 layer (from dop-overrides.json "missing"), by EU file number.
 # Kept out of the quiz pool (taxonomy check, finding 6 of the plan review): Cava and the generic Catalunya DO (they overlap
 # other DOs), the all-islands Islas Canarias VC and every Vino de Pago. Urbezo, a single estate the ministry lists as DO, is quizzed (owner, 16 Oct 2026).
-NOT_QUIZZED = {"PDO-ES-A0735": "Overlaps other DOs across six regions.", "PDO-ES-A1549": "Covers most of the other Catalan DOs.",
-               "PDO-ES-A1511": "Covers all the islands, over their own DOs."}
+NOT_QUIZZED = {"PDO-ES-A1511": "Covers all the islands, over their own DOs."}
+# Quizzed, but never as "find it" on the map: they overlap other DOs (owner, 21 Oct 2026: named at WSET Level 2 and 3). This was a
+# hand edit of data/places.json until the France pilot's rebuild dropped it (22 Oct 2026); the build now carries it.
+NO_FIND_IT = {"PDO-ES-A0735": "Overlaps other DOs across six regions, so Learn asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3).",
+              "PDO-ES-A1549": "Covers most of the other Catalan DOs, so Learn asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3)."}
 # Quizzed places that need a word of explanation in the tree.
 QUIZ_NOTES = {"PDO-ES-02585": "A single estate (one cadastral polygon of Cariñena, surrounded by DO Cariñena) that the ministry lists as DO; quizzed as a core place on the owner's word (16 Oct 2026)."}
 
@@ -200,6 +203,7 @@ def main():
         if pid in EU_FILES: place["euFile"] = EU_FILES[pid]
         if pid in ALSO_WITHIN: place["alsoWithin"] = ALSO_WITHIN[pid]
         if r["euFile"] in NOT_QUIZZED: place["quizNote"] = NOT_QUIZZED[r["euFile"]]
+        if r["euFile"] in NO_FIND_IT: place["quizFindIt"], place["quizNote"] = False, NO_FIND_IT[r["euFile"]]
         if r["euFile"] in QUIZ_NOTES: place["quizNote"] = QUIZ_NOTES[r["euFile"]]
         places.append(place)
 

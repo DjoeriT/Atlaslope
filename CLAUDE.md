@@ -76,7 +76,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
   one always-visible "Photos: Name · licence · cropped and resized" line per set. A unit test fails while a shown photo has no checked crop (`src/home/photoCrops.json`, `Tools/guides/crop_sheet.mjs`).
 - **Style:** NO dark mode; black band + champagne (#E9D8B4 family), white page, 6px corners, no pills. Copy: one idea per line, no
   "X, Y and Z" lists. Users see "AtlaSlope"; code and URLs "atlaslope".
-- **Vocabulary:** "Study" not "Quiz" (code folder `src/quiz` stays). The guide = the whole place page; "Terroir" = one section; never "Terroir
+- **Vocabulary:** "Learn" not "Study" or "Quiz" (code folder `src/quiz` stays; "Study region" stays). The guide = the whole place page; "Terroir" = one section; never "Terroir
   guide". Keep "Green Spain". Home headline stays "Know the land behind the glass." See `docs/glossary.md`.
 - **Positioning (in every guide brief):** guides are a general, fun wine reference for anyone who loves wine, not exam-centric. "Why it
   tastes the way it does" is the spine; only a small "Test me" link leads into Study.
