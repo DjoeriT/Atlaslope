@@ -184,7 +184,7 @@ describe('map tours on the Guides page', () => {
     const list = guideRows();
     const guidesHtml = readFileSync('guides/index.html', 'utf8');
     const tours = list.rows.filter((r) => r.tour).map((r) => r.id).sort();
-    expect(tours).toEqual(['priorat', 'rioja']);
+    expect(tours).toEqual(['priorat', 'ribera-del-duero', 'rioja']);
     const html = fillGuideList(guidesHtml, list);
     expect(html).toContain('<a href="#map-tours">Show only guides with a map tour</a>');
     expect(html).toContain('id="map-tours"');

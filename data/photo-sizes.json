@@ -586,6 +586,11 @@
    "h": 800,
    "blur": "UklGRmAAAABXRUJQVlA4IFQAAACQAQCdASoQAAsAAsBMJQBWAAq2kAAA/oebA92Lo85TlsEu9Q4en0NVZOe2ZMm8V+INlD+uGM3RaUeqN8dM6+CZ9jGcK7DnasN48/aE7BTfllAIkAA="
   },
+  "ribera-belt-1": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAACQAgCdASoQAAkAAsBMJYgCdH8IwBb/4G4CGBtMAAD93uvvmIkqhe8B9ZI/sFtLBC6dfwiw2SBzM9xIuSjUtTkP/DFSX++5fgAAAA=="
+  },
   "ribera-del-duero-1": {
    "w": 1200,
    "h": 675,
@@ -615,6 +620,16 @@
    "w": 1200,
    "h": 900,
    "blur": "UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAwAAsBMJYgCdAEUoUvnK0NsAAD+ye7+3CvQJD1NMJbwEoiMU5XuE5/jn1qu2mSistwiyRmld8X4sgq4te66MAAAAA=="
+  },
+  "ribera-pintia-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoQAAwAAsBMJQBOgCHDGAAA/fz5iCnQ6WjU/hxMk99E74b3LGGyMcRgPvVD4ikAAAA="
+  },
+  "ribera-soils-1": {
+   "w": 800,
+   "h": 600,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwAAsBMJagCdGuAAoKEBQAA/vB7xte182ABJ+iVRhT2XNgFRVQ1DaAbZN57O2WYMS7yp0YoLyfsiwyvd+R4AAA="
   },
   "rioja-1": {
    "w": 1200,

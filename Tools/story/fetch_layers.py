@@ -15,6 +15,8 @@ BBOX = {"rioja": (-3.15, 42.05, -1.65, 42.70), "priorat": (0.65, 41.05, 1.00, 41
 HYDRO = "https://servicios.idee.es/wfs-inspire/hidrografia"
 NGBE = "https://www.ign.es/wfs-inspire/ngbe"
 MAIN = ("Río Ebro", "L'Ebre", "Río Oja", "Río Tirón", "Río Najerilla", "Río Iregua", "Riu de Siurana", "Riu de Montsant")
+BBOX["ribera-del-duero"] = (-4.5, 41.35, -2.85, 41.95)
+MAIN += ("Río Duero",)
 SIMPLIFY_DEG = 0.0002  # ~20 m, main rivers
 SIMPLIFY_MINOR_DEG = 0.0012  # ~120 m, other rivers (download budget, 21 Oct 2026)
 MIN_MINOR_DEG = 0.06  # other rivers spanning less than this (about 6 km) are left out
@@ -119,6 +121,9 @@ CONTENT_TOWNS = {
                 "Escaladei", "Bellmunt del Priorat", "La Vilella Baixa", "La Vilella Alta", "Siurana", "Cornudella de Montsant",
                 "Ulldemolins", "Marçà", "El Molar"],
 }
+CONTENT_TOWNS["ribera-del-duero"] = ["Aranda de Duero", "Peñafiel", "Roa", "La Horra", "Pesquera de Duero", "Padilla de Duero",
+                                     "San Esteban de Gormaz", "Gumiel de Izán", "Sotillo de la Ribera", "Quintanilla de Onésimo",
+                                     "Valbuena de Duero", "Berlangas de Roa", "Anguix", "Fuentelcésped", "Castrillo de la Vega"]
 
 
 # ranges named in the guides, kept even if NGBE files them under another local type
@@ -203,7 +208,8 @@ def names(guide):
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     os.makedirs(OUT, exist_ok=True)
-    for g in BBOX:
+    only = os.environ.get("STORY_ONLY")  # e.g. STORY_ONLY=ribera-del-duero: fetch just that guide
+    for g in (only.split(",") if only else BBOX):
         if what in ("rivers", "all"):
             rivers(g)
         if what in ("names", "all"):
