@@ -105,7 +105,9 @@ report 2023/2024) or steep (top quarter of the 96 places by share of land over 3
 share over 30%), or at least 500 m between p10 and p90 altitude, or two Köppen classes of at least 20% each, or big (DOCa or top 8 by area: La Mancha,
 Rioja, Ribera del Guadiana, Cava, Catalunya, Utiel-Requena, Ribera del Duero, Jumilla, MAPA 2023/24 p. 15). Result 14: Rioja, Priorat, Ribeira Sacra,
 Alicante, Campo de Borja, Cangas, Costers del Segre, Monterrei, Navarra, Somontano, Txakoli Getaria, Txakoli Bizkaia, Txakoli Álava, Valdeorras;
-plus Ribera del Duero as the owner's own pick (2 fly stops). Pilots measured 22 Oct 2026: Ribeira Sacra 97K, Ribera del Duero 117K helper tokens.
+plus Ribera del Duero as the owner's own pick (2 fly stops). The rule is meant for every country (owner, 22 Oct 2026): "big" = the country's top
+tier (Spain DOCa; e.g. Italy DOCG, Portugal its top DOCs [A]) or its top 8 by vineyard area from the national official register; steep, altitude and
+climate come from `place-measures.json` and rank within that country's places. Pilots measured 22 Oct 2026: Ribeira Sacra 97K, Ribera del Duero 117K helper tokens.
 
 ## Open issues (GitHub, DjoeriT/Atlaslope)
 Big plans the owner raised 19 Oct 2026, each a fresh plan session, priority his: #146 full QA sweep; #147 Study plan; #148 fly-over for
