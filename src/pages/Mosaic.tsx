@@ -5,15 +5,16 @@ import type { Pic } from './helpers';
 import { Img } from '../cards/Img';
 import { Credit, oneEach } from '../cards/Credit';
 import { Lightbox } from './Lightbox';
+import { PHOTO_MAX_REM, sizesFor } from './Pic';
 
 const t = strings.place;
 
-/** How wide each frame is (pages.css: a 76rem page, the hero 2 parts of 3, the side photos 1; a phone shows only the hero, full width,
- * so the side photos are lazy and never load there). */
+/** How wide each frame is: the whole mosaic is at most 33rem wide (C3, 22 Oct 2026), the hero frame 2 parts of 3, the side photos 1 (pages.css).
+ * Sizes ask for 1.5x the frame, so the 800 px files serve them sharp. A phone shows only the hero, full width, so the side photos are lazy
+ * and never load there. */
 function slotSizes(n: number, i: number): string {
-  if (n === 1) return '(min-width: 76rem) 72rem, 100vw';
-  if (i === 0) return '(max-width: 47.5em) 100vw, (min-width: 76rem) 48rem, 66vw';
-  return '(min-width: 76rem) 24rem, 34vw';
+  if (n === 1) return sizesFor(PHOTO_MAX_REM);
+  return sizesFor(i === 0 ? PHOTO_MAX_REM * 2 / 3 : PHOTO_MAX_REM / 3);
 }
 
 /** The guide's photo header (owner point 3, 18 Oct 2026): one hero, and with more photos two beside it, never more than three frames, no

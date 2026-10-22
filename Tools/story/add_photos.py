@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Add the five stop photos of the Rioja and Priorat story to the app's photo set.
+"""Add the stop photos of the Rioja and Priorat story (five, then two for Priorat weather and rules, 22 Oct 2026) to the app's photo set.
 
 Same steps as Tools/data/photo_ship.py (Commons' 1200 px rendition, WebP quality 72, entry in data/photos.json), for photos that are
 not a place's Guides photo. Then run Tools/data/photo_sizes.py for the 160/480/800 copies and blur previews.
-Needs Pillow (.venv/bin/python3). Focus points (checked on the 3:2 frame) are in data/story/photo-focus.json, not in
-src/home/photoCrops.json: that file is for the square Guides cards only, and a test rejects entries for photos the Guides page does not show.
+Needs Pillow (.venv/bin/python3). Focus points (checked on the 3:2 frame) go in src/pages/pageCrops.json with
+Tools/guides/crop_sheet.mjs --page, not in src/home/photoCrops.json (square Guides cards only).
 """
 import importlib.util, io, json, sys
 from pathlib import Path
@@ -27,6 +27,10 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
                           "Àngela Llop", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "Vines on steep terraced slopes at Porrera, Priorat", "50% 50%"),
     "priorat-scala-dei-1": ("File:Cartoixa d'Escaladei - Vista.jpg", "https://commons.wikimedia.org/wiki/File:Cartoixa_d%27Escaladei_-_Vista.jpg",
                             "joan ggk", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "The village at Scala Dei below the cliffs of the Montsant", "50% 40%"),
+    "priorat-weather-1": ("File:Serra del Montsant - 14.jpg", "https://commons.wikimedia.org/wiki/File:Serra_del_Montsant_-_14.jpg",
+                          "Angela Llop", "CC BY-SA 2.0", "https://creativecommons.org/licenses/by-sa/2.0", "Vines on bare reddish soil in the foreground, wooded hills beyond and the limestone crests of the Serra del Montsant under a blue sky", "50% 50%"),
+    "priorat-rules-1": ("File:Bodegas, vinos del Priorat, Scala Dei, La Morera de Montsant.jpg", "https://commons.wikimedia.org/wiki/File:Bodegas,_vinos_del_Priorat,_Scala_Dei,_La_Morera_de_Montsant.jpg",
+                        "Juan Emilio Prades Bel", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "The stone front of the Cellers de Scala Dei winery, with two wooden doors under its name board", "50% 50%"),
 }
 
 
@@ -42,7 +46,6 @@ def main():
         doc["photos"][key] = {"alt": alt, "artist": artist, "licence": licence, "licenceUrl": lurl, "page": page, "title": title}
         print(key, out.stat().st_size // 1024, "KB")
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
-    (ROOT / "data/story/photo-focus.json").write_text(json.dumps({k: v[-1] for k, v in PHOTOS.items()}, indent=1) + "\n")
 
 
 if __name__ == "__main__":

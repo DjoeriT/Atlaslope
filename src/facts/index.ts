@@ -46,6 +46,12 @@ export function photosOf(placeId: string): ShownPhoto[] {
     .map(([key, p]) => ({ ...p, src: `${ROOT}photos/${key}.webp`, ...sizesOf(key) }));
 }
 
+/** One photo by its key ("rioja-3"), for a map tour stop whose photo the story file names; undefined for an unknown key. */
+export function photoByKey(key: string): ShownPhoto | undefined {
+  const p = photos[key];
+  return p ? { ...p, src: `${ROOT}photos/${key}.webp`, ...sizesOf(key) } : undefined;
+}
+
 /** The smaller copies and the blur preview Tools/data/photo_sizes.py made for one photo; none for a photo it has not seen yet. */
 function sizesOf(key: string): Pick<ShownPhoto, 'srcSet' | 'blur'> {
   const s = photoSizes.photos[key];

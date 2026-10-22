@@ -7,7 +7,7 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite } from '../facts';
+import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photoByKey, photosOf, regionMeasuresOf, sheetOf, spainMeasures, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite, type ShownPhoto } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
@@ -19,18 +19,24 @@ import { sentences } from './sentence';
 import { Mosaic } from './Mosaic';
 import '../styles/pages.css';
 import '../story/story.css';
+import '../styles/guide-c3.css';
 import { Img } from '../cards/Img';
+import { Credit, oneEach } from '../cards/Credit';
 import type { FlyAsk } from '../story/GuideMap';
 import { hasStory, storyOf } from '../story/ids';
 import type { Story } from '../story/format';
 import { flyKey } from '../story/steps';
-import { TourBand } from '../story/TourBand';
+import type { Measures } from '../facts';
+import type { MeasureKind, StoryStep } from '../story/format';
+import { MapCard } from './MapCard';
+import { PHOTO_MAX_REM, Pic, sizesFor } from './Pic';
 
 // The map tour's column and engine load only when it opens (dist/story/, Tools/check.sh).
 const GuideMap = lazy(() => import('../story/GuideMap').then((m) => ({ default: m.GuideMap })));
 
 const t = strings.place.page;
 const tf = strings.facts;
+const ts = strings.story;
 const tc = strings.cards;
 
 interface Props {
@@ -109,10 +115,10 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
-  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to "Open the map" on hide. A pending fly is dropped on hide.
+  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to the "Read with the map" card on hide. A pending fly is dropped on hide.
   const hadTour = useRef(tour);
   useEffect(() => {
-    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.pg-tour .story-open')?.focus({ preventScroll: true });
+    if (hadTour.current && !tour) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
     hadTour.current = tour;
   }, [tour]);
   const hideMap = () => { setFlyAsk(undefined); go({ kind: 'place', id: place.id, page: true }); };
@@ -147,6 +153,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   // Every fact carries a short source tag; the tags are gathered as the page draws, in reading order, and the Sources section at the
   // end lists each document once (owner card, 18 Oct 2026). The Sources section is drawn last, so it sees every tag above it.
   const cited: Cite[] = [];
+  // The photos drawn below the hero's own set (stops, zone and alike thumbnails): one credit line at the end names them.
+  const pics: ShownPhoto[] = [];
   const src = (cites: Cite[]) => {
     cited.push(...cites);
     return <SourceLine cites={cites} short />;
@@ -174,7 +182,63 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   // The fact sheet's own line for a beat shows only when no written chapter tells that beat (one fact, once).
   const told = (b: Beat) => chaptersOf(b).length > 0;
 
-  const chapterBody = (ch: Chapter, heading: boolean) => {
+  // The map tour's stops with a photo sit in the beat that tells them: the photo, the stop's caption and its measured line (the mock's stop figures).
+  const measureLine = (step: StoryStep): string | undefined => {
+    const m = step.measure && (measuresOf(step.measure.place) as (Measures & { slope?: { steepShare: number } }) | undefined);
+    if (!m || !step.measure) return undefined;
+    const kind: MeasureKind = step.measure.kind;
+    const a = m.altitude;
+    const text = kind === 'median' ? ts.measures.median(a.median) : kind === 'top' ? ts.measures.top(a.median, a.p90) : kind === 'low' ? ts.measures.low(a.p10) : ts.measures.steep(Math.round((m.slope?.steepShare ?? 0) * 100));
+    const name = step.measure.place !== place.id ? tree.getPlace(step.measure.place)?.name : undefined;
+    return name ? ts.measureIn(name, text) : text;
+  };
+  const stopsOf = (ch: Chapter) => (story?.steps ?? []).flatMap((step) => {
+    if (step.chapter !== ch.id || !step.photo) return [];
+    // A stop with no fly link (Priorat's weather and rules, owner's photo picks 22 Oct 2026) shows its photo without a caption: no new text.
+    const fly = step.fly !== undefined ? ch.fly?.[step.fly] : undefined;
+    const photo = photoByKey(step.photo);
+    return photo ? [{ step, fly, photo, id: ch.id }] : [];
+  });
+  const stopFigures = (stops: ReturnType<typeof stopsOf>) => stops.map(({ step, fly, photo, id }) => {
+    pics.push(photo);
+    const line = measureLine(step);
+    return (
+      <figure key={`${id}.${step.fly ?? step.photo}`} className="pg-fig">
+        <Pic photo={photo} slot={stops.length > 1 ? 16 : PHOTO_MAX_REM} alt={photo.alt} />
+        {fly && <figcaption>
+          <span className="cap-t">{fly.label}</span>
+          <span className="cap-p">{fly.caption}</span>
+          {line && <span className="cap-m">{line}<small>{ts.measuredBy}</small></span>}
+          {src(fly.cite)}
+        </figcaption>}
+      </figure>
+    );
+  });
+
+  const zoneCards = (ch: Chapter) => {
+    const own = ch.fly ?? [];
+    return ch.cards && (
+      <div className="pg-zguide" key={`${ch.id}-cards`}>
+        {ch.cards.map((c, i) => {
+          const zone = zoneByName.get(c.title);
+          const photo = zone ? photosOf(zone.id)[0] : undefined;
+          if (photo) pics.push(photo);
+          return (
+            <div key={c.title}>
+              {photo && <Pic photo={photo} slot={24} alt="" />}
+              <b>{zone ? <Link to={{ kind: 'place', id: zone.id, page: true }} go={go}>{c.title}</Link> : c.title}</b>
+              <dl>
+                <dt>{t.beats.weather}</dt><dd>{c.climate}</dd>
+                <dt>{t.short.wine}</dt><dd>{c.wine}</dd>
+              </dl>
+              {pill(ch.id, own.length + i, c.fly.label)}
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+  const chapterBody = (ch: Chapter, heading: boolean, withCards = true) => {
     const own = ch.fly ?? [];
     return (
       <div className="pg-ch" id={`terroir-${ch.id}`} key={ch.id}>
@@ -182,25 +246,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
         {ch.paras.map((para, i) => <p key={i}>{para}</p>)}
         {own.length > 0 && <div className="pg-flies">{own.map((f, i) => pill(ch.id, i, f.label))}</div>}
         {src(ch.cite)}
-        {ch.cards && (
-          <div className="pg-zguide">
-            {ch.cards.map((c, i) => {
-              const zone = zoneByName.get(c.title);
-              const photo = zone ? photosOf(zone.id)[0] : undefined;
-              return (
-                <div key={c.title}>
-                  {photo && <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy />}
-                  <b>{zone ? <Link to={{ kind: 'place', id: zone.id, page: true }} go={go}>{c.title}</Link> : c.title}</b>
-                  <dl>
-                    <dt>{t.beats.weather}</dt><dd>{c.climate}</dd>
-                    <dt>{t.short.wine}</dt><dd>{c.wine}</dd>
-                  </dl>
-                  {pill(ch.id, own.length + i, c.fly.label)}
-                </div>
-              );
-            })}
-          </div>
-        )}
+        {withCards && zoneCards(ch)}
       </div>
     );
   };
@@ -225,11 +271,12 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
           <ul className="pg-zones">
             {zones.map((z) => {
               const photo = photosOf(z.id)[0];
+              if (photo) pics.push(photo);
               const why = sheetOf(z.id)?.why;
               return (
                 <li key={z.id}>
                   <Link className="zlink" to={{ kind: 'place', id: z.id, page: true }} go={go}>
-                    {photo ? <Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 18rem" alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
+                    {photo ? <Img key={photo.src} photo={photo} sizes={sizesFor(11)} alt="" lazy /> : <span className="zblank" style={{ background: color }} aria-hidden="true" />}
                     <b>{z.name}</b>
                   </Link>
                   {why && <><p>{why.text}</p>{src(why.cite)}</>}
@@ -350,8 +397,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     ...(tastes ? [{ id: 'taste', label: t.sections.taste, focus: 'heading' }] : []),
     ...(short.length >= 3 ? [{ id: 'short', label: t.sections.short, focus: 'heading' }] : []),
     ...(producers.length > 0 ? [{ id: 'producers', label: t.sections.producers, focus: 'heading' }] : []),
-    ...extras.map((k) => ({ id: k, label: t.sections[k], focus: 'heading' })),
     ...(alike.length > 0 ? [{ id: 'alike', label: t.sections.alike, focus: 'heading' }] : []),
+    ...extras.map((k) => ({ id: k, label: t.sections[k], focus: 'heading' })),
     ...(sheet || guide ? [{ id: 'sources', label: t.sections.sources, focus: 'heading' }] : []),
   ];
 
@@ -366,29 +413,49 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     const beat = beats.find((x) => x.id === b);
     return beat ? jump(b, beatHeading(beat)) : undefined;
   };
+  // The map card's photo: the one the tour opens on, else the place's first.
+  const cardPhoto = story ? photoByKey(story.cover.photo) ?? photosOf(place.id)[0] : undefined;
+  if (cardPhoto && !tour) pics.push(cardPhoto);
   const pageHash = selectionToHash({ kind: 'place', id: place.id, page: true });
 
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
-      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} extra={story && !tour && (
-        <a className="pg-tourjump" href="#map-tour" onClick={(e) => { e.preventDefault(); const band = document.getElementById('map-tour'); band?.scrollIntoView({ block: 'start' }); band?.focus({ preventScroll: true }); }}><TourIcon /> {strings.story.jumpToTour}</a>
-      )} />
+      <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />
       <div className="pg-body">
       <div className="pg-listing">
-        <nav className="kicker crumb" aria-label={tc.whereThisSits}>
-          {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
-          {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
-        </nav>
-        <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
-        {guide?.say && <p className="pg-say"><span>{t.say}</span> {guide.say}</p>}
-        <ul className="pg-badges" aria-label={t.sections.where}>
-          <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
-          {region && <li title={t.swsTitle(region.chapter ?? region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
-          {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
-          {meta && <li className="meta">{meta}</li>}
-        </ul>
-        <Mosaic key={place.id} photos={photos} name={place.name} color={color} />
-        {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
+        <div className="pg-hero">
+          <div className="pg-hero-tt">
+            <nav className="kicker crumb" aria-label={tc.whereThisSits}>
+              {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
+              {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
+            </nav>
+            <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
+            {guide?.say && <p className="pg-say"><span>{t.say}</span> {guide.say}</p>}
+            <ul className="pg-badges" aria-label={t.sections.where}>
+              <li className="lvl"><abbr title={isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind]}>{level}</abbr></li>
+              {region && <li title={t.swsTitle(region.chapter ?? region.name)}>{ownRegion ? t.swsBadge(region.name) : <Link to={{ kind: 'region', id: region.id, page: true }} go={go}>{t.swsBadge(region.name)}</Link>}</li>}
+              {wsetLevels.length > 0 && <li title={t.wsetTitle(wsetLevels)}>{t.wsetBadge(wsetLevels)}</li>}
+              {meta && <li className="meta">{meta}</li>}
+            </ul>
+          </div>
+          {/* The map card where there is a tour (C3, owner 22 Oct 2026); no tour, no card: the photos and the plain "Fly to" button. */}
+          <div className="pg-hero-pic">
+            {hasStory(place.id) && !tour ? (
+              guide && story
+                ? <MapCard id={place.id} photo={cardPhoto} minutes={guide.minutes} stops={story.steps.length - 1} go={go} />
+                : <div className="mapcard-wait" aria-hidden="true" />
+            ) : <Mosaic key={place.id} photos={photos} name={place.name} color={color} />}
+          </div>
+          <div className="pg-hero-why">
+            {spine && (
+              <header className="pg-spine">
+                <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
+                {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
+              </header>
+            )}
+            {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
+          </div>
+        </div>
 
         <nav ref={jumpBar} className="pg-jump" aria-label={t.jumpLabel}>
           {sections.map((s) => (
@@ -398,34 +465,36 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
         <div className="pg-cols">
           <main>
-            {spine && (
-              <>
-              <header className="pg-spine">
-                <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
-                {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-              </header>
-              {/* Outside the header, which is a reading measure: the band spans the whole guide column (mock b3). */}
-              {guide && story && !tour && <TourBand id={place.id} story={story} minutes={guide.minutes} go={go} />}
-              </>
-            )}
-
-            {beats.map((b) => (
-              <section key={b.id} id={b.id} className="pg-beat" aria-labelledby={beatHeading(b)}>
-                <div className="pg-beat-h">
-                  <span className="n" aria-hidden="true">{b.n}</span>
-                  {b.chapters[0] ? (
-                    <>
-                      <span className="k">{t.beats[b.id]}</span>
-                      <h3 id={beatHeading(b)} tabIndex={-1}><span className="sr-only">{t.beats[b.id]}: </span>{b.chapters[0].title}</h3>
-                    </>
-                  ) : <h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3>}
-                </div>
-                <div className={b.chapters.length > 0 && factsOf[b.id] ? 'pg-beat-body two' : 'pg-beat-body'}>
-                  {b.chapters.length > 0 && <div className="pg-prose">{b.chapters.map((ch, i) => chapterBody(ch, i > 0))}</div>}
-                  {factsOf[b.id] && <div className="pg-facts">{factsOf[b.id]}</div>}
-                </div>
-              </section>
-            ))}
+            {beats.map((b) => {
+              const stops = b.chapters.flatMap(stopsOf);
+              const figs = stopFigures(stops);
+              // The rules beat's facts (styles, grapes) run full width under it; the others sit in the side column with the stop photos.
+              const side = b.id === 'rules' ? undefined : factsOf[b.id];
+              const below = [...b.chapters.map(zoneCards), b.id === 'rules' && factsOf.rules ? <div key="rules" className="pg-facts pg-below-facts">{factsOf.rules}</div> : null].filter(Boolean);
+              return (
+                <section key={b.id} id={b.id} className={figs.length > 0 || side ? 'pg-beat' : 'pg-beat solo'} aria-labelledby={beatHeading(b)}>
+                  <div className="pg-beat-main">
+                    <div className="pg-beat-h">
+                      <span className="n" aria-hidden="true">{b.n}</span>
+                      {b.chapters[0] ? (
+                        <>
+                          <span className="k">{t.beats[b.id]}</span>
+                          <h3 id={beatHeading(b)} tabIndex={-1}><span className="sr-only">{t.beats[b.id]}: </span>{b.chapters[0].title}</h3>
+                        </>
+                      ) : <h3 id={beatHeading(b)} tabIndex={-1}>{t.beats[b.id]}</h3>}
+                    </div>
+                    {b.chapters.length > 0 && <div className="pg-prose">{b.chapters.map((ch, i) => chapterBody(ch, i > 0, false))}</div>}
+                  </div>
+                  {(figs.length > 0 || side) && (
+                    <aside className="pg-beat-side">
+                      {figs.length > 0 && <div className={figs.length > 1 ? 'pg-figs two' : 'pg-figs'}>{figs}</div>}
+                      {side && <div className="pg-facts">{side}</div>}
+                    </aside>
+                  )}
+                  {below.length > 0 && <div className="pg-beat-below">{below}</div>}
+                </section>
+              );
+            })}
 
             {loose.map((ch) => (
               <section key={ch.id} id={`terroir-${ch.id}`} className="pg-beat" aria-labelledby={`terroir-${ch.id}-h`}>
@@ -466,12 +535,37 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
               </section>
             )}
 
+            {(producers.length > 0 || alike.length > 0) && (
+              <div className={producers.length > 0 && alike.length > 0 ? 'pg-two' : 'pg-two solo'}>
             {producers.length > 0 && (
               <section id="producers" aria-labelledby="producers-h">
                 <h2 id="producers-h" tabIndex={-1}>{t.sections.producers}</h2>
                 <ul className="pg-names">{producers.map((p) => <li key={p.name}>{p.wine ? `${p.name} (${p.wine})` : p.name}</li>)}</ul>
                 {src(sheet!.producers!.cite)}
               </section>
+            )}
+            {alike.length > 0 && (
+              <section id="alike" aria-labelledby="alike-h">
+                <h2 id="alike-h" tabIndex={-1}>{t.sections.alike}</h2>
+                <ul className="pg-alike">
+                  {alike.map((a) => {
+                    const photo = photosOf(a.place.id)[0];
+                    if (photo) pics.push(photo);
+                    const trim = photo && (cardCrops as Record<string, { trimTop: number }>)[photo.src.replace(/^.*\/|\.webp$/g, '')]?.trimTop;
+                    return (
+                      <li key={a.place.id}>
+                        <Link className="zlink" to={{ kind: 'place', id: a.place.id, page: true }} go={go}>
+                          {photo ? <span className="ph" style={trim ? ({ '--trim': trim } as CSSProperties) : undefined}><Img key={photo.src} photo={photo} sizes={sizesFor(21)} alt="" lazy /></span> : <span className="zblank" style={{ background: regionColor(a.place.region) }} aria-hidden="true" />}
+                          <b>{a.place.name}</b>
+                        </Link>
+                        <p>{a.why}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            )}
+              </div>
             )}
 
             {extras.map((k) => {
@@ -499,27 +593,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
               );
             })}
 
-            {alike.length > 0 && (
-              <section id="alike" aria-labelledby="alike-h">
-                <h2 id="alike-h" tabIndex={-1}>{t.sections.alike}</h2>
-                <ul className="pg-alike">
-                  {alike.map((a) => {
-                    const photo = photosOf(a.place.id)[0];
-                    const trim = photo && (cardCrops as Record<string, { trimTop: number }>)[photo.src.replace(/^.*\/|\.webp$/g, '')]?.trimTop;
-                    return (
-                      <li key={a.place.id}>
-                        <Link className="zlink" to={{ kind: 'place', id: a.place.id, page: true }} go={go}>
-                          {photo ? <span className="ph" style={trim ? ({ '--trim': trim } as CSSProperties) : undefined}><Img key={photo.src} photo={photo} sizes="(max-width: 47.5em) 100vw, 16rem" alt="" lazy /></span> : <span className="zblank" style={{ background: regionColor(a.place.region) }} aria-hidden="true" />}
-                          <b>{a.place.name}</b>
-                        </Link>
-                        <p>{a.why}</p>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </section>
-            )}
-
+            <div className="pg-end">
             {testMe}
 
             {(region && !ownRegion) || next ? (
@@ -533,6 +607,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
                 )}
               </div>
             ) : null}
+            </div>
 
             {cited.length > 0 && (
               <Section id="sources" title={t.sections.sources}>
@@ -540,6 +615,17 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
               </Section>
             )}
           </main>
+          {/* One line for the photos drawn below the hero's own set (the hero's Mosaic carries its own line). */}
+          {(() => {
+            const inHero = new Set((hasStory(place.id) && !tour ? [] : photos.slice(0, 3)).map((p) => p.src));
+            const rest = oneEach(pics.filter((p, i) => !inHero.has(p.src) && pics.findIndex((q) => q.src === p.src) === i));
+            return rest.length > 0 && (
+              <p className="pg-credits pg-credits-end">
+                {t.photosLine}{' '}
+                {rest.map((p, i) => <span key={p.src}>{i > 0 && '; '}<Credit photo={p} /></span>)}
+              </p>
+            );
+          })()}
         </div>
       </div>
       {tour && guide && story && (

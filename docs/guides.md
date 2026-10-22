@@ -86,6 +86,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 22 Oct 2026 | Page crops: every photo a guide page with a map tour draws in a fixed frame (map card, stops, zone cards) has a checked focus and file hash in `src/pages/pageCrops.json` (replaces `data/story/photo-focus.json`); a unit test enforces it (no guide format change) | "Photo crops" below |
 | 21 Oct 2026 | Story files ("Map tours"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
 | 19 Oct 2026 | Photo crops: every photo the Guides page shows as a square card has a checked crop in `src/home/photoCrops.json`; a unit test enforces it (no guide format change) | "Photo crops" below |
 | 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
@@ -104,7 +105,7 @@ A story is a map walk through one guide: `content/stories/<id>.json` (types in `
   or `card` (index into its `cards[]`), or neither for a step the guide has no stop for.
 - `camera`: `center` + `zoom`, or `place` (the place's bounds), plus `pitch`, `bearing`, `zoomShift`. All camera values and layers are design choices;
   the file's `$comment` says so. `focus`: the outline drawn, a place id or `zones`. `layers`: `koppen`, `geology`, `zonelabels`.
-- `photo`: an id from `data/photos.json`, with a checked crop (`src/home/photoCrops.json` or `data/story/photo-focus.json`).
+- `photo`: an id from `data/photos.json`, with a checked crop (`src/home/photoCrops.json` or `src/pages/pageCrops.json`).
 - `measure`: `{place, kind}` from `data/place-measures.json`; `kind` is `median`, `top`, `low` or `steep`.
 - `facts[]` (0-3): `at` (a name in `data/story/names-<id>.geojson`, or `[lng, lat]`), `label`, `text` (a sentence of the guide, or a tightened
   form of one, using only words of the same chapter) and `cite` (from the cite list of that chapter or stop). Never a claim the guide does not make.
@@ -118,6 +119,11 @@ for a shown photo with no entry, with a changed file, or an entry for a photo no
 1. `node Tools/guides/crop_sheet.mjs [key...]`: writes `shots/crops/sheet.jpg` (original with the crop box, and the square) for the keys, or all missing or stale ones. Look at it.
 2. `node Tools/guides/crop_sheet.mjs --write [key...] --focus "<key>=<x>% <y>%"`: records them with the fresh hash (focus as given, else kept, else centre).
 3. `npx vitest run tests/unit/home.test.ts`.
+
+Guide pages with a map tour (Rioja, Priorat) draw photos in 3:2 and 4:3 frames: the map card, the stop photos and the zone cards. Each has a
+`focus` and file hash in `src/pages/pageCrops.json`, checked by eye; `tests/unit/page-crops.test.ts` fails for a missing, stale or unused entry.
+`node Tools/guides/crop_sheet.mjs --page [key...]` writes the sheet (3:2 box on the original, both frames below), `--page --write --focus "<key>=<x>% <y>%"`
+records it. The "If you like this, try" cards and zone list tiles (shared `Img`) still centre their photos.
 
 Place page "If you like this, try" cards (4:3) may trim a hazy band off the top of a photo: `src/pages/cardCrops.json` holds `trimTop`
 (percent, at most 33) and the same 12-hex file hash, recorded after looking at the card on the page. `tests/unit/guide-shape.test.ts` fails

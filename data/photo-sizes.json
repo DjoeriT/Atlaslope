@@ -526,6 +526,11 @@
    "h": 800,
    "blur": "UklGRlYAAABXRUJQVlA4IEoAAACQAQCdASoQAAsAAsBMJYgC7AC/ZFAA/sBQCQrggCDtBwkT9/MRZ4iJRuI7AIg/eayG47BFIC1L0h/aQU6uu1NP7JCvHHRr06RAAA=="
   },
+  "priorat-rules-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRnAAAABXRUJQVlA4IGQAAACwAQCdASoQAAwAAsBMJQBOgCFbOoAAAP73btx2DHHW8IZu9idwytQzyu0/HETuexr/Sdm0mDqQXsHMLlDHSUeI0eZ8xs/f459Ar+S+gJzcdEHoovLAjoWBqxutdll3yK0mAAAA"
+  },
   "priorat-scala-dei-1": {
    "w": 1200,
    "h": 798,
@@ -535,6 +540,11 @@
    "w": 1200,
    "h": 798,
    "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsAAsBMJYgCdADjWuKOXiMAAP73Q2Jahyu+fCmDqRYhRX2+Iq5vfaPK1saHlT+kAcu3z+lFGhmpZ8rzzldwyPtCyWuMC7Kjf17npcjdoZRwgAA="
+  },
+  "priorat-weather-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAsAAsBMJagCdAEOV3OAAP38dHoPUKG/Vt7DLKkzb8nx/C5lUKD+H2F3dVg32dRTuXymqueN4Vkz2ocAAA=="
   },
   "rias-baixas-1": {
    "w": 1200,

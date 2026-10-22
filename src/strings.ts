@@ -433,13 +433,13 @@ export const strings = {
   // "Map tour" (#127, #148): a guide's map walk, from content/stories/<id>.json. Mock: Review/mock-story-guide-v3/.
   story: {
     open: 'Map tour',
-    /** The one-line link at the top of a guide that has a tour; it scrolls to the band. */
-    jumpToTour: 'Map tour',
-    // The band under the guide's lede (B3, owner 21 Oct 2026) and the bar over the map column.
-    kickerMap: 'AtlaSlope map',
-    bandTitle: (stops: number) => `Map tour · ${stops} places to fly to`,
-    bandSub: (minutes: number) => `${minutes} minutes. The map follows the guide as you read.`,
-    openMap: 'Open the map',
+    // The "Read with the map" card in the guide's hero (C3, owner 22 Oct 2026); its two lines.
+    card: {
+      title: 'Read with the map',
+      sub: (minutes: number, stops: number) => `${minutes} minutes · ${stops} places to fly to`,
+    },
+    /** Under a stop's measured line in the guide (what the figure is and where the terrain comes from). */
+    measuredBy: 'Measured by AtlaSlope · Terrain: Mapzen',
     stopOf: (k: number, n: number) => `Stop ${k} of ${n}`,
     hide: 'Hide map',
     mapLabel: 'Map that follows the text',
