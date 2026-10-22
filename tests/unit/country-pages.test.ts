@@ -110,7 +110,7 @@ describe('France (pilot, decisions #52-#58)', () => {
   });
   it('renders /fr/ with 94 place tiles, photos where they have shipped, and an honest Study note', () => {
     expect(count(page, /<a class="ecard"/g)).toBe(94);
-    expect(count(page, /Photos soon/g)).toBe(23); // Loire and Rhône shipped (muscat-de-beaumes-de-venise has none); the last 22 guides still wait for photos
+    expect(count(page, /Photos soon/g)).toBe(1); // every France guide has photos except muscat-de-beaumes-de-venise (its Commons sheet has none)
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
