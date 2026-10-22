@@ -77,3 +77,5 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   The separate credit strip is gone; the three photo credits replace the "Card photos" part of the map's own credit line at the map's foot
   (the card is hidden, so its credits had to go anyway). One visible line still credits every photo (licence rule kept). On desktop the line wraps to two lines.
   Builder total for this mock thread ~125K [V].
+- Version 7 (owner: "Remove the credit line, or make it way smaller"): not removed (CC BY-SA and the standing photo-credit rule need it visible);
+  made one short line at 8px: "Esri, Vantor · PNOA © IGN · Photos: Colsandsol, Mentxuwiki CC BY-SA 4.0, Bea.miau CC0, cropped". Edited by LeadBot directly.
