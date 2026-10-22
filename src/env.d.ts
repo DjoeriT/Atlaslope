@@ -6,3 +6,8 @@ declare module 'virtual:search-index' {
   const index: import('./home/plainSearch').SearchIndex;
   export default index;
 }
+declare module 'virtual:outlines' {
+  /** Country id to the URL of its outlines file (vite.config.ts, src/map/outlines.ts). */
+  const urls: Record<string, string>;
+  export default urls;
+}

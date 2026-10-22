@@ -38,8 +38,11 @@ if [ "${1:-}" != "quick" ]; then
     echo "clean"'
   run "Download size under 2 MB (gzipped first load: imagery, video, map tours and guides excluded)" "." bash -c '
     # What a first visit loads (decision #38, owner 22 Oct 2026): each guide is a chunk under dist/guide-data/ that loads with its own page, so it is left out like dist/story/.
+    # The same rule, option A: dist/map-data/ holds each country but Spain'"'"'s outlines, fetched when the map first shows that country (src/map/outlines.ts).
+    # A place page dist/<code>/<place>/index.html is the atlas page again under its own address: a visit loads one of them, not all,
+    # and dist/atlas/index.html, which is counted, is the same page. The country pages dist/<code>/index.html stay counted.
     total=0
-    while IFS= read -r f; do total=$(( total + $(gzip -9 -c "$f" | wc -c) )); done < <(find dist -path dist/uitest -prune -o -path dist/story -prune -o -path dist/guide-data -prune -o -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif" ! -name "*.webm" ! -name "*.mp4" -print)
+    while IFS= read -r f; do total=$(( total + $(gzip -9 -c "$f" | wc -c) )); done < <(find dist -path dist/uitest -prune -o -path dist/story -prune -o -path dist/guide-data -prune -o -path dist/map-data -prune -o -path "dist/[a-z][a-z]/*/*" -prune -o -type f ! -name "*.jpg" ! -name "*.jpeg" ! -name "*.png" ! -name "*.webp" ! -name "*.avif" ! -name "*.webm" ! -name "*.mp4" -print)
     echo "gzipped download: $total bytes (limit 2000000)"
     [ "$total" -le 2000000 ]'
   run "Story data under 150 KB per map tour (gzipped, imagery excluded)" "." bash -c '

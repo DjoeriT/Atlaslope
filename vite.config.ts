@@ -5,14 +5,20 @@ import { loadTree } from './src/tree';
 import { placeOfPath, placePage, placePaths } from './src/paths';
 import { fillGuideCount, fillStoryCount, guideRows, placeGuideCount, storyCount } from './src/home/guideCount';
 import { fillCountryPage, fillGuidesIndex, fillHome } from './src/home/countryPages';
-import { COUNTRIES } from './src/countries';
+import { COUNTRIES, DEFAULT_COUNTRY, countryConfig } from './src/countries';
+import { splitOutlines } from './src/map/outlines';
 
 // GitHub Pages serves the site under /Atlaslope/ (the repo name) until atlaslope.com is pointed at it. A relative base works at any subpath and in any case,
 // so dev, tests and the published site all use the same build.
 // Debug-only query flags (src/debug.ts) exist only in dev and in the UI-test build (`--mode uitest`); the production build compiles them out.
 let outDir = 'dist';
+// Each country's outlines, split from data/added-boundaries.geojson at build time (src/map/outlines.ts). The default country's file is
+// part of the first load; every other country's goes under dist/map-data/ and loads when the map first shows it (option A, decision #38).
+const outlineFile = (id: string) => `added-boundaries-${countryConfig(id).code}.geojson`;
+const lazyOutlines = new Set(Object.keys(COUNTRIES).filter((id) => id !== DEFAULT_COUNTRY).map(outlineFile));
+const outlines = () => splitOutlines(JSON.parse(readFileSync('data/added-boundaries.geojson', 'utf8')), JSON.parse(readFileSync('data/places.json', 'utf8')));
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({ mode, command }) => ({
   base: './',
   // country/ is the template of the country pages: the build writes es/ and pt/ from it (one per country in src/countries.ts) and removes it.
   // Two pages (website slice 2): the home page at the root, the atlas at atlas/. Each is a real file, as GitHub Pages needs.
@@ -24,7 +30,8 @@ export default defineConfig(({ mode }) => ({
       chunkFileNames: (c) => (c.isEntry ? 'assets/[name]-[hash].js'
         : c.moduleIds.some((m) => /\/(src\/story|content\/stories|data\/story)\//.test(m)) ? 'story/[name]-[hash].js'
         : c.moduleIds.every((m) => /\/content\/guides\//.test(m)) ? 'guide-data/[name]-[hash].js' : 'assets/[name]-[hash].js'),
-      assetFileNames: (a) => ((a.originalFileNames ?? []).some((n) => n.startsWith('data/story/')) ? 'story/[name]-[hash][extname]' : 'assets/[name]-[hash][extname]'),
+      assetFileNames: (a) => ((a.originalFileNames ?? []).some((n) => n.startsWith('data/story/')) ? 'story/[name]-[hash][extname]'
+        : (a.names ?? []).some((n) => lazyOutlines.has(n)) ? 'map-data/[name]-[hash][extname]' : 'assets/[name]-[hash][extname]'),
     },
   } },
   plugins: [{
@@ -32,6 +39,28 @@ export default defineConfig(({ mode }) => ({
     name: 'search-index',
     resolveId: (id) => (id === 'virtual:search-index' ? '\0virtual:search-index' : undefined),
     load: (id) => (id === '\0virtual:search-index' ? `export default ${JSON.stringify(searchIndex())};` : undefined),
+  }, {
+    // virtual:outlines maps each country id to the URL of its outlines file; the dev server serves them at /@outlines/<id>.geojson.
+    name: 'country-outlines',
+    resolveId: (id) => (id === 'virtual:outlines' ? '\0virtual:outlines' : undefined),
+    load(id) {
+      if (id !== '\0virtual:outlines') return undefined;
+      this.addWatchFile('data/added-boundaries.geojson');
+      this.addWatchFile('data/places.json');
+      const parts = Object.entries(outlines());
+      if (command === 'serve') return `export default ${JSON.stringify(Object.fromEntries(parts.map(([c]) => [c, `/@outlines/${c}.geojson`])))};`;
+      const urls = parts.map(([c, fc]) => `${JSON.stringify(c)}: import.meta.ROLLUP_FILE_URL_${this.emitFile({ type: 'asset', name: outlineFile(c), source: JSON.stringify(fc) })}`);
+      return `export default { ${urls.join(', ')} };`;
+    },
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const m = /^\/@outlines\/([a-z]+)\.geojson$/.exec(req.url ?? '');
+        const fc = m ? outlines()[m[1]] : undefined;
+        if (!fc) return next();
+        res.setHeader('Content-Type', 'application/geo+json');
+        res.end(JSON.stringify(fc));
+      });
+    },
   }, { name: 'guide-count', transformIndexHtml: (html, ctx) => {
     // Every page that shows the guide count gets it; Home gets its country cards, the Guides page its country index.
     const out = fillStoryCount(fillGuideCount(html, placeGuideCount()), storyCount());
