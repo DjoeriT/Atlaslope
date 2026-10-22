@@ -1,4 +1,4 @@
-import { PageTop } from './PageTop';
+import { BackLink, PageTop } from './PageTop';
 import { lazy, Suspense, useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type MouseEvent, type ReactNode } from 'react';
 import { scrollToSection, useJumpMarker, useSectionInView } from '../app/motion';
 import { BrandMark } from '../app/TopBar';
@@ -471,7 +471,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
           <button type="button" ref={closeBtn} className="pg-close" onClick={hideMap}>{ts.close}</button>
           <a className="story-back" href={pageHash} aria-label={ts.back(place.name)} onClick={(e) => { e.preventDefault(); hideMap(); }}><span className="long">{ts.back(place.name)}</span><span className="short" aria-hidden="true">{ts.backShort}</span></a>
         </header>
-      ) : <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} />}
+      ) : <PageTop tree={tree} go={go} back={{ kind: 'place', id: place.id }} title={place.name} crumbBack />}
       <div className="pg-body">
       <div className="pg-listing">
         {!tour && <div className="pg-hero">
@@ -479,6 +479,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
             <nav className="kicker crumb" aria-label={tc.whereThisSits}>
               {/* Only the levels above: the title under it names the place (owner, 18 Oct 2026: "Spain and Spain in one screen"). */}
               {trail.slice(0, -1).map((c, i) => <span key={c.id + i} className="step">{i > 0 && <span className="sep" aria-hidden="true">›</span>}<Link to={selectionOf(tree, c)} go={go}>{c.name}</Link></span>)}
+              <BackLink go={go} back={{ kind: 'place', id: place.id }} title={place.name} className="crumb-map" />
             </nav>
             <h1 ref={heading} tabIndex={-1}>{place.name}</h1>
             {guide?.say && <p className="pg-say"><span>{t.say}</span> {guide.say}</p>}
