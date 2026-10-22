@@ -908,5 +908,75 @@
     "notes": "Text: 'territorio collinare' of 15 communes, so all partial. Sub-zones Rive and Superiore di Cartizze (in Valdobbiadene) are inside; not separately listed.",
     "whole": [],
     "officialKm2": null
+  },
+  "alta-langa": {
+    "route": "piemonte",
+    "codice": "DOC_55",
+    "source": "EU register PDO-IT-A1252 (eAmbrosia attachment 30948)"
+  },
+  "barbera-del-monferrato-superiore": {
+    "route": "piemonte",
+    "codice": "DOC_61",
+    "source": "EU register PDO-IT-A1397 (eAmbrosia attachment 29145)"
+  },
+  "brachetto-dacqui": {
+    "route": "piemonte",
+    "codice": "DOC_09",
+    "source": "EU register PDO-IT-A1382 (eAmbrosia attachment 29251)"
+  },
+  "canelli": {
+    "route": "piemonte",
+    "codice": "DOC_64",
+    "source": "EU register PDO-IT-02810 (no summary sheet in the register)"
+  },
+  "dogliani": {
+    "route": "piemonte",
+    "codice": "DOC_51",
+    "source": "EU register PDO-IT-A1330 (eAmbrosia attachment 29196)"
+  },
+  "dolcetto-di-diano-dalba": {
+    "route": "piemonte",
+    "codice": "DOC_23",
+    "source": "EU register PDO-IT-A1324 (eAmbrosia attachment 32380)"
+  },
+  "dolcetto-di-ovada-superiore": {
+    "route": "piemonte",
+    "codice": "DOC_62",
+    "source": "EU register PDO-IT-A1319 (eAmbrosia attachment 29370)"
+  },
+  "erbaluce-di-caluso": {
+    "route": "piemonte",
+    "codice": "DOC_26",
+    "source": "EU register PDO-IT-A1315 (eAmbrosia attachment 29396)"
+  },
+  "gattinara": {
+    "route": "piemonte",
+    "codice": "DOC_31",
+    "source": "EU register PDO-IT-A1311 (eAmbrosia attachment 29219)"
+  },
+  "ghemme": {
+    "route": "piemonte",
+    "codice": "DOC_33",
+    "source": "EU register PDO-IT-A1263 (eAmbrosia attachment 29259)"
+  },
+  "nizza": {
+    "route": "piemonte",
+    "codice": "DOC_63",
+    "source": "EU register PDO-IT-01896 (no summary sheet in the register)"
+  },
+  "roero": {
+    "route": "piemonte",
+    "codice": "DOC_45",
+    "source": "EU register PDO-IT-A1261 (eAmbrosia attachment 29438)"
+  },
+  "ruche-di-castagnole-monferrato": {
+    "route": "piemonte",
+    "codice": "DOC_47",
+    "source": "EU register PDO-IT-A1258 (eAmbrosia attachment 29267)"
+  },
+  "terre-alfieri": {
+    "route": "piemonte",
+    "codice": "DOC_57",
+    "source": "EU register PDO-IT-A1241 (eAmbrosia attachment 28856)"
   }
 }
