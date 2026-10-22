@@ -111,6 +111,7 @@ test('the home tile links to the map tours band on the Guides page, which folds 
   await expect(band.locator('.stills a .nm')).toContainText(['Rioja', 'Priorat', 'Ribeira Sacra']);
   await btn.click();
   await expect(band.locator('#more-tours')).toBeHidden();
+  await page.goto('../es/'); // the region list and tour filter live on the country pages (option A)
   const regions = page.locator('.gl .region');
   const all = await regions.count();
   await page.getByLabel('Show only guides with a map tour').check();
