@@ -18,8 +18,8 @@ Detail: `l3-table.md` (WSET names, eAmbrosia), `licences.md`, `specs-outlines.md
 - Licences: Hessen DGM/DOP open by law [V, family]; BKG VG250 dl-de/by-2-0 [R credit]; BGR GÜK250 GeoNutzV [V metadata]; BW blocked; Bayern no Lagen layer.
 
 ## Open
-- Owner: `data/raw` is missing in the main checkout and the worktree links point to it; downloads sit in `/private/tmp/claude-501/de/`
-  (lost on reboot). Make `data/raw` a real folder in the main checkout (git-ignored) and move them to `data/raw/countries/de/`.
+- Raw downloads (93 MB, 54 files) copied to `~/Developer/Atlaslope-raw/countries/de/`, the out-of-repo store from #229;
+  add them to its re-download manifest in the pilot, once #229 is merged.
 - Owner: confirm the 6 single-vineyard PDOs as zones (#74), not places.
 - Pilot: Rheingau outline source; Mosel outline size; Hessen and BKG hosts from a browser.
 
