@@ -1,0 +1,131 @@
+{
+ "id": "pommard",
+ "title": "Why Pommard tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cool oceanic weather and Jurassic limestone help Pinot Noir thrive here, on a slope cut by combes and valleys. Pommard is the model of a deep-coloured, powerful red that keeps well.",
+  "cite": [
+   "pommard-doc:p8",
+   "pommard-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A village at the mouth of a valley",
+   "paras": [
+    "Pommard sits on the Côte de Beaune, a straight ridge about 25 km long that runs north-east to south-west. It is a tectonic relief. On its west side lie the limestone plateaux of the Hautes Côtes, at 400 m to 500 m. On its east side lies the Bresse plain, close to 250 m level with the Côte.",
+    "Erosion has cut the ridge with valleys and with small combes, dry vales that are sometimes barely marked. They give slopes facing many ways. Pommard lies at the mouth of a deep valley that cuts into the plateau, south of the town of Beaune.",
+    "The village stands in the line of the valley. The valley splits the land into two hills, one north and one south of the village. The vines grow on the front of the Côte and on the valley sides. On the piedmont they reach the alluvium of the fan, which is gravelly deeper down."
+   ],
+   "cite": [
+    "pommard-doc:p5",
+    "pommard-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The valley above Pommard",
+     "point": [
+      4.785,
+      47.015
+     ],
+     "zoom": 11,
+     "caption": "The village sits at the mouth of a deep valley that cuts into the plateau, and the valley splits the land into two hills.",
+     "cite": [
+      "pommard-doc:p5",
+      "pommard-doc:p6"
+     ]
+    },
+    {
+     "label": "Beaune, to the north",
+     "point": [
+      4.84,
+      47.026
+     ],
+     "zoom": 11,
+     "caption": "Pommard lies south of the town of Beaune.",
+     "cite": [
+      "pommard-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool and sheltered",
+   "paras": [
+    "The climate leans cool and oceanic, softened by continental and southern influences that follow the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5°C.",
+    "The Côte lies east of the Morvan massif and the plateaux of Burgundy. That shelter gives it a thermal advantage and noticeably less rain than is usual for the region."
+   ],
+   "cite": [
+    "pommard-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Jurassic rock under a blanket of clay",
+   "paras": [
+    "The Côte is about 150 m from top to bottom, and it exposes Jurassic rock. Low on the slope, thin Callovian limestone slabs form a small step. Higher up, Oxfordian marls and limestones break the surface.",
+    "This rock is often hidden under spreads of scree mixed with clay and silt. They come from the weathering of the rock below and of the slopes above. Where the valley opens out, the alluvium forms a fan of coarse limestone pieces and clay.",
+    "The soils are young, generally limy and thin, and they drain well, especially on limestone. They run from lean, very limy soil high on the slope and gain clay further down. On the spreads at the foot they are relatively deep, about 0.50 m, with no lime at the surface. On the fan they are deeper and clayey at the surface, but still well drained.",
+    "The vines grow on almost any of these bases. Only the hardest limestone beds, with no soil on them, are left out."
+   ],
+   "cite": [
+    "pommard-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The alluvial fan",
+     "point": [
+      4.8,
+      47.007
+     ],
+     "zoom": 11,
+     "caption": "At the mouth of the valley the alluvium forms a fan of coarse limestone and clay, with deeper soils that still drain well.",
+     "cite": [
+      "pommard-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pinot",
+   "beat": "rules",
+   "title": "Red only, and firm",
+   "paras": [
+    "Pommard makes dry still red wine and nothing else. Its vineyards are based on Pinot Noir, the native Burgundy grape. In 2008 the vineyard covered about 320 hectares, with an average output of about 13,000 hectolitres a year. The vines stand at more than 9,000 per hectare, and the yield is set at 50 hectolitres per hectare.",
+    "Limestone drains well, while the clay and silt on top give fertility and a good reserve of water. These conditions favour a moderate crop of concentrated wines with strong tannins. The vineyards' exposure and natural drainage allow full ripeness, which gives the tannins the suppleness they need.",
+    "Behind this general picture, the surface deposits vary from place to place, and so do the exposures and slopes. They give nuances you can clearly taste in the wines. Within Pommard's firm style, wines from the north of the commune are generally more elegant and expressive when young.",
+    "Among the old wines of Beaune, Pommard's reds stood out for more tannic structure and deeper colour. They were prized abroad, notably in England. It is the custom to mature them for at least 9 months.",
+    "The label can add the name of a climat, a named vineyard plot. A list of 28 climats may carry the Premier Cru mention, and the name follows the appellation straight away. A smaller place name, a lieu-dit, can also appear if it is in the land register and on the harvest declaration. The label may also say Vin de Bourgogne or Grand Vin de Bourgogne."
+   ],
+   "cite": [
+    "pommard-doc:p2",
+    "pommard-doc:p3",
+    "pommard-doc:p4",
+    "pommard-doc:p7",
+    "pommard-doc:p8",
+    "pommard-doc:p9",
+    "pommard-doc:p11",
+    "pommard-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Pommard's Premier Cru climats",
+     "point": [
+      4.796,
+      47.009
+     ],
+     "zoom": 11,
+     "caption": "Climats such as Les Grands Epenots and Les Rugiens Hauts may carry the Premier Cru mention.",
+     "cite": [
+      "pommard-doc:p12"
+     ]
+    }
+   ]
+  }
+ ]
+}

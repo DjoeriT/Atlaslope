@@ -1,0 +1,118 @@
+{
+ "id": "volnay",
+ "title": "Why Volnay tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "In 1778 a description of the Duchy of Burgundy quoted a local proverb: there is only one Volnay in France. In 1816 its red was called the lightest, finest and most pleasant of the Côte de Beaune.",
+  "cite": [
+   "volnay-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A village at the mouth of a combe",
+   "paras": [
+    "The vineyard sits on the front of the Côte de Beaune, a straight ridge of tectonic origin about 25 km long. West of it lie the limestone plateaus of the Hautes Côtes, at 400 to 500 m. East of it lies the Bresse plain, near 250 m.",
+    "Erosion has cut the slope with valleys and small combes, dry hollows that are sometimes barely marked. They give slopes that face different ways. The village itself is surrounded by vines and stands where a small combe opens out.",
+    "The appellation covers two communes, Volnay and Meursault, south of the town of Beaune. In 2008 the vineyard covered about 210 hectares, 144 of them classed premier cru."
+   ],
+   "cite": [
+    "volnay-doc:p6",
+    "volnay-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The village of Volnay",
+     "point": [
+      4.7745,
+      47.0158
+     ],
+     "zoom": 11,
+     "caption": "The village is surrounded by its vineyard and stands at the mouth of a small combe.",
+     "cite": [
+      "volnay-doc:p6"
+     ]
+    },
+    {
+     "label": "The Côte de Beaune front",
+     "point": [
+      4.78,
+      47.0
+     ],
+     "zoom": 10,
+     "caption": "The Côte de Beaune is a straight ridge about 25 km long, between the Hautes Côtes plateaus and the Bresse plain.",
+     "cite": [
+      "volnay-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter behind the Morvan",
+   "paras": [
+    "The climate leans oceanic and fresh. Continental or southern influences along the Rhône-Saône axis disturb it. Rain is moderate and well spread through the year, about 750 mm a year.",
+    "The Côte lies east of the Morvan massif and the Burgundy plateaus. It enjoys a climatic shelter there. The shelter shows as a thermal advantage and a rain deficit that is notable for the region. Both favour quality wine growing.",
+    "The general exposure to the east, together with the position of the plots, brings particular mesoclimates. They protect the vines from frost and from morning fog, and the soil warms up early."
+   ],
+   "cite": [
+    "volnay-doc:p7",
+    "volnay-doc:p9"
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Marl above, slabs below",
+   "paras": [
+    "The slope shows rock from the Jurassic. Marl, a clayey limestone from the Upper Jurassic (Oxfordian), outcrops high on the slope. Platy limestone from the Middle Jurassic (Callovian) appears at the foot.",
+    "Most of the delimited plots stand on the marl. Those at the foot of the slope stand on the platy limestone. A few decimetres of clayey colluvium usually cover the bedrock, and that gives both effective drainage and good fertility.",
+    "Soils are thin, generally carbonated and well drained. High on the slope they are rather stony and lean. On the flats and at the foot they are deeper and clayey, and the surface is sometimes slightly decarbonated.",
+    "Relief, varied geology and varied soils favour a wide palette of nuances in the wines. Vines on the Dalle nacrée limestone usually give wines of great elegance with velvety tannins. Vines higher up, on shallow marl, give denser and very aromatic wines, especially where soils formed on the clayey colluvium of the foot of the slope."
+   ],
+   "cite": [
+    "volnay-doc:p6",
+    "volnay-doc:p7",
+    "volnay-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Les Caillerets",
+     "point": [
+      4.7735,
+      47.0105
+     ],
+     "zoom": 11,
+     "caption": "Nineteenth-century writers regularly singled out the Caillerets and Santenots climats.",
+     "cite": [
+      "volnay-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pinot",
+   "beat": "rules",
+   "title": "Pinot Noir, dry and red",
+   "paras": [
+    "Volnay makes dry still red wine only. Pinot Noir is the mainstay of the plantings. Vines are planted at least 9000 to the hectare. Irrigation is banned. The yield is 50 hl/ha, with an absolute ceiling of 58. Wood chips are banned in the cellar.",
+    "The custom is an élevage of at least 8 months, the time the wine matures before it is sold. A long élevage favours good keeping in bottle. It also helps bring out the differences between plots, which show particularly well after a few years.",
+    "A climat is a plot's name in local use, most often a place name. The appellation name may carry the mention premier cru. A premier cru climat such as Les Caillerets or Santenots then comes right after it, in letters no larger than the appellation name.",
+    "A lieu-dit, a named place in the land register, may also appear if it is on the harvest declaration. Its letters are at most half the size of the appellation name. The label may also name the wider unit Vin de Bourgogne or Grand Vin de Bourgogne."
+   ],
+   "cite": [
+    "volnay-doc:p2",
+    "volnay-doc:p3",
+    "volnay-doc:p4",
+    "volnay-doc:p5",
+    "volnay-doc:p8",
+    "volnay-doc:p9",
+    "volnay-doc:p12",
+    "volnay-doc:p13"
+   ]
+  }
+ ]
+}

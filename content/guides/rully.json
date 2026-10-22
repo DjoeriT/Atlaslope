@@ -1,0 +1,117 @@
+{
+ "id": "rully",
+ "title": "Why Rully tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Rully's vineyards look toward the rising sun, facing the Saône plain. They stay clear of the morning fogs that are frequent down on the plain.",
+  "cite": [
+   "rully-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "cote",
+   "beat": "place",
+   "title": "The top end of the Côte chalonnaise",
+   "paras": [
+    "Rully lies at the northern tip of the Côte chalonnaise, about ten km west of Chalon-sur-Saône. The Côte chalonnaise is a limestone ridge that runs north to south and generally faces east. It forms the boundary between the limestone foothills of the granite Mont-Saint-Vincent massif to the west and the Saône plain to the east.",
+    "The land is fairly complicated. The rock layers tilt to the east, and hard limestone alternates with softer marl (clayey limestone). The result is small ridges with lopsided sides below the main slope. East-facing slopes are mostly gentle, while west-facing ones are steeper, often broken by limestone ledges and steps.",
+    "Only two communes make up the appellation: Rully and Chagny. The hillsides run from 250 m to 400 m, and the vines themselves sit between 220 m and 300 m."
+   ],
+   "cite": [
+    "rully-doc:p5",
+    "rully-doc:p6",
+    "rully-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Rully and the Côte chalonnaise",
+     "point": [
+      4.747,
+      46.875
+     ],
+     "zoom": 10,
+     "caption": "The northern tip of the Côte chalonnaise, about ten km west of Chalon-sur-Saône.",
+     "cite": [
+      "rully-doc:p6"
+     ]
+    },
+    {
+     "label": "Mont-Saint-Vincent",
+     "point": [
+      4.484,
+      46.635
+     ],
+     "zoom": 9,
+     "caption": "The granite massif whose limestone foothills mark the western edge of the Côte chalonnaise.",
+     "cite": [
+      "rully-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Southern warmth up the Saône",
+   "paras": [
+    "The climate is a degraded oceanic one, with southern and continental influences. Mild southern air comes up the Saône valley and softens the oceanic influence. Summer months are very sunny.",
+    "Average rainfall is under 800 mm a year. It is spread evenly through the year, with no summer drought.",
+    "The vineyards mostly face south and east, and very locally west. This exposure warms the air quickly, early in the morning."
+   ],
+   "cite": [
+    "rully-doc:p7"
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Mostly limestone, a little marl",
+   "paras": [
+    "Most of the slopes are mainly Upper Jurassic limestone. Only the small hills in the east are Middle Jurassic marl. A stony layer of slope debris covers all of it.",
+    "The soils are clay-limestone and fairly uniform. On limestone they are shallow, rather dry and moderately fertile. On marl they are deeper and hold a good reserve of water.",
+    "In Rully, the floral notes usual in Burgundy Chardonnay are generally joined by honey. A mineral touch comes too, linked to vines planted on marl soils. Red-brown clay-limestone soils let Pinot Noir give deep, tannic wines that last and have a subtle range of aromas."
+   ],
+   "cite": [
+    "rully-doc:p6",
+    "rully-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Chardonnay first, then Pinot Noir",
+   "paras": [
+    "Rully makes dry still white and red wines. The grapes are Chardonnay and Pinot Noir, with Pinot Gris also listed. In 2010 the vineyard covered about 345 hectares: 220 of Chardonnay and 125 of Pinot Noir. Average yearly output was 10,400 hl of white and 5,300 hl of red.",
+    "Whites are generally described as golden with green glints, deeper with age. Their aromas most often recall flowers such as acacia or violet, with a mineral hint of flint. Time brings honey and quince. They are enjoyed after 3 to 10 years in bottle.",
+    "Reds run from cherry-ruby to dark garnet. Their bouquet often shows black fruit such as blackberry, with notes of lilac or rose petal. It moves toward cooked fruit, half kirsch and half pepper. On the palate the tannins respect the fruit. A few years of ageing soften their chewy grip.",
+    "Twenty-three climats, the local name for named vineyard plots, sit in the best spots of the main slope and face the rising sun. They may add \"Premier Cru\" to the label. In 1943 a list of the best-known climats gained the mention. Growers can also name a plot from the land register (a lieu-dit) on the label, in type no more than half the size of the appellation name. Labels may also name the wider region as \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\".",
+    "The appellation was recognised by decree in 1939. The vineyard covered about 600 hectares in 1895 but was down to 90 hectares after the Second World War. A few pioneers kept faith in the wines and kept their name alive."
+   ],
+   "cite": [
+    "rully-doc:p2",
+    "rully-doc:p3",
+    "rully-doc:p6",
+    "rully-doc:p7",
+    "rully-doc:p8",
+    "rully-doc:p11",
+    "rully-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Chalon-sur-Saône",
+     "point": [
+      4.854,
+      46.781
+     ],
+     "zoom": 10,
+     "caption": "The town about ten km east of Rully, where in 1629 the town officials offered King Louis XIII 22 feuillettes (casks of about 137 litres) of Rully wine.",
+     "cite": [
+      "rully-doc:p6",
+      "rully-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1263,6 +1263,176 @@
     "barsac-doc:p2",
     "barsac-doc:p3"
    ]
+  },
+  "bourgogne": {
+   "title": "Warm limestone slopes in a cool north",
+   "cite": [
+    "bourgogne-doc:p11",
+    "bourgogne-doc:p14"
+   ]
+  },
+  "cote-de-nuits-villages": {
+   "title": "Hard limestone sheltered from frost",
+   "cite": [
+    "cote-de-nuits-villages-doc:p7",
+    "cote-de-nuits-villages-doc:p8",
+    "cote-de-nuits-villages-doc:p9"
+   ]
+  },
+  "gevrey-chambertin": {
+   "title": "Clay-rich limestone, dark long-lived reds",
+   "cite": [
+    "gevrey-chambertin-doc:p5",
+    "gevrey-chambertin-doc:p6",
+    "gevrey-chambertin-doc:p8"
+   ]
+  },
+  "vougeot": {
+   "title": "Sheltered foothills on limestone",
+   "cite": [
+    "vougeot-doc:p7",
+    "vougeot-doc:p8"
+   ]
+  },
+  "vosne-romanee": {
+   "title": "Limestone scree on gentle east slopes",
+   "cite": [
+    "vosne-romanee-doc:p6",
+    "vosne-romanee-doc:p7"
+   ]
+  },
+  "nuits-saint-georges": {
+   "title": "East slopes with a warm mesoclimate",
+   "cite": [
+    "nuits-saint-georges-doc:p6",
+    "nuits-saint-georges-doc:p7",
+    "nuits-saint-georges-doc:p9"
+   ]
+  },
+  "cote-de-beaune-villages": {
+   "title": "Limestone and marl, 230 to 400 m",
+   "cite": [
+    "cote-de-beaune-villages-doc:p6",
+    "cote-de-beaune-villages-doc:p7",
+    "cote-de-beaune-villages-doc:p8",
+    "cote-de-beaune-villages-doc:p9"
+   ]
+  },
+  "aloxe-corton": {
+   "title": "The Corton hill's lean clay soils",
+   "cite": [
+    "aloxe-corton-doc:p7",
+    "aloxe-corton-doc:p9"
+   ]
+  },
+  "beaune": {
+   "title": "East-facing limestone in full sun",
+   "cite": [
+    "beaune-doc:p6",
+    "beaune-doc:p7",
+    "beaune-doc:p9"
+   ]
+  },
+  "pommard": {
+   "title": "Limestone and clay, firm reds",
+   "cite": [
+    "pommard-doc:p6",
+    "pommard-doc:p8"
+   ]
+  },
+  "volnay": {
+   "title": "Stony marl and limestone facing east",
+   "cite": [
+    "volnay-doc:p7",
+    "volnay-doc:p8",
+    "volnay-doc:p9"
+   ]
+  },
+  "meursault": {
+   "title": "Marl, limestone and dolomite for Chardonnay",
+   "cite": [
+    "meursault-doc:p7",
+    "meursault-doc:p8"
+   ]
+  },
+  "puligny-montrachet": {
+   "title": "Gentle east slopes for Chardonnay",
+   "cite": [
+    "puligny-montrachet-doc:p6",
+    "puligny-montrachet-doc:p7",
+    "puligny-montrachet-doc:p8",
+    "puligny-montrachet-doc:p9"
+   ]
+  },
+  "chassagne-montrachet": {
+   "title": "A sheltered south-east slope",
+   "cite": [
+    "chassagne-montrachet-doc:p6",
+    "chassagne-montrachet-doc:p7",
+    "chassagne-montrachet-doc:p8",
+    "chassagne-montrachet-doc:p9"
+   ]
+  },
+  "rully": {
+   "title": "East slopes 220 to 300 m up",
+   "cite": [
+    "rully-doc:p6",
+    "rully-doc:p7",
+    "rully-doc:p8"
+   ]
+  },
+  "mercurey": {
+   "title": "Slopes facing the rising sun",
+   "cite": [
+    "mercurey-doc:p6",
+    "mercurey-doc:p7",
+    "mercurey-doc:p8"
+   ]
+  },
+  "givry": {
+   "title": "Early sun above the Saône fog",
+   "cite": [
+    "givry-doc:p6",
+    "givry-doc:p7",
+    "givry-doc:p8"
+   ]
+  },
+  "montagny": {
+   "title": "Clay-rich limestone, fresh Chardonnay",
+   "cite": [
+    "montagny-doc:p5",
+    "montagny-doc:p6",
+    "montagny-doc:p7"
+   ]
+  },
+  "macon": {
+   "title": "Granite, limestone and hot summers",
+   "cite": [
+    "macon-doc:p7",
+    "macon-doc:p8"
+   ]
+  },
+  "pouilly-fuisse": {
+   "title": "Lean, stony slopes, Chardonnay only",
+   "cite": [
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p7"
+   ]
+  },
+  "saint-veran": {
+   "title": "Very limy slopes facing the south",
+   "cite": [
+    "saint-veran-doc:p6",
+    "saint-veran-doc:p7",
+    "saint-veran-doc:p8"
+   ]
+  },
+  "cremant-de-bourgogne": {
+   "title": "Cool limestone slopes keep the acidity",
+   "cite": [
+    "cremant-de-bourgogne-doc:p9",
+    "cremant-de-bourgogne-doc:p11"
+   ]
   }
  }
 }

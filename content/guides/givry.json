@@ -1,0 +1,132 @@
+{
+ "id": "givry",
+ "title": "Why Givry tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Givry's vines face the rising sun across the Saône plain, away from the morning fog that is frequent down there. These slopes are linked to the elegance and suppleness long credited to its reds.",
+  "cite": [
+   "givry-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "coast",
+   "beat": "place",
+   "title": "A limestone slope facing the sunrise",
+   "paras": [
+    "Givry belongs to the Côte chalonnaise in Burgundy, about 10 km west of Chalon-sur-Saône. The Côte is a long limestone rise running north to south, facing broadly east. It marks the line between the limestone foothills of the granite Mont-Saint-Vincent massif to the west and the Saône plain to the east.",
+    "The area covers Givry and two other communes, Dracy-le-Fort and Jambles. The vines sit in a tight group around Givry, on slopes facing east and south. They lie between 200 and 420 metres."
+   ],
+   "cite": [
+    "givry-doc:p5",
+    "givry-doc:p6",
+    "givry-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Côte chalonnaise at Givry",
+     "point": [
+      4.7236,
+      46.7822
+     ],
+     "zoom": 10,
+     "caption": "The Givry vineyards cluster around the village, on east- and south-facing slopes.",
+     "cite": [
+      "givry-doc:p8"
+     ]
+    },
+    {
+     "label": "Mont-Saint-Vincent",
+     "point": [
+      4.4842,
+      46.6262
+     ],
+     "zoom": 9.5,
+     "caption": "The granite massif whose limestone foothills mark the western edge of the Côte chalonnaise.",
+     "cite": [
+      "givry-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Southern mildness up the Saône",
+   "paras": [
+    "The climate is a degraded oceanic one, with southern and continental influences. Mild southern air comes in along the Saône valley and softens the oceanic influence. Summer months are very sunny.",
+    "Annual rain averages under 800 mm and falls evenly through the year, with no summer drought. The slopes face the rising sun, so the air warms quickly early in the morning. They also sit away from the morning fog that is frequent on the plain."
+   ],
+   "cite": [
+    "givry-doc:p6",
+    "givry-doc:p7",
+    "givry-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Saône plain",
+     "point": [
+      4.85,
+      46.78
+     ],
+     "zoom": 9,
+     "caption": "The plain the slopes face. Morning fog is frequent here, but the vines sit away from it.",
+     "cite": [
+      "givry-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "Limestone under a cover of stones",
+   "paras": [
+    "The slope is gentle low down and steeper higher up, on Upper Jurassic limestone. Small valleys cut across it and bring Middle Jurassic limestone to the surface. In places they reach the older Lias marls of the Early Jurassic.",
+    "Stony slope debris covers every rock type. The soils are clay-limestone and fairly uniform. On limestone they are shallow, rather dry and moderately fertile. On marl they are deeper and hold a good reserve of water.",
+    "The limestone ground and its stony cover work together with the relief. They give the best possible drainage, which makes up for rain that falls evenly all year."
+   ],
+   "cite": [
+    "givry-doc:p6",
+    "givry-doc:p8"
+   ]
+  },
+  {
+   "id": "pinot",
+   "beat": "rules",
+   "title": "Mostly Pinot Noir, red and white",
+   "paras": [
+    "Givry makes dry still wines, red and white. Pinot Noir covers 80% of the planted area, and 90% within the Premier Cru area. Chardonnay, the other fine Burgundy grape, has been grown here since the Middle Ages. Pinot Gris and Pinot Blanc are also allowed.",
+    "Premier Cru comes from climats, the local word for named sites, set mid-slope and facing south and east. Their reds are slightly rounder and more powerful, and they keep longer. A label may add Premier Cru to Givry. The climat's name then comes right after Givry, in letters no larger than the appellation's. There are 38 listed climats, among them Clos Salomon and Clos Jus.",
+    "Any Givry label may also name a registered lieu-dit, a plot named on the land register. Its letters are at most half the size of Givry's. The wider name Vin de Bourgogne or Grand Vin de Bourgogne may appear too.",
+    "Vines are planted at a minimum of 8,000 per hectare. Jules Guyot remarked on this high density in the 19th century, and it still holds. Yields are capped at 60 hl/ha for white and 54 hl/ha for red.",
+    "The vineyard is close to 300 hectares and makes 12,000 hectolitres a year. It is worked mostly by small family estates averaging 7 hectares."
+   ],
+   "cite": [
+    "givry-doc:p2",
+    "givry-doc:p4",
+    "givry-doc:p5",
+    "givry-doc:p6",
+    "givry-doc:p7",
+    "givry-doc:p8",
+    "givry-doc:p11",
+    "givry-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Clos Salomon",
+     "point": [
+      4.7255,
+      46.7745
+     ],
+     "zoom": 13,
+     "caption": "Clos Salomon, one of the lay domains created as the vineyard grew from the 10th century, is a Premier Cru climat today.",
+     "cite": [
+      "givry-doc:p7",
+      "givry-doc:p12"
+     ]
+    }
+   ]
+  }
+ ]
+}

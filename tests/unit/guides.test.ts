@@ -15,26 +15,29 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) and the 16 more Bordeaux places (22 Oct 2026), each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) the 16 more Bordeaux places and the 22 more Burgundy places (22 Oct 2026), each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
-      'abadia-retuerta', 'abona', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa', 'arinzano', 'arlanza', 'arribes', 'arruda',
-      'ayles', 'bairrada', 'barsac', 'beira-interior', 'bierzo', 'binissalem', 'bolandin', 'bordeaux', 'bordeaux-superieur', 'bucelas',
-      'bullas', 'calatayud', 'calzadilla', 'campo-de-borja', 'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carcavelos',
-      'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis', 'chozas-carrascal', 'cigales', 'colares',
-      'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'cotes-de-bordeaux', 'dao', 'dehesa-del-carrizal', 'dehesa-penalba',
-      'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'emporda', 'encostas-daire', 'entre-deux-mers',
-      'finca-elez', 'gran-canaria', 'granada', 'graves', 'guijoso', 'haut-medoc', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera',
-      'la-jaraba', 'la-mancha', 'la-palma', 'lafoes', 'lagoa', 'lagos', 'lanzarote', 'lebrija', 'leon', 'lisboa', 'los-balagueses',
-      'los-cerrillos', 'madeira', 'madeirense', 'malaga', 'manchuela', 'manzanilla', 'margaux', 'medoc', 'mentrida', 'mondejar',
-      'monterrei', 'montilla-moriles', 'montsant', 'navarra', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'pauillac', 'penedes',
-      'pessac-leognan', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'portimao', 'porto', 'prado-de-irache', 'priorat', 'rias-baixas',
-      'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja', 'rioja-alavesa',
-      'rioja-alta', 'rioja-oriental', 'rosalejo', 'rueda', 'saint-emilion', 'saint-emilion-grand-cru', 'saint-estephe', 'saint-julien',
-      'sauternes', 'setubal', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tacoronte-acentejo', 'tarragona', 'tavira',
-      'tavora-varosa', 'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'torres-vedras', 'tras-os-montes', 'txakoli-alava',
-      'txakoli-bizkaia', 'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valdepenas', 'valencia',
-      'valle-de-guimar', 'valle-de-la-orotava', 'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinho-verde',
-      'vinos-de-madrid', 'ycoden-daute-isora', 'yecla',
+      'abadia-retuerta', 'abona', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa', 'aloxe-corton', 'arinzano', 'arlanza', 'arribes',
+      'arruda', 'ayles', 'bairrada', 'barsac', 'beaune', 'beira-interior', 'bierzo', 'binissalem', 'bolandin', 'bordeaux',
+      'bordeaux-superieur', 'bourgogne', 'bucelas', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja', 'campo-de-calatrava',
+      'campo-de-la-guardia', 'cangas', 'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis',
+      'chassagne-montrachet', 'chozas-carrascal', 'cigales', 'colares', 'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre',
+      'cote-de-beaune-villages', 'cote-de-nuits-villages', 'cotes-de-bordeaux', 'cremant-de-bourgogne', 'dao', 'dehesa-del-carrizal',
+      'dehesa-penalba', 'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'emporda', 'encostas-daire',
+      'entre-deux-mers', 'finca-elez', 'gevrey-chambertin', 'givry', 'gran-canaria', 'granada', 'graves', 'guijoso', 'haut-medoc',
+      'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba', 'la-mancha', 'la-palma', 'lafoes', 'lagoa', 'lagos', 'lanzarote',
+      'lebrija', 'leon', 'lisboa', 'los-balagueses', 'los-cerrillos', 'macon', 'madeira', 'madeirense', 'malaga', 'manchuela', 'manzanilla',
+      'margaux', 'medoc', 'mentrida', 'mercurey', 'meursault', 'mondejar', 'montagny', 'monterrei', 'montilla-moriles', 'montsant',
+      'navarra', 'nuits-saint-georges', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'pauillac', 'penedes', 'pessac-leognan',
+      'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard', 'portimao', 'porto', 'pouilly-fuisse', 'prado-de-irache', 'priorat',
+      'puligny-montrachet', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar',
+      'rio-negro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'rosalejo', 'rueda', 'rully', 'saint-emilion',
+      'saint-emilion-grand-cru', 'saint-estephe', 'saint-julien', 'saint-veran', 'sauternes', 'setubal', 'sierra-de-salamanca',
+      'sierras-de-malaga', 'somontano', 'tacoronte-acentejo', 'tarragona', 'tavira', 'tavora-varosa', 'terra-alta', 'tharsys',
+      'tierra-del-vino-de-zamora', 'toro', 'torres-vedras', 'tras-os-montes', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria',
+      'ucles', 'urbezo', 'uruena', 'utiel-requena', 'valdeorras', 'valdepenas', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava',
+      'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas', 'vinho-verde', 'vinos-de-madrid', 'volnay', 'vosne-romanee',
+      'vougeot', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

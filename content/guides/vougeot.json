@@ -1,0 +1,125 @@
+{
+ "id": "vougeot",
+ "title": "Why Vougeot tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Vougeot's vines sit low on a sheltered slope that faces the rising sun. The ground drains excess water yet keeps a measured reserve, and the reds often have powerful but velvety tannins.",
+  "cite": [
+   "vougeot-doc:p3",
+   "vougeot-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A small village under the Côte",
+   "paras": [
+    "Vougeot lies on the Côte de Nuits, a straight ridge that runs about 25 km north to south. The ridge has a tectonic origin. On its west side are the limestone plateaux of the Hautes Côtes, at 400 m to 500 m. On its east side is the plain of the Bresse, at about 250 m.",
+    "The area is limited to the single commune of Vougeot, between Dijon to the north and Nuits-Saint-Georges to the south. The commune is one of the smallest on the Côte, with only 88 hectares. Of those, 69 hectares are planted with vines.",
+    "The vineyard itself covers about 16 hectares, of which 12 are premier cru (figures for 2008). It sits at the geographic and historic centre of the Côte de Nuits. Its plots lie at the foot of the slope, between 240 m and 265 m. A large spring where the Vouge rises borders them to the north."
+   ],
+   "cite": [
+    "vougeot-doc:p6",
+    "vougeot-doc:p7",
+    "vougeot-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Nuits at Vougeot",
+     "point": [
+      4.955,
+      47.182
+     ],
+     "zoom": 10,
+     "caption": "The front of the Côte, about 150 m high, rises behind the vines of Vougeot at its foot.",
+     "cite": [
+      "vougeot-doc:p6",
+      "vougeot-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Shelter from the Morvan",
+   "paras": [
+    "The climate is cool and oceanic, with some continental or southern influences that follow the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5 °C.",
+    "The Côte lies in a climatic shelter east of the Morvan massif and the plateaux of Burgundy. The shelter gives it a thermal advantage and a notable rain deficit for the region.",
+    "The vines also face east, towards the rising sun, at a moderate altitude. Both favour the ripening of the grapes."
+   ],
+   "cite": [
+    "vougeot-doc:p7",
+    "vougeot-doc:p8"
+   ]
+  },
+  {
+   "id": "stone",
+   "beat": "ground",
+   "title": "Limestone and a monks' quarry",
+   "paras": [
+    "The front of the Côte is about 150 m high. It is made of Middle Jurassic limestones, topped by the very compact Comblanchien limestone. A downthrown block brings Comblanchien to the surface at the foot of the slope, in the heart of the vineyard. The monks of Cîteaux once quarried it there, and the old quarry face still stands out in the landscape.",
+    "Scree mixed with clay and silt mostly hides the rock. Over the limestone the soils are young and thin. They are usually lime-rich and stony, and they drain well. On the foot of the slope the soils are more clayey and relatively deep. In places they have lost their lime at the surface.",
+    "The vineyard's soils are gravelly and clayey, with plenty of iron oxide. They give a measured fertility and water reserve, suited to a good concentration of sugar and aroma precursors.",
+    "The mostly limestone, heavily fractured subsoil drains away excess water. Water rising from it by capillarity also eases stress on the vines."
+   ],
+   "cite": [
+    "vougeot-doc:p6",
+    "vougeot-doc:p7",
+    "vougeot-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Clos de la Perrière, the monks' quarry",
+     "point": [
+      4.958,
+      47.1775
+     ],
+     "zoom": 14,
+     "caption": "The medieval quarry shows as an imposing rock face in the heart of the vineyard. The Clos de la Perrière is planted entirely inside it.",
+     "cite": [
+      "vougeot-doc:p6",
+      "vougeot-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "monks",
+   "beat": "rules",
+   "title": "The monks' vineyard",
+   "paras": [
+    "Soon after 1098, the monks of Cîteaux abbey began buying plots in Vougeot. From the 13th century a continuous wall enclosed most of them. That walled vineyard is today's Clos de Vougeot, which holds the grand cru mention. The rest of the land north of the Clos also belonged to the monks, who combined quarrying with vine growing. At the French Revolution of 1789 the abbey's property was confiscated and sold at auction.",
+    "Vougeot has been an appellation since a decree of 11 September 1936. In 1943 a list of climats, named plots that are usually a lieu-dit, was drawn up for the premier cru mention. Four premier cru climats can follow the appellation name on the label. They are Clos de la Perrière and Les Crâs. The other two are Le Clos Blanc and Les Petits Vougeots.",
+    "The label may also name a smaller registered lieu-dit. Its letters can be at most half the size of the appellation name.",
+    "Pinot Noir and Chardonnay dominate the plantings. They are Burgundy's two main fine grape varieties. Pinot Gris and Pinot Blanc are also allowed. The wines are dry and still, either red or white. The vines are planted at more than 9,000 vines per hectare.",
+    "Average annual production is 370 hl of red and almost 155 hl of white. Most of the white comes from Le Clos Blanc, a premier cru. By tradition the lieu-dit la Vigne blanche has always been planted with Chardonnay for white wine, an exception on the Côte de Nuits. In the abbey's day that wine went to its Mass."
+   ],
+   "cite": [
+    "vougeot-doc:p2",
+    "vougeot-doc:p4",
+    "vougeot-doc:p6",
+    "vougeot-doc:p7",
+    "vougeot-doc:p8",
+    "vougeot-doc:p11",
+    "vougeot-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Clos de Vougeot and its château",
+     "point": [
+      4.9606,
+      47.1742
+     ],
+     "zoom": 14,
+     "caption": "The walled Clos de Vougeot and its château, which still shape the landscape.",
+     "cite": [
+      "vougeot-doc:p7",
+      "vougeot-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}

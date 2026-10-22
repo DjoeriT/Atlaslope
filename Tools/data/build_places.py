@@ -145,7 +145,12 @@ FR_GROUPS = [("fr-bordeaux", "Bordeaux"), ("fr-south-west", "South-West"), ("fr-
 FR_SHIP = ["chablis", "pauillac",
            # Bordeaux batch (22 Oct 2026)
            "bordeaux", "bordeaux-superieur", "cotes-de-bordeaux", "entre-deux-mers", "medoc", "haut-medoc", "saint-estephe", "margaux",
-           "saint-julien", "graves", "pessac-leognan", "saint-emilion", "saint-emilion-grand-cru", "pomerol", "sauternes", "barsac"]
+           "saint-julien", "graves", "pessac-leognan", "saint-emilion", "saint-emilion-grand-cru", "pomerol", "sauternes", "barsac",
+           # Burgundy batch (22 Oct 2026)
+           "bourgogne", "cote-de-nuits-villages", "gevrey-chambertin", "vougeot", "vosne-romanee", "nuits-saint-georges",
+           "cote-de-beaune-villages", "aloxe-corton", "beaune", "pommard", "volnay", "meursault", "puligny-montrachet",
+           "chassagne-montrachet", "rully", "mercurey", "givry", "montagny", "macon", "pouilly-fuisse", "saint-veran",
+           "cremant-de-bourgogne"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 

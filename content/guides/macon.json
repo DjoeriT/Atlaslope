@@ -1,0 +1,124 @@
+{
+ "id": "macon",
+ "title": "Why Mâcon tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Mâcon lies in southern Burgundy, on hills of granite, limestone and marl. A climate with southern leanings and sites that favour early soil warming give the wines a \"Bourgogne du Sud\" character: fleshy and fruity in the mouth.",
+  "cite": [
+   "macon-doc:p7",
+   "macon-doc:p8",
+   "macon-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Parallel ridges in southern Burgundy",
+   "paras": [
+    "The Mâconnais is a set of hills with wooded tops and vine-covered slopes. The Saône plain borders it to the north and east, and the Grosne valley and the Charollais border it to the west. To the south it runs on into the Monts du Beaujolais.",
+    "The hills form long parallel ridges, running north-north-east to south-south-west and separated by parallel faults. Each ridge tilts to the east. This ridge shape means slopes face mostly east or west, with some facing north or south along the valleys that open towards the Saône.",
+    "The appellation covers 91 communes, and 80 of them can add the mention \"Villages\". Economically and socially, the Mâconnais is split between Chalon-sur-Saône to the north and the city of Mâcon to the south."
+   ],
+   "cite": [
+    "macon-doc:p7",
+    "macon-doc:p8",
+    "macon-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Saône plain and the Mâconnais ridges",
+     "point": [
+      4.78,
+      46.38
+     ],
+     "zoom": 9,
+     "caption": "Wooded hilltops and vine-covered slopes, bordered by the Saône plain to the north and east.",
+     "cite": [
+      "macon-doc:p7"
+     ]
+    },
+    {
+     "label": "Cluny",
+     "point": [
+      4.659,
+      46.435
+     ],
+     "zoom": 11,
+     "caption": "The abbey of Cluny, just west of the zone, helped vines and the wine trade grow from the Middle Ages.",
+     "cite": [
+      "macon-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Rhône air and a partial shield from the Atlantic",
+   "paras": [
+    "The climate is oceanic with a southern tendency. Rhône influences come up the Saône valley and limit excess humidity. The Monts du Charollais to the west partly protect the vines from wet Atlantic influences.",
+    "Rain averages 800 mm a year, spread evenly through the year and moderate while the vines are growing. The mean temperature is 11 °C, with an average of 2000 hours of sun a year. Summers are hot and sunny."
+   ],
+   "cite": [
+    "macon-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Granite to the west, limestone to the east",
+   "paras": [
+    "From west to east, each ridge shows old granite or schist first, then limestone or clay layers from the Triassic and Jurassic. Granite is more common in the south and west, and absent from the eastern ridges. Foothills are often coated with clay and silt, sometimes several metres thick, from weathered limestone and marl.",
+    "The soils are extremely varied. On the old basement they are acidic and siliceous: sandy and free-draining on granite sand, very stony and more clayey on schist. On east-facing Jurassic slopes they are limestone, sometimes very stony. Silty, decarbonated soils are shallow on marl and deeper on the weathered rock at the foot of slopes.",
+    "Plots for red wine lie on hillsides of varied exposure, on every kind of substrate, siliceous or limestone. Drainage is the deciding factor, and it depends on both the soil and the lie of the land. White grapes are limited to limestone or lightly decarbonated substrates. Plots for \"Villages\" wines favour the sites with the best mesoclimates, most often facing east or south.",
+    "Reds show their full potential, with aromatic freshness, fruit and power, from well-exposed hillsides on granite. Whites gain aromatic freshness and balance mainly from marly slopes or the foot of slopes, on clay-silt soils. \"Villages\" wines get their roundness, power and ageing ability from the best-exposed slopes, on hard Jurassic limestone or on marl partly covered with limestone scree."
+   ],
+   "cite": [
+    "macon-doc:p8",
+    "macon-doc:p9",
+    "macon-doc:p11"
+   ]
+  },
+  {
+   "id": "south",
+   "beat": "rules",
+   "title": "Chardonnay at the heart, Gamay on the edges",
+   "paras": [
+    "Mâcon makes dry still wines in three colours: white, red and rosé. The grapes are Chardonnay, Gamay and Pinot Noir. About 3200 hectares are for white and 500 hectares for red and rosé.",
+    "The centre and south, mostly planted with Chardonnay, make mainly white wine. Vines there follow the local \"taille à queue\": a long cane whose tip is tied down to the lowest wire. The north follows the ways of the neighbouring Châlonnais. Gamay and Pinot Noir grow there, planted densely and Guyot-pruned.",
+    "Gamay is planted mainly on acidic soils. You find it on the granite fringes of the western ridges. It also grows at the far south, near the Monts du Beaujolais, and in the north, near the Châlonnais.",
+    "Whites often have a lovely green-yellow colour and are harmonious. Reds are full-bodied, and well-balanced tannins give them a rounded mouthfeel.",
+    "\"Villages\" wines come from the historic core in the centre and south, where Chardonnay is everywhere. They are full and charming. They often smell of white flowers and fresh fruit, with a lemony touch. They age well. With time they often gain notes of undergrowth and hazelnut, with honey and toast.",
+    "Many wines name the commune where the grapes grew. For whites this is allowed only within the \"Villages\" zone. 26 such names set apart the whites and 20 add to the reds and rosés. Wines with \"Villages\" or one of these names are more than three-quarters of production.",
+    "A label may also name a registered lieu-dit, a named plot, in letters at most half the size of the appellation name.",
+    "A \"primeur\" or \"nouveau\" wine is made only from grapes harvested in the same year. Its label must show the vintage."
+   ],
+   "cite": [
+    "macon-doc:p2",
+    "macon-doc:p3",
+    "macon-doc:p5",
+    "macon-doc:p6",
+    "macon-doc:p7",
+    "macon-doc:p9",
+    "macon-doc:p10",
+    "macon-doc:p13",
+    "macon-doc:p14"
+   ],
+   "fly": [
+    {
+     "label": "Milly, Lamartine's vineyard",
+     "point": [
+      4.697,
+      46.347
+     ],
+     "zoom": 11,
+     "caption": "In the 19th century the poet Alphonse de Lamartine owned an estate and vines at Milly. He praised its landscape and its people, and set several works there.",
+     "cite": [
+      "macon-doc:p11"
+     ]
+    }
+   ]
+  }
+ ]
+}

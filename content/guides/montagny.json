@@ -1,0 +1,101 @@
+{
+ "id": "montagny",
+ "title": "Why Montagny tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Montagny's clay soils are cold and sometimes wet, but steep slopes drain them and their eastern aspect warms the air early in the morning. The soils suit Chardonnay, helping it show its aromas and its finesse.",
+  "cite": [
+   "montagny-doc:p5",
+   "montagny-doc:p6",
+   "montagny-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "The southern part of a limestone ridge",
+   "paras": [
+    "Montagny lies in the southern part of the Côte Chalonnaise, a long limestone ridge in Burgundy that broadly faces east. The area covers 4 communes of Saône-et-Loire, about 15 km south-west of Chalon-sur-Saône.",
+    "The ridge front is slightly winding. A crest of hard limestone, often wooded, looks down over a large rolling slope."
+   ],
+   "cite": [
+    "montagny-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Côte Chalonnaise at Montagny",
+     "point": [
+      4.68,
+      46.7
+     ],
+     "zoom": 10,
+     "caption": "The southern part of the Côte Chalonnaise, about 15 km south-west of Chalon-sur-Saône.",
+     "cite": [
+      "montagny-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Southern mildness up the Saône",
+   "paras": [
+    "The climate is a weakened oceanic one, with southern and continental influences. Mild southern air comes up the Saône valley and softens the ocean's effect.",
+    "Summer months are very sunny. Rain averages under 800 mm a year and falls evenly through the year, with no summer drought.",
+    "The plots face east and south-east, which lets the air warm quickly early in the morning."
+   ],
+   "cite": [
+    "montagny-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Saône valley near Chalon",
+     "point": [
+      4.85,
+      46.78
+     ],
+     "zoom": 9,
+     "caption": "Mild southern air comes in through the Saône valley.",
+     "cite": [
+      "montagny-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Clay that needs a slope",
+   "paras": [
+    "Under the hard limestone crest lie marls (clayey limestones) and clays from the Lias, the early Jurassic. Clays from the Triassic surface at the foot of the slope.",
+    "So much clay gives cold soils that are sometimes wet and mostly low in carbonate. In places, rubble from the limestone crest adds stones and limestone at the surface.",
+    "Vines grow on east and south-east slopes, between 250 and 400 m. The steep slopes drain the ground, which matters all the more because it is clay."
+   ],
+   "cite": [
+    "montagny-doc:p5",
+    "montagny-doc:p6",
+    "montagny-doc:p7"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "One grape, one colour",
+   "paras": [
+    "Montagny makes only dry, still white wine, and Chardonnay is its only main grape. Growers favoured it when they replanted after phylloxera, and the move grew stronger after the First World War.",
+    "A wine can add the mention premier cru. Premier cru wines also show toasty and vanilla notes, and they keep for a long time. In 2010, 200 of the more than 300 hectares in production could carry the mention.",
+    "Premier cru plots are called climats, the local word for a named site. Les Las and Le Vieux Château are two of them. The climat's name comes straight after Montagny on the label, in letters no bigger."
+   ],
+   "cite": [
+    "montagny-doc:p2",
+    "montagny-doc:p5",
+    "montagny-doc:p6",
+    "montagny-doc:p7",
+    "montagny-doc:p10",
+    "montagny-doc:p11"
+   ]
+  }
+ ]
+}

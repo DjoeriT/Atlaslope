@@ -1,0 +1,106 @@
+{
+ "id": "mercurey",
+ "title": "Why Mercurey tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Mercurey's vineyards face the rising sun, so they warm early in the morning and sit away from the morning fogs of the plain. Pinot Noir covers 87% of the vines, and the reds are elegant and powerful at once.",
+  "cite": [
+   "mercurey-doc:p7",
+   "mercurey-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "cote",
+   "beat": "place",
+   "title": "Limestone slopes beside the Saône plain",
+   "paras": [
+    "Mercurey belongs to the Côte chalonnaise, about ten kilometres west of Chalon-sur-Saône. This limestone relief runs north to south and faces generally east. It marks the edge between the limestone foothills of the granite Mont-Saint-Vincent massif to the west and the Saône plain to the east.",
+    "The vineyards lie on the flanks of two perpendicular valleys that drain the Côte chalonnaise. The topography is complex. Layers of hard limestone alternate with marl, a clayey limestone that resists erosion less. The result is a string of wooded ridges, with marl-soil hollows called combes between them, planted with vines.",
+    "The appellation covers just two communes, Mercurey and Saint-Martin-sous-Montaigu. In 2010 it held 677 hectares of vines."
+   ],
+   "cite": [
+    "mercurey-doc:p5",
+    "mercurey-doc:p6",
+    "mercurey-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Mercurey and its combes",
+     "point": [
+      4.717,
+      46.84
+     ],
+     "zoom": 11,
+     "caption": "Vines fill the marl hollows between wooded ridges on the Côte chalonnaise.",
+     "cite": [
+      "mercurey-doc:p6"
+     ]
+    },
+    {
+     "label": "Chalon-sur-Saône and the plain",
+     "point": [
+      4.854,
+      46.781
+     ],
+     "zoom": 10,
+     "caption": "The Saône plain lies east of the Côte chalonnaise. Chalon-sur-Saône is about ten kilometres east of the vineyards.",
+     "cite": [
+      "mercurey-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Mild, sunny and evenly wet",
+   "paras": [
+    "The climate is a degraded oceanic one, with southern and continental influences. Southern mildness comes up the Saône valley and softens the oceanic influence. It brings very sunny summer months.",
+    "Annual rain averages under 800 mm and falls evenly through the year, with no summer drought.",
+    "The general exposure of the vineyards lets the air warm quickly early in the morning. Early warmth and shelter from the plain's fogs make conditions that favour great wines."
+   ],
+   "cite": [
+    "mercurey-doc:p7",
+    "mercurey-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Stones that drain",
+   "paras": [
+    "The vines grow on slopes between 220 and 350 metres, facing various directions. The soils are mostly limy. On the slopes they mostly form on a thin layer of stony colluvium, debris washed down the hill. The limestone bedrock lies a few decimetres down.",
+    "On the western ridges, patches of clay with chailles (flint nodules) make soils that are more acid and very stony, and sometimes very free-draining.",
+    "All the soils drain very well. Limestone bedrock and a cover of stones, together with the relief, give optimal drainage that offsets the even rainfall."
+   ],
+   "cite": [
+    "mercurey-doc:p6",
+    "mercurey-doc:p8"
+   ]
+  },
+  {
+   "id": "climats",
+   "beat": "rules",
+   "title": "Pinot Noir and named plots",
+   "paras": [
+    "Mercurey makes dry still reds and whites. Pinot Noir is the main grape and covers 87% of the vines. Chardonnay and Pinot Gris are the other grapes allowed.",
+    "Traditional Burgundian winemaking favours a long life for the reds. Most reds are aged in barrel, especially the premier crus. The whites are dry and generally described as rich and powerful.",
+    "Growers often name their wines after the climat, the regional word for a named plot. Some climats, the best exposed and generally on limestone, can carry the mention premier cru. Thirty-two climats are listed, such as Clos des Barraults and Les Byots.",
+    "A premier cru climat goes straight after the appellation name, in letters no bigger than it. A cadastral lieu-dit, a registered place name, can also appear if it is on the harvest declaration. Its letters are at most half the size of the appellation name.",
+    "Labels may add the wider name Vin de Bourgogne or Grand Vin de Bourgogne. A grape name stays out of the field of the compulsory details, in letters no taller than 2 millimetres.",
+    "Mercurey was long sold under the name vin de Beaune. The appellation was recognised by decree in 1936. The first premier cru climats followed in 1943. Growers sell 60% of the wine directly, and merchants remain strong in the trade."
+   ],
+   "cite": [
+    "mercurey-doc:p2",
+    "mercurey-doc:p3",
+    "mercurey-doc:p6",
+    "mercurey-doc:p7",
+    "mercurey-doc:p8",
+    "mercurey-doc:p9",
+    "mercurey-doc:p11",
+    "mercurey-doc:p12"
+   ]
+  }
+ ]
+}
