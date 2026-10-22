@@ -1,8 +1,8 @@
-# Germany plan (draft for the owner, 22 Oct 2026, issue #149)
+# Germany plan (owner approved, 22 Oct 2026, issue #149)
 
 Source report: `Review/countries/germany.md` (21 Oct 2026; evidence weak, mostly search summaries [R]). Side by side: `Review/countries/compare.md`.
 Built on the Portugal, France and Italy plans (`france-plan.md` #52-#58, `italy-plan.md` #59-#70) and their prep handoffs
-(`docs/handoffs/2026-10-22-france-prep.md`, `-italy-prep.md`, `-portugal-pilot.md`). Decisions below are open: none taken yet.
+(`docs/handoffs/2026-10-22-france-prep.md`, `-italy-prep.md`, `-portugal-pilot.md`). Decisions: `docs/architecture-decisions.md` #71-#78, all on the recommended option A [O].
 
 ## Context
 - Order decided: Portugal, France, Italy [O, `docs/PROJECT.md`]; Germany fourth, "after a licence check" (`compare.md`).
@@ -31,7 +31,7 @@ Built on the Portugal, France and Italy plans (`france-plan.md` #52-#58, `italy-
    Hessische Bergstraße, Baden, Württemberg, Franken; East (Saale-Unstrut, Sachsen). About 3 sessions.
 4. Later: Prädikat and Oechsle in Study; Lage cards if wanted; Landwein (PGI); Guides page grouping for Germany.
 
-## Decisions (open; recommended option first)
+## Decisions (owner, 22 Oct 2026, all on option A)
 1. Timing. A: prep slice now (data only, cheap, like France and Italy prep ran beside Portugal); pilot after the Italy pilot.
    B: nothing until France and Italy WSET waves are done.
 2. Scope. A: all 13 Anbaugebiete as places (the whole country at about the WSET size). B: the WSET L3 names only (count unknown).
