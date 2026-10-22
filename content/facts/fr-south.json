@@ -1,0 +1,908 @@
+{
+ "region": "fr-south",
+ "sheets": [
+  {
+   "id": "languedoc",
+   "why": {
+    "text": "A hot, dry Mediterranean climate rations water as grapes ripen, allowing ripe tannins in reds and roundness in rosés and whites.",
+    "cite": [
+     "languedoc-doc:p35",
+     "languedoc-doc:p36"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Lledoner Pelut"
+     },
+     {
+      "local": "Mourvèdre"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Bourboulenc"
+     },
+     {
+      "local": "Clairette"
+     },
+     {
+      "local": "Grenache Blanc"
+     },
+     {
+      "local": "Marsanne"
+     },
+     {
+      "local": "Piquepoul Blanc"
+     },
+     {
+      "local": "Roussanne"
+     },
+     {
+      "local": "Tourbat"
+     },
+     {
+      "local": "Vermentino"
+     }
+    ],
+    "cite": [
+     "languedoc-doc:p10"
+    ],
+    "others": [
+     "Carignan Blanc",
+     "Grenache Gris",
+     "Macabeu",
+     "Muscat À Petits Grains",
+     "Terret Blanc",
+     "Viognier",
+     "Assyrtiko",
+     "Carignan Gris",
+     "Clairette Rose",
+     "Piquepoul Gris",
+     "Rivairenc Blanc",
+     "Rivairenc Gris",
+     "Terret Gris",
+     "Carignan",
+     "Cinsaut",
+     "Counoise",
+     "Morrastel",
+     "Piquepoul Noir",
+     "Rivairenc",
+     "Terret Noir",
+     "Agiorgitiko",
+     "Calabrese",
+     "Marselan",
+     "Montepulciano",
+     "Œillade",
+     "Ugni Blanc"
+    ],
+    "othersCite": [
+     "languedoc-doc:p10",
+     "languedoc-doc:p38"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still red, rosé and white wines; about 60% red, 20% rosé and 20% white.",
+    "cite": [
+     "languedoc-doc:p1",
+     "languedoc-doc:p35"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: hot, dry summers and mild winters, with rain mainly in autumn and spring. Annual rainfall runs from 400 mm in the driest zones to 900 mm in the foothills. Sea air tempers the summer heat near ripeness; Mistral, Cers and Tramontane winds favour sunshine.",
+    "cite": [
+     "languedoc-doc:p33"
+    ]
+   },
+   "soil": {
+    "text": "Almost every geological layer, from Primary schists to Quaternary alluvium; most typical are Rhône, Hérault and Aude river terraces, schists and limestone. Soils are low in fertility, stony and well drained, mostly ochre to red.",
+    "cite": [
+     "languedoc-doc:p33"
+    ]
+   },
+   "altitude": {
+    "text": "Delimited plots lie between the seashore and 400 m, with a favourable aspect.",
+    "cite": [
+     "languedoc-doc:p36"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: medium to deep colour, red and black fruit to spice and toast, firm structure with ripe tannins. Rosés: bright, aromatic, round. Whites: dry, round, with exotic fruit, citrus, white flowers or dried fruit.",
+    "cite": [
+     "languedoc-doc:p35"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur or Nouveau",
+      "text": "Red and rosé still wines only; vintage must be shown on the label."
+     },
+     {
+      "name": "Cabrières",
+      "text": "Red and rosé from schist soils; reds aged until 15 May the year after harvest."
+     },
+     {
+      "name": "Pézenas",
+      "text": "Red only, from basalt-flow slopes; aged until 15 August of the year after harvest."
+     },
+     {
+      "name": "La Méjanelle",
+      "text": "Red only, from a red-clay pebble terrace near Montpellier; at least 30% Grenache."
+     }
+    ],
+    "cite": [
+     "languedoc-doc:p1",
+     "languedoc-doc:p31",
+     "languedoc-doc:p37",
+     "languedoc-doc:p40",
+     "languedoc-doc:p27"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "minervois",
+   "why": {
+    "text": "A south-facing amphitheatre below the Montagne Noire, with stony terraces, marls and limestone, a dry Mediterranean climate and dominant winds that bring little rain.",
+    "cite": [
+     "minervois-doc:p7",
+     "minervois-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Lledoner Pelut"
+     },
+     {
+      "local": "Mourvèdre"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Bourboulenc"
+     },
+     {
+      "local": "Grenache Blanc"
+     },
+     {
+      "local": "Maccabeu"
+     },
+     {
+      "local": "Marsanne"
+     },
+     {
+      "local": "Roussanne"
+     },
+     {
+      "local": "Vermentino"
+     }
+    ],
+    "cite": [
+     "minervois-doc:p2"
+    ],
+    "others": [
+     "Carignan",
+     "Cinsaut",
+     "Piquepoul Noir",
+     "Rivairenc",
+     "Terret Noir",
+     "Clairette",
+     "Grenache Gris",
+     "Piquepoul Blanc",
+     "Terret Blanc",
+     "Muscat À Petits Grains",
+     "Viognier"
+    ],
+    "othersCite": [
+     "minervois-doc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still red, white and rosé wines only; reds are 92% of production and rosés 6%.",
+    "cite": [
+     "minervois-doc:p1",
+     "minervois-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean, very mild and relatively dry: 630 mm rain a year, mean temperature above 14 °C, over 2,400 hours of sun. Humid south-east sea breezes in the east; the dry, often violent Cers wind in the west.",
+    "cite": [
+     "minervois-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Stony terraces, marls, sandstones, weathered hard limestone, and some schist lenses at altitude; mostly clay-limestone.",
+    "cite": [
+     "minervois-doc:p7",
+     "minervois-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The Montagne Noire behind peaks at Pic de Nore, 1,210 m; the centre of the zone sits about 100 m above the Marseillette pond.",
+    "cite": [
+     "minervois-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: purple, warm, powerful, red fruit with spice or liquorice, age well. Rosés: pale salmon, fresh and powerful. Whites: pale gold, floral, peach, mango, apricot.",
+    "cite": [
+     "minervois-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "fitou",
+   "why": {
+    "text": "Dry, poor soils, short pruning and low to moderate yields, with Carignan and Grenache, help give rich, warm, long-lived reds.",
+    "cite": [
+     "fitou-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Mourvèdre",
+     "Grenache",
+     "Syrah",
+     "Carignan"
+    ],
+    "othersCite": [
+     "fitou-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry, still red wines, always blended from at least two grapes.",
+    "cite": [
+     "fitou-doc:p2",
+     "fitou-doc:p3",
+     "fitou-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Hot, dry Mediterranean. The coast is windy (200 days of north-west wind) with about 600 mm rain a year. Inland it is cooler with about 700 mm. Sunshine is high in both.",
+    "cite": [
+     "fitou-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Coast: clay-limestone, with alluvial soils in low areas. Hills: schist, limestone or sandstone, plus a few stony terraces. All are generally stony, shallow and warm.",
+    "cite": [
+     "fitou-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The inland villages lie at the foot of Mont Tauch (917 m). The Leucate plateau on the coast rises 50 m.",
+    "cite": [
+     "fitou-doc:p5",
+     "fitou-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Rich in tannin, powerful and structured, with red fruit and spice such as pepper. With age: black fruit, truffle, toast, leather or game. Enjoyable young, and they age wonderfully.",
+    "cite": [
+     "fitou-doc:p3",
+     "fitou-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "corbieres",
+   "why": {
+    "text": "Poor, stony, well-drained clay-limestone soils in a dry, hot, windy Mediterranean massif, with Carignan, Grenache, Mourvèdre and Syrah blended.",
+    "cite": [
+     "corbieres-doc:p8",
+     "corbieres-doc:p9",
+     "corbieres-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Lledonner Pelut"
+     },
+     {
+      "local": "Mourvèdre"
+     },
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "corbieres-doc:p9",
+     "corbieres-doc:p10"
+    ],
+    "others": [
+     "Carignan",
+     "Cinsaut",
+     "Terret Noir",
+     "Piquepoul Noir",
+     "Vermentino",
+     "Bourboulenc",
+     "Muscat À Petits Grains Blancs",
+     "Terret Blanc",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Clairette",
+     "Roussanne",
+     "Piquepoul Blanc",
+     "Marsanne",
+     "Macabeu"
+    ],
+    "othersCite": [
+     "corbieres-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still reds, rosés and whites; reds make up 90% of production, rosés 6%, whites 2.5%.",
+    "cite": [
+     "corbieres-doc:p3",
+     "corbieres-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Dry, sunny, hot Mediterranean climate with constant wind, Tramontane (Cers) from the west and a humid sea wind. Rain is under 450 mm on the coast and over 700 mm in the mountains. Mean annual temperature falls from 15.4 °C by the sea to 13.4 °C near Carcassonne.",
+    "cite": [
+     "corbieres-doc:p8",
+     "corbieres-doc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Mostly clay-limestone, formed on Eocene molasse; generally not very fertile, shallow, stony and well drained.",
+    "cite": [
+     "corbieres-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Altitude drops over 60 km west to east from Pic de Bugarach (1,230 m) to the lagoon and sea. Mont Tauch is 917 m and Pic Alaric 600 m.",
+    "cite": [
+     "corbieres-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: balanced, structured, powerful, intense red fruit and spice, can age. Rosés: floral and fruity, fresh and round. Whites: white flowers, round and fine.",
+    "cite": [
+     "corbieres-doc:p4",
+     "corbieres-doc:p9",
+     "corbieres-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Red blend",
+      "text": "Dry red from at least two grapes; Carignan often present, limited to 50%."
+     },
+     {
+      "name": "Lieu-dit label",
+      "text": "Label may add a cadastral lieu-dit name, listed on the harvest declaration."
+     }
+    ],
+    "cite": [
+     "corbieres-doc:p4",
+     "corbieres-doc:p9",
+     "corbieres-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "picpoul-de-pinet",
+   "why": {
+    "text": "Little rain falls, but deep, draining soils and damp sea influences help the late Piquepoul grape ripen fully.",
+    "cite": [
+     "picpoul-de-pinet-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Piquepoul"
+     }
+    ],
+    "cite": [
+     "picpoul-de-pinet-doc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Still white wine only, made from a single grape, Piquepoul Blanc.",
+    "cite": [
+     "picpoul-de-pinet-doc:p1",
+     "picpoul-de-pinet-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Annual rainfall is 600 mm, nearly the lowest in the Hérault and very low in summer. Mean temperature is high. The sea and the Étang de Thau reduce temperature swings, and sea breezes limit summer daytime highs.",
+    "cite": [
+     "picpoul-de-pinet-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Cretaceous and Pliocene formations; deep, well-draining soils with good water supply and no limit to rooting.",
+    "cite": [
+     "picpoul-de-pinet-doc:p5",
+     "picpoul-de-pinet-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards run from the edge of the Étang up to 100 metres.",
+    "cite": [
+     "picpoul-de-pinet-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Pale gold with green glints. Floral nose (linden, hawthorn), citrus (grapefruit, lemon) and a mineral touch. Fine, fresh balance with a characteristic acid edge.",
+    "cite": [
+     "picpoul-de-pinet-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cotes-du-roussillon",
+   "why": {
+    "text": "A hot, dry, sunny Mediterranean amphitheatre with stony, poor, well-drained soils and the strong Tramontane wind, which suit drought-hardy Mediterranean grapes.",
+    "cite": [
+     "cotes-du-roussillon-doc:p7",
+     "cotes-du-roussillon-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Vermentino",
+     "Mourvèdre",
+     "Grenache Noir",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Roussanne",
+     "Tourbat",
+     "Syrah",
+     "Marsanne",
+     "Macabeu",
+     "Lledoner Pelut",
+     "Carignan"
+    ],
+    "othersCite": [
+     "cotes-du-roussillon-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still reds, rosés and whites only; by volume about 40% red, 55% rosé and 5% white.",
+    "cite": [
+     "cotes-du-roussillon-doc:p2",
+     "cotes-du-roussillon-doc:p8",
+     "cotes-du-roussillon-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: over 2,500 sunshine hours a year, 500 to 650 mm of often stormy rain, and a very marked dry summer. Mean annual temperature is 13 to 14 °C, cooler to the west and uphill. The Tramontane blows one day in three.",
+    "cite": [
+     "cotes-du-roussillon-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Varied, from schist or limestone slopes in the north to clay-sand molasse hills in the south and stony valley terraces. All are dry, low in organic matter, stony and well drained.",
+    "cite": [
+     "cotes-du-roussillon-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: tannic and structured, velvety, often fresh and mineral. Rosés: usually deep in colour, intense fresh-fruit aromas. Whites: fresh, floral and mineral, or richer and fuller.",
+    "cite": [
+     "cotes-du-roussillon-doc:p3",
+     "cotes-du-roussillon-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Must show a vintage; reds need 2 g/L or less fermentable sugar."
+     },
+     {
+      "name": "Les Aspres",
+      "text": "Complementary name for wines from 37 communes of the southern Aspres region."
+     }
+    ],
+    "cite": [
+     "cotes-du-roussillon-doc:p3",
+     "cotes-du-roussillon-doc:p8",
+     "cotes-du-roussillon-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cotes-du-roussillon-villages",
+   "why": {
+    "text": "Dry, stony, well-drained soils of varied rock under a sunny Mediterranean climate, with the cold, drying Tramontane wind.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Mourvedre",
+     "Grenache",
+     "Syrah",
+     "Lledoner Pelut",
+     "Carignan"
+    ],
+    "othersCite": [
+     "cotes-du-roussillon-villages-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry, still red wines only.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean, with over 2,500 sun hours and 450 to 650 mm of often stormy rain a year. Mean temperature is 15 °C by the sea and 13 °C inland. The Tramontane wind blows one day in three.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Poor in organic matter, dry, stony and well drained. Six main types: brown schist, black schist, clay-limestone, gneiss, granitic sand and terraces.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Altitude brings cooler temperatures towards the west; Lesquerde vines grow high on granitic sand. No figures given.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p6",
+     "cotes-du-roussillon-villages-doc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Deep red colour and an elegant red-fruit nose. Warm, powerful palate with very balanced tannins and a long finish of red fruit and spice.",
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p3",
+     "cotes-du-roussillon-villages-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Caramany",
+      "text": "Gneiss soils; Carignan made by carbonic maceration; supple, fresh wines."
+     },
+     {
+      "name": "Lesquerde",
+      "text": "High granitic-sand soils; Carignan by carbonic maceration; mineral, fresh wines."
+     },
+     {
+      "name": "Latour-de-France",
+      "text": "Warmer, less acidic soils where the Agly opens out; wild, spicy wines that age well."
+     },
+     {
+      "name": "Tautavel",
+      "text": "Clay-limestone soils, Grenache-led; ageing required until 1 October of the year after harvest."
+     }
+    ],
+    "cite": [
+     "cotes-du-roussillon-villages-doc:p8",
+     "cotes-du-roussillon-villages-doc:p9",
+     "cotes-du-roussillon-villages-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bandol",
+   "why": {
+    "text": "A sheltered Mediterranean amphitheatre of poor, stony, well-drained soils, where the sea's moderating effect lets late Mourvèdre reach ideal ripeness.",
+    "cite": [
+     "bandol-doc:p5",
+     "bandol-doc:p6",
+     "bandol-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Mourvèdre"
+     }
+    ],
+    "cite": [
+     "bandol-doc:p3",
+     "bandol-doc:p7"
+    ],
+    "others": [
+     "Vermentino",
+     "Bourboulenc",
+     "Grenache",
+     "Sauvignon",
+     "Cinsaut",
+     "Clairette",
+     "Ugni Blanc",
+     "Syrah",
+     "Sémillon",
+     "Marsanne",
+     "Carignan"
+    ],
+    "othersCite": [
+     "bandol-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still red, rosé and white wines; red and rosé are the main styles.",
+    "cite": [
+     "bandol-doc:p2",
+     "bandol-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean climate sheltered from the Mistral, with about 3000 hours of sun and 650 mm of rain a year. The sea cools summer heat and keeps nights lightly humid.",
+    "cite": [
+     "bandol-doc:p5",
+     "bandol-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Thin, whitish, stony soils, poor in organic matter and well drained, clay-limestone below. Dry-stone terraces (restanques) hold the slopes.",
+    "cite": [
+     "bandol-doc:p6",
+     "bandol-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: powerful, structured, tannic and long-lived. Rosés: pale, more tannic than other Provence rosés. Whites: pale straw, floral aromas.",
+    "cite": [
+     "bandol-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Red Bandol",
+      "text": "At least 50% Mourvèdre, 18 months in wood, yields at most 40 hl/ha."
+     },
+     {
+      "name": "Rosé Bandol",
+      "text": "At least 20% Mourvèdre; pressed directly, short maceration or saignée."
+     },
+     {
+      "name": "White Bandol",
+      "text": "At least 50% Clairette, pale straw colour."
+     }
+    ],
+    "cite": [
+     "bandol-doc:p3",
+     "bandol-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cotes-de-provence",
+   "why": {
+    "text": "Hot, dry Mediterranean summers with drying mistral winds over varied soils, from granite to limestone, and blended grapes, mostly making pale rosé.",
+    "cite": [
+     "cotes-de-provence-doc:p6",
+     "cotes-de-provence-doc:p7",
+     "cotes-de-provence-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Cinsault"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Tibouren"
+     },
+     {
+      "local": "Mourvèdre"
+     },
+     {
+      "local": "Carignan"
+     },
+     {
+      "local": "Cabernet-Sauvignon"
+     },
+     {
+      "local": "Clairette"
+     },
+     {
+      "local": "Ugni Blanc"
+     },
+     {
+      "local": "Vermentino"
+     }
+    ],
+    "cite": [
+     "cotes-de-provence-doc:p8"
+    ],
+    "others": [
+     "Sémillon",
+     "Barbaroux",
+     "Calitor"
+    ],
+    "othersCite": [
+     "cotes-de-provence-doc:p5",
+     "cotes-de-provence-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still rosé is the great majority (89% in 2009); there are also still reds and dry whites.",
+    "cite": [
+     "cotes-de-provence-doc:p2",
+     "cotes-de-provence-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Provençal Mediterranean: long hot dry season, mild dry winters, rainy springs and autumns. Mean annual temperature 15 °C, rainfall 600 to 900 mm, over 2700 hours of sun a year. Cold, drying mistral from north and north-west; southern winds bring humidity.",
+    "cite": [
+     "cotes-de-provence-doc:p6",
+     "cotes-de-provence-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Varied: granite, gneiss and mica-schist in the Maures; red sandy clays on Permian sandstone; marly limestone, often terraced; marls and sandstone in the Beausset basin; limestone sandstones and clays around the Arc. Vines sit on shallow soils with good water supply.",
+    "cite": [
+     "cotes-de-provence-doc:p7",
+     "cotes-de-provence-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Rosés: pale pink, fruity or floral, balanced between roundness and freshness. Reds: dark, either fruity for early drinking or long-lived with black fruit, spice and firm tannins. Whites: dry, citrus and white flowers.",
+    "cite": [
+     "cotes-de-provence-doc:p2",
+     "cotes-de-provence-doc:p3",
+     "cotes-de-provence-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sainte-Victoire",
+      "text": "Red and rosé from the cooler western end, on stony carbonate soils."
+     },
+     {
+      "name": "Fréjus",
+      "text": "Red and rosé from the north-east, shaped by the Montagnère wind; very round rosés."
+     },
+     {
+      "name": "La Londe",
+      "text": "Red and rosé from schist soils on the coast; rosés balance freshness and roundness."
+     },
+     {
+      "name": "Cru classé",
+      "text": "Traditional term for the 23 estates classified in 1953 and 1955."
+     }
+    ],
+    "cite": [
+     "cotes-de-provence-doc:p3",
+     "cotes-de-provence-doc:p9",
+     "cotes-de-provence-doc:p10",
+     "cotes-de-provence-doc:p11",
+     "cotes-de-provence-doc:p12",
+     "cotes-de-provence-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

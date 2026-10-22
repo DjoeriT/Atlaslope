@@ -1,0 +1,163 @@
+{
+ "id": "languedoc",
+ "title": "Why Languedoc tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hot, dry summers ration the vines' water just as the grapes ripen. That hot, dry climate allows ripe tannins in the red wines of Languedoc and the roundness typical of its rosés and whites.",
+  "cite": [
+   "languedoc-doc:p35",
+   "languedoc-doc:p36"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "arc",
+   "beat": "place",
+   "title": "An arc along the Gulf of Lion",
+   "paras": [
+    "The area curves for 200 km along the Gulf of Lion, from Nîmes to the Spanish border. It covers parts of four départements: Aude, Gard, Hérault and Pyrénées-Orientales.",
+    "Continuous high ground bounds it from north-east to south, from the Cévennes to the Pyrenees. It takes in the Larzac, the Espinouse, the Montagne Noire and the Corbières massif.",
+    "About twenty coastal rivers and streams run down to the Mediterranean. The main ones are the Vidourle, Hérault, Orb, Aude, Agly, Tech and Têt. This dense network shaped the hills and landscapes.",
+    "In the foothills the vineyard is closely woven into the natural vegetation. That vegetation is typical: groves of Aleppo pine and holm oak, and garrigue (Mediterranean scrub). Olive groves mark the landscape too. Nearer the coast the vineyard opens out into larger continuous spaces."
+   ],
+   "cite": [
+    "languedoc-doc:p33"
+   ],
+   "fly": [
+    {
+     "label": "Corbières massif",
+     "point": [
+      2.6,
+      43.0
+     ],
+     "zoom": 9,
+     "caption": "The Corbières massif is part of the high ground that bounds the area.",
+     "cite": [
+      "languedoc-doc:p33"
+     ]
+    },
+    {
+     "label": "Pézenas",
+     "point": [
+      3.424,
+      43.461
+     ],
+     "zoom": 10,
+     "caption": "Pézenas, a town of art and history, sits at the southern tip of the Pézenas vineyard triangle.",
+     "cite": [
+      "languedoc-doc:p37"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "summer",
+   "beat": "weather",
+   "title": "Dry summers, wet autumns, prevailing winds",
+   "paras": [
+    "The climate is typically Mediterranean, with hot, dry summers and mild winters. The marked summer dip in rainfall plays a decisive part in the vine's yearly cycle. Rain comes in two spells: a main one in autumn, which is sometimes torrential, and a more spread-out one in spring.",
+    "On the north-west edge, around Limoux, the ocean has more influence and rain falls through the year. Rainfall rises with altitude and with distance from the sea. It also rises from west to east. The driest zones get 400 mm a year and the foothills 900 mm.",
+    "The prevailing winds play an important part by favouring sunshine. The Mistral blows from the north in the east of the area. The Cers and the Tramontane blow from the north-west in the west.",
+    "Sea air meets no natural barrier near the shore and reaches the whole area. In summer, as the grapes near ripeness, it tempers the excess heat.",
+    "Heat and light are not limiting for the yields the rules aim at. Moderate yields bring the grapes to good ripeness before the autumn rains. The winds help keep the grapes healthy."
+   ],
+   "cite": [
+    "languedoc-doc:p33",
+    "languedoc-doc:p36"
+   ],
+   "fly": [
+    {
+     "label": "Limoux, the north-west edge",
+     "point": [
+      2.22,
+      43.05
+     ],
+     "zoom": 9.5,
+     "caption": "Around Limoux, on the north-west edge of the area, ocean influence is stronger and rain falls through the year.",
+     "cite": [
+      "languedoc-doc:p33"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "Stony, poor and well drained",
+   "paras": [
+    "Almost every geological layer is here, from Primary schists to Quaternary alluvium. The most typical are old river terraces of the Rhône, Hérault or Aude. Schists of the Montagne Noire, Pyrenees or Corbières are typical too, as are limestone formations.",
+    "Whatever the parent rock, the soils share some traits. Fertility is low and stones are present. Drainage is good, with no layer that stops roots going deep. The water reserve is a limiting factor, spread through the depth.",
+    "Most are ochre to red. Soils on schist can be brown, grey or black, and a few on limestone are white.",
+    "The delimited plots are chosen for soils with no barrier to roots. These soils feed the vine water moderately and steadily, so it can withstand the hot, dry summers.",
+    "The plots lie between the seashore and 400 m, with a favourable aspect. The delimitation favours hillsides near the sea or steeper foothill slopes, sometimes terraced. Together the plots cover less than a third of the region's vineyard and give less than 15% of its volume."
+   ],
+   "cite": [
+    "languedoc-doc:p33",
+    "languedoc-doc:p36"
+   ],
+   "fly": [
+    {
+     "label": "Rocher des deux Vierges, Saint-Saturnin",
+     "point": [
+      3.483,
+      43.684
+     ],
+     "zoom": 11,
+     "caption": "The Saint-Saturnin vineyard lies beneath the Rocher des deux Vierges, at 536 m, on screes and limy marls.",
+     "cite": [
+      "languedoc-doc:p38"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "colours",
+   "beat": "rules",
+   "title": "Three colours and nine named places",
+   "paras": [
+    "Languedoc makes still red, rosé and white wine, all dry: about 60% red, 20% rosé and 20% white.",
+    "Reds are always blends. Their main grapes are Grenache, Lledoner Pelut, Mourvèdre and Syrah. A red uses at least two grapes, one of them a main grape, and no grape may pass 80%. They keep 2 to 5 years on average.",
+    "Rosés blend at least two grapes, mainly Syrah, Cinsaut and Grenache. They are made by direct pressing, short maceration or bleeding (saignée).",
+    "Whites are blends of mainly Clairette, Grenache Blanc, Marsanne, Roussanne and Vermentino. The main white grapes also include Bourboulenc, Piquepoul Blanc and Tourbat. A white uses at least two main grapes, and main grapes make up most of the blend.",
+    "A wine can add a primeur or nouveau mention. These are red and rosé only, and the vintage must show on the label.",
+    "Nine named places add stricter rules. Their reds are concentrated, with a tannic structure that needs ageing. Cabrières is red and rosé, from a natural bowl of schist. Its reds are aged until 15 May of the year after harvest. Pézenas is red only, on slopes with basalt flows, and its reds are aged until 15 August of the year after harvest. La Méjanelle is red only, on a red-clay pebble terrace east of Montpellier, with at least 30% Grenache.",
+    "The other six are Quatourze, Saint-Christol, Saint-Drézéry, Saint-Georges-d'Orques, Saint-Saturnin and Sommières. All six are red only, except Saint-Saturnin, which also makes rosé."
+   ],
+   "cite": [
+    "languedoc-doc:p1",
+    "languedoc-doc:p2",
+    "languedoc-doc:p10",
+    "languedoc-doc:p26",
+    "languedoc-doc:p31",
+    "languedoc-doc:p35",
+    "languedoc-doc:p37"
+   ],
+   "fly": [
+    {
+     "label": "La Méjanelle, Montpellier",
+     "point": [
+      3.93,
+      43.61
+     ],
+     "zoom": 11,
+     "caption": "La Méjanelle's red-clay pebble terrace lies inside the built-up area east of Montpellier.",
+     "cite": [
+      "languedoc-doc:p37"
+     ]
+    },
+    {
+     "label": "Cabrières",
+     "point": [
+      3.367,
+      43.578
+     ],
+     "zoom": 11,
+     "caption": "Cabrières forms a nearly closed natural bowl of hills, with schist soils throughout.",
+     "cite": [
+      "languedoc-doc:p37"
+     ]
+    }
+   ]
+  }
+ ]
+}

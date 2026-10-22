@@ -157,7 +157,11 @@ FR_SHIP = ["chablis", "pauillac",
            "rose-de-loire", "cremant-de-loire",
            # Rhône batch (23 Oct 2026)
            "cotes-du-rhone", "cotes-du-rhone-villages", "cote-rotie", "condrieu", "saint-joseph", "hermitage", "crozes-hermitage",
-           "cornas", "chateauneuf-du-pape", "gigondas", "vacqueyras", "lirac", "tavel", "muscat-de-beaumes-de-venise"]
+           "cornas", "chateauneuf-du-pape", "gigondas", "vacqueyras", "lirac", "tavel", "muscat-de-beaumes-de-venise",
+           # South-West, Beaujolais, Alsace, South and Champagne (23 Oct 2026): the WSET L3 list complete, 94 places
+           "bergerac", "monbazillac", "cahors", "madiran", "jurancon", "beaujolais", "brouilly", "fleurie", "morgon", "moulin-a-vent",
+           "alsace", "cremant-dalsace", "languedoc", "minervois", "fitou", "corbieres", "picpoul-de-pinet", "cotes-du-roussillon",
+           "cotes-du-roussillon-villages", "bandol", "cotes-de-provence", "champagne"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 

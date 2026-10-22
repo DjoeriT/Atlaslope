@@ -108,9 +108,9 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
     expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
   });
-  it('renders /fr/ with 72 place tiles, photos where they have shipped, and an honest Study note', () => {
-    expect(count(page, /<a class="ecard"/g)).toBe(72);
-    expect(count(page, /Photos soon/g)).toBe(32); // Loire and Rhône batches: photos in the next commits
+  it('renders /fr/ with 94 place tiles, photos where they have shipped, and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(94);
+    expect(count(page, /Photos soon/g)).toBe(54); // Loire, Rhône and the last 22: photos in the next commits
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');

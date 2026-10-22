@@ -1,0 +1,103 @@
+{
+ "region": "fr-champagne",
+ "sheets": [
+  {
+   "id": "champagne",
+   "why": {
+    "text": "Chalk, marl or sand slopes drain naturally, and a unique climate gives grapes a natural acidity ideal for sparkling wine.",
+    "cite": [
+     "champagne-doc:p7",
+     "champagne-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Meunier"
+     }
+    ],
+    "cite": [
+     "champagne-doc:p7"
+    ],
+    "others": [
+     "Arbane",
+     "Petit Meslier",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "champagne-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "white",
+     "rose"
+    ],
+    "text": "Sparkling only, white or rosé, made by second fermentation in the bottle; vintage or non-vintage.",
+    "cite": [
+     "champagne-doc:p2",
+     "champagne-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Northern vineyards with two influences: oceanic (regular rain, mild seasonal contrasts) and continental (sometimes destructive frosts, sunny summers).",
+    "cite": [
+     "champagne-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Hard limestone or chalk cuesta fronts; slopes of chalk, marl or sand. Chalk drains excess water and rehydrates the soil in dry weather.",
+    "cite": [
+     "champagne-doc:p7",
+     "champagne-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Fresh acidity in all wines. Young: flowers, white fruit, citrus, mineral notes. Mature: yellow and cooked fruit, spice. Oldest: candied fruit, undergrowth, toast.",
+    "cite": [
+     "champagne-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Blanc de blancs",
+      "text": "White Champagne made only from white grapes."
+     },
+     {
+      "name": "Blanc de noirs",
+      "text": "White Champagne made only from black grapes."
+     },
+     {
+      "name": "Rosé",
+      "text": "Made by blending or by saignée (bleeding)."
+     },
+     {
+      "name": "Millésimé",
+      "text": "Vintage wine; at least 36 months ageing from bottling (15 for non-vintage)."
+     }
+    ],
+    "cite": [
+     "champagne-doc:p2",
+     "champagne-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

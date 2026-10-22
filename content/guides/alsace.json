@@ -1,0 +1,141 @@
+{
+ "id": "alsace",
+ "title": "Why Alsace tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The Vosges mountains shield one of France's northernmost vineyards from ocean influence, giving it a dry, largely sunny climate. On its hills, hot days and cool nights through ripening bring ripe grapes while keeping the wines fresh and aromatic.",
+  "cite": [
+   "alsace-doc:p8",
+   "alsace-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "strip",
+   "beat": "place",
+   "title": "A long thin strip under the Vosges",
+   "paras": [
+    "Alsace is one of the most northerly vineyards in France and in Europe. It lies mainly on the eastern foot of the Vosges, across 119 communes in the Bas-Rhin and the Haut-Rhin.",
+    "The vineyard is 120 km long and often less than 1 km wide. It runs from a small pocket near Cleebourg in the north, through Marlenheim near Strasbourg, down to Thann near Mulhouse in the south.",
+    "The land is a string of hills below the Vosges, cut by deep valleys. Slopes face many ways and the relief is often steep. Most vines grow between 200 m and 400 m."
+   ],
+   "cite": [
+    "alsace-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Colmar",
+     "point": [
+      7.36,
+      48.08
+     ],
+     "zoom": 10,
+     "caption": "Colmar, one of the vineyard's communes, gets about 1800 h of sun a year.",
+     "cite": [
+      "alsace-doc:p6",
+      "alsace-doc:p8"
+     ]
+    },
+    {
+     "label": "Thann, the southern end",
+     "point": [
+      7.1,
+      47.81
+     ],
+     "zoom": 10,
+     "caption": "Thann, near Mulhouse, is where the 120 km strip of vines ends in the south.",
+     "cite": [
+      "alsace-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shield",
+   "beat": "weather",
+   "title": "Mountains as a shield",
+   "paras": [
+    "The climate is clearly semi-continental. Winters are cold, with January averaging 1.9°C. Summers are hot and dry, with July averaging above 20°C.",
+    "The Vosges act as a shield against ocean influence, and a foehn effect adds to this, mostly in autumn. Their summits get around 2000 mm of rain a year, while the vineyard gets 500 mm to 650 mm. Colmar has about 1800 h of sun a year.",
+    "While the grapes ripen, hot days alternate with cool nights. The shield also favours excellent autumn and late-season weather. That weather is often favourable to concentration on the vine and to noble rot.",
+    "A range of mesoclimates follows the varied landscape. The valleys and the position of the Vosges summits shape it too."
+   ],
+   "cite": [
+    "alsace-doc:p8",
+    "alsace-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "The Vosges ridge",
+     "point": [
+      7.1,
+      48.1
+     ],
+     "zoom": 9,
+     "caption": "The Vosges summits take about 2000 mm of rain a year, against 500 mm to 650 mm on the vineyard below.",
+     "cite": [
+      "alsace-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fault",
+   "beat": "ground",
+   "title": "A mosaic of broken ground",
+   "paras": [
+    "The Rhine rift, running north to south, collapsed and left a network of geological faults. These form a mosaic of small blocks with very varied geology and soils.",
+    "The vineyard sits where the Rhine plain of sediments meets the crystalline Vosges. Erosion has reworked every layer laid down over the ages.",
+    "Brown soils on schist, granite or sandstone are shallow, free-draining and tend to be acidic. Colluvial soils on alluvial fans and sandy-gravelly alluvial soils at the edge of the plain are young, free-draining and also tend to be acidic. Calcareous brown or rendzina soils on the hills below the Vosges, with layered conglomerates and marls, have a good water balance.",
+    "The vineyard's average altitude, 200 m to 400 m, matches the optimal thermal belt. It helps keep the natural tartaric acidity in good balance."
+   ],
+   "cite": [
+    "alsace-doc:p8",
+    "alsace-doc:p9",
+    "alsace-doc:p12"
+   ]
+  },
+  {
+   "id": "aromatic",
+   "beat": "rules",
+   "title": "Many grapes, mostly aromatic",
+   "paras": [
+    "Alsace, also sold as Vin d'Alsace, makes still wines in white, rosé and red. White wines are the large majority. Reds and rosés come from Pinot Noir alone.",
+    "The varied sites led growers to keep a very wide palette of mostly aromatic grapes. Besides Pinot Noir, they are Chasselas, Sylvaner, Pinot Blanc, Auxerrois, Riesling, the Muscats, Gewurztraminer, Savagnin Rose and Pinot Gris. A grape name on the label, called a \"dénomination en usage\", means the wine comes only from the grapes that name covers. One label may not carry two of these names.",
+    "Two main types of white stand out. Dry, mineral wines with tense, ripe acidity are generally linked to Chasselas, Sylvaner, Pinot Blanc, Auxerrois, Riesling and the Muscats. Fruity, softer wines with high dry extract are generally linked to Gewurztraminer and Pinot Gris. A light prickle of CO2, called \"spretsig\" locally, often marks the long finish and lifts minerality and salinity.",
+    "Riesling has a sugar cap after fermentation: 9 g a litre, or 12 g when total acidity is above 6 g a litre. If the wine was enriched, the cap is 6 g. Late-harvest wines and wines with an extra place name are exempt.",
+    "Good late-season weather allows wines from overripe grapes. Wines marked \"vendanges tardives\" (late harvest) often show very exotic, candied-fruit aromas with a fresh finish. Wines marked \"sélection de grains nobles\" (selection of noble berries) are more concentrated and powerful, often with fruit-paste aromas, and keep for a very long time. Both are picked by hand and aged at least 18 months. Their label must carry the vintage. They use only Gewurztraminer, Muscat, Muscat Ottonel, Pinot Gris or Riesling.",
+    "\"Edelzwicker\" grew from the old \"zwicker\" blends of vines grown mixed together, once the noble grapes joined in. Its label may not name any single grape. The reds include ambitious, fine, elegant Pinot Noir. Fresh, fruity, light reds or rosés may be called Pinot Noir, \"clairet\" or \"Schillerwein\".",
+    "Labels often add a smaller place, a commune or a named site called a \"lieu-dit\". Eleven extra place names may also follow Alsace, such as Côtes de Barr or Vallée Noble.",
+    "The wines must be bottled in the Bas-Rhin or the Haut-Rhin. They come in a \"Vin du Rhin\" (Rhine wine) flute, and no other bottle type is allowed."
+   ],
+   "cite": [
+    "alsace-doc:p2",
+    "alsace-doc:p3",
+    "alsace-doc:p4",
+    "alsace-doc:p7",
+    "alsace-doc:p9",
+    "alsace-doc:p10",
+    "alsace-doc:p11",
+    "alsace-doc:p12",
+    "alsace-doc:p13",
+    "alsace-doc:p14"
+   ],
+   "fly": [
+    {
+     "label": "Riquewihr",
+     "point": [
+      7.3,
+      48.16
+     ],
+     "zoom": 13,
+     "caption": "Riquewihr is one of the vineyard's communes. Alsace villages are grouped, often fortified and ringed by vines.",
+     "cite": [
+      "alsace-doc:p6",
+      "alsace-doc:p10"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "cotes-du-roussillon",
+ "title": "Why Côtes du Roussillon tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A vast amphitheatre opens onto the Mediterranean, in a very hot, dry and windy climate. Reds here carry a tannic frame, and rosé makes up 55% of the volume.",
+  "cite": [
+   "cotes-du-roussillon-doc:p6",
+   "cotes-du-roussillon-doc:p7",
+   "cotes-du-roussillon-doc:p8",
+   "cotes-du-roussillon-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "An amphitheatre open to the sea",
+   "paras": [
+    "The area lies in a vast amphitheatre that opens wide to the east, onto the Mediterranean. High mountains close it in on the other three sides.",
+    "To the west rises the Canigou massif, with its peak at 2,780 m. To the south is the Albères massif, where the Roc de France reaches 1,450 m. To the north is the Corbières massif, topped by Mont Tauch at 878 m.",
+    "Three short rivers cross the area from west to east, along with streams that are often dry. Over the ages they carried material down from the mountains and built many terraces."
+   ],
+   "cite": [
+    "cotes-du-roussillon-doc:p6",
+    "cotes-du-roussillon-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Canigou massif",
+     "point": [
+      2.457,
+      42.519
+     ],
+     "zoom": 9.5,
+     "caption": "The western wall of the amphitheatre, with its peak at 2,780 m.",
+     "cite": [
+      "cotes-du-roussillon-doc:p6"
+     ]
+    },
+    {
+     "label": "Mont Tauch, Corbières",
+     "point": [
+      2.64,
+      42.905
+     ],
+     "zoom": 9.5,
+     "caption": "The Corbières massif closes the amphitheatre to the north, with Mont Tauch at 878 m.",
+     "cite": [
+      "cotes-du-roussillon-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun-and-wind",
+   "beat": "weather",
+   "title": "Storm rain and the Tramontane",
+   "paras": [
+    "The climate is Mediterranean, with more than 2,500 hours of sun a year. Yearly rain of 500 mm to 650 mm often comes in storms. It falls in spring and autumn, and the summer drought is very marked.",
+    "The mean annual temperature is 13°C to 14°C, cooler towards the west or uphill.",
+    "The Tramontane, a north-west wind, blows one day in three and can be violent. It is very cold in winter after crossing the snowy Pyrenees. It cleanses, but it also deepens the drought.",
+    "In this very hot, dry, windy setting, good for full ripening, Mediterranean grapes have found a favoured natural home. These grapes need plenty of sun and healthy conditions, yet they can resist drought."
+   ],
+   "cite": [
+    "cotes-du-roussillon-doc:p7",
+    "cotes-du-roussillon-doc:p9"
+   ]
+  },
+  {
+   "id": "stony-slopes",
+   "beat": "ground",
+   "title": "Poor, stony ground",
+   "paras": [
+    "Every geological era is represented here, and the soils are varied. In the north the vines climb steep slopes of schist or limestone and the debris washed down from them. In the south they sit on hills of clay-sand molasse. Along the valleys they stand on stony terraces.",
+    "All these soils share the same traits: they are dry, low in organic matter, stony and well drained.",
+    "Grapes brought in more recently find deeper, cooler soils that suit them. Syrah is one, with Marsanne and Roussanne.",
+    "Such sites call for careful handling of each vine. Growers prune very short and keep yields low. They plough so grass does not compete for water. Some still plant in squares so roots fill the soil better.",
+    "These habits helped keep old vines alive. Some wines still come from vines nearly a hundred years old."
+   ],
+   "cite": [
+    "cotes-du-roussillon-doc:p7",
+    "cotes-du-roussillon-doc:p9"
+   ]
+  },
+  {
+   "id": "blends",
+   "beat": "rules",
+   "title": "Blends and a name from the Aspres",
+   "paras": [
+    "The appellation covers dry still wines, red, rosé and white. By volume, reds make up 40%, rosés 55% and whites 5%.",
+    "Reds take their character from a tannic frame and backbone. Carignan sets that frame. It ages only moderately, and Grenache makes up for this with generosity and smoothness. Syrah brings finesse, structure and aromatic complexity. Mourvèdre, the historic grape, adds tannic structure that helps the wines age.",
+    "Rosés are made from the same grapes as the reds. Grenache Gris and Macabeu are sometimes added for extra freshness. Rosés are made with close control of temperature, and oenological charcoal is banned in making them.",
+    "Whites are a rarer wine. They come from the coolest sites and speak most of the place the grapes come from. The traditional white grapes are Grenache Blanc, Macabeu and Tourbat. Grenache Gris, Marsanne, Roussanne and Vermentino are the more aromatic ones.",
+    "Reds and rosés need at least 12% natural alcohol, whites 11.5%. Yields are set at 48 hl/ha. Vines must be planted at 4,000 or more per hectare.",
+    "Wines labelled \"primeur\" or \"nouveau\" (new) must show their vintage. Reds among them may hold no more than 2 g/L of fermentable sugar.",
+    "The extra place name \"Les Aspres\" was recognised in 2003 for growers in 37 communes of the Aspres, south of the Têt river. Its vineyard covers 50 hectares. From the same grapes, its wines show depth and structure on soils that suffer less from drought.",
+    "Labels may also add the wider name \"Vin du Roussillon\", in smaller letters than the appellation."
+   ],
+   "cite": [
+    "cotes-du-roussillon-doc:p2",
+    "cotes-du-roussillon-doc:p3",
+    "cotes-du-roussillon-doc:p4",
+    "cotes-du-roussillon-doc:p5",
+    "cotes-du-roussillon-doc:p8",
+    "cotes-du-roussillon-doc:p9",
+    "cotes-du-roussillon-doc:p10",
+    "cotes-du-roussillon-doc:p11",
+    "cotes-du-roussillon-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Collioure and Port-Vendres",
+     "point": [
+      3.083,
+      42.525
+     ],
+     "zoom": 11,
+     "caption": "Ports like these helped the sweet wines of the region become better known.",
+     "cite": [
+      "cotes-du-roussillon-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}

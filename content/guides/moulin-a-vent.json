@@ -1,0 +1,117 @@
+{
+ "id": "moulin-a-vent",
+ "title": "Why Moulin-à-Vent tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Granite veined with manganese lies under slopes that face the morning sun and hide from the western winds. The wines are Gamay reds with a generous, structured palate that gain finesse and power after several years.",
+  "cite": [
+   "moulin-a-vent-doc:p3",
+   "moulin-a-vent-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hillside",
+   "beat": "place",
+   "title": "A hillside with a windmill",
+   "paras": [
+    "The area spreads over the eastern flank of the Monts du Beaujolais, mainly the Montagne de Rémont, which reaches 510 m. It also takes in the terraces that face the Saône plain. It lies 15 km south-west of Mâcon and 25 km north of Villefranche-sur-Saône.",
+    "The grapes are harvested in two communes: Chénas in the Rhône and Romanèche-Thorins in Saône-et-Loire. Slopes, sometimes steep, rise above the village of Chénas in the west. Gentler slopes and terraces run east to Romanèche-Thorins. The vineyard plots lie between 190 m and 420 m.",
+    "The name comes from a windmill built in 1550 on a hill at Romanèche-Thorins. It ground grain until the middle of the 19th century. It is now a listed historic monument. It stands in the heart of the vineyard and can be seen from far away."
+   ],
+   "cite": [
+    "moulin-a-vent-doc:p5",
+    "moulin-a-vent-doc:p6",
+    "moulin-a-vent-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The windmill hill, Romanèche-Thorins",
+     "point": [
+      4.7365,
+      46.1895
+     ],
+     "zoom": 11,
+     "caption": "The old windmill of 1550 stands in the heart of the vineyard and gives the appellation its name.",
+     "cite": [
+      "moulin-a-vent-doc:p7"
+     ]
+    },
+    {
+     "label": "Montagne de Rémont",
+     "point": [
+      4.69,
+      46.2
+     ],
+     "zoom": 11,
+     "caption": "The main hill of the zone reaches 510 m.",
+     "cite": [
+      "moulin-a-vent-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter from the west, heat from the south",
+   "paras": [
+    "The climate is a degraded oceanic one, with continental and southern influences. Rain is spread evenly through the year, and the mean annual temperature is close to 11 °C.",
+    "The Monts du Beaujolais block the winds from the west and soften the ocean's influence. Their foehn effect dries the humid air, which brings more light and less rain.",
+    "The wide Saône valley adds plenty of light and carries southern influences, with strong summer heat. The vines spread over gentle slopes facing east and south-east, so the first rays of the sun warm them at dawn."
+   ],
+   "cite": [
+    "moulin-a-vent-doc:p6",
+    "moulin-a-vent-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Saône valley",
+     "point": [
+      4.8,
+      46.17
+     ],
+     "zoom": 9,
+     "caption": "The wide valley below the slopes brings light and strong summer heat.",
+     "cite": [
+      "moulin-a-vent-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Pink granite and black manganese",
+   "paras": [
+    "Granite is the bedrock, and 80% of the soils grow on its pink, crumbly sand. Here the weathered granite is called \"grès\" or \"gore\". In the south and along the eastern edge the soils are more developed. They are a sandy loam mixed with small stones and gravel, on colluvium, material that has slid down the slopes.",
+    "The soils are generally well drained. Iron and manganese oxides run through them, spread from veins that cut the granite. France's largest manganese deposit was found at Romanèche-Thorins around 1750. The tale goes that this black ore gives the wines their particular character.",
+    "The granite is not very fertile, which favours moderate yields. It also helps build the fruity aromas in the wines."
+   ],
+   "cite": [
+    "moulin-a-vent-doc:p6",
+    "moulin-a-vent-doc:p8"
+   ]
+  },
+  {
+   "id": "gamay",
+   "beat": "rules",
+   "title": "Only red, from Gamay",
+   "paras": [
+    "Moulin-à-Vent makes dry, still red wine and nothing else. Gamay is the grape growers work with. Three white varieties are listed too, Chardonnay among them, yet no white wine is allowed.",
+    "Growers plant at least 6,000 vines per hectare and prune short. They use both traditional fermentation and semi-carbonic maceration.",
+    "The wines are deep ruby to garnet. The nose often shows flowers and very ripe red fruit, turning with age to heady spice, truffle and even game. Power, complexity and elegance stay in balance.",
+    "It is known as the oldest of the Crus du Beaujolais. A label may add the name of a registered lieu-dit, a named plot on the land register, if it appears on the harvest declaration. It may also add «Cru du Beaujolais» or a similar wider name, in smaller letters than the appellation."
+   ],
+   "cite": [
+    "moulin-a-vent-doc:p2",
+    "moulin-a-vent-doc:p3",
+    "moulin-a-vent-doc:p4",
+    "moulin-a-vent-doc:p5",
+    "moulin-a-vent-doc:p7",
+    "moulin-a-vent-doc:p8",
+    "moulin-a-vent-doc:p11"
+   ]
+  }
+ ]
+}
