@@ -100,3 +100,9 @@
 .pg-close{flex:none;margin-left:auto;min-height:2.5rem;padding:0 1rem;border:1px solid #E9D8B4;border-radius:6px;background:none;color:#E9D8B4;font:500 .95rem var(--sans,sans-serif);cursor:pointer}
 .pg-close:hover{background:rgba(233,216,180,.12)}
 .pg-close:focus-visible{outline:2px solid #E9D8B4;outline-offset:2px}
+/* Map mode: the place and its lede above beat 1 (owner 22 Oct 2026). */
+.pg.tour .pg-cover{padding:0 0 1.6rem;margin-bottom:1.8rem;border-bottom:1px solid var(--line)}
+.pg.tour .pg-cover h1{font:500 2.6rem/1 var(--serif);letter-spacing:-.02em;margin:0 0 .9rem}
+.pg.tour .pg-cover .pg-spine{padding:0;max-width:none}
+.pg.tour .pg-cover .pg-spine h2{margin:0 0 .3rem;font:400 .95rem var(--serif)!important;color:var(--ink3)}
+.pg.tour .pg-cover .pg-lede{font-size:1.35rem;line-height:1.38;max-width:none}

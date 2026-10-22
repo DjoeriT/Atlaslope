@@ -454,6 +454,13 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   if (cardPhoto && !tour) pics.push(cardPhoto);
   const pageHash = selectionToHash({ kind: 'place', id: place.id, page: true });
 
+  const spineHead = spine && (
+    <header className="pg-spine">
+      <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
+      {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
+    </header>
+  );
+
   return (
     <div ref={pageRef} className={tour ? 'pg tour' : 'pg'} role="region" aria-label={strings.place.page.pageLabel(place.name)}>
       {tour ? (
@@ -491,12 +498,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
             ) : <Mosaic key={place.id} photos={photos} name={place.name} color={color} />}
           </div>
           <div className="pg-hero-why">
-            {spine && (
-              <header className="pg-spine">
-                <h2 id="why-h" tabIndex={-1}>{guide?.title ?? t.whyTitle(place.name)}</h2>
-                {guide ? <><p className="pg-lede">{guide.lede.text}</p>{src(guide.lede.cite)}</> : sheet && <><p className="pg-lede">{sheet.why.text}</p>{src(sheet.why.cite)}</>}
-              </header>
-            )}
+            {spineHead}
             {!hasStory(place.id) && <div className="pg-actions"><Link className="btn primary" to={{ kind: 'place', id: place.id }} go={go}>{t.showOnMap(place.name)}</Link></div>}
           </div>
         </div>}
@@ -509,6 +511,8 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
 
         <div className="pg-cols">
           <main>
+            {/* Map mode keeps the spine on top: the place and why it tastes the way it does (owner 22 Oct 2026, picture 2). */}
+            {tour && <header className="pg-cover"><h1>{place.name}</h1>{spineHead}</header>}
             {beats.map((b) => {
               const stops = b.chapters.flatMap(stopsOf);
               const figs = stopFigures(stops);
