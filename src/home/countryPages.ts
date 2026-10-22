@@ -74,7 +74,7 @@ export const fillHome = (html: string, list: GuideList, stories: number): string
 
 /** Guides: the map-tour band, then one block per country (photos, counts, region names as links, "Open <country>"). */
 export const guidesIndex = (list: GuideList): string => {
-  const blocks = countryStats(list).map((s) => `<section class="ix" aria-labelledby="ix-${s.code}"><div class="ixh"><h2 id="ix-${s.code}">${esc(s.name)}</h2><p class="cnt">${countsLine(s)}</p><a class="btn a" href="../${s.code}/">Open ${esc(s.name)}</a></div>`
+  const blocks = countryStats(list).map((s) => `<section class="ix" aria-labelledby="ix-${s.code}"><div class="ixh"><h2 id="ix-${s.code}">${esc(s.name)}</h2><p class="cnt">${countsLine(s)}</p><a class="btn a" href="../${s.code}/">Open ${esc(s.name)}</a>${s.tours ? `<a class="tourlink" href="../${s.code}/?tours">Only guides with a map tour</a>` : ''}</div>`
     + `<nav class="reg" aria-label="Regions of ${esc(s.name)}">${s.regions.map((r) => `<a href="../${s.code}/#r-${esc(r.id)}">${esc(r.name)}</a>`).join('')}</nav>`
     + `<div class="strip4">${COUNTRY_PAGES[s.id].cardPhotos.slice(0, 4).map((k) => `<span class="sqbox">${photoImg(k, list.photos, '(max-width:700px) 25vw, 160px', true, true)}</span>`).join('')}</div></section>`);
   const keys = [...new Set([...bandKeys(list), ...list.countries.flatMap((c) => COUNTRY_PAGES[c.id]?.cardPhotos.slice(0, 4) ?? [])])];
@@ -101,7 +101,9 @@ export const countryPage = (list: GuideList, id: string): string => {
     `<div class="wrap gl"><div class="ch"><div class="chtxt"><p class="crumb"><a href="../guides/">Guides</a> / ${esc(s.name)}</p><h1>${esc(s.name)}</h1>`,
     `<p class="lead">${esc(page.intro)}<br />Each guide explains why one place tastes the way it does.</p><p class="cnt">${countsLine(s)}</p>`,
     `<a class="btn a" href="../atlas/#country=${esc(id)}">See ${esc(s.name)} on the atlas</a>${study}</div><div class="lds">${blocks}</div></div>`,
-    `<div class="foot top">${creditLine(countryPageKeys(list, id), list.photos)}</div>`,
+    `<div class="foot top">${creditLine(countryPageKeys(list, id), list.photos)}</div></div>`,
+    bandHtml(list, id), // the country's map tours, above the regions; none, no band (Portugal today)
+    '<div class="wrap gl">',
     `<nav class="jump" aria-label="Jump to a region">${s.regions.map((r) => `<a href="#r-${esc(r.id)}">${esc(r.name)}</a>`).join('')}</nav>`,
     s.tours ? '<div class="bar"><label class="tourtoggle"><input type="checkbox" id="tours" /> Show only guides with a map tour</label></div>' : '',
     regionBlocks(list, id),

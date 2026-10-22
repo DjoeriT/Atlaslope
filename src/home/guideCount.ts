@@ -125,8 +125,8 @@ const tile = (g: GuideRow, photos: Record<string, PhotoCredit>, sizes: string): 
   !g.photo ? '<span class="sqbox soon"><i>Photos soon</i></span>' : `<span class="sqbox">${photoImg(g.photo, photos, sizes, false, true)}${g.tour ? `<span class="chip">${GLYPH}<span>Map tour</span></span>` : ''}</span>`;
 
 /** The tour guides in band order: the four featured first, then the rest in list order. Only guides with a photo get a tile. */
-export const bandTours = (list: GuideList): { featured: GuideRow[]; rest: GuideRow[]; count: number } => {
-  const tours = list.rows.filter((r) => r.tour);
+export const bandTours = (list: GuideList, country?: string): { featured: GuideRow[]; rest: GuideRow[]; count: number } => {
+  const tours = list.rows.filter((r) => r.tour && (!country || r.country === country));
   const withPhoto = tours.filter((r) => r.photo);
   const featured = BAND_FEATURED.flatMap((id) => withPhoto.filter((r) => r.id === id));
   return { featured, rest: withPhoto.filter((r) => !featured.includes(r)), count: tours.length };
@@ -135,17 +135,18 @@ export const bandTours = (list: GuideList): { featured: GuideRow[]; rest: GuideR
 /** Photo keys the Guides page shows as square tiles: one per guide that has a photo. */
 export const squarePhotoKeys = (list: GuideList, country?: string): string[] => list.rows.filter((g) => !country || g.country === country).flatMap((g) => (g.photo ? [g.photo] : []));
 
-/** The black band of map-tour guides at the top of the Guides page (the same band, now across both countries). */
-export const bandHtml = (list: GuideList): string => {
+/** The black band of map-tour guides, every tour open (owner 22 Oct 2026: "the whole map tour setup"): the four featured first and bigger,
+ *  each tile with its Map tour chip, name, label line and, on the Guides page (all countries), its country. */
+export const bandHtml = (list: GuideList, country?: string): string => {
   const { photos } = list;
-  const { featured, rest, count } = bandTours(list);
+  const { featured, rest, count } = bandTours(list, country);
   if (!count) return '';
-  const t = (g: GuideRow, sizes: string) => `<a href="${href(g)}">${tile(g, photos, sizes)}<span class="nm">${esc(g.name)}</span></a>`;
+  const name = (id: string) => list.countries.find((c) => c.id === id)?.name ?? id;
+  const t = (g: GuideRow, sizes: string) => `<a href="${href(g)}">${tile(g, photos, sizes)}<span class="nm">${esc(g.name)}</span><span class="meta">${esc(g.label)}${country ? '' : ` · ${esc(name(g.country))}`}</span></a>`;
   return [
     `<section class="band" id="map-tours" aria-labelledby="map-tours-h"><div class="wrap"><div class="rowh"><h2 id="map-tours-h">Explore with the map</h2><span class="n">${count} guides</span></div>`,
     `<div class="stills feat">${featured.map((g) => t(g, '(max-width:700px) 240px, 280px')).join('')}</div>`,
-    rest.length ? `<div class="stills more" id="more-tours" hidden>${rest.map((g) => t(g, '(max-width:700px) 45vw, 220px')).join('')}</div>` : '',
-    rest.length ? `<button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="more-tours" data-more="Show all ${count} map tours" data-less="Show fewer">Show all ${count} map tours</button>` : '',
+    rest.length ? `<div class="stills more" id="more-tours">${rest.map((g) => t(g, '(max-width:700px) 45vw, 220px')).join('')}</div>` : '',
     '</div></section>',
   ].filter(Boolean).join('\n');
 };
