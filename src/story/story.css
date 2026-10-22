@@ -117,6 +117,8 @@
   .pg-tourmap .story-legend span{margin-left:.35rem}
   .pg-tourmap .story-legend .lg{display:none}.pg-tourmap .story-legend .sh{display:inline}
 }
+/* The "i" also opens terrain height, so it stays when MapLibre has no source credit to show (tiles blocked or failed). */
+.pg-tourmap .maplibregl-ctrl-attrib.maplibregl-attrib-empty{display:block}
 .pg-tourmap .maplibregl-ctrl-attrib-inner{display:none!important} /* the credit line says it */
 /* The floating "Show map" button is for the guide alone: while the tour map is open it only covers the text (owner card 3, 21 Oct 2026). */
 .pg.tour .showmap{display:none}
