@@ -1822,5 +1822,17 @@
   "title": "Madeirense PDO-PT-A0039: EU single document / technical file (PDO, Portuguese, eAmbrosia attachment 11115)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11115",
   "date": "2018-06-08"
+ },
+ "chablis-doc": {
+  "kind": "official",
+  "title": "Chablis PDO-FR-A0736: EU single document / technical file (PDO, French, eAmbrosia attachment 10322)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10322",
+  "date": "2026-03-02"
+ },
+ "pauillac-doc": {
+  "kind": "official",
+  "title": "Pauillac PDO-FR-A0713: EU single document / technical file (PDO, French, eAmbrosia attachment 11335)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11335",
+  "date": "2019-11-29"
  }
 }
