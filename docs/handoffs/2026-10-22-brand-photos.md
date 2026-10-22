@@ -66,3 +66,6 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
 - Version 3 (owner: "the mosaic in the bottom half of the map"): home hero options. A splits the map column (map top 55%, 3 prints below on white);
   B lays 3 prints in a white frame over the map's lower half, replacing the Rioja card. Builder 94K more tokens [V]. Weak spots [V]: the prints are tall crops
   of wide landscapes, and A's screenshot-crop map loses the Rioja outline (a real build would recentre the map).
+- Version 4, owner picked B (22 Oct 2026) [O]: "B, however can we make the photos slightly less high". Three 4:3 prints (rioja-c18, priorat-c14,
+  priorat-1) in a white frame over the map's lower part, credit line inside the frame; option A removed. Builder total for this mock thread ~98K [V].
+- Build notes for the slice: the map's own credit still names the Rioja card photos, which B hides; update that credit. The phone prints are small (~110 px each) [A].
