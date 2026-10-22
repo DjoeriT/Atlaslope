@@ -13,6 +13,7 @@ so `headless.py --sheets <group> <run> <id>` can fill it.
 """
 import json
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -25,6 +26,33 @@ STUB = {"why": {"text": "", "cite": []}, "grapes": {"main": [], "cite": [], "oth
         "styles": {"kinds": [], "text": "", "cite": []}, "climate": {"text": "", "cite": []}, "soil": {"text": "", "cite": []},
         "altitude": {"text": "", "cite": []}, "tastes": {"text": "", "cite": []}, "famous": {"styles": [], "cite": []},
         "producers": {"items": [], "cite": []}}
+
+
+ART = re.compile(r"^\s*art(icolo|\.)\s*(\d+)\b", re.I)
+TAIL = re.compile(r"^\s*allegato\b", re.I)
+
+
+def trim(text: str, art3=60, tail=40) -> str:
+    """Cuts what the guide does not need and every step would re-read (Tuscany batch, 22 Oct 2026: Chianti's 146 KB extract
+    cost 1.7M tokens, past the 1.5x guard): article 3 after its first lines (long boundary descriptions; the outline is built
+    elsewhere), and whatever follows the main text (annexes, a second rulebook) after its first lines. Page markers stay, so
+    "p<n>" cites still match the PDF; each cut leaves a note the writer and checker see."""
+    lines = text.split("\n")
+    keep = lambda chunk, n, what: chunk[:n] + [m for m in chunk[n:] if m.startswith("=== PAGE")] + \
+        ([f"[{len(chunk) - n} lines of {what} cut by it_wset.py; see the rulebook]"] if len(chunk) > n else [])
+    heads = [(i, int(m[2])) for i, l in enumerate(lines) if (m := ART.match(l))]
+    a3 = next((i for i, n in heads if n == 3), None)
+    a4 = next((i for i, n in heads if n == 4 and a3 is not None and i > a3), None)
+    if a3 is not None and a4 is not None and a4 - a3 > art3:
+        lines = lines[:a3] + keep(lines[a3:a4], art3, "article 3 (zone boundaries)") + lines[a4:]
+        heads = [(i, int(m[2])) for i, l in enumerate(lines) if (m := ART.match(l))]
+    last = max((n for _, n in heads), default=0)
+    end_main = next((i for i, n in heads if n == last), None)
+    after = next((i for i, l in enumerate(lines) if end_main is not None and i > end_main and
+                  (TAIL.match(l) or (ART.match(l) and int(ART.match(l)[2]) == 1))), None)
+    if after is not None:
+        lines = lines[:after] + keep(lines[after:], tail, "annexes after the main text")
+    return "\n".join(lines)
 
 
 def dump(path: Path, doc) -> None:
@@ -45,6 +73,8 @@ def sources(places: list) -> None:
         gp.mkdir(parents=True, exist_ok=True)
         subprocess.run([sys.executable, str(ROOT / "Tools/guides/extract.py"), str(txt), str(gp / f"{p['id']}.extract.txt")],
                        check=True, capture_output=True)
+        ex = gp / f"{p['id']}.extract.txt"
+        ex.write_text(trim(ex.read_text(encoding="utf-8")), encoding="utf-8")
         manifests.setdefault(gp, {})[f"{p['id']}-disc"] = str(txt.relative_to(ROOT))
     for gp, m in manifests.items():
         mp = gp / "manifest.json"

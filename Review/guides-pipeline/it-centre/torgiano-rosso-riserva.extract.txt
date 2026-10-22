@@ -425,50 +425,5 @@ Lacrima N.
 Maceratino B.
 Maiolica N.
 Malbech N.
-Malvasia bianca di Candia B.
-Malvasia bianca lunga B.
-Malvasia del Lazio B.
-Malvasia N.
-Mammolo N.
-Manzoni bianco B.
-
 === PAGE 10 ===
-Merlot N.
-Montepulciano N.
-Montonico bianco B.
-Moscato bianco B.
-Mostosa B.
-Muller Thurgau B.
-Nero d'Avola N.
-Passerina B.
-Pecorino B.
-Pinot bianco B.
-Pinot grigio G.
-Pinot nero N.
-Primitivo N.
-Prugnolo gentile N.
-Rebo N.
-Refosco dal peduncolo rosso N.
-Riesling italico B.
-Riesling B.
-Sagrantino N.
-Sangiovese N.
-Sauvignon B.
-Semillon B.
-Syrah N.
-Sylvaner verde B.
-Tocai friulano B.
-Traminer aromatico RS.
-Trebbiano giallo B.
-Trebbiano spoletino B.
-Trebbiano toscano B.
-Verdello B.
-Verdicchio B.
-Vernaccia di San Gimignano B.
-Vernaccia nera N.
-Vermentino B.
-Viogner B.
-Petit Verdot N.
-Tannat N.
-Teroldego N.
-Grero N.
+[48 lines of annexes after the main text cut by it_wset.py; see the rulebook]

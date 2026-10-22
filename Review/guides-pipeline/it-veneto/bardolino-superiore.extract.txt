@@ -108,21 +108,7 @@ specificazione aggiuntiva "classico", comprende in tutto o in parte, i comuni di
 Lazise, Affi, Costermano, Cavaion. Tale zona e' cosi' delimitata: a nord dal confine comunale dal
 comune di Garda, fino a Val Tesina toccando quota 153 in prossimita' di Monte Berti. Segue l'ex
 confine di Castione lungo il monte Carpene a quota 277 a nord di localita' Tavernole, sino a
-toccare localita' Baia; risale per breve tratto la strada comunale che da detta localita' porta alla
-strada provinciale incrociandola a quota 234. Da questo punto ha inizio il limite est. La linea di
-confine discende lungo la strada prima detta e il terrapieno della ferrovia Affi-Caprino fino ai piedi
-del monte Moscal (quota 200). Continua poi a discendere, per un breve tratto con la detta ferrovia,
-poi con il torrente Tasso (o Ri); fino sotto casa Ragano (non lungi da Ponton) dove incontra il
-confine tra Rivoli e Cavaion. Lascia poi subito questo confine, sale a monte Pincio e sempre per
-linea di cresta incontra Ca' del Biso (quota 181) e, subito dopo il confine tra Pastrengo e Cavaion,
-presso casa Faino. Segue allora questo confine e in seguito quello tra Pastrengo-Bardolino e quello
-che il comune di Lazise ha in comune con Pastrengo; Bussolengo e Castelnuovo fin sotto quota
-121, presso Sarnighe. Abbandonato qui il confine comunale, tocca Sarnighe, quota 113 e 118,
-correndo lungo una carrareccia, fino a casa alle Croci alle porte di Cola'. Per altra carrareccia
-discende alla localita' Le Tende e prosegue a quota fino a incontrare le strada comunale di
-Pacengo a case Fontanafredda. Segue breve tratto questa strada, poi la carrareccia che, toccando
-quota 107, passa sotto il paese di Pacengo e giunge al lago subito sotto il porto.
-
+[15 lines of article 3 (zone boundaries) cut by it_wset.py; see the rulebook]
   Articolo 4
 
 Le condizioni ambientali e di coltura dei vigneti destinati alla produzione dei vini a denominazione

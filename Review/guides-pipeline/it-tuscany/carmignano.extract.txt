@@ -341,20 +341,4 @@ Vitigni complementari idonei alla produzione del vino a DOCG Carmignano
 32. Montepulciano N.
 33. Petit Verdot N.
 34. Pinot Nero N.
-35. Pollera Nera N.
-36. Prugnolo Gentile N.
-37. Pugnitello
-38. Rebo N.
-39. Refosco dal Peduncolo Rosso N.
-40. Sagrantino N.
-41. Sanforte N.
-42. Schiava Gentile
-43. Syrah N.
-44. Tempranillo N.
-45. Teroldego N.
-46. Vermentino Nero N.
-
-
-
-
-  7
+[18 lines of annexes after the main text cut by it_wset.py; see the rulebook]

@@ -135,42 +135,8 @@ località Mescolino.
 B) La zona di produzione delle uve atte alla produzione del vino della denominazione di origine
 controllata e garantita “Colli di Conegliano” tipologia Torchiato di Fregona, comprende in tutto o in
 parte il territorio dei seguenti comuni:
-Fregona, Sarmede e Cappella Maggiore.
-Tale zona è così delimitata:
-a partire dalla linea di livello a quota 500, che circoscrive il confine a nord, la delimitazione scende
-lungo la demarcazione comunale di Vittorio Veneto e Cappella Maggiore fino a raggiungere la
-strada statale n. 422, si prosegue per breve tratto verso ovest lungo detta statale fino a quota 134, da
-qui si prende lungo la strada per Cordignano e dopo aver oltrepassato Borgo Gobbi a quota 94, si
-prosegue in direzione est lungo la strada per il centro comunale di Cappella Maggiore. Da qui
-prosegue per Borgo Villa, lungo la strada più a nord, che oltrepassa il torrente Carron a quota 115.
-Da Borgo Villa il confine prosegue per C. Amistani, C. Zanatta fino all’incrocio a quota 110 dove
-procede lungo la strada per Sarmede, scende in direzione sud fino a quota 94, dove piega a sinistra
-lungo la strada che passa per quota 90 fino a quota 104 sopra Borgo Palù. Da qui segue il sentiero
-che passa per Madonna di Val fino a quota 286, sotto località Rugoletto, dove piega ad est per quota
-294, C. Salvador dove incontra, nei pressi della Malga Salamina, la curva di livello di quota 500 che
-
-  3
-
 === PAGE 4 ===
-percorre fino a ritornare al punto di partenza.
-
-C) La zona di produzione delle uve atte alla produzione del vino della denominazione di origine
-controllata e garantita “Colli di Conegliano” tipologia Refrontolo, comprende in tutto o in parte il
-territorio dei seguenti comuni:
-Refrontolo, Pieve di Soligo e San Pietro di Feletto.
-Tale zona è così delimitata:
-partendo dalla località Mire a quota 200, in comune di Refrontolo, la delimitazione segue la strada
-comunale per San Pietro di Feletto, dove raggiunto detto centro piega in direzione ovest per la
-strada che attraversa la località C. Bittus fino a incontrare a quota 97 la comunale Parè-Pieve di
-Soligo.
-Da qui segue il confine del comune di Refrontolo prima in direzione sud, quindi ovest e infine nord,
-fino ad incontrare la comunale Refrontolo – Solighetto a levante della località C. dal Col. Segue
-detta strada in direzione di Solighetto e dopo averne oltrepassato il centro piega verso nord lungo la
-strada per Follina.
-Giunti a località Castelletto la delimitazione segue il confine comunale Pieve di Soligo – Follina,
-fino a raggiungere in prossimità del Col Franchin dove si ritrova il confine comunale nord di
-Refrontolo che si segue in direzione est e quindi sud fino a ritornare al punto di partenza.
-
+[36 lines of article 3 (zone boundaries) cut by it_wset.py; see the rulebook]
   Articolo 4
   Norme per la viticoltura
 

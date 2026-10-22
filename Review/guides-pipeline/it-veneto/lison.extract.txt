@@ -105,71 +105,8 @@ il limite di provincia tra Treviso e Pordenone fino alla località Paludei; cont
 di comune fra Pasiano di Pordenone e Pravisdomini fino ad incontrare il fiume Sile. Da questo punto
 la linea di delimitazione prosegue lungo il fiume Sile fino ad incontrare il limite di territorio tra i comuni
 di Chions e Fiume Veneto in prossimità di c. Marcuz; procede verso est seguendo il confine che
-delimita a nord il territorio dei comuni di Chions, Sesto al Reghena, Morsano al Tagliamento fino ad
-incontrare il fiume Tagliamento, che percorre verso sud seguendo il limite di confine del comune di
-Morsano al Tagliamento fino ad incontrare il limite della provincia di Venezia punto di partenza.
-All'interno della zona così delimitata giace la bonifica del Loncon e delle Sette Sorelle che viene
-esclusa e i sui confini sono i seguenti:
-partendo dalla confluenza del canale Fosson con il fiume Loncon la delimitazione procede verso sud
-lungo il fiume Loncon fino al ponte Bragato; continua a nord-est per la strada della Torba (fra la fossa
-della Torba e la fossa Possidenza) fino all'incontro con l'argine destro del fiume Lemene; di qui
-prosegue verso sud seguendo il fiume Lemene fino alla confluenza con il canale Maranghetto in
-prossimità del ponte Maranghetto; segue ad ovest il canale Maranghetto fino alla confluenza con il
-fiume Loncon, e successivamente fino alla sua confluenza con il canale fossa Bigai; continua lungo il
-canale fossa Bigai, passando dall'idrovora della bonifica Piva, fino all'altezza della strada provinciale
-S. Stino di Livenza-Caorle; da questo punto prosegue a nord lungo la strada provinciale S. Stino di
-Livenza-Caorle fino alla strada privata Palamin parallela al canale fossa Contarina di ponente; quindi
-procede a ovest lungo la strada privata Palamin fino all'incrocio con la strada consorziale perimetrale
-della bonifica delle Sette Sorelle; continua lungo la strada suddetta, passando in prossimità della scuola
-Corner, fino ad incontrare in canale Cernetta, e quindi, seguendo la strada parallela di destra al canale
-Cernetta, fino alla strada provinciale S. Stino di Livenza-Caorle che attraversa, per raggiungere e quindi
-seguire l'argine destro del canale Fosson fino alla sua confluenza con il fiume Loncon.
-La zona di Lemene; di qui prosegue verso sud seguendo il fiume Lemene fino alla confluenza del
-canale Maranghetto in prossimità del ponte Maranghetto. ;segue ad ovest il canale Maranghetto fino
-alla confluenza con il fiume Loncon e successivamente fino alla confluenza con il canale Fossa Bigai;
-continua lungo il canale Fossa Bigai passando dall’idrovora della bonifica Piva, fino all’altezza della
-strada provinciale S.Stino di Livenza – Caorle ; da questo punto prosegue a nord lungo la strada
-provinciale S.Stino di Livenza Caorle fino alla strada privata Palamin parallela al canale Fossa
-contarina di Ponente; quindi procede ad ovest lungo la strada privata Plamin fino all’incrocio con la
-strada consorziale perimetrale della bonifica delle Sette Sorelle; continua lungo la strada
-suddetta,passando in prossimità della scuola corner, fino ad incontrare in canale Cernetta e quindi
-seguendo la strada parallela di destra al canale Cernetta, fino alla strada provinciale S.Stino di Livenza
-–Caorle che attraversa , per raggiungere e quindi seguire l’argine destro del canale Fosson fino alla sua
-confluenza con il fiume Loncon.
-
-B) La zona di produzione del vino a denominazione di origine controllata e garantita “Lison” classico
-comprende le seguenti frazioni:
-- Lison, Pradipozzo e Summaga, in comune di Portogruaro;
-- Belfiore, Blessaglia e Salvarolo, in comune di Pramaggiore;
-- Carline e Loncon, in comune di Annone Veneto, e parte del territorio amministrativo dei comuni di
-S. Stino di Livenza e Cinto Caomaggiore.
-Tale zona di produzione delle uve, corrispondente a quella già descritta all'articolo 7 del disciplinare
-di produzione del "Tocai di Lison", annesso al D.P.R. del 4 agosto 1971, è così delimitata: partendo
-dalla località "Noiare" la linea di delimitazione segue verso sud-ovest la strada comunale che si
-congiunge con la strada statale n. 14 in località Osteria del Trovatore; continua lungo la strada statale
-n. 14 sino al ponte all'altezza del Km. 59; prosegue verso sud lungo il limite di territorio tra i comuni
-di Concordia Sagittaria e Portogruaro, fino all'incontro con il canale Taù; segue il canale Taù per
-raggiungere il fiume Loncon in prossimità dell'idrovora dell'Agazzi; continua a nord-ovest verso il
-fiume Loncon fino alla confluenza con il canale Fosson. Da questo punto la delimitazione risale prima
-il canale Fosson e poi il rio Fosson fino alla confluenza con il canale Melonetto, che segue fino ad
-
 === PAGE 4 ===
-incontrare la strada provinciale Annone Veneto-Belfiore; prosegue, verso nord, lungo la citata strada
-provinciale fino alla località Le Quattro Strade; quindi continua lungo la
-strada comunale che in località Boschetto qui la linea di delimitazione segue, verso nord, il limite di
-comune tra Annone Veneto e Pramaggiore per incontrare il limite di provincia tra Venezia e Pordenone
-sul canale Scolo Stucciàt, segue, prima verso nord poi a sud, detto limite di provincia, fino alla strada
-comunale la Stradatta che percorre, verso sud, fino all'incrocio con la strada provinciale Pramaggiore-
-Chions e continua verso Pramaggiore, lungo detta strada provinciale raggiungendo l'incrocio con il
-viale Europa; segue il viale Europa fino alla strada comunale via Bassa, che percorre fino all'incrocio
-con la strada provinciale Cinto Caomaggiore-Blessaglia; attraversata la suddetta strada provinciale
-prosegue lungo via Comugne fino all'incrocio con la strada comunale del Martignon segue la strada
-del Martignon per raggiungere l'incrocio con la strada comunale di Mazzalogo che percorre fino alla
-via Zamper, in località S. Biagio di Cinto Caomaggiore; volge quindi a sud lungo la strada comunale
-fino all'incrocio con la strada statale n. 53 che segue per breve tratto fino al bivio con la strada per S.
-Giusto. Da questo punto lungo la strada per S. Giusto, in località "Noiare", raggiunge il punto di
-partenza della delimitazione.
-
+[65 lines of article 3 (zone boundaries) cut by it_wset.py; see the rulebook]
   Articolo 4
   Norme per la viticoltura
 

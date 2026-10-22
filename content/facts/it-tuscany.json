@@ -145,6 +145,603 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "chianti",
+   "why": {
+    "text": "Hills near the Apennines with varied sandstone, marl, clay and sand soils, a humid to sub-humid climate with dry summers, and Sangiovese as the base grape.",
+    "cite": [
+     "chianti-disc:p35",
+     "chianti-disc:p1"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "chianti-disc:p1",
+     "chianti-disc:p2"
+    ],
+    "others": [
+     "Abrusco",
+     "Albana",
+     "Albarola",
+     "Aleatico",
+     "Alicante Bouschet",
+     "Alicante",
+     "Ancellotta",
+     "Ansonica",
+     "Barbera",
+     "Barsaglina",
+     "Biancone",
+     "Bonamico",
+     "Bracciola Nera",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Calabrese",
+     "Caloria",
+     "Canaiolo Bianco",
+     "Canaiolo Nero",
+     "Canina Nera",
+     "Carignano",
+     "Carmenere",
+     "Cesanese d'Affile",
+     "Chardonnay",
+     "Ciliegiolo",
+     "Clairette",
+     "Colombana Nera",
+     "Colorino",
+     "Durella",
+     "Fiano",
+     "Foglia Tonda",
+     "Gamay",
+     "Grechetto",
+     "Greco",
+     "Groppello di Santo Stefano",
+     "Groppello Gentile",
+     "Incrocio Bruni 54",
+     "Lambrusco Maestri",
+     "Livornese Bianca",
+     "Malbech",
+     "Malvasia Bianca di Candia",
+     "Malvasia Bianca Lunga",
+     "Malvasia Istriana",
+     "Malvasia",
+     "Malvasia Nera di Brindisi",
+     "Malvasia Nera di Lecce",
+     "Mammolo",
+     "Manzoni Bianco",
+     "Marsanne",
+     "Mazzese",
+     "Merlot",
+     "Mondeuse",
+     "Montepulciano",
+     "Moscato Bianco",
+     "Muller Thurgau",
+     "Orpicchio",
+     "Petit Manseng",
+     "Petit Verdot",
+     "Pinot Bianco",
+     "Pinot Grigio",
+     "Pinot Nero",
+     "Pollera Nera",
+     "Prugnolo Gentile",
+     "Pugnitello",
+     "Rebo",
+     "Refosco dal Peduncolo Rosso",
+     "Riesling Italico",
+     "Riesling Renano",
+     "Roussanne",
+     "Sagrantino",
+     "Sanforte",
+     "Sauvignon",
+     "Schiava Gentile",
+     "Semillon",
+     "Syrah",
+     "Tempranillo",
+     "Teroldego",
+     "Traminer Aromatico",
+     "Trebbiano Toscano",
+     "Verdea",
+     "Verdello",
+     "Verdicchio Bianco",
+     "Vermentino",
+     "Vermentino Nero",
+     "Vernaccia di San Gimignano",
+     "Viognier"
+    ],
+    "othersCite": [
+     "chianti-disc:p38",
+     "chianti-disc:p39",
+     "chianti-disc:p40"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine, in Chianti, Chianti Superiore and Riserva versions, plus seven named subzones.",
+    "cite": [
+     "chianti-disc:p1",
+     "chianti-disc:p33"
+    ]
+   },
+   "climate": {
+    "text": "Inland Tuscan hill climate, humid to sub-humid with a dry summer. Average rainfall is 867 mm a year, wettest in November (121 mm) and driest in July (32 mm). August averages over 23 °C, January about 5 °C.",
+    "cite": [
+     "chianti-disc:p35",
+     "chianti-disc:p36"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: sandstone, calcareous marl, clay schist and sand, sometimes mixed or leaning sandy or clayey, even within one estate.",
+    "cite": [
+     "chianti-disc:p35"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Bright ruby turning garnet with age. Intense nose, sometimes violet. Dry, savoury, lightly tannic, softening to velvet. Riserva adds woodland berries and firmer tannin.",
+    "cite": [
+     "chianti-disc:p33"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Chianti Superiore",
+      "text": "Higher minimum alcohol (12%) and lower yield; sold from 1 September after harvest."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged at least 2 years, counted from 1 January after the harvest."
+     },
+     {
+      "name": "Governo all'uso Toscano",
+      "text": "Slow second fermentation of new wine with slightly dried grapes."
+     },
+     {
+      "name": "Chianti Rufina",
+      "text": "Subzone with at least 4,500 vines per hectare; 6 months in wood for Riserva."
+     }
+    ],
+    "cite": [
+     "chianti-disc:p32",
+     "chianti-disc:p31",
+     "chianti-disc:p29",
+     "chianti-disc:p33"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bolgheri",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "brunello-di-montalcino",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vino-nobile-di-montepulciano",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "carmignano",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "elba-aleatico-passito",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "montecucco-sangiovese",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "morellino-di-scansano",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "suvereto",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "val-di-cornia-rosso",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vernaccia-di-san-gimignano",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
   }
  ]
 }
