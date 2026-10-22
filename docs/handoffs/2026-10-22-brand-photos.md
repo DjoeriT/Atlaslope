@@ -28,3 +28,9 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
 ## Open (owner)
 - Does the dark gallery hold, and with it the reopening of "NO dark mode", the white page and Newsreader (see the r1 handoff)?
 - Swap any of the picks on the contact sheet.
+
+## Dark gallery mock (step 2)
+- Artifact https://claude.ai/artifact/LrCpmUUrEyQ18e5QKCBzX9; source `mocks/brand-dark-gallery/` in the main folder (git-ignored: `build.py`,
+  `template.html`, `img/`, `shots/`). One Sonnet builder, 60K tokens [V]. LeadBot looked at the 1440 shot [V]; the 400 shot was checked by the builder only.
+- Weak spots: rioja-c18 and the Getaria aerial each appear twice; the Priorat card lines and the featured captions are builder wording,
+  not checked against the guides; the map panel is an empty stand-in.
