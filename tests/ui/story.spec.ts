@@ -51,12 +51,23 @@ test('opening the map keeps the guide beside it; scrolling to the soils makes th
   await expect(mapCol(page)).toBeVisible();
   // Opening from the band leaves the reader where the band was, so the step is the chapter in view; at the lede it is the opening view.
   await page.locator('.pg').evaluate((el) => { el.scrollTop = 0; });
-  await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
+  // The map mode opens on beat 1's first stop (no page hero, so no cover step), with its own band: no site nav, no search, no jump bar.
+  await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
+  await expect(page.locator('.pg-top .story-brand')).toHaveText('AtlaSlope');
+  await expect(page.locator('.pg-top').getByRole('link', { name: 'Back to Rioja' })).toBeVisible();
+  await expect(page.locator('.pg-top nav, .pg-top input, .pg-hero, .pg-jump')).toHaveCount(0);
+  await expect(page.locator('.story-where')).toHaveText('Chapter 1 of 4');
+  await expect(page.locator('.story-chip')).toHaveText('Haro to Alfaro, the whole valley');
+  await expect(page.locator('.story-loc')).toBeVisible();
+  // The terrain height toggle states its choice in the credit line.
+  await expect(page.getByRole('button', { name: '×1.5' })).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: '×1.3' }).click();
+  await expect(page.locator('.pg-tourmap .story-credit')).toContainText('×1.3');
   await expect(page.locator('.pg-climate')).toBeVisible(); // the guide's own charts stay
   await expect(page.locator('#taste')).toBeAttached();
   await scrollToLine(page, '[data-fly="soils.0"]');
   await expect(mapCol(page)).toHaveAttribute('data-step', 'soils');
-  await expect(page.locator('.pg-tourcap')).toContainText('Stop 7 of 9');
+  await expect(page.locator('.story-where')).toHaveText('Chapter 3 of 4');
   await expect(page.locator('.pg-tourmap .story-credit')).toContainText('Source: IGME, MAGNA 50');
 });
 
@@ -126,7 +137,7 @@ test('the map column comes after the guide in reading order', async ({ page }) =
 // Every stop comes up by scrolling, in reading order (F1, review 21 Oct 2026). Each anchor is placed just above the reading line, as a reader's scroll would.
 // [step, anchor, place in its row]: links sharing a row are held 120 px apart in reading order (holdSteps), so the k-th is placed k x 120 px above the line.
 const ORDER: Array<[string, string, number]> = [
-  ['intro', '.pg-spine', 0], ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
+  ['valley', '[data-fly="valley.0"]', 0], ['sierra', '[data-fly="valley.1"]', 1], ['climate', '#terroir-climate', 0],
   ['z-rioja-alta', '[data-fly="climate.0"]', 0], ['z-rioja-alavesa', '[data-fly="climate.1"]', 1], ['z-rioja-oriental', '[data-fly="climate.2"]', 2],
   ['soils', '[data-fly="soils.0"]', 0], ['barrel', '#terroir-barrel', 0], ['haro', '[data-fly="barrel.0"]', 0],
 ];
@@ -135,12 +146,12 @@ for (const [name, size] of [['1440', { width: 1440, height: 900 }], ['390', { wi
     await page.setViewportSize(size);
     await open(page, '#place=rioja&page&story');
     // The map chunk loads lazily and its empty placeholder has no data-step: scroll only once the real column (step 1) is mounted.
-    await expect(mapCol(page)).toHaveAttribute('data-step', 'intro');
+    await expect(mapCol(page)).toHaveAttribute('data-step', 'valley');
     for (const [id, anchor, rank] of ORDER) {
       await scrollToLine(page, anchor, rank);
       await expect(mapCol(page)).toHaveAttribute('data-step', id);
     }
-    await expect(page.locator('.pg-tourcap')).toContainText('Stop 9 of 9');
+    await expect(page.locator('.story-chip')).toHaveText("Haro's station quarter");
   });
 }
 

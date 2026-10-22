@@ -115,6 +115,11 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
     return () => { iBtn?.removeEventListener('click', toggleCredit); ro.disconnect(); m.remove(); smap.current = null; };
   }, [story]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // The names file arrives after the map is made: the stop on show gets its town and range markers then (the stop is not redrawn otherwise).
+  useEffect(() => {
+    if (Object.keys(named).length) smap.current?.show(views[shownStep.current], true);
+  }, [named]); // eslint-disable-line react-hooks/exhaustive-deps
+
   // Scrolling: the step whose anchor (its fly link, or its chapter for an overview) is nearest above the reading line (under the bar on a laptop, under the map strip on a phone) is on show.
   useEffect(() => {
     const page = wrap.current?.closest<HTMLElement>('.pg');
