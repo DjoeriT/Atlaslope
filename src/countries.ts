@@ -10,8 +10,8 @@ export interface CountryConfig {
   code: string;
   /** Where the map opens for the country card. */
   bounds: Bounds;
-  /** The close-in photo: Spain's PNOA over Esri, or Esri alone. Portugal stays on Esri until DGT OrtoSat passes a speed test (#50). */
-  imagery: 'pnoa' | 'esri';
+  /** The close-in photo over Esri (Spain's PNOA, France's IGN BD ORTHO; src/map/imagery.ts), or Esri alone. Portugal stays on Esri until DGT OrtoSat passes a speed test (#50). */
+  imagery: 'pnoa' | 'ign-fr' | 'esri';
   /** Its place pages are real files at /<code>/<place>/ (#48). */
   paths: boolean;
 }
@@ -20,8 +20,8 @@ export const COUNTRIES: Record<string, CountryConfig> = {
   spain: { id: 'spain', code: 'es', bounds: [[-9.4, 35.9], [3.4, 43.9]], imagery: 'pnoa', paths: false },
   // The mainland; Madeira and the Azores come after it.
   portugal: { id: 'portugal', code: 'pt', bounds: [[-9.6, 36.9], [-6.1, 42.2]], imagery: 'esri', paths: true },
-  // The mainland. Imagery stays Esri until the France mask exists (Tools/data/build_masks.py), which IGN BD ORTHO needs (#149).
-  france: { id: 'france', code: 'fr', bounds: [[-5.2, 42.3], [8.3, 51.1]], imagery: 'esri', paths: true },
+  // The mainland. IGN BD ORTHO inside France, cut to data/countries/fr/mask.json, Esri around it (#149).
+  france: { id: 'france', code: 'fr', bounds: [[-5.2, 42.3], [8.3, 51.1]], imagery: 'ign-fr', paths: true },
 };
 
 export const DEFAULT_COUNTRY = 'spain';
