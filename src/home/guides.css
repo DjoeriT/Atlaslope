@@ -77,3 +77,5 @@ body:has(#tours:checked) :is(.ecard,.also a):not([data-tour]),body:has(#tours:ch
   .rowh h2{font-size:1.4rem}
 }
 @media (prefers-reduced-motion:reduce){html:has(.band){scroll-behavior:auto}.stills.feat{scroll-behavior:auto}}
+/* Browsers without :has() cannot run the tour filter: hide the checkbox rather than show one that does nothing (ReviewBot, Guides E). */
+@supports not selector(:has(*)) { .tourtoggle { display: none; } }

@@ -205,3 +205,13 @@ describe('the Guides page markers', () => {
     expect(() => fillGuideList('<main></main>', guideRows())).toThrow(/markers are missing/);
   });
 });
+
+describe('the 404 page', () => {
+  it('ships a 404 page with the band, the one line and links Home, Atlas, Guides (QA S1)', () => {
+    const nf = readFileSync('public/404.html', 'utf8');
+    expect(nf).toContain('noindex');
+    expect(nf).toContain("This page isn't here.");
+    for (const href of ['./', 'atlas/', 'guides/']) expect(nf).toContain(`<a href="${href}">`);
+    expect(nf).toContain('class="sitebar"');
+  });
+});
