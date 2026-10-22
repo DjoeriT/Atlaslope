@@ -61,7 +61,7 @@
 .pg-figs{display:grid;gap:1.2rem;margin-bottom:1.8rem}
 .pg-figs.two{grid-template-columns:1fr 1fr}
 .pg-fig{margin:0}
-.pg-fig img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--rad-card)}
+.pg-fig img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--rad-card);max-width:33rem}
 .pg-fig figcaption{display:block;margin-top:.7rem}
 .pg-fig figcaption > span{display:block}
 .pg-fig .cap-t{font:500 1.08rem/1.25 var(--serif)}

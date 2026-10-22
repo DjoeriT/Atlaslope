@@ -115,7 +115,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);
   // With the map open, a fly link flies the tour's map instead of leaving for the atlas.
   const [flyAsk, setFlyAsk] = useState<FlyAsk>();
-  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to "Open the map" on hide. A pending fly is dropped on hide.
+  // Focus follows the map: to its Hide map control on open (done in GuideMap), back to the "Read with the map" card on hide. A pending fly is dropped on hide.
   const hadTour = useRef(tour);
   useEffect(() => {
     if (hadTour.current && !tour) document.querySelector<HTMLElement>('.mapcard')?.focus({ preventScroll: true });
