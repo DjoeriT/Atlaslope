@@ -280,6 +280,21 @@
     "sancerre-doc:p6",
     "sancerre-doc:p8"
    ]
+  },
+  "fr-rhone": {
+   "title": "Granite in the north, pebbles in the south",
+   "lede": "Hermitage is a granite hill facing the sun. Châteauneuf-du-Pape's pebbles store the day's heat.",
+   "from": [
+    "hermitage",
+    "chateauneuf-du-pape"
+   ],
+   "cite": [
+    "hermitage-doc:p6",
+    "hermitage-doc:p7",
+    "hermitage-doc:p9",
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p9"
+   ]
   }
  },
  "places": {
@@ -1585,6 +1600,114 @@
     "cremant-de-loire-doc:p8",
     "cremant-de-loire-doc:p9",
     "cremant-de-loire-doc:p10"
+   ]
+  },
+  "cotes-du-rhone": {
+   "title": "Terraces, heat and the Mistral",
+   "cite": [
+    "cotes-du-rhone-doc:p9",
+    "cotes-du-rhone-doc:p11",
+    "cotes-du-rhone-doc:p12"
+   ]
+  },
+  "cotes-du-rhone-villages": {
+   "title": "Varied terraces, mostly Grenache",
+   "cite": [
+    "cotes-du-rhone-villages-doc:p8",
+    "cotes-du-rhone-villages-doc:p10"
+   ]
+  },
+  "cote-rotie": {
+   "title": "Steep gneiss and mica-schist terraces",
+   "cite": [
+    "cote-rotie-doc:p6",
+    "cote-rotie-doc:p8",
+    "cote-rotie-doc:p9"
+   ]
+  },
+  "condrieu": {
+   "title": "Granite terraces at Viognier's limit",
+   "cite": [
+    "condrieu-doc:p4",
+    "condrieu-doc:p6"
+   ]
+  },
+  "saint-joseph": {
+   "title": "Granite terraces on the right bank",
+   "cite": [
+    "saint-joseph-doc:p5",
+    "saint-joseph-doc:p6",
+    "saint-joseph-doc:p7",
+    "saint-joseph-doc:p10"
+   ]
+  },
+  "hermitage": {
+   "title": "A sun-facing granite hill",
+   "cite": [
+    "hermitage-doc:p6",
+    "hermitage-doc:p7",
+    "hermitage-doc:p9"
+   ]
+  },
+  "crozes-hermitage": {
+   "title": "Granite and Alpine gravel terraces",
+   "cite": [
+    "crozes-hermitage-doc:p6",
+    "crozes-hermitage-doc:p7",
+    "crozes-hermitage-doc:p8"
+   ]
+  },
+  "cornas": {
+   "title": "A warm granite amphitheatre",
+   "cite": [
+    "cornas-doc:p5",
+    "cornas-doc:p8"
+   ]
+  },
+  "chateauneuf-du-pape": {
+   "title": "Pebbles that store the day's heat",
+   "cite": [
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p9"
+   ]
+  },
+  "gigondas": {
+   "title": "Molasse slopes below the Dentelles",
+   "cite": [
+    "gigondas-doc:p6",
+    "gigondas-doc:p7",
+    "gigondas-doc:p9"
+   ]
+  },
+  "vacqueyras": {
+   "title": "Stony terraces of the Ouvèze",
+   "cite": [
+    "vacqueyras-doc:p8",
+    "vacqueyras-doc:p9",
+    "vacqueyras-doc:p10"
+   ]
+  },
+  "lirac": {
+   "title": "Red clay and rolled pebbles",
+   "cite": [
+    "lirac-doc:p6",
+    "lirac-doc:p8"
+   ]
+  },
+  "tavel": {
+   "title": "Heat and wind that force rosé",
+   "cite": [
+    "tavel-doc:p6",
+    "tavel-doc:p7",
+    "tavel-doc:p9"
+   ]
+  },
+  "muscat-de-beaumes-de-venise": {
+   "title": "Sheltered terraces that concentrate sugar",
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p6",
+    "muscat-de-beaumes-de-venise-doc:p7",
+    "muscat-de-beaumes-de-venise-doc:p8"
    ]
   }
  }

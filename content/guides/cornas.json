@@ -1,0 +1,115 @@
+{
+ "id": "cornas",
+ "title": "Why Cornas tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Cornas is a warm, sheltered amphitheatre, mostly granite, on the right bank of the Rhône. Its identity rests on its unity: a single commune and a single grape.",
+  "cite": [
+   "cornas-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "An amphitheatre on the Rhône's right bank",
+   "paras": [
+    "The vineyard lies on the right bank of the Rhône, facing the city of Valence. It is squeezed between the neighbouring appellations of Saint-Péray and Saint-Joseph.",
+    "The whole appellation sits in one commune, Cornas, in the Ardèche. Within the northern Côtes du Rhône, it is the most southerly appellation for red wine.",
+    "The land is wide open to the south and well protected from the north by the massif des Arlettes."
+   ],
+   "cite": [
+    "cornas-doc:p4",
+    "cornas-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Cornas amphitheatre",
+     "point": [
+      4.845,
+      44.966
+     ],
+     "zoom": 11,
+     "caption": "The vineyard sits on the right bank of the Rhône, open to the south and sheltered from the north.",
+     "cite": [
+      "cornas-doc:p5"
+     ]
+    },
+    {
+     "label": "Hermitage, 12 km north",
+     "point": [
+      4.84,
+      45.068
+     ],
+     "zoom": 10,
+     "caption": "The Hermitage vineyard lies 12 km north of Cornas. Locally, Syrah is called \"Plant de l'Ermitage\", which makes it an emblem of this land.",
+     "cite": [
+      "cornas-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "burnt-earth",
+   "beat": "weather",
+   "title": "Burnt earth",
+   "paras": [
+    "The climate is a temperate \"Lyonnais\" type, strongly shaped by the south-facing exposure and by relief that shelters the vines from the north wind.",
+    "In Celtic, \"Cornas\" means \"burnt earth\", and the mesoclimate may be the root of the name. The mild conditions bring early ripeness.",
+    "Although Cornas lies only 12 km south of Hermitage, harvest often begins a week earlier."
+   ],
+   "cite": [
+    "cornas-doc:p5",
+    "cornas-doc:p8"
+   ]
+  },
+  {
+   "id": "granite-terraces",
+   "beat": "ground",
+   "title": "Granite held up by dry-stone walls",
+   "paras": [
+    "Most of the vineyard stands on soils weathered from granite, the Tournon porphyritic granites. In the north, the massif des Arlettes is compact limestone from the Secondary era, and it forms the border with Saint-Joseph. Its southern slope shed scree, notably at Pied-la-Vigne. This scree covers only a tiny part of the area.",
+    "The slopes are steep. To hold the granite sand in place, vines grow on small terraces, separated by walls traditionally built of dry stone. The growers still maintain them.",
+    "At the foot of the slopes the soils are more alluvial, and the plots are larger. More recently, vines have spread onto the hills above 250 m."
+   ],
+   "cite": [
+    "cornas-doc:p5",
+    "cornas-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Pied-la-Vigne and the Arlettes",
+     "point": [
+      4.85,
+      44.975
+     ],
+     "zoom": 11,
+     "caption": "The limestone massif des Arlettes marks the northern edge, and its scree reaches Pied-la-Vigne.",
+     "cite": [
+      "cornas-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "only-syrah",
+   "beat": "rules",
+   "title": "One commune, one grape, one colour",
+   "paras": [
+    "Cornas makes still red wine only. It is the one appellation of the northern Côtes du Rhône where the wine is made entirely from Syrah.",
+    "Syrah is also called \"Plant de l'Ermitage\" locally. Pickers harvest by hand, and the bunches travel whole to the winery. The wine must reach at least 10.5% natural alcohol, and the yield is set at 40 hl/ha.",
+    "The label may name a smaller place, if it is a registered lieu-dit (a named plot). It may also add the wider name \"Cru des Côtes du Rhône\".",
+    "For their structure, the wines are often called \"virile\". As early as 1819, a sommelier's manual found them rich in colour, with plenty of body and a velvety feel.",
+    "In 2009 the vineyard covered about 115 hectares, with an average of 3600 hl a year."
+   ],
+   "cite": [
+    "cornas-doc:p2",
+    "cornas-doc:p3",
+    "cornas-doc:p4",
+    "cornas-doc:p7",
+    "cornas-doc:p8",
+    "cornas-doc:p10"
+   ]
+  }
+ ]
+}

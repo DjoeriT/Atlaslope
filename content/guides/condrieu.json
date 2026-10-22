@@ -1,0 +1,127 @@
+{
+ "id": "condrieu",
+ "title": "Why Condrieu tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Viognier grows here at the northern limit of its range, on the best-exposed steep slopes, sheltered from cold north winds. These sites give it optimal conditions to grow and ripen.",
+  "cite": [
+   "condrieu-doc:p6",
+   "condrieu-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Steep slopes above the Rhône",
+   "paras": [
+    "The vineyard lies about 40 km south of Lyon, on the eastern edge of the Massif Central. It sits between Côte Rôtie to the north and Saint-Joseph to the south.",
+    "Steep hillsides rise abruptly above the right bank of the Rhône. Seven communes share the appellation. Five of them are in the Loire département, with Condrieu itself in the Rhône and Limony in the Ardèche.",
+    "The town of Condrieu takes its name from \"coin du ruisseau\", the corner of a stream. It sits on an angle of land where one river runs into another."
+   ],
+   "cite": [
+    "condrieu-doc:p3",
+    "condrieu-doc:p4",
+    "condrieu-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Condrieu on the Rhône",
+     "point": [
+      4.7695,
+      45.4655
+     ],
+     "zoom": 10.5,
+     "caption": "A small river town at the crossroads of three départements.",
+     "cite": [
+      "condrieu-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "beat": "weather",
+   "title": "A cold, dry north wind",
+   "paras": [
+    "The area has a favourable mesoclimate, called \"lyonnais\" after nearby Lyon. It is linked to the very steep slopes above the river.",
+    "The most frequent wind comes from the north and is locally called the Bise. It is cold and dry. It dries the leaves and limits fungal disease.",
+    "Because of the wind, the vines need relatively sheltered and sunny spots. The slopes face mainly south and south-east, which offers them."
+   ],
+   "cite": [
+    "condrieu-doc:p4",
+    "condrieu-doc:p6"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Poor granite soil held up by walls",
+   "paras": [
+    "Most soils come from weathered primary rocks, mainly granite. They are sandy-clay, poor and crumbly. A few very local lenses of wind-blown glacial loess also exist.",
+    "In most places the steep slope and the fragile, unstable soil need major works. The vines, trained on stakes, grow on narrow terraces locally called \"chaillées\". Small walls called \"cheys\" hold the soil.",
+    "The cracked subsoil lets Viognier draw the water and minerals it needs, and the grape is particularly suited to acid soils. The harvests are notable for balance and richness in sugar, even this far north. The same subsoil gives the dry and off-dry wines a lively freshness."
+   ],
+   "cite": [
+    "condrieu-doc:p4",
+    "condrieu-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Terraced hillsides",
+     "point": [
+      4.74,
+      45.45
+     ],
+     "zoom": 11,
+     "caption": "Steep hillsides above the right bank of the Rhône, with narrow terraces held by small walls.",
+     "cite": [
+      "condrieu-doc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "viognier",
+   "beat": "rules",
+   "title": "Only Viognier, only white",
+   "paras": [
+    "Condrieu is made from one grape, Viognier. The wine is always still and white.",
+    "In 2010 it was mostly dry and sometimes off-dry. When natural conditions allow, a tiny amount of sweet wine is made from overripe grapes. A wine with 45 g/l of sugar or more may not be enriched or acidified, and it must reach at least 13% total alcohol.",
+    "A wine not dry enough to be called \"sec\" must say demi-sec, moelleux or doux on the label. That word sits in the same field of view as the appellation name.",
+    "Viognier ripens fairly late and gives an irregular crop, yet it can reach high sugar levels naturally. In 1965 only about 8 hectares were left in the region and in the world. By 2010 the vineyard had more than 140 hectares.",
+    "The wine is gold with intense golden glints. Ripe fruit leads the nose, apricot above all. On the palate it is powerful and remarkably balanced. Good freshness keeps it from feeling heavy and gives it a long, intense finish.",
+    "Grapes are picked by hand and reach the winery as whole bunches. The yield is set at 41 hl/ha. Wood chips are banned in the cellar."
+   ],
+   "cite": [
+    "condrieu-doc:p1",
+    "condrieu-doc:p2",
+    "condrieu-doc:p3",
+    "condrieu-doc:p5",
+    "condrieu-doc:p6",
+    "condrieu-doc:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Lieu-dit",
+    "text": "The label may name a smaller place if it is a registered lieu-dit, a named spot in the land register, listed on the harvest declaration.",
+    "cite": [
+     "condrieu-doc:p9"
+    ]
+   },
+   {
+    "term": "Cru des Côtes du Rhône",
+    "text": "Still Condrieu may add this wider name on the label.",
+    "cite": [
+     "condrieu-doc:p9"
+    ]
+   }
+  ],
+  "cite": [
+   "condrieu-doc:p9"
+  ]
+ }
+}

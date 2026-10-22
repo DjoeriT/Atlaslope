@@ -2170,5 +2170,89 @@
   "title": "Crémant de Loire PDO-FR-A0391: EU single document / technical file (PDO, French, eAmbrosia attachment 11131)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11131",
   "date": "2024-02-06"
+ },
+ "cotes-du-rhone-doc": {
+  "kind": "official",
+  "title": "Côtes du Rhône PDO-FR-A0325: EU single document / technical file (PDO, French, eAmbrosia attachment 19806)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19806",
+  "date": "2024-10-17"
+ },
+ "cotes-du-rhone-villages-doc": {
+  "kind": "official",
+  "title": "Côtes du Rhône Villages PDO-FR-A0664: EU single document / technical file (PDO, French, eAmbrosia attachment 10545)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10545",
+  "date": "2025-06-13"
+ },
+ "cote-rotie-doc": {
+  "kind": "official",
+  "title": "Côte Rôtie PDO-FR-A0199: EU single document / technical file (PDO, French, eAmbrosia attachment 10548)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10548",
+  "date": "2024-10-21"
+ },
+ "condrieu-doc": {
+  "kind": "official",
+  "title": "Condrieu PDO-FR-A0685: EU single document / technical file (PDO, French, eAmbrosia attachment 15440)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/15440",
+  "date": "2025-06-25"
+ },
+ "saint-joseph-doc": {
+  "kind": "official",
+  "title": "Saint-Joseph PDO-FR-A0200: EU single document / technical file (PDO, French, eAmbrosia attachment 10397)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10397",
+  "date": "2024-12-03"
+ },
+ "hermitage-doc": {
+  "kind": "official",
+  "title": "Hermitage PDO-FR-A1002: EU single document / technical file (PDO, French, eAmbrosia attachment 19836)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/19836",
+  "date": "2018-06-08"
+ },
+ "crozes-hermitage-doc": {
+  "kind": "official",
+  "title": "Crozes-Hermitage PDO-FR-A0389: INAO cahier des charges (French, BO Agri)",
+  "url": "https://info.agriculture.gouv.fr/boagri/document_administratif-7496da98-e980-4e30-8de0-2cc072fbb0fe/telechargement",
+  "date": "2024-12-10"
+ },
+ "cornas-doc": {
+  "kind": "official",
+  "title": "Cornas PDO-FR-A0697: EU single document / technical file (PDO, French, eAmbrosia attachment 10395)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10395",
+  "date": "2025-01-15"
+ },
+ "chateauneuf-du-pape-doc": {
+  "kind": "official",
+  "title": "Châteauneuf-du-Pape PDO-FR-A0144: EU single document / technical file (PDO, French, eAmbrosia attachment 10488)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10488",
+  "date": "2018-06-08"
+ },
+ "gigondas-doc": {
+  "kind": "official",
+  "title": "Gigondas PDO-FR-A0143: EU single document / technical file (PDO, French, eAmbrosia attachment 10307)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10307",
+  "date": "2024-03-14"
+ },
+ "vacqueyras-doc": {
+  "kind": "official",
+  "title": "Vacqueyras PDO-FR-A0151: EU single document / technical file (PDO, French, eAmbrosia attachment 10547)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10547",
+  "date": "2021-12-21"
+ },
+ "lirac-doc": {
+  "kind": "official",
+  "title": "Lirac PDO-FR-A0331: EU single document / technical file (PDO, French, eAmbrosia attachment 10554)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10554",
+  "date": "2024-12-03"
+ },
+ "tavel-doc": {
+  "kind": "official",
+  "title": "Tavel PDO-FR-A0328: EU single document / technical file (PDO, French, eAmbrosia attachment 10546)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10546",
+  "date": "2019-07-19"
+ },
+ "muscat-de-beaumes-de-venise-doc": {
+  "kind": "official",
+  "title": "Muscat de Beaumes-de-Venise PDO-FR-A0716: INAO cahier des charges (French, BO Agri)",
+  "url": "https://info.agriculture.gouv.fr/gedei/site/bo-agri/document_administratif-0e5fc2bb-dd75-432d-acc8-26ee8927d62a/telechargement",
+  "date": "2021-03-11"
  }
 }

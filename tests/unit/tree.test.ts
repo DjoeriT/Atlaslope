@@ -8,9 +8,9 @@ const tree: Tree = loadTree(raw);
 const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
-  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) and Loire batch (18 places, 22 Oct 2026), with a unique slug id', () => {
-    expect(tree.places).toHaveLength(214);
-    expect(new Set(ids(tree.places)).size).toBe(214);
+  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) Loire batch (18 places) and Rhône batch (14 places, 22-23 Oct 2026), with a unique slug id', () => {
+    expect(tree.places).toHaveLength(228);
+    expect(new Set(ids(tree.places)).size).toBe(228);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 72 core, 6 vc, 133 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s 58 places and 19 Chablis zones (not in Learn yet) among the none', () => {
+  it('counts 72 core, 6 vc, 147 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s 72 places and 19 Chablis zones (not in Learn yet) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 133, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 147, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3 + 19);
   });
 
@@ -153,7 +153,7 @@ describe('invalid data', () => {
 
 describe('France pilot in the tree (decisions #52-#55)', () => {
   it('has the WSET course with a group per batch that has a shipped place, and only the shipped places', () => {
-    expect(ids(tree.regionsOf('france'))).toEqual(['fr-bordeaux', 'fr-burgundy', 'fr-loire']);
+    expect(ids(tree.regionsOf('france'))).toEqual(['fr-bordeaux', 'fr-burgundy', 'fr-loire', 'fr-rhone']);
     expect(tree.regionsOf('france').every((r) => r.course === 'wset-fr')).toBe(true);
     expect(ids(tree.placesInRegion('fr-burgundy'))).toEqual(['chablis', 'cote-de-nuits-villages', 'gevrey-chambertin', 'vougeot', 'vosne-romanee',
       'nuits-saint-georges', 'aloxe-corton', 'beaune', 'pommard', 'bourgogne', 'volnay', 'meursault', 'puligny-montrachet', 'cote-de-beaune-villages',

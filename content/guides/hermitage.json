@@ -1,0 +1,125 @@
+{
+ "id": "hermitage",
+ "title": "Why Hermitage tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A granite hill above the Rhône faces due south, sheltered from the north winds by steep slopes. That shelter favours a very hot mesoclimate.",
+  "cite": [
+   "hermitage-doc:p7",
+   "hermitage-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "island",
+   "beat": "place",
+   "title": "An island of granite",
+   "paras": [
+    "The Rhône cut a piece of granite off the Ardèche mountains and left an island of rock in the Drôme. The hill is easy to see from the A7 motorway, the N7 road, the river and the railway.",
+    "At its southern end the Pierreaiguille rock reaches 335 m. It marks the western edge of the slope and closes the Rhône valley between the Tain gorge and Tournon.",
+    "The vineyard sits on the left bank of the Rhône. It lies mostly in Tain-l'Hermitage and spills into a tiny part of neighbouring Crozes-Hermitage and Larnage.",
+    "In 2009 it had 137 hectares in production. They were shared by 1 cooperative, 7 merchant houses and 17 private cellars."
+   ],
+   "cite": [
+    "hermitage-doc:p6",
+    "hermitage-doc:p7",
+    "hermitage-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Hermitage hill",
+     "point": [
+      4.8345,
+      45.0705
+     ],
+     "zoom": 11,
+     "caption": "A piece of granite the Rhône separated from the Ardèche mountains, easy to see from the valley's roads, river and railway.",
+     "cite": [
+      "hermitage-doc:p6"
+     ]
+    },
+    {
+     "label": "Pierreaiguille rock",
+     "point": [
+      4.8385,
+      45.0645
+     ],
+     "zoom": 11,
+     "caption": "The rock at the southern end of the hill reaches 335 m and marks the western edge of the slope.",
+     "cite": [
+      "hermitage-doc:p6",
+      "hermitage-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun-trap",
+   "beat": "weather",
+   "title": "A hot slope facing due south",
+   "paras": [
+    "The slope is very open and faces due south, close to the river. The vineyard runs at right angles to the Rhône valley. Steep slopes shelter it especially well from the north winds.",
+    "That shelter favours a very hot mesoclimate, the slope's own local climate. It has let a few \"relic\" olive trees take root in the Beaumes quarter. The same favoured position also removes the risk of spring frost.",
+    "Growers keep that heat in check. It lets aromas of ripe fruit, spice and undergrowth come through in complex, long-lived reds. In the structured whites it brings out white flowers and honey."
+   ],
+   "cite": [
+    "hermitage-doc:p7",
+    "hermitage-doc:p9",
+    "hermitage-doc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Granite sand and old river terraces",
+   "paras": [
+    "In the west the base is granite under mica-schist and gneiss. As they broke down they made fragile, sandy-clay granitic soils.",
+    "In the east are old alluvial terraces, laid down as the glaciers melted. The oldest deposits lie highest, and the youngest are closest to today's Rhône. Wind-blown limy loess from the north survives only on the flat areas at the top of the slope.",
+    "Growers put Syrah mostly on the western granite, and even on the alluvial ground. They plant the white varieties, mainly Marsanne, on the limier soils.",
+    "Many owners farm plots scattered across the whole area. That leads growers to value how the soils complement each other more than how they differ.",
+    "The soil of granite sand is unstable, so generations of growers built low walls to keep it in place. They also dug channels to carry excess rain to the Rhône."
+   ],
+   "cite": [
+    "hermitage-doc:p7",
+    "hermitage-doc:p8",
+    "hermitage-doc:p9"
+   ]
+  },
+  {
+   "id": "reds-whites-straw",
+   "beat": "rules",
+   "title": "Syrah, two whites and straw wine",
+   "paras": [
+    "Only still reds and whites are made. The grapes are Syrah, Marsanne and Roussanne, the only varieties allowed on this side of the Rhône in the northern Rhône appellations. Roussanne is minor.",
+    "Red Hermitage is made mainly from Syrah and has an intense colour. In the mouth it is powerful and tannic, a balance that gives it good ageing potential. In 2009 reds made up 70 % of production.",
+    "The whites are very aromatic. They balance fine acidity with a certain softness, and carry no fermentable sugar.",
+    "A rare third style sets Hermitage apart from the other northern Rhône appellations: white \"vin de paille\" (straw wine), made in tiny volumes. The ripe white grapes dry at ambient temperature for at least 45 days, which concentrates the sugar. The rich juice is pressed gently and ferments slowly and incompletely.",
+    "The wine is amber and sweet, and strong in alcohol. Candied fruit dominates, usually with smoke, exotic fruit, vanilla and honey. It must reach at least 19.5 % natural alcohol, and its label must show the vintage.",
+    "Vines must be planted at 6,000 or more per hectare, and the grapes are picked by hand. Maximum yields are 40 hl/ha for reds and 45 hl/ha for whites. Pieces of wood, such as oak chips, are banned in the cellar.",
+    "A label may name a smaller place within the area. It must be a registered lieu-dit, a named plot on the land register, and appear on the harvest declaration."
+   ],
+   "cite": [
+    "hermitage-doc:p3",
+    "hermitage-doc:p4",
+    "hermitage-doc:p5",
+    "hermitage-doc:p8",
+    "hermitage-doc:p9",
+    "hermitage-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Tain-l'Hermitage",
+     "point": [
+      4.8344,
+      45.0686
+     ],
+     "zoom": 11,
+     "caption": "The town's archives record several hermits on the hill from 1598. They gave the slope its name, and later the appellation.",
+     "cite": [
+      "hermitage-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}
