@@ -91,6 +91,16 @@
    "h": 1200,
    "blur": "UklGRq4AAABXRUJQVlA4IKIAAADwBACdASoQABgAPtFWpEuoJKOhsAgBABoJbACdIE3J/i2E24Ua4/bi5vkm3XM7YnAA/p184LaT8cCjcH1/z8RAOtSR73pYQsWWXBITLertmfvt5QneAYVN61UtVKaYu7spdChf6/pnvCnC1FNp53EvNqS3TYKci5j7dvtkPK91NiIlMr837kW/C78KqVDxpC1lQcR/MbGfRsAy5+a7aWUAAAA="
   },
+  "borja-moncayo-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAAsBMJYgCdAEPQnreawAA/uet7JHpYw8BGorB+Pr0c6jDup/dcBUWy1d5hmuAejEDOwq1J73zgAA="
+  },
+  "borja-veruela-1": {
+   "w": 1200,
+   "h": 845,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAAsBMJbACdAD1OYXHFwAA/ni/hgSUCWvEdeAErzBUfBiYE8M0kt/2hhuN9pn+D98Ob2fcmLpV+xzg3OnYzO1eqfRJvq71jiXi7G87ClMKgEAAAA=="
+  },
   "bullas-1": {
    "w": 1200,
    "h": 377,
@@ -491,6 +501,21 @@
    "h": 758,
    "blur": "UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoQAAoAAsBMJQAAXaKIeKBgAP7zrxu45ZNQJzwydH6nXMQKjZ2u70P/SqmJkS7RMj6H+5Z71FjsKrkJvpfqgc9gUAgAAA=="
   },
+  "navarra-ega-1": {
+   "w": 900,
+   "h": 1200,
+   "blur": "UklGRqwAAABXRUJQVlA4IKAAAACwBACdASoQABUAPtFUo0uoJKMhsAgBABoJZACdH8CkAGzAMsP7El+SaQyqFLFQAP7oYHcknyUWdcT25xeMGTx1ZgHHqfvLAacpERQuxXuik23Bmt3FKON3YW7rF4etsCHj7+/gqrwnytBd65U7VUM/4le82/c/ECdp2+4SN3leWMRrqsBOCUP+M+MJbo0CaJSODbVFjKM5WDlfr98yEAAA"
+  },
+  "navarra-tudela-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAAsBMJZQCdAEPgrj9GpAAAP7369jJNkXX9G9W3W39lpGAXhlA1+mIxrkQxZttA7mE3TXxVK0lgEAAAA=="
+  },
+  "navarra-urbasa-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAsAAsBMJZgCdAYu5WNAZrLmAAD+37xZqaBrpW64vZaR3Pcfv2UG/aC1ET5GBzXbreTE4cmMnkEBEHku5QopNlr974NyE47mROQ+22uXI1bqbMLJwSU2H+NDniEKYAA="
+  },
   "otazu-1": {
    "w": 1200,
    "h": 800,
@@ -775,6 +800,26 @@
    "w": 1200,
    "h": 900,
    "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAwAAsBMJbACdAEOwXAW5w+4APqT88HtIoc7vpP5wgxmSWSuygQCB4mkqud/zGZ3qxpHOG889/L+4nxHtLKZxLf48abKyh8wAAAA"
+  },
+  "somontano-barbastro-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAwAAsBMJQBOgCHYmlo/tYAA/vAWPiIFte474WnujyTVJpxHHa3id2Mck4syhgmVylcgAAA="
+  },
+  "somontano-guara-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAAsBMJQBOjXAAUOpy4GegAP6tnC1qoKPBfbUBhK5cIOtd2p8JQMPUhNTUpq/2KEh30B2LvNKqydQj+qAA"
+  },
+  "somontano-vero-1": {
+   "w": 1200,
+   "h": 719,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAoAAsBMJZAC7ACjB89qeAAA/jRgdwgIpPWKq14MWwdnW2J772jVeSPhbRC1eKF6jUmZ5RIl66nI5Qg8JqbgDViuBZnUJIDW9h0pbSM54zvGOQAAAA=="
+  },
+  "somontano-weather-1": {
+   "w": 1200,
+   "h": 802,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsAAsBMJbACdAEfO+PFVh6AAP7pXeEQ65VGLN+shYt9EwxNRtvjh6TD9bysBcyW4x8hia6GaejLrYr+dnhd/+H7pDDpsvWX8kaJv5vuesYWAAA="
   },
   "tacoronte-acentejo-1": {
    "w": 1200,

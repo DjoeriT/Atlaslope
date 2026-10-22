@@ -184,7 +184,7 @@ describe('map tours on the Guides page', () => {
     const list = guideRows();
     const guidesHtml = readFileSync('guides/index.html', 'utf8');
     const tours = list.rows.filter((r) => r.tour).map((r) => r.id).sort();
-    expect(tours).toEqual(['cangas', 'monterrei', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
+    expect(tours).toEqual(['campo-de-borja', 'cangas', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
     const html = fillGuideList(guidesHtml, list);
     expect(html).toContain('<a href="#map-tours">Show only guides with a map tour</a>');
     expect(html).toContain('id="map-tours"');

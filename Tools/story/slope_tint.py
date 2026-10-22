@@ -125,6 +125,9 @@ BOUNDS['txakoli-alava'] = [-3.30, 42.95, -2.80, 43.25]
 BOUNDS['cangas'] = [-7.05, 42.85, -6.25, 43.50]  # as fetch_layers.py
 BOUNDS['valdeorras'] = [-7.30, 42.15, -6.65, 42.60]
 BOUNDS['monterrei'] = [-7.70, 41.75, -7.10, 42.15]
+BOUNDS['navarra'] = [-2.65, 41.90, -1.35, 42.90]  # as fetch_layers.py
+BOUNDS['somontano'] = [-0.50, 41.85, 0.55, 42.40]  # as fetch_layers.py
+BOUNDS['campo-de-borja'] = [-2.05, 41.60, -1.20, 42.00]  # as fetch_layers.py
 TINT_RGB, TINT_ALPHA = (140, 35, 64), 33  # #8C2340 at about 13% at most; soft edge between 27% and 33% slope
 
 if __name__ == '__main__':

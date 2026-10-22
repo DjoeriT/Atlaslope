@@ -80,6 +80,39 @@ PHOTOS = {  # id -> (title, page, artist, licence, licenceUrl, alt, focus)
 }
 
 
+# Navarra map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "navarra-tudela-1": ("File:Ebro River near Tudela municipality (2).jpg", "https://commons.wikimedia.org/wiki/File:Ebro_River_near_Tudela_municipality_(2).jpg",
+                         "Vasyatka1", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "The Ebro running wide and calm below a low ridge, seen from the Puente del Eje near Tudela", "50% 50%"),
+    "navarra-urbasa-1": ("File:Sierra de Urbasa.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Urbasa.jpg",
+                         "Misharania", "CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0", "A lone wind-shaped tree on stony ground in the Sierra de Urbasa, with forested ridges behind", "50% 50%"),
+    "navarra-ega-1": ("File:Estella - rio Ega 1.jpg", "https://commons.wikimedia.org/wiki/File:Estella_-_rio_Ega_1.jpg",
+                      "Zarateman", "CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/", "The Ega running over pale gravel through Estella, with houses and trees on the bank", "50% 50%"),
+})
+
+
+# Somontano map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "somontano-vero-1": ("File:PPA2143 Alquézar y cañones del Vero.jpg", "https://commons.wikimedia.org/wiki/File:PPA2143_Alqu%C3%A9zar_y_ca%C3%B1ones_del_Vero.jpg",
+                      "Pedro José Ponce Asensio", "CC BY 4.0", "https://creativecommons.org/licenses/by/4.0", "Still green water of the Vero beneath limestone cliffs and riverside trees in the canyons near Alquézar", "50% 50%"),
+    "somontano-guara-1": ("File:Sierra de Guara.jpg", "https://commons.wikimedia.org/wiki/File:Sierra_de_Guara.jpg",
+                      "Bert Heymans", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "A valley with a small village below the pale limestone ridges of the Sierra de Guara, seen through pines", "50% 50%"),
+    "somontano-weather-1": ("File:Somontano de Barbastro, Lagunarrota (Huesca, Aragón).jpg", "https://commons.wikimedia.org/wiki/File:Somontano_de_Barbastro,_Lagunarrota_(Huesca,_Arag%C3%B3n).jpg",
+                      "Malkav", "CC BY 2.0", "https://creativecommons.org/licenses/by/2.0", "Green fields and patches of vines under a deep blue sky with streaks of cloud in the Somontano de Barbastro", "50% 50%"),
+    "somontano-barbastro-1": ("File:Vista de Barbastro desde el Monasterio de El Pueyo . - panoramio.jpg", "https://commons.wikimedia.org/wiki/File:Vista_de_Barbastro_desde_el_Monasterio_de_El_Pueyo_._-_panoramio.jpg",
+                      "McBodes", "CC BY 3.0", "https://creativecommons.org/licenses/by/3.0", "Barbastro on the plain far below, seen over farmland and woods from the Monasterio de El Pueyo, with sierras on the horizon", "50% 50%"),
+})
+
+
+# Campo de Borja map tour (batch 3, 22 Oct 2026)
+PHOTOS.update({
+    "borja-veruela-1": ("File:Monasterio de Veruela, Vera de Moncayo, España, 2012-09-03, DD 01.JPG", "https://commons.wikimedia.org/wiki/File:Monasterio_de_Veruela,_Vera_de_Moncayo,_Espa%C3%B1a,_2012-09-03,_DD_01.JPG",
+                      "Diego Delso", "CC BY-SA 3.0", "https://creativecommons.org/licenses/by-sa/3.0", "The walled entrance arch and church tower of the Monasterio de Veruela under a blue sky", "50% 50%"),
+    "borja-moncayo-1": ("File:Moncayo urrutitik 2.JPG", "https://commons.wikimedia.org/wiki/File:Moncayo_urrutitik_2.JPG",
+                      "Namiac", "CC BY-SA 3.0 es", "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en", "The snow-capped Moncayo rising over dry scrub and green fields of the plain below", "50% 50%"),
+})
+
+
 def main():
     path = ROOT / "data/photos.json"
     doc = json.loads(path.read_text())

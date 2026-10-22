@@ -46,6 +46,9 @@ export const ROCK_KEY: Record<string, Array<{ id: string; color: string }>> = {
   cangas: [{ id: 'sandstoneSlate', color: '#FF4D4D' }, { id: 'sandstoneSlateLight', color: '#FFB2D9' }, { id: 'narceaSlate', color: '#FF80FF' }, { id: 'quartziteSlate', color: '#B2FFD9' }],
   valdeorras: [{ id: 'slate', color: '#80804D' }, { id: 'schist', color: '#4D8080' }, { id: 'granite', color: '#80B2D9' }],
   monterrei: [{ id: 'greenSeries', color: '#B2D94D' }, { id: 'granite', color: '#FFB2B2' }],
+  navarra: [{ id: 'marlSandstone', color: '#00FF00' }, { id: 'alluvial', color: '#B2D9D9' }],
+  somontano: [{ id: 'limestone', color: '#80FFFF' }, { id: 'gypsum', color: '#FFD9D9' }, { id: 'sandstoneMudstone', color: '#FFCC4D' }, { id: 'terraces', color: '#B2D9D9' }],
+  'campo-de-borja': [{ id: 'limestone', color: '#FFFFD9' }, { id: 'redClay', color: '#FFFF4D' }, { id: 'terraces', color: '#D9D9D9' }],
 };
 
 /** The key items for a story's rock colours: the guide's own word and the colour. */
