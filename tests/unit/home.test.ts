@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { loadTree } from '../../src/tree';
-import { fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
+import { BAND_FEATURED, PHOTO_PICK, bandTours, fillGuideCount, fillGuideList, guideCount, guideRows, photoCrops, placeGuideCount, squarePhotoKeys } from '../../src/home/guideCount';
 
 // The home page (index.html) is plain HTML, so its numbers are typed in. They must say what the atlas's Spain card counts.
 const html = readFileSync('index.html', 'utf8');
@@ -33,58 +33,42 @@ describe('the home page', () => {
   });
 });
 
-describe('the Guides page', () => {
+describe('the Guides page (option E round 3, owner 22 Oct 2026)', () => {
   const guidesHtml = readFileSync('guides/index.html', 'utf8');
   const link = (id: string) => `href="../atlas/#place=${id}&amp;page"`;
+  const stories = readdirSync('content/stories').filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, ''));
+  const list = guideRows();
+  const out = fillGuideList(guidesHtml, list);
+  const section = (id: string) => out.split('<section class="region"').find((x) => x.includes(`id="r-${id}"`))!.split('</section>')[0];
+  const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
+
   it('lists every guide file, filled in at build time', () => {
-    const list = guideRows();
     expect(list.rows).toHaveLength(guideCount());
-    const out = fillGuideList(guidesHtml, list);
-    for (const r of list.regions.flatMap((g) => g.guides.slice(0, 6))) expect(out).toContain(link(r.id));
+    for (const r of list.rows) expect(out, r.id).toContain(link(r.id));
   });
-  it('shows at most 6 guides per region, then "All <Region> guides" only for regions with more', () => {
-    const { regions } = guideRows();
-    const out = fillGuideList(guidesHtml, guideRows());
-    for (const r of regions) {
-      const sec = out.split('<section class="region"').find((x) => x.includes(`id="r-${r.id}"`))!;
-      expect(sec.match(/class="gcard-c"/g)?.length ?? 0).toBe(Math.min(6, r.guides.length));
-      const more = `<a href="../atlas/#region=${r.id}&amp;page">All ${r.name} guides</a>`;
-      expect(sec.includes(more), r.id).toBe(r.guides.length > 6);
+  it('shows all guides of a region, none cut off, with the count in the heading', () => {
+    expect(list.regions.some((r) => r.guides.length > 6)).toBe(true);
+    for (const r of list.regions) {
+      const sec = section(r.id);
+      const n = r.guides.length;
+      expect(sec).toContain(`<span class="n">${n} ${n === 1 ? 'guide' : 'guides'}</span>`);
+      expect(count(sec, /class="ecard"/g) + count(sec, /<a href="\.\.\/atlas\/#place=/g)).toBe(n);
     }
-    expect(regions.some((r) => r.guides.length > 6)).toBe(true);
+    expect(out).not.toContain('All Rioja guides');
   });
   it('has a jump row with one link per region, to its section', () => {
-    const { regions } = guideRows();
-    const out = fillGuideList(guidesHtml, guideRows());
     const nav = out.match(/<nav class="jump"[^>]*>(.*?)<\/nav>/)![1];
-    expect([...nav.matchAll(/<a href="(#r-[^"]+)"/g)].map((m) => m[1])).toEqual(regions.map((r) => `#r-${r.id}`));
-    for (const r of regions) expect(out).toContain(`<h2 id="r-${r.id}">`);
-  });
-  it('shows Rioja as the showcased guide over the home hero satellite view', () => {
-    const list = guideRows();
-    expect(list.featured?.hero).toBe(true);
-    const out = fillGuideList(guidesHtml, list);
-    expect(out).toContain('<span class="show">Showcased guide</span>');
-    expect(out).toContain('<figure class="hero-sat"><img src="../home/hero.webp"');
-    expect(out).not.toContain('class="mosaic"');
-  });
-  it('points every photo at a file that exists (release 47: Binissalem has no 800 px copy)', () => {
-    const out = fillGuideList(guidesHtml, guideRows());
-    const files = [...out.matchAll(/\.\.\/(photos\/[^"\s]+\.webp)/g)].map((m) => m[1]);
-    expect(files.length).toBeGreaterThan(0);
-    for (const f of new Set(files)) expect(existsSync(`public/${f}`), f).toBe(true);
+    expect([...nav.matchAll(/<a href="(#r-[^"]+)"/g)].map((m) => m[1])).toEqual(list.regions.map((r) => `#r-${r.id}`));
+    for (const r of list.regions) expect(out).toContain(`<h2 id="r-${r.id}">`);
   });
   it('puts zones after their place, in course order', () => {
-    const ids = guideRows().rows.map((r) => r.id);
+    const ids = list.rows.map((r) => r.id);
     expect(ids.indexOf('rioja-alta')).toBe(ids.indexOf('rioja') + 1);
   });
-  it('groups guides by study region, in course order, with the lede from the guide file', () => {
-    const { regions, rows } = guideRows();
-    expect(regions.flatMap((r) => r.guides)).toEqual(rows);
-    expect(regions.map((r) => r.id).slice(0, 2)).toEqual(['green-spain', 'castilla-y-leon']);
-    for (const r of regions) for (const g of r.guides) expect(g.region).toBe(r.id);
-    const rioja = JSON.parse(readFileSync('content/guides/rioja.json', 'utf8'));
-    expect(rows.find((g) => g.id === 'rioja')?.lede).toBe(rioja.lede.text);
+  it('groups guides by study region, in course order', () => {
+    expect(list.regions.flatMap((r) => r.guides)).toEqual(list.rows);
+    expect(list.regions.map((r) => r.id).slice(0, 2)).toEqual(['green-spain', 'castilla-y-leon']);
+    for (const r of list.regions) for (const g of r.guides) expect(g.region).toBe(r.id);
   });
   it('shows a new guide in its region with no extra step', () => {
     const dir = mkdtempSync(join(tmpdir(), 'guides-'));
@@ -93,33 +77,97 @@ describe('the Guides page', () => {
     expect(before.rows.map((r) => r.id)).not.toContain('toro');
     copyFileSync('content/guides/toro.json', `${dir}/toro.json`);
     const after = guideRows({ dir });
-    const group = after.regions.find((r) => r.guides.some((g) => g.id === 'toro'));
-    expect(group?.id).toBe('castilla-y-leon');
-    expect(after.regions.find((r) => r.id === 'castilla-y-leon')!.guides.map((g) => g.id)).toContain('toro');
+    expect(after.regions.find((r) => r.guides.some((g) => g.id === 'toro'))?.id).toBe('castilla-y-leon');
     expect(fillGuideList(guidesHtml, before)).not.toContain(link('toro'));
   });
-  it('features Rioja with three photos, its In short and one credit line', () => {
-    const list = guideRows();
-    expect(list.featured?.row.id).toBe('rioja');
-    expect(list.featured?.photos).toEqual(['rioja-1', 'rioja-2', 'rioja-3']);
-    expect(list.featured?.facts.map((f) => f.key)).toEqual(['Grapes', 'Climate', 'Soil']);
-    const out = fillGuideList(guidesHtml, list);
-    expect(out).toContain('<h3>In short</h3>');
-    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · cropped and resized/);
+  it('points every photo at a file that exists (release 47: Binissalem has no 800 px copy)', () => {
+    const files = [...out.matchAll(/\.\.\/(photos\/[^"\s]+\.webp)/g)].map((m) => m[1]);
+    expect(files.length).toBeGreaterThan(0);
+    for (const f of new Set(files)) expect(existsSync(`public/${f}`), f).toBe(true);
   });
-  it('crops each card photo square around its focus, writing a style only for an off-centre focus', () => {
-    const out = fillGuideList(guidesHtml, guideRows());
+  it('shows the kind under the name only when it is not plain DO', () => {
+    for (const r of list.regions) {
+      for (const g of r.guides.filter((x) => x.photo)) {
+        const card = section(r.id).split('<a class="ecard"').find((x) => x.includes(link(g.id)))!.split('</a>')[0];
+        expect(card.includes('class="meta"'), g.id).toBe(g.label !== 'DO');
+      }
+    }
+  });
+
+  describe('the map-tour band', () => {
+    const { featured, rest, count: n } = bandTours(list);
+    const band = out.match(/<section class="band"[\s\S]*?<\/section>/)![0];
+    it('counts the tours from the story files', () => {
+      expect(n).toBe(stories.length);
+      expect(list.rows.filter((r) => r.tour).map((r) => r.id).sort()).toEqual([...stories].sort());
+      expect(band).toContain(`<span class="n">${n} guides</span>`);
+      expect(band).toContain(`Show all ${n} map tours`);
+    });
+    it('features four tours and folds the rest behind a real button', () => {
+      expect(featured.map((g) => g.id)).toEqual(BAND_FEATURED);
+      expect(featured).toHaveLength(4);
+      expect(featured.length + rest.length).toBe(n); // every tour guide has a photo, so none is left out of the band
+      expect(band).toContain('<button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="more-tours"');
+      const [feat, more] = band.split('<div class="stills more" id="more-tours" hidden>');
+      expect(count(feat, /class="sqbox"/g)).toBe(4);
+      expect(count(more, /class="sqbox"/g)).toBe(n - 4);
+      for (const g of [...featured, ...rest]) expect(band, g.id).toContain(link(g.id));
+    });
+    it('is the target of guides/#map-tours', () => {
+      expect(band).toContain('id="map-tours"');
+    });
+    it('shows Rioja with its picked photo, which is a checked crop', () => {
+      expect(featured[0].photo).toBe(PHOTO_PICK.rioja);
+      expect(photoCrops[PHOTO_PICK.rioja]).toBeDefined();
+    });
+  });
+
+  describe('the Map tour chip', () => {
+    it('sits on every tour tile and on no other', () => {
+      const tiles = out.split('<span class="sqbox">').slice(1);
+      expect(tiles.length).toBeGreaterThan(0);
+      for (const t of tiles) {
+        const id = t.match(/\/photos\/\d+\/([^"/]+)\.webp/)![1];
+        const row = list.rows.find((r) => r.photo === id)!;
+        expect(t.split('</span></span>')[0].includes('class="chip"'), id).toBe(row.tour);
+      }
+      expect(count(out, /class="chip"/g)).toBe(2 * list.rows.filter((r) => r.tour && r.photo).length); // band + region grid
+    });
+  });
+
+  describe('guides without a photo', () => {
+    it('get no tile, only a name in the Also line after the grid', () => {
+      const bare = list.rows.filter((g) => !g.photo);
+      expect(bare.length).toBeGreaterThan(0);
+      for (const g of bare) {
+        const sec = section(g.region);
+        expect(sec).toContain(`<a href="../atlas/#place=${g.id}&amp;page">`);
+        expect(sec.split('<div class="also">')[1], g.id).toContain(link(g.id));
+        expect(sec.split('<div class="also">')[0], g.id).not.toContain(link(g.id));
+      }
+    });
+    it('are all named in Also when no photo exists, with no empty tile', () => {
+      const none = guideRows({ publicDir: mkdtempSync(join(tmpdir(), 'public-')) });
+      expect(none.rows.every((g) => g.photo === null)).toBe(true);
+      const html = fillGuideList(guidesHtml, none);
+      expect(html).not.toContain('class="sqbox"');
+      expect(html).not.toContain('class="credit"');
+      for (const g of none.rows) expect(html).toContain(link(g.id));
+    });
+  });
+
+  it('crops each tile photo square around its focus, writing a style only for an off-centre focus', () => {
     for (const [k, { focus }] of Object.entries(photoCrops)) {
-      const card = out.match(new RegExp(`<a class="gcard-c"[^>]*><span class="ct"><img src="[^"]*/${k}\\.webp"[^>]*>`));
-      if (!card) continue;
-      if (focus === '50% 50%') expect(card[0]).not.toContain('object-position');
-      else expect(card[0]).toContain(`style="object-position:${focus}"`);
+      const tile = out.match(new RegExp(`<img src="[^"]*/${k}\\.webp"[^>]*>`));
+      if (!tile) continue;
+      if (focus === '50% 50%') expect(tile[0]).not.toContain('object-position');
+      else expect(tile[0]).toContain(`style="object-position:${focus}"`);
     }
     expect(out).toContain('style="object-position:');
   });
   // Owner 19 Oct 2026: "We need a check for this structurally". A crop is checked by eye; the hash ties the check to the file that was seen.
   describe('checked square crops (src/home/photoCrops.json)', () => {
-    const shown = squarePhotoKeys(guideRows());
+    const shown = squarePhotoKeys(list);
     const hashOf = (k: string) => createHash('sha256').update(readFileSync(`public/photos/480/${k}.webp`)).digest('hex').slice(0, 12);
     const fix = (k: string) => `run node Tools/guides/crop_sheet.mjs ${k}, look at the sheet, then add it to src/home/photoCrops.json (see docs/guides.md "Photo crops").`;
     it('has an entry for every photo the Guides page shows', () => {
@@ -139,37 +187,16 @@ describe('the Guides page', () => {
       expect(extra, extra.join('\n')).toEqual([]);
     });
   });
-  it('gives a guide with no photo a typographic card, and a region with no tile no tile', () => {
-    const empty = mkdtempSync(join(tmpdir(), 'public-'));
-    const list = guideRows({ publicDir: empty });
-    expect(list.rows.every((g) => g.photo === null)).toBe(true);
-    expect(list.regions.every((r) => r.tile === null)).toBe(true);
-    expect(list.featured?.photos).toEqual([]);
-    const out = fillGuideList(guidesHtml, list);
-    expect(out).toContain('class="ct typo"');
-    expect(out.match(/class="ct typo"[^>]*><span class="kick"/)).toBeNull();
-    expect(out).not.toContain('class="sat"');
-    expect(out).not.toContain('Imagery: Esri');
-    for (const r of list.regions.flatMap((g) => g.guides.slice(0, 6))) expect(out).toContain(link(r.id));
-  });
-  it('shows the satellite tile and its credit only for regions that have one', () => {
-    const { regions } = guideRows();
-    for (const r of regions) expect(r.tile).toBe(existsSync(`public/guides/${r.id}.webp`) ? `${r.id}.webp` : null);
-    expect(regions.find((r) => r.id === 'rioja')?.tile).toBe('rioja.webp');
-    const out = fillGuideList(guidesHtml, guideRows());
-    expect(out.match(/<figure class="sat">/g)).toHaveLength(regions.filter((r) => r.tile).length);
-    // plus one for the featured guide's satellite view (the home hero image)
-    expect(out.match(/Imagery: Esri, Vantor · Spain: PNOA © IGN/g)).toHaveLength(regions.filter((r) => r.tile).length + 1);
-  });
-  it('gives every region with guides its satellite tile, so a new region cannot ship without one', () => {
-    // Cataluña went live in release 43 with no tile; the tiles are rendered by Tools/guides/region_tile.mjs.
-    const missing = guideRows().regions.filter((r) => r.guides.length && !r.tile).map((r) => r.id);
-    expect(missing, 'run Tools/guides/region_tile.mjs for these regions').toEqual([]);
-  });
-  it('credits each photo set, never prints text on a photo', () => {
-    const out = fillGuideList(guidesHtml, guideRows());
-    expect(out.match(/<p class="credit">Photos:/g)!.length).toBe(guideRows().regions.length + 1); // + the map-tour section's set
+
+  it('has one always-visible credit line for the page photo set, and never prints text on a photo but the chip', () => {
+    expect(count(out, /<p class="credit">Photos:/g)).toBe(1);
+    expect(out).toMatch(/<p class="credit">Photos: <a [^>]*>[^<]+<\/a> · <a [^>]*>CC BY[^<]*<\/a> · cropped and resized/);
     expect(out).not.toContain('title="');
+    for (const k of squarePhotoKeys(list)) expect(out, k).toContain(list.photos[k].artist.replace(/^unknown.*/i, 'Wikimedia Commons').replace(/&/g, '&amp;'));
+  });
+  it('has dropped the showcase, the repeated tours section, the satellite maps and the card summaries', () => {
+    for (const gone of ['Showcased guide', 'hero-sat', 'class="sat"', 'Imagery: Esri', 'gcard-c', 'class="lede"', 'Show all guides', 'In short']) expect(out, gone).not.toContain(gone);
+    expect(count(out, /id="map-tours"/g)).toBe(1);
   });
 });
 
@@ -179,22 +206,7 @@ describe('the Guides page markers', () => {
   });
 });
 
-describe('map tours on the Guides page', () => {
-  it('marks guides that have a story file and links to the map-tours section', () => {
-    const list = guideRows();
-    const guidesHtml = readFileSync('guides/index.html', 'utf8');
-    const tours = list.rows.filter((r) => r.tour).map((r) => r.id).sort();
-    expect(tours).toEqual(['alicante', 'campo-de-borja', 'cangas', 'costers-del-segre', 'monterrei', 'navarra', 'priorat', 'ribeira-sacra', 'ribera-del-duero', 'rioja', 'somontano', 'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'valdeorras']);
-    const html = fillGuideList(guidesHtml, list);
-    expect(html).toContain('<a href="#map-tours">Show only guides with a map tour</a>');
-    expect(html).toContain('id="map-tours"');
-    expect(html).toContain('<p class="showall"><a href="#">Show all guides</a></p>');
-    expect(html.match(/class="tour">Map tour</g)!.length).toBeGreaterThanOrEqual(tours.length);
-  });
-  it('says "cropped and resized" in the hero card credit (QA S3)', () => {
-    expect(html).toMatch(/Card photos:[^<]*(<[^>]+>[^<]*)*cropped and resized<\/figcaption>/);
-  });
-
+describe('the 404 page', () => {
   it('ships a 404 page with the band, the one line and links Home, Atlas, Guides (QA S1)', () => {
     const nf = readFileSync('public/404.html', 'utf8');
     expect(nf).toContain('noindex');

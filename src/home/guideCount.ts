@@ -1,8 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import photoCropsFile from './photoCrops.json';
 import photoSizesFile from '../../data/photo-sizes.json';
-import { grapeLabel } from '../facts/format';
-import { sentences } from '../pages/sentence';
 import { loadTree } from '../tree';
 
 // The home page says how many places have a guide. It is plain HTML, so the number is filled in at build time from content/guides/
@@ -23,65 +21,48 @@ export const fillStoryCount = (html: string, n: number): string => html.replace(
 export const fillGuideCount = (html: string, n: number): string => html.replace(/(data-count="guides">)\d+(<)/g, `$1${n}$2`);
 
 // The Guides page lists every guide the same way, so each release brings it up to date with no extra step (owner, 19 Oct 2026: it still said
-// "4 of 79 places, all in Rioja" with 37 guides live). Layout C "Editorial" (owner pick, 19 Oct 2026, Review mock guides-landing-v1): one featured
-// guide, then a row per study region with its satellite tile and a card for each guide. Order: regions in course order, their places in course
-// order, zones after their place. A new guide file lands in its region by itself; a region with no tile in public/guides/ shows no tile.
-export interface GuideRow { id: string; name: string; label: string; minutes: number; region: string; lede: string; photo: string | null; tour: boolean }
-export interface RegionGroup { id: string; name: string; tile: string | null; guides: GuideRow[] }
-export interface Featured { row: GuideRow; photos: string[]; facts: Array<{ key: string; text: string }>; hero: boolean }
-export interface GuideList { rows: GuideRow[]; regions: RegionGroup[]; featured: Featured | null; photos: Record<string, PhotoCredit> }
+// "4 of 79 places, all in Rioja" with 37 guides live). Option E round 3 (owner, 22 Oct 2026; Review/mock-guides-r1/build-brief.md): a black band
+// of the map-tour guides (four featured, the rest behind a button), then every region with all its guides as small squares, zones after their place.
+export interface GuideRow { id: string; name: string; label: string; minutes: number; region: string; photo: string | null; tour: boolean }
+export interface RegionGroup { id: string; name: string; guides: GuideRow[] }
+export interface GuideList { rows: GuideRow[]; regions: RegionGroup[]; photos: Record<string, PhotoCredit> }
 export interface PhotoCredit { alt: string; artist: string; licence: string; licenceUrl: string; page: string }
-export interface GuideSources { dir: string; placesFile: string; factsDir: string; photosFile: string; publicDir: string; storiesDir: string }
+export interface GuideSources { dir: string; placesFile: string; photosFile: string; publicDir: string; storiesDir: string }
 
-export const GUIDE_SOURCES: GuideSources = { dir: 'content/guides', placesFile: 'data/places.json', factsDir: 'content/facts', photosFile: 'data/photos.json', publicDir: 'public', storiesDir: 'content/stories' };
-/** The one hand pick: the guide shown first, with three photos and its In short. */
-export const FEATURED_ID = 'rioja';
+export const GUIDE_SOURCES: GuideSources = { dir: 'content/guides', placesFile: 'data/places.json', photosFile: 'data/photos.json', publicDir: 'public', storiesDir: 'content/stories' };
+/** The four map tours shown first in the band (owner 22 Oct 2026); the other tours sit behind the "Show all" button. */
+export const BAND_FEATURED = ['rioja', 'priorat', 'ribeira-sacra', 'txakoli-getaria'];
+/** A guide's tile photo is `<id>-1` unless picked here: Rioja's -1 has a grey sky, -2 (Laguardia, autumn vines) is the stronger one (22 Oct 2026). */
+export const PHOTO_PICK: Record<string, string> = { rioja: 'rioja-2' };
 
 const KIND: Record<string, string> = { DO: 'DO', DOCa: 'DOCa', VP: 'Vino de Pago', VC: 'Vino de Calidad' };
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const json = <T>(f: string) => JSON.parse(readFileSync(f, 'utf8')) as T;
 
-interface FactSheet { id: string; grapes: { main: Array<{ local: string; grape?: string }> }; climate: { text: string }; soil: { text: string } }
-
-const factsOf = (id: string, factsDir: string): Array<{ key: string; text: string }> => {
-  const sheet = readdirSync(factsDir).filter((f) => f.endsWith('.json'))
-    .flatMap((f) => json<{ sheets: FactSheet[] }>(`${factsDir}/${f}`).sheets).find((x) => x.id === id);
-  if (!sheet) return [];
-  const main = sheet.grapes.main;
-  const grapes = main.length === 0 ? '' : main.length <= 2 ? main.map((g) => grapeLabel(g)).join(' and ') : `${grapeLabel(main[0])} and ${main.length - 1} more`;
-  return [
-    { key: 'Grapes', text: grapes }, { key: 'Climate', text: sheet.climate.text && sentences(sheet.climate.text, 110) },
-    { key: 'Soil', text: sheet.soil.text && sentences(sheet.soil.text, 110) },
-  ].filter((f) => f.text);
-};
-
-// The featured guide's satellite view with its flags, the home hero's image (owner 19 Oct 2026 13:50Z: "only the main region satellite image gets the home hero treatment")
-const FEATURED_HERO: Record<string, { src: string; alt: string }> = {
-  rioja: { src: '../home/hero.webp', alt: 'The atlas over Rioja on satellite imagery, with flags on Haro, the Sierra de Cantabria, the Ebro and Alfaro' },
-};
 export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
-  const { dir, placesFile, factsDir, photosFile, publicDir, storiesDir } = { ...GUIDE_SOURCES, ...src };
+  const { dir, placesFile, photosFile, publicDir, storiesDir } = { ...GUIDE_SOURCES, ...src };
   const tours = new Set(existsSync(storiesDir) ? readdirSync(storiesDir).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, '')) : []);
   const tree = loadTree(json(placesFile));
   const photos = json<{ photos: Record<string, PhotoCredit> }>(photosFile).photos;
-  const guides = new Map<string, { minutes: number; lede: string }>();
+  const guides = new Map<string, { minutes: number }>();
   for (const f of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
-    const g = json<{ id: string; minutes: number; lede: { text: string } }>(`${dir}/${f}`);
-    guides.set(g.id, { minutes: g.minutes, lede: g.lede.text });
+    const g = json<{ id: string; minutes: number }>(`${dir}/${f}`);
+    guides.set(g.id, { minutes: g.minutes });
   }
   const hasPhoto = (key: string) => key in photos && existsSync(`${publicDir}/photos/480/${key}.webp`);
+  const photoOf = (id: string) => [PHOTO_PICK[id], `${id}-1`].find((k) => k && hasPhoto(k)) ?? null;
   const rows: GuideRow[] = [];
   const regions: RegionGroup[] = [];
   for (const country of tree.countries) {
     for (const region of tree.regionsOf(country.id)) {
-      const group: RegionGroup = { id: region.id, name: region.name, tile: existsSync(`${publicDir}/guides/${region.id}.webp`) ? `${region.id}.webp` : null, guides: [] };
+      const group: RegionGroup = { id: region.id, name: region.name, guides: [] };
       for (const place of tree.placesInRegion(region.id)) {
         const zones = tree.children(place.id).filter((c): c is typeof place => 'kind' in c && c.kind === 'zone');
         for (const p of [place, ...zones]) {
           const g = guides.get(p.id);
           if (!g) continue;
           const label = p.kind === 'zone' ? `Zone of ${place.name}` : (KIND[p.kind] ?? p.kind);
-          const row: GuideRow = { id: p.id, name: p.name.split(' / ')[0], label, minutes: g.minutes, region: region.id, lede: g.lede, photo: hasPhoto(`${p.id}-1`) ? `${p.id}-1` : null, tour: tours.has(p.id) };
+          const row: GuideRow = { id: p.id, name: p.name.split(' / ')[0], label, minutes: g.minutes, region: region.id, photo: photoOf(p.id), tour: tours.has(p.id) };
           rows.push(row);
           group.guides.push(row);
         }
@@ -91,14 +72,11 @@ export const guideRows = (src: Partial<GuideSources> = {}): GuideList => {
   }
   const missing = [...guides.keys()].filter((id) => !rows.some((r) => r.id === id));
   if (missing.length) throw new Error(`content/guides: no place in data/places.json for ${missing.join(', ')}`);
-  const row = rows.find((r) => r.id === FEATURED_ID);
-  const featPhotos = [1, 2, 3].map((n) => `${FEATURED_ID}-${n}`).filter(hasPhoto);
-  const featured = row ? { row, photos: featPhotos, facts: factsOf(row.id, factsDir), hero: row.id in FEATURED_HERO && existsSync(`${publicDir}/home/hero.webp`) } : null;
-  return { rows, regions, featured, photos };
+  return { rows, regions, photos };
 };
 
 // One credit line per photo set, always visible, the same parts as the place pages (src/cards/Credit.tsx): author, licence, and the change
-// made for the CC BY licences: "cropped and resized", as every frame crops (square cards, the featured mosaic) (#154).
+// made for the CC BY licences: "cropped and resized", as every frame crops (square tiles) (#154).
 // One entry per author and licence.
 export const creditLine = (keys: string[], photos: Record<string, PhotoCredit>): string => {
   const seen = new Set<string>();
@@ -113,13 +91,10 @@ export const creditLine = (keys: string[], photos: Record<string, PhotoCredit>):
   }
   return parts.length ? `<p class="credit">Photos: ${parts.join('; ')}</p>` : '';
 };
-// the tile's own caption, so a reader ties the credit to the image (ReviewBot PR #114, P2 3)
 const photoSizes = photoSizesFile as { photos: Record<string, { w: number }> };
 
-const SAT_CREDIT = '<figcaption class="credit">Imagery: Esri, Vantor · Spain: PNOA © IGN</figcaption>';
-
 // A photo no wider than 800 px has no 800 copy, only its full file (release 47: Binissalem's photo 404'd on the Guides page)
-// Square cards crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026).
+// Square tiles crop with object-fit:cover; a photo whose centre crop cuts the subject has its own focus (owner 19 Oct 2026).
 // Every shown photo has an entry (focus, plus the hash of the file that was checked); a unit test enforces it. Centre needs no style.
 export const photoCrops = photoCropsFile as Record<string, { focus: string; file: string }>;
 const focusOf = (key: string) => { const f = photoCrops[key]?.focus; return f && f !== '50% 50%' ? f : null; };
@@ -132,64 +107,54 @@ export const photoImg = (key: string, photos: Record<string, PhotoCredit>, sizes
   return `<img src="${src}" srcset="${set.map(([u, s]) => `${u} ${s}w`).join(', ')}" sizes="${sizes}" alt="${alt ? esc(photos[key].alt) : ''}"${square && focus ? ` style="object-position:${focus}"` : ''} loading="lazy" />`;
 };
 
-const card = (g: GuideRow, photos: Record<string, PhotoCredit>): string => {
-  const top = g.photo
-    ? `<span class="ct">${photoImg(g.photo, photos, '(max-width:700px) 90vw, 300px', false, true)}</span><span class="cb"><b>${esc(g.name)}</b>`
-    : `<span class="ct typo"><b>${esc(g.name)}</b></span><span class="cb"><b class="sr">${esc(g.name)}</b>`;
-  return `<a class="gcard-c" href="../atlas/#place=${esc(g.id)}&amp;page">${top}<em>${esc(g.label)} · ${g.minutes}-minute read</em>${g.tour ? '<span class="tour">Map tour</span>' : ''}<span class="lede">${esc(g.lede)}</span></span></a>`;
+const GLYPH = '<svg class="glyph" width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 3.5 6.5 2v12.5l-5 1.5zM6.5 2l5 1.5v12.5l-5-1.5zM11.5 3.5 16.5 2v12.5l-5 1.5z"/></svg>';
+const href = (g: GuideRow) => `../atlas/#place=${esc(g.id)}&amp;page`;
+
+/** The square photo; a map tour carries the champagne "Map tour" chip on it (the owner's one exception to "no text on photos"). */
+const tile = (g: GuideRow, photos: Record<string, PhotoCredit>, sizes: string): string =>
+  `<span class="sqbox">${photoImg(g.photo!, photos, sizes, false, true)}${g.tour ? `<span class="chip">${GLYPH}<span>Map tour</span></span>` : ''}</span>`;
+
+/** The tour guides in band order: the four featured first, then the rest in list order. Only guides with a photo get a tile. */
+export const bandTours = (list: GuideList): { featured: GuideRow[]; rest: GuideRow[]; count: number } => {
+  const tours = list.rows.filter((r) => r.tour);
+  const withPhoto = tours.filter((r) => r.photo);
+  const featured = BAND_FEATURED.flatMap((id) => withPhoto.filter((r) => r.id === id));
+  return { featured, rest: withPhoto.filter((r) => !featured.includes(r)), count: tours.length };
 };
 
-// Guides shown per region on the Guides page; the rest sit behind the region link
-const PER_REGION = 6;
-
-/** Photo keys the Guides page shows as square cards. */
-export const squarePhotoKeys = (list: GuideList): string[] =>
-  list.regions.flatMap((r) => r.guides.slice(0, PER_REGION)).flatMap((g) => (g.photo ? [g.photo] : []));
+/** Photo keys the Guides page shows as square tiles: one per guide that has a photo. */
+export const squarePhotoKeys = (list: GuideList): string[] => list.rows.flatMap((g) => (g.photo ? [g.photo] : []));
 
 export const fillGuideList = (html: string, list: GuideList): string => {
-  const { regions, featured, photos } = list;
+  const { regions, photos } = list;
   const out: string[] = [];
+  const { featured, rest, count } = bandTours(list);
+  if (count) {
+    const t = (g: GuideRow, sizes: string) => `<a href="${href(g)}">${tile(g, photos, sizes)}<span class="nm">${esc(g.name)}</span></a>`;
+    out.push(
+      `<section class="band" id="map-tours" aria-labelledby="map-tours-h"><div class="wrap"><div class="rowh"><h2 id="map-tours-h">Explore with the map</h2><span class="n">${count} guides</span></div>`,
+      `<div class="stills feat">${featured.map((g) => t(g, '(max-width:700px) 240px, 280px')).join('')}</div>`,
+      rest.length ? `<div class="stills more" id="more-tours" hidden>${rest.map((g) => t(g, '(max-width:700px) 45vw, 220px')).join('')}</div>` : '',
+      rest.length ? `<button type="button" class="morebtn" id="morebtn" aria-expanded="false" aria-controls="more-tours" data-more="Show all ${count} map tours" data-less="Show fewer">Show all ${count} map tours</button>` : '',
+      '</div></section>',
+    );
+  }
+  out.push('<div class="wrap gl">');
   if (regions.length) out.push(`<nav class="jump" aria-label="Jump to a region">${regions.map((r) => `<a href="#r-${esc(r.id)}">${esc(r.name)}</a>`).join('')}</nav>`);
-  if (list.rows.some((r) => r.tour)) out.push('<p class="tourlink"><a href="#map-tours">Show only guides with a map tour</a></p>');
-  if (featured) {
-    const f = featured.row;
-    const hero = featured.hero ? FEATURED_HERO[f.id] : undefined;
-    const imgs = hero ? '' : featured.photos.map((k, i) => photoImg(k, photos, i === 0 ? '(max-width:900px) 90vw, 480px' : '(max-width:900px) 45vw, 240px', true)).join('');
-    const facts = featured.facts.map((x) => `<div><dt>${esc(x.key)}</dt><dd>${esc(x.text)}</dd></div>`).join('');
-    out.push(
-      '<div class="feat">',
-      hero ? `<figure class="hero-sat"><img src="${hero.src}" alt="${esc(hero.alt)}" width="1400" height="1540" loading="lazy" />${SAT_CREDIT}</figure>` : '',
-      imgs ? `<div class="mosaic">${imgs}</div>` : '',
-      `<div class="ft"><span class="show">Showcased guide</span><span class="kick">${esc(f.label)} · ${f.minutes}-minute read</span><h2>${esc(f.name)}</h2><p class="fl">${esc(f.lede)}</p>`,
-      facts ? `<h3>In short</h3><dl class="facts">${facts}</dl>` : '',
-      `<a class="btn a" href="../atlas/#place=${esc(f.id)}&amp;page">Read the ${esc(f.name)} guide</a></div></div>`,
-      hero ? '' : creditLine(featured.photos, photos),
-    );
-  }
-  const tours = list.rows.filter((r) => r.tour);
-  if (tours.length) {
-    out.push(
-      `<section class="region" id="map-tours" aria-labelledby="map-tours-h"><div class="rowh"><h2 id="map-tours-h">Guides with a map tour</h2><span>${tours.length}</span></div>`,
-      '<p class="showall"><a href="#">Show all guides</a></p>',
-      `<div class="rowg">${tours.map((g) => card(g, photos)).join('')}</div>`,
-      creditLine(tours.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
-      '</section>',
-    );
-  }
+  if (count) out.push('<div class="bar"><label class="tourtoggle"><input type="checkbox" id="tours" /> Show only guides with a map tour</label></div>');
   for (const r of regions) {
     const n = r.guides.length;
-    const shown = r.guides.slice(0, PER_REGION);
+    const withPhoto = r.guides.filter((g) => g.photo);
+    const also = r.guides.filter((g) => !g.photo);
+    const card = (g: GuideRow) => `<a class="ecard" href="${href(g)}"${g.tour ? ' data-tour' : ''}>${tile(g, photos, '(max-width:700px) 33vw, 140px')}<span class="nm">${esc(g.name)}</span>${g.label === 'DO' ? '' : `<span class="meta">${esc(g.label)}</span>`}</a>`;
     out.push(
-      `<section class="region" aria-labelledby="r-${esc(r.id)}"><div class="rowh"><h2 id="r-${esc(r.id)}">${esc(r.name)}</h2><span>${n} ${n === 1 ? 'guide' : 'guides'}</span></div>`,
-      '<div class="rowg">',
-      r.tile ? `<figure class="sat"><img src="../guides/${esc(r.tile)}" alt="Satellite view of ${esc(r.name)}" width="1200" height="750" loading="lazy" />${SAT_CREDIT}</figure>` : '',
-      ...shown.map((g) => card(g, photos)),
-      '</div>',
-      creditLine(shown.flatMap((g) => (g.photo ? [g.photo] : [])), photos),
-      n > PER_REGION ? `<p class="more"><a href="../atlas/#region=${esc(r.id)}&amp;page">All ${esc(r.name)} guides</a></p>` : '',
+      `<section class="region" aria-labelledby="r-${esc(r.id)}"><div class="rowh"><h2 id="r-${esc(r.id)}">${esc(r.name)}</h2><span class="n">${n} ${n === 1 ? 'guide' : 'guides'}</span></div>`,
+      `<div class="ecards">${withPhoto.map(card).join('')}</div>`,
+      also.length ? `<div class="also"><span class="al">Also</span>${also.map((g) => `<a href="${href(g)}"${g.tour ? ' data-tour' : ''}>${esc(g.name)}</a>`).join('')}</div>` : '',
       '</section>',
     );
   }
+  out.push(`<div class="foot">${creditLine(squarePhotoKeys(list), photos)}</div>`, '</div>');
   const body = out.filter(Boolean).join('\n');
   const marked = /(<!-- guide-list -->\n)[\s\S]*?(\n\s*<!-- \/guide-list -->)/;
   if (!marked.test(html)) throw new Error('guides/index.html: the <!-- guide-list --> markers are missing, so the list would ship empty');

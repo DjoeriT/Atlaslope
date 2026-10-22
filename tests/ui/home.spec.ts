@@ -90,19 +90,33 @@ test('Study and back to Atlas returns to the card that was open', async ({ page 
   await expect(page).toHaveURL(/#place=toro/);
 });
 
-test('the home tile links to the map tours on the Guides page, which lists every tour guide and can hide the rest', async ({ page }) => {
+test('the home tile links to the map tours band on the Guides page, which folds out every tour guide; the filter works in place', async ({ page }) => {
   await page.goto('../');
   const tile = page.locator('.hero a[href="guides/#map-tours"], a[href="guides/#map-tours"]').first();
   await expect(tile).toHaveText('map tours');
   await tile.click();
   await expect(page).toHaveURL(/\/guides\/#map-tours$/);
-  const names = await page.locator('#map-tours .gcard-c .cb b').allTextContents();
-  // Every guide with a story file is listed (15 since the rule A tours, owner 22 Oct 2026).
   const tours = readdirSync('content/stories').filter((f) => f.endsWith('.json'));
-  expect(names).toHaveLength(tours.length);
-  expect(names).toEqual(expect.arrayContaining(['Priorat', 'Rioja', 'Ribeira Sacra']));
-  await expect(page.locator('.gl .region').nth(1)).toBeHidden(); // while #map-tours is the target the other regions step aside
-  await expect(page.locator('.gl .feat')).toBeHidden();
-  await page.getByRole('link', { name: 'Show all guides' }).click();
-  await expect(page.locator('.gl .region').nth(1)).toBeVisible();
+  const band = page.locator('#map-tours');
+  await expect(band.getByRole('heading', { name: 'Explore with the map' })).toBeVisible();
+  await expect(band.locator('.stills.feat a')).toHaveCount(4);
+  await expect(band.locator('#more-tours')).toBeHidden();
+  await expect(band.getByRole('button', { name: `Show all ${tours.length} map tours` })).toBeVisible();
+  const btn = band.locator('button.morebtn'); // its name changes with its state
+  await expect(btn).toHaveAttribute('aria-expanded', 'false');
+  await btn.click();
+  await expect(btn).toHaveAttribute('aria-expanded', 'true');
+  await expect(btn).toHaveText('Show fewer');
+  await expect(band.locator('.stills a')).toHaveCount(tours.length); // every guide with a story file is listed (15 since the rule A tours)
+  await expect(band.locator('.stills a .nm')).toContainText(['Rioja', 'Priorat', 'Ribeira Sacra']);
+  await btn.click();
+  await expect(band.locator('#more-tours')).toBeHidden();
+  const regions = page.locator('.gl .region');
+  const all = await regions.count();
+  await page.getByLabel('Show only guides with a map tour').check();
+  await expect(page.locator('.gl .ecard:visible:not([data-tour])')).toHaveCount(0);
+  expect(await regions.locator('visible=true').count()).toBeLessThan(all);
+  await page.getByLabel('Show only guides with a map tour').uncheck();
+  expect(await regions.locator('visible=true').count()).toBe(all);
+  await expect(page.locator('p.credit')).toHaveCount(1);
 });
