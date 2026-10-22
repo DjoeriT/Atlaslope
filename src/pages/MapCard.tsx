@@ -1,8 +1,11 @@
 // The "Read with the map" card (guide redesign, C3, owner 22 Oct 2026): the place's photo with a solid champagne bar under it that reads as a
 // button. One link, so the whole photo is clickable; it opens the map tour. Only on guides that have a tour.
-import { Link, type Go } from '../cards/Link';
+import type { MouseEvent } from 'react';
+import type { Go } from '../cards/Link';
 import type { ShownPhoto } from '../facts';
+import { growFrom, reducedMotion } from '../story/unfold';
 import { strings } from '../strings';
+import { selectionToHash, type Selection } from '../url';
 import { PHOTO_MAX_REM, Pic } from './Pic';
 
 const t = strings.story.card;
@@ -12,14 +15,24 @@ const Glyph = () => (
 );
 
 export function MapCard({ id, photo, minutes, stops, go }: { id: string; photo?: ShownPhoto; minutes: number; stops: number; go: Go }) {
+  const to: Selection = { kind: 'place', id, page: true, story: true };
+  const open = async (e: MouseEvent<HTMLAnchorElement>) => {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    const img = e.currentTarget.querySelector<HTMLImageElement>('.mc-img');
+    if (reducedMotion() || !img) { go(to); return; }
+    const release = await growFrom(img); // the photo grows to the full screen, then the map mode opens under it
+    go(to);
+    await release();
+  };
   return (
-    <Link className="mapcard" to={{ kind: 'place', id, page: true, story: true }} go={go}>
+    <a className="mapcard" href={selectionToHash(to)} onClick={open}>
       <span className="mc-ph">{photo && <Pic photo={photo} slot={PHOTO_MAX_REM} lazy={false} className="mc-img" />}</span>
       <span className="mc-bar">
         <Glyph />
         <span className="mc-txt"><span className="mc-t">{t.title}</span><span className="mc-s">{t.sub(minutes, stops)}</span></span>
         <span className="mc-go" aria-hidden="true">→</span>
       </span>
-    </Link>
+    </a>
   );
 }
