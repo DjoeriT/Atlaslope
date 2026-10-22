@@ -21,30 +21,35 @@ async function open(page: Page, hash: string, seed?: unknown) {
   await page.goto(`./?now=${NOW}${hash}`);
 }
 
-test('the Quiz screen has two doors with the due and new counts; nothing due offers five new places', async ({ page }) => {
+test('a returning learner sees Up next with the due and new counts, the new places as photos, and practice', async ({ page }) => {
   await open(page, '#quiz', SEED);
-  await expect(page.locator('.card h1')).toHaveText('Study or review');
-  await expect(page.locator('.door').first().locator('.big')).toHaveText('3 due and 5 new today');
-  await expect(page.locator('.door').first().locator('.sub')).toContainText('Up next:');
+  await expect(page.locator('.card.learn #qh')).toHaveText('Up next');
+  await expect(page.locator('.card.learn .big')).toHaveText('3 due and 5 new today');
+  await expect(page.locator('.card.learn p.sub')).toHaveText(/^Five new places/);
+  await expect(page.getByRole('list', { name: 'The places up next' }).getByRole('listitem')).toHaveCount(5);
+  await expect(page.locator('.card.learn p.credit')).toContainText('Photos:');
   await expect(page.getByRole('button', { name: /^Start today's round · \d+ questions$/ })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Practise any mix' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Choose places to practise' })).toBeVisible();
+  await expect(page.locator('.card.learn .scope')).toContainText('Taking a course?');
 });
 
-test('a first visit leads with where to start, not "Nothing due", and offers five new places', async ({ page }) => {
+test('a first visit opens with the intro: what Learn is, the first five places as photos, and where to begin', async ({ page }) => {
   await open(page, '#quiz');
-  await expect(page.locator('.door').first().locator('.big')).toHaveText(/^Start with 5 places in .+\.$/);
-  await expect(page.locator('.door').first()).not.toContainText('Nothing due');
-  await expect(page.getByRole('button', { name: 'Learn 5 new places' })).toBeVisible();
-  await expect(page.locator('.focusline')).toContainText('Following the course order.');
+  await expect(page.locator('.card.learn #qh')).toHaveText("Learn Spain's wine places, a few at a time.");
+  await expect(page.locator('.card.learn')).toContainText('Learn asks about each place again just before you would forget it.');
+  await expect(page.locator('.card.learn')).not.toContainText('Nothing due');
+  await expect(page.getByRole('list', { name: 'The places up next' }).getByRole('listitem')).toHaveCount(5);
+  await expect(page.getByRole('button', { name: /^Begin with five places(, starting)? in ".+"$/ })).toBeVisible();
+  await expect(page.locator('.for-btn')).toHaveText(/^All of Spain/);
 });
 
 test('focus: Save changes the new places, Clear then Undo brings the picks back, Close saves nothing', async ({ page }) => {
   await open(page, '#quiz', SEED);
-  const newToday = () => page.locator('.door').first().locator('.sub').textContent();
+  const newToday = () => page.locator('.card.learn p.sub').textContent();
   const before = await newToday();
 
   await page.getByRole('link', { name: 'Set a focus' }).click();
-  await expect(page).toHaveURL(/#study=focus/);
+  await expect(page).toHaveURL(/#learn=focus/);
   const chips = page.getByRole('group', { name: 'Regions in your focus' }).getByRole('checkbox');
   const last = chips.last();
   await last.click();
@@ -60,7 +65,6 @@ test('focus: Save changes the new places, Clear then Undo brings the picks back,
   await page.getByRole('button', { name: 'Save focus' }).click();
   await expect(page.locator('.focusline')).toContainText(regionName);
   expect((await stored(page)).focus).toHaveLength(1);
-  await expect(page.locator('.door').first().locator('.sub')).toContainText('from your focus');
   expect(await newToday()).not.toBe(before);
 
   // Clear, then Undo, in the focus screen.
@@ -103,13 +107,13 @@ test('practise any mix: ticks, the partial state, the real count, a review round
   await page.getByRole('radio', { name: '10' }).click();
   await page.getByRole('button', { name: /^Start · / }).click();
   await expect(page.locator('.q-num')).toContainText('Review');
-  await expect(page).toHaveURL(/#study($|&)/);
+  await expect(page).toHaveURL(/#learn($|&)/);
 });
 
 test('progress file: save downloads JSON, load restores the log, Undo brings the earlier one back, a bad file changes nothing', async ({ page }) => {
   await open(page, '#quiz', SEED);
   await page.getByRole('link', { name: 'Save or load progress' }).click();
-  await expect(page).toHaveURL(/#study=progress-file/);
+  await expect(page).toHaveURL(/#learn=progress-file/);
   await expect(page.locator('.facts')).toContainText('3 answers since');
   await expect(page.getByText('Add AtlaSlope to your Home Screen')).toBeVisible();
 
@@ -141,9 +145,9 @@ test('blocked storage: the quiz still opens and says progress will not be kept',
     Object.defineProperty(window, 'localStorage', { get() { throw new Error('blocked'); } });
   });
   await page.goto(`./?now=${NOW}#quiz`);
-  await expect(page.locator('#qh')).toHaveText('Study or review');
+  await expect(page.locator('.card.learn #qh')).toBeVisible();
   await expect(page.getByRole('status').filter({ hasText: "can't be kept" })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Learn 5 new places' })).toBeVisible();
+  await expect(page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ })).toBeVisible();
 });
 
 test('Home has no Today card before there is progress', async ({ page }) => {
@@ -152,13 +156,13 @@ test('Home has no Today card before there is progress', async ({ page }) => {
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
 });
 
-test('the Atlas has no Today card with progress either; the Study door carries what is due', async ({ page }) => {
+test('the Atlas has no Today card with progress either; the Learn door carries what is due', async ({ page }) => {
   // Atlas and Study apart (owner, 18 Oct 2026: "Now I see Study todos in the Atlas").
   await open(page, '#country=spain', SEED);
   await expect(page.locator('.card h1')).toHaveText('Spain');
   await expect(page.getByRole('region', { name: 'Today' })).toHaveCount(0);
-  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Study' }).click();
-  await expect(page.locator('.door').first().locator('.big')).toHaveText('3 due and 5 new today');
+  await page.getByRole('navigation', { name: 'Site' }).getByRole('link', { name: 'Learn' }).click();
+  await expect(page.locator('.card.learn .big')).toHaveText('3 due and 5 new today');
 });
 
 test('the manifest is linked and parses', async ({ page, request }) => {
@@ -180,13 +184,13 @@ test('the manifest is linked and parses', async ({ page, request }) => {
 
 test('a place card opened from the quiz comes back to the same question', async ({ page }) => {
   await open(page, '#quiz');
-  await page.getByRole('button', { name: 'Learn 5 new places' }).click();
+  await page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ }).click();
 
   // The intro: More about, and back.
   const name = (await page.locator('h1.intro-h').textContent())!;
   await page.getByRole('button', { name: `More about ${name}` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(name);
-  await page.getByRole('button', { name: /Back to Study/ }).click();
+  await page.getByRole('button', { name: /Back to Learn/ }).click();
   await expect(page.locator('h1.intro-h')).toHaveText(name);
   // Each "Got it" only once its intro is on screen: "Got it" moves on inside a view transition, and a click before the step has
   // changed lands on the step just left, so two clicks advance once and the round is one intro short (flaky under load, 18 Oct 2026).
@@ -204,9 +208,9 @@ test('a place card opened from the quiz comes back to the same question', async 
   const feedback = await page.locator('.feedback').textContent();
   await page.getByRole('button', { name: `Read the ${target} guide` }).click();
   await expect(page.locator('.card:visible h1:not(.intro-h)')).toHaveText(target);
-  await page.getByRole('button', { name: /Back to Study/ }).click();
+  await page.getByRole('button', { name: /Back to Learn/ }).click();
   await expect(page.locator('.q-num')).toHaveText(question!);
   await expect(page.locator('.feedback')).toHaveText(feedback!);
   await expect(page.locator('.choice[disabled]').first()).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Back to Study' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Back to Learn' })).toHaveCount(0);
 });

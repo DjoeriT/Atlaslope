@@ -10,7 +10,7 @@ in the same PR. When this file and the code disagree, fix whichever is wrong.
 ## What a guide is
 - **A guide is a place's whole page.** Every place has one. **Terroir** is the written section of a guide, never "the Terroir guide".
 - **A guide is a reference for anyone who loves wine.** It is meant to be fun to browse, not exam prep. Exam framing ("remember",
-  "for the exam") belongs to Study. A guide links into Study only through a small "Test me" at the end.
+  "for the exam") belongs to Learn. A guide links into Learn only through a small "Test me" at the end.
 - **"Why X tastes the way it does"** is the spine of the page: the place, its weather and its ground explain what the rules make and
   how the wine tastes.
 
@@ -38,7 +38,7 @@ Status: chosen by the owner 19 Oct 2026 (mock `https://claude.ai/artifact/P2utJJ
 9. **More to explore** (`more`): History, Places to visit (with When to go: harvest and festivals), Food to try, Did you know (one
    surprising sourced fact). Shown only when filled. Content waits for the owner's go on outside sources (issue #103).
 10. **If you like X, try.** Two or three places with the same grape or a similar climate, computed from data, with no hand-written text.
-11. **Test me** (a small door into Study) and **Sources** (each document once, in full).
+11. **Test me** (a small door into Learn) and **Sources** (each document once, in full).
 
 Later, and only on the owner's go: option D's cause-to-taste chain on top of C (issue #106), if the chains hold up against the
 pliegos for the thin places.
@@ -51,26 +51,26 @@ shape C order above. Code: `src/pages/PlacePage.tsx` (PR #107).
 under the title, and the sheet's written climate or soil shows only when no chapter tells that beat, and the written altitude is hidden on any page with
 a guide (one fact, once).
 
-**Fact sheet only** (no Terroir written yet, or a place outside Study). The same four beats, built from the fact sheet alone:
+**Fact sheet only** (no Terroir written yet, or a place outside Learn). The same four beats, built from the fact sheet alone:
 | Part | Shows | Comes from |
 |---|---|---|
 | 22 Oct 2026 | New place sheets can be filled by `headless.py --sheets` (`pack.py facts`), first used for Portugal batch 1; no change to the guide format. | `Tools/guides/headless.py`, `Tools/guides/pack.py` |
 | Title, labels | always; no reading time | `data/places.json`, `content/curriculum.json` |
 | Spine | "Why X tastes the way it does", the sheet's why line as the lede | `why` |
 | The place | level, official name, also within, zone list | places, zone list |
-| The weather | the sheet's climate line; the Köppen chart only for Study places | `climate`, measures |
-| The ground | soil line, written altitude; the measured altitude range only for Study places | `soil`, `altitude`, measures |
+| The weather | the sheet's climate line; the Köppen chart only for Learn places | `climate`, measures |
+| The ground | soil line, written altitude; the measured altitude range only for Learn places | `soil`, `altitude`, measures |
 | What the rules make | famous styles, main grapes, also allowed, wine types | `famous`, `grapes`, `styles` |
 | How it tastes | when the sheet has `tastes` | `tastes` |
 | In short | only with 3 or more of: grapes, climate, soil, zones or altitude, style or wine types | sheet fields, measures |
-| Producers, extras | only when filled; producers never for places outside Study | sheet, `label` / `more` |
-| If you like this, try; Test me | Study places only | computed |
+| Producers, extras | only when filled; producers never for places outside Learn | sheet, `label` / `more` |
+| If you like this, try; Test me | Learn places only | computed |
 | Sources | always | cites |
 
-What the 30 places outside Study (`quiz: "none"`: 27 Vinos de Pago, Cava, Catalunya, Islas Canarias; PR #105) never show: photos,
+What the 30 places outside Learn (`quiz: "none"`: 27 Vinos de Pago, Cava, Catalunya, Islas Canarias; PR #105) never show: photos,
 measured charts (climate share, altitude range), producers, "Test me", "If you like this, try". Their sheets hold written rows only
 (why, how it tastes, famous styles, grapes, wine types, climate, soil, altitude where the document gives it), each with its source
-line; `src/facts/check.ts` accepts sheets for them, and the all-or-nothing rule per region still covers Study places only. Their Atlas
+line; `src/facts/check.ts` accepts sheets for them, and the all-or-nothing rule per region still covers Learn places only. Their Atlas
 tile headline restates the why line (`content/tiles.json`). No beat is filled with text to make the page look complete: a short page is
 the honest page.
 
@@ -87,6 +87,7 @@ level; a main grape only where the text singles it out. Process: Sonnet draft, O
 Each change to the guide format, newest first. Add a row in the same PR as the change (rule in `CLAUDE.md`).
 | Date | Change | Where |
 |---|---|---|
+| 22 Oct 2026 | Words only: "Study" is "Learn" in this file ("Test me" leads into Learn); "Study region" stays (owner). No format change. | this file, `src/strings.ts` |
 | 22 Oct 2026 | Portugal sources: writers read Portuguese official texts and write English; the newest EU text wins (Vinho Verde: the 2024 amendment in the Official Journal, fetched through the Publications Office, cited without page numbers as it has none). Fact sheets for a second country live in `content/facts/<cc>-<region>.json` with region id `<cc>-<region>` (`pt-north`). | `Tools/guides/sources.py`, `content/facts/pt-north.json` |
 | 22 Oct 2026 | Page crops: every photo a guide page with a map tour draws in a fixed frame (map card, stops, zone cards) has a checked focus and file hash in `src/pages/pageCrops.json` (replaces `data/story/photo-focus.json`); a unit test enforces it (no guide format change) | "Photo crops" below |
 | 21 Oct 2026 | Story files ("Map tours"): `content/stories/<id>.json` walks a guide on the map; the guide itself is unchanged | "Story files" below |
@@ -94,7 +95,7 @@ Each change to the guide format, newest first. Add a row in the same PR as the c
 | 19 Oct 2026 | Pipeline runs from a fixed workflow script per region (no format change) | Andalucía PR |
 | 19 Oct 2026 | Writing pipeline: fresh helper per guide, machine check, Opus check of every sentence (no format change) | PR #110 |
 | 19 Oct 2026 | Read the label lists only terms not already in the famous styles; famous styles stay in the rules beat | Green Spain pilot PR |
-| 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Study | this file, "Two formats"; PR #105 |
+| 19 Oct 2026 | Fact-sheet-only format recorded as its own format; sheets for the 30 places outside Learn | this file, "Two formats"; PR #105 |
 | 19 Oct 2026 | Shape C: four beats as the page, How it tastes, In short, extras; Terroir chapters get `beat`; `label`, `say`, `more`; named-place flights warned on | PR #107, Green Spain pilot PR |
 | 19 Oct 2026 | Pliego required for Terroir; guides are a reference, not exam-centric; the guide is the whole page | owner cards, Green Spain pilot thread |
 | 18 Oct 2026 | Short source tags with one Sources list; measured charts always next to Spain; course labels under the title | `Review/visual-style.md` |
@@ -173,20 +174,20 @@ Course structure from Wine Scholar and WSET decides which places are covered, ne
 
 ## The rest of the guide
 - **Fact sheet** (`content/facts/<region>.json`): the why line, grapes, styles, climate, soil, altitude, tastes, famous styles and
-  producers, each with a cite. It feeds the beats' facts, At a glance, In short, the map card and Study. The schema is in
+  producers, each with a cite. It feeds the beats' facts, At a glance, In short, the map card and Learn. The schema is in
   `src/facts/types.ts`, the check in `src/facts/check.ts`.
 - **Photos** (`data/photos.json`): real photos of that place, checked against where they were taken, 3 per place (5 where good ones
   exist). Wikimedia Commons under CC BY, CC BY-SA or public domain. One always-visible credit line. English alt text that says what is
   in the picture.
 - **Map flags** (`content/flags.json`): 3 to 5 key places per region, only places the pliego or EU document names, with two short lines,
   the source tag and Fly to. Shown while that place is selected. Positions are OpenStreetMap points.
-- **Study** writes its questions from the fact sheets and the map. Terroir text is not quizzed.
+- **Learn** writes its questions from the fact sheets and the map. Terroir text is not quizzed.
 
 ## State (keep current)
 - Terroir written: Rioja and its three zones (release 10), nine Green Spain places (release 37), 16 Castilla y León places
   (release 38), eight Andalucía places (release 39), 11 Ebro places (PR #119), 11 Mediterranean
   places (Valencia, Utiel-Requena, Alicante, Los Balagueses, Yecla, Jumilla, Bullas, Tharsys, Chozas Carrascal, Vera de Estenas,
   El Terrerazo; PR #123), 11 Canarias places (PR #124, incl. Islas Canarias,
-  a place outside Study: Terroir pending the owner's OK).
+  a place outside Learn: Terroir pending the owner's OK).
 - Shape C: live since release 36 (PR #107).
 - More to explore: slots only, content waits on #103. The D chain waits on #106.

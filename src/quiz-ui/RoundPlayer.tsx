@@ -1,6 +1,6 @@
 import { withMotion } from '../app/motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { guideOf, measuresOf, sheetOf } from '../facts';
+import { guideOf, loadGuide, measuresOf, sheetOf } from '../facts';
 import type { QuizView } from '../map/quiz';
 import { afterAnswer, makeQuestion, revealFact as grapeOf, revealWhy, seededRandom, type Answer, type Question, type Round } from '../quiz';
 import { strings } from '../strings';
@@ -118,6 +118,12 @@ export function RoundPlayer({ kind, round: first, tree, quiz, pick, onView, onOp
       picked: outcome ? (outcome.skipped ? null : outcome.picked ?? null) : tentative, revealed: !!outcome,
     }));
   }, [index, tentative, !!outcome, round.items.length]);
+
+  // Guides load one at a time (decision #38): fetch this step's guide so a miss can show its why line; the re-render picks it up.
+  const [, setGuidesIn] = useState(0);
+  useEffect(() => {
+    if (place && !guideOf(place.id)) loadGuide(place.id).then((g) => { if (g) setGuidesIn((n) => n + 1); }, () => undefined);
+  }, [place?.id]);
 
   if (!item || !place) return null;
   const name = (id: string) => tree.getPlace(id)?.name ?? id;

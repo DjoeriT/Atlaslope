@@ -151,7 +151,7 @@
    ],
    "quiz": "core",
    "quizFindIt": false,
-   "quizNote": "Overlaps other DOs across six regions, so Study asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3).",
+   "quizNote": "Overlaps other DOs across six regions, so Learn asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3).",
    "northSouth": 33,
    "courseOrder": 43
   },
@@ -1545,7 +1545,7 @@
    ],
    "quiz": "core",
    "quizFindIt": false,
-   "quizNote": "Covers most of the other Catalan DOs, so Study asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3).",
+   "quizNote": "Covers most of the other Catalan DOs, so Learn asks what is this and facts, never find it (owner, 21 Oct 2026: named at WSET Level 2 and 3).",
    "northSouth": 35,
    "courseOrder": 45
   },

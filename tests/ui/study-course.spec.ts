@@ -1,7 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
-// "My course" on the Study screen (Study step 1): the setting, a round under WSET Level 2, the guide's why line and the guide link on a miss.
+// "Learning for" on the Learn screen (Learn start card, 21 Oct 2026; was "My course", Study step 1): the setting, a round under WSET Level 2, the guide's why line and the guide link on a miss.
 // A fixed clock (?now=) and a fresh browser; no network.
 
 const places = JSON.parse(readFileSync('data/places.json', 'utf8')).places as Array<{ id: string; name: string }>;
@@ -19,13 +19,15 @@ async function open(page: Page) {
 test('pick a course: it is kept, and the round asks only its places', async ({ page }) => {
   test.slow();
   await open(page);
-  await expect(page.locator('.course summary')).toContainText('My course: No course.');
-  await page.locator('.course summary').click();
-  await page.getByRole('radio', { name: /WSET Level 2/ }).check();
-  await expect(page.locator('.course summary')).toContainText('My course: WSET Level 2.');
-  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('atlaslope.quiz')!).course)).toBe('wset-2');
+  await expect(page.locator('.for-btn')).toHaveText(/^All of Spain/);
+  await page.locator('.for-btn').click();
+  await page.getByRole('list', { name: 'Choose what you are learning for' }).getByRole('button', { name: /WSET Level 2 · Spain/ }).click();
+  await expect(page.locator('.for-btn')).toHaveText(/^WSET Level 2 · Spain/);
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('atlaslope.quiz')!).course)).toBe('wset-2-es');
+  // The places shown up next are the course's too.
+  for (const name of await page.getByRole('list', { name: 'The places up next' }).getByRole('listitem').allTextContents()) expect(wset2.some((w) => w.startsWith(name))).toBe(true);
 
-  await page.getByRole('button', { name: 'Learn 5 new places' }).click();
+  await page.getByRole('button', { name: /^(Begin with five places|Start with these five places)/ }).click();
   for (let i = 0; i < 5; i++) {
     await expect(page.locator('h1.intro-h')).toHaveText(oneOf);
     await page.getByRole('button', { name: 'Got it' }).click();

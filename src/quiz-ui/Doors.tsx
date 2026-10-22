@@ -77,26 +77,26 @@ export function Doors({ tree, quiz, round, empty, onStudy }: Props) {
         {due === 0 && fresh.length === 0 && <p>{d.nothingDue}</p>}
         {fresh.length > 0 && <p className="sub">{d.newPlaces(fresh.length, region)}</p>}
         <PlacePhotos tree={tree} ids={fresh} label={d.photosLabel} />
-          <div className="stick">
-            {due > 0
-              ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.start(questionCount(round))}</button>
-              : fresh.length > 0
-                ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.startThese(fresh.length)}</button>
-                : <button className="btn primary wide" onClick={() => onStudy(true)}>{d.learnExtra}</button>}
-          </div>
-          <p className="focusline">
-            {focus.length ? d.focusOn(listOf(focusNames(tree, focus))) : d.focusNone}{' '}
-            <a href={quizToHash({ sub: 'focus' })}>{focus.length ? d.change : d.setFocus}</a>
-          </p>
-          {due === 0 && next && <p className="note">{d.nextDue(dayName(next.day, false), next.places)}</p>}
-          <section className="door" aria-labelledby="d2">
-            <h2 id="d2">{chosen ? d.practiseCourse(course.label) : d.practiseAll}</h2>
-            <p>{chosen ? d.practiseLedeCourse : d.practiseLedeAll}</p>
-            <a className="btn wide" href={quizToHash({ sub: 'practise' })}>{d.practise}</a>
-          </section>
-          {/* Moved here from the logo's menu in website slice 2: the logo now goes home, and the file is Learn's progress. */}
-          <p className="note saveload"><a href={quizToHash({ sub: 'progress-file' })}>{strings.topBar.saveLoad}</a></p>
-          <PhotoCredit tree={tree} ids={fresh} />
+        <div className="stick">
+          {due > 0
+            ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.start(questionCount(round))}</button>
+            : fresh.length > 0
+              ? <button className="btn primary wide" onClick={() => onStudy(false)}>{d.startThese(fresh.length)}</button>
+              : <button className="btn primary wide" onClick={() => onStudy(true)}>{d.learnExtra}</button>}
+        </div>
+        <p className="focusline">
+          {focus.length ? d.focusOn(listOf(focusNames(tree, focus))) : d.focusNone}{' '}
+          <a href={quizToHash({ sub: 'focus' })}>{focus.length ? d.change : d.setFocus}</a>
+        </p>
+        {due === 0 && next && <p className="note">{d.nextDue(dayName(next.day, false), next.places)}</p>}
+        <section className="door" aria-labelledby="d2">
+          <h2 id="d2">{chosen ? d.practiseCourse(course.label) : d.practiseAll}</h2>
+          <p>{chosen ? d.practiseLedeCourse : d.practiseLedeAll}</p>
+          <a className="btn wide" href={quizToHash({ sub: 'practise' })}>{d.practise}</a>
+        </section>
+        {/* Moved here from the logo's menu in website slice 2: the logo now goes home, and the file is Learn's progress. */}
+        <p className="note saveload"><a href={quizToHash({ sub: 'progress-file' })}>{strings.topBar.saveLoad}</a></p>
+        <PhotoCredit tree={tree} ids={fresh} />
       </div>
     </section>
   );
