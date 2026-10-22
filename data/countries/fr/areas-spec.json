@@ -1,0 +1,35 @@
+{
+  "$comment": "France pilot outlines (decisions #54, #55), read by Tools/data/build_fr_areas.py against INAO «Délimitation parcellaire des AOC viticoles» (data.gouv.fr, 2026-10-19 file). Each entry names the INAO 'app' (appellation) and, for a zone, the 'denom' (dénomination). INAO rows are one per denomination and commune; the script dissolves them. Informative only: INAO's plans portal is the binding map (#58).",
+  "chablis": {
+    "app": "Chablis",
+    "denom": "Chablis",
+    "zones": {
+      "chablis-premier-cru": {"app": "Chablis", "denom": "Chablis premier cru"},
+      "chaume-de-talvat": {"app": "Chablis", "denom": "Chablis premier cru Chaume de Talvat", "parent": "chablis-premier-cru"},
+      "cote-de-jouan": {"app": "Chablis", "denom": "Chablis premier cru Côte de Jouan", "parent": "chablis-premier-cru"},
+      "fourchaume": {"app": "Chablis", "denom": "Chablis premier cru Fourchaume", "parent": "chablis-premier-cru"},
+      "les-beauregards": {"app": "Chablis", "denom": "Chablis premier cru Les Beauregards", "parent": "chablis-premier-cru"},
+      "les-fourneaux": {"app": "Chablis", "denom": "Chablis premier cru Les Fourneaux", "parent": "chablis-premier-cru"},
+      "mont-de-milieu": {"app": "Chablis", "denom": "Chablis premier cru Mont de Milieu", "parent": "chablis-premier-cru"},
+      "vaucoupin": {"app": "Chablis", "denom": "Chablis premier cru Vaucoupin", "parent": "chablis-premier-cru"},
+      "vaugiraut": {"app": "Chablis", "denom": "Chablis premier cru Vaugiraut", "parent": "chablis-premier-cru"},
+      "vaupulent": {"app": "Chablis", "denom": "Chablis premier cru Vaupulent", "parent": "chablis-premier-cru"},
+      "vosgros": {"app": "Chablis", "denom": "Chablis premier cru Vosgros", "parent": "chablis-premier-cru"},
+      "chablis-grand-cru": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru"},
+      "blanchot": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Blanchot", "parent": "chablis-grand-cru"},
+      "bougros": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Bougros", "parent": "chablis-grand-cru"},
+      "grenouilles": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Grenouilles", "parent": "chablis-grand-cru"},
+      "les-clos": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Les Clos", "parent": "chablis-grand-cru"},
+      "preuses": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Preuses", "parent": "chablis-grand-cru"},
+      "valmur": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Valmur", "parent": "chablis-grand-cru"},
+      "vaudesir": {"app": "Chablis Grand Cru", "denom": "Chablis Grand Cru Vaudésir", "parent": "chablis-grand-cru"}
+    },
+    "notMapped": "Petit Chablis is its own AOC over the same 17 communes; not a pilot place."
+  },
+  "pauillac": {
+    "app": "Pauillac",
+    "denom": "Pauillac",
+    "alsoWithin": ["Haut-Médoc", "Médoc", "Bordeaux"],
+    "notMapped": "The 1855 classified growths are châteaux, not land (#56): a text list in the guide."
+  }
+}

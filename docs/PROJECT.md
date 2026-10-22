@@ -135,7 +135,7 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
-- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Open: whether to approve a next country, Portugal or France first (France core ~2.5-3.5M [A], then re-measure; plan in #149).
+- Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Next countries: Portugal, then France (owner, 22 Oct 2026; France plan `Review/countries/france-plan.md`, decisions #52-#58, pilot waits for Portugal's mainland and #205); Italy pilot right after the France pilot (owner, 22 Oct 2026; plan `Review/countries/italy-plan.md`, decisions #59-#66).
 - Portugal pilot (22 Oct 2026): Douro and Vinho Verde have outlines, sheets and guides at `/pt/<id>/`; Home and Guides stay Spain-only until the owner picks a mock option (`docs/handoffs/2026-10-22-portugal-pilot.md`). Guides 0.75M each [V]; the session around them 18.9M re-read, mostly building the tooling.
 - Learn: rename "Study region" and "The wine study atlas"?
 - From 22 Oct: Raimat (Costers del Segre) "far east" per the pliego while the map shows west, add a note? Cangas rock key shows "Sandstones and
