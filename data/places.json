@@ -93,6 +93,36 @@
      "id": "pt-north",
      "name": "North",
      "order": 1
+    },
+    {
+     "id": "pt-centre",
+     "name": "Centre",
+     "order": 2
+    },
+    {
+     "id": "pt-lisboa",
+     "name": "Lisboa",
+     "order": 3
+    },
+    {
+     "id": "pt-tejo",
+     "name": "Tejo",
+     "order": 4
+    },
+    {
+     "id": "pt-setubal",
+     "name": "Setúbal Peninsula",
+     "order": 5
+    },
+    {
+     "id": "pt-alentejo",
+     "name": "Alentejo",
+     "order": 6
+    },
+    {
+     "id": "pt-algarve",
+     "name": "Algarve",
+     "order": 7
     }
    ]
   }
@@ -2256,8 +2286,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
-   "northSouth": 2,
-   "courseOrder": 2
+   "northSouth": 3,
+   "courseOrder": 3
   },
   {
    "id": "vinho-verde",
@@ -2278,6 +2308,486 @@
    "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
    "northSouth": 1,
    "courseOrder": 1
+  },
+  {
+   "id": "porto",
+   "name": "Porto",
+   "official": "Porto",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-north",
+   "euFile": "PDO-PT-A1540",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.3232,
+    41.1676
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 4,
+   "courseOrder": 4
+  },
+  {
+   "id": "tras-os-montes",
+   "name": "Trás-os-Montes",
+   "official": "Trás-os-Montes",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-north",
+   "euFile": "PDO-PT-A1466",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -6.5952,
+    41.4093
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "tavora-varosa",
+   "name": "Távora-Varosa",
+   "official": "Távora-Varosa",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-north",
+   "euFile": "PDO-PT-A1541",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.5386,
+    40.9775
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 5,
+   "courseOrder": 5
+  },
+  {
+   "id": "dao",
+   "name": "Dão",
+   "official": "Dão",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-centre",
+   "euFile": "PDO-PT-A1534",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.8522,
+    40.5053
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 7,
+   "courseOrder": 7
+  },
+  {
+   "id": "bairrada",
+   "name": "Bairrada",
+   "official": "Bairrada",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-centre",
+   "euFile": "PDO-PT-A1537",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.5097,
+    40.4365
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 8,
+   "courseOrder": 8
+  },
+  {
+   "id": "beira-interior",
+   "name": "Beira Interior",
+   "official": "Beira Interior",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-centre",
+   "euFile": "PDO-PT-A1546",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.4227,
+    40.0642
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 9,
+   "courseOrder": 9
+  },
+  {
+   "id": "lafoes",
+   "name": "Lafões",
+   "official": "Lafões",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-centre",
+   "euFile": "PDO-PT-A1455",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.1376,
+    40.7528
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 6,
+   "courseOrder": 6
+  },
+  {
+   "id": "encostas-daire",
+   "name": "Encostas d'Aire",
+   "official": "Encostas d'Aire",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-centre",
+   "euFile": "PDO-PT-A1470",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.7577,
+    39.6721
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 10,
+   "courseOrder": 10
+  },
+  {
+   "id": "lisboa",
+   "name": "Lisboa",
+   "official": "Lisboa",
+   "kind": "VR",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PGI-PT-A1535",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.0118,
+    39.3527
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 11,
+   "courseOrder": 11
+  },
+  {
+   "id": "colares",
+   "name": "Colares",
+   "official": "Colares",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1461",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.4144,
+    38.8263
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 18,
+   "courseOrder": 18
+  },
+  {
+   "id": "carcavelos",
+   "name": "Carcavelos",
+   "official": "Carcavelos",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1462",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.3884,
+    38.7219
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 19,
+   "courseOrder": 19
+  },
+  {
+   "id": "bucelas",
+   "name": "Bucelas",
+   "official": "Bucelas",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1463",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.1377,
+    38.8894
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 17,
+   "courseOrder": 17
+  },
+  {
+   "id": "torres-vedras",
+   "name": "Torres Vedras",
+   "official": "Torres Vedras",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1465",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.2627,
+    39.0731
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 15,
+   "courseOrder": 15
+  },
+  {
+   "id": "alenquer",
+   "name": "Alenquer",
+   "official": "Alenquer",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1468",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.0391,
+    39.0981
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 14,
+   "courseOrder": 14
+  },
+  {
+   "id": "obidos",
+   "name": "Óbidos",
+   "official": "Óbidos",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1469",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.0912,
+    39.2985
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 12,
+   "courseOrder": 12
+  },
+  {
+   "id": "arruda",
+   "name": "Arruda",
+   "official": "Arruda",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-lisboa",
+   "euFile": "PDO-PT-A1471",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -9.0769,
+    38.9778
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 16,
+   "courseOrder": 16
+  },
+  {
+   "id": "dotejo",
+   "name": "DoTejo",
+   "official": "DoTejo",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-tejo",
+   "euFile": "PDO-PT-A1544",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.4881,
+    39.2616
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 13,
+   "courseOrder": 13
+  },
+  {
+   "id": "setubal",
+   "name": "Setúbal",
+   "official": "Setúbal",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-setubal",
+   "euFile": "PDO-PT-A1457",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.8362,
+    38.6121
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 20,
+   "courseOrder": 20
+  },
+  {
+   "id": "palmela",
+   "name": "Palmela",
+   "official": "Palmela",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-setubal",
+   "euFile": "PDO-PT-A1460",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.8362,
+    38.6121
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 21,
+   "courseOrder": 21
+  },
+  {
+   "id": "alentejo",
+   "name": "Alentejo",
+   "official": "Alentejo",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-alentejo",
+   "euFile": "PDO-PT-A1542",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.6587,
+    38.4195
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 22,
+   "courseOrder": 22
+  },
+  {
+   "id": "lagos",
+   "name": "Lagos",
+   "official": "Lagos",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-algarve",
+   "euFile": "PDO-PT-A1454",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.8001,
+    37.1922
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 24,
+   "courseOrder": 24
+  },
+  {
+   "id": "portimao",
+   "name": "Portimão",
+   "official": "Portimão",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-algarve",
+   "euFile": "PDO-PT-A1452",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.5831,
+    37.1916
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 25,
+   "courseOrder": 25
+  },
+  {
+   "id": "lagoa",
+   "name": "Lagoa",
+   "official": "Lagoa",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-algarve",
+   "euFile": "PDO-PT-A1450",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -8.2054,
+    37.2047
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 23,
+   "courseOrder": 23
+  },
+  {
+   "id": "tavira",
+   "name": "Tavira",
+   "official": "Tavira",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "portugal",
+   "region": "pt-algarve",
+   "euFile": "PDO-PT-A1449",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    -7.7599,
+    37.1478
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Portugal joins when its WSET course is in Study.",
+   "northSouth": 26,
+   "courseOrder": 26
   }
  ]
 }

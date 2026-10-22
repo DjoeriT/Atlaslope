@@ -1,0 +1,82 @@
+{
+ "id": "portimao",
+ "title": "Why Portimão tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Portimão lies in a south-facing amphitheatre, with more than 3,000 hours of sun a year. Its reds are velvety and full-bodied, with the alcohol noticeable.",
+  "cite": [
+   "portimao-doc:p5",
+   "portimao-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "barrocal",
+   "beat": "place",
+   "title": "The Barrocal by the sea",
+   "paras": [
+    "The appellation covers the municipality of Portimão in the Algarve. That means the parish of Alvar and part of the parishes of Mexilhoeira Grande and Portimão.",
+    "The vines grow in the Barrocal. The Atlantic Ocean and the Alvor estuary (the ria de Alvor) both reach them with a maritime influence."
+   ],
+   "cite": [
+    "portimao-doc:p4",
+    "portimao-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Ria de Alvor",
+     "point": [
+      -8.595,
+      37.135
+     ],
+     "zoom": 11,
+     "caption": "The Alvor estuary, one of the two sea influences on the vineyards, along with the Atlantic.",
+     "cite": [
+      "portimao-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Hot, dry and very sunny",
+   "paras": [
+    "Its far southern position makes the climate markedly Mediterranean. So do a mountain barrier against cold northern winds and the south-facing amphitheatre.",
+    "It is hot, dry and not very windy, with very small temperature swings. Sunshine averages above 3,000 hours a year.",
+    "The harvest generally starts 8 to 10 days later than in Lagoa."
+   ],
+   "cite": [
+    "portimao-doc:p5"
+   ]
+  },
+  {
+   "id": "sands",
+   "beat": "ground",
+   "title": "Sandstone and sand",
+   "paras": [
+    "The soils are a big part of what sets the wines apart. They include thin soils on sandstone and Silves sandstone (grés de Silves), and sandy regosols.",
+    "There are also red or yellow Mediterranean soils on sandstone, and podzolised soils of coarse sands and sandstones."
+   ],
+   "cite": [
+    "portimao-doc:p5"
+   ]
+  },
+  {
+   "id": "reds-whites",
+   "beat": "rules",
+   "title": "Reds and whites only",
+   "paras": [
+    "Portimão makes reds and whites only. Reds need at least 12% alcohol and whites 11.5%. The grape must has to reach the same strength naturally.",
+    "The grape list holds six whites, among them Arinto and Siria. It holds nine reds, among them Touriga Nacional and Negra Mole.",
+    "Vines must be at least four years past grafting. They are trained on a trellis about 0.50 to 1 m high, pruned as cordon (guyot) or as a goblet (taça). Yield is capped at 60 hl per hectare."
+   ],
+   "cite": [
+    "portimao-doc:p2",
+    "portimao-doc:p3",
+    "portimao-doc:p4",
+    "portimao-doc:p5"
+   ]
+  }
+ ]
+}

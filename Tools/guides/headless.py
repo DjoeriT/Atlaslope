@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-PROJECTS = Path.home() / '.claude/projects' / str(ROOT).replace('/', '-')
+PROJECTS = Path.home() / '.claude/projects' / str(ROOT).replace('/', '-').replace('.', '-')  # a worktree path has '.claude' in it
 MODELS = {'sonnet': 'claude-sonnet-5-5', 'opus': 'claude-opus-5-5'}
 TOOLS = ['Read', 'Write', 'Edit', 'Bash(python3 Tools/guides/pack.py:*)', 'Bash(python3 Tools/guides/check_guide.py:*)',
          'Bash(grep:*)']

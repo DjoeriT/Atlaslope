@@ -1,0 +1,84 @@
+{
+ "id": "colares",
+ "title": "Why Colares tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Colares lies near Lisbon, between the Serra de Sintra and the Atlantic. Its vines owe their very particular character to the nearby sea and to sand lying over deep clay.",
+  "cite": [
+   "colares-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between the mountains and the sea",
+   "paras": [
+    "The area covers three parishes of the municipality of Sintra: Colares, São Martinho and São João das Lampas."
+   ],
+   "cite": [
+    "colares-doc:p4"
+   ],
+   "fly": [
+    {
+     "label": "Serra de Sintra",
+     "point": [
+      -9.39,
+      38.79
+     ],
+     "zoom": 10,
+     "caption": "The Colares vineyards lie between the Serra de Sintra and the Atlantic.",
+     "cite": [
+      "colares-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea",
+   "beat": "weather",
+   "title": "Sea winds and damp summers",
+   "paras": [
+    "The climate has a strong Atlantic maritime influence. The vines feel the nearby sea and its winds, and summers are mild and humid."
+   ],
+   "cite": [
+    "colares-doc:p5",
+    "colares-doc:p6"
+   ]
+  },
+  {
+   "id": "sand",
+   "beat": "ground",
+   "title": "Vines in the sand",
+   "paras": [
+    "Two soils are allowed. The first is sand lying over consolidated material, traditionally called \"chão de areia\" (sand ground). The second is brown limy soil of marl or similar material, traditionally called \"chão rijo\" (hard ground). Either can make white or red wine.",
+    "Under the sand lies deep clay. Together with the nearby sea and its winds, this ground spared the vines from the phylloxera that devastated vineyards in the late 19th century.",
+    "In the sand, planting follows an old practice called \"unhar\": the ungrafted cane is pushed into the layer beneath the sand. Vines are kept low. If they are wired, the lowest wire, which carries the vine, may not rise above 30 cm."
+   ],
+   "cite": [
+    "colares-doc:p3",
+    "colares-doc:p5",
+    "colares-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Red and white, given time",
+   "paras": [
+    "Colares makes red and white wine only. Six white grapes are allowed, Malvasia among them. Four red grapes are listed, Castelão among them.",
+    "Red wine from Ramisco is ruby and astringent. It softens with age, taking on a fine brownish shade and an extraordinary aroma. Malvasia gives a lemon-coloured white with a very fruity aroma.",
+    "Both colours need at least 10% alcohol. The must needs at least 9.5% potential alcohol. Red waits 18 months in vessel and then 6 months in bottle before sale. White waits 6 months in vessel and then 3 months in bottle.",
+    "Yields are capped at 55 hl per hectare for red and 70 hl for white. The vines must be at least 4 years from grafting.",
+    "Aroma runs from little aroma in reds, or lightly fruity in whites, through fine or typical. At the top it is very distinct or intensely typical."
+   ],
+   "cite": [
+    "colares-doc:p2",
+    "colares-doc:p3",
+    "colares-doc:p4",
+    "colares-doc:p5",
+    "colares-doc:p6"
+   ]
+  }
+ ]
+}

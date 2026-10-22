@@ -4,39 +4,90 @@
   {
    "id": "lagos",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A hot, dry, sunny Mediterranean south coast, sheltered from cold northern winds by mountains, on poor sandy and stony soils with Atlantic influence.",
+    "cite": [
+     "lagos-doc:p5"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Perrum",
+     "Siria",
+     "Bastardo",
+     "Manteudo",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Castelao",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Touriga Nacional",
+     "Negra Mole",
+     "Monvedro",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "lagos-doc:p4",
+     "lagos-doc:p5"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines; the spec sets minimum alcohol of 12% for reds and 11.5% for whites.",
+    "cite": [
+     "lagos-doc:p2"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Markedly Mediterranean: hot, dry and not very windy, with very small temperature swings and over 3000 hours of sun a year. The vineyards themselves feel the Atlantic and are battered by winds, so they get higher humidity and bigger temperature swings, and harvests are usually later.",
+    "cite": [
+     "lagos-doc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Poor, stony, low-fertility soils: sandstone-based lithosols, sandy regosols, red or yellow Mediterranean soils and podzolised coarse sands.",
+    "cite": [
+     "lagos-doc:p5"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites: delicate and soft, with warm-zone aroma and some minerality. Reds: ruby, generally more robust and tannic, velvety, light-bodied, slightly acidic and very fruity.",
+    "cite": [
+     "lagos-doc:p2",
+     "lagos-doc:p5"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Superior",
+      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
+     },
+     {
+      "name": "Colheita Seleccionada",
+      "text": "Traditional label term; a quality designation needs a tasting score of 70 or more."
+     }
+    ],
+    "cite": [
+     "lagos-doc:p3",
+     "lagos-doc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -46,39 +97,91 @@
   {
    "id": "portimao",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A hot, dry, sunny Mediterranean climate with over 3,000 sun hours a year, sandy and sandstone soils, and sea influence from the Atlantic and the Alvor estuary.",
+    "cite": [
+     "portimao-doc:p5"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Perrum",
+     "Siria",
+     "Manteudo",
+     "Syrah",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Castelao",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Touriga Nacional",
+     "Negra Mole",
+     "Monvedro",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "portimao-doc:p4",
+     "portimao-doc:p5"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Reds and whites only, with at least 12% alcohol for reds and 11.5% for whites.",
+    "cite": [
+     "portimao-doc:p2"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Markedly Mediterranean: hot, dry, little wind, very small temperature swings, and over 3,000 hours of sun a year. Mountains shelter it from cold northern winds and the land faces south in an amphitheatre.",
+    "cite": [
+     "portimao-doc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Lithosols from sandstone and Silves grés, sandy regosols, red or yellow Mediterranean sandstone soils, and podzolised soils of coarse sands and sandstones.",
+    "cite": [
+     "portimao-doc:p5"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites: balanced, delicate and soft, with some floral notes. Reds: velvety, full-bodied, very fruity, sometimes floral, low in acidity, with noticeable alcohol.",
+    "cite": [
+     "portimao-doc:p2",
+     "portimao-doc:p6"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+     },
+     {
+      "name": "Colheita Seleccionada",
+      "text": "Traditional label allowed for the appellation; the spec gives no rule for it."
+     }
+    ],
+    "cite": [
+     "portimao-doc:p3"
+    ]
    },
    "producers": {
     "items": [],
@@ -88,39 +191,96 @@
   {
    "id": "lagoa",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A hot, dry, very sunny Mediterranean amphitheatre facing south, sheltered from cold northern winds by mountains, on sandstone and sandy soils.",
+    "cite": [
+     "lagoa-doc:p5",
+     "lagoa-doc:p6"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Perrum",
+     "Siria",
+     "Manteudo",
+     "Syrah",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Sauvignon",
+     "Castelao",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Negra Mole",
+     "Monvedro",
+     "Moreto",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "lagoa-doc:p4",
+     "lagoa-doc:p5"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white table wines.",
+    "cite": [
+     "lagoa-doc:p2",
+     "lagoa-doc:p6"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Strongly Mediterranean: hot, dry, little wind, very small temperature swings, and more than 3000 hours of sun a year.",
+    "cite": [
+     "lagoa-doc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Sandstone-based soils: Silves sandstone (grés de Silves), sandy regosols, red or yellow Mediterranean soils, and podzolised soils of sand and coarse sandstone.",
+    "cite": [
+     "lagoa-doc:p5"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Easy to drink and long-lived. Whites: robust yet soft, very fruity, fairly dry with body. Reds: velvety, full-bodied, fruity, not very floral, low in acidity, warm.",
+    "cite": [
+     "lagoa-doc:p2",
+     "lagoa-doc:p6"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional quality label allowed on DO Lagoa wines."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional quality label allowed on DO Lagoa wines."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional label allowed; needs a tasting score of 70 or more."
+     },
+     {
+      "name": "Colheita Seleccionada",
+      "text": "Traditional label allowed on DO Lagoa wines."
+     }
+    ],
+    "cite": [
+     "lagoa-doc:p3",
+     "lagoa-doc:p6"
+    ]
    },
    "producers": {
     "items": [],
@@ -130,39 +290,101 @@
   {
    "id": "tavira",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Sandy, low-lying vineyards sheltered from wind, in a hot, dry Mediterranean climate with very even temperatures and over 3000 sun hours a year.",
+    "cite": [
+     "tavira-doc:p5",
+     "tavira-doc:p6"
+    ]
    },
    "grapes": {
     "main": [],
     "cite": [],
-    "others": [],
-    "othersCite": []
+    "others": [
+     "Siria",
+     "Tamarez",
+     "Manteudo",
+     "Syrah",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Castelao",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Touriga Nacional",
+     "Negra Mole",
+     "Diagalves",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "tavira-doc:p5"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines only.",
+    "cite": [
+     "tavira-doc:p2"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Clearly Mediterranean: hot, dry, little wind, very small temperature swings, over 3000 sun hours a year. A mountain barrier blocks cold northern winds and the land faces south. Little rain and many warm hours mean harvest starts earlier than in other regions.",
+    "cite": [
+     "tavira-doc:p5",
+     "tavira-doc:p6"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Sandy soils: lithic soils on sandstone, regosols, red or yellow Mediterranean soils on sandstone, and podzolised soils on coarse sands.",
+    "cite": [
+     "tavira-doc:p5"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Relatively low elevations with no pronounced relief.",
+    "cite": [
+     "tavira-doc:p5"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites: delicate, soft, aromatic and light-bodied, with a warm-region finish and some complexity. Reds: easy to drink, velvety, medium-bodied, fruity, low in tannin, slightly acidic.",
+    "cite": [
+     "tavira-doc:p3",
+     "tavira-doc:p6"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
+      "cite": [
+       "tavira-doc:p3",
+       "tavira-doc:p6"
+      ]
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
+      "cite": [
+       "tavira-doc:p3",
+       "tavira-doc:p6"
+      ]
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional label term; wines with a quality designation must score at least 70 points.",
+      "cite": [
+       "tavira-doc:p3",
+       "tavira-doc:p6"
+      ]
+     }
+    ],
+    "cite": [
+     "tavira-doc:p3",
+     "tavira-doc:p6"
+    ]
    },
    "producers": {
     "items": [],

@@ -4,39 +4,107 @@
   {
    "id": "setubal",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with a mixed subtropical and Mediterranean/maritime climate and the Arrábida hills, suit aromatic Moscatel grapes made into fortified wine.",
+    "cite": [
+     "setubal-doc:p7",
+     "setubal-doc:p9"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Moscatel de Setúbal"
+     },
+     {
+      "local": "Moscatel Roxo"
+     }
+    ],
+    "cite": [
+     "setubal-doc:p4"
+    ],
+    "others": [
+     "Viosinho",
+     "Bastardo",
+     "Malvasia Fina",
+     "Verdelho",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Fernao Pires",
+     "Castelao",
+     "Antao Vaz",
+     "Aragonez",
+     "Roupeiro Branco",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Moscatel Galego Branco",
+     "Moscatel Galego Roxo",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "setubal-doc:p6"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "fortified",
+     "sweet"
+    ],
+    "text": "Only fortified (licoroso) sweet wine: white Moscatel de Setúbal and red Moscatel Roxo.",
+    "cite": [
+     "setubal-doc:p2",
+     "setubal-doc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mixed subtropical and Mediterranean/maritime, with low rainfall and moderate temperature swings. It is shaped by the sea, the Sado and Tejo basins and the Arrábida hills.",
+    "cite": [
+     "setubal-doc:p7",
+     "setubal-doc:p9"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly light, sandy soils with some patches of different texture and little or no aggregation.",
+    "cite": [
+     "setubal-doc:p4",
+     "setubal-doc:p7"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "White: golden, topaz to amber, exotic orange blossom and linden, honey, dates and orange; older wines show hazelnuts, almonds and walnuts. Red (Roxo): drier, more complex aroma, very fine palate with spice and ginja and fig preserves.",
+    "cite": [
+     "setubal-doc:p2",
+     "setubal-doc:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Moscatel de Setúbal",
+      "text": "White fortified wine with at least 85% Moscatel de Setúbal grape."
+     },
+     {
+      "name": "Moscatel Roxo",
+      "text": "Red fortified wine with at least 85% Moscatel Roxo grape."
+     },
+     {
+      "name": "Superior",
+      "text": "Top-rated wine aged at least five years before sale."
+     },
+     {
+      "name": "10, 20, 30 or 40 anos",
+      "text": "Age statements allowed if the wine is at least that old."
+     }
+    ],
+    "cite": [
+     "setubal-doc:p4",
+     "setubal-doc:p5",
+     "setubal-doc:p10"
+    ]
    },
    "producers": {
     "items": [],
@@ -46,39 +114,124 @@
   {
    "id": "palmela",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with a mild sea-influenced climate and little rain, shape fruity reds and fresh whites.",
+    "cite": [
+     "palmela-doc:p7",
+     "palmela-doc:p8",
+     "palmela-doc:p9"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Castelão"
+     },
+     {
+      "local": "Fernão-Pires"
+     }
+    ],
+    "cite": [
+     "palmela-doc:p2",
+     "palmela-doc:p3"
+    ],
+    "others": [
+     "Viosinho",
+     "Petit Verdot",
+     "Pinot Blanc",
+     "Bastardo",
+     "Malvasia Fina",
+     "Syrah",
+     "Verdelho",
+     "Tannat",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Merlot",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Alvarinho",
+     "Sauvignon",
+     "Antao Vaz",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Loureiro",
+     "Tinto Cao",
+     "Roupeiro Branco",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Chardonnay",
+     "Tinta Miuda",
+     "Moscatel Galego Branco",
+     "Moscatel Galego Roxo",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "palmela-doc:p6",
+     "palmela-doc:p7"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Reds, whites and rosés, plus semi-sparkling (frisante), sparkling and fortified (licoroso) wines.",
+    "cite": [
+     "palmela-doc:p2",
+     "palmela-doc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mixed sub-tropical and Mediterranean/maritime, with low rainfall and moderate temperature swings. It is shaped by the sea, the Sado and Tejo basins and the Arrábida range.",
+    "cite": [
+     "palmela-doc:p7"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly light, sandy soils with some patches of varying texture. Recommended types are psammitic regosols, brown and red calcareous soils, non-humic lithosols and podzolised sands.",
+    "cite": [
+     "palmela-doc:p7",
+     "palmela-doc:p8"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Reds: full-bodied, deep garnet, red fruit and jam with dried fruit and spice, softening with age. Whites: lemon-yellow, fruity, fresh, well-structured acidity. Rosés: bright pink, strawberry and redcurrant, refreshing. Fortified: amber, citrus, honey and dried fruit.",
+    "cite": [
+     "palmela-doc:p2",
+     "palmela-doc:p3",
+     "palmela-doc:p8"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Licoroso",
+      "text": "Fortified wine, at least 16% alcohol, amber with citrus, honey and dried-fruit aromas."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine, base wine must be DO Palmela, with a second fermentation; at least 10% alcohol."
+     },
+     {
+      "name": "Frisante",
+      "text": "Semi-sparkling wine from DO Palmela base wine with a second fermentation; at least 10% alcohol."
+     },
+     {
+      "name": "Rosado",
+      "text": "Pink wine from red grapes, or white up to one third, made in open-run style."
+     }
+    ],
+    "cite": [
+     "palmela-doc:p2",
+     "palmela-doc:p3",
+     "palmela-doc:p5"
+    ]
    },
    "producers": {
     "items": [],

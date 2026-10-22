@@ -4,39 +4,148 @@
   {
    "id": "alentejo",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "A flat, sunny landscape with about 3000 sun hours a year and hot, dry summers, on varied soils from limestone to granite, with many native and recent grapes.",
+    "cite": [
+     "alentejo-doc:p9",
+     "alentejo-doc:p10"
+    ]
    },
    "grapes": {
     "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "cite": [
+     "alentejo-doc:p10"
+    ],
+    "others": [
+     "Encruzado",
+     "Perrum",
+     "Pinot Gris",
+     "Petit Verdot",
+     "Sercial",
+     "Bical",
+     "Siria",
+     "Pinot Noir",
+     "Sémillon",
+     "Viognier",
+     "Corropio",
+     "Malvasia Rei",
+     "Tamarez",
+     "Manteudo",
+     "Manteudo Preto",
+     "Malvasia Fina",
+     "Syrah",
+     "Verdelho",
+     "Talia",
+     "Tannat",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Merlot",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Carignan",
+     "Alvarinho",
+     "Fernao Pires",
+     "Sauvignon",
+     "Castelao",
+     "Antao Vaz",
+     "Lariao",
+     "Trincadeira das Pratas",
+     "Aragonez",
+     "Riesling",
+     "Alicante Bouschet",
+     "Grand Noir",
+     "Alicante Branco",
+     "Grossa",
+     "Grenache",
+     "Alfrocheiro",
+     "Caladoc",
+     "Tinto Cao",
+     "Zinfandel",
+     "Chasselas",
+     "Cinsaut",
+     "Gouveio",
+     "Gewürztraminer",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Tinta Carvalha",
+     "Tinta Caiada",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Tinta Miuda",
+     "Baga",
+     "Diagalves",
+     "Mourisco Branco",
+     "Moreto",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "alentejo-doc:p7",
+     "alentejo-doc:p8",
+     "alentejo-doc:p9"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Mostly still red, rosé and white wine; sparkling and fortified wines are made in smaller volumes.",
+    "cite": [
+     "alentejo-doc:p2",
+     "alentejo-doc:p10"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Temperate, Mediterranean and continental, with hot, dry springs and summers and rain mostly in winter. Rainfall is 550 to 650 mm a year (Borba 750 to 850, Portalegre 900 to 1000). Mean temperature is 15.5 to 16 °C, with about 3000 sun hours a year.",
+    "cite": [
+     "alentejo-doc:p9"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Varies by sub-region: crystalline limestone in Borba, granite in Portalegre, eruptive rocks in Redondo and Reguengos, red and brown Mediterranean soils in Évora. Alluvial, colluvial, black clay and non-limestone brown-red clay soils are excluded.",
+    "cite": [
+     "alentejo-doc:p9",
+     "alentejo-doc:p10"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Only Portalegre sets a limit: areas above 700 m are excluded.",
+    "cite": [
+     "alentejo-doc:p6"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Young wines are fruity and/or floral, gaining more complex tertiary aromas with age. Reds run from ruby to deep red, whites from pale lemon to slightly golden, rosés from pink to salmon.",
+    "cite": [
+     "alentejo-doc:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine made by classic bottle fermentation, minimum 11% alcohol."
+     },
+     {
+      "name": "Licoroso",
+      "text": "Fortified: neutral wine alcohol or wine distillate added to fermenting must, minimum 17.5%."
+     },
+     {
+      "name": "Reserva",
+      "text": "Quality term; needs standout structure and balance, tasting score of 66 or more."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Quality term; needs standout structure and balance, tasting score of 66 or more."
+     }
+    ],
+    "cite": [
+     "alentejo-doc:p2",
+     "alentejo-doc:p3",
+     "alentejo-doc:p4"
+    ]
    },
    "producers": {
     "items": [],

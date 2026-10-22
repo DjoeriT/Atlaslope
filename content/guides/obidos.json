@@ -1,0 +1,88 @@
+{
+ "id": "obidos",
+ "title": "Why Óbidos tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Óbidos is a town ringed by a 14th-century wall, at the end of a run of hills and knolls from the Serra de Montejunto. Together with loam to clay soils of brown and red limestone, they give fresh whites and fruity reds.",
+  "cite": [
+   "obidos-doc:p6",
+   "obidos-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "A patchwork of hills running to a walled town",
+   "paras": [
+    "From the slopes of the Serra de Montejunto, towards the northwest and as far as Óbidos, a long run of colinas and outeiros (hills and knolls) is covered by a \"manta de retalhos\", a patchwork quilt in which the vine stands out.",
+    "Óbidos itself is surrounded by a wall from the 14th century that still keeps its medieval identity. It is the ex-libris, the emblem, of an important farming region where the vine has always held a leading place.",
+    "The denomination covers parts of four municipalities: Bombarral, Cadaval, Caldas da Rainha and Óbidos. It lies in the Oeste, the west of Portugal."
+   ],
+   "cite": [
+    "obidos-doc:p4",
+    "obidos-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Óbidos and its wall",
+     "point": [
+      -9.157,
+      39.36
+     ],
+     "zoom": 11,
+     "caption": "The town inside its 14th-century wall, the emblem of a farming region where the vine has always held a leading place.",
+     "cite": [
+      "obidos-doc:p6"
+     ]
+    },
+    {
+     "label": "Serra de Montejunto",
+     "point": [
+      -9.057,
+      39.177
+     ],
+     "zoom": 10,
+     "caption": "The hills and knolls of Óbidos start on the slopes of this range and run northwest.",
+     "cite": [
+      "obidos-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Loam to clay over brown and red limestone",
+   "paras": [
+    "The soils have a loam to clay texture, of brown and red limestone.",
+    "Vineyards must sit on brown or red limestone soils, or on brown or red Mediterranean soils made from non-limestone material. They also need an exposure that suits quality wine."
+   ],
+   "cite": [
+    "obidos-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fresh whites and bottle-fermented bubbles",
+   "paras": [
+    "Óbidos makes still wines and white sparkling wine. 39 grape varieties are allowed, white and red.",
+    "From these hills and soils come reds that are open in colour with ruby tones. They are fruity and soft, with some body.",
+    "Whites are smooth and very fresh. They are bright, with fruity and floral aromas and light mineral touches.",
+    "Sparkling whites have a fine, lasting foam and a fine, fruity aroma in which the secondary aromas stand out. They show good complexity and a good balance between acidity and freshness. They are made by the classic method of fermentation in the bottle.",
+    "White wines come from white grapes, or from red grapes run off the skins by \"bica aberta\". Rosados use the same run-off with a very light maceration of red grapes. Reds come only from red grapes, with intensive maceration.",
+    "Reds must reach at least 12% alcohol. Whites, rosados and sparkling wines need at least 11%. Yields are capped at 70 hl per hectare for red and 90 hl for white, rosado and sparkling.",
+    "Vines must be at least four years past grafting and trained low, as a bush (taça) or on a cordon."
+   ],
+   "cite": [
+    "obidos-doc:p2",
+    "obidos-doc:p3",
+    "obidos-doc:p4",
+    "obidos-doc:p5",
+    "obidos-doc:p6",
+    "obidos-doc:p7"
+   ]
+  }
+ ]
+}

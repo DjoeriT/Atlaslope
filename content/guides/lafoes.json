@@ -1,0 +1,86 @@
+{
+ "id": "lafoes",
+ "title": "Why Lafões tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Lafões is a valley along the Vouga that recalls the terraced Douro in places and the green Minho in others. Its whites are low in alcohol but very fruity.",
+  "cite": [
+   "lafoes-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "vouga",
+   "beat": "place",
+   "title": "A hidden valley cut by the Vouga",
+   "paras": [
+    "Lafões lies in the westernmost part of the Beira Central, along the Vouga valley. It is a natural sub-region made of the lands that drain into the middle Vouga and its tributaries, the Sul and the Ribamá. These two rivers come from opposite banks and meet near São Pedro do Sul.",
+    "Raul Proença called it a lovely region hidden between the Gralheira massif and the Caramulo. The Vouga cuts through it. The area covers the municipalities of Oliveira de Frades, São Pedro do Sul and Vouzela.",
+    "The region is varied. In places it recalls the Douro, with terraced fields. In others it recalls the green Minho, and some spots even keep \"vinha de enforcado\", vines trained high up trees. Vines sit on the terraces of small holdings and mark out the plots. In some places they are trained on pergolas called ramadas.",
+    "The name is Arabic and means \"two brothers\", after two hills now called Castelo and Lafões."
+   ],
+   "cite": [
+    "lafoes-doc:p4",
+    "lafoes-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "São Pedro do Sul, where the rivers meet",
+     "point": [
+      -8.07,
+      40.76
+     ],
+     "zoom": 10,
+     "caption": "The Sul and the Ribamá come from opposite banks and meet near São Pedro do Sul.",
+     "cite": [
+      "lafoes-doc:p5"
+     ]
+    },
+    {
+     "label": "Serra do Caramulo",
+     "point": [
+      -8.2,
+      40.57
+     ],
+     "zoom": 9.5,
+     "caption": "Lafões lies hidden between the Gralheira massif and the Caramulo.",
+     "cite": [
+      "lafoes-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Thin soils on schist and granite",
+   "paras": [
+    "Vineyards must be on humic lithosols, thin soils rich in organic matter. The rock beneath can be schist, sedimentary or metamorphosed. It can be gneiss or granite. It can also be migmatite. The site should have an exposure that suits quality wine.",
+    "Prehistoric people settled here too. Neolithic remains survive across the region, mostly on high ground of granite, where they built homes and buried their dead in dolmens."
+   ],
+   "cite": [
+    "lafoes-doc:p3",
+    "lafoes-doc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fruity whites and long-lived reds",
+   "paras": [
+    "Lafões makes white and red wines. Both may release a little gas.",
+    "The whites are called \"sui generis\", one of a kind. They are low in alcohol but very fruity. They are rich in malic acid. Their gas is called \"agulha\", the needle. Their colour runs from lemon to slightly golden. They are very aromatic, with a tangy taste.",
+    "The reds are ruby to violet. They are aromatic, tangy and a little astringent. They have high fixed acidity and can age for a long time.",
+    "The region shares some traits with the Vinho Verde region. Vines are mostly trained high there too. Its wines are also generally low in alcohol but very fruity. Despite a centuries-old wine tradition, Lafões wines only made their name in the early 20th century, when their character was recognised.",
+    "The white grapes allowed are Arinto, Rabo de Ovelha, Cercial and Dona Branca. The red grapes are Amaral, Touriga Nacional, Jaen and Esgana Cão Tinto.",
+    "Wines need at least 9.5% alcohol and 5.0 g/l of fixed acidity. Musts need a natural potential of at least 9%. Vines must be at least four years from grafting. Yields are capped at 60 hl per hectare for red and 65 hl for white."
+   ],
+   "cite": [
+    "lafoes-doc:p2",
+    "lafoes-doc:p3",
+    "lafoes-doc:p4",
+    "lafoes-doc:p5"
+   ]
+  }
+ ]
+}

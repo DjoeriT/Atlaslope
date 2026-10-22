@@ -1,0 +1,81 @@
+{
+ "id": "tavira",
+ "title": "Why Tavira tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Tavira's vineyards sit on sandier soils at relatively low elevations, sheltered from the wind, with fairly even temperatures. Harvest starts earlier here than in the other regions.",
+  "cite": [
+   "tavira-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "south",
+   "beat": "place",
+   "title": "The far south of mainland Portugal",
+   "paras": [
+    "Tavira lies at the far south of mainland Portugal, in the Algarve. The Algarve is a well-defined zone with its own character. The nearby sea and the climate shape it. So do the natural vegetation and a culture marked by long Arab rule.",
+    "The vines grow at relatively low elevations, with no pronounced relief, and they are sheltered from the wind. The area takes in the whole of the Faro and Olhão municipalities. Parts of São Brás de Alportel and Castro Marim are in too. So are parts of Tavira and Vila Real de Santo António."
+   ],
+   "cite": [
+    "tavira-doc:p4",
+    "tavira-doc:p5",
+    "tavira-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Tavira",
+     "place": "tavira",
+     "caption": "Sheltered vineyards at relatively low elevations, in the far south of mainland Portugal.",
+     "cite": [
+      "tavira-doc:p5",
+      "tavira-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot, dry and very even",
+   "paras": [
+    "The land faces south like an amphitheatre, and a mountain barrier blocks the cold northern winds. With the far-south position, this makes the climate clearly Mediterranean: hot, dry and not very windy, with very small swings in temperature.",
+    "The sun shines more than 3000 hours a year on average. Less rain and more warm hours mean the harvest starts earlier than in the other regions."
+   ],
+   "cite": [
+    "tavira-doc:p5",
+    "tavira-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand and sandstone",
+   "paras": [
+    "The vineyards lie where the soils are sandier. Some are rocky soils formed on sandstone, such as the Silves sandstone. Some are red or yellow Mediterranean soils on sandstone. Others are podzolised soils on coarse sands and sandstone.",
+    "These soils do much to set Tavira's wines apart in quality and character."
+   ],
+   "cite": [
+    "tavira-doc:p5",
+    "tavira-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Light whites, easy reds",
+   "paras": [
+    "Tavira makes red and white wine only. Its red grapes include Negra Mole and Castelao. Arinto and Moscatel Graudo are among the whites. In the Algarve, many native grapes give the wines a strong regional character, next to more recently introduced ones.",
+    "The whites usually range from citrus yellow to straw. The reds are a clear ruby that turns topaz with age. The whites are light-bodied, with a finish typical of a warm zone. The reds are easy to drink, with little tannin.",
+    "Reds must reach at least 12% alcohol and whites at least 11.5%. Yields are capped at 60 hl per hectare. Vines must be at least four years past grafting. Every wine must score at least 60 points in the tasting. Wines with a quality designation must score at least 70."
+   ],
+   "cite": [
+    "tavira-doc:p2",
+    "tavira-doc:p3",
+    "tavira-doc:p4",
+    "tavira-doc:p5",
+    "tavira-doc:p6"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "id": "bairrada",
+ "title": "Why Bairrada tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Bairrada lies open to the Atlantic on the west, and its vines grow mainly on clay and clay-limestone. The sea generally shows in the freshness of its wines.",
+  "cite": [
+   "bairrada-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Between two rivers and the sea",
+   "paras": [
+    "Bairrada is bounded by the river Vouga to the north and the river Mondego to the south. To the east stand the Bussaco and Caramulo mountains. To the west lies the Atlantic Ocean.",
+    "The land in between is a region of gentle, sunny, clay-rich hills. Its natural limits are the sandy coastal strip and those two mountain ranges.",
+    "Anadia lies wholly inside the area. So do Mealhada and Oliveira do Bairro.",
+    "Some parishes of five more municipalities are included too, Águeda and Coimbra among them."
+   ],
+   "cite": [
+    "bairrada-doc:p4",
+    "bairrada-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Serra do Bussaco",
+     "point": [
+      -8.36,
+      40.38
+     ],
+     "zoom": 10,
+     "caption": "The Bussaco mountains close Bairrada on the east. A battle against Napoleon's invading armies was fought here, a landmark in the region's history.",
+     "cite": [
+      "bairrada-doc:p6"
+     ]
+    },
+    {
+     "label": "Serra do Caramulo",
+     "point": [
+      -8.2,
+      40.57
+     ],
+     "zoom": 10,
+     "caption": "The Caramulo mountains are the other natural limit on the east.",
+     "cite": [
+      "bairrada-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot days, cool nights, open to the ocean",
+   "paras": [
+    "The climate is Mediterranean and Atlantic at once. Summers bring hot days and cool nights.",
+    "The strong maritime influence generally shows in the freshness, the acidity, of the wines. They come out well balanced and do not feel heavy in alcohol, even when the alcohol level is high.",
+    "The Atlantic softens even further the moderate Mediterranean climate that prevails across Portugal. That is part of what gives the sparkling wines their excellent freshness and mousse."
+   ],
+   "cite": [
+    "bairrada-doc:p6",
+    "bairrada-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Mostly clay and clay-limestone",
+   "paras": [
+    "The soils are mineral and mostly poor, from sandy to clayey, with some sandy loam. The vines grow mainly on clay and clay-limestone.",
+    "Scholars link the name Bairrada to its soil, where barro, clay, dominates.",
+    "The smoky, woody character of aged reds, even those never kept in wood, is thought to be linked to the clay-limestone soils. The most highly rated reds come from these soils, ideally with a south exposure and good drainage."
+   ],
+   "cite": [
+    "bairrada-doc:p6",
+    "bairrada-doc:p7"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Baga in the Clássico",
+   "paras": [
+    "Bairrada makes still wine in three colours, plus sparkling wine. Twenty-six grape varieties are listed for it.",
+    "A red may carry the mention Clássico. It must be at least half Baga, from must with at least 12.5% natural alcohol.",
+    "Reds age for a long time. With age they develop a bouquet that recalls wild berries and resin, with honey and smoky notes.",
+    "Whites fermented in new oak barrels turn slightly golden. They often show intense tropical and buttery aromas.",
+    "Rosados, the pink wines, range from orange to red. They show the grapes they come from, Baga's character in particular.",
+    "Sparkling wine is made by the classic method, with the second fermentation in the bottle. It ages 9 months before sale.",
+    "Its toasty aromas in the longer-aged style come mainly from the yeast breaking down while the wine rests on its lees.",
+    "Vines are trained in cordon or semi-free form and planted at more than 3,000 plants per hectare. Yields are capped at 55 hl per hectare for red and 70 hl for the other wines."
+   ],
+   "cite": [
+    "bairrada-doc:p2",
+    "bairrada-doc:p3",
+    "bairrada-doc:p4",
+    "bairrada-doc:p5",
+    "bairrada-doc:p6",
+    "bairrada-doc:p7"
+   ]
+  }
+ ]
+}

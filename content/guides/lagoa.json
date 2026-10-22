@@ -1,0 +1,72 @@
+{
+ "id": "lagoa",
+ "title": "Why Lagoa tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Lagoa faces south like an amphitheatre, with mountains shielding it from cold northern winds. The climate is hot, dry and sunny, and the reds are velvety and warm.",
+  "cite": [
+   "lagoa-doc:p5",
+   "lagoa-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "algarve",
+   "beat": "place",
+   "title": "Inland from the Algarve coast",
+   "paras": [
+    "Lagoa lies at the far southern end of mainland Portugal, in the Algarve. The area takes in the municipalities of Albufeira and Lagoa. It also takes in parts of Loulé and Silves.",
+    "The vines grow further inland in the region. A mountain range (the serra) shelters them to the north, and the ground is steeper. They feel less of the sea's influence.",
+    "Vines have a long tradition in the Algarve. During Muslim rule the Arabs planted vines and exported the wine. After the reconquest the Christians took over the economy they left and grew it."
+   ],
+   "cite": [
+    "lagoa-doc:p4",
+    "lagoa-doc:p5",
+    "lagoa-doc:p6"
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "A sunny amphitheatre",
+   "paras": [
+    "Lagoa sits far south. A mountain barrier blocks the cold north winds, and the land faces south like an amphitheatre. Together they make the climate strongly Mediterranean.",
+    "It is hot and dry, with little wind. Temperatures swing very little.",
+    "The sun shines for an average of more than 3000 hours a year."
+   ],
+   "cite": [
+    "lagoa-doc:p5"
+   ]
+  },
+  {
+   "id": "sandstone",
+   "beat": "ground",
+   "title": "Sandstone and sand",
+   "paras": [
+    "The soils are a large part of what sets Lagoa's wines apart. Many form on sandstone, such as the Silves sandstone (grés de Silves).",
+    "Some are sandy regosols. Others are red or yellow Mediterranean soils. There are also podzolised soils of sand and coarse sandstone."
+   ],
+   "cite": [
+    "lagoa-doc:p5"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Easy reds and fruity whites",
+   "paras": [
+    "Lagoa makes red and white wines. The allowed grapes include Negra Mole and Perrum. Syrah and Touriga Nacional are allowed too. Many native grapes give the wines a strong regional character, and some varieties arrived fairly recently.",
+    "Reds must reach at least 12% vol. and whites at least 11.5% vol. Yields are capped at 60 hl per hectare. The vines must be at least four years past grafting. They are trained low and pruned as cordon (guyot) or taça (bush).",
+    "Whites run from citrine to straw yellow. Reds are usually ruby, turning topaz as they age.",
+    "A wine needs at least 60 points in tasting. A wine with a quality term on the label needs 70 or more, with a standout structure and balance of aroma and flavour."
+   ],
+   "cite": [
+    "lagoa-doc:p2",
+    "lagoa-doc:p3",
+    "lagoa-doc:p4",
+    "lagoa-doc:p5",
+    "lagoa-doc:p6"
+   ]
+  }
+ ]
+}
