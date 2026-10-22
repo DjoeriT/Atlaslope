@@ -15,16 +15,13 @@ main .wrap{max-width:1200px;padding-inline:2rem}
 .stills{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1.5rem 1.25rem}
 .stills.feat{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem}
 .stills.more{margin-top:2rem}
-.stills[hidden]{display:none}
 .stills a{display:block;text-decoration:none;color:var(--foil)}
 .stills a:focus-visible{outline-color:var(--foil)}
 .stills .sqbox{background:#2a2622}
 .stills .nm{display:block;font:500 1.05rem/1.25 var(--serif);margin-top:.55rem}
 .stills.feat .nm{font-size:1.25rem}
+.stills .meta{display:block;margin-top:.1rem;font-size:.82rem;line-height:1.4;color:#CBBE9F}
 .stills a:hover .nm{text-decoration:underline;text-underline-offset:3px}
-.morebtn{margin-top:1.75rem;min-height:44px;padding:0 1.25rem;background:transparent;color:var(--foil);border:1px solid var(--foil);border-radius:6px;font:500 .95rem var(--sans);cursor:pointer}
-.morebtn:hover{background:var(--foil);color:var(--band)}
-.morebtn:focus-visible{outline:2px solid var(--foil);outline-offset:3px}
 
 /* square photo, with the champagne chip on a map tour */
 .sqbox{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;border-radius:6px;background:var(--bg2)}
@@ -72,7 +69,6 @@ body:has(#tours:checked) :is(.ecard,.also a):not([data-tour]),body:has(#tours:ch
   .stills.feat a{flex:0 0 240px;scroll-snap-align:start}
   .stills.feat .nm{font-size:1.1rem}
   .stills.more{grid-template-columns:repeat(2,minmax(0,1fr));margin:1.5rem 0 0;gap:1rem .75rem}
-  .stills.more[hidden]{display:none}
   .band{padding:1.25rem 0 1.5rem}
   .rowh h2{font-size:1.4rem}
 }

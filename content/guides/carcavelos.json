@@ -1,0 +1,83 @@
+{
+ "id": "carcavelos",
+ "title": "Why Carcavelos tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "A micro-region very close to the mouth of the Tagus, where the nearby sea keeps temperatures steady. It makes a fortified wine, white or red, that grows more perfumed with age.",
+  "cite": [
+   "carcavelos-doc:p2",
+   "carcavelos-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "mouth",
+   "beat": "place",
+   "title": "A micro-region by the river mouth",
+   "paras": [
+    "Carcavelos lies very close to the mouth of the Tagus, near Lisbon. It is a micro-region, regulated for more than a hundred years, and soft hills run parallel to the coast around it.",
+    "The area covers parts of two councils, Cascais and Oeiras. The Atlantic Ocean is its southern edge. The Porto Salvo stream marks part of the eastern one."
+   ],
+   "cite": [
+    "carcavelos-doc:p4",
+    "carcavelos-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The mouth of the Tagus",
+     "point": [
+      -9.33,
+      38.68
+     ],
+     "zoom": 10,
+     "caption": "The vineyards lie very close to where the Tagus meets the sea, with the Atlantic as the southern limit.",
+     "cite": [
+      "carcavelos-doc:p4",
+      "carcavelos-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea",
+   "beat": "weather",
+   "title": "A Mediterranean climate steadied by the sea",
+   "paras": [
+    "The climate is mild and Mediterranean. Temperatures do not swing much, because the sea is near."
+   ],
+   "cite": [
+    "carcavelos-doc:p6"
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "ground",
+   "title": "Limy soils and plots facing south-west",
+   "paras": [
+    "Vines must grow on one of three soils. Two are limy: red Mediterranean soils formed on ordinary limestone, and ordinary limestone soils. The third is a reddish-brown clay with no lime.",
+    "Some plots are stony. Others are silty and dry. Their excellent south-west exposure helps make wines that are velvety and soft on the palate."
+   ],
+   "cite": [
+    "carcavelos-doc:p6"
+   ]
+  },
+  {
+   "id": "fortified",
+   "beat": "rules",
+   "title": "Fortified, then left in wood",
+   "paras": [
+    "Carcavelos is a fortified wine, white or red. Its label may call it vinho generoso, the traditional name for this fortified style.",
+    "The finished wine holds 15 to 22% alcohol and up to 150 g/l of residual sugar. Counting the alcohol its sugar could still give, the total must reach at least 17.5%. The grape must needs a potential natural alcohol of at least 11%.",
+    "The wine spends at least two years in wood and six months in bottle, counted from when it is made.",
+    "Twelve grape varieties are allowed. Seven are white, among them Arinto and Galego Dourado. Five are red, among them Trincadeira and Castelao.",
+    "Vines are trained low, as a cup or a cordon, with the leafy canopy starting no higher than 60 cm above the ground. New vineyards need at least 3,300 vines per hectare. Yields are capped at 55 hl per hectare."
+   ],
+   "cite": [
+    "carcavelos-doc:p2",
+    "carcavelos-doc:p3",
+    "carcavelos-doc:p4",
+    "carcavelos-doc:p5"
+   ]
+  }
+ ]
+}

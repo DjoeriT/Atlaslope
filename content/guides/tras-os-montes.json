@@ -1,0 +1,108 @@
+{
+ "id": "tras-os-montes",
+ "title": "Why Trás-os-Montes tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Very hot, dry summers ripen the grapes fully, into wines of deep colour and high alcohol. Mostly granite soils and the region's grapes give them high structure.",
+  "cite": [
+   "tras-os-montes-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "subregions",
+   "beat": "place",
+   "title": "Three sub-regions in Alto Trás-os-Montes",
+   "paras": [
+    "The wine area sits in Alto Trás-os-Montes and is made of three sub-regions: Chaves, Planalto Mirandês and Valpaços. A label may add the sub-region's name after Trás-os-Montes.",
+    "Chaves takes in parishes around the town of Chaves, plus two in Vila Pouca de Aguiar. Planalto Mirandês takes in three whole municipalities, Miranda do Douro among them. It adds parishes in Freixo de Espada à Cinta and Torre de Moncorvo. Valpaços takes in parishes in five municipalities, Valpaços and Mirandela among them."
+   ],
+   "cite": [
+    "tras-os-montes-doc:p5",
+    "tras-os-montes-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Planalto Mirandês",
+     "point": [
+      -6.27,
+      41.49
+     ],
+     "zoom": 9,
+     "caption": "The Planalto Mirandês sub-region takes in three whole municipalities, Miranda do Douro among them.",
+     "cite": [
+      "tras-os-montes-doc:p5"
+     ]
+    },
+    {
+     "label": "Chaves",
+     "point": [
+      -7.47,
+      41.74
+     ],
+     "zoom": 10,
+     "caption": "Chaves is one of the three sub-regions.",
+     "cite": [
+      "tras-os-montes-doc:p5"
+     ]
+    },
+    {
+     "label": "Valpaços",
+     "point": [
+      -7.31,
+      41.61
+     ],
+     "zoom": 10,
+     "caption": "The Valpaços sub-region spreads over parishes in five municipalities.",
+     "cite": [
+      "tras-os-montes-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "summers",
+   "beat": "weather",
+   "title": "Hot, dry summers and several microclimates",
+   "paras": [
+    "Summers are very hot, with high temperatures and low rainfall. Grapes ripen completely, and the wines get deep colour and high alcohol.",
+    "The climate also shows several microclimates, and they are part of what defines the region's terroir."
+   ],
+   "cite": [
+    "tras-os-montes-doc:p7"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Granite with patches of schist",
+   "paras": [
+    "The soils are mostly granite, with some patches of schist. Together with the grapes, they give the wines high structure and great aromatic complexity. Vines must grow in the soil types the rules name for each sub-region.",
+    "In Chaves the soils come from granite, or are brown or red soils on clay rocks and gneiss. Planalto Mirandês has granite soils and brown or red soils on schist and gneiss. Valpaços has granite soils and brown or red soils on schist."
+   ],
+   "cite": [
+    "tras-os-montes-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "From still reds to fortified licoroso",
+   "paras": [
+    "Old regional grape varieties sit beside newer plantings of noble ones. The grape list runs to 33 varieties. Touriga Nacional and Touriga Franca are on it among the reds. Viosinho and Rabigato are on it among the whites.",
+    "Reds are generally full-bodied and easy to drink. They run ruby to garnet, with brownish glints. They must reach at least 11.5% alcohol. Whites smell young and fresh, of tropical fruit. They must reach at least 11%, as rosados must.",
+    "Rosados are made by the \"bica aberta\" method, where the juice runs off the skins at once, or with light skin contact. Sparkling wine is made too, at 10% alcohol at least. Red sparkling has a pink, lasting foam. White sparkling can have exotic fruit that recalls lychees. Sparkling is named Reserva, Super-reserva or Velha reserva by the months it spends in bottle before disgorging: 12 to 24, 24 to 36, or more than 36.",
+    "Licoroso is a fortified wine. Neutral wine spirit or wine distillate may be added to the must early in fermentation, and it must reach 16.5% alcohol at least.",
+    "Vines must be at least four years past grafting and trained low, pruned no higher than 1 m. Yields are capped at 55 hectolitres per hectare."
+   ],
+   "cite": [
+    "tras-os-montes-doc:p2",
+    "tras-os-montes-doc:p3",
+    "tras-os-montes-doc:p4",
+    "tras-os-montes-doc:p5",
+    "tras-os-montes-doc:p6",
+    "tras-os-montes-doc:p7"
+   ]
+  }
+ ]
+}

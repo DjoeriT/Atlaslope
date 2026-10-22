@@ -1,0 +1,45 @@
+{
+ "obidos": {
+  "source": "obidos-doc:p5",
+  "zones": {
+   "obidos": {
+    "parishes": {
+     "Bombarral": [
+      "Bombarral",
+      "Carvalhal",
+      "Roliça",
+      "Vale Covo"
+     ],
+     "Cadaval": [
+      "Alguber",
+      "Cadaval",
+      "Figueiros",
+      "Lamas",
+      "Painho",
+      "Peral",
+      "Pêro Moniz",
+      "Vermelha",
+      "Vilar"
+     ],
+     "Caldas da Rainha": [
+      "A dos Francos",
+      "Alvorninha",
+      "Landal",
+      "São Gregório",
+      "Vidais"
+     ],
+     "Óbidos": [
+      "A dos Negros",
+      "Gaeiras",
+      "Óbidos (São Pedro)"
+     ]
+    },
+    "districts": [],
+    "municipalities": [],
+    "except": {}
+   }
+  },
+  "notMapped": [],
+  "aliases": {"Bombarral": {"Bombarral": "União das freguesias do Bombarral e Vale Covo"}, "Cadaval": {"Cadaval": "União das freguesias do Cadaval e Pêro Moniz"}, "Óbidos": {"Óbidos (São Pedro)": "Santa Maria, São Pedro e Sobral da Lagoa"}}
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "madeirense",
+ "title": "Why Madeirense tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Madeirense is wine from the terraced slopes of Madeira and Porto Santo. Basalt soils with a low pH give it high acidity, and with it a well-known freshness.",
+  "cite": [
+   "madeirense-doc:p4",
+   "madeirense-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "islands",
+   "beat": "place",
+   "title": "Two islands in the Atlantic",
+   "paras": [
+    "The Madeira region lies in the Atlantic between 30° and 33° north, 978 km south-west of Lisbon and about 700 km from the African coast. It sits at almost the same latitude as Casablanca.",
+    "The wine area covers the two inhabited islands: Madeira (740.7 km²) and Porto Santo (42.5 km²). Grapes for Madeirense must come only from the Região Demarcada da Madeira, the demarcated wine region that spans these two islands.",
+    "Poios are the terraces built to fight the slope of the hillsides and make them farmable. They are one of the human factors that mark the vineyard landscape and the wines the most. Small plots and the lie of the land make machines almost impossible to use. Most work, from harvest to pruning, is done by hand."
+   ],
+   "cite": [
+    "madeirense-doc:p4",
+    "madeirense-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Porto Santo",
+     "point": [
+      -16.34,
+      33.07
+     ],
+     "zoom": 10,
+     "caption": "The smaller of the two inhabited islands in the wine area, at 42.5 km².",
+     "cite": [
+      "madeirense-doc:p4"
+     ]
+    },
+    {
+     "label": "Madeira island",
+     "point": [
+      -16.96,
+      32.75
+     ],
+     "zoom": 9,
+     "caption": "The larger island, at 740.7 km², where the terraced poios climb the slopes.",
+     "cite": [
+      "madeirense-doc:p4",
+      "madeirense-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mild",
+   "beat": "weather",
+   "title": "Slow, mild ripening",
+   "paras": [
+    "Temperature swings are small through the whole growing cycle. Temperatures during ripening are normally mild, so ripening has to run longer.",
+    "Altitude and the exposure of each plot create microclimates that strongly mark the wine. Two decades of experience have led to a pattern: the allowed grapes favour lower sites with better sun exposure.",
+    "The traditional grapes are spread across the island's microclimates, but not by chance. Each sits where growers found it shows its best. Even so, the rules do not tie any grape to one place."
+   ],
+   "cite": [
+    "madeirense-doc:p6"
+   ]
+  },
+  {
+   "id": "basalt",
+   "beat": "ground",
+   "title": "Basalt and high acidity",
+   "paras": [
+    "The soils are mostly of basalt origin, with a low pH. They give musts and wines with high natural acidity, well balanced with alcohol and structure. That acidity gives Madeirense its well-known freshness, and it matters most in the whites and rosados.",
+    "Farmland is scarce and pressure on the land is high. Growers often add organic matter to the soil, so the soils usually hold plenty of it."
+   ],
+   "cite": [
+    "madeirense-doc:p6"
+   ]
+  },
+  {
+   "id": "table-wines",
+   "beat": "rules",
+   "title": "Whites, rosados and reds",
+   "paras": [
+    "Madeirense falls in the plain wine category and comes in three colours. Both Sercial and Verdelho are allowed among the whites, and Tinta Negra and Touriga Nacional are among the reds. The rules allow many other grapes too, from Malvasia Fina to Syrah.",
+    "Whites are clear, from greenish yellow to slightly golden. They smell of tropical fruit such as pineapple and passion fruit, with some floral notes. More complex ones may show vanilla and tangerine peel, with some honey. They are harmonious and light to medium in body. They are very fresh, with a typical, lasting minerality.",
+    "Rosados are clear, from violet pink to salmon. They smell of red fruit and jam, with floral notes and sometimes a vegetal touch. In the mouth they are very fresh and medium in body. Their acidity is well balanced and lasting.",
+    "Reds are an intense violet red, from ruby to garnet. Young ones smell of red fruit and wild fruit, some of it candied, with jam and floral notes. Spice such as pepper mixes in, with vanilla and chocolate. With age they grow more complex. Tannins are present but well integrated. Acidity is present but well balanced, with good length.",
+    "Whites and rosados must reach at least 10.5% alcohol, and reds at least 11.5%. The must needs at least 10% potential alcohol. Yields are capped at 90 hl of must per hectare for reds and 100 hl for whites and rosados. Reds can only be sold after at least 6 months of ageing, as a rule in wood, in barrels.",
+    "Vines are trained mostly on the latada (a pergola) or on the espaldeira (a trellis). Grapes are traditionally picked by hand. White grapes may first sit on their skins at a controlled temperature before pressing. Whites are then fermented off the skins. Reds are fermented on the skins. Rosados are made the same way as whites or by bleeding off juice from red must."
+   ],
+   "cite": [
+    "madeirense-doc:p2",
+    "madeirense-doc:p3",
+    "madeirense-doc:p4",
+    "madeirense-doc:p5",
+    "madeirense-doc:p6"
+   ]
+  }
+ ]
+}

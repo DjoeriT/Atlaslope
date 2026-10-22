@@ -1,0 +1,21 @@
+{
+ "lafoes": {
+  "source": "lafoes-doc:p5 (eAmbrosia attachment 16896, section 5)",
+  "zones": {
+   "lafoes": {
+    "districts": [],
+    "municipalities": [
+     "Oliveira de Frades",
+     "São Pedro do Sul",
+     "Vouzela"
+    ],
+    "parishes": {},
+    "except": {}
+   }
+  },
+  "notMapped": [
+   "The spec refers to the map annex of Decreto-Lei 296/90 of 22 Sept; only the three municipalities it names are mapped"
+  ],
+  "aliases": {}
+ }
+}

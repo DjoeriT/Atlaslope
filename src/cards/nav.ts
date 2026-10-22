@@ -1,7 +1,7 @@
 // How the open card, the breadcrumb and the map fit together. Pure: no React, no map.
 import type { Crumb, NodeKind, Tree } from '../tree';
 import type { Focus } from '../map/focus';
-import { flyTargetOf, guideOf, type FlyTarget } from '../facts/guides';
+import { flyTargetOf, guideOf, hasGuide, type FlyTarget } from '../facts/guides';
 import { ATLAS, ATLAS_ID, SPAIN, isAtlas, type Selection } from '../url';
 import { liveBounds } from './atlasCover';
 
@@ -23,7 +23,7 @@ export function validSelection(tree: Tree, sel: Selection): Selection {
   }
   if (sel.kind === 'place') {
     if (!tree.getPlace(sel.id)) return SPAIN;
-    if (!sel.fly || flyOf(sel)) return sel;
+    if (!sel.fly || flyOf(sel) || (hasGuide(sel.id) && !guideOf(sel.id))) return sel; // a guide still loading keeps its fly-there; App checks it again once loaded
     const { fly: _dropped, ...plain } = sel; // a fly-there the guide does not have is just the place
     return plain;
   }

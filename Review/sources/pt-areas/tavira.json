@@ -1,0 +1,44 @@
+{
+ "tavira": {
+  "source": "tavira-doc:att10909",
+  "zones": {
+   "tavira": {
+    "municipalities": [
+     "Faro",
+     "Olhão"
+    ],
+    "parishes": {
+     "São Brás de Alportel": [
+      "São Brás de Alportel"
+     ],
+     "Castro Marim": [
+      "Castro Marim"
+     ],
+     "Tavira": [
+      "Luz",
+      "Santiago",
+      "Conceição",
+      "Santa Catarina",
+      "Santa Marta",
+      "Santo Estêvão"
+     ],
+     "Vila Real de Santo António": [
+      "Vila Nova de Cacela"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Partial parishes, mapped whole: São Brás de Alportel, Castro Marim, Conceição, Santa Catarina, Santa Marta, Santo Estêvão",
+   "Santiago and Santa Marta both fall in the CAOP union Tavira (Santa Maria e Santiago), which also takes in Santa Maria"
+  ],
+  "aliases": {
+   "Tavira": {
+    "Luz": "Luz de Tavira",
+    "Santa Catarina": "Santa Catarina da Fonte do Bispo",
+    "Santiago": "União das freguesias de Tavira (Santa Maria e Santiago)",
+    "Santa Marta": "União das freguesias de Tavira (Santa Maria e Santiago)"
+   }
+  }
+ }
+}

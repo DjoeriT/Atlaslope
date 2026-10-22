@@ -1,0 +1,878 @@
+{
+ "region": "pt-lisboa",
+ "sheets": [
+  {
+   "id": "lisboa",
+   "why": {
+    "text": "An Atlantic coastal strip north of the Tejo estuary, with clay-limestone and clay-sand soils, humid west winds and dry summers.",
+    "cite": [
+     "lisboa-doc:p6",
+     "lisboa-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Zinfandel",
+     "Vital",
+     "Viosinho",
+     "Viognier",
+     "Verdelho",
+     "Camarate",
+     "Caladoc",
+     "Cabinda",
+     "Cabernet-Sauvignon",
+     "Cabernet Franc",
+     "Bonvedro",
+     "Boal Espinho",
+     "Boal Branco",
+     "Bical",
+     "Bastardo",
+     "Baga",
+     "Arinto",
+     "Aragonez",
+     "Antao Vaz",
+     "Amostrinha",
+     "Alvarinho",
+     "Alvadurao",
+     "Almafra",
+     "Alicante Branco",
+     "Alicante Bouschet",
+     "Alfrocheiro",
+     "Grand Noir",
+     "Gewürztraminer",
+     "Galego Dourado",
+     "Fernao Pires Rosado",
+     "Fernao Pires",
+     "Encruzado",
+     "Diagalves",
+     "Jampal",
+     "Jaen",
+     "Grossa",
+     "Grenache",
+     "Cinsaut",
+     "Chenin",
+     "Chardonnay",
+     "Cercial",
+     "Cerceal Branco",
+     "Castelao",
+     "Carignan",
+     "Parreira Matias",
+     "Negra Mole",
+     "Moscatel Graudo",
+     "Moreto",
+     "Monvedro",
+     "Molar",
+     "Merlot",
+     "Marquinhas",
+     "Malvasia Rei",
+     "Malvasia Fina",
+     "Malvasia",
+     "Loureiro",
+     "Tannat",
+     "Tamarez",
+     "Talia",
+     "Syrah",
+     "Sousao",
+     "Siria",
+     "Sercial",
+     "Sémillon",
+     "Seara Nova",
+     "Sauvignon",
+     "Rufete",
+     "Valbom",
+     "Trincadeira",
+     "Trincadeira das Pratas",
+     "Trincadeira Branca",
+     "Touriga Nacional",
+     "Touriga Franca",
+     "Tinto Cao",
+     "Tintinha",
+     "Tinta Pomar",
+     "Tinta Miuda",
+     "Tinta Lisboa",
+     "Tinta Carvalha",
+     "Tinta Caiada",
+     "Tinta Barroca",
+     "Riesling",
+     "Ratinho",
+     "Ramisco Tinto",
+     "Rabo de Ovelha",
+     "Preto Martinho",
+     "Preto Cardana",
+     "Pinot Noir",
+     "Pinot Gris",
+     "Pinot Blanc",
+     "Petit Verdot"
+    ],
+    "othersCite": [
+     "lisboa-doc:p4",
+     "lisboa-doc:p5",
+     "lisboa-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Reds, whites and rosés, plus sparkling wine, fortified (licoroso) wine and a low-alcohol Lisboa Leve.",
+    "cite": [
+     "lisboa-doc:p1",
+     "lisboa-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "A transition between the zone of humid, constant west winds and dry summers, with an Atlantic coastal strip.",
+    "cite": [
+     "lisboa-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: limestone and marl, sandstone, Mediterranean clays, podzols, sands, alluvium and basalt clays. The region rests on clay-limestone and clay-sand formations.",
+    "cite": [
+     "lisboa-doc:p3",
+     "lisboa-doc:p6",
+     "lisboa-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: lemon-yellow, fruity, aromatic, some persistence. Reds: red, violet or garnet, aromatic, full-bodied, strong, improve with age. Lisboa Leve: low alcohol, fruity or floral, fresh and slightly tart.",
+    "cite": [
+     "lisboa-doc:p1",
+     "lisboa-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Lisboa Leve",
+      "text": "Light wine, at most 10% alcohol, fruity or floral, fresh and slightly tart."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine made only by the classic method, at least 11% alcohol."
+     },
+     {
+      "name": "Vinho licoroso",
+      "text": "Fortified wine, 15 to 22% alcohol, from must of at least 12% natural strength."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional term allowed on labels, with Garrafeira, Superior and Colheita Seleccionada."
+     }
+    ],
+    "cite": [
+     "lisboa-doc:p1",
+     "lisboa-doc:p2",
+     "lisboa-doc:p7",
+     "lisboa-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colares",
+   "why": {
+    "text": "Vines grow in sand over deep clay close to the Atlantic, with sea winds and a mild, humid summer, which spared them from phylloxera.",
+    "cite": [
+     "colares-doc:p5",
+     "colares-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Vital",
+     "Parreira Matias",
+     "Malvasia",
+     "Arinto",
+     "Fernao Pires",
+     "Castelao",
+     "Galego Dourado",
+     "Jampal",
+     "Tinta Miuda",
+     "Molar",
+     "Ramisco"
+    ],
+    "othersCite": [
+     "colares-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines only; the red is aged 18 months in vessel plus 6 in bottle, the white 6 plus 3.",
+    "cite": [
+     "colares-doc:p2",
+     "colares-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Strong Atlantic maritime influence, with sea winds and a mild, humid summer.",
+    "cite": [
+     "colares-doc:p5",
+     "colares-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Two soils: sandy ground over consolidated material (\"chão de areia\"), and brown limestone marl soils (\"chão rijo\"). Deep clay lies under the sand.",
+    "cite": [
+     "colares-doc:p5",
+     "colares-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites are lemon to straw-gold, light fruity. Reds are ruby to garnet; Ramisco is astringent but softens with age. Balanced, with a complex finish and tannins and acids fused.",
+    "cite": [
+     "colares-doc:p2",
+     "colares-doc:p5",
+     "colares-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Colares red",
+      "text": "Minimum 10% alcohol; 18 months in vessel then 6 months in bottle before sale."
+     },
+     {
+      "name": "Colares white",
+      "text": "Minimum 10% alcohol; 6 months in vessel then 3 months in bottle before sale."
+     }
+    ],
+    "cite": [
+     "colares-doc:p2",
+     "colares-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "carcavelos",
+   "why": {
+    "text": "A tiny coastal area near the Tagus mouth, with a mild Mediterranean climate, mostly limy soils and south-west-facing plots.",
+    "cite": [
+     "carcavelos-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Boal Branco",
+     "Malvasia Fina",
+     "Ratinho",
+     "Seara Nova",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Castelao",
+     "Amostrinha",
+     "Galego Dourado",
+     "Negra Mole",
+     "Preto Martinho"
+    ],
+    "othersCite": [
+     "carcavelos-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "fortified"
+    ],
+    "text": "Fortified (licoroso) wine, white or red, with 15 to 22% alcohol and up to 150 g/l residual sugar.",
+    "cite": [
+     "carcavelos-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Mild Mediterranean climate without big temperature swings, because the sea is close.",
+    "cite": [
+     "carcavelos-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Red Mediterranean soils on normal limestone, normal limestone soils, and reddish-brown non-calcareous clays; some plots are stony.",
+    "cite": [
+     "carcavelos-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Delicate and velvety, with a certain almond aroma. Whites run straw-yellow to deep gold, reds ruby to topaz. Ageing makes the perfume stronger and the colour paler.",
+    "cite": [
+     "carcavelos-doc:p2",
+     "carcavelos-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vinho generoso",
+      "text": "Fortified Carcavelos; at least two years in wood and six months in bottle."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional quality label the spec allows; it sets no rule for it."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional quality label the spec allows; it sets no rule for it."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional quality label the spec allows; it sets no rule for it."
+     }
+    ],
+    "cite": [
+     "carcavelos-doc:p3",
+     "carcavelos-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bucelas",
+   "why": {
+    "text": "Poor marl and hard limestone soils on the Trancão valley slopes, with cold winters and mild summers, give light, tart whites.",
+    "cite": [
+     "bucelas-doc:p5",
+     "bucelas-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Arinto"
+     }
+    ],
+    "cite": [
+     "bucelas-doc:p5"
+    ],
+    "others": [
+     "Sercial",
+     "Rabo de Ovelha"
+    ],
+    "othersCite": [
+     "bucelas-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red",
+     "sparkling"
+    ],
+    "text": "Mostly dry, soft whites, with reds allowed and sparkling wine made by the bottle-fermentation method.",
+    "cite": [
+     "bucelas-doc:p2",
+     "bucelas-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "A typical microclimate, quite cold in winter and mild in summer; the valleys are narrow and enclosed by high hills.",
+    "cite": [
+     "bucelas-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Poor soils, mostly from marls and hard limestones (the traditional \"caeiras\"), as a rule deep and with coarse material.",
+    "cite": [
+     "bucelas-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites are citrus-coloured, fruity and tart, dry and soft; with age they turn golden with complex tertiary aromas. Sparkling wines are quite fruity, with marked freshness and a very fine, persistent bubble.",
+    "cite": [
+     "bucelas-doc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Arinto blend",
+      "text": "Bucelas wine must contain at least 75% Arinto."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine made only by classic bottle fermentation, base wine must qualify as Bucelas."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional mention allowed on the label, along with Garrafeira, Superior and Escolha."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional mention allowed on the label for Bucelas wines."
+     }
+    ],
+    "cite": [
+     "bucelas-doc:p3",
+     "bucelas-doc:p4",
+     "bucelas-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "torres-vedras",
+   "why": {
+    "text": "Mild Atlantic-influenced climate, clay-limestone soils and about 700 mm of rain: fresh fruity whites on low coastal ground, full-bodied reds in the inland hills.",
+    "cite": [
+     "torres-vedras-doc:p6",
+     "torres-vedras-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Viosinho",
+     "Vital",
+     "Malvasia Rei",
+     "Syrah",
+     "Seara Nova",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Alvarinho",
+     "Fernao Pires",
+     "Sauvignon",
+     "Castelao",
+     "Antao Vaz",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Caladoc",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Tinta Miuda"
+    ],
+    "othersCite": [
+     "torres-vedras-doc:p5",
+     "torres-vedras-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Still red and white wines only; the white zone is wider and nearer the coast, the red zone is in the inland hills.",
+    "cite": [
+     "torres-vedras-doc:p2",
+     "torres-vedras-doc:p4",
+     "torres-vedras-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Mild, without big temperature swings; Mediterranean traits with Atlantic influence. Average rainfall is 700 mm a year.",
+    "cite": [
+     "torres-vedras-doc:p6",
+     "torres-vedras-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly clay-limestone, brown and red, with clayey, sandy-clay or loamy texture. Often shallow and of low fertility.",
+    "cite": [
+     "torres-vedras-doc:p4",
+     "torres-vedras-doc:p6",
+     "torres-vedras-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: fruity and aromatic, fresh with a slight tartness, from the Atlantic influence. Reds: garnet, intense winey aroma, a little astringent when young, becoming soft, elegant and velvety with age.",
+    "cite": [
+     "torres-vedras-doc:p6",
+     "torres-vedras-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional mention the spec allows; it sets no extra rule."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional mention the spec allows; it sets no extra rule."
+     },
+     {
+      "name": "Escolha",
+      "text": "Traditional mention the spec allows; it sets no extra rule."
+     },
+     {
+      "name": "Colheita Seleccionada",
+      "text": "Traditional mention the spec allows; it sets no extra rule."
+     }
+    ],
+    "cite": [
+     "torres-vedras-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "alenquer",
+   "why": {
+    "text": "Limestone and Mediterranean soils on hillsides and in valleys, with mountains to the north and west that hold back the Atlantic, tempered by mists.",
+    "cite": [
+     "alenquer-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Viosinho",
+     "Vital",
+     "Malvasia Rei",
+     "Ratinho",
+     "Syrah",
+     "Seara Nova",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Alvarinho",
+     "Fernao Pires",
+     "Sauvignon",
+     "Castelao",
+     "Aragonez",
+     "Amostrinha",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Caladoc",
+     "Jampal",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Tinta Miuda",
+     "Baga",
+     "Preto Martinho"
+    ],
+    "othersCite": [
+     "alenquer-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines only.",
+    "cite": [
+     "alenquer-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Mountains to the north and west block Atlantic influence and let the Mediterranean in. Mediterranean sun gives easy ripening and alcoholic strength, while Atlantic mists and summer breezes balance sugar build-up and acid loss with the forming of aromas and phenolic compounds.",
+    "cite": [
+     "alenquer-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Brown or red Mediterranean soils from fine sandstone, sands or claystone, and brown or red limestone soils from marl and fine sandstone.",
+    "cite": [
+     "alenquer-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: aromatic, full and persistent, showing Mediterranean ripening, colour citrus to golden straw. Reds: winey, lively and bright when young; intense and balanced with rare bouquet when aged, ruby to garnet.",
+    "cite": [
+     "alenquer-doc:p2",
+     "alenquer-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "obidos",
+   "why": {
+    "text": "Hills and knolls running from the Serra de Montejunto towards Óbidos, on loam to clayey limestone soils, give fresh, fruity wines.",
+    "cite": [
+     "obidos-doc:p6",
+     "obidos-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Encruzado",
+     "Viosinho",
+     "Vital",
+     "Pinot Noir",
+     "Viognier",
+     "Malvasia Rei",
+     "Ratinho",
+     "Syrah",
+     "Verdelho",
+     "Seara Nova",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Merlot",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Carignan",
+     "Alvarinho",
+     "Fernao Pires",
+     "Sauvignon",
+     "Castelao",
+     "Antao Vaz",
+     "Aragonez",
+     "Riesling",
+     "Amostrinha",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Caladoc",
+     "Loureiro",
+     "Jampal",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Tinta Miuda",
+     "Baga",
+     "Preto Martinho",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "obidos-doc:p5",
+     "obidos-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Reds, whites and rosados, plus white sparkling wine made by the classic bottle-fermentation method.",
+    "cite": [
+     "obidos-doc:p2",
+     "obidos-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Loam to clayey soils of brown and red limestone, or brown and red Mediterranean soils from non-limestone material.",
+    "cite": [
+     "obidos-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: lemon-coloured, fresh, aromatic and balanced, with fruity and floral notes and light mineral touches. Reds: open in colour, ruby, fruity, soft, with some body. Sparkling whites: fine lasting foam, fine fruity aroma, good balance of acidity and freshness.",
+    "cite": [
+     "obidos-doc:p2",
+     "obidos-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Espumante",
+      "text": "White sparkling wine made by the classic method, with fermentation in the bottle."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional quality term allowed on labels."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional quality term allowed on labels."
+     },
+     {
+      "name": "Colheita Seleccionada",
+      "text": "Traditional quality term allowed on labels."
+     }
+    ],
+    "cite": [
+     "obidos-doc:p3",
+     "obidos-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "arruda",
+   "why": {
+    "text": "Hillside vineyards with an Atlantic maritime climate on brown limestone or marl-and-sandstone soils give aromatic, lightly acidic whites and soft, velvety reds.",
+    "cite": [
+     "arruda-doc:p5",
+     "arruda-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Viosinho",
+     "Vital",
+     "Malvasia Rei",
+     "Ratinho",
+     "Syrah",
+     "Seara Nova",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Fernao Pires",
+     "Sauvignon",
+     "Castelao",
+     "Aragonez",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Caladoc",
+     "Jampal",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Tinta Miuda"
+    ],
+    "othersCite": [
+     "arruda-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Red and white wines only.",
+    "cite": [
+     "arruda-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Climate with Atlantic maritime influence.",
+    "cite": [
+     "arruda-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Brown limestone soils, or marl and fine sandstone parent-rock soils, with exposure good for quality wine.",
+    "cite": [
+     "arruda-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: aromatic, lightly fruity, with a slight acidity. Reds: velvety and soft, and they develop early.",
+    "cite": [
+     "arruda-doc:p5",
+     "arruda-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional quality term allowed on labels."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional quality term allowed on labels."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional quality term allowed on labels."
+     },
+     {
+      "name": "Escolha",
+      "text": "Traditional term allowed on labels."
+     }
+    ],
+    "cite": [
+     "arruda-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

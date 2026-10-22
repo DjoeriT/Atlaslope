@@ -1,0 +1,53 @@
+{
+ "lisboa": {
+  "source": "lisboa-doc:p4",
+  "zones": {
+   "lisboa": {
+    "municipalities": [
+     "Alenquer",
+     "Amadora",
+     "Arruda dos Vinhos",
+     "Cadaval",
+     "Cascais",
+     "Lisboa",
+     "Loures",
+     "Lourinhã",
+     "Mafra",
+     "Odivelas",
+     "Oeiras",
+     "Sintra",
+     "Sobral de Monte Agraço",
+     "Torres Vedras",
+     "Vila Franca de Xira",
+     "Alcobaça",
+     "Batalha",
+     "Bombarral",
+     "Caldas da Rainha",
+     "Leiria",
+     "Marinha Grande",
+     "Nazaré",
+     "Óbidos",
+     "Peniche",
+     "Pombal",
+     "Porto de Mós",
+     "Ourém"
+    ],
+    "parishes": {},
+    "except": {
+     "Pombal": [
+      "Abiul",
+      "Pelariga",
+      "Redinha",
+      "Vila Cã"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Sub-region Estremadura (district of Lisboa except Azambuja; Bombarral, Peniche, Obidos; Caldas da Rainha except Carvalhal Benfeito, Santa Catarina, Salir de Matos)",
+   "Sub-region Alta-Estremadura (Alcobaca, Batalha, Leiria, Marinha Grande, Nazare, Pombal, Porto de Mos, Ourem, plus Carvalhal Benfeito, Santa Catarina, Salir de Matos of Caldas da Rainha)",
+   "Azambuja (excluded: the district of Lisboa is listed municipality by municipality)"
+  ],
+  "aliases": {}
+ }
+}

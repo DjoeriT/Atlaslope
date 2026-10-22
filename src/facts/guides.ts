@@ -62,12 +62,28 @@ export interface Guide {
   more?: Partial<Record<Exclude<ExtraKind, 'label'>, Extra>>;
 }
 
-const modules = import.meta.glob<Guide>('../../content/guides/*.json', { eager: true, import: 'default' });
+// Each guide is a chunk of its own, loaded when its page or one of its fly-theres is opened, so a new country adds almost nothing to the
+// first load (owner 22 Oct 2026, decision #38: the download check counts the first load; vite.config.ts puts these chunks under dist/guide-data/).
+const loaders = import.meta.glob<Guide>('../../content/guides/*.json', { import: 'default' });
+const loaderOf = new Map(Object.entries(loaders).map(([path, load]) => [path.slice(path.lastIndexOf('/') + 1, -'.json'.length), load]));
+const loaded = new Map<string, Guide>();
 
-export const guides: Guide[] = Object.values(modules);
-const byPlace = new Map(guides.map((g) => [g.id, g]));
+/** Whether the place has a guide, without loading it. */
+export const hasGuide = (placeId: string): boolean => debugNoGuide() !== placeId && loaderOf.has(placeId);
 
-export const guideOf = (placeId: string): Guide | undefined => (debugNoGuide() === placeId ? undefined : byPlace.get(placeId));
+/** The place's guide once loadGuide has fetched it; undefined before that, and for a place without one. */
+export const guideOf = (placeId: string): Guide | undefined => (debugNoGuide() === placeId ? undefined : loaded.get(placeId));
+
+/** Fetches the place's guide (once) and keeps it for guideOf. */
+export async function loadGuide(placeId: string): Promise<Guide | undefined> {
+  const load = hasGuide(placeId) ? loaderOf.get(placeId) : undefined;
+  if (!load) return undefined;
+  if (!loaded.has(placeId)) loaded.set(placeId, await load());
+  return loaded.get(placeId);
+}
+
+/** Every guide, loaded (unit tests and checks; the app loads one at a time). */
+export const loadAllGuides = async (): Promise<Guide[]> => (await Promise.all([...loaderOf.keys()].map(loadGuide))).filter((g): g is Guide => !!g);
 
 /** The pills of a chapter in page order: its own, then one per zone note. A pill's index in this list is the `fly=` number in the address. */
 export const chapterFlies = (chapter: Chapter): FlyTarget[] => [...(chapter.fly ?? []), ...(chapter.cards ?? []).map((c) => c.fly)];

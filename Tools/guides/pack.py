@@ -32,6 +32,23 @@ def doc_sections(path: Path, wanted) -> str:
     return '\n'.join(out)
 
 
+FACTS_BRIEF = """Fill this place's fact sheet from the spec below and nothing else (no memory, no other source).
+Fields, all in plain English, short, one idea per sentence:
+- why.text: one sentence, why the wine tastes the way it does (land and climate first). cite: the pages.
+- grapes.main: the grapes the spec names as recommended/main ("castas recomendadas", or the ones it says most wine is made from), as
+  [{"local": "<name as the spec spells it>"}]; [] when the spec does not single any out. grapes.others: every other authorised grape.
+  cite / othersCite: the pages.
+- styles.kinds: from red, white, rose, sparkling, fortified, sweet; styles.text one sentence.
+- climate.text, soil.text, altitude.text: what the spec says, with numbers where it gives them; "" and [] when it says nothing.
+- tastes.text: the spec's own description of the wines, short.
+- famous.styles: up to 4 named styles or labels the spec defines (e.g. Reserva, Garrafeira, Espumante, Colheita Tardia), each
+  {"name", "text"} with text at most 15 words giving its rule. producers.items: [] (the spec names none; leave it).
+Limits (src/facts/check.ts; batch 1 broke 19 of them): why.text at most 25 words, tastes.text at most 40, at most 4 famous styles,
+each famous text at most 15 words.
+Every cite is "<source>:p<n>" for a page you read it on. Never invent a number. Translate from Portuguese faithfully.
+"""
+
+
 def sheet(region: str, pid: str) -> str:
     d = json.loads((ROOT / f'content/facts/{region}.json').read_text(encoding='utf-8'))
     s = d['sheets']
@@ -76,6 +93,17 @@ def main() -> None:
             print(f'\n\n######## {title}\n\n{body}')
         return
     extract = (gp / f'{pid}.extract.txt').read_text(encoding='utf-8')
+    if mode == 'facts':
+        # Portugal batch 1, 22 Oct 2026: a new country's places start with an empty sheet; one Sonnet run fills it from the spec
+        # (the pilot did this by hand-pasted runs, 0.4-0.5M each). Example: the Douro sheet, checked in the pilot.
+        north = json.loads((ROOT / 'content/facts/pt-north.json').read_text(encoding='utf-8'))['sheets']
+        parts += [('Brief', FACTS_BRIEF.replace('<source>', source)),
+                  ('Example sheet (Douro; copy the shape and the style, never its content)', json.dumps(north[0], ensure_ascii=False, indent=1)),
+                  (f'Spec, every page. Cite as "{source}:p<n>"', re.sub(r'[ \t]{2,}', '  ', extract))]
+        print(f'# FACTS PACK: {pid} ({region})\n')
+        for title, body in parts:
+            print(f'\n\n######## {title}\n\n{body}')
+        return
     if mode == 'write':
         parts += [('Brief', (tools / 'WRITER.md').read_text(encoding='utf-8')),
                   ('docs/guides.md (the parts a writer needs)', doc_sections(ROOT / 'docs/guides.md', GUIDE_SECTIONS)),

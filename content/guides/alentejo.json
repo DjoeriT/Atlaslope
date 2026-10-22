@@ -1,0 +1,127 @@
+{
+ "id": "alentejo",
+ "title": "Why Alentejo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Alentejo is so flat that the sea's moisture does not condense over it, and the sun shines for about 3000 hours a year. Those conditions markedly favour sugar and colour in the grapes.",
+  "cite": [
+   "alentejo-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "A plain with a few hills",
+   "paras": [
+    "Alentejo lies in the south of Portugal. Its landscape is characteristically flat. The few hills that rise from it set the sub-regions apart from one another.",
+    "Eight sub-regions share the DO. A label may add one of their names after Alentejo, as in Alentejo Borba. Some borders follow the land. The Serra d'Ossa and its foothills close off Redondo to the north and Borba to the south. The Guadiana river bounds Moura to the north and Reguengos to the east."
+   ],
+   "cite": [
+    "alentejo-doc:p5",
+    "alentejo-doc:p6",
+    "alentejo-doc:p7",
+    "alentejo-doc:p9",
+    "alentejo-doc:p10",
+    "alentejo-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Serra d'Ossa",
+     "point": [
+      -7.55,
+      38.73
+     ],
+     "zoom": 10,
+     "caption": "The Serra d'Ossa and its foothills mark the edge of the Redondo and Borba sub-regions.",
+     "cite": [
+      "alentejo-doc:p5",
+      "alentejo-doc:p6"
+     ]
+    },
+    {
+     "label": "The Guadiana at Moura",
+     "point": [
+      -7.49,
+      38.19
+     ],
+     "zoom": 9.5,
+     "caption": "The Guadiana river forms the northern edge of Moura and the eastern edge of Reguengos.",
+     "cite": [
+      "alentejo-doc:p6",
+      "alentejo-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Hot, dry summers and long sun",
+   "paras": [
+    "With no mountain barrier, the moisture coming from the sea does not condense. That lessens the Atlantic influence here.",
+    "The climate is temperate, with Mediterranean and continental traits. Springs and summers are hot and dry. Rain falls mostly in winter, with an annual average of 550 to 650 mm. Borba is the exception with 750 to 850 mm, and Portalegre with 900 to 1000 mm. The average yearly temperature is 15.5 to 16 °C.",
+    "Sunshine is very high, about 3000 hours a year, especially in the months before harvest. That helps keep the grapes in perfect condition. These climate conditions markedly favour the making and building up of sugars. They also favour the concentration of colouring matter in the skins."
+   ],
+   "cite": [
+    "alentejo-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Soils that change by sub-region",
+   "paras": [
+    "The soils do much to set the wines apart and shape their quality. Each sub-region has its own soil rules. Borba sits mostly on soils from crystalline limestone, with some patches of schist, usually red. Évora has brown and red Mediterranean soils from non-limestone material.",
+    "Portalegre is mostly granite, with some schist and quartzite. Redondo and Reguengos are mostly on igneous rocks, notably quartz-diorites. Vidigueira has varied soils, mainly igneous or metamorphic in origin.",
+    "Moura has brown and red limestone soils, and limestone clays. Granja-Amareleja has brown and red Mediterranean soils on non-limestone material. It also has red ones on limestone.",
+    "Some ground is ruled out in every sub-region. Vines on alluvial or colluvial soils are excluded. So are vines on black clays or on brown-red clays without limestone. In Portalegre, land above 700 m is excluded too."
+   ],
+   "cite": [
+    "alentejo-doc:p6",
+    "alentejo-doc:p9",
+    "alentejo-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Portalegre",
+     "point": [
+      -7.4,
+      39.3
+     ],
+     "zoom": 10,
+     "caption": "Portalegre's soils are mostly granite. Land above 700 m is left out of the DO.",
+     "cite": [
+      "alentejo-doc:p6",
+      "alentejo-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Old clay jars, many grapes",
+   "paras": [
+    "Wine here goes back to the Romans and Phoenicians. Some cellars still use talhas and amphorae, clay jars for making wine. The Moors made wine too, and their wine deposits survive. After the Reconquista, vineyards grew, with evidence from 1143. The high point came in the late 17th century, with a trade treaty between Portugal and England. The first Alentejo denominations were regulated in 1988, and the regional commission, the CVRA, followed in 1989.",
+    "The rules list dozens of grapes, red and white. Many are native and give the region a strong character. Some are well adapted to the land. Others came in relatively recently.",
+    "Most of the wine is still wine. Red wine turns garnet, then brownish, as it ages.",
+    "Quality sparkling wine and licoroso are made in smaller volumes. Licoroso is a fortified wine. Neutral wine alcohol or wine distillate may be added to must that has just started fermenting. Sparkling wine must use classic bottle fermentation. Its bubbles are fine to medium.",
+    "Red and rosé need at least 12% alcohol. White needs 11.5%. Sparkling needs 11%, licoroso 17.5%.",
+    "Yields are capped at 8,500 kg or 65 hl per hectare for red, and 10,000 kg or 75 hl for white. Vines must be trained low, pruned as cordon, guyot or goblet. A wine with a quality term such as Reserva or Garrafeira must stand out in structure and balance, and score 66 or more at tasting. The basic minimum is 60.",
+    "DO Alentejo wine may leave Portugal only packaged and labelled. Wine sold under a sub-region's name loses the right to that name if it leaves the sub-region in bulk or pre-packed."
+   ],
+   "cite": [
+    "alentejo-doc:p2",
+    "alentejo-doc:p3",
+    "alentejo-doc:p4",
+    "alentejo-doc:p5",
+    "alentejo-doc:p7",
+    "alentejo-doc:p8",
+    "alentejo-doc:p9",
+    "alentejo-doc:p10",
+    "alentejo-doc:p11"
+   ]
+  }
+ ]
+}

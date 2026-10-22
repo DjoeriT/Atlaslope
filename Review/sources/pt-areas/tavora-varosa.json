@@ -1,0 +1,92 @@
+{
+ "tavora-varosa": {
+  "source": "tavora-varosa-doc:p5 (eAmbrosia attachment 11535, section 5)",
+  "zones": {
+   "tavora-varosa": {
+    "districts": [],
+    "municipalities": [],
+    "parishes": {
+     "Moimenta da Beira": [
+      "Arcozelo",
+      "Baldos",
+      "Castelo",
+      "Moimenta da Beira",
+      "Nagosa",
+      "Paradinha",
+      "Rua",
+      "Vilar"
+     ],
+     "Penedono": [
+      "Póvoa de Penela",
+      "Souto"
+     ],
+     "São João da Pesqueira": [
+      "Pereiros",
+      "Riodades"
+     ],
+     "Sernancelhe": [
+      "Escurquela",
+      "Faia",
+      "Ferreirim",
+      "Fonte Arcada",
+      "Freixinho",
+      "Granjal",
+      "Penso",
+      "Sarzeda",
+      "Sernancelhe",
+      "Vila da Ponte"
+     ],
+     "Tabuaço": [
+      "Arcos",
+      "Granja do Tedo",
+      "Longra",
+      "Paradela"
+     ],
+     "Armamar": [
+      "Cimbres",
+      "Goujoim",
+      "Queimada",
+      "Queimadela",
+      "Santa Cruz",
+      "Santiago",
+      "São Cosmado",
+      "São Romão"
+     ],
+     "Lamego": [
+      "Britiande",
+      "Cepões",
+      "Ferreirim",
+      "Lalim",
+      "Vila Nova de Souto de El-Rei"
+     ],
+     "Tarouca": [
+      "Dalvares",
+      "Gouviães",
+      "Granja Nova",
+      "Mondim da Beira",
+      "Salzedas",
+      "Tarouca",
+      "Ucanha"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Lamego: the part of the parish of Várzea de Abrunhais that is not in the Douro demarcated region (partial parish)",
+   "Armamar: Tões is listed in the spec but has no CAOP 2025 parish of that name (not matched)",
+   "Armamar: Tões, no parish of that name in CAOP 2025 (not matched to a union), left out"
+  ],
+  "aliases": {
+   "Moimenta da Beira": {
+    "Rua": "Vila da Rua",
+    "Arcozelo": "Arcozelos"
+   },
+   "Tabuaço": {
+    "Longra": "Longa"
+   },
+   "Lamego": {
+    "Vila Nova de Souto de El-Rei": "Vila Nova de Souto d'El-Rei"
+   }
+  }
+ }
+}
