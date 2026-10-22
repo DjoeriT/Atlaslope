@@ -1,0 +1,80 @@
+{
+ "id": "bucelas",
+ "title": "Why Bucelas tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Bucelas sits tucked away between narrow valleys closed in by high hills, with cold winters and mild summers. Its wine is mostly Arinto, and its whites carry that grape's typical tartness.",
+  "cite": [
+   "bucelas-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Hidden between the hills",
+   "paras": [
+    "Bucelas lies mainly on the slopes of the Trancão river valley. The village hides among its tight valleys, under high hills.",
+    "The area covers the parish of Bucelas and parts of two more parishes, Fanhões and Santo Antão do Tojal. All of it is in the municipality of Loures, in Greater Lisbon."
+   ],
+   "cite": [
+    "bucelas-doc:p4",
+    "bucelas-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Trancão valley at Bucelas",
+     "point": [
+      -9.1,
+      38.9
+     ],
+     "zoom": 10,
+     "caption": "The vineyards sit mainly on the slopes of the Trancão river valley.",
+     "cite": [
+      "bucelas-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, mild summers",
+   "paras": [
+    "The area has its own typical microclimate: quite cold in winter and mild in summer."
+   ],
+   "cite": [
+    "bucelas-doc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Poor soil, hard limestone",
+   "paras": [
+    "The soils are poor. They come mostly from marls and from hard limestones, known locally as the traditional \"caeiras\". As a rule they are deep, with coarse material."
+   ],
+   "cite": [
+    "bucelas-doc:p5"
+   ]
+  },
+  {
+   "id": "arinto",
+   "beat": "rules",
+   "title": "Arinto leads",
+   "paras": [
+    "Bucelas wine is mostly Arinto, at least 75%. That makes it a wine of \"strong personality\". The other permitted grapes are Sercial and Rabo de Ovelha. All three are white grapes.",
+    "The whites are citrus-coloured, with fruity aroma and flavour and the tart edge of Arinto. They are dry and soft. Young, they are very light and tart. With age they turn golden and fuller in body. They also gain complex tertiary aromas.",
+    "Red wine is also allowed, between ruby and garnet in colour. The wines' main traits come from a good match between few grape varieties and the local climate and soils.",
+    "Sparkling Bucelas is made only by classic bottle fermentation. The base wine must qualify as Bucelas. The sparkling wines are quite fruity, with marked freshness and a very fine, lasting bubble.",
+    "All Bucelas wine needs at least 10.5% vol. alcohol and at least 4.0 g/l fixed acidity. Yields are capped at 70 hl per hectare. New vineyards need at least 3,300 vines per hectare."
+   ],
+   "cite": [
+    "bucelas-doc:p2",
+    "bucelas-doc:p3",
+    "bucelas-doc:p4",
+    "bucelas-doc:p5"
+   ]
+  }
+ ]
+}

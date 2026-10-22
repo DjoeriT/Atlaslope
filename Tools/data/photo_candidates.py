@@ -345,7 +345,7 @@ def pt():
     geoms = boundaries(places)
     done = json.loads(PT_OUT.read_text()) if PT_OUT.exists() else {}
     for p in places:
-        if p["id"] in done: continue
+        if p["id"] in done or p["id"] == "porto": continue  # Porto is Douro's land: its photos are picked from Douro's candidates
         g = geoms[p["id"]]
         searches, cat_list = PT_CATS.get(p["id"], ([], []))
         found = {}
@@ -364,14 +364,15 @@ def pt():
             # files from a category or a search without coordinates must name the place and a vine word (info() rule)
             cands = [c for c in info(found, g, p["name"]) if c["vine"] or c["wine"]]
             # a file that names a neighbouring Portuguese place is that place's photo (Douro panoramas fell inside Vinho Verde)
-            other = [q["name"].lower() for q in places if q["id"] != p["id"]]
+            # (batch 1, 22 Oct 2026: only places whose outline does not touch this one; Lisboa holds Colares, Setúbal and Palmela share one)
+            other = [q["name"].lower() for q in places if q["id"] != p["id"] and not geoms[q["id"]].intersects(g)]
             cands = [c for c in cands if not any(o in (c["title"] + " " + c["description"]).lower() for o in other)]
         except Exception as e:  # keep what is done; a rerun retries this place
             print(p["id"], "error:", e, flush=True); continue
         done[p["id"]] = {"name": p["name"], "region": p["region"], "seen": len(found), "kept": len(cands), "candidates": rank(list(cands), 20, 2), "all": cands}
         print(p["id"], len(found), len(cands), flush=True)
         PT_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
-    for p in places:
+    for p in [p for p in places if p["id"] in done]:
         sheet(p["id"], [p], done, "pt-", cols=5)
         print("sheet", p["id"], flush=True)
 

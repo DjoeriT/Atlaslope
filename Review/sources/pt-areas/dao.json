@@ -1,0 +1,75 @@
+{
+ "dao": {
+  "source": "dao-doc:p6",
+  "zones": {
+   "dao": {
+    "municipalities": [
+     "Arganil",
+     "Oliveira do Hospital",
+     "Tábua",
+     "Aguiar da Beira",
+     "Fornos de Algodres",
+     "Gouveia",
+     "Seia",
+     "Carregal do Sal",
+     "Mangualde",
+     "Mortágua",
+     "Nelas",
+     "Penalva do Castelo",
+     "Santa Comba Dão",
+     "Sátão",
+     "Tondela"
+    ],
+    "parishes": {
+     "Viseu": [
+      "Abraveses",
+      "Barreiros",
+      "Boaldeia",
+      "Cavernães",
+      "Cepões",
+      "Coração de Jesus",
+      "Côta",
+      "Couto de Baixo",
+      "Couto de Cima",
+      "Fail",
+      "Farminhão",
+      "Fragosela",
+      "Mundão",
+      "Orgens",
+      "Povolide",
+      "Ranhados",
+      "Repeses",
+      "Rio de Loba",
+      "Santa Maria de Viseu",
+      "Santos Evos",
+      "São Cipriano",
+      "São João de Lourosa",
+      "São José",
+      "São Pedro de France",
+      "São Salvador",
+      "Silgueiros",
+      "Torredeita",
+      "Vil de Soito",
+      "Vila Chã de Sá"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Decreto-Lei 376/93 map annex is the legal boundary; the municipality and parish list is mapped",
+   "Spec spellings fixed: orgens=Orgens, Santso Evos=Santos Evos, Vil de Soito=Vil de Souto"
+  ],
+  "aliases": {
+   "Viseu": {
+    "Santa Maria de Viseu": "Viseu",
+    "Coração de Jesus": "Viseu",
+    "São José": "Viseu",
+    "Boaldeia": "União das freguesias de Boa Aldeia, Farminhão e Torredeita",
+    "Couto de Baixo": "Coutos de Viseu",
+    "Couto de Cima": "Coutos de Viseu",
+    "Fail": "Freguesia de Fail e Vila Chã de Sá",
+    "Vil de Soito": "São Cipriano e Vil de Souto"
+   }
+  }
+ }
+}

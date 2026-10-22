@@ -1,0 +1,68 @@
+{
+ "id": "arruda",
+ "title": "Why Arruda tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "Broken, hilly ground shapes Arruda's wines. It gives aromatic whites with a light acidity, and velvety, soft reds.",
+  "cite": [
+   "arruda-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hillside country",
+   "paras": [
+    "Arruda lies in the Oeste zone of mainland Portugal. The area covers the municipality of Arruda dos Vinhos, part of Sobral de Monte Agraço and part of Vila Franca de Xira.",
+    "The land is mostly hillside. Its uneven ground shapes the quality of the wines.",
+    "In spring the vineyards turn a lush green. In autumn the white grapes go yellow and the red-fleshed teinturier grapes go red."
+   ],
+   "cite": [
+    "arruda-doc:p4",
+    "arruda-doc:p6"
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Atlantic influence",
+   "paras": [
+    "The climate has a maritime influence from the Atlantic."
+   ],
+   "cite": [
+    "arruda-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Lime and marl",
+   "paras": [
+    "Vines must grow on brown calcareous soils, or on soils from marl and fine sandstone. Their exposure must also suit quality wine."
+   ],
+   "cite": [
+    "arruda-doc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Soft reds, aromatic whites",
+   "paras": [
+    "Arruda makes red and white wine. No grape is named as the main one. Twenty-five grapes are allowed, both white and red.",
+    "The whites are aromatic and lightly fruity. A slight tartness gives them the character of the name. Their colour runs from lemon to golden straw.",
+    "The reds generally develop early. They quickly turn velvety and soft, and that softness sets them apart from other regions. Their colour runs from ruby to garnet.",
+    "Reds need at least 11.5% alcohol and whites at least 11%. Reds can be bottled only after 14 months of ageing, and whites after three months.",
+    "Yields are capped at 80 hl per hectare for reds and 90 hl for whites. Vines must be kept low, as bush vines or on a cordon, and must be at least three years past grafting."
+   ],
+   "cite": [
+    "arruda-doc:p2",
+    "arruda-doc:p3",
+    "arruda-doc:p4",
+    "arruda-doc:p5",
+    "arruda-doc:p6"
+   ]
+  }
+ ]
+}

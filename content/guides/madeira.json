@@ -1,0 +1,120 @@
+{
+ "id": "madeira",
+ "title": "Why Madeira tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Madeira is a fortified wine from two inhabited Atlantic islands. Its mostly basaltic, low-pH soils give the high acidity behind its well-known long life.",
+  "cite": [
+   "madeira-doc:p3",
+   "madeira-doc:p8",
+   "madeira-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "islands",
+   "beat": "place",
+   "title": "Islands in the Atlantic",
+   "paras": [
+    "Madeira lies in the Atlantic Ocean between 30° and 33° north, 978 km southwest of Lisbon. It is about 700 km from the African coast, at almost the same latitude as Casablanca.",
+    "The wine region covers the two inhabited islands: Madeira itself at 740.7 km² and Porto Santo at 42.5 km². The grapes must come from this region only."
+   ],
+   "cite": [
+    "madeira-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Madeira island",
+     "point": [
+      -16.95,
+      32.75
+     ],
+     "zoom": 9,
+     "caption": "The larger of the two inhabited islands, 740.7 km² in the Atlantic.",
+     "cite": [
+      "madeira-doc:p8"
+     ]
+    },
+    {
+     "label": "Porto Santo",
+     "point": [
+      -16.34,
+      33.07
+     ],
+     "zoom": 10.5,
+     "caption": "The smaller inhabited island, 42.5 km², also part of the wine region.",
+     "cite": [
+      "madeira-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild ripening, little swing",
+   "paras": [
+    "Temperatures vary little through the growing cycle. During ripening they are normally mild.",
+    "The altitude and exposure of each plot create microclimates. These strongly mark how the grapes grow."
+   ],
+   "cite": [
+    "madeira-doc:p9",
+    "madeira-doc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Terraces on basaltic soil",
+   "paras": [
+    "The soils are mostly of basaltic origin, with a low pH. Musts and wines from them have the high acidity that marks every Madeira.",
+    "The slopes are steep, so growers built poios, terraces that make farming possible. Farmland is scarce, so organic matter is often added to the soil and its levels are usually high.",
+    "Plots are small and the land is rugged. Machines are almost never an option, so most vineyard work is done by hand, such as harvest and pruning.",
+    "Three training systems are the most used. One is the latada, a pergola. Another is the espaldeira, a trellis. The third keeps the vine on the ground."
+   ],
+   "cite": [
+    "madeira-doc:p7",
+    "madeira-doc:p9",
+    "madeira-doc:p10"
+   ]
+  },
+  {
+   "id": "fortified",
+   "beat": "rules",
+   "title": "Fortified, then aged",
+   "paras": [
+    "Madeira is a fortified wine (vinho licoroso), with alcohol between 17 and 22% vol. Fortifying and ageing are its two keystones. Neutral alcohol of wine origin, at least 96% vol, is added during or after fermentation. The name covers no still or sparkling wine.",
+    "Twenty grapes are listed, both white and coloured. Sweetness comes in five steps, from extra-dry through dry, medium-dry and medium-sweet to sweet. Five grapes can be named on the label. Sercial is dry. Verdelho is medium-dry. Boal is medium-sweet. Malvasia is sweet. Terrantez can be any step from dry to sweet.",
+    "Two methods exist. With canteiro, the wine ages in wood for at least 2 consecutive years and can be sold only 36 months after the last fortification. With estufagem, the fortified wine is held in containers at no more than 50 °C for at least 90 days.",
+    "Yields are capped at 80 hl of must per hectare.",
+    "Wines under five years old are very fresh from their typical acidity. They smell of dried fruit and wood, and the medium-sweet and sweet types may add caramel. The drier types are light and balanced with a long finish.",
+    "Solera is a named type whose bouquet grows in intensity and complexity as the wine evolves. Rainwater is another, light and dry or medium-dry.",
+    "Garrafeira (or Frasqueira) is wine of exceptional quality from a single harvest, with aromas gained from ageing in wood. Colheita is good-quality wine from one harvest, with dried fruit, caramel and honey notes."
+   ],
+   "cite": [
+    "madeira-doc:p3",
+    "madeira-doc:p4",
+    "madeira-doc:p5",
+    "madeira-doc:p7",
+    "madeira-doc:p8",
+    "madeira-doc:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Rainwater",
+    "text": "A dry or medium-dry, fine and light wine with good acidity, with notes of orange peel and vanilla."
+   },
+   {
+    "term": "Age statement",
+    "text": "Wines may state 5, 10, 15, 20, 30 or more than 40 years, and the bouquet grows more intense with age."
+   }
+  ],
+  "cite": [
+   "madeira-doc:p4",
+   "madeira-doc:p5"
+  ]
+ }
+}

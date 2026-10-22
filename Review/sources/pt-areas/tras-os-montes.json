@@ -1,0 +1,166 @@
+{
+ "tras-os-montes": {
+  "source": "tras-os-montes-doc:p5 (eAmbrosia attachment 11822, section 5)",
+  "zones": {
+   "chaves": {
+    "districts": [],
+    "municipalities": [],
+    "parishes": {
+     "Chaves": [
+      "Anelhe",
+      "Arcossó",
+      "Bustelo",
+      "Calvão",
+      "Cela",
+      "Curalha",
+      "Eiras",
+      "Ervededo",
+      "Faiões",
+      "Lama de Arcos",
+      "Loivos",
+      "Madalena",
+      "Oura",
+      "Outeiro Seco",
+      "Póvoa de Agrações",
+      "Redondelo",
+      "Samaiões",
+      "Sanjurge",
+      "Santa Cruz/Trindade",
+      "Santa Maria Maior",
+      "Santo António de Monforte",
+      "Santo Estêvão",
+      "São Pedro de Agostém",
+      "Seara Velha",
+      "Selhariz",
+      "Soutelinho da Raia",
+      "Soutelo",
+      "Vale de Anta",
+      "Vidago",
+      "Vila Verde da Raia",
+      "Vilar de Nantes",
+      "Vilarelho da Raia",
+      "Vilarinho das Paranheiras",
+      "Vilas Boas",
+      "Vilela do Tâmega",
+      "Vilela Seca"
+     ],
+     "Vila Pouca de Aguiar": [
+      "Capeludos",
+      "Valoura"
+     ]
+    }
+   },
+   "planalto-mirandes": {
+    "districts": [],
+    "municipalities": [
+     "Miranda do Douro",
+     "Mogadouro",
+     "Vimioso"
+    ],
+    "parishes": {
+     "Freixo de Espada à Cinta": [
+      "Fornos",
+      "Lagoaça"
+     ],
+     "Torre de Moncorvo": [
+      "Carviçais",
+      "Felgar",
+      "Felgueiras",
+      "Larinho",
+      "Maçores",
+      "Mós",
+      "Souto da Velha"
+     ]
+    }
+   },
+   "valpacos": {
+    "districts": [],
+    "municipalities": [],
+    "parishes": {
+     "Macedo de Cavaleiros": [
+      "Arcas",
+      "Cortiços",
+      "Lamalonga",
+      "Sesulfe",
+      "Vilarinho de Agrochão"
+     ],
+     "Mirandela": [
+      "Abambres",
+      "Aguieiras",
+      "Alvites",
+      "Avantos",
+      "Bouça",
+      "Cabanelas",
+      "Carvalhais",
+      "Fradizela",
+      "Franco",
+      "Lamas de Orelhão",
+      "Múrias",
+      "Mascarenhas",
+      "Mirandela",
+      "Passos",
+      "São Pedro Velho",
+      "São Salvador",
+      "Suçães",
+      "Torre D. Chama",
+      "Vale de Gouvinhas",
+      "Vale de Salgueiro",
+      "Vale de Telhas"
+     ],
+     "Murça": [
+      "Jou"
+     ],
+     "Valpaços": [
+      "Água Revés e Crasto",
+      "Argeriz",
+      "Barreiros",
+      "Bouçoães",
+      "Canaveses",
+      "Carrazedo de Montenegro",
+      "Ervões",
+      "Fornos do Pinhal",
+      "Possacos",
+      "Rio Torto",
+      "Sanfins",
+      "Santa Maria de Emeres",
+      "Santa Valha",
+      "São Pedro de Veiga de Lila",
+      "Sonim",
+      "Vales",
+      "Valpaços",
+      "Vassal",
+      "Veiga de Lila",
+      "Vilarandelo"
+     ],
+     "Vinhais": [
+      "Agrochão",
+      "Ervedosa",
+      "Rebordelo",
+      "Vale das Fontes",
+      "Vale de Janeiro"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Avantos (Mirandela): the properties of Sociedade Clemente Meneres are excluded; the parish is mapped whole",
+   "Carvalhais (Mirandela): the properties of Sociedade Clemente Meneres are excluded; the parish is mapped whole"
+  ],
+  "aliases": {
+   "Chaves": {
+    "Madalena": "União das freguesias da Madalena e Samaiões",
+    "Eiras": "União das freguesias das Eiras, São Julião de Montenegro e Cela",
+    "Vidago": "Vidago (União das freguesias de Vidago, Arcossó, Selhariz e Vilarinho das Paranheiras)"
+   },
+   "Mirandela": {
+    "Torre D. Chama": "Torre de Dona Chama"
+   },
+   "Valpaços": {
+    "Argeriz": "Algeriz"
+   },
+   "Macedo de Cavaleiros": {
+    "Sesulfe": "Sezulfe"
+   }
+  }
+ }
+}

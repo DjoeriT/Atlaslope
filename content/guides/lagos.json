@@ -1,0 +1,101 @@
+{
+ "id": "lagos",
+ "title": "Why Lagos tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Lagos lies in the Algarve, at the far south of mainland Portugal, in a south-facing amphitheatre with over 3000 hours of sun a year. Its white wines are normally delicate and soft, with the aroma and flavour of a warm zone.",
+  "cite": [
+   "lagos-doc:p2",
+   "lagos-doc:p4",
+   "lagos-doc:p5",
+   "lagos-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "corner",
+   "beat": "place",
+   "title": "At the far south",
+   "paras": [
+    "The Algarve lies at the far south of mainland Portugal. It is a well-defined area with features of its own. The nearby sea and the climate shape them. So do the natural vegetation and a culture marked by long Arab rule.",
+    "The Lagos area takes in parts of three municipalities: Aljezur and Vila do Bispo, as well as Lagos itself. Its natural limit in Aljezur is the Odeceixe stream.",
+    "In Arab times the Algarve grew vines, and its wine was exported. Quality wine from the Algarve was first recognised in 1980."
+   ],
+   "cite": [
+    "lagos-doc:p4",
+    "lagos-doc:p5",
+    "lagos-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Odeceixe stream",
+     "point": [
+      -8.797,
+      37.435
+     ],
+     "zoom": 10,
+     "caption": "The Odeceixe stream is the natural limit of the Lagos area in Aljezur.",
+     "cite": [
+      "lagos-doc:p5"
+     ]
+    },
+    {
+     "label": "Sagres",
+     "point": [
+      -8.94,
+      37.01
+     ],
+     "zoom": 10,
+     "caption": "Sagres parish, in Vila do Bispo, lies wholly inside the Lagos area.",
+     "cite": [
+      "lagos-doc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Hot, dry and sheltered",
+   "paras": [
+    "Three things make the climate markedly Mediterranean. The region lies far to the south. A mountain barrier shelters it from cold northern winds. It also opens like an amphitheatre to the south.",
+    "It is hot and dry. It is not very windy, and temperature swings are very small. Sun averages over 3000 hours a year.",
+    "The vineyards themselves feel the Atlantic, and winds batter them. So their climate is more humid, with bigger temperature swings. Harvests are generally later in this region."
+   ],
+   "cite": [
+    "lagos-doc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Stony, poor ground",
+   "paras": [
+    "Vines stand in rougher zones, on stonier and less fertile land. They generally run on a north-south line.",
+    "Many soils form on sandstone, including the Silves sandstone. Others are sandy, or podzolised coarse sands. Some are red or yellow Mediterranean soils.",
+    "The soils are a large part of what sets Lagos apart, in its quality and its character."
+   ],
+   "cite": [
+    "lagos-doc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Low vines, red and white",
+   "paras": [
+    "Lagos makes red and white wine. The reds need at least 12% alcohol and the whites at least 11.5%.",
+    "Whites run from lemon to straw in colour. Reds are generally light in colour: ruby, turning topaz with age. Once bottled, both must be clear. Only wine still in tank or other bulk may be slightly hazy.",
+    "The grape list names thirteen varieties. Whites include Arinto and Moscatel Graudo. Reds include Negra Mole and Touriga Nacional.",
+    "Vines must be at least four years from grafting and trained low, at about 30 to 40 cm. Yield is capped at 60 hl per hectare.",
+    "A wine needs 60 points or more in the tasting to qualify. A quality designation needs 70 or more, with standout structure and balance."
+   ],
+   "cite": [
+    "lagos-doc:p2",
+    "lagos-doc:p3",
+    "lagos-doc:p4",
+    "lagos-doc:p5"
+   ]
+  }
+ ]
+}

@@ -7,7 +7,7 @@ import { Link, type Go } from '../cards/Link';
 import { selectionOf } from '../cards/nav';
 import { OtherGrapes, SourceLine, SourceList } from '../cards/PlaceFacts';
 import { SearchBox } from '../cards/SearchBox';
-import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, measuresOf, photoByKey, photosOf, countryMeasures, regionMeasuresOf, sheetOf, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite, type ShownPhoto } from '../facts';
+import { altitudeText, BEATS, EXTRAS, grapeLabel, guideOf, loadGuide, measuresOf, photoByKey, photosOf, countryMeasures, regionMeasuresOf, sheetOf, tasteLines, wsetLevelsOf, type Beat, type Chapter, type Cite, type ShownPhoto } from '../facts';
 import { regionColor } from '../map/regionColors';
 import { strings } from '../strings';
 import type { Place, Tree } from '../tree';
@@ -110,7 +110,14 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const koppen = measures?.koppen ?? [];
   const producers = sheet?.producers?.items ?? [];
   const next = nextRegion(tree, place.region);
-  const guide = guideOf(place.id);
+  // The guide loads with its page (decision #38); App has usually fetched it already.
+  const [guide, setGuide] = useState(() => guideOf(place.id));
+  useEffect(() => {
+    let live = true;
+    setGuide(guideOf(place.id));
+    loadGuide(place.id).then((g) => { if (live) setGuide(g); }, () => undefined);
+    return () => { live = false; };
+  }, [place.id]);
   // "Map tour" shows only where a story file exists; the stop count loads lazily so the atlas bundle holds no tour content.
   const [story, setStory] = useState<Story>();
   useEffect(() => { if (hasStory(place.id)) storyOf(place.id).then(setStory); }, [place.id]);

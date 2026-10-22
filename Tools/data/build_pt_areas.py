@@ -8,14 +8,14 @@ and puts each place's outline into data/added-boundaries.geojson, the map's file
 
 Run: python3 Tools/data/build_pt_areas.py   (needs data/raw/countries/pt/caop2025-freguesias.geojson from Tools/countries/pull.py, and ogr2ogr)
 """
-import json, re, subprocess, tempfile, unicodedata
+import json, re, subprocess, sys, tempfile, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CAOP = ROOT / "data/raw/countries/pt/caop2025-freguesias.geojson"
 SPEC = ROOT / "data/countries/pt/areas-spec.json"
 OUT = ROOT / "data/countries/pt/areas.geojson"
-SIMPLIFY = 0.0004  # degrees, about 40 m: the outline is read at region zoom, the 2 MB download limit counts it (decision #38)
+SIMPLIFY = 0.0012  # degrees, about 120 m (was 40 m until Portugal batch 1 put the build over 2 MB, PR #214): the outline is read at region zoom, the 2 MB download limit counts it (decision #38)
 
 
 def norm(s):
@@ -30,10 +30,18 @@ def members(name):
 
 
 def main():
-    spec = {k: v for k, v in json.loads(SPEC.read_text()).items() if not k.startswith("$")}
+    # --check <file>: match one spec fragment against CAOP and print what is missing, write nothing (Portugal batch 1, 22 Oct 2026)
+    check = sys.argv[2] if sys.argv[1:2] == ["--check"] else None
+    spec = {k: v for k, v in json.loads(Path(check or SPEC).read_text()).items() if not k.startswith("$")}
     feats = json.loads(CAOP.read_text())["features"]
     out = []
     for place, s in spec.items():
+        if "file" in s:  # an area that is whole islands (Madeira, owner 22 Oct 2026): the outline comes ready-made from CAOP RAM, no parish list
+            g = json.loads((ROOT / s["file"]).read_text())["features"][0]
+            print(f"{place}: whole islands from {s['file']}, {g['properties']['km2']} km2")
+            out.append({"type": "Feature", "properties": {"id": place, "place": place, "municipalities": s["municipalities"],
+                                                          "km2": g["properties"]["km2"]}, "geometry": g["geometry"]})
+            continue
         aliases = {norm(m): {norm(a): b for a, b in al.items()} for m, al in s.get("aliases", {}).items()}
         picked, over = {}, set()
         for zone, z in s["zones"].items():
@@ -63,6 +71,10 @@ def main():
                                or aliases.get(m, {}).get(x) == f["properties"]["freguesia"]
                                for _, f in picked.values() if norm(f["properties"]["municipio"]) == m):
                         print(f"NOT FOUND {place}/{zone}: {m} {x}")
+        if check:
+            print(f"{place}: {len(picked)} CAOP parishes, {round(sum(f['properties']['area_ha'] for _, f in picked.values()) / 100)} km2, "
+                  f"unlisted parishes taken in with a union: {', '.join(sorted(over)) or 'none'}")
+            continue
         with tempfile.TemporaryDirectory() as tmp:
             src = Path(tmp) / "in.geojson"
             src.write_text(json.dumps({"type": "FeatureCollection", "features": [
@@ -82,6 +94,8 @@ def main():
                         "km2": round(sum(f["properties"]["area_ha"] for f in rows) / 100, 1),
                         **({"overIncluded": sorted(over)} if zid == place and over else {})}, "geometry": g["geometry"]})
         print(f"{place}: {len(picked)} CAOP parishes, {len(over)} unlisted parishes taken in with a union: {', '.join(sorted(over))}")
+    if check:
+        return
     OUT.write_text(json.dumps({"type": "FeatureCollection", "features": out}, ensure_ascii=False, separators=(",", ":")) + "\n")
     # One feature per line, as ogr2ogr wrote the file, so a rebuild only touches Portugal's lines.
     added_path = ROOT / "data/added-boundaries.geojson"

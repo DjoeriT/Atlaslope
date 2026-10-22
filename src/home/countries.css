@@ -1,0 +1,59 @@
+/* Country cards on Home, the Guides page as the country index, and the country pages (owner 22 Oct 2026, option A of
+   mocks/countries-structure.html). Squares reuse .sqbox from guides.css where the page loads it; the rules here stand alone. */
+.sqbox{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;border-radius:6px;background:var(--bg2)}
+.sqbox img{display:block;width:100%;height:100%;object-fit:cover}
+.sqbox.nophoto{display:grid;place-items:center;text-align:center;background:#F5EFE0;border:1px solid #E6DAB8} /* not .soon: home.css gives .soon a margin and padding (PR #214 shots, 22 Oct 2026) */
+.sqbox.nophoto i{font:normal .75rem/1.35 var(--sans);color:var(--foil-ink)}
+
+/* one lead square and four small ones */
+.mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.mosaic .big{grid-column:1/3;grid-row:1/3}
+
+/* Home */
+.countries-sec{padding-block:3.5rem 3rem;border-bottom:1px solid var(--line)}
+.countries-sec h2{font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.05;font-weight:400}
+.countries-sec .sub{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);margin:.75rem 0 0}
+.countries{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:2.5rem 3rem;margin-top:2rem}
+.cc{border-top:1px solid var(--line);padding-top:1.25rem}
+.cc h3{font-size:2.2rem;line-height:1.05;font-weight:400;margin:0 0 1rem}
+.cnt{margin:.9rem 0 1rem;color:var(--ink2);font-size:1rem}
+.countries-sec .credit{font-size:.75rem;line-height:1.55;color:var(--ink3);margin:2rem 0 0;max-width:110ch}
+.countries-sec .credit a{color:inherit}
+
+/* Guides: the index */
+.ix{padding:1.75rem 0 2rem;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(0,1fr);gap:1.5rem 2.5rem;align-items:start}
+.ix h2{font-size:2.4rem;line-height:1.05;font-weight:400}
+.ix .cnt{margin:.5rem 0 1.25rem}
+.tourlink{display:flex;align-items:center;min-height:44px;margin-top:.5rem;font-size:.95rem;color:var(--ink2)}
+.tourlink:hover{color:var(--ink)}
+.ix .reg{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+.ix .reg a{font-size:.95rem;color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line);padding:.65rem 0 .15rem;line-height:1.2}
+.ix .reg a:hover{color:var(--ink);border-color:var(--ink)}
+.strip4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+
+/* a country page */
+.ch{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:2.5rem 3rem;align-items:start;padding-top:3rem}
+.ch h1{font-size:clamp(2.8rem,5vw,4.4rem);line-height:1.02;font-weight:400}
+.crumb{margin:0 0 .75rem;font-size:.9rem;color:var(--ink3)}
+.crumb a{color:inherit}
+.ch .lead{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink2);margin:1.25rem 0 0}
+.study{margin-top:1.5rem;border:1px solid var(--line);border-radius:6px;background:var(--bg2);padding:.9rem 1rem;font-size:.9rem;display:grid;gap:.25rem}
+.study b{font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--foil-ink)}
+.lds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:1.5rem}
+.ld{margin:0}
+.ld figcaption b{display:block;font:500 1.25rem var(--serif);margin:0 0 .5rem}
+.foot.top{padding:0}
+.foot.top .credit{margin-top:1.5rem}
+.gl > .jump{margin-top:2rem}
+
+@media (max-width:1000px){
+  .ix{grid-template-columns:1fr 1fr}
+  .ix .reg{grid-column:1/-1;order:3}
+  .ch{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .countries-sec{padding-block:2.5rem 2rem}
+  .ix{grid-template-columns:1fr}
+  .ix .reg{order:0}
+  .ch{padding-top:2rem}
+}

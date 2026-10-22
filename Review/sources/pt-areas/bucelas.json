@@ -1,0 +1,26 @@
+{
+ "bucelas": {
+  "source": "bucelas-doc:p4",
+  "zones": {
+   "bucelas": {
+    "municipalities": [],
+    "parishes": {
+     "Loures": [
+      "Bucelas",
+      "Fanhões",
+      "Santo Antão do Tojal"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Fanhões: partly in the spec, taken whole",
+   "Santo Antão do Tojal: partly in the spec, taken whole"
+  ],
+  "aliases": {
+   "Loures": {
+    "Santo Antão do Tojal": "União das freguesias de Santo Antão e São Julião do Tojal"
+   }
+  }
+ }
+}

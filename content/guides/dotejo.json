@@ -1,0 +1,129 @@
+{
+ "id": "dotejo",
+ "title": "Why DoTejo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A river that floods the plain also makes it fertile. The flat Campo beside the Tagus is the white-wine zone, and the gently rolling Bairro is the ideal zone for red grapes.",
+  "cite": [
+   "dotejo-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "river",
+   "beat": "place",
+   "title": "The river that gave the region its name",
+   "paras": [
+    "The Tagus is Portugal's main river. The region takes its name from it, and was once called Ribatejo, which means \"bank of the Tejo\". It was renamed DoTejo to go back to the original name.",
+    "The Serra de Aires e Candeeiros is the main relief. It marks off what can be called the Alto and the Baixo Tejo, the upper and the lower Tagus.",
+    "The river still shapes farming here, sometimes for better and sometimes for worse. Floods now come less often, thanks to the dams that manage its flow, and the vine is usually the crop they hurt least."
+   ],
+   "cite": [
+    "dotejo-doc:p8",
+    "dotejo-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Tagus at Almeirim",
+     "point": [
+      -8.62,
+      39.2
+     ],
+     "zoom": 9.5,
+     "caption": "The Tagus is the natural limit between the Almeirim sub-region and those of Cartaxo and Santarém.",
+     "cite": [
+      "dotejo-doc:p5"
+     ]
+    },
+    {
+     "label": "Serra de Aires e Candeeiros",
+     "point": [
+      -8.85,
+      39.45
+     ],
+     "zoom": 9.5,
+     "caption": "The main relief of the region. It marks off the upper Tagus from the lower Tagus.",
+     "cite": [
+      "dotejo-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Moderate, with 2,800 hours of sun",
+   "paras": [
+    "The climate is moderate. Mean temperatures run from 15.5 °C to 16.5 °C, and the sun shines about 2,800 hours a year.",
+    "Rain averages 750 mm a year. It is a little higher in the north around Tomar and a little lower in the south around Coruche."
+   ],
+   "cite": [
+    "dotejo-doc:p9"
+   ]
+  },
+  {
+   "id": "zones",
+   "beat": "ground",
+   "title": "Three zones of soil",
+   "paras": [
+    "Three zones share the vineyard. The Campo is the wide plain beside the Tagus, also called the Lezíria do Tejo. Periodic floods cause some trouble there, but they also leave the alluvial soils very fertile. It is the white-wine zone above all, and Fernão Pires is the queen grape.",
+    "The Bairro lies between the Tagus valley and the foothills of Porto de Mós, Candeeiros and Montejunto. Its clay-limestone soils roll gently, and it is the ideal zone for red grapes, above all Castelão and Trincadeira.",
+    "The Charneca lies south of the Campo, on the left bank. Its sandy soils are moderately fertile. Yields there are below the regional average, but the zone makes both white and red wines finer.",
+    "In Cartaxo the Campo is flat, at 6 to 10 m. Its Bairro hills reach 200 m in places. Under the plain, deep layers of rolled pebbles are covered by coarse sand, then fine sand, then fine clay."
+   ],
+   "cite": [
+    "dotejo-doc:p9",
+    "dotejo-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Lezíria do Tejo, the Campo",
+     "point": [
+      -8.7,
+      39.05
+     ],
+     "zoom": 9.5,
+     "caption": "The Campo: wide plains beside the Tagus, flooded from time to time and fertile for it.",
+     "cite": [
+      "dotejo-doc:p9"
+     ]
+    },
+    {
+     "label": "Montejunto",
+     "point": [
+      -9.07,
+      39.16
+     ],
+     "zoom": 10,
+     "caption": "The Bairro lies at the foot of this massif and others, on gently rolling clay-limestone.",
+     "cite": [
+      "dotejo-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "White on the plain, red on the hills",
+   "paras": [
+    "Each sub-region leans one way. Almeirim is mostly white and makes the most wine. Tomar and Cartaxo are mostly red. Chamusca leans a little to white. Coruche leans a little to red. Santarém is about even.",
+    "The rules cover still red, white and rosé wine. They also cover quality sparkling wine. Licoroso is covered too: a fortified wine, from must at the start of fermentation to which neutral wine spirit may be added.",
+    "Sparkling wine is made by bottle fermentation, or in tank with at least nine months of ageing. It must reach 10.5% alcohol and show fine to medium bubbles. Licoroso needs at least 17.5%. From white grapes it runs light gold to topaz.",
+    "Yields are capped at 80 hl per hectare for red and rosé wine, and 90 hl for white. Reds and rosés need at least 11.5% alcohol. Whites need at least 11%.",
+    "Vines must be at least three years past grafting, trained low as a bush or a cordon.",
+    "Every wine must score at least 60 in the official tasting. A wine with a quality term on the label needs at least 65, with outstanding structure and balance.",
+    "Many local grapes give the wines a strong regional character. Varieties of recognised worth, brought in relatively recently, add to their quality."
+   ],
+   "cite": [
+    "dotejo-doc:p2",
+    "dotejo-doc:p3",
+    "dotejo-doc:p4",
+    "dotejo-doc:p5",
+    "dotejo-doc:p9",
+    "dotejo-doc:p10",
+    "dotejo-doc:p11"
+   ]
+  }
+ ]
+}
