@@ -1,4 +1,4 @@
-# Brand identity rounds 1 and 2 (22 Oct 2026)
+# Brand identity rounds 1 to 3 (22 Oct 2026)
 
 ## Done
 - Owner interview [O]: AtlaSlope is a digital field guide. Direction is cartographic precision. The identity is **fully open**, so the
@@ -49,3 +49,18 @@
 - Weak spots: the loud geology fights the palettes in E and G (muted to 50% in G). D's Rioja Alta highlight is faint.
   Every concept's map screen is the least "wine" one.
 - Open: the owner picks a concept or a blend for round 3, which takes it across more surfaces (Guides page, Study, share image, favicon set).
+
+## Round 3: the slope line
+- Owner on round 2 [O]: "I don't like any of these." He likes the clean white look but finds today's site plain and not unique; wants it
+  elevated "in a revolutionary and drastic way", better integrated and more distinctive.
+- Idea (owner: "Let's run it"): the slope is the brand. A real terrain profile is the one graphic on a white page; every place has its own line.
+  Type stays Newsreader + Plex; one wine-colour accent per place.
+- Data: `Tools/brand/make_profiles.py` makes `profiles.json` from MDT25/MDT200 (no fetch). It holds the Spain transect, Atlantic to Mediterranean
+  (883 km, 11 distinct DOs crossed), the Rioja cross-section (Sierra de Cantabria crest 1,398 m at km 6.9, Laguardia, the Ebro, Rioja Alta km 20.6 to 39.75),
+  and eight DO fingerprints, each W to E through the DO's middle.
+- Mock: `mocks/brand-identity-r3/index.html`, Artifact https://claude.ai/artifact/GqsFJd3Ce3UcyFHDU1nJtf. Three treatments: T1 Hairline,
+  T2 Silhouette (filled black land, the place in wine red), T3 The line you travel (scroll or drag along 883 km, the card changes per DO).
+  Logo: "Atla*Slope*" in Newsreader on the Rioja line; favicon is the line resampled to 9 to 22 points.
+- Checked [V]: shots of each treatment viewed; no JS errors; Newsreader and Plex load.
+- Spend [V]: builder 94K new tokens. LeadBot context is past 250K: round 4 belongs in a fresh session from this handoff.
+- Open: fingerprints share a height scale but not a length scale (fitted per cell). Phone width is not designed yet. The owner picks a treatment.
