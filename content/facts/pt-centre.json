@@ -4,7 +4,7 @@
   {
    "id": "dao",
    "why": {
-    "text": "Granite soils in a region ringed by mountains that shelter it from wet coastal air and harsh continental winds, with cold, rainy winters and very hot, dry summers.",
+    "text": "Granite soils in a region ringed by mountains that shelter it from wet coastal air and harsh winds, with cold, rainy winters and hot summers.",
     "cite": [
      "dao-doc:p7",
      "dao-doc:p8"
@@ -139,7 +139,7 @@
   {
    "id": "bairrada",
    "why": {
-    "text": "Clay and clay-limestone hills under a strong Atlantic influence, with hot days and cool nights in summer; the sea generally shows in fresh acidity and balance.",
+    "text": "Clay and clay-limestone hills under a strong Atlantic influence, with hot days and cool nights in summer; the sea shows in fresh acidity.",
     "cite": [
      "bairrada-doc:p6"
     ]
@@ -249,7 +249,7 @@
   {
    "id": "beira-interior",
    "why": {
-    "text": "Vineyards at 300 to 700 m on schist, gneiss and granite, with a dry summer and a Mediterranean climate, give fresh, aromatic whites and spicy, fresh reds.",
+    "text": "Vineyards at 300 to 700 m on schist, gneiss and granite, with a dry Mediterranean summer, give fresh, aromatic whites and spicy reds.",
     "cite": [
      "beira-interior-doc:p2",
      "beira-interior-doc:p7"
@@ -448,10 +448,6 @@
      {
       "name": "Escolha",
       "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
-     },
-     {
-      "name": "Colheita Seleccionada",
-      "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
      }
     ],
     "cite": [
@@ -467,7 +463,7 @@
   {
    "id": "encostas-daire",
    "why": {
-    "text": "Vineyards on the slopes of the Serra de Aire between the coast and the limestone massif, with a mild climate, many microclimates and very varied soils.",
+    "text": "Vineyards on the slopes of the Serra de Aire between the coast and the limestone massif, with a mild climate and very varied soils.",
     "cite": [
      "encostas-daire-doc:p7",
      "encostas-daire-doc:p8"

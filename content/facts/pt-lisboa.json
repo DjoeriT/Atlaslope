@@ -4,7 +4,7 @@
   {
    "id": "lisboa",
    "why": {
-    "text": "An Atlantic coastal strip north of the Tejo estuary, with clay-limestone and clay-sand soils, humid west winds and dry summers, and a very wide range of grapes.",
+    "text": "An Atlantic coastal strip north of the Tejo estuary, with clay-limestone and clay-sand soils, humid west winds and dry summers.",
     "cite": [
      "lisboa-doc:p6",
      "lisboa-doc:p7"
@@ -185,7 +185,7 @@
   {
    "id": "colares",
    "why": {
-    "text": "Vines grow in sand over deep clay close to the Atlantic, with sea winds and a mild, humid summer. Sea, winds and soil together spared them from phylloxera.",
+    "text": "Vines grow in sand over deep clay close to the Atlantic, with sea winds and a mild, humid summer, which spared them from phylloxera.",
     "cite": [
      "colares-doc:p5",
      "colares-doc:p6"
@@ -272,7 +272,7 @@
   {
    "id": "carcavelos",
    "why": {
-    "text": "A tiny coastal area near the Tagus mouth, with a mild Mediterranean climate, mostly limy soils and plots facing south-west, making smooth fortified wine aged in wood.",
+    "text": "A tiny coastal area near the Tagus mouth, with a mild Mediterranean climate, mostly limy soils and south-west-facing plots.",
     "cite": [
      "carcavelos-doc:p6"
     ]
@@ -364,7 +364,7 @@
   {
    "id": "bucelas",
    "why": {
-    "text": "Poor marl and hard limestone soils on the slopes of the Trancão river valley, with cold winters and mild summers, combine with few grape varieties, mostly Arinto, to give light, tart whites.",
+    "text": "Poor marl and hard limestone soils on the Trancão valley slopes, with cold winters and mild summers, give light, tart whites.",
     "cite": [
      "bucelas-doc:p5",
      "bucelas-doc:p6"
@@ -550,10 +550,6 @@
      {
       "name": "Colheita Seleccionada",
       "text": "Traditional mention the spec allows; it sets no extra rule."
-     },
-     {
-      "name": "Superior",
-      "text": "Traditional mention the spec allows; it sets no extra rule."
      }
     ],
     "cite": [
@@ -568,7 +564,7 @@
   {
    "id": "alenquer",
    "why": {
-    "text": "Limestone and Mediterranean soils on hillsides and in valleys, with mountains to the north and west that hold back the Atlantic and let in Mediterranean sun, tempered by Atlantic mists and summer breezes.",
+    "text": "Limestone and Mediterranean soils on hillsides and in valleys, with mountains to the north and west that hold back the Atlantic, tempered by mists.",
     "cite": [
      "alenquer-doc:p6"
     ]
@@ -866,10 +862,6 @@
      },
      {
       "name": "Escolha",
-      "text": "Traditional term allowed on labels."
-     },
-     {
-      "name": "Colheita Seleccionada",
       "text": "Traditional term allowed on labels."
      }
     ],

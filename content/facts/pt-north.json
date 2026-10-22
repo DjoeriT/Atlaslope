@@ -332,7 +332,7 @@
   {
    "id": "porto",
    "why": {
-    "text": "Stony, terraced soils in the mountain-sheltered Douro valley, with very cold winters and hot dry summers, then fermentation stopped with grape spirit to keep sweetness and reach 19 to 22% alcohol.",
+    "text": "Stony, terraced soils in the mountain-sheltered Douro valley, with very cold winters and hot dry summers; spirit stops fermentation to keep sweetness.",
     "cite": [
      "porto-doc:p7",
      "porto-doc:p11",
@@ -650,7 +650,7 @@
   {
    "id": "tavora-varosa",
    "why": {
-    "text": "High granite and schist slopes at 500 to 800 metres facing south, with a dry continental climate and harsh winters, give fresh, acidic whites and sparkling wines.",
+    "text": "High granite and schist slopes at 500 to 800 metres facing south, with a dry continental climate, give fresh, acidic whites and sparkling wines.",
     "cite": [
      "tavora-varosa-doc:p7"
     ]

@@ -4,7 +4,7 @@
   {
    "id": "setubal",
    "why": {
-    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with a mixed subtropical and Mediterranean/maritime climate and the Arrábida hills, suit aromatic Moscatel grapes made into fortified wine.",
+    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with a mixed maritime climate, suit aromatic Moscatel made into fortified wine.",
     "cite": [
      "setubal-doc:p7",
      "setubal-doc:p9"
@@ -114,7 +114,7 @@
   {
    "id": "palmela",
    "why": {
-    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with low rain and a mixed climate shaped by the sea, give fruity reds and fresh whites.",
+    "text": "Light, sandy soils on a peninsula between the Tejo and Sado estuaries, with low rain and a sea-shaped climate, give fruity reds and fresh whites.",
     "cite": [
      "palmela-doc:p7",
      "palmela-doc:p8",
@@ -216,7 +216,7 @@
      },
      {
       "name": "Espumante",
-      "text": "Sparkling wine, base wine must be DO Palmela, with a second fermentation; at least 10% alcohol."
+      "text": "Sparkling wine from DO Palmela base wine, with a second fermentation; at least 10% alcohol."
      },
      {
       "name": "Frisante",
