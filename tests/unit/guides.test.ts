@@ -15,11 +15,11 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac, 22 Oct 2026), each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the Italy pilot (Barolo, Chianti Classico), the France pilot (Chablis, Pauillac, 22 Oct 2026), each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
       'abadia-retuerta', 'abona', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa', 'arinzano', 'arlanza', 'arribes', 'arruda', 'ayles',
-      'bairrada', 'beira-interior', 'bierzo', 'binissalem', 'bolandin', 'bucelas', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja',
-      'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis',
+      'bairrada', 'barolo', 'beira-interior', 'bierzo', 'binissalem', 'bolandin', 'bucelas', 'bullas', 'calatayud', 'calzadilla', 'campo-de-borja',
+      'campo-de-calatrava', 'campo-de-la-guardia', 'cangas', 'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis', 'chianti-classico',
       'chozas-carrascal', 'cigales', 'colares', 'conca-de-barbera', 'condado-de-huelva', 'costers-del-segre', 'dao', 'dehesa-del-carrizal',
       'dehesa-penalba', 'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'emporda', 'encostas-daire',
       'finca-elez', 'gran-canaria', 'granada', 'guijoso', 'islas-canarias', 'jerez', 'jumilla', 'la-gomera', 'la-jaraba', 'la-mancha', 'la-palma',

@@ -1,0 +1,157 @@
+{
+ "id": "chianti-classico",
+ "title": "Why Chianti Classico tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hot summers and fairly large swings between night and day let the grapes ripen slowly and completely. The sandstone ground gives iris and violet, and its limy part gives berry aromas.",
+  "cite": [
+   "chianti-classico-disc:p13",
+   "chianti-classico-disc:p14"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A hinged rectangle of hills",
+   "paras": [
+    "Chianti Classico covers 71,800 hectares in the middle of Tuscany. 30,400 hectares lie in the province of Florence and 41,400 in Siena.",
+    "The land is like a rectangular plate, hinged on the Monti del Chianti along its eastern edge. The Greve river marks the north. The Pesa and Elsa rivers mark the west, and the springs of the Ombrone and Arbia the south.",
+    "It can be called a plateau of hills with a base around 200 m. The average height is generally no more than 600 m. The slopes are not long, but sometimes steep.",
+    "Greve in Chianti, Castellina in Chianti, Radda in Chianti and Gaiole in Chianti lie wholly inside the zone."
+   ],
+   "cite": [
+    "chianti-classico-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Monti del Chianti",
+     "point": [
+      11.48,
+      43.42
+     ],
+     "zoom": 9.5,
+     "caption": "The Monti del Chianti form the eastern edge of the zone.",
+     "cite": [
+      "chianti-classico-disc:p11"
+     ]
+    },
+    {
+     "label": "The Greve river",
+     "point": [
+      11.31,
+      43.585
+     ],
+     "zoom": 10.5,
+     "caption": "The Greve river marks the northern boundary of the zone.",
+     "cite": [
+      "chianti-classico-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Scorching summers, cold winters",
+   "paras": [
+    "The climate is continental. Winters can fall below 4-5 °C. Summers are dry and scorching. Days above 35 °C are not rare.",
+    "The temperature swing across a day is fair, partly because the land is fairly high. About 800 to 900 mm of rain falls in a year, a little more of it in late autumn and spring.",
+    "Summer heat peaks in July and August, and strong sun lasts into September and even October. With fairly large swings between night and day, the grapes ripen slowly and completely.",
+    "That ripening shapes the wine's colour and bouquet. It sets the alcohol too."
+   ],
+   "cite": [
+    "chianti-classico-disc:p11",
+    "chianti-classico-disc:p12",
+    "chianti-classico-disc:p13",
+    "chianti-classico-disc:p14"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A shield of clay shale",
+   "paras": [
+    "The core of the region is a shield of clay shale called galestro. Within it lie scaly clays, which alternate with alberese limestone and fine limy sandstone.",
+    "The soil is generally shallow, recent and brown. It runs from clay-sand to pebbly, with medium amounts of clay. It holds only a modest amount of organic matter.",
+    "Vineyards may not lie above 700 m, and must be on hills. Wet ground and valley floors are not allowed, even inside the zone. Nor is ground made mostly of Pliocene clay, or very clayey ground of any kind.",
+    "Sangiovese is very sensitive to outside factors. It changes its scent with the soil it grows in.",
+    "In the glass, the sandstone ground gives the floral iris and violet notes. The limy part of the soil gives the aroma of berries."
+   ],
+   "cite": [
+    "chianti-classico-disc:p4",
+    "chianti-classico-disc:p11",
+    "chianti-classico-disc:p13"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A red wine, with a rooster on the bottle",
+   "paras": [
+    "Chianti Classico is a dry red only. Sangiovese must make up 80% to 100% of the vineyard. Up to 20% can be other red grapes that suit Tuscany.",
+    "Growers here have always favoured Sangiovese. So the wine can be made from 100% Sangiovese.",
+    "The basic wine is ruby red, more or less deep. Its smell is intense and floral. It tastes dry and fresh. It is savoury and slightly tannic, and softens with time.",
+    "The Riserva smells intensely fruity. It is balanced, with good tannin. The Gran Selezione smells spicy and lingers. Both turn towards garnet with age. Now and then the wines show a light hint of wood.",
+    "The limit is 7.5 tonnes of grapes per hectare, the lowest yield in Italy. New vineyards must have at least 4,400 vines per hectare.",
+    "The basic wine may be sold from 1 October after the harvest. The Riserva ages for at least 24 months, with at least 3 of them in bottle. The Gran Selezione ages for at least 30 months, again with at least 3 in bottle. Ageing is counted from 1 January after the harvest.",
+    "Gran Selezione needs 90% to 100% Sangiovese. The rest, up to 10%, can only come from eight named reds, such as Colorino and Canaiolo. This rule starts with the fifth harvest after the change. Until then, vineyards that meet the 80% rule also count.",
+    "Gran Selezione comes only from grapes of the bottler's own vineyards. Its must may not be enriched with products from outside. Any rise in natural alcohol may not pass 1%.",
+    "A Gran Selezione can also name one of 11 sub-zones, such as Radda or Panzano. Every bottle of Chianti Classico carries the Gallo Nero, the black rooster.",
+    "The zone was the first in the world to be fixed by law, in a 1716 decree of Grand Duke Cosimo III. Between 1834 and 1837 Baron Bettino Ricasoli spread a recipe of 70% Sangioveto, the local name for Sangiovese, with 15% Canaiolo and 15% Malvasia. Chianti Classico became a separate wine from generic Chianti in 1996."
+   ],
+   "cite": [
+    "chianti-classico-disc:p2",
+    "chianti-classico-disc:p4",
+    "chianti-classico-disc:p5",
+    "chianti-classico-disc:p7",
+    "chianti-classico-disc:p8",
+    "chianti-classico-disc:p9",
+    "chianti-classico-disc:p12",
+    "chianti-classico-disc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Radda in Chianti",
+     "point": [
+      11.37,
+      43.49
+     ],
+     "zoom": 11,
+     "caption": "The 1716 decree named Radda, Gaiole and Castellina as one district of the original Chianti.",
+     "cite": [
+      "chianti-classico-disc:p12"
+     ]
+    },
+    {
+     "label": "Panzano",
+     "point": [
+      11.31,
+      43.545
+     ],
+     "zoom": 11,
+     "caption": "Panzano is one of 11 sub-zones a Gran Selezione may name on its label.",
+     "cite": [
+      "chianti-classico-disc:p9"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "\"Vigna\" can appear on the label only with the place name or traditional name of the vineyard. The wine must be made and kept in separate tanks, and the vineyard must be on the regional list."
+   },
+   {
+    "term": "Classico",
+    "text": "\"Classico\" must always follow the word Chianti, in the same type as Chianti."
+   }
+  ],
+  "cite": [
+   "chianti-classico-disc:p9",
+   "chianti-classico-disc:p10"
+  ]
+ }
+}

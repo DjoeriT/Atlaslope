@@ -265,6 +265,28 @@
     "pauillac-doc:p6",
     "pauillac-doc:p8"
    ]
+  },
+  "it-piemonte": {
+   "title": "Marl hills of the Langhe",
+   "lede": "Barolo grows on calcareous marl and clay. Only hillsides between 170 and 540 m qualify.",
+   "from": [
+    "barolo"
+   ],
+   "cite": [
+    "barolo-disc:p3",
+    "barolo-disc:p8"
+   ]
+  },
+  "it-tuscany": {
+   "title": "Galestro, sandstone, hot dry summers",
+   "lede": "Chianti Classico's hills are shale and sandstone. Summers are dry and often above 35 °C.",
+   "from": [
+    "chianti-classico"
+   ],
+   "cite": [
+    "chianti-classico-disc:p11",
+    "chianti-classico-disc:p12"
+   ]
   }
  },
  "places": {
@@ -1145,6 +1167,20 @@
    "cite": [
     "pauillac-doc:p6",
     "pauillac-doc:p8"
+   ]
+  },
+  "barolo": {
+   "title": "Nebbiolo on calcareous marl",
+   "cite": [
+    "barolo-disc:p1",
+    "barolo-disc:p8"
+   ]
+  },
+  "chianti-classico": {
+   "title": "Sangiovese on galestro and sandstone",
+   "cite": [
+    "chianti-classico-disc:p1",
+    "chianti-classico-disc:p11"
    ]
   }
  }

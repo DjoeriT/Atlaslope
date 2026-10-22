@@ -4,39 +4,142 @@
   {
    "id": "chianti-classico",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Hilly, shallow soils of shale and sandstone up to 700 m, with hot dry summers and big day-night swings, ripen Sangiovese slowly.",
+    "cite": [
+     "chianti-classico-disc:p4",
+     "chianti-classico-disc:p11",
+     "chianti-classico-disc:p13",
+     "chianti-classico-disc:p14"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "chianti-classico-disc:p2"
+    ],
+    "others": [
+     "Abrusco",
+     "Aleatico",
+     "Alicante Bouschet",
+     "Alicante",
+     "Ancellotta",
+     "Barbera",
+     "Barsaglina",
+     "Bonamico",
+     "Bracciola Nera",
+     "Cabernet Franc",
+     "Cabernet Sauvignon",
+     "Calabrese",
+     "Caloria",
+     "Canaiolo Nero",
+     "Canina Nera",
+     "Carignano",
+     "Carmenere",
+     "Cesanese d'Affile",
+     "Ciliegiolo",
+     "Colombana Nera",
+     "Colorino",
+     "Foglia Tonda",
+     "Gamay",
+     "Groppello di S. Stefano",
+     "Groppello Gentile",
+     "Lambrusco Maestri",
+     "Malbech",
+     "Malvasia",
+     "Malvasia Nera di Brindisi",
+     "Malvasia Nera di Lecce",
+     "Mammolo",
+     "Mazzese",
+     "Merlot",
+     "Mondeuse",
+     "Montepulciano",
+     "Petit Verdot",
+     "Pinot Nero",
+     "Pollera Nera",
+     "Prugnolo Gentile",
+     "Pugnitello",
+     "Rebo",
+     "Refosco dal Peduncolo Rosso",
+     "Sagrantino",
+     "Sanforte",
+     "Schiava Gentile",
+     "Syrah",
+     "Tempranillo",
+     "Teroldego",
+     "Vermentino Nero"
+    ],
+    "othersCite": [
+     "chianti-classico-disc:p2",
+     "chianti-classico-disc:p15",
+     "chianti-classico-disc:p16"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red only, in three tiers: Chianti Classico, Riserva and Gran Selezione.",
+    "cite": [
+     "chianti-classico-disc:p2"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Continental: winters can drop below 4-5 °C, summers are dry and scorching, not rarely above 35 °C. Day-night temperature swings are fair. Rain is 800 to 900 mm a year, a little more in late autumn and spring.",
+    "cite": [
+     "chianti-classico-disc:p11",
+     "chianti-classico-disc:p12"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly sandstone, calcareous marl, clay shale (galestro), sand and pebbles; shallow, brown, low in organic matter. Wet ground, valley floors, and mostly Pliocene or very clayey ground are excluded.",
+    "cite": [
+     "chianti-classico-disc:p4",
+     "chianti-classico-disc:p11"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards may not lie above 700 m. The zone's base is about 200 m, and average height is generally no more than 600 m.",
+    "cite": [
+     "chianti-classico-disc:p4",
+     "chianti-classico-disc:p11"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Fragrant, fruity and rounded, intense red, dry and savoury, with good structure and fair acidity. Floral iris and violet notes, with berry aromas.",
+    "cite": [
+     "chianti-classico-disc:p13"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 24 months, 3 of them in bottle; at least 80% Sangiovese."
+     },
+     {
+      "name": "Gran Selezione",
+      "text": "Aged at least 30 months, 3 in bottle; 90% Sangiovese minimum, estate grapes only."
+     },
+     {
+      "name": "Gallo Nero",
+      "text": "Black rooster mark, mandatory on every bottle of Chianti Classico."
+     },
+     {
+      "name": "Additional geographic units",
+      "text": "Gran Selezione may name one of 11 sub-zones, such as Lamole or Panzano."
+     }
+    ],
+    "cite": [
+     "chianti-classico-disc:p2",
+     "chianti-classico-disc:p5",
+     "chianti-classico-disc:p7",
+     "chianti-classico-disc:p8",
+     "chianti-classico-disc:p9"
+    ]
    },
    "producers": {
     "items": [],

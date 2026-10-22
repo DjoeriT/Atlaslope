@@ -4,39 +4,87 @@
   {
    "id": "barolo",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Calcareous Langhe marl and sand hills, formed from a retreating sea, suit Nebbiolo and give harmonious, structured, long-lived wines.",
+    "cite": [
+     "barolo-disc:p8",
+     "barolo-disc:p9"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Nebbiolo"
+     }
+    ],
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p9"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry red Barolo and Barolo Riserva, with a flavoured Barolo chinato also allowed.",
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p6",
+     "barolo-disc:p7"
+    ]
    },
    "climate": {
     "text": "",
     "cite": []
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Clay and limestone, or combinations; Langhe soils are mostly calcareous marl and tufa, with gypsum and minerals in places.",
+    "cite": [
+     "barolo-disc:p3",
+     "barolo-disc:p8",
+     "barolo-disc:p9"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards must be on hills between 170 and 540 m above sea level; valley floors and flat, damp land are excluded.",
+    "cite": [
+     "barolo-disc:p3"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Garnet red, intense and characteristic aroma, dry, full and harmonious. The wines have a complex, enveloping bouquet and age without losing character.",
+    "cite": [
+     "barolo-disc:p6",
+     "barolo-disc:p9"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Barolo",
+      "text": "Aged 38 months or more, 18 in wood; sold from 1 January, year four."
+     },
+     {
+      "name": "Barolo Riserva",
+      "text": "Aged 62 months or more, 18 in wood; sold from 1 January, year six."
+     },
+     {
+      "name": "Menzione geografica aggiuntiva",
+      "text": "Official added place name (like Cannubi or Bussia) printed under Barolo on the label."
+     },
+     {
+      "name": "Barolo chinato",
+      "text": "Aromatised wine made on a Barolo base, with a quinine (china) flavouring."
+     }
+    ],
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p5",
+     "barolo-disc:p6",
+     "barolo-disc:p7",
+     "barolo-disc:p8"
+    ]
    },
    "producers": {
     "items": [],

@@ -122,24 +122,23 @@ describe('France (pilot, decisions #52-#58)', () => {
 });
 
 describe('Italy (pilot, decisions #59-#66)', () => {
-  // As France: two stand-ins show what /it/ draws once the pilot's guides land. No photos yet, so each tile says "Photos soon".
+  // As France: the pilot's two guides, with their photos (five each, crops checked).
   const dir = mkdtempSync(join(tmpdir(), 'guides-'));
   for (const f of readdirSync('content/guides')) copyFileSync(`content/guides/${f}`, join(dir, f));
   for (const id of ['barolo', 'chianti-classico']) writeFileSync(join(dir, `${id}.json`), JSON.stringify({ id, minutes: 2 }));
   const page = fillCountryPage(template, guideRows({ dir }), 'italy');
-  it('is a country with real place paths, Esri imagery and no photos yet', () => {
+  it('is a country with real place paths and Esri imagery', () => {
     expect(COUNTRIES.italy).toMatchObject({ code: 'it', paths: true, imagery: 'esri' });
     expect(COUNTRY_PAGES.italy.intro).toBe('From the Alps to Sicily.');
-    expect(COUNTRY_PAGES.italy.cardPhotos).toEqual([]);
   });
-  it('renders /it/ with two place tiles and an honest Study note', () => {
+  it('renders /it/ with two place tiles, their photos, and an honest Study note', () => {
     expect(count(page, /<a class="ecard"/g)).toBe(2);
-    expect(count(page, /Photos soon/g)).toBe(2);
+    expect(count(page, /Photos soon/g)).toBe(0);
     expect(page).toContain('href="../it/barolo/"');
     expect(page).toContain('href="../it/chianti-classico/"');
     expect(page).toContain('Not yet for Italy.');
     expect(page).not.toContain('Open Study');
-    expect(count(page, /<p class="credit">Photos /g)).toBe(0);
+    expect(count(page, /<p class="credit">Photos /g)).toBe(1);
     expect(page).toContain('<h2 id="r-it-piemonte">Piemonte</h2>');
     expect(page).toContain('<h2 id="r-it-tuscany">Tuscany</h2>');
   });
