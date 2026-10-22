@@ -187,6 +187,10 @@ export function storyLayers(): StoryLayers {
       if (koppen && koppenUrl) ensure(map, 'koppen');
       if (geology) ensure(map, 'geology');
       vis(map, 'story-koppen', koppen);
+      // The Köppen file is cut to a box (a hard rectangle when the view pulls back): the tint is full at the stop's own framing and gone one zoom level out, before the box edge can show.
+      if (koppen && cam && map.getLayer('story-koppen')) {
+        map.setPaintProperty('story-koppen', 'fill-opacity', ['interpolate', ['linear'], ['zoom'], cam.zoom - 1, 0, cam.zoom - 0.3, 0.24]);
+      }
       vis(map, 'story-geology', geology);
       // The geology tiles stop at map-sheet edges (a hard rectangle): a deeper fade outside the place hides it and keeps the eye on the place.
       if (map.getLayer('story-fade')) map.setPaintProperty('story-fade', 'fill-opacity', geology ? 0.6 : 0.25);

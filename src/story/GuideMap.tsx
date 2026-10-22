@@ -183,7 +183,7 @@ export function GuideMap({ place, guide, story, fly, onChapter }: Props) {
       <div className="pg-tourmap-in">
         <div className="story-map" ref={mapEl} />
         <p className="story-chip">{label}</p>
-        <div className="story-exag" role="group" aria-label={t.terrainHeight}>
+        <div className="story-info" role="group" aria-label={t.terrainHeight} hidden={!creditOpen}>
           <span>{t.terrainHeight}</span>
           {[STORY_EXAGGERATION, 1.3].map((k) => <button key={k} type="button" aria-pressed={height === k} onClick={() => setHeightK(k)}>×{k.toFixed(1)}</button>)}
         </div>

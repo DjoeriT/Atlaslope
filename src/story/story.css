@@ -17,11 +17,12 @@
 .pg-tourmap-in{position:absolute;inset:0}
 /* MapLibre styles its container position:relative; this selector wins over it. */
 .pg-tourmap .story-map{position:absolute;inset:0}
-.story-chip{position:absolute;left:.75rem;top:.75rem;z-index:2;margin:0;padding:.4rem .75rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.9rem;max-width:calc(100% - 17rem)}
-.story-exag{position:absolute;right:3.5rem;top:.75rem;z-index:2;display:flex;align-items:center;gap:.25rem;padding:.2rem .2rem .2rem .6rem;border-radius:6px;background:#141414;color:#C9B48A;font-size:.78rem}
-.story-exag button{min-height:2.75rem;min-width:2.75rem;border:1px solid transparent;border-radius:6px;background:transparent;color:#E9D8B4;font:500 .9rem var(--sans,sans-serif);cursor:pointer}
-.story-exag button[aria-pressed="true"]{background:#E9D8B4;color:#141414}
-.story-exag button:focus-visible{outline:2px solid #E9D8B4;outline-offset:1px}
+.story-chip{position:absolute;left:.75rem;top:.75rem;z-index:2;margin:0;padding:.4rem .75rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.9rem;max-width:calc(100% - 5rem)}
+.story-info{position:absolute;right:3.6rem;top:.75rem;z-index:3;display:flex;align-items:center;gap:.25rem;padding:.2rem .2rem .2rem .6rem;border-radius:6px;background:#141414;color:#C9B48A;font-size:.78rem}
+.story-info[hidden]{display:none}
+.story-info button{min-height:2.75rem;min-width:2.75rem;border:1px solid transparent;border-radius:6px;background:transparent;color:#E9D8B4;font:500 .9rem var(--sans,sans-serif);cursor:pointer}
+.story-info button[aria-pressed="true"]{background:#E9D8B4;color:#141414}
+.story-info button:focus-visible{outline:2px solid #E9D8B4;outline-offset:1px}
 .story-loc{position:absolute;left:.75rem;bottom:2.4rem;z-index:2;width:120px;height:auto;padding:4px;border-radius:6px;background:#141414;border:1px solid #7D6540}
 .story-loc path{fill:#E9D8B4}
 .story-loc .lbox{fill:rgba(20,20,20,.15);stroke:#141414;stroke-width:1.4}
@@ -44,13 +45,18 @@
   .pg.tour .pg-body{flex-direction:column;align-items:stretch}
   .pg.tour .pg-listing{flex:none;padding-left:1rem;padding-right:1rem}
   .pg-tourmap{order:-1;flex:0 0 42dvh;height:42dvh;z-index:16}
-  .story-chip{font-size:.78rem;max-width:calc(100% - 12rem)}
-  .story-exag{right:3rem;padding-left:.4rem}.story-exag span{display:none}
+  .story-chip{font-size:.78rem;max-width:calc(100% - 5rem)}
+  .story-info{right:4.4rem;top:3.4rem}
   .story-loc{width:84px;bottom:3.1rem}
+  /* Tap targets: MapLibre's own buttons are 29 px; 44 px here (the zoom pair and the "i"). */
+  .pg-tourmap .maplibregl-ctrl-group button{width:44px;height:44px}
+  .pg-tourmap .maplibregl-ctrl-attrib.maplibregl-compact,.pg-tourmap .maplibregl-ctrl-attrib.maplibregl-compact-show{min-width:44px;min-height:44px;padding:0;border-radius:6px}
+  .pg-tourmap .maplibregl-ctrl-attrib-button{width:44px;height:44px;background-size:24px;background-position:center;background-repeat:no-repeat}
+  .pg-tourmap .maplibregl-ctrl-bottom-right{bottom:.25rem}
 }
 
 /* On the map: stop markers, the credit line and the recentre button. */
-.story-recentre{position:absolute;right:.75rem;bottom:2.6rem;z-index:2;min-height:2.75rem;padding:0 1rem;border:0;border-radius:6px;background:#141414;color:#E9D8B4;font:inherit;font-weight:500;font-size:.9rem;cursor:pointer}
+.story-recentre{position:absolute;right:3.6rem;top:.75rem;z-index:2;min-height:2.75rem;padding:0 1rem;border:0;border-radius:6px;background:#141414;color:#E9D8B4;font:inherit;font-weight:500;font-size:.9rem;cursor:pointer}
 .story-recentre:focus-visible{outline:3px solid #E9D8B4;outline-offset:2px}
 .story-credit{position:absolute;left:0;right:0;bottom:0;z-index:2;margin:0;padding:.35rem .75rem;background:rgba(20,20,20,.88);color:#EFE6D2;font-size:.78rem;line-height:1.3}
 .story-credit .short{display:none}
@@ -58,7 +64,7 @@
 .story-mk{padding:.2rem .5rem;border-radius:6px;background:#141414;color:#E9D8B4;font-weight:500;font-size:.78rem;white-space:nowrap}
 .story-dot{width:.9rem;height:.9rem;border-radius:50%;background:#E9D8B4;border:2px solid #141414}
 /* Layers (build card 4): the legend line, fact markers and their card. From the mock's story.css and story-b.css. */
-.story-legend{position:absolute;left:.75rem;top:3.4rem;z-index:2;margin:0;padding:.3rem .6rem;border-radius:6px;background:rgba(20,20,20,.82);color:#EFE6D2;font:400 .74rem/1.35 var(--sans,sans-serif);max-width:calc(100% - 4rem);white-space:nowrap;overflow:hidden}
+.story-legend{position:absolute;left:9.4rem;bottom:2.4rem;z-index:2;margin:0;padding:.3rem .6rem;border-radius:6px;background:rgba(20,20,20,.82);color:#EFE6D2;font:400 .74rem/1.35 var(--sans,sans-serif);max-width:calc(100% - 4rem);white-space:nowrap;overflow:hidden}
 .story-legend[hidden]{display:none}
 .story-legend span{display:inline-block;margin-left:.7rem}
 .story-legend i{display:inline-block;width:.7rem;height:.7rem;margin-right:.3rem;border-radius:2px;vertical-align:-1px;border:1px solid rgba(233,216,180,.6)}
@@ -77,11 +83,11 @@
 .story-factpop .maplibregl-popup-close-button:focus-visible{outline:2px solid #fff}
 @media (max-width:61rem){
   /* Under the chip, clear of the locator and the credit; full class names, wrapping to a second line. */
-  .story-legend{top:3.1rem;left:.75rem;right:.75rem;max-width:none;white-space:nowrap;overflow-x:auto;scrollbar-width:none;font-size:.66rem}
+  .story-legend{bottom:3.1rem;max-width:none;font-size:.66rem}
   .story-legend span{margin-left:0;margin-right:.55rem}
 }
 /* Phone and iPad width: the credit folds behind the map's "i" button (GuideMap toggles .open on it). */
-@media (max-width:61rem){.story-credit{display:none;font-size:.7rem;padding:.35rem .5rem;right:2.6rem}.story-credit.open{display:block}.story-credit .long{display:none}.story-credit .short{display:inline}}
+@media (max-width:61rem){.story-credit{display:none;font-size:.7rem;padding:.35rem .5rem;right:3.6rem}.story-credit.open{display:block}.story-credit .long{display:none}.story-credit .short{display:inline}}
 
 /* Phone and tablet strip: the legend wraps and stops short of the zoom control (top right) instead of running under it. */
 @media (max-width:61rem){
@@ -93,6 +99,9 @@
 @media (max-width:47.5em){.pg.tour .pg-listing :is(section,h2,h3,[id]){scroll-margin-top:calc(var(--sb) + 42dvh + 1.5rem)}}
 /* The rock key has long unit names: it wraps beside the zoom control, on a column and on a phone strip (never cut off). */
 .pg-tourmap .story-legend{white-space:normal;overflow:visible;right:3.6rem;max-width:none}
+.pg-tourmap .maplibregl-ctrl-attrib.maplibregl-compact-show{padding:0}
+.pg-tourmap .maplibregl-ctrl-attrib-inner{display:none!important} /* the credit line says it */
+@media (max-width:47.5em){.pg-tourmap .story-legend{left:7.2rem}}
 /* The floating "Show map" button is for the guide alone: while the tour map is open it only covers the text (owner card 3, 21 Oct 2026). */
 .pg.tour .showmap{display:none}
 
