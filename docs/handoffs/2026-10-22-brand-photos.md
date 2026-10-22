@@ -55,3 +55,9 @@ Follows `2026-10-22-brand-identity-r1.md` ("After round 4" and "This-or-that tes
   (`.../scratchpad/bdg/`: build.py, template.html, img/, shots/), not copied into the main folder. Scratchpad is temporary: copy it to `mocks/` on the owner's word.
 - LeadBot looked at the 1440 and 400 shots [V]. Weak spots [A]: empty space in the atlas card and favicon panels; the Rioja Guides card shows hills, not vines.
 - Open: rewrite "NO dark mode" and the white page in CLAUDE.md and visual-style.md now, or when the direction is final.
+
+## Photo approach in today's style (owner: "merge the picture approach of this mode into the current style")
+- Before/after mock: Artifact https://claude.ai/artifact/S7cF1j6x58zExZB7t5RZFg (source in the session scratchpad `merge/`). One Sonnet builder, 68K tokens [V].
+- After keeps band, champagne, fonts, headline, nav; photos become framed print mosaics on home, Rioja guide opening and Priorat atlas card. 12 photos, none repeated.
+- Open choice for the owner: home trades the live map hero for photos (visual-style.md says "product, not stock photo"). Alternative: keep the map hero and use the mosaic below it.
+- Shipping needs: picks into `data/photos.json` and `public/photos/` (larger sizes than 800 px), crop checks, and Priorat photos' place checked (Montsant vs Priorat).
