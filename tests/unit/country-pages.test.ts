@@ -110,7 +110,7 @@ describe('France (pilot, decisions #52-#58)', () => {
   });
   it('renders /fr/ with 40 place tiles, photos where they have shipped, and an honest Study note', () => {
     expect(count(page, /<a class="ecard"/g)).toBe(40);
-    expect(count(page, /Photos soon/g)).toBe(22); // Burgundy batch: photos in the next commit; Bordeaux shipped
+    expect(count(page, /Photos soon/g)).toBe(0); // every France place has photos now (Bordeaux and Burgundy batches shipped)
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
