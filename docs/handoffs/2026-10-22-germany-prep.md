@@ -1,8 +1,8 @@
 # Germany prep (22 Oct 2026, issue #149)
 
 ## Done
-- Plan PR #222 merged (decisions #71-#78). Austria and Greece plans PR #225 (decisions #79-#90) open and green; the merge was
-  refused by the auto-mode check, owner to merge.
+- Plan PR #222 merged (decisions #71-#78). Austria and Greece plans PR #225 merged (decisions #81-#92, renumbered: Italy holds #79-#80);
+  German single-vineyard PDOs as zones #93 [O]. Next free decision number: #94.
 - Prep files `Review/countries/germany-prep/` (summary README). Helpers ~0.21M; main thread ~0.4M, mostly re-read [A].
 
 ## Open
