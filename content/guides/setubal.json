@@ -1,0 +1,133 @@
+{
+ "id": "setubal",
+ "title": "Why Setúbal tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Light, sandy soils and a climate shaped by the sea suit the grapes behind Setúbal's fortified Moscatels. The white is golden with a hint of orange blossom, and a Frenchman once called it \"the sun in a bottle\".",
+  "cite": [
+   "setubal-doc:p9",
+   "setubal-doc:p3",
+   "setubal-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "peninsula",
+   "beat": "place",
+   "title": "A peninsula between two estuaries",
+   "paras": [
+    "The Setúbal peninsula is a large stretch of land south of Lisbon, embraced by the estuaries of the Tejo and the Sado. The protected area covers the municipalities of Montijo, Palmela and Setúbal, plus the parish of Castelo in Sesimbra.",
+    "Vines grew here long before Portugal existed. Grape seeds found in Almada, on the Tejo estuary, date from the 8th century BC. Historians believe the Phoenicians brought vine growing in along the Tejo and Sado. They traded wine and olive oil for precious metals."
+   ],
+   "cite": [
+    "setubal-doc:p5",
+    "setubal-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Almada on the Tejo",
+     "point": [
+      -9.156,
+      38.679
+     ],
+     "zoom": 10,
+     "caption": "Grape seeds from the 8th century BC were dug up in Almada, on the Tejo estuary.",
+     "cite": [
+      "setubal-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sea, rivers and a hill range",
+   "paras": [
+    "The climate can be called mixed: subtropical and Mediterranean/maritime. Rainfall is low and temperature swings are moderate.",
+    "The nearby sea shapes it. So do the basins of the Sado and the Tejo. The relief of the Serra da Arrábida plays its part too."
+   ],
+   "cite": [
+    "setubal-doc:p7",
+    "setubal-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Serra da Arrábida",
+     "point": [
+      -8.98,
+      38.49
+     ],
+     "zoom": 10,
+     "caption": "The hills of the Serra da Arrábida help shape the region's climate.",
+     "cite": [
+      "setubal-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Light and sandy",
+   "paras": [
+    "Most soils are light and sandy, with some variety. In short patches the texture changes, and there is little or no aggregation.",
+    "The grapes used for these wines are perfectly suited to those soils and that climate. The wines owe their unique character mainly to that fit. Winemaking and ageing bring it out."
+   ],
+   "cite": [
+    "setubal-doc:p4",
+    "setubal-doc:p7",
+    "setubal-doc:p9"
+   ]
+  },
+  {
+   "id": "moscatel",
+   "beat": "rules",
+   "title": "The prince of the Moscatels",
+   "paras": [
+    "Setúbal makes only one kind of wine: licoroso, fortified with grape spirit, in two colours. The white is Moscatel de Setúbal, from a grape called one of the most aromatic in the world. The red is Moscatel Roxo, sometimes just \"Roxo\".",
+    "Its traditional name is vinho generoso. The label can use that term only together with the Setúbal name.",
+    "The white must be at least 67% Moscatel de Setúbal, and the red at least 67% Moscatel Roxo. A bottle can carry the grape's name only with at least 85% of that grape.",
+    "Seventeen more grape varieties are listed for the wine. Among them are Arinto and Touriga Nacional.",
+    "The grapes are crushed and fermentation starts on the skins. Grape spirit then stops it, and the wine averages 17 to 18° of alcohol. It must have at least 16%.",
+    "Every wine ages 18 months before it can be certified. Sugar limits are 280 g/l for wines up to 20 years old and 340 g/l for older ones.",
+    "A wine that stands out in tasting can be sold as Superior. It must then age five years in all before sale. Labels may also state an age in steps of ten, from 10 to 40 anos (years), when the wine is at least that old.",
+    "The aromas and flavours come from the grapes, above all Moscatel de Setúbal, and from soil and climate.",
+    "The white is golden, from light topaz to amber. Its exotic floral aroma hints at orange blossom and linden. Young wines add touches of honey and dates, with a note of orange. Older wines grow more complex and subtle, with nuts such as hazelnut or almond.",
+    "The red has a drier, more complex aroma. Its palate is very fine, with spice and preserves of ginja (sour cherry) and fig. Made in smaller amounts, it is less known than the white. The wine expert Ferreira Lapa called it \"the quintessence of the Moscatels\".",
+    "The fame is old. Setúbal wine was already famous in the time of King Dinis (1261-1325), and by 1381 plenty was exported to England. In 1855 José Maria da Fonseca won a gold medal in Paris for its Moscatel de Setúbal."
+   ],
+   "cite": [
+    "setubal-doc:p2",
+    "setubal-doc:p3",
+    "setubal-doc:p4",
+    "setubal-doc:p5",
+    "setubal-doc:p6",
+    "setubal-doc:p7",
+    "setubal-doc:p8",
+    "setubal-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Azeitão, home of the famous Moscatels",
+     "point": [
+      -9.018,
+      38.519
+     ],
+     "zoom": 12,
+     "caption": "In 1867 Azeitão was named the home of the best Moscatels, those of José Maria da Fonseca.",
+     "cite": [
+      "setubal-doc:p9"
+     ]
+    },
+    {
+     "label": "Palmela",
+     "place": "palmela",
+     "caption": "Palmela is one of the municipalities of the Setúbal area.",
+     "cite": [
+      "setubal-doc:p5"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "dao",
+ "title": "Why Dão tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Dão sits in a ring of mountains that holds back damp coastal air and harsh continental winds. Inside, granite soils and marked microclimates help give elegant whites and reds of power and finesse.",
+  "cite": [
+   "dao-doc:p7",
+   "dao-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "ring",
+   "beat": "place",
+   "title": "A region ringed by serras",
+   "paras": [
+    "A set of serras (mountain ranges) surrounds the region. The Caramulo lies to the west, the Buçaco to the south, the Nave to the north and the Estrela to the east.",
+    "The two main rivers are the Dão and the Mondego. Their courses run closely parallel across the whole granite massif. The valleys are many, winding and deep, and they are a basic feature of the landscape.",
+    "The demarcated area covers municipalities in three districts: Coimbra, Guarda and Viseu. Only part of the municipality of Viseu is included."
+   ],
+   "cite": [
+    "dao-doc:p5",
+    "dao-doc:p7",
+    "dao-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Serra da Estrela",
+     "point": [
+      -7.61,
+      40.32
+     ],
+     "zoom": 9,
+     "caption": "The Serra da Estrela closes the region on the east.",
+     "cite": [
+      "dao-doc:p7"
+     ]
+    },
+    {
+     "label": "The Dão and the Mondego",
+     "point": [
+      -8.13,
+      40.39
+     ],
+     "zoom": 10,
+     "caption": "The Dão and the Mondego are the two main rivers of the region.",
+     "cite": [
+      "dao-doc:p7",
+      "dao-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Sheltered from coast and continent",
+   "paras": [
+    "The climate is temperate: cold and rainy in winter, very hot and dry in summer.",
+    "The mountains form a barrier against the damp air of the coast and the harsh winds of the continental interior. The rugged relief also creates marked microclimate variations. These matter a great deal for the quality of every Dão wine, sparkling included."
+   ],
+   "cite": [
+    "dao-doc:p7",
+    "dao-doc:p8"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Soils that weather easily",
+   "paras": [
+    "Vineyards must stand on mainly granite ground, with brown non-humic lithosols (thin, stony soils) and a few outcrops of brown Mediterranean schist.",
+    "These soils weather easily, especially under rain. This helps make them suited to vines. Together with the way land is divided and the way the vines are trained, it gives balanced, aromatic whites of great elegance. The reds and rosados get power and finesse from the noble grapes and the climate."
+   ],
+   "cite": [
+    "dao-doc:p7",
+    "dao-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Still and sparkling",
+   "paras": [
+    "Dão makes still wine in red, white and rosado. It also makes sparkling wine.",
+    "Dão allows a long list of grapes and names no main one. Encruzado is among the whites. Touriga Nacional is among the reds.",
+    "Vines must be trained low on a cordon, with at least 3000 plants per hectare. Irrigation is allowed only in exceptional conditions, case by case. Red may yield up to 60 hl per hectare. Rosado may reach 70 hl. White and sparkling may reach 80 hl.",
+    "Minimum alcohol is 11% vol. for most wines. The word Nobre raises it to 12% vol. for red and rosado. For white it becomes 11.5% vol.",
+    "A plain Dão red ages at least until 15 May after the harvest. Sparkling Dão needs 9 months. Reserva needs 24 months for red and 6 for white. Garrafeira red needs 36 months, 12 of them in bottle. Garrafeira white needs 12 months, 6 of them in bottle. Clarete is a red with at least 6 months of ageing.",
+    "Nobre red needs 36 months of ageing and Nobre white needs 12. Nobre Reserva red needs 42 months. Nobre Garrafeira red needs 48 months, 18 of them in bottle."
+   ],
+   "cite": [
+    "dao-doc:p2",
+    "dao-doc:p3",
+    "dao-doc:p4",
+    "dao-doc:p5",
+    "dao-doc:p6",
+    "dao-doc:p7"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+   "term": "Novo",
+    "text": "A young wine with a lower minimum alcohol of 10.5% vol. It applies to every colour and to sparkling."
+   }
+  ],
+  "cite": [
+   "dao-doc:p2",
+   "dao-doc:p3"
+  ]
+ }
+}

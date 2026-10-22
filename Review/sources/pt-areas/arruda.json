@@ -1,0 +1,4 @@
+{"arruda":{"source":"arruda-doc:p5","zones":{"arruda":{"districts":[],"except":{},"municipalities":["Arruda dos Vinhos"],"parishes":{
+"Sobral de Monte Agraço":["Santo Quintino"],
+"Vila Franca de Xira":["Cachoeiras","Calhandriz","São João dos Montes"]}}},
+"notMapped":["Sobral de Monte Agraço: Santo Quintino: partly in the spec, taken whole","Vila Franca de Xira: Cachoeiras, Calhandriz, São João dos Montes: partly in the spec, taken whole"],"aliases":{}}}

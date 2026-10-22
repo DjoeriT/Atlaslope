@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>AtlaSlope · Know the land behind the glass</title>
-    <meta name="description" content="Spain's wine places from above, and why each one tastes the way it does. Sourced guides and Study rounds. Free, in your browser." />
+    <meta name="description" content="The wine places of Spain and Portugal from above, and why each one tastes the way it does. Sourced guides and Study rounds. Free, in your browser." /><!-- draft copy, owner rewrites -->
     <!-- Links from before the website (atlaslope.com/#place=toro, #quiz) open the atlas at the same place, before anything draws. -->
     <script>
       (function () { var h = location.hash; if (/^#(place|region|quiz|study|view)\b/.test(h)) location.replace('atlas/' + location.search + h); })();
@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AtlaSlope" />
     <meta property="og:title" content="AtlaSlope · Know the land behind the glass" />
-    <meta property="og:description" content="Spain's wine places from above, and why each one tastes the way it does. Free, in your browser, no account." />
+    <meta property="og:description" content="The wine places of Spain and Portugal from above, and why each one tastes the way it does. Free, in your browser, no account." />
     <meta property="og:url" content="https://atlaslope.com/" />
     <meta property="og:image" content="https://atlaslope.com/share.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -39,6 +39,7 @@
       @font-face { font-family: 'IBM Plex Sans'; src: url('/fonts/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); font-weight: 600; font-display: swap; }
     </style>
     <script type="module" src="/src/home/main.ts"></script>
+    <link rel="stylesheet" href="/src/home/countries.css" />
   </head>
   <!-- The home page (website slice 2; approved mock Review/mock-home-v1/, Salon book with the atlas as hero). Plain HTML: no map script.
        Owner cards 18 Oct 2026: source names, not logos, until MAPA and IGN agree. The bar has search on every page at all times (owner, 21 Oct
@@ -60,10 +61,8 @@
       <section class="hero">
         <div class="txt">
           <h1>Know the land behind the glass.</h1>
-          <p class="sub">Spain's wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.</p>
+          <p class="sub">Wine places from above, and why each one tastes the way it does. The wine study atlas for WSET and Wine Scholar students.</p>
           <div class="ctas"><a class="btn a cta" href="atlas/">Open the atlas<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 4.5 16.5 10 11 15.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a><a class="btn link" href="atlas/#study">Start studying</a></div>
-          <!-- the Spain tag, dropped by accident in the release 40 refresh and back on the owner's ask (19 Oct 2026 10:39Z) -->
-          <p class="reach"><span>Spain</span> Live now. More countries coming soon.</p>
           <dl class="nums">
             <!-- one tile for places and guides once every place had one, and no "Free" tile (owner, option A, 19 Oct 2026) -->
             <div><dt data-count="places">106</dt><dd>wine places, each with its own guide</dd></div>
@@ -83,10 +82,21 @@
         </figure>
       </section>
 
+      <!-- Two equal country cards (owner 22 Oct 2026, option A of mocks/countries-structure.html). Filled in at build time from the tree and the guides (src/home/countryPages.ts). Draft copy, owner rewrites. -->
+      <section class="countries-sec" id="countries">
+        <div class="wrap">
+          <h2>Pick a country.</h2>
+          <p class="sub">See why each place tastes the way it does.</p>
+          <!-- country-cards -->
+          <!-- Filled in at build time (src/home/countryPages.ts). -->
+          <!-- /country-cards -->
+        </div>
+      </section>
+
       <section class="sources">
         <div class="wrap">
           <p>Every fact from an official source</p>
-          <ul><li>EU single documents</li><li>Pliegos de condiciones</li><li>MAPA</li><li>IGN España</li></ul>
+          <ul><li>EU single documents</li><li>Pliegos de condiciones</li><li>MAPA</li><li>IGN España</li><li>DGT Portugal</li></ul>
         </div>
       </section>
 
@@ -139,7 +149,7 @@
       <section class="closer">
         <div class="wrap">
           <div>
-            <h2>The whole of Spain, one map away.</h2>
+            <h2>Every wine place, one map away.</h2><!-- draft copy, owner rewrites -->
             <!-- copy only: no donation setup exists, and none is built without the owner's go -->
             <p>Free for now. Your donations will keep it that way.</p>
             <p>More countries are on their way.</p>
@@ -151,8 +161,8 @@
 
     <footer>
       <div class="wrap">
-        <div><p class="h">The wine atlas</p><small>Spain's wine places from above, and why each one tastes the way it does. Free, in your browser, no account.</small></div>
-        <div><p class="h">Atlas</p><a href="atlas/">Spain</a><a href="atlas/#study">Study</a></div>
+        <div><p class="h">The wine atlas</p><small>The wine places of Spain and Portugal from above, and why each one tastes the way it does. Free, in your browser, no account.</small><!-- draft copy, owner rewrites --></div>
+        <div><p class="h">Atlas</p><a href="atlas/">Open the atlas</a><a href="atlas/#study">Study</a></div>
         <div><p class="h">Guides</p><a href="guides/">All guides</a><a href="guides/#map-tours">Map tours</a><a href="atlas/#place=rioja&amp;page">The Rioja guide</a></div>
         <div><p class="h">AtlaSlope</p><a href="about/">About</a></div>
       </div>

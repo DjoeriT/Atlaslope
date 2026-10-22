@@ -1,0 +1,36 @@
+{
+ "carcavelos": {
+  "source": "carcavelos-doc:p4",
+  "zones": {
+   "carcavelos": {
+    "municipalities": [],
+    "parishes": {
+     "Cascais": [
+      "Carcavelos",
+      "Parede",
+      "São Domingos de Rana",
+      "Alcabideche",
+      "Estoril"
+     ],
+     "Oeiras": [
+      "Oeiras",
+      "São Julião da Barra",
+      "Paço de Arcos"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "Alcabideche: partly in the spec, taken whole",
+   "Estoril: partly in the spec, taken whole",
+   "Oeiras e São Julião da Barra: partly in the spec, taken whole",
+   "Paço de Arcos: partly in the spec, taken whole",
+   "Boundary lines: north Cascais/Sintra limit, south Atlantic, east Ribeira de Porto Salvo and Barcarena/Oeiras parish limit"
+  ],
+  "aliases": {
+   "Cascais": {
+    "Estoril": "União das freguesias de Cascais e Estoril"
+   }
+  }
+ }
+}

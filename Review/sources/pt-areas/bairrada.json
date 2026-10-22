@@ -1,0 +1,67 @@
+{
+ "bairrada": {
+  "source": "bairrada-doc:p5",
+  "zones": {
+   "bairrada": {
+    "municipalities": [
+     "Anadia",
+     "Mealhada",
+     "Oliveira do Bairro"
+    ],
+    "parishes": {
+     "Águeda": [
+      "Aguada de Baixo",
+      "Aguada de Cima",
+      "Águeda",
+      "Barrô",
+      "Belazaima do Chão",
+      "Borralha",
+      "Espinhel",
+      "Fermentelos",
+      "Óis da Ribeira",
+      "Recardães",
+      "Valongo do Vouga"
+     ],
+     "Aveiro": [
+      "Nariz"
+     ],
+     "Cantanhede": [
+      "Ançã",
+      "Bolho",
+      "Cadima",
+      "Camarneira",
+      "Cantanhede",
+      "Cordinhã",
+      "Corticeiro de Cima",
+      "Covões",
+      "Febres",
+      "Murtede",
+      "Ourentã",
+      "Outil",
+      "Pocariça",
+      "Portunhos",
+      "Sanguinheira",
+      "São Caetano",
+      "Sepins",
+      "Vilamar"
+     ],
+     "Coimbra": [
+      "Botão",
+      "Souselas",
+      "Torre de Vilela",
+      "Trouxemil",
+      "Vil de Matos"
+     ],
+     "Vagos": [
+      "Covão do Lobo",
+      "Ouca",
+      "Santa Catarina",
+      "Sosa"
+     ]
+    }
+   }
+  },
+  "notMapped": [],
+  "aliases": {}
+ }
+}

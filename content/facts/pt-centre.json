@@ -1,0 +1,581 @@
+{
+ "region": "pt-centre",
+ "sheets": [
+  {
+   "id": "dao",
+   "why": {
+    "text": "Granite soils in a region ringed by mountains that shelter it from wet coastal air and harsh winds, with cold, rainy winters and hot summers.",
+    "cite": [
+     "dao-doc:p7",
+     "dao-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Encruzado",
+     "Pinot Blanc",
+     "Bical",
+     "Pilongo",
+     "Siria",
+     "Pinot Noir",
+     "Sémillon",
+     "Cornifesto",
+     "Malvasia Preta",
+     "Malvasia Rei",
+     "Tamarez",
+     "Malvasia Fina",
+     "Marufo",
+     "Verdelho",
+     "Talia",
+     "Luzidio",
+     "Arinto do Interior",
+     "Cabernet-Sauvignon",
+     "Campanario",
+     "Camarate",
+     "Assaraky",
+     "Rabo de Ovelha",
+     "Verdial Branco",
+     "Trincadeira",
+     "Agua Santa",
+     "Cerceal Branco",
+     "Fernao Pires",
+     "Castelao",
+     "Aragonez",
+     "Terrantez",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Alfrocheiro",
+     "Uva Cao",
+     "Tinto Cao",
+     "Cidreiro",
+     "Jampal",
+     "Touriga Fêmea",
+     "Touriga Nacional",
+     "Alvarelhao",
+     "Tinta Carvalha",
+     "Rufete",
+     "Jaen",
+     "Malvasia Candida Roxa",
+     "Dona Branca",
+     "Baga",
+     "Esganoso",
+     "Monvedro",
+     "Barcelo"
+    ],
+    "othersCite": [
+     "dao-doc:p6",
+     "dao-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Reds, whites and rosados, plus sparkling wines.",
+    "cite": [
+     "dao-doc:p2",
+     "dao-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Temperate: cold and rainy in winter, very hot and dry in summer. Mountains block damp coastal air and harsh continental winds, and the relief creates marked microclimate variations.",
+    "cite": [
+     "dao-doc:p7",
+     "dao-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Mostly granite, with brown non-humic lithosols and a few brown Mediterranean schist outcrops. The soils weather easily, which suits vines.",
+    "cite": [
+     "dao-doc:p7",
+     "dao-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: ruby, full-bodied, delicate, soft and velvety with age. Whites: light, fresh, citrus-yellow, fruity. Rosés: fresh, simple fruit with some floral notes. Sparkling: fine persistent bubbles, fruity and fresh.",
+    "cite": [
+     "dao-doc:p3",
+     "dao-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Nobre",
+      "text": "Minimum alcohol 12% red and rosado, 11.5% white. Ageing: red 36 months, white 12."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Red needs 36 months ageing, 12 in bottle. White needs 12 months, 6 in bottle."
+     },
+     {
+      "name": "Reserva",
+      "text": "Red needs 24 months ageing. White needs 6 months."
+     },
+     {
+      "name": "Clarete",
+      "text": "Red wine with a minimum of 6 months ageing."
+     }
+    ],
+    "cite": [
+     "dao-doc:p2",
+     "dao-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bairrada",
+   "why": {
+    "text": "Clay and clay-limestone hills under a strong Atlantic influence, with hot days and cool nights in summer; the sea shows in fresh acidity.",
+    "cite": [
+     "bairrada-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Pinot Blanc",
+     "Sercialinho",
+     "Bical",
+     "Pinot Noir",
+     "Bastardo Tinto",
+     "Syrah",
+     "Verdelho",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Merlot",
+     "Rabo de Ovelha",
+     "Fernao Pires",
+     "Sauvignon",
+     "Cercial",
+     "Castelao",
+     "Aragonez",
+     "Alfrocheiro",
+     "Tinto Cao",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Rufete",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Baga"
+    ],
+    "othersCite": [
+     "bairrada-doc:p5",
+     "bairrada-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Red, white and rosado wines, plus sparkling wine made by the classic bottle method.",
+    "cite": [
+     "bairrada-doc:p2",
+     "bairrada-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean/Atlantic climate with hot-day, cool-night summers; the Atlantic Ocean to the west gives strong maritime influence and fresh acidity.",
+    "cite": [
+     "bairrada-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly poor mineral soils from sandy to clayey, and some sandy loam; vines grow mainly on clay and clay-limestone. The best reds come from clay-limestone with south exposure and good drainage.",
+    "cite": [
+     "bairrada-doc:p6",
+     "bairrada-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: structured by tannin and alcohol, with blackberry, bergamot and spice when young, and long ageing. Whites: pale lemon, fresh, floral or fruity. Rosés: fruity, with fairly high acidity. Sparkling: fresh and fruity, toasty with age.",
+    "cite": [
+     "bairrada-doc:p2",
+     "bairrada-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Clássico",
+      "text": "Red with at least 50% Baga and at least 12.5% natural alcohol."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine with second fermentation in bottle (classic method), nine months ageing before sale."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional quality mention the spec lists, along with Superior and Super reserva."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional quality mention the spec lists, along with Escolha and Colheita Seleccionada."
+     }
+    ],
+    "cite": [
+     "bairrada-doc:p3",
+     "bairrada-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "beira-interior",
+   "why": {
+    "text": "Vineyards at 300 to 700 m on schist, gneiss and granite, with a dry Mediterranean summer, give fresh, aromatic whites and spicy reds.",
+    "cite": [
+     "beira-interior-doc:p2",
+     "beira-interior-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Encruzado",
+     "Petit Bouschet",
+     "Petit Verdot",
+     "Bical",
+     "Siria",
+     "Pinot Noir",
+     "Bastardo",
+     "Malvasia Rei",
+     "Malvasia Fina",
+     "Marufo",
+     "Syrah",
+     "Arinto do Interior",
+     "Cabernet-Sauvignon",
+     "Camarate",
+     "Arinto",
+     "Rabo de Ovelha Tinto",
+     "Merlot",
+     "Folgasao",
+     "Trincadeira",
+     "Folha de Figueira",
+     "Fonte Cal",
+     "Fernao Pires",
+     "Sauvignon",
+     "Aragonez",
+     "Riesling",
+     "Alicante Bouschet",
+     "Grand Noir",
+     "Alicante Branco",
+     "Alfrocheiro",
+     "Caladoc",
+     "Tinto Cao",
+     "Gouveio",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Tinta Carvalha",
+     "Rufete",
+     "Chardonnay",
+     "Tinta Barroca",
+     "Jaen",
+     "Mourisco",
+     "Baga"
+    ],
+    "othersCite": [
+     "beira-interior-doc:p5",
+     "beira-interior-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Reds (including palhete and clarete), whites and rosados, plus sparkling wine.",
+    "cite": [
+     "beira-interior-doc:p2",
+     "beira-interior-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean climate with 800 to 1000 mm of rain a year, mostly in winter and spring. Summers are very dry, with under 10 mm in July and August.",
+    "cite": [
+     "beira-interior-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Brown or red Mediterranean soils on schist and gneiss, brown soils on schist or greywacke, and stony non-humic soils on granite and migmatite.",
+    "cite": [
+     "beira-interior-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards average between 300 and 700 m.",
+    "cite": [
+     "beira-interior-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: very aromatic and fresh. Reds: more complex, with spice and red fruit aromas and great freshness. Sparkling: fresh and very aromatic.",
+    "cite": [
+     "beira-interior-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Selecção",
+      "text": "Red needs at least 13% alcohol and 12 months ageing; white 12% and six months."
+     },
+     {
+      "name": "Palhete",
+      "text": "Red from partial skin contact or red and white grapes, whites at most 15%."
+     },
+     {
+      "name": "Clarete",
+      "text": "Red made like palhete, white grapes up to 45%, 11.5% alcohol at most."
+     },
+     {
+      "name": "Espumante",
+      "text": "Sparkling wine, at least 11% alcohol and nine months at the producer after bottling."
+     }
+    ],
+    "cite": [
+     "beira-interior-doc:p2",
+     "beira-interior-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "lafoes",
+   "why": {
+    "text": "Terraced vineyards along the Vouga valley on schist, gneiss, granite and migmatite soils; the whites are low-alcohol, fruity and rich in malic acid.",
+    "cite": [
+     "lafoes-doc:p3",
+     "lafoes-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Arinto",
+     "Rabo de Ovelha",
+     "Amaral",
+     "Cercial",
+     "Touriga Nacional",
+     "Jaen",
+     "Dona Branca",
+     "Esgana Cão Tinto"
+    ],
+    "othersCite": [
+     "lafoes-doc:p4"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Still white and red wines; both may show a light prickle of gas.",
+    "cite": [
+     "lafoes-doc:p2",
+     "lafoes-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Humic lithosols on sedimentary and metamorphosed schist, gneiss, granite and migmatite.",
+    "cite": [
+     "lafoes-doc:p3",
+     "lafoes-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: lemon to light gold, very aromatic, fruity, tangy, rich in malic acid, sometimes slightly sparkling. Reds: ruby to violet, aromatic, tangy, some astringency, high fixed acidity, long ageing, sometimes slightly sparkling.",
+    "cite": [
+     "lafoes-doc:p2",
+     "lafoes-doc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
+     },
+     {
+      "name": "Escolha",
+      "text": "Traditional label mention allowed for Lafões wines; the spec gives no further rule."
+     }
+    ],
+    "cite": [
+     "lafoes-doc:p2",
+     "lafoes-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "encostas-daire",
+   "why": {
+    "text": "Vineyards on the slopes of the Serra de Aire between the coast and the limestone massif, with a mild climate and very varied soils.",
+    "cite": [
+     "encostas-daire-doc:p7",
+     "encostas-daire-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Boal Branco",
+     "Vital",
+     "Bical",
+     "Bastardo",
+     "Tamarez",
+     "Malvasia Fina",
+     "Ratinho",
+     "Syrah",
+     "Seara Nova",
+     "Cabernet-Sauvignon",
+     "Arinto",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Fernao Pires",
+     "Cercial",
+     "Castelao",
+     "Aragonez",
+     "Amostrinha",
+     "Trincadeira Branca",
+     "Alicante Bouschet",
+     "Alicante Branco",
+     "Alfrocheiro",
+     "Caladoc",
+     "Jampal",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Rufete",
+     "Chardonnay",
+     "Tinta Miuda",
+     "Baga",
+     "Diagalves"
+    ],
+    "othersCite": [
+     "encostas-daire-doc:p5",
+     "encostas-daire-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Red, white and rosé wines, including the Medieval de Ourém white and red.",
+    "cite": [
+     "encostas-daire-doc:p2",
+     "encostas-daire-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mild climate with microclimates, seen as a transition between the wet western winds and dry summers.",
+    "cite": [
+     "encostas-daire-doc:p7",
+     "encostas-daire-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: brown or red limestone soils on marl and fine sandstone, Mediterranean soils on sandstone and clay, and non-humic lithosols and podzols on sandstone.",
+    "cite": [
+     "encostas-daire-doc:p7",
+     "encostas-daire-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: light, open ruby, sometimes fruity, soft quality tannins. Rosés: balanced, fruity, some freshness. Whites: light, soft, fruity, deep yellow, with some persistence.",
+    "cite": [
+     "encostas-daire-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Medieval de Ourém",
+      "text": "Ourém wines made by medieval, Cistercian-monk methods, yield capped at 40 hl per hectare."
+     },
+     {
+      "name": "Reserva",
+      "text": "Traditional label allowed on DO wines."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional label allowed on DO wines."
+     },
+     {
+      "name": "Superior",
+      "text": "Traditional label allowed on DO wines."
+     }
+    ],
+    "cite": [
+     "encostas-daire-doc:p3",
+     "encostas-daire-doc:p4",
+     "encostas-daire-doc:p5",
+     "encostas-daire-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

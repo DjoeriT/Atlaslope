@@ -1,0 +1,110 @@
+{
+ "beira-interior": {
+  "source": "beira-interior-doc:p5 (eAmbrosia attachment 11475, section 5)",
+  "zones": {
+   "beira-interior": {
+    "districts": [],
+    "municipalities": [
+     "Figueira de Castelo Rodrigo",
+     "Belmonte",
+     "Castelo Branco",
+     "Covilhã",
+     "Fundão",
+     "Manteigas",
+     "Penamacor",
+     "Pinhel"
+    ],
+    "parishes": {
+     "Almeida": [
+      "Almeida",
+      "Castelo Bom",
+      "Junça",
+      "Malpartida",
+      "Naves"
+     ],
+     "Guarda": [
+      "Benespera",
+      "Famalicão",
+      "Gonçalo",
+      "Valhelhas",
+      "Vela",
+      "Avelãs da Ribeira",
+      "Codesseiro",
+      "Porto da Carne",
+      "Sobral da Serra",
+      "Vila Cortês do Mondego"
+     ],
+     "Idanha-a-Nova": [
+      "Aldeia de Santa Margarida",
+      "Idanha-a-Velha",
+      "Medelim",
+      "Monsanto",
+      "Oledo",
+      "São Miguel de Acha"
+     ],
+     "Sabugal": [
+      "Bendada",
+      "Casteleiro",
+      "Santo Estêvão"
+     ],
+     "Vila Velha de Ródão": [
+      "Vila Velha de Ródão"
+     ],
+     "Celorico da Beira": [
+      "Açores",
+      "Baraçal",
+      "Celorico (Santa Maria)",
+      "Celorico (São Pedro)",
+      "Forno Telheiro",
+      "Lajeosa do Mondego",
+      "Maçal do Chão",
+      "Minhocal",
+      "Ratoeira",
+      "Velosa"
+     ],
+     "Meda": [
+      "Barreira",
+      "Carvalhal",
+      "Coriscada",
+      "Marialva",
+      "Rabaçal",
+      "Vale Flor"
+     ],
+     "Trancoso": [
+      "Carnicães",
+      "Cogula",
+      "Cótimos",
+      "Feital",
+      "Freches",
+      "Granja",
+      "Moimentinha",
+      "Póvoa do Concelho",
+      "Souto Maior",
+      "Tamanhos",
+      "Torres",
+      "Trancoso (São Pedro)",
+      "Valdujo",
+      "Vale do Seixo",
+      "Vila Franca das Naves",
+      "Vila Garcia",
+      "Vilares"
+     ]
+    },
+    "except": {
+     "Figueira de Castelo Rodrigo": [
+      "Escalhão"
+     ]
+    }
+   }
+  },
+  "notMapped": [
+   "The spec text lists no sub-regions (Castelo Rodrigo, Pinhel, Cova da Beira); one zone for the whole area"
+  ],
+  "aliases": {
+   "Celorico da Beira": {
+    "Celorico (Santa Maria)": "União das freguesias de Celorico (São Pedro e Santa Maria) e Vila Boa do Mondego",
+    "Celorico (São Pedro)": "União das freguesias de Celorico (São Pedro e Santa Maria) e Vila Boa do Mondego"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "alenquer",
+ "title": "Why Alenquer tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Mountains to the north and west hold back the Atlantic and let the Mediterranean in. Its sun brings easy ripening and alcoholic strength, and Atlantic mists and summer breezes keep it in balance.",
+  "cite": [
+   "alenquer-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Vines that follow the hills",
+   "paras": [
+    "The vineyards form large continuous patches that follow the relief. They spread over slopes and valleys in the municipality of Alenquer.",
+    "Parts of three parishes may grow grapes for white Alenquer only.",
+    "Alenquer was taken from the Moors in the 12th century. The region's wines, above all its whites, were already well liked in England in the 14th century. Later they had a great success at the London Exhibition of 1890.",
+    "The finest wines come above all from mid-slope vineyards facing southeast."
+   ],
+   "cite": [
+    "alenquer-doc:p4",
+    "alenquer-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Alenquer town",
+     "point": [
+      -9.0127,
+      39.056
+     ],
+     "zoom": 10,
+     "caption": "The town at the heart of a region whose whites were prized in England by the 14th century.",
+     "cite": [
+      "alenquer-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mountains that let the south in",
+   "paras": [
+    "The mountain barrier to the north and west sits between the vineyards and the Atlantic. It slows the ocean's influence and lets the Mediterranean in.",
+    "Mediterranean sun means easy ripening and alcoholic strength. Atlantic mists and summer breezes balance the build-up of sugar and the burning of organic acids with the forming of aroma chains and phenolic compounds."
+   ],
+   "cite": [
+    "alenquer-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone and Mediterranean soils",
+   "paras": [
+    "The best patches of vines grow on limestone and Mediterranean soils. They spread over hillsides and valley slopes.",
+    "The Mediterranean soils are brown or red. They form on fine sandstone, on sands or on claystone.",
+    "The limestone soils are brown or red too. They form on marl and fine sandstone.",
+    "Vines for Alenquer must grow on these two kinds of soil."
+   ],
+   "cite": [
+    "alenquer-doc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Red and white, nothing else",
+   "paras": [
+    "Alenquer makes red and white wine only. Reds need at least 11.5% alcohol and whites at least 11%.",
+    "Whites are aromatic, full and long on the palate, and they show the Mediterranean ripening. Their colour runs from citrus to golden straw.",
+    "Young reds are winey, lively and bright. Aged reds turn intense and balanced, with a rare bouquet. Their colour runs from ruby to garnet.",
+    "Vines are trained low, as goblets or cordons. They must be at least three years past grafting.",
+    "Reds can only be bottled after 8 months of ageing. Yields are capped at 80 hl per hectare for reds and 90 hl for whites.",
+    "Alenquer lists 29 grape varieties, white and red. It names no single main grape."
+   ],
+   "cite": [
+    "alenquer-doc:p2",
+    "alenquer-doc:p3",
+    "alenquer-doc:p4",
+    "alenquer-doc:p5"
+   ]
+  }
+ ]
+}

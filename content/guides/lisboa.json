@@ -1,0 +1,128 @@
+{
+ "id": "lisboa",
+ "title": "Why Lisboa tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "From the 12th century, religious orders grew vines here for Mass wine, Alcobaça above all. The ground, the climate and the grapes vary so much that Lisboa makes many kinds of wine.",
+  "cite": [
+   "lisboa-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "coast",
+   "beat": "place",
+   "title": "An Atlantic strip north of the Tejo",
+   "paras": [
+    "The region covers every municipality of the Atlantic strip north of the Tejo estuary. Beira lies to the north and Ribatejo to the east. It is one of the largest wine regions in Portugal by vineyard area and by production, with about 26,000 hectares of vines and about a million hectolitres a year.",
+    "The land is not very high, except in the south, where some layers of basalt and granite appear. Small streams form on the slopes of its mountain ranges. Two sub-regions can carry their own name on a label: Estremadura and Alta-Estremadura."
+   ],
+   "cite": [
+    "lisboa-doc:p3",
+    "lisboa-doc:p6",
+    "lisboa-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Serra de Sintra",
+     "point": [
+      -9.39,
+      38.79
+     ],
+     "zoom": 10,
+     "caption": "Sintra is one of the mountain ranges whose slopes give rise to the region's small streams.",
+     "cite": [
+      "lisboa-doc:p6",
+      "lisboa-doc:p7"
+     ]
+    },
+    {
+     "label": "Alcobaça monastery",
+     "point": [
+      -8.978,
+      39.548
+     ],
+     "zoom": 11,
+     "caption": "Followers of St Bernard settled in this Cistercian monastery. Religious orders spread the vine here from the 12th century.",
+     "cite": [
+      "lisboa-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "beat": "weather",
+   "title": "Between the west wind and the dry summer",
+   "paras": [
+    "The climate can be seen as a transition between the zone of humid, constant west winds and dry summers. A coastal strip faces the Atlantic.",
+    "Alluvial land contrasts with slopes full of secondary limestone. The flat river meadows (várzeas) face the mountain masses on the eastern border."
+   ],
+   "cite": [
+    "lisboa-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Serra de Montejunto",
+     "point": [
+      -9.08,
+      39.17
+     ],
+     "zoom": 10,
+     "caption": "Montejunto is one of the mountain ranges whose slopes give rise to the region's small streams.",
+     "cite": [
+      "lisboa-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Every age of rock",
+   "paras": [
+    "The region is markedly complex. Its geology has every age. It rests on secondary clay-limestone and clay-sand formations. They add to the complexity and aroma of its still and fortified wines.",
+    "Vines must grow on one of ten soil types. Brown or red limestone soils form on marl, soft limestone or fine sandstone. Brown or red stony soils form on layered sandstones. Mediterranean soils form on sandstone, clay or hard limestone. Sandy soils count too, as podzols and regosols. Modern alluvium and salty alluvium also qualify. Red-brown clays from basalt complete the list."
+   ],
+   "cite": [
+    "lisboa-doc:p3",
+    "lisboa-doc:p6",
+    "lisboa-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Serra dos Candeeiros",
+     "point": [
+      -8.9,
+      39.45
+     ],
+     "zoom": 10,
+     "caption": "Candeeiros is one of the mountain ranges whose slopes give rise to the region's small streams.",
+     "cite": [
+      "lisboa-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "range",
+   "beat": "rules",
+   "title": "A wide range in the glass",
+   "paras": [
+    "The rules list 91 main grapes. White Arinto and Fernão Pires are among them. So are red Touriga Nacional and Castelão.",
+    "Still wine comes white, red or rosé. The region also makes sparkling wine and fortified wine (vinho licoroso). The rules allow up to 200 hl/ha.",
+    "Lisboa Leve is the region's own light style. It has low alcohol, at most 10% vol, with a fruity or floral smell and a slightly tart taste. Other still and sparkling wines have at least 11% vol.",
+    "Rosé is made by \"bica aberta\" (juice run off the skins at once) or with a light skin contact. Sparkling wine is made only by the classic method. Fortified wine reaches 15 to 22% vol, from must of at least 12% vol natural strength."
+   ],
+   "cite": [
+    "lisboa-doc:p1",
+    "lisboa-doc:p2",
+    "lisboa-doc:p3",
+    "lisboa-doc:p4",
+    "lisboa-doc:p5",
+    "lisboa-doc:p6",
+    "lisboa-doc:p7"
+   ]
+  }
+ ]
+}

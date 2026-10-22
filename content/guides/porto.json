@@ -1,0 +1,166 @@
+{
+ "id": "porto",
+ "title": "Why Porto tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Mountains shield the Douro from wet western winds, and its winters are very cold while its summers are very hot and dry. Wine spirit stops the fermentation to keep sugar in the wine, and lifts it to 19 to 22% alcohol.",
+  "cite": [
+   "porto-doc:p11",
+   "porto-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A river basin ringed by mountains",
+   "paras": [
+    "The region covers 250,000 hectares in the north-east of Portugal, in the basin of the Douro river. Mountains surround it and give it its own climate and conditions.",
+    "It splits into three naturally distinct sub-regions: Baixo Corgo, Cima Corgo and Douro Superior.",
+    "Port must be made inside the demarcated Douro region. It must also be bottled there or in the warehouses of Vila Nova de Gaia, and it may not leave in bulk."
+   ],
+   "cite": [
+    "porto-doc:p5",
+    "porto-doc:p7",
+    "porto-doc:p11",
+    "porto-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "The Douro region",
+     "place": "douro",
+     "caption": "A 250,000-hectare basin in north-east Portugal, ringed by mountains.",
+     "cite": [
+      "porto-doc:p11"
+     ]
+    },
+    {
+     "label": "Vila Nova de Gaia",
+     "point": [
+      -8.61,
+      41.13
+     ],
+     "zoom": 11,
+     "caption": "The warehouses here are the only place outside the Douro where Port may be bottled.",
+     "cite": [
+      "porto-doc:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A barrier to the wet west winds",
+   "paras": [
+    "The Marão and Montemuro mountains act as a barrier to the wet winds from the west. Winters are very cold and summers very hot and dry, with big swings in temperature over the year.",
+    "Rain is highest in December and January, and lowest in July or August. Mean annual temperatures run from 11.8 to 16.5 °C. The highest of these follow the Douro and the valleys of its tributaries, especially those on the right bank.",
+    "The two banks of the river differ too. The north bank gets dry winds from the south. The south bank faces colder, wetter winds from the north, and gets less sun."
+   ],
+   "cite": [
+    "porto-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Serra do Marão",
+     "point": [
+      -7.88,
+      41.25
+     ],
+     "zoom": 9.5,
+     "caption": "The Marão and Montemuro mountains block the wet winds from the west.",
+     "cite": [
+      "porto-doc:p12"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Stony soils, terraced slopes",
+   "paras": [
+    "Vines grow in stony soils that have no other use. For most farmers here the vine is the main work, in particularly harsh weather.",
+    "Where the slopes are steepest, the land is shaped into terraces (socalcos). In most cases the vine is the only crop. Almond and olive trees line the edges of the plots.",
+    "Soil, stones and slope all play a part. Altitude, sunlight and climate do too. Together they let the region make Port in its many styles."
+   ],
+   "cite": [
+    "porto-doc:p11",
+    "porto-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Douro Superior",
+     "point": [
+      -7.1,
+      41.1
+     ],
+     "zoom": 9,
+     "caption": "One of the three naturally distinct sub-regions, reaching east to Vila Nova de Foz Côa.",
+     "cite": [
+      "porto-doc:p7",
+      "porto-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fortified",
+   "beat": "rules",
+   "title": "Stopped for sweetness",
+   "paras": [
+    "Port is a vinho generoso in the category of liqueur wine (vinho licoroso): a fortified wine. Grapes are destemmed, wholly or partly, and then crushed. This was traditionally done in stone troughs called lagares. Today most wine comes from vinification centres where crushing and maceration are fully mechanised.",
+    "Fermentation runs until the unfermented sugar gives the sweetness wanted. Then wine spirit (aguardente) is added. It stops the fermentation and raises the alcohol. The wine must keep more than 17.5 g/L of sugar from the grapes.",
+    "The result has 19 to 22% alcohol. Only white Branco Leve Seco may go as low as 16.5%.",
+    "Sweetness comes in five steps. Extra-Seco (extra dry) has 17.5 to 40 g/L of sugar. Seco (dry) has 40 to 65. Meio Seco (medium dry) has 65 to 85. Doce (sweet) has 85 to 130. Muito doce (very sweet), also called Lágrima, has more than 130.",
+    "The list of authorised grapes is very long and mixes red and white. Touriga Nacional and Touriga Franca are on it. So are Tinta Barroca and Tinto Cão, and whites such as Gouveio and Viosinho. The region has kept its native grapes and their variety. The grapes shape the wine's quality, above all its aroma.",
+    "Port comes in red, white and rosé. Reds run from very deep (retinto) to light tawny. Rosés and whites run from pale through straw to golden. Rosé is young and fresh in aroma and flavour, soft with a fruity finish. White Port has floral and fruity aromas and comes in different degrees of sweetness.",
+    "Vintage is exceptional wine from a single harvest. When approved it is deep in colour and full-bodied, with a very fine aroma and taste. Tawny is a blend aged in wood or other vessels, tawny in colour. It is soft, with medium persistence. Ruby is a blend of young wines, fruity, red and with some body. Colheita is a single-harvest wine, red or white, aged in wood for at least 7 years after the harvest."
+   ],
+   "cite": [
+    "porto-doc:p3",
+    "porto-doc:p4",
+    "porto-doc:p6",
+    "porto-doc:p8",
+    "porto-doc:p9",
+    "porto-doc:p10",
+    "porto-doc:p11",
+    "porto-doc:p12"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Late Bottled Vintage",
+    "text": "A wine from a single harvest, red and full-bodied when approved, with a fine aroma and taste."
+   },
+   {
+    "term": "Crusted",
+    "text": "A blend of wines from several years that forms a deposit (crosta) on the bottle wall, where part of its ageing takes place."
+   },
+   {
+    "term": "Reserva",
+    "text": "A blend of wines of varying age, with a complex aroma and flavour."
+   },
+   {
+    "term": "Idade",
+    "text": "A blend of wines from several years that aged in wood."
+   },
+   {
+    "term": "Branco Leve Seco",
+    "text": "A white Port with a minimum of 16.5% alcohol."
+   },
+   {
+    "term": "Lágrima",
+    "text": "The sweetest level, above 130 g/L of sugar."
+   }
+  ],
+  "cite": [
+   "porto-doc:p3",
+   "porto-doc:p4",
+   "porto-doc:p11",
+   "porto-doc:p12"
+  ]
+ }
+}

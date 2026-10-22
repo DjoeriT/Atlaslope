@@ -79,7 +79,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     ...(restored ? { center: [restored.lng, restored.lat] as [number, number], zoom: restored.zoom, bearing: restored.bearing } : { bounds: countryConfig(undefined).bounds, fitBoundsOptions: { padding: 40 } }),
     pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
-    attributionControl: { compact: true },
+    // Portugal's outlines are built from DGT's CAOP 2025 (CC BY 4.0 asks for the credit; PR #214 review, 22 Oct 2026)
+    attributionControl: { compact: true, customAttribution: 'Portugal outlines: DGT, CAOP 2025' },
     antialias: true,
   });
   // The credits start folded to their small "i" on every screen (site visual review, 18 Oct 2026): MapLibre only folds them on narrow

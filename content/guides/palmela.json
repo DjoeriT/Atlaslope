@@ -1,0 +1,118 @@
+{
+ "id": "palmela",
+ "title": "Why Palmela tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Palmela's soils are mostly light and sandy, on a peninsula hugged by the Tejo and Sado estuaries. Even its fortified wine keeps a fresh taste.",
+  "cite": [
+   "palmela-doc:p7",
+   "palmela-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "peninsula",
+   "beat": "place",
+   "title": "A peninsula between two estuaries",
+   "paras": [
+    "The Setúbal Peninsula lies south of Lisbon, hugged by the estuaries of the Tejo and the Sado. Palmela takes in its own municipality with its neighbours Montijo and Setúbal. It adds the parish of Castelo in Sesimbra.",
+    "Vine growing here has a long past. Grape pips found in Almada, on the Tejo estuary, date from the 8th century BC. More than a thousand wild vines (Vitis sylvestris) have been found in the Sado valley.",
+    "From the late 1800s, José Maria dos Santos became known as the owner of the biggest vineyard in the world, at Poceirão: 2,400 hectares and 6 million vines. It made 20,000 to 30,000 pipas (casks) of wine a year."
+   ],
+   "cite": [
+    "palmela-doc:p5",
+    "palmela-doc:p7",
+    "palmela-doc:p8",
+    "palmela-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Palmela castle",
+     "point": [
+      -8.9,
+      38.568
+     ],
+     "zoom": 11,
+     "caption": "In 1443 the seat of the Order of Santiago moved into Palmela's castle. A first charter in 1185 already mentioned the vine and wine of the area.",
+     "cite": [
+      "palmela-doc:p8",
+      "palmela-doc:p9"
+     ]
+    },
+    {
+     "label": "The Tejo estuary at Almada",
+     "point": [
+      -9.15,
+      38.68
+     ],
+     "zoom": 10,
+     "caption": "Grape pips from the 8th century BC were found in Almada, on the Tejo estuary.",
+     "cite": [
+      "palmela-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea-air",
+   "beat": "weather",
+   "title": "The sea and the Arrábida range",
+   "paras": [
+    "The climate can be counted as mixed, sub-tropical and Mediterranean or maritime. Rain is low and temperature swings are moderate.",
+    "It is shaped by the nearby sea and by the Sado and Tejo basins. The relief of the Serra da Arrábida plays a part too. Several microclimates add to the mix."
+   ],
+   "cite": [
+    "palmela-doc:p7",
+    "palmela-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Serra da Arrábida",
+     "point": [
+      -8.97,
+      38.49
+     ],
+     "zoom": 10,
+     "caption": "The Arrábida range shapes the climate, along with the sea and the Sado and Tejo basins.",
+     "cite": [
+      "palmela-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sandy-ground",
+   "beat": "ground",
+   "title": "Mostly sand",
+   "paras": [
+    "Most soils are light in texture, meaning sandy. They are fairly varied, and short stretches show changes in texture with little or no aggregation.",
+    "Vineyards must be on the listed soil types, with an exposure suited to quality wine. These include young sandy soils (psammitic regosols). Brown and red limy soils formed on sandstone and clay are listed too."
+   ],
+   "cite": [
+    "palmela-doc:p7",
+    "palmela-doc:p8"
+   ]
+  },
+  {
+   "id": "five-wines",
+   "beat": "rules",
+   "title": "Castelão reds and Fernão-Pires whites",
+   "paras": [
+    "Reds must be at least 66.7% Castelão. With age they soften and grow finer.",
+    "Whites are made mostly from Fernão-Pires. Their fresh taste and well-structured acidity give them an identity of their own.",
+    "Rosés are made from red grapes, or red with white up to one third, in the «bica aberta» (open-run) way.",
+    "Palmela also makes semi-sparkling (frisante) and sparkling (espumante) wines. Both start from a Palmela base wine and get their bubbles from a second fermentation. Both need at least 10% alcohol. They are well balanced, with good length and a fresh taste.",
+    "Fortified licoroso wines start from Palmela must, and neutral wine alcohol or wine distillate is added as fermentation begins. They reach at least 16% alcohol. They are generally deep amber with golden glints, yet fresh in taste.",
+    "Many other grapes are allowed, among them Touriga Nacional and Arinto. Rosés, sparkling base wines and fortified wines may use any allowed grape, with no minimum share. Yields are capped at 120 hl per hectare."
+   ],
+   "cite": [
+    "palmela-doc:p2",
+    "palmela-doc:p3",
+    "palmela-doc:p5",
+    "palmela-doc:p6",
+    "palmela-doc:p7",
+    "palmela-doc:p8"
+   ]
+  }
+ ]
+}

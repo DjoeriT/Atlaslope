@@ -1,11 +1,13 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { BEATS, EXTRAS, guides, measuresOf, photosOf, sheetOf, sources } from '../../src/facts';
+import { BEATS, EXTRAS, loadAllGuides, measuresOf, photosOf, sheetOf, sources } from '../../src/facts';
 import type { Measures, Sheet } from '../../src/facts/types';
 import { guideFlyWarnings } from '../../src/facts/check';
 import { alikePlaces } from '../../src/pages/helpers';
 import { loadTree } from '../../src/tree';
+
+const guides = await loadAllGuides(); // guides load on demand in the app (decision #38)
 
 // Guide shape C (owner, 19 Oct 2026): chapters name their beat, and the optional fields beyond the beats are well formed when filled.
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));

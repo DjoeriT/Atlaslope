@@ -1,0 +1,184 @@
+{
+ "region": "pt-tejo",
+ "sheets": [
+  {
+   "id": "dotejo",
+   "why": {
+    "text": "Flat alluvial plains beside the Tagus, clay-limestone hills and sandy heath soils, under a moderate climate with about 2,800 hours of sun a year.",
+    "cite": [
+     "dotejo-doc:p9",
+     "dotejo-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Encruzado",
+     "Bonvedro",
+     "Boal Espinho",
+     "Boal Branco",
+     "Parreira Matias",
+     "Pinot Gris",
+     "Petit Verdot",
+     "Pinot Blanc",
+     "Sercial",
+     "Bical",
+     "Siria",
+     "Pinot Noir",
+     "Bastardo",
+     "Sémillon",
+     "Marquinhas",
+     "Malvasia Rei",
+     "Tamarez",
+     "Cabinda",
+     "Malvasia Fina",
+     "Ratinho",
+     "Syrah",
+     "Cabernet Franc",
+     "Ramisco",
+     "Talia",
+     "Seara Nova",
+     "Tannat",
+     "Cabernet-Sauvignon",
+     "Malvasia",
+     "Camarate",
+     "Arinto",
+     "Merlot",
+     "Rabo de Ovelha",
+     "Trincadeira",
+     "Carignan",
+     "Alvarinho",
+     "Cerceal Branco",
+     "Fernao Pires",
+     "Sauvignon",
+     "Cercial",
+     "Castelao",
+     "Antao Vaz",
+     "Trincadeira das Pratas",
+     "Aragonez",
+     "Riesling",
+     "Amostrinha",
+     "Fernao Pires Rosado",
+     "Trincadeira Branca",
+     "Galego Dourado",
+     "Chenin",
+     "Grand Noir",
+     "Alicante Branco",
+     "Grossa",
+     "Côdega do Larinho",
+     "Grenache",
+     "Tintinha",
+     "Alfrocheiro",
+     "Caladoc",
+     "Loureiro",
+     "Tinto Cao",
+     "Tinta Pomar",
+     "Cinsaut",
+     "Alvadurao",
+     "Gouveio",
+     "Jampal",
+     "Gewürztraminer",
+     "Touriga Franca",
+     "Touriga Nacional",
+     "Valbom",
+     "Tinta Carvalha",
+     "Tinta Caiada",
+     "Rufete",
+     "Chardonnay",
+     "Almafra",
+     "Tinta Barroca",
+     "Jaen",
+     "Tinta Miuda",
+     "Negra Mole",
+     "Sousao",
+     "Baga",
+     "Diagalves",
+     "Molar",
+     "Monvedro",
+     "Moreto",
+     "Preto Martinho",
+     "Preto Cardana",
+     "Moscatel Galego Branco",
+     "Moscatel Graudo"
+    ],
+    "othersCite": [
+     "dotejo-doc:p6",
+     "dotejo-doc:p7",
+     "dotejo-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified"
+    ],
+    "text": "Red, white and rosé wines, plus quality sparkling wine and fortified (licoroso) wine.",
+    "cite": [
+     "dotejo-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Moderate climate; mean temperatures 15.5 to 16.5 °C, about 2,800 sun hours a year and 750 mm of rain a year. It is a little wetter around Tomar in the north and drier around Coruche in the south.",
+    "cite": [
+     "dotejo-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Three zones: the Campo has fertile alluvial soils beside the Tagus, mostly limy. The Bairro has clay-limestone soils in gentle hills. The Charneca, south of the river, has sandy, moderately fertile soils.",
+    "cite": [
+     "dotejo-doc:p9",
+     "dotejo-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Cartaxo's Campo is flat at 6 to 10 m; its Bairro hills reach 200 m in places.",
+    "cite": [
+     "dotejo-doc:p9",
+     "dotejo-doc:p10"
+    ]
+   },
+   "tastes": {
+    "text": "Whites run pale lemon to gold, reds ruby to deep red turning garnet and brownish, rosés pink to salmon. All show young fruity and/or floral aromas, gaining more complex tertiary aromas with age.",
+    "cite": [
+     "dotejo-doc:p2",
+     "dotejo-doc:p3",
+     "dotejo-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Reserva",
+      "text": "Traditional term; wines with a quality term must score at least 65."
+     },
+     {
+      "name": "Garrafeira",
+      "text": "Traditional term; quality-term wines need outstanding structure and balance."
+     },
+     {
+      "name": "Espumante",
+      "text": "Quality sparkling wine, at least 10.5% alcohol; bottle fermentation, or tank with nine months' ageing."
+     },
+     {
+      "name": "Vinho licoroso",
+      "text": "Fortified wine; neutral wine spirit may be added to fermenting must; at least 17.5%."
+     }
+    ],
+    "cite": [
+     "dotejo-doc:p2",
+     "dotejo-doc:p3",
+     "dotejo-doc:p4",
+     "dotejo-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

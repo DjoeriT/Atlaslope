@@ -1,0 +1,108 @@
+{
+ "id": "beira-interior",
+ "title": "Why Beira Interior tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The vineyards sit at an average of 300 to 700 m, and that altitude is mainly what gives the reds their great freshness. Whites come out very aromatic and fresh, and reds carry spice and red fruit.",
+  "cite": [
+   "beira-interior-doc:p2",
+   "beira-interior-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "sub-regions",
+   "beat": "place",
+   "title": "Three sub-regions with Roman roots",
+   "paras": [
+    "The wine area is made up of three sub-regions. They are Castelo Rodrigo, Cova da Beira and Pinhel.",
+    "Wine here goes back to the Romans. Several presses (lagares) cut into granite rock, where wine was made at the time, are the proof. At the turn of the 12th century the Cistercian monks gave the vineyards a big push. Measures were taken to protect the wines of the area, for their quality and their social and economic weight."
+   ],
+   "cite": [
+    "beira-interior-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Cova da Beira",
+     "point": [
+      -7.5,
+      40.28
+     ],
+     "zoom": 9,
+     "caption": "Cova da Beira is one of the three sub-regions of the Beira Interior wine area.",
+     "cite": [
+      "beira-interior-doc:p7"
+     ]
+    },
+    {
+     "label": "Castelo Rodrigo",
+     "point": [
+      -6.95,
+      40.88
+     ],
+     "zoom": 10,
+     "caption": "Castelo Rodrigo is another of the three sub-regions.",
+     "cite": [
+      "beira-interior-doc:p7"
+     ]
+    },
+    {
+     "label": "Pinhel",
+     "point": [
+      -7.064,
+      40.774
+     ],
+     "zoom": 10,
+     "caption": "Pinhel is the third sub-region.",
+     "cite": [
+      "beira-interior-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dry-summer",
+   "beat": "weather",
+   "title": "Rain in winter and spring, almost none in summer",
+   "paras": [
+    "The climate is Mediterranean. Rain averages about 800 to 1000 mm a year, and it is spread unevenly through the year.",
+    "Most of it falls in winter and spring, and that usually leaves too much water in the soil at that time. In summer it hardly rains. July and August are the driest months, with on average under 10 mm of rain."
+   ],
+   "cite": [
+    "beira-interior-doc:p7"
+   ]
+  },
+  {
+   "id": "old-rock",
+   "beat": "ground",
+   "title": "Soils on schist and granite",
+   "paras": [
+    "Vineyards must stand on three kinds of soil. One is brown or red Mediterranean soil from metamorphosed schist and gneiss.",
+    "Another is brown Mediterranean soil from schist or Precambrian greywacke. The third is a stony, non-humic soil from granite and migmatite.",
+    "Together with the climate, these soils are fundamental to the wines. They help give whites of great aromatic exuberance and reds that are more complex."
+   ],
+   "cite": [
+    "beira-interior-doc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Reds, whites, rosados and sparkling",
+   "paras": [
+    "Forty-one grape varieties are allowed, both white and red. They range from Encruzado and Bical to Touriga Nacional and Baga, and none is named as a main grape.",
+    "Reds come only from red grapes, with intense skin contact. Palhete is a red from partial skin contact, or from red and white grapes together, with white grapes at no more than 15% of the total. Clarete is made the same way with white grapes up to 45%, and it has at most 11.5% alcohol.",
+    "Whites are made only from white grapes, pressed straight off the skins (bica aberta) or with very light skin contact. Rosados follow the same methods. They come from red grapes alone or from a mix in which white grapes are no more than 30%.",
+    "Most wines need no ageing and can be sold once certified. Reds and whites with the mention Selecção need more alcohol and time. Red needs at least 13% alcohol and 12 months of ageing. White needs at least 12% and six months.",
+    "Sparkling wine is made too. It needs at least 11% alcohol and at least nine months at the producer after bottling. It shows much freshness and great aromatic exuberance.",
+    "Yields for all the wines are capped at 55 hl per hectare."
+   ],
+   "cite": [
+    "beira-interior-doc:p2",
+    "beira-interior-doc:p4",
+    "beira-interior-doc:p5",
+    "beira-interior-doc:p6"
+   ]
+  }
+ ]
+}
