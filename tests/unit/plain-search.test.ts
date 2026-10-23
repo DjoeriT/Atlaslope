@@ -35,7 +35,7 @@ describe('plain-page search', () => {
     }
   });
   it('ships names, grapes and ids only, a small index', () => {
-    expect(JSON.stringify(index).length).toBeLessThan(62_000);
+    expect(JSON.stringify(index).length).toBeLessThan(60_000);
     for (const e of index) expect(Object.keys(e).every((k) => ['hit', 'names', 'grapes', 'rank', 'order'].includes(k))).toBe(true);
   });
 });
