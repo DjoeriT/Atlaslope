@@ -1,19 +1,7 @@
 {
- "aglianico-del-taburno-1": {
-  "focus": "50% 50%",
-  "file": "c6176b73ca40"
- },
- "aglianico-del-vulture-1": {
-  "focus": "50% 50%",
-  "file": "22eb656ac7cc"
- },
  "aglianico-del-vulture-2": {
   "focus": "50% 50%",
   "file": "827de1173104"
- },
- "alta-langa-1": {
-  "focus": "50% 50%",
-  "file": "7cd720fad9c7"
  },
  "alta-langa-2": {
   "focus": "50% 50%",
@@ -31,10 +19,6 @@
   "focus": "50% 50%",
   "file": "cc86757838b4"
  },
- "alto-adige-1": {
-  "focus": "50% 50%",
-  "file": "3c3876d0c1f7"
- },
  "alto-adige-2": {
   "focus": "50% 50%",
   "file": "87761ab06491"
@@ -50,10 +34,6 @@
  "alto-adige-5": {
   "focus": "50% 50%",
   "file": "bede0aa30d4a"
- },
- "asti-1": {
-  "focus": "80% 50%",
-  "file": "fa6be5778404"
  },
  "asti-2": {
   "focus": "50% 50%",
@@ -71,17 +51,9 @@
   "focus": "50% 50%",
   "file": "7206b0b3de21"
  },
- "barbaresco-1": {
-  "focus": "50% 75%",
-  "file": "d3ff4edf4d16"
- },
  "barbaresco-2": {
   "focus": "50% 85%",
   "file": "96ce7fe37744"
- },
- "barbera-d-asti-1": {
-  "focus": "50% 50%",
-  "file": "5487dae8c4c7"
  },
  "barbera-d-asti-2": {
   "focus": "50% 50%",
@@ -99,10 +71,6 @@
   "focus": "50% 70%",
   "file": "697a6ec4d6d1"
  },
- "barbera-del-monferrato-superiore-1": {
-  "focus": "50% 50%",
-  "file": "5487dae8c4c7"
- },
  "barbera-del-monferrato-superiore-2": {
   "focus": "50% 100%",
   "file": "34313f38c45e"
@@ -119,17 +87,9 @@
   "focus": "50% 50%",
   "file": "433503b07fdd"
  },
- "bolgheri-1": {
-  "focus": "50% 50%",
-  "file": "0ff5df3e8e0d"
- },
  "bolgheri-2": {
   "focus": "50% 50%",
   "file": "900426850cd6"
- },
- "brachetto-dacqui-1": {
-  "focus": "50% 50%",
-  "file": "bdc1d725b9f9"
  },
  "brachetto-dacqui-2": {
   "focus": "50% 50%",
@@ -138,10 +98,6 @@
  "brachetto-dacqui-3": {
   "focus": "50% 50%",
   "file": "ec47af082d90"
- },
- "brunello-di-montalcino-1": {
-  "focus": "50% 50%",
-  "file": "331b1133f388"
  },
  "brunello-di-montalcino-2": {
   "focus": "50% 50%",
@@ -159,10 +115,6 @@
   "focus": "50% 100%",
   "file": "2176ba895c9c"
  },
- "canelli-1": {
-  "focus": "50% 50%",
-  "file": "5487dae8c4c7"
- },
  "canelli-2": {
   "focus": "50% 50%",
   "file": "cc86757838b4"
@@ -171,25 +123,13 @@
   "focus": "50% 50%",
   "file": "433503b07fdd"
  },
- "carmignano-1": {
-  "focus": "50% 50%",
-  "file": "79f0a5990cb7"
- },
  "carmignano-2": {
   "focus": "50% 20%",
   "file": "93a635e0a8dd"
  },
- "casauria-1": {
-  "focus": "50% 50%",
-  "file": "f6241ffb1c8e"
- },
  "casauria-2": {
   "focus": "50% 50%",
   "file": "bd6853cec4fd"
- },
- "chianti-1": {
-  "focus": "50% 100%",
-  "file": "c61586978c1e"
  },
  "chianti-2": {
   "focus": "50% 50%",
@@ -207,25 +147,9 @@
   "focus": "50% 50%",
   "file": "64bcbf03eaf8"
  },
- "colli-di-conegliano-1": {
-  "focus": "50% 100%",
-  "file": "5dea0b136d51"
- },
- "colli-euganei-fior-darancio-1": {
-  "focus": "50% 50%",
-  "file": "400410c35104"
- },
- "colline-teramane-montepulciano-dabruzzo-1": {
-  "focus": "50% 50%",
-  "file": "b99725a6459a"
- },
  "colline-teramane-montepulciano-dabruzzo-2": {
   "focus": "50% 100%",
   "file": "33fb60c5a1fb"
- },
- "collio-1": {
-  "focus": "50% 50%",
-  "file": "5822d55ed3ab"
  },
  "collio-2": {
   "focus": "50% 50%",
@@ -234,10 +158,6 @@
  "collio-3": {
   "focus": "50% 50%",
   "file": "3b636283a102"
- },
- "conegliano-valdobbiadene-1": {
-  "focus": "50% 50%",
-  "file": "b46b1c3cbe92"
  },
  "conegliano-valdobbiadene-2": {
   "focus": "50% 100%",
@@ -250,14 +170,6 @@
  "conegliano-valdobbiadene-4": {
   "focus": "50% 0%",
   "file": "c3dbb4fad9c7"
- },
- "conero-1": {
-  "focus": "50% 100%",
-  "file": "3fd7fe3ebd35"
- },
- "dolcetto-d-alba-1": {
-  "focus": "50% 50%",
-  "file": "81d27b93a9b3"
  },
  "dolcetto-d-alba-2": {
   "focus": "50% 50%",
@@ -275,17 +187,9 @@
   "focus": "50% 50%",
   "file": "db40a354f059"
  },
- "etna-1": {
-  "focus": "50% 50%",
-  "file": "97112708793e"
- },
  "etna-2": {
   "focus": "50% 50%",
   "file": "5768ab2021be"
- },
- "franciacorta-1": {
-  "focus": "40% 50%",
-  "file": "83ed37088841"
  },
  "franciacorta-2": {
   "focus": "50% 50%",
@@ -303,41 +207,13 @@
   "focus": "50% 50%",
   "file": "1e6255901e7f"
  },
- "friuli-grave-1": {
-  "focus": "50% 50%",
-  "file": "52b597b2bfe0"
- },
- "gattinara-1": {
-  "focus": "50% 100%",
-  "file": "f49fa16d2850"
- },
- "gavi-1": {
-  "focus": "50% 50%",
-  "file": "4f2eb0122e20"
- },
  "gavi-2": {
   "focus": "50% 100%",
   "file": "ffc56deff7a0"
  },
- "ghemme-1": {
-  "focus": "50% 50%",
-  "file": "241c1702ec24"
- },
- "greco-di-tufo-1": {
-  "focus": "50% 50%",
-  "file": "fe922ec20eac"
- },
- "montecucco-sangiovese-1": {
-  "focus": "50% 100%",
-  "file": "60a397586ef8"
- },
  "montecucco-sangiovese-2": {
   "focus": "50% 50%",
   "file": "8c186fde8d00"
- },
- "montepulciano-d-abruzzo-1": {
-  "focus": "50% 50%",
-  "file": "748f0215045d"
  },
  "montepulciano-d-abruzzo-2": {
   "focus": "50% 50%",
@@ -355,10 +231,6 @@
   "focus": "50% 50%",
   "file": "c97d0d6de1c6"
  },
- "nizza-1": {
-  "focus": "50% 50%",
-  "file": "5487dae8c4c7"
- },
  "nizza-2": {
   "focus": "50% 50%",
   "file": "433503b07fdd"
@@ -371,21 +243,9 @@
   "focus": "50% 50%",
   "file": "79331ccab1ac"
  },
- "offida-1": {
-  "focus": "50% 50%",
-  "file": "ebe1d8d5787c"
- },
  "offida-2": {
   "focus": "50% 50%",
   "file": "dbc0b087a7df"
- },
- "oltrepo-pavese-metodo-classico-1": {
-  "focus": "50% 50%",
-  "file": "13abf53c4335"
- },
- "orvieto-1": {
-  "focus": "50% 50%",
-  "file": "4b3665fb79eb"
  },
  "orvieto-2": {
   "focus": "50% 50%",
@@ -394,14 +254,6 @@
  "orvieto-3": {
   "focus": "0% 70%",
   "file": "10c4e756239d"
- },
- "piave-malanotte-1": {
-  "focus": "50% 100%",
-  "file": "5dea0b136d51"
- },
- "prosecco-1": {
-  "focus": "50% 50%",
-  "file": "bd23ed7982f3"
  },
  "prosecco-2": {
   "focus": "45% 100%",
@@ -419,10 +271,6 @@
   "focus": "50% 50%",
   "file": "b46b1c3cbe92"
  },
- "roero-1": {
-  "focus": "50% 50%",
-  "file": "71f816637d7d"
- },
  "roero-2": {
   "focus": "50% 50%",
   "file": "9a59ff0561b0"
@@ -439,10 +287,6 @@
   "focus": "50% 50%",
   "file": "ca4e5162aaf1"
  },
- "romagna-albana-1": {
-  "focus": "50% 50%",
-  "file": "72e3748b2b48"
- },
  "romagna-albana-2": {
   "focus": "50% 50%",
   "file": "3d6939837ece"
@@ -451,14 +295,6 @@
   "focus": "50% 50%",
   "file": "7fa222fbadfd"
  },
- "ruche-di-castagnole-monferrato-1": {
-  "focus": "50% 100%",
-  "file": "b5b1e3fbfb55"
- },
- "scanzo-1": {
-  "focus": "50% 100%",
-  "file": "1970bc60d02e"
- },
  "scanzo-2": {
   "focus": "50% 50%",
   "file": "211de1a8faea"
@@ -466,10 +302,6 @@
  "scanzo-3": {
   "focus": "50% 50%",
   "file": "547db7ff1c79"
- },
- "soave-1": {
-  "focus": "25% 100%",
-  "file": "da4fca363051"
  },
  "soave-2": {
   "focus": "50% 50%",
@@ -482,14 +314,6 @@
  "soave-4": {
   "focus": "70% 100%",
   "file": "8beafb0fd41a"
- },
- "suvereto-1": {
-  "focus": "50% 50%",
-  "file": "0a4c81335acb"
- },
- "trentino-1": {
-  "focus": "50% 50%",
-  "file": "fabb01547008"
  },
  "trentino-2": {
   "focus": "50% 50%",
@@ -507,14 +331,6 @@
   "focus": "50% 50%",
   "file": "490a77bdacbd"
  },
- "val-di-cornia-rosso-1": {
-  "focus": "50% 50%",
-  "file": "0a4c81335acb"
- },
- "valpolicella-1": {
-  "focus": "50% 50%",
-  "file": "11c1d025255f"
- },
  "valpolicella-2": {
   "focus": "50% 100%",
   "file": "8475eef5e1e9"
@@ -531,21 +347,9 @@
   "focus": "50% 50%",
   "file": "117e35f36141"
  },
- "valtellina-superiore-1": {
-  "focus": "50% 50%",
-  "file": "dfbbd5d174a2"
- },
- "verdicchio-dei-castelli-di-jesi-1": {
-  "focus": "50% 50%",
-  "file": "8ba4469cbca1"
- },
  "verdicchio-dei-castelli-di-jesi-2": {
   "focus": "50% 50%",
   "file": "4d41a896e535"
- },
- "vernaccia-di-san-gimignano-1": {
-  "focus": "50% 50%",
-  "file": "7fcf9d450e7e"
  },
  "vernaccia-di-san-gimignano-2": {
   "focus": "50% 50%",
@@ -562,14 +366,6 @@
  "vernaccia-di-san-gimignano-5": {
   "focus": "50% 100%",
   "file": "823218dface3"
- },
- "vernaccia-di-serrapetrona-1": {
-  "focus": "50% 50%",
-  "file": "2ef9f8fcf8b2"
- },
- "vino-nobile-di-montepulciano-1": {
-  "focus": "50% 50%",
-  "file": "778d628d4a30"
  },
  "vino-nobile-di-montepulciano-2": {
   "focus": "50% 50%",

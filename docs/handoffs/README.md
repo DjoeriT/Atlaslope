@@ -8,6 +8,7 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 - [2026-10-22-germany-plan](2026-10-22-germany-plan.md): Germany plan and decisions #71-#78 (all A): 13 Anbaugebiete, Mosel and Rheingau pilot after Italy, Lagen as zones
 - [2026-10-22-italy-prep](2026-10-22-italy-prep.md): Italy rulebook source (MASAF 7z), licences, WSET L3 table (30 places), Barolo and Chianti Classico outlines, Italian text test, ISPRA email draft (#149, 22 Oct 2026)
 - [2026-10-22-italy-outlines](2026-10-22-italy-outlines.md): 87 Italy first-wave outlines, decisions #79, #80.
+- [2026-10-23-italy-first-wave](2026-10-23-italy-first-wave.md): 87 Italy guides with photos (84.2M tokens); size check blocks merging.
 - [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
 - [2026-10-22-portugal-photos](2026-10-22-portugal-photos.md): 27 Commons photos shipped for Douro and Vinho Verde, crops parked until Portugal is on Guides, photos no longer hidden on guides without Study; mock round 2 of option C next (#149, 22 Oct 2026)
 - [2026-10-22-atlas-cover](2026-10-22-atlas-cover.md): Atlas cover card E1 (map tour and slopes loops, countries), #country=spain, video out of the 2 MB check; clip polish open (PR #202, 22 Oct 2026)
