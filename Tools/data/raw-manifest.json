@@ -425,6 +425,15 @@
    ],
    "bytes": 3096627,
    "sha256": "0ffc45ebac78ce7ee477872ddb37aa07bc435c419ac04f5f32c186ac1104373a"
+  },
+  {
+   "path": "countries/de/he/caps.xml",
+   "kind": "url",
+   "licence": "Hessen ALKIS (HVBG), open by law (§ 18 HVGG)",
+   "url": "https://www.gds.hessen.de/wfs2/aaa-suite/cgi-bin/alkis/vereinf/wfs?SERVICE=WFS&REQUEST=GetCapabilities",
+   "note": "Hessen ALKIS vereinfacht WFS capabilities (23 Oct 2026): holds the licence text (AccessConstraints, Fees)",
+   "bytes": 23409,
+   "sha256": "d4f888f653bc779428b2cc4dc5710a31c31206acade5b74557964ac260ed4a70"
   }
  ]
 }
