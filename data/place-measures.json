@@ -1,5 +1,5 @@
 {
- "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json). regions: the same measures over the union of a study region's appellation-level places (parent spain; zones excluded), for comparisons. See data/SOURCES.md.",
+ "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands). Portuguese places use Köppen polygons made by Tools/data/koppen_portugal.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain or portugal; zones excluded), for comparisons. See data/SOURCES.md.",
  "places": {
   "cava": {
    "altitude": {
@@ -2264,6 +2264,2087 @@
      "share": 0.06
     }
    ]
+  },
+  "chablis": {
+   "altitude": {
+    "p10": 160,
+    "median": 210,
+    "p90": 250,
+    "samples": 64
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "chablis-premier-cru": {
+   "altitude": {
+    "p10": 150,
+    "median": 190,
+    "p90": 220,
+    "samples": 37
+   },
+   "slope": {
+    "medianDeg": 6.9,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "chaume-de-talvat": {
+   "altitude": {
+    "p10": 270,
+    "median": 280,
+    "p90": 290,
+    "samples": 64
+   },
+   "slope": {
+    "medianDeg": 5.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cote-de-jouan": {
+   "altitude": {
+    "p10": 230,
+    "median": 250,
+    "p90": 280,
+    "samples": 231
+   },
+   "slope": {
+    "medianDeg": 9.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "fourchaume": {
+   "altitude": {
+    "p10": 130,
+    "median": 150,
+    "p90": 180,
+    "samples": 64
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "les-beauregards": {
+   "altitude": {
+    "p10": 250,
+    "median": 270,
+    "p90": 290,
+    "samples": 193
+   },
+   "slope": {
+    "medianDeg": 9.3,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "les-fourneaux": {
+   "altitude": {
+    "p10": 190,
+    "median": 210,
+    "p90": 230,
+    "samples": 85
+   },
+   "slope": {
+    "medianDeg": 10.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "mont-de-milieu": {
+   "altitude": {
+    "p10": 180,
+    "median": 200,
+    "p90": 230,
+    "samples": 242
+   },
+   "slope": {
+    "medianDeg": 7.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vaucoupin": {
+   "altitude": {
+    "p10": 180,
+    "median": 210,
+    "p90": 250,
+    "samples": 202
+   },
+   "slope": {
+    "medianDeg": 4.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vaugiraut": {
+   "altitude": {
+    "p10": 180,
+    "median": 190,
+    "p90": 200,
+    "samples": 212
+   },
+   "slope": {
+    "medianDeg": 4.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vaupulent": {
+   "altitude": {
+    "p10": 150,
+    "median": 190,
+    "p90": 200,
+    "samples": 156
+   },
+   "slope": {
+    "medianDeg": 9.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vosgros": {
+   "altitude": {
+    "p10": 190,
+    "median": 200,
+    "p90": 210,
+    "samples": 169
+   },
+   "slope": {
+    "medianDeg": 3.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "chablis-grand-cru": {
+   "altitude": {
+    "p10": 140,
+    "median": 160,
+    "p90": 200,
+    "samples": 143
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "blanchot": {
+   "altitude": {
+    "p10": 160,
+    "median": 170,
+    "p90": 200,
+    "samples": 130
+   },
+   "slope": {
+    "medianDeg": 13.1,
+    "steepShare": 0.08
+   },
+   "koppen": []
+  },
+  "bougros": {
+   "altitude": {
+    "p10": 130,
+    "median": 150,
+    "p90": 160,
+    "samples": 188
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "grenouilles": {
+   "altitude": {
+    "p10": 140,
+    "median": 150,
+    "p90": 160,
+    "samples": 229
+   },
+   "slope": {
+    "medianDeg": 6.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "les-clos": {
+   "altitude": {
+    "p10": 140,
+    "median": 160,
+    "p90": 200,
+    "samples": 234
+   },
+   "slope": {
+    "medianDeg": 9.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "preuses": {
+   "altitude": {
+    "p10": 150,
+    "median": 170,
+    "p90": 190,
+    "samples": 203
+   },
+   "slope": {
+    "medianDeg": 5.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "valmur": {
+   "altitude": {
+    "p10": 160,
+    "median": 180,
+    "p90": 200,
+    "samples": 256
+   },
+   "slope": {
+    "medianDeg": 8.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vaudesir": {
+   "altitude": {
+    "p10": 160,
+    "median": 180,
+    "p90": 190,
+    "samples": 240
+   },
+   "slope": {
+    "medianDeg": 8.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pauillac": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 30,
+    "samples": 168
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "bordeaux": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 90,
+    "samples": 2919
+   },
+   "slope": {
+    "medianDeg": 1.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "bordeaux-superieur": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 90,
+    "samples": 2919
+   },
+   "slope": {
+    "medianDeg": 1.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cotes-de-bordeaux": {
+   "altitude": {
+    "p10": 20,
+    "median": 50,
+    "p90": 90,
+    "samples": 440
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "entre-deux-mers": {
+   "altitude": {
+    "p10": 30,
+    "median": 70,
+    "p90": 100,
+    "samples": 778
+   },
+   "slope": {
+    "medianDeg": 2.1,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "medoc": {
+   "altitude": {
+    "p10": 10,
+    "median": 10,
+    "p90": 30,
+    "samples": 313
+   },
+   "slope": {
+    "medianDeg": 0.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "haut-medoc": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 30,
+    "samples": 196
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saint-estephe": {
+   "altitude": {
+    "p10": 10,
+    "median": 10,
+    "p90": 20,
+    "samples": 268
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "margaux": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 20,
+    "samples": 21
+   },
+   "slope": {
+    "medianDeg": 0.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saint-julien": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 20,
+    "samples": 100
+   },
+   "slope": {
+    "medianDeg": 0.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "graves": {
+   "altitude": {
+    "p10": 20,
+    "median": 40,
+    "p90": 60,
+    "samples": 180
+   },
+   "slope": {
+    "medianDeg": 1.1,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pessac-leognan": {
+   "altitude": {
+    "p10": 20,
+    "median": 40,
+    "p90": 50,
+    "samples": 48
+   },
+   "slope": {
+    "medianDeg": 1.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saint-emilion": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 70,
+    "samples": 73
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saint-emilion-grand-cru": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 70,
+    "samples": 73
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pomerol": {
+   "altitude": {
+    "p10": 20,
+    "median": 20,
+    "p90": 40,
+    "samples": 183
+   },
+   "slope": {
+    "medianDeg": 0.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "sauternes": {
+   "altitude": {
+    "p10": 10,
+    "median": 20,
+    "p90": 70,
+    "samples": 38
+   },
+   "slope": {
+    "medianDeg": 0.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "barsac": {
+   "altitude": {
+    "p10": 10,
+    "median": 10,
+    "p90": 20,
+    "samples": 217
+   },
+   "slope": {
+    "medianDeg": 0.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "bourgogne": {
+   "altitude": {
+    "p10": 220,
+    "median": 280,
+    "p90": 370,
+    "samples": 500
+   },
+   "slope": {
+    "medianDeg": 5.4,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "cote-de-nuits-villages": {
+   "altitude": {
+    "p10": 240,
+    "median": 280,
+    "p90": 320,
+    "samples": 14
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "gevrey-chambertin": {
+   "altitude": {
+    "p10": 250,
+    "median": 270,
+    "p90": 310,
+    "samples": 207
+   },
+   "slope": {
+    "medianDeg": 1.8,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "vougeot": {
+   "altitude": {
+    "p10": 240,
+    "median": 250,
+    "p90": 260,
+    "samples": 358
+   },
+   "slope": {
+    "medianDeg": 1.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vosne-romanee": {
+   "altitude": {
+    "p10": 240,
+    "median": 250,
+    "p90": 300,
+    "samples": 243
+   },
+   "slope": {
+    "medianDeg": 2.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "nuits-saint-georges": {
+   "altitude": {
+    "p10": 240,
+    "median": 250,
+    "p90": 290,
+    "samples": 111
+   },
+   "slope": {
+    "medianDeg": 4.9,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "cote-de-beaune-villages": {
+   "altitude": {
+    "p10": 230,
+    "median": 260,
+    "p90": 340,
+    "samples": 39
+   },
+   "slope": {
+    "medianDeg": 4.9,
+    "steepShare": 0.08
+   },
+   "koppen": []
+  },
+  "aloxe-corton": {
+   "altitude": {
+    "p10": 230,
+    "median": 250,
+    "p90": 320,
+    "samples": 233
+   },
+   "slope": {
+    "medianDeg": 4.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "beaune": {
+   "altitude": {
+    "p10": 220,
+    "median": 240,
+    "p90": 310,
+    "samples": 152
+   },
+   "slope": {
+    "medianDeg": 4.9,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pommard": {
+   "altitude": {
+    "p10": 240,
+    "median": 260,
+    "p90": 330,
+    "samples": 221
+   },
+   "slope": {
+    "medianDeg": 4.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "volnay": {
+   "altitude": {
+    "p10": 230,
+    "median": 250,
+    "p90": 330,
+    "samples": 242
+   },
+   "slope": {
+    "medianDeg": 4.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "meursault": {
+   "altitude": {
+    "p10": 230,
+    "median": 250,
+    "p90": 320,
+    "samples": 180
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "puligny-montrachet": {
+   "altitude": {
+    "p10": 230,
+    "median": 240,
+    "p90": 340,
+    "samples": 239
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "chassagne-montrachet": {
+   "altitude": {
+    "p10": 220,
+    "median": 240,
+    "p90": 290,
+    "samples": 206
+   },
+   "slope": {
+    "medianDeg": 2.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "rully": {
+   "altitude": {
+    "p10": 230,
+    "median": 260,
+    "p90": 350,
+    "samples": 161
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "mercurey": {
+   "altitude": {
+    "p10": 230,
+    "median": 270,
+    "p90": 320,
+    "samples": 194
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "givry": {
+   "altitude": {
+    "p10": 230,
+    "median": 250,
+    "p90": 330,
+    "samples": 144
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "montagny": {
+   "altitude": {
+    "p10": 260,
+    "median": 300,
+    "p90": 340,
+    "samples": 234
+   },
+   "slope": {
+    "medianDeg": 6.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "macon": {
+   "altitude": {
+    "p10": 220,
+    "median": 280,
+    "p90": 360,
+    "samples": 234
+   },
+   "slope": {
+    "medianDeg": 5.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pouilly-fuisse": {
+   "altitude": {
+    "p10": 240,
+    "median": 290,
+    "p90": 370,
+    "samples": 120
+   },
+   "slope": {
+    "medianDeg": 7.2,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "saint-veran": {
+   "altitude": {
+    "p10": 220,
+    "median": 260,
+    "p90": 340,
+    "samples": 90
+   },
+   "slope": {
+    "medianDeg": 4.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cremant-de-bourgogne": {
+   "altitude": {
+    "p10": 210,
+    "median": 280,
+    "p90": 420,
+    "samples": 1277
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "muscadet": {
+   "altitude": {
+    "p10": 10,
+    "median": 40,
+    "p90": 70,
+    "samples": 269
+   },
+   "slope": {
+    "medianDeg": 1.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "muscadet-sevre-et-maine": {
+   "altitude": {
+    "p10": 20,
+    "median": 40,
+    "p90": 70,
+    "samples": 175
+   },
+   "slope": {
+    "medianDeg": 1.3,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "anjou": {
+   "altitude": {
+    "p10": 40,
+    "median": 70,
+    "p90": 90,
+    "samples": 477
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "coteaux-du-layon": {
+   "altitude": {
+    "p10": 40,
+    "median": 70,
+    "p90": 90,
+    "samples": 89
+   },
+   "slope": {
+    "medianDeg": 2.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "savennieres": {
+   "altitude": {
+    "p10": 30,
+    "median": 50,
+    "p90": 70,
+    "samples": 148
+   },
+   "slope": {
+    "medianDeg": 2.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saumur": {
+   "altitude": {
+    "p10": 50,
+    "median": 70,
+    "p90": 100,
+    "samples": 226
+   },
+   "slope": {
+    "medianDeg": 1.3,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "saumur-champigny": {
+   "altitude": {
+    "p10": 40,
+    "median": 60,
+    "p90": 80,
+    "samples": 27
+   },
+   "slope": {
+    "medianDeg": 1.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "vouvray": {
+   "altitude": {
+    "p10": 90,
+    "median": 100,
+    "p90": 110,
+    "samples": 41
+   },
+   "slope": {
+    "medianDeg": 1.8,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "touraine": {
+   "altitude": {
+    "p10": 40,
+    "median": 90,
+    "p90": 120,
+    "samples": 507
+   },
+   "slope": {
+    "medianDeg": 1.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "bourgueil": {
+   "altitude": {
+    "p10": 40,
+    "median": 50,
+    "p90": 80,
+    "samples": 40
+   },
+   "slope": {
+    "medianDeg": 1.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "chinon": {
+   "altitude": {
+    "p10": 30,
+    "median": 50,
+    "p90": 90,
+    "samples": 83
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "sancerre": {
+   "altitude": {
+    "p10": 190,
+    "median": 250,
+    "p90": 300,
+    "samples": 47
+   },
+   "slope": {
+    "medianDeg": 6.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "pouilly-fume": {
+   "altitude": {
+    "p10": 170,
+    "median": 190,
+    "p90": 230,
+    "samples": 26
+   },
+   "slope": {
+    "medianDeg": 2.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "menetou-salon": {
+   "altitude": {
+    "p10": 210,
+    "median": 230,
+    "p90": 260,
+    "samples": 37
+   },
+   "slope": {
+    "medianDeg": 3.9,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "rose-danjou": {
+   "altitude": {
+    "p10": 40,
+    "median": 70,
+    "p90": 90,
+    "samples": 477
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cabernet-danjou": {
+   "altitude": {
+    "p10": 40,
+    "median": 70,
+    "p90": 90,
+    "samples": 477
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "rose-de-loire": {
+   "altitude": {
+    "p10": 40,
+    "median": 80,
+    "p90": 110,
+    "samples": 1004
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cremant-de-loire": {
+   "altitude": {
+    "p10": 40,
+    "median": 80,
+    "p90": 110,
+    "samples": 1020
+   },
+   "slope": {
+    "medianDeg": 1.5,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cotes-du-rhone": {
+   "altitude": {
+    "p10": 60,
+    "median": 150,
+    "p90": 330,
+    "samples": 1460
+   },
+   "slope": {
+    "medianDeg": 3.3,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "cotes-du-rhone-villages": {
+   "altitude": {
+    "p10": 70,
+    "median": 160,
+    "p90": 360,
+    "samples": 477
+   },
+   "slope": {
+    "medianDeg": 2.9,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "cote-rotie": {
+   "altitude": {
+    "p10": 190,
+    "median": 280,
+    "p90": 330,
+    "samples": 79
+   },
+   "slope": {
+    "medianDeg": 11.4,
+    "steepShare": 0.22
+   },
+   "koppen": []
+  },
+  "condrieu": {
+   "altitude": {
+    "p10": 180,
+    "median": 220,
+    "p90": 280,
+    "samples": 33
+   },
+   "slope": {
+    "medianDeg": 13.2,
+    "steepShare": 0.24
+   },
+   "koppen": []
+  },
+  "saint-joseph": {
+   "altitude": {
+    "p10": 160,
+    "median": 260,
+    "p90": 320,
+    "samples": 50
+   },
+   "slope": {
+    "medianDeg": 12.2,
+    "steepShare": 0.34
+   },
+   "koppen": []
+  },
+  "hermitage": {
+   "altitude": {
+    "p10": 130,
+    "median": 160,
+    "p90": 230,
+    "samples": 223
+   },
+   "slope": {
+    "medianDeg": 7.6,
+    "steepShare": 0.05
+   },
+   "koppen": []
+  },
+  "crozes-hermitage": {
+   "altitude": {
+    "p10": 130,
+    "median": 140,
+    "p90": 260,
+    "samples": 53
+   },
+   "slope": {
+    "medianDeg": 1.7,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "cornas": {
+   "altitude": {
+    "p10": 140,
+    "median": 320,
+    "p90": 420,
+    "samples": 263
+   },
+   "slope": {
+    "medianDeg": 9.7,
+    "steepShare": 0.07
+   },
+   "koppen": []
+  },
+  "chateauneuf-du-pape": {
+   "altitude": {
+    "p10": 30,
+    "median": 70,
+    "p90": 110,
+    "samples": 42
+   },
+   "slope": {
+    "medianDeg": 2.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "gigondas": {
+   "altitude": {
+    "p10": 150,
+    "median": 240,
+    "p90": 390,
+    "samples": 160
+   },
+   "slope": {
+    "medianDeg": 6.1,
+    "steepShare": 0.09
+   },
+   "koppen": []
+  },
+  "vacqueyras": {
+   "altitude": {
+    "p10": 70,
+    "median": 90,
+    "p90": 120,
+    "samples": 22
+   },
+   "slope": {
+    "medianDeg": 1.2,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "lirac": {
+   "altitude": {
+    "p10": 60,
+    "median": 90,
+    "p90": 140,
+    "samples": 117
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "tavel": {
+   "altitude": {
+    "p10": 70,
+    "median": 110,
+    "p90": 170,
+    "samples": 182
+   },
+   "slope": {
+    "medianDeg": 2.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "muscat-de-beaumes-de-venise": {
+   "altitude": {
+    "p10": 100,
+    "median": 160,
+    "p90": 270,
+    "samples": 226
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.09
+   },
+   "koppen": []
+  },
+  "bergerac": {
+   "altitude": {
+    "p10": 50,
+    "median": 100,
+    "p90": 140,
+    "samples": 507
+   },
+   "slope": {
+    "medianDeg": 2.4,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "monbazillac": {
+   "altitude": {
+    "p10": 50,
+    "median": 120,
+    "p90": 150,
+    "samples": 58
+   },
+   "slope": {
+    "medianDeg": 3.1,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cahors": {
+   "altitude": {
+    "p10": 100,
+    "median": 230,
+    "p90": 280,
+    "samples": 296
+   },
+   "slope": {
+    "medianDeg": 3.7,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "madiran": {
+   "altitude": {
+    "p10": 160,
+    "median": 200,
+    "p90": 250,
+    "samples": 100
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "jurancon": {
+   "altitude": {
+    "p10": 190,
+    "median": 270,
+    "p90": 330,
+    "samples": 121
+   },
+   "slope": {
+    "medianDeg": 6.2,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "beaujolais": {
+   "altitude": {
+    "p10": 220,
+    "median": 320,
+    "p90": 470,
+    "samples": 511
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "brouilly": {
+   "altitude": {
+    "p10": 220,
+    "median": 270,
+    "p90": 400,
+    "samples": 21
+   },
+   "slope": {
+    "medianDeg": 3.9,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "fleurie": {
+   "altitude": {
+    "p10": 250,
+    "median": 320,
+    "p90": 420,
+    "samples": 256
+   },
+   "slope": {
+    "medianDeg": 6.3,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "morgon": {
+   "altitude": {
+    "p10": 240,
+    "median": 300,
+    "p90": 400,
+    "samples": 256
+   },
+   "slope": {
+    "medianDeg": 3.3,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "moulin-a-vent": {
+   "altitude": {
+    "p10": 200,
+    "median": 240,
+    "p90": 350,
+    "samples": 214
+   },
+   "slope": {
+    "medianDeg": 3.3,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "alsace": {
+   "altitude": {
+    "p10": 190,
+    "median": 230,
+    "p90": 330,
+    "samples": 243
+   },
+   "slope": {
+    "medianDeg": 4.1,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "cremant-dalsace": {
+   "altitude": {
+    "p10": 190,
+    "median": 230,
+    "p90": 330,
+    "samples": 243
+   },
+   "slope": {
+    "medianDeg": 4.1,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "languedoc": {
+   "altitude": {
+    "p10": 40,
+    "median": 130,
+    "p90": 280,
+    "samples": 3457
+   },
+   "slope": {
+    "medianDeg": 3.4,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "minervois": {
+   "altitude": {
+    "p10": 70,
+    "median": 130,
+    "p90": 250,
+    "samples": 370
+   },
+   "slope": {
+    "medianDeg": 3.1,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "fitou": {
+   "altitude": {
+    "p10": 20,
+    "median": 150,
+    "p90": 240,
+    "samples": 108
+   },
+   "slope": {
+    "medianDeg": 4.3,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "corbieres": {
+   "altitude": {
+    "p10": 40,
+    "median": 120,
+    "p90": 270,
+    "samples": 770
+   },
+   "slope": {
+    "medianDeg": 3.9,
+    "steepShare": 0.02
+   },
+   "koppen": []
+  },
+  "picpoul-de-pinet": {
+   "altitude": {
+    "p10": 30,
+    "median": 50,
+    "p90": 70,
+    "samples": 33
+   },
+   "slope": {
+    "medianDeg": 1.7,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "cotes-du-roussillon": {
+   "altitude": {
+    "p10": 30,
+    "median": 130,
+    "p90": 330,
+    "samples": 846
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.03
+   },
+   "koppen": []
+  },
+  "cotes-du-roussillon-villages": {
+   "altitude": {
+    "p10": 40,
+    "median": 150,
+    "p90": 330,
+    "samples": 429
+   },
+   "slope": {
+    "medianDeg": 3.8,
+    "steepShare": 0.04
+   },
+   "koppen": []
+  },
+  "bandol": {
+   "altitude": {
+    "p10": 50,
+    "median": 120,
+    "p90": 260,
+    "samples": 106
+   },
+   "slope": {
+    "medianDeg": 4.9,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "cotes-de-provence": {
+   "altitude": {
+    "p10": 40,
+    "median": 160,
+    "p90": 310,
+    "samples": 804
+   },
+   "slope": {
+    "medianDeg": 3.2,
+    "steepShare": 0.01
+   },
+   "koppen": []
+  },
+  "champagne": {
+   "altitude": {
+    "p10": 80,
+    "median": 140,
+    "p90": 240,
+    "samples": 6008
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": []
+  },
+  "douro": {
+   "altitude": {
+    "p10": 200,
+    "median": 460,
+    "p90": 660,
+    "samples": 2619
+   },
+   "slope": {
+    "medianDeg": 9.7,
+    "steepShare": 0.22
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.43
+    }
+   ]
+  },
+  "vinho-verde": {
+   "altitude": {
+    "p10": 60,
+    "median": 290,
+    "p90": 780,
+    "samples": 5992
+   },
+   "slope": {
+    "medianDeg": 8.0,
+    "steepShare": 0.12
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "porto": {
+   "altitude": {
+    "p10": 200,
+    "median": 460,
+    "p90": 660,
+    "samples": 2619
+   },
+   "slope": {
+    "medianDeg": 9.7,
+    "steepShare": 0.22
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.43
+    }
+   ]
+  },
+  "tras-os-montes": {
+   "altitude": {
+    "p10": 350,
+    "median": 600,
+    "p90": 760,
+    "samples": 3541
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.51
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.49
+    }
+   ]
+  },
+  "tavora-varosa": {
+   "altitude": {
+    "p10": 510,
+    "median": 670,
+    "p90": 840,
+    "samples": 446
+   },
+   "slope": {
+    "medianDeg": 7.0,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.97
+    }
+   ]
+  },
+  "dao": {
+   "altitude": {
+    "p10": 220,
+    "median": 440,
+    "p90": 820,
+    "samples": 3778
+   },
+   "slope": {
+    "medianDeg": 5.7,
+    "steepShare": 0.1
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.57
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.43
+    }
+   ]
+  },
+  "bairrada": {
+   "altitude": {
+    "p10": 30,
+    "median": 70,
+    "p90": 140,
+    "samples": 1050
+   },
+   "slope": {
+    "medianDeg": 2.0,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.68
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.32
+    }
+   ]
+  },
+  "beira-interior": {
+   "altitude": {
+    "p10": 280,
+    "median": 490,
+    "p90": 760,
+    "samples": 5626
+   },
+   "slope": {
+    "medianDeg": 4.2,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.81
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.19
+    }
+   ]
+  },
+  "lafoes": {
+   "altitude": {
+    "p10": 270,
+    "median": 470,
+    "p90": 840,
+    "samples": 685
+   },
+   "slope": {
+    "medianDeg": 9.1,
+    "steepShare": 0.14
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.97
+    }
+   ]
+  },
+  "encostas-daire": {
+   "altitude": {
+    "p10": 70,
+    "median": 170,
+    "p90": 390,
+    "samples": 1806
+   },
+   "slope": {
+    "medianDeg": 4.1,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.68
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.32
+    }
+   ]
+  },
+  "lisboa": {
+   "altitude": {
+    "p10": 30,
+    "median": 110,
+    "p90": 270,
+    "samples": 5562
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.8
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.2
+    }
+   ]
+  },
+  "colares": {
+   "altitude": {
+    "p10": 60,
+    "median": 140,
+    "p90": 290,
+    "samples": 159
+   },
+   "slope": {
+    "medianDeg": 4.2,
+    "steepShare": 0.04
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "carcavelos": {
+   "altitude": {
+    "p10": 20,
+    "median": 80,
+    "p90": 140,
+    "samples": 114
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "bucelas": {
+   "altitude": {
+    "p10": 20,
+    "median": 150,
+    "p90": 260,
+    "samples": 73
+   },
+   "slope": {
+    "medianDeg": 5.5,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.71
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.29
+    }
+   ]
+  },
+  "torres-vedras": {
+   "altitude": {
+    "p10": 40,
+    "median": 90,
+    "p90": 220,
+    "samples": 570
+   },
+   "slope": {
+    "medianDeg": 4.4,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "alenquer": {
+   "altitude": {
+    "p10": 20,
+    "median": 120,
+    "p90": 230,
+    "samples": 307
+   },
+   "slope": {
+    "medianDeg": 4.2,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.54
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.46
+    }
+   ]
+  },
+  "obidos": {
+   "altitude": {
+    "p10": 40,
+    "median": 110,
+    "p90": 180,
+    "samples": 436
+   },
+   "slope": {
+    "medianDeg": 4.0,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "arruda": {
+   "altitude": {
+    "p10": 60,
+    "median": 200,
+    "p90": 310,
+    "samples": 159
+   },
+   "slope": {
+    "medianDeg": 5.9,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.68
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.32
+    }
+   ]
+  },
+  "dotejo": {
+   "altitude": {
+    "p10": 20,
+    "median": 90,
+    "p90": 240,
+    "samples": 5995
+   },
+   "slope": {
+    "medianDeg": 2.3,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.97
+    }
+   ]
+  },
+  "setubal": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 110,
+    "samples": 1183
+   },
+   "slope": {
+    "medianDeg": 1.1,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.85
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.15
+    }
+   ]
+  },
+  "palmela": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 110,
+    "samples": 1183
+   },
+   "slope": {
+    "medianDeg": 1.1,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.85
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.15
+    }
+   ]
+  },
+  "alentejo": {
+   "altitude": {
+    "p10": 150,
+    "median": 230,
+    "p90": 360,
+    "samples": 4970
+   },
+   "slope": {
+    "medianDeg": 1.8,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "lagos": {
+   "altitude": {
+    "p10": 30,
+    "median": 80,
+    "p90": 160,
+    "samples": 674
+   },
+   "slope": {
+    "medianDeg": 3.8,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.61
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.39
+    }
+   ]
+  },
+  "portimao": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 130,
+    "samples": 178
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "lagoa": {
+   "altitude": {
+    "p10": 30,
+    "median": 130,
+    "p90": 350,
+    "samples": 1242
+   },
+   "slope": {
+    "medianDeg": 3.7,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "tavira": {
+   "altitude": {
+    "p10": 0,
+    "median": 110,
+    "p90": 360,
+    "samples": 979
+   },
+   "slope": {
+    "medianDeg": 3.0,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "madeira": {
+   "altitude": {
+    "p10": 130,
+    "median": 640,
+    "p90": 1260,
+    "samples": 785
+   },
+   "slope": {
+    "medianDeg": 17.3,
+    "steepShare": 0.52
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.91
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.09
+    }
+   ]
+  },
+  "madeirense": {
+   "altitude": {
+    "p10": 130,
+    "median": 640,
+    "p90": 1260,
+    "samples": 785
+   },
+   "slope": {
+    "medianDeg": 17.3,
+    "steepShare": 0.52
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.91
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.09
+    }
+   ]
   }
  },
  "country": {
@@ -2303,6 +4384,30 @@
      "code": "Cfa",
      "name": "Temperate, no dry season, hot summer",
      "share": 0.06
+    }
+   ]
+  },
+  "portugal": {
+   "altitude": {
+    "p10": 50,
+    "median": 240,
+    "p90": 730,
+    "samples": 5983
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.05
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.61
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.39
     }
    ]
   }
@@ -2556,6 +4661,188 @@
      "code": "Csa",
      "name": "Temperate, dry summer, hot summer",
      "share": 0.45
+    }
+   ]
+  },
+  "pt-alentejo": {
+   "altitude": {
+    "p10": 150,
+    "median": 230,
+    "p90": 360,
+    "samples": 4970
+   },
+   "slope": {
+    "medianDeg": 1.8,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "pt-algarve": {
+   "altitude": {
+    "p10": 20,
+    "median": 100,
+    "p90": 310,
+    "samples": 3076
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.87
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.13
+    }
+   ]
+  },
+  "pt-centre": {
+   "altitude": {
+    "p10": 110,
+    "median": 420,
+    "p90": 730,
+    "samples": 6017
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.55
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.45
+    }
+   ]
+  },
+  "pt-lisboa": {
+   "altitude": {
+    "p10": 30,
+    "median": 110,
+    "p90": 270,
+    "samples": 5562
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.8
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.2
+    }
+   ]
+  },
+  "pt-madeira": {
+   "altitude": {
+    "p10": 130,
+    "median": 640,
+    "p90": 1260,
+    "samples": 785
+   },
+   "slope": {
+    "medianDeg": 17.3,
+    "steepShare": 0.52
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.91
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.09
+    }
+   ]
+  },
+  "pt-north": {
+   "altitude": {
+    "p10": 90,
+    "median": 430,
+    "p90": 760,
+    "samples": 5981
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.13
+   },
+   "koppen": [
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.77
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.23
+    }
+   ]
+  },
+  "pt-setubal": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 110,
+    "samples": 1183
+   },
+   "slope": {
+    "medianDeg": 1.1,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.85
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.15
+    }
+   ]
+  },
+  "pt-tejo": {
+   "altitude": {
+    "p10": 20,
+    "median": 90,
+    "p90": 240,
+    "samples": 5995
+   },
+   "slope": {
+    "medianDeg": 2.3,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.97
     }
    ]
   },

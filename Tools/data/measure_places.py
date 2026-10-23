@@ -15,10 +15,17 @@ with each other, not with a field survey.
 Climate: the share of the boundary's area in each Köppen-Geiger class (Beck et al. 2023, 1991-2020), largest first, classes under
 5% dropped.
 
-Comparison rows, measured the same way: "country.spain" (all of Spain's land: spain-mask.json's Spain polygons, i.e. the mainland, the
+Comparison rows, measured the same way: "country.spain" (all of Spain's land: spain-mask.json's "land" polygons (Spain only, not its "neighbours"), i.e. the mainland, the
 Balearics, the Canaries, Ceuta and Melilla; natural-earth-spain.geojson also holds neighbours' land, so it is not used) and "regions.<id>"
 (the union of the boundaries of the region's appellation-level places: parent "spain"; the Rioja zones, whose parent is another place,
 are left out because they lie inside the Rioja DOCa).
+
+Portugal (23 Oct 2026): the places with region pt-* are measured the same way, from their outlines in data/countries/pt/areas.geojson
+(the feature whose id is the place id) against the Portuguese Köppen polygons <RAW>/build/koppen-portugal.geojson (made by
+Tools/data/koppen_portugal.sh from the same Beck et al. 1 km raster; Tools/rawdir.py gives RAW). Spain's places keep koppen-spain.geojson,
+so no Spanish number moves. "country.portugal" is Portugal's land: the union of the CAOP 2025 municipios (mainland, 278) and the two
+Madeira islands (caop2025-ram-islands.geojson), both in <RAW>/countries/pt/; the Azores have no place and no climate data and are left out.
+"regions.pt-*" are the unions of the pt-* places whose parent is "portugal".
 
 Usage: python3 Tools/data/measure_places.py
 """
@@ -26,6 +33,8 @@ import io, json, math, sys, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
 from PIL import Image
 from shapely.geometry import Point, shape
 from shapely.ops import unary_union
@@ -60,8 +69,24 @@ def boundaries(places):
     return out
 
 
+def pt_boundaries(places):
+    """Outlines of the Portuguese places: the areas.geojson feature whose id is the place id."""
+    feats = {f["properties"]["id"]: shape(f["geometry"]) for f in json.loads((DATA / "countries/pt/areas.geojson").read_text())["features"]}
+    return {p["id"]: feats[p["id"]] for p in places if p["id"] in feats}
+
+
+def portugal_land():
+    """CAOP 2025 municipios (mainland) plus the Madeira islands. Lon/lat, like the rest."""
+    geoms = []
+    for name in ("caop2025-municipios.geojson", "caop2025-ram-islands.geojson"):
+        geoms += [shape(f["geometry"]) for f in json.loads((RAW / "countries/pt" / name).read_text())["features"]]
+    land = unary_union(geoms)
+    assert -20 < land.bounds[0] and land.bounds[2] < -5 and 30 < land.bounds[1] and land.bounds[3] < 43, land.bounds
+    return land
+
+
 def spain_land():
-    return unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("spain-mask.json")["spain"]])
+    return unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("spain-mask.json")["land"]])
 
 
 def tile_xy(lon, lat):
@@ -157,24 +182,32 @@ def r10(v):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     every = load("places.json")["places"]
-    places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones")]
+    is_pt = lambda p: p["region"].startswith("pt-")
+    places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones") and not is_pt(p)]
+    pt_places = [p for p in every if is_pt(p) and p["boundary"] == "added"]
     geoms = boundaries(places)
+    geoms.update(pt_boundaries(pt_places))
+    places = places + pt_places
     missing = [p["id"] for p in places if p["id"] not in geoms] + [p["id"] for p in every if p["quiz"] != "none" and p not in places]
     if missing:
         sys.exit(f"no boundary for {missing}")
     regions = {}
     for p in places:
-        if p["parent"] == "spain" and p["id"] in geoms:  # appellation level; zones have another place as parent
+        if p["parent"] in ("spain", "portugal") and p["id"] in geoms:  # appellation level; zones have another place as parent
             regions.setdefault(p["region"], []).append(geoms[p["id"]])
     targets = dict(geoms)
     targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
     targets["country:spain"] = spain_land()
+    targets["country:portugal"] = portugal_land()
     samples = {tid: points_in(g) for tid, g in targets.items()}
     need = {t for pts in samples.values() for lon, lat in pts for t in neighbours(*tile_xy(lon, lat))}
     print(f"{len(need)} tiles", file=sys.stderr)
     with ThreadPoolExecutor(8) as ex:
         tiles = dict(ex.map(fetch, sorted(need)))
-    koppen = [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in load("koppen-spain.geojson")["features"]]
+    kop = lambda feats: [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in feats]
+    koppen_es = kop(load("koppen-spain.geojson")["features"])
+    koppen_pt = kop(json.loads((RAW / "build/koppen-portugal.geojson").read_text())["features"])
+    pt_ids = {p["id"] for p in pt_places} | {f"region:{r}" for r in regions if r.startswith("pt-")} | {"country:portugal"}
     rows = {}
     for tid, geom in targets.items():
         elev, slopes = [], []
@@ -187,7 +220,7 @@ def main():
         land = [e for e in elev if e > 0] or elev
         slopes = [v for v in slopes if v is not None] or [0.0]
         shares = {}
-        for code, name, kg in koppen:
+        for code, name, kg in (koppen_pt if tid in pt_ids else koppen_es):
             if kg.intersects(geom):
                 a = kg.intersection(geom).area
                 if a > 0:
@@ -206,10 +239,11 @@ def main():
                     "the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's "
                     "steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
                     "1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land "
-                    "(spain-mask.json). regions: the same measures over the union of a study region's appellation-level places (parent spain; "
+                    "(spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands). Portuguese places use "
+                    "Köppen polygons made by Tools/data/koppen_portugal.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain or portugal; "
                     "zones excluded), for comparisons. See data/SOURCES.md.",
         "places": out,
-        "country": {"spain": rows["country:spain"]},
+        "country": {"spain": rows["country:spain"], "portugal": rows["country:portugal"]},
         "regions": {r: rows[f"region:{r}"] for r in sorted(regions)},
     }
     (DATA / "place-measures.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
