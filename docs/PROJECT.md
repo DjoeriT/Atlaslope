@@ -26,7 +26,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   standing: 28 guides (every mainland DOC, Lisboa VR, Madeira, Madeirense), country pages `/es/` and `/pt/` with Home country cards and
   Guides as the country index (#214); 76 photos for 24 of them from Commons and Openverse (#234; Alenquer and DoTejo have none). Guides
   load on demand and the size check counts the first load, limit 2.1 MB (decision #38). Raw downloads moved outside the repo (#229) after
-  #214 committed a `data/raw` link that wiped them. The release also carries other sessions' merged work since 69
+  #214 committed a `data/raw` link that wiped them. Also in it: Study becomes Learn (#227, handoff `docs/handoffs/2026-10-22-learn-finish.md`):
+  intro on a first visit, "Learning for" course filter, `#learn`, Cava and Catalunya in Learn. The release also carries other sessions' merged work since 69
   (`git log --merges release-69..release-70`). Portuguese places are grey on the climate map until they are measured (in progress).
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
