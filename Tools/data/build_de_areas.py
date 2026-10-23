@@ -109,8 +109,10 @@ def rheingau(tmp):
     """Rheingau from Hessen's ALKIS (Tools/data/fetch_de_rheingau.py): the land use "Rebfläche" inside the 32 Gemarkungen of the
     amended spec, closed and simplified as the RLP outlines, in EPSG:25832. No Einzellagen: Hessen publishes no Lagen layer."""
     gpkg = tmp / "he.gpkg"
-    ogr("-f", "GPKG", str(gpkg), str(HE / "gemarkungen.geojson"), "-nln", "gem")
-    ogr("-f", "GPKG", "-update", str(gpkg), str(HE / "reben.geojson"), "-nln", "reb")
+    # Felsberg-Boeddiger (Gemarkung 1878, 3 parcels) lies 150 km north, near Kassel: drawn, it put the outline's frame and centre over
+    # empty land (wave 1 shots, 23 Oct 2026). It stays in the spec and the guide; the map draws the Rheingau itself.
+    ogr("-f", "GPKG", str(gpkg), str(HE / "gemarkungen.geojson"), "-nln", "gem", "-where", "schluessel <> '061878'")
+    ogr("-f", "GPKG", "-update", str(gpkg), str(HE / "reben.geojson"), "-nln", "reb", "-spat", "400000", "5500000", "470000", "5560000")
     land = ("ST_Intersection(ST_Union(ST_CollectionExtract(ST_MakeValid(reb.geom), 3)), "
             "(SELECT ST_Union(ST_MakeValid(geom)) FROM gem))")
     raw = tmp / "rg-raw.geojson"
