@@ -15,7 +15,7 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) the 16 more Bordeaux places the 22 more Burgundy places 18 Loire, 14 Rhône and 22 more places from the South-West, Beaujolais, Alsace, the South and Champagne (22-23 Oct 2026: the WSET L3 list, 94 places), each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) the 16 more Bordeaux places the 22 more Burgundy places 18 Loire, 14 Rhône and 22 more places from the South-West, Beaujolais, Alsace, the South and Champagne (22-23 Oct 2026: the WSET L3 list, 94 places) and its two PGIs, Côtes de Gascogne and Pays d\'Oc (96 in all), each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
       'abadia-retuerta', 'abona', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa', 'aloxe-corton', 'alsace', 'anjou', 'arinzano',
       'arlanza', 'arribes', 'arruda', 'ayles', 'bairrada', 'bandol', 'barsac', 'beaujolais', 'beaune', 'beira-interior', 'bergerac',
@@ -24,7 +24,7 @@ describe('the Terroir sections', () => {
       'carcavelos', 'carinena', 'casa-del-blanco', 'catalunya', 'cava', 'cebreros', 'chablis', 'champagne', 'chassagne-montrachet',
       'chateauneuf-du-pape', 'chinon', 'chozas-carrascal', 'cigales', 'colares', 'conca-de-barbera', 'condado-de-huelva', 'condrieu',
       'corbieres', 'cornas', 'costers-del-segre', 'cote-de-beaune-villages', 'cote-de-nuits-villages', 'cote-rotie', 'coteaux-du-layon',
-      'cotes-de-bordeaux', 'cotes-de-provence', 'cotes-du-rhone', 'cotes-du-rhone-villages', 'cotes-du-roussillon',
+      'cotes-de-bordeaux', 'cotes-de-gascogne', 'cotes-de-provence', 'cotes-du-rhone', 'cotes-du-rhone-villages', 'cotes-du-roussillon',
       'cotes-du-roussillon-villages', 'cremant-dalsace', 'cremant-de-bourgogne', 'cremant-de-loire', 'crozes-hermitage', 'dao',
       'dehesa-del-carrizal', 'dehesa-penalba', 'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario',
       'emporda', 'encostas-daire', 'entre-deux-mers', 'finca-elez', 'fitou', 'fleurie', 'gevrey-chambertin', 'gigondas', 'givry',
@@ -34,16 +34,16 @@ describe('the Terroir sections', () => {
       'margaux', 'medoc', 'menetou-salon', 'mentrida', 'mercurey', 'meursault', 'minervois', 'monbazillac', 'mondejar', 'montagny',
       'monterrei', 'montilla-moriles', 'montsant', 'morgon', 'moulin-a-vent', 'muscadet', 'muscadet-sevre-et-maine',
       'muscat-de-beaumes-de-venise', 'navarra', 'nuits-saint-georges', 'obidos', 'otazu', 'pago-florentino', 'palmela', 'pauillac',
-      'penedes', 'pessac-leognan', 'picpoul-de-pinet', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard', 'portimao', 'porto',
-      'pouilly-fuisse', 'pouilly-fume', 'prado-de-irache', 'priorat', 'puligny-montrachet', 'rias-baixas', 'ribeira-sacra', 'ribeiro',
-      'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental',
-      'rosalejo', 'rose-danjou', 'rose-de-loire', 'rueda', 'rully', 'saint-emilion', 'saint-emilion-grand-cru', 'saint-estephe',
-      'saint-joseph', 'saint-julien', 'saint-veran', 'sancerre', 'saumur', 'saumur-champigny', 'sauternes', 'savennieres', 'setubal',
-      'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tacoronte-acentejo', 'tarragona', 'tavel', 'tavira', 'tavora-varosa',
-      'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'torres-vedras', 'touraine', 'tras-os-montes', 'txakoli-alava',
-      'txakoli-bizkaia', 'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'vacqueyras', 'valdeorras', 'valdepenas',
-      'valencia', 'valle-de-guimar', 'valle-de-la-orotava', 'vallegarcia', 'valles-de-benavente', 'valtiendas', 'vera-de-estenas',
-      'vinho-verde', 'vinos-de-madrid', 'volnay', 'vosne-romanee', 'vougeot', 'vouvray', 'ycoden-daute-isora', 'yecla',
+      'pays-doc', 'penedes', 'pessac-leognan', 'picpoul-de-pinet', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard', 'portimao',
+      'porto', 'pouilly-fuisse', 'pouilly-fume', 'prado-de-irache', 'priorat', 'puligny-montrachet', 'rias-baixas', 'ribeira-sacra',
+      'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja', 'rioja-alavesa', 'rioja-alta',
+      'rioja-oriental', 'rosalejo', 'rose-danjou', 'rose-de-loire', 'rueda', 'rully', 'saint-emilion', 'saint-emilion-grand-cru',
+      'saint-estephe', 'saint-joseph', 'saint-julien', 'saint-veran', 'sancerre', 'saumur', 'saumur-champigny', 'sauternes', 'savennieres',
+      'setubal', 'sierra-de-salamanca', 'sierras-de-malaga', 'somontano', 'tacoronte-acentejo', 'tarragona', 'tavel', 'tavira',
+      'tavora-varosa', 'terra-alta', 'tharsys', 'tierra-del-vino-de-zamora', 'toro', 'torres-vedras', 'touraine', 'tras-os-montes',
+      'txakoli-alava', 'txakoli-bizkaia', 'txakoli-getaria', 'ucles', 'urbezo', 'uruena', 'utiel-requena', 'vacqueyras', 'valdeorras',
+      'valdepenas', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava', 'vallegarcia', 'valles-de-benavente', 'valtiendas',
+      'vera-de-estenas', 'vinho-verde', 'vinos-de-madrid', 'volnay', 'vosne-romanee', 'vougeot', 'vouvray', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

@@ -1,0 +1,138 @@
+{
+ "id": "cotes-de-gascogne",
+ "title": "Why Côtes de Gascogne tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Heavy rain waters the vines in the west, and water-holding soils do it in the east, so the supply is steady. The mild climate ripens the grapes well, which the wines need for the primary aromas makers look for.",
+  "cite": [
+   "cotes-de-gascogne-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "gascony",
+   "beat": "place",
+   "title": "Gascony, from soft hills to cut valleys",
+   "paras": [
+    "The vineyards lie in Gascony, a historic province of south-west France. It sits between the Garonne to the north, the forêt des Landes to the west and the Pyrenees to the south.",
+    "The zone covers the whole Gers département and part of the Landes and Lot-et-Garonne. The hills are gentle in the west. In the east the valleys are more cut, marked by hard limestone beds.",
+    "Woods fill a good part of the landscape. Farming is varied. Vines grow for Armagnac and Floc de Gascogne, and farms raise poultry and fattened ducks and geese.",
+    "Around the town of Condom, on both sides of the Baïse, lies a small area called the Condomois."
+   ],
+   "cite": [
+    "cotes-de-gascogne-doc:p6",
+    "cotes-de-gascogne-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Condom and the Baïse",
+     "point": [
+      0.373,
+      43.958
+     ],
+     "zoom": 10,
+     "caption": "The Condomois lies around the town of Condom, on both sides of the Baïse.",
+     "cite": [
+      "cotes-de-gascogne-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean west, dry-summer east",
+   "paras": [
+    "The climate is temperate oceanic. It changes very gradually from west to east, from strong ocean influence to a more continental feel.",
+    "In the west the rain is regular and abundant, with no truly dry summer. In the east summer is dry until the storms of late summer.",
+    "The Condomois is the hottest and driest part of the zone.",
+    "Across the zone, early autumn is often hot and dry. That favours the overripening of white grapes with high sugar potential, which allows whites from overripe grapes."
+   ],
+   "cite": [
+    "cotes-de-gascogne-doc:p6",
+    "cotes-de-gascogne-doc:p7",
+    "cotes-de-gascogne-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand in the west, clay in the east",
+   "paras": [
+    "In the west tawny sands dominate. They are a marine formation, generally covered by loess silt. The soils on them are silty to sandy-silty, leached and acid, and locally called boulbènes.",
+    "Eastwards the sands give way gradually to molasse, a clay formation of continental origin with hard limestone beds. Its soils are either deep clay (terreforts) or shallow, stony and limy (peyrusquets). Both formations are present in the centre of the zone.",
+    "The more clay a soil holds, the more water it keeps, so water retention rises from west to east. The terreforts, the soils best at holding water, lie in the east, where summer rain is lowest.",
+    "In the Condomois the soils are mainly clay-limestone, formed on the molasse and the limestone beds."
+   ],
+   "cite": [
+    "cotes-de-gascogne-doc:p6",
+    "cotes-de-gascogne-doc:p7"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Local grapes, plus some newcomers",
+   "paras": [
+    "The rules cover still wines in all three colours. They also cover white wines from overripe grapes.",
+    "White wines make up 90% of volume and are mostly dry. Red is about 50,000 hl. Rosé is about 30,000 hl and has grown fast in recent years.",
+    "The base is local grapes of the Pyrenean foothills. Gros and Petit Manseng are among them, as is Tannat. Regional grapes were added, such as Colombard and Merlot. A few world-famous ones, among them Chardonnay and Syrah, have settled in well.",
+    "Half of the wine is sold with one or more grapes named on the label. Blends often pair a local grape with a better-known one.",
+    "Gros and Petit Manseng have high sugar potential. Growers pick them overripe for medium-sweet and sweet whites (moelleux and doux). These show more evolved aromas of ripe fruit.",
+    "There is also a white primeur, a new-season wine, one of the few in France. More than a million bottles of it sell each year. Any still wine may carry the term primeur or nouveau. A red primeur need not have finished malolactic fermentation when it is claimed.",
+    "In nearly 30 years output has grown to a sales potential of 100 million bottles a year. Today 75% is exported, mainly to northern Europe."
+   ],
+   "cite": [
+    "cotes-de-gascogne-doc:p2",
+    "cotes-de-gascogne-doc:p3",
+    "cotes-de-gascogne-doc:p8",
+    "cotes-de-gascogne-doc:p9",
+    "cotes-de-gascogne-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Bayonne, the port for Dutch trade",
+     "point": [
+      -1.475,
+      43.493
+     ],
+     "zoom": 10,
+     "caption": "After 1373 the Privilège de Bordeaux closed Bordeaux to these wines until Christmas, yet trade with the Dutch went on through Bayonne.",
+     "cite": [
+      "cotes-de-gascogne-doc:p7"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vin de pays",
+    "text": "A traditional term that may replace \"Indication géographique protégée\" on the label. The EU PGI logo must then appear.",
+    "cite": [
+     "cotes-de-gascogne-doc:p3",
+     "cotes-de-gascogne-doc:p10"
+    ]
+   },
+   {
+    "term": "Sud-Ouest",
+    "text": "The larger area whose name may be added to Côtes de Gascogne.",
+    "cite": [
+     "cotes-de-gascogne-doc:p10"
+    ]
+   },
+   {
+    "term": "Condomois",
+    "text": "The smaller area whose name may be added to Côtes de Gascogne, under the conditions of these rules.",
+    "cite": [
+     "cotes-de-gascogne-doc:p10"
+    ]
+   }
+  ],
+  "cite": [
+   "cotes-de-gascogne-doc:p3",
+   "cotes-de-gascogne-doc:p10"
+  ]
+ }
+}
