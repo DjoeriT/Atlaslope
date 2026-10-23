@@ -1,0 +1,106 @@
+{
+ "id": "frascati",
+ "title": "Why Frascati tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Frascati grows on the ash of a volcano that stopped erupting only 25,000 to 29,000 years ago. The loose, sandy ash drains freely, and the soil helps give this fresh, balanced white its character.",
+  "cite": [
+   "frascati-disc:p5",
+   "frascati-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "volcano",
+   "beat": "place",
+   "title": "The northern slopes of a volcano",
+   "paras": [
+    "The vineyards cover about 8,300 hectares in central Lazio, in the province of Rome. They lie on the steep part and the foot of the northern side of the Colli Albani, the Alban Hills.",
+    "The hills were built by the eruptions of the Vulcano Laziale. It began to build about 600,000 years ago and grew to over 2,000 m, until its magma chamber collapsed and left a great caldera. Later blasts opened craters. The youngest are now deep lakes, Albano and Nemi.",
+    "The zone takes in the whole of Frascati, Grottaferrata and Monte Porzio Catone, and parts of Rome and Montecompatri. Vines have grown here since Roman times, in the area once called Tusculum. A law there once said no one could send new wine to Rome before the wine festivals, the Vinalia, had been held."
+   ],
+   "cite": [
+    "frascati-disc:p2",
+    "frascati-disc:p5",
+    "frascati-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Lakes Albano and Nemi",
+     "point": [
+      12.69,
+      41.735
+     ],
+     "zoom": 10,
+     "caption": "The youngest craters of the Vulcano Laziale are now deep lakes, Albano and Nemi.",
+     "cite": [
+      "frascati-disc:p5"
+     ]
+    },
+    {
+     "label": "Tusculum",
+     "point": [
+      12.7195,
+      41.8109
+     ],
+     "zoom": 11,
+     "caption": "Tusculum, the old name of the area where the vine found an ideal home and spread.",
+     "cite": [
+      "frascati-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild, with a gentle summer dry spell",
+   "paras": [
+    "The climate is a transitional Mediterranean one. Rain totals 822 to 1010 mm a year, and only 84 to 127 mm falls in summer. The summer dryness is not very pronounced.",
+    "The mean temperature is 13.7 to 15.2 °C. Winters are not very cold: the mean stays under 10 °C for 3 to 4 months, and the coldest month has a mean minimum of 3.4 to 4.0 °C.",
+    "The slopes face mainly west and northwest. With the hills of the northern side, that makes the setting airy and bright. Land lying too low is left out of the zone as unsuited to quality growing."
+   ],
+   "cite": [
+    "frascati-disc:p6",
+    "frascati-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Ash, tuff and a deep plough",
+   "paras": [
+    "Vines grow between 70 and 500 m above sea level. The soils are mostly volcanic. Only vineyards whose volcanic soils drain freely and are dry but not arid count as suitable.",
+    "Pozzolana, locally called terrinelle, is loose volcanic ash with no cementing. It lies farther from the old vents and makes deep, sandy soil that water passes through with no standing water at the surface or below.",
+    "Stony tuff, ash and lapilli cemented to varying hardness, covers most of the zone. Water and roots hardly get through it, so growers dig deep to give the vine enough soil to root in.",
+    "Lava covers only a small part, near the craters, and tends to give thin soil of pasture or woodland. Recent alluvium on the flats is deep, tends to clay and is often damp."
+   ],
+   "cite": [
+    "frascati-disc:p3",
+    "frascati-disc:p5",
+    "frascati-disc:p6",
+    "frascati-disc:p7"
+   ]
+  },
+  {
+   "id": "white",
+   "beat": "rules",
+   "title": "Two whites, both Malvasia-led",
+   "paras": [
+    "Frascati is always white, in two types: still Frascati and Frascati Spumante. Malvasia bianca di Candia and Malvasia del Lazio (Malvasia puntinata), alone or together, must make up at least 70% of the vineyard.",
+    "Bellone, Bombino bianco, Greco bianco, Trebbiano toscano and Trebbiano giallo can fill up to 30%. Other white grapes suited to Lazio may take up to 15% of that 30%.",
+    "The still wine is straw yellow, more or less deep, fresh and balanced, with a delicate scent and floral notes. It is savoury and soft. It can be dry, or amabile or abboccato, the two words for a wine with some sweetness.",
+    "Spumante has fine, persistent bubbles and a light straw colour. It runs from brut to extra dry, and its minimum acidity is 5.5 g/l against 4.5 g/l for the still wine. In all Frascati, acidity is normal, bitterness barely noticeable and astringency low.",
+    "Still Frascati must show its vintage, but Spumante need not. No praise words such as fine or scelto may be added to the name. For sweetness, the label must use only amabile or abboccato.",
+    "Yields are capped at 14 t of grapes per hectare. The wine may be sold in a straw fiasco of up to 1,500 cc, closed with a cork."
+   ],
+   "cite": [
+    "frascati-disc:p2",
+    "frascati-disc:p3",
+    "frascati-disc:p4",
+    "frascati-disc:p5",
+    "frascati-disc:p7"
+   ]
+  }
+ ]
+}

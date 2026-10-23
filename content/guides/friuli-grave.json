@@ -1,0 +1,123 @@
+{
+ "id": "friuli-grave",
+ "title": "Why Friuli Grave tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Mountain torrents spread limestone and dolomite stones across this Friulian plain. The vines grow in that stony ground, and it favours perfumed, elegant wines.",
+  "cite": [
+   "friuli-grave-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "A plain built by three rivers",
+   "paras": [
+    "The zone covers about 7,500 hectares on both sides of the Tagliamento river, between the provinces of Pordenone and Udine. It takes in the high Friulian plain, right up against the pre-Alpine arc.",
+    "The Meduna, the Cellina and the Tagliamento laid down this plain over thousands of years. Their waters tore limestone and dolomite from the mountains and carried it downstream. The torrents run in wide beds of braided channels. They fill the bed in flood and leave it completely dry in low water.",
+    "The mountains gave the Grave their ground and also shelter the plain from cold winds from the north."
+   ],
+   "cite": [
+    "friuli-grave-disc:p11",
+    "friuli-grave-disc:p12"
+   ],
+   "fly": [
+    {
+     "label": "The Tagliamento",
+     "point": [
+      12.93,
+      46.08
+     ],
+     "zoom": 9.5,
+     "caption": "The vineyards lie on both sides of the Tagliamento, on ground the rivers carried down from the mountains.",
+     "cite": [
+      "friuli-grave-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered from the north, helped by the sea",
+   "paras": [
+    "That mountain shelter works together with the kindly effect of the Adriatic. Between them they have helped create a climate particularly suited to the vine.",
+    "The climate is temperate sub-continental. The mean annual temperature runs from 10 to 14.4 °C, and the yearly range is above 19 °C. It gets warmer and drier from north to south.",
+    "Rain averages from 1,100 mm to 2,000 mm a year and rises toward the foothills. It climbs to a relative peak in June. July brings a sharp drop. November is the wettest month. Winter is the driest season everywhere. Rainfall varies a lot from year to year. Relative humidity stays near 70% all year."
+   ],
+   "cite": [
+    "friuli-grave-disc:p11",
+    "friuli-grave-disc:p12"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Vines in the stones",
+   "paras": [
+    "The plain is alluvial ground. It is coarse in the northern part and finer farther down the rivers. The high plain lies between 5 and 320 m.",
+    "The soil holds 20 to 60% coarse stones, and sand dominates the fine earth that makes up the rest. Nitrogen is limited and phosphorus very low. Potassium is sufficient.",
+    "The stony surface widens the swing in temperature between day and night. That favours grapes with a marked aroma and wines that are perfumed and elegant. More than a century ago, some growers even covered their vineyards with stones to copy this ground.",
+    "Only vineyards on mainly gravelly or sandy-clay land qualify. Damp, cool or spring-fed land is excluded."
+   ],
+   "cite": [
+    "friuli-grave-disc:p5",
+    "friuli-grave-disc:p11",
+    "friuli-grave-disc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Rauscedo, young vines for the world",
+     "point": [
+      12.83,
+      46.05
+     ],
+     "zoom": 11,
+     "caption": "Vine nurseries grew here from the early 1900s and made Rauscedo the world's main area for young vines.",
+     "cite": [
+      "friuli-grave-disc:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Fourteen grapes, one stony plain",
+   "paras": [
+    "A wine named after a grape must as a rule hold at least 95% of it. The white grapes are Chardonnay, Pinot bianco, Pinot grigio, Riesling (from Riesling renano), Sauvignon, Friulano, Traminer aromatico and Verduzzo friulano. The black grapes are Cabernet franc, Cabernet sauvignon, Carmenere, Merlot, Pinot nero and Refosco dal peduncolo rosso.",
+    "Bianco is made from the white grapes, without Traminer aromatico. Rosso is made from the black grapes. A Cabernet can use Cabernet franc, Cabernet sauvignon and Carmenere together or apart. Rosato and Novello also come from the black grapes. Rosato gets a soft pressing and a short maceration for its colour.",
+    "Pinot grigio is pale straw, sometimes with copper glints. Traminer aromatico smells aromatic and intense. Riesling smells lightly aromatic. Novello is fruity and vinous. Cabernet franc smells herbal. Verduzzo friulano runs from dry to sweet and from pale straw to golden.",
+    "Chardonnay and Pinot bianco can be frizzante, lightly sparkling with bubbles from natural fermentation in a closed tank. Verduzzo friulano and Rosato can be frizzante too. Frizzante Verduzzo keeps 10 to 40 g/l of sugar. The others keep 10 g/l at most.",
+    "Spumante, the fully sparkling wine, comes from Chardonnay, Pinot bianco or Pinot nero. Pinot nero may be made white for it. It is sold as extra brut, brut, extra dry, dry or demi-sec. Second fermentation in the bottle, with ageing on the lees, gives finesse and complexity. In large tanks it gives fresher, more delicate sparkling wines.",
+    "Superiore needs a higher minimum alcohol (11.5%) and a yield cut to 10 tonnes per hectare. It aims for fuller-bodied wines. Riserva is released two years after 11 November of the harvest year. It cannot also be called Superiore. It is not made for Novello or Rosato.",
+    "Merlot arrived in 1880, and it spread from the first vineyards at Fagagna and San Giorgio della Richinvelda."
+   ],
+   "cite": [
+    "friuli-grave-disc:p2",
+    "friuli-grave-disc:p3",
+    "friuli-grave-disc:p6",
+    "friuli-grave-disc:p7",
+    "friuli-grave-disc:p8",
+    "friuli-grave-disc:p9",
+    "friuli-grave-disc:p10",
+    "friuli-grave-disc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Villa Manin, near Codroipo",
+     "point": [
+      12.99,
+      45.96
+     ],
+     "zoom": 13,
+     "caption": "Built in the 1600s by Ludovico I Manin, its west wing once held the cellars and granaries.",
+     "cite": [
+      "friuli-grave-disc:p12"
+     ]
+    }
+   ]
+  }
+ ]
+}

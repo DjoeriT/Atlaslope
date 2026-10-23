@@ -1,0 +1,1194 @@
+{
+ "region": "it-veneto",
+ "sheets": [
+  {
+   "id": "valpolicella",
+   "why": {
+    "text": "A red blend built on Corvina and/or Corvinone (45 to 95%) with Rondinella (5 to 30%), from 19 municipalities, Verona among them.",
+    "cite": [
+     "valpolicella-disc:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Corvina Veronese (Cruina o Corvina)"
+     },
+     {
+      "local": "Corvinone"
+     },
+     {
+      "local": "Rondinella"
+     }
+    ],
+    "cite": [
+     "valpolicella-disc:p2"
+    ],
+    "others": [],
+    "othersCite": [
+     "valpolicella-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red wine, which may add 'classico', 'Valpantena' and 'superiore' on the label.",
+    "cite": [
+     "valpolicella-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Classico",
+      "text": "Geographic reference allowed on the label."
+     },
+     {
+      "name": "Valpantena",
+      "text": "Geographic reference allowed on the label."
+     },
+     {
+      "name": "Superiore",
+      "text": "Specification allowed on the label."
+     }
+    ],
+    "cite": [
+     "valpolicella-disc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "soave",
+   "why": {
+    "text": "Volcanic basalt soils and limestone outcrops on the Lessini hills, with a mild, temperate climate and Garganega on pergola vines.",
+    "cite": [
+     "soave-disc:p9",
+     "soave-disc:p10",
+     "soave-disc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Garganega"
+     }
+    ],
+    "cite": [
+     "soave-disc:p2"
+    ],
+    "others": [
+     "Trebbiano di Soave",
+     "Chardonnay",
+     "Other non-aromatic white grapes suitable for Verona province (max 5%)"
+    ],
+    "othersCite": [
+     "soave-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Dry, medium-bodied white wine; also a sparkling Soave made by natural second fermentation.",
+    "cite": [
+     "soave-disc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Mild, temperate-humid with hot summers; 700 to 1000 mm rain a year, mostly in spring and autumn, with day-night temperature swings.",
+    "cite": [
+     "soave-disc:p10",
+     "soave-disc:p11"
+    ]
+   },
+   "soil": {
+    "text": "Mostly decomposed volcanic basalt, giving dark, mineral-rich clay loam with good drainage; some hills have limestone outcrops.",
+    "cite": [
+     "soave-disc:p9",
+     "soave-disc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards run from 35 m on the foothills to 380 m on the highest hills.",
+    "cite": [
+     "soave-disc:p10"
+    ]
+   },
+   "tastes": {
+    "text": "Straw yellow, sometimes greenish; dry, medium-bodied, slightly bitter. Almond, white flowers, fruit and cinnamon notes. Classico is fuller and slightly mineral.",
+    "cite": [
+     "soave-disc:p8",
+     "soave-disc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Soave Classico",
+      "text": "Historic zone wine; 14 t/ha, 11% minimum alcohol, vintage on label."
+     },
+     {
+      "name": "Soave Colli Scaligeri",
+      "text": "Subzone wine; 14 t/ha, 11% minimum alcohol, vintage on label."
+     },
+     {
+      "name": "Soave Spumante",
+      "text": "Sparkling Soave made only by natural second fermentation, in the Veneto region."
+     }
+    ],
+    "cite": [
+     "soave-disc:p6",
+     "soave-disc:p8",
+     "soave-disc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "prosecco",
+   "why": {
+    "text": "Mostly flat alluvial plains with some hills, a mild climate between the Alps and the Adriatic, and big day-night swings before harvest.",
+    "cite": [
+     "prosecco-disc:p9",
+     "prosecco-disc:p10",
+     "prosecco-disc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Glera"
+     }
+    ],
+    "cite": [
+     "prosecco-disc:p2",
+     "prosecco-disc:p10"
+    ],
+    "others": [
+     "Verdiso",
+     "Bianchetta trevigiana",
+     "Perera",
+     "Glera lunga",
+     "Chardonnay",
+     "Pinot bianco",
+     "Pinot grigio",
+     "Pinot nero"
+    ],
+    "othersCite": [
+     "prosecco-disc:p2",
+     "prosecco-disc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Mostly sparkling (spumante) and lightly sparkling (frizzante) white, plus sparkling rosé and a small amount of still white.",
+    "cite": [
+     "prosecco-disc:p2",
+     "prosecco-disc:p10"
+    ]
+   },
+   "climate": {
+    "text": "Temperate. The Alps block cold northern air and the Adriatic brings scirocco winds and summer rain. Late summer has dry bora winds and big day-night temperature swings.",
+    "cite": [
+     "prosecco-disc:p9",
+     "prosecco-disc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Mostly alluvial, clay and silt, with stony material from eroded Dolomites and river deposits that drains well. Rich in minerals and trace elements.",
+    "cite": [
+     "prosecco-disc:p9",
+     "prosecco-disc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Typically dry, pale straw or soft pink, with fine bubbles. White flowers, apple, pear, exotic fruit and citrus. Fresh, soft and lively, with sugar and acidity in balance.",
+    "cite": [
+     "prosecco-disc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Spumante",
+      "text": "Sparkling, second fermentation in tank (Martinotti method), sold from brut nature to demi-sec."
+     },
+     {
+      "name": "Spumante rosé",
+      "text": "Glera with 10 to 15% Pinot Nero vinified red; tank-made at least 60 days."
+     },
+     {
+      "name": "Frizzante",
+      "text": "Lightly sparkling, fermented in bottle or tank, dry to off-dry."
+     },
+     {
+      "name": "Rifermentazione in bottiglia",
+      "text": "Frizzante refermented in bottle; may be cloudy, with bread-crust and yeast notes."
+     }
+    ],
+    "cite": [
+     "prosecco-disc:p5",
+     "prosecco-disc:p7",
+     "prosecco-disc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "conegliano-valdobbiadene",
+   "why": {
+    "text": "Glera grown on the hill country of the zone's communes, made as still, frizzante or spumante wine.",
+    "cite": [
+     "conegliano-valdobbiadene-disc:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Glera"
+     }
+    ],
+    "cite": [
+     "conegliano-valdobbiadene-disc:p2"
+    ],
+    "others": [
+     "Verdiso",
+     "Bianchetta trevigiana",
+     "Perera",
+     "Glera lunga",
+     "Pinot bianco",
+     "Pinot nero",
+     "Pinot grigio",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "conegliano-valdobbiadene-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Still white, frizzante (lightly sparkling) and spumante (fully sparkling) wine.",
+    "cite": [
+     "conegliano-valdobbiadene-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore di Cartizze",
+      "text": "Spumante only, from the traditional Cartizze sub-zone."
+     },
+     {
+      "name": "Rive",
+      "text": "Spumante followed by a named geographic reference from annex A."
+     },
+     {
+      "name": "Sui lieviti",
+      "text": "Spumante mention for wine kept on its yeasts."
+     },
+     {
+      "name": "Frizzante",
+      "text": "Lightly sparkling wine, a separate category from spumante."
+     }
+    ],
+    "cite": [
+     "conegliano-valdobbiadene-disc:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "asolo-prosecco",
+   "why": {
+    "text": "Gentle hills of red marl and conglomerate soils, 100 to 450 m, with mild springs, not-too-hot summers and big day-night swings for Glera.",
+    "cite": [
+     "asolo-prosecco-disc:p8",
+     "asolo-prosecco-disc:p9",
+     "asolo-prosecco-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Glera"
+     }
+    ],
+    "cite": [
+     "asolo-prosecco-disc:p2"
+    ],
+    "others": [
+     "Verdiso",
+     "Bianchetta trevigiana",
+     "Perera",
+     "Glera lunga",
+     "Pinot bianco",
+     "Pinot nero",
+     "Pinot grigio",
+     "Chardonnay"
+    ],
+    "othersCite": [
+     "asolo-prosecco-disc:p2",
+     "asolo-prosecco-disc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Still white, lightly sparkling frizzante and fully sparkling spumante, which is labelled superiore.",
+    "cite": [
+     "asolo-prosecco-disc:p2",
+     "asolo-prosecco-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mild springs, summers not too hot and mild autumns; south-facing slopes sit across the cold north-east winds. Summers average 22.6 °C and about 700 mm of rain falls from April to September. Autumns are warm and dry with breezes and strong day-night swings.",
+    "cite": [
+     "asolo-prosecco-disc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Hills of tough conglomerate under red marl-clay or marl-sand soil. Soils are decarbonated, acidic, medium-deep and well drained, with karst sinkholes (over 2000 doline), above all on the Montello.",
+    "cite": [
+     "asolo-prosecco-disc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "100 to 450 m above sea level; vineyards must be on hills or foothills, not valley floors or north-facing slopes.",
+    "cite": [
+     "asolo-prosecco-disc:p3",
+     "asolo-prosecco-disc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Pale straw yellow, light and easy to drink. Fresh, floral and fruity, with apple, pear, peach and apricot. Acidity and savoury salinity stay balanced against sugar.",
+    "cite": [
+     "asolo-prosecco-disc:p9",
+     "asolo-prosecco-disc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Spumante superiore",
+      "text": "Sparkling wine, labelled superiore, sold from Extra Brut to Demi-sec."
+     },
+     {
+      "name": "Sui lieviti",
+      "text": "Bottle-fermented, one vintage, Brut Nature, at least 90 days on lees, no millesimato."
+     },
+     {
+      "name": "Frizzante",
+      "text": "Lightly sparkling wine, sold from Secco to Amabile."
+     },
+     {
+      "name": "Millesimato",
+      "text": "Vintage spumante naming the harvest year; not allowed with sui lieviti."
+     }
+    ],
+    "cite": [
+     "asolo-prosecco-disc:p5",
+     "asolo-prosecco-disc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bagnoli-friularo",
+   "why": {
+    "text": "Alluvial and volcanic soils rich in potassium and minerals, cooling winds and big day-night swings, suit late-ripening, very acidic Raboso Piave.",
+    "cite": [
+     "bagnoli-friularo-disc:p4",
+     "bagnoli-friularo-disc:p5",
+     "bagnoli-friularo-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Raboso Piave"
+     }
+    ],
+    "cite": [
+     "bagnoli-friularo-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "bagnoli-friularo-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "Dry red, including riserva and late harvest, and a sweet passito red.",
+    "cite": [
+     "bagnoli-friularo-disc:p1",
+     "bagnoli-friularo-disc:p3",
+     "bagnoli-friularo-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Temperate and Mediterranean-like, with mild winters, hot dry summers and big day-night swings at ripening. Rain runs 700 to 900 mm a year, peaking in spring and autumn. North-east winds, sea breezes and bora keep humidity down, and the Euganean Hills cool the evenings.",
+    "cite": [
+     "bagnoli-friularo-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic, well-drained soils in Battaglia Terme and Monselice. Elsewhere sub-acidic river sediments of the Adige, Bacchiglione and Brenta, rich in potassium and minerals.",
+    "cite": [
+     "bagnoli-friularo-disc:p4",
+     "bagnoli-friularo-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Intense ruby-violet red turning garnet, with cherry, plum and spice. Rustic, strong, clearly tannic and very acidic; the passito is sweet and velvety.",
+    "cite": [
+     "bagnoli-friularo-disc:p3",
+     "bagnoli-friularo-disc:p4",
+     "bagnoli-friularo-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 24 months, 12 of them in barrel, from 1 November."
+     },
+     {
+      "name": "Vendemmia tardiva",
+      "text": "At least 60% of grapes picked and vinified after 11 November."
+     },
+     {
+      "name": "Passito",
+      "text": "Dried grapes, pressed no earlier than 8 December, at least two years in barrel."
+     },
+     {
+      "name": "Classico",
+      "text": "Grapes only from the municipality of Bagnoli di Sopra."
+     }
+    ],
+    "cite": [
+     "bagnoli-friularo-disc:p2",
+     "bagnoli-friularo-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bardolino-superiore",
+   "why": {
+    "text": "Gravelly glacial moraine hills beside Lake Garda, with a mild, breezy climate that ripens mostly native grapes like Corvina and Rondinella.",
+    "cite": [
+     "bardolino-superiore-disc:p5",
+     "bardolino-superiore-disc:p6",
+     "bardolino-superiore-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Corvina veronese"
+     },
+     {
+      "local": "Rondinella"
+     }
+    ],
+    "cite": [
+     "bardolino-superiore-disc:p1",
+     "bardolino-superiore-disc:p6"
+    ],
+    "others": [
+     "Corvinone",
+     "Molinara",
+     "Other non-aromatic red grapes authorised for Verona province"
+    ],
+    "othersCite": [
+     "bardolino-superiore-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, aged at least one year; a Classico zone near Bardolino has its own label.",
+    "cite": [
+     "bardolino-superiore-disc:p1",
+     "bardolino-superiore-disc:p3",
+     "bardolino-superiore-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Hot but not sticky summers and mild winters, so olives grow too; the lake, the Baldo massif and the Adige valley shape it. Described as Mediterranean.",
+    "cite": [
+     "bardolino-superiore-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Variable moraine soils, mostly gravelly and deep; gravel-sand soils in places, rocky ground near Monte Baldo and the Adige valley.",
+    "cite": [
+     "bardolino-superiore-disc:p5",
+     "bardolino-superiore-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The northern limit of the zone follows the 500 m contour; wet valley-floor land is excluded.",
+    "cite": [
+     "bardolino-superiore-disc:p2",
+     "bardolino-superiore-disc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Dry, savoury, harmonious ruby red turning garnet. Small red fruits, flowers and spice such as cinnamon, clove and black pepper; light structure, short ageing.",
+    "cite": [
+     "bardolino-superiore-disc:p4",
+     "bardolino-superiore-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Classico",
+      "text": "Wine from the oldest zone around Bardolino, made and aged inside that zone."
+     },
+     {
+      "name": "Bardolino Superiore",
+      "text": "Aged at least one year from 1 November of the harvest year."
+     }
+    ],
+    "cite": [
+     "bardolino-superiore-disc:p1",
+     "bardolino-superiore-disc:p3",
+     "bardolino-superiore-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colli-di-conegliano",
+   "why": {
+    "text": "Cool, drained gravelly hills sheltered by the Alps, with big day-night swings that keep acidity, and cold dry winter winds that dry grapes for passito.",
+    "cite": [
+     "colli-di-conegliano-disc:p8",
+     "colli-di-conegliano-disc:p9",
+     "colli-di-conegliano-disc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Manzoni bianco"
+     },
+     {
+      "local": "Pinot Bianco"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Cabernet franc"
+     },
+     {
+      "local": "Cabernet sauvignon"
+     },
+     {
+      "local": "Marzemino"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Glera"
+     },
+     {
+      "local": "Verdiso"
+     },
+     {
+      "local": "Boschera"
+     }
+    ],
+    "cite": [
+     "colli-di-conegliano-disc:p1",
+     "colli-di-conegliano-disc:p2"
+    ],
+    "others": [
+     "Sauvignon",
+     "Riesling (Riesling renano)",
+     "Incrocio Manzoni 2.15",
+     "Refosco p.r."
+    ],
+    "othersCite": [
+     "colli-di-conegliano-disc:p1",
+     "colli-di-conegliano-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red",
+     "sweet"
+    ],
+    "text": "Still dry white, red and red riserva. Refrontolo red from dried grapes, dry or sweet passito. Torchiato di Fregona white passito, dry to sweet.",
+    "cite": [
+     "colli-di-conegliano-disc:p1",
+     "colli-di-conegliano-disc:p6",
+     "colli-di-conegliano-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Alps and Prealps block cold air, and the nearby sea gives a mild, temperate climate. Big day-night swings and fresh winds in ripening keep acidity. Cold dry winter winds in the north dry the grapes.",
+    "cite": [
+     "colli-di-conegliano-disc:p8",
+     "colli-di-conegliano-disc:p9",
+     "colli-di-conegliano-disc:p11"
+    ]
+   },
+   "soil": {
+    "text": "Calcareous and moraine soils, mostly alluvial deposits with a gravelly, stony skeleton that drains well.",
+    "cite": [
+     "colli-di-conegliano-disc:p9",
+     "colli-di-conegliano-disc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must sit on favourably exposed hillsides. Part of the main zone's northern edge follows the 500 m contour line.",
+    "cite": [
+     "colli-di-conegliano-disc:p3",
+     "colli-di-conegliano-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "White: straw yellow, dry, savoury, fine and velvety. Red: ruby turning garnet, dry, full-bodied, harmonious, fairly tannic. Torchiato di Fregona: deep golden, dry to sweet, persistent. Refrontolo passito: sweet, velvety.",
+    "cite": [
+     "colli-di-conegliano-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Torchiato di Fregona",
+      "text": "White passito, dried at least 150 days, pressed from 1 February, 24 months ageing."
+     },
+     {
+      "name": "Refrontolo passito",
+      "text": "Sweet red from at least 95% Marzemino, grapes dried to 16% potential alcohol."
+     },
+     {
+      "name": "Refrontolo",
+      "text": "Red from at least 95% Marzemino, dried grapes, 14.5% alcohol, 24 months before release."
+     },
+     {
+      "name": "Rosso riserva",
+      "text": "Red aged 36 months, 12 of them in barrel, at least 13% alcohol."
+     }
+    ],
+    "cite": [
+     "colli-di-conegliano-disc:p2",
+     "colli-di-conegliano-disc:p6",
+     "colli-di-conegliano-disc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colli-euganei-fior-darancio",
+   "why": {
+    "text": "Volcanic hills rising from the plain, with mild winters, warm dry summers and good day-night swings that build aromatic Moscato giallo.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p5",
+     "colli-euganei-fior-darancio-disc:p6",
+     "colli-euganei-fior-darancio-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Moscato giallo"
+     }
+    ],
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p1",
+     "colli-euganei-fior-darancio-disc:p2"
+    ],
+    "others": [
+     "Other aromatic grapes of similar colour grown on the estate and suited to Padova province (up to 5%)"
+    ],
+    "othersCite": [
+     "colli-euganei-fior-darancio-disc:p1",
+     "colli-euganei-fior-darancio-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Still white from dry to sweet, sweet sparkling (spumante) and sweet dried-grape passito, all from Moscato giallo.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p1",
+     "colli-euganei-fior-darancio-disc:p4",
+     "colli-euganei-fior-darancio-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate, almost Mediterranean: mild winters, hot dry summers, good day-night swings. Rain averages 700 to 900 mm a year, peaking in spring and autumn. Winds are light and infrequent, mostly from the NNE, NE and N.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p5",
+     "colli-euganei-fior-darancio-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Weathered volcanic rock (rhyolite, trachyte, basalt, basaltic tuff), well drained and mineral-rich; also sedimentary rock (biancone, scaglia rossa, marl) and alluvial soils.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Most vineyards lie at 50 to 300 m above sea level, reaching almost 400 m.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Straw yellow, aromatic; dry to sweet, intense. Flavours of citrus, peach, banana, pineapple, wisteria, rose, linden and honey. Passito is complex, sweet and persistent.",
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p4",
+     "colli-euganei-fior-darancio-disc:p5",
+     "colli-euganei-fior-darancio-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Spumante",
+      "text": "Sweet sparkling wine, at least 50 g/l sugar and 6% actual alcohol."
+     },
+     {
+      "name": "Passito",
+      "text": "Sweet wine from naturally dried grapes, aged one year, at least 15.5% total alcohol."
+     }
+    ],
+    "cite": [
+     "colli-euganei-fior-darancio-disc:p4",
+     "colli-euganei-fior-darancio-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "lison",
+   "why": {
+    "text": "Flat alluvial plain near the Venetian coast, with a temperate sea-influenced climate, cool evening winds and clay-rich soils, gives fresh, fruity whites.",
+    "cite": [
+     "lison-disc:p6",
+     "lison-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tai"
+     }
+    ],
+    "cite": [
+     "lison-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "lison-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry white wine, made as Lison and Lison Classico.",
+    "cite": [
+     "lison-disc:p1",
+     "lison-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate, thanks to the nearby sea, lagoons and flat land open to winds. Cool, dry Bora from the east-northeast and warm, humid Scirocco from the southeast. Evening winds cool the nights, giving wide day-night swings.",
+    "cite": [
+     "lison-disc:p6",
+     "lison-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Alluvial soils: a thin layer of caranto (calcium carbonate) 30 to 70 cm down, under mostly clay. Good water reserve; rich in potassium, calcium and magnesium.",
+    "cite": [
+     "lison-disc:p4",
+     "lison-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Straw yellow with greenish reflections. Rich floral and fresh fruit aromas. Dry, velvety, marked savouriness, long finish with a typical bitter almond note.",
+    "cite": [
+     "lison-disc:p5",
+     "lison-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Lison Classico",
+      "text": "Lower yield (10 t/ha) and higher minimum alcohol: 12.5% against 12%."
+     }
+    ],
+    "cite": [
+     "lison-disc:p4",
+     "lison-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "montello-rosso",
+   "why": {
+    "text": "Sun-facing hills of red clay-marl over conglomerate, sheltered from cold north-east winds, give long mild autumns and slow ripening.",
+    "cite": [
+     "montello-rosso-disc:p4",
+     "montello-rosso-disc:p5",
+     "montello-rosso-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Sauvignon"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Carmenère"
+     }
+    ],
+    "cite": [
+     "montello-rosso-disc:p1"
+    ],
+    "others": [
+     "Other red grapes suited to Treviso province, aromatic ones excluded, up to 15%"
+    ],
+    "othersCite": [
+     "montello-rosso-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red from Cabernet Sauvignon with Merlot, Cabernet Franc or Carmenère, aged long in oak; a Superiore version exists.",
+    "cite": [
+     "montello-rosso-disc:p1",
+     "montello-rosso-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mild springs, not-too-hot summers averaging 22.6 °C, warm dry autumns with breezes and big day-night swings. About 700 mm rain from April to September.",
+    "cite": [
+     "montello-rosso-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Tough conglomerate rock under red marl-clay or marl-sand soil, decalcified and acidic, medium deep, with good water reserve and drainage through sinkholes.",
+    "cite": [
+     "montello-rosso-disc:p4",
+     "montello-rosso-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Hills rise from 100 to 450 m above sea level.",
+    "cite": [
+     "montello-rosso-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red turning garnet, intense aroma turning ethereal with age, dry, savoury, robust, lightly spicy, with soft tannins and high softness on the palate.",
+    "cite": [
+     "montello-rosso-disc:p3",
+     "montello-rosso-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Montello Rosso",
+      "text": "At least 18 months ageing, 9 in oak and 6 in bottle; 12.5% alcohol."
+     },
+     {
+      "name": "Superiore",
+      "text": "At least 24 months ageing, 12 in oak and 6 in bottle; 13% alcohol."
+     }
+    ],
+    "cite": [
+     "montello-rosso-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "piave-malanotte",
+   "why": {
+    "text": "Warm, free-draining alluvial gravel soils on the Piave plain, cool north-east night air in autumn, and late-ripening Raboso grapes partly dried before pressing.",
+    "cite": [
+     "piave-malanotte-disc:p6",
+     "piave-malanotte-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Raboso Piave"
+     },
+     {
+      "local": "Raboso Veronese"
+     }
+    ],
+    "cite": [
+     "piave-malanotte-disc:p1"
+    ],
+    "others": [
+     "Other red grapes suitable for Treviso and Venezia, up to 5% in place of Raboso Veronese"
+    ],
+    "othersCite": [
+     "piave-malanotte-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only a red wine, made from fresh and partly dried Raboso grapes and aged for at least 36 months.",
+    "cite": [
+     "piave-malanotte-disc:p1",
+     "piave-malanotte-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate climate on the middle and lower plain, with hot summers and never very cold winters. Rain is spread through the year, heavier near the hills and lighter to the south. Cool north-east air makes nights colder, especially in the north, and stops rot in October and November.",
+    "cite": [
+     "piave-malanotte-disc:p6",
+     "piave-malanotte-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Alluvial deposits left by glaciers and then the Piave river; stony, deep, well drained, low in organic matter, with good phosphorus and magnesium. Peaty, damp, cool or clearly siliceous soils are excluded.",
+    "cite": [
+     "piave-malanotte-disc:p4",
+     "piave-malanotte-disc:p6",
+     "piave-malanotte-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Intense ruby with violet tints, turning garnet with age. Cherry, blackberry and blueberry, with spice, mint and eucalyptus when aged. Austere, savoury, high but soft tannins.",
+    "cite": [
+     "piave-malanotte-disc:p5",
+     "piave-malanotte-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Malanotte del Piave",
+      "text": "Raboso blend with 15 to 30% dried grapes; 36 months ageing, 12 in barrel."
+     }
+    ],
+    "cite": [
+     "piave-malanotte-disc:p5",
+     "piave-malanotte-disc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "recioto-di-gambellara",
+   "why": {
+    "text": "Volcanic basalt and limestone hills with big day-night swings, dry months before harvest, and Garganega grapes dried 60 to 90 days.",
+    "cite": [
+     "recioto-di-gambellara-disc:p4",
+     "recioto-di-gambellara-disc:p5",
+     "recioto-di-gambellara-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Garganega"
+     }
+    ],
+    "cite": [
+     "recioto-di-gambellara-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet",
+     "sparkling"
+    ],
+    "text": "Sweet white wine from dried grapes, made as Classico (sometimes lightly fizzy) and as Spumante.",
+    "cite": [
+     "recioto-di-gambellara-disc:p1",
+     "recioto-di-gambellara-disc:p3",
+     "recioto-di-gambellara-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Over 1200 mm of rain a year, falling most often in winter and spring; June, July and generally the weeks before harvest are driest. Swings can pass 12 to 14 °C on the plain.",
+    "cite": [
+     "recioto-di-gambellara-disc:p4",
+     "recioto-di-gambellara-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic basalt with some limestone; clay-rich soils, locally high in bentonite. Basalt can block roots; limestone hills drain easily; the plain is clay and silt.",
+    "cite": [
+     "recioto-di-gambellara-disc:p4",
+     "recioto-di-gambellara-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hilltop ridges lie between 250 and 350 metres.",
+    "cite": [
+     "recioto-di-gambellara-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Classico: straw to golden, intense ripe fruit, sweet or semi-sweet with a slightly bitter finish. Spumante: fine persistent foam, fruity, velvety.",
+    "cite": [
+     "recioto-di-gambellara-disc:p3",
+     "recioto-di-gambellara-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Recioto di Gambellara Classico",
+      "text": "Dried-grape sweet white, amabile or dolce, at least 14% total alcohol, sometimes lightly fizzy."
+     },
+     {
+      "name": "Recioto di Gambellara Spumante",
+      "text": "Sparkling version, at least 14% total alcohol, fine persistent foam."
+     },
+     {
+      "name": "Vigna",
+      "text": "May be named on the label if followed by the place name and vinified separately."
+     }
+    ],
+    "cite": [
+     "recioto-di-gambellara-disc:p1",
+     "recioto-di-gambellara-disc:p3",
+     "recioto-di-gambellara-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

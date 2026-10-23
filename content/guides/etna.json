@@ -1,0 +1,144 @@
+{
+ "id": "etna",
+ "title": "Why Etna tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Most of Etna's vines grow on loose volcanic soils, on the slopes of Europe's highest active volcano. Rain here is well above the rest of Sicily, and the days and nights differ sharply in temperature.",
+  "cite": [
+   "etna-disc:p6",
+   "etna-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "volcano",
+   "beat": "place",
+   "title": "A half-circle around a volcano",
+   "paras": [
+    "Etna is the highest active volcano in Europe, at 3,300 m. It rises from sea level north of Catania in an imposing cone with a base perimeter of about 180 km. Its frequent eruptions have always shaped the lives of the people on its slopes.",
+    "The vineyards lie in a band around the middle of the mountain, in part of 20 communes. The zone forms a semicircle around the volcano, open on the western side. The area can be called \"an island within the island\", because its soil and climate set it clearly apart from the rest of Sicily."
+   ],
+   "cite": [
+    "etna-disc:p2",
+    "etna-disc:p6",
+    "etna-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Mount Etna",
+     "point": [
+      14.995,
+      37.751
+     ],
+     "zoom": 9.5,
+     "caption": "Europe's highest active volcano, 3,300 m, with a base perimeter of about 180 km.",
+     "cite": [
+      "etna-disc:p6"
+     ]
+    },
+    {
+     "label": "The Alcantara valley",
+     "point": [
+      14.95,
+      37.87
+     ],
+     "zoom": 10,
+     "caption": "The zone's northern edge follows the right bank of the Alcantara river to Randazzo.",
+     "cite": [
+      "etna-disc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "weather",
+   "title": "More rain, wide day-night swings",
+   "paras": [
+    "The climate is temperate Mediterranean. Rain peaks in autumn and winter and is lowest in summer. June and July are usually dry, while August is fairly wet. Yearly rainfall is well above the rest of the island, and it depends on the slope.",
+    "The south-west side is the driest, with about 600 mm a year. The north and north-east side reaches 1,200 mm, double that. The south-west side also has lower relative humidity, and there the vine climbs as high as 1,100 m.",
+    "The eastern side, around Giarre and Santa Venerina, is the earliest because of its exposure. It feels the coastal breeze, and its summer temperatures rarely reach very high peaks. Its days and nights still differ clearly. The southern side has strong swings between day and night and ripens later. The northern side is the wettest, with strong swings too."
+   ],
+   "cite": [
+    "etna-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The eastern slope, Giarre",
+     "point": [
+      15.18,
+      37.73
+     ],
+     "zoom": 10,
+     "caption": "The earliest side of Etna, open to the coastal breeze.",
+     "cite": [
+      "etna-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lava",
+   "beat": "ground",
+   "title": "Volcanic ash and lava-stone walls",
+   "paras": [
+    "The soil formed mainly as eruption material piled up and weathered. Ash and sand are part of it, with lapilli (small volcanic stones) and pumice. 80% of the vineyards stand on these volcanic soils. The other 20% grow on alluvial soils and vertisols.",
+    "Volcanic soils are generally loose and stony, so water drains very well. They are rich in trace elements and in potassium the vines can use. Nitrogen and phosphorus are moderate to poor.",
+    "Most vines grow between 300 and 900 m above sea level. On steep slopes they sit on terraces held by dry-stone walls of lava rock, a practice since ancient times. Terraces slow surface water and protect the soil from erosion. They hold water well, especially near the wall, and still drain through the dry stone. This is called \"heroic\" viticulture. The steep vineyards are largely terraced and hard to work by machine, so costs run very high."
+   ],
+   "cite": [
+    "etna-disc:p7",
+    "etna-disc:p8",
+    "etna-disc:p9"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Two Nerellos and a Carricante",
+   "paras": [
+    "Etna bianco is at least 60% Carricante. Catarratto, either comune or lucido, can make up to 40%. Etna bianco superiore is at least 80% Carricante. It is made only from grapes grown in the part of the zone in Milo, and it is a very pale straw yellow with greenish glints. Carricante grows high up, even above the heights Nerello Mascalese reaches. Its name probably comes from the growers of Viagrande, for its high and steady yield.",
+    "Etna rosso and rosato are at least 80% Nerello Mascalese, with up to 20% Nerello Mantellato, also called Nerello Cappuccio. Up to 10% white grapes may join them. Nerello Mascalese is named after the old county of Mascali, its probable home or at least a place it spread from.",
+    "Etna rosso riserva is aged at least four years inside the zone, with at least 12 months in wood. Sparkling Etna is white or rosato and at least 80% Nerello Mascalese. It is made only by natural second fermentation in the bottle, with at least 18 months on the lees. The white sparkling is red grapes made as a white wine.",
+    "Sparkling Etna has a long history. Baron Spitaleri was making it by the classic method by the late 1800s. Etna was Sicily's first DOC, in 1968, and the sparkling and riserva types were added in 2011."
+   ],
+   "cite": [
+    "etna-disc:p1",
+    "etna-disc:p2",
+    "etna-disc:p4",
+    "etna-disc:p5",
+    "etna-disc:p8",
+    "etna-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Mascali, home of Nerello Mascalese",
+     "point": [
+      15.2,
+      37.76
+     ],
+     "zoom": 11,
+     "caption": "The old county of Mascali is the probable origin, or at least a place of spread, of Nerello Mascalese.",
+     "cite": [
+      "etna-disc:p8"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Contrada",
+    "text": "A named local area, mapped in a list in the rules. Its name, or a commune's, may follow \"Etna\" on the label when the grapes come from it."
+   },
+   {
+    "term": "Vintage",
+    "text": "Every Etna wine must show the harvest year. Only non-vintage sparkling is exempt."
+   }
+  ],
+  "cite": [
+   "etna-disc:p6"
+  ]
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": "sforzato-di-valtellina",
+ "title": "Why Sforzato di Valtellina tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Nebbiolo grapes here are picked ripe, then left to dry through the winter cold until about 26% to 27% of their juice is sugar. The result is a dry red of at least 14% alcohol, grown on steep stone terraces under the Alps.",
+  "cite": [
+   "sforzato-di-valtellina-disc:p3",
+   "sforzato-di-valtellina-disc:p4",
+   "sforzato-di-valtellina-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "A south-facing slope above the Adda",
+   "paras": [
+    "Valtellina lies north of Lake Como, between latitudes 46 and 46.5. The vineyard stretch of the valley runs east to west. On the right bank of the river Adda, the foothills face fully south.",
+    "The Rhaetian Alps shelter the valley to the north and east. All their peaks top 3,000 m, and some pass 4,000 m. To the south, the Orobie Alps, only slightly lower, close it into a kind of amphitheatre.",
+    "Vines grow on the south-facing slope of the Rhaetian side, from 300 m up to 700 m. The only exceptions are two alluvial fans in the widest part of the valley. The zone runs from Ardenno to Tirano on the right bank. On the left bank it covers only slopes in Villa di Tirano (Stazzona) and Albosaggia, up to 600 m."
+   ],
+   "cite": [
+    "sforzato-di-valtellina-disc:p2",
+    "sforzato-di-valtellina-disc:p4"
+   ],
+   "fly": [
+    {
+     "label": "The Rhaetian slope above the Adda",
+     "point": [
+      9.95,
+      46.16
+     ],
+     "zoom": 10,
+     "caption": "The vineyards sit on the south-facing Rhaetian side of the valley, from 300 m up to 700 m.",
+     "cite": [
+      "sforzato-di-valtellina-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Steady wind and wide day-night swings",
+   "paras": [
+    "The nearby basin of Lake Como, to the south-west, acts as a thermal regulator. The valley gets constant ventilation and little rain: about 850 mm a year, well spread, and less as the valley climbs.",
+    "The south-facing slope gives plenty of light, with over 1,900 hours of sun a year. Daytime air temperature in the growing season, April to October, ranges from +5° to +35°C. Relative humidity stays low, between 65% and 80%.",
+    "Just before ripening ends, in late September and early October, day and night differ by 8° to as much as 20°. On the terraces, late frost does no damage, though it is often a problem on the valley floor."
+   ],
+   "cite": [
+    "sforzato-di-valtellina-disc:p4",
+    "sforzato-di-valtellina-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Lake Como, the valley's heat regulator",
+     "point": [
+      9.3,
+      46.05
+     ],
+     "zoom": 9,
+     "caption": "The Como basin lies to the south-west and acts as a thermal regulator for the valley.",
+     "cite": [
+      "sforzato-di-valtellina-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "terraces",
+   "beat": "ground",
+   "title": "Broken-down granite and dry-stone walls",
+   "paras": [
+    "The soil is mostly sandy (about 70%) and silty (about 18%), with no limestone. It is broken-down granite. It drains very easily and holds almost no water, so it is prone to drought.",
+    "It is also shallow. The workable layer is 40 to 120 cm deep. It is not rare to see vines send their roots straight into cracks in the rock.",
+    "Dry-stone walls hold up the terraced vineyards, called ronchi. Together they stretch over 2,500 km. Slopes are in some cases steeper than 70%, which focuses the sun's energy on a smaller surface.",
+    "The mass of stones and rock in the terraces helps warm the vineyard further, and so does the slope. Air in the vines is constantly 4° to 5°C warmer than on the flat valley floor."
+   ],
+   "cite": [
+    "sforzato-di-valtellina-disc:p4",
+    "sforzato-di-valtellina-disc:p5",
+    "sforzato-di-valtellina-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The terraces near Sondrio",
+     "point": [
+      9.88,
+      46.17
+     ],
+     "zoom": 11,
+     "caption": "Over 2,500 km of dry-stone walls hold up the vineyards on the Rhaetian slope.",
+     "cite": [
+      "sforzato-di-valtellina-disc:p5",
+      "sforzato-di-valtellina-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dried",
+   "beat": "rules",
+   "title": "A red made from dried grapes",
+   "paras": [
+    "Sforzato (or Sfursat) is a dry red wine made only from grapes dried beforehand. At least 90% is Nebbiolo, called Chiavennasca locally. Up to 10% can be other non-aromatic red grapes suited to Lombardy.",
+    "The grapes are picked at harvest, ripe at about 18% to 20% sugar, perfectly healthy and with berries well apart. They then rest in the winter cold, until the end of January or, in some years, February or March. They lose about 30% of their water and reach 26% to 27% sugar.",
+    "In the past the grapes lay on mats or layers of straw, mostly in the loft of the house. Today they usually sit on stacked cane racks or in small trays, in dry, well-ventilated rooms.",
+    "The dried grapes are vinified from 1 December. The region can allow an earlier start when the weather makes it necessary. The wine needs at least 14% alcohol. No enrichment or concentration is allowed.",
+    "It cannot be sold before 20 months of ageing, at least 12 of them in wooden barrels. The count starts on 1 April after the harvest. The label always shows the vintage. Words such as riserva or superiore are banned."
+   ],
+   "cite": [
+    "sforzato-di-valtellina-disc:p1",
+    "sforzato-di-valtellina-disc:p2",
+    "sforzato-di-valtellina-disc:p3",
+    "sforzato-di-valtellina-disc:p4",
+    "sforzato-di-valtellina-disc:p5"
+   ]
+  }
+ ]
+}

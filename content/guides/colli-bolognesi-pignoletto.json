@@ -1,0 +1,122 @@
+{
+ "id": "colli-bolognesi-pignoletto",
+ "title": "Why Colli Bolognesi Pignoletto tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Pignoletto comes from the foothills south of Bologna, mostly below 300 m. It is a white, still or sparkling, that smells of white flowers with pear and apple.",
+  "cite": [
+   "colli-bolognesi-pignoletto-disc:p1",
+   "colli-bolognesi-pignoletto-disc:p6",
+   "colli-bolognesi-pignoletto-disc:p7",
+   "colli-bolognesi-pignoletto-disc:p9",
+   "colli-bolognesi-pignoletto-disc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valleys",
+   "beat": "place",
+   "title": "Foothills between the rivers",
+   "paras": [
+    "The vineyards lie on the foothills and mid-hills of the Apennines south of Bologna. They run from the Val Samoggia in the west, across the wide Reno valley, to the river Idice in the east.",
+    "All these rivers run at right angles to the line of the Apennines. The north-south valleys give most vineyards an east-southeast exposure. They also help the winds flow through, which helps make the setting airy and bright.",
+    "A wine from these hills was already noted by Pliny the Elder in the 1st century AD. It was lightly sparkling and blond, but not sweet enough for the taste of imperial Rome. A document of 973 AD mentions vines on the hills by the abbey of Monteveglio. In 1250 the statute of Bologna ordered a \"Strada dei vini\" (road of the wines) to carry the hill wines safely into the city."
+   ],
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p9",
+    "colli-bolognesi-pignoletto-disc:p10",
+    "colli-bolognesi-pignoletto-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "The Reno valley",
+     "point": [
+      11.25,
+      44.4
+     ],
+     "zoom": 10,
+     "caption": "The wide Reno valley crosses the hills between the Val Samoggia to the west and the Idice to the east.",
+     "cite": [
+      "colli-bolognesi-pignoletto-disc:p9"
+     ]
+    },
+    {
+     "label": "Monteveglio abbey",
+     "point": [
+      11.0907,
+      44.4896
+     ],
+     "zoom": 13,
+     "caption": "A document of 973 AD speaks of vines on the hills by the abbey of Monteveglio.",
+     "cite": [
+      "colli-bolognesi-pignoletto-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A little thirst in summer",
+   "paras": [
+    "Rain averages 800 mm a year on the high plain and rises to 1,200 mm in the highest hills. Mean temperatures run from 14 °C down to 12 °C, falling as the rain rises.",
+    "On the low hills there is a moderate water deficit, up to 350 mm a year. Some summer water stress helps ripening grapes concentrate sugars and build aroma components.",
+    "Above about 400 m the picture changes to a water surplus, even a large one, up to 800 mm a year. The Winkler Index, a measure of growing-season heat, peaks at about 2100 on the lower ground. Below about 400 m the warmth is ideal for growing and ripening a wide range of grapes."
+   ],
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clays, silts and yellow sands",
+   "paras": [
+    "Vines grow mostly below 300 m. West of the Reno they grow on fine-textured soils with a variable lime content. They also grow on moderately fine soils, rich in silt and very calcareous.",
+    "The fine soils sit on the generally unstable slopes of the Argille Scagliose, the \"scaly clays\". This is a chaotic clay mass holding larger or smaller blocks of harder rock. They also sit on the Blue Clays of the first hills and on old, nearly flat alluvial fans.",
+    "The silty, very calcareous soils sit on the silty layers of the landslide-and-gully hills and the first hills. Yellow sands crop out on the wide crests of the first hills.",
+    "Steep sandstone ridges and cliffs, mostly wooded, are most widespread in the middle of the area, between the Lavino and the Reno. They spread across the south-east too."
+   ],
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p9",
+    "colli-bolognesi-pignoletto-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Landslide and gully hills",
+     "point": [
+      11.15,
+      44.42
+     ],
+     "zoom": 10.5,
+     "caption": "The hills of landslides and gullies, on Argille Scagliose, lie only in the south-west of the area, west of the Lavino.",
+     "cite": [
+      "colli-bolognesi-pignoletto-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wine",
+   "beat": "rules",
+   "title": "One grape, still and sparkling",
+   "paras": [
+    "The main grape is Grechetto gentile, locally called Alionzina. The wine must hold at least 85% of it. The rest, up to 15%, can be other non-aromatic white varieties grown in Emilia-Romagna, and Pinot nero or Pinot grigio can be vinified white.",
+    "The wines are all straw yellow. Superiore is still, dry to off-dry, with at least 11.5% alcohol. It tastes of almond and citrus and is sometimes slightly bitter.",
+    "Classico Superiore is still too. It needs at least 95% Grechetto gentile and grapes from the oldest zone, which covers all of Monte San Pietro and parts of five other municipalities. It is dry and warm, with at least 12% alcohol and sometimes a vanilla note. Yields are capped at 9 t/ha, against 11 t/ha for Superiore. It may be sold from 4 October of the year after the harvest.",
+    "Frizzante is lightly sparkling and dry, fresh and tangy with a citrus finish. Where it is made by fermentation in the bottle it can be hazy, and the label must say \"rifermentazione in bottiglia\" (refermented in the bottle).",
+    "Spumante is fully sparkling, from brut nature to extra dry, with a fine, lasting mousse and at least 11% alcohol. It comes as plain spumante or as quality spumante, whose aromas are more intense.",
+    "Any of these wines kept in wood may show a light note of wood."
+   ],
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p1",
+    "colli-bolognesi-pignoletto-disc:p2",
+    "colli-bolognesi-pignoletto-disc:p3",
+    "colli-bolognesi-pignoletto-disc:p4",
+    "colli-bolognesi-pignoletto-disc:p6",
+    "colli-bolognesi-pignoletto-disc:p7",
+    "colli-bolognesi-pignoletto-disc:p8"
+   ]
+  }
+ ]
+}

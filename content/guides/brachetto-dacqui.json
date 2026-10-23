@@ -1,0 +1,86 @@
+{
+ "id": "brachetto-dacqui",
+ "title": "Why Brachetto d'Acqui tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Over the years the land and traditions of the Alto Monferrato \"selected\" the grape that suits them best: Brachetto. Its aroma is very delicate in every wine of the name, and musky in the Spumante and the Passito.",
+  "cite": [
+   "brachetto-dacqui-disc:p7",
+   "brachetto-dacqui-disc:p5",
+   "brachetto-dacqui-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills in two provinces",
+   "paras": [
+    "The vineyards lie in the Alto Monferrato, spread over 26 communes in the provinces of Asti and Alessandria. The wine may also be sold simply as \"Acqui\", and Acqui Terme is one of those communes.",
+    "Only hillside vineyards with a suitable position and orientation count. Nizza Monferrato is in the zone only on the right bank of the Belbo stream."
+   ],
+   "cite": [
+    "brachetto-dacqui-disc:p1",
+    "brachetto-dacqui-disc:p2",
+    "brachetto-dacqui-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Acqui Terme",
+     "point": [
+      8.468,
+      44.676
+     ],
+     "zoom": 10,
+     "caption": "Acqui Terme, in the province of Alessandria, is one of the communes of the zone.",
+     "cite": [
+      "brachetto-dacqui-disc:p2"
+     ]
+    },
+    {
+     "label": "Nizza Monferrato and the Belbo",
+     "point": [
+      8.36,
+      44.772
+     ],
+     "zoom": 10,
+     "caption": "Nizza Monferrato counts only on the right bank of the Belbo stream.",
+     "cite": [
+      "brachetto-dacqui-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Clay here, sand there",
+   "paras": [
+    "Only vineyards whose marl soils are of a limy clay nature are considered suitable. Within the zone the soil changes. Around Nizza Monferrato it is clay, while around Acqui there is sand and silt.",
+    "These soils clearly and markedly shape the aroma nuances of the grapes and of the wines made from them."
+   ],
+   "cite": [
+    "brachetto-dacqui-disc:p2",
+    "brachetto-dacqui-disc:p7"
+   ]
+  },
+  {
+   "id": "brachetto",
+   "beat": "rules",
+   "title": "One grape, three wines",
+   "paras": [
+    "The wines come from at least 97% Brachetto. The other 3% can come from varieties suited to growing in Piedmont. The grape has a distinctive and prized range of aromas. The most common training is Guyot, which with the vine's restrained vigour gives grapes of very high quality.",
+    "The still wine is ruby of medium intensity, tending to light garnet or pink. The aroma is very delicate and sometimes fruity, leaning spicy in the less sweet version. It runs from dry to sweet. A light fizz from fermentation alone, up to 2.5 bar, is allowed. No wine of the name may have gas added artificially.",
+    "The Spumante has a fine, persistent foam and a musky aroma. It runs from extra brut to sweet, and the sparkling process takes at least 1 month. Around the 1950s Arturo Bersano developed a Brachetto Spumante made in a tank by the Charmat method.",
+    "The Passito is sweet, harmonious and velvety, with a musky aroma and sometimes a hint of wood. It has at least 16% total alcohol. The grapes can be dried on the vine, in rooms suited to drying, or both. It cannot be sold before 1 October of the year after the harvest."
+   ],
+   "cite": [
+    "brachetto-dacqui-disc:p1",
+    "brachetto-dacqui-disc:p2",
+    "brachetto-dacqui-disc:p5",
+    "brachetto-dacqui-disc:p6",
+    "brachetto-dacqui-disc:p7"
+   ]
+  }
+ ]
+}

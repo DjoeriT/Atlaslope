@@ -1,0 +1,93 @@
+{
+ "id": "elba-aleatico-passito",
+ "title": "Why Elba Aleatico Passito tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On Elba the summer is hot and dry, and September is hot and sunny. That led growers to dry the grapes in the sun for a short time, and the Aleatico wine is sweet and full-bodied.",
+  "cite": [
+   "elba-aleatico-passito-disc:p5",
+   "elba-aleatico-passito-disc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "island",
+   "beat": "place",
+   "title": "An island with a mountain in the west",
+   "paras": [
+    "Elba is the largest island of the Tuscan archipelago. It covers 224 km² and is the third largest island in Italy. The land is mostly hills, with a massive mountain block in the west that rises above 1,000 m.",
+    "Vines grow from sea level up to 450 m. Most of the vineyard sits on terraces and hillsides. The grapes must come from the island's own municipalities.",
+    "Vines have grown here since the Etruscan period. The old bush training called alberello shows Greek influence. Pliny the Elder called Elba an \"island fertile in wine\"."
+   ],
+   "cite": [
+    "elba-aleatico-passito-disc:p1",
+    "elba-aleatico-passito-disc:p4",
+    "elba-aleatico-passito-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Capanne",
+     "point": [
+      10.17,
+      42.77
+     ],
+     "zoom": 10,
+     "caption": "The mountain block in the west of Elba rises above 1,000 m.",
+     "cite": [
+      "elba-aleatico-passito-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot, dry summers by the sea",
+   "paras": [
+    "The climate is Mediterranean. The mean annual temperature is about 17 °C, with winters averaging 10 °C and summers 24 °C.",
+    "Rain falls mostly from late autumn to spring. The average is about 700 mm a year, with peaks of 900 mm on the north slopes of Monte Capanne.",
+    "The hot, dry summer gives low yields per hectare and per vine. It also favours early ripening and very healthy grapes.",
+    "High temperatures and sun in September led growers to dry the grapes in the sun for a short time, 10 to 20 days. This is typical of the Mediterranean islands. The same dry climate has always led growers to give the vines rescue irrigation where water could be found and stored. They did so mostly in the first years of a vineyard."
+   ],
+   "cite": [
+    "elba-aleatico-passito-disc:p4",
+    "elba-aleatico-passito-disc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Three kinds of soil, all low in organic matter",
+   "paras": [
+    "Elba's geology is complex, so the soil changes across the island. In the west, around Monte Capanne, granite breaks down into loose, very permeable soils.",
+    "The centre is sedimentary, with small plains between the coast and gentle hills. The soils there are limy and pebbly, with a medium clay content.",
+    "The east is metamorphic. Shallow soils with coarse stones and a good share of minerals dominate.",
+    "The soils differ in texture but are always poor in organic matter. That makes them well suited to quality grapes. These give the wines particular aromas, with structure and complexity.",
+    "Aleatico copes with all of them. The vine is hardy and gives little fruit. Its loose bunches resist fungal disease as the grapes ripen."
+   ],
+   "cite": [
+    "elba-aleatico-passito-disc:p4",
+    "elba-aleatico-passito-disc:p5"
+   ]
+  },
+  {
+   "id": "passito",
+   "beat": "rules",
+   "title": "One grape, one sweet red",
+   "paras": [
+    "The wine is made only from Aleatico, and only as a sweet red passito. Aleatico came to Elba from Tuscany. Since the Renaissance it has been described as a grape for \"special wines\" for feasts and celebrations.",
+    "After careful sorting, the grapes are dried for at least 10 days. They dry in the open air or in suitable rooms. Partial drying with ventilated or dehumidified air is allowed. The grapes must reach at least 30% sugar.",
+    "The vines give at most 7 tonnes of grapes per hectare, and the wine at most 35% of the fresh grape weight. Drying, winemaking and ageing must take place on the island. Bottling must too, since shipping the wine in bulk by sea can harm it. A few firms that traditionally bottled elsewhere hold individual permits.",
+    "At release the wine has at least 19% total alcohol, of which at least 12% has fermented.",
+    "The label may carry \"vigna\" if it is followed by the name of the vineyard place. The wine from that vineyard must be made and kept apart. Words such as \"superiore\" or \"selezionato\" are not allowed. The vintage must always appear. The wine can be sold from 1 March of the year after the harvest."
+   ],
+   "cite": [
+    "elba-aleatico-passito-disc:p1",
+    "elba-aleatico-passito-disc:p2",
+    "elba-aleatico-passito-disc:p3",
+    "elba-aleatico-passito-disc:p4",
+    "elba-aleatico-passito-disc:p5"
+   ]
+  }
+ ]
+}

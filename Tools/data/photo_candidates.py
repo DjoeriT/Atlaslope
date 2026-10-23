@@ -24,6 +24,9 @@ domaine, château, coteau, cave, grand cru, premier cru), the disc cover, name s
 Outlines come from data/countries/fr/areas.geojson (kind "place"); a place without one is searched by name plus a vine word, as in the
 fill pass. FR_CATS holds Commons categories for the pilot places. Keeps 20 per place (at most 2 per photographer) and writes
 Review/sources/photo-candidates-fr.json and contact-sheets/fr-<place>.jpg (5 across).
+Italy pass (22 Oct 2026, decisions #70, #80): `photo_candidates.py it [<id> ...]`, the same route for the 87 places in
+data/countries/it/places.json with Italian vine words (vigneto, vigna, vendemmia, filari, cantina, colline) and outlines from
+data/countries/it/areas.geojson; writes Review/sources/photo-candidates-it.json and contact-sheets/it-<place>.jpg.
 
 Second version (release 4). The first one searched by name and within 10 km of the centroid, which returned wine bottles from
 other regions, a Chilean winery and space-station photos. This one:
@@ -531,9 +534,42 @@ def fr(ids):
         print("sheet", p["id"], flush=True)
 
 
+IT_OUT = ROOT / "Review/sources/photo-candidates-it.json"
+VINE_IT = re.compile(VINE.pattern + r"|vignet[oi]|vign[ae]\b|vigneti|vendemmia|filari|cantina|langhe|colline", re.I)
+IT_VINE_Q = "(vigneto OR vigneti OR vigna OR vendemmia OR filari OR cantina OR vineyard)"
+
+
+def it(ids):
+    places = [p for p in json.loads((ROOT / "data/countries/it/places.json").read_text())["places"] if not ids or p["id"] in ids]
+    geoms = {x["properties"]["id"]: shape(x["geometry"]) for x in json.loads((ROOT / "data/countries/it/areas.geojson").read_text())["features"]}
+    done = json.loads(IT_OUT.read_text()) if IT_OUT.exists() else {}
+    for p in places:
+        if p["id"] in done: continue
+        g = geoms.get(p["id"])
+        found = {}
+        try:
+            for lon, lat in (discs(g, max_n=40) if g is not None else []):
+                r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 500, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
+                for x in r["query"]["geosearch"]: found[x["title"]] = (x["lon"], x["lat"])
+                time.sleep(.5)
+            r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 100, "srsearch": f'"{p["name"]}" ' + IT_VINE_Q})
+            for x in r["query"]["search"]: found.setdefault(x["title"], None)
+            cands = [c for c in info(found, g, p["name"], VINE_IT) if c["vine"] or c["wine"]]
+        except Exception as e:  # keep what is done; a rerun retries this place
+            print(p["id"], "error:", e, flush=True); continue
+        done[p["id"]] = {"name": p["name"], "batch": p["group"], "outline": g is not None, "seen": len(found), "kept": len(cands),
+                         "candidates": rank(list(cands), 20, 2), "all": cands}
+        print(p["id"], len(found), len(cands), len(done[p["id"]]["candidates"]), flush=True)
+        IT_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for p in [p for p in places if p["id"] in done]:
+        sheet(p["id"], [p], done, "it-", cols=5)
+        print("sheet", p["id"], flush=True)
+
+
 def main():
     if sys.argv[1:] == ["pt"]: return pt()
     if sys.argv[1:2] == ["fr"]: return fr(sys.argv[2:])
+    if sys.argv[1:2] == ["it"]: return it(sys.argv[2:])
     if sys.argv[1:] == ["fill"]: return fill()
     if sys.argv[1:] == ["cats"]: return cats()
     tree = json.loads((ROOT / "data/places.json").read_text())

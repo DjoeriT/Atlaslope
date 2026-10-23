@@ -1,0 +1,111 @@
+{
+ "id": "gattinara",
+ "title": "Why Gattinara tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Gattinara's hills carry the minerals of the Alps they came from, over a volcanic subsoil. Nebbiolo, here also called Spanna, must age at least 35 months before the wine can be sold.",
+  "cite": [
+   "gattinara-disc:p1",
+   "gattinara-disc:p3",
+   "gattinara-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "foot-of-the-rosa",
+   "beat": "place",
+   "title": "At the foot of Monte Rosa",
+   "paras": [
+    "Gattinara lies in Alto Piemonte, at the foot of Monte Rosa, in the far north-east of the region. The vineyards follow a bowl of hills behind the town.",
+    "The zone is just one municipality, the whole territory of Gattinara."
+   ],
+   "cite": [
+    "gattinara-disc:p1",
+    "gattinara-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Rosa",
+     "point": [
+      7.8667,
+      45.9369
+     ],
+     "zoom": 9,
+     "caption": "Gattinara sits at the foot of Monte Rosa, in the far north-east of Piemonte.",
+     "cite": [
+      "gattinara-disc:p5"
+     ]
+    },
+    {
+     "label": "The hills behind Gattinara",
+     "point": [
+      8.36,
+      45.62
+     ],
+     "zoom": 11,
+     "caption": "The vineyards run along a bowl of hills behind the town.",
+     "cite": [
+      "gattinara-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Hills facing west-south-west, rock to the east",
+   "paras": [
+    "The hills face west-south-west. To the east, an irregular rocky promontory rises above 500 m and shelters the area from mountain winds."
+   ],
+   "cite": [
+    "gattinara-disc:p5"
+   ]
+  },
+  {
+   "id": "volcanic-hills",
+   "beat": "ground",
+   "title": "Alpine hills on volcanic ground",
+   "paras": [
+    "The hills carry the mineral make-up of the Alpine arc they came from. The subsoil is volcanic, rich in magmatic minerals such as porphyry and granite. Potassium is abundant. Magnesium and iron are abundant too.",
+    "Vineyards must stand on hillsides between 250 m and 550 m above sea level. The soil is clay, silt, sand or a mix of them. Valley floor soils are excluded because they do not get enough sun."
+   ],
+   "cite": [
+    "gattinara-disc:p2",
+    "gattinara-disc:p5"
+   ]
+  },
+  {
+   "id": "years-in-wood",
+   "beat": "rules",
+   "title": "A red made to wait",
+   "paras": [
+    "Gattinara is a dry red from 90 to 100% Nebbiolo (Spanna). Vespolina can add up to 4%, and Uva Rara can join it, but together they may not pass 10%.",
+    "Training mostly on Guyot, with low yields, has always favoured quality and long ageing. Gattinara must age 35 months, 24 of them in wood. Gattinara Riserva must age 47 months, 36 of them in wood. Ageing starts on 1 November of the harvest year. It must happen in Gattinara, though the ministry may allow long-standing cellars in nearby towns.",
+    "The wine cannot be sold before 1 October of the third year after harvest, or the fourth year for the Riserva.",
+    "The Riserva is garnet red turning towards orange. Its nose recalls violet, especially when very old.",
+    "A vineyard name can follow the word \"vigna\" on the label. Those vines must be at least 7 years old, and the yield is capped at 7.20 t/ha."
+   ],
+   "cite": [
+    "gattinara-disc:p1",
+    "gattinara-disc:p2",
+    "gattinara-disc:p3",
+    "gattinara-disc:p4",
+    "gattinara-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Gattinara town",
+     "point": [
+      8.3597,
+      45.6166
+     ],
+     "zoom": 11,
+     "caption": "In 1872 the government set up a royal experimental wine station here, with a wine school, vineyards, a cellar and a weather station.",
+     "cite": [
+      "gattinara-disc:p5"
+     ]
+    }
+   ]
+  }
+ ]
+}

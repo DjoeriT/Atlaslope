@@ -1,0 +1,132 @@
+{
+ "id": "aglianico-del-vulture",
+ "title": "Why Aglianico del Vulture tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Aglianico del Vulture grows on the slopes of an extinct volcano, over tuff that stores water for the dry summer. Air currents drawn in by the mountain make summer days and nights differ sharply, so the grapes ripen slowly, often into November.",
+  "cite": [
+   "aglianico-del-vulture-disc:p3",
+   "aglianico-del-vulture-disc:p4",
+   "aglianico-del-vulture-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "volcano",
+   "beat": "place",
+   "title": "The slopes of an extinct volcano",
+   "paras": [
+    "The vineyards lie in the north of Basilicata, in the province of Potenza. They cover high and middle hills on the slopes of Monte Vulture, a volcano that is now extinct but was active until the late Pleistocene. Its highest peak reaches 1,327 m.",
+    "The land falls away gradually to the west along the river Ofanto and to the east towards the plain of Puglia. Eruptions that began about 800,000 years ago dammed rivers and made lakes that later dried out. They also left uneven hills across the whole area."
+   ],
+   "cite": [
+    "aglianico-del-vulture-disc:p3"
+   ],
+   "fly": [
+    {
+     "label": "Monte Vulture",
+     "point": [
+      15.62,
+      40.95
+     ],
+     "zoom": 10,
+     "caption": "An extinct volcano, active until the late Pleistocene, with its highest peak at 1,327 m.",
+     "cite": [
+      "aglianico-del-vulture-disc:p3"
+     ]
+    },
+    {
+     "label": "The Ofanto valley",
+     "point": [
+      15.75,
+      41.05
+     ],
+     "zoom": 9,
+     "caption": "The land falls gradually to the west along the river Ofanto.",
+     "cite": [
+      "aglianico-del-vulture-disc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry summers, wet harvests",
+   "paras": [
+    "July and August are decidedly arid. June and September are mild. October and November are sub-humid or humid. Rain averages 650 to 750 mm a year, mostly in autumn and winter. Yearly rain varies from 650 mm to 1,300 mm. Summer rain is scarce or even nil, under 100 mm.",
+    "Summers average 25 °C, with peaks of 35 °C when African winds blow and dry out the leaves. The volcanic massif draws in air from the eastern and western coasts, and hill breezes add to it. That lowers summer temperatures noticeably, with important effects on the vines and the phenolics in the skins. In summer, days and nights differ sharply.",
+    "The vine ripens slowly and fully, often until November. Spring frosts are frequent, but they usually don't harm the vine, because Aglianico buds late.",
+    "Harvest usually falls in October and November, when rain is already high. Damp becomes a health risk for the grapes and snow can make picking hard. Only meticulous care of the vineyards lets the grapes hold out through such a long growing cycle."
+   ],
+   "cite": [
+    "aglianico-del-vulture-disc:p4",
+    "aglianico-del-vulture-disc:p6"
+   ]
+  },
+  {
+   "id": "tuff",
+   "beat": "ground",
+   "title": "Tuff that holds the summer's water",
+   "paras": [
+    "Volcanic activity left subsoils of different origin: volcanic tuff and tuff from sandstone deposits. In the dry summer months the tuff acts as a store of water for the vine.",
+    "The soils run from sandy to sandy volcanic ash to silty clay. All are rich in colloids, a sure basis for fertility. They are mostly of volcanic origin, with active layers deep enough for good yields.",
+    "Vines grow between 200 and 700 m above sea level on slopes of varying steepness, generally facing east and south-east. Ground that is too low or too high is left out as unsuitable for quality wine."
+   ],
+   "cite": [
+    "aglianico-del-vulture-disc:p2",
+    "aglianico-del-vulture-disc:p3",
+    "aglianico-del-vulture-disc:p4",
+    "aglianico-del-vulture-disc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "A tannic red, and a red with bubbles",
+   "paras": [
+    "Aglianico del Vulture N. and Aglianico N. are the two grapes allowed. They make two wines: a still red and a red sparkling wine.",
+    "The still red is ruby, with an intense and pleasant aroma. It runs from dry to off-dry (up to 10 g per litre of sugar) and is suitably tannic and savoury. It needs at least 12.50% alcohol in total. It can't be sold before 1 September of the year after the harvest.",
+    "The sparkling wine comes only from natural refermentation in the bottle, which takes at least 9 months. It is ruby tending to garnet and may show orange reflections with age. The bubbles are fine and persistent. The aroma is fruity, and the taste runs from brut to extra dry.",
+    "Sparkling wine was once a mainstay of the local wine economy. Towns such as Rionero and Barile sold large amounts of it outside the region, for wedding banquets and religious feasts. The Vatican asked for it every year.",
+    "By tradition the grapes were picked in November with so much sugar that the first fermentation couldn't turn it all into alcohol. That is what led to refermentation in the bottle."
+   ],
+   "cite": [
+    "aglianico-del-vulture-disc:p1",
+    "aglianico-del-vulture-disc:p2",
+    "aglianico-del-vulture-disc:p3",
+    "aglianico-del-vulture-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Rionero in Vulture",
+     "point": [
+      15.675,
+      40.925
+     ],
+     "zoom": 11,
+     "caption": "One of the towns that sold large amounts of sparkling wine outside the region.",
+     "cite": [
+      "aglianico-del-vulture-disc:p5"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vintage year",
+    "text": "The year of the harvest must be on the label of the still red, but not on the sparkling wine."
+   },
+   {
+    "term": "Place names",
+    "text": "A label may name a hamlet, a municipality or a defined area, such as the ones listed in the rules' Annex A."
+   }
+  ],
+  "cite": [
+   "aglianico-del-vulture-disc:p3",
+   "aglianico-del-vulture-disc:p8"
+  ]
+ }
+}

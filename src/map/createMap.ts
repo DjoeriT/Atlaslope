@@ -82,8 +82,16 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     pitch: restored?.pitch ?? START_PITCH,
     maxPitch: 70,
     // Portugal's outlines are built from DGT's CAOP 2025 (CC BY 4.0 asks for the credit; PR #214 review, 22 Oct 2026)
-    // France's from INAO's parcel delimitation, which only INAO's own plans bind (decision #58).
-    attributionControl: { compact: true, customAttribution: ['Portugal outlines: DGT, CAOP 2025', 'France outlines: INAO, for information'] },
+    // France's from INAO's parcel delimitation, which only INAO's own plans bind (decision #58). Italy's from Regione Piemonte's
+    // DOC/DOCG areas, elsewhere whole ISTAT municipalities, so larger than the real area (`approximate: true` on the feature; #62).
+    attributionControl: {
+      compact: true,
+      customAttribution: [
+        'Portugal outlines: DGT, CAOP 2025',
+        'France outlines: INAO, for information',
+        'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits',
+      ],
+    },
     antialias: true,
   });
   // The credits start folded to their small "i" on every screen (site visual review, 18 Oct 2026): MapLibre only folds them on narrow

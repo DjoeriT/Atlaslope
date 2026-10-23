@@ -1,0 +1,100 @@
+{
+ "id": "lison",
+ "title": "Why Lison tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Lison grows on a flat plain a few kilometres from the Venetian coast, where evening winds cool the nights. The temperate climate and the wide gap between day and night give fresh, fruity whites.",
+  "cite": [
+   "lison-disc:p6",
+   "lison-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "A plain between two rivers",
+   "paras": [
+    "The vineyards lie on the plain a few kilometres from the Venetian coast, between the Tagliamento and Livenza rivers. They spread over three provinces. Most of the towns are in the province of Venice.",
+    "The name comes from Lison, a Roman village. Vines were already grown here in Roman times. Only with the Benedictine monks, in the 10th century, did the area discover a rational way of growing them."
+   ],
+   "cite": [
+    "lison-disc:p2",
+    "lison-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Between the Tagliamento and the Livenza",
+     "point": [
+      12.78,
+      45.77
+     ],
+     "zoom": 9,
+     "caption": "The Lison vineyards lie on the plain between the Tagliamento and Livenza rivers, a few kilometres from the Venetian coast.",
+     "cite": [
+      "lison-disc:p6"
+     ]
+    },
+    {
+     "label": "Caorle and its lagoons",
+     "point": [
+      12.88,
+      45.6
+     ],
+     "zoom": 10,
+     "caption": "Part of the zone runs down to the lagoon country around Caorle, close to the sea.",
+     "cite": [
+      "lison-disc:p2",
+      "lison-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "winds",
+   "beat": "weather",
+   "title": "Sea air and evening winds",
+   "paras": [
+    "The climate is temperate thanks to the nearby sea and lagoons. The flat land favours the vines' exposure to the winds.",
+    "The Bora blows from the east-northeast, cool and dry. The Scirocco often comes from the southeast, warm and humid, at any time of year. The winds blow mostly in the evening and lower the night temperatures. That favours a wide gap between day and night temperatures.",
+    "The temperate climate and the day-night swing give fresh, fruity wines. The balance between malic and tartaric acid depends strongly on them. So do the amount and quality of the grapes' aromas."
+   ],
+   "cite": [
+    "lison-disc:p6",
+    "lison-disc:p7"
+   ]
+  },
+  {
+   "id": "caranto",
+   "beat": "ground",
+   "title": "Clay over a thin layer of caranto",
+   "paras": [
+    "The soils are alluvial, built from material the nearby rivers carried down. A mostly clay layer lies on top. Under it, 30 to 70 cm down, is a thin layer of caranto, which is calcium carbonate.",
+    "The soils hold water well. They are rich in minerals, above all potassium, with calcium and magnesium too. The clay keeps water available to the vine even in long dry spells. That gives the wine body and structure, enough for a long ageing.",
+    "Only alluvial ground of medium texture, leaning to clay or loose, can be planted. Sandy-clay soils are allowed only south of the road from Eraclea to Latisana. Sandy-peaty soils are excluded, and so is damp or flood-prone ground."
+   ],
+   "cite": [
+    "lison-disc:p4",
+    "lison-disc:p6",
+    "lison-disc:p7"
+   ]
+  },
+  {
+   "id": "tai",
+   "beat": "rules",
+   "title": "One white grape with two names",
+   "paras": [
+    "Lison is a dry white made from at least 85% Tai. The grape is also called Tocai, and in 2007 Tai was added as its synonym for Veneto. Other non-aromatic white grapes suited to the three provinces may fill the rest.",
+    "Tocai spread widely from the middle of the 19th century and found its ideal home here. The Lison name was first recognised in 1971 to protect it. In 1974 it merged with Pramaggiore. In 2010 it became a DOCG, a controlled and guaranteed denomination of origin.",
+    "The colour is straw yellow, sometimes with reflections from greenish to golden. A pleasant hint of wood may show on the palate. The wines show best within a year, yet they keep their character over a medium ageing.",
+    "Lison Classico has a lower yield, 10 t/ha against 11 t/ha, and a higher minimum alcohol, 12.50% against 12.00%. Vines must be trained on a single or double trellis, with at least 3,000 vines per hectare in new plantings."
+   ],
+   "cite": [
+    "lison-disc:p1",
+    "lison-disc:p4",
+    "lison-disc:p5",
+    "lison-disc:p7"
+   ]
+  }
+ ]
+}

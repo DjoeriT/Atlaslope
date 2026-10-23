@@ -1,0 +1,130 @@
+{
+ "id": "cerasuolo-di-vittoria",
+ "title": "Why Cerasuolo di Vittoria tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "In south-eastern Sicily, a hot, arid Mediterranean climate meets mostly limestone ground and a pairing of two grapes found together only in this corner of the island. Its dry reds run from floral and fruity to, in the Classico, decidedly cherry.",
+  "cite": [
+   "cerasuolo-di-vittoria-disc:p7",
+   "cerasuolo-di-vittoria-disc:p8",
+   "cerasuolo-di-vittoria-disc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "corner",
+   "beat": "place",
+   "title": "Between the Iblei and the sea",
+   "paras": [
+    "The zone covers about 124,500 hectares of south-eastern Sicily. It takes in land from three neighbouring provinces: Ragusa, Caltanissetta and Catania. The Erei mountains close the area to the north. The Iblei mountains rise to the east, and the hills of central-southern Caltanissetta lie to the west. The Mediterranean forms the southern edge.",
+    "Inside, three bands follow the height. The coastal zone sits on average at 0 to 200 m. The mid hills have vineyards from 200 to 350 m. The high hills average above 350 m."
+   ],
+   "cite": [
+    "cerasuolo-di-vittoria-disc:p2",
+    "cerasuolo-di-vittoria-disc:p6",
+    "cerasuolo-di-vittoria-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Monti Iblei",
+     "point": [
+      14.85,
+      37.05
+     ],
+     "zoom": 9,
+     "caption": "The Iblei mountains close the production area on its eastern side.",
+     "cite": [
+      "cerasuolo-di-vittoria-disc:p6"
+     ]
+    },
+    {
+     "label": "Kamarina and the Ippari mouth",
+     "point": [
+      14.45,
+      36.87
+     ],
+     "zoom": 10,
+     "caption": "The Syracusans founded the colony of Kamarina in 598 BC at the mouth of the Ippari river, inside today's production area.",
+     "cite": [
+      "cerasuolo-di-vittoria-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "beat": "weather",
+   "title": "Hot, dry and bright",
+   "paras": [
+    "The climate is hot and arid Mediterranean, with little rain in summer. The mean annual temperature runs from 19.6 °C at Gela on the coast to 15.4 °C at Caltagirone in the high hills.",
+    "In July and August the day-night swing is strong. It is 9 °C on the coast and 11 °C in the high hills. It peaks at 13 to 14 °C in the mid hills.",
+    "Annual rain runs from 385 mm on the coast to 499 mm in the high hills. The mid hills get 444 mm.",
+    "From June to August the coast gets on average 1 mm of rain. The mid hills get a little over 1 mm and the high hills 9 mm.",
+    "The lie of the land and the way the vineyards face make for a well-aired, bright setting."
+   ],
+   "cite": [
+    "cerasuolo-di-vittoria-disc:p7",
+    "cerasuolo-di-vittoria-disc:p9"
+   ]
+  },
+  {
+   "id": "limestone",
+   "beat": "ground",
+   "title": "Limestone and red earth",
+   "paras": [
+    "The ground is mostly limestone: Miocene calcarenites covered by loose Pleistocene soils. Some areas are mainly sandy or clay-sandy, with minor layers of calcarenite.",
+    "About half the soils are leached brown soils with terra rossa (red earth), formed mostly on calcarenite. A quarter are brown soils, vertic brown soils and vertisols. Fifteen percent are brown soils on mostly sandy and conglomerate rock. The last 10% are alluvial soils and vertisols along the rivers and valley floors."
+   ],
+   "cite": [
+    "cerasuolo-di-vittoria-disc:p7"
+   ]
+  },
+  {
+   "id": "pair",
+   "beat": "rules",
+   "title": "One blend, two release dates",
+   "paras": [
+    "Cerasuolo di Vittoria is a DOCG, upgraded from DOC in 2005. It makes dry still red only. The blend is 50 to 70% Nero d'Avola and 30 to 50% Frappato.",
+    "The two grapes are grown here by tradition. Their combination is unique to this part of Sicily. Paolo Balsamo in 1808 and Domenico Sestini in 1812 both described them in their accounts of Vittoria's vineyards.",
+    "The plain Cerasuolo di Vittoria cannot be sold before 1 June of the year after harvest. The Classico waits longer, until 31 March of the second year after harvest. Every bottle must state its vintage.",
+    "Vines are trained as alberello (bush vines) or on a single trellis. New plantings need at least 4,000 vines per hectare. Grapes are capped at 8 tonnes per hectare. Wine is capped at 65% of the grape weight, or 52 hl per hectare. Enrichment is not allowed."
+   ],
+   "cite": [
+    "cerasuolo-di-vittoria-disc:p1",
+    "cerasuolo-di-vittoria-disc:p4",
+    "cerasuolo-di-vittoria-disc:p5",
+    "cerasuolo-di-vittoria-disc:p6",
+    "cerasuolo-di-vittoria-disc:p8",
+    "cerasuolo-di-vittoria-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Vittoria, founded 1606",
+     "point": [
+      14.53,
+      36.95
+     ],
+     "zoom": 11,
+     "caption": "In 1606 the countess of Modica founded Vittoria and gave each of the first 75 settlers a hectare, on condition that they planted another as vineyard.",
+     "cite": [
+      "cerasuolo-di-vittoria-disc:p7"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word may appear on a label only when a place name follows it, that vineyard is listed separately, and its wine is made and kept in separate containers.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p6"
+    ]
+   }
+  ],
+  "cite": [
+   "cerasuolo-di-vittoria-disc:p6"
+  ]
+ }
+}

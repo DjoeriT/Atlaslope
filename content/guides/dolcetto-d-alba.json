@@ -1,0 +1,103 @@
+{
+ "id": "dolcetto-d-alba",
+ "title": "Why Dolcetto d'Alba tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Dolcetto took its origin on the hills of southern Piedmont, and it has grown there for centuries. In the soils of Langa it finds its ideal home.",
+  "cite": [
+   "dolcetto-d-alba-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills around Alba",
+   "paras": [
+    "The vineyards spread over 35 municipalities around Alba. Above all, Dolcetto grows on the Miocene hills to the right of the river Tanaro.",
+    "Some scholars say Langhe comes from \"langues\", tongues of land. These tongues stretch out in a lively play of outlines, shaped by the changing seasons.",
+    "Only hillsides count. Valley floors and flat land are ruled out.",
+    "So is ground that is damp or short of sun. Vineyards may not lie above 650 m.",
+    "The growing area can be split into two main bands. Around Barolo and Barbaresco the wines are more structured. From Alba up towards the Belbo valley the geology gives finer, lighter Dolcetto."
+   ],
+   "cite": [
+    "dolcetto-d-alba-disc:p2",
+    "dolcetto-d-alba-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Alba and its hills",
+     "point": [
+      8.035,
+      44.7
+     ],
+     "zoom": 10,
+     "caption": "The zone covers 35 municipalities around Alba.",
+     "cite": [
+      "dolcetto-d-alba-disc:p6"
+     ]
+    },
+    {
+     "label": "Barolo, the more structured band",
+     "place": "barolo",
+     "caption": "Around Barolo and Barbaresco the Dolcetto is more structured.",
+     "cite": [
+      "dolcetto-d-alba-disc:p6"
+     ]
+    },
+    {
+     "label": "Belbo valley",
+     "point": [
+      8.199,
+      44.668
+     ],
+     "zoom": 10,
+     "caption": "From Alba up towards the Belbo valley the geology gives finer, lighter Dolcetto.",
+     "cite": [
+      "dolcetto-d-alba-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Blue-grey marl and sand",
+   "paras": [
+    "The Langhe date from the Tertiary era, which began almost 70 million years ago. Most of the ground is Tortonian, one of 14 layers in the pile of sediments that makes up Piedmont's Tertiary basin.",
+    "Tortonian ground is layered marls and sands. The marls are bluish-grey and not very resistant. They form fairly low, rounded hills that show white. These hills are very good for growing vines.",
+    "White tufa marl marks the zone on the high hills above the Tanaro.",
+    "The rules allow clay soils and limy soils. Siliceous soils and mixes of them are allowed too.",
+    "In Langa the clay marls give a fresh, elegant wine. The ruby colour is more or less intense depending on the soil."
+   ],
+   "cite": [
+    "dolcetto-d-alba-disc:p2",
+    "dolcetto-d-alba-disc:p6"
+   ]
+  },
+  {
+   "id": "friend",
+   "beat": "rules",
+   "title": "A dry red for every day",
+   "paras": [
+    "Dolcetto d'Alba is a red wine, and only Dolcetto goes into it. It comes in two types, Dolcetto d'Alba and Dolcetto d'Alba Superiore.",
+    "Yields are capped at 9 t/ha. The grapes need at least 11.00% natural alcohol, or 12.00% for Superiore.",
+    "Superiore is aged 12 months from 1 November of the harvest year. It can only be sold from 1 November of the following year.",
+    "Superiore must reach at least 12.50% total alcohol when sold.",
+    "A label can add \"vigna\", Italian for vineyard, with the vineyard's name. The vines must be at least 7 years old and yields drop to 8 t/ha.",
+    "Vigna grapes need at least 11.50% natural alcohol, or 12.50% for Superiore.",
+    "Every label must show the vintage.",
+    "Its character is simple and rustic.",
+    "It is an everyday wine, rightly called the wine of friendship. It is drunk by the full glass, heart in hand."
+   ],
+   "cite": [
+    "dolcetto-d-alba-disc:p1",
+    "dolcetto-d-alba-disc:p2",
+    "dolcetto-d-alba-disc:p3",
+    "dolcetto-d-alba-disc:p4",
+    "dolcetto-d-alba-disc:p5",
+    "dolcetto-d-alba-disc:p6"
+   ]
+  }
+ ]
+}

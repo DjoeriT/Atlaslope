@@ -35,6 +35,17 @@
     "zone",
     "zone"
    ]
+  },
+  {
+   "id": "italy",
+   "name": "Italy",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -191,6 +202,58 @@
     {
      "id": "fr-champagne",
      "name": "Champagne",
+     "order": 9
+    }
+   ]
+  },
+  {
+   "id": "wset-it",
+   "name": "WSET",
+   "country": "italy",
+   "groups": [
+    {
+     "id": "it-piemonte",
+     "name": "Piemonte",
+     "order": 1
+    },
+    {
+     "id": "it-lombardia",
+     "name": "Lombardia",
+     "order": 2
+    },
+    {
+     "id": "it-north-east",
+     "name": "Alto Adige, Trentino and Friuli",
+     "order": 3
+    },
+    {
+     "id": "it-veneto",
+     "name": "Veneto",
+     "order": 4
+    },
+    {
+     "id": "it-emilia-romagna",
+     "name": "Emilia-Romagna",
+     "order": 5
+    },
+    {
+     "id": "it-tuscany",
+     "name": "Tuscany",
+     "order": 6
+    },
+    {
+     "id": "it-centre",
+     "name": "Centre",
+     "order": 7
+    },
+    {
+     "id": "it-south",
+     "name": "South",
+     "order": 8
+    },
+    {
+     "id": "it-islands",
+     "name": "Sicily and Sardinia",
      "order": 9
     }
    ]
@@ -4923,8 +4986,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 84,
-   "courseOrder": 84
+   "northSouth": 85,
+   "courseOrder": 85
   },
   {
    "id": "jurancon",
@@ -4943,8 +5006,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 88,
-   "courseOrder": 88
+   "northSouth": 90,
+   "courseOrder": 90
   },
   {
    "id": "beaujolais",
@@ -5112,8 +5175,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 91,
-   "courseOrder": 91
+   "northSouth": 93,
+   "courseOrder": 93
   },
   {
    "id": "minervois",
@@ -5135,8 +5198,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 87,
-   "courseOrder": 87
+   "northSouth": 89,
+   "courseOrder": 89
   },
   {
    "id": "fitou",
@@ -5159,8 +5222,8 @@
     "corbieres",
     "languedoc"
    ],
-   "northSouth": 92,
-   "courseOrder": 92
+   "northSouth": 94,
+   "courseOrder": 94
   },
   {
    "id": "corbieres",
@@ -5182,8 +5245,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 90,
-   "courseOrder": 90
+   "northSouth": 92,
+   "courseOrder": 92
   },
   {
    "id": "picpoul-de-pinet",
@@ -5205,8 +5268,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 85,
-   "courseOrder": 85
+   "northSouth": 86,
+   "courseOrder": 86
   },
   {
    "id": "cotes-du-roussillon",
@@ -5228,8 +5291,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 94,
-   "courseOrder": 94
+   "northSouth": 96,
+   "courseOrder": 96
   },
   {
    "id": "cotes-du-roussillon-villages",
@@ -5252,8 +5315,8 @@
     "cotes-du-roussillon",
     "languedoc"
    ],
-   "northSouth": 93,
-   "courseOrder": 93
+   "northSouth": 95,
+   "courseOrder": 95
   },
   {
    "id": "bandol",
@@ -5272,8 +5335,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 89,
-   "courseOrder": 89
+   "northSouth": 91,
+   "courseOrder": 91
   },
   {
    "id": "cotes-de-provence",
@@ -5292,8 +5355,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 86,
-   "courseOrder": 86
+   "northSouth": 88,
+   "courseOrder": 88
   },
   {
    "id": "champagne",
@@ -5314,6 +5377,1786 @@
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
    "northSouth": 1,
    "courseOrder": 1
+  },
+  {
+   "id": "cotes-de-gascogne",
+   "name": "Côtes de Gascogne",
+   "official": "Côtes de Gascogne",
+   "kind": "IGP",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-south-west",
+   "euFile": "PGI-FR-A1162",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    0.3924,
+    43.7304
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 84,
+   "courseOrder": 84
+  },
+  {
+   "id": "pays-doc",
+   "name": "Pays d’Oc",
+   "official": "Pays d'Oc",
+   "kind": "IGP",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-south",
+   "euFile": "PGI-FR-A1367",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    3.1606,
+    43.3774
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 87,
+   "courseOrder": 87
+  },
+  {
+   "id": "barolo",
+   "name": "Barolo",
+   "official": "Barolo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1389",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    7.9566,
+    44.6253
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 44,
+   "courseOrder": 44
+  },
+  {
+   "id": "barbaresco",
+   "name": "Barbaresco",
+   "official": "Barbaresco",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1399",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.0995,
+    44.7152
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 36,
+   "courseOrder": 36
+  },
+  {
+   "id": "barbera-d-asti",
+   "name": "Barbera d'Asti",
+   "official": "Barbera d'Asti",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1398",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.2498,
+    44.9086
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 31,
+   "courseOrder": 31
+  },
+  {
+   "id": "dolcetto-d-alba",
+   "name": "Dolcetto d'Alba",
+   "official": "Dolcetto d'Alba",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1142",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.0691,
+    44.6513
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 40,
+   "courseOrder": 40
+  },
+  {
+   "id": "gavi",
+   "name": "Gavi",
+   "official": "Gavi",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1310",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.791,
+    44.6503
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 41,
+   "courseOrder": 41
+  },
+  {
+   "id": "asti",
+   "name": "Asti",
+   "official": "Asti",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1396",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.3041,
+    44.7108
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 38,
+   "courseOrder": 38
+  },
+  {
+   "id": "alta-langa",
+   "name": "Alta Langa",
+   "official": "Alta Langa",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1252",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.2966,
+    44.5945
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 45,
+   "courseOrder": 45
+  },
+  {
+   "id": "barbera-del-monferrato-superiore",
+   "name": "Barbera del Monferrato Superiore",
+   "official": "Barbera del Monferrato Superiore",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1397",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.3389,
+    44.8488
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 32,
+   "courseOrder": 32
+  },
+  {
+   "id": "brachetto-dacqui",
+   "name": "Brachetto d'Acqui",
+   "official": "Brachetto d'Acqui",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1382",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.399,
+    44.7027
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 39,
+   "courseOrder": 39
+  },
+  {
+   "id": "canelli",
+   "name": "Canelli",
+   "official": "Canelli",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-02810",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.2319,
+    44.7113
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 37,
+   "courseOrder": 37
+  },
+  {
+   "id": "dogliani",
+   "name": "Dogliani",
+   "official": "Dogliani",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1330",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    7.9256,
+    44.4662
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 46,
+   "courseOrder": 46
+  },
+  {
+   "id": "dolcetto-di-diano-dalba",
+   "name": "Dolcetto di Diano d'Alba",
+   "official": "Dolcetto di Diano d'Alba",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1324",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.0254,
+    44.6485
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 42,
+   "courseOrder": 42
+  },
+  {
+   "id": "dolcetto-di-ovada-superiore",
+   "name": "Dolcetto di Ovada Superiore",
+   "official": "Dolcetto di Ovada Superiore",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1319",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.6751,
+    44.6303
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 43,
+   "courseOrder": 43
+  },
+  {
+   "id": "erbaluce-di-caluso",
+   "name": "Erbaluce di Caluso",
+   "official": "Erbaluce di Caluso",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1315",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    7.9133,
+    45.3696
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 26,
+   "courseOrder": 26
+  },
+  {
+   "id": "gattinara",
+   "name": "Gattinara",
+   "official": "Gattinara",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1311",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.3573,
+    45.6043
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 20,
+   "courseOrder": 20
+  },
+  {
+   "id": "ghemme",
+   "name": "Ghemme",
+   "official": "Ghemme",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1263",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.4229,
+    45.6125
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 19,
+   "courseOrder": 19
+  },
+  {
+   "id": "nizza",
+   "name": "Nizza",
+   "official": "Nizza",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-01896",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.3555,
+    44.7809
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 34,
+   "courseOrder": 34
+  },
+  {
+   "id": "roero",
+   "name": "Roero",
+   "official": "Roero",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1261",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    7.9736,
+    44.7667
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 35,
+   "courseOrder": 35
+  },
+  {
+   "id": "ruche-di-castagnole-monferrato",
+   "name": "Ruchè di Castagnole Monferrato",
+   "official": "Ruchè di Castagnole Monferrato",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1258",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.3178,
+    44.9597
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 30,
+   "courseOrder": 30
+  },
+  {
+   "id": "terre-alfieri",
+   "name": "Terre Alfieri",
+   "official": "Terre Alfieri",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-piemonte",
+   "euFile": "PDO-IT-A1241",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    8.079,
+    44.8425
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 33,
+   "courseOrder": 33
+  },
+  {
+   "id": "franciacorta",
+   "name": "Franciacorta",
+   "official": "Franciacorta",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-lombardia",
+   "euFile": "PDO-IT-A1034",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.0852,
+    45.5853
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 21,
+   "courseOrder": 21
+  },
+  {
+   "id": "oltrepo-pavese-metodo-classico",
+   "name": "Oltrepò Pavese metodo classico",
+   "official": "Oltrepò Pavese metodo classico",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-lombardia",
+   "euFile": "PDO-IT-A0958",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    9.1866,
+    44.9679
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 29,
+   "courseOrder": 29
+  },
+  {
+   "id": "scanzo",
+   "name": "Scanzo",
+   "official": "Scanzo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-lombardia",
+   "euFile": "PDO-IT-A0949",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    9.7655,
+    45.7129
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 17,
+   "courseOrder": 17
+  },
+  {
+   "id": "sforzato-di-valtellina",
+   "name": "Sforzato di Valtellina",
+   "official": "Sforzato di Valtellina",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-lombardia",
+   "euFile": "PDO-IT-A1035",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    9.9288,
+    46.1188
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 4,
+   "courseOrder": 4
+  },
+  {
+   "id": "valtellina-superiore",
+   "name": "Valtellina Superiore",
+   "official": "Valtellina Superiore",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-lombardia",
+   "euFile": "PDO-IT-A1036",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    9.9598,
+    46.1738
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 3,
+   "courseOrder": 3
+  },
+  {
+   "id": "alto-adige",
+   "name": "Alto Adige",
+   "official": "Alto Adige",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0293",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.2973,
+    46.5695
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 1,
+   "courseOrder": 1
+  },
+  {
+   "id": "trentino",
+   "name": "Trentino",
+   "official": "Trentino",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0754",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0162,
+    45.9845
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 8,
+   "courseOrder": 8
+  },
+  {
+   "id": "collio",
+   "name": "Collio",
+   "official": "Collio Goriziano",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0908",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.5338,
+    45.9535
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 10,
+   "courseOrder": 10
+  },
+  {
+   "id": "friuli-colli-orientali",
+   "name": "Friuli Colli Orientali",
+   "official": "Friuli Colli Orientali",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0953",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.3609,
+    46.1135
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 5,
+   "courseOrder": 5
+  },
+  {
+   "id": "friuli-grave",
+   "name": "Friuli Grave",
+   "official": "Friuli Grave",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0954",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.9552,
+    46.0474
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 7,
+   "courseOrder": 7
+  },
+  {
+   "id": "colli-orientali-del-friuli-picolit",
+   "name": "Colli Orientali del Friuli Picolit",
+   "official": "Colli Orientali del Friuli Picolit",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0938",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.3609,
+    46.1135
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 6,
+   "courseOrder": 6
+  },
+  {
+   "id": "ramandolo",
+   "name": "Ramandolo",
+   "official": "Ramandolo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0939",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.2588,
+    46.222
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 2,
+   "courseOrder": 2
+  },
+  {
+   "id": "rosazzo",
+   "name": "Rosazzo",
+   "official": "Rosazzo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-north-east",
+   "euFile": "PDO-IT-A0367",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.4002,
+    45.9832
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 9,
+   "courseOrder": 9
+  },
+  {
+   "id": "valpolicella",
+   "name": "Valpolicella",
+   "official": "Valpolicella",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0442",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0214,
+    45.4966
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 22,
+   "courseOrder": 22
+  },
+  {
+   "id": "soave",
+   "name": "Soave",
+   "official": "Soave",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0472",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.21,
+    45.451
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 25,
+   "courseOrder": 25
+  },
+  {
+   "id": "prosecco",
+   "name": "Prosecco",
+   "official": "Prosecco",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0516",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.4136,
+    45.9234
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 13,
+   "courseOrder": 13
+  },
+  {
+   "id": "conegliano-valdobbiadene",
+   "name": "Conegliano Valdobbiadene Prosecco",
+   "official": "Conegliano Valdobbiadene - Prosecco",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0515",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.1924,
+    45.9312
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 12,
+   "courseOrder": 12
+  },
+  {
+   "id": "asolo-prosecco",
+   "name": "Asolo Prosecco",
+   "official": "Asolo Prosecco",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0514",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.9807,
+    45.814
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 14,
+   "courseOrder": 14
+  },
+  {
+   "id": "bagnoli-friularo",
+   "name": "Bagnoli Friularo",
+   "official": "Bagnoli Friularo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0467",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.8683,
+    45.2327
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 28,
+   "courseOrder": 28
+  },
+  {
+   "id": "bardolino-superiore",
+   "name": "Bardolino Superiore",
+   "official": "Bardolino Superiore",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0437",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.7526,
+    45.4947
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 23,
+   "courseOrder": 23
+  },
+  {
+   "id": "colli-di-conegliano",
+   "name": "Colli di Conegliano",
+   "official": "Colli di Conegliano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0453",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.2551,
+    45.9471
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 11,
+   "courseOrder": 11
+  },
+  {
+   "id": "colli-euganei-fior-darancio",
+   "name": "Colli Euganei Fior d'Arancio",
+   "official": "Colli Euganei Fior d'Arancio",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0455",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.7161,
+    45.3063
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 27,
+   "courseOrder": 27
+  },
+  {
+   "id": "lison",
+   "name": "Lison",
+   "official": "Lison",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0457",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.8312,
+    45.7526
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 16,
+   "courseOrder": 16
+  },
+  {
+   "id": "montello-rosso",
+   "name": "Montello Rosso",
+   "official": "Montello Rosso",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0461",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.9807,
+    45.814
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 15,
+   "courseOrder": 15
+  },
+  {
+   "id": "piave-malanotte",
+   "name": "Piave Malanotte",
+   "official": "Piave Malanotte",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0463",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.3966,
+    45.6829
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 18,
+   "courseOrder": 18
+  },
+  {
+   "id": "recioto-di-gambellara",
+   "name": "Recioto di Gambellara",
+   "official": "Recioto di Gambellara",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-veneto",
+   "euFile": "PDO-IT-A0470",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3644,
+    45.4649
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 24,
+   "courseOrder": 24
+  },
+  {
+   "id": "colli-bolognesi-pignoletto",
+   "name": "Colli Bolognesi Pignoletto",
+   "official": "Colli Bolognesi Pignoletto",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-emilia-romagna",
+   "euFile": "PDO-IT-A0284",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.2521,
+    44.4171
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 47,
+   "courseOrder": 47
+  },
+  {
+   "id": "romagna-albana",
+   "name": "Romagna Albana",
+   "official": "Romagna Albana",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-emilia-romagna",
+   "euFile": "PDO-IT-A0285",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.8769,
+    44.2459
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 48,
+   "courseOrder": 48
+  },
+  {
+   "id": "chianti",
+   "name": "Chianti",
+   "official": "Chianti",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1228",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3416,
+    43.4839
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 53,
+   "courseOrder": 53
+  },
+  {
+   "id": "chianti-classico",
+   "name": "Chianti Classico",
+   "official": "Chianti Classico",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1235",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3194,
+    43.4985
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 52,
+   "courseOrder": 52
+  },
+  {
+   "id": "bolgheri",
+   "name": "Bolgheri",
+   "official": "Bolgheri",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1348",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.5978,
+    43.1791
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 57,
+   "courseOrder": 57
+  },
+  {
+   "id": "brunello-di-montalcino",
+   "name": "Brunello di Montalcino",
+   "official": "Brunello di Montalcino",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1199",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.4879,
+    43.0593
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 61,
+   "courseOrder": 61
+  },
+  {
+   "id": "vino-nobile-di-montepulciano",
+   "name": "Vino Nobile di Montepulciano",
+   "official": "Vino Nobile di Montepulciano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1308",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.8402,
+    43.1126
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 58,
+   "courseOrder": 58
+  },
+  {
+   "id": "carmignano",
+   "name": "Carmignano",
+   "official": "Carmignano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1220",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0222,
+    43.8019
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 49,
+   "courseOrder": 49
+  },
+  {
+   "id": "elba-aleatico-passito",
+   "name": "Elba Aleatico Passito",
+   "official": "Elba Aleatico Passito",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1237",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.2875,
+    42.7787
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 66,
+   "courseOrder": 66
+  },
+  {
+   "id": "montecucco-sangiovese",
+   "name": "Montecucco Sangiovese",
+   "official": "Montecucco Sangiovese",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1246",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3805,
+    42.8959
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 64,
+   "courseOrder": 64
+  },
+  {
+   "id": "morellino-di-scansano",
+   "name": "Morellino di Scansano",
+   "official": "Morellino di Scansano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1260",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.3048,
+    42.7038
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 68,
+   "courseOrder": 68
+  },
+  {
+   "id": "suvereto",
+   "name": "Suvereto",
+   "official": "Suvereto",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1266",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.7055,
+    43.0594
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 60,
+   "courseOrder": 60
+  },
+  {
+   "id": "val-di-cornia-rosso",
+   "name": "Val di Cornia Rosso",
+   "official": "Val di Cornia Rosso",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1262",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    10.65,
+    43.0625
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 59,
+   "courseOrder": 59
+  },
+  {
+   "id": "vernaccia-di-san-gimignano",
+   "name": "Vernaccia di San Gimignano",
+   "official": "Vernaccia di San Gimignano",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-tuscany",
+   "euFile": "PDO-IT-A1292",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    11.0269,
+    43.4716
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 54,
+   "courseOrder": 54
+  },
+  {
+   "id": "verdicchio-dei-castelli-di-jesi",
+   "name": "Verdicchio dei Castelli di Jesi",
+   "official": "Verdicchio dei Castelli di Jesi",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0482",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.104,
+    43.4991
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 51,
+   "courseOrder": 51
+  },
+  {
+   "id": "orvieto",
+   "name": "Orvieto",
+   "official": "Orvieto",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0846",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.1342,
+    42.7279
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 67,
+   "courseOrder": 67
+  },
+  {
+   "id": "frascati",
+   "name": "Frascati",
+   "official": "Frascati",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0750",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.4748,
+    41.8799
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 73,
+   "courseOrder": 73
+  },
+  {
+   "id": "montepulciano-d-abruzzo",
+   "name": "Montepulciano d'Abruzzo",
+   "official": "Montepulciano d'Abruzzo",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0723",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.0607,
+    42.3187
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 71,
+   "courseOrder": 71
+  },
+  {
+   "id": "casauria",
+   "name": "Casauria",
+   "official": "Casauria",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-02972",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.9451,
+    42.245
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 72,
+   "courseOrder": 72
+  },
+  {
+   "id": "cesanese-del-piglio",
+   "name": "Cesanese del Piglio",
+   "official": "Cesanese del Piglio",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0680",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.1184,
+    41.7706
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 74,
+   "courseOrder": 74
+  },
+  {
+   "id": "colline-teramane-montepulciano-dabruzzo",
+   "name": "Colline Teramane Montepulciano d'Abruzzo",
+   "official": "Colline Teramane Montepulciano d’Abruzzo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0876",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.8264,
+    42.682
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 69,
+   "courseOrder": 69
+  },
+  {
+   "id": "conero",
+   "name": "Cònero",
+   "official": "Cònero",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0449",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.5015,
+    43.5223
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 50,
+   "courseOrder": 50
+  },
+  {
+   "id": "montefalco-sagrantino",
+   "name": "Montefalco Sagrantino",
+   "official": "Montefalco Sagrantino",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0833",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.5787,
+    42.8871
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 65,
+   "courseOrder": 65
+  },
+  {
+   "id": "offida",
+   "name": "Offida",
+   "official": "Offida",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0477",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.6934,
+    42.9425
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 63,
+   "courseOrder": 63
+  },
+  {
+   "id": "terre-tollesi",
+   "name": "Terre Tollesi",
+   "official": "Terre Tollesi",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0742",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.3186,
+    42.3447
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 70,
+   "courseOrder": 70
+  },
+  {
+   "id": "torgiano-rosso-riserva",
+   "name": "Torgiano Rosso Riserva",
+   "official": "Torgiano Rosso Riserva",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0834",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.4506,
+    43.0412
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 62,
+   "courseOrder": 62
+  },
+  {
+   "id": "verdicchio-di-matelica-riserva",
+   "name": "Verdicchio di Matelica Riserva",
+   "official": "Verdicchio di Matelica Riserva",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0480",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    12.9796,
+    43.2605
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 55,
+   "courseOrder": 55
+  },
+  {
+   "id": "vernaccia-di-serrapetrona",
+   "name": "Vernaccia di Serrapetrona",
+   "official": "Vernaccia di Serrapetrona",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-centre",
+   "euFile": "PDO-IT-A0445",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    13.1793,
+    43.2474
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 56,
+   "courseOrder": 56
+  },
+  {
+   "id": "taurasi",
+   "name": "Taurasi",
+   "official": "Taurasi",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0237",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.9717,
+    40.994
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 80,
+   "courseOrder": 80
+  },
+  {
+   "id": "fiano-di-avellino",
+   "name": "Fiano di Avellino",
+   "official": "Fiano di Avellino",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0232",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.8019,
+    40.9231
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 83,
+   "courseOrder": 83
+  },
+  {
+   "id": "greco-di-tufo",
+   "name": "Greco di Tufo",
+   "official": "Greco di Tufo",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0236",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.8189,
+    41.0144
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 79,
+   "courseOrder": 79
+  },
+  {
+   "id": "salice-salentino",
+   "name": "Salice Salentino",
+   "official": "Salice Salentino",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0567",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    17.9117,
+    40.4085
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 85,
+   "courseOrder": 85
+  },
+  {
+   "id": "aglianico-del-vulture",
+   "name": "Aglianico del Vulture",
+   "official": "Aglianico del Vulture",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0222",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    15.8459,
+    40.9352
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 81,
+   "courseOrder": 81
+  },
+  {
+   "id": "aglianico-del-taburno",
+   "name": "Aglianico del Taburno",
+   "official": "Aglianico del Taburno",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0277",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.7018,
+    41.1448
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 75,
+   "courseOrder": 75
+  },
+  {
+   "id": "castel-del-monte-bombino-nero",
+   "name": "Castel del Monte Bombino Nero",
+   "official": "Castel del Monte Bombino Nero",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0537",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    16.3616,
+    41.0986
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 76,
+   "courseOrder": 76
+  },
+  {
+   "id": "castel-del-monte-nero-di-troia-riserva",
+   "name": "Castel del Monte Nero di Troia Riserva",
+   "official": "Castel del Monte Nero di Troia Riserva",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0538",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    16.3616,
+    41.0986
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 77,
+   "courseOrder": 77
+  },
+  {
+   "id": "castel-del-monte-rosso-riserva",
+   "name": "Castel del Monte Rosso Riserva",
+   "official": "Castel del Monte Rosso Riserva",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0539",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    16.3616,
+    41.0986
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 78,
+   "courseOrder": 78
+  },
+  {
+   "id": "primitivo-di-manduria-dolce-naturale",
+   "name": "Primitivo di Manduria Dolce Naturale",
+   "official": "Primitivo di Manduria Dolce Naturale",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-south",
+   "euFile": "PDO-IT-A0535",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    17.5209,
+    40.4188
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 84,
+   "courseOrder": 84
+  },
+  {
+   "id": "etna",
+   "name": "Etna",
+   "official": "Etna",
+   "kind": "DOC",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-islands",
+   "euFile": "PDO-IT-A0780",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    15.0208,
+    37.7205
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 86,
+   "courseOrder": 86
+  },
+  {
+   "id": "cerasuolo-di-vittoria",
+   "name": "Cerasuolo di Vittoria",
+   "official": "Cerasuolo di Vittoria",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-islands",
+   "euFile": "PDO-IT-A0773",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    14.4362,
+    37.0934
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 87,
+   "courseOrder": 87
+  },
+  {
+   "id": "vermentino-di-gallura",
+   "name": "Vermentino di Gallura",
+   "official": "Vermentino di Gallura",
+   "kind": "DOCG",
+   "level": "place",
+   "parent": "italy",
+   "region": "it-islands",
+   "euFile": "PDO-IT-A0903",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    9.2725,
+    40.9337
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
+   "northSouth": 82,
+   "courseOrder": 82
   }
  ]
 }

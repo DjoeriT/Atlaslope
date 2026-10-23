@@ -1,0 +1,112 @@
+{
+ "id": "gavi",
+ "title": "Why Gavi tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Gavi sits where the great plain meets the mountains, on hillsides of marl and clay. Its summers are cooler and more ventilated than on the plain nearby, and a native grape called Cortese has had centuries to settle in.",
+  "cite": [
+   "gavi-disc:p2",
+   "gavi-disc:p6",
+   "gavi-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "corner",
+   "beat": "place",
+   "title": "A corner where plain meets mountain",
+   "paras": [
+    "The vineyards lie in the far south-eastern corner of Piedmont. It is a physical and geological frontier: river-laid soils meet outcrops from remote ages.",
+    "Only hillside vineyards with the right lie and aspect count. The soil must be a limy mix of clay and marl. Flat, damp valley floors are left out. The slopes face generally north-west and south-east, and they get steeper towards the Apennines.",
+    "Eleven communes share the denomination, and the wine is the main source of income for the area."
+   ],
+   "cite": [
+    "gavi-disc:p2",
+    "gavi-disc:p6",
+    "gavi-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Gavi, the heart of the zone",
+     "point": [
+      8.8047,
+      44.6883
+     ],
+     "zoom": 10,
+     "caption": "Gavi is one of the eleven communes of the denomination. In 972 the bishop of Genoa rented vines to two citizens of Gavi.",
+     "cite": [
+      "gavi-disc:p6",
+      "gavi-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hard winters, breezy summers",
+   "paras": [
+    "The climate can be called transitional and moderately continental. Winters are long and hard, with fairly frequent and heavy snow the closer you get to the southern Apennines.",
+    "Summers, in return, are cooler and more ventilated than in the nearby lowlands of the Po plain."
+   ],
+   "cite": [
+    "gavi-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "White earth and red earth",
+   "paras": [
+    "The ground falls into three bands. There are red earths, then alternating marl and sandstone. In the south lie white clay marls.",
+    "Locally the clay marls are called terre bianche, \"white lands\". The brown soils are the terre rosse, \"red lands\". Their alternation gives the Cortese grape added shades of expression.",
+    "These lands suit intensive farming of other crops badly. That very fact makes them fit for quality winegrowing with low yields, which gives the wines particular vigour and complexity."
+   ],
+   "cite": [
+    "gavi-disc:p6",
+    "gavi-disc:p7"
+   ]
+  },
+  {
+   "id": "cortese",
+   "beat": "rules",
+   "title": "One grape, white and sometimes sparkling",
+   "paras": [
+    "Gavi is made only from Cortese, a native grape long at home in the zone. The first mention of \"vines all of Cortese\" dates from 1659. In 1798 Count Nuvolone of Turin's Agricultural Society wrote that it \"makes good wine\" and keeps.",
+    "All of the wines are white. They come still, lightly sparkling (frizzante) or sparkling (spumante), plus a Riserva and a Riserva Spumante metodo classico.",
+    "The frizzante has a fine, fleeting mousse. The spumante wines have a fine, persistent one, from brut nature to extra dry. If kept in wood, still Gavi and both Riservas may show a hint of it.",
+    "Yields are capped at 9.5 tonnes per hectare for the still and fizzy wines. The two Riservas are capped at 6.5 tonnes.",
+    "Sparkling Gavi spends at least 6 months on the lees when it ferments in sealed tanks (charmat), or at least 9 months when it ferments in bottle (classic method). The Riserva takes one year of ageing, six months of it in bottle. The Riserva Spumante metodo classico takes two years, with 18 months on the lees in bottle."
+   ],
+   "cite": [
+    "gavi-disc:p2",
+    "gavi-disc:p3",
+    "gavi-disc:p4",
+    "gavi-disc:p5",
+    "gavi-disc:p6",
+    "gavi-disc:p7"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "\"Vineyard\", a mention any Gavi may carry, in letters at most half the size of those for Gavi. On still, frizzante and spumante Gavi it caps yields at 8.5 tonnes per hectare and needs grapes of at least 10.5% natural alcohol."
+   },
+   {
+    "term": "Del comune di",
+    "text": "\"Of the commune of\". On still, frizzante and spumante Gavi, a label may name the commune where the grapes grew, in letters at most half the size of those for Gavi. Riserva wines may not name a commune."
+   },
+   {
+    "term": "Data di sboccatura",
+    "text": "The disgorgement date. Classic-method spumante must show it. The Riserva Spumante metodo classico must show its vintage too."
+   }
+  ],
+  "cite": [
+   "gavi-disc:p3",
+   "gavi-disc:p5",
+   "gavi-disc:p6"
+  ]
+ }
+}

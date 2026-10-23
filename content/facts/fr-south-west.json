@@ -431,6 +431,126 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "cotes-de-gascogne",
+   "why": {
+    "text": "Heavy western rain and water-holding eastern soils give the vines steady water; the mild climate ripens grapes well for fresh primary aromas.",
+    "cite": [
+     "cotes-de-gascogne-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Muscadelle",
+     "Cot",
+     "Perdea",
+     "Courbu Noir",
+     "Viognier",
+     "Courbu",
+     "Petit Courbu",
+     "Ondenc",
+     "Petit Manseng",
+     "Chardonnay",
+     "Chasan",
+     "Chenin",
+     "Gros Manseng",
+     "Jurançon Noir",
+     "Sauvignon Gris",
+     "Gamay",
+     "Fer",
+     "Gamay De Chaudenay",
+     "Sauvignon Blanc",
+     "Folle Blanche",
+     "Gamay De Bouze",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Colombard",
+     "Syrah",
+     "Cabernet-Sauvignon",
+     "Merlot",
+     "Pinot Noir",
+     "Sémillon",
+     "Baroque",
+     "Cabernet Franc",
+     "Marselan",
+     "Egiodola",
+     "Pinot Gris",
+     "Mauzac",
+     "Tannat",
+     "Mauzac Rose",
+     "Arrufiac",
+     "Listán",
+     "Manseng Noir",
+     "Raffiat De Moncade"
+    ],
+    "othersCite": [
+     "cotes-de-gascogne-doc:p5",
+     "cotes-de-gascogne-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sweet"
+    ],
+    "text": "Still white, red and rosé wines, plus white wines from overripe grapes; about 90% of volume is white, mostly dry.",
+    "cite": [
+     "cotes-de-gascogne-doc:p2",
+     "cotes-de-gascogne-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Temperate oceanic, shifting gradually from strong ocean influence in the west to more continental in the east. The west has regular, abundant rain with no truly dry summer; the east has summer drought until late-summer storms. The Condomois is the hottest, driest part.",
+    "cite": [
+     "cotes-de-gascogne-doc:p6",
+     "cotes-de-gascogne-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "West: tawny sands often under loess silt, giving acid leached soils (boulbènes). East: clay molasse with hard limestone beds, giving deep clay (terreforts) or shallow stony limestone (peyrusquets). Water retention rises from west to east.",
+    "cite": [
+     "cotes-de-gascogne-doc:p6",
+     "cotes-de-gascogne-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Aromatic freshness with mainly fruity or floral notes. Whites show citrus and exotic fruit; reds show red and black fruit. Sweeter and overripe-grape whites have riper fruit aromas.",
+    "cite": [
+     "cotes-de-gascogne-doc:p3",
+     "cotes-de-gascogne-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Early-release still wine; reds may skip the malolactic rule."
+     },
+     {
+      "name": "Vin de raisins surmûris",
+      "text": "Sweet white from overripe grapes, notably Gros and Petit Manseng."
+     }
+    ],
+    "cite": [
+     "cotes-de-gascogne-doc:p3",
+     "cotes-de-gascogne-doc:p8",
+     "cotes-de-gascogne-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
   }
  ]
 }

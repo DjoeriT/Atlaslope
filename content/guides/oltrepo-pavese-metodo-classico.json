@@ -1,0 +1,109 @@
+{
+ "id": "oltrepo-pavese-metodo-classico",
+ "title": "Why Oltrepò Pavese Metodo Classico tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "In the hills of southern Lombardy, sunny slopes on limy soils carry Pinot nero. Its sparkling wines all have a fine, persistent foam and a sapid taste.",
+  "cite": [
+   "oltrepo-pavese-metodo-classico-disc:p1",
+   "oltrepo-pavese-metodo-classico-disc:p2",
+   "oltrepo-pavese-metodo-classico-disc:p4",
+   "oltrepo-pavese-metodo-classico-disc:p5",
+   "oltrepo-pavese-metodo-classico-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills where four regions meet",
+   "paras": [
+    "Oltrepò Pavese sits in the Po basin, which is closed in by the Alps and the Apennines and opens mainly to the east. The hills of Pavia are part of the Apennine belt that runs from Piedmont towards Emilia. Valleys run mostly from south to north.",
+    "Oltrepò Pavese is a hilly corner of southern Lombardy. It is where Lombardy, Piedmont, Liguria and Emilia Romagna meet. The vineyards lie in the hill belt of the province of Pavia, in 27 municipalities in full and 15 in part."
+   ],
+   "cite": [
+    "oltrepo-pavese-metodo-classico-disc:p2",
+    "oltrepo-pavese-metodo-classico-disc:p6",
+    "oltrepo-pavese-metodo-classico-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Casteggio, once Clastidium",
+     "point": [
+      9.125,
+      45.013
+     ],
+     "zoom": 10,
+     "caption": "A prehistoric vine shoot was found near Casteggio, once called Clastidium.",
+     "cite": [
+      "oltrepo-pavese-metodo-classico-disc:p8"
+     ]
+    },
+    {
+     "label": "Valle Scuropasso",
+     "point": [
+      9.24,
+      44.96
+     ],
+     "zoom": 10,
+     "caption": "An important, intensely planted strip of vines runs from Montalto Pavese to Canevino across the Scuropasso valley.",
+     "cite": [
+      "oltrepo-pavese-metodo-classico-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Winter lows below zero, very uneven sun",
+   "paras": [
+    "From the foot of the hills to 600 m the mean annual temperature is about 11 to 12 °C. January averages about 1 to 2 °C. July or August averages 22 to 24 °C. The 0 °C isotherm runs at about 800 m and can be taken as the edge between hills and mountains.",
+    "The average of the daily lows is mostly below 0 °C. Those lows are lower below 400 m than between 400 and 600 m, a typical temperature inversion. The coldest lows come in January or February, between -8 and -13 °C. Monthly highs vary more: about 28 to 30 °C below 500 m and 25 to 27 °C between 500 and 600 m.",
+    "Rain peaks in November at 143 mm and is lowest in July at 47 mm. May is on average the wettest spring month at 121 mm. Rain rises with altitude and drops steadily from west to east. The rain minimum lies in the Alessandria area, at 556 mm a year.",
+    "Sunlight is extremely uneven across the hills. That unevenness is an important key to which parts suit the vine. On average the east is more even, at 2,250 to 3,000 MJ/m2 a year. In the west the hills run east to west, and the very sunny south-facing slopes often exceed 2,750 MJ/m2 a year."
+   ],
+   "cite": [
+    "oltrepo-pavese-metodo-classico-disc:p7",
+    "oltrepo-pavese-metodo-classico-disc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Very varied ground",
+   "paras": [
+    "The landscape is pre-Apennine, with landslides and large eroded areas. In those areas marls and sandy limestones come to the surface. So do galestro, a flaky shale, and gypsum. Most of the vines grow on Cenozoic hills.",
+    "The Miocene layers are more complex and more important, with five stages. They cover over 16,000 hectares of hills and lower mountains. The youngest stage, the Messinian, has light yellow marls with limestone lenses. Montù Beccaria and Rovescala lie on it, among other places. The Langhian around Montalto Pavese is a massive layer of marls laid down in a very deep sea.",
+    "The youngest Eocene stage is mostly marly limestone. It covers 16,000 hectares very rich in lime. Scaly clays and galestro shales cover about 19,000 hectares of the high hills.",
+    "Geologically the ground is very varied, but for farming the differences are smaller. Gypsum appears in small patches that are still planted intensely. The vineyards must be on calcareous or clay-limestone soils on sunny hillsides, never valley floors or plains."
+   ],
+   "cite": [
+    "oltrepo-pavese-metodo-classico-disc:p2",
+    "oltrepo-pavese-metodo-classico-disc:p6",
+    "oltrepo-pavese-metodo-classico-disc:p7"
+   ]
+  },
+  {
+   "id": "bottle",
+   "beat": "rules",
+   "title": "Pinot nero, refermented in the bottle",
+   "paras": [
+    "This controlled and guaranteed denomination (DOCG) covers only sparkling wine made by the classic method. In 1970 it became a type within the Oltrepò Pavese DOC. In 2007 it became a DOCG of its own. The second fermentation must happen in the bottle.",
+    "There are four types. The plain metodo classico and its rosé need at least 70% Pinot nero. Up to 30% may come from Chardonnay and the two other Pinots, grigio and bianco. The Pinot nero type and its rosé need at least 85% Pinot nero, with those grapes up to 15%.",
+    "Yields are capped at 10 tonnes of grapes a hectare. New vineyards need at least 4,000 vines a hectare.",
+    "The wine stays on its lees for at least 15 months, and at least 24 months for a millesimato. Only a wine that shows its vintage may be called millesimato. On the label a pink wine may only be called rosé.",
+    "The plain metodo classico is straw-yellow, sapid, fresh and harmonious, with at least 11.50% alcohol. The Pinot nero is straw-yellow with orange glints and well structured, with at least 12.00% alcohol. The rosé is pink and moderately full-bodied. The Pinot nero rosé is pink and well structured.",
+    "Sweetness must be stated on the label up to demisec, medium-sweet. The sweet style (dolce) is banned."
+   ],
+   "cite": [
+    "oltrepo-pavese-metodo-classico-disc:p1",
+    "oltrepo-pavese-metodo-classico-disc:p2",
+    "oltrepo-pavese-metodo-classico-disc:p3",
+    "oltrepo-pavese-metodo-classico-disc:p4",
+    "oltrepo-pavese-metodo-classico-disc:p5",
+    "oltrepo-pavese-metodo-classico-disc:p8"
+   ]
+  }
+ ]
+}

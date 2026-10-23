@@ -1,0 +1,103 @@
+{
+ "id": "orvieto",
+ "title": "Why Orvieto tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Orvieto's vineyards are laid out around a tuff cliff, where winemaking seems to go back to the Etruscans. After the summer peak, lower temperatures before harvest help the grapes' aromas develop.",
+  "cite": [
+   "orvieto-disc:p9",
+   "orvieto-disc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills around a cliff",
+   "paras": [
+    "The vineyards lie in hill country in the south-west of Umbria, reaching into northern Lazio. Orvieto itself stands on a steep tuff cliff, the rupe, and the vines are laid out around it. Parallel rows cross the rolling lines of the hills.",
+    "Vines must stand between 100 and 500 m above sea level. Valley floors are ruled out. So is damp ground, and so are places without enough sun."
+   ],
+   "cite": [
+    "orvieto-disc:p5",
+    "orvieto-disc:p9",
+    "orvieto-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "The rock of Orvieto",
+     "point": [
+      12.1135,
+      42.7185
+     ],
+     "zoom": 11,
+     "caption": "Vineyards are laid out around the tuff cliff the town stands on.",
+     "cite": [
+      "orvieto-disc:p9",
+      "orvieto-disc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Wet autumns, dry summers",
+   "paras": [
+    "Autumn is the wettest season, with 35-36% of the year's rain. October brings 102 mm and November 107 mm. This rain can disturb the harvest, above all in October. Late varieties and north-facing vineyards suffer most.",
+    "Summers are dry. July and August average 33 and 40 mm, which can cause water shortage, above all in soils that hold little water. Over a year, 700 to 1000 mm of rain falls.",
+    "The warmest months are July and August, with average air temperatures of about 23.7 to 24.1 °C. Just before harvest it turns cooler, which helps the grapes develop their aromas and polyphenols. January and December are the coolest months."
+   ],
+   "cite": [
+    "orvieto-disc:p10"
+   ]
+  },
+  {
+   "id": "tuff",
+   "beat": "ground",
+   "title": "Tuff, clay and sand",
+   "paras": [
+    "About fifteen geological formations outcrop here. They fall into four groups. Clays and volcanic rocks make two of them. River alluvium and sands with conglomerates make the other two. The volcanic group includes lava flows and layered tuffs from the Vulsini volcanoes.",
+    "River alluvium, mostly sand and pebbles, covers the plains along the Tevere (Tiber) and Paglia rivers.",
+    "The Etruscans are thought to have seen that the tuff rock suited making and keeping wine. Their cellars worked on three levels. Grapes were pressed at ground level and the must ran down clay pipes to ferment below. After racking, the wine went deeper still for long ageing. Openings in the cliff face often ventilated the tunnels."
+   ],
+   "cite": [
+    "orvieto-disc:p9",
+    "orvieto-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Etruscan cellars in the cliff",
+     "point": [
+      12.1135,
+      42.7185
+     ],
+     "zoom": 14,
+     "caption": "Stacked tunnels in the tuff cliff, often ventilated by openings in its face, once held fermenting and ageing wine.",
+     "cite": [
+      "orvieto-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "whites",
+   "beat": "rules",
+   "title": "A white wine, dry or sweet",
+   "paras": [
+    "Orvieto is white only. Trebbiano Toscano (also called Procanico) and Grechetto must make up at least 60% of the vineyard. Other white varieties suited to Umbria and the province of Viterbo can fill up to 40%.",
+    "Orvieto is straw yellow, paler or deeper, with a delicate, pleasant nose. Most of it today is dry, with a slight bitter aftertaste. The tradition of sweeter Orvieto also carries on, labelled abboccato, amabile or dolce.",
+    "Superiore has a lower yield cap, 8 t/ha against 11, and needs at least 12% alcohol. It is released after 1 March of the year following harvest. Classico is a subzone of Orvieto. Its grapes are grown there and made into wine in its own winemaking zone.",
+    "Two sweet styles are made as well. Vendemmia Tardiva may only be claimed for Superiore. It uses part-dried grapes picked from 1 October at the earliest, at most 7 t/ha. It is straw yellow to golden, sweet and harmonious, with at least 13% total alcohol. Muffa Nobile comes from overripe grapes attacked by noble rot, Botrytis cinerea, at most 5 t/ha. It is golden yellow turning amber with age, with a rich, unctuous nose. Its grapes must reach at least 16% natural alcohol."
+   ],
+   "cite": [
+    "orvieto-disc:p1",
+    "orvieto-disc:p2",
+    "orvieto-disc:p5",
+    "orvieto-disc:p7",
+    "orvieto-disc:p8",
+    "orvieto-disc:p11"
+   ]
+  }
+ ]
+}

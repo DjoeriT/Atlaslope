@@ -22,6 +22,8 @@ export const COUNTRIES: Record<string, CountryConfig> = {
   portugal: { id: 'portugal', code: 'pt', bounds: [[-9.6, 36.9], [-6.1, 42.2]], imagery: 'esri', paths: true },
   // The mainland. IGN BD ORTHO inside France, cut to data/countries/fr/mask.json, Esri around it (#149).
   france: { id: 'france', code: 'fr', bounds: [[-5.2, 42.3], [8.3, 51.1]], imagery: 'ign-fr', paths: true },
+  // The mainland, Sicily and Sardinia. Esri alone (decision #66).
+  italy: { id: 'italy', code: 'it', bounds: [[6.6, 36.6], [18.6, 47.1]], imagery: 'esri', paths: true },
 };
 
 export const DEFAULT_COUNTRY = 'spain';

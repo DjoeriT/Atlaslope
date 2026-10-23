@@ -1,0 +1,74 @@
+{
+ "id": "dolcetto-di-ovada-superiore",
+ "title": "Why Dolcetto di Ovada Superiore tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Pure Dolcetto from steep hills around the river Orba. The zone is one of the best suited in southern Piedmont.",
+  "cite": [
+   "dolcetto-di-ovada-superiore-disc:p1",
+   "dolcetto-di-ovada-superiore-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "orba-hills",
+   "beat": "place",
+   "title": "Steep hills around the Orba",
+   "paras": [
+    "The vineyards lie in the Monferrato, in the hills of the Ovada area. They cover 22 municipalities in the province of Alessandria, with Ovada at the centre.",
+    "The land is mostly hilly with steep slopes, and it winds around the course of the river Orba. Valley floors and flat ground are excluded. So are damp sites and sites without enough sun."
+   ],
+   "cite": [
+    "dolcetto-di-ovada-superiore-disc:p2",
+    "dolcetto-di-ovada-superiore-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Ovada and the Orba hills",
+     "point": [
+      8.642,
+      44.636
+     ],
+     "zoom": 10,
+     "caption": "Ovada is the centre of the zone, which winds around the river Orba.",
+     "cite": [
+      "dolcetto-di-ovada-superiore-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, tufa and limy soils up to 600 m",
+   "paras": [
+    "The soils are clay, tufa or limy. Mixes of them are allowed too, including medium-textured ones. Only hillsides count, up to 600 m above sea level.",
+    "These soils bring out the best qualities of the Dolcetto grape. The result is a more fragrant wine of good quality."
+   ],
+   "cite": [
+    "dolcetto-di-ovada-superiore-disc:p2",
+    "dolcetto-di-ovada-superiore-disc:p6"
+   ]
+  },
+  {
+   "id": "dolcetto",
+   "beat": "rules",
+   "title": "Pure Dolcetto, dry and red",
+   "paras": [
+    "The wine is red and made from 100% Dolcetto. It may also be sold simply as Ovada. The grape has shaped the local vineyards for a long time and spread especially from the 19th century. It was once called Uva di Ovada, or Uva Ovadensis by naturalists.",
+    "It has what it takes to age, yet it is ready to drink, with moderate acidity and alcohol. The base wine ages 12 months, counted from 1 November of the harvest year.",
+    "Vigna names a single vineyard. Its yield is capped at 6 t/ha for vines at least 7 years old. Younger vines get less, down to 3.6 t/ha in their third year. A Vigna wine ages 20 months and needs 13% alcohol. Its taste may also carry spice.",
+    "Riserva needs at least 24 months of ageing."
+   ],
+   "cite": [
+    "dolcetto-di-ovada-superiore-disc:p1",
+    "dolcetto-di-ovada-superiore-disc:p2",
+    "dolcetto-di-ovada-superiore-disc:p3",
+    "dolcetto-di-ovada-superiore-disc:p4",
+    "dolcetto-di-ovada-superiore-disc:p5",
+    "dolcetto-di-ovada-superiore-disc:p6",
+    "dolcetto-di-ovada-superiore-disc:p7"
+   ]
+  }
+ ]
+}

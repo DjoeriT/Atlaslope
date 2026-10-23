@@ -1,0 +1,113 @@
+{
+ "id": "torgiano-rosso-riserva",
+ "title": "Why Torgiano Rosso Riserva tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The vines grow on sandy clay laid down by an ancient lake, on slopes at 220 to 300 m that face mostly west. The wine is a dry red of good structure that must age at least 36 months.",
+  "cite": [
+   "torgiano-rosso-riserva-disc:p3",
+   "torgiano-rosso-riserva-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One town where two rivers meet",
+   "paras": [
+    "The whole zone is the municipality of Torgiano, in the province of Perugia. In 1276 the Comune of Perugia had the ruined Roman settlement rebuilt as a castrum, a fort in its line of defence. The Chiascio joins the Tiber at the foot of its hill.",
+    "The soft, rounded hills around Torgiano rise to about 400 m. Vineyards on the wet alluvial plains along the Tiber and the Chiascio cannot be entered for this wine. Nor can those on the valley floor, or along the ditches and streams that run down the north side of the Brufa hill."
+   ],
+   "cite": [
+    "torgiano-rosso-riserva-disc:p2",
+    "torgiano-rosso-riserva-disc:p5",
+    "torgiano-rosso-riserva-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Where the Chiascio meets the Tiber",
+     "point": [
+      12.4375,
+      43.0285
+     ],
+     "zoom": 11,
+     "caption": "The Chiascio flows into the Tiber at the foot of the hill where Torgiano stands.",
+     "cite": [
+      "torgiano-rosso-riserva-disc:p6"
+     ]
+    },
+    {
+     "label": "The Brufa hill",
+     "point": [
+      12.452,
+      43.048
+     ],
+     "zoom": 11,
+     "caption": "Brufa, the medieval Castel Grifone, sits on the ridge that links it to Torgiano.",
+     "cite": [
+      "torgiano-rosso-riserva-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry summers, cold damp winters",
+   "paras": [
+    "Summers are dry and parched, with good swings between day and night temperatures in July and August. June and September are mild. Winters are cold and damp.",
+    "Rain still averages 1,500 mm a year, on about 95 days. The rainiest spell comes in mid-February, with another peak in mid-November. The first ten days of July are the driest."
+   ],
+   "cite": [
+    "torgiano-rosso-riserva-disc:p5",
+    "torgiano-rosso-riserva-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "The floor of a lost lake",
+   "paras": [
+    "Torgiano lies in the basin of the Lago Tiberino, a vast lake that stretched from Città di Castello to Spoleto and lasted about three million years. Its sands and clays crop out around the town.",
+    "Most soils are sandy clay of medium depth, with good structure over a limy, tuffaceous subsoil. They hold water well. Vines grow at 220 to 300 m, with slopes that vary, and mostly face west and south-west."
+   ],
+   "cite": [
+    "torgiano-rosso-riserva-disc:p4",
+    "torgiano-rosso-riserva-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The old Tiber lake bed",
+     "point": [
+      12.39,
+      43.11
+     ],
+     "zoom": 9,
+     "caption": "The Lago Tiberino ran from Città di Castello to Spoleto and from Perugia to Città della Pieve.",
+     "cite": [
+      "torgiano-rosso-riserva-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A Sangiovese red that waits",
+   "paras": [
+    "Torgiano Rosso Riserva is a dry red and the only wine of this denomination. Sangiovese makes 70% to 100% of it. Up to 30% can come from other non-aromatic red grapes suited to Umbria. Colorino and Canaiolo are traditional partners here. So are Cabernet Sauvignon and Merlot.",
+    "The wine ages at least 36 months, with at least 12 in wood and 6 in bottle. The clock starts on 1 November of the harvest year.",
+    "The grapes must reach at least 12% natural alcohol. The finished wine must reach at least 12.5%.",
+    "Yields are held to 8 tonnes of grapes per hectare. Vineyards planted since 2003 need at least 3,500 vines per hectare.",
+    "Every bottle must show the vintage. A single vineyard can be named as «Vigna» with its place name, if its wine is made and kept apart."
+   ],
+   "cite": [
+    "torgiano-rosso-riserva-disc:p1",
+    "torgiano-rosso-riserva-disc:p2",
+    "torgiano-rosso-riserva-disc:p3",
+    "torgiano-rosso-riserva-disc:p4",
+    "torgiano-rosso-riserva-disc:p7"
+   ]
+  }
+ ]
+}

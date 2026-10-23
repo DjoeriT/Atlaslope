@@ -1,0 +1,103 @@
+{
+ "id": "cesanese-del-piglio",
+ "title": "Why Cesanese del Piglio tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Red, iron-coloured soil that suits intensive crops poorly lies on the hills of the Monti Ernici. There the grapes ripen slowly, in some years into November.",
+  "cite": [
+   "cesanese-del-piglio-disc:p5",
+   "cesanese-del-piglio-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills on the Monti Ernici",
+   "paras": [
+    "The zone lies in the centre-east of Lazio, in the province of Frosinone. It covers about 15,317 hectares of high and middle hills on the slopes of the Monti Ernici.",
+    "The vines grow in wide valleys, above all in the upper Sacco valley. Vineyards generally face west and south-west, and they sit between 220 and 980 m above sea level.",
+    "Land at too low an altitude is left out, as unsuited to quality wine-growing."
+   ],
+   "cite": [
+    "cesanese-del-piglio-disc:p5",
+    "cesanese-del-piglio-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Monti Ernici slopes",
+     "point": [
+      13.37,
+      41.8
+     ],
+     "zoom": 9.5,
+     "caption": "The vineyards sit on the slopes of the Monti Ernici, in wide valleys.",
+     "cite": [
+      "cesanese-del-piglio-disc:p5"
+     ]
+    },
+    {
+     "label": "Piglio, home of the 1479 statutes",
+     "point": [
+      13.14,
+      41.83
+     ],
+     "zoom": 11,
+     "caption": "Piglio's statutes of 30 May 1479 set aside zones for vineyards and ruled on the wine trade.",
+     "cite": [
+      "cesanese-del-piglio-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slow-ripening",
+   "beat": "weather",
+   "title": "A long, slow autumn",
+   "paras": [
+    "The climate is a transitional temperate one. Rain falls at 1098 to 1233 mm a year, with 1 to 2 dry or near-dry summer months.",
+    "The mean annual temperature is 13.5 to 15.6 °C. Cold lasts from November to April but is not intense.",
+    "September and October are relatively warm and sunny. This lets the grapes ripen slowly and fully, in some years until November.",
+    "The final stage has a big swing in temperature between night and day. Much of the wine's bouquet is credited to this long ripening on the vine."
+   ],
+   "cite": [
+    "cesanese-del-piglio-disc:p5",
+    "cesanese-del-piglio-disc:p7"
+   ]
+  },
+  {
+   "id": "terre-rosse",
+   "beat": "ground",
+   "title": "Red earth, poor for other crops",
+   "paras": [
+    "Most soils are terre rosse, red earths made by the erosion of the Monti Ernici. In most cases free iron and aluminium oxides give them a dark red colour.",
+    "They form when limy rock loses its lime. Some are heavy, with a clay-silt texture. Loose ones with limy debris are less common.",
+    "The layer is generally thin, with firm subsoil, and it holds few nutrients. On these hills the soil drains water away naturally.",
+    "Intensive crops do poorly on it. That suits quality wine from low yields, and it gives the wines vigour and complexity."
+   ],
+   "cite": [
+    "cesanese-del-piglio-disc:p5",
+    "cesanese-del-piglio-disc:p7"
+   ]
+  },
+  {
+   "id": "cesanese",
+   "beat": "rules",
+   "title": "Cesanese, and only red",
+   "paras": [
+    "The wine must be at least 90% Cesanese di Affile, Cesanese comune or both. Other grapes suited to Lazio can make up no more than 10%.",
+    "All of it is still, dry red. There are three types: the base wine, Superiore and Riserva. Every label must show the vintage.",
+    "The base wine is ruby red with violet tints. It smells of flowers and fruit (berries and stone fruit), and it tastes dry, soft and lightly bitter. Its structure can sometimes lean towards weak.",
+    "Superiore comes from lower yields: 9 tonnes of grapes per hectare, against 11 for the base wine. It needs at least 12.5% natural potential alcohol and goes on sale no earlier than 1 July of the year after the harvest. The base wine can go on sale from 1 February of that year.",
+    "Riserva is Superiore aged at least 20 months, 6 of them in bottle, with at least 14% alcohol. Its smells of flowers and fruit fade in favour of spicy notes linked to wood."
+   ],
+   "cite": [
+    "cesanese-del-piglio-disc:p1",
+    "cesanese-del-piglio-disc:p3",
+    "cesanese-del-piglio-disc:p4",
+    "cesanese-del-piglio-disc:p5",
+    "cesanese-del-piglio-disc:p6"
+   ]
+  }
+ ]
+}

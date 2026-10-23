@@ -1,0 +1,145 @@
+{
+ "id": "greco-di-tufo",
+ "title": "Why Greco di Tufo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Heat, rain and wind here are almost ideal for ripening gradually, with sugar and acidity in balance. The area owes this to where it lies and to the shape of its hills and mountains.",
+  "cite": [
+   "greco-di-tufo-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Hills above the Sabato",
+   "paras": [
+    "The area lies north of Avellino and reaches to the border of Benevento province. It covers 61.52 km² in 8 municipalities, partly inside the Partenio regional park.",
+    "The vines cling to clay or sandy ground, or to limestone rock, between 300 and 650 m along the Sabato river valley. The Sabato is a left-bank tributary of the better-known Calore. It rises on Monte Terminio, in the Monti Picentini, the backbone of Irpinia.",
+    "Only hillside vineyards with good exposure qualify. Damp valley floors without enough sun are excluded.",
+    "Between Altavilla Irpina station and the village of Tufo the valley is lopsided. Its southern side is much gentler than its northern side.",
+    "The cause is the rock. The northern side is capped by fairly cemented conglomerates, the southern side by a blanket of mostly loose volcanic debris."
+   ],
+   "cite": [
+    "greco-di-tufo-disc:p2",
+    "greco-di-tufo-disc:p4",
+    "greco-di-tufo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Sabato valley",
+     "point": [
+      14.8,
+      41.01
+     ],
+     "zoom": 10,
+     "caption": "Vineyards climb from 300 to 650 m along the Sabato valley, which is lopsided between Altavilla Irpina station and Tufo.",
+     "cite": [
+      "greco-di-tufo-disc:p4",
+      "greco-di-tufo-disc:p5"
+     ]
+    },
+    {
+     "label": "Monte Terminio, source of the Sabato",
+     "point": [
+      14.94,
+      40.84
+     ],
+     "zoom": 10,
+     "caption": "The Sabato rises on Monte Terminio, in the Monti Picentini.",
+     "cite": [
+      "greco-di-tufo-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, fairly mild summers",
+   "paras": [
+    "Winters are cold, and snow is not unusual. Summers are fairly mild. Forested mountains around the area work against overheating.",
+    "Sunny days are very numerous. Spring frosts are fairly frequent, sometimes late. Swings between the average highs and lows are very pronounced from July to September.",
+    "Rain usually just reaches 1,100 mm a year. Well over 70% falls in autumn and winter. Summer is particularly dry, with an average of 6%.",
+    "The prevailing winds are humid and mild, from the south and south-west. The area is sheltered from cold north-east winds. Nothing blocks the humid air coming in from the Tyrrhenian side."
+   ],
+   "cite": [
+    "greco-di-tufo-disc:p5",
+    "greco-di-tufo-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, conglomerate and volcanic ash",
+   "paras": [
+    "The soils are young and immature, most often resting straight on their parent rock. Clay is the main part, up to 50% of the fine earth. Sand and silt soften it in many places. Most soils end up heavy clay or clay-silt, or else sandy clay.",
+    "The northern sector rests largely on conglomerates of mixed pebbles, more or less cemented. Near the Sabato, sandstone, silty marl and clay also appear, with lenses of gypsum and traces of sulphur. The southern sector sits on ochre volcanic ash and layers of pumice.",
+    "In dry summers the clay helps the grapes ripen more evenly and keep their acidity. Potassium and magnesium give the wines intense aroma, good structure and balance."
+   ],
+   "cite": [
+    "greco-di-tufo-disc:p4",
+    "greco-di-tufo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Stretto di Barba",
+     "point": [
+      14.8,
+      41.0
+     ],
+     "zoom": 11,
+     "caption": "Thick, well-cemented conglomerate lenses show at the Stretto di Barba, downstream of Altavilla Irpina.",
+     "cite": [
+      "greco-di-tufo-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "A white, still or sparkling",
+   "paras": [
+    "Greco di Tufo is a white wine made from at least 85% Greco. Up to 15% Coda di Volpe is allowed.",
+    "The still wine needs at least 11.5% alcohol. A Riserva needs 12% and must age at least 12 months from 1 November of the harvest year.",
+    "Sparkling Greco di Tufo is made only by refermenting in the bottle, the classic method. It spends at least 18 months on the lees. The Riserva spends at least 36 months. It ranges from extra brut to extra dry.",
+    "Every bottle shows its vintage, except the sparkling wines.",
+    "Huge sulphur deposits found at Tufo in the 19th century helped vines spread across Irpinia. They also gave rise to sulphuring the bunches to protect them from disease.",
+    "In that century wine drove the local economy. It led to Irpinia's first railway, nicknamed the \"wine railway\". Stations at Tufo and Prata still stand."
+   ],
+   "cite": [
+    "greco-di-tufo-disc:p1",
+    "greco-di-tufo-disc:p2",
+    "greco-di-tufo-disc:p3",
+    "greco-di-tufo-disc:p4",
+    "greco-di-tufo-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Tufo, home of the sulphur",
+     "point": [
+      14.82,
+      41.01
+     ],
+     "zoom": 13,
+     "caption": "Huge sulphur deposits found at Tufo in the 19th century helped vines spread across Irpinia.",
+     "cite": [
+      "greco-di-tufo-disc:p6"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word \"vigna\" is allowed only when followed by the vineyard's place or traditional name. The wine must be made and stored in separate vessels, and the vineyard must be on the regional list."
+   }
+  ],
+  "cite": [
+   "greco-di-tufo-disc:p3"
+  ]
+ }
+}

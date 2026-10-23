@@ -161,7 +161,9 @@ FR_SHIP = ["chablis", "pauillac",
            # South-West, Beaujolais, Alsace, South and Champagne (23 Oct 2026): the WSET L3 list complete, 94 places
            "bergerac", "monbazillac", "cahors", "madiran", "jurancon", "beaujolais", "brouilly", "fleurie", "morgon", "moulin-a-vent",
            "alsace", "cremant-dalsace", "languedoc", "minervois", "fitou", "corbieres", "picpoul-de-pinet", "cotes-du-roussillon",
-           "cotes-du-roussillon-villages", "bandol", "cotes-de-provence", "champagne"]
+           "cotes-du-roussillon-villages", "bandol", "cotes-de-provence", "champagne",
+           # The two PGIs WSET names (23 Oct 2026; fr_wset.py had matched PDOs only): 96 places
+           "cotes-de-gascogne", "pays-doc"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 
@@ -177,7 +179,7 @@ def france_places():
     for pid in FR_SHIP:
         w, s = wset[pid], spec.get(pid, {})
         region = group[w["batch"]]
-        place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "AOC", "level": "place", "parent": "france",
+        place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "IGP" if w["type"] == "PGI" else "AOC", "level": "place", "parent": "france",
                  "region": region, "euFile": w["fileNumber"], "layerCode": None, "boundary": "added",
                  "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE}
         # alsoWithin holds tree ids only: a wider AOC joins it once that AOC is shipped. Nesting is measured on the INAO outlines
@@ -192,6 +194,33 @@ def france_places():
                         "boundary": "added", "centroid": centroid(areas[zid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE, "courseOrder": i})
     located = sorted((p for p in out if p["level"] == "place"), key=lambda p: -p["centroid"][1])
     for i, p in enumerate(located, 1): p["northSouth"], p["courseOrder"] = i, i
+    return out
+
+
+# Italy (issue #149, pilot; decisions #59-#66, #79, #80): WSET L3 regions as Study groups, outlines from Regione Piemonte or ISTAT
+# municipal limits (data/countries/it/areas.geojson, Tools/data/build_it_areas.py). Only shipped places enter the tree; each later
+# batch adds guides, and IT_SHIP follows them. No zones in the pilot (no MGA or UGA outlines). Not in Study yet.
+IT_GROUPS = [("it-piemonte", "Piemonte"), ("it-lombardia", "Lombardia"), ("it-north-east", "Alto Adige, Trentino and Friuli"),
+             ("it-veneto", "Veneto"), ("it-emilia-romagna", "Emilia-Romagna"), ("it-tuscany", "Tuscany"), ("it-centre", "Centre"),
+             ("it-south", "South"), ("it-islands", "Sicily and Sardinia")]
+IT_QUIZ_NOTE = "Study covers Spain for now; Italy joins when its WSET course is in Study."
+# Per place: name, EU register name (data/countries/it/register.json), file number, class and group, from the first-wave list
+# data/countries/it/places.json (Tools/countries/it_wset.py reads the same list).
+IT_PLACES = {p["id"]: p for p in json.loads((ROOT / "data/countries/it/places.json").read_text())["places"]}
+IT_REGISTER = {e["fileNumber"]: e for e in json.loads((ROOT / "data/countries/it/register.json").read_text())["entries"]}
+# A place ships (enters the tree and the map) once its guide is written: each batch run (headless.py) adds guides, no list to edit.
+IT_SHIP = [pid for pid in IT_PLACES if (ROOT / f"content/guides/{pid}.json").exists()]
+
+
+def italy_places():
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/it/areas.geojson").read_text())["features"]}
+    out = []
+    for pid in IT_SHIP:
+        p = IT_PLACES[pid]
+        out.append({"id": pid, "name": p["name"], "official": IT_REGISTER[p["fileNumber"]]["names"][0], "kind": p["class"],
+                    "level": "place", "parent": "italy", "region": p["group"], "euFile": p["fileNumber"], "layerCode": None, "boundary": "added",
+                    "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": IT_QUIZ_NOTE})
+    for i, p in enumerate(sorted(out, key=lambda p: -p["centroid"][1]), 1): p["northSouth"], p["courseOrder"] = i, i
     return out
 
 
@@ -243,6 +272,7 @@ def main():
 
     places += portugal_places()
     places += france_places()
+    places += italy_places()
 
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
@@ -252,7 +282,8 @@ def main():
         "countries": [{"id": "spain", "name": "Spain", "level": "country", "levels": ["country", "region", "place", "zone"]},
                       {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]},
                       # Two zone depths: Chablis Premier Cru, then its climats (#55).
-                      {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]}],
+                      {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]},
+                      {"id": "italy", "name": "Italy", "level": "country", "levels": ["country", "region", "place", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
                      "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
                                 for i, g in enumerate(COURSE)]},
@@ -261,6 +292,9 @@ def main():
                     {"id": "wset-fr", "name": "WSET", "country": "france",
                      # A group joins with its first shipped place (an empty one would show as a region with no guides).
                      "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(FR_GROUPS)
+                                if any(p["region"] == g for p in places)]},
+                    {"id": "wset-it", "name": "WSET", "country": "italy",
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(IT_GROUPS)
                                 if any(p["region"] == g for p in places)]}],
         "places": places,
     }

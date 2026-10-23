@@ -1,0 +1,107 @@
+{
+ "id": "terre-tollesi",
+ "title": "Why Terre Tollesi tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "All of it comes from one hill town, Tollo, between the Maiella massif and the Adriatic. Montepulciano makes the reds, and the local Pecorino and Passerina make the whites.",
+  "cite": [
+   "terre-tollesi-disc:p2",
+   "terre-tollesi-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "One town between mountain and sea",
+   "paras": [
+    "The whole zone is the land of a single municipality, Tollo, in the province of Chieti. It is hilly, with slopes that do not pass 5-10%, and the highest point is about 228 m.",
+    "Vines must grow at 80 m or more above sea level. Valley-floor land is left out.",
+    "Wide hills fall away to the Adriatic in the east. The imposing Maiella massif stands in the west."
+   ],
+   "cite": [
+    "terre-tollesi-disc:p2",
+    "terre-tollesi-disc:p5",
+    "terre-tollesi-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Maiella massif",
+     "point": [
+      14.087,
+      42.088
+     ],
+     "zoom": 9,
+     "caption": "The imposing Maiella massif rises to the west of Tollo.",
+     "cite": [
+      "terre-tollesi-disc:p7"
+     ]
+    },
+    {
+     "label": "Port of Ortona",
+     "point": [
+      14.404,
+      42.355
+     ],
+     "zoom": 11,
+     "caption": "Between 1400 and 1500, ships left Ortona loaded with small barrels (caratelli) of wine, and much of it surely came from Tollo.",
+     "cite": [
+      "terre-tollesi-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Temperate, turning hot and dry in summer",
+   "paras": [
+    "The climate is temperate. Average temperatures run from 12 °C in April to 16 °C in October. In July and August it tends to turn hot and dry, averaging 24-25 °C, and it can pass 35 °C.",
+    "About 700 mm of rain falls in a year, mostly from November to April. The Winkler index, the heat sum from April to October, is above 2,200 degree-days.",
+    "Sea and mountain breezes ventilate the vines, and water does not pool. This land between mountain and sea has good temperature swings. These give the wines the right acidity and freshness."
+   ],
+   "cite": [
+    "terre-tollesi-disc:p6",
+    "terre-tollesi-disc:p7",
+    "terre-tollesi-disc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limy clay, low in organic matter",
+   "paras": [
+    "The soil is generally of medium texture leaning to clay. Clay averages about 29% and sand 36.5%. Sand reaches its highest share, up to 59%, often on the alluvial valley floors.",
+    "It is alkaline or slightly so, with an average pH of 7.88. Carbonates are very high, about 32% on average. Organic matter is very low, at an average of 1.21%.",
+    "Clay, sand and limestone together, with the good temperature swings, help make more perfumed wines with finesse, especially the whites. Soils rich in carbonates and poor in organic matter let the reds reach intense colour, great structure and concentrated aromas."
+   ],
+   "cite": [
+    "terre-tollesi-disc:p5",
+    "terre-tollesi-disc:p6",
+    "terre-tollesi-disc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Montepulciano reds and two local whites",
+   "paras": [
+    "Four still wines carry the name, which may also be written Tullum, the town's old name. Rosso and Rosso Riserva are the reds, with Montepulciano at 95% or more. Pecorino and Passerina are the local white grapes, and each wine named after one must be at least 90% of it.",
+    "The reds are deep ruby with light violet tints, and turn garnet with age. Sour cherry, plum and jam come through, with vanilla and spice that sometimes come from wood. The tannins are abundant and slightly astringent. These are wines of good structure that age well.",
+    "Rosso cannot be sold before 1 January of the second year after harvest. Rosso Riserva is aged at least 2 years, with at least 6 months in wood, and must reach 13.5% vol. at release.",
+    "Pecorino adds sage and lavender to pear, apple and white peach. Passerina leans to citrus and elderflower, with an almond finish. Both whites are dry, with good to excellent acidity and a long finish. They can be sold from 1 January after the harvest.",
+    "Every bottle must show its vintage. A single vineyard may be named with \"vigna\" and its place name, if its wine is made and kept apart.",
+    "The training most used in the zone is the pergola abruzzese, an overhead trellis. New pergola plantings need at least 1,600 vines per hectare, and new rows at least 4,000."
+   ],
+   "cite": [
+    "terre-tollesi-disc:p1",
+    "terre-tollesi-disc:p2",
+    "terre-tollesi-disc:p3",
+    "terre-tollesi-disc:p4",
+    "terre-tollesi-disc:p5",
+    "terre-tollesi-disc:p6",
+    "terre-tollesi-disc:p7"
+   ]
+  }
+ ]
+}

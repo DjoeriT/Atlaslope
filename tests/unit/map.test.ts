@@ -141,10 +141,11 @@ function inside(poly: number[][][], [x, y]: [number, number]): boolean {
 describe('orthophotos per country (#50)', () => {
   const chablis: [number, number] = [3.8, 47.81];
   const madrid: [number, number] = [-3.7, 40.42];
-  it('gives each country its photo: PNOA in Spain, BD ORTHO in France, Esri alone in Portugal', () => {
+  it('gives each country its photo: PNOA in Spain, BD ORTHO in France, Esri alone in Portugal and Italy (#66)', () => {
     expect(COUNTRIES.spain.imagery).toBe('pnoa');
     expect(COUNTRIES.france.imagery).toBe('ign-fr');
     expect(COUNTRIES.portugal.imagery).toBe('esri');
+    expect(COUNTRIES.italy.imagery).toBe('esri');
     expect(ACTIVE_ORTHOPHOTOS.map((o) => o.id)).toEqual(['pnoa', 'ign-fr']);
   });
   it('keeps Spain\'s PNOA as it was', () => {
@@ -233,5 +234,15 @@ describe('France zones on the map (#55)', () => {
     expect(zones).toHaveLength(19);
     expect(zones.find((f) => f.properties.id === 'les-clos')?.properties.name).toBe('Les Clos');
     expect(zones.every((f) => f.properties.zone === f.properties.name)).toBe(true);
+  });
+});
+
+describe('outline credits', () => {
+  // The map's credit box names each country's outline source; Italy's says which outlines are approximate (#62).
+  const src = readFileSync('src/map/createMap.ts', 'utf8');
+  it('credits Portugal, France and Italy', () => {
+    expect(src).toContain("'Portugal outlines: DGT, CAOP 2025'");
+    expect(src).toContain("'France outlines: INAO, for information'");
+    expect(src).toContain("'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits'");
   });
 });

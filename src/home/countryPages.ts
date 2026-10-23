@@ -42,6 +42,15 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     ],
     study: { note: 'Not yet for France.', link: false },
   },
+  italy: {
+    intro: 'From the Alps to Sicily.',
+    cardPhotos: ['barolo-1', 'chianti-classico-1', 'barolo-3', 'chianti-classico-3', 'barolo-2'],
+    blocks: [
+      { title: 'Barolo', keys: ['barolo-1', 'barolo-2', 'barolo-3', 'barolo-4', 'barolo-5'] },
+      { title: 'Chianti Classico', keys: ['chianti-classico-1', 'chianti-classico-2', 'chianti-classico-3', 'chianti-classico-4', 'chianti-classico-5'] },
+    ],
+    study: { note: 'Not yet for Italy.', link: false },
+  },
 };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

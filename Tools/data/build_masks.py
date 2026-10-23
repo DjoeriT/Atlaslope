@@ -31,6 +31,12 @@ COUNTRIES = {
                'neighbours': {'ESP': (-2.0, 42.0, 3.6, 43.6), 'AND': (1.3, 42.3, 1.9, 42.7), 'BEL': (2.4, 49.4, 6.5, 51.2),
                               'LUX': (5.7, 49.4, 6.6, 50.2), 'DEU': (6.0, 47.5, 8.4, 49.6), 'CHE': (5.9, 45.8, 7.7, 47.9),
                               'ITA': (6.5, 43.7, 7.7, 46.0), 'MCO': (7.3, 43.7, 7.5, 43.8)}},
+    # The mainland, Sicily and Sardinia (Italy pilot, #149). Esri alone for now (decision #66), so the app does not read it yet.
+    # France's box takes the Alps border and Corsica, which faces Sardinia across a narrow strait.
+    'italy': {'code': 'ITA', 'out': 'data/countries/it/mask.json',
+              'box': (6.5, 36.5, 18.6, 47.2),
+              'neighbours': {'FRA': (6.5, 41.3, 9.6, 46.5), 'CHE': (6.7, 45.8, 10.5, 47.0), 'AUT': (10.4, 46.6, 13.0, 47.2),
+                             'SVN': (13.3, 45.4, 14.0, 46.6), 'SMR': (12.4, 43.8, 12.6, 44.0), 'VAT': (12.4, 41.9, 12.5, 41.91)}},
 }
 TOLERANCE = 0.002  # degrees, about 200 m
 

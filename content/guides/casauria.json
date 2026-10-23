@@ -1,0 +1,170 @@
+{
+ "id": "casauria",
+ "title": "Why Casauria tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Casauria lies in the inland hills of Pescara province, closed off by the Maiella and Gran Sasso massifs. Montepulciano has grown here for over two centuries.",
+  "cite": [
+   "casauria-disc:p8",
+   "casauria-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "foothills",
+   "beat": "place",
+   "title": "Hills between two massifs",
+   "paras": [
+    "The area covers the inner, foothill belt of Pescara province. The Maiella massif closes it off to the south-west, and the Gran Sasso massif to the north-west.",
+    "These are Abruzzo's mountains, part of the central-southern Apennines. Here the range is at its widest and highest. It is also at its most compact.",
+    "The hills flank the plain of the Pescara river. The landscape is rolling, with broad, almost flat ridges and gentle, rounded slopes. Vines and olives grow on these hills.",
+    "The name comes from the Romanesque abbey of San Clemente a Casauria. A medieval chronicle of the abbey covers the years 866 to 1182. Its verses say the land inside a bend of the Pescara river looks like a true paradise, with wine and olives."
+   ],
+   "cite": [
+    "casauria-disc:p8",
+    "casauria-disc:p9",
+    "casauria-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "San Clemente a Casauria",
+     "point": [
+      13.917,
+      42.236
+     ],
+     "zoom": 11,
+     "caption": "The Romanesque abbey that gave the territory its name.",
+     "cite": [
+      "casauria-disc:p9"
+     ]
+    },
+    {
+     "label": "Maiella",
+     "point": [
+      14.12,
+      42.08
+     ],
+     "zoom": 9,
+     "caption": "The massif that closes the area off to the south-west.",
+     "cite": [
+      "casauria-disc:p8"
+     ]
+    },
+    {
+     "label": "Gran Sasso",
+     "point": [
+      13.57,
+      42.47
+     ],
+     "zoom": 9,
+     "caption": "The massif that closes the area off to the north-west.",
+     "cite": [
+      "casauria-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Wet from November, dry in July",
+   "paras": [
+    "The climate is temperate. About 800 mm of rain falls in a year. The wettest months are November to January, with over 80 mm each. July is the driest month, at around 30 to 40 mm.",
+    "Average temperatures run from 12°C in April to 16°C in October. In July and August the weather tends towards hot and dry, with averages of 24 to 25°C.",
+    "The Winkler index, the heat gathered from April to October, ranges from 1,800 to 2,200 degree-days depending on slope and aspect. These conditions guarantee optimal ripening of Montepulciano."
+   ],
+   "cite": [
+    "casauria-disc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Hills of marine deposits",
+   "paras": [
+    "The hills are made of Plio-Pleistocene deposits. A marine sedimentary cycle laid them down between the end of the Tertiary and the start of the Quaternary, filling the basin beside the Adriatic.",
+    "The soils are sandy-clay but also fairly rich in stones, and generally loose enough. Their depth varies with slope and aspect. In the great majority of cases their fertility suits moderate yields.",
+    "Vines grow between 200 and 600 m. Vineyards must be on hills or plateaus up to 500 m, and exceptionally up to 600 m if they face south. Damp valley floors and poorly sunlit land are excluded."
+   ],
+   "cite": [
+    "casauria-disc:p4",
+    "casauria-disc:p8",
+    "casauria-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Pietranico",
+     "point": [
+      13.911,
+      42.276
+     ],
+     "zoom": 11,
+     "caption": "Home of the Palmenti, ancient basins cut into huge outcrops of rock. They were probably used to make wine right in the fields.",
+     "cite": [
+      "casauria-disc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "montepulciano",
+   "beat": "rules",
+   "title": "Montepulciano, and only red",
+   "paras": [
+    "Casauria is one dry red wine, also made as Riserva. At least 90% of the estate's vineyards must be Montepulciano. Up to 10% can be other non-aromatic black grapes suited to Abruzzo.",
+    "It must age at least 18 months, counted from 1 November of the harvest year. Riserva ages at least 24 months. If the wine has passed through wood, it may show a slight hint of it.",
+    "Montepulciano has grown in this inland part of Pescara province for over two centuries. Until the Second World War the area stood out in Abruzzo as the best suited to vines. The railway station at Torre de' Passeri became the hub of a big trade in its grapes and wine.",
+    "In 2007 Italy's main vine nursery, Vivai Rauscedo, registered a Montepulciano clone called VCR 456 biotipo Casauria. It was selected from historic vines well adapted to the area. The nursery singled it out for the most pleasant wines of all registered Montepulciano clones. Their wines are also the most savoury and spicy."
+   ],
+   "cite": [
+    "casauria-disc:p1",
+    "casauria-disc:p6",
+    "casauria-disc:p7",
+    "casauria-disc:p10",
+    "casauria-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Torre de' Passeri",
+     "point": [
+      13.934,
+      42.243
+     ],
+     "zoom": 11,
+     "caption": "Its railway station was the hub of the grape and wine trade until the Second World War.",
+     "cite": [
+      "casauria-disc:p11"
+     ]
+    },
+    {
+     "label": "Gole di Popoli",
+     "point": [
+      13.84,
+      42.19
+     ],
+     "zoom": 10,
+     "caption": "The gorges beyond which Sulmona's noble families turned to the fertile land of the Pescara valley, at the end of the 1700s.",
+     "cite": [
+      "casauria-disc:p10"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word must be followed by a place name or traditional name. The wine is made and kept in separate containers. The name must appear in the grape declaration and the registers, and be on the regional list.",
+    "cite": [
+     "casauria-disc:p7",
+     "casauria-disc:p8"
+    ]
+   }
+  ],
+  "cite": [
+   "casauria-disc:p7",
+   "casauria-disc:p8"
+  ]
+ }
+}

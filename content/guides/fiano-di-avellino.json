@@ -1,0 +1,147 @@
+{
+ "id": "fiano-di-avellino",
+ "title": "Why Fiano di Avellino tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Clay-rich hills with layers of volcanic ash lie between two mountain groups, with cold winters and big temperature swings from July to September. The climate is close to ideal for Fiano to ripen gradually, with sugar and acidity in balance.",
+  "cite": [
+   "fiano-di-avellino-disc:p4",
+   "fiano-di-avellino-disc:p5",
+   "fiano-di-avellino-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills between two mountain groups",
+   "paras": [
+    "The zone lies north of Avellino and reaches to the border of the province of Benevento. It covers 276 km² and partly falls inside the Partenio regional park.",
+    "A broad band of hills fills the space between the Monte Vergine–Monti di Avella group to the west and the Terminio–Tuoro group to the east. The central band is carved from easily eroded sediments, so its shapes are much gentler. The Piana di Serino, a plain, ends against these hills on its western side.",
+    "Only hillside vineyards with good exposure qualify. Damp valley floors that do not get enough sun are excluded."
+   ],
+   "cite": [
+    "fiano-di-avellino-disc:p4",
+    "fiano-di-avellino-disc:p2",
+    "fiano-di-avellino-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Vergine and the Partenio park",
+     "point": [
+      14.72,
+      40.94
+     ],
+     "zoom": 10,
+     "caption": "The Monte Vergine group rises west of the Fiano hills. Part of the zone lies in the Partenio regional park.",
+     "cite": [
+      "fiano-di-avellino-disc:p4",
+      "fiano-di-avellino-disc:p5"
+     ]
+    },
+    {
+     "label": "Lapio, the old Apia",
+     "point": [
+      14.948,
+      40.982
+     ],
+     "zoom": 11,
+     "caption": "Lapio sits at 590 m. Its area was once called Apia, where a wine called Apiano was made.",
+     "cite": [
+      "fiano-di-avellino-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, fairly mild summers",
+   "paras": [
+    "Forests cover the surrounding mountains and help keep the area from overheating. In general winters are cold, with snow not unusual, and summers are fairly mild. Sunny days are very numerous. Spring frosts are fairly frequent, sometimes late.",
+    "From July to September the gap between the average highest and lowest temperatures is very pronounced. The climate is close to ideal for gradual ripening, with sugar and acidity in balance.",
+    "Rain usually just reaches 1100 mm a year, well over 70% of it in autumn and winter. Summer is particularly dry, with on average 6% of the total.",
+    "The prevailing winds are humid and mild, from the south and south-west. The area is protected from cold winds from the north-east, while nothing blocks the humid air from the west and south."
+   ],
+   "cite": [
+    "fiano-di-avellino-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, ash and potassium",
+   "paras": [
+    "The soils are young and immature. Most often they sit directly on their bedrock, whether hard rock or soft clayey and sandy rock.",
+    "In the central band, ochre volcanic ash and pumice layers mix with old soils and loose debris. Elsewhere in that band they lie over clay or sandy and marly clay, sometimes with gypsum. Further west the same ash can also rest on limestone. Sandstone with marl appears at Sant'Angelo a Scala and Summonte.",
+    "Clay is the main ingredient, up to 50% of the fine earth. Lime is generally scarce, and organic matter is generally modest, under 2%. The soils are well supplied with potassium and rich in magnesium. The soils richest in potassium lie around Lapio and Montefalcione.",
+    "In dry summers the clay helps the grapes ripen more evenly and keep their acidity. The potassium and magnesium give the wines intense aromas. They also give good structure and balance.",
+    "In the central band the highest hill is around 600 m, at most 300 m above the valley floors."
+   ],
+   "cite": [
+    "fiano-di-avellino-disc:p4",
+    "fiano-di-avellino-disc:p5",
+    "fiano-di-avellino-disc:p6"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "A white, and bubbles too",
+   "paras": [
+    "Wines must contain at least 85% Fiano. Up to 15% may come from Greco, Coda di Volpe or Trebbiano toscano, alone or together. All the wines are white.",
+    "The still wine comes plain or as a Riserva. Both are dry. The Riserva is aged at least 12 months from 1 November of the harvest year. It needs at least 12.00% alcohol, against 11.50% for the plain wine.",
+    "The Spumante, plain or Riserva, is made only by a second fermentation in the bottle, the metodo classico (traditional method). The Spumante ages at least 18 months in bottle from the day it is bottled for that fermentation. The Spumante Riserva ages at least 36 months. Both range from dosaggio zero (no sugar added) to sweet."
+   ],
+   "cite": [
+    "fiano-di-avellino-disc:p1",
+    "fiano-di-avellino-disc:p2",
+    "fiano-di-avellino-disc:p3"
+   ],
+   "fly": [
+    {
+     "label": "The Sabato valley",
+     "point": [
+      14.85,
+      40.93
+     ],
+     "zoom": 10,
+     "caption": "The river Sabato crosses the hills, and vine growing here is ancient. In the 19th century a “wine railway” linked the Sabato hills with the main markets of Italy and Europe.",
+     "cite": [
+      "fiano-di-avellino-disc:p6"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Apianum",
+    "text": "A traditional mention of classical origin that may sit beside the denomination name, in type no more than half the size.",
+    "cite": [
+     "fiano-di-avellino-disc:p3",
+     "fiano-di-avellino-disc:p4"
+    ]
+   },
+   {
+    "term": "Vigna",
+    "text": "Allowed only when followed by the vineyard's place name or traditional name. The wine must be made and kept in separate vessels, and the vineyard must be on the regional list.",
+    "cite": [
+     "fiano-di-avellino-disc:p4"
+    ]
+   },
+   {
+    "term": "Millesimato",
+    "text": "A Spumante that shows its vintage. Every other Fiano di Avellino must show the vintage too.",
+    "cite": [
+     "fiano-di-avellino-disc:p4"
+    ]
+   }
+  ],
+  "cite": [
+   "fiano-di-avellino-disc:p3",
+   "fiano-di-avellino-disc:p4"
+  ]
+ }
+}

@@ -3,11 +3,13 @@
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
 - [2026-10-22-learn-finish](2026-10-22-learn-finish.md): Study becomes Learn: start card, course filter, #learn, specs, crops checked; naming kept (#147, 22 Oct 2026)
+- [2026-10-23-germany-pilot-go](2026-10-23-germany-pilot-go.md): Germany pilot brief: gate open after #231, Mosel and Rheingau scope, outline route, budget ~7-10M
 - [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
 - [2026-10-22-germany-prep](2026-10-22-germany-prep.md): Germany prep: 32 WSET terms, 19 PDOs (6 single vineyards), Mosel outline from LWK RLP, Rheingau outline open, licences
 - [2026-10-22-germany-plan](2026-10-22-germany-plan.md): Germany plan and decisions #71-#78 (all A): 13 Anbaugebiete, Mosel and Rheingau pilot after Italy, Lagen as zones
 - [2026-10-22-italy-prep](2026-10-22-italy-prep.md): Italy rulebook source (MASAF 7z), licences, WSET L3 table (30 places), Barolo and Chianti Classico outlines, Italian text test, ISPRA email draft (#149, 22 Oct 2026)
 - [2026-10-22-italy-outlines](2026-10-22-italy-outlines.md): 87 Italy first-wave outlines, decisions #79, #80.
+- [2026-10-23-italy-first-wave](2026-10-23-italy-first-wave.md): 87 Italy guides with photos (84.2M tokens); size check blocks merging.
 - [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
 - [2026-10-23-portugal-photos-2](2026-10-23-portugal-photos-2.md): 76 photos for 24 of the 26 new Portugal guides (Commons + Openverse), raw data moved outside the repo after the data/raw incident, first load 515 bytes over 2 MB (#149, 23 Oct 2026)
 - [2026-10-22-portugal-photos](2026-10-22-portugal-photos.md): 27 Commons photos shipped for Douro and Vinho Verde, crops parked until Portugal is on Guides, photos no longer hidden on guides without Study; mock round 2 of option C next (#149, 22 Oct 2026)

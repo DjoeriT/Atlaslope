@@ -1,0 +1,52 @@
+{
+ "id": "valpolicella",
+ "title": "Why Valpolicella tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Valpolicella is a blend with Corvina and/or Corvinone at its core, from 45% to 95%. Rondinella, from 5% to 30%, completes it.",
+  "cite": [
+   "valpolicella-disc:p2"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "zone",
+   "beat": "place",
+   "title": "From the Adige bend at Ceraino",
+   "paras": [
+    "The zone covers all or part of 19 municipalities, Verona among them. Its boundary line starts in the north, opposite Monte Rocca, on the cliff above a bend of the Adige near Ceraino.",
+    "From there the line runs through woodland at 410 m. Further on it passes north of Monte Pugna, at 740 m."
+   ],
+   "cite": [
+    "valpolicella-disc:p2"
+   ],
+   "fly": [
+    {
+     "label": "The Adige bend at Ceraino",
+     "point": [
+      10.8,
+      45.58
+     ],
+     "zoom": 10.5,
+     "caption": "The zone's boundary starts on the cliff above a bend of the Adige near Ceraino.",
+     "cite": [
+      "valpolicella-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "blend",
+   "beat": "rules",
+   "title": "A blend led by Corvina or Corvinone",
+   "paras": [
+    "The grapes come from estate vineyards that hold Corvina Veronese (also called Cruina or Corvina) and/or Corvinone for 45% to 95%. Rondinella makes up 5% to 30%.",
+    "Up to 25% in total may come from other grapes. Red non-aromatic varieties approved for the province of Verona may make up to 15%, with no more than 10% of any one variety. The remaining 10% may come from red Italian native varieties approved for Verona.",
+    "The label may add \"classico\" or \"Valpantena\" as a reference, and \"superiore\" as a specification."
+   ],
+   "cite": [
+    "valpolicella-disc:p2"
+   ]
+  }
+ ]
+}

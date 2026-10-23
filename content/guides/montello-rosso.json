@@ -1,0 +1,118 @@
+{
+ "id": "montello-rosso",
+ "title": "Why Montello Rosso tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Sun-facing hills sit across the path of the cold north-east winds. Mild autumns let the grapes ripen slowly, for a red meant to age.",
+  "cite": [
+   "montello-rosso-disc:p5",
+   "montello-rosso-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Two hills, one geological unit",
+   "paras": [
+    "The vineyards lie north of Venice, in the province of Treviso, at the foot of the Dolomites. They cover two hill systems: the Montello and the Colli Asolani. Nervesa della Battaglia marks the east end and Fonte the west.",
+    "The two hills are almost separate. A deep cut about a kilometre wide divides them, yet they form a single geological unit. The hills rise from 100 to 450 m above sea level.",
+    "Only well-exposed hillside and foothill sites qualify. Valley-floor vineyards and those facing north (tramontana) are excluded."
+   ],
+   "cite": [
+    "montello-rosso-disc:p2",
+    "montello-rosso-disc:p4"
+   ],
+   "fly": [
+    {
+     "label": "The Montello",
+     "point": [
+      12.15,
+      45.82
+     ],
+     "zoom": 10.5,
+     "caption": "The Montello hill, whose upper edge above the Piave river forms part of the zone's boundary.",
+     "cite": [
+      "montello-rosso-disc:p2",
+      "montello-rosso-disc:p4"
+     ]
+    },
+    {
+     "label": "Colli Asolani",
+     "point": [
+      11.91,
+      45.8
+     ],
+     "zoom": 10.5,
+     "caption": "The Colli Asolani, the second hill system, separated from the Montello by a cut about a kilometre wide.",
+     "cite": [
+      "montello-rosso-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild springs, warm dry autumns",
+   "paras": [
+    "Springs are mild and summers are not too hot, averaging 22.6 °C, with the highest values in July. Autumns turn mild again because the slopes face south and the hills run across the cold winds from the north-east.",
+    "Autumns are warm and dry, with breezes and big swings between night and day. About 700 mm of rain falls from April to September, fairly evenly spread.",
+    "The hill setting drains excess water away, and the loose soil lets rain soak in quickly below the surface."
+   ],
+   "cite": [
+    "montello-rosso-disc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Red marl over hard conglomerate",
+   "paras": [
+    "The hills are made of large masses of tough conglomerate, rock cemented together. Over it lies marl-clay or marl-sand soil that weather breaks down easily. Its typical red colour shows its ancient origin.",
+    "The soils are decalcified and acidic, medium deep, with a good water reserve and a good supply of minerals. They have not been heavily reworked, so their layers are intact.",
+    "The rock is often cracked, and the cracks help water move underground. Above all on the Montello, more than 2,000 dolinas (sinkholes) form a perfect underground drainage system.",
+    "The soils favour a rich phenolic make-up in the red wines, above all where the marls are leaner. Their acidity also pushes the vine to take up more trace elements than neutral soils would."
+   ],
+   "cite": [
+    "montello-rosso-disc:p4",
+    "montello-rosso-disc:p5",
+    "montello-rosso-disc:p6"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "A red built for ageing",
+   "paras": [
+    "Only red is made. Cabernet Sauvignon must be 40 to 70% of the blend. Merlot, Cabernet Franc and Carmenère, alone or together, make up 30 to 60%. Up to 15% can come from other red grapes suited to Treviso province, aromatic ones excluded.",
+    "Vines are trained on a single trellis, with at least 3,500 vines per hectare in new plantings. Yields are capped at 10 tonnes of grapes per hectare.",
+    "The wine ages at least 18 months, with at least 9 in oak barrels and at least 6 in bottle. A Superiore needs at least 24 months, with at least 12 in oak and at least 6 in bottle. Ageing counts from 1 November of the harvest year. The label must show the vintage.",
+    "Grapes picked at full phenolic and sugar ripeness give soft tannins and plenty of anthocyanins, the colour pigments. The wine has high structure in fine balance. Time in wood may leave a hint of oak on the nose and palate.",
+    "Long ripening works against green and rough notes. The long time in oak adds elegance."
+   ],
+   "cite": [
+    "montello-rosso-disc:p1",
+    "montello-rosso-disc:p2",
+    "montello-rosso-disc:p3",
+    "montello-rosso-disc:p4",
+    "montello-rosso-disc:p5",
+    "montello-rosso-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Certosa del Montello, Nervesa",
+     "point": [
+      12.18,
+      45.81
+     ],
+     "zoom": 13,
+     "caption": "Benedictine monks settled around the year 1000, notably at the Certosa del Montello in Nervesa.",
+     "cite": [
+      "montello-rosso-disc:p5"
+     ]
+    }
+   ]
+  }
+ ]
+}

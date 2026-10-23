@@ -1,0 +1,117 @@
+{
+ "id": "verdicchio-di-matelica-riserva",
+ "title": "Why Verdicchio di Matelica Riserva tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "This Verdicchio grows in a valley far from the sea, with intensely cold winters and hot summers. The continental climate and the mineral salts in the soils make the terroir unique.",
+  "cite": [
+   "verdicchio-di-matelica-riserva-disc:p4",
+   "verdicchio-di-matelica-riserva-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A valley with its back to the sea",
+   "paras": [
+    "The vineyards lie in eight municipalities, six in the province of Macerata and two in Ancona. The zone is decidedly inland and far from any marine influence.",
+    "The Esino river crosses the zone near the start of its course. It runs north, parallel to the Apennine mountains and the Adriatic coast. The valley is the work of many streams eroding the limestone foothills and mountains.",
+    "Matelica sits at the centre, a town of industry and wine. The valley belongs to the Camerte Syncline, a pre-Apennine valley that begins at Fabriano and ends at Camerino."
+   ],
+   "cite": [
+    "verdicchio-di-matelica-riserva-disc:p4",
+    "verdicchio-di-matelica-riserva-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Matelica, the heart of the valley",
+     "point": [
+      13.0097,
+      43.2569
+     ],
+     "zoom": 10,
+     "caption": "Matelica sits at the centre of the valley and is a centre of industry and wine.",
+     "cite": [
+      "verdicchio-di-matelica-riserva-disc:p5"
+     ]
+    },
+    {
+     "label": "Fabriano to Camerino",
+     "point": [
+      13.0,
+      43.24
+     ],
+     "zoom": 9,
+     "caption": "The Camerte Syncline begins at Fabriano and ends at Camerino.",
+     "cite": [
+      "verdicchio-di-matelica-riserva-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, hot summers",
+   "paras": [
+    "With no sea influence on the climate, winters bring intense cold and summer months run hot. The heat does not harm the vines.",
+    "Average temperatures stay below 14 °C and rainfall averages above 700 to 800 mm a year. The zone lies in the \"Alto collinare\" (upper hill) plant-climate belt.",
+    "The Verdicchio here is genetically late-ripening. It seems to show its best qualities in this particular climate, combined with the soils."
+   ],
+   "cite": [
+    "verdicchio-di-matelica-riserva-disc:p4",
+    "verdicchio-di-matelica-riserva-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limy rock and clay, 250 to 700 m up",
+   "paras": [
+    "On the hills, calcarenite and mudstone rocks prevail at 32% of the ground. Marl and limestone make up 26%. There are also conglomerate and sandstone, as well as deposits from Pleistocene terraces.",
+    "The valley floor holds alluvial deposits, mostly gravelly terraces of mixed grain, often with a fine alluvial cover. The soils formed on clay and, in places, on limestone.",
+    "The mean altitude is about 350 m. The zone runs from 250 m to 700 m, with 80% of it between 280 m and 480 m. One vineyard has even been found at 720 m.",
+    "Eighty percent of the slopes fall between 2% and 35%, so this is hill country of moderate relief. Slopes face east or west in equal parts over 75% of the area."
+   ],
+   "cite": [
+    "verdicchio-di-matelica-riserva-disc:p4",
+    "verdicchio-di-matelica-riserva-disc:p5",
+    "verdicchio-di-matelica-riserva-disc:p6"
+   ]
+  },
+  {
+   "id": "wine",
+   "beat": "rules",
+   "title": "A dry white that waits",
+   "paras": [
+    "Verdicchio must make up at least 85% of the wine. Other white grapes suited to the Marche can fill up to 15%.",
+    "This is a dry white only. It must reach at least 12.50% vol.",
+    "It must age at least 18 months before release, counted from 1 December of the harvest year. If it is kept in wooden vessels, the taste may show a light hint of wood.",
+    "Young, the wine is scontroso (surly) because of its high malic acid. After malolactic fermentation it becomes full, complex and harmonious. The continental climate and the soils' mineral salts set it apart from Verdicchio from Jesi. It is less versatile and less explosive in aroma, but better able to grow with the aromas of age.",
+    "The label may add the wider name Marche. It must stand apart from the wine's name and be no larger."
+   ],
+   "cite": [
+    "verdicchio-di-matelica-riserva-disc:p1",
+    "verdicchio-di-matelica-riserva-disc:p3",
+    "verdicchio-di-matelica-riserva-disc:p4",
+    "verdicchio-di-matelica-riserva-disc:p5",
+    "verdicchio-di-matelica-riserva-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Camerino, seat of the Da Varano",
+     "point": [
+      13.0661,
+      43.1356
+     ],
+     "zoom": 11,
+     "caption": "In the Middle Ages the valley was a fief of the Da Varano lords of Camerino.",
+     "cite": [
+      "verdicchio-di-matelica-riserva-disc:p5"
+     ]
+    }
+   ]
+  }
+ ]
+}
