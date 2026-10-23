@@ -1,0 +1,257 @@
+{
+ "region": "de-mosel",
+ "sheets": [
+  {
+   "id": "mosel",
+   "why": {
+    "text": "Steep slate slopes along a winding river, a long growing season and half the vineyards facing south-east to south-west, with Riesling dominant.",
+    "cite": [
+     "mosel-spec:p8",
+     "mosel-spec:p9",
+     "mosel-spec:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Weißer Riesling"
+     },
+     {
+      "local": "Blauer Spätburgunder"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Ruländer"
+     },
+     {
+      "local": "Weißer Burgunder"
+     }
+    ],
+    "cite": [
+     "mosel-spec:p11",
+     "mosel-spec:p12"
+    ],
+    "others": [
+     "Adelfränkisch",
+     "Albalonga",
+     "Alvarinho",
+     "Arinto",
+     "Arnsburger",
+     "Auxerrois",
+     "Bacchus",
+     "Blütenmuskateller",
+     "Bronner",
+     "Cabernet Blanc",
+     "Calardis Blanc",
+     "Chenin Blanc",
+     "Donauriesling",
+     "Ehrenbreitsteiner",
+     "Ehrenfelser",
+     "Faberrebe",
+     "Felicia",
+     "Fernão Pires",
+     "Fidelio",
+     "Findling Gelber Kleinberger",
+     "Gelber Muskateller",
+     "Gelber Orleans",
+     "Gm 4-46",
+     "Gm 6414-17",
+     "Gm 9224-2",
+     "Gm 9337-1",
+     "Gm 9620-5",
+     "Goldmuskateller",
+     "Goldriesling",
+     "Grüner Silvaner",
+     "Grüner Veltliner",
+     "Grünfränkisch",
+     "Gutenborner",
+     "Helios",
+     "Hibernal",
+     "Huxelrebe",
+     "Johanniter",
+     "Juwel",
+     "Kerner",
+     "Kernling",
+     "Morio Muskat",
+     "Müller Thurgau",
+     "Muscaris",
+     "Muskat Ottonel",
+     "Optima 113",
+     "Ortega",
+     "Pamina",
+     "Perle",
+     "Phoenix",
+     "Prinzipal",
+     "Regner",
+     "Reichensteiner",
+     "Rieslaner",
+     "Rinot",
+     "Rosa Chardonnay",
+     "Roter Elbling",
+     "Roter Gutedel",
+     "Roter Müller Thurgau",
+     "Roter Muskateller",
+     "Roter Riesling",
+     "Roter Traminer",
+     "Roter Veltliner",
+     "Saphira",
+     "Sauvignac",
+     "Sauvignon Blanc",
+     "Sauvignon Gris",
+     "Sauvitage",
+     "Savagnin Blanc",
+     "Scheurebe",
+     "Schönburger",
+     "Sémillon",
+     "Siegerrebe",
+     "Solaris",
+     "Soreli",
+     "Souvignier Gris",
+     "Trebbiano di Soave",
+     "Veritage",
+     "Viognier",
+     "Voltis",
+     "Weißer Elbling",
+     "Weißer Gutedel",
+     "Weißer Heunisch",
+     "Accent",
+     "Acolon",
+     "Affenthaler",
+     "Allegro",
+     "Baron",
+     "Blauer Elbling",
+     "Blauer Frühburgunder",
+     "Blauer Limberger",
+     "Blauer Portugieser",
+     "Blauer Trollinger",
+     "Blauer Zweigelt",
+     "Bolero",
+     "Cabernet Bordo",
+     "Cabernet Cortis",
+     "Cabernet Cubin",
+     "Cabernet Dorio",
+     "Cabernet Dorsa",
+     "Cabernet Franc",
+     "Cabernet Jura",
+     "Cabernet Mitos",
+     "Cabernet Sauvignon",
+     "Cabertin",
+     "Dakapo",
+     "Divico",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Gamay noir",
+     "Grenache noir",
+     "Hartblau",
+     "Kleiner Fränkischer Burgunder",
+     "Lagrein",
+     "Laurot",
+     "Levitage",
+     "Merlot",
+     "Monarch",
+     "Müllerrebe",
+     "Nebbiolo",
+     "Palas",
+     "Pinotin",
+     "Pinot Nova",
+     "Piroso",
+     "Primitivo",
+     "Prior",
+     "Reberger",
+     "Regent",
+     "Rondo",
+     "Rubinet",
+     "St. Laurent",
+     "Satin Noir",
+     "Schwarzblauer Riesling",
+     "Schwarzer Elbling",
+     "Schwarzer Urban",
+     "Süßschwarz",
+     "Syrah",
+     "Tempranillo",
+     "Touriga nacional",
+     "VB 91-26-5"
+    ],
+    "othersCite": [
+     "mosel-spec:p7",
+     "mosel-spec:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Mostly white wine, from dry to very sweet Prädikat wines; also rosé, red, Rotling, Perlwein and Sekt.",
+    "cite": [
+     "mosel-spec:p1",
+     "mosel-spec:p2",
+     "mosel-spec:p3",
+     "mosel-spec:p5"
+    ]
+   },
+   "climate": {
+    "text": "Mean annual temperature 9.7 °C, 14.1 °C in the growing season. Rain averages 760 mm a year, 60% of it in the growing season. Vines get on average 652,000 Wh/m² of direct sun in the season, highest on steep slopes.",
+    "cite": [
+     "mosel-spec:p8"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Devonian rock: quartzite sandstone, quartzite and slate. Only the Upper Mosel has Muschelkalk and Keuper rock from lime-bearing marine deposits; Buntsandstein sandstone formed around Trier.",
+    "cite": [
+     "mosel-spec:p8",
+     "mosel-spec:p12"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie about 65 to 375 m above sea level, averaging 180 m. Half face south-east to south-west, on average 195° (SSW).",
+    "cite": [
+     "mosel-spec:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: fruity, sometimes green, smoky or mineral, balanced acid and sweetness, light to full body. Reds: red fruit, mild to noticeable acidity, light to full-bodied.",
+    "cite": [
+     "mosel-spec:p2",
+     "mosel-spec:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Kabinett",
+      "text": "Low to moderate alcohol, fruity and fresh; at least 73° Öchsle (70° Elbling), unenriched."
+     },
+     {
+      "name": "Auslese",
+      "text": "Fully ripe or overripe grapes, sometimes botrytised; min. 88° Öchsle Riesling, 93° other whites."
+     },
+     {
+      "name": "Trockenbeerenauslese",
+      "text": "Berries concentrated further by noble rot; at least 150° Öchsle, mostly very sweet."
+     },
+     {
+      "name": "Eiswein",
+      "text": "Grapes naturally frozen at harvest and pressing; at least 110° Öchsle."
+     }
+    ],
+    "cite": [
+     "mosel-spec:p1",
+     "mosel-spec:p2",
+     "mosel-spec:p4",
+     "mosel-spec:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

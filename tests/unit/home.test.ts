@@ -13,9 +13,8 @@ import { countryPageKeys, countryPhotoKeys, fillCountryPage, fillGuidesIndex, fi
 // The home page (index.html) is plain HTML; its numbers and country cards are filled in at build time, and must say what the atlas's country cards count.
 const html = readFileSync('index.html', 'utf8');
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
-const regions = tree.countries.flatMap((c) => tree.regionsOf(c.id)).filter((r) => !r.id.startsWith('de-'));
-// Germany's two places and regions (pilot step 2, #149) have no guide until step 3, and the home counts guides: they join the count then.
-const places = regions.flatMap((r) => tree.placesInRegion(r.id)).filter((p) => !p.region.startsWith('de-'));
+const regions = tree.countries.flatMap((c) => tree.regionsOf(c.id));
+const places = regions.flatMap((r) => tree.placesInRegion(r.id));
 
 describe('the home page', () => {
   it('counts the places and study regions of every country the atlas has, filled in at build time', () => {

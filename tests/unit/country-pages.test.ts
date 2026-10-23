@@ -92,7 +92,7 @@ describe('country pages', () => {
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);
-    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g)).toBe(bare.length);
+    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g) + count(pages.germany, /Photos soon/g)).toBe(bare.length);
     expect(pages.portugal).toContain('href="../pt/douro/"');
   });
 });
