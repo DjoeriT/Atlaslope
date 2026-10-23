@@ -21,7 +21,13 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
 - Look: black band + champagne, white page, no dark mode, 6px corners, no pills, no drawn illustrations; photos may be cropped to their
   frames, never cutting a face, glass or bottle (Guides page cards: square crops, each checked, release 55). Detail: `Review/visual-style.md`.
 
-## Current state (22 Oct 2026)
+## Current state (23 Oct 2026)
+- Release 70 (23 Oct; handoffs `docs/handoffs/2026-10-22-portugal-batch-1.md`, `2026-10-23-portugal-photos-2.md`): Portugal with equal
+  standing: 28 guides (every mainland DOC, Lisboa VR, Madeira, Madeirense), country pages `/es/` and `/pt/` with Home country cards and
+  Guides as the country index (#214); 76 photos for 24 of them from Commons and Openverse (#234; Alenquer and DoTejo have none). Guides
+  load on demand and the size check counts the first load, limit 2.1 MB (decision #38). Raw downloads moved outside the repo (#229) after
+  #214 committed a `data/raw` link that wiped them. The release also carries other sessions' merged work since 69
+  (`git log --merges release-69..release-70`). Portuguese places are grey on the climate map until they are measured (in progress).
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
   the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries
@@ -138,7 +144,9 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 ## Open questions for the owner
 - Home donation line asks for money with no way to give; About feedback email link is "later".
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Next countries: Portugal, then France (owner, 22 Oct 2026; France plan `Review/countries/france-plan.md`, decisions #52-#58, pilot waits for Portugal's mainland and #205); Italy pilot right after the France pilot (owner, 22 Oct 2026; plan `Review/countries/italy-plan.md`, decisions #59-#66).; Germany fifth: prep slice now, pilot (Mosel, Rheingau) after the Italy pilot (owner, 22 Oct 2026; plan `Review/countries/germany-plan.md`, decisions #71-#78).; Austria and Greece after Germany (owner, 22 Oct 2026; decisions #81-#92).
-- Portugal pilot (22 Oct 2026): Douro and Vinho Verde have outlines, sheets and guides at `/pt/<id>/`; Home and Guides stay Spain-only until the owner picks a mock option (`docs/handoffs/2026-10-22-portugal-pilot.md`). Guides 0.75M each [V]; the session around them 18.9M re-read, mostly building the tooling.
+- Portugal photos (23 Oct 2026): Alenquer and DoTejo have no usable open photo; seven places have one. A wine commission's media library
+  (CVR Lisboa, Tejo, Algarve) needs written permission, his to ask. Kolforn (Lagos photos) asks on Commons to be mailed when used.
+- Next size call comes with France (#235: country outlines out of the first load); France alone builds to about 3.0 MB [R].
 - From 22 Oct: Raimat (Costers del Segre) "far east" per the pliego while the map shows west, add a note? Cangas rock key shows "Sandstones and
   slates" twice (two colours, one unit). Guides page: bring back "More regions are being written"? Map tour chip text is about 10.5 px on a phone.
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?

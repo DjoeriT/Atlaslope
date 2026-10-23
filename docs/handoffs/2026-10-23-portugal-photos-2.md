@@ -23,9 +23,9 @@
 - Places still without photos: Alenquer, DoTejo (nothing usable in Commons or Openverse). Thin: Carcavelos, Tavira, Portimão,
   Távora-Varosa, Beira Interior, Lafões, Encostas d'Aire (1 each).
 - Raw: `world/` (needs shapely locally) and `build/` (CI data build) are caches; `countries/fr/cdc/` the France session adds to the manifest.
-- `.github/workflows/data-build.yml` runs on any push that touches `Tools/data/remote_build.sh` and rebuilt `data/added-boundaries.geojson`
-  without the newer boundaries on #229 (LeadBot kept main's file). Worth a guard.
-- Release: guides (#214) and raw fix are on main; publish only on "publish release N".
+- Done after release 70 (PR `claude/pt-wrapup`): data-build refuses to commit boundaries that lose a place, both photo/data workflows
+  commit only after a successful run (a cancelled run pushed lisboa-2 as 0 bytes), photo_ship fetches Openverse picks by URL and keeps
+  trimBottomPx and hand-written alt texts. Portugal climate measures: builder slice in progress.
 
 ## Numbers
 - Helpers this round: about 0.83M tokens new (spend log). LeadBot main thread: long session, re-reads dominate [A].

@@ -12,6 +12,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[2]
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "AtlaslopeDataBot/0.2 (https://github.com/DjoeriT/Atlaslope)"
+UA_BOT = UA
+UA_FILES = "Atlaslope/0.2 (https://github.com/DjoeriT/Atlaslope)"
 OUT = ROOT / "public/photos"
 
 
@@ -60,14 +62,21 @@ def main():
         for n, c in enumerate(items, 1):
             key = f"{pid}-{n}"
             if doc["photos"].get(key, {}).get("title") == c["title"] and (OUT / f"{key}.webp").exists(): continue  # a reorder or swap re-fetches
+            # A pick from Openverse (Flickr and others) is not a Commons file: fetch its own URL, under a User-Agent without "Bot",
+            # which Flickr's file host refuses (Portugal photos, 23 Oct 2026). trimBottomPx cuts overlay text (scaled from 1200 px wide).
+            global UA
+            commons = "commons.wikimedia.org" in c["page"]
+            UA = UA_BOT if commons else UA_FILES
             try:
-                img = Image.open(io.BytesIO(fetch(rendition(c["title"])))).convert("RGB")
+                img = Image.open(io.BytesIO(fetch(rendition(c["title"]) if commons else c["url"]))).convert("RGB")
             except Exception as e:
                 print(key, "error:", e, flush=True); continue
             img.thumbnail((1200, 1200))
+            if c.get("trimBottomPx"): img = img.crop((0, 0, img.width, img.height - round(c["trimBottomPx"] * img.width / 1200)))
             img.save(OUT / f"{key}.webp", "WEBP", quality=72, method=6)
             artist = clean_artist(c.get("artist") or "")
-            doc["photos"][key] = {"alt": alt(c), "artist": artist, "licence": c["licence"], "licenceUrl": c.get("licenceUrl"), "page": c["page"], "title": c["title"]}
+            kept = doc["photos"].get(key, {})  # an alt written by hand survives a re-fetch of the same file
+            doc["photos"][key] = {"alt": kept["alt"] if kept.get("title") == c["title"] and kept.get("alt") else alt(c), "artist": artist, "licence": c["licence"], "licenceUrl": c.get("licenceUrl"), "page": c["page"], "title": c["title"]}
             print(key, (OUT / f"{key}.webp").stat().st_size // 1024, "KB", flush=True)
             photos_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
             time.sleep(1)
