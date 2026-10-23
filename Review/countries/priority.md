@@ -1,6 +1,6 @@
 # Next countries: Old World priority (23 Oct 2026, issue #149)
 
-Owner, 23 Oct 2026: "keep it old world for now". Draft for his pick; nothing here is decided.
+Owner, 23 Oct 2026: "keep it old world for now". Order picked (owner, 23 Oct 2026): "Finish Germany first: the 11 remaining Anbaugebiete, then Austria." [O] Below Austria still a draft.
 EU wine register counts [V, eAmbrosia list fetched 23 Oct 2026, all statuses]; WSET L3 names [V, spec Issue 2 on disk].
 Guide rate 0.75-0.97M [V, Portugal and Italy batches]; country pilot ~5-8M engineering [A, Germany brief].
 
