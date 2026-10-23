@@ -31,3 +31,11 @@
 
 ## Numbers
 - Helpers this round: about 0.83M tokens new (spend log). LeadBot main thread: long session, re-reads dominate [A].
+
+## After release 70 (23 Oct 2026)
+- Climate colours, altitude and slope for Portugal (#241) and France (#244, built on #241, merged first); release 73 carries both.
+- Conflict guards (owner: "Do 1 and 2"): union merge for the handoff index and spend log, one row per country for shared
+  `data/SOURCES.md` layers, one bullet per slice in PROJECT "Current state" (#249). Sent to Germany, branding and the new-country skill
+  session (#250 took it in); France, Italy and Learn sessions had ended.
+- Open: nothing for Portugal. Azores DOCs wait on CAOP RAA; Alenquer and DoTejo photos need a commission's permission (owner).
+

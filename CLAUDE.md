@@ -61,7 +61,9 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Git:** PR per slice on a `claude/` branch; merge `main` in, never rebase. The slice PR holds the handoff and tester note (no records
   PR after it). Push when the PR can stand alone, not in bursts. A handoff is pushed before the session ends (19 Oct: the Guides
   mock handoff sat on an unpushed local branch). Archive, never delete (`Review/archive/`). `release-N` tags mark what is live; keep no "live on release-N" line anywhere. A data workflow's bot commit on your branch is read before merge (23 Oct 2026: data-build rebuilt
-  added-boundaries from older inputs on #229; a cancelled photo run pushed a 0-byte photo). Backlog = GitHub Issues
+  added-boundaries from older inputs on #229; a cancelled photo run pushed a 0-byte photo). Shared records take lines, not edits: one
+  bullet per slice in `PROJECT.md` "Current state", one row per country in `data/SOURCES.md`, never another session's line; handoff index and
+  spend log merge by union (`.gitattributes`) (23 Oct 2026: parallel country sessions conflicted on the same lines). Backlog = GitHub Issues
   (`DjoeriT/Atlaslope`, `#n` in commits; he sets priority).
 - **ReviewBot scope:** only PRs with a new screen, new or changed user-facing copy, or a licence/legal question. Fixes, tweaks and docs merge
   on green CI alone (it stays where tests cannot look, e.g. a hidden CC credit).
