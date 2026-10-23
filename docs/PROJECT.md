@@ -37,7 +37,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   (94 AOCs plus the PGIs Côtes de Gascogne and Pays d'Oc), guides from the EU single documents (5 from INAO cahiers), INAO outlines (Champagne and
   the PGIs from INAO commune lists and IGN ADMIN EXPRESS), Chablis climats as zones, nesting measured on outlines, IGN BD ORTHO close-in,
   ~330 Commons photos (Muscat de Beaumes-de-Venise has none) (#228, #232, #238). Size option A (#235, owner): each country's outlines load
-  with that country and per-place pages leave the first-load count. Guides cost 0.95M a place [V usage.py], ~90M in all.
+  with that country and per-place pages leave the first-load count; from above a light copy of every country shows (#95, ~36 KB). Guides cost 0.95M a place [V usage.py], ~90M in all.
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
   the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries

@@ -1,7 +1,8 @@
 import { readFileSync } from 'node:fs';
+import { gzipSync } from 'node:zlib';
 import { describe, expect, it } from 'vitest';
 import { buildBoundaries } from '../../src/map/boundaries';
-import { OUTLINES_MIN_ZOOM, boxOf, boxesOf, countriesInView, countryIndex, countryOf, splitOutlines } from '../../src/map/outlines';
+import { OUTLINES_MIN_ZOOM, boxOf, boxesOf, countriesInView, countryIndex, countryOf, overviewOf, overviewOutlines, splitOutlines } from '../../src/map/outlines';
 import { COUNTRIES, DEFAULT_COUNTRY } from '../../src/countries';
 
 const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
@@ -61,4 +62,48 @@ describe('countries the view reaches', () => {
     expect(countriesInView([-2.9, 42.3, -1.8, 42.7], 9, files)).not.toContain('france'); // Rioja, inside the box around all of France
   });
   it('boxes nothing for no outlines', () => expect(boxOf({ type: 'FeatureCollection', features: [] })).toBeNull());
+});
+
+describe('the overview from above', () => {
+  const file = read('places.json');
+  const parts = splitOutlines(read('added-boundaries.geojson'), file);
+  const overview = overviewOutlines(parts, file);
+  const ids = new Set(overview.features.map((f) => String(f.properties.id)));
+  const zones = new Set(file.places.filter((p: { kind: string }) => p.kind === 'zone').map((p: { id: string }) => p.id));
+
+  it('has every place of every other country, and no zone', () => {
+    const want = Object.entries(parts).filter(([c]) => c !== DEFAULT_COUNTRY).flatMap(([, fc]) => fc.features)
+      .map((f) => String(f.properties.id)).filter((id) => !zones.has(id));
+    expect(want.length).toBeGreaterThan(0);
+    expect(ids).toEqual(new Set(want));
+    expect(parts[DEFAULT_COUNTRY].features.some((f) => ids.has(String(f.properties.id)))).toBe(false);
+  });
+  it('keeps every place drawable: polygons with at least one closed ring of 4 points', () => {
+    for (const f of overview.features) {
+      const polys = (f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates) as number[][][][];
+      expect(polys.length, String(f.properties.id)).toBeGreaterThan(0);
+      for (const p of polys) for (const r of p) expect(r.length).toBeGreaterThanOrEqual(4);
+    }
+  });
+  it('stays close to the full outline: each place keeps its box within 0.05 degrees', () => {
+    const full = new Map(Object.values(parts).flatMap((c) => c.features).map((f) => [String(f.properties.id), f]));
+    for (const f of overview.features) {
+      const a = boxOf({ type: 'FeatureCollection', features: [full.get(String(f.properties.id)) as never] }) as number[];
+      const b = boxOf({ type: 'FeatureCollection', features: [f] }) as number[];
+      // the biggest piece is kept, so a place made of far-apart small pieces may shrink; it never grows
+      expect(b[0], String(f.properties.id)).toBeGreaterThanOrEqual(a[0] - 0.05);
+      expect(b[2], String(f.properties.id)).toBeLessThanOrEqual(a[2] + 0.05);
+    }
+  });
+  it('is light: under 50 KB gzipped for all other countries (part of the first load, decision #38)', () => {
+    expect(gzipSync(JSON.stringify(overview), { level: 9 }).length).toBeLessThan(50_000);
+  });
+  it('drops small pieces and holes but never a whole place', () => {
+    const square = (x: number, y: number, d: number) => [[x, y], [x + d, y], [x + d, y + d], [x, y + d], [x, y]];
+    const tiny: never = { type: 'Feature', properties: { id: 'a' }, geometry: { type: 'MultiPolygon', coordinates: [[square(0, 0, 0.001)], [square(1, 1, 0.002)]] } } as never;
+    const big: never = { type: 'Feature', properties: { id: 'b' }, geometry: { type: 'Polygon', coordinates: [square(0, 0, 1), square(0.5, 0.5, 0.001)] } } as never;
+    const [a, b] = overviewOf({ type: 'FeatureCollection', features: [tiny, big] }).features;
+    expect(a.geometry.coordinates).toHaveLength(1); // only the biggest of two specks
+    expect(b.geometry.coordinates).toHaveLength(1); // the speck of a hole is gone
+  });
 });

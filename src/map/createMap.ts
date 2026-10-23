@@ -2,7 +2,7 @@
 import maplibregl, { type Map as MapLibreMap } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import dopsUrl from '../../data/dops.geojson?url';
-import outlineFiles from 'virtual:outlines';
+import outlineFiles, { overview as overviewUrl } from 'virtual:outlines';
 import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import { ROOT } from '../site';
@@ -192,11 +192,15 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       draw();
       needInView();
     }).catch(() => events.onDataFailed?.());
+    // Without it only the countries already close in are drawn, so a failure here is not a data failure.
+    asCollection(overviewUrl).then((c) => { overview = c; if (base) draw(); }).catch(() => undefined);
   });
 
   // The default country's outlines come with the first load; another country's are fetched once, when a card opens it or the
   // view (from OUTLINES_MIN_ZOOM in) reaches the box of one of its outlines, and the places are drawn again with them (src/map/outlines.ts, decision #38).
+  // Until then that country is drawn from the light overview, so the view from above shows every country (owner option C, 23 Oct 2026).
   let base: { dops: Collection; zoneFile: Collection } | null = null;
+  let overview: Collection | null = null;
   const outlines = new Map<string, Collection>();
   const asked = new Map<string, Promise<void>>();
   function outlinesOf(country: string): Promise<void> {
@@ -229,7 +233,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   /** Draws every outline that has arrived: the ministry's DOs, each loaded country's added outlines, and the zones. */
   function draw() {
     if (!base) return;
-    const added: Collection = { type: 'FeatureCollection', features: [...outlines.values()].flatMap((c) => c.features) };
+    const light = (overview?.features ?? []).filter((f) => !outlines.has(countryOf(placeCountry, String(f.properties.id))));
+    const added: Collection = { type: 'FeatureCollection', features: [...[...outlines.values()].flatMap((c) => c.features), ...light] };
     boundaries = buildBoundaries(places.places as PlaceRow[], base.dops, overrides as unknown as Overrides, added);
     const zoneRows = (places.places as PlaceRow[]).filter((p) => p.kind === 'zone');
     const zoneIds = new Map(zoneRows.map((p) => [p.name, p.id]));

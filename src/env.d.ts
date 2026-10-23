@@ -10,6 +10,8 @@ declare module 'virtual:outlines' {
   /** Country id to its outlines file's URL and each outline's box (vite.config.ts, src/map/outlines.ts). */
   const files: Record<string, import('./map/outlines').OutlineFile>;
   export default files;
+  /** URL of the light outlines of every other country, for the view from above (src/map/outlines.ts, overviewOutlines). */
+  export const overview: string;
 }
 declare module 'virtual:photo-data' {
   const data: { photos: Record<string, import('./facts/types').Photo>; sizes: { sizes: number[]; photos: Record<string, { w: number; h: number; blur: string }> } };
