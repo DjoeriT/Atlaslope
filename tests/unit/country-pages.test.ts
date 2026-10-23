@@ -108,9 +108,9 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
     expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
   });
-  it('renders /fr/ with 94 place tiles, photos where they have shipped, and an honest Study note', () => {
-    expect(count(page, /<a class="ecard"/g)).toBe(94);
-    expect(count(page, /Photos soon/g)).toBe(1); // every France guide has photos except muscat-de-beaumes-de-venise (its Commons sheet has none)
+  it('renders /fr/ with 96 place tiles, photos where they have shipped, and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(96);
+    expect(count(page, /Photos soon/g)).toBe(1); // Muscat de Beaumes-de-Venise (none on Commons); Côtes de Gascogne and Pays d'Oc now have photos
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');

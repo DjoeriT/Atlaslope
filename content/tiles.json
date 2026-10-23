@@ -1933,6 +1933,20 @@
     "champagne-doc:p7",
     "champagne-doc:p9"
    ]
+  },
+  "cotes-de-gascogne": {
+   "title": "Steady water and a mild climate",
+   "cite": [
+    "cotes-de-gascogne-doc:p8"
+   ]
+  },
+  "pays-doc": {
+   "title": "A Mediterranean amphitheatre",
+   "cite": [
+    "pays-doc-doc:p3",
+    "pays-doc-doc:p9",
+    "pays-doc-doc:p10"
+   ]
   }
  }
 }

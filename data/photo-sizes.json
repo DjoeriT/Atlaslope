@@ -906,6 +906,31 @@
    "h": 803,
    "blur": "UklGRlYAAABXRUJQVlA4IEoAAACQAQCdASoQAAsAAsBMJYgAAppynTgAzj/m/RvJIMHt++mFT+gbqTt1oTO6BxLeziD3HhVaVv+EfoQYoLveAdROhsp4o/TzX4AAAA=="
   },
+  "cotes-de-gascogne-1": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAsAAsBMJYgCdAEPBxnnvWAA/vfrjKURt7ohXRDN7s4Vf1Ex7Wxvkr0Osokhhba6LTaf2PM+rWY66UuLL9p1zLSgAA=="
+  },
+  "cotes-de-gascogne-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlgAAABXRUJQVlA4IEwAAABQAgCdASoQAAwAAsBMJaACw7EPEJm7lSjvM4AA/vCslGjk/vxhjt/dxUlgiHg9WDjwJP1slkPc21/57/Or65xcMunU55+uHi9UAAAA"
+  },
+  "cotes-de-gascogne-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwAAsBMJaQAAtzf9H+JAAD+9O+oJDt+cu9xqc4ww5pxVO60J40xwPjZYbTL5THsHahOwTnmO+BDbnxFAAAA"
+  },
+  "cotes-de-gascogne-4": {
+   "w": 1200,
+   "h": 795,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAsAAsBMJagCdAEPWbPywRR/AAD+8Bv4BUR05h9njEP1QS3UPGrf9QmbyZbh0ieFFKxnuL1WKvyLHK86eRqxkAA="
+  },
+  "cotes-de-gascogne-5": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAwAAsBMJYgCdB2gAZnSU/EgAAD+uDvib+fem06SZ/6XsQoIX/0cgiNLU0ZunCXptr42qWFz3nwZ18+0Agon7QKK1znq+uSSs0cD+yMRiVC+ulwAAA=="
+  },
   "cotes-de-provence-1": {
    "w": 1200,
    "h": 800,
@@ -2050,6 +2075,31 @@
    "w": 1200,
    "h": 900,
    "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAwAAsBMJaACdAEQFIv2AfgAAP5m30d/8izNuugHBBqWBU21N/FueUQ52fDVHeVbCIoOtQhumC23i/o8xhd62dybH9etMIojXemEtsAmkYfVAAA="
+  },
+  "pays-doc-1": {
+   "w": 1200,
+   "h": 801,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAAsBMJYgCdAELUMvO/X7gAP71PUC4IhaY3wP10e7MsGSFuCRd6GRaOCzGR+pmU57ayUZcquaQtimWvv+DBCIFlLPflyIGld8hAAA="
+  },
+  "pays-doc-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsAAsBMJYgCdH8AFcUNExQt+AD+wp4ktBAB7taWWSmLaF+v2HaL7LdjAnVMRI/7/1oumuvai36y/YpNggV66IAAAA=="
+  },
+  "pays-doc-3": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkAAsBMJYgCdADx+JS6AAD+siV+m6JlO2rPn+4LKvd9242dTX1Z8DEFVyZ0onz6xIBIHeC/MUni1phiiCrAgAA="
+  },
+  "pays-doc-4": {
+   "w": 1200,
+   "h": 801,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAsAAsBMJaQAAudC8GB4sAD8Iqdee1w8aeWrhjvNgbOoWlX8jKdIc+kPgBvYWUDhNNAaTsrxcCsCRjBMMAAA"
+  },
+  "pays-doc-5": {
+   "w": 1200,
+   "h": 801,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAAsAAsBMJZgCdAELYta/GfwLkAD+7Zlg1QF8oK9QDUuDZWLW5l7vysLnUS22CsfU+JcHo15277YNqP8uZf+ju08Nq9F3au/q4afD4/u4PF7AAAA="
   },
   "penedes-1": {
    "w": 1200,
