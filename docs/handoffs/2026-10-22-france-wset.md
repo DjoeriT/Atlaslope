@@ -4,6 +4,17 @@ Owner goal, verbatim: "get all the guides up for the WSET level 3 list, basicall
 with the Portugal and Italy session (that will come after you) to get it done." Then: "The goal should include photos".
 Decisions: #52-#58 (`docs/architecture-decisions.md`), plan `Review/countries/france-plan.md`, prep `Review/countries/france-prep/`.
 
+## State 23 Oct 2026 (read this first; the sections below are the history)
+- Done: all 96 WSET L3 places live in release 71 (#228 pilot, #232 the 94 AOCs with photos and size option A #235, #238 the two PGIs).
+  Climate colours and measures for France: #244, release 73 (altitude and slope missing for country.france, Côtes de Gascogne and
+  Pays d'Oc: their DEM tiles are not cached; filling them is a networked fetch, owner's word).
+- Count: 96 = 94 AOCs + 2 PGIs. fr_wset.py first matched "PDO-" only and dropped the PGIs (fixed 23 Oct); "94" in older notes below is that error.
+- Open: owner rewrites the France intro, tile lines and footer; the 14 WSET district or sub-names stay inside their parent's guide
+  (owner to confirm); Muscat de Beaumes-de-Venise has no photo; #240 flaky URL test; Tools/data/remote_build.sh has no France step
+  (data-build rebuilt added-boundaries without France once); a push whose range touches Tools/data/photo_ship.py or
+  photo_candidates.py starts the photo bots on the branch: cancel them (data-photos-ship pushed a 0-byte photo once).
+- Raw: France's raw files go in ~/Developer/Atlaslope-raw (Tools/rawdir.py); the 9 cdc PDFs still need entries in raw-manifest.json.
+
 ## Scope
 - 94 places, not 96: the WSET name table has 94 rows with an EU register number [V] (`data/countries/fr/wset-places.json`).
   The other 14 rows are districts or sub-names (five Champagne sub-zones, Alsace Grand Cru heading, Bourgogne DGCs, Mâcon-Villages,

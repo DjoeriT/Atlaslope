@@ -30,6 +30,11 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   intro on a first visit, "Learning for" course filter, `#learn`, Cava and Catalunya in Learn. The release also carries other sessions' merged work since 69
   (`git log --merges release-69..release-70`). Portugal's and France's climate colours,
   altitude and slope, and measures on guide pages of places outside Learn: #241 and #244, release 73.
+- Release 71 (23 Oct; handoff `docs/handoffs/2026-10-22-france-wset.md`): France, third country, the whole WSET L3 list: 96 places
+  (94 AOCs plus the PGIs Côtes de Gascogne and Pays d'Oc), guides from the EU single documents (5 from INAO cahiers), INAO outlines (Champagne and
+  the PGIs from INAO commune lists and IGN ADMIN EXPRESS), Chablis climats as zones, nesting measured on outlines, IGN BD ORTHO close-in,
+  ~330 Commons photos (Muscat de Beaumes-de-Venise has none) (#228, #232, #238). Size option A (#235, owner): each country's outlines load
+  with that country and per-place pages leave the first-load count. Guides cost 0.95M a place [V usage.py], ~90M in all.
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
   the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries
@@ -132,8 +137,8 @@ selected guides; #149 more countries (Portugal or France first); #150 guide enri
 (#149, #151, #152 hang together). Guides page leftovers (handoff `2026-10-19-guides-page-build.md`): Canarias tile mostly sea, Rioja
 tile dark fill, Green Spain neighbour outlines, long phone page (all gone with Guides page E, release 66).
 Order set by the owner 20 Oct 2026: #83 flaky Study tests (done 20 Oct), then #126, then #127 with #148 (done 22 Oct: 15 map tours, releases
-64-65). Open from 22 Oct: #188 Priorat stop 6 never settles in shots-tour; flaky tests #190 (9-stop story test, made slow) and #193 (cards
-zoom poll); Koppen tint needs a land cut (it only fades). Priority labels set 19 Oct 2026 (cleanup). Next: #126 repetitive "If you like this, try" cards
+64-65). Open from 22 Oct: #188 Priorat stop 6 never settles in shots-tour; flaky tests #190 (9-stop story test, made slow), #193 (cards
+zoom poll) and #240 (a late map moveend writes #view= after the page changed the URL, 23 Oct); Koppen tint needs a land cut (it only fades). Priority labels set 19 Oct 2026 (cleanup). Next: #126 repetitive "If you like this, try" cards
 ("Tempranillo here too" x3, Navarra photo white band); #48 QA follow-up (richer Spain and region cards); #96 alt texts; #18 Vinos de Pago
 outlines (Urbezo done, 12 left); #42 photos; #29 main grapes; #1 DO layer from 2014. Later: #130 major upgrades
 (React 19, MapLibre 6, Vite 8, TS 7, Vitest 5); #106 cause-to-taste chain; #103 enrich guides from more sources; #101 travel flags; #108
@@ -148,7 +153,8 @@ unstamped (INTIA file). Website slice 3 (static guide pages, /spain/ index, shar
 - Meseta (25, last Spanish region): all 25 written after batch 3 (`docs/handoffs/2026-10-19-meseta-batch-3.md`), 0.55-0.62M a place measured on the local route; every place has a guide. Guides page and Meseta unsure edits done (releases 53-55). Next countries: Portugal, then France (owner, 22 Oct 2026; France plan `Review/countries/france-plan.md`, decisions #52-#58, pilot waits for Portugal's mainland and #205); Italy pilot right after the France pilot (owner, 22 Oct 2026; plan `Review/countries/italy-plan.md`, decisions #59-#66).; Germany fifth: prep slice now, pilot (Mosel, Rheingau) after the Italy pilot (owner, 22 Oct 2026; plan `Review/countries/germany-plan.md`, decisions #71-#78).; Austria and Greece after Germany (owner, 22 Oct 2026; decisions #81-#92).
 - Portugal photos (23 Oct 2026): Alenquer and DoTejo have no usable open photo; seven places have one. A wine commission's media library
   (CVR Lisboa, Tejo, Algarve) needs written permission, his to ask. Kolforn (Lagos photos) asks on Commons to be mailed when used.
-- Next size call comes with France (#235: country outlines out of the first load); France alone builds to about 3.0 MB [R].
+- France copy to rewrite: the France intro, tile lines and the footer ("Spain and Portugal"). The 14 WSET names that are
+  districts or sub-names (Champagne's five, Beaujolais-Villages...) live inside their parent's guide: OK?
 - From 22 Oct: Raimat (Costers del Segre) "far east" per the pliego while the map shows west, add a note? Cangas rock key shows "Sandstones and
   slates" twice (two colours, one unit). Guides page: bring back "More regions are being written"? Map tour chip text is about 10.5 px on a phone.
 - Safari, iPad, phone check and WSET-student testers (a Dutch invite draft was given 19 Oct): when?
