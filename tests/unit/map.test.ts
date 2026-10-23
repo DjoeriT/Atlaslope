@@ -240,10 +240,11 @@ describe('France zones on the map (#55)', () => {
 describe('outline credits', () => {
   // The map's credit box names each country's outline source; Italy's says which outlines are approximate (#62).
   const src = readFileSync('src/map/createMap.ts', 'utf8');
-  it('credits Portugal, France, Italy and Germany', () => {
+  it('credits Portugal, France, Italy, Germany and Austria', () => {
     expect(src).toContain("'Portugal outlines: DGT, CAOP 2025'");
     expect(src).toContain("'France outlines: INAO, for information'");
     expect(src).toContain("'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits'");
     expect(src).toContain("'Germany outlines: ©Landwirtschaftskammer RLP (2026), dl-de/by-2-0, weinlagen.lwk-rlp.de [Daten bearbeitet], approximate'");
+    expect(src).toContain("'Austria outlines: © Land Niederösterreich, © Land Burgenland, Statistik Austria (CC BY 4.0), approximate'");
   });
 });

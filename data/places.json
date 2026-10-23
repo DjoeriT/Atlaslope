@@ -57,6 +57,17 @@
     "place",
     "zone"
    ]
+  },
+  {
+   "id": "austria",
+   "name": "Austria",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -282,6 +293,23 @@
     {
      "id": "de-rheingau",
      "name": "Rheingau",
+     "order": 2
+    }
+   ]
+  },
+  {
+   "id": "wset-at",
+   "name": "WSET",
+   "country": "austria",
+   "groups": [
+    {
+     "id": "at-wachau",
+     "name": "Wachau",
+     "order": 1
+    },
+    {
+     "id": "at-neusiedlersee",
+     "name": "Neusiedlersee",
      "order": 2
     }
    ]
@@ -7219,6 +7247,44 @@
    "centroid": null,
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 2
+  },
+  {
+   "id": "wachau",
+   "name": "Wachau",
+   "official": "Wachau",
+   "kind": "DAC",
+   "level": "place",
+   "parent": "austria",
+   "region": "at-wachau",
+   "euFile": "PDO-AT-A0205",
+   "layerCode": null,
+   "boundary": "at-areas",
+   "centroid": [
+    15.4302,
+    48.3813
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Austria joins when its WSET course is in Study.",
+   "courseOrder": 1
+  },
+  {
+   "id": "neusiedlersee",
+   "name": "Neusiedlersee",
+   "official": "Neusiedlersee",
+   "kind": "DAC",
+   "level": "place",
+   "parent": "austria",
+   "region": "at-neusiedlersee",
+   "euFile": "PDO-AT-A0219",
+   "layerCode": null,
+   "boundary": "at-areas",
+   "centroid": [
+    16.8747,
+    47.8147
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Austria joins when its WSET course is in Study.",
    "courseOrder": 2
   }
  ]

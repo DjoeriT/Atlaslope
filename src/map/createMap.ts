@@ -84,6 +84,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     // Portugal's outlines are built from DGT's CAOP 2025 (CC BY 4.0 asks for the credit; PR #214 review, 22 Oct 2026)
     // France's from INAO's parcel delimitation, which only INAO's own plans bind (decision #58). Italy's from Regione Piemonte's
     // DOC/DOCG areas, elsewhere whole ISTAT municipalities, so larger than the real area (`approximate: true` on the feature; #62).
+    // Austria's from the Rieden of Land Niederösterreich and Burgenland, closed at 150 m, so approximate.
     // Germany's from the LWK Rheinland-Pfalz g.U. layer, closed at 150 m, so approximate (dl-de/by-2-0 asks for the credit).
     attributionControl: {
       compact: true,
@@ -92,6 +93,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         'France outlines: INAO, for information',
         'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits',
         'Germany outlines: ©Landwirtschaftskammer RLP (2026), dl-de/by-2-0, weinlagen.lwk-rlp.de [Daten bearbeitet], approximate',
+        'Austria outlines: © Land Niederösterreich, © Land Burgenland, Statistik Austria (CC BY 4.0), approximate',
       ],
     },
     antialias: true,

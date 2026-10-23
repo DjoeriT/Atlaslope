@@ -38,7 +38,7 @@ describe('place tree', () => {
 
   it('links every place to a real parent, region and overlap', () => {
     for (const p of places) {
-      expect(['spain', 'portugal', 'france', 'italy', 'germany'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
+      expect(['spain', 'portugal', 'france', 'italy', 'germany', 'austria'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
       expect(groups.has(p.region), p.id).toBe(true);
       for (const o of p.alsoWithin ?? []) expect(byId.has(o), `${p.id} within ${o}`).toBe(true);
     }
@@ -49,7 +49,7 @@ describe('place tree', () => {
     expect(toFetch).toHaveLength(14);
     expect(toFetch.filter((p) => p.quiz !== 'none')).toEqual([]);
     expect(toFetch.filter((p) => p.parent !== 'germany').every((p) => p.kind === 'VP')).toBe(true); // Rheingau (#149) is the 14th: no outline yet
-    expect(places.filter((p) => p.boundary === 'added' && !/^(fr|it|de)-/.test(p.region)).map((p) => p.id).sort()).toEqual([
+    expect(places.filter((p) => p.boundary === 'added' && !/^(fr|it|de|at)-/.test(p.region)).map((p) => p.id).sort()).toEqual([
       'alenquer', 'alentejo', 'arruda', 'bairrada', 'beira-interior', 'bucelas', 'campo-de-calatrava', 'carcavelos', 'cebreros', 'colares', 'dao',
       'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'madeira', 'madeirense', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',
       'tavora-varosa', 'torres-vedras', 'tras-os-montes', 'urbezo', 'vinho-verde',
