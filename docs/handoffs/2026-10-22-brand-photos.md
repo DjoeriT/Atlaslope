@@ -147,3 +147,8 @@ Checked on origin/main and atlaslope.com [V]:
   `data/photos.json` merge. Read it before adding rows.
 - Owner (23 Oct): "Make it futureproof for other countries as well because more will be added." A new mock round is running
   (country hero place + prints in data, fallback without prints, country row at 7 countries). The build brief's "only Rioja" scope waits on that pick.
+- Futureproof mock (23 Oct): https://claude.ai/artifact/67VkQawSMbhnfh9sAxJfAq, source `mocks/brand-photo-countries/` (main folder, git-ignored). One Sonnet builder, 124K tokens [V].
+  Rule: each country names one hero place + three prints in data. Home rotates the hero country per visit (A); each country page has its own hero (B); recommended A+B.
+  Prints: Rioja c18/c06/c14, Douro 3/2/1, Chablis 2/3/4, Chianti Classico 3/5/4. No prints = map + card as today. Country row: 4+3 wrap at 1440, scroll row at 400.
+  Open before building: the atlas credit for Portugal, France and Italy names only "Esri, Vantor"; add the boundary-data source. The Germany/Austria/Greece "—" cards are builder placeholders (no copy exists).
+  Shared records (owner, #249): append lines to PROJECT.md "Current state", handoffs README and spend log; never edit another session's line.
