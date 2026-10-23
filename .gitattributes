@@ -1,0 +1,4 @@
+# Append-only lists merge by keeping both sides' new lines (owner 23 Oct 2026, after parallel country sessions kept conflicting
+# on the same last lines). Only for files where every change is a line added; never for JSON or tables whose rows get edited.
+docs/handoffs/README.md merge=union
+Review/agent-spend-log.md merge=union

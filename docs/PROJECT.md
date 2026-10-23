@@ -22,6 +22,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   frames, never cutting a face, glass or bottle (Guides page cards: square crops, each checked, release 55). Detail: `Review/visual-style.md`.
 
 ## Current state (23 Oct 2026)
+One bullet per release or slice, newest first; add your own bullet, never edit another session's (23 Oct 2026: one shared
+sentence here conflicted in three PRs in an hour).
 - Release 70 (23 Oct; handoffs `docs/handoffs/2026-10-22-portugal-batch-1.md`, `2026-10-23-portugal-photos-2.md`): Portugal with equal
   standing: 28 guides (every mainland DOC, Lisboa VR, Madeira, Madeirense), country pages `/es/` and `/pt/` with Home country cards and
   Guides as the country index (#214); 76 photos for 24 of them from Commons and Openverse (#234; Alenquer and DoTejo have none). Guides
