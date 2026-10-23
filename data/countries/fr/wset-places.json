@@ -332,6 +332,18 @@
    }
   },
   {
+   "id": "cotes-de-gascogne",
+   "name": "Côtes de Gascogne",
+   "registerName": "Côtes de Gascogne",
+   "batch": "South-West",
+   "heading": "The Dordogne and South West France (still)",
+   "kind": "PGI (not AOC)",
+   "fileNumber": "PGI-FR-A1162",
+   "type": "PGI",
+   "singleDocument": "10729",
+   "inao": null
+  },
+  {
    "id": "bourgogne",
    "name": "Bourgogne",
    "registerName": "Bourgogne",
@@ -1200,6 +1212,18 @@
     "app": "Tavel",
     "denom": "Tavel"
    }
+  },
+  {
+   "id": "pays-doc",
+   "name": "Pays d’Oc",
+   "registerName": "Pays d'Oc",
+   "batch": "South",
+   "heading": "Southern France (still)",
+   "kind": "PGI (not AOC)",
+   "fileNumber": "PGI-FR-A1367",
+   "type": "PGI",
+   "singleDocument": "11143",
+   "inao": null
   },
   {
    "id": "languedoc",
