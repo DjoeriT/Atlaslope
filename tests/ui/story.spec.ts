@@ -24,13 +24,14 @@ async function scrollToLine(page: Page, anchor: string, rank = 0) {
 
 test('the Rioja guide with the tour open fetches each map data file once', async ({ page }) => {
   const seen = new Map<string, number>();
-  page.on('request', (r) => { const m = r.url().match(/\/(dops|natural-earth-world|added-boundaries|rioja-zones)[^/]*\.geojson$/); if (m) seen.set(m[1], (seen.get(m[1]) ?? 0) + 1); });
+  page.on('request', (r) => { const m = r.url().match(/\/(dops|natural-earth-world|added-boundaries(?:-overview)?|rioja-zones)[^/]*\.geojson$/); if (m) seen.set(m[1], (seen.get(m[1]) ?? 0) + 1); });
   await open(page, '#place=rioja&page');
   await page.locator('a.mapcard').click();
   await expect(mapCol(page)).toBeVisible();
   await page.waitForLoadState('networkidle');
-  expect([...seen.keys()].sort()).toEqual(['added-boundaries', 'dops', 'natural-earth-world', 'rioja-zones']);
-  expect([...seen.values()]).toEqual([1, 1, 1, 1]);
+  // added-boundaries-overview: every other country from above (decision #95), its own file
+  expect([...seen.keys()].sort()).toEqual(['added-boundaries', 'added-boundaries-overview', 'dops', 'natural-earth-world', 'rioja-zones']);
+  expect([...seen.values()]).toEqual([1, 1, 1, 1, 1]);
 });
 
 test('the map card shows on the Rioja guide in place of "Show on map", and not on a guide without a tour', async ({ page }) => {
