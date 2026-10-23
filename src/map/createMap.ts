@@ -2,11 +2,11 @@
 import maplibregl, { type Map as MapLibreMap } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import dopsUrl from '../../data/dops.geojson?url';
-import outlineUrls from 'virtual:outlines';
+import outlineFiles from 'virtual:outlines';
 import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import { ROOT } from '../site';
-import { COUNTRIES, DEFAULT_COUNTRY, countryConfig } from '../countries';
+import { DEFAULT_COUNTRY, countryConfig } from '../countries';
 import overrides from '../../data/dop-overrides.json';
 import places from '../../data/places.json';
 import type { Overrides } from '../dops';
@@ -63,7 +63,6 @@ export interface MapEvents {
 
 const asCollection = (u: string): Promise<Collection> => loadJson<Collection>(u);
 const placeCountry = countryIndex(places);
-const countryBounds = Object.fromEntries(Object.values(COUNTRIES).map((c) => [c.id, c.bounds]));
 
 /** The tilt the map opens with, and goes back to on "Reset view". */
 const START_PITCH = 45;
@@ -186,24 +185,28 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   });
 
   // The default country's outlines come with the first load; another country's are fetched once, when a card opens it or the
-  // view (from OUTLINES_MIN_ZOOM in) reaches it, and the places are drawn again with them (src/map/outlines.ts, decision #38).
+  // view (from OUTLINES_MIN_ZOOM in) reaches the box around its outlines, and the places are drawn again with them (src/map/outlines.ts, decision #38).
   let base: { dops: Collection; zoneFile: Collection } | null = null;
   const outlines = new Map<string, Collection>();
   const asked = new Map<string, Promise<void>>();
   function outlinesOf(country: string): Promise<void> {
     let p = asked.get(country);
     if (!p) {
-      const url = outlineUrls[country];
+      const url = outlineFiles[country]?.url;
       p = url ? asCollection(url).then((c) => { outlines.set(country, c); if (base) draw(); }) : Promise.resolve();
       p.catch(() => { asked.delete(country); events.onDataFailed?.(); });
       asked.set(country, p);
     }
     return p;
   }
-  const hasOutlines = (country: string) => outlines.has(country) || !outlineUrls[country];
+  const hasOutlines = (country: string) => outlines.has(country) || !outlineFiles[country];
   function needInView() {
-    const b = map.getBounds();
-    for (const c of countriesInView([[b.getWest(), b.getSouth()], [b.getEast(), b.getNorth()]], map.getZoom(), countryBounds)) void outlinesOf(c);
+    // The middle of the screen, not getBounds(): on a tilted map that reaches to the horizon, a country away from where the learner looks.
+    const { clientWidth: w, clientHeight: h } = map.getContainer();
+    const at = [[0.25, 0.25], [0.75, 0.25], [0.25, 0.75], [0.75, 0.75]].map(([x, y]) => map.unproject([w * x, h * y]));
+    const lng = at.map((p) => p.lng), lat = at.map((p) => p.lat);
+    const view: [number, number, number, number] = [Math.min(...lng), Math.min(...lat), Math.max(...lng), Math.max(...lat)];
+    for (const c of countriesInView(view, map.getZoom(), outlineFiles)) void outlinesOf(c);
   }
   map.on('moveend', () => { if (base) needInView(); });
   /** The country a focus looks at, so its outlines are there before it is framed. */

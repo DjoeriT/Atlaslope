@@ -1,9 +1,11 @@
 // Each country's added outlines (data/added-boundaries.geojson) are a file of their own, fetched when the map first shows that
 // country, so a first visit (the Spain map) does not download every other country's places (owner option A, decision #38).
 // The build splits the file with splitOutlines (vite.config.ts, virtual:outlines); createMap.ts asks for a country with countryOf.
-import type { Bounds } from '../countries';
 import { DEFAULT_COUNTRY } from '../countries';
-import type { Collection } from './boundaries';
+import type { Box, Collection } from './boundaries';
+
+/** One country's outlines file: its URL and the box around its outlines. */
+export interface OutlineFile { url: string; box: Box }
 
 /** The part of data/places.json this needs: which country each study region belongs to, and each place's region. */
 export interface PlacesFile {
@@ -39,9 +41,20 @@ export const countryOf = (index: Map<string, string>, id: string): string => ind
 /** Below this zoom (the atlas cover, a whole country) the view alone fetches no other country's outlines; opening one does. */
 export const OUTLINES_MIN_ZOOM = 6;
 
-/** The countries whose map bounds overlap the view, from OUTLINES_MIN_ZOOM in. */
-export function countriesInView(view: Bounds, zoom: number, bounds: Record<string, Bounds>): string[] {
+/** The box around a collection's outlines, or null when it has none. */
+export function boxOf(c: Collection): Box | null {
+  let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
+  const walk = (x: unknown): void => {
+    if (Array.isArray(x) && typeof x[0] === 'number') { w = Math.min(w, x[0]); e = Math.max(e, x[0]); s = Math.min(s, x[1] as number); n = Math.max(n, x[1] as number); }
+    else if (Array.isArray(x)) x.forEach(walk);
+  };
+  for (const f of c.features) walk(f.geometry.coordinates);
+  return w <= e ? [w, s, e, n] : null;
+}
+
+/** The countries whose outlines' box overlaps the view, from OUTLINES_MIN_ZOOM in. */
+export function countriesInView(view: Box, zoom: number, files: Record<string, OutlineFile>): string[] {
   if (zoom < OUTLINES_MIN_ZOOM) return [];
-  const [[w, s], [e, n]] = view;
-  return Object.entries(bounds).filter(([, [[cw, cs], [ce, cn]]]) => cw <= e && ce >= w && cs <= n && cn >= s).map(([id]) => id);
+  const [w, s, e, n] = view;
+  return Object.entries(files).filter(([, { box: [cw, cs, ce, cn] }]) => cw <= e && ce >= w && cs <= n && cn >= s).map(([id]) => id);
 }

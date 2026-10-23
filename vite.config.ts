@@ -6,7 +6,7 @@ import { placeOfPath, placePage, placePaths } from './src/paths';
 import { fillGuideCount, fillStoryCount, guideRows, placeGuideCount, storyCount } from './src/home/guideCount';
 import { fillCountryPage, fillGuidesIndex, fillHome } from './src/home/countryPages';
 import { COUNTRIES, DEFAULT_COUNTRY, countryConfig } from './src/countries';
-import { splitOutlines } from './src/map/outlines';
+import { boxOf, splitOutlines } from './src/map/outlines';
 
 // GitHub Pages serves the site under /Atlaslope/ (the repo name) until atlaslope.com is pointed at it. A relative base works at any subpath and in any case,
 // so dev, tests and the published site all use the same build.
@@ -40,7 +40,7 @@ export default defineConfig(({ mode, command }) => ({
     resolveId: (id) => (id === 'virtual:search-index' ? '\0virtual:search-index' : undefined),
     load: (id) => (id === '\0virtual:search-index' ? `export default ${JSON.stringify(searchIndex())};` : undefined),
   }, {
-    // virtual:outlines maps each country id to the URL of its outlines file; the dev server serves them at /@outlines/<id>.geojson.
+    // virtual:outlines maps each country id to its outlines file's URL and box; the dev server serves them at /@outlines/<id>.geojson.
     name: 'country-outlines',
     resolveId: (id) => (id === 'virtual:outlines' ? '\0virtual:outlines' : undefined),
     load(id) {
@@ -48,9 +48,10 @@ export default defineConfig(({ mode, command }) => ({
       this.addWatchFile('data/added-boundaries.geojson');
       this.addWatchFile('data/places.json');
       const parts = Object.entries(outlines());
-      if (command === 'serve') return `export default ${JSON.stringify(Object.fromEntries(parts.map(([c]) => [c, `/@outlines/${c}.geojson`])))};`;
-      const urls = parts.map(([c, fc]) => `${JSON.stringify(c)}: import.meta.ROLLUP_FILE_URL_${this.emitFile({ type: 'asset', name: outlineFile(c), source: JSON.stringify(fc) })}`);
-      return `export default { ${urls.join(', ')} };`;
+      const url = (c: string, fc: object) => (command === 'serve' ? JSON.stringify(`/@outlines/${c}.geojson`)
+        : `import.meta.ROLLUP_FILE_URL_${this.emitFile({ type: 'asset', name: outlineFile(c), source: JSON.stringify(fc) })}`);
+      const files = parts.map(([c, fc]) => `${JSON.stringify(c)}: { url: ${url(c, fc)}, box: ${JSON.stringify(boxOf(fc) ?? [0, 0, 0, 0])} }`);
+      return `export default { ${files.join(', ')} };`;
     },
     configureServer(server) {
       server.middlewares.use((req, res, next) => {

@@ -7,7 +7,7 @@ declare module 'virtual:search-index' {
   export default index;
 }
 declare module 'virtual:outlines' {
-  /** Country id to the URL of its outlines file (vite.config.ts, src/map/outlines.ts). */
-  const urls: Record<string, string>;
-  export default urls;
+  /** Country id to its outlines file's URL and box (vite.config.ts, src/map/outlines.ts). */
+  const files: Record<string, import('./map/outlines').OutlineFile>;
+  export default files;
 }
