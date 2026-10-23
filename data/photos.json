@@ -6624,6 +6624,70 @@
    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
    "page": "https://commons.wikimedia.org/wiki/File:Geisenheim_-_Blick_auf_Schloss_Johannisberg.JPG",
    "title": "File:Geisenheim - Blick auf Schloss Johannisberg.JPG"
+  },
+  "wachau-1": {
+   "alt": "The town of Spitz on the Danube under terraced vineyard slopes",
+   "artist": "Kasa Fue",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitz_Wachau_Sept_2020_1.jpg",
+   "title": "File:Spitz Wachau Sept 2020 1.jpg"
+  },
+  "wachau-2": {
+   "alt": "Terraced Singerriedl vineyard above Spitz in autumn",
+   "artist": "Isiwal",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Spitz_Weinberg_Singerriedl-3317.jpg",
+   "title": "File:Spitz Weinberg Singerriedl-3317.jpg"
+  },
+  "wachau-3": {
+   "alt": "A village on the Danube in the Wachau below terraced vineyards",
+   "artist": "jay8085",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Terraced_vineyards_and_village_in_Wachau.jpg",
+   "title": "File:Terraced vineyards and village in Wachau.jpg"
+  },
+  "wachau-4": {
+   "alt": "Vine rows with the Wachau hills behind",
+   "artist": "Michal Klajban",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Vineyards_in_Wachau,_Austria.jpg",
+   "title": "File:Vineyards in Wachau, Austria.jpg"
+  },
+  "neusiedlersee-1": {
+   "alt": "Sunset over Weiden am See and the lake, seen across the vineyards",
+   "artist": "Alexander Loidhold Photography",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Weiden_Aussicht.jpg",
+   "title": "File:Weiden Aussicht.jpg"
+  },
+  "neusiedlersee-2": {
+   "alt": "Organic vineyard rows in the Neusiedlersee hill country",
+   "artist": "Verita",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Organic-Vineyard-Austria-Neusiedlersee.jpg",
+   "title": "File:Organic-Vineyard-Austria-Neusiedlersee.jpg"
+  },
+  "neusiedlersee-3": {
+   "alt": "The Podersdorf lighthouse on the shore of Lake Neusiedl",
+   "artist": "Funke",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Podersdorf_am_See_Leuchtturm.jpg",
+   "title": "File:Podersdorf am See Leuchtturm.jpg"
+  },
+  "neusiedlersee-4": {
+   "alt": "A lone tree on the open Seewinkel plain by the lake",
+   "artist": "Haeferl",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nationalpark_Neusiedler_See-Seewinkel_-_06.jpg",
+   "title": "File:Nationalpark Neusiedler See-Seewinkel - 06.jpg"
   }
  }
 }

@@ -58,10 +58,10 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     blocks: [],
     study: { note: 'Not yet for Germany.', link: false },
   },
-  // Pilot (#149): Wachau and Neusiedlersee. Draft intro, owner rewrites. Card photos wait for the guides' photos.
+  // Pilot (#149): Wachau and Neusiedlersee. Draft intro, owner rewrites.
   austria: {
     intro: 'From the Danube to the lake.',
-    cardPhotos: [],
+    cardPhotos: ['wachau-1', 'neusiedlersee-1', 'wachau-2', 'neusiedlersee-3', 'wachau-3'],
     blocks: [],
     study: { note: 'Not yet for Austria.', link: false },
   },
