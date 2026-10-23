@@ -38,18 +38,18 @@ describe('place tree', () => {
 
   it('links every place to a real parent, region and overlap', () => {
     for (const p of places) {
-      expect(['spain', 'portugal', 'france', 'italy'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
+      expect(['spain', 'portugal', 'france', 'italy', 'germany'].includes(p.parent) || byId.has(p.parent), p.id).toBe(true);
       expect(groups.has(p.region), p.id).toBe(true);
       for (const o of p.alsoWithin ?? []) expect(byId.has(o), `${p.id} within ${o}`).toBe(true);
     }
   });
 
-  it('gives every quizzed place a boundary; only the 13 Vinos de Pago are still to fetch; the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) are added', () => {
+  it('gives every quizzed place a boundary; only the 13 Vinos de Pago and the Rheingau (Germany) are still to fetch; the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) are added', () => {
     const toFetch = places.filter((p) => p.boundary === 'to-fetch');
-    expect(toFetch).toHaveLength(13);
+    expect(toFetch).toHaveLength(14);
     expect(toFetch.filter((p) => p.quiz !== 'none')).toEqual([]);
-    expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
-    expect(places.filter((p) => p.boundary === 'added' && !/^(fr|it)-/.test(p.region)).map((p) => p.id).sort()).toEqual([
+    expect(toFetch.filter((p) => p.parent !== 'germany').every((p) => p.kind === 'VP')).toBe(true); // Rheingau (#149) is the 14th: no outline yet
+    expect(places.filter((p) => p.boundary === 'added' && !/^(fr|it|de)-/.test(p.region)).map((p) => p.id).sort()).toEqual([
       'alenquer', 'alentejo', 'arruda', 'bairrada', 'beira-interior', 'bucelas', 'campo-de-calatrava', 'carcavelos', 'cebreros', 'colares', 'dao',
       'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'madeira', 'madeirense', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',
       'tavora-varosa', 'torres-vedras', 'tras-os-montes', 'urbezo', 'vinho-verde',

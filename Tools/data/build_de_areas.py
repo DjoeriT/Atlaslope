@@ -11,7 +11,10 @@ names have no outline of their own), so that zone carries them as `singleVineyar
 refuse scripts (BKG VG250 has Gemeinden, not the 32 Gemarkungen of the spec), so the build does not invent one.
 Raw inputs (outside the repo, <raw folder>/countries/de/m/, Tools/rawdir.py, Tools/data/raw-manifest.json): gu.gpkg, wl.gpkg.
 Writes data/countries/de/areas.geojson and data/countries/de/zones-mosel.geojson. Both load on demand (first load is full, #38).
+The outline is also copied into data/added-boundaries.geojson, which the build splits into one file per country that loads on demand
+(src/map/outlines.ts), so Germany's 74 KB reaches the map only when the view is over Germany. The zones stay in their own file.
 Run: python3 -I Tools/data/build_de_areas.py
+     python3 -I Tools/data/build_de_areas.py --map   (only the copy into the map's file; no raw files needed)
 """
 import json, subprocess, sys, tempfile
 from pathlib import Path
@@ -92,7 +95,17 @@ def main():
                 zp["singleVineyardPdos"] = UHLEN_PDOS
             out.append({"type": "Feature", "properties": zp, "geometry": f["geometry"]})
         write(OUT_DIR / "zones-mosel.geojson", out)
+    to_map()
+
+
+def to_map():
+    """The outline goes into the map's outline file, as France's and Italy's do. Keeps the approximate flag, so the map can say so."""
+    sys.path.insert(0, str(Path(__file__).parent))  # -I leaves the script's folder off the path
+    from build_pt_areas import put_added
+    feats = json.loads((OUT_DIR / "areas.geojson").read_text())["features"]
+    put_added(feats, {f["properties"]["id"] for f in feats})
+    print("data/added-boundaries.geojson:", len(feats), "Germany outline")
 
 
 if __name__ == "__main__":
-    main()
+    to_map() if "--map" in sys.argv else main()

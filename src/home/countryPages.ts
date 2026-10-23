@@ -51,6 +51,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     ],
     study: { note: 'Not yet for Italy.', link: false },
   },
+  // Pilot (#149): Mosel and Rheingau, no photos yet (they land with the guides). Draft intro, owner rewrites.
+  germany: {
+    intro: 'From the Mosel to the Rheingau.',
+    cardPhotos: [],
+    blocks: [],
+    study: { note: 'Not yet for Germany.', link: false },
+  },
 };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
