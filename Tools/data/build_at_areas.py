@@ -15,7 +15,8 @@ listed. The Ried land closed at CLOSE metres is kept as `riedenClosedKm2` for co
 Raw inputs (outside the repo, <raw folder>/countries/at/m/, Tools/rawdir.py, Tools/data/raw-manifest.json): rieden.gpkg, gemeinden.gpkg
 (Wachau); nsl-rieden.gpkg, gemeinden-nsl.gpkg (Neusiedlersee).
 Writes data/countries/at/areas.geojson (both places) and data/countries/at/zones-wachau.geojson, zones-neusiedlersee.geojson. All load on demand.
-Run: python3 -I Tools/data/build_at_areas.py
+Run: python3 -I Tools/data/build_at_areas.py   (then the outlines are copied into data/added-boundaries.geojson;
+     with --map only that copy, no raw files needed)
 """
 import json
 import subprocess
@@ -38,6 +39,8 @@ GEMEINDEN = ["Aggsbach", "Bergern im Dunkelsteinerwald", "Dürnstein", "Mautern 
              "Weißenkirchen in der Wachau"]
 # Neusiedlersee DAC § 1: the Bezirk Neusiedl am See without these two Gemeinden.
 NSL_EXCLUDED = ["Jois", "Winden am See"]
+# Outline shown for Neusiedlersee: "rieden" (Ried land closed, approximate, interim) or "gemeinden" (the legal area).
+NSL_OUTLINE = "rieden"
 
 
 def ogr(*args):
@@ -128,6 +131,19 @@ def neusiedlersee():
                  "gemeinden": feats[0]["properties"]["n"], "km2": round(feats[0]["properties"]["m2"] / 1e6, 1),
                  "riedenKm2": round(one(raw)[0]["properties"]["m2"] / 1e6, 1),
                  "riedenClosedKm2": round(one(closed)[0]["properties"]["m2"] / 1e6, 1)}
+        if NSL_OUTLINE == "rieden":
+            # Interim (owner decides with screenshots): the shown outline is the Ried land closed at CLOSE metres, approximate. The legal
+            # area (Gemeinde union, with the lake) stays in the properties as legalKm2.
+            shape = tmp / "closed-shape.geojson"
+            ogr("-f", "GeoJSON", str(shape), rieden, "-dialect", "sqlite", "-sql",
+                f"SELECT ST_Buffer(ST_Buffer(ST_Union({valid}), {CLOSE}), -{CLOSE}) AS geometry FROM rieden WHERE RIEDTYP = 'Ried'")
+            geom = tmp / "closed-wgs.geojson"
+            ogr("-f", "GeoJSON", str(geom), str(shape), "-simplify", str(SIMPLIFY), "-t_srs", "EPSG:4326",
+                "-lco", f"COORDINATE_PRECISION={DECIMALS}", "-select", "")
+            geom = one(geom)[0]["geometry"]
+            parts = len(geom["coordinates"]) if geom["type"] == "MultiPolygon" else 1
+            props.update({"route": "rieden-closed", "approximate": True, "parts": parts, "legalKm2": props["km2"],
+                          "km2": props["riedenClosedKm2"]})
         area = {"type": "Feature", "properties": props, "geometry": geom}
         print(f"neusiedlersee: {props['km2']} km2 Gemeinde union ({props['gemeinden']} Gemeinden), {parts} parts "
               f"(Rieden land {props['riedenKm2']} km2, closed at {CLOSE} m {props['riedenClosedKm2']} km2)")
@@ -157,10 +173,20 @@ def neusiedlersee():
     return area
 
 
+def to_map():
+    """The outlines go into the map's outline file, as Germany's do (split per country by the build, loaded on demand)."""
+    sys.path.insert(0, str(Path(__file__).parent))  # -I leaves the script's folder off the path
+    from build_pt_areas import put_added
+    feats = json.loads((OUT_DIR / "areas.geojson").read_text())["features"]
+    put_added(feats, {f["properties"]["id"] for f in feats})
+    print("data/added-boundaries.geojson:", len(feats), "Austria outlines")
+
+
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     write(OUT_DIR / "areas.geojson", [wachau(), neusiedlersee()])
+    to_map()
 
 
 if __name__ == "__main__":
-    main()
+    to_map() if "--map" in sys.argv else main()

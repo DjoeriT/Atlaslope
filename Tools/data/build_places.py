@@ -246,6 +246,25 @@ def germany_places():
     return out
 
 
+# Austria (issue #149, pilot; decisions #81-#86, #94): WSET L3 regions as Study groups, kind DAC (Districtus Austriae Controllatus). Outlines
+# and Rieden zones load on demand (data/countries/at/, Tools/data/build_at_areas.py), so boundary is "at-areas". Wachau is the Ried land
+# closed at 150 m; Neusiedlersee is that too for now (the legal area, 999 km2 with the lake, waits for the owner's choice). Both approximate.
+AT_GROUPS = [("at-wachau", "Wachau"), ("at-neusiedlersee", "Neusiedlersee")]
+AT_QUIZ_NOTE = "Study covers Spain for now; Austria joins when its WSET course is in Study."
+AT_PLACES = [("wachau", "Wachau", "PDO-AT-A0205", "at-wachau"), ("neusiedlersee", "Neusiedlersee", "PDO-AT-A0219", "at-neusiedlersee")]
+
+
+def austria_places():
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/at/areas.geojson").read_text())["features"]}
+    out = []
+    for pid, name, euFile, group in AT_PLACES:
+        out.append({"id": pid, "name": name, "official": name, "kind": "DAC", "level": "place", "parent": "austria", "region": group,
+                    "euFile": euFile, "layerCode": None, "boundary": "at-areas",
+                    "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": AT_QUIZ_NOTE})
+    for i, p in enumerate(out, 1): p["courseOrder"] = i
+    return out
+
+
 def main():
     layer =json.loads((ROOT / "data/dops.geojson").read_text())
     over = json.loads((ROOT / "data/dop-overrides.json").read_text())
@@ -296,6 +315,7 @@ def main():
     places += france_places()
     places += italy_places()
     places += germany_places()
+    places += austria_places()
 
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
@@ -307,7 +327,8 @@ def main():
                       # Two zone depths: Chablis Premier Cru, then its climats (#55).
                       {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]},
                       {"id": "italy", "name": "Italy", "level": "country", "levels": ["country", "region", "place", "zone"]},
-                      {"id": "germany", "name": "Germany", "level": "country", "levels": ["country", "region", "place", "zone"]}],
+                      {"id": "germany", "name": "Germany", "level": "country", "levels": ["country", "region", "place", "zone"]},
+                      {"id": "austria", "name": "Austria", "level": "country", "levels": ["country", "region", "place", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
                      "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
                                 for i, g in enumerate(COURSE)]},
@@ -321,7 +342,9 @@ def main():
                      "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(IT_GROUPS)
                                 if any(p["region"] == g for p in places)]},
                     {"id": "wset-de", "name": "WSET", "country": "germany",
-                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(DE_GROUPS)]}],
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(DE_GROUPS)]},
+                    {"id": "wset-at", "name": "WSET", "country": "austria",
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(AT_GROUPS)]}],
         "places": places,
     }
     out = ROOT / "data/places.json"
