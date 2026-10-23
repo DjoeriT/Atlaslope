@@ -132,3 +132,18 @@ plus one Sonnet builder (~150K) and ReviewBot (~100K). Pilot nothing: it is one 
 - Raw downloads live outside the repo in `~/Developer/Atlaslope-raw` (or `$ATLASLOPE_RAW`), merged in #229. Move the Commons originals there from
   `mocks/brand-photos/originals/` and point `Tools/brand/commons_photos.py` at it. Nothing in the repo may be a symlink (CI check).
 - PR #234 adds Portugal photos to `src/home/photoCrops.json`: merge main before adding the three Rioja crops.
+
+## Countries check (23 Oct 2026), replaces the #214 wait in the build brief
+Checked on origin/main and atlaslope.com [V]:
+- #214 (Portugal, country pages, Guides as country index) is merged and live (release 70). Live is release 72. No need to wait any more: just merge main.
+- Home today: hero headline + Spain map with the Rioja card (unchanged), then a new "Pick a country." row. It holds Spain (106 guides),
+  Portugal (28), France (96) and Italy (87). Each card has a photo mosaic, with one credit line under the row. 317 places in total.
+- Country pages: `/es/`, `/pt/` (and the other shown countries) come from `src/home/countryPages.ts`. Adding a country = one entry there, one in
+  `src/countries.ts` and its tree, with no page code.
+- Germany: pilot merged (#245); it has an entry in `countryPages.ts` [V]. Austria and Greece are planned after Germany (decisions #81-#92).
+- Since the brief, main has changed `src/home/guideCount.ts`, `countryPages.ts`, `countries.css`, `guides.ts`, `photoCrops.json` (+203 lines),
+  `src/map/createMap.ts` and `Tools/check.sh` (2.1 MB limit). Guides load on demand (#214), so first load is about 2.0 MB.
+- Open PR at this check: #249 (merge guards for shared records: union merge, per-country rows). It may change how `photoCrops.json` and
+  `data/photos.json` merge. Read it before adding rows.
+- Owner (23 Oct): "Make it futureproof for other countries as well because more will be added." A new mock round is running
+  (country hero place + prints in data, fallback without prints, country row at 7 countries). The build brief's "only Rioja" scope waits on that pick.
