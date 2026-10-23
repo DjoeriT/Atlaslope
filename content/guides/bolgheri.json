@@ -1,0 +1,117 @@
+{
+ "id": "bolgheri",
+ "title": "Why Bolgheri tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hills to the east and the Tyrrhenian Sea to the west give Bolgheri a ripening that is always regular and complete. Wines from French grapes, Bordeaux ones above all, have shown they can compete with the most famous in the world.",
+  "cite": [
+   "bolgheri-disc:p6",
+   "bolgheri-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "coast",
+   "beat": "place",
+   "title": "Hills to the east, sea to the west",
+   "paras": [
+    "The zone is the whole commune of Castagneto Carducci, in the province of Livorno, east of the old Aurelia road. At its eastern edge a line of hills runs north to south, between 250 and 400 m above sea level, almost parallel to the coast.",
+    "The vineyards sit on the foothill belt below those hills. The Tyrrhenian Sea lies to the west, and two rivers, the Cecina and the Cornia, lie to the north and south.",
+    "The first vineyards of French grapes, from 1944, went high on the hills, facing east, because people thought the sea hurt wine quality. That idea soon fell away. The best land turned out to be the foothills and the plain, and the sea climate only helped the grapes ripen."
+   ],
+   "cite": [
+    "bolgheri-disc:p2",
+    "bolgheri-disc:p6",
+    "bolgheri-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Bolgheri and its hills",
+     "point": [
+      10.6,
+      43.23
+     ],
+     "zoom": 10,
+     "caption": "A line of hills at 250 to 400 m, with the vineyards on the foothill belt below.",
+     "cite": [
+      "bolgheri-disc:p6"
+     ]
+    },
+    {
+     "label": "The Cecina river",
+     "point": [
+      10.5,
+      43.31
+     ],
+     "zoom": 9.5,
+     "caption": "The Cecina lies to the north of the zone and the Cornia to the south.",
+     "cite": [
+      "bolgheri-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "breeze",
+   "beat": "weather",
+   "title": "Hills against the cold, water against the heat",
+   "paras": [
+    "The hills shelter the vines from the rigours of winter. In summer the rivers and the large mass of the Tyrrhenian Sea send steady air that softens the extremes of heat. That allows the grapes to ripen at their best.",
+    "Mean temperature is 14.5 °C, with a minimum of 9.6 °C and a maximum of 19.4 °C. Rainfall is 584 mm and the water deficit is 205 mm. The Huglin index is 2444 and the Winkler index is 1747, close to values in the best wine areas of Italy and the world.",
+    "This layout of hills and sea favours heavier rain, for example when a low over the Tyrrhenian draws humid air in from the south-west."
+   ],
+   "cite": [
+    "bolgheri-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Tyrrhenian Sea",
+     "point": [
+      10.45,
+      43.2
+     ],
+     "zoom": 9,
+     "caption": "The large mass of the sea to the west sends steady air that tempers summer heat.",
+     "cite": [
+      "bolgheri-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A patchwork of soils",
+   "paras": [
+    "A zoning survey led by Prof. Attilio Scienza found 27 soil units, grouped into 16 landscape units. Almost all areas have very varied soils.",
+    "They range from sandy to sandy-loam-clay and sandy-clay, up to clay or clay-silt. They are weakly alkaline to alkaline, with negligible salinity and no trouble from sodium or active lime.",
+    "This variety is the key to the complexity and persistence of the wines. Growers pick the most suitable land for reds and keep it apart from the land best for whites."
+   ],
+   "cite": [
+    "bolgheri-disc:p6",
+    "bolgheri-disc:p7"
+   ]
+  },
+  {
+   "id": "bordeaux",
+   "beat": "rules",
+   "title": "Bordeaux grapes on the Tuscan coast",
+   "paras": [
+    "Red and rosato (rosé) can be made from Cabernet Sauvignon, Merlot or Cabernet Franc, up to 100% of any one. Syrah and Sangiovese can go up to 50% each. Other red grapes approved for Tuscany can make up to 30%.",
+    "White can be made from Vermentino, Sauvignon or Viognier, up to 100% of any one. Other white grapes approved for Tuscany can add up to 40%. Bolgheri Vermentino and Bolgheri Sauvignon must be at least 85% of their grape.",
+    "Rosso cannot be sold before 1 September of the year after the harvest. Rosso Superiore is aged at least 2 years from 1 January after the harvest, with at least one in oak barrels. A Superiore can carry a registered vineyard name after the word \"vigna\".",
+    "Every bottle shows the vintage. Rosso and Superiore go in a dark glass bottle of Bordeaux shape.",
+    "The grape choice has French roots. In the first half of the 1800s Count Guido Alberto della Gherardesca hired winemaking experts, Giuseppe Mazzanti among them. Their choices went to French grapes such as Cabernet and Syrah. Marchese Mario Incisa della Rocchetta later planted French grapes, Bordeaux ones above all, from 1944. In 1978 Decanter ranked Sassicaia first in a tasting of the world's Cabernets."
+   ],
+   "cite": [
+    "bolgheri-disc:p1",
+    "bolgheri-disc:p2",
+    "bolgheri-disc:p3",
+    "bolgheri-disc:p4",
+    "bolgheri-disc:p5",
+    "bolgheri-disc:p6",
+    "bolgheri-disc:p7"
+   ]
+  }
+ ]
+}

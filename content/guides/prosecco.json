@@ -1,0 +1,140 @@
+{
+ "id": "prosecco",
+ "title": "Why Prosecco tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Prosecco comes from the mostly flat north-east of Italy, between the Alps and the Adriatic. At the end of summer, big swings between day and night favour the acids and the floral, fruity aromas in the grapes.",
+  "cite": [
+   "prosecco-disc:p9",
+   "prosecco-disc:p10",
+   "prosecco-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "From a Karst village to the Treviso hills",
+   "paras": [
+    "The area lies in the north-east of Italy, mostly on flat land with some hills. It covers nine provinces of the Veneto and Friuli, from Belluno to Trieste.",
+    "The first records of a wine called Prosecco date from the late 1600s. They describe a delicate white from the Trieste Karst, in the area of Prosecco. In the 1700s and 1800s production moved mostly to the hills of the Veneto and Friuli. In the Treviso hills it found its chosen terroir.",
+    "The fame of the Prosecco di Conegliano Valdobbiadene DOC, recognised in 1969, then pulled vineyards onto the flat land. They spread first through Treviso province and later through other provinces of the Veneto and Friuli Venezia Giulia. The Prosecco DOC itself dates from 2009."
+   ],
+   "cite": [
+    "prosecco-disc:p2",
+    "prosecco-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Prosecco, on the Trieste Karst",
+     "point": [
+      13.733,
+      45.707
+     ],
+     "zoom": 11,
+     "caption": "The first records of Prosecco wine, from the late 1600s, place its origin here on the Trieste Karst.",
+     "cite": [
+      "prosecco-disc:p9"
+     ]
+    },
+    {
+     "label": "The Treviso hills",
+     "point": [
+      12.05,
+      45.93
+     ],
+     "zoom": 10,
+     "caption": "In the hills of Treviso, Prosecco found its chosen terroir.",
+     "cite": [
+      "prosecco-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Alps to the north, Adriatic to the south",
+   "paras": [
+    "The climate is temperate. The Alps shield the vines from cold northern air. The Adriatic sends scirocco winds that bring enough rain, mostly in summer, and soften the temperature.",
+    "At the end of summer the hours of sun shrink and dry bora winds blow from the east. Days and nights then differ a lot in temperature, just as the grapes finish ripening.",
+    "These swings, with good sun and the dry bora, favour the grapes keeping their acids. They also favour the aroma precursors behind the floral and fruity notes of Prosecco. For the rosé, they favour enough polyphenols in the grapes vinified red."
+   ],
+   "cite": [
+    "prosecco-disc:p9",
+    "prosecco-disc:p10",
+    "prosecco-disc:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "River silt and Dolomite stones",
+   "paras": [
+    "The soils are mostly alluvial and rich in minerals and trace elements. Clay and silt dominate, mixed with stones from eroded Dolomites and river deposits. The stones let the ground drain well.",
+    "The soils are fertile, which gives good yields. They also favour a moderate build-up of sugar. With the local climate, they give a sparkling base wine that is not too alcoholic and tastes fresh, dry and fruity.",
+    "Suitable ground is well exposed. Ground with high water content, where the water table rises, is not suitable. Neither is peaty ground."
+   ],
+   "cite": [
+    "prosecco-disc:p3",
+    "prosecco-disc:p9",
+    "prosecco-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "The Dolomites",
+     "point": [
+      12.1,
+      46.4
+     ],
+     "zoom": 8,
+     "caption": "Erosion of the Dolomites left the stony material that helps the vineyard soils drain.",
+     "cite": [
+      "prosecco-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glera",
+   "beat": "rules",
+   "title": "Glera, from still to sparkling",
+   "paras": [
+    "Glera is the base grape, a semi-aromatic one that builds sugar only moderately and keeps good acidity and aroma. Up to 15% can come from eight other grapes. Four are local, such as Verdiso and Perera. Four are international, such as Chardonnay and Pinot nero vinified as white.",
+    "Most Prosecco is spumante (sparkling) or frizzante (lightly sparkling). Both are typically dry and bright pale straw, with fine bubbles. The nose is markedly floral and fruity, with elegance and finesse. On the palate, sugar and acidity balance. With the wine's savouriness, they bring freshness and liveliness.",
+    "Spumante is made by the Martinotti method: a natural second fermentation of the base wine in large tanks. It comes in six sweetness levels: brut nature, extra brut, brut, extra dry, dry and demi-sec.",
+    "Frizzante ferments naturally in bottle or in tank, and ranges from dry to amabile (lightly sweet). The traditional bottle-fermented kind may be slightly cloudy and must say «rifermentazione in bottiglia» (refermented in bottle) on the label. It can show hints of bread crust and yeast.",
+    "Spumante rosé is 85% to 90% Glera plus 10% to 15% Pinot nero vinified red. It ferments in tank for at least 60 days and adds red flowers, strawberry and raspberry. It comes only in the four driest levels, from brut nature to extra dry.",
+    "A small amount of still Prosecco is also made, with stronger fruit and more savouriness and fullness.",
+    "Yields are capped at 18 tonnes of grapes per hectare. For the Pinot nero in the rosé the cap is 13.5 tonnes."
+   ],
+   "cite": [
+    "prosecco-disc:p2",
+    "prosecco-disc:p3",
+    "prosecco-disc:p5",
+    "prosecco-disc:p7",
+    "prosecco-disc:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Millesimato",
+    "text": "On Prosecco spumante it means at least 85% of the wine comes from the stated vintage, and the year must be on the label. On spumante rosé it is compulsory, followed by the harvest year."
+   },
+   {
+    "term": "Treviso",
+    "text": "The name of the province may appear only if the grapes were grown there and the wine was made and packed in the same province."
+   },
+   {
+    "term": "Trieste",
+    "text": "The name, also written Trst, may appear only if the grapes were grown in that province and the wine was made and packed in Friuli Venezia Giulia."
+   }
+  ],
+  "cite": [
+   "prosecco-disc:p7",
+   "prosecco-disc:p8"
+  ]
+ }
+}

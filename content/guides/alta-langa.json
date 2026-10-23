@@ -1,0 +1,100 @@
+{
+ "id": "alta-langa",
+ "title": "Why Alta Langa tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Alta Langa favours hills with moderate sun and good day-night swings for Pinot nero and Chardonnay. Its sparkling wine is made only by bottle fermentation and spends at least 30 months in making.",
+  "cite": [
+   "alta-langa-disc:p1",
+   "alta-langa-disc:p5",
+   "alta-langa-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "A long band of hills right of the Tanaro",
+   "paras": [
+    "The vineyards form a long band of hills in the southern provinces of Piedmont, on the right bank of the river Tanaro. The zone spreads over three provinces. Most of its communes lie in Cuneo, the rest in Asti and Alessandria.",
+    "Only hill plots count. Damp, flat valley floors are excluded outright."
+   ],
+   "cite": [
+    "alta-langa-disc:p1",
+    "alta-langa-disc:p2",
+    "alta-langa-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Canelli",
+     "point": [
+      8.29,
+      44.72
+     ],
+     "zoom": 10.5,
+     "caption": "Carlo Gancia spread Pinot and Chardonnay among growers around Canelli, to supply his sparkling wines.",
+     "cite": [
+      "alta-langa-disc:p7"
+     ]
+    },
+    {
+     "label": "Rocchetta Tanaro",
+     "point": [
+      8.345,
+      44.859
+     ],
+     "zoom": 10.5,
+     "caption": "Around 1850, Marchese Leopoldo Incisa kept French vines in his collection of grape varieties here.",
+     "cite": [
+      "alta-langa-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Moderate sun, good day-night swings",
+   "paras": [
+    "Growing here favours areas of moderate sunshine with good swings between day and night temperatures. Relative humidity in those areas is limited. The Huglin bioclimatic index there usually falls between 1700 and 1800.",
+    "Using these two grapes for sparkling wine advised planting them where temperatures are moderate and day-night swings are good. Other historic sparkling zones had already shown this."
+   ],
+   "cite": [
+    "alta-langa-disc:p6"
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Marl on hills from 250 m up",
+   "paras": [
+    "The vines grow on calcareous-clayey marl of moderate fertility. Vineyards usually sit from 280 to 550 m above sea level, and never below 250 m.",
+    "Pinot nero asks a lot of the soil: it wants clay and silt, and it prefers limy ground. Chardonnay is a little more versatile, since it holds on to good acidity. For sparkling wine, even Chardonnay is better planted in limy marl than in sand. The Alta Langa zone has exactly these soils."
+   ],
+   "cite": [
+    "alta-langa-disc:p2",
+    "alta-langa-disc:p6"
+   ]
+  },
+  {
+   "id": "method",
+   "beat": "rules",
+   "title": "Only bottle-fermented sparkling",
+   "paras": [
+    "Alta Langa makes sparkling wine only, white or rosé, and each comes in a Riserva version. The second fermentation must happen in the bottle, by the traditional method. Labels may say metodo classico (classic method). Plain \"fermentazione in bottiglia\" (bottle-fermented) is not allowed.",
+    "Pinot nero and Chardonnay, alone or together, make up 90 to 100% of the vineyard. Up to 10% can come from other non-aromatic grapes approved for growing in Piedmont.",
+    "Grapes are picked by hand into small perforated crates. A pneumatic press works at different pressures with rests in between. This separates the juice into fractions that are then made into wine apart.",
+    "The wine spends at least 30 months in making, counted from the start of bottle fermentation. A Riserva spends at least 36 months on the lees. The vintage must be on every label. Any Alta Langa, white or rosé, may add vigna and a vineyard name when that wine is made and kept in separate vessels.",
+    "The label may not use sec or any sweeter term.",
+    "Well-chosen sites and long cellar experience together give big, structured wines. Their great fullness of flavour softens the firm frame and marked body only with time. Wine kept in wood may show a light hint of it."
+   ],
+   "cite": [
+    "alta-langa-disc:p1",
+    "alta-langa-disc:p4",
+    "alta-langa-disc:p5",
+    "alta-langa-disc:p6",
+    "alta-langa-disc:p7"
+   ]
+  }
+ ]
+}

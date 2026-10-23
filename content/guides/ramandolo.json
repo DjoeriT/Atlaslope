@@ -1,0 +1,112 @@
+{
+ "id": "ramandolo",
+ "title": "Why Ramandolo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Ramandolo grows on steep terraces at the northern edge of Friuli's vineyards, where more than 2,200 mm of rain falls a year. Late-picked Verduzzo is partly dried, and that gives a golden sweet wine with honey and a little tannin.",
+  "cite": [
+   "ramandolo-disc:p4",
+   "ramandolo-disc:p5",
+   "ramandolo-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Terraces under a mountain",
+   "paras": [
+    "The vineyards sit in high and middle hills in the municipalities of Nimis and Tarcento, in the province of Udine. They lean against the foot of Monte Bernadia. Ramandolo is the northernmost point of Friulian wine growing.",
+    "Every vineyard faces south. They lie between 250 m at Torlano and 369 m at Ramandolo, with a high point of 413 m at Sedilis.",
+    "These are among the most demanding hills in the region. Slopes are very steep and can exceed 30%. Terraces are often very narrow, sometimes less than 1 m wide, and very often the work must be done entirely by hand. Hail is frequent, so most vineyards sit under protective nets."
+   ],
+   "cite": [
+    "ramandolo-disc:p4"
+   ],
+   "fly": [
+    {
+     "label": "Ramandolo and its little church",
+     "point": [
+      13.2985,
+      46.2285
+     ],
+     "zoom": 11,
+     "caption": "The hamlet of Ramandolo, in Nimis, gives the wine its name. Its church stands at 369 m.",
+     "cite": [
+      "ramandolo-disc:p2",
+      "ramandolo-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Wet, sheltered and swinging",
+   "paras": [
+    "Rain is among the highest of any Friuli Venezia Giulia denomination. More than 2,200 mm falls, over about 130 rainy days a year. The rain is well spread through the growing season, and drought is not common.",
+    "Monte Bernadia reaches 1,732 m and shields the vines from the cold tramontana winds from the north. All this, together with big temperature swings before harvest, makes a kind of climate island for the Verduzzo.",
+    "The mean temperature is 13.6 °C. Summer peaks go well above 30 °C. In winter it is not rare to drop below freezing.",
+    "These conditions limit drying on the vine. Drying in crates or on racks is more widespread instead."
+   ],
+   "cite": [
+    "ramandolo-disc:p4",
+    "ramandolo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Bernadia",
+     "point": [
+      13.31,
+      46.245
+     ],
+     "zoom": 10,
+     "caption": "At 1,732 m, the limestone mass of Monte Bernadia shields the vines from cold north winds.",
+     "cite": [
+      "ramandolo-disc:p4",
+      "ramandolo-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Marl with mountain rubble",
+   "paras": [
+    "The soils are mostly Eocene marl, the Flysch of Cormons, called ponca in Friulian. The same marl lies under the Colli Orientali del Friuli and the Collio.",
+    "Landslides of limestone have fallen from Monte Bernadia onto the marl. They make a topsoil found nowhere else in Friuli Venezia Giulia.",
+    "Ponca does not allow excess vigour. It holds growth back and rewards quality.",
+    "Here the vine is practically the only cultivated plant. Otherwise only woodland grows at this height. Fruit trees often mark the rows, most of them cherries."
+   ],
+   "cite": [
+    "ramandolo-disc:p4",
+    "ramandolo-disc:p5"
+   ]
+  },
+  {
+   "id": "verduzzo",
+   "beat": "rules",
+   "title": "Verduzzo, dried and sweet",
+   "paras": [
+    "Ramandolo is made from 100% Verduzzo Friulano. Locally it is the clone called verduzzo giallo. Verduzzo verde is grown in the rest of the region and in nearby Veneto.",
+    "The marked climate has left almost only two other grapes beside it: Picolit and Refosco dal peduncolo rosso. Neither is allowed in Ramandolo.",
+    "The rules cover one kind of wine: a sweet golden white. It comes as Ramandolo and as Ramandolo Riserva. Ramandolo goes on sale from November of the year after harvest. Riserva waits until 1 December of the third year after harvest. Every bottle must show the vintage.",
+    "Picking is late, often with a slight drying on the vine. In good years it can run to the end of October. Many growers then dry the grapes in crates at the municipal drying centre, run by a cooperative of producers. Others dry them on racks. In good years noble rot (Botrytis cinerea) can develop and add its own character.",
+    "Many growers leave the juice briefly on the skins in the cold of fermentation. Some press at once and get a gentler wine that is ready sooner.",
+    "Verduzzo is one of very few white grapes with tannin in its skins. Balancing that tannin against acidity and sweetness is very hard. Growers pass the know-how from father to son.",
+    "The wine needs at least 14% total alcohol. The grapes must reach a natural 11% vol. Yields are capped at 8 tonnes of grapes per hectare. Wooden casks are allowed.",
+    "Drying and the microclimate mark the bouquet. Honey and ripe fruit with that tannin are the wine's trademark. Volatile acidity can run above average, as in other great wines for slow sipping, yet the high extract keeps it balanced.",
+    "The same vineyards can also make Friuli Colli Orientali Verduzzo, at the yield set for Ramandolo."
+   ],
+   "cite": [
+    "ramandolo-disc:p1",
+    "ramandolo-disc:p2",
+    "ramandolo-disc:p3",
+    "ramandolo-disc:p4",
+    "ramandolo-disc:p5",
+    "ramandolo-disc:p6"
+   ]
+  }
+ ]
+}

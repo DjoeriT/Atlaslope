@@ -1,0 +1,124 @@
+{
+ "id": "morellino-di-scansano",
+ "title": "Why Morellino di Scansano tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Morellino grows on hot, dry hills where the soil is not very deep and bedrock shows in places. The wine is a Sangiovese red with a modest acidity, dry and warm on the palate.",
+  "cite": [
+   "morellino-di-scansano-disc:p7",
+   "morellino-di-scansano-disc:p8",
+   "morellino-di-scansano-disc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills between two rivers",
+   "paras": [
+    "The vineyards lie in the hills of southeast Grosseto province, between the Ombrone and the Albegna. All of Scansano's land is inside the zone, and so is part of six other communes.",
+    "The hills slope down to the plain of Albinia in the south and towards the Tyrrhenian coast in the west. The biggest rises are in the north, along the main watershed between the Ombrone and the Osa-Albegna basins. Hills prevail over plateaus of limited size.",
+    "Only hillsides with good exposure count as suitable for vines. Valley floors are out. Most vineyards face east-southeast. With the hills, this helps give a setting that is well aired and bright."
+   ],
+   "cite": [
+    "morellino-di-scansano-disc:p2",
+    "morellino-di-scansano-disc:p3",
+    "morellino-di-scansano-disc:p7",
+    "morellino-di-scansano-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The hills between the Ombrone and the Albegna",
+     "point": [
+      11.3,
+      42.65
+     ],
+     "zoom": 9.5,
+     "caption": "The zone is the band of hills in Grosseto province between the Ombrone and Albegna rivers.",
+     "cite": [
+      "morellino-di-scansano-disc:p2"
+     ]
+    },
+    {
+     "label": "Scansano",
+     "point": [
+      11.3203,
+      42.6847
+     ],
+     "zoom": 11,
+     "caption": "Scansano has held a grape festival, the Festa dell'Uva, since 1969, in the town's dozens of medieval cellars.",
+     "cite": [
+      "morellino-di-scansano-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot and dry, with recurring drought",
+   "paras": [
+    "The mean temperature is about 15 °C, with about 7 °C in winter months and 24 °C in summer months. The climate is hot and dry, and recurring drought is the main limit on farm output.",
+    "About 620 mm of rain falls in a year. Most of it comes from November to April, often in thunderstorm downpours, and tends to favour the eastern parts. Springs and summers are very dry."
+   ],
+   "cite": [
+    "morellino-di-scansano-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Shallow soil, rock showing",
+   "paras": [
+    "Soils are generally not very deep, and the bedrock is bare in various places. The land averages about 250 m, drops to 30 to 40 m in some low margins and peaks at 566 m.",
+    "The west is more uniform, with sandstone hills of the macigno or pietraforte type. Soils there are silt loam or sandy loam, generally from slightly acid to alkaline.",
+    "The east is more broken up, with limestone and clay-schist. Soils are clay loam to silt loam, and tend to be alkaline."
+   ],
+   "cite": [
+    "morellino-di-scansano-disc:p7"
+   ]
+  },
+  {
+   "id": "sangiovese",
+   "beat": "rules",
+   "title": "Sangiovese, in three versions",
+   "paras": [
+    "Morellino is a still red only. Sangiovese is the main grape and has always been grown here. The base wine and the Superiore need at least 85% of it, and the Riserva needs at least 90%. Other non-aromatic black grapes suited to Tuscany may fill the rest, up to 15%, or 10% for the Riserva.",
+    "Colour is ruby, turning garnet with age. The nose is intense, winey and broad, and recalls red forest fruit. Tannin is light.",
+    "Riserva is a more structured red, aged at least two years, with at least one in wood. It adds wood, spice and riper fruit, and lasts longer on the palate. Superiore comes from a lower yield of 8 t/ha. It needs at least 13% alcohol. It is released only from 1 January of the second year after harvest. The base wine yields up to 9 t/ha and no vine may carry more than 3 kg."
+   ],
+   "cite": [
+    "morellino-di-scansano-disc:p1",
+    "morellino-di-scansano-disc:p2",
+    "morellino-di-scansano-disc:p3",
+    "morellino-di-scansano-disc:p4",
+    "morellino-di-scansano-disc:p5",
+    "morellino-di-scansano-disc:p8",
+    "morellino-di-scansano-disc:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "Vigna means vineyard. It must be followed by the vineyard's place name or traditional name. The wine is made and kept in separate vessels. The name must be on the regional list.",
+    "cite": [
+     "morellino-di-scansano-disc:p5",
+     "morellino-di-scansano-disc:p6"
+    ]
+   },
+   {
+    "term": "Toscana",
+    "text": "The wider name Toscana may follow Morellino di Scansano, below the DOCG words. Its letters must be smaller, in the same font.",
+    "cite": [
+     "morellino-di-scansano-disc:p6"
+    ]
+   }
+  ],
+  "cite": [
+   "morellino-di-scansano-disc:p5",
+   "morellino-di-scansano-disc:p6"
+  ]
+ }
+}

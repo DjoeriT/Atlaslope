@@ -1,0 +1,108 @@
+{
+ "id": "dolcetto-di-diano-dalba",
+ "title": "Why Dolcetto di Diano d'Alba tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Dolcetto is delicate and demanding about exposure. In the hill village of Diano d'Alba it found its ideal home on the highest, sunniest slopes.",
+  "cite": [
+   "dolcetto-di-diano-dalba-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hill",
+   "beat": "place",
+   "title": "A hill village south of Alba",
+   "paras": [
+    "The wine is named for a small village south of Alba, stretched along a hill at almost 500 m. One side looks over the city. Another looks over the old road to Liguria. The third looks over hills that fall away to a plain in the distance.",
+    "This is the Langhe, hills that some scholars link to the word \"Langues\", tongues of land. The white sandstones mark the Diano area, on the high hills above the river Tanaro. The Langhe date from the Tertiary era, which began almost 70 million years ago.",
+    "The village may take its name from Diana, goddess of the hunt, from a time when these hills were thick with woods. The Ligurians and then the Romans lived here."
+   ],
+   "cite": [
+    "dolcetto-di-diano-dalba-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Diano d'Alba on its hill",
+     "point": [
+      8.0225,
+      44.6417
+     ],
+     "zoom": 11,
+     "caption": "A small village on a hill at almost 500 m, with views over Alba, the old road to Liguria and the hills falling to the plain.",
+     "cite": [
+      "dolcetto-di-diano-dalba-disc:p8"
+     ]
+    },
+    {
+     "label": "The Tanaro river",
+     "point": [
+      8.03,
+      44.7
+     ],
+     "zoom": 10,
+     "caption": "The white sandstones of the Diano area sit on the high hills above the Tanaro.",
+     "cite": [
+      "dolcetto-di-diano-dalba-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "A grape that wants sun",
+   "paras": [
+    "Dolcetto ripens early and loves strong swings in temperature.",
+    "In Diano it pushed the woods back to the valley floors. It sent the hazelnut trees onto the less favourable slopes."
+   ],
+   "cite": [
+    "dolcetto-di-diano-dalba-disc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, lime and hillsides only",
+   "paras": [
+    "Vineyards stand on clay soils, limy soils or a mix of the two. They must lie on hillsides only. Valley floors are strictly excluded. So is any land that is damp or flat. So is land without enough sun.",
+    "No vineyard may lie higher than 550 m above sea level."
+   ],
+   "cite": [
+    "dolcetto-di-diano-dalba-disc:p2"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "One grape, one village, one dry red",
+   "paras": [
+    "The wine is a dry red made from 100% Dolcetto, grown within the municipality of Diano d'Alba only. It is ruby red and fruity, with an almond note and a possible hint of wood. The label may read Dolcetto di Diano d'Alba or just Diano d'Alba.",
+    "Superiore needs at least 12.5% alcohol. It is aged 10 months from 1 November of the harvest year. It can be sold from 1 September of the year after the harvest. The plain wine can go on sale from 1 January of the year after the harvest.",
+    "The best sites are called Sörì, from the Piedmontese for a sunny place. Generations of growers found them so well that all 76 were mapped precisely from 1988, all within Diano d'Alba. A Sorì name can be added to the label, such as Sorì Bric del Gerlotto."
+   ],
+   "cite": [
+    "dolcetto-di-diano-dalba-disc:p1",
+    "dolcetto-di-diano-dalba-disc:p2",
+    "dolcetto-di-diano-dalba-disc:p5",
+    "dolcetto-di-diano-dalba-disc:p6",
+    "dolcetto-di-diano-dalba-disc:p7",
+    "dolcetto-di-diano-dalba-disc:p8"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word \"vigna\" and a vineyard name can follow a Sorì name on the label. The wine must be made and kept in separate vessels, by a producer who made and bottled it. The vigna name may be at most half the size of the wine's name.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p7"
+    ]
+   }
+  ],
+  "cite": [
+   "dolcetto-di-diano-dalba-disc:p7"
+  ]
+ }
+}

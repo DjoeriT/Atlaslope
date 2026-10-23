@@ -1,0 +1,132 @@
+{
+ "id": "asolo-prosecco",
+ "title": "Why Asolo Prosecco tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Air flows down from the higher slopes, and nights and days swing wide in temperature. In the mid and lower hills this helps fix fruit notes from apple and pear to peach and apricot.",
+  "cite": [
+   "asolo-prosecco-disc:p9",
+   "asolo-prosecco-disc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Two hill systems at the foot of the Dolomites",
+   "paras": [
+    "The vineyards lie in the province of Treviso, north of Venice. They sit on two hill systems, the Montello and the Colli Asolani, at the foot of the Dolomites. The two are almost separate from each other, running from Nervesa della Battaglia in the east to the village of Fonte in the west.",
+    "The hills stand between 100 and 450 m above sea level. Their slopes and curves give the landscape a softness and harmony. Vineyards must be well exposed, on hills or foothills. Valley floors and slopes facing north are left out.",
+    "Benedictine monks settled around the year 1000, at the monastery of S. Bona in Vidor and the Certosa del Montello in Nervesa. When the area passed to the Venetians in the second half of the 1300s, the hills were quickly recognised as an important wine area. Their wines were exported abroad by the 1400s. In Venice, wine from here was taxed a third more because it was thought better than wine from other zones."
+   ],
+   "cite": [
+    "asolo-prosecco-disc:p3",
+    "asolo-prosecco-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Montello",
+     "point": [
+      12.15,
+      45.8
+     ],
+     "zoom": 10,
+     "caption": "One of the two hill systems, at the eastern end near Nervesa della Battaglia.",
+     "cite": [
+      "asolo-prosecco-disc:p8"
+     ]
+    },
+    {
+     "label": "The Colli Asolani",
+     "point": [
+      11.93,
+      45.8
+     ],
+     "zoom": 10,
+     "caption": "The other hill system, reaching west to the village of Fonte.",
+     "cite": [
+      "asolo-prosecco-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Mild springs, summers never too hot",
+   "paras": [
+    "Springs are mild and summers are not too hot. Autumns turn mild again. The south-facing slopes are one reason. The hills also lie across the cold winds from the north-east.",
+    "Summers average 22.6 °C, with the highest values in July. About 700 mm of rain falls from April to September, fairly evenly spread. Autumns are warm and dry, thanks to breezes and strong swings between night and day.",
+    "Mild springs support very early budbreak. Summers that are not too hot avoid ripening too early and keep the typical ratio of acids to sugars high. Mild autumns allow full ripeness. Air flowing down from the higher slopes, with the night-to-day swing, is closely tied to making and keeping some aromatic terpene compounds typical of Glera. This shows most in the mid and lower hills, where the temperature inversion is stronger."
+   ],
+   "cite": [
+    "asolo-prosecco-disc:p8",
+    "asolo-prosecco-disc:p9",
+    "asolo-prosecco-disc:p10"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Red marl over hard conglomerate",
+   "paras": [
+    "The hills are made of big masses of tough conglomerate, rock cemented together. Over it lies a soil of marl and clay, or marl and sand. It is easy to work and breaks down easily in the weather. Its red colour shows its ancient origin.",
+    "The soils are decarbonated and acidic, and medium deep. They hold water well and have a good supply of minerals. Because they have not been violently reworked, their layers are intact.",
+    "Karst is common, above all on the Montello, with over 2000 doline, sinkholes of different sizes. These cavities in the ground form a perfect underground drainage system. Rain also drains away easily on the sloping, loose ground and soaks in fast below the surface.",
+    "Mostly loose marl soils with a good supply of limestone and enough moisture favour the uptake of many trace elements. They matter for the growth of Glera, and above all for the complexity of the must and base wines for sparkling."
+   ],
+   "cite": [
+    "asolo-prosecco-disc:p8",
+    "asolo-prosecco-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Sinkholes on the Montello",
+     "point": [
+      12.1,
+      45.8
+     ],
+     "zoom": 11,
+     "caption": "Karst ground full of doline, sinkholes that drain water underground.",
+     "cite": [
+      "asolo-prosecco-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bubbles",
+   "beat": "rules",
+   "title": "Glera, still or sparkling",
+   "paras": [
+    "Glera is the grape. Up to 15% of Verdiso, Bianchetta trevigiana, Perera or Glera lunga can join it, on the same estate. In spumante, wine from Pinot bianco, Pinot nero, Pinot grigio or Chardonnay grown in a wider listed zone of Treviso can be added. At least 85% of the wine must still come from Glera.",
+    "Three kinds are made. There is still wine, from dry to off-dry, pale straw yellow with a fruity smell. There is frizzante, lightly sparkling, sold from Secco (dry) to Amabile (medium sweet). Then there is spumante, fully sparkling, always labelled superiore and sold from Extra Brut to Demi-sec.",
+    "Spumante can also be made the traditional way, fermented in the bottle with the lees left in. The label then says sui lieviti, on the lees, with the harvest year. It comes from a single vintage, and its bottle fermentation starts between 1 March and 30 June after the harvest. It is sold as Brut Nature after at least 90 days on the lees. It can show notes of bread crust and yeast and may be slightly hazy. It cannot be called millesimato, the term for a vintage spumante that names the harvest year.",
+    "The spumante and frizzante are light, and their delicate scent makes them very easy to drink. On the nose ripe apple meets tropical fruit, with a clear floral note. Over time, the natural refermentation in bottle each spring, of sugar left over from autumn, was refined into the tank method called Martinotti. Conegliano's wine school, a few kilometres away, helped the producers build their knowledge."
+   ],
+   "cite": [
+    "asolo-prosecco-disc:p2",
+    "asolo-prosecco-disc:p3",
+    "asolo-prosecco-disc:p5",
+    "asolo-prosecco-disc:p6",
+    "asolo-prosecco-disc:p7",
+    "asolo-prosecco-disc:p9",
+    "asolo-prosecco-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Conegliano's wine school",
+     "point": [
+      12.3,
+      45.89
+     ],
+     "zoom": 11,
+     "caption": "One of the oldest wine schools, a few kilometres from the vineyards.",
+     "cite": [
+      "asolo-prosecco-disc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

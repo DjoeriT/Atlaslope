@@ -1,0 +1,146 @@
+{
+ "id": "soave",
+ "title": "Why Soave tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Most of Soave's vines grow in dark soils from decomposed volcanic basalt, and the Garganega grape ripens as late as October. Minerals in those soils give the wine a savoury edge that shows as it matures.",
+  "cite": [
+   "soave-disc:p9",
+   "soave-disc:p10",
+   "soave-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Where the Lessini hills meet the plain",
+   "paras": [
+    "The vineyards lie in the central-western part of the Monti Lessini, close to where the hills dip into the Po plain. This is one of the most densely planted wine districts in Italy.",
+    "The zone covers all or part of 13 municipalities in the province of Verona, from Soave itself to Illasi and Lavagno. In Roman times Soave was already a pagus, a small wine-growing country district known for its good position and its intensive farming."
+   ],
+   "cite": [
+    "soave-disc:p2",
+    "soave-disc:p9",
+    "soave-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Soave",
+     "point": [
+      11.249,
+      45.423
+     ],
+     "zoom": 11,
+     "caption": "The town that gives the wine its name, already a wine-growing country district in Roman times.",
+     "cite": [
+      "soave-disc:p10"
+     ]
+    },
+    {
+     "label": "Monti Lessini",
+     "point": [
+      11.2,
+      45.58
+     ],
+     "zoom": 9,
+     "caption": "The vineyards sit in the central-western Monti Lessini, close to where the hills dip into the Po plain.",
+     "cite": [
+      "soave-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild, humid and hot in summer",
+   "paras": [
+    "The climate is mild and temperate-humid, with a hot summer. Between 700 and 1000 mm of rain falls in a year, mostly in spring and autumn.",
+    "The mild climate and the swing between day and night temperatures produce significant amounts of aromatic precursors. These bring out the floral and fruity notes typical of each grape.",
+    "Vineyards run from 35 m on the foothills to 380 m on the highest hills. Most face east round to west, through south."
+   ],
+   "cite": [
+    "soave-disc:p10",
+    "soave-disc:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Dark basalt and limestone outcrops",
+   "paras": [
+    "Most soils come from decomposed basalt. They are dark clay loams, rich in minerals, that drain well yet store water through the year and release it slowly to the roots.",
+    "Limestone outcrops add a second kind of ground. There the roots often reach less than 50 cm deep, and the stony rock holds little water. That holds back the natural vigour of Garganega, and yields there are lower on average.",
+    "The wines from these limestone hills show great aromatic complexity."
+   ],
+   "cite": [
+    "soave-disc:p9",
+    "soave-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Roncà and Monte Calvarina",
+     "point": [
+      11.28,
+      45.5
+     ],
+     "zoom": 11,
+     "caption": "Roncà - Monte Calvarina is one of the named areas that a Soave label may mention.",
+     "cite": [
+      "soave-disc:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "garganega",
+   "beat": "rules",
+   "title": "Garganega under a pergola",
+   "paras": [
+    "Garganega makes up at least 70% of the vineyard. Trebbiano di Soave and Chardonnay can fill up to 30%, and up to 5% of that can be other non-aromatic white grapes suited to Verona province. Trebbiano di Soave is used in small amounts, but it helps bring savouriness and liveliness next to the structure of Garganega.",
+    "Garganega has a long growing season and ripens in October. Its skin is tough and often deep yellow. Its scent is modest, led by almond and white flowers.",
+    "The pergola veronese is the traditional way of training vines here. It is recorded as early as 680 AD and is still used today. It shades the bunches and shields them from hail. It also helps keep aromatic precursors that are sensitive to heat.",
+    "Soave is a dry, medium-bodied white, harmonious and slightly bitter. Its colour is straw yellow, sometimes leaning to green. Fruity and floral notes lead, with a spice note of cinnamon. Cherry and almond add to them.",
+    "Soave Classico comes from the historic zone, and Soave Colli Scaligeri from a subzone. Both carry the vintage on the label and go on sale only after 1 February of the year after the harvest. They allow 14 tonnes of grapes a hectare instead of 15, and need at least 11% alcohol instead of 10.5%. Plain Soave can go on sale after 1 December of the harvest year.",
+    "Soave Classico has the oldest tradition. Its scent is slightly mineral, and its taste is full yet delicate.",
+    "Soave also comes as a sparkling wine. It is made only by natural second fermentation, in the Veneto region. Its bubbles are fine and persistent."
+   ],
+   "cite": [
+    "soave-disc:p1",
+    "soave-disc:p2",
+    "soave-disc:p6",
+    "soave-disc:p7",
+    "soave-disc:p8",
+    "soave-disc:p9",
+    "soave-disc:p10",
+    "soave-disc:p11"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word may be used only when followed by the vineyard's place name. Its area must be listed in the vineyard register, and the wine made and kept in separate vessels."
+   },
+   {
+    "term": "Unità Geografiche Aggiuntive",
+    "text": "Additional geographical units. A label may name one of 33 listed areas, such as Foscarino or Monte Grande."
+   },
+   {
+    "term": "Tenuta",
+    "text": "Farm words like tenuta or podere, which describe the bottler's farming, are allowed on Soave Classico and Soave Colli Scaligeri."
+   },
+   {
+    "term": "Riserva",
+    "text": "Not allowed. Soave may carry no qualifier beyond those its rules name."
+   }
+  ],
+  "cite": [
+   "soave-disc:p8",
+   "soave-disc:p9",
+   "soave-disc:p13"
+  ]
+ }
+}

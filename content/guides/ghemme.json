@@ -1,0 +1,88 @@
+{
+ "id": "ghemme",
+ "title": "Why Ghemme tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Glaciers from Monte Rosa once reached the plain and left hills of moraine behind. Their soils are rich in dissolved minerals, which add a savoury note to the grapes.",
+  "cite": [
+   "ghemme-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "foothills",
+   "beat": "place",
+   "title": "Between mountain and plain",
+   "paras": [
+    "Ghemme lies in Alto Piemonte, on the edge of the Valsesia and near Monte Rosa. Monte Fenera stands to the north, and lakes Maggiore and Orta lie to the north-west.",
+    "In the ice age the Monte Rosa glaciers spread as far as the plain. Today that plain is wide, irrigated land farmed for rice and cereals. As the ice retreated it left a string of moraines, a natural link between the mountain and the plain.",
+    "The vineyards sit on hills in the province of Novara, in part of the municipality of Ghemme and part of Romagnano Sesia. Wine from here was already famous in the days of Pliny the Elder."
+   ],
+   "cite": [
+    "ghemme-disc:p1",
+    "ghemme-disc:p2",
+    "ghemme-disc:p5",
+    "ghemme-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Monte Rosa",
+     "point": [
+      7.867,
+      45.937
+     ],
+     "zoom": 9,
+     "caption": "In the ice age its glaciers spread as far as the plain.",
+     "cite": [
+      "ghemme-disc:p5"
+     ]
+    },
+    {
+     "label": "Ghemme and its hills",
+     "point": [
+      8.4,
+      45.59
+     ],
+     "zoom": 11,
+     "caption": "Hills near Monte Rosa, on the edge of the Valsesia.",
+     "cite": [
+      "ghemme-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moraines",
+   "beat": "ground",
+   "title": "Moraine hills, 220 to 400 m",
+   "paras": [
+    "The hills run from north to south. Their soils hold rocks and debris of different kinds. On top lies a layer of clay with kaolin and tuff. On the plateau the soils are more compact and deeper. Along the western slope they are looser and stonier.",
+    "These soils are rich in dissolved mineral salts. The vine roots take them up, and they add a savoury edge to the grapes.",
+    "Clay and sand are allowed for vines. So are silt and pebbles, alone or mixed. Valley floors are excluded. So is ground that is damp or gets too little sun. North-facing slopes are excluded too. Vineyards lie between 220 and 400 m above sea level."
+   ],
+   "cite": [
+    "ghemme-disc:p2",
+    "ghemme-disc:p5"
+   ]
+  },
+  {
+   "id": "nebbiolo",
+   "beat": "rules",
+   "title": "Red only, aged long",
+   "paras": [
+    "Ghemme is a red wine and nothing else. The grape is Nebbiolo, called Spanna here. Vespolina and Uva Rara may be added, alone or together, up to 15%.",
+    "Ghemme is aged for at least 34 months, 18 of them in wood, counted from 1 November of the harvest year. It goes on sale from 1 September of the third year after the harvest.",
+    "Ghemme Riserva is aged for at least 46 months, 24 of them in wood. It goes on sale from 1 September of the fourth year after the harvest.",
+    "Both can carry the word \"vigna\" (vineyard) followed by the vineyard's name. The vines must be at least 7 years old, and the yield is capped at 7.20 t/ha.",
+    "Every bottle must show the vintage."
+   ],
+   "cite": [
+    "ghemme-disc:p1",
+    "ghemme-disc:p2",
+    "ghemme-disc:p3",
+    "ghemme-disc:p4",
+    "ghemme-disc:p5"
+   ]
+  }
+ ]
+}

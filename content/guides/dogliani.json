@@ -1,0 +1,117 @@
+{
+ "id": "dogliani",
+ "title": "Why Dogliani tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Dogliani lies in the highest, coolest part of the Langhe. That is the climate most suited to Dolcetto, the only grape in its dry red wine.",
+  "cite": [
+   "dogliani-disc:p1",
+   "dogliani-disc:p6",
+   "dogliani-disc:p7",
+   "dogliani-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bridge",
+   "beat": "place",
+   "title": "A bridge between four landscapes",
+   "paras": [
+    "The Doglianese lies on the western edge of the Langhe, in the south of Piemonte. It sits in the southern Langhe, which here means the highest and coolest area. This is where the land nears the Ligurian Apennines and the Maritime Alps.",
+    "Dogliani is a bridge. To the north lies the langa of Barolo, and to the south lies the alta langa of hazelnuts and sheep. The plain of Cuneo, rich in cattle farms, lies to the west. The Belbo valley, with its Moscato, lies to the east.",
+    "The hills are ridges that rose from the seabed and were later shaped by rivers. They form a complex, branching pattern of tongues of land called langhe, from 250 to 700 m high.",
+    "The land is still unspoilt. Beside the vines it has kept hazelnut groves and woods, along with arable fields and meadows for livestock."
+   ],
+   "cite": [
+    "dogliani-disc:p7",
+    "dogliani-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The langa of Barolo",
+     "place": "barolo",
+     "caption": "The langa of Barolo borders Dogliani to the north.",
+     "cite": [
+      "dogliani-disc:p7"
+     ]
+    },
+    {
+     "label": "Dogliani and the Tanaro",
+     "point": [
+      7.945,
+      44.53
+     ],
+     "zoom": 10,
+     "caption": "The Doglianese sits on the western edge of the Langhe. The Tanaro did most to shape its landscape.",
+     "cite": [
+      "dogliani-disc:p7",
+      "dogliani-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A cooler corner for a heat-shy grape",
+   "paras": [
+    "The high, cool southern Langhe have the climate most suited to Dolcetto. The grape suffers in too much heat. It keeps its delicate aromas only in a particular balance of temperatures."
+   ],
+   "cite": [
+    "dogliani-disc:p7",
+    "dogliani-disc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Where long and short slopes meet",
+   "paras": [
+    "The Doglianese marks a geological boundary, where long and short slopes alternate. They come from the uplift of pale soils, in places with layers of sandstone mixed into more clearly clay soils. The clay soils come from more recent formations that are not yet fully washed or eroded. Their depth can vary, mainly with the exposure and the slope of the land.",
+    "The Rea and its small seasonal streams cut the valleys deeper and built some fans of debris toward Farigliano. The Tanaro did most to shape the landscape as it is now.",
+    "Vineyards may stand on clay, limy or silica soils, or on mixes of them. They must be on hillsides, never above 800 m. Valley floors and damp or flat land are excluded. So is land without enough sun.",
+    "New plantings may not face due north. Existing vineyards can be renewed as they stand."
+   ],
+   "cite": [
+    "dogliani-disc:p3",
+    "dogliani-disc:p7",
+    "dogliani-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Farigliano and the Tanaro",
+     "point": [
+      7.915,
+      44.511
+     ],
+     "zoom": 10.5,
+     "caption": "The Rea and its streams built fans of debris toward Farigliano, but the Tanaro did most to shape the landscape.",
+     "cite": [
+      "dogliani-disc:p7",
+      "dogliani-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dolcetto",
+   "beat": "rules",
+   "title": "Only Dolcetto, only dry red",
+   "paras": [
+    "Dogliani is a red-only DOCG, made from Dolcetto and nothing else. It comes in two types: Dogliani and Dogliani superiore.",
+    "Dogliani has at least 12.00% alcohol. Its grapes are limited to 8.0 t/ha, and 11.50% natural alcohol is the minimum.",
+    "Dogliani superiore is stricter. Grapes are limited to 7.0 t/ha, with at least 13.00% natural alcohol. Enrichment is not allowed. The wine ages for at least 12 months from 15 October of the harvest year and cannot be sold before 1 November of the year after the harvest.",
+    "The label can add \"vigna\" (vineyard) with the vineyard's place name. The vines must be at least 7 years old, and yields are lower: 7.2 t/ha for Dogliani and 6.3 t/ha for superiore. The grapes need 13.00% natural alcohol. Only producers who both make and bottle the wine may use it.",
+    "The label may also name an extra geographic unit. This is one of 21 communes or one of the listed localities. A commune's name follows the words \"del comune di\" (of the commune of). Every bottle shows the vintage."
+   ],
+   "cite": [
+    "dogliani-disc:p1",
+    "dogliani-disc:p3",
+    "dogliani-disc:p5",
+    "dogliani-disc:p6",
+    "dogliani-disc:p7",
+    "dogliani-disc:p9"
+   ]
+  }
+ ]
+}

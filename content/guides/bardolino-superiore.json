@@ -1,0 +1,125 @@
+{
+ "id": "bardolino-superiore",
+ "title": "Why Bardolino Superiore tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Glaciers left concentric hills of gravelly soil beside Lake Garda. The lake's mild, airy climate ripens the grapes, and the varied ground adds spice and freshness.",
+  "cite": [
+   "bardolino-superiore-disc:p5",
+   "bardolino-superiore-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills the glaciers left behind",
+   "paras": [
+    "Bardolino Superiore comes from the moraine hills on the eastern shore of Lake Garda. Glaciers shaped this land and left a series of concentric hills facing the lake.",
+    "The northern edge of the zone follows the 500 m contour along the mountain slopes in Costermano, Caprino and Rivoli. Wet land on the valley floor is excluded.",
+    "The Classico area around the town of Bardolino is the zone of oldest tradition. It lies closest to the lake and has its own climate and setting."
+   ],
+   "cite": [
+    "bardolino-superiore-disc:p2",
+    "bardolino-superiore-disc:p3",
+    "bardolino-superiore-disc:p5",
+    "bardolino-superiore-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Eastern shore of Lake Garda",
+     "point": [
+      10.72,
+      45.56
+     ],
+     "zoom": 9.5,
+     "caption": "The moraine hills rise in concentric rows facing the lake.",
+     "cite": [
+      "bardolino-superiore-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lake-air",
+   "beat": "weather",
+   "title": "A lake that keeps things mild",
+   "paras": [
+    "The big body of water that is Lake Garda shapes the climate. To the north, the Monte Baldo massif and the Adige valley play a part too.",
+    "Summers are hot but not sticky. Winters are mild enough for olive trees, and the climate is counted as Mediterranean.",
+    "North-facing hillsides are usually wooded. The other slopes face the sun well and carry vineyards and olive groves.",
+    "In late winter the soils warm up fairly quickly, so the shoots start early. Flowering through to colour change then keeps a regular pace, and the bunches ripen adequately even in difficult years.",
+    "Close to the shore the climate is especially mild, with good swings between day and night. Wines from there show good phenolic ripeness and clear strawberry and raspberry notes.",
+    "In the south there is less rain and the summer is on average warmer. Experienced tasters pick out cherry there."
+   ],
+   "cite": [
+    "bardolino-superiore-disc:p5",
+    "bardolino-superiore-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Monte Baldo",
+     "point": [
+      10.85,
+      45.7
+     ],
+     "zoom": 9.8,
+     "caption": "The Monte Baldo massif lies to the north and shapes the local climate along with the lake.",
+     "cite": [
+      "bardolino-superiore-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moraine",
+   "beat": "ground",
+   "title": "Gravelly soils that vary widely",
+   "paras": [
+    "The moraine soils are extremely variable, but they tend to be gravelly and deep. Their glacial origin, mixed make-up and generally modest richness give the wine more structure. They also give it its savoury, easy-drinking character. The wide range of soils is often behind the freshness.",
+    "Thin gravel-sand soils bring violet notes. Soils over rock along Monte Baldo and the Adige valley bring spice and more acidity.",
+    "Growers pick vineyards that face south or south-east. They want warm, lean ground with little water."
+   ],
+   "cite": [
+    "bardolino-superiore-disc:p5",
+    "bardolino-superiore-disc:p6",
+    "bardolino-superiore-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Adige valley at Rivoli",
+     "point": [
+      10.8,
+      45.58
+     ],
+     "zoom": 10.5,
+     "caption": "Soils over rock beside the Adige valley and Monte Baldo give spice and more acidity.",
+     "cite": [
+      "bardolino-superiore-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "A dry red with a year of age",
+   "paras": [
+    "Corvina veronese makes up 35 to 80% of the blend, and Corvinone can stand in for up to 20% of it. Rondinella adds 10 to 40% and Molinara up to 15%. Other non-aromatic red grapes allowed in Verona province can add up to 20% in total, with no more than 10% of any one. There is one wine, a dry red.",
+    "Growers cut the number of bunches on each vine and choose less vigorous clones. The result is more concentrated grapes. Yields are capped at 9 t per hectare.",
+    "The wine must age at least one year from 1 November of the harvest year. With that time it gains fuller aromas and flavours while keeping its freshness and ease of drinking. The label must show the vintage.",
+    "Classico on the label means the grapes come from the oldest zone around Bardolino. The wine is made and aged there too, unless the ministry allows a grower's own cellar elsewhere in the Bardolino zone.",
+    "It is ruby red, turning garnet with age. It tastes dry and savoury, with a harmonious balance. Cherry and sour cherry come through, with ripe strawberry and blackberry. Spice recalls cinnamon and clove, with black pepper behind. Light wood can show if the wine has sat in wooden containers.",
+    "In 2001 it became the first red of the Veneto to earn DOCG status. The first bottles with the state seal reached the market at the end of 2002."
+   ],
+   "cite": [
+    "bardolino-superiore-disc:p1",
+    "bardolino-superiore-disc:p3",
+    "bardolino-superiore-disc:p4",
+    "bardolino-superiore-disc:p5",
+    "bardolino-superiore-disc:p6",
+    "bardolino-superiore-disc:p7"
+   ]
+  }
+ ]
+}

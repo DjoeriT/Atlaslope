@@ -1,0 +1,83 @@
+{
+ "id": "barbera-del-monferrato-superiore",
+ "title": "Why Barbera del Monferrato Superiore tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Barbera has grown here for so long that an 1873 book called it native to the Asti area and the lower Monferrato. The Superiore is the version made from the ripest bunches and kept in the cellar for at least 14 months.",
+  "cite": [
+   "barbera-del-monferrato-superiore-disc:p6",
+   "barbera-del-monferrato-superiore-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Low hills, never the valley floor",
+   "paras": [
+    "The vineyards cover the province of Asti and part of the province of Alessandria. The land is a system of low hills, mostly between 150 and 400 m. On the Alessandria side the villages are split into Alto Monferrato and Basso Monferrato.",
+    "Vines must grow on hills only. Valley floors, damp ground and places without enough sun are excluded. No vineyard may sit above 650 m, and new plantings cannot face north."
+   ],
+   "cite": [
+    "barbera-del-monferrato-superiore-disc:p1",
+    "barbera-del-monferrato-superiore-disc:p2",
+    "barbera-del-monferrato-superiore-disc:p3",
+    "barbera-del-monferrato-superiore-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Casale Monferrato and the Po",
+     "point": [
+      8.45,
+      45.13
+     ],
+     "zoom": 10,
+     "caption": "Around Casale Monferrato only the hills on the right bank of the Po count as vineyard land.",
+     "cite": [
+      "barbera-del-monferrato-superiore-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Temperate and not very windy",
+   "paras": [
+    "The climate is temperate or temperate-warm, at about 1800 degree days. The hills are not very windy. Rain averages around 700 mm a year."
+   ],
+   "cite": [
+    "barbera-del-monferrato-superiore-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limy soils on marly rock",
+   "paras": [
+    "The area overlaps a great deal with Barbera d'Asti, in the middle of the Piedmont Tertiary basin. The soils are mostly calcareous and of medium depth. They rest on rock that mixes limestone with sandstone and marl.",
+    "A few small areas have acidic red paleosoils, called terre rosse. They lie around villages such as Cassine and Masio. These spots are not in the Barbera d'Asti rules."
+   ],
+   "cite": [
+    "barbera-del-monferrato-superiore-disc:p7"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Barbera, aged, and only red",
+   "paras": [
+    "Barbera must make up at least 85% of the vineyard. Freisa, Grignolino and Dolcetto, alone or together, can fill the other 15% at most.",
+    "Red is the only wine type. It must reach at least 13.00% alcohol and 4.5 g/l of acidity.",
+    "The Superiore ages for at least 14 months from 1 November of the harvest year. At least 6 of those months are in oak barrels of any size. Yields are capped at 9,000 kg/ha, and the grapes need at least 12.50% natural alcohol.",
+    "A wine can add \"vigna\", meaning vineyard, and the vineyard's name. Then the yield drops to 8,000 kg/ha and the grapes need at least 13.00% natural alcohol. Every bottle must show the vintage."
+   ],
+   "cite": [
+    "barbera-del-monferrato-superiore-disc:p1",
+    "barbera-del-monferrato-superiore-disc:p3",
+    "barbera-del-monferrato-superiore-disc:p5",
+    "barbera-del-monferrato-superiore-disc:p6"
+   ]
+  }
+ ]
+}

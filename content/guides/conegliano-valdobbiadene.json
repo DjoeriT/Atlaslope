@@ -1,0 +1,54 @@
+{
+ "id": "conegliano-valdobbiadene",
+ "title": "Why Conegliano Valdobbiadene tastes the way it does",
+ "minutes": 1,
+ "lede": {
+  "text": "Glera grown on hill country around Conegliano and Valdobbiadene makes still and sparkling wines. One traditional sub-zone, Cartizze, has a mention of its own.",
+  "cite": [
+   "conegliano-valdobbiadene-disc:p2"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hill country and a sub-zone",
+   "paras": [
+    "The grapes come from the hill country of a set list of communes, Conegliano among them. The name pairs Prosecco with both towns or with either one alone.",
+    "Inside the zone, Cartizze is a traditional sub-zone with its own mention."
+   ],
+   "cite": [
+    "conegliano-valdobbiadene-disc:p2"
+   ],
+   "fly": [
+    {
+     "label": "Cartizze",
+     "point": [
+      11.99,
+      45.9
+     ],
+     "zoom": 11,
+     "caption": "Cartizze is the traditional sub-zone whose spumante may carry the mention Superiore di Cartizze.",
+     "cite": [
+      "conegliano-valdobbiadene-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glera",
+   "beat": "rules",
+   "title": "Glera, still and sparkling",
+   "paras": [
+    "Glera is the grape. Up to 15% may come from four other grapes grown on the same farm: Verdiso, Bianchetta trevigiana, Perera and Glera lunga.",
+    "The wine can be still. It can be frizzante, which is lightly sparkling. Spumante, which is fully sparkling, always carries the mention superiore.",
+    "Spumante can add \"sui lieviti\" (on its yeasts). It can also add \"Rive\", followed by a named place from the rules' annex A. \"Superiore di Cartizze\" is for spumante from the Cartizze sub-zone only.",
+    "The area became a DOC in 1969 as Prosecco di Conegliano Valdobbiadene. It became a DOCG in 2009."
+   ],
+   "cite": [
+    "conegliano-valdobbiadene-disc:p1",
+    "conegliano-valdobbiadene-disc:p2"
+   ]
+  }
+ ]
+}

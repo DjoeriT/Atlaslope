@@ -1,0 +1,93 @@
+{
+ "id": "offida",
+ "title": "Why Offida tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Soils deeper than 80 to 100 cm keep moisture in the ground even through dry summers. On these hills Offida makes a Pecorino with pineapple and sage and a red with liquorice and chocolate.",
+  "cite": [
+   "offida-disc:p5",
+   "offida-disc:p6",
+   "offida-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills from the coast inland",
+   "paras": [
+    "Offida lies in the south of the Marche, across the provinces of Ascoli Piceno and Fermo. The zone runs from the coast up to medium-high hills. Its vineyards lie between 50 and 650 m above sea level.",
+    "Most of the vineyards face east to south-east. The valley floors are left out, because they do not suit quality viticulture. Land on the alluvial plain is excluded too. So are sites that are too damp or get too little sun.",
+    "Vines have grown in the Piceno, the old name for this corner of the Marche, for thousands of years. Latin authors wrote about them, Pliny the Elder among them."
+   ],
+   "cite": [
+    "offida-disc:p3",
+    "offida-disc:p5",
+    "offida-disc:p6",
+    "offida-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Offida and its hills",
+     "point": [
+      13.688,
+      42.934
+     ],
+     "zoom": 10,
+     "caption": "The town of Offida lies wholly inside the zone, in the south of the Marche.",
+     "cite": [
+      "offida-disc:p2",
+      "offida-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers, fairly cold winters",
+   "paras": [
+    "The climate is Mediterranean. Summers are hot but not sultry, and winters are fairly cold and quite rainy. Summer means run from 21 to 23 °C and winter means from 6 to 7 °C.",
+    "Between 650 and 850 mm of rain falls in a year, over 80 to 90 rainy days. July is the driest month and the wettest months are October to December. Snow is relatively rare and mostly light.",
+    "Three summer months average above 20 °C. All this makes the zone warm-temperate, with a dry season that is not very marked and a very hot summer. That helps the vines grow and the skins build up polyphenols."
+   ],
+   "cite": [
+    "offida-disc:p5",
+    "offida-disc:p6",
+    "offida-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep clay that drains",
+   "paras": [
+    "The soils are always deeper than 80 to 100 cm, so roots have plenty of earth to explore. They hold more than 150 mm of available water, so there is moisture in the ground even in dry summers.",
+    "Most are fine-textured and clay-rich, and all are alkaline. Carbonates are even through the whole profile. Water drains well, both because of the slopes and because the soil is permeable."
+   ],
+   "cite": [
+    "offida-disc:p5",
+    "offida-disc:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Two whites and a long-lived red",
+   "paras": [
+    "The DOCG rests on three grapes traditionally grown in the Piceno. Pecorino and Passerina each make a dry white, and Montepulciano makes the red. Each wine needs at least 85% of its grape.",
+    "Offida Pecorino is pale straw with green glints. It has good acidity and tastes fresh, mineral and savoury, with a lingering finish. Offida Passerina is pale straw with golden glints. It tastes fresh and mineral, with a lingering finish too.",
+    "Offida Rosso is a structured, full-bodied red that lives very long. It is ruby, turning garnet with age, and soft and broad with a very long finish. It must age 24 months, 12 of them in wood, and then rest 3 months in bottle. The count starts no earlier than 1 November of the harvest year.",
+    "The whites cannot be sold before 1 March after the harvest. Yields are capped at 9 t/ha for the whites and 8.5 t/ha for the red. The vintage must be on every label."
+   ],
+   "cite": [
+    "offida-disc:p1",
+    "offida-disc:p3",
+    "offida-disc:p4",
+    "offida-disc:p5",
+    "offida-disc:p6",
+    "offida-disc:p7"
+   ]
+  }
+ ]
+}

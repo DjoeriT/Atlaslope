@@ -1,0 +1,153 @@
+{
+ "id": "asti",
+ "title": "Why Asti tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Moscato bianco grows on hills where a continental climate led growers to the steepest slopes for the best sunlight. The ground changes from west to east, and the wine goes from very aromatic and medium-bodied to vigorous and rich.",
+  "cite": [
+   "asti-disc:p10",
+   "asti-disc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills left by a retreating sea",
+   "paras": [
+    "The vineyards spread over 51 municipalities in the provinces of Alessandria, Asti and Cuneo. They lie in the Langhe-Roero and Monferrato.",
+    "The land began to form more than 12 million years ago, when the sea retreated and left what is now the Po plain. Centuries of erosion then shaped the hills. High hills dominate in the south-west, and the land drops away to the north and east."
+   ],
+   "cite": [
+    "asti-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Canelli, where the fuller wines begin",
+     "point": [
+      8.2894,
+      44.7217
+     ],
+     "zoom": 10,
+     "caption": "From Canelli eastward, the wines show a fuller body.",
+     "cite": [
+      "asti-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Climbing for the sun",
+   "paras": [
+    "The climate is continental. It has led growers to use the steepest slopes to get the most sunlight.",
+    "Of more than 10,000 hectares in the denomination, 25% slope at over 30% (17°). 10% slope at over 40% (22°), and 4% at over 50% (27°). Much of the zone is therefore \"heroic\" viticulture.",
+    "Vineyards face mainly south in the west and south-east or south-west in the east."
+   ],
+   "cite": [
+    "asti-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Santo Stefano Belbo, in the west",
+     "point": [
+      8.2092,
+      44.7125
+     ],
+     "zoom": 11,
+     "caption": "Santo Stefano Belbo sits in the western part, where the vineyards face mainly south.",
+     "cite": [
+      "asti-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sandstone in the west, marl in the east",
+   "paras": [
+    "Only hillside vineyards with a good lie and exposure qualify. Vineyards on valley floors or flat land, or on light or damp soil, are excluded. The soil is preferably calcareous or calcareous-clay.",
+    "The oldest land lies in the centre and west. It formed 13 to 11 million years ago, and sandstone dominates. The soils are sandy loam, often fractured, light and permeable, with a medium level of active limestone.",
+    "The east is younger, 10 to 5 million years old. Its Marne di Sant'Agata marls show clear veins of gypsum. The silty loam soils are compact and hold water.",
+    "Vineyards lie between 150 and 600 m. Of the total, 45% sit at 200 to 300 m, 30% at 300 to 400 m and 17% above 400 m."
+   ],
+   "cite": [
+    "asti-disc:p3",
+    "asti-disc:p10",
+    "asti-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Acqui Terme, the eastern marls",
+     "point": [
+      8.4686,
+      44.676
+     ],
+     "zoom": 10,
+     "caption": "Acqui Terme lies in the far east of the zone, where the Marne di Sant'Agata marls prevail.",
+     "cite": [
+      "asti-disc:p3",
+      "asti-disc:p10",
+      "asti-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sweet",
+   "beat": "rules",
+   "title": "Sparkling Asti, sweet Moscato d'Asti",
+   "paras": [
+    "Except for the rosé, Moscato bianco must make up at least 97% of the vineyard. The rest is other aromatic white grapes suited to Piedmont.",
+    "Asti is sparkling, with fine, persistent foam. Its colour runs from pale straw to soft gold and its aroma is delicate. It ranges from pas dosé, the driest, to sweet. Plain Asti gets its bubbles in a pressure tank, over at least one month including time in bottle. Asti metodo classico ferments in the bottle and stays at least nine months on the lees before disgorging.",
+    "Asti rosé blends 70% to 90% Moscato bianco with 10% to 30% Brachetto. Its colour is a soft, bright pink. The bottle-fermented version runs from pink to light garnet.",
+    "Moscato d'Asti is sweet and aromatic, with a fragrant Moscato smell. It is sometimes lightly fizzy, with pressure of at most 2.5 bar.",
+    "For the late-harvest Moscato d'Asti, grapes are picked late and may then be dried indoors. The wine is golden. It smells of dried grapes with spicy notes, and its Moscato flavour recalls honeycomb. Enrichment is banned, and it ages at least a year.",
+    "Different kinds of ground clearly mark the aromas of the grapes and of the wines. In the west, around Santo Stefano Belbo and Mango, the aromas are very intense and broad. The body is medium and the wine very fine. From Canelli eastward the wines have a fuller body and great balance. Further east, from Nizza Monferrato to Acqui Terme, they are vigorous and rich, with body and fat. In the far east, from Cassine and Strevi to Acqui Terme, the aroma is very fine and intense."
+   ],
+   "cite": [
+    "asti-disc:p2",
+    "asti-disc:p4",
+    "asti-disc:p6",
+    "asti-disc:p7",
+    "asti-disc:p8",
+    "asti-disc:p9",
+    "asti-disc:p11"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Metodo Martinotti",
+    "text": "Asti and Asti rosé made sparkling in a pressure tank may carry this phrase on the label."
+   },
+   {
+    "term": "Sboccatura",
+    "text": "On Asti metodo classico, rosé too, the disgorging date may be shown if it is true and can be documented."
+   },
+   {
+    "term": "Annata",
+    "text": "The vintage year must be shown on every wine of the denomination except the sparkling ones."
+   },
+   {
+    "term": "Santa Vittoria d'Alba",
+    "text": "A subzone for grapes from the commune of Santa Vittoria d'Alba, with yields of at most 9.5 tonnes a hectare."
+   },
+   {
+    "term": "Strevi",
+    "text": "A subzone for nine communes in the province of Alessandria, with yields of at most 9.5 tonnes a hectare."
+   }
+  ],
+  "cite": [
+   "asti-disc:p2",
+   "asti-disc:p9",
+   "asti-disc:p12",
+   "asti-disc:p13",
+   "asti-disc:p16",
+   "asti-disc:p17"
+  ]
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "id": "trentino",
+ "title": "Why Trentino tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Trentino is mostly mountainous or hilly, and its vines grow from 70 to 600/700 m. A daily valley breeze from Lake Garda, the Òra, softens part of it.",
+  "cite": [
+   "trentino-disc:p16"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valleys",
+   "beat": "place",
+   "title": "Vines in the mountain valleys of Trento",
+   "paras": [
+    "The vineyards cover about 7,500 hectares in 72 wine-growing municipalities of the province of Trento. Many lie along the Valle dell'Adige and the Valle di Cembra. Others are in Vallagarina and the Valle del Sarca. Valsugana and the Valli Giudicarie complete the six valley areas.",
+    "The area is mostly mountainous or hilly. Only about 10% of it is flat valley floor, and 70% of the province lies above 1,000 m. The vines grow between 70 and 600/700 m above sea level."
+   ],
+   "cite": [
+    "trentino-disc:p16"
+   ],
+   "fly": [
+    {
+     "label": "The Adige valley at Trento",
+     "point": [
+      11.12,
+      46.07
+     ],
+     "zoom": 9.5,
+     "caption": "The Valle dell'Adige is one of the six valley areas that make up the Trentino vineyard.",
+     "cite": [
+      "trentino-disc:p16"
+     ]
+    },
+    {
+     "label": "Valsugana",
+     "point": [
+      11.46,
+      46.05
+     ],
+     "zoom": 9.5,
+     "caption": "Valsugana is another of the valleys where Trentino's vines grow.",
+     "cite": [
+      "trentino-disc:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Fairly snowy winters and a lake breeze",
+   "paras": [
+    "Where the vines grow, winters are relatively cold and fairly snowy. Summers are hot, often muggy by day. From December to February temperatures usually fall below zero, with snow that can be frequent.",
+    "Around the Alto Garda and the lower Valle del Sarca the climate is milder and sub-Mediterranean, because of Lake Garda. It is the largest lake in Italy, at 370 km². Part of Trentino also gets the softening effect of the Òra. This valley breeze blows from the lake every day of the year, from midday to sunset.",
+    "In the vine-growing areas yearly mean temperatures run between 11 and 13 °C. In the sub-Mediterranean area rain averages 900-1,000 mm. Rain falls mostly in spring and autumn. Rainfall varies with altitude, at times a lot."
+   ],
+   "cite": [
+    "trentino-disc:p16",
+    "trentino-disc:p17"
+   ],
+   "fly": [
+    {
+     "label": "Riva del Garda, top of the lake",
+     "point": [
+      10.84,
+      45.89
+     ],
+     "zoom": 10,
+     "caption": "Lake Garda, Italy's largest lake at 370 km², gives the Alto Garda a milder climate.",
+     "cite": [
+      "trentino-disc:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Mostly limestone debris, with some porphyry and basalt",
+   "paras": [
+    "On the foothill slopes the soils are mostly limestone debris, generally very stony. They drain and breathe well. They usually sit on limestone debris in the middle and upper parts of alluvial fans.",
+    "Lower on the slopes or in basins the soils are often less stony. In some flat areas, soils built up from colluvium are mixed in. Others lie on glacial moraine deposits or on river gravels.",
+    "Some ground is different. The Valle di Cembra has a porphyry base. In central Vallagarina a band of basalt runs through Isera, Mori and Brentonico. Valsugana has a mica-schist base."
+   ],
+   "cite": [
+    "trentino-disc:p16"
+   ],
+   "fly": [
+    {
+     "label": "Valle di Cembra, porphyry",
+     "point": [
+      11.21,
+      46.17
+     ],
+     "zoom": 10,
+     "caption": "The Valle di Cembra stands on a porphyry base.",
+     "cite": [
+      "trentino-disc:p16"
+     ]
+    },
+    {
+     "label": "Isera and the basalt band",
+     "point": [
+      11.0,
+      45.87
+     ],
+     "zoom": 10,
+     "caption": "A band of basalt runs through Isera, Mori and Brentonico in central Vallagarina.",
+     "cite": [
+      "trentino-disc:p16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Mostly one grape per bottle",
+   "paras": [
+    "Most Trentino wines are made from a single grape and carry its name. A bottle named for a grape holds at least 85% of it. The red blend, called bordolese after the Bordeaux style, is an exception. So are the white blend and the rosé.",
+    "A wine can also name two grapes. It must come wholly from those two, and the smaller share is at least 25%.",
+    "Native or long-grown varieties include Lagrein, Marzemino, Moscato giallo, Moscato rosa, Müller Thurgau, Nosiola, Rebo and Traminer aromatico. International ones include the Cabernets, Chardonnay, Merlot, Pinot bianco, Pinot grigio, Pinot nero, Riesling and Sauvignon.",
+    "Trentino bianco is at least 80% Chardonnay and/or Pinot bianco. Trentino rosso blends Merlot with Cabernet franc, Cabernet Sauvignon or Carmenère, alone or together. The rosé, called kretzer or rosato, blends at least two of Enantio, Schiava, Teroldego and Lagrein, none above 70%.",
+    "Trentino bianco is straw yellow, dry and full. Nosiola is dry and savoury, with a slightly bitter edge. Pinot grigio can be straw yellow or copper. Trentino rosso is deep ruby and dry, full and slightly tannic. The rosé is fresh and soft.",
+    "Moscato giallo smells aromatic and is sometimes sweet. Moscato rosa is sweet and full, with a spiced nose, and has at least 15.00% vol. Both Moscatos can also be made as fortified wines, called liquoroso.",
+    "Many whites and reds can be called riserva. Their grapes must reach 0.5% more natural alcohol than the usual minimum. The wine then ages at least one year for whites and two years for reds, counted from 1 November of the harvest year.",
+    "Vino Santo is the traditional dried-grape wine, at least 85% Nosiola. The grapes dry on racks, called arele, and are pressed no earlier than 1 February of the year after harvest. In some years the province can bring that date forward. The dried grapes must give at least 16% potential alcohol. The wine goes on sale from 1 November of the third year after the harvest.",
+    "Vino Santo grapes come only from nine named municipalities, Arco and Riva del Garda among them.",
+    "Wines can also carry the name Trentino Superiore if they meet its own separate rules. Under that name, wines labelled vendemmia tardiva come from grapes left to dry on the vine for a longer or shorter time.",
+    "Five subzones, Sorni and Isera among them, have rules of their own."
+   ],
+   "cite": [
+    "trentino-disc:p2",
+    "trentino-disc:p3",
+    "trentino-disc:p4",
+    "trentino-disc:p5",
+    "trentino-disc:p7",
+    "trentino-disc:p8",
+    "trentino-disc:p9",
+    "trentino-disc:p10",
+    "trentino-disc:p17",
+    "trentino-disc:p18",
+    "trentino-disc:p19"
+   ],
+   "fly": [
+    {
+     "label": "Ledro, the area's oldest grape seeds",
+     "point": [
+      10.75,
+      45.87
+     ],
+     "zoom": 10,
+     "caption": "Grape seeds from the pile-dwelling settlement at Ledro date from the early Bronze Age, 1800-1600 BC.",
+     "cite": [
+      "trentino-disc:p17"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "A vineyard name that must be followed by the place name or traditional name, with the wine made and kept in separate vessels and the name on the regional list.",
+    "cite": [
+     "trentino-disc:p15"
+    ]
+   },
+   {
+    "term": "Dunkel",
+    "text": "Another word for the ruby type of Lagrein, as opposed to the rosé type, which can be called kretzer.",
+    "cite": [
+     "trentino-disc:p7"
+    ]
+   },
+   {
+    "term": "Superiore",
+    "text": "Added to Trentino only for wines that meet the separate Trentino Superiore rules.",
+    "cite": [
+     "trentino-disc:p2",
+     "trentino-disc:p19"
+    ]
+   },
+   {
+    "term": "Annata",
+    "text": "The harvest year, which every Trentino wine must show on the label.",
+    "cite": [
+     "trentino-disc:p15"
+    ]
+   }
+  ],
+  "cite": [
+   "trentino-disc:p2",
+   "trentino-disc:p7",
+   "trentino-disc:p15",
+   "trentino-disc:p19"
+  ]
+ }
+}

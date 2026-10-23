@@ -1,0 +1,113 @@
+{
+ "id": "barbera-d-asti",
+ "title": "Why Barbera d'Asti tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "These hills were raised from an old sea floor, and their white marls still hold fossil shells. The white lands give Barbera with body and colour that lasts, while the Astian sands give a red with red-fruit scents that matures faster.",
+  "cite": [
+   "barbera-d-asti-disc:p7",
+   "barbera-d-asti-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Low hills around Asti",
+   "paras": [
+    "The area takes in the province of Asti and part of the province of Alessandria. This is a system of low hills, mostly between 150 and 400 m. Vineyards may not go above 650 m.",
+    "Barbera needs a lot of sun, so it usually sits on the best-exposed slopes, facing from south-east to west. Valley floors are excluded. So is damp ground, along with spots that get too little sun.",
+    "Barbera has been grown here for a very long time. An ampelography of 1873 called it very well known and native to the Asti area and the lower Monferrato."
+   ],
+   "cite": [
+    "barbera-d-asti-disc:p3",
+    "barbera-d-asti-disc:p7",
+    "barbera-d-asti-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The hills of Asti",
+     "point": [
+      8.21,
+      44.9
+     ],
+     "zoom": 9.5,
+     "caption": "Low hills, mostly between 150 and 400 m, across the province of Asti.",
+     "cite": [
+      "barbera-d-asti-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Temperate to warm, with little wind",
+   "paras": [
+    "The climate is temperate to warm temperate, at about 1800 degree days. There is little wind, and rainfall averages around 700 mm a year.",
+    "The hilly ground and slopes facing south-east to south-west help make the setting airy and bright, with no standing water."
+   ],
+   "cite": [
+    "barbera-d-asti-disc:p7",
+    "barbera-d-asti-disc:p8"
+   ]
+  },
+  {
+   "id": "seabed",
+   "beat": "ground",
+   "title": "An old sea floor",
+   "paras": [
+    "More than 2 million years ago the sea left what is now the Po plain. Very strong erosion then shaped the hills. The area sits at the centre of the Piedmont Tertiary basin, a system of hills raised from the sea floor.",
+    "The oldest ground lies to the north and south. It is sandy and limy marl from the Miocene, the so-called 'terre bianche', or white lands. Fossil shells are easy to find there.",
+    "The youngest ground is the Pliocene 'sabbie astiane', the Astian sands, on both sides of the Tanaro. They too were laid down in the sea.",
+    "The soils are mostly calcareous, with a lot of calcium carbonate, and poor in organic matter. They are often dry in summer, because the slope of the hills cannot hold water.",
+    "The white lands are mostly silt and clay, rich in calcium carbonate. They give full-bodied wines, rich in colour, that last a long time. The Astian sands give red wines with intense, fine scents of red fruit. These wines have low acidity and mature faster."
+   ],
+   "cite": [
+    "barbera-d-asti-disc:p7",
+    "barbera-d-asti-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Tanaro and the Astian sands",
+     "point": [
+      8.2,
+      44.885
+     ],
+     "zoom": 10,
+     "caption": "The Astian sands lie on both sides of the river Tanaro and give red wines with red-fruit scents and low acidity.",
+     "cite": [
+      "barbera-d-asti-disc:p7",
+      "barbera-d-asti-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Barbera, red and dry",
+   "paras": [
+    "Barbera d'Asti is only ever a red wine, dry and still. Barbera must make up at least 90% of the vineyard. Other non-aromatic black grapes suited to Piedmont may fill the remaining 10% at most.",
+    "The wine is ruby red, turning garnet with age. The aroma is intense and turns ethereal as it ages. It is full-bodied and becomes more harmonious with proper ageing. The natural setting and the people who farm it give wines of 13% alcohol on average. They also give a fitting acid backbone. The polyphenol makeup is very good.",
+    "Plain Barbera d'Asti ages at least 4 months from 1 November of the harvest year. It needs 12% minimum alcohol.",
+    "Barbera's versatility, matched with this land, has allowed wines made for ageing. Thanks to the traditional large cask, and more recently the barrique, these reds can carry the word Superiore. It needs at least 14 months of ageing, with at least 6 in wood, and 12.5% minimum alcohol. These wines have more weight and complexity, and they last a very long time.",
+    "A Superiore may also name one of two subzones on the label. Tinella and Colli Astiani (or Astiano) each need 24 months of ageing before release, with at least 6 months in wood and at least 6 in bottle. Their yield is capped at 7 t/ha, and the wine needs 13% minimum alcohol.",
+    "The yield is capped at 9 t/ha, or 8 t/ha for a named single vineyard with the word 'vigna'. That wine needs 12.5% minimum natural alcohol, and it may only be closed with a cork."
+   ],
+   "cite": [
+    "barbera-d-asti-disc:p1",
+    "barbera-d-asti-disc:p2",
+    "barbera-d-asti-disc:p3",
+    "barbera-d-asti-disc:p5",
+    "barbera-d-asti-disc:p6",
+    "barbera-d-asti-disc:p7",
+    "barbera-d-asti-disc:p8",
+    "barbera-d-asti-disc:p10",
+    "barbera-d-asti-disc:p11",
+    "barbera-d-asti-disc:p12",
+    "barbera-d-asti-disc:p13"
+   ]
+  }
+ ]
+}

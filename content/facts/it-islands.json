@@ -1,0 +1,274 @@
+{
+ "region": "it-islands",
+ "sheets": [
+  {
+   "id": "etna",
+   "why": {
+    "text": "Loose volcanic soils on Etna's slopes at 300 to 1,100 m, with big day-night temperature swings and much more rain than the rest of Sicily.",
+    "cite": [
+     "etna-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Carricante"
+     },
+     {
+      "local": "Nerello Mascalese"
+     },
+     {
+      "local": "Nerello Mantellato (Nerello Cappuccio)"
+     }
+    ],
+    "cite": [
+     "etna-disc:p2"
+    ],
+    "others": [
+     "Catarratto bianco comune",
+     "Catarratto bianco lucido"
+    ],
+    "othersCite": [
+     "etna-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Dry white, red and rosato, plus white and rosé sparkling wine; the red also comes as riserva.",
+    "cite": [
+     "etna-disc:p1",
+     "etna-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Temperate Mediterranean; wettest in autumn and winter, driest in June and July. Rain averages about 600 mm on the south-west side and up to 1,200 mm on the north and north-east.",
+    "cite": [
+     "etna-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Volcanic ash, sand, lapilli and pumice; 80% of vineyards sit on volcanic soils that are loose, stony and well drained. The other 20% are alluvial soils and vertisols.",
+    "cite": [
+     "etna-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vines mostly grow between 300 and 900 m, and reach up to 1,100 m.",
+    "cite": [
+     "etna-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "White: straw yellow, delicate, dry and fresh. Red: ruby, garnet with age, intense, dry, warm and full. Rosato: dry, more or less intense pink. Sparkling: fine, lasting bubbles, sometimes citrus or floral notes.",
+    "cite": [
+     "etna-disc:p4",
+     "etna-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Etna bianco superiore",
+      "text": "White from Milo grapes only, at least 80% Carricante."
+     },
+     {
+      "name": "Etna rosso riserva",
+      "text": "Red aged at least four years, 12 months in wood, inside the zone."
+     },
+     {
+      "name": "Etna spumante",
+      "text": "Bottle-fermented only, at least 18 months on the lees; white or rosé."
+     }
+    ],
+    "cite": [
+     "etna-disc:p1",
+     "etna-disc:p2",
+     "etna-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cerasuolo-di-vittoria",
+   "why": {
+    "text": "Mostly limestone with terra rossa in a hot, arid Mediterranean climate with strong summer day-night swings, and a blend unique here: Nero d'Avola with Frappato.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p1",
+     "cerasuolo-di-vittoria-disc:p7",
+     "cerasuolo-di-vittoria-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nero d'Avola"
+     },
+     {
+      "local": "Frappato"
+     }
+    ],
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p1",
+     "cerasuolo-di-vittoria-disc:p8"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still reds only: Cerasuolo di Vittoria and the Classico, released later.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p5",
+     "cerasuolo-di-vittoria-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Hot, arid Mediterranean climate with little summer rain. Mean annual temperature runs from 15.4 °C (high hills) to 19.6 °C (coast). July-August day-night swing is 9 to 14 °C. Annual rain is 385 to 499 mm.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone: Miocene calcarenites under loose Pleistocene soils, with some sandy and clay-sandy areas. About half is leached brown soil with terra rossa.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Coast 0 to 200 m, mid hills 200 to 350 m, high hills above 350 m.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p6",
+     "cerasuolo-di-vittoria-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Cerasuolo di Vittoria: cherry red to violet, floral to fruity, dry, full, soft. Classico: cherry to garnet, cherry notes, with age dried plum, chocolate, leather, tobacco.",
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cerasuolo di Vittoria",
+      "text": "50 to 70% Nero d'Avola, 30 to 50% Frappato; sold from 1 June after harvest."
+     },
+     {
+      "name": "Cerasuolo di Vittoria Classico",
+      "text": "Same blend; sold only from 31 March of the second year after harvest."
+     }
+    ],
+    "cite": [
+     "cerasuolo-di-vittoria-disc:p1",
+     "cerasuolo-di-vittoria-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vermentino-di-gallura",
+   "why": {
+    "text": "Sandy granite soils, mild winters, constant sun and salty wind in northern Sardinia give aromatic, mineral Vermentino with good natural acidity.",
+    "cite": [
+     "vermentino-di-gallura-disc:p5",
+     "vermentino-di-gallura-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Vermentino"
+     }
+    ],
+    "cite": [
+     "vermentino-di-gallura-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "vermentino-di-gallura-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry to off-dry still white, plus frizzante, spumante, passito and late-harvest versions.",
+    "cite": [
+     "vermentino-di-gallura-disc:p1",
+     "vermentino-di-gallura-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Warm temperate with mild winters. Rain falls in autumn and winter, under 700 mm a year, and a constant wind blows, particularly salty near the sea.",
+    "cite": [
+     "vermentino-di-gallura-disc:p5",
+     "vermentino-di-gallura-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mainly granite, covered by coarse sand mixed at times with clay. Sandy, stony soils are generally best, and the soils are high in potassium.",
+    "cite": [
+     "vermentino-di-gallura-disc:p5",
+     "vermentino-di-gallura-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must stand no higher than 500 m above sea level.",
+    "cite": [
+     "vermentino-di-gallura-disc:p2",
+     "vermentino-di-gallura-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Pale straw with greenish glints, intense pleasant aroma, dry to off-dry, sometimes slightly bitter finish. Wood-aged wines are more intense, with light vanilla.",
+    "cite": [
+     "vermentino-di-gallura-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Lower yield of 9 t/ha, at least 13% alcohol."
+     },
+     {
+      "name": "Passito",
+      "text": "Grapes dried to 15% potential alcohol; golden, full and aromatic; sold from 1 May."
+     },
+     {
+      "name": "Vendemmia tardiva",
+      "text": "Late harvest, at least 13% alcohol, sold from 15 January."
+     },
+     {
+      "name": "Spumante",
+      "text": "Metodo classico needs at least nine months on lees; first disgorgement date on label."
+     }
+    ],
+    "cite": [
+     "vermentino-di-gallura-disc:p2",
+     "vermentino-di-gallura-disc:p3",
+     "vermentino-di-gallura-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

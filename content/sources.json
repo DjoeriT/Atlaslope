@@ -2398,5 +2398,527 @@
   "title": "Pays d'Oc PGI-FR-A1367: EU single document / technical file (PGI, French, eAmbrosia attachment 11143)",
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11143",
   "date": "2026-05-08"
+ },
+ "barolo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Barolo PDO-IT-A1389: disciplinare di produzione (MASAF, Italian, file \"Barolo\" in the DOP archive)"
+ },
+ "chianti-classico-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Chianti Classico PDO-IT-A1235: disciplinare di produzione (MASAF, Italian, file \"Chianti Classico\" in the DOP archive)"
+ },
+ "barbaresco-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Barbaresco PDO-IT-A1399: disciplinare di produzione (MASAF, Italian, file \"Barbaresco\" in the DOP archive)"
+ },
+ "barbera-d-asti-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Barbera d'Asti PDO-IT-A1398: disciplinare di produzione (MASAF, Italian, file \"Barbera d'Asti\" in the DOP archive)"
+ },
+ "dolcetto-d-alba-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Dolcetto d'Alba PDO-IT-A1142: disciplinare di produzione (MASAF, Italian, file \"Dolcetto d'Alba\" in the DOP archive)"
+ },
+ "gavi-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Gavi PDO-IT-A1310: disciplinare di produzione (MASAF, Italian, file \"Gavi o Cortese di Gavi\" in the DOP archive)"
+ },
+ "asti-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Asti PDO-IT-A1396: disciplinare di produzione (MASAF, Italian, file \"Asti\" in the DOP archive)"
+ },
+ "alta-langa-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Alta Langa PDO-IT-A1252: disciplinare di produzione (MASAF, Italian, file \"Alta Langa\" in the DOP archive)"
+ },
+ "barbera-del-monferrato-superiore-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Barbera del Monferrato Superiore PDO-IT-A1397: disciplinare di produzione (MASAF, Italian, file \"Barbera del Monferrato Superiore\" in the DOP archive)"
+ },
+ "brachetto-dacqui-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Brachetto d'Acqui PDO-IT-A1382: disciplinare di produzione (MASAF, Italian, file \"Brachetto d'Acqui o Acqui\" in the DOP archive)"
+ },
+ "canelli-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Canelli PDO-IT-02810: disciplinare di produzione (MASAF, Italian, file \"Canelli\" in the DOP archive)"
+ },
+ "dogliani-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Dogliani PDO-IT-A1330: disciplinare di produzione (MASAF, Italian, file \"Dogliani\" in the DOP archive)"
+ },
+ "dolcetto-di-diano-dalba-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Dolcetto di Diano d'Alba PDO-IT-A1324: disciplinare di produzione (MASAF, Italian, file \"Dolcetto di Diano d'Alba o Diano d'Alba\" in the DOP archive)"
+ },
+ "dolcetto-di-ovada-superiore-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Dolcetto di Ovada Superiore PDO-IT-A1319: disciplinare di produzione (MASAF, Italian, file \"Dolcetto di Ovada Superiore\" in the DOP archive)"
+ },
+ "erbaluce-di-caluso-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Erbaluce di Caluso PDO-IT-A1315: disciplinare di produzione (MASAF, Italian, file \"Erbaluce di Caluso o Caluso\" in the DOP archive)"
+ },
+ "gattinara-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Gattinara PDO-IT-A1311: disciplinare di produzione (MASAF, Italian, file \"Gattinara\" in the DOP archive)"
+ },
+ "ghemme-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Ghemme PDO-IT-A1263: disciplinare di produzione (MASAF, Italian, file \"Ghemme\" in the DOP archive)"
+ },
+ "nizza-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Nizza PDO-IT-01896: disciplinare di produzione (MASAF, Italian, file \"Nizza\" in the DOP archive)"
+ },
+ "roero-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Roero PDO-IT-A1261: disciplinare di produzione (MASAF, Italian, file \"Roero\" in the DOP archive)"
+ },
+ "ruche-di-castagnole-monferrato-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Ruchè di Castagnole Monferrato PDO-IT-A1258: disciplinare di produzione (MASAF, Italian, file \"Ruchè di Castagnole MonferratoDOCG disciplinare di produzione\" in the DOP archive)"
+ },
+ "terre-alfieri-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Terre Alfieri PDO-IT-A1241: disciplinare di produzione (MASAF, Italian, file \"Terre Alfieri\" in the DOP archive)"
+ },
+ "chianti-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Chianti PDO-IT-A1228: disciplinare di produzione (MASAF, Italian, file \"Chianti\" in the DOP archive)"
+ },
+ "bolgheri-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Bolgheri PDO-IT-A1348: disciplinare di produzione (MASAF, Italian, file \"Bolgheri\" in the DOP archive)"
+ },
+ "brunello-di-montalcino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Brunello di Montalcino PDO-IT-A1199: disciplinare di produzione (MASAF, Italian, file \"Brunello di Montalcino\" in the DOP archive)"
+ },
+ "vino-nobile-di-montepulciano-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Vino Nobile di Montepulciano PDO-IT-A1308: disciplinare di produzione (MASAF, Italian, file \"Vino Nobile di Montepulciano\" in the DOP archive)"
+ },
+ "carmignano-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Carmignano PDO-IT-A1220: disciplinare di produzione (MASAF, Italian, file \"Carmignano\" in the DOP archive)"
+ },
+ "elba-aleatico-passito-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Elba Aleatico Passito PDO-IT-A1237: disciplinare di produzione (MASAF, Italian, file \"Elba Aleatico Passito o Aleatico Passito dell'Elba\" in the DOP archive)"
+ },
+ "montecucco-sangiovese-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Montecucco Sangiovese PDO-IT-A1246: disciplinare di produzione (MASAF, Italian, file \"Montecucco Sangiovese\" in the DOP archive)"
+ },
+ "morellino-di-scansano-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Morellino di Scansano PDO-IT-A1260: disciplinare di produzione (MASAF, Italian, file \"Morellino di Scansano\" in the DOP archive)"
+ },
+ "suvereto-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Suvereto PDO-IT-A1266: disciplinare di produzione (MASAF, Italian, file \"Suvereto\" in the DOP archive)"
+ },
+ "val-di-cornia-rosso-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Val di Cornia Rosso PDO-IT-A1262: disciplinare di produzione (MASAF, Italian, file \"Val di Cornia Rosso o Rosso della Val di Cornia\" in the DOP archive)"
+ },
+ "vernaccia-di-san-gimignano-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Vernaccia di San Gimignano PDO-IT-A1292: disciplinare di produzione (MASAF, Italian, file \"Vernaccia di San Gimignano\" in the DOP archive)"
+ },
+ "valpolicella-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Valpolicella PDO-IT-A0442: disciplinare di produzione (MASAF, Italian, file \"Valpolicella\" in the DOP archive)"
+ },
+ "soave-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Soave PDO-IT-A0472: disciplinare di produzione (MASAF, Italian, file \"Soave\" in the DOP archive)"
+ },
+ "prosecco-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Prosecco PDO-IT-A0516: disciplinare di produzione (MASAF, Italian, file \"Prosecco\" in the DOP archive)"
+ },
+ "conegliano-valdobbiadene-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Conegliano Valdobbiadene Prosecco PDO-IT-A0515: disciplinare di produzione (MASAF, Italian, file \"Conegliano Valdobbiadene - Prosecco\" in the DOP archive)"
+ },
+ "asolo-prosecco-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Asolo Prosecco PDO-IT-A0514: disciplinare di produzione (MASAF, Italian, file \"Asolo Prosecco o Asolo\" in the DOP archive)"
+ },
+ "bagnoli-friularo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Bagnoli Friularo PDO-IT-A0467: disciplinare di produzione (MASAF, Italian, file \"Bagnoli Friularo o Friularo di Bagnoli\" in the DOP archive)"
+ },
+ "bardolino-superiore-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Bardolino Superiore PDO-IT-A0437: disciplinare di produzione (MASAF, Italian, file \"Bardolino Superiore\" in the DOP archive)"
+ },
+ "colli-di-conegliano-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colli di Conegliano PDO-IT-A0453: disciplinare di produzione (MASAF, Italian, file \"Colli di Conegliano\" in the DOP archive)"
+ },
+ "colli-euganei-fior-darancio-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colli Euganei Fior d'Arancio PDO-IT-A0455: disciplinare di produzione (MASAF, Italian, file \"Colli Euganei Fior d'Arancio o Fior d'Arancio Colli Euganei\" in the DOP archive)"
+ },
+ "lison-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Lison PDO-IT-A0457: disciplinare di produzione (MASAF, Italian, file \"Lison\" in the DOP archive)"
+ },
+ "montello-rosso-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Montello Rosso PDO-IT-A0461: disciplinare di produzione (MASAF, Italian, file \"Montello Rosso o Montello\" in the DOP archive)"
+ },
+ "piave-malanotte-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Piave Malanotte PDO-IT-A0463: disciplinare di produzione (MASAF, Italian, file \"Piave Malanotte Malanotte del Piave disciplinare\" in the DOP archive)"
+ },
+ "recioto-di-gambellara-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Recioto di Gambellara PDO-IT-A0470: disciplinare di produzione (MASAF, Italian, file \"Recioto di Gambellara\" in the DOP archive)"
+ },
+ "alto-adige-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Alto Adige PDO-IT-A0293: disciplinare di produzione (MASAF, Italian, file \"Alto Adige o dell'Alto Adige\" in the DOP archive)"
+ },
+ "trentino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Trentino PDO-IT-A0754: disciplinare di produzione (MASAF, Italian, file \"Trentino\" in the DOP archive)"
+ },
+ "collio-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Collio PDO-IT-A0908: disciplinare di produzione (MASAF, Italian, file \"Collio Goriziano o Collio\" in the DOP archive)"
+ },
+ "friuli-colli-orientali-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Friuli Colli Orientali PDO-IT-A0953: disciplinare di produzione (MASAF, Italian, file \"Friuli Colli Orientali\" in the DOP archive)"
+ },
+ "friuli-grave-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Friuli Grave PDO-IT-A0954: disciplinare di produzione (MASAF, Italian, file \"Friuli Grave\" in the DOP archive)"
+ },
+ "colli-orientali-del-friuli-picolit-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colli Orientali del Friuli Picolit PDO-IT-A0938: disciplinare di produzione (MASAF, Italian, file \"Colli Orientali del Friuli Picolit\" in the DOP archive)"
+ },
+ "ramandolo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Ramandolo PDO-IT-A0939: disciplinare di produzione (MASAF, Italian, file \"Ramandolo\" in the DOP archive)"
+ },
+ "rosazzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Rosazzo PDO-IT-A0367: disciplinare di produzione (MASAF, Italian, file \"Rosazzo\" in the DOP archive)"
+ },
+ "franciacorta-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Franciacorta PDO-IT-A1034: disciplinare di produzione (MASAF, Italian, file \"Franciacorta\" in the DOP archive)"
+ },
+ "oltrepo-pavese-metodo-classico-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Oltrepò Pavese metodo classico PDO-IT-A0958: disciplinare di produzione (MASAF, Italian, file \"Oltrepò Pavese metodo classico\" in the DOP archive)"
+ },
+ "scanzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Scanzo PDO-IT-A0949: disciplinare di produzione (MASAF, Italian, file \"Scanzo o Moscato di Scanzo\" in the DOP archive)"
+ },
+ "sforzato-di-valtellina-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Sforzato di Valtellina PDO-IT-A1035: disciplinare di produzione (MASAF, Italian, file \"Sforzato di Valtellina o Sfursat di Valtellina\" in the DOP archive)"
+ },
+ "valtellina-superiore-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Valtellina Superiore PDO-IT-A1036: disciplinare di produzione (MASAF, Italian, file \"Valtellina superiore\" in the DOP archive)"
+ },
+ "colli-bolognesi-pignoletto-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colli Bolognesi Pignoletto PDO-IT-A0284: disciplinare di produzione (MASAF, Italian, file \"Colli Bolognesi Pignoletto\" in the DOP archive)"
+ },
+ "romagna-albana-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Romagna Albana PDO-IT-A0285: disciplinare di produzione (MASAF, Italian, file \"Romagna Albana\" in the DOP archive)"
+ },
+ "verdicchio-dei-castelli-di-jesi-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Verdicchio dei Castelli di Jesi PDO-IT-A0482: disciplinare di produzione (MASAF, Italian, file \"Verdicchio dei Castelli di Jesi\" in the DOP archive)"
+ },
+ "orvieto-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Orvieto PDO-IT-A0846: disciplinare di produzione (MASAF, Italian, file \"Orvieto\" in the DOP archive)"
+ },
+ "frascati-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Frascati PDO-IT-A0750: disciplinare di produzione (MASAF, Italian, file \"Frascati\" in the DOP archive)"
+ },
+ "montepulciano-d-abruzzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Montepulciano d'Abruzzo PDO-IT-A0723: disciplinare di produzione (MASAF, Italian, file \"Montepulciano d'Abruzzo\" in the DOP archive)"
+ },
+ "casauria-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Casauria PDO-IT-02972: disciplinare di produzione (MASAF, Italian, file \"Casauria\" in the DOP archive)"
+ },
+ "cesanese-del-piglio-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Cesanese del Piglio PDO-IT-A0680: disciplinare di produzione (MASAF, Italian, file \"Cesanese del Piglio o Piglio\" in the DOP archive)"
+ },
+ "colline-teramane-montepulciano-dabruzzo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Colline Teramane Montepulciano d'Abruzzo PDO-IT-A0876: disciplinare di produzione (MASAF, Italian, file \"Colline Teramane Montepulciano d'Abruzzo\" in the DOP archive)"
+ },
+ "conero-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Cònero PDO-IT-A0449: disciplinare di produzione (MASAF, Italian, file \"Cònero\" in the DOP archive)"
+ },
+ "montefalco-sagrantino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Montefalco Sagrantino PDO-IT-A0833: disciplinare di produzione (MASAF, Italian, file \"Montefalco Sagrantino\" in the DOP archive)"
+ },
+ "offida-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Offida PDO-IT-A0477: disciplinare di produzione (MASAF, Italian, file \"Offida\" in the DOP archive)"
+ },
+ "terre-tollesi-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Terre Tollesi PDO-IT-A0742: disciplinare di produzione (MASAF, Italian, file \"Terre Tollesi o Tullum\" in the DOP archive)"
+ },
+ "torgiano-rosso-riserva-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Torgiano Rosso Riserva PDO-IT-A0834: disciplinare di produzione (MASAF, Italian, file \"Torgiano Rosso Riserva\" in the DOP archive)"
+ },
+ "verdicchio-di-matelica-riserva-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Verdicchio di Matelica Riserva PDO-IT-A0480: disciplinare di produzione (MASAF, Italian, file \"Verdicchio di Matelica Riserva\" in the DOP archive)"
+ },
+ "vernaccia-di-serrapetrona-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Vernaccia di Serrapetrona PDO-IT-A0445: disciplinare di produzione (MASAF, Italian, file \"Vernaccia di Serrapetrona\" in the DOP archive)"
+ },
+ "taurasi-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Taurasi PDO-IT-A0237: disciplinare di produzione (MASAF, Italian, file \"Taurasi\" in the DOP archive)"
+ },
+ "fiano-di-avellino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Fiano di Avellino PDO-IT-A0232: disciplinare di produzione (MASAF, Italian, file \"Fiano di Avellino\" in the DOP archive)"
+ },
+ "greco-di-tufo-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Greco di Tufo PDO-IT-A0236: disciplinare di produzione (MASAF, Italian, file \"Greco di Tufo\" in the DOP archive)"
+ },
+ "salice-salentino-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Salice Salentino PDO-IT-A0567: disciplinare di produzione (MASAF, Italian, file \"Salice Salentino\" in the DOP archive)"
+ },
+ "aglianico-del-vulture-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Aglianico del Vulture PDO-IT-A0222: disciplinare di produzione (MASAF, Italian, file \"Aglianico del Vulture\" in the DOP archive)"
+ },
+ "aglianico-del-taburno-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Aglianico del Taburno PDO-IT-A0277: disciplinare di produzione (MASAF, Italian, file \"Aglianico del Taburno\" in the DOP archive)"
+ },
+ "castel-del-monte-bombino-nero-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Castel del Monte Bombino Nero PDO-IT-A0537: disciplinare di produzione (MASAF, Italian, file \"Castel del Monte Bombino Nero\" in the DOP archive)"
+ },
+ "castel-del-monte-nero-di-troia-riserva-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Castel del Monte Nero di Troia Riserva PDO-IT-A0538: disciplinare di produzione (MASAF, Italian, file \"Castel del Monte Nero di Troia Riserva\" in the DOP archive)"
+ },
+ "castel-del-monte-rosso-riserva-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Castel del Monte Rosso Riserva PDO-IT-A0539: disciplinare di produzione (MASAF, Italian, file \"Castel del Monte Rosso Riserva\" in the DOP archive)"
+ },
+ "primitivo-di-manduria-dolce-naturale-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Primitivo di Manduria Dolce Naturale PDO-IT-A0535: disciplinare di produzione (MASAF, Italian, file \"Primitivo di Manduria Dolce Naturale\" in the DOP archive)"
+ },
+ "etna-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Etna PDO-IT-A0780: disciplinare di produzione (MASAF, Italian, file \"Etna\" in the DOP archive)"
+ },
+ "cerasuolo-di-vittoria-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Cerasuolo di Vittoria PDO-IT-A0773: disciplinare di produzione (MASAF, Italian, file \"Cerasuolo di Vittoria\" in the DOP archive)"
+ },
+ "vermentino-di-gallura-disc": {
+  "kind": "official",
+  "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
+  "date": "2026-10-22",
+  "title": "Vermentino di Gallura PDO-IT-A0903: disciplinare di produzione (MASAF, Italian, file \"Vermentino di Gallura\" in the DOP archive)"
  }
 }

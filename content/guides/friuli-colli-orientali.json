@@ -1,0 +1,120 @@
+{
+ "id": "friuli-colli-orientali",
+ "title": "Why Friuli Colli Orientali tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Soft marl hills near the Slovenian border are stepped with terraces that generations of growers built. Mountains to the north and the nearby sea help keep the climate fairly mild, and the whites aim to be fine and elegant, fruity and floral.",
+  "cite": [
+   "friuli-colli-orientali-disc:p9",
+   "friuli-colli-orientali-disc:p10",
+   "friuli-colli-orientali-disc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills along the border",
+   "paras": [
+    "The vineyards spread over all or part of 19 municipalities in the central-eastern belt of the province of Udine, close to Slovenia. The land is a varied mix of hills and plains, running from north-west to south-east. It forms wide areas that can enjoy an ideal exposure for vines.",
+    "Cividale del Friuli is called the heart of the Colli Orientali. In Roman times, as Forum Julii, it was the main centre of the area. The finest trace of the later Lombard duchy is the Tempietto Longobardo, from around 760. Over its door runs an elegant spiral vine in stucco, with grapes and leaves."
+   ],
+   "cite": [
+    "friuli-colli-orientali-disc:p9",
+    "friuli-colli-orientali-disc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Cividale del Friuli",
+     "point": [
+      13.4337,
+      46.0935
+     ],
+     "zoom": 11,
+     "caption": "The heart of the Colli Orientali, and the main centre of the area in Roman times.",
+     "cite": [
+      "friuli-colli-orientali-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter from the north, a breath from the sea",
+   "paras": [
+    "The Julian Prealps lie north of the hills and shelter them from cold northern winds. The Friulian plain and the sea, no more than 40 km away in a straight line, help soften the swings in temperature. The climate is fairly mild, with local differences shaped by the lie of the hills.",
+    "The mean annual temperature is about 15 °C. From April to October it runs between 18 and 19 °C, with 1800 to 1900 degree-days.",
+    "Rain is fairly varied, across many microclimates and from year to year. Around Ramandolo, the northernmost part of Friuli's vineyards, the growing season averages 1157 mm. Near Cividale it is about 976 mm, and in the southern municipalities such as San Giovanni al Natisone it is under 900 mm."
+   ],
+   "cite": [
+    "friuli-colli-orientali-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Julian Prealps",
+     "point": [
+      13.3,
+      46.25
+     ],
+     "zoom": 9,
+     "caption": "The mountain ring north of the hills, a shelter from cold northern winds.",
+     "cite": [
+      "friuli-colli-orientali-disc:p10"
+     ]
+    },
+    {
+     "label": "Ramandolo",
+     "point": [
+      13.288,
+      46.219
+     ],
+     "zoom": 11,
+     "caption": "The northernmost vineyard area of Friuli, with the most growing-season rain: 1157 mm on average.",
+     "cite": [
+      "friuli-colli-orientali-disc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ponca",
+   "beat": "ground",
+   "title": "Ponca, the crumbling hill",
+   "paras": [
+    "The ground is the Flysch di Cormòns, layers of marl (limy clay) and sandstone. In Friulian, the region's traditional language, the mix is called \"ponca\". It breaks down quickly in the weather into flaky pieces, which turn yellowish and finally dissolve into clay.",
+    "Marls usually hold 40 to 60% lime and are rich in potassium. Sandstones vary, with silica generally rising from 40 to 70% and lime falling. Marl outweighs sandstone. The marly ground erodes easily, which left soft hills well below 200 m.",
+    "Where marl comes to the surface, across nearly the whole area, the ground is very impermeable. Rain runs off the surface and cuts V-shaped valleys. Growers had to terrace the slopes to stop the hills wearing away and the vines being undermined. Vineyards sit between 100 and 400 m, mostly on these terraces.",
+    "Only vineyards on well-placed, well-exposed sites of Eocene origin qualify, or at the margins on mixed ground with coarse elements. Damp, poorly sunlit valley floors are excluded."
+   ],
+   "cite": [
+    "friuli-colli-orientali-disc:p4",
+    "friuli-colli-orientali-disc:p9",
+    "friuli-colli-orientali-disc:p10"
+   ]
+  },
+  {
+   "id": "whites-reds",
+   "beat": "rules",
+   "title": "Ten whites, ten reds",
+   "paras": [
+    "The 20 allowed varieties split evenly, ten white and ten red, and nine of the 20 are native. The whites include Friulano and Ribolla gialla, next to Sauvignon and Chardonnay. The reds include Merlot and the Cabernets, next to Refosco and Schioppettino. Pignolo and Tazzelenghe are red too.",
+    "A wine named after a grape needs at least 85% of it. Up to 15% can come from other grapes of the same colour approved for the province of Udine. Rosso blends one or more of the red varieties. Bianco blends the whites, Picolit included and Traminer aromatico left out. Six subzones have rules of their own, among them Cialla.",
+    "Ribolla gialla is dry and lively, with a fresh taste. Friulano is dry and harmonious, with a slightly bitter edge. Cabernet is dry with body, and slightly grassy.",
+    "Dolce is the sweet style, made from white grapes with Picolit allowed. It needs at least 12% alcohol and may carry a hint of wood. Verduzzo friulano can be dry or off-dry to sweet, with body and a light tannic grip.",
+    "Pinot grigio ramato is a copper-pink Pinot grigio, made with a light skin contact before fermentation. Riserva means two years of ageing from 1 November of the harvest year, and four for Pignolo. Yields are capped at 11 tonnes per hectare."
+   ],
+   "cite": [
+    "friuli-colli-orientali-disc:p2",
+    "friuli-colli-orientali-disc:p3",
+    "friuli-colli-orientali-disc:p4",
+    "friuli-colli-orientali-disc:p5",
+    "friuli-colli-orientali-disc:p6",
+    "friuli-colli-orientali-disc:p7",
+    "friuli-colli-orientali-disc:p9",
+    "friuli-colli-orientali-disc:p11",
+    "friuli-colli-orientali-disc:p12"
+   ]
+  }
+ ]
+}

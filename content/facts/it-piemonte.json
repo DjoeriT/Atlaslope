@@ -1,0 +1,1736 @@
+{
+ "region": "it-piemonte",
+ "sheets": [
+  {
+   "id": "barolo",
+   "why": {
+    "text": "Calcareous Langhe marl and sand hills, formed from a retreating sea, suit Nebbiolo and give harmonious, structured, long-lived wines.",
+    "cite": [
+     "barolo-disc:p8",
+     "barolo-disc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nebbiolo"
+     }
+    ],
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p9"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry red Barolo and Barolo Riserva, with a flavoured Barolo chinato also allowed.",
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p6",
+     "barolo-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay and limestone, or combinations; Langhe soils are mostly calcareous marl and tufa, with gypsum and minerals in places.",
+    "cite": [
+     "barolo-disc:p3",
+     "barolo-disc:p8",
+     "barolo-disc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must be on hills between 170 and 540 m above sea level; valley floors and flat, damp land are excluded.",
+    "cite": [
+     "barolo-disc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Garnet red, intense and characteristic aroma, dry, full and harmonious. The wines have a complex, enveloping bouquet and age without losing character.",
+    "cite": [
+     "barolo-disc:p6",
+     "barolo-disc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Barolo",
+      "text": "Aged 38 months or more, 18 in wood; sold from 1 January, year four."
+     },
+     {
+      "name": "Barolo Riserva",
+      "text": "Aged 62 months or more, 18 in wood; sold from 1 January, year six."
+     },
+     {
+      "name": "Menzione geografica aggiuntiva",
+      "text": "Official added place name (like Cannubi or Bussia) printed under Barolo on the label."
+     },
+     {
+      "name": "Barolo chinato",
+      "text": "Aromatised wine made on a Barolo base, with a quinine (china) flavouring."
+     }
+    ],
+    "cite": [
+     "barolo-disc:p1",
+     "barolo-disc:p5",
+     "barolo-disc:p6",
+     "barolo-disc:p7",
+     "barolo-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "barbaresco",
+   "why": {
+    "text": "Nebbiolo on rather low, rounded hills of blue-grey marl and sand above the Tanaro; the wines are dry, full and fittingly tannic.",
+    "cite": [
+     "barbaresco-disc:p2",
+     "barbaresco-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nebbiolo"
+     }
+    ],
+    "cite": [
+     "barbaresco-disc:p1",
+     "barbaresco-disc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry red wine, as Barbaresco and Barbaresco Riserva, 100% Nebbiolo.",
+    "cite": [
+     "barbaresco-disc:p1",
+     "barbaresco-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clayey and limy soils. The hills are Tortonian layered marl and sand, blue-grey, rather low and rounded; white tufaceous marl marks the area.",
+    "cite": [
+     "barbaresco-disc:p2",
+     "barbaresco-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards on hills, no higher than 550 m; valley floors, damp, flat or poorly sunlit land and north-facing slopes are excluded.",
+    "cite": [
+     "barbaresco-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Garnet red with orange reflections, intense ethereal aroma, dry, full, delicate and velvety, fittingly tannic. Barbaresco and Neive give structure and power, also softness and finesse; Treiso gives finesse and elegance.",
+    "cite": [
+     "barbaresco-disc:p5",
+     "barbaresco-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Barbaresco",
+      "text": "Minimum 26 months ageing, 9 in wood; released 1 January of third year after harvest."
+     },
+     {
+      "name": "Riserva",
+      "text": "Minimum 50 months ageing, 9 in wood; released 1 January of fifth year after harvest."
+     },
+     {
+      "name": "Menzione geografica aggiuntiva",
+      "text": "Names one of 66 listed vineyard areas on the label, under the name Barbaresco."
+     },
+     {
+      "name": "Vigna",
+      "text": "Vineyard name added to a geographic mention; yield capped at 7.2 t/ha, min. 12.5% alcohol."
+     }
+    ],
+    "cite": [
+     "barbaresco-disc:p3",
+     "barbaresco-disc:p4",
+     "barbaresco-disc:p5",
+     "barbaresco-disc:p6"
+    ],
+    "styles[2]": {
+     "text": "Names one of 66 listed geographic areas, immediately under Barbaresco, no larger."
+    }
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "barbera-d-asti",
+   "why": {
+    "text": "Low, sunny hills of calcareous marl and sand with a warm temperate climate suit Barbera, giving sturdy red wines with good acidity.",
+    "cite": [
+     "barbera-d-asti-disc:p7",
+     "barbera-d-asti-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Barbera"
+     }
+    ],
+    "cite": [
+     "barbera-d-asti-disc:p2"
+    ],
+    "others": [
+     "Other non-aromatic black grapes suited to Piedmont (max 10%)"
+    ],
+    "othersCite": [
+     "barbera-d-asti-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wine only, in a plain version and a longer-aged Superiore.",
+    "cite": [
+     "barbera-d-asti-disc:p1",
+     "barbera-d-asti-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Temperate to warm temperate (about 1800 degree days), little wind, average rainfall around 700 mm a year.",
+    "cite": [
+     "barbera-d-asti-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly calcareous clay, silt and sand: white marls with fossil shells and Astian sands, poor in organic matter, often dry in summer.",
+    "cite": [
+     "barbera-d-asti-disc:p3",
+     "barbera-d-asti-disc:p7",
+     "barbera-d-asti-disc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Hills mostly between 150 and 400 m; vineyards may not go above 650 m.",
+    "cite": [
+     "barbera-d-asti-disc:p3",
+     "barbera-d-asti-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red turning garnet with age, intense aroma turning ethereal, dry, full-bodied and more harmonious with proper ageing. White-marl soils give rich, long-lived wines; sandy soils give fragrant red-fruit wines with low acidity.",
+    "cite": [
+     "barbera-d-asti-disc:p6",
+     "barbera-d-asti-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "At least 14 months ageing, 6 of them in wood; 12.5% minimum alcohol."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named single-vineyard wine, max 8 t/ha, 12.5% minimum natural alcohol, cork closure only."
+     },
+     {
+      "name": "Tinella",
+      "text": "Superiore from Tinella communes; 24 months ageing, at least 6 in wood, 6 in bottle."
+     },
+     {
+      "name": "Colli Astiani / Astiano",
+      "text": "Superiore from Colli Astiani; 24 months ageing, at least 6 in wood, 6 in bottle."
+     }
+    ],
+    "cite": [
+     "barbera-d-asti-disc:p1",
+     "barbera-d-asti-disc:p3",
+     "barbera-d-asti-disc:p6",
+     "barbera-d-asti-disc:p7",
+     "barbera-d-asti-disc:p11",
+     "barbera-d-asti-disc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "dolcetto-d-alba",
+   "why": {
+    "text": "In Langa, clay marls on Miocene hills right of the Tanaro give a fresh, elegant red from Dolcetto.",
+    "cite": [
+     "dolcetto-d-alba-disc:p2",
+     "dolcetto-d-alba-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Dolcetto"
+     }
+    ],
+    "cite": [
+     "dolcetto-d-alba-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, made as Dolcetto d'Alba and Dolcetto d'Alba Superiore.",
+    "cite": [
+     "dolcetto-d-alba-disc:p1",
+     "dolcetto-d-alba-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, limestone and silica soils, or mixes; in Langhe, bluish-grey Tortonian marls and sands, with white tufa marl on the high hills.",
+    "cite": [
+     "dolcetto-d-alba-disc:p2",
+     "dolcetto-d-alba-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hillsides only, no higher than 650 metres; valley floors and flat, damp or shady land are excluded.",
+    "cite": [
+     "dolcetto-d-alba-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red with violet reflections, fruity and winey with cherry and plum. Dry, almondy, harmonious, of modest acidity, with a delicate bitter finish.",
+    "cite": [
+     "dolcetto-d-alba-disc:p5",
+     "dolcetto-d-alba-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Higher minimum alcohol (12.5%), aged 12 months from 1 November of harvest year."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named-vineyard label: vines at least 7 years old, yield capped at 8 t/ha."
+     }
+    ],
+    "cite": [
+     "dolcetto-d-alba-disc:p2",
+     "dolcetto-d-alba-disc:p3",
+     "dolcetto-d-alba-disc:p4",
+     "dolcetto-d-alba-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "gavi",
+   "why": {
+    "text": "Hilly marl and clay soils at the meeting of plain and Apennines, with cool ventilated summers, give the native Cortese grape its character.",
+    "cite": [
+     "gavi-disc:p6",
+     "gavi-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cortese"
+     }
+    ],
+    "cite": [
+     "gavi-disc:p2",
+     "gavi-disc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "White Gavi, still, lightly sparkling (frizzante) or sparkling, plus Riserva and Riserva Spumante metodo classico.",
+    "cite": [
+     "gavi-disc:p2",
+     "gavi-disc:p4",
+     "gavi-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Can be called transitional and moderately continental, with long, hard winters and fairly frequent, heavy snow towards the southern Apennines. Summers are cooler and more ventilated than in the nearby sub-Po area.",
+    "cite": [
+     "gavi-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Calcareous, clay and marl hillsides; flat, damp valley floors are excluded. Three bands: red earths, alternating marl and sandstone, white clay marls.",
+    "cite": [
+     "gavi-disc:p2",
+     "gavi-disc:p6",
+     "gavi-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Straw yellow, delicate, characteristic aroma, dry, pleasant, fresh and harmonious. Wood notes are possible in still, Riserva and Riserva metodo classico.",
+    "cite": [
+     "gavi-disc:p4",
+     "gavi-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Gavi Riserva",
+      "text": "One year of ageing, six months in bottle; yield at most 6.5 t/ha."
+     },
+     {
+      "name": "Riserva Spumante metodo classico",
+      "text": "Two years of ageing, eighteen months on the lees in bottle."
+     },
+     {
+      "name": "Gavi Spumante",
+      "text": "At least 6 months on lees (charmat) or 9 months (classic method)."
+     },
+     {
+      "name": "Gavi frizzante",
+      "text": "Dry, with fine, fleeting bubbles."
+     }
+    ],
+    "cite": [
+     "gavi-disc:p3",
+     "gavi-disc:p4",
+     "gavi-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "asti",
+   "why": {
+    "text": "Steep calcareous and marly hills with a continental climate, planted to aromatic Moscato bianco on sunny slopes.",
+    "cite": [
+     "asti-disc:p3",
+     "asti-disc:p10",
+     "asti-disc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Moscato bianco"
+     }
+    ],
+    "cite": [
+     "asti-disc:p2",
+     "asti-disc:p11"
+    ],
+    "others": [
+     "Brachetto"
+    ],
+    "othersCite": [
+     "asti-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "white",
+     "rose",
+     "sweet"
+    ],
+    "text": "Sparkling Asti from pas dosé to sweet, also metodo classico and rosé, and sweet, sometimes lightly fizzy Moscato d'Asti, including a late-harvest version.",
+    "cite": [
+     "asti-disc:p2",
+     "asti-disc:p7",
+     "asti-disc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Continental climate; the steepest slopes are used to catch the most sunlight.",
+    "cite": [
+     "asti-disc:p11"
+    ]
+   },
+   "soil": {
+    "text": "Calcareous or calcareous-clay hills, never valley floors. West: light, permeable sandstone and sandy loam. East: compact, water-retaining silty loam over gypsum-veined marls.",
+    "cite": [
+     "asti-disc:p3",
+     "asti-disc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 150 and 600 m: 45% at 200 to 300 m, 30% at 300 to 400 m, 17% above 400 m.",
+    "cite": [
+     "asti-disc:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Asti: fine persistent foam, delicate aroma, pale straw to soft gold, from pas dosé to sweet. Moscato d'Asti: fragrant Moscato aroma, sweet, aromatic, sometimes lightly fizzy.",
+    "cite": [
+     "asti-disc:p7",
+     "asti-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Asti spumante",
+      "text": "Sparkling, tank-fermented (Martinotti method), at least one month of sparkling-wine making."
+     },
+     {
+      "name": "Asti metodo classico",
+      "text": "Bottle-fermented, at least nine months on the lees, then disgorged."
+     },
+     {
+      "name": "Moscato d'Asti",
+      "text": "Sweet, aromatic, sometimes lightly fizzy; pressure at most 2.5 bar."
+     },
+     {
+      "name": "Moscato d'Asti vendemmia tardiva",
+      "text": "Late-harvested grapes, possibly dried; no enrichment, at least one year of ageing."
+     }
+    ],
+    "cite": [
+     "asti-disc:p2",
+     "asti-disc:p4",
+     "asti-disc:p6",
+     "asti-disc:p7",
+     "asti-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "alta-langa",
+   "why": {
+    "text": "Marl-limestone clay hills at 250 m and above, with moderate sun and good day-night swings, suit Pinot nero and Chardonnay for sparkling wine.",
+    "cite": [
+     "alta-langa-disc:p2",
+     "alta-langa-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot nero"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "alta-langa-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "alta-langa-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "rose"
+    ],
+    "text": "Only bottle-fermented sparkling wine, white or rosé, with a Riserva version of each.",
+    "cite": [
+     "alta-langa-disc:p1",
+     "alta-langa-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Moderate sunshine, good day-night temperature swings and limited relative humidity. The Huglin bioclimatic index is usually 1700 to 1800.",
+    "cite": [
+     "alta-langa-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Calcareous-clayey marl of moderate fertility, on hills only; damp, flat valley floors are excluded.",
+    "cite": [
+     "alta-langa-disc:p2",
+     "alta-langa-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "At least 250 m above sea level; vineyards typically sit between 280 and 550 m.",
+    "cite": [
+     "alta-langa-disc:p2",
+     "alta-langa-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Fine, persistent mousse; pale straw to deep gold colour (rosé: pink). Fragrant, complex, savoury, fine, harmonious. Aromas of yeast, bread crust, musk and vanilla; full-bodied.",
+    "cite": [
+     "alta-langa-disc:p4",
+     "alta-langa-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Alta Langa spumante",
+      "text": "Traditional method, refermented in bottle; at least 30 months from start of bottle fermentation."
+     },
+     {
+      "name": "Riserva",
+      "text": "At least 36 months on the lees; white or rosé."
+     },
+     {
+      "name": "Rosato",
+      "text": "Pink version of Alta Langa; the terms rosa or rosé are allowed."
+     },
+     {
+      "name": "Vigna",
+      "text": "Any Alta Langa, white or rosé, may name a vineyard, vinified and stored apart."
+     }
+    ],
+    "cite": [
+     "alta-langa-disc:p1",
+     "alta-langa-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "barbera-del-monferrato-superiore",
+   "why": {
+    "text": "Low hills between 150 and 400 metres with mostly calcareous soils, a temperate climate and about 700 mm of rain, planted mostly to Barbera.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p6",
+     "barbera-del-monferrato-superiore-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Barbera"
+     }
+    ],
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p1"
+    ],
+    "others": [
+     "Freisa",
+     "Grignolino",
+     "Dolcetto"
+    ],
+    "othersCite": [
+     "barbera-del-monferrato-superiore-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry, still red wine only, aged at least 14 months.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p1",
+     "barbera-del-monferrato-superiore-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate to temperate-warm, about 1800 degree days, little wind, and average rainfall around 700 mm a year.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly calcareous, medium-deep soils on limestone, sandstone and marl; the rules allow clay, silt, sand and limestone. A few small areas have acidic red paleosoils.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p2",
+     "barbera-del-monferrato-superiore-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Hills only, mostly between 150 and 400 metres; vineyards may not go above 650 metres.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p2",
+     "barbera-del-monferrato-superiore-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red turning garnet with age. Intense aroma, turning ethereal. Dry, still and full-bodied, more harmonious with ageing. At least 13% alcohol.",
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Aged at least 14 months from 1 November after harvest, at least 6 in oak."
+     },
+     {
+      "name": "Vigna",
+      "text": "Names a specific vineyard; lower yield of 8,000 kg/ha and at least 13% natural alcohol."
+     }
+    ],
+    "cite": [
+     "barbera-del-monferrato-superiore-disc:p3",
+     "barbera-del-monferrato-superiore-disc:p5",
+     "barbera-del-monferrato-superiore-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "brachetto-dacqui",
+   "why": {
+    "text": "Hillside vines on calcareous clay marl, with clay near Nizza and sand and silt around Acqui, in the Alto Monferrato; the land selected Brachetto.",
+    "cite": [
+     "brachetto-dacqui-disc:p2",
+     "brachetto-dacqui-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Brachetto"
+     }
+    ],
+    "cite": [
+     "brachetto-dacqui-disc:p2",
+     "brachetto-dacqui-disc:p7"
+    ],
+    "others": [],
+    "othersCite": [
+     "brachetto-dacqui-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Medium ruby to pink wine from dry to sweet, a sparkling version, and a sweet dried-grape Passito.",
+    "cite": [
+     "brachetto-dacqui-disc:p1",
+     "brachetto-dacqui-disc:p5",
+     "brachetto-dacqui-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Only hillside vineyards on calcareous-clay marl are suitable; clay near Nizza Monferrato, sand and silt around Acqui.",
+    "cite": [
+     "brachetto-dacqui-disc:p2",
+     "brachetto-dacqui-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Very delicate aroma, sometimes fruity, leaning spicy when less sweet; still runs dry to sweet, Spumante musky, extra brut to sweet; Passito sweet, velvety, sometimes woody.",
+    "cite": [
+     "brachetto-dacqui-disc:p5",
+     "brachetto-dacqui-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Spumante",
+      "text": "Sparkling, fine persistent foam, musky aroma, extra brut to sweet, at least 1 month process."
+     },
+     {
+      "name": "Passito",
+      "text": "Sweet wine from dried grapes, at least 16% alcohol, released 1 October next year."
+     },
+     {
+      "name": "Brachetto d'Acqui (still)",
+      "text": "Delicate ruby or pink wine, dry to sweet, light fizz up to 2.5 bar allowed."
+     }
+    ],
+    "cite": [
+     "brachetto-dacqui-disc:p1",
+     "brachetto-dacqui-disc:p5",
+     "brachetto-dacqui-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "canelli",
+   "why": {
+    "text": "Marine-sediment marl and sandstone hills, 165 to 500 m, with big day-night swings that build the Moscato Bianco's aromas.",
+    "cite": [
+     "canelli-disc:p7",
+     "canelli-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Moscato Bianco"
+     }
+    ],
+    "cite": [
+     "canelli-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Sweet white Moscato, lightly sparkling at times, in a standard and a Riserva version.",
+    "cite": [
+     "canelli-disc:p1",
+     "canelli-disc:p5",
+     "canelli-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Temperate continental Po Valley climate: very hot, muggy summers and cold, foggy winters. About 900 mm of rain a year over 120 rainy days, with 2200 degree-days above 10 °C.",
+    "cite": [
+     "canelli-disc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Marine sedimentary soils without rocks: sandstone-marl, marl and clay deposits, limy and poor in organic matter. They are marly-clayey on gentle slopes, or layered sandstone-marl on steep slopes.",
+    "cite": [
+     "canelli-disc:p2",
+     "canelli-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie between 165 and 500 m above sea level. Valley floors, shaded and flat land are excluded.",
+    "cite": [
+     "canelli-disc:p2",
+     "canelli-disc:p3",
+     "canelli-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Sweet, fresh and aromatic with Moscato character: wildflower, acacia, apricot, peach and honey. Sometimes lightly fizzy. Riserva adds sage, lemon balm or thyme, and candied fruit or saffron with age.",
+    "cite": [
+     "canelli-disc:p5",
+     "canelli-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Canelli Moscato",
+      "text": "Sweet white from Moscato Bianco only; at least 12% total alcohol, 4.5 to 6.5% actual."
+     },
+     {
+      "name": "Canelli Riserva",
+      "text": "Released after 30 months of ageing, at least 20 of them in bottle."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named-vineyard label; vines at least seven years old, lower yield (8.5 t/ha)."
+     }
+    ],
+    "cite": [
+     "canelli-disc:p1",
+     "canelli-disc:p3",
+     "canelli-disc:p5",
+     "canelli-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "dogliani",
+   "why": {
+    "text": "Hillside vineyards on clay, limestone and silica soils, never above 800 m, planted only with Dolcetto.",
+    "cite": [
+     "dogliani-disc:p1",
+     "dogliani-disc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Dolcetto"
+     }
+    ],
+    "cite": [
+     "dogliani-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry red wine, in two types: Dogliani and Dogliani superiore.",
+    "cite": [
+     "dogliani-disc:p1",
+     "dogliani-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "The highest, coolest part of the Langhe, near the Ligurian Apennines and Maritime Alps. The climate best suited to Dolcetto, which suffers in too much heat.",
+    "cite": [
+     "dogliani-disc:p7",
+     "dogliani-disc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Clay, limestone and silica soils, or mixes of them. Valley-floor, damp, flat or poorly sunlit land is excluded.",
+    "cite": [
+     "dogliani-disc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "Hillsides only, no higher than 800 m above sea level.",
+    "cite": [
+     "dogliani-disc:p3"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red, fruity and characteristic on the nose. Dry, with an almond note, and harmonious.",
+    "cite": [
+     "dogliani-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dogliani",
+      "text": "Dry ruby-red Dolcetto, at least 12% alcohol, grapes up to 8 t/ha."
+     },
+     {
+      "name": "Dogliani superiore",
+      "text": "At least 13% alcohol, no enrichment, 12 months ageing, sold from 1 November next year."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named vineyard label: vines at least 7 years old, lower yield, 13% natural alcohol."
+     }
+    ],
+    "cite": [
+     "dogliani-disc:p3",
+     "dogliani-disc:p5",
+     "dogliani-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "dolcetto-di-diano-dalba",
+   "why": {
+    "text": "Clay and limestone soils on hillsides only, up to 550 metres, planted entirely with Dolcetto.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Dolcetto"
+     }
+    ],
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p2"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, made 100% from Dolcetto, also as Superiore.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p1",
+     "dolcetto-di-diano-dalba-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, limestone, or a mix of the two.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p2"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie no higher than 550 metres above sea level. Hillsides only; valley floors, damp flat land and poorly sunny sites are excluded.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red, fruity and characteristic, with a possible hint of wood. Dry, almond-like and harmonious.",
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Minimum 12.5% alcohol, aged 10 months from 1 November of the harvest year."
+     },
+     {
+      "name": "Menzione geografica aggiuntiva",
+      "text": "Named Sorì site added to the label, with an optional vigna name."
+     }
+    ],
+    "cite": [
+     "dolcetto-di-diano-dalba-disc:p1",
+     "dolcetto-di-diano-dalba-disc:p5",
+     "dolcetto-di-diano-dalba-disc:p6",
+     "dolcetto-di-diano-dalba-disc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "dolcetto-di-ovada-superiore",
+   "why": {
+    "text": "Clay, tufa and limy hills up to 600 m around the river Orba give a more fragrant Dolcetto.",
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p2",
+     "dolcetto-di-ovada-superiore-disc:p6",
+     "dolcetto-di-ovada-superiore-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Dolcetto"
+     }
+    ],
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine made only from Dolcetto, also with the labels riserva and vigna.",
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p1",
+     "dolcetto-di-ovada-superiore-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, tufa and limestone, or mixes of them, including medium-textured soils.",
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p2",
+     "dolcetto-di-ovada-superiore-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hillsides only, no higher than 600 m above sea level. Valley floors and flat land are excluded.",
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p2",
+     "dolcetto-di-ovada-superiore-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red turning garnet; winey, sometimes ethereal, at times woody; dry, with almond and/or fruit notes. Ready to drink, with moderate acidity and alcohol.",
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p5",
+     "dolcetto-di-ovada-superiore-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vigna",
+      "text": "Single named vineyard, max 6 t/ha (less under 7 years), aged 20 months."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged at least 24 months."
+     },
+     {
+      "name": "Superiore (base)",
+      "text": "Aged 12 months from 1 November of the harvest year."
+     }
+    ],
+    "cite": [
+     "dolcetto-di-ovada-superiore-disc:p2",
+     "dolcetto-di-ovada-superiore-disc:p3",
+     "dolcetto-di-ovada-superiore-disc:p4",
+     "dolcetto-di-ovada-superiore-disc:p5",
+     "dolcetto-di-ovada-superiore-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "erbaluce-di-caluso",
+   "why": {
+    "text": "Sandy, pebbly glacial moraine hills in the Canavese basin give good natural acidity and freshness, on the native Erbaluce grape.",
+    "cite": [
+     "erbaluce-di-caluso-disc:p2",
+     "erbaluce-di-caluso-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Erbaluce"
+     }
+    ],
+    "cite": [
+     "erbaluce-di-caluso-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry white, traditional-method sparkling and sweet passito, all from Erbaluce alone.",
+    "cite": [
+     "erbaluce-di-caluso-disc:p1",
+     "erbaluce-di-caluso-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Sandy, pebbly soils of the moraine hills of the Canavese; vineyards must be on moraine-origin land with good exposure.",
+    "cite": [
+     "erbaluce-di-caluso-disc:p2",
+     "erbaluce-di-caluso-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie between 200 and 500 metres above sea level.",
+    "cite": [
+     "erbaluce-di-caluso-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Dry white: straw yellow, dry and fresh. Sparkling: fine persistent bubbles, fresh and fruity. Passito: gold to dark amber, sweet, harmonious, full and velvety.",
+    "cite": [
+     "erbaluce-di-caluso-disc:p4",
+     "erbaluce-di-caluso-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Spumante",
+      "text": "Traditional method, second fermentation in bottle, at least 15 months on the lees."
+     },
+     {
+      "name": "Passito",
+      "text": "Dried grapes (at least 29% sugar), aged 36 months from 1 November after harvest."
+     },
+     {
+      "name": "Passito riserva",
+      "text": "Same passito, aged 48 months from 1 November after harvest."
+     },
+     {
+      "name": "Vigna",
+      "text": "Optional label with a vineyard name, vines at least 3 years old, vinified separately."
+     }
+    ],
+    "cite": [
+     "erbaluce-di-caluso-disc:p2",
+     "erbaluce-di-caluso-disc:p4",
+     "erbaluce-di-caluso-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "gattinara",
+   "why": {
+    "text": "Hillside vineyards of clay, silt and sand soils at 250 to 550 metres, planted almost entirely with Nebbiolo and aged for years.",
+    "cite": [
+     "gattinara-disc:p1",
+     "gattinara-disc:p2",
+     "gattinara-disc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nebbiolo (Spanna)"
+     }
+    ],
+    "cite": [
+     "gattinara-disc:p1"
+    ],
+    "others": [
+     "Vespolina",
+     "Uva Rara"
+    ],
+    "othersCite": [
+     "gattinara-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine, with a Riserva version aged longer.",
+    "cite": [
+     "gattinara-disc:p1",
+     "gattinara-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, silt and sand, or combinations of them. Valley floor soils are excluded as not sunny enough.",
+    "cite": [
+     "gattinara-disc:p2"
+    ]
+   },
+   "altitude": {
+    "text": "Hillside vineyards only, between 250 and 550 metres above sea level.",
+    "cite": [
+     "gattinara-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Garnet red with orange tints. Fine, spicy nose with a hint of violet. Dry and harmonious, with a typical bitterish finish.",
+    "cite": [
+     "gattinara-disc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Gattinara",
+      "text": "At least 90% Nebbiolo, aged 35 months, 24 of them in wood."
+     },
+     {
+      "name": "Gattinara Riserva",
+      "text": "Aged 47 months, 36 in wood, with 13% minimum alcohol."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named single-vineyard label, vines at least 7 years old, yield 7.2 t/ha."
+     }
+    ],
+    "cite": [
+     "gattinara-disc:p2",
+     "gattinara-disc:p3",
+     "gattinara-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "ghemme",
+   "why": {
+    "text": "Hills of glacial moraine soils rich in dissolved minerals, which add savoury taste to the grapes.",
+    "cite": [
+     "ghemme-disc:p5",
+     "ghemme-disc:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nebbiolo (Spanna)"
+     }
+    ],
+    "cite": [
+     "ghemme-disc:p1"
+    ],
+    "others": [
+     "Vespolina",
+     "Uva Rara"
+    ],
+    "othersCite": [
+     "ghemme-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, as Ghemme and Ghemme Riserva.",
+    "cite": [
+     "ghemme-disc:p1",
+     "ghemme-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, sand, silt and pebbly soils on hills; valley floors that are damp or too shady are excluded. Moraine soils with clays, kaolins and tuffs, more compact on the plateau and looser and stonier on the western slope.",
+    "cite": [
+     "ghemme-disc:p2",
+     "ghemme-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie between 220 and 400 m above sea level; north-facing slopes are excluded.",
+    "cite": [
+     "ghemme-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red with garnet tints; fine, pleasant, ethereal aroma; dry, savoury and harmonious with a pleasantly bitter finish. Riserva is austere but velvety.",
+    "cite": [
+     "ghemme-disc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Ghemme",
+      "text": "Aged 34 months, 18 in wood; sold from 1 September of third year after harvest."
+     },
+     {
+      "name": "Ghemme Riserva",
+      "text": "Aged 46 months, 24 in wood; sold from 1 September of fourth year."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named single-vineyard wine from vines at least 7 years old, lower yield of 7.2 t/ha."
+     }
+    ],
+    "cite": [
+     "ghemme-disc:p2",
+     "ghemme-disc:p3",
+     "ghemme-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "nizza",
+   "why": {
+    "text": "Sun-facing Barbera hills of calcareous marl and sandstone, with cold winters and hot dry summers, and ageing in wood.",
+    "cite": [
+     "nizza-disc:p2",
+     "nizza-disc:p6",
+     "nizza-disc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Barbera"
+     }
+    ],
+    "cite": [
+     "nizza-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, made from 100% Barbera; also as Riserva and with a Vigna vineyard name.",
+    "cite": [
+     "nizza-disc:p1",
+     "nizza-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate-continental: cold, dry winters with some snow, wet springs and autumns, hot dry summers. Higher hills are milder in winter and cooler in summer thanks to more wind.",
+    "cite": [
+     "nizza-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Pliocene Asti basin: marl and sandstone, mostly sedimentary, rich in calcium carbonate and low in organic matter. Clay-sandy marls and layered sandstone; deep soils that drain well.",
+    "cite": [
+     "nizza-disc:p2",
+     "nizza-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow mostly between 150 and 350 m, a few between 350 and 500 m. Hillsides only, valley floors excluded.",
+    "cite": [
+     "nizza-disc:p2",
+     "nizza-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Intense ruby turning garnet; red berries, cherry, plum, light spice; with age balsamic, cocoa, liquorice, vanilla. Dry, full-bodied and round; Barbera's acidity softens with malolactic and ageing; long life.",
+    "cite": [
+     "nizza-disc:p4",
+     "nizza-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "At least 30 months ageing, 12 of them in wood."
+     },
+     {
+      "name": "Nizza",
+      "text": "At least 18 months ageing, 6 of them in wood."
+     },
+     {
+      "name": "Vigna",
+      "text": "Single named vineyard, 13.5% minimum alcohol, lower yield, cork closure only."
+     }
+    ],
+    "cite": [
+     "nizza-disc:p2",
+     "nizza-disc:p4",
+     "nizza-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "roero",
+   "why": {
+    "text": "Sandy, marly and clay hills left by the Tanaro's course change, with Nebbiolo on south slopes and Arneis also on cooler north ones.",
+    "cite": [
+     "roero-disc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nebbiolo"
+     },
+     {
+      "local": "Arneis"
+     }
+    ],
+    "cite": [
+     "roero-disc:p2",
+     "roero-disc:p9"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sparkling"
+    ],
+    "text": "Dry red Nebbiolo, dry white Arneis, and Arneis sparkling wine; both still wines also come as riserva.",
+    "cite": [
+     "roero-disc:p1",
+     "roero-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "The spec gives no figures; day-night temperature swings and cooler north-facing sites help the sparkling wines keep good acidity.",
+    "cite": [
+     "roero-disc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Alternating layers of sand, clay and limestone, with sandstone and marl. More sand gives fresher, finer wines; clay adds colour and limestone aromatic finesse.",
+    "cite": [
+     "roero-disc:p4",
+     "roero-disc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Red: ruby or garnet, dry, with good body; sometimes cherry, raspberry or blackcurrant, or spice. White: straw to gold, dry, elegant; sometimes white flowers, apple, peach, hazelnut. Sparkling: fine lasting bubbles, delicate, fresh and fruity.",
+    "cite": [
+     "roero-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Roero Riserva",
+      "text": "Red aged at least 32 months, six in wood; white aged at least 16 months."
+     },
+     {
+      "name": "Roero Arneis",
+      "text": "Dry white made from at least 95% Arneis."
+     },
+     {
+      "name": "Roero Spumante",
+      "text": "Arneis sparkling, from brut nature to sweet, with fine lasting bubbles."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named-vineyard label; vines at least three years old, lower yields."
+     }
+    ],
+    "cite": [
+     "roero-disc:p2",
+     "roero-disc:p4",
+     "roero-disc:p6",
+     "roero-disc:p7",
+     "roero-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "ruche-di-castagnole-monferrato",
+   "why": {
+    "text": "Hillside clay, silt, sand and limestone soils between 120 and 400 m, planted at least 90% to the aromatic Ruchè grape.",
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Ruchè"
+     }
+    ],
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p2"
+    ],
+    "others": [
+     "Barbera",
+     "Brachetto"
+    ],
+    "othersCite": [
+     "ruche-di-castagnole-monferrato-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, in a standard version and a Riserva.",
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p1",
+     "ruche-di-castagnole-monferrato-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clayey, silty, sandy and calcareous soils, alone or combined.",
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p2"
+    ]
+   },
+   "altitude": {
+    "text": "Hillside sites only, between 120 and 400 m above sea level; valley floors and damp or poorly sunny land are excluded.",
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red with violet hints; intense, lightly aromatic, fruity, sometimes spicy. Dry, round, medium-bodied, sometimes slightly tannic, with a light aromatic aftertaste.",
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 24 months, of which at least 12 in wood."
+     },
+     {
+      "name": "Vigna",
+      "text": "Names a vineyard at least 3 years old; lower yields, minimum 12.5% natural alcohol."
+     }
+    ],
+    "cite": [
+     "ruche-di-castagnole-monferrato-disc:p3",
+     "ruche-di-castagnole-monferrato-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "terre-alfieri",
+   "why": {
+    "text": "Hill vineyards at 130 to 350 m on clay, limestone and sand soils, never on damp valley floors, planted to Arneis and Nebbiolo.",
+    "cite": [
+     "terre-alfieri-disc:p2",
+     "terre-alfieri-disc:p1"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Arneis"
+     },
+     {
+      "local": "Nebbiolo"
+     }
+    ],
+    "cite": [
+     "terre-alfieri-disc:p1",
+     "terre-alfieri-disc:p2"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry white Arneis and red Nebbiolo, each in a Superiore version, plus Nebbiolo Riserva.",
+    "cite": [
+     "terre-alfieri-disc:p1"
+    ]
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "Clay, limestone and sand soils, or combinations of them.",
+    "cite": [
+     "terre-alfieri-disc:p2"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie between 130 and 350 m above sea level, on hills only.",
+    "cite": [
+     "terre-alfieri-disc:p2"
+    ]
+   },
+   "tastes": {
+    "text": "Arneis: pale straw, delicate, sometimes floral, dry and pleasantly bitter. Nebbiolo: ruby turning garnet, delicate, sometimes violet, dry, full and harmonious.",
+    "cite": [
+     "terre-alfieri-disc:p7",
+     "terre-alfieri-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Higher minimum alcohol; Arneis aged 6 months, Nebbiolo 12 months, six in wood."
+     },
+     {
+      "name": "Nebbiolo Riserva",
+      "text": "Aged 24 months from 1 November after harvest, at least 12 in wood."
+     },
+     {
+      "name": "Vigna",
+      "text": "Named-vineyard wine with lower yields, no enrichment, vinified and kept separately."
+     }
+    ],
+    "cite": [
+     "terre-alfieri-disc:p3",
+     "terre-alfieri-disc:p7",
+     "terre-alfieri-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

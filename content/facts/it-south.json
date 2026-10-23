@@ -1,0 +1,842 @@
+{
+ "region": "it-south",
+ "sheets": [
+  {
+   "id": "taurasi",
+   "why": {
+    "text": "Clay and limestone soils on inland hills at 400 to 700 m, with big day-night swings and dry summers, ripen Aglianico slowly, keeping acidity.",
+    "cite": [
+     "taurasi-disc:p5",
+     "taurasi-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Aglianico"
+     }
+    ],
+    "cite": [
+     "taurasi-disc:p2"
+    ],
+    "others": [
+     "Other non-aromatic red grapes suited to Avellino province, up to 15%"
+    ],
+    "othersCite": [
+     "taurasi-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, as Taurasi and Taurasi Riserva.",
+    "cite": [
+     "taurasi-disc:p1",
+     "taurasi-disc:p2",
+     "taurasi-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Inland climate with big temperature swings and low rainfall; cold winters with some snow, mild summers. Rain is 600 to 1000 mm a year, over 70% in autumn and winter, about 6% in summer.",
+    "cite": [
+     "taurasi-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Young soils, rich in clay and limestone, in places near 50% of the fine earth. Some are deep, well-drained ash soils. Rich in potassium and magnesium.",
+    "cite": [
+     "taurasi-disc:p5",
+     "taurasi-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie on hills between 400 and 700 m above sea level.",
+    "cite": [
+     "taurasi-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Intense ruby red turning garnet, then orange with age. Characteristic, ethereal, pleasant aroma, more or less intense. Dry, full, harmonious and balanced, with a lasting aftertaste.",
+    "cite": [
+     "taurasi-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Taurasi",
+      "text": "At least three years' ageing, one in wood; minimum 12% alcohol."
+     },
+     {
+      "name": "Taurasi Riserva",
+      "text": "At least four years' ageing, 18 months in wood; minimum 12.5% alcohol."
+     }
+    ],
+    "cite": [
+     "taurasi-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "fiano-di-avellino",
+   "why": {
+    "text": "Clay-rich hills with volcanic ash, cold winters, mild summers and big day-night swings give fresh, balanced, aromatic white wine.",
+    "cite": [
+     "fiano-di-avellino-disc:p4",
+     "fiano-di-avellino-disc:p5",
+     "fiano-di-avellino-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Fiano"
+     }
+    ],
+    "cite": [
+     "fiano-di-avellino-disc:p1"
+    ],
+    "others": [
+     "Greco",
+     "Coda di Volpe",
+     "Trebbiano toscano"
+    ],
+    "othersCite": [
+     "fiano-di-avellino-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Dry white wine, plus a Riserva and bottle-fermented sparkling wine (metodo classico) in two versions.",
+    "cite": [
+     "fiano-di-avellino-disc:p1",
+     "fiano-di-avellino-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Cold winters, sometimes with snow, and fairly mild summers; forested mountains stop overheating. Many sunny days, big day-night swings from July to September. About 1100 mm of rain a year, over 70% in autumn and winter, only about 6% in summer. Protected from cold north-east winds, open to humid southern and south-western ones.",
+    "cite": [
+     "fiano-di-avellino-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Young soils, rich in clay (up to 50% of the fine earth), over clay, marl, sandstone and limestone. Layers of volcanic ash and pumice sit on top in many places. Low in limestone, high in potassium and magnesium. Clay helps even ripening and keeps acidity in dry summers.",
+    "cite": [
+     "fiano-di-avellino-disc:p4",
+     "fiano-di-avellino-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Only hillside vineyards with good exposure qualify; damp valley floors are excluded. The highest hills are around 600 m, up to 300 m above the valley floors. Lapio lies at 590 m.",
+    "cite": [
+     "fiano-di-avellino-disc:p2",
+     "fiano-di-avellino-disc:p5",
+     "fiano-di-avellino-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Fiano di Avellino: pale to medium straw yellow, pleasant, intense, fine aroma; dry, fresh and harmonious. Sparkling: fine lasting bubbles, delicate yeast notes.",
+    "cite": [
+     "fiano-di-avellino-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 12 months from 1 November of the harvest year; 12% alcohol minimum."
+     },
+     {
+      "name": "Spumante",
+      "text": "Bottle-fermented, metodo classico only, at least 18 months in bottle."
+     },
+     {
+      "name": "Spumante Riserva",
+      "text": "Metodo classico, at least 36 months in bottle after bottling for second fermentation."
+     }
+    ],
+    "cite": [
+     "fiano-di-avellino-disc:p2",
+     "fiano-di-avellino-disc:p3",
+     "fiano-di-avellino-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "greco-di-tufo",
+   "why": {
+    "text": "Hillside vineyards of clay-rich, volcanic and sandy soils in the Sabato valley, with cold winters, mild summers, big day-night swings and dry summers.",
+    "cite": [
+     "greco-di-tufo-disc:p4",
+     "greco-di-tufo-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Greco"
+     }
+    ],
+    "cite": [
+     "greco-di-tufo-disc:p1"
+    ],
+    "others": [
+     "Coda di Volpe"
+    ],
+    "othersCite": [
+     "greco-di-tufo-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Dry white wine, including Riserva, and sparkling wine made by the traditional method, also as Riserva.",
+    "cite": [
+     "greco-di-tufo-disc:p1",
+     "greco-di-tufo-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Cold winters, sometimes with snow, and fairly mild summers, cooled by forested mountains. Rainfall reaches about 1,100 mm a year, over 70% in autumn and winter; summer is dry with about 6%. Many sunny days, strong day-night swings from July to September, and fairly frequent spring frosts, sometimes late.",
+    "cite": [
+     "greco-di-tufo-disc:p5",
+     "greco-di-tufo-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Clay, sandy or limestone soils, young and heavy, with clay up to 50%. Northern sector has conglomerates, sandstone and marl; southern sector has volcanic ash and pumice. Clay helps even ripening and keeps acidity in dry summers.",
+    "cite": [
+     "greco-di-tufo-disc:p4",
+     "greco-di-tufo-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 300 and 650 metres along the Sabato river valley.",
+    "cite": [
+     "greco-di-tufo-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Still wine: straw yellow, intense and fine aroma, fresh, dry, harmonious. Sparkling: fine lasting bubbles, delicate yeast notes, savoury and fine, extra brut to extra dry.",
+    "cite": [
+     "greco-di-tufo-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Still wine aged at least 12 months from 1 November of harvest year."
+     },
+     {
+      "name": "Spumante",
+      "text": "Traditional method, at least 18 months on the lees after bottling."
+     },
+     {
+      "name": "Spumante Riserva",
+      "text": "Traditional method, at least 36 months on the lees after bottling."
+     }
+    ],
+    "cite": [
+     "greco-di-tufo-disc:p2",
+     "greco-di-tufo-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "salice-salentino",
+   "why": {
+    "text": "Deep clay-limestone soils over Salento limestone, scarce rain, and Negroamaro as the leading grape.",
+    "cite": [
+     "salice-salentino-disc:p9",
+     "salice-salentino-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Negroamaro"
+     }
+    ],
+    "cite": [
+     "salice-salentino-disc:p2",
+     "salice-salentino-disc:p10"
+    ],
+    "others": [
+     "Malvasia nera",
+     "Primitivo",
+     "Aleatico",
+     "Chardonnay",
+     "Fiano",
+     "Pinot bianco"
+    ],
+    "othersCite": [
+     "salice-salentino-disc:p1",
+     "salice-salentino-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "fortified",
+     "sweet"
+    ],
+    "text": "Reds and rosés mostly from Negroamaro, whites, sparkling wines, and sweet or fortified Aleatico.",
+    "cite": [
+     "salice-salentino-disc:p1",
+     "salice-salentino-disc:p5",
+     "salice-salentino-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Scarce rainfall; vineyards run north to south and are well ventilated and bright.",
+    "cite": [
+     "salice-salentino-disc:p9",
+     "salice-salentino-disc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Mostly deep, clay-limestone soils inland, rich in organic matter and low in calcium carbonate, over a Cretaceous limestone base.",
+    "cite": [
+     "salice-salentino-disc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: ruby, full, robust yet velvety, warm; Negroamaro adds ripe red fruit. Rosé: delicate, fruity, fresh. Whites: straw-yellow, fresh, fruity. Aleatico: moderately sweet, velvety.",
+    "cite": [
+     "salice-salentino-disc:p5",
+     "salice-salentino-disc:p6",
+     "salice-salentino-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Red aged at least 24 months, at least six of them in wood."
+     },
+     {
+      "name": "Negroamaro",
+      "text": "Red or rosé made from at least 90% Negroamaro."
+     },
+     {
+      "name": "Aleatico liquoroso",
+      "text": "Sweet fortified red, at least 18.5% alcohol, from at least 85% Aleatico."
+     },
+     {
+      "name": "Spumante",
+      "text": "White or rosé sparkling, refermented in bottle or tank."
+     }
+    ],
+    "cite": [
+     "salice-salentino-disc:p2",
+     "salice-salentino-disc:p5",
+     "salice-salentino-disc:p6",
+     "salice-salentino-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "aglianico-del-vulture",
+   "why": {
+    "text": "Volcanic tuff slopes of extinct Monte Vulture at 200 to 700 m, with dry summers, cooling breezes and slow ripening into November.",
+    "cite": [
+     "aglianico-del-vulture-disc:p3",
+     "aglianico-del-vulture-disc:p4",
+     "aglianico-del-vulture-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Aglianico del Vulture N."
+     },
+     {
+      "local": "Aglianico N."
+     }
+    ],
+    "cite": [
+     "aglianico-del-vulture-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sparkling"
+    ],
+    "text": "Dry to off-dry still red wine, and a red sparkling wine made by natural refermentation in bottle.",
+    "cite": [
+     "aglianico-del-vulture-disc:p1",
+     "aglianico-del-vulture-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Very dry in July and August, mild in June and September, damp in October and November. Rain is 650 to 750 mm a year on average; summers average 25 °C with peaks of 35 °C. Air currents and hill breezes lower summer temperatures.",
+    "cite": [
+     "aglianico-del-vulture-disc:p4",
+     "aglianico-del-vulture-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Hillsides of mostly volcanic origin, from sandy and volcanic-ash soils to silty clay, over tuff that stores water for the dry summer.",
+    "cite": [
+     "aglianico-del-vulture-disc:p2",
+     "aglianico-del-vulture-disc:p3",
+     "aglianico-del-vulture-disc:p4"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 200 and 700 m above sea level, mostly facing east and south-east.",
+    "cite": [
+     "aglianico-del-vulture-disc:p2",
+     "aglianico-del-vulture-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red, intense and pleasant aroma, dry to off-dry, tannic and savoury. Fruity (berry and stone fruit) and floral, good acidity, a hint of bitterness, strong structure, long-lived.",
+    "cite": [
+     "aglianico-del-vulture-disc:p3",
+     "aglianico-del-vulture-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Aglianico del Vulture Spumante",
+      "text": "Natural refermentation in bottle, at least nine months; brut to extra dry."
+     }
+    ],
+    "cite": [
+     "aglianico-del-vulture-disc:p2",
+     "aglianico-del-vulture-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "aglianico-del-taburno",
+   "why": {
+    "text": "Hilly clay, sandstone and limestone soils at 200 to 650 m, with mild valley floors, cooler uplands and Aglianico as the base.",
+    "cite": [
+     "aglianico-del-taburno-disc:p1",
+     "aglianico-del-taburno-disc:p5",
+     "aglianico-del-taburno-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Aglianico"
+     }
+    ],
+    "cite": [
+     "aglianico-del-taburno-disc:p1"
+    ],
+    "others": [
+     "Other non-aromatic black grapes suited to the province of Benevento, up to 15%"
+    ],
+    "othersCite": [
+     "aglianico-del-taburno-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose"
+    ],
+    "text": "Dry red, dry red riserva and dry rosé.",
+    "cite": [
+     "aglianico-del-taburno-disc:p1",
+     "aglianico-del-taburno-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Sheltered valley floors are mild with about 1000 mm of rain a year. Higher up winters are colder, summers moderately warm and rain reaches 1400 mm. Dry spells last up to 2 months (mid-June to mid-August) at low altitude. Rain peaks in autumn, sometimes again in spring.",
+    "cite": [
+     "aglianico-del-taburno-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Regosols over soft sandstone, clay and calcarenite, with variegated scaly clays, dolomitic limestone and volcanic deposits. Fine-textured and holds water well, usually limy, with slow drainage below the topsoil.",
+    "cite": [
+     "aglianico-del-taburno-disc:p5",
+     "aglianico-del-taburno-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hilly zone between 200 and 650 m. Only hillside and foothill vineyards are allowed, not valley floors or damp ground. Vineyards in Benevento province lie from about 50 to 500 m.",
+    "cite": [
+     "aglianico-del-taburno-disc:p2",
+     "aglianico-del-taburno-disc:p3",
+     "aglianico-del-taburno-disc:p6",
+     "aglianico-del-taburno-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Red: ruby turning garnet with age, characteristic persistent aroma, dry and full-bodied. Rosé: delicate, fresh, fruity, dry and harmonious. Riserva: intense garnet, dry and full-bodied.",
+    "cite": [
+     "aglianico-del-taburno-disc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rosso",
+      "text": "Dry red, at least 85% Aglianico, aged two years from 1 November of harvest."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged at least three years, with 12 months in wood and 6 in bottle."
+     },
+     {
+      "name": "Rosato",
+      "text": "Dry rosé, not sold before 1 March after the harvest year."
+     }
+    ],
+    "cite": [
+     "aglianico-del-taburno-disc:p3",
+     "aglianico-del-taburno-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "castel-del-monte-bombino-nero",
+   "why": {
+    "text": "Hard limestone Murge plateau with thin, stony soils, warm dry summers and cold winters, planted at least 90% to Bombino Nero.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p2",
+     "castel-del-monte-bombino-nero-disc:p4",
+     "castel-del-monte-bombino-nero-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Bombino Nero"
+     }
+    ],
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "rose"
+    ],
+    "text": "Dry rosato (pink wine) from Bombino Nero.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Sub-Mediterranean. Mean annual temperature is 14.4 to 17.5 °C; January averages about 7 °C with frosts, August about 25 °C. Rain is about 560 mm a year, mostly autumn and winter, and about 100 mm in summer.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Compact Cretaceous limestone, with some Holocene alluvial deposits. The commonest soil is shallow, very stony and rocky.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p4",
+     "castel-del-monte-bombino-nero-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "The highest Murge peaks in the north-west reach 680 and 686 m; the south-east Murge stay under 500 m. Snow mostly falls above 500 m.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p4",
+     "castel-del-monte-bombino-nero-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Colour pink, more or less intense. Delicate, fruity aroma. Dry and harmonious on the palate, with well-balanced chemistry and the grape's aromas dominant.",
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p3",
+     "castel-del-monte-bombino-nero-disc:p5",
+     "castel-del-monte-bombino-nero-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vigna",
+      "text": "Vineyard name on the label, only if vinified separately and on the regional list."
+     }
+    ],
+    "cite": [
+     "castel-del-monte-bombino-nero-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "castel-del-monte-nero-di-troia-riserva",
+   "why": {
+    "text": "Hard limestone plateau with shallow, stony soils and a hot, dry sub-Mediterranean climate, giving full-bodied, balanced Nero di Troia reds.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p3",
+     "castel-del-monte-nero-di-troia-riserva-disc:p4",
+     "castel-del-monte-nero-di-troia-riserva-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nero di Troia"
+     }
+    ],
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Red Riserva wine, at least 90% Nero di Troia, aged at least two years before release.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p1",
+     "castel-del-monte-nero-di-troia-riserva-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Sub-Mediterranean. Mean annual temperature 14.4 to 17.5 °C; January mean about 7 °C, August about 25 °C. Rain about 560 mm a year, mostly autumn and winter; about 100 mm in June to August.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Compact Cretaceous limestone. The commonest soil is shallow, very stony and rocky.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Murge plateau peaks reach 680 to 686 m in the north-west; the south-east stays under 500 m. Snow mostly falls above 500 m.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p4",
+     "castel-del-monte-nero-di-troia-riserva-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red to garnet with age. Delicate, characteristic aroma. Full-bodied, harmonious palate. Well-balanced, with the main grape's aromas dominant.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p3",
+     "castel-del-monte-nero-di-troia-riserva-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Two years' ageing, one in wood, counted from 1 November of harvest year."
+     }
+    ],
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "castel-del-monte-rosso-riserva",
+   "why": {
+    "text": "Stony limestone plateau soils, a dry sub-Mediterranean climate and Nero di Troia (at least 65%), aged at least two years, one in wood.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p1",
+     "castel-del-monte-rosso-riserva-disc:p3",
+     "castel-del-monte-rosso-riserva-disc:p4",
+     "castel-del-monte-rosso-riserva-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Nero di Troia"
+     }
+    ],
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "castel-del-monte-rosso-riserva-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "A red Riserva wine only, aged at least two years before release.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p1",
+     "castel-del-monte-rosso-riserva-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Sub-Mediterranean and sub-humid. Mean annual temperature 14.4 to 17.5 °C; January about 7 °C, August or July about 25 °C. Rain about 560 mm a year, about 100 mm from June to August.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Compact Cretaceous limestone of the Murgia plateau. Soils are mostly shallow, very stony and rocky.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p4",
+     "castel-del-monte-rosso-riserva-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "The Murgia plateau peaks at 680 and 686 m in the north-west; the south-east does not exceed 500 m. Snow mostly falls above 500 m.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p4",
+     "castel-del-monte-rosso-riserva-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red turning garnet with age. Fine, characteristic aroma. Full-bodied and harmonious. Well-balanced chemistry, with the main grape's aromas prevailing.",
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p3",
+     "castel-del-monte-rosso-riserva-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Compulsory two years' ageing, one in wood, counted from 1 November of harvest year."
+     }
+    ],
+    "cite": [
+     "castel-del-monte-rosso-riserva-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "primitivo-di-manduria-dolce-naturale",
+   "why": {
+    "text": "Mild Mediterranean winters and warm summers on thin, well-drained coastal soils ripen early Primitivo, partly dried, into a sweet red.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p3",
+     "primitivo-di-manduria-dolce-naturale-disc:p4",
+     "primitivo-di-manduria-dolce-naturale-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Primitivo"
+     }
+    ],
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "A sweet red from 100% Primitivo, with at least 50 g/l residual sugar.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p1",
+     "primitivo-di-manduria-dolce-naturale-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: mild winters (average minimum 6-7 °C), warm summers (average maximum 25-26 °C), about 650 mm rain a year, mostly in winter. The Salento side is more humid.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Deep clay-loam in the west, sandy and thin toward the coast, with bedrock at 25-50 cm. Inland soils are deeper. Salento has limestone ridges.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p4",
+     "primitivo-di-manduria-dolce-naturale-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Deep red with garnet tints; broad, complex nose, sometimes plum; sweet, velvety taste. At least 16% total alcohol, 13% actual.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dolce Naturale",
+      "text": "Sweet Primitivo, grapes may be dried; minimum 16% natural alcohol, no enrichment allowed."
+     }
+    ],
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

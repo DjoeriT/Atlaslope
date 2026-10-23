@@ -1,0 +1,88 @@
+{
+ "id": "aglianico-del-taburno",
+ "title": "Why Aglianico del Taburno tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Fine-grained soils over soft rock generally hold plenty of water in these hills. Aglianico grown here makes dry, full-bodied ruby reds that turn garnet with age.",
+  "cite": [
+   "aglianico-del-taburno-disc:p4",
+   "aglianico-del-taburno-disc:p5",
+   "aglianico-del-taburno-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills around Benevento",
+   "paras": [
+    "The vineyards lie in the province of Benevento, in Campania. They cover the whole of 9 municipalities and part of 4 more. Hills alternate with flat-bottomed karst hollows. Gullies cut between them record violent bouts of erosion in the Quaternary.",
+    "The zone is hilly overall, between 200 and 650 m above sea level. Only hillside and foothill vineyards count. Valley floors and damp ground are excluded. Across the province as a whole, vineyards sit from about 50 m up to about 500 m, depending on grape and ripening time."
+   ],
+   "cite": [
+    "aglianico-del-taburno-disc:p1",
+    "aglianico-del-taburno-disc:p2",
+    "aglianico-del-taburno-disc:p5",
+    "aglianico-del-taburno-disc:p6",
+    "aglianico-del-taburno-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Calore river",
+     "point": [
+      14.8,
+      41.14
+     ],
+     "zoom": 10,
+     "caption": "The zone's boundary follows the Calore river for about 2 km before it meets the Benevento to Caserta railway.",
+     "cite": [
+      "aglianico-del-taburno-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild valleys, colder heights",
+   "paras": [
+    "Sheltered, well-exposed valley floors are mild, with rain of around 1000 mm a year. Higher up, winters are colder and summers moderately warm. Rain there can reach 1400 mm a year.",
+    "Dry spells last up to 2 months, from mid-June to mid-August, at lower altitude. They shrink to a minimum higher up. Rain peaks in autumn, and sometimes again in spring.",
+    "Air moves well near the ground across the zone. That gives the vines enough ventilation, which favours their growth and the health of the crop."
+   ],
+   "cite": [
+    "aglianico-del-taburno-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Soft rock, fine soils",
+   "paras": [
+    "The soils are typical Regosols. Underneath lies mostly soft rock. It is sandstone and clay, or calcarenite, a limestone made of sand-sized grains. Scaly clays come in brick-red, green and grey. Limestone and dolomite also underlie some soils. Quaternary volcanic and other loose deposits blanket almost all the hills and fill the hollows.",
+    "Fine particles dominate, so the soils generally hold plenty of water. Calcium carbonate is normally present. The topsoil is generally shallow, and a slow-draining layer often lies just below it."
+   ],
+   "cite": [
+    "aglianico-del-taburno-disc:p5",
+    "aglianico-del-taburno-disc:p6"
+   ]
+  },
+  {
+   "id": "aglianico",
+   "beat": "rules",
+   "title": "Aglianico, aged before it is sold",
+   "paras": [
+    "Wines must be at least 85% Aglianico. The rest can come from other non-aromatic black grapes suited to the province of Benevento, up to 15%. Aglianico now covers over 50% of the registered vineyard area.",
+    "The name covers a red and a rosé. The red also comes as a riserva. The red is dry and full-bodied, ruby turning garnet with age. It must age at least 2 years from 1 November of the harvest year.",
+    "The riserva is an intense garnet, dry and full-bodied. It needs at least 3 years of ageing, with at least 12 months in wooden barrels and 6 months in bottle. New vineyards cannot make it before their fifth year.",
+    "The rosé, called rosato, is pink. It smells delicate and fruity, and tastes dry and fresh. It cannot be sold before 1 March of the year after the harvest. Any of the wines kept in wood may show a slight hint of it."
+   ],
+   "cite": [
+    "aglianico-del-taburno-disc:p1",
+    "aglianico-del-taburno-disc:p3",
+    "aglianico-del-taburno-disc:p4",
+    "aglianico-del-taburno-disc:p7"
+   ]
+  }
+ ]
+}

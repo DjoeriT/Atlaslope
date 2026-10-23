@@ -1,0 +1,107 @@
+{
+ "id": "scanzo",
+ "title": "Why Scanzo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Moscato di Scanzo grows on hills with slopes of 50% to 100%, where a very thin layer of soil lies over marly rock. The grapes are dried for at least 21 days to make a sweet red wine with a light almond aftertaste.",
+  "cite": [
+   "scanzo-disc:p3",
+   "scanzo-disc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "One small town on its hills",
+   "paras": [
+    "The vineyards lie in the province of Bergamo, on the hills of one municipality: Scanzorosciate. The zone is small, and the flat land of the municipality is left out.",
+    "The rules also keep out land that is too damp or not sunny enough. Land in the plain is out in any case.",
+    "The grapes must be dried and made into wine in Scanzorosciate. The wine is aged and bottled there too. Firms that have long bottled outside the zone can get individual permits.",
+    "The vine has a long history here. In 1347 Alberico da Rosciate left vineyard plots to his collaborators in his will. Tradition traces the grape back much further, to the Atestine era, and the name Scanzo is said to come from a family of Roman centurions, the Scantii."
+   ],
+   "cite": [
+    "scanzo-disc:p1",
+    "scanzo-disc:p2",
+    "scanzo-disc:p3",
+    "scanzo-disc:p4",
+    "scanzo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The hills of Scanzorosciate",
+     "point": [
+      9.7425,
+      45.7075
+     ],
+     "zoom": 11,
+     "caption": "The whole zone is a small stretch of hills in one municipality in the province of Bergamo.",
+     "cite": [
+      "scanzo-disc:p1",
+      "scanzo-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A Mediterranean touch in Lombardy",
+   "paras": [
+    "The climate here is typically Mediterranean, and it allows the vines to ripen well. The same climate also ripens other plants, such as olive groves."
+   ],
+   "cite": [
+    "scanzo-disc:p4",
+    "scanzo-disc:p5"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Steep slopes over marl",
+   "paras": [
+    "The slopes run from 50% to 100%, with a few exceptions, and the work has always been done on these steep hillsides.",
+    "The topsoil is very shallow. Below it lies only marly rock that locals call Sass de la Luna. Left in the sun, it crumbles over time. Covered and protected, it is hard to work, because it forms limy nodules that drills cannot get into.",
+    "Some areas are not planted because of large rocks. Historic vines still produce in these areas."
+   ],
+   "cite": [
+    "scanzo-disc:p4",
+    "scanzo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Castelletto on Alaric's hill",
+     "point": [
+      9.7475,
+      45.7
+     ],
+     "zoom": 14,
+     "caption": "The old Castelletto dei Bignami stands on the hill that carries the name of Alaric, who is said to have run his siege of Bergamo from here.",
+     "cite": [
+      "scanzo-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wine",
+   "beat": "rules",
+   "title": "A dried grape and a long wait",
+   "paras": [
+    "The denomination makes one wine: a sweet red from 100% Moscato di Scanzo. The grape is native to this area. Its wine is almost impossible to reproduce with the same character outside its home zone.",
+    "Vines may not be irrigated or forced. Yields are capped at 7 t/ha, and the grapes must reach at least 12.00% vol natural alcohol.",
+    "After harvest the grapes are dried in suitable rooms, which may be climate-controlled with forced ventilation. They stay there for no less than 21 days, until they reach at least 280 g/l of sugar. The maximum yield of wine from grapes is 30%.",
+    "The wine must age for at least two years. Wooden containers are forbidden, to keep its particular character. It can only be sold from 1 November of the second year after the harvest.",
+    "It reaches at least 17.00% vol total alcohol, of which at least 14.00% is actual alcohol, with 50 to 100 g/l of residual sugar.",
+    "The label must show the vintage. The wine is sold in glass bottles of no more than 750 ml, closed with a cork."
+   ],
+   "cite": [
+    "scanzo-disc:p1",
+    "scanzo-disc:p2",
+    "scanzo-disc:p3",
+    "scanzo-disc:p4",
+    "scanzo-disc:p5"
+   ]
+  }
+ ]
+}

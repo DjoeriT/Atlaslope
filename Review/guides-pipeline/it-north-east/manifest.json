@@ -1,0 +1,12 @@
+{
+ "sources": {
+  "alto-adige-disc": "Review/sources/fetched/disc-alto-adige.txt",
+  "trentino-disc": "Review/sources/fetched/disc-trentino.txt",
+  "collio-disc": "Review/sources/fetched/disc-collio.txt",
+  "friuli-colli-orientali-disc": "Review/sources/fetched/disc-friuli-colli-orientali.txt",
+  "friuli-grave-disc": "Review/sources/fetched/disc-friuli-grave.txt",
+  "colli-orientali-del-friuli-picolit-disc": "Review/sources/fetched/disc-colli-orientali-del-friuli-picolit.txt",
+  "ramandolo-disc": "Review/sources/fetched/disc-ramandolo.txt",
+  "rosazzo-disc": "Review/sources/fetched/disc-rosazzo.txt"
+ }
+}

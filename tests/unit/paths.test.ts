@@ -3,6 +3,7 @@ import { loadTree } from '../../src/tree';
 import { addressOf, hashAt, pathOf, placeOfPath, placePage, placePaths, siteRoot } from '../../src/paths';
 import { countryConfig, COUNTRIES } from '../../src/countries';
 import mask from '../../data/countries/pt/mask.json';
+import itMask from '../../data/countries/it/mask.json';
 
 // Two countries: Spain flat on atlas/#place=, Portugal on real paths (decision #48).
 const tree = loadTree({
@@ -69,13 +70,15 @@ describe('place paths', () => {
 
 describe('countries', () => {
   it('opens each country inside its own outline', () => {
-    const [[w, s], [e, n]] = COUNTRIES.portugal.bounds;
-    const pts = (mask as { land: number[][][][] }).land.flat(2);
-    const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
-    expect(Math.abs(Math.min(...xs) - w)).toBeLessThan(0.3);
-    expect(Math.abs(Math.max(...xs) - e)).toBeLessThan(0.3);
-    expect(Math.abs(Math.min(...ys) - s)).toBeLessThan(0.3);
-    expect(Math.abs(Math.max(...ys) - n)).toBeLessThan(0.3);
+    for (const [id, m] of [['portugal', mask], ['italy', itMask]] as const) {
+      const [[w, s], [e, n]] = COUNTRIES[id].bounds;
+      const pts = (m as { land: number[][][][] }).land.flat(2);
+      const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+      expect(Math.abs(Math.min(...xs) - w), id).toBeLessThan(0.3);
+      expect(Math.abs(Math.max(...xs) - e), id).toBeLessThan(0.3);
+      expect(Math.abs(Math.min(...ys) - s), id).toBeLessThan(0.3);
+      expect(Math.abs(Math.max(...ys) - n), id).toBeLessThan(0.3);
+    }
   });
 
   it('falls back to Spain for an unknown country', () => {

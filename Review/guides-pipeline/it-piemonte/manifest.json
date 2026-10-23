@@ -1,0 +1,24 @@
+{
+ "sources": {
+  "barolo-disc": "Review/sources/fetched/disc-barolo.txt",
+  "barbaresco-disc": "Review/sources/fetched/disc-barbaresco.txt",
+  "barbera-d-asti-disc": "Review/sources/fetched/disc-barbera-d-asti.txt",
+  "dolcetto-d-alba-disc": "Review/sources/fetched/disc-dolcetto-d-alba.txt",
+  "gavi-disc": "Review/sources/fetched/disc-gavi.txt",
+  "asti-disc": "Review/sources/fetched/disc-asti.txt",
+  "alta-langa-disc": "Review/sources/fetched/disc-alta-langa.txt",
+  "barbera-del-monferrato-superiore-disc": "Review/sources/fetched/disc-barbera-del-monferrato-superiore.txt",
+  "brachetto-dacqui-disc": "Review/sources/fetched/disc-brachetto-dacqui.txt",
+  "canelli-disc": "Review/sources/fetched/disc-canelli.txt",
+  "dogliani-disc": "Review/sources/fetched/disc-dogliani.txt",
+  "dolcetto-di-diano-dalba-disc": "Review/sources/fetched/disc-dolcetto-di-diano-dalba.txt",
+  "dolcetto-di-ovada-superiore-disc": "Review/sources/fetched/disc-dolcetto-di-ovada-superiore.txt",
+  "erbaluce-di-caluso-disc": "Review/sources/fetched/disc-erbaluce-di-caluso.txt",
+  "gattinara-disc": "Review/sources/fetched/disc-gattinara.txt",
+  "ghemme-disc": "Review/sources/fetched/disc-ghemme.txt",
+  "nizza-disc": "Review/sources/fetched/disc-nizza.txt",
+  "roero-disc": "Review/sources/fetched/disc-roero.txt",
+  "ruche-di-castagnole-monferrato-disc": "Review/sources/fetched/disc-ruche-di-castagnole-monferrato.txt",
+  "terre-alfieri-disc": "Review/sources/fetched/disc-terre-alfieri.txt"
+ }
+}

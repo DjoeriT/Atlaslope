@@ -1,0 +1,110 @@
+{
+ "id": "recioto-di-gambellara",
+ "title": "Why Recioto di Gambellara tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Garganega grapes are dried for 60 to 90 days in lofts and barns before they are made into wine. The area has big temperature swings and generally dry weeks before harvest, and the wine is sweet or semi-sweet with a slightly bitter finish.",
+  "cite": [
+   "recioto-di-gambellara-disc:p3",
+   "recioto-di-gambellara-disc:p4",
+   "recioto-di-gambellara-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Where the Chiampo valley opens",
+   "paras": [
+    "Gambellara sits on the border between Vicenza (22 km away) and Verona (30 km away). It lies where the Chiampo valley opens out, on the last foothills of the Monti Lessini.",
+    "The vineyards cover a broad stretch of hills. Their flat-topped ridges roll gently between 250 and 350 m, and vineyard-covered slopes drop away from them. Small green valleys cut by streams run between the slopes.",
+    "Two volcanic amphitheatres shape the landscape, with narrow valleys and slopes of different steepness. They shelter the vines in the hottest part of the year, when too much sun could damage the bunch and the plant."
+   ],
+   "cite": [
+    "recioto-di-gambellara-disc:p4",
+    "recioto-di-gambellara-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Where the Chiampo valley opens",
+     "point": [
+      11.34,
+      45.46
+     ],
+     "zoom": 10,
+     "caption": "Gambellara lies where the Chiampo valley opens, on the last foothills of the Monti Lessini.",
+     "cite": [
+      "recioto-di-gambellara-disc:p4"
+     ]
+    },
+    {
+     "label": "Monti Lessini",
+     "point": [
+      11.1,
+      45.65
+     ],
+     "zoom": 9,
+     "caption": "The Monti Lessini, whose last foothills carry the vineyards.",
+     "cite": [
+      "recioto-di-gambellara-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Rainy winters, drier weeks before harvest",
+   "paras": [
+    "More than 1200 mm of rain falls in a year, most often in winter and spring. June and July are the driest months, and so, generally, is the period before harvest.",
+    "That dry spell puts the vine under a kind of stress. It concentrates the minerals, sugars and aromatic substances in the berry, and gives the wine a complexity that brings out savoury and mineral notes.",
+    "Temperature swings are large, and on the plain they can pass 12 to 14 °C. Swings like these slow the ripening of the berries, so the other parts of the grape can develop fully before picking.",
+    "Several climate zones can be told apart. Even a few kilometres apart, their temperatures can differ clearly."
+   ],
+   "cite": [
+    "recioto-di-gambellara-disc:p4",
+    "recioto-di-gambellara-disc:p5",
+    "recioto-di-gambellara-disc:p6"
+   ]
+  },
+  {
+   "id": "basalt",
+   "beat": "ground",
+   "title": "Volcanic hills over clay",
+   "paras": [
+    "The hills are mostly volcanic. Parco San Marco, with its basalt columns, is a typical example. Limestone is present too, but much less so on the hilltops.",
+    "The soils tend to be clay all over, locally rich in bentonite. Outcrops of limestone and marly limestone have long been seen as the bigger influence on how the wines differ.",
+    "In some places the basalt underneath is impenetrable to roots. The vines stay in the upper layers of soil, where minerals are concentrated.",
+    "A limestone hill zone is very permeable and drains water easily. In long periods without rain, this raises the sugar of the grapes.",
+    "On the plain the soil is clay and silt, which sometimes drains badly after heavy rain."
+   ],
+   "cite": [
+    "recioto-di-gambellara-disc:p4",
+    "recioto-di-gambellara-disc:p6"
+   ]
+  },
+  {
+   "id": "appassimento",
+   "beat": "rules",
+   "title": "Grapes left to dry",
+   "paras": [
+    "Recioto di Gambellara is a sweet white from 100% Garganega. It comes in two forms: Classico and Spumante.",
+    "Drying the grapes is the step that defines the wine. Skilled hands hang the bunches as \"picai\" so they barely touch, or lay them on racks called \"rèle\", in places such as lofts and barns. Airflow, humidity and temperature there shape the result. The drying traditionally can last 60 to 90 days.",
+    "Climate-controlled rooms may be used too, if they run at temperatures like those of traditional drying.",
+    "Only part of the crop goes to drying: at most 6.25 tonnes per hectare, after sorting. The rest, up to 12.5 tonnes, can become Gambellara Classico if it qualifies. The dried grapes must give at least 14.00% natural alcohol.",
+    "Classico is straw to golden yellow, with intense ripe-fruit scent and sometimes a touch of vanilla. It is sweet or semi-sweet, with a slightly bitter finish. By tradition it can also be lightly fizzy (\"vivace\"). The total alcohol is at least 14.00% vol.",
+    "Classico must show its vintage. It cannot be sold before 1 September of the year after harvest.",
+    "Spumante has a fine, persistent foam. It smells fruity and tastes velvety. The total alcohol is also at least 14% vol.",
+    "A label may add \"vigna\" (vineyard) followed by the plot's place name. The plot must be listed in the Veneto vineyard register, and its wine kept apart.",
+    "Recioto di Gambellara won DOC status in 1970 and DOCG in 2008."
+   ],
+   "cite": [
+    "recioto-di-gambellara-disc:p1",
+    "recioto-di-gambellara-disc:p2",
+    "recioto-di-gambellara-disc:p3",
+    "recioto-di-gambellara-disc:p4",
+    "recioto-di-gambellara-disc:p5"
+   ]
+  }
+ ]
+}

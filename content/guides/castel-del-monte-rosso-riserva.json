@@ -1,0 +1,102 @@
+{
+ "id": "castel-del-monte-rosso-riserva",
+ "title": "Why Castel del Monte Rosso Riserva tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Nero di Troia grows on a stony limestone plateau where the soil is shallow and the water table is deep. The wine is then kept for at least two years, at least one of them in wood, before it is sold.",
+  "cite": [
+   "castel-del-monte-rosso-riserva-disc:p1",
+   "castel-del-monte-rosso-riserva-disc:p3",
+   "castel-del-monte-rosso-riserva-disc:p4",
+   "castel-del-monte-rosso-riserva-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "An area named for a castle",
+   "paras": [
+    "The middle of Puglia is crossed by the Murge, a plateau. The name Murgia comes from \"murex\", a sharp stone made mostly of limestone.",
+    "The highest points lie in the north-west: Monte Caccia at 680 m and Torre Disperata at 686 m. In the south-east the plateau does not pass 500 m.",
+    "The area takes its name from the famous castle of Frederick II, now a UNESCO site. It lies in the north-western part of the Murgia Centrale, one of Puglia's three wine-growing zones. Part of it is inside the Alta Murgia natural park."
+   ],
+   "cite": [
+    "castel-del-monte-rosso-riserva-disc:p4",
+    "castel-del-monte-rosso-riserva-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Castel del Monte",
+     "point": [
+      16.2706,
+      41.0846
+     ],
+     "zoom": 11,
+     "caption": "The castle of Frederick II, now a UNESCO site, gives the area its name.",
+     "cite": [
+      "castel-del-monte-rosso-riserva-disc:p4"
+     ]
+    },
+    {
+     "label": "Monte Caccia, the high north-west",
+     "point": [
+      16.1,
+      40.98
+     ],
+     "zoom": 10,
+     "caption": "The highest points of the Murge are in the north-west: Monte Caccia at 680 m and Torre Disperata at 686 m.",
+     "cite": [
+      "castel-del-monte-rosso-riserva-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry summers, January lows below zero",
+   "paras": [
+    "The climate is sub-Mediterranean. The mean annual temperature runs from about 17.5 °C at Andria, the lowest town and the closest to the sea, to 14.4 °C in the higher areas farther from the sea.",
+    "January is the coldest month, at about 7 °C on average, and lows are often below 0 °C. August, or July, is the warmest, at about 25 °C.",
+    "About 560 mm of rain falls in a year, mostly in autumn and winter and above all in November and December. From June to August, the dry season, only about 100 mm falls. Snow generally falls above 500 m.",
+    "Local winds have names. The Serratina blows cold and dry from the north and brings frost. The Favonio is hot and dry, from the south and south-west."
+   ],
+   "cite": [
+    "castel-del-monte-rosso-riserva-disc:p5"
+   ]
+  },
+  {
+   "id": "stone",
+   "beat": "ground",
+   "title": "Cretaceous stone and no surface water",
+   "paras": [
+    "The plateau's emergence is traced to the Cretaceous. Its bones are well-layered dolomitic limestone and dolomite, in beds from a few centimetres to a few metres thick. The rock is often cracked and shows varying karst. This cracked, karstic structure is why there is no surface water.",
+    "The area's rock is compact Cretaceous limestone. The most common soil is shallow, very stony and rocky. In extreme cases it may not even be fit for farming.",
+    "The water table is very deep and pumping water is costly. Irrigation has therefore been limited. Spread-out training forms, meant for higher yields, have mostly stayed in the lower, more fertile zones."
+   ],
+   "cite": [
+    "castel-del-monte-rosso-riserva-disc:p4",
+    "castel-del-monte-rosso-riserva-disc:p5"
+   ]
+  },
+  {
+   "id": "riserva",
+   "beat": "rules",
+   "title": "Nero di Troia, then two years of waiting",
+   "paras": [
+    "This is a red wine only, and it is always a Riserva. It must be at least 65% Nero di Troia. Up to 35% can come from other non-aromatic black grapes that suit the Murgia Centrale in Puglia.",
+    "Before sale the wine must age for at least two years, with at least one year in wood. The count starts on 1 November of the harvest year.",
+    "Yields are capped at 10 tonnes of grapes per hectare. New vineyards must be trained as alberello (bush vines) or on a trellis. They need at least 4,000 vines per hectare.",
+    "The finished wine has at least 13% alcohol. Its residual sugar is no more than 10 g per litre.",
+    "Every bottle shows the vintage. A wine from one named vineyard may say \"vigna\" (vineyard) with that vineyard's name."
+   ],
+   "cite": [
+    "castel-del-monte-rosso-riserva-disc:p1",
+    "castel-del-monte-rosso-riserva-disc:p2",
+    "castel-del-monte-rosso-riserva-disc:p3",
+    "castel-del-monte-rosso-riserva-disc:p4"
+   ]
+  }
+ ]
+}

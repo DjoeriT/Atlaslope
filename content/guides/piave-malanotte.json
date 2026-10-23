@@ -1,0 +1,101 @@
+{
+ "id": "piave-malanotte",
+ "title": "Why Piave Malanotte tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Raboso grapes ripen very late and are full of acid and tannin. Wine from part of the crop, dried on racks, is blended with wine from fresh grapes, and that softens their sharp edges.",
+  "cite": [
+   "piave-malanotte-disc:p6",
+   "piave-malanotte-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "From the Treviso plain to the lagoon",
+   "paras": [
+    "The vineyards lie on the middle and lower plain along the Piave river. The zone starts where the river opens into the plain of Treviso and borders the lagoon of Venice.",
+    "The name comes from Borgo Malanotte, a medieval village in Tezze di Piave, in the province of Treviso. It is the heart of production.",
+    "Vines have grown here since 181 BC, when the Romans built the Via Postumia. The barbarian invasions destroyed them. They came back strongly under the Republic of Venice, when Venetian nobles competed to make the best wine."
+   ],
+   "cite": [
+    "piave-malanotte-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Borgo Malanotte, Tezze di Piave",
+     "point": [
+      12.3667,
+      45.8333
+     ],
+     "zoom": 10,
+     "caption": "The medieval village that gave the wine its name, in the heart of production.",
+     "cite": [
+      "piave-malanotte-disc:p6"
+     ]
+    },
+    {
+     "label": "The lagoon of Venice",
+     "point": [
+      12.33,
+      45.43
+     ],
+     "zoom": 9,
+     "caption": "The zone of production borders the lagoon of Venice.",
+     "cite": [
+      "piave-malanotte-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Cool air for late grapes",
+   "paras": [
+    "The climate is temperate, with hot summers and winters that are never very cold. Rain is spread fairly evenly through the year. It is heavier near the hills and lighter further south.",
+    "Cool air arrives from the north-east. Day to night swings are stronger in the north of the zone.",
+    "Autumn still brings sunny, dry days, which favour full ripening. The cool air lowers night temperatures in October and November. That stops rot from forming on the bunches, and the grapes arrive at harvest perfectly healthy."
+   ],
+   "cite": [
+    "piave-malanotte-disc:p6",
+    "piave-malanotte-disc:p7"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Warm gravel left by glaciers",
+   "paras": [
+    "The soils are deposits left first by glaciers and then by the Piave. They count as \"warm\": stony, deep for roots, free of standing water and poor in organic matter. They hold a good, balanced supply of minerals, especially phosphorus and magnesium.",
+    "In long dry spells the roots can search deep for water, even in the hottest season. The low organic matter and balanced minerals lower the vigour of the vines. The Raboso grapes then build up a high concentration of colour. The wines gain plenty of acidity, tannin and aroma.",
+    "Vineyards must stand on well-placed ground of sedimentary, alluvial origin. It must be mainly clayey, limy and gravelly. Peaty, damp or cool soils are excluded, and so are clearly siliceous ones."
+   ],
+   "cite": [
+    "piave-malanotte-disc:p4",
+    "piave-malanotte-disc:p6",
+    "piave-malanotte-disc:p7"
+   ]
+  },
+  {
+   "id": "raboso",
+   "beat": "rules",
+   "title": "A hard grape, tamed by drying",
+   "paras": [
+    "Malanotte is a red wine only. It is at least 70% Raboso Piave, with up to 30% Raboso Veronese. Up to 5% of the Raboso Veronese can be swapped for other red grapes suited to the provinces of Treviso and Venezia.",
+    "Raboso has always been hard to manage. It ripens very late and holds a lot of malic and tartaric acid. Its tannins are hard to ripen and its green notes are unpleasant. In good hands it makes wines of great character.",
+    "The answer is a traditional blend of wine from fresh grapes and wine from grapes dried on racks. The dried share is 15 to 30%, depending on the year. The blend softens the wine's sharp edges without taking away its freshness and fragrance.",
+    "The drying grapes cannot be pressed before 15 November 2017, a date the Veneto region can bring forward. The wine must age at least 36 months, with at least 12 in barrel and 4 in bottle, counted from 1 November of the harvest year.",
+    "In the glass it is intense ruby with violet tints and turns garnet with age. The nose runs to morello cherry and blackberry. With age come spice, mint and eucalyptus. The taste is austere and savoury, with tannins high but soft. Barrel ageing can leave a hint of wood.",
+    "Raboso was traditionally grown on the Bellussera, the historic \"raggi\" system, which is found only in this area. It was created largely for Raboso, to ripen the grapes with more certainty and earlier. It is now disappearing, as newer systems take its place."
+   ],
+   "cite": [
+    "piave-malanotte-disc:p1",
+    "piave-malanotte-disc:p4",
+    "piave-malanotte-disc:p5",
+    "piave-malanotte-disc:p7"
+   ]
+  }
+ ]
+}

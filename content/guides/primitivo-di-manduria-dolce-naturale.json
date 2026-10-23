@@ -1,0 +1,123 @@
+{
+ "id": "primitivo-di-manduria-dolce-naturale",
+ "title": "Why Primitivo di Manduria Dolce Naturale tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Between the Ionian coast and the Salento, Primitivo grapes may be dried before they become a sweet, velvety red.",
+  "cite": [
+   "primitivo-di-manduria-dolce-naturale-disc:p3",
+   "primitivo-di-manduria-dolce-naturale-disc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Steps down to the Ionian Sea",
+   "paras": [
+    "The vineyards lie in the provinces of Taranto and Brindisi, in two kinds of landscape. One is the Arco Jonico, the coastal strip. The other is the Salento peninsula, which covers the south-east of the Taranto area.",
+    "The Arco Jonico runs from the Ionian coast to the base of the Murge hills. Short cycles of the sea advancing and retreating since the middle Pliocene left a stepped landscape of slopes that fall toward the shore. Along the coast there are dunes, with wide hollows behind them.",
+    "Across the whole zone, vines alternate with arable fields and sparse olive groves. The land is essentially flat."
+   ],
+   "cite": [
+    "primitivo-di-manduria-dolce-naturale-disc:p1",
+    "primitivo-di-manduria-dolce-naturale-disc:p2",
+    "primitivo-di-manduria-dolce-naturale-disc:p4",
+    "primitivo-di-manduria-dolce-naturale-disc:p5",
+    "primitivo-di-manduria-dolce-naturale-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Campomarino and its dunes",
+     "point": [
+      17.58,
+      40.31
+     ],
+     "zoom": 10.5,
+     "caption": "Primitivo was probably planted on the dunes of Campomarino, a seaside village of Maruggio, in the late 19th century.",
+     "cite": [
+      "primitivo-di-manduria-dolce-naturale-disc:p5",
+      "primitivo-di-manduria-dolce-naturale-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Fairly mild winters, warm summers",
+   "paras": [
+    "The Arco Jonico has a Mediterranean climate. Winters are fairly mild, with an average minimum of 6-7 °C. Summers are warm, with an average maximum of 25-26 °C. About 650 mm of rain falls in a year, mostly in winter.",
+    "The Salento juts out into the sea and is more humid than the rest of Puglia. The humidity does not turn into rain, though rain is still heavier than in northern Puglia. It sharpens how the temperature feels. Summers are very muggy, above all in the southernmost parts. Winters stay well above zero even in the coldest spells, yet feel icy in the wind.",
+    "Primitivo's growing cycle is shorter than that of other varieties. Despite ripening early, it buds late and so is little exposed to frost damage. Its flowering is delicate. It resists fungal diseases fairly well."
+   ],
+   "cite": [
+    "primitivo-di-manduria-dolce-naturale-disc:p4",
+    "primitivo-di-manduria-dolce-naturale-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep in the west, thin by the sea",
+   "paras": [
+    "In the west of the zone deep clay-loam soils dominate. Going down toward the coast they turn sandy and thin, which leaves little room for roots. On the coastal strip the soils are very thin, with the underlying substrate within 25-50 cm. Inland the soils generally get deeper.",
+    "The three Brindisi municipalities mostly have sandy clay-loam soils of medium texture with good drainage. Erchie has soils that tend to be thin, with good drainage and oxygen.",
+    "In the far south of the Salento, the serre are narrow, long ridges of limestone or limestone-dolomite. Here and there they are cut by flat erosion furrows."
+   ],
+   "cite": [
+    "primitivo-di-manduria-dolce-naturale-disc:p4",
+    "primitivo-di-manduria-dolce-naturale-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Manduria and its plain",
+     "point": [
+      17.63,
+      40.4
+     ],
+     "zoom": 10,
+     "caption": "Primitivo reached the plain of Manduria, probably in the late 19th century.",
+     "cite": [
+      "primitivo-di-manduria-dolce-naturale-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sweet-red",
+   "beat": "rules",
+   "title": "A sweet red from Primitivo alone",
+   "paras": [
+    "The wine is a sweet red made from 100% Primitivo. It is the only type made. The grapes must reach at least 16% natural alcohol at harvest, and enriching the must or the wine is forbidden.",
+    "The grapes may be dried on the vine, on racks, or in crates outdoors. They may also be dried indoors, in rooms that may have temperature, humidity or forced-ventilation control. An 1887 note on Primitivo near Bari mentions a liqueur-like wine in some places. It is probably the first hint of a wine from partly dried grapes like this one.",
+    "Only the first crop of bunches can be used. The later crop, the racemi, is excluded. These side-shoot bunches ripen fully after the main harvest. They used to be picked about a month later and made a drier, more tannic and deeper-coloured wine.",
+    "Total alcohol is at least 16%, of which 13% is actual. Residual sugar is at least 50 g/l.",
+    "Yields are capped at 7 t/ha of grapes and 42 hl/ha of wine. The wine cannot be sold before 1 June of the year after the harvest. The vintage must appear on the label. Words such as riserva or superiore are banned."
+   ],
+   "cite": [
+    "primitivo-di-manduria-dolce-naturale-disc:p1",
+    "primitivo-di-manduria-dolce-naturale-disc:p2",
+    "primitivo-di-manduria-dolce-naturale-disc:p3",
+    "primitivo-di-manduria-dolce-naturale-disc:p5",
+    "primitivo-di-manduria-dolce-naturale-disc:p6"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "Vigna (vineyard) may appear only with the vineyard's place name, taken from a regional list. The plot must be registered on its own, and its wine made and kept in separate containers.",
+    "cite": [
+     "primitivo-di-manduria-dolce-naturale-disc:p3",
+     "primitivo-di-manduria-dolce-naturale-disc:p4"
+    ]
+   }
+  ],
+  "cite": [
+   "primitivo-di-manduria-dolce-naturale-disc:p3",
+   "primitivo-di-manduria-dolce-naturale-disc:p4"
+  ]
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "id": "collio",
+ "title": "Why Collio tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A ring of mountains shelters Collio's hills from cold north winds, and sunlight reflected off the nearby Adriatic adds to the sun they get. The rock beneath crumbles easily into a very fine soil, ideal for good vines.",
+  "cite": [
+   "collio-disc:p9",
+   "collio-disc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills against the border",
+   "paras": [
+    "Collio is the northern belt of hills in the province of Gorizia. The Isonzo river bounds it to the east and the Judrio to the west. The state border with Slovenia runs along its north, and the Isonzo plain lies to the south. About 1,500 hectares of vines grow there.",
+    "The hills run almost without a break from east to west. They average 60 to 270 m above sea level, and the slopes average 15 to 30%. Vineyards generally face south, and some face south-east.",
+    "Only hillside vineyards count. Valley-floor and plain sites are excluded. Flat plots made by reshaping a hillside still qualify. So do foot-of-hill sites in the first zone above 85 m."
+   ],
+   "cite": [
+    "collio-disc:p3",
+    "collio-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Collio hills",
+     "point": [
+      13.52,
+      45.99
+     ],
+     "zoom": 10,
+     "caption": "The hills between the Isonzo and the Judrio, up against the border with Slovenia.",
+     "cite": [
+      "collio-disc:p9"
+     ]
+    },
+    {
+     "label": "The Isonzo river",
+     "point": [
+      13.63,
+      45.96
+     ],
+     "zoom": 10,
+     "caption": "The Isonzo marks the eastern edge of the zone.",
+     "cite": [
+      "collio-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered from the north, lit by the sea",
+   "paras": [
+    "The Julian Prealps lie to the north and shield the hills from cold northern winds. The Adriatic coast is on average about 20 km away. Together they help soften the swings in temperature, which favours a mild, temperate microclimate.",
+    "Sunlight reflected from the nearby sea adds to the sun the hills receive. The best-placed hillsides averaged about 5,600 MJ/m² a year from 1991 to 2002, against about 4,800 MJ/m² on the surrounding plain.",
+    "Summers are hot but not muggy, with mean temperatures of 21.5 to 22.5 °C. Winters are cold and fairly rainy, at about 4 °C on average. Rain totals 1,350 to 1,400 mm a year, and in the average year over 50% of it falls between 1 April and 30 September, while the vine is growing."
+   ],
+   "cite": [
+    "collio-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Julian Prealps",
+     "point": [
+      13.4,
+      46.2
+     ],
+     "zoom": 9,
+     "caption": "The mountain ring north of the hills that keeps out the cold winds.",
+     "cite": [
+      "collio-disc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flysch",
+   "beat": "ground",
+   "title": "Rock that crumbles into fine soil",
+   "paras": [
+    "The soils are flysch, laid down in Eocene and Paleocene times. The rock rose from the seabed, and growers often find marine fossils in the vineyards. Marl and sandstone are about equal over most of the zone.",
+    "This rock breaks down easily in the weather. It first gives a gritty soil and, within a few years, a very fine one, ideal for good vines. Above the rock, roots have on average about 50 to 100 cm of soil, and in places 150 cm.",
+    "The soils are usually well drained. That eases the work and lets the vine give its best in quality."
+   ],
+   "cite": [
+    "collio-disc:p9",
+    "collio-disc:p10"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Mostly white, with a sweet Picolit",
+   "paras": [
+    "For many people Collio simply means very good white wine. Most of the permitted grapes are white. The reds are fewer, though not lesser in quality. About 90% of the wine was white in the early 1900s.",
+    "The wines may be labelled Collio Goriziano or simply Collio. Whites and reds are dry. The one exception is Picolit, a white that is off-dry or sweet, warm and harmonious.",
+    "The Bianco blend runs from straw yellow to deep gold, sometimes with coppery glints. Its nose is delicate and lightly aromatic. On the palate it is dry and lively, fresh and harmonious. The Rosso blend is ruby, at times with garnet glints. It smells slightly herbaceous and winey, and tastes dry and full-bodied.",
+    "A bottle can name one grape if the estate's vineyards hold at least 85% of it. Up to 15% of other listed grapes of the same colour may join. Otherwise it is a Bianco or a Rosso blend. The name Cabernet is reserved for Cabernet Franc, Cabernet Sauvignon and Carmenere. In a Bianco, Muller Thurgau and Traminer aromatico may not exceed 15% of the total.",
+    "Yields are capped at 11 t/ha, and at just 4 t/ha for Picolit. New vineyards need at least 4,000 vines per hectare. Picolit must also reach at least 14% total alcohol. Every label must show the vintage.",
+    "Riserva whites age 20 months and reds 30 months, at least six of them in wood, counted from 1 November of the harvest year. Their grapes need at least 12% natural alcohol. Neither may be enriched, and Picolit cannot be a Riserva.",
+    "Terraces called roncs are still in use, though wider than they once were. Each holds one row of vines, sometimes two. Count Teodoro Latour brought in French and German varieties in the second half of the 1800s. The area became a DOC, Italy's controlled designation of origin, in 1968."
+   ],
+   "cite": [
+    "collio-disc:p1",
+    "collio-disc:p2",
+    "collio-disc:p4",
+    "collio-disc:p5",
+    "collio-disc:p7",
+    "collio-disc:p8",
+    "collio-disc:p9",
+    "collio-disc:p10",
+    "collio-disc:p11"
+   ]
+  }
+ ]
+}

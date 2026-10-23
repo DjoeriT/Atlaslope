@@ -1,0 +1,16 @@
+{
+ "sources": {
+  "chianti-disc": "Review/sources/fetched/disc-chianti.txt",
+  "chianti-classico-disc": "Review/sources/fetched/disc-chianti-classico.txt",
+  "bolgheri-disc": "Review/sources/fetched/disc-bolgheri.txt",
+  "brunello-di-montalcino-disc": "Review/sources/fetched/disc-brunello-di-montalcino.txt",
+  "vino-nobile-di-montepulciano-disc": "Review/sources/fetched/disc-vino-nobile-di-montepulciano.txt",
+  "carmignano-disc": "Review/sources/fetched/disc-carmignano.txt",
+  "elba-aleatico-passito-disc": "Review/sources/fetched/disc-elba-aleatico-passito.txt",
+  "montecucco-sangiovese-disc": "Review/sources/fetched/disc-montecucco-sangiovese.txt",
+  "morellino-di-scansano-disc": "Review/sources/fetched/disc-morellino-di-scansano.txt",
+  "suvereto-disc": "Review/sources/fetched/disc-suvereto.txt",
+  "val-di-cornia-rosso-disc": "Review/sources/fetched/disc-val-di-cornia-rosso.txt",
+  "vernaccia-di-san-gimignano-disc": "Review/sources/fetched/disc-vernaccia-di-san-gimignano.txt"
+ }
+}

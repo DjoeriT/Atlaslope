@@ -1,0 +1,159 @@
+{
+ "id": "franciacorta",
+ "title": "Why Franciacorta tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "A great glacier shaped an amphitheatre of morainic hills, and Lake Iseo tempers both summer heat and winter cold. The wines then rest on their lees for at least 18 months, and the bouquet carries bread crust and yeast.",
+  "cite": [
+   "franciacorta-disc:p11",
+   "franciacorta-disc:p13",
+   "franciacorta-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "An amphitheatre shaped by ice",
+   "paras": [
+    "Franciacorta lies in the province of Brescia, at the northern edge of the Po plain, tucked into the Alps near Lake Iseo. Rocky, morainic hills close it in on the east. The southern shore of the lake and the last spurs of the Rhaetian Alps lie to the north. The river Oglio runs along the west and Monte Orfano stands to the south.",
+    "The bowl itself is a wide morainic amphitheatre. It was shaped by a great glacier from the Valcamonica, which advanced and retreated over long geological ages.",
+    "The name comes from the \"francae curtes\", the monastic courts that were exempt from customs duties for clearing and farming the land. Venice's Doge Francesco Foscari described the area in 1429, within the limits the rules still use today.",
+    "Vines grew wild here in prehistoric times. Grape pips turned up near Provaglio d'Iseo, where there were probably lake-dwelling settlements."
+   ],
+   "cite": [
+    "franciacorta-disc:p2",
+    "franciacorta-disc:p11",
+    "franciacorta-disc:p12",
+    "franciacorta-disc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Lake Iseo, southern shore",
+     "point": [
+      10.05,
+      45.67
+     ],
+     "zoom": 10,
+     "caption": "The southern shore of Lake Iseo forms the northern edge of Franciacorta.",
+     "cite": [
+      "franciacorta-disc:p11"
+     ]
+    },
+    {
+     "label": "Monte Orfano",
+     "point": [
+      9.96,
+      45.585
+     ],
+     "zoom": 11,
+     "caption": "Monte Orfano marks the southern edge of Franciacorta.",
+     "cite": [
+      "franciacorta-disc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lake",
+   "beat": "weather",
+   "title": "A lake that tempers heat and cold",
+   "paras": [
+    "Franciacorta sits in the Insubrian meso-climate zone, with some Mediterranean traits. Winters are relatively mild and summers are not too hot. Temperatures swing a fair amount from day to night and across the year.",
+    "Nearby Lake Iseo softens average temperatures and lowers the risk of frost. It also brings more rain and shapes the winds. In summer, cool currents blow along the corridor of the Valcamonica and the lake, easing the heat. In winter the lake gives back the heat it stored in the warm season.",
+    "About 1000 mm of rain falls in a year. Rain comes most often in autumn and spring. During the growing season it is generally well spread, between 500 and 600 mm. The Winkler index runs from 1800 to 2300 degree days, depending on height, exposure and the effect of the lake.",
+    "The day-to-night swings preserve the grapes' varietal aromas. Grapes and musts keep acidity high enough for wine that ferments again in the bottle."
+   ],
+   "cite": [
+    "franciacorta-disc:p12",
+    "franciacorta-disc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Valcamonica corridor",
+     "point": [
+      10.28,
+      45.9
+     ],
+     "zoom": 9,
+     "caption": "In summer, cool currents blow along the corridor of the Valcamonica and the lake.",
+     "cite": [
+      "franciacorta-disc:p13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "moraine",
+   "beat": "ground",
+   "title": "Six kinds of vineyard ground",
+   "paras": [
+    "Most of the soils share a morainic origin. They are fairly deep and drain well. They hold a good or high water reserve, which makes them well suited to the vine.",
+    "Zoning work in the 1990s identified six distinct vocational units, kinds of ground each suited to the vine in its own way. From one unit to the next the vines grow differently and the grapes ripen at their own pace. The base wines taste different too.",
+    "Thin moraine has thin soils on the ridges and steepest slopes. It has the lowest yield potential and the earliest ripening. Its base wines lean spicy-vegetal and complex.",
+    "Fine deposits are deep, silty soils, mostly where the glacier retreated and lakes left sediment. A floral note leads in their wines.",
+    "Fluvioglacial soils lie where the glacier's meltwater ran out. They are medium deep with coarse stones, give higher yields and ripen later. The wines have medium complexity, and dried fruit leads.",
+    "Colluvium is very deep soil, and it counts as two units. One is on the terraced slopes, the other at the gentle foot of the limestone hills. On the gentle ground, yields and acidity are clearly higher than on the terraces.",
+    "Deep moraine has deep soils on the outer ring of morainic hills. Colluvium and deep moraine give wines marked by dried fruit and spicy-vegetal notes.",
+    "This variety of ground is the basis of the cuvée, the blend of base wines from different units. It allows cuvées of great complexity."
+   ],
+   "cite": [
+    "franciacorta-disc:p11",
+    "franciacorta-disc:p12",
+    "franciacorta-disc:p13"
+   ]
+  },
+  {
+   "id": "lees",
+   "beat": "rules",
+   "title": "Only bottle-fermented, and only slowly",
+   "paras": [
+    "Franciacorta is reserved for wine made only by a second fermentation in the bottle, with the sediment removed by disgorgement. The single word Franciacorta names the wine and the land, together with the way it is made.",
+    "The grapes are Chardonnay and Pinot nero. Pinot bianco can make up to 50% and Erbamat up to 10%. Erbamat has been allowed only since 2017. Franciacorta Rosé needs at least 35% Pinot nero. Satèn needs at least 50% Chardonnay, and only Pinot bianco may join it.",
+    "Whole bunches go straight to the press without destemming. Pinot nero for Rosé is the exception. Picking is by hand, into boxes holding no more than 0.2 t. The vineyard maximum is 10 tonnes of grapes per hectare, and no more than 65% of that can become base wine.",
+    "Ageing on the lees starts from bottling and runs for at least 18 months for the plain wine. Rosé and Satèn need 24 months. Vintage wines, called millesimato, need 30 months and must come from at least 85% of that year. Riserva is a vintage wine with at least 60 months on the lees.",
+    "Satèn has a creamy, lasting mousse, a pressure of at most 5 atm and no more than 20 g/l of sugar when the second fermentation starts. It is sold only as brut. Rosé must already be pink before bottling.",
+    "Beyond the shared bouquet, the types differ. Rosé carries hints typical of Pinot nero. Satèn tastes creamy. Riserva shows complex, evolved notes from long ageing in the bottle, and its colour can take copper glints.",
+    "Cellars may also keep wine on its lees in bottles of up to 9 litres for longer maturing. It is later emptied out, blended and refermented."
+   ],
+   "cite": [
+    "franciacorta-disc:p2",
+    "franciacorta-disc:p4",
+    "franciacorta-disc:p5",
+    "franciacorta-disc:p6",
+    "franciacorta-disc:p7",
+    "franciacorta-disc:p8",
+    "franciacorta-disc:p9",
+    "franciacorta-disc:p10",
+    "franciacorta-disc:p12",
+    "franciacorta-disc:p13"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Dosaggio zero, extra brut, brut, extra dry, sec, demi-sec",
+    "text": "These are the sweetness levels allowed for plain Franciacorta and Rosé. Vintage wines may not be sec or demi-sec. Riserva may only be dosaggio zero, extra brut or brut. Satèn may only be brut.",
+    "cite": [
+     "franciacorta-disc:p8",
+     "franciacorta-disc:p9",
+     "franciacorta-disc:p10"
+    ]
+   },
+   {
+    "term": "Metodo classico, vino spumante",
+    "text": "Neither may appear on the label, which may not name the method at all. Nor may it name a village, area or vineyard, except inside an estate's own name.",
+    "cite": [
+     "franciacorta-disc:p11"
+    ]
+   }
+  ],
+  "cite": [
+   "franciacorta-disc:p8",
+   "franciacorta-disc:p9",
+   "franciacorta-disc:p10",
+   "franciacorta-disc:p11"
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "vernaccia-di-san-gimignano",
+ "title": "Why Vernaccia di San Gimignano tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Sands and clays from a Pliocene sea floor, laid down 6.8 to 1.8 million years ago, carry the vines of one hilly commune. Each soil's own mix is what brings out the wine's sapidity and freshness.",
+  "cite": [
+   "vernaccia-di-san-gimignano-disc:p5",
+   "vernaccia-di-san-gimignano-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "One town, halfway between coast and mountains",
+   "paras": [
+    "Every vine lies inside the commune of San Gimignano, in the north-west of the province of Siena. It sits in the heart of Tuscany, halfway between the Tyrrhenian coast and the Apennine ridge.",
+    "The land is hilly and runs from 67 to 629 m above sea level. The vineyards lie between 70 and 500 m, and the rules allow none above 500 m."
+   ],
+   "cite": [
+    "vernaccia-di-san-gimignano-disc:p2",
+    "vernaccia-di-san-gimignano-disc:p5",
+    "vernaccia-di-san-gimignano-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "San Gimignano",
+     "point": [
+      11.043,
+      43.468
+     ],
+     "zoom": 11,
+     "caption": "The town whose commune holds every vineyard. Its history is bound up with the wine's.",
+     "cite": [
+      "vernaccia-di-san-gimignano-disc:p5",
+      "vernaccia-di-san-gimignano-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Fairly dry summers, rain peaking in autumn",
+   "paras": [
+    "The climate is sub-Mediterranean, with fairly dry summers and fairly cold winters. Rain comes in two periods: late autumn to early winter, and late winter to early spring.",
+    "About 700 mm falls in a year, over 83 days of rain on average. Rain dips in summer and peaks in autumn. The area has good ventilation all year, and fog is rare."
+   ],
+   "cite": [
+    "vernaccia-di-san-gimignano-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "An old sea floor",
+   "paras": [
+    "The vineyard soils formed on marine deposits from the Pliocene. They are yellow sands, called tufo, and yellow and grey clays. These often lie over more compact clay deeper down.",
+    "The soils are strongly sandy, with stones and clayey schists. That mix favours roots pushing down. They generally hold organic matter, helped by centuries of repeated working and crop rotation.",
+    "Each soil holds its own share of sand and clay. Its organic matter and stones vary too. That mix is the key soil factor in bringing out the wine's sapidity and freshness. It shapes how well the wine ages as well. These traits are shared by every Vernaccia, yet set each one apart."
+   ],
+   "cite": [
+    "vernaccia-di-san-gimignano-disc:p2",
+    "vernaccia-di-san-gimignano-disc:p5",
+    "vernaccia-di-san-gimignano-disc:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A white also made as a Riserva",
+   "paras": [
+    "The wine is white and dry, and the grape is Vernaccia di San Gimignano. Up to 15% can come from other non-aromatic white grapes suited to Tuscany. Sauvignon blanc and Riesling can add up to 10%, alone or together.",
+    "With age its golden hints deepen. Mineral notes can follow the first fruity ones as it matures.",
+    "Vernaccia di San Gimignano is one of very few Italian whites also made as a Riserva. The Riserva is more structured. It needs at least 11 months of ageing from 1 January after the harvest, plus 3 months in bottle before release, and at least 12.5% alcohol.",
+    "A label can add \"vigna\" (vineyard) with the vineyard's place name. That wine is vinified and kept apart. Every label must carry the vintage and the word \"Toscana\".",
+    "It is one of Italy's oldest wines. In 1276 the commune taxed each load of Vernaccia sold outside its land at three soldi. Its fame had already crossed the town walls. In 1966 it became the first Italian wine with a controlled denomination of origin, and it gained DOCG in 1993."
+   ],
+   "cite": [
+    "vernaccia-di-san-gimignano-disc:p1",
+    "vernaccia-di-san-gimignano-disc:p3",
+    "vernaccia-di-san-gimignano-disc:p4",
+    "vernaccia-di-san-gimignano-disc:p5",
+    "vernaccia-di-san-gimignano-disc:p7",
+    "vernaccia-di-san-gimignano-disc:p8"
+   ]
+  }
+ ]
+}

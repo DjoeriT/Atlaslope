@@ -1,0 +1,135 @@
+{
+ "id": "roero",
+ "title": "Why Roero tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Where a river changed its course, sand now alternates with clay and limestone in the hills. More sand gives wines that are fresh and elegant, with subtle scents.",
+  "cite": [
+   "roero-disc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "tanaro",
+   "beat": "place",
+   "title": "The hills on the Tanaro's left bank",
+   "paras": [
+    "Roero lies on the left bank of the Tanaro river, in 19 municipalities. Two grapes grow here above all: Nebbiolo and Arneis.",
+    "The vineyards are on hills. Valley floors and flat land are left out. So are damp sites and sites without enough sun. The slopes are very steep and rugged, so the vineyards need a lot of care and a lot of work.",
+    "The land is shaped by the rocche, landforms linked to the \"capture of the Tanaro\". That is the name for the river's change of course after a movement of the earth's crust."
+   ],
+   "cite": [
+    "roero-disc:p3",
+    "roero-disc:p8",
+    "roero-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Canale and the bric Renesio",
+     "point": [
+      7.99,
+      44.8
+     ],
+     "zoom": 10,
+     "caption": "Canale is one of four municipalities lying wholly in the zone. Behind the town is the bric Renesio, which some sources tie to the name Arneis.",
+     "cite": [
+      "roero-disc:p2",
+      "roero-disc:p9"
+     ]
+    },
+    {
+     "label": "The Tanaro river",
+     "point": [
+      8.02,
+      44.71
+     ],
+     "zoom": 10,
+     "caption": "Roero lies on the Tanaro's left bank. The river changed its course after a movement of the earth's crust.",
+     "cite": [
+      "roero-disc:p8",
+      "roero-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "South for the red, north too for the white",
+   "paras": [
+    "Red Roero may not come from north-facing slopes, meaning 22.5° either side of due north. Its vineyards face south. Arneis for the white wine can also grow on north-facing slopes.",
+    "The sparkling wines have good acidity. Temperature swings favour it, and so do vineyards that also face cooler areas."
+   ],
+   "cite": [
+    "roero-disc:p3",
+    "roero-disc:p9"
+   ]
+  },
+  {
+   "id": "layers",
+   "beat": "ground",
+   "title": "An old sea floor, remixed",
+   "paras": [
+    "The soils come from stacked layers of different origin that were broken up and mixed again. They were laid down long ago on the floor of an ancient inland sea, later named the Golfo Padano. The mix can differ from zone to zone.",
+    "This mix of soils is decisive for the wines. Clay shows in the colour. Limestone shows in aromatic finesse.",
+    "Nebbiolo is grown mostly on south-facing slopes. It is well adapted to the steeper hillsides and the leaner, sandier soils. Arneis benefits from the \"arenarie siccitose\", dry sandstones that are soft and permeable, with sandy layers between marls. They give its wines subtle, elegant scents."
+   ],
+   "cite": [
+    "roero-disc:p9"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Red from Nebbiolo, white from Arneis",
+   "paras": [
+    "Red Roero is at least 95% Nebbiolo. White Roero, or Roero Arneis, is at least 95% Arneis.",
+    "Roero Spumante is made from Arneis too. It is a quality sparkling wine, made within the winemaking zone. It can be anything from brut nature to sweet.",
+    "Both still wines can be riserva. Red riserva ages for at least 32 months, with at least 6 in wood. White riserva ages for at least 16 months. Red Roero that is not riserva needs 20 months, again with at least 6 in wood.",
+    "Long ageing, also in wood, is a local skill. In the riserva reds it brings velvety tannins and hints of spice. The colour moves toward garnet.",
+    "The name Arneis may come from a local word for a grumpy, unreliable person. It has grown on these hills since the 1400s."
+   ],
+   "cite": [
+    "roero-disc:p2",
+    "roero-disc:p6",
+    "roero-disc:p7",
+    "roero-disc:p9",
+    "roero-disc:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word vigna with a listed vineyard name can follow Roero on the label. The vines must be at least 3 years old, with lower yields.",
+    "cite": [
+     "roero-disc:p4",
+     "roero-disc:p8"
+    ]
+   },
+   {
+    "term": "Menzione geografica aggiuntiva",
+    "text": "An extra place name: one of the listed municipalities or localities can follow Roero on the label. A white with such a name ages at least 4 months.",
+    "cite": [
+     "roero-disc:p6",
+     "roero-disc:p8",
+     "roero-disc:p12"
+    ]
+   },
+   {
+    "term": "Vintage",
+    "text": "The year of the harvest must be on every Roero label.",
+    "cite": [
+     "roero-disc:p8"
+    ]
+   }
+  ],
+  "cite": [
+   "roero-disc:p4",
+   "roero-disc:p6",
+   "roero-disc:p8",
+   "roero-disc:p12"
+  ]
+ }
+}

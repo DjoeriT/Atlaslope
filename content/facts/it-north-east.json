@@ -1,0 +1,809 @@
+{
+ "region": "it-north-east",
+ "sheets": [
+  {
+   "id": "alto-adige",
+   "why": {
+    "text": "Sunny south-Alpine valleys with big day-night swings, vineyards from 220 to over 1,000 m, varied soils and a very wide range of grapes.",
+    "cite": [
+     "alto-adige-disc:p30",
+     "alto-adige-disc:p31",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Kerner",
+     "Moscato Giallo",
+     "Müller Thurgau",
+     "Pinot Bianco",
+     "Pinot Grigio",
+     "Riesling",
+     "Riesling Italico",
+     "Sauvignon",
+     "Sylvaner",
+     "Traminer Aromatico",
+     "Veltliner",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Lagrein",
+     "Malvasia",
+     "Merlot",
+     "Moscato Rosa",
+     "Pinot Nero",
+     "Schiava",
+     "Schiava Grossa",
+     "Schiava Gentile",
+     "Schiava Grigia",
+     "Portoghese"
+    ],
+    "othersCite": [
+     "alto-adige-disc:p2",
+     "alto-adige-disc:p3",
+     "alto-adige-disc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Mostly dry still whites and reds, often single-grape; also bottle-fermented sparkling, rosé, and sweet passito and late-harvest wines.",
+    "cite": [
+     "alto-adige-disc:p2",
+     "alto-adige-disc:p20",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "climate": {
+    "text": "Continental, on the sunny south side of the Alps. Mean temperatures run 9.5 to 13 °C with 1,800 to 2,300 sun hours a year. Rain is 450 to 600 mm in the north and about 860 mm in the far south. Day-night swings average up to 15 °C, peaking at 20 °C in September and October.",
+    "cite": [
+     "alto-adige-disc:p31"
+    ]
+   },
+   "soil": {
+    "text": "Valley floors are fertile alluvial. Hill vineyards are mostly glacial moraine gravel. Between Merano and Bolzano the soil is often quartz porphyry; in the north quartz and mica; in the south limy soil from dolomite. About 60% of soils are light, sandy to gravelly.",
+    "cite": [
+     "alto-adige-disc:p31"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards run from 220 to over 1,000 m: 29% at 220 to 300 m, 57% at 300 to 500 m, 14% above 500 m. Only 15% is flat; 30% is steep, over 30% slope.",
+    "cite": [
+     "alto-adige-disc:p30",
+     "alto-adige-disc:p32"
+    ]
+   },
+   "tastes": {
+    "text": "Strong primary aromas: elderflower in Sauvignon, rose in Traminer, wild berries in Pinot Nero and Lagrein, cherry and violet in Schiava. High-altitude whites are fresh; lower reds are full with soft tannins.",
+    "cite": [
+     "alto-adige-disc:p32"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least two years from 1 October of harvest year; min 11.5% natural alcohol."
+     },
+     {
+      "name": "Passito",
+      "text": "Semi-dried grapes, min 16% alcohol, max 40 hl/ha, sold from 1 June after harvest."
+     },
+     {
+      "name": "Vendemmia tardiva",
+      "text": "Partly raisined on the vine, at least 13.5% natural alcohol, max 50 hl/ha."
+     },
+     {
+      "name": "Spumante",
+      "text": "Bottle-fermented (metodo classico), at least 15 months in bottle."
+     }
+    ],
+    "cite": [
+     "alto-adige-disc:p20",
+     "alto-adige-disc:p21"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "trentino",
+   "why": {
+    "text": "Limestone-rich mountain valley slopes at 70 to 700 m, with cold snowy winters, warm summers and the Òra breeze from Lake Garda.",
+    "cite": [
+     "trentino-disc:p16",
+     "trentino-disc:p17"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Pinot bianco",
+     "Sauvignon",
+     "Müller Thurgau",
+     "Manzoni bianco",
+     "Kerner",
+     "Moscato giallo",
+     "Nosiola",
+     "Pinot grigio",
+     "Riesling italico",
+     "Riesling renano",
+     "Traminer aromatico",
+     "Moscato rosa",
+     "Cabernet franc",
+     "Cabernet Sauvignon",
+     "Carmenère",
+     "Merlot",
+     "Lagrein",
+     "Marzemino",
+     "Pinot nero",
+     "Rebo",
+     "Schiava gentile",
+     "Schiava grigia",
+     "Schiava grossa",
+     "Enantio",
+     "Teroldego"
+    ],
+    "othersCite": [
+     "trentino-disc:p3",
+     "trentino-disc:p4",
+     "trentino-disc:p17",
+     "trentino-disc:p18"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "fortified",
+     "sweet"
+    ],
+    "text": "Dry reds, whites and rosé, mostly single-grape; also sweet dried-grape Vino Santo and fortified Moscato.",
+    "cite": [
+     "trentino-disc:p2",
+     "trentino-disc:p3",
+     "trentino-disc:p7",
+     "trentino-disc:p18"
+    ]
+   },
+   "climate": {
+    "text": "Fairly cold, snowy winters and warm, often muggy summers. Lake Garda gives the Alto Garda a milder, sub-Mediterranean climate. Mean annual temperatures run 11 to 13 °C; rain there is 900 to 1,000 mm.",
+    "cite": [
+     "trentino-disc:p16",
+     "trentino-disc:p17"
+    ]
+   },
+   "soil": {
+    "text": "Mostly stony limestone debris with good drainage. Also porphyry in Valle di Cembra, basalt in central Vallagarina, and mica schist in Valsugana.",
+    "cite": [
+     "trentino-disc:p16"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards for this DOC lie between 70 and 600/700 m above sea level.",
+    "cite": [
+     "trentino-disc:p16"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow, dry, fruity or lightly aromatic, often fresh. Trentino rosso: deep ruby, dry, full, slightly tannic. Rosato: fresh, soft. Moscato giallo: aromatic, sometimes sweet. Moscato rosa: sweet, spiced nose.",
+    "cite": [
+     "trentino-disc:p8",
+     "trentino-disc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vino Santo",
+      "text": "Nosiola dried on racks, pressed from 1 February, sold from third year after harvest."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged at least one year for whites, two years for reds."
+     },
+     {
+      "name": "Kretzer",
+      "text": "Rosé blend of at least two of Enantio, Schiava, Teroldego, Lagrein."
+     },
+     {
+      "name": "Vendemmia tardiva",
+      "text": "Grapes partly dried on the vine for a longer or shorter time."
+     }
+    ],
+    "cite": [
+     "trentino-disc:p3",
+     "trentino-disc:p7",
+     "trentino-disc:p18",
+     "trentino-disc:p19"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "collio",
+   "why": {
+    "text": "Hills of marl and sandstone flysch, sheltered from cold north winds by the Julian Prealps and warmed by sunlight reflected from the nearby Adriatic.",
+    "cite": [
+     "collio-disc:p9",
+     "collio-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Malvasia (from Malvasia istriana)",
+     "Muller Thurgau",
+     "Picolit",
+     "Pinot bianco",
+     "Pinot grigio",
+     "Ribolla gialla",
+     "Riesling (from Riesling renano)",
+     "Riesling italico",
+     "Sauvignon",
+     "Friulano (from Tocai friulano)",
+     "Traminer aromatico",
+     "Cabernet franc",
+     "Cabernet sauvignon",
+     "Merlot",
+     "Pinot nero",
+     "Carmenere"
+    ],
+    "othersCite": [
+     "collio-disc:p2",
+     "collio-disc:p11"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sweet"
+    ],
+    "text": "Mostly dry varietal and blended whites, plus reds; Picolit is off-dry to sweet.",
+    "cite": [
+     "collio-disc:p2",
+     "collio-disc:p5",
+     "collio-disc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Hot but not muggy summers and cold, fairly rainy winters; mean summer 21.5 to 22.5 °C, winter about 4 °C, rainfall 1350 to 1400 mm a year.",
+    "cite": [
+     "collio-disc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Flysch of marl and sandstone from Eocene and Paleocene seabeds, with marine fossils; well drained, rooting depth on average 50 to 100 cm, sometimes 150 cm.",
+    "cite": [
+     "collio-disc:p9",
+     "collio-disc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards on hills averaging 60 to 270 m, slopes on average 15 to 30%; valley floor and plain sites are excluded, bar reshaped hillside plots and zone-one foothills above 85 m.",
+    "cite": [
+     "collio-disc:p3",
+     "collio-disc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Bianco: straw to deep gold, delicate, lightly aromatic, dry, fresh, harmonious. Rosso: ruby, slightly herbaceous, dry, full-bodied. Picolit: off-dry or sweet, warm.",
+    "cite": [
+     "collio-disc:p5",
+     "collio-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Red aged 30 months (at least 6 in wood), white 20 months; no enrichment."
+     },
+     {
+      "name": "Picolit",
+      "text": "Off-dry or sweet white; maximum 4 t/ha, at least 14% total alcohol."
+     },
+     {
+      "name": "Cabernet",
+      "text": "Name reserved for Cabernet Franc, Cabernet Sauvignon and/or Carmenere."
+     },
+     {
+      "name": "Bianco",
+      "text": "Blend of authorised whites; Muller Thurgau and Traminer limited to 15% of the total."
+     }
+    ],
+    "cite": [
+     "collio-disc:p2",
+     "collio-disc:p4",
+     "collio-disc:p5",
+     "collio-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "friuli-colli-orientali",
+   "why": {
+    "text": "Soft terraced hills of marl and sandstone, sheltered from cold northern winds by the Julian Prealps, with the nearby sea softening temperature swings.",
+    "cite": [
+     "friuli-colli-orientali-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Malvasia (from Malvasia istriana)",
+     "Pinot bianco",
+     "Pinot blanc",
+     "Pinot grigio",
+     "Ribolla gialla",
+     "Riesling (from Riesling renano)",
+     "Sauvignon",
+     "Sauvignon blanc",
+     "Friulano (from Tocai friulano)",
+     "Traminer aromatico",
+     "Verduzzo friulano",
+     "Picolit",
+     "Cabernet franc",
+     "Cabernet sauvignon",
+     "Carmenere",
+     "Merlot",
+     "Pignolo",
+     "Pinot nero",
+     "Pinot noir",
+     "Refosco dal peduncolo rosso",
+     "Refosco nostrano",
+     "Schioppettino",
+     "Tazzelenghe"
+    ],
+    "othersCite": [
+     "friuli-colli-orientali-disc:p2",
+     "friuli-colli-orientali-disc:p3"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sweet"
+    ],
+    "text": "Dry white and red wines named by grape, plus Bianco, Rosso, sweet Dolce and a copper-pink Pinot grigio ramato.",
+    "cite": [
+     "friuli-colli-orientali-disc:p2",
+     "friuli-colli-orientali-disc:p3",
+     "friuli-colli-orientali-disc:p5",
+     "friuli-colli-orientali-disc:p12"
+    ]
+   },
+   "climate": {
+    "text": "Julian Prealps shelter the hills from cold northern winds; the sea, no more than 40 km away, softens temperature swings. Mean annual temperature is about 15 °C, 18 to 19 °C from April to October, with 1800 to 1900 degree-days. Growing-season rain is about 1157 mm at Ramandolo, 976 mm at Cividale and under 900 mm in the south.",
+    "cite": [
+     "friuli-colli-orientali-disc:p10",
+     "friuli-colli-orientali-disc:p11"
+    ]
+   },
+   "soil": {
+    "text": "Flysch di Cormòns, alternating marl and sandstone locally called ponca, of Eocene origin; marls hold 40 to 60% limestone. Damp valley-floor land is excluded.",
+    "cite": [
+     "friuli-colli-orientali-disc:p4",
+     "friuli-colli-orientali-disc:p9",
+     "friuli-colli-orientali-disc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 100 and 400 m, mostly on terraced hills; the soft marl hills are mostly well below 200 m.",
+    "cite": [
+     "friuli-colli-orientali-disc:p10"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: fine, elegant, fruity and floral, dry and lively. Reds: dry, full-bodied and harmonious. Dolce: sweet, intense, perhaps with a hint of wood.",
+    "cite": [
+     "friuli-colli-orientali-disc:p7",
+     "friuli-colli-orientali-disc:p12"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "White or red aged at least two years from 1 November of the harvest year."
+     },
+     {
+      "name": "Pignolo",
+      "text": "Riserva needs four years' ageing; sold no earlier than November of third year after harvest."
+     },
+     {
+      "name": "Pinot grigio ramato",
+      "text": "Copper-pink Pinot grigio made with light pre-fermentation skin contact, at least 85% Pinot grigio."
+     },
+     {
+      "name": "Dolce",
+      "text": "Sweet wine from white grapes including Picolit, at least 12% alcohol."
+     }
+    ],
+    "cite": [
+     "friuli-colli-orientali-disc:p3",
+     "friuli-colli-orientali-disc:p5",
+     "friuli-colli-orientali-disc:p7",
+     "friuli-colli-orientali-disc:p9",
+     "friuli-colli-orientali-disc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "friuli-grave",
+   "why": {
+    "text": "Coarse, stony limestone-dolomite gravel from alpine rivers, sheltered from cold north winds and helped by the Adriatic, with big day-night swings.",
+    "cite": [
+     "friuli-grave-disc:p11",
+     "friuli-grave-disc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Pinot bianco",
+     "Pinot grigio",
+     "Riesling (da Riesling renano)",
+     "Sauvignon",
+     "Friulano",
+     "Traminer aromatico",
+     "Verduzzo friulano",
+     "Cabernet franc",
+     "Cabernet sauvignon",
+     "Carmenere",
+     "Merlot",
+     "Pinot nero",
+     "Refosco dal peduncolo rosso"
+    ],
+    "othersCite": [
+     "friuli-grave-disc:p2",
+     "friuli-grave-disc:p3",
+     "friuli-grave-disc:p13"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Varietal and blended whites and reds, plus rosato, novello, frizzante and spumante, from dry to sweet Verduzzo.",
+    "cite": [
+     "friuli-grave-disc:p1",
+     "friuli-grave-disc:p6",
+     "friuli-grave-disc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Temperate sub-continental: mean annual temperature 10 to 14.4 °C, rain 1,100 to 2,000 mm a year, and warmer and drier from north to south.",
+    "cite": [
+     "friuli-grave-disc:p12"
+    ]
+   },
+   "soil": {
+    "text": "Alluvial gravel of limestone and dolomite, coarser in the north and finer in the south, with 20 to 60% stones. Wet or spring-fed land is excluded.",
+    "cite": [
+     "friuli-grave-disc:p3",
+     "friuli-grave-disc:p5",
+     "friuli-grave-disc:p11",
+     "friuli-grave-disc:p12"
+    ]
+   },
+   "altitude": {
+    "text": "The high plain lies between 5 and 320 metres.",
+    "cite": [
+     "friuli-grave-disc:p12"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: straw yellow, fine and dry to off-dry. Reds: ruby turning garnet with age, intense, sometimes herbal (Cabernet). Aromatic, elegant wines.",
+    "cite": [
+     "friuli-grave-disc:p7",
+     "friuli-grave-disc:p9",
+     "friuli-grave-disc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Higher minimum alcohol (11.5%), and yields cut to 10 tonnes per hectare."
+     },
+     {
+      "name": "Riserva",
+      "text": "Released two years after 11 November of the harvest year; not for novello or rosato."
+     },
+     {
+      "name": "Spumante",
+      "text": "From Chardonnay, Pinot bianco or Pinot nero: extra brut, brut, extra dry, dry, demi-sec."
+     },
+     {
+      "name": "Frizzante",
+      "text": "Lightly sparkling, bubbles from natural fermentation in a closed tank."
+     }
+    ],
+    "cite": [
+     "friuli-grave-disc:p6",
+     "friuli-grave-disc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colli-orientali-del-friuli-picolit",
+   "why": {
+    "text": "Terraced hills of Eocene marl and sandstone, sheltered from cold north winds by the Julian Prealps, with the sea near. Late-picked, partly dried Picolit.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p4",
+     "colli-orientali-del-friuli-picolit-disc:p5",
+     "colli-orientali-del-friuli-picolit-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Picolit"
+     }
+    ],
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "One golden, off-dry to sweet white from Picolit, often from dried grapes; the Cialla subzone may also be Riserva.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p3",
+     "colli-orientali-del-friuli-picolit-disc:p4",
+     "colli-orientali-del-friuli-picolit-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mean annual temperature about 15 °C, 18 to 19 °C from April to October. Prealps shelter from cold northern winds, and the sea is within 40 km. Growing-season rain is 1157 mm at Tarcento and Nimis, about 976 mm at Cividale, under 900 mm in the south.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Flysch of Cormòns: alternating marl (40 to 60% limestone) and sandstone, called ponca, of Eocene origin. Erodible, so hills are terraced. Valley floors are excluded.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p2",
+     "colli-orientali-del-friuli-picolit-disc:p4",
+     "colli-orientali-del-friuli-picolit-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 100 and 400 m, mostly on terraced hills; the soft hills stay well below 200 m.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Golden yellow. Intense nose, sometimes like passito wine, fine, with a possible slight hint of wood. Off-dry to sweet, warm and harmonious.",
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p3",
+     "colli-orientali-del-friuli-picolit-disc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cialla",
+      "text": "Subzone in Prepotto: 100% Picolit, 14% minimum natural alcohol, Riserva allowed."
+     }
+    ],
+    "cite": [
+     "colli-orientali-del-friuli-picolit-disc:p6",
+     "colli-orientali-del-friuli-picolit-disc:p7",
+     "colli-orientali-del-friuli-picolit-disc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "ramandolo",
+   "why": {
+    "text": "Steep, terraced marl hills sheltered by Monte Bernadia, with high rainfall and big temperature swings before harvest, give a late-picked, partly dried Verduzzo.",
+    "cite": [
+     "ramandolo-disc:p4",
+     "ramandolo-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Verduzzo Friulano"
+     }
+    ],
+    "cite": [
+     "ramandolo-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Golden sweet white from 100% Verduzzo Friulano (verduzzo giallo), also as Riserva.",
+    "cite": [
+     "ramandolo-disc:p1",
+     "ramandolo-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Rainfall above 2,200 mm a year, with about 130 rainy days. Mean temperature is 13.6 °C, summer peaks above 30 °C and in winter it is not rare to drop below zero. Monte Bernadia shields the vines from cold north winds.",
+    "cite": [
+     "ramandolo-disc:p4",
+     "ramandolo-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Eocene marl (the Flysch of Cormons, called ponca), with limestone landslide debris from Monte Bernadia. Slopes can exceed 30%.",
+    "cite": [
+     "ramandolo-disc:p4",
+     "ramandolo-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie from 250 m at Torlano to 369 m at Ramandolo, up to 413 m at Sedilis, all facing south.",
+    "cite": [
+     "ramandolo-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Golden, intense, sweet and velvety, lightly tannic and full-bodied. Notes of acacia, ripe plum, apricot and mountain honey. Riserva may add citrus, candied fruit, green tea, saffron.",
+    "cite": [
+     "ramandolo-disc:p3",
+     "ramandolo-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Ramandolo",
+      "text": "100% Verduzzo Friulano, minimum 14% total alcohol, sold from November of the year after harvest."
+     },
+     {
+      "name": "Ramandolo Riserva",
+      "text": "Sold no earlier than 1 December of the third year after harvest."
+     }
+    ],
+    "cite": [
+     "ramandolo-disc:p1",
+     "ramandolo-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rosazzo",
+   "why": {
+    "text": "Hills of crumbly marl and sandstone flysch, milder and drier than the rest of the province, planted to Friulano-led white blends.",
+    "cite": [
+     "rosazzo-disc:p3",
+     "rosazzo-disc:p4",
+     "rosazzo-disc:p1"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Friulano"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Pinot bianco"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Ribolla Gialla"
+     }
+    ],
+    "cite": [
+     "rosazzo-disc:p1",
+     "rosazzo-disc:p4"
+    ],
+    "others": [
+     "Other white grapes suitable for Udine province (up to 5% in total)"
+    ],
+    "othersCite": [
+     "rosazzo-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Only one style: a dry white wine.",
+    "cite": [
+     "rosazzo-disc:p1",
+     "rosazzo-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Growing-season mean temperature is 18.6 °C and rainfall 915 mm; the annual mean is 14.2 °C with 1290 mm of rain. It is milder and drier than the provincial average, being closer to the sea and farther from the mountains.",
+    "cite": [
+     "rosazzo-disc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Eocene marl and sandstone known as flysch (local name ponca), with marl prevailing. It is crumbly, silty clay loam and moderately alkaline, and needs terracing and drainage against erosion.",
+    "cite": [
+     "rosazzo-disc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Dry, harmonious and winey, with a delicate scent and balanced acidity. Rich, silky, refined and elegant, with long ageing in the best years.",
+    "cite": [
+     "rosazzo-disc:p3",
+     "rosazzo-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

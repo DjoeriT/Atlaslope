@@ -1,0 +1,193 @@
+{
+ "region": "it-emilia-romagna",
+ "sheets": [
+  {
+   "id": "colli-bolognesi-pignoletto",
+   "why": {
+    "text": "Clay and limy foothill soils mostly below 300 m, on ventilated east-southeast slopes with a moderate summer water deficit, planted mainly to Grechetto gentile.",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p2",
+     "colli-bolognesi-pignoletto-disc:p9",
+     "colli-bolognesi-pignoletto-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grechetto gentile (locally Alionzina)"
+     }
+    ],
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p2"
+    ],
+    "others": [
+     "Pinot nero (vinified white)",
+     "Pinot grigio (vinified white)"
+    ],
+    "othersCite": [
+     "colli-bolognesi-pignoletto-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "White wines, still (superiore, Classico) or lightly sparkling (frizzante) and fully sparkling (spumante).",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p1"
+    ]
+   },
+   "climate": {
+    "text": "Rain averages 800 mm on the high plain to 1,200 mm in the highest hills. Mean temperatures run 14 to 12 °C, falling with height. Low hills have a moderate water deficit of up to 350 mm a year.",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Fine-textured clay soils on Argille Scagliose and Blue Clays, plus silty, very calcareous soils. Sandstone ridges and Yellow Sands also occur.",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p9",
+     "colli-bolognesi-pignoletto-disc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow mostly below 300 m. Above about 400 m it is wetter and cooler.",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p10"
+    ]
+   },
+   "tastes": {
+    "text": "Straw yellow, with white flowers and pear and apple, ripe in the still wines and less ripe in the sparkling. Dry to off-dry, with almond and citrus notes, sometimes slightly bitter.",
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p6",
+     "colli-bolognesi-pignoletto-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Classico Superiore",
+      "text": "Still wine, at least 95% Grechetto gentile, from the oldest zone, 12% alcohol minimum."
+     },
+     {
+      "name": "Superiore",
+      "text": "Still wine, at least 85% Grechetto gentile, 11.5% alcohol minimum, dry to off-dry."
+     },
+     {
+      "name": "Frizzante",
+      "text": "Lightly sparkling, dry; bottle-fermented versions must say 'rifermentazione in bottiglia'."
+     },
+     {
+      "name": "Spumante",
+      "text": "Sparkling, from brut nature to extra dry, 11% alcohol minimum."
+     }
+    ],
+    "cite": [
+     "colli-bolognesi-pignoletto-disc:p1",
+     "colli-bolognesi-pignoletto-disc:p2",
+     "colli-bolognesi-pignoletto-disc:p6",
+     "colli-bolognesi-pignoletto-disc:p7",
+     "colli-bolognesi-pignoletto-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "romagna-albana",
+   "why": {
+    "text": "Albana grown on clay and limestone hills around the Spungone ridge, in sunny south-facing vineyards, gives apricot-scented wines of many styles.",
+    "cite": [
+     "romagna-albana-disc:p6",
+     "romagna-albana-disc:p7",
+     "romagna-albana-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Albana"
+     }
+    ],
+    "cite": [
+     "romagna-albana-disc:p2"
+    ],
+    "others": [
+     "Other white grapes suitable for Emilia-Romagna (up to 5%)"
+    ],
+    "othersCite": [
+     "romagna-albana-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "White Albana in five types: secco, amabile, dolce, passito and passito riserva.",
+    "cite": [
+     "romagna-albana-disc:p1",
+     "romagna-albana-disc:p2"
+    ]
+   },
+   "climate": {
+    "text": "The spec gives no figures; it says Albana does best with good sun exposure and brightness.",
+    "cite": [
+     "romagna-albana-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Clay or silty clay with varying limestone, and yellow sands low in limestone. Best around the Spungone, a Pliocene sandy limestone ridge set in clays.",
+    "cite": [
+     "romagna-albana-disc:p6",
+     "romagna-albana-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Excellent results above 100 m above sea level, mostly in south-east to south-west facing vineyards.",
+    "cite": [
+     "romagna-albana-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Secco: straw yellow, dry, slightly tannic, warm and harmonious. Amabile and dolce: fruity, straw turning golden with age. Passito: intense, golden to amber. A sage-like note, apricot tending to lead.",
+    "cite": [
+     "romagna-albana-disc:p5",
+     "romagna-albana-disc:p7",
+     "romagna-albana-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Secco",
+      "text": "Dry white, at least 12% alcohol and 4.5 g/l acidity."
+     },
+     {
+      "name": "Passito",
+      "text": "Sweet wine from dried grapes, at least 17% alcohol, 70 g/l sugar."
+     },
+     {
+      "name": "Passito riserva",
+      "text": "Sweet, from dried or noble-rot grapes, at least 24% total alcohol."
+     },
+     {
+      "name": "Amabile",
+      "text": "Fruity off-dry white, at least 12.5% total alcohol."
+     }
+    ],
+    "cite": [
+     "romagna-albana-disc:p4",
+     "romagna-albana-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

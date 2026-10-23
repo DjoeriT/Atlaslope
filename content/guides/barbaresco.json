@@ -1,0 +1,114 @@
+{
+ "id": "barbaresco",
+ "title": "Why Barbaresco tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Barbaresco grows on rather low, rounded hills of blue-grey marl that is not very resistant. Nebbiolo from the zone gives a dry, full red that is delicate and velvety, and fittingly tannic.",
+  "cite": [
+   "barbaresco-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "langhe",
+   "beat": "place",
+   "title": "Three villages above the Tanaro",
+   "paras": [
+    "Barbaresco is born in the Langhe, a word some scholars trace to \"langues\", tongues of land. They stretch out in a lively play of outlines, shaped by the changing seasons.",
+    "The production area lies on high hills that look down on the river Tanaro. It takes in three communes north-east of Alba: Barbaresco, Neive and Treiso, which was once a hamlet of Barbaresco. Part of Alba also counts: the piece of the hamlet of San Rocco Senodelvio that once belonged to Barbaresco. All of it is in the province of Cuneo.",
+    "Within the zone, the hills of Barbaresco and Neive give wines with two sides. On one side they have structure and power, with tannic fullness. On the other they have softness and finesse, with rich fruit. The hills of Treiso give wines tied more to finesse and elegance than to structure."
+   ],
+   "cite": [
+    "barbaresco-disc:p2",
+    "barbaresco-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Barbaresco village",
+     "point": [
+      8.081,
+      44.728
+     ],
+     "zoom": 11,
+     "caption": "Barbaresco, one of the three communes of the zone, on the hills above the Tanaro.",
+     "cite": [
+      "barbaresco-disc:p2",
+      "barbaresco-disc:p7"
+     ]
+    },
+    {
+     "label": "Neive",
+     "point": [
+      8.1327,
+      44.7213
+     ],
+     "zoom": 11,
+     "caption": "The hills of Neive, like those of Barbaresco, give structure and power as well as finesse.",
+     "cite": [
+      "barbaresco-disc:p7"
+     ]
+    },
+    {
+     "label": "River Tanaro",
+     "point": [
+      8.06,
+      44.745
+     ],
+     "zoom": 10,
+     "caption": "The river that the high hills of the production area look down on.",
+     "cite": [
+      "barbaresco-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Blue-grey marl, no higher than 550 m",
+   "paras": [
+    "Most of the ground belongs to the Tortonian formation, one of 14 layers in the pile of sediments that make up Piedmont's Tertiary basin. Tortonian ground is layered marl and sand. The marl is blue-grey and not very resistant. It gives rise to whitish hills, rather low and rounded, that suit the vine very well. White tufaceous marl marks the production area. The Langhe themselves date from the Tertiary era, which began almost 70 million years ago.",
+    "Vineyards must be on clayey soils, limy soils or a mix of the two. They must be on hills. Valley floors are ruled out, as is damp or flat ground. So is land without enough sun. Slopes that face north are excluded. Altitude is capped at 550 m."
+   ],
+   "cite": [
+    "barbaresco-disc:p2",
+    "barbaresco-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Treiso hills",
+     "point": [
+      8.0878,
+      44.6895
+     ],
+     "zoom": 11,
+     "caption": "The hills of Treiso: wines tied more to finesse and elegance than to structure.",
+     "cite": [
+      "barbaresco-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nebbiolo",
+   "beat": "rules",
+   "title": "Only Nebbiolo, only red",
+   "paras": [
+    "Barbaresco is made from Nebbiolo alone, grown in the traditional way: Guyot pruning on trellises. The only wines are dry reds, and every bottle must show its vintage.",
+    "At release the wine must be garnet red, with an intense and characteristic smell. It must taste dry and full, and harmonious. It needs at least 12.5% alcohol and 4.5 g/l of acidity.",
+    "Barbaresco must age at least 26 months from 1 November of the harvest year, 9 of them in wood. It cannot be sold before 1 January of the third year after the harvest. Barbaresco Riserva ages at least 50 months, again with 9 in wood, and is released on 1 January of the fifth year after the harvest.",
+    "The name can be followed by a \"menzione geografica aggiuntiva\", an extra place name. There are 66, such as Asili or Montestefano. It goes right under the word Barbaresco and is never printed larger.",
+    "Only with such a place name may the label add \"vigna\", vineyard, and the vineyard's name. That wine must be made and kept apart. Its yield is capped at 7.2 t/ha, and the grapes need at least 12.5% natural alcohol. Without \"vigna\" the cap is 8 t/ha, with 12%."
+   ],
+   "cite": [
+    "barbaresco-disc:p1",
+    "barbaresco-disc:p2",
+    "barbaresco-disc:p3",
+    "barbaresco-disc:p4",
+    "barbaresco-disc:p5",
+    "barbaresco-disc:p6",
+    "barbaresco-disc:p7"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "ruche-di-castagnole-monferrato",
+ "title": "Why Ruchè di Castagnole Monferrato tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Ruchè is a strictly local grape, found elsewhere only now and then. Seven villages on low, wooded Monferrato hills make it into a dry red.",
+  "cite": [
+   "ruche-di-castagnole-monferrato-disc:p1",
+   "ruche-di-castagnole-monferrato-disc:p4",
+   "ruche-di-castagnole-monferrato-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Seven villages on low wooded hills",
+   "paras": [
+    "The seven villages form a small vineyard area in the Monferrato astigiano, on the left bank of the Tanaro. The land is low hills, widely covered in woods.",
+    "The vines grow on hillsides only. Valley floors, damp sites and land without enough sun are excluded.",
+    "The villages are Castagnole Monferrato, Grana, Montemagno, Portacomaro, Refrancore, Scurzolengo and Viarigi, all in the province of Asti."
+   ],
+   "cite": [
+    "ruche-di-castagnole-monferrato-disc:p2",
+    "ruche-di-castagnole-monferrato-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Monferrato hills around Castagnole",
+     "point": [
+      8.29,
+      44.98
+     ],
+     "zoom": 10,
+     "caption": "A small vineyard area of low, widely wooded hills in the Monferrato astigiano, left of the Tanaro.",
+     "cite": [
+      "ruche-di-castagnole-monferrato-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Light, dry and sunny",
+   "paras": [
+    "The area is a transition between the marls of the Monferrato and the Pliocene sands of the Asti hills. Its soils tend to be looser and lighter than the average for the Piedmont Tertiary basin, to which they still belong.",
+    "The vineyards sit between 120 m and 400 m above sea level. The soils are clayey, silty, sandy and calcareous, in their various combinations.",
+    "These calcareous, dry, very sunny soils give a high-quality wine, but in limited quantities."
+   ],
+   "cite": [
+    "ruche-di-castagnole-monferrato-disc:p2",
+    "ruche-di-castagnole-monferrato-disc:p5"
+   ]
+  },
+  {
+   "id": "grape",
+   "beat": "rules",
+   "title": "A rare grape, made dry",
+   "paras": [
+    "Ruchè is one of the rarest native grapes of the Monferrato astigiano. It is strictly endemic and is found elsewhere only now and then. The wines must be at least 90% Ruchè, with up to 10% Barbera, Brachetto or both.",
+    "Ruchè was once a table grape because of its aromatic character and the high sugar it reaches when ripe. It also went into sweet wines for home use. The priest Luigi Cauda, working in Castagnole Monferrato in the 1960s, did most to make it a pure, dry wine of high quality.",
+    "Only red wine is made, in two types: Ruchè di Castagnole Monferrato and the Riserva. The standard wine is ruby red with light violet hints, sometimes tending to orange.",
+    "The Riserva is aged for at least 24 months, at least 12 of them in wooden barrels, counted from 1 November of the harvest year. Its colour is ruby tending to orange. Its nose is lightly aromatic and spicy, and the palate always has hints of wood.",
+    "A wine may add \"vigna\" and a vineyard name if the vineyard is at least 3 years old. Its yield cap then grows with the vines: 4.80 t/ha in the third year, 5.60 in the fourth, 6.40 in the fifth, 7.20 in the sixth and 8.00 t/ha from the seventh. Its grapes need at least 12.5% potential alcohol. Other Ruchè grapes need 11.5%, with a yield cap of 9.00 t/ha.",
+    "No more than 70% of the grapes' weight, and 6,300 l per hectare, may become wine."
+   ],
+   "cite": [
+    "ruche-di-castagnole-monferrato-disc:p1",
+    "ruche-di-castagnole-monferrato-disc:p2",
+    "ruche-di-castagnole-monferrato-disc:p3",
+    "ruche-di-castagnole-monferrato-disc:p4",
+    "ruche-di-castagnole-monferrato-disc:p5"
+   ]
+  }
+ ]
+}

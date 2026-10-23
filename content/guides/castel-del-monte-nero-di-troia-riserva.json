@@ -1,0 +1,126 @@
+{
+ "id": "castel-del-monte-nero-di-troia-riserva",
+ "title": "Why Castel del Monte Nero di Troia Riserva tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The vines grow on a compact limestone plateau where the commonest soil is shallow, very stony and rocky. The wine is a Riserva of at least 90% Nero di Troia, and the aromas of that grape lead.",
+  "cite": [
+   "castel-del-monte-nero-di-troia-riserva-disc:p1",
+   "castel-del-monte-nero-di-troia-riserva-disc:p5",
+   "castel-del-monte-nero-di-troia-riserva-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A limestone plateau named for a castle",
+   "paras": [
+    "The vineyards lie on the Murge, the plateau that crosses central Puglia. The name Murgia comes from \"murex\", a sharp stone made mostly of limestone.",
+    "The highest points are in the north-west: Monte Caccia at 680 m and Torre Disperata at 686 m. In the south-east the plateau stays under 500 m.",
+    "The area takes its name from the famous castle of Frederick II, now a UNESCO site. It sits in the north-western part of the \"Murgia Centrale\" wine basin and is partly inside the Alta Murgia nature park.",
+    "The grapes come from the whole of Minervino Murge and from the D'Ameli enclave of Binetto. Parts of Andria, Corato, Trani, Ruvo, Terlizzi, Bitonto, Palo del Colle and Toritto join them."
+   ],
+   "cite": [
+    "castel-del-monte-nero-di-troia-riserva-disc:p1",
+    "castel-del-monte-nero-di-troia-riserva-disc:p4",
+    "castel-del-monte-nero-di-troia-riserva-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Caccia, the high Murge",
+     "point": [
+      16.1,
+      41.02
+     ],
+     "zoom": 10,
+     "caption": "The north-western Murge holds the highest points of the plateau, Monte Caccia at 680 m and Torre Disperata at 686 m.",
+     "cite": [
+      "castel-del-monte-nero-di-troia-riserva-disc:p4"
+     ]
+    },
+    {
+     "label": "Castel del Monte",
+     "point": [
+      16.2706,
+      41.0848
+     ],
+     "zoom": 14,
+     "caption": "The famous castle of Frederick II, now a UNESCO site, gives the area its name.",
+     "cite": [
+      "castel-del-monte-nero-di-troia-riserva-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dry summers, wet autumns and winters",
+   "paras": [
+    "The climate is typically sub-Mediterranean. The mean annual temperature is about 17.5 °C in Andria, the lowest and nearest place to the sea, and 14.4 °C in the higher areas far from the sea.",
+    "January is the coldest month, with a mean of about 7 °C, and minimums are often below 0 °C. August, or also July, is the warmest, with a mean of about 25 °C.",
+    "About 560 mm of rain falls in a year, mostly in autumn and winter and especially in November and December. The dry months of June to August bring only about 100 mm. Snow generally falls above 500 m.",
+    "Winds come mostly from the north, and these are mostly cold. Winds from the west and south are mostly warm. The Serratina is a cold, dry wind from the north that brings frost. The Favonio is a hot, dry wind from the south and south-west."
+   ],
+   "cite": [
+    "castel-del-monte-nero-di-troia-riserva-disc:p5"
+   ]
+  },
+  {
+   "id": "rock",
+   "beat": "ground",
+   "title": "Cretaceous limestone, shallow stony soil",
+   "paras": [
+    "The Murge platform is thought to have risen in the Cretaceous. Its bones are well-layered dolomitic limestone and dolomite, in beds from a few centimetres (\"chiancarelle\") to a few metres thick.",
+    "The rock is often cracked and karstic to varying degrees. That explains why there is no surface water. The main erosion grooves are called \"lame\" and run to the Adriatic.",
+    "The commonest soil is shallow, very stony and rocky. In extreme cases it may not be suitable for farming at all.",
+    "The water table lies deep, and drawing from it is costly. That has limited irrigation. Spreading vine forms have stayed mostly on the lower, more fertile land."
+   ],
+   "cite": [
+    "castel-del-monte-nero-di-troia-riserva-disc:p4",
+    "castel-del-monte-nero-di-troia-riserva-disc:p5"
+   ]
+  },
+  {
+   "id": "riserva",
+   "beat": "rules",
+   "title": "One red, aged at least two years",
+   "paras": [
+    "This appellation makes one wine: a red Riserva. It is at least 90% Nero di Troia. Up to 10% can be other non-aromatic black grapes suited to the Murgia Centrale in Puglia.",
+    "Before release it must age at least two years, with at least one of them in wood. The clock starts on 1 November of the harvest year.",
+    "Grapes must reach a natural strength of at least 12.00% vol, and the finished wine at least 13.00% vol. Yields are capped at 10 tonnes of grapes per hectare.",
+    "In the glass the colour runs from ruby red to garnet with age. The aroma is delicate and characteristic. The palate has body and is harmonious.",
+    "New vineyards may be trained only as alberello (bush vines) or on trellises, with at least 4,000 vines per hectare. Only emergency irrigation is allowed."
+   ],
+   "cite": [
+    "castel-del-monte-nero-di-troia-riserva-disc:p1",
+    "castel-del-monte-nero-di-troia-riserva-disc:p2",
+    "castel-del-monte-nero-di-troia-riserva-disc:p3"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word \"vigna\" may appear only when followed by the vineyard's place name, with that wine made and kept in separate vessels.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p3",
+     "castel-del-monte-nero-di-troia-riserva-disc:p4"
+    ]
+   },
+   {
+    "term": "Vendemmia",
+    "text": "The harvest year must appear on every container. The word \"vendemmia\" (vintage) may stand before it.",
+    "cite": [
+     "castel-del-monte-nero-di-troia-riserva-disc:p4"
+    ]
+   }
+  ],
+  "cite": [
+   "castel-del-monte-nero-di-troia-riserva-disc:p3",
+   "castel-del-monte-nero-di-troia-riserva-disc:p4"
+  ]
+ }
+}
