@@ -360,6 +360,160 @@
    "sha256": "bb5383430b5ee8e0677429dd61117d0a60c2bf02e9b39a63302e8ccc044a14e2"
   },
   {
+   "path": "countries/at/ris-200-2020.html",
+   "kind": "url",
+   "licence": "RIS (Bundeskanzleramt), Bundesgesetzblatt: amtliches Werk, reused with source credit [A]",
+   "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2020_II_200/BGBLA_2020_II_200.html",
+   "note": "Wachau DAC regulation, BGBl. II 200/2020, as served (German HTML, 58 KB)",
+   "bytes": 57787,
+   "sha256": "8172a51e154cdaf8a27b2c80ae4856ef519a9b9e992a67de0cc4cdac48ba95ce"
+  },
+  {
+   "path": "countries/at/wachau-dac-200-2020.txt",
+   "kind": "command",
+   "licence": "RIS (Bundeskanzleramt), Bundesgesetzblatt: amtliches Werk, reused with source credit [A]",
+   "note": "ris-200-2020.html as plain text (1,272 words), input of Tools/guides/extract.py",
+   "command": [
+    "cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\" && python3 -I -c \"import re,html;t=open('ris-200-2020.html',encoding='utf-8').read();t=re.sub(r'(?s)<(script|style).*?</\\1>','',t);t=re.sub(r'</(p|div|tr|h\\d|li|table)>','\\n',t);t=re.sub(r'<br\\s*/?>','\\n',t);t=html.unescape(re.sub(r'<[^>]+>','',t));t=re.sub(r'[ \\t\\xa0]+',' ',t);t=re.sub(r'\\n\\s*\\n+','\\n',t);open('wachau-dac-200-2020.txt','w').write(t)\""
+   ],
+   "bytes": 9948,
+   "sha256": "03f3883ead49a039d3276559956dde65a72569ddfffe5e45c0b9996a86c633f3"
+  },
+  {
+   "path": "countries/at/noe-rieden.geojson",
+   "kind": "url",
+   "licence": "Land Niederösterreich, CC BY 4.0",
+   "url": "https://sdi.noe.gv.at/at.gv.noe.geoserver/OGD/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=OGD:RLF_WEINBAU_RIEDEN&outputFormat=application/json&srsName=EPSG:4326",
+   "note": "NÖ WFS layer OGD:RLF_WEINBAU_RIEDEN, the whole state: 3,342 polygons, 16 MB (stamp 2026-10-17); no key. Not an input of the build (the Wachau file below is)",
+   "bytes": 15987111,
+   "sha256": "5fdd9a8c5d6ed15b76153dfdd45558fce0feacbc09e3a3d1b4cdb7f2ebfc22fc"
+  },
+  {
+   "path": "countries/at/wachau-rieden.geojson",
+   "kind": "url",
+   "licence": "Land Niederösterreich, CC BY 4.0",
+   "url": "https://sdi.noe.gv.at/at.gv.noe.geoserver/OGD/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=OGD%3ARLF_WEINBAU_RIEDEN&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=KGNAME+IN+%28%27Oberloiben%27%2C%27Unterloiben%27%2C%27D%C3%BCrnstein%27%2C%27Wei%C3%9Fenkirchen%27%2C%27Joching%27%2C%27W%C3%B6sendorf%27%2C%27St.+Michael%27%2C%27Spitz%27%2C%27Gut+am+Steg%27%2C%27Vie%C3%9Fling%27%2C%27Elsarn+am+Jauerling%27%2C%27M%C3%BChldorf%27%2C%27Niederranna%27%2C%27Oetz%27%2C%27Povat%27%2C%27Schwallenbach%27%2C%27Willendorf%27%2C%27Groisbach%27%2C%27Aggsbach%27%2C%27Oberarnsdorf%27%2C%27Mitterarnsdorf%27%2C%27R%C3%BChrsdorf%27%2C%27Rossatz%27%2C%27Unterbergern%27%2C%27Mauternbach%27%2C%27Mautern%27%2C%27Baumgarten%27%29+AND+PBNAME+IN+%28%27Krems-Land%27%2C%27Melk%27%29",
+   "note": "The same layer filtered to the 27 Katastralgemeinden of the Wachau DAC labels (CQL on KGNAME and PBNAME): 216 polygons, 1.0 MB",
+   "bytes": 1071785,
+   "sha256": "8ecac65922113ec9d056c8c5bce8b8b8a6ee735ea00824464402a3623f8248e3"
+  },
+  {
+   "path": "countries/at/gemeinden-wachau-2026.geojson",
+   "kind": "url",
+   "licence": "Statistik Austria, CC BY 4.0",
+   "url": "https://www.statistik.gv.at/gs-open/GEODATA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=GEODATA:STATISTIK_AUSTRIA_GEM_20260101&outputFormat=application/json&CQL_FILTER=g_name%20IN%20%28%27Aggsbach%27%2C%27Bergern%20im%20Dunkelsteinerwald%27%2C%27D%C3%BCrnstein%27%2C%27Mautern%20an%20der%20Donau%27%2C%27M%C3%BChldorf%27%2C%27Rossatz-Arnsdorf%27%2C%27Spitz%27%2C%27Wei%C3%9Fenkirchen%20in%20der%20Wachau%27%2C%27Sch%C3%B6nb%C3%BChel-Aggsbach%27%2C%27Emmersdorf%20an%20der%20Donau%27%29%20AND%20g_id%20LIKE%20%273%25%27",
+   "note": "Statistik Austria Gemeinden 2026-01-01 (dataset OGDEXT_GEM_1), the 10 Gemeinden around the Wachau, EPSG:31287; 8 are used for the comparison route",
+   "bytes": 316202,
+   "sha256": "000ca1097471624fcf25b2c4466874821d45d2ba1dbd5e5233eeb4375603e3e2"
+  },
+  {
+   "path": "countries/at/m/rieden.gpkg",
+   "kind": "command",
+   "licence": "Land Niederösterreich, CC BY 4.0",
+   "note": "wachau-rieden.geojson as GeoPackage in EPSG:3035, layer rieden (input of Tools/data/build_at_areas.py)",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln rieden m/rieden.gpkg wachau-rieden.geojson"
+   ],
+   "bytes": 933888,
+   "sha256": "4bff87a3fea91a79bdfe509a4de51c048559cbcf9da90899a527d42fdc650cf0"
+  },
+  {
+   "path": "countries/at/m/gemeinden.gpkg",
+   "kind": "command",
+   "licence": "Statistik Austria, CC BY 4.0",
+   "note": "gemeinden-wachau-2026.geojson as GeoPackage in EPSG:3035, layer gemeinden (input of Tools/data/build_at_areas.py)",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln gemeinden m/gemeinden.gpkg gemeinden-wachau-2026.geojson"
+   ],
+   "bytes": 344064,
+   "sha256": "4612d5eba61b692512dcd556a3c23d1434a031dc3651ce549c3a99aec7b76a53"
+  },
+  {
+   "path": "countries/at/ris-90-2012.html",
+   "kind": "url",
+   "licence": "RIS (Bundeskanzleramt), Bundesgesetzblatt: amtliches Werk, reused with source credit [A]",
+   "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2012_II_90/BGBLA_2012_II_90.html",
+   "note": "Neusiedlersee DAC regulation, BGBl. II 90/2012 (the original; replaced by 431/2020 Art. 2), German HTML, 58 KB",
+   "bytes": 58275,
+   "sha256": "86a132925f308a822a1a4f791efd2cebd1af3875064b13c6b563ce45f996dda0"
+  },
+  {
+   "path": "countries/at/ris-431-2020.html",
+   "kind": "url",
+   "licence": "RIS (Bundeskanzleramt), Bundesgesetzblatt: amtliches Werk, reused with source credit [A]",
+   "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2020_II_431/BGBLA_2020_II_431.html",
+   "note": "BGBl. II 431/2020: Art. 1 Ruster Ausbruch DAC, Art. 2 Neusiedlersee DAC (the text in force), German HTML, 70 KB",
+   "bytes": 70106,
+   "sha256": "f50d8b3ba2ea6c91e0a8f8d38ee99236a1d57e673cfc02b3cbc2de118c2fc5c8"
+  },
+  {
+   "path": "countries/at/neusiedlersee-dac-431-2020.txt",
+   "kind": "command",
+   "licence": "RIS (Bundeskanzleramt), Bundesgesetzblatt: amtliches Werk, reused with source credit [A]",
+   "note": "ris-431-2020.html as plain text from 'Artikel 2' on (Neusiedlersee only, 1,085 words), input of Tools/guides/extract.py; same text conversion as wachau-dac-200-2020.txt",
+   "command": [
+    "cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\" && python3 -I -c \"import re,html;t=open('ris-431-2020.html',encoding='utf-8').read();t=re.sub(r'(?s)<(script|style).*?</\\\\1>','',t);t=re.sub(r'</(p|div|tr|h\\\\d|li|table)>','\\\\n',t);t=re.sub(r'<br\\\\s*/?>','\\\\n',t);t=html.unescape(re.sub(r'<[^>]+>','',t));t=re.sub(r'[ \\\\t\\\\xa0]+',' ',t);t=re.sub(r'\\\\n\\\\s*\\\\n+','\\\\n',t);i=t.index(' Artikel 2');open('neusiedlersee-dac-431-2020.txt','w').write(t[i:])\""
+   ],
+   "bytes": 9121,
+   "sha256": "6c4ba3cb8477ac88719866c589ba81a2e46826f717147f8ea2cbe26b6090587a"
+  },
+  {
+   "path": "countries/at/bgld/BGLD_WEINBAURIEDE.zip",
+   "kind": "url",
+   "licence": "Land Burgenland, CC BY 4.0 (per the data.gv.at catalogue entry dc49fa3f; the portal page itself states no licence)",
+   "url": "https://geodaten.bgld.gv.at/de/downloads/geodaten.html?dhash=K0DsgQrMCk43JlWaIVi9jBwzfN6YUxoXpyenmt8O75ZPdq1RAHGvTSLbcFuEh2",
+   "note": "Weinbauriede und Weinbausubriede Burgenland (shapefile in a zip, MGI Austria GK M34, 2,209 polygons, export 2026-10-09); the URL serves the zip itself; the hash in the URL is the data.gv.at link and may change when the dataset is refreshed",
+   "bytes": 2727298,
+   "sha256": "183f02e60a63d83207aca483f25f70f06eaa1d05548eb6c8db66e0b717cc2dd4"
+  },
+  {
+   "path": "countries/at/bgld/neusiedl-rieden.geojson",
+   "kind": "command",
+   "licence": "Land Burgenland, CC BY 4.0 (per the data.gv.at catalogue entry dc49fa3f; the portal page itself states no licence)",
+   "note": "the 427 Bezirk Neusiedl am See polygons without the Gemeinden Jois and Winden am See (349 left), EPSG:4326",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at/bgld/shp\" && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at/bgld\" && unzip -o -q BGLD_WEINBAURIEDE.zip -d shp",
+    "ogr2ogr -f GeoJSON neusiedl-rieden.geojson shp/BGLD_WEINBAURIEDE.shp -where \"BEZNAME='Neusiedl am See' AND GEMNAME NOT IN ('Jois','Winden am See')\" -t_srs EPSG:4326 -lco COORDINATE_PRECISION=6"
+   ],
+   "bytes": 1873914,
+   "sha256": "eec1fc8fe3d7a97550405f757d408f93ecb7e230c0ecae5e9d7d9ad25bfe252f"
+  },
+  {
+   "path": "countries/at/gemeinden-neusiedl-2026.geojson",
+   "kind": "url",
+   "licence": "Statistik Austria, CC BY 4.0",
+   "url": "https://www.statistik.gv.at/gs-open/GEODATA/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=GEODATA:STATISTIK_AUSTRIA_GEM_20260101&outputFormat=application/json&CQL_FILTER=g_id%20LIKE%20%27107%25%27",
+   "note": "Statistik Austria Gemeinden 2026-01-01 (dataset OGDEXT_GEM_1), the 27 Gemeinden of Bezirk Neusiedl am See (g_id 107xx), EPSG:31287",
+   "bytes": 704398,
+   "sha256": "976362b73ffb78063677130f99e0d9595a237cedac3ab6b33e8717c27b9f6d6e"
+  },
+  {
+   "path": "countries/at/m/nsl-rieden.gpkg",
+   "kind": "command",
+   "licence": "Land Burgenland, CC BY 4.0 (per the data.gv.at catalogue entry dc49fa3f; the portal page itself states no licence)",
+   "note": "bgld/neusiedl-rieden.geojson as GeoPackage in EPSG:3035, layer rieden (input of Tools/data/build_at_areas.py)",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln rieden m/nsl-rieden.gpkg bgld/neusiedl-rieden.geojson"
+   ],
+   "bytes": 1675264,
+   "sha256": "f351571d28f9c2a2c12f0305f8b2a726bea19e4ab755b413f3065e922b74f413"
+  },
+  {
+   "path": "countries/at/m/gemeinden-nsl.gpkg",
+   "kind": "command",
+   "licence": "Statistik Austria, CC BY 4.0",
+   "note": "gemeinden-neusiedl-2026.geojson as GeoPackage in EPSG:3035, layer gemeinden (input of Tools/data/build_at_areas.py)",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/at\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln gemeinden m/gemeinden-nsl.gpkg gemeinden-neusiedl-2026.geojson"
+   ],
+   "bytes": 638976,
+   "sha256": "38752432444ef221cf9c51806e3646ac7faf116e92eff8829c43355bf07ec07a"
+  },
+  {
    "path": "countries/de/spec-Ahr.pdf",
    "kind": "url",
    "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",

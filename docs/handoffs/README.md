@@ -5,6 +5,7 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 - [2026-10-23-germany-wave1](2026-10-23-germany-wave1.md): Germany wave 1: Ahr, Mittelrhein, Nahe, Rheinhessen, Pfalz guides and outlines; Rheingau outline from Hessen ALKIS; 7 of 13
 - [2026-10-23-italy-climate](2026-10-23-italy-climate.md): Italy's climate, altitude and slope measured (87 places, 9 regions); seventh map group Cold for the Alps
 - [2026-10-22-learn-finish](2026-10-22-learn-finish.md): Study becomes Learn: start card, course filter, #learn, specs, crops checked; naming kept (#147, 22 Oct 2026)
+- [2026-10-23-germany-rest-go](2026-10-23-germany-rest-go.md): Germany rest brief: owner "finish Germany first, then Austria"; 11 Anbaugebiete in three waves plus parity, ~12-13M
 - [2026-10-23-germany-pilot-go](2026-10-23-germany-pilot-go.md): Germany pilot brief: gate open after #231, Mosel and Rheingau scope, outline route, budget ~7-10M
 - [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
 - [2026-10-22-germany-prep](2026-10-22-germany-prep.md): Germany prep: 32 WSET terms, 19 PDOs (6 single vineyards), Mosel outline from LWK RLP, Rheingau outline open, licences
@@ -13,6 +14,7 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 - [2026-10-22-italy-outlines](2026-10-22-italy-outlines.md): 87 Italy first-wave outlines, decisions #79, #80.
 - [2026-10-23-italy-first-wave](2026-10-23-italy-first-wave.md): 87 Italy guides with photos (84.2M tokens); size check blocks merging.
 - [2026-10-22-france-prep](2026-10-22-france-prep.md): France data prep while Portugal builds: Chablis and Pauillac outlines from INAO, rule books, licences, 108 WSET names, IGN speed test (#149, 22 Oct 2026)
+- [2026-10-22-france-wset](2026-10-22-france-wset.md): France's WSET L3 list, all 96 places live in release 71 (pilot, batches, PGIs, size option A); climate in release 73.
 - [2026-10-23-portugal-photos-2](2026-10-23-portugal-photos-2.md): 76 photos for 24 of the 26 new Portugal guides (Commons + Openverse), raw data moved outside the repo after the data/raw incident, first load 515 bytes over 2 MB (#149, 23 Oct 2026)
 - [2026-10-22-portugal-photos](2026-10-22-portugal-photos.md): 27 Commons photos shipped for Douro and Vinho Verde, crops parked until Portugal is on Guides, photos no longer hidden on guides without Study; mock round 2 of option C next (#149, 22 Oct 2026)
 - [2026-10-22-atlas-cover](2026-10-22-atlas-cover.md): Atlas cover card E1 (map tour and slopes loops, countries), #country=spain, video out of the 2 MB check; clip polish open (PR #202, 22 Oct 2026)
@@ -113,3 +115,5 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 - [2026-10-16-builder-plan-review](2026-10-16-builder-plan-review.md): Hand-off from "builder plan review" (16 Oct 2026, 12:45Z)
 - [2026-10-16-build-plan-walkthrough](2026-10-16-build-plan-walkthrough.md): build plan walkthrough (16 Oct 2026, 12:45 to 12:52Z)
 - [2026-10-16-build-cost-and-quiz](2026-10-16-build-cost-and-quiz.md): cutting the build cost, quiz, learning engine and reference (16 Oct 2026, 12:29 to 12:46Z)
+- [2026-10-23-germany-pilot](2026-10-23-germany-pilot.md): Germany pilot, release 74: Mosel and Rheingau at /de/; Austria desk report; open: Rheingau outline, Austria pilot pair
+- [2026-10-23-austria-pilot-go](2026-10-23-austria-pilot-go.md): Austria pilot brief: Wachau and Neusiedlersee (#94), prep data ready, outline choice for Neusiedlersee open

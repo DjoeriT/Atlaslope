@@ -7,7 +7,7 @@ Decisions `docs/architecture-decisions.md` #81-#86, all option A [O]. No country
 1. Desk report (one Sonnet helper, ~0.1M): DAC list against eAmbrosia, WSET L3 Austria names, outline and Rieden layers per state,
    terrain and imagery licences. Re-ask only a decision it contradicts.
 2. Prep slice, data only (as Germany prep): specs, licences, pilot outlines, German text through `extract.py`.
-3. Pilot: Wachau and Südsteiermark at `/at/<place>/`; Rieden as zones where a layer exists (#84). Screenshots, ReviewBot, one PR.
+3. Pilot: Wachau and Neusiedlersee (#94, amends #83) at `/at/<place>/`; Rieden as zones where a layer exists (#84). Screenshots, ReviewBot, one PR.
 4. Rest: the other DAC areas by state (Niederösterreich; Burgenland; Steiermark and Wien), each on the owner's word.
 
 ## Effort (tokens)
