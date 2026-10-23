@@ -90,9 +90,10 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const zones = tree.children(place.id, 'place') as Place[];
   const isZone = tree.levelName(place) === 'zone';
   const quizzed = place.quiz !== 'none';
-  // A place outside Study can still have a sheet; measures and photos stay with Study places.
+  // A place outside Study shows its sheet, photos and measures too (photos 22 Oct, measures 23 Oct 2026: Portugal's guides showed no
+  // climate chart, altitude or slope while their places are not in Learn).
   const sheet = sheetOf(place.id);
-  const measures = quizzed ? measuresOf(place.id) : undefined;
+  const measures = measuresOf(place.id);
   const color = regionColor(place.region);
   const official = place.official && place.official !== place.name ? place.official : undefined;
   const level = isZone ? tc.zoneLevel : place.kind;
