@@ -11,3 +11,7 @@ declare module 'virtual:outlines' {
   const files: Record<string, import('./map/outlines').OutlineFile>;
   export default files;
 }
+declare module 'virtual:photo-data' {
+  const data: { photos: Record<string, import('./facts/types').Photo>; sizes: { sizes: number[]; photos: Record<string, { w: number; h: number; blur: string }> } };
+  export default data;
+}
