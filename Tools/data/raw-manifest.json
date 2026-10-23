@@ -262,6 +262,102 @@
    "note": "EU wine PDO polygons, figshare doi 10.6084/m9.figshare.c.5877659.v1 (decision #79)",
    "bytes": 44580864,
    "sha256": "8df0dc759f9c1bc17fff12d653b224282382d6a10f4a15c2cf937d5ab13f0356"
+  },
+  {
+   "path": "countries/de/gu-rlp.geojson",
+   "kind": "url",
+   "licence": "LWK RLP, Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0)",
+   "url": "https://geodaten.lwk-rlp.de/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/gg_wfslvermgeo_lokal.qgs&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&outputFormat=geojson&typeName=gu",
+   "note": "LWK RLP WFS layer gu: g.U. vineyard outlines (Mosel, Nahe, Pfalz, Mittelrhein), 492 features, 12.7 MB; no key",
+   "bytes": 12670261,
+   "sha256": "da1c0d6f24edd96f75366cb6e585382ba9ab8246a30049758d6b190792e7fd25"
+  },
+  {
+   "path": "countries/de/weinlagen-all.geojson",
+   "kind": "url",
+   "licence": "LWK RLP, Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0)",
+   "url": "https://geodaten.lwk-rlp.de/cgi-bin/qgis_mapserv.fcgi?MAP=/home/qgis/projects/gg_wfslvermgeo_lokal.qgs&SERVICE=WFS&VERSION=1.3.0&REQUEST=GetFeature&outputFormat=geojson&typeName=weinlagen_recht",
+   "note": "LWK RLP WFS layer weinlagen_recht: the Einzellagen of the Weinlagengesetz, 1,583 features (stamp 2026-08-11), 14 MB; no key",
+   "bytes": 13987003,
+   "sha256": "c0a3ea2aea2d9804953891df6407f67d374a870abe7eb68833e8eb4369e04f91"
+  },
+  {
+   "path": "countries/de/m/gu.gpkg",
+   "kind": "command",
+   "licence": "LWK RLP, Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0)",
+   "note": "gu-rlp.geojson as GeoPackage in EPSG:3035, layer gu (input of Tools/data/build_de_areas.py). The original conversion command was not recorded [A]: this is the equivalent",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/de\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/de\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln gu m/gu.gpkg gu-rlp.geojson"
+   ],
+   "bytes": 10297344,
+   "sha256": "b4dc4856e2a0e5001bf8fcc867715a9b7396ba6e4605046159d3da16b1568fb0"
+  },
+  {
+   "path": "countries/de/m/wl.gpkg",
+   "kind": "command",
+   "licence": "LWK RLP, Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0)",
+   "note": "weinlagen-all.geojson as GeoPackage in EPSG:3035, layer wl (input of Tools/data/build_de_areas.py). The original conversion command was not recorded [A]: this is the equivalent",
+   "command": [
+    "mkdir -p \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/de\"/m && cd \"${ATLASLOPE_RAW:-$HOME/Developer/Atlaslope-raw}/countries/de\"",
+    "ogr2ogr -f GPKG -t_srs EPSG:3035 -nln wl m/wl.gpkg weinlagen-all.geojson"
+   ],
+   "bytes": 11476992,
+   "sha256": "e0e0995c2d39d4070fc30ab9a973a63c813ffab354145f06e0cfaf7e00b6d0d3"
+  },
+  {
+   "path": "countries/de/spec-Mosel.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Mosel.pdf?__blob=publicationFile&v=3",
+   "note": "Mosel product specification (12 pp, text of amendment AM04, approved 5 Dec 2025)",
+   "bytes": 311323,
+   "sha256": "60c904706fb5e0adee6168b120248c30f3979b651fcbb340a9d3472e060a8b34"
+  },
+  {
+   "path": "countries/de/spec-Rheingau.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Rheingau.pdf?__blob=publicationFile&v=1",
+   "note": "Rheingau product specification (16 pp, the 2019 text)",
+   "bytes": 138794,
+   "sha256": "83a84b1a886a35c409652929534099b51b7cbbf7708473838d21b9284c6ca06b"
+  },
+  {
+   "path": "countries/de/rg-aem.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/Rheingau_gU/Produktspezifikation_AeM.pdf?__blob=publicationFile&v=8",
+   "note": "Rheingau amended specification (19 pp, 1. Standardaenderung, BAnz AT 09.06.2026 B7): a proposal; lists the 32 Gemarkungen",
+   "bytes": 1038154,
+   "sha256": "9129e1ab8c0ec7daa3b3a26c4eaa3d546bbf31f8fbe2e8cbce3945437446eb9d"
+  },
+  {
+   "path": "countries/de/rg-ed.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/Rheingau_gU/Einziges-Dokument.pdf?__blob=publicationFile&v=1",
+   "note": "Rheingau single document of the amendment (18 pp)",
+   "bytes": 137657,
+   "sha256": "d89c32ab0aa282cb24ce7f74a1ede9d68447ba9e56be9302c4794af06f90c1e3"
+  },
+  {
+   "path": "countries/de/rg-bek.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/Rheingau_gU/Bekanntmachung.pdf?__blob=publicationFile&v=2",
+   "note": "Rheingau amendment notice (29 pp)",
+   "bytes": 1922914,
+   "sha256": "9ebbcc2753b28f02ab1d1453155ed2daa482a5268113a4f0615f56d9d93a15cf"
+  },
+  {
+   "path": "countries/de/oj26-mosel.html",
+   "kind": "url",
+   "licence": "EU, OJ C/2026/1628 (reuse under Decision 2011/833/EU)",
+   "url": "https://publications.europa.eu/resource/oj/C_202601628.DEU",
+   "note": "Mosel AM04 notice with the single document, German HTML",
+   "bytes": 173528,
+   "sha256": "bb5383430b5ee8e0677429dd61117d0a60c2bf02e9b39a63302e8ccc044a14e2"
   }
  ]
 }

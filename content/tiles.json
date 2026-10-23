@@ -1,5 +1,5 @@
 {
- "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it. Batch 1 Portugal tile lines (24 places, 6 regions, 22 Oct 2026) are draft, drafted from each sheet's why row; owner rewrites.",
+ "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it. Batch 1 Portugal tile lines (24 places, 6 regions, 22 Oct 2026) are draft, drafted from each sheet's why row; owner rewrites. Germany tile lines (Mosel, Rheingau, 23 Oct 2026) are draft, drafted from each fact sheet; owner rewrites.",
  "spain": {
   "lede": "From Atlantic rain in the north to volcanic ash in the Canaries. Pick a region and fly in.",
   "from": [
@@ -480,6 +480,27 @@
     "etna-disc:p7",
     "vermentino-di-gallura-disc:p5",
     "vermentino-di-gallura-disc:p6"
+   ]
+  },
+  "de-mosel": {
+   "title": "Riesling above a winding river",
+   "lede": "Half the vineyards face south-east to south-west. They lie between 65 and 375 m.",
+   "from": [
+    "mosel"
+   ],
+   "cite": [
+    "mosel-spec:p8"
+   ]
+  },
+  "de-rheingau": {
+   "title": "Riesling on the Rhine's sunny slopes",
+   "lede": "Riesling covers about 80% of the vineyards. The Taunus forests slow the cold night air.",
+   "from": [
+    "rheingau"
+   ],
+   "cite": [
+    "rheingau-spec:p6",
+    "rheingau-spec:p7"
    ]
   }
  },
@@ -2661,6 +2682,20 @@
    "cite": [
     "recioto-di-gambellara-disc:p4",
     "recioto-di-gambellara-disc:p5"
+   ]
+  },
+  "mosel": {
+   "title": "Steep slate slopes above a winding river",
+   "cite": [
+    "mosel-spec:p8",
+    "mosel-spec:p9"
+   ]
+  },
+  "rheingau": {
+   "title": "South-facing Riesling slopes on the Rhine",
+   "cite": [
+    "rheingau-spec:p6",
+    "rheingau-spec:p7"
    ]
   }
  }

@@ -17,10 +17,10 @@ const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
 describe('country structure', () => {
   it('has the four countries, each with config for its card, page and Learn note', () => {
-    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france', 'italy']);
+    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france', 'italy', 'germany']);
     for (const s of stats) {
       expect(COUNTRIES[s.id].code).toBe(s.code);
-      if (s.id === 'france' || s.id === 'italy') continue; // their photos and guides land with the pilots' guides (#149)
+      if (s.id === 'france' || s.id === 'italy' || s.id === 'germany') continue; // their photos and guides land with the pilots' guides (#149)
       expect(COUNTRY_PAGES[s.id].cardPhotos).toHaveLength(5);
       expect(s.guides).toBeGreaterThan(0);
     }
@@ -92,7 +92,7 @@ describe('country pages', () => {
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);
-    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g)).toBe(bare.length);
+    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g) + count(pages.germany, /Photos soon/g)).toBe(bare.length);
     expect(pages.portugal).toContain('href="../pt/douro/"');
   });
 });

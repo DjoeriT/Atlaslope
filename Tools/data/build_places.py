@@ -224,6 +224,28 @@ def italy_places():
     return out
 
 
+# Germany (issue #149, pilot; decisions #71-#78, #93): WSET L3 Anbaugebiete as Study groups. Mosel's outline is the union of the LWK RLP
+# g.U. vineyard layer, closed at 150 m and marked approximate (data/countries/de/areas.geojson, Tools/data/build_de_areas.py). Outlines and
+# the Einzellagen zones (zones-mosel.geojson) load on demand, not with the map's first load (#38), so boundary is "de-areas", not "added".
+# Rheingau has no outline yet (Hessen and BKG refuse scripts): boundary "to-fetch". The Einzellagen are not in the tree (462 rows would
+# weigh on the first load). Not in Study yet.
+DE_GROUPS = [("de-mosel", "Mosel"), ("de-rheingau", "Rheingau")]
+DE_QUIZ_NOTE = "Study covers Spain for now; Germany joins when its WSET course is in Study."
+DE_PLACES = [("mosel", "Mosel", "PDO-DE-A1270", "de-mosel"), ("rheingau", "Rheingau", "PDO-DE-A1273", "de-rheingau")]
+
+
+def germany_places():
+    areas = {f["properties"]["id"]: f for f in json.loads((ROOT / "data/countries/de/areas.geojson").read_text())["features"]}
+    out = []
+    for pid, name, euFile, group in DE_PLACES:
+        outline = areas.get(pid)
+        out.append({"id": pid, "name": name, "official": name, "kind": "g.U.", "level": "place", "parent": "germany", "region": group,
+                    "euFile": euFile, "layerCode": None, "boundary": "de-areas" if outline else "to-fetch",
+                    "centroid": centroid(outline["geometry"]) if outline else None, "quiz": "none", "quizNote": DE_QUIZ_NOTE})
+    for i, p in enumerate(out, 1): p["courseOrder"] = i
+    return out
+
+
 def main():
     layer =json.loads((ROOT / "data/dops.geojson").read_text())
     over = json.loads((ROOT / "data/dop-overrides.json").read_text())
@@ -273,6 +295,7 @@ def main():
     places += portugal_places()
     places += france_places()
     places += italy_places()
+    places += germany_places()
 
     ids = [p["id"] for p in places]
     assert len(ids) == len(set(ids)), "duplicate id"
@@ -283,7 +306,8 @@ def main():
                       {"id": "portugal", "name": "Portugal", "level": "country", "levels": ["country", "region", "place", "zone"]},
                       # Two zone depths: Chablis Premier Cru, then its climats (#55).
                       {"id": "france", "name": "France", "level": "country", "levels": ["country", "region", "place", "zone", "zone"]},
-                      {"id": "italy", "name": "Italy", "level": "country", "levels": ["country", "region", "place", "zone"]}],
+                      {"id": "italy", "name": "Italy", "level": "country", "levels": ["country", "region", "place", "zone"]},
+                      {"id": "germany", "name": "Germany", "level": "country", "levels": ["country", "region", "place", "zone"]}],
         "courses": [{"id": "sws", "name": "Spanish Wine Scholar", "country": "spain",
                      "groups": [{"id": g, "name": over["regions"][g], **({"chapter": CHAPTERS[g]} if g in CHAPTERS else {}), "order": i + 1}
                                 for i, g in enumerate(COURSE)]},
@@ -295,7 +319,9 @@ def main():
                                 if any(p["region"] == g for p in places)]},
                     {"id": "wset-it", "name": "WSET", "country": "italy",
                      "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(IT_GROUPS)
-                                if any(p["region"] == g for p in places)]}],
+                                if any(p["region"] == g for p in places)]},
+                    {"id": "wset-de", "name": "WSET", "country": "germany",
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(DE_GROUPS)]}],
         "places": places,
     }
     out = ROOT / "data/places.json"
