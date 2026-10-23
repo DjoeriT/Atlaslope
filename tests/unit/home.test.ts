@@ -15,12 +15,13 @@ const html = readFileSync('index.html', 'utf8');
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
 const regions = tree.countries.flatMap((c) => tree.regionsOf(c.id));
 const places = regions.flatMap((r) => tree.placesInRegion(r.id));
+const guided = places;
 
 describe('the home page', () => {
   it('counts the places and study regions of every country the atlas has, filled in at build time', () => {
     const filled = fillHome(html, guideRows(), storyCount());
     const count = (name: string) => Number(new RegExp(`data-count="${name}">(\\d+)<`).exec(filled)?.[1]);
-    expect(count('places')).toBe(places.length);
+    expect(count('places')).toBe(guided.length);
     expect(count('regions')).toBe(regions.length);
     expect(count('stories')).toBe(storyCount());
   });
@@ -37,7 +38,7 @@ describe('the home page', () => {
   });
   it('backs "each with its own guide": every place has a guide, and the zones stay out of the count', () => {
     expect(html).toContain('wine places, each with its own guide');
-    expect(placeGuideCount()).toBe(places.length);
+    expect(placeGuideCount()).toBe(guided.length);
   });
   it('sends links from before the website to the atlas', () => {
     expect(html).toMatch(/location\.replace\('atlas\/'/);

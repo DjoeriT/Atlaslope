@@ -177,6 +177,8 @@
  "muscadet-sevre-et-maine-1": {"focus":"50% 50%","file":"6be3916a50f4"},
  "nahe-1": {"focus":"50% 50%","file":"99da057eb795"},
  "navarra-1": {"focus":"50% 50%","file":"4750848ec96a"},
+ "neusiedlersee-1": {"focus":"40% 50%","file":"02769460d7db"},
+ "neusiedlersee-3": {"focus":"40% 50%","file":"66c83c695325"},
  "nizza-1": {"focus":"50% 50%","file":"5487dae8c4c7"},
  "nuits-saint-georges-1": {"focus":"50% 50%","file":"5b39578cdb50"},
  "obidos-1": {"focus":"50% 50%","file":"1e9883073d9b"},
@@ -289,6 +291,9 @@
  "vosne-romanee-1": {"focus":"50% 50%","file":"3b26159f7724"},
  "vougeot-1": {"focus":"50% 50%","file":"6f0baa8439ad"},
  "vouvray-1": {"focus":"50% 50%","file":"a027941a56f7"},
+ "wachau-1": {"focus":"50% 50%","file":"dd47f4a9f161"},
+ "wachau-2": {"focus":"50% 50%","file":"3d705005ae86"},
+ "wachau-3": {"focus":"45% 50%","file":"13db06a56a48"},
  "ycoden-daute-isora-1": {"focus":"50% 50%","file":"bebc68a1b043"},
  "yecla-1": {"focus":"50% 50%","file":"da145cfa1312"}
 }

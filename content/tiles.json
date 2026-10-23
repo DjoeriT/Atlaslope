@@ -1,5 +1,5 @@
 {
- "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it. Batch 1 Portugal tile lines (24 places, 6 regions, 22 Oct 2026) are draft, drafted from each sheet's why row; owner rewrites. Germany tile lines (Mosel, Rheingau, 23 Oct 2026; wave 1: Ahr, Mittelrhein, Nahe, Rheinhessen, Pfalz, 23 Oct 2026) are draft, drafted from each fact sheet; owner rewrites.",
+ "$comment": "Tile headlines and ledes for the Atlas cards (owner points 1, 15, 16, 18 Oct 2026). Each line restates only what its cited rows say: a place title comes from its own sheet's 'why' row, a region or Spain line from the places listed in 'from'. Draft until the owner OKs it. Batch 1 Portugal tile lines (24 places, 6 regions, 22 Oct 2026) are draft, drafted from each sheet's why row; owner rewrites. Germany tile lines (Mosel, Rheingau, 23 Oct 2026; wave 1: Ahr, Mittelrhein, Nahe, Rheinhessen, Pfalz, 23 Oct 2026) are draft, drafted from each fact sheet; owner rewrites. Austria tile lines (Wachau, Neusiedlersee, 23 Oct 2026) are draft, drafted from each fact sheet; owner rewrites.",
  "spain": {
   "lede": "From Atlantic rain in the north to volcanic ash in the Canaries. Pick a region and fly in.",
   "from": [
@@ -501,6 +501,26 @@
    "cite": [
     "rheingau-spec:p6",
     "rheingau-spec:p7"
+   ]
+  },
+  "at-wachau": {
+   "title": "Riesling and Grüner Veltliner above the Danube",
+   "lede": "An Atlantic and a Pannonian climate meet on the terraces. Cool nights keep the white wines fresh.",
+   "from": [
+    "wachau"
+   ],
+   "cite": [
+    "wachau-spec:p2"
+   ]
+  },
+  "at-neusiedlersee": {
+   "title": "Zweigelt beside a steppe lake",
+   "lede": "The lake stores summer heat and keeps the air humid. Autumn fog favours noble rot.",
+   "from": [
+    "neusiedlersee"
+   ],
+   "cite": [
+    "neusiedlersee-spec:p2"
    ]
   },
   "de-ahr": {
@@ -2751,6 +2771,18 @@
    "cite": [
     "rheingau-spec:p6",
     "rheingau-spec:p7"
+   ]
+  },
+  "wachau": {
+   "title": "Steep Danube terraces of rock and loess",
+   "cite": [
+    "wachau-spec:p2"
+   ]
+  },
+  "neusiedlersee": {
+   "title": "A steppe lake that holds the heat",
+   "cite": [
+    "neusiedlersee-spec:p2"
    ]
   },
   "ahr": {

@@ -40,7 +40,7 @@ describe('the Terroir sections', () => {
       'los-cerrillos', 'macon', 'madeira', 'madeirense', 'madiran', 'malaga', 'manchuela', 'manzanilla', 'margaux', 'medoc', 'menetou-salon',
       'mentrida', 'mercurey', 'meursault', 'minervois', 'mittelrhein', 'monbazillac', 'mondejar', 'montagny', 'montecucco-sangiovese',
       'montefalco-sagrantino', 'montello-rosso', 'montepulciano-d-abruzzo', 'monterrei', 'montilla-moriles', 'montsant', 'morellino-di-scansano',
-      'morgon', 'mosel', 'moulin-a-vent', 'muscadet', 'muscadet-sevre-et-maine', 'muscat-de-beaumes-de-venise', 'nahe', 'navarra', 'nizza',
+      'morgon', 'mosel', 'moulin-a-vent', 'muscadet', 'muscadet-sevre-et-maine', 'muscat-de-beaumes-de-venise', 'nahe', 'navarra', 'neusiedlersee', 'nizza',
       'nuits-saint-georges', 'obidos', 'offida', 'oltrepo-pavese-metodo-classico', 'orvieto', 'otazu', 'pago-florentino', 'palmela', 'pauillac',
       'pays-doc', 'penedes', 'pessac-leognan', 'pfalz', 'piave-malanotte', 'picpoul-de-pinet', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard',
       'portimao', 'porto', 'pouilly-fuisse', 'pouilly-fume', 'prado-de-irache', 'primitivo-di-manduria-dolce-naturale', 'priorat', 'prosecco',
@@ -55,7 +55,7 @@ describe('the Terroir sections', () => {
       'val-di-cornia-rosso', 'valdeorras', 'valdepenas', 'valencia', 'valle-de-guimar', 'valle-de-la-orotava', 'vallegarcia', 'valles-de-benavente',
       'valpolicella', 'valtellina-superiore', 'valtiendas', 'vera-de-estenas', 'verdicchio-dei-castelli-di-jesi', 'verdicchio-di-matelica-riserva',
       'vermentino-di-gallura', 'vernaccia-di-san-gimignano', 'vernaccia-di-serrapetrona', 'vinho-verde', 'vino-nobile-di-montepulciano',
-      'vinos-de-madrid', 'volnay', 'vosne-romanee', 'vougeot', 'vouvray', 'ycoden-daute-isora', 'yecla',
+      'vinos-de-madrid', 'volnay', 'vosne-romanee', 'vougeot', 'vouvray', 'wachau', 'ycoden-daute-isora', 'yecla',
     ]);
     for (const g of guides) expect(ids.has(g.id), g.id).toBe(true);
   });

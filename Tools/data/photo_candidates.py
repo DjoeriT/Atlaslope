@@ -604,8 +604,53 @@ def de(ids):
         print("sheet", pid, flush=True)
 
 
+AT_OUT = ROOT / "Review/sources/photo-candidates-at.json"
+VINE_AT = re.compile(VINE.pattern + r"|weinberg|weinlage|rebe|reben|steillage|winzer|weingut|riesling|wein\b", re.I)
+AT_VINE_Q = "(Weinberg OR Weinberge OR Weingarten OR Terrassen OR Riesling OR Seewinkel OR vineyard)"
+# Austria pilot (23 Oct 2026, issue #149): both places have an outline in data/countries/at/areas.geojson.
+AT_PLACES = {"wachau": "Wachau", "neusiedlersee": "Neusiedlersee"}
+# The Neusiedlersee outline is the Rieden vineyard area; the lake shore and the Seewinkel lie outside it, so these searches match by name, not by outline.
+AT_WIDE = {"neusiedlersee": (re.compile(r"neusiedl|seewinkel|rust|podersdorf|illmitz|apetlon|weingarten|schilf", re.I),
+                             ["Neusiedler See Weingarten", "Neusiedler See Ufer Schilf", "Seewinkel", "Neusiedler See Rust Weinberg", "Podersdorf Neusiedler See", "Neusiedler See Weinbau Rebzeile"])}
+
+
+
+def at(ids):
+    geoms = {x["properties"]["id"]: shape(x["geometry"]) for x in json.loads((ROOT / "data/countries/at/areas.geojson").read_text())["features"]}
+    done = json.loads(AT_OUT.read_text()) if AT_OUT.exists() else {}
+    for pid, name in AT_PLACES.items():
+        if (ids and pid not in ids) or pid in done: continue
+        g = geoms[pid]
+        found = {}
+        try:
+            for lon, lat in discs(g, max_n=40):
+                r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 500, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
+                for x in r["query"]["geosearch"]: found[x["title"]] = (x["lon"], x["lat"])
+                time.sleep(.5)
+            r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 100, "srsearch": f'"{name}" ' + AT_VINE_Q})
+            for x in r["query"]["search"]: found.setdefault(x["title"], None)
+            cands = [c for c in info(found, g, name, VINE_AT) if c["vine"] or c["wine"]]
+            if pid in AT_WIDE:
+                wide, qs = AT_WIDE[pid]
+                more = {}
+                for q in qs:
+                    for x in get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 50, "srsearch": q})["query"]["search"]: more.setdefault(x["title"], None)
+                    time.sleep(.5)
+                cands += [c for c in info(more, None, "", wide) if c["title"] not in {k["title"] for k in cands}]
+        except Exception as e:
+            print(pid, "error:", e, flush=True); continue
+        done[pid] = {"name": name, "batch": "at", "outline": True, "seen": len(found), "kept": len(cands),
+                     "candidates": rank(list(cands), 24, 3), "all": cands}
+        print(pid, len(found), len(cands), len(done[pid]["candidates"]), flush=True)
+        AT_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for pid in [k for k in AT_PLACES if k in done]:
+        sheet(pid, [{"id": pid, "name": AT_PLACES[pid]}], done, "at-", cols=5)
+        print("sheet", pid, flush=True)
+
+
 def main():
     if sys.argv[1:2] == ["de"]: return de(sys.argv[2:])
+    if sys.argv[1:2] == ["at"]: return at(sys.argv[2:])
     if sys.argv[1:] == ["pt"]: return pt()
     if sys.argv[1:2] == ["fr"]: return fr(sys.argv[2:])
     if sys.argv[1:2] == ["it"]: return it(sys.argv[2:])

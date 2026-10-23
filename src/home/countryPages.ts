@@ -58,6 +58,13 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
     blocks: [],
     study: { note: 'Not yet for Germany.', link: false },
   },
+  // Pilot (#149): Wachau and Neusiedlersee. Draft intro, owner rewrites.
+  austria: {
+    intro: 'From the Danube to the lake.',
+    cardPhotos: ['wachau-1', 'neusiedlersee-1', 'wachau-2', 'neusiedlersee-3', 'wachau-3'],
+    blocks: [],
+    study: { note: 'Not yet for Austria.', link: false },
+  },
 };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

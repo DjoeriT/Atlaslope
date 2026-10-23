@@ -3337,6 +3337,99 @@
     ]
    }
   ],
+  "wachau": [
+   {
+    "title": "File:Spitz Wachau Sept 2020 1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Spitz_Wachau_Sept_2020_1.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Kasa Fue",
+    "credit": "Own work",
+    "description": "Der Ort Spitz in der Wachau, im Hintergrund die Weinberge, Sept. 2020",
+    "coords": [
+     15.422498,
+     48.357366
+    ]
+   },
+   {
+    "title": "File:Spitz Weinberg Singerriedl-3317.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Spitz_Weinberg_Singerriedl-3317.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Isiwal",
+    "credit": "Own work",
+    "description": "The Singerriedl vineyard in Spitz has a size of 8.31 ha and a maximum slope of 110%. The Grüner Veltliner thrives at the foot of the slope, the Riesling on the steep terraces.",
+    "coords": [
+     15.41653,
+     48.3705
+    ]
+   },
+   {
+    "title": "File:Terraced vineyards and village in Wachau.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Terraced_vineyards_and_village_in_Wachau.jpg",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "artist": "jay8085",
+    "credit": "originally posted to Flickr as Wachau",
+    "description": "Terraced vineyards and a village situated along the banks of the Danube river in the Austrian wine region of Wachau around Weißenkirchen.",
+    "coords": null
+   },
+   {
+    "title": "File:Vineyards in Wachau, Austria.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vineyards_in_Wachau,_Austria.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Michal Klajban",
+    "credit": "Own work",
+    "description": "Vineyards in Wachau. Austria",
+    "coords": null
+   }
+  ],
+  "neusiedlersee": [
+   {
+    "title": "File:Weiden Aussicht.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Weiden_Aussicht.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Alexander Loidhold Photography",
+    "credit": "Own work",
+    "description": "Auf dem Bild sieht man den Ort Weiden am See zur Sonnenuntergangsstimmung, mit Häusern und der Kirche und im Hintergrund den See. Das Foto wurde aufgenommen in den Weinbergen im Frühherbst",
+    "coords": [
+     16.882952,
+     47.928361
+    ]
+   },
+   {
+    "title": "File:Organic-Vineyard-Austria-Neusiedlersee.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Organic-Vineyard-Austria-Neusiedlersee.jpg",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "artist": "Verita",
+    "credit": "Own work",
+    "description": "Neusiedlersee-Hügelland, vineyard, organic agricultural, Austria.",
+    "coords": null
+   },
+   {
+    "title": "File:Podersdorf am See Leuchtturm.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Podersdorf_am_See_Leuchtturm.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Funke",
+    "credit": "Own work",
+    "description": "Leuchtturm am Neusiedler See in Podersdorf am See, Österreich.",
+    "coords": null
+   },
+   {
+    "title": "File:Nationalpark Neusiedler See-Seewinkel - 06.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nationalpark_Neusiedler_See-Seewinkel_-_06.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Haeferl",
+    "credit": "Own work",
+    "description": "This file shows the National Park Neusiedler See-Seewinkel in Austria.",
+    "coords": null
+   }
+  ],
   "ahr": [
    {
     "title": "File:Ahrweiler, Rotweinwanderweg-Blick, 2011-10 CN-01.jpg",
