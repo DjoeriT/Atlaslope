@@ -18,7 +18,7 @@ export const sources = sourcesFile as Sources;
 const sheets = new Map<string, Sheet>(sheetFiles.flatMap((f) => f.sheets.map((s) => [s.id, s] as const)));
 const measuresDoc = measuresFile as unknown as {
   places: Record<string, Measures>;
-  country: Record<string, Measures>;
+  country: Record<string, CountryMeasures>;
   regions: Record<string, Measures>;
 };
 const measures = measuresDoc.places;
@@ -27,8 +27,10 @@ const photoSizes = photoData.sizes;
 
 export const sheetOf = (placeId: string): Sheet | undefined => sheets.get(placeId);
 export const measuresOf = (placeId: string): Measures | undefined => measures[placeId];
-/** A country's land, measured the same way as a place, for comparisons. */
-export const countryMeasures = (countryId: string): Measures | undefined => measuresDoc.country[countryId];
+/** A country's land, measured the same way as a place, for comparisons. France's has Köppen only for now (its altitude needs DEM tiles
+ * not fetched yet, Tools/data/measure_places.py KOPPEN_ONLY). */
+export type CountryMeasures = Omit<Measures, 'altitude'> & Partial<Pick<Measures, 'altitude'>>;
+export const countryMeasures = (countryId: string): CountryMeasures | undefined => measuresDoc.country[countryId];
 /** A study region's appellation-level land, measured the same way as a place, for comparisons. */
 export const regionMeasuresOf = (regionId: string): Measures | undefined => measuresDoc.regions[regionId];
 
