@@ -10,6 +10,8 @@
 - Glossary: Learn and Course. CLAUDE.md vocabulary updated. Indent tidied in `Doors.tsx`.
 
 ## Open
-- Release: release 70 (Portugal) was prepared but not tagged when this merged, so Learn goes out with it. Its tester note has a Learn part.
+- Release: done. Learn went out in release 70 (23 Oct 2026); the live home links `#learn` [V]. Leftover "Study" lines in CLAUDE.md fixed in #246.
+- ReviewBot notes not done (`Review/learn-start/review.md`): "just before you would forget it" may promise too much; on a phone the sticky
+  Begin button covers the intro's third paragraph until you scroll. The intro's miss line was changed from the approved mock to what the code does.
 - Risk kept from the builder report: an older open tab reads a new course id as All of Spain, and its next save writes that back.
 - Learn step 2 (WSET 2 why cards, pilot Rioja and Jerez): `docs/handoffs/2026-10-21-agenda-after-62.md` item 5.
