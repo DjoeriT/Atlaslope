@@ -20,8 +20,9 @@ jobs:
       - run: python3 -m venv /tmp/venv && /tmp/venv/bin/pip install -q pillow==11.0.0
       - run: /tmp/venv/bin/python -I Tools/data/photo_ship.py
       - run: /tmp/venv/bin/python -I Tools/data/photo_sizes.py
+      # Only a run that finished commits: a cancelled photo run pushed lisboa-2 as 0 bytes (23 Oct 2026).
       - name: Commit the results to this branch
-        if: always()
+        if: success()
         env:
           BRANCH: ${{ github.ref_name }}
         run: |
