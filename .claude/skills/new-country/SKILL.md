@@ -42,7 +42,7 @@ No `src/`, `content/` or guide runs. Results in `Review/countries/<country>-prep
 - WSET L3 table: `Tools/countries/<cc>_wset.py` (copy `de_wset.py` / `it_wset.py`): names, matched to EU file numbers.
 - Pilot outlines: `Tools/data/build_<cc>_areas.py` + `data/countries/<cc>/areas-spec.json` (copy the nearest of pt/fr/it/de).
   Measure the size of each route (the Mosel table in `germany-prep/README.md`) before choosing.
-- Raw files go to `~/Developer/Atlaslope-raw/countries/<cc>/` and into `Tools/data/raw-manifest.json` (#229); no symlinks in the repo.
+- Raw files go to `~/Developer/Atlaslope-raw/countries/<cc>/` (`Tools/rawdir.py`) and into `Tools/data/raw-manifest.json` (#229); no symlinks in the repo.
 - Language test: run one spec through `Tools/guides/extract.py`. French and Italian needed their own start and stop markers and
   per-article caps (Italy: article 3 after 60 lines, others after 150, annexes after 40). Without them a 146 KB extract blew a run.
 
@@ -55,9 +55,14 @@ Touch list (the Germany pilot, PR #245, is the template):
 - First load limit 2.1 MB (#38, `Tools/check.sh`): new outlines and zones load on demand (boundary "<cc>-areas"), never in the first load.
 - Guides on the local route: `Tools/guides/headless.py --sheets` fills `content/facts/<cc>-<group>.json`, then writer and Opus checker;
   copy `Tools/countries/it_batch.py` as `<cc>_batch.py`. Spot-check 5 facts per sheet against the spec.
-- Photos: `Tools/data/photo_candidates.py <cc>`, owner picks, `Tools/data/photo_ship.py` (add `<CC>_SHIP`), square crops checked against
+- Photos: Commons first (`Tools/data/photo_candidates.py <cc>`), Openverse for thin places (`Tools/data/openverse_candidates.py`;
+  Flickr needs a User-Agent without "Bot"), owner picks, `Tools/data/photo_ship.py` (add `<CC>_SHIP`), square crops checked against
   the original (`Tools/guides/crop_sheet.mjs`, `src/home/photoCrops.json`), one credit line per set.
-- Measures: `Tools/data/measure_places.py` (altitude, slope, Köppen) for places, regions and the country; climate colours follow.
+- Measures and climate colours: `Tools/data/koppen_country.sh <country>`, then `Tools/data/measure_places.py` (altitude, slope, Köppen)
+  for places, regions and the country (#241 Portugal, #244 France). Prove the other countries' values unchanged, key by key.
+- Shared records take lines, not edits (owner, 23 Oct 2026, PR #249): `data/SOURCES.md` gets one row per country for shared layers
+  ("Köppen for <Country> (raw ...)", "`place-measures.json`: <Country> rows", `countries/<cc>/mask.json`); `docs/PROJECT.md` "Current state"
+  one bullet per slice; the handoff index and spend log merge by union.
 - Tile lines for places, groups and the country (`content/tiles.json`): drafts, the owner rewrites.
 - Tests that pin counts (`tests/unit/{places,tree,guides,country-pages,map,data-layers,facts-measures}.test.ts`).
 - Gates: rough screenshots to the owner first; ReviewBot (new screen and copy); auto-merge only after its report; release only on "publish release N".
