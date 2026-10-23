@@ -4986,8 +4986,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 84,
-   "courseOrder": 84
+   "northSouth": 85,
+   "courseOrder": 85
   },
   {
    "id": "jurancon",
@@ -5006,8 +5006,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 88,
-   "courseOrder": 88
+   "northSouth": 90,
+   "courseOrder": 90
   },
   {
    "id": "beaujolais",
@@ -5175,8 +5175,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 91,
-   "courseOrder": 91
+   "northSouth": 93,
+   "courseOrder": 93
   },
   {
    "id": "minervois",
@@ -5198,8 +5198,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 87,
-   "courseOrder": 87
+   "northSouth": 89,
+   "courseOrder": 89
   },
   {
    "id": "fitou",
@@ -5222,8 +5222,8 @@
     "corbieres",
     "languedoc"
    ],
-   "northSouth": 92,
-   "courseOrder": 92
+   "northSouth": 94,
+   "courseOrder": 94
   },
   {
    "id": "corbieres",
@@ -5245,8 +5245,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 90,
-   "courseOrder": 90
+   "northSouth": 92,
+   "courseOrder": 92
   },
   {
    "id": "picpoul-de-pinet",
@@ -5268,8 +5268,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 85,
-   "courseOrder": 85
+   "northSouth": 86,
+   "courseOrder": 86
   },
   {
    "id": "cotes-du-roussillon",
@@ -5291,8 +5291,8 @@
    "alsoWithin": [
     "languedoc"
    ],
-   "northSouth": 94,
-   "courseOrder": 94
+   "northSouth": 96,
+   "courseOrder": 96
   },
   {
    "id": "cotes-du-roussillon-villages",
@@ -5315,8 +5315,8 @@
     "cotes-du-roussillon",
     "languedoc"
    ],
-   "northSouth": 93,
-   "courseOrder": 93
+   "northSouth": 95,
+   "courseOrder": 95
   },
   {
    "id": "bandol",
@@ -5335,8 +5335,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 89,
-   "courseOrder": 89
+   "northSouth": 91,
+   "courseOrder": 91
   },
   {
    "id": "cotes-de-provence",
@@ -5355,8 +5355,8 @@
    ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
-   "northSouth": 86,
-   "courseOrder": 86
+   "northSouth": 88,
+   "courseOrder": 88
   },
   {
    "id": "champagne",
@@ -5377,6 +5377,46 @@
    "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
    "northSouth": 1,
    "courseOrder": 1
+  },
+  {
+   "id": "cotes-de-gascogne",
+   "name": "Côtes de Gascogne",
+   "official": "Côtes de Gascogne",
+   "kind": "IGP",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-south-west",
+   "euFile": "PGI-FR-A1162",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    0.3924,
+    43.7304
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 84,
+   "courseOrder": 84
+  },
+  {
+   "id": "pays-doc",
+   "name": "Pays d’Oc",
+   "official": "Pays d'Oc",
+   "kind": "IGP",
+   "level": "place",
+   "parent": "france",
+   "region": "fr-south",
+   "euFile": "PGI-FR-A1367",
+   "layerCode": null,
+   "boundary": "added",
+   "centroid": [
+    3.1606,
+    43.3774
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; France joins when its WSET course is in Study.",
+   "northSouth": 87,
+   "courseOrder": 87
   },
   {
    "id": "barolo",

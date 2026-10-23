@@ -15,7 +15,7 @@ const allCites = (): Array<[string, string]> => guides.flatMap((g) => [
 ]);
 
 describe('the Terroir sections', () => {
-  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) the 16 more Bordeaux places the 22 more Burgundy places 18 Loire, 14 Rhône and 22 more places from the South-West, Beaujolais, Alsace, the South and Champagne (22-23 Oct 2026: the WSET L3 list, 94 places), each for a place in the tree', () => {
+  it('exist for Rioja and its three zones, the nine Green Spain places, the 16 Castilla y León places and the eight Andalucía places, the 12 Cataluña places, the two Baleares places, the 11 Ebro places, the 11 Mediterranean places, the 11 Canarias places, the 25 Meseta places, the 24 new Portugal places (batch 1, owner option B, 22 Oct 2026, with Douro and Vinho Verde the 26), the France pilot (Chablis, Pauillac) the 16 more Bordeaux places the 22 more Burgundy places 18 Loire, 14 Rhône and 22 more places from the South-West, Beaujolais, Alsace, the South and Champagne (22-23 Oct 2026: the WSET L3 list, 94 places) and its two PGIs, Côtes de Gascogne and Pays d\'Oc (96 in all), each for a place in the tree', () => {
     expect(guides.map((g) => g.id).sort()).toEqual([
       'abadia-retuerta', 'abona', 'aglianico-del-taburno', 'aglianico-del-vulture', 'alella', 'alenquer', 'alentejo', 'alicante', 'almansa',
       'aloxe-corton', 'alsace', 'alta-langa', 'alto-adige', 'anjou', 'arinzano', 'arlanza', 'arribes', 'arruda', 'asolo-prosecco', 'asti', 'ayles',
@@ -29,9 +29,9 @@ describe('the Terroir sections', () => {
       'chozas-carrascal', 'cigales', 'colares', 'colli-bolognesi-pignoletto', 'colli-di-conegliano', 'colli-euganei-fior-darancio',
       'colli-orientali-del-friuli-picolit', 'colline-teramane-montepulciano-dabruzzo', 'collio', 'conca-de-barbera', 'condado-de-huelva', 'condrieu',
       'conegliano-valdobbiadene', 'conero', 'corbieres', 'cornas', 'costers-del-segre', 'cote-de-beaune-villages', 'cote-de-nuits-villages',
-      'cote-rotie', 'coteaux-du-layon', 'cotes-de-bordeaux', 'cotes-de-provence', 'cotes-du-rhone', 'cotes-du-rhone-villages', 'cotes-du-roussillon',
-      'cotes-du-roussillon-villages', 'cremant-dalsace', 'cremant-de-bourgogne', 'cremant-de-loire', 'crozes-hermitage', 'dao',
-      'dehesa-del-carrizal', 'dehesa-penalba', 'dogliani', 'dolcetto-d-alba', 'dolcetto-di-diano-dalba', 'dolcetto-di-ovada-superiore',
+      'cote-rotie', 'coteaux-du-layon', 'cotes-de-bordeaux', 'cotes-de-gascogne', 'cotes-de-provence', 'cotes-du-rhone', 'cotes-du-rhone-villages',
+      'cotes-du-roussillon', 'cotes-du-roussillon-villages', 'cremant-dalsace', 'cremant-de-bourgogne', 'cremant-de-loire', 'crozes-hermitage',
+      'dao', 'dehesa-del-carrizal', 'dehesa-penalba', 'dogliani', 'dolcetto-d-alba', 'dolcetto-di-diano-dalba', 'dolcetto-di-ovada-superiore',
       'dominio-de-valdepusa', 'dotejo', 'douro', 'el-hierro', 'el-terrerazo', 'el-vicario', 'elba-aleatico-passito', 'emporda', 'encostas-daire',
       'entre-deux-mers', 'erbaluce-di-caluso', 'etna', 'fiano-di-avellino', 'finca-elez', 'fitou', 'fleurie', 'franciacorta', 'frascati',
       'friuli-colli-orientali', 'friuli-grave', 'gattinara', 'gavi', 'gevrey-chambertin', 'ghemme', 'gigondas', 'givry', 'gran-canaria', 'granada',
@@ -41,11 +41,11 @@ describe('the Terroir sections', () => {
       'mentrida', 'mercurey', 'meursault', 'minervois', 'monbazillac', 'mondejar', 'montagny', 'montecucco-sangiovese', 'montefalco-sagrantino',
       'montello-rosso', 'montepulciano-d-abruzzo', 'monterrei', 'montilla-moriles', 'montsant', 'morellino-di-scansano', 'morgon', 'moulin-a-vent',
       'muscadet', 'muscadet-sevre-et-maine', 'muscat-de-beaumes-de-venise', 'navarra', 'nizza', 'nuits-saint-georges', 'obidos', 'offida',
-      'oltrepo-pavese-metodo-classico', 'orvieto', 'otazu', 'pago-florentino', 'palmela', 'pauillac', 'penedes', 'pessac-leognan', 'piave-malanotte',
-      'picpoul-de-pinet', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard', 'portimao', 'porto', 'pouilly-fuisse', 'pouilly-fume',
-      'prado-de-irache', 'primitivo-di-manduria-dolce-naturale', 'priorat', 'prosecco', 'puligny-montrachet', 'ramandolo', 'recioto-di-gambellara',
-      'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro', 'rioja',
-      'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'roero', 'romagna-albana', 'rosalejo', 'rosazzo', 'rose-danjou', 'rose-de-loire',
+      'oltrepo-pavese-metodo-classico', 'orvieto', 'otazu', 'pago-florentino', 'palmela', 'pauillac', 'pays-doc', 'penedes', 'pessac-leognan',
+      'piave-malanotte', 'picpoul-de-pinet', 'pla-de-bages', 'pla-i-llevant', 'pomerol', 'pommard', 'portimao', 'porto', 'pouilly-fuisse',
+      'pouilly-fume', 'prado-de-irache', 'primitivo-di-manduria-dolce-naturale', 'priorat', 'prosecco', 'puligny-montrachet', 'ramandolo',
+      'recioto-di-gambellara', 'rias-baixas', 'ribeira-sacra', 'ribeiro', 'ribera-del-duero', 'ribera-del-guadiana', 'ribera-del-jucar', 'rio-negro',
+      'rioja', 'rioja-alavesa', 'rioja-alta', 'rioja-oriental', 'roero', 'romagna-albana', 'rosalejo', 'rosazzo', 'rose-danjou', 'rose-de-loire',
       'ruche-di-castagnole-monferrato', 'rueda', 'rully', 'saint-emilion', 'saint-emilion-grand-cru', 'saint-estephe', 'saint-joseph',
       'saint-julien', 'saint-veran', 'salice-salentino', 'sancerre', 'saumur', 'saumur-champigny', 'sauternes', 'savennieres', 'scanzo', 'setubal',
       'sforzato-di-valtellina', 'sierra-de-salamanca', 'sierras-de-malaga', 'soave', 'somontano', 'suvereto', 'tacoronte-acentejo', 'tarragona',

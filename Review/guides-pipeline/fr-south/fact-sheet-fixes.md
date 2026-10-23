@@ -35,3 +35,7 @@
 - applied `famous.styles.0.text`: sheet says 'on limestone soils'; pliego p11 'sols à dominante carbonatée, caillouteux et filtrants'
 - applied `famous.styles.1.text`: sheet says 'rounder wines'; pliego p11 gives roundness ('très ronde', 'plus gras') to the rosés, reds are elegant with fine tannins
 - applied `famous.styles.2.text`: sheet says all wines 'fresh and round'; pliego p12 gives the fraîcheur/rondeur balance to rosés, reds are 'puissants'
+
+## pays-doc
+- applied `styles.text`: Sheet gives the colours to still wines only and leaves out gris de gris. The pliego gives every colour to all three categories: "vins tranquilles, vins mousseux de qualité, et vins de raisins surmûris rouges, rosés, blancs, gris et gris de gris", p2
+- applied `famous.styles`: Sheet says sur lie is one winter on fine lees, bottled in the zone. The pliego limits it to "vins tranquilles rosés et blancs" (p13) and allows bottling in "la zone géographique et la zone de proximité immédiate" (p14)

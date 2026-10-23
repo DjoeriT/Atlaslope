@@ -903,6 +903,175 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "pays-doc",
+   "why": {
+    "text": "A Mediterranean amphitheatre of hot, dry summers and mild winters, tempered by sea winds, on varied soils; wines are mostly single-grape.",
+    "cite": [
+     "pays-doc-doc:p3",
+     "pays-doc-doc:p9",
+     "pays-doc-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Cinsaut"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Cabernet-Sauvignon"
+     },
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Viognier"
+     }
+    ],
+    "cite": [
+     "pays-doc-doc:p3",
+     "pays-doc-doc:p9",
+     "pays-doc-doc:p10"
+    ],
+    "others": [
+     "Muscat À Petits Grains Rouges",
+     "Cot",
+     "Vermentino",
+     "Bourboulenc",
+     "Mourvedre",
+     "Negrette",
+     "Nielluccio",
+     "Muscat De Hambourg",
+     "Petit Manseng",
+     "Muscat D'Alexandrie",
+     "Muscat À Petits Grains Blancs",
+     "Riesling",
+     "Chasan",
+     "Altesse",
+     "Chenanson",
+     "Chenin",
+     "Gros Manseng",
+     "Carmenere",
+     "Terret Blanc",
+     "Grenache Gris",
+     "Sauvignon Gris",
+     "Gamay",
+     "Gewürztraminer",
+     "Alicante Henri Bouschet",
+     "Grenache Blanc",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Roussanne",
+     "Colombard",
+     "Sylvaner",
+     "Sémillon",
+     "Cabernet Franc",
+     "Piquepoul Blanc",
+     "Marselan",
+     "Marsanne",
+     "Petit Verdot",
+     "Morrastel",
+     "Pinot Gris",
+     "Mondeuse",
+     "Mauzac",
+     "Pinot Blanc",
+     "Tempranillo",
+     "Carignan Blanc",
+     "Macabeu",
+     "Carignan",
+     "Portan"
+    ],
+    "othersCite": [
+     "pays-doc-doc:p7",
+     "pays-doc-doc:p8",
+     "pays-doc-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Still, quality sparkling and overripe-grape wines, each red, rosé, white, gris or gris de gris.",
+    "cite": [
+     "pays-doc-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: hot, dry summers and mild winters. Drying north and west winds, and humid sea winds that cool summer heat. Rainfall rises from 400 mm to nearly 1000 mm with altitude and distance from the sea.",
+    "cite": [
+     "pays-doc-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Varied geology, from the Primary to the Quaternary era.",
+    "cite": [
+     "pays-doc-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards run from the Mediterranean shore to more than 400 metres.",
+    "cite": [
+     "pays-doc-doc:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: lively, floral, aromatic. Rosés: fresh, light, fruity. Reds: fruity, or structured with soft tannins. Sweet wines: rich, complex.",
+    "cite": [
+     "pays-doc-doc:p3",
+     "pays-doc-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vin de cépage",
+      "text": "Wine named after one grape variety on the label."
+     },
+     {
+      "name": "Primeur / nouveau",
+      "text": "Early-release still wines only."
+     },
+     {
+      "name": "Sur lie",
+      "text": "Still rosés and whites only; one winter, on fine lees at bottling from 21 March."
+     },
+     {
+      "name": "Vin de raisins surmûris",
+      "text": "Sweet wine from overripe or noble-rot grapes, aged at least 6 months."
+     }
+    ],
+    "cite": [
+     "pays-doc-doc:p3",
+     "pays-doc-doc:p4",
+     "pays-doc-doc:p13",
+     "pays-doc-doc:p14"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
   }
  ]
 }

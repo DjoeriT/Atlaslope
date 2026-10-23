@@ -2387,6 +2387,18 @@
   "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10331",
   "date": "2026-08-28"
  },
+ "cotes-de-gascogne-doc": {
+  "kind": "official",
+  "title": "Côtes de Gascogne PGI-FR-A1162: EU single document / technical file (PGI, French, eAmbrosia attachment 10729)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/10729",
+  "date": "2026-07-15"
+ },
+ "pays-doc-doc": {
+  "kind": "official",
+  "title": "Pays d'Oc PGI-FR-A1367: EU single document / technical file (PGI, French, eAmbrosia attachment 11143)",
+  "url": "https://webgate.ec.europa.eu/eambrosia-api/api/v1/attachments/11143",
+  "date": "2026-05-08"
+ },
  "barolo-disc": {
   "kind": "official",
   "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",

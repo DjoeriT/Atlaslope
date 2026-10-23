@@ -76,7 +76,8 @@ def main() -> None:
     places, seen = [], set()
     for line in TABLE.read_text(encoding="utf-8").splitlines():
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 7 or not re.fullmatch(r"P[DG]O-FR-[A-Z]\d+", cells[3]):
+        # PGI too (23 Oct 2026): "PDO" alone dropped Côtes de Gascogne and Pays d'Oc, the two PGIs WSET names (96 places, not 94).
+        if len(cells) < 7 or not re.fullmatch(r"P(?:DO|GI)-FR-[A-Z]\d+", cells[3]):
             continue
         heading, name, kind, fn, regname, note, batch = cells[:7]
         pid = slug(name)
@@ -123,7 +124,10 @@ def sources(places: list) -> None:
                        check=True, capture_output=True)
         manifests.setdefault(gp, {})[f"{p['id']}-doc"] = str(txt.relative_to(ROOT))
     for gp, m in manifests.items():
-        (gp / "manifest.json").write_text(json.dumps({"sources": m}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        # Merge: entries added by hand (the INAO cahiers in cdc-*.txt) stay (23 Oct 2026: a rerun had dropped five).
+        f = gp / "manifest.json"
+        kept = json.loads(f.read_text(encoding="utf-8"))["sources"] if f.exists() else {}
+        f.write_text(json.dumps({"sources": {**kept, **m}}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"sources: {gp.relative_to(ROOT)}: {len(m)} places")
 
 

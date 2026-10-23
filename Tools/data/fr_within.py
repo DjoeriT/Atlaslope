@@ -7,7 +7,8 @@ A place is within another when at least 90% of its outline lies inside the other
 appellations on the same ground (Bordeaux and Bordeaux Supérieur, Saint-Émilion and its Grand Cru) are tiers, not nesting: of
 candidate parents with the same area (within 2%), only the shortest name is kept. Style-only appellations that span a whole
 region (Crémant de Bourgogne, Crémant de Loire, Crémant d'Alsace, Rosé de Loire) are not parents: they name a wine, not a
-wider place [A, LeadBot's call, 22 Oct 2026]. Writes data/countries/fr/within.json:
+wider place [A, LeadBot's call, 22 Oct 2026]. Nor are the PGIs (Pays d'Oc, Côtes de Gascogne): whole départements, not a
+wine place an AOC sits in (23 Oct 2026). Writes data/countries/fr/within.json:
 {id: [parent ids, nearest first]}; build_places.py keeps only shipped ids as alsoWithin.
 """
 import json
@@ -24,7 +25,8 @@ def main() -> None:
     names = {p["id"]: p["name"] for p in json.loads((ROOT / "data/countries/fr/wset-places.json").read_text())["places"]}
     g = {f["properties"]["id"]: shape(f["geometry"]).buffer(0) for f in json.loads(AREAS.read_text())["features"]
          if f["properties"]["kind"] == "place"}
-    style = {i for i, n in names.items() if n.startswith(("Crémant", "Rosé de Loire"))}
+    pgi = {p["id"] for p in json.loads((ROOT / "data/countries/fr/wset-places.json").read_text())["places"] if p["type"] == "PGI"}
+    style = {i for i, n in names.items() if n.startswith(("Crémant", "Rosé de Loire"))} | pgi
     out = {}
     for a, ga in g.items():
         cands = sorted((b for b, gb in g.items() if b != a and b not in style and gb.area > ga.area * 1.05 and ga.intersection(gb).area / ga.area > 0.9),

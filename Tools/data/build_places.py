@@ -161,7 +161,9 @@ FR_SHIP = ["chablis", "pauillac",
            # South-West, Beaujolais, Alsace, South and Champagne (23 Oct 2026): the WSET L3 list complete, 94 places
            "bergerac", "monbazillac", "cahors", "madiran", "jurancon", "beaujolais", "brouilly", "fleurie", "morgon", "moulin-a-vent",
            "alsace", "cremant-dalsace", "languedoc", "minervois", "fitou", "corbieres", "picpoul-de-pinet", "cotes-du-roussillon",
-           "cotes-du-roussillon-villages", "bandol", "cotes-de-provence", "champagne"]
+           "cotes-du-roussillon-villages", "bandol", "cotes-de-provence", "champagne",
+           # The two PGIs WSET names (23 Oct 2026; fr_wset.py had matched PDOs only): 96 places
+           "cotes-de-gascogne", "pays-doc"]
 FR_QUIZ_NOTE = "Study covers Spain for now; France joins when its WSET course is in Study."
 FR_ZONE_NAMES = {"Chablis premier cru": "Chablis Premier Cru", "Chablis Grand Cru": "Chablis Grand Cru"}  # [A] the wine's name in title case
 
@@ -177,7 +179,7 @@ def france_places():
     for pid in FR_SHIP:
         w, s = wset[pid], spec.get(pid, {})
         region = group[w["batch"]]
-        place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "AOC", "level": "place", "parent": "france",
+        place = {"id": pid, "name": w["name"], "official": w["registerName"], "kind": "IGP" if w["type"] == "PGI" else "AOC", "level": "place", "parent": "france",
                  "region": region, "euFile": w["fileNumber"], "layerCode": None, "boundary": "added",
                  "centroid": centroid(areas[pid]["geometry"]), "quiz": "none", "quizNote": FR_QUIZ_NOTE}
         # alsoWithin holds tree ids only: a wider AOC joins it once that AOC is shipped. Nesting is measured on the INAO outlines
