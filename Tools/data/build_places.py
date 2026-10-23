@@ -229,9 +229,15 @@ def italy_places():
 # the Einzellagen zones (zones-mosel.geojson) load on demand, not with the map's first load (#38), so boundary is "de-areas", not "added".
 # Rheingau has no outline yet (Hessen and BKG refuse scripts): boundary "to-fetch". The Einzellagen are not in the tree (462 rows would
 # weigh on the first load). Not in Study yet.
-DE_GROUPS = [("de-mosel", "Mosel"), ("de-rheingau", "Rheingau")]
+# Wave 1 (23 Oct 2026): the rest of Rheinland-Pfalz. A place ships once its guide exists (as IT_SHIP), so a half-run batch builds.
+DE_GROUPS = [("de-mosel", "Mosel"), ("de-rheingau", "Rheingau"), ("de-ahr", "Ahr"), ("de-mittelrhein", "Mittelrhein"), ("de-nahe", "Nahe"),
+             ("de-rheinhessen", "Rheinhessen"), ("de-pfalz", "Pfalz")]
 DE_QUIZ_NOTE = "Study covers Spain for now; Germany joins when its WSET course is in Study."
-DE_PLACES = [("mosel", "Mosel", "PDO-DE-A1270", "de-mosel"), ("rheingau", "Rheingau", "PDO-DE-A1273", "de-rheingau")]
+DE_PLACES = [("mosel", "Mosel", "PDO-DE-A1270", "de-mosel"), ("rheingau", "Rheingau", "PDO-DE-A1273", "de-rheingau"),
+             ("ahr", "Ahr", "PDO-DE-A0867", "de-ahr"), ("mittelrhein", "Mittelrhein", "PDO-DE-A1269", "de-mittelrhein"),
+             ("nahe", "Nahe", "PDO-DE-A1271", "de-nahe"), ("rheinhessen", "Rheinhessen", "PDO-DE-A1274", "de-rheinhessen"),
+             ("pfalz", "Pfalz", "PDO-DE-A1272", "de-pfalz")]
+DE_PLACES = [p for p in DE_PLACES if (ROOT / f"content/guides/{p[0]}.json").exists()]
 
 
 def germany_places():
@@ -321,7 +327,8 @@ def main():
                      "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(IT_GROUPS)
                                 if any(p["region"] == g for p in places)]},
                     {"id": "wset-de", "name": "WSET", "country": "germany",
-                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(DE_GROUPS)]}],
+                     "groups": [{"id": g, "name": n, "order": i + 1} for i, (g, n) in enumerate(DE_GROUPS)
+                                if any(p["region"] == g for p in places)]}],
         "places": places,
     }
     out = ROOT / "data/places.json"

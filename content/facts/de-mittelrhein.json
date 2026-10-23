@@ -1,0 +1,252 @@
+{
+ "region": "de-mittelrhein",
+ "sheets": [
+  {
+   "id": "mittelrhein",
+   "why": {
+    "text": "Steep Devonian slate slopes in a narrow Rhine valley, mostly south-facing, with a long growing season and Riesling as the leading grape.",
+    "cite": [
+     "mittelrhein-spec:p7",
+     "mittelrhein-spec:p8",
+     "mittelrhein-spec:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Weißer Riesling"
+     },
+     {
+      "local": "Weißer Burgunder"
+     },
+     {
+      "local": "Ruländer"
+     },
+     {
+      "local": "Blauer Spätburgunder"
+     }
+    ],
+    "cite": [
+     "mittelrhein-spec:p10"
+    ],
+    "others": [
+     "Albalonga",
+     "Arnsburger",
+     "Auxerrois",
+     "Bacchus",
+     "Blauer Silvaner",
+     "Blütenmuskateller",
+     "Bronner",
+     "Cabernet Blanc",
+     "Calardis Blanc",
+     "Calardis Musqué",
+     "Chardonnay",
+     "Donauriesling",
+     "Ehrenbreitsteiner",
+     "Ehrenfelser",
+     "Faberrebe",
+     "Felicia",
+     "Findling",
+     "Freisamer",
+     "Früher Malingre",
+     "Früher Roter Malvasier",
+     "Gelber Muskateller",
+     "Gm 643-10",
+     "Gm 643-17",
+     "Goldmuskateller",
+     "Goldriesling",
+     "Grüner Silvaner",
+     "Grüner Veltliner",
+     "Helios",
+     "Hibernal",
+     "Hölder",
+     "Huxelrebe",
+     "Johanniter",
+     "Juwel",
+     "Kanzler",
+     "Kerner",
+     "Kernling",
+     "Merzling",
+     "Morio Muskat",
+     "Müller Thurgau",
+     "Muscaris",
+     "Muskat Ottonel",
+     "Nobling",
+     "Optima 113",
+     "Orion",
+     "Ortega",
+     "Osteiner",
+     "Perle",
+     "Petite Arvine",
+     "Phoenix",
+     "Prinzipal",
+     "Regner",
+     "Reichensteiner",
+     "Rieslaner",
+     "Rosa Chardonnay",
+     "Roter Elbling",
+     "Roter Gutedel",
+     "Roter Müller Thurgau",
+     "Roter Muskateller",
+     "Roter Riesling",
+     "Roter Traminer",
+     "Saphira",
+     "Sauvignac",
+     "Sauvignon Blanc",
+     "Sauvignon Cita",
+     "Sauvignon Gris",
+     "Sauvignon Gryn",
+     "Sauvignon Sary",
+     "Sauvitage",
+     "Savagnin Blanc",
+     "Scheurebe",
+     "Schönburger",
+     "Septimer",
+     "Siegerrebe",
+     "Silcher",
+     "Sirius",
+     "Solaris",
+     "Souvignier Gris",
+     "Staufer",
+     "Trebbiano di Soave",
+     "Villaris",
+     "Weißer Elbling",
+     "Weißer Gutedel",
+     "We S 523",
+     "Würzer",
+     "Accent",
+     "Acolon",
+     "Allegro",
+     "Baron",
+     "Blauburger",
+     "Blauer Frühburgunder",
+     "Blauer Limberger",
+     "Blauer Portugieser",
+     "Blauer Trollinger",
+     "Blauer Zweigelt",
+     "Bolero",
+     "Cabaret Noir",
+     "Cabernet Cantor",
+     "Cabernet Carbon",
+     "Cabernet Carol",
+     "Cabernet Cortis",
+     "Cabernet Cubin",
+     "Cabernet Dorio",
+     "Cabernet Dorsa",
+     "Cabernet Franc",
+     "Cabernet Mitos",
+     "Cabernet-Sauvignon",
+     "Cabertin",
+     "Calandro",
+     "Dakapo",
+     "Deckrot",
+     "Divico",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Färbertraube",
+     "Hegel",
+     "Helfensteiner",
+     "Heroldrebe",
+     "Merlot",
+     "Monarch",
+     "Müllerrebe",
+     "Muskat Trollinger",
+     "Neronet",
+     "Palas",
+     "Pinotin",
+     "Piroso",
+     "Prior",
+     "Reberger",
+     "Regent",
+     "Rondo",
+     "Rosenmuskateller",
+     "Rotberger",
+     "Rubinet",
+     "St. Laurent",
+     "Satin Noir",
+     "Syrah",
+     "Tauberschwarz",
+     "Wildmuskat"
+    ],
+    "othersCite": [
+     "mittelrhein-spec:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White, rosé, red and Rotling wines, plus Prädikat sweet wines, semi-sparkling Perlwein and Sekt.",
+    "cite": [
+     "mittelrhein-spec:p2",
+     "mittelrhein-spec:p3",
+     "mittelrhein-spec:p4",
+     "mittelrhein-spec:p5"
+    ]
+   },
+   "climate": {
+    "text": "Mean annual temperature 9.7 °C, 14.2 °C in the growing season. Rainfall about 665 mm a year, roughly 60% in the growing season. Long growing season and sheltered valley microclimates.",
+    "cite": [
+     "mittelrhein-spec:p8"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Devonian slate, with quartzitic sandstone and some quartzite; brown earths and regosols dominate. Volcanic rock near Königswinter, loess and loam in places, sand and loam in the river plains.",
+    "cite": [
+     "mittelrhein-spec:p7",
+     "mittelrhein-spec:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie at about 55 to 350 m, 170 m on average, in a narrow valley over about 110 km long, facing south-south-east on average.",
+    "cite": [
+     "mittelrhein-spec:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: fresh fruit, floral and mineral notes, balanced acidity and sweetness, with Riesling and Burgundy grapes showing the rock underfoot. Reds: red fruit, light to full-bodied. Sparkling: fresh, fruity, acid-led.",
+    "cite": [
+     "mittelrhein-spec:p2",
+     "mittelrhein-spec:p3",
+     "mittelrhein-spec:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Kabinett",
+      "text": "Must be Weißer Riesling (up to 15% other white grapes); needs a village or vineyard name."
+     },
+     {
+      "name": "Spätlese",
+      "text": "Needs a village or vineyard name; sold only from 1 March after the harvest year."
+     },
+     {
+      "name": "Eiswein",
+      "text": "Made from grapes naturally frozen at harvest and pressing; at least 110° Öchsle."
+     },
+     {
+      "name": "Sekt b. A.",
+      "text": "Bottle-fermented versions must mature at least nine months on the bottle."
+     }
+    ],
+    "cite": [
+     "mittelrhein-spec:p2",
+     "mittelrhein-spec:p4",
+     "mittelrhein-spec:p9",
+     "mittelrhein-spec:p10",
+     "mittelrhein-spec:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "id": "ahr",
+ "title": "Why Ahr tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Most Ahr vineyards slope more than 30%, mostly on greywacke and slate. These dominant slate and greywacke soils give the wines a high minerality.",
+  "cite": [
+   "ahr-spec:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A short, steep river valley",
+   "paras": [
+    "The Ahr lies in the Rhenish Slate Mountains and belongs to the northern Osteifel. Vines grow along a stretch of the river about 18 km long, between Altenahr and Bad Neuenahr.",
+    "The valley floor lies at about 150 m in the west and about 100 m in the east. In the west it is 50 to 150 m wide. Between Rech and Dernau it is 200 to 250 m wide. The valley sides are steep to very steep and 150 to 200 m high.",
+    "In the east most vineyards sit on gentle slopes, a few steep sites and the flat steps of the higher river terraces. The Lohrsdorfer Kopf and the Landskrone are the exceptions, mostly steep. Overall 69% of the vineyards slope more than 30%.",
+    "The vineyards belong to seven municipalities in the district of Ahrweiler, in Rhineland-Palatinate."
+   ],
+   "cite": [
+    "ahr-spec:p4",
+    "ahr-spec:p7"
+   ],
+   "fly": [
+    {
+     "label": "Altenahr, the western end",
+     "point": [
+      6.99,
+      50.52
+     ],
+     "zoom": 11,
+     "caption": "Vines grow along about 18 km of the Ahr, from Altenahr in the west to Bad Neuenahr in the east.",
+     "cite": [
+      "ahr-spec:p7"
+     ]
+    },
+    {
+     "label": "Landskrone",
+     "point": [
+      7.15,
+      50.556
+     ],
+     "zoom": 11,
+     "caption": "The Landskrone is one of two sites in the eastern part with mostly steep vineyards.",
+     "cite": [
+      "ahr-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A long season in a steep valley",
+   "paras": [
+    "Averaged over the year, the daily mean temperature is 9.8 °C. About 650 mm of rain falls in a year, with about 1450 hours of sunshine.",
+    "The long growing season works with the valley's steep shape and its small-scale climate. The soils play their part too. Together they set the style of Ahr wine.",
+    "Each grape shows its type with fine but clear aromas and flavours."
+   ],
+   "cite": [
+    "ahr-spec:p7"
+   ]
+  },
+  {
+   "id": "slate",
+   "beat": "ground",
+   "title": "Greywacke and slate on the slopes",
+   "paras": [
+    "The vineyards lie wholly on the northern flank of the Ahr anticline. The rock is mostly sandstone, called greywacke, with some clay slate, from the Lower Devonian.",
+    "In the west these rocks are hard and grey. In the east they are mostly deeply and heavily weathered, from semi-solid to loose, and often discoloured in many colours.",
+    "Vineyards on gravel and loam are quite widespread across the whole area. They lie in the river meadows and on the middle and main terraces of the Ahr. The flat tops of these terraces are often covered with thick loess and loess loam.",
+    "The different weathered soils give the Ahr's wines their character."
+   ],
+   "cite": [
+    "ahr-spec:p4",
+    "ahr-spec:p7"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Mostly red",
+   "paras": [
+    "The Ahr makes mostly red wine. Rosé and white are traditional too. Its wines can also become sparkling Sekt b.A. or Qualitätsperlwein.",
+    "Qualitätsperlwein is lightly sparkling, at 1 to 2.5 bar of pressure at 20 °C. Sekt b.A. needs at least 3.5 bar.",
+    "The rules allow many red and rosé grapes, Blauer Spätburgunder and Blauer Frühburgunder among them. White grapes include Weißer Riesling and Müller-Thurgau. The maximum yield is 100 hl/ha.",
+    "The reds run from light to dark ruby. Their fruit recalls blueberry and strawberry. Cherry and dried fruit show too. In the mouth they have a particular density.",
+    "The rosé is pressed light from red grapes. It is light to pale red, fresher and lighter than the red, with less tannin.",
+    "The white is light green to yellow. It recalls peach and citrus, and its acidity is clearly noticeable.",
+    "Prädikat wines need riper grapes and may not be enriched. Kabinett needs at least 10.0% potential alcohol for whites and 10.6% for reds. Trockenbeerenauslese needs at least 21.5%. Eiswein needs at least 15.3%.",
+    "Depending on the season and the site, grapes for Sekt base wine are picked earlier. This gives the pronounced acidity that Sekt b.A. and Winzersekt need. Bottle-fermented ones mature at least 9 months on the bottle.",
+    "Winzersekt is another sparkling term on the label, with the same must weights as Sekt b.A."
+   ],
+   "cite": [
+    "ahr-spec:p4",
+    "ahr-spec:p5",
+    "ahr-spec:p6",
+    "ahr-spec:p8"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Qualitätswein",
+    "text": "The base level. Riesling needs at least 6.7% potential alcohol and Dornfelder 8.8%. It may be enriched up to 15% alcohol."
+   },
+   {
+    "term": "Spätlese",
+    "text": "A Prädikat wine of at least 10.6% potential alcohol for Weißer Burgunder, Müller-Thurgau and Riesling, 11.7% for other whites and 11.4% for reds."
+   },
+   {
+    "term": "Auslese",
+    "text": "A Prädikat wine of at least 11.9% potential alcohol for Weißer Burgunder, Müller-Thurgau and Riesling, 12.7% for other whites and 12.2% for reds."
+   },
+   {
+    "term": "Beerenauslese",
+    "text": "A Prädikat wine of at least 15.3% potential alcohol for all grapes."
+   },
+   {
+    "term": "trocken",
+    "text": "Dry still wine: up to 4 g/l of sugar, or 9 g/l when the acidity is at most 2 g/l below the sugar."
+   },
+   {
+    "term": "halbtrocken",
+    "text": "Off-dry still wine: up to 12 g/l of sugar, or 18 g/l when the acidity is at most 10 g/l below the sugar."
+   },
+   {
+    "term": "lieblich",
+    "text": "Medium-sweet still wine: above halbtrocken, up to 45 g/l of sugar."
+   },
+   {
+    "term": "süß",
+    "text": "Sweet still wine: at least 45 g/l of sugar."
+   },
+   {
+    "term": "brut nature",
+    "text": "Sekt with under 3 g/l of sugar and no sugar added after the second fermentation."
+   },
+   {
+    "term": "extra brut",
+    "text": "Sekt with 0 to 6 g/l of sugar."
+   },
+   {
+    "term": "brut",
+    "text": "Sekt with under 12 g/l of sugar."
+   },
+   {
+    "term": "extra trocken",
+    "text": "Sekt with 12 to 17 g/l of sugar."
+   },
+   {
+    "term": "trocken (Sekt)",
+    "text": "Sekt with 17 to 32 g/l of sugar."
+   },
+   {
+    "term": "halbtrocken (Sekt)",
+    "text": "Sekt with 32 to 50 g/l of sugar."
+   },
+   {
+    "term": "mild",
+    "text": "Sekt with over 50 g/l of sugar."
+   }
+  ],
+  "cite": [
+   "ahr-spec:p2",
+   "ahr-spec:p3",
+   "ahr-spec:p5",
+   "ahr-spec:p6"
+  ]
+ }
+}

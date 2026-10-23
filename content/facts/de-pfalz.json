@@ -1,0 +1,47 @@
+{
+ "region": "de-pfalz",
+ "sheets": [
+  {
+   "id": "pfalz",
+   "why": {
+    "text": "",
+    "cite": []
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [],
+    "text": "",
+    "cite": []
+   },
+   "climate": {
+    "text": "",
+    "cite": []
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "",
+    "cite": []
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

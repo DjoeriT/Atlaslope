@@ -1,0 +1,105 @@
+{
+ "id": "nahe",
+ "title": "Why Nahe tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Slate, volcanic rock and loess sit side by side along one river. That mix of ground is why Riesling from the Nahe is so good at showing the differences between places.",
+  "cite": [
+   "nahe-spec:p3",
+   "nahe-spec:p13"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "triangle",
+   "beat": "place",
+   "title": "A river running into the Rhine",
+   "paras": [
+    "The vineyards run up the Nahe from where it joins the Rhine at Bingerbrück, to just before Kirn. They also follow the side valleys of the Guldenbach, Gräfenbach, Glan and Alsenz. Roughly, the region fills a triangle between Bingen, Alsenz and Monzingen.",
+    "It belongs to three natural landscapes. The Soonwald, a spur of the Hunsrück, reaches in at the far northeast. The north lies in the Upper Rhine lowland. The south is part of the Saar-Nahe uplands.",
+    "The vines grow at about 210 m above sea level on average. Slopes average 12.5%, but some sites are far steeper, such as the Rotenfels near Bad Münster am Stein and the Steinberg near Niederhausen."
+   ],
+   "cite": [
+    "nahe-spec:p8",
+    "nahe-spec:p10",
+    "nahe-spec:p11"
+   ],
+   "fly": [
+    {
+     "label": "Where the Nahe meets the Rhine",
+     "point": [
+      7.915,
+      49.957
+     ],
+     "zoom": 10.5,
+     "caption": "The region starts where the Nahe flows into the Rhine at Bingerbrück.",
+     "cite": [
+      "nahe-spec:p8"
+     ]
+    },
+    {
+     "label": "Rotenfels",
+     "point": [
+      7.83,
+      49.815
+     ],
+     "zoom": 11,
+     "caption": "One of the steep sites, near Bad Münster am Stein.",
+     "cite": [
+      "nahe-spec:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "river-weather",
+   "beat": "weather",
+   "title": "Warm days, cool nights",
+   "paras": [
+    "The river gives the area a mild climate with warm days and cool nights. That is described as ideal for building aroma and ripening the grapes.",
+    "The average temperature is 9.3 °C over the year and 13.8 °C in the growing season. About 580 mm of rain falls in a year, and 60% of it comes during the growing season."
+   ],
+   "cite": [
+    "nahe-spec:p11",
+    "nahe-spec:p13"
+   ]
+  },
+  {
+   "id": "mixed-rock",
+   "beat": "ground",
+   "title": "Slate, volcanoes and loess",
+   "paras": [
+    "The oldest rocks date from the Devonian. Some are hardened seabed deposits: sandstone, shale and quartzite. Others are metamorphic: greenschist and phyllite.",
+    "Rotliegend rock is by far the most widespread. It includes volcanic latite, andesite and basalt. Some vines also root in tertiary deposits, from river and coastal sands to marine marl.",
+    "Across the region, the soils run from slate to red sandstone, then loess and loam. Slate can show up in the glass as an earthy, mineral note. That variety lets the grapes speak in many styles, from dry to noble sweet."
+   ],
+   "cite": [
+    "nahe-spec:p2",
+    "nahe-spec:p11",
+    "nahe-spec:p13",
+    "nahe-spec:p14"
+   ]
+  },
+  {
+   "id": "riesling-and-seven",
+   "beat": "rules",
+   "title": "Riesling first, then six more",
+   "paras": [
+    "Seven grapes shape the Nahe and cover about 63% of the planted area. Riesling dominates and does especially well on steep south-facing slopes near the river. Weißer Burgunder, Ruländer and Grüner Silvaner have been established since the 19th century. Blauer Spätburgunder became a central red in the last decades of the 20th century. Chardonnay and Sauvignon Blanc are newer, but are gaining importance.",
+    "Single-vineyard names may only go on wines made at least 85% from those seven grapes. Beerenauslese, Trockenbeerenauslese and Eiswein may use any approved grape. The yield limit is 105 hl/ha.",
+    "The Nahe makes dry whites, fruit-sweet and noble sweet whites, reds, rosé, pearl wine (Perlwein) and sparkling Sekt. The whites usually have marked acidity and minerality. The reds are often cherry and berry fruit with restrained tannins.",
+    "Prädikat wines cannot be enriched, so they show the vintage clearly. Kabinett is light and fresh, at least 9.5% vol and 73° Öchsle. A Riesling Spätlese needs 10.3% vol and 78° Öchsle. Eiswein comes from grapes naturally frozen at picking, at least 120° Öchsle.",
+    "For Sekt b. A., the base-wine grapes are picked earlier to keep a sharp acidity. Bottle-fermented versions must mature at least 9 months on the bottle."
+   ],
+   "cite": [
+    "nahe-spec:p2",
+    "nahe-spec:p3",
+    "nahe-spec:p4",
+    "nahe-spec:p10",
+    "nahe-spec:p12",
+    "nahe-spec:p13",
+    "nahe-spec:p14"
+   ]
+  }
+ ]
+}
