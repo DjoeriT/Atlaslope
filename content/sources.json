@@ -2932,5 +2932,35 @@
   "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
   "date": "2026-10-23",
   "title": "Rheingau PDO-DE-A1273: Produktspezifikation (BLE, German, text of April 2019; the 2026 amendment is a proposal)"
+ },
+ "ahr-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Ahr PDO-DE-A0867: Produktspezifikation (BLE, German, 16 pp, as linked on 23 Oct 2026)"
+ },
+ "mittelrhein-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Mittelrhein PDO-DE-A1269: Produktspezifikation (BLE, German, 11 pp, as linked on 23 Oct 2026)"
+ },
+ "nahe-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Nahe PDO-DE-A1271: Produktspezifikation (BLE, German, 14 pp, as linked on 23 Oct 2026)"
+ },
+ "rheinhessen-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Rheinhessen PDO-DE-A1274: Produktspezifikation (BLE, German, 10 pp, as linked on 23 Oct 2026)"
+ },
+ "pfalz-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Pfalz PDO-DE-A1272: Produktspezifikation (BLE, German, 10 pp, as linked on 23 Oct 2026)"
  }
 }

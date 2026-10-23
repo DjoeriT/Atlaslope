@@ -2,6 +2,7 @@
 
 Newest first, one line each. File names are `<date>-<topic>.md`; each holds done, decided, open, where. Add a line here in the PR that adds a handoff.
 
+- [2026-10-23-germany-wave1](2026-10-23-germany-wave1.md): Germany wave 1: Ahr, Mittelrhein, Nahe, Rheinhessen, Pfalz guides and outlines; Rheingau outline from Hessen ALKIS; 7 of 13
 - [2026-10-23-italy-climate](2026-10-23-italy-climate.md): Italy's climate, altitude and slope measured (87 places, 9 regions); seventh map group Cold for the Alps
 - [2026-10-22-learn-finish](2026-10-22-learn-finish.md): Study becomes Learn: start card, course filter, #learn, specs, crops checked; naming kept (#147, 22 Oct 2026)
 - [2026-10-23-germany-rest-go](2026-10-23-germany-rest-go.md): Germany rest brief: owner "finish Germany first, then Austria"; 11 Anbaugebiete in three waves plus parity, ~12-13M

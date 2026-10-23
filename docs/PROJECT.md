@@ -70,6 +70,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   needs a satellite view for the Guides page (a test enforces it since release 44).
 - Running cost [V]: GitHub Pages free; domain ~EUR 10-15/yr [A]; Esri 2M tiles/month free then $0.15/1k, sessions 1k free then $4/1k;
   ~4k visits/month fit free [A]. IGN free (CC BY 4.0, no SLA). Owner is on a flat plan [A], so tokens mean usage-limit headroom.
+- Germany wave 1 (23 Oct 2026, `docs/handoffs/2026-10-23-germany-wave1.md`): 7 of 13 places with guides, outlines, photos; Rheingau outline from
+  Hessen ALKIS; guides 0.95-1.13M each (5.2M, 83% re-read). Waves 2 (South and Hessen) and 3 (East, parity) open.
 
 ## Key decisions (dates 2026)
 - 16 Oct: renamed to Atlaslope; Spain first; scope in `docs/scope.md`, one-way doors in `docs/handoffs/2026-10-16-one-way-doors.md`.

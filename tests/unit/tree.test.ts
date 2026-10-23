@@ -8,9 +8,9 @@ const tree: Tree = loadTree(raw);
 const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
-  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) Loire batch (18 places) Rhône batch (14 places) and the last 22 (22-23 Oct 2026: the France WSET L3 list, 94 places) and its two PGIs (23 Oct 2026, 96 in all), with a unique slug id', () => {
-    expect(tree.places).toHaveLength(341);
-    expect(new Set(ids(tree.places)).size).toBe(341);
+  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) Loire batch (18 places) Rhône batch (14 places) and the last 22 (22-23 Oct 2026: the France WSET L3 list, 94 places) and its two PGIs (23 Oct 2026, 96 in all), and Germany\'s wave 1 (5 places, 23 Oct 2026), with a unique slug id', () => {
+    expect(tree.places).toHaveLength(346);
+    expect(new Set(ids(tree.places)).size).toBe(346);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 72 core, 6 vc, 260 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s 96 places and 19 Chablis zones (not in Learn yet) and Italy\'s 87 places (#80) and Germany\'s two (#149) among the none', () => {
+  it('counts 72 core, 6 vc, 265 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s 96 places and 19 Chablis zones (not in Learn yet) and Italy\'s 87 places (#80) and Germany\'s seven (#149, wave 1 23 Oct 2026) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 260, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 265, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3 + 19);
   });
 

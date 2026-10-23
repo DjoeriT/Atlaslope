@@ -44,11 +44,11 @@ describe('place tree', () => {
     }
   });
 
-  it('gives every quizzed place a boundary; only the 13 Vinos de Pago and the Rheingau (Germany) are still to fetch; the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) are added', () => {
+  it('gives every quizzed place a boundary; only the 13 Vinos de Pago are still to fetch (the Rheingau got its outline from Hessen ALKIS in Germany wave 1, 23 Oct 2026); the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) are added', () => {
     const toFetch = places.filter((p) => p.boundary === 'to-fetch');
-    expect(toFetch).toHaveLength(14);
+    expect(toFetch).toHaveLength(13);
     expect(toFetch.filter((p) => p.quiz !== 'none')).toEqual([]);
-    expect(toFetch.filter((p) => p.parent !== 'germany').every((p) => p.kind === 'VP')).toBe(true); // Rheingau (#149) is the 14th: no outline yet
+    expect(toFetch.every((p) => p.kind === 'VP')).toBe(true);
     expect(places.filter((p) => p.boundary === 'added' && !/^(fr|it|de)-/.test(p.region)).map((p) => p.id).sort()).toEqual([
       'alenquer', 'alentejo', 'arruda', 'bairrada', 'beira-interior', 'bucelas', 'campo-de-calatrava', 'carcavelos', 'cebreros', 'colares', 'dao',
       'dotejo', 'douro', 'encostas-daire', 'lafoes', 'lagoa', 'lagos', 'lisboa', 'madeira', 'madeirense', 'obidos', 'palmela', 'portimao', 'porto', 'setubal', 'tavira',

@@ -1,0 +1,126 @@
+{
+ "id": "mittelrhein",
+ "title": "Why Mittelrhein tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Riesling grows here on steep slate slopes in the narrow, sheltered valley of the Rhine. Riesling and the Burgundy grapes can show which rock they came from, through their acidity and their mineral notes.",
+  "cite": [
+   "mittelrhein-spec:p2",
+   "mittelrhein-spec:p7",
+   "mittelrhein-spec:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A narrow V-shaped valley",
+   "paras": [
+    "The wine area follows the Rhine for over about 110 km. It runs between Bingen and Bonn, with the neighbouring Siebengebirge hills. The valley floor is narrow. Only at 200 to 220 m above sea level does the tight V-shaped valley open into a plateau valley.",
+    "Vines grow at about 55 to 350 m, 170 m on average. In the upper valley most slopes face south-east to south-west. In the lower valley they mostly face south to south-west. Across the whole valley the average aspect is 168°, south-south-east.",
+    "The plots are small and steep, which limits machines. So the vineyards are tended with a lot of labour."
+   ],
+   "cite": [
+    "mittelrhein-spec:p7",
+    "mittelrhein-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Rhine valley at Sankt Goar",
+     "point": [
+      7.7136,
+      50.1514
+     ],
+     "zoom": 10,
+     "caption": "The Rhine runs through a narrow valley here, with vineyards on the slopes of the Mittelrhein.",
+     "cite": [
+      "mittelrhein-spec:p5",
+      "mittelrhein-spec:p7"
+     ]
+    },
+    {
+     "label": "Bingen, the southern end",
+     "point": [
+      7.8994,
+      49.9669
+     ],
+     "zoom": 10,
+     "caption": "The wine area starts at Bingen and follows the Rhine north towards Bonn.",
+     "cite": [
+      "mittelrhein-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A long season and small local climates",
+   "paras": [
+    "The average temperature is 9.7 °C over the year and 14.2 °C in the growing season. About 665 mm of rain falls in a year, and about 60% of it comes in the growing season.",
+    "The vines receive about 615,000 Wh/m2 of direct sunshine during the growing season.",
+    "The long growing season shapes the style of the wines. So do the shape of the land and its small local climates. The make-up of the soil and the hard work of the growers count too."
+   ],
+   "cite": [
+    "mittelrhein-spec:p8"
+   ]
+  },
+  {
+   "id": "slate",
+   "beat": "ground",
+   "title": "Devonian slate, with volcanic rock in the north",
+   "paras": [
+    "Rocks of the Devonian period dominate the valley. Quartzitic sandstone and clay slate are widespread. Iron slate and flint-nodule slate are less common. So is quartzite. Most vines root in soil formed from Devonian slate, mainly brown earths and regosols, a thin young soil.",
+    "Only around Königswinter do Tertiary rocks appear. They are volcanic rocks such as trachyte and basalt, left by former volcanic activity.",
+    "On fertile loess and loess loam another soil type is common. On the Rhine's flood plains lie sands and loams, mostly several metres thick and often limy.",
+    "Riesling and the Burgundy family can show this ground in the glass. A taster can tell the rock types and weathered soils apart by the acidity and how soft it feels. Mineral notes help too."
+   ],
+   "cite": [
+    "mittelrhein-spec:p2",
+    "mittelrhein-spec:p3",
+    "mittelrhein-spec:p7",
+    "mittelrhein-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "Königswinter and the Siebengebirge",
+     "point": [
+      7.1925,
+      50.6736
+     ],
+     "zoom": 11,
+     "caption": "Only around Königswinter, at the northern end, do volcanic rocks appear in the valley.",
+     "cite": [
+      "mittelrhein-spec:p6",
+      "mittelrhein-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "riesling",
+   "beat": "rules",
+   "title": "Riesling first, from the Middle Ages",
+   "paras": [
+    "Weißer Riesling is the leading grape and has been grown here since the Middle Ages. It does especially well on the steep slate and greywacke soils of the sheltered valley sites. Blauer Spätburgunder (Pinot Noir) has also been grown since the Middle Ages. It gives finely aromatic reds on different soil types.",
+    "Weißer Burgunder (Pinot Blanc) and Ruländer (Pinot Gris) grow mainly in the northern valley. Both are closely related to Spätburgunder. From the 2026 vintage only wines naming these four grapes may carry a single-vineyard or smaller site name.",
+    "Still wines come in three colours: white, red and pink. Rosé and Weißherbst are pressed pale from red grapes. So is Blanc de Noir, which keeps the colour of a white wine. Rotling is a light red wine.",
+    "Prädikat wines may not be enriched with sugar. They form a six-step ladder from Kabinett up to Trockenbeerenauslese and Eiswein. There is also semi-sparkling Perlwein. Sparkling wine is sold as Sekt b. A. or Winzersekt. Crémant rests longer on its yeast.",
+    "From the 2026 vintage Kabinett must be Weißer Riesling, with up to 15% of other white grapes. It needs a village or vineyard name on the label. Kabinett may not go above 12.16% alcohol. Spätlese also needs a village or vineyard name. It is sold only from 1 March after the harvest year. Eiswein comes from grapes naturally frozen at picking and pressing, at least 110° Öchsle.",
+    "Sekt made by traditional bottle fermentation matures at least nine months on the bottle. The yield is capped at 105 hl/ha."
+   ],
+   "cite": [
+    "mittelrhein-spec:p1",
+    "mittelrhein-spec:p2",
+    "mittelrhein-spec:p3",
+    "mittelrhein-spec:p4",
+    "mittelrhein-spec:p5",
+    "mittelrhein-spec:p6",
+    "mittelrhein-spec:p8",
+    "mittelrhein-spec:p9",
+    "mittelrhein-spec:p10",
+    "mittelrhein-spec:p11"
+   ]
+  }
+ ]
+}
