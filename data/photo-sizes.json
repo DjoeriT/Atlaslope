@@ -26,6 +26,26 @@
    "h": 900,
    "blur": "UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAwAAsBMJbACdAEQ/Z276r0AAP6yC6tsOJdIfNIzF7+xazvB/yrybSzFrGPhOC+aI8gm1fnKqIjfIAA="
   },
+  "ahr-1": {
+   "w": 1200,
+   "h": 788,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAAsBMJaACdAEPQ47LXvAA/Nk18Rtsvmh0OjPyMAgebgWHby2crYukcRkBSByRSrD0qdg65bH4AAA="
+  },
+  "ahr-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsAAsBMJbACdAEO5hXLkjcAAP3jvqG4vWS7wgh518rVihzGVQ+09BCXOjHHBOh3cUaFcjDrL6yHIMpR4lPDPNmWHaLJGVAAAA=="
+  },
+  "ahr-3": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAACQAQCdASoQAAsAAsBMJYgAAuPzLdAA/qlcr4yPPQYSRt0YqNkhv+i6qcF3Tgf/M8Jlnmh0YqxNPlaPjgPfFH0A6fHj2ASAAAA="
+  },
+  "ahr-4": {
+   "w": 1200,
+   "h": 749,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAoAAsBMJagAAu04OmXQ8AD+sj/tgBT8+fbUjQwMtE6yEl7X7T3WqPi0TZmfM6DAKLUnESV9Vykf8E7LNjfm9OIAAA=="
+  },
   "alella-1": {
    "w": 1200,
    "h": 900,
@@ -2311,6 +2331,26 @@
    "h": 800,
    "blur": "UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAAsBMJZACdAD6C+s7xUAA+/1VWzzq/K4nBGUCeVx0bhnjVWFlDX2Px3S4t4pAJxZ53fMIPYDc53e0+6RLspMAeQFGPjJZ0VTENoK9N61GJsAAAA=="
   },
+  "mittelrhein-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAAsBMJZgCdACyZU8ryAD++CdYXYT2YPzNHzFeTpLh/t6ICvofUs437SDzPaPuypPv/O18xpdNDoxmmPmZcRgAAA=="
+  },
+  "mittelrhein-2": {
+   "w": 1200,
+   "h": 901,
+   "blur": "UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAAsBMJZgCdGuAAsej9NDAAP7reXFvretkhDE7nA8d+i5JzdzCEusbeKz9P4d4mfQM1fz1pYWjYWSF80/+du/VYdxyXf73LlJihIGSIAAA"
+  },
+  "mittelrhein-3": {
+   "w": 1200,
+   "h": 789,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAAsBMJaACdAELznvveUQAAPXceJpyJ0yiSKj1IffY7Y3tqR7YpdZwr05I6hRDh3Cs7dZSwPlOmf53gAAA"
+  },
+  "mittelrhein-4": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwAAsBMJYwCsACtNfpMmAAA9dmSiX62egqqCIHwbn/idkN1EtWy/mSEn9HSFaFiJJDmJw6x5iipNmpBMAVcAAA="
+  },
   "monbazillac-1": {
    "w": 1200,
    "h": 900,
@@ -2475,6 +2515,26 @@
    "w": 1200,
    "h": 550,
    "blur": "UklGRkYAAABXRUJQVlA4IDoAAAAwAgCdASoQAAcAAsBMJbACdGuAAs3cc9EySAD+8BqiBtqvBa/GKDG4azGcXvUoM15P5SqEgeSBQAAA"
+  },
+  "nahe-1": {
+   "w": 1200,
+   "h": 702,
+   "blur": "UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAkAAsBMJYgCdAEO/uA1wAD+6FH9wvnguLQEwUtqNfmIe9Eqdb4Z2tC54hAAAAA="
+  },
+  "nahe-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAwAAsBMJYwAAuc3+zhNoAD+ym2sVvOhfPQ6qVsuevQqnwe+MfeWj7eioadwfCC5+BUAAAA="
+  },
+  "nahe-3": {
+   "w": 1200,
+   "h": 674,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkAAsBMJZACdAEO9HOAmAAA/tUX3METFTbSAswFdgoWvdUSFuuOWXeotiXfgvGDFVmDtFeUmLSxisAAAA=="
+  },
+  "nahe-4": {
+   "w": 1200,
+   "h": 674,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkAAsBMJQBOgCG8XuWGssAA/oQauxNOHmYiMcUtH/vn+6WqrAzz1apeQT+5CyoTM7kMPs2QA8lyuKKNqtxQ7WyYbkwAAAA="
   },
   "navarra-1": {
    "w": 1200,
@@ -2700,6 +2760,26 @@
    "w": 1200,
    "h": 900,
    "blur": "UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAwAAsBMJZACdEf/gdHIM2gETgAA/lX0iMXBgXJWBEDjLD9PPcSkIt4hvxfRNWTbx6T4J/XmJb+ZP4ps3Aw2duwGPfj+29ekQsqvjIRCfKrevQQZJrCz7EAAAA=="
+  },
+  "pfalz-1": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAkAAsBMJbACdAEO4CWAdteAAP6RpUg5fS0R2Y1dE7iCuksMUQlCJk4uVR3kQpSfF/vB1G/42vF1I+Hddw5lVSNAAA=="
+  },
+  "pfalz-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsAAsBMJagC7AEJ2gx/bbhgAN5n2mtLBq2kJ6TfIk0+r5wKXIhiACCvG5YwZ/m+s9UX5u7N2xWgWuIilwLey++ayG9ZHmAAAA=="
+  },
+  "pfalz-3": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAkAAsBMJZgCdAD0RskRiAD+2nuvzk4R/jFKrP/Lbjx46msW91EMnae8PGzLE2RngctJNFaDtUAA"
+  },
+  "pfalz-4": {
+   "w": 1200,
+   "h": 675,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkAAsBMJbACdAEQEobK0CAA+GPMHyBGTIPXBJ0lRm+th7ArtvLkXNNzhtYArQqYf61l5sBDAmgQAAA="
   },
   "piave-malanotte-1": {
    "w": 1200,
@@ -2975,6 +3055,26 @@
    "w": 1200,
    "h": 800,
    "blur": "UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsAAsBMJQBOgCHg0e+mHF2gAP7UjuPeciiYjHxpCzFB1a+w9OKI6P5gvnko0e2sG5T+o56wAm4fAwyop6AAAAA="
+  },
+  "rheinhessen-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsAAsBMJbACdH8AGBsiW/wUAAD+Zt2+815uQSN03hVXnb5au/cITIM1Wqh/nd+ev4RLf46twzTQw4aiEzAfKWEk/CnS8x6UogAA"
+  },
+  "rheinhessen-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAwAAsBMJZACdAEOukWVBgAA/vHZY7pDD4SrKhnS65rcXmGIppLARxoxjbF0lyBtTBfw2AjXlRGgW6bkBhrAAAA="
+  },
+  "rheinhessen-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAwAAsBMJYgC7ADb3eSAAAD+8EpG16tUbKfRVJzPPKMtpcyE+NAUWuFO2MR1x3OqAAAA"
+  },
+  "rheinhessen-4": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsAAsBMJYgCdAEO4SsMS9AAAP7ruKqifyH3Kig1lZWiCbHH51qpomWLMrL2M8e9eYohSD9BkG8sOvxsfhNYAAA="
   },
   "rias-baixas-1": {
    "w": 1200,
