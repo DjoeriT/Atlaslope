@@ -25,7 +25,9 @@
 - Raw: `world/` (needs shapely locally) and `build/` (CI data build) are caches; `countries/fr/cdc/` the France session adds to the manifest.
 - Done after release 70 (PR `claude/pt-wrapup`): data-build refuses to commit boundaries that lose a place, both photo/data workflows
   commit only after a successful run (a cancelled run pushed lisboa-2 as 0 bytes), photo_ship fetches Openverse picks by URL and keeps
-  trimBottomPx and hand-written alt texts. Portugal climate measures: builder slice in progress.
+  trimBottomPx and hand-written alt texts. Portugal climate measures: PR #241
+  (Köppen via `Tools/data/koppen_portugal.sh`, Spain unchanged key by key; also adds 113 French rows with altitude and slope only,
+  which France's #244 completes). France and Italy were sent the recipe (owner: "send it also to France and Italy").
 
 ## Numbers
 - Helpers this round: about 0.83M tokens new (spend log). LeadBot main thread: long session, re-reads dominate [A].

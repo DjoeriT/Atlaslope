@@ -28,7 +28,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   load on demand and the size check counts the first load, limit 2.1 MB (decision #38). Raw downloads moved outside the repo (#229) after
   #214 committed a `data/raw` link that wiped them. Also in it: Study becomes Learn (#227, handoff `docs/handoffs/2026-10-22-learn-finish.md`):
   intro on a first visit, "Learning for" course filter, `#learn`, Cava and Catalunya in Learn. The release also carries other sessions' merged work since 69
-  (`git log --merges release-69..release-70`). Portuguese places are grey on the climate map until they are measured (in progress).
+  (`git log --merges release-69..release-70`). Portugal's and France's climate colours,
+  altitude and slope, and measures on guide pages of places outside Learn: #241 and #244, release 73.
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
   the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries
