@@ -152,3 +152,7 @@ Checked on origin/main and atlaslope.com [V]:
   Prints: Rioja c18/c06/c14, Douro 3/2/1, Chablis 2/3/4, Chianti Classico 3/5/4. No prints = map + card as today. Country row: 4+3 wrap at 1440, scroll row at 400.
   Open before building: the atlas credit for Portugal, France and Italy names only "Esri, Vantor"; add the boundary-data source. The Germany/Austria/Greece "—" cards are builder placeholders (no copy exists).
   Shared records (owner, #249): append lines to PROJECT.md "Current state", handoffs README and spend log; never edit another session's line.
+
+## Parked (owner, 23 Oct 2026) [O]
+"Let's park this for later." Open when it resumes: home behaviour A+B (recommended) or B only; boundary-data credit for Portugal, France and Italy maps;
+copy for countries without guides. Start from the build brief above and the countries check; merge main first, things will have moved.
