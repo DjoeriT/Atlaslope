@@ -149,7 +149,7 @@
   {
    "id": "chianti",
    "why": {
-    "text": "Hills near the Apennines with varied sandstone, marl, clay and sand soils, a humid to sub-humid climate with dry summers, and Sangiovese as the base grape.",
+    "text": "Hills near the Apennines with varied sandstone, marl, clay and sand soils, a humid to sub-humid climate with dry summers, and Sangiovese as base grape.",
     "cite": [
      "chianti-disc:p35",
      "chianti-disc:p1"
@@ -422,7 +422,7 @@
   {
    "id": "brunello-di-montalcino",
    "why": {
-    "text": "Poor, calcareous, water-short soils on hills of 120 to 650 m hold Sangiovese to modest vigour; with steady wind and sun, its grapes ripen fully and healthy.",
+    "text": "Poor, calcareous, water-short soils on hills of 120 to 650 m hold Sangiovese to modest vigour; with steady wind and sun, grapes ripen fully.",
     "cite": [
      "brunello-di-montalcino-disc:p5",
      "brunello-di-montalcino-disc:p7"
@@ -945,7 +945,7 @@
      },
      {
       "name": "Superiore",
-      "text": "Lower yield (8 t/ha) and 13% alcohol minimum; released from 1 January of the second year after harvest."
+      "text": "Lower yield (8 t/ha), 13% alcohol minimum; released 1 January of second year after harvest."
      }
     ],
     "cite": [

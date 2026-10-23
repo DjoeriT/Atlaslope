@@ -1,0 +1,112 @@
+{
+ "id": "verdicchio-dei-castelli-di-jesi",
+ "title": "Why Verdicchio dei Castelli di Jesi tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Verdicchio grows on clay-rich, limy hills around the Esino valley, about 20 km from the sea. Its name comes from the green glints in the glass, and the finish tastes of bitter almond.",
+  "cite": [
+   "verdicchio-dei-castelli-di-jesi-disc:p7",
+   "verdicchio-dei-castelli-di-jesi-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "The castles around Jesi",
+   "paras": [
+    "The vineyards sit in part of the Esino river basin, in the territory of 22 communes in the province of Ancona and 2 in Macerata. They are called the \"Castelli\" because they were historically drawn into the politics and economy of Jesi. Jesi is where Frederick II of Swabia was born in 1194.",
+    "The area lies about 20 km from the sea, in the hills around the Esino valley. Jesi stands at 96 m above sea level and Cingoli at 630 m."
+   ],
+   "cite": [
+    "verdicchio-dei-castelli-di-jesi-disc:p6",
+    "verdicchio-dei-castelli-di-jesi-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Jesi, the town of the Castelli",
+     "point": [
+      13.2425,
+      43.5226
+     ],
+     "zoom": 10.5,
+     "caption": "Jesi, at 96 m, gave the Castelli their orbit and was the birthplace of Frederick II in 1194.",
+     "cite": [
+      "verdicchio-dei-castelli-di-jesi-disc:p6",
+      "verdicchio-dei-castelli-di-jesi-disc:p7"
+     ]
+    },
+    {
+     "label": "Cingoli, the high end",
+     "point": [
+      13.2169,
+      43.3745
+     ],
+     "zoom": 10.5,
+     "caption": "Cingoli stands at 630 m, the top of the range given for the valley's hills.",
+     "cite": [
+      "verdicchio-dei-castelli-di-jesi-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sea, breezes and mountain shelter",
+   "paras": [
+    "The sea and the sun shape the area. So do the breezes and the rain, with the shelter of mountains that rise above 2,000 m. The result is a temperate climate. Rain averages 800 mm a year and mean temperatures stay below 14 °C.",
+    "In the valley the average maximum reaches 30 °C in July and August. Frosts are frequent in winter and spring, but they do not harm the vines because growth has not yet begun."
+   ],
+   "cite": [
+    "verdicchio-dei-castelli-di-jesi-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay, lime and altitude",
+   "paras": [
+    "The hills where the denomination lies have a high clay content and a high share of calcium carbonate. They drain poorly and are prone to erosion. Across the Marche, limy ridges dominate the soils. The flat alluvial land has soils that are almost always limy and stony.",
+    "Most vineyards sit low: 70% lie between 80 and 280 m, and the highest is at 750 m. Yet the vines at 300 to 500 m grow best and give the best quality. That is a sign that exposure and ventilation affect the grapes quite markedly.",
+    "Pruning is long, to carry many buds on each cane, because the buds nearest the base often fail to sprout."
+   ],
+   "cite": [
+    "verdicchio-dei-castelli-di-jesi-disc:p7",
+    "verdicchio-dei-castelli-di-jesi-disc:p9"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "One grape, from still to sweet",
+   "paras": [
+    "Verdicchio must make up at least 85% of the blend. Up to 15% can come from other white grapes suited to growing in the Marche.",
+    "The still wine must be dry and harmonious, with a pleasantly bitter aftertaste. In the Classico zone, on the left side of the Esino valley, the wines show marked mineral notes. Across the valley they taste more savoury.",
+    "Classico comes from the oldest original zone, which leaves out land left of the Misa river and the communes of Ostra and Senigallia. Superiore is limited to 11 t/ha of grapes instead of 14 t/ha, and needs 12.00% alcohol. Classico Superiore meets both rules.",
+    "The same grape also makes sparkling wine, by the Charmat or the classic method. Spumante Riserva is made by the classic method only and ages at least 36 months. Passito comes from dried grapes and ranges from medium-sweet to sweet, with at least 15.00% alcohol. It cannot be sold before 1 December of the year after the harvest."
+   ],
+   "cite": [
+    "verdicchio-dei-castelli-di-jesi-disc:p2",
+    "verdicchio-dei-castelli-di-jesi-disc:p3",
+    "verdicchio-dei-castelli-di-jesi-disc:p4",
+    "verdicchio-dei-castelli-di-jesi-disc:p5",
+    "verdicchio-dei-castelli-di-jesi-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Cupramontana, the grape festival town",
+     "point": [
+      13.0959,
+      43.4333
+     ],
+     "zoom": 11,
+     "caption": "Cupramontana's grape festival is a century old, a witness to how long the vine has been a tradition here.",
+     "cite": [
+      "verdicchio-dei-castelli-di-jesi-disc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

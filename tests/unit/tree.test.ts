@@ -8,9 +8,9 @@ const tree: Tree = loadTree(raw);
 const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
-  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) and Italy\'s (2 places), with a unique slug id', () => {
-    expect(tree.places).toHaveLength(160);
-    expect(new Set(ids(tree.places)).size).toBe(160);
+  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) and Italy\'s first wave (87 places, #80), with a unique slug id', () => {
+    expect(tree.places).toHaveLength(245);
+    expect(new Set(ids(tree.places)).size).toBe(245);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
@@ -22,9 +22,9 @@ describe('tree model over data/places.json', () => {
     }
   });
 
-  it('counts 72 core, 6 vc, 79 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot with its 19 Chablis zones and Italy\'s two places (not in Learn yet) among the none', () => {
+  it('counts 72 core, 6 vc, 164 none and 3 zones, with the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot with its 19 Chablis zones and Italy\'s 87 places (not in Learn yet) among the none', () => {
     const count = (q: string) => tree.places.filter((p) => p.quiz === q).length;
-    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 79, 3]);
+    expect([count('core'), count('vc'), count('none'), count('zone')]).toEqual([72, 6, 164, 3]);
     expect(tree.places.filter((p) => p.level === 'zone')).toHaveLength(3 + 19);
   });
 
@@ -171,12 +171,15 @@ describe('France pilot in the tree (decisions #52-#55)', () => {
   });
 });
 
-describe('Italy pilot in the tree (decisions #59-#66)', () => {
+describe('Italy first wave in the tree (decisions #59-#66, #80)', () => {
   it('has the WSET course with a group per region that has a shipped place, and only the shipped places', () => {
-    expect(ids(tree.regionsOf('italy'))).toEqual(['it-piemonte', 'it-tuscany']);
+    expect(ids(tree.regionsOf('italy'))).toEqual(['it-piemonte', 'it-lombardia', 'it-north-east', 'it-veneto', 'it-emilia-romagna',
+      'it-tuscany', 'it-centre', 'it-south', 'it-islands']);
     expect(tree.regionsOf('italy').every((r) => r.course === 'wset-it')).toBe(true);
-    expect(ids(tree.placesInRegion('it-piemonte'))).toEqual(['barolo']);
-    expect(ids(tree.placesInRegion('it-tuscany'))).toEqual(['chianti-classico']);
+    const wave = JSON.parse(readFileSync('data/countries/it/places.json', 'utf8')).places;
+    for (const g of ['it-piemonte', 'it-tuscany']) {
+      expect(ids(tree.placesInRegion(g)).sort()).toEqual(wave.filter((p: any) => p.group === g).map((p: any) => p.id).sort());
+    }
   });
   it('has no zones yet, and the breadcrumb runs country, region, place', () => {
     expect(tree.children('barolo', 'place')).toEqual([]);

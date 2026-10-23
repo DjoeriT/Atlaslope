@@ -287,6 +287,102 @@
     "chianti-classico-disc:p11",
     "chianti-classico-disc:p12"
    ]
+  },
+  "it-lombardia": {
+   "title": "Glacial moraine and steep terraces",
+   "lede": "Franciacorta sits on glacial moraine beside Lake Iseo. Valtellina grows on steep dry-stone granite terraces.",
+   "from": [
+    "franciacorta",
+    "valtellina-superiore"
+   ],
+   "cite": [
+    "franciacorta-disc:p11",
+    "franciacorta-disc:p12",
+    "valtellina-superiore-disc:p8"
+   ]
+  },
+  "it-north-east": {
+   "title": "Alpine valleys and stony gravel",
+   "lede": "Alto Adige's valleys are sunny with big day-night swings. Friuli Grave sits on stony river gravel.",
+   "from": [
+    "alto-adige",
+    "friuli-grave"
+   ],
+   "cite": [
+    "alto-adige-disc:p30",
+    "alto-adige-disc:p31",
+    "friuli-grave-disc:p11",
+    "friuli-grave-disc:p12"
+   ]
+  },
+  "it-veneto": {
+   "title": "Volcanic hills and alluvial plains",
+   "lede": "Soave grows on volcanic basalt and limestone. Prosecco covers mostly flat alluvial plain with some hills.",
+   "from": [
+    "soave",
+    "prosecco"
+   ],
+   "cite": [
+    "soave-disc:p9",
+    "soave-disc:p10",
+    "prosecco-disc:p9",
+    "prosecco-disc:p10"
+   ]
+  },
+  "it-emilia-romagna": {
+   "title": "Clay and limestone foothills",
+   "lede": "Pignoletto grows on clay and limy foothills. Albana sits on clay and limestone hills.",
+   "from": [
+    "colli-bolognesi-pignoletto",
+    "romagna-albana"
+   ],
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p2",
+    "colli-bolognesi-pignoletto-disc:p9",
+    "romagna-albana-disc:p6",
+    "romagna-albana-disc:p7"
+   ]
+  },
+  "it-centre": {
+   "title": "Volcanic tuff and Adriatic hills",
+   "lede": "Orvieto's hills are volcanic tuff over clay and sand. Abruzzo's Adriatic hills are loose, well-drained clay-sand.",
+   "from": [
+    "orvieto",
+    "montepulciano-d-abruzzo"
+   ],
+   "cite": [
+    "orvieto-disc:p5",
+    "orvieto-disc:p9",
+    "montepulciano-d-abruzzo-disc:p6",
+    "montepulciano-d-abruzzo-disc:p7"
+   ]
+  },
+  "it-south": {
+   "title": "Inland hills and a limestone plateau",
+   "lede": "Taurasi grows on inland clay and limestone hills with big day-night swings. Castel del Monte is a stony limestone plateau.",
+   "from": [
+    "taurasi",
+    "castel-del-monte-rosso-riserva"
+   ],
+   "cite": [
+    "taurasi-disc:p5",
+    "taurasi-disc:p6",
+    "castel-del-monte-rosso-riserva-disc:p1",
+    "castel-del-monte-rosso-riserva-disc:p3"
+   ]
+  },
+  "it-islands": {
+   "title": "Volcanic slopes and sandy granite",
+   "lede": "Etna's slopes are loose volcanic soil. Gallura in Sardinia has sandy granite and salty wind.",
+   "from": [
+    "etna",
+    "vermentino-di-gallura"
+   ],
+   "cite": [
+    "etna-disc:p7",
+    "vermentino-di-gallura-disc:p5",
+    "vermentino-di-gallura-disc:p6"
+   ]
   }
  },
  "places": {
@@ -1181,6 +1277,589 @@
    "cite": [
     "chianti-classico-disc:p1",
     "chianti-classico-disc:p11"
+   ]
+  },
+  "verdicchio-dei-castelli-di-jesi": {
+   "title": "Clay and lime hills near the sea",
+   "cite": [
+    "verdicchio-dei-castelli-di-jesi-disc:p2",
+    "verdicchio-dei-castelli-di-jesi-disc:p7"
+   ]
+  },
+  "orvieto": {
+   "title": "Volcanic tuff hills, dry summers",
+   "cite": [
+    "orvieto-disc:p5",
+    "orvieto-disc:p9"
+   ]
+  },
+  "frascati": {
+   "title": "Volcanic ash and tuff on the Alban Hills",
+   "cite": [
+    "frascati-disc:p5",
+    "frascati-disc:p6"
+   ]
+  },
+  "montepulciano-d-abruzzo": {
+   "title": "Loose clay-sand hills by the Adriatic",
+   "cite": [
+    "montepulciano-d-abruzzo-disc:p6",
+    "montepulciano-d-abruzzo-disc:p7"
+   ]
+  },
+  "casauria": {
+   "title": "Sandy-clay foothills of Maiella and Gran Sasso",
+   "cite": [
+    "casauria-disc:p8",
+    "casauria-disc:p9"
+   ]
+  },
+  "cesanese-del-piglio": {
+   "title": "Iron-red clay-silt on mountain hills",
+   "cite": [
+    "cesanese-del-piglio-disc:p5",
+    "cesanese-del-piglio-disc:p7"
+   ]
+  },
+  "colline-teramane-montepulciano-dabruzzo": {
+   "title": "Clay hills below the Gran Sasso",
+   "cite": [
+    "colline-teramane-montepulciano-dabruzzo-disc:p6",
+    "colline-teramane-montepulciano-dabruzzo-disc:p7"
+   ]
+  },
+  "conero": {
+   "title": "Limy white slopes of Monte Conero",
+   "cite": [
+    "conero-disc:p5"
+   ]
+  },
+  "montefalco-sagrantino": {
+   "title": "Sagrantino on lime-rich clay and marl",
+   "cite": [
+    "montefalco-sagrantino-disc:p1",
+    "montefalco-sagrantino-disc:p7"
+   ]
+  },
+  "offida": {
+   "title": "Deep clay hills, hot summers",
+   "cite": [
+    "offida-disc:p5",
+    "offida-disc:p6"
+   ]
+  },
+  "terre-tollesi": {
+   "title": "Hills between Maiella and the sea",
+   "cite": [
+    "terre-tollesi-disc:p6",
+    "terre-tollesi-disc:p7"
+   ]
+  },
+  "torgiano-rosso-riserva": {
+   "title": "Sandy clay of the old Tiber lake",
+   "cite": [
+    "torgiano-rosso-riserva-disc:p5"
+   ]
+  },
+  "verdicchio-di-matelica-riserva": {
+   "title": "Cold winters on limestone and clay",
+   "cite": [
+    "verdicchio-di-matelica-riserva-disc:p4",
+    "verdicchio-di-matelica-riserva-disc:p6"
+   ]
+  },
+  "vernaccia-di-serrapetrona": {
+   "title": "Thin, stony limestone-marl hills",
+   "cite": [
+    "vernaccia-di-serrapetrona-disc:p4",
+    "vernaccia-di-serrapetrona-disc:p5"
+   ]
+  },
+  "colli-bolognesi-pignoletto": {
+   "title": "Clay and limy foothills, ventilated slopes",
+   "cite": [
+    "colli-bolognesi-pignoletto-disc:p2",
+    "colli-bolognesi-pignoletto-disc:p9"
+   ]
+  },
+  "romagna-albana": {
+   "title": "Albana on clay and limestone hills",
+   "cite": [
+    "romagna-albana-disc:p6",
+    "romagna-albana-disc:p7"
+   ]
+  },
+  "etna": {
+   "title": "Loose volcanic soil on Etna's slopes",
+   "cite": [
+    "etna-disc:p7"
+   ]
+  },
+  "cerasuolo-di-vittoria": {
+   "title": "Limestone and terra rossa, hot and arid",
+   "cite": [
+    "cerasuolo-di-vittoria-disc:p1",
+    "cerasuolo-di-vittoria-disc:p7"
+   ]
+  },
+  "vermentino-di-gallura": {
+   "title": "Sandy granite and salty wind",
+   "cite": [
+    "vermentino-di-gallura-disc:p5",
+    "vermentino-di-gallura-disc:p6"
+   ]
+  },
+  "franciacorta": {
+   "title": "Glacial moraine beside Lake Iseo",
+   "cite": [
+    "franciacorta-disc:p11",
+    "franciacorta-disc:p12"
+   ]
+  },
+  "oltrepo-pavese-metodo-classico": {
+   "title": "Limestone and marl Apennine foothills",
+   "cite": [
+    "oltrepo-pavese-metodo-classico-disc:p2",
+    "oltrepo-pavese-metodo-classico-disc:p6"
+   ]
+  },
+  "scanzo": {
+   "title": "Steep marl hills, very thin soil",
+   "cite": [
+    "scanzo-disc:p3",
+    "scanzo-disc:p4"
+   ]
+  },
+  "sforzato-di-valtellina": {
+   "title": "Nebbiolo on dry-stone granite terraces",
+   "cite": [
+    "sforzato-di-valtellina-disc:p4",
+    "sforzato-di-valtellina-disc:p5"
+   ]
+  },
+  "valtellina-superiore": {
+   "title": "South-facing granite sand terraces",
+   "cite": [
+    "valtellina-superiore-disc:p8"
+   ]
+  },
+  "alto-adige": {
+   "title": "Sunny Alpine valleys, big day-night swings",
+   "cite": [
+    "alto-adige-disc:p30",
+    "alto-adige-disc:p31"
+   ]
+  },
+  "trentino": {
+   "title": "Limestone mountain valleys, cold winters",
+   "cite": [
+    "trentino-disc:p16",
+    "trentino-disc:p17"
+   ]
+  },
+  "collio": {
+   "title": "Marl and sandstone flysch hills",
+   "cite": [
+    "collio-disc:p9",
+    "collio-disc:p10"
+   ]
+  },
+  "friuli-colli-orientali": {
+   "title": "Terraced marl and sandstone hills",
+   "cite": [
+    "friuli-colli-orientali-disc:p10"
+   ]
+  },
+  "friuli-grave": {
+   "title": "Stony limestone-dolomite river gravel",
+   "cite": [
+    "friuli-grave-disc:p11",
+    "friuli-grave-disc:p12"
+   ]
+  },
+  "colli-orientali-del-friuli-picolit": {
+   "title": "Terraced Eocene marl and sandstone hills",
+   "cite": [
+    "colli-orientali-del-friuli-picolit-disc:p4",
+    "colli-orientali-del-friuli-picolit-disc:p5"
+   ]
+  },
+  "ramandolo": {
+   "title": "Steep terraced marl, high rainfall",
+   "cite": [
+    "ramandolo-disc:p4",
+    "ramandolo-disc:p5"
+   ]
+  },
+  "rosazzo": {
+   "title": "Crumbly marl and sandstone flysch",
+   "cite": [
+    "rosazzo-disc:p3",
+    "rosazzo-disc:p4"
+   ]
+  },
+  "barbaresco": {
+   "title": "Nebbiolo on blue-grey marl and sand",
+   "cite": [
+    "barbaresco-disc:p2",
+    "barbaresco-disc:p7"
+   ]
+  },
+  "barbera-d-asti": {
+   "title": "Barbera on sunny calcareous marl and sand",
+   "cite": [
+    "barbera-d-asti-disc:p7",
+    "barbera-d-asti-disc:p8"
+   ]
+  },
+  "dolcetto-d-alba": {
+   "title": "Dolcetto on Miocene clay marls",
+   "cite": [
+    "dolcetto-d-alba-disc:p2",
+    "dolcetto-d-alba-disc:p6"
+   ]
+  },
+  "gavi": {
+   "title": "Marl and clay, cool ventilated summers",
+   "cite": [
+    "gavi-disc:p6",
+    "gavi-disc:p7"
+   ]
+  },
+  "asti": {
+   "title": "Moscato on steep calcareous marl hills",
+   "cite": [
+    "asti-disc:p3",
+    "asti-disc:p10"
+   ]
+  },
+  "alta-langa": {
+   "title": "Pinot noir on marl-limestone clay hills",
+   "cite": [
+    "alta-langa-disc:p2",
+    "alta-langa-disc:p6"
+   ]
+  },
+  "barbera-del-monferrato-superiore": {
+   "title": "Low calcareous hills, temperate climate",
+   "cite": [
+    "barbera-del-monferrato-superiore-disc:p6",
+    "barbera-del-monferrato-superiore-disc:p7"
+   ]
+  },
+  "brachetto-dacqui": {
+   "title": "Calcareous clay marl hillsides",
+   "cite": [
+    "brachetto-dacqui-disc:p2",
+    "brachetto-dacqui-disc:p7"
+   ]
+  },
+  "canelli": {
+   "title": "Moscato on marine marl and sandstone",
+   "cite": [
+    "canelli-disc:p7",
+    "canelli-disc:p8"
+   ]
+  },
+  "dogliani": {
+   "title": "Dolcetto on clay and limestone",
+   "cite": [
+    "dogliani-disc:p1",
+    "dogliani-disc:p3"
+   ]
+  },
+  "dolcetto-di-diano-dalba": {
+   "title": "Dolcetto on clay and limestone hillsides",
+   "cite": [
+    "dolcetto-di-diano-dalba-disc:p2"
+   ]
+  },
+  "dolcetto-di-ovada-superiore": {
+   "title": "Clay and tufa hills by the Orba",
+   "cite": [
+    "dolcetto-di-ovada-superiore-disc:p2",
+    "dolcetto-di-ovada-superiore-disc:p6"
+   ]
+  },
+  "erbaluce-di-caluso": {
+   "title": "Sandy, pebbly glacial moraine hills",
+   "cite": [
+    "erbaluce-di-caluso-disc:p2",
+    "erbaluce-di-caluso-disc:p6"
+   ]
+  },
+  "gattinara": {
+   "title": "Nebbiolo on clay and sandy hills",
+   "cite": [
+    "gattinara-disc:p1",
+    "gattinara-disc:p2"
+   ]
+  },
+  "ghemme": {
+   "title": "Mineral-rich glacial moraine hills",
+   "cite": [
+    "ghemme-disc:p5",
+    "ghemme-disc:p2"
+   ]
+  },
+  "nizza": {
+   "title": "Barbera on calcareous marl and sandstone",
+   "cite": [
+    "nizza-disc:p2",
+    "nizza-disc:p6"
+   ]
+  },
+  "roero": {
+   "title": "Sandy soils left by the Tanaro",
+   "cite": [
+    "roero-disc:p9"
+   ]
+  },
+  "ruche-di-castagnole-monferrato": {
+   "title": "Clay and limestone hillsides",
+   "cite": [
+    "ruche-di-castagnole-monferrato-disc:p2"
+   ]
+  },
+  "terre-alfieri": {
+   "title": "Clay and limestone hill vineyards",
+   "cite": [
+    "terre-alfieri-disc:p2",
+    "terre-alfieri-disc:p1"
+   ]
+  },
+  "taurasi": {
+   "title": "Clay and limestone, big day-night swings",
+   "cite": [
+    "taurasi-disc:p5",
+    "taurasi-disc:p6"
+   ]
+  },
+  "fiano-di-avellino": {
+   "title": "Clay-rich hills with volcanic ash",
+   "cite": [
+    "fiano-di-avellino-disc:p4",
+    "fiano-di-avellino-disc:p5"
+   ]
+  },
+  "greco-di-tufo": {
+   "title": "Volcanic and clay soils of the Sabato",
+   "cite": [
+    "greco-di-tufo-disc:p4",
+    "greco-di-tufo-disc:p5"
+   ]
+  },
+  "salice-salentino": {
+   "title": "Negroamaro on deep clay-limestone",
+   "cite": [
+    "salice-salentino-disc:p9",
+    "salice-salentino-disc:p10"
+   ]
+  },
+  "aglianico-del-vulture": {
+   "title": "Volcanic tuff slopes of Monte Vulture",
+   "cite": [
+    "aglianico-del-vulture-disc:p3",
+    "aglianico-del-vulture-disc:p4"
+   ]
+  },
+  "aglianico-del-taburno": {
+   "title": "Limestone and clay in cooler uplands",
+   "cite": [
+    "aglianico-del-taburno-disc:p1",
+    "aglianico-del-taburno-disc:p5"
+   ]
+  },
+  "castel-del-monte-bombino-nero": {
+   "title": "Thin, stony limestone of the Murge",
+   "cite": [
+    "castel-del-monte-bombino-nero-disc:p2",
+    "castel-del-monte-bombino-nero-disc:p4"
+   ]
+  },
+  "castel-del-monte-nero-di-troia-riserva": {
+   "title": "Shallow stony limestone plateau, hot and dry",
+   "cite": [
+    "castel-del-monte-nero-di-troia-riserva-disc:p3",
+    "castel-del-monte-nero-di-troia-riserva-disc:p4"
+   ]
+  },
+  "castel-del-monte-rosso-riserva": {
+   "title": "Stony limestone plateau, dry climate",
+   "cite": [
+    "castel-del-monte-rosso-riserva-disc:p1",
+    "castel-del-monte-rosso-riserva-disc:p3"
+   ]
+  },
+  "primitivo-di-manduria-dolce-naturale": {
+   "title": "Thin coastal soils, warm summers",
+   "cite": [
+    "primitivo-di-manduria-dolce-naturale-disc:p3",
+    "primitivo-di-manduria-dolce-naturale-disc:p4"
+   ]
+  },
+  "chianti": {
+   "title": "Sandstone and marl near the Apennines",
+   "cite": [
+    "chianti-disc:p35",
+    "chianti-disc:p1"
+   ]
+  },
+  "bolgheri": {
+   "title": "Coastal plain cooled by sea breezes",
+   "cite": [
+    "bolgheri-disc:p2",
+    "bolgheri-disc:p6"
+   ]
+  },
+  "brunello-di-montalcino": {
+   "title": "Poor calcareous soils, Sangiovese on hills",
+   "cite": [
+    "brunello-di-montalcino-disc:p5",
+    "brunello-di-montalcino-disc:p7"
+   ]
+  },
+  "vino-nobile-di-montepulciano": {
+   "title": "Sandy marine Pliocene hills",
+   "cite": [
+    "vino-nobile-di-montepulciano-disc:p9",
+    "vino-nobile-di-montepulciano-disc:p10"
+   ]
+  },
+  "carmignano": {
+   "title": "Sunny, ventilated Montalbano hillsides",
+   "cite": [
+    "carmignano-disc:p4",
+    "carmignano-disc:p5"
+   ]
+  },
+  "elba-aleatico-passito": {
+   "title": "Granite and limy soils on a dry island",
+   "cite": [
+    "elba-aleatico-passito-disc:p4",
+    "elba-aleatico-passito-disc:p5"
+   ]
+  },
+  "montecucco-sangiovese": {
+   "title": "Sangiovese hills of Grosseto province",
+   "cite": [
+    "montecucco-sangiovese-disc:p2"
+   ]
+  },
+  "morellino-di-scansano": {
+   "title": "Warm dry hills, shallow soils",
+   "cite": [
+    "morellino-di-scansano-disc:p7",
+    "morellino-di-scansano-disc:p9"
+   ]
+  },
+  "suvereto": {
+   "title": "Warm sunny hills, under 650 mm rain",
+   "cite": [
+    "suvereto-disc:p6"
+   ]
+  },
+  "val-di-cornia-rosso": {
+   "title": "Alluvial and limestone soils on a mild coast",
+   "cite": [
+    "val-di-cornia-rosso-disc:p1",
+    "val-di-cornia-rosso-disc:p5"
+   ]
+  },
+  "vernaccia-di-san-gimignano": {
+   "title": "Pliocene yellow sands and clays",
+   "cite": [
+    "vernaccia-di-san-gimignano-disc:p5",
+    "vernaccia-di-san-gimignano-disc:p6"
+   ]
+  },
+  "valpolicella": {
+   "title": "Corvina and Corvinone blend from 19 municipalities",
+   "cite": [
+    "valpolicella-disc:p2"
+   ]
+  },
+  "soave": {
+   "title": "Volcanic basalt and limestone on the Lessini",
+   "cite": [
+    "soave-disc:p9",
+    "soave-disc:p10"
+   ]
+  },
+  "prosecco": {
+   "title": "Alluvial plains between Alps and Adriatic",
+   "cite": [
+    "prosecco-disc:p9",
+    "prosecco-disc:p10"
+   ]
+  },
+  "conegliano-valdobbiadene": {
+   "title": "Glera on hill country",
+   "cite": [
+    "conegliano-valdobbiadene-disc:p2"
+   ]
+  },
+  "asolo-prosecco": {
+   "title": "Red marl and conglomerate hills",
+   "cite": [
+    "asolo-prosecco-disc:p8",
+    "asolo-prosecco-disc:p9"
+   ]
+  },
+  "bagnoli-friularo": {
+   "title": "Volcanic alluvial soils, cooling winds",
+   "cite": [
+    "bagnoli-friularo-disc:p4",
+    "bagnoli-friularo-disc:p5"
+   ]
+  },
+  "bardolino-superiore": {
+   "title": "Gravelly glacial moraine by Lake Garda",
+   "cite": [
+    "bardolino-superiore-disc:p5",
+    "bardolino-superiore-disc:p6"
+   ]
+  },
+  "colli-di-conegliano": {
+   "title": "Cool, drained gravelly hills",
+   "cite": [
+    "colli-di-conegliano-disc:p8",
+    "colli-di-conegliano-disc:p9"
+   ]
+  },
+  "colli-euganei-fior-darancio": {
+   "title": "Volcanic hills rising from the plain",
+   "cite": [
+    "colli-euganei-fior-darancio-disc:p5",
+    "colli-euganei-fior-darancio-disc:p6"
+   ]
+  },
+  "lison": {
+   "title": "Flat alluvial plain near the Venetian coast",
+   "cite": [
+    "lison-disc:p6",
+    "lison-disc:p7"
+   ]
+  },
+  "montello-rosso": {
+   "title": "Red clay-marl over conglomerate",
+   "cite": [
+    "montello-rosso-disc:p4",
+    "montello-rosso-disc:p5"
+   ]
+  },
+  "piave-malanotte": {
+   "title": "Free-draining alluvial gravel of the Piave",
+   "cite": [
+    "piave-malanotte-disc:p6",
+    "piave-malanotte-disc:p7"
+   ]
+  },
+  "recioto-di-gambellara": {
+   "title": "Volcanic basalt and limestone hills",
+   "cite": [
+    "recioto-di-gambellara-disc:p4",
+    "recioto-di-gambellara-disc:p5"
    ]
   }
  }

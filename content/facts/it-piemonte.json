@@ -151,11 +151,11 @@
     "styles": [
      {
       "name": "Barbaresco",
-      "text": "Minimum 26 months ageing, 9 in wood; released 1 January of the third year after harvest."
+      "text": "Minimum 26 months ageing, 9 in wood; released 1 January of third year after harvest."
      },
      {
       "name": "Riserva",
-      "text": "Minimum 50 months ageing, 9 in wood; released 1 January of the fifth year after harvest."
+      "text": "Minimum 50 months ageing, 9 in wood; released 1 January of fifth year after harvest."
      },
      {
       "name": "Menzione geografica aggiuntiva",
@@ -256,11 +256,11 @@
      },
      {
       "name": "Tinella",
-      "text": "Superiore from Tinella communes; 24 months ageing, at least 6 in wood and 6 in bottle."
+      "text": "Superiore from Tinella communes; 24 months ageing, at least 6 in wood, 6 in bottle."
      },
      {
       "name": "Colli Astiani / Astiano",
-      "text": "Superiore from Colli Astiani zone; 24 months ageing, at least 6 in wood and 6 in bottle."
+      "text": "Superiore from Colli Astiani; 24 months ageing, at least 6 in wood, 6 in bottle."
      }
     ],
     "cite": [
@@ -789,7 +789,7 @@
      },
      {
       "name": "Passito",
-      "text": "Sweet wine from dried grapes, at least 16% alcohol, released from 1 October the next year."
+      "text": "Sweet wine from dried grapes, at least 16% alcohol, released 1 October next year."
      },
      {
       "name": "Brachetto d'Acqui (still)",
@@ -959,7 +959,7 @@
      },
      {
       "name": "Dogliani superiore",
-      "text": "At least 13% alcohol, no enrichment, 12 months ageing, sold from 1 November the next year."
+      "text": "At least 13% alcohol, no enrichment, 12 months ageing, sold from 1 November next year."
      },
      {
       "name": "Vigna",
@@ -1372,11 +1372,11 @@
     "styles": [
      {
       "name": "Ghemme",
-      "text": "Aged at least 34 months, 18 of them in wood; sold from 1 September of the third year after harvest."
+      "text": "Aged 34 months, 18 in wood; sold from 1 September of third year after harvest."
      },
      {
       "name": "Ghemme Riserva",
-      "text": "Aged at least 46 months, 24 in wood; sold from 1 September of the fourth year."
+      "text": "Aged 46 months, 24 in wood; sold from 1 September of fourth year."
      },
      {
       "name": "Vigna",

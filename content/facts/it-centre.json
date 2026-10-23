@@ -1,0 +1,1236 @@
+{
+ "region": "it-centre",
+ "sheets": [
+  {
+   "id": "verdicchio-dei-castelli-di-jesi",
+   "why": {
+    "text": "Clay-rich, limy hill soils in the Esino valley, about 20 km from the sea, with a temperate, sea-influenced climate and mostly Verdicchio.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p2",
+     "verdicchio-dei-castelli-di-jesi-disc:p7",
+     "verdicchio-dei-castelli-di-jesi-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Verdicchio"
+     }
+    ],
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p2"
+    ],
+    "others": [],
+    "othersCite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry still whites, sparkling wines (Charmat or classic method) and a sweet passito, all from Verdicchio.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p2",
+     "verdicchio-dei-castelli-di-jesi-disc:p4",
+     "verdicchio-dei-castelli-di-jesi-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate, shaped by sea, sun, breezes and mountain shelter. Rainfall averages 800 mm a year, mean temperatures stay under 14 °C, and July–August highs reach 30 °C.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Hills with high clay and lime content and poor permeability, on mostly calcareous ridges. The flat alluvial land has limy, stony soils.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Jesi lies at 96 m and Cingoli at 630 m. 70% of vineyards sit between 80 and 280 m, the highest at 750 m. Best grapes grow at 300–500 m.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p7",
+     "verdicchio-dei-castelli-di-jesi-disc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Pale straw with green reflections. Hawthorn and field flowers, then peach, apple and light citrus. Dry, with a bitter almond finish.",
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p4",
+     "verdicchio-dei-castelli-di-jesi-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Classico",
+      "text": "Grapes from the oldest zone, leaving out land left of the Misa, Ostra and Senigallia."
+     },
+     {
+      "name": "Superiore",
+      "text": "Lower yield of 11 t/ha and at least 12% alcohol."
+     },
+     {
+      "name": "Spumante Riserva",
+      "text": "Classic method only, aged at least 36 months."
+     },
+     {
+      "name": "Passito",
+      "text": "From dried grapes, at least 15% alcohol; sale not before 1 December after vintage."
+     }
+    ],
+    "cite": [
+     "verdicchio-dei-castelli-di-jesi-disc:p3",
+     "verdicchio-dei-castelli-di-jesi-disc:p4",
+     "verdicchio-dei-castelli-di-jesi-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "orvieto",
+   "why": {
+    "text": "Hills of volcanic tuff, clay and sand between 100 and 500 m, with wet autumns, dry summers and cooler pre-harvest temperatures, for white wine.",
+    "cite": [
+     "orvieto-disc:p5",
+     "orvieto-disc:p9",
+     "orvieto-disc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Trebbiano Toscano (Procanico)"
+     },
+     {
+      "local": "Grechetto"
+     }
+    ],
+    "cite": [
+     "orvieto-disc:p2"
+    ],
+    "others": [],
+    "othersCite": [
+     "orvieto-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "White only: mostly dry today, with abboccato, amabile and dolce versions, plus late-harvest and noble-rot sweet wines.",
+    "cite": [
+     "orvieto-disc:p1",
+     "orvieto-disc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Autumn is wettest, with 35-36% of rain, peaking at 102 mm in October and 107 mm in November. Summers are dry: July and August average 33 and 40 mm. Annual rain is 700 to 1000 mm. July and August average about 23.7 to 24.1 °C, and January about 5.5 to 6.4 °C. Cooler pre-harvest temperatures help aroma and polyphenol ripening.",
+    "cite": [
+     "orvieto-disc:p10"
+    ]
+   },
+   "soil": {
+    "text": "About fifteen geological formations: clays, volcanic lavas and tuffs, river alluvium, and sands and conglomerates. The Orvieto rock itself is tuff.",
+    "cite": [
+     "orvieto-disc:p9",
+     "orvieto-disc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards must lie between 100 and 500 metres above sea level, never on valley floors.",
+    "cite": [
+     "orvieto-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Pale straw yellow, delicate nose. Dry with a slight bitter finish, or abboccato, amabile or dolce, fine and delicate. Late harvest is straw to golden, sweet and harmonious. Noble rot is gold turning amber with age, rich and unctuous.",
+    "cite": [
+     "orvieto-disc:p7",
+     "orvieto-disc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Classico",
+      "text": "Grapes grown and wine made in the historic zone of the denomination."
+     },
+     {
+      "name": "Superiore",
+      "text": "Lower yield (8 t/ha), at least 12% alcohol, released after 1 March following harvest."
+     },
+     {
+      "name": "Vendemmia Tardiva",
+      "text": "Part-dried grapes, picked from 1 October, at least 13% total alcohol, sweet."
+     },
+     {
+      "name": "Muffa Nobile",
+      "text": "Sweet wine from Botrytis-affected grapes, at least 16% natural alcohol, 5 t/ha."
+     }
+    ],
+    "cite": [
+     "orvieto-disc:p1",
+     "orvieto-disc:p5",
+     "orvieto-disc:p7",
+     "orvieto-disc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "frascati",
+   "why": {
+    "text": "Volcanic ash and tuff soils on the northern slopes of the Alban Hills, 70 to 500 m up, with a mild Mediterranean climate.",
+    "cite": [
+     "frascati-disc:p5",
+     "frascati-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Malvasia bianca di Candia"
+     },
+     {
+      "local": "Malvasia del Lazio (Malvasia puntinata)"
+     }
+    ],
+    "cite": [
+     "frascati-disc:p2"
+    ],
+    "others": [
+     "Bellone",
+     "Bombino bianco",
+     "Greco bianco",
+     "Trebbiano toscano",
+     "Trebbiano giallo"
+    ],
+    "othersCite": [
+     "frascati-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling"
+    ],
+    "text": "Still white wine, dry to lightly sweet, and Spumante sparkling white from brut to extra dry.",
+    "cite": [
+     "frascati-disc:p4",
+     "frascati-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Transitional Mediterranean climate. Rain is 822 to 1010 mm a year, with only 84 to 127 mm in summer. Mean temperature is 13.7 to 15.2 °C, with mild winters.",
+    "cite": [
+     "frascati-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly volcanic: loose ash (pozzolana) giving deep, sandy, well-drained soil, plus hard tuff that needs deep ploughing. Small areas of lava and recent alluvium.",
+    "cite": [
+     "frascati-disc:p5",
+     "frascati-disc:p6",
+     "frascati-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 70 and 500 m above sea level, mostly facing west and northwest.",
+    "cite": [
+     "frascati-disc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Fresh, balanced, straw yellow, more or less deep, with delicate floral notes. Dry, amabile or abboccato, savoury and soft. Spumante has fine, persistent bubbles. Normal acidity, little bitterness, good structure.",
+    "cite": [
+     "frascati-disc:p4",
+     "frascati-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Frascati Spumante",
+      "text": "Sparkling white, brut to extra dry, minimum 11.00% alcohol, no vintage required."
+     },
+     {
+      "name": "Frascati amabile",
+      "text": "Off-dry Frascati; only the words amabile or abboccato may appear on labels."
+     }
+    ],
+    "cite": [
+     "frascati-disc:p4",
+     "frascati-disc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "montepulciano-d-abruzzo",
+   "why": {
+    "text": "Sunny, breezy Adriatic hills with fairly loose, well-drained clay-sand soils, big day-night temperature swings, and the native Montepulciano grape.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p6",
+     "montepulciano-d-abruzzo-disc:p7",
+     "montepulciano-d-abruzzo-disc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Montepulciano"
+     }
+    ],
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p2",
+     "montepulciano-d-abruzzo-disc:p8"
+    ],
+    "others": [],
+    "othersCite": [
+     "montepulciano-d-abruzzo-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wine, with Superiore and Riserva versions from nine named subzones.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p2",
+     "montepulciano-d-abruzzo-disc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Temperate, hot and dry in July and August (24 to 25 °C). Over 800 mm of rain a year, driest in July (about 30 mm). Cold Balkan air in winter, Adriatic and summer high pressure. Winkler index 1,800 to 2,200 degree-days.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly loose sandy-clay soils, more clayey in the north. Mountain basins have old river terraces. Water retention is low to medium, with little humus. Well drained.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p6",
+     "montepulciano-d-abruzzo-disc:p7",
+     "montepulciano-d-abruzzo-disc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards only on hills up to 600 m, or up to 700 m on south-facing land.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p3",
+     "montepulciano-d-abruzzo-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Intense ruby red with light violet tints, turning garnet with age. Red fruit (cherry, blackberry) and spice; dry, full, velvety, harmonious and lightly tannic.",
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p5",
+     "montepulciano-d-abruzzo-disc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Subzone wine aged at least 24 months, six of them in wood."
+     },
+     {
+      "name": "Superiore",
+      "text": "Subzone wine with at least six months of ageing."
+     },
+     {
+      "name": "Casauria subzone",
+      "text": "Subzone wine made from 100% Montepulciano."
+     },
+     {
+      "name": "Base DOC",
+      "text": "Not sold before 1 February after the harvest; meant to be drunk young."
+     }
+    ],
+    "cite": [
+     "montepulciano-d-abruzzo-disc:p5",
+     "montepulciano-d-abruzzo-disc:p8",
+     "montepulciano-d-abruzzo-disc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "casauria",
+   "why": {
+    "text": "Hilly foothills between the Maiella and Gran Sasso massifs, with sandy-clay soils, warm dry summers and Montepulciano grown for over two centuries.",
+    "cite": [
+     "casauria-disc:p8",
+     "casauria-disc:p9",
+     "casauria-disc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Montepulciano"
+     }
+    ],
+    "cite": [
+     "casauria-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "casauria-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, made at least 90% from Montepulciano, also as Riserva.",
+    "cite": [
+     "casauria-disc:p1",
+     "casauria-disc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Temperate; about 800 mm of rain a year, wettest November to January, driest in July. July and August are hot and dry at 24 to 25 °C. Winkler index is 1,800 to 2,200 degree-days.",
+    "cite": [
+     "casauria-disc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Plio-Pleistocene marine hill deposits beside the Pescara river plain. Soils are sandy-clay, fairly rich in stones, mostly loose and moderately fertile, with depth varying by slope and aspect.",
+    "cite": [
+     "casauria-disc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 200 and 600 m. Vineyards must be on hills or plateaus up to 500 m, exceptionally 600 m if south-facing. Damp valley floors and poorly sunlit land are excluded.",
+    "cite": [
+     "casauria-disc:p4",
+     "casauria-disc:p8",
+     "casauria-disc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Intense ruby red with violet shades, turning garnet with age. Ripe red fruit and spice. Dry, full, robust and harmonious, properly tannic, sometimes savoury, gaining complexity and softness with age.",
+    "cite": [
+     "casauria-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Casauria",
+      "text": "Montepulciano red aged at least 18 months from 1 November of the harvest year."
+     },
+     {
+      "name": "Riserva",
+      "text": "Aged at least 24 months, with 13.5% minimum alcohol and 26 g/l extract."
+     }
+    ],
+    "cite": [
+     "casauria-disc:p1",
+     "casauria-disc:p6",
+     "casauria-disc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cesanese-del-piglio",
+   "why": {
+    "text": "Iron-red clay-silt soils on west and south-west-facing hills of the Monti Ernici, with long mild cold and a slow ripening that can run into November.",
+    "cite": [
+     "cesanese-del-piglio-disc:p5",
+     "cesanese-del-piglio-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cesanese di Affile"
+     },
+     {
+      "local": "Cesanese comune"
+     }
+    ],
+    "cite": [
+     "cesanese-del-piglio-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wines only, in base, Superiore and Riserva types.",
+    "cite": [
+     "cesanese-del-piglio-disc:p1",
+     "cesanese-del-piglio-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Temperate transitional climate. Rainfall is 1098 to 1233 mm a year, with 1 to 2 dry summer months. Mean annual temperature is 13.5 to 15.6 °C, with long, mild cold from November to April and a big day-night swing late in ripening.",
+    "cite": [
+     "cesanese-del-piglio-disc:p5",
+     "cesanese-del-piglio-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly terre rosse, red clay-silt soils from eroded limestone, coloured by iron and aluminium oxides; thin, low in nutrients and free-draining.",
+    "cite": [
+     "cesanese-del-piglio-disc:p5",
+     "cesanese-del-piglio-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 220 and 980 m above sea level, mostly facing west and south-west.",
+    "cite": [
+     "cesanese-del-piglio-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red with violet tints, floral and fruity (berries and stone fruit), dry, harmonious, lightly bitter, with little astringency. Superiore and Riserva have more structure; Riserva adds spice and wood.",
+    "cite": [
+     "cesanese-del-piglio-disc:p4",
+     "cesanese-del-piglio-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Superiore",
+      "text": "Lower yields, 12.5% natural alcohol, released after 1 July of the year after harvest."
+     },
+     {
+      "name": "Riserva",
+      "text": "Superiore aged at least 20 months, 6 in bottle, with at least 14% alcohol."
+     }
+    ],
+    "cite": [
+     "cesanese-del-piglio-disc:p3",
+     "cesanese-del-piglio-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "colline-teramane-montepulciano-dabruzzo",
+   "why": {
+    "text": "Clay-rich hills of Teramo below the Gran Sasso, with big day-night swings and sunny south-facing slopes, ripen Montepulciano for structured, long-lived reds.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p6",
+     "colline-teramane-montepulciano-dabruzzo-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Montepulciano"
+     }
+    ],
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p2"
+    ],
+    "others": [
+     "Sangiovese"
+    ],
+    "othersCite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red only, in a standard version and a longer-aged Riserva.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p1",
+     "colline-teramane-montepulciano-dabruzzo-disc:p5"
+    ]
+   },
+   "climate": {
+    "text": "Temperate, warm in summer, with 700 mm rain a year on the coast and 800 mm inland. Average temperatures run from 13 °C in April to 16 °C in October, peaking at 24-25 °C in July and August. Day-night swings and ventilation are strong, helped by the Gran Sasso and Monti della Laga. Winkler index is above 2,000 degree-days.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p6",
+     "colline-teramane-montepulciano-dabruzzo-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Clay-silt soils, looser near the coast. Alluvial mix of clay, sand, silt and gravel, always with clay.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p6",
+     "colline-teramane-montepulciano-dabruzzo-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards on hills or plateaus up to 550 m, never in damp valley floors. Vines mostly face south-southeast.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p3",
+     "colline-teramane-montepulciano-dabruzzo-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Deep ruby with violet hints, turning garnet with age. Ripe red fruit and spice, jam and ether in older wines. Dry, harmonious, fairly tannic, velvety in Riserva.",
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p5",
+     "colline-teramane-montepulciano-dabruzzo-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Colline Teramane Montepulciano d'Abruzzo",
+      "text": "At least one year ageing, two months of it in bottle."
+     },
+     {
+      "name": "Riserva",
+      "text": "At least three years ageing, one in wood and two months in bottle."
+     }
+    ],
+    "cite": [
+     "colline-teramane-montepulciano-dabruzzo-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "conero",
+   "why": {
+    "text": "White, limy, sunlit lower slopes of Monte Conero, and inland spreads sheltered from sea winds, give Montepulciano sugary, fragrant grapes.",
+    "cite": [
+     "conero-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Montepulciano"
+     }
+    ],
+    "cite": [
+     "conero-disc:p1",
+     "conero-disc:p5"
+    ],
+    "others": [
+     "Sangiovese"
+    ],
+    "othersCite": [
+     "conero-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red wine only, from at least 85% Montepulciano, aged at least two years.",
+    "cite": [
+     "conero-disc:p1",
+     "conero-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean with limited summer humidity; monthly means run from 1-2 °C in January to 26-28 °C in July-August. Average rainfall is 775 mm a year; in the hills the wettest months are September-October.",
+    "cite": [
+     "conero-disc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Limy and Cretaceous rocks, with Mio-Pliocene outcrops of marl and sandy mudstone; coarse, often arid soils.",
+    "cite": [
+     "conero-disc:p4",
+     "conero-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Hills average about 200 m. 70% of vineyards lie between 20 and 140 m, and 1% at 550 m. Monte Conero is 572 m.",
+    "cite": [
+     "conero-disc:p4",
+     "conero-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby red, pleasant and winey, harmonious, dry and full-bodied. Savoury, fairly tannic, with body. Wood ageing adds softness and balance.",
+    "cite": [
+     "conero-disc:p3",
+     "conero-disc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Compulsory on the label, below the DOCG wording, no larger than Cònero."
+     }
+    ],
+    "cite": [
+     "conero-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "montefalco-sagrantino",
+   "why": {
+    "text": "Gentle hills of mixed clay, sand and marl soils rich in lime, with a continental climate, grow the Sagrantino grape alone.",
+    "cite": [
+     "montefalco-sagrantino-disc:p1",
+     "montefalco-sagrantino-disc:p7",
+     "montefalco-sagrantino-disc:p8",
+     "montefalco-sagrantino-disc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sagrantino"
+     }
+    ],
+    "cite": [
+     "montefalco-sagrantino-disc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "Red wine only, as dry Secco or sweet Passito made from dried grapes.",
+    "cite": [
+     "montefalco-sagrantino-disc:p1",
+     "montefalco-sagrantino-disc:p5",
+     "montefalco-sagrantino-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Continental. January averages +3.8 °C and July +25.3 °C (1961-1990). Rain is about 700 mm a year, with a summer low and an autumn peak. About 40 frost days a year.",
+    "cite": [
+     "montefalco-sagrantino-disc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Four zones: fluvio-lacustrine conglomerates, lake clays and sands, alluvium, and marls. Always rich in lime (CaCO3 mostly 11 to 25%), alkaline (pH 7.8 to 8.2).",
+    "cite": [
+     "montefalco-sagrantino-disc:p7",
+     "montefalco-sagrantino-disc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie from 220 to 472 m above sea level, on hills with varied slopes and exposures; valley floors are excluded.",
+    "cite": [
+     "montefalco-sagrantino-disc:p3",
+     "montefalco-sagrantino-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Secco: intense ruby, sometimes violet, turning garnet with age; delicate, blackberry-like aroma; dry and harmonious. Passito: deep ruby, same aroma, sweet and harmonious.",
+    "cite": [
+     "montefalco-sagrantino-disc:p5",
+     "montefalco-sagrantino-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Secco",
+      "text": "Dry red, at least 13% alcohol; 33 months ageing, 12 in oak, 4 in bottle."
+     },
+     {
+      "name": "Passito",
+      "text": "Sweet red from dried grapes, 80 to 180 g/l sugar, at least 18% alcohol."
+     },
+     {
+      "name": "Secco Vigna",
+      "text": "Names a specific vineyard; grapes at least 13.5% natural alcohol, no alcohol increase allowed."
+     }
+    ],
+    "cite": [
+     "montefalco-sagrantino-disc:p4",
+     "montefalco-sagrantino-disc:p5",
+     "montefalco-sagrantino-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "offida",
+   "why": {
+    "text": "Hilly vineyards 50 to 650 m up from the Adriatic, on deep, well-drained clay soils, with hot summers and fairly cold, rainy winters.",
+    "cite": [
+     "offida-disc:p5",
+     "offida-disc:p6",
+     "offida-disc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pecorino"
+     },
+     {
+      "local": "Passerina"
+     },
+     {
+      "local": "Montepulciano"
+     }
+    ],
+    "cite": [
+     "offida-disc:p1",
+     "offida-disc:p6"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry whites from Pecorino and Passerina, and a structured, long-lived red from Montepulciano.",
+    "cite": [
+     "offida-disc:p1",
+     "offida-disc:p4",
+     "offida-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean: hot but not sultry summers, fairly cold, rainy winters. Summer means 21 to 23 °C, winter 6 to 7 °C, rain 650 to 850 mm a year, driest in July.",
+    "cite": [
+     "offida-disc:p5",
+     "offida-disc:p6",
+     "offida-disc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Deep soils over 80 to 100 cm, mostly fine-textured clay, alkaline, evenly carbonate-rich, with good drainage and high water reserve.",
+    "cite": [
+     "offida-disc:p5",
+     "offida-disc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 50 and 650 m above sea level, on hills mostly facing east to south-east.",
+    "cite": [
+     "offida-disc:p5",
+     "offida-disc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Pecorino: white flowers, pineapple, aniseed and sage, fresh and savoury. Passerina: yellow fruit and citrus. Rosso: red fruit, liquorice and chocolate, soft and long.",
+    "cite": [
+     "offida-disc:p6",
+     "offida-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Offida Pecorino",
+      "text": "Dry white, at least 85% Pecorino."
+     },
+     {
+      "name": "Offida Passerina",
+      "text": "Dry white, at least 85% Passerina."
+     },
+     {
+      "name": "Offida Rosso",
+      "text": "At least 85% Montepulciano; 24 months ageing, 12 in wood, plus 3 in bottle."
+     }
+    ],
+    "cite": [
+     "offida-disc:p1",
+     "offida-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "terre-tollesi",
+   "why": {
+    "text": "Hills between the Maiella mountain and the Adriatic, with sea and mountain breezes, good temperature swings and limy, clay-sand soils.",
+    "cite": [
+     "terre-tollesi-disc:p6",
+     "terre-tollesi-disc:p7",
+     "terre-tollesi-disc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Montepulciano"
+     },
+     {
+      "local": "Pecorino"
+     },
+     {
+      "local": "Passerina"
+     }
+    ],
+    "cite": [
+     "terre-tollesi-disc:p2",
+     "terre-tollesi-disc:p7"
+    ],
+    "others": [],
+    "othersCite": [
+     "terre-tollesi-disc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry reds (Rosso and Rosso Riserva) and dry whites from Pecorino and Passerina.",
+    "cite": [
+     "terre-tollesi-disc:p1",
+     "terre-tollesi-disc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Temperate; July and August are hot and dry, 24 to 25 °C on average, sometimes above 35 °C. About 700 mm of rain a year, mostly November to April.",
+    "cite": [
+     "terre-tollesi-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Medium texture leaning to clay, about 29% clay and 36.5% sand. Very limy (about 32% carbonates), low in organic matter, pH 7.88.",
+    "cite": [
+     "terre-tollesi-disc:p5",
+     "terre-tollesi-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hilly land up to about 228 m. Vineyards must be at least 80 m above sea level; valley floors are excluded.",
+    "cite": [
+     "terre-tollesi-disc:p2",
+     "terre-tollesi-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: intense ruby, red fruit and spice, dry, tannic, long-lived. Whites: straw yellow, pear, white peach and almond, fresh with good acidity.",
+    "cite": [
+     "terre-tollesi-disc:p4",
+     "terre-tollesi-disc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rosso Riserva",
+      "text": "At least 95% Montepulciano; aged two years, six months of them in wood."
+     },
+     {
+      "name": "Pecorino",
+      "text": "At least 90% Pecorino; dry white, released from 1 January after harvest."
+     },
+     {
+      "name": "Passerina",
+      "text": "At least 90% Passerina; dry white with an almond finish."
+     }
+    ],
+    "cite": [
+     "terre-tollesi-disc:p2",
+     "terre-tollesi-disc:p3",
+     "terre-tollesi-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "torgiano-rosso-riserva",
+   "why": {
+    "text": "Deep, sandy-clay soils of the old Tiber lake bed, vines at 220 to 300 m facing west, and a dry summer with big day-night swings.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sangiovese"
+     }
+    ],
+    "cite": [
+     "torgiano-rosso-riserva-disc:p1",
+     "torgiano-rosso-riserva-disc:p2"
+    ],
+    "others": [
+     "Colorino",
+     "Canaiolo",
+     "Cabernet Sauvignon",
+     "Merlot"
+    ],
+    "othersCite": [
+     "torgiano-rosso-riserva-disc:p2",
+     "torgiano-rosso-riserva-disc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red from at least 70% Sangiovese, aged at least 36 months.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p1",
+     "torgiano-rosso-riserva-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Dry summers with good day-night swings in July and August; cold, damp winters. Rain averages 1,500 mm a year, on about 95 days.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p5",
+     "torgiano-rosso-riserva-disc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly deep sandy-clay soils with good structure and water holding, over limestone and tuff subsoil; river-laid soils are fertile.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie at 220 to 300 m above sea level, mostly facing west and south-west.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Brilliant ruby red, with a delicate, winey nose. Dry, harmonious and well structured, at least 12.5% alcohol.",
+    "cite": [
+     "torgiano-rosso-riserva-disc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 36 months, of which 12 in wood and 6 in bottle.",
+      "cite": [
+       "torgiano-rosso-riserva-disc:p3"
+      ]
+     },
+     {
+      "name": "Vigna",
+      "text": "Named single-vineyard wine, made and stored separately, followed by the place name.",
+      "cite": [
+       "torgiano-rosso-riserva-disc:p4"
+      ]
+     }
+    ],
+    "cite": [
+     "torgiano-rosso-riserva-disc:p3",
+     "torgiano-rosso-riserva-disc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "verdicchio-di-matelica-riserva",
+   "why": {
+    "text": "A cold-winter, hot-summer inland valley of limestone and clay at about 350 m, with late-ripening Verdicchio high in malic acid.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p4",
+     "verdicchio-di-matelica-riserva-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Verdicchio"
+     }
+    ],
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p1"
+    ],
+    "others": [],
+    "othersCite": [
+     "verdicchio-di-matelica-riserva-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry white wine only, aged at least 18 months before release.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Far from any marine influence: intensely cold winters and hot summers. Average temperatures stay below 14 °C and rainfall above 700 to 800 mm a year.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Limestone-sandstone and clay rocks, marl and limestone on the hills; gravelly alluvial terraces in the valley floor. Soils formed on clay, sometimes limestone.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p4",
+     "verdicchio-di-matelica-riserva-disc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Mean about 350 m; the zone runs from 250 to 700 m, with 80% of it between 280 and 480 m. One vineyard sits at 720 m.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Straw yellow, delicate aroma, dry and harmonious with a slightly bitter finish. Toasted almond, citron and honey; structured, rich and warm. Sharp in youth, full after malolactic.",
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p3",
+     "verdicchio-di-matelica-riserva-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least 18 months, counted from 1 December of the harvest year."
+     }
+    ],
+    "cite": [
+     "verdicchio-di-matelica-riserva-disc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vernaccia-di-serrapetrona",
+   "why": {
+    "text": "Thin, stony limestone-marl soils on east- and south-facing inland hills, and native Vernaccia nera, partly dried until January and fermented three times.",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p4",
+     "vernaccia-di-serrapetrona-disc:p5",
+     "vernaccia-di-serrapetrona-disc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Vernaccia nera"
+     }
+    ],
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p1"
+    ],
+    "others": [
+     "Other red grapes suitable for the Marche region"
+    ],
+    "othersCite": [
+     "vernaccia-di-serrapetrona-disc:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Red sparkling wine only, dry (secco) or sweet (dolce).",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p1",
+     "vernaccia-di-serrapetrona-disc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Inland, about 60 km from the Adriatic. Rainfall averages over 700 to 800 mm a year and average temperatures are below about 14 °C. July averages 21 °C.",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p4",
+     "vernaccia-di-serrapetrona-disc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Mountain soils are thin and stony on limestone and marl. Hill soils are mostly calcareous and stony, with sandstone-clay and sand.",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p4",
+     "vernaccia-di-serrapetrona-disc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Half the zone lies at 500 to 1000 m, with vines limited to 700 m. The other half lies at 250 to 500 m.",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p2",
+     "vernaccia-di-serrapetrona-disc:p4"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby to garnet with red, fine, lasting foam. Aromatic: ripe red fruit, jam, dried flowers. Soft and balanced, few tannins, pleasantly bitter finish.",
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Secco",
+      "text": "Dry version, made with low residual sugar in the tank."
+     },
+     {
+      "name": "Dolce",
+      "text": "Sweet version, with more residual sugar left in the tank."
+     },
+     {
+      "name": "Vigna",
+      "text": "Allowed with the vineyard name, made and kept in separate vessels."
+     }
+    ],
+    "cite": [
+     "vernaccia-di-serrapetrona-disc:p1",
+     "vernaccia-di-serrapetrona-disc:p4",
+     "vernaccia-di-serrapetrona-disc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

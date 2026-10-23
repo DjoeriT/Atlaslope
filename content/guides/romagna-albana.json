@@ -1,0 +1,122 @@
+{
+ "id": "romagna-albana",
+ "title": "Why Romagna Albana tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Albana gives its best on the soils around the Spungone, a yellowish ridge of sandy limestone in the clay hills of Romagna. Its wines share a herbal note most often likened to sage, and apricot tends to lead the fruit.",
+  "cite": [
+   "romagna-albana-disc:p6",
+   "romagna-albana-disc:p7",
+   "romagna-albana-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "ridge",
+   "beat": "place",
+   "title": "Almost Albana's only home in Italy",
+   "paras": [
+    "It has never been settled whether the Romans brought Albana to Romagna. What is clear is that the grape found here its greatest and almost only area of choice in Italy.",
+    "In the 1300s Pier de' Crescenzi wrote that Albana was held better at Forlì and across Romagna than any other grape. In the early 1900s Mariano Savelli named the hills where it gave its best, from Dozza near Imola to Longiano and Montiano.",
+    "Today the zone spreads over three provinces. Its communes include Imola and Ozzano Emilia in Bologna province, and Cesena and Longiano in Forlì-Cesena."
+   ],
+   "cite": [
+    "romagna-albana-disc:p2",
+    "romagna-albana-disc:p3",
+    "romagna-albana-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Bertinoro, on the Spungone",
+     "point": [
+      12.137,
+      44.147
+     ],
+     "zoom": 10,
+     "caption": "The fortress of Bertinoro stands on Spungone rock, the ridge whose surrounding soils give Albana its best.",
+     "cite": [
+      "romagna-albana-disc:p6",
+      "romagna-albana-disc:p7"
+     ]
+    },
+    {
+     "label": "Castrocaro Terme",
+     "point": [
+      11.9613,
+      44.1747
+     ],
+     "zoom": 10,
+     "caption": "Springs along the Spungone feed the thermal waters of Castrocaro and Fratta Terme.",
+     "cite": [
+      "romagna-albana-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun",
+   "beat": "weather",
+   "title": "Albana gains from light",
+   "paras": [
+    "Most traditional Albana vineyards face somewhere between south-east and south-west. Results are truly excellent above 100 m above sea level.",
+    "Albana is a white grape that gains from good sun exposure, or better, good brightness."
+   ],
+   "cite": [
+    "romagna-albana-disc:p7"
+   ]
+  },
+  {
+   "id": "spungone",
+   "beat": "ground",
+   "title": "A yellow ridge in the clay",
+   "paras": [
+    "The Spungone is a ridge that runs from the Faenza area to the Cesena area. It is the first rise you see from the Via Emilia. Its yellowish rock is fossil-rich sandy limestone from the Pliocene, set in clays. It resists erosion, so it stands out among the mostly clay hills around it.",
+    "Albana generally grows on either side of it. The soils are clay or silty clay with more or less limestone, and also yellow sands that tend to be low in limestone.",
+    "The best results come from soils that naturally hold the vine's vigour in check, on well-exposed sites. Different amounts of clay and limestone tend to shape structure and aroma in different ways. More limestone brings more marked floral notes.",
+    "Savelli wrote that away from the hills near the Spungone the wine loses its gold colour. Its scent and softness go too, and it blends in with any excellent common white."
+   ],
+   "cite": [
+    "romagna-albana-disc:p6",
+    "romagna-albana-disc:p7",
+    "romagna-albana-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Faenza, where the Spungone starts",
+     "point": [
+      11.8833,
+      44.2856
+     ],
+     "zoom": 10,
+     "caption": "The Spungone ridge starts in the Faenza area and runs to the Cesena area.",
+     "cite": [
+      "romagna-albana-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "types",
+   "beat": "rules",
+   "title": "One grape, five wines",
+   "paras": [
+    "Albana must make up at least 95% of the vineyard. Up to 5% can be other white grapes suited to Emilia-Romagna.",
+    "Albana ripens in stages and stores a lot of sugar. Its acidity stays fairly firm. That is why it has always made several kinds of wine.",
+    "The rules allow five types, and they grew out of local custom. The earlier-ripening bunches made dry wine for heavy summer work. The second picking made a stronger wine that often stayed more or less sweet, because the autumn cold stopped fermentation and left sugar behind. Part of the crop was hung in lofts to dry, then pressed into passito for family feasts.",
+    "Secco is the dry type, with at least 12.00% total alcohol. Amabile (medium sweet) and dolce (sweet) need at least 12.50%.",
+    "Passito and passito riserva come from grapes left to dry, for as long as until 30 March of the year after the harvest. Drying may use ventilated, dehumidified air, and the grapes must then reach at least 284 g/l of sugar.",
+    "Passito needs at least 17.00% total alcohol and 70 g/l of sugar. It cannot be sold before 1 September of the year after the harvest.",
+    "Passito riserva runs from straw yellow to brilliant gold with amber glints, with clear notes of fruit and noble rot. It needs at least 24.00% total alcohol. Growers who dry grapes on the vine under noble rot may make it with as little as 4.0% actual alcohol, if the must reaches at least 400 g/l at crushing. It cannot be sold before 1 December of the year after the harvest.",
+    "Grape yields are capped at 10 tonnes per hectare. Every bottle must show the vintage."
+   ],
+   "cite": [
+    "romagna-albana-disc:p2",
+    "romagna-albana-disc:p3",
+    "romagna-albana-disc:p4",
+    "romagna-albana-disc:p5",
+    "romagna-albana-disc:p6",
+    "romagna-albana-disc:p7"
+   ]
+  }
+ ]
+}

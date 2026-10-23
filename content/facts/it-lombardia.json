@@ -99,39 +99,98 @@
   {
    "id": "oltrepo-pavese-metodo-classico",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Sunny Apennine foothills on limestone and marl soils, with cold winters, warm summers and a spread of microclimates, give fresh, sapid sparkling wine.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p2",
+     "oltrepo-pavese-metodo-classico-disc:p6",
+     "oltrepo-pavese-metodo-classico-disc:p7",
+     "oltrepo-pavese-metodo-classico-disc:p8"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Pinot nero"
+     }
+    ],
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p1",
+     "oltrepo-pavese-metodo-classico-disc:p2"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot grigio",
+     "Pinot bianco"
+    ],
+    "othersCite": [
+     "oltrepo-pavese-metodo-classico-disc:p1",
+     "oltrepo-pavese-metodo-classico-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "sparkling",
+     "rose"
+    ],
+    "text": "Only bottle-fermented sparkling wine, white or rosé, with or without Pinot nero as the named grape.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p1",
+     "oltrepo-pavese-metodo-classico-disc:p4"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mean annual temperature is about 11 to 12 °C from the foot of the hills to 600 m, and January averages 1 to 2 °C. July or August average 22 to 24 °C. Rain peaks in November (143 mm) and is lowest in July (47 mm). South-facing slopes in the west often exceed 2,750 MJ/m2 of sun per year.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p7",
+     "oltrepo-pavese-metodo-classico-disc:p8"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards must be on calcareous or clay-limestone soils on sunny hillsides, never valley floors or plains. Geology is varied: marls, sandstones, limestones, clays and gypsum.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p2",
+     "oltrepo-pavese-metodo-classico-disc:p6",
+     "oltrepo-pavese-metodo-classico-disc:p7"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Temperature data run from the foot of the hills to 600 m. The 0 °C isotherm at about 800 m marks the limit between hill and mountain zones.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p8"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Fine, persistent foam; straw-yellow or pink; fine, gentle bouquet; sapid, fresh and harmonious. Pinot nero versions are well structured.",
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p4",
+     "oltrepo-pavese-metodo-classico-disc:p5"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Metodo classico",
+      "text": "Second fermentation in bottle; at least 15 months on the lees."
+     },
+     {
+      "name": "Millesimato",
+      "text": "Vintage-dated wine; at least 24 months on the lees."
+     },
+     {
+      "name": "Pinot nero",
+      "text": "At least 85% Pinot nero, with at least 12% alcohol."
+     },
+     {
+      "name": "Rosé",
+      "text": "Pink version; on the label it may only be called rosé."
+     }
+    ],
+    "cite": [
+     "oltrepo-pavese-metodo-classico-disc:p1",
+     "oltrepo-pavese-metodo-classico-disc:p2",
+     "oltrepo-pavese-metodo-classico-disc:p4",
+     "oltrepo-pavese-metodo-classico-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -141,39 +200,71 @@
   {
    "id": "scanzo",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Steep marl hillsides with very thin soil and a Mediterranean-like climate; the grapes are dried for at least 21 days after harvest.",
+    "cite": [
+     "scanzo-disc:p3",
+     "scanzo-disc:p4",
+     "scanzo-disc:p5"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
+    "main": [
+     {
+      "local": "Moscato di Scanzo"
+     }
+    ],
+    "cite": [
+     "scanzo-disc:p1"
+    ],
     "others": [],
     "othersCite": []
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "One sweet red wine, made only from Moscato di Scanzo grapes dried after harvest.",
+    "cite": [
+     "scanzo-disc:p1",
+     "scanzo-disc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Typically Mediterranean, allowing good ripening of the vines; olive groves grow here too.",
+    "cite": [
+     "scanzo-disc:p4",
+     "scanzo-disc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Very shallow topsoil over marly rock called Sass de la Luna, which crumbles in the sun and forms hard limy nodules. Hill slopes run 50 to 100%, with a few exceptions.",
+    "cite": [
+     "scanzo-disc:p4",
+     "scanzo-disc:p5"
+    ]
    },
    "altitude": {
     "text": "",
     "cite": []
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red, sometimes cherry-toned with garnet reflections. Delicate, intense, lasting aroma. Sweet, pleasant and harmonious, with a light almond aftertaste.",
+    "cite": [
+     "scanzo-disc:p3",
+     "scanzo-disc:p5"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Scanzo / Moscato di Scanzo",
+      "text": "Sweet red from dried Moscato di Scanzo grapes, aged at least two years, no wood."
+     }
+    ],
+    "cite": [
+     "scanzo-disc:p3"
+    ]
    },
    "producers": {
     "items": [],
@@ -183,39 +274,80 @@
   {
    "id": "sforzato-di-valtellina",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "South-facing, steep, dry-stone terraces of sandy granitic soil, sheltered by the Alps, with Nebbiolo grapes dried through the winter to concentrate their sugar.",
+    "cite": [
+     "sforzato-di-valtellina-disc:p4",
+     "sforzato-di-valtellina-disc:p5"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Nebbiolo (Chiavennasca)"
+     }
+    ],
+    "cite": [
+     "sforzato-di-valtellina-disc:p2"
+    ],
+    "others": [
+     "Other non-aromatic red grapes suited to Lombardy (up to 10%)"
+    ],
+    "othersCite": [
+     "sforzato-di-valtellina-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "A dry red made only from dried grapes, aged at least 20 months, at least 12 in wooden barrels.",
+    "cite": [
+     "sforzato-di-valtellina-disc:p1",
+     "sforzato-di-valtellina-disc:p2",
+     "sforzato-di-valtellina-disc:p3"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Alps shelter the valley, Lake Como moderates it; about 850 mm rain a year, over 1,900 sunshine hours, daytime air 5 to 35 °C in April to October, humidity 65 to 80%, day-night swings of 8 to 20 °C before harvest.",
+    "cite": [
+     "sforzato-di-valtellina-disc:p4",
+     "sforzato-di-valtellina-disc:p5"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly sandy (about 70%) and silty (about 18%), no limestone, broken-down granite; very permeable, shallow (40 to 120 cm), drought-prone.",
+    "cite": [
+     "sforzato-di-valtellina-disc:p5"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards run from 300 m up to 700 m on the south-facing slope; the zone limit is 700 m (600 m on the left bank).",
+    "cite": [
+     "sforzato-di-valtellina-disc:p2",
+     "sforzato-di-valtellina-disc:p4"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red with possible garnet glints. Intense, broad aroma with hints of ripe fruit. Very soft, dry, structured and full of character, with possible oak notes.",
+    "cite": [
+     "sforzato-di-valtellina-disc:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Sforzato / Sfursat",
+      "text": "Dried Nebbiolo grapes vinified from 1 December; at least 14% alcohol."
+     },
+     {
+      "name": "Appassimento",
+      "text": "Grapes dried indoors, losing about 30% of their water, reaching 26 to 27% sugar."
+     }
+    ],
+    "cite": [
+     "sforzato-di-valtellina-disc:p3",
+     "sforzato-di-valtellina-disc:p5"
+    ]
    },
    "producers": {
     "items": [],
@@ -225,39 +357,86 @@
   {
    "id": "valtellina-superiore",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "South-facing, dry-stone terraces of granite sand at 300 to 700 m, sheltered by the Alps, give Nebbiolo strong sun and big day-night swings.",
+    "cite": [
+     "valtellina-superiore-disc:p8"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Nebbiolo (Chiavennasca)"
+     }
+    ],
+    "cite": [
+     "valtellina-superiore-disc:p2"
+    ],
+    "others": [
+     "Other non-aromatic red grapes suited to Lombardy, up to 10%"
+    ],
+    "othersCite": [
+     "valtellina-superiore-disc:p2"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry red still wine, with five named subzones and a Riserva tier.",
+    "cite": [
+     "valtellina-superiore-disc:p1",
+     "valtellina-superiore-disc:p7",
+     "valtellina-superiore-disc:p9"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Vines are shielded by the Rhaetian Alps to north and east, and Lake Como tempers temperatures. Rainfall averages 850 mm a year. Sunshine tops 1,900 hours a year. April to October daytime air runs +5 to +35 °C, with day-night swings of 8 to 20 °C before harvest. Vineyard air is 4 to 5 °C warmer than the valley floor.",
+    "cite": [
+     "valtellina-superiore-disc:p8"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Mostly sandy (about 70%) and silty (about 18%), from broken-down granite, with no limestone. Very permeable, low in water retention and shallow, 40 to 120 cm workable depth.",
+    "cite": [
+     "valtellina-superiore-disc:p8"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vineyards sit on the south-facing Rhaetian slope from 300 m up to 700 m, except two alluvial fans. Slopes can exceed 70%.",
+    "cite": [
+     "valtellina-superiore-disc:p8"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Ruby red turning garnet, with a characteristic, persistent, delicate scent. Dry, slightly tannic, velvety and harmonious.",
+    "cite": [
+     "valtellina-superiore-disc:p7"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Riserva",
+      "text": "Aged at least three years."
+     },
+     {
+      "name": "Sassella",
+      "text": "Subzone name; wine only from that subzone's vineyards."
+     },
+     {
+      "name": "Grumello",
+      "text": "Subzone name; wine only from that subzone's vineyards."
+     },
+     {
+      "name": "Inferno",
+      "text": "Subzone name; wine only from that subzone's vineyards."
+     }
+    ],
+    "cite": [
+     "valtellina-superiore-disc:p1",
+     "valtellina-superiore-disc:p6",
+     "valtellina-superiore-disc:p7"
+    ]
    },
    "producers": {
     "items": [],

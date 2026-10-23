@@ -121,8 +121,8 @@ describe('France (pilot, decisions #52-#58)', () => {
   });
 });
 
-describe('Italy (pilot, decisions #59-#66)', () => {
-  // As France: the pilot's two guides, with their photos (five each, crops checked).
+describe('Italy (first wave, decisions #59-#66, #80)', () => {
+  // The 87 first-wave places; 34 have no usable Commons photo yet, so their tiles say "Photos soon".
   const dir = mkdtempSync(join(tmpdir(), 'guides-'));
   for (const f of readdirSync('content/guides')) copyFileSync(`content/guides/${f}`, join(dir, f));
   for (const id of ['barolo', 'chianti-classico']) writeFileSync(join(dir, `${id}.json`), JSON.stringify({ id, minutes: 2 }));
@@ -131,15 +131,17 @@ describe('Italy (pilot, decisions #59-#66)', () => {
     expect(COUNTRIES.italy).toMatchObject({ code: 'it', paths: true, imagery: 'esri' });
     expect(COUNTRY_PAGES.italy.intro).toBe('From the Alps to Sicily.');
   });
-  it('renders /it/ with two place tiles, their photos, and an honest Study note', () => {
-    expect(count(page, /<a class="ecard"/g)).toBe(2);
-    expect(count(page, /Photos soon/g)).toBe(0);
+  it('renders /it/ with a tile per place, their photos, and an honest Study note', () => {
+    const wave = JSON.parse(readFileSync('data/countries/it/places.json', 'utf8')).places;
+    expect(count(page, /<a class="ecard"/g)).toBe(wave.length);
+    const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos;
+    expect(count(page, /Photos soon/g)).toBe(wave.filter((p: any) => !photos[`${p.id}-1`]).length);
     expect(page).toContain('href="../it/barolo/"');
     expect(page).toContain('href="../it/chianti-classico/"');
     expect(page).toContain('Not yet for Italy.');
     expect(page).not.toContain('Open Study');
-    expect(count(page, /<p class="credit">Photos /g)).toBe(1);
     expect(page).toContain('<h2 id="r-it-piemonte">Piemonte</h2>');
+    expect(page).toContain('<h2 id="r-it-islands">Sicily and Sardinia</h2>');
     expect(page).toContain('<h2 id="r-it-tuscany">Tuscany</h2>');
   });
 });

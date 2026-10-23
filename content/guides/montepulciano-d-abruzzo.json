@@ -1,0 +1,151 @@
+{
+ "id": "montepulciano-d-abruzzo",
+ "title": "Why Montepulciano d'Abruzzo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Sunny, breezy hills sit between the Adriatic to the east and the Gran Sasso and Maiella massifs to the west, with big swings between day and night temperatures. With fairly loose, well-drained soils and a long tradition, they make red wines of great structure and body, with intense aromas.",
+  "cite": [
+   "montepulciano-d-abruzzo-disc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "A long strip of hills between sea and mountain",
+   "paras": [
+    "The zone covers the whole coastal and foothill belt of hills in Abruzzo. It is about 20-25 km wide and about 125 km long, from the river Tronto to the river Trigno.",
+    "In the middle the zone reaches inland. It takes in the Alto Tirino plateau to the north, the Valle Subequana to the north-west, the Valle Peligna to the south and the Valle Roveto to the south-west.",
+    "The area is more than a third of the whole region. Montepulciano was at first limited to the Valle Peligna, then spread towards the coast at the end of the 1800s."
+   ],
+   "cite": [
+    "montepulciano-d-abruzzo-disc:p6",
+    "montepulciano-d-abruzzo-disc:p7",
+    "montepulciano-d-abruzzo-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Valle Peligna",
+     "point": [
+      13.87,
+      42.1
+     ],
+     "zoom": 10,
+     "caption": "The inland valley the Montepulciano vine was at first limited to, before it spread to the coast.",
+     "cite": [
+      "montepulciano-d-abruzzo-disc:p7"
+     ]
+    },
+    {
+     "label": "Alto Tirino plateau",
+     "point": [
+      13.8,
+      42.25
+     ],
+     "zoom": 10,
+     "caption": "The plateau that the zone reaches in the north of its middle part.",
+     "cite": [
+      "montepulciano-d-abruzzo-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Summers that lean hot, Balkan cold in winter, a sea to the east",
+   "paras": [
+    "The climate is temperate. Average temperatures run from 12°C in April to 16°C in October, and July and August lean hot and dry, averaging 24-25°C.",
+    "More than 800 mm of rain falls in an average year. November and December are the wettest months, with over 80 mm a month. July is the driest, with about 30 mm.",
+    "The yearly temperature range is large. On one side it comes from cold Balkan air in winter. On the other it comes from the Adriatic and the summer high pressure over the Mediterranean.",
+    "The Winkler index, the average active temperature from April to October, is 1,800 to 2,200 degree-days. These conditions ensure the best ripening of Montepulciano and of any complementary grapes.",
+    "Day and night temperatures also differ a lot. The sea to the east and the nearby Gran Sasso and Maiella massifs to the west favour this."
+   ],
+   "cite": [
+    "montepulciano-d-abruzzo-disc:p7",
+    "montepulciano-d-abruzzo-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Gran Sasso",
+     "point": [
+      13.56,
+      42.47
+     ],
+     "zoom": 9.5,
+     "caption": "The Gran Sasso massif stands to the west of the vineyards, and with the Adriatic it favours big day-night swings.",
+     "cite": [
+      "montepulciano-d-abruzzo-disc:p9"
+     ]
+    },
+    {
+     "label": "Maiella",
+     "point": [
+      14.09,
+      42.09
+     ],
+     "zoom": 9.5,
+     "caption": "The Maiella massif, the second mountain neighbour to the west.",
+     "cite": [
+      "montepulciano-d-abruzzo-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sea-laid clay and sand, fairly loose and well drained",
+   "paras": [
+    "The hills are made of deposits that filled the Adriatic basin in a marine cycle between the end of the Tertiary and the start of the Quaternary. Lower down lie clays with sand. Towards the top, fine to medium silica sands lie over them, more or less clayey and yellowish from altered iron oxides. Bands of silt often run through them, as do gravel and clay.",
+    "Most of the soil is sandy-clay and generally loose. It is thicker or thinner depending on slope and exposure in the centre and south, and tends to be more clayey in the north.",
+    "The mountain basins have ancient river terraces with gentle slopes. Those soils are especially loose.",
+    "Water retention is generally medium to low, and nutrients and humus are scarce or modest.",
+    "Overall the soils are fairly loose and well drained.",
+    "Vines grow only on hills up to 600 m, or up to 700 m on land facing south. Damp valley floors and poorly exposed sites are left out."
+   ],
+   "cite": [
+    "montepulciano-d-abruzzo-disc:p3",
+    "montepulciano-d-abruzzo-disc:p6",
+    "montepulciano-d-abruzzo-disc:p7",
+    "montepulciano-d-abruzzo-disc:p9"
+   ]
+  },
+  {
+   "id": "vine",
+   "beat": "rules",
+   "title": "A native grape, one red wine",
+   "paras": [
+    "The wine must come from vineyards that are at least 85% Montepulciano. Other non-aromatic black grapes suited to Abruzzo can make up the rest, up to 15%. Only dry still red is made.",
+    "The grape has been here for centuries. The first written record of Montepulciano in Abruzzo is from 1792, and the DOC was recognised in 1968. Since the Second World War it has been the most planted red grape in the region.",
+    "The usual training form is the pergola abruzzese, the local pergola. Single and double trellises have been spreading for some years. Yields are capped at 15 tonnes per hectare.",
+    "Aged wines add hints of jam and of spice, such as pepper and tobacco. Liquorice shows too. A wine kept in wood may show a light hint of it.",
+    "The basic wine cannot be sold before 1 February after the harvest. It is made to drink within one to two years.",
+    "Nine named subzones exist. Their wines labelled Superiore or Riserva are made for medium to long ageing. Superiore needs at least 6 months of ageing. Riserva needs at least 24 months, 6 of them in wood. Casauria must be 100% Montepulciano. Colline Teramane became its own DOCG in 2003.",
+    "Ovid, born in Sulmona in 43 BC, wrote of his home land as fertile in grain and even more in grapes. The Greek historian Polybius praised the wines of the area too. He wrote that they healed Hannibal's wounded after Cannae in 216 BC."
+   ],
+   "cite": [
+    "montepulciano-d-abruzzo-disc:p2",
+    "montepulciano-d-abruzzo-disc:p5",
+    "montepulciano-d-abruzzo-disc:p7",
+    "montepulciano-d-abruzzo-disc:p8",
+    "montepulciano-d-abruzzo-disc:p9",
+    "montepulciano-d-abruzzo-disc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Sulmona",
+     "point": [
+      13.93,
+      42.05
+     ],
+     "zoom": 11,
+     "caption": "Ovid's birthplace in the Peligna countryside, a land he called fertile in grain and even more in grapes.",
+     "cite": [
+      "montepulciano-d-abruzzo-disc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

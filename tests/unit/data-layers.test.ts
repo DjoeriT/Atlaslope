@@ -109,12 +109,12 @@ describe('Portugal outlines', () => {
   });
 });
 
-describe('Italy outlines (pilot, decision #62)', () => {
+describe('Italy outlines (first wave, decisions #62, #79, #80)', () => {
   it('copies each shipped Italian place from countries/it/areas.geojson, flagging the ISTAT ones as approximate', () => {
     const areas = new Map(read('countries/it/areas.geojson').features.map((f: any) => [f.properties.id, f]));
     const added = new Map(read('added-boundaries.geojson').features.map((f: any) => [f.properties.id, f]));
     const places = read('places.json').places.filter((p: any) => p.parent === 'italy');
-    expect(places.map((p: any) => p.id)).toEqual(['barolo', 'chianti-classico']);
+    expect(places.map((p: any) => p.id).sort()).toEqual(read('countries/it/places.json').places.map((p: any) => p.id).sort());
     for (const p of places) {
       const src: any = areas.get(p.id), out: any = added.get(p.id);
       expect(out?.geometry, p.id).toEqual(src.geometry);
