@@ -1,0 +1,229 @@
+{
+ "region": "de-rheingau",
+ "sheets": [
+  {
+   "id": "rheingau",
+   "why": {
+    "text": "South-facing Rhine slopes, sheltered by the Taunus forests, with a dry-warm climate, loess and slate soils, and Riesling on about 80% of vines.",
+    "cite": [
+     "rheingau-spec:p1",
+     "rheingau-spec:p7",
+     "rheingau-spec:p8",
+     "rheingau-spec:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Weißer Riesling"
+     },
+     {
+      "local": "Blauer Spätburgunder"
+     }
+    ],
+    "cite": [
+     "rheingau-spec:p6"
+    ],
+    "others": [
+     "Albalonga",
+     "Arnsburger",
+     "Auxerrois",
+     "André",
+     "Bacchus",
+     "Bronner",
+     "Weißer Burgunder",
+     "Cantaro",
+     "Chardonnay",
+     "Chardonnay rosé",
+     "Ehrenbreitsteiner",
+     "Ehrenfelser",
+     "Roter Elbling",
+     "Weißer Elbling",
+     "Faberrebe",
+     "Findling",
+     "Freisamer",
+     "Fontanara",
+     "Roter Gutedel",
+     "Weißer Gutedel",
+     "Gutenborner",
+     "Weißer Heunisch",
+     "Helios",
+     "Hibernal",
+     "Hölder",
+     "Huxelrebe",
+     "Isray Oliver",
+     "Johanniter",
+     "Juwel",
+     "Kanzler",
+     "Kerner",
+     "Kernling",
+     "Früher Malingre",
+     "Früher roter Malvasier",
+     "Mariensteiner",
+     "Merzling",
+     "Morio-Muskat",
+     "Muskat-Ottonel",
+     "Gelber Muskateller",
+     "Goldriesling",
+     "Müller-Thurgau",
+     "Nobling",
+     "Optima",
+     "Ortega",
+     "Orion",
+     "Orleans",
+     "Osteiner",
+     "Phönix",
+     "Perle",
+     "Prinzipal",
+     "Prior",
+     "Weißer Räuschling",
+     "Roter Räuschling",
+     "Regner",
+     "Reichensteiner",
+     "Rieslaner",
+     "Roter Riesling",
+     "Roter Muskateller",
+     "Roter Traminer",
+     "Ruländer",
+     "Saphira",
+     "Sauvignon blanc",
+     "Sauvignon gris",
+     "Scheurebe",
+     "Schönburger",
+     "Septimer",
+     "Serena",
+     "Sibera",
+     "Siegerrebe",
+     "Silcher",
+     "Sirius",
+     "Solaris",
+     "Staufer",
+     "Blauer Silvaner",
+     "Grüner Silvaner",
+     "Grüner Veltliner",
+     "Würzer",
+     "Wildmuskat",
+     "Welschriesling",
+     "Villaris",
+     "Accent",
+     "Acolon",
+     "Allegro",
+     "Blauer Affenthaler",
+     "Blauburger",
+     "Blauer Elbling",
+     "Bolero",
+     "Cabernet carbon",
+     "Cabernet carol",
+     "Cabernet cortis",
+     "Cabernet cubin",
+     "Cabernet dorio",
+     "Cabernet dorsa",
+     "Cabernet franc",
+     "Cabernet mitos",
+     "Cabernet sauvignon",
+     "Dakapo",
+     "Deckrot",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Färbertraube",
+     "Blauer Frühburgunder",
+     "Blauer Gelbhölzer",
+     "Hegel",
+     "Helfensteiner",
+     "Heroldrebe",
+     "Blauer Limberger",
+     "Merlot",
+     "Müllerrebe",
+     "Muskat Trollinger",
+     "Neronet",
+     "Palas",
+     "Blauer Portugieser",
+     "Primitivo",
+     "Piroso",
+     "Reberger",
+     "Regent",
+     "Rondo",
+     "Rotberger",
+     "Saint Laurent",
+     "Sulmer",
+     "Syrah",
+     "Tauberschwarz",
+     "Blauer Trollinger",
+     "Blauer Zweigelt"
+    ],
+    "othersCite": [
+     "rheingau-spec:p6",
+     "rheingau-spec:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Mostly white wine, with some red and rosé, plus Sekt and Perlwein, and sweet Prädikat wines up to Trockenbeerenauslese.",
+    "cite": [
+     "rheingau-spec:p1",
+     "rheingau-spec:p4",
+     "rheingau-spec:p5"
+    ]
+   },
+   "climate": {
+    "text": "Very mild, with dry-warm summers and mild winters, in the rain shadow of the wooded Taunus. Mean annual temperature is 10.6 °C (15.4 °C in the growing season), rainfall 582 mm and sunshine about 1603 hours.",
+    "cite": [
+     "rheingau-spec:p7",
+     "rheingau-spec:p8"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Rhine and Main terraces under thick loess or loess loam; phyllite and slate near the Taunus, and quartzite and slate rubble in the lower Rheingau.",
+    "cite": [
+     "rheingau-spec:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale green to yellow, often peach, apricot or citrus. Reds: cherry or dark berries. Rosés: pale, red-berry aromas. Minerality varies by site and grape.",
+    "cite": [
+     "rheingau-spec:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Kabinett",
+      "text": "Prädikat wine, no enrichment; at least 9.8% natural alcohol for white grapes."
+     },
+     {
+      "name": "Auslese",
+      "text": "Prädikat wine, no enrichment; Riesling needs at least 13.0% natural alcohol (95° Oechsle)."
+     },
+     {
+      "name": "Trockenbeerenauslese",
+      "text": "Prädikat wine, no enrichment; at least 21.5% natural alcohol (150° Oechsle)."
+     },
+     {
+      "name": "Sekt b. A.",
+      "text": "Sparkling wine; bottle-fermented ones age at least 9 months on the yeast."
+     }
+    ],
+    "cite": [
+     "rheingau-spec:p4",
+     "rheingau-spec:p5",
+     "rheingau-spec:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

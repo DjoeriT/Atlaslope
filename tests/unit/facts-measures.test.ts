@@ -14,9 +14,13 @@ describe('comparison measures', () => {
     expect(countryMeasures('france')!.koppen[0].code).toBe('Cfb');
     expect(countryMeasures('france')!.altitude).toBeUndefined();
   });
+  it('has an Italy row with Köppen only, like France', () => {
+    expect(countryMeasures('italy')!.koppen[0].code).toBe('Csa');
+    expect(countryMeasures('italy')!.altitude).toBeUndefined();
+  });
   it('has a row for every study region', () => {
-    // Portugal and France included since 23 Oct 2026 (Tools/data/koppen_country.sh); Italy (pilot, #149) is not measured yet.
-    const regions = [...new Set(real.filter((p) => !p.region.startsWith('it-')).map((p) => p.region))];
+    // Portugal, France and Italy included since 23 Oct 2026 (Tools/data/koppen_country.sh); Germany (pilot, #149) is not measured yet.
+    const regions = [...new Set(real.filter((p) => !p.region.startsWith('de-')).map((p) => p.region))];
     expect(regions.length).toBeGreaterThan(0);
     for (const r of regions) expect(regionMeasuresOf(r)?.altitude.samples, r).toBeGreaterThan(0);
   });

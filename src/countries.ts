@@ -24,6 +24,8 @@ export const COUNTRIES: Record<string, CountryConfig> = {
   france: { id: 'france', code: 'fr', bounds: [[-5.2, 42.3], [8.3, 51.1]], imagery: 'ign-fr', paths: true },
   // The mainland, Sicily and Sardinia. Esri alone (decision #66).
   italy: { id: 'italy', code: 'it', bounds: [[6.6, 36.6], [18.6, 47.1]], imagery: 'esri', paths: true },
+  // Pilot (#149, decisions #71-#78): Mosel and Rheingau. Esri alone (#77); the state 1 m terrain is for the two places' slope only.
+  germany: { id: 'germany', code: 'de', bounds: [[5.9, 47.2], [15.1, 55.1]], imagery: 'esri', paths: true },
 };
 
 export const DEFAULT_COUNTRY = 'spain';

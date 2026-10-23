@@ -32,6 +32,10 @@ against <RAW>/build/koppen-france.geojson (Tools/data/koppen_country.sh france).
 "france". "country.france" is data/countries/fr/mask.json's "land" (the mainland and Corsica) and has Köppen only: its altitude would need
 about 660 Terrarium tiles that are not cached here, and fetching them waits for the owner's word (KOPPEN_ONLY).
 
+Italy (23 Oct 2026): the same for the places with region it-* (87 DOCGs and DOCs), from data/countries/it/areas.geojson against
+<RAW>/build/koppen-italy.geojson (Tools/data/koppen_country.sh italy). "regions.it-*" are the unions of the places whose parent is
+"italy". "country.italy" is data/countries/it/mask.json's "land" (the mainland, Sicily and Sardinia), Köppen only like France's.
+
 Usage: python3 Tools/data/measure_places.py [--offline]
 (--offline: no fetching; sample points on uncached tiles are dropped and counted. The France run of 23 Oct 2026 used it: three tiles
 were not cached and the owner had not okayed fetching, so regions fr-* lost 3 of about 2400 points.)
@@ -54,7 +58,7 @@ Z = 10
 TILE = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
 UA = "AtlaslopeDataBot/0.1 (https://github.com/DjoeriT/Atlaslope)"
 # Rows measured for Köppen only: France's land needs ~660 uncached Terrarium tiles; fetching them waits for the owner's word (23 Oct 2026).
-KOPPEN_ONLY = {"country:france"}
+KOPPEN_ONLY = {"country:france", "country:italy"}
 # --offline: read only cached tiles and drop the sample points on a tile that is not cached (counted per row on stderr).
 OFFLINE = "--offline" in sys.argv
 
@@ -90,6 +94,13 @@ def france_land():
     """mask.json's "land" polygons: the mainland and Corsica (Natural Earth, simplified to about 200 m), not the neighbours."""
     land = unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("countries/fr/mask.json")["land"]])
     assert -6 < land.bounds[0] and land.bounds[2] < 10 and 41 < land.bounds[1] and land.bounds[3] < 52, land.bounds
+    return land
+
+
+def italy_land():
+    """mask.json's "land" polygons: the mainland, Sicily and Sardinia, not the neighbours."""
+    land = unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("countries/it/mask.json")["land"]])
+    assert 6.5 < land.bounds[0] and land.bounds[2] < 18.6 and 36.5 < land.bounds[1] and land.bounds[3] < 47.1, land.bounds
     return land
 
 
@@ -202,11 +213,10 @@ def r10(v):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     every = load("places.json")["places"]
-    # Italy ("it-") is left out until it has its own Köppen file: as "es" it was measured against Spain's (23 Oct 2026).
     code_of = lambda p: p["region"][:2] if p["region"][:3] in ("pt-", "fr-", "it-") else "es"
     places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones") and code_of(p) == "es"]
     geoms = boundaries(places)
-    for code in ("pt", "fr"):
+    for code in ("pt", "fr", "it"):
         mine = [p for p in every if code_of(p) == code and p["boundary"] == "added"]
         geoms.update(area_boundaries(code, mine))
         places += mine
@@ -217,13 +227,14 @@ def main():
     for p in places:
         # Appellation level; zones have another place as parent. France's PGIs (kind IGP: Pays d'Oc, Côtes de Gascogne) cover whole
         # départements and would swamp their region's vineyards, so a region is its AOCs (23 Oct 2026).
-        if p["parent"] in ("spain", "portugal", "france") and p["id"] in geoms and p["kind"] != "IGP":
+        if p["parent"] in ("spain", "portugal", "france", "italy") and p["id"] in geoms and p["kind"] != "IGP":
             regions.setdefault(p["region"], []).append(geoms[p["id"]])
     targets = dict(geoms)
     targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
     targets["country:spain"] = spain_land()
     targets["country:portugal"] = portugal_land()
     targets["country:france"] = france_land()
+    targets["country:italy"] = italy_land()
     samples = {tid: points_in(g) for tid, g in targets.items() if tid not in KOPPEN_ONLY}
     need = {t for pts in samples.values() for lon, lat in pts for t in neighbours(*tile_xy(lon, lat))}
     print(f"{len(need)} tiles", file=sys.stderr)
@@ -232,10 +243,10 @@ def main():
     dropped = {}
     kop = lambda feats: [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in feats]
     koppen = {"es": kop(load("koppen-spain.geojson")["features"])}
-    for code, name in (("pt", "portugal"), ("fr", "france")):
+    for code, name in (("pt", "portugal"), ("fr", "france"), ("it", "italy")):
         koppen[code] = kop(json.loads((RAW / f"build/koppen-{name}.geojson").read_text())["features"])
     code_by_target = {p["id"]: code_of(p) for p in places} | {f"region:{r}": code_of({"region": r}) for r in regions}
-    code_by_target |= {"country:spain": "es", "country:portugal": "pt", "country:france": "fr"}
+    code_by_target |= {"country:spain": "es", "country:portugal": "pt", "country:france": "fr", "country:italy": "it"}
     rows = {}
     for tid, geom in targets.items():
         shares = {}
@@ -282,12 +293,12 @@ def main():
                     "the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's "
                     "steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
                     "1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land "
-                    "(spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france: Köppen only, over "
-                    "France's land (countries/fr/mask.json), its altitude not measured yet. Portuguese and French places use Köppen polygons made by "
+                    "(spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france and country.italy: Köppen only, over "
+                    "France's and Italy's land (countries/fr and countries/it mask.json), their altitude not measured yet. Portuguese, French and Italian places use Köppen polygons made by "
                     "Tools/data/koppen_country.sh. regions: the same measures over the union of a study region's appellation-level places (parent "
-                    "spain, portugal or france; zones excluded), for comparisons. See data/SOURCES.md.",
+                    "spain, portugal, france or italy; zones excluded), for comparisons. See data/SOURCES.md.",
         "places": out,
-        "country": {"spain": rows["country:spain"], "portugal": rows["country:portugal"], "france": rows["country:france"]},
+        "country": {"spain": rows["country:spain"], "portugal": rows["country:portugal"], "france": rows["country:france"], "italy": rows["country:italy"]},
         "regions": {r: rows[f"region:{r}"] for r in sorted(regions)},
     }
     (DATA / "place-measures.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")

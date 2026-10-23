@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 # Köppen-Geiger polygons for one country, made the same way as data/koppen-spain.geojson (Tools/data/remote_build.sh): Beck et al. 2023,
 # figshare article 21789074 (CC BY 4.0), 1991-2020, 1 km; polygonized, dissolved per class, simplified 0.006, 3 decimals, same legend.
-# Usage: bash Tools/data/koppen_country.sh portugal|france
+# Usage: bash Tools/data/koppen_country.sh portugal|france|italy
 # Raw output (not committed): $RAW/build/koppen-<country>.geojson, read by Tools/data/measure_places.py. Needs GDAL and python3.
 # Boxes: Portugal's mainland -9.6 36.9 -6.1 42.2 ("main") and Madeira -17.4 32.3 -16.2 33.2 ("madeira"); France's mainland with Corsica
-# -5.5 41.0 10.0 51.5 ("main", the box of data/countries/fr/mask.json). The boxes take in strips of the neighbours; harmless, the measures
+# -5.5 41.0 10.0 51.5 ("main", the box of data/countries/fr/mask.json); Italy's mainland with Sicily and Sardinia
+# 6.5 36.5 18.6 47.1 ("main", the box of data/countries/it/mask.json). The boxes take in strips of the neighbours; harmless, the measures
 # only intersect them with the country's own outlines.
 set -euo pipefail
 case "${1:-}" in
   portugal) BOXES=("main -9.6 36.9 -6.1 42.2" "madeira -17.4 32.3 -16.2 33.2") ;;
   france) BOXES=("main -5.5 41.0 10.0 51.5") ;;
-  *) echo "usage: $0 portugal|france" >&2; exit 2 ;;
+  italy) BOXES=("main 6.5 36.5 18.6 47.1") ;;
+  *) echo "usage: $0 portugal|france|italy" >&2; exit 2 ;;
 esac
 COUNTRY=$1
 RAW=$(python3 -I -c "import sys; sys.path.insert(0, 'Tools'); from rawdir import RAW; print(RAW)")

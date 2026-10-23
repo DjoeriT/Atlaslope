@@ -46,6 +46,17 @@
     "place",
     "zone"
    ]
+  },
+  {
+   "id": "germany",
+   "name": "Germany",
+   "level": "country",
+   "levels": [
+    "country",
+    "region",
+    "place",
+    "zone"
+   ]
   }
  ],
  "courses": [
@@ -255,6 +266,23 @@
      "id": "it-islands",
      "name": "Sicily and Sardinia",
      "order": 9
+    }
+   ]
+  },
+  {
+   "id": "wset-de",
+   "name": "WSET",
+   "country": "germany",
+   "groups": [
+    {
+     "id": "de-mosel",
+     "name": "Mosel",
+     "order": 1
+    },
+    {
+     "id": "de-rheingau",
+     "name": "Rheingau",
+     "order": 2
     }
    ]
   }
@@ -7157,6 +7185,41 @@
    "quizNote": "Study covers Spain for now; Italy joins when its WSET course is in Study.",
    "northSouth": 82,
    "courseOrder": 82
+  },
+  {
+   "id": "mosel",
+   "name": "Mosel",
+   "official": "Mosel",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-mosel",
+   "euFile": "PDO-DE-A1270",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    6.9622,
+    49.8907
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 1
+  },
+  {
+   "id": "rheingau",
+   "name": "Rheingau",
+   "official": "Rheingau",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-rheingau",
+   "euFile": "PDO-DE-A1273",
+   "layerCode": null,
+   "boundary": "to-fetch",
+   "centroid": null,
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 2
   }
  ]
 }

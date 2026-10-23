@@ -1,5 +1,5 @@
 // Places coloured by climate (owner card 17 Oct 2026, "climate, plus region"): the Köppen class with the largest share of each place
-// (data/place-measures.json, Beck et al. CC BY 4.0), in six plain-word groups. Places not measured yet are grey.
+// (data/place-measures.json, Beck et al. CC BY 4.0), in seven plain-word groups. Places not measured yet are grey.
 import { measuresOf } from '../facts';
 
 export interface ClimateGroup { id: string; label: string; note: string; codes: string[]; color: string }
@@ -13,6 +13,8 @@ export const CLIMATE_GROUPS: ClimateGroup[] = [
   { id: 'med-hot', label: 'Hot Mediterranean', note: 'dry, hot summers', codes: ['Csa'], color: '#D1761C' },
   { id: 'steppe', label: 'Cold semi-arid', note: 'dry, cold winters', codes: ['BSk'], color: '#B4A2DB' },
   { id: 'arid', label: 'Hot semi-arid and desert', note: 'dry and hot', codes: ['BSh', 'BWh'], color: '#9E2A1B' },
+  // Owner, 23 Oct 2026: Italy's Alpine places (Alto Adige, Trentino, Valtellina) were the first with a cold top class and showed grey.
+  { id: 'cold', label: 'Cold', note: 'snowy winters, cool summers', codes: ['Dfb', 'Dfc', 'ET'], color: '#9CC7DA' },
 ];
 export const NO_CLIMATE_COLOR = '#9A948A';
 /** "Other" in the guide's climate chart: several small classes together, so none of the group colours. */
