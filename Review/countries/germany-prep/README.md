@@ -33,3 +33,8 @@ It also holds Mittelrhein, Nahe and Pfalz (not Ahr or Rheinhessen). Ways to make
 | Close gaps 300 m, simplify 40 m | 276.5 | 83 | 54 KB |
 Recommended for the pilot [A]: 150 m (86 KB) as the place outline, marked "approximate" (as #62), with the Einzellagen as zones (#74)
 carrying the precise shapes per place. To decide in the pilot, with screenshots.
+
+## For the pilot (Portugal session note, 23 Oct 2026)
+- First-load limit 2.1 MB (#38, PR #234) with ~100 KB left: the 86 KB Mosel outline plus Rheingau and the Einzellagen zones do not fit.
+  Load German outlines and zones on demand (as `dist/guide-data/`), or free room first (fact sheets on demand, ~55 KB).
+- Raw files: add the German sources to `Tools/data/raw-manifest.json` (#229); no symlinks in the repo (CI check).
