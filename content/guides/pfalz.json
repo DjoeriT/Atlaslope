@@ -1,0 +1,122 @@
+{
+ "id": "pfalz",
+ "title": "Why Pfalz tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Pfalz sits in a tectonic rift, and a large share of its vines grow on loess. It traditionally makes whites, reds and rosés.",
+  "cite": [
+   "pfalz-spec:p2",
+   "pfalz-spec:p7",
+   "pfalz-spec:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rift",
+   "beat": "place",
+   "title": "A rift between forest and river",
+   "paras": [
+    "The vineyards lie in the Vorderpfalz, the front of the Palatinate. They run from the edge of the Pfälzerwald forest in the west, over the Haardt edge, down to a lowland that fills the centre and the east. The Rhine bounds them to the east and French Alsace to the south.",
+    "The Haardt edge and the lowland belong to the Upper Rhine rift, a tectonic trench running north-northeast to south-southwest. The Haardt edge is its actual fault zone, only a few kilometres wide.",
+    "Vines dominate the Haardt edge and the loess-covered ridges and plains, called Riedel and Platte. The vineyards average about 170 m above sea level."
+   ],
+   "cite": [
+    "pfalz-spec:p5",
+    "pfalz-spec:p7",
+    "pfalz-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Haardt edge",
+     "point": [
+      8.17,
+      49.41
+     ],
+     "zoom": 9.5,
+     "caption": "The Haardt edge, where the Pfälzerwald forest drops into the rift and vines dominate.",
+     "cite": [
+      "pfalz-spec:p5",
+      "pfalz-spec:p8"
+     ]
+    },
+    {
+     "label": "Zellertal",
+     "point": [
+      8.07,
+      49.62
+     ],
+     "zoom": 10,
+     "caption": "The Zellertal, a natural boundary of the region in the northwest.",
+     "cite": [
+      "pfalz-spec:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mild",
+   "beat": "weather",
+   "title": "Warmer toward the Rhine",
+   "paras": [
+    "The average temperature is about 10 °C over the year and 14.7 °C in the growing season. It generally rises from west, at the Haardt edge, to east, on the Rhine plain.",
+    "About 655 mm of rain falls in a year, and 60% of it (390 mm) in the growing season. The southwest is the wettest part and the far northeast the driest.",
+    "In the growing season the vines receive about 665,000 Wh/m² of direct sunshine."
+   ],
+   "cite": [
+    "pfalz-spec:p8"
+   ]
+  },
+  {
+   "id": "loess",
+   "beat": "ground",
+   "title": "Loess, and a few exotic rocks",
+   "paras": [
+    "A large share of the vines stand on loess or loess loam. Loess is the most important sediment for soil formation here.",
+    "Vines also grow on river loams, sands and gravels. Tertiary limestones and marls rank third by area.",
+    "Sandstones are rare. The limestones, marls and dolomites of the Muschelkalk, Keuper and Jurassic are almost exotic here. Volcanic rocks are single finds.",
+    "Slopes reach 60% in the west, at the edge of the Pfälzerwald and on the Haardt edge. The ridges and plains are mostly flat, under 10%. Across all the vineyards the average slope is about 4.5%, and the average exposure faces southeast (140°)."
+   ],
+   "cite": [
+    "pfalz-spec:p7",
+    "pfalz-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "Pfälzerwald edge at Annweiler",
+     "point": [
+      7.97,
+      49.2
+     ],
+     "zoom": 10,
+     "caption": "The western edge of the Pfälzerwald near Annweiler am Trifels. The steepest slopes, up to 60%, lie along this edge.",
+     "cite": [
+      "pfalz-spec:p5",
+      "pfalz-spec:p7",
+      "pfalz-spec:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "range",
+   "beat": "rules",
+   "title": "Many wines, ranked by ripeness",
+   "paras": [
+    "Pfalz traditionally makes white, red and rosé wine, and in small amounts Rotling, a blend of red and white grapes. Rosé, Weißherbst and Blanc de Noir are pressed light from red grapes. The yield is capped at 105 hl/ha.",
+    "Whites can show smoky and mineral notes, depending on grape and style. Oak adds vanilla and toast, and a reductive style adds flint and truffle. Reds lean on berries and red fruit. Rosés are made like whites, so they usually smell fruity and fresh. They show less alcohol and can taste sharper.",
+    "Prädikat wines cannot be enriched, so they show the differences in ripeness between vintages. They climb a ladder of six steps: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese and Eiswein. Kabinett needs at least 9.5% vol natural alcohol for Müller Thurgau, Weißer Riesling and Grüner Silvaner, and 10.0% for other grapes. Spätlese needs 11.4% vol for Riesling and 12.2% for others. Auslese usually has a marked sweetness, and Beerenauslese is always made sweet. Eiswein, from grapes frozen on the vine, needs at least 16.9% vol.",
+    "Light sparkling Perlwein and Qualitätsschaumwein are made from the region's wines too. Grapes for sparkling wine must, depending on site and season, be picked earlier to keep a crisp acid structure. Versions made by traditional bottle fermentation rest at least nine months on the bottle.",
+    "A single-vineyard or smaller place name needs at least 85% of one of seven grapes: Chardonnay, Roter Traminer, Ruländer, Weißer Burgunder, Weißer Riesling, Blauer Spätburgunder or Dornfelder. Beerenauslese, Trockenbeerenauslese and Eiswein may use any approved grape."
+   ],
+   "cite": [
+    "pfalz-spec:p1",
+    "pfalz-spec:p2",
+    "pfalz-spec:p3",
+    "pfalz-spec:p4",
+    "pfalz-spec:p7",
+    "pfalz-spec:p9",
+    "pfalz-spec:p10"
+   ]
+  }
+ ]
+}

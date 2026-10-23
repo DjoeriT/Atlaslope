@@ -283,6 +283,31 @@
      "id": "de-rheingau",
      "name": "Rheingau",
      "order": 2
+    },
+    {
+     "id": "de-ahr",
+     "name": "Ahr",
+     "order": 3
+    },
+    {
+     "id": "de-mittelrhein",
+     "name": "Mittelrhein",
+     "order": 4
+    },
+    {
+     "id": "de-nahe",
+     "name": "Nahe",
+     "order": 5
+    },
+    {
+     "id": "de-rheinhessen",
+     "name": "Rheinhessen",
+     "order": 6
+    },
+    {
+     "id": "de-pfalz",
+     "name": "Pfalz",
+     "order": 7
     }
    ]
   }
@@ -7215,11 +7240,109 @@
    "region": "de-rheingau",
    "euFile": "PDO-DE-A1273",
    "layerCode": null,
-   "boundary": "to-fetch",
-   "centroid": null,
+   "boundary": "de-areas",
+   "centroid": [
+    8.0211,
+    50.0152
+   ],
    "quiz": "none",
    "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
    "courseOrder": 2
+  },
+  {
+   "id": "ahr",
+   "name": "Ahr",
+   "official": "Ahr",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-ahr",
+   "euFile": "PDO-DE-A0867",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    7.0486,
+    50.5281
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 3
+  },
+  {
+   "id": "mittelrhein",
+   "name": "Mittelrhein",
+   "official": "Mittelrhein",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-mittelrhein",
+   "euFile": "PDO-DE-A1269",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    7.7474,
+    50.0584
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 4
+  },
+  {
+   "id": "nahe",
+   "name": "Nahe",
+   "official": "Nahe",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-nahe",
+   "euFile": "PDO-DE-A1271",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    7.8669,
+    49.9202
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 5
+  },
+  {
+   "id": "rheinhessen",
+   "name": "Rheinhessen",
+   "official": "Rheinhessen",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-rheinhessen",
+   "euFile": "PDO-DE-A1274",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    8.0412,
+    49.854
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 6
+  },
+  {
+   "id": "pfalz",
+   "name": "Pfalz",
+   "official": "Pfalz",
+   "kind": "g.U.",
+   "level": "place",
+   "parent": "germany",
+   "region": "de-pfalz",
+   "euFile": "PDO-DE-A1272",
+   "layerCode": null,
+   "boundary": "de-areas",
+   "centroid": [
+    8.1257,
+    49.2555
+   ],
+   "quiz": "none",
+   "quizNote": "Study covers Spain for now; Germany joins when its WSET course is in Study.",
+   "courseOrder": 7
   }
  ]
 }

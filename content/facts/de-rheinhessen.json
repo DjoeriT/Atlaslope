@@ -4,39 +4,317 @@
   {
    "id": "rheinhessen",
    "why": {
-    "text": "",
-    "cite": []
+    "text": "Limestone plateaus and marl slopes under loess, in a basin with about 550 mm of rain a year.",
+    "cite": [
+     "rheinhessen-spec:p6",
+     "rheinhessen-spec:p7"
+    ]
    },
    "grapes": {
-    "main": [],
-    "cite": [],
-    "others": [],
-    "othersCite": []
+    "main": [
+     {
+      "local": "Weißer Riesling"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Weißer Burgunder"
+     },
+     {
+      "local": "Ruländer"
+     },
+     {
+      "local": "Blauer Spätburgunder"
+     }
+    ],
+    "cite": [
+     "rheinhessen-spec:p9",
+     "rheinhessen-spec:p10"
+    ],
+    "others": [
+     "Adelfränkisch",
+     "Agostenga",
+     "Albalonga",
+     "Alvarinho",
+     "Arnsburger",
+     "Auxerrois",
+     "Bacchus",
+     "Blauer Silvaner",
+     "Blütenmuskateller",
+     "Bronner",
+     "Cabernet Blanc",
+     "Calardis Blanc",
+     "Chenin Blanc",
+     "Cumdeo Blanc",
+     "Dalkauer",
+     "Donauriesling",
+     "Donauveltliner",
+     "Ehrenbreitsteiner",
+     "Ehrenfelser",
+     "Faberrebe",
+     "Felicia",
+     "Findling",
+     "Freisamer",
+     "Früher Malingre",
+     "Früher Roter Malvasier",
+     "Furmint",
+     "Gelber Kleinberger",
+     "Gelber Muskateller",
+     "Gelber Orleans",
+     "Glera",
+     "Gm 324 58",
+     "Gm 6423-12",
+     "Gm 6427-5",
+     "Gm 789-10",
+     "Gm 7926-1",
+     "Gm 7941-11",
+     "Goldmuskateller",
+     "Goldriesling",
+     "Grüner Silvaner",
+     "Grüner Veltliner",
+     "Grünfränkisch",
+     "Helios",
+     "Hibernal",
+     "Hölder",
+     "Huxelrebe",
+     "Jakob Gerhardt blanc",
+     "Johanniter",
+     "Juwel",
+     "Kanzler",
+     "Kerner",
+     "Kernling",
+     "Manzoni bianco",
+     "Mariensteiner",
+     "Marsanne blanche",
+     "Merzling",
+     "Morio Muskat",
+     "Müller Thurgau",
+     "Muscabona",
+     "Muscaris",
+     "Muskat Ottonel",
+     "Nobling",
+     "Optima 113",
+     "Orangentraube",
+     "Orion",
+     "Ortega",
+     "Osteiner",
+     "Perle",
+     "Petit Manseng",
+     "Phoenix",
+     "Pollux",
+     "Prinzipal",
+     "Regner",
+     "Reichensteiner",
+     "Rheinfelder",
+     "Rieslaner",
+     "Rinot",
+     "Rosa Chardonnay",
+     "Roter Elbling",
+     "Roter Gutedel",
+     "Roter Müller Thurgau",
+     "Roter Muskateller",
+     "Roter Riesling",
+     "Roter Traminer",
+     "Roter Veltliner",
+     "Saphira",
+     "Sauvignac",
+     "Sauvignon Blanc",
+     "Sauvignon Cita",
+     "Sauvignon Gris",
+     "Sauvignon Gryn",
+     "Sauvignon Sary",
+     "Sauvitage",
+     "Savagnin Blanc",
+     "Scheurebe",
+     "Schönburger",
+     "Sémillon",
+     "Septimer",
+     "Siegerrebe",
+     "Silcher",
+     "Sirius",
+     "Solaris",
+     "Souvignier Gris",
+     "Staufer",
+     "Trebbiano di Soave",
+     "Villaris",
+     "VB 32-7",
+     "Viognier",
+     "Weißer Elbling",
+     "Weißer Gutedel",
+     "Weißer Räuschling",
+     "We S 503",
+     "Würzer",
+     "Accent",
+     "Acolon",
+     "Alegrillo negro",
+     "Allegro",
+     "Barbera",
+     "Baron",
+     "Bettlertraube",
+     "Blauburger",
+     "Blauer Frühburgunder",
+     "Blauer Gänsfüßer",
+     "Blauer Hängling",
+     "Blauer Limberger",
+     "Blauer Muskateller",
+     "Blauer Portugieser",
+     "Blauer Trollinger",
+     "Blauer Zweigelt",
+     "Bolero",
+     "Cabaret Noir",
+     "Cabernet Cantor",
+     "Cabernet Carbon",
+     "Cabernet Carol",
+     "Cabernet Cortis",
+     "Cabernet Cubin",
+     "Cabernet Dorio",
+     "Cabernet Dorsa",
+     "Cabernet Franc",
+     "Cabernet Jura",
+     "Cabernet Mitos",
+     "Cabernet Sauvignon",
+     "Cabertin",
+     "Calabrese",
+     "Calandro",
+     "Carménère",
+     "Chatus",
+     "Cumdeo Rouge",
+     "Dakapo",
+     "Deckrot",
+     "Divico",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Färbertraube",
+     "Gamay noir",
+     "Gm 6421-2",
+     "Gm 6421-15",
+     "Gm 674-1",
+     "Gm 7217-5",
+     "Grenache noir",
+     "Hartblau",
+     "Hegel",
+     "Helfensteiner",
+     "Heroldrebe",
+     "Kleiner Fränkischer Burgunder",
+     "Lagrein",
+     "Laurot",
+     "Levitage",
+     "Malbec",
+     "Merlot",
+     "Monarch",
+     "Müllerrebe",
+     "Muskat Trollinger",
+     "Nebbiolo",
+     "Neronet",
+     "Palas",
+     "Petit Verdot",
+     "Petite Syrah",
+     "Pinot Nova",
+     "Pinotage",
+     "Pinotin",
+     "Piroso",
+     "Primitivo",
+     "Prior",
+     "Reberger",
+     "Regent",
+     "Rondo",
+     "Rosenmuskateller",
+     "Rotberger",
+     "Rubinet",
+     "St. Laurent",
+     "Sangiovese",
+     "Satin Noir",
+     "Schwarzblauer Riesling",
+     "Schwarzer Heunisch",
+     "Schwarzer Urban",
+     "Süßschwarz",
+     "Syrah",
+     "Tannat",
+     "Tauberschwarz",
+     "Tempranillo",
+     "VB 91-26-5",
+     "We 70-281-37",
+     "Wildmuskat"
+    ],
+    "othersCite": [
+     "rheinhessen-spec:p6"
+    ]
    },
    "styles": {
-    "kinds": [],
-    "text": "",
-    "cite": []
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Mostly varietal whites, plus reds, rosés, Rotling, sparkling and lightly sparkling wines, and sweet Prädikat wines up to Eiswein.",
+    "cite": [
+     "rheinhessen-spec:p1",
+     "rheinhessen-spec:p2",
+     "rheinhessen-spec:p3",
+     "rheinhessen-spec:p4"
+    ]
    },
    "climate": {
-    "text": "",
-    "cite": []
+    "text": "Mean annual temperature is about 9.9 °C, 14.6 °C in the growing season. About 550 mm of rain falls a year, 65% of it (355 mm) in the growing season. Vines get roughly 650,000 Wh/m² of direct sun.",
+    "cite": [
+     "rheinhessen-spec:p7"
+    ]
    },
    "soil": {
-    "text": "",
-    "cite": []
+    "text": "Loess and loess loam are the main parent material. Plateaus are tertiary limestone, slopes and hills softer marl. Rotliegend rock surfaces only in the far southwest and at Nierstein, and Devonian quartzite and slate near Bingen.",
+    "cite": [
+     "rheinhessen-spec:p6",
+     "rheinhessen-spec:p7"
+    ]
    },
    "altitude": {
-    "text": "",
-    "cite": []
+    "text": "Vines grow at 175 m on average. Plateaus reach 250 to 300 m and lowlands 100 to 150 m. Steep sites are mainly around Nierstein and Bingen.",
+    "cite": [
+     "rheinhessen-spec:p6",
+     "rheinhessen-spec:p7"
+    ]
    },
    "tastes": {
-    "text": "",
-    "cite": []
+    "text": "Whites: mostly varietal, pale with green glints, yellow and tropical fruit, fresh. Riesling: pronounced acidity, minerality, elegant fruit. Reds: red fruit, soft acidity, restrained tannin. Rosés: medium body, red berries, lively acidity.",
+    "cite": [
+     "rheinhessen-spec:p2",
+     "rheinhessen-spec:p3"
+    ]
    },
    "famous": {
-    "styles": [],
-    "cite": []
+    "styles": [
+     {
+      "name": "Eiswein",
+      "text": "Prädikat wine from healthy grapes frozen at harvest; at least 120° Öchsle."
+     },
+     {
+      "name": "Trockenbeerenauslese",
+      "text": "Prädikat wine from raisined, botrytised grapes; at least 150° Öchsle, 21.5% vol."
+     },
+     {
+      "name": "Winzersekt",
+      "text": "Sparkling wine; bottle-fermented versions rest at least nine months on the bottle."
+     },
+     {
+      "name": "Rotling",
+      "text": "Pale red wine made by blending white and red grapes or mash."
+     }
+    ],
+    "cite": [
+     "rheinhessen-spec:p2",
+     "rheinhessen-spec:p3",
+     "rheinhessen-spec:p8"
+    ],
+    "styles[name=Winzersekt]": {
+     "text": "Sparkling wine; traditional bottle-fermented versions age at least nine months on the bottle."
+    },
+    "styles[name=Eiswein]": {
+     "text": "Prädikat wine from largely healthy grapes frozen at harvest; at least 120° Öchsle."
+    }
    },
    "producers": {
     "items": [],

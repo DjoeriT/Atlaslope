@@ -211,7 +211,7 @@
     ]
    },
    "tastes": {
-    "text": "Whites: fresh and fruity to rich and sweet, with sharp acidity and minerality. Reds: cherry and berry fruit, soft tannins, some oak spice. Rosé: fresh, lively acidity.",
+    "text": "Whites: fresh and fruity to rich and sweet, with sharp acidity and minerality. Reds: cherry and berry fruit, restrained tannins in medium ones, firmer in fuller ones, some oak spice. Rosé: fresh, lively acidity.",
     "cite": [
      "nahe-spec:p2",
      "nahe-spec:p3"
@@ -229,16 +229,18 @@
      },
      {
       "name": "Eiswein",
-      "text": "Made from grapes naturally frozen at harvest; at least 120° Öchsle."
+      "text": "Made from grapes naturally frozen at picking and pressing; at least 120° Öchsle."
      },
      {
       "name": "Sekt b. A.",
-      "text": "Bottle-fermented versions must mature at least nine months on the bottle."
+      "text": "Traditional bottle-fermented versions must mature at least nine months on the bottle."
      }
     ],
     "cite": [
+     "nahe-spec:p1",
      "nahe-spec:p2",
      "nahe-spec:p4",
+     "nahe-spec:p5",
      "nahe-spec:p6",
      "nahe-spec:p12"
     ]

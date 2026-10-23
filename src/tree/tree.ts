@@ -159,7 +159,7 @@ export function loadTree(raw: unknown, mainGrapes: Record<string, string[]> = {}
     })),
     ...places.map((p) => ({
       hit: { level: p.level, id: p.id, name: p.name },
-      names: [p.name, ...(p.official ?? '').split(' / ')].filter(Boolean).map(fold),
+      names: [...new Set([p.name, ...(p.official ?? '').split(' / ')].filter(Boolean).map(fold))],  // official often equals the name: no repeats
       grapes: mainGrapes[p.id],
       rank: 1,
       order: p.courseOrder ?? LAST,
