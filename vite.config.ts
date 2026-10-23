@@ -2,22 +2,26 @@ import { defineConfig } from 'vite';
 import { searchIndex } from './src/home/searchIndex';
 import { photoData } from './src/facts/photoData';
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { loadTree } from './src/tree';
 import { placeOfPath, placePage, placePaths } from './src/paths';
 import { fillGuideCount, fillStoryCount, guideRows, placeGuideCount, storyCount } from './src/home/guideCount';
 import { fillCountryPage, fillGuidesIndex, fillHome } from './src/home/countryPages';
 import { COUNTRIES, DEFAULT_COUNTRY, countryConfig } from './src/countries';
-import { boxesOf, splitOutlines } from './src/map/outlines';
+import { boxesOf, overviewOutlines, splitOutlines } from './src/map/outlines';
 
 // GitHub Pages serves the site under /Atlaslope/ (the repo name) until atlaslope.com is pointed at it. A relative base works at any subpath and in any case,
 // so dev, tests and the published site all use the same build.
 // Debug-only query flags (src/debug.ts) exist only in dev and in the UI-test build (`--mode uitest`); the production build compiles them out.
 let outDir = 'dist';
 // Each country's outlines, split from data/added-boundaries.geojson at build time (src/map/outlines.ts). The default country's file is
-// part of the first load; every other country's goes under dist/map-data/ and loads when the map first shows it (option A, decision #38).
-const outlineFile = (id: string) => `added-boundaries-${countryConfig(id).code}.geojson`;
+// part of the first load; every other country's goes under dist/map-data/ and loads when the map first shows it close in (option A, decision #38).
+const outlineFile = (id: string) => `added-boundaries-${id === 'overview' ? id : countryConfig(id).code}.geojson`;
 const lazyOutlines = new Set(Object.keys(COUNTRIES).filter((id) => id !== DEFAULT_COUNTRY).map(outlineFile));
 const outlines = () => splitOutlines(JSON.parse(readFileSync('data/added-boundaries.geojson', 'utf8')), JSON.parse(readFileSync('data/places.json', 'utf8')));
+// The view from above draws every other country from one light copy of its outlines (overviewOf), part of the first load, so they
+// show before the map comes close; the full file still loads from OUTLINES_MIN_ZOOM in (owner option C, 23 Oct 2026).
+const overview = () => overviewOutlines(outlines(), JSON.parse(readFileSync('data/places.json', 'utf8')));
 
 export default defineConfig(({ mode, command }) => ({
   base: './',
@@ -46,18 +50,18 @@ export default defineConfig(({ mode, command }) => ({
     resolveId: (id) => (id === 'virtual:outlines' ? '\0virtual:outlines' : undefined),
     load(id) {
       if (id !== '\0virtual:outlines') return undefined;
-      this.addWatchFile('data/added-boundaries.geojson');
-      this.addWatchFile('data/places.json');
+      this.addWatchFile(resolve('data/added-boundaries.geojson')); // absolute: in dev a relative path is read as an import
+      this.addWatchFile(resolve('data/places.json'));
       const parts = Object.entries(outlines());
       const url = (c: string, fc: object) => (command === 'serve' ? JSON.stringify(`/@outlines/${c}.geojson`)
         : `import.meta.ROLLUP_FILE_URL_${this.emitFile({ type: 'asset', name: outlineFile(c), source: JSON.stringify(fc) })}`);
       const files = parts.map(([c, fc]) => `${JSON.stringify(c)}: { url: ${url(c, fc)}, boxes: ${JSON.stringify(boxesOf(fc).map((b) => b.map((x) => Math.round(x * 100) / 100)))} }`);
-      return `export default { ${files.join(', ')} };`;
+      return `export default { ${files.join(', ')} };\nexport const overview = ${url('overview', overview())};`;
     },
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const m = /^\/@outlines\/([a-z]+)\.geojson$/.exec(req.url ?? '');
-        const fc = m ? outlines()[m[1]] : undefined;
+        const fc = m ? (m[1] === 'overview' ? overview() : outlines()[m[1]]) : undefined;
         if (!fc) return next();
         res.setHeader('Content-Type', 'application/geo+json');
         res.end(JSON.stringify(fc));

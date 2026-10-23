@@ -169,3 +169,4 @@ Drafted before a country report [A]; a desk report comes first and re-asks only 
 - **#90 Greek outlines**: the spec's municipality or community list plus ELSTAT limits, "approximate" in the credits (as #62). [O]
 - **#91 Greek names**: English spelling from the EU document; the Greek name also found by search. [O]
 - **#92 Greece map layers**: Esri imagery, Copernicus 30 m terrain, no geology in the pilot. [O]
+- **#95 Every country from above** (amends #38 option A, 23 Oct 2026, after the owner saw only Spain on the zoomed-out atlas): one light copy of every other country's outlines (`overviewOutlines`, src/map/outlines.ts: 0.02° simplified, pieces under 0.04° left out but each place's biggest kept, zones left out) is part of the first load, about 36 KB gzipped; the full file still loads from zoom 6 in or with a card. First load 2,081,370 bytes of 2,100,000 [V]. Chosen over B, every full file fetched in the background (about 1.1 MB gzipped). [O]
