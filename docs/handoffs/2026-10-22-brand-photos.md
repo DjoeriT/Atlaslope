@@ -124,3 +124,11 @@ plus one Sonnet builder (~150K) and ReviewBot (~100K). Pilot nothing: it is one 
 **Still open for the owner.**
 - Priorat c02, c11, c14, c16 and c17 may show DO Montsant vines. This does not block this slice (Rioja only).
 - The dark gallery direction is parked. It would reopen "NO dark mode" if it comes back.
+
+**Update from the Portugal session (23 Oct 2026) [R], for the build:**
+- First-load download limit is now 2.1 MB (`Tools/check.sh`, PR #234; decision #38). First load was 2,000,515 bytes, so only ~100 KB is left.
+  The three hero prints load with home, so they probably count [A]. Size them to fit (WebP, sized to the frame, ~30 KB each), or lazy-load them.
+  Check how the check treats `public/photos/` before choosing. Never raise the limit to make it pass.
+- Raw downloads live outside the repo in `~/Developer/Atlaslope-raw` (or `$ATLASLOPE_RAW`), merged in #229. Move the Commons originals there from
+  `mocks/brand-photos/originals/` and point `Tools/brand/commons_photos.py` at it. Nothing in the repo may be a symlink (CI check).
+- PR #234 adds Portugal photos to `src/home/photoCrops.json`: merge main before adding the three Rioja crops.
