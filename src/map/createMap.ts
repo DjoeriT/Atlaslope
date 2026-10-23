@@ -91,7 +91,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         'Portugal outlines: DGT, CAOP 2025',
         'France outlines: INAO, for information',
         'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits',
-        'Germany outlines: LWK Rheinland-Pfalz (dl-de/by-2-0), approximate, for information',
+        'Germany outlines: ©Landwirtschaftskammer RLP (2026), dl-de/by-2-0, weinlagen.lwk-rlp.de [Daten bearbeitet], approximate',
       ],
     },
     antialias: true,

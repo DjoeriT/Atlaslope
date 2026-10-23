@@ -104,16 +104,10 @@
     "Still wine comes in white and red, with rosé in between. Pale wines pressed from red grapes go by Rosé or Weißherbst, or Blanc de Noir when they are white in colour. Rotling is a light red wine.",
     "In the Saar, Ruwertal, Bernkastel and Burg Cochem areas, Weißer Riesling and Blauer Spätburgunder have grown since the Middle Ages. There Riesling covers about 62% of the planted area. On the steep slate slopes it gives highly aromatic wines typical of the place. In 2023, 87% of single-vineyard submissions to the official quality test in these areas were Riesling.",
     "Blauer Spätburgunder (Pinot Noir) gives finely aromatic reds that clearly show their terroir on the varied soils of Mosel, Saar and Ruwer. In 2023, 21% of its submissions named a single vineyard.",
-    "In these four areas a wine may carry a single-vineyard name only if at least 85% of it is Weißer Riesling or Blauer Spätburgunder. Such a wine may not be sold as Rosé, Weißherbst, Blanc de Noir or Rotling.",
     "In the Obermosel and the Moseltor, the Burgundy varieties do especially well on the lime-rich Muschelkalk, as in Burgundy or Champagne. The four are Chardonnay and Blauer Spätburgunder, with Ruländer (Pinot Gris) and Weißer Burgunder (Pinot Blanc). Chardonnay there has fine aromas with a limy mineral note and has proved resistant to drought. Together the four shape the area's image as the “Burgundermosel”, the Burgundy Mosel.",
-    "There a single-vineyard name needs at least 85% of these four varieties. Again, rosé and Rotling may not carry one.",
     "Riesling and the Burgundy varieties named here cover 76% of the Mosel's vineyard area. In 2023 they made up 99% of submissions to the official quality test that named a single vineyard or smaller unit.",
     "Whites are generally balanced between acid and sweetness, from delicate to full in body. Reds show red fruit, with mild to noticeable acidity.",
-    "Qualitätswein must reach a set minimum must weight and may be enriched. Prädikat wines may not be enriched, so they mostly reflect their vintage. They climb a six-step ladder: Kabinett, Spätlese, Auslese, Beerenauslese, Trockenbeerenauslese and Eiswein. The rung follows the must weight, measured in degrees Öchsle. It comes from sugar and from natural concentration by noble rot, freezing or drying on the vine.",
-    "Kabinett is low to moderate in alcohol, mostly fruity and fresh, with a minimum of 73° Öchsle (70° for Elbling). Spätlese needs 80° for Riesling and 85° for most other whites. Auslese comes from fully ripe or overripe grapes, sometimes with noble rot, at 88° for Riesling and 93° for most other whites. Spätlese and Auslese are usually made with clear residual sweetness.",
-    "Beerenauslese comes from overripe, dried or noble-rotten berries at 110° Öchsle and mostly tastes intensely sweet. Trockenbeerenauslese comes from berries concentrated further by noble rot, at 150° Öchsle, and is mostly very sweet. Eiswein is made from grapes naturally frozen when picked and pressed, at 110° Öchsle.",
-    "Sekt made by the traditional method gets its second fermentation in the bottle. It must then rest at least nine months on the bottle.",
-    "Yields are capped at 125 hl/ha."
+    "Prädikat wines may not be enriched, so they mostly reflect their vintage. Their six steps follow the sugar in the grapes, and Read the label gives each one."
    ],
    "cite": [
     "mosel-spec:p1",
@@ -143,5 +137,78 @@
     }
    ]
   }
- ]
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Einzellage name",
+    "text": "A single-vineyard name needs at least 85% Weißer Riesling or Blauer Spätburgunder in Saar, Ruwertal, Bernkastel and Burg Cochem, or 85% of the four Burgundy varieties in the Obermosel and Moseltor, and never goes on a rosé or Rotling.",
+    "cite": [
+     "mosel-spec:p11"
+    ]
+   },
+   {
+    "term": "Qualitätswein",
+    "text": "Wine that reaches a set minimum must weight and may be enriched.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Kabinett",
+    "text": "A Prädikat wine of at least 73° Öchsle (70° for Elbling), low to moderate in alcohol and mostly fruity and fresh.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Spätlese",
+    "text": "A Prädikat wine of at least 80° Öchsle for Riesling and 85° for most other whites, usually with clear residual sweetness.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Auslese",
+    "text": "A Prädikat wine from fully ripe or overripe grapes, sometimes with noble rot, at 88° Öchsle for Riesling and 93° for most other whites.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Beerenauslese",
+    "text": "A Prädikat wine from overripe, dried or noble-rotten berries at 110° Öchsle, mostly intensely sweet.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Trockenbeerenauslese",
+    "text": "A Prädikat wine from berries concentrated further by noble rot, at 150° Öchsle, mostly very sweet.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Eiswein",
+    "text": "A Prädikat wine from grapes naturally frozen when picked and pressed, at 110° Öchsle.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Sekt b. A.",
+    "text": "Traditional-method Sekt gets its second fermentation in the bottle and then rests at least nine months on it.",
+    "cite": [
+     "mosel-spec:p9"
+    ]
+   }
+  ],
+  "cite": [
+   "mosel-spec:p1",
+   "mosel-spec:p2",
+   "mosel-spec:p9",
+   "mosel-spec:p11"
+  ]
+ }
 }

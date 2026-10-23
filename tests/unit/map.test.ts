@@ -244,6 +244,6 @@ describe('outline credits', () => {
     expect(src).toContain("'Portugal outlines: DGT, CAOP 2025'");
     expect(src).toContain("'France outlines: INAO, for information'");
     expect(src).toContain("'Italy outlines: Regione Piemonte (CC BY 4.0); elsewhere approximate, from ISTAT municipal limits'");
-    expect(src).toContain("'Germany outlines: LWK Rheinland-Pfalz (dl-de/by-2-0), approximate, for information'");
+    expect(src).toContain("'Germany outlines: ©Landwirtschaftskammer RLP (2026), dl-de/by-2-0, weinlagen.lwk-rlp.de [Daten bearbeitet], approximate'");
   });
 });
