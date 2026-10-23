@@ -4,6 +4,7 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 
 - [2026-10-23-italy-climate](2026-10-23-italy-climate.md): Italy's climate, altitude and slope measured (87 places, 9 regions); seventh map group Cold for the Alps
 - [2026-10-22-learn-finish](2026-10-22-learn-finish.md): Study becomes Learn: start card, course filter, #learn, specs, crops checked; naming kept (#147, 22 Oct 2026)
+- [2026-10-23-germany-rest-go](2026-10-23-germany-rest-go.md): Germany rest brief: owner "finish Germany first, then Austria"; 11 Anbaugebiete in three waves plus parity, ~12-13M
 - [2026-10-23-germany-pilot-go](2026-10-23-germany-pilot-go.md): Germany pilot brief: gate open after #231, Mosel and Rheingau scope, outline route, budget ~7-10M
 - [2026-10-22-portugal-batch-1](2026-10-22-portugal-batch-1.md): 26 more Portuguese guides (all mainland DOCs, Lisboa, Madeira, Madeirense), country pages /es/ /pt/ and Guides as country index (option A), coverage rule per country; photos next (#149, 22 Oct 2026)
 - [2026-10-22-germany-prep](2026-10-22-germany-prep.md): Germany prep: 32 WSET terms, 19 PDOs (6 single vineyards), Mosel outline from LWK RLP, Rheingau outline open, licences
