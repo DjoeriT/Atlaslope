@@ -18,12 +18,13 @@ async function open(page: Page, hash = '#country=spain', seed?: unknown) {
   await expect(page.locator('.card h1')).toBeVisible();
 }
 
-test('the legend names the six climates, and the menu switches it to the study regions', async ({ page }) => {
+test('the legend names the seven climates, and the menu switches it to the study regions', async ({ page }) => {
   await open(page);
   const legend = page.getByRole('group', { name: 'Climate' });
   await expect(legend.locator('li')).toHaveText([
     'Oceanic rain all year, mild summers', 'Humid subtropical rain all year, hot summers', 'Mild Mediterranean dry, warm summers',
     'Hot Mediterranean dry, hot summers', 'Cold semi-arid dry, cold winters', 'Hot semi-arid and desert dry and hot',
+    'Cold snowy winters, cool summers',
   ]);
   await expect(legend.locator('li').first()).toHaveAttribute('title', 'Köppen Cfb');
 

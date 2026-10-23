@@ -17,15 +17,19 @@ describe('climate colours', () => {
   });
   it('has a group for every top class measured, so no place on the map is grey', () => {
     const codes = CLIMATE_GROUPS.flatMap((g) => g.codes);
-    // Spain, Portugal and France (measured 23 Oct 2026, Tools/data/koppen_country.sh): every outlined place, zones too.
-    // Italy (pilot, #149) is not measured yet.
-    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary) && !p.region.startsWith('it-'));
+    // Spain, Portugal, France and Italy (measured 23 Oct 2026, Tools/data/koppen_country.sh): every outlined place, zones too.
+    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary));
     expect(onMap.filter((p) => p.region.startsWith('fr-')).length).toBeGreaterThan(100);
+    expect(onMap.filter((p) => p.region.startsWith('it-')).length).toBe(87);
     for (const p of onMap) expect(codes, p.id).toContain(measures[p.id]?.koppen[0]?.code);
   });
-  it('uses six distinct colours, none of them the selection wine', () => {
+  it('colours the Alpine places Cold', () => {
+    expect(climateGroupOf('alto-adige')?.id).toBe('cold'); // Dfb 0.46
+    expect(climateGroupOf('valtellina-superiore')?.id).toBe('cold'); // Dfc 0.29
+  });
+  it('uses seven distinct colours, none of them the selection wine', () => {
     const colors = CLIMATE_GROUPS.map((g) => g.color);
-    expect(new Set(colors).size).toBe(6);
+    expect(new Set(colors).size).toBe(7);
     expect(colors).not.toContain('#8C2340');
   });
   it('switches the map to region colours from the menu', () => {
