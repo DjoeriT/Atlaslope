@@ -366,7 +366,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
       {(shownAltitude || measures) && (
         <div className="pg-fact">
           <h4 className="pg-h3">{t.altitude}</h4>
-          {measures && <AltitudeRange name={place.name} altitude={measures.altitude} compare={compare.map((c) => ({ label: c.label, altitude: c.m.altitude }))} />}
+          {measures && <AltitudeRange name={place.name} altitude={measures.altitude} compare={compare.flatMap((c) => (c.m.altitude ? [{ label: c.label, altitude: c.m.altitude }] : []))} />}
           {shownAltitude && <p>{writtenAltitude}</p>}
           {measures && <p>{altitudeText(measures.altitude)}</p>}
           {src([...(shownAltitude ? sheet!.altitude!.cite : []), ...(measures ? ['measures'] : [])])}

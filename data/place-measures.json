@@ -1,5 +1,5 @@
 {
- "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands). Portuguese places use Köppen polygons made by Tools/data/koppen_portugal.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain or portugal; zones excluded), for comparisons. See data/SOURCES.md.",
+ "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france: Köppen only, over France's land (countries/fr/mask.json), its altitude not measured yet. Portuguese and French places use Köppen polygons made by Tools/data/koppen_country.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain, portugal or france; zones excluded), for comparisons. See data/SOURCES.md.",
  "places": {
   "cava": {
    "altitude": {
@@ -2276,7 +2276,13 @@
     "medianDeg": 4.7,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "chablis-premier-cru": {
    "altitude": {
@@ -2289,7 +2295,13 @@
     "medianDeg": 6.9,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "chaume-de-talvat": {
    "altitude": {
@@ -2302,7 +2314,13 @@
     "medianDeg": 5.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cote-de-jouan": {
    "altitude": {
@@ -2315,7 +2333,13 @@
     "medianDeg": 9.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "fourchaume": {
    "altitude": {
@@ -2328,7 +2352,13 @@
     "medianDeg": 7.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "les-beauregards": {
    "altitude": {
@@ -2341,7 +2371,13 @@
     "medianDeg": 9.3,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "les-fourneaux": {
    "altitude": {
@@ -2354,7 +2390,13 @@
     "medianDeg": 10.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "mont-de-milieu": {
    "altitude": {
@@ -2367,7 +2409,13 @@
     "medianDeg": 7.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vaucoupin": {
    "altitude": {
@@ -2380,7 +2428,13 @@
     "medianDeg": 4.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vaugiraut": {
    "altitude": {
@@ -2393,7 +2447,13 @@
     "medianDeg": 4.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vaupulent": {
    "altitude": {
@@ -2406,7 +2466,13 @@
     "medianDeg": 9.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vosgros": {
    "altitude": {
@@ -2419,7 +2485,13 @@
     "medianDeg": 3.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "chablis-grand-cru": {
    "altitude": {
@@ -2432,7 +2504,13 @@
     "medianDeg": 7.4,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "blanchot": {
    "altitude": {
@@ -2445,7 +2523,13 @@
     "medianDeg": 13.1,
     "steepShare": 0.08
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "bougros": {
    "altitude": {
@@ -2458,7 +2542,13 @@
     "medianDeg": 4.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "grenouilles": {
    "altitude": {
@@ -2471,7 +2561,13 @@
     "medianDeg": 6.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "les-clos": {
    "altitude": {
@@ -2484,7 +2580,13 @@
     "medianDeg": 9.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "preuses": {
    "altitude": {
@@ -2497,7 +2599,13 @@
     "medianDeg": 5.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "valmur": {
    "altitude": {
@@ -2510,7 +2618,13 @@
     "medianDeg": 8.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vaudesir": {
    "altitude": {
@@ -2523,7 +2637,13 @@
     "medianDeg": 8.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "pauillac": {
    "altitude": {
@@ -2536,7 +2656,13 @@
     "medianDeg": 0.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "bordeaux": {
    "altitude": {
@@ -2549,7 +2675,18 @@
     "medianDeg": 1.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   },
   "bordeaux-superieur": {
    "altitude": {
@@ -2562,7 +2699,18 @@
     "medianDeg": 1.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   },
   "cotes-de-bordeaux": {
    "altitude": {
@@ -2575,7 +2723,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.99
+    }
+   ]
   },
   "entre-deux-mers": {
    "altitude": {
@@ -2588,7 +2742,18 @@
     "medianDeg": 2.1,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   },
   "medoc": {
    "altitude": {
@@ -2601,7 +2766,13 @@
     "medianDeg": 0.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "haut-medoc": {
    "altitude": {
@@ -2614,7 +2785,13 @@
     "medianDeg": 0.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saint-estephe": {
    "altitude": {
@@ -2627,7 +2804,13 @@
     "medianDeg": 0.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "margaux": {
    "altitude": {
@@ -2640,7 +2823,13 @@
     "medianDeg": 0.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saint-julien": {
    "altitude": {
@@ -2653,7 +2842,13 @@
     "medianDeg": 0.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "graves": {
    "altitude": {
@@ -2666,7 +2861,13 @@
     "medianDeg": 1.1,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.97
+    }
+   ]
   },
   "pessac-leognan": {
    "altitude": {
@@ -2679,7 +2880,13 @@
     "medianDeg": 1.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saint-emilion": {
    "altitude": {
@@ -2692,7 +2899,13 @@
     "medianDeg": 0.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saint-emilion-grand-cru": {
    "altitude": {
@@ -2705,7 +2918,13 @@
     "medianDeg": 0.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "pomerol": {
    "altitude": {
@@ -2718,7 +2937,13 @@
     "medianDeg": 0.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "sauternes": {
    "altitude": {
@@ -2731,7 +2956,18 @@
     "medianDeg": 0.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.64
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.36
+    }
+   ]
   },
   "barsac": {
    "altitude": {
@@ -2744,7 +2980,18 @@
     "medianDeg": 0.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.69
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.31
+    }
+   ]
   },
   "bourgogne": {
    "altitude": {
@@ -2757,7 +3004,13 @@
     "medianDeg": 5.4,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cote-de-nuits-villages": {
    "altitude": {
@@ -2770,7 +3023,13 @@
     "medianDeg": 3.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "gevrey-chambertin": {
    "altitude": {
@@ -2783,7 +3042,13 @@
     "medianDeg": 1.8,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vougeot": {
    "altitude": {
@@ -2796,7 +3061,13 @@
     "medianDeg": 1.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vosne-romanee": {
    "altitude": {
@@ -2809,7 +3080,13 @@
     "medianDeg": 2.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "nuits-saint-georges": {
    "altitude": {
@@ -2822,7 +3099,13 @@
     "medianDeg": 4.9,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cote-de-beaune-villages": {
    "altitude": {
@@ -2835,7 +3118,13 @@
     "medianDeg": 4.9,
     "steepShare": 0.08
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "aloxe-corton": {
    "altitude": {
@@ -2848,7 +3137,13 @@
     "medianDeg": 4.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "beaune": {
    "altitude": {
@@ -2861,7 +3156,13 @@
     "medianDeg": 4.9,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "pommard": {
    "altitude": {
@@ -2874,7 +3175,13 @@
     "medianDeg": 4.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "volnay": {
    "altitude": {
@@ -2887,7 +3194,13 @@
     "medianDeg": 4.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "meursault": {
    "altitude": {
@@ -2900,7 +3213,13 @@
     "medianDeg": 3.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "puligny-montrachet": {
    "altitude": {
@@ -2913,7 +3232,13 @@
     "medianDeg": 3.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "chassagne-montrachet": {
    "altitude": {
@@ -2926,7 +3251,13 @@
     "medianDeg": 2.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "rully": {
    "altitude": {
@@ -2939,7 +3270,13 @@
     "medianDeg": 4.6,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "mercurey": {
    "altitude": {
@@ -2952,7 +3289,13 @@
     "medianDeg": 4.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "givry": {
    "altitude": {
@@ -2965,7 +3308,13 @@
     "medianDeg": 4.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "montagny": {
    "altitude": {
@@ -2978,7 +3327,13 @@
     "medianDeg": 6.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "macon": {
    "altitude": {
@@ -2991,7 +3346,13 @@
     "medianDeg": 5.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "pouilly-fuisse": {
    "altitude": {
@@ -3004,7 +3365,13 @@
     "medianDeg": 7.2,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saint-veran": {
    "altitude": {
@@ -3017,7 +3384,13 @@
     "medianDeg": 4.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cremant-de-bourgogne": {
    "altitude": {
@@ -3030,7 +3403,13 @@
     "medianDeg": 5.2,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.98
+    }
+   ]
   },
   "muscadet": {
    "altitude": {
@@ -3043,7 +3422,13 @@
     "medianDeg": 1.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "muscadet-sevre-et-maine": {
    "altitude": {
@@ -3056,7 +3441,13 @@
     "medianDeg": 1.3,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "anjou": {
    "altitude": {
@@ -3069,7 +3460,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "coteaux-du-layon": {
    "altitude": {
@@ -3082,7 +3479,13 @@
     "medianDeg": 2.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "savennieres": {
    "altitude": {
@@ -3095,7 +3498,13 @@
     "medianDeg": 2.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saumur": {
    "altitude": {
@@ -3108,7 +3517,13 @@
     "medianDeg": 1.3,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "saumur-champigny": {
    "altitude": {
@@ -3121,7 +3536,13 @@
     "medianDeg": 1.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "vouvray": {
    "altitude": {
@@ -3134,7 +3555,13 @@
     "medianDeg": 1.8,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "touraine": {
    "altitude": {
@@ -3147,7 +3574,13 @@
     "medianDeg": 1.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "bourgueil": {
    "altitude": {
@@ -3160,7 +3593,13 @@
     "medianDeg": 1.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "chinon": {
    "altitude": {
@@ -3173,7 +3612,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "sancerre": {
    "altitude": {
@@ -3186,7 +3631,13 @@
     "medianDeg": 6.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "pouilly-fume": {
    "altitude": {
@@ -3199,7 +3650,13 @@
     "medianDeg": 2.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "menetou-salon": {
    "altitude": {
@@ -3212,7 +3669,13 @@
     "medianDeg": 3.9,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "rose-danjou": {
    "altitude": {
@@ -3225,7 +3688,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cabernet-danjou": {
    "altitude": {
@@ -3238,7 +3707,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "rose-de-loire": {
    "altitude": {
@@ -3251,7 +3726,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cremant-de-loire": {
    "altitude": {
@@ -3264,7 +3745,13 @@
     "medianDeg": 1.5,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cotes-du-rhone": {
    "altitude": {
@@ -3277,7 +3764,18 @@
     "medianDeg": 3.3,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.41
+    }
+   ]
   },
   "cotes-du-rhone-villages": {
    "altitude": {
@@ -3290,7 +3788,18 @@
     "medianDeg": 2.9,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.43
+    }
+   ]
   },
   "cote-rotie": {
    "altitude": {
@@ -3303,7 +3812,18 @@
     "medianDeg": 11.4,
     "steepShare": 0.22
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.5
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.5
+    }
+   ]
   },
   "condrieu": {
    "altitude": {
@@ -3316,7 +3836,18 @@
     "medianDeg": 13.2,
     "steepShare": 0.24
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.73
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.27
+    }
+   ]
   },
   "saint-joseph": {
    "altitude": {
@@ -3329,7 +3860,18 @@
     "medianDeg": 12.2,
     "steepShare": 0.34
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.75
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.25
+    }
+   ]
   },
   "hermitage": {
    "altitude": {
@@ -3342,7 +3884,13 @@
     "medianDeg": 7.6,
     "steepShare": 0.05
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "crozes-hermitage": {
    "altitude": {
@@ -3355,7 +3903,13 @@
     "medianDeg": 1.7,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.98
+    }
+   ]
   },
   "cornas": {
    "altitude": {
@@ -3368,7 +3922,18 @@
     "medianDeg": 9.7,
     "steepShare": 0.07
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.61
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.39
+    }
+   ]
   },
   "chateauneuf-du-pape": {
    "altitude": {
@@ -3381,7 +3946,13 @@
     "medianDeg": 2.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "gigondas": {
    "altitude": {
@@ -3394,7 +3965,13 @@
     "medianDeg": 6.1,
     "steepShare": 0.09
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "vacqueyras": {
    "altitude": {
@@ -3407,7 +3984,13 @@
     "medianDeg": 1.2,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "lirac": {
    "altitude": {
@@ -3420,7 +4003,13 @@
     "medianDeg": 3.0,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "tavel": {
    "altitude": {
@@ -3433,7 +4022,13 @@
     "medianDeg": 2.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "muscat-de-beaumes-de-venise": {
    "altitude": {
@@ -3446,7 +4041,13 @@
     "medianDeg": 5.2,
     "steepShare": 0.09
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "bergerac": {
    "altitude": {
@@ -3459,7 +4060,18 @@
     "medianDeg": 2.4,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.88
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.12
+    }
+   ]
   },
   "monbazillac": {
    "altitude": {
@@ -3472,7 +4084,18 @@
     "medianDeg": 3.1,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.8
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.2
+    }
+   ]
   },
   "cahors": {
    "altitude": {
@@ -3485,7 +4108,18 @@
     "medianDeg": 3.7,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.74
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.26
+    }
+   ]
   },
   "madiran": {
    "altitude": {
@@ -3498,7 +4132,13 @@
     "medianDeg": 4.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.98
+    }
+   ]
   },
   "jurancon": {
    "altitude": {
@@ -3511,7 +4151,13 @@
     "medianDeg": 6.2,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "beaujolais": {
    "altitude": {
@@ -3524,7 +4170,18 @@
     "medianDeg": 5.2,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   },
   "brouilly": {
    "altitude": {
@@ -3537,7 +4194,13 @@
     "medianDeg": 3.9,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.99
+    }
+   ]
   },
   "fleurie": {
    "altitude": {
@@ -3550,7 +4213,13 @@
     "medianDeg": 6.3,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "morgon": {
    "altitude": {
@@ -3563,7 +4232,13 @@
     "medianDeg": 3.3,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "moulin-a-vent": {
    "altitude": {
@@ -3576,7 +4251,13 @@
     "medianDeg": 3.3,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "alsace": {
    "altitude": {
@@ -3589,7 +4270,13 @@
     "medianDeg": 4.1,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "cremant-dalsace": {
    "altitude": {
@@ -3602,7 +4289,13 @@
     "medianDeg": 4.1,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "languedoc": {
    "altitude": {
@@ -3615,7 +4308,13 @@
     "medianDeg": 3.4,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.96
+    }
+   ]
   },
   "minervois": {
    "altitude": {
@@ -3628,7 +4327,18 @@
     "medianDeg": 3.1,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.94
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   },
   "fitou": {
    "altitude": {
@@ -3641,7 +4351,13 @@
     "medianDeg": 4.3,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "corbieres": {
    "altitude": {
@@ -3654,7 +4370,13 @@
     "medianDeg": 3.9,
     "steepShare": 0.02
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.99
+    }
+   ]
   },
   "picpoul-de-pinet": {
    "altitude": {
@@ -3667,7 +4389,13 @@
     "medianDeg": 1.7,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "cotes-du-roussillon": {
    "altitude": {
@@ -3680,7 +4408,13 @@
     "medianDeg": 3.0,
     "steepShare": 0.03
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.93
+    }
+   ]
   },
   "cotes-du-roussillon-villages": {
    "altitude": {
@@ -3693,7 +4427,13 @@
     "medianDeg": 3.8,
     "steepShare": 0.04
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.97
+    }
+   ]
   },
   "bandol": {
    "altitude": {
@@ -3706,7 +4446,13 @@
     "medianDeg": 4.9,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "cotes-de-provence": {
    "altitude": {
@@ -3719,7 +4465,13 @@
     "medianDeg": 3.2,
     "steepShare": 0.01
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
   },
   "champagne": {
    "altitude": {
@@ -3732,7 +4484,13 @@
     "medianDeg": 1.6,
     "steepShare": 0.0
    },
-   "koppen": []
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
   },
   "douro": {
    "altitude": {
@@ -4410,6 +5168,25 @@
      "share": 0.39
     }
    ]
+  },
+  "france": {
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.83
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.06
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
   }
  },
  "regions": {
@@ -4589,6 +5366,197 @@
      "code": "Csb",
      "name": "Temperate, dry summer, warm summer",
      "share": 0.05
+    }
+   ]
+  },
+  "fr-alsace": {
+   "altitude": {
+    "p10": 190,
+    "median": 230,
+    "p90": 330,
+    "samples": 243
+   },
+   "slope": {
+    "medianDeg": 4.1,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "fr-beaujolais": {
+   "altitude": {
+    "p10": 220,
+    "median": 320,
+    "p90": 470,
+    "samples": 516
+   },
+   "slope": {
+    "medianDeg": 5.1,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "fr-bordeaux": {
+   "altitude": {
+    "p10": 10,
+    "median": 50,
+    "p90": 90,
+    "samples": 2951
+   },
+   "slope": {
+    "medianDeg": 1.4,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "fr-burgundy": {
+   "altitude": {
+    "p10": 210,
+    "median": 280,
+    "p90": 420,
+    "samples": 1290
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "fr-champagne": {
+   "altitude": {
+    "p10": 80,
+    "median": 140,
+    "p90": 240,
+    "samples": 6008
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "fr-loire": {
+   "altitude": {
+    "p10": 40,
+    "median": 80,
+    "p90": 120,
+    "samples": 1405
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "fr-rhone": {
+   "altitude": {
+    "p10": 60,
+    "median": 150,
+    "p90": 330,
+    "samples": 1465
+   },
+   "slope": {
+    "medianDeg": 3.3,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.41
+    }
+   ]
+  },
+  "fr-south": {
+   "altitude": {
+    "p10": 40,
+    "median": 130,
+    "p90": 290,
+    "samples": 4382
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.97
+    }
+   ]
+  },
+  "fr-south-west": {
+   "altitude": {
+    "p10": 70,
+    "median": 140,
+    "p90": 280,
+    "samples": 1010
+   },
+   "slope": {
+    "medianDeg": 3.2,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.86
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.14
     }
    ]
   },
