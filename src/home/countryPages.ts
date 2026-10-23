@@ -54,7 +54,7 @@ export const COUNTRY_PAGES: Record<string, CountryPage> = {
   // Pilot (#149): Mosel and Rheingau, no photos yet (they land with the guides). Draft intro, owner rewrites.
   germany: {
     intro: 'From the Mosel to the Rheingau.',
-    cardPhotos: [],
+    cardPhotos: ['mosel-1', 'rheingau-1', 'mosel-3', 'rheingau-2', 'mosel-4'],
     blocks: [],
     study: { note: 'Not yet for Germany.', link: false },
   },
