@@ -102,8 +102,8 @@
    "paras": [
     "The Mosel name covers still wine and two kinds with bubbles. Sekt is fully sparkling, and Winzersekt and Crémant are kinds of it. Perlwein is lightly sparkling. None of them is fortified.",
     "Still wine comes in white and red, with rosé in between. Pale wines pressed from red grapes go by Rosé or Weißherbst, or Blanc de Noir when they are white in colour. Rotling is a light red wine.",
-    "In the Saar, Ruwertal, Bernkastel and Burg Cochem areas, Weißer Riesling and Blauer Spätburgunder have grown since the Middle Ages. There Riesling covers about 62% of the planted area. On the steep slate slopes it gives highly aromatic wines typical of the place. In 2023, 87% of single-vineyard submissions to the official quality test in these areas were Riesling.",
-    "Blauer Spätburgunder (Pinot Noir) gives finely aromatic reds that clearly show their terroir on the varied soils of Mosel, Saar and Ruwer. In 2023, 21% of its submissions named a single vineyard.",
+    "In the four areas from the Saar down to Burg Cochem, Weißer Riesling and Blauer Spätburgunder have grown since the Middle Ages. There Riesling covers about 62% of the planted area. On the steep slate slopes it gives highly aromatic wines typical of the place. In 2023, 87% of single-vineyard submissions to the official quality test in these areas were Riesling.",
+    "Blauer Spätburgunder (Pinot Noir) gives finely aromatic reds that clearly show their terroir on the varied soils along the three rivers. In 2023, 21% of its submissions named a single vineyard.",
     "In the Obermosel and the Moseltor, the Burgundy varieties do especially well on the lime-rich Muschelkalk, as in Burgundy or Champagne. The four are Chardonnay and Blauer Spätburgunder, with Ruländer (Pinot Gris) and Weißer Burgunder (Pinot Blanc). Chardonnay there has fine aromas with a limy mineral note and has proved resistant to drought. Together the four shape the area's image as the “Burgundermosel”, the Burgundy Mosel.",
     "Riesling and the Burgundy varieties named here cover 76% of the Mosel's vineyard area. In 2023 they made up 99% of submissions to the official quality test that named a single vineyard or smaller unit.",
     "Whites are generally balanced between acid and sweetness, from delicate to full in body. Reds show red fruit, with mild to noticeable acidity.",
@@ -142,7 +142,7 @@
   "terms": [
    {
     "term": "Einzellage name",
-    "text": "A single-vineyard name needs at least 85% Weißer Riesling or Blauer Spätburgunder in Saar, Ruwertal, Bernkastel and Burg Cochem, or 85% of the four Burgundy varieties in the Obermosel and Moseltor, and never goes on a rosé or Rotling.",
+    "text": "A single-vineyard name needs at least 85% Weißer Riesling or Blauer Spätburgunder in the four areas from the Saar down to Burg Cochem, or 85% of the four Burgundy varieties in the Obermosel and Moseltor, and never goes on a rosé or Rotling.",
     "cite": [
      "mosel-spec:p11"
     ]
