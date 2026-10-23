@@ -7,7 +7,7 @@
 - 22 Oct: re-download the raw files once #223 merged (done, see below).
 
 ## Done
-- Photos (PR on `claude/pt-photos-2`): 78 photos for 26 places. Commons pass 2 (`PT_CATS` category searches, `photo_candidates.py pt`)
+- Photos (PR on `claude/pt-photos-2`): 76 photos for 24 places. Commons pass 2 (`PT_CATS` category searches, `photo_candidates.py pt`)
   and Openverse (`Tools/data/openverse_candidates.py`, sheets `ov-<place>.jpg`). Porto uses Douro's photos (Porto is Douro's land).
   Picks by three helper rounds, weak picks cut by LeadBot (flower field, scrub, near-duplicate facades). Square crops checked by eye
   (Távora-Varosa moved to 95% to leave a hiker out; Lagoa trimmed 45 px for a watermark). A CC BY Setúbal file without an author was

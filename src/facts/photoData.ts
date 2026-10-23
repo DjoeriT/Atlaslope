@@ -1,3 +1,4 @@
+// A photo key built at run time (a template string) is not seen here and drops out; name keys as quoted literals.
 // What of data/photos.json and data/photo-sizes.json the app can show, for the virtual module `virtual:photo-data` (vite.config.ts).
 // photosOf shows a place's first three photos; photoByKey shows a photo a map tour or the atlas cover names. The rest of a place's
 // photos are for the Home, Guides and country pages, which are written at build time from the full files, and the Commons file title
