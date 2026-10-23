@@ -162,6 +162,7 @@ Drafted before a country report [A]; a desk report comes first and re-asks only 
 - **#84 Rieden**: zones inside their place where an official layer exists (as #74); no guide each. [O]
 - **#85 Austrian private tiers**: Vinea Wachau (Steinfeder, Federspiel, Smaragd) and ÖTW named in guide text only. [O]
 - **#86 Austria map layers**: Esri imagery, the national 10 m terrain [A], no geology in the pilot. [O]
+- **#94 Austria pilot pair** (amends #83, 23 Oct 2026, after the desk report `Review/countries/austria.md`): Wachau and Neusiedlersee, pages at `/at/<place>/`. Südsteiermark has no Rieden layer and is not on the WSET L3 list; Neusiedlersee has the Burgenland Rieden layer [R] and is a WSET region. [O]
 - **#87 Greece timing**: right after Austria. [O]
 - **#88 Greece scope**: the WSET L3 names first (about 4-6 [A]); the other PDOs (about 33 in all [A]) a second wave, each on the owner's word. [O]
 - **#89 Greece pilot**: Santorini and Naoussa, pages at `/gr/<place>/` (#48). [O]
