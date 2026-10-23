@@ -1,5 +1,5 @@
 {
- "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france: Köppen only, over France's land (countries/fr/mask.json), its altitude not measured yet. Portuguese and French places use Köppen polygons made by Tools/data/koppen_country.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain, portugal or france; zones excluded), for comparisons. See data/SOURCES.md.",
+ "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, 1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land (spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france and country.italy: Köppen only, over France's and Italy's land (countries/fr and countries/it mask.json), their altitude not measured yet. Portuguese, French and Italian places use Köppen polygons made by Tools/data/koppen_country.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain, portugal, france or italy; zones excluded), for comparisons. See data/SOURCES.md.",
  "places": {
   "cava": {
    "altitude": {
@@ -4530,6 +4530,2054 @@
     }
    ]
   },
+  "barolo": {
+   "altitude": {
+    "p10": 230,
+    "median": 310,
+    "p90": 430,
+    "samples": 72
+   },
+   "slope": {
+    "medianDeg": 6.8,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "barbaresco": {
+   "altitude": {
+    "p10": 180,
+    "median": 240,
+    "p90": 330,
+    "samples": 40
+   },
+   "slope": {
+    "medianDeg": 8.1,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "barbera-d-asti": {
+   "altitude": {
+    "p10": 140,
+    "median": 200,
+    "p90": 320,
+    "samples": 2112
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.82
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.17
+    }
+   ]
+  },
+  "dolcetto-d-alba": {
+   "altitude": {
+    "p10": 190,
+    "median": 340,
+    "p90": 550,
+    "samples": 419
+   },
+   "slope": {
+    "medianDeg": 8.9,
+    "steepShare": 0.11
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.81
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.12
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
+  "gavi": {
+   "altitude": {
+    "p10": 220,
+    "median": 300,
+    "p90": 780,
+    "samples": 172
+   },
+   "slope": {
+    "medianDeg": 7.5,
+    "steepShare": 0.16
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.71
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.24
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "asti": {
+   "altitude": {
+    "p10": 150,
+    "median": 250,
+    "p90": 440,
+    "samples": 706
+   },
+   "slope": {
+    "medianDeg": 7.6,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.5
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.49
+    }
+   ]
+  },
+  "alta-langa": {
+   "altitude": {
+    "p10": 180,
+    "median": 370,
+    "p90": 630,
+    "samples": 2200
+   },
+   "slope": {
+    "medianDeg": 8.8,
+    "steepShare": 0.11
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.6
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.22
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.1
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
+  "barbera-del-monferrato-superiore": {
+   "altitude": {
+    "p10": 130,
+    "median": 210,
+    "p90": 390,
+    "samples": 3012
+   },
+   "slope": {
+    "medianDeg": 5.4,
+    "steepShare": 0.04
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.61
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.36
+    }
+   ]
+  },
+  "brachetto-dacqui": {
+   "altitude": {
+    "p10": 150,
+    "median": 240,
+    "p90": 390,
+    "samples": 334
+   },
+   "slope": {
+    "medianDeg": 7.1,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.78
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.22
+    }
+   ]
+  },
+  "canelli": {
+   "altitude": {
+    "p10": 180,
+    "median": 280,
+    "p90": 450,
+    "samples": 183
+   },
+   "slope": {
+    "medianDeg": 9.8,
+    "steepShare": 0.11
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.61
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.39
+    }
+   ]
+  },
+  "dogliani": {
+   "altitude": {
+    "p10": 280,
+    "median": 410,
+    "p90": 580,
+    "samples": 243
+   },
+   "slope": {
+    "medianDeg": 7.2,
+    "steepShare": 0.09
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.6
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.31
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "dolcetto-di-diano-dalba": {
+   "altitude": {
+    "p10": 220,
+    "median": 310,
+    "p90": 430,
+    "samples": 193
+   },
+   "slope": {
+    "medianDeg": 10.2,
+    "steepShare": 0.09
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "dolcetto-di-ovada-superiore": {
+   "altitude": {
+    "p10": 180,
+    "median": 290,
+    "p90": 700,
+    "samples": 387
+   },
+   "slope": {
+    "medianDeg": 8.3,
+    "steepShare": 0.16
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.81
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.11
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "erbaluce-di-caluso": {
+   "altitude": {
+    "p10": 220,
+    "median": 250,
+    "p90": 360,
+    "samples": 416
+   },
+   "slope": {
+    "medianDeg": 1.2,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.99
+    }
+   ]
+  },
+  "gattinara": {
+   "altitude": {
+    "p10": 250,
+    "median": 260,
+    "p90": 360,
+    "samples": 35
+   },
+   "slope": {
+    "medianDeg": 1.0,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.99
+    }
+   ]
+  },
+  "ghemme": {
+   "altitude": {
+    "p10": 250,
+    "median": 280,
+    "p90": 310,
+    "samples": 145
+   },
+   "slope": {
+    "medianDeg": 2.9,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "nizza": {
+   "altitude": {
+    "p10": 140,
+    "median": 190,
+    "p90": 280,
+    "samples": 213
+   },
+   "slope": {
+    "medianDeg": 5.4,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.61
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.39
+    }
+   ]
+  },
+  "roero": {
+   "altitude": {
+    "p10": 200,
+    "median": 270,
+    "p90": 330,
+    "samples": 141
+   },
+   "slope": {
+    "medianDeg": 6.3,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "ruche-di-castagnole-monferrato": {
+   "altitude": {
+    "p10": 150,
+    "median": 190,
+    "p90": 220,
+    "samples": 82
+   },
+   "slope": {
+    "medianDeg": 4.9,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "terre-alfieri": {
+   "altitude": {
+    "p10": 140,
+    "median": 200,
+    "p90": 270,
+    "samples": 125
+   },
+   "slope": {
+    "medianDeg": 3.8,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "franciacorta": {
+   "altitude": {
+    "p10": 130,
+    "median": 180,
+    "p90": 350,
+    "samples": 357
+   },
+   "slope": {
+    "medianDeg": 1.0,
+    "steepShare": 0.13
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.95
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "oltrepo-pavese-metodo-classico": {
+   "altitude": {
+    "p10": 80,
+    "median": 250,
+    "p90": 470,
+    "samples": 513
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.04
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.74
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.24
+    }
+   ]
+  },
+  "scanzo": {
+   "altitude": {
+    "p10": 270,
+    "median": 320,
+    "p90": 440,
+    "samples": 233
+   },
+   "slope": {
+    "medianDeg": 5.6,
+    "steepShare": 0.09
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.92
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "sforzato-di-valtellina": {
+   "altitude": {
+    "p10": 440,
+    "median": 1520,
+    "p90": 2330,
+    "samples": 249
+   },
+   "slope": {
+    "medianDeg": 28.3,
+    "steepShare": 0.83
+   },
+   "koppen": [
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.33
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.3
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.17
+    },
+    {
+     "code": "ET",
+     "name": "Polar, tundra",
+     "share": 0.15
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "valtellina-superiore": {
+   "altitude": {
+    "p10": 410,
+    "median": 1500,
+    "p90": 2450,
+    "samples": 536
+   },
+   "slope": {
+    "medianDeg": 27.9,
+    "steepShare": 0.78
+   },
+   "koppen": [
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.29
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.28
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.18
+    },
+    {
+     "code": "ET",
+     "name": "Polar, tundra",
+     "share": 0.18
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "alto-adige": {
+   "altitude": {
+    "p10": 340,
+    "median": 1220,
+    "p90": 2160,
+    "samples": 2034
+   },
+   "slope": {
+    "medianDeg": 20.5,
+    "steepShare": 0.61
+   },
+   "koppen": [
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.46
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.24
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.12
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.11
+    },
+    {
+     "code": "ET",
+     "name": "Polar, tundra",
+     "share": 0.07
+    }
+   ]
+  },
+  "trentino": {
+   "altitude": {
+    "p10": 300,
+    "median": 990,
+    "p90": 1900,
+    "samples": 2573
+   },
+   "slope": {
+    "medianDeg": 23.0,
+    "steepShare": 0.66
+   },
+   "koppen": [
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.42
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.2
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.19
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.15
+    }
+   ]
+  },
+  "collio": {
+   "altitude": {
+    "p10": 40,
+    "median": 60,
+    "p90": 140,
+    "samples": 128
+   },
+   "slope": {
+    "medianDeg": 1.4,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "friuli-colli-orientali": {
+   "altitude": {
+    "p10": 80,
+    "median": 160,
+    "p90": 600,
+    "samples": 546
+   },
+   "slope": {
+    "medianDeg": 2.2,
+    "steepShare": 0.17
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.8
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.15
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "friuli-grave": {
+   "altitude": {
+    "p10": 20,
+    "median": 100,
+    "p90": 310,
+    "samples": 2866
+   },
+   "slope": {
+    "medianDeg": 0.6,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.91
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "colli-orientali-del-friuli-picolit": {
+   "altitude": {
+    "p10": 80,
+    "median": 160,
+    "p90": 600,
+    "samples": 546
+   },
+   "slope": {
+    "medianDeg": 2.2,
+    "steepShare": 0.17
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.8
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.15
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "ramandolo": {
+   "altitude": {
+    "p10": 210,
+    "median": 360,
+    "p90": 690,
+    "samples": 68
+   },
+   "slope": {
+    "medianDeg": 10.9,
+    "steepShare": 0.35
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.54
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.39
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
+  "rosazzo": {
+   "altitude": {
+    "p10": 50,
+    "median": 60,
+    "p90": 110,
+    "samples": 68
+   },
+   "slope": {
+    "medianDeg": 0.8,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "valpolicella": {
+   "altitude": {
+    "p10": 50,
+    "median": 180,
+    "p90": 620,
+    "samples": 648
+   },
+   "slope": {
+    "medianDeg": 5.9,
+    "steepShare": 0.16
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.82
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.18
+    }
+   ]
+  },
+  "soave": {
+   "altitude": {
+    "p10": 30,
+    "median": 90,
+    "p90": 370,
+    "samples": 279
+   },
+   "slope": {
+    "medianDeg": 3.5,
+    "steepShare": 0.11
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "prosecco": {
+   "altitude": {
+    "p10": 10,
+    "median": 220,
+    "p90": 1610,
+    "samples": 5358
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.32
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.6
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.22
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.1
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
+  "conegliano-valdobbiadene": {
+   "altitude": {
+    "p10": 70,
+    "median": 200,
+    "p90": 920,
+    "samples": 456
+   },
+   "slope": {
+    "medianDeg": 6.6,
+    "steepShare": 0.25
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.78
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.12
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.1
+    }
+   ]
+  },
+  "asolo-prosecco": {
+   "altitude": {
+    "p10": 80,
+    "median": 160,
+    "p90": 690,
+    "samples": 433
+   },
+   "slope": {
+    "medianDeg": 2.1,
+    "steepShare": 0.1
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.87
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.08
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "bagnoli-friularo": {
+   "altitude": {
+    "p10": 0,
+    "median": 0,
+    "p90": 10,
+    "samples": 224
+   },
+   "slope": {
+    "medianDeg": 0.3,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "bardolino-superiore": {
+   "altitude": {
+    "p10": 60,
+    "median": 100,
+    "p90": 280,
+    "samples": 522
+   },
+   "slope": {
+    "medianDeg": 1.2,
+    "steepShare": 0.05
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.95
+    }
+   ]
+  },
+  "colli-di-conegliano": {
+   "altitude": {
+    "p10": 60,
+    "median": 180,
+    "p90": 980,
+    "samples": 531
+   },
+   "slope": {
+    "medianDeg": 5.8,
+    "steepShare": 0.24
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.77
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.12
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.11
+    }
+   ]
+  },
+  "colli-euganei-fior-darancio": {
+   "altitude": {
+    "p10": 0,
+    "median": 10,
+    "p90": 150,
+    "samples": 384
+   },
+   "slope": {
+    "medianDeg": 0.6,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "lison": {
+   "altitude": {
+    "p10": 0,
+    "median": 10,
+    "p90": 10,
+    "samples": 466
+   },
+   "slope": {
+    "medianDeg": 0.3,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "montello-rosso": {
+   "altitude": {
+    "p10": 80,
+    "median": 160,
+    "p90": 690,
+    "samples": 433
+   },
+   "slope": {
+    "medianDeg": 2.1,
+    "steepShare": 0.1
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.87
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.08
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "piave-malanotte": {
+   "altitude": {
+    "p10": 0,
+    "median": 20,
+    "p90": 120,
+    "samples": 1578
+   },
+   "slope": {
+    "medianDeg": 0.4,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "recioto-di-gambellara": {
+   "altitude": {
+    "p10": 40,
+    "median": 60,
+    "p90": 230,
+    "samples": 48
+   },
+   "slope": {
+    "medianDeg": 0.9,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "colli-bolognesi-pignoletto": {
+   "altitude": {
+    "p10": 50,
+    "median": 210,
+    "p90": 470,
+    "samples": 900
+   },
+   "slope": {
+    "medianDeg": 7.7,
+    "steepShare": 0.09
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.94
+    }
+   ]
+  },
+  "romagna-albana": {
+   "altitude": {
+    "p10": 20,
+    "median": 80,
+    "p90": 340,
+    "samples": 1941
+   },
+   "slope": {
+    "medianDeg": 2.7,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.96
+    }
+   ]
+  },
+  "chianti": {
+   "altitude": {
+    "p10": 70,
+    "median": 260,
+    "p90": 560,
+    "samples": 6000
+   },
+   "slope": {
+    "medianDeg": 6.1,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.87
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.06
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.06
+    }
+   ]
+  },
+  "chianti-classico": {
+   "altitude": {
+    "p10": 180,
+    "median": 330,
+    "p90": 550,
+    "samples": 958
+   },
+   "slope": {
+    "medianDeg": 7.3,
+    "steepShare": 0.04
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.96
+    }
+   ]
+  },
+  "bolgheri": {
+   "altitude": {
+    "p10": 10,
+    "median": 80,
+    "p90": 330,
+    "samples": 140
+   },
+   "slope": {
+    "medianDeg": 3.1,
+    "steepShare": 0.05
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "brunello-di-montalcino": {
+   "altitude": {
+    "p10": 140,
+    "median": 280,
+    "p90": 460,
+    "samples": 311
+   },
+   "slope": {
+    "medianDeg": 5.7,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "vino-nobile-di-montepulciano": {
+   "altitude": {
+    "p10": 250,
+    "median": 290,
+    "p90": 510,
+    "samples": 168
+   },
+   "slope": {
+    "medianDeg": 2.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "carmignano": {
+   "altitude": {
+    "p10": 50,
+    "median": 120,
+    "p90": 330,
+    "samples": 46
+   },
+   "slope": {
+    "medianDeg": 6.8,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.91
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.09
+    }
+   ]
+  },
+  "elba-aleatico-passito": {
+   "altitude": {
+    "p10": 20,
+    "median": 120,
+    "p90": 430,
+    "samples": 245
+   },
+   "slope": {
+    "medianDeg": 13.5,
+    "steepShare": 0.36
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.94
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.06
+    }
+   ]
+  },
+  "montecucco-sangiovese": {
+   "altitude": {
+    "p10": 90,
+    "median": 240,
+    "p90": 740,
+    "samples": 851
+   },
+   "slope": {
+    "medianDeg": 7.1,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.86
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.14
+    }
+   ]
+  },
+  "morellino-di-scansano": {
+   "altitude": {
+    "p10": 10,
+    "median": 140,
+    "p90": 450,
+    "samples": 1732
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "suvereto": {
+   "altitude": {
+    "p10": 30,
+    "median": 100,
+    "p90": 200,
+    "samples": 92
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "val-di-cornia-rosso": {
+   "altitude": {
+    "p10": 0,
+    "median": 90,
+    "p90": 300,
+    "samples": 455
+   },
+   "slope": {
+    "medianDeg": 4.3,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "vernaccia-di-san-gimignano": {
+   "altitude": {
+    "p10": 120,
+    "median": 230,
+    "p90": 460,
+    "samples": 139
+   },
+   "slope": {
+    "medianDeg": 7.0,
+    "steepShare": 0.04
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.94
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.06
+    }
+   ]
+  },
+  "verdicchio-dei-castelli-di-jesi": {
+   "altitude": {
+    "p10": 100,
+    "median": 210,
+    "p90": 460,
+    "samples": 801
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.98
+    }
+   ]
+  },
+  "orvieto": {
+   "altitude": {
+    "p10": 150,
+    "median": 350,
+    "p90": 560,
+    "samples": 971
+   },
+   "slope": {
+    "medianDeg": 6.5,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.93
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "frascati": {
+   "altitude": {
+    "p10": 20,
+    "median": 60,
+    "p90": 140,
+    "samples": 1358
+   },
+   "slope": {
+    "medianDeg": 1.9,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "montepulciano-d-abruzzo": {
+   "altitude": {
+    "p10": 70,
+    "median": 290,
+    "p90": 1060,
+    "samples": 5402
+   },
+   "slope": {
+    "medianDeg": 8.4,
+    "steepShare": 0.17
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.72
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.08
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.08
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.06
+    }
+   ]
+  },
+  "casauria": {
+   "altitude": {
+    "p10": 140,
+    "median": 340,
+    "p90": 810,
+    "samples": 350
+   },
+   "slope": {
+    "medianDeg": 10.1,
+    "steepShare": 0.17
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.73
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.14
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.09
+    }
+   ]
+  },
+  "cesanese-del-piglio": {
+   "altitude": {
+    "p10": 210,
+    "median": 290,
+    "p90": 810,
+    "samples": 249
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.1
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.89
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.08
+    }
+   ]
+  },
+  "colline-teramane-montepulciano-dabruzzo": {
+   "altitude": {
+    "p10": 50,
+    "median": 200,
+    "p90": 490,
+    "samples": 1142
+   },
+   "slope": {
+    "medianDeg": 7.6,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.95
+    }
+   ]
+  },
+  "conero": {
+   "altitude": {
+    "p10": 20,
+    "median": 90,
+    "p90": 190,
+    "samples": 322
+   },
+   "slope": {
+    "medianDeg": 5.6,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "montefalco-sagrantino": {
+   "altitude": {
+    "p10": 220,
+    "median": 330,
+    "p90": 500,
+    "samples": 293
+   },
+   "slope": {
+    "medianDeg": 5.6,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.68
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.3
+    }
+   ]
+  },
+  "offida": {
+   "altitude": {
+    "p10": 60,
+    "median": 210,
+    "p90": 460,
+    "samples": 703
+   },
+   "slope": {
+    "medianDeg": 8.9,
+    "steepShare": 0.09
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.97
+    }
+   ]
+  },
+  "terre-tollesi": {
+   "altitude": {
+    "p10": 60,
+    "median": 130,
+    "p90": 170,
+    "samples": 284
+   },
+   "slope": {
+    "medianDeg": 5.7,
+    "steepShare": 0.01
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "torgiano-rosso-riserva": {
+   "altitude": {
+    "p10": 170,
+    "median": 200,
+    "p90": 280,
+    "samples": 36
+   },
+   "slope": {
+    "medianDeg": 4.7,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "verdicchio-di-matelica-riserva": {
+   "altitude": {
+    "p10": 340,
+    "median": 500,
+    "p90": 880,
+    "samples": 636
+   },
+   "slope": {
+    "medianDeg": 11.7,
+    "steepShare": 0.33
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.74
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.26
+    }
+   ]
+  },
+  "vernaccia-di-serrapetrona": {
+   "altitude": {
+    "p10": 270,
+    "median": 440,
+    "p90": 790,
+    "samples": 247
+   },
+   "slope": {
+    "medianDeg": 9.3,
+    "steepShare": 0.19
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.81
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.19
+    }
+   ]
+  },
+  "taurasi": {
+   "altitude": {
+    "p10": 280,
+    "median": 430,
+    "p90": 700,
+    "samples": 272
+   },
+   "slope": {
+    "medianDeg": 6.9,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.79
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.11
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.1
+    }
+   ]
+  },
+  "fiano-di-avellino": {
+   "altitude": {
+    "p10": 350,
+    "median": 470,
+    "p90": 900,
+    "samples": 276
+   },
+   "slope": {
+    "medianDeg": 8.6,
+    "steepShare": 0.17
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.79
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.21
+    }
+   ]
+  },
+  "greco-di-tufo": {
+   "altitude": {
+    "p10": 260,
+    "median": 410,
+    "p90": 570,
+    "samples": 63
+   },
+   "slope": {
+    "medianDeg": 10.2,
+    "steepShare": 0.13
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "salice-salentino": {
+   "altitude": {
+    "p10": 40,
+    "median": 50,
+    "p90": 60,
+    "samples": 333
+   },
+   "slope": {
+    "medianDeg": 0.4,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "aglianico-del-vulture": {
+   "altitude": {
+    "p10": 220,
+    "median": 420,
+    "p90": 670,
+    "samples": 1335
+   },
+   "slope": {
+    "medianDeg": 4.6,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.49
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.47
+    }
+   ]
+  },
+  "aglianico-del-taburno": {
+   "altitude": {
+    "p10": 130,
+    "median": 280,
+    "p90": 820,
+    "samples": 363
+   },
+   "slope": {
+    "medianDeg": 7.4,
+    "steepShare": 0.13
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.87
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.11
+    }
+   ]
+  },
+  "castel-del-monte-bombino-nero": {
+   "altitude": {
+    "p10": 120,
+    "median": 270,
+    "p90": 510,
+    "samples": 1554
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.72
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.27
+    }
+   ]
+  },
+  "castel-del-monte-nero-di-troia-riserva": {
+   "altitude": {
+    "p10": 120,
+    "median": 270,
+    "p90": 510,
+    "samples": 1554
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.72
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.27
+    }
+   ]
+  },
+  "castel-del-monte-rosso-riserva": {
+   "altitude": {
+    "p10": 120,
+    "median": 270,
+    "p90": 510,
+    "samples": 1554
+   },
+   "slope": {
+    "medianDeg": 1.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.72
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.27
+    }
+   ]
+  },
+  "primitivo-di-manduria-dolce-naturale": {
+   "altitude": {
+    "p10": 10,
+    "median": 70,
+    "p90": 110,
+    "samples": 972
+   },
+   "slope": {
+    "medianDeg": 0.6,
+    "steepShare": 0.0
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "etna": {
+   "altitude": {
+    "p10": 130,
+    "median": 700,
+    "p90": 1660,
+    "samples": 1057
+   },
+   "slope": {
+    "medianDeg": 6.7,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.65
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.28
+    }
+   ]
+  },
+  "cerasuolo-di-vittoria": {
+   "altitude": {
+    "p10": 50,
+    "median": 270,
+    "p90": 510,
+    "samples": 2527
+   },
+   "slope": {
+    "medianDeg": 3.9,
+    "steepShare": 0.02
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 1.0
+    }
+   ]
+  },
+  "vermentino-di-gallura": {
+   "altitude": {
+    "p10": 30,
+    "median": 220,
+    "p90": 540,
+    "samples": 2875
+   },
+   "slope": {
+    "medianDeg": 6.1,
+    "steepShare": 0.1
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.96
+    }
+   ]
+  },
   "douro": {
    "altitude": {
     "p10": 200,
@@ -5225,6 +7273,40 @@
      "share": 0.05
     }
    ]
+  },
+  "italy": {
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.41
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.29
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.09
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.07
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.06
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.05
+    }
+   ]
   }
  },
  "regions": {
@@ -5619,6 +7701,262 @@
      "code": "Cfb",
      "name": "Temperate, no dry season, warm summer",
      "share": 0.38
+    }
+   ]
+  },
+  "it-centre": {
+   "altitude": {
+    "p10": 50,
+    "median": 260,
+    "p90": 760,
+    "samples": 6000
+   },
+   "slope": {
+    "medianDeg": 6.9,
+    "steepShare": 0.12
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.59
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.29
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
+  "it-emilia-romagna": {
+   "altitude": {
+    "p10": 20,
+    "median": 120,
+    "p90": 410,
+    "samples": 2845
+   },
+   "slope": {
+    "medianDeg": 4.4,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.95
+    }
+   ]
+  },
+  "it-islands": {
+   "altitude": {
+    "p10": 40,
+    "median": 280,
+    "p90": 700,
+    "samples": 5983
+   },
+   "slope": {
+    "medianDeg": 5.2,
+    "steepShare": 0.07
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.93
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.06
+    }
+   ]
+  },
+  "it-lombardia": {
+   "altitude": {
+    "p10": 130,
+    "median": 370,
+    "p90": 2110,
+    "samples": 1525
+   },
+   "slope": {
+    "medianDeg": 11.0,
+    "steepShare": 0.39
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.51
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.13
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.11
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.09
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.08
+    },
+    {
+     "code": "ET",
+     "name": "Polar, tundra",
+     "share": 0.08
+    }
+   ]
+  },
+  "it-north-east": {
+   "altitude": {
+    "p10": 40,
+    "median": 560,
+    "p90": 1820,
+    "samples": 5992
+   },
+   "slope": {
+    "medianDeg": 11.6,
+    "steepShare": 0.41
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.46
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.28
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.12
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.11
+    }
+   ]
+  },
+  "it-piemonte": {
+   "altitude": {
+    "p10": 140,
+    "median": 250,
+    "p90": 530,
+    "samples": 4920
+   },
+   "slope": {
+    "medianDeg": 5.9,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.6
+    },
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.32
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.05
+    }
+   ]
+  },
+  "it-south": {
+   "altitude": {
+    "p10": 50,
+    "median": 280,
+    "p90": 570,
+    "samples": 5149
+   },
+   "slope": {
+    "medianDeg": 1.9,
+    "steepShare": 0.03
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.74
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.22
+    }
+   ]
+  },
+  "it-tuscany": {
+   "altitude": {
+    "p10": 40,
+    "median": 250,
+    "p90": 550,
+    "samples": 5983
+   },
+   "slope": {
+    "medianDeg": 6.0,
+    "steepShare": 0.06
+   },
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.9
+    }
+   ]
+  },
+  "it-veneto": {
+   "altitude": {
+    "p10": 10,
+    "median": 200,
+    "p90": 1580,
+    "samples": 5386
+   },
+   "slope": {
+    "medianDeg": 4.3,
+    "steepShare": 0.31
+   },
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.62
+    },
+    {
+     "code": "Dfb",
+     "name": "Cold, no dry season, warm summer",
+     "share": 0.2
+    },
+    {
+     "code": "Dfc",
+     "name": "Cold, no dry season, cold summer",
+     "share": 0.1
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.07
     }
    ]
   },

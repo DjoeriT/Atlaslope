@@ -66,12 +66,13 @@ describe('swatches', () => {
 });
 
 describe('climate names', () => {
-  // A legend group of one class carries the chart's name; the hot dry group joins two classes the chart keeps apart (BSh, BWh).
+  // A legend group of one class carries the chart's name; the hot dry group (BSh, BWh) and Cold (Dfb, Dfc, ET) join classes the chart
+  // keeps apart.
   it('the guide chart names each class as the map legend does', () => {
     for (const g of CLIMATE_GROUPS) for (const code of g.codes) {
       const [seg] = climateSegments([{ code, name: '', share: 1 }]);
       if (g.codes.length === 1) expect(seg.label).toBe(`${g.label} 100%`);
-      else expect(seg.label.toLowerCase()).toMatch(/^hot (semi-arid|desert) 100%$/);
+      else expect(seg.label.toLowerCase()).toMatch(/^(hot (semi-arid|desert)|warm-summer continental|cold-summer continental|alpine tundra) 100%$/);
     }
   });
 });

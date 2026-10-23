@@ -154,7 +154,7 @@ export const strings = {
     reportSubject: (place: string) => `AtlaSlope: mistake on ${place}`,
     reportBody: (place: string, id: string) => `Place: ${place} (${id})\nWhich row is wrong:\nWhat it should say:\n`,
     styleKinds: { red: 'Red', white: 'White', rose: 'Rosé', sparkling: 'Sparkling', fortified: 'Fortified', sweet: 'Sweet' },
-    // Köppen-Geiger codes in plain words (Beck et al. 2023). The six classes on the map's legend (src/map/climate.ts) use the same words here
+    // Köppen-Geiger codes in plain words (Beck et al. 2023). The classes on the map's legend (src/map/climate.ts) use the same words here
     // (owner, 21 Oct 2026; a unit test holds them together). Only the codes that appear in the measured data need a name.
     koppenNames: {
       BSh: 'hot semi-arid',
