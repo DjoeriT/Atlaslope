@@ -85,13 +85,11 @@
   {
    "id": "wines",
    "beat": "rules",
-   "title": "Mostly white, in three steps",
+   "title": "Mostly white, with acidity at its core",
    "paras": [
     "Most Wachau wine is white. Red wines are a very small share. Grüner Veltliner and Riesling are the grapes listed for the Wachau name.",
     "Most whites are greenish yellow or light straw-yellow. They smell of apple or pear and of citrus fruit. Acidity is key to their taste. Longer ageing moves the aromas toward dried and exotic fruit. In more aged whites, mainly Grüner Veltliner, the finish has notes of pepper and apricot.",
-    "The reds taste fruity and low in tannin, with hints of sour cherry and redcurrant. Time in barrels adds aromas such as tobacco or chocolate.",
-    "Since the 2020 harvest, the list of grapes is restricted. The maximum yield is now 10,000 kg per hectare, up from 9,000 kg before.",
-    "Grapes are picked by hand. The vintage is always on the label."
+    "The reds taste fruity and low in tannin, with hints of sour cherry and redcurrant. Time in barrels adds aromas such as tobacco or chocolate."
    ],
    "cite": [
     "wachau-spec:p1",
@@ -105,7 +103,7 @@
       48.37
      ],
      "zoom": 11,
-     "caption": "Spitzer Graben, a wider site (Großlage), can be named on an Ortswein label but not as the village on a Riedenwein.",
+     "caption": "Spitzer Graben is a named wider site (Großlage) in the Wachau.",
      "cite": [
       "wachau-spec:p1"
      ]
@@ -130,10 +128,19 @@
    {
     "term": "DAC",
     "text": "The word DAC, or Districtus Austriae Controllatus, must stand beside Wachau on the main label."
+   },
+   {
+    "term": "Yield",
+    "text": "Since the 2020 harvest a Wachau DAC wine may come from at most 10,000 kg of grapes per hectare, up from 9,000 kg before."
+   },
+   {
+    "term": "Hand picking",
+    "text": "A Wachau DAC wine must be made only from hand-picked grapes harvested in the Wachau."
    }
   ],
   "cite": [
    "wachau-spec:p1",
+   "wachau-spec:p2",
    "wachau-spec:p3"
   ]
  }

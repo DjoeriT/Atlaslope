@@ -212,6 +212,9 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
   const parentM = parent ? measuresOf(parent.id) : undefined;
   const country = tree.countryOf(place.id);
   const countryM = country ? countryMeasures(country.id) : undefined;
+  // The Level row's source: Spain's is the ministry's list. Elsewhere the level comes from the place's own specification, the first source
+  // its guide cites (the ministry's list is Spain's and showed under Austria and Germany by mistake, ReviewBot 23 Oct 2026).
+  const levelSource: Cite | undefined = country?.id === 'spain' ? 'mapa-list' : guide?.chapters.flatMap((c) => c.cite ?? [])[0]?.split(':')[0];
   const compare = [
     ...(parent && parentM ? [{ label: parent.name, m: parentM }] : []),
     ...(regionM && measures && JSON.stringify(regionM) !== JSON.stringify(measures) ? [{ label: t.regionRow(region!.name), m: regionM }] : []),
@@ -302,7 +305,7 @@ export function PlacePage({ tree, go, place, at, tour = false, onTest }: Props) 
     <>
       <dl className="pg-rows">
         <dt>{t.level}</dt>
-        <dd>{isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind] ?? level}{sheet && !isZone && src(['mapa-list'])}</dd>
+        <dd>{isZone ? t.zoneOf(parent?.name ?? '') : t.kindNames[place.kind] ?? level}{sheet && !isZone && levelSource && src([levelSource])}</dd>
         {official && (<><dt>{t.officialName}</dt><dd>{official}</dd></>)}
         {also.length > 0 && (
           <>
