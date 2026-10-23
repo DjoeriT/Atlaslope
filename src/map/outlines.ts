@@ -4,8 +4,8 @@
 import { DEFAULT_COUNTRY } from '../countries';
 import type { Box, Collection } from './boundaries';
 
-/** One country's outlines file: its URL and the box around its outlines. */
-export interface OutlineFile { url: string; box: Box }
+/** One country's outlines file: its URL and the box around each outline in it. */
+export interface OutlineFile { url: string; boxes: Box[] }
 
 /** The part of data/places.json this needs: which country each study region belongs to, and each place's region. */
 export interface PlacesFile {
@@ -52,9 +52,13 @@ export function boxOf(c: Collection): Box | null {
   return w <= e ? [w, s, e, n] : null;
 }
 
-/** The countries whose outlines' box overlaps the view, from OUTLINES_MIN_ZOOM in. */
+/** Each outline's box, for the file list the map carries (a few KB, where the outlines themselves are hundreds). */
+export const boxesOf = (c: Collection): Box[] => c.features.map((f) => boxOf({ type: 'FeatureCollection', features: [f] })).filter((b): b is Box => b !== null);
+
+/** The countries with an outline whose box overlaps the view, from OUTLINES_MIN_ZOOM in. */
 export function countriesInView(view: Box, zoom: number, files: Record<string, OutlineFile>): string[] {
   if (zoom < OUTLINES_MIN_ZOOM) return [];
   const [w, s, e, n] = view;
-  return Object.entries(files).filter(([, { box: [cw, cs, ce, cn] }]) => cw <= e && ce >= w && cs <= n && cn >= s).map(([id]) => id);
+  const meets = ([bw, bs, be, bn]: Box) => bw <= e && be >= w && bs <= n && bn >= s;
+  return Object.entries(files).filter(([, f]) => f.boxes.some(meets)).map(([id]) => id);
 }

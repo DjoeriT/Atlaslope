@@ -185,7 +185,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
   });
 
   // The default country's outlines come with the first load; another country's are fetched once, when a card opens it or the
-  // view (from OUTLINES_MIN_ZOOM in) reaches the box around its outlines, and the places are drawn again with them (src/map/outlines.ts, decision #38).
+  // view (from OUTLINES_MIN_ZOOM in) reaches the box of one of its outlines, and the places are drawn again with them (src/map/outlines.ts, decision #38).
   let base: { dops: Collection; zoneFile: Collection } | null = null;
   const outlines = new Map<string, Collection>();
   const asked = new Map<string, Promise<void>>();
