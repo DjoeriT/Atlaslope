@@ -16,11 +16,11 @@ const line = (s: { regions: unknown[]; guides: number }) => `${s.regions.length}
 const count = (s: string, re: RegExp) => s.match(re)?.length ?? 0;
 
 describe('country structure', () => {
-  it('has the three countries, each with config for its card, page and Learn note', () => {
-    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france']);
+  it('has the four countries, each with config for its card, page and Learn note', () => {
+    expect(stats.map((s) => s.id)).toEqual(['spain', 'portugal', 'france', 'italy']);
     for (const s of stats) {
       expect(COUNTRIES[s.id].code).toBe(s.code);
-      if (s.id === 'france') continue; // its photos and guides land with the pilot's guides (#149)
+      if (s.id === 'france' || s.id === 'italy') continue; // their photos and guides land with the pilots' guides (#149)
       expect(COUNTRY_PAGES[s.id].cardPhotos).toHaveLength(5);
       expect(s.guides).toBeGreaterThan(0);
     }
@@ -92,7 +92,7 @@ describe('country pages', () => {
   });
   it('shows a quiet "Photos soon" tile where a guide has no photo, and a Portuguese guide opens its /pt/ page', () => {
     const bare = list.rows.filter((g) => !g.photo);
-    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g)).toBe(bare.length);
+    expect(count(pages.spain, /Photos soon/g) + count(pages.portugal, /Photos soon/g) + count(pages.france, /Photos soon/g) + count(pages.italy, /Photos soon/g)).toBe(bare.length);
     expect(pages.portugal).toContain('href="../pt/douro/"');
   });
 });
@@ -108,9 +108,9 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(COUNTRIES.france).toMatchObject({ code: 'fr', paths: true });
     expect(COUNTRY_PAGES.france.intro).toBe('From Champagne to the Mediterranean.');
   });
-  it('renders /fr/ with 94 place tiles, photos where they have shipped, and an honest Study note', () => {
-    expect(count(page, /<a class="ecard"/g)).toBe(94);
-    expect(count(page, /Photos soon/g)).toBe(1); // every France guide has photos except muscat-de-beaumes-de-venise (its Commons sheet has none)
+  it('renders /fr/ with 96 place tiles, photos where they have shipped, and an honest Study note', () => {
+    expect(count(page, /<a class="ecard"/g)).toBe(96);
+    expect(count(page, /Photos soon/g)).toBe(1); // Muscat de Beaumes-de-Venise (none on Commons); Côtes de Gascogne and Pays d'Oc now have photos
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
@@ -119,5 +119,30 @@ describe('France (pilot, decisions #52-#58)', () => {
     expect(page).toContain('<h2 id="r-fr-burgundy">Burgundy</h2>');
     expect(page).toContain('<h2 id="r-fr-bordeaux">Bordeaux</h2>');
     expect(page).toContain('<h2 id="r-fr-loire">Loire</h2>');
+  });
+});
+
+describe('Italy (first wave, decisions #59-#66, #80)', () => {
+  // The 87 first-wave places; 34 have no usable Commons photo yet, so their tiles say "Photos soon".
+  const dir = mkdtempSync(join(tmpdir(), 'guides-'));
+  for (const f of readdirSync('content/guides')) copyFileSync(`content/guides/${f}`, join(dir, f));
+  for (const id of ['barolo', 'chianti-classico']) writeFileSync(join(dir, `${id}.json`), JSON.stringify({ id, minutes: 2 }));
+  const page = fillCountryPage(template, guideRows({ dir }), 'italy');
+  it('is a country with real place paths and Esri imagery', () => {
+    expect(COUNTRIES.italy).toMatchObject({ code: 'it', paths: true, imagery: 'esri' });
+    expect(COUNTRY_PAGES.italy.intro).toBe('From the Alps to Sicily.');
+  });
+  it('renders /it/ with a tile per place, their photos, and an honest Study note', () => {
+    const wave = JSON.parse(readFileSync('data/countries/it/places.json', 'utf8')).places;
+    expect(count(page, /<a class="ecard"/g)).toBe(wave.length);
+    const photos = JSON.parse(readFileSync('data/photos.json', 'utf8')).photos;
+    expect(count(page, /Photos soon/g)).toBe(wave.filter((p: any) => !photos[`${p.id}-1`]).length);
+    expect(page).toContain('href="../it/barolo/"');
+    expect(page).toContain('href="../it/chianti-classico/"');
+    expect(page).toContain('Not yet for Italy.');
+    expect(page).not.toContain('Open Study');
+    expect(page).toContain('<h2 id="r-it-piemonte">Piemonte</h2>');
+    expect(page).toContain('<h2 id="r-it-islands">Sicily and Sardinia</h2>');
+    expect(page).toContain('<h2 id="r-it-tuscany">Tuscany</h2>');
   });
 });

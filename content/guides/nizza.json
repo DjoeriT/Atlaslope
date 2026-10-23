@@ -1,0 +1,108 @@
+{
+ "id": "nizza",
+ "title": "Why Nizza tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Barbera is a grape that asks a lot of light and warmth, so Nizza keeps it for the best-facing slopes only. The result is an intense ruby red with pronounced body and a long life in bottle.",
+  "cite": [
+   "nizza-disc:p6",
+   "nizza-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Eighteen villages around one market town",
+   "paras": [
+    "Nizza comes from 18 communes in the province of Asti, all around the town of Nizza Monferrato. The town is the traditional home of Barbera.",
+    "The whole area is hills, and the slopes are often very steep. Valley floors are left out. Vines are allowed only on hillsides facing between +45° and +315°, which rules out the north. Hilltops and north-facing slopes are allowed only where the ground is no steeper than 8%.",
+    "Nizza and its surroundings lie between the Tanaro and Belbo rivers and the Nizza stream. It seems to be the place where Barbera has been grown on its own for the longest time.",
+    "Nizza Monferrato has always been an important wine market in Piemonte. A letter from 1609 shows envoys sent there to taste Barbera and pay a fair price for it. Its fame had reached the ducal court of Mantua."
+   ],
+   "cite": [
+    "nizza-disc:p2",
+    "nizza-disc:p6",
+    "nizza-disc:p7",
+    "nizza-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Nizza Monferrato",
+     "point": [
+      8.3556,
+      44.7731
+     ],
+     "zoom": 10,
+     "caption": "The market town at the heart of the area, where Barbera has long been bought and sold.",
+     "cite": [
+      "nizza-disc:p6",
+      "nizza-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cold winters, hot dry summers",
+   "paras": [
+    "The climate is temperate-continental. Winters are mostly cold with little rain, though snow is not rare. Springs and autumns bring plenty of rain. Summers are hot and dry, with little rain that falls briefly, mostly in storms.",
+    "The hills partly soften this. Higher up, winter lows are less harsh than on the valley floors. Summer heat is milder too, thanks to more wind.",
+    "On these steep hills the slope's aspect is key, because it sets how much sun a vine receives. That matters most for Barbera, which asks a lot of light and temperature. Nizza is given only the best-exposed sites.",
+    "Vines grow mostly between 150 and 350 m. A few vineyards lie higher, between 350 and 500 m."
+   ],
+   "cite": [
+    "nizza-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Marl and sandstone on draining slopes",
+   "paras": [
+    "The soils belong to the Pliocene basin of Asti. They are mostly sedimentary, formed mainly of marl and sandstone. Vineyards must be on clay-sandy marls or layered sandstone.",
+    "They hold a lot of calcium carbonate and generally little organic matter. Nutrients are present in small amounts but in ideal balance with each other.",
+    "In almost all of the area the soil is deep, and roots can go far down. Only in the sandy-sandstone zone is it shallower, because of a strongly cemented layer below. The slopes drain water away even from the less permeable silty-marl soils, so the ground does not stay waterlogged."
+   ],
+   "cite": [
+    "nizza-disc:p2",
+    "nizza-disc:p6"
+   ]
+  },
+  {
+   "id": "barbera",
+   "beat": "rules",
+   "title": "Only Barbera, only red, aged in wood",
+   "paras": [
+    "Nizza is a red wine made from 100% Barbera. Growers chose to leave out other grapes, even in small amounts, because they would distort the wine's traditional identity. No enrichment to raise the alcohol is allowed.",
+    "Ageing builds complexity. Balsamic notes and cocoa come in, with liquorice and vanilla. The mix depends on the barrels: their size, their wood, their toasting.",
+    "On the palate, Barbera's typical acidity softens after the malolactic fermentation and ageing. The body is pronounced, which gives the wines a long life in bottle.",
+    "Ageing is part of the rules, counted from 1 January after the harvest. Nizza needs at least 18 months, 6 of them in wood. Riserva needs at least 30 months, 12 of them in wood.",
+    "A named vineyard can be added to the label as \"Vigna\". Those wines come from a single vineyard. Its yield is capped at 6.3 t per hectare, against 7 t for Nizza, and lower still while the vines are under seven years old. The grapes must reach at least 13.50% natural potential alcohol. Only a cork may close the bottle."
+   ],
+   "cite": [
+    "nizza-disc:p1",
+    "nizza-disc:p2",
+    "nizza-disc:p3",
+    "nizza-disc:p4",
+    "nizza-disc:p5",
+    "nizza-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Mombaruzzo",
+     "point": [
+      8.45,
+      44.7667
+     ],
+     "zoom": 11,
+     "caption": "Home to one of Italy's oldest cooperative cellars, more than a century old.",
+     "cite": [
+      "nizza-disc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

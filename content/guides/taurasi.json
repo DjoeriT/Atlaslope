@@ -1,0 +1,144 @@
+{
+ "id": "taurasi",
+ "title": "Why Taurasi tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Taurasi's soils are very high in clay, which helps the grapes ripen more evenly through summer drought while keeping their acidity. The weather is close to ideal for ripening by degrees, with sugar and acidity in balance.",
+  "cite": [
+   "taurasi-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Soft hills in inland Irpinia",
+   "paras": [
+    "Taurasi comes from 17 municipalities in the province of Avellino, in the Irpinia area of Campania. The vineyards lie on hills between 400 and 700 m above sea level.",
+    "The hills are generally much lower than the big limestone mountains that border them in part. Their shapes are very often gentle and the slopes mostly shallow, especially where clay dominates. Where layers of rock, generally calcarenite, dominate, the slopes often break off sharply and turn steep.",
+    "Vineyards must be on hills or on land with suitable position and exposure. Valley-floor land that is damp and not sunny enough is excluded outright."
+   ],
+   "cite": [
+    "taurasi-disc:p2",
+    "taurasi-disc:p5",
+    "taurasi-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Taurasi and the Calore river",
+     "point": [
+      14.9617,
+      41.0036
+     ],
+     "zoom": 10,
+     "caption": "The hills on the left bank of the Calore river, between Taurasi and Castel del Lago, belong to one ridge.",
+     "cite": [
+      "taurasi-disc:p5"
+     ]
+    },
+    {
+     "label": "Terminio-Tuoro mountains",
+     "point": [
+      14.97,
+      40.84
+     ],
+     "zoom": 9.5,
+     "caption": "The eastern edge of the Terminio-Tuoro group bounds the hill belt to the south and southwest.",
+     "cite": [
+      "taurasi-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inland",
+   "beat": "weather",
+   "title": "Cold winters, mild and dry summers",
+   "paras": [
+    "The climate is typical of inland areas, with big temperature swings and low rainfall. Winters are cold and snow is not unusual. Summers are fairly mild. The forests on the surrounding mountains strongly influence the climate and work against overheating.",
+    "Sunny days are very numerous. Spring frosts are fairly frequent, sometimes late. From July to September the gap between average highs and lows is very pronounced. In winter, strong temperature inversions and lows below zero are frequent, with big drops after sunset.",
+    "Rain usually just reaches 1000 mm in a year, though historical records give around 600 to 800 mm. Well over 70% falls in autumn and winter. Summer is particularly dry, with on average 6% of the total.",
+    "Winds are generally lighter than in more exposed parts of the region. Slope breezes blow from the NE at night. The dominant winds come from the south and southwest, damp and mild."
+   ],
+   "cite": [
+    "taurasi-disc:p6"
+   ]
+  },
+  {
+   "id": "clay",
+   "beat": "ground",
+   "title": "Young soils, well supplied with potassium",
+   "paras": [
+    "The soils are young and immature. Most often they sit directly on the rock they formed from, either hard rock or soft clay and sand. They are decidedly rich in clay and lime, the main parts, at times close to 50% of the fine earth. In many places sand and silt soften the clay.",
+    "By the rock beneath, the area splits very roughly into three sectors. In the west, multicoloured clays dominate around Venticano and Pietradefusi. Lapio and Montefalcione have the same clays with layers of rock, and overlap with the Fiano di Avellino area. In the east, conglomerates and sandstones are typical. Around Taurasi itself, the clays are covered in places by ash and lapilli deposits.",
+    "Some soils come from ash and pumice. They are deep and well drained, with a moderately coarse texture. They are rich in organic carbon and nitrogen. Others are very compact clay-limestone soils, rich above all in calcium and exchangeable potassium.",
+    "The high clay content helps quality, especially in summer drought. It allows more regular ripening and keeps acidity at good levels. The wealth of potassium and magnesium gives the wines intense aromas. It also gives them good structure and balance. Lapio and Montefalcione have the soils best supplied with potassium."
+   ],
+   "cite": [
+    "taurasi-disc:p5",
+    "taurasi-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Lapio and Montefalcione",
+     "point": [
+      14.9561,
+      40.99
+     ],
+     "zoom": 11,
+     "caption": "Lapio and Montefalcione have the soils with the most potassium, and share ground with the Fiano di Avellino area.",
+     "cite": [
+      "taurasi-disc:p5",
+      "taurasi-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aglianico",
+   "beat": "rules",
+   "title": "Aglianico, and years of waiting",
+   "paras": [
+    "Taurasi is a dry red wine only. It is made from Aglianico, with up to 15% of other non-aromatic red grapes suited to the province of Avellino. It comes in two types, Taurasi and Taurasi Riserva.",
+    "The harvest is capped at 10 tonnes of grapes per hectare. Even in an exceptionally good year, a careful sorting of the grapes must bring the crop back to that limit. The total crop may never exceed it by more than 20%. The grapes must reach a natural minimum of 11.5% alcohol, or 12% for Riserva.",
+    "Ageing is compulsory. Taurasi needs at least three years, one of them in wooden barrels. Riserva needs at least four years, with at least 18 months in wood. The clock starts on 1 December of the harvest year. Winemaking and ageing must both happen within the province of Avellino.",
+    "At release Taurasi must have at least 12.00% alcohol, and Riserva at least 12.50%. Both need at least 5.0 g/l of total acidity."
+   ],
+   "cite": [
+    "taurasi-disc:p1",
+    "taurasi-disc:p2",
+    "taurasi-disc:p3"
+   ],
+   "fly": [
+    {
+     "label": "Taurasi, home of the wine",
+     "point": [
+      14.9617,
+      41.0036
+     ],
+     "zoom": 13,
+     "caption": "Taurasi still has a station on the \"wine railway\", Irpinia's first railway, which linked the wine towns of the Sabato and Calore hills with Italian and European markets.",
+     "cite": [
+      "taurasi-disc:p7"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word \"vigna\" can be used only if followed by the place name or traditional name, with that wine made and stored in separate containers. The name must also be on the regional list of vineyards."
+   },
+   {
+    "term": "Annata",
+    "text": "The bottle must show the harvest year, truthfully and provably. If up to 15% of a younger or older Taurasi is blended in, the label shows the year that makes up most of the wine."
+   }
+  ],
+  "cite": [
+   "taurasi-disc:p3",
+   "taurasi-disc:p4"
+  ]
+ }
+}

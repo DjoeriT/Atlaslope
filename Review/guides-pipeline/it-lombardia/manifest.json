@@ -1,0 +1,9 @@
+{
+ "sources": {
+  "franciacorta-disc": "Review/sources/fetched/disc-franciacorta.txt",
+  "oltrepo-pavese-metodo-classico-disc": "Review/sources/fetched/disc-oltrepo-pavese-metodo-classico.txt",
+  "scanzo-disc": "Review/sources/fetched/disc-scanzo.txt",
+  "sforzato-di-valtellina-disc": "Review/sources/fetched/disc-sforzato-di-valtellina.txt",
+  "valtellina-superiore-disc": "Review/sources/fetched/disc-valtellina-superiore.txt"
+ }
+}

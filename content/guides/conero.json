@@ -1,0 +1,103 @@
+{
+ "id": "conero",
+ "title": "Why Cònero tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On the white, limy, sunlit lower slopes of Monte Conero, Montepulciano finds its best conditions. There its grapes ripen sugary and fragrant.",
+  "cite": [
+   "conero-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "headland",
+   "beat": "place",
+   "title": "A headland over the Adriatic",
+   "paras": [
+    "The zone is the promontory of Monte Conero, which rises over the Adriatic, and the hills that fall away from it inland. It touches seven communes in the province of Ancona.",
+    "A strip of land pushes out into the sea to the east. To the west come the gentle, even hills behind the mountain. The hills average about 200 m above sea level, and Monte Conero itself reaches 572 m.",
+    "Only well-exposed hillside vineyards qualify. Vineyards on damp, unsunny ground are left out. About 80% of the vineyard ground faces south-west, the best exposure for vines there. East-facing ground is negligible."
+   ],
+   "cite": [
+    "conero-disc:p2",
+    "conero-disc:p4",
+    "conero-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Monte Conero",
+     "point": [
+      13.6,
+      43.55
+     ],
+     "zoom": 10,
+     "caption": "Monte Conero rises to 572 m over the Adriatic. Its promontory and the hills inland hold the vineyards.",
+     "cite": [
+      "conero-disc:p4",
+      "conero-disc:p5"
+     ]
+    },
+    {
+     "label": "Ancona",
+     "point": [
+      13.5189,
+      43.6169
+     ],
+     "zoom": 10,
+     "caption": "The Dorians founded Ancona. Greek settlers left sure traces of vine growing and winemaking here.",
+     "cite": [
+      "conero-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Warm summers, wet autumns",
+   "paras": [
+    "The climate is Mediterranean, with limited summer humidity. Monthly mean temperatures run from 1-2 °C in January to 26-28 °C in July and August.",
+    "Average rainfall is 775 mm a year. In the hills the wettest months are September and October.",
+    "Montepulciano likes hot, dry places and sunny slopes. The vineyard area is protected from cold north winds, and by Monte Conero itself. Inland, wide spreads of vines lie out of the sea winds. Together with the soils, this gives healthy, ripe grapes high in sugar."
+   ],
+   "cite": [
+    "conero-disc:p4",
+    "conero-disc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "White rock and coarse ground",
+   "paras": [
+    "Both the headland and the hills behind it are built of limy and Cretaceous rocks. These rocks resurface along the coast. In between lies a band of clay and sand that shapes the soils and farmland of the Marche.",
+    "Surface water shaped the gentle hills, where marl and sandy mudstone of Mio-Pliocene age crop out. The soils are coarse and often arid.",
+    "70% of the vineyards lie between 20 and 140 m, and 1% at 550 m. About 80% of the vineyard area has a slope between 2 and 25%."
+   ],
+   "cite": [
+    "conero-disc:p4",
+    "conero-disc:p5"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Montepulciano and nothing but red",
+   "paras": [
+    "The name covers one wine only, a ruby red. It comes from at least 85% Montepulciano, with Sangiovese at no more than 15%.",
+    "Montepulciano buds late, so it escapes the damage of spring frosts. It is also little troubled by grey mould.",
+    "The wine is dry and savoury, fairly tannic and with body. This comes from the coarse, often arid soils and the climate. Dense planting plays a part too, an old habit that saved land for other crops and held yields down. Time in wood improves its softness and balance, and refines the nose.",
+    "It must age for at least 2 years, counted from 1 November of the harvest year. The rules ask for at least 12.50% total alcohol. They allow no more than 9 tonnes of grapes per hectare, and new plantings need at least 3,330 vines per hectare.",
+    "Every label must carry the word Riserva, below the DOCG wording and in type no larger than Cònero. Other qualifiers such as superiore or extra are banned.",
+    "The wine is sold only in dark Bordeaux-shape glass bottles of up to 5 litres, closed with a cork."
+   ],
+   "cite": [
+    "conero-disc:p1",
+    "conero-disc:p2",
+    "conero-disc:p3",
+    "conero-disc:p4",
+    "conero-disc:p5"
+   ]
+  }
+ ]
+}

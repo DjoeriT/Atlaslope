@@ -1,0 +1,94 @@
+{
+ "id": "salice-salentino",
+ "title": "Why Salice Salentino tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Negroamaro has grown in the south of Puglia since the 6th century BC. It is the leading grape of Salice Salentino, and its reds are full and robust yet velvety.",
+  "cite": [
+   "salice-salentino-disc:p9",
+   "salice-salentino-disc:p10",
+   "salice-salentino-disc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "town",
+   "beat": "place",
+   "title": "Olive groves and old watchtowers",
+   "paras": [
+    "The wine takes its name from the town of Salice Salentino, north of Lecce. It is a zone of vineyards and olive groves, with farmsteads (masserie) and old watchtowers scattered around.",
+    "The vineyards lie in the provinces of Lecce and Brindisi. On the Lecce side the zone takes in all of Salice Salentino, Veglie and Guagnano. On the Brindisi side it takes in all of San Pancrazio Salentino and Sandonaci. Parts of Campi Salentina and Cellino San Marco are in too.",
+    "The name dates from 1976. Before that, from the 1930s, a few historic producers here made reds and rosés from Negroamaro and Malvasia nera."
+   ],
+   "cite": [
+    "salice-salentino-disc:p2",
+    "salice-salentino-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Salice Salentino, the town",
+     "point": [
+      17.9667,
+      40.3667
+     ],
+     "zoom": 10,
+     "caption": "The town that gave the wine its name, in a zone of vineyards and olive groves north of Lecce.",
+     "cite": [
+      "salice-salentino-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Little rain, bright vineyards",
+   "paras": [
+    "The vineyards mostly lie north to south, in areas especially suited to vines. The lie of the land and that exposure help make a setting that is well ventilated and bright.",
+    "Rain is scarce in southern Italy. The traditional bush vine, the alberello pugliese, is meant to grow small foliage, so the vineyard's yield suits the scarce rain. Over the last twenty years trellised rows (spalliera) have overtaken it. The alberello now covers at most 20% of the area, against 90% up to the 1980s.",
+    "Irrigation is allowed only as a rescue measure."
+   ],
+   "cite": [
+    "salice-salentino-disc:p4",
+    "salice-salentino-disc:p9",
+    "salice-salentino-disc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep clay-limestone over a Cretaceous base",
+   "paras": [
+    "As across the whole Salento peninsula, the bedrock is a carbonate base from the Cretaceous, gently folded and broken by faults. Younger sandy limestones lie on top, with layers of clay and sand.",
+    "In inland Salento, where Salice Salentino falls, the soils are most often deep and clay-limestone. They are rich in organic matter and poor in calcium carbonate. Further south the soils are often shallower and reddish, with limestone rock showing here and there.",
+    "These deep soils suit vines very well, above all vines grafted on American rootstocks. Even in some drier years they still give the vine ideal conditions."
+   ],
+   "cite": [
+    "salice-salentino-disc:p9"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Negroamaro leads",
+   "paras": [
+    "Negroamaro is the leading grape of Salento. In the provinces of Brindisi and Lecce it covers about 72% of the vineyard. Red and rosé labelled simply Salice Salentino need at least 75% Negroamaro. Labelled Negroamaro, they need at least 90%.",
+    "Every still wine except Aleatico comes dry or off-dry. The reds are ruby, turning toward garnet with age. Reds labelled Negroamaro smell of ripe red fruit. The Negroamaro rosé is a deep pink, with hints of rose and cherry.",
+    "A red can carry Riserva after 24 months of ageing, at least 6 of them in wooden casks. A Negroamaro Riserva has spicy notes.",
+    "Wine labelled Aleatico needs at least 85% Aleatico, with Negroamaro, Malvasia nera or Primitivo making up the rest. It comes moderately sweet and velvety, or as a sweet fortified wine of at least 18.5% alcohol. Both can carry Riserva after 24 months of ageing. Aleatico cannot be sold before 1 March after the harvest.",
+    "The white is straw-yellow and fresh, and fruity when young. Without a grape name it needs at least 70% Chardonnay. With a name, Chardonnay, Fiano or Pinot bianco must make up at least 85%. Fiano smells delicate and floral.",
+    "White and rosé can also be sparkling, with a natural second fermentation in the bottle or in a tank. These wines have a fine, persistent mousse and notes of yeast, and range from extra brut to extra dry."
+   ],
+   "cite": [
+    "salice-salentino-disc:p1",
+    "salice-salentino-disc:p2",
+    "salice-salentino-disc:p4",
+    "salice-salentino-disc:p5",
+    "salice-salentino-disc:p6",
+    "salice-salentino-disc:p7",
+    "salice-salentino-disc:p8",
+    "salice-salentino-disc:p10"
+   ]
+  }
+ ]
+}

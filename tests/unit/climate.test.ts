@@ -18,7 +18,8 @@ describe('climate colours', () => {
   it('has a group for every top class measured, so no place on the map is grey', () => {
     const codes = CLIMATE_GROUPS.flatMap((g) => g.codes);
     // Spain, Portugal and France (measured 23 Oct 2026, Tools/data/koppen_country.sh): every outlined place, zones too.
-    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary));
+    // Italy (pilot, #149) is not measured yet.
+    const onMap = places.filter((p) => ['mapa-2014', 'added', 'rioja-zones'].includes(p.boundary) && !p.region.startsWith('it-'));
     expect(onMap.filter((p) => p.region.startsWith('fr-')).length).toBeGreaterThan(100);
     for (const p of onMap) expect(codes, p.id).toContain(measures[p.id]?.koppen[0]?.code);
   });

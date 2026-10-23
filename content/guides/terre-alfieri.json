@@ -1,0 +1,78 @@
+{
+ "id": "terre-alfieri",
+ "title": "Why Terre Alfieri tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Only hill vineyards between 130 and 350 m count here, and damp valley floors are shut out. The wines come from two grapes: Arneis, a straw-yellow white with a pleasantly bitter edge, and Nebbiolo, a delicate red that can smell of violets.",
+  "cite": [
+   "terre-alfieri-disc:p1",
+   "terre-alfieri-disc:p2",
+   "terre-alfieri-disc:p7",
+   "terre-alfieri-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills on both sides of a border",
+   "paras": [
+    "The vineyards lie in two groups of communes. Seven are in the province of Asti and form the Colline Alfieri hill community. Four are in the province of Cuneo, part of the much wider Roero hill community of 22 communes.",
+    "The seven in Asti lie wholly inside the area. The four in Cuneo lie only partly inside it. The boundary reaches the river Tanaro at Govone and runs along its north side to the border between the two provinces."
+   ],
+   "cite": [
+    "terre-alfieri-disc:p2",
+    "terre-alfieri-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The river Tanaro at Govone",
+     "point": [
+      8.07,
+      44.79
+     ],
+     "zoom": 10,
+     "caption": "The boundary of the area reaches the river Tanaro in Govone and runs along it to the border between the provinces.",
+     "cite": [
+      "terre-alfieri-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Hills only, never the valley floor",
+   "paras": [
+    "The rules ask for clayey-limy-sandy soils, or any mix of them. Vineyards must lie between 130 and 350 m above sea level, on hills only.",
+    "Damp, flat valley floors that get too little sun are categorically excluded. Each vineyard needs an exposure that ripens the grapes properly.",
+    "New plantings and replantings need at least 4,000 vines per hectare. They are trained low on wires, usually pruned in the traditional Guyot way."
+   ],
+   "cite": [
+    "terre-alfieri-disc:p2"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "One white, one red",
+   "paras": [
+    "Arneis is the white. It makes up 85% to 100% of the wine, and up to 15% can be other non-aromatic white grapes approved for Piedmont. Arneis has been in the vineyards here since time immemorial, in small quantities. Growers kept it from disappearing.",
+    "Nebbiolo is the red, also 85% to 100%, with up to 15% of other non-aromatic black grapes approved for Piedmont.",
+    "Every wine is still and dry. The name covers no rosato and no sparkling wine. Each grape comes in a Superiore version, and Nebbiolo also comes as a Riserva. Superiore grapes come from lower yields with more natural alcohol.",
+    "Arneis is straw yellow, sometimes with golden glints. It smells delicate and fragrant, sometimes floral. It is dry and pleasantly bitter.",
+    "Nebbiolo is ruby, turning garnet with age. It smells delicate, sometimes of violets. It is dry, full and harmonious. Wines kept in wood may show a hint of it on the nose and palate.",
+    "Ageing counts from 1 November of the harvest year. Arneis Superiore ages at least 6 months. Nebbiolo ages at least 4 months. Nebbiolo Superiore ages at least 12 months, 6 of them in wooden casks. Nebbiolo Riserva ages at least 24 months, 12 of them in wooden casks.",
+    "A wine can carry the word \"vigna\" followed by a vineyard's place name or traditional name. It must be made and kept in separate vessels, and it cannot be enriched. Its yields are lower and its minimum alcohol is higher."
+   ],
+   "cite": [
+    "terre-alfieri-disc:p1",
+    "terre-alfieri-disc:p2",
+    "terre-alfieri-disc:p3",
+    "terre-alfieri-disc:p7",
+    "terre-alfieri-disc:p8",
+    "terre-alfieri-disc:p9"
+   ]
+  }
+ ]
+}

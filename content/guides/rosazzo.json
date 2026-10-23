@@ -1,0 +1,90 @@
+{
+ "id": "rosazzo",
+ "title": "Why Rosazzo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Rosazzo's hills are mostly marl, which looks like rock but crumbles into clay. Vines climb them on terraces around an abbey whose records trace wine here over the last thousand years.",
+  "cite": [
+   "rosazzo-disc:p3",
+   "rosazzo-disc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Soft hills around an abbey",
+   "paras": [
+    "The vineyards lie on hills across the communes of Manzano and San Giovanni al Natisone, with a very small stretch in Corno di Rosazzo. All of it is in the province of Udine, in the southern part of the Friuli Colli Orientali area.",
+    "The hills are soft and rounded, full of gentle bumps and hollows. The vine terraces curve around them in half-circles, turning to face the midday sun. From the slopes the eye crosses the plain below and reaches the sea.",
+    "At the heart of the area stands the Abbey of Rosazzo, built between 1068 and 1070. Hermits had settled on the hill of Santa Caterina before the year 1000. Augustinian, then Benedictine, then Dominican monks ran the abbey, and it became the main wine reference point of eastern Friuli."
+   ],
+   "cite": [
+    "rosazzo-disc:p3",
+    "rosazzo-disc:p4",
+    "rosazzo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Abbey of Rosazzo",
+     "point": [
+      13.4237,
+      46.0006
+     ],
+     "zoom": 11,
+     "caption": "The abbey built between 1068 and 1070 sits in the heart of the area. Its monks led the growth of farming on these hills.",
+     "cite": [
+      "rosazzo-disc:p4",
+      "rosazzo-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A little milder, a little drier",
+   "paras": [
+    "During the growing season the average temperature is 18.6 °C and the average rainfall is 915 mm. September is the wettest month, with about 156 mm. June is the driest, with 111 mm.",
+    "From 1 April to 31 October the heat adds up to 1834 °Cd, against 1806 °Cd for the province. Vines here run 5 days ahead of the provincial average.",
+    "Over a whole year the average is 14.2 °C against 14 °C for the province, and rainfall is 1290 mm against 1360 mm. The area is milder and drier because it lies closer to the sea and farther from the mountain ranges than the province's other denominations."
+   ],
+   "cite": [
+    "rosazzo-disc:p4"
+   ]
+  },
+  {
+   "id": "ponca",
+   "beat": "ground",
+   "title": "Rock that turns to clay",
+   "paras": [
+    "The ground is mostly of Eocene origin: marl (limy clay) in alternating layers with sandstone. Together they are called flysch, and locally ponca, which literally means marl. Marl wins over sandstone.",
+    "It looks like rock but is very fragile. Weather or machinery easily crumble it until it feels like clay. Tests show a silty clay loam that is moderately alkaline.",
+    "The soil is low in nitrogen and very low in phosphorus. Its power to hold nutrients is medium to low. It is not very compact and drains rather poorly, so rain running off the surface causes some erosion.",
+    "Growers answer with frequent terraces and giropoggio planting, where rows run around the hill along its contours. They also take care over drainage, to guard against landslides. Preparing the land is extremely costly."
+   ],
+   "cite": [
+    "rosazzo-disc:p3"
+   ]
+  },
+  {
+   "id": "white",
+   "beat": "rules",
+   "title": "One dry white, led by Friulano",
+   "paras": [
+    "Rosazzo makes a single wine, a dry white. It has been a DOCG (controlled and guaranteed designation of origin) since 14 October 2011. Before that it was a subzone of Colli Orientali del Friuli.",
+    "Friulano must be at least 50% of the vineyard. Sauvignon makes up 20% to 30%. Pinot bianco and/or Chardonnay make up 20 to 30%. Ribolla Gialla can reach 10%. Other white grapes suited to the province of Udine can add up to 5%.",
+    "Yields are capped at 8 t of grapes a hectare and 56 hl of wine a hectare. New plantings need at least 4000 vines a hectare, each averaging no more than 2 kg of grapes. The grapes need at least 11.50% vol natural strength.",
+    "In the glass the wine is straw yellow, more or less deep, with a characteristic, delicate scent. On the palate it is dry and harmonious, with a winey feel. It needs at least 12.00% vol total alcohol and 4.0 g/l total acidity. Its sugar-free extract must reach 19.0 g/l. Wood containers are allowed for making and ageing it.",
+    "It goes on sale from 1 April of the second year after the harvest, and the vintage must be on the label. On the palate the wines are rich and silky, refined and elegant, with balanced acidity. In the best years they can age for a long time."
+   ],
+   "cite": [
+    "rosazzo-disc:p1",
+    "rosazzo-disc:p2",
+    "rosazzo-disc:p3",
+    "rosazzo-disc:p4",
+    "rosazzo-disc:p5"
+   ]
+  }
+ ]
+}

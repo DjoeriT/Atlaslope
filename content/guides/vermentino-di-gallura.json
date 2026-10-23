@@ -1,0 +1,130 @@
+{
+ "id": "vermentino-di-gallura",
+ "title": "Why Vermentino di Gallura tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Gallura's vines grow in coarse sand weathered from granite, under steady sun and constant wind. Soil and climate together give the wine its scent and a good natural acidity.",
+  "cite": [
+   "vermentino-di-gallura-disc:p5",
+   "vermentino-di-gallura-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "gallura",
+   "beat": "place",
+   "title": "Granite coast, cork-oak interior",
+   "paras": [
+    "Gallura lies in the north-east of Sardinia. It sits almost entirely in the province of Olbia-Tempio, with a small extension into the province of Sassari.",
+    "Near the sea the granite rocks are smoothed and shaped by wind and water, among dense Mediterranean scrub. Further inland, woods of oak and cork oak mix with wild olive, almost as if guarding very old buildings.",
+    "Vines grow from sea level up to the foothills at 500 m, and no vineyard may stand higher than that. Vermentino here is thought to have come from Spain between the 15th and the 18th century, but its true origin is still unknown. Wine was already being made in Gallura in the Nuragic age, between 1400 and 1200 BC."
+   ],
+   "cite": [
+    "vermentino-di-gallura-disc:p2",
+    "vermentino-di-gallura-disc:p5",
+    "vermentino-di-gallura-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Tempio Pausania, the granite interior",
+     "point": [
+      9.1,
+      40.9
+     ],
+     "zoom": 9.5,
+     "caption": "Inland Gallura, where woods of oak and cork oak mix with wild olive.",
+     "cite": [
+      "vermentino-di-gallura-disc:p5"
+     ]
+    },
+    {
+     "label": "The granite coast near Palau",
+     "point": [
+      9.38,
+      41.18
+     ],
+     "zoom": 10,
+     "caption": "Near the sea the granite is smoothed by wind and water, among dense Mediterranean scrub.",
+     "cite": [
+      "vermentino-di-gallura-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild winters and a constant wind",
+   "paras": [
+    "The climate is warm temperate with mild winters. Rain falls mostly in autumn and winter, while the vine rests. Spring rain is light, and the total is under 700 mm a year.",
+    "A constant wind blows across Gallura. It gives healthy grapes, most of all near the sea, because there the wind is particularly salty."
+   ],
+   "cite": [
+    "vermentino-di-gallura-disc:p5",
+    "vermentino-di-gallura-disc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Sand made from granite",
+   "paras": [
+    "The ground is mainly granite, covered by coarse sand of varying depth. Sometimes the sand is mixed with clay. The rock formed about 300 million years ago, in the Variscan mountain-building. Its erosion began once the rock above it was stripped away.",
+    "The coarser the soil, the better the vine grows, because its roots can go deep. Sandy, stony soils are therefore generally best, and they give scented, pleasant wines of good alcohol.",
+    "The soils drain well, are porous and are high in potassium. With plenty of sun and steady wind, this gives the wine its scent and alcohol. It also gives minerality and a good natural acidity."
+   ],
+   "cite": [
+    "vermentino-di-gallura-disc:p5",
+    "vermentino-di-gallura-disc:p6"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "A plain white and five other forms",
+   "paras": [
+    "The wine is at least 95% Vermentino. Up to 5% can be other white, non-aromatic grapes approved for Sardinia.",
+    "The plain wine has at least 12% alcohol and goes on sale from 15 January after the harvest. Yields are capped at 10 t/ha.",
+    "Superiore has a lower yield cap of 9 t/ha and at least 13% alcohol. Vendemmia tardiva, the late harvest, also has at least 13% alcohol. Neither can be sold before 15 January.",
+    "Passito comes from grapes dried on the vine or indoors to at least 15% potential alcohol. It makes at most 50% wine from the fresh grapes and cannot be sold before 1 May. It is more or less deep gold and smells of ripe fruit. It tastes full and savoury, pleasantly aromatic.",
+    "Frizzante is the semi-sparkling wine. Its bubbles are lively and fade fast, and it runs from dry to off-dry. Spumante is the fully sparkling wine, with fine, lasting bubbles, from dry to sweet. Frizzante and tank-made spumante go on sale from 1 December of the harvest year.",
+    "Metodo classico spumante gets its bubbles from a second fermentation in the bottle. It cannot be sold before at least nine months of that fermentation, and the label must show the date of first disgorgement."
+   ],
+   "cite": [
+    "vermentino-di-gallura-disc:p1",
+    "vermentino-di-gallura-disc:p2",
+    "vermentino-di-gallura-disc:p3",
+    "vermentino-di-gallura-disc:p4"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Amabile",
+    "text": "Wines that are off-dry must carry the word \"amabile\" on the label.",
+    "cite": [
+     "vermentino-di-gallura-disc:p4"
+    ]
+   },
+   {
+    "term": "Sardegna",
+    "text": "The name \"Sardegna\" may stand before Vermentino di Gallura on the label.",
+    "cite": [
+     "vermentino-di-gallura-disc:p4"
+    ]
+   },
+   {
+    "term": "Vigna",
+    "text": "The word \"vigna\" may be used only when a place name follows it. That vineyard must be registered on its own, and its wine made and kept in separate tanks.",
+    "cite": [
+     "vermentino-di-gallura-disc:p5"
+    ]
+   }
+  ],
+  "cite": [
+   "vermentino-di-gallura-disc:p4",
+   "vermentino-di-gallura-disc:p5"
+  ]
+ }
+}

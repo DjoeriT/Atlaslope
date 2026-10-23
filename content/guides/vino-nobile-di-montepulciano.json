@@ -1,0 +1,111 @@
+{
+ "id": "vino-nobile-di-montepulciano",
+ "title": "Why Vino Nobile di Montepulciano tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The hills here are mostly old sea sediment, and sand dominates. Studies found that these soils give Sangiovese notes of sour cherry, violet and spice.",
+  "cite": [
+   "vino-nobile-di-montepulciano-disc:p9",
+   "vino-nobile-di-montepulciano-disc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills above the Valdichiana",
+   "paras": [
+    "The whole zone lies inside one municipality, Montepulciano, in the province of Siena. The vineyards climb the hills from 250 to 600 m. The valley floor of the Valdichiana is left out.",
+    "Wine here is old. The oldest document about the town's wine dates from 789, when a cleric gave a plot of vineyard to a church. A kylix, an ancient wine cup, was found in 1868 in an Etruscan tomb near the town. Cellars still lie under the town's grand palaces, and some are still used to age wine.",
+    "Montepulciano has also stayed a land of vines. It escaped the spread of building seen in several other parts of Tuscany."
+   ],
+   "cite": [
+    "vino-nobile-di-montepulciano-disc:p9",
+    "vino-nobile-di-montepulciano-disc:p11",
+    "vino-nobile-di-montepulciano-disc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Montepulciano",
+     "point": [
+      11.7826,
+      43.0955
+     ],
+     "zoom": 11,
+     "caption": "The town whose palaces have cellars under them, some still used to age wine.",
+     "cite": [
+      "vino-nobile-di-montepulciano-disc:p11"
+     ]
+    },
+    {
+     "label": "Valdichiana",
+     "point": [
+      11.85,
+      43.07
+     ],
+     "zoom": 9.5,
+     "caption": "The valley floor below the hills is left out of the production zone.",
+     "cite": [
+      "vino-nobile-di-montepulciano-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sun-and-nights",
+   "beat": "weather",
+   "title": "Dry summers, big September swings",
+   "paras": [
+    "The climate is Mediterranean. July and August are the hottest months. The cooler weather after them favours the aromatic and phenolic ripening of the grapes. The Winkler index averages 1900°, and 1750° at the highest altitude.",
+    "Rain averages 690 mm over most of the zone and about 740 mm in the south. October and November are the wettest months. Summer tends to be dry, with July averaging under 30 mm.",
+    "Winter and spring rain builds a good store of water in the fields. The dry summer then usually brings a moderate water shortage. It favours ripening over leafy growth. In September and early October the gap between day and night temperatures is large, especially at higher altitudes, and it favours aromatic and phenolic complexity."
+   ],
+   "cite": [
+    "vino-nobile-di-montepulciano-disc:p10",
+    "vino-nobile-di-montepulciano-disc:p12"
+   ]
+  },
+  {
+   "id": "sand",
+   "beat": "ground",
+   "title": "Sand from an old sea",
+   "paras": [
+    "The rock beneath is mostly marine sediment from the Pliocene. Sand dominates, above all at higher altitude. Other soils formed on continental sediments of the early Pleistocene, mainly on the slopes that fall toward the Valdichiana. Conglomerates appear in the east.",
+    "Sand is the mark of Montepulciano. In Tuscany it is as widespread only at San Gimignano, and it is almost absent at Montalcino and in Chianti Classico.",
+    "Four soil types stand out. Two grew on Pliocene sea deposits, one sandy and one silty clay, and the water available rises from the first to the second. In the silty-clay group, the Monte series yields little and ripens early. The other two grew on Pleistocene ground, as ancient or recent soils, and are linked to more productive vines.",
+    "Zoning studies since 1989 found that these soils give Sangiovese its typical notes of sour cherry, violet and spice. Growers even out the differences between soils. They work the poorer soils by machine and grow grass between the vines on the more fertile ones."
+   ],
+   "cite": [
+    "vino-nobile-di-montepulciano-disc:p9",
+    "vino-nobile-di-montepulciano-disc:p10",
+    "vino-nobile-di-montepulciano-disc:p12"
+   ]
+  },
+  {
+   "id": "prugnolo",
+   "beat": "rules",
+   "title": "Prugnolo gentile, aged for years",
+   "paras": [
+    "Vino Nobile is a dry red, in a base version and a Riserva. Sangiovese, called Prugnolo gentile locally, must make up at least 70%. Up to 30% can be other grapes suited to Tuscany, with no more than 5% white. Aromatic grapes are out, except Malvasia Bianca Lunga.",
+    "The yield limit is 8 t per hectare. New and replanted vineyards need at least 3330 vines per hectare. The grapes must reach at least 12% natural alcohol. The wine must age at least 2 years from 1 January after the harvest. Producers choose between three set ways to spend that time. Each has at least 12 months in wood.",
+    "Riserva needs grapes of at least 12.5% natural alcohol and at least 3 years of ageing, 6 months of them in bottle.",
+    "Pieve is a mention for the wine that is not Riserva. It is followed by the name of one of 12 sub-zones. It needs at least 85% Sangiovese and vines at least 15 years old. The grapes must come from the bottler's own vineyards and reach at least 13% natural alcohol. Yields drop to 7 t per hectare. Ageing is at least 3 years, with at least 12 months in wood and 12 months in bottle.",
+    "Vigna puts a named vineyard on the label. That wine must be made and stored apart from the rest.",
+    "Every label must carry the word Toscana and the vintage. The wine is sold only in dark glass Bordeaux-type bottles with a cork.",
+    "In the glass the wine is an intense ruby, turning garnet with age. The nose is intense and ethereal, with sour cherry, violet and spice. A hint of wood is possible. It is very structured and elegant. Its evident tannins help it keep well over time."
+   ],
+   "cite": [
+    "vino-nobile-di-montepulciano-disc:p1",
+    "vino-nobile-di-montepulciano-disc:p2",
+    "vino-nobile-di-montepulciano-disc:p3",
+    "vino-nobile-di-montepulciano-disc:p4",
+    "vino-nobile-di-montepulciano-disc:p5",
+    "vino-nobile-di-montepulciano-disc:p7",
+    "vino-nobile-di-montepulciano-disc:p8",
+    "vino-nobile-di-montepulciano-disc:p9",
+    "vino-nobile-di-montepulciano-disc:p12",
+    "vino-nobile-di-montepulciano-disc:p14"
+   ]
+  }
+ ]
+}

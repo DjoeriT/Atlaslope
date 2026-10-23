@@ -11,3 +11,7 @@
 ## madiran
 - applied `soil.text`: Sheet says boulbènes lie 'with pebbles and loess on top'. p6 says the pebble layer caps the ridges and is itself covered by thick wind-blown silt on the plateaus, with pebbles showing only at the edges.
 - NOT applied (unsure) `famous.styles`: Sheet lists 'Madiran Sud-Ouest' and 'Château / Clos' as famous styles. p3 gives Clos and Château as mentions traditionnelles, and p9 gives Sud-Ouest as a larger geographic unit for the label. These are label terms, not wine styles. -> []
+
+## cotes-de-gascogne
+- applied `why.text`: Sheet says clay or sand soils give the water, so wines are fresh and fruity. Pliego p8 says rain in the west and water-retentive soils in the east supply the water, and it makes no direct taste link.
+- NOT applied (unsure) `famous.styles`: Sheet lists Condomois and Vin de pays as styles. Pliego p10 calls Condomois a smaller geographic unit, and p3 calls Vin de pays a traditional mention. Neither is a wine style. -> [{"name": "Primeur / Nouveau", "text": "Early-release still wine; reds may skip the malolactic rule."}, {"name": "Vin de raisins surmûris", "text": "Sweet white from overripe grapes, notably Gros and 

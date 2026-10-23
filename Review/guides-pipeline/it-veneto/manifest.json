@@ -1,0 +1,17 @@
+{
+ "sources": {
+  "valpolicella-disc": "Review/sources/fetched/disc-valpolicella.txt",
+  "soave-disc": "Review/sources/fetched/disc-soave.txt",
+  "prosecco-disc": "Review/sources/fetched/disc-prosecco.txt",
+  "conegliano-valdobbiadene-disc": "Review/sources/fetched/disc-conegliano-valdobbiadene.txt",
+  "asolo-prosecco-disc": "Review/sources/fetched/disc-asolo-prosecco.txt",
+  "bagnoli-friularo-disc": "Review/sources/fetched/disc-bagnoli-friularo.txt",
+  "bardolino-superiore-disc": "Review/sources/fetched/disc-bardolino-superiore.txt",
+  "colli-di-conegliano-disc": "Review/sources/fetched/disc-colli-di-conegliano.txt",
+  "colli-euganei-fior-darancio-disc": "Review/sources/fetched/disc-colli-euganei-fior-darancio.txt",
+  "lison-disc": "Review/sources/fetched/disc-lison.txt",
+  "montello-rosso-disc": "Review/sources/fetched/disc-montello-rosso.txt",
+  "piave-malanotte-disc": "Review/sources/fetched/disc-piave-malanotte.txt",
+  "recioto-di-gambellara-disc": "Review/sources/fetched/disc-recioto-di-gambellara.txt"
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "id": "bagnoli-friularo",
+ "title": "Why Bagnoli Friularo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Friularo has a very long growing season that runs on into cold late-autumn mornings. In the mouth it is rustic and intense, with a strong acidity typical of the grape.",
+  "cite": [
+   "bagnoli-friularo-disc:p5",
+   "bagnoli-friularo-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plain",
+   "beat": "place",
+   "title": "Flat land near the Euganean Hills",
+   "paras": [
+    "The vineyards lie in the province of Padova, in 14 municipalities. The Classico zone is the whole territory of Bagnoli di Sopra.",
+    "The Euganean Hills (colli euganei) stand close by. Battaglia Terme and Monselice lie in the northern part of the zone."
+   ],
+   "cite": [
+    "bagnoli-friularo-disc:p1",
+    "bagnoli-friularo-disc:p2",
+    "bagnoli-friularo-disc:p4",
+    "bagnoli-friularo-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Euganean Hills",
+     "point": [
+      11.67,
+      45.31
+     ],
+     "zoom": 10,
+     "caption": "The hills close to the vineyards send evening and morning breezes over the vines.",
+     "cite": [
+      "bagnoli-friularo-disc:p5"
+     ]
+    },
+    {
+     "label": "Bagnoli di Sopra, the Classico zone",
+     "point": [
+      11.885,
+      45.188
+     ],
+     "zoom": 10.5,
+     "caption": "The whole municipality of Bagnoli di Sopra is the Classico zone.",
+     "cite": [
+      "bagnoli-friularo-disc:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Late grapes, cold mornings",
+   "paras": [
+    "The climate is temperate, with Mediterranean temperatures. Winters are mild and summers hot and dry. Rain averages 700 to 900 mm a year, with two peaks, in spring and autumn.",
+    "The winds come mostly from the north-east. The sea is fairly near, so sea breezes and the bora also arrive from time to time through the growing season. They stop humidity from stagnating, especially in summer.",
+    "In summer the nearby hills send evening and morning air that eases the hottest hours. In spring the same air guards against frost.",
+    "Friularo buds early and ripens late. Its long season meets big swings between day and night, and cold late-autumn mornings. During ripening the swings are often large, and they raise the colour and phenolic compounds in the berry. At harvest they also give a more violet tone.",
+    "The bunch is large and tight, with thick skins. Autumn damp cannot harm the grapes, so they keep ripening."
+   ],
+   "cite": [
+    "bagnoli-friularo-disc:p5",
+    "bagnoli-friularo-disc:p6",
+    "bagnoli-friularo-disc:p7"
+   ]
+  },
+  {
+   "id": "soil",
+   "beat": "ground",
+   "title": "Volcanic rock and river silt",
+   "paras": [
+    "Around Battaglia Terme and Monselice the soils come from broken-down volcanic rock. They hold plenty of stones and drain well. They are rich in minerals and trace elements.",
+    "The flat land in the other municipalities holds sediments from the Adige, Bacchiglione and Brenta rivers. These soils have more silt and organic matter than non-alluvial ones. They are sub-acidic, and their potassium suits the vine's great acidity.",
+    "The rules allow vineyards only on alluvial soils of medium texture that lean to loose. Soils rich in organic matter are excluded. So are wet or spring-fed ground and land that floods.",
+    "The mineral soils give salty notes, with sensations almost of sulphur."
+   ],
+   "cite": [
+    "bagnoli-friularo-disc:p2",
+    "bagnoli-friularo-disc:p4",
+    "bagnoli-friularo-disc:p5",
+    "bagnoli-friularo-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Monselice and Battaglia Terme",
+     "point": [
+      11.77,
+      45.26
+     ],
+     "zoom": 10.5,
+     "caption": "Soils from broken-down volcanic rock, stony and well drained.",
+     "cite": [
+      "bagnoli-friularo-disc:p4"
+     ]
+    },
+    {
+     "label": "Bacchiglione river at Bovolenta",
+     "point": [
+      11.94,
+      45.27
+     ],
+     "zoom": 10,
+     "caption": "River sediments of the Adige, Bacchiglione and Brenta make up the flat land.",
+     "cite": [
+      "bagnoli-friularo-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "friularo",
+   "beat": "rules",
+   "title": "A red that is dry, aged or dried",
+   "paras": [
+    "Raboso Piave must make up at least 90% of the vineyard, and other red grapes suited to Padova can make up the rest. Only reds are made, in a dry and a sweet style.",
+    "The dry wine is ruby red when young and turns garnet with age. Its nose must be vinous and intense. On the palate it is dry, full and velvety, leaning to tart.",
+    "Young Friularo smells of red fruit such as sour cherry, plum and cherry. With age come notes of cocoa, cinnamon and vanilla. Oak barrels add a woody fragrance.",
+    "Riserva is aged at least 24 months, 12 of them in barrel, counted from 1 November of the harvest year. Other dry wines need at least 12 months. They may use up to 50% dried grapes.",
+    "Vendemmia tardiva needs at least 60% of the grapes picked and made after St Martin's summer (11 November).",
+    "Passito comes from grapes dried naturally indoors. They are pressed no earlier than 8 December, unless the Veneto region brings the date forward. The wine spends at least two years in barrel, where a slow fermentation may go on and ease off in the cold months. It ranges from semi-sweet to sweet and is velvety. It has at least 15.50% total alcohol.",
+    "Classico means grapes only from Bagnoli di Sopra.",
+    "Vigna with a place name marks one vineyard, kept apart from grape to wine."
+   ],
+   "cite": [
+    "bagnoli-friularo-disc:p1",
+    "bagnoli-friularo-disc:p2",
+    "bagnoli-friularo-disc:p3",
+    "bagnoli-friularo-disc:p4",
+    "bagnoli-friularo-disc:p6"
+   ]
+  }
+ ]
+}

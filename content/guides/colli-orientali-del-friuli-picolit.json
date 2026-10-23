@@ -1,0 +1,121 @@
+{
+ "id": "colli-orientali-del-friuli-picolit",
+ "title": "Why Colli Orientali del Friuli Picolit tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Soft marl hills crumble so easily that growers had to carve them into terraces. On those terraces Picolit is picked fairly late and usually dried into a golden, off-dry to sweet wine.",
+  "cite": [
+   "colli-orientali-del-friuli-picolit-disc:p4",
+   "colli-orientali-del-friuli-picolit-disc:p5",
+   "colli-orientali-del-friuli-picolit-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Terraced hills by the Slovenian border",
+   "paras": [
+    "The vineyards lie in 19 municipalities in the central-eastern part of the province of Udine, close to the border with Slovenia. Hills and plains alternate along a line running north-west to south-east. That gives wide areas that can enjoy an ideal exposure for vines.",
+    "The vines grow between 100 and 400 m. Most stand on terraced hills, and growers prefer the highest points of the hills. Generations of growers have shaped the slopes, and a visitor can follow the steps of vines with the eye.",
+    "Cialla is a much smaller subzone. It lies in the north of the municipality of Prepotto, on the border with Cividale del Friuli."
+   ],
+   "cite": [
+    "colli-orientali-del-friuli-picolit-disc:p4",
+    "colli-orientali-del-friuli-picolit-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Cividale del Friuli",
+     "point": [
+      13.431,
+      46.094
+     ],
+     "zoom": 10,
+     "caption": "Cividale del Friuli lies in the central part of the zone, and the Cialla subzone borders it.",
+     "cite": [
+      "colli-orientali-del-friuli-picolit-disc:p4",
+      "colli-orientali-del-friuli-picolit-disc:p5"
+     ]
+    },
+    {
+     "label": "Rocca Bernarda, Ipplis",
+     "point": [
+      13.4,
+      46.01
+     ],
+     "zoom": 11,
+     "caption": "The Perusini family owned Rocca Bernarda at Ipplis, and Picolit's revival is largely their work.",
+     "cite": [
+      "colli-orientali-del-friuli-picolit-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Mountains to the north, the sea close by",
+   "paras": [
+    "The Julian Prealps stand north of the hills and shelter them well from cold northern winds. The Friulian plain is near, and the sea is no more than 40 km away in a straight line. Both help to soften the swings in temperature, so the climate is fairly mild. Local differences come from the shape of the relief.",
+    "The average temperature is about 15 °C over the year. From April to October the averages range between 18 and 19 °C, and the heat sum is between 1800 and 1900 °Cd.",
+    "Rain varies a lot between microclimates and between years. During the growing season Tarcento and Nimis, the northernmost part of Friuli Venezia Giulia's vineyards, average 1157 mm. Around Cividale del Friuli it is about 976 mm. In the southern municipalities such as San Giovanni al Natisone it falls below 900 mm.",
+    "A dryness index compares heat with rain from 1 April to 31 October. The higher it is, the drier the year. Between 2 and 3 are the best years, and above 3 are scorching ones such as 2003 and 2006. Over the last decade it has averaged 1.9."
+   ],
+   "cite": [
+    "colli-orientali-del-friuli-picolit-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Julian Prealps",
+     "point": [
+      13.35,
+      46.27
+     ],
+     "zoom": 9,
+     "caption": "The Julian Prealps ring the hills to the north and shelter them from cold northern winds.",
+     "cite": [
+      "colli-orientali-del-friuli-picolit-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ponca",
+   "beat": "ground",
+   "title": "Ponca: layers that crumble",
+   "paras": [
+    "The soils belong to the Flysch of Cormòns. It is a pattern of alternating layers of marl (clay rich in limestone) and sandstone. In Friulian, the region's traditional language, the whole mix is called ponca.",
+    "Marl is the common layer here, and it usually holds 40 to 60% limestone. It breaks down fast in the weather into flaky pieces, loses its limestone and turns yellowish before dissolving into clay. The sandstones are fine to medium in grain and well cemented, and they rarely break down. Fossils of tiny sea creatures turn up in the marl on the hills of Rosazzo, Rocca Bernarda, Noax and Buttrio.",
+    "Marl is very impermeable, so rain runs over the surface and wears the land away. That has made soft hills well below 200 m and V-shaped valleys with fast streams. It also forced growers to terrace the hills, so the vines would not be undermined. Only hillside soils of Eocene origin with a good lie and exposure qualify. In marginal zones, soils of mixed origin with coarse material qualify too. Damp valley floors without enough sun are excluded."
+   ],
+   "cite": [
+    "colli-orientali-del-friuli-picolit-disc:p2",
+    "colli-orientali-del-friuli-picolit-disc:p4",
+    "colli-orientali-del-friuli-picolit-disc:p5"
+   ]
+  },
+  {
+   "id": "picolit",
+   "beat": "rules",
+   "title": "A golden wine from Picolit",
+   "paras": [
+    "The wine is made from Picolit, at least 85%. Up to 15% can be other white grapes allowed in Friuli Venezia Giulia, but never Traminer aromatico. It is one type of wine: a golden yellow, off-dry to sweet white.",
+    "Yields are tiny. The vineyard may give at most 4 tonnes of grapes per hectare, and the wine is limited to 55% of the grapes, a maximum of 22 hl per hectare. The grapes must reach 13.00% natural alcohol, and the finished wine at least 15.00% in total. Enrichment is not allowed.",
+    "Harvest is usually fairly late. In years when the weather allows, the grapes get slightly overripe on the vine or slightly dried. They are usually picked into small crates, then left in airy rooms or on racks to dry slowly and concentrate. Drying is allowed on the plant or on racks. Crates outdoors are allowed too, and so are rooms that may control the climate. Fermentation usually follows the traditional way for white wines, even with dried grapes. Because the sugars are so concentrated, growers try to control the time and temperature closely. Barrels may be used for fermenting or ageing.",
+    "After some years of ageing the colour is often deep gold, old gold or almost amber. The scent is elegant and recalls honeycomb. The wine can go on sale after 1 September of the year after the harvest. The vintage must be on the label and the bottle must have a cork.",
+    "Cialla goes further. It is 100% Picolit, the grapes must reach 14% natural alcohol, and it may also carry the word Riserva.",
+    "Picolit was famous long ago. Count Fabio Asquini of Fagagna began selling it on a large scale in 1762 and made it known at the main courts of Europe. To test how it travelled, he once shipped a case of bottles to Cadiz and had it sent back, with excellent results. After his death the wine slowly declined. Its revival a few decades ago is largely the work of the Perusini family of Rocca Bernarda."
+   ],
+   "cite": [
+    "colli-orientali-del-friuli-picolit-disc:p1",
+    "colli-orientali-del-friuli-picolit-disc:p3",
+    "colli-orientali-del-friuli-picolit-disc:p4",
+    "colli-orientali-del-friuli-picolit-disc:p5",
+    "colli-orientali-del-friuli-picolit-disc:p6",
+    "colli-orientali-del-friuli-picolit-disc:p7",
+    "colli-orientali-del-friuli-picolit-disc:p9"
+   ]
+  }
+ ]
+}

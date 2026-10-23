@@ -1,0 +1,143 @@
+{
+ "id": "valtellina-superiore",
+ "title": "Why Valtellina Superiore tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Nebbiolo grows here on south-facing stone terraces in an Alpine valley. The mass of stone and the steep slopes add heat, so vineyard air is constantly 4 to 5 °C warmer than the flat valley floor.",
+  "cite": [
+   "valtellina-superiore-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "An Alpine valley with a south-facing slope",
+   "paras": [
+    "Valtellina lies north of Lake Como, between latitudes 46 and 46.5. Where it has vines, the valley runs east to west. The foothill slope on the right bank of the Adda river faces fully south.",
+    "The Rhaetian Alps shelter the valley to the north and east. Their peaks all top 3,000 m, and some pass 4,000 m. To the south the slightly lower Orobie Alps close it in, in a kind of amphitheatre. The vines grow on the south-facing Rhaetian slope, from 300 m up to a maximum of 700 m. The only exception is two alluvial fans in the widest part of the valley.",
+    "The Lake Como basin lies fairly near, to the south-west. It regulates and softens the temperature."
+   ],
+   "cite": [
+    "valtellina-superiore-disc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The sunny Rhaetian slope above Sondrio",
+     "point": [
+      9.85,
+      46.168
+     ],
+     "zoom": 11,
+     "caption": "The vines sit on the south-facing slope on the right bank of the Adda, from 300 m to 700 m.",
+     "cite": [
+      "valtellina-superiore-disc:p8"
+     ]
+    },
+    {
+     "label": "Lake Como",
+     "point": [
+      9.3,
+      46.04
+     ],
+     "zoom": 9.5,
+     "caption": "The fairly near Lake Como basin, to the south-west, regulates and softens the valley's temperature.",
+     "cite": [
+      "valtellina-superiore-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "beat": "weather",
+   "title": "Sun, wind and a big daily swing",
+   "paras": [
+    "Rain is scarce, averaging 850 mm a year, and it is well spread through the year. On the vineyard slope it decreases further up the valley. A breeze blows constantly. Relative humidity stays very low, between 65% and 80%.",
+    "In the growing season, April to October, daytime air runs between +5 °C and +35 °C. In the weeks just before ripening ends, in late September and early October, day and night can differ by 8 °C and up to 20 °C. The sun shines for more than 1,900 hours a year.",
+    "Late frost is frequent on the valley floor. The vineyards sit on terraces up the slope, placed so that late frost does not harm them."
+   ],
+   "cite": [
+    "valtellina-superiore-disc:p8"
+   ]
+  },
+  {
+   "id": "walls",
+   "beat": "ground",
+   "title": "Crumbled granite and over 2,500 km of walls",
+   "paras": [
+    "The vineyard soil is mostly sand (about 70%) and silt (about 18%), from crumbled granite. It has no limestone. A little clay appears only rarely, below 10%.",
+    "The soil drains fast and holds almost no water, so it is strongly prone to drought. It is also shallow, with a workable depth of 40 to 120 cm. It is not rare to see roots pushing straight into cracks in the rock.",
+    "Dry-stone walls hold up the vineyard terraces. Together they run for more than 2,500 km. Each hectare carries on average more than 2,000 m² of vertical wall. The large mass of stones and rock helps the vineyard heat up further. Slopes that in some cases exceed 70% concentrate the sun's energy on a smaller surface.",
+    "The terraces were begun some thousands of years ago and growers have kept them up ever since. They opened the mountain slopes to farming. Up there the crops were also safe from the sudden floods of the Adda. They were safe too from barbarian soldiers passing along the valley floor."
+   ],
+   "cite": [
+    "valtellina-superiore-disc:p8",
+    "valtellina-superiore-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Sassella terraces",
+     "point": [
+      9.86,
+      46.165
+     ],
+     "zoom": 13,
+     "caption": "The terraced slope below the sanctuary of Madonna della Sassella, where the dry-stone walls climb the hill.",
+     "cite": [
+      "valtellina-superiore-disc:p2",
+      "valtellina-superiore-disc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nebbiolo",
+   "beat": "rules",
+   "title": "Nebbiolo, called Chiavennasca here",
+   "paras": [
+    "Valtellina Superiore is a red wine made from at least 90% Nebbiolo, which locals call Chiavennasca. Up to 10% can be other non-aromatic red grapes approved for growing in Lombardy. The label may also name the grape, as Nebbiolo or Chiavennasca. The rules cover still red wine only.",
+    "Five subzones can appear on the label: Maroggia, Sassella, Grumello, Inferno and Valgella. Each name is only for wine from vineyards inside that subzone. A blend of grapes or wine from two or more subzones carries only the name Valtellina Superiore.",
+    "Only vineyards on sloping, stony, well-exposed ground at the set heights qualify. The maximum is 8,000 kg of grapes per hectare. The wine can be released after 24 months of ageing, at least 12 of them in wooden barrels, counted from 1 December after the harvest. After at least three years of ageing it can be called riserva.",
+    "Every wine must reach at least 12.00% alcohol. The vintage must always appear on the bottle."
+   ],
+   "cite": [
+    "valtellina-superiore-disc:p1",
+    "valtellina-superiore-disc:p2",
+    "valtellina-superiore-disc:p5",
+    "valtellina-superiore-disc:p6",
+    "valtellina-superiore-disc:p7",
+    "valtellina-superiore-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Poschiavo, across the Swiss border",
+     "point": [
+      10.06,
+      46.32
+     ],
+     "zoom": 11,
+     "caption": "The ministry may let wine age in Brusio and Poschiavo in Switzerland, if the ageing is done or finished under the control body's watch.",
+     "cite": [
+      "valtellina-superiore-disc:p6"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word can be used only if the real place name or traditional name follows it, and that wine is made and kept in separate vessels. The name must also be in the grape records and on the regional list."
+   },
+   {
+    "term": "Stagafassli",
+    "text": "It can be added to Valtellina Superiore only on wine bottled in Switzerland, and it rules out subzones, riserva and other place names."
+   }
+  ],
+  "cite": [
+   "valtellina-superiore-disc:p7"
+  ]
+ }
+}

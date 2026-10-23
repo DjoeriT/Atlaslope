@@ -1,0 +1,105 @@
+{
+ "id": "castel-del-monte-bombino-nero",
+ "title": "Why Castel del Monte Bombino Nero tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Bombino Nero grows on a stony limestone plateau with frosty winters and dry summers. In the glass it is a dry pink wine with a delicate, fruity smell, led by the grape's own aromas.",
+  "cite": [
+   "castel-del-monte-bombino-nero-disc:p3",
+   "castel-del-monte-bombino-nero-disc:p4",
+   "castel-del-monte-bombino-nero-disc:p5",
+   "castel-del-monte-bombino-nero-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "murge",
+   "beat": "place",
+   "title": "An area named after a castle",
+   "paras": [
+    "The vineyards lie on the Murge, a plateau across central Puglia. The name Murgia comes from \"murex\", a sharp stone made mostly of limestone.",
+    "The highest points are in the north-west: Monte Caccia at 680 m and Torre Disperata at 686 m. In the south-east the Murge do not rise above 500 m.",
+    "The area takes its name from the famous castle of Frederick II, now a UNESCO site. It sits in the north-western part of the \"Murgia Centrale\" wine basin, partly inside the Alta Murgia natural park.",
+    "The grapes come from the whole of Minervino Murge and the D'Ameli enclave of Binetto. Parts of eight more communes join in, from Andria and Trani to Bitonto and Toritto."
+   ],
+   "cite": [
+    "castel-del-monte-bombino-nero-disc:p1",
+    "castel-del-monte-bombino-nero-disc:p4"
+   ],
+   "fly": [
+    {
+     "label": "Castel del Monte",
+     "point": [
+      16.271,
+      41.0848
+     ],
+     "zoom": 11,
+     "caption": "The castle of Frederick II, now a UNESCO site, gives the area its name.",
+     "cite": [
+      "castel-del-monte-bombino-nero-disc:p4"
+     ]
+    },
+    {
+     "label": "Alta Murgia",
+     "point": [
+      16.35,
+      40.97
+     ],
+     "zoom": 9,
+     "caption": "The area is partly inside the Alta Murgia natural park, on the Murge plateau.",
+     "cite": [
+      "castel-del-monte-bombino-nero-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Frosty winters, dry summers",
+   "paras": [
+    "The climate is typically sub-Mediterranean. Mean annual temperature runs from about 17.5 °C at Andria, the lowest place and near the sea, down to 14.4 °C in the higher areas farther inland.",
+    "January averages about 7 °C and the lowest readings are often below 0 °C. The warmest month is August, or also July, at about 25 °C. Snow generally falls above 500 m.",
+    "About 560 mm of rain falls in a year, mostly in autumn and winter and above all in November and December. June to August is the dry season, with only about 100 mm of rain.",
+    "Winds come mostly from the north (usually cold) or from the west and south (usually warm). The Serratina blows from the north, cold and dry, and brings frost. The Favonio blows from the south and south-west, warm and dry."
+   ],
+   "cite": [
+    "castel-del-monte-bombino-nero-disc:p5"
+   ]
+  },
+  {
+   "id": "stone",
+   "beat": "ground",
+   "title": "Hard rock, thin soil",
+   "paras": [
+    "The Murge plateau is traced back to the Cretaceous, when it rose from the sea. Its frame is well-layered dolomitic limestone and dolomite, generally compact. The rock is often fractured and worn into karst, and that structure explains why there is no surface water.",
+    "Under the area lies compact Cretaceous limestone, with Holocene river deposits in the inland parts. The commonest soil is shallow, very stony and rocky. In extreme cases it may not be fit for planting at all.",
+    "The water table lies deep under the karst plateau and pumping is expensive, so there is little irrigation. Wider-spreading vine training stays mostly on the lower, more fertile land."
+   ],
+   "cite": [
+    "castel-del-monte-bombino-nero-disc:p4",
+    "castel-del-monte-bombino-nero-disc:p5"
+   ]
+  },
+  {
+   "id": "pink",
+   "beat": "rules",
+   "title": "One grape, one pink wine",
+   "paras": [
+    "The wine must be at least 90% Bombino Nero. Up to 10% can come from other non-aromatic black grapes suited to the Murgia Centrale area of Puglia.",
+    "It is made in one style only, a dry rosato (pink wine). The colour is pink, more or less intense. The aroma is delicate and fruity and the palate is dry and harmonious. It must reach at least 12.00% alcohol, with at most 10.0 g/l of residual sugar.",
+    "The grape's own aromas dominate and the chemistry is well balanced.",
+    "New vineyards may be trained only as alberello (a free-standing bush vine) or against a trellis, with at least 4,000 vines per hectare. Only emergency irrigation is allowed. Yields are capped at 12 tonnes of grapes per hectare.",
+    "A label may carry \"vigna\" plus a vineyard name. That wine must be made and kept separately, and the vineyard must be on the regional list.",
+    "Every bottle must show the vintage. The wine is sold only in glass bottles of up to 6 litres, closed only with a stopper set flush in the neck."
+   ],
+   "cite": [
+    "castel-del-monte-bombino-nero-disc:p1",
+    "castel-del-monte-bombino-nero-disc:p2",
+    "castel-del-monte-bombino-nero-disc:p3",
+    "castel-del-monte-bombino-nero-disc:p4",
+    "castel-del-monte-bombino-nero-disc:p6"
+   ]
+  }
+ ]
+}

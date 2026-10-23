@@ -1,0 +1,114 @@
+{
+ "id": "colline-teramane-montepulciano-dabruzzo",
+ "title": "Why Colline Teramane Montepulciano d'Abruzzo tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "In the centre and north, hills in the province of Teramo reach the foot of the Gran Sasso massif. The big swings between day and night, owed to the hills and the nearby mountains, let Montepulciano grapes ripen fully and give long-lived wines.",
+  "cite": [
+   "colline-teramane-montepulciano-dabruzzo-disc:p6",
+   "colline-teramane-montepulciano-dabruzzo-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills from the sea to the mountains",
+   "paras": [
+    "The zone is a wide band of coastal and inland hills in the province of Teramo, in Abruzzo. In the centre and north it reaches the foot of the Gran Sasso massif and the Monti della Laga.",
+    "Slopes are generally quite gentle and well exposed. Vineyards must stand on hills or plateaus no higher than 550 m, never on damp valley floors."
+   ],
+   "cite": [
+    "colline-teramane-montepulciano-dabruzzo-disc:p3",
+    "colline-teramane-montepulciano-dabruzzo-disc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Gran Sasso",
+     "point": [
+      13.57,
+      42.47
+     ],
+     "zoom": 9.5,
+     "caption": "The imposing Gran Sasso massif, at whose foot the northern and central part of the zone reaches.",
+     "cite": [
+      "colline-teramane-montepulciano-dabruzzo-disc:p6",
+      "colline-teramane-montepulciano-dabruzzo-disc:p7"
+     ]
+    },
+    {
+     "label": "Monti della Laga",
+     "point": [
+      13.4,
+      42.6
+     ],
+     "zoom": 9.5,
+     "caption": "The Monti della Laga, the other range whose foot the zone reaches in its centre and north.",
+     "cite": [
+      "colline-teramane-montepulciano-dabruzzo-disc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "swings",
+   "beat": "weather",
+   "title": "Wide day-night swings, good airflow",
+   "paras": [
+    "The climate is temperate, turning warm-temperate in summer. Average temperatures run from 13 °C in April to 16 °C in October, with peaks of 24-25 °C in July and August.",
+    "Rain averages 700 mm a year on the coast and 800 mm on the inland hills. It is well spread through the year. October to December is the wettest time, at about 70-80 mm a month. July is the driest, at around 40-45 mm.",
+    "The gap between day and night is large, helped by the nearby Gran Sasso and Monti della Laga. So is the ventilation. Together they make ideal conditions for healthy grapes and for aromatic substances to build up in the bunches.",
+    "The Winkler index, the average active temperature from April to October, is above 2,000 degree-days. That ripens Montepulciano fully, and also the earlier-ripening Sangiovese."
+   ],
+   "cite": [
+    "colline-teramane-montepulciano-dabruzzo-disc:p6"
+   ]
+  },
+  {
+   "id": "clay",
+   "beat": "ground",
+   "title": "Clay across the whole zone",
+   "paras": [
+    "The soils are clay and silt, with looser layers in the coastal part. They are alluvial in origin, with clay and sand mixed with silt and gravel. The mix changes with closeness to mountain or sea, and with altitude.",
+    "Clay is always present, and it suits black grapes. Across the zone it gives wines of very intense colour and complex aromas. They are rich in alcohol and soft. They live long.",
+    "Most vineyards face south-southeast. That gives the vines excellent sun. It makes ideal conditions for ripening, with sugars concentrating and acids falling."
+   ],
+   "cite": [
+    "colline-teramane-montepulciano-dabruzzo-disc:p6",
+    "colline-teramane-montepulciano-dabruzzo-disc:p7"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Nearly all Montepulciano, only red",
+   "paras": [
+    "Only dry red is made here. Montepulciano must be at least 90% of an estate's vineyards. Sangiovese may make up to 10%, and in many cases Montepulciano is the only grape.",
+    "The grapes are held to a maximum of 9.5 tonnes per hectare, with no surplus allowed. Enrichment of the wine is not allowed. Yields are much lower than in other denominations.",
+    "The standard wine ages at least one year, with two months of it in bottle. Riserva ages at least three years, with at least one in wooden casks and two months in bottle. Riserva must also be full-bodied and velvety.",
+    "Every bottle must show the vintage. It is glass of no more than three litres, closed with a cork.",
+    "Soil and climate together give very structured wines. They are high in alcohol yet fresh. They are rich in colour and made for medium to long ageing."
+   ],
+   "cite": [
+    "colline-teramane-montepulciano-dabruzzo-disc:p1",
+    "colline-teramane-montepulciano-dabruzzo-disc:p2",
+    "colline-teramane-montepulciano-dabruzzo-disc:p3",
+    "colline-teramane-montepulciano-dabruzzo-disc:p4",
+    "colline-teramane-montepulciano-dabruzzo-disc:p5",
+    "colline-teramane-montepulciano-dabruzzo-disc:p7"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vigna",
+    "text": "The word may appear only if a place name or traditional name follows it, and the wine is made and kept in separate vessels. The name must also be recorded from the harvest declaration to the regional list."
+   }
+  ],
+  "cite": [
+   "colline-teramane-montepulciano-dabruzzo-disc:p5",
+   "colline-teramane-montepulciano-dabruzzo-disc:p6"
+  ]
+ }
+}

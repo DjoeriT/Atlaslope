@@ -1,0 +1,98 @@
+{
+ "id": "brunello-di-montalcino",
+ "title": "Why Brunello di Montalcino tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Soils that tend to be poor and short of water hold Sangiovese to modest vigour and a limited crop. With the usual breeze and plenty of sun, the grapes reach perfect ripeness and stay healthy.",
+  "cite": [
+   "brunello-di-montalcino-disc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hill",
+   "beat": "place",
+   "title": "A near-square between three river valleys",
+   "paras": [
+    "Montalcino lies in south-eastern Tuscany, 40 km south of Siena. The zone is the whole municipality: 243.62 km², almost square, with sides of about 15 km. The valleys of the Orcia, the Asso and the Ombrone mark its edges.",
+    "The land climbs from about 120 m along the rivers to about 650 m near Poggio Civitella, its highest point. The sea is 40 km away to the west in a straight line. The Apennines lie about 100 km to the east."
+   ],
+   "cite": [
+    "brunello-di-montalcino-disc:p2",
+    "brunello-di-montalcino-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Poggio Civitella, the high point",
+     "point": [
+      11.46,
+      43.03
+     ],
+     "zoom": 10,
+     "caption": "The highest point of the zone, at about 650 m.",
+     "cite": [
+      "brunello-di-montalcino-disc:p5"
+     ]
+    },
+    {
+     "label": "Montalcino",
+     "point": [
+      11.489,
+      43.058
+     ],
+     "zoom": 10,
+     "caption": "The hill town of an almost square zone, about 15 km on each side, bounded by three river valleys.",
+     "cite": [
+      "brunello-di-montalcino-disc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Dryish, with frequent wind",
+   "paras": [
+    "The climate is Mediterranean but tends to be dry. Its position between sea and mountains gives it some continental traits. About 700 mm of rain falls in a year, mostly in spring and autumn. Above 400 m, snow is possible in winter.",
+    "Fog and late frosts do not touch the middle slopes. Frequent wind gives the best conditions for healthy vines. Through the growing season temperatures are mostly mild, with many clear days. That is ideal for gradual and complete ripening of the bunches.",
+    "Spring rain helps store water around the roots. In summer rain is relatively scarce, so the soils tend to lose their water and the vine gradually slows down. Late summer and early autumn turn cooler. Because of the position and the altitude, the grapes ripen with significant swings between day and night."
+   ],
+   "cite": [
+    "brunello-di-montalcino-disc:p5",
+    "brunello-di-montalcino-disc:p6",
+    "brunello-di-montalcino-disc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Poor soil, small crop",
+   "paras": [
+    "The hill of Montalcino has many kinds of soil, because it formed over different geological eras. They come from sandstone, sometimes mixed with limestone, and from two local rocks called alberese and galestro. Others have mixed textures, sometimes leaning to sand and sometimes to clay.",
+    "Overall the soils tend to be poor in organic matter and limy. Water is relatively short. Sangiovese grows with fairly modest vigour here, and so gives a limited crop."
+   ],
+   "cite": [
+    "brunello-di-montalcino-disc:p5",
+    "brunello-di-montalcino-disc:p7"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Only Sangiovese, and a long wait",
+   "paras": [
+    "Brunello di Montalcino is a red wine made only from Sangiovese. The grapes must come from vineyards planted only to Sangiovese. It must age at least 24 months in oak casks of any size, and at least 4 months in bottle. It cannot be sold before 1 January of the year after five years, counted from the harvest. At release it must be dry, with an intense ruby colour leaning to garnet.",
+    "Riserva needs at least 6 months in bottle. It cannot be sold before 1 January of the year after six years, counted from the harvest. The yield limit is 8 t/ha. A named vineyard (\"vigna\" or \"vigneto\", followed by its place name) is held to 7 t/ha. Its grapes must reach 12.5% natural alcohol, and no enrichment is allowed. Every label shows the vintage.",
+    "The wine stands long ageing and improves over time. Depending on the vintage it can keep for ten to thirty years, and sometimes longer."
+   ],
+   "cite": [
+    "brunello-di-montalcino-disc:p1",
+    "brunello-di-montalcino-disc:p2",
+    "brunello-di-montalcino-disc:p3",
+    "brunello-di-montalcino-disc:p4",
+    "brunello-di-montalcino-disc:p5",
+    "brunello-di-montalcino-disc:p6"
+   ]
+  }
+ ]
+}

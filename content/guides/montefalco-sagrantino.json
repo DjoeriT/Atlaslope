@@ -1,0 +1,101 @@
+{
+ "id": "montefalco-sagrantino",
+ "title": "Why Montefalco Sagrantino tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "One grape, Sagrantino, grows alone on gently sloping hills with lime-rich soils in the centre of Umbria. Its red wine is ruby, sometimes with violet tints, with a delicate scent that recalls blackberries.",
+  "cite": [
+   "montefalco-sagrantino-disc:p1",
+   "montefalco-sagrantino-disc:p5",
+   "montefalco-sagrantino-disc:p7",
+   "montefalco-sagrantino-disc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hill towns in the middle of Umbria",
+   "paras": [
+    "The area is very small. It lies in the province of Perugia, in the centre of Umbria, and covers all of Montefalco and part of Bevagna, Giano dell'Umbria, Gualdo Cattaneo and Castel Ritaldi.",
+    "The land slopes gently along the hills. Vineyards run from 220 m to 472 m above sea level, and the highest hills are watched over by old medieval villages.",
+    "Slope and exposure vary a lot. That creates a wide range of microclimates. Only hill ground with good exposure is fit for these vines. Valley floors are left out."
+   ],
+   "cite": [
+    "montefalco-sagrantino-disc:p3",
+    "montefalco-sagrantino-disc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Montefalco",
+     "point": [
+      12.6486,
+      42.8944
+     ],
+     "zoom": 10,
+     "caption": "The whole municipality of Montefalco lies inside the zone, among hills of 220 m to 472 m.",
+     "cite": [
+      "montefalco-sagrantino-disc:p7"
+     ]
+    },
+    {
+     "label": "Bevagna",
+     "point": [
+      12.6086,
+      42.9358
+     ],
+     "zoom": 10,
+     "caption": "Part of Bevagna's land is in the zone. Around the town the alluvium forms flat plains.",
+     "cite": [
+      "montefalco-sagrantino-disc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A continental climate with frost",
+   "paras": [
+    "The climate is continental. In the 1961-1990 average, January is the coldest month at +3.8 °C and July the warmest at +25.3 °C.",
+    "About 700 mm of rain falls in a year, spread over 89 days. Summer has a relative low and autumn the peak.",
+    "Snow appears about 7 times a year in the town, and sometimes it piles up fairly deep. There are on average 40 days of frost a year."
+   ],
+   "cite": [
+    "montefalco-sagrantino-disc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Lake clays and lime-rich soils",
+   "paras": [
+    "Four soil zones share the area. One is yellow sands with layers of conglomerate, sometimes cemented, around Montefalco. Another is lake clays and sandy clays. The third is alluvium on the plains and terraces. The fourth is marls with yellowish sandstones and grey silty marls. These wide marl areas matter less for wine.",
+    "Lime (calcium carbonate) is always very plentiful. It is 12 to 22% in soils on sands and 11 to 25% in soils on clays. In the others it is about 20%. Deeper down it generally rises past 30%.",
+    "All that finely divided lime keeps the soils alkaline, at pH 7.8 to 8.2. The pH is lowest on the alluvial terraces and highest on the clays. Roots reach more than 150 cm in alluvial soils and less than 70 cm in conglomerates."
+   ],
+   "cite": [
+    "montefalco-sagrantino-disc:p7",
+    "montefalco-sagrantino-disc:p8"
+   ]
+  },
+  {
+   "id": "sagrantino",
+   "beat": "rules",
+   "title": "One grape, red only, long ageing",
+   "paras": [
+    "Only red wine is made, from vineyards planted exclusively with Sagrantino. It comes in two types: Secco (dry) and Passito (sweet).",
+    "Secco is intense ruby, sometimes with violet tints, turning garnet as it ages. It is dry and harmonious. It needs at least 13.00% alcohol.",
+    "Passito is made from dried grapes. Drying may use dehumidified, cooled rooms, but heating is banned. The wine is deep ruby, with the same blackberry scent, and sweet. It holds 80 to 180 g/l of sugar and at least 18.00% alcohol.",
+    "Both types must age at least 33 months from 1 December of the harvest year. For Secco, at least 12 of those months are in oak barrels of any size. Then 4 more months in bottle come before sale.",
+    "A wine may add \"Vigna\" (vineyard) with the vineyard's name. For Secco, those grapes need at least 13.50% natural alcohol, and no alcohol increase is allowed."
+   ],
+   "cite": [
+    "montefalco-sagrantino-disc:p1",
+    "montefalco-sagrantino-disc:p4",
+    "montefalco-sagrantino-disc:p5",
+    "montefalco-sagrantino-disc:p6"
+   ]
+  }
+ ]
+}

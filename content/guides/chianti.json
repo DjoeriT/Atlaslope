@@ -1,0 +1,140 @@
+{
+ "id": "chianti",
+ "title": "Why Chianti tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chianti sits on hills where the soil can change even within one estate. With a dry summer and Sangiovese, this helps give wines with a complex nose and the right acidity.",
+  "cite": [
+   "chianti-disc:p35",
+   "chianti-disc:p36"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills against the Apennines",
+   "paras": [
+    "Chianti lies in the middle of Tuscany, on the hills up against the Apennines. It spreads over six provinces. Florence and Siena are two of them.",
+    "The area is so large that its geology falls into four systems. The oldest are the pre-Apennine ridges from the Miocene and Eocene. Next come the Pliocene hills. Then comes the basin of the Upper Arno between the mountains (the Valdarno Superiore), with its Pleistocene deposits. The youngest are the river deposits."
+   ],
+   "cite": [
+    "chianti-disc:p35"
+   ],
+   "fly": [
+    {
+     "label": "Valdarno Superiore",
+     "point": [
+      11.47,
+      43.62
+     ],
+     "zoom": 9.5,
+     "caption": "The Upper Arno valley, a basin between mountains, is one of the four geological systems of Chianti.",
+     "cite": [
+      "chianti-disc:p35"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Rainiest in November, driest in July",
+   "paras": [
+    "Chianti has the climate of the Tuscan inner hills. It is humid to sub-humid, with a water shortage in summer.",
+    "On average 867 mm of rain falls in a year. November is usually the wettest month, with 121 mm, and July the driest, with 32 mm.",
+    "August is the warmest month, averaging over 23 °C. January is usually the coldest, at around 5 °C.",
+    "This rainfall lets the grapes ripen properly and pass the basic analytical levels Chianti asks for with ease. Picking normally starts in early September. It goes on in stages, depending on the area and the height of the vineyard."
+   ],
+   "cite": [
+    "chianti-disc:p35",
+    "chianti-disc:p36",
+    "chianti-disc:p37"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Soils that change within one estate",
+   "paras": [
+    "The soils are extremely varied. Because they formed in different geological eras, the ground can change even within one estate. It can go from sandstone or limy marl to clay schist or sand.",
+    "Many have a mixed texture, sometimes leaning to sand, sometimes to clay. They supply enough natural nutrients, and growers add ordinary fertiliser on top.",
+    "From one area to the next, the soil holds a different share of clay and sand. Silt and stones vary too. Together with latitude and the lie of the land, this influences the size of the harvest and, above all, its quality."
+   ],
+   "cite": [
+    "chianti-disc:p35",
+    "chianti-disc:p36"
+   ]
+  },
+  {
+   "id": "recipe",
+   "beat": "rules",
+   "title": "Sangiovese leads",
+   "paras": [
+    "Chianti is a still red wine. Sangiovese must make up 70 to 100% of the vineyard. In the Colli Senesi subzone the range is 75 to 100%.",
+    "Other grapes suited to Tuscany may fill the rest. White grapes together may reach at most 10%. Cabernet Franc and Cabernet Sauvignon together may reach at most 15%, or 10% in Colli Senesi. Trebbiano and Malvasia lunga toscana are the historic white grapes, and Merlot and Cabernet joined more recently.",
+    "In 1870 Baron Bettino Ricasoli defined the grape recipe of Chianti. He also brought in special winemaking, the “governo all'uso Toscano”: a slow second fermentation of the newly racked wine with slightly dried grapes. A young wine of the year given the governo shows liveliness and roundness.",
+    "New vineyards need at least 4,100 vines per hectare, and 4,500 in the Rufina subzone. Overhead pergolas of the tendone type are banned, and only emergency irrigation is allowed.",
+    "Chianti Superiore needs a minimum alcohol of 12%, against 11.5% for plain Chianti. It is sold from 1 September of the year after the harvest, and tastes warm and persistent. Riserva is aged at least 2 years from 1 January after the harvest. Its nose can turn ethereal with age.",
+    "Seven named subzones add a place to the label, for wine grown and made there. Together these styles go from a wine for early drinking to one for ageing.",
+    "If Chianti is sold in a fiasco, the flask, only the traditional Tuscan fiasco is allowed, and never a used one."
+   ],
+   "cite": [
+    "chianti-disc:p1",
+    "chianti-disc:p2",
+    "chianti-disc:p29",
+    "chianti-disc:p30",
+    "chianti-disc:p31",
+    "chianti-disc:p32",
+    "chianti-disc:p33",
+    "chianti-disc:p34",
+    "chianti-disc:p35",
+    "chianti-disc:p36",
+    "chianti-disc:p37"
+   ],
+   "fly": [
+    {
+     "label": "Chianti Rufina",
+     "point": [
+      11.47,
+      43.82
+     ],
+     "zoom": 10,
+     "caption": "Rufina is one of the seven subzones and asks for at least 4,500 vines per hectare in new vineyards.",
+     "cite": [
+      "chianti-disc:p1",
+      "chianti-disc:p29"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Governato",
+    "text": "A wine meant to be drunk within the year after the harvest may use this word on the label only if it had the governo all'uso Toscano.",
+    "cite": [
+     "chianti-disc:p34"
+    ]
+   },
+   {
+    "term": "Vigna",
+    "text": "This word may appear only when it is followed by the vineyard's place or traditional name. The wine must be made and kept apart, and the vineyard must be on the regional list.",
+    "cite": [
+     "chianti-disc:p34"
+    ]
+   },
+   {
+    "term": "Vintage",
+    "text": "Every bottle of Chianti must show the year the grapes were picked.",
+    "cite": [
+     "chianti-disc:p34"
+    ]
+   }
+  ],
+  "cite": [
+   "chianti-disc:p34"
+  ]
+ }
+}

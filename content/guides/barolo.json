@@ -1,0 +1,102 @@
+{
+ "id": "barolo",
+ "title": "Why Barolo tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Barolo's dome-shaped hills rose as the Padano Sea slowly drew back. Their mostly calcareous, tufa-rich ground is the natural habitat of Nebbiolo, where it can give harmonious, structured, long-lived wines.",
+  "cite": [
+   "barolo-disc:p8",
+   "barolo-disc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills above the Tanaro",
+   "paras": [
+    "Barolo comes from the heart of the Langhe hills, a few km south of the city of Alba. The vineyards lie in 11 communes. Barolo, Castiglione Falletto and Serralunga d'Alba are entirely inside the zone, and parts of eight others are too. Medieval castles watch over the hills. The castle of Barolo gave the wine its name.",
+    "Vines must grow on hills between 170 and 540 m above sea level. Valley floors are ruled out. So is any ground that is damp, flat or short of sun. For new plantings, slopes facing between north-west and north-east are also ruled out.",
+    "Some scholars think Langhe comes from \"langues\", tongues of land that stretch out in a lively play of outlines."
+   ],
+   "cite": [
+    "barolo-disc:p2",
+    "barolo-disc:p3",
+    "barolo-disc:p8",
+    "barolo-disc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Barolo, the village that named the wine",
+     "place": "barolo",
+     "caption": "The castle of Barolo gave its name to the wine now famous around the world.",
+     "cite": [
+      "barolo-disc:p9"
+     ]
+    },
+    {
+     "label": "The Tanaro river",
+     "point": [
+      7.97,
+      44.69
+     ],
+     "zoom": 10,
+     "caption": "The vineyards sit on the high hills that look down on the Tanaro.",
+     "cite": [
+      "barolo-disc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "Marl and a retreating sea",
+   "paras": [
+    "The Langhe date from the Tertiary era, which began almost 70 million years ago. White tufa-rich marl marks the production zone. Most of the ground belongs to the Tortonian layer, made of layered marl and sand.",
+    "This marl is grey-blue and not very hard. It gives rounded, whitish hills that are rather low and very favourable for vines.",
+    "The soils are mostly calcareous and tufaceous. They formed mainly in the Tortonian and Messinian ages, about 7 million years ago. The slow retreat of the Padano Sea left dome-shaped hills of limestone and tufa layers, with gypsum and minerals more marked in some areas.",
+    "That ground is the natural habitat of Nebbiolo. There it can show its best and give harmonious, structured, long-lived wines."
+   ],
+   "cite": [
+    "barolo-disc:p3",
+    "barolo-disc:p8",
+    "barolo-disc:p9"
+   ]
+  },
+  {
+   "id": "nebbiolo",
+   "beat": "rules",
+   "title": "Nebbiolo alone, aged for years",
+   "paras": [
+    "Barolo is made only from Nebbiolo and only as a dry red. The rules allow two kinds: Barolo and Barolo Riserva. Both are garnet red with an intense, characteristic aroma. They taste dry, full and harmonious.",
+    "Time in the cellar is part of the rules. Barolo ages at least 38 months, 18 of them in wood, counted from 1 November of the harvest year. It cannot be sold before 1 January of the 4th year after the harvest. Riserva ages at least 62 months, 18 in wood, and cannot be sold before 1 January of the 6th year.",
+    "Yields are capped at 8 t of grapes per hectare. A wine that also names its vigna, a single vineyard, is capped at 7.2 t. Every Barolo must reach at least 13.00% vol in total.",
+    "An extra place name can follow Barolo on the label. It is called a menzione geografica aggiuntiva and comes from an official list, such as Cannubi or Bussia. It sits right under the word Barolo and is never printed larger.",
+    "Barolo chinato is also allowed. It is an aromatised wine made on a Barolo base, flavoured so that its name can refer to china, the cinchona bark.",
+    "Nebbiolo has grown here since time out of mind. In the middle of the 19th century, the drive of Camillo Benso Conte di Cavour and Giulia Colbert Falletti, the last Marchesa di Barolo, led to a wine that was exceptionally rich and harmonious. It became the ambassador of Savoy Piedmont at the courts of Europe. Its structure gives a complex, enveloping bouquet that can develop over time without losing its character."
+   ],
+   "cite": [
+    "barolo-disc:p1",
+    "barolo-disc:p3",
+    "barolo-disc:p5",
+    "barolo-disc:p6",
+    "barolo-disc:p7",
+    "barolo-disc:p8",
+    "barolo-disc:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+   "term": "Vigna",
+    "text": "The word vigna, followed by the vineyard's name, may appear only next to an official extra place name. The wine must be made and kept apart, and made and bottled by whoever names it. Its letters can be at most 50% of the size of Barolo."
+   }
+  ],
+  "cite": [
+   "barolo-disc:p7",
+   "barolo-disc:p8"
+  ]
+ }
+}

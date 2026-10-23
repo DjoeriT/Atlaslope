@@ -4492,6 +4492,44 @@
     }
    ]
   },
+  "cotes-de-gascogne": {
+   "koppen": [
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.59
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.41
+    }
+   ]
+  },
+  "pays-doc": {
+   "koppen": [
+    {
+     "code": "Csa",
+     "name": "Temperate, dry summer, hot summer",
+     "share": 0.57
+    },
+    {
+     "code": "Cfb",
+     "name": "Temperate, no dry season, warm summer",
+     "share": 0.23
+    },
+    {
+     "code": "Cfa",
+     "name": "Temperate, no dry season, hot summer",
+     "share": 0.08
+    },
+    {
+     "code": "Csb",
+     "name": "Temperate, dry summer, warm summer",
+     "share": 0.07
+    }
+   ]
+  },
   "douro": {
    "altitude": {
     "p10": 200,

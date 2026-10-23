@@ -1,0 +1,131 @@
+{
+ "id": "pays-doc",
+ "title": "Why Pays d'Oc tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A vast amphitheatre of hot, dry summers descends to the Mediterranean, with sea winds tempering the heat. Its varied climate lets many grape varieties be planted, and more than 90% of the wine is varietal wine.",
+  "cite": [
+   "pays-doc-doc:p3",
+   "pays-doc-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "A vast amphitheatre that descends to the sea",
+   "paras": [
+    "Pays d'Oc covers the whole of Aude, Gard, Hérault and Pyrénées-Orientales, plus six communes of Lozère. Together they form a vast amphitheatre. Successive mountain ranges stand behind it to the north, from the Pyrenees to the Cévennes, and the land then descends to the Mediterranean.",
+    "Its growing situations run from the shore to more than 400 metres of altitude. Close to 90,000 hectares are declared each year, a third of the Languedoc-Roussillon vineyard."
+   ],
+   "cite": [
+    "pays-doc-doc:p5",
+    "pays-doc-doc:p9",
+    "pays-doc-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "The Cévennes",
+     "point": [
+      3.65,
+      44.15
+     ],
+     "zoom": 9,
+     "caption": "The northern wall of the amphitheatre, with the Pyrenees at its other end.",
+     "cite": [
+      "pays-doc-doc:p9"
+     ]
+    },
+    {
+     "label": "The Pyrenees",
+     "point": [
+      2.3,
+      42.6
+     ],
+     "zoom": 9,
+     "caption": "The other end of the chain of mountain ranges behind the amphitheatre.",
+     "cite": [
+      "pays-doc-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers, mild winters, winds from both sides",
+   "paras": [
+    "The whole vineyard has a Mediterranean climate, with hot, dry summers and mild winters.",
+    "Its winds are of two kinds. Drying winds blow from the north and west (the mistral, the cers and the tramontane). Humid winds blow in from the sea (the marin, the grec and the Espagne), and their humidity tempers the excess heat of summer.",
+    "Rainfall rises with altitude and with distance from the sea, from 400 mm to nearly 1000 mm. The climate varies but stays Mediterranean, which allows many grape varieties to be planted successfully, from the earliest to the latest."
+   ],
+   "cite": [
+    "pays-doc-doc:p9"
+   ]
+  },
+  {
+   "id": "geology",
+   "beat": "ground",
+   "title": "From the Primary era to the Quaternary",
+   "paras": [
+    "On its way down to the sea, the land crosses a range of geological situations, from the Primary era to the Quaternary."
+   ],
+   "cite": [
+    "pays-doc-doc:p9"
+   ]
+  },
+  {
+   "id": "range",
+   "beat": "rules",
+   "title": "Grapes first, and a wide range",
+   "paras": [
+    "Pays d'Oc is a Protected Geographical Indication (IGP) for three kinds of wine: still, quality sparkling, and wine from overripe grapes. Each can be red, rosé, white, or one of the two grey wines, gris and gris de gris. Yields are capped at 90 hectolitres per hectare.",
+    "More than 90% of the volume is varietal wine, labelled with one or more grapes. Each grape must be on the official list for its colour, and its name must sit in the same field of view as Pays d'Oc.",
+    "56 grape varieties are recognised. Mediterranean varieties such as Grenache, Cinsaut and Syrah are preferably used for fruity, light rosés and greys. Merlot, Cabernet-Sauvignon and Pinot noir were planted more recently and give structured reds with red-fruit aromas. Whites come mostly from grapes such as Chardonnay, Sauvignon and Viognier.",
+    "Single-grape wines are generally lively and floral when white, fresh and light when rosé and fruity when red. The very good ripening conditions also lead growers to seek complex wines, among them powerful, warm whites. Structured reds with soft tannins come from modern winemaking methods. These reds for keeping are essentially blends, where each grape brings its own qualities.",
+    "A small part of the single-grape wines is sold as primeur, also called nouveau. Both terms are kept for still wines.",
+    "Sparkling wines have a fine, elegant bubble, with floral or fruity aromas depending on the grapes in the blend. They are made across the area, though in Aude only in listed communes. Their heart is around the étang de Thau, a traditional white-wine zone.",
+    "Sweet wines are a small production, made from grapes left to overripen or touched by noble rot. They are rich in sugar and develop complex aromas. They are aged for at least 6 months from the harvest, and the label must carry the harvest year. This small production is a memory of a distant past, when Languedoc made generous wines, the only ones that could keep and travel.",
+    "Sur lie may be added only to still rosés and whites, with the harvest year on the label. These wines spend only one winter in tank or barrel and are on their fine lees at bottling, which cannot happen before 21 March after the harvest. They are bottled inside the zone or its immediate surroundings to keep their slight CO2 spritz and their freshness."
+   ],
+   "cite": [
+    "pays-doc-doc:p2",
+    "pays-doc-doc:p3",
+    "pays-doc-doc:p4",
+    "pays-doc-doc:p5",
+    "pays-doc-doc:p9",
+    "pays-doc-doc:p10",
+    "pays-doc-doc:p11",
+    "pays-doc-doc:p12",
+    "pays-doc-doc:p13",
+    "pays-doc-doc:p14"
+   ],
+   "fly": [
+    {
+     "label": "Étang de Thau",
+     "point": [
+      3.6,
+      43.4
+     ],
+     "zoom": 10,
+     "caption": "The heart of sparkling production, in a traditional white-wine zone.",
+     "cite": [
+      "pays-doc-doc:p11"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vin de Pays",
+    "text": "The traditional term that may replace \"Indication géographique protégée\"; when it does, the EU IGP logo must also appear on the label."
+   }
+  ],
+  "cite": [
+   "pays-doc-doc:p3",
+   "pays-doc-doc:p14"
+  ]
+ }
+}

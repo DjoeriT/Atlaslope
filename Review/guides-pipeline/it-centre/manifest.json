@@ -1,0 +1,18 @@
+{
+ "sources": {
+  "verdicchio-dei-castelli-di-jesi-disc": "Review/sources/fetched/disc-verdicchio-dei-castelli-di-jesi.txt",
+  "orvieto-disc": "Review/sources/fetched/disc-orvieto.txt",
+  "frascati-disc": "Review/sources/fetched/disc-frascati.txt",
+  "montepulciano-d-abruzzo-disc": "Review/sources/fetched/disc-montepulciano-d-abruzzo.txt",
+  "casauria-disc": "Review/sources/fetched/disc-casauria.txt",
+  "cesanese-del-piglio-disc": "Review/sources/fetched/disc-cesanese-del-piglio.txt",
+  "colline-teramane-montepulciano-dabruzzo-disc": "Review/sources/fetched/disc-colline-teramane-montepulciano-dabruzzo.txt",
+  "conero-disc": "Review/sources/fetched/disc-conero.txt",
+  "montefalco-sagrantino-disc": "Review/sources/fetched/disc-montefalco-sagrantino.txt",
+  "offida-disc": "Review/sources/fetched/disc-offida.txt",
+  "terre-tollesi-disc": "Review/sources/fetched/disc-terre-tollesi.txt",
+  "torgiano-rosso-riserva-disc": "Review/sources/fetched/disc-torgiano-rosso-riserva.txt",
+  "verdicchio-di-matelica-riserva-disc": "Review/sources/fetched/disc-verdicchio-di-matelica-riserva.txt",
+  "vernaccia-di-serrapetrona-disc": "Review/sources/fetched/disc-vernaccia-di-serrapetrona.txt"
+ }
+}

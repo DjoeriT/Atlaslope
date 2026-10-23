@@ -1,0 +1,7 @@
+{
+ "sources": {
+  "etna-disc": "Review/sources/fetched/disc-etna.txt",
+  "cerasuolo-di-vittoria-disc": "Review/sources/fetched/disc-cerasuolo-di-vittoria.txt",
+  "vermentino-di-gallura-disc": "Review/sources/fetched/disc-vermentino-di-gallura.txt"
+ }
+}

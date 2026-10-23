@@ -1,0 +1,101 @@
+{
+ "id": "vernaccia-di-serrapetrona",
+ "title": "Why Vernaccia di Serrapetrona tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Part of the grapes are dried until January, and the wine ferments three times. The result is a red sparkling wine that tastes soft, with few tannins and a pleasantly bitter finish.",
+  "cite": [
+   "vernaccia-di-serrapetrona-disc:p5",
+   "vernaccia-di-serrapetrona-disc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Mountain and high hill, inland",
+   "paras": [
+    "The zone is small and lies inland, about 60 km from the Adriatic. It covers all of Serrapetrona and part of San Severino Marche and Belforte del Chienti, in the province of Macerata.",
+    "Half of it counts as mountain, at 500 to 1000 m. Vines stop at 700 m there. The other half is middle and high hill, at 250 to 500 m, and vines can use all of it.",
+    "On the mountain side, most slopes run between 35 and 70%. On the hill side they run from 0 to 35%. Valley floors and places without enough sun are excluded from the vineyard."
+   ],
+   "cite": [
+    "vernaccia-di-serrapetrona-disc:p2",
+    "vernaccia-di-serrapetrona-disc:p4",
+    "vernaccia-di-serrapetrona-disc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Serrapetrona",
+     "point": [
+      13.19,
+      43.177
+     ],
+     "zoom": 11,
+     "caption": "The village at the centre of the zone, whose coat of arms carries a vine with grapes.",
+     "cite": [
+      "vernaccia-di-serrapetrona-disc:p5"
+     ]
+    },
+    {
+     "label": "Cesolone valley",
+     "point": [
+      13.19,
+      43.2
+     ],
+     "zoom": 11,
+     "caption": "The Cesolone stream runs through the whole municipality, with bare limestone showing in its valley.",
+     "cite": [
+      "vernaccia-di-serrapetrona-disc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "A high-hill climate, slopes facing east and south",
+   "paras": [
+    "The climate belongs to the \"Alto Collinare\" belt, the high-hill band of plant life. Rainfall averages more than 700 to 800 mm a year, and temperatures average below about 14 °C. July averages 21 °C.",
+    "Most of the land faces east or south. Those are the directions the vine likes best."
+   ],
+   "cite": [
+    "vernaccia-di-serrapetrona-disc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Thin, stony soils on limestone",
+   "paras": [
+    "The mountain soils come from limestone ridges. The ridges gave cherty limestone and marly limestone, red and grey. The cultivated soils are thin and stony, and they sit straight on the limestone-marl rock.",
+    "The hill soils are almost always calcareous and stony, and only rarely laid down by rivers. They formed from sandstone and clay, with sands as the last layer the sea left."
+   ],
+   "cite": [
+    "vernaccia-di-serrapetrona-disc:p4",
+    "vernaccia-di-serrapetrona-disc:p5"
+   ]
+  },
+  {
+   "id": "sparkling",
+   "beat": "rules",
+   "title": "A red sparkling wine, fermented three times",
+   "paras": [
+    "Only one wine is made: a red sparkling wine, dry (secco) or sweet (dolce). At least 85% of the grapes are Vernaccia nera. Up to 15% can be other red grapes fit to grow in the Marche.",
+    "At most 60% of the grapes are made into wine at harvest. The rest, at least 40%, must be Vernaccia nera. It is dried until its must reaches at least 13% vol of natural alcohol, and the drying lasts until January.",
+    "The first fermentation makes a base wine. The dried grapes are then pressed, and their must is added to it. A slower second fermentation follows and ends after two months. As the wine then matures, its acids and tannins drop.",
+    "The third fermentation happens in a pressure tank, with added sugar and yeast, by the Charmat method. The wine holds 5 atmospheres of pressure, and after another 2 months it is finished. How much sugar stays in the tank decides if it is dry or sweet.",
+    "The wine cannot be sold before 30 June of the year after the harvest. It tastes soft and balanced, with few tannins. The finish is pleasantly bitter, which is typical of the grape.",
+    "A label may carry \"vigna\" with a vineyard name. That wine must be made and kept in separate vessels.",
+    "The name Vernaccia may come from the long drying: the wine is not ready to taste before spring, and \"ver\" is Latin for spring. Vines were once trained up maple trees. Wire trellises replaced them in the 1950s."
+   ],
+   "cite": [
+    "vernaccia-di-serrapetrona-disc:p1",
+    "vernaccia-di-serrapetrona-disc:p3",
+    "vernaccia-di-serrapetrona-disc:p4",
+    "vernaccia-di-serrapetrona-disc:p5",
+    "vernaccia-di-serrapetrona-disc:p6"
+   ]
+  }
+ ]
+}

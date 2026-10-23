@@ -202,7 +202,8 @@ def r10(v):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     every = load("places.json")["places"]
-    code_of = lambda p: p["region"][:2] if p["region"][:3] in ("pt-", "fr-") else "es"
+    # Italy ("it-") is left out until it has its own Köppen file: as "es" it was measured against Spain's (23 Oct 2026).
+    code_of = lambda p: p["region"][:2] if p["region"][:3] in ("pt-", "fr-", "it-") else "es"
     places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones") and code_of(p) == "es"]
     geoms = boundaries(places)
     for code in ("pt", "fr"):
@@ -214,7 +215,9 @@ def main():
         sys.exit(f"no boundary for {missing}")
     regions = {}
     for p in places:
-        if p["parent"] in ("spain", "portugal", "france") and p["id"] in geoms:  # appellation level; zones have another place as parent
+        # Appellation level; zones have another place as parent. France's PGIs (kind IGP: Pays d'Oc, Côtes de Gascogne) cover whole
+        # départements and would swamp their region's vineyards, so a region is its AOCs (23 Oct 2026).
+        if p["parent"] in ("spain", "portugal", "france") and p["id"] in geoms and p["kind"] != "IGP":
             regions.setdefault(p["region"], []).append(geoms[p["id"]])
     targets = dict(geoms)
     targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
@@ -256,6 +259,11 @@ def main():
             elev.append(e)
             if e > 0:
                 slopes.append(slope_pct(tiles, x, y, lat))
+        # --offline with more than a tenth of the points on uncached tiles (Côtes de Gascogne kept 561 of 5,990, 23 Oct 2026): a skewed
+        # sample would mislead, so Köppen only, as country.france.
+        if dropped.get(tid, 0) > .1 * len(samples[tid]):
+            rows[tid] = {"koppen": [c for c in climate if c["share"] >= .05]}
+            continue
         land = [e for e in elev if e > 0] or elev
         slopes = [v for v in slopes if v is not None] or [0.0]
         rows[tid] = {
