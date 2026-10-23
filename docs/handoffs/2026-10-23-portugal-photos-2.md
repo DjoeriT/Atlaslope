@@ -19,8 +19,7 @@
   repo in `~/Developer/Atlaslope-raw` (#229). Re-fetched 18 of 21 items (2.2 GB), manifest recorded with sizes and sha256.
 
 ## Not done (where it goes)
-- First load 2,000,515 bytes: 515 over the 2 MB check with the Portugal photos (owner decision in the morning: fact sheets on demand like
-  guides, about 55 KB freed, or another route). The photo PR waits on it.
+- First load 2,000,515 bytes: owner raised the limit to 2.1 MB (23 Oct 2026). Fact sheets on demand (about 55 KB) stays the next route.
 - Places still without photos: Alenquer, DoTejo (nothing usable in Commons or Openverse). Thin: Carcavelos, Tavira, Portimão,
   Távora-Varosa, Beira Interior, Lafões, Encostas d'Aire (1 each).
 - Raw: `world/` (needs shapely locally) and `build/` (CI data build) are caches; `countries/fr/cdc/` the France session adds to the manifest.
