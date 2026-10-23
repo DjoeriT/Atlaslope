@@ -1,6 +1,6 @@
-# Austria prep: Wachau (issue #149, decisions #81-#86)
+# Austria prep: Wachau and Neusiedlersee (issue #149, decisions #81-#86, #94)
 
-Data and research for the Wachau; the second Austria pilot place is the owner's choice and is not prepared here. Run 23 Oct 2026.
+Data and research for the Wachau (sections 1-4 and Open points) and the Neusiedlersee (the section after them; decision #94 made it the second pilot place). Run 23 Oct 2026.
 Build: `python3 -I Tools/data/build_at_areas.py` (1 s). Raw files: `~/Developer/Atlaslope-raw/countries/at/` (manifest entries added).
 
 ## 1. The DAC regulation (BGBl. II 200/2020)
@@ -43,3 +43,38 @@ Build: `python3 -I Tools/data/build_at_areas.py` (1 s). Raw files: `~/Developer/
 2. The Weinbaugebiet Wachau boundary (Gemeinde list) lives in another regulation; fetch if an official hectare or Gemeinde list is wanted.
 3. Whether the outline should be tightened (e.g. close at 100 m) is a look-and-feel choice; no map screenshot was taken (data only).
 4. Raw folder `countries/at/` also holds the desk report's `eambrosia/`, `web/`, `wset/`: not in the manifest, not touched.
+
+# Neusiedlersee (decision #94)
+Build: the same `python3 -I Tools/data/build_at_areas.py` (15 s for both places; the Wachau numbers above are unchanged). Raw: `~/Developer/Atlaslope-raw/countries/at/` (manifest entries added).
+
+## N1. The DAC regulation
+- In force: BGBl. II 431/2020 Art. 2 (RIS HTML 70 KB; Art. 1 of that act is Ruster Ausbruch). The original is BGBl. II 90/2012 (amended 48/2013, and in 2014, 2017); the 2020 act re-issues the whole text (sweet wines added, the label and bottling rules shortened). No later amendment names Neusiedlersee (the 2020 to 2024 Sammelverordnungen do not list it) [V: titles in RIS search result].
+- Plain text from Art. 2 on (`neusiedlersee-dac-431-2020.txt`): `extract.py` finds no section 1 and keeps the one page: **1,089 words** (the 1,085-word source plus the header). Unchanged `extract.py`.
+- Area (§ 1): "Der politische Bezirk Neusiedl am See mit Ausnahme der Gemeinden Winden und Jois bildet das Weinbaugebiet Neusiedlersee." Whole Gemeinden: no KG, no Ried list. Grapes must be harvested in the area; made and bottled there (outside only with the Regionales Weinkomitee Burgenland's permission).
+- Styles (§ 2 Z 5), four categories: (a) Neusiedlersee DAC, Zweigelt, 12.0% minimum, wood or steel, residual sugar up to 4 g/l, grape variety on the label; (b) Neusiedlersee DAC Reserve, Zweigelt (or Zweigelt cuvee), 13.0% minimum, large wood or barrique; (c) Neusiedlersee DAC fruchtsuess, white quality varieties, Spaetlese and Auslese, at least 45 g/l; (d) Neusiedlersee DAC Reserve edelsuess, white, Beerenauslese and Trockenbeerenauslese, at least 45 g/l. Sweet wines may name the narrower origin "Seewinkel" when the grapes come from Apetlon, Illmitz and or Podersdorf.
+- Ried rule: **"die Angabe einer Riedenbezeichnung ist nicht zulässig"** for (a) and (b); nothing on (c) and (d). So Rieden are not a label feature here, unlike the Wachau.
+- EU specification: the register (eAmbrosia, in the desk report's `eambrosia/gi.json`) holds PDO-AT-A0219 "Neusiedlersee", registered, modified 2023-02-24. The OJ notice and single document were not fetched [A: not needed for the area, which the regulation fixes].
+
+## N2. Rieden (Land Burgenland "Weinbauriede", CC BY 4.0)
+- Found: data.gv.at dataset dc49fa3f (publisher Land Burgenland, modified 2026-08-11), distribution = `geodaten.bgld.gv.at` download link, which serves a zip (shapefile, MGI Austria GK M34, export 2026-10-09). Licence **CC BY 4.0 on the catalogue entry**; the portal's own Nutzungsbedingungen page is a general disclaimer and names no licence. Credit "Land Burgenland".
+- Whole Land: 2,209 polygons (Ried and Subried types), 9 Bezirke. Bezirk Neusiedl am See: 427; without Jois (63) and Winden (15): **349 polygons** (239 Ried, 110 Subried).
+- Names: 130 distinct Ried names, 138 KG+Ried pairs in 24 KGs, 22 pairs with Subried names (86 Subried names). Subried polygons lie inside Ried polygons (the Ried-only union equals the union of both: 265.4 km2).
+- Area: **265.4 km2** of Ried land (see N3). Seewinkel Rieden are large: Salzgruende (Apetlon) alone is 39 km2 of steppe, pasture and vines.
+- Sizes: raw zip 2.7 MB, filtered GeoJSON 1,874 KB. Built zones (dissolved per KG+Ried, 40 m, 5 decimals): **138 zones, 75 KB (18 KB gzipped)**.
+
+## N3. Outline
+- Official outline: the regulation defines the area by Gemeinden, so the Statistik Austria Gemeinden union is the legal area, not a guess. No separate DAC polygon exists [A].
+- Route A, Gemeinde union (25 Gemeinden, Statistik Austria 2026-01-01, CC BY 4.0), simplified 40 m: **998.9 km2**, 1 part, **10 KB**. It includes the Austrian part of the lake and all forest, steppe and towns.
+- Route B, Ried land closed at 150 m (as Wachau): **272.2 km2** (Ried land 265.4 km2).
+- Official hectare figure: none fetched. Vines are about 6,000 to 6,500 ha, so 60 to 65 km2 [A: from memory, to be checked against the Burgenland vine register]. Route B is 4 to 5 times the vines, Route A about 16 times; Route B is the closer, and the Wachau used the same method.
+- **Chosen: Route A** (`route: gemeinden`, `approximate: false`), because the law fixes the area by Gemeinden and the Rieden miss vine land outside any Ried (and Seewinkel steppe is in them); the Ried closing is kept as `riedenClosedKm2`. Owner's call (see below): the closer-to-vines Route B would be a one-word change in the script. The lake is not clipped.
+
+## N4. Licences
+- Land Burgenland Rieden: CC BY 4.0 (catalogue entry). Statistik Austria Gemeinden: CC BY 4.0. RIS text: as above.
+
+## N5. Open points
+1. Outline route: A (legal Gemeinde union, 999 km2, includes the lake) or B (Rieden closed, 272 km2, approximate). Recommended A for the legal area; the map could add the lake clip or use B.
+2. Whether the Neusiedlersee guide needs the Rieden at all, since the DAC bans Ried names on the dry reds. 138 zones are built; the pilot can drop them.
+3. Vine hectares (6,000 to 6,500 ha) and the EU single document are not fetched.
+4. Not copied into `data/added-boundaries.geojson` (the card did not ask).
+5. `eambrosia/`, `web/`, `wset/` (desk report folders) are left out of the manifest: their URLs are not recorded and the build needs none of them.
