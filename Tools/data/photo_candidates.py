@@ -434,6 +434,61 @@ FR_CATS = {
     "pauillac": (['"Pauillac" (vigne OR vignes OR vignoble OR vendange OR château OR domaine OR "grand cru")'],
                  ["Pauillac", "Vineyards in Pauillac", "Vineyards in Gironde"]),
 }
+# Thin places (22 Oct 2026): categories checked to exist and hold files. Search stays the default name + vine words;
+# files still pass info() (inside the outline, or place name plus a vine word).
+FR_EXTRA_CATS = {
+    "pomerol": ["Pomerol", "Vineyards in Pomerol", "Château Pétrus", "Château Trotanoy", "Château La Conseillante"],
+    "nuits-saint-georges": ["Nuits-Saint-Georges", "Vosne-Romanée", "Vineyards in Côte-d'Or"],
+    "montagny": ["Montagny-lès-Buxy", "Buxy", "Jully-lès-Buxy", "Saint-Vallerin", "Vineyards in Saône-et-Loire"],
+    "saint-veran": ["Davayé", "Prissé", "Vineyards in Prissé", "Solutré-Pouilly", "Vergisson", "Chasselas", "Saint-Véran (AOC)",
+                    "Saint-Vérand (Saône-et-Loire)", "Leynes", "Chânes", "Vineyards in Saône-et-Loire"],
+    "barsac": ["Vineyards in Barsac", "Château Climens", "Château Coutet", "Sauternes", "Vineyards in Sauternes"],
+    "givry": ["Givry (Saône-et-Loire)", "Dracy-le-Fort", "Jambles", "Vineyards in Saône-et-Loire"],
+    "mercurey": ["Mercurey", "Bourgneuf-Val-d'Or", "Saint-Martin-sous-Montaigu", "Vineyards in Saône-et-Loire"],
+    "margaux": ["Margaux", "Vineyards in Margaux", "Château Margaux", "Margaux-Cantenac", "Cantenac", "Soussans", "Labarde",
+                "Château Palmer", "Château Rauzan-Ségla", "Château Giscours", "Château Lascombes"],
+    "saint-julien": ["Saint-Julien-Beychevelle", "Vineyards in Saint-Julien-Beychevelle", "Château Ducru-Beaucaillou", "Château Beychevelle",
+                     "Château Léoville-Poyferré", "Château Branaire-Ducru"],
+    "aloxe-corton": ["Aloxe-Corton", "Corton-Charlemagne", "Ladoix-Serrigny", "Pernand-Vergelesses"],
+    "pommard": ["Pommard", "Château de Pommard"],
+    "volnay": ["Volnay (Côte-d'Or)", "Monthelie"],
+    "rully": ["Rully (Saône-et-Loire)", "Château de Rully", "Bouzeron"],
+    "pouilly-fuisse": ["Fuissé", "Vineyards in Fuissé", "Roche de Solutré", "Chaintré", "Vineyards in Chaintré", "Roche de Vergisson"],
+    "saint-estephe": ["Vineyards in Saint-Estèphe", "Château Cos d'Estournel", "Château Montrose", "Château Calon-Ségur", "Château Lafon-Rochet",
+                      "Château Phélan Ségur"],
+    "puligny-montrachet": ["Puligny-Montrachet", "Montrachet", "Chevalier-Montrachet"],
+    "chassagne-montrachet": ["Chassagne-Montrachet"],
+    "cote-de-nuits-villages": ["Fixin", "Brochon", "Comblanchien", "Corgoloin"],
+    # Loire, Rhône and south-west thin places (23 Oct 2026): each category checked with the Commons API (exists, holds files).
+    "savennieres": ["Savennières", "La Possonnière", "Béhuard", "Vineyards in Maine-et-Loire"],
+    "chinon": ["Chinon (AOC)", "Chinon", "Beaumont-en-Véron", "Savigny-en-Véron", "Cravant-les-Côteaux", "Vineyards in Indre-et-Loire"],
+    "menetou-salon": ["Menetou-Salon", "Vineyards in Cher"],
+    "cote-rotie": ["Côte-Rôtie (AOC)", "Ampuis", "Vineyards in Rhône"],
+    "hermitage": ["Tain-l'Hermitage", "Tournon-sur-Rhône", "Mercurol", "Vineyards in Drôme"],
+    "gigondas": ["Gigondas", "Dentelles de Montmirail", "Sablet", "Séguret", "Vineyards in Vaucluse"],
+    "lirac": ["Lirac", "Roquemaure (Gard)", "Saint-Laurent-des-Arbres", "Saint-Geniès-de-Comolas", "Vineyards in Gard"],
+    "condrieu": ["Condrieu", "Chavanay", "Saint-Michel-sur-Rhône", "Limony", "Vineyards in Rhône"],
+    "saint-joseph": ["Saint-Joseph (Loire)", "Mauves", "Saint-Jean-de-Muzols", "Chavanay", "Saint-Désirat", "Vineyards in Ardèche"],
+    "crozes-hermitage": ["Crozes-Hermitage", "Mercurol", "Gervans", "Larnage", "Vineyards in Drôme"],
+    "cornas": ["Cornas", "Saint-Péray", "Vineyards in Ardèche"],
+    "vacqueyras": ["Vacqueyras", "Sablet", "Beaumes-de-Venise", "Vineyards in Vaucluse"],
+    "muscat-de-beaumes-de-venise": ["Beaumes-de-Venise", "Dentelles de Montmirail", "Vacqueyras", "Vineyards in Vaucluse"],
+    "saumur-champigny": ["Saumur", "Souzay-Champigny", "Turquant", "Montsoreau", "Dampierre-sur-Loire", "Vineyards in Maine-et-Loire"],
+    "pouilly-fume": ["Pouilly-sur-Loire", "Saint-Andelain", "Tracy-sur-Loire", "Vineyards in Nièvre"],
+    "vouvray": ["Vouvray", "Rochecorbon", "Vineyards in Indre-et-Loire"],
+    "bourgueil": ["Bourgueil", "Saint-Nicolas-de-Bourgueil", "Restigné", "Ingrandes-de-Touraine", "Benais"],
+    "coteaux-du-layon": ["Chaudefonds-sur-Layon", "Rablay-sur-Layon", "Beaulieu-sur-Layon", "Saint-Lambert-du-Lattay", "Thouarcé",
+                         "Faye-d'Anjou", "Vineyards in Maine-et-Loire"],
+    "brouilly": ["Mont Brouilly", "Odenas", "Cercié", "Vineyards in Rhône"],
+    "morgon": ["Villié-Morgon", "Vineyards in Rhône"],
+    "fleurie": ["Fleurie", "Vineyards in Rhône"],
+    "moulin-a-vent": ["Romanèche-Thorins", "Chénas", "Vineyards in Rhône"],
+    "madiran": ["Madiran", "Maumusson-Laguian", "Crouseilles", "Vineyards in Gers", "Vineyards in Hautes-Pyrénées"],
+    "jurancon": ["Jurançon", "Monein", "Gan (Pyrénées-Atlantiques)"],
+    "cahors": ["Cahors", "Vineyards in Lot"],
+    "champagne": ["Vineyards of Champagne", "Vineyards in Marne", "Vineyards in Épernay", "Hautvillers", "Verzenay", "Aÿ"],
+    "picpoul-de-pinet": ["Pomérols", "Mèze", "Florensac", "Vineyards in Hérault"],
+}
 
 
 def fr_outlines():
@@ -450,7 +505,7 @@ def fr(ids):
     for p in places:
         if p["id"] in done: continue
         g = geoms.get(p["id"])
-        searches, cat_list = FR_CATS.get(p["id"], ([f'"{p["name"]}" ' + FR_VINE_Q], []))
+        searches, cat_list = FR_CATS.get(p["id"], ([f'"{p["name"]}" ' + FR_VINE_Q], FR_EXTRA_CATS.get(p["id"], [])))
         found = {}
         try:
             for lon, lat in (discs(g, max_n=40) if g is not None else []):

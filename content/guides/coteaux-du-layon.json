@@ -1,0 +1,83 @@
+{
+ "id": "coteaux-du-layon",
+ "title": "Why Coteaux du Layon tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Chenin grows on slopes right beside the Layon, where the grapes get morning mists, then sun, then wind. These are what noble rot needs, and late picking turns the overripe grapes into a wine both suave and fresh.",
+  "cite": [
+   "coteaux-du-layon-doc:p3",
+   "coteaux-du-layon-doc:p4"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "layon",
+   "beat": "place",
+   "title": "Slopes along the Layon",
+   "paras": [
+    "The vines grow on hillsides right beside the Layon river. The area covers 27 communes in the Maine-et-Loire département, among them Chalonnes-sur-Loire, Thouarcé and Martigné-Briand.",
+    "Grapes are picked inside those communes, and the wine is made and aged there too. A wider surrounding area is allowed for winemaking and ageing."
+   ],
+   "cite": [
+    "coteaux-du-layon-doc:p3",
+    "coteaux-du-layon-doc:p4"
+   ],
+   "fly": [
+    {
+     "label": "The Layon at Thouarcé",
+     "point": [
+      -0.4975,
+      47.2625
+     ],
+     "zoom": 10,
+     "caption": "The Layon, whose hillsides carry the Chenin vines.",
+     "cite": [
+      "coteaux-du-layon-doc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mists",
+   "beat": "weather",
+   "title": "Morning mist, then sun",
+   "paras": [
+    "The vines enjoy an ideal mesoclimate. The grapes get morning mists first, then sun and wind in turn.",
+    "These are the elements noble rot needs to develop. Growers take advantage of the grapes' ability to become overripe."
+   ],
+   "cite": [
+    "coteaux-du-layon-doc:p3",
+    "coteaux-du-layon-doc:p4"
+   ]
+  },
+  {
+   "id": "schist",
+   "beat": "ground",
+   "title": "Shallow soil on schist",
+   "paras": [
+    "The soils are shallow and formed on schist. Chenin took hold on these slopes because of this setting, close to the river and on the hillsides."
+   ],
+   "cite": [
+    "coteaux-du-layon-doc:p3"
+   ]
+  },
+  {
+   "id": "sweet-chenin",
+   "beat": "rules",
+   "title": "Sweet, fresh Chenin",
+   "paras": [
+    "Chenin is the only main grape. The wine is still and white, with residual sugar. It holds at least 34 g of fermentable sugar per litre. It comes from grapes naturally concentrated on the vine.",
+    "Yields are capped at 40 hl/ha. Pickers go through the vineyard by hand in several passes, harvesting late. Growers also control the load on each vine.",
+    "This setting and these practices together give overripe grapes. They make a wine that is both suave and fresh.",
+    "A label may add \"sélection de grains nobles\", a selection of noble berries, and then must show the vintage. The place name Chaume may be added too. Only wines named Chaume may say premier cru, and the two never sit on the same line. The name Val de Loire may also be added, in letters no more than two thirds the size of the appellation name. A commune name may follow the appellation. So may a lieu-dit, a named plot from the land register, if it appears on the harvest declaration."
+   ],
+   "cite": [
+    "coteaux-du-layon-doc:p1",
+    "coteaux-du-layon-doc:p3",
+    "coteaux-du-layon-doc:p4",
+    "coteaux-du-layon-doc:p5",
+    "coteaux-du-layon-doc:p6"
+   ]
+  }
+ ]
+}

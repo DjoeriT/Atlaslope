@@ -1,0 +1,136 @@
+{
+ "id": "minervois",
+ "title": "Why Minervois tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Minervois is a wide amphitheatre below the Montagne Noire, facing fully south and swept by winds that bring little rain. With the Mediterranean climate, this makes conditions suited to fully ripe grapes.",
+  "cite": [
+   "minervois-doc:p7",
+   "minervois-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "An amphitheatre facing south",
+   "paras": [
+    "The zone leans against the Montagne Noire, the southernmost part of the Cévennes, whose highest point is the Pic de Nore at 1,210 m. The vineyard sits in a wide amphitheatre that slopes steadily from north to south and ends gently beside the river Aude. It faces fully south.",
+    "Two sets of hills frame it. To the west, near Carcassonne, north-south hills run from Salsigne to Trèbes, with the river Clamoux winding through them. To the east lie the hills called the \"serre d'Oupia\", crossed by the river Cesse.",
+    "The centre of the zone looks down about a hundred metres on the Marseillette pond. It then runs on to a large plateau crossed by two tributaries of the Aude, the Argent-Double and the Ognon. The vines share a landscape dotted with garrigue, the wild Mediterranean scrub, and with pines and oaks.",
+    "The zone covers 45 communes in the Aude and 16 in the Hérault."
+   ],
+   "cite": [
+    "minervois-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Pic de Nore, the Montagne Noire",
+     "point": [
+      2.4636,
+      43.4236
+     ],
+     "zoom": 10,
+     "caption": "The Montagne Noire is the southernmost part of the Cévennes. Its highest point, the Pic de Nore, reaches 1,210 m.",
+     "cite": [
+      "minervois-doc:p7"
+     ]
+    },
+    {
+     "label": "Minerve, on its rocky spur",
+     "point": [
+      2.7436,
+      43.3544
+     ],
+     "zoom": 11,
+     "caption": "The village of Minerve sits on a rocky spur of the limestone causse and gave the appellation its name. Vines grow here on hard limestone.",
+     "cite": [
+      "minervois-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "winds",
+   "beat": "weather",
+   "title": "Sea breezes in the east, the Cers in the west",
+   "paras": [
+    "The climate is Mediterranean: very mild and relatively dry. About 630 mm of rain falls in a year, the mean temperature is above 14 °C and the sun shines more than 2,400 hours a year.",
+    "The east gets Mediterranean sea influence. Damp south-east breezes blow in summer, and spring and autumn bring little rain.",
+    "The west faces the Cers, a north-west wind that is often violent and generally dry. Where it meets the Montagne Noire it brings oceanic rain, mainly in autumn and spring.",
+    "Jacques Puisais sums it up: \"Minervois is a wine of air\". What counts is the vintage of the wind, above all just before harvest, because it sets the speed of evapotranspiration, the water the vines give off. He says this wine of air is marked by soft, rich tannin and by fruit kept true to itself."
+   ],
+   "cite": [
+    "minervois-doc:p7",
+    "minervois-doc:p8",
+    "minervois-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A broad fold filled with sediment",
+   "paras": [
+    "The zone lies in a broad syncline, a downward fold of rock, that rests on the Montagne Noire to the north. Tertiary molasse sediments fill it, cut by beds of sandstone and conglomerates of lake limestone.",
+    "The most typical soils formed on stony terraces, marls, sandstones and weathered hard limestone. A few lenses of schist appear at altitude. Clay-limestone dominates.",
+    "Grenache likes the stony terraces and the marls."
+   ],
+   "cite": [
+    "minervois-doc:p7",
+    "minervois-doc:p8"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Reds first, with whites and rosés alongside",
+   "paras": [
+    "Minervois makes still wines only: red, rosé and white. Reds are 92% of production and rosés 6%.",
+    "The main red grapes are grenache, lledoner pelut, mourvèdre and syrah. Carignan, cinsaut, piquepoul noir, rivairenc and terret noir are also allowed. The four main grapes must together be at least 60% of the vineyard. Mourvèdre and syrah must together be at least 20%. Piquepoul noir, rivairenc and terret noir may be at most 10%.",
+    "A red is a blend of at least two grapes, one of them a main grape.",
+    "Each grape has a job. Grenache gives warmth and roundness. Syrah ripens early and gives sugar and red-fruit aromas. Mourvèdre gives fine tannins and spice. Carignan gives body and tannin. At high ripeness it adds a particular liquorice note. Cinsaut, traditionally kept for rosé, also goes into red blends for finesse.",
+    "Rosés use the same main grapes. White grapes may make up at most 10%.",
+    "White wines are led by bourboulenc, grenache blanc, maccabeu, marsanne, roussanne and vermentino, which must make up at least 80%. Clairette, grenache gris, muscat à petits grains, piquepoul blanc, terret blanc and viognier are also allowed. Muscat à petits grains and viognier are each capped at 10%.",
+    "Reds are purple with violet glints. Their balance and red-fruit aromas make them good to drink young. They are warm and powerful, often with spice or liquorice, and they age well.",
+    "Rosés are a light salmon colour with red-fruit aromas. They are fresh yet powerful, harmonious and long.",
+    "Whites are pale gold with green glints. They are complex and warm, clearly floral, with lively notes of fresh fruit such as peach or apricot.",
+    "Labels may add \"Grand Vin du Languedoc\", in letters at most half the size of the appellation name. They may also name a registered lieu-dit, a named plot listed in the land register, if it is on the harvest declaration."
+   ],
+   "cite": [
+    "minervois-doc:p1",
+    "minervois-doc:p2",
+    "minervois-doc:p3",
+    "minervois-doc:p5",
+    "minervois-doc:p8",
+    "minervois-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Argeliers, 1907",
+     "point": [
+      2.9117,
+      43.3089
+     ],
+     "zoom": 11,
+     "caption": "In 1907 the winegrower Marcellin Albert called the revolt of French winegrowers from Argeliers. The unrest led to the law creating the \"appellation d'origine\".",
+     "cite": [
+      "minervois-doc:p8"
+     ]
+    },
+    {
+     "label": "Canal du Midi, near Homps",
+     "point": [
+      2.7172,
+      43.2689
+     ],
+     "zoom": 11,
+     "caption": "The Canal du Midi winds along the south of the zone. Opened in 1680, it helped the vineyard grow.",
+     "cite": [
+      "minervois-doc:p8",
+      "minervois-doc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

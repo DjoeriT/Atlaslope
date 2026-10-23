@@ -1,0 +1,103 @@
+{
+ "id": "saumur-champigny",
+ "title": "Why Saumur-Champigny tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Chalky soils and a relatively warm, dry climate drew Cabernet Franc to the best-exposed slopes. Its reds are fresh, round and supple.",
+  "cite": [
+   "saumur-champigny-doc:p3",
+   "saumur-champigny-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Where whitish chalk meets darker slate",
+   "paras": [
+    "The vineyard lies in old Anjou, where the far south-west of the Paris basin meets the edge of the Armorican massif. Pale chalky soils sit next to darker slate soils. Long ago that difference set \"Anjou Blanc\", the Saumur area, apart from \"Anjou Noir\", the Angers area.",
+    "The Loire bounds the vineyard to the north. The Thouet valley and its tributary the Dive run through it from south to north. Together they have carved a string of slopes facing different ways, at 40 to 110 m.",
+    "The appellation covers 8 communes in Maine-et-Loire. Woods of conifers and deciduous trees, mostly oak and chestnut, still cap the hilltops. Among the vines, ventilation chimneys rise from huge cavities. Quarrymen dug out building stone there, and the cavities later became mushroom farms or cellars."
+   ],
+   "cite": [
+    "saumur-champigny-doc:p4",
+    "saumur-champigny-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "The Bois Doré slope",
+     "point": [
+      0.02,
+      47.225
+     ],
+     "zoom": 11,
+     "caption": "The slope above the Loire from Saumur to Montsoreau, cleared by monks in 1066.",
+     "cite": [
+      "saumur-champigny-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered from the wet west",
+   "paras": [
+    "The climate is oceanic. The Mauges hills to the west soften it with a foehn effect. Rain falls at 550 to 600 mm a year, against more than 800 mm on the Mauges hills. The gap is even wider in the growing season, above all from June until the harvest.",
+    "The Seuil du Poitou to the south adds a few southern touches. It shows in plants that can surprise on these Loire banks. Holm oaks and olive trees grow here, and almond trees too. Mean annual temperatures are relatively high, at about 12 °C."
+   ],
+   "cite": [
+    "saumur-champigny-doc:p6"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Turonian chalk",
+   "paras": [
+    "The chosen plots lie on the Turonian formations: rendzinas and limy brown soils of varying depth. Sands and clays from younger formations, such as the Senonian or Eocene, locally cover the tops of the slopes.",
+    "The soils have good thermal behaviour and a moderate water reserve. They show no sign of waterlogging.",
+    "Chalky, limy ground drains healthily and favours a regular water supply, never too much. Together with a relatively warm, dry climate, it let Cabernet Franc settle on the best-exposed slopes. There the grapes ripen early and stay well aired, which favours optimal ripeness."
+   ],
+   "cite": [
+    "saumur-champigny-doc:p5",
+    "saumur-champigny-doc:p6",
+    "saumur-champigny-doc:p7"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Still red only",
+   "paras": [
+    "Saumur-Champigny is made as still red wine and nothing else. Cabernet Franc is the grape behind the name's rise. Cabernet Sauvignon and Pineau d'Aunis are also allowed.",
+    "Red wine arrived in the early 17th century. Around 1630 Cardinal Richelieu sent several thousand Cabernet Franc vines to Touraine, to be planted in three districts including Saumur. It seems the grape came earlier, though, through the port of Nantes. Hence its local name, \"Breton\". In the late 19th century Antoine Cristal of Parnay worked to master the grape. The appellation took off from the 1960s.",
+    "Natural alcohol is at least 10.5 %, and wines may not pass 12.5 % after enrichment. Malolactic fermentation must finish, and fermentable sugars stay at 3 g/l at most. Vines are planted at 4,000 or more per hectare. Plots down to 3,300 still qualify if they meet the trellising and canopy rules. The yield is fixed at 57 hl/ha. Pieces of wood are banned in the wine.",
+    "A label may name a smaller place, a registered lieu-dit, if it appears on the harvest declaration. It may also add the wider name \"Val de Loire\" in smaller letters than the appellation."
+   ],
+   "cite": [
+    "saumur-champigny-doc:p2",
+    "saumur-champigny-doc:p3",
+    "saumur-champigny-doc:p4",
+    "saumur-champigny-doc:p5",
+    "saumur-champigny-doc:p6",
+    "saumur-champigny-doc:p7",
+    "saumur-champigny-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Parnay",
+     "point": [
+      0.0338,
+      47.2203
+     ],
+     "zoom": 11,
+     "caption": "The village of Antoine Cristal, whose work on Cabernet Franc helped the appellation take off from the 1960s.",
+     "cite": [
+      "saumur-champigny-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

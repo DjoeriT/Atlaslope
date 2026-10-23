@@ -1,0 +1,108 @@
+{
+ "id": "chateauneuf-du-pape",
+ "title": "Why Châteauneuf-du-Pape tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Many plots lie on stony soils full of rolled pebbles, often large. In the hot, dry summers the pebbles store heat by day and give it back at night, which favours full ripeness and concentration in the berries.",
+  "cite": [
+   "chateauneuf-du-pape-doc:p7",
+   "chateauneuf-du-pape-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "A pope's second residence on the Rhône",
+   "paras": [
+    "The vineyard lies on the left bank of the Rhône, about 15 km north of Avignon and west of the Comtat venaissin plain. It covers five communes in the Vaucluse, Châteauneuf-du-Pape and Orange among them.",
+    "The land is terraces and slopes, shaped by turns of erosion and of river deposits. Vines dominate the landscape.",
+    "Vines here probably go back to at least the 11th century. Vine growing took off from the 14th century, when the papacy settled in Avignon. Pope John XXII (1316 to 1334) had a château built as his \"second residence\", and its ruins still stand. He did much to help the vineyard grow and its wines gain a name."
+   ],
+   "cite": [
+    "chateauneuf-du-pape-doc:p5",
+    "chateauneuf-du-pape-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The popes' château",
+     "point": [
+      4.8325,
+      44.0565
+     ],
+     "zoom": 11,
+     "caption": "John XXII had a château built here as his \"second residence\", and its ruins remain.",
+     "cite": [
+      "chateauneuf-du-pape-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Sun, and a wind that dries",
+   "paras": [
+    "The climate is Mediterranean, shaped by the Mistral, a cold, dry wind from the north. The Mistral favours sunshine and cuts the rain, which stays under 650 mm a year.",
+    "This is one of the driest sectors of the Rhône valley. The sun is strong, about 2,800 hours a year, notably in summer, which favours ripening of the berries.",
+    "The dry climate, reinforced by the Mistral, limits fungal diseases. It favours a healthy harvest."
+   ],
+   "cite": [
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p9"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Pebbles from the Alps",
+   "paras": [
+    "The area sits mainly on marine molasse from the Miocene. To the west it rests on massive Urgonian limestone, forming a plateau at around 100 m.",
+    "Coarse river gravel from the Rhône was laid on this plateau at the end of the Pliocene. These are the Villafranchian terraces, and they are the emblem of the appellation. They are rolled pebbles from the Alps, often large and often in thick layers.",
+    "The soils are more or less deep and stony, with many rolled pebbles mixed in a reddish clay. In the north-east the molasse comes to the surface instead. There the soils are sandy, with the russet sandstones of the Comtat.",
+    "Locally the heat-storing pebbles are called \"caïau frejaü\". Following local custom, the plots allowed for harvest are those with these pebbly soils, and those with sandy or sandstone soils."
+   ],
+   "cite": [
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p8",
+    "chateauneuf-du-pape-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Rhône's left bank",
+     "point": [
+      4.84,
+      44.06
+     ],
+     "zoom": 9.5,
+     "caption": "The vineyard sits on the left bank of the Rhône, in the heart of its sedimentary basin.",
+     "cite": [
+      "chateauneuf-du-pape-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Eighteen grapes, low yields",
+   "paras": [
+    "The wines are still, dry reds and whites. About 95% of production is red.",
+    "Eighteen grapes are allowed, often planted mixed within one plot. Grenache Noir dominates the vineyard. The other dark grapes are Mourvèdre, Syrah, Cinsaut, Counoise, Muscardin, Terret Noir, Piquepoul Noir and Brun Argenté (locally \"vaccarèse\"). The light ones are Grenache Blanc, Clairette, Roussanne, Bourboulenc, Picardan and Piquepoul Blanc. Grenache Gris, Clairette Rose and Piquepoul Gris complete the list.",
+    "The whites are mainly made from Grenache Blanc, Clairette and Roussanne. Growers master blending and long vinifications to bring out richness, structure and ageing potential. The reds come out powerful and concentrated. The whites come out rich and complex.",
+    "The yield is fixed at 35 hl/ha. Harvest is by hand, and a machine harvester is banned. Sorting is compulsory, in the vineyard or at the winery. Irrigation may be allowed, but flooding the vines is forbidden. Red wines may not be enriched.",
+    "A label may carry \"Clos\" or \"Château\". It may also name a smaller place, if it is a registered lieu-dit that appears on the harvest declaration.",
+    "The rules grew from local custom. In 1817 the growers had the town council forbid blending in \"foreign fruit\" from their vines on neighbouring land, to protect their wine's reputation. Around 1870 Joseph Ducos researched the grapes and what each one brings, and the first appellation decree's grape list came from his work. In 1923 the growers set up the first union defending the appellation, with Baron Le Roy de Boiseaumarié. The decree of 15 May 1936 followed. At the same time, the national rules creating the French appellation system took up the same demands.",
+    "In 2010 the vineyard covered about 3,200 hectares, worked by 320 estates. Production averaged about 100,000 hl."
+   ],
+   "cite": [
+    "chateauneuf-du-pape-doc:p3",
+    "chateauneuf-du-pape-doc:p4",
+    "chateauneuf-du-pape-doc:p5",
+    "chateauneuf-du-pape-doc:p8",
+    "chateauneuf-du-pape-doc:p9",
+    "chateauneuf-du-pape-doc:p10"
+   ]
+  }
+ ]
+}

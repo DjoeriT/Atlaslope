@@ -1,0 +1,62 @@
+{
+ "id": "jurancon",
+ "title": "Why Jurançon tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Steep slopes and the foehn wind carve out sunny, dry pockets in a humid climate. Late local grapes with thick skins ripen there, even to raisins, and make lively dry wines and rich, powerful sweet ones.",
+  "cite": [
+   "jurancon-doc:p4",
+   "jurancon-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Strong slopes and cirques",
+   "paras": [
+    "The vineyards lie in 25 communes of the Pyrénées-Atlantiques department. Harvest, winemaking and ageing all have to happen inside that area.",
+    "The land has strong slopes and cirques, bowl-shaped hollows. They create topoclimates, small pockets with their own local weather."
+   ],
+   "cite": [
+    "jurancon-doc:p4",
+    "jurancon-doc:p5"
+   ]
+  },
+  {
+   "id": "foehn",
+   "beat": "weather",
+   "title": "A humid climate with sunny pockets",
+   "paras": [
+    "The foehn effect, a warm dry wind coming down off the mountains, and the shape of the land make favourable topoclimates. They bring sun and warmth with low humidity. Rainwater drains away.",
+    "That lets grapes reach ripeness and then overripeness. The grapes are local late varieties, and their thick skins suit the humid climate.",
+    "The stage at harvest decides the wine. Grapes are picked ripe or overripe, or after passerillage, when the berries dry out. They give dry wines and wines with residual sugar."
+   ],
+   "cite": [
+    "jurancon-doc:p4",
+    "jurancon-doc:p5"
+   ]
+  },
+  {
+   "id": "manseng",
+   "beat": "rules",
+   "title": "Manseng, dry or sweet",
+   "paras": [
+    "Petit Manseng and Gros Manseng are the main grapes. Four other white grapes are also allowed. Camaralet and Courbu are two of them. Lauzet and Petit Courbu are the others.",
+    "Only still white wine is made, either dry or with residual sugar. All grapes are picked by hand.",
+    "Dry wines carry the word sec right after the appellation name. They hold at most 4 g/l of fermentable sugar, and the yield is capped at 66 hl/ha. Their high acidity gives liveliness, balanced by a lot of richness. Some can age for a few years and stay fresh.",
+    "Wines with residual sugar hold more than 40 g/l and the yield is capped at 44 hl/ha. The grapes are picked in successive passes. Acidity balances alcohol and sugar, so the wines are fresh and not heavy. Young, they are mostly fruity and floral. With age they often become more complex, sometimes over several decades, with dried fruit and spice.",
+    "Wines that may carry vendanges tardives, late harvest, cannot be enriched. They must show the vintage on the label. Any Jurançon may add Sud-Ouest, the wider region, to its name."
+   ],
+   "cite": [
+    "jurancon-doc:p1",
+    "jurancon-doc:p2",
+    "jurancon-doc:p3",
+    "jurancon-doc:p4",
+    "jurancon-doc:p5",
+    "jurancon-doc:p6",
+    "jurancon-doc:p9"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "id": "madiran",
+ "title": "Why Madiran tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Tannat is a vigorous, fairly late grape that is prone to grey rot, yet it ripens here without difficulty. The slopes shed excess rain, and the well-oriented ones get more sun and warmth, which help the grapes ripen.",
+  "cite": [
+   "madiran-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "ridges",
+   "beat": "place",
+   "title": "Five ridges in the Pyrenean foothills",
+   "paras": [
+    "The vineyard lies south and west of the Adour, on the southern foothills of the Pyrenees. It covers hillsides on 5 big parallel ridges that run roughly north to south.",
+    "The Adour's alluvial valley closes it in on the east and a large, even, silty plateau on the west. Further south the cold, silty plateaus grow bigger and the land climbs.",
+    "Vines are scattered over the slopes in a farming landscape where maize and livestock come first. The steepest slopes are often wooded. The zone holds 37 communes in 3 neighbouring départements. Most of them, 28, are in Pyrénées-Atlantiques. Hautes-Pyrénées has 6 and Gers has 3."
+   ],
+   "cite": [
+    "madiran-doc:p5",
+    "madiran-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Adour valley",
+     "point": [
+      -0.015,
+      43.57
+     ],
+     "zoom": 10,
+     "caption": "The zone is bounded on the east by the alluvial valley of the Adour.",
+     "cite": [
+      "madiran-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Mild and damp, with hot, often dry summers",
+   "paras": [
+    "The climate is fairly even across the whole area: mild and rather humid. Its oceanic side brings fairly mild winters and cool, wet springs.",
+    "There is also a slight continental streak, with hot, often dry summers and autumns. In late summer and autumn a warm, dry southern wind of the foehn type blows on average 1 day in 3."
+   ],
+   "cite": [
+    "madiran-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Lopsided valleys, two kinds of soil",
+   "paras": [
+    "The ridges are mostly Tertiary molasse, deposits washed down from the Pyrenees. It is mainly marl with some patchy limestone beds at the foot of the slopes. Gravelly clays and then a layer of river pebbles cap it, and the pebbles now sit on top.",
+    "Erosion carved five ridges separated by lopsided valleys, typical of Gascony. The steep west-facing slopes show the molasse with its limestone beds. The gentler east-facing slopes are covered with wind-blown silt.",
+    "That gives two main soils. Clay-limestone lies on the west slopes. Acid, leached soils called boulbènes lie on gentle slopes and plateaus. Boulbènes are often wet and deep, except where gravel or pebbles are mixed in.",
+    "Plants show the difference. Pedunculate oaks and acid heath spread over the leached and low-lime clay soils. Downy oaks and dry grassland grow on the limy soils, often at the foot of steep west-facing slopes.",
+    "Growers favoured the plots best able to ripen grapes in good health: well-oriented slopes on rather free-draining, often stony soils. The mix of soils and landforms made a patchwork landscape, so the vineyard is in patches rather than one block."
+   ],
+   "cite": [
+    "madiran-doc:p6",
+    "madiran-doc:p8"
+   ]
+  },
+  {
+   "id": "tannat",
+   "beat": "rules",
+   "title": "A red built to travel",
+   "paras": [
+    "Madiran is a dry, still red and nothing else. It is a blend led by Tannat. The two Cabernets and Fer join it. Together they give very dark wines with a tannic structure and good ageing potential.",
+    "Red and black fruit is typical of the aroma, moving with age towards spice and candied fruit. Destemming is compulsory, and the wines must be aged until 15 October of the year after harvest, so the tannins soften before sale. Yields are set at 55 hl/ha.",
+    "The style came from its customers. From the 15th century mountain buyers in the Pyrenees wanted coloured, full-bodied reds. In the 17th century the French West Indies became a market. The wines were concentrated enough to keep beyond a year, so they survived the long sea voyage and the heat on arrival. Both markets pushed growers towards dark, tannic wines for keeping.",
+    "By the 18th century Tannat had joined the old Fer and Bouchy (Cabernet Franc). The name Madiran was first cited in 1744, and the AOC was recognised in 1948. The vineyard reached 5,000 ha at the end of the 18th century. It shrank sharply in the 20th and has grown slowly since the early 1980s to 1,300 ha."
+   ],
+   "cite": [
+    "madiran-doc:p2",
+    "madiran-doc:p3",
+    "madiran-doc:p4",
+    "madiran-doc:p6",
+    "madiran-doc:p7",
+    "madiran-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Madiran, home of the priory",
+     "point": [
+      -0.057,
+      43.549
+     ],
+     "zoom": 13,
+     "caption": "The archives of the Priory of Madiran show vines everywhere in the area in the early 13th century.",
+     "cite": [
+      "madiran-doc:p6"
+     ]
+    }
+   ]
+  }
+ ]
+}

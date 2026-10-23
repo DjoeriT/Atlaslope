@@ -1,0 +1,120 @@
+{
+ "id": "beaune",
+ "title": "Why Beaune tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The cool oceanic climate is offset by a very favourable lie of the land, with slopes that open to the east and take in wide sun. Demanding work, from dense planting to careful keeping, favours wines of strong personality and great longevity.",
+  "cite": [
+   "beaune-doc:p8",
+   "beaune-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A tectonic step above the plain",
+   "paras": [
+    "The Côte de Beaune is a straight ridge of about 25 km, running north-east to south-west. It formed through tectonic movement. To the west lie the limestone plateaux of the \"Hautes Côtes\", at 400 to 500 m. To the east lies the Bresse plain, a collapsed trench from the Tertiary that sits near 200 m at the foot of the Côte.",
+    "The area is limited to the commune of Beaune alone, in the Côte-d'Or. The vineyard covered about 410 hectares in 2008.",
+    "The slope faces east/south-east overall. A deep dry valley splits it in two. Smaller side valleys, called combes, cut into it. So exposures vary: some face south or south-west, others east/north-east.",
+    "Beaune is also the capital of Burgundy wine. Most négociant houses, the merchants who buy, raise and sell wine, are based here. So are the brokers and the regional trade bodies."
+   ],
+   "cite": [
+    "beaune-doc:p5",
+    "beaune-doc:p6",
+    "beaune-doc:p7",
+    "beaune-doc:p8",
+    "beaune-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Beaune",
+     "point": [
+      4.79,
+      46.99
+     ],
+     "zoom": 10,
+     "caption": "A straight tectonic ridge of about 25 km, between the Hautes Côtes and the Bresse plain.",
+     "cite": [
+      "beaune-doc:p6"
+     ]
+    },
+    {
+     "label": "Hospices de Beaune",
+     "point": [
+      4.8396,
+      47.0245
+     ],
+     "zoom": 14,
+     "caption": "Home of the annual Hospices de Beaune sale, the largest wine auction in the world.",
+     "cite": [
+      "beaune-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool, with a shelter behind",
+   "paras": [
+    "The climate is cool oceanic, disturbed by continental or southern influences carried along the Rhône-Saône axis. Across the region, rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5 °C.",
+    "The Côte lies east of the Morvan massif and the Burgundy plateaux. That gives it a shelter, with a thermal advantage and a notable rain deficit for the region."
+   ],
+   "cite": [
+    "beaune-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Thin limy soils, more clay below",
+   "paras": [
+    "The front of the Côte is Jurassic limestone. Slabby Callovian limestone sits at the base. Oxfordian limestones cover the middle and upper slope. A hard, often wooded limestone cornice tops the series, and the vineyard stops at it. At the foot lie more or less gravelly, clayey spreads, always limy. On the slope too, scree mixed with clay and silt masks the rock.",
+    "Soils are little developed, generally carbonated, thin and well drained. Lean, very limy soils at the top of the slope grow richer in clay lower down. On the foot spreads they become relatively deep, about 0.50 m, and are decarbonated at the surface.",
+    "Vines grow between 225 and 340 m. The producers take particular care of the soil, which is sensitive to erosion."
+   ],
+   "cite": [
+    "beaune-doc:p7",
+    "beaune-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The wooded cornice",
+     "point": [
+      4.82,
+      47.03
+     ],
+     "zoom": 11,
+     "caption": "A hard limestone cornice, often wooded, marks the top of the vineyard.",
+     "cite": [
+      "beaune-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Mostly Pinot Noir, named by climat",
+   "paras": [
+    "Beaune makes dry still reds and whites only. About 85 % of the production is red, and the average is 15,000 hl a year. Pinot Noir and Chardonnay are the grapes. Pinot Gris and Pinot Blanc are also allowed.",
+    "The natural setting is fairly varied. That is why some reds are silky and elegant while others are more rustic and severe.",
+    "Vines are planted at 9,000 vines per hectare or more. Wines are usually raised for several months, which helps them keep well. Yields are capped at 50 hl/ha for red and 57 hl/ha for white.",
+    "Premier Cru plots sit on limestone slopes with the best exposures. Their soils are shallow and well drained because of the slope, and the open landscape gives maximum sun. A Premier Cru may add one of the listed climats right after the name Beaune.",
+    "A \"climat\" is the local name for a named vineyard site. Varied slopes and a mosaic of soils give each climat's wine its own character. Naming the climat on the label is the custom, and it offers a wide palette of nuances."
+   ],
+   "cite": [
+    "beaune-doc:p2",
+    "beaune-doc:p3",
+    "beaune-doc:p4",
+    "beaune-doc:p5",
+    "beaune-doc:p6",
+    "beaune-doc:p8",
+    "beaune-doc:p9",
+    "beaune-doc:p10"
+   ]
+  }
+ ]
+}

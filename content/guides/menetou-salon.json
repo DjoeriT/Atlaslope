@@ -1,0 +1,104 @@
+{
+ "id": "menetou-salon",
+ "title": "Why Menetou-Salon tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Marl beneath the vines meets a degraded oceanic climate. Together they give the reds fine tannins and give the whites smoothness with freshness.",
+  "cite": [
+   "menetou-salon-doc:p8",
+   "menetou-salon-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "cuesta",
+   "beat": "place",
+   "title": "A slope north-east of Bourges",
+   "paras": [
+    "The vines sit on a cuesta, a ridge with one steep face, north-east of Bourges and south-west of the neighbouring appellation Sancerre. The area covers 10 communes in the Cher, mostly in the natural region of the Pays-Fort sancerrois.",
+    "The far east has steep slopes. The west has gentler relief."
+   ],
+   "cite": [
+    "menetou-salon-doc:p6",
+    "menetou-salon-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Menetou-Salon",
+     "point": [
+      2.4833,
+      47.2333
+     ],
+     "zoom": 10,
+     "caption": "The vineyard lies on a cuesta north-east of Bourges, in the Cher.",
+     "cite": [
+      "menetou-salon-doc:p6"
+     ]
+    },
+    {
+     "label": "Bourges and its abbey",
+     "point": [
+      2.398,
+      47.081
+     ],
+     "zoom": 10,
+     "caption": "Monks of the abbey of Saint-Sulpice-lès-Bourges developed the vineyard that Menetou-Salon descends from.",
+     "cite": [
+      "menetou-salon-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Rain and frost, eased by slope and wind",
+   "paras": [
+    "The climate is oceanic but \"degraded\", with a fairly generous 800 to 850 mm of rain a year. The area runs the risk of many frost days, especially in spring.",
+    "The open landscape faces the prevailing west and south-west winds. The delimited plots are the well-exposed ones, with enough slope to favour natural drainage of water and cold air. These sites offset the fairly high rainfall and let the vineyard escape the risk of frost. They also catch the drying effect of the winds, notably while the grapes ripen."
+   ],
+   "cite": [
+    "menetou-salon-doc:p7",
+    "menetou-salon-doc:p8"
+   ]
+  },
+  {
+   "id": "marl",
+   "beat": "ground",
+   "title": "One marl, two soils",
+   "paras": [
+    "A single geological formation lies beneath the vines. It is the Saint-Doulchard marls from the late Jurassic (Kimmeridgian), along a limestone cuesta running west to east.",
+    "The vineyard sits in islands that follow the marl outcrop closely. Its weathering made two soils: brown calcareous soils and brunified rendzinas.",
+    "The delimited plots are those with these soils. They let roots go deep and keep the water supply regulated. They also give an early start to the growing cycle. These soils lengthen the cycle and let the grapes ripen optimally."
+   ],
+   "cite": [
+    "menetou-salon-doc:p7",
+    "menetou-salon-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Sauvignon and Pinot, dry and still",
+   "paras": [
+    "Two grapes are named: Sauvignon Blanc and Pinot Noir. Both ripen early and find favourable conditions for their aromas here. The wines are dry and still, in three colours. In 2009 the vineyard covered about 500 hectares. Two thirds of it was for white wine.",
+    "White wines run from pale yellow to gold. Their aromas can join mineral and varietal notes with ripe fruit such as citrus. A smooth feel, \"suavité\", on the attack and some freshness on the finish make them balanced.",
+    "Reds vary in depth of colour. They are fruity, often led by red fruit, and join power with finesse on a fine tannic structure. They can be enjoyed young or after some years of ageing. The marl and the climate give them fine tannins with light fruit. They also give enough power to age well.",
+    "Rosés range from pale pink to a deep salmon. They often pair freshness with delicate fruit.",
+    "Yields are capped at 65 hl/ha for white. Rosé is held to 63 hl/ha and red to 59 hl/ha.",
+    "Labels may add a registered lieu-dit, a named plot that appears on the harvest declaration. They may also add the commune the grapes came from.",
+    "The appellation was recognised on 23 January 1959. A wine and fruit growers' union founded in 1890 set out to save and rebuild a vineyard devastated by phylloxera. Over a third of the production is exported."
+   ],
+   "cite": [
+    "menetou-salon-doc:p3",
+    "menetou-salon-doc:p4",
+    "menetou-salon-doc:p5",
+    "menetou-salon-doc:p6",
+    "menetou-salon-doc:p7",
+    "menetou-salon-doc:p8",
+    "menetou-salon-doc:p9",
+    "menetou-salon-doc:p10"
+   ]
+  }
+ ]
+}

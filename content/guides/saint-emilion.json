@@ -1,0 +1,118 @@
+{
+ "id": "saint-emilion",
+ "title": "Why Saint-Émilion tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Under Saint-Émilion and the plateaus around it runs a network of quarry galleries thought to be about 100 km long. Above, the soils are mostly limestone and clay-limestone, and Merlot, by far the main grape, ripens well on the clay and gives softness, roundness and silky tannins.",
+  "cite": [
+   "saint-emilion-doc:p6",
+   "saint-emilion-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A walled village above the Dordogne",
+   "paras": [
+    "The vineyard lies east of the city of Libourne, around the town of Saint-Émilion. It is a limestone plateau that looks down on the Dordogne to the south and stops at the Barbanne stream to the north. Eight communes and part of Libourne share it.",
+    "Parallel to the Dordogne and its vine-covered valley rises a first line of steep, straight slopes. They form \"combes\", valleys shaped like amphitheatres. The medieval village of Saint-Émilion, built of limestone with russet or grey tiled roofs and ringed by ramparts, sits in one of these combes, facing south.",
+    "In 2010 the vineyard covered 5,500 hectares, worked by about 650 growers. It was the first wine landscape to be listed as a UNESCO World Heritage site, in 1999."
+   ],
+   "cite": [
+    "saint-emilion-doc:p4",
+    "saint-emilion-doc:p5",
+    "saint-emilion-doc:p6",
+    "saint-emilion-doc:p7",
+    "saint-emilion-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Saint-Émilion, the walled village",
+     "point": [
+      -0.1553,
+      44.894
+     ],
+     "zoom": 11,
+     "caption": "A medieval limestone village with ramparts, built in a south-facing combe.",
+     "cite": [
+      "saint-emilion-doc:p5",
+      "saint-emilion-doc:p6"
+     ]
+    },
+    {
+     "label": "Libourne, the port",
+     "point": [
+      -0.2427,
+      44.9157
+     ],
+     "zoom": 11,
+     "caption": "The port of Libourne was created in 1269 and opened the road for shipping the wines.",
+     "cite": [
+      "saint-emilion-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean weather with a continental edge",
+   "paras": [
+    "Saint-Émilion has the mild ocean climate of Bordeaux, but it lies in the east of the Gironde and is more continental. Temperatures are higher, with Mediterranean touches. Holm oaks along the ridge show it.",
+    "The ocean climate is unpredictable. Some years bring a few rainy autumn depressions. Others end with warm, very sunny late seasons. Weather that changes from year to year brings marked differences in taste between vintages."
+   ],
+   "cite": [
+    "saint-emilion-doc:p6",
+    "saint-emilion-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone, clay and a hundred kilometres of galleries",
+   "paras": [
+    "A plateau of Tertiary limestone with starfish fossils (\"calcaire à astéries\") remains at the centre of the vineyard. West of the town its soils are limestone, thin and light, most often sandy-silty. To the east they are mostly clay-limestone, not heavy and thin. At the centre a fairly thick cover of silt and clay lies on top.",
+    "Around the plateau, the \"Fronsadais\" molasse (Oligocene) shows on the slopes. They are generally steeper to the south and west than to the north. Its soils are mostly limestone, often clayey-silty.",
+    "The north-west is covered by a sheet of sand. Near Pomerol, on the Figeac terrace, gravelly rises appear. In the south, the Dordogne valley holds gravel, sand and silt in varied patterns. The ridge edge peaks at 100 metres.",
+    "Stone has always been quarried here. It left a network of galleries thought to be about 100 km long, under Saint-Émilion and the plateaus around. It is often used as a cellar. Its steady temperature, between 12 °C and 16 °C, and its humidity suit keeping wine perfectly."
+   ],
+   "cite": [
+    "saint-emilion-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Dordogne valley",
+     "point": [
+      -0.17,
+      44.875
+     ],
+     "zoom": 10,
+     "caption": "The Dordogne valley to the south holds gravel, sand and silt in varied patterns, below the limestone plateau.",
+     "cite": [
+      "saint-emilion-doc:p5",
+      "saint-emilion-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "merlot",
+   "beat": "rules",
+   "title": "Merlot first, dry red only",
+   "paras": [
+    "Saint-Émilion makes one kind of wine: dry, still red. Merlot is by far the main grape. Cabernet Franc (locally \"bouchet\") and Cabernet Sauvignon are the other main grapes. Carmenère and Cot (or Malbec) play a minor part and may be blended in. Petit Verdot may be added as a minor extra.",
+    "Over generations, growers learned to match grapes to the soils. Merlot likes the cool, damp feel of clay and ripens well there. Cabernet Franc is preferred on limestone or on slightly warmer sand and gravel. Cabernet Sauvignon ripens late and suits warm, dry soils, gravel and sand or well-exposed clay-limestone.",
+    "Yields are set at 53 hl/ha, with a cap at 65 hl/ha. Vines must be planted at least 5,500 per hectare. The wines reach at least 11% natural alcohol and no more than 13.5% in total after enrichment. In 2010 the vineyard made on average 230,000 hl of red wine, part of it claimed under its own appellation, Saint-Émilion grand cru.",
+    "Labels may add the wider name \"Vin de Bordeaux\" or \"Grand Vin de Bordeaux\". Its letters may be no larger than two thirds of the appellation's name."
+   ],
+   "cite": [
+    "saint-emilion-doc:p2",
+    "saint-emilion-doc:p4",
+    "saint-emilion-doc:p7",
+    "saint-emilion-doc:p8",
+    "saint-emilion-doc:p9"
+   ]
+  }
+ ]
+}

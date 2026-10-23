@@ -1,0 +1,128 @@
+{
+ "id": "morgon",
+ "title": "Why Morgon tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The same Gamay grape grows on three kinds of ground in one village. Wine lovers often tell the fruity granite wines, pleasing young, from the more austere schist wines that gain from a few years' keeping.",
+  "cite": [
+   "morgon-doc:p3",
+   "morgon-doc:p6",
+   "morgon-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Slopes above the Saône plain",
+   "paras": [
+    "Morgon is limited to the single commune of Villié-Morgon, in the north of the Rhône department. It lies 19 km north of Villefranche-sur-Saône and 21 km south of Mâcon.",
+    "The land is hilly, and the slopes get steeper towards the west. Streams such as the Morcille and the Douby cut the rolling hills. The slopes climb between 220 m and 480 m, face south-east and look over the wide plain of the Saône.",
+    "The area lies on the eastern flanks of the Monts du Beaujolais. More precisely, it sits on the first slopes of the Fût d'Avenas, which peaks at 842 m."
+   ],
+   "cite": [
+    "morgon-doc:p5",
+    "morgon-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Fût d'Avenas, the peak behind",
+     "point": [
+      4.58,
+      46.19
+     ],
+     "zoom": 10,
+     "caption": "The vineyards sit on the first slopes of the Fût d'Avenas, which peaks at 842 m.",
+     "cite": [
+      "morgon-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hills-and-valley",
+   "beat": "weather",
+   "title": "Shelter from the west, sun from the Saône",
+   "paras": [
+    "The climate is oceanic, with continental and southern influences. Rain is spread evenly through the year and the mean annual temperature is close to 11 °C.",
+    "The Monts du Beaujolais protect the vines from west winds and soften the oceanic influence. They also create a foehn effect that dries the humid air, which brings more light and less rain.",
+    "The wide Saône valley gives a lot of light, nearly 2000 hours a year on average. It also carries the southern influences, marked by strong summer heat.",
+    "The vineyard lies about ten kilometres from the Saône. The valley tempers the temperature, yet it is far enough away to spare the vines its freezing fogs and late spring frosts."
+   ],
+   "cite": [
+    "morgon-doc:p6",
+    "morgon-doc:p7"
+   ]
+  },
+  {
+   "id": "three-soils",
+   "beat": "ground",
+   "title": "Three kinds of ground",
+   "paras": [
+    "Manganese-rich schist from the Upper Devonian crumbles into clay soils that locals call \"morgon\". It covers the centre and the east, including the hill of the Py.",
+    "Porphyritic granite weathers into sandy grit. It gives poor, free-draining soils in the north and north-west.",
+    "At the eastern edge, the foot of the slopes carries colluvium and old river terraces from the Quaternary. These soils vary, from very sandy to clayey.",
+    "This variety of soils is decisive for the originality of the wines. Gamay, the black Gamay, shows all of these nuances in the glass. Wines from schist have an original character that producers describe with the verb \"morgonner\". The best-known example comes from the Py."
+   ],
+   "cite": [
+    "morgon-doc:p6",
+    "morgon-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The hill of the Py",
+     "point": [
+      4.7,
+      46.15
+     ],
+     "zoom": 11,
+     "caption": "Schist soils on the Py hill give the best-known example of the \"morgonner\" character.",
+     "cite": [
+      "morgon-doc:p6",
+      "morgon-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red-only",
+   "beat": "rules",
+   "title": "Dry red, short pruned",
+   "paras": [
+    "Morgon makes dry still red wines only.",
+    "Producers have learned to master the Gamay grape and its growth, notably with a high planting density of at least 6000 vines per hectare and short pruning. Short pruning allows at most 10 buds per vine. Pruning must be finished by 15 May.",
+    "Winemaking mixes traditional fermentation with semi-carbonic maceration.",
+    "Vines were already recorded here in 956. From the end of the 15th century, Lyon's silk and banking fortunes built up the vineyard."
+   ],
+   "cite": [
+    "morgon-doc:p2",
+    "morgon-doc:p4",
+    "morgon-doc:p6",
+    "morgon-doc:p7"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Lieu-dit",
+    "text": "The label may name a smaller cadastral place, the lieu-dit, when it appears on the harvest declaration. It follows straight after the name Morgon, in letters no larger.",
+    "cite": [
+     "morgon-doc:p10"
+    ]
+   },
+   {
+    "term": "Cru du Beaujolais",
+    "text": "The label may add a larger area: «Vin du Beaujolais», «Grand Vin du Beaujolais» or «Cru du Beaujolais». Its letters are at most two thirds the size of the name Morgon.",
+    "cite": [
+     "morgon-doc:p10",
+     "morgon-doc:p11"
+    ]
+   }
+  ],
+  "cite": [
+   "morgon-doc:p10",
+   "morgon-doc:p11"
+  ]
+ }
+}

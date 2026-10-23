@@ -1,0 +1,121 @@
+{
+ "id": "aloxe-corton",
+ "title": "Why Aloxe-Corton tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Clay-rich soil that is also relatively poor gives the reds of Aloxe-Corton a handsome tannic structure. Everything grows on one isolated hill, the Montagne de Corton, which the vines cover from its foot to its wooded rim.",
+  "cite": [
+   "aloxe-corton-doc:p6",
+   "aloxe-corton-doc:p7",
+   "aloxe-corton-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hill",
+   "beat": "place",
+   "title": "A hill standing alone",
+   "paras": [
+    "Aloxe-Corton sits at the northern end of the Côte de Beaune, a straight ridge of tectonic origin. The ridge divides the limestone plateaux of the Hautes Côtes, at 400 to 500 m, from the Bresse plain, near 250 m.",
+    "The area spans 3 communes a few kilometres north of the town of Beaune. Aloxe-Corton shares it with Ladoix-Serrigny and Pernand-Vergelesses. It covers the slopes and the foot of the Montagne de Corton, a hill set apart from the rest of the Côte between two valleys that drain the land behind.",
+    "In 1862 the village of Aloxe added the name of its most prestigious cru, Corton, to its own."
+   ],
+   "cite": [
+    "aloxe-corton-doc:p5",
+    "aloxe-corton-doc:p6",
+    "aloxe-corton-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Montagne de Corton",
+     "point": [
+      4.8625,
+      47.0715
+     ],
+     "zoom": 11,
+     "caption": "An isolated hill on the Côte, between two valleys, with vines from its foot to its wooded rim.",
+     "cite": [
+      "aloxe-corton-doc:p6",
+      "aloxe-corton-doc:p7",
+      "aloxe-corton-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool, and sheltered from the west",
+   "paras": [
+    "The climate is cool and oceanic, with some continental and southern influences carried along the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The annual mean temperature is 10.5°C.",
+    "The Côte lies east of the Morvan massif and the plateaux of Burgundy. That shelter gives it a thermal advantage and less rain than is usual for the region."
+   ],
+   "cite": [
+    "aloxe-corton-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Morvan massif",
+     "point": [
+      4.05,
+      47.15
+     ],
+     "zoom": 8,
+     "caption": "The massif to the west that shelters the Côte, giving it more warmth and less rain.",
+     "cite": [
+      "aloxe-corton-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay at the foot, marl above",
+   "paras": [
+    "The lower slope is moderate and rests on hard Middle Jurassic limestone. Colluvium washed down the slope hides it: shallow soils, well drained, rich in clay and sometimes very stony.",
+    "Higher up the slope is often steep and the bedrock is mostly Upper Jurassic marl, rich in silica. The soils are silty and prone to erosion. They are not very fertile. A hard limestone ledge, topped with woods, crowns the hill at 385 m.",
+    "At the south end a wide fan of alluvium, a mix of clay and chailles (flint-like nodules), spreads from a dry valley. The soils there have moderate fertility.",
+    "The delimited plots lie between 230 and 350 m, on every type of bedrock. They rest on well-drained clay at the foot of the hill. These soils are especially favourable: they drain well and warm up readily. Their fertility is limited. In the reds, the high clay content and relative poverty show as a fine tannic structure."
+   ],
+   "cite": [
+    "aloxe-corton-doc:p7",
+    "aloxe-corton-doc:p9"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Pinot Noir and Chardonnay on a grand cru hill",
+   "paras": [
+    "The wines are dry, still, and either red or white. About 98% of the production is red. The area covered about 120 hectares in 2008 and made close to 4,500 hl a year.",
+    "Pinot Noir and Chardonnay are the grapes. Pinot Gris and Pinot Blanc are also allowed. Under the cool climate Pinot Noir and Chardonnay show finesse and elegance, in wines that last remarkably well.",
+    "Wines are usually aged for several months. That long ageing helps them keep well in bottle and brings out the differences between plots.",
+    "Many plots on the slopes of the hill are classed as grand cru. Aloxe-Corton wines come mostly from the foot of the hill, on colluvium that is often clayey. Plots next to the grand cru can be premier cru when they sit well for slope and climate on the best-drained soils. A label can name the premier cru climat (a named vineyard site) right after the appellation, such as Les Vercots or Clos du Chapitre. Its letters are no larger than the appellation name. A label can also name a lieu-dit (a plot name in the land register) that appears on the harvest declaration, in letters at most half the size of the appellation name. It may name the wider unit Vin de Bourgogne or Grand Vin de Bourgogne too."
+   ],
+   "cite": [
+    "aloxe-corton-doc:p2",
+    "aloxe-corton-doc:p6",
+    "aloxe-corton-doc:p7",
+    "aloxe-corton-doc:p8",
+    "aloxe-corton-doc:p9",
+    "aloxe-corton-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Aloxe-Corton village",
+     "point": [
+      4.8689,
+      47.0642
+     ],
+     "zoom": 11,
+     "caption": "The village that added Corton to its name in 1862, below the hill where Charlemagne's gift of vines may be remembered in a plot called En Charlemagne.",
+     "cite": [
+      "aloxe-corton-doc:p7",
+      "aloxe-corton-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}

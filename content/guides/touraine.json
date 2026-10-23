@@ -1,0 +1,145 @@
+{
+ "id": "touraine",
+ "title": "Why Touraine tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Touraine sits where the Cher, the Indre and the Vienne join the Loire, on a gently rolling plateau. Past the meridian of Tours the ocean's influence fades, and the grapes change with it.",
+  "cite": [
+   "touraine-doc:p7",
+   "touraine-doc:p8",
+   "touraine-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "confluence",
+   "beat": "place",
+   "title": "Where three rivers meet the Loire",
+   "paras": [
+    "Touraine is a gently rolling plateau in the south-west of the Paris Basin. The Cher, the Indre and the Vienne all join the Loire here.",
+    "The vineyard stretches over about a hundred kilometres and follows the valleys. The exception is the Sologne in the east, where the vines sit on a plateau between the Cher and the Loire.",
+    "Altitude rarely goes above 100 or 120 metres, across 143 communes.",
+    "Five named areas sit inside the appellation. Amboise and Mesland lie along the Loire valley. Azay-le-Rideau borders the Indre valley. Chenonceaux sits on the lower Cher. Oisly occupies the eastern plateau between the Loire and the Cher."
+   ],
+   "cite": [
+    "touraine-doc:p7",
+    "touraine-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "The Cher valley at Chenonceau",
+     "point": [
+      1.07,
+      47.325
+     ],
+     "zoom": 10,
+     "caption": "The Chenonceaux area stretches along the slopes on both banks of the Cher.",
+     "cite": [
+      "touraine-doc:p11"
+     ]
+    },
+    {
+     "label": "The Sologne plateau at Oisly",
+     "point": [
+      1.383,
+      47.383
+     ],
+     "zoom": 10,
+     "caption": "In the east the vines sit on a plateau between the Cher and the Loire.",
+     "cite": [
+      "touraine-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "An ocean influence that fades eastward",
+   "paras": [
+    "The climate is oceanic, and that influence weakens clearly as you move east, around the meridian of Tours.",
+    "Rain is about 550 mm in the west and up to 650 mm in the east. The east also has a wider swing between warm and cool temperatures.",
+    "Under this climate, chenin and cabernet franc were developed in the west. Sauvignon, cot and gamay are favoured in the east. The meridian of Tours marks this natural climate line.",
+    "Oisly, in the Sologne, has the most marked dry season in the Touraine region. Its white wines have a marked freshness.",
+    "Mesland sits on a plateau edge facing the Loire. Its high temperature swing and its position show off early-ripening grapes."
+   ],
+   "cite": [
+    "touraine-doc:p8",
+    "touraine-doc:p10",
+    "touraine-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Amboise, on the Loire",
+     "point": [
+      0.98,
+      47.41
+     ],
+     "zoom": 10,
+     "caption": "The Amboise area sits on a plateau of soft chalk, between 80 and 100 metres up.",
+     "cite": [
+      "touraine-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Flint clay on the slopes, gravel in the valleys",
+   "paras": [
+    "Three kinds of ground are picked out. One is clay with flint, mixed with Miocene sands, called \"bournais perrucheux\". Another is clay with flint, called \"perruches\", or stony clay-limestone, called \"aubuis\". These are warm, permeable soils on the first slopes of the valleys. The third is old river gravel on terraces in the valleys, called \"graviers\".",
+    "The vineyard is limited to free-draining soils, mainly on Turonian and Senonian rock. Flint-bearing clay covers most of the soils of the intermediate valleys. The flints are numerous on the surface and raise the exchange of heat in the soil as the grapes ripen.",
+    "Sauvignon likes the \"perruches\" and \"aubuis\" soils, where it finds steady ripeness year after year. Gamay sits mainly on clay with flint, and its wines are fruity and lively.",
+    "In Oisly, sauvignon alone grows on continental sands and gravels. It also grows on the local \"Sologne\" formations of sand and clay."
+   ],
+   "cite": [
+    "touraine-doc:p7",
+    "touraine-doc:p8",
+    "touraine-doc:p10",
+    "touraine-doc:p11",
+    "touraine-doc:p12"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Sauvignon, gamay and a bottle-fermented sparkler",
+   "paras": [
+    "Touraine makes still white, red and rosé wines. It also makes sparkling white and rosé. The still wines are round in the mouth, with fresh, well-balanced finishes.",
+    "Sauvignon made up two thirds of the appellation's production in 2009. Its wines are fresh and original in character. Gamay reds must carry the word \"gamay\" just under the appellation name.",
+    "East of the Tours meridian, red wines are built on cot. West of it, cabernet franc leads. Both bring fine tannic structure.",
+    "The label may add one of five areas. Amboise whites are generally dry. Some keep sugar and are then called demi-sec (medium-dry), moelleux or doux (sweet). In Azay-le-Rideau, grolleau and chenin cover sandy, gravelly hills. Its rosés must be made by direct pressing before fermentation. Chenonceaux whites age until at least 30 April of the year after harvest. Its reds age until at least 31 August. Mesland is mostly gamay for reds and rosés. Oisly is dry white from sauvignon alone, aged until at least 30 April.",
+    "Whites from Amboise, Mesland and Azay-le-Rideau must state demi-sec, moelleux or doux on the label to match their sugar. Rosés from Amboise and Mesland must do the same.",
+    "Rosés and gamay reds may be called \"primeur\" or \"nouveau\", meaning new wine. Primeur rosés are made to drink in the months after they are made. These wines must show the vintage on the label.",
+    "The label may also name a smaller place. It must be a registered lieu-dit, a named plot on the land register, listed on the harvest declaration.",
+    "Sparkling wines come only from a second fermentation in the bottle. They spend at least 9 months in bottle before disgorgement. From the 19th century, producers saw that bottled wines in the cellars sometimes started fermenting again, and set out to master it. Cellars dug into tuffeau gave the large, temperate space this needs. Sparkling whites must hold 60% chenin or orbois. Their acid backbone brings freshness. Long ageing in bottle, \"sur lattes\", builds brioche aromas and complexity."
+   ],
+   "cite": [
+    "touraine-doc:p2",
+    "touraine-doc:p3",
+    "touraine-doc:p9",
+    "touraine-doc:p10",
+    "touraine-doc:p11",
+    "touraine-doc:p12",
+    "touraine-doc:p13",
+    "touraine-doc:p14",
+    "touraine-doc:p15"
+   ],
+   "fly": [
+    {
+     "label": "Azay-le-Rideau, the Indre valley",
+     "point": [
+      0.47,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "The Azay-le-Rideau area lies between the Loire and Indre valleys, on sandy and gravelly hills.",
+     "cite": [
+      "touraine-doc:p11"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "id": "vacqueyras",
+ "title": "Why Vacqueyras tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The old name meant \"Valley of Stones\", and most vines grow on broad terraces of the Ouvèze. The climate is hot and Mediterranean, tempered by the Dentelles de Montmirail and swept by the Mistral.",
+  "cite": [
+   "vacqueyras-doc:p8",
+   "vacqueyras-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Between the Dentelles and the Ouvèze",
+   "paras": [
+    "Vacqueyras is one of the places that ring the limestone massif of the Dentelles de Montmirail. The massif is the first Alpine push towards the Rhône Valley, and it partly cuts the valley from east to west. It peaks at 630 m at the Rocher du Turc.",
+    "The vineyard lies on the left bank of the Ouvèze, between Gigondas to the north and Beaumes de Venise to the south-east. It lies within the municipalities of Vacqueyras and Sarrians in Vaucluse. Most of the vines grow on broad Ouvèze terraces at 60 m to 160 m."
+   ],
+   "cite": [
+    "vacqueyras-doc:p6",
+    "vacqueyras-doc:p7",
+    "vacqueyras-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Dentelles de Montmirail",
+     "point": [
+      5.06,
+      44.17
+     ],
+     "zoom": 10.5,
+     "caption": "Vacqueyras is one of the places that ring this limestone massif. It peaks at 630 m at the Rocher du Turc.",
+     "cite": [
+      "vacqueyras-doc:p7"
+     ]
+    },
+    {
+     "label": "Ouvèze terraces",
+     "point": [
+      4.98,
+      44.1
+     ],
+     "zoom": 11,
+     "caption": "Most of the vineyard sits on broad terraces of the Ouvèze, at 60 m to 160 m.",
+     "cite": [
+      "vacqueyras-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot, dry and windy",
+   "paras": [
+    "The climate is Mediterranean, hot and dry, with a lot of sun. Rain is low at 600 mm to 800 mm a year, but very irregular. Spells of heavy rain sometimes come at the equinoxes.",
+    "The Mistral, a violent and cold north wind, blows here more than 100 days a year. It helps concentrate the harvest and protects the vines from fungal diseases.",
+    "This is the eastern edge of the hottest climate zone in the Côtes du Rhône. The Dentelles temper it, so the grapes can ripen well without too much heat."
+   ],
+   "cite": [
+    "vacqueyras-doc:p8",
+    "vacqueyras-doc:p10"
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "A valley of stones",
+   "paras": [
+    "The old name of Vacqueyras was \"Vallis Quadreria\", the \"Valley of Stones\". The bedrock is fairly varied. Limestone and gravel date from the Secondary era. Sands date from the Tertiary. Sandstone and clay date from the Quaternary.",
+    "The \"Garrigues\" terrace is made mostly of sea and lake deposits carried by the Ouvèze. Its soils are poor and mostly clay and limestone, with rolled pebbles set in red clay. Over the last few thousand years, grey clay-rich material washed down by runoff has slowly covered part of it in the shape of a cone.",
+    "The village stands on safres, Tertiary sandstones and fine limestones that alternate with marls. So do the small valleys between the village and the eastern edge of the Garrigues.",
+    "Sand drains fast here. So do stony sandstone and rolled pebbles. They often sit in a clay matrix that can hold a useful reserve of water in dry spells."
+   ],
+   "cite": [
+    "vacqueyras-doc:p7",
+    "vacqueyras-doc:p8",
+    "vacqueyras-doc:p9"
+   ]
+  },
+  {
+   "id": "blend",
+   "beat": "rules",
+   "title": "Mostly red, in three colours",
+   "paras": [
+    "Reds make up 95% of the wine, whites 3% and rosés 2%. Only still wines are allowed.",
+    "Reds and rosés come mostly from Grenache, Mourvèdre and Syrah. Many other grapes are allowed, white ones such as Viognier and Roussanne among them. Yields are fixed at 36 hl/ha.",
+    "The reds carry the mark of the soils they grow on. Rolled pebbles give power and tannic structure. Sandier soils give finesse and fruity aromas. Stony sandstone gives harmony and balance.",
+    "The aromas of the reds are complex and led by red or black fruit, often with an overripe, jammy edge. With age they turn spicier and more animal, with leather and game. They are generous and structured, with tannins that are firm but not harsh. These are powerful wines for keeping.",
+    "The whites are mostly floral with notes of citrus, and they are structured and lively. The rosés are fairly deep in colour, rich and mostly fruity.",
+    "Vacqueyras was recognised as a cru of the Côtes du Rhône in 1990. It is the only appellation on the left bank of the Rhône to make all three colours. Since 1998 it has been the official wine of the Festival d'Avignon."
+   ],
+   "cite": [
+    "vacqueyras-doc:p2",
+    "vacqueyras-doc:p4",
+    "vacqueyras-doc:p5",
+    "vacqueyras-doc:p6",
+    "vacqueyras-doc:p9",
+    "vacqueyras-doc:p10"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "region": "fr-alsace",
+ "sheets": [
+  {
+   "id": "alsace",
+   "why": {
+    "text": "A Vosges rain shadow gives a dry, sunny, semi-continental climate; hot days, cool nights and varied fault-line soils suit many aromatic grapes.",
+    "cite": [
+     "alsace-doc:p8",
+     "alsace-doc:p9",
+     "alsace-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Muscat À Petits Grains Roses",
+     "Muscat Ottonel",
+     "Muscat À Petits Grains Blancs",
+     "Chasselas Rose",
+     "Riesling",
+     "Chasselas",
+     "Gewürztraminer",
+     "Savagnin Rose",
+     "Sylvaner",
+     "Pinot Noir",
+     "Pinot Gris",
+     "Pinot Blanc",
+     "Auxerrois"
+    ],
+    "othersCite": [
+     "alsace-doc:p7",
+     "alsace-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red"
+    ],
+    "text": "Still wines, mostly white; reds and rosés come only from Pinot Noir, plus late-harvest and noble-rot sweet wines.",
+    "cite": [
+     "alsace-doc:p2",
+     "alsace-doc:p3",
+     "alsace-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Semi-continental: January averages 1.9 °C, July above 20 °C, with hot days and cool nights. Rain is 500 to 650 mm a year and sun about 1800 h a year at Colmar. The Vosges shield the vines from ocean influence.",
+    "cite": [
+     "alsace-doc:p8",
+     "alsace-doc:p12"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: shallow, acid-leaning brown soils on schist, granite or sandstone; sandy-gravelly alluvial soils; and calcareous brown or rendzina soils with marls and conglomerates.",
+    "cite": [
+     "alsace-doc:p8",
+     "alsace-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Most vineyards lie between 200 m and 400 m, which the spec calls the optimal thermal belt.",
+    "cite": [
+     "alsace-doc:p8",
+     "alsace-doc:p12"
+    ]
+   },
+   "tastes": {
+    "text": "Fresh, with natural tartaric acidity, intense aromas and good volume. Dry mineral wines, or softer fruity ones (Gewurztraminer, Pinot Gris); they age well. Elegant Pinot Noir reds, plus light reds and rosés.",
+    "cite": [
+     "alsace-doc:p3",
+     "alsace-doc:p4",
+     "alsace-doc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vendanges tardives",
+      "text": "Overripe hand-picked grapes, at least 18 months' ageing; exotic candied-fruit aromas, fresh finish."
+     },
+     {
+      "name": "Sélection de grains nobles",
+      "text": "Overripe hand-picked grapes, at least 18 months' ageing; concentrated, long-lived, fruit-paste aromas."
+     },
+     {
+      "name": "Edelzwicker",
+      "text": "Traditional blend of varieties; the label may not name any single grape."
+     },
+     {
+      "name": "Clairet",
+      "text": "Fresh, fruity, light red or rosé from Pinot Noir; also called Schillerwein."
+     }
+    ],
+    "cite": [
+     "alsace-doc:p4",
+     "alsace-doc:p10",
+     "alsace-doc:p11",
+     "alsace-doc:p14"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cremant-dalsace",
+   "why": {
+    "text": "Hot days, cool nights and the Vosges screen give ripe grapes with natural acidity; lees ageing adds riper, often toasty notes.",
+    "cite": [
+     "cremant-dalsace-doc:p7",
+     "cremant-dalsace-doc:p8",
+     "cremant-dalsace-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Auxerrois",
+     "Chardonnay",
+     "Pinot Blanc",
+     "Pinot Gris",
+     "Pinot Noir",
+     "Riesling"
+    ],
+    "othersCite": [
+     "cremant-dalsace-doc:p6",
+     "cremant-dalsace-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "white",
+     "rose"
+    ],
+    "text": "Traditional-method sparkling wine, white or rosé; rosé comes only from Pinot Noir.",
+    "cite": [
+     "cremant-dalsace-doc:p2",
+     "cremant-dalsace-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Semi-continental: cold winters (January mean 1.9 °C) and hot, dry summers (July above 20 °C). The Vosges shelter the vines; Colmar gets 1800 sunshine hours and the vineyards 500 to 650 mm of rain a year. Warm days and cool nights mark ripening.",
+    "cite": [
+     "cremant-dalsace-doc:p6",
+     "cremant-dalsace-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Very varied after the Rhine rift collapse: shallow acidic brown soils on schist, granite or sandstone; sandy-gravelly alluvial soils; and brown limestone or rendzina soils with marls.",
+    "cite": [
+     "cremant-dalsace-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Most vines grow between 200 and 400 metres.",
+    "cite": [
+     "cremant-dalsace-doc:p6",
+     "cremant-dalsace-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Complex, naturally acidic, fresh and fine, with fruity notes. Lees ageing brings riper notes, often buttery or toasty. The mousse is fine and light.",
+    "cite": [
+     "cremant-dalsace-doc:p2",
+     "cremant-dalsace-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Brut",
+      "text": "The category in which the great majority of these wines are sold."
+     },
+     {
+      "name": "Rosé",
+      "text": "Made only from Pinot Noir."
+     },
+     {
+      "name": "Crémant d'Alsace",
+      "text": "Second fermentation in bottle, at least 12 months ageing from bottling."
+     }
+    ],
+    "cite": [
+     "cremant-dalsace-doc:p2",
+     "cremant-dalsace-doc:p3",
+     "cremant-dalsace-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

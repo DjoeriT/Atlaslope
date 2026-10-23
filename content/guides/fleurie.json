@@ -1,0 +1,120 @@
+{
+ "id": "fleurie",
+ "title": "Why Fleurie tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Fleurie is one village of steep pink granite slopes turned to the south-east. Its poor sandy soils suit Gamay, which gives a light, scented red.",
+  "cite": [
+   "fleurie-doc:p6",
+   "fleurie-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills above the Saône",
+   "paras": [
+    "Fleurie sits in the heart of the Beaujolais vineyard, on the eastern edge of the Monts du Beaujolais, north of Lyon. The appellation covers one commune only.",
+    "The hills are often steep and almost all covered in vines. Forest takes over on the higher mountains behind.",
+    "The vineyard is more than a thousand years old. A deed from 987 mentions vines at Fleurie, and the appellation was recognised in 1936."
+   ],
+   "cite": [
+    "fleurie-doc:p5",
+    "fleurie-doc:p6",
+    "fleurie-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Monts du Beaujolais",
+     "point": [
+      4.6,
+      46.17
+     ],
+     "zoom": 9.5,
+     "caption": "The mountains whose eastern edge holds the vineyard, with forest on the higher slopes.",
+     "cite": [
+      "fleurie-doc:p6"
+     ]
+    },
+    {
+     "label": "La Madone",
+     "point": [
+      4.6936,
+      46.1987
+     ],
+     "zoom": 14,
+     "caption": "The statue of the Virgin that watches over the vineyard from the chapel of Fleurie. Most labels refer to it.",
+     "cite": [
+      "fleurie-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "weather",
+   "title": "Sun on the south-east slopes",
+   "paras": [
+    "The climate is a degraded oceanic one. The mean annual temperature is close to 11 °C and about 750 mm of rain falls in a year, spread across the seasons.",
+    "Continental influences bring summer storms and freezing fogs in winter. Southern influences bring summer heat, with the most rain in autumn and spring.",
+    "The Monts du Beaujolais shelter the vineyard from western winds. A small secondary ridge turns most slopes towards the south-east. From dawn, the first rays of the sun warm and light the hillside.",
+    "Vines sit mid-slope. There they mostly escape spring frost and the morning fog of the Saône plain. They get the most sun, and any excess rain drains away quickly.",
+    "The view open to the Saône plain brings light that helps the vine's photosynthesis."
+   ],
+   "cite": [
+    "fleurie-doc:p6",
+    "fleurie-doc:p7",
+    "fleurie-doc:p8"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Pink granite and sand",
+   "paras": [
+    "The bedrock is a pink granite with large crystals and little mica, called \"granite de Fleurie\". The vines rise from 200 m to 450 m.",
+    "Above the village, between 300 m and 450 m, the slopes are steep and the rock often shows at the surface. The soils there are very sandy and poor.",
+    "Below the village the slope eases towards the Saône, down to 230 m. Debris from the slopes hides the rock. The soils grow thicker and gain clay, as well as fine sand and silt.",
+    "Two streams, the bief de Roclaine and the ruisseau de la Presle, run down the mountain and cut through this lower ground. They give the slopes different exposures."
+   ],
+   "cite": [
+    "fleurie-doc:p6",
+    "fleurie-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Slopes above the village",
+     "point": [
+      4.68,
+      46.2
+     ],
+     "zoom": 12,
+     "caption": "Steep slopes at 300 m to 450 m, where the rock often shows and the soils are very sandy and poor.",
+     "cite": [
+      "fleurie-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gamay",
+   "beat": "rules",
+   "title": "Gamay, red only",
+   "paras": [
+    "The vineyard is devoted entirely to red wine. The main grape is Gamay, and the wines are dry and still.",
+    "The granite sand soils are poor and drain freely, which suits moderate yields. Gamay is sensitive to differences in soil and is particularly suited to infertile ground. There it gives a light, scented wine with fine tannins.",
+    "To keep the grape's fertility in check, vines are pruned short on spurs. By custom they are trained as free-standing bushes called gobelet. The rules also allow fan and cordon training.",
+    "Planting is dense, at least 6000 vines per hectare.",
+    "The label may add \"Vin du Beaujolais\", \"Grand Vin du Beaujolais\" or \"Cru du Beaujolais\". It may also name a registered plot, a lieu-dit, that appears on the harvest declaration."
+   ],
+   "cite": [
+    "fleurie-doc:p2",
+    "fleurie-doc:p4",
+    "fleurie-doc:p7",
+    "fleurie-doc:p8",
+    "fleurie-doc:p11"
+   ]
+  }
+ ]
+}

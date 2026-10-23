@@ -1,0 +1,107 @@
+{
+ "id": "margaux",
+ "title": "Why Margaux tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Margaux's vines grow on gravelly river terraces beside the Gironde estuary. The water keeps the climate in check, and the wines are red with a certain finesse underlined by fruity aromas.",
+  "cite": [
+   "margaux-doc:p5",
+   "margaux-doc:p6",
+   "margaux-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "estuary",
+   "beat": "place",
+   "title": "Gravel hills on the estuary's left bank",
+   "paras": [
+    "The vineyard lies on the left bank of the Gironde estuary, on a set of gravelly terraces. It covers 5 communes in the Gironde: Arsac, Cantenac, Labarde, Margaux and Soussans. It is the largest of the Médoc's \"communal\" appellations.",
+    "The first land registers, from the early 19th century, show vineyards in pockets, mostly on the gravelly rises of the lower and middle terraces. Forest sat to the west. Meadows and pasture filled the palus, the low land by the estuary.",
+    "Vines were here in Gallo-Roman times. Real wine estates, the \"bourdieux\" that were the ancestors of today's châteaux, appeared from the 16th century. Drainage works under Louis XIV, led by Dutch engineers, let the vineyard spread quickly over the gravel rises. By about 1760 almost all of the modern vineyard was in place."
+   ],
+   "cite": [
+    "margaux-doc:p4",
+    "margaux-doc:p5",
+    "margaux-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary at Margaux",
+     "point": [
+      -0.665,
+      45.045
+     ],
+     "zoom": 10,
+     "caption": "The vineyard sits on the left bank of the Gironde estuary, on gravelly terraces.",
+     "cite": [
+      "margaux-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A climate softened by water",
+   "paras": [
+    "The climate is temperate and oceanic. The Atlantic and the Gironde act as a thermal regulator, and the estuary protects the vineyard from the excesses of the climate.",
+    "Rainy depressions sometimes arrive in autumn. They explain much of the vintage effect."
+   ],
+   "cite": [
+    "margaux-doc:p5",
+    "margaux-doc:p6",
+    "margaux-doc:p8"
+   ]
+  },
+  {
+   "id": "terraces",
+   "beat": "ground",
+   "title": "Gravel terraces between sand and silt",
+   "paras": [
+    "Most of the soils come from river deposits of the Garonne. Laid down as terraces, they form hills that step up between 6 and 33 m.",
+    "The oldest level, the haute terrasse, is a sandy clay with gravel and small pebbles no bigger than 35 mm. Their size earned the name \"graves dragées\". This level is found only in the south of Arsac. On the lower and middle terraces the material is much coarser, and pebbles over 80 mm are common. These deposits are linked to floods from melting glaciers in the ice ages.",
+    "West of the terraces, a plateau at 30 to 40 m is covered in wind-blown sand, the sable des landes. To the east, in a band 1 to 2 km wide along the estuary, lie the palus. These flat plains sit below 5 m and are mostly silty clay, sometimes sandier.",
+    "Under the deposits, the older bedrock is most often clay, or limestone and marl. It shows through only in places. The appellation's \"noyaux d'élite\", its elite cores, spread over the terraces, their colluvium and the clay or limestone beneath."
+   ],
+   "cite": [
+    "margaux-doc:p6",
+    "margaux-doc:p7",
+    "margaux-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Southern Arsac, the oldest terrace",
+     "point": [
+      -0.69,
+      44.975
+     ],
+     "zoom": 11,
+     "caption": "The haute terrasse, with its \"graves dragées\" pebbles, is found only in the south of Arsac.",
+     "cite": [
+      "margaux-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Cabernet in charge, red only",
+   "paras": [
+    "Margaux makes still red wine only. The wines are an intense red and age very well. They are made for long keeping.",
+    "Cabernet Sauvignon is the king grape of the Médoc, and it covers nearly 60% of Margaux's vines. It gives structure, bouquet and ageing potential. Merlot is the essential support grape and rarely goes over 30% of a blend. It adds roundness, generosity and complex aromas.",
+    "Cabernet Franc is rarer. It brings elegance and subtle spicy aromas. Petit Verdot makes a wine quite complete in colour, fruit and tannin. Cot and Carmenère are also on the list of grapes.",
+    "Vines must be planted at a minimum of 7,000 per hectare. The yield is set at 57 hl/ha, with a ceiling of 63 hl/ha.",
+    "Wines of the future Château Margaux were already sold by name in London at the start of the 18th century, at three times the price of traditional claret. The 1855 classification gave the appellation 21 grands crus classés, its classed growths."
+   ],
+   "cite": [
+    "margaux-doc:p2",
+    "margaux-doc:p3",
+    "margaux-doc:p4",
+    "margaux-doc:p5",
+    "margaux-doc:p8"
+   ]
+  }
+ ]
+}

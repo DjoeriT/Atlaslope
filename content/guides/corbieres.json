@@ -1,0 +1,158 @@
+{
+ "id": "corbieres",
+ "title": "Why Corbières tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Corbières is a very dry massif at the end of the Pyrenees, where the wind blows close to 300 days a year. Growers match each grape to its site, from lean, stony slopes to deeper, cooler soils.",
+  "cite": [
+   "corbieres-doc:p8",
+   "corbieres-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "massif",
+   "beat": "place",
+   "title": "A massif at the end of the Pyrenees",
+   "paras": [
+    "The Corbières massif sits at the north-eastern end of the Pyrenees. The upper Aude valley bounds it on the west. The Languedoc lowland along the Aude valley bounds it on the north. To the south a ridge line separates the Aude department from the Pyrénées-Orientales. The Mediterranean closes it on the east.",
+    "Three peaks rise over a land of plateaux cut by gorges and wider valleys. Pic de Bugarach reaches 1,230 m. Mont Tauch, to the south, reaches 917 m. Pic Alaric, on the northern edge, reaches 600 m. Over 60 km from west to east the land drops from Bugarach to lagoon level and then the sea.",
+    "The massif is a natural, historic and cultural barrier with Roussillon, and its vineyard opens onto the Mediterranean and the Languedoc plain. From the Narbonne coast to the gates of Carcassonne it holds 4 or 5 well-differentiated geographical units. Vines share the land with garrigue and a few olive trees."
+   ],
+   "cite": [
+    "corbieres-doc:p8",
+    "corbieres-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Pic de Bugarach",
+     "point": [
+      2.38,
+      42.88
+     ],
+     "zoom": 10,
+     "caption": "The highest of the massif's three peaks, at 1,230 m, from where the land falls over 60 km to the sea.",
+     "cite": [
+      "corbieres-doc:p8"
+     ]
+    },
+    {
+     "label": "Mont Tauch",
+     "point": [
+      2.68,
+      42.9
+     ],
+     "zoom": 10,
+     "caption": "At 917 m in the south, Mont Tauch borders the Tuchan-Paziols depression.",
+     "cite": [
+      "corbieres-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "beat": "weather",
+   "title": "Sun, wind and scarce rain",
+   "paras": [
+    "The climate is Mediterranean: dry, sunny and hot. Wind is everywhere. The Tramontane, or Cers, blows from the west. A sea wind blows mainly in autumn and spring and brings humidity and rain.",
+    "The region is very dry and the wind blows close to 300 days a year. The few rainy spells of autumn and spring are sometimes violent.",
+    "Rain grows with altitude: on average under 450 mm a year on the coast and over 700 mm in the mountains. Mean annual temperature falls from east to west, from 15.4 °C by the sea to 13.4 °C near Carcassonne.",
+    "The wind matters in the vineyard. Syrah is sensitive to it and is generally trained on wires."
+   ],
+   "cite": [
+    "corbieres-doc:p8",
+    "corbieres-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Leucate and the lagoon coast",
+     "point": [
+      3.03,
+      42.91
+     ],
+     "zoom": 9,
+     "caption": "On the coast, rain averages under 450 mm a year and the mean temperature is 15.4 °C.",
+     "cite": [
+      "corbieres-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "Lean, stony clay-limestone",
+   "paras": [
+    "The region's eventful tectonic history, after the nearby Pyrenees rose, explains its varied geology. The vineyard soils come from these formations and are mostly clay-limestone on Eocene molasse.",
+    "They are generally not very fertile, shallow, stony and well drained.",
+    "Growers match grapes to ground. Lean, stony ground gives the red wines their structure and power. Deeper, cooler soils give the rosés their typical fruity aromas. Sheltered plots bring supple tannins and fruit notes to reds and rosés, red fruit above all in the reds."
+   ],
+   "cite": [
+    "corbieres-doc:p8",
+    "corbieres-doc:p10"
+   ]
+  },
+  {
+   "id": "blend",
+   "beat": "rules",
+   "title": "Each grape in its place",
+   "paras": [
+    "Red is 90% of production. It is dry and a blend of at least two grapes. The main grapes must be in the majority: Grenache Noir, Lledonner Pelut, Mourvèdre, Syrah. Carignan is often present and limited to 50%. It brings structure while the others bring roundness and aromatic complexity.",
+    "These reds are generally balanced, with structure and power. They often show notes of intense red fruit and spice. They can be drunk young but age well.",
+    "Each grape has its spot. In the hardest sites Carignan is the grape of choice, well suited to the hot, dry, windy climate. Grenache fills the lean, arid slopes alongside it. Syrah is early ripening and sits on deeper, cooler soils. Mourvèdre ripens later and goes to the hottest soils on the coastal fringe and to sheltered sites.",
+    "Rosé is 6% of volume, about 31,000 hl. It follows the same grape rules as the red, but Cinsaut is limited to 75%. It is dry. Its elegant nose most often shows floral and fruity notes. The palate opens fresh and goes on to a lovely roundness.",
+    "White is 2.5% of volume, about 11,000 hl. It is dry, mainly with elegant white-flower aromas and a balance of roundness and finesse. Mediterranean heat gives round, balanced whites.",
+    "All three are dry still wines. Yields are set at 50 hl/ha. The label may add the name of a cadastral lieu-dit listed on the harvest declaration, printed right after the appellation at no more than half its size."
+   ],
+   "cite": [
+    "corbieres-doc:p3",
+    "corbieres-doc:p4",
+    "corbieres-doc:p6",
+    "corbieres-doc:p9",
+    "corbieres-doc:p10",
+    "corbieres-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Peyrepertuse castle",
+     "point": [
+      2.5584,
+      42.8706
+     ],
+     "zoom": 11,
+     "caption": "One of the \"five sons of Carcassonne\", whose limestone crests recall the troubled Cathar past.",
+     "cite": [
+      "corbieres-doc:p11"
+     ]
+    },
+    {
+     "label": "Lagrasse abbey",
+     "point": [
+      2.6194,
+      43.0925
+     ],
+     "zoom": 11,
+     "caption": "The remains of the abbeys of Lagrasse and Fontfroide recall the monks' essential role in planting the vine.",
+     "cite": [
+      "corbieres-doc:p11"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Languedoc",
+    "text": "The label may add the larger geographical unit \"Languedoc\", printed no more than half the size of the appellation name.",
+    "cite": [
+     "corbieres-doc:p11"
+    ]
+   }
+  ],
+  "cite": [
+   "corbieres-doc:p11"
+  ]
+ }
+}

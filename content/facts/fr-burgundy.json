@@ -78,6 +78,1908 @@
     "items": [],
     "cite": []
    }
+  },
+  {
+   "id": "bourgogne",
+   "why": {
+    "text": "A cool northern climate, with vines kept to warm, well-drained, mostly limestone slopes at moderate altitude, planted with Chardonnay and Pinot Noir.",
+    "cite": [
+     "bourgogne-doc:p11",
+     "bourgogne-doc:p14"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Gamay"
+     }
+    ],
+    "cite": [
+     "bourgogne-doc:p13"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc",
+     "Cesar"
+    ],
+    "othersCite": [
+     "bourgogne-doc:p10",
+     "bourgogne-doc:p13"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still white, red and rosé wines, mostly single-grape; Chardonnay for white, Pinot Noir in the north and Gamay in the south for red.",
+    "cite": [
+     "bourgogne-doc:p2",
+     "bourgogne-doc:p13",
+     "bourgogne-doc:p14"
+    ]
+   },
+   "climate": {
+    "text": "Rather cool oceanic climate with moderate, regular rain and no marked summer drought; mean annual temperature 11 °C. The east has continental influence, with relatively low winter temperatures and frost; southern influences can briefly bring high summer heat and storms.",
+    "cite": [
+     "bourgogne-doc:p11",
+     "bourgogne-doc:p12"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone and marl (clayey limestone) from the Jurassic; locally acidic granite and metamorphic bedrock in Saône-et-Loire. Soils drain well yet stay fertile and warm up quickly.",
+    "cite": [
+     "bourgogne-doc:p11",
+     "bourgogne-doc:p14"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow at 150 to 300 m in the Yonne and Châtillonnais, and at 250 to 400 m from Dijon to near Lyon.",
+    "cite": [
+     "bourgogne-doc:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Reds and rosés often have fine, velvety tannins and lovely fruit. Whites (Chardonnay) are mellow with balancing acidity, can be powerful and keep well. Yonne wines are more acidic; southern ones softer.",
+    "cite": [
+     "bourgogne-doc:p3",
+     "bourgogne-doc:p14"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Hautes Côtes de Beaune / de Nuits",
+      "text": "Geographic names allowed after Bourgogne; vines planted wider, at least 4000 vines per hectare."
+     },
+     {
+      "name": "Côte Chalonnaise",
+      "text": "Geographic name allowed after Bourgogne; one of the three biggest volume names."
+     },
+     {
+      "name": "Clairet",
+      "text": "Mention allowed after the appellation name for wines meeting its production rules."
+     },
+     {
+      "name": "Gamay",
+      "text": "Grape name must follow Bourgogne for wines made under the Gamay rules."
+     }
+    ],
+    "cite": [
+     "bourgogne-doc:p5",
+     "bourgogne-doc:p14",
+     "bourgogne-doc:p17",
+     "bourgogne-doc:p18"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cote-de-nuits-villages",
+   "why": {
+    "text": "Hard limestone slopes sheltered from frost and fog, with a cool oceanic climate, well-drained stony soils and generous sun, planted to Pinot Noir and Chardonnay.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p7",
+     "cote-de-nuits-villages-doc:p8",
+     "cote-de-nuits-villages-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "cote-de-nuits-villages-doc:p6",
+     "cote-de-nuits-villages-doc:p9"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "cote-de-nuits-villages-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites; the reds are far more important, with fewer than 500 hl of white a year.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p2",
+     "cote-de-nuits-villages-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental or southern influences, about 750 mm of rain a year and a 10.5°C annual mean. The Côte is sheltered east of the Morvan.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Thin, limy, well-drained soils on hard Middle Jurassic limestone (Comblanchien). Lower down they gain clay and reach about 0.50 m deep. Chardonnay sits on the stony, lean soils.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p7",
+     "cote-de-nuits-villages-doc:p8",
+     "cote-de-nuits-villages-doc:p9",
+     "cote-de-nuits-villages-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "The Hautes Côtes plateaus to the west lie at 400 to 500 m and the Bresse plain to the east at about 250 m. The escarpment top falls from 450 m in the north to 300 m in the south.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: velvety tannins, fresh fruit, sometimes liquorice and forest floor, best after some years. Whites: mineral, lively and concentrated, age easily.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p3",
+     "cote-de-nuits-villages-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "gevrey-chambertin",
+   "why": {
+    "text": "Cool oceanic climate and shallow, clay-rich limestone slopes of the Côte de Nuits suit Pinot Noir, giving powerful, dark, long-lived reds.",
+    "cite": [
+     "gevrey-chambertin-doc:p5",
+     "gevrey-chambertin-doc:p6",
+     "gevrey-chambertin-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "gevrey-chambertin-doc:p5",
+     "gevrey-chambertin-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "gevrey-chambertin-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only, at least 10.5% natural alcohol.",
+    "cite": [
+     "gevrey-chambertin-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences. About 750 mm rain a year, mean 10.5 °C; the Côte is sheltered, warmer and drier than the region around it.",
+    "cite": [
+     "gevrey-chambertin-doc:p5",
+     "gevrey-chambertin-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Jurassic limestone and marl, often covered by stony clay and silt. Lean, very limy soils high on the slope, relatively deep (0.50 m) and richer in clay at the foot. The Combe Lavaux fan is gravelly, filtering and rich in limestone pebbles.",
+    "cite": [
+     "gevrey-chambertin-doc:p6",
+     "gevrey-chambertin-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte drops about 150 m. The Hautes Côtes plateaux above lie at 400 to 500 m; the Bresse plain below is about 250 m.",
+    "cite": [
+     "gevrey-chambertin-doc:p5",
+     "gevrey-chambertin-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby colour, intense small-fruit bouquet. Powerful, structured by dense but velvety tannins. Nuances vary by climat. A few years of ageing bring out the aromas.",
+    "cite": [
+     "gevrey-chambertin-doc:p2",
+     "gevrey-chambertin-doc:p3",
+     "gevrey-chambertin-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Name may add 'premier cru' and one of 26 listed climats, like Clos Saint-Jacques."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Label may add a cadastral lieu-dit named on the harvest declaration."
+     },
+     {
+      "name": "Vin de Bourgogne",
+      "text": "Label may add 'Vin de Bourgogne' or 'Grand vin de Bourgogne'."
+     }
+    ],
+    "cite": [
+     "gevrey-chambertin-doc:p11",
+     "gevrey-chambertin-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vougeot",
+   "why": {
+    "text": "Sheltered, east-facing foothill vines on well-drained limestone soils, in a cool, moderately rainy climate on the Côte de Nuits.",
+    "cite": [
+     "vougeot-doc:p7",
+     "vougeot-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "vougeot-doc:p7"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "vougeot-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still red and white wines only.",
+    "cite": [
+     "vougeot-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences. Rain is moderate and regular, about 750 mm a year. Mean annual temperature is 10.5 °C. The Côte is sheltered, giving a thermal advantage and less rain than the region.",
+    "cite": [
+     "vougeot-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Young, stony, lime-rich, thin, well-drained soils on limestone. Deeper, more clayey soils on the foot of the slope. Soils are gravelly, clayey and rich in iron oxide.",
+    "cite": [
+     "vougeot-doc:p7",
+     "vougeot-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyard plots lie at the foot of the slope, between 240 and 265 metres.",
+    "cite": [
+     "vougeot-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: deep red, often powerful but velvety tannins, red-berry fruit with undergrowth or violet notes. Whites: supple and balanced.",
+    "cite": [
+     "vougeot-doc:p3",
+     "vougeot-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Traditional mention that may follow the appellation name; 12 of about 16 hectares."
+     },
+     {
+      "name": "Clos de la Perrière",
+      "text": "Premier cru climat, planted entirely in the monks' old quarry."
+     },
+     {
+      "name": "Le Clos Blanc",
+      "text": "Premier cru climat; source of most of the white wine."
+     }
+    ],
+    "cite": [
+     "vougeot-doc:p7",
+     "vougeot-doc:p8",
+     "vougeot-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vosne-romanee",
+   "why": {
+    "text": "Limestone scree and clay soils on gentle east-facing slopes, with a cool, moderate oceanic climate, suit Pinot Noir.",
+    "cite": [
+     "vosne-romanee-doc:p6",
+     "vosne-romanee-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "vosne-romanee-doc:p5",
+     "vosne-romanee-doc:p7"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "vosne-romanee-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only, aged long and made to keep.",
+    "cite": [
+     "vosne-romanee-doc:p2",
+     "vosne-romanee-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic, softened by continental and southern influences along the Rhône-Saône axis. About 730 mm of rain a year, with no marked summer drought; mean temperature 10.5 °C. The Côte is sheltered, so it is warmer and drier than the wider region; the combes are cooler.",
+    "cite": [
+     "vosne-romanee-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Stony, well-drained, thin limestone soils; lean and very limy high on the slope, richer in clay and up to 0.50 m deep on the foot-slope. Iron-rich clays give a red colour.",
+    "cite": [
+     "vosne-romanee-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte slope drops about 150 m. Hautes Côtes plateaux above lie at 400 to 500 m; the Bresse plain below is near 250 m.",
+    "cite": [
+     "vosne-romanee-doc:p5",
+     "vosne-romanee-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby-coloured, elegant reds with velvety tannins and fairly discreet acidity, so they feel mellow. Very aromatic: cherry, even peony, then undergrowth with age. Long finish; made to age.",
+    "cite": [
+     "vosne-romanee-doc:p2",
+     "vosne-romanee-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Named climats may add the mention premier cru after the appellation name."
+     },
+     {
+      "name": "Climat",
+      "text": "Named plot on the label, set right after the appellation, in letters no bigger."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Cadastral place name may appear, in letters at most half the appellation's size."
+     },
+     {
+      "name": "Vin de Bourgogne",
+      "text": "The label may add the larger unit Vin de Bourgogne or Grand Vin de Bourgogne."
+     }
+    ],
+    "cite": [
+     "vosne-romanee-doc:p11",
+     "vosne-romanee-doc:p12",
+     "vosne-romanee-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "nuits-saint-georges",
+   "why": {
+    "text": "East-facing limestone slopes on the Côte de Nuits, with well-drained, moderately fertile soils and a warm mesoclimate where Pinot Noir shows its full potential.",
+    "cite": [
+     "nuits-saint-georges-doc:p6",
+     "nuits-saint-georges-doc:p7",
+     "nuits-saint-georges-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "nuits-saint-georges-doc:p6",
+     "nuits-saint-georges-doc:p8"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "nuits-saint-georges-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites; Pinot Noir is the base, and white is only about 2% of plantings.",
+    "cite": [
+     "nuits-saint-georges-doc:p2",
+     "nuits-saint-georges-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences. About 750 mm of rain a year, mean annual temperature 10.5 °C. The Côte is sheltered east of the Morvan, so it is warmer and drier than the region.",
+    "cite": [
+     "nuits-saint-georges-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Limestone slope of Bajocian and Bathonian rock, with stony, thin, well-drained soils up the slope and deeper, clay-richer soils (about 0.50 m) below. The Meuzin fan is gravelly alluvium.",
+    "cite": [
+     "nuits-saint-georges-doc:p6",
+     "nuits-saint-georges-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte slope drops about 150 m. The Hautes Côtes plateaux above lie at 400 to 500 m, and the plain below at about 250 m.",
+    "cite": [
+     "nuits-saint-georges-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: deep purple, cherry, strawberry and blackcurrant when young; leather, truffle, fur and game with age. Premier cru: powerful, massive tannins, long ageing. Whites: balanced, ample, elegant.",
+    "cite": [
+     "nuits-saint-georges-doc:p3",
+     "nuits-saint-georges-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Label mention for the best-known climats, which are named on the label after the appellation."
+     },
+     {
+      "name": "Climat",
+      "text": "Named vineyard site a label may add; 41 are listed as premier cru."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "A registered place name a label may show, in smaller letters."
+     }
+    ],
+    "cite": [
+     "nuits-saint-georges-doc:p8",
+     "nuits-saint-georges-doc:p10",
+     "nuits-saint-georges-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cote-de-beaune-villages",
+   "why": {
+    "text": "Well-exposed limestone and marl slopes, 230 to 400 m, in a cool, sheltered, ocean-influenced climate, giving red Pinot Noir in many shades.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p6",
+     "cote-de-beaune-villages-doc:p7",
+     "cote-de-beaune-villages-doc:p8",
+     "cote-de-beaune-villages-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "cote-de-beaune-villages-doc:p6",
+     "cote-de-beaune-villages-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "cote-de-beaune-villages-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still dry red wines only.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences along the Rhône-Saône axis. About 750 mm of rain a year, no marked summer drought, mean annual temperature 10.5 °C. The Côte is sheltered east of the Morvan, so it is warmer and drier than the surrounding region.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Middle and Upper Jurassic limestone alternating with softer marls, often covered by scree, clay and silt. Soils are young, mostly carbonate, thin and well drained. They are stony and lean high on the slope, deeper and clayey on flats and at the foot.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyard parcels lie at 230 to 400 m; the Hautes Côtes plateaux above are at 400 to 500 m, the Bresse plain below at about 250 m.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p6",
+     "cote-de-beaune-villages-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby-red wines, often with measured, velvety tannins and fine fruit. Some southern sectors are more tannic and deeper in colour than the finer northern ones.",
+    "cite": [
+     "cote-de-beaune-villages-doc:p3",
+     "cote-de-beaune-villages-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "aloxe-corton",
+   "why": {
+    "text": "Clay-rich, well-drained, low-fertility soils on the Corton hill's slopes and foot give the reds a fine tannic structure.",
+    "cite": [
+     "aloxe-corton-doc:p7",
+     "aloxe-corton-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "aloxe-corton-doc:p8",
+     "aloxe-corton-doc:p9"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "aloxe-corton-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites; about 98% of production is red.",
+    "cite": [
+     "aloxe-corton-doc:p2",
+     "aloxe-corton-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences; about 750 mm rain a year and a 10.5 °C annual mean. The Côte is sheltered east of the Morvan.",
+    "cite": [
+     "aloxe-corton-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Foot of slope: shallow, well-drained, clay-rich colluvium, sometimes very stony, over hard Middle Jurassic limestone. Upper slope: erosion-prone, infertile silty soils on silica-rich Upper Jurassic marl. South: a fan of clay and chailles alluvium of moderate fertility.",
+    "cite": [
+     "aloxe-corton-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Delimited plots lie between 230 and 350 m; the hill's limestone cap is at 385 m.",
+    "cite": [
+     "aloxe-corton-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: often elegant and full-bodied, with balanced tannic structure and red or black fruit aromas. Whites: often mineral, with fresh fruit aromas.",
+    "cite": [
+     "aloxe-corton-doc:p3",
+     "aloxe-corton-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier cru",
+      "text": "Named climats beside the grand cru plots with the best drained soils and exposure."
+     },
+     {
+      "name": "Climat",
+      "text": "Premier cru name may follow the appellation, in letters no larger than the appellation name."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "A cadastral plot name on the harvest declaration, printed at most half the appellation's size."
+     }
+    ],
+    "cite": [
+     "aloxe-corton-doc:p7",
+     "aloxe-corton-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "beaune",
+   "why": {
+    "text": "Limestone slopes facing east, in a cool oceanic climate with continental touches, give Pinot Noir and Chardonnay full sun and good drainage.",
+    "cite": [
+     "beaune-doc:p6",
+     "beaune-doc:p7",
+     "beaune-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "beaune-doc:p6",
+     "beaune-doc:p8"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "beaune-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites only; about 85% of the wine is red.",
+    "cite": [
+     "beaune-doc:p2",
+     "beaune-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern touches along the Rhône-Saône axis. About 750 mm of rain a year and a mean annual temperature of 10.5 °C. The Côte is sheltered east of the Morvan.",
+    "cite": [
+     "beaune-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Jurassic limestone on the slope, with gravelly, clayey, always limy spreads on the foot. Soils are thin, carbonated and well drained, richer in clay lower down.",
+    "cite": [
+     "beaune-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 225 and 340 metres.",
+    "cite": [
+     "beaune-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: often powerful, with balanced tannins and animal and red-fruit aromas; some silky, some rustic, all long-lived. Whites: often lively, with a fatness that balances them.",
+    "cite": [
+     "beaune-doc:p3",
+     "beaune-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Parcels on limestone slopes with the best exposures, shallow well-drained soils and maximum sun."
+     }
+    ],
+    "cite": [
+     "beaune-doc:p3",
+     "beaune-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "pommard",
+   "why": {
+    "text": "Cool oceanic climate and well-drained Jurassic limestone-and-clay slopes suit Pinot Noir, giving concentrated, firmly tannic reds.",
+    "cite": [
+     "pommard-doc:p6",
+     "pommard-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "pommard-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "pommard-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only.",
+    "cite": [
+     "pommard-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate, softened by continental and southern influences along the Rhône-Saône axis. About 750 mm rain a year, mean annual temperature 10.5 °C. Sheltered east of the Morvan, with a thermal advantage and less rain.",
+    "cite": [
+     "pommard-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Thin, mostly limestone soils that drain well. Lean and very chalky high on the slope, richer in clay lower down, up to about 0.50 m deep. Jurassic marl and limestone below, with clay and scree on top. Deeper, clayey soils on the alluvial fan.",
+    "cite": [
+     "pommard-doc:p6",
+     "pommard-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte drops about 150 m. The Hautes Côtes plateaux above lie at 400 to 500 m, the Bresse plain below at about 250 m.",
+    "cite": [
+     "pommard-doc:p5",
+     "pommard-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Solid structure, but velvety and fruity, giving great finesse and ageing potential. Grapes from south of the village give a firm attack. Northern grapes give power with length and elegance.",
+    "cite": [
+     "pommard-doc:p2",
+     "pommard-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Traditional mention for the best-known climates, named right after the appellation on the label."
+     },
+     {
+      "name": "Grand Vin de Bourgogne",
+      "text": "Optional label wording that names the larger Burgundy unit."
+     }
+    ],
+    "cite": [
+     "pommard-doc:p3",
+     "pommard-doc:p11",
+     "pommard-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "volnay",
+   "why": {
+    "text": "Fresh oceanic climate and well-drained, stony marl and limestone slopes on the Côte de Beaune, facing east, suit Pinot Noir.",
+    "cite": [
+     "volnay-doc:p7",
+     "volnay-doc:p8",
+     "volnay-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "volnay-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "volnay-doc:p5",
+     "volnay-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only.",
+    "cite": [
+     "volnay-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Fresh oceanic climate with continental and southern influences along the Rhône-Saône axis; about 750 mm of rain a year, well spread. The Côte is sheltered, with a thermal advantage and less rain than the region.",
+    "cite": [
+     "volnay-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Thin, well-drained, mostly carbonated soils on Oxfordian marl and Callovian limestone slabs. Stony and lean high on the slope, deeper and clayey lower down.",
+    "cite": [
+     "volnay-doc:p6",
+     "volnay-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte drops about 150 m, between plateaus of 400 to 500 m to the west and a plain near 250 m to the east.",
+    "cite": [
+     "volnay-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby colour, great finesse, tannic frame balanced by discreet acidity. Fruity when young; ages 10 years, or 20 for premier cru, towards spice and game notes.",
+    "cite": [
+     "volnay-doc:p3",
+     "volnay-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier cru",
+      "text": "Traditional mention; named climats such as Les Caillerets and Santenots may follow the appellation name."
+     },
+     {
+      "name": "Climat",
+      "text": "Listed premier cru plot name, right after the appellation, in letters no larger."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Cadastral place name on the harvest declaration, at most half the appellation's size."
+     }
+    ],
+    "cite": [
+     "volnay-doc:p12",
+     "volnay-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "meursault",
+   "why": {
+    "text": "Cool oceanic climate, east-facing gentle slopes and Jurassic marl and limestone with dolomite suit Chardonnay, giving dry whites built to age.",
+    "cite": [
+     "meursault-doc:p7",
+     "meursault-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Pinot Noir",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "meursault-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still whites, which are most of the wine, and a few rare reds.",
+    "cite": [
+     "meursault-doc:p2",
+     "meursault-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate, softened by continental and southern influences along the Rhône-Saône axis. About 750 mm of rain a year, mean temperature 10.5 °C. The Côte is sheltered east of the Morvan (foehn effect).",
+    "cite": [
+     "meursault-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Alternating limestone and marl (clay limestone) of the Middle and Upper Jurassic, with dolomitic limestone. Soils are thin and young; the foothills carry well-drained clay-gravel spreads.",
+    "cite": [
+     "meursault-doc:p6",
+     "meursault-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte slope drops about 150 m. The Hautes Côtes plateaux to the west lie at 400 to 500 m; the Bresse plain to the east at about 250 m.",
+    "cite": [
+     "meursault-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: dry, heady bouquet often toasty with almond notes; mellow palate, acidity for ageing, long aromatic persistence. Reds: rare, red fruit and black cherry, fresh and fine.",
+    "cite": [
+     "meursault-doc:p3",
+     "meursault-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Named climats on lower slopes, such as Perrières, Charmes, Genevrières; 130 hectares."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Cadastral lieu-dit name allowed if not a Premier Cru climat name; half-size lettering."
+     },
+     {
+      "name": "Vin de Bourgogne",
+      "text": "Label may add the larger unit 'Vin de Bourgogne' or 'Grand Vin de Bourgogne'."
+     }
+    ],
+    "cite": [
+     "meursault-doc:p7",
+     "meursault-doc:p8",
+     "meursault-doc:p12",
+     "meursault-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "puligny-montrachet",
+   "why": {
+    "text": "Cool oceanic climate balanced by gentle east-facing slopes of limestone and marl helps Chardonnay reach its best; demanding practices favour long-lived wines.",
+    "cite": [
+     "puligny-montrachet-doc:p6",
+     "puligny-montrachet-doc:p7",
+     "puligny-montrachet-doc:p8",
+     "puligny-montrachet-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "puligny-montrachet-doc:p6",
+     "puligny-montrachet-doc:p8"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "puligny-montrachet-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Dry still whites and reds; 99% of production is white.",
+    "cite": [
+     "puligny-montrachet-doc:p2",
+     "puligny-montrachet-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic, with continental and southern influences along the Rhône-Saône axis. About 750 mm rain a year, no marked summer drought, mean annual temperature 10.5 °C. The Côte is sheltered, so it is warmer and drier than the region.",
+    "cite": [
+     "puligny-montrachet-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Thin, limy, well-drained soils, lean and very calcareous high on the slope. They get richer in clay lower down, to about 0.50 m deep on the foot-slope. Bedrock is Jurassic limestone and marl.",
+    "cite": [
+     "puligny-montrachet-doc:p6",
+     "puligny-montrachet-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The Côte front drops about 200 m. The Hautes Côtes plateaux above lie at 400 to 500 m, and the Bresse plain below at about 200 m.",
+    "cite": [
+     "puligny-montrachet-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "White: pale green-yellow, subtle lemongrass, fern, spice and honey, discreet acidity, creamy and long; with age almond, toast and candied fruit. Red: fruity and supple, strawberry and blackcurrant.",
+    "cite": [
+     "puligny-montrachet-doc:p3",
+     "puligny-montrachet-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Climat on limestone slopes in the best exposures; name may follow the appellation."
+     },
+     {
+      "name": "Côte de Beaune",
+      "text": "Complementary geographic name that may follow the appellation name."
+     }
+    ],
+    "cite": [
+     "puligny-montrachet-doc:p9",
+     "puligny-montrachet-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "chassagne-montrachet",
+   "why": {
+    "text": "A south-east-facing limestone and marl slope sheltered from cold winds, with well-drained, stony, moderately fertile soils and a cool, fairly dry climate.",
+    "cite": [
+     "chassagne-montrachet-doc:p6",
+     "chassagne-montrachet-doc:p7",
+     "chassagne-montrachet-doc:p8",
+     "chassagne-montrachet-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "chassagne-montrachet-doc:p8",
+     "chassagne-montrachet-doc:p9"
+    ],
+    "others": [
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "chassagne-montrachet-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Dry still white and red wines; whites are the village's historic fame, but reds are well developed.",
+    "cite": [
+     "chassagne-montrachet-doc:p2",
+     "chassagne-montrachet-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with continental and southern influences. About 750 mm of rain a year, no marked summer drought, and a mean annual temperature of 10.5 °C. The Côte is sheltered east of the Morvan.",
+    "cite": [
+     "chassagne-montrachet-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Middle Jurassic limestone and marl, masked by stony screes of clay and silt. Soils are thin, limy and well drained, richer in clay and up to 0.5 m deep toward the foot of the slope.",
+    "cite": [
+     "chassagne-montrachet-doc:p6",
+     "chassagne-montrachet-doc:p7",
+     "chassagne-montrachet-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "The slope drops about 150 m. The plain below lies near 200 m, and the Hautes Côtes plateaus above reach 400 to 500 m.",
+    "cite": [
+     "chassagne-montrachet-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: full-bodied, powerful and rich, with almond, honey and white flower aromas, and acidity for ageing. Reds: intense colour, strong tannins, cherry and kirsch notes.",
+    "cite": [
+     "chassagne-montrachet-doc:p3",
+     "chassagne-montrachet-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Traditional mention for named climats; wines add concentration and considerable ageing potential."
+     },
+     {
+      "name": "Climat",
+      "text": "Named premier cru site, printed right after the appellation name, in letters no larger."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Cadastral place name allowed on labels, in letters at most half the appellation size."
+     },
+     {
+      "name": "Côte de Beaune",
+      "text": "Complementary geographic name, written right after the appellation in identical type."
+     }
+    ],
+    "cite": [
+     "chassagne-montrachet-doc:p8",
+     "chassagne-montrachet-doc:p12",
+     "chassagne-montrachet-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rully",
+   "why": {
+    "text": "Limestone and marl slopes facing east, 220 to 300 metres up, with a mild, sunny climate suit Chardonnay and Pinot Noir.",
+    "cite": [
+     "rully-doc:p6",
+     "rully-doc:p7",
+     "rully-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Pinot Noir",
+     "Pinot Gris"
+    ],
+    "othersCite": [
+     "rully-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still white and red wines.",
+    "cite": [
+     "rully-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic, with southern and continental influences. Summers are very sunny, with under 800 mm of rain a year, spread evenly and no summer drought.",
+    "cite": [
+     "rully-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Clay-limestone soils on Jurassic limestone and marl, under stony slope debris. Shallow, dry and moderately fertile on limestone; deeper with good water reserve on marl.",
+    "cite": [
+     "rully-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 220 and 300 metres; the hillsides span 250 to 400 metres.",
+    "cite": [
+     "rully-doc:p6",
+     "rully-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: golden with green glints, floral, lemon and white peach, then honey; fruity, rich and long. Reds: cherry-ruby to dark garnet, blackcurrant, cherry, liquorice, tannins that respect the fruit.",
+    "cite": [
+     "rully-doc:p3",
+     "rully-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Twenty-three named climats on the best east-facing slopes may add the mention."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "A cadastral plot name may appear, at most half the appellation's type size."
+     }
+    ],
+    "cite": [
+     "rully-doc:p8",
+     "rully-doc:p11",
+     "rully-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "mercurey",
+   "why": {
+    "text": "Limestone and marl slopes facing the rising sun, well drained, with a mild climate under 800 mm of rain, suit Pinot Noir and Chardonnay.",
+    "cite": [
+     "mercurey-doc:p6",
+     "mercurey-doc:p7",
+     "mercurey-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "mercurey-doc:p7"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris"
+    ],
+    "othersCite": [
+     "mercurey-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds and whites; reds make up most of the vineyard, with premier cru climats named on labels.",
+    "cite": [
+     "mercurey-doc:p2",
+     "mercurey-doc:p7",
+     "mercurey-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with southern and continental influences. Summers are very sunny, annual rain is under 800 mm and spread evenly, with no summer drought.",
+    "cite": [
+     "mercurey-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone and marl, often a thin stony layer over limestone. Western slopes have more acid, stony flint clays. All soils drain very well.",
+    "cite": [
+     "mercurey-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyard plots lie between 220 and 350 metres.",
+    "cite": [
+     "mercurey-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: elegant and powerful, red fruit turning animal, tannins softening with age. Whites: dry, rich and powerful, dried fruit, mineral note, long finish.",
+    "cite": [
+     "mercurey-doc:p3",
+     "mercurey-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier cru",
+      "text": "Label mention for wines from 32 listed climats, such as Clos des Barraults."
+     },
+     {
+      "name": "Climat",
+      "text": "Named plot (lieu-dit) can appear on the label, in smaller type than the appellation."
+     }
+    ],
+    "cite": [
+     "mercurey-doc:p11",
+     "mercurey-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "givry",
+   "why": {
+    "text": "East-facing limestone and marl slopes, warmed early in the morning and away from the Saône plain's fog, give fine, supple Pinot Noir.",
+    "cite": [
+     "givry-doc:p6",
+     "givry-doc:p7",
+     "givry-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "givry-doc:p7",
+     "givry-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "givry-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still red and white wines, with a Premier Cru mention for named climats.",
+    "cite": [
+     "givry-doc:p2",
+     "givry-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with southern and continental influences. Summers are very sunny. Annual rain is under 800 mm, spread evenly with no summer drought.",
+    "cite": [
+     "givry-doc:p6",
+     "givry-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Clay-limestone soils over Jurassic limestone, with Lias marl in places, under a stony slope cover. Shallow, dry and moderately fertile on limestone, deeper with good water reserve on marl.",
+    "cite": [
+     "givry-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The Givry slopes lie between 200 and 420 metres.",
+    "cite": [
+     "givry-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: fine, elegant, supple, with present but silky tannins; fruity aromas evolving to spice and animal notes. Whites: dry, fresh, fruity, slightly mineral, round.",
+    "cite": [
+     "givry-doc:p3",
+     "givry-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Mid-slope south and east climats; slightly rounder, more powerful reds with greater ageing potential."
+     },
+     {
+      "name": "Climat",
+      "text": "A listed Premier Cru site name follows the appellation name on the label."
+     }
+    ],
+    "cite": [
+     "givry-doc:p8",
+     "givry-doc:p11",
+     "givry-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "montagny",
+   "why": {
+    "text": "Clay-rich limestone slopes facing east and southeast, in a fairly cool ocean climate, give fresh, mineral Chardonnay.",
+    "cite": [
+     "montagny-doc:p5",
+     "montagny-doc:p6",
+     "montagny-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "montagny-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Only dry, still white wines.",
+    "cite": [
+     "montagny-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with southern and continental influences; very sunny summers and under 800 mm of rain a year, spread evenly with no summer drought.",
+    "cite": [
+     "montagny-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Marls and clays of the Lias under a crest of hard Bajocian limestone; cold, sometimes wet soils, mostly low in carbonate.",
+    "cite": [
+     "montagny-doc:p5"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 250 and 400 metres, on slopes facing east and southeast.",
+    "cite": [
+     "montagny-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Clear gold with green glints. Acacia, hawthorn, honeysuckle and white fruit; fresh and delicate, with hazelnut, verbena and linden. Mineral and long. Premier cru adds toasty, vanilla notes.",
+    "cite": [
+     "montagny-doc:p2",
+     "montagny-doc:p3",
+     "montagny-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Premier Cru",
+      "text": "Extra toasty, vanilla notes and great longevity."
+     }
+    ],
+    "cite": [
+     "montagny-doc:p3",
+     "montagny-doc:p7"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "macon",
+   "why": {
+    "text": "Granite, limestone and marl hills in southern Burgundy, with hot sunny summers, Rhône-influenced air and Chardonnay and Gamay on varied soils.",
+    "cite": [
+     "macon-doc:p7",
+     "macon-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Gamay",
+     "Pinot Noir"
+    ],
+    "othersCite": [
+     "macon-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red",
+     "rose"
+    ],
+    "text": "Dry still whites, reds and rosés.",
+    "cite": [
+     "macon-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with a southern tendency; Rhône influences limit humidity and the Charollais hills partly shield it from wet Atlantic air. Rain averages 800 mm a year, mean temperature is 11 °C, with about 2000 hours of sun.",
+    "cite": [
+     "macon-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: acidic siliceous soils on granite and schist, stony limestone on Jurassic slopes, and silty marl soils. White grapes are limited to limestone or lightly decarbonated soils.",
+    "cite": [
+     "macon-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: powerful yet fine, fresh, aromatic and enjoyable young. Reds: fleshy and full-bodied, with small-berry fruit such as blackcurrant or raspberry, plus spice and mineral notes. Rosés: fresh, easy-drinking and fruity.",
+    "cite": [
+     "macon-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Mâcon Villages",
+      "text": "From 80 of the 91 communes, favouring the best sites, mostly east- or south-facing."
+     },
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Wines made only from grapes harvested in the same year."
+     }
+    ],
+    "cite": [
+     "macon-doc:p3",
+     "macon-doc:p6",
+     "macon-doc:p7",
+     "macon-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "pouilly-fuisse",
+   "why": {
+    "text": "Limestone and marl slopes with lean, stony, free-draining soils, an oceanic climate warmed from the south, and Chardonnay only.",
+    "cite": [
+     "pouilly-fuisse-doc:p6",
+     "pouilly-fuisse-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "pouilly-fuisse-doc:p5",
+     "pouilly-fuisse-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry still white wine only.",
+    "cite": [
+     "pouilly-fuisse-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with clear southern influences. Rain stays under 800 mm a year, spread evenly. The Charollais hills partly shelter the vines from wet western weather. Mean annual temperature is 11 °C, with hot, sunny summers.",
+    "cite": [
+     "pouilly-fuisse-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly Jurassic limestone and marl. Lean, stony, very free-draining soils are most common. Clay-richer soils sit mostly at the foot of slopes, and acid stony soils sit on rhyolite.",
+    "cite": [
+     "pouilly-fuisse-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Slopes face the Saône plain, from south-west to north-east, between 220 and 420 metres.",
+    "cite": [
+     "pouilly-fuisse-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Dry, fine and distinguished white, green-gold when young, with white flower and citrus notes. With age: hazelnut, toasted almond, vanilla, flint. Full, rich mouthfeel; ages 20 years and more.",
+    "cite": [
+     "pouilly-fuisse-doc:p2",
+     "pouilly-fuisse-doc:p3",
+     "pouilly-fuisse-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Climat",
+      "text": "Vineyard name from the cadastral lieu-dit, may follow the appellation on the label."
+     }
+    ],
+    "cite": [
+     "pouilly-fuisse-doc:p7",
+     "pouilly-fuisse-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-veran",
+   "why": {
+    "text": "Chardonnay on lean, stony, very limy slopes, 200 to 450 metres up, facing south, in an oceanic climate with clear southern influences.",
+    "cite": [
+     "saint-veran-doc:p6",
+     "saint-veran-doc:p7",
+     "saint-veran-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "saint-veran-doc:p5",
+     "saint-veran-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry still white wine only, at least 11% natural alcohol and short ageing to keep the wine young.",
+    "cite": [
+     "saint-veran-doc:p2",
+     "saint-veran-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with clear southern influences. Rain stays under 800 mm a year and is moderate in the growing season. The Charollais hills to the west partly shelter the vines from damp Atlantic air. Mild air arrives from the south along the Rhône corridor. Mean annual temperature is 11°C.",
+    "cite": [
+     "saint-veran-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Very varied, mainly clay-limestone soils on Lower and Middle Jurassic marl, with some soft Upper Jurassic limestone. They are generally lean, stony and very limy. On the foothills they are enriched by thin silty-clay weathering layers.",
+    "cite": [
+     "saint-veran-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards sit between 200 and 450 metres, on slopes facing the Saône plain and the south.",
+    "cite": [
+     "saint-veran-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Green-gold, fine and elegant, with white flowers and white-fleshed fruit. After a few years it often turns to hazelnut or toasted almond, with touches of honey, vanilla or flint. Full and complex on the palate.",
+    "cite": [
+     "saint-veran-doc:p2",
+     "saint-veran-doc:p3",
+     "saint-veran-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Climat",
+      "text": "One of about forty named plots a label may add."
+     }
+    ],
+    "cite": [
+     "saint-veran-doc:p7",
+     "saint-veran-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cremant-de-bourgogne",
+   "why": {
+    "text": "A cool, northern Burgundy climate on well-drained, mostly limestone slopes ripens grapes while keeping the acidity that sparkling wine needs.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p9",
+     "cremant-de-bourgogne-doc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "cremant-de-bourgogne-doc:p10"
+    ],
+    "others": [
+     "Aligoté",
+     "Gamay",
+     "Sacy",
+     "Melon",
+     "Pinot Gris",
+     "Pinot Blanc"
+    ],
+    "othersCite": [
+     "cremant-de-bourgogne-doc:p7",
+     "cremant-de-bourgogne-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "white",
+     "rose"
+    ],
+    "text": "White or rosé quality sparkling wine, with the second fermentation made in the bottle.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p2",
+     "cremant-de-bourgogne-doc:p10"
+    ]
+   },
+   "climate": {
+    "text": "Cool oceanic climate with moderate, regular rain and a mean annual temperature of 11 °C. The east has fairly cold winters and frosts that can be long; the south-east is a little warmer and drier.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Mostly limestone and marl from the Jurassic, with clay marls in the north. Some acidic granite and metamorphic soils occur, mainly in Saône-et-Loire.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p8",
+     "cremant-de-bourgogne-doc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow at 150 to 300 m in the Yonne and Châtillonnais, and at 250 to 400 m from Dijon southwards.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p8",
+     "cremant-de-bourgogne-doc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Fine, lasting mousse with delicate bubbles. Young wines show fruity, floral and mineral notes with freshness; with age they become more complex.",
+    "cite": [
+     "cremant-de-bourgogne-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crémant de Bourgogne blanc",
+      "text": "White sparkling wine, bottle-fermented, sold at least 12 months after bottling for the second fermentation."
+     },
+     {
+      "name": "Crémant de Bourgogne rosé",
+      "text": "Rosé sparkling wine under the same rules, with no winemaking charcoal allowed."
+     }
+    ],
+    "cite": [
+     "cremant-de-bourgogne-doc:p2",
+     "cremant-de-bourgogne-doc:p3",
+     "cremant-de-bourgogne-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
   }
  ]
 }

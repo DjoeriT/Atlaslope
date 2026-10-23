@@ -1,0 +1,119 @@
+{
+ "id": "chassagne-montrachet",
+ "title": "Why Chassagne-Montrachet tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chassagne-Montrachet sits on a south-east-facing slope in the south of the Côte de Beaune. Wooded plateaus shelter its vines from cold winds.",
+  "cite": [
+   "chassagne-montrachet-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A slope between plateau and plain",
+   "paras": [
+    "The Côte de Beaune is a straight ridge about 25 km long. The ridge is tectonic in origin. To the west are the limestone plateaus of the Hautes Côtes, at 400 to 500 m. To the east lies the Bresse plain, near 200 m.",
+    "The vines occupy the front of the Côte, a drop of about 150 m, and a wide, almost dry valley splits the vineyard in two. The appellation covers the commune of Chassagne-Montrachet in Côte-d'Or and Remigny in Saône-et-Loire, south of Beaune.",
+    "The village added the name of its most prestigious cru, Montrachet, to its own in 1878."
+   ],
+   "cite": [
+    "chassagne-montrachet-doc:p5",
+    "chassagne-montrachet-doc:p6",
+    "chassagne-montrachet-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Beaune slope",
+     "point": [
+      4.745,
+      46.935
+     ],
+     "zoom": 11,
+     "caption": "The vineyard occupies the front of the Côte, a slope of about 150 m, facing south-east.",
+     "cite": [
+      "chassagne-montrachet-doc:p6",
+      "chassagne-montrachet-doc:p8"
+     ]
+    },
+    {
+     "label": "Hautes Côtes plateaus",
+     "point": [
+      4.69,
+      46.97
+     ],
+     "zoom": 10,
+     "caption": "The wooded plateaus of the Hautes Côtes, at 400 to 500 m, protect the vineyard from cold winds.",
+     "cite": [
+      "chassagne-montrachet-doc:p6",
+      "chassagne-montrachet-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Cool, sheltered and short of rain",
+   "paras": [
+    "The climate leans cool and oceanic, disturbed by continental or southern influences that travel along the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5 °C.",
+    "The Côte lies east of the Morvan massif and the plateaus of Burgundy, which shelter it. The shelter shows as a thermal advantage. It also brings a notable rain deficit for the region.",
+    "The south-east slope catches the morning sun, which favours early warming of the soils."
+   ],
+   "cite": [
+    "chassagne-montrachet-doc:p7",
+    "chassagne-montrachet-doc:p8"
+   ]
+  },
+  {
+   "id": "stones",
+   "beat": "ground",
+   "title": "Limestone and marl under scree",
+   "paras": [
+    "Under the vines, layers of limestone and marl from the Middle Jurassic alternate. The main layer is the \"calcaire de Chassagne\" (Chassagne limestone), quarried as marble stone above the village.",
+    "Screes mixed with clay and silt often mask this rock. High on the slope they are very stony and thin. At the foot of the slope they hold more fine particles and are thicker, from a few decimetres to 1 m.",
+    "The soils are generally thin and limy, and they drain well, especially over limestone. At the top they are lean and very limy. They gain clay going down, to relatively deep soil of about 0.50 m at the foot. The stones favour warming, and the water reserve is average. Fertility is moderate."
+   ],
+   "cite": [
+    "chassagne-montrachet-doc:p6",
+    "chassagne-montrachet-doc:p7",
+    "chassagne-montrachet-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Montrachet",
+     "point": [
+      4.7425,
+      46.9425
+     ],
+     "zoom": 11,
+     "caption": "The vineyard has long been known for its white wines, and Montrachet is their jewel.",
+     "cite": [
+      "chassagne-montrachet-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "whites-reds",
+   "beat": "rules",
+   "title": "Famous whites, and well-developed reds",
+   "paras": [
+    "The wines are dry, still, and either white or red. Chardonnay and Pinot Noir are the main grapes. Pinot Gris and Pinot Blanc are also allowed.",
+    "White wine made the village's name long ago, yet its red production is well developed. Pinot Noir makes up nearly 35 % of the plantings. The north of the commune is given more to white wine.",
+    "The vineyard covered about 300 hectares in 2008, 170 of them premier cru. It averaged 5,300 hectolitres of red and nearly 10,400 hectolitres of white a year. Premier cru wines add concentration and considerable longevity.",
+    "On labels, the climat (named site) of a premier cru comes right after the appellation name, in letters no larger. A registered lieu-dit (cadastral place name) may also appear, in letters at most half the size. \"Côte de Beaune\" can follow the name directly, in identical type.",
+    "Labels may also name the wider unit \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\". A grape name stays outside the field of the compulsory details, in letters no taller than 2 mm."
+   ],
+   "cite": [
+    "chassagne-montrachet-doc:p2",
+    "chassagne-montrachet-doc:p6",
+    "chassagne-montrachet-doc:p8",
+    "chassagne-montrachet-doc:p9",
+    "chassagne-montrachet-doc:p12",
+    "chassagne-montrachet-doc:p13"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,98 @@
+{
+ "id": "picpoul-de-pinet",
+ "title": "Why Picpoul de Pinet tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On gentle slopes north of the Étang de Thau, a single late grape makes a white wine. Its acid edge sets it apart from the region's other whites.",
+  "cite": [
+   "picpoul-de-pinet-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "lagoon",
+   "beat": "place",
+   "title": "Gentle slopes down to a lagoon",
+   "paras": [
+    "The area lies on the edge of the Étang de Thau, close to the Mediterranean. It sits on both sides of the \"Via Domitia\", between Agde, Pézenas and Sète.",
+    "Soft hills slope gently down to the lagoon and generally face north-west or south-east. The vines climb from the water's edge to 100 m. On the plateau they form a continuous block, while in the north they are tucked between pine woods and garrigue (wild scrubland)."
+   ],
+   "cite": [
+    "picpoul-de-pinet-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Étang de Thau",
+     "point": [
+      3.6,
+      43.4
+     ],
+     "zoom": 10,
+     "caption": "The area sits on the edge of the Étang de Thau, close to the Mediterranean.",
+     "cite": [
+      "picpoul-de-pinet-doc:p5"
+     ]
+    },
+    {
+     "label": "Pinet",
+     "point": [
+      3.511,
+      43.406
+     ],
+     "zoom": 11,
+     "caption": "Pinet is one of six villages where the grapes are grown and the wine is made.",
+     "cite": [
+      "picpoul-de-pinet-doc:p1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sea-air",
+   "beat": "weather",
+   "title": "Dry and warm, tempered by water",
+   "paras": [
+    "Rainfall is 600 mm a year. That is nearly the lowest in the Hérault, and summer is particularly dry. The average annual temperature is high.",
+    "The sea and the Étang de Thau reduce temperature swings across the year and across the day. Sea breezes limit the rise in summer daytime temperatures. Pines and holm or kermes oaks dot the landscape, a sign of this warm maritime setting."
+   ],
+   "cite": [
+    "picpoul-de-pinet-doc:p5"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Deep soils that drain",
+   "paras": [
+    "The land dates from the Cretaceous and the Pliocene. Growers plant only on gentle slopes. The soils there have a good water supply and put no limit on rooting.",
+    "Little rain falls here. Yet deep, draining soils and damp sea influences help this late grape ripen at its best. That lets floral and fruity aromas show, with citrus notes and a mineral touch. A touch of acidity sets the wine apart from the region's other whites."
+   ],
+   "cite": [
+    "picpoul-de-pinet-doc:p5",
+    "picpoul-de-pinet-doc:p6"
+   ]
+  },
+  {
+   "id": "single-grape",
+   "beat": "rules",
+   "title": "One grape, one colour",
+   "paras": [
+    "Picpoul de Pinet is a still white wine made only from piquepoul B. Ready for sale, it holds at most 3 g of fermentable sugar per litre. The label may also name the wider \"Languedoc\", in letters at most half the size.",
+    "The grape has a thin skin and its berries drop off easily. The custom is to lay trays under the vines to catch the very ripe berries. In 1608 Olivier de Serres named it among the noble grapes, as \"Pique-Poule blanc\".",
+    "It is a vigorous vine with a low yield. Pruning must be short. Growers favour traditional goblet or Royat cordon training. Planting is at least 4,400 vines per hectare and the yield is set at 66 hl/ha.",
+    "Machine-picked grapes must reach the winery within 3 hours, to limit any risk of oxidation. The grapes are pressed directly, with or without a soak of the whole bunches first. This care keeps the wine's aromatic finesse and balance.",
+    "It goes well with shellfish from the Étang de Thau, or with seafood. It is generally sold young.",
+    "Remains of Gallo-Roman villas show that vines grew here in Roman times. Known as \"La Marine\", the vineyard was famous for white wines in antiquity."
+   ],
+   "cite": [
+    "picpoul-de-pinet-doc:p1",
+    "picpoul-de-pinet-doc:p2",
+    "picpoul-de-pinet-doc:p3",
+    "picpoul-de-pinet-doc:p4",
+    "picpoul-de-pinet-doc:p5",
+    "picpoul-de-pinet-doc:p6",
+    "picpoul-de-pinet-doc:p8"
+   ]
+  }
+ ]
+}

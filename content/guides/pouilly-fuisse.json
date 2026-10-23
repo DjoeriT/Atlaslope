@@ -1,0 +1,106 @@
+{
+ "id": "pouilly-fuisse",
+ "title": "Why Pouilly-Fuissé tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Two limestone rocks rise over ridges whose slopes face many ways, on a mix of limestone, marl and volcanic rock. Chardonnay is the only grape here, and it gives a full, rich white whose qualities can keep showing for 20 years and more.",
+  "cite": [
+   "pouilly-fuisse-doc:p3",
+   "pouilly-fuisse-doc:p6",
+   "pouilly-fuisse-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rocks",
+   "beat": "place",
+   "title": "Under the two rocks",
+   "paras": [
+    "Pouilly-Fuissé lies in the south of Burgundy, about 10 km west of Mâcon. It cuts diagonally across the small ridges at the southern end of the Mâconnais, in four communes: Chaintré, Fuissé, Solutré-Pouilly and Vergisson.",
+    "The limestone rocks of Vergisson and Solutré rise over the hilly, broken landscape. Solutré is also a famous prehistoric site. Slopes that face east are generally moderate, while those that face west are much steeper. Cross valleys cut the ridges and make small bowls whose slopes face north and south.",
+    "The vineyard plots sit on more or less steep slopes facing the Saône plain. They face anywhere from south-west to north-east, between 220 and 420 metres."
+   ],
+   "cite": [
+    "pouilly-fuisse-doc:p5",
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Roche de Solutré",
+     "point": [
+      4.7117,
+      46.3003
+     ],
+     "zoom": 11,
+     "caption": "The limestone rock of Solutré, a prehistoric site, rises over the vines.",
+     "cite": [
+      "pouilly-fuisse-doc:p6",
+      "pouilly-fuisse-doc:p8"
+     ]
+    },
+    {
+     "label": "Roche de Vergisson",
+     "point": [
+      4.6987,
+      46.3055
+     ],
+     "zoom": 11,
+     "caption": "The limestone rocks of Vergisson and Solutré are the symbols of the vineyard and appear on many labels.",
+     "cite": [
+      "pouilly-fuisse-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Soft air from the south",
+   "paras": [
+    "The climate is oceanic, with clear southern influences. Rain stays under 800 mm a year and is spread evenly through it. It is moderate while the vine is growing.",
+    "Excess rain is held back in two ways. The Charollais hills to the west partly shield the vines from wet western weather. Mild air also comes up from the south through the Rhône corridor from the first fine days.",
+    "The mean annual temperature is 11 °C. Summers are hot and sunny.",
+    "This oceanic climate, softened from the south, gives a gentleness that is typical of the southern Mâconnais. The wines show a fleshy, fruity character in the mouth."
+   ],
+   "cite": [
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A mosaic of rock and slope",
+   "paras": [
+    "The complex relief brings many kinds of rock to the surface. Most are Jurassic limestone and marl, which is clayey limestone. In places there is rhyolite, an acid volcanic rock from the Paleozoic.",
+    "The most common soils sit on limestone and marl-limestone. They are lean and stony, and drain very freely. Clay-richer soils formed mostly at the foot of slopes, on rock washed down from above. Very stony acid soils sit on the rhyolite.",
+    "Scalloped ridges with slopes facing many ways sit on varied rock, most often limestone. Together they make a mosaic of settings. Chardonnay has found a good home in it, especially in the natural bowls of Solutré-Pouilly, Fuissé and Vergisson and on the slopes of Chaintré. Each setting has its own soil and its own mesoclimate."
+   ],
+   "cite": [
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p7"
+   ]
+  },
+  {
+   "id": "chardonnay",
+   "beat": "rules",
+   "title": "Chardonnay alone, dry and white",
+   "paras": [
+    "Pouilly-Fuissé is a dry still white wine, and Chardonnay is the only grape. Until the 18th century the vineyard was mostly Gamay. Property deeds from 1820 already name Chardonnay as the main grape. Its final spread came with replanting after phylloxera in the early 20th century, and it now makes up the whole vineyard.",
+    "In the mouth, power and elegance are in good balance. The full range of its qualities shows only after a few years of ageing.",
+    "Wood chips are forbidden. Many growers still prune in the Mâconnais \"taille à queue\": one long cane bent into an arch, its tip tied to the lowest wire. It helps protect the vine from spring frost. The wines are aged at controlled temperature at least until 1 February after the harvest.",
+    "A producer may add the name of a climat, a named plot from the land register, right after the appellation. About thirty climats are regularly declared and put on labels. The label may also name the wider area as \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\"."
+   ],
+   "cite": [
+    "pouilly-fuisse-doc:p2",
+    "pouilly-fuisse-doc:p3",
+    "pouilly-fuisse-doc:p4",
+    "pouilly-fuisse-doc:p5",
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p7",
+    "pouilly-fuisse-doc:p11"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "saint-veran",
+ "title": "Why Saint-Véran tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Chardonnay grows on lean, stony, very limy soils, on slopes that broadly face the Saône plain and the south. The result is a white that is fleshy and fruity in the mouth, with southern accents among Burgundy's whites.",
+  "cite": [
+   "saint-veran-doc:p6",
+   "saint-veran-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Under the rocks of Solutré",
+   "paras": [
+    "Saint-Véran lies in the Monts du Mâconnais, in the south of Burgundy, about 10 km south-west of Mâcon. Eight communes in Saône-et-Loire share the vineyard.",
+    "The limestone rocks of Solutré and Vergisson, and the Mont de Pouilly, tower over a hilly, rugged landscape. The area cuts diagonally across the small ridges at the southern end of the Mâconnais.",
+    "Solutré is a famous prehistoric site. Its rock and Vergisson's are symbols of the area, and they appear on many labels and promotional logos. President François Mitterrand made an annual pilgrimage to the rock of Solutré, from where he admired the vineyard landscape."
+   ],
+   "cite": [
+    "saint-veran-doc:p5",
+    "saint-veran-doc:p6",
+    "saint-veran-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The rock of Solutré",
+     "point": [
+      4.7125,
+      46.3017
+     ],
+     "zoom": 11,
+     "caption": "The limestone rock of Solutré, a famous prehistoric site, dominates the landscape.",
+     "cite": [
+      "saint-veran-doc:p6"
+     ]
+    },
+    {
+     "label": "The rock of Vergisson",
+     "point": [
+      4.71,
+      46.31
+     ],
+     "zoom": 11,
+     "caption": "Vergisson's limestone rock is, with Solutré's, a symbol of the area found on many labels.",
+     "cite": [
+      "saint-veran-doc:p6",
+      "saint-veran-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "Shelter from the west, warmth from the south",
+   "paras": [
+    "The climate is oceanic with clear southern influences. Rain is spread evenly through the year and does not exceed 800 mm. It is moderate while the vine is growing. The mean annual temperature is 11°C.",
+    "The Monts du Charollais to the west partly shield the vines from damp Atlantic air. Soft air from the south comes up the Rhône corridor from the first fine days. The vineyard benefits a great deal from summer heat, which often lasts into autumn.",
+    "The slopes face east, which shelters the vines from west winds. The first rays of the sun warm them from dawn."
+   ],
+   "cite": [
+    "saint-veran-doc:p6",
+    "saint-veran-doc:p7",
+    "saint-veran-doc:p8"
+   ]
+  },
+  {
+   "id": "ground",
+   "beat": "ground",
+   "title": "Lean, stony and limy",
+   "paras": [
+    "The soils are very varied and mostly clay-limestone. Beneath them lies marl from the Lower and Middle Jurassic, and in places soft limestone from the Upper Jurassic.",
+    "The soils are generally lean, stony and very limy. At the foot of the slopes they are enriched by thin weathered layers of silty clay, sometimes decarbonated at the surface.",
+    "The vineyard plots lie mostly on slopes, some of them steep, between 200 m and 450 m. They broadly face the Saône plain and the south."
+   ],
+   "cite": [
+    "saint-veran-doc:p6",
+    "saint-veran-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Mont de Pouilly",
+     "point": [
+      4.73,
+      46.3
+     ],
+     "zoom": 10,
+     "caption": "The Mont de Pouilly is one of the rises that dominate the vineyard's hilly landscape.",
+     "cite": [
+      "saint-veran-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "One grape, one dry white",
+   "paras": [
+    "Saint-Véran is a dry still white made from Chardonnay alone. Chardonnay now covers almost all of the vineyard. Gamay was the main vine until the 18th century and was replaced from the end of the phylloxera crisis.",
+    "Yields are low. The wine has a natural alcohol of at least 11%. Pieces of wood are forbidden in winemaking.",
+    "Ageing is fairly short, at least until 1 January after the harvest, to bring out the wine's young character. The Mâconnais pruning, the taille à queue, is still practised: one long cane with its tip tied to the lower wire. It suits Chardonnay well and shapes the look of the landscape.",
+    "The wine shows its full range of qualities after a few years of ageing. In the mouth it strikes a balance between power and elegance.",
+    "About 40 climats, local names for named plots, can follow the appellation on the label. They bring out the small differences between soils and sites. The label may also name the wider area as Vin de Bourgogne or Grand Vin de Bourgogne. The vineyard covered about 700 hectares in 2009 and is very fragmented. Two thirds of the wine is sold directly in bottle."
+   ],
+   "cite": [
+    "saint-veran-doc:p2",
+    "saint-veran-doc:p3",
+    "saint-veran-doc:p4",
+    "saint-veran-doc:p7",
+    "saint-veran-doc:p8",
+    "saint-veran-doc:p11"
+   ]
+  }
+ ]
+}

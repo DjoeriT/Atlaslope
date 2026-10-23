@@ -1,0 +1,107 @@
+{
+ "id": "saint-estephe",
+ "title": "Why Saint-Estèphe tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Gravel soils beside the Gironde estuary drain well by nature, and the estuary protects the vineyard from the excesses of the climate. Cabernet Sauvignon is perfectly suited to that gravel, and it gives the wines a robust frame and ample tannins.",
+  "cite": [
+   "saint-estephe-doc:p3",
+   "saint-estephe-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "ridges",
+   "beat": "place",
+   "title": "Ridges at the top of the Médoc",
+   "paras": [
+    "Saint-Estèphe lies on the left bank of the Gironde, in the Médoc peninsula, halfway between Bordeaux and the Pointe de Grave. It is the northernmost of the Médoc's \"communal\" appellations and the second largest by area.",
+    "The appellation is the territory of one commune. Streams called jalles and esteys drain the land towards the Gironde and cut it into rounded gravel ridges, the croupes. Vines cover most of the commune on the tops of these ridges.",
+    "Hamlets such as Marbuzet and Pez grew up around wine châteaux. The greatest crus, the top estates, stand out as fine châteaux alone in the middle of their vineyards. Damp valleys of marsh lie to the north and south, turned to meadow and in places wooded."
+   ],
+   "cite": [
+    "saint-estephe-doc:p5",
+    "saint-estephe-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary",
+     "point": [
+      -0.76,
+      45.25
+     ],
+     "zoom": 10,
+     "caption": "Saint-Estèphe lies on the left bank of the Gironde, halfway between Bordeaux and the Pointe de Grave.",
+     "cite": [
+      "saint-estephe-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "estuary",
+   "beat": "weather",
+   "title": "An estuary as a shield",
+   "paras": [
+    "The plots lie close to the estuary, and the estuary protects the vineyard from the excesses of the climate. The ridges on the east side come very near the water."
+   ],
+   "cite": [
+    "saint-estephe-doc:p6",
+    "saint-estephe-doc:p8"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Gravel in the east, limestone in the west",
+   "paras": [
+    "Saint-Estèphe sits on the Médoc's Quaternary gravel terraces, which run parallel to the estuary at altitudes from 4 metres to 40 metres. They are about ten metres thick on average and rest on marl and limestone from the Eocene and Oligocene. On the ridges the soils are mostly sandy gravel or clay gravel.",
+    "That older rock comes to the surface mainly in the west of the commune. There the hard limestone base is covered unevenly by sandy gravel and by thin rendzina soils. Local names point to the ground: \"Cos\" and \"Pez\" refer to the ridges and the gravelly soils.",
+    "Along the estuary lie the recent alluvial soils the locals call \"palus\". In Saint-Estèphe the gravel ridges in the east come so close to the estuary that the palus shrink to a strip 200 metres to 300 metres wide.",
+    "Only naturally well-drained plots count. In the east, the gravel soils are perfectly suited to Cabernet Sauvignon. Soils on modern alluvium and sand are left out there, as are soils over an impermeable subsoil.",
+    "In the west the limestone base is more or less karstic, worn into hollows by water. Merlot is particularly well suited to its well-drained soils. Hollows filled with sand are left out. So are clay soils waterlogged deep down. Marsh and peat bog are out too."
+   ],
+   "cite": [
+    "saint-estephe-doc:p6",
+    "saint-estephe-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Gravel ridges by the estuary",
+     "point": [
+      -0.77,
+      45.26
+     ],
+     "zoom": 11,
+     "caption": "The gravel ridges in the east of the commune lie very close to the estuary.",
+     "cite": [
+      "saint-estephe-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Red only, built to age",
+   "paras": [
+    "Saint-Estèphe makes still red wine only. It is deep red and most often a blend in which Cabernet Sauvignon leads.",
+    "Merlot often adds red fruit to the spice. Cabernet Franc or Petit Verdot add structure and complexity, and Petit Verdot can bring freshness in years of great ripeness. Cot and Carmenère are also on the list of allowed grapes.",
+    "The wines are full-bodied and powerful. They need several years of ageing, which brings roundness, fruit and finesse.",
+    "Vines are planted at a minimum of 7000 vines per hectare, and the yield is set at 57 hl/ha. The way the vines are trained gives very ripe, healthy grapes with controlled yields. That makes very long macerations possible, for the structure the wines need to age. The wine must then mature for at least six months, which helps fix the colour and softens the tannins.",
+    "The label may add the wider name \"Vin de Bordeaux - Médoc\" or \"Grand Vin de Bordeaux - Médoc\". Its letters are no more than two thirds the size of the appellation name.",
+    "The fame of these wines owes much to the Bordeaux merchants who matured and sold them. From the 18th century they helped the Bordeaux trade grow on the London market, where they were called \"New French Clarets\". The 1855 classification recognises five crus here, and the 1932 Crus Bourgeois classification rewarded about forty. Small family estates and cooperative members use their own terms on the label, such as \"crus artisans\" and \"crus paysans\".",
+    "About 65,000 hl of still red are made in an average year, and nearly half is sold outside France."
+   ],
+   "cite": [
+    "saint-estephe-doc:p2",
+    "saint-estephe-doc:p3",
+    "saint-estephe-doc:p4",
+    "saint-estephe-doc:p5",
+    "saint-estephe-doc:p7",
+    "saint-estephe-doc:p8",
+    "saint-estephe-doc:p9"
+   ]
+  }
+ ]
+}

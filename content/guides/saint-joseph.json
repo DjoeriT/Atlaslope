@@ -1,0 +1,129 @@
+{
+ "id": "saint-joseph",
+ "title": "Why Saint-Joseph tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Saint-Joseph's vines cling to steep, terraced slopes picked for sun and shelter from the north winds. That is where its supple, elegant Syrah reds come from.",
+  "cite": [
+   "saint-joseph-doc:p6",
+   "saint-joseph-doc:p7",
+   "saint-joseph-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "A long strip above the Rhône",
+   "paras": [
+    "The vineyard sits on the right bank of the Rhône, squeezed between Saint-Péray to the south and Condrieu to the north. It runs for about 60 km on a north-south axis, on the eastern edge of the Massif Central. It favours the best sites, facing south or south-east.",
+    "The area covers 23 communes in the Ardèche and 3 in the Loire. In 2009 about 1000 hectares were planted, making an average of 35000 hectolitres a year.",
+    "The slopes are very steep, and the steepest need narrow terraces. In the post-war boom years (the \"Trente Glorieuses\") these hillsides were almost abandoned. The workers moved to the valley's industry, where pay was better and steadier. In the 1980s the vines left the slopes for flatter ground. It was easier to work but of lower quality, with frost and ripening problems. Growers then worked with France's origin institute (INAO) to halve the delimited area, from 6800 hectares to 3400 hectares. The best slopes were won back."
+   ],
+   "cite": [
+    "saint-joseph-doc:p5",
+    "saint-joseph-doc:p6",
+    "saint-joseph-doc:p7",
+    "saint-joseph-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Tournon and Tain, across the Rhône",
+     "point": [
+      4.835,
+      45.068
+     ],
+     "zoom": 11,
+     "caption": "Tournon and Tain-l'Hermitage face each other where the Rhône narrows.",
+     "cite": [
+      "saint-joseph-doc:p9"
+     ]
+    },
+    {
+     "label": "Chavanay, in the north of the area",
+     "point": [
+      4.727,
+      45.417
+     ],
+     "zoom": 10,
+     "caption": "In the 19th century, before phylloxera, Chavanay and its neighbours made the best reds of the Pélussin canton. They were sold as \"vins du rivage\" (river-bank wines).",
+     "cite": [
+      "saint-joseph-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wind",
+   "beat": "weather",
+   "title": "A cold wind and sheltered niches",
+   "paras": [
+    "The local climate is called \"Lyonnais\". It is continental, though it gets the last Mediterranean influences coming up the Rhône valley.",
+    "The most frequent wind is the Bise, from the north. It is cold and dry. It dries the leaves and limits fungal disease, but it also makes conditions that are in theory poor for ripening. So the growers choose fairly sheltered, sunny spots.",
+    "The wind from the south is rarer, hot and humid. It helps ripening but often brings rain. Latitude and altitude change a lot from site to site, so growers have picked the niches with the best sun and temperature."
+   ],
+   "cite": [
+    "saint-joseph-doc:p6",
+    "saint-joseph-doc:p7"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Granite, gneiss and a little limestone",
+   "paras": [
+    "The rock below is mostly very old (primary age). A few younger islands (secondary age) lie in the south, around Châteaubourg and Guilherand-Granges.",
+    "On top, the soils are mostly granite sands (arènes) and sandy clays. Some come from metamorphic rocks such as gneiss and mica-schist. Limestone scree is found only very locally.",
+    "Syrah is planted mostly on warm, often crumbly soils from igneous or metamorphic rock. These plots need low walls, called \"cheys\". Syrah is favoured on the porphyritic granites of Glun and Mauves. It is also favoured on the gneissic granites north of Tournon, at Lemps, Saint-Jean-de-Muzols and Vion.",
+    "White grapes are mostly planted on more limestone-rich soils near Guilherand-Granges and at Châteaubourg, and on loess.",
+    "On the best-exposed slopes, Mediterranean influences soften the cold north wind. Add the warm, free-draining arènes and scree on steep terraces, and the grapes reach a good harvest potential. Reds from limestone plots have more rustic tannins that refine more slowly."
+   ],
+   "cite": [
+    "saint-joseph-doc:p3",
+    "saint-joseph-doc:p5",
+    "saint-joseph-doc:p6",
+    "saint-joseph-doc:p7",
+    "saint-joseph-doc:p9",
+    "saint-joseph-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Mauves and Glun, granite country",
+     "point": [
+      4.835,
+      45.017
+     ],
+     "zoom": 11,
+     "caption": "Porphyritic granite around Glun and Mauves is a favoured home for Syrah.",
+     "cite": [
+      "saint-joseph-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "syrah",
+   "beat": "rules",
+   "title": "Syrah first, a little Marsanne",
+   "paras": [
+    "Only three grapes are allowed: Syrah, Marsanne and, much less often, Roussanne. The rules cover still red and white wines, both dry. There is no rosé, sparkling or sweet wine.",
+    "Red makes up 90% of production (in 2010). It is mostly Syrah alone, known locally as \"sérine\". Grown on well-ripened grapes with a controlled water supply, the reds stand out for suppleness and elegance. They have substance and complex aromas.",
+    "White makes up 10%. Marsanne is 95% of the white vines, mostly on limestone-marked soils. On well-exposed plots the whites find a balance in which richness leads over freshness. That richness carries floral, honeyed aromas.",
+    "The yield is set at 40 hl/ha, with a ceiling of 46 hl/ha. Vines are planted at a minimum of 4500 per hectare. Grapes are picked by hand and carried whole to the winery. Oak chips are banned.",
+    "Saint-Joseph is one of the \"Crus des Côtes du Rhône\", and labels may say so. A label may also name a smaller registered place (lieu-dit), if it is on the harvest declaration.",
+    "The name comes from a plot in Tournon. The Jesuits of Tournon already used it in the 17th century for the wines of Mauves and Tournon. The appellation was recognised in 1956 for 6 communes around Tournon. In 1969 it grew by 20 more communes, north to Condrieu."
+   ],
+   "cite": [
+    "saint-joseph-doc:p2",
+    "saint-joseph-doc:p3",
+    "saint-joseph-doc:p4",
+    "saint-joseph-doc:p5",
+    "saint-joseph-doc:p7",
+    "saint-joseph-doc:p8",
+    "saint-joseph-doc:p9",
+    "saint-joseph-doc:p10",
+    "saint-joseph-doc:p11"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "id": "cotes-de-bordeaux",
+ "title": "Why Côtes de Bordeaux tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "The vines grow on the right banks of three waters, on plots picked for how well they drain. Those spots favour the ripeness growers look for and round, fruity wines.",
+  "cite": [
+   "cotes-de-bordeaux-doc:p5"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "banks",
+   "beat": "place",
+   "title": "Right-bank hills above fresh and salt water",
+   "paras": [
+    "The appellation lies in the Gironde department. It runs along the right banks of the Garonne and the Dordogne, and of the Gironde itself. The land is hilly. It spreads over 92 communes.",
+    "The vineyards look down on valleys where fresh and salt water mix. The appellation is built around four historic wine cores. Blaye and Cadillac are two of them. Castillon-la-Bataille and Francs are the other two."
+   ],
+   "cite": [
+    "cotes-de-bordeaux-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "Blaye",
+     "point": [
+      -0.66,
+      45.13
+     ],
+     "zoom": 10,
+     "caption": "Blaye is one of the four historic wine cores of the appellation.",
+     "cite": [
+      "cotes-de-bordeaux-doc:p5"
+     ]
+    },
+    {
+     "label": "Cadillac",
+     "point": [
+      -0.32,
+      44.64
+     ],
+     "zoom": 10,
+     "caption": "Cadillac is another of the four historic wine cores.",
+     "cite": [
+      "cotes-de-bordeaux-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "ground",
+   "title": "Plots chosen for drainage",
+   "paras": [
+    "The ground is mostly clay-limestone. Plots were picked at the foot of slopes and on the hillsides. Others sit up on the plateaus.",
+    "The choice rested on how well each plot drains and where it sits in the lie of the land. These positions favour the ripeness the growers look for, and the production of round, fruity wines.",
+    "Merlot shows all its character very well on clay-limestone soils."
+   ],
+   "cite": [
+    "cotes-de-bordeaux-doc:p1",
+    "cotes-de-bordeaux-doc:p5"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Often-Merlot reds and two kinds of white",
+   "paras": [
+    "Reds are often mostly Merlot. Merlot is blended with Cabernet-Sauvignon and Cabernet franc. Cot joins them too; locally it is called Malbec. The result is fruity, supple wine. Yields are capped at 65 hl/ha.",
+    "Dry whites are generally made from Sauvignon with Semillon and Muscadelle. They are round and fruity, and they can keep for three to ten years. Yields are capped at 72 hl/ha.",
+    "The sweet whites are called \"liquoreux\". They keep some sugar, above 51 g/l, and often show aromas of honey and citrus. The grapes are picked by hand in several passes, and yields are capped at 40 hl/ha.",
+    "The name can add Blaye, Cadillac, Castillon or Francs for wines that meet the extra rules for each. The label can also say \"Vin de Bordeaux\" or \"Grand Vin de Bordeaux\". Those words may be at most two-thirds the size of the appellation name."
+   ],
+   "cite": [
+    "cotes-de-bordeaux-doc:p1",
+    "cotes-de-bordeaux-doc:p2",
+    "cotes-de-bordeaux-doc:p4",
+    "cotes-de-bordeaux-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Castillon-la-Bataille",
+     "point": [
+      -0.04,
+      44.85
+     ],
+     "zoom": 10,
+     "caption": "Castillon is a complementary name for wines that meet its own rules.",
+     "cite": [
+      "cotes-de-bordeaux-doc:p6"
+     ]
+    }
+   ]
+  }
+ ]
+}

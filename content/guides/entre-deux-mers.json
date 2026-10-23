@@ -1,0 +1,101 @@
+{
+ "id": "entre-deux-mers",
+ "title": "Why Entre-deux-Mers tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Entre-deux-Mers is a wide plateau between two rivers, and the vines grow only on its least fertile ground. The wines are dry whites with white-flower and citrus notes, made to be drunk young.",
+  "cite": [
+   "entre-deux-mers-doc:p1",
+   "entre-deux-mers-doc:p4",
+   "entre-deux-mers-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A plateau between two rivers",
+   "paras": [
+    "Entre-deux-Mers is a wide plateau in the Gironde. The Dordogne bounds it on the north and the Garonne on the south. The appellation covers 133 communes.",
+    "The vineyard sits on high land cut up by many streams, which have shaped the slopes. The countryside is varied. Woods and meadows share the north-facing slopes and the damp or river-side land. Elsewhere vines circle the many bastides, historic towns whose central squares host traditional markets.",
+    "Vines have grown here for a very long time. Gallo-Roman settlers were the first to make it a favoured wine region. From the 11th century monks above all drove its growth. The Benedictines settling at La Sauve Majeure was a decisive moment."
+   ],
+   "cite": [
+    "entre-deux-mers-doc:p4",
+    "entre-deux-mers-doc:p5"
+   ],
+   "fly": [
+    {
+     "label": "La Sauve Majeure",
+     "point": [
+      -0.3,
+      44.775
+     ],
+     "zoom": 11,
+     "caption": "The Benedictines settled at La Sauve Majeure, and the abbey's monks extended the vineyard.",
+     "cite": [
+      "entre-deux-mers-doc:p5"
+     ]
+    },
+    {
+     "label": "The plateau between the rivers",
+     "point": [
+      -0.2,
+      44.78
+     ],
+     "zoom": 9,
+     "caption": "A wide plateau, with the Dordogne on its north side and the Garonne on its south side.",
+     "cite": [
+      "entre-deux-mers-doc:p4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean climate, moderate rain",
+   "paras": [
+    "The climate is oceanic, yet the rain is moderate. Ocean winds dominate. This part of the Gironde also gets more of the less humid south-east winds.",
+    "The plateau's position \"between two tides\" levels out the seasonal swings somewhat. The tidal bores, the rising waves of the big tides, are felt well inland."
+   ],
+   "cite": [
+    "entre-deux-mers-doc:p4"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay for white grapes",
+   "paras": [
+    "The plateau is clay and limestone of the Tertiary age, and lies on average between 60 and 100 metres. The Garonne brought alluvium down from the Pyrenees. The Dordogne brought it from the Massif Central. On the plateau the soils are often a layer of wind-blown silt of varying thickness, called boulbènes.",
+    "Soils where clay dominates suit white grapes very well. Slope soils are planted with vines where they face south and west. There run-off has stripped away the sandy silt and left stonier ground. In the two main valleys the soils are gravel in a matrix of sand and clay. Where slopes erode, the molasse layer under the limestone can show, especially on slopes facing the Dordogne.",
+    "Vines are planted only on the least fertile land. Deep soils that are rich in minerals, and above all hold a lot of water, are left out of the vineyard. Valley-floor hollows, called thalwegs, are left out too, because cold air cannot drain away from them. So are the low ends of concave plots. Stream banks and slopes waterlogged by wet patches are out as well."
+   ],
+   "cite": [
+    "entre-deux-mers-doc:p4",
+    "entre-deux-mers-doc:p5",
+    "entre-deux-mers-doc:p6"
+   ]
+  },
+  {
+   "id": "white",
+   "beat": "rules",
+   "title": "Only dry white, mostly Sauvignon",
+   "paras": [
+    "Entre-deux-Mers makes one kind of wine: dry, still white. Dry here means at most 4 grams of sugar per litre. It was not always so. A court ruling in 1924 reserved the name for white and red wines. The 1937 decree recognised it for white wines only. In 1953 it narrowed to dry whites.",
+    "Most of the wine comes from Sauvignon, which adapts well and shows itself well. The wines are often blends. Sémillon adds roundness. Muscadelle adds a certain aromatic complexity. Old local grapes play a smaller part, enriching the aromas. Merlot Blanc and Colombard are among them. So are Mauzac and Ugni Blanc. Sauvignon Gris is also a main grape.",
+    "Growers know their ground closely and pick the grape to suit each soil. Planted with the right grape, these soils bring out aromas of white flowers. Citrus and exotic fruit come through too.",
+    "In 1955 the name Haut-Benauge was allowed for nine communes. It may follow Entre-deux-Mers on the label, in letters no larger. Labels may also name the larger unit Vin de Bordeaux or Grand Vin de Bordeaux.",
+    "The cooperative movement has been strong here since the 1930s. There are 18 cooperatives today, and they make 85% of the white wine."
+   ],
+   "cite": [
+    "entre-deux-mers-doc:p1",
+    "entre-deux-mers-doc:p4",
+    "entre-deux-mers-doc:p5",
+    "entre-deux-mers-doc:p6",
+    "entre-deux-mers-doc:p9"
+   ]
+  }
+ ]
+}

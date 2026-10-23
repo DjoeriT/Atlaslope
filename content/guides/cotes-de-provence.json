@@ -1,0 +1,155 @@
+{
+ "id": "cotes-de-provence",
+ "title": "Why Côtes de Provence tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Côtes de Provence is a patchwork of soils and small climates, under a long, hot, dry season and cold, drying winds. Growers answer with a mix of grapes, and the result is mostly pale rosé.",
+  "cite": [
+   "cotes-de-provence-doc:p6",
+   "cotes-de-provence-doc:p7",
+   "cotes-de-provence-doc:p9",
+   "cotes-de-provence-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "coast",
+   "beat": "place",
+   "title": "From limestone west to crystalline east",
+   "paras": [
+    "The vineyard stretches from the limestone of lower Provence in the west and north to the crystalline lower Provence of the Maures and Esterel in the south and east. Vines run along Mediterranean beaches, slip into valleys and spread over sun-baked stony ground. They stop at the edge of the pine woods.",
+    "The area covers 84 communes: 68 in the Var, 15 in the Bouches-du-Rhône and one in the Alpes-Maritimes, on the banks of the river Var. It leaves out land dominated by continental climates. It is the largest vineyard in Provence, and in 2009 it covered more than 20,000 hectares."
+   ],
+   "cite": [
+    "cotes-de-provence-doc:p6",
+    "cotes-de-provence-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Massif des Maures",
+     "point": [
+      6.4,
+      43.25
+     ],
+     "zoom": 9.5,
+     "caption": "The crystalline Maures, where the vines sit in islands among pine and cork oak forests.",
+     "cite": [
+      "cotes-de-provence-doc:p7"
+     ]
+    },
+    {
+     "label": "Saint-Tropez",
+     "point": [
+      6.64,
+      43.27
+     ],
+     "zoom": 11,
+     "caption": "Ports such as Saint-Tropez helped export the wines and build their fame.",
+     "cite": [
+      "cotes-de-provence-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "winds",
+   "beat": "weather",
+   "title": "A long hot season and the mistral",
+   "paras": [
+    "The climate is Mediterranean of the Provençal type: a long, hot, dry season, mild dry winters, and rainy springs and autumns. Mean annual temperature reaches 15 °C. Rainfall is between 600 and 900 mm a year, and there are more than 2700 hours of sun.",
+    "Cold winds from the north and north-west, the mistral, are the strongest. They clear the sky and dry the air. Their influence fades from west to east. Winds from the south and south-east bring humidity and rain, and their influence grows towards the east.",
+    "Ridges and openings to the sea shape many small climates. The prevailing winds also concentrate the grapes and help keep them healthy."
+   ],
+   "cite": [
+    "cotes-de-provence-doc:p6",
+    "cotes-de-provence-doc:p7",
+    "cotes-de-provence-doc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Five natural zones",
+   "paras": [
+    "Big ridges run mostly east to west, and between them lie five natural zones. The Maures massif is crystalline rock such as granite and gneiss. Its vines sit in islands among pine and cork-oak forests.",
+    "The Permian depression wraps the Maures to the west and north, from Toulon to Saint-Raphaël. Its red sandstone gave sandy clay soils, red or wine-lees in colour. Vines took the soils with good water supply and left the shallow sandstone soils to pines and olives.",
+    "North and north-east of it lie strongly folded limestone hills. Vines sit there in islands on marly limestone soils, often in terraces. The Beausset basin opens wide to the sea. Marl and sandstone dominate there, and the vines sit on shallow soils with good water supply.",
+    "The upper Arc basin lies below the Sainte-Victoire ridge. Its vines grow on hills and foothills, on limy sandstone and sandy clay. The mistral sometimes blows there violently.",
+    "Across the area, the plots marked out for the harvest rest on shallow soils with good water supply."
+   ],
+   "cite": [
+    "cotes-de-provence-doc:p7",
+    "cotes-de-provence-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Montagne Sainte-Victoire",
+     "point": [
+      5.6,
+      43.53
+     ],
+     "zoom": 10,
+     "caption": "The Sainte-Victoire ridge closes the upper Arc basin to the north.",
+     "cite": [
+      "cotes-de-provence-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "blend",
+   "beat": "rules",
+   "title": "A land of blending, mostly pink",
+   "paras": [
+    "Still rosé is the great majority of production, 89% in 2009. The vineyard also makes still red and dry white.",
+    "Rosé is pale pink. Depending on where it comes from, it smells of fruit or flowers, with mineral or toasty notes. Its structure is balanced between roundness and liveliness.",
+    "Red is dark and comes in two kinds. A short time on the skins gives fruity reds to drink soon. A long one gives reds for keeping, with black fruit, cocoa, game and spice, and powerful, silky tannins.",
+    "Dry white is yellow with green glints. It smells of citrus, white flowers or honey.",
+    "Provence was always a crossing between Italy, Spain and the Rhône valley, and new grapes joined older local ones. Under the excesses of the Mediterranean climate each grape brings strengths and weaknesses, and a single-grape wine rarely sits in perfect balance. Reds and rosés are built on seven black grapes: Grenache, Cinsault, Syrah, Tibouren, Mourvèdre, Carignan and Cabernet-Sauvignon.",
+    "A small share of white grapes is often added: Clairette, Ugni Blanc, Vermentino (called rolle locally) and Sémillon. The first three, and Sémillon to a lesser extent, are the base of the whites.",
+    "Grenache and Tibouren give richness in alcohol and roundness. Cinsault gives finesse and elegance. Syrah gives fruity aromas. Mourvèdre helps wines age well.",
+    "Three named areas may add their name to the label, for red and rosé only. Sainte-Victoire lies at the western end, under continental influences, on stony, free-draining carbonate soils. Its cooler climate delays full ripeness, and its rosés are livelier and more structured.",
+    "Fréjus in the north-east has marked sea influence and the almost constant Montagnère wind. Its rosés are very round and full. La Londe lies at the coastal tip of the western Maures, on schist soils. Its rosés balance freshness and roundness.",
+    "Twenty-three estates were ranked as crus classés in 1953 and 1955."
+   ],
+   "cite": [
+    "cotes-de-provence-doc:p2",
+    "cotes-de-provence-doc:p3",
+    "cotes-de-provence-doc:p8",
+    "cotes-de-provence-doc:p9",
+    "cotes-de-provence-doc:p10",
+    "cotes-de-provence-doc:p11",
+    "cotes-de-provence-doc:p12",
+    "cotes-de-provence-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Fréjus",
+     "point": [
+      6.74,
+      43.43
+     ],
+     "zoom": 10,
+     "caption": "The north-eastern end of the Permian depression, open to the sea and swept by the Montagnère.",
+     "cite": [
+      "cotes-de-provence-doc:p11"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vin de Provence",
+    "text": "The larger geographical unit that labels of Côtes de Provence wines may add, in the same field of view and in letters no bigger than those of the appellation name.",
+    "cite": [
+     "cotes-de-provence-doc:p13"
+    ]
+   }
+  ],
+  "cite": [
+   "cotes-de-provence-doc:p13"
+  ]
+ }
+}

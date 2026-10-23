@@ -1,0 +1,81 @@
+{
+ "id": "barsac",
+ "title": "Why Barsac tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Barsac makes one wine: a sweet white from grapes touched by noble rot. A particular microclimate lets the fungus behind it develop.",
+  "cite": [
+   "barsac-doc:p1",
+   "barsac-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "commune",
+   "beat": "place",
+   "title": "One commune in the Gironde",
+   "paras": [
+    "Barsac is a single commune in the Gironde department. The grapes are picked there, and the wine is made and aged there.",
+    "By exception, nearby communes such as Sauternes and Preignac may also make and age the wine. The grapes still come from Barsac."
+   ],
+   "cite": [
+    "barsac-doc:p3",
+    "barsac-doc:p4"
+   ],
+   "fly": [
+    {
+     "label": "The commune of Barsac",
+     "point": [
+      -0.3355,
+      44.615
+     ],
+     "zoom": 10,
+     "caption": "Grapes are picked, and wine is made and aged, within the commune of Barsac in the Gironde.",
+     "cite": [
+      "barsac-doc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fungus",
+   "beat": "weather",
+   "title": "A microclimate for noble rot",
+   "paras": [
+    "Particular microclimatic conditions allow the Botrytis cinerea fungus to develop. It gives the wines their typicity.",
+    "The supply of water favours the concentration of aromas in the berries. It gives the wines original nuances: fairly nervy, with persistent aromas of fruit."
+   ],
+   "cite": [
+    "barsac-doc:p3"
+   ]
+  },
+  {
+   "id": "limestone",
+   "beat": "ground",
+   "title": "Limestone underfoot",
+   "paras": [
+    "Barsac stands apart because of the particular character of its soils. The limestone elements in the soil are linked to the mineral texture of the wines."
+   ],
+   "cite": [
+    "barsac-doc:p3"
+   ]
+  },
+  {
+   "id": "tries",
+   "beat": "rules",
+   "title": "Picked by hand, pass by pass",
+   "paras": [
+    "Barsac makes one kind of wine: a still white with residual sugar of at least 45 g/l, from botrytised grapes. In the mouth it is very rich and unctuous.",
+    "The grapes must reach a natural potential alcohol of at least 15%.",
+    "The main grapes are Semillon, Savagnin blanc, Sauvignon gris and Muscadelle.",
+    "Pruning is severe and set out for each grape, and must be done by 1 May. Vines are planted at a minimum of 6,500 per hectare.",
+    "Grapes are picked overripe, with noble rot, by hand in successive passes called tries. That gives a strong concentration of sugar in the berries. The maximum yield is 28 hl/ha."
+   ],
+   "cite": [
+    "barsac-doc:p1",
+    "barsac-doc:p2",
+    "barsac-doc:p3"
+   ]
+  }
+ ]
+}

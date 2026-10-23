@@ -1,0 +1,101 @@
+{
+ "id": "cahors",
+ "title": "Why Cahors tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cot, also called malbec, finds a true ecological niche in the Lot valley and the causses around it. The climate lets its grapes reach good ripeness.",
+  "cite": [
+   "cahors-doc:p7",
+   "cahors-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A river cut into limestone",
+   "paras": [
+    "The vineyard lies on both sides of the Lot, a river that carved its valley and spread its meanders across the limestone plateaus of the causses du Quercy. The area covers 45 communes in the Lot département.",
+    "It takes in three distinct landforms. Side valleys cut the causse plateaus into high, flat-topped hills with steep slopes, reaching about 300 m. The \"white\" Quercy plateau lies in the south. The Lot valley itself is cut into the causse from east to west."
+   ],
+   "cite": [
+    "cahors-doc:p5",
+    "cahors-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Lot valley at Luzech",
+     "point": [
+      1.29,
+      44.485
+     ],
+     "zoom": 10,
+     "caption": "The Lot cut its valley into the causse and shaped wide meanders.",
+     "cite": [
+      "cahors-doc:p6"
+     ]
+    },
+    {
+     "label": "Puy-l'Évêque, a Lot river port",
+     "point": [
+      1.14,
+      44.5
+     ],
+     "zoom": 11,
+     "caption": "One of the river ports from which Cahors wine was shipped down to Bordeaux.",
+     "cite": [
+      "cahors-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Oceanic, with a warm dry wind",
+   "paras": [
+    "The climate is oceanic, with continental and Mediterranean influences. Winters are cold and spring warms up clearly. Summers are sunny and hot. Rain averages 700 mm a year, well spread, with a bigger peak in spring.",
+    "The prevailing winds are westerly ocean winds that bring clouds and rain. The Autan is a warm, dry wind from the south-east that blows for a few days at a time in spring and autumn. It acts on the vine all through its growing season. It brings budburst and flowering forward. It also hastens véraison, when the grapes change colour. When it blows hard late in summer, it helps the grapes ripen and dries the vines after August storms, which limits fungal disease.",
+    "The ocean's damp helps the vine grow in spring. Mediterranean warmth brings dry heat in summer and autumn, with moderate summer water stress. The first cold comes late, so the wood ripens well. The Lot valley warms the air and clears cold currents coming off the causses, mostly in spring and autumn.",
+    "Atlantic influence varies between the eastern and western edges of the area. This makes for notable differences in how early the vines run."
+   ],
+   "cite": [
+    "cahors-doc:p6",
+    "cahors-doc:p7",
+    "cahors-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone causses and river terraces",
+   "paras": [
+    "The causse plateaus are Jurassic and Cretaceous limestone. The \"white\" Quercy in the south is marl and lake limestone from the Oligocene and Miocene. Along the Lot, the Quaternary era left stepped alluvial terraces.",
+    "The soils give cot medium vigour, which helps regulate yields naturally. The vineyard boundary was drawn plot by plot. It favours well-drained soils that warm easily. It leaves out cold, frost-prone sites. It also leaves out the most fertile land and soils that are too shallow."
+   ],
+   "cite": [
+    "cahors-doc:p6",
+    "cahors-doc:p8"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Cot, in red only",
+   "paras": [
+    "Cahors is a still red wine, and nothing else. Cot is by far the main grape. Merlot and tannat are the other two varieties in the rules.",
+    "Planting is at least 4,000 vines per hectare. Pruning is strict, with at most 12 buds per vine. Yield is set at 50 hl/ha, with a cap at 60 hl/ha. Destemming is compulsory, to extract the finest aromas. The wines also get a minimum ageing before sale.",
+    "The wines run from pleasant and fruity to more structured, depending on terroir and local custom. They age well.",
+    "The label may also name the wider Sud-Ouest area, in letters no larger than the Cahors name."
+   ],
+   "cite": [
+    "cahors-doc:p2",
+    "cahors-doc:p3",
+    "cahors-doc:p4",
+    "cahors-doc:p5",
+    "cahors-doc:p7",
+    "cahors-doc:p9"
+   ]
+  }
+ ]
+}

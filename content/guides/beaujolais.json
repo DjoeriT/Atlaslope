@@ -1,0 +1,159 @@
+{
+ "id": "beaujolais",
+ "title": "Why Beaujolais tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Most vines grow on slopes facing the rising sun, behind a screen of hills to the west. Under an apparent unity the ground varies, and that variety shows in the wines.",
+  "cite": [
+   "beaujolais-doc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "edge",
+   "beat": "place",
+   "title": "Between Lyon and Mâcon",
+   "paras": [
+    "The vineyard sits on the eastern edge of the Massif Central, above the Saône valley. It runs 55 km from north to south, between the cities of Lyon and Mâcon, and 15 km to 20 km from east to west. Vines grow at 180 m to 550 m, while the hills behind reach 1000 m.",
+    "The land is cut into small plots of 0.3 hectare on average, a patchwork of vines. In 2008 there were about 19,000 hectares and 3,500 growers. 18 cooperative cellars make a third of the wine.",
+    "The Villages wines come only from the northern half, from 30 communes in the Rhône and 8 in Saône-et-Loire."
+   ],
+   "cite": [
+    "beaujolais-doc:p8",
+    "beaujolais-doc:p10",
+    "beaujolais-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Monts du Beaujolais",
+     "point": [
+      4.5,
+      46.1
+     ],
+     "zoom": 9,
+     "caption": "The hills west of the vines. The relief behind them reaches 1000 m, while the vines stop at 550 m.",
+     "cite": [
+      "beaujolais-doc:p8",
+      "beaujolais-doc:p11"
+     ]
+    },
+    {
+     "label": "The Saône valley",
+     "point": [
+      4.75,
+      46.05
+     ],
+     "zoom": 9,
+     "caption": "The wide Saône valley lies below the vineyard, on its eastern side.",
+     "cite": [
+      "beaujolais-doc:p8",
+      "beaujolais-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter from the west",
+   "paras": [
+    "The climate is a degraded oceanic one. Continental influences bring summer storms and freezing winter fog. Southern influences bring summer heat and rain peaks in autumn and spring.",
+    "The Monts du Beaujolais shield the vines from west winds. They create a foehn effect that dries the oceanic air, with less cloud and less rain. Behind that screen, the light and rainfall are particularly good for ripe, sound grapes.",
+    "The wide Saône valley channels southern air masses. That adds light and softens temperature swings.",
+    "The slopes face mainly east and south. The relief and the wide opening to the east protect the grapes from morning dew. The height of the slopes keeps the vines out of the winter fog that often fills the Saône valley."
+   ],
+   "cite": [
+    "beaujolais-doc:p9",
+    "beaujolais-doc:p11"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Granite in the north, limestone in the south",
+   "paras": [
+    "In the north the rocks are old, raised in the Hercynian uplift. They include granite and porphyry, along with schists and often metamorphosed volcanic-sedimentary rocks. They weather into acid sandy or clayey soils and form rounded hills.",
+    "In the south the rocks are younger, mostly limestone from the Triassic and Jurassic. They form steeper, elongated slopes. The soils there are generally more clayey and deeper.",
+    "At the foot of the slopes, old river terraces and slope debris cover the older rock.",
+    "Vines grow on the poor, well-drained soils of granite and clay-limestone slopes. Wines from the north on acid soils are rather powerful and coloured. In the south, on mostly limestone ground, they are generally fruitier and lighter.",
+    "Clay soils give cuvées rich in colour and supple. Sandy soils from crystalline rock, used for Villages, can give balanced, harmonious wines with a long aromatic finish."
+   ],
+   "cite": [
+    "beaujolais-doc:p8",
+    "beaujolais-doc:p9",
+    "beaujolais-doc:p11",
+    "beaujolais-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Northern granite hills",
+     "point": [
+      4.68,
+      46.18
+     ],
+     "zoom": 10,
+     "caption": "In the northern half, old rocks give acid soils. Villages vines grow only on these acid soils.",
+     "cite": [
+      "beaujolais-doc:p8",
+      "beaujolais-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gamay",
+   "beat": "rules",
+   "title": "Gamay, fruit first",
+   "paras": [
+    "The wines are dry and still, in red, rosé and white. Gamay is the essential grape for red and rosé. Chardonnay alone makes the white, which is rarer than the others.",
+    "Growers usually use a vinification inspired by semi-carbonic maceration to keep the fruit. To control its fertility, Gamay is pruned short, mostly in the gobelet style.",
+    "Villages wines are deeper in colour and often fuller. They can be kept a few years.",
+    "Gamay is also good at making primeur wine. Primeur or nouveau can be red or rosé, from grapes of the same year, vatted for 10 days or less. These wines are fresh and fruity, and meant to be drunk within months. Their label must show the vintage. In 1985 their release to buyers was set for the third Thursday of November.",
+    "Beaujolais is the only wine region where new wine is so large a share. It has never passed half of the total output."
+   ],
+   "cite": [
+    "beaujolais-doc:p2",
+    "beaujolais-doc:p3",
+    "beaujolais-doc:p4",
+    "beaujolais-doc:p9",
+    "beaujolais-doc:p10",
+    "beaujolais-doc:p11",
+    "beaujolais-doc:p15"
+   ],
+   "fly": [
+    {
+     "label": "Lyon, the nearest market",
+     "point": [
+      4.835,
+      45.76
+     ],
+     "zoom": 9,
+     "caption": "In the 19th century the south made light, fruity wines for the nearby Lyon market.",
+     "cite": [
+      "beaujolais-doc:p9"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Commune name",
+    "text": "The name of the commune where the grapes grew may follow the appellation, in letters as tall and wide as the appellation name."
+   },
+   {
+    "term": "Lieu-dit",
+    "text": "A cadastral place name may follow the appellation, in letters no more than half the size, if it appears on the harvest declaration."
+   },
+   {
+    "term": "Vin du Beaujolais",
+    "text": "The label may show this larger geographic unit."
+   }
+  ],
+  "cite": [
+   "beaujolais-doc:p14",
+   "beaujolais-doc:p15"
+  ]
+ }
+}

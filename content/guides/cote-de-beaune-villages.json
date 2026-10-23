@@ -1,0 +1,144 @@
+{
+ "id": "cote-de-beaune-villages",
+ "title": "Why Côte de Beaune-Villages tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Villages on the front of the slope give generous wines from very ripe grapes, with supple tannins. Villages tucked into the valleys that cut into the Hautes Côtes plateau give fresher, more elegant and fruitier ones.",
+  "cite": [
+   "cote-de-beaune-villages-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A tectonic ridge around Beaune",
+   "paras": [
+    "The Côte de Beaune is a straight ridge about 25 km long. It was formed by tectonic movement. To the west lie the limestone plateaux of the Hautes Côtes, at 400 to 500 m. To the east lies the Bresse plain, a collapsed trough at about 250 m beside the Côte.",
+    "The appellation covers 12 communes on either side of the town of Beaune in the Côte-d'Or, and 4 neighbouring communes in Saône-et-Loire. Several valleys cut the Côte and the plateaux behind it. The vines grow on the front of the slope and along the sides of those valleys."
+   ],
+   "cite": [
+    "cote-de-beaune-villages-doc:p5",
+    "cote-de-beaune-villages-doc:p6",
+    "cote-de-beaune-villages-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Beaune ridge",
+     "point": [
+      4.77,
+      46.98
+     ],
+     "zoom": 9.5,
+     "caption": "A straight ridge about 25 km long, with the Hautes Côtes plateaux behind it and the Bresse plain in front.",
+     "cite": [
+      "cote-de-beaune-villages-doc:p6"
+     ]
+    },
+    {
+     "label": "Maranges, in Saône-et-Loire",
+     "point": [
+      4.68,
+      46.92
+     ],
+     "zoom": 11,
+     "caption": "Four Saône-et-Loire communes, including the Maranges villages, lie next to the Côte-d'Or ones.",
+     "cite": [
+      "cote-de-beaune-villages-doc:p5",
+      "cote-de-beaune-villages-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered behind the Morvan",
+   "paras": [
+    "The climate is cool and oceanic, disturbed by continental or southern influences carried along the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5 °C.",
+    "The Côte lies east of the Morvan massif and the plateaux of Burgundy. That shelter gives it a thermal advantage and a rain shortfall that is notable for the region."
+   ],
+   "cite": [
+    "cote-de-beaune-villages-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Morvan massif",
+     "point": [
+      4.05,
+      47.05
+     ],
+     "zoom": 8.5,
+     "caption": "The Côte lies east of the Morvan, which shelters it from the weather.",
+     "cite": [
+      "cote-de-beaune-villages-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Hard limestone, soft marl",
+   "paras": [
+    "The slopes rest on limestone from the Middle and Upper Jurassic. Layers of hard limestone alternate with softer marls, which are clayey limestones. Dolomite layers appear in places.",
+    "Scree, clay and silt often hide the bedrock. High on the slope, over the marls, this cover is very stony and thin. At the foot it holds more fine particles and is thicker, from a few decimetres to 1 m.",
+    "The vineyard parcels sit on well-exposed slopes at 230 to 400 m. Marl slopes often average a 20% gradient and can reach 40%. The clay-silt soils are sometimes prone to erosion.",
+    "The soils are young, generally carbonate-rich, thin and well drained. They are rather stony and lean high on the slope, and deeper and clayey on the flats and at the foot."
+   ],
+   "cite": [
+    "cote-de-beaune-villages-doc:p7"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Red Pinot Noir, in many shades",
+   "paras": [
+    "The appellation makes still, dry red wine only. Pinot Noir is the main grape, a Burgundy native. Chardonnay, Pinot Gris and Pinot Blanc also appear on the variety list, but no white is made.",
+    "Relief, geology and soils give the wines a wide range of shades. Some southern sectors give more tannic wines with deeper colour. The northern ones are very fine.",
+    "Vines are planted at 9,000 vines a hectare or more, and irrigation is forbidden. Yields are set at 50 hl/ha, with a ceiling of 58 hl/ha. Wines are usually aged for several months.",
+    "The name dates from 1937. Until the 1930s the Côte's fine wines were often sold under its best-known names, such as Beaune or Volnay. From 1936 those names were kept for their own appellations. The reds of the other communes, with an established reputation, became Côte de Beaune-Villages."
+   ],
+   "cite": [
+    "cote-de-beaune-villages-doc:p2",
+    "cote-de-beaune-villages-doc:p3",
+    "cote-de-beaune-villages-doc:p4",
+    "cote-de-beaune-villages-doc:p5",
+    "cote-de-beaune-villages-doc:p6",
+    "cote-de-beaune-villages-doc:p8",
+    "cote-de-beaune-villages-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Beaune",
+     "point": [
+      4.84,
+      47.02
+     ],
+     "zoom": 11,
+     "caption": "The town of Beaune. From the 18th century the Côte supplied its négociant houses with fine wines.",
+     "cite": [
+      "cote-de-beaune-villages-doc:p8"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Lieu-dit",
+    "text": "A named cadastral plot may appear on the label if it is on the harvest declaration, in letters at most half the size of the appellation name."
+   },
+   {
+    "term": "Vin de Bourgogne",
+    "text": "The label may add the larger unit \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\"."
+   }
+  ],
+  "cite": [
+   "cote-de-beaune-villages-doc:p11",
+   "cote-de-beaune-villages-doc:p12"
+  ]
+ }
+}

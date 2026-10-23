@@ -1,0 +1,115 @@
+{
+ "id": "vosne-romanee",
+ "title": "Why Vosne-Romanée tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Vosne-Romanée sits on the Côte de Nuits, cool in climate and sheltered by the Morvan to the west. Its Pinot Noir gives elegant reds, velvety and cherry-scented, that gain from keeping.",
+  "cite": [
+   "vosne-romanee-doc:p2",
+   "vosne-romanee-doc:p5",
+   "vosne-romanee-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A straight ridge between plateau and plain",
+   "paras": [
+    "Vosne-Romanée lies on the Côte de Nuits, a straight ridge about 25 km long that runs roughly north to south. Tectonic movement made it. The ridge divides the limestone plateaux of the Hautes Côtes to the west, at 400 to 500 m, from the Bresse plain to the east, near 250 m.",
+    "The appellation covers two communes, Flagey-Echézeaux and Vosne-Romanée, between Dijon to the north and Nuits-Saint-Georges. The slope itself drops about 150 m.",
+    "Two combes cut into it. These are dry, steep-sided valleys with limestone cliffs."
+   ],
+   "cite": [
+    "vosne-romanee-doc:p4",
+    "vosne-romanee-doc:p5",
+    "vosne-romanee-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Nuits",
+     "point": [
+      4.965,
+      47.22
+     ],
+     "zoom": 10,
+     "caption": "A straight ridge about 25 km long, between the Hautes Côtes plateaux and the Bresse plain.",
+     "cite": [
+      "vosne-romanee-doc:p5"
+     ]
+    },
+    {
+     "label": "Vosne-Romanée village",
+     "point": [
+      4.9535,
+      47.1615
+     ],
+     "zoom": 11,
+     "caption": "The vines cover the whole slope and part of the foot of the hill at the village.",
+     "cite": [
+      "vosne-romanee-doc:p6"
+     ]
+    },
+    {
+     "label": "Clos de Vougeot, next door",
+     "point": [
+      4.9605,
+      47.1815
+     ],
+     "zoom": 11,
+     "caption": "Cîteaux abbey held Vougeot from the 12th century, with a vat house that is now the château. It also controlled Flagey-Echézeaux.",
+     "cite": [
+      "vosne-romanee-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool and sheltered",
+   "paras": [
+    "The climate leans oceanic and cool. Continental and southern influences along the Rhône-Saône axis soften it. About 730 mm of rain falls in a year, in a moderate and regular pattern, with no marked summer drought. The mean annual temperature is 10.5 °C.",
+    "The Côte lies east of the Morvan massif and the Burgundy plateaux. That gives it shelter, a local advantage in warmth and notably less rain than the wider region. The combes bring cooler conditions locally."
+   ],
+   "cite": [
+    "vosne-romanee-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Stones on top, clay below",
+   "paras": [
+    "The slope is built of Middle Jurassic limestones. The very compact Comblanchien limestone forms the backbone of the relief. A band of marl, a clayey limestone, near the foot leaves a slight shelf. Tertiary conglomerates, mostly limestone, form a gentle bulge at the foot.",
+    "The limestone is hidden under spreads of scree mixed with clay and silt. High on the slope these soils are very stony, lean and very limy, and often thin. They are gravelly in places, very free-draining and not very fertile. At the foot they hold more fine particles and are thicker, from a few decimetres to 1 m.",
+    "Downhill the soils gain clay. On the clay and silt spreads at the foot they are relatively deep, at 0.50 m.",
+    "Clays rich in iron oxide give the soils a fine red colour. Where the combes open out, fans of stony debris form well-drained ground."
+   ],
+   "cite": [
+    "vosne-romanee-doc:p5",
+    "vosne-romanee-doc:p6"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Pinot Noir, dry red, long ageing",
+   "paras": [
+    "Vosne-Romanée makes dry still red wine only. Pinot Noir dominates the plantings. It is a native Burgundian grape, selected over time by the Burgundians. Chardonnay is also on the list of grapes, as are Pinot Gris and Pinot Blanc.",
+    "The cool oceanic climate works with gentle slopes that face east. Stony soils from eroded Jurassic limestone add to it. Together they help Pinot Noir thrive at its best.",
+    "The reds show diverse nuances with great elegance. Naming the climat, the plot the grapes come from, brings those nuances out. They reflect the varied ground of slope, foot and combes.",
+    "Vines are planted densely, at a minimum of 9,000 per hectare, and often more. Yields are set at 50 hl/ha. The wines get a long élevage, the maturing before bottling, which gives them a definite ability to keep. How well depends on the vintage and the climat.",
+    "Since 1943 a list of climats may add the mention premier cru. About 155 hectares were planted in 2008, 57 of them premier cru, making 5,900 hl a year. In 1866 the village added the name of its most prestigious cru, La Romanée, to its own."
+   ],
+   "cite": [
+    "vosne-romanee-doc:p2",
+    "vosne-romanee-doc:p3",
+    "vosne-romanee-doc:p4",
+    "vosne-romanee-doc:p5",
+    "vosne-romanee-doc:p7",
+    "vosne-romanee-doc:p8"
+   ]
+  }
+ ]
+}

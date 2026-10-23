@@ -1,0 +1,98 @@
+{
+ "id": "fitou",
+ "title": "Why Fitou tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Fitou makes only red wine, from two separate pieces of land between the Mediterranean and the Corbières massif. Soil, climate and growers together help give rich, warm reds that keep very well.",
+  "cite": [
+   "fitou-doc:p5",
+   "fitou-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "two-halves",
+   "beat": "place",
+   "title": "Two pieces, between sea and hills",
+   "paras": [
+    "Between the Mediterranean and the Corbières massif, Fitou is made of two separate pieces about 15 km apart, split by a limestone plateau. The eastern piece covers 5 communes of the maritime Corbières foothills, beside lagoons and the sea. The western piece has 4 communes, higher up, at the foot of Mont Tauch (917 m).",
+    "On the coast, small hills lead to a long stony plain. Above it rises the Leucate plateau, a promontory 50 m high that can be seen from the sea. Inland, small basins sit around narrow, closed valleys under steep slopes."
+   ],
+   "cite": [
+    "fitou-doc:p5",
+    "fitou-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Leucate plateau",
+     "point": [
+      3.03,
+      42.91
+     ],
+     "zoom": 10,
+     "caption": "The Leucate plateau is a promontory 50 m high that can be seen from the sea.",
+     "cite": [
+      "fitou-doc:p5",
+      "fitou-doc:p6"
+     ]
+    },
+    {
+     "label": "Mont Tauch",
+     "point": [
+      2.69,
+      42.89
+     ],
+     "zoom": 10,
+     "caption": "The 4 inland communes lie at the foot of Mont Tauch (917 m).",
+     "cite": [
+      "fitou-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Windy coast, cooler hills",
+   "paras": [
+    "The climate is hot and dry Mediterranean, with differences between sectors. The coast is very often windy, with 200 days of north-west wind. Its low rain, 600 mm a year on average, is made up for by sea humidity.",
+    "Inland, further from the sea and higher up, it is less windy and cooler. Rain is higher, around 700 mm a year on average. Sunshine stays high in both sectors."
+   ],
+   "cite": [
+    "fitou-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Stony, shallow and warm",
+   "paras": [
+    "On the coast the soils are clay-limestone, formed from weathered limestone, with alluvial-colluvial soils in the low areas. In the hills they form on schist, limestone or sandstone, and on a few rare stony terraces.",
+    "All of them are generally stony, shallow and warm. The vine finds a little room among the garrigue, the wild Mediterranean scrub. It grows in hollows and on lower slopes, on the little earth gathered over thousands of years."
+   ],
+   "cite": [
+    "fitou-doc:p6",
+    "fitou-doc:p8"
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Only red, always a blend",
+   "paras": [
+    "Fitou makes only dry, still red wine, and every wine is a blend of at least 2 grape varieties. Carignan and Grenache are the traditional Mediterranean pair. Syrah and Mourvèdre complete the list.",
+    "Carignan gives power, softened by the generosity and smoothness of Grenache. Together they give the wines a characteristic velvety, melting feel. Between the coastal clay-limestone and the harder mountain soils, conditions suit Syrah, which develops finesse and complexity around notes of violet and small fruits. Mourvèdre, notably near the coast, adds a tannic structure and a strong potential for keeping.",
+    "Dry, poor soils call for short pruning and low to moderate yields, set at 45 hl/ha. To refine the tannic structure, the wines age at least until 15 April of the year after harvest.",
+    "The label may add the wider name Languedoc, in letters no more than half the size of the name Fitou."
+   ],
+   "cite": [
+    "fitou-doc:p2",
+    "fitou-doc:p3",
+    "fitou-doc:p4",
+    "fitou-doc:p5",
+    "fitou-doc:p7",
+    "fitou-doc:p8"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "id": "brouilly",
+ "title": "Why Brouilly tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Brouilly circles a small hill, and the mountains to the west shelter its vines from wind and rain. The vines mostly face the morning sun, and their Gamay is reputed the tenderest of the Beaujolais crus.",
+  "cite": [
+   "brouilly-doc:p3",
+   "brouilly-doc:p6",
+   "brouilly-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "mont",
+   "beat": "place",
+   "title": "A ring around one hill",
+   "paras": [
+    "Brouilly lies in the heart of the Beaujolais vineyard, 40 km north of Lyon and between the towns of Villefranche and Mâcon. It wraps around Mont Brouilly, a small mountain cut off from the eastern edge of the Monts du Beaujolais. The vineyard spreads over 6 communes of the Rhône.",
+    "The hill stands 485 m high. No village is called Brouilly. The name probably comes from a Roman lieutenant, Brulius, who is said to have settled on its slopes in the 4th century."
+   ],
+   "cite": [
+    "brouilly-doc:p5",
+    "brouilly-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Mont Brouilly",
+     "point": [
+      4.6419,
+      46.1236
+     ],
+     "zoom": 11,
+     "caption": "A small mountain split off from the Monts du Beaujolais, with the Brouilly vineyard around it. Vines cover its flanks, and a small chapel crowns its wooded top.",
+     "cite": [
+      "brouilly-doc:p6",
+      "brouilly-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Sheltered, sunny slopes",
+   "paras": [
+    "The climate is a degraded oceanic one and temperate. Continental influences bring summer storms and freezing fogs in winter. Southern influences count above all, with summer heat and the most rain in autumn and spring.",
+    "The Monts du Beaujolais rise to nearly 1000 m west of the vineyard. They shield the vines from western winds and rain.",
+    "The vines mostly face east, so the first rays of sun warm the slope at dawn. On slopes between 250 and 400 m, they usually escape spring frost and the morning fog of the Saône plain, which lies at 175 m. Excess rain drains away quickly.",
+    "The opening onto the wide Saône plain gives the vines good light. With the altitude and a mostly south and east aspect, this lets the grapes ripen fully and evenly."
+   ],
+   "cite": [
+    "brouilly-doc:p6",
+    "brouilly-doc:p7",
+    "brouilly-doc:p8"
+   ]
+  },
+  {
+   "id": "granite",
+   "beat": "ground",
+   "title": "Acid rock around the hill",
+   "paras": [
+    "The bedrock is mostly acid Paleozoic rock. West of Mont Brouilly, granite makes sandy, lean soils. To the south, porphyry makes soils that are clayier and stonier.",
+    "In the east and north, recent spreads of material hide the bedrock. There, debris from the mountain mixes with a clay and silica matrix. Clay-limestone soils appear locally at the eastern edge.",
+    "Granite plots give wines with more fruit that are enjoyed fairly young. Plots on the schist soils of the central part give a deeper colour and have real strengths for good keeping."
+   ],
+   "cite": [
+    "brouilly-doc:p6",
+    "brouilly-doc:p8"
+   ]
+  },
+  {
+   "id": "gamay",
+   "beat": "rules",
+   "title": "Gamay, and only red",
+   "paras": [
+    "Brouilly makes dry, still red wine and nothing else. The essential grape is Gamay, which is not very vigorous but fertile. It is sensitive to late frost and fears sun scorch.",
+    "To tame it, growers can plant densely and prune short, mostly as free-standing gobelet bushes. The rules ask for at least 6000 vines per hectare. Short pruning leaves at most 10 buds on each vine.",
+    "Winemaking follows the Beaujolais habit, inspired by semi-carbonic maceration, to keep the fruit. Macerations often run past 10 days, and the wine is bottled after a few months of ageing. Wood chips are banned.",
+    "The climate and soils make Gamay early, so the wines can be enjoyed from the spring after the harvest. Hence the saying that the Beaujolais crus have done their Easter. Despite some diversity, the wines share a good balance of fruit and structure.",
+    "The colour is usually ruby. It is more violet from granite and darker from the eastern part of the vineyard.",
+    "A label may add the name of a registered lieu-dit, a named plot, right after Brouilly. It may also say Cru du Beaujolais in smaller letters.",
+    "The vineyard covered 1260 hectares in 2010 and made about 70 000 hectolitres a year."
+   ],
+   "cite": [
+    "brouilly-doc:p2",
+    "brouilly-doc:p3",
+    "brouilly-doc:p4",
+    "brouilly-doc:p7",
+    "brouilly-doc:p8",
+    "brouilly-doc:p11"
+   ]
+  }
+ ]
+}

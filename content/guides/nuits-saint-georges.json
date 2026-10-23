@@ -1,0 +1,133 @@
+{
+ "id": "nuits-saint-georges",
+ "title": "Why Nuits-Saint-Georges tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The vineyard spreads over a broad slope facing the sunrise and onto its foot. Light is abundant there and the soils warm early, while the morning mists of the plain do not reach the hillside.",
+  "cite": [
+   "nuits-saint-georges-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A straight limestone ridge",
+   "paras": [
+    "The Côte de Nuits is a straight ridge about 25 kilometres long, running generally north to south. Tectonic forces made it. To the west lie the limestone plateaux of the Hautes Côtes, at 400 to 500 metres. To the east lies the plain of the Bresse, a Tertiary collapse trough, at about 250 metres beside the Côte.",
+    "The appellation covers two communes, Nuits-Saint-Georges and Premeaux-Prissey, between Dijon to the north and Beaune. At Nuits-Saint-Georges the front of the Côte drops about 150 metres. In 2009 the vineyard covered about 300 hectares, 148 of them premier cru."
+   ],
+   "cite": [
+    "nuits-saint-georges-doc:p5",
+    "nuits-saint-georges-doc:p6",
+    "nuits-saint-georges-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Côte de Nuits at Nuits-Saint-Georges",
+     "point": [
+      4.949,
+      47.136
+     ],
+     "zoom": 10,
+     "caption": "The front of the Côte drops about 150 metres here, between Dijon to the north and Beaune.",
+     "cite": [
+      "nuits-saint-georges-doc:p6"
+     ]
+    },
+    {
+     "label": "Hautes Côtes plateaux",
+     "point": [
+      4.82,
+      47.14
+     ],
+     "zoom": 9.5,
+     "caption": "The limestone plateaux of the Hautes Côtes, at 400 to 500 metres, lie west of the Côte.",
+     "cite": [
+      "nuits-saint-georges-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool, but sheltered",
+   "paras": [
+    "The climate is cool and oceanic. Continental or southern influences, carried along the Rhône-Saône axis, disturb it. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5°C.",
+    "The Côte lies east of the Morvan massif and the plateaux of Burgundy. That shelter gives it a thermal advantage and a notable rainfall deficit for the region."
+   ],
+   "cite": [
+    "nuits-saint-georges-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Thin soils that drain",
+   "paras": [
+    "The slope is a series of Bajocian and Bathonian limestones from the Middle Jurassic. The very compact Comblanchien limestone forms its backbone. A band of Bajocian marl, a clayey limestone, runs through the lower slope and shows as a gentle flat step.",
+    "A deep valley cuts the slope, with a small intermittent river, the Meuzin. At its mouth a wide fan has spread, and the town of Nuits-Saint-Georges partly sits on it. The fan is made of gravelly limestone alluvium that drains well.",
+    "Loose stony debris mixed with clay and silt often covers the limestone. High on the slope it is very stony and thin. A layer of frost-shattered gravel from the Quaternary ice ages lies on the hard limestone there, very free-draining and not very fertile. At the foot of the slope the cover holds more fine particles and is thicker, from a few decimetres to 1 metre.",
+    "The vineyard plots lie on the front of the Côte on both sides of the Meuzin valley, where this cover is thick enough for both rooting and good drainage. They also take the upper part of the fan. The soils run from lean, very limy ground at the top, gaining clay downhill, to relatively deep soils of about 0.50 m on the foot deposits and the fan. Those deeper soils have lost their lime at the surface. The limestone of the slope and the deposits at its foot drain well and keep the soils moderately fertile. Growers take particular care of their soils because they are sensitive to erosion."
+   ],
+   "cite": [
+    "nuits-saint-georges-doc:p6",
+    "nuits-saint-georges-doc:p7",
+    "nuits-saint-georges-doc:p8",
+    "nuits-saint-georges-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Meuzin valley and its fan",
+     "point": [
+      4.95,
+      47.14
+     ],
+     "zoom": 11,
+     "caption": "A deep valley with a small intermittent river cuts the Côte. The town sits partly on the gravel fan at its mouth.",
+     "cite": [
+      "nuits-saint-georges-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Pinot Noir first, a little white",
+   "paras": [
+    "The wines are dry, still, and red or white. Pinot Noir, the native grape, is the base of the vineyard. The reds take balance and concentration from the warm mesoclimate of the slope and the moderate fertility of its soils. Over time these reveal a complex aroma that keeps evolving.",
+    "Chardonnay is only 2% of the vineyard, mainly around Premeaux-Prissey. It finds its place in some spots with more marl in the soil, where ripening keeps enough acidity to give the whites elegance and long life. White wine comes from about 6 hectares and makes about 300 hectolitres, against an average of 13,400 hectolitres a year for the whole appellation. Pinot Gris and Pinot Blanc are also on the list of varieties.",
+    "Vines are planted at a minimum of 9,000 per hectare. Maximum yields are 50 hl/ha for red and 57 hl/ha for white. Winemaking is traditional and the wines are aged for a long time.",
+    "Over the generations growers learned to tell the climats apart, the named vineyard sites. A climat name on the label is common practice. Premier cru picks out the best-known ones, and 41 are listed. Their name comes straight after the appellation name, in letters no bigger. A smaller registered place, a lieu-dit, may also appear in letters at most half the size of the appellation name.",
+    "Saint-Georges, the town's most prestigious cru, has been planted with vines since the year 1000, according to Danguy and Aubertin in 1892. In 1892 the town of Nuits added Saint-Georges to its name."
+   ],
+   "cite": [
+    "nuits-saint-georges-doc:p2",
+    "nuits-saint-georges-doc:p4",
+    "nuits-saint-georges-doc:p5",
+    "nuits-saint-georges-doc:p6",
+    "nuits-saint-georges-doc:p7",
+    "nuits-saint-georges-doc:p8",
+    "nuits-saint-georges-doc:p9",
+    "nuits-saint-georges-doc:p10",
+    "nuits-saint-georges-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Château du Clos de Vougeot",
+     "point": [
+      4.958,
+      47.1815
+     ],
+     "zoom": 11,
+     "caption": "The Confrérie des chevaliers du tastevin, founded in 1934 by a few Nuits growers, now has its seat here.",
+     "cite": [
+      "nuits-saint-georges-doc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

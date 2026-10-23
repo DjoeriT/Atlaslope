@@ -1,0 +1,157 @@
+{
+ "id": "bourgogne",
+ "title": "Why Bourgogne tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "Bourgogne is a northern vineyard where the climate holds the vine back, so vines stay on spots warmer and drier than the regional climate. Its wines share northern traits of acidity and fruit, which give them a certain elegance.",
+  "cite": [
+   "bourgogne-doc:p14",
+   "bourgogne-doc:p15"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "stretch",
+   "beat": "place",
+   "title": "Vineyards spread over 250 km",
+   "paras": [
+    "The vineyards are not one block. They are a set of more or less separate vineyards, spread over about 250 km from north to south. Together they cover more than 300 communes across four départements. They run from the Yonne through the Côte-d'Or and Saône-et-Loire to the Rhône.",
+    "Each vineyard has its own landscape. Its geology and its climate are its own too. In the north, wide valleys cut like wedges into the limestone plateaux of the Paris Basin. On \"la Côte\" the vineyard is a thin continuous band where plain meets plateau. In the Mâconnais the vines sit on a string of parallel ridges running north to south.",
+    "The vineyard covers about 5,100 hectares."
+   ],
+   "cite": [
+    "bourgogne-doc:p10",
+    "bourgogne-doc:p11",
+    "bourgogne-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Vézelay",
+     "point": [
+      3.748,
+      47.466
+     ],
+     "zoom": 10,
+     "caption": "Around Vézelay the vines grow on older Jurassic rock than the rest of the Yonne. Its name can follow Bourgogne on the label.",
+     "cite": [
+      "bourgogne-doc:p11",
+      "bourgogne-doc:p17"
+     ]
+    },
+    {
+     "label": "The Mâconnais ridges",
+     "point": [
+      4.71,
+      46.3
+     ],
+     "zoom": 10,
+     "caption": "In the Mâconnais the vines sit on parallel ridges running north to south.",
+     "cite": [
+      "bourgogne-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cool",
+   "beat": "weather",
+   "title": "Cool and oceanic",
+   "paras": [
+    "The climate is oceanic and rather cool. Rain is moderate and regular, with no marked summer drought. The average temperature over a year is 11 °C.",
+    "This cool climate is clearly marked in the Yonne. In the south-east it is somewhat softened, because the Morvan and Charolais hills act as a screen. They bring a foehn effect, with less humidity and higher temperatures than the regional norm.",
+    "The east feels continental influence: relatively low winter temperatures and frosts that can be long and intense. Late seasons are sometimes very dry and sunny. In the far south, southern influences can briefly bring high summer temperatures. They can also bring warm sea air that sets off summer storms.",
+    "Because the vineyard lies so far north, the local climate of each site has a strong effect on what its vines can give. The conditions of each vintage also show strongly in the wines."
+   ],
+   "cite": [
+    "bourgogne-doc:p11",
+    "bourgogne-doc:p12"
+   ]
+  },
+  {
+   "id": "limestone",
+   "beat": "ground",
+   "title": "Drained soils, mostly limestone",
+   "paras": [
+    "In the Yonne and the Châtillonnais the vines grow on the cuestas of the Paris Basin, long tilted ridges mostly of Late Jurassic rock. The ground is mostly marl, a clayey limestone, and locally limestone. Vines stay on the best-exposed slopes, on the sides of the valleys of the Yonne and the Seine and their tributaries, at 150 to 300 m.",
+    "From Dijon to near Lyon the vines run along a nearly continuous line of straight ridges. This is the western edge of the Bresse trough, a structure that collapsed when the Alps rose. The ground is mostly limestone or marl, generally from the Jurassic. In places, mainly in Saône-et-Loire, ancient granite and metamorphic bedrock from the Primary era makes acid soils. The hills behind reach 650 m in the Côte-d'Or, yet the vines stay between 250 and 400 m.",
+    "Vines are kept to well-drained soils that clear excess water. These soils are still fertile and warm up quickly. The vineyard is concentrated on the main reliefs, most often limestone ones at moderate altitude."
+   ],
+   "cite": [
+    "bourgogne-doc:p11",
+    "bourgogne-doc:p14"
+   ],
+   "fly": [
+    {
+     "label": "Chablis and the Yonne cuestas",
+     "place": "chablis",
+     "caption": "In the Yonne the vines grow on the best-exposed slopes of the cuestas, at 150 to 300 m.",
+     "cite": [
+      "bourgogne-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pinots",
+   "beat": "rules",
+   "title": "Few grapes, three colours",
+   "paras": [
+    "Few grapes are grown, and they are probably native. They are closely related, of the pinot family, and have been selected and adapted to local conditions since the Middle Ages. Most wines are made from a single grape, or nearly so.",
+    "White wine is made mostly from Chardonnay, with Pinot Blanc in places. Pinot Noir is almost the only grape for red and rosé in the three northern départements. Gamay is found in the south. Pinot Gris, locally called beurot, appears only rarely. So does César, in the Yonne.",
+    "All the wines are dry and still, in white, red or rosé. Reds and rosés often have fine, velvety tannins and lovely fruit. The Chardonnay whites are mellow, lifted by the acidity that gives balance and lets them keep well. They can be powerful.",
+    "The long north-to-south stretch shows in the glass. In the Yonne the wines are rather structured by a clear acidity. Wines from the south are softer. Pinot Noir and Chardonnay react strongly to changes in their surroundings, so even a gentle climate gradient shows in full.",
+    "Yields are set at 68 hl/ha for white and 60 hl/ha for red and rosé. Vines are planted at a minimum of 5,000 per hectare. In the Hautes Côtes de Beaune and Hautes Côtes de Nuits the minimum is 4,000.",
+    "Wines made under the Gamay rules must say \"Gamay\" right below Bourgogne. The word is printed as large as the appellation name.",
+    "More than 50% of the volume carries a named small area after Bourgogne. Hautes Côtes de Beaune is the biggest, at 40,000 hl. Hautes Côtes de Nuits follows with 33,000 hl, then Côte Chalonnaise with 28,000 hl. Annual production is nearly 200,000 hl of red and rosé and 80,000 hl of white. Depending on the year, 40% to 45% is exported."
+   ],
+   "cite": [
+    "bourgogne-doc:p2",
+    "bourgogne-doc:p3",
+    "bourgogne-doc:p5",
+    "bourgogne-doc:p7",
+    "bourgogne-doc:p13",
+    "bourgogne-doc:p14",
+    "bourgogne-doc:p15",
+    "bourgogne-doc:p18"
+   ],
+   "fly": [
+    {
+     "label": "Côte Chalonnaise",
+     "point": [
+      4.72,
+      46.78
+     ],
+     "zoom": 10,
+     "caption": "The Côte Chalonnaise is one of the three biggest names that can follow Bourgogne.",
+     "cite": [
+      "bourgogne-doc:p14"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Dénomination géographique complémentaire",
+    "text": "An added place name, such as Côtes d'Auxerre or Tonnerre, that may follow Bourgogne. It is printed no larger than the appellation name."
+   },
+   {
+    "term": "Main grape",
+    "text": "The name of the main grape may go right below the appellation name, in letters no more than two thirds its size."
+   },
+   {
+    "term": "Lieu-dit",
+    "text": "A named plot in the land register may appear if it is on the harvest declaration. It is printed at no more than half the size of the appellation name."
+   },
+   {
+    "term": "Vin de Bourgogne",
+    "text": "The label may also name this larger area."
+   }
+  ],
+  "cite": [
+   "bourgogne-doc:p17",
+   "bourgogne-doc:p18"
+  ]
+ }
+}

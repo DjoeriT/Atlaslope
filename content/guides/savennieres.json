@@ -1,0 +1,113 @@
+{
+ "id": "savennieres",
+ "title": "Why Savennières tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Shallow, very stony soils over schist cover sheltered, south-facing hillsides above the Loire. When the end of harvest goes well, the river's morning mists help noble rot, and sweet wines are made.",
+  "cite": [
+   "savennieres-doc:p6",
+   "savennieres-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "South-facing slopes on the Loire's right bank",
+   "paras": [
+    "The vineyard lies on the right bank of the Loire, about 15 km from the city of Angers. It is a string of hillsides facing south or south-east. They run along the river for about 6 km and are 500 m to 1,500 m wide.",
+    "To the north, a broad plateau is colder and exposed to the wind. It is mostly given over to livestock and cereals. Three communes share the vines: Bouchemaine, La Possonnière and Savennières."
+   ],
+   "cite": [
+    "savennieres-doc:p4",
+    "savennieres-doc:p5",
+    "savennieres-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Savennières hillsides",
+     "point": [
+      -0.66,
+      47.4
+     ],
+     "zoom": 11,
+     "caption": "South-facing hillsides run about 6 km along the Loire, 500 m to 1,500 m wide.",
+     "cite": [
+      "savennieres-doc:p5"
+     ]
+    },
+    {
+     "label": "La Roche aux Moines",
+     "point": [
+      -0.655,
+      47.405
+     ],
+     "zoom": 13,
+     "caption": "Around 1130, monks from the abbey of Saint-Nicolas in Angers planted a hillside above the Loire. It gave its name to La Roche aux Moines.",
+     "cite": [
+      "savennieres-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sheltered from the wet, warmed by the river",
+   "paras": [
+    "The climate is oceanic. The Mauges hills to the west soften it with a foehn effect. About 650 mm of rain falls a year here, against over 800 mm on the Mauges hills. The gap is even wider from June to harvest.",
+    "Mean annual temperatures are fairly high, at about 12 °C. The Loire keeps night temperatures up on the slopes nearby. At harvest it also favours morning mists, which are essential for noble rot."
+   ],
+   "cite": [
+    "savennieres-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Mauges hills",
+     "point": [
+      -0.9,
+      47.28
+     ],
+     "zoom": 9,
+     "caption": "The Mauges hills lie west of the vineyard and get over 800 mm of rain a year.",
+     "cite": [
+      "savennieres-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "schist",
+   "beat": "ground",
+   "title": "Rock close to the surface",
+   "paras": [
+    "The bedrock is schist and sandstone-schist from the Upper Ordovician to the Lower Devonian, with local veins of volcanic rock (rhyolite and spilite). On the hillsides the bedrock is most often very close to the surface. Where the plateau begins, some wind-blown sand has settled in a layer of varying thickness.",
+    "The plots of the appellation lie on sheltered, south-facing slopes. Their soils are shallow, over the schist or over the wind-blown sand. These soils are not very fertile and are very stony. They drain well and hold little water."
+   ],
+   "cite": [
+    "savennieres-doc:p5",
+    "savennieres-doc:p6",
+    "savennieres-doc:p8"
+   ]
+  },
+  {
+   "id": "chenin",
+   "beat": "rules",
+   "title": "One grape, from dry to sweet",
+   "paras": [
+    "Chenin blanc is the only grape. The wines are still whites, most often dry. Some keep sugar from the grape. These must be labelled demi-sec (off-dry), moelleux (sweet) or doux (very sweet), by their sugar content. A wine counts as dry up to 4 g/l of sugar, or up to 8 g/l when its total acidity is no more than 2 g/l below the sugar.",
+    "The nose can also recall toasted almond, raisins and honey. The wines open fully after several years in bottle. Those with some sugar age remarkably well.",
+    "The sweet wines are made when the end of harvest goes well. Grapes are picked after drying on the vine, or after noble rot. The winds channelled by the river help dry the berries.",
+    "Pruning rules are strict. Vines are pruned by 30 April, with at most 12 buds per vine. Picking is by hand, bunch by bunch, even for dry wines, and machines are banned. Yields are capped at 50 hl/ha for dry and demi-sec wines, and 35 hl/ha for the others. Enriching the must is banned for all but the dry wines. The wines are aged until at least 15 March after harvest. Wood chips are banned.",
+    "A small cadastral plot name, the lieu-dit, may appear on the label, in letters half the size of the appellation name at most. The wider name Val de Loire may appear too, at no more than two-thirds of that size."
+   ],
+   "cite": [
+    "savennieres-doc:p2",
+    "savennieres-doc:p3",
+    "savennieres-doc:p4",
+    "savennieres-doc:p8",
+    "savennieres-doc:p9"
+   ]
+  }
+ ]
+}

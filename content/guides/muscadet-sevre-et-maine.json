@@ -1,0 +1,129 @@
+{
+ "id": "muscadet-sevre-et-maine",
+ "title": "Why Muscadet Sèvre et Maine tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Coarse soils on ancient rock wake the vine early, and moderate summers keep the early Melon fresh. The wine then rests on its fine lees through the winter, which adds roundness and keeps the aromas of fermentation.",
+  "cite": [
+   "muscadet-sevre-et-maine-doc:p8",
+   "muscadet-sevre-et-maine-doc:p6",
+   "muscadet-sevre-et-maine-doc:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Hills above the rivers east of Nantes",
+   "paras": [
+    "The land is rugged, cut by a dense web of rivers. East of Nantes, the vines cover slopes above the Loire and the Goulaine marsh. Further south they climb the sides of the Sèvre and the Maine, and of the streams that feed them.",
+    "This is the central part of the wider Muscadet area. It spreads over 23 communes in Loire-Atlantique and Maine-et-Loire."
+   ],
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p5",
+    "muscadet-sevre-et-maine-doc:p4"
+   ],
+   "fly": [
+    {
+     "label": "Goulaine marsh",
+     "point": [
+      -1.385,
+      47.205
+     ],
+     "zoom": 10,
+     "caption": "The vines sit on slopes east of Nantes, above the Loire and the Goulaine marsh.",
+     "cite": [
+      "muscadet-sevre-et-maine-doc:p5"
+     ]
+    },
+    {
+     "label": "Clisson on the Sèvre",
+     "point": [
+      -1.28,
+      47.087
+     ],
+     "zoom": 11,
+     "caption": "Further south the vines run along the slopes of the Sèvre and the Maine.",
+     "cite": [
+      "muscadet-sevre-et-maine-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "Mild winters, breezy summers",
+   "paras": [
+    "The Atlantic is close, and it shapes the climate. Winters are generally very mild. Summers generally stay cool under ocean breezes, with low rainfall and plenty of sun.",
+    "The south-east, around Gorges and Clisson, lies further from the Loire and the Goulaine marsh. Winters there are noticeably colder."
+   ],
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p5"
+   ]
+  },
+  {
+   "id": "rocks",
+   "beat": "ground",
+   "title": "Old rock, thin soil",
+   "paras": [
+    "The bedrock dates from the Primary era and varies a great deal. Micaschist dominates in the north, with gneiss around the Goulaine marsh. A large mass of gabbro lies to the east, along the Sanguèze river. The west rests mostly on orthogneiss and granodiorite. In the south a fault isolates a block of coarse-grained granite.",
+    "Most of this rock gives brown soils that drain well, sandy and stony. Only plots with healthy, shallow, moderately fertile soil are used. These warm up well and hold little water.",
+    "The coarse texture gets the vine started early and limits its vigour. The soils hold little water, but they are cracked and the roots can go deep. That gives the vine a moderate, steady water supply, which helps it ripen well."
+   ],
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p5",
+    "muscadet-sevre-et-maine-doc:p6",
+    "muscadet-sevre-et-maine-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Gorges and the Sanguèze",
+     "point": [
+      -1.31,
+      47.12
+     ],
+     "zoom": 11,
+     "caption": "A large mass of gabbro lies in the east, along the Sanguèze river, and forms the backbone of Gorges.",
+     "cite": [
+      "muscadet-sevre-et-maine-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lees",
+   "beat": "rules",
+   "title": "One grape, a winter on the lees",
+   "paras": [
+    "Only Melon is grown. The wines are dry, still whites. Vines are planted at a density of at least 6,500 per hectare. Yields are fixed at 55 hl/ha.",
+    "Melon ripens early, and over the centuries it won out here. The moderate summers are ideal for keeping the freshness and aromas of this delicate white grape.",
+    "The wine stays on its fine lees from the end of fermentation until at least 1 March of the year after harvest, with no racking. This is the méthode nantaise. It adds roundness and fat, and keeps the aromas from fermentation.",
+    "Wines labelled sur lie (on the lees) are bottled at the winery between 1 March and 30 November of the year after harvest. They are generally rounder, with a more complex bouquet. Some show a light prickle from carbon dioxide left by fermentation. More than half of the wine carries this term.",
+    "Three village names can be added to the label. These wines stay on their lees until bottling. Clisson wines usually taste very concentrated, with intense ripe or cooked fruit. Gorges wines most often open powerfully, held up by acidity and bitterness, with mineral or minty aromas. Le Pallet wines often show a supple balance and a very fine, mostly floral bouquet."
+   ],
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p3",
+    "muscadet-sevre-et-maine-doc:p4",
+    "muscadet-sevre-et-maine-doc:p6",
+    "muscadet-sevre-et-maine-doc:p7",
+    "muscadet-sevre-et-maine-doc:p8",
+    "muscadet-sevre-et-maine-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Le Pallet",
+     "point": [
+      -1.33,
+      47.15
+     ],
+     "zoom": 11,
+     "caption": "Le Pallet's vineyards grew early, in the Middle Ages, on rocks that are little weathered and heavily fissured.",
+     "cite": [
+      "muscadet-sevre-et-maine-doc:p6"
+     ]
+    }
+   ]
+  }
+ ]
+}
