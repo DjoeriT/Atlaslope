@@ -1,0 +1,95 @@
+{
+ "id": "monbazillac",
+ "title": "Why Monbazillac tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Mornings of mist or fog, then sunny afternoons, favour the noble rot that concentrates the grapes. These grapes give a sweet golden wine whose aromas are honey and acacia, with peach.",
+  "cite": [
+   "monbazillac-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bank",
+   "beat": "place",
+   "title": "The left bank of the Dordogne",
+   "paras": [
+    "The vineyard sits on the left bank of the Dordogne. Grapes are picked and the wine is made and aged in five communes of the Dordogne département: Colombier, Monbazillac, Pomport, Rouffignac-de-Sigoulès and Saint-Laurent-des-Vignes.",
+    "An area of twelve neighbouring communes may also make and age the wine. Bergerac and Sigoulès are among them."
+   ],
+   "cite": [
+    "monbazillac-doc:p2",
+    "monbazillac-doc:p3"
+   ],
+   "fly": [
+    {
+     "label": "Monbazillac and its slopes",
+     "point": [
+      0.4783,
+      44.7872
+     ],
+     "zoom": 11,
+     "caption": "The vineyard lies on the left bank of the Dordogne, on slopes that face north.",
+     "cite": [
+      "monbazillac-doc:p3"
+     ]
+    },
+    {
+     "label": "The Dordogne at Bergerac",
+     "point": [
+      0.482,
+      44.8519
+     ],
+     "zoom": 10,
+     "caption": "The vineyard lies on the left bank of the Dordogne. Bergerac may make and age the wine.",
+     "cite": [
+      "monbazillac-doc:p3"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mist",
+   "beat": "weather",
+   "title": "Mist in the morning, sun in the afternoon",
+   "paras": [
+    "Mornings of mist or fog are followed by sunny afternoons. This makes the vineyard well suited to grapes concentrated by Botrytis cinerea, the noble rot.",
+    "The grower's art is to pick the grapes, mostly Sémillon, at the best point of concentration. The harvest is by hand, in successive passes through the vines."
+   ],
+   "cite": [
+    "monbazillac-doc:p2",
+    "monbazillac-doc:p3"
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "ground",
+   "title": "Clay-limestone facing north",
+   "paras": [
+    "The vines cover clay-limestone slopes that face north."
+   ],
+   "cite": [
+    "monbazillac-doc:p3"
+   ]
+  },
+  {
+   "id": "sweet",
+   "beat": "rules",
+   "title": "Overripe grapes, picked pass by pass",
+   "paras": [
+    "Monbazillac is a still white wine with residual sugar, above 45 g/l of fermentable sugar. The grapes are harvested overripe, with or without the action of noble rot.",
+    "Sémillon dominates. Sauvignon gris, Sauvignon blanc and Muscadelle are the other main grapes. Chenin, Ondenc and Ugni blanc are listed as secondary grapes.",
+    "Vines are planted at a minimum of 4000 per hectare, with at most 15 buds on each. Irrigation is forbidden, and yields top out at 40 hl/ha.",
+    "The whole grapes go into the press, which helps the juice come out. Ageing is needed for the wine to reach harmony and fullness.",
+    "The wine may carry the traditional mention Sélection de grains nobles, under rules set in the full specification. The label may also name the wider unit Sud-Ouest, in letters no larger than the appellation name."
+   ],
+   "cite": [
+    "monbazillac-doc:p1",
+    "monbazillac-doc:p2",
+    "monbazillac-doc:p3",
+    "monbazillac-doc:p4",
+    "monbazillac-doc:p7"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "id": "cote-de-nuits-villages",
+ "title": "Why Côte de Nuits-Villages tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Five villages in two islands of the Côte de Nuits, on slopes of hard limestone. A cool oceanic climate, the lie of the Côte and its east-facing aspect favour wines of high quality.",
+  "cite": [
+   "cote-de-nuits-villages-doc:p7",
+   "cote-de-nuits-villages-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "Two islands on the Côte de Nuits",
+   "paras": [
+    "The Côte de Nuits is a straight relief of tectonic origin, about 25 km long, running north to south. It separates the limestone plateaus of the Hautes Côtes in the west from the Bresse plain in the east.",
+    "The Hautes Côtes lie at 400 to 500 m. The plain beside the Côte lies at about 250 m.",
+    "The appellation covers 5 communes in 2 islands. Brochon and Fixin form the northern one. Premeaux-Prissey, Comblanchien and Corgoloin form the other. All lie between Dijon to the north and Beaune.",
+    "The vineyard covered about 150 hectares in 2009."
+   ],
+   "cite": [
+    "cote-de-nuits-villages-doc:p7",
+    "cote-de-nuits-villages-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Fixin and Brochon, the northern island",
+     "point": [
+      4.97,
+      47.24
+     ],
+     "zoom": 10,
+     "caption": "Brochon and Fixin form the northern island of the appellation, south of Dijon.",
+     "cite": [
+      "cote-de-nuits-villages-doc:p7"
+     ]
+    },
+    {
+     "label": "Comblanchien, the southern island",
+     "point": [
+      4.93,
+      47.1
+     ],
+     "zoom": 10,
+     "caption": "Premeaux-Prissey, Comblanchien and Corgoloin form the second island, towards Beaune.",
+     "cite": [
+      "cote-de-nuits-villages-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool, even rain behind the Morvan",
+   "paras": [
+    "The climate is cool oceanic, disturbed by continental or southern influences that travel along the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The annual mean temperature is 10.5°C.",
+    "The Côte lies east of the Morvan massif and the plateaus of Burgundy. That gives it a shelter with a thermal advantage and a notable rain deficit for the region.",
+    "The vineyard strip faces generally east. It is tucked into the hollow of the Côte, sheltered from frost and morning fog, and it gets generous sun."
+   ],
+   "cite": [
+    "cote-de-nuits-villages-doc:p8",
+    "cote-de-nuits-villages-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Morvan, the shelter to the west",
+     "point": [
+      4.05,
+      47.15
+     ],
+     "zoom": 8,
+     "caption": "The Côte lies east of the Morvan massif, which shelters it and keeps it drier.",
+     "cite": [
+      "cote-de-nuits-villages-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stone",
+   "beat": "ground",
+   "title": "Marble stone and stony slopes",
+   "paras": [
+    "The front of the Côte is made of Middle Jurassic limestones from the Bajocian and Bathonian. The very compact Comblanchien limestone forms the backbone, and it is quarried as a well-known marble stone around Comblanchien.",
+    "The top of the escarpment stands at 450 m in the north and only 300 m in the south, because a general bend in the rock layers lowers the front step by step. The limestone is too hard for any crop. Dry grassland with thin woods crowns the vineyard and gives the Côte an arid look.",
+    "Narrow dry valleys called combes cut the slope. At the mouth of each one a small fan of limestone gravel spreads into the plain.",
+    "The vineyard soils are young, generally limy and thin. They drain well, especially on the limestone. High on the slope they are lean and very limy. Lower down they gain clay and become relatively deep, about 0.50 m, and free of lime at the surface.",
+    "Pinot Noir has taken the parcels rich in clay and iron oxide, especially low on the slopes. Chardonnay shows its character on leaner soils over hard limestone."
+   ],
+   "cite": [
+    "cote-de-nuits-villages-doc:p7",
+    "cote-de-nuits-villages-doc:p8",
+    "cote-de-nuits-villages-doc:p9",
+    "cote-de-nuits-villages-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "The Comblanchien quarry basin",
+     "point": [
+      4.93,
+      47.1
+     ],
+     "zoom": 11,
+     "caption": "The compact Comblanchien limestone forms the backbone of the Côte and supplies a marble stone.",
+     "cite": [
+      "cote-de-nuits-villages-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Pinot Noir first, a little Chardonnay",
+   "paras": [
+    "The wines are dry and still, red or white. Pinot Noir and Chardonnay are the grapes. Pinot Gris and Pinot Blanc are also on the list of permitted varieties.",
+    "Average output is more than 6,000 hl a year. Less than 500 hl of that is white. Chardonnay is kept for stony, lean parcels on the slopes above Comblanchien.",
+    "Reds often have a velvety tannic frame with fresh, appealing fruit. They peak after some years in the cellar, sometimes with notes of liquorice and forest floor.",
+    "Whites often show a mineral note, with good liveliness and great concentration. They keep easily for some years.",
+    "Vines are planted at 9,000 plants per hectare or more, and irrigation is forbidden. Maximum yields are 50 hl/ha for reds and 57 hl/ha for whites.",
+    "By custom the wines are matured before sale, which helps them keep. Producers have favoured traditional winemaking to bring out great freshness and fine primary aromas.",
+    "In 1934 a court ruling defined \"Vins fins de la Côte de Nuits\" for these five communes. The appellation was recognised in 1937. The equivalent name Côte de Nuits-Villages followed in 1964."
+   ],
+   "cite": [
+    "cote-de-nuits-villages-doc:p2",
+    "cote-de-nuits-villages-doc:p3",
+    "cote-de-nuits-villages-doc:p4",
+    "cote-de-nuits-villages-doc:p5",
+    "cote-de-nuits-villages-doc:p6",
+    "cote-de-nuits-villages-doc:p8",
+    "cote-de-nuits-villages-doc:p9",
+    "cote-de-nuits-villages-doc:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Lieu-dit",
+    "text": "A label may add the name of a registered lieu-dit, a smaller named plot, if it appears on the harvest declaration, in letters at most half the size of the appellation name.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p13"
+    ]
+   },
+   {
+    "term": "Vin de Bourgogne",
+    "text": "A label may also add the wider name \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\".",
+    "cite": [
+     "cote-de-nuits-villages-doc:p13"
+    ]
+   },
+   {
+    "term": "Grape name",
+    "text": "When a label names the grape, it sits outside the field of the compulsory details, in letters no larger than 2 mm.",
+    "cite": [
+     "cote-de-nuits-villages-doc:p13"
+    ]
+   }
+  ],
+  "cite": [
+   "cote-de-nuits-villages-doc:p13"
+  ]
+ }
+}

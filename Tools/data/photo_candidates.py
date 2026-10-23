@@ -347,6 +347,45 @@ PT_CATS = {
                     ["Vinho Verde", "Vinho Verde wine region", "Alvarinho", "Loureiro (grape)", "Vineyards in Minho",
                      "Vineyards in Braga District", "Vineyards in Viana do Castelo District", "Vineyards in Porto District",
                      "Vineyards in Monção", "Vineyards in Melgaço", "Ramadas", "Vineyards in Portugal"]),
+    # second pass (22 Oct 2026, photos for the new guides): places whose first pass held few or no vine photos
+    "portimao": (['"Portimão" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Monchique" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                ['Vineyards in Faro District', 'Vineyards in the Algarve', 'Wines of the Algarve', 'Algarve wine', 'Wineries in Faro District']),
+    "lagoa": (['"Lagoa" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Adega de Lagoa" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Silves" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+             ['Vineyards in Faro District', 'Vineyards in the Algarve', 'Wines of the Algarve', 'Algarve wine', 'Wineries in Faro District', 'Adega Cooperativa de Lagoa']),
+    "tavira": (['"Tavira" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+              ['Vineyards in Faro District', 'Vineyards in the Algarve', 'Wines of the Algarve', 'Algarve wine', 'Wineries in Faro District']),
+    "lagos": (['"Lagos" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Bensafrim" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Aljezur" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+             ['Vineyards in Faro District', 'Vineyards in the Algarve', 'Wines of the Algarve', 'Algarve wine', 'Wineries in Faro District']),
+    "lafoes": (['"Lafões" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"São Pedro do Sul" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Vouzela" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Oliveira de Frades" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+              ['Vineyards in Viseu District']),
+    "colares": (['"Colares" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Azenhas do Mar" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Ramisco" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+               ['Colares wine', 'Vineyards in Colares', 'Vineyards in Sintra', 'Adega Regional de Colares']),
+    "carcavelos": (['"Carcavelos" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Villa Oeiras" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Quinta do Marquês" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                  ['Carcavelos wine', 'Vineyards in Oeiras']),
+    "alenquer": (['"Alenquer" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Ota" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                ['Vineyards in Lisbon District', 'Wineries in Lisbon District', 'Vineyards in Alenquer']),
+    "arruda": (['"Arruda dos Vinhos" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+              ['Vineyards in Lisbon District', 'Wineries in Lisbon District', 'Vineyards in Arruda dos Vinhos']),
+    "dotejo": (['"Tejo" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Ribatejo" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Almeirim" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Cartaxo" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Tomar" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Chamusca" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+              ['Vineyards in Santarém District', 'Wineries in Santarém District', 'Ribatejo wine']),
+    "madeira": (['"Madeira" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Câmara de Lobos" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Estreito de Câmara de Lobos" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Blandy" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+               ['Madeira wine', 'Vineyards in Madeira', "Blandy's Wine Lodge", 'Madeira Wine Company']),
+    "madeirense": (['"Madeira" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"São Vicente" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Seixal" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Porto Moniz" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                  ['Vineyards in Madeira']),
+    "dao": (['"Dão" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Nelas" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Mangualde" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Tondela" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+           ['Dão wine', 'Vineyards in Viseu District', 'Vineyards in Dão']),
+    "tras-os-montes": (['"Chaves" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Valpaços" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Planalto Mirandês" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                      ['Vineyards in Bragança District', 'Vineyards in Vila Real District']),
+    "encostas-daire": (['"Encostas d\'Aire" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Ourém" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Batalha" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Alcobaça" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                      ['Vineyards in Leiria District']),
+    "tavora-varosa": (['"Távora" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Varosa" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Tarouca" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Lamego" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Murganheira" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                     ['Vineyards in Viseu District', 'Raposeira']),
+    "bairrada": (['"Bairrada" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Anadia" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Mealhada" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Cantanhede" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                ['Bairrada wine', 'Vineyards in Aveiro District', 'Vineyards in Coimbra District']),
+    "beira-interior": (['"Pinhel" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Figueira de Castelo Rodrigo" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Fundão" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Covilhã" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+                      ['Vineyards in Guarda District', 'Vineyards in Castelo Branco District']),
+    "bucelas": (['"Bucelas" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)', '"Arinto" (vinha OR vinhas OR vinhedo OR vineyard OR vineyards OR adega OR quinta OR vindima OR uvas OR vinho)'],
+               ['Vineyards in Lisbon District', 'Wineries in Lisbon District']),
 }
 
 
@@ -398,6 +437,61 @@ FR_CATS = {
     "pauillac": (['"Pauillac" (vigne OR vignes OR vignoble OR vendange OR château OR domaine OR "grand cru")'],
                  ["Pauillac", "Vineyards in Pauillac", "Vineyards in Gironde"]),
 }
+# Thin places (22 Oct 2026): categories checked to exist and hold files. Search stays the default name + vine words;
+# files still pass info() (inside the outline, or place name plus a vine word).
+FR_EXTRA_CATS = {
+    "pomerol": ["Pomerol", "Vineyards in Pomerol", "Château Pétrus", "Château Trotanoy", "Château La Conseillante"],
+    "nuits-saint-georges": ["Nuits-Saint-Georges", "Vosne-Romanée", "Vineyards in Côte-d'Or"],
+    "montagny": ["Montagny-lès-Buxy", "Buxy", "Jully-lès-Buxy", "Saint-Vallerin", "Vineyards in Saône-et-Loire"],
+    "saint-veran": ["Davayé", "Prissé", "Vineyards in Prissé", "Solutré-Pouilly", "Vergisson", "Chasselas", "Saint-Véran (AOC)",
+                    "Saint-Vérand (Saône-et-Loire)", "Leynes", "Chânes", "Vineyards in Saône-et-Loire"],
+    "barsac": ["Vineyards in Barsac", "Château Climens", "Château Coutet", "Sauternes", "Vineyards in Sauternes"],
+    "givry": ["Givry (Saône-et-Loire)", "Dracy-le-Fort", "Jambles", "Vineyards in Saône-et-Loire"],
+    "mercurey": ["Mercurey", "Bourgneuf-Val-d'Or", "Saint-Martin-sous-Montaigu", "Vineyards in Saône-et-Loire"],
+    "margaux": ["Margaux", "Vineyards in Margaux", "Château Margaux", "Margaux-Cantenac", "Cantenac", "Soussans", "Labarde",
+                "Château Palmer", "Château Rauzan-Ségla", "Château Giscours", "Château Lascombes"],
+    "saint-julien": ["Saint-Julien-Beychevelle", "Vineyards in Saint-Julien-Beychevelle", "Château Ducru-Beaucaillou", "Château Beychevelle",
+                     "Château Léoville-Poyferré", "Château Branaire-Ducru"],
+    "aloxe-corton": ["Aloxe-Corton", "Corton-Charlemagne", "Ladoix-Serrigny", "Pernand-Vergelesses"],
+    "pommard": ["Pommard", "Château de Pommard"],
+    "volnay": ["Volnay (Côte-d'Or)", "Monthelie"],
+    "rully": ["Rully (Saône-et-Loire)", "Château de Rully", "Bouzeron"],
+    "pouilly-fuisse": ["Fuissé", "Vineyards in Fuissé", "Roche de Solutré", "Chaintré", "Vineyards in Chaintré", "Roche de Vergisson"],
+    "saint-estephe": ["Vineyards in Saint-Estèphe", "Château Cos d'Estournel", "Château Montrose", "Château Calon-Ségur", "Château Lafon-Rochet",
+                      "Château Phélan Ségur"],
+    "puligny-montrachet": ["Puligny-Montrachet", "Montrachet", "Chevalier-Montrachet"],
+    "chassagne-montrachet": ["Chassagne-Montrachet"],
+    "cote-de-nuits-villages": ["Fixin", "Brochon", "Comblanchien", "Corgoloin"],
+    # Loire, Rhône and south-west thin places (23 Oct 2026): each category checked with the Commons API (exists, holds files).
+    "savennieres": ["Savennières", "La Possonnière", "Béhuard", "Vineyards in Maine-et-Loire"],
+    "chinon": ["Chinon (AOC)", "Chinon", "Beaumont-en-Véron", "Savigny-en-Véron", "Cravant-les-Côteaux", "Vineyards in Indre-et-Loire"],
+    "menetou-salon": ["Menetou-Salon", "Vineyards in Cher"],
+    "cote-rotie": ["Côte-Rôtie (AOC)", "Ampuis", "Vineyards in Rhône"],
+    "hermitage": ["Tain-l'Hermitage", "Tournon-sur-Rhône", "Mercurol", "Vineyards in Drôme"],
+    "gigondas": ["Gigondas", "Dentelles de Montmirail", "Sablet", "Séguret", "Vineyards in Vaucluse"],
+    "lirac": ["Lirac", "Roquemaure (Gard)", "Saint-Laurent-des-Arbres", "Saint-Geniès-de-Comolas", "Vineyards in Gard"],
+    "condrieu": ["Condrieu", "Chavanay", "Saint-Michel-sur-Rhône", "Limony", "Vineyards in Rhône"],
+    "saint-joseph": ["Saint-Joseph (Loire)", "Mauves", "Saint-Jean-de-Muzols", "Chavanay", "Saint-Désirat", "Vineyards in Ardèche"],
+    "crozes-hermitage": ["Crozes-Hermitage", "Mercurol", "Gervans", "Larnage", "Vineyards in Drôme"],
+    "cornas": ["Cornas", "Saint-Péray", "Vineyards in Ardèche"],
+    "vacqueyras": ["Vacqueyras", "Sablet", "Beaumes-de-Venise", "Vineyards in Vaucluse"],
+    "muscat-de-beaumes-de-venise": ["Beaumes-de-Venise", "Dentelles de Montmirail", "Vacqueyras", "Vineyards in Vaucluse"],
+    "saumur-champigny": ["Saumur", "Souzay-Champigny", "Turquant", "Montsoreau", "Dampierre-sur-Loire", "Vineyards in Maine-et-Loire"],
+    "pouilly-fume": ["Pouilly-sur-Loire", "Saint-Andelain", "Tracy-sur-Loire", "Vineyards in Nièvre"],
+    "vouvray": ["Vouvray", "Rochecorbon", "Vineyards in Indre-et-Loire"],
+    "bourgueil": ["Bourgueil", "Saint-Nicolas-de-Bourgueil", "Restigné", "Ingrandes-de-Touraine", "Benais"],
+    "coteaux-du-layon": ["Chaudefonds-sur-Layon", "Rablay-sur-Layon", "Beaulieu-sur-Layon", "Saint-Lambert-du-Lattay", "Thouarcé",
+                         "Faye-d'Anjou", "Vineyards in Maine-et-Loire"],
+    "brouilly": ["Mont Brouilly", "Odenas", "Cercié", "Vineyards in Rhône"],
+    "morgon": ["Villié-Morgon", "Vineyards in Rhône"],
+    "fleurie": ["Fleurie", "Vineyards in Rhône"],
+    "moulin-a-vent": ["Romanèche-Thorins", "Chénas", "Vineyards in Rhône"],
+    "madiran": ["Madiran", "Maumusson-Laguian", "Crouseilles", "Vineyards in Gers", "Vineyards in Hautes-Pyrénées"],
+    "jurancon": ["Jurançon", "Monein", "Gan (Pyrénées-Atlantiques)"],
+    "cahors": ["Cahors", "Vineyards in Lot"],
+    "champagne": ["Vineyards of Champagne", "Vineyards in Marne", "Vineyards in Épernay", "Hautvillers", "Verzenay", "Aÿ"],
+    "picpoul-de-pinet": ["Pomérols", "Mèze", "Florensac", "Vineyards in Hérault"],
+}
 
 
 def fr_outlines():
@@ -414,7 +508,7 @@ def fr(ids):
     for p in places:
         if p["id"] in done: continue
         g = geoms.get(p["id"])
-        searches, cat_list = FR_CATS.get(p["id"], ([f'"{p["name"]}" ' + FR_VINE_Q], []))
+        searches, cat_list = FR_CATS.get(p["id"], ([f'"{p["name"]}" ' + FR_VINE_Q], FR_EXTRA_CATS.get(p["id"], [])))
         found = {}
         try:
             for lon, lat in (discs(g, max_n=40) if g is not None else []):

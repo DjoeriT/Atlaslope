@@ -1,0 +1,119 @@
+{
+ "id": "tavel",
+ "title": "Why Tavel tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Tavel makes only still rosé, as an old identity and not as a trend. Water and heat stress can shrivel the berries before they are ripe enough for a red, so the wine is made as rosé.",
+  "cite": [
+   "tavel-doc:p2",
+   "tavel-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "corridor",
+   "beat": "place",
+   "title": "In the Rhône corridor of the Gard",
+   "paras": [
+    "Tavel lies in the Rhône corridor, 15 km north-west of Avignon. The vines grow mostly in the commune of Tavel and in a small part of Roquemaure, both in the Gard department. The grapes must be picked inside these two communes.",
+    "The wine is made there too. The rules also allow winemaking in a ring of nearby communes in the Gard and the Vaucluse.",
+    "The vineyard covered about 950 hectares in 2009. It gave about 39,000 hectolitres of wine in an average year."
+   ],
+   "cite": [
+    "tavel-doc:p4",
+    "tavel-doc:p6",
+    "tavel-doc:p8",
+    "tavel-doc:p9",
+    "tavel-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Tavel village and its vineyard",
+     "point": [
+      4.6844,
+      44.0167
+     ],
+     "zoom": 11,
+     "caption": "The vineyard sits in the Rhône corridor, 15 km north-west of Avignon.",
+     "cite": [
+      "tavel-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mistral",
+   "beat": "weather",
+   "title": "Mistral and dry summers",
+   "paras": [
+    "The Mistral sweeps the vineyard periodically. It is a cold, dry north wind, sometimes very violent. Summers are hot and dry. The sun shines a lot.",
+    "Rain averages 700 mm a year and is very low while the grapes ripen. The climate is also very favourable to healthy harvests. One of its main effects is fewer vineyard treatments."
+   ],
+   "cite": [
+    "tavel-doc:p6",
+    "tavel-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Four soils that let water through",
+   "paras": [
+    "The vineyard has four main soil types. All of them are free-draining.",
+    "West of the village, a clay-limestone combe is shaped like a vast ancient theatre, with vines on its tiers. It holds layers of terra rossa, the red soil, and outcrops of limestone bedrock. White stone slabs on the surface reflect the sun and protect the soil from it.",
+    "North-east of the village, the high terrace of Vallongue lies at about 120 m. It is a long, flat plateau covered in coarse pebbles. Its red soil is rarely more than a metre deep. Below it are limy sands with a very high share of gravel.",
+    "Most of the sandy slopes and valleys lie below the terrace. They are probably the oldest soils to be farmed here. They are poor but easy to work. South-east of the village, at the lowest ground, the \"terres blanches\" (white lands) fall from about 86 m to 63 m. They are recent colluvium, naturally well drained."
+   ],
+   "cite": [
+    "tavel-doc:p6",
+    "tavel-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Plateau de Vallongue",
+     "point": [
+      4.7,
+      44.03
+     ],
+     "zoom": 11,
+     "caption": "A long, flat terrace at about 120 m, covered in coarse pebbles.",
+     "cite": [
+      "tavel-doc:p6"
+     ]
+    },
+    {
+     "label": "The combe west of the village",
+     "point": [
+      4.668,
+      44.013
+     ],
+     "zoom": 11,
+     "caption": "A clay-limestone combe shaped like a vast ancient theatre, its tiers planted with vines.",
+     "cite": [
+      "tavel-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rose",
+   "beat": "rules",
+   "title": "Rosé, and nothing else",
+   "paras": [
+    "Only still rosé may carry the Tavel name. The rules keep this as an original identity, not as an answer to recent markets. A professor quoted in the rules says Tavel is the only vineyard he knows to have specialised entirely in rosé, to the point of banning any other wine.",
+    "The natural setting helps explain the choice. The grapes face unusual water and heat stress, and sugar can climb very fast. Berries can shrivel before the polyphenols are ripe enough for a red. That forces rosé. Skin contact is longer than for a white and shorter than for a red. This is probably a result of these ripening conditions.",
+    "Fifteen grape varieties are allowed, light-skinned ones too. Grenache and Piquepoul each count in black, grey and white. Clairette counts in white and pink. Carignan counts in black and white. Bourboulenc, Mourvèdre, Cinsaut, Syrah and Calitor complete the list.",
+    "The wine must reach at least 11.5% natural alcohol. Its colour intensity must fall between set limits. These follow a dark rosé type described in a 1931 book on French wine. The structured style very probably comes from the oldest natural formations of the ground.",
+    "Young wines show very frank aromas, often of red fruit or pear drops. The finish can be mineral. With time, liquorice and herbs appear, with flint and spice. The palate stays round, with a very long finish. Yields are set at 46 hl/ha."
+   ],
+   "cite": [
+    "tavel-doc:p2",
+    "tavel-doc:p3",
+    "tavel-doc:p4",
+    "tavel-doc:p5",
+    "tavel-doc:p8",
+    "tavel-doc:p9"
+   ]
+  }
+ ]
+}

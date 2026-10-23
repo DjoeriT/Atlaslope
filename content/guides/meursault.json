@@ -1,0 +1,122 @@
+{
+ "id": "meursault",
+ "title": "Why Meursault tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Cool oceanic weather meets gentle east-facing slopes on Jurassic marl and limestone mixed with dolomite. Together they suit Chardonnay, which gives dry whites with a heady, often toasty bouquet and the acidity to age.",
+  "cite": [
+   "meursault-doc:p8",
+   "meursault-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A fractured slope south of Beaune",
+   "paras": [
+    "Meursault lies on the Côte de Beaune, a straight ridge about 25 km long that runs north-east to south-west. Tectonic forces made it. On the west, limestone plateaus called the Hautes Côtes sit at 400 to 500 m. On the east, the Bresse plain, a collapsed Tertiary trough, lies at about 250 m.",
+    "The area is limited to the commune of Meursault, south of the town of Beaune. Here the front of the Côte drops about 150 m. The lie of the land is fairly complex, the result of varied rock and heavy fracturing.",
+    "Meursault has long been known for white wine, though it also makes red. At a time when most of Burgundy's fine wines were red, it stood out for making mostly white. That set it apart from neighbours such as Pommard or Volnay."
+   ],
+   "cite": [
+    "meursault-doc:p6",
+    "meursault-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Meursault and the Côte de Beaune",
+     "point": [
+      4.77,
+      46.98
+     ],
+     "zoom": 10,
+     "caption": "The Côte here drops about 150 m between the Hautes Côtes plateaus and the Bresse plain.",
+     "cite": [
+      "meursault-doc:p6"
+     ]
+    },
+    {
+     "label": "Château de Cîteaux, Meursault",
+     "point": [
+      4.7685,
+      46.9795
+     ],
+     "zoom": 14,
+     "caption": "Cistercian monks built a vat house in the village. Its vaulted cellars from the 12th century are still there.",
+     "cite": [
+      "meursault-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool and sheltered",
+   "paras": [
+    "The climate is mostly cool and oceanic, softened by continental or southern influences that travel along the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The average temperature is 10.5°C.",
+    "Lying east of the Morvan massif and the Burgundy plateaus, the Côte is sheltered. That brings a thermal advantage and notably low rain for the region (the foehn effect). Both are good for quality wine."
+   ],
+   "cite": [
+    "meursault-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone and marl in layers",
+   "paras": [
+    "The rock alternates between limestone and marl, which is clay limestone. The first ledge is mainly limestone from the Middle Jurassic. At its base sits the massive Chassagne limestone, once quarried for building. Above it come a small marl band and then dolomitic limestone. Slabby limestone called Dalle nacrée makes a sharp step at mid-slope.",
+    "The second set of rock is Upper Jurassic. A thick marl layer is capped by a hard limestone band along the crest. Wooded strips or dry grassland called chaumes cover the hard limestone, and the vines stand between them.",
+    "The vineyard soils are thin and young. They formed on all kinds of rock, except hard limestone, where there is no soil to plough. The vines also reach the foothills, on well-drained clay and gravel spreads.",
+    "Premier cru land sits low on the slope. The soils there are moderately fertile, formed on Chassagne limestone or Middle Jurassic marl, and in places on gravel from the foothills."
+   ],
+   "cite": [
+    "meursault-doc:p6",
+    "meursault-doc:p7",
+    "meursault-doc:p8"
+   ]
+  },
+  {
+   "id": "white",
+   "beat": "rules",
+   "title": "The archetype of dry white",
+   "paras": [
+    "Chardonnay, the native grape of Burgundy, flourishes best here. Pinot Noir, Pinot Gris and Pinot Blanc are also on the list of varieties.",
+    "The wines are dry and still. In 2010 whites were nearly all of the production, about 18,000 hl a year from about 400 hectares. The bouquet is heady, very often toasty with notes of almond. The palate is mellow, lifted by the acidity that wines for ageing need, and the aromas last a long time. Among Burgundy wines, white Meursault stands out for this complex, heady style.",
+    "By custom the wines are aged for at least 6 months. Vines must be planted at 9,000 or more per hectare.",
+    "Red Meursault is rare: under 400 hl a year, 2% of production. Only a few foothill sites grow black grapes. The reds taste of red fruit, especially black cherry, and are fresh and fine.",
+    "A climat is a customary name for a vineyard site, most often tied to a lieu-dit. Premier cru climats such as Perrières or Charmes cover 130 hectares low on the slope. The state recognised them in 1943. They were the most famous climats, ranked first or second class in 1860.",
+    "A premier cru climat goes right after the name Meursault, in letters no bigger. A cadastral lieu-dit may go on the label in letters at most half the size, if it does not share a name with a premier cru climat. The label may add Côte de Beaune right after Meursault, in the same lettering. Naming the grape on the label is not allowed.",
+    "Since 1923 the producers have held La Paulée each autumn, a big banquet named after the local word for the harvest-end meal. Each producer brings a few good bottles from their own cellar to share with the people at their table. Along with the Chevaliers du Tastevin chapter at Clos Vougeot and the Hospices de Beaune sale, it makes up the Trois Glorieuses. In 1816 white Meursault often sold under the name Mont-Rachet."
+   ],
+   "cite": [
+    "meursault-doc:p2",
+    "meursault-doc:p3",
+    "meursault-doc:p4",
+    "meursault-doc:p6",
+    "meursault-doc:p7",
+    "meursault-doc:p8",
+    "meursault-doc:p9",
+    "meursault-doc:p12",
+    "meursault-doc:p13"
+   ],
+   "fly": [
+    {
+     "label": "Perrières, a premier cru climat",
+     "point": [
+      4.7615,
+      46.9715
+     ],
+     "zoom": 14,
+     "caption": "In 1778 Perrières was named among the best climats. Like the other premier cru climats, it lies on the lower slope.",
+     "cite": [
+      "meursault-doc:p8",
+      "meursault-doc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -5,16 +5,20 @@ Two routes: 'piemonte' takes the region's official DOC/DOCG polygon (its sub-zon
 and whole provinces the spec names from ISTAT's generalised limits. Partial municipalities are taken whole, so an 'istat' outline is
 marked approximate and carries the official area next to its own. 'candiago' takes the PDO polygon traced from the rulebook's boundary
 text by Candiago et al. 2022 (CC0), for zones the rulebook draws along roads and streams instead of naming municipalities. A municipality name shared by two provinces takes the province's
-two-letter code in brackets, e.g. "Castro (LE)". Raw inputs (git-ignored, in the raw store's countries/it/) are the two zips listed in data/SOURCES.md.
+two-letter code in brackets, e.g. "Castro (LE)". Raw inputs (outside the repo, <raw folder>/countries/it/, Tools/rawdir.py) are the zips,
+rulebook archives and Candiago file listed in data/SOURCES.md.
 Writes data/countries/it/areas.geojson. The shipped places (IT_SHIP) are copied into data/added-boundaries.geojson for the map.
-Run: python3 -I Tools/data/build_it_areas.py   (the raw store is $ATLASLOPE_RAW, default ~/Developer/Atlaslope-raw)
+Run: python3 -I Tools/data/build_it_areas.py
      python3 -I Tools/data/build_it_areas.py --map   (only the copy into the map's file; no raw files needed)
 """
 import json, os, re, subprocess, sys, tempfile, unicodedata, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-RAW = Path(os.environ.get("ATLASLOPE_RAW", Path.home() / "Developer/Atlaslope-raw")) / "countries/it"
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW as RAW_ROOT  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
+RAW = RAW_ROOT / "countries/it"
 SPEC = ROOT / "data/countries/it/areas-spec.json"
 OUT = ROOT / "data/countries/it/areas.geojson"
 SIMPLIFY = 40  # metres in the source's UTM 32N, as Portugal's ~40 m: the outline is read at region zoom (decision #38)

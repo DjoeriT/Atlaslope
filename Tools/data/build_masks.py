@@ -1,17 +1,20 @@
 """Build data/spain-mask.json: where the map uses IGN's PNOA photo instead of Esri.
 
-Input: Natural Earth 10 m admin 0 countries, v5.1.2 (data/raw/ne/ne_10m_admin_0_countries.geojson, see data/SOURCES.md).
+Input: Natural Earth 10 m admin 0 countries, v5.1.2 (<raw folder>/ne/ne_10m_admin_0_countries.geojson, Tools/rawdir.py, see data/SOURCES.md).
 Output: Spain's polygons ('spain') and the neighbours' land near Spain ('neighbours'), simplified to about 200 m,
 3 decimals. The app fills Spain plus a strip of sea, then cuts the neighbours out (src/map/imagery.ts).
 
-Run: python3 Tools/data/build_masks.py   (in a worktree set ATLASLOPE_RAW=<main checkout>/data/raw)
+Run: python3 Tools/data/build_masks.py
 """
 import json
 import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = Path(os.environ.get('ATLASLOPE_RAW', ROOT / 'data/raw')) / 'ne/ne_10m_admin_0_countries.geojson'
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW as RAW_ROOT  # noqa: E402  raw downloads live outside the repo (22 Oct 2026)
+SRC = RAW_ROOT / 'ne/ne_10m_admin_0_countries.geojson'
 # Per country: its Natural Earth code, the box its polygons must touch, and the neighbours' land near it. Only that land matters
 # (the strip of sea around the country must not spill onto it), so each neighbour is clipped to a box.
 COUNTRIES = {

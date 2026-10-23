@@ -2,11 +2,11 @@
 import maplibregl, { type Map as MapLibreMap } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import dopsUrl from '../../data/dops.geojson?url';
-import addedUrl from '../../data/added-boundaries.geojson?url';
+import outlineFiles from 'virtual:outlines';
 import landUrl from '../../data/natural-earth-world.geojson?url';
 import zonesUrl from '../../data/rioja-zones.geojson?url';
 import { ROOT } from '../site';
-import { countryConfig } from '../countries';
+import { DEFAULT_COUNTRY, countryConfig } from '../countries';
 import overrides from '../../data/dop-overrides.json';
 import places from '../../data/places.json';
 import type { Overrides } from '../dops';
@@ -26,6 +26,7 @@ import { tilesEnabled } from './tiles';
 import { stateSetter } from './terrainCache';
 import { loadJson } from './dataFile';
 import { cameraEase, flightMs, type Cam } from './flight';
+import { countriesInView, countryIndex, countryOf } from './outlines';
 import { motionScale } from '../app/motion';
 
 export interface MapController {
@@ -61,6 +62,7 @@ export interface MapEvents {
 }
 
 const asCollection = (u: string): Promise<Collection> => loadJson<Collection>(u);
+const placeCountry = countryIndex(places);
 
 /** The tilt the map opens with, and goes back to on "Reset view". */
 const START_PITCH = 45;
@@ -175,18 +177,8 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
     if (tiles) addBaseMap(map, !(current.satellite && imagery));
     apply(current, imagery);
     render();
-    const dos = map.getSource('dos') as maplibregl.GeoJSONSource;
-    Promise.all([asCollection(dopsUrl), asCollection(addedUrl), asCollection(landUrl), asCollection(zonesUrl)]).then(([dops, added, land, zoneFile]) => {
-      boundaries = buildBoundaries(places.places as PlaceRow[], dops, overrides as unknown as Overrides, added);
-      const zoneRows = (places.places as PlaceRow[]).filter((p) => p.kind === 'zone');
-      const zoneIds = new Map(zoneRows.map((p) => [p.name, p.id]));
-      const zoneNames = new Map(zoneRows.map((p) => [p.id, p.name]));
-      const rioja = withZoneIds(zoneFile, (name) => zoneIds.get(name));
-      zones = { ...rioja, features: [...rioja.features, ...addedZones(added, (id) => zoneNames.get(id))] };
-      dos.setData(boundaries as never);
-      (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
-      hovered = []; // new data has no feature state
-      hover(hoverWanted);
+    Promise.all([asCollection(dopsUrl), asCollection(landUrl), asCollection(zonesUrl), outlinesOf(DEFAULT_COUNTRY)]).then(([dops, land, zoneFile]) => {
+      base = { dops, zoneFile };
       (map.getSource('land') as maplibregl.GeoJSONSource).setData(land as never);
       (map.getSource('ocean') as maplibregl.GeoJSONSource).setData(oceanFromLand(land) as never);
       const onLand = (e: maplibregl.MapSourceDataEvent) => {
@@ -195,16 +187,70 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
         redrape();
       };
       map.on('sourcedata', onLand);
-      labels = addLabels(map, boundaries.features.map((f) => ({
-        id: String(f.properties.id), name: String(f.properties.name), kind: String(f.properties.kind),
-        at: centerOf(places.places as Array<PlaceRow & { centroid?: [number, number] | null }>, String(f.properties.id)),
-        minZoom: labelMinZoom(Number(f.properties.span)),
-      })));
-      labels.setVisible(namesShown());
-      render();
-      applyQuiz();
+      draw();
+      needInView();
     }).catch(() => events.onDataFailed?.());
   });
+
+  // The default country's outlines come with the first load; another country's are fetched once, when a card opens it or the
+  // view (from OUTLINES_MIN_ZOOM in) reaches the box of one of its outlines, and the places are drawn again with them (src/map/outlines.ts, decision #38).
+  let base: { dops: Collection; zoneFile: Collection } | null = null;
+  const outlines = new Map<string, Collection>();
+  const asked = new Map<string, Promise<void>>();
+  function outlinesOf(country: string): Promise<void> {
+    let p = asked.get(country);
+    if (!p) {
+      const url = outlineFiles[country]?.url;
+      p = url ? asCollection(url).then((c) => { outlines.set(country, c); if (base) draw(); }) : Promise.resolve();
+      p.catch(() => { asked.delete(country); events.onDataFailed?.(); });
+      asked.set(country, p);
+    }
+    return p;
+  }
+  const hasOutlines = (country: string) => outlines.has(country) || !outlineFiles[country];
+  function needInView() {
+    // The middle of the screen, not getBounds(): on a tilted map that reaches to the horizon, a country away from where the learner looks.
+    const { clientWidth: w, clientHeight: h } = map.getContainer();
+    const at = [[0.25, 0.25], [0.75, 0.25], [0.25, 0.75], [0.75, 0.75]].map(([x, y]) => map.unproject([w * x, h * y]));
+    const lng = at.map((p) => p.lng), lat = at.map((p) => p.lat);
+    const view: [number, number, number, number] = [Math.min(...lng), Math.min(...lat), Math.max(...lng), Math.max(...lat)];
+    for (const c of countriesInView(view, map.getZoom(), outlineFiles)) void outlinesOf(c);
+  }
+  map.on('moveend', () => { if (base) needInView(); });
+  /** The country a focus looks at, so its outlines are there before it is framed. */
+  const focusCountry = (f: Focus): string => {
+    const frame = f.frame;
+    if (!frame || 'point' in frame) return f.country ?? (f.select ? countryOf(placeCountry, f.select) : DEFAULT_COUNTRY);
+    return countryOf(placeCountry, 'region' in frame ? frame.region : 'place' in frame ? frame.place : frame.zone);
+  };
+
+  /** Draws every outline that has arrived: the ministry's DOs, each loaded country's added outlines, and the zones. */
+  function draw() {
+    if (!base) return;
+    const added: Collection = { type: 'FeatureCollection', features: [...outlines.values()].flatMap((c) => c.features) };
+    boundaries = buildBoundaries(places.places as PlaceRow[], base.dops, overrides as unknown as Overrides, added);
+    const zoneRows = (places.places as PlaceRow[]).filter((p) => p.kind === 'zone');
+    const zoneIds = new Map(zoneRows.map((p) => [p.name, p.id]));
+    const zoneNames = new Map(zoneRows.map((p) => [p.id, p.name]));
+    const rioja = withZoneIds(base.zoneFile, (name) => zoneIds.get(name));
+    zones = { ...rioja, features: [...rioja.features, ...addedZones(added, (id) => zoneNames.get(id))] };
+    (map.getSource('dos') as maplibregl.GeoJSONSource).setData(boundaries as never);
+    (map.getSource('zones') as maplibregl.GeoJSONSource).setData(zones as never);
+    hovered = []; // new data has no feature state
+    hover(hoverWanted);
+    selected = null; // nor a selection or a dimmed region: render puts them back
+    selectedZone = null;
+    dimmedRegion = undefined;
+    labels?.remove();
+    labels = addLabels(map, boundaries.features.map((f) => ({
+      id: String(f.properties.id), name: String(f.properties.name), kind: String(f.properties.kind),
+      at: centerOf(places.places as Array<PlaceRow & { centroid?: [number, number] | null }>, String(f.properties.id)),
+      minZoom: labelMinZoom(Number(f.properties.span)),
+    })));
+    labels.setVisible(namesShown());
+    render();
+    applyQuiz();
+  }
 
   const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
   // A key-place chip's "Fly to" lands close enough to see the town or the river (flags.ts).
@@ -294,7 +340,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
       framePending = false;
       const to = { center: want.frame.point, zoom: want.frame.zoom };
       map.flyTo({ ...to, padding: padding(), pitch: keep.pitch, bearing: keep.bearing, duration: animate ? Math.max(1200, timed(to)) : 0, easing: cameraEase });
-    } else if (boundaries && zones) {
+    } else if (boundaries && zones && hasOutlines(focusCountry(want))) { // a place of a country still loading is framed when it arrives
       framePending = false;
       const box = boundsOf(framedFeatures(want.frame, boundaries, zones));
       if (!box) { // a place with no boundary yet: the view stays where it is, only levelled on a reset
@@ -441,6 +487,7 @@ export function createMap(container: HTMLElement, menu: MenuState, events: MapEv
 
   function focus(f: Focus, animate: boolean, reframe: boolean) {
     want = f;
+    void outlinesOf(focusCountry(f));
     if (reframe) {
       landing = null; // a new card frames its own place from wherever the camera is
       resetCamera = false; // a new card keeps the learner's tilt; a reset still pending does not carry over to it

@@ -1,0 +1,117 @@
+{
+ "id": "sancerre",
+ "title": "Why Sancerre tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Steep vineyard slopes rise from the left bank of the Loire. The river drains cold air out of the valleys, so the grapes ripen evenly.",
+  "cite": [
+   "sancerre-doc:p6",
+   "sancerre-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "hills",
+   "beat": "place",
+   "title": "Steep hills above the Loire",
+   "paras": [
+    "The vineyards sit on a run of hills on the left bank of the Loire, on the south-eastern edge of the Paris Basin. The hilltops reach between 200 m and 400 m. The vines grow between 180 m and 350 m, on slopes that in places pass 50% gradient.",
+    "The land is split across 14 communes of the Cher département. Two famous faults, one named for Sancerre and one for Thauvenay, cut through the vineyard from side to side."
+   ],
+   "cite": [
+    "sancerre-doc:p5",
+    "sancerre-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Sancerre",
+     "point": [
+      2.838,
+      47.333
+     ],
+     "zoom": 10.5,
+     "caption": "The vineyards run across a chain of hills on the left bank of the Loire, with tops between 200 m and 400 m.",
+     "cite": [
+      "sancerre-doc:p6"
+     ]
+    },
+    {
+     "label": "Saint-Thibault, the old river port",
+     "point": [
+      2.87,
+      47.33
+     ],
+     "zoom": 11,
+     "caption": "In the Renaissance, part of the wine left the port of Saint-Thibault for the north. Flanders and England were the main markets.",
+     "cite": [
+      "sancerre-doc:p6",
+      "sancerre-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A river that tempers the air",
+   "paras": [
+    "The climate is a degraded oceanic one. The Pays Fort massif to the west softens the oceanic influence with a foehn effect. Rainfall is about 650 mm, the mark of a spot sheltered from wet winds. On the Pays Fort hills, which peak at 435 m, it passes 750 mm.",
+    "The Loire acts as a thermal regulator. It draws cold air out of the vineyard valleys that run across it. Temperatures through the vine's growing cycle are tempered, and the grapes ripen evenly."
+   ],
+   "cite": [
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Pays Fort hills",
+     "point": [
+      2.6,
+      47.3
+     ],
+     "zoom": 9.5,
+     "caption": "The Pays Fort massif lies west of the vineyard. It brings a foehn effect and more than 750 mm of rain on its hills.",
+     "cite": [
+      "sancerre-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Three soils, three wines",
+   "paras": [
+    "Heavy erosion has laid the bedrock bare, and three main types of soil have formed on it. White marls, the terres blanches, come from the Kimmeridgian and are found above all on the steepest slopes. They are easy to spot by the thousands of small comma-shaped oyster shells in them.",
+    "Soils formed on limestone, called caillotes or cris, come from the Oxfordian and Portlandian. Clay-siliceous soils, called chailloux or silex, come from the Cenomanian and the Eocene.",
+    "Generations of experience let growers bring out each soil in its own wine. The caillotes make elegant wines with hints of red fruit and white flowers. The terres blanches make powerful wines. The chailloux give wines with touches of white and yellow flowers.",
+    "Only shallow soils on often steep slopes are kept in the delimited area. The vine has to be managed with care, with high planting density and strict pruning."
+   ],
+   "cite": [
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Two grapes, three colours",
+   "paras": [
+    "Only two grapes are allowed. Sauvignon makes the whites. Pinot Noir makes the reds and the rosés. After phylloxera, growers chose to replant the vineyard step by step with these two.",
+    "All the wines are still and dry. Whites and rosés hold at most 4 g/l of sugar. Reds hold at most 2.5 g/l.",
+    "The wines can be enjoyed young, but some vintages have good ageing potential. Whites are often pale gold. Rosés range from pale pink to deep salmon.",
+    "Reds vary in colour depth and usually lead with red fruit. They are balanced wines that join power with finesse.",
+    "The vines are planted at a minimum of 6100 plants per hectare. Whites may yield up to 65 hl/ha. Rosés may reach 63 hl/ha, reds only 59 hl/ha.",
+    "A label may name a smaller place, a lieu-dit (a named plot on the land register), if it is on the harvest declaration. The wider name Val de Loire may also appear, in letters smaller than Sancerre."
+   ],
+   "cite": [
+    "sancerre-doc:p2",
+    "sancerre-doc:p3",
+    "sancerre-doc:p4",
+    "sancerre-doc:p5",
+    "sancerre-doc:p7",
+    "sancerre-doc:p9"
+   ]
+  }
+ ]
+}

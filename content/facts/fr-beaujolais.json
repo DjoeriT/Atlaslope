@@ -1,0 +1,411 @@
+{
+ "region": "fr-beaujolais",
+ "sheets": [
+  {
+   "id": "beaujolais",
+   "why": {
+    "text": "East-facing granite and clay-limestone slopes, screened by the Monts du Beaujolais, get light and rain that favour ripe Gamay.",
+    "cite": [
+     "beaujolais-doc:p11"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Gamay"
+     },
+     {
+      "local": "Chardonnay"
+     }
+    ],
+    "cite": [
+     "beaujolais-doc:p10"
+    ],
+    "others": [
+     "Aligoté",
+     "Gamay De Chaudenay",
+     "Gamay De Bouze",
+     "Pinot Noir",
+     "Melon",
+     "Pinot Gris"
+    ],
+    "othersCite": [
+     "beaujolais-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still reds, rosés and whites; Gamay makes the red and rosé, Chardonnay alone makes the white.",
+    "cite": [
+     "beaujolais-doc:p2",
+     "beaujolais-doc:p10"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with continental influence (summer storms, frosty winter fog) and southern influence (summer heat, rain peaks in autumn and spring). The Monts du Beaujolais block west winds and dry the air; the Saône valley channels southern air and evens out temperatures.",
+    "cite": [
+     "beaujolais-doc:p9",
+     "beaujolais-doc:p11"
+    ]
+   },
+   "soil": {
+    "text": "North: old granite, porphyry and schist, giving acid sandy or clayey soils. South: Triassic and Jurassic limestone, with deeper, more clayey soils.",
+    "cite": [
+     "beaujolais-doc:p8",
+     "beaujolais-doc:p9",
+     "beaujolais-doc:p11"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 180 and 550 metres; the hills behind reach 1000 metres.",
+    "cite": [
+     "beaujolais-doc:p8",
+     "beaujolais-doc:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: light colour, easy-drinking, fruity, floral. Villages: deeper colour, often fuller, keep some years. Rosés: bright, fruity, round, fresh. Whites: fresh fruit, citrus, white flowers, sometimes vanilla.",
+    "cite": [
+     "beaujolais-doc:p3",
+     "beaujolais-doc:p4",
+     "beaujolais-doc:p11"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Villages",
+      "text": "Wines from acid soils in the northern half; deeper in colour and often fuller."
+     },
+     {
+      "name": "Primeur or Nouveau",
+      "text": "Red or rosé from same-year grapes, vatted 10 days or less."
+     }
+    ],
+    "cite": [
+     "beaujolais-doc:p4",
+     "beaujolais-doc:p11",
+     "beaujolais-doc:p14"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "brouilly",
+   "why": {
+    "text": "Granite and porphyry slopes at 250 to 400 m, sheltered from western winds and facing east, give ripe, fruity Gamay.",
+    "cite": [
+     "brouilly-doc:p6",
+     "brouilly-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Gamay"
+     }
+    ],
+    "cite": [
+     "brouilly-doc:p7"
+    ],
+    "others": [
+     "Chardonnay",
+     "Aligoté",
+     "Melon"
+    ],
+    "othersCite": [
+     "brouilly-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Only dry, still red wine.",
+    "cite": [
+     "brouilly-doc:p2",
+     "brouilly-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic and temperate, with continental storms and frosty winter fogs, and southern summer heat. The Monts du Beaujolais shelter the vines from western winds and rain.",
+    "cite": [
+     "brouilly-doc:p6",
+     "brouilly-doc:p7",
+     "brouilly-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Acid Paleozoic bedrock: sandy, lean granite to the west, clayey, stony porphyry to the south. Recent washed-down debris covers the east and north, with some clay-limestone.",
+    "cite": [
+     "brouilly-doc:p6",
+     "brouilly-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow on slopes between 250 and 400 m; the Saône plain lies at 175 m and Mont Brouilly reaches 485 m.",
+    "cite": [
+     "brouilly-doc:p6",
+     "brouilly-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Ruby colour, more violet on granite. Red-fruit aromas. Supple, fleshy and fine on the palate. Reputed the tenderest of the Beaujolais crus.",
+    "cite": [
+     "brouilly-doc:p3",
+     "brouilly-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "fleurie",
+   "why": {
+    "text": "Poor pink granite sands suit Gamay, giving a light, scented red with fine tannins; south-east slopes favour steady ripeness.",
+    "cite": [
+     "fleurie-doc:p6",
+     "fleurie-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Gamay"
+     }
+    ],
+    "cite": [
+     "fleurie-doc:p7"
+    ],
+    "others": [
+     "Chardonnay",
+     "Aligoté",
+     "Melon"
+    ],
+    "othersCite": [
+     "fleurie-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry, still red wines only; the vineyard is devoted exclusively to red.",
+    "cite": [
+     "fleurie-doc:p2",
+     "fleurie-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate, mean annual temperature near 11 °C and about 750 mm rain, with continental and southern influences. Mid-slope vines mostly escape spring frost and fog.",
+    "cite": [
+     "fleurie-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Pink, porphyritic granite ('granite de Fleurie'). Very sandy, poor soils above the village; below, deeper soils richer in clay, fine sand and silt.",
+    "cite": [
+     "fleurie-doc:p6",
+     "fleurie-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vines rise from 200 to 450 metres; the steep slopes above the village sit at 300 to 450 metres.",
+    "cite": [
+     "fleurie-doc:p6",
+     "fleurie-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Beautiful violet-red, turning garnet. Floral and red-fruit nose, becoming spicy with age. Frank, gentle attack, low acidity; light and fine, the most 'feminine' Beaujolais cru.",
+    "cite": [
+     "fleurie-doc:p3",
+     "fleurie-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru du Beaujolais",
+      "text": "Label may add 'Vin', 'Grand Vin' or 'Cru du Beaujolais' beside the appellation."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "Label may name a registered named plot that appears on the harvest declaration."
+     }
+    ],
+    "cite": [
+     "fleurie-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "morgon",
+   "why": {
+    "text": "Schist and granite slopes facing south-east above the Saône plain, sheltered from west winds by the Beaujolais hills, with Gamay shaped by short pruning.",
+    "cite": [
+     "morgon-doc:p6",
+     "morgon-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Gamay",
+     "Chardonnay",
+     "Aligoté",
+     "Melon"
+    ],
+    "othersCite": [
+     "morgon-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only.",
+    "cite": [
+     "morgon-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with continental and southern influences; mean annual temperature near 11 °C. The Beaujolais hills shield it from west winds, and the Saône valley brings about 2000 sun hours a year and hot summers.",
+    "cite": [
+     "morgon-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Three types: manganese-rich schist giving clay soils called morgon; granite giving poor, free-draining sandy soils; and varied slope-foot colluvium and old river terraces.",
+    "cite": [
+     "morgon-doc:p6",
+     "morgon-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Slopes lie between 220 and 480 metres, facing south-east; the Fût d'Avenas peak behind reaches 842 metres.",
+    "cite": [
+     "morgon-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Fruity Beaujolais character with body, much minerality and aromas often recalling raspberry and kirsch; ages well. Wine lovers often find granite wines fruity and pleasing young, and schist wines more austere and better for a few years' keeping.",
+    "cite": [
+     "morgon-doc:p3",
+     "morgon-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "moulin-a-vent",
+   "why": {
+    "text": "Granite soils with manganese veins on east-facing slopes sheltered from western winds give structured Gamay reds that age well.",
+    "cite": [
+     "moulin-a-vent-doc:p6",
+     "moulin-a-vent-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Gamay"
+     }
+    ],
+    "cite": [
+     "moulin-a-vent-doc:p5",
+     "moulin-a-vent-doc:p7",
+     "moulin-a-vent-doc:p8"
+    ],
+    "others": [
+     "Chardonnay",
+     "Aligoté",
+     "Melon"
+    ],
+    "othersCite": [
+     "moulin-a-vent-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only.",
+    "cite": [
+     "moulin-a-vent-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with continental and southern influences; rain is spread evenly through the year and the mean annual temperature is close to 11 °C. The Monts du Beaujolais block western winds and dry the air by foehn effect, and the Saône valley brings strong summer heat.",
+    "cite": [
+     "moulin-a-vent-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "80% of soils are pink, friable sandy granite 'gore'; the south and east have sandy-loam colluvium with gravel. They are well drained and carry iron and manganese oxides.",
+    "cite": [
+     "moulin-a-vent-doc:p6",
+     "moulin-a-vent-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 190 and 420 metres; the Montagne de Rémont reaches 510 metres.",
+    "cite": [
+     "moulin-a-vent-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Deep ruby to garnet, with floral and ripe red fruit notes turning to spice, truffle and game with age. Generous, structured palate balancing power, complexity and elegance; enjoyable young, finer after years.",
+    "cite": [
+     "moulin-a-vent-doc:p3",
+     "moulin-a-vent-doc:p7",
+     "moulin-a-vent-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Lieu-dit label",
+      "text": "A registered lieu-dit name may follow the appellation name, if declared at harvest."
+     },
+     {
+      "name": "Cru du Beaujolais",
+      "text": "Labels may add 'Vin du Beaujolais', 'Grand Vin du Beaujolais' or 'Cru du Beaujolais'."
+     }
+    ],
+    "cite": [
+     "moulin-a-vent-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

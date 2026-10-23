@@ -1,0 +1,121 @@
+{
+ "id": "cotes-du-rhone",
+ "title": "Why Côtes du Rhône tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A cold, dry north wind blows down the Rhône valley on about 120 days a year. It clears the sky, and the climate it shapes gives generous, coloured reds with fruity notes.",
+  "cite": [
+   "cotes-du-rhone-doc:p9",
+   "cotes-du-rhone-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A valley that was once a Mediterranean fjord",
+   "paras": [
+    "The zone is the natural region of the Rhône valley, between Vienne and Avignon. The river is its heart, and it has long been a major route for trade. The area spreads over 6 French départements on both banks of the river.",
+    "In the Tertiary era the valley was a Mediterranean fjord that reached as far as Vienne. After the sea withdrew, erosion shaped the land. Today slopes and terraces dominate the landscape.",
+    "The appellation sits at the heart of France's second-largest vineyard by area. Most of the wine comes from the south, from Avignon to Donzère. The north leans more toward the appellations called Crus des Côtes du Rhône."
+   ],
+   "cite": [
+    "cotes-du-rhone-doc:p9",
+    "cotes-du-rhone-doc:p11",
+    "cotes-du-rhone-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Vienne, the northern end",
+     "point": [
+      4.874,
+      45.525
+     ],
+     "zoom": 10,
+     "caption": "In the Tertiary era the Rhône valley was a Mediterranean fjord that reached as far as Vienne.",
+     "cite": [
+      "cotes-du-rhone-doc:p9"
+     ]
+    },
+    {
+     "label": "Avignon, the southern end",
+     "point": [
+      4.806,
+      43.949
+     ],
+     "zoom": 10,
+     "caption": "The zone runs between Vienne and Avignon. Most of the wine is made in the south, from Avignon to Donzère.",
+     "cite": [
+      "cotes-du-rhone-doc:p9",
+      "cotes-du-rhone-doc:p11"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mistral",
+   "beat": "weather",
+   "title": "Sun, drought and the Mistral",
+   "paras": [
+    "The south has a Mediterranean climate with hot, dry summers and little rain. The north is temperate continental, with about the same rainfall as the south.",
+    "Rain falls mainly in autumn and late winter. In summer it comes only as the occasional storm. The vines slowly use up the water in the soil until their growth slows and then stops.",
+    "The Mistral is a north wind, often violent and always drying. It blows on average 120 days a year and clears the sky. That favours strong sunshine, always above 2,500 hours a year. The hills and mountains around the valley funnel it and make it stronger.",
+    "It is also a \"sanitary\" wind. Violent, cold and dry, it protects the vines from fungal disease. The sun ripens the grapes well, and the steady Mistral adds concentration. This climate leads to generous, coloured, well-structured reds with fruity notes. It lets floral aromas show in the rosés and whites."
+   ],
+   "cite": [
+    "cotes-du-rhone-doc:p9",
+    "cotes-du-rhone-doc:p12"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Terraces, marl and sand",
+   "paras": [
+    "The soils are very different from place to place. Some formed on river terraces. Others formed on marl and soft limestone. Others come from the erosion of marl, sand, sandstone or molasse.",
+    "How long the reds keep depends on the soil and on each producer's blend. They are lighter on sandy or sandy-silty soils. They are richer and more tannic on stony or clay soils.",
+    "The wide choice of grapes helps here. Growers can place each grape to suit the soil and the exposure of each plot."
+   ],
+   "cite": [
+    "cotes-du-rhone-doc:p4",
+    "cotes-du-rhone-doc:p9",
+    "cotes-du-rhone-doc:p12"
+   ]
+  },
+  {
+   "id": "family",
+   "beat": "rules",
+   "title": "A family of wines, led by Grenache",
+   "paras": [
+    "The rules allow 21 grapes for red, rosé and white. Grenache Noir stays dominant, especially in the south. It has historically been grown there. In the north Syrah Noir is favoured because it needs less heat. A writer in 1806 called Grenache the main variety, with the finest colour and a remarkable perfume.",
+    "The wines are still and dry. Reds make up 93% of production. They are fruity and generous, with good colour. Rosés make up 4% and are fruity or floral. Whites make up 3% and are floral and round, with occasional exotic notes.",
+    "Red and rosé can carry the words \"primeur\" or \"nouveau\". They are made to be drunk quickly, in the months after they are made, and the vintage must be shown on the label. Labels may also name the wider area \"Vignobles de la Vallée du Rhône\".",
+    "Côtes du Rhône is the base of a family. Within it, Côtes du Rhône Villages has been set apart, with or without an added place name. So have the Crus des Côtes du Rhône, separate appellations in both the north and the south.",
+    "Yields are set at 51 hl/ha, with a hard limit of 60 hl/ha. In the 15th century a region on the edge of the old diocese of Uzès was named \"la Côte du Rhône\" after the river. Planting restrictions to protect quality followed in 1615. The appellation was recognised in 1937."
+   ],
+   "cite": [
+    "cotes-du-rhone-doc:p4",
+    "cotes-du-rhone-doc:p5",
+    "cotes-du-rhone-doc:p6",
+    "cotes-du-rhone-doc:p10",
+    "cotes-du-rhone-doc:p11",
+    "cotes-du-rhone-doc:p12",
+    "cotes-du-rhone-doc:p14"
+   ],
+   "fly": [
+    {
+     "label": "Roquemaure, the 1737 casks",
+     "point": [
+      4.775,
+      44.052
+     ],
+     "zoom": 11,
+     "caption": "In 1737 a decree ordered casks from about ten communes, Roquemaure among them, to bear the letters \"CDR\" and the vintage.",
+     "cite": [
+      "cotes-du-rhone-doc:p10"
+     ]
+    }
+   ]
+  }
+ ]
+}

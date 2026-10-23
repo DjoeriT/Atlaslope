@@ -39,6 +39,40 @@ Decisions: #52-#58 (`docs/architecture-decisions.md`), plan `Review/countries/fr
 - Pauillac: pauillac-17 (Latour tower over vines), -16 (gravel soil), -15, -11 (Pichon), -2 (barrels). Not: -6 (a person), -5,
   -13/-14 (book pages), -1, -9. Candidates: `Review/sources/photo-candidates-fr.json` (keys = sheet labels).
 
+## Pilot PR #228 (ReviewBot: ship, 0 blockers)
+- Measured [V usage.py]: Chablis 0.80M (0.57 re-read, 0.22 new), Pauillac 0.70M (0.56, 0.13). Helpers: builders ~155K + 82K + 52K,
+  photo pass 36K, rule books 83K, ReviewBot 52K.
+- For the owner: footer copy still says "Spain and Portugal" (draft copy, his rewrite); the France intro and the tile lines are draft.
+- Not fixed, pre-existing: on mobile guide pages the floating "Show map" button covers the section tabs (check Spain too); in dev,
+  vite.config.ts country-page transform answers every /xx/... URL, so /fr/chablis/ and /pt/douro/ give 500 in `npm run dev` (build fine).
+- By design: guide pages show at most 3 photos per place (`photosOf`), so "All 3 photos" though 5 ship.
+- Raw data lost from the main folder (data/raw symlink, fixed by #223); Natural Earth re-fetched to the scratchpad for the mask only.
+
+## Blocker for the batches: the 2 MB download check (Italy session, 22 Oct night)
+- Main sits at 1,995,742 of 2,000,000 bytes gzipped [R, Italy session]; each new place adds ~3.6 KB (its page, its outline in
+  added-boundaries, its atlas.js row). France's 92 places (~330 KB) cannot pass as the check stands. Owner decision asked by Italy:
+  A) count only the real first load and lazy-load each country's outlines, or B) raise the limit. Nobody edits Tools/check.sh until
+  he decides; France batch PRs wait, content keeps being written.
+- After #229 merges: add France's raw files (INAO zip, att/, cdc/ with the 9 direct URLs) to the raw manifest.
+
+## Overnight 22-23 Oct: all 94 guides written (PR #232, draft)
+- Guides [V usage.py, re-read + new]: pilot 1.5M (#228, merged); Bordeaux 16: 14.7M; Burgundy 22: 21.1M; Loire 18: 17.0M;
+  Rhône 14: 13.8M; South-West 5: 4.7M; Beaujolais 5: 4.9M; Alsace 2: 2.1M; South 9: 8.0M; Champagne 1: 0.8M. Batches 87M for 92
+  places = 0.95M a place (about 83% re-read), above the pilot's 0.75M; total with the pilot ~88M against the ~70M estimate (1.26x).
+- Every unsure checker edit was read against its quoted page, then applied (`Tools/guides/apply_unsure.py`, from results.jsonl:
+  the fixes log cuts values at 200 characters). Lines over the sheet limits shortened by hand.
+- Grape colour codes ("Merlot N", "Melon B") came from the rule books into sheets and four guides: `Tools/guides/fr_clean.py`.
+- Nesting from outlines: `Tools/data/fr_within.py` -> `data/countries/fr/within.json` (90% inside; tiers and Crémant/Rosé de Loire
+  not parents [A]).
+- Champagne outline: 635 whole communes from INAO's commune CSV and IGN ADMIN EXPRESS (`Tools/data/build_fr_champagne.py`; run it
+  after build_fr_areas.py, which rewrites the file).
+- Photos: Commons is thin for many places even with category walks; shipped what passes the rules (Bordeaux 62, Burgundy 91,
+  Loire+Rhône 91; last 22 in progress). None: Muscat de Beaumes-de-Venise. Under 3: listed in the PR.
+- Incident: the data-build workflow (on a push touching `Tools/data/remote_build.sh`, which came in with main) rebuilt
+  `data/added-boundaries.geojson` without France and committed it to the PR branch; restored in 4712165a. remote_build.sh does
+  not run `build_fr_areas.py --map`: fix in its own slice before anyone runs it on a France branch.
+- 2 MB check: PR builds to more than the limit (Bordeaux alone was 2,166,619); waits on the owner's A/B.
+
 ## Numbers
 - Estimate: 94 x 0.75M = ~70M guides [V rate Portugal, A France], about 90% re-read; photos ~0.1M a place [A]; pilot engineering
   ~5-10M [A]. Owner's goal is the go above 20M; region by region, report each batch's measured number.

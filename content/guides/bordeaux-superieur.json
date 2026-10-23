@@ -1,0 +1,115 @@
+{
+ "id": "bordeaux-superieur",
+ "title": "Why Bordeaux Supérieur tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Large bodies of water temper the climate, and the soils run from clay-limestone slopes to warm gravel terraces. Growers hold themselves to stricter vineyard rules than plain Bordeaux, which give more concentrated wines.",
+  "cite": [
+   "bordeaux-superieur-doc:p9",
+   "bordeaux-superieur-doc:p10",
+   "bordeaux-superieur-doc:p12"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rivers",
+   "beat": "place",
+   "title": "Two rivers become one estuary",
+   "paras": [
+    "Bordeaux supérieur covers 501 of the 542 communes of the Gironde. The south-west of the department is left out, since it is given over to forestry, not vines. Vines are also scarce at the far north and far south-south-west ends of the zone.",
+    "The Dordogne in the north and the Garonne in the south join at the Bec d'Ambès to form the Gironde estuary. That divides the vineyard into three. North Gironde lies on the right bank of the Dordogne and the estuary. A second area sits between the two rivers. The third is the left bank of the Garonne and the estuary.",
+    "Bordeaux is the largest appellation (AOC) wine territory in France. Its landscapes are always marked by vines, whether urban or rural."
+   ],
+   "cite": [
+    "bordeaux-superieur-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Bec d'Ambès, where the rivers meet",
+     "point": [
+      -0.545,
+      45.03
+     ],
+     "zoom": 10.5,
+     "caption": "The Dordogne and the Garonne unite here to form the Gironde estuary.",
+     "cite": [
+      "bordeaux-superieur-doc:p9"
+     ]
+    },
+    {
+     "label": "The port of Bordeaux",
+     "point": [
+      -0.57,
+      44.84
+     ],
+     "zoom": 11,
+     "caption": "A powerful wine trade grew up around the port, first with England and then with Holland.",
+     "cite": [
+      "bordeaux-superieur-doc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "An unpredictable ocean climate",
+   "paras": [
+    "The Atlantic and the Gironde estuary lie close, as do the Garonne and Dordogne valleys. These large bodies of water play an important part in regulating temperature. Their softening effect on spring frost fades farther from the sea and the big valleys, and nearer the large forests, the Landes among them.",
+    "Rain is well spread through the year, 700 to 800 mm on average. The oceanic climate is unpredictable. Some years bring rainy autumn depressions, others a hot and very sunny late season. That gives a marked vintage effect."
+   ],
+   "cite": [
+    "bordeaux-superieur-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary",
+     "point": [
+      -0.72,
+      45.25
+     ],
+     "zoom": 9,
+     "caption": "The estuary is one of the large bodies of water that regulate the temperature of the vineyard.",
+     "cite": [
+      "bordeaux-superieur-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Clay-limestone slopes, gravel by the rivers",
+   "paras": [
+    "The rock under the vineyard is fairly uniform. It belongs entirely to the Tertiary and Quaternary. Marl and limestone make up much of it, along with gravelly and sandy river deposits that a layer of silt often hides. On the Tertiary rock, brown clay-limestone soils dominate.",
+    "Four kinds of ground suit different grapes. Clay-limestone and limestone marl cover many slopes, and Merlot does very well there. Siliceous soils mixed with clay and limestone suit Merlot and Sauvignon, for example. Boulbènes, light wind-blown silts with fine siliceous grains, suit white wine. Gravel terraces of rounded quartz and sand of varying coarseness are well drained and warm, perfect for Cabernet Sauvignon in particular.",
+    "Along the rivers, the gravel deposits form these terraces. The recent clay-rich alluvium forms the soils called palus."
+   ],
+   "cite": [
+    "bordeaux-superieur-doc:p9",
+    "bordeaux-superieur-doc:p10",
+    "bordeaux-superieur-doc:p12"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Blends built to keep",
+   "paras": [
+    "Almost all of it is red. The reds come mainly from Merlot and Cabernet Sauvignon, with less Cabernet Franc. In years of great ripeness the acidity of Petit Verdot and Cot can freshen them. They are round and ample, with structure. Young, they usually show fresh and candied red fruit, and with age they often turn to spice and cooked fruit. They are wines to keep and need a long time in the cellar before release.",
+    "A small amount of white is made with sugar left in it, more than 17 g/l, from low-yielding vines. Sémillon gives the structure: round, ample, golden, with candied fruit. Sauvignon and Muscadelle can join it for freshness. These whites keep for 4 to 8 years and often smell of flowers and honey, with spice. Output averages 2,000 hl of white and more than 450,000 hl of red, all still wine.",
+    "Growers have set themselves stricter rules than plain Bordeaux. They plant denser and leave fewer buds at pruning, with a lighter crop on each plot. That gives more concentrated wines, with a higher minimum sugar richness and natural strength. Reds need at least 11% natural alcohol and whites 12%.",
+    "Plots planted from 1 August 2008 need at least 4,500 vines per hectare, or 3,300 with wider spacing. Red yields are set at 59 hl/ha where vines stand at 4,500 or more per hectare. White yields are set at 49 hl/ha. Two thirds of the wine is bottled at the property. It has more complex structures than plain Bordeaux and can age for up to 5 or 6 years."
+   ],
+   "cite": [
+    "bordeaux-superieur-doc:p2",
+    "bordeaux-superieur-doc:p3",
+    "bordeaux-superieur-doc:p4",
+    "bordeaux-superieur-doc:p5",
+    "bordeaux-superieur-doc:p11",
+    "bordeaux-superieur-doc:p12",
+    "bordeaux-superieur-doc:p13"
+   ]
+  }
+ ]
+}

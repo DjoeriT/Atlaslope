@@ -1,0 +1,119 @@
+{
+ "id": "cabernet-danjou",
+ "title": "Why Cabernet d'Anjou tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Cabernet d'Anjou is a still rosé from Cabernet Franc and Cabernet Sauvignon. A northern vineyard with a mild climate and unusual rocks and soils gives it a taste marked by freshness.",
+  "cite": [
+   "cabernet-danjou-doc:p2",
+   "cabernet-danjou-doc:p5",
+   "cabernet-danjou-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "anjou",
+   "beat": "place",
+   "title": "Two Anjous, black and white",
+   "paras": [
+    "The vineyard mostly sits on river slopes, with a few plateaux. The area spreads over two great geological blocks.",
+    "In the west, an old Precambrian and Palaeozoic base belongs to the Massif Armoricain. In the east, Mesozoic and Cenozoic layers of the Paris Basin cover that old base.",
+    "The area lies mainly in the southern half of the Maine-et-Loire department, with 129 communes. It also takes in the northern fringes of Deux-Sèvres (15 communes) and Vienne (9 communes). A few islands of vines remain in the north of Maine-et-Loire, from a time when vines grew across the whole department."
+   ],
+   "cite": [
+    "cabernet-danjou-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Saumur, the white Anjou",
+     "point": [
+      -0.077,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "Saumur lies in the eastern part, marked by tuffeau chalk and locally called \"Anjou blanc\" (white Anjou).",
+     "cite": [
+      "cabernet-danjou-doc:p6"
+     ]
+    },
+    {
+     "label": "Angers and the Loire banks",
+     "point": [
+      -0.55,
+      47.47
+     ],
+     "zoom": 10,
+     "caption": "Vines grew on the Loire's banks and around Angers under the care of monasteries through the Middle Ages.",
+     "cite": [
+      "cabernet-danjou-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "douceur",
+   "beat": "weather",
+   "title": "The Angevin mildness",
+   "paras": [
+    "The climate is temperate and oceanic, with fairly small temperature swings. The Atlantic is relatively near. The Loire and its tributaries even out the temperature. The vines also sit on slopes, which helps too.",
+    "Locals speak of the \"douceur angevine\", the mildness of Anjou. It rings truest in winter, through the long spring and into autumn. Summers often bring strong heat.",
+    "Hills running north-west to south-east shelter the area from westerly winds, which are often laden with moisture. The higher hills of the Choletais and the Mauges keep the ocean's damp away, in a rain-shadow (Foehn) effect. The area gets about 585 mm of rain a year, against nearly 800 mm in the Choletais."
+   ],
+   "cite": [
+    "cabernet-danjou-doc:p6",
+    "cabernet-danjou-doc:p7"
+   ]
+  },
+  {
+   "id": "schist-chalk",
+   "beat": "ground",
+   "title": "Schist in the west, chalk in the east",
+   "paras": [
+    "The west has schist, including slate, and locals call it \"Anjou noir\" (black Anjou). The east has tuffeau chalk around Saumur and is called \"Anjou blanc\" (white Anjou).",
+    "The soils are very different from one another, but they are generally poor with a moderate water reserve. They also behave well with heat.",
+    "Cabernet Franc and Cabernet Sauvignon like shallow soils or brown soils with a regulated water supply. That is where they make round rosés with good aromatic length."
+   ],
+   "cite": [
+    "cabernet-danjou-doc:p6",
+    "cabernet-danjou-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Layon valley",
+     "point": [
+      -0.5,
+      47.25
+     ],
+     "zoom": 10,
+     "caption": "The Layon crosses the area. It was canalised in the 18th century to help the wine trade.",
+     "cite": [
+      "cabernet-danjou-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pink",
+   "beat": "rules",
+   "title": "Still pink, more or less sweet",
+   "paras": [
+    "Cabernet d'Anjou is made only as a still rosé, from Cabernet Franc and Cabernet Sauvignon. Fermentable sugar of 10 g/l or more is required, and the sweetness varies from wine to wine.",
+    "Its mix of freshness and sweetness made its success, above all in France. It is seen as a young, easy wine from a traditional vineyard.",
+    "Rosé is a fairly new story here. Anjou is best known for white Chenin, its historic grape. After phylloxera, plantings of black grapes sped up. Early in the 20th century they were turned mainly into \"rouget\" or \"clairet\", a light local wine drunk in cafés and open-air dance halls (guinguettes). Rosé had a second revival from the 1990s and is now the largest production of Anjou wines.",
+    "Vines are planted at least 4,000 per hectare, with rows no more than 2.50 m apart. Plots down to 3,300 vines per hectare still qualify, with rows up to 3 m apart, if they follow the trellis and leaf-height rules. The yield is set at 60 hl/ha, with a ceiling of 69 hl/ha.",
+    "Wines need at least 10.5% natural alcohol. They may not pass 13% total alcohol after enrichment.",
+    "Young wine can carry the words \"primeur\" or \"nouveau\". It must then show its vintage.",
+    "The label may name a smaller place, a lieu-dit (a named plot in the land register), if it appears on the harvest declaration."
+   ],
+   "cite": [
+    "cabernet-danjou-doc:p2",
+    "cabernet-danjou-doc:p3",
+    "cabernet-danjou-doc:p4",
+    "cabernet-danjou-doc:p5",
+    "cabernet-danjou-doc:p7",
+    "cabernet-danjou-doc:p8",
+    "cabernet-danjou-doc:p9"
+   ]
+  }
+ ]
+}

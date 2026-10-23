@@ -1,0 +1,101 @@
+{
+ "id": "pomerol",
+ "title": "Why Pomerol tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Under surface gravel lies cool clay, which slows the ripening of the grapes. With a kind climate, that ground gives Pomerol its Merlot-led reds, ample and long, without harshness.",
+  "cite": [
+   "pomerol-doc:p3",
+   "pomerol-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "plateau",
+   "beat": "place",
+   "title": "A gentle plateau by two rivers",
+   "paras": [
+    "Pomerol lies in the north-east of the Gironde. It covers the commune of Pomerol and the northern part of Libourne. Saint-Émilion borders it to the south-east. Lalande de Pomerol lies to the north, and the Barbanne stream separates the two.",
+    "The land is fairly flat and slopes gently towards the Isle valley, where the Isle meets the Dordogne. Vines cover the whole of it. Elegant wine châteaux and humbler houses of white limestone dot the landscape, and the church spire of the village rises over it.",
+    "In 2009 the vineyard covered 800 hectares, shared by 140 estates that average six hectares. Most of the wine is still made by families."
+   ],
+   "cite": [
+    "pomerol-doc:p5",
+    "pomerol-doc:p6",
+    "pomerol-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Pomerol village",
+     "point": [
+      -0.2058,
+      44.9335
+     ],
+     "zoom": 11,
+     "caption": "The village of Pomerol, with its church spire above a landscape entirely covered in vines.",
+     "cite": [
+      "pomerol-doc:p6"
+     ]
+    },
+    {
+     "label": "Where the Isle meets the Dordogne",
+     "point": [
+      -0.243,
+      44.9163
+     ],
+     "zoom": 10,
+     "caption": "The Isle and the Dordogne meet near here, and the appellation slopes gently towards the Isle valley.",
+     "cite": [
+      "pomerol-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean weather, with a continental touch",
+   "paras": [
+    "Like the rest of the Gironde, Pomerol has a temperate ocean climate, with moderate swings in temperature. The meeting of the Isle and the Dordogne also helps to even out the temperature.",
+    "Its position in the north-east of the Gironde brings a touch of continental climate. Summers and autumns are warmer there, which helps the grapes to ripen."
+   ],
+   "cite": [
+    "pomerol-doc:p6"
+   ]
+  },
+  {
+   "id": "terraces",
+   "beat": "ground",
+   "title": "Gravel on cool clay",
+   "paras": [
+    "The Isle once wore away the Tertiary limestone here entirely. Alluvial layers followed, washed down from the Massif Central, and formed terraces running north to south. The high Günz terrace lies at 30 to 40 m. It is sand, gravel and reddened pebbles, resting at varying depths on Tertiary clay rich in smectites. The middle Riss terraces lie lower, at 20 to 25 m.",
+    "The clay is a cool layer that makes the grapes ripen slowly and gives the vine a very even supply of water. The surface gravel drains well and reflects light towards the leaves. The subsoil holds iron oxides, known as \"crasse de fer\" (iron dross), which bring specific minerals.",
+    "The vineyard area leaves out waterlogged ground and valley bottoms prone to frost or damp. Sandy plots without a slope, sitting on clay, are also left out."
+   ],
+   "cite": [
+    "pomerol-doc:p5",
+    "pomerol-doc:p6",
+    "pomerol-doc:p7",
+    "pomerol-doc:p8"
+   ]
+  },
+  {
+   "id": "merlot",
+   "beat": "rules",
+   "title": "Merlot, and only red",
+   "paras": [
+    "Pomerol makes dry still red wine and nothing else. Merlot is by far the main grape. It does best on gravelly soils bound with clay.",
+    "Cabernet Franc and Cabernet Sauvignon are often present. So is Cot, also called Malbec. They add structure and complexity. The two Cabernets do best on the gravelliest soils. Petit Verdot, an old Bordeaux grape, is allowed but rare.",
+    "Merlot became dominant after phylloxera at the end of the 19th century, because grafting made its yield steadier and it suited Pomerol's soils. The wines must be aged until at least 1 November of the year after the harvest. The label may add \"Vin de Bordeaux\" or \"Grand Vin de Bordeaux\", in letters no more than two thirds the size of the name Pomerol."
+   ],
+   "cite": [
+    "pomerol-doc:p2",
+    "pomerol-doc:p3",
+    "pomerol-doc:p6",
+    "pomerol-doc:p7",
+    "pomerol-doc:p8",
+    "pomerol-doc:p9"
+   ]
+  }
+ ]
+}

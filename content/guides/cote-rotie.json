@@ -1,0 +1,134 @@
+{
+ "id": "cote-rotie",
+ "title": "Why Côte-Rôtie tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On very steep slopes above the Rhône, on terraced ground of metamorphic rock, Syrah and Viognier find the best conditions to grow and ripen. The red they give is both robust and elegant.",
+  "cite": [
+   "cote-rotie-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slopes",
+   "beat": "place",
+   "title": "Slopes facing Vienne",
+   "paras": [
+    "Côte-Rôtie lies about 40 km south of Lyon, on the eastern edge of the Massif Central. The vineyard sits on very steep slopes above the right bank of the Rhône, facing the southern part of the city of Vienne.",
+    "It is the far north of the great Côtes du Rhône vineyard, and the northernmost stronghold of Syrah. Three communes in the Rhône département share it: Ampuis, Saint-Cyr-sur-Rhône and Tupin-Semons.",
+    "In 2009 about 250 hectares were in production, with some 100 producers."
+   ],
+   "cite": [
+    "cote-rotie-doc:p4",
+    "cote-rotie-doc:p5",
+    "cote-rotie-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Ampuis and the Côte-Rôtie slopes",
+     "point": [
+      4.81,
+      45.485
+     ],
+     "zoom": 11,
+     "caption": "Very steep slopes above the right bank of the Rhône, about 40 km south of Lyon.",
+     "cite": [
+      "cote-rotie-doc:p5"
+     ]
+    },
+    {
+     "label": "Saint-Romain-en-Gal, across from Vienne",
+     "point": [
+      4.875,
+      45.527
+     ],
+     "zoom": 11,
+     "caption": "A Roman site next to the vineyard, known for the mosaics dug out of its villas. One shows grape picking and treading.",
+     "cite": [
+      "cote-rotie-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A semi-continental climate with a sunny face",
+   "paras": [
+    "The climate is called \"Lyonnais\". It is semi-continental, though the last Mediterranean influences still travel up the Rhône valley.",
+    "The north wind, locally the Bise, is frequent. The general south-east exposure of the vineyard makes it relatively sheltered and sunny.",
+    "Syrah and Viognier grow at the limit of what they can do. They can show their potential when planted on carefully delimited plots, on the best-exposed slopes sheltered from cold winds.",
+    "The most widely accepted idea for the name is the summer look of slopes \"roasted\" by the sun."
+   ],
+   "cite": [
+    "cote-rotie-doc:p6",
+    "cote-rotie-doc:p7",
+    "cote-rotie-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Pale and dark hillsides",
+   "paras": [
+    "The ground is of metamorphic origin and needs constant human work to shape terraces and walls. Terraces or high walls protect the fragile soils.",
+    "On the Côte Blonde the rock is mostly gneiss. It weathers into pale, siliceous soils, fairly often given back lime by loess washed down from the plateau. Erosion of the bedrock gives a very crumbly, unstable clayey sand, called arzel. It cannot be farmed unless dry-stone walls, locally cheys, hold it back.",
+    "The Côte Brune rests on mica-schist. Its soils are darker and richer in iron. They hold more clay and less silica. The clay gives more stability, so the slope is cut into narrow terraces, locally chaillées, like a staircase with fairly flat steps.",
+    "The two valleys are separated by the Fontgent stream. The vineyard's legendary fame rests partly on this pair. Their soils and winemaking differ, and so does the structure of their wines."
+   ],
+   "cite": [
+    "cote-rotie-doc:p5",
+    "cote-rotie-doc:p6",
+    "cote-rotie-doc:p8",
+    "cote-rotie-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Côte Blonde",
+     "point": [
+      4.806,
+      45.478
+     ],
+     "zoom": 11,
+     "caption": "The pale gneiss valley, where friable soils are held back by dry-stone walls.",
+     "cite": [
+      "cote-rotie-doc:p5",
+      "cote-rotie-doc:p8"
+     ]
+    },
+    {
+     "label": "Côte Brune",
+     "point": [
+      4.8,
+      45.488
+     ],
+     "zoom": 11,
+     "caption": "The dark mica-schist valley, cut into narrow terraces like a staircase.",
+     "cite": [
+      "cote-rotie-doc:p6",
+      "cote-rotie-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Red only, Syrah first",
+   "paras": [
+    "Côte-Rôtie is red wine only, and still. Syrah makes up most of the vineyard and is its emblem. Viognier is the other grape. By custom it is blended in by mixing the grapes, up to a small percentage.",
+    "Parcels planted with Syrah and Viognier mixed together are found more often on the Côte Blonde than on the Côte Brune.",
+    "Yields are set at 40 hl/ha. Vines are planted at a minimum of 6,000 vines per hectare. The grapes are picked by hand and carried to the winery whole. Oak chips are not allowed.",
+    "The dark, almost black colour is typical of Syrah, and it turns garnet with time. The nose joins complexity with elegance: black fruit and spice, sometimes violet when Viognier is in the blend. With age it moves to lightly smoky notes of toast, coffee and cocoa, and to cooked or candied fruit.",
+    "The tannins are silky, and the wine is rounder when Viognier is present. That silkiness favours a traditional method: whole bunches, lightly trodden by foot, with the cap kept submerged."
+   ],
+   "cite": [
+    "cote-rotie-doc:p2",
+    "cote-rotie-doc:p3",
+    "cote-rotie-doc:p4",
+    "cote-rotie-doc:p7",
+    "cote-rotie-doc:p8"
+   ]
+  }
+ ]
+}

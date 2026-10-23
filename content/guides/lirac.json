@@ -1,0 +1,104 @@
+{
+ "id": "lirac",
+ "title": "Why Lirac tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Lirac's vines grow on terraces and slopes above the Rhône, under 2,700 hours of sun a year. The reds are dark and ample, with strong, round tannins, and they suit ageing.",
+  "cite": [
+   "lirac-doc:p3",
+   "lirac-doc:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "terraces",
+   "beat": "place",
+   "title": "Terraces on the Rhône's right bank",
+   "paras": [
+    "Lirac looks down on the right bank of the Rhône, in the Gard part of the \"Côte du Rhône\". Terraces and slopes run from north-east to south-west, parallel to the river. They lie between the Rhône and limestone high ground covered in garrigue, the wild scrub of the south.",
+    "The vineyard stands between 50 m and 200 m, on four communes: Lirac, Roquemaure, Saint-Geniès-de-Comolas and Saint-Laurent-des-Arbres."
+   ],
+   "cite": [
+    "lirac-doc:p5",
+    "lirac-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Terraces above the Rhône",
+     "point": [
+      4.74,
+      44.04
+     ],
+     "zoom": 10,
+     "caption": "The terraces and slopes of Lirac run parallel to the Rhône, between the river and the limestone high ground.",
+     "cite": [
+      "lirac-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mistral",
+   "beat": "weather",
+   "title": "Strong sun under the Mistral",
+   "paras": [
+    "The climate is Mediterranean, shaped by the Mistral. Less than 700 mm of rain falls in a year. The sun shines 2,700 hours a year, especially in summer while the grapes ripen.",
+    "That sun, with little summer rain, brings good ripeness and sugar-rich grapes. This favours naturally generous wines.",
+    "The Mistral is a strong, cold, dry wind from the north that blows on average 180 days a year. It limits damp on the leaves and so favours the natural fight against fungal disease."
+   ],
+   "cite": [
+    "lirac-doc:p6",
+    "lirac-doc:p8"
+   ]
+  },
+  {
+   "id": "pebbles",
+   "beat": "ground",
+   "title": "Red clay and rolled pebbles",
+   "paras": [
+    "On the high terraces the soil is red clay full of big rolled pebbles. Lower down, on the slopes and the foot of the slopes, it turns to loess or thin clay-limestone.",
+    "All these soils are sensitive to summer drought.",
+    "Growers put white grapes on limestone soils, which suit white wine. They put black grapes on deeper clay that still drains well, where the reds show their power and structure."
+   ],
+   "cite": [
+    "lirac-doc:p6",
+    "lirac-doc:p8"
+   ]
+  },
+  {
+   "id": "three-colours",
+   "beat": "rules",
+   "title": "Three colours from one cru",
+   "paras": [
+    "Lirac makes dry still red, rosé and white. It was the first of the \"Crus des Côtes du Rhône\" allowed to make all three. Reds are about 80% of production and rosés 11%.",
+    "The reds are dark. Ripe red or black fruit meets spice and leather. The tannins are strong and round, and the wines suit ageing. The rosés mostly come from saignée, juice bled off a vat of black grapes. They smell of ripe red fruit and stand out for their freshness.",
+    "The whites rest mainly on Clairette and Grenache Blanc. They are floral and marked by garrigue. White fruit follows into a long finish.",
+    "The grape list is wide, with 17 varieties, chosen over time for their resistance to strong summer heat. It lets a grower blend by soil and exposure. Yields are capped at 41 hl/ha, and sorting the harvest is compulsory.",
+    "The wines of Lirac gained fame in the 18th century. Roquemaure was then the biggest wine port on the Rhône. It could store up to 2,000 casks of wine before shipping. The appellation was recognised by decree on 14 October 1947. In 2009 the vineyard covered 750 hectares."
+   ],
+   "cite": [
+    "lirac-doc:p2",
+    "lirac-doc:p3",
+    "lirac-doc:p4",
+    "lirac-doc:p5",
+    "lirac-doc:p6",
+    "lirac-doc:p7",
+    "lirac-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Roquemaure, the old wine port",
+     "point": [
+      4.774,
+      44.052
+     ],
+     "zoom": 11,
+     "caption": "In the 18th century Roquemaure was the biggest wine port on the Rhône.",
+     "cite": [
+      "lirac-doc:p8"
+     ]
+    }
+   ]
+  }
+ ]
+}

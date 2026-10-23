@@ -1,0 +1,117 @@
+{
+ "id": "cotes-du-rhone-villages",
+ "title": "Why Côtes du Rhône Villages tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A cold, dry north wind called the Mistral blows through the Rhône valley on average 120 days a year. It protects the vines from fungal attack and helps concentrate the grapes.",
+  "cite": [
+   "cotes-du-rhone-villages-doc:p8",
+   "cotes-du-rhone-villages-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "A Mediterranean fjord, long gone",
+   "paras": [
+    "The area is the natural region of the Rhône valley, with the river at its heart. It spreads over 95 communes between Montélimar and Avignon, on both banks, across 4 departments.",
+    "In the Tertiary era this valley was a Mediterranean fjord reaching up to Vienne. After the sea withdrew, erosion shaped the land we see now. Hillsides and terraces dominate the landscape.",
+    "Being close to the Rhône gave the wine a good market. Greek colonists probably brought the first vines 600 years before Christ. Wine trade along the river since Greek times has kept a wine tradition going for more than 2000 years."
+   ],
+   "cite": [
+    "cotes-du-rhone-villages-doc:p8",
+    "cotes-du-rhone-villages-doc:p9",
+    "cotes-du-rhone-villages-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "The Rhône valley",
+     "point": [
+      4.78,
+      44.2
+     ],
+     "zoom": 8,
+     "caption": "The area stretches between Montélimar and Avignon, on both banks of the Rhône.",
+     "cite": [
+      "cotes-du-rhone-villages-doc:p8"
+     ]
+    },
+    {
+     "label": "Vaison-la-Romaine",
+     "point": [
+      5.075,
+      44.241
+     ],
+     "zoom": 11,
+     "caption": "Pliny praised the wines from the many slopes along the Ouvèze. Vaison-la-Romaine is one of the places named.",
+     "cite": [
+      "cotes-du-rhone-villages-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers and a drying wind",
+   "paras": [
+    "The south of the valley is Mediterranean, with hot, dry summers and little rain over the year. The north is temperate continental, with about the same rainfall. Rain falls mainly in autumn and late winter.",
+    "During the growing season, only rare summer storms make up for the water the vines lose. The soil reserves slowly run out, and the growth of the vine first slows and then stops.",
+    "The Mistral is a northern wind, often violent and always drying. The hills and mountains around the valley funnel it and make it stronger. By clearing the sky it favours strong sunshine, which always tops 2,500 hours a year.",
+    "The cold, dry wind protects the vines from fungal attack. Good ripeness comes from strong sunshine and well-suited rainfall. The steady Mistral helps too, by concentrating the grapes."
+   ],
+   "cite": [
+    "cotes-du-rhone-villages-doc:p8",
+    "cotes-du-rhone-villages-doc:p10"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Three kinds of ground",
+   "paras": [
+    "The soils are very different from one place to the next. Some lie on river terraces. Others lie on marls and soft limestones. Others again come from erosion: marls, sands, sandstones or molasse.",
+    "The ground changes the wine. Reds and rosés are lighter on sandy or sandy-silty soils. They are richer and more tannic on stony or clay soils."
+   ],
+   "cite": [
+    "cotes-du-rhone-villages-doc:p8",
+    "cotes-du-rhone-villages-doc:p10"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Grenache first, with a village name on top",
+   "paras": [
+    "Almost all of the wine is red or rosé: 98% of production. How long they keep varies with the soil and with the blend the producer chooses.",
+    "Grenache makes up at least 50% of the blend. Syrah or Mourvèdre goes alongside it. The list of allowed grapes also includes Cinsaut and Carignan.",
+    "White is 2% of production. White grapes on the list include Viognier and Roussanne.",
+    "All the wines are still and dry. Yields are set at 44 hectolitres per hectare.",
+    "The label may add one of 17 extra place names, such as Cairanne or Séguret. The wine must then meet the rules set for that name. Producers wanted to mark out their best wines by a place name. The Côtes du Rhône Villages appellation was recognised in 1967. That came after some commune names were allowed alongside Côtes du Rhône in 1966."
+   ],
+   "cite": [
+    "cotes-du-rhone-villages-doc:p4",
+    "cotes-du-rhone-villages-doc:p6",
+    "cotes-du-rhone-villages-doc:p7",
+    "cotes-du-rhone-villages-doc:p9",
+    "cotes-du-rhone-villages-doc:p10",
+    "cotes-du-rhone-villages-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Cairanne",
+     "point": [
+      4.929,
+      44.231
+     ],
+     "zoom": 11,
+     "caption": "Cairanne is one of the 17 extra place names the label may add.",
+     "cite": [
+      "cotes-du-rhone-villages-doc:p12"
+     ]
+    }
+   ]
+  }
+ ]
+}

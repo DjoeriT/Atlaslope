@@ -35,3 +35,4 @@ hosted coordinator never see this file; their part is `docs/env-cloud.md`. Check
   close-in imagery. CI and the live site take it from the repo secret.
 - Map mocks that need live satellite go to `mocks/` in this folder (git-ignored), as one page, with its file:/// path.
 - For a long run, ask the app to keep the Mac awake.
+- Raw downloads live outside the repo, in `~/Developer/Atlaslope-raw/` (`ATLASLOPE_RAW` overrides it; `Tools/rawdir.py`). Lost or new checkout: `python3 Tools/data/refetch_raw.py` (`--check` lists what is missing).

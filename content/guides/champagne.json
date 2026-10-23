@@ -1,0 +1,124 @@
+{
+ "id": "champagne",
+ "title": "Why Champagne tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Champagne's unique climate gives its grapes a natural acidity ideal for great sparkling wines. The wine then matures a long time on its lees, in chalk cellars with ideal natural temperature and humidity.",
+  "cite": [
+   "champagne-doc:p7",
+   "champagne-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Slopes in the north-east",
+   "paras": [
+    "The vineyards lie in the north-east of France, across the departments of Aisne, Aube, Haute-Marne, Marne and Seine-et-Marne.",
+    "The land is a set of cuestas, long ridges with a steep face on one side, in the east of the Paris Basin. The vines grow on the slopes of these ridges and of the valleys beside them.",
+    "On the Côte d'Ile-de-France in the Marne, the most emblematic sectors run from north to south: the Montagne de Reims, the Marne valley, the Côte des Blancs and the Côte du Sézannais. The other two cuestas hold the Côte de Champagne and the Côte des Bar. The Côte des Bar, in the Aube and Haute-Marne, is cut by many valleys.",
+    "The slopes face east and south. Some face north, as on the northern Montagne de Reims and the left bank of the Marne valley."
+   ],
+   "cite": [
+    "champagne-doc:p6",
+    "champagne-doc:p7",
+    "champagne-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Montagne de Reims",
+     "point": [
+      4.05,
+      49.15
+     ],
+     "zoom": 10,
+     "caption": "The northern end of the Côte d'Ile-de-France, where some slopes face north.",
+     "cite": [
+      "champagne-doc:p6",
+      "champagne-doc:p7"
+     ]
+    },
+    {
+     "label": "Côte des Blancs",
+     "point": [
+      4.0,
+      48.96
+     ],
+     "zoom": 10,
+     "caption": "One of the most emblematic sectors, on the Côte d'Ile-de-France south of the Marne valley.",
+     "cite": [
+      "champagne-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A northern vineyard with two influences",
+   "paras": [
+    "The vineyard lies in the north and feels two influences. The oceanic one brings water in regular amounts and little temperature contrast between seasons. The continental one brings frosts that are sometimes destructive, and favourable sunshine in summer.",
+    "The wide opening of the three cuestas onto the plain and valleys gives the vines enough light to ripen, even on north-facing slopes. It also stops cold air from stagnating, which lowers the risk of frost.",
+    "Champagne's unique climate gives grapes, then musts, a natural acidity ideal for making great sparkling wines. Balance between that acidity and ripeness makes the best vintages and gives good ageing potential."
+   ],
+   "cite": [
+    "champagne-doc:p7",
+    "champagne-doc:p8",
+    "champagne-doc:p9"
+   ]
+  },
+  {
+   "id": "chalk",
+   "beat": "ground",
+   "title": "Chalk that drains and gives back",
+   "paras": [
+    "The fronts of the cuestas are hard layers of limestone or chalk. The slopes below are softer: chalk, marl or sand, eroded and then covered with material washed down from the fronts above.",
+    "Chalk is porous and permeable. It removes excess water, and in dry weather it rehydrates the soil by capillary rise.",
+    "Other subsoils pair marl, which holds the water reserve, with limestone beds or carbonate sands that let excess water drain in wet periods. The subsoil and the delicate climate guided where each grape was planted.",
+    "Champagne's chalk cellars have ideal natural temperature and humidity. They helped develop the stage where the wine turns sparkling."
+   ],
+   "cite": [
+    "champagne-doc:p7",
+    "champagne-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Montgueux",
+     "point": [
+      3.98,
+      48.31
+     ],
+     "zoom": 11,
+     "caption": "A sector in the Aube, part of the Côte de Champagne.",
+     "cite": [
+      "champagne-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "beat": "rules",
+   "title": "Made in the bottle, aged on the lees",
+   "paras": [
+    "Champagne is sparkling only. Its wines are white or rosé, and they get their bubbles from a second fermentation in the glass bottle.",
+    "Three grapes were chosen early in the 20th century for their sugar and acidity balance and their ability to turn sparkling: Pinot Noir, Chardonnay and Meunier. Arbane, Petit Meslier, Pinot Gris and Pinot Blanc are also allowed.",
+    "White Champagne can blend white and black grapes. Blanc de blancs uses only white grapes. Blanc de noirs uses only black grapes. Rosé comes from blending or from saignée, which bleeds colour from the skins.",
+    "Harvesting must keep the bunches whole, and growers strive to bring the grapes intact to the press. Pressing is gentle and gradual. The juice is split into two parts, the cuvée and the taille, which are made into wine separately. The cuvée is rich in acidity and gives fresh, lively aromas. The taille is fruitier and richer in tannin.",
+    "The wine then ages on its lees, a stage that is always long. Every wine rests at least 15 months from bottling before sale. Vintage wines rest at least 36 months. Reserve wines from earlier harvests add riper character to non-vintage blends.",
+    "The bubbles are sustained and persistent in young wines. With age they grow more delicate and creamy.",
+    "Wines of great structure can keep maturing for several decades in the cellars."
+   ],
+   "cite": [
+    "champagne-doc:p2",
+    "champagne-doc:p3",
+    "champagne-doc:p4",
+    "champagne-doc:p6",
+    "champagne-doc:p7",
+    "champagne-doc:p9",
+    "champagne-doc:p10"
+   ]
+  }
+ ]
+}

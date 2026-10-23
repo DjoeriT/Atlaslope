@@ -1,0 +1,119 @@
+{
+ "id": "cremant-de-bourgogne",
+ "title": "Why Crémant de Bourgogne tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Burgundy is a northern vineyard, and its cool climate is particularly favourable to sparkling wine. Soils and exposures combine in sites that ripen the grapes well while keeping the acidity the wine needs.",
+  "cite": [
+   "cremant-de-bourgogne-doc:p11"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "scattered",
+   "beat": "place",
+   "title": "Vineyards spread over about 250 km",
+   "paras": [
+    "The vineyards are more or less disjoined and stretch about 250 km from north to south. They cover more than 300 communes in four departments, from the Yonne down to the Rhône.",
+    "Each area has its own landscape. In the north, wide valleys cut like wedges into the limestone plateaus of the Paris Basin. Along \"la Côte\" the vines form a thin continuous band between plain and plateau. In the Mâconnais they sit on parallel ridges, the \"chaînons\", that run north to south.",
+    "From Dijon to near Lyon, the vineyards follow a nearly continuous line of straight ridges. This is the western edge of the Bresse trough, a large structure that collapsed during the rise of the Alps.",
+    "The hills behind are sometimes high, 650 m in the Côte-d'Or and 1,000 m in the Beaujolais. The vines stay between 250 m and 400 m. In the Yonne and the Châtillonnais they grow lower, between 150 m and 300 m."
+   ],
+   "cite": [
+    "cremant-de-bourgogne-doc:p8",
+    "cremant-de-bourgogne-doc:p9"
+   ]
+  },
+  {
+   "id": "cool",
+   "beat": "weather",
+   "title": "Rather cool, with warmer sites",
+   "paras": [
+    "Burgundy has a rather cool oceanic climate. Rain is moderate and regular, with no marked summer drought, and the mean annual temperature is 11 °C. The Yonne shows this climate most clearly.",
+    "In the south-east this climate is somewhat softened. The Morvan and Charolais hills act as a screen. They create a foehn effect, with less humidity and a higher temperature than the regional norm.",
+    "The east has continental influences. Winter temperatures are relatively low and frosts can be long and intense. Late autumns can be very dry and sunny.",
+    "In the south, southern influences can briefly bring high summer temperatures. They can also bring surges of warm sea air that cause summer storms.",
+    "The vine suffers a strong climate constraint here. Vineyards stay on the most favourable sites, where the mesoclimate is warmer and drier than the regional climate."
+   ],
+   "cite": [
+    "cremant-de-bourgogne-doc:p9",
+    "cremant-de-bourgogne-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Morvan hills",
+     "point": [
+      4.05,
+      47.12
+     ],
+     "zoom": 9,
+     "caption": "These hills screen the south-east of the zone and create a drier, warmer foehn effect.",
+     "cite": [
+      "cremant-de-bourgogne-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "slopes",
+   "beat": "ground",
+   "title": "Limestone and marl on slopes that drain",
+   "paras": [
+    "In the Yonne and the Châtillonnais, north of the Côte d'Or, the vines sit on the cuestas of the Paris Basin, on Upper Jurassic sediments. The Vézelien is on Lower and Middle Jurassic rock. The Jovinien is on Upper Cretaceous rock. The ground is mainly marl, which is clayey limestone, and locally limestone. The vines keep to the best-exposed slopes on the flanks of the valleys of the Yonne, the Seine and their tributaries.",
+    "From Dijon southwards the ground is mostly limestone or marl, generally from the Jurassic and locally from the Triassic. In places, mainly in Saône-et-Loire, outcrops of old metamorphic and granite rock give acid soils that also carry vines.",
+    "Plots lie preferably on well-exposed slopes and foothills. They also lie on cool plateaus and on back slopes facing north and west. All of these give optimal drainage and good soil warming.",
+    "Vines keep to soils that drain away excess water while staying fertile and warming up quickly. The vineyards gather on the main reliefs, which are most often limestone and of moderate altitude."
+   ],
+   "cite": [
+    "cremant-de-bourgogne-doc:p8",
+    "cremant-de-bourgogne-doc:p9",
+    "cremant-de-bourgogne-doc:p11"
+   ]
+  },
+  {
+   "id": "bottle",
+   "beat": "rules",
+   "title": "White and rosé, finished in the bottle",
+   "paras": [
+    "Crémant de Bourgogne is quality sparkling wine, white or rosé. The second fermentation takes place in the bottle. Chardonnay and Pinot Noir are largely favoured, though the grape mix gathers every Burgundy grape. For the best aromas the blend favours the finest grapes. Pinot Noir and Pinot Gris count among them, as does Chardonnay. Aligoté and Gamay are among the other grapes allowed.",
+    "Irrigation is forbidden. The yield is 78 hl/ha, with a ceiling of 90 hl/ha. The time from picking to pressing is as short as possible and never more than 24 hours. The grapes travel in containers no deeper than 0.5 m that let the juice run off. The harvest is handled with great care to keep the juice from oxidising. Whole grapes and gentle pressing keep the aromas subtle and the colour clear and bright. Rosé may not be treated with winemaking charcoal. Pieces of wood are not allowed.",
+    "Bottling for the second fermentation starts on the 1st of December after the harvest. The wine reaches the consumer after at least 12 months from that date. This long ageing lets its aromas develop, along with complexity and finesse.",
+    "A few native grapes suit the local soil and climate. They give white and rosé wines with the acidity and fruit of northern wines, and a certain elegance. In the mouth the freshness is lifted by the release of the bubbles. The vineyard covered nearly 2,000 hectares in 2011 and made close to 15 million bottles a year.",
+    "In the early 19th century Burgundy makers took up sparkling wine with the techniques developed in Champagne, at Rully from 1820. Nuits-Saint-Georges followed, then Chablis in 1840. Customers in England and the United States liked the new wine. Sparkling wine was even made at Clos Vougeot and Chambertin. The sparkling appellation \"Bourgogne mousseux\" was recognised in 1943, and \"Crémant de Bourgogne\" followed in 1975 for white and rosé wines."
+   ],
+   "cite": [
+    "cremant-de-bourgogne-doc:p2",
+    "cremant-de-bourgogne-doc:p3",
+    "cremant-de-bourgogne-doc:p4",
+    "cremant-de-bourgogne-doc:p5",
+    "cremant-de-bourgogne-doc:p7",
+    "cremant-de-bourgogne-doc:p8",
+    "cremant-de-bourgogne-doc:p10",
+    "cremant-de-bourgogne-doc:p11",
+    "cremant-de-bourgogne-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Rully, sparkling since 1820",
+     "point": [
+      4.746,
+      46.874
+     ],
+     "zoom": 11,
+     "caption": "Burgundy producers began making sparkling wine here from 1820, using Champagne's techniques.",
+     "cite": [
+      "cremant-de-bourgogne-doc:p10"
+     ]
+    },
+    {
+     "label": "Chablis",
+     "place": "chablis",
+     "caption": "Sparkling wine was made at Chablis from 1840.",
+     "cite": [
+      "cremant-de-bourgogne-doc:p10"
+     ]
+    }
+   ]
+  }
+ ]
+}

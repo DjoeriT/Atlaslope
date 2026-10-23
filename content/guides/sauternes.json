@@ -1,0 +1,67 @@
+{
+ "id": "sauternes",
+ "title": "Why Sauternes tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Sauternes is picked by hand in several passes, from over-ripe grapes with noble rot. Each vine gives so little wine that the vines are planted close together.",
+  "cite": [
+   "sauternes-doc:p2",
+   "sauternes-doc:p3"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "place",
+   "beat": "place",
+   "title": "Five communes in the Gironde",
+   "paras": [
+    "The grapes are picked, and the wine is made and aged, in five communes of the Gironde.",
+    "They are Barsac, Bommes, Fargues, Preignac and Sauternes.",
+    "A further area of nearby communes, including Cadillac and Langon, may also be used for making and ageing the wine."
+   ],
+   "cite": [
+    "sauternes-doc:p3",
+    "sauternes-doc:p4"
+   ]
+  },
+  {
+   "id": "weather",
+   "beat": "weather",
+   "title": "A particular microclimate",
+   "paras": [
+    "The place has a particular microclimate.",
+    "Together with a setting suited to growing vines and growers who came early, it led to practices made for great sweet wines, prized around the world."
+   ],
+   "cite": [
+    "sauternes-doc:p3"
+   ]
+  },
+  {
+   "id": "rules",
+   "beat": "rules",
+   "title": "Slow wines from over-ripe grapes",
+   "paras": [
+    "Sauternes is a still white wine with at least 45 g/l of residual sugar. It is made from grapes touched by noble rot.",
+    "Semillon and Sauvignon gris are main grapes. So are Sauvignon and Muscadelle. Over time, growers chose grapes suited to noble rot. Semillon is said to come from the Sauternes country.",
+    "Grapes are harvested over-ripe, with noble rot, by hand, in several passes. Yields are capped at 28 hl/ha. Vines are planted at least 6,500 to the hectare, because each vine gives very little wine once the grapes have concentrated.",
+    "Fermentation is slow and often happens in barrels. Long ageing follows, which the wines need to settle and show their best."
+   ],
+   "cite": [
+    "sauternes-doc:p1",
+    "sauternes-doc:p2",
+    "sauternes-doc:p3"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Vin de Bordeaux",
+    "text": "The larger name \"Vin de Bordeaux\" or \"Grand Vin de Bordeaux\" may appear on the label, at no more than two thirds the size of the letters of the appellation name."
+   }
+  ],
+  "cite": [
+   "sauternes-doc:p4"
+  ]
+ }
+}

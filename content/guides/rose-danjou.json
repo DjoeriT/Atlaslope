@@ -1,0 +1,107 @@
+{
+ "id": "rose-danjou",
+ "title": "Why Rosé d'Anjou tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Rosé d'Anjou grows on two kinds of rock: schist in the west, called \"Anjou noir\", and tuffeau chalk in the east, called \"Anjou blanc\". A mild climate and distinctive soils give the wines a taste marked by freshness.",
+  "cite": [
+   "rose-danjou-doc:p6",
+   "rose-danjou-doc:p7",
+   "rose-danjou-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valleys",
+   "beat": "place",
+   "title": "River slopes and a few plateaux",
+   "paras": [
+    "The vineyard mostly covers river slopes and a few plateaux. It lies mainly on the southern half of Maine-et-Loire (129 municipalities), with the northern edges of Deux-Sèvres (15) and Vienne (9).",
+    "A few small islands of vines remain in the north of Maine-et-Loire. They are left from a time when vines grew across the whole département.",
+    "The area is historically tied to the old province of Anjou. Trade grew so much in the 18th century that the Layon river, which crosses the area, was canalised to help transport."
+   ],
+   "cite": [
+    "rose-danjou-doc:p6",
+    "rose-danjou-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Layon valley",
+     "point": [
+      -0.502,
+      47.266
+     ],
+     "zoom": 9.5,
+     "caption": "The Layon crosses the vineyard. It was canalised in the 18th century to help the wine trade.",
+     "cite": [
+      "rose-danjou-doc:p7"
+     ]
+    },
+    {
+     "label": "Saumur",
+     "point": [
+      -0.077,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "Tuffeau chalk around Saumur marks the eastern part, called \"Anjou blanc\".",
+     "cite": [
+      "rose-danjou-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "The softness of Anjou",
+   "paras": [
+    "The climate is temperate and oceanic, with fairly small swings in temperature. One reason is the fairly near Atlantic. Another is the Loire and its tributaries, which act as thermal regulators. The vines also sit on slopes.",
+    "Locals speak of \"douceur angevine\", Angevin softness. It shows most in winter, in the long spring and in autumn. Strong summer heat is frequent.",
+    "Hills running north-west to south-east protect the vineyard from the west winds, which are often full of moisture. The higher Choletais and Mauges shelter the area from ocean damp, so it gets a foehn effect and little rain. About 585 mm falls in a year, against nearly 800 mm in the Choletais."
+   ],
+   "cite": [
+    "rose-danjou-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Anjou noir and Anjou blanc",
+   "paras": [
+    "The area spans two large geological blocks. In the west the old Precambrian and Palaeozoic base belongs to the Armorican Massif. It carries schist, notably slate, and locals call it \"Anjou noir\".",
+    "In the east, Mesozoic and Cenozoic rock of the Paris Basin covers the old base. It carries tuffeau chalk around Saumur, and locals call it \"Anjou blanc\".",
+    "The soils differ a lot, but they are generally poor, hold a moderate reserve of water and behave well with heat.",
+    "Growers found each grape its best place. Grolleau in both colours and Pineau d'Aunis take the sandy-gravelly hills and flats. The Cabernets like shallow or brown soils where the water supply is regulated. There they give round rosés with good aromatic persistence.",
+    "Gamay prefers soils formed on Precambrian rock in the heart of the \"Anjou noir\"."
+   ],
+   "cite": [
+    "rose-danjou-doc:p6",
+    "rose-danjou-doc:p7",
+    "rose-danjou-doc:p8"
+   ]
+  },
+  {
+   "id": "rosé",
+   "beat": "rules",
+   "title": "From café wine to an emblematic rosé",
+   "paras": [
+    "Anjou is best known for white wines from Chenin. Cabernet Franc plantings sped up after phylloxera, and Cabernet Sauvignon followed a little later.",
+    "In the early 20th century most wine was \"rouget\", a light wine drunk in cafés. Grolleau and Grolleau Gris give pale wines called \"clairets\". Together with these, the Cabernets built a large production of emblematic rosé. Gamay and Pineau d'Aunis played a smaller part.",
+    "The appellation makes still rosé only. Seven grapes are allowed: Cot, Grolleau, Grolleau Gris, Gamay, Cabernet Sauvignon, Cabernet Franc and Pineau d'Aunis. Fermentable sugar must be at least 7 g/l, and the wines are more or less sweet.",
+    "The aromas show the traits of each wine's own grapes.",
+    "Yields are set at 65 hl/ha, with a cap of 75 hl/ha. Total alcohol cannot go above 12% after enrichment. Pieces of wood and oenological charcoal are banned in the cellar.",
+    "The wine may be sold as \"primeur\" or \"nouveau\", and then the vintage must be shown on the label. The word \"cabernet\", or the names of the Cabernet grapes, cannot appear on the label. The label may name a smaller place if it is a lieu-dit, a named plot in the land register."
+   ],
+   "cite": [
+    "rose-danjou-doc:p2",
+    "rose-danjou-doc:p3",
+    "rose-danjou-doc:p4",
+    "rose-danjou-doc:p6",
+    "rose-danjou-doc:p8",
+    "rose-danjou-doc:p9",
+    "rose-danjou-doc:p10"
+   ]
+  }
+ ]
+}

@@ -3,12 +3,15 @@
 
 Runs in GitHub Actions (data-build workflow; IGN's service does not answer the cloud container). For each place it pages IGN's
 administrative units inside the place's box, matches every listed name to one municipality of the right province (articles and
-accents ignored), and fails loudly on a name it cannot match. Writes data/raw/build/munis-<id>.geojson; remote_build.sh dissolves them.
+accents ignored), and fails loudly on a name it cannot match. Writes <raw folder>/build/munis-<id>.geojson; remote_build.sh dissolves them.
 """
 import json, re, sys, unicodedata, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
 API = "https://api-features.ign.es/collections/administrativeunit/items"
 UA = "AtlaslopeDataBot/0.1 (https://github.com/DjoeriT/Paraje)"
 
@@ -31,7 +34,7 @@ def units(bbox):
 
 def main():
     cfg = json.loads((ROOT / "data/added-municipalities.json").read_text())["places"]
-    out = ROOT / "data/raw/build"; out.mkdir(parents=True, exist_ok=True)
+    out = RAW / "build"; out.mkdir(parents=True, exist_ok=True)
     report, bad = {}, []
     for pid, c in cfg.items():
         cands = {}

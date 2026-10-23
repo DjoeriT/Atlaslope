@@ -1,0 +1,120 @@
+{
+ "id": "crozes-hermitage",
+ "title": "Why Crozes-Hermitage tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Crozes-Hermitage changes from north to south, in its land and in its wines. Granite hillsides in the north give way to wide, flat terraces of Alpine gravel in the south.",
+  "cite": [
+   "crozes-hermitage-doc:p6",
+   "crozes-hermitage-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bank",
+   "beat": "place",
+   "title": "The left bank, north of Valence",
+   "paras": [
+    "The vineyard lies north of the city of Valence, facing the town of Tournon, on the left bank of the Rhône. The river is its western edge. The Herbasse and the Isère rivers mark the east and the south. The sandstone rocks of the Cromlech-de-la-Roche-qui-danse, a protected site, mark the north.",
+    "It covers 11 communes of the Drôme. It is one of the most southerly of the northern Côtes du Rhône vineyards. It belongs to the group of Rhône Valley appellations called the \"Crus des Côtes du Rhône\".",
+    "The land changes from north to south. In the north it borders the Hermitage appellation, and its landforms look much like Hermitage's. The south and east are flatter and more open."
+   ],
+   "cite": [
+    "crozes-hermitage-doc:p6",
+    "crozes-hermitage-doc:p1"
+   ],
+   "fly": [
+    {
+     "label": "Where the Rhône cuts through",
+     "point": [
+      4.83,
+      45.1
+     ],
+     "zoom": 10.5,
+     "caption": "The Rhône runs in a deep bed between Crozes-Hermitage and Serves-sur-Rhône, in the north of the appellation.",
+     "cite": [
+      "crozes-hermitage-doc:p6"
+     ]
+    },
+    {
+     "label": "Pont-de-l'Isère, where two rivers meet",
+     "point": [
+      4.87,
+      45.01
+     ],
+     "zoom": 10.5,
+     "caption": "The Chassis terrace forms a triangle whose tip is Pont-de-l'Isère, where the Rhône and the Isère meet.",
+     "cite": [
+      "crozes-hermitage-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Lyon weather, a Mediterranean touch",
+   "paras": [
+    "The climate is \"Lyonnais\", the climate of the Lyon area, at a latitude close to the 45th parallel. Some spots still get Mediterranean influence.",
+    "South of Tain-l'Hermitage that influence is clearer. It brings good sun and high mean temperatures.",
+    "Rain is fairly even across the vineyard. Water supply suits the vine almost everywhere. The exception is the Chassis, where the soil holds little water and the vines can sometimes be stressed by drought."
+   ],
+   "cite": [
+    "crozes-hermitage-doc:p6",
+    "crozes-hermitage-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Granite terraces and Alpine gravel",
+   "paras": [
+    "In the north the Rhône has cut down to ancient granite, the same Tournon granite found across the river in Saint-Joseph. It breaks down into unstable clay-sand. Terraces held up by dry-stone walls keep it on the slopes. The vineyard here looks like the hillsides of Saint-Joseph. It also recalls Côte-Rôtie or Condrieu.",
+    "Further south and east the land turns flatter. It is a staircase of Quaternary terraces made of gravel worn from the nearby Alps. The highest ground is the oldest terrace, north of Mercurol and Chanos-Curson. Some high spots there are capped with loess, wind-blown dust, as in the \"Blancs\" quarter of Gervans.",
+    "Middle terraces, younger than the highest, form the famous \"Coteau des Pends\" at Mercurol. The southern part is the largest in delimited and planted area. It sits on the lowest and newest terrace, the Chassis, where rolled pebbles cover the soil.",
+    "One oddity sits in part of Larnage. There the soils are very white kaolin sands."
+   ],
+   "cite": [
+    "crozes-hermitage-doc:p6",
+    "crozes-hermitage-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Coteau des Pends, Mercurol",
+     "point": [
+      4.89,
+      45.075
+     ],
+     "zoom": 11,
+     "caption": "The \"Coteau des Pends\" at Mercurol sits on middle, more recent gravel terraces.",
+     "cite": [
+      "crozes-hermitage-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Syrah first, and a little white",
+   "paras": [
+    "Only still wines are made, red and white. Syrah is the main grape and makes up 90% of the plantings. A local clone called \"syrah de Gervans\" is found in all these vineyards.",
+    "Red wines must be at least 85% Syrah, in the vineyard and in the blend. Marsanne and Roussanne may grow among the Syrah vines, up to 15% of them. Those white grapes are fermented together with the Syrah.",
+    "White wines come from Marsanne and Roussanne alone. They are less common. They often grow in favoured corners, such as the white limy soils around Crozes-Hermitage and Mercurol. The kaolin sands of Larnage are another.",
+    "The ground's north-south split shows in the glass. The reds from the south are pleasant and aromatic, with good structure but nothing excessive, and they keep for a medium time. Some cuvées from the northern hillsides have more structure and age better. All reds are dark garnet and turn more orange with age.",
+    "The whites are pale with green glints and turn deeper and golden with age. How the malolactic fermentation is handled shapes their style. Some are intense, with fresh citrus fruit and good liveliness, and are best drunk young. Others are floral and spicy, with more weight, and gain from a medium keep. Compared with Hermitage, the reds have a suppler structure and the whites are more contrasted.",
+    "The base yield is 45 hl/ha, with a ceiling of 50 hl/ha. A label may add a smaller place name, if it is a lieu-dit, a named spot in the land register."
+   ],
+   "cite": [
+    "crozes-hermitage-doc:p1",
+    "crozes-hermitage-doc:p2",
+    "crozes-hermitage-doc:p4",
+    "crozes-hermitage-doc:p5",
+    "crozes-hermitage-doc:p7",
+    "crozes-hermitage-doc:p8",
+    "crozes-hermitage-doc:p9",
+    "crozes-hermitage-doc:p10"
+   ]
+  }
+ ]
+}

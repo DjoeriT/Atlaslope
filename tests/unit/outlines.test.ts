@@ -1,0 +1,64 @@
+import { readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
+import { buildBoundaries } from '../../src/map/boundaries';
+import { OUTLINES_MIN_ZOOM, boxOf, boxesOf, countriesInView, countryIndex, countryOf, splitOutlines } from '../../src/map/outlines';
+import { COUNTRIES, DEFAULT_COUNTRY } from '../../src/countries';
+
+const read = (f: string) => JSON.parse(readFileSync(`data/${f}`, 'utf8'));
+
+describe('per-country outline files', () => {
+  const file = read('places.json');
+  const added = read('added-boundaries.geojson');
+  const parts = splitOutlines(added, file);
+  const index = countryIndex(file);
+
+  it('puts every added outline in exactly one country file, unchanged', () => {
+    const all = Object.values(parts).flatMap((c) => c.features);
+    expect(all.length).toBe(added.features.length);
+    expect(new Set(all)).toEqual(new Set(added.features));
+  });
+
+  it("puts each outline in its place's own country", () => {
+    for (const [country, c] of Object.entries(parts)) {
+      for (const f of c.features) expect(countryOf(index, String(f.properties.id)), String(f.properties.id)).toBe(country);
+    }
+  });
+
+  it('has a file for every country with added outlines, and only countries the app knows', () => {
+    for (const id of Object.keys(parts)) expect(COUNTRIES[id], id).toBeDefined();
+    for (const c of file.courses) expect(parts[c.country]?.features.length ?? 0, c.country).toBeGreaterThan(0);
+  });
+
+  it('draws the same places from all country files as from the whole file', () => {
+    const merged = { type: 'FeatureCollection' as const, features: Object.values(parts).flatMap((c) => c.features) };
+    const ids = (a: typeof added) => buildBoundaries(file.places, read('dops.geojson'), read('dop-overrides.json'), a).features.map((f) => f.properties.id).sort();
+    expect(ids(merged)).toEqual(ids(added));
+  });
+
+  it('keeps an outline whose place has no country with the default country', () => {
+    const stray = { type: 'Feature' as const, properties: { id: 'nowhere' }, geometry: { type: 'Point', coordinates: [0, 0] } };
+    const out = splitOutlines({ type: 'FeatureCollection', features: [stray] }, file);
+    expect(out[DEFAULT_COUNTRY].features).toEqual([stray]);
+  });
+
+  it('frames a region or a place in its own country', () => {
+    expect(countryOf(index, 'pauillac')).toBe('france');
+    expect(countryOf(index, 'douro')).toBe('portugal');
+    expect(countryOf(index, 'rioja')).toBe('spain');
+  });
+});
+
+describe('countries the view reaches', () => {
+  const parts = splitOutlines(read('added-boundaries.geojson'), read('places.json'));
+  const files = Object.fromEntries(Object.entries(parts).map(([c, fc]) => [c, { url: c, boxes: boxesOf(fc) }]));
+  it('asks for none on a whole-country or cover view', () => {
+    expect(countriesInView([-10, 35, 9, 52], OUTLINES_MIN_ZOOM - 0.5, files)).toEqual([]);
+  });
+  it('asks for the countries whose outlines a close view reaches, and not the others', () => {
+    expect(countriesInView([-1.2, 44.6, -0.2, 45.4], 9, files)).toEqual(['france']); // the Médoc
+    expect(countriesInView([-8.8, 41, -7.5, 41.4], 9, files)).toContain('portugal'); // the Douro
+    expect(countriesInView([-11, 41, -4.5, 43.8], 7, files)).not.toContain('france'); // Galicia
+    expect(countriesInView([-2.9, 42.3, -1.8, 42.7], 9, files)).not.toContain('france'); // Rioja, inside the box around all of France
+  });
+  it('boxes nothing for no outlines', () => expect(boxOf({ type: 'FeatureCollection', features: [] })).toBeNull());
+});

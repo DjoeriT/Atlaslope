@@ -1,0 +1,107 @@
+{
+ "id": "graves",
+ "title": "Why Graves tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Graves is named for its gravel: pebbles and stones that drain the soil and reflect light onto the grapes. Cabernet Sauvignon and Merlot ripen into structured reds on the stony soils, while Sémillon and Sauvignon draw finesse and freshness from sandier or clay soils.",
+  "cite": [
+   "graves-doc:p7",
+   "graves-doc:p8",
+   "graves-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "strip",
+   "beat": "place",
+   "title": "A strip of gravel along the river",
+   "paras": [
+    "The appellation area forms a band about 10 km wide on the left bank of the Garonne. It runs from north of Bordeaux to south-east of Langon and curves around the Sauternes and Barsac enclave.",
+    "The appellation covers 43 communes in the Gironde. The landscape is gentle slopes between the river and pine forests. Châteaux and estates are scattered through the dense vineyard, and near the forest the vines persist in clearings on rounded gravel rises.",
+    "Vines came to the gates of Bordeaux in Antiquity, with a first planting dated to about 40 AD. The real growth began in the Middle Ages, when vines went in around the city on poor, stony land that suited no other crop."
+   ],
+   "cite": [
+    "graves-doc:p7",
+    "graves-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "The Garonne's left bank near Langon",
+     "point": [
+      -0.25,
+      44.55
+     ],
+     "zoom": 9,
+     "caption": "The band of vineyards ends south-east of Langon, on the left bank of the Garonne.",
+     "cite": [
+      "graves-doc:p7"
+     ]
+    },
+    {
+     "label": "Léognan and the pine forest",
+     "point": [
+      -0.6,
+      44.73
+     ],
+     "zoom": 10,
+     "caption": "Vines sit between the river and the pine forests, and persist in clearings near the trees.",
+     "cite": [
+      "graves-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shelter",
+   "beat": "weather",
+   "title": "Between pine forest and river",
+   "paras": [
+    "The climate is oceanic. The pine forest to the west protects the vines from bad weather and moderates temperature in an important way.",
+    "Natural airflow from the Garonne keeps off heavy heat and excess humidity. Oceanic influences also soften spring frost.",
+    "Spring frost shaped the vineyard map. Land far from the Garonne loses the river's steadying effect on temperature. Where the forest hems land in, cold air cannot move away. Both are left out of the vineyard area."
+   ],
+   "cite": [
+    "graves-doc:p8",
+    "graves-doc:p9"
+   ]
+  },
+  {
+   "id": "gravel",
+   "beat": "ground",
+   "title": "Pebbles that drain and shine",
+   "paras": [
+    "The soil is pebbles, cobbles and gravel of various sizes, with sand mixed with silt and clay. In places it sits on limestone, but generally it rests on pure sand, on alios (sand cemented with iron-bearing particles) or on clay.",
+    "The gravel was rolled down by rivers from valleys that Pyrenean glaciers had eroded. Only remnants of those deposits remain, as rounded gravel rises of every size and type.",
+    "All that gravel makes these soils very permeable. Slopes shed water, and many small streams that feed the Garonne add to the drainage. The vine's water supply is very tightly regulated. The pale, polished stones also reflect light onto the grapes.",
+    "Reds get their structure from fully ripe Cabernet Sauvignon and Merlot, especially on the stony, warm, low-fertility soils that naturally limit yield. White wines get finesse and freshness from the sandier or clay-based soils."
+   ],
+   "cite": [
+    "graves-doc:p7",
+    "graves-doc:p8",
+    "graves-doc:p10"
+   ]
+  },
+  {
+   "id": "reds-whites",
+   "beat": "rules",
+   "title": "Still reds and dry whites",
+   "paras": [
+    "Graves is reserved for still reds and dry whites. Together with Graves Supérieures it makes 160,000 hl a year, around 21 million bottles. Three quarters of that is red.",
+    "Reds are a balanced blend. Cabernet Sauvignon brings aroma and structure and Merlot brings perfume and suppleness. Cabernet Franc and Petit Verdot complete it, as do Malbec and Carmenère.",
+    "Dry whites are elegant and full. Sémillon usually gives floral notes and a natural richness that does not rule out freshness. Sauvignon adds liveliness and Muscadelle adds slightly musky notes. Barrel ageing, sometimes used, lets them gain richness and complexity after a few years.",
+    "White wines with residual sugar have their own appellation, Graves Supérieures. They come mainly from Sauvignon and Sémillon, and the area makes 7,500 hl of them against 32,500 hl of dry white.",
+    "Vines must be planted at a minimum of 5,000 per hectare. This high density gives enough crop without overloading each vine. Yields are set at 55 hl/ha for red and 58 hl/ha for white. Red wines must go through malolactic fermentation, and are aged before sale.",
+    "Labels may add \"Vin de Graves\", a larger geographic unit, in letters no more than two thirds the size of the appellation name."
+   ],
+   "cite": [
+    "graves-doc:p2",
+    "graves-doc:p4",
+    "graves-doc:p5",
+    "graves-doc:p6",
+    "graves-doc:p9",
+    "graves-doc:p10",
+    "graves-doc:p11"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "id": "cotes-du-roussillon-villages",
+ "title": "Why Côtes du Roussillon Villages tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A sunny Mediterranean climate, poor stony soils and the Tramontane wind off the Pyrenees mark this red-only area. Four villages may add their own name, each on its own soil.",
+  "cite": [
+   "cotes-du-roussillon-villages-doc:p2",
+   "cotes-du-roussillon-villages-doc:p6",
+   "cotes-du-roussillon-villages-doc:p9",
+   "cotes-du-roussillon-villages-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "agly",
+   "beat": "place",
+   "title": "Walls, a river and the sea",
+   "paras": [
+    "In the north of the Pyrénées-Orientales, the Corbières massif closes the area to the north. The heights of the Fenouillèdes close it to the west, and the Têt river to the south. To the east lie a lagoon and the Mediterranean.",
+    "The Agly river runs through it. It cuts steep gorges in the Fenouillèdes, then opens into the Estagel basin, where the Maury and the Verdouble join it. Both are often dry. The Agly then crosses the limestone foothills of the Corbières and reaches the terraces of the Rivesaltais and the sea.",
+    "Across 32 communes lie slopes, some of them steep, with valleys and spreading terraces. Almost all of it is given to vines."
+   ],
+   "cite": [
+    "cotes-du-roussillon-villages-doc:p5",
+    "cotes-du-roussillon-villages-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Agly gorges",
+     "point": [
+      2.52,
+      42.8
+     ],
+     "zoom": 10,
+     "caption": "The Agly cuts steep gorges in the Fenouillèdes before it reaches the Estagel basin.",
+     "cite": [
+      "cotes-du-roussillon-villages-doc:p5"
+     ]
+    },
+    {
+     "label": "Estagel basin",
+     "point": [
+      2.69,
+      42.77
+     ],
+     "zoom": 10,
+     "caption": "The Agly flows into the Estagel basin, where the Maury and the Verdouble join it.",
+     "cite": [
+      "cotes-du-roussillon-villages-doc:p5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tramontane",
+   "beat": "weather",
+   "title": "Sun, storms and the Tramontane",
+   "paras": [
+    "The climate is Mediterranean, with over 2,500 hours of sun a year. Rain falls at 450 to 650 mm a year, often in storms that lose a lot of water as runoff.",
+    "The mean temperature is 15 °C by the sea and 13 °C going west, where altitude adds coolness.",
+    "The Tramontane, a north-west wind, blows one day in three. It is often violent and very cold in winter after crossing the Pyrenean summits. In spring it breaks shoots. It deepens the summer dryness, but it also cleans the air and keeps vine treatments to a minimum.",
+    "The sea wind is less frequent and brings humidity and rain. Vines face little competition from orchards, since there is no way to irrigate."
+   ],
+   "cite": [
+    "cotes-du-roussillon-villages-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Every era in a small space",
+   "paras": [
+    "The nearby Pyrenees rose, and every geological era is now present. The soils are very varied in a small space. Some come from rock broken down in place. Others were carried in, or laid down in lakes and the sea.",
+    "Most vineyards sit on 6 main soil units. Two are schists, one brown and one black. Clay-limestone and gneiss make two more. The last two are granitic sand and terraces.",
+    "The plots marked out for the harvest share the same traits. Their soils are poor in organic matter, dry, stony and well drained."
+   ],
+   "cite": [
+    "cotes-du-roussillon-villages-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Lesquerde, granitic sand",
+     "point": [
+      2.535,
+      42.8
+     ],
+     "zoom": 11,
+     "caption": "Lesquerde's vines grow high, on acidic granitic sand.",
+     "cite": [
+      "cotes-du-roussillon-villages-doc:p9"
+     ]
+    },
+    {
+     "label": "Tautavel, clay-limestone",
+     "point": [
+      2.745,
+      42.813
+     ],
+     "zoom": 11,
+     "caption": "In the Tautavel valley the soils are clay-limestone.",
+     "cite": [
+      "cotes-du-roussillon-villages-doc:p9"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reds",
+   "beat": "rules",
+   "title": "Red only, and four villages",
+   "paras": [
+    "The appellation covers dry, still red wines only. The natural alcohol is at least 12.5%. The yield is set at 45 hl/ha.",
+    "Five grapes are listed. Grenache, Mourvèdre and Carignan are the traditional ones. Syrah came in during the 1970s. Lledoner Pelut completes the five.",
+    "Vines are pruned short, with at most 7 spurs per vine and 2 buds on each. Syrah may instead be cane-pruned, as single Guyot. Planting is at least 4,000 vines per hectare.",
+    "Four villages may add their name to the label. Each one shows a different soil.",
+    "Caramany has gneiss. Carignan must be made by carbonic maceration. That is one reason the wines are supple, fresh and moreish.",
+    "Lesquerde has high granitic sand. Carignan is again made by carbonic maceration, which tames its fire. The wines often show minerality and freshness.",
+    "Latour-de-France lies where the Agly opens out, on less acidic and warmer soils. The wines often have wild, spicy notes, and they keep well.",
+    "Tautavel has clay-limestone, and its wines are marked by Grenache. They are complex and long, often with ripe fruit, garrigue and spice. Their strong tannins call for ageing until 1 October of the year after the harvest.",
+    "Labels may also name the wider unit Grand Vin du Roussillon. Its letters may be at most two thirds the size of the appellation name."
+   ],
+   "cite": [
+    "cotes-du-roussillon-villages-doc:p2",
+    "cotes-du-roussillon-villages-doc:p3",
+    "cotes-du-roussillon-villages-doc:p4",
+    "cotes-du-roussillon-villages-doc:p5",
+    "cotes-du-roussillon-villages-doc:p8",
+    "cotes-du-roussillon-villages-doc:p9",
+    "cotes-du-roussillon-villages-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Latour-de-France",
+     "point": [
+      2.65,
+      42.77
+     ],
+     "zoom": 11,
+     "caption": "Latour-de-France sits where the Agly opens out, on warmer soils.",
+     "cite": [
+      "cotes-du-roussillon-villages-doc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

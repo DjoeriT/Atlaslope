@@ -1,0 +1,130 @@
+{
+ "id": "bergerac",
+ "title": "Why Bergerac tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Bergerac grows on poor hillside soils along the Dordogne, under a softened oceanic climate. Together they bring the grapes to good ripeness, and it shows in the tannins of the reds.",
+  "cite": [
+   "bergerac-doc:p7",
+   "bergerac-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "valley",
+   "beat": "place",
+   "title": "Hills on both banks of the Dordogne",
+   "paras": [
+    "The vineyards sit on hills either side of the Dordogne, in the south-west of the Périgord. Upstream of Bergerac the valley is narrow and deep. Downstream it opens out to 7 to 8 km wide.",
+    "The region is nicknamed Périgord pourpre, \"purple Périgord\", because of its vines. On the right bank the area keeps to the first hills above the valley, with the forêt du Landais to the north. On the left bank it spreads across the land between the Dordogne and the Dropt.",
+    "The wine trade was closely tied to boats on the river. Rapids called the Pas de la Gratusse made it very hard for the river boats, the gabarres, to go up or down. So the vineyard upstream of Bergerac disappeared. That is why the vines lie downstream today."
+   ],
+   "cite": [
+    "bergerac-doc:p6",
+    "bergerac-doc:p7",
+    "bergerac-doc:p8",
+    "bergerac-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The Dordogne at Bergerac",
+     "point": [
+      0.4833,
+      44.85
+     ],
+     "zoom": 10,
+     "caption": "Upstream of Bergerac the valley is narrow. Downstream it widens to 7 to 8 km.",
+     "cite": [
+      "bergerac-doc:p7"
+     ]
+    },
+    {
+     "label": "Monbazillac hills",
+     "point": [
+      0.48,
+      44.8
+     ],
+     "zoom": 10.5,
+     "caption": "On the left bank, lake limestone around Monbazillac is set between more molasse-rich layers.",
+     "cite": [
+      "bergerac-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "funnel",
+   "beat": "weather",
+   "title": "A funnel for Atlantic air",
+   "paras": [
+    "The climate is a softened oceanic one, less rainy and a little colder than on the Atlantic coast. Being far from the sea brings warmer summers and colder winters.",
+    "The valley opens like a funnel towards the ocean in the west. That lets Atlantic mildness and humidity travel up to nearly 100 km inland in spring and autumn.",
+    "December, January and May are the wettest months. Rain is light in March and from July to September."
+   ],
+   "cite": [
+    "bergerac-doc:p7",
+    "bergerac-doc:p8"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Poor soils on limestone and gravelly sands",
+   "paras": [
+    "Going from east to west, the rock changes. Upstream of Bergerac it is marine limestone from the Cretaceous. From Bergerac to Le Fleix it is sands and clays with gravel, worn down from the granite of the Massif Central. Beyond Le Fleix, up to the Gironde, it is clay-limestone from the Tertiary. Hard limestone shows in the landscape as ledges and cuestas, often crowned with coppice or oak woods.",
+    "Three kinds of soil are typical. Rendzinas and brown limy soils are more or less deep, depending on the rock beneath and their place on the slope. Leached soils, known locally as boulbènes, lie on the gravelly sands and clays and on the molasse. Clay-gravel soils cover the river terraces of the Dordogne.",
+    "These poor soils keep production in check and give a good water regime. The boundaries leave out plains and plateaus with soil that is too deep and clayey. In the valley only islands with gravel underneath are used.",
+    "Together with the softened oceanic climate, that water regime gives the grapes good phenolic ripeness. It shows in the tannins of the reds. The wines draw their acidity and their floral or fruity traits from the soils. Those traits also come from the blend of grapes."
+   ],
+   "cite": [
+    "bergerac-doc:p7",
+    "bergerac-doc:p10"
+   ]
+  },
+  {
+   "id": "blends",
+   "beat": "rules",
+   "title": "Always a blend",
+   "paras": [
+    "Every Bergerac is a blend, from at least 2 main grapes at a minimum of 50%. Whites and reds are dry and still. Rosés are dry or off-dry, with up to 10 g/l of sugar.",
+    "The reds join the softness and roundness of Merlot with the firm tannins of Cabernet Franc and Cabernet Sauvignon. These black grapes are not very prone to grey rot. To avoid pulling out too much tannin, continuous presses are banned. The reds are often marked by fruit. They are a little austere in their first years, and gain from ageing so the tannins melt in.",
+    "The whites are generally floral and fruity with some acidity. Sauvignon Blanc can sometimes be sensed. They can be good to drink young. A few fleshier cuvées of Sémillon or Muscadelle reach their aromatic complexity after a few years of ageing.",
+    "The rosés are mostly Cabernet Franc and Cabernet Sauvignon. They often have a deep colour, going as far as the clairet style. Winemaking charcoal is banned for them, to protect that identity. They always taste fresh."
+   ],
+   "cite": [
+    "bergerac-doc:p2",
+    "bergerac-doc:p3",
+    "bergerac-doc:p9",
+    "bergerac-doc:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Sec",
+    "text": "The word must appear on the label of every white wine.",
+    "cite": [
+     "bergerac-doc:p11"
+    ]
+   },
+   {
+    "term": "Demi-sec",
+    "text": "The word must appear on the label of a rosé with 4 to 10 g/l of sugar.",
+    "cite": [
+     "bergerac-doc:p11"
+    ]
+   },
+   {
+    "term": "Sud-Ouest",
+    "text": "The label may add this wider area. Its letters may be no larger than those of the name Bergerac.",
+    "cite": [
+     "bergerac-doc:p11"
+    ]
+   }
+  ],
+  "cite": [
+   "bergerac-doc:p11"
+  ]
+ }
+}

@@ -6,13 +6,16 @@ parishes the spec does not list, the outline takes them in too and the script pr
 Writes data/countries/pt/areas.geojson: one feature per place and one per zone (id, place, municipalities, km2, overIncluded),
 and puts each place's outline into data/added-boundaries.geojson, the map's file for outlines outside the 2014 Spain layer.
 
-Run: python3 Tools/data/build_pt_areas.py   (needs data/raw/countries/pt/caop2025-freguesias.geojson from Tools/countries/pull.py, and ogr2ogr)
+Run: python3 Tools/data/build_pt_areas.py   (needs <raw folder>/countries/pt/caop2025-freguesias.geojson from Tools/countries/pull.py, and ogr2ogr)
 """
 import json, re, subprocess, sys, tempfile, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-CAOP = ROOT / "data/raw/countries/pt/caop2025-freguesias.geojson"
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from rawdir import RAW  # noqa: E402
+CAOP = RAW / "countries/pt/caop2025-freguesias.geojson"
 SPEC = ROOT / "data/countries/pt/areas-spec.json"
 OUT = ROOT / "data/countries/pt/areas.geojson"
 SIMPLIFY = 0.0012  # degrees, about 120 m (was 40 m until Portugal batch 1 put the build over 2 MB, PR #214): the outline is read at region zoom, the 2 MB download limit counts it (decision #38)

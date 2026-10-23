@@ -1,0 +1,119 @@
+{
+ "id": "cremant-dalsace",
+ "title": "Why Crémant d'Alsace tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hot days and cool nights while the grapes ripen give good ripeness in both sugar and acidity. Ageing on the lees then brings riper notes, often buttery or toasty, to a fresh, fruity sparkling wine.",
+  "cite": [
+   "cremant-dalsace-doc:p7",
+   "cremant-dalsace-doc:p8",
+   "cremant-dalsace-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "foothills",
+   "beat": "place",
+   "title": "A ribbon along the Vosges",
+   "paras": [
+    "The vineyard lies in the north, mostly on the east-facing foothills of the Vosges. It stretches 120 km from a small enclave around Cleebourg in the north to Thann, level with Mulhouse in the south, and is often less than 1 km wide.",
+    "The land is a run of hills at the foot of the Vosges, cut by deep valleys, with relief that is often sharp. Most vines grow between 200 m and 400 m. The region's two départements, Haut-Rhin and Bas-Rhin, share the area."
+   ],
+   "cite": [
+    "cremant-dalsace-doc:p5",
+    "cremant-dalsace-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Colmar and the foothills",
+     "point": [
+      7.358,
+      48.079
+     ],
+     "zoom": 9,
+     "caption": "Colmar gets about 1800 hours of sunshine a year.",
+     "cite": [
+      "cremant-dalsace-doc:p7"
+     ]
+    },
+    {
+     "label": "Thann, the southern end",
+     "point": [
+      7.105,
+      47.808
+     ],
+     "zoom": 10,
+     "caption": "The vineyard ends at Thann, level with Mulhouse.",
+     "cite": [
+      "cremant-dalsace-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A mountain screen against the ocean",
+   "paras": [
+    "The climate is clearly semi-continental, with big swings in temperature. Winters are cold, with a January mean of 1.9°C. Summers are hot and dry, with a July mean above 20°C.",
+    "The Vosges shield the vines from ocean influences, and a foehn effect adds to this, especially in autumn. Colmar gets 1800 hours of sun a year. The summits of the Vosges receive about 2000 mm of rain, while the vineyard gets 500 mm to 650 mm.",
+    "While the grapes ripen, hot days alternate with cool nights. Together with tall foliage, that gives good ripeness in both sugar and tartaric acidity. The vineyard's height of 200 m to 400 m matches the best warmth belt and keeps natural acidity in balance.",
+    "Little rain in late summer, together with the day-night swing, keeps the grapes healthy. Healthy grapes press well and help make a fine mousse."
+   ],
+   "cite": [
+    "cremant-dalsace-doc:p6",
+    "cremant-dalsace-doc:p7",
+    "cremant-dalsace-doc:p8",
+    "cremant-dalsace-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "A mosaic left by the Rhine rift",
+   "paras": [
+    "The collapse of the Rhine rift created a network of faults and a mosaic of small compartments. The vineyard sits where the Rhine plain meets the crystalline Vosges massif. Erosion has laid bare every layer of ground laid down over the geological periods.",
+    "Brown soils on schist, granite or sandstone are shallow, free-draining and tend to be acid. At the edge of the plain, soils on alluvial fans and sandy-gravelly alluvial soils are free-draining and tend to be acid too. On the hills below the Vosges, limy brown soils or rendzinas, with conglomerates and interbedded marls, have a good water regime.",
+    "The producers found, for each of six grapes, the conditions where it shows best. In doing so they favour freshness and acidity together with fruit."
+   ],
+   "cite": [
+    "cremant-dalsace-doc:p7",
+    "cremant-dalsace-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "The edge of the Rhine plain",
+     "point": [
+      7.43,
+      48.2
+     ],
+     "zoom": 9,
+     "caption": "The vineyard lies where the Rhine plain meets the Vosges massif.",
+     "cite": [
+      "cremant-dalsace-doc:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bottle",
+   "beat": "rules",
+   "title": "Picked by hand, aged on the lees",
+   "paras": [
+    "Crémant d'Alsace is a white or rosé sparkling wine made by a second fermentation in the bottle. Rosé comes only from Pinot Noir. The allowed grapes are Auxerrois, Chardonnay, Pinot Blanc, Pinot Gris, Pinot Noir and Riesling. Trials first pointed to the pinot family.",
+    "Several Champagne houses brought their bottle-fermentation know-how while Alsace was under German rule. Julien Dopff saw the tool at the 1900 world fair in Paris and set out to try it on Alsatian base wines. The appellation was recognised by decree on 24 August 1976.",
+    "Grapes are picked by hand and carried in containers of no more than 100 kg. Grapes for white wine go into the press whole. Wood chips are forbidden. The yield is set at 80 hl/ha.",
+    "The wine cannot be sold until at least 12 months after bottling, and ageing on the lees is often much longer than 9 months. It develops tertiary aromas and adds to the wine's complexity. The great majority is sold as brut."
+   ],
+   "cite": [
+    "cremant-dalsace-doc:p2",
+    "cremant-dalsace-doc:p3",
+    "cremant-dalsace-doc:p4",
+    "cremant-dalsace-doc:p7",
+    "cremant-dalsace-doc:p8",
+    "cremant-dalsace-doc:p9",
+    "cremant-dalsace-doc:p10"
+   ]
+  }
+ ]
+}

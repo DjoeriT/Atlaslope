@@ -1,0 +1,436 @@
+{
+ "region": "fr-south-west",
+ "sheets": [
+  {
+   "id": "bergerac",
+   "why": {
+    "text": "Poor limestone, sand and gravel soils on Dordogne valley slopes, with a mild, damp Atlantic-influenced climate that ripens grapes well.",
+    "cite": [
+     "bergerac-doc:p7",
+     "bergerac-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Merlot"
+     },
+     {
+      "local": "Cabernet-Sauvignon"
+     },
+     {
+      "local": "Sémillon"
+     },
+     {
+      "local": "Muscadelle"
+     },
+     {
+      "local": "Sauvignon Blanc"
+     }
+    ],
+    "cite": [
+     "bergerac-doc:p9",
+     "bergerac-doc:p10"
+    ],
+    "others": [
+     "Cot",
+     "Fer",
+     "Merille",
+     "Ugni Blanc",
+     "Chenin",
+     "Ondenc"
+    ],
+    "othersCite": [
+     "bergerac-doc:p6",
+     "bergerac-doc:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still reds and whites; rosés that are dry or off-dry.",
+    "cite": [
+     "bergerac-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Attenuated oceanic climate, less rainy and a little colder than on the Atlantic coast. Summers are warmer and winters colder than at the coast. The funnel-shaped Dordogne valley carries Atlantic mildness and humidity nearly 100 km inland in spring and autumn. Wettest months are December, January and May.",
+    "cite": [
+     "bergerac-doc:p7",
+     "bergerac-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Poor soils: limestone rendzinas and brown calcareous soils, leached boulbène soils on sands, clays and molasse, and clay-gravel alluvial terraces. Limestone is marine Cretaceous upstream, lacustre on the left bank. They give good water regime.",
+    "cite": [
+     "bergerac-doc:p7",
+     "bergerac-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: floral and fruity with some acidity. Reds: fruity, sometimes richly tannic, a little austere when young. Rosés: often deeply coloured, dry or soft, always fresh.",
+    "cite": [
+     "bergerac-doc:p3",
+     "bergerac-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Clairet",
+      "text": "Deeply coloured rosé, mostly Cabernet Franc and Cabernet Sauvignon."
+     }
+    ],
+    "cite": [
+     "bergerac-doc:p3"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "monbazillac",
+   "why": {
+    "text": "North-facing clay-limestone slopes above the Dordogne, where morning mist and sunny afternoons bring noble rot to Sémillon grapes.",
+    "cite": [
+     "monbazillac-doc:p3"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Semillon"
+     },
+     {
+      "local": "Sauvignon Gris"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Muscadelle"
+     }
+    ],
+    "cite": [
+     "monbazillac-doc:p2",
+     "monbazillac-doc:p3"
+    ],
+    "others": [
+     "Chenin",
+     "Ondenc",
+     "Ugni Blanc"
+    ],
+    "othersCite": [
+     "monbazillac-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wine with residual sugar, made from overripe grapes, with or without noble rot.",
+    "cite": [
+     "monbazillac-doc:p1",
+     "monbazillac-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Morning mist or fog followed by sunny afternoons favours noble rot (Botrytis cinerea) and concentrated grapes.",
+    "cite": [
+     "monbazillac-doc:p3"
+    ]
+   },
+   "soil": {
+    "text": "Clay-limestone slopes facing north, on the left bank of the Dordogne.",
+    "cite": [
+     "monbazillac-doc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Golden, darkening with age, elegant; aromas of honey, acacia and peach, with candied citrus and mirabelle plum. Sweetness is sometimes very high.",
+    "cite": [
+     "monbazillac-doc:p1",
+     "monbazillac-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sélection de grains nobles",
+      "text": "Traditional mention that may complete the appellation, under the rules of the specification."
+     }
+    ],
+    "cite": [
+     "monbazillac-doc:p4"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cahors",
+   "why": {
+    "text": "Limestone plateaus and Lot river terraces, with an oceanic climate warmed by Mediterranean summers and the dry Autan wind, suit Cot (Malbec).",
+    "cite": [
+     "cahors-doc:p6",
+     "cahors-doc:p7",
+     "cahors-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cot"
+     }
+    ],
+    "cite": [
+     "cahors-doc:p3",
+     "cahors-doc:p5",
+     "cahors-doc:p7"
+    ],
+    "others": [
+     "Merlot",
+     "Tannat"
+    ],
+    "othersCite": [
+     "cahors-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only.",
+    "cite": [
+     "cahors-doc:p2",
+     "cahors-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic with continental and Mediterranean influences; cold winters, sunny hot summers. Average rainfall is 700 mm a year, with a spring peak. The dry, warm Autan wind speeds ripening and dries the vines after storms.",
+    "cite": [
+     "cahors-doc:p6",
+     "cahors-doc:p7",
+     "cahors-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Jurassic and Cretaceous limestone plateaus, Oligocene and Miocene marl and limestone, and stepped alluvial terraces along the Lot. Soils give medium vigour; well-drained, easily warmed sites are favoured.",
+    "cite": [
+     "cahors-doc:p6",
+     "cahors-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "The limestone plateaus top out at about 300 m.",
+    "cite": [
+     "cahors-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Deep colour when young; red and/or black fruit with spice; tannins can be very present. With age: dried fruit, truffle and a dense, rounded structure.",
+    "cite": [
+     "cahors-doc:p3",
+     "cahors-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "madiran",
+   "why": {
+    "text": "Well-oriented, free-draining hillsides of Pyrenean foothills with mild, humid, oceanic weather and warm dry autumns ripen late, tannic Tannat into dark, ageworthy reds.",
+    "cite": [
+     "madiran-doc:p5",
+     "madiran-doc:p6",
+     "madiran-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Tannat"
+     }
+    ],
+    "cite": [
+     "madiran-doc:p3",
+     "madiran-doc:p8"
+    ],
+    "others": [
+     "Cabernet Franc",
+     "Cabernet-Sauvignon",
+     "Fer"
+    ],
+    "othersCite": [
+     "madiran-doc:p3",
+     "madiran-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Dry still red wines only, blended mostly from Tannat.",
+    "cite": [
+     "madiran-doc:p2",
+     "madiran-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mild, fairly humid oceanic climate: mild winters, cool wet springs. Slightly continental, with hot, often dry summers and autumns, and a warm dry foehn-type south wind about one day in three.",
+    "cite": [
+     "madiran-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Tertiary molasse (marls with some limestone) gives clay-limestone soils on steep west slopes. Acid, leached boulbène soils lie on gentle slopes and plateaus, where thick wind-blown silt covers the pebble layer.",
+    "cite": [
+     "madiran-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Hillside vineyards on five parallel north-south ridges; altitude rises towards the south. No figures given.",
+    "cite": [
+     "madiran-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Deep-coloured, tannic reds with good ageing potential. Red and black fruit, moving towards spice and candied fruit. Tannins soften with ageing into a balanced structure.",
+    "cite": [
+     "madiran-doc:p3",
+     "madiran-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": [
+     "madiran-doc:p3",
+     "madiran-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "jurancon",
+   "why": {
+    "text": "Foehn winds and steep slopes create sunny, dry, well-drained spots where thick-skinned local late grapes ripen fully, even raisin, despite a humid climate.",
+    "cite": [
+     "jurancon-doc:p4",
+     "jurancon-doc:p5"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Petit Manseng"
+     },
+     {
+      "local": "Gros Manseng"
+     }
+    ],
+    "cite": [
+     "jurancon-doc:p4"
+    ],
+    "others": [
+     "Camaralet",
+     "Courbu",
+     "Lauzet",
+     "Petit Courbu"
+    ],
+    "othersCite": [
+     "jurancon-doc:p9"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wines only, either dry or with residual sugar, including late-harvest wines.",
+    "cite": [
+     "jurancon-doc:p1",
+     "jurancon-doc:p2",
+     "jurancon-doc:p5"
+    ]
+   },
+   "climate": {
+    "text": "The foehn effect and strong slopes with cirques create favourable topoclimates: sun, warmth, low humidity and good drainage of rain. The wider climate is humid.",
+    "cite": [
+     "jurancon-doc:p4",
+     "jurancon-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "",
+    "cite": []
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Dry: high acidity, lively, balanced by much richness, some age a few years. Sweet: fresh, not heavy; young fruity and floral, with age dried fruit and spice.",
+    "cite": [
+     "jurancon-doc:p1",
+     "jurancon-doc:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Jurançon sec",
+      "text": "Dry white, at most 4 g/l fermentable sugar, label must say sec."
+     },
+     {
+      "name": "Vendanges tardives",
+      "text": "Late harvest, no enrichment allowed, vintage must be stated on the label."
+     },
+     {
+      "name": "Jurançon (sweet)",
+      "text": "Whites with more than 40 g/l fermentable sugar, picked by successive passes."
+     }
+    ],
+    "cite": [
+     "jurancon-doc:p1",
+     "jurancon-doc:p2",
+     "jurancon-doc:p3",
+     "jurancon-doc:p4",
+     "jurancon-doc:p5"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

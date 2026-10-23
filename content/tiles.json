@@ -266,6 +266,104 @@
     "pauillac-doc:p8"
    ]
   },
+  "fr-loire": {
+   "title": "Schist, chalk and flint along the river",
+   "lede": "Anjou has schist in the west and tuffeau chalk in the east. Sancerre's steep hills carry marl, limestone and flint.",
+   "from": [
+    "anjou",
+    "sancerre"
+   ],
+   "cite": [
+    "anjou-doc:p8",
+    "anjou-doc:p9",
+    "anjou-doc:p10",
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ]
+  },
+  "fr-rhone": {
+   "title": "Granite in the north, pebbles in the south",
+   "lede": "Hermitage is a granite hill facing the sun. Châteauneuf-du-Pape's pebbles store the day's heat.",
+   "from": [
+    "hermitage",
+    "chateauneuf-du-pape"
+   ],
+   "cite": [
+    "hermitage-doc:p6",
+    "hermitage-doc:p7",
+    "hermitage-doc:p9",
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p9"
+   ]
+  },
+  "fr-south-west": {
+   "title": "Valleys between the Atlantic and the Pyrenees",
+   "lede": "Cahors sits on limestone plateaus by the Lot. Madiran's foothills ripen late Tannat.",
+   "from": [
+    "cahors",
+    "madiran"
+   ],
+   "cite": [
+    "cahors-doc:p6",
+    "cahors-doc:p7",
+    "cahors-doc:p8",
+    "madiran-doc:p5",
+    "madiran-doc:p6",
+    "madiran-doc:p8"
+   ]
+  },
+  "fr-beaujolais": {
+   "title": "Granite slopes for Gamay",
+   "lede": "Fleurie's poor pink granite sands give light, scented reds. Moulin-à-Vent's granite carries manganese.",
+   "from": [
+    "fleurie",
+    "moulin-a-vent"
+   ],
+   "cite": [
+    "fleurie-doc:p6",
+    "fleurie-doc:p8",
+    "moulin-a-vent-doc:p6",
+    "moulin-a-vent-doc:p8"
+   ]
+  },
+  "fr-alsace": {
+   "title": "Dry and sunny behind the Vosges",
+   "lede": "The Vosges hold off the rain. Hot days and cool nights suit many aromatic grapes.",
+   "from": [
+    "alsace"
+   ],
+   "cite": [
+    "alsace-doc:p8",
+    "alsace-doc:p9",
+    "alsace-doc:p12"
+   ]
+  },
+  "fr-south": {
+   "title": "Heat, wind and stony ground",
+   "lede": "Hot, dry summers ration water. Bandol's sea air lets late Mourvèdre ripen.",
+   "from": [
+    "languedoc",
+    "bandol"
+   ],
+   "cite": [
+    "languedoc-doc:p35",
+    "languedoc-doc:p36",
+    "bandol-doc:p5",
+    "bandol-doc:p6",
+    "bandol-doc:p8"
+   ]
+  },
+  "fr-champagne": {
+   "title": "Chalk and natural acidity",
+   "lede": "Chalk, marl or sand slopes drain naturally. The climate keeps the acidity sparkling wine needs.",
+   "from": [
+    "champagne"
+   ],
+   "cite": [
+    "champagne-doc:p7",
+    "champagne-doc:p9"
+   ]
+  },
   "it-piemonte": {
    "title": "Marl hills of the Langhe",
    "lede": "Barolo grows on calcareous marl and clay. Only hillsides between 170 and 540 m qualify.",
@@ -1263,6 +1361,695 @@
    "cite": [
     "pauillac-doc:p6",
     "pauillac-doc:p8"
+   ]
+  },
+  "bordeaux": {
+   "title": "Gravel and clay-limestone, tempered by water",
+   "cite": [
+    "bordeaux-doc:p10",
+    "bordeaux-doc:p11",
+    "bordeaux-doc:p13"
+   ]
+  },
+  "bordeaux-superieur": {
+   "title": "Gravel terraces, blends meant for ageing",
+   "cite": [
+    "bordeaux-superieur-doc:p9",
+    "bordeaux-superieur-doc:p10",
+    "bordeaux-superieur-doc:p12"
+   ]
+  },
+  "cotes-de-bordeaux": {
+   "title": "Clay-limestone hills on the right banks",
+   "cite": [
+    "cotes-de-bordeaux-doc:p5"
+   ]
+  },
+  "entre-deux-mers": {
+   "title": "A plateau between two rivers",
+   "cite": [
+    "entre-deux-mers-doc:p4",
+    "entre-deux-mers-doc:p6"
+   ]
+  },
+  "medoc": {
+   "title": "Gravel ridges by the estuary",
+   "cite": [
+    "medoc-doc:p6",
+    "medoc-doc:p8"
+   ]
+  },
+  "haut-medoc": {
+   "title": "Gravel rises on the Gironde",
+   "cite": [
+    "haut-medoc-doc:p6",
+    "haut-medoc-doc:p3"
+   ]
+  },
+  "saint-estephe": {
+   "title": "Gravel ridges sheltered by the estuary",
+   "cite": [
+    "saint-estephe-doc:p6",
+    "saint-estephe-doc:p7",
+    "saint-estephe-doc:p8"
+   ]
+  },
+  "margaux": {
+   "title": "Gravel terraces on the estuary",
+   "cite": [
+    "margaux-doc:p3",
+    "margaux-doc:p5",
+    "margaux-doc:p6"
+   ]
+  },
+  "saint-julien": {
+   "title": "Gravel ridges, reds for long ageing",
+   "cite": [
+    "saint-julien-doc:p6",
+    "saint-julien-doc:p8"
+   ]
+  },
+  "graves": {
+   "title": "Gravel and sand, softened by forest",
+   "cite": [
+    "graves-doc:p7",
+    "graves-doc:p8",
+    "graves-doc:p9"
+   ]
+  },
+  "pessac-leognan": {
+   "title": "Gravel over fissured limestone",
+   "cite": [
+    "pessac-leognan-doc:p6",
+    "pessac-leognan-doc:p8"
+   ]
+  },
+  "saint-emilion": {
+   "title": "A limestone plateau above the Dordogne",
+   "cite": [
+    "saint-emilion-doc:p6",
+    "saint-emilion-doc:p8"
+   ]
+  },
+  "saint-emilion-grand-cru": {
+   "title": "Limestone plateau, rich Merlot",
+   "cite": [
+    "saint-emilion-grand-cru-doc:p5",
+    "saint-emilion-grand-cru-doc:p6",
+    "saint-emilion-grand-cru-doc:p8"
+   ]
+  },
+  "pomerol": {
+   "title": "Gravel over cool clay and iron",
+   "cite": [
+    "pomerol-doc:p6",
+    "pomerol-doc:p8"
+   ]
+  },
+  "sauternes": {
+   "title": "Noble rot in a particular microclimate",
+   "cite": [
+    "sauternes-doc:p3"
+   ]
+  },
+  "barsac": {
+   "title": "Noble rot on limestone",
+   "cite": [
+    "barsac-doc:p1",
+    "barsac-doc:p2",
+    "barsac-doc:p3"
+   ]
+  },
+  "bourgogne": {
+   "title": "Warm limestone slopes in a cool north",
+   "cite": [
+    "bourgogne-doc:p11",
+    "bourgogne-doc:p14"
+   ]
+  },
+  "cote-de-nuits-villages": {
+   "title": "Hard limestone sheltered from frost",
+   "cite": [
+    "cote-de-nuits-villages-doc:p7",
+    "cote-de-nuits-villages-doc:p8",
+    "cote-de-nuits-villages-doc:p9"
+   ]
+  },
+  "gevrey-chambertin": {
+   "title": "Clay-rich limestone, dark long-lived reds",
+   "cite": [
+    "gevrey-chambertin-doc:p5",
+    "gevrey-chambertin-doc:p6",
+    "gevrey-chambertin-doc:p8"
+   ]
+  },
+  "vougeot": {
+   "title": "Sheltered foothills on limestone",
+   "cite": [
+    "vougeot-doc:p7",
+    "vougeot-doc:p8"
+   ]
+  },
+  "vosne-romanee": {
+   "title": "Limestone scree on gentle east slopes",
+   "cite": [
+    "vosne-romanee-doc:p6",
+    "vosne-romanee-doc:p7"
+   ]
+  },
+  "nuits-saint-georges": {
+   "title": "East slopes with a warm mesoclimate",
+   "cite": [
+    "nuits-saint-georges-doc:p6",
+    "nuits-saint-georges-doc:p7",
+    "nuits-saint-georges-doc:p9"
+   ]
+  },
+  "cote-de-beaune-villages": {
+   "title": "Limestone and marl, 230 to 400 m",
+   "cite": [
+    "cote-de-beaune-villages-doc:p6",
+    "cote-de-beaune-villages-doc:p7",
+    "cote-de-beaune-villages-doc:p8",
+    "cote-de-beaune-villages-doc:p9"
+   ]
+  },
+  "aloxe-corton": {
+   "title": "The Corton hill's lean clay soils",
+   "cite": [
+    "aloxe-corton-doc:p7",
+    "aloxe-corton-doc:p9"
+   ]
+  },
+  "beaune": {
+   "title": "East-facing limestone in full sun",
+   "cite": [
+    "beaune-doc:p6",
+    "beaune-doc:p7",
+    "beaune-doc:p9"
+   ]
+  },
+  "pommard": {
+   "title": "Limestone and clay, firm reds",
+   "cite": [
+    "pommard-doc:p6",
+    "pommard-doc:p8"
+   ]
+  },
+  "volnay": {
+   "title": "Stony marl and limestone facing east",
+   "cite": [
+    "volnay-doc:p7",
+    "volnay-doc:p8",
+    "volnay-doc:p9"
+   ]
+  },
+  "meursault": {
+   "title": "Marl, limestone and dolomite for Chardonnay",
+   "cite": [
+    "meursault-doc:p7",
+    "meursault-doc:p8"
+   ]
+  },
+  "puligny-montrachet": {
+   "title": "Gentle east slopes for Chardonnay",
+   "cite": [
+    "puligny-montrachet-doc:p6",
+    "puligny-montrachet-doc:p7",
+    "puligny-montrachet-doc:p8",
+    "puligny-montrachet-doc:p9"
+   ]
+  },
+  "chassagne-montrachet": {
+   "title": "A sheltered south-east slope",
+   "cite": [
+    "chassagne-montrachet-doc:p6",
+    "chassagne-montrachet-doc:p7",
+    "chassagne-montrachet-doc:p8",
+    "chassagne-montrachet-doc:p9"
+   ]
+  },
+  "rully": {
+   "title": "East slopes 220 to 300 m up",
+   "cite": [
+    "rully-doc:p6",
+    "rully-doc:p7",
+    "rully-doc:p8"
+   ]
+  },
+  "mercurey": {
+   "title": "Slopes facing the rising sun",
+   "cite": [
+    "mercurey-doc:p6",
+    "mercurey-doc:p7",
+    "mercurey-doc:p8"
+   ]
+  },
+  "givry": {
+   "title": "Early sun above the Saône fog",
+   "cite": [
+    "givry-doc:p6",
+    "givry-doc:p7",
+    "givry-doc:p8"
+   ]
+  },
+  "montagny": {
+   "title": "Clay-rich limestone, fresh Chardonnay",
+   "cite": [
+    "montagny-doc:p5",
+    "montagny-doc:p6",
+    "montagny-doc:p7"
+   ]
+  },
+  "macon": {
+   "title": "Granite, limestone and hot summers",
+   "cite": [
+    "macon-doc:p7",
+    "macon-doc:p8"
+   ]
+  },
+  "pouilly-fuisse": {
+   "title": "Lean, stony slopes, Chardonnay only",
+   "cite": [
+    "pouilly-fuisse-doc:p6",
+    "pouilly-fuisse-doc:p7"
+   ]
+  },
+  "saint-veran": {
+   "title": "Very limy slopes facing the south",
+   "cite": [
+    "saint-veran-doc:p6",
+    "saint-veran-doc:p7",
+    "saint-veran-doc:p8"
+   ]
+  },
+  "cremant-de-bourgogne": {
+   "title": "Cool limestone slopes keep the acidity",
+   "cite": [
+    "cremant-de-bourgogne-doc:p9",
+    "cremant-de-bourgogne-doc:p11"
+   ]
+  },
+  "muscadet": {
+   "title": "Stony soils, sea breezes, one grape",
+   "cite": [
+    "muscadet-doc:p6",
+    "muscadet-doc:p7",
+    "muscadet-doc:p8"
+   ]
+  },
+  "muscadet-sevre-et-maine": {
+   "title": "Quick-warming soils on ancient rock",
+   "cite": [
+    "muscadet-sevre-et-maine-doc:p5",
+    "muscadet-sevre-et-maine-doc:p6",
+    "muscadet-sevre-et-maine-doc:p8"
+   ]
+  },
+  "anjou": {
+   "title": "Schist in the west, chalk in the east",
+   "cite": [
+    "anjou-doc:p8",
+    "anjou-doc:p9",
+    "anjou-doc:p10"
+   ]
+  },
+  "coteaux-du-layon": {
+   "title": "Morning mists bring noble rot",
+   "cite": [
+    "coteaux-du-layon-doc:p3",
+    "coteaux-du-layon-doc:p4"
+   ]
+  },
+  "savennieres": {
+   "title": "South-facing schist above the Loire",
+   "cite": [
+    "savennieres-doc:p5",
+    "savennieres-doc:p6",
+    "savennieres-doc:p8"
+   ]
+  },
+  "saumur": {
+   "title": "Tuffeau chalk hills and cool cellars",
+   "cite": [
+    "saumur-doc:p6",
+    "saumur-doc:p8",
+    "saumur-doc:p9"
+   ]
+  },
+  "saumur-champigny": {
+   "title": "Chalky slopes, a warm dry corner",
+   "cite": [
+    "saumur-champigny-doc:p6",
+    "saumur-champigny-doc:p7"
+   ]
+  },
+  "vouvray": {
+   "title": "Chenin at its climatic limit",
+   "cite": [
+    "vouvray-doc:p6",
+    "vouvray-doc:p8"
+   ]
+  },
+  "touraine": {
+   "title": "Flint-clay and limestone by the rivers",
+   "cite": [
+    "touraine-doc:p7",
+    "touraine-doc:p8",
+    "touraine-doc:p10"
+   ]
+  },
+  "bourgueil": {
+   "title": "A south-facing chalk slope",
+   "cite": [
+    "bourgueil-doc:p5",
+    "bourgueil-doc:p6",
+    "bourgueil-doc:p7"
+   ]
+  },
+  "chinon": {
+   "title": "Tuffeau and gravel in a warm corner",
+   "cite": [
+    "chinon-doc:p6",
+    "chinon-doc:p7",
+    "chinon-doc:p8"
+   ]
+  },
+  "sancerre": {
+   "title": "Steep marl, limestone and flint",
+   "cite": [
+    "sancerre-doc:p6",
+    "sancerre-doc:p8"
+   ]
+  },
+  "pouilly-fume": {
+   "title": "Sauvignon on marl, limestone and flint",
+   "cite": [
+    "pouilly-fume-doc:p5",
+    "pouilly-fume-doc:p7"
+   ]
+  },
+  "menetou-salon": {
+   "title": "Marl on limestone, drying winds",
+   "cite": [
+    "menetou-salon-doc:p7",
+    "menetou-salon-doc:p8",
+    "menetou-salon-doc:p9"
+   ]
+  },
+  "rose-danjou": {
+   "title": "Poor schist and chalk, fresh rosés",
+   "cite": [
+    "rose-danjou-doc:p6",
+    "rose-danjou-doc:p7",
+    "rose-danjou-doc:p8"
+   ]
+  },
+  "cabernet-danjou": {
+   "title": "Steady schist and chalk soils",
+   "cite": [
+    "cabernet-danjou-doc:p6",
+    "cabernet-danjou-doc:p8"
+   ]
+  },
+  "rose-de-loire": {
+   "title": "A climate tempered by the Loire",
+   "cite": [
+    "rose-de-loire-doc:p7",
+    "rose-de-loire-doc:p8",
+    "rose-de-loire-doc:p9"
+   ]
+  },
+  "cremant-de-loire": {
+   "title": "Tuffeau cellars for long ageing",
+   "cite": [
+    "cremant-de-loire-doc:p8",
+    "cremant-de-loire-doc:p9",
+    "cremant-de-loire-doc:p10"
+   ]
+  },
+  "cotes-du-rhone": {
+   "title": "Terraces, heat and the Mistral",
+   "cite": [
+    "cotes-du-rhone-doc:p9",
+    "cotes-du-rhone-doc:p11",
+    "cotes-du-rhone-doc:p12"
+   ]
+  },
+  "cotes-du-rhone-villages": {
+   "title": "Varied terraces, mostly Grenache",
+   "cite": [
+    "cotes-du-rhone-villages-doc:p8",
+    "cotes-du-rhone-villages-doc:p10"
+   ]
+  },
+  "cote-rotie": {
+   "title": "Steep gneiss and mica-schist terraces",
+   "cite": [
+    "cote-rotie-doc:p6",
+    "cote-rotie-doc:p8",
+    "cote-rotie-doc:p9"
+   ]
+  },
+  "condrieu": {
+   "title": "Granite terraces at Viognier's limit",
+   "cite": [
+    "condrieu-doc:p4",
+    "condrieu-doc:p6"
+   ]
+  },
+  "saint-joseph": {
+   "title": "Granite terraces on the right bank",
+   "cite": [
+    "saint-joseph-doc:p5",
+    "saint-joseph-doc:p6",
+    "saint-joseph-doc:p7",
+    "saint-joseph-doc:p10"
+   ]
+  },
+  "hermitage": {
+   "title": "A sun-facing granite hill",
+   "cite": [
+    "hermitage-doc:p6",
+    "hermitage-doc:p7",
+    "hermitage-doc:p9"
+   ]
+  },
+  "crozes-hermitage": {
+   "title": "Granite and Alpine gravel terraces",
+   "cite": [
+    "crozes-hermitage-doc:p6",
+    "crozes-hermitage-doc:p7",
+    "crozes-hermitage-doc:p8"
+   ]
+  },
+  "cornas": {
+   "title": "A warm granite amphitheatre",
+   "cite": [
+    "cornas-doc:p5",
+    "cornas-doc:p8"
+   ]
+  },
+  "chateauneuf-du-pape": {
+   "title": "Pebbles that store the day's heat",
+   "cite": [
+    "chateauneuf-du-pape-doc:p7",
+    "chateauneuf-du-pape-doc:p9"
+   ]
+  },
+  "gigondas": {
+   "title": "Molasse slopes below the Dentelles",
+   "cite": [
+    "gigondas-doc:p6",
+    "gigondas-doc:p7",
+    "gigondas-doc:p9"
+   ]
+  },
+  "vacqueyras": {
+   "title": "Stony terraces of the Ouvèze",
+   "cite": [
+    "vacqueyras-doc:p8",
+    "vacqueyras-doc:p9",
+    "vacqueyras-doc:p10"
+   ]
+  },
+  "lirac": {
+   "title": "Red clay and rolled pebbles",
+   "cite": [
+    "lirac-doc:p6",
+    "lirac-doc:p8"
+   ]
+  },
+  "tavel": {
+   "title": "Heat and wind that force rosé",
+   "cite": [
+    "tavel-doc:p6",
+    "tavel-doc:p7",
+    "tavel-doc:p9"
+   ]
+  },
+  "muscat-de-beaumes-de-venise": {
+   "title": "Sheltered terraces that concentrate sugar",
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p6",
+    "muscat-de-beaumes-de-venise-doc:p7",
+    "muscat-de-beaumes-de-venise-doc:p8"
+   ]
+  },
+  "bergerac": {
+   "title": "Limestone, sand and gravel by the Dordogne",
+   "cite": [
+    "bergerac-doc:p7",
+    "bergerac-doc:p10"
+   ]
+  },
+  "monbazillac": {
+   "title": "Morning mist and noble rot",
+   "cite": [
+    "monbazillac-doc:p3"
+   ]
+  },
+  "cahors": {
+   "title": "Limestone plateaus and the Lot's terraces",
+   "cite": [
+    "cahors-doc:p6",
+    "cahors-doc:p7",
+    "cahors-doc:p8"
+   ]
+  },
+  "madiran": {
+   "title": "Pyrenean foothills for late Tannat",
+   "cite": [
+    "madiran-doc:p5",
+    "madiran-doc:p6",
+    "madiran-doc:p8"
+   ]
+  },
+  "jurancon": {
+   "title": "Foehn winds on steep slopes",
+   "cite": [
+    "jurancon-doc:p4",
+    "jurancon-doc:p5"
+   ]
+  },
+  "beaujolais": {
+   "title": "Granite and clay-limestone facing east",
+   "cite": [
+    "beaujolais-doc:p11"
+   ]
+  },
+  "brouilly": {
+   "title": "Granite and porphyry, sheltered slopes",
+   "cite": [
+    "brouilly-doc:p6",
+    "brouilly-doc:p8"
+   ]
+  },
+  "fleurie": {
+   "title": "Poor pink granite sands",
+   "cite": [
+    "fleurie-doc:p6",
+    "fleurie-doc:p8"
+   ]
+  },
+  "morgon": {
+   "title": "Schist and granite above the Saône",
+   "cite": [
+    "morgon-doc:p6",
+    "morgon-doc:p7"
+   ]
+  },
+  "moulin-a-vent": {
+   "title": "Granite with manganese veins",
+   "cite": [
+    "moulin-a-vent-doc:p6",
+    "moulin-a-vent-doc:p8"
+   ]
+  },
+  "alsace": {
+   "title": "In the rain shadow of the Vosges",
+   "cite": [
+    "alsace-doc:p8",
+    "alsace-doc:p9",
+    "alsace-doc:p12"
+   ]
+  },
+  "cremant-dalsace": {
+   "title": "Cool nights keep the acidity",
+   "cite": [
+    "cremant-dalsace-doc:p7",
+    "cremant-dalsace-doc:p8",
+    "cremant-dalsace-doc:p9"
+   ]
+  },
+  "languedoc": {
+   "title": "A hot, dry climate rations water",
+   "cite": [
+    "languedoc-doc:p35",
+    "languedoc-doc:p36"
+   ]
+  },
+  "minervois": {
+   "title": "An amphitheatre below the Montagne Noire",
+   "cite": [
+    "minervois-doc:p7",
+    "minervois-doc:p8"
+   ]
+  },
+  "fitou": {
+   "title": "Dry, poor soils and short pruning",
+   "cite": [
+    "fitou-doc:p7"
+   ]
+  },
+  "corbieres": {
+   "title": "A stony, windy Mediterranean massif",
+   "cite": [
+    "corbieres-doc:p8",
+    "corbieres-doc:p9",
+    "corbieres-doc:p10"
+   ]
+  },
+  "picpoul-de-pinet": {
+   "title": "Sea air helps a late grape ripen",
+   "cite": [
+    "picpoul-de-pinet-doc:p6"
+   ]
+  },
+  "cotes-du-roussillon": {
+   "title": "Stony soils and the Tramontane",
+   "cite": [
+    "cotes-du-roussillon-doc:p7",
+    "cotes-du-roussillon-doc:p9"
+   ]
+  },
+  "cotes-du-roussillon-villages": {
+   "title": "Varied rock under the Tramontane",
+   "cite": [
+    "cotes-du-roussillon-villages-doc:p6"
+   ]
+  },
+  "bandol": {
+   "title": "A sea-tempered amphitheatre for Mourvèdre",
+   "cite": [
+    "bandol-doc:p5",
+    "bandol-doc:p6",
+    "bandol-doc:p8"
+   ]
+  },
+  "cotes-de-provence": {
+   "title": "Mistral, varied soils, pale rosé",
+   "cite": [
+    "cotes-de-provence-doc:p6",
+    "cotes-de-provence-doc:p7",
+    "cotes-de-provence-doc:p9"
+   ]
+  },
+  "champagne": {
+   "title": "Chalk slopes and natural acidity",
+   "cite": [
+    "champagne-doc:p7",
+    "champagne-doc:p9"
    ]
   },
   "barolo": {

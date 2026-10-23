@@ -1,0 +1,1280 @@
+{
+ "region": "fr-rhone",
+ "sheets": [
+  {
+   "id": "cotes-du-rhone",
+   "why": {
+    "text": "A Rhône valley of terraces and slopes with hot, dry summers and the drying Mistral wind, over 2,500 sun hours; Grenache leads in the south.",
+    "cite": [
+     "cotes-du-rhone-doc:p9",
+     "cotes-du-rhone-doc:p11",
+     "cotes-du-rhone-doc:p12"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     }
+    ],
+    "cite": [
+     "cotes-du-rhone-doc:p11",
+     "cotes-du-rhone-doc:p12"
+    ],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Mourvedre",
+     "Viognier",
+     "Muscardin",
+     "Terret Noir",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Roussanne",
+     "Syrah",
+     "Piquepoul Blanc",
+     "Piquepoul Noir",
+     "Marselan",
+     "Marsanne",
+     "Brun Argente",
+     "Carignan"
+    ],
+    "othersCite": [
+     "cotes-du-rhone-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still wines: reds (93% of production), rosés (4%) and whites (3%); reds and rosés may be sold as primeur or nouveau.",
+    "cite": [
+     "cotes-du-rhone-doc:p4",
+     "cotes-du-rhone-doc:p11"
+    ]
+   },
+   "climate": {
+    "text": "South is Mediterranean with hot, dry summers; north is temperate continental with similar low rainfall. The Mistral blows about 120 days a year, and sunshine always exceeds 2,500 hours a year.",
+    "cite": [
+     "cotes-du-rhone-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: river terrace soils, soils on marl and soft limestone, and eroded soils of marl, sand, sandstone or molasse.",
+    "cite": [
+     "cotes-du-rhone-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: fruity, generous, well coloured; lighter on sandy soils, richer and tannic on stony or clay soils. Rosés: fruity or floral. Whites: floral and round, sometimes exotic notes.",
+    "cite": [
+     "cotes-du-rhone-doc:p4",
+     "cotes-du-rhone-doc:p5"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Reds and rosés made to be drunk within months; vintage must be shown."
+     },
+     {
+      "name": "Côtes du Rhône Villages",
+      "text": "Set apart within the Côtes du Rhône family, with or without a place name."
+     },
+     {
+      "name": "Crus des Côtes du Rhône",
+      "text": "Separate named appellations carved out of the family, in both north and south."
+     }
+    ],
+    "cite": [
+     "cotes-du-rhone-doc:p12",
+     "cotes-du-rhone-doc:p14"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cotes-du-rhone-villages",
+   "why": {
+    "text": "Varied soils on terraces and slopes along the Rhône, hot dry summers, and the drying Mistral wind bring ripe grapes, mostly Grenache blends.",
+    "cite": [
+     "cotes-du-rhone-villages-doc:p8",
+     "cotes-du-rhone-villages-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     }
+    ],
+    "cite": [
+     "cotes-du-rhone-villages-doc:p4"
+    ],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Mourvedre",
+     "Viognier",
+     "Muscardin",
+     "Terret Noir",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Roussanne",
+     "Syrah",
+     "Piquepoul Blanc",
+     "Piquepoul Noir",
+     "Marsanne",
+     "Brun Argente",
+     "Carignan"
+    ],
+    "othersCite": [
+     "cotes-du-rhone-villages-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still, dry reds, rosés and whites; reds and rosés make up 98% of production.",
+    "cite": [
+     "cotes-du-rhone-villages-doc:p2",
+     "cotes-du-rhone-villages-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean in the south with hot, dry summers; temperate continental in the north. Mistral blows about 120 days a year, over 2,500 hours of sun.",
+    "cite": [
+     "cotes-du-rhone-villages-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Very varied: river terraces, marls and soft limestones, and eroded marls, sands, sandstones or molasse.",
+    "cite": [
+     "cotes-du-rhone-villages-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds and rosés: full, generous, good colour; lighter on sandy soils, richer and tannic on stony or clay soils. Whites: round, sometimes spice and vanilla.",
+    "cite": [
+     "cotes-du-rhone-villages-doc:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Villages with a place name",
+      "text": "Label may add one of 17 extra place names, such as Cairanne."
+     },
+     {
+      "name": "Red blend rule",
+      "text": "Grenache must be at least 50% of the blend, with Syrah or Mourvèdre."
+     }
+    ],
+    "cite": [
+     "cotes-du-rhone-villages-doc:p4",
+     "cotes-du-rhone-villages-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cote-rotie",
+   "why": {
+    "text": "Steep south-east terraced slopes of gneiss and mica-schist above the Rhône, with a semi-continental climate, make dark, silky Syrah.",
+    "cite": [
+     "cote-rotie-doc:p6",
+     "cote-rotie-doc:p8",
+     "cote-rotie-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Viognier"
+     }
+    ],
+    "cite": [
+     "cote-rotie-doc:p5",
+     "cote-rotie-doc:p7",
+     "cote-rotie-doc:p9"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only; Viognier is blended in with the Syrah in a small share.",
+    "cite": [
+     "cote-rotie-doc:p2",
+     "cote-rotie-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Semi-continental \"Lyonnais\" climate, with the last Mediterranean influences coming up the Rhône valley. The north wind (Bise) is frequent, and the south-east exposure is relatively sheltered and sunny.",
+    "cite": [
+     "cote-rotie-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Metamorphic soils: light gneiss-based soils on Côte Blonde, darker clay-rich mica-schist soils on Côte Brune. Fragile slopes are held by terraces and dry-stone walls.",
+    "cite": [
+     "cote-rotie-doc:p5",
+     "cote-rotie-doc:p6",
+     "cote-rotie-doc:p8",
+     "cote-rotie-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Red only: near-black colour turning garnet, black fruit and spice, sometimes violet with Viognier. Aged wines show toast, coffee, cocoa and cooked fruit. Tannins are silky.",
+    "cite": [
+     "cote-rotie-doc:p3",
+     "cote-rotie-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Côte Blonde",
+      "text": "Light gneiss soils, fairly often recalcified; Syrah and Viognier more often planted together."
+     },
+     {
+      "name": "Côte Brune",
+      "text": "Darker, clay-richer mica-schist soils with more iron, on narrow terraces."
+     }
+    ],
+    "cite": [
+     "cote-rotie-doc:p6",
+     "cote-rotie-doc:p8",
+     "cote-rotie-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "condrieu",
+   "why": {
+    "text": "Steep granite terraces on the Rhône's right bank, sheltered from the cold north wind, ripen Viognier fully at its northern limit.",
+    "cite": [
+     "condrieu-doc:p4",
+     "condrieu-doc:p6"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Viognier"
+     }
+    ],
+    "cite": [
+     "condrieu-doc:p3",
+     "condrieu-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wine only. In 2010 mostly dry, sometimes off-dry, with a tiny output of sweet wine from overripe grapes.",
+    "cite": [
+     "condrieu-doc:p1",
+     "condrieu-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "A favourable 'Lyonnais' mesoclimate on steep slopes. The cold, dry north wind (Bise) dries the leaves and limits disease. Vines sit on relatively sheltered, sunny south and south-east slopes.",
+    "cite": [
+     "condrieu-doc:p4",
+     "condrieu-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Mostly poor, friable sandy-clay soils from weathered granite, with rare loess lenses. Vines grow on narrow terraces held by small walls ('cheys').",
+    "cite": [
+     "condrieu-doc:p4"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Gold with intense golden glints. Strong ripe-fruit aromas of peach and above all apricot, sometimes violet and white flower. Powerful, remarkably balanced, rich and soft yet not heavy, with lively acidity and long finish.",
+    "cite": [
+     "condrieu-doc:p1",
+     "condrieu-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sec",
+      "text": "Most common style today; the label must say demi-sec, moelleux or doux when not dry."
+     },
+     {
+      "name": "Demi-sec",
+      "text": "Occasional off-dry style; must be labelled when sugar is above the 'sec' limit."
+     },
+     {
+      "name": "Moelleux / Doux",
+      "text": "Tiny production from overripe grapes; no enrichment or acidification at 45 g/l sugar or more."
+     }
+    ],
+    "cite": [
+     "condrieu-doc:p1",
+     "condrieu-doc:p2",
+     "condrieu-doc:p6",
+     "condrieu-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saint-joseph",
+   "why": {
+    "text": "Steep granite and gneiss terraces facing south on the Rhône's right bank, sheltered from the north wind, give elegant Syrah reds and Marsanne whites.",
+    "cite": [
+     "saint-joseph-doc:p5",
+     "saint-joseph-doc:p6",
+     "saint-joseph-doc:p7",
+     "saint-joseph-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Marsanne"
+     }
+    ],
+    "cite": [
+     "saint-joseph-doc:p7",
+     "saint-joseph-doc:p9"
+    ],
+    "others": [
+     "Roussanne"
+    ],
+    "othersCite": [
+     "saint-joseph-doc:p5",
+     "saint-joseph-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still reds (90% of output) and dry whites (10%); no rosé, sparkling or sweet wines.",
+    "cite": [
+     "saint-joseph-doc:p2",
+     "saint-joseph-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Continental 'Lyonnais' climate that gets the last Mediterranean influences up the Rhône valley. The cold, dry north wind (Bise) dries foliage and limits disease but makes conditions in theory poor for ripening, so fairly sheltered, sunny sites are chosen.",
+    "cite": [
+     "saint-joseph-doc:p6",
+     "saint-joseph-doc:p10"
+    ]
+   },
+   "soil": {
+    "text": "Mostly granitic sands and sandy clays, with some gneiss and mica-schist; limestone scree and loess in places, mainly under the white grapes.",
+    "cite": [
+     "saint-joseph-doc:p5",
+     "saint-joseph-doc:p6",
+     "saint-joseph-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: elegant and fine, with fruit, spice, liquorice or undergrowth notes; velvety tannins are sought. Whites: dry, very aromatic, with white honeyed flowers and a rich, fat texture.",
+    "cite": [
+     "saint-joseph-doc:p3",
+     "saint-joseph-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "hermitage",
+   "why": {
+    "text": "A sun-facing granite hill above the Rhône, sheltered from north winds, gives a very hot mesoclimate for Syrah, Marsanne and Roussanne.",
+    "cite": [
+     "hermitage-doc:p6",
+     "hermitage-doc:p7",
+     "hermitage-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Marsanne"
+     }
+    ],
+    "cite": [
+     "hermitage-doc:p4",
+     "hermitage-doc:p8"
+    ],
+    "others": [
+     "Roussanne"
+    ],
+    "othersCite": [
+     "hermitage-doc:p6",
+     "hermitage-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sweet"
+    ],
+    "text": "Still reds and whites only; the whites include a rare sweet vin de paille from dried grapes.",
+    "cite": [
+     "hermitage-doc:p3",
+     "hermitage-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "A very hot mesoclimate on a south-facing slope near the river, shielded from north winds by steep hills; spring frost risk is removed.",
+    "cite": [
+     "hermitage-doc:p7",
+     "hermitage-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "West: granite with mica-schist and gneiss, giving fragile sandy-clay granitic soils. East: old alluvial terraces with some wind-blown limestone loess on the hilltop.",
+    "cite": [
+     "hermitage-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The Pierreaiguille rock, at the south end of the hill, reaches 335 metres.",
+    "cite": [
+     "hermitage-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: intense colour, ripe fruit, spice and undergrowth, powerful and tannic, long-lived. Whites: floral, spicy, honeyed, fine acidity with some softness.",
+    "cite": [
+     "hermitage-doc:p4",
+     "hermitage-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vin de paille",
+      "text": "Sweet white from grapes dried at least 45 days; amber, candied fruit."
+     }
+    ],
+    "cite": [
+     "hermitage-doc:p4",
+     "hermitage-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "crozes-hermitage",
+   "why": {
+    "text": "Granite terraces and stony Alpine gravel terraces on the Rhône's left bank, with a Lyon-type climate and Mediterranean touches, planted mostly with Syrah.",
+    "cite": [
+     "crozes-hermitage-doc:p6",
+     "crozes-hermitage-doc:p7",
+     "crozes-hermitage-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "crozes-hermitage-doc:p2"
+    ],
+    "others": [
+     "Marsanne",
+     "Roussanne"
+    ],
+    "othersCite": [
+     "crozes-hermitage-doc:p2"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Still reds, mostly Syrah, and still whites from Marsanne and Roussanne.",
+    "cite": [
+     "crozes-hermitage-doc:p1",
+     "crozes-hermitage-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Lyon-type climate near the 45th parallel, with Mediterranean influence that is stronger south of Tain-l'Hermitage: good sun and high mean temperatures. Rainfall is fairly balanced.",
+    "cite": [
+     "crozes-hermitage-doc:p6",
+     "crozes-hermitage-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "North: granite sands on terraces held by dry-stone walls. South and east: Quaternary terraces of Alpine gravel, with some loess. The Chassis has rolled pebbles with little water reserve. Larnage has white kaolin sands.",
+    "cite": [
+     "crozes-hermitage-doc:p6",
+     "crozes-hermitage-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Southern reds: pleasant, aromatic, well structured but not excessive, medium keeping; all reds dark garnet. Northern hillside cuvées have more structure and ageing. Whites: pale with green glints; either fresh citrus, to drink young, or floral, spicy and rounder.",
+    "cite": [
+     "crozes-hermitage-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru des Côtes du Rhône",
+      "text": "Optional larger geographic mention allowed on the label."
+     }
+    ],
+    "cite": [
+     "crozes-hermitage-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cornas",
+   "why": {
+    "text": "A warm, south-facing granite amphitheatre sheltered from the north wind, with terraced slopes and only Syrah.",
+    "cite": [
+     "cornas-doc:p5",
+     "cornas-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "cornas-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wine only, made entirely from Syrah.",
+    "cite": [
+     "cornas-doc:p2",
+     "cornas-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Temperate 'Lyonnais' type climate, strongly shaped by the south exposure and shelter from the north wind. Grapes ripen early; harvest often starts a week before Hermitage.",
+    "cite": [
+     "cornas-doc:p5",
+     "cornas-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Mostly granite weathered from Tournon porphyritic granites; a small part on limestone scree at Pied-la-Vigne, and alluvial soils at the foot of slopes.",
+    "cite": [
+     "cornas-doc:p5",
+     "cornas-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Steep slopes on small terraces with dry-stone walls; newer vineyards on hills above 250 metres.",
+    "cite": [
+     "cornas-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Very dark garnet, almost black, turning amber with age. Powerful and structured, with abundant but silky tannins, and best after long ageing.",
+    "cite": [
+     "cornas-doc:p3",
+     "cornas-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "chateauneuf-du-pape",
+   "why": {
+    "text": "Pebbly Rhône terraces store the day's heat and release it at night, under a dry, sunny Mediterranean climate swept by the Mistral.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p7",
+     "chateauneuf-du-pape-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Clairette"
+     },
+     {
+      "local": "Roussanne"
+     }
+    ],
+    "cite": [
+     "chateauneuf-du-pape-doc:p3",
+     "chateauneuf-du-pape-doc:p8"
+    ],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Mourvedre",
+     "Muscardin",
+     "Terret Noir",
+     "Grenache Gris",
+     "Cinsaut",
+     "Clairette Rose",
+     "Piquepoul Blanc",
+     "Piquepoul Gris",
+     "Piquepoul Noir",
+     "Brun Argente",
+     "Syrah",
+     "Picardan"
+    ],
+    "othersCite": [
+     "chateauneuf-du-pape-doc:p4",
+     "chateauneuf-du-pape-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white"
+    ],
+    "text": "Dry still red and white wines; about 95% of production is red.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p2",
+     "chateauneuf-du-pape-doc:p3",
+     "chateauneuf-du-pape-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean climate under the cold, dry Mistral wind; under 650 mm of rain a year and about 2,800 hours of sun, one of the driest sectors of the Rhône valley.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Deep to shallow stony soils with many rolled pebbles in reddish clay (Villafranchian terraces); sandy molasse and sandstone soils in the north-east.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p7",
+     "chateauneuf-du-pape-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "A plateau at around 100 metres, of marine molasse resting on Urgonian limestone.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: powerful and structured, very complex, long aromatic finish, made for ageing. Whites: ample, very expressive, with good aromatic freshness.",
+    "cite": [
+     "chateauneuf-du-pape-doc:p3",
+     "chateauneuf-du-pape-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Clos",
+      "text": "Traditional label term allowed on the bottle."
+     },
+     {
+      "name": "Château",
+      "text": "Traditional label term allowed on the bottle."
+     },
+     {
+      "name": "Lieu-dit",
+      "text": "A smaller named place may be on the label if it is a registered plot."
+     }
+    ],
+    "cite": [
+     "chateauneuf-du-pape-doc:p3",
+     "chateauneuf-du-pape-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "gigondas",
+   "why": {
+    "text": "Hot summers and a cold, dry Mistral, on stony clay and limestone molasse slopes at 160 to 400 m below the Dentelles de Montmirail.",
+    "cite": [
+     "gigondas-doc:p6",
+     "gigondas-doc:p7",
+     "gigondas-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Syrah"
+     },
+     {
+      "local": "Mourvèdre"
+     }
+    ],
+    "cite": [
+     "gigondas-doc:p3",
+     "gigondas-doc:p8"
+    ],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Viognier",
+     "Muscardin",
+     "Terret Noir",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Roussanne",
+     "Piquepoul Blanc",
+     "Piquepoul Noir",
+     "Marsanne",
+     "Brun Argente"
+    ],
+    "othersCite": [
+     "gigondas-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose"
+    ],
+    "text": "Only still red and rosé wines; red makes up 99% of production.",
+    "cite": [
+     "gigondas-doc:p2",
+     "gigondas-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "A Provençal climate of contrasts: hot Mediterranean summers and violent Mistral winds, with torrential rain possible at the equinoxes. The Dentelles spare the vines the drawbacks of sun and Mistral.",
+    "cite": [
+     "gigondas-doc:p7",
+     "gigondas-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "The upper vineyard has light, skeletal, very warm sandy and limestone molasse soils that resist drought. The lower vineyard has old stony alluvium on Ouvèze terraces, mostly red, clay-rich and very stony.",
+    "cite": [
+     "gigondas-doc:p6",
+     "gigondas-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 160 and 400 metres, on west and north-west facing slopes. The Dentelles de Montmirail peak at 630 metres.",
+    "cite": [
+     "gigondas-doc:p6",
+     "gigondas-doc:p7",
+     "gigondas-doc:p9"
+    ]
+   },
+   "tastes": {
+    "text": "Red: age-worthy, ruby to dark garnet, structured and generous, with very ripe red and black fruit, turning to undergrowth and truffle. Rosé: deep pink, almond and cooked small fruit, heady yet balanced.",
+    "cite": [
+     "gigondas-doc:p3",
+     "gigondas-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru des Côtes du Rhône",
+      "text": "Larger geographical unit that labels may state alongside Gigondas."
+     }
+    ],
+    "cite": [
+     "gigondas-doc:p8",
+     "gigondas-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vacqueyras",
+   "why": {
+    "text": "Stony Ouvèze terraces of pebbles, sand and clay, in a hot, dry Mediterranean climate tempered by the Dentelles hills and the Mistral.",
+    "cite": [
+     "vacqueyras-doc:p8",
+     "vacqueyras-doc:p9",
+     "vacqueyras-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grenache"
+     },
+     {
+      "local": "Mourvèdre"
+     },
+     {
+      "local": "Syrah"
+     }
+    ],
+    "cite": [
+     "vacqueyras-doc:p4",
+     "vacqueyras-doc:p9"
+    ],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Viognier",
+     "Muscardin",
+     "Terret Noir",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Roussanne",
+     "Piquepoul Noir",
+     "Marsanne",
+     "Brun Argenté",
+     "Carignan"
+    ],
+    "othersCite": [
+     "vacqueyras-doc:p6",
+     "vacqueyras-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still reds, whites and rosés only; reds make up about 95% of production.",
+    "cite": [
+     "vacqueyras-doc:p2",
+     "vacqueyras-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Hot, dry Mediterranean climate with lots of sun. Annual rain is 600 to 800 mm, very irregular. The cold Mistral blows over 100 days a year.",
+    "cite": [
+     "vacqueyras-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Varied: limestone and gravel, sands, sandstone and clay, with rolled pebbles on the Garrigues terrace and Tertiary safres elsewhere.",
+    "cite": [
+     "vacqueyras-doc:p7",
+     "vacqueyras-doc:p8",
+     "vacqueyras-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards sit on Ouvèze terraces at 60 to 160 m. The nearby Dentelles de Montmirail peak at 630 m.",
+    "cite": [
+     "vacqueyras-doc:p7",
+     "vacqueyras-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Reds (95%): complex red and black fruit, then spice and leather; generous, structured, firm but not harsh tannins, age-worthy. Whites: floral with citrus. Rosés: coloured, rich, fruity.",
+    "cite": [
+     "vacqueyras-doc:p4",
+     "vacqueyras-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Cru des Côtes du Rhône",
+      "text": "Labels may add this larger geographic unit."
+     },
+     {
+      "name": "Clos",
+      "text": "Traditional mention allowed on labels."
+     },
+     {
+      "name": "Château",
+      "text": "Traditional mention allowed on labels."
+     }
+    ],
+    "cite": [
+     "vacqueyras-doc:p4",
+     "vacqueyras-doc:p11"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "lirac",
+   "why": {
+    "text": "Rhône terraces of red clay and rolled pebbles under a hot, sunny Mediterranean climate, dried by the Mistral wind.",
+    "cite": [
+     "lirac-doc:p6",
+     "lirac-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bourboulenc",
+     "Counoise",
+     "Mourvedre",
+     "Viognier",
+     "Grenache",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Ugni Blanc",
+     "Roussanne",
+     "Syrah",
+     "Piquepoul Blanc",
+     "Piquepoul Noir",
+     "Marsanne",
+     "Carignan"
+    ],
+    "othersCite": [
+     "lirac-doc:p5",
+     "lirac-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still reds, rosés and whites; reds are about 80% of production and rosés 11%.",
+    "cite": [
+     "lirac-doc:p2",
+     "lirac-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Mediterranean, shaped by the Mistral, with under 700 mm of rain a year and 2,700 hours of sun. The cold, dry Mistral blows about 180 days a year.",
+    "cite": [
+     "lirac-doc:p6",
+     "lirac-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Red clay with large rolled pebbles on high terraces; loess or thin clay-limestone soils on slopes and lower slopes. All are sensitive to summer drought.",
+    "cite": [
+     "lirac-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 50 and 200 metres.",
+    "cite": [
+     "lirac-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: dark, complex ripe red or black fruit, spice and leather, round tannins, built to age. Rosés: fruity, fresh, round. Whites: floral, garrigue and white fruit, long finish.",
+    "cite": [
+     "lirac-doc:p3",
+     "lirac-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "tavel",
+   "why": {
+    "text": "Mistral-swept, sunny, dry vineyards on free-draining soils, where water and heat stress can shrivel berries before reds ripen, forcing rosé.",
+    "cite": [
+     "tavel-doc:p6",
+     "tavel-doc:p7",
+     "tavel-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bourboulenc",
+     "Mourvedre",
+     "Grenache",
+     "Grenache Gris",
+     "Grenache Blanc",
+     "Cinsaut",
+     "Clairette",
+     "Clairette Rose",
+     "Syrah",
+     "Piquepoul Blanc",
+     "Piquepoul Gris",
+     "Piquepoul Noir",
+     "Calitor",
+     "Carignan Blanc",
+     "Carignan"
+    ],
+    "othersCite": [
+     "tavel-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "rose"
+    ],
+    "text": "Only still rosé is allowed; no red or white is made under the name.",
+    "cite": [
+     "tavel-doc:p2",
+     "tavel-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "The cold, dry Mistral wind sweeps the vineyard. Summers are hot and dry with lots of sun. Rainfall averages 700 mm a year and is very low while grapes ripen.",
+    "cite": [
+     "tavel-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Four free-draining soil types: clay-limestone combe with terra rossa, high pebble terrace, sandy slopes and valleys, and well-drained 'terres blanches' colluvium.",
+    "cite": [
+     "tavel-doc:p6",
+     "tavel-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The pebble terrace of Vallongue lies at about 120 m. The terres blanches fall from about 86 m to 63 m.",
+    "cite": [
+     "tavel-doc:p6",
+     "tavel-doc:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Structured, deep-coloured rosé. Young wines show very frank amylic or red-fruit notes and sometimes minerality. With age come liquorice, herbs, flint and spice. Round, very long finish.",
+    "cite": [
+     "tavel-doc:p3",
+     "tavel-doc:p8",
+     "tavel-doc:p9"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "muscat-de-beaumes-de-venise",
+   "why": {
+    "text": "Sunny south-facing terraces sheltered from the Mistral by the Dentelles de Montmirail, with lean, stony soils and dry summers that concentrate sugar in Muscat grapes.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p6",
+     "muscat-de-beaumes-de-venise-doc:p7",
+     "muscat-de-beaumes-de-venise-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Muscat À Petits Grains"
+     },
+     {
+      "local": "Muscat À Petits Grains"
+     }
+    ],
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p1"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "rose",
+     "red",
+     "fortified",
+     "sweet"
+    ],
+    "text": "Vins doux naturels: mostly white (95%), rarely rosé or red; fortified with neutral grape spirit during fermentation.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p1",
+     "muscat-de-beaumes-de-venise-doc:p5",
+     "muscat-de-beaumes-de-venise-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Intermediate climate with a Mediterranean tendency; two short dry seasons, a very marked dry summer, and rainy spring and autumn. The Dentelles de Montmirail shelter it from the Mistral.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p6",
+     "muscat-de-beaumes-de-venise-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Marls and sands, clay marls, limestone molasse and sandstone; around Beaumes-de-Venise, sands from Helvetian safre (the \"terres blondes\"). Lean, stony and naturally drained.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p6",
+     "muscat-de-beaumes-de-venise-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie between 200 and 450 metres; the Dentelles de Montmirail peak at 732 metres.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Whites are golden, with white flowers, honey, peach, apricot and lychee; sweet yet fresh. Muscat Rg wines are pink to purple with red and black fruit.",
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vin doux naturel",
+      "text": "Must fortified with neutral spirit; at least 15% alcohol and 100 g/l sugar."
+     },
+     {
+      "name": "Blanc",
+      "text": "About 95% of production; must is separated from the pulp before fortifying."
+     },
+     {
+      "name": "Rosé",
+      "text": "Black and white grapes macerated together, then fortified; rare."
+     },
+     {
+      "name": "Rouge",
+      "text": "Black grapes only, macerated with the pulp, fortified before or after; rare."
+     }
+    ],
+    "cite": [
+     "muscat-de-beaumes-de-venise-doc:p4",
+     "muscat-de-beaumes-de-venise-doc:p5",
+     "muscat-de-beaumes-de-venise-doc:p7"
+    ],
+    "styles[1]": {
+     "text": "About 95% of production; must is separated from the pulp before fermentation starts."
+    }
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

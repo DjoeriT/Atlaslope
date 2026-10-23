@@ -1,0 +1,104 @@
+{
+ "id": "saint-julien",
+ "title": "Why Saint-Julien tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Saint-Julien's vines sit on gravel ridges very close to the Gironde estuary, in soils of large pebbles that drain well by nature. Cabernet Sauvignon leads, and the tannic structure it brings gives the wines a remarkable ability to age.",
+  "cite": [
+   "saint-julien-doc:p3",
+   "saint-julien-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "ridges",
+   "beat": "place",
+   "title": "Gravel ridges by the estuary",
+   "paras": [
+    "The area lies in the Médoc peninsula, halfway between Bordeaux and the Pointe de Grave. Terraces step up between 10 and 30 metres above sea level, parallel to the Gironde estuary.",
+    "A dense network of streams, the \"esteys\" and \"jalles\", has cut those terraces into ridges called croupes. The marsh runs along the estuary. Streams and small valleys form several of the commune's boundaries.",
+    "Vines cover every gravel ridge, close to two thirds of the commune's land. Only a few châteaux with tree-lined parks stand alone among the vineyards. The damp marshes and the palus, the clay flats along the estuary, are used for grazing or are wooded."
+   ],
+   "cite": [
+    "saint-julien-doc:p5",
+    "saint-julien-doc:p6",
+    "saint-julien-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Beychevelle, the little port",
+     "point": [
+      -0.7405,
+      45.1387
+     ],
+     "zoom": 11,
+     "caption": "Beychevelle, a hamlet and small port, helped spread the fame of the wines.",
+     "cite": [
+      "saint-julien-doc:p7"
+     ]
+    },
+    {
+     "label": "The Gironde estuary shore",
+     "point": [
+      -0.74,
+      45.17
+     ],
+     "zoom": 10,
+     "caption": "The gravel ridges lie very close to the estuary, with marsh along its edge.",
+     "cite": [
+      "saint-julien-doc:p6",
+      "saint-julien-doc:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "An ocean and an estuary as thermostat",
+   "paras": [
+    "The climate is temperate and oceanic. The Atlantic and the Gironde have a regulating effect on temperature, which suits the making of a great vineyard.",
+    "Some years bring rainy autumn depressions. Others bring warm, very sunny late seasons. This ocean climate is behind a marked vintage effect."
+   ],
+   "cite": [
+    "saint-julien-doc:p6"
+   ]
+  },
+  {
+   "id": "pebbles",
+   "beat": "ground",
+   "title": "Big pebbles over old limestone",
+   "paras": [
+    "The deep bedrock is Oligocene limestone and marl, with clay. All of it is covered by the \"faciès à galets\", the pebble layer. This Quaternary deposit mixes coarse sand and gravel with large pebbles, often of quartz. The sand is more or less clayey.",
+    "Along the estuary, fine post-glacial clay and silt form the palus. In the small valleys, older deposits reworked down the slopes form colluvium. On the gravel terraces the soils are brown, more or less leached, or young podzols.",
+    "The slopes are low but well defined, and the vineyard has very favourable exposures. Its soils, with their large pebbles, drain well by nature."
+   ],
+   "cite": [
+    "saint-julien-doc:p6",
+    "saint-julien-doc:p8"
+   ]
+  },
+  {
+   "id": "red",
+   "beat": "rules",
+   "title": "Red only, led by Cabernet Sauvignon",
+   "paras": [
+    "Saint-Julien makes still red wine only, about 45,000 hl a year on average. Cabernet Sauvignon dominates. It brings finesse and power, and the tannic structure that follows gives the wines their long life.",
+    "Merlot stays in the blend for roundness and fruit. Cabernet Franc and Petit Verdot add structure and complexity. Petit Verdot also brings freshness in years of great ripeness. Cot and Carmenère are also permitted.",
+    "Vines are planted at a minimum of 7,000 per hectare, with rows no more than 1.50 m apart. The yield is set at 57 hl/ha. With yields held down, the grapes come in very ripe and healthy. They are also very concentrated.",
+    "That allows very long macerations and heavy extraction, for the structure the wines need to age. A long traditional ageing is then essential. It steadies the colour and coats the tannins, which lose their hardness.",
+    "Only about 900 hectares are planted, worked by 23 owners. The 1855 classification named nine crus classés here, and today there are 11 because one was divided. That makes the densest concentration of crus classés of any appellation.",
+    "The label may add the wider name \"Vin de Bordeaux - Médoc\" or \"Grand Vin de Bordeaux - Médoc\". Its letters may be no larger than two thirds of those of Saint-Julien."
+   ],
+   "cite": [
+    "saint-julien-doc:p2",
+    "saint-julien-doc:p3",
+    "saint-julien-doc:p4",
+    "saint-julien-doc:p5",
+    "saint-julien-doc:p7",
+    "saint-julien-doc:p8",
+    "saint-julien-doc:p9"
+   ]
+  }
+ ]
+}

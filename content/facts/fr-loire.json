@@ -1,0 +1,1512 @@
+{
+ "region": "fr-loire",
+ "sheets": [
+  {
+   "id": "muscadet",
+   "why": {
+    "text": "Mild ocean climate with cool summers and sea breezes, on stony, sandy, free-draining soils, and a single grape, Melon, kept on its lees.",
+    "cite": [
+     "muscadet-doc:p6",
+     "muscadet-doc:p7",
+     "muscadet-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Melon"
+     }
+    ],
+    "cite": [
+     "muscadet-doc:p5",
+     "muscadet-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry, still white wines only.",
+    "cite": [
+     "muscadet-doc:p2",
+     "muscadet-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate with little yearly temperature change. Winters are very mild and summers stay cool, with sea breezes. Rain is slightly below normal in the growing season, so sunshine is high for the latitude.",
+    "cite": [
+     "muscadet-doc:p6",
+     "muscadet-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Complex geology of granite, gabbro, gneiss and mica-schist, with local clays and pebbly sands. Soils are mostly brown, sandy and stony, free-draining, quick to warm, with limited water reserve and moderate fertility.",
+    "cite": [
+     "muscadet-doc:p6",
+     "muscadet-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Delicate aromas, mostly fruity or floral, with a balance dominated by freshness. Sur lie wines are usually rounder, more complex in aroma, and may be slightly spritzy.",
+    "cite": [
+     "muscadet-doc:p3",
+     "muscadet-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sur lie",
+      "text": "Aged on fine lees through at least one winter, then bottled at the winery."
+     },
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Label mention under its own production rules; the vintage must be shown."
+     },
+     {
+      "name": "Val de Loire",
+      "text": "Geographical name that may be added to the label under set rules."
+     }
+    ],
+    "cite": [
+     "muscadet-doc:p7",
+     "muscadet-doc:p9",
+     "muscadet-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "muscadet-sevre-et-maine",
+   "why": {
+    "text": "Coarse, quick-warming soils on ancient rocks, mild Atlantic winters and cool, sunny summers suit early Melon; ageing on fine lees adds roundness.",
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p5",
+     "muscadet-sevre-et-maine-doc:p6",
+     "muscadet-sevre-et-maine-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Melon"
+     }
+    ],
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p5",
+     "muscadet-sevre-et-maine-doc:p6"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry, still white wines only.",
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p2",
+     "muscadet-sevre-et-maine-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Strongly influenced by the Atlantic: very mild winters, noticeably colder in the south-east. Summers stay cool under ocean breezes, with low rainfall and plenty of sun.",
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p5"
+    ]
+   },
+   "soil": {
+    "text": "Varied ancient rocks (micaschist, gneiss, gabbro, granodiorite, granite) give brown, filtering, sandy and stony soils. Only healthy, shallow, moderately fertile plots that warm easily and hold little water are used.",
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p5",
+     "muscadet-sevre-et-maine-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Dry whites with a subtle balance of roundness and freshness. Complex fruity or floral aromas. Prolonged ageing sometimes lets them age well.",
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p2",
+     "muscadet-sevre-et-maine-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sur lie",
+      "text": "Bottled at the winery the year after harvest; generally rounder and more complex, sometimes spritzy."
+     },
+     {
+      "name": "Clisson",
+      "text": "Complementary name: very concentrated wines with intense ripe or cooked fruit."
+     },
+     {
+      "name": "Gorges",
+      "text": "Complementary name: powerful, acid and bitter-edged wines with mineral or minty aromas."
+     },
+     {
+      "name": "Le Pallet",
+      "text": "Complementary name: supple balance and a fine, mostly floral bouquet."
+     }
+    ],
+    "cite": [
+     "muscadet-sevre-et-maine-doc:p3",
+     "muscadet-sevre-et-maine-doc:p7",
+     "muscadet-sevre-et-maine-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "anjou",
+   "why": {
+    "text": "Schist in the west and tuffeau chalk in the east, a mild Atlantic climate tempered by the Loire, and chenin blanc as the star.",
+    "cite": [
+     "anjou-doc:p8",
+     "anjou-doc:p9",
+     "anjou-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chardonnay",
+     "Chenin",
+     "Grolleau",
+     "Grolleau Gris",
+     "Gamay",
+     "Sauvignon",
+     "Cabernet Sauvignon",
+     "Cabernet Franc",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "anjou-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Still reds and whites, from dry to sweet, plus sparkling white and rosé made by bottle fermentation.",
+    "cite": [
+     "anjou-doc:p2",
+     "anjou-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mild temperate oceanic climate, tempered by the Loire and the hillside sites; summers often hot. Hills shelter it from wet west winds. Rainfall is about 585 mm a year, against nearly 800 mm in the Choletais.",
+    "cite": [
+     "anjou-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "West, 'Anjou noir': schist, notably slate, on the old Armorican Massif. East, 'Anjou blanc': tuffeau chalk around Saumur. Soils are generally poor with moderate water reserves.",
+    "cite": [
+     "anjou-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: mostly dry, intense floral and fruity aromas, round and ample, fresh. Reds: good tannic structure, red fruit, light and best within three years. Sparkling: finesse.",
+    "cite": [
+     "anjou-doc:p3",
+     "anjou-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Anjou Gamay",
+      "text": "Red from Gamay, only from the 'Anjou noir' zone, at most 2 g/l sugar."
+     },
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Only for Anjou Gamay; the vintage must be shown on the label."
+     },
+     {
+      "name": "Demi-sec, moelleux, doux",
+      "text": "Sweeter white styles; the label must carry the mention."
+     },
+     {
+      "name": "Mousseux",
+      "text": "Sparkling white or rosé, bottle-fermented, at least 9 months on lees."
+     }
+    ],
+    "cite": [
+     "anjou-doc:p3",
+     "anjou-doc:p10",
+     "anjou-doc:p12",
+     "anjou-doc:p13"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "coteaux-du-layon",
+   "why": {
+    "text": "Shallow schist soils on slopes beside the Layon river, with morning mists, sun and wind that bring noble rot to Chenin grapes.",
+    "cite": [
+     "coteaux-du-layon-doc:p3",
+     "coteaux-du-layon-doc:p4"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chenin"
+     }
+    ],
+    "cite": [
+     "coteaux-du-layon-doc:p1",
+     "coteaux-du-layon-doc:p3"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wines with residual sugar, made from Chenin from naturally concentrated grapes.",
+    "cite": [
+     "coteaux-du-layon-doc:p1"
+    ]
+   },
+   "climate": {
+    "text": "An ideal mesoclimate: grapes get morning mists, then sun and wind, elements noble rot needs.",
+    "cite": [
+     "coteaux-du-layon-doc:p3",
+     "coteaux-du-layon-doc:p4"
+    ]
+   },
+   "soil": {
+    "text": "Shallow soils developed on schist, on slopes right beside the Layon.",
+    "cite": [
+     "coteaux-du-layon-doc:p3"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Racy, elegant, complex aromas, able to age. On the palate they combine suaveness and freshness, power and finesse.",
+    "cite": [
+     "coteaux-du-layon-doc:p1"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Sélection de grains nobles",
+      "text": "Optional label mention; the vintage year must be shown."
+     },
+     {
+      "name": "Premier Cru",
+      "text": "Reserved for wines carrying the added geographic name Chaume."
+     },
+     {
+      "name": "Chaume",
+      "text": "Complementary geographic name; cannot share a line with the words premier cru."
+     },
+     {
+      "name": "Commune name",
+      "text": "The commune where the grapes grew may follow the appellation name."
+     }
+    ],
+    "cite": [
+     "coteaux-du-layon-doc:p4",
+     "coteaux-du-layon-doc:p5",
+     "coteaux-du-layon-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "savennieres",
+   "why": {
+    "text": "South-facing schist hillsides above the Loire, shallow stony soils, a sheltered oceanic climate, and Chenin blanc grown for dry to sweet whites.",
+    "cite": [
+     "savennieres-doc:p5",
+     "savennieres-doc:p6",
+     "savennieres-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chenin"
+     }
+    ],
+    "cite": [
+     "savennieres-doc:p5",
+     "savennieres-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sweet"
+    ],
+    "text": "Still white wines, mostly dry, sometimes off-dry, sweet (moelleux) or very sweet (doux).",
+    "cite": [
+     "savennieres-doc:p2",
+     "savennieres-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate, softened by the Mauges hills (foehn effect). Rainfall averages 650 mm a year, against over 800 mm on the Mauges hills. Mean annual temperature is about 12 °C. The Loire keeps nights warm and favours morning mists, essential for noble rot.",
+    "cite": [
+     "savennieres-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Schist and sandy schist from the Upper Ordovician to Lower Devonian, with some volcanic veins and wind-blown sand. Soils are shallow, very stony, not very fertile and well drained, with low water reserve.",
+    "cite": [
+     "savennieres-doc:p5",
+     "savennieres-doc:p6",
+     "savennieres-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Pale yellow to golden. Floral (acacia, linden) and fruity (pear, peach, quince) notes with minerality. Ample, rich palate; fresh, mineral finish with slight bitterness. Age well.",
+    "cite": [
+     "savennieres-doc:p3",
+     "savennieres-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Dry",
+      "text": "Up to 4 g/l fermentable sugar, or 8 g/l if acidity is high enough."
+     },
+     {
+      "name": "Moelleux / doux",
+      "text": "Sweet wines from grapes concentrated by drying on the vine or noble rot."
+     }
+    ],
+    "cite": [
+     "savennieres-doc:p2",
+     "savennieres-doc:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saumur",
+   "why": {
+    "text": "Tuffeau chalk hills and cool cellars, a sheltered oceanic climate, and chenin and cabernet franc ripening on thin, quick-warming soils.",
+    "cite": [
+     "saumur-doc:p6",
+     "saumur-doc:p8",
+     "saumur-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet-Sauvignon"
+     },
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Gamay"
+     },
+     {
+      "local": "Grolleau"
+     },
+     {
+      "local": "Grolleau Gris"
+     },
+     {
+      "local": "Chenin"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Pinot Noir"
+     },
+     {
+      "local": "Pineau D'Aunis"
+     }
+    ],
+    "cite": [
+     "saumur-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "sparkling"
+    ],
+    "text": "Still white and red wines, plus sparkling white and rosé made by second fermentation in bottle.",
+    "cite": [
+     "saumur-doc:p1",
+     "saumur-doc:p4"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic, sheltered from wet winds by the Mauges hills. Rainfall is 550 to 600 mm a year, over 800 mm on the Mauges. Mean annual temperature is about 12 °C, and the Loire and its tributaries moderate it.",
+    "cite": [
+     "saumur-doc:p6",
+     "saumur-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Turonian chalk (tuffeau) with rendzinas and brown calcareous soils, sometimes topped with sands and clays. They warm well and hold a moderate water reserve.",
+    "cite": [
+     "saumur-doc:p6",
+     "saumur-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "Slopes lie between 40 and 110 metres.",
+    "cite": [
+     "saumur-doc:p6",
+     "saumur-doc:p8"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: ruby, fresh strawberry, raspberry and cherry fruit, silky supple tannins. Whites: dry, delicate, pale, white flowers, fresh. Sparkling: fine bubbles, fruit, white flowers and pastry notes.",
+    "cite": [
+     "saumur-doc:p2",
+     "saumur-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Puy-Notre-Dame",
+      "text": "Red mostly from cabernet franc; shorter pruning, aged until at least 1 June after harvest."
+     },
+     {
+      "name": "Saumur sparkling",
+      "text": "White or rosé, second fermentation in bottle, at least nine months on lees."
+     }
+    ],
+    "cite": [
+     "saumur-doc:p8",
+     "saumur-doc:p9",
+     "saumur-doc:p10",
+     "saumur-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "saumur-champigny",
+   "why": {
+    "text": "Chalky slopes with a relatively warm, dry, sheltered climate suit Cabernet Franc, giving fresh, round, supple reds.",
+    "cite": [
+     "saumur-champigny-doc:p6",
+     "saumur-champigny-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cabernet-Sauvignon",
+     "Cabernet Franc",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "saumur-champigny-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red"
+    ],
+    "text": "Still red wines only.",
+    "cite": [
+     "saumur-champigny-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate, sheltered from wet winds by the Mauges hills. Annual rainfall is 550 to 600 mm, against over 800 mm on the Mauges hills. Mean annual temperature is about 12 °C.",
+    "cite": [
+     "saumur-champigny-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Turonian chalk: rendzinas and brown limestone soils, locally topped with sands and clays. Good thermal behaviour, moderate water reserve, no waterlogging.",
+    "cite": [
+     "saumur-champigny-doc:p6",
+     "saumur-champigny-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Slopes of varied exposure at 40 to 110 metres.",
+    "cite": [
+     "saumur-champigny-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Very pleasant reds. Often a deep ruby colour, with aromas of red fruit or violet. Fresh, round and supple, good young or after some years.",
+    "cite": [
+     "saumur-champigny-doc:p2",
+     "saumur-champigny-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "vouvray",
+   "why": {
+    "text": "Chenin blanc on a soft-chalk tuffeau plateau, at the grape's climatic limit, with the Loire as a thermal regulator.",
+    "cite": [
+     "vouvray-doc:p6",
+     "vouvray-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Chenin"
+     }
+    ],
+    "cite": [
+     "vouvray-doc:p5",
+     "vouvray-doc:p6",
+     "vouvray-doc:p8"
+    ],
+    "others": [
+     "Orbois"
+    ],
+    "othersCite": [
+     "vouvray-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "White still wines from dry to sweet, plus sparkling (mousseux) and lightly sparkling (pétillant) wines.",
+    "cite": [
+     "vouvray-doc:p2",
+     "vouvray-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate between oceanic and continental influences; the Loire and the valleys moderate temperature. Summers usually have one heatwave of a few days. Rainfall is about 680 mm a year.",
+    "cite": [
+     "vouvray-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Soft chalk (Turonian tuffeau) under clay-silica layers and windblown silt. Slopes have clay-limestone soils, plateau edges clay-silica soils.",
+    "cite": [
+     "vouvray-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "The plateau lies between 85 and 110 metres.",
+    "cite": [
+     "vouvray-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Dry still wines: fruity and floral, with honey or linden when older. Sweeter ones: exotic or dried fruit, toasted almonds, quince. Sparkling: fine mousse, fruit, citrus, brioche.",
+    "cite": [
+     "vouvray-doc:p3",
+     "vouvray-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Vouvray mousseux",
+      "text": "Sparkling, second fermentation in bottle, at least 12 months ageing from tirage."
+     },
+     {
+      "name": "Vouvray pétillant",
+      "text": "Lightly sparkling, softer bubbles and more winey than mousseux; second fermentation in bottle."
+     },
+     {
+      "name": "Vouvray sec",
+      "text": "Still wine with at most 8 g/l fermentable sugar; label must say sec."
+     }
+    ],
+    "cite": [
+     "vouvray-doc:p2",
+     "vouvray-doc:p3",
+     "vouvray-doc:p9",
+     "vouvray-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "touraine",
+   "why": {
+    "text": "Flint-clay, limestone and gravel soils along river valleys, under an ocean climate that fades eastward, give fresh, round wines.",
+    "cite": [
+     "touraine-doc:p7",
+     "touraine-doc:p8",
+     "touraine-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Orbois",
+     "Cot",
+     "Chardonnay",
+     "Chenin",
+     "Grolleau",
+     "Grolleau Gris",
+     "Sauvignon Gris",
+     "Gamay",
+     "Sauvignon",
+     "Cabernet-Sauvignon",
+     "Pinot Noir",
+     "Cabernet Franc",
+     "Pinot Gris",
+     "Meunier",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "touraine-doc:p6",
+     "touraine-doc:p7"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Still white, red and rosé wines, plus white and rosé sparkling wines.",
+    "cite": [
+     "touraine-doc:p2",
+     "touraine-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Ocean climate that fades east of the Tours meridian. Rainfall is about 550 mm in the west and up to 650 mm in the east, with wider temperature swings east.",
+    "cite": [
+     "touraine-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Flint clay mixed with Miocene sands, stony clay-limestone on the first slopes, and old gravel terraces in the valleys.",
+    "cite": [
+     "touraine-doc:p7",
+     "touraine-doc:p8",
+     "touraine-doc:p10"
+    ]
+   },
+   "altitude": {
+    "text": "Rarely above 100 or 120 metres; the Amboise plateau lies at 80 to 100 metres.",
+    "cite": [
+     "touraine-doc:p7",
+     "touraine-doc:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: pale gold, citrus, exotic fruit or white flowers, fresh finish. Rosés: delicate blackcurrant, exotic fruit, citrus. Gamay reds: cherry colour, red berries, silky tannins. Cabernet franc reds: elegant, powerful, red and black fruit.",
+    "cite": [
+     "touraine-doc:p3",
+     "touraine-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Rosés and gamay reds; rosés made to drink within months; vintage on label."
+     },
+     {
+      "name": "Chenonceaux",
+      "text": "Cher slopes; whites aged until at least 30 April, reds 31 August."
+     },
+     {
+      "name": "Oisly",
+      "text": "Dry white from Sauvignon only, Sologne sands and gravels; aged until at least 30 April."
+     },
+     {
+      "name": "Mousseux",
+      "text": "Sparkling by second fermentation in bottle, at least 9 months before disgorgement."
+     }
+    ],
+    "cite": [
+     "touraine-doc:p3",
+     "touraine-doc:p10",
+     "touraine-doc:p11",
+     "touraine-doc:p12",
+     "touraine-doc:p14",
+     "touraine-doc:p15"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "bourgueil",
+   "why": {
+    "text": "Cabernet franc on a south-facing chalk slope and gravelly river terraces, in a climate milder and drier than the rest of Touraine.",
+    "cite": [
+     "bourgueil-doc:p5",
+     "bourgueil-doc:p6",
+     "bourgueil-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Franc"
+     }
+    ],
+    "cite": [
+     "bourgueil-doc:p5",
+     "bourgueil-doc:p6"
+    ],
+    "others": [
+     "Cabernet Sauvignon"
+    ],
+    "othersCite": [
+     "bourgueil-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose"
+    ],
+    "text": "Still red and rosé wines only; reds are about 95% of volume.",
+    "cite": [
+     "bourgueil-doc:p2",
+     "bourgueil-doc:p6"
+    ]
+   },
+   "climate": {
+    "text": "Milder and drier than Touraine overall: temperatures 1 °C higher and about 75 mm less rain a year. Wooded plateau shelters vines from cold north winds.",
+    "cite": [
+     "bourgueil-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Lower slope: brown limy soils on Turonian chalk or tuffeau. Mid-slope: clay-silica soils. Terraces and montilles: free-draining sandy gravel.",
+    "cite": [
+     "bourgueil-doc:p5",
+     "bourgueil-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: elegant, ruby to deep garnet, tannins present but melted, red and black fruit. Rosés: fresh red and white berries, sometimes citrus or pepper.",
+    "cite": [
+     "bourgueil-doc:p3",
+     "bourgueil-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "chinon",
+   "why": {
+    "text": "Chalky tuffeau and gravelly river soils in a warm, dry corner of the Loire, where Cabernet Franc ripens near the edge of its range.",
+    "cite": [
+     "chinon-doc:p6",
+     "chinon-doc:p7",
+     "chinon-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Chenin",
+     "Cabernet-Sauvignon",
+     "Cabernet Franc"
+    ],
+    "othersCite": [
+     "chinon-doc:p5"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "rose",
+     "white"
+    ],
+    "text": "Dry still wines: reds are 90% of volume, rosés 8% and whites 2%.",
+    "cite": [
+     "chinon-doc:p2",
+     "chinon-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic to semi-continental, warmer and drier than the rest of Touraine, with early spring growth; river air currents drain off cold air.",
+    "cite": [
+     "chinon-doc:p6"
+    ]
+   },
+   "soil": {
+    "text": "Soft Turonian chalk (tuffeau), clay-silica Senonian soils and filtering sandy-gravelly river-bed soils; only brown or shallow soils are kept.",
+    "cite": [
+     "chinon-doc:p6",
+     "chinon-doc:p7",
+     "chinon-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Reds: dark ruby to deep garnet, elegant, with tannins often well present but melted and small red and black fruit aromas. Rosés: often fresh red and white fruit. Whites: fruity and floral, able to turn to honey and quince.",
+    "cite": [
+     "chinon-doc:p3",
+     "chinon-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "sancerre",
+   "why": {
+    "text": "Steep hillsides of marl, limestone and flint above the Loire, with a sheltered, tempered oceanic climate that ripens Sauvignon and Pinot Noir evenly.",
+    "cite": [
+     "sancerre-doc:p6",
+     "sancerre-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "sancerre-doc:p5",
+     "sancerre-doc:p7"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Still, dry whites, rosés and reds; whites come from Sauvignon, reds and rosés from Pinot Noir.",
+    "cite": [
+     "sancerre-doc:p2",
+     "sancerre-doc:p7"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate, with a foehn effect from the Pays Fort massif to the west. Rainfall is about 650 mm, over 750 mm on the Pays Fort hills. The Loire drains cold air from the valleys and tempers temperatures during the growing season.",
+    "cite": [
+     "sancerre-doc:p6",
+     "sancerre-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Three soils: Kimmeridgian marls (terres blanches) with small oyster shells, soils on limestone (caillotes or cris), and clay-siliceous soils (chailloux or silex).",
+    "cite": [
+     "sancerre-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "Vines grow between 180 and 350 m, on slopes that can exceed 50% gradient. Hilltops reach 200 to 400 m.",
+    "cite": [
+     "sancerre-doc:p6"
+    ]
+   },
+   "tastes": {
+    "text": "Dry, round in the mouth, with a fresh, balanced finish. Whites: citrus or exotic fruit and white flowers. Rosés: delicate fruit. Reds: red fruit, supple tannins.",
+    "cite": [
+     "sancerre-doc:p2",
+     "sancerre-doc:p3",
+     "sancerre-doc:p7"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "pouilly-fume",
+   "why": {
+    "text": "Sauvignon on varied marl, limestone and flint soils, with a degraded oceanic climate evened out by the Loire.",
+    "cite": [
+     "pouilly-fume-doc:p5",
+     "pouilly-fume-doc:p7"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sauvignon"
+     }
+    ],
+    "cite": [
+     "pouilly-fume-doc:p5",
+     "pouilly-fume-doc:p6"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "white"
+    ],
+    "text": "Dry, still white wines only, pale yellow to gold.",
+    "cite": [
+     "pouilly-fume-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with 600 mm of rain a year; the Loire acts as a thermal regulator and the area is sheltered from western winds. Hot days and cool nights keep freshness and build aroma.",
+    "cite": [
+     "pouilly-fume-doc:p5",
+     "pouilly-fume-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Kimmeridgian marls (terres blanches), Oxfordian limestone (caillottes), flint (silex) and siliceous soils. Parcels are shallow and often steeply sloped.",
+    "cite": [
+     "pouilly-fume-doc:p5",
+     "pouilly-fume-doc:p7"
+    ]
+   },
+   "altitude": {
+    "text": "The area peaks at 270 m, over 100 m above the Loire valley floor.",
+    "cite": [
+     "pouilly-fume-doc:p5"
+    ]
+   },
+   "tastes": {
+    "text": "Dry whites with citrus and white-flower notes, varietal character and minerality. Complex, fine, generous and fresh.",
+    "cite": [
+     "pouilly-fume-doc:p2",
+     "pouilly-fume-doc:p6"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Blanc Fumé de Pouilly",
+      "text": "Equivalent name; local name for Sauvignon, whose ripe grapes get a grey bloom."
+     }
+    ],
+    "cite": [
+     "pouilly-fume-doc:p2",
+     "pouilly-fume-doc:p6"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "menetou-salon",
+   "why": {
+    "text": "Marl soils on a limestone slope, with a degraded oceanic climate and drying west and south-west winds, give fresh, fruity wines.",
+    "cite": [
+     "menetou-salon-doc:p7",
+     "menetou-salon-doc:p8",
+     "menetou-salon-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Sauvignon"
+     },
+     {
+      "local": "Pinot Noir"
+     }
+    ],
+    "cite": [
+     "menetou-salon-doc:p6",
+     "menetou-salon-doc:p8"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose"
+    ],
+    "text": "Dry still whites, reds and rosés; about two thirds of the vineyard is white.",
+    "cite": [
+     "menetou-salon-doc:p3",
+     "menetou-salon-doc:p8"
+    ]
+   },
+   "climate": {
+    "text": "Degraded oceanic climate with 800 to 850 mm of rain a year, a risk of many frost days (especially in spring) and open exposure to west and south-west winds.",
+    "cite": [
+     "menetou-salon-doc:p7",
+     "menetou-salon-doc:p8"
+    ]
+   },
+   "soil": {
+    "text": "Kimmeridgian marls (Saint-Doulchard marls) on a limestone cuesta, giving brown calcareous soils and brunified rendzinas.",
+    "cite": [
+     "menetou-salon-doc:p7",
+     "menetou-salon-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: pale yellow to gold, mineral and citrus notes, smooth attack, fresh finish. Reds: red fruit, fine tannins. Rosés: pale pink to deep salmon, fresh, delicately fruity.",
+    "cite": [
+     "menetou-salon-doc:p4",
+     "menetou-salon-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [],
+    "cite": []
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rose-danjou",
+   "why": {
+    "text": "Poor schist and tuffeau chalk soils, a mild Atlantic climate softened by the Loire, and low rainfall, give fresh rosés.",
+    "cite": [
+     "rose-danjou-doc:p6",
+     "rose-danjou-doc:p7",
+     "rose-danjou-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Cot",
+     "Grolleau",
+     "Grolleau Gris",
+     "Gamay",
+     "Cabernet-Sauvignon",
+     "Cabernet Franc",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "rose-danjou-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "rose"
+    ],
+    "text": "Still rosé wines only, with some residual sugar; may be sold as primeur or nouveau.",
+    "cite": [
+     "rose-danjou-doc:p2",
+     "rose-danjou-doc:p9"
+    ]
+   },
+   "climate": {
+    "text": "Temperate oceanic climate with small temperature swings, moderated by the Atlantic, the Loire and the hillside sites. Mild winters, long spring and autumn, frequent summer heat. Hills shelter from wet west winds. The higher Choletais and Mauges give a foehn effect and low rain: about 585 mm a year, against nearly 800 mm in the Choletais.",
+    "cite": [
+     "rose-danjou-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Western part ('Anjou noir'): schist, notably slate, on the Armorican Massif. Eastern part ('Anjou blanc'): tuffeau chalk of the Paris Basin around Saumur. Soils are generally poor, with moderate water reserve and good thermal behaviour. Grolleau, Grolleau Gris and Pineau d'Aunis sit on sandy-gravelly hills; Cabernets on shallow or brown soils; Gamay on Precambrian rock soils.",
+    "cite": [
+     "rose-danjou-doc:p6",
+     "rose-danjou-doc:p7",
+     "rose-danjou-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Fermentable sugars and a varying sweetness. Intense aromas, with fruit always present (peach, strawberry, citrus). A fine balance of freshness and roundness, with intense aromatic persistence.",
+    "cite": [
+     "rose-danjou-doc:p3",
+     "rose-danjou-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Optional label terms; vintage must be shown and volatile acidity at most 10.2 meq/l."
+     },
+     {
+      "name": "Clos",
+      "text": "Traditional term allowed on the label."
+     },
+     {
+      "name": "Château",
+      "text": "Traditional term allowed on the label."
+     }
+    ],
+    "cite": [
+     "rose-danjou-doc:p2",
+     "rose-danjou-doc:p3",
+     "rose-danjou-doc:p9",
+     "rose-danjou-doc:p10"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cabernet-danjou",
+   "why": {
+    "text": "Poor, thermally steady schist and chalk soils on river slopes, with a mild, dry Atlantic climate, give fresh yet round rosés.",
+    "cite": [
+     "cabernet-danjou-doc:p6",
+     "cabernet-danjou-doc:p8"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Cabernet Franc"
+     },
+     {
+      "local": "Cabernet Sauvignon"
+     }
+    ],
+    "cite": [
+     "cabernet-danjou-doc:p5"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "rose"
+    ],
+    "text": "Still rosé wines only, with some residual sugar, and sweetness that varies from wine to wine.",
+    "cite": [
+     "cabernet-danjou-doc:p2",
+     "cabernet-danjou-doc:p3"
+    ]
+   },
+   "climate": {
+    "text": "Mild temperate oceanic climate with small temperature swings, moderated by the Atlantic, the Loire and the slopes. Relief shelters the area from wet westerly winds, so rainfall is about 585 mm a year, against nearly 800 mm in the Choletais. Summers often bring strong heat.",
+    "cite": [
+     "cabernet-danjou-doc:p6",
+     "cabernet-danjou-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Two geological zones: schist in the west (\"Anjou noir\"), tuffeau chalk around Saumur in the east (\"Anjou blanc\"). Soils are generally poor, with moderate water reserves and good heat behaviour.",
+    "cite": [
+     "cabernet-danjou-doc:p6"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Rosés with some sweetness and intense aromas of the grapes. Fruit stays central: peach, strawberry, citrus. Balanced between freshness and roundness, with long aromatic persistence.",
+    "cite": [
+     "cabernet-danjou-doc:p2",
+     "cabernet-danjou-doc:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Primeur / Nouveau",
+      "text": "Optional terms for young wine; the vintage must be shown."
+     }
+    ],
+    "cite": [
+     "cabernet-danjou-doc:p2",
+     "cabernet-danjou-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "rose-de-loire",
+   "why": {
+    "text": "An oceanic climate tempered by the Loire, well-draining schist and clay-limestone soils, and grapes suited to both give a fresh dry rosé.",
+    "cite": [
+     "rose-de-loire-doc:p7",
+     "rose-de-loire-doc:p8",
+     "rose-de-loire-doc:p9"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Grolleau Noir",
+     "Grolleau Gris",
+     "Gamay",
+     "Cabernet Sauvignon",
+     "Pinot Noir",
+     "Cabernet Franc",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "rose-de-loire-doc:p6"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "rose"
+    ],
+    "text": "Dry still rosé only, with at least 9.5% natural alcohol and under 3 g/l sugar.",
+    "cite": [
+     "rose-de-loire-doc:p2"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate. In the west winters are mild and summers moderate; the east is more continental, with 550 to 650 mm of rain. The Loire and its tributaries moderate temperatures.",
+    "cite": [
+     "rose-de-loire-doc:p7"
+    ]
+   },
+   "soil": {
+    "text": "Schist or clay-schist in the west, clay-limestone in the east. Moderate water reserves and good drainage; the Turonian stage, source of tuffeau stone, is essential.",
+    "cite": [
+     "rose-de-loire-doc:p7",
+     "rose-de-loire-doc:p9"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Dry, usually salmon-pink, with light cherry and strawberry aromas. Powerful, fresh, round and harmonious on the palate, thirst-quenching, best enjoyed young.",
+    "cite": [
+     "rose-de-loire-doc:p2",
+     "rose-de-loire-doc:p3",
+     "rose-de-loire-doc:p8"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Rouget",
+      "text": "Early 20th-century Anjou name for fresh, low-alcohol rosé made in large volumes."
+     },
+     {
+      "name": "Vin gris",
+      "text": "Early 20th-century Touraine name for the same fresh, low-alcohol rosé style."
+     }
+    ],
+    "cite": [
+     "rose-de-loire-doc:p8",
+     "rose-de-loire-doc:p9"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  },
+  {
+   "id": "cremant-de-loire",
+   "why": {
+    "text": "Schist and clay-limestone soils with moderate water reserves, an oceanic climate tempered by the Loire, and tuffeau cellars for long bottle ageing.",
+    "cite": [
+     "cremant-de-loire-doc:p8",
+     "cremant-de-loire-doc:p9",
+     "cremant-de-loire-doc:p10"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Orbois",
+     "Chardonnay",
+     "Chenin",
+     "Grolleau",
+     "Grolleau Gris",
+     "Cabernet Sauvignon",
+     "Pinot Noir",
+     "Cabernet Franc",
+     "Pineau D'Aunis"
+    ],
+    "othersCite": [
+     "cremant-de-loire-doc:p7",
+     "cremant-de-loire-doc:p8"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "sparkling",
+     "white",
+     "rose"
+    ],
+    "text": "Quality sparkling wine, mostly white and a smaller share rosé, made by second fermentation in bottle.",
+    "cite": [
+     "cremant-de-loire-doc:p2",
+     "cremant-de-loire-doc:p9",
+     "cremant-de-loire-doc:p10"
+    ]
+   },
+   "climate": {
+    "text": "Oceanic climate: in the west mild winters and moderate summers; the east is more continental, with 550 to 650 mm of rain. The Loire regulates temperature.",
+    "cite": [
+     "cremant-de-loire-doc:p9"
+    ]
+   },
+   "soil": {
+    "text": "Schist or clay-schist in the west; clay-limestone (Cenomanian, Turonian, Senonian, Eocene) in the east. Moderate water reserves, good drainage. Turonian tuffeau gave the cellars.",
+    "cite": [
+     "cremant-de-loire-doc:p8"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Fine, delicate, persistent bubbles. Nose of white flowers with fruit such as peach or apricot. Palate fine and harmonious, joining freshness with softness.",
+    "cite": [
+     "cremant-de-loire-doc:p2",
+     "cremant-de-loire-doc:p3",
+     "cremant-de-loire-doc:p10"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Crémant de Loire",
+      "text": "Sparkling AOP, mostly white, some rosé; at most 13% total alcohol if must enriched.",
+      "cite": [
+       "cremant-de-loire-doc:p2"
+      ]
+     },
+     {
+      "name": "Val de Loire",
+      "text": "Geographic name that may be added to the appellation name on the label."
+     },
+     {
+      "name": "Minimum ageing",
+      "text": "Sold only after at least 12 months from bottling for second fermentation."
+     }
+    ],
+    "cite": [
+     "cremant-de-loire-doc:p2",
+     "cremant-de-loire-doc:p11",
+     "cremant-de-loire-doc:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

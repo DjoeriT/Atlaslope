@@ -1,0 +1,105 @@
+{
+ "id": "gigondas",
+ "title": "Why Gigondas tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The limestone Dentelles de Montmirail partly cut the southern Rhône valley from east to west, and they mark the edge of Gigondas. They limit the morning sun for Grenache and spare the vines the drawbacks of sun and Mistral.",
+  "cite": [
+   "gigondas-doc:p3",
+   "gigondas-doc:p6",
+   "gigondas-doc:p9"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "mountain",
+   "beat": "place",
+   "title": "Under the admirable mountain",
+   "paras": [
+    "The Dentelles de Montmirail are a limestone massif, an admirable mountain or \"mons mirabilis\". They mark the first Alpine advance towards the Rhône valley. They partly cut the valley from east to west and peak at 630 m at the Rocher du Turc.",
+    "The appellation covers the commune of Gigondas alone, in the Vaucluse. Its slopes tilt north-west down to the Ouvèze valley, which they overlook from a cliff.",
+    "The Trignon torrent marks the north and the Ouvèze the west. In 2009 the vineyard covered 1,230 hectares."
+   ],
+   "cite": [
+    "gigondas-doc:p4",
+    "gigondas-doc:p6",
+    "gigondas-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Dentelles de Montmirail",
+     "point": [
+      5.03,
+      44.18
+     ],
+     "zoom": 10,
+     "caption": "The limestone range peaks at 630 m at the Rocher du Turc.",
+     "cite": [
+      "gigondas-doc:p6"
+     ]
+    },
+    {
+     "label": "Ouvèze valley",
+     "point": [
+      4.99,
+      44.18
+     ],
+     "zoom": 10,
+     "caption": "The slopes tilt north-west to the Ouvèze valley, which they overlook from a cliff.",
+     "cite": [
+      "gigondas-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mistral",
+   "beat": "weather",
+   "title": "Sun and Mistral, with a shield",
+   "paras": [
+    "The climate is Provençal, a climate of contrasts with hot Mediterranean summers and violent Mistral winds. Rain can be torrential around the equinoxes.",
+    "The Mistral is cold and dry. It limits fungal disease and favours natural concentration in the berries. The Dentelles de Montmirail spare the vines the drawbacks of this climate.",
+    "The hillsides sit above the Rhône fogs and are protected from spring frost. Their west and north-west exposures protect them from excessive summer sun."
+   ],
+   "cite": [
+    "gigondas-doc:p7",
+    "gigondas-doc:p9"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Light on the heights, stones below",
+   "paras": [
+    "Vines grow between 160 m and 400 m. Most of the vineyard lies on two bases. The upper part rests on sandy and limestone molasse, with light, skeletal soils that are very warm and resist drought.",
+    "The lower part lies on old alluvium with split pebbles, on the terraces of the Ouvèze. These soils are most often red. Most drain freely, with many stones and plenty of clay.",
+    "The soils generally pair clay, which favours a controlled water supply, with many stones. The stones help the plots drain and have a very positive effect on heat while the grapes ripen."
+   ],
+   "cite": [
+    "gigondas-doc:p6",
+    "gigondas-doc:p8"
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Grenache and its partners",
+   "paras": [
+    "Only still red and rosé wines carry the name. Red makes up 99% of production, and 80% of the wine comes from private cellars.",
+    "Red and rosé come mostly from three grapes. Grenache brings tannins and roundness to the blend. By limiting the morning sun, the Dentelles lengthen its ripening considerably, and Grenache needs to ripen gradually.",
+    "Syrah, added in moderate amounts, strengthens colour and aromatic intensity. It also builds ageing ability.",
+    "Mourvèdre, with its high antioxidant power, is the perfect partner for Grenache. It lifts aromatic complexity and brings spicy notes. It suits ageing in wood perfectly.",
+    "Sorting the harvest is compulsory. A label may name a registered lieu-dit, a named plot on the land register, if it appears on the harvest declaration. It may also add the wider name Cru des Côtes du Rhône.",
+    "The red is a wine for keeping. Its shimmering colour runs from ruby to dark garnet. It is structured and generous, with very ripe red and black fruit when young, and it moves towards wild notes of undergrowth and truffle.",
+    "The rosé is a very small share of production, noted for its fullness in the mouth. Its colour is a deep pink with violet glints. The nose shows almond and cooked small fruit. In the mouth it is both heady and balanced."
+   ],
+   "cite": [
+    "gigondas-doc:p2",
+    "gigondas-doc:p3",
+    "gigondas-doc:p8",
+    "gigondas-doc:p9",
+    "gigondas-doc:p10"
+   ]
+  }
+ ]
+}

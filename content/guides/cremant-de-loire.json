@@ -1,0 +1,121 @@
+{
+ "id": "cremant-de-loire",
+ "title": "Why Crémant de Loire tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Saumur's chenin blanc wines showed a knack for a second fermentation in the bottle. Cellars dug into tuffeau, the stone that built the Loire châteaux, gave the wine large spaces of steady temperature to rest in.",
+  "cite": [
+   "cremant-de-loire-doc:p8",
+   "cremant-de-loire-doc:p9",
+   "cremant-de-loire-doc:p10"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "river",
+   "beat": "place",
+   "title": "About two hundred kilometres of river",
+   "paras": [
+    "The wine area runs along the Loire and three of its tributaries for about 200 kilometres. It covers 318 communes, some of them famous for their château.",
+    "The land is an undulating plateau. Part of it is ancient Primary-era rock from the foothills of the Massif Armoricain. The rest is younger rock from the south-west edge of the Paris Basin, mostly Secondary-era with a little Tertiary."
+   ],
+   "cite": [
+    "cremant-de-loire-doc:p8",
+    "cremant-de-loire-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "Saumur on the Loire",
+     "point": [
+      -0.077,
+      47.26
+     ],
+     "zoom": 10,
+     "caption": "Saumur's chenin wines showed an ability to make a second fermentation, and producers here mastered bubbles formed naturally in the bottle.",
+     "cite": [
+      "cremant-de-loire-doc:p9",
+      "cremant-de-loire-doc:p10"
+     ]
+    },
+    {
+     "label": "Vouvray",
+     "point": [
+      0.795,
+      47.41
+     ],
+     "zoom": 10,
+     "caption": "Producers in Vouvray, as in Saumur, mastered bubbles formed naturally in the bottle. In the 17th and 18th centuries Dutch ships came up the Loire to buy wine here, mostly white.",
+     "cite": [
+      "cremant-de-loire-doc:p9",
+      "cremant-de-loire-doc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Ocean in the west, more continental in the east",
+   "paras": [
+    "The climate is oceanic, with a few nuances. In the west the ocean's influence is strongest. Temperatures there are regular and winters are mild. Summer heat stays moderate.",
+    "Towards the east the range between warm and cold tends to grow. The eastern fringe, the vineyards of the Sologne, has a more continental influence. It also gets a little more rain than the rest of the area, between 550 and 650 mm a year.",
+    "Across it all, the Loire and its tributaries act as a thermal regulator."
+   ],
+   "cite": [
+    "cremant-de-loire-doc:p9"
+   ]
+  },
+  {
+   "id": "tuffeau",
+   "beat": "ground",
+   "title": "The stone that built the châteaux",
+   "paras": [
+    "The western vineyards sit on schist or clay-schist. The eastern ones sit on clay-limestone from four geological stages, from the Cenomanian to the Eocene. All these soils hold moderate reserves of water and drain well.",
+    "The Turonian layer is essential. It gave tuffeau, the stone quarried to build the Loire châteaux and the region's buildings in general. The quarries left countless cavities.",
+    "Those quarries became cellars with constant temperature and humidity, used to grow mushrooms and to store wine. Sparkling wine needs large, tempered spaces for storage and handling, so the cellars favoured its growth. Some galleries were dug only to store bottles."
+   ],
+   "cite": [
+    "cremant-de-loire-doc:p8",
+    "cremant-de-loire-doc:p9",
+    "cremant-de-loire-doc:p10"
+   ]
+  },
+  {
+   "id": "bubbles",
+   "beat": "rules",
+   "title": "Bottle-fermented, white and rosé",
+   "paras": [
+    "Crémant de Loire is a quality sparkling wine, mostly white and with a smaller share of rosé. It is made by second fermentation in the bottle. If the must was enriched, total alcohol may not pass 13% after the second fermentation, before the final sweetening liqueur is added.",
+    "Nine grapes may be used for it. Three are white: chenin, chardonnay and orbois. Grolleau gris has grey skins. The five dark grapes are cabernet franc, cabernet sauvignon, pinot noir, pineau d'Aunis and grolleau. Local climate differences and very varied soils let growers place each grape where it suits. That variety helps when blending the cuvées.",
+    "Irrigation is banned. Grapes travel in containers that are not watertight, piled no more than 40 cm deep. They must be pressed within 24 hours of picking. The aim is to keep the grape whole and limit oxidation until it reaches the press. The yield is set at 74 hl/ha.",
+    "Bottling for the second fermentation starts from 1 December after harvest. The wine is sold only after at least 12 months from bottling. A long ageing period lets the wine develop its aromas. It also gains complexity and finesse.",
+    "The label may add the name Val de Loire. It may also name a lieu-dit, a named plot in the land register, if it appears on the harvest declaration. The traditional terms Clos and Château may also be used."
+   ],
+   "cite": [
+    "cremant-de-loire-doc:p2",
+    "cremant-de-loire-doc:p3",
+    "cremant-de-loire-doc:p4",
+    "cremant-de-loire-doc:p5",
+    "cremant-de-loire-doc:p7",
+    "cremant-de-loire-doc:p8",
+    "cremant-de-loire-doc:p10",
+    "cremant-de-loire-doc:p11",
+    "cremant-de-loire-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Angers, where the idea was tested",
+     "point": [
+      -0.555,
+      47.47
+     ],
+     "zoom": 10,
+     "caption": "In 1838 a commission at the Angers industrial exhibition declared that making wines equal to Champagne at home was proven possible.",
+     "cite": [
+      "cremant-de-loire-doc:p9"
+     ]
+    }
+   ]
+  }
+ ]
+}

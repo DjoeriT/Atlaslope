@@ -1,0 +1,118 @@
+{
+ "id": "bordeaux",
+ "title": "Why Bordeaux tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Large bodies of water around the vines play an important role in regulating temperature. Gravel terraces by the rivers and clay-limestone slopes led growers to choose different grapes for each kind of ground.",
+  "cite": [
+   "bordeaux-doc:p10",
+   "bordeaux-doc:p13"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "rivers",
+   "beat": "place",
+   "title": "Two rivers and an estuary",
+   "paras": [
+    "The vineyard is the largest appellation territory in France. It covers 501 of the 542 communes of the Gironde. It leaves out the south-west of the department, which is given over to forestry.",
+    "The Dordogne drains the north and the Garonne the south. They join at the Bec d'Ambès to form the Gironde estuary. That makes three large blocks. The Nord-Gironde lies on the right bank of the Dordogne and the estuary. The middle block lies between the two rivers. The third is the left bank of the Garonne and the estuary."
+   ],
+   "cite": [
+    "bordeaux-doc:p10",
+    "bordeaux-doc:p11"
+   ],
+   "fly": [
+    {
+     "label": "Bec d'Ambès, where the rivers join",
+     "point": [
+      -0.567,
+      45.036
+     ],
+     "zoom": 10,
+     "caption": "The Dordogne and the Garonne unite here to form the Gironde estuary.",
+     "cite": [
+      "bordeaux-doc:p11"
+     ]
+    },
+    {
+     "label": "The city of Bordeaux",
+     "point": [
+      -0.5792,
+      44.8378
+     ],
+     "zoom": 11,
+     "caption": "The main towns of the Gironde are river ports that grew around the wine trade.",
+     "cite": [
+      "bordeaux-doc:p14"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "beat": "weather",
+   "title": "An unpredictable ocean climate",
+   "paras": [
+    "The Atlantic and the Gironde estuary play an important role in regulating temperature. So do the large valleys of the Garonne and the Dordogne. The ocean's moderating effect on spring frost fades away from the sea and the large valleys. It also fades near the great forests, the Landes among them. Vines are therefore thin on the ground at the northern and south-south-western ends of the zone.",
+    "Rain is well spread through the year, on average between 700 and 800 mm a year. Late in summer, the ocean weather from the west varies from year to year. Some years bring a few rainy autumn depressions. Others bring warm, very sunny late seasons. This unpredictable oceanic climate is the origin of the marked vintage effect."
+   ],
+   "cite": [
+    "bordeaux-doc:p10"
+   ],
+   "fly": [
+    {
+     "label": "The Gironde estuary",
+     "point": [
+      -0.73,
+      45.28
+     ],
+     "zoom": 9,
+     "caption": "The estuary is one of the large bodies of water that temper the climate of the vineyards.",
+     "cite": [
+      "bordeaux-doc:p10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Gravel by the rivers, clay-limestone on the slopes",
+   "paras": [
+    "The rocks under the vineyard are fairly uniform. They are all Tertiary and Quaternary. In the north they rest on older Jurassic and Cretaceous beds. Most are Eocene and Oligocene marls and limestones, with molasse among them. There are also gravelly and sandy river deposits, often hidden under a layer of silt.",
+    "On the Tertiary rock, brown clay-limestone soils dominate. Along the rivers, gravel deposits form terraces that are well drained and warm. Recent alluvial deposits where clay dominates make the soils called palus.",
+    "Soils and aspects led growers to choose different grapes for each place. Four distinct kinds of ground stand out. Clay-limestone and limy marl cover many slopes, where merlot does very well. Siliceous soils mixed with clay and limy elements are perfect for merlot and sauvignon, for example. The boulbènes, light soils of fine siliceous material, suit dry white wines. Gravel soils, with rolled quartz and sand in them, form well-drained, warm terraces. They are perfect for the vine, and for cabernet-sauvignon in particular.",
+    "Matching grapes to the ground gives wines in a style of their own, marked by great aromatic richness."
+   ],
+   "cite": [
+    "bordeaux-doc:p11",
+    "bordeaux-doc:p13"
+   ]
+  },
+  {
+   "id": "blends",
+   "beat": "rules",
+   "title": "Merlot with the cabernets",
+   "paras": [
+    "The wines are still wines: white, rosé and above all red. Whites are dry or keep some fermentable sugar, between 5 and 60 grams a litre. On average the vineyard makes 300,000 hl of white, 200,000 hl of rosé and more than 2,000,000 hl of red.",
+    "Reds are often mostly merlot. They are soft, fruity and low in acidity. In very ripe years petit verdot and cot can freshen them with their acidity. But the main pairing today is merlot with cabernet-sauvignon, and to a lesser degree cabernet franc. The cabernets give aromatic complexity and tannic power, which let the wines keep and develop their bouquet.",
+    "Dry whites from sauvignon are very aromatic, fresh and fruity, with floral and citrus notes. Sémillon brings volume and richness, and muscadelle adds floral aromas. In the blend, the minor grapes bring acidity and citrus notes. These thirst-quenching wines are best drunk young, at one or two years.",
+    "Whites with fermentable sugar are built around sémillon. They are round and full, golden, with candied fruit aromas. Sauvignon can join them and bring freshness. They can age for a few years or be enjoyed young.",
+    "Rosés are mainly made by bleeding off red grape tanks before fermentation. Clairets get a light maceration of a few hours first. They are darker and richer, and very perfumed. Rosés and clairets are good young, at one or two years old. Their volumes keep growing.",
+    "From 1152 the English imported Bordeaux wines and called them «Claret» for their light colour. Today a red may add the label term claret. A dark rosé may add the term clairet. White wines may add the place name Haut-Benauge after Bordeaux, in letters no bigger than the appellation's.",
+    "At the end of the 18th century the cabernets were the main grapes, with cot and petit verdot. Merlot only really began to spread from 1830. It spread mostly once grafting reduced its tendency to coulure and millerandage, when flowers drop or berries set unevenly. Today it is the main grape. A classification of Gironde wines, made in 1855 for the Universal Exhibition, shows the idea of the château."
+   ],
+   "cite": [
+    "bordeaux-doc:p3",
+    "bordeaux-doc:p4",
+    "bordeaux-doc:p5",
+    "bordeaux-doc:p11",
+    "bordeaux-doc:p12",
+    "bordeaux-doc:p13",
+    "bordeaux-doc:p14",
+    "bordeaux-doc:p15"
+   ]
+  }
+ ]
+}

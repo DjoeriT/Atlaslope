@@ -1,0 +1,125 @@
+{
+ "id": "gevrey-chambertin",
+ "title": "Why Gevrey-Chambertin tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "On the main slope, shallow soils rich in clay and iron oxides give powerful, deeply coloured wines that keep for a long time. On the more gravelly, free-draining fan of the Combe Lavaux the wines are fruitier and lighter in structure, and they open sooner.",
+  "cite": [
+   "gevrey-chambertin-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "A ridge south of Dijon",
+   "paras": [
+    "The vineyards lie in the Côte de Nuits, a straight ridge about 25 km long that runs north to south. It is tectonic in origin. It separates the limestone plateaux of the Hautes Côtes to the west from the Bresse plain to the east.",
+    "The Hautes Côtes lie at 400 to 500 m. The plain below the Côte is close to 250 m. The front of the Côte itself drops about 150 m.",
+    "The appellation covers only two communes of the Côte-d'Or: Gevrey-Chambertin and Brochon. The vineyard was close to 410 hectares in 2008. It made an average of about 17,000 hl a year.",
+    "A deep dry valley, the Combe Lavaux, cuts the ridge. At its mouth a wide fan of debris spreads 2 to 3 km into the plain."
+   ],
+   "cite": [
+    "gevrey-chambertin-doc:p4",
+    "gevrey-chambertin-doc:p5",
+    "gevrey-chambertin-doc:p6",
+    "gevrey-chambertin-doc:p8"
+   ],
+   "fly": [
+    {
+     "label": "Combe Lavaux",
+     "point": [
+      4.9505,
+      47.2262
+     ],
+     "zoom": 11,
+     "caption": "A deep dry valley cuts the Côte here. Its fan of debris reaches 2 to 3 km into the plain.",
+     "cite": [
+      "gevrey-chambertin-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool and sheltered",
+   "paras": [
+    "The climate is cool and oceanic, disturbed by continental or southern influences that follow the Rhône-Saône axis. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5°C.",
+    "The Côte lies east of the Morvan massif and the plateaux of Burgundy. It is sheltered there. That gives it a thermal advantage and a rain deficit that is notable for the region."
+   ],
+   "cite": [
+    "gevrey-chambertin-doc:p5",
+    "gevrey-chambertin-doc:p6"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Compact limestone and marl",
+   "paras": [
+    "The front of the Côte is a series of Bajocian and Bathonian limestones, from the Middle Jurassic. The very compact Comblanchien limestone forms its backbone. A layer of marl, a clayey limestone, runs through the lower slope and shows as a gentle shelf.",
+    "Between the villages of Gevrey-Chambertin and Brochon, a small raised block brings Lower Jurassic marls to the surface at the foot of the slope. Limestone from the Bajocian sits above them, once quarried.",
+    "The limestone is often hidden under a spread of scree mixed with clay and silt. High on the slope this cover is very stony and thin. At the foot it holds more fine particles and is thicker, a few decimetres to 1 m.",
+    "The soils are young, generally rich in lime and thin. They drain well in spite of a high clay content. On the slope they run from lean, very limy soils at the top to soils with more clay lower down. At the foot they are relatively deep (0.50 m) and free of lime at the surface.",
+    "The Combe Lavaux fan is different. It is made of gravelly alluvium. Its soils are very free-draining with little clay. They are rich in limestone pebbles."
+   ],
+   "cite": [
+    "gevrey-chambertin-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Gevrey-Chambertin, on the slope",
+     "point": [
+      4.9692,
+      47.2256
+     ],
+     "zoom": 11,
+     "caption": "The vines sit on the face of the Côte, on either side of the Combe Lavaux. They also cover the upper part of its fan.",
+     "cite": [
+      "gevrey-chambertin-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pinot",
+   "beat": "rules",
+   "title": "Pinot Noir, red only",
+   "paras": [
+    "The wines are dry still reds. Natural alcohol is at least 10.5%. After enrichment it may not pass 13.5%.",
+    "Pinot Noir, a grape native to Burgundy, dominates the plantings. The cool climate helps it flourish fully. So do the combes and valleys along the Côte and its marly Jurassic limestone soils.",
+    "The variety list adds Chardonnay and Pinot Blanc. It also names Pinot Gris.",
+    "It is usual to age the wines for several months. That gives them a great ability to keep.",
+    "The yield is set at 50 hl/ha. Vines are planted at a minimum of 9,000 per hectare. Wood chips are forbidden in the winemaking.",
+    "Labels may add \"premier cru\" with one of 26 listed climats, the named vineyard sites, such as Clos Saint-Jacques. The climat comes right after the appellation name, in letters no larger than it.",
+    "A label may also name a lieu-dit, a place in the land register, if it is on the harvest declaration. It is printed at most half the size of the appellation name. A label may add the wider \"Vin de Bourgogne\" or \"Grand vin de Bourgogne\".",
+    "If a grape is named on the label, it stays out of the field of view of the compulsory details. Its letters are no taller than 2 mm."
+   ],
+   "cite": [
+    "gevrey-chambertin-doc:p2",
+    "gevrey-chambertin-doc:p3",
+    "gevrey-chambertin-doc:p4",
+    "gevrey-chambertin-doc:p5",
+    "gevrey-chambertin-doc:p7",
+    "gevrey-chambertin-doc:p8",
+    "gevrey-chambertin-doc:p11",
+    "gevrey-chambertin-doc:p12"
+   ],
+   "fly": [
+    {
+     "label": "Château of the abbot of Cluny",
+     "point": [
+      4.9693,
+      47.2268
+     ],
+     "zoom": 11,
+     "caption": "In 1257 the abbot of Cluny had a château built at Gevrey that also served as a cellar for the abbey's harvest.",
+     "cite": [
+      "gevrey-chambertin-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

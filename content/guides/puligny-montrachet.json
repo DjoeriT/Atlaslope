@@ -1,0 +1,135 @@
+{
+ "id": "puligny-montrachet",
+ "title": "Why Puligny-Montrachet tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "A cool climate is balanced by gentle slopes that open toward the sunrise. Together they help Chardonnay, Burgundy's own grape, reach its best.",
+  "cite": [
+   "puligny-montrachet-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "slope",
+   "beat": "place",
+   "title": "One village on a faulted slope",
+   "paras": [
+    "The appellation covers a single village, Puligny-Montrachet, 15 km south of Beaune in the Côte-d'Or. It sits on the Côte de Beaune, a straight ridge of tectonic origin that runs north-east to south-west.",
+    "The Côte separates the limestone plateaux of the Hautes Côtes from the Bresse plain. The plateaux lie at 400 to 500 m, and the plain, in line with the Côte, at close to 200 m.",
+    "At Puligny the face of the Côte drops about 200 m. The lie of the land is fairly complex, born of varied rock and intense faulting. The hardest limestone layers form unfarmed ledges, left to scrub or dry grassland. The Mont Rachet, which gave its name to a famous cru, forms one of these steps."
+   ],
+   "cite": [
+    "puligny-montrachet-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "Mont Rachet",
+     "point": [
+      4.7415,
+      46.9445
+     ],
+     "zoom": 11,
+     "caption": "One of the hard limestone ledges on the slope is the Mont Rachet, which named a famous cru.",
+     "cite": [
+      "puligny-montrachet-doc:p6"
+     ]
+    },
+    {
+     "label": "Beaune, 15 km north",
+     "point": [
+      4.84,
+      47.0245
+     ],
+     "zoom": 10,
+     "caption": "Puligny-Montrachet lies 15 km south of the town of Beaune.",
+     "cite": [
+      "puligny-montrachet-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Cool, and sheltered by the Morvan",
+   "paras": [
+    "The climate leans cool and oceanic. Continental and southern influences, carried along the Rhône-Saône axis, disturb it. Rain is moderate and regular, about 750 mm a year, with no marked summer drought. The mean annual temperature is 10.5°C.",
+    "East of the Morvan massif and the plateaux of Burgundy, the Côte enjoys a climatic shelter. It is warmer and drier than the region around it, which suits quality viticulture."
+   ],
+   "cite": [
+    "puligny-montrachet-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Lean on top, richer below",
+   "paras": [
+    "The bedrock alternates limestone with marl, a clayey limestone, from the middle and upper Jurassic. Slopes are often covered with colluvium, scree mixed with clay and silt, weathered from the subsoil and the slopes above. At the edge of the plain it spreads out into a foot-slope of free-draining, moderately fertile soils.",
+    "The soils are young and thin. They are generally limy and drain well, above all on limestone. They run from lean, very limy soils high on the slope to soils richer in clay lower down. On the foot-slope they are fairly deep, at 0.50 m, and have lost their lime at the surface.",
+    "The premiers crus sit on limestone slopes in the best exposures. Their soils are shallow and well drained because of the slope, and the open landscape gives them the best sunshine."
+   ],
+   "cite": [
+    "puligny-montrachet-doc:p6",
+    "puligny-montrachet-doc:p7",
+    "puligny-montrachet-doc:p9"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Almost all white, from Chardonnay",
+   "paras": [
+    "Chardonnay and Pinot Noir are the main grapes. Chardonnay settled firmly on the hillside in the 18th century. Pinot Noir covers only 1% of the vineyard. Pinot Gris and Pinot Blanc are also allowed.",
+    "The wines are dry and still, white or red. Of the 10,900 hl made on average each year, 99% is white. In 2008 the vineyard covered about 210 hectares, and 120 of them were premier cru. The maximum yield is 57 hl/ha for white and 50 hl/ha for red.",
+    "The white's discreet acidity gives it great balance. With age it can turn golden with amber glints, while the palate stays broad and silky. The red is a smaller production, yet it too shows its origin well.",
+    "Vines are planted at more than 9,000 per hectare, and wines are usually aged for at least 8 months. This demanding work, applied to this setting, favours wines of strong personality and great longevity.",
+    "In 1943 a list was drawn up of the climats that may use the term \"Premier Cru\". They are the most renowned crus, singled out above all in 1860. On the label the appellation name may be followed by \"Premier Cru\" and the name of one of these climats.",
+    "The appellation name may also be followed by \"Côte de Beaune\". It is printed in the same letters as the appellation name.",
+    "Following the example of Gevrey-Chambertin, the village of Puligny added the name of its most prestigious cru, Montrachet, to its own. The appellation was recognised in 1937."
+   ],
+   "cite": [
+    "puligny-montrachet-doc:p2",
+    "puligny-montrachet-doc:p3",
+    "puligny-montrachet-doc:p5",
+    "puligny-montrachet-doc:p6",
+    "puligny-montrachet-doc:p7",
+    "puligny-montrachet-doc:p8",
+    "puligny-montrachet-doc:p9",
+    "puligny-montrachet-doc:p12",
+    "puligny-montrachet-doc:p13"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Climat",
+    "text": "The local name for a named plot. A label may give the climat the grapes came from.",
+    "cite": [
+     "puligny-montrachet-doc:p8",
+     "puligny-montrachet-doc:p9"
+    ]
+   },
+   {
+    "term": "Lieu-dit",
+    "text": "A registered named place. It may appear if it is on the harvest declaration, in letters at most half the size of the appellation name.",
+    "cite": [
+     "puligny-montrachet-doc:p13"
+    ]
+   },
+   {
+    "term": "Grand Vin de Bourgogne",
+    "text": "A larger geographic unit that the label may state, as \"Vin de Bourgogne\" or \"Grand Vin de Bourgogne\".",
+    "cite": [
+     "puligny-montrachet-doc:p13"
+    ]
+   }
+  ],
+  "cite": [
+   "puligny-montrachet-doc:p8",
+   "puligny-montrachet-doc:p9",
+   "puligny-montrachet-doc:p13"
+  ]
+ }
+}

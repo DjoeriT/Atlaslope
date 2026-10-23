@@ -1,0 +1,116 @@
+{
+ "id": "bandol",
+ "title": "Why Bandol tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Bandol sits in a bowl of hills that is shut to the north and open to the sea. Shelter, sea air and stony clay-limestone soil let Mourvèdre, a black grape that ripens late, reach ideal ripeness.",
+  "cite": [
+   "bandol-doc:p5",
+   "bandol-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "amphitheatre",
+   "beat": "place",
+   "title": "A bowl of hills facing the sea",
+   "paras": [
+    "Eight communes in the Var share the appellation. They lie inside a vast amphitheatre of hills, shaped by erosion and by tectonic movement. The hills close the area off to the north and open it to the Mediterranean through the Gulf of Bandol.",
+    "In 1827 Tolozan described the Bandol wine region as a valley about 12 kilometres long. It starts at the foot of the Cuges mountains and runs south to the Gulf of Bandol, between two rows of hills."
+   ],
+   "cite": [
+    "bandol-doc:p4",
+    "bandol-doc:p5",
+    "bandol-doc:p6"
+   ],
+   "fly": [
+    {
+     "label": "The Gulf of Bandol",
+     "point": [
+      5.75,
+      43.13
+     ],
+     "zoom": 10,
+     "caption": "The amphitheatre of hills opens onto the Mediterranean through the Gulf of Bandol.",
+     "cite": [
+      "bandol-doc:p5"
+     ]
+    },
+    {
+     "label": "The plain of Saint-Cyr",
+     "point": [
+      5.7,
+      43.18
+     ],
+     "zoom": 10,
+     "caption": "Two rows of hills enclose the large plain of Saint-Cyr, which slopes gently down to the beach at the Gulf of Lecques.",
+     "cite": [
+      "bandol-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sheltered-sun",
+   "beat": "weather",
+   "title": "Sun without the Mistral",
+   "paras": [
+    "The shape of the land gives a particular Mediterranean climate, sheltered from the Mistral, the cold north wind that dominates Provence. The slopes and the foot of the hills get an average of 3000 hours of sun and 650 millimetres of rain a year.",
+    "The open sea tempers the summer heat and keeps a slight humidity at night. This makes ideal ripening conditions, above all for Mourvèdre. Clairette gains too, giving fine, structured whites."
+   ],
+   "cite": [
+    "bandol-doc:p5",
+    "bandol-doc:p6",
+    "bandol-doc:p8"
+   ]
+  },
+  {
+   "id": "stone-terraces",
+   "beat": "ground",
+   "title": "Poor, stony soil and dry-stone walls",
+   "paras": [
+    "The most typical soils are thin and whitish, poor in organic matter and always very stony. They drain well, and water moves through them in an ideal way. The ground is a stony clay-limestone.",
+    "The vineyard area keeps the poor soils that long ago made Bandol's name. It leaves out fertile valley soils and the too-rich alluvium at the foot of the slopes. Pine woods and other woodland are left out as well.",
+    "Generations of growers picked stones from the ground and built countless dry-stone walls to hold the soil. These walls make the terraces called restanques, the signature of the landscape."
+   ],
+   "cite": [
+    "bandol-doc:p6",
+    "bandol-doc:p8"
+   ]
+  },
+  {
+   "id": "mourvedre",
+   "beat": "rules",
+   "title": "Mourvèdre leads the reds and rosés",
+   "paras": [
+    "Bandol is still wine only, in red, rosé or white. Mourvèdre leads the vineyard. Red Bandol needs at least 50% of it, from vines older than 7 years. The reds start their life with 18 months in wood, mostly in foudres, the big old casks. Mourvèdre gives them their character. They are powerful and tannic, with a firm structure, and they keep a long time.",
+    "Rosé needs at least 20% Mourvèdre, often 30% to 40%. It is pressed directly, or made with a short maceration or by saignée, where juice is bled off a red vat. It has a pale wild-rose colour. The Mourvèdre makes it more tannic than other Provence rosés. It needs a little longer to open up and then keeps longer.",
+    "White is the rarer wine. It is made mostly from Clairette, at least 50%, and is pale straw in colour with floral aromas.",
+    "In the reds and rosés, Grenache and Cinsaut are notably among the grapes that second Mourvèdre. In the whites, Clairette works alongside Bourboulenc and Ugni Blanc. Six more varieties are allowed, Syrah and Carignan among them.",
+    "Yields are capped at 40 hectolitres per hectare. The grapes are picked by hand and carried whole to the winery. A label may add the name of a lieu-dit, a named plot in the land register, if it is on the harvest declaration."
+   ],
+   "cite": [
+    "bandol-doc:p2",
+    "bandol-doc:p3",
+    "bandol-doc:p4",
+    "bandol-doc:p5",
+    "bandol-doc:p7",
+    "bandol-doc:p9"
+   ],
+   "fly": [
+    {
+     "label": "Bandol, the port",
+     "point": [
+      5.752,
+      43.135
+     ],
+     "zoom": 13,
+     "caption": "Ships anchored offshore in the sheltered bay loaded casks branded with a red-hot \"B\".",
+     "cite": [
+      "bandol-doc:p7"
+     ]
+    }
+   ]
+  }
+ ]
+}

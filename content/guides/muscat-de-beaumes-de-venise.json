@@ -1,0 +1,108 @@
+{
+ "id": "muscat-de-beaumes-de-venise",
+ "title": "Why Muscat de Beaumes-de-Venise tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Terraced vines on the south-east slope of the Dentelles de Montmirail are spared the Mistral. Lean soils and dry summers keep yields low and leave the Muscat grapes rich in sugar.",
+  "cite": [
+   "muscat-de-beaumes-de-venise-doc:p7",
+   "muscat-de-beaumes-de-venise-doc:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "terraces",
+   "beat": "place",
+   "title": "Terraces under the Dentelles",
+   "paras": [
+    "The vineyard lies at the foot of the Montmirail massif, on the south-east slope of the Dentelles de Montmirail or inside the massif itself. The Dentelles peak at 732 m.",
+    "The vines grow on terraces that people shaped along the hillsides. Locals call the terraces \"restanques\" or \"faysses\", and dry-stone walls hold them up. Olive trees grow alongside, and patches of garrigue break up the land.",
+    "The area covers the commune of Beaumes-de-Venise and a very small part of Aubignan. Both lie in the heart of the Côtes du Rhône Villages zone."
+   ],
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p1",
+    "muscat-de-beaumes-de-venise-doc:p6",
+    "muscat-de-beaumes-de-venise-doc:p7"
+   ],
+   "fly": [
+    {
+     "label": "Beaumes-de-Venise",
+     "point": [
+      5.04,
+      44.12
+     ],
+     "zoom": 11,
+     "caption": "The vineyard sits around the commune of Beaumes-de-Venise, at the foot of the Montmirail massif.",
+     "cite": [
+      "muscat-de-beaumes-de-venise-doc:p6"
+     ]
+    },
+    {
+     "label": "Dentelles de Montmirail",
+     "point": [
+      5.08,
+      44.17
+     ],
+     "zoom": 11,
+     "caption": "Hard limestone layers gave the Dentelles de Montmirail their shape. They peak at 732 m.",
+     "cite": [
+      "muscat-de-beaumes-de-venise-doc:p6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Shelter from the Mistral",
+   "paras": [
+    "The climate is \"intermediate\", with a Mediterranean tendency. There are two short dry seasons, and the summer one is very marked. Spring and autumn are rainy, often with abundant and sometimes torrential rain.",
+    "The rocky barrier of the Dentelles shelters a large part of the area naturally. Set on the south-east slope, the vineyard is spared the violent north winds, above all the Mistral.",
+    "Facing south favours optimal sunshine, which creates a very Mediterranean mesoclimate. Caper bushes are an important marker of it. Beyond here they only reappear from the Esterel massif in Provence. Vineyards climb from 200 to 450 m."
+   ],
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p6",
+    "muscat-de-beaumes-de-venise-doc:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Lean, stony ground",
+   "paras": [
+    "The ground varies from the Trias to the Cretaceous. Softer Trias layers pushed back harder limestone layers, which gave the Dentelles their shape.",
+    "North of the Coyeux mountain the vines stand on marls and sands. On the Urban plateau they stand on clay marls. Limestone molasse carries the vines of \"la muscadière\", and sandstone lies on a few slopes.",
+    "Around Beaumes-de-Venise the soils form on sands from Helvetian safre, called the \"terres blondes\".",
+    "Soils are lean, stony and naturally drained. With slopes facing mainly south and little water in summer, the plant yields little and the grapes gather a lot of sugar."
+   ],
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p6",
+    "muscat-de-beaumes-de-venise-doc:p8"
+   ]
+  },
+  {
+   "id": "sweet",
+   "beat": "rules",
+   "title": "A sweet wine from Muscat alone",
+   "paras": [
+    "Two grapes are allowed: muscat à petits grains B (white) and muscat à petits grains Rg (pink-skinned). The appellation is unique in the Rhône valley because it uses only Muscat. Rg makes up 5% of the vines and is often mixed with B in the same plot. Harvest by hand is compulsory, so the two can be picked apart.",
+    "All the wines are vins doux naturels, sweet wines made by adding neutral grape spirit to the must while it ferments. The wine must reach at least 15% alcohol and keep at least 100 g/l of sugar. The must needs at least 252 g/l of natural sugar, and the yield is 30 hl/ha of must.",
+    "Whites make 95% of production. They show power and aromatic complexity on the nose and in the mouth. Sweetness meets freshness, so they taste well balanced.",
+    "Rosé and red are rare. Rosé comes from black and white grapes macerated together. For white and rosé, the must leaves the pulp before fermentation starts. Red comes from black grapes only, macerated with the pulp before or after the spirit goes in.",
+    "Wines with muscat Rg range in colour from pink to purple. Purple belongs to the rare cuvées of Rg alone. Their aromas often recall red and black fruit.",
+    "Planting is dense, with at least 4,000 vines per hectare, high for the region. Short pruning favours low yields.",
+    "The label must carry the words \"vin doux naturel\"."
+   ],
+   "cite": [
+    "muscat-de-beaumes-de-venise-doc:p1",
+    "muscat-de-beaumes-de-venise-doc:p2",
+    "muscat-de-beaumes-de-venise-doc:p3",
+    "muscat-de-beaumes-de-venise-doc:p4",
+    "muscat-de-beaumes-de-venise-doc:p5",
+    "muscat-de-beaumes-de-venise-doc:p7",
+    "muscat-de-beaumes-de-venise-doc:p8",
+    "muscat-de-beaumes-de-venise-doc:p9"
+   ]
+  }
+ ]
+}
