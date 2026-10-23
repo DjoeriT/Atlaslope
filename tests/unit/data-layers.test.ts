@@ -74,7 +74,7 @@ describe('added boundaries', () => {
   const pt = Object.keys(read('countries/pt/areas-spec.json')).filter((k) => !k.startsWith('$'));
   // France's shipped places and their zones come from INAO (data/countries/fr/areas.geojson, Tools/data/build_fr_areas.py --map),
   // Italy's from Regione Piemonte or ISTAT (data/countries/it/areas.geojson, Tools/data/build_it_areas.py --map).
-  const fr = read('places.json').places.filter((p: { region: string }) => /^(fr|it)-/.test(p.region)).map((p: { id: string }) => p.id);
+  const fr = read('places.json').places.filter((p: { region: string; boundary: string }) => /^(fr|it|de)-/.test(p.region) && p.boundary !== 'to-fetch').map((p: { id: string }) => p.id);
   it('has one polygon per listed place, built from every listed municipality or parcel', () => {
     expect(added.features.map((f: any) => f.properties.id).sort()).toEqual([...Object.keys(lists), ...Object.keys(parcels), ...pt, ...fr].sort());
     for (const f of added.features) {

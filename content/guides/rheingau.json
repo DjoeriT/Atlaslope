@@ -1,0 +1,178 @@
+{
+ "id": "rheingau",
+ "title": "Why Rheingau tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "The Rhine runs west here for 30 km, so most slopes face south into strong sun. Wooded heights behind keep off the rain, and Riesling covers about 80% of the vineyard.",
+  "cite": [
+   "rheingau-spec:p7",
+   "rheingau-spec:p6"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "bend",
+   "beat": "place",
+   "title": "A river turned west",
+   "paras": [
+    "The Rhine normally flows north. Here it is pushed out of that direction for 30 km and runs west to the Binger Loch, where its steep cut into the Taunus ridge begins.",
+    "The vineyards sit on a narrow strip of gently rolling hills that runs down from the high ridge of the Taunus to the river. The south-facing slope is the dominant landform.",
+    "Past the Binger Loch the Rhine cuts steeply into the Taunus ridge, and vines grow there as far as Lorch and Lorchhausen. More vineyards lie around Wiesbaden and along the north bank of the Main, from Flörsheim and Hochheim to Frankfurt."
+   ],
+   "cite": [
+    "rheingau-spec:p7"
+   ],
+   "fly": [
+    {
+     "label": "The Rhine's westward stretch",
+     "point": [
+      8.12,
+      50.03
+     ],
+     "zoom": 10,
+     "caption": "The Rhine is deflected from its northward course for 30 km and flows west to the Binger Loch.",
+     "cite": [
+      "rheingau-spec:p7"
+     ]
+    },
+    {
+     "label": "Binger Loch",
+     "point": [
+      7.88,
+      49.97
+     ],
+     "zoom": 11,
+     "caption": "Where the Rhine's westward run ends and it cuts steeply into the Taunus ridge as far as Lorch.",
+     "cite": [
+      "rheingau-spec:p7"
+     ]
+    },
+    {
+     "label": "Hochheim on the Main",
+     "point": [
+      8.35,
+      50.01
+     ],
+     "zoom": 11,
+     "caption": "Vineyards also run along the north bank of the Main, from Flörsheim and Hochheim to Frankfurt.",
+     "cite": [
+      "rheingau-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Sun on the south slopes, shelter behind",
+   "paras": [
+    "The climate is very mild, with dry-warm summers and mild winters. The Rheingau lies in the rain shadow of the wooded heights of the Taunus. The forests slow the flow of cold night air down into the vineyards below.",
+    "Because the Rhine runs west as far as Rüdesheim, the slopes mostly face south and take strong sun. Gardens in the villages near the river grow Mediterranean trees such as figs and olives.",
+    "Over 1971 to 2000 the average year was 10.6 °C, or 15.4 °C in the growing season. Rain averaged 582 mm and the sun shone about 1603 hours. Summer days average over 19 °C, and winter days rarely fall below 1 °C.",
+    "The Rhine rift brings an early start to the growing season. Slopes facing mostly south to south-west add to the warmth. Day and night temperatures differ a great deal while the grapes ripen. That stretches the ripening and helps the grapes develop aroma."
+   ],
+   "cite": [
+    "rheingau-spec:p7",
+    "rheingau-spec:p8",
+    "rheingau-spec:p9"
+   ],
+   "fly": [
+    {
+     "label": "The wooded Taunus heights",
+     "point": [
+      8.05,
+      50.12
+     ],
+     "zoom": 9.5,
+     "caption": "The forested Taunus puts the vines in a rain shadow and slows cold night air flowing down to them.",
+     "cite": [
+      "rheingau-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Loess on the terraces, slate in the foothills",
+   "paras": [
+    "The Rheingau shares two great geological structures: the Mainz Basin and the Rhenish Slate Mountains, of which the Taunus is part. In the upper and middle Rheingau, sandy and clayey sediments lie underneath. Small outcrops of limestone are limited to the upper Rheingau.",
+    "The terraces of the Rhine and the Main make up most of the vineyard area. They are covered with thick loess or loess loam.",
+    "In the foothills before the Taunus ridge the ground is phyllite and phyllitic clay slate. In the lower Rheingau, from the Rhine gorge on, quartzite and quartzitic sandstone are common. Phyllite and clay slate are found there too. Vineyard soils there are mostly stony rubble, with more loess in the lower areas."
+   ],
+   "cite": [
+    "rheingau-spec:p7"
+   ],
+   "fly": [
+    {
+     "label": "Lorch, the steep Rhine cut",
+     "point": [
+      7.8,
+      50.05
+     ],
+     "zoom": 11,
+     "caption": "In the lower Rheingau quartzite and slate are common, and vineyard soils are mostly stony rubble.",
+     "cite": [
+      "rheingau-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "riesling",
+   "beat": "rules",
+   "title": "One grape, many sweetnesses",
+   "paras": [
+    "No other wine landscape in the world has tied its economic success, and its social structures, to a single grape as the Rheingau has to Riesling. Weißer Riesling covers about 80% of the vineyard.",
+    "In 2010 about 85% of the vineyard was planted with white grapes and about 15% with red. Blauer Spätburgunder (Pinot Noir) covers about 13%. Red and rosé wines are a long tradition here. Weißherbst is a traditional label term that follows the same ripeness rules as rosé.",
+    "Besides still wine, Rheingau wine can become Sekt (sparkling wine) or Qualitätsperlwein (lightly sparkling wine). Perlwein holds 1 to 2.5 bar of pressure, Sekt at least 3.5 bar. Sekt can be made in tank or by bottle fermentation, which needs at least 9 months on the yeast. Yields are capped at 100 hl/ha.",
+    "Still wine labels run from trocken (dry) through halbtrocken (off-dry) and lieblich (medium-sweet) to süß (sweet), set by sugar. Sweetening is allowed only with grape must.",
+    "Qualitätswein may be enriched up to 15% total alcohol. Prädikat wines cannot be enriched, and the grapes must reach set ripeness. Concentration and oak chips are not allowed for them either. Kabinett needs at least 9.8% natural alcohol for white grapes. Riesling Auslese needs at least 13.0%, and Trockenbeerenauslese at least 21.5%.",
+    "Many estates sell their own wine, and most are family-run. Growers who do not sell their own wine belong to cooperatives. Very small plots and steep slopes limit machines.",
+    "Some of the most renowned estates belong to the VDP, an association of top Prädikat estates. The Rheingau is its largest regional branch."
+   ],
+   "cite": [
+    "rheingau-spec:p1",
+    "rheingau-spec:p2",
+    "rheingau-spec:p4",
+    "rheingau-spec:p5",
+    "rheingau-spec:p6",
+    "rheingau-spec:p8",
+    "rheingau-spec:p9"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Qualitätswein",
+    "text": "Quality wine with at least 7.0% natural alcohol for white grapes. It may be enriched up to 15% total alcohol."
+   },
+   {
+    "term": "Spätlese",
+    "text": "A Prädikat wine that cannot be enriched, with at least 11.4% natural alcohol for white grapes."
+   },
+   {
+    "term": "Beerenauslese",
+    "text": "A Prädikat wine that cannot be enriched, with at least 17.7% natural alcohol from any grape."
+   },
+   {
+    "term": "Eiswein",
+    "text": "A Prädikat wine that cannot be enriched, with at least 17.7% natural alcohol from any grape."
+   },
+   {
+    "term": "Winzersekt",
+    "text": "A label name for Sekt, with at least 7.0% natural alcohol for white grapes in the base wine."
+   },
+   {
+    "term": "Brut nature",
+    "text": "Sekt with under 3 g/l sugar and no sugar added after the second fermentation. Also called naturherb."
+   }
+  ],
+  "cite": [
+   "rheingau-spec:p2",
+   "rheingau-spec:p4",
+   "rheingau-spec:p5"
+  ]
+ }
+}

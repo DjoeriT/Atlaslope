@@ -2920,5 +2920,17 @@
   "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4625",
   "date": "2026-10-22",
   "title": "Vermentino di Gallura PDO-IT-A0903: disciplinare di produzione (MASAF, Italian, file \"Vermentino di Gallura\" in the DOP archive)"
+ },
+ "mosel-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Mosel PDO-DE-A1270: Produktspezifikation (BLE, German, standard amendment AM04, approved 5 Dec 2025)"
+ },
+ "rheingau-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Rheingau PDO-DE-A1273: Produktspezifikation (BLE, German, text of April 2019; the 2026 amendment is a proposal)"
  }
 }

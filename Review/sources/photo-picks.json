@@ -3234,6 +3234,108 @@
     "artist": "Kris Haamer",
     "url": "https://live.staticflickr.com/2776/4097303069_c4e87e9e49_b.jpg"
    }
+  ],
+  "mosel": [
+   {
+    "title": "File:Beilstein (Mosel) und Ellenz.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Beilstein_(Mosel)_und_Ellenz.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Rolf Kranz",
+    "credit": "Own work",
+    "description": "Beilstein (Mosel) mit Burg Metternich und Ellenz",
+    "coords": [
+     7.22159,
+     50.11636
+    ]
+   },
+   {
+    "title": "File:Hatzenport, Blick von der Rabenlay.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hatzenport,_Blick_von_der_Rabenlay.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Rolf Kranz",
+    "credit": "Own work",
+    "description": "Die traditionsreichen Weinbausteillagen von Hatzenport an der Terrassenmosel im Landkreis Mayen-Koblenz, Rheinland-Pfalz. Die sommerliche Panoramaaufnahme dokumentiert die drastischen Auswirkungen einer extremen Dürre- und Hitzeperiode an der Terrassenmosel sowie den realen agrarstrukturellen Wandel",
+    "coords": [
+     7.429755,
+     50.228342
+    ]
+   },
+   {
+    "title": "File:Weinberge Zeltingen 02.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Weinberge_Zeltingen_02.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Schorle",
+    "credit": "Own work",
+    "description": "Vineyards at Moselle River near Zeltingen-Rachtig.",
+    "coords": [
+     7.02712,
+     49.950743
+    ]
+   },
+   {
+    "title": "File:20211010 Taben-Rodt 02.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:20211010_Taben-Rodt_02.jpg",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+    "artist": "Flocci Nivis",
+    "credit": "Own work",
+    "description": "Blick auf Weinberge auf der anderen Seite der Saar in Taben-Rodt.",
+    "coords": null
+   }
+  ],
+  "rheingau": [
+   {
+    "title": "File:Schloss Johannisberg, South view 20220806 1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Schloss_Johannisberg,_South_view_20220806_1.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "User:DXR",
+    "credit": "Own work",
+    "description": "A south view of Schloss Johannisberg",
+    "coords": [
+     7.9845593124933,
+     49.997426625005
+    ]
+   },
+   {
+    "title": "File:Clemenskapelle Lorchhausen mit Weinlage Seligmacher.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Clemenskapelle_Lorchhausen_mit_Weinlage_Seligmacher.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "Joschi71",
+    "credit": "Own work",
+    "description": "Clemenskapelle Lorchhausen mit Weinlage Seligmacher",
+    "coords": null
+   },
+   {
+    "title": "File:Abtei St. Hildegard, Rüdesheim 20250302 2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Abtei_St._Hildegard,_R%C3%BCdesheim_20250302_2.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "artist": "DXR",
+    "credit": "Own work",
+    "description": "Abbey of St. Hildegard (Abtei St. Hildegard) in Rüdesheim am Rhein, Hesse, Germany. The Benedictine abbey was built between 1900 and 1908 in neo-Romanesque style above the vineyards of the Rheingau. It was founded for the Benedictine nuns of St. Hildegard and remains an active convent, known for its",
+    "coords": [
+     7.9284722222217,
+     49.991138888888
+    ]
+   },
+   {
+    "title": "File:Geisenheim - Blick auf Schloss Johannisberg.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Geisenheim_-_Blick_auf_Schloss_Johannisberg.JPG",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "artist": "Oliver Abels (SBT)",
+    "credit": "Own work",
+    "description": "Geisenheim, Rheingau: Blick auf Schloss Johannisberg Kulturdenkmal",
+    "coords": [
+     7.9657098,
+     49.9891069
+    ]
+   }
   ]
  }
 }

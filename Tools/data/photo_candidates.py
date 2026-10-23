@@ -566,7 +566,44 @@ def it(ids):
         print("sheet", p["id"], flush=True)
 
 
+DE_OUT = ROOT / "Review/sources/photo-candidates-de.json"
+VINE_DE = re.compile(VINE.pattern + r"|weinberg|weinlage|rebe|reben|steillage|winzer|weingut|riesling|wein\b", re.I)
+DE_VINE_Q = "(Weinberg OR Weinberge OR Weinlage OR Steillage OR Reben OR Riesling OR vineyard)"
+# Germany pilot (23 Oct 2026, issue #149): the two places; Mosel has an outline, the Rheingau only a box (Hessen's outline host refused, no file yet).
+DE_PLACES = {"mosel": "Mosel", "rheingau": "Rheingau"}
+DE_BOX = {"rheingau": (7.85, 49.93, 8.32, 50.12)}
+
+
+def de(ids):
+    from shapely.geometry import box
+    geoms = {x["properties"]["id"]: shape(x["geometry"]) for x in json.loads((ROOT / "data/countries/de/areas.geojson").read_text())["features"]}
+    geoms.update({k: box(*v) for k, v in DE_BOX.items() if k not in geoms})
+    done = json.loads(DE_OUT.read_text()) if DE_OUT.exists() else {}
+    for pid, name in DE_PLACES.items():
+        if (ids and pid not in ids) or pid in done: continue
+        g = geoms[pid]
+        found = {}
+        try:
+            for lon, lat in discs(g, max_n=40):
+                r = get({"action": "query", "list": "geosearch", "gsnamespace": 6, "gslimit": 500, "gsradius": 10000, "gscoord": f"{lat}|{lon}"})
+                for x in r["query"]["geosearch"]: found[x["title"]] = (x["lon"], x["lat"])
+                time.sleep(.5)
+            r = get({"action": "query", "list": "search", "srnamespace": 6, "srlimit": 100, "srsearch": f'"{name}" ' + DE_VINE_Q})
+            for x in r["query"]["search"]: found.setdefault(x["title"], None)
+            cands = [c for c in info(found, g, name, VINE_DE) if c["vine"] or c["wine"]]
+        except Exception as e:
+            print(pid, "error:", e, flush=True); continue
+        done[pid] = {"name": name, "batch": "de", "outline": True, "seen": len(found), "kept": len(cands),
+                     "candidates": rank(list(cands), 20, 2), "all": cands}
+        print(pid, len(found), len(cands), len(done[pid]["candidates"]), flush=True)
+        DE_OUT.write_text(json.dumps(done, ensure_ascii=False, indent=1) + "\n")
+    for pid in [k for k in DE_PLACES if k in done]:
+        sheet(pid, [{"id": pid, "name": DE_PLACES[pid]}], done, "de-", cols=5)
+        print("sheet", pid, flush=True)
+
+
 def main():
+    if sys.argv[1:2] == ["de"]: return de(sys.argv[2:])
     if sys.argv[1:] == ["pt"]: return pt()
     if sys.argv[1:2] == ["fr"]: return fr(sys.argv[2:])
     if sys.argv[1:2] == ["it"]: return it(sys.argv[2:])

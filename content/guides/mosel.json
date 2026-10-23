@@ -1,0 +1,214 @@
+{
+ "id": "mosel",
+ "title": "Why Mosel tastes the way it does",
+ "minutes": 4,
+ "lede": {
+  "text": "In its middle and lower course the Mosel meanders through a narrow valley cut into Devonian rock. Riesling grown on that rock can show it in the glass.",
+  "cite": [
+   "mosel-spec:p3",
+   "mosel-spec:p8"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "river",
+   "beat": "place",
+   "title": "A river and two tributaries",
+   "paras": [
+    "Most of the vineyards lie along the Mosel and its tributaries, the Saar and the Ruwer. The region runs from south-west to north-east in four stretches: the Obermosel from Perl to Konz, the Trierer Talweitung (the wide valley around Trier) from Konz to Schweich, the Mittelmosel from Schweich to Moselkern, and the Untere Moseltal from Moselkern to Koblenz.",
+    "The river's course falls roughly into two parts. In the Obermosel and around Trier it winds through fairly soft, younger rock. In the Mittelmosel and the Untere Moseltal it meanders through a narrow valley cut into the Devonian rock of the Rheinisches Schiefergebirge, the Rhenish Slate Mountains.",
+    "Vines grow from about 65 to 375 m above sea level, and 180 m on average. Half the vineyards face south-east to south-west. Across the whole region the vineyards face 195° on average, which is south-south-west."
+   ],
+   "cite": [
+    "mosel-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "Bernkastel, the Mittelmosel",
+     "point": [
+      7.07,
+      49.915
+     ],
+     "zoom": 10,
+     "caption": "Bernkastel-Kues sits in the Mittelmosel, where the river meanders through a narrow cut valley.",
+     "cite": [
+      "mosel-spec:p6",
+      "mosel-spec:p8"
+     ]
+    },
+    {
+     "label": "Perl, the Obermosel",
+     "point": [
+      6.37,
+      49.47
+     ],
+     "zoom": 10,
+     "caption": "Perl is where the Obermosel begins, at the south-west end of the region.",
+     "cite": [
+      "mosel-spec:p6",
+      "mosel-spec:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "A long season on the slopes",
+   "paras": [
+    "The average temperature is 9.7 °C over the year and 14.1 °C during the growing season. Rain averages 760 mm a year, and 60% of it falls in the growing season.",
+    "On average vines get 652,000 Wh/m² of direct sun in a season. The highest values are on the steep and very steep slopes.",
+    "Small plots and steep slopes leave little room for machines, so the vines are tended with a lot of hand work.",
+    "Several things together shape the style of the wines. The growing season is long. The land has its own shape, with small local climates. The soil has a typical make-up. And people put a great deal of work into the vines."
+   ],
+   "cite": [
+    "mosel-spec:p8",
+    "mosel-spec:p9"
+   ]
+  },
+  {
+   "id": "stone",
+   "beat": "ground",
+   "title": "Slate, and lime upstream",
+   "paras": [
+    "Devonian rock dominates by far. It began as sediment in a sea, sand near the coast and silt and clay further out. In the Carboniferous period it was folded into the Rheinisches Schiefergebirge. Today that rock is mostly quartzite sandstone and quartzite. Slate is the third main type.",
+    "In the Buntsandstein period, river and wind deposits around Trier laid down what is now sandstone. In the later Muschelkalk and Keuper periods, lime-bearing sea deposits formed there. Only the Obermosel has Keuper and Muschelkalk rock.",
+    "Riesling and Elbling above all, along with the Burgundy family, can show the vineyard's terroir in the glass. A taster can pick up the Mosel's different rocks and weathered soils. The clues are the acidity, how softened that acidity feels, and the mineral notes. Among reds, Blauer Spätburgunder can do the same."
+   ],
+   "cite": [
+    "mosel-spec:p3",
+    "mosel-spec:p8"
+   ],
+   "fly": [
+    {
+     "label": "Cochem, the narrow valley",
+     "point": [
+      7.166,
+      50.146
+     ],
+     "zoom": 10,
+     "caption": "Around Cochem the Mosel meanders through a narrow valley cut into the Devonian rock of the Rhenish Slate Mountains.",
+     "cite": [
+      "mosel-spec:p6",
+      "mosel-spec:p8"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grapes",
+   "beat": "rules",
+   "title": "Riesling first, then the Burgundy family",
+   "paras": [
+    "The Mosel name covers still wine and two kinds with bubbles. Sekt is fully sparkling, and Winzersekt and Crémant are kinds of it. Perlwein is lightly sparkling. None of them is fortified.",
+    "Still wine comes in white and red, with rosé in between. Pale wines pressed from red grapes go by Rosé or Weißherbst, or Blanc de Noir when they are white in colour. Rotling is a light red wine.",
+    "In the four areas from the Saar down to Burg Cochem, Weißer Riesling and Blauer Spätburgunder have grown since the Middle Ages. There Riesling covers about 62% of the planted area. On the steep slate slopes it gives highly aromatic wines typical of the place. In 2023, 87% of single-vineyard submissions to the official quality test in these areas were Riesling.",
+    "Blauer Spätburgunder (Pinot Noir) gives finely aromatic reds that clearly show their terroir on the varied soils along the three rivers. In 2023, 21% of its submissions named a single vineyard.",
+    "In the Obermosel and the Moseltor, the Burgundy varieties do especially well on the lime-rich Muschelkalk, as in Burgundy or Champagne. The four are Chardonnay and Blauer Spätburgunder, with Ruländer (Pinot Gris) and Weißer Burgunder (Pinot Blanc). Chardonnay there has fine aromas with a limy mineral note and has proved resistant to drought. Together the four shape the area's image as the “Burgundermosel”, the Burgundy Mosel.",
+    "Riesling and the Burgundy varieties named here cover 76% of the Mosel's vineyard area. In 2023 they made up 99% of submissions to the official quality test that named a single vineyard or smaller unit.",
+    "Whites are generally balanced between acid and sweetness, from delicate to full in body. Reds show red fruit, with mild to noticeable acidity.",
+    "Prädikat wines may not be enriched, so they mostly reflect their vintage. Their six steps follow the sugar in the grapes, and Read the label gives each one."
+   ],
+   "cite": [
+    "mosel-spec:p1",
+    "mosel-spec:p2",
+    "mosel-spec:p3",
+    "mosel-spec:p4",
+    "mosel-spec:p5",
+    "mosel-spec:p7",
+    "mosel-spec:p9",
+    "mosel-spec:p10",
+    "mosel-spec:p11",
+    "mosel-spec:p12"
+   ],
+   "fly": [
+    {
+     "label": "Trier, the wide valley",
+     "point": [
+      6.64,
+      49.757
+     ],
+     "zoom": 10,
+     "caption": "Trier lies in the Trierer Talweitung, the wide valley between the Obermosel and the Mittelmosel.",
+     "cite": [
+      "mosel-spec:p6",
+      "mosel-spec:p8"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Einzellage name",
+    "text": "A single-vineyard name needs at least 85% Weißer Riesling or Blauer Spätburgunder in the four areas from the Saar down to Burg Cochem, or 85% of the four Burgundy varieties in the Obermosel and Moseltor, and never goes on a rosé or Rotling.",
+    "cite": [
+     "mosel-spec:p11"
+    ]
+   },
+   {
+    "term": "Qualitätswein",
+    "text": "Wine that reaches a set minimum must weight and may be enriched.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Kabinett",
+    "text": "A Prädikat wine of at least 73° Öchsle (70° for Elbling), low to moderate in alcohol and mostly fruity and fresh.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Spätlese",
+    "text": "A Prädikat wine of at least 80° Öchsle for Riesling and 85° for most other whites, usually with clear residual sweetness.",
+    "cite": [
+     "mosel-spec:p1"
+    ]
+   },
+   {
+    "term": "Auslese",
+    "text": "A Prädikat wine from fully ripe or overripe grapes, sometimes with noble rot, at 88° Öchsle for Riesling and 93° for most other whites.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Beerenauslese",
+    "text": "A Prädikat wine from overripe, dried or noble-rotten berries at 110° Öchsle, mostly intensely sweet.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Trockenbeerenauslese",
+    "text": "A Prädikat wine from berries concentrated further by noble rot, at 150° Öchsle, mostly very sweet.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Eiswein",
+    "text": "A Prädikat wine from grapes naturally frozen when picked and pressed, at 110° Öchsle.",
+    "cite": [
+     "mosel-spec:p2"
+    ]
+   },
+   {
+    "term": "Sekt b. A.",
+    "text": "Traditional-method Sekt gets its second fermentation in the bottle and then rests at least nine months on it.",
+    "cite": [
+     "mosel-spec:p9"
+    ]
+   }
+  ],
+  "cite": [
+   "mosel-spec:p1",
+   "mosel-spec:p2",
+   "mosel-spec:p9",
+   "mosel-spec:p11"
+  ]
+ }
+}
