@@ -82,7 +82,7 @@ test.describe('on a phone', () => {
     await expect(page.locator('.legend li').first()).toBeHidden();
     await toggle.click();
     await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.locator('.legend li')).toHaveCount(6);
+    await expect(page.locator('.legend li')).toHaveCount(7);
     await expect(page.locator('.legend li').first()).toBeVisible();
   });
 
