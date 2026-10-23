@@ -16,6 +16,31 @@
    "h": 900,
    "blur": "UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAwAAsBMJQBOj+ADAyqJCwAA/sYH8HbahWGScFmp/uAuDuBbbRwrTtFNTG2BRyapXl1xs4qosi4YtHUGdellxRogAAAA"
   },
+  "alentejo-1": {
+   "w": 1200,
+   "h": 762,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoQAAoAAsBMJaACdGuAAs3cLtM+QAD+1y9KVc2iuJsQMgbZnkJLDvPSISFWvXl8k6To+hShkO+34/hAAAA="
+  },
+  "alentejo-2": {
+   "w": 1200,
+   "h": 880,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAACQAQCdASoQAAwAAsBMJaACdABVsmQA/vfUNebQCjuN/C+8xggnfEMJCXjeO2+QLLMzD7CZNMZZAwAWglq/mIwNWy1+YIiT//1e7mcVTDt9co7DeeInI9aYAAA="
+  },
+  "alentejo-3": {
+   "w": 803,
+   "h": 1200,
+   "blur": "UklGRmIAAABXRUJQVlA4IFYAAADwAwCdASoQABgAPtFUo0uoJKMhsAgBABoJZQAAVEBZSQl6jqZLLUvkAP7y/iXF8Fokmv9nQyw9WaLm1zsOMj/UVJgs7wAyvRGGL/pB6cVFW1j8PAIAAA=="
+  },
+  "alentejo-4": {
+   "w": 1200,
+   "h": 869,
+   "blur": "UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoQAAwAAsBMJbACdADdeuJyLwAA/vhvU6F0/KPeCGISMIyFDUiwHSs94S5RMt3RenG6101fLVXip3o/vAk9r8LJBo9dtgTxzcv6xBPzQ59qFmP/S5BVQlHxeEQAAA=="
+  },
+  "alentejo-5": {
+   "w": 1200,
+   "h": 742,
+   "blur": "UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAoAAsBMJYgCdAEPCdImN+9vAAD2vuyMO1I9HiVgfDw9Y8plWa4/gSmWLMbKny0fd7sEBc7oVzXD/kUUa0Me4HWnDlnnvEyocn8KCgFXnMsY+RdRwl4QpyOSSOjzT5oAAA=="
+  },
   "alicante-1": {
    "w": 1200,
    "h": 900,
@@ -91,6 +116,31 @@
    "h": 900,
    "blur": "UklGRkoAAABXRUJQVlA4ID4AAACQAQCdASoQAAwAAsBMJQBOgB5KpaAA/vLjv3cNfTFUb9lqUEi018gxNDAdAIbFq9r+zlLb+wsCWbzUjxzAAA=="
   },
+  "arruda-1": {
+   "w": 1024,
+   "h": 768,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAwAAsBMJbACdAEOtfL9QAD+8g+CaW7O7z3wc+6T+M9rigN/rTczbb423uufIlz1Pxy7Y+UnnEcM9UoAAA=="
+  },
+  "arruda-2": {
+   "w": 1200,
+   "h": 808,
+   "blur": "UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAsAAsBMJQBOgCHe28s+0AD82TarLhl2CPM4cZnYukl33YBBGDTr9mx+ZuGMalSVaLAfMyWAAA=="
+  },
+  "bairrada-1": {
+   "w": 1200,
+   "h": 865,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAAsBMJbACdAEOxFvPAAD+9yET03YwUiYzxSq7ySIcb0ogcqOHxJ8rJaQDh6IJE3Dln6D2vSfCX+MnRy9VHAAAAA=="
+  },
+  "bairrada-2": {
+   "w": 1200,
+   "h": 824,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAABQAgCdASoQAAsAAsBMJbACdH8AGBuHUcgy7MAA/vckWpf+eEC3zWR5cwOczt78yrRVtTdTraKOwZqB+bzjI3MwcAA="
+  },
+  "beira-interior-1": {
+   "w": 1200,
+   "h": 797,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAABwAgCdASoQAAsAAsBMJagCdGuAt/8D1LXvLXu8AP6RkPgjCJXRyYr9ufKg4f5PNyUZrGeTGkZdpYpMFJ/tvheW7agm9c0F9gAAAA=="
+  },
   "bierzo-1": {
    "w": 1200,
    "h": 385,
@@ -120,6 +170,21 @@
    "w": 1200,
    "h": 845,
    "blur": "UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAAsBMJbACdAD1OYXHFwAA/ni/hgSUCWvEdeAErzBUfBiYE8M0kt/2hhuN9pn+D98Ob2fcmLpV+xzg3OnYzO1eqfRJvq71jiXi7G87ClMKgEAAAA=="
+  },
+  "bucelas-1": {
+   "w": 1200,
+   "h": 901,
+   "blur": "UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAwAAsBMJQBOgCHWNigAAP6Rv8mm2i8jnqamhDrw5eJLxIW8nPJJyV4XCVlvKDj2PrARUa8+JUj/sf5CSm2lQAA="
+  },
+  "bucelas-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAwAAsBMJZACdAYuluIcfhBIATgA/utzcagpDgbwCkXbSU+l5GZ0uMhvnH0/fFbfYO+JR2tsMb1U5ITffIy4j+pd2RrJFeIw1Dlps2tV4aD6r+5to1+AAAA="
+  },
+  "bucelas-3": {
+   "w": 1024,
+   "h": 713,
+   "blur": "UklGRnoAAABXRUJQVlA4IG4AAABwAgCdASoQAAsAAsBMJaACdAYwTq+b3gwayaAAAP7KausPTbE1XiGgWs/VMtu2ufl1myryMsbuPnhr/W9DnWYrID3DVl5AVTRkRQaXdj+K2BMLIvXE1RdzQaz3Z906fFHpcRgHeicmbo4cw4qAAA=="
   },
   "bullas-1": {
    "w": 1200,
@@ -175,6 +240,11 @@
    "w": 1200,
    "h": 800,
    "blur": "UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAAsBMJYwC7AEVnLdzD1gA/qofHPPshlXaEmv/TqAvZDQqJN6/CLY+H3Jw7OnUk39XrgKHCR02obtNgToywPlStK7qr+MAAA=="
+  },
+  "carcavelos-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAwAAsBMJZgCdAEPNAR/hAAA/sB9ccAAWS2aIwPh1hFCoqyIHcSv2H7lwKqJuoormAAA"
   },
   "carinena-1": {
    "w": 1200,
@@ -266,6 +336,16 @@
    "h": 900,
    "blur": "UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwAAsBMJaACdADp/ppZoRhaAADK5hVySEBF9+0PQlCKSxxAENMNv808mxLT9OjoQeXJ/ETELhRf7Kw7nwjkcVCswgbJqDQqVLDrYfarAAAA"
   },
+  "colares-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQAAwAAsBMJYgCdDiAAUWRWJd7tWAA/rbBt2La/dBobLA6JsQs+Mi5aEYrOqX4fam0awhR5XDwVlxXRwsZXawMENEYyYOtKNIi7q747Xz/0Uy6giiz/MmXTsl6zsq/EqEa09+9A7LIpjkxjV0mWqRAAAA="
+  },
+  "colares-2": {
+   "w": 1024,
+   "h": 768,
+   "blur": "UklGRnoAAABXRUJQVlA4IG4AAADQAQCdASoQAAwAAsBMJQBOgBu1OCWZwAD+z4OqWBHW/8W2P3G9zBHKwTJ/fEcL9tPHr1OaczKwxDHTO0e/m4+S5TtXFYxxtm6CSS4ZSyvTFKQ3JUnwTsU2lgxmcgdt75OvFTwzqzwxFNJodaPwAA=="
+  },
   "conca-de-barbera-1": {
    "w": 1200,
    "h": 798,
@@ -320,6 +400,21 @@
    "w": 1200,
    "h": 592,
    "blur": "UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgAAsBMJZgCdAEnvG7ygjvAAPw6VPGXrzlgOPVLuGseTJ2AvJ51komG3s5Xn+pKMldWl+5qEUpadHXhXV9/fXYiw14g0CNAAA=="
+  },
+  "dao-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAsAAsBMJQBOgBbLY+QAAAD97I1NjYcHc+7/md74vNYs6nCFF4nTa0xqYOZU8C0SRmucPewAAA=="
+  },
+  "dao-2": {
+   "w": 900,
+   "h": 1200,
+   "blur": "UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABUAPtFUo0uoJKMhsAgBABoJYwC7MoADfzBz20dx0DTVgAD+aoiLKlbMVqzO37OJPlOm8+t7kXyXbpuUmG+1lhh5vCqyFO5yc+A9GPNq9Rm0ROe/Zj0ImL0/5IlqlX/c1qocn1QAAA=="
+  },
+  "dao-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAwAAsBMJYwCdAEXegYOn5EAAP718QUN3foKPQ0lHVVRUrV3Aix66GLO9zDLDnFmHJMxOW/mpMtZbfMQtEx5eSuYbwutvgSzGwD2VjJ7Xxte956592AA"
   },
   "douro-1": {
    "w": 1200,
@@ -436,6 +531,11 @@
    "h": 803,
    "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsAAsBMJagCdAELz+RIjr+1AAD+7j+JpFB7pwRUYQUMmDo8k9Rvb4BsrhauwMxQSg2HBGPIQ9VRfwdOkYA/MmVsRi87Lsh20AAA"
   },
+  "encostas-daire-1": {
+   "w": 1200,
+   "h": 334,
+   "blur": "UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAQAAsBMJYgCdAEO+mLFwADMo9X/2ougjk+KwGeUyWXkztwRDNUhg+lAYhuSbpvdwfrAAAA="
+  },
   "gran-canaria-1": {
    "w": 1200,
    "h": 800,
@@ -521,6 +621,56 @@
    "h": 900,
    "blur": "UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAAsBMJaACsADo1LpNwAD87xN5IU2QzRe07+vtEBC3ucuWfHivqspWfUckrHc3Ezsbij5xIF2Ni+lZHNIuaESX/wOX6vbZGStf04wAAA=="
   },
+  "lafoes-1": {
+   "w": 1200,
+   "h": 760,
+   "blur": "UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAoAAsBMJaACdAEVrvDuaMrggAD+lQNMdIoCqJJQvXcTz3Dy+IXnNOrjei5nBCaGvxal/I0sE8ihz6Tolw6h25ZvYGHasr4CYjEW28DhQAAA"
+  },
+  "lagoa-1": {
+   "w": 1200,
+   "h": 848,
+   "blur": "UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAsAAsBMJYgCdADp5KwadrYAAP6Rfy7B8VivbVjOueH7GuSrxAHA4l7Kojo/HKT79zl57oCZRKhPGc3kBnrReSHJmPiPfV3z/qW3awQAAAAA"
+  },
+  "lagoa-2": {
+   "w": 919,
+   "h": 1200,
+   "blur": "UklGRqQAAABXRUJQVlA4IJgAAABwBACdASoQABUAPtFUo0uoJKMhsAgBABoJQAXf+LY7ZsYyHjOaxEpUG6BQQAD320sfG0BWknU/EU1iRNV/+bVu1FSnzp1wReRjqK0HYn1eyIK8LM0C9cDE0ZZf3gRqucHvp97s98YL/T+RW06EnNRFguO+SvhbUq62kQsXu7d6vz2Ke9eHw7rhIx5Ott33v3nbO7V3v2wAAA=="
+  },
+  "lagoa-3": {
+   "w": 1200,
+   "h": 895,
+   "blur": "UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoQAAwAAsBMJZgCdACem4seUAAA/oPEgoHofIMOQJOo+OZWBwr0TKOPx8jMBMTgXnLkxlASoKTn8tsQKkTEhWuZgd+Ls6YJNgcTsHjmBohznJgURsv1EZpZfQTuAAAA"
+  },
+  "lagos-1": {
+   "w": 1200,
+   "h": 863,
+   "blur": "UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAAsBMJagCdADwJ7o6k4IAAPulWpG+WhtgNcaSXnz9KOTaAd0K7RX3XepWYcfm6g9F6COJ+aeUqdmDpjqRzUm/vMmXzM0Oj3177mCSOAAA"
+  },
+  "lagos-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAsAAsBMJbAAApX886AAAP68mJbmjgt/en/2yFTDlxGhrwmYS0oSqOf/aSJlMK8xVglNbt/1tk/X08kwAA=="
+  },
+  "lagos-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAwAAsBMJagCdADbrP5rQgAA/vdQxVHfXVbWRGRPtvGla/BG0Rh8wwi3hSJ5RRtVZtiOJk7YNGqeNu1Xj9Eb9QJXnjUvhIwjWX3/EQmNARsqgAAAAA=="
+  },
+  "lagos-4": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAwAAsBMJYgCdACzwx+UwAD+91z6r8k8zdtV6tZ8ZX5i7F+q1qhTTYRlB3aKIPQ1He370vRDZklWCcjVk5oIOkUAAA=="
+  },
+  "lagos-5": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAwAAsBMJbACdADRlMw/jfVAAP7XXdZk9UyaSw0uSkVZ3vVZ5NdpONJmg9NLsOFOCkzk67ltuPxA0ob+hRMh7Tczrknd1aN/cN8HBM6N7DLR81lP2iAA"
+  },
+  "lagos-6": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQAAwAAsBMJbACdAYtBF8h4yOAAADhnSPhfNDc4ccZlMKIwAZvNk7HnbwOWVuyYZVbPvYNVVabo31bu+SOLKU7mEKAkmMcSY8j0M9DzXNVTdkAE9GmYdRxF6zEodaPfxy856/R3GH0oBNgAAA="
+  },
   "lanzarote-1": {
    "w": 1200,
    "h": 784,
@@ -550,6 +700,106 @@
    "w": 1200,
    "h": 675,
    "blur": "UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoQAAkAAsBMJQBOjXAW/+BP63AlAADcXe8XQ4LxO9cGIPb1K1JkyZ0HlZwtw1JVLUultOau4fLLKgBgAAA="
+  },
+  "lisboa-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQAAsAAsBMJZgCdGuAAogHyXfgJqTAAP7zpGJrb4KpypkoytRQzFQXBKck/+SJX0lHocbs6MORtsF343pcMMxZZ9zoDIap2onQ3YkFk6UL5mF8sW7iUAAA"
+  },
+  "lisboa-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAwAAsBMJZACdGuAAoeyaCMKAAD+8EjVKvTZHsU7qHQn2iKV03/avRwoZEwsr/j3yXo8yqI0U3IKEgcvYAAA"
+  },
+  "lisboa-3": {
+   "w": 1200,
+   "h": 765,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAoAAsBMJagCdGuAAs0n02vAAP7foiWrOymk5FHXZtYxhzvG3HAfolcL9kJ7tp9oPs8nUlzO6M4oAAA="
+  },
+  "lisboa-4": {
+   "w": 1200,
+   "h": 765,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAAsBMJbACdAEOl+3D5IgAAPfTn2GnvoDbJM8UXWTmvd+s9iDF02RE/3z7P1Hf024DEpZ8z+797lFwAhljX9uvcL+Ft/E2e+/kb3bfyEvjZYsAAA=="
+  },
+  "madeira-1": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsAAsBMJZgCdAENhmKlTgAA/PHu5lRZrqQ31aqVGT+CV0U5aNjJQc4k9drWzecSrZVnPO44ztfJ/JzXGciiIr0nZHzjFx8z2s2oAAA="
+  },
+  "madeira-2": {
+   "w": 1024,
+   "h": 683,
+   "blur": "UklGRqoAAABXRUJQVlA4IJ4AAACQAgCdASoQAAsAAsBMJbACdDiAN4dBcaodfq4BIAD+76fqH8igMyt5Yn4h0reR9tzsr6WRXOGE/75/mhgdKVss6EY3f2RVeo3+SwV3n4FWHqKB/wA3gfUEdS+e1pB1VkMNAh9YNzxc/9GB+Wd/weTS1Bs5cfk7qNXnvretd5l7gD5ybASPP+RpjZJBrnmBZVmfIV+xC76G4J9ffyAAAA=="
+  },
+  "madeira-3": {
+   "w": 1023,
+   "h": 685,
+   "blur": "UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAsAAsBMJbACdAEfoTJdgdTcTAAA/veeM/+iM+TSr9i3FNWJgSwcR0bn/Y45ijOAdD/t0bW49+4ZcOlxe7ci3bhGLlOUW/UamAfSqIK/ljhelMZCUxgTUGQbD46gAAA="
+  },
+  "madeira-4": {
+   "w": 980,
+   "h": 735,
+   "blur": "UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoQAAwAAsBMJQAB8PIgMVNBeLjCuAD+99M0a18pGUbjSB4oTbQI2lXCtG46G2MIiJVE6aUdPhzW/W+Y7zHd7a6gbwRZ92BqrbBP1p3Zz/sqaRAZMBmhJsH+oKZ2KMhmvCTPyQNzjHPoAA=="
+  },
+  "madeira-5": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwAAsBMJYgCw7D17tHVAAD+ufmVM2LiubHXQH3yJIAKevXlvYK0a0mk4GtlE+e+fxAzsL2wn8s2yJPnHGcJuVGhxZAAAAA="
+  },
+  "madeira-6": {
+   "w": 1024,
+   "h": 683,
+   "blur": "UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAsAAsBMJaACdADu84yHhEAAAP759mVG1cOgiwL/wla58wvp4Z/HmzQSAlhUQK0/cT9sMGmaLl1b86p3cz0l8fU+MqDmhH3VM8xBO3jXvQ0zRPZkvkabKQYjQ0alzZAAAA=="
+  },
+  "madeira-7": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAsAAsBMJZgC7AEPS26jEg2AAP7vPac1eQ1xYh2ssnRuVv7bf102mzeFGh7iSsgecmVU8Hd2hAAA"
+  },
+  "madeira-8": {
+   "w": 1023,
+   "h": 682,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAAsBMJZgCdEf/tsABYyVAAP75UdvEwiaRFxX+eQ7fgfSFLLy/UvHB2DzG5O+0PdprAZdRUGmGPrCfUNu2SXZnbHwfBFGZGjzcV3+hbprmXAAAAA=="
+  },
+  "madeirense-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAAsBMJZgCdAD2M9PPDAAA/idK05Mo/WfSrRFEf1oQwREhbdQcqTywFhukEd+sktj1OqrAhPe+prxTGAAA"
+  },
+  "madeirense-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAsAAsBMJbACdAEO36kLSBAA/uzhhTkMd269uwHvvCsjTd/fj0qd/EboE//78dFSOG64/0geYBwz8XZpzuVRKR/acAAA"
+  },
+  "madeirense-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAwAAsBMJZACdAYu5gdWhjmM0AD+nw7kG11RwbEF/3s31kdV+8qyaeukyl9MC46yDs+Wn+zn6LwL8YbRaW/SQdQxhddi3Rrb8HHqm1ngP3C484cNRXXKBNAAAA=="
+  },
+  "madeirense-4": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAwAAsBMJbAAApMmF+fd5AAA/sj/6yGlegyVYQLIwvHmVFajoLoSqXvFVdgqXVLLWdx1WO8nB8Ij/QQpGMZPaunzDxKLHp9coiD1Gq4LOYADQAA="
+  },
+  "madeirense-5": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAwAAsBMJQBdgCHviXaNtwwAAP7zr/ff3UYYiHowNK63SQbjzZNynfLJQZRamHFUglR2yxpXh3NceZZUs7iEhQjGEqiStyYp7a/5EWcIorjh1H4AAA=="
+  },
+  "madeirense-6": {
+   "w": 1024,
+   "h": 683,
+   "blur": "UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQAAsAAsBMJaACdAYuvYeLmbiAAP6D+ZdzbQOigQ2451gzyXa+1Gcl2O34Yh4ZFMp4lIcdCt5DB1s4TsMzfVVF9dE0QNGM3icx8w8juZ6r9BlyL59g5PPLLL1R6kyAVBNAAA=="
+  },
+  "madeirense-7": {
+   "w": 1024,
+   "h": 577,
+   "blur": "UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAkAAsBMJbACdAD0kDNueb4AAPzk1FEK97dq9blV9rqokkG9zDsMj2IyqklRLmHx4Nd1wxto7LJfDWzRWjbn1UkKeezofBoWgrerkphchIeAAAA="
+  },
+  "madeirense-8": {
+   "w": 547,
+   "h": 1024,
+   "blur": "UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoQAB4APtFUo0uoJKMhsAgBABoJQBOgA9KKYJtoIj1a5PQIAAD+tf7Slc6tLpu1+H0QOwATFYp6WJr+p+qZWBDrKvWXbqKDWVOZYIscsEyd5nFl34HGoPIrz33fSX7hRKGxG34loZG69IcMZUm+aVR2M3DblYI8cOROg5gs34VWwouUeFoXgiI0rq5LgAAA"
   },
   "malaga-1": {
    "w": 1200,
@@ -671,6 +921,26 @@
    "h": 800,
    "blur": "UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAsAAsBMJZgCdAYu5WNAZrLmAAD+37xZqaBrpW64vZaR3Pcfv2UG/aC1ET5GBzXbreTE4cmMnkEBEHku5QopNlr974NyE47mROQ+22uXI1bqbMLJwSU2H+NDniEKYAA="
   },
+  "obidos-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsAAsBMJZAC7AEDdqCfkAD+4lkq6pz8815AjDD4Hr0LszYgPKH9f1igax+2dOCi5j/YxIP3uHg6GVxKxcJyTFJTvujrkAA="
+  },
+  "obidos-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAAsBMJQBOgCGhJR0sPoAA/QKiOWXZKtjr3u+GpqfFttgF0rPluYNbeegU8hV2WU6762MU6HHIUwR84V0sZlsJH+v5FCAAAA=="
+  },
+  "obidos-3": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAsAAsBMJZQCsADxC8qR8FNkAAD+TS0puIal3QJEz4PaLOWP4NwbxD405jWJeTnZajmq7TNMYasBISAu+KysBICRpP3FwAA="
+  },
+  "obidos-4": {
+   "w": 1200,
+   "h": 770,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAABQAgCdASoQAAoAAsBMJbACdEf/gbsfppcEMgAA/iacm/v5DfO9THC2eUJVC1M2f4+7J7b2ZpDRGvdVXcFcC8hr8OymXHr4Xh698zm7hgviYS4IMVS61zToVBXpoAAA"
+  },
   "otazu-1": {
    "w": 1200,
    "h": 800,
@@ -680,6 +950,16 @@
    "w": 1200,
    "h": 898,
    "blur": "UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwAAsBMJZgCdAEIlzpyAAD+4Aqle1OyiEbFymSH7D57jW04xWGilQVwEwaSoA1+lFFm77DKiMT6pd9GqZgA"
+  },
+  "palmela-1": {
+   "w": 1200,
+   "h": 750,
+   "blur": "UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAoAAsBMJbACdAEVV5HPJEesAAD+tBmZZ4v5D10V/SRxDW0754JFSZ44JDdiA2MnRRncECP0TvydLmR5mCE5suQL7exvqdhrO4wI5/LrxlzQ9HYdt4+Pf0IgAA=="
+  },
+  "palmela-2": {
+   "w": 1200,
+   "h": 765,
+   "blur": "UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAoAAsBMJbACdAERET2+LLOjgAD48rmyKqiJQbQ2erhEUb76+REWR7UP9TG2z2TGHEhzbpUfTY0sEUh4kuzn2KiE84CQzqDd2GQDm+5NXXE1e9A9oFz18/SXptG11gAAAA=="
   },
   "pauillac-1": {
    "w": 790,
@@ -740,6 +1020,41 @@
    "w": 1200,
    "h": 677,
    "blur": "UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkAAsBMJQBOgCHQ6OUAAOIGTfZ1IuCkx4g+58tbiGk+X6qG3vF4GPuWlGVjPAWjNv493Us8iUBHCTAAAA=="
+  },
+  "portimao-1": {
+   "w": 900,
+   "h": 1200,
+   "blur": "UklGRo4AAABXRUJQVlA4IIIAAADQAwCdASoQABUAPtFUo0uoJKMhsAgBABoJYgCdMoAC+xc6ACUYDogA/sWBtVJDZ14i5ycNiuBIEL6HbgGo1cCqaPDQ2DMAYWsdl58Ax4AD2XmZHUYnv0a5135Od1ZpB+DM3yFzoGufo2x+lFJmvQ9SQumBOO/NtuzqsNcFNySMrAAA"
+  },
+  "porto-1": {
+   "w": 1200,
+   "h": 724,
+   "blur": "UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAoAAsBMJQBOgBsh3TAAAPoPBbk+ZrbssIBmXd7E3Ruri+Sig7isC3F0IO3MEaczk/qpFmMLXAAA"
+  },
+  "porto-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAsAAsBMJZgC7ACUcd2bAAD9gd5EGtHbLVU6pvW28GS7c61nI8OnZcanllWxmpSwMAAA"
+  },
+  "porto-3": {
+   "w": 1200,
+   "h": 740,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAAsBMJZACdGuAAolj2QAA/urcAxb0hC4MnHhfuHranMp1HFcp0LLMFUPQgKq/rfKP4Sg+4toWyRAAAA=="
+  },
+  "porto-4": {
+   "w": 1200,
+   "h": 839,
+   "blur": "UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsAAsBMJZgCdAENhtMBlgAA/uhBjzsmhoDxM4beevN+MgVzgVpvxhyI8Y3KzidRfEi9OK+fghgATfQO8X3qm5Q0GCFhgAA="
+  },
+  "porto-5": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsAAsBMJQBOgCIjeRSHo/SgAP7uKsKZ/TWjUVE8BTJUCMlVZNXtYLMuBfryBIHtvXHsIBIyivVilGTlNjyrol9A/gAA"
+  },
+  "porto-6": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAAsBMJYwC7AD0sj0RFAAA/gBBqxPIAGlZx0YaR9P4XPZBXSTq5+VgrikuEc+zjzdZ2whg0WBAxgAAAA=="
   },
   "priorat-1": {
    "w": 1200,
@@ -946,6 +1261,21 @@
    "h": 900,
    "blur": "UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAwAAsBMJYgCdAEOvDKcAAD+7UIJOp3elUvQptd56XeD/DLyjBKVgDvxoOBggAA="
   },
+  "setubal-1": {
+   "w": 1200,
+   "h": 600,
+   "blur": "UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAgAAsBMJZgCdGuAAsvVYTIAAP71BR1jtCrht6oaRIvtiSmaLYd4chOySsZC1dqzHWxM2k9Y47+gkud2IOAA"
+  },
+  "setubal-2": {
+   "w": 1200,
+   "h": 785,
+   "blur": "UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAoAAsBMJQBOgBnTt15adwAAywvLPl7l++ggZ2lgMJjHBwTVZ/pH9EKvJKOFCMqJNqbzK5TzgT8o77UMu9WrRKxb6qDS44aP/FWYUs+XxZ2Z2J21+9gAAAA="
+  },
+  "setubal-3": {
+   "w": 1200,
+   "h": 799,
+   "blur": "UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAsAAsBMJQBOj+AQThl26JRNAAAA/cPUP0MzlQqKDmRhAN8GrGD1fjglR6AqjaUKPbq6y1gbz4TU2+IEppFyr9yywYs/OGvNSWzuvxu34XgPU8KKejA6ZmvLOUdncAA="
+  },
   "sierra-de-salamanca-1": {
    "w": 1200,
    "h": 797,
@@ -1026,6 +1356,16 @@
    "h": 801,
    "blur": "UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoQAAsAAsBMJbACdAEfvog3XLb/4AD+5gM3rkGdOxvIQ1EIFi/MVrl+E4nCAH7vZLDhdK2tSe8RT2OSIz+59BeY6kdMhX//mtpXUw7vkiHqN4jCz4aNxRg0ld9nuoxqJL50UO0LNBbMiPauAAA="
   },
+  "tavira-1": {
+   "w": 1024,
+   "h": 791,
+   "blur": "UklGRnwAAABXRUJQVlA4IHAAAAAQAgCdASoQAAwAAsBMJbAC7AYtBDz7d9CAAP7u6mF1BxXMRxJ971/+pP5SmAycvuVjjLDx+fmGO4mDYNY4Wj8+UHrPqn1zWy/TBzvmZ14fV2MfVRjXtPmotQ684L7jDNYnojm044q636Ep/zfI64AA"
+  },
+  "tavora-varosa-1": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRnIAAABXRUJQVlA4IGYAAAAwAgCdASoQAAwAAsBMJZACdAD0oruP9LDcoAD+bQd0XUi3+g4LP1GtSTlrjh1oldXqCPsIG6uToYZok1fZWF+6Z5XIPOp4FzIGR8RMhhVG1iOhocn5ti0kcrljMlkL5n9pv4gAAAA="
+  },
   "terra-alta-1": {
    "w": 1200,
    "h": 800,
@@ -1065,6 +1405,46 @@
    "w": 1200,
    "h": 900,
    "blur": "UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAwAAsBMJYgCdAEPgbfIUAD+xVp4UwyddfHzTnF4HwMDHPP64tANLggEsmt5IdFq9rQo1GuggDBewAA="
+  },
+  "torres-vedras-1": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAsAAsBMJZACdAEOy56OzmoAAP7I/ngzsH+FTDDtQmxozhppz/xpCukW6QkCIyES9KFEFTXpQAAA"
+  },
+  "torres-vedras-2": {
+   "w": 1200,
+   "h": 800,
+   "blur": "UklGRmoAAABXRUJQVlA4IF4AAABwAgCdASoQAAsAAsBMJZgCdGuAAogHyXfgJqTAAP7zpGJrb4KpypkoytRQzFQXBKck/+SJX0lHocbs6MORtsF343pcMMxZZ9zoDIap2onQ3YkFk6UL5mF8sW7iUAAA"
+  },
+  "torres-vedras-3": {
+   "w": 1200,
+   "h": 765,
+   "blur": "UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAoAAsBMJagCdGuAAs0n02vAAP7foiWrOymk5FHXZtYxhzvG3HAfolcL9kJ7tp9oPs8nUlzO6M4oAAA="
+  },
+  "torres-vedras-4": {
+   "w": 1200,
+   "h": 765,
+   "blur": "UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAoAAsBMJbACdAEOl+3D5IgAAPfTn2GnvoDbJM8UXWTmvd+s9iDF02RE/3z7P1Hf024DEpZ8z+797lFwAhljX9uvcL+Ft/E2e+/kb3bfyEvjZYsAAA=="
+  },
+  "tras-os-montes-1": {
+   "w": 1200,
+   "h": 742,
+   "blur": "UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAoAAsBMJZwAAcR6+QfeYADOGWb7lzE5FoaThIL4n3fzdF88xbK7NIMYIE0jH8GR8lkcORzJtXEOXbbIAA=="
+  },
+  "tras-os-montes-2": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAAsBMJZgCdAEMQO4flAAA/rQtq75boEjKY4HqkQ0vQsQ9w98JkthYR6GqJqKJycz+oCta5SZQZe+U6dDzW/wQmzB2cGdrKNgAAAA="
+  },
+  "tras-os-montes-3": {
+   "w": 1200,
+   "h": 900,
+   "blur": "UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAAsBMJYgCdAEQE0zN3F8AAP5mz8WisABRCQoCjFoR8Joyv8Pb0DoXyZAkRTckR+Tj0CsRI30RC4iwwKviqZQ1Nd1oRFcAAA=="
+  },
+  "tras-os-montes-4": {
+   "w": 1200,
+   "h": 798,
+   "blur": "UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsAAsBMJbACdAC9uY+q+lgAAP6qHj/tdeNc0fRGxFZvFvLXIwOpPZ6DLkdyxXvQc8TDTWIoj9UIWYjvXBh3ZnnVwQB58/ZrQAAA"
   },
   "txakoli-alava-1": {
    "w": 1200,

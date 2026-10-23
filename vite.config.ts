@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { searchIndex } from './src/home/searchIndex';
+import { photoData } from './src/facts/photoData';
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { loadTree } from './src/tree';
 import { placeOfPath, placePage, placePaths } from './src/paths';
@@ -32,6 +33,11 @@ export default defineConfig(({ mode }) => ({
     name: 'search-index',
     resolveId: (id) => (id === 'virtual:search-index' ? '\0virtual:search-index' : undefined),
     load: (id) => (id === '\0virtual:search-index' ? `export default ${JSON.stringify(searchIndex())};` : undefined),
+  }, {
+    // The photo credits and sizes the app can show (src/facts/photoData.ts): a place's first three and the ones a tour or the cover names.
+    name: 'photo-data',
+    resolveId: (id) => (id === 'virtual:photo-data' ? '\0virtual:photo-data' : undefined),
+    load: (id) => (id === '\0virtual:photo-data' ? `export default ${JSON.stringify(photoData())};` : undefined),
   }, { name: 'guide-count', transformIndexHtml: (html, ctx) => {
     // Every page that shows the guide count gets it; Home gets its country cards, the Guides page its country index.
     const out = fillStoryCount(fillGuideCount(html, placeGuideCount()), storyCount());

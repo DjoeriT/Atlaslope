@@ -6,3 +6,7 @@ declare module 'virtual:search-index' {
   const index: import('./home/plainSearch').SearchIndex;
   export default index;
 }
+declare module 'virtual:photo-data' {
+  const data: { photos: Record<string, import('./facts/types').Photo>; sizes: { sizes: number[]; photos: Record<string, { w: number; h: number; blur: string }> } };
+  export default data;
+}

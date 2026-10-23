@@ -1,7 +1,6 @@
 import measuresFile from '../../data/place-measures.json';
 import { ROOT } from '../site';
-import photosFile from '../../data/photos.json';
-import photoSizesFile from '../../data/photo-sizes.json';
+import photoData from 'virtual:photo-data'; // only the photos the app can show (src/facts/photoData.ts, decision #38)
 import sourcesFile from '../../content/sources.json';
 import curriculumFile from '../../content/curriculum.json';
 import type { Measures, Photo, ShownPhoto, Sheet, SheetFile, Sources } from './types';
@@ -23,8 +22,8 @@ const measuresDoc = measuresFile as unknown as {
   regions: Record<string, Measures>;
 };
 const measures = measuresDoc.places;
-const photos = (photosFile as unknown as { photos: Record<string, Photo> }).photos;
-const photoSizes = photoSizesFile as { sizes: number[]; photos: Record<string, { w: number; h: number; blur: string }> };
+const photos: Record<string, Photo> = photoData.photos;
+const photoSizes = photoData.sizes;
 
 export const sheetOf = (placeId: string): Sheet | undefined => sheets.get(placeId);
 export const measuresOf = (placeId: string): Measures | undefined => measures[placeId];
