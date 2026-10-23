@@ -22,6 +22,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   frames, never cutting a face, glass or bottle (Guides page cards: square crops, each checked, release 55). Detail: `Review/visual-style.md`.
 
 ## Current state (23 Oct 2026)
+- Release 74 (23 Oct; handoff `docs/handoffs/2026-10-23-germany-pilot.md`): Germany as the fifth country, pilot Mosel and Rheingau at `/de/` (#245); Rheingau has no outline yet.
 - Release 70 (23 Oct; handoffs `docs/handoffs/2026-10-22-portugal-batch-1.md`, `2026-10-23-portugal-photos-2.md`): Portugal with equal
   standing: 28 guides (every mainland DOC, Lisboa VR, Madeira, Madeirense), country pages `/es/` and `/pt/` with Home country cards and
   Guides as the country index (#214); 76 photos for 24 of them from Commons and Openverse (#234; Alenquer and DoTejo have none). Guides
