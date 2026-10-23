@@ -30,6 +30,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   intro on a first visit, "Learning for" course filter, `#learn`, Cava and Catalunya in Learn. The release also carries other sessions' merged work since 69
   (`git log --merges release-69..release-70`). Portugal's and France's climate colours,
   altitude and slope, and measures on guide pages of places outside Learn: #241 and #244, release 73.
+- Italy's climate, altitude and slope for its 87 places and 9 regions, plus a seventh map climate group, Cold (Dfb, Dfc, ET), for
+  the Alps: #247, merged 23 Oct after release 73, not yet released (handoff `docs/handoffs/2026-10-23-italy-climate.md`).
 - Release 71 (23 Oct; handoff `docs/handoffs/2026-10-22-france-wset.md`): France, third country, the whole WSET L3 list: 96 places
   (94 AOCs plus the PGIs Côtes de Gascogne and Pays d'Oc), guides from the EU single documents (5 from INAO cahiers), INAO outlines (Champagne and
   the PGIs from INAO commune lists and IGN ADMIN EXPRESS), Chablis climats as zones, nesting measured on outlines, IGN BD ORTHO close-in,
@@ -100,6 +102,8 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   Size check (owner, 22 Oct 2026, option A): video (.webm, .mp4) is left out of the 2 MB download check like photos; the cover's two clips are ~1 MB and load only with the cover. Without them the atlas is 1.96 MB: about 40 KB of room left.
   Guides on demand (owner, 22 Oct 2026, PR #214): each guide is its own chunk under `dist/guide-data/`, loaded with its page or fly-there, and left out of the check like `dist/story/`. Incident: Portugal took the whole site to 2.13 MB. First load after: 1.93 MB; the 137 guides are 0.29 MB more, fetched one at a time.
   Limit 2.1 MB (owner, 23 Oct 2026, PR #234): the Portugal photos took the first load to 2,000,515 bytes after the app bundle was trimmed to the photos it can show. Next room: fact sheets on demand (about 55 KB, needs a precomputed grape index for search and all sheets when Study opens).
+- Italy (owner, 23 Oct 2026): 87 places covering all 78 official DOCGs is the target; the earlier "96 DOCGs" is dropped. Map climate
+  colours get a seventh group, Cold (Dfb, Dfc, ET), for the Alpine places (#247).
 - Models: Opus 5.5 main session; Sonnet 5.5 helpers. Sonnet re-reads at the same price as Opus, so a switch saves only ~20% [V].
 
 ## Cost lessons (measured)
