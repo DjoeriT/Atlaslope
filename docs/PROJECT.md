@@ -31,7 +31,7 @@ English or Dutch. Working style and token rules: `CLAUDE.md`.
   (`git log --merges release-69..release-70`). Portugal's and France's climate colours,
   altitude and slope, and measures on guide pages of places outside Learn: #241 and #244, release 73.
 - Italy's climate, altitude and slope for its 87 places and 9 regions, plus a seventh map climate group, Cold (Dfb, Dfc, ET), for
-  the Alps: #247, merged 23 Oct after release 73, not yet released (handoff `docs/handoffs/2026-10-23-italy-climate.md`).
+  the Alps: #247, release 74 (handoff `docs/handoffs/2026-10-23-italy-climate.md`).
 - Releases 64-68 (22 Oct; handoff `docs/handoffs/2026-10-22-guide-c3-build.md`): 64 guide page C3 for every place and the map unfold
   (#187, #189); 65 thirteen more map tours by rule A (#191; 15 tours in all); 66 Guides page E "Explore with the map" (#195), Show map in
   the crumb line (#192), no view transition on the unfold (#194); 67 country data and model, Portugal first (#197, #198, countries

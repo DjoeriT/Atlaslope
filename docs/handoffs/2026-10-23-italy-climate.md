@@ -1,6 +1,6 @@
 # Italy climate colours (23 Oct 2026, #149)
 
-PR #247 (branch `claude/italy-climate`), merged 23 Oct 2026 after #241 and #244; not in release 73.
+PR #247 (branch `claude/italy-climate`), merged 23 Oct 2026 after #241 and #244; in release 74.
 
 ## Done
 - `Tools/data/koppen_country.sh italy`: Köppen polygons for the box 6.5 36.5 18.6 47.1 from the cached Beck et al. raster (raw, not committed).
