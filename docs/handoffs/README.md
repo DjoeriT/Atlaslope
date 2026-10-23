@@ -115,3 +115,4 @@ Newest first, one line each. File names are `<date>-<topic>.md`; each holds done
 - [2026-10-16-build-plan-walkthrough](2026-10-16-build-plan-walkthrough.md): build plan walkthrough (16 Oct 2026, 12:45 to 12:52Z)
 - [2026-10-16-build-cost-and-quiz](2026-10-16-build-cost-and-quiz.md): cutting the build cost, quiz, learning engine and reference (16 Oct 2026, 12:29 to 12:46Z)
 - [2026-10-23-germany-pilot](2026-10-23-germany-pilot.md): Germany pilot, release 74: Mosel and Rheingau at /de/; Austria desk report; open: Rheingau outline, Austria pilot pair
+- [2026-10-23-austria-pilot-go](2026-10-23-austria-pilot-go.md): Austria pilot brief: Wachau and Neusiedlersee (#94), prep data ready, outline choice for Neusiedlersee open
