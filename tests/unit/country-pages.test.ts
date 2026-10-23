@@ -110,7 +110,7 @@ describe('France (pilot, decisions #52-#58)', () => {
   });
   it('renders /fr/ with 96 place tiles, photos where they have shipped, and an honest Study note', () => {
     expect(count(page, /<a class="ecard"/g)).toBe(96);
-    expect(count(page, /Photos soon/g)).toBe(3); // Muscat de Beaumes-de-Venise (none on Commons); the two PGIs: photos in the next commit
+    expect(count(page, /Photos soon/g)).toBe(1); // Muscat de Beaumes-de-Venise (none on Commons); Côtes de Gascogne and Pays d'Oc now have photos
     expect(page).toContain('href="../fr/chablis/"');
     expect(page).toContain('href="../fr/pauillac/"');
     expect(page).toContain('Not yet for France.');
