@@ -8,7 +8,7 @@ const tree: Tree = loadTree(raw);
 const ids = (xs: Array<{ id: string }>) => xs.map((x) => x.id);
 
 describe('tree model over data/places.json', () => {
-  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) Loire batch (18 places) Rhône batch (14 places) and the last 22 (22-23 Oct 2026: the France WSET L3 list, 94 places) and its two PGIs (23 Oct 2026, 96 in all), and Germany's wave 1 (5 places, 23 Oct 2026), with a unique slug id', () => {
+  it('loads every place, Spain, the 26 Portugal places (batch 1, owner option B, 22 Oct 2026) and France\'s pilot (2 places, 19 zones) Bordeaux batch (16 places) and Burgundy batch (22 places) Loire batch (18 places) Rhône batch (14 places) and the last 22 (22-23 Oct 2026: the France WSET L3 list, 94 places) and its two PGIs (23 Oct 2026, 96 in all), and Germany\'s wave 1 (5 places, 23 Oct 2026), with a unique slug id', () => {
     expect(tree.places).toHaveLength(346);
     expect(new Set(ids(tree.places)).size).toBe(346);
     for (const p of tree.places) expect(p.id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
