@@ -569,15 +569,17 @@ def it(ids):
 DE_OUT = ROOT / "Review/sources/photo-candidates-de.json"
 VINE_DE = re.compile(VINE.pattern + r"|weinberg|weinlage|rebe|reben|steillage|winzer|weingut|riesling|wein\b", re.I)
 DE_VINE_Q = "(Weinberg OR Weinberge OR Weinlage OR Steillage OR Reben OR Riesling OR vineyard)"
-# Germany pilot (23 Oct 2026, issue #149): the two places; Mosel has an outline, the Rheingau only a box (Hessen's outline host refused, no file yet).
-DE_PLACES = {"mosel": "Mosel", "rheingau": "Rheingau"}
+# Germany pilot (23 Oct 2026, issue #149): the two places; Mosel had an outline, the Rheingau only a box (Hessen's outline host refused then).
+# Wave 1 (23 Oct 2026): the rest of Rheinland-Pfalz, all with outlines; the box stays so the pilot's Rheingau search can be re-run as it was.
+DE_PLACES = {"mosel": "Mosel", "rheingau": "Rheingau", "ahr": "Ahr", "mittelrhein": "Mittelrhein", "nahe": "Nahe",
+             "rheinhessen": "Rheinhessen", "pfalz": "Pfalz"}
 DE_BOX = {"rheingau": (7.85, 49.93, 8.32, 50.12)}
 
 
 def de(ids):
     from shapely.geometry import box
     geoms = {x["properties"]["id"]: shape(x["geometry"]) for x in json.loads((ROOT / "data/countries/de/areas.geojson").read_text())["features"]}
-    geoms.update({k: box(*v) for k, v in DE_BOX.items() if k not in geoms})
+    geoms.update({k: box(*v) for k, v in DE_BOX.items()})
     done = json.loads(DE_OUT.read_text()) if DE_OUT.exists() else {}
     for pid, name in DE_PLACES.items():
         if (ids and pid not in ids) or pid in done: continue

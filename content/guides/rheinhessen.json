@@ -1,0 +1,138 @@
+{
+ "id": "rheinhessen",
+ "title": "Why Rheinhessen tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Hard limestone plateaus rise above soft marl slopes, and loess covers much of both. Riesling is especially good at showing how one site differs from the next.",
+  "cite": [
+   "rheinhessen-spec:p2",
+   "rheinhessen-spec:p6",
+   "rheinhessen-spec:p7"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "basin",
+   "beat": "place",
+   "title": "A basin inside a river bend",
+   "paras": [
+    "The Rhine bends around Rheinhessen to the north and east, between Bingen and Worms. The Nahe forms the northwest border. The region is roughly the same as the Mainz Basin.",
+    "The land is plateaus of hard limestone, cut by wide valleys with gentle hills and lowlands. The highest plateaus lie between 250 and 300 m above sea level. The lowlands sit at 100 to 150 m.",
+    "Vines are concentrated on the slopes, which average about 7% in steepness. Steep sites are found especially around Nierstein and in Bingen. Most slopes face southeast to southwest."
+   ],
+   "cite": [
+    "rheinhessen-spec:p4",
+    "rheinhessen-spec:p6",
+    "rheinhessen-spec:p7"
+   ],
+   "fly": [
+    {
+     "label": "Nierstein, steep slopes on the Rhine",
+     "point": [
+      8.333,
+      49.87
+     ],
+     "zoom": 11,
+     "caption": "Steep-slope vineyards are found especially around Nierstein.",
+     "cite": [
+      "rheinhessen-spec:p7"
+     ]
+    },
+    {
+     "label": "Bingen, steep slopes in the northwest",
+     "point": [
+      7.9,
+      49.967
+     ],
+     "zoom": 11,
+     "caption": "Steep-slope vineyards are also found in Bingen, in the northwest of the region.",
+     "cite": [
+      "rheinhessen-spec:p7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Warmer toward the Upper Rhine",
+   "paras": [
+    "The average temperature is about 9.9 °C over the year and 14.6 °C during the growing season. The cooler areas lie in the southwest, on the border with the Saar-Nahe basin. The plateau and hill country sits in the middle. The warmest areas are those nearer the Upper Rhine Graben.",
+    "About 550 mm of rain falls in a year. On average 65% of it, 355 mm, falls in the growing season. The vines receive roughly 650,000 Wh/m² of direct sun in that time."
+   ],
+   "cite": [
+    "rheinhessen-spec:p7"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Limestone, marl and loess",
+   "paras": [
+    "Most of Rheinhessen is tertiary rock, mostly covered by younger Quaternary sediments. The plateaus are tertiary limestone, mostly topped with loess. The slopes, hills and lowlands are softer tertiary marl. On the slopes it is often veiled by loess or slope sediments. In the lowlands river and terrace deposits cover it.",
+    "Loess and loess loam are the most important parent material for the soils. Rotliegend, the old rock base beneath it all, comes to the surface only in the far southwest and at Nierstein. Devonian quartzite and slate appear near Bingen.",
+    "Vines grow at about 175 m on average."
+   ],
+   "cite": [
+    "rheinhessen-spec:p6",
+    "rheinhessen-spec:p7"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Many grapes, many styles",
+   "paras": [
+    "White wines are mostly made from a single grape and show that grape's typical character. Some have floral Muscat notes. Riesling usually has a pronounced acidity and joins minerality with elegant fruit. Wines aged in barriques and tonneaux often show malolactic fermentation and fine toasty notes. Blends of several grapes are often left with some sugar, in the lieblich (medium-sweet) style.",
+    "Only five grapes may carry a single-vineyard name. Two are Riesling and Chardonnay. Two are Pinot whites: Weißer Burgunder (Pinot Blanc) and Ruländer (Pinot Gris). The fifth is the one red, Spätburgunder (Pinot Noir). Single-vineyard wines need at least 85% from these five. Beerenauslese, Trockenbeerenauslese and Eiswein are exempt and may use any permitted grape. The rules allow many other grapes for everything else. Yields are capped at 105 hl per hectare.",
+    "Reds are made from one grape or blended, with aromas of red fruit and berries. Medium-bodied ones have soft acidity and restrained tannin. Fuller ones can add spice and smoke. Rosés are made only from red grapes. They are mostly medium-bodied, with subtle red fruit and fresh, lively acidity. Rotling is a pale to light red made by blending white and red grapes or mash.",
+    "Sparkling wine comes as Sekt b. A. (from a defined region) and Winzersekt, and as lightly sparkling Perlwein. Sekt called Crémant often has a soft, creamy texture and very fine bubbles. Traditional bottle-fermented Sekt must age at least nine months in the bottle. Depending on the season and site, grapes for sparkling base wine must be picked earlier to keep its pronounced acidity. Perlwein is fresh, fruity and spritzy, usually from aromatic grapes.",
+    "The sweetest wines are Trockenbeerenauslese, from overripe, shrivelled grapes with noble rot. It needs at least 150° Öchsle and is more concentrated than Beerenauslese. Eiswein comes from largely healthy, ripe grapes frozen by the weather when picked and pressed. It needs at least 120° Öchsle."
+   ],
+   "cite": [
+    "rheinhessen-spec:p2",
+    "rheinhessen-spec:p3",
+    "rheinhessen-spec:p4",
+    "rheinhessen-spec:p5",
+    "rheinhessen-spec:p8",
+    "rheinhessen-spec:p9",
+    "rheinhessen-spec:p10"
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Qualitätswein",
+    "text": "May be enriched, unlike Prädikat wine. It needs at least 7.5% vol and 60° Öchsle for Riesling, Morio Muskat and Portugieser, 8.8% vol and 68° for Dornfelder, and 7.8% vol and 62° for other grapes."
+   },
+   {
+    "term": "Kabinett",
+    "text": "A Prädikat wine that cannot be enriched, with at least 9.5% vol and 73° Öchsle for Müller Thurgau, Riesling and Silvaner, and 10.0% vol and 76° for other grapes."
+   },
+   {
+    "term": "Spätlese",
+    "text": "A Prädikat wine from fully ripe grapes, with at least 11.4% vol and 85° Öchsle for Riesling and Silvaner, and 12.2% vol and 90° for other grapes."
+   },
+   {
+    "term": "Auslese",
+    "text": "A Prädikat wine from fully ripe to overripe grapes, with at least 12.5% vol and 92° Öchsle for Riesling, 13.0% vol and 95° for Silvaner, and 13.8% vol and 100° for the rest."
+   },
+   {
+    "term": "Beerenauslese",
+    "text": "A Prädikat wine from overripe, dried or noble-rot grapes, with at least 16.9% vol and 120° Öchsle for every grape."
+   },
+   {
+    "term": "Weißherbst",
+    "text": "A rosé made only from red grapes, pale to light red in colour."
+   }
+  ],
+  "cite": [
+   "rheinhessen-spec:p1",
+   "rheinhessen-spec:p2",
+   "rheinhessen-spec:p3",
+   "rheinhessen-spec:p5",
+   "rheinhessen-spec:p8"
+  ]
+ }
+}

@@ -512,6 +512,82 @@
    ],
    "bytes": 638976,
    "sha256": "38752432444ef221cf9c51806e3646ac7faf116e92eff8829c43355bf07ec07a"
+  },
+  {
+   "path": "countries/de/spec-Ahr.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Ahr.pdf?__blob=publicationFile&v=1",
+   "note": "Ahr product specification (16 pp, the PDF the BLE page links on 23 Oct 2026)",
+   "bytes": 344502,
+   "sha256": "b22304200e49cbb93b6ddd0f22ce216130c93463916aa8fb9c8ecf27b242bc2a"
+  },
+  {
+   "path": "countries/de/spec-Mittelrhein.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Mittelrhein.pdf?__blob=publicationFile&v=3",
+   "note": "Mittelrhein product specification (11 pp, the PDF the BLE page links on 23 Oct 2026)",
+   "bytes": 308139,
+   "sha256": "591067ec75e5483189b96a93db84b35fae447426f2933613a9c6417d3f104d2e"
+  },
+  {
+   "path": "countries/de/spec-Nahe.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Nahe.pdf?__blob=publicationFile&v=2",
+   "note": "Nahe product specification (14 pp, the PDF the BLE page links on 23 Oct 2026)",
+   "bytes": 137853,
+   "sha256": "72b1fd07019ad1ebe951ce12b79e6d440543739df24e28fa207524e7ed11bb62"
+  },
+  {
+   "path": "countries/de/spec-Rheinhessen.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Rheinhessen.pdf?__blob=publicationFile&v=8",
+   "note": "Rheinhessen product specification (10 pp, the PDF the BLE page links on 23 Oct 2026)",
+   "bytes": 66014,
+   "sha256": "2bc8fbf3601582f84e8fdd8506eaf6b7cb047420cc034f5599fe4f89d6e43382"
+  },
+  {
+   "path": "countries/de/spec-Pfalz.pdf",
+   "kind": "url",
+   "licence": "BLE, official spec text (amtliches Werk, reused with source credit [A])",
+   "url": "https://www.ble.de/SharedDocs/Downloads/DE/Ernaehrung-Lebensmittel/EU-Qualitaetskennzeichen/Wein/Antraege/Bestimmte_Anbaugebiete/01_Produktspezifiaktion_Anbaugebiete/Produktspezifikation_Pfalz.pdf?__blob=publicationFile&v=2",
+   "note": "Pfalz product specification (10 pp, the PDF the BLE page links on 23 Oct 2026)",
+   "bytes": 62276,
+   "sha256": "f2a4f7dcc6e1165317aefce124c1dfbef474b81005cc8a83eaee3f05aa3550ce"
+  },
+  {
+   "path": "countries/de/he/gemarkungen.geojson",
+   "kind": "command",
+   "licence": "Hessen ALKIS (HVBG), open by law without conditions (§ 18 HVGG); source line notes changes",
+   "note": "Hessen ALKIS vereinfacht WFS: the 32 Rheingau Gemarkungen (KatasterBezirk, art Gemarkung), EPSG:25832, input of Tools/data/build_de_areas.py",
+   "command": [
+    "python3 -I Tools/data/fetch_de_rheingau.py"
+   ],
+   "bytes": 691913,
+   "sha256": "1a7677d4c9a9c0d7166a579b6aeb15580e00c09d59929fc86a84133b8abe579b"
+  },
+  {
+   "path": "countries/de/he/reben.geojson",
+   "kind": "command",
+   "licence": "Hessen ALKIS (HVBG), open by law without conditions (§ 18 HVGG); source line notes changes",
+   "note": "Hessen ALKIS vereinfacht WFS: land use Nutzung with bez Rebfläche in the Rheingau, Seckbach and Böddiger boxes, EPSG:25832, input of Tools/data/build_de_areas.py",
+   "command": [
+    "python3 -I Tools/data/fetch_de_rheingau.py"
+   ],
+   "bytes": 3096627,
+   "sha256": "0ffc45ebac78ce7ee477872ddb37aa07bc435c419ac04f5f32c186ac1104373a"
+  },
+  {
+   "path": "countries/de/he/caps.xml",
+   "kind": "url",
+   "licence": "Hessen ALKIS (HVBG), open by law (§ 18 HVGG)",
+   "url": "https://www.gds.hessen.de/wfs2/aaa-suite/cgi-bin/alkis/vereinf/wfs?SERVICE=WFS&REQUEST=GetCapabilities",
+   "note": "Hessen ALKIS vereinfacht WFS capabilities (23 Oct 2026): holds the licence text (AccessConstraints, Fees)",
+   "bytes": 23409,
+   "sha256": "d4f888f653bc779428b2cc4dc5710a31c31206acade5b74557964ac260ed4a70"
   }
  ]
 }

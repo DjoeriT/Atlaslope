@@ -1,0 +1,254 @@
+{
+ "region": "de-nahe",
+ "sheets": [
+  {
+   "id": "nahe",
+   "why": {
+    "text": "Varied soils from slate to volcanic rock and loess, a mild river climate with warm days and cool nights, and Riesling on steep slopes.",
+    "cite": [
+     "nahe-spec:p11",
+     "nahe-spec:p13",
+     "nahe-spec:p14"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Weißer Riesling"
+     },
+     {
+      "local": "Weißer Burgunder"
+     },
+     {
+      "local": "Ruländer"
+     },
+     {
+      "local": "Grüner Silvaner"
+     },
+     {
+      "local": "Blauer Spätburgunder"
+     },
+     {
+      "local": "Chardonnay"
+     },
+     {
+      "local": "Sauvignon Blanc"
+     }
+    ],
+    "cite": [
+     "nahe-spec:p13",
+     "nahe-spec:p14"
+    ],
+    "others": [
+     "Adelfränkisch",
+     "Albalonga",
+     "Aromera",
+     "Auxerrois",
+     "Bacchus",
+     "Blauer Silvaner",
+     "Blütenmuskateller",
+     "Bronner",
+     "Cabernet Blanc",
+     "Calardis Blanc",
+     "Calardis Musqué",
+     "Chenin Blanc",
+     "Comtessa",
+     "Divona",
+     "Donauriesling",
+     "Ehrenfelser",
+     "Faberrebe",
+     "Floreal",
+     "Freisamer",
+     "Gelber Kleinberger",
+     "Gelber Muskateller",
+     "Gm 6414-39",
+     "Gm 6423-12",
+     "Gm 7519-3",
+     "Gm 7539-4",
+     "Goldmuskateller",
+     "Grüner Veltliner",
+     "Grünfränkisch",
+     "Hibernal",
+     "Hölder",
+     "Huxelrebe",
+     "Johanniter",
+     "Juwel",
+     "Kanzler",
+     "Kerner",
+     "Kernling",
+     "Morio Muskat",
+     "Müller Thurgau",
+     "Muscaris",
+     "Muskat Ottonel",
+     "Optima 113",
+     "Orion",
+     "Ortega",
+     "Ortlieber",
+     "Osteiner",
+     "Pamina",
+     "Perle",
+     "Phoenix",
+     "Prinzipal",
+     "Regner",
+     "Reichensteiner",
+     "Rieslaner",
+     "Rosa Chardonnay",
+     "Roter Elbling",
+     "Roter Muskateller",
+     "Roter Riesling",
+     "Roter Traminer",
+     "Saphira",
+     "Sauvignac",
+     "Sauvignon Gris",
+     "Sauvitage",
+     "Scheurebe",
+     "Schönburger",
+     "Sémillon",
+     "Septimer",
+     "Sibera",
+     "Siegerrebe",
+     "Solaris",
+     "Soreli",
+     "Souvignier Gris",
+     "Staufer",
+     "Thurling",
+     "Viognier",
+     "Voltis",
+     "Weißer Elbling",
+     "Würzer",
+     "Accent",
+     "Acolon",
+     "Artaban",
+     "Blauer Frühburgunder",
+     "Blauer Limberger",
+     "Blauer Portugieser",
+     "Cabaret Noir",
+     "Cabernet Cantor",
+     "Cabernet Carbon",
+     "Cabernet Cortis",
+     "Cabernet Cubin",
+     "Cabernet Dorio",
+     "Cabernet Dorsa",
+     "Cabernet Franc",
+     "Cabernet Jura",
+     "Cabernet Mitos",
+     "Cabernet Sauvignon",
+     "Cabertin",
+     "Carillon",
+     "Dakapo",
+     "Deckrot",
+     "Divico",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Gamay noir",
+     "Gm 6423-7",
+     "Gm 7517-29",
+     "Gm 7519-1",
+     "Gm 7520-1",
+     "Gm 7816-7",
+     "Gm 7838-1",
+     "Hegel",
+     "Kleiner Fränkischer Burgunder",
+     "Laurot",
+     "Malbec",
+     "Merlot",
+     "Monarch",
+     "Müllerrebe",
+     "Muskat Trollinger",
+     "Neronet",
+     "Palas",
+     "Pinotin",
+     "Pinot Nova",
+     "Regent",
+     "Rondo",
+     "Rotberger",
+     "St. Laurent",
+     "Sangiovese",
+     "Satin Noir",
+     "Schwarzblauer Riesling",
+     "Syrah",
+     "VB 91-26-5",
+     "Vidoc"
+    ],
+    "othersCite": [
+     "nahe-spec:p10"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling",
+     "sweet"
+    ],
+    "text": "Dry to noble sweet whites, reds, rosé, pearl wine and sparkling Sekt.",
+    "cite": [
+     "nahe-spec:p2",
+     "nahe-spec:p3",
+     "nahe-spec:p8"
+    ]
+   },
+   "climate": {
+    "text": "Mean temperature 9.3 °C a year and 13.8 °C in the growing season. Rainfall about 580 mm a year, 60% in the growing season. The river gives a mild climate with warm days and cool nights.",
+    "cite": [
+     "nahe-spec:p11",
+     "nahe-spec:p13"
+    ]
+   },
+   "soil": {
+    "text": "Oldest rocks are Devonian sandstone, shale, quartzite, greenschist and phyllite. Rotliegend rock is by far the most widespread, with volcanic latite, andesite and basalt. Also tertiary sands and marl, slate, red sandstone, loess and loam.",
+    "cite": [
+     "nahe-spec:p11",
+     "nahe-spec:p13"
+    ]
+   },
+   "altitude": {
+    "text": "Vineyards lie on average at about 210 m above sea level, on slopes averaging 12.5%. Steep sites include Rotenfels and Steinberg.",
+    "cite": [
+     "nahe-spec:p11"
+    ]
+   },
+   "tastes": {
+    "text": "Whites: fresh and fruity to rich and sweet, with sharp acidity and minerality. Reds: cherry and berry fruit, restrained tannins in medium ones, firmer in fuller ones, some oak spice. Rosé: fresh, lively acidity.",
+    "cite": [
+     "nahe-spec:p2",
+     "nahe-spec:p3"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Kabinett",
+      "text": "Light, fresh and fruity; at least 9.5% vol and 73° Öchsle."
+     },
+     {
+      "name": "Spätlese",
+      "text": "Fuller and often sweeter; Riesling needs 10.3% vol and 78° Öchsle."
+     },
+     {
+      "name": "Eiswein",
+      "text": "Made from grapes naturally frozen at picking and pressing; at least 120° Öchsle."
+     },
+     {
+      "name": "Sekt b. A.",
+      "text": "Traditional bottle-fermented versions must mature at least nine months on the bottle."
+     }
+    ],
+    "cite": [
+     "nahe-spec:p1",
+     "nahe-spec:p2",
+     "nahe-spec:p4",
+     "nahe-spec:p5",
+     "nahe-spec:p6",
+     "nahe-spec:p12"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "region": "de-ahr",
+ "sheets": [
+  {
+   "id": "ahr",
+   "why": {
+    "text": "Steep slopes of greywacke and slate in a narrow river valley give mostly red wines with fine aromas and high minerality.",
+    "cite": [
+     "ahr-spec:p4",
+     "ahr-spec:p7"
+    ]
+   },
+   "grapes": {
+    "main": [],
+    "cite": [],
+    "others": [
+     "Bacchus",
+     "Chardonnay",
+     "Früher Malingre",
+     "Huxelrebe",
+     "Johanniter",
+     "Kerner",
+     "Müller-Thurgau",
+     "Optima",
+     "Ortega",
+     "Regner",
+     "Roter Traminer",
+     "Ruländer",
+     "Saphira",
+     "Solaris",
+     "Weißer Burgunder",
+     "Weißer Riesling",
+     "Würzer",
+     "Acolon",
+     "Blauer Frühburgunder",
+     "Blauer Portugieser",
+     "Blauer Spätburgunder",
+     "Blauer Zweigelt",
+     "Cabernet Cortis",
+     "Cabernet Cubin",
+     "Cabernet Dorsa",
+     "Cabernet Franc",
+     "Cabernet Mitos",
+     "Cabernet Sauvignon",
+     "Dakapo",
+     "Domina",
+     "Dornfelder",
+     "Dunkelfelder",
+     "Hegel",
+     "Merlot",
+     "Müllerrebe",
+     "Neronet",
+     "Palas",
+     "Regent",
+     "Rotberger",
+     "St. Laurent"
+    ],
+    "othersCite": [
+     "ahr-spec:p6",
+     "ahr-spec:p15"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "white",
+     "rose",
+     "sparkling"
+    ],
+    "text": "Mostly red wines, with traditional rosé and white; base wines can also become Sekt b.A. and Qualitätsperlwein.",
+    "cite": [
+     "ahr-spec:p4"
+    ]
+   },
+   "climate": {
+    "text": "Mean daily temperature 9.8 °C, about 650 mm rain a year and about 1,450 hours of sunshine. Long growing season.",
+    "cite": [
+     "ahr-spec:p7"
+    ]
+   },
+   "soil": {
+    "text": "Mostly greywacke sandstone with some clay slate, hard in the west and deeply weathered in the east. Gravel, loam and loess on river terraces.",
+    "cite": [
+     "ahr-spec:p7"
+    ]
+   },
+   "altitude": {
+    "text": "Valley floor about 150 m in the west and about 100 m in the east, with slopes 150 to 200 m high. 69% of vineyards slope over 30%.",
+    "cite": [
+     "ahr-spec:p7"
+    ]
+   },
+   "tastes": {
+    "text": "Reds: light to dark ruby, blueberry, dried fruit, strawberry and cherry, dense. Rosés: fresh, lighter, less tannin. Whites: peach and citrus, clearly noticeable acidity.",
+    "cite": [
+     "ahr-spec:p4"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Kabinett",
+      "text": "Prädikat wine, at least 10.0% potential alcohol for whites, 10.6% for reds."
+     },
+     {
+      "name": "Trockenbeerenauslese",
+      "text": "Prädikat wine needing at least 21.5% potential alcohol (150° Öchsle)."
+     },
+     {
+      "name": "Eiswein",
+      "text": "Prädikat wine of at least 15.3% potential alcohol (110° Öchsle); no enrichment allowed."
+     },
+     {
+      "name": "Sekt b.A.",
+      "text": "Sparkling wine; bottle-fermented ones mature at least nine months on the bottle."
+     }
+    ],
+    "cite": [
+     "ahr-spec:p5",
+     "ahr-spec:p6",
+     "ahr-spec:p8"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

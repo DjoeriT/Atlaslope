@@ -2944,5 +2944,35 @@
   "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2020_II_431/BGBLA_2020_II_431.html",
   "date": "2026-10-23",
   "title": "Neusiedlersee PDO-AT-A0219: DAC-Verordnung Neusiedlersee, BGBl. II 431/2020 Art. 2 (RIS, German, p1); EU notice of amendment AM01 with single document, OJ C 68, 24.2.2023 (English, p2)"
+ },
+ "ahr-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Ahr PDO-DE-A0867: Produktspezifikation (BLE, German, 16 pp, as linked on 23 Oct 2026)"
+ },
+ "mittelrhein-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Mittelrhein PDO-DE-A1269: Produktspezifikation (BLE, German, 11 pp, as linked on 23 Oct 2026)"
+ },
+ "nahe-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Nahe PDO-DE-A1271: Produktspezifikation (BLE, German, 14 pp, as linked on 23 Oct 2026)"
+ },
+ "rheinhessen-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Rheinhessen PDO-DE-A1274: Produktspezifikation (BLE, German, 10 pp, as linked on 23 Oct 2026)"
+ },
+ "pfalz-spec": {
+  "kind": "official",
+  "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
+  "date": "2026-10-23",
+  "title": "Pfalz PDO-DE-A1272: Produktspezifikation (BLE, German, 10 pp, as linked on 23 Oct 2026)"
  }
 }
