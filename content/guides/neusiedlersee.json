@@ -1,0 +1,123 @@
+{
+ "id": "neusiedlersee",
+ "title": "Why Neusiedlersee tastes the way it does",
+ "minutes": 2,
+ "lede": {
+  "text": "Central Europe's largest steppe lake stores summer heat and keeps the air humid. Humidity and autumn fog favour noble rot, which dries grapes on the vine into sweet wines with honey aromas.",
+  "cite": [
+   "neusiedlersee-spec:p2"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "lake",
+   "beat": "place",
+   "title": "A steppe lake and its shore",
+   "paras": [
+    "The vineyards cover the district of Neusiedl am See in Burgenland, except for the municipalities of Winden and Jois.",
+    "They stretch from the north shore of the lake round to its east shore. The Seewinkel is the southern part of the area."
+   ],
+   "cite": [
+    "neusiedlersee-spec:p1",
+    "neusiedlersee-spec:p2"
+   ],
+   "fly": [
+    {
+     "label": "Lake Neusiedl",
+     "place": "neusiedlersee",
+     "caption": "Central Europe's largest steppe lake, with 300 km2 of water and reed beds.",
+     "cite": [
+      "neusiedlersee-spec:p2"
+     ]
+    },
+    {
+     "label": "The Seewinkel",
+     "point": [
+      16.87,
+      47.76
+     ],
+     "zoom": 10,
+     "caption": "The Seewinkel is the southern part of the area, with gravel, sandy and saline soils.",
+     "cite": [
+      "neusiedlersee-spec:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Hot summers, a lake that holds the heat",
+   "paras": [
+    "The area lies at the centre of the Pannonian climate zone. Summers are dry and hot. Winters are cold with little snow.",
+    "In summer the lake warms up and slowly releases the stored heat at night. High humidity from its large surface marks the weeks when the grapes ripen. Autumn fog marks them too."
+   ],
+   "cite": [
+    "neusiedlersee-spec:p2"
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Loess in the north-east, gravel and sand in the south",
+   "paras": [
+    "The north-east shore has loessial and chernozem soils. In the Seewinkel there are also gravel, sandy and saline soils.",
+    "Zweigelt prefers nutrient-poor soils like these southern ones. On them it develops its characteristic sour-cherry and plum aromas, with apricot too."
+   ],
+   "cite": [
+    "neusiedlersee-spec:p2"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "One red grape, two kinds of sweet",
+   "paras": [
+    "The red is Zweigelt. It has a muted deep red robe and a fruity, velvety bouquet with vanilla and sour cherry. From steel tanks it tastes of ripe sour cherry or plum.",
+    "Aged in wood, the fruit recedes. From the casks come ripe tannins and plum jam, with vanilla and chocolate.",
+    "The sweet whites can use all white Austrian quality varieties. The main one is Welschriesling. Hot, dry summers let the grapes ripen for a particularly long time, helped by the warmth of the lake. They give tropical fruit, such as banana and pineapple.",
+    "Humidity and autumn fog favour noble rot, Botrytis cinerea. It perforates the skins, so the grapes dry on the stem. That gives honey and caramel aromas. Nut notes join them."
+   ],
+   "cite": [
+    "neusiedlersee-spec:p2"
+   ],
+   "fly": [
+    {
+     "label": "Illmitz, in the Seewinkel",
+     "point": [
+      16.8,
+      47.76
+     ],
+     "zoom": 11,
+     "caption": "Grapes from Apetlon, Illmitz or Podersdorf may carry the name Seewinkel on sweet wines.",
+     "cite": [
+      "neusiedlersee-spec:p1"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Reserve",
+    "text": "Zweigelt aged in large wood or barrique, with at least 13.0% alcohol and at most 4.0 g/l of unfermented sugar."
+   },
+   {
+    "term": "Fruchtsüß",
+    "text": "A sweet white wine of Spätlese or Auslese level, with at least 45 g/l of unfermented sugar."
+   },
+   {
+    "term": "Edelsüß",
+    "text": "A sweet white wine of Beerenauslese or Trockenbeerenauslese level, from raisined grapes, with at least 45 g/l of unfermented sugar and the name Reserve."
+   },
+   {
+    "term": "Seewinkel",
+    "text": "A narrower origin that sweet wines may name when the grapes come from Apetlon, Illmitz or Podersdorf."
+   }
+  ],
+  "cite": [
+   "neusiedlersee-spec:p1"
+  ]
+ }
+}

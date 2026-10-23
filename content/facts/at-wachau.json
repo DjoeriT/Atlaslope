@@ -1,0 +1,102 @@
+{
+ "region": "at-wachau",
+ "sheets": [
+  {
+   "id": "wachau",
+   "why": {
+    "text": "Steep Danube terraces of weathered rock and loess, where Atlantic and Pannonian climates meet and big day-night swings keep the whites acidic.",
+    "cite": [
+     "wachau-spec:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Grüner Veltliner"
+     },
+     {
+      "local": "Riesling"
+     }
+    ],
+    "cite": [
+     "wachau-spec:p2"
+    ],
+    "others": [
+     "Weißer Burgunder",
+     "Grauer Burgunder",
+     "Chardonnay",
+     "Neuburger",
+     "Muskateller",
+     "Sauvignon blanc",
+     "Traminer",
+     "Frühroter Veltliner",
+     "Müller-Thurgau",
+     "Muskat Ottonel",
+     "Roter Veltliner",
+     "Gemischter Satz",
+     "Blauer Burgunder",
+     "St. Laurent",
+     "Zweigelt"
+    ],
+    "othersCite": [
+     "wachau-spec:p1"
+    ]
+   },
+   "styles": {
+    "kinds": [
+     "white",
+     "red"
+    ],
+    "text": "Mostly white wines; red wines are a very small share.",
+    "cite": [
+     "wachau-spec:p2"
+    ]
+   },
+   "climate": {
+    "text": "Atlantic and Pannonian climates meet: above-average rain, hot days and cool nights. The Danube tempers heat and harsh winters, and cool Waldviertel winds widen day-night swings before harvest.",
+    "cite": [
+     "wachau-spec:p2"
+    ]
+   },
+   "soil": {
+    "text": "Weathered bedrock on the terraces, with loess layers on the eastern sides of the rock slopes. Medieval stone terraces make the steep slopes workable.",
+    "cite": [
+     "wachau-spec:p2"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Whites: greenish yellow, apple, pear and citrus, with high acidity; older Grüner Veltliner shows pepper and apricot. Reds: fruity and low in tannin, with sour cherry and redcurrant.",
+    "cite": [
+     "wachau-spec:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Gebietswein",
+      "text": "Wachau DAC without a village or vineyard name; 17 listed grapes, blends allowed."
+     },
+     {
+      "name": "Ortswein",
+      "text": "Wachau DAC naming a village; nine listed grapes, hardly any oak tone allowed."
+     },
+     {
+      "name": "Riedenwein",
+      "text": "Single-vineyard Wachau DAC from Grüner Veltliner or Riesling; no chaptalisation, hardly any oak."
+     }
+    ],
+    "cite": [
+     "wachau-spec:p1"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

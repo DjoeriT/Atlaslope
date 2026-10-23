@@ -1,0 +1,140 @@
+{
+ "id": "wachau",
+ "title": "Why Wachau tastes the way it does",
+ "minutes": 3,
+ "lede": {
+  "text": "Steep terraces line the banks of the Danube, where an Atlantic and a Pannonian climate meet. Their soils and the big swings in temperature shape how the wines taste.",
+  "cite": [
+   "wachau-spec:p2"
+  ]
+ },
+ "chapters": [
+  {
+   "id": "terraces",
+   "beat": "place",
+   "title": "Stone terraces on the Danube",
+   "paras": [
+    "Wachau is a wine area of steep terraces on the banks of the Danube. The terrain and the stone terraces laid in the Middle Ages allow more efficient cultivation of the steep slopes. They are also the key features of the Wachau landscape.",
+    "The area covers eight municipalities in Lower Austria. Dürnstein and Spitz are two of them."
+   ],
+   "cite": [
+    "wachau-spec:p2"
+   ],
+   "fly": [
+    {
+     "label": "The Danube terraces",
+     "place": "wachau",
+     "caption": "The Wachau wine area is marked by steep terraces on the banks of the Danube.",
+     "cite": [
+      "wachau-spec:p2"
+     ]
+    },
+    {
+     "label": "Dürnstein",
+     "point": [
+      15.519,
+      48.395
+     ],
+     "zoom": 11,
+     "caption": "Dürnstein is one of the municipalities of the Wachau area.",
+     "cite": [
+      "wachau-spec:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "climate",
+   "beat": "weather",
+   "title": "Two climates and a big river",
+   "paras": [
+    "Two powerful influences meet here: the western, Atlantic climate and the eastern, Pannonian one. The Atlantic side brings above-average rainfall. The Pannonian side brings high daytime temperatures and cool nights.",
+    "Wachau is known for its microclimates. They depend on each slope and the way it faces. The heat-storing walls and boulders of the terraces also shape them.",
+    "The broad Danube tempers the high daytime temperatures and the harsh winters. Cool downwinds from the Waldviertel in the north cause big swings between day and night, especially in the months before harvest. Those swings are key to the high acidity of the white wines. In the reds, they bring out fruity, low-tannin flavours."
+   ],
+   "cite": [
+    "wachau-spec:p2"
+   ],
+   "fly": [
+    {
+     "label": "Waldviertel, to the north",
+     "point": [
+      15.3,
+      48.55
+     ],
+     "zoom": 9,
+     "caption": "Cool downwinds from the Waldviertel in the north cause big swings between day and night.",
+     "cite": [
+      "wachau-spec:p2"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "soils",
+   "beat": "ground",
+   "title": "Weathered rock and loess",
+   "paras": [
+    "Weathered bedrock soils mark Wachau. After the last ice age, drift sand was deposited on the leeward side of the mountains. Loess layers formed in many places on the eastern sides of the rock slopes.",
+    "The two soils bring out different aromas. The weathered bedrock of the terraces brings out the citrus aromas, lemon and grapefruit, of Rheinriesling. The loess is the basis for the apple and pear aromas of the potent, full-bodied Grüner Veltliner."
+   ],
+   "cite": [
+    "wachau-spec:p2"
+   ]
+  },
+  {
+   "id": "wines",
+   "beat": "rules",
+   "title": "Mostly white, in three steps",
+   "paras": [
+    "Most Wachau wine is white. Red wines are a very small share. Grüner Veltliner and Riesling are the grapes listed for the Wachau name.",
+    "Most whites are greenish yellow or light straw-yellow. They smell of apple or pear and of citrus fruit. Acidity is key to their taste. Longer ageing moves the aromas toward dried and exotic fruit. In more aged whites, mainly Grüner Veltliner, the finish has notes of pepper and apricot.",
+    "The reds taste fruity and low in tannin, with hints of sour cherry and redcurrant. Time in barrels adds aromas such as tobacco or chocolate.",
+    "Since the 2020 harvest, the list of grapes is restricted. The maximum yield is now 10,000 kg per hectare, up from 9,000 kg before.",
+    "Grapes are picked by hand. The vintage is always on the label."
+   ],
+   "cite": [
+    "wachau-spec:p1",
+    "wachau-spec:p2"
+   ],
+   "fly": [
+    {
+     "label": "Spitzer Graben",
+     "point": [
+      15.34,
+      48.37
+     ],
+     "zoom": 11,
+     "caption": "Spitzer Graben, a wider site (Großlage), can be named on an Ortswein label but not as the village on a Riedenwein.",
+     "cite": [
+      "wachau-spec:p1"
+     ]
+    }
+   ]
+  }
+ ],
+ "label": {
+  "terms": [
+   {
+    "term": "Gebietswein",
+    "text": "A Wachau DAC wine with no village or vineyard on the label, made from one or a blend of 17 listed grapes."
+   },
+   {
+    "term": "Ortswein",
+    "text": "A Wachau DAC wine that names its village, made from nine listed grapes."
+   },
+   {
+    "term": "Riedenwein",
+    "text": "A Wachau DAC wine that names a single vineyard (Ried), made from Grüner Veltliner or Riesling, never enriched, with the village on the front label."
+   },
+   {
+    "term": "DAC",
+    "text": "The word DAC, or Districtus Austriae Controllatus, must stand beside Wachau on the main label."
+   }
+  ],
+  "cite": [
+   "wachau-spec:p1",
+   "wachau-spec:p3"
+  ]
+ }
+}

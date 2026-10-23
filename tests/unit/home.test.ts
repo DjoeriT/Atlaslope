@@ -15,15 +15,14 @@ const html = readFileSync('index.html', 'utf8');
 const tree = loadTree(JSON.parse(readFileSync('data/places.json', 'utf8')));
 const regions = tree.countries.flatMap((c) => tree.regionsOf(c.id));
 const places = regions.flatMap((r) => tree.placesInRegion(r.id));
-// Austria's two places (pilot step 1, #149) have no guide yet: the guides step adds them and this filter goes.
-const guided = places.filter((p) => p.parent !== 'austria');
+const guided = places;
 
 describe('the home page', () => {
   it('counts the places and study regions of every country the atlas has, filled in at build time', () => {
     const filled = fillHome(html, guideRows(), storyCount());
     const count = (name: string) => Number(new RegExp(`data-count="${name}">(\\d+)<`).exec(filled)?.[1]);
     expect(count('places')).toBe(guided.length);
-    expect(count('regions')).toBe(regions.filter((r) => !r.id.startsWith('at-')).length);
+    expect(count('regions')).toBe(regions.length);
     expect(count('stories')).toBe(storyCount());
   });
   it('shows no Spain-only reach line and says Spain and Portugal in its descriptions (owner 22 Oct 2026, option A)', () => {

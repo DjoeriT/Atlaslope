@@ -1,0 +1,92 @@
+{
+ "region": "at-neusiedlersee",
+ "sheets": [
+  {
+   "id": "neusiedlersee",
+   "why": {
+    "text": "Hot, dry Pannonian summers softened by the steppe lake's warmth, humidity and autumn fog, on loess, chernozem, gravel and sandy soils.",
+    "cite": [
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "grapes": {
+    "main": [
+     {
+      "local": "Zweigelt"
+     },
+     {
+      "local": "Welschriesling"
+     }
+    ],
+    "cite": [
+     "neusiedlersee-spec:p1",
+     "neusiedlersee-spec:p2"
+    ],
+    "others": [],
+    "othersCite": []
+   },
+   "styles": {
+    "kinds": [
+     "red",
+     "sweet"
+    ],
+    "text": "Red Zweigelt, plain or Reserve, plus sweet white wines from overripe or raisined grapes.",
+    "cite": [
+     "neusiedlersee-spec:p1",
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "climate": {
+    "text": "Centre of the Pannonian climate zone: dry, hot summers and cold winters with little snow. The 300 km2 lake releases stored heat at night; humidity and autumn fog mark ripening.",
+    "cite": [
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "soil": {
+    "text": "Loess and chernozem on the north-east shore; gravel, sandy and saline soils in the Seewinkel. Zweigelt prefers the nutrient-poor southern soils.",
+    "cite": [
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "altitude": {
+    "text": "",
+    "cite": []
+   },
+   "tastes": {
+    "text": "Zweigelt: fruity, spicy, muted deep red, ripe sour cherry or plum. Reserve: vanilla, chocolate, ripe tannins. Sweet wines: tropical fruit; edelsüß: nut, honey, caramel.",
+    "cite": [
+     "neusiedlersee-spec:p1",
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "famous": {
+    "styles": [
+     {
+      "name": "Reserve",
+      "text": "Zweigelt aged in large wood or barrique, at least 13.0% alcohol."
+     },
+     {
+      "name": "Fruchtsüß",
+      "text": "Spätlese or Auslese from white grapes, at least 45 g/l unfermented sugar."
+     },
+     {
+      "name": "Edelsüß",
+      "text": "Beerenauslese or Trockenbeerenauslese from raisined white grapes, with Botrytis nut and honey notes."
+     },
+     {
+      "name": "Seewinkel",
+      "text": "Sweet wines may name it if grapes come from Apetlon, Illmitz or Podersdorf."
+     }
+    ],
+    "cite": [
+     "neusiedlersee-spec:p1",
+     "neusiedlersee-spec:p2"
+    ]
+   },
+   "producers": {
+    "items": [],
+    "cite": []
+   }
+  }
+ ]
+}

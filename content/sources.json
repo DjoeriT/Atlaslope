@@ -2932,5 +2932,17 @@
   "url": "https://www.ble.de/eu-qualitaetskennzeichen-wein",
   "date": "2026-10-23",
   "title": "Rheingau PDO-DE-A1273: Produktspezifikation (BLE, German, text of April 2019; the 2026 amendment is a proposal)"
+ },
+ "wachau-spec": {
+  "kind": "official",
+  "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2020_II_200/BGBLA_2020_II_200.html",
+  "date": "2026-10-23",
+  "title": "Wachau PDO-AT-A0205: DAC-Verordnung Wachau, BGBl. II 200/2020 (RIS, German, p1); EU notice of amendment AM01 with single document, OJ C 68, 24.2.2023 (English, p2); corrigendum OJ C/2025/90060, 1.8.2025 (p3)"
+ },
+ "neusiedlersee-spec": {
+  "kind": "official",
+  "url": "https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2020_II_431/BGBLA_2020_II_431.html",
+  "date": "2026-10-23",
+  "title": "Neusiedlersee PDO-AT-A0219: DAC-Verordnung Neusiedlersee, BGBl. II 431/2020 Art. 2 (RIS, German, p1); EU notice of amendment AM01 with single document, OJ C 68, 24.2.2023 (English, p2)"
  }
 }
