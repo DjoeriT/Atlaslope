@@ -80,7 +80,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Vocabulary:** "Learn" not "Study" or "Quiz" (code folder `src/quiz` stays; "Study region" stays). The guide = the whole place page; "Terroir" = one section; never "Terroir
   guide". Keep "Green Spain". Home headline stays "Know the land behind the glass." See `docs/glossary.md`.
 - **Positioning (in every guide brief):** guides are a general, fun wine reference for anyone who loves wine, not exam-centric. "Why it
-  tastes the way it does" is the spine; only a small "Test me" link leads into Study.
+  tastes the way it does" is the spine; only a small "Test me" link leads into Learn.
 - **Data has a paper trail:** every file under `data/` and every layer, photo or fact source is in `data/SOURCES.md`; facts from official
   sources. WSG and WSET course structure is fine, never their text, maps or images. Licence: code MIT; his writing all rights reserved
   (`NOTICE.md`); data keeps its own terms. Raw downloads live outside the repo (`~/Developer/Atlaslope-raw`, `ATLASLOPE_RAW`); nothing in the repo is a symlink (22 Oct 2026: a committed data/raw link wiped the raw folder on checkout).
@@ -91,7 +91,7 @@ A **small slice** is a fix or tweak with no new screen, data or content. Everyth
 - **Done** means: merged, ready-to-publish line sent (or published after his words), live check green, handoff written, open questions listed.
 
 ## Models and agents
-Opus 5.5 for the main session and for the tree model and Study engine; Sonnet 5.5 for helpers, builders, checkers. Agent types `builder`,
+Opus 5.5 for the main session and for the tree model and Learn engine; Sonnet 5.5 for helpers, builders, checkers. Agent types `builder`,
 `reviewer`, `analyst` (`.claude/agents`); his go on a plan covers the helpers and cost it names; anything off the plan is asked first. Builders and reviewers use their own worktree and
 never push. Budgets and spend log: `docs/AGENT_ROLES.md`, `Review/agent-spend-log.md`. Never open `data.js`, `maplibre-gl.js`,
 `data/*.geojson`, `*.tif`.

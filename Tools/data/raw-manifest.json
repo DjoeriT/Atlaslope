@@ -88,10 +88,11 @@
    "path": "build/",
    "kind": "command",
    "licence": "Natural Earth (public domain); Koppen-Geiger, Beck et al. 2023 (CC BY 4.0)",
-   "note": "Natural Earth shapefiles (ne/) and the Koppen-Geiger zip (kg/) of remote_build.sh; needs GDAL (ogr2ogr, gdalwarp). Also holds munis-*.geojson and parcels-*.geojson, which build_boundaries.py and build_parcels.py make. Also kg/kg.zip (130.6 MB, figshare article 21789074 file koppen_geiger_tif.zip) and koppen-portugal.geojson, made by Tools/data/koppen_portugal.sh",
+   "note": "Natural Earth shapefiles (ne/) and the Koppen-Geiger zip (kg/) of remote_build.sh; needs GDAL (ogr2ogr, gdalwarp). Also holds munis-*.geojson and parcels-*.geojson, which build_boundaries.py and build_parcels.py make. Also kg/kg.zip (130.6 MB, figshare article 21789074 file koppen_geiger_tif.zip), koppen-portugal.geojson and koppen-france.geojson, made by Tools/data/koppen_country.sh",
    "command": [
     "bash Tools/data/remote_build.sh",
-    "bash Tools/data/koppen_portugal.sh"
+    "bash Tools/data/koppen_country.sh portugal",
+    "bash Tools/data/koppen_country.sh france"
    ]
   },
   {

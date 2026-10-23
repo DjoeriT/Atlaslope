@@ -7,13 +7,16 @@ const real: Place[] = JSON.parse(readFileSync('data/places.json', 'utf8')).place
 
 describe('comparison measures', () => {
   it('has a Spain row', () => {
-    expect(countryMeasures('spain')!.altitude.samples).toBeGreaterThan(0);
+    expect(countryMeasures('spain')!.altitude?.samples).toBeGreaterThan(0);
     expect(countryMeasures('spain')!.koppen.length).toBeGreaterThan(0);
   });
+  it('has a France row with Köppen only (its altitude waits for DEM tiles, 23 Oct 2026)', () => {
+    expect(countryMeasures('france')!.koppen[0].code).toBe('Cfb');
+    expect(countryMeasures('france')!.altitude).toBeUndefined();
+  });
   it('has a row for every study region', () => {
-    // Portugal (pilot, 22 Oct 2026): its places have no measures yet; Köppen for Portugal needs the Beck et al. raster, not on this Mac.
-    // France and Italy (pilots, #149): the same, their places are not measured yet.
-    const regions = [...new Set(real.filter((p) => p.parent !== 'portugal' && !/^(fr|it)-/.test(p.region)).map((p) => p.region))];
+    // Portugal and France included since 23 Oct 2026 (Tools/data/koppen_country.sh); Italy (pilot, #149) is not measured yet.
+    const regions = [...new Set(real.filter((p) => !p.region.startsWith('it-')).map((p) => p.region))];
     expect(regions.length).toBeGreaterThan(0);
     for (const r of regions) expect(regionMeasuresOf(r)?.altitude.samples, r).toBeGreaterThan(0);
   });

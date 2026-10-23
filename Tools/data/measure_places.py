@@ -22,12 +22,19 @@ are left out because they lie inside the Rioja DOCa).
 
 Portugal (23 Oct 2026): the places with region pt-* are measured the same way, from their outlines in data/countries/pt/areas.geojson
 (the feature whose id is the place id) against the Portuguese Köppen polygons <RAW>/build/koppen-portugal.geojson (made by
-Tools/data/koppen_portugal.sh from the same Beck et al. 1 km raster; Tools/rawdir.py gives RAW). Spain's places keep koppen-spain.geojson,
+Tools/data/koppen_country.sh from the same Beck et al. 1 km raster; Tools/rawdir.py gives RAW). Spain's places keep koppen-spain.geojson,
 so no Spanish number moves. "country.portugal" is Portugal's land: the union of the CAOP 2025 municipios (mainland, 278) and the two
 Madeira islands (caop2025-ram-islands.geojson), both in <RAW>/countries/pt/; the Azores have no place and no climate data and are left out.
 "regions.pt-*" are the unions of the pt-* places whose parent is "portugal".
 
-Usage: python3 Tools/data/measure_places.py
+France (23 Oct 2026): the same for the places with region fr-* (appellations and the Chablis zones), from data/countries/fr/areas.geojson
+against <RAW>/build/koppen-france.geojson (Tools/data/koppen_country.sh france). "regions.fr-*" are the unions of the places whose parent is
+"france". "country.france" is data/countries/fr/mask.json's "land" (the mainland and Corsica) and has Köppen only: its altitude would need
+about 660 Terrarium tiles that are not cached here, and fetching them waits for the owner's word (KOPPEN_ONLY).
+
+Usage: python3 Tools/data/measure_places.py [--offline]
+(--offline: no fetching; sample points on uncached tiles are dropped and counted. The France run of 23 Oct 2026 used it: three tiles
+were not cached and the owner had not okayed fetching, so regions fr-* lost 3 of about 2400 points.)
 """
 import io, json, math, sys, urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -46,6 +53,10 @@ CACHE = ROOT / ".cache" / "terrarium"
 Z = 10
 TILE = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
 UA = "AtlaslopeDataBot/0.1 (https://github.com/DjoeriT/Atlaslope)"
+# Rows measured for Köppen only: France's land needs ~660 uncached Terrarium tiles; fetching them waits for the owner's word (23 Oct 2026).
+KOPPEN_ONLY = {"country:france"}
+# --offline: read only cached tiles and drop the sample points on a tile that is not cached (counted per row on stderr).
+OFFLINE = "--offline" in sys.argv
 
 
 def load(name):
@@ -69,10 +80,17 @@ def boundaries(places):
     return out
 
 
-def pt_boundaries(places):
-    """Outlines of the Portuguese places: the areas.geojson feature whose id is the place id."""
-    feats = {f["properties"]["id"]: shape(f["geometry"]) for f in json.loads((DATA / "countries/pt/areas.geojson").read_text())["features"]}
+def area_boundaries(code, places):
+    """Outlines of a country's places (code "pt" or "fr"): the data/countries/<code>/areas.geojson feature whose id is the place id."""
+    feats = {f["properties"]["id"]: shape(f["geometry"]) for f in json.loads((DATA / f"countries/{code}/areas.geojson").read_text())["features"]}
     return {p["id"]: feats[p["id"]] for p in places if p["id"] in feats}
+
+
+def france_land():
+    """mask.json's "land" polygons: the mainland and Corsica (Natural Earth, simplified to about 200 m), not the neighbours."""
+    land = unary_union([shape({"type": "Polygon", "coordinates": rings}) for rings in load("countries/fr/mask.json")["land"]])
+    assert -6 < land.bounds[0] and land.bounds[2] < 10 and 41 < land.bounds[1] and land.bounds[3] < 52, land.bounds
+    return land
 
 
 def portugal_land():
@@ -103,6 +121,8 @@ def fetch(xy):
     x, y = xy
     path = CACHE / f"{Z}-{x}-{y}.png"
     if not path.exists():
+        if OFFLINE:
+            return xy, None
         req = urllib.request.Request(TILE.format(z=Z, x=x, y=y), headers={"User-Agent": UA})
         with urllib.request.urlopen(req, timeout=60) as r:
             path.write_bytes(r.read())
@@ -182,68 +202,92 @@ def r10(v):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     every = load("places.json")["places"]
-    is_pt = lambda p: p["region"].startswith("pt-")
-    places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones") and not is_pt(p)]
-    pt_places = [p for p in every if is_pt(p) and p["boundary"] == "added"]
+    # Italy ("it-") is left out until it has its own Köppen file: as "es" it was measured against Spain's (23 Oct 2026).
+    code_of = lambda p: p["region"][:2] if p["region"][:3] in ("pt-", "fr-", "it-") else "es"
+    places = [p for p in every if p["boundary"] in ("mapa-2014", "added", "rioja-zones") and code_of(p) == "es"]
     geoms = boundaries(places)
-    geoms.update(pt_boundaries(pt_places))
-    places = places + pt_places
+    for code in ("pt", "fr"):
+        mine = [p for p in every if code_of(p) == code and p["boundary"] == "added"]
+        geoms.update(area_boundaries(code, mine))
+        places += mine
     missing = [p["id"] for p in places if p["id"] not in geoms] + [p["id"] for p in every if p["quiz"] != "none" and p not in places]
     if missing:
         sys.exit(f"no boundary for {missing}")
     regions = {}
     for p in places:
-        if p["parent"] in ("spain", "portugal") and p["id"] in geoms:  # appellation level; zones have another place as parent
+        # Appellation level; zones have another place as parent. France's PGIs (kind IGP: Pays d'Oc, Côtes de Gascogne) cover whole
+        # départements and would swamp their region's vineyards, so a region is its AOCs (23 Oct 2026).
+        if p["parent"] in ("spain", "portugal", "france") and p["id"] in geoms and p["kind"] != "IGP":
             regions.setdefault(p["region"], []).append(geoms[p["id"]])
     targets = dict(geoms)
     targets.update({f"region:{r}": unary_union(g) for r, g in regions.items()})
     targets["country:spain"] = spain_land()
     targets["country:portugal"] = portugal_land()
-    samples = {tid: points_in(g) for tid, g in targets.items()}
+    targets["country:france"] = france_land()
+    samples = {tid: points_in(g) for tid, g in targets.items() if tid not in KOPPEN_ONLY}
     need = {t for pts in samples.values() for lon, lat in pts for t in neighbours(*tile_xy(lon, lat))}
     print(f"{len(need)} tiles", file=sys.stderr)
     with ThreadPoolExecutor(8) as ex:
-        tiles = dict(ex.map(fetch, sorted(need)))
+        tiles = {xy: img for xy, img in ex.map(fetch, sorted(need)) if img is not None}
+    dropped = {}
     kop = lambda feats: [(f["properties"]["code"], f["properties"]["name"], shape(f["geometry"])) for f in feats]
-    koppen_es = kop(load("koppen-spain.geojson")["features"])
-    koppen_pt = kop(json.loads((RAW / "build/koppen-portugal.geojson").read_text())["features"])
-    pt_ids = {p["id"] for p in pt_places} | {f"region:{r}" for r in regions if r.startswith("pt-")} | {"country:portugal"}
+    koppen = {"es": kop(load("koppen-spain.geojson")["features"])}
+    for code, name in (("pt", "portugal"), ("fr", "france")):
+        koppen[code] = kop(json.loads((RAW / f"build/koppen-{name}.geojson").read_text())["features"])
+    code_by_target = {p["id"]: code_of(p) for p in places} | {f"region:{r}": code_of({"region": r}) for r in regions}
+    code_by_target |= {"country:spain": "es", "country:portugal": "pt", "country:france": "fr"}
     rows = {}
     for tid, geom in targets.items():
-        elev, slopes = [], []
-        for lon, lat in samples[tid]:
-            x, y = tile_xy(lon, lat)
-            e = elevation(tiles[(int(x), int(y))], x - int(x), y - int(y))
-            elev.append(e)
-            if e > 0:
-                slopes.append(slope_pct(tiles, x, y, lat))
-        land = [e for e in elev if e > 0] or elev
-        slopes = [v for v in slopes if v is not None] or [0.0]
         shares = {}
-        for code, name, kg in (koppen_pt if tid in pt_ids else koppen_es):
+        for code, name, kg in koppen[code_by_target[tid]]:
             if kg.intersects(geom):
                 a = kg.intersection(geom).area
                 if a > 0:
                     shares[code] = (shares.get(code, (name, 0))[0], shares.get(code, (name, 0))[1] + a)
         total = sum(a for _, a in shares.values()) or 1
         climate = sorted(({"code": c, "name": n, "share": round(a / total, 2)} for c, (n, a) in shares.items()), key=lambda d: -d["share"])
+        if tid in KOPPEN_ONLY:
+            rows[tid] = {"koppen": [c for c in climate if c["share"] >= .05]}
+            continue
+        elev, slopes = [], []
+        for lon, lat in samples[tid]:
+            x, y = tile_xy(lon, lat)
+            if (int(x), int(y)) not in tiles:  # --offline and the tile is not cached
+                dropped[tid] = dropped.get(tid, 0) + 1
+                continue
+            e = elevation(tiles[(int(x), int(y))], x - int(x), y - int(y))
+            elev.append(e)
+            if e > 0:
+                slopes.append(slope_pct(tiles, x, y, lat))
+        # --offline with more than a tenth of the points on uncached tiles (Côtes de Gascogne kept 561 of 5,990, 23 Oct 2026): a skewed
+        # sample would mislead, so Köppen only, as country.france.
+        if dropped.get(tid, 0) > .1 * len(samples[tid]):
+            rows[tid] = {"koppen": [c for c in climate if c["share"] >= .05]}
+            continue
+        land = [e for e in elev if e > 0] or elev
+        slopes = [v for v in slopes if v is not None] or [0.0]
         rows[tid] = {
             "altitude": {"p10": r10(pct(land, .1)), "median": r10(pct(land, .5)), "p90": r10(pct(land, .9)), "samples": len(land)},
             "slope": {"medianDeg": round(math.degrees(math.atan(pct(slopes, .5) / 100)), 1),
                       "steepShare": round(sum(v > 30 for v in slopes) / len(slopes), 2)},
             "koppen": [c for c in climate if c["share"] >= .05],
         }
-    out = {pid: rows[pid] for pid in geoms}
+    for tid, n in sorted(dropped.items()):
+        print(f"{tid}: {n} of {len(samples[tid])} points on uncached tiles, dropped", file=sys.stderr)
+    # Rows in places.json order, Portugal's last (the order since they were added, so a re-run's diff shows only changed numbers).
+    order = {p["id"]: i for i, p in enumerate(every)}
+    out = {p["id"]: rows[p["id"]] for p in sorted(places, key=lambda p: (code_of(p) == "pt", order[p["id"]]))}
     doc = {
         "$comment": "Measured rows for the fact sheets, built by Tools/data/measure_places.py. altitude: metres, percentiles of the land inside "
                     "the boundary (Mapzen Terrarium zoom 10). slope: median slope in degrees and share of land steeper than 30% (CERVIM's "
                     "steep-slope mark), from the same tiles; ~115 m pixels read narrow slopes gentler. koppen: share of the boundary area per Köppen-Geiger class (Beck et al. 2023, "
                     "1991-2020), classes under 5% dropped. places: one row per place. country.spain: the same measures over all of Spain's land "
-                    "(spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands). Portuguese places use "
-                    "Köppen polygons made by Tools/data/koppen_portugal.sh. regions: the same measures over the union of a study region's appellation-level places (parent spain or portugal; "
-                    "zones excluded), for comparisons. See data/SOURCES.md.",
+                    "(spain-mask.json); country.portugal: the same over Portugal's land (CAOP municipios and the Madeira islands); country.france: Köppen only, over "
+                    "France's land (countries/fr/mask.json), its altitude not measured yet. Portuguese and French places use Köppen polygons made by "
+                    "Tools/data/koppen_country.sh. regions: the same measures over the union of a study region's appellation-level places (parent "
+                    "spain, portugal or france; zones excluded), for comparisons. See data/SOURCES.md.",
         "places": out,
-        "country": {"spain": rows["country:spain"], "portugal": rows["country:portugal"]},
+        "country": {"spain": rows["country:spain"], "portugal": rows["country:portugal"], "france": rows["country:france"]},
         "regions": {r: rows[f"region:{r}"] for r in sorted(regions)},
     }
     (DATA / "place-measures.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
